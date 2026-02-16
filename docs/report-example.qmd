@@ -3,8 +3,8 @@ title: MetaCheck Report
 subtitle: "To Err is Human: An Empirical Investigation"
 author: "Daniel Lakens & Lisa DeBruine"
 metacheck:
-  version: "0.0.0.9067"
-  report-created: "2026-01-31"
+  version: "0.0.0.9069"
+  report-created: "2026-02-15"
 format:
   html:
     theme: 
@@ -85,11 +85,11 @@ Metacheck is under continuous development. Issues can be submitted [on Github](h
 - ⚠️ [COI Check](#coi-check){.red}: No conflict of interest statement was detected.  
 - ⚠️ [Funding Check](#funding-check){.red}: No funding statement was detected.  
 - ✅️ [Open Practices Check](#open-practices-check){.green}: Shared data and code detected.  
-- ⚠️ [Power Analysis Check](#power-analysis-check){.red}: We detected 1 potential power analysis.  
 - ✅️ [Randomization and Causal Claims](#randomization-and-causal-claims){.green}: 
     -  We identified 1 sentence describing randomization.
     -  No causal claims were observed in the title.
     -  No causal claims were observed in the abstract.  
+- ✅️ [Power Analysis Check](#power-analysis-check){.green}: We detected 1 potential power analysis.  
 - ℹ️ [Preregistration Check](#preregistration-check){.info}: We found 2 preregistrations.  
 - ⚠️ [Exact P-Values](#exact-p-values){.red}: We found 1 imprecise *p* value out of 3 detected.  
 - ⚠️ [Marginal Significance](#marginal-significance){.red}: You described 2 effects with terms related to 'marginally significant'.  
@@ -108,10 +108,10 @@ Metacheck is under continuous development. Issues can be submitted [on Github](h
     -  Libraries/imports were loaded in multiple places.  
 - 🔍 [DOI Check](#doi-check){.yellow}: We checked 1 reference in CrossRef and found 1 missing DOI.   
 - 🔍 [Reference Accuracy](#reference-accuracy){.yellow}: We checked 4 references with DOIs in CrossRef and found  matches for 3.  
-- ℹ️ [Replication Check](#replication-check){.info}: You cited 1 article in the FReD replication database.  
 - ℹ️ [RetractionWatch](#retractionwatch){.info}: You cited 1 article in the RetractionWatch database.  
 - ℹ️ [Check PubPeer Comments](#check-pubpeer-comments){.info}: You cited 1 reference with comments in PubPeer.  
 - ℹ️ [Summarise References](#summarise-references){.info}: Summary information provided for 4 references  
+- ⚪️ [Replication Check](#replication-check){.na}: No citations to articles in the FLoRA database were found.  
 
 
 
@@ -181,68 +181,6 @@ This module was developed by Daniel Lakens
 
 ## Method Modules
 
-### ⚠️ Power Analysis Check {#power-analysis-check .red}
-
-We detected 1 potential power analysis.
-
-<details><summary>View detailed feedback</summary><div>
-
-Some essential information could not be detected: alpha_level
-
-```{r}
-#| echo: false
-
-# table data --------------------------------------
-table <- structure(list(power_type = "sensitivity", statistical_test = "t-test", 
-    sample_size = 100L, alpha_level = NA, power = 0.8, effect_size = 0.5, 
-    effect_size_metric = "Cohen's d", software = "other"), row.names = c(NA, 
--1L), class = c("tbl_df", "tbl", "data.frame"))
-
-# display table -----------------------------------
-metacheck::report_table(table, "auto", 5, FALSE)
-```
-
-```{r}
-#| echo: false
-
-# table data --------------------------------------
-table <- structure(list(text = "In this study we examine whether automated checks reduce the amount of errors that researchers make in scientific manuscripts. This study was preregistered at <https://osf.io/48ncu> and on AsPredicted at <https://aspredicted.org/by8i8v.pdf>. We randomly assigned 50 scientists to a condition where their manuscript was automatically checked for errors, and 50 scientists to a control condition with a checklist. Scientists had the opportunity to make changes to their manuscript based on the feedback of the tool. We subsequently coded all manuscripts for mistakes, and counted the total number of mistakes. We also measured the expertise of researchers (in years) to explore whether the automated tool would be more useful, the less research experience researchers had. We also asked researchers to rate how useful they found the checklist or app on a scale from 1 (not at all) to 7 (extremely useful). Data and analysis code is available on GitHub from <https://github.com/Lakens/to_err_is_human> and from <https://researchbox.org/4377>. Data is also available from <https://osf.io/5tbm9> and code is also available from <https://osf.io/629bx>. We conducted a <strong>sensitivity</strong> <strong>power</strong> analysis to determine that a Cohen's d of 0.50 is the smallest effect size that we could detect with 50 participants in each group and 80% <strong>power</strong>. On average researchers in the experimental (app) condition made fewer mistakes (M = 9.12) than researchers in the control (checklist) condition (M = 10.9), t(97.7) = 2.9, p = 0.005, d = 0.59."), row.names = c(NA, 
--1L), class = c("tbl_df", "tbl", "data.frame"))
-
-# display table -----------------------------------
-metacheck::report_table(table, "auto", 1, FALSE)
-```
-
-::: {.callout-tip title="Learn More" collapse="true"}
-
-Power analyses need to contain the following information to be interpretable: the type of power analysis, the statistical test, the software used, sample size, critical alpha criterion, power level, effect size, and an effect size metric. In addition, it is recommended to make sure the power analysis is reproducible (by sharing the code, or a screenshot, of the power analysis), and to provide good arguments for why the study was designed to detect an effect of this size.
-
-For an a-priori power analysis, where the sample size is determined, reporting all information would look like:
-
-> An a priori power analysis for an independent samples t-test, conducted using the pwr.t.test function from pwr (Champely, 2020), indicated that for a Cohen's d = 0.5, an alpha level of 0.05, and a desired power level of 80% required at least 64 participants in each group.
-
-For a sensitivity power analysis, this sentence would look like:
-
-> A sensitivity power analysis for an independent samples t-test, conducted using the pwr.t.test function from pwr (Champely, 2020), indicated that with 64 participants in each group, and an alpha level of 0.05, a desired power level of 80% was reached for an effect size of d = 0.5.
-
-:::
-
-</div></details>
-
-::: {.callout-note title="How It Works" collapse="true"}
-
-This module uses a large language module (LLM) to extract information reported in power analyses, including the statistical test, sample size, alpha level, desired level of power,and magnitude and type of effect size.
-
-If you have not set llm_use(TRUE) and supplied a groq API, the module will return paragraphs that potentially contain power analyses, based on a regular expression search.
-
-The Power Analysis Check module uses regular expressions to identify sentences that contain a statistical power analysis. Without the use of an LMM, the module uses regular expressions to classify the power analysis as a-priori, sensitivity or post-hoc. With the use of an LMM, it checks if the power analysis is reported with all required information.
-
-The regular expressions can miss power analyses, or fail to classify them correctly. The type of power analysis is often difficult to classify, which can easily be solved by explicitly specifying the type of power analysis as 'a-priori', 'sensitivity', or 'post-hoc'. Note that 'post-hoc' or 'observed' power is rarely useful. The LMM can fail to identify information in the paper, and will not have access to information in paragraphs in the paper other than those that contain the word 'power'. This package was validated by the Metacheck team on articles in Psychological Science.
-
-This module was developed by Lisa DeBruine, Daniel Lakens and Cristian Mesquida
-
-:::
-
 ### ✅️ Randomization and Causal Claims {#randomization-and-causal-claims .green}
 
 -  We identified 1 sentence describing randomization.
@@ -307,6 +245,68 @@ The regular expressions can miss statements about randomization, or incorrectly 
 If you want to improve the detection of sentences describing randomization, or otherwise improve the module, reach out to the Metacheck development team.
 
 This module was developed by Daniel Lakens
+
+:::
+
+### ✅️ Power Analysis Check {#power-analysis-check .green}
+
+We detected 1 potential power analysis.
+
+<details><summary>View detailed feedback</summary><div>
+
+All essential information could be detected.
+
+```{r}
+#| echo: false
+
+# table data --------------------------------------
+table <- structure(list(power_type = "sensitivity", statistical_test = "t-test", 
+    sample_size = 50L, alpha_level = 0.05, power = 0.8, effect_size = 0.5, 
+    effect_size_metric = "Cohen's d", software = "G*Power"), row.names = c(NA, 
+-1L), class = c("tbl_df", "tbl", "data.frame"))
+
+# display table -----------------------------------
+metacheck::report_table(table, "auto", 5, FALSE)
+```
+
+```{r}
+#| echo: false
+
+# table data --------------------------------------
+table <- structure(list(text = "In this study we examine whether automated checks reduce the amount of errors that researchers make in scientific manuscripts. This study was preregistered at <https://osf.io/48ncu> and on AsPredicted at <https://aspredicted.org/by8i8v.pdf>. We randomly assigned 50 scientists to a condition where their manuscript was automatically checked for errors, and 50 scientists to a control condition with a checklist. Scientists had the opportunity to make changes to their manuscript based on the feedback of the tool. We subsequently coded all manuscripts for mistakes, and counted the total number of mistakes. We also measured the expertise of researchers (in years) to explore whether the automated tool would be more useful, the less research experience researchers had. We also asked researchers to rate how useful they found the checklist or app on a scale from 1 (not at all) to 7 (extremely useful). Data and analysis code is available on GitHub from <https://github.com/Lakens/to_err_is_human> and from <https://researchbox.org/4377>. Data is also available from <https://osf.io/5tbm9> and code is also available from <https://osf.io/629bx>. We conducted a <strong>sensitivity</strong> <strong>power</strong> analysis to determine that a Cohen's d of 0.50 is the smallest effect size that we could detect with 50 participants in each group and 80% <strong>power</strong>. On average researchers in the experimental (app) condition made fewer mistakes (M = 9.12) than researchers in the control (checklist) condition (M = 10.9), t(97.7) = 2.9, p = 0.005, d = 0.59."), row.names = c(NA, 
+-1L), class = c("tbl_df", "tbl", "data.frame"))
+
+# display table -----------------------------------
+metacheck::report_table(table, "auto", 1, FALSE)
+```
+
+::: {.callout-tip title="Learn More" collapse="true"}
+
+Power analyses need to contain the following information to be interpretable: the type of power analysis, the statistical test, the software used, sample size, critical alpha criterion, power level, effect size, and an effect size metric. In addition, it is recommended to make sure the power analysis is reproducible (by sharing the code, or a screenshot, of the power analysis), and to provide good arguments for why the study was designed to detect an effect of this size.
+
+For an a-priori power analysis, where the sample size is determined, reporting all information would look like:
+
+> An a priori power analysis for an independent samples t-test, conducted using the pwr.t.test function from pwr (Champely, 2020), indicated that for a Cohen's d = 0.5, an alpha level of 0.05, and a desired power level of 80% required at least 64 participants in each group.
+
+For a sensitivity power analysis, this sentence would look like:
+
+> A sensitivity power analysis for an independent samples t-test, conducted using the pwr.t.test function from pwr (Champely, 2020), indicated that with 64 participants in each group, and an alpha level of 0.05, a desired power level of 80% was reached for an effect size of d = 0.5.
+
+:::
+
+</div></details>
+
+::: {.callout-note title="How It Works" collapse="true"}
+
+This module uses a large language module (LLM) to extract information reported in power analyses, including the statistical test, sample size, alpha level, desired level of power,and magnitude and type of effect size.
+
+If you have not set llm_use(TRUE) and supplied a groq API, the module will return paragraphs that potentially contain power analyses, based on a regular expression search.
+
+The Power Analysis Check module uses regular expressions to identify sentences that contain a statistical power analysis. Without the use of an LMM, the module uses regular expressions to classify the power analysis as a-priori, sensitivity or post-hoc. With the use of an LMM, it checks if the power analysis is reported with all required information.
+
+The regular expressions can miss power analyses, or fail to classify them correctly. The type of power analysis is often difficult to classify, which can easily be solved by explicitly specifying the type of power analysis as 'a-priori', 'sensitivity', or 'post-hoc'. Note that 'post-hoc' or 'observed' power is rarely useful. The LMM can fail to identify information in the paper, and will not have access to information in paragraphs in the paper other than those that contain the word 'power'. This package was validated by the Metacheck team on articles in Psychological Science.
+
+This module was developed by Lisa DeBruine, Daniel Lakens and Cristian Mesquida
 
 :::
 
@@ -929,45 +929,6 @@ This module was developed by Daniel Lakens and Lisa DeBruine
 
 :::
 
-### ℹ️ Replication Check {#replication-check .info}
-
-You cited 1 article in the FReD replication database.
-
-<details><summary>View detailed feedback</summary><div>
-
-We checked 4 references with DOIs. You cited 1 article in the FReD replication database.
-
-Check if you are aware of the replication studies, and cite them where appropriate.
-
-```{r}
-#| echo: false
-
-# table data --------------------------------------
-table <- structure(list(Reference = "Gangestad SW, Thornhill R (1998). &ldquo;Menstrual cycle variation in women's preferences for the scent of symmetrical men.&rdquo; <em>Proceedings Biological Sciences</em>, <b>22</b>, 927-933. <a href=\"https://doi.org/10.1098/rspb.1998.0380\">doi:10.1098/rspb.1998.0380</a>.", 
-    "Replication Reference" = "Jones, B. C., Hahn, A. C., Fisher, C. I., Wang, H., Kandrik, M., Han, C., Fasolt, V., Morrison, D., Lee, A. J., Holzleitner, I. J., O’Shea, K. J., Roberts, S. C., Little, A. C., & DeBruine, L. M. (2018). No Compelling Evidence that Preferences for Facial Masculinity Track Changes in Women’s Hormonal Status. Psychological Science, 29(6), 996-1005. https://doi.org/10.1177/0956797618760197 <a href='https://doi.org/10.1177/0956797618760197' target='_blank'>doi.org/10.1177/0956797618760197</a>"), row.names = 1L, class = "data.frame")
-
-# display table -----------------------------------
-metacheck::report_table(table, c(0.5, 0.5), 2, FALSE)
-```
-
-</div></details>
-
-::: {.callout-note title="How It Works" collapse="true"}
-
-This module checks references and warns for citations of original studies for which replication studies exist in the Replication Database.
-
-The Replication Check module compares the reference list against studies in the FORRT replication database based on the DOI. If a study in the database is found, a reminder is provided that a replication of the original study exists, and should be cited (currently, a warning is provided regardless of whether the replication study is already cited).
-
-The module requires that the reference has a DOI. If you run the ref_doi_check module in a pipeline before this, it will use the enhanced DOI list from that module, otherwise it will only run on references with existing DOIs.
-
-It is possible the original study was cited for other reasons than the empirical claim tested, or that the replication in the FORRT replication database is for only one of the studies in the paper, and not the study the authors discuss.
-
-The database can be manually updated with the `FReD_update()`` function. For more information, see <https://forrt.org/FReD/>.
-
-This module was developed by Daniel Lakens and Lisa DeBruine
-
-:::
-
 ### ℹ️ RetractionWatch {#retractionwatch .info}
 
 You cited 1 article in the RetractionWatch database.
@@ -1065,9 +1026,7 @@ FALSE), crossref_title_mismatch = c(FALSE, TRUE, FALSE, FALSE
 ), crossref_author_mismatch = c(FALSE, FALSE, FALSE, TRUE), pubpeer_total_comments = c(NA, 
 3, NA, NA), pubpeer_url = c(NA, "https://pubpeer.com/publications/3FA648ECECB88454C91804F09E2E56", 
 NA, NA), pubpeer_users = c(NA, "Statcheck , Aioliops Novaeguineae, Hoya Camphorifolia", 
-NA, NA), replication_ref = c("Jones, B. C., Hahn, A. C., Fisher, C. I., Wang, H., Kandrik, M., Han, C., Fasolt, V., Morrison, D., Lee, A. J., Holzleitner, I. J., O’Shea, K. J., Roberts, S. C., Little, A. C., & DeBruine, L. M. (2018). No Compelling Evidence that Preferences for Facial Masculinity Track Changes in Women’s Hormonal Status. Psychological Science, 29(6), 996-1005. https://doi.org/10.1177/0956797618760197", 
-NA, NA, NA), replication_doi = c("10.1177/0956797618760197", 
-NA, NA, NA), retractionwatch = c(NA, "Retraction", NA, NA)), class = "data.frame", row.names = c(NA, 
+NA, NA), retractionwatch = c(NA, "Retraction", NA, NA)), class = "data.frame", row.names = c(NA, 
 -4L))
 
 # display table -----------------------------------

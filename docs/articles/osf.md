@@ -311,7 +311,7 @@ ways that these words can be written) is used to automatically detect
 what is shared.
 
 ``` r
-osf_files_summary <- summarize_contents(info)
+osf_files_summary <- file_category(info)
 ```
 
 | name                                  | filetype | file_category |
@@ -689,7 +689,7 @@ automated checks for another open access paper in Psychological Science.
 osf_file_check <- function(paper) {
   links <- osf_links(paper)
   info <- osf_retrieve(links, recursive = TRUE)
-  osf_files_summary <- summarize_contents(info)
+  osf_files_summary <- file_category(info)
   report <- osf_report(osf_files_summary)
   r_file_results <- check_r_files(osf_files_summary)  
   

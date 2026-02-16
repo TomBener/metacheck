@@ -111,7 +111,7 @@ info |>
 We can then use this information to determine if, for each file, the information about the files contains text that makes it easy to determine what is being shared. A simple regular expression text search for 'README', 'codebook', 'script', and 'data' (in a number of possible ways that these words can be written) is used to automatically detect what is shared.
 
 ```{r summarize_osf_files}
-osf_files_summary <- summarize_contents(info)
+osf_files_summary <- file_category(info)
 ```
 
 ```{r}
@@ -277,7 +277,7 @@ Let's put everything together in one block of code, and perform all automated ch
 osf_file_check <- function(paper) {
   links <- osf_links(paper)
   info <- osf_retrieve(links, recursive = TRUE)
-  osf_files_summary <- summarize_contents(info)
+  osf_files_summary <- file_category(info)
   report <- osf_report(osf_files_summary)
   r_file_results <- check_r_files(osf_files_summary)  
   

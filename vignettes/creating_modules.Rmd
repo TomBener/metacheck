@@ -172,6 +172,20 @@ for (step in steps) {
 }
 ```
 
+If you dn't know how many steps there will be in a process, you can use the spinner version:
+
+```{r}
+#| eval: false
+
+steps <- c("beginning", "middle", "end")
+pb <- pb(NA, "(:spin) :what")
+
+for (step in steps) {
+  pb$tick(tokens = list(what = step))
+  Sys.sleep(2)
+}
+```
+
 
 #### Get Previous Outputs
 
