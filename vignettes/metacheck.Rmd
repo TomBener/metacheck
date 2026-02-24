@@ -150,12 +150,12 @@ info_table(psychsci[1:5], c("title", "doi"))
 
 
 ```{r}
-concat_tables(psychsci[1:5], "bib") |>
+paper_table(psychsci[1:5], "bib") |>
   dplyr::filter(!is.na(doi))
 ```
 
 ```{r}
-concat_tables(psychsci[1:40], "xrefs") |>
+paper_table(psychsci[1:40], "xrefs") |>
   dplyr::filter(grepl("replicat", text)) |>
   dplyr::count(id, text)
 ```
