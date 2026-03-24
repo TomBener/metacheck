@@ -93,7 +93,7 @@ paper$authors |> str()
 You can get the authors as a table for a paper object or list of papers.
 
 ```{r}
-author_table(psychsci) |> 
+paper_table(psychsci, "author") |> 
   dplyr::filter(grepl("Glasgow", affiliation))
 ```
 

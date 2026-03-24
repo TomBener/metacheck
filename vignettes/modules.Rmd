@@ -17,7 +17,7 @@ knitr::opts_chunk$set(
 ```{r}
 #| label: setup
 #| message: false
-library(metacheck)
+devtools::load_all(".")
 library(dplyr)
 ```
 
@@ -140,7 +140,7 @@ If you run this module on all 250 papers, you will get more rows than you probab
 ```{r}
 all_p_ps <- module_run(psychsci, "all_p_values")
 
-all_p_ps$summary_table
+all_p_ps$summary_table |> head()
 ```
 
 You can still access the full table for further processing.
@@ -222,18 +222,6 @@ marginal_ps <- module_run(psychsci, "marginal")
 marginal_ps$table # print table
 ```
 
-
-### ref_consistency
-
-Check if all references are cited and all citations are referenced.
-
-```{r}
-ref_consistency <- module_run(paper, "ref_consistency")
-
-ref_consistency$table
-```
-
-It looks like there are some references with missing citations. The first one doesn't look like a reference, and grobid often parses tables oddly. You'd need to look at the original PDF to see if the others are actually missing or false positives. Here, they are all false positives, based on grobid not being able to match the in-text citation to the reference list. 
 
 ### stat_check
 

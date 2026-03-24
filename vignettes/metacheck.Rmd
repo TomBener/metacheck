@@ -41,13 +41,15 @@ The function `pdf2grobid()` can read PDF files and save them in the [TEI](https:
 If the server is unavailable, you can [use a grobid web interface](https://huggingface.co/spaces/kermitt2/grobid).
 
 ```{r, eval = FALSE}
-pdf_file <- demopdf()
+pdf_file <- system.file("demo/to_err_is_human.pdf",
+                        paclage = "metacheck")
 xml_file <- pdf2grobid(pdf_file)
 ```
 
 ```{r, include = FALSE}
 # doesn't require a call to the grobid server
-xml_file <- demoxml()
+xml_file <- system.file("demo/to_err_is_human.xml",
+                        paclage = "metacheck")
 ```
 
 You can set up your own local grobid server following instructions from <https://grobid.readthedocs.io/>. The easiest way is to use Docker.
