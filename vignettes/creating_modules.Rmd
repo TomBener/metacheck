@@ -15,7 +15,7 @@ knitr::opts_chunk$set(
 ```
 
 ```{r setup}
-library(metacheck)
+devtools::load_all(".")
 ```
 
 Modules are user-created patterns for checking a paper or set of papers. Module specifications are written in the same format as functions in R packages, using roxygen2 for documentation. 

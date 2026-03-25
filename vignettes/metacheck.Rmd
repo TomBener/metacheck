@@ -25,8 +25,15 @@ devtools::install_github("scienceverse/metacheck")
 ```
 
 ```{r}
+#| eval: false
 library(metacheck)
 ```
+
+```{r}
+#| include: false
+devtools::load_all(".")
+```
+
 
 You can launch an interactive shiny app version of the code below with:
 

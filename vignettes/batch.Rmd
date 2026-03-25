@@ -25,7 +25,7 @@ mytable <- function(tbl) {
 ```{r}
 #| label: setup
 #| message: false
-library(metacheck)
+devtools::load_all(".")
 library(dplyr) # for data wrangling
 library(readr) # reading and writing CSV files
 ```
@@ -34,22 +34,51 @@ In this vignette, we will process 250 open access papers from Psychological Scie
 
 ## Convert PDFs
 
+### Using Bibr
+
+Bibr is a bibliographic metadata extractor, which has been developed specifically for metacheck. It uses OCR, regular expressions, machine learning, and limited LLMs to extract the contents of research papers in PDFs or Word format into structured metadata.
+
+To start, read in all of the PDF files from a directory called "pdf", and save the bibr files in a directory called "bibr". 
+
+```{r}
+#| eval: false
+
+bibr_convert(filename = "pdf", 
+             save_path = "bibr")
+```
+
+
+### Using Grobid
+
+An alternate way to process PDFs is with the machine-learning library grobid, and then convert the resulting XML files to bibr format. This will have most, but not all, of the features of a paper processed by bibr. 
+
 Read in all of the PDF files from a directory called "pdf", process them with a local version of grobid, and save the XML files in a directory called "xml". 
 
 ```{r}
 #| eval: false
 
-pdf2grobid(filename = "pdf", 
-           save_path = "xml", 
-           grobid_url = "http://localhost:8070")
+grobid_convert(filename = "pdf", 
+               save_path = "xml", 
+               api_url = "http://localhost:8070")
 ```
 
-Then read in the XML files to metacheck and save in an object called `papers`. 
+Convert the grobid XML files to bibr format using `grobid_to_bibr()`. Save them in a directory called "bibr".
 
 ```{r}
 #| eval: false
-papers <- read("xml")
+grobid_to_bibr(xml_file = "xml", 
+               save_path = "bibr")
 ```
+
+### Read in converted files
+
+After you convert your papers to bibr format, read in the bibr files to metacheck and save in an object called `papers`. 
+
+```{r}
+#| eval: false
+papers <- read("bibr")
+```
+
 
 These steps can take some time if you are processing a lot of papers, and only needs to happen once, so it is often useful to save the `papers` object as an Rds file, comment out the code above, and load `papers` from this object on future runs of your script.
 
@@ -74,42 +103,43 @@ Now `papers` is a list of metacheck paper objects, each of which contains struct
 paper <- papers[[10]]
 ```
 
-### ID
+### Paper ID
 
-The `id` is taken from the name of the xml file.
+The `paper_id` is taken from the name of the original file.
 
 ```{r}
-paper$id
+paper$paper_id
 ```
 
 ### Authors
 
-The `authors` list contains a list of information for each author. For now, CRediT roles are not detected, but this may be added in the future.
+The `author` table contains information for each author.
 
 ```{r}
-paper$authors |> str()
+paper$author |> str()
 ```
 
-You can get the authors as a table for a paper object or list of papers.
+You can get the authors as a table for a paper object or list of papers. Use the `paper_table()` function to extract and combine tables from a paper list.
 
 ```{r}
-paper_table(psychsci, "author") |> 
+paper_table(papers, "author") |> 
   dplyr::filter(grepl("Glasgow", affiliation))
 ```
 
 
 ### Info 
 
-The `info` item lists the filename, title, description (abstract), keywords, doi, and submission info. Grobid sometimes makes mistakes with the DOI, so be cautious about using this.
+The `info` table lists the filename, title, keywords, doi, and other info. The import sometimes makes mistakes with the DOI, so be cautious about using this.
 
 ```{r}
 paper$info
 ```
 
-You can get this as a table for a batch of papers using `info_table()`.
+You can get this as a table for a batch of papers using `paper_table()`.
 
 ```{r}
-info_table(papers, info = c("doi", "title")) |> 
+paper_table(papers, "info") |> 
+  select(doi, paper_type) |>
   head()
 ```
 
@@ -120,6 +150,7 @@ The `bib` contains the items in the reference list, including an id to link them
 
 ```{r}
 bib <- paper$bib
+bib$authors <- unclass(bib$authors)
 
 dplyr::filter(bib, xref_id == "b5")
 ```
