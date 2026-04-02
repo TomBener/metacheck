@@ -1,5 +1,5 @@
 {
-  "paper_id": "0c0d18f3935e8e17",
+  "paper_id": "09567976211046884",
   "info": [
     {
       "title": "The Importance of Random Slopes in Mixed Models for Bayesian Hypothesis Testing",
@@ -8,7 +8,7 @@
       "file_hash": "0c0d18f3935e8e17",
       "input_format": "TEI XML",
       "file_name": "data-raw/psychsci/grobid_0.8.2/09567976211046884.xml",
-      "bibr_version": "9.0",
+      "bibr_version": "10.0",
       "paper_type": "unknown",
       "paper_type_confidence": 0,
       "oecd_l1": null,
@@ -880,1603 +880,2100 @@
       "text_id": 122,
       "paragraph_id": 34,
       "section_id": 8,
-      "text": "To test this effect, I used the same basic setup in Simulation 2 as in Log 10 (BF) Log 10 (BF) 0 5 10 15 20 0 5 10 15 20 No RS RS 1 RS 2 R S No RS RS 1 RS 2 R S True Effect > 0, Unaggregated Data True Effect > 0, Aggregated Data Effect Size 0.25 0.5 0.75 Effect Size 0.25 0.5 0.75 Fig.",
+      "text": "To test this effect, I used the same basic setup in Simulation 2 as in Log 10 (BF) Log 10 (BF) 0 5 10 15 20 0 5 10 15 20 No RS RS 1 RS 2 R S No RS RS 1 RS 2 R S True Effect > 0, Unaggregated Data True Effect > 0, Aggregated Data Effect Size 0.25 0.5 0.75 Effect Size 0.25 0.5 0.75 Fig 3 Simulation 1: Bayes factors (BFs) from simulations in which the effect of interest was greater than 0, as a function of model version and true effect size.",
       "page_number": null
     },
     {
       "text_id": 123,
       "paragraph_id": 34,
       "section_id": 8,
-      "text": "3.",
+      "text": "Results are shown separately for unaggregated data (left) and aggregated data (right).",
       "page_number": null
     },
     {
       "text_id": 124,
       "paragraph_id": 34,
       "section_id": 8,
-      "text": "Simulation 1: Bayes factors (BFs) from simulations in which the effect of interest was greater than 0, as a function of model version and true effect size.",
+      "text": "The \"no RS\" model version included no random slopes, the \"RS 1\" version included random slopes for the effect of interest, the \"RS 2\" version included random slopes for the other effect, and the \"RS\" version included random slopes for both effects.",
       "page_number": null
     },
     {
       "text_id": 125,
       "paragraph_id": 34,
       "section_id": 8,
-      "text": "Results are shown separately for unaggregated data (left) and aggregated data (right).",
+      "text": "Each point is a BF from one simulation run.",
       "page_number": null
     },
     {
       "text_id": 126,
       "paragraph_id": 34,
       "section_id": 8,
-      "text": "The \"no RS\" model version included no random slopes, the \"RS 1\" version included random slopes for the effect of interest, the \"RS 2\" version included random slopes for the other effect, and the \"RS\" version included random slopes for both effects.",
+      "text": "BFs are plotted on a log 10 scale for visibility.",
       "page_number": null
     },
     {
       "text_id": 127,
       "paragraph_id": 34,
       "section_id": 8,
-      "text": "Each point is a BF from one simulation run.",
+      "text": "BFs above the red line indicate evidence for the effect; those below the red line indicate evidence against the effect.",
       "page_number": null
     },
     {
       "text_id": 128,
       "paragraph_id": 34,
       "section_id": 8,
-      "text": "BFs are plotted on a log 10 scale for visibility.",
+      "text": "Note: For each model, results are shown separately for unaggregated data and aggregated data.",
       "page_number": null
     },
     {
       "text_id": 129,
       "paragraph_id": 34,
       "section_id": 8,
-      "text": "BFs above the red line indicate evidence for the effect; those below the red line indicate evidence against the effect.",
+      "text": "Within each type of data, probabilities are further broken down for simulations returning a miss (i.e., a BF < 3, which is weak evidence for the effect, or a BF < 1, reflecting weak evidence against the effect) or a false negative (i.e., a BF < 0.33, which is evidence for the null hypothesis).",
       "page_number": null
     },
     {
       "text_id": 130,
       "paragraph_id": 34,
       "section_id": 8,
-      "text": "Note: For each model, results are shown separately for unaggregated data and aggregated data.",
+      "text": "The \"no RS\" model version included no random slopes, the \"RS 1\" version included random slopes for the effect of interest, the \"RS 2\" version included random slopes for the other effect, and the \"RS\" version included random slopes for both effects.",
       "page_number": null
     },
     {
       "text_id": 131,
       "paragraph_id": 34,
       "section_id": 8,
-      "text": "Within each type of data, probabilities are further broken down for simulations returning a miss (i.e., a BF < 3, which is weak evidence for the effect, or a BF < 1, reflecting weak evidence against the effect) or a false negative (i.e., a BF < 0.33, which is evidence for the null hypothesis).",
-      "page_number": null
-    },
-    {
-      "text_id": 132,
-      "paragraph_id": 34,
-      "section_id": 8,
-      "text": "The \"no RS\" model version included no random slopes, the \"RS 1\" version included random slopes for the effect of interest, the \"RS 2\" version included random slopes for the other effect, and the \"RS\" version included random slopes for both effects.",
-      "page_number": null
-    },
-    {
-      "text_id": 133,
-      "paragraph_id": 34,
-      "section_id": 8,
       "text": "For the \"RS (evidence)\" version, the inclusion of random effects was conditional on evidence supporting them.",
       "page_number": null
     },
     {
-      "text_id": 134,
+      "text_id": 132,
       "paragraph_id": 35,
       "section_id": 8,
       "text": "Simulation 1 but varied the number of levels of Independent Variable 2.",
       "page_number": null
     },
     {
-      "text_id": 135,
+      "text_id": 133,
       "paragraph_id": 37,
       "section_id": 9,
       "text": "Simulation 2 was like Simulation 1, with one important modification: I varied the number of levels of Independent Variable 2 over four levels: two, four, six, and 10.",
       "page_number": null
     },
     {
-      "text_id": 136,
+      "text_id": 134,
       "paragraph_id": 37,
       "section_id": 9,
       "text": "The variable of interest, Independent Variable 1, still had two levels.",
       "page_number": null
     },
     {
-      "text_id": 137,
+      "text_id": 135,
       "paragraph_id": 37,
       "section_id": 9,
       "text": "To simplify the simulations, I used only one level of true random slopes, σ = .5, and only one level of a true effect, effect size = 0.5.",
       "page_number": null
     },
     {
-      "text_id": 138,
+      "text_id": 136,
       "paragraph_id": 37,
       "section_id": 9,
       "text": "Each simulation was run with 20 subjects and with 30 trials per design cell.",
       "page_number": null
     },
     {
-      "text_id": 139,
+      "text_id": 137,
       "paragraph_id": 39,
       "section_id": 10,
       "text": "Figure 4 shows the BFs for the simulations in which the true effect was zero.",
       "page_number": null
     },
     {
-      "text_id": 140,
+      "text_id": 138,
       "paragraph_id": 39,
       "section_id": 10,
       "text": "As in Simulation 1, there was a sizable number of BFs in favor of an effect when random slopes of the variable of interest (Predictor 1) were omitted.",
       "page_number": null
     },
     {
-      "text_id": 141,
+      "text_id": 139,
       "paragraph_id": 39,
       "section_id": 10,
       "text": "As expected, the prevalence and size of these BFs increased as the number of levels of Independent Variable 2 increased.",
       "page_number": null
     },
     {
-      "text_id": 142,
+      "text_id": 140,
       "paragraph_id": 39,
       "section_id": 10,
       "text": "This led to a nonnegligible number of false positives also in the aggregated data, as shown in Table 3.",
       "page_number": null
     },
     {
-      "text_id": 143,
+      "text_id": 141,
       "paragraph_id": 40,
       "section_id": 10,
       "text": "Figure 5 shows the BFs for the simulation runs in which the true effect was 0.5.",
       "page_number": null
     },
     {
-      "text_id": 144,
+      "text_id": 142,
       "paragraph_id": 40,
       "section_id": 10,
       "text": "In the unaggregated data, the models omitting the random slopes of Predictor 1 produced BFs so huge that they were off the figure's scale.",
       "page_number": null
     },
     {
-      "text_id": 145,
+      "text_id": 143,
       "paragraph_id": 41,
       "section_id": 10,
       "text": "The proportion of misses and false negatives is given in Table 4.",
       "page_number": null
     },
     {
-      "text_id": 146,
+      "text_id": 144,
       "paragraph_id": 41,
       "section_id": 10,
       "text": "This proportion was lower than in Simulation 1 for two reasons: Simulation 2 did not include the small effect size of 0.25, and it included simulations of designs with more cells; more cells led to more trials to inform the effect of interest because I held the number of trials per cell constant.",
       "page_number": null
     },
     {
-      "text_id": 147,
+      "text_id": 145,
       "paragraph_id": 43,
       "section_id": 11,
       "text": "The take-home message from Simulation 2 is that, even with aggregated data, the risk of false positives when true random slopes are omitted from the model becomes",
       "page_number": null
     },
     {
-      "text_id": 148,
+      "text_id": 146,
       "paragraph_id": 44,
       "section_id": 11,
       "text": "Log 10 (BF) Log 10 (BF) 0 5 10 15 0 5 10 15 2 4 6 10 n(Levels) IV 2 2 4 6 10",
       "page_number": null
     },
     {
-      "text_id": 149,
+      "text_id": 147,
       "paragraph_id": 45,
       "section_id": 11,
       "text": "True Effect = 0, Unaggregated Data True Effect = 0, Aggregated Data uncomfortably high when the experimental design becomes more complex (i.e., each level of the predictor of interest is represented by a larger number of design cells).",
       "page_number": null
     },
     {
-      "text_id": 150,
+      "text_id": 148,
       "paragraph_id": 47,
       "section_id": 12,
       "text": "With this simulation, I aimed to answer two questions.",
       "page_number": null
     },
     {
-      "text_id": 151,
+      "text_id": 149,
       "paragraph_id": 48,
       "section_id": 12,
       "text": "First, what is the effect of omitting random slopes of continuous predictors in regression models from a model when such effects are actually in the data?",
       "page_number": null
     },
     {
-      "text_id": 152,
+      "text_id": 150,
       "paragraph_id": 48,
       "section_id": 12,
       "text": "Second, what is the effect of omitting correlations between random slopes when such correlations are in the data?",
       "page_number": null
     },
     {
-      "text_id": 153,
+      "text_id": 151,
       "paragraph_id": 50,
       "section_id": 13,
       "text": "I simulated a within-subjects design with two predictor variables that varied over five levels on a continuous dimension, such as five list lengths combined with five retention intervals in a memory experiment.",
       "page_number": null
     },
     {
-      "text_id": 154,
+      "text_id": 152,
       "paragraph_id": 50,
       "section_id": 13,
       "text": "This means that the scale was at least ordinal, and the five levels were ordered from the smallest to the largest.",
       "page_number": null
     },
     {
-      "text_id": 155,
+      "text_id": 153,
       "paragraph_id": 50,
       "section_id": 13,
       "text": "The two predictors were not fully crossed but, rather, varied randomly and independently across the 150 trials simulated for each subject, with the constraint that for each predictor, each value was realized equally often (i.e., 30 times).",
       "page_number": null
     },
     {
-      "text_id": 156,
+      "text_id": 154,
       "paragraph_id": 50,
       "section_id": 13,
       "text": "For both the data-generating model and the model fitted to the data, I used z-standardized variables with five equidistant values as predictors, so that the effect size was standardized.",
       "page_number": null
     },
     {
-      "text_id": 157,
+      "text_id": 155,
       "paragraph_id": 50,
       "section_id": 13,
       "text": "The effect size of the first predictor-the predictor of interest in the model comparisons-was either 0 or 0.25.",
       "page_number": null
     },
     {
-      "text_id": 158,
+      "text_id": 156,
       "paragraph_id": 50,
       "section_id": 13,
       "text": "The effect size for the second predictor was always 0.25.",
       "page_number": null
     },
     {
-      "text_id": 159,
+      "text_id": 157,
       "paragraph_id": 50,
       "section_id": 13,
       "text": "Two variables were varied across simulations: the standard deviation of the random slopes of both predictors (σ = .1, .25, .5, or 1) and the correlation between the two predictors across subjects (r = 0, .2, .5, or .7).",
       "page_number": null
     },
     {
-      "text_id": 160,
+      "text_id": 158,
       "paragraph_id": 50,
       "section_id": 13,
       "text": "For each combination of these variables, I ran 40 replications of the simulation with 20 subjects each.",
       "page_number": null
     },
     {
-      "text_id": 161,
+      "text_id": 159,
       "paragraph_id": 50,
       "section_id": 13,
       "text": "4 For each simulation, I tested the effect of the first predictor by comparing a model including both predictors as fixed effects with one in which the first predictor's fixed effect was removed.",
       "page_number": null
     },
     {
-      "text_id": 162,
+      "text_id": 160,
       "paragraph_id": 50,
       "section_id": 13,
       "text": "This was done for three model versions: The \"no RS\" version included no random slopes, the \"RS\" version included uncorrelated random slopes for the two predictors, and the \"RS + Corr\" version included the two random slopes and their correlation as free parameters.",
       "page_number": null
     },
     {
-      "text_id": 163,
+      "text_id": 161,
       "paragraph_id": 50,
       "section_id": 13,
       "text": "The models were applied only to unaggregated data because this is the situation in which Simulation 1 revealed the larger effect of random slopes.",
       "page_number": null
     },
     {
-      "text_id": 164,
+      "text_id": 162,
       "paragraph_id": 50,
       "section_id": 13,
       "text": "Because the BayesFactor package does not support random slopes for continuous (numerical) predictors, I used the brms package (Version 2.15.0; Bürkner, 2017) for running the models and the bridgesampling package (Version 1.1-2; Gronau et al., 2020) for estimating the BFs.",
       "page_number": null
     },
     {
-      "text_id": 165,
+      "text_id": 163,
       "paragraph_id": 50,
       "section_id": 13,
       "text": "The models were run with three chains of 10,000 iterations each (including 1,000 warm-up iterations).",
       "page_number": null
     },
     {
-      "text_id": 166,
+      "text_id": 164,
       "paragraph_id": 50,
       "section_id": 13,
       "text": "The priors for the standardized effect sizes were default Cauchy priors with scale 0.5 (Rouder et al., 2012).",
       "page_number": null
     },
     {
-      "text_id": 167,
+      "text_id": 165,
       "paragraph_id": 52,
       "section_id": 14,
       "text": "Figure 6 shows the BFs for the simulations in which the true effect of interest was zero.",
       "page_number": null
     },
     {
-      "text_id": 168,
+      "text_id": 166,
       "paragraph_id": 52,
       "section_id": 14,
       "text": "As in Simulation 1, when random slopes were omitted from the models, there was a nonnegligible proportion of simulations that produced huge BFs in favor of the effect.",
       "page_number": null
     },
     {
-      "text_id": 169,
+      "text_id": 167,
       "paragraph_id": 52,
       "section_id": 14,
       "text": "The proportion of false positives is given in Table 5.",
       "page_number": null
     },
     {
-      "text_id": 170,
+      "text_id": 168,
       "paragraph_id": 52,
       "section_id": 14,
       "text": "The prevalence and size of BFs in favor of an effect increased as σ, the standard deviation of the true random slopes, increased.",
       "page_number": null
     },
     {
-      "text_id": 171,
+      "text_id": 169,
       "paragraph_id": 52,
       "section_id": 14,
       "text": "5 When random slopes were included in the models, these false positives were strongly mitigated.",
       "page_number": null
     },
     {
-      "text_id": 172,
+      "text_id": 170,
       "paragraph_id": 52,
       "section_id": 14,
       "text": "This was the case regardless of whether a correlation between the random slopes was included.",
       "page_number": null
     },
     {
-      "text_id": 173,
+      "text_id": 171,
       "paragraph_id": 53,
       "section_id": 14,
       "text": "Figure 7 shows the same BFs as a function of the true size of the correlation: This variable had no discernible effect on the false-positive rate or size.",
       "page_number": null
     },
     {
-      "text_id": 174,
+      "text_id": 172,
       "paragraph_id": 53,
       "section_id": 14,
       "text": "Table 5 summarizes the proportion of false positives for the three model versions, and Table 6 shows the proportion of misses and of false negatives.",
       "page_number": null
     },
     {
-      "text_id": 175,
+      "text_id": 173,
       "paragraph_id": 53,
       "section_id": 14,
       "text": "They show again that including random slopes in the models reduces the false-positive rate but at the cost of increasing misses of true effects and even increasing false negatives (although the latter still remained at a low level).",
       "page_number": null
     },
     {
-      "text_id": 176,
+      "text_id": 174,
       "paragraph_id": 53,
       "section_id": 14,
       "text": "Whether or not the correlation was included did not matter.",
       "page_number": null
     },
     {
-      "text_id": 177,
+      "text_id": 175,
       "paragraph_id": 55,
       "section_id": 15,
       "text": "Simulation 3 confirmed what was already shown in the previous two simulations: In mixed regression models, just as in ANOVA models, omitting random slopes from models when they are in the data increases the risk of false positives with potentially enormous BFs in favor Within each type of data, probabilities are further broken down for simulations returning a miss (i.e., a BF < 3, which is weak evidence for the effect, or a BF < 1, reflecting weak evidence against the effect) or a false negative (i.e., a BF < 0.33, which is evidence for the null hypothesis).",
       "page_number": null
     },
     {
-      "text_id": 178,
+      "text_id": 176,
       "paragraph_id": 55,
       "section_id": 15,
       "text": "The \"no RS\" model version included no random slopes, the \"RS 1\" version included random slopes for the effect of interest, the \"RS 2\" version included random slopes for the other effect, and the \"RS\" version included random slopes for both effects.",
       "page_number": null
     },
     {
-      "text_id": 179,
+      "text_id": 177,
       "paragraph_id": 55,
       "section_id": 15,
       "text": "For the \"RS (evidence)\" version, the inclusion of random effects was conditional on evidence supporting them.",
       "page_number": null
     },
     {
-      "text_id": 180,
+      "text_id": 178,
       "paragraph_id": 56,
       "section_id": 15,
       "text": "of a nonexistent effect.",
       "page_number": null
     },
     {
-      "text_id": 181,
+      "text_id": 179,
       "paragraph_id": 56,
       "section_id": 15,
       "text": "The new result of Simulation 3 is that omitting the correlations between random slopes when they are in the data is innocuous.",
       "page_number": null
     },
     {
-      "text_id": 182,
+      "text_id": 180,
       "paragraph_id": 58,
       "section_id": 16,
       "text": "For this simulation, I returned to an ANOVA design and addressed a question that probably every experimenter who has read this far has wondered about: How does the number of subjects, and the number of trials per subject, affect the results from the previous simulations?",
       "page_number": null
     },
     {
-      "text_id": 183,
+      "text_id": 181,
       "paragraph_id": 60,
       "section_id": 17,
       "text": "Simulation 4 repeated the basic 2 × 2 ANOVA design of Simulation 1, with the following changes.",
       "page_number": null
     },
     {
-      "text_id": 184,
+      "text_id": 182,
       "paragraph_id": 60,
       "section_id": 17,
       "text": "I orthogonally varied the sample size (N = 20, 30, 40, or 50) and the number of trials per design cell (n = 20, 30, 40, 60, or 90).",
       "page_number": null
     },
     {
-      "text_id": 185,
+      "text_id": 183,
       "paragraph_id": 60,
       "section_id": 17,
       "text": "The true size of random slopes was held constant, σ = .5.",
       "page_number": null
     },
     {
-      "text_id": 186,
+      "text_id": 184,
       "paragraph_id": 60,
       "section_id": 17,
       "text": "For true effects, I simulated only an effect size of 0.25 because a relatively small effect size should be most informative about how N and n affect the risk of misses or false negatives.",
       "page_number": null
     },
     {
-      "text_id": 187,
+      "text_id": 185,
       "paragraph_id": 62,
       "section_id": 18,
       "text": "The distribution of BFs for simulations in which the true effect was zero is shown in Figure 8 as a function of sample size and in Figure 9 as a function of the number of trials.",
       "page_number": null
     },
     {
-      "text_id": 188,
+      "text_id": 186,
       "paragraph_id": 62,
       "section_id": 18,
       "text": "Table 7 gives the proportions of false positives.",
       "page_number": null
     },
     {
-      "text_id": 189,
+      "text_id": 187,
       "paragraph_id": 62,
       "section_id": 18,
       "text": "It is clear that neither increasing the sample size nor increasing the number of trials has a mitigating effect on the prevalence or the size of false positives.",
       "page_number": null
     },
     {
-      "text_id": 190,
+      "text_id": 188,
       "paragraph_id": 62,
       "section_id": 18,
       "text": "If anything, more data makes the problem worse, although the effect is modest at best.",
       "page_number": null
     },
     {
-      "text_id": 191,
+      "text_id": 189,
       "paragraph_id": 62,
       "section_id": 18,
       "text": "Figures 10 and 11 present the BFs for simulations with a true effect, and Table 8 summarizes the proportion of misses and of false negatives from these simulations.",
       "page_number": null
     },
     {
-      "text_id": 192,
+      "text_id": 190,
       "paragraph_id": 62,
       "section_id": 18,
       "text": "As in Simulations 1 to 3, including random slopes of the effect of interest increased the probability of missing the true effect and of even obtaining",
       "page_number": null
     },
     {
-      "text_id": 193,
+      "text_id": 191,
       "paragraph_id": 64,
       "section_id": 19,
       "text": "(modest) evidence against it.",
       "page_number": null
     },
     {
-      "text_id": 194,
+      "text_id": 192,
       "paragraph_id": 64,
       "section_id": 19,
       "text": "In analogy to the effect of sample size on statistical power in frequentist significance testing, we should expect sample size, and probably also the number of trials, to reduce that risk.",
       "page_number": null
     },
     {
-      "text_id": 195,
+      "text_id": 193,
       "paragraph_id": 64,
       "section_id": 19,
       "text": "This is indeed the case, as shown in Table 9, which breaks down the proportion of misses by sample size and number of trials.",
       "page_number": null
     },
     {
-      "text_id": 196,
+      "text_id": 194,
       "paragraph_id": 64,
       "section_id": 19,
       "text": "The proportion of missesdefined here as BF < 1-in models that include random slopes is clearly reduced with increasing sample size.",
       "page_number": null
     },
     {
-      "text_id": 197,
+      "text_id": 195,
       "paragraph_id": 64,
       "section_id": 19,
       "text": "The number of trials appears to matter less.",
       "page_number": null
     },
     {
-      "text_id": 198,
+      "text_id": 196,
       "paragraph_id": 64,
       "section_id": 19,
       "text": "However, when one looks at the scenario in which the random-effects structure of the model is determined empirically, including only those random slopes that are supported by the data (lower half of Table 9), increasing the number of trials noticeably reduces the proportion of misses.",
       "page_number": null
     },
     {
-      "text_id": 199,
+      "text_id": 197,
       "paragraph_id": 66,
       "section_id": 20,
       "text": "More data can fix many statistical problems but not the one identified here: When there are true individual differences in the effect of interest, but random slopes of that effect are omitted from the model, there is a substantial risk of BFs reflecting strong but wrong evidence for the effect.",
       "page_number": null
     },
     {
-      "text_id": 200,
+      "text_id": 198,
       "paragraph_id": 66,
       "section_id": 20,
       "text": "Neither increasing the sample size nor increasing the number of trials reduces that risk.",
       "page_number": null
     },
     {
-      "text_id": 201,
+      "text_id": 199,
       "paragraph_id": 66,
       "section_id": 20,
       "text": "That said, increasing the sample size reduces the risk of missing a true effect.",
       "page_number": null
     },
     {
-      "text_id": 202,
+      "text_id": 200,
       "paragraph_id": 66,
       "section_id": 20,
       "text": "Increasing the number of trials can achieve that as well, although this benefit appears to be best leveraged when the random-effects structure of the model is determined empirically rather than always including all random slopes.",
       "page_number": null
     },
     {
-      "text_id": 203,
+      "text_id": 201,
       "paragraph_id": 68,
       "section_id": 21,
       "text": "The final simulation addressed the question of whether the BFs estimated for a two-factorial ANOVA design are well calibrated, as opposed to biased, for three modelcomparison approaches: always omitting random slopes, always including random slopes, and a parsimonious approach, including random slopes only if there is Note: For each model, probabilities are shown separately for simulations returning a miss (i.e., a BF < 3, which is weak evidence for the effect, or a BF < 1, reflecting weak evidence against the effect) or a false negative (i.e., a BF < 0.33, which is evidence for the null hypothesis).",
       "page_number": null
     },
     {
-      "text_id": 204,
+      "text_id": 202,
       "paragraph_id": 68,
       "section_id": 21,
       "text": "The \"no RS\" model version included no random slopes, the \"RS\" version included random slopes for both effects, and the \"RS + Corr\" version included random slopes for both effects and the correlation between them.",
       "page_number": null
     },
     {
-      "text_id": 205,
+      "text_id": 203,
       "paragraph_id": 69,
       "section_id": 21,
       "text": "evidence for them.",
       "page_number": null
     },
     {
-      "text_id": 206,
+      "text_id": 204,
       "paragraph_id": 69,
       "section_id": 21,
       "text": "This simulation was inspired by the recent work of Schad et al. (2022) and followed their procedure.",
       "page_number": null
     },
     {
-      "text_id": 207,
+      "text_id": 205,
       "paragraph_id": 70,
       "section_id": 21,
       "text": "In each simulation run, I sampled one of two modelsthe null model and the alternative model-according to the prior probability of each model.",
       "page_number": null
     },
     {
-      "text_id": 208,
+      "text_id": 206,
       "paragraph_id": 70,
       "section_id": 21,
       "text": "I sampled parameter values from the parameter priors of the chosen model, simulated data from it, and then estimated the BF for the effect of interest according to each of the three model-comparison approaches.",
       "page_number": null
     },
     {
-      "text_id": 209,
+      "text_id": 207,
       "paragraph_id": 70,
       "section_id": 21,
       "text": "From the BF, I computed the posterior probability of each model.",
       "page_number": null
     },
     {
-      "text_id": 210,
+      "text_id": 208,
       "paragraph_id": 70,
       "section_id": 21,
       "text": "If the BF is well calibrated, the posterior probabilities, averaged over all simulation runs, should closely approximate the models' prior probabilities.",
       "page_number": null
     },
     {
-      "text_id": 211,
+      "text_id": 209,
       "paragraph_id": 70,
       "section_id": 21,
       "text": "In a simulation for a one-factorial design, Schad et al. (2022) found that the BF was well calibrated for models that included random slopes but was biased in favor of the alternative model if they did not, mirroring the present results.",
       "page_number": null
     },
     {
-      "text_id": 212,
+      "text_id": 210,
       "paragraph_id": 70,
       "section_id": 21,
       "text": "I expected to find the same result here.",
       "page_number": null
     },
     {
-      "text_id": 213,
+      "text_id": 211,
       "paragraph_id": 70,
       "section_id": 21,
       "text": "The question of most interest was whether the parsimonious model-comparison approach, including random slopes only if there is evidence for them in the data, would yield a well-calibrated BF.",
       "page_number": null
     },
     {
-      "text_id": 214,
+      "text_id": 212,
       "paragraph_id": 72,
       "section_id": 22,
       "text": "I used a 2 × 2 within-subjects ANOVA design as in Simulation 1, with 20 subjects and 30 trials per design cell.",
       "page_number": null
     },
     {
-      "text_id": 215,
+      "text_id": 213,
       "paragraph_id": 72,
       "section_id": 22,
       "text": "In each of 1,000 simulation runs, the null model or the alternative model was chosen with its prior probability, which I set to .5 for both models.",
       "page_number": null
     },
     {
-      "text_id": 216,
+      "text_id": 214,
       "paragraph_id": 72,
       "section_id": 22,
       "text": "Different from Simulation 1, the model parameters were not varied factorially but sampled from the parameter priors of the model.",
       "page_number": null
     },
     {
-      "text_id": 217,
+      "text_id": 215,
       "paragraph_id": 72,
       "section_id": 22,
       "text": "The parameter priors were those implemented in the BayesFactor package and described by Rouder et al. (2012), with one exception described below.",
       "page_number": null
     },
     {
-      "text_id": 218,
+      "text_id": 216,
       "paragraph_id": 72,
       "section_id": 22,
       "text": "When the alternative model was chosen, the fixed effects of both independent variables were drawn from the default prior on standardized effect sizes (i.e., Cauchy priors with scale = 0.5).",
       "page_number": null
     },
     {
-      "text_id": 219,
+      "text_id": 217,
       "paragraph_id": 72,
       "section_id": 22,
       "text": "When the null model was chosen, the fixed effect of the independent variable of interest was set to 0.",
       "page_number": null
     },
     {
-      "text_id": 220,
+      "text_id": 218,
       "paragraph_id": 73,
       "section_id": 22,
       "text": "Log 10 (BF) Log 10 (BF) 0 5 10 15 0 5 10 15 20 30 40 50 N 20 30 40 50",
       "page_number": null
     },
     {
-      "text_id": 221,
+      "text_id": 219,
       "paragraph_id": 74,
       "section_id": 22,
       "text": "True Effect = 0, Unaggregated Data Effect = 0, Aggregated Data I simulated data from the chosen model with the sampled parameter values and then estimated the BF for the effect of interest with the BayesFactor package in three ways: always omitting random slopes (no RS), always including random slopes (RS), and using the most parsimonious model justified by the data (RS evidence).",
       "page_number": null
     },
     {
-      "text_id": 222,
+      "text_id": 220,
       "paragraph_id": 74,
       "section_id": 22,
       "text": "For the latter, I first tested for the random slopes by comparing the full model with a model excluding the random slopes of both independent variables.",
       "page_number": null
     },
     {
-      "text_id": 223,
+      "text_id": 221,
       "paragraph_id": 74,
       "section_id": 22,
       "text": "If the BF for random slopes exceeded 1, the subsequent test for the fixed effect of interest included those random slopes in the models; otherwise, it omitted the random slopes.",
       "page_number": null
     },
     {
-      "text_id": 224,
+      "text_id": 222,
       "paragraph_id": 74,
       "section_id": 22,
       "text": "The analyses were always conducted on unaggregated data.",
       "page_number": null
     },
     {
-      "text_id": 225,
+      "text_id": 223,
       "paragraph_id": 75,
       "section_id": 22,
       "text": "Sampling the standard deviation of the random slopes from the prior proposed by Rouder et al. (2012) generated unrealistically large values, so that the BFs in favor of keeping the random slopes in the model were always huge.",
       "page_number": null
     },
     {
-      "text_id": 226,
+      "text_id": 224,
       "paragraph_id": 75,
       "section_id": 22,
       "text": "As a consequence, the parsimonious modelcomparison approach could not be evaluated because random slopes would never be omitted.",
       "page_number": null
     },
     {
-      "text_id": 227,
+      "text_id": 225,
       "paragraph_id": 75,
       "section_id": 22,
       "text": "Therefore, I sampled the standard deviations of random slopes from a gamma prior with a shape of 2 and rate of 10 (implying a mean of 0.2), which yielded random slopes were detected about half of the time.",
       "page_number": null
     },
     {
-      "text_id": 228,
+      "text_id": 226,
       "paragraph_id": 75,
       "section_id": 22,
       "text": "From the BF estimated with each of the three model-comparison approaches,",
       "page_number": null
     },
     {
-      "text_id": 229,
+      "text_id": 227,
       "paragraph_id": 76,
       "section_id": 22,
       "text": "Log 10 (BF) Log 10 (BF) 0 5 10 15 0 5 10 15 80 120 160 240 360 n(Trials) 80 120 160 240 360 n(Trials)",
       "page_number": null
     },
     {
-      "text_id": 230,
+      "text_id": 228,
       "paragraph_id": 77,
       "section_id": 22,
       "text": "True Effect = 0, Unaggregated Data True Effect = 0, Aggregated Data .17 .14 .04 .01",
       "page_number": null
     },
     {
-      "text_id": 231,
+      "text_id": 229,
       "paragraph_id": 78,
       "section_id": 22,
       "text": "Note: For each model, results are shown separately for unaggregated data and aggregated data.",
       "page_number": null
     },
     {
-      "text_id": 232,
+      "text_id": 230,
       "paragraph_id": 78,
       "section_id": 22,
       "text": "Within each type of data, probabilities are further broken down for mild false positives (BF > 3) and severe false positives (BF > 10).",
       "page_number": null
     },
     {
-      "text_id": 233,
+      "text_id": 231,
       "paragraph_id": 78,
       "section_id": 22,
       "text": "The \"no RS\" model version included no random slopes, the \"RS 1\" version included random slopes for the effect of interest, the \"RS 2\" version included random slopes for the other effect, and the \"RS\" version included random slopes for both effects.",
       "page_number": null
     },
     {
-      "text_id": 234,
+      "text_id": 232,
       "paragraph_id": 79,
       "section_id": 22,
       "text": "For the \"RS (evidence)\" version, the inclusion of random effects was conditional on evidence supporting them.",
       "page_number": null
     },
     {
-      "text_id": 235,
+      "text_id": 233,
       "paragraph_id": 80,
       "section_id": 22,
       "text": "I computed the posterior probabilities of the models as follows:",
       "page_number": null
     },
     {
-      "text_id": 236,
+      "text_id": 234,
       "paragraph_id": 82,
       "section_id": 23,
       "text": "The model-comparison approach omitting random slopes was not well calibrated: It returned an overly high posterior probability of the alternative model, p(M1|D) = .53, 95% confidence interval (CI) = [.50, .57].",
       "page_number": null
     },
     {
-      "text_id": 237,
+      "text_id": 235,
       "paragraph_id": 83,
       "section_id": 23,
       "text": "The approach always including random slopes was well calibrated, p(M1|D) = .50, 95% CI = [.46, .53], as was the parsimonious approach including random slopes only when there was evidence for them, p(M1|D) = .51, 95% CI = [.48, .54].",
       "page_number": null
     },
     {
-      "text_id": 238,
+      "text_id": 236,
       "paragraph_id": 83,
       "section_id": 23,
       "text": "Table 10 gives a breakdown of the posterior model probabilities by the true model generating the data.",
       "page_number": null
     },
     {
-      "text_id": 239,
+      "text_id": 237,
       "paragraph_id": 83,
       "section_id": 23,
       "text": "It shows that the bias in model comparisons always omitting random slopes comes from overestimating the posterior probability of M1 when the null model was true.",
       "page_number": null
     },
     {
-      "text_id": 240,
+      "text_id": 238,
       "paragraph_id": 85,
       "section_id": 24,
       "text": "The simulation-based calibration confirmed that always omitting random slopes results in a biased BF if random slopes are part of the data-generating process.",
       "page_number": null
     },
     {
-      "text_id": 241,
+      "text_id": 239,
       "paragraph_id": 85,
       "section_id": 24,
       "text": "The bias reflected in the averaged model posteriors might appear benign.",
       "page_number": null
     },
     {
-      "text_id": 242,
+      "text_id": 240,
       "paragraph_id": 85,
       "section_id": 24,
       "text": "This is in part because the standard deviations of the random slopes tended to be smaller than in the previous simulations.",
       "page_number": null
     },
     {
-      "text_id": 243,
+      "text_id": 241,
       "paragraph_id": 85,
       "section_id": 24,
       "text": "Nevertheless, there were still 7.4% false positives with BF greater than 10.",
       "page_number": null
     },
     {
-      "text_id": 244,
+      "text_id": 242,
       "paragraph_id": 85,
       "section_id": 24,
       "text": "Always including random slopes, as well as using the parsimonious model-comparison approach, yielded wellcalibrated BFs at least for one common design.",
       "page_number": null
     },
     {
-      "text_id": 245,
+      "text_id": 243,
       "paragraph_id": 85,
       "section_id": 24,
       "text": "This is no guarantee that BFs for other designs or other experimental parameters (e.g., number of subjects and trials) are also well calibrated.",
       "page_number": null
     },
     {
-      "text_id": 246,
+      "text_id": 244,
       "paragraph_id": 85,
       "section_id": 24,
       "text": "To be sure that they are, researchers might consider running calibration simulations for their design.",
       "page_number": null
     },
     {
-      "text_id": 247,
+      "text_id": 245,
       "paragraph_id": 86,
       "section_id": 24,
       "text": "Random Slopes in brms, BayesFactor, and JASP",
       "page_number": null
     },
     {
-      "text_id": 248,
+      "text_id": 246,
       "paragraph_id": 87,
       "section_id": 24,
       "text": "On the practical side, including random slopes in Bayesian mixed models is not always straightforward.",
       "page_number": null
     },
     {
-      "text_id": 249,
+      "text_id": 247,
       "paragraph_id": 87,
       "section_id": 24,
       "text": "Within each type of data, probabilities are further broken down for simulations returning a miss (i.e., a BF < 3, which is weak evidence for the effect, or a BF < 1, reflecting weak evidence against the effect) or a false negative (i.e., a BF < 0.33, which is evidence for the null hypothesis).",
       "page_number": null
     },
     {
-      "text_id": 250,
+      "text_id": 248,
       "paragraph_id": 87,
       "section_id": 24,
       "text": "The \"no RS\" model version included no random slopes, the \"RS 1\" version included random slopes for the effect of interest, the \"RS 2\" version included random slopes for the other effect, and the \"RS\" version included random slopes for both effects.",
       "page_number": null
     },
     {
-      "text_id": 251,
+      "text_id": 249,
       "paragraph_id": 87,
       "section_id": 24,
       "text": "For the \"RS (evidence)\" version, the inclusion of random effects was conditional on evidence supporting them.",
       "page_number": null
     },
     {
-      "text_id": 252,
+      "text_id": 250,
       "paragraph_id": 88,
       "section_id": 24,
       "text": "To the best of my knowledge, the three most popular software tools for running such models in psychology are the R packages brms (Bürkner, 2017) and Bayes-Factor (Morey & Rouder, 2015) and the free stand-alone application JASP ( JASP Team, 2020).",
       "page_number": null
     },
     {
-      "text_id": 253,
+      "text_id": 251,
       "paragraph_id": 89,
       "section_id": 24,
       "text": "The brms package gives users maximal flexibility in specifying their model, including the random-effects structure.",
       "page_number": null
     },
     {
-      "text_id": 254,
+      "text_id": 252,
       "paragraph_id": 89,
       "section_id": 24,
       "text": "The core function, \"brm,\" takes as the first argument a formula in the standard language of R, in which random effects can be specified.",
       "page_number": null
     },
     {
-      "text_id": 255,
+      "text_id": 253,
       "paragraph_id": 89,
       "section_id": 24,
       "text": "For instance, the following formula-using the general formula language for mixed models in R-describes a model with two main effects as fixed effects, together with the random intercept, and the random slopes of both predictors:",
       "page_number": null
     },
     {
-      "text_id": 256,
+      "text_id": 254,
       "paragraph_id": 90,
       "section_id": 24,
       "text": "In plain English, the dependent variable (\"dv\") is a function of the additive fixed effects of Independent Variables 1 and 2 (\"iv1\" and \"iv2\").",
       "page_number": null
     },
     {
-      "text_id": 257,
+      "text_id": 255,
       "paragraph_id": 90,
       "section_id": 24,
       "text": "The random effects are added in parentheses, and the variable identifying the subject (\"id\") is the unit of random variation.",
       "page_number": null
     },
     {
-      "text_id": 258,
+      "text_id": 256,
       "paragraph_id": 90,
       "section_id": 24,
       "text": "The expression before the double bar specifies a random intercept (1) and random slopes of the effects of iv1 and iv2.",
       "page_number": null
     },
     {
-      "text_id": 259,
+      "text_id": 257,
       "paragraph_id": 90,
       "section_id": 24,
       "text": "The double bar excludes correlations between random effects; a single bar is used to include them.",
       "page_number": null
     },
     {
-      "text_id": 260,
+      "text_id": 258,
       "paragraph_id": 91,
       "section_id": 24,
       "text": "In the BayesFactor package, the \"lmBF\" function offers the same functionality for linear mixed models.",
       "page_number": null
     },
     {
-      "text_id": 261,
+      "text_id": 259,
       "paragraph_id": 91,
       "section_id": 24,
       "text": "The following code specifies the same model as above: lmBF(formula = dv ~ iv1 + iv2 + id + id:iv1 + id:iv2, whichRandom=\"id\", . . .)",
       "page_number": null
     },
     {
-      "text_id": 262,
+      "text_id": 260,
       "paragraph_id": 92,
       "section_id": 24,
       "text": "Here, the random effects are included in the formula in the same way as fixed effects, and the argument \"whichRandom\" is used to specify which predictors are to be treated as the units of random variation.",
       "page_number": null
     },
     {
-      "text_id": 263,
+      "text_id": 261,
       "paragraph_id": 92,
       "section_id": 24,
       "text": "One limitation of \"lmBF\" is that it does not reliably support random slopes of continuous predictors (i.e., predictors that are numerical variables rather than factors in R).",
       "page_number": null
     },
     {
-      "text_id": 264,
+      "text_id": 262,
       "paragraph_id": 92,
       "section_id": 24,
       "text": "This is why I could not run Simulation 3 with the Bayes-Factor package.",
       "page_number": null
     },
     {
-      "text_id": 265,
+      "text_id": 263,
       "paragraph_id": 92,
       "section_id": 24,
       "text": "The \"anovaBF\" function in the Bayes-Factor package is dedicated to ANOVA models.",
       "page_number": null
     },
     {
-      "text_id": 266,
+      "text_id": 264,
       "paragraph_id": 92,
       "section_id": 24,
       "text": "It includes random intercepts but no random slopes, and there is no option for the user to include the latter.",
       "page_number": null
     },
     {
-      "text_id": 267,
+      "text_id": 265,
       "paragraph_id": 92,
       "section_id": 24,
       "text": "Therefore, using the \"anovaBF\" function incurs a substantial risk of false positives, especially when the design has many within-subjects cells.",
       "page_number": null
     },
     {
-      "text_id": 268,
+      "text_id": 266,
       "paragraph_id": 93,
       "section_id": 24,
       "text": "In JASP, users can choose between Bayesian ANOVAs and Bayesian mixed models.",
       "page_number": null
     },
     {
-      "text_id": 269,
+      "text_id": 267,
       "paragraph_id": 93,
       "section_id": 24,
       "text": "The \"mixed models\" function enables users to choose their random-effects structure.",
       "page_number": null
     },
     {
-      "text_id": 270,
+      "text_id": 268,
       "paragraph_id": 93,
       "section_id": 24,
       "text": "By default, random slopes and their correlations are included for all predictors.",
       "page_number": null
     },
     {
-      "text_id": 271,
+      "text_id": 269,
       "paragraph_id": 93,
       "section_id": 24,
       "text": "The \"ANOVA\" function, by contrast, includes only random intercepts, without any flexibility.",
       "page_number": null
     },
     {
-      "text_id": 272,
+      "text_id": 270,
       "paragraph_id": 93,
       "section_id": 24,
       "text": "The required data format enforces aggregation of data within each design cell; therefore, the risk of hugely inflated false-positive BFs is small.",
       "page_number": null
     },
     {
-      "text_id": 273,
+      "text_id": 271,
       "paragraph_id": 93,
       "section_id": 24,
       "text": "Nevertheless, running Bayesian within-subjects ANOVAs in JASP entails a nonnegligible risk of false-positive BFs, especially when the design has many cells.",
       "page_number": null
     },
     {
-      "text_id": 274,
+      "text_id": 272,
       "paragraph_id": 93,
       "section_id": 24,
       "text": "To confirm this conjecture, I ran a simple simulation of a 2 × 6 ANOVA design with the same specifications as Simulation 2 and a true effect of zero.",
       "page_number": null
     },
     {
-      "text_id": 275,
+      "text_id": 273,
       "paragraph_id": 93,
       "section_id": 24,
       "text": "Out of 100 simulated data sets, 32 yielded a BF greater than 3 for the effect, and 19 of them yielded a BF greater than 10.",
       "page_number": null
     },
     {
-      "text_id": 276,
+      "text_id": 274,
       "paragraph_id": 95,
       "section_id": 25,
       "text": "As Bayesian statistics is gaining ground, we need to become aware of the potential pitfalls involved in using it.",
       "page_number": null
     },
     {
-      "text_id": 277,
+      "text_id": 275,
       "paragraph_id": 95,
       "section_id": 25,
       "text": "One potential pitfall is to use mixed-effects models to test hypotheses about effects on the population level without including random slopes in the model.",
       "page_number": null
     },
     {
-      "text_id": 278,
+      "text_id": 276,
       "paragraph_id": 95,
       "section_id": 25,
       "text": "If there are true individual differences in the effect of interest, this can lead to massively inflated evidence in favor of the effect on the population level, even if no such effect exists.",
       "page_number": null
     },
     {
-      "text_id": 279,
+      "text_id": 277,
       "paragraph_id": 96,
       "section_id": 25,
       "text": "This result mirrors the one that Barr et al. (2013) reported for mixed-model comparisons in frequentist statistics, but the problem is more pervasive for Bayesian than for frequentist hypothesis testing.",
       "page_number": null
     },
     {
-      "text_id": 280,
+      "text_id": 278,
       "paragraph_id": 96,
       "section_id": 25,
       "text": "In frequentist statistics, the main tool for null-hypothesis testing in within-subjects designs is the within-subjects (or repeated measures) ANOVA.",
       "page_number": null
     },
     {
-      "text_id": 281,
+      "text_id": 279,
       "paragraph_id": 96,
       "section_id": 25,
       "text": "The F test for this ANOVA includes the variance generated by random slopestogether with measurement error-in the error term and thereby automatically accounts for their effect.",
       "page_number": null
     },
     {
-      "text_id": 282,
+      "text_id": 280,
       "paragraph_id": 96,
       "section_id": 25,
       "text": "Therefore, significance testing based on the F statistic from within-subjects ANOVA does not lead to inflated false-positive rates.",
       "page_number": null
     },
     {
-      "text_id": 283,
+      "text_id": 281,
       "paragraph_id": 96,
       "section_id": 25,
       "text": "By contrast, hypothesis testing with Bayesian ANOVAs (Rouder et al., 2012), as built into the BayesFactor package and JASP, relies on model comparisons and therefore gives rise to a substantial risk of exaggerated evidence for nonexistent effects.",
       "page_number": null
     },
     {
-      "text_id": 284,
+      "text_id": 282,
       "paragraph_id": 97,
       "section_id": 25,
       "text": "Readers might think that the results of the present simulations are trivial because they merely show that using misspecified models leads to erroneous conclusions.",
       "page_number": null
     },
     {
-      "text_id": 285,
+      "text_id": 283,
       "paragraph_id": 97,
       "section_id": 25,
       "text": "It is not that simple.",
       "page_number": null
     },
     {
-      "text_id": 286,
+      "text_id": 284,
       "paragraph_id": 97,
       "section_id": 25,
       "text": "Except in the idealized environment of a simulated ground truth, models are always simplified descriptions of reality, and yet they are often useful for inferences (Box, 1979).",
       "page_number": null
     },
     {
-      "text_id": 287,
+      "text_id": 285,
       "paragraph_id": 97,
       "section_id": 25,
       "text": "For instance, the comparison of a linear model with a null model is useful to detect a monotonic trend even if it is nonlinear.",
       "page_number": null
     },
     {
-      "text_id": 288,
+      "text_id": 286,
       "paragraph_id": 97,
       "section_id": 25,
       "text": "We need to find out which simplifications we can afford without undercutting their usefulness.",
       "page_number": null
     },
     {
-      "text_id": 289,
+      "text_id": 287,
       "paragraph_id": 97,
       "section_id": 25,
       "text": "It turns out that we cannot afford to simplify away random slopes.",
       "page_number": null
     },
     {
-      "text_id": 290,
+      "text_id": 288,
       "paragraph_id": 97,
       "section_id": 25,
       "text": "It could have turned out otherwise: A comparison of two models omitting random slopes that are actually warranted by the data is not obviously biased a priori because both models suffer the same misspecification.",
       "page_number": null
     },
     {
-      "text_id": 291,
+      "text_id": 289,
       "paragraph_id": 98,
       "section_id": 25,
       "text": "What can we do to minimize the risk of exaggerated evidence for nonexistent effects?",
       "page_number": null
     },
     {
-      "text_id": 292,
+      "text_id": 290,
       "paragraph_id": 98,
       "section_id": 25,
       "text": "One obvious solution is to always include random slopes in the models that we compare.",
       "page_number": null
     },
     {
-      "text_id": 293,
+      "text_id": 291,
       "paragraph_id": 98,
       "section_id": 25,
       "text": "This comes with two costs.",
       "page_number": null
     },
     {
-      "text_id": 294,
+      "text_id": 292,
       "paragraph_id": 98,
       "section_id": 25,
       "text": "One is that the chance of obtaining convincing evidence (i.e., large BFs) for a true effect is reduced substantially.",
       "page_number": null
     },
     {
-      "text_id": 295,
+      "text_id": 293,
       "paragraph_id": 98,
       "section_id": 25,
       "text": "The other is that the models run much longer.",
       "page_number": null
     },
     {
-      "text_id": 296,
+      "text_id": 294,
       "paragraph_id": 98,
       "section_id": 25,
       "text": "A compromise could be to include only those random slopes that are warranted by the data.",
       "page_number": null
     },
     {
-      "text_id": 297,
+      "text_id": 295,
       "paragraph_id": 98,
       "section_id": 25,
       "text": "The rationale behind this approach is to first search for the most parsimonious model of the random effects in the data, thereby culling any excess flexibility in the model, before turning to model comparisons testing the fixed effects of interest (Matuschek et al., 2017).",
       "page_number": null
     },
     {
-      "text_id": 298,
+      "text_id": 296,
       "paragraph_id": 98,
       "section_id": 25,
       "text": "This approach reduces the risk of false positives, but not as much as always including random slopes (this became most apparent in Simulations 2 and 4).",
       "page_number": null
     },
     {
-      "text_id": 299,
+      "text_id": 297,
       "paragraph_id": 98,
       "section_id": 25,
       "text": "It also reduces the potential of misses, but again, not as much as never including random slopes.",
       "page_number": null
     },
     {
-      "text_id": 300,
+      "text_id": 298,
       "paragraph_id": 98,
       "section_id": 25,
       "text": "Simulation 5 showed that the BFs and posterior model probabilities obtained with the parsimonious approach are well calibrated for a typical ANOVA design.",
       "page_number": null
     },
     {
-      "text_id": 301,
+      "text_id": 299,
       "paragraph_id": 98,
       "section_id": 25,
       "text": "The advantage of testing the evidence for random slopes in the data is probably underestimated in the present simulations, as the data-generating model always included random slopes, and in Simulations 2 and 4, their size was held constant.",
       "page_number": null
     },
     {
-      "text_id": 302,
+      "text_id": 300,
       "paragraph_id": 98,
       "section_id": 25,
       "text": "Therefore, in real data, we can expect more variability in the true size of individual differences of effects, including many situations in which they are actually negligible.",
       "page_number": null
     },
     {
-      "text_id": 303,
+      "text_id": 301,
       "paragraph_id": 98,
       "section_id": 25,
       "text": "Testing the evidence for random slopes as a first step will enable researchers to identify many of those cases and remove unnecessary random slopes from the models.",
       "page_number": null
     },
     {
-      "text_id": 304,
+      "text_id": 302,
       "paragraph_id": 99,
       "section_id": 25,
       "text": "Another compromise solution, at least for ANOVA designs, would be to aggregate the data at the designcell level.",
       "page_number": null
     },
     {
-      "text_id": 305,
+      "text_id": 303,
       "paragraph_id": 99,
       "section_id": 25,
       "text": "This strongly shrinks BFs toward 1 compared with unaggregated data, leading to fewer-and far less extreme-false positives but also to more misses of true effects (for a discussion of why this happens, see Singmann et al., 2021).",
       "page_number": null
     },
     {
-      "text_id": 306,
+      "text_id": 304,
       "paragraph_id": 99,
       "section_id": 25,
       "text": "In addition, aggregation is less helpful in suppressing false positives when the within-subjects design has many cells.",
       "page_number": null
     },
     {
-      "text_id": 307,
+      "text_id": 305,
       "paragraph_id": 100,
       "section_id": 25,
       "text": "The risk of missing a true effect, or even obtaining evidence against it (i.e., BF < 0.33), is a manageable one: The BFs that the simulations yielded in such cases rarely reflected strong evidence for a wrong conclusion.",
       "page_number": null
     },
     {
-      "text_id": 308,
+      "text_id": 306,
       "paragraph_id": 100,
       "section_id": 25,
       "text": "In most cases, one would conclude that the evidence is ambiguous or moderately in favor of the null hypotheses.",
       "page_number": null
     },
     {
-      "text_id": 309,
+      "text_id": 307,
       "paragraph_id": 100,
       "section_id": 25,
       "text": "The matter would not be regarded as settled.",
       "page_number": null
     },
     {
-      "text_id": 310,
+      "text_id": 308,
       "paragraph_id": 100,
       "section_id": 25,
       "text": "The rational step for researchers in that situation-if resources are available-is to increase the sample size, which reduces the potential for misses and false negatives.",
       "page_number": null
     },
     {
-      "text_id": 311,
+      "text_id": 309,
       "paragraph_id": 100,
       "section_id": 25,
       "text": "By contrast, the risk of false positives revealed in the present simulations is less manageable because many false positives show up as BFs that would usually be regarded as very strong and even decisive (i.e., BF > 100; Kass & Raftery, 1995).",
       "page_number": null
     },
     {
-      "text_id": 312,
+      "text_id": 310,
       "paragraph_id": 100,
       "section_id": 25,
       "text": "This makes an erroneous conclusion in favor of an effect much harder to overturn.",
       "page_number": null
     },
     {
-      "text_id": 313,
+      "text_id": 311,
       "paragraph_id": 101,
       "section_id": 25,
       "text": "I therefore recommend to err on the side of caution: When analyzing unaggregated data, one should always start with a model including the random slopes corresponding to all fixed effects.",
       "page_number": null
     },
     {
-      "text_id": 314,
+      "text_id": 312,
       "paragraph_id": 101,
       "section_id": 25,
       "text": "Researchers could test whether all random slopes are warranted by the data by comparing the full model with a model that has a reduced random-effects structure.",
       "page_number": null
     },
     {
-      "text_id": 315,
+      "text_id": 313,
       "paragraph_id": 101,
       "section_id": 25,
       "text": "If the BF unambiguously supports the reduced model, it should be fairly safe to continue testing fixed effects in models using the reduced random-effects structure.",
       "page_number": null
     },
     {
-      "text_id": 316,
+      "text_id": 314,
       "paragraph_id": 101,
       "section_id": 25,
       "text": "When one analyzes aggregated data, doing so without random slopes should be reasonably safe with simple designs.",
       "page_number": null
     },
     {
-      "text_id": 317,
+      "text_id": 315,
       "paragraph_id": 101,
       "section_id": 25,
       "text": "For more complex within-subjects designs that have many design cells, I recommend starting with a model that includes the random slopes and excluding them only if the evidence speaks unambiguously against them.",
       "page_number": null
     },
     {
-      "text_id": 318,
+      "text_id": 316,
       "paragraph_id": 103,
       "section_id": 26,
       "text": "Action Editor: Sachiko Kinoshita Editor: Patricia J Bauer",
       "page_number": null
     },
     {
-      "text_id": 319,
+      "text_id": 317,
       "paragraph_id": 105,
       "section_id": 27,
       "text": "I am grateful to Mirko Thalmann, Marcel Niklaus, Gidon Frischkorn, Jeff Rouder, E-J Wagenmakers, and Richard Morey for many discussions on the topic of this article.",
       "page_number": null
     },
     {
-      "text_id": 320,
+      "text_id": 318,
       "paragraph_id": 107,
       "section_id": 28,
       "text": "K Oberauer is the sole author of this article and is responsible for its content.",
       "page_number": null
     },
     {
-      "text_id": 321,
+      "text_id": 319,
       "paragraph_id": 109,
       "section_id": 29,
       "text": "The author(s) declared that there were no conflicts of interest with respect to the authorship or the publication of this article.",
       "page_number": null
     },
     {
-      "text_id": 322,
+      "text_id": 320,
       "paragraph_id": 111,
       "section_id": 30,
       "text": "All simulation code has been made publicly available via OSF and can be accessed at https://osf.io/h4gcy/.",
       "page_number": null
     },
     {
-      "text_id": 323,
+      "text_id": 321,
       "paragraph_id": 112,
       "section_id": 30,
       "text": "Notes 1.",
       "page_number": null
     },
     {
-      "text_id": 324,
+      "text_id": 322,
       "paragraph_id": 112,
       "section_id": 30,
       "text": "Testing the hypothesis that an effect exists in the population against the null hypothesis that it does not comes down to testing a model that includes the effect as a free parameter with a null model in which that parameter is fixed to 0.",
       "page_number": null
     },
     {
-      "text_id": 325,
+      "text_id": 323,
       "paragraph_id": 112,
       "section_id": 30,
       "text": "Estimating the posterior probability of the effect is no alternative: The posterior's density at zero is not the probability that the effect is zero.",
       "page_number": null
     },
     {
-      "text_id": 326,
+      "text_id": 324,
       "paragraph_id": 112,
       "section_id": 30,
       "text": "The question of whether the 95% credible interval of the posterior excludes zero is not an adequate alternative either (Berger, 2006;Wagenmakers et al., 2021).",
       "page_number": null
     },
     {
-      "text_id": 327,
+      "text_id": 325,
       "paragraph_id": 112,
       "section_id": 30,
       "text": "2.",
       "page_number": null
     },
     {
-      "text_id": 328,
+      "text_id": 326,
       "paragraph_id": 112,
       "section_id": 30,
       "text": "Because I set the standard deviation to 1, these effect sizes are standardized.",
       "page_number": null
     },
     {
-      "text_id": 329,
+      "text_id": 327,
       "paragraph_id": 112,
       "section_id": 30,
       "text": "3.",
       "page_number": null
     },
     {
-      "text_id": 330,
+      "text_id": 328,
       "paragraph_id": 112,
       "section_id": 30,
       "text": "It is still distinguishable because of the second independent variable, so that for each main effect, there are two data points per condition.",
       "page_number": null
     },
     {
-      "text_id": 331,
+      "text_id": 329,
       "paragraph_id": 112,
       "section_id": 30,
       "text": "Without the second predictor, the random slope could not be estimated at all, and the model would not run.",
       "page_number": null
     },
     {
-      "text_id": 332,
+      "text_id": 330,
       "paragraph_id": 113,
       "section_id": 30,
       "text": "4.",
       "page_number": null
     },
     {
-      "text_id": 333,
+      "text_id": 331,
       "paragraph_id": 113,
       "section_id": 30,
       "text": "Because running brms models takes a long time, I could not run more replications or more MCMC samples.",
       "page_number": null
     },
     {
-      "text_id": 334,
+      "text_id": 332,
       "paragraph_id": 113,
       "section_id": 30,
       "text": "Simulation 3 already took several months of computation time.",
       "page_number": null
     },
     {
-      "text_id": 335,
+      "text_id": 333,
       "paragraph_id": 113,
       "section_id": 30,
       "text": "5.",
       "page_number": null
     },
     {
-      "text_id": 336,
+      "text_id": 334,
       "paragraph_id": 113,
       "section_id": 30,
       "text": "Some of the BFs for the condition with σ of 1 were cut off in Figure 6 because they went up to 10 120 .",
       "page_number": null
     },
     {
+      "text_id": 335,
+      "paragraph_id": 114,
+      "section_id": 31,
+      "text": "Fig.1.",
+      "page_number": null
+    },
+    {
+      "text_id": 336,
+      "paragraph_id": 114,
+      "section_id": 31,
+      "text": "Simulation 1: Bayes factors (BFs) for the effect of interest when the true effect is zero, as a function of model version and standard deviation of random effects, σ.",
+      "page_number": null
+    },
+    {
       "text_id": 337,
       "paragraph_id": 114,
       "section_id": 31,
-      "text": "Random effects structure for confirmatory hypothesis testing: Keep it maximal DJBarr RLevy CScheepers HJTily Journal of Memory and Language 68 2013",
+      "text": "Results are shown separately for unaggregated data (left) and aggregated data (right).",
       "page_number": null
     },
     {
       "text_id": 338,
-      "paragraph_id": 115,
+      "paragraph_id": 114,
       "section_id": 31,
-      "text": "Bayes factor JOBerger Encyclopedia of statistical sciences SKotz NBalakrishnan CRead BVidakovic NLJohnson Wiley 2006 1 nd ed.",
+      "text": "The \"no RS\" model version included no random slopes, the \"RS 1\" version included random slopes for the effect of interest, the \"RS 2\" version included random slopes for the other effect, and the \"RS\" version included random slopes for both effects.",
       "page_number": null
     },
     {
       "text_id": 339,
-      "paragraph_id": 116,
+      "paragraph_id": 114,
       "section_id": 31,
-      "text": "Robustness in the strategy of scientific model building GE PBox Robustness in statistics RLLauner GNWilkinson Academic Press 1979",
+      "text": "Each point is a BF from one simulation run.",
       "page_number": null
     },
     {
       "text_id": 340,
-      "paragraph_id": 117,
+      "paragraph_id": 114,
       "section_id": 31,
-      "text": "brms: An R package for Bayesian multilevel models using Stan P.-CBürkner 10.18637/jss.v080.i01 Journal of Statistical Software 80 1 2017",
+      "text": "BFs are plotted on a log 10 scale for visibility.",
       "page_number": null
     },
     {
       "text_id": 341,
-      "paragraph_id": 118,
+      "paragraph_id": 114,
       "section_id": 31,
-      "text": "bridgesampling: An R package for estimating normalizing constants QFGronau HSingmann E.-JWagenmakers 10.18637/jss.v092.i10 Journal of Statistical Software 10 92 2020",
+      "text": "BFs above the red line indicate evidence for the effect; those below the red line indicate evidence against the effect.",
       "page_number": null
     },
     {
       "text_id": 342,
-      "paragraph_id": 119,
-      "section_id": 31,
-      "text": "JASP (Version 0.14.1) [Computer software Team 2020",
+      "paragraph_id": 115,
+      "section_id": 32,
+      "text": "Fig 2 Simulation 1: Bayes factors (BFs) from simulations in which the effect of interest was zero, as a function of sample effect size and model version.",
       "page_number": null
     },
     {
       "text_id": 343,
-      "paragraph_id": 120,
-      "section_id": 31,
-      "text": "The theory of probability HJeffreys 1961 Clarendon Press",
+      "paragraph_id": 115,
+      "section_id": 32,
+      "text": "Results are shown separately for unaggregated data (left) and aggregated data (right).",
       "page_number": null
     },
     {
       "text_id": 344,
-      "paragraph_id": 121,
-      "section_id": 31,
-      "text": "Bayes factors REKass AERaftery Journal of the American Statistical Association 90 1995",
+      "paragraph_id": 115,
+      "section_id": 32,
+      "text": "The \"no RS\" model version included no random slopes, and the \"RS\" version included random slopes for both effects.",
       "page_number": null
     },
     {
       "text_id": 345,
-      "paragraph_id": 122,
-      "section_id": 31,
-      "text": "Balancing Type I error and power in linear mixed models HMatuschek RKliegl SVasishth HBaayen DMBates 10.1016/j.jml.2017.01.001 Journal of Memory and Language 94 2017",
+      "paragraph_id": 115,
+      "section_id": 32,
+      "text": "Note the scale difference of the y-axis between graphs.",
       "page_number": null
     },
     {
       "text_id": 346,
-      "paragraph_id": 123,
-      "section_id": 31,
-      "text": "R: A language and environment for statistical computing RDMorey JNRouder BayesFactor: Computation of Bayes Factors for Common designs (Version 0.9.12.2) 2015. 2020 Version 3.6.2) [Computer software",
+      "paragraph_id": 116,
+      "section_id": 33,
+      "text": "Fig.4.",
       "page_number": null
     },
     {
       "text_id": 347,
-      "paragraph_id": 124,
-      "section_id": 31,
-      "text": "Default Bayes factors for ANOVA designs JNRouder RDMorey PLSpeckman JMProvince Journal of Mathematical Psychology 56 2012",
+      "paragraph_id": 116,
+      "section_id": 33,
+      "text": "Simulation 2: Bayes factors (BFs) for the effect of interest when the true effect is zero, as a function of model version and number of levels of Independent Variable (IV) 2.",
       "page_number": null
     },
     {
       "text_id": 348,
-      "paragraph_id": 125,
-      "section_id": 31,
-      "text": "Workflow techniques for the robust use of Bayes factors DJSchad BNicenboim P.-CBürkner MBetancourt SVasishth 10.1037/met0000472 Psychological Methods. Advance online publication 2022",
+      "paragraph_id": 116,
+      "section_id": 33,
+      "text": "Results are shown separately for unaggregated data (left) and aggregated data (right).",
       "page_number": null
     },
     {
       "text_id": 349,
-      "paragraph_id": 126,
-      "section_id": 31,
-      "text": "Statistics in the service of science: Don't let the tail wag the dog HSingmann DKellen GECox SHChandramouli CPDavis-Stober JCDunn QFGronau MKalish SDMcmullin DNavarro RMShiffrin 10.31234/osf.io/kxhfu PsyArXiv 2021",
+      "paragraph_id": 116,
+      "section_id": 33,
+      "text": "The \"no RS\" model version included no random slopes, the \"RS 1\" version included random slopes for the effect of interest, the \"RS 2\" version included random slopes for the other effect, and the \"RS\" version included random slopes for both effects.",
       "page_number": null
     },
     {
       "text_id": 350,
+      "paragraph_id": 116,
+      "section_id": 33,
+      "text": "Each point is a BF from one simulation run.",
+      "page_number": null
+    },
+    {
+      "text_id": 351,
+      "paragraph_id": 116,
+      "section_id": 33,
+      "text": "BFs are plotted on a log 10 scale for visibility (some extreme values are cut off at the top).",
+      "page_number": null
+    },
+    {
+      "text_id": 352,
+      "paragraph_id": 116,
+      "section_id": 33,
+      "text": "BFs above the red line indicate evidence for the effect; those below the red line indicate evidence against the effect.",
+      "page_number": null
+    },
+    {
+      "text_id": 353,
+      "paragraph_id": 117,
+      "section_id": 34,
+      "text": "Fig.5.",
+      "page_number": null
+    },
+    {
+      "text_id": 354,
+      "paragraph_id": 117,
+      "section_id": 34,
+      "text": "Simulation 2: Bayes factors (BFs) from simulations in which the effect of interest was greater than 0, as a function of model version and number of levels of Independent Variable (IV) 2.",
+      "page_number": null
+    },
+    {
+      "text_id": 355,
+      "paragraph_id": 117,
+      "section_id": 34,
+      "text": "Results are shown separately for unaggregated data (left) and aggregated data (right).",
+      "page_number": null
+    },
+    {
+      "text_id": 356,
+      "paragraph_id": 117,
+      "section_id": 34,
+      "text": "The \"no RS\" model version included no random slopes, the \"RS 1\" version included random slopes for the effect of interest, the \"RS 2\" version included random slopes for the other effect, and the \"RS\" version included random slopes for both effects.",
+      "page_number": null
+    },
+    {
+      "text_id": 357,
+      "paragraph_id": 117,
+      "section_id": 34,
+      "text": "Each point is a BF from one simulation run.",
+      "page_number": null
+    },
+    {
+      "text_id": 358,
+      "paragraph_id": 117,
+      "section_id": 34,
+      "text": "BFs are plotted on a log 10 scale for visibility (some extreme values are cut off at the top).",
+      "page_number": null
+    },
+    {
+      "text_id": 359,
+      "paragraph_id": 117,
+      "section_id": 34,
+      "text": "BFs above the red line indicate evidence for the effect; those below the red line indicate evidence against the effect.",
+      "page_number": null
+    },
+    {
+      "text_id": 360,
+      "paragraph_id": 118,
+      "section_id": 35,
+      "text": "Fig.6.",
+      "page_number": null
+    },
+    {
+      "text_id": 361,
+      "paragraph_id": 118,
+      "section_id": 35,
+      "text": "Simulation 3: Bayes factors (BFs) for the effect of interest when the true effect is zero, as a function of model version and standard deviation of random effects, σ.",
+      "page_number": null
+    },
+    {
+      "text_id": 362,
+      "paragraph_id": 118,
+      "section_id": 35,
+      "text": "The \"no RS\" model version included no random slopes, the \"RS\" version included random slopes for both effects, and the \"RS + Corr\" version included random slopes for both effects and the correlation between them.",
+      "page_number": null
+    },
+    {
+      "text_id": 363,
+      "paragraph_id": 118,
+      "section_id": 35,
+      "text": "Each point is a BF from one simulation run.",
+      "page_number": null
+    },
+    {
+      "text_id": 364,
+      "paragraph_id": 118,
+      "section_id": 35,
+      "text": "BFs are plotted on a log 10 scale for visibility (some extreme values are cut off at the top).",
+      "page_number": null
+    },
+    {
+      "text_id": 365,
+      "paragraph_id": 118,
+      "section_id": 35,
+      "text": "BFs above the red line indicate evidence for the effect; those below the red line indicate evidence against the effect.",
+      "page_number": null
+    },
+    {
+      "text_id": 366,
+      "paragraph_id": 119,
+      "section_id": 36,
+      "text": "Fig.7.",
+      "page_number": null
+    },
+    {
+      "text_id": 367,
+      "paragraph_id": 119,
+      "section_id": 36,
+      "text": "Simulation 3: Bayes factors (BFs) for the effect of interest when the true effect is zero, as a function of model version and the size of the correlation between the random slopes of the two independent variables.",
+      "page_number": null
+    },
+    {
+      "text_id": 368,
+      "paragraph_id": 119,
+      "section_id": 36,
+      "text": "The \"no RS\" model version included no random slopes, the \"RS\" version included random slopes for both effects, and the \"RS + Corr\" version included random slopes for both effects and the correlation between them.",
+      "page_number": null
+    },
+    {
+      "text_id": 369,
+      "paragraph_id": 119,
+      "section_id": 36,
+      "text": "Each point is a BF from one simulation run.",
+      "page_number": null
+    },
+    {
+      "text_id": 370,
+      "paragraph_id": 119,
+      "section_id": 36,
+      "text": "BFs are plotted on a log 10 scale for visibility.",
+      "page_number": null
+    },
+    {
+      "text_id": 371,
+      "paragraph_id": 119,
+      "section_id": 36,
+      "text": "BFs above the red line indicate evidence for the effect; those below the red line indicate evidence against the effect.",
+      "page_number": null
+    },
+    {
+      "text_id": 372,
+      "paragraph_id": 120,
+      "section_id": 37,
+      "text": "Fig 8 Simulation 4: Bayes factors (BFs) for the effect of interest when the true effect is zero, as a function of model version and sample size, N Results are shown separately for unaggregated data (left) and aggregated data (right).",
+      "page_number": null
+    },
+    {
+      "text_id": 373,
+      "paragraph_id": 120,
+      "section_id": 37,
+      "text": "The \"no RS\" model version included no random slopes, the \"RS 1\" version included random slopes for the effect of interest, the \"RS 2\" version included random slopes for the other effect, and the \"RS\" version included random slopes for both effects.",
+      "page_number": null
+    },
+    {
+      "text_id": 374,
+      "paragraph_id": 120,
+      "section_id": 37,
+      "text": "Each point is a BF from one simulation run.",
+      "page_number": null
+    },
+    {
+      "text_id": 375,
+      "paragraph_id": 120,
+      "section_id": 37,
+      "text": "BFs are plotted on a log 10 scale for visibility (some extreme values are cut off at the top).",
+      "page_number": null
+    },
+    {
+      "text_id": 376,
+      "paragraph_id": 120,
+      "section_id": 37,
+      "text": "BFs above the red line indicate evidence for the effect; those below the red line indicate evidence against the effect.",
+      "page_number": null
+    },
+    {
+      "text_id": 377,
+      "paragraph_id": 121,
+      "section_id": 38,
+      "text": "Fig.9.",
+      "page_number": null
+    },
+    {
+      "text_id": 378,
+      "paragraph_id": 121,
+      "section_id": 38,
+      "text": "Simulation 4: Bayes factors (BFs) for the effect of interest when the true effect is zero, as a function of model version and number of trials per subject.",
+      "page_number": null
+    },
+    {
+      "text_id": 379,
+      "paragraph_id": 121,
+      "section_id": 38,
+      "text": "Results are shown separately for unaggregated data (left) and aggregated data (right).",
+      "page_number": null
+    },
+    {
+      "text_id": 380,
+      "paragraph_id": 121,
+      "section_id": 38,
+      "text": "The \"no RS\" model version included no random slopes, the \"RS 1\" version included random slopes for the effect of interest, the \"RS 2\" version included random slopes for the other effect, and the \"RS\" version included random slopes for both effects.",
+      "page_number": null
+    },
+    {
+      "text_id": 381,
+      "paragraph_id": 121,
+      "section_id": 38,
+      "text": "Each point is a BF from one simulation run.",
+      "page_number": null
+    },
+    {
+      "text_id": 382,
+      "paragraph_id": 121,
+      "section_id": 38,
+      "text": "BFs are plotted on a log 10 scale for visibility (some extreme values are cut off at the top).",
+      "page_number": null
+    },
+    {
+      "text_id": 383,
+      "paragraph_id": 121,
+      "section_id": 38,
+      "text": "BFs above the red line indicate evidence for the effect; those below the red line indicate evidence against the effect.",
+      "page_number": null
+    },
+    {
+      "text_id": 384,
+      "paragraph_id": 122,
+      "section_id": 39,
+      "text": "Fig 10 Simulation 4: Bayes factors (BFs) for the effect of interest when the true effect is 0.25, as a function of model version and sample size, N Results are shown separately for unaggregated data (left) and aggregated data (right).",
+      "page_number": null
+    },
+    {
+      "text_id": 385,
+      "paragraph_id": 122,
+      "section_id": 39,
+      "text": "The \"no RS\" model version included no random slopes, the \"RS 1\" version included random slopes for the effect of interest, the \"RS 2\" version included random slopes for the other effect, and the \"RS\" version included random slopes for both effects.",
+      "page_number": null
+    },
+    {
+      "text_id": 386,
+      "paragraph_id": 122,
+      "section_id": 39,
+      "text": "Each point is a BF from one simulation run.",
+      "page_number": null
+    },
+    {
+      "text_id": 387,
+      "paragraph_id": 122,
+      "section_id": 39,
+      "text": "BFs are plotted on a log 10 scale for visibility (some extreme values are cut off at the top).",
+      "page_number": null
+    },
+    {
+      "text_id": 388,
+      "paragraph_id": 122,
+      "section_id": 39,
+      "text": "BFs above the red line indicate evidence for the effect; those below the red line indicate evidence against the effect.",
+      "page_number": null
+    },
+    {
+      "text_id": 389,
+      "paragraph_id": 123,
+      "section_id": 40,
+      "text": "Fig 11 Simulation 4: Bayes factors (BFs) for the effect of interest when the true effect is 0.25, as a function of model version and number of trials per subject.",
+      "page_number": null
+    },
+    {
+      "text_id": 390,
+      "paragraph_id": 123,
+      "section_id": 40,
+      "text": "Results are shown separately for unaggregated data (left) and aggregated data (right).",
+      "page_number": null
+    },
+    {
+      "text_id": 391,
+      "paragraph_id": 123,
+      "section_id": 40,
+      "text": "The \"no RS\" model version included no random slopes, the \"RS 1\" version included random slopes for the effect of interest, the \"RS 2\" version included random slopes for the other effect, and the \"RS\" version included random slopes for both effects.",
+      "page_number": null
+    },
+    {
+      "text_id": 392,
+      "paragraph_id": 123,
+      "section_id": 40,
+      "text": "Each point is a BF from one simulation run.",
+      "page_number": null
+    },
+    {
+      "text_id": 393,
+      "paragraph_id": 123,
+      "section_id": 40,
+      "text": "BFs are plotted on a log 10 scale for visibility (some extreme values are cut off at the top).",
+      "page_number": null
+    },
+    {
+      "text_id": 394,
+      "paragraph_id": 123,
+      "section_id": 40,
+      "text": "BFs above the red line indicate evidence for the effect; those below the red line indicate evidence against the effect.",
+      "page_number": null
+    },
+    {
+      "text_id": 395,
+      "paragraph_id": 124,
+      "section_id": 41,
+      "text": "Proportion",
+      "page_number": null
+    },
+    {
+      "text_id": 396,
+      "paragraph_id": 125,
+      "section_id": 42,
+      "text": "Proportion of Bayes Factors (BFs) in Simulation 1 Reflecting Ambiguous Evidence or Evidence Against the Effect of Interest When There Was a True Effect (Effect Sizes = 0.25, 0.5, and 0.75 Combined)",
+      "page_number": null
+    },
+    {
+      "text_id": 397,
+      "paragraph_id": 126,
+      "section_id": 43,
+      "text": "Proportion of Bayes Factors (BFs) in Simulation 2 Reflecting Evidence for the Effect of Interest When the True Effect Was ZeroFor each model, results are shown separately for unaggregated data and aggregated data.",
+      "page_number": null
+    },
+    {
+      "text_id": 398,
+      "paragraph_id": 126,
+      "section_id": 43,
+      "text": "Within each type of data, probabilities are further broken down for mild false positives (BF > 3) and severe false positives (BF > 10).",
+      "page_number": null
+    },
+    {
+      "text_id": 399,
+      "paragraph_id": 126,
+      "section_id": 43,
+      "text": "The \"no RS\" model version included no random slopes, the \"RS 1\" version included random slopes for the effect of interest, the \"RS 2\" version included random slopes for the other effect, and the \"RS\" version included random slopes for both effects.",
+      "page_number": null
+    },
+    {
+      "text_id": 400,
+      "paragraph_id": 126,
+      "section_id": 43,
+      "text": "For the \"RS (evidence)\" version, the inclusion of random effects was conditional on evidence supporting them.",
+      "page_number": null
+    },
+    {
+      "text_id": 401,
       "paragraph_id": 127,
-      "section_id": 31,
-      "text": "The principle of predictive irrelevance or why intervals should not be used for model comparison featuring a point null hypothesis E.-JWagenmakers MDLee JNRouder RDMorey The theory of statistics in psychology CWGruber Springer 2021 16",
+      "section_id": 44,
+      "text": "Proportion of Bayes Factors (BFs) in Simulation 2 Reflecting Ambiguous Evidence or Evidence Against the Effect of Interest When There Was a True Effect (Effect Size = 0.5)",
+      "page_number": null
+    },
+    {
+      "text_id": 402,
+      "paragraph_id": 128,
+      "section_id": 45,
+      "text": "Proportion of Bayes Factors (BFs) in Simulation 3Reflecting Evidence for the Effect of Interest When the True",
+      "page_number": null
+    },
+    {
+      "text_id": 403,
+      "paragraph_id": 129,
+      "section_id": 46,
+      "text": "Proportion of Bayes Factors (BFs) in Simulation 3 Reflecting Ambiguous Evidence or Evidence Against the Effect of Interest When the True Effect Was 0.25",
+      "page_number": null
+    },
+    {
+      "text_id": 404,
+      "paragraph_id": 130,
+      "section_id": 47,
+      "text": "Proportion of Bayes Factors (BFs) in Simulation 4Reflecting Evidence for the Effect of Interest When the True",
+      "page_number": null
+    },
+    {
+      "text_id": 405,
+      "paragraph_id": 131,
+      "section_id": 48,
+      "text": "Proportion of Bayes Factors (BFs) in Simulation 4 Reflecting Ambiguous Evidence or Evidence Against the Effect of Interest When There Was a True Effect (Effect Size = 0.25)",
+      "page_number": null
+    },
+    {
+      "text_id": 406,
+      "paragraph_id": 132,
+      "section_id": 49,
+      "text": "Proportion of Bayes Factors Less Than 1 in Simulation 4 When There Was a True Effect, as a Function of Sample Size and Number of Trials",
+      "page_number": null
+    },
+    {
+      "text_id": 407,
+      "paragraph_id": 133,
+      "section_id": 50,
+      "text": "Mean Posterior Model Probabilities in Simulation 5 as a Function of the True Model (M0 or M1) and the Model-Comparison Approach",
+      "page_number": null
+    },
+    {
+      "text_id": 408,
+      "paragraph_id": 134,
+      "section_id": 51,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 409,
+      "paragraph_id": 135,
+      "section_id": 51,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 410,
+      "paragraph_id": 136,
+      "section_id": 51,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 411,
+      "paragraph_id": 137,
+      "section_id": 51,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 412,
+      "paragraph_id": 138,
+      "section_id": 51,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 413,
+      "paragraph_id": 139,
+      "section_id": 51,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 414,
+      "paragraph_id": 140,
+      "section_id": 51,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 415,
+      "paragraph_id": 141,
+      "section_id": 51,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 416,
+      "paragraph_id": 142,
+      "section_id": 51,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 417,
+      "paragraph_id": 143,
+      "section_id": 51,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 418,
+      "paragraph_id": 144,
+      "section_id": 51,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 419,
+      "paragraph_id": 145,
+      "section_id": 51,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 420,
+      "paragraph_id": 146,
+      "section_id": 51,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 421,
+      "paragraph_id": 147,
+      "section_id": 51,
+      "text": "",
       "page_number": null
     }
   ],
@@ -2693,6 +3190,146 @@
     },
     {
       "section_id": 31,
+      "header": "Fig 1",
+      "parent_section_id": null,
+      "section_type": "figure",
+      "classification_score": null
+    },
+    {
+      "section_id": 32,
+      "header": "Fig 2Fig 3",
+      "parent_section_id": null,
+      "section_type": "figure",
+      "classification_score": null
+    },
+    {
+      "section_id": 33,
+      "header": "Fig 4",
+      "parent_section_id": null,
+      "section_type": "figure",
+      "classification_score": null
+    },
+    {
+      "section_id": 34,
+      "header": "Fig 5",
+      "parent_section_id": null,
+      "section_type": "figure",
+      "classification_score": null
+    },
+    {
+      "section_id": 35,
+      "header": "Fig 6",
+      "parent_section_id": null,
+      "section_type": "figure",
+      "classification_score": null
+    },
+    {
+      "section_id": 36,
+      "header": "Fig 7",
+      "parent_section_id": null,
+      "section_type": "figure",
+      "classification_score": null
+    },
+    {
+      "section_id": 37,
+      "header": "Fig 8",
+      "parent_section_id": null,
+      "section_type": "figure",
+      "classification_score": null
+    },
+    {
+      "section_id": 38,
+      "header": "Fig 9",
+      "parent_section_id": null,
+      "section_type": "figure",
+      "classification_score": null
+    },
+    {
+      "section_id": 39,
+      "header": "Fig 10",
+      "parent_section_id": null,
+      "section_type": "figure",
+      "classification_score": null
+    },
+    {
+      "section_id": 40,
+      "header": "Fig 11",
+      "parent_section_id": null,
+      "section_type": "figure",
+      "classification_score": null
+    },
+    {
+      "section_id": 41,
+      "header": "Table 1 .",
+      "parent_section_id": null,
+      "section_type": "table",
+      "classification_score": null
+    },
+    {
+      "section_id": 42,
+      "header": "Table 2 .",
+      "parent_section_id": null,
+      "section_type": "table",
+      "classification_score": null
+    },
+    {
+      "section_id": 43,
+      "header": "Table 3 .",
+      "parent_section_id": null,
+      "section_type": "table",
+      "classification_score": null
+    },
+    {
+      "section_id": 44,
+      "header": "Table 4 .",
+      "parent_section_id": null,
+      "section_type": "table",
+      "classification_score": null
+    },
+    {
+      "section_id": 45,
+      "header": "Table 5 .",
+      "parent_section_id": null,
+      "section_type": "table",
+      "classification_score": null
+    },
+    {
+      "section_id": 46,
+      "header": "Table 6 .",
+      "parent_section_id": null,
+      "section_type": "table",
+      "classification_score": null
+    },
+    {
+      "section_id": 47,
+      "header": "Table 7 .",
+      "parent_section_id": null,
+      "section_type": "table",
+      "classification_score": null
+    },
+    {
+      "section_id": 48,
+      "header": "Table 8 .",
+      "parent_section_id": null,
+      "section_type": "table",
+      "classification_score": null
+    },
+    {
+      "section_id": 49,
+      "header": "Table 9 .",
+      "parent_section_id": null,
+      "section_type": "table",
+      "classification_score": null
+    },
+    {
+      "section_id": 50,
+      "header": "Table 10 .",
+      "parent_section_id": null,
+      "section_type": "table",
+      "classification_score": null
+    },
+    {
+      "section_id": 51,
       "header": "References",
       "parent_section_id": null,
       "section_type": "references",
@@ -2713,463 +3350,247 @@
     {
       "href": "https://osf.io/h4gcy",
       "link_text": null,
-      "text_id": 322
-    },
-    {
-      "href": "j.jml",
-      "link_text": null,
-      "text_id": 345
-    },
-    {
-      "href": "0.9.12.2",
-      "link_text": null,
-      "text_id": 346
-    },
-    {
-      "href": "osf.io/kxhfu",
-      "link_text": null,
-      "text_id": 349
+      "text_id": 320
     }
   ],
   "bib": [
     {
-      "bib_id": 0,
-      "doi": null,
-      "bib_type": "Article",
+      "bib_type": "article",
+      "doi": "",
       "title": "Random effects structure for confirmatory hypothesis testing: Keep it maximal",
-      "container": "Journal of Memory and Language",
+      "authors": "Barr, D J; Levy, R; Scheepers, C; Tily, H J",
+      "editors": "",
+      "publisher": "",
       "year": 2013,
-      "authors": [
-        {
-          "given": "D J",
-          "family": "Barr"
-        },
-        {
-          "given": "R",
-          "family": "Levy"
-        },
-        {
-          "given": "C",
-          "family": "Scheepers"
-        },
-        {
-          "given": "H J",
-          "family": "Tily"
-        }
-      ],
-      "issue": null,
+      "volume": "68",
+      "issue": "",
       "first_page": "255",
       "last_page": "278",
-      "editors": [],
-      "publisher": null,
-      "text_id": 337
+      "container": "Journal of Memory and Language",
+      "bib_id": 0,
+      "year_suffix": "",
+      "text_id": 408
     },
     {
-      "bib_id": 1,
-      "doi": null,
-      "bib_type": "Misc",
+      "bib_type": "article",
+      "doi": "",
       "title": "Bayes factor",
-      "container": "Encyclopedia of statistical sciences",
+      "authors": "Berger, J O",
+      "editors": "Kotz, S; Balakrishnan, N; Read, C; Vidakovic, B; Johnson, N L",
+      "publisher": "Wiley",
       "year": 2006,
-      "authors": [
-        {
-          "given": "J O",
-          "family": "Berger"
-        }
-      ],
-      "issue": null,
+      "volume": "1",
+      "issue": "",
       "first_page": "378",
       "last_page": "386",
-      "editors": [
-        {
-          "given": "S",
-          "family": "Kotz"
-        },
-        {
-          "given": "N",
-          "family": "Balakrishnan"
-        },
-        {
-          "given": "C",
-          "family": "Read"
-        },
-        {
-          "given": "B",
-          "family": "Vidakovic"
-        },
-        {
-          "given": "N L",
-          "family": "Johnson"
-        }
-      ],
-      "publisher": "Wiley",
-      "text_id": 338
+      "container": "",
+      "bib_id": 1,
+      "year_suffix": "",
+      "text_id": 409
     },
     {
-      "bib_id": 2,
-      "doi": null,
-      "bib_type": "Misc",
+      "bib_type": "article",
+      "doi": "",
       "title": "Robustness in the strategy of scientific model building",
-      "container": "Robustness in statistics",
+      "authors": "Box, G E P",
+      "editors": "Launer, R L; Wilkinson, G N",
+      "publisher": "Academic Press",
       "year": 1979,
-      "authors": [
-        {
-          "given": "G E P",
-          "family": "Box"
-        }
-      ],
-      "issue": null,
+      "volume": "",
+      "issue": "",
       "first_page": "201",
       "last_page": "236",
-      "editors": [
-        {
-          "given": "R L",
-          "family": "Launer"
-        },
-        {
-          "given": "G N",
-          "family": "Wilkinson"
-        }
-      ],
-      "publisher": "Academic Press",
-      "text_id": 339
+      "container": "",
+      "bib_id": 2,
+      "year_suffix": "",
+      "text_id": 410
     },
     {
-      "bib_id": 3,
+      "bib_type": "article",
       "doi": "10.18637/jss.v080.i01",
-      "bib_type": "Article",
       "title": "brms: An R package for Bayesian multilevel models using Stan",
-      "container": "Journal of Statistical Software",
+      "authors": "Bürkner, P.-C",
+      "editors": "",
+      "publisher": "",
       "year": 2017,
-      "authors": [
-        {
-          "given": "P.-C",
-          "family": "Bürkner"
-        }
-      ],
+      "volume": "80",
       "issue": "1",
       "first_page": null,
       "last_page": null,
-      "editors": [],
-      "publisher": null,
-      "text_id": 340
+      "container": "Journal of Statistical Software",
+      "bib_id": 3,
+      "year_suffix": "",
+      "text_id": 411
     },
     {
-      "bib_id": 4,
+      "bib_type": "article",
       "doi": "10.18637/jss.v092.i10",
-      "bib_type": "Article",
       "title": "bridgesampling: An R package for estimating normalizing constants",
-      "container": "Journal of Statistical Software",
+      "authors": "Gronau, Q F; Singmann, H; Wagenmakers, E.-J",
+      "editors": "",
+      "publisher": "",
       "year": 2020,
-      "authors": [
-        {
-          "given": "Q F",
-          "family": "Gronau"
-        },
-        {
-          "given": "H",
-          "family": "Singmann"
-        },
-        {
-          "given": "E.-J",
-          "family": "Wagenmakers"
-        }
-      ],
+      "volume": "",
       "issue": "10",
       "first_page": "92",
       "last_page": null,
-      "editors": [],
-      "publisher": null,
-      "text_id": 341
+      "container": "Journal of Statistical Software",
+      "bib_id": 4,
+      "year_suffix": "",
+      "text_id": 412
     },
     {
-      "bib_id": 5,
-      "doi": null,
-      "bib_type": "Misc",
-      "title": null,
-      "container": "JASP (Version 0.14.1) [Computer software",
+      "bib_type": "article",
+      "doi": "",
+      "title": "",
+      "authors": "Team, ",
+      "editors": "",
+      "publisher": "",
       "year": 2020,
-      "authors": [
-        {
-          "given": null,
-          "family": "Team"
-        }
-      ],
-      "issue": null,
+      "volume": "",
+      "issue": "",
       "first_page": null,
       "last_page": null,
-      "editors": [],
-      "publisher": null,
-      "text_id": 342
+      "container": "",
+      "bib_id": 5,
+      "year_suffix": "",
+      "text_id": 413
     },
     {
-      "bib_id": 6,
-      "doi": null,
-      "bib_type": "Misc",
-      "title": null,
-      "container": "The theory of probability",
-      "year": 1961,
-      "authors": [
-        {
-          "given": "H",
-          "family": "Jeffreys"
-        }
-      ],
-      "issue": null,
-      "first_page": null,
-      "last_page": null,
-      "editors": [],
+      "bib_type": "article",
+      "doi": "",
+      "title": "",
+      "authors": "Jeffreys, H",
+      "editors": "",
       "publisher": "Clarendon Press",
-      "text_id": 343
+      "year": 1961,
+      "volume": "",
+      "issue": "",
+      "first_page": null,
+      "last_page": null,
+      "container": "",
+      "bib_id": 6,
+      "year_suffix": "",
+      "text_id": 414
     },
     {
-      "bib_id": 7,
-      "doi": null,
-      "bib_type": "Article",
+      "bib_type": "article",
+      "doi": "",
       "title": "Bayes factors",
-      "container": "Journal of the American Statistical Association",
+      "authors": "Kass, R E; Raftery, A E",
+      "editors": "",
+      "publisher": "",
       "year": 1995,
-      "authors": [
-        {
-          "given": "R E",
-          "family": "Kass"
-        },
-        {
-          "given": "A E",
-          "family": "Raftery"
-        }
-      ],
-      "issue": null,
+      "volume": "90",
+      "issue": "",
       "first_page": "773",
       "last_page": "795",
-      "editors": [],
-      "publisher": null,
-      "text_id": 344
+      "container": "Journal of the American Statistical Association",
+      "bib_id": 7,
+      "year_suffix": "",
+      "text_id": 415
     },
     {
-      "bib_id": 8,
+      "bib_type": "article",
       "doi": "10.1016/j.jml.2017.01.001",
-      "bib_type": "Article",
       "title": "Balancing Type I error and power in linear mixed models",
-      "container": "Journal of Memory and Language",
+      "authors": "Matuschek, H; Kliegl, R; Vasishth, S; Baayen, H; Bates, D M",
+      "editors": "",
+      "publisher": "",
       "year": 2017,
-      "authors": [
-        {
-          "given": "H",
-          "family": "Matuschek"
-        },
-        {
-          "given": "R",
-          "family": "Kliegl"
-        },
-        {
-          "given": "S",
-          "family": "Vasishth"
-        },
-        {
-          "given": "H",
-          "family": "Baayen"
-        },
-        {
-          "given": "D M",
-          "family": "Bates"
-        }
-      ],
-      "issue": null,
+      "volume": "94",
+      "issue": "",
       "first_page": "305",
       "last_page": "315",
-      "editors": [],
-      "publisher": null,
-      "text_id": 345
+      "container": "Journal of Memory and Language",
+      "bib_id": 8,
+      "year_suffix": "",
+      "text_id": 416
     },
     {
-      "bib_id": 9,
-      "doi": null,
-      "bib_type": "Misc",
+      "bib_type": "article",
+      "doi": "",
       "title": "R: A language and environment for statistical computing",
-      "container": "BayesFactor: Computation of Bayes Factors for Common designs (Version 0.9.12.2)",
+      "authors": "Morey, R D; Rouder, J N",
+      "editors": "",
+      "publisher": "",
       "year": 2015,
-      "authors": [
-        {
-          "given": "R D",
-          "family": "Morey"
-        },
-        {
-          "given": "J N",
-          "family": "Rouder"
-        }
-      ],
-      "issue": null,
+      "volume": "",
+      "issue": "",
       "first_page": null,
       "last_page": null,
-      "editors": [],
-      "publisher": null,
-      "text_id": 346
+      "container": "",
+      "bib_id": 9,
+      "year_suffix": "",
+      "text_id": 417
     },
     {
-      "bib_id": 10,
-      "doi": null,
-      "bib_type": "Article",
+      "bib_type": "article",
+      "doi": "",
       "title": "Default Bayes factors for ANOVA designs",
-      "container": "Journal of Mathematical Psychology",
+      "authors": "Rouder, J N; Morey, R D; Speckman, P L; Province, J M",
+      "editors": "",
+      "publisher": "",
       "year": 2012,
-      "authors": [
-        {
-          "given": "J N",
-          "family": "Rouder"
-        },
-        {
-          "given": "R D",
-          "family": "Morey"
-        },
-        {
-          "given": "P L",
-          "family": "Speckman"
-        },
-        {
-          "given": "J M",
-          "family": "Province"
-        }
-      ],
-      "issue": null,
+      "volume": "56",
+      "issue": "",
       "first_page": "356",
       "last_page": "374",
-      "editors": [],
-      "publisher": null,
-      "text_id": 347
+      "container": "Journal of Mathematical Psychology",
+      "bib_id": 10,
+      "year_suffix": "",
+      "text_id": 418
     },
     {
-      "bib_id": 11,
+      "bib_type": "article",
       "doi": "10.1037/met0000472",
-      "bib_type": "Article",
       "title": "Workflow techniques for the robust use of Bayes factors",
-      "container": "Psychological Methods. Advance online publication",
+      "authors": "Schad, D J; Nicenboim, B; Bürkner, P.-C; Betancourt, M; Vasishth, S",
+      "editors": "",
+      "publisher": "",
       "year": 2022,
-      "authors": [
-        {
-          "given": "D J",
-          "family": "Schad"
-        },
-        {
-          "given": "B",
-          "family": "Nicenboim"
-        },
-        {
-          "given": "P.-C",
-          "family": "Bürkner"
-        },
-        {
-          "given": "M",
-          "family": "Betancourt"
-        },
-        {
-          "given": "S",
-          "family": "Vasishth"
-        }
-      ],
-      "issue": null,
+      "volume": "",
+      "issue": "",
       "first_page": null,
       "last_page": null,
-      "editors": [],
-      "publisher": null,
-      "text_id": 348
+      "container": "Psychological Methods. Advance online publication",
+      "bib_id": 11,
+      "year_suffix": "",
+      "text_id": 419
     },
     {
-      "bib_id": 12,
+      "bib_type": "article",
       "doi": "10.31234/osf.io/kxhfu",
-      "bib_type": "Article",
       "title": "Statistics in the service of science: Don't let the tail wag the dog",
-      "container": "PsyArXiv",
+      "authors": "Singmann, H; Kellen, D; Cox, G E; Chandramouli, S H; Davis-Stober, C P; Dunn, J C; Gronau, Q F; Kalish, M; Mcmullin, S D; Navarro, D; Shiffrin, R M",
+      "editors": "",
+      "publisher": "",
       "year": 2021,
-      "authors": [
-        {
-          "given": "H",
-          "family": "Singmann"
-        },
-        {
-          "given": "D",
-          "family": "Kellen"
-        },
-        {
-          "given": "G E",
-          "family": "Cox"
-        },
-        {
-          "given": "S H",
-          "family": "Chandramouli"
-        },
-        {
-          "given": "C P",
-          "family": "Davis-Stober"
-        },
-        {
-          "given": "J C",
-          "family": "Dunn"
-        },
-        {
-          "given": "Q F",
-          "family": "Gronau"
-        },
-        {
-          "given": "M",
-          "family": "Kalish"
-        },
-        {
-          "given": "S D",
-          "family": "Mcmullin"
-        },
-        {
-          "given": "D",
-          "family": "Navarro"
-        },
-        {
-          "given": "R M",
-          "family": "Shiffrin"
-        }
-      ],
-      "issue": null,
+      "volume": "",
+      "issue": "",
       "first_page": null,
       "last_page": null,
-      "editors": [],
-      "publisher": null,
-      "text_id": 349
+      "container": "PsyArXiv",
+      "bib_id": 12,
+      "year_suffix": "",
+      "text_id": 420
     },
     {
-      "bib_id": 13,
-      "doi": null,
-      "bib_type": "Misc",
+      "bib_type": "article",
+      "doi": "",
       "title": "The principle of predictive irrelevance or why intervals should not be used for model comparison featuring a point null hypothesis",
-      "container": "The theory of statistics in psychology",
+      "authors": "Wagenmakers, E.-J; Lee, M D; Rouder, J N; Morey, R D",
+      "editors": "Gruber, C W",
+      "publisher": "Springer",
       "year": 2021,
-      "authors": [
-        {
-          "given": "E.-J",
-          "family": "Wagenmakers"
-        },
-        {
-          "given": "M D",
-          "family": "Lee"
-        },
-        {
-          "given": "J N",
-          "family": "Rouder"
-        },
-        {
-          "given": "R D",
-          "family": "Morey"
-        }
-      ],
-      "issue": null,
+      "volume": "16",
+      "issue": "",
       "first_page": "111",
       "last_page": "124",
-      "editors": [
-        {
-          "given": "C W",
-          "family": "Gruber"
-        }
-      ],
-      "publisher": "Springer",
-      "text_id": 350
+      "container": "",
+      "bib_id": 13,
+      "year_suffix": "",
+      "text_id": 421
     }
   ],
   "xref": [
@@ -3201,7 +3622,7 @@
       "xref_id": 0,
       "xref_type": "bib",
       "contents": "Barr et al. (2013)",
-      "text_id": 279
+      "text_id": 277
     },
     {
       "xref_id": 1,
@@ -3213,31 +3634,31 @@
       "xref_id": 1,
       "xref_type": "bib",
       "contents": "(Berger, 2006;",
-      "text_id": 326
+      "text_id": 324
     },
     {
       "xref_id": 2,
       "xref_type": "bib",
       "contents": "(Box, 1979)",
-      "text_id": 286
+      "text_id": 284
     },
     {
       "xref_id": 3,
       "xref_type": "bib",
       "contents": "Bürkner, 2017)",
-      "text_id": 164
+      "text_id": 162
     },
     {
       "xref_id": 3,
       "xref_type": "bib",
       "contents": "(Bürkner, 2017)",
-      "text_id": 252
+      "text_id": 250
     },
     {
       "xref_id": 4,
       "xref_type": "bib",
       "contents": "Gronau et al., 2020)",
-      "text_id": 164
+      "text_id": 162
     },
     {
       "xref_id": 5,
@@ -3255,7 +3676,7 @@
       "xref_id": 5,
       "xref_type": "bib",
       "contents": "Team, 2020)",
-      "text_id": 252
+      "text_id": 250
     },
     {
       "xref_id": 6,
@@ -3279,7 +3700,7 @@
       "xref_id": 7,
       "xref_type": "bib",
       "contents": "Kass & Raftery, 1995)",
-      "text_id": 311
+      "text_id": 309
     },
     {
       "xref_id": 8,
@@ -3297,7 +3718,7 @@
       "xref_id": 8,
       "xref_type": "bib",
       "contents": "(Matuschek et al., 2017)",
-      "text_id": 297
+      "text_id": 295
     },
     {
       "xref_id": 9,
@@ -3315,7 +3736,7 @@
       "xref_id": 9,
       "xref_type": "bib",
       "contents": "(Morey & Rouder, 2015)",
-      "text_id": 252
+      "text_id": 250
     },
     {
       "xref_id": 10,
@@ -3327,49 +3748,49 @@
       "xref_id": 10,
       "xref_type": "bib",
       "contents": "(Rouder et al., 2012)",
-      "text_id": 166
+      "text_id": 164
     },
     {
       "xref_id": 10,
       "xref_type": "bib",
       "contents": "Rouder et al. (2012)",
-      "text_id": 217
+      "text_id": 215
     },
     {
       "xref_id": 10,
       "xref_type": "bib",
       "contents": "Rouder et al. (2012)",
-      "text_id": 225
+      "text_id": 223
     },
     {
       "xref_id": 10,
       "xref_type": "bib",
       "contents": "(Rouder et al., 2012)",
-      "text_id": 283
+      "text_id": 281
     },
     {
       "xref_id": 11,
       "xref_type": "bib",
       "contents": "Schad et al. (2022)",
-      "text_id": 206
+      "text_id": 204
     },
     {
       "xref_id": 11,
       "xref_type": "bib",
       "contents": "Schad et al. (2022)",
-      "text_id": 211
+      "text_id": 209
     },
     {
       "xref_id": 12,
       "xref_type": "bib",
       "contents": "Singmann et al., 2021)",
-      "text_id": 305
+      "text_id": 303
     },
     {
       "xref_id": 13,
       "xref_type": "bib",
       "contents": "Wagenmakers et al., 2021)",
-      "text_id": 326
+      "text_id": 324
     },
     {
       "xref_id": null,
@@ -3417,37 +3838,37 @@
       "xref_id": null,
       "xref_type": "figure",
       "contents": "4",
-      "text_id": 139
+      "text_id": 137
     },
     {
       "xref_id": null,
       "xref_type": "figure",
       "contents": "5",
-      "text_id": 143
+      "text_id": 141
     },
     {
       "xref_id": null,
       "xref_type": "figure",
       "contents": "6",
-      "text_id": 167
+      "text_id": 165
     },
     {
       "xref_id": null,
       "xref_type": "figure",
       "contents": "7",
-      "text_id": 173
+      "text_id": 171
     },
     {
       "xref_id": null,
       "xref_type": "figure",
       "contents": "8",
-      "text_id": 187
+      "text_id": 185
     },
     {
       "xref_id": null,
       "xref_type": "figure",
       "contents": "9",
-      "text_id": 187
+      "text_id": 185
     },
     {
       "xref_id": null,
@@ -3465,83 +3886,215 @@
       "xref_id": null,
       "xref_type": "figure",
       "contents": "6",
-      "text_id": 336
+      "text_id": 334
     },
     {
       "xref_id": null,
-      "xref_type": "tbl",
+      "xref_type": "table",
       "contents": "1",
       "text_id": 81
     },
     {
       "xref_id": null,
-      "xref_type": "tbl",
+      "xref_type": "table",
       "contents": "2",
       "text_id": 107
     },
     {
       "xref_id": null,
-      "xref_type": "tbl",
+      "xref_type": "table",
       "contents": "3",
-      "text_id": 142
+      "text_id": 140
     },
     {
       "xref_id": null,
-      "xref_type": "tbl",
+      "xref_type": "table",
       "contents": "4",
-      "text_id": 145
+      "text_id": 143
     },
     {
       "xref_id": null,
-      "xref_type": "tbl",
+      "xref_type": "table",
       "contents": "5",
-      "text_id": 169
+      "text_id": 167
     },
     {
       "xref_id": null,
-      "xref_type": "tbl",
+      "xref_type": "table",
       "contents": "5",
-      "text_id": 174
+      "text_id": 172
     },
     {
       "xref_id": null,
-      "xref_type": "tbl",
+      "xref_type": "table",
       "contents": "6",
-      "text_id": 174
+      "text_id": 172
     },
     {
       "xref_id": null,
-      "xref_type": "tbl",
+      "xref_type": "table",
       "contents": "7",
-      "text_id": 188
+      "text_id": 186
     },
     {
       "xref_id": null,
-      "xref_type": "tbl",
+      "xref_type": "table",
       "contents": "8",
-      "text_id": 191
+      "text_id": 189
     },
     {
       "xref_id": null,
-      "xref_type": "tbl",
+      "xref_type": "table",
       "contents": "9",
-      "text_id": 195
+      "text_id": 193
     },
     {
       "xref_id": null,
-      "xref_type": "tbl",
+      "xref_type": "table",
       "contents": "9",
-      "text_id": 198
+      "text_id": 196
     },
     {
       "xref_id": null,
-      "xref_type": "tbl",
+      "xref_type": "table",
       "contents": "10",
-      "text_id": 238
+      "text_id": 236
     }
   ],
-  "figure": [],
-  "table": [],
+  "figure": [
+    {
+      "figure_id": 1,
+      "section_id": 31,
+      "image": null,
+      "page_number": null
+    },
+    {
+      "figure_id": 2,
+      "section_id": 32,
+      "image": null,
+      "page_number": null
+    },
+    {
+      "figure_id": 3,
+      "section_id": 33,
+      "image": null,
+      "page_number": null
+    },
+    {
+      "figure_id": 4,
+      "section_id": 34,
+      "image": null,
+      "page_number": null
+    },
+    {
+      "figure_id": 5,
+      "section_id": 35,
+      "image": null,
+      "page_number": null
+    },
+    {
+      "figure_id": 6,
+      "section_id": 36,
+      "image": null,
+      "page_number": null
+    },
+    {
+      "figure_id": 7,
+      "section_id": 37,
+      "image": null,
+      "page_number": null
+    },
+    {
+      "figure_id": 8,
+      "section_id": 38,
+      "image": null,
+      "page_number": null
+    },
+    {
+      "figure_id": 9,
+      "section_id": 39,
+      "image": null,
+      "page_number": null
+    },
+    {
+      "figure_id": 10,
+      "section_id": 40,
+      "image": null,
+      "page_number": null
+    }
+  ],
+  "table": [
+    {
+      "table_id": 1,
+      "section_id": 41,
+      "html": "<table>\n  <row>\n    <cell/>\n    <cell cols=\"4\">of Bayes Factors (BFs) in Simulation 1<\/cell>\n  <\/row>\n  <row>\n    <cell cols=\"5\">Reflecting Evidence for the Effect of Interest When the True<\/cell>\n  <\/row>\n  <row>\n    <cell>Effect Was Zero<\/cell>\n    <cell/>\n    <cell/>\n    <cell/>\n    <cell/>\n  <\/row>\n  <row>\n    <cell/>\n    <cell cols=\"2\">Unaggregated data<\/cell>\n    <cell cols=\"2\">Aggregated data<\/cell>\n  <\/row>\n  <row>\n    <cell>Model version<\/cell>\n    <cell>BF &gt; 3<\/cell>\n    <cell>BF &gt; 10<\/cell>\n    <cell>BF &gt; 3<\/cell>\n    <cell>BF &gt; 10<\/cell>\n  <\/row>\n  <row>\n    <cell>No RS<\/cell>\n    <cell>.23<\/cell>\n    <cell>.21<\/cell>\n    <cell>.03<\/cell>\n    <cell>.01<\/cell>\n  <\/row>\n  <row>\n    <cell>RS 1<\/cell>\n    <cell>0<\/cell>\n    <cell>0<\/cell>\n    <cell>.01<\/cell>\n    <cell>0<\/cell>\n  <\/row>\n  <row>\n    <cell>RS 2<\/cell>\n    <cell>.23<\/cell>\n    <cell>.22<\/cell>\n    <cell>.07<\/cell>\n    <cell>.02<\/cell>\n  <\/row>\n  <row>\n    <cell>RS<\/cell>\n    <cell>0<\/cell>\n    <cell>0<\/cell>\n    <cell>.02<\/cell>\n    <cell>.01<\/cell>\n  <\/row>\n  <row>\n    <cell>RS (evidence)<\/cell>\n    <cell>.13<\/cell>\n    <cell>.01<\/cell>\n    <cell>.05<\/cell>\n    <cell>.01<\/cell>\n  <\/row>\n<\/table>",
+      "contents": null,
+      "page_number": null
+    },
+    {
+      "table_id": 2,
+      "section_id": 42,
+      "html": "<table>\n  <row>\n    <cell/>\n    <cell/>\n    <cell cols=\"2\">Unaggregated data<\/cell>\n    <cell/>\n    <cell cols=\"2\">Aggregated data<\/cell>\n  <\/row>\n  <row>\n    <cell>Model version<\/cell>\n    <cell>BF &lt; 3<\/cell>\n    <cell>BF &lt; 1<\/cell>\n    <cell>BF &lt; 0.33<\/cell>\n    <cell>BF &lt; 3<\/cell>\n    <cell>BF &lt; 1<\/cell>\n    <cell>BF &lt; 0.33<\/cell>\n  <\/row>\n  <row>\n    <cell>No RS<\/cell>\n    <cell>.06<\/cell>\n    <cell>.04<\/cell>\n    <cell>.03<\/cell>\n    <cell>.17<\/cell>\n    <cell>.12<\/cell>\n    <cell>.05<\/cell>\n  <\/row>\n  <row>\n    <cell>RS 1<\/cell>\n    <cell>.35<\/cell>\n    <cell>.27<\/cell>\n    <cell>.09<\/cell>\n    <cell>.23<\/cell>\n    <cell>.14<\/cell>\n    <cell>.01<\/cell>\n  <\/row>\n  <row>\n    <cell>RS 2<\/cell>\n    <cell>.05<\/cell>\n    <cell>.04<\/cell>\n    <cell>.03<\/cell>\n    <cell>.13<\/cell>\n    <cell>.10<\/cell>\n    <cell>.04<\/cell>\n  <\/row>\n  <row>\n    <cell>RS<\/cell>\n    <cell>.35<\/cell>\n    <cell>.20<\/cell>\n    <cell>.09<\/cell>\n    <cell>.23<\/cell>\n    <cell>.13<\/cell>\n    <cell>.00<\/cell>\n  <\/row>\n  <row>\n    <cell>RS (evidence)<\/cell>\n    <cell>.18<\/cell>\n    <cell>.11<\/cell>\n    <cell>.06<\/cell>\n    <cell>.18<\/cell>\n    <cell>.11<\/cell>\n    <cell>.02<\/cell>\n  <\/row>\n<\/table>",
+      "contents": null,
+      "page_number": null
+    },
+    {
+      "table_id": 3,
+      "section_id": 43,
+      "html": "<table>\n  <row>\n    <cell/>\n    <cell cols=\"2\">Unaggregated data<\/cell>\n    <cell cols=\"2\">Aggregated data<\/cell>\n  <\/row>\n  <row>\n    <cell>Model version<\/cell>\n    <cell>BF &gt; 3<\/cell>\n    <cell>BF &gt; 10<\/cell>\n    <cell>BF &gt; 3<\/cell>\n    <cell>BF &gt; 10<\/cell>\n  <\/row>\n  <row>\n    <cell>No RS<\/cell>\n    <cell>.49<\/cell>\n    <cell>.46<\/cell>\n    <cell>.21<\/cell>\n    <cell>.14<\/cell>\n  <\/row>\n  <row>\n    <cell>RS 1<\/cell>\n    <cell>0<\/cell>\n    <cell>0<\/cell>\n    <cell>.01<\/cell>\n    <cell>.01<\/cell>\n  <\/row>\n  <row>\n    <cell>RS 2<\/cell>\n    <cell>.50<\/cell>\n    <cell>.47<\/cell>\n    <cell>.26<\/cell>\n    <cell>.18<\/cell>\n  <\/row>\n  <row>\n    <cell>RS<\/cell>\n    <cell>.01<\/cell>\n    <cell>0<\/cell>\n    <cell>.02<\/cell>\n    <cell>.01<\/cell>\n  <\/row>\n  <row>\n    <cell>RS (evidence)<\/cell>\n    <cell>.16<\/cell>\n    <cell>.15<\/cell>\n    <cell>.06<\/cell>\n    <cell>.03<\/cell>\n  <\/row>\n  <row>\n    <cell>Note:<\/cell>\n    <cell/>\n    <cell/>\n    <cell/>\n    <cell/>\n  <\/row>\n<\/table>",
+      "contents": null,
+      "page_number": null
+    },
+    {
+      "table_id": 4,
+      "section_id": 44,
+      "html": "<table>\n  <row>\n    <cell/>\n    <cell/>\n    <cell cols=\"2\">Unaggregated data<\/cell>\n    <cell/>\n    <cell cols=\"2\">Aggregated data<\/cell>\n  <\/row>\n  <row>\n    <cell>Model version<\/cell>\n    <cell>BF &lt; 3<\/cell>\n    <cell>BF &lt; 1<\/cell>\n    <cell>BF &lt; 0.33<\/cell>\n    <cell>BF &lt; 3<\/cell>\n    <cell>BF &lt; 1<\/cell>\n    <cell>BF &lt; 0.33<\/cell>\n  <\/row>\n  <row>\n    <cell>No RS<\/cell>\n    <cell>0<\/cell>\n    <cell>0<\/cell>\n    <cell>0<\/cell>\n    <cell>0<\/cell>\n    <cell>0<\/cell>\n    <cell>0<\/cell>\n  <\/row>\n  <row>\n    <cell>RS 1<\/cell>\n    <cell>.15<\/cell>\n    <cell>.03<\/cell>\n    <cell>.01<\/cell>\n    <cell>.06<\/cell>\n    <cell>.01<\/cell>\n    <cell>0<\/cell>\n  <\/row>\n  <row>\n    <cell>RS 2<\/cell>\n    <cell>0<\/cell>\n    <cell>0<\/cell>\n    <cell>0<\/cell>\n    <cell>0<\/cell>\n    <cell>0<\/cell>\n    <cell>0<\/cell>\n  <\/row>\n  <row>\n    <cell>RS<\/cell>\n    <cell>.14<\/cell>\n    <cell>.03<\/cell>\n    <cell>.01<\/cell>\n    <cell>.06<\/cell>\n    <cell>0<\/cell>\n    <cell>0<\/cell>\n  <\/row>\n  <row>\n    <cell>RS (evidence)<\/cell>\n    <cell>.09<\/cell>\n    <cell>.02<\/cell>\n    <cell>0<\/cell>\n    <cell>.05<\/cell>\n    <cell>.01<\/cell>\n    <cell>0<\/cell>\n  <\/row>\n  <row>\n    <cell cols=\"7\">Note: For each model, results are shown separately for unaggregated data and aggregated data.<\/cell>\n  <\/row>\n<\/table>",
+      "contents": null,
+      "page_number": null
+    },
+    {
+      "table_id": 5,
+      "section_id": 45,
+      "html": "<table>\n  <row>\n    <cell>Effect Was Zero<\/cell>\n    <cell/>\n    <cell/>\n  <\/row>\n  <row>\n    <cell>Model version<\/cell>\n    <cell>BF &gt; 3<\/cell>\n    <cell>BF &gt; 10<\/cell>\n  <\/row>\n  <row>\n    <cell>No RS<\/cell>\n    <cell>.34<\/cell>\n    <cell>.29<\/cell>\n  <\/row>\n  <row>\n    <cell>RS<\/cell>\n    <cell>.01<\/cell>\n    <cell>0<\/cell>\n  <\/row>\n  <row>\n    <cell>RS + Corr<\/cell>\n    <cell>.02<\/cell>\n    <cell>.01<\/cell>\n  <\/row>\n<\/table>",
+      "contents": null,
+      "page_number": null
+    },
+    {
+      "table_id": 6,
+      "section_id": 46,
+      "html": "<table>\n  <row>\n    <cell>Model<\/cell>\n    <cell/>\n    <cell/>\n    <cell/>\n  <\/row>\n  <row>\n    <cell>version<\/cell>\n    <cell>BF &lt; 3<\/cell>\n    <cell>BF &lt; 1<\/cell>\n    <cell>BF &lt; 0.33<\/cell>\n  <\/row>\n  <row>\n    <cell>No RS<\/cell>\n    <cell>.07<\/cell>\n    <cell>.06<\/cell>\n    <cell>.03<\/cell>\n  <\/row>\n  <row>\n    <cell>RS<\/cell>\n    <cell>.41<\/cell>\n    <cell>.30<\/cell>\n    <cell>.07<\/cell>\n  <\/row>\n  <row>\n    <cell>RS + Corr<\/cell>\n    <cell>.44<\/cell>\n    <cell>.33<\/cell>\n    <cell>.07<\/cell>\n  <\/row>\n<\/table>",
+      "contents": null,
+      "page_number": null
+    },
+    {
+      "table_id": 7,
+      "section_id": 47,
+      "html": "<table>\n  <row>\n    <cell>Effect Was Zero<\/cell>\n    <cell/>\n    <cell/>\n    <cell/>\n    <cell/>\n  <\/row>\n  <row>\n    <cell/>\n    <cell cols=\"2\">Unaggregated data<\/cell>\n    <cell cols=\"2\">Aggregated data<\/cell>\n  <\/row>\n  <row>\n    <cell>Model version<\/cell>\n    <cell>BF &gt; 3<\/cell>\n    <cell>BF &gt; 10<\/cell>\n    <cell>BF &gt; 3<\/cell>\n    <cell>BF &gt; 10<\/cell>\n  <\/row>\n  <row>\n    <cell>No RS<\/cell>\n    <cell>.35<\/cell>\n    <cell>.29<\/cell>\n    <cell>.03<\/cell>\n    <cell>.01<\/cell>\n  <\/row>\n  <row>\n    <cell>RS 1<\/cell>\n    <cell>.00<\/cell>\n    <cell>0<\/cell>\n    <cell>.01<\/cell>\n    <cell>.00<\/cell>\n  <\/row>\n  <row>\n    <cell>RS 2<\/cell>\n    <cell>.36<\/cell>\n    <cell>.30<\/cell>\n    <cell>.06<\/cell>\n    <cell>.02<\/cell>\n  <\/row>\n  <row>\n    <cell>RS<\/cell>\n    <cell>.00<\/cell>\n    <cell>0<\/cell>\n    <cell>.02<\/cell>\n    <cell>.01<\/cell>\n  <\/row>\n  <row>\n    <cell>RS (evidence)<\/cell>\n    <cell/>\n    <cell/>\n    <cell/>\n    <cell/>\n  <\/row>\n<\/table>",
+      "contents": null,
+      "page_number": null
+    },
+    {
+      "table_id": 8,
+      "section_id": 48,
+      "html": "<table>\n  <row>\n    <cell/>\n    <cell/>\n    <cell cols=\"2\">Unaggregated data<\/cell>\n    <cell/>\n    <cell cols=\"2\">Aggregated data<\/cell>\n  <\/row>\n  <row>\n    <cell>Model version<\/cell>\n    <cell>BF &lt; 3<\/cell>\n    <cell>BF &lt; 1<\/cell>\n    <cell>BF &lt; 0.33<\/cell>\n    <cell>BF &lt; 3<\/cell>\n    <cell>BF &lt; 1<\/cell>\n    <cell>BF &lt; 0.33<\/cell>\n  <\/row>\n  <row>\n    <cell>No RS<\/cell>\n    <cell>.06<\/cell>\n    <cell>.05<\/cell>\n    <cell>.04<\/cell>\n    <cell>.25<\/cell>\n    <cell>.15<\/cell>\n    <cell>.05<\/cell>\n  <\/row>\n  <row>\n    <cell>RS 1<\/cell>\n    <cell>.61<\/cell>\n    <cell>.39<\/cell>\n    <cell>.15<\/cell>\n    <cell>.43<\/cell>\n    <cell>.20<\/cell>\n    <cell>.03<\/cell>\n  <\/row>\n  <row>\n    <cell>RS 2<\/cell>\n    <cell>.06<\/cell>\n    <cell>.04<\/cell>\n    <cell>.04<\/cell>\n    <cell>.12<\/cell>\n    <cell>.11<\/cell>\n    <cell>.04<\/cell>\n  <\/row>\n  <row>\n    <cell>RS<\/cell>\n    <cell>.60<\/cell>\n    <cell>.37<\/cell>\n    <cell>.15<\/cell>\n    <cell>.39<\/cell>\n    <cell>.15<\/cell>\n    <cell>.01<\/cell>\n  <\/row>\n  <row>\n    <cell>RS (evidence)<\/cell>\n    <cell>.35<\/cell>\n    <cell>.23<\/cell>\n    <cell>.11<\/cell>\n    <cell>.32<\/cell>\n    <cell>.15<\/cell>\n    <cell>.02<\/cell>\n  <\/row>\n<\/table>",
+      "contents": null,
+      "page_number": null
+    },
+    {
+      "table_id": 9,
+      "section_id": 49,
+      "html": "<table>\n  <row>\n    <cell/>\n    <cell/>\n    <cell cols=\"2\">Sample size<\/cell>\n    <cell/>\n  <\/row>\n  <row>\n    <cell>Model version and<\/cell>\n    <cell/>\n    <cell/>\n    <cell/>\n    <cell/>\n  <\/row>\n  <row>\n    <cell>number of trials<\/cell>\n    <cell>20<\/cell>\n    <cell>30<\/cell>\n    <cell>40<\/cell>\n    <cell>50<\/cell>\n  <\/row>\n  <row>\n    <cell>RS<\/cell>\n    <cell/>\n    <cell/>\n    <cell/>\n    <cell/>\n  <\/row>\n  <row>\n    <cell>80<\/cell>\n    <cell>.60<\/cell>\n    <cell>.32<\/cell>\n    <cell>.40<\/cell>\n    <cell>.20<\/cell>\n  <\/row>\n  <row>\n    <cell>120<\/cell>\n    <cell>.56<\/cell>\n    <cell>.44<\/cell>\n    <cell>.46<\/cell>\n    <cell>.20<\/cell>\n  <\/row>\n  <row>\n    <cell>160<\/cell>\n    <cell>.64<\/cell>\n    <cell>.46<\/cell>\n    <cell>.28<\/cell>\n    <cell>.20<\/cell>\n  <\/row>\n  <row>\n    <cell>240<\/cell>\n    <cell>.62<\/cell>\n    <cell>.36<\/cell>\n    <cell>.24<\/cell>\n    <cell>.16<\/cell>\n  <\/row>\n  <row>\n    <cell>360<\/cell>\n    <cell>.50<\/cell>\n    <cell>.32<\/cell>\n    <cell>.28<\/cell>\n    <cell>.14<\/cell>\n  <\/row>\n  <row>\n    <cell>RS (evidence)<\/cell>\n    <cell/>\n    <cell/>\n    <cell/>\n    <cell/>\n  <\/row>\n  <row>\n    <cell>80<\/cell>\n    <cell>.40<\/cell>\n    <cell>.24<\/cell>\n    <cell>.26<\/cell>\n    <cell>.18<\/cell>\n  <\/row>\n  <row>\n    <cell>120<\/cell>\n    <cell>.36<\/cell>\n    <cell>.28<\/cell>\n    <cell>.26<\/cell>\n    <cell>.08<\/cell>\n  <\/row>\n  <row>\n    <cell>160<\/cell>\n    <cell>.42<\/cell>\n    <cell>.36<\/cell>\n    <cell>.20<\/cell>\n    <cell>.14<\/cell>\n  <\/row>\n  <row>\n    <cell>240<\/cell>\n    <cell>.40<\/cell>\n    <cell>.20<\/cell>\n    <cell>.16<\/cell>\n    <cell>.08<\/cell>\n  <\/row>\n  <row>\n    <cell>360<\/cell>\n    <cell>.28<\/cell>\n    <cell>.18<\/cell>\n    <cell>.08<\/cell>\n    <cell>.12<\/cell>\n  <\/row>\n  <row>\n    <cell cols=\"4\">Note: Results are from unaggregated data. The \"RS\" model version<\/cell>\n    <cell/>\n  <\/row>\n  <row>\n    <cell cols=\"4\">included random slopes for both effects. In the \"RS (evidence)\"<\/cell>\n    <cell/>\n  <\/row>\n  <row>\n    <cell cols=\"5\">version, the inclusion of random slopes was determined empirically<\/cell>\n  <\/row>\n  <row>\n    <cell>through model comparison.<\/cell>\n    <cell/>\n    <cell/>\n    <cell/>\n    <cell/>\n  <\/row>\n<\/table>",
+      "contents": null,
+      "page_number": null
+    },
+    {
+      "table_id": 10,
+      "section_id": 50,
+      "html": "<table>\n  <row>\n    <cell/>\n    <cell cols=\"2\">No RS<\/cell>\n    <cell>RS<\/cell>\n    <cell/>\n    <cell cols=\"2\">RS (evidence)<\/cell>\n  <\/row>\n  <row>\n    <cell>Model<\/cell>\n    <cell>p(M0|D)<\/cell>\n    <cell>p(M1|D)<\/cell>\n    <cell>p(M0|D)<\/cell>\n    <cell>p(M1|D)<\/cell>\n    <cell>p(M0|D)<\/cell>\n    <cell>p(M1|D)<\/cell>\n  <\/row>\n  <row>\n    <cell>M0<\/cell>\n    <cell>.77<\/cell>\n    <cell>.23<\/cell>\n    <cell>.86<\/cell>\n    <cell>.14<\/cell>\n    <cell>.84<\/cell>\n    <cell>.16<\/cell>\n  <\/row>\n  <row>\n    <cell>M1<\/cell>\n    <cell>.10<\/cell>\n    <cell>.90<\/cell>\n    <cell>.18<\/cell>\n    <cell>.82<\/cell>\n    <cell>.15<\/cell>\n    <cell>.85<\/cell>\n  <\/row>\n<\/table>",
+      "contents": null,
+      "page_number": null
+    }
+  ],
   "eq": [
     {
       "text_id": 59,
@@ -3572,305 +4125,705 @@
       "rhs": "0"
     },
     {
-      "text_id": 137,
+      "text_id": 135,
       "grp_id": 4,
       "lhs": "size",
       "comp": "=",
       "rhs": "0.5"
     },
     {
-      "text_id": 149,
+      "text_id": 147,
       "grp_id": 5,
       "lhs": "Effect",
       "comp": "=",
       "rhs": "0"
     },
     {
-      "text_id": 149,
+      "text_id": 147,
       "grp_id": 5,
       "lhs": "Effect",
       "comp": "=",
       "rhs": "0"
     },
     {
-      "text_id": 159,
+      "text_id": 157,
       "grp_id": 6,
       "lhs": "r",
       "comp": "=",
       "rhs": "0"
     },
     {
-      "text_id": 184,
+      "text_id": 182,
       "grp_id": 7,
       "lhs": "N",
       "comp": "=",
       "rhs": "20"
     },
     {
-      "text_id": 184,
+      "text_id": 182,
       "grp_id": 7,
       "lhs": "n",
       "comp": "=",
       "rhs": "20"
     },
     {
-      "text_id": 218,
+      "text_id": 216,
       "grp_id": 8,
       "lhs": "scale",
       "comp": "=",
       "rhs": "0.5"
     },
     {
-      "text_id": 221,
+      "text_id": 219,
       "grp_id": 9,
       "lhs": "Effect",
       "comp": "=",
       "rhs": "0"
     },
     {
-      "text_id": 221,
+      "text_id": 219,
       "grp_id": 9,
       "lhs": "Effect",
       "comp": "=",
       "rhs": "0"
     },
     {
-      "text_id": 230,
+      "text_id": 228,
       "grp_id": 10,
       "lhs": "Effect",
       "comp": "=",
       "rhs": "0"
     },
     {
-      "text_id": 230,
+      "text_id": 228,
       "grp_id": 10,
       "lhs": "Effect",
       "comp": "=",
       "rhs": "0"
     },
     {
-      "text_id": 236,
+      "text_id": 234,
       "grp_id": 11,
       "lhs": "p(M1|D)",
       "comp": "=",
       "rhs": ".53"
     },
     {
-      "text_id": 236,
+      "text_id": 234,
       "grp_id": 11,
       "lhs": "interval (CI)",
       "comp": "=",
       "rhs": "[.50, .57]"
     },
     {
-      "text_id": 237,
+      "text_id": 235,
       "grp_id": 12,
       "lhs": "p(M1|D)",
       "comp": "=",
       "rhs": ".50"
     },
     {
-      "text_id": 237,
+      "text_id": 235,
       "grp_id": 12,
       "lhs": "95% CI",
       "comp": "=",
       "rhs": "[.46, .53]"
     },
     {
-      "text_id": 237,
+      "text_id": 235,
       "grp_id": 12,
       "lhs": "p(M1|D)",
       "comp": "=",
       "rhs": ".51"
     },
     {
-      "text_id": 237,
+      "text_id": 235,
       "grp_id": 12,
       "lhs": "95% CI",
       "comp": "=",
       "rhs": "[.48, .54]"
     },
     {
-      "text_id": 107,
+      "text_id": 396,
       "grp_id": 13,
+      "lhs": "Sizes",
+      "comp": "=",
+      "rhs": "0.25"
+    },
+    {
+      "text_id": 401,
+      "grp_id": 14,
+      "lhs": "Size",
+      "comp": "=",
+      "rhs": "0.5"
+    },
+    {
+      "text_id": 405,
+      "grp_id": 15,
+      "lhs": "Size",
+      "comp": "=",
+      "rhs": "0.25"
+    },
+    {
+      "text_id": 107,
+      "grp_id": 16,
       "lhs": "BF",
       "comp": "<",
       "rhs": "3"
     },
     {
       "text_id": 107,
-      "grp_id": 13,
+      "grp_id": 16,
       "lhs": "BF",
       "comp": "<",
       "rhs": "0.33"
     },
     {
       "text_id": 116,
-      "grp_id": 14,
+      "grp_id": 17,
       "lhs": "BFs",
       "comp": "<",
       "rhs": "0.1"
     },
     {
-      "text_id": 131,
-      "grp_id": 15,
-      "lhs": "BF",
-      "comp": "<",
-      "rhs": "3"
-    },
-    {
-      "text_id": 131,
-      "grp_id": 15,
-      "lhs": "BF",
-      "comp": "<",
-      "rhs": "1"
-    },
-    {
-      "text_id": 131,
-      "grp_id": 15,
-      "lhs": "BF",
-      "comp": "<",
-      "rhs": "0.33"
-    },
-    {
-      "text_id": 177,
-      "grp_id": 16,
-      "lhs": "BF",
-      "comp": "<",
-      "rhs": "3"
-    },
-    {
-      "text_id": 177,
-      "grp_id": 16,
-      "lhs": "BF",
-      "comp": "<",
-      "rhs": "1"
-    },
-    {
-      "text_id": 177,
-      "grp_id": 16,
-      "lhs": "BF",
-      "comp": "<",
-      "rhs": "0.33"
-    },
-    {
-      "text_id": 196,
-      "grp_id": 17,
-      "lhs": "BF",
-      "comp": "<",
-      "rhs": "1"
-    },
-    {
-      "text_id": 203,
+      "text_id": 129,
       "grp_id": 18,
       "lhs": "BF",
       "comp": "<",
       "rhs": "3"
     },
     {
-      "text_id": 203,
+      "text_id": 129,
       "grp_id": 18,
       "lhs": "BF",
       "comp": "<",
       "rhs": "1"
     },
     {
-      "text_id": 203,
+      "text_id": 129,
       "grp_id": 18,
       "lhs": "BF",
       "comp": "<",
       "rhs": "0.33"
     },
     {
-      "text_id": 249,
+      "text_id": 175,
       "grp_id": 19,
       "lhs": "BF",
       "comp": "<",
       "rhs": "3"
     },
     {
-      "text_id": 249,
+      "text_id": 175,
       "grp_id": 19,
       "lhs": "BF",
       "comp": "<",
       "rhs": "1"
     },
     {
-      "text_id": 249,
+      "text_id": 175,
       "grp_id": 19,
       "lhs": "BF",
       "comp": "<",
       "rhs": "0.33"
     },
     {
-      "text_id": 307,
+      "text_id": 194,
       "grp_id": 20,
       "lhs": "BF",
       "comp": "<",
+      "rhs": "1"
+    },
+    {
+      "text_id": 201,
+      "grp_id": 21,
+      "lhs": "BF",
+      "comp": "<",
+      "rhs": "3"
+    },
+    {
+      "text_id": 201,
+      "grp_id": 21,
+      "lhs": "BF",
+      "comp": "<",
+      "rhs": "1"
+    },
+    {
+      "text_id": 201,
+      "grp_id": 21,
+      "lhs": "BF",
+      "comp": "<",
+      "rhs": "0.33"
+    },
+    {
+      "text_id": 247,
+      "grp_id": 22,
+      "lhs": "BF",
+      "comp": "<",
+      "rhs": "3"
+    },
+    {
+      "text_id": 247,
+      "grp_id": 22,
+      "lhs": "BF",
+      "comp": "<",
+      "rhs": "1"
+    },
+    {
+      "text_id": 247,
+      "grp_id": 22,
+      "lhs": "BF",
+      "comp": "<",
+      "rhs": "0.33"
+    },
+    {
+      "text_id": 305,
+      "grp_id": 23,
+      "lhs": "BF",
+      "comp": "<",
       "rhs": "0.33"
     },
     {
       "text_id": 81,
-      "grp_id": 21,
+      "grp_id": 24,
       "lhs": "BF",
       "comp": ">",
       "rhs": "3"
     },
     {
       "text_id": 81,
-      "grp_id": 21,
-      "lhs": "BF",
-      "comp": ">",
-      "rhs": "10"
-    },
-    {
-      "text_id": 100,
-      "grp_id": 22,
-      "lhs": "BF",
-      "comp": ">",
-      "rhs": "3"
-    },
-    {
-      "text_id": 100,
-      "grp_id": 22,
-      "lhs": "BF",
-      "comp": ">",
-      "rhs": "10"
-    },
-    {
-      "text_id": 122,
-      "grp_id": 23,
-      "lhs": "Effect",
-      "comp": ">",
-      "rhs": "0"
-    },
-    {
-      "text_id": 122,
-      "grp_id": 23,
-      "lhs": "Effect",
-      "comp": ">",
-      "rhs": "0"
-    },
-    {
-      "text_id": 232,
-      "grp_id": 24,
-      "lhs": "BF",
-      "comp": ">",
-      "rhs": "3"
-    },
-    {
-      "text_id": 232,
       "grp_id": 24,
       "lhs": "BF",
       "comp": ">",
       "rhs": "10"
     },
     {
-      "text_id": 311,
+      "text_id": 100,
       "grp_id": 25,
       "lhs": "BF",
       "comp": ">",
+      "rhs": "3"
+    },
+    {
+      "text_id": 100,
+      "grp_id": 25,
+      "lhs": "BF",
+      "comp": ">",
+      "rhs": "10"
+    },
+    {
+      "text_id": 122,
+      "grp_id": 26,
+      "lhs": "Effect",
+      "comp": ">",
+      "rhs": "0"
+    },
+    {
+      "text_id": 122,
+      "grp_id": 26,
+      "lhs": "Effect",
+      "comp": ">",
+      "rhs": "0"
+    },
+    {
+      "text_id": 230,
+      "grp_id": 27,
+      "lhs": "BF",
+      "comp": ">",
+      "rhs": "3"
+    },
+    {
+      "text_id": 230,
+      "grp_id": 27,
+      "lhs": "BF",
+      "comp": ">",
+      "rhs": "10"
+    },
+    {
+      "text_id": 309,
+      "grp_id": 28,
+      "lhs": "BF",
+      "comp": ">",
       "rhs": "100"
+    },
+    {
+      "text_id": 398,
+      "grp_id": 29,
+      "lhs": "BF",
+      "comp": ">",
+      "rhs": "3"
+    },
+    {
+      "text_id": 398,
+      "grp_id": 29,
+      "lhs": "BF",
+      "comp": ">",
+      "rhs": "10"
+    }
+  ],
+  "bib_match": [
+    {
+      "bib_id": 0,
+      "service": "crossref",
+      "service_id": null,
+      "score": 113.5786,
+      "bib_type": "misc",
+      "doi": "10.31234/osf.io/39mhs",
+      "title": "Random effects structure for confirmatory hypothesis testing: Keep it maximal",
+      "authors": [
+        {
+          "given": "Dale",
+          "family": "Barr"
+        },
+        {
+          "given": "Roger Philip",
+          "family": "Levy"
+        },
+        {
+          "given": "Christoph",
+          "family": "Scheepers"
+        },
+        {
+          "given": "Harry",
+          "family": "Tily"
+        }
+      ],
+      "editors": [],
+      "publisher": "Center for Open Science",
+      "year": 2018,
+      "date": null,
+      "container": null,
+      "volume": null,
+      "issue": null,
+      "first_page": null,
+      "last_page": null,
+      "edition": null,
+      "version": null,
+      "url": "https://doi.org/10.31234/osf.io/39mhs"
+    },
+    {
+      "bib_id": 3,
+      "service": "crossref",
+      "service_id": null,
+      "score": 80.1049,
+      "bib_type": "article",
+      "doi": "10.18637/jss.v080.i01",
+      "title": "<b>brms<\/b>: An <i>R<\/i> Package for Bayesian Multilevel Models Using <i>Stan<\/i>",
+      "authors": [
+        {
+          "given": "Paul-Christian",
+          "family": "Bürkner"
+        }
+      ],
+      "editors": [],
+      "publisher": "Foundation for Open Access Statistic",
+      "year": 2017,
+      "date": null,
+      "container": "Journal of Statistical Software",
+      "volume": "80",
+      "issue": "1",
+      "first_page": null,
+      "last_page": null,
+      "edition": null,
+      "version": null,
+      "url": "https://doi.org/10.18637/jss.v080.i01"
+    },
+    {
+      "bib_id": 4,
+      "service": "crossref",
+      "service_id": null,
+      "score": 104.5995,
+      "bib_type": "misc",
+      "doi": "10.31222/osf.io/v94h6",
+      "title": "bridgesampling: An R Package for Estimating Normalizing Constants",
+      "authors": [
+        {
+          "given": "Quentin Frederik",
+          "family": "Gronau"
+        },
+        {
+          "given": "Henrik",
+          "family": "Singmann"
+        },
+        {
+          "given": "Eric-Jan",
+          "family": "Wagenmakers"
+        }
+      ],
+      "editors": [],
+      "publisher": "Center for Open Science",
+      "year": 2017,
+      "date": null,
+      "container": null,
+      "volume": null,
+      "issue": null,
+      "first_page": null,
+      "last_page": null,
+      "edition": null,
+      "version": null,
+      "url": "https://doi.org/10.31222/osf.io/v94h6"
+    },
+    {
+      "bib_id": 7,
+      "service": "crossref",
+      "service_id": null,
+      "score": 55.465,
+      "bib_type": "article",
+      "doi": "10.1080/01621459.1995.10476572",
+      "title": "Bayes Factors",
+      "authors": [
+        {
+          "given": "Robert E.",
+          "family": "Kass"
+        },
+        {
+          "given": "Adrian E.",
+          "family": "Raftery"
+        }
+      ],
+      "editors": [],
+      "publisher": "Informa UK Limited",
+      "year": 1995,
+      "date": null,
+      "container": "Journal of the American Statistical Association",
+      "volume": "90",
+      "issue": "430",
+      "first_page": "773",
+      "last_page": "795",
+      "edition": null,
+      "version": null,
+      "url": "https://doi.org/10.1080/01621459.1995.10476572"
+    },
+    {
+      "bib_id": 8,
+      "service": "crossref",
+      "service_id": null,
+      "score": 108.7915,
+      "bib_type": "article",
+      "doi": "10.1016/j.jml.2017.01.001",
+      "title": "Balancing Type I error and power in linear mixed models",
+      "authors": [
+        {
+          "given": "Hannes",
+          "family": "Matuschek"
+        },
+        {
+          "given": "Reinhold",
+          "family": "Kliegl"
+        },
+        {
+          "given": "Shravan",
+          "family": "Vasishth"
+        },
+        {
+          "given": "Harald",
+          "family": "Baayen"
+        },
+        {
+          "given": "Douglas",
+          "family": "Bates"
+        }
+      ],
+      "editors": [],
+      "publisher": "Elsevier BV",
+      "year": 2017,
+      "date": null,
+      "container": "Journal of Memory and Language",
+      "volume": "94",
+      "issue": null,
+      "first_page": "305",
+      "last_page": "315",
+      "edition": null,
+      "version": null,
+      "url": "https://doi.org/10.1016/j.jml.2017.01.001"
+    },
+    {
+      "bib_id": 10,
+      "service": "crossref",
+      "service_id": null,
+      "score": 95.1473,
+      "bib_type": "article",
+      "doi": "10.1016/j.jmp.2012.08.001",
+      "title": "Default Bayes factors for ANOVA designs",
+      "authors": [
+        {
+          "given": "Jeffrey N.",
+          "family": "Rouder"
+        },
+        {
+          "given": "Richard D.",
+          "family": "Morey"
+        },
+        {
+          "given": "Paul L.",
+          "family": "Speckman"
+        },
+        {
+          "given": "Jordan M.",
+          "family": "Province"
+        }
+      ],
+      "editors": [],
+      "publisher": "Elsevier BV",
+      "year": 2012,
+      "date": null,
+      "container": "Journal of Mathematical Psychology",
+      "volume": "56",
+      "issue": "5",
+      "first_page": "356",
+      "last_page": "374",
+      "edition": null,
+      "version": null,
+      "url": "https://doi.org/10.1016/j.jmp.2012.08.001"
+    },
+    {
+      "bib_id": 11,
+      "service": "crossref",
+      "service_id": null,
+      "score": 111.3975,
+      "bib_type": "article",
+      "doi": "10.1037/met0000472",
+      "title": "Workflow techniques for the robust use of bayes factors.",
+      "authors": [
+        {
+          "given": "Daniel J.",
+          "family": "Schad"
+        },
+        {
+          "given": "Bruno",
+          "family": "Nicenboim"
+        },
+        {
+          "given": "Paul-Christian",
+          "family": "Bürkner"
+        },
+        {
+          "given": "Michael",
+          "family": "Betancourt"
+        },
+        {
+          "given": "Shravan",
+          "family": "Vasishth"
+        }
+      ],
+      "editors": [],
+      "publisher": "American Psychological Association (APA)",
+      "year": 2023,
+      "date": null,
+      "container": "Psychological Methods",
+      "volume": "28",
+      "issue": "6",
+      "first_page": "1404",
+      "last_page": "1426",
+      "edition": null,
+      "version": null,
+      "url": "https://doi.org/10.1037/met0000472"
+    },
+    {
+      "bib_id": 12,
+      "service": "crossref",
+      "service_id": null,
+      "score": 163.2559,
+      "bib_type": "misc",
+      "doi": "10.31234/osf.io/kxhfu",
+      "title": "Statistics in the Service of Science: Don't let the Tail Wag the Dog",
+      "authors": [
+        {
+          "given": "Henrik",
+          "family": "Singmann"
+        },
+        {
+          "given": "David",
+          "family": "Kellen"
+        },
+        {
+          "given": "Gregory Edward",
+          "family": "Cox"
+        },
+        {
+          "given": "Suyog",
+          "family": "Chandramouli"
+        },
+        {
+          "given": "Clintin P",
+          "family": "Davis-Stober"
+        },
+        {
+          "given": "John C",
+          "family": "Dunn"
+        },
+        {
+          "given": "Quentin Frederik",
+          "family": "Gronau"
+        },
+        {
+          "given": "Michael",
+          "family": "Kalish"
+        },
+        {
+          "given": "Sara D",
+          "family": "McMullin"
+        },
+        {
+          "given": "Danielle",
+          "family": "Navarro"
+        },
+        {
+          "given": "Rich",
+          "family": "Shiffrin"
+        }
+      ],
+      "editors": [],
+      "publisher": "Center for Open Science",
+      "year": 2021,
+      "date": null,
+      "container": null,
+      "volume": null,
+      "issue": null,
+      "first_page": null,
+      "last_page": null,
+      "edition": null,
+      "version": null,
+      "url": "https://doi.org/10.31234/osf.io/kxhfu"
+    },
+    {
+      "bib_id": 13,
+      "service": "crossref",
+      "service_id": null,
+      "score": 131.966,
+      "bib_type": "misc",
+      "doi": "10.31234/osf.io/rqnu5",
+      "title": "The Principle of Predictive Irrelevance, or Why Intervals Should Not be Used for Model Comparison Featuring a Point Null Hypothesis",
+      "authors": [
+        {
+          "given": "Eric-Jan",
+          "family": "Wagenmakers"
+        },
+        {
+          "given": "Michael David",
+          "family": "Lee"
+        },
+        {
+          "given": "Jeffrey N.",
+          "family": "Rouder"
+        },
+        {
+          "given": "Richard Donald",
+          "family": "Morey"
+        }
+      ],
+      "editors": [],
+      "publisher": "Center for Open Science",
+      "year": 2019,
+      "date": null,
+      "container": null,
+      "volume": null,
+      "issue": null,
+      "first_page": null,
+      "last_page": null,
+      "edition": null,
+      "version": null,
+      "url": "https://doi.org/10.31234/osf.io/rqnu5"
     }
   ]
 }
