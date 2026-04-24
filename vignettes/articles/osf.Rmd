@@ -48,7 +48,7 @@ paper <- psychsci[[250]]
 
 You can only make 100 API requests per hour, unless you authorise your requests, when you can make 10K requests per day. The OSF functions in metacheck often make several requests per URL to get all of the info, so it's worthwhile setting your PAT. You can authorise them by creating an OSF token at <https://osf.io/settings/tokens> and including the following line in your .Renviron file (which you can open using `usethis::edit_r_environ()`):
 
-```         
+```
 OSF_PAT="replace-with-your-token-string"
 ```
 
@@ -70,7 +70,7 @@ links <- osf_links(paper)
 #| echo: false
 
 links |>
-  select(text, section) |>
+  select(text, section_type) |>
   mytable()
 ```
 
@@ -83,7 +83,10 @@ This function can take a vector of OSF IDs or URLs, or a table that contains the
 The function `osf_retrieve()` will also retrieve all child components, files and folders if you set the argument `recursive = TRUE`. If there are duplicate IDs, it will only get the contents for each item once. If you set the argument `find_project = TRUE`, it will also look up the parent project of any links (but this requires more API calls).
 
 ```{r osf_retrieve}
-info <- osf_retrieve(links, recursive = TRUE, find_project = TRUE)
+info <- osf_retrieve(links, 
+                     id_col = "text", 
+                     recursive = TRUE, 
+                     find_project = TRUE)
 ```
 
 ```{r tbl-osf_retrieve}
@@ -276,7 +279,9 @@ Let's put everything together in one block of code, and perform all automated ch
 
 osf_file_check <- function(paper) {
   links <- osf_links(paper)
-  info <- osf_retrieve(links, recursive = TRUE)
+  info <- osf_retrieve(links, 
+                       id_col = "text", 
+                       recursive = TRUE)
   osf_files_summary <- file_category(info)
   report <- osf_report(osf_files_summary)
   r_file_results <- check_r_files(osf_files_summary)  
@@ -291,7 +296,8 @@ osf_file_check <- function(paper) {
 ```
 
 ```{r module-results}
-module_results <- module_run(psychsci$`0956797620955209`, "osf_file_check.R")
+paper <- psychsci$`0956797620955209`
+module_results <- module_run(paper, "osf_file_check.R")
 ```
 
 ```{r module-print}

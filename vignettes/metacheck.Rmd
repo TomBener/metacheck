@@ -43,77 +43,49 @@ metacheck_app()
 
 ### Load from PDF
 
-The function `pdf2grobid()` can read PDF files and save them in the [TEI](https://tei-c.org/) format created by [grobid](https://grobid.readthedocs.io/). This requires an internet connection and takes a few seconds per paper, so should only be done once and the results saved for later use.
-
-If the server is unavailable, you can [use a grobid web interface](https://huggingface.co/spaces/kermitt2/grobid).
+The function `convert()` can read PDF files and save them in [JSON format](https://www.scienceverse.org/schema/paper.json). This requires an internet connection and takes a few seconds per paper, so should only be done once and the results saved for later use.
 
 ```{r, eval = FALSE}
-pdf_file <- system.file("demo/to_err_is_human.pdf",
-                        paclage = "metacheck")
-xml_file <- pdf2grobid(pdf_file)
+pdf_file <- demofile("pdf")
+json_file <- convert(file_path = pdf_file, save_path = "converted")
 ```
 
 ```{r, include = FALSE}
 # doesn't require a call to the grobid server
-xml_file <- system.file("demo/to_err_is_human.xml",
-                        paclage = "metacheck")
+json_file <- demofile("json")
 ```
 
 You can set up your own local grobid server following instructions from <https://grobid.readthedocs.io/>. The easiest way is to use Docker.
 
 ``` bash
-docker run --rm --init --ulimit core=0 -p 8070:8070 lfoppiano/grobid:0.8.2
+docker run --rm --init --ulimit core=0 -p 8070:8070 lfoppiano/grobid:0.9.0
 ```
 
-Then you can set your grobid_url to the local path <http://localhost:8070>.
+Then you can set your api_url to the local path <http://localhost:8070>.
 
 ```{r, eval = FALSE}
-xml_file <- pdf2grobid(pdf_file, grobid_url = "http://localhost:8070")
+json_file <- convert(file_path = pdf_file, 
+                     save_path = "converted",
+                     method = "grobid",
+                     api_url = "http://localhost:8070")
 ```
 
 
-### Load from XML
+### Load from JSON
 
-The function `read()` can read XML files parsed by grobid or cermine, plus any XML files in JATS-DTD APA or NLM formats.
-
-```{r}
-paper <- read(xml_file)
-```
-
-XML files parsed by [cermine](http://cermine.ceon.pl) are not as good as grobid at parsing papers, and omits figure and table captions.
+The function `read()` can read converted JSON files.
 
 ```{r}
-#| eval: false
-cermine_xml_file <- system.file("psychsci/0956797620955209.cermine.xml",
-                                package = "metacheck")
-paper <- read(cermine_xml_file)
+paper <- read(json_file)
 ```
 
 ### Load from non-PDF document
 
-To take advantage of grobid's ability to parse references and other aspects of papers, for now the best way is to convert your papers to PDF. However, metacheck can read in plain text from a text/docx file with `read()`.
-
-```{r}
-#| eval: false
-filename <- system.file("extdata/to_err_is_human.docx", 
-                        package = "metacheck")
-paper_from_doc <- read_text(filename)
-```
-
+To take advantage of grobid's ability to parse references and other aspects of papers, for now the best way is to convert your papers to PDF. We will introduce our custom backend, bibr, soon and this will be able to convert DOC and DOCX files directly.
 
 ### Batch Processing
 
-The functions `pdf2grobid()` and `read()` also work on a folder of files, returning a list of XML file paths or paper objects, respectively. The functions `search_text()`, `expand_text()` and `llm()` also work on a list of paper objects.
-
-```{r}
-grobid_dir <- demodir()
-
-papers <- read(grobid_dir)
-
-hypotheses <- search_text(papers, "hypothesi", 
-                          section = "intro", 
-                          return = "paragraph")
-```
+The functions `convert()` and `read()` also work on a folder of files, returning a list of JSON file paths or paper objects, respectively. The functions `search_text()`, `expand_text()` and `llm()` also work on a list of paper objects.
 
 ## Paper Components
 
@@ -142,11 +114,11 @@ knitr::kable(paper$bib)
 Cross-references are also provided in a tabular format, with `xref_id` to match the bibliography table.
 
 ```{r, eval = FALSE}
-paper$xrefs
+paper$xref
 ```
 
 ```{r, echo = FALSE}
-knitr::kable(paper$xrefs)
+knitr::kable(paper$xref)
 ```
 
 ### Batch
@@ -154,19 +126,13 @@ knitr::kable(paper$xrefs)
 There are functions to combine the infomation from a list of papers, like the `psychsci` built-in dataset of 250 open access papers from Psychological Science.
 
 ```{r}
-info_table(psychsci[1:5], c("title", "doi"))
+paper_table(psychsci[1:5], "info", c("title", "doi"))
 ```
 
 
 ```{r}
 paper_table(psychsci[1:5], "bib") |>
   dplyr::filter(!is.na(doi))
-```
-
-```{r}
-paper_table(psychsci[1:40], "xrefs") |>
-  dplyr::filter(grepl("replicat", text)) |>
-  dplyr::count(id, text)
 ```
 
 ## Search Text
@@ -178,7 +144,7 @@ text <- search_text(paper)
 ```
 
 ```{r, echo = FALSE}
-dplyr::filter(text, p == 1, s == 1) |>
+head(text) |>
   knitr::kable()
 ```
 
@@ -194,27 +160,12 @@ text <- search_text(paper, pattern = "metacheck")
 knitr::kable(text)
 ```
 
-### Section
-
-Set `section` to a vector of the sections to search in.
-
-```{r}
-text <- search_text(paper, "metacheck", 
-                    section = "abstract")
-```
-
-```{r, echo = FALSE}
-knitr::kable(text)
-```
-
-
 ### Return
 
 Set `return` to one of "sentence", "paragraph", "section", or "match" to control what gets returned.
 
 ```{r}
-text <- search_text(paper, "metacheck", 
-                    section = "intro", 
+text <- search_text(paper, "GitHub", 
                     return = "paragraph")
 ```
 
@@ -255,7 +206,7 @@ You can query the extracted text of papers with LLMs using any models supported 
 
 ### Setup
 
-You will need to get your own API key from your preferred provider (e.g. <https://console.groq.com/keys>). To avoid having to type it out, add it to the .Renviron file in the following format (you can use `usethis::edit_r_environ()` to access the .Renviron file).
+You will need to get **your own API key** (the one below is a fake example) from your preferred provider (e.g. <https://console.groq.com/keys>). To avoid having to type it out, add it to the .Renviron file in the following format (you can use `usethis::edit_r_environ()` to access the .Renviron file).
 
 ``` bash
 GROQ_GPT_KEY="sk-proj-abcdefghijklmnopqrs0123456789ABCDEFGHIJKLMNOPQRS"
@@ -279,8 +230,8 @@ When you start metacheck for the first time, it will check for relevant API keys
 ```{r}
 #| eval: false
 llm_model() # get current model
-llm_model("openai") # set to ellmer's default openai model
-llm_model("openai/gpt-4.1") # set to specific openai model
+llm_model("groq") # set to ellmer's default groq model
+llm_model("groq/llama-3.3-70b-versatile") # set to specific openai model
 ```
 
 
@@ -288,13 +239,13 @@ llm_model("openai/gpt-4.1") # set to specific openai model
 
 You can query the extracted text of papers with LLMs. See `?llm` for details of how to get and set up your API key, choose an LLM, and adjust settings. 
 
-Use `search_text()` first to narrow down the text into what you want to query. Below, we limited search to the first ten papers' method sections, and returned sentences that contains the word "power" and at least one number. Then we asked an LLM to determine if this is an a priori power analysis, and if so, to return some relevant values in a JSON-structured format.
+Use `search_text()` first to narrow down the text into what you want to query. Below, we limited search to the first ten papers, and returned sentences that contains the word "power" and at least one number. Then we asked an LLM to determine if this is an a priori power analysis, and if so, to return some relevant values in a JSON-structured format.
 
 ```{r}
 #| eval: false
 power <- psychsci[1:10] |>
   # sentences containing the word power
-  search_text("power", section = "method") |>
+  search_text("power") |>
   # and containing at least one number
   search_text("[0-9]") 
 
@@ -322,7 +273,12 @@ llm_power <- llm(power, system_prompt)
 ```{r}
 #| echo: false
 # dput(llm_power)
-llm_power <- structure(list(text = c("Sample size was calculated with an a priori power analysis, using the effect sizes reported by Küpper et al. (2014), who used identical procedures, materials, and dependent measures.", 
+llm_power <- structure(list(text_id = c(170L, 38L, 29L, 30L, 71L, 154L, 207L, 
+40L, 84L, 88L, 89L, 148L, 209L), paragraph_id = c(41L, 11L, 11L, 
+11L, 18L, 38L, 58L, 11L, 20L, 20L, 20L, 36L, 49L), section_id = c(9L, 
+3L, 3L, 3L, 5L, 9L, 17L, 3L, 5L, 5L, 5L, 7L, 9L), text = c("It is possible that less-consistent effects were observed on trials with errors because of reduced power to detect an effect on these trials, which by design were less numerous (~25%).", 
+"Figure 1 shows that CY had very little predictive power for CLIM, but the fit in the transposed plot has an obvious bell-shaped curve.", 
+"Sample size was calculated with an a priori power analysis, using the effect sizes reported by Küpper et al. (2014), who used identical procedures, materials, and dependent measures.", 
 "We determined that a minimum sample size of 7 per group would be necessary for 95% power to detect an effect.", 
 "For the first part of the task, 11 static visual images, one from each of the scenes in the film were presented once each on a black background for 2 s using Power-Point.", 
 "A sample size of 26 per group was required to ensure 80% power to detect this difference at the 5% significance level.", 
@@ -330,25 +286,32 @@ llm_power <- structure(list(text = c("Sample size was calculated with an a prior
 "The 13,500 selected loan requests conservatively achieved a power of .98 for an effect size of .07 at an alpha level of .05.", 
 "On the basis of simulations over a range of expected effect sizes for contrasts of fMRI activity, we estimated that a sample size of 24 would provide .80 power at a conservative brainwide alpha threshold of .002 (although such thresholds ideally should be relaxed for detecting activity in regions where an effect is predicted).", 
 "Stimulus sample size was determined via power analysis of the sole existing similar study, which used neural activity to predict Internet downloads of music (Berns & Moore, 2012).", 
-"The effect size from that study implied that a sample size of 72 loan requests would be required to achieve .80 power at an alpha level of .05."
-), section = c("method", "method", "method", "method", "method", 
-"method", "method", "method", "method"), header = c("Participants", 
-"Participants", "Tasks and measures", "Intrusion-provocation task (IPT).", 
-"Method", "Internet study", "Neuroimaging study", "Neuroimaging study", 
-"Neuroimaging study"), div = c(3, 3, 4, 5, 10, 3, 4, 4, 4), p = c(1, 
-1, 2, 13, 3, 2, 5, 5, 5), s = c(2L, 3L, 3L, 3L, 3L, 8L, 3L, 7L, 
-8L), id = c("0956797615569889", "0956797615569889", "0956797615583071", 
+"The effect size from that study implied that a sample size of 72 loan requests would be required to achieve .80 power at an alpha level of .05.", 
+"Categorical ratings of the emotional expressions in the loan photographs had a similarly powerful impact on loan-request success; requests with \"happy\" photographs received $5.15 more per hour than requests with \"sad\" photographs, on average; they achieved full funding in 7.6% less time.", 
+"Although previous research has provided mixed evidence about the impact of positive versus negative affect on charitable giving (Andreoni, 1990;Small & Verrochi, 2009), by simultaneously assessing affect at both Internet-aggregate and laboratory-sample levels of analysis, our studies provide consistent evidence that photograph-elicited positive arousal most powerfully promoted lending rates and outcomes (Tables 1 and 2, Fig. 2a, and Fig."
+), page_number = c(NA_integer_, NA_integer_, NA_integer_, NA_integer_, 
+NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, 
+NA_integer_, NA_integer_, NA_integer_, NA_integer_), paper_id = c("0956797614557697", 
+"0956797614566469", "0956797615569889", "0956797615569889", "0956797615583071", 
 "0956797615583071", "0956797615583071", "0956797615588467", "0956797615588467", 
-"0956797615588467", "0956797615588467"), answer = structure(c("{\"apriori\": true, \"test\": null, \"sample\": null, \"alpha\": null, \"power\": null, \"es\": null, \"es_metric\": null, \"notes\": \"A priori power analysis reported, but specific parameters (test, sample size, alpha, power level, effect size, effect size metric) are not provided in the sentence.\"}", 
-"{\"apriori\": true, \"test\": null, \"sample\": 7, \"alpha\": null, \"power\": 0.95, \"es\": null, \"es_metric\": null, \"notes\": \"A priori power analysis is indicated with sample size and power, but test type, alpha, and effect size are not specified in the sentence.\"}", 
-"{\"apriori\": false}", "{\"apriori\": true, \"test\": null, \"sample\": 26, \"alpha\": 0.05, \"power\": 0.8, \"es\": null, \"es_metric\": null, \"notes\": \"A priori power analysis is reported with sample size, alpha, and power, but test type and effect size are not specified in the sentence.\"}", 
-"{\"apriori\": true, \"test\": null, \"sample\": 18, \"alpha\": 0.05, \"power\": 0.8, \"es\": null, \"es_metric\": null, \"notes\": \"A priori power analysis is reported with sample size, alpha, and power, but the test type and effect size are not specified in the sentence.\"}", 
-"{\"apriori\": false}", "{\"apriori\": true, \"test\": \"contrasts of fMRI activity\", \"sample\": 24, \"alpha\": 0.002, \"power\": 0.8, \"es\": null, \"es_metric\": null, \"notes\": \"A priori power analysis is reported with sample size, power, and alpha. The test is contrasts of fMRI activity, but the specific effect size/metric is not provided in the sentence.\"}", 
-"{\"apriori\": true, \"test\": null, \"sample\": null, \"alpha\": null, \"power\": null, \"es\": null, \"es_metric\": null, \"notes\": \"A priori power analysis reported, but no specific parameters (test type, sample size, alpha, power, effect size, effect size metric) are provided in the sentence.\"}", 
-"{\"apriori\": true, \"test\": null, \"sample\": 72, \"alpha\": 0.05, \"power\": 0.8, \"es\": null, \"es_metric\": null, \"notes\": \"A priori power analysis reported using effect size from previous study, with sample size, power, and alpha, but test type and specific effect size/metric are not given.\"}"
-), class = "ellmer_output")), class = c("metacheck_llm", "data.frame"
-), row.names = c(NA, -9L), llm = list(system_prompt = "Does this sentence report an a priori power analysis? If so, return the test, sample size, critical alpha criterion, power level, effect size and effect size metric plus any other relevant parameters, in JSON format like:\n{\n  \"apriori\": true, \n  \"test\": \"paired samples t-test\", \n  \"sample\": 20, \n  \"alpha\": 0.05, \n  \"power\": 0.8, \n  \"es\": 0.4, \n  \"es_metric\": \"cohen's D\"\n}\nIf not, return {\"apriori\": false}\nAnswer only in valid JSON format, starting with { and ending with }.", 
-    model = "openai/gpt-4.1"))
+"0956797615588467", "0956797615588467", "0956797615588467", "0956797615588467"
+), header = c("General Discussion", "Analysis and Results", "Participants", 
+"Participants", "Memory-reactivation task.", "Statistical analysis.", 
+"Statistical analysis.", "Internet study", "Power analysis and sample size.", 
+"Power analysis and sample size.", "Power analysis and sample size.", 
+"Internet study", "Discussion"), section_type = c("discussion", 
+"results", "method", "method", "method", "method", "method", 
+"method", "method", "method", "method", "results", "discussion"
+), answer = structure(c("{\"apriori\": false}", "{\"apriori\": false}", 
+"{\n  \"apriori\": true\n}", "{\n  \"apriori\": true, \n  \"test\": \"t-test\", \n  \"sample\": 7, \n  \"alpha\": 0.05, \n  \"power\": 0.95\n}", 
+"{\"apriori\": false}", "{\n  \"apriori\": true, \n  \"test\": \"two-sample t-test\", \n  \"sample\": 26, \n  \"alpha\": 0.05, \n  \"power\": 0.8\n}", 
+"{\n  \"apriori\": true, \n  \"test\": \"t-test\", \n  \"sample\": 18, \n  \"alpha\": 0.05, \n  \"power\": 0.8\n}", 
+"{\n  \"apriori\": true, \n  \"test\": null, \n  \"sample\": 13500, \n  \"alpha\": 0.05, \n  \"power\": 0.98, \n  \"es\": 0.07, \n  \"es_metric\": null\n}", 
+"{\n  \"apriori\": true, \n  \"test\": \"fMRI activity contrast\", \n  \"sample\": 24, \n  \"alpha\": 0.002, \n  \"power\": 0.8\n}", 
+"{\"apriori\": true}", "{\n  \"apriori\": true, \n  \"test\": null, \n  \"sample\": 72, \n  \"alpha\": 0.05, \n  \"power\": 0.8, \n  \"es\": null, \n  \"es_metric\": null\n}", 
+"{\"apriori\": false}", "{\"apriori\": false}"), class = "ellmer_output")), row.names = c(NA, 
+-13L), class = c("metacheck_llm", "data.frame"), llm = list(system_prompt = "Does this sentence report an a priori power analysis? If so, return the test, sample size, critical alpha criterion, power level, effect size and effect size metric plus any other relevant parameters, in JSON format like:\n{\n  \"apriori\": true, \n  \"test\": \"paired samples t-test\", \n  \"sample\": 20, \n  \"alpha\": 0.05, \n  \"power\": 0.8, \n  \"es\": 0.4, \n  \"es_metric\": \"cohen's D\"\n}\nIf not, return {\"apriori\": false}\nAnswer only in valid JSON format, starting with { and ending with }.", 
+    model = "groq/llama-3.3-70b-versatile", type = NULL))
 
 ```
 
@@ -375,7 +338,7 @@ The `llm()` function makes a separate query [^parallel] for each row in a data f
 llm_max_calls(30)
 ```
 
-[^parallel]: Using the parallel functions in ellmer can be more efficient, but currently doesn't do a good job of associating structured  output to the input text when input may have 0+ outputs.
+[^parallel]: Using the parallel functions in ellmer can be more efficient, but currently doesn't do a good job of associating structured output to the input text when input may have 0+ outputs.
 
 ## OSF Functions
 
@@ -406,7 +369,7 @@ However, all of the `osf_***()` functions fix IDs for you and handle duplicate I
 Get basic information about OSF links, such as the name, description, osf_type (nodes, files, preprints, registrations, users, set to "private" if you don't have authorisation to view it, and "invalid" if the ), whether it is public
 
 ```{r}
-info <- osf_retrieve(links[1:6, ])
+info <- osf_retrieve(links[1:6, "text"])
 
 info[, c("text","osf_id", "osf_type", "public", "category")]
 ```
@@ -426,10 +389,6 @@ The function `osf_api_calls()` lets you reset and retrieve the number of API cal
 ```{r}
 sum(all_contents$osf_type == "nodes")
 ```
-
-::: {.callout-note}
-The OSF API does not (yet) have a way to find out what type of thing a URL represents, so we may have to make a few API calls to figure out if a URL represents a node, a file, a preprint, a preregistration, a user, or is an invalid URL (e.g., a typo or an object that has been deleted). 
-:::
 
 ### Download OSF Files
 

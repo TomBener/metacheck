@@ -13,7 +13,7 @@
 
     <a class="navbar-brand me-2" href="../index.html">metacheck</a>
 
-    <small class="nav-text text-danger me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="In-development version">0.0.1.9002</small>
+    <small class="nav-text text-danger me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="In-development version">0.0.1.0</small>
 
 
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -66,19 +66,19 @@
     <div class="section level2">
     <h2 id="ref-examples">Examples<a class="anchor" aria-label="anchor" href="#ref-examples"></a></h2>
     <div class="sourceCode"><pre class="sourceCode r"><code><span class="r-in"><span><span class="fu">github_links</span><span class="op">(</span><span class="va">psychsci</span><span class="op">)</span></span></span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;"># A tibble: 10 × 8</span></span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>    text_id section_id paragraph_id text              page_number paper_id header</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>      <span style="color: #949494; font-style: italic;">&lt;int&gt;</span>      <span style="color: #949494; font-style: italic;">&lt;int&gt;</span>        <span style="color: #949494; font-style: italic;">&lt;int&gt;</span> <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>                   <span style="color: #949494; font-style: italic;">&lt;int&gt;</span> <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>    <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span> </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 1</span>      66          6           21 https://github.c…           3 0956797… Method</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 2</span>     178          8           39 https://github.c…           6 0956797… Proce…</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 3</span>     322         15           71 https://github.c…          11 0956797… Fundi…</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 4</span>     295         18           80 github.com/Spaak…          13 0956797… Open …</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 5</span>      62          6           20 https://github.c…           3 0956797… Open …</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 6</span>      99         10           29 github.com/kobor…           5 0956797… Proce…</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 7</span>     262         23           70 jmobrien/SpecCur…           8 0956797… Trans…</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 8</span>      52          5           16 .com/robloughnan            3 0956797… Open …</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 9</span>     419         18          112 giacomobignardi/…          15 0956797… Open …</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">10</span>     419         18          112 tree/main                  15 0956797… Open …</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;"># A tibble: 10 × 9</span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>    text_id paragraph_id section_id text    page_number paper_id formatted header</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>      <span style="color: #949494; font-style: italic;">&lt;int&gt;</span>        <span style="color: #949494; font-style: italic;">&lt;int&gt;</span>      <span style="color: #949494; font-style: italic;">&lt;int&gt;</span> <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>         <span style="color: #949494; font-style: italic;">&lt;int&gt;</span> <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>    <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>     <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span> </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 1</span>      42           14          3 https:…          <span style="color: #BB0000;">NA</span> 0956797… <span style="color: #BB0000;">NA</span>        <span style="color: #949494;">"</span>Meth…</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 2</span>     160           38          9 https:…          <span style="color: #BB0000;">NA</span> 0956797… <span style="color: #BB0000;">NA</span>        <span style="color: #949494;">"</span>Proc…</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 3</span>     298           80         19 https:…          <span style="color: #BB0000;">NA</span> 0956797… <span style="color: #BB0000;">NA</span>        <span style="color: #949494;">""</span>    </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 4</span>     285           79         15 github…          <span style="color: #BB0000;">NA</span> 0956797… <span style="color: #BB0000;">NA</span>        <span style="color: #949494;">"</span>Fund…</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 5</span>      45           14          3 https:…          <span style="color: #BB0000;">NA</span> 0956797… <span style="color: #BB0000;">NA</span>        <span style="color: #949494;">"</span>Open…</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 6</span>      82           30          9 github…          <span style="color: #BB0000;">NA</span> 0956797… <span style="color: #BB0000;">NA</span>        <span style="color: #949494;">"</span>DNAm…</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 7</span>     227           88         31 jmobri…          <span style="color: #BB0000;">NA</span> 0956797… <span style="color: #BB0000;">NA</span>        <span style="color: #949494;">"</span>Open…</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 8</span>      40           10          3 .com/r…          <span style="color: #BB0000;">NA</span> 0956797… <span style="color: #BB0000;">NA</span>        <span style="color: #949494;">"</span>Open…</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 9</span>     396          112         24 giacom…          <span style="color: #BB0000;">NA</span> 0956797… <span style="color: #BB0000;">NA</span>        <span style="color: #949494;">"</span>Open…</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">10</span>     396          112         24 tree/m…          <span style="color: #BB0000;">NA</span> 0956797… <span style="color: #BB0000;">NA</span>        <span style="color: #949494;">"</span>Open…</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;"># ℹ 1 more variable: section_type &lt;chr&gt;</span></span>
 </code></pre></div>
     </div>

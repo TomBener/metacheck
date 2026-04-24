@@ -54,7 +54,7 @@ paper <- psychsci$`09567976221082938`
 
 links <- aspredicted_links(paper)
 
-prereg <- aspredicted_retrieve(links)
+prereg <- aspredicted_retrieve(links, id_col = "text")
 ```
 
 ```{r}
@@ -100,9 +100,8 @@ It might in addition be useful to retrieve the corresponding section in the arti
 # match "sample" or "# particip..."
 regex_sample <- "\\bsample\\b|\\d+\\s+particip\\w+"
 
-# get full paragraphs only from the method section
-sample <- search_text(paper, regex_sample, 
-                      section = "method", 
+# get full paragraphs 
+sample <- search_text(paper, regex_sample,
                       return= "paragraph")
 
 sample$text |> cat("> ", x = _)
@@ -118,13 +117,12 @@ We see that the the authors planned to test 10 mongoose lemurs, but one didn't f
 
 Alternatively, we can use an LLM to compare the preregistration with the text in the manuscript. This is more costly (both financially and ecologically) but it is possible and might work better, given the flexible ways people discuss sample sizes in manuscripts. 
 
-We can use an overinclusive search for any paragraphs that contain the strings "sample", "subject" or "particip" from the method and results sections. We can further narrow this down by including only paragraphs that contain a number (including the word forms for small numbers).
+We can use an overinclusive search for any paragraphs that contain the strings "sample", "subject" or "particip". We can further narrow this down by including only paragraphs that contain a number (including the word forms for small numbers).
 
 ```{r}
 regex_sample <- "subject|sample|particip"
 regex_numbers <- "[0-9]|one|two|three|four|five|six|seven|eight|nine|ten"
 methres <- search_text(paper, regex_sample,
-                       section = c("method", "results"), 
                        return = "paragraph") |>
   search_text(regex_numbers, return = "paragraph")
 ```
@@ -163,7 +161,7 @@ The use of AI to interpret deviations is convenient, but **can't replace human j
 #| results: 'asis'
 paper <- psychsci$`0956797621991548`
 links <- aspredicted_links(paper)
-prereg <- aspredicted_retrieve(links)
+prereg <- aspredicted_retrieve(links, id_col = "text")
 
 #sample size
 prereg_sample_size <- unique(prereg$AP_sample_size)
@@ -177,7 +175,6 @@ prereg_sample_size |> cat("> ", x = _)
 regex_sample <- "subject|sample|particip"
 regex_numbers <- "[0-9]|one|two|three|four|five|six|seven|eight|nine|ten"
 methres <- search_text(paper, regex_sample,
-                       section = c("method", "results"), 
                        return = "paragraph") |>
   search_text(regex_numbers, return = "paragraph")
 
@@ -195,7 +192,6 @@ llm_response$answer |> cat("> ", x = _)
 regex_sample <- "\\bsample\\b|\\d+\\s+particip\\w+"
 
 sample <- search_text(paper, regex_sample, 
-                      section = "method", 
                       return= "paragraph")
 
 sample$text |> cat("> ", x = _)
@@ -216,7 +212,7 @@ aspredicted_sample <- function(paper, use_llm = FALSE) {
   if (nrow(links) == 0) return(list())
   
   # get prereg data from AsPredicted
-  prereg <- aspredicted_retrieve(links)
+  prereg <- aspredicted_retrieve(links, id_col = "text")
   if (nrow(prereg) == 0 | is.null(prereg$AP_sample_size)) {
     return(list())
   }
@@ -226,7 +222,6 @@ aspredicted_sample <- function(paper, use_llm = FALSE) {
   # check paper for possible sample paragraphs
   regex_sample <- "\\bsample\\b|\\d+\\s+particip\\w+"
   sample <- search_text(paper, regex_sample, 
-                        section = "method", 
                         return= "paragraph")
   
   # check LLM only if requested
@@ -241,7 +236,6 @@ aspredicted_sample <- function(paper, use_llm = FALSE) {
     regex_sample <- "subject|sample|particip"
     regex_numbers <- "[0-9]|one|two|three|four|five|six|seven|eight|nine|ten"
     methres <- search_text(paper, regex_sample,
-                           section = c("method", "results"), 
                            return = "paragraph") |>
       search_text(regex_numbers, return = "paragraph")
     

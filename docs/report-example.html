@@ -6,7 +6,6 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="Daniel Lakens &amp; Lisa DeBruine">
 
 <title>MetaCheck Report</title>
 <style>
@@ -4872,12 +4871,6 @@ color: #333;
   
   <div class="quarto-title-meta column-page-left">
 
-      <div>
-      <div class="quarto-title-meta-heading">Author</div>
-      <div class="quarto-title-meta-contents">
-               <p>Daniel Lakens &amp; Lisa DeBruine </p>
-            </div>
-    </div>
       
     
       
@@ -4914,30 +4907,28 @@ color: #333;
   <li><a href="#summary" id="toc-summary" class="nav-link active" data-scroll-target="#summary">Summary</a></li>
   <li><a href="#general-modules" id="toc-general-modules" class="nav-link" data-scroll-target="#general-modules">General Modules</a>
   <ul class="collapse">
-  <li><a href="#coi-check" id="toc-coi-check" class="nav-link" data-scroll-target="#coi-check">⚠️ COI Check</a></li>
   <li><a href="#funding-check" id="toc-funding-check" class="nav-link" data-scroll-target="#funding-check">⚠️ Funding Check</a></li>
   <li><a href="#open-practices-check" id="toc-open-practices-check" class="nav-link" data-scroll-target="#open-practices-check">✅️ Open Practices Check</a></li>
+  <li><a href="#coi-check" id="toc-coi-check" class="nav-link" data-scroll-target="#coi-check">✅️ COI Check</a></li>
   </ul></li>
   <li><a href="#method-modules" id="toc-method-modules" class="nav-link" data-scroll-target="#method-modules">Method Modules</a>
   <ul class="collapse">
-  <li><a href="#randomization-and-causal-claims" id="toc-randomization-and-causal-claims" class="nav-link" data-scroll-target="#randomization-and-causal-claims">✅️ Randomization and Causal Claims</a></li>
-  <li><a href="#power-analysis-check" id="toc-power-analysis-check" class="nav-link" data-scroll-target="#power-analysis-check">✅️ Power Analysis Check</a></li>
-  <li><a href="#preregistration-check" id="toc-preregistration-check" class="nav-link" data-scroll-target="#preregistration-check">ℹ️ Preregistration Check</a></li>
+  <li><a href="#power-analysis-check" id="toc-power-analysis-check" class="nav-link" data-scroll-target="#power-analysis-check">⚠️ Power Analysis Check</a></li>
   </ul></li>
   <li><a href="#results-modules" id="toc-results-modules" class="nav-link" data-scroll-target="#results-modules">Results Modules</a>
   <ul class="collapse">
   <li><a href="#exact-p-values" id="toc-exact-p-values" class="nav-link" data-scroll-target="#exact-p-values">⚠️ Exact P-Values</a></li>
   <li><a href="#marginal-significance" id="toc-marginal-significance" class="nav-link" data-scroll-target="#marginal-significance">⚠️ Marginal Significance</a></li>
-  <li><a href="#effect-sizes-in-t-tests-and-f-tests" id="toc-effect-sizes-in-t-tests-and-f-tests" class="nav-link" data-scroll-target="#effect-sizes-in-t-tests-and-f-tests">⚠️ Effect Sizes in t-tests and F-tests</a></li>
   <li><a href="#statcheck" id="toc-statcheck" class="nav-link" data-scroll-target="#statcheck">⚠️ StatCheck</a></li>
   <li><a href="#non-significant-p-value-check" id="toc-non-significant-p-value-check" class="nav-link" data-scroll-target="#non-significant-p-value-check">🔍 Non-Significant P Value Check</a></li>
+  <li><a href="#effect-sizes-in-t-tests-and-f-tests" id="toc-effect-sizes-in-t-tests-and-f-tests" class="nav-link" data-scroll-target="#effect-sizes-in-t-tests-and-f-tests">🔍 Effect Sizes in t-tests and F-tests</a></li>
   <li><a href="#repository-check" id="toc-repository-check" class="nav-link" data-scroll-target="#repository-check">🔍 Repository Check</a></li>
   <li><a href="#code-check" id="toc-code-check" class="nav-link" data-scroll-target="#code-check">🔍 Code Check</a></li>
   </ul></li>
   <li><a href="#reference-modules" id="toc-reference-modules" class="nav-link" data-scroll-target="#reference-modules">Reference Modules</a>
   <ul class="collapse">
-  <li><a href="#doi-check" id="toc-doi-check" class="nav-link" data-scroll-target="#doi-check">🔍 DOI Check</a></li>
   <li><a href="#reference-accuracy" id="toc-reference-accuracy" class="nav-link" data-scroll-target="#reference-accuracy">🔍 Reference Accuracy</a></li>
+  <li><a href="#replication-check" id="toc-replication-check" class="nav-link" data-scroll-target="#replication-check">ℹ️ Replication Check</a></li>
   <li><a href="#retractionwatch" id="toc-retractionwatch" class="nav-link" data-scroll-target="#retractionwatch">ℹ️ RetractionWatch</a></li>
   <li><a href="#check-pubpeer-comments" id="toc-check-pubpeer-comments" class="nav-link" data-scroll-target="#check-pubpeer-comments">ℹ️ Check PubPeer Comments</a></li>
   <li><a href="#summarise-references" id="toc-summarise-references" class="nav-link" data-scroll-target="#summarise-references">ℹ️ Summarise References</a></li>
@@ -4976,9 +4967,9 @@ summary { color: #333; }
 .quarto-dark summary { color: #CCC; }
 </style>
 <div id="info">
-<p><a href="http://www.scienceverse.org/metacheck">MetaCheck</a> version 0.0.0.9069<br>
-Report Created: 2026-02-15<br>
-<!-- doi, if exists --></p>
+<p><a href="http://www.scienceverse.org/metacheck">MetaCheck</a> version 0.0.1.9003<br>
+Report Created: 2026-04-17<br>
+NA <!-- doi, if exists --></p>
 </div>
 <p><a href="https://www.scienceverse.org/metacheck/">Metacheck</a> is a tool that screens scientific manuscripts and aims to identify potential issues for improvement, thereby guiding researchers towards best practices. Metacheck is developed to help researchers correctly and completely report statistical results, automatically retrieve possible relevant information about citations, and improve how researchers share data, code, and preregistrations.</p>
 <div class="callout callout-style-default callout-tip callout-titled" title="Learn More">
@@ -5002,37 +4993,28 @@ Report Created: 2026-02-15<br>
 <section id="summary" class="level2">
 <h2 class="anchored" data-anchor-id="summary">Summary</h2>
 <ul>
-<li>⚠️ <a href="#coi-check" class="red">COI Check</a>: No conflict of interest statement was detected.<br>
-</li>
 <li>⚠️ <a href="#funding-check" class="red">Funding Check</a>: No funding statement was detected.<br>
 </li>
 <li>✅️ <a href="#open-practices-check" class="green">Open Practices Check</a>: Shared data and code detected.<br>
 </li>
-<li>✅️ <a href="#randomization-and-causal-claims" class="green">Randomization and Causal Claims</a>:
-<ul>
-<li>We identified 1 sentence describing randomization.</li>
-<li>No causal claims were observed in the title.</li>
-<li>No causal claims were observed in the abstract.<br>
+<li>✅️ <a href="#coi-check" class="green">COI Check</a>: A conflict of interest statement was detected.<br>
 </li>
-</ul></li>
-<li>✅️ <a href="#power-analysis-check" class="green">Power Analysis Check</a>: We detected 1 potential power analysis.<br>
-</li>
-<li>ℹ️ <a href="#preregistration-check" class="info">Preregistration Check</a>: We found 2 preregistrations.<br>
+<li>⚠️ <a href="#power-analysis-check" class="red">Power Analysis Check</a>: We detected 2 potential power analyses.<br>
 </li>
 <li>⚠️ <a href="#exact-p-values" class="red">Exact P-Values</a>: We found 1 imprecise <em>p</em> value out of 3 detected.<br>
 </li>
 <li>⚠️ <a href="#marginal-significance" class="red">Marginal Significance</a>: You described 2 effects with terms related to ‘marginally significant’.<br>
 </li>
-<li>⚠️ <a href="#effect-sizes-in-t-tests-and-f-tests" class="red">Effect Sizes in t-tests and F-tests</a>: We found 1 t-test and/or F-test where effect sizes are not reported.<br>
-</li>
 <li>⚠️ <a href="#statcheck" class="red">StatCheck</a>: 1 possible error in t-tests or F-tests<br>
 </li>
 <li>🔍 <a href="#non-significant-p-value-check" class="yellow">Non-Significant P Value Check</a>: We found 2 non-significant p values that should be checked for appropriate interpretation.<br>
 </li>
+<li>🔍 <a href="#effect-sizes-in-t-tests-and-f-tests" class="yellow">Effect Sizes in t-tests and F-tests</a>: We found 1 t-test and/or F-test where effect sizes are not reported.<br>
+</li>
 <li>🔍 <a href="#repository-check" class="yellow">Repository Check</a>:
 <ul>
-<li>We found 13 files in 3 repositories.</li>
-<li>We found 0 README files and 3 repositories without READMEs.</li>
+<li>We found 9 files in 3 repositories.</li>
+<li>We found 1 README file and 2 repositories without READMEs.</li>
 <li>We found 1 archive file.<br>
 </li>
 </ul></li>
@@ -5045,24 +5027,24 @@ Report Created: 2026-02-15<br>
 <li>Libraries/imports were loaded in multiple places.<br>
 </li>
 </ul></li>
-<li>🔍 <a href="#doi-check" class="yellow">DOI Check</a>: We checked 1 reference in CrossRef and found 1 missing DOI.<br>
+<li>🔍 <a href="#reference-accuracy" class="yellow">Reference Accuracy</a>: We checked 5 references in CrossRef and found entries for 4.<br>
 </li>
-<li>🔍 <a href="#reference-accuracy" class="yellow">Reference Accuracy</a>: We checked 4 references with DOIs in CrossRef and found matches for 2.<br>
+<li>ℹ️ <a href="#replication-check" class="info">Replication Check</a>: We found 1 replication for 1 original you cited.<br>
 </li>
 <li>ℹ️ <a href="#retractionwatch" class="info">RetractionWatch</a>: You cited 1 article in the RetractionWatch database.<br>
 </li>
 <li>ℹ️ <a href="#check-pubpeer-comments" class="info">Check PubPeer Comments</a>: You cited 1 reference with comments in PubPeer.<br>
 </li>
-<li>ℹ️ <a href="#summarise-references" class="info">Summarise References</a>: Summary information provided for 4 references<br>
+<li>ℹ️ <a href="#summarise-references" class="info">Summarise References</a>: Summary information provided for 5 references<br>
 </li>
-<li>⚪️ <a href="#replication-check" class="na">Replication Check</a>: No citations to articles in the FLoRA database were found.</li>
+<li>☠️ <a href="#causal_claims" class="fail">causal_claims</a>: This module failed to run</li>
 </ul>
 </section>
 <section id="general-modules" class="level2">
 <h2 class="anchored" data-anchor-id="general-modules">General Modules</h2>
-<section id="coi-check" class="level3 red">
-<h3 class="red anchored" data-anchor-id="coi-check">⚠️ COI Check</h3>
-<p>No conflict of interest statement was detected. Consider adding one.</p>
+<section id="funding-check" class="level3 red">
+<h3 class="red anchored" data-anchor-id="funding-check">⚠️ Funding Check</h3>
+<p>No funding statement was detected. Consider adding one.</p>
 <div class="callout callout-style-default callout-note callout-titled" title="How It Works">
 <div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-2-contents" aria-controls="callout-2" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
@@ -5074,29 +5056,6 @@ Report Created: 2026-02-15<br>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
 <div id="callout-2" class="callout-2-contents callout-collapse collapse">
-<div class="callout-body-container callout-body">
-<p>Identify and extract Conflicts of Interest (COI) statements.</p>
-<p>The COI Check module uses regular expressions to check sentences for words related to conflict of interest statements. It will return the sentences in which the conflict of interest statement was found.</p>
-<p>The function incorporates code from <a href="https://github.com/serghiou/rtransparent">rtransparent</a>, which is no longer maintained. For their validation, see <a href="https://doi.org/10.1371/journal.pbio.3001107">the paper</a>.</p>
-<p>This module was developed by Daniel Lakens</p>
-</div>
-</div>
-</div>
-</section>
-<section id="funding-check" class="level3 red">
-<h3 class="red anchored" data-anchor-id="funding-check">⚠️ Funding Check</h3>
-<p>No funding statement was detected. Consider adding one.</p>
-<div class="callout callout-style-default callout-note callout-titled" title="How It Works">
-<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-3-contents" aria-controls="callout-3" aria-expanded="false" aria-label="Toggle callout">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Note</span>How It Works
-</div>
-<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
-</div>
-<div id="callout-3" class="callout-3-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
 <p>Identify and extract funding statements.</p>
 <p>The Funding Check module uses regular expressions to check sentences for words related to funding statements. It will return the sentences in which the conflict of interest statement was found.</p>
@@ -5116,12 +5075,51 @@ View detailed feedback
 <div>
 <p>Data was openly shared for this article, based on the following text:</p>
 <blockquote class="blockquote">
-<p>Data is also available from <a href="https://osf.io/5tbm9" class="uri">https://osf.io/5tbm9</a> and code is also available from <a href="https://osf.io/629bx" class="uri">https://osf.io/629bx</a>.</p>
+<p>Data is also available from https://osf.io/5tbm9 and code is also available from https://osf.io/629bx.</p>
 </blockquote>
 <p>Code was openly shared for this article, based on the following text:</p>
 <blockquote class="blockquote">
-<p>Data and analysis code is available on GitHub from <a href="https://github.com/Lakens/to_err_is_human" class="uri">https://github.com/Lakens/to_err_is_human</a> and from <a href="https://researchbox.org/4377" class="uri">https://researchbox.org/4377</a>.</p>
+<p>Data and analysis code is available on GitHub from https://github.com/Lakens/to_err_is_human and from https://researchbox.org/4377.</p>
 </blockquote>
+</div>
+</details>
+<div class="callout callout-style-default callout-note callout-titled" title="How It Works">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-3-contents" aria-controls="callout-3" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>How It Works
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-3" class="callout-3-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>This module incorporates ODDPub into metacheck. ODDPub is a text mining algorithm that detects which publications disseminated Open Data or Open Code together with the publication.</p>
+<p>The Open Practices Check runs Open Data Detection in Publications (ODDPub). ODDPub searches for text expressions that indicate that an article shared Open Data or Open Code together with the publication. More information on the package can be found at <a href="https://github.com/quest-bih/oddpub" class="uri">https://github.com/quest-bih/oddpub</a>. The module only returns whether open data and code is found (the original package offers more fine-grained results). The tool was validated in the biomedical literature, see <a href="https://osf.io/yv5rx/" class="uri">https://osf.io/yv5rx/</a>.</p>
+<p>ODDPub was developed by Nico Riedel, Vladislav Nachev, Miriam Kip, and Evgeny Bobrov at the QUEST Center for Transforming Biomedical Research, Berlin Institute of Health. <a href="https://doi.org/10.5334/dsj-2020-042" class="uri">https://doi.org/10.5334/dsj-2020-042</a></p>
+<p>It might miss open data and code declarations when the words used in the manuscript are not in the pattern that ODDPub searches for, or when the repositories are not in the ODDpub code (e.g., ResearchBox).</p>
+<p>From ODDPub: “To validate the algorithm, we manually screened a sample of 792 publications that were randomly selected from PubMed. On this validation dataset, our algorithm detects Open Data publications with a sensitivity of 0.73 and specificity of 0.97.”</p>
+<p>This module was developed by Daniel Lakens</p>
+</div>
+</div>
+</div>
+</section>
+<section id="coi-check" class="level3 green">
+<h3 class="green anchored" data-anchor-id="coi-check">✅️ COI Check</h3>
+<p>A conflict of interest statement was detected.</p>
+<details>
+<summary>
+View detailed feedback
+</summary>
+<div>
+<p>The following conflict of interest statement was detected.</p>
+<div class="cell">
+<div class="cell-output-display">
+<div class="datatables html-widget html-fill-item" id="htmlwidget-625b5afe9a3715e8be16" style="width:100%;height:auto;"></div>
+<script type="application/json" data-for="htmlwidget-625b5afe9a3715e8be16">{"x":{"filter":"none","vertical":false,"data":[["The authors declare a conflict of interest."]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th><\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"dom":"t","autoWidth":true,"ordering":false,"pageLength":2,"columnDefs":[{"name":"","targets":0}],"order":[],"orderClasses":false,"lengthMenu":[2,10,25,50,100]}},"evals":[],"jsHooks":[]}</script>
+</div>
+</div>
 </div>
 </details>
 <div class="callout callout-style-default callout-note callout-titled" title="How It Works">
@@ -5136,10 +5134,9 @@ View detailed feedback
 </div>
 <div id="callout-4" class="callout-4-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
-<p>This module incorporates ODDPub into metacheck. ODDPub is a text mining algorithm that detects which publications disseminated Open Data or Open Code together with the publication.</p>
-<p>The Open Practices Check runs Open Data Detection in Publications (ODDPub). ODDPub searches for text expressions that indicate that an article shared Open Data or Open Code together with the publication. More information on the package can be found at <a href="https://github.com/quest-bih/oddpub" class="uri">https://github.com/quest-bih/oddpub</a>. The module only returns whether open data and code is found (the original package offers more fine-grained results). The tool was validated in the biomedical literature, see <a href="https://osf.io/yv5rx/" class="uri">https://osf.io/yv5rx/</a>.</p>
-<p>ODDPub was developed by Nico Riedel, Vladislav Nachev, Miriam Kip, and Evgeny Bobrov at the QUEST Center for Transforming Biomedical Research, Berlin Institute of Health. <a href="https://doi.org/10.5334/dsj-2020-042" class="uri">https://doi.org/10.5334/dsj-2020-042</a></p>
-<p>It might miss open data and code declarations when the words used in the manuscript are not in the pattern that ODDPub searches for, or when the repositories are not in the ODDpub code (e.g., ResearchBox).</p>
+<p>Identify and extract Conflicts of Interest (COI) statements.</p>
+<p>The COI Check module uses regular expressions to check sentences for words related to conflict of interest statements. It will return the sentences in which the conflict of interest statement was found.</p>
+<p>The function incorporates code from <a href="https://github.com/serghiou/rtransparent">rtransparent</a>, which is no longer maintained. For their validation, see <a href="https://doi.org/10.1371/journal.pbio.3001107">the paper</a>.</p>
 <p>This module was developed by Daniel Lakens</p>
 </div>
 </div>
@@ -5148,39 +5145,27 @@ View detailed feedback
 </section>
 <section id="method-modules" class="level2">
 <h2 class="anchored" data-anchor-id="method-modules">Method Modules</h2>
-<section id="randomization-and-causal-claims" class="level3 green">
-<h3 class="green anchored" data-anchor-id="randomization-and-causal-claims">✅️ Randomization and Causal Claims</h3>
-<ul>
-<li>We identified 1 sentence describing randomization.</li>
-<li>No causal claims were observed in the title.</li>
-<li>No causal claims were observed in the abstract.</li>
-</ul>
+<section id="power-analysis-check" class="level3 red">
+<h3 class="red anchored" data-anchor-id="power-analysis-check">⚠️ Power Analysis Check</h3>
+<p>We detected 2 potential power analyses.</p>
 <details>
 <summary>
 View detailed feedback
 </summary>
 <div>
-<p>Journal Article Reporting Standards require details about randomization procedures, or how possible bias due to non-randomization is mitigated. This information is often not reported. Furthermore, researchers sometimes make causal claims that are not warranted, for example because there was no random assignment to conditions. This module checks how (non)randomization is reported, and checks for causal claims in the title and abstract. Researchers are asked to double check whether this information is reported completely and correctly.</p>
-<section id="randomization" class="level4">
-<h4 class="anchored" data-anchor-id="randomization">Randomization</h4>
-<p>We identified 1 sentence describing randomization.</p>
+<p>Some essential information could not be detected: alpha_level, effect_size, effect_size_metric</p>
 <div class="cell">
 <div class="cell-output-display">
-<div class="datatables html-widget html-fill-item" id="htmlwidget-7c76b9e4d8bdb5c51881" style="width:100%;height:auto;"></div>
-<script type="application/json" data-for="htmlwidget-7c76b9e4d8bdb5c51881">{"x":{"filter":"none","vertical":false,"data":[["We randomly assigned 50 scientists to a condition where their manuscript was automatically checked for errors, and 50 scientists to a control condition with a checklist."]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th><\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"dom":"t","autoWidth":true,"ordering":false,"pageLength":2,"columnDefs":[{"name":"","targets":0}],"order":[],"orderClasses":false,"lengthMenu":[2,10,25,50,100]}},"evals":[],"jsHooks":[]}</script>
+<div class="datatables html-widget html-fill-item" id="htmlwidget-6cc5dc90784db13e6195" style="width:100%;height:auto;"></div>
+<script type="application/json" data-for="htmlwidget-6cc5dc90784db13e6195">{"x":{"filter":"none","vertical":false,"data":[[1,2],["sensitivity","apriori"],["other","t-test"],[50,50],[null,0.05],[0.8,0.8],[0.5,null],["Cohen's d",null],["other","R (pwr package)"]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th>power_<wbr>id<\/th>\n      <th>power_<wbr>type<\/th>\n      <th>statistical_<wbr>test<\/th>\n      <th>sample_<wbr>size<\/th>\n      <th>alpha_<wbr>level<\/th>\n      <th>power<\/th>\n      <th>effect_<wbr>size<\/th>\n      <th>effect_<wbr>size_<wbr>metric<\/th>\n      <th>software<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"dom":"t","autoWidth":true,"ordering":false,"pageLength":5,"columnDefs":[{"className":"dt-right","targets":[0,3,4,5,6]},{"name":"power_<wbr>id","targets":0},{"name":"power_<wbr>type","targets":1},{"name":"statistical_<wbr>test","targets":2},{"name":"sample_<wbr>size","targets":3},{"name":"alpha_<wbr>level","targets":4},{"name":"power","targets":5},{"name":"effect_<wbr>size","targets":6},{"name":"effect_<wbr>size_<wbr>metric","targets":7},{"name":"software","targets":8}],"order":[],"orderClasses":false,"lengthMenu":[5,10,25,50,100]}},"evals":[],"jsHooks":[]}</script>
 </div>
 </div>
-<p>If this was a study that contained random assignment to conditions, the journal article reporting standards (JARS) ask that you describe the following:</p>
-<ol type="1">
-<li><p>Random assignment method: Procedure used to generate the random assignment sequence, including details of any restriction (e.g., blocking, stratification)</p></li>
-<li><p>Random assignment concealment: Whether sequence was concealed until interventions were assigned</p></li>
-<li><p>Random assignment implementation: Who generated the assignment sequence, who enrolled participants, who assigned participants to groups</p></li>
-</ol>
-</section>
-<section id="causal-claims" class="level4">
-<h4 class="anchored" data-anchor-id="causal-claims">Causal Claims</h4>
-<p>No causal claims were observed in the title.</p>
-<p>No causal claims were observed in the abstract.</p>
+<div class="cell">
+<div class="cell-output-display">
+<div class="datatables html-widget html-fill-item" id="htmlwidget-7a33659ee7fb5ed47249" style="width:100%;height:auto;"></div>
+<script type="application/json" data-for="htmlwidget-7a33659ee7fb5ed47249">{"x":{"filter":"none","vertical":false,"data":[["1","2"],["We conducted a <strong>sensitivity<\/strong> <strong>power<\/strong> analysis 2 to determine that a Cohen's d of 0.50 is the smallest effect size that we could detect with N=50 participants in each group and 80% <strong>power<\/strong>.","pwr::pwr.t.test(n = 50, <strong>power<\/strong> = 0.8, alternative = \"greater\")"]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th>power_<wbr>id<\/th>\n      <th>text<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"dom":"<'top' p>","autoWidth":true,"ordering":false,"pageLength":1,"columnDefs":[{"name":"power_<wbr>id","targets":0},{"name":"text","targets":1}],"order":[],"orderClasses":false,"lengthMenu":[1,10,25,50,100]}},"evals":[],"jsHooks":[]}</script>
+</div>
+</div>
 <div class="callout callout-style-default callout-tip callout-titled" title="Learn More">
 <div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-5-contents" aria-controls="callout-5" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
@@ -5192,70 +5177,6 @@ View detailed feedback
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
 <div id="callout-5" class="callout-5-contents callout-collapse collapse">
-<div class="callout-body-container callout-body">
-<p>For advice on how to make causal claims, and when not to, see:</p>
-<p>Antonakis J, Bendahan S, Jacquart P, Lalive R (2010). “On making causal claims: A review and recommendations.” <em>The Leadership Quarterly</em>, <b>21</b>(6), 1086–1120. <a href="https://doi.org/10.1016/j.leaqua.2010.10.010">doi:10.1016/j.leaqua.2010.10.010</a>.</p>
-<p>Grosz M, Rohrer J, Thoemmes F (2020). “The Taboo Against Explicit Causal Inference in Nonexperimental Psychology.” <em>Perspectives on Psychological Science</em>, <b>15</b>(5), 1243–1255. <a href="https://doi.org/10.1177/1745691620921521">doi:10.1177/1745691620921521</a>.</p>
-<p>For the APA journal articles reporting standards, see <a href="https://apastyle.apa.org/jars" class="uri">https://apastyle.apa.org/jars</a></p>
-</div>
-</div>
-</div>
-</section>
-</div>
-</details>
-<div class="callout callout-style-default callout-note callout-titled" title="How It Works">
-<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-6-contents" aria-controls="callout-6" aria-expanded="false" aria-label="Toggle callout">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Note</span>How It Works
-</div>
-<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
-</div>
-<div id="callout-6" class="callout-6-contents callout-collapse collapse">
-<div class="callout-body-container callout-body">
-<p>Aims to identify the presence of random assignment, and lists sentences that make causal claims in title or abstract.</p>
-<p>The Randomization and Causal Claims Check first uses regular expressions to check whether the manuscript contains a statement about randomization to conditions. Subsequently, it sends the title and abstract to a <a href="https://github.com/rasoulnorouzi/causal_relation_miner">machine learning classifier developed by Rasoul Norouzi</a> that runs on <a href="https://huggingface.co/spaces/lakens/causal_sentences">HuggingFace</a>. Causal statements are identified. Researchers are recommended to double check if causal statements are warranted, especially if no sentences describing randomization were detected.</p>
-<p>The regular expressions can miss statements about randomization, or incorrectly assume there is a sentence describing randomization. The module can’t evaluate if the causal statements that are identified are warranted or not, and it only reminds users to double-check.</p>
-<p>If you want to improve the detection of sentences describing randomization, or otherwise improve the module, reach out to the Metacheck development team.</p>
-<p>This module was developed by Daniel Lakens</p>
-</div>
-</div>
-</div>
-</section>
-<section id="power-analysis-check" class="level3 green">
-<h3 class="green anchored" data-anchor-id="power-analysis-check">✅️ Power Analysis Check</h3>
-<p>We detected 1 potential power analysis.</p>
-<details>
-<summary>
-View detailed feedback
-</summary>
-<div>
-<p>All essential information could be detected.</p>
-<div class="cell">
-<div class="cell-output-display">
-<div class="datatables html-widget html-fill-item" id="htmlwidget-94e2798739921d39d50f" style="width:100%;height:auto;"></div>
-<script type="application/json" data-for="htmlwidget-94e2798739921d39d50f">{"x":{"filter":"none","vertical":false,"data":[["sensitivity"],["t-test"],[50],[0.05],[0.8],[0.5],["Cohen's d"],["G*Power"]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th>power_<wbr>type<\/th>\n      <th>statistical_<wbr>test<\/th>\n      <th>sample_<wbr>size<\/th>\n      <th>alpha_<wbr>level<\/th>\n      <th>power<\/th>\n      <th>effect_<wbr>size<\/th>\n      <th>effect_<wbr>size_<wbr>metric<\/th>\n      <th>software<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"dom":"t","autoWidth":true,"ordering":false,"pageLength":5,"columnDefs":[{"className":"dt-right","targets":[2,3,4,5]},{"name":"power_<wbr>type","targets":0},{"name":"statistical_<wbr>test","targets":1},{"name":"sample_<wbr>size","targets":2},{"name":"alpha_<wbr>level","targets":3},{"name":"power","targets":4},{"name":"effect_<wbr>size","targets":5},{"name":"effect_<wbr>size_<wbr>metric","targets":6},{"name":"software","targets":7}],"order":[],"orderClasses":false,"lengthMenu":[5,10,25,50,100]}},"evals":[],"jsHooks":[]}</script>
-</div>
-</div>
-<div class="cell">
-<div class="cell-output-display">
-<div class="datatables html-widget html-fill-item" id="htmlwidget-e46ab79082b1da1df1a6" style="width:100%;height:auto;"></div>
-<script type="application/json" data-for="htmlwidget-e46ab79082b1da1df1a6">{"x":{"filter":"none","vertical":false,"data":[["In this study we examine whether automated checks reduce the amount of errors that researchers make in scientific manuscripts. This study was preregistered at <https://osf.io/48ncu> and on AsPredicted at <https://aspredicted.org/by8i8v.pdf>. We randomly assigned 50 scientists to a condition where their manuscript was automatically checked for errors, and 50 scientists to a control condition with a checklist. Scientists had the opportunity to make changes to their manuscript based on the feedback of the tool. We subsequently coded all manuscripts for mistakes, and counted the total number of mistakes. We also measured the expertise of researchers (in years) to explore whether the automated tool would be more useful, the less research experience researchers had. We also asked researchers to rate how useful they found the checklist or app on a scale from 1 (not at all) to 7 (extremely useful). Data and analysis code is available on GitHub from <https://github.com/Lakens/to_err_is_human> and from <https://researchbox.org/4377>. Data is also available from <https://osf.io/5tbm9> and code is also available from <https://osf.io/629bx>. We conducted a <strong>sensitivity<\/strong> <strong>power<\/strong> analysis to determine that a Cohen's d of 0.50 is the smallest effect size that we could detect with 50 participants in each group and 80% <strong>power<\/strong>. On average researchers in the experimental (app) condition made fewer mistakes (M = 9.12) than researchers in the control (checklist) condition (M = 10.9), t(97.7) = 2.9, p = 0.005, d = 0.59."]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th>text<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"dom":"t","autoWidth":true,"ordering":false,"pageLength":1,"columnDefs":[{"name":"text","targets":0}],"order":[],"orderClasses":false,"lengthMenu":[1,10,25,50,100]}},"evals":[],"jsHooks":[]}</script>
-</div>
-</div>
-<div class="callout callout-style-default callout-tip callout-titled" title="Learn More">
-<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-7-contents" aria-controls="callout-7" aria-expanded="false" aria-label="Toggle callout">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Tip</span>Learn More
-</div>
-<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
-</div>
-<div id="callout-7" class="callout-7-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
 <p>Power analyses need to contain the following information to be interpretable: the type of power analysis, the statistical test, the software used, sample size, critical alpha criterion, power level, effect size, and an effect size metric. In addition, it is recommended to make sure the power analysis is reproducible (by sharing the code, or a screenshot, of the power analysis), and to provide good arguments for why the study was designed to detect an effect of this size.</p>
 <p>For an a-priori power analysis, where the sample size is determined, reporting all information would look like:</p>
@@ -5272,7 +5193,7 @@ View detailed feedback
 </div>
 </details>
 <div class="callout callout-style-default callout-note callout-titled" title="How It Works">
-<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-8-contents" aria-controls="callout-8" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-6-contents" aria-controls="callout-6" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
@@ -5281,98 +5202,12 @@ View detailed feedback
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
-<div id="callout-8" class="callout-8-contents callout-collapse collapse">
+<div id="callout-6" class="callout-6-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
-<p>This module uses a large language module (LLM) to extract information reported in power analyses, including the statistical test, sample size, alpha level, desired level of power,and magnitude and type of effect size.</p>
-<p>If you have not set llm_use(TRUE) and supplied a groq API, the module will return paragraphs that potentially contain power analyses, based on a regular expression search.</p>
+<p>This module uses uses regular expressions to identify sentences that contain a statistical power analysis. If specified by the user, it also uses a large language module (LLM) to extract information reported in power analyses, including the statistical test, sample size, alpha level, desired level of power, and magnitude and type of effect size.</p>
 <p>The Power Analysis Check module uses regular expressions to identify sentences that contain a statistical power analysis. Without the use of an LMM, the module uses regular expressions to classify the power analysis as a-priori, sensitivity or post-hoc. With the use of an LMM, it checks if the power analysis is reported with all required information.</p>
 <p>The regular expressions can miss power analyses, or fail to classify them correctly. The type of power analysis is often difficult to classify, which can easily be solved by explicitly specifying the type of power analysis as ‘a-priori’, ‘sensitivity’, or ‘post-hoc’. Note that ‘post-hoc’ or ‘observed’ power is rarely useful. The LMM can fail to identify information in the paper, and will not have access to information in paragraphs in the paper other than those that contain the word ‘power’. This package was validated by the Metacheck team on articles in Psychological Science.</p>
 <p>This module was developed by Lisa DeBruine, Daniel Lakens and Cristian Mesquida</p>
-</div>
-</div>
-</div>
-</section>
-<section id="preregistration-check" class="level3 info">
-<h3 class="info anchored" data-anchor-id="preregistration-check">ℹ️ Preregistration Check</h3>
-<p>We found 2 preregistrations.</p>
-<details>
-<summary>
-View detailed feedback
-</summary>
-<div>
-<p>We found 2 preregistrations.</p>
-<div class="cell">
-<div class="cell-output-display">
-<div class="datatables html-widget html-fill-item" id="htmlwidget-84544276e0342dad5f3d" style="width:100%;height:auto;"></div>
-<script type="application/json" data-for="htmlwidget-84544276e0342dad5f3d">{"x":{"filter":"none","vertical":false,"data":[["<a href='https://osf.io/48ncu' target='_blank'>48ncu<\/a>","<a href='https://aspredicted.org/by8i8v.pdf' target='_blank'>by8i8v<\/a>"],["Papercheck Test","To err is human"],["OSF Preregistration","AsPredicted"]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th>id<\/th>\n      <th>title<\/th>\n      <th>template<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"dom":"t","autoWidth":true,"ordering":false,"pageLength":2,"columnDefs":[{"name":"id","targets":0},{"name":"title","targets":1},{"name":"template","targets":2}],"order":[],"orderClasses":false,"lengthMenu":[2,10,25,50,100]}},"evals":[],"jsHooks":[]}</script>
-</div>
-</div>
-<p>Meta-scientific research has shown that deviations from preregistrations are often not reported or checked, and that the most common deviations concern the sample size. We recommend manually checking the full preregistration at the links below, and have provided the preregistered sample size.</p>
-<div class="cell">
-<div class="cell-output-display">
-<div class="datatables html-widget html-fill-item" id="htmlwidget-7549de849eedb1471367" style="width:100%;height:auto;"></div>
-<script type="application/json" data-for="htmlwidget-7549de849eedb1471367">{"x":{"filter":"none","vertical":false,"data":[["48ncu","by8i8v"],["We randomly assigned 50 scientists to a condition where their manuscript was automatically checked for errors, and 50 scientists to a control condition with a checklist.","We randomly assigned 50 scientists to a condition where their manuscript was automatically checked for errors, and 50 scientists to a control condition with a checklist."]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th>id<\/th>\n      <th>sample_<wbr>size<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"dom":"t","autoWidth":true,"ordering":false,"pageLength":2,"columnDefs":[{"name":"id","targets":0},{"name":"sample_<wbr>size","targets":1}],"order":[],"orderClasses":false,"lengthMenu":[2,10,25,50,100]}},"evals":[],"jsHooks":[]}</script>
-</div>
-</div>
-<div class="callout callout-style-default callout-tip callout-titled" title="Full Preregistration">
-<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-9-contents" aria-controls="callout-9" aria-expanded="false" aria-label="Toggle callout">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Tip</span>Full Preregistration
-</div>
-<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
-</div>
-<div id="callout-9" class="callout-9-contents callout-collapse collapse">
-<div class="callout-body-container callout-body">
-<div class="cell">
-<div class="cell-output-display">
-<div class="datatables html-widget html-fill-item" id="htmlwidget-0f50506b145d50fdbd03" style="width:100%;height:auto;"></div>
-<script type="application/json" data-for="htmlwidget-0f50506b145d50fdbd03">{"x":{"filter":"none","vertical":false,"data":[["template_name","title","id","link","date_created","date_modified","date_registered","embargo_end_date","ia_url","description","study_type","blinding","study_design_overview","data_collection_started","existing_data_explanation","data_collection_procedures","sample_size","sample_size_rationale","stopping_rule","design_independent_variables","design_dependent_variables","indices","statistical_tests","inference_criteria","data_exclusion_criteria","outliers_and_exclusions","exploratory_analyses","additional_comments","research_questions"],["OSF Preregistration","Papercheck Test","48ncu","https://osf.io/48ncu","2025-11-28T19:14:24.639665","2025-08-05T11:55:35.267689","2025-11-28T19:14:24.608826","NA","https://archive.org/details/osf-registrations-48ncu-v1","Automation can be used to check for errors in scientific manuscripts, and inform authors about possible corrections. In this study we examine the usefulness of metacheck to improve best practices.","Experiment - A researcher randomly assigns treatments to study subjects, this includes field or lab experiments. This is also known as an intervention experiment and includes randomized controlled trials.","No blinding is involved in this study. ","Two conditions. In one, researchers receive automated feedback. In the control condition, they do not receive feedback.","Registration prior to creation of data","","We will include all scientists who are willing to participate. ","We randomly assigned 50 scientists to a condition where their manuscript was automatically checked for errors, and 50 scientists to a control condition with a checklist.","Based on an a-priori power analysis for an independent t-test, with an expected effect size of d = 0.6, an alpha of 0.05, and a desired power of 0.85, we needed to collect at least 50 participants per group. ","We will stop after data from 100 researchers has been collected.","Two conditions. In one, researchers receive automated feedback. In the control condition, they do not receive feedback.","We will code all manuscripts for mistakes, and count the total number of mistakes per manuscript.","","We will perform an independent t-test on the number of mistakes in each group.","We will interpret effects as significant if p &lt; .05","No exclusions are expected.","No missing data is expected.\n","We also measured the expertise of researchers (in years) to explore whether the automated tool would be more useful, the less research experience researchers had. We also asked researchers to rate how useful they found the checklist or app on a scale from 1 (not at all) to 7 (extremely useful).","",null],["AsPredicted","To err is human","by8i8v","https://aspredicted.org/by8i8v.pdf","2025/11/27 23:20 (PT)",null,null,null,null,null,null,null,"Two conditions. In one, researchers receive automated feedback. In the control condition, they do not receive feedback.",null,"No, no data have been collected for this study yet.",null,"We randomly assigned 50 scientists to a condition where their manuscript was automatically checked for errors, and 50 scientists to a control condition with a checklist.",null,null,null,"We will code all manuscripts for mistakes, and count the total number of mistakes per manuscript.",null,"We will perform an independent t-test on the number of mistakes in each group.",null,null,"none are expected.",null,"We also measured the expertise of researchers (in years) to explore whether the automated tool would be more useful, the less research experience researchers had. We also asked researchers to rate how useful they found the checklist or app on a scale from 1 (not at all) to 7 (extremely useful).","Automation can be used to check for errors in scientific manuscripts, and inform authors about possible corrections. In this study we examine the usefulness of metacheck to improve best practices."]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th>Field<\/th>\n      <th>Preregistration 1<\/th>\n      <th>Preregistration 2<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"dom":"<'top' p>","autoWidth":true,"ordering":false,"pageLength":5,"columnDefs":[{"name":"Field","targets":0},{"name":"Preregistration 1","targets":1},{"name":"Preregistration 2","targets":2}],"order":[],"orderClasses":false,"lengthMenu":[5,10,25,50,100]}},"evals":[],"jsHooks":[]}</script>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="callout callout-style-default callout-tip callout-titled" title="Learn More">
-<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-10-contents" aria-controls="callout-10" aria-expanded="false" aria-label="Toggle callout">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Tip</span>Learn More
-</div>
-<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
-</div>
-<div id="callout-10" class="callout-10-contents callout-collapse collapse">
-<div class="callout-body-container callout-body">
-<p>For metascientific articles demonstrating the rate of deviations from preregistrations, see:</p>
-<p>van den Akker O, Bakker M, van Assen M, Pennington C, Verweij L, Elsherif M, Claesen A, Gaillard S, Yeung S, Frankenberger J, Krautter K, Cockcroft J, Kreuer K, Evans T, Heppel F, Schoch S, Korbmacher M, Yamada Y, Albayrak-Aydemir N, Wicherts J (2024). “The potential of preregistration in psychology: Assessing preregistration producibility and preregistration-study consistency.” <em>Psychological Methods</em>. <a href="https://doi.org/10.1037/met0000687">doi:10.1037/met0000687</a>.</p>
-<p>For educational material on how to report deviations from preregistrations, see:</p>
-<p>Lakens, Daniël (2024). “When and How to Deviate From a Preregistration.” <em>Collabra: Psychology</em>, <b>10</b>(1), 117094. <a href="https://doi.org/10.1525/collabra.117094">doi:10.1525/collabra.117094</a>.</p>
-</div>
-</div>
-</div>
-</div>
-</details>
-<div class="callout callout-style-default callout-note callout-titled" title="How It Works">
-<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-11-contents" aria-controls="callout-11" aria-expanded="false" aria-label="Toggle callout">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Note</span>How It Works
-</div>
-<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
-</div>
-<div id="callout-11" class="callout-11-contents callout-collapse collapse">
-<div class="callout-body-container callout-body">
-<p>Retrieve information from preregistrations in a standardised way, and make them easier to check.</p>
-<p>The Preregistration Check module identifies preregistrations on the OSF and AsPredicted based on links in the manuscript, retrieves the preregistration text, and organizes the information into a template. The module then uses regular expressions to identify text from AsPredicted, and the API to retrieve text from the OSF. The information in the preregistration is returned.</p>
-<p>The module can’t extract information from non-structured preregistration templates (i.e., where the preregistration is uploaded in a single text field) and it can’t retrieve information in preregistrations that are stored as text documents on the OSF.</p>
-<p>If you want to extend the package to be able to download information from other preregistration sites, reach out to the Metacheck development team.</p>
-<p>This module was developed by Daniel Lakens and Lisa DeBruine</p>
 </div>
 </div>
 </div>
@@ -5391,12 +5226,12 @@ View detailed feedback
 <p>Reporting <em>p</em> values imprecisely (e.g., <em>p</em> &lt; .05) reduces transparency, reproducibility, and re-use (e.g., in <em>p</em> value meta-analyses). Best practice is to report exact p-values with three decimal places (e.g., <em>p</em> = .032) unless <em>p</em> values are smaller than 0.001, in which case you can use <em>p</em> &lt; .001.</p>
 <div class="cell">
 <div class="cell-output-display">
-<div class="datatables html-widget html-fill-item" id="htmlwidget-2a049c4311ba2b960e5b" style="width:100%;height:auto;"></div>
-<script type="application/json" data-for="htmlwidget-2a049c4311ba2b960e5b">{"x":{"filter":"none","vertical":false,"data":[["p > .05"],["There was no effect of experience on the reduction in errors when using the tool (p > .05), as the correlation was non-significant."]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th>P-Value<\/th>\n      <th>Sentence<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"dom":"t","autoWidth":true,"ordering":false,"pageLength":2,"columnDefs":[{"targets":0,"width":"10%"},{"targets":1,"width":"90%"},{"name":"P-Value","targets":0},{"name":"Sentence","targets":1}],"order":[],"orderClasses":false,"lengthMenu":[2,10,25,50,100]}},"evals":[],"jsHooks":[]}</script>
+<div class="datatables html-widget html-fill-item" id="htmlwidget-b597bcba29f46cbb14a9" style="width:100%;height:auto;"></div>
+<script type="application/json" data-for="htmlwidget-b597bcba29f46cbb14a9">{"x":{"filter":"none","vertical":false,"data":[["p > .05"],["There was no effect of experience on the reduction in errors when using the tool (p > .05), as the correlation was non-significant (Figure 2)."]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th>P-Value<\/th>\n      <th>Text<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"dom":"t","autoWidth":true,"ordering":false,"pageLength":2,"columnDefs":[{"targets":0,"width":"10%"},{"targets":1,"width":"90%"},{"name":"P-Value","targets":0},{"name":"Text","targets":1}],"order":[],"orderClasses":false,"lengthMenu":[2,10,25,50,100]}},"evals":[],"jsHooks":[]}</script>
 </div>
 </div>
 <div class="callout callout-style-default callout-tip callout-titled" title="Learn More">
-<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-12-contents" aria-controls="callout-12" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-7-contents" aria-controls="callout-7" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
@@ -5405,7 +5240,7 @@ View detailed feedback
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
-<div id="callout-12" class="callout-12-contents callout-collapse collapse">
+<div id="callout-7" class="callout-7-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
 <p>The APA manual states: Report exact <em>p</em> values (e.g., <em>p</em> = .031) to two or three decimal places. However, report <em>p</em> values less than .001 as <em>p</em> &lt; .001. However, 2 decimals is too imprecise for many use-cases (e.g., a <em>p</em> value meta-analysis), so report <em>p</em> values with three digits.</p>
 <p>American Psychological Association (2020). <em>Publication manual of the American Psychological Association</em>, 7 edition. American Psychological Association.</p>
@@ -5415,7 +5250,7 @@ View detailed feedback
 </div>
 </details>
 <div class="callout callout-style-default callout-note callout-titled" title="How It Works">
-<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-13-contents" aria-controls="callout-13" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-8-contents" aria-controls="callout-8" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
@@ -5424,7 +5259,7 @@ View detailed feedback
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
-<div id="callout-13" class="callout-13-contents callout-collapse collapse">
+<div id="callout-8" class="callout-8-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
 <p>List any p-values reported with insufficient precision (e.g., p &lt; .05 or p = n.s.)</p>
 <p>This module uses regular expressions to identify p-values. It will flag any values reported as p &gt; ? or p &lt; numbers greater than .001.</p>
@@ -5445,12 +5280,12 @@ View detailed feedback
 <p>You described effects with terms related to ‘marginally significant’. If <em>p</em> values above 0.05 are interpreted as an effect, you inflate the alpha level, and increase the Type 1 error rate. If a <em>p</em> value is higher than the prespecified alpha level, it should be interpreted as a non-significant result.</p>
 <div class="cell">
 <div class="cell-output-display">
-<div class="datatables html-widget html-fill-item" id="htmlwidget-705eebde99364ec94c7f" style="width:100%;height:auto;"></div>
-<script type="application/json" data-for="htmlwidget-705eebde99364ec94c7f">{"x":{"filter":"none","vertical":false,"data":[["abstract","results"],["The paper shows examples of (1) open and closed OSF links; (2a) citation of retracted papers, (2b) citations without a doi, (2c) citations with Pubpeer comments, (2d) citations in the FORTT replication database, and (2e) missing/mismatched/incorrect citations and references; (3a) R files with code on GitHub that do not load libraries in one location, (3b) load files that are not shared in the repository, (3c) lack comments, and (3d) have hard-coded files, (4) imprecise reporting of non-significant pvalues; (5) tests with and without effect sizes, (6) use of \"marginally significant\" to describe non-significant findings, and (7) retrieving information from preregistrations.","On average researchers in the experimental condition found the app marginally significantly more useful (M = 5.06) than researchers in the control condition found the checklist (M = 4.5), t(97.2) = -1.96, p = 0.152."]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th>section<\/th>\n      <th>text<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"dom":"t","autoWidth":true,"ordering":false,"pageLength":2,"columnDefs":[{"name":"section","targets":0},{"name":"text","targets":1}],"order":[],"orderClasses":false,"lengthMenu":[2,10,25,50,100]}},"evals":[],"jsHooks":[]}</script>
+<div class="datatables html-widget html-fill-item" id="htmlwidget-ce7a20e9ca73b8897c52" style="width:100%;height:auto;"></div>
+<script type="application/json" data-for="htmlwidget-ce7a20e9ca73b8897c52">{"x":{"filter":"none","vertical":false,"data":[["The paper shows examples of (1) open and closed OSF links; (2a) citation of retracted papers, (2b) citations without a doi, (2c) citations with Pubpeer comments, (2d) citations in the FLoRA replication database, and (2e) missing/mismatched/incorrect citations and references; (3a) R files with code on GitHub that do not load libraries in one location, (3b) load files that are not shared in the repository, (3c) lack comments, and (3d) have absolute file paths; (4) imprecise reporting of non-significant p-values; (5) tests with and without effect sizes; (6) use of \"marginally significant\" to describe non-significant findings; (7) a power analysis reporting some of the essential attributes; and (8) retrieving information from preregistrations.","On average researchers in the experimental condition found the app marginally significantly more useful (M=5.06) than researchers in the control condition found the checklist (M=4.5), t(97.2)=-1.96, p=0.152."],["Abstract","Results"]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th>Text<\/th>\n      <th>Section Header<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"dom":"t","autoWidth":true,"ordering":false,"pageLength":2,"columnDefs":[{"name":"Text","targets":0},{"name":"Section Header","targets":1}],"order":[],"orderClasses":false,"lengthMenu":[2,10,25,50,100]}},"evals":[],"jsHooks":[]}</script>
 </div>
 </div>
 <div class="callout callout-style-default callout-tip callout-titled" title="Learn More">
-<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-14-contents" aria-controls="callout-14" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-9-contents" aria-controls="callout-9" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
@@ -5459,7 +5294,7 @@ View detailed feedback
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
-<div id="callout-14" class="callout-14-contents callout-collapse collapse">
+<div id="callout-9" class="callout-9-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
 <p>For metascientific articles demonstrating the rate at which non-significant p-values are interpreted as marginally significant, see:</p>
 <p>Olsson-Collentine, A., van Assen, M. MAL, Hartgerink &amp;, J. CH (2019). “The Prevalence of Marginally Significant Results in Psychology Over Time.” <em>Psychological Science</em>, <b>30</b>, 576–586. <a href="https://doi.org/10.1177/0956797619830326">doi:10.1177/0956797619830326</a>.</p>
@@ -5470,7 +5305,7 @@ View detailed feedback
 </div>
 </details>
 <div class="callout callout-style-default callout-note callout-titled" title="How It Works">
-<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-15-contents" aria-controls="callout-15" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-10-contents" aria-controls="callout-10" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
@@ -5479,93 +5314,12 @@ View detailed feedback
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
-<div id="callout-15" class="callout-15-contents callout-collapse collapse">
+<div id="callout-10" class="callout-10-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
 <p>List all sentences that describe an effect as ‘marginally significant’.</p>
 <p>The marginal module searches for regular expressions that match a predefined pattern. The list of terms is a subset of those listed in a <a href="https://web.archive.org/web/20251001114321/https://mchankins.wordpress.com/2013/04/21/still-not-significant-2/">blog post by Matthew Hankins</a>. The module returns all sentences that match terms describing ‘marginally significant’ results.</p>
 <p>Some of the terms identified might not be problematic in some contexts, and there are ways to describe ‘marginal significance’ that are not detected by the module.</p>
 <p>This module was developed by Daniel Lakens</p>
-</div>
-</div>
-</div>
-</section>
-<section id="effect-sizes-in-t-tests-and-f-tests" class="level3 red">
-<h3 class="red anchored" data-anchor-id="effect-sizes-in-t-tests-and-f-tests">⚠️ Effect Sizes in t-tests and F-tests</h3>
-<p>We found 1 t-test and/or F-test where effect sizes are not reported.</p>
-<details>
-<summary>
-View detailed feedback
-</summary>
-<div>
-<p>We recommend checking the sentences below, and add any missing effect sizes.</p>
-<div class="cell">
-<div class="cell-output-display">
-<div class="datatables html-widget html-fill-item" id="htmlwidget-6c466ecf4dd065239eb8" style="width:100%;height:auto;"></div>
-<script type="application/json" data-for="htmlwidget-6c466ecf4dd065239eb8">{"x":{"filter":"none","vertical":false,"data":[["On average researchers in the experimental condition found the app marginally significantly more useful (M = 5.06) than researchers in the control condition found the checklist (M = 4.5), t(97.2) = -1.96, p = 0.152."]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th><\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"dom":"t","autoWidth":true,"ordering":false,"pageLength":2,"columnDefs":[{"name":"","targets":0}],"order":[],"orderClasses":false,"lengthMenu":[2,10,25,50,100]}},"evals":[],"jsHooks":[]}</script>
-</div>
-</div>
-<div class="callout callout-style-default callout-tip callout-titled" title="Learn More">
-<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-16-contents" aria-controls="callout-16" aria-expanded="false" aria-label="Toggle callout">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Tip</span>Learn More
-</div>
-<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
-</div>
-<div id="callout-16" class="callout-16-contents callout-collapse collapse">
-<div class="callout-body-container callout-body">
-<p>For metascientific articles demonstrating that effect sizes are often not reported:</p>
-<ul>
-<li>Peng, C.-Y. J., Chen, L.-T., Chiang, H.-M., &amp; Chiang, Y.-C. (2013). The Impact of APA and AERA Guidelines on Effect Size Reporting. Educational Psychology Review, 25(2), 157–209. doi:<a href="https://doi.org/10.1007/s10648-013-9218-2">10.1007/s10648-013-9218-2</a>.</li>
-</ul>
-<p>For educational material on reporting effect sizes:</p>
-<ul>
-<li><a href="https://matthewbjane.quarto.pub/guide-to-effect-sizes-and-confidence-intervals/">Guide to Effect Sizes and Confidence Intervals</a></li>
-</ul>
-</div>
-</div>
-</div>
-<div class="callout callout-style-default callout-tip callout-titled" title="All detected and assessed stats">
-<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-17-contents" aria-controls="callout-17" aria-expanded="false" aria-label="Toggle callout">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Tip</span>All detected and assessed stats
-</div>
-<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
-</div>
-<div id="callout-17" class="callout-17-contents callout-collapse collapse">
-<div class="callout-body-container callout-body">
-<div class="cell">
-<div class="cell-output-display">
-<div class="datatables html-widget html-fill-item" id="htmlwidget-c45ba83e7fdfe4d3373b" style="width:100%;height:auto;"></div>
-<script type="application/json" data-for="htmlwidget-c45ba83e7fdfe4d3373b">{"x":{"filter":"none","vertical":false,"data":[["On average researchers in the experimental (app) condition made fewer mistakes (M = 9.12) than researchers in the control (checklist) condition (M = 10.9), t(97.7) = 2.9, p = 0.005, d = 0.59.","On average researchers in the experimental condition found the app marginally significantly more useful (M = 5.06) than researchers in the control condition found the checklist (M = 4.5), t(97.2) = -1.96, p = 0.152."],["method","results"],["d = 0.59",null],["t(97.7) = 2.9","t(97.2) = -1.96"],["t-test","t-test"]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th>Sentence<\/th>\n      <th>Section<\/th>\n      <th>Effect Size<\/th>\n      <th>Reported Test<\/th>\n      <th>Test Type<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"dom":"t","autoWidth":true,"ordering":false,"pageLength":2,"columnDefs":[{"name":"Sentence","targets":0},{"name":"Section","targets":1},{"name":"Effect Size","targets":2},{"name":"Reported Test","targets":3},{"name":"Test Type","targets":4}],"order":[],"orderClasses":false,"lengthMenu":[2,10,25,50,100]}},"evals":[],"jsHooks":[]}</script>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</details>
-<div class="callout callout-style-default callout-note callout-titled" title="How It Works">
-<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-18-contents" aria-controls="callout-18" aria-expanded="false" aria-label="Toggle callout">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Note</span>How It Works
-</div>
-<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
-</div>
-<div id="callout-18" class="callout-18-contents callout-collapse collapse">
-<div class="callout-body-container callout-body">
-<p>The Effect Size module checks for effect sizes in t-tests and F-tests.</p>
-<p>The Effect Size check searches for regular expressions that match a predefined pattern. The module was validated on APA reported statistical tests, and might miss effect sizes that were reported in other reporting styles. It was validated by the Metacheck team on papers published in Psychological Science.</p>
-<p>If you want to extend the package to detect effect sizes for additional tests, reach out to the Metacheck development team.</p>
-<p>This module was developed by Daniel Lakens and Lisa DeBruine</p>
 </div>
 </div>
 </div>
@@ -5581,12 +5335,12 @@ View detailed feedback
 <p>We detected possible errors in test statistics. Note that as the accuracy of statcheck has only been validated for <em>t</em>-tests and <em>F</em>-tests. As Metacheck only uses validated modules, we only provide statcheck results for <em>t</em> tests and <em>F</em>-tests.</p>
 <div class="cell">
 <div class="cell-output-display">
-<div class="datatables html-widget html-fill-item" id="htmlwidget-bd8aefa922570b039b6b" style="width:100%;height:auto;"></div>
-<script type="application/json" data-for="htmlwidget-bd8aefa922570b039b6b">{"x":{"filter":"none","vertical":false,"data":[["t(97.2) = -1.96, p = 0.152"],[0.05286],["results"],["On average researchers in the experimental condition found the app marginally significantly more useful (M = 5.06) than researchers in the control condition found the checklist (M = 4.5), t(97.2) = -1.96, p = 0.152."]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th>Text<\/th>\n      <th>Recomputed p<\/th>\n      <th>Section<\/th>\n      <th>Sentence<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"dom":"t","autoWidth":true,"ordering":false,"pageLength":2,"columnDefs":[{"targets":0,"width":"10em"},{"className":"dt-right","targets":1},{"name":"Text","targets":0},{"name":"Recomputed p","targets":1},{"name":"Section","targets":2},{"name":"Sentence","targets":3}],"order":[],"orderClasses":false,"lengthMenu":[2,10,25,50,100]}},"evals":[],"jsHooks":[]}</script>
+<div class="datatables html-widget html-fill-item" id="htmlwidget-8a0dba69cf7e5e648ec8" style="width:100%;height:auto;"></div>
+<script type="application/json" data-for="htmlwidget-8a0dba69cf7e5e648ec8">{"x":{"filter":"none","vertical":false,"data":[["t(97.2)=-1.96, p=0.152"],[0.05286],["On average researchers in the experimental condition found the app marginally significantly more useful (M=5.06) than researchers in the control condition found the checklist (M=4.5), t(97.2)=-1.96, p=0.152."]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th>Text<\/th>\n      <th>Recomputed p<\/th>\n      <th>Sentence<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"dom":"t","autoWidth":true,"ordering":false,"pageLength":2,"columnDefs":[{"targets":0,"width":"10em"},{"className":"dt-right","targets":1},{"name":"Text","targets":0},{"name":"Recomputed p","targets":1},{"name":"Sentence","targets":2}],"order":[],"orderClasses":false,"lengthMenu":[2,10,25,50,100]}},"evals":[],"jsHooks":[]}</script>
 </div>
 </div>
 <div class="callout callout-style-default callout-tip callout-titled" title="Learn More">
-<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-19-contents" aria-controls="callout-19" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-11-contents" aria-controls="callout-11" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
@@ -5595,7 +5349,7 @@ View detailed feedback
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
-<div id="callout-19" class="callout-19-contents callout-collapse collapse">
+<div id="callout-11" class="callout-11-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
 <p>For metascientific research on the validity of statcheck, and it’s usefulness to prevent statistical reporting errors, see:</p>
 <p>Nuijten M, van Assen M, Hartgerink C, Epskamp S, Wicherts J (2017). “The validity of the tool &quot;statcheck&quot; in discovering statistical reporting inconsistencies.” <a href="https://doi.org/10.31234/osf.io/tcxaja">doi:10.31234/osf.io/tcxaja</a>, Preprint.</p>
@@ -5606,7 +5360,7 @@ View detailed feedback
 </div>
 </details>
 <div class="callout callout-style-default callout-note callout-titled" title="How It Works">
-<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-20-contents" aria-controls="callout-20" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-12-contents" aria-controls="callout-12" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
@@ -5615,7 +5369,7 @@ View detailed feedback
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
-<div id="callout-20" class="callout-20-contents callout-collapse collapse">
+<div id="callout-12" class="callout-12-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
 <p>Check consistency of p-values and test statistics</p>
 <p>The Statcheck module runs Statcheck. Statcheck searches for regular expressions that match a predefined pattern, and identifies APA reported statistical tests. More information on the package can be found at <a href="https://github.com/cran/statcheck" class="uri">https://github.com/cran/statcheck</a>. The module only returns Statcheck results for t-tests and F-tests, as these are the only tests which have been validated, see <a href="https://osf.io/preprints/psyarxiv/tcxaj_v1/" class="uri">https://osf.io/preprints/psyarxiv/tcxaj_v1/</a>.</p>
@@ -5639,12 +5393,12 @@ View detailed feedback
 <p>Metacheck does not yet analyze automatically whether sentences which include non-significant p-values are correct, but we recommend manually checking the sentences below for possible misinterpreted non-significant p values.</p>
 <div class="cell">
 <div class="cell-output-display">
-<div class="datatables html-widget html-fill-item" id="htmlwidget-a1bd586f4c9aa306f9e3" style="width:100%;height:auto;"></div>
-<script type="application/json" data-for="htmlwidget-a1bd586f4c9aa306f9e3">{"x":{"filter":"none","vertical":false,"data":[["p = 0.152","p > .05"],["On average researchers in the experimental condition found the app marginally significantly more useful (M = 5.06) than researchers in the control condition found the checklist (M = 4.5), t(97.2) = -1.96, p = 0.152.","There was no effect of experience on the reduction in errors when using the tool (p > .05), as the correlation was non-significant."]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th>Text<\/th>\n      <th>Sentence<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"dom":"t","autoWidth":true,"ordering":false,"pageLength":2,"columnDefs":[{"targets":0,"width":"10%"},{"targets":1,"width":"90%"},{"name":"Text","targets":0},{"name":"Sentence","targets":1}],"order":[],"orderClasses":false,"lengthMenu":[2,10,25,50,100]}},"evals":[],"jsHooks":[]}</script>
+<div class="datatables html-widget html-fill-item" id="htmlwidget-6793701adf6a98d133a4" style="width:100%;height:auto;"></div>
+<script type="application/json" data-for="htmlwidget-6793701adf6a98d133a4">{"x":{"filter":"none","vertical":false,"data":[["p=0.152","p > .05"],["On average researchers in the experimental condition found the app marginally significantly more useful (M=5.06) than researchers in the control condition found the checklist (M=4.5), t(97.2)=-1.96, p=0.152.","There was no effect of experience on the reduction in errors when using the tool (p > .05), as the correlation was non-significant (Figure 2)."]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th>Text<\/th>\n      <th>Sentence<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"dom":"t","autoWidth":true,"ordering":false,"pageLength":2,"columnDefs":[{"targets":0,"width":"10%"},{"targets":1,"width":"90%"},{"name":"Text","targets":0},{"name":"Sentence","targets":1}],"order":[],"orderClasses":false,"lengthMenu":[2,10,25,50,100]}},"evals":[],"jsHooks":[]}</script>
 </div>
 </div>
 <div class="callout callout-style-default callout-tip callout-titled" title="Learn More">
-<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-21-contents" aria-controls="callout-21" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-13-contents" aria-controls="callout-13" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
@@ -5653,7 +5407,7 @@ View detailed feedback
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
-<div id="callout-21" class="callout-21-contents callout-collapse collapse">
+<div id="callout-13" class="callout-13-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
 <p>For metascientific articles demonstrating the rate of misinterpretations of non-significant results is high, see:</p>
 <p>Aczel B, Palfi B, Szollosi A, Kovacs M, Szaszi B, Szecsi P, Zrubka M, Gronau Q, van den Bergh D, Wagenmakers E (2018). “Quantifying Support for the Null Hypothesis in Psychology: An Empirical Investigation.” <em>Advances in Methods and Practices in Psychological Science</em>, <b>1</b>(3), 357–366. <a href="https://doi.org/10.1177/2515245918773742">doi:10.1177/2515245918773742</a>.</p>
@@ -5665,7 +5419,7 @@ View detailed feedback
 </div>
 </details>
 <div class="callout callout-style-default callout-note callout-titled" title="How It Works">
-<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-22-contents" aria-controls="callout-22" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-14-contents" aria-controls="callout-14" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
@@ -5674,7 +5428,7 @@ View detailed feedback
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
-<div id="callout-22" class="callout-22-contents callout-collapse collapse">
+<div id="callout-14" class="callout-14-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
 <p>This module checks for imprecisely reported p values. If p &gt; .05 is detected, it warns for misinterpretations.</p>
 <p>The nonsignificant p-value check searches for regular expressions that match a predefined pattern. The module identifies all p-values in a manuscript and selects those that are not reported to be smaller than or equal to 0.05. It returns all sentences containing non-significant p-values.</p>
@@ -5684,11 +5438,92 @@ View detailed feedback
 </div>
 </div>
 </section>
+<section id="effect-sizes-in-t-tests-and-f-tests" class="level3 yellow">
+<h3 class="yellow anchored" data-anchor-id="effect-sizes-in-t-tests-and-f-tests">🔍 Effect Sizes in t-tests and F-tests</h3>
+<p>We found 1 t-test and/or F-test where effect sizes are not reported.</p>
+<details>
+<summary>
+View detailed feedback
+</summary>
+<div>
+<p>We recommend checking the sentences below, and add any missing effect sizes.</p>
+<div class="cell">
+<div class="cell-output-display">
+<div class="datatables html-widget html-fill-item" id="htmlwidget-3da1a47f057d3a92159c" style="width:100%;height:auto;"></div>
+<script type="application/json" data-for="htmlwidget-3da1a47f057d3a92159c">{"x":{"filter":"none","vertical":false,"data":[["On average researchers in the experimental condition found the app marginally significantly more useful (M=5.06) than researchers in the control condition found the checklist (M=4.5), t(97.2)=-1.96, p=0.152."]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th><\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"dom":"t","autoWidth":true,"ordering":false,"pageLength":2,"columnDefs":[{"name":"","targets":0}],"order":[],"orderClasses":false,"lengthMenu":[2,10,25,50,100]}},"evals":[],"jsHooks":[]}</script>
+</div>
+</div>
+<div class="callout callout-style-default callout-tip callout-titled" title="Learn More">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-15-contents" aria-controls="callout-15" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Learn More
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-15" class="callout-15-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>For metascientific articles demonstrating that effect sizes are often not reported:</p>
+<ul>
+<li>Peng, C.-Y. J., Chen, L.-T., Chiang, H.-M., &amp; Chiang, Y.-C. (2013). The Impact of APA and AERA Guidelines on Effect Size Reporting. Educational Psychology Review, 25(2), 157–209. doi:<a href="https://doi.org/10.1007/s10648-013-9218-2">10.1007/s10648-013-9218-2</a>.</li>
+</ul>
+<p>For educational material on reporting effect sizes:</p>
+<ul>
+<li><a href="https://matthewbjane.quarto.pub/guide-to-effect-sizes-and-confidence-intervals/">Guide to Effect Sizes and Confidence Intervals</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-tip callout-titled" title="All detected and assessed stats">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-16-contents" aria-controls="callout-16" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>All detected and assessed stats
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-16" class="callout-16-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<div class="cell">
+<div class="cell-output-display">
+<div class="datatables html-widget html-fill-item" id="htmlwidget-cf72a18bfaba57fc9dcd" style="width:100%;height:auto;"></div>
+<script type="application/json" data-for="htmlwidget-cf72a18bfaba57fc9dcd">{"x":{"filter":"none","vertical":false,"data":[["On average researchers in the experimental (app) condition made fewer mistakes (M=9.12) than researchers in the control (checklist) condition (M=10.9) t(97.7)=2.9 p=0.005 d=0.59.","On average researchers in the experimental condition found the app marginally significantly more useful (M=5.06) than researchers in the control condition found the checklist (M=4.5), t(97.2)=-1.96, p=0.152."],["d=0.59",null],["t(97.7)=2.9","t(97.2)=-1.96"],["t-test","t-test"]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th>Sentence<\/th>\n      <th>Effect Size<\/th>\n      <th>Reported Test<\/th>\n      <th>Test Type<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"dom":"t","autoWidth":true,"ordering":false,"pageLength":2,"columnDefs":[{"name":"Sentence","targets":0},{"name":"Effect Size","targets":1},{"name":"Reported Test","targets":2},{"name":"Test Type","targets":3}],"order":[],"orderClasses":false,"lengthMenu":[2,10,25,50,100]}},"evals":[],"jsHooks":[]}</script>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</details>
+<div class="callout callout-style-default callout-note callout-titled" title="How It Works">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-17-contents" aria-controls="callout-17" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>How It Works
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-17" class="callout-17-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>The Effect Size module checks for effect sizes in t-tests and F-tests.</p>
+<p>The Effect Size check searches for regular expressions that match a predefined pattern. The module was validated on APA reported statistical tests, and might miss effect sizes that were reported in other reporting styles. It was validated by the Metacheck team on papers published in Psychological Science.</p>
+<p>If you want to extend the package to detect effect sizes for additional tests, reach out to the Metacheck development team.</p>
+<p>This module was developed by Daniel Lakens and Lisa DeBruine</p>
+</div>
+</div>
+</div>
+</section>
 <section id="repository-check" class="level3 yellow">
 <h3 class="yellow anchored" data-anchor-id="repository-check">🔍 Repository Check</h3>
 <ul>
-<li>We found 13 files in 3 repositories.</li>
-<li>We found 0 README files and 3 repositories without READMEs.</li>
+<li>We found 9 files in 3 repositories.</li>
+<li>We found 1 README file and 2 repositories without READMEs.</li>
 <li>We found 1 archive file.</li>
 </ul>
 <details>
@@ -5698,14 +5533,14 @@ View detailed feedback
 <div>
 <div class="cell">
 <div class="cell-output-display">
-<div class="datatables html-widget html-fill-item" id="htmlwidget-330ce9a869b00aee3cef" style="width:100%;height:auto;"></div>
-<script type="application/json" data-for="htmlwidget-330ce9a869b00aee3cef">{"x":{"filter":"none","vertical":false,"data":[["<a href='osf.io/629bx' target='_blank'>osf.io/629bx<\/a>","<a href='https://github.com/Lakens/to_err_is_human' target='_blank'>github.com/Lakens/to_err_is_human<\/a>","<a href='https://researchbox.org/4377' target='_blank'>researchbox.org/4377<\/a>"],["osf","github","researchbox"],[4,2,7],[1,1,5],[2,1,1],[0,0,0],[1,0,0]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th>Repository<\/th>\n      <th>Platform<\/th>\n      <th>All Files<\/th>\n      <th>Data Files<\/th>\n      <th>Code Files<\/th>\n      <th>READMEs<\/th>\n      <th>Archives<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"dom":"t","autoWidth":true,"ordering":false,"pageLength":10,"columnDefs":[{"className":"dt-right","targets":[2,3,4,5,6]},{"name":"Repository","targets":0},{"name":"Platform","targets":1},{"name":"All Files","targets":2},{"name":"Data Files","targets":3},{"name":"Code Files","targets":4},{"name":"READMEs","targets":5},{"name":"Archives","targets":6}],"order":[],"orderClasses":false}},"evals":[],"jsHooks":[]}</script>
+<div class="datatables html-widget html-fill-item" id="htmlwidget-0b0aba25789a99e1f042" style="width:100%;height:auto;"></div>
+<script type="application/json" data-for="htmlwidget-0b0aba25789a99e1f042">{"x":{"filter":"none","vertical":false,"data":[["<a href='osf.io/629bx' target='_blank'>osf.io/629bx<\/a>","<a href='https://github.com/Lakens/to_err_is_human' target='_blank'>github.com/Lakens/to_err_is_human<\/a>","<a href='osf.io/48ncu ' target='_blank'>osf.io/48ncu <\/a>"],["osf","github",null],[4,2,3],[1,1,0],[2,1,1],[0,0,1],[1,0,0]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th>Repository<\/th>\n      <th>Platform<\/th>\n      <th>All Files<\/th>\n      <th>Data Files<\/th>\n      <th>Code Files<\/th>\n      <th>READMEs<\/th>\n      <th>Archives<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"dom":"t","autoWidth":true,"ordering":false,"pageLength":10,"columnDefs":[{"className":"dt-right","targets":[2,3,4,5,6]},{"name":"Repository","targets":0},{"name":"Platform","targets":1},{"name":"All Files","targets":2},{"name":"Data Files","targets":3},{"name":"Code Files","targets":4},{"name":"READMEs","targets":5},{"name":"Archives","targets":6}],"order":[],"orderClasses":false}},"evals":[],"jsHooks":[]}</script>
 </div>
 </div>
 <div class="cell">
 <div class="cell-output-display">
-<div class="datatables html-widget html-fill-item" id="htmlwidget-d9a8a4e7a2d5477798cb" style="width:100%;height:auto;"></div>
-<script type="application/json" data-for="htmlwidget-d9a8a4e7a2d5477798cb">{"x":{"filter":"none","vertical":false,"data":[["osf.io/629bx","osf.io/629bx","osf.io/629bx","osf.io/629bx","https://github.com/Lakens/to_err_is_human","https://github.com/Lakens/to_err_is_human","https://researchbox.org/4377","https://researchbox.org/4377","https://researchbox.org/4377","https://researchbox.org/4377","https://researchbox.org/4377","https://researchbox.org/4377","https://researchbox.org/4377"],["<a href='https://osf.io/download/6935bc117049c887a125cb25/' target='_blank'>bad.R<\/a>","<a href='https://osf.io/download/6935c4679ca0f02ea72a1a31/' target='_blank'>example2.csv<\/a>","<a href='https://osf.io/download/uq347/' target='_blank'>bad.Rmd<\/a>","<a href='https://osf.io/download/6976438ff9da155d0565c720/' target='_blank'>Archive.zip<\/a>","<a href='https://raw.githubusercontent.com/Lakens/to_err_is_human/main/analysis.R' target='_blank'>analysis.R<\/a>","<a href='https://raw.githubusercontent.com/Lakens/to_err_is_human/main/file2.csv' target='_blank'>file2.csv<\/a>","<a href='https://researchbox.org/4377' target='_blank'>Code/Study 1.r<\/a>","<a href='https://researchbox.org/4377' target='_blank'>Codebook/Study 1 - csv - dataset 1.csv___CODEBOOK.csv<\/a>","<a href='https://researchbox.org/4377' target='_blank'>Codebook/Study 1.csv___CODEBOOK.csv<\/a>","<a href='https://researchbox.org/4377' target='_blank'>Data/Study 1 - csv - dataset 1.csv<\/a>","<a href='https://researchbox.org/4377' target='_blank'>Data/Study 1.csv<\/a>","<a href='https://researchbox.org/4377' target='_blank'>Materials/Study 1 - test txt file.txt<\/a>","<a href='https://researchbox.org/4377' target='_blank'>Table of Contents Box #4377.csv<\/a>"],["172 B","5 B","413 B","6.4 kB","306 B","794 B","183 B","96 B","96 B","185 B","185 B","12 B","573 B"],["code","data","code","archive","code","data","code","data","data","data","data","text","data"]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th>Repository<\/th>\n      <th>File<\/th>\n      <th>Size<\/th>\n      <th>Type<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"dom":"<'top' p>","autoWidth":true,"ordering":false,"pageLength":10,"columnDefs":[{"name":"Repository","targets":0},{"name":"File","targets":1},{"name":"Size","targets":2},{"name":"Type","targets":3}],"order":[],"orderClasses":false}},"evals":[],"jsHooks":[]}</script>
+<div class="datatables html-widget html-fill-item" id="htmlwidget-38a11fe7ccc9847cc29c" style="width:100%;height:auto;"></div>
+<script type="application/json" data-for="htmlwidget-38a11fe7ccc9847cc29c">{"x":{"filter":"none","vertical":false,"data":[["osf.io/48ncu ","osf.io/48ncu ","osf.io/48ncu ","osf.io/629bx","osf.io/629bx","osf.io/629bx","osf.io/629bx","https://github.com/Lakens/to_err_is_human","https://github.com/Lakens/to_err_is_human"],["<a href='https://osf.io/download/jz6v5/' target='_blank'>README<\/a>","<a href='https://osf.io/download/6929f4994ce565d35f957294/' target='_blank'>papercheck.png<\/a>","<a href='https://osf.io/download/2y3g5/' target='_blank'>test_script.R<\/a>","<a href='https://osf.io/download/6935bc117049c887a125cb25/' target='_blank'>bad.R<\/a>","<a href='https://osf.io/download/uq347/' target='_blank'>bad.Rmd<\/a>","<a href='https://osf.io/download/6935c4679ca0f02ea72a1a31/' target='_blank'>example2.csv<\/a>","<a href='https://osf.io/download/6976438ff9da155d0565c720/' target='_blank'>Archive.zip<\/a>","<a href='https://raw.githubusercontent.com/Lakens/to_err_is_human/main/analysis.R' target='_blank'>analysis.R<\/a>","<a href='https://raw.githubusercontent.com/Lakens/to_err_is_human/main/file2.csv' target='_blank'>file2.csv<\/a>"],["30 B","1.6 MB","183 B","172 B","413 B","5 B","6.4 kB","306 B","794 B"],["readme","image","code","code","code","data","archive","code","data"]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th>Repository<\/th>\n      <th>File<\/th>\n      <th>Size<\/th>\n      <th>Type<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"dom":"t","autoWidth":true,"ordering":false,"pageLength":10,"columnDefs":[{"name":"Repository","targets":0},{"name":"File","targets":1},{"name":"Size","targets":2},{"name":"Type","targets":3}],"order":[],"orderClasses":false}},"evals":[],"jsHooks":[]}</script>
 </div>
 </div>
 <p>README files are a way to document the contents and structure of a folder, helping users locate the information they need. You can use a README to document changes to a repository, and explain how files are named. Please consider adding a README to each repository.</p>
@@ -5713,7 +5548,7 @@ View detailed feedback
 </div>
 </details>
 <div class="callout callout-style-default callout-note callout-titled" title="How It Works">
-<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-23-contents" aria-controls="callout-23" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-18-contents" aria-controls="callout-18" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
@@ -5722,7 +5557,7 @@ View detailed feedback
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
-<div id="callout-23" class="callout-23-contents callout-collapse collapse">
+<div id="callout-18" class="callout-18-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
 <p>This module retrieves information from repositories.</p>
 <p>The Repository Check module lists files on the OSF, GitHub, and ResearchBox based on links in the manuscript.</p>
@@ -5749,8 +5584,8 @@ View detailed feedback
 <p>Below, we describe some best coding practices and give the results of automatic evaluation of these practices in the code files below. This check may miss things or produce false positives if your scripts are less typical.</p>
 <div class="cell">
 <div class="cell-output-display">
-<div class="datatables html-widget html-fill-item" id="htmlwidget-3f503a4f84bc36838660" style="width:100%;height:auto;"></div>
-<script type="application/json" data-for="htmlwidget-3f503a4f84bc36838660">{"x":{"filter":"none","vertical":false,"data":[["<a href='https://osf.io/download/6935bc117049c887a125cb25/' target='_blank'>bad.R<\/a>","<a href='https://osf.io/download/uq347/' target='_blank'>bad.Rmd<\/a>","<a href='https://raw.githubusercontent.com/Lakens/to_err_is_human/main/analysis.R' target='_blank'>analysis.R<\/a>","<a href='https://researchbox.org/4377' target='_blank'>Code/Study 1.r<\/a>"],["7%","26%","0%","17%"],[0,0,0,1],[1,2,1,1],[12,13,10,null]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th>File Name<\/th>\n      <th>% Comments<\/th>\n      <th>Missing Files<\/th>\n      <th>Absolute Paths<\/th>\n      <th>Code Between Libraries<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"dom":"t","autoWidth":true,"ordering":false,"pageLength":5,"columnDefs":[{"className":"dt-right","targets":[2,3,4]},{"name":"File Name","targets":0},{"name":"% Comments","targets":1},{"name":"Missing Files","targets":2},{"name":"Absolute Paths","targets":3},{"name":"Code Between Libraries","targets":4}],"order":[],"orderClasses":false,"lengthMenu":[5,10,25,50,100]}},"evals":[],"jsHooks":[]}</script>
+<div class="datatables html-widget html-fill-item" id="htmlwidget-7142de665c49906a61cb" style="width:100%;height:auto;"></div>
+<script type="application/json" data-for="htmlwidget-7142de665c49906a61cb">{"x":{"filter":"none","vertical":false,"data":[["<a href='https://osf.io/download/2y3g5/' target='_blank'>test_script.R<\/a>","<a href='https://osf.io/download/6935bc117049c887a125cb25/' target='_blank'>bad.R<\/a>","<a href='https://osf.io/download/uq347/' target='_blank'>bad.Rmd<\/a>","<a href='https://raw.githubusercontent.com/Lakens/to_err_is_human/main/analysis.R' target='_blank'>analysis.R<\/a>"],["17%","7%","26%","0%"],[1,0,0,0],[1,1,2,1],[null,12,13,10]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th>File Name<\/th>\n      <th>% Comments<\/th>\n      <th>Missing Files<\/th>\n      <th>Absolute Paths<\/th>\n      <th>Code Between Libraries<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"dom":"t","autoWidth":true,"ordering":false,"pageLength":5,"columnDefs":[{"className":"dt-right","targets":[2,3,4]},{"name":"File Name","targets":0},{"name":"% Comments","targets":1},{"name":"Missing Files","targets":2},{"name":"Absolute Paths","targets":3},{"name":"Code Between Libraries","targets":4}],"order":[],"orderClasses":false,"lengthMenu":[5,10,25,50,100]}},"evals":[],"jsHooks":[]}</script>
 </div>
 </div>
 <section id="code-comments" class="level4">
@@ -5762,8 +5597,8 @@ View detailed feedback
 <p>The scripts load files, but 1 script loaded 1 file that could not be automatically identified in the repository. Check if the following files are made available, so that others can reproduce your code, or that the files are missing:</p>
 <div class="cell">
 <div class="cell-output-display">
-<div class="datatables html-widget html-fill-item" id="htmlwidget-80a3ff35d41085b39f60" style="width:100%;height:auto;"></div>
-<script type="application/json" data-for="htmlwidget-80a3ff35d41085b39f60">{"x":{"filter":"none","vertical":false,"data":[["Code/Study 1.r"],["file.csv"]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th>File name<\/th>\n      <th>Missing Files<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"dom":"t","autoWidth":true,"ordering":false,"pageLength":5,"columnDefs":[{"name":"File name","targets":0},{"name":"Missing Files","targets":1}],"order":[],"orderClasses":false,"lengthMenu":[5,10,25,50,100]}},"evals":[],"jsHooks":[]}</script>
+<div class="datatables html-widget html-fill-item" id="htmlwidget-eccdb445ca34315f751a" style="width:100%;height:auto;"></div>
+<script type="application/json" data-for="htmlwidget-eccdb445ca34315f751a">{"x":{"filter":"none","vertical":false,"data":[["test_script.R"],["file.csv"]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th>File name<\/th>\n      <th>Missing Files<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"dom":"t","autoWidth":true,"ordering":false,"pageLength":5,"columnDefs":[{"name":"File name","targets":0},{"name":"Missing Files","targets":1}],"order":[],"orderClasses":false,"lengthMenu":[5,10,25,50,100]}},"evals":[],"jsHooks":[]}</script>
 </div>
 </div>
 </section>
@@ -5772,8 +5607,8 @@ View detailed feedback
 <p>Best programming practice is to use relative file paths instead of absolute file paths (e.g., C://Lakens/files) as these folder names do not exist on other computers. The following absolute file paths were found in 4 code files:</p>
 <div class="cell">
 <div class="cell-output-display">
-<div class="datatables html-widget html-fill-item" id="htmlwidget-1e41d7ab5e2e95800b22" style="width:100%;height:auto;"></div>
-<script type="application/json" data-for="htmlwidget-1e41d7ab5e2e95800b22">{"x":{"filter":"none","vertical":false,"data":[["bad.R","bad.Rmd","analysis.R","Code/Study 1.r"],["data <- read_csv(\"C://Lakens/files/example.csv\")","data <- read_csv(\"C://Lakens/files/example.csv\"), data2 <- read_csv(\"C://Lakens/files/example2.csv\")","data_1 <- read.csv(\"C:/path/to/a/file.csv\")","abs_path_pc <- read.csv(\"C:/lisa/file.csv\")"]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th>File name<\/th>\n      <th>Absolute paths found<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"dom":"t","autoWidth":true,"ordering":false,"pageLength":5,"columnDefs":[{"name":"File name","targets":0},{"name":"Absolute paths found","targets":1}],"order":[],"orderClasses":false,"lengthMenu":[5,10,25,50,100]}},"evals":[],"jsHooks":[]}</script>
+<div class="datatables html-widget html-fill-item" id="htmlwidget-05740bcfd6ae3b6d1213" style="width:100%;height:auto;"></div>
+<script type="application/json" data-for="htmlwidget-05740bcfd6ae3b6d1213">{"x":{"filter":"none","vertical":false,"data":[["test_script.R","bad.R","bad.Rmd","analysis.R"],["abs_path_pc <- read.csv(\"C:/lisa/file.csv\")","data <- read_csv(\"C://Lakens/files/example.csv\")","data <- read_csv(\"C://Lakens/files/example.csv\"), data2 <- read_csv(\"C://Lakens/files/example2.csv\")","data_1 <- read.csv(\"C:/path/to/a/file.csv\")"]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th>File name<\/th>\n      <th>Absolute paths found<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"dom":"t","autoWidth":true,"ordering":false,"pageLength":5,"columnDefs":[{"name":"File name","targets":0},{"name":"Absolute paths found","targets":1}],"order":[],"orderClasses":false,"lengthMenu":[5,10,25,50,100]}},"evals":[],"jsHooks":[]}</script>
 </div>
 </div>
 </section>
@@ -5784,7 +5619,7 @@ View detailed feedback
 </div>
 </details>
 <div class="callout callout-style-default callout-note callout-titled" title="How It Works">
-<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-24-contents" aria-controls="callout-24" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-19-contents" aria-controls="callout-19" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
@@ -5793,7 +5628,7 @@ View detailed feedback
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
-<div id="callout-24" class="callout-24-contents callout-collapse collapse">
+<div id="callout-19" class="callout-19-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
 <p>This module retrieves information from repositories checked by repo_check about code files (R, SAS, SPSS, Stata).</p>
 <p>The Code Check module checks R, Rmd, Qmd, SAS, SPSS, and Stata files, using regular expressions to check the code. The regular expression search will detect the number of comments, the lines at which libraries/imports are loaded, attempts to detect absolute paths to files, and lists files that are loaded, and checks if these files are in the repository. The module will return suggestions to improve the code if there are no comments, if libraries/imports are loaded in lines further than 4 lines apart, if files that are loaded are not in the repository, and if absolute file paths are found.</p>
@@ -5807,46 +5642,9 @@ View detailed feedback
 </section>
 <section id="reference-modules" class="level2">
 <h2 class="anchored" data-anchor-id="reference-modules">Reference Modules</h2>
-<section id="doi-check" class="level3 yellow">
-<h3 class="yellow anchored" data-anchor-id="doi-check">🔍 DOI Check</h3>
-<p>We checked 1 reference in CrossRef and found 1 missing DOI.</p>
-<details>
-<summary>
-View detailed feedback
-</summary>
-<div>
-<p>Double check any references listed in the tables below. The match score gives an indication of how good the match was. Many books do not have a DOI or are not listed in CrossRef. Garbled references are usually a result of poor parsing of the paper by grobid; we are working on more accurate alternatives.</p>
-<div class="cell">
-<div class="cell-output-display">
-<div class="datatables html-widget html-fill-item" id="htmlwidget-5680c7ffb0869ddbe5e4" style="width:100%;height:auto;"></div>
-<script type="application/json" data-for="htmlwidget-5680c7ffb0869ddbe5e4">{"x":{"filter":"none","vertical":false,"data":[["<a href='https://doi.org/10.1177/2515245918770963' target='_blank'>doi.org/10.1177/2515245918770963<\/a>"],[69],["Lakens D (2018). &ldquo;Equivalence testing for psychological research.&rdquo; <em>Advances in Methods and Practices in Psychological Science<\/em>, <b>1<\/b>, 259-270."]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th>Found DOI<\/th>\n      <th>Match Score<\/th>\n      <th>Original Reference<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"dom":"t","autoWidth":true,"ordering":false,"pageLength":2,"columnDefs":[{"className":"dt-right","targets":1},{"name":"Found DOI","targets":0},{"name":"Match Score","targets":1},{"name":"Original Reference","targets":2}],"order":[],"orderClasses":false,"lengthMenu":[2,10,25,50,100]}},"evals":[],"jsHooks":[]}</script>
-</div>
-</div>
-</div>
-</details>
-<div class="callout callout-style-default callout-note callout-titled" title="How It Works">
-<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-25-contents" aria-controls="callout-25" aria-expanded="false" aria-label="Toggle callout">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Note</span>How It Works
-</div>
-<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
-</div>
-<div id="callout-25" class="callout-25-contents callout-collapse collapse">
-<div class="callout-body-container callout-body">
-<p>This module checks references for missing DOIs or DOIs with an invalid format.</p>
-<p>This module works by identifying references that do not have a DOI or have a DOI that does not have a valid format. It then looks up these references by title, author and journal or book title in CrossRef. A DOI match is returned for the reference with the highest match above the <code>crossref_min_score</code> (default of 50).</p>
-<p>Carefully check the returned results, as problems with reference import can lead to false positives.</p>
-<p>This module was developed by Daniel Lakens and Lisa DeBruine</p>
-</div>
-</div>
-</div>
-</section>
 <section id="reference-accuracy" class="level3 yellow">
 <h3 class="yellow anchored" data-anchor-id="reference-accuracy">🔍 Reference Accuracy</h3>
-<p>We checked 4 references with DOIs in CrossRef and found matches for 2.</p>
+<p>We checked 5 references in CrossRef and found entries for 4.</p>
 <details>
 <summary>
 View detailed feedback
@@ -5855,20 +5653,38 @@ View detailed feedback
 <p>Double check any references listed in the tables below. This tool has a high false positive rate.</p>
 <div class="cell">
 <div class="cell-output-display">
-<div class="datatables html-widget html-fill-item" id="htmlwidget-2e1079aec4a0abf60f87" style="width:100%;height:auto;"></div>
-<script type="application/json" data-for="htmlwidget-2e1079aec4a0abf60f87">{"x":{"filter":"none","vertical":false,"data":[["Gino F, Wiltermuth SS (2014). &ldquo;Evil Genius? How Dishonesty Can Lead to Greater Creativity.&rdquo; <em>Psychological Science<\/em>, <b>25<\/b>(4), 973-981. <a href=\"https://doi.org/10.1177/0956797614520714\">doi:10.1177/0956797614520714<\/a>.","Smith F (2021). &ldquo;Human error is a symptom of a poor design.&rdquo; <em>Journal of Journals<\/em>, <b>0<\/b>(0), 0. <a href=\"https://doi.org/10.0000/0123456789\">doi:10.0000/0123456789<\/a>."]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th>Unfound Reference<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"dom":"t","autoWidth":true,"ordering":false,"pageLength":2,"columnDefs":[{"targets":0,"width":"5px"},{"name":"Unfound Reference","targets":0}],"order":[],"orderClasses":false,"lengthMenu":[2,10,25,50,100]}},"evals":[],"jsHooks":[]}</script>
+<div class="datatables html-widget html-fill-item" id="htmlwidget-595c24e0cd2fe07866f8" style="width:100%;height:auto;"></div>
+<script type="application/json" data-for="htmlwidget-595c24e0cd2fe07866f8">{"x":{"filter":"none","vertical":false,"data":[["DeBruine, Lisa. 2025. Faux: Simulation for Factorial Designs. Zenodo. https://doi.org/10.5281/zenodo.2669586.","Lakens, Daniël. 2018. \"Equivalence Testing for Psychological Research.\" Advances in Methods and Practices in Psychological Science 1: 259-70."],["10.5281/zenodo.2669586",""],["10.32614/cran.package.faux","10.1177/2515245918770963"]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th>References with Mismatched DOIs<\/th>\n      <th>Original DOI<\/th>\n      <th>CrossRef DOI<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"dom":"t","autoWidth":true,"ordering":false,"pageLength":5,"columnDefs":[{"targets":0,"width":"50%"},{"targets":1,"width":"25%"},{"targets":2,"width":"25%"},{"name":"References with Mismatched DOIs","targets":0},{"name":"Original DOI","targets":1},{"name":"CrossRef DOI","targets":2}],"order":[],"orderClasses":false,"lengthMenu":[5,10,25,50,100]}},"evals":[],"jsHooks":[]}</script>
 </div>
 </div>
 <div class="cell">
 <div class="cell-output-display">
-<div class="datatables html-widget html-fill-item" id="htmlwidget-146e8154ee0e5bc72857" style="width:100%;height:auto;"></div>
-<script type="application/json" data-for="htmlwidget-146e8154ee0e5bc72857">{"x":{"filter":"none","vertical":false,"data":[["D Lakens"],["D Lakens, A Scheel, P Isager"],["Lakens D (2018). &ldquo;Equivalence testing for psychological research.&rdquo; <em>Advances in Methods and Practices in Psychological Science<\/em>, <b>1<\/b>, 259-270."]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th>Original Authors<\/th>\n      <th>CrossRef Authors<\/th>\n      <th>Reference<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"dom":"t","autoWidth":true,"ordering":false,"pageLength":2,"columnDefs":[{"targets":0,"width":"5px"},{"name":"Original Authors","targets":0},{"name":"CrossRef Authors","targets":1},{"name":"Reference","targets":2}],"order":[],"orderClasses":false,"lengthMenu":[2,10,25,50,100]}},"evals":[],"jsHooks":[]}</script>
+<div class="datatables html-widget html-fill-item" id="htmlwidget-49c7b758f49024a0056a" style="width:100%;height:auto;"></div>
+<script type="application/json" data-for="htmlwidget-49c7b758f49024a0056a">{"x":{"filter":"none","vertical":false,"data":[["DeBruine, Lisa. 2025. Faux: Simulation for Factorial Designs. Zenodo. https://doi.org/10.5281/zenodo.2669586."],[2025],[2020]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th>References with Mismatched Years<\/th>\n      <th>Original Year<\/th>\n      <th>CrossRef Year<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"dom":"t","autoWidth":true,"ordering":false,"pageLength":5,"columnDefs":[{"targets":0,"width":"50%"},{"targets":1,"width":"25%"},{"targets":2,"width":"25%"},{"className":"dt-right","targets":[1,2]},{"name":"References with Mismatched Years","targets":0},{"name":"Original Year","targets":1},{"name":"CrossRef Year","targets":2}],"order":[],"orderClasses":false,"lengthMenu":[5,10,25,50,100]}},"evals":[],"jsHooks":[]}</script>
+</div>
+</div>
+<div class="cell">
+<div class="cell-output-display">
+<div class="datatables html-widget html-fill-item" id="htmlwidget-29157a7996fa60d8b2f3" style="width:100%;height:auto;"></div>
+<script type="application/json" data-for="htmlwidget-29157a7996fa60d8b2f3">{"x":{"filter":"none","vertical":false,"data":[["Gino, Francesca, and Scott S. Wiltermuth. 2014. \"Evil Genius? How Dishonesty Can Lead to Greater Creativity.\" Psychological Science 25 (4): 973–81. https://doi.org/10.1177/0956797614520714."],["Evil Genius? How Dishonesty Can Lead to Greater Creativity"],["Retracted: Evil Genius? How Dishonesty Can Lead to Greater Creativity"]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th>References with Mismatched Titles<\/th>\n      <th>Original Title<\/th>\n      <th>CrossRef Title<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"dom":"t","autoWidth":true,"ordering":false,"pageLength":5,"columnDefs":[{"targets":0,"width":"50%"},{"targets":1,"width":"25%"},{"targets":2,"width":"25%"},{"name":"References with Mismatched Titles","targets":0},{"name":"Original Title","targets":1},{"name":"CrossRef Title","targets":2}],"order":[],"orderClasses":false,"lengthMenu":[5,10,25,50,100]}},"evals":[],"jsHooks":[]}</script>
+</div>
+</div>
+<div class="cell">
+<div class="cell-output-display">
+<div class="datatables html-widget html-fill-item" id="htmlwidget-283bfcf9700227087816" style="width:100%;height:auto;"></div>
+<script type="application/json" data-for="htmlwidget-283bfcf9700227087816">{"x":{"filter":"none","vertical":false,"data":[["Lakens, Daniël. 2018. \"Equivalence Testing for Psychological Research.\" Advances in Methods and Practices in Psychological Science 1: 259-70."],["Lakens, Daniël"],["Lakens, Daniel; Scheel, Anne M.; Isager, Peder Mortvedt"]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th>References with Mismatched Authors<\/th>\n      <th>Original Authors<\/th>\n      <th>CrossRef Authors<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"dom":"t","autoWidth":true,"ordering":false,"pageLength":5,"columnDefs":[{"targets":0,"width":"50%"},{"targets":1,"width":"25%"},{"targets":2,"width":"25%"},{"name":"References with Mismatched Authors","targets":0},{"name":"Original Authors","targets":1},{"name":"CrossRef Authors","targets":2}],"order":[],"orderClasses":false,"lengthMenu":[5,10,25,50,100]}},"evals":[],"jsHooks":[]}</script>
+</div>
+</div>
+<div class="cell">
+<div class="cell-output-display">
+<div class="datatables html-widget html-fill-item" id="htmlwidget-e619bf6cfb08b2fed3a1" style="width:100%;height:auto;"></div>
+<script type="application/json" data-for="htmlwidget-e619bf6cfb08b2fed3a1">{"x":{"filter":"none","vertical":false,"data":[["Smith, F. 2021. \"Human Error Is a Symptom of a Poor Design.\" Journal of Journals. https://doi.org/10.0000/0123456789."]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th>References without Matches<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"dom":"t","autoWidth":true,"ordering":false,"pageLength":2,"columnDefs":[{"targets":0,"width":"5px"},{"name":"References without Matches","targets":0}],"order":[],"orderClasses":false,"lengthMenu":[2,10,25,50,100]}},"evals":[],"jsHooks":[]}</script>
 </div>
 </div>
 </div>
 </details>
 <div class="callout callout-style-default callout-note callout-titled" title="How It Works">
-<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-26-contents" aria-controls="callout-26" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-20-contents" aria-controls="callout-20" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
@@ -5877,13 +5693,53 @@ View detailed feedback
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
-<div id="callout-26" class="callout-26-contents callout-collapse collapse">
+<div id="callout-20" class="callout-20-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
 <p>This module checks references for mismatches with CrossRef.</p>
-<p>It looks up the DOIs originally present in your paper (not those found by ref_doi_check) and returns the bibliographic information.</p>
-<p>We then check that the title from your reference section is the same as the retrieved title (ignoring differences in capitalisation) and that all author last names in your reference section are also in the retrieved author list (we do not check first names or order yet). This check is done for all references with crossref entries, including those found by ref_doi_check, if it was previously run.</p>
+<p>This module uses the bib_match table from each paper (this can be added or refreshed using <code>add_bib_match()</code>) to detect possible problems in the reference section.</p>
+<p>We check that the title from your reference section is the same as the retrieved title (ignoring differences in capitalisation) and that all author last names in your reference section are also in the retrieved author list (we do not check first names or order yet). This check is done for all references with crossref entries in the bib_match table.</p>
 <p>Mismatches may be because of problems with our parsing of references from your PDF (we’re working on improving this), incorrect formatting in CrossRef, or minor differences in punctuation.</p>
 <p>This module was developed by Daniel Lakens and Lisa DeBruine</p>
+</div>
+</div>
+</div>
+</section>
+<section id="replication-check" class="level3 info">
+<h3 class="info anchored" data-anchor-id="replication-check">ℹ️ Replication Check</h3>
+<p>We found 1 replication for 1 original you cited.</p>
+<details>
+<summary>
+View detailed feedback
+</summary>
+<div>
+<p>We checked 5 references with DOIs. We found 1 replication for 1 original you cited.</p>
+<p>Check if you are aware of the replication studies, and cite them where appropriate.</p>
+<div class="cell">
+<div class="cell-output-display">
+<div class="datatables html-widget html-fill-item" id="htmlwidget-88bf1ba5d4a5d569ecb5" style="width:100%;height:auto;"></div>
+<script type="application/json" data-for="htmlwidget-88bf1ba5d4a5d569ecb5">{"x":{"filter":"none","vertical":false,"data":[["Eagly, Alice H., and Wendy Wood. 1999. \"The Origins of Sex Differences in Human Behavior: Evolved Dispositions Versus Social Roles.\" American Psychologist 54 (6): 408-23. https://doi.org/10.1037/0003-066x.54.6.408."],["Zhang, L., Lee, A. J., DeBruine, L. M., & Jones, B. C. (2019). Are Sex Differences in Preferences for Physical Attractiveness and Good Earning Capacity in Potential Mates Smaller in Countries With Greater Gender Equality? Evolutionary Psychology, 17(2). <a href='https://doi.org/10.1177/1474704919852921' target='_blank'>doi:10.1177/1474704919852921<\/a>"]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th>Reference<\/th>\n      <th>Replication<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"dom":"t","autoWidth":true,"ordering":false,"pageLength":2,"columnDefs":[{"targets":0,"width":"50%"},{"targets":1,"width":"50%"},{"name":"Reference","targets":0},{"name":"Replication","targets":1}],"order":[],"orderClasses":false,"lengthMenu":[2,10,25,50,100]}},"evals":[],"jsHooks":[]}</script>
+</div>
+</div>
+</div>
+</details>
+<div class="callout callout-style-default callout-note callout-titled" title="How It Works">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-21-contents" aria-controls="callout-21" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>How It Works
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-21" class="callout-21-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>This module checks references and warns for citations of original studies for which replication or reproduction studies exist in the FLoRA database.</p>
+<p>The Replication Check module compares the reference list against studies in the FLoRA (FORRT Library of Replication Attempts) database based on the DOI. If a study in the database is found, a reminder is provided that a replication or reproduction of the original study exists, and should be cited (currently, a warning is provided regardless of whether the replication/reproduction study is already cited).</p>
+<p>The module requires that the reference has a DOI. If you run the ref_doi_check module in a pipeline before this, it will use the enhanced DOI list from that module, otherwise it will only run on references with existing DOIs.</p>
+<p>It is possible the original study was cited for other reasons than the empirical claim tested, or that the replication/reproduction in the FLoRA database is for only one of the studies in the paper, and not the study the authors discuss.</p>
+<p>The database can be manually updated with the <code>FLoRA_update()</code> function. For more information, see <a href="https://forrt.org/FLoRA/" class="uri">https://forrt.org/FLoRA/</a>.</p>
+<p>This module was developed by Daniel Lakens, Lisa DeBruine and Lukas Wallrich</p>
 </div>
 </div>
 </div>
@@ -5896,18 +5752,18 @@ View detailed feedback
 View detailed feedback
 </summary>
 <div>
-<p>We checked 4 references with DOIs. You cited 1 article in the RetractionWatch database.</p>
+<p>We checked 5 references with DOIs. You cited 1 article in the RetractionWatch database.</p>
 <p>Check if you are aware of the replication studies, and cite them where appropriate.</p>
 <div class="cell">
 <div class="cell-output-display">
-<div class="datatables html-widget html-fill-item" id="htmlwidget-ed3ac74d1d035fa71f2c" style="width:100%;height:auto;"></div>
-<script type="application/json" data-for="htmlwidget-ed3ac74d1d035fa71f2c">{"x":{"filter":"none","vertical":false,"data":[["Gino F, Wiltermuth SS (2014). &ldquo;Evil Genius? How Dishonesty Can Lead to Greater Creativity.&rdquo; <em>Psychological Science<\/em>, <b>25<\/b>(4), 973-981. <a href=\"https://doi.org/10.1177/0956797614520714\">doi:10.1177/0956797614520714<\/a>."],["Retraction"]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th>Reference<\/th>\n      <th>RW Type<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"dom":"t","autoWidth":true,"ordering":false,"pageLength":2,"columnDefs":[{"name":"Reference","targets":0},{"name":"RW Type","targets":1}],"order":[],"orderClasses":false,"lengthMenu":[2,10,25,50,100]}},"evals":[],"jsHooks":[]}</script>
+<div class="datatables html-widget html-fill-item" id="htmlwidget-1679982ebf9dd5d5d8a9" style="width:100%;height:auto;"></div>
+<script type="application/json" data-for="htmlwidget-1679982ebf9dd5d5d8a9">{"x":{"filter":"none","vertical":false,"data":[["Gino, Francesca, and Scott S. Wiltermuth. 2014. \"Evil Genius? How Dishonesty Can Lead to Greater Creativity.\" Psychological Science 25 (4): 973–81. https://doi.org/10.1177/0956797614520714."],["Retraction"]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th>Reference<\/th>\n      <th>RW Type<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"dom":"t","autoWidth":true,"ordering":false,"pageLength":2,"columnDefs":[{"name":"Reference","targets":0},{"name":"RW Type","targets":1}],"order":[],"orderClasses":false,"lengthMenu":[2,10,25,50,100]}},"evals":[],"jsHooks":[]}</script>
 </div>
 </div>
 </div>
 </details>
 <div class="callout callout-style-default callout-note callout-titled" title="How It Works">
-<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-27-contents" aria-controls="callout-27" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-22-contents" aria-controls="callout-22" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
@@ -5916,7 +5772,7 @@ View detailed feedback
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
-<div id="callout-27" class="callout-27-contents callout-collapse collapse">
+<div id="callout-22" class="callout-22-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
 <p>This module checks references and warns for citations in the RetractionWatch Database.</p>
 <p>The RetractionWatch Check module compares the reference list against studies in the RetractionWatch database based on the DOI. If a study in the database is found, a reminder is provided that the study was retracted, has an expression of concern, or a correction.</p>
@@ -5936,18 +5792,18 @@ View detailed feedback
 View detailed feedback
 </summary>
 <div>
-<p>We checked 4 references with DOIs. You cited 1 reference with comments in PubPeer.</p>
+<p>We checked 5 references with DOIs. You cited 1 reference with comments in PubPeer.</p>
 <p>Pubpeer is a platform for post-publication peer review. We have filtered out Pubpeer comments by ‘Statcheck’. You can check out the comments by visiting the URLs below:</p>
 <div class="cell">
 <div class="cell-output-display">
-<div class="datatables html-widget html-fill-item" id="htmlwidget-314d2a749928fba25227" style="width:100%;height:auto;"></div>
-<script type="application/json" data-for="htmlwidget-314d2a749928fba25227">{"x":{"filter":"none","vertical":false,"data":[["Gino F, Wiltermuth SS (2014). &ldquo;Evil Genius? How Dishonesty Can Lead to Greater Creativity.&rdquo; <em>Psychological Science<\/em>, <b>25<\/b>(4), 973-981. <a href=\"https://doi.org/10.1177/0956797614520714\">doi:10.1177/0956797614520714<\/a>."],[3],["<a href='https://pubpeer.com/publications/3FA648ECECB88454C91804F09E2E56' target='_blank'>link<\/a>"]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th>Reference<\/th>\n      <th>Comments<\/th>\n      <th>PubPeer Link<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"dom":"t","autoWidth":true,"ordering":false,"pageLength":2,"columnDefs":[{"className":"dt-right","targets":1},{"name":"Reference","targets":0},{"name":"Comments","targets":1},{"name":"PubPeer Link","targets":2}],"order":[],"orderClasses":false,"lengthMenu":[2,10,25,50,100]}},"evals":[],"jsHooks":[]}</script>
+<div class="datatables html-widget html-fill-item" id="htmlwidget-aabf05b91731f4652565" style="width:100%;height:auto;"></div>
+<script type="application/json" data-for="htmlwidget-aabf05b91731f4652565">{"x":{"filter":"none","vertical":false,"data":[["Gino, Francesca, and Scott S. Wiltermuth. 2014. \"Evil Genius? How Dishonesty Can Lead to Greater Creativity.\" Psychological Science 25 (4): 973–81. https://doi.org/10.1177/0956797614520714."],[3],["<a href='https://pubpeer.com/publications/3FA648ECECB88454C91804F09E2E56' target='_blank'>link<\/a>"]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th>Reference<\/th>\n      <th>Comments<\/th>\n      <th>PubPeer Link<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"dom":"t","autoWidth":true,"ordering":false,"pageLength":2,"columnDefs":[{"className":"dt-right","targets":1},{"name":"Reference","targets":0},{"name":"Comments","targets":1},{"name":"PubPeer Link","targets":2}],"order":[],"orderClasses":false,"lengthMenu":[2,10,25,50,100]}},"evals":[],"jsHooks":[]}</script>
 </div>
 </div>
 </div>
 </details>
 <div class="callout callout-style-default callout-note callout-titled" title="How It Works">
-<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-28-contents" aria-controls="callout-28" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-23-contents" aria-controls="callout-23" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
@@ -5956,7 +5812,7 @@ View detailed feedback
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
-<div id="callout-28" class="callout-28-contents callout-collapse collapse">
+<div id="callout-23" class="callout-23-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
 <p>This module checks references and warns for citations that have comments on pubpeer (excluding Statcheck comments).</p>
 <p>The PubPeer module uses the PubPeer API to check for each reference that has a DOI whether there are comments on the post-publication peer review platform. If comments are found, a link to the comments is provided. Comments by ‘Statcheck’ on PubPeer are ignored, see https://retractionwatch.com/2016/09/02/heres-why-more-than-50000-psychology-studies-are-about-to-have-pubpeer-entries/.</p>
@@ -5969,22 +5825,23 @@ View detailed feedback
 </section>
 <section id="summarise-references" class="level3 info">
 <h3 class="info anchored" data-anchor-id="summarise-references">ℹ️ Summarise References</h3>
-<p>Summary information provided for 4 references</p>
+<p>Summary information provided for 5 references</p>
 <details>
 <summary>
 View detailed feedback
 </summary>
 <div>
+<p>See the specific reports above for details.</p>
 <div class="cell">
 <div class="cell-output-display">
-<div class="datatables html-widget html-fill-item" id="htmlwidget-1d5851496229e11e7358" style="width:100%;height:auto;"></div>
-<script type="application/json" data-for="htmlwidget-1d5851496229e11e7358">{"x":{"filter":"none","vertical":false,"data":[["Gangestad SW, Thornhill R (1998). &ldquo;Menstrual cycle variation in women's preferences for the scent of symmetrical men.&rdquo; <em>Proceedings Biological Sciences<\/em>, <b>22<\/b>, 927-933. <a href=\"https://doi.org/10.1098/rspb.1998.0380\">doi:10.1098/rspb.1998.0380<\/a>.","Gino F, Wiltermuth SS (2014). &ldquo;Evil Genius? How Dishonesty Can Lead to Greater Creativity.&rdquo; <em>Psychological Science<\/em>, <b>25<\/b>(4), 973-981. <a href=\"https://doi.org/10.1177/0956797614520714\">doi:10.1177/0956797614520714<\/a>.","Smith F (2021). &ldquo;Human error is a symptom of a poor design.&rdquo; <em>Journal of Journals<\/em>, <b>0<\/b>(0), 0. <a href=\"https://doi.org/10.0000/0123456789\">doi:10.0000/0123456789<\/a>.","Lakens D (2018). &ldquo;Equivalence testing for psychological research.&rdquo; <em>Advances in Methods and Practices in Psychological Science<\/em>, <b>1<\/b>, 259-270."],["10.1098/rspb.1998.0380","10.1177/0956797614520714","10.0000/0123456789","10.1177/2515245918770963"],[null,null,null,true],[false,true,true,false],[false,false,false,false],[false,false,false,true],[null,3,null,null],[null,"https://pubpeer.com/publications/3FA648ECECB88454C91804F09E2E56",null,null],[null,"Statcheck , Aioliops Novaeguineae, Hoya Camphorifolia",null,null],[null,"Retraction",null,null]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th>ref<\/th>\n      <th>crossref_<wbr>DOI<\/th>\n      <th>crossref_<wbr>doi_<wbr>found<\/th>\n      <th>crossref_<wbr>ref_<wbr>not_<wbr>found<\/th>\n      <th>crossref_<wbr>title_<wbr>mismatch<\/th>\n      <th>crossref_<wbr>author_<wbr>mismatch<\/th>\n      <th>pubpeer_<wbr>total_<wbr>comments<\/th>\n      <th>pubpeer_<wbr>url<\/th>\n      <th>pubpeer_<wbr>users<\/th>\n      <th>retractionwatch<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"dom":"t","autoWidth":true,"ordering":false,"pageLength":10,"columnDefs":[{"className":"dt-right","targets":6},{"name":"ref","targets":0},{"name":"crossref_<wbr>DOI","targets":1},{"name":"crossref_<wbr>doi_<wbr>found","targets":2},{"name":"crossref_<wbr>ref_<wbr>not_<wbr>found","targets":3},{"name":"crossref_<wbr>title_<wbr>mismatch","targets":4},{"name":"crossref_<wbr>author_<wbr>mismatch","targets":5},{"name":"pubpeer_<wbr>total_<wbr>comments","targets":6},{"name":"pubpeer_<wbr>url","targets":7},{"name":"pubpeer_<wbr>users","targets":8},{"name":"retractionwatch","targets":9}],"order":[],"orderClasses":false}},"evals":[],"jsHooks":[]}</script>
+<div class="datatables html-widget html-fill-item" id="htmlwidget-1251f08ea8d317c0b2e3" style="width:100%;height:auto;"></div>
+<script type="application/json" data-for="htmlwidget-1251f08ea8d317c0b2e3">{"x":{"filter":"none","vertical":false,"data":[["DeBruine, Lisa. 2025. Faux: Simulation for Factorial Designs. Zenodo. https://doi.org/10.5281/zenodo.2669586.","Eagly, Alice H., and Wendy Wood. 1999. \"The Origins of Sex Differences in Human Behavior: Evolved Dispositions Versus Social Roles.\" American Psychologist 54 (6): 408-23. https://doi.org/10.1037/0003-066x.54.6.408.","Gino, Francesca, and Scott S. Wiltermuth. 2014. \"Evil Genius? How Dishonesty Can Lead to Greater Creativity.\" Psychological Science 25 (4): 973–81. https://doi.org/10.1177/0956797614520714.","Lakens, Daniël. 2018. \"Equivalence Testing for Psychological Research.\" Advances in Methods and Practices in Psychological Science 1: 259-70.","Smith, F. 2021. \"Human Error Is a Symptom of a Poor Design.\" Journal of Journals. https://doi.org/10.0000/0123456789."],["doi, year",null,"title","doi, author","no match"],[null,null,"<a href='https://pubpeer.com/publications/3FA648ECECB88454C91804F09E2E56' target='_blank'>Link<\/a>",null,null],[null,"replication",null,null,null],[null,null,"Retraction",null,null]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th>text<\/th>\n      <th>accuracy_<wbr>mismatch<\/th>\n      <th>pubpeer<\/th>\n      <th>replication_<wbr>type<\/th>\n      <th>retractionwatch<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"dom":"t","autoWidth":true,"ordering":false,"pageLength":10,"columnDefs":[{"targets":0,"width":"75%"},{"name":"text","targets":0},{"name":"accuracy_<wbr>mismatch","targets":1},{"name":"pubpeer","targets":2},{"name":"replication_<wbr>type","targets":3},{"name":"retractionwatch","targets":4}],"order":[],"orderClasses":false}},"evals":[],"jsHooks":[]}</script>
 </div>
 </div>
 </div>
 </details>
 <div class="callout callout-style-default callout-note callout-titled" title="How It Works">
-<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-29-contents" aria-controls="callout-29" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-24-contents" aria-controls="callout-24" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
@@ -5993,10 +5850,10 @@ View detailed feedback
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
-<div id="callout-29" class="callout-29-contents callout-collapse collapse">
+<div id="callout-24" class="callout-24-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
 <p>Summarise information about each reference in a paper.</p>
-<p>This module summarises previously-run reference section modules: ref_doi_check, ref_accuracy, ref_pubpeer, ref_replication, and ref_retractiuon.</p>
+<p>This module summarises previously-run reference section modules: ref_accuracy, ref_pubpeer, ref_replication, and ref_retraction.</p>
 <p>This module was developed by Lisa DeBruine</p>
 </div>
 </div>
