@@ -1,0 +1,3415 @@
+{
+  "paper_id": "0956797616663878",
+  "info": [
+    {
+      "title": "Creating Body Shapes From Verbal Descriptions by Linking Similarity Spaces",
+      "keywords": ["visual perception", "human body", "face perception", "open data"],
+      "doi": "10.1177/0956797616663878pss.sagepub.com",
+      "file_hash": "c69596fde756eacf",
+      "input_format": "grobid 0.9.0",
+      "file_name": "data-raw/psychsci/grobid_0.9.0-full/0956797616663878.xml",
+      "bibr_version": "10.0",
+      "paper_type": "unknown",
+      "paper_type_confidence": 0,
+      "oecd_l1": null,
+      "oecd_l2": null,
+      "oecd_confidence": null
+    }
+  ],
+  "author": [
+    {
+      "author_id": 1,
+      "given": "Matthew",
+      "family": "Hill",
+      "affiliation": "School of Behavioral and Brain Sciences The University of Texas at Dallas",
+      "email": "matthew.hill@utdallas.edu",
+      "corresponding": false,
+      "orcid": "",
+      "role": []
+    },
+    {
+      "author_id": 2,
+      "given": "Stephan",
+      "family": "Streuber",
+      "affiliation": "Max Planck Institute for Intelligent Systems Tübingen Germany",
+      "email": "",
+      "corresponding": false,
+      "orcid": "",
+      "role": []
+    },
+    {
+      "author_id": 3,
+      "given": "Carina",
+      "family": "Hahn",
+      "affiliation": "School of Behavioral and Brain Sciences The University of Texas at Dallas",
+      "email": "",
+      "corresponding": false,
+      "orcid": "",
+      "role": []
+    },
+    {
+      "author_id": 4,
+      "given": "Michael",
+      "family": "Black",
+      "affiliation": "Max Planck Institute for Intelligent Systems Tübingen Germany",
+      "email": "",
+      "corresponding": false,
+      "orcid": "",
+      "role": []
+    },
+    {
+      "author_id": 5,
+      "given": "Alice",
+      "family": "O'toole",
+      "affiliation": "School of Behavioral and Brain Sciences The University of Texas at Dallas",
+      "email": "",
+      "corresponding": false,
+      "orcid": "",
+      "role": []
+    }
+  ],
+  "text": [
+    {
+      "text_id": 1,
+      "paragraph_id": 1,
+      "section_id": 0,
+      "text": "human body also provides cues to a person's identity (Hahn, O'Toole, & Phillips, 2016;Rice, Phillips, Natu, An, & O'Toole, 2013; Rice, Phillips, & O'Toole, 2013;Robbins & Coltheart, 2012).",
+      "page_number": null
+    },
+    {
+      "text_id": 2,
+      "paragraph_id": 1,
+      "section_id": 0,
+      "text": "The role of the body in recognition and in the assessment of emotional states can escape conscious awareness, but it is detectable with physiological measures of eye movements and body responses (Aviezer et al., 2012;Rice, Phillips, Natu, et al., 2013).",
+      "page_number": null
+    },
+    {
+      "text_id": 3,
+      "paragraph_id": 2,
+      "section_id": 0,
+      "text": "Given the importance of the body for recognition and social interaction, it is not surprising that language provides a rich corpus of colorful body-descriptor terms that allow people to communicate information about body shape to others.",
+      "page_number": null
+    },
+    {
+      "text_id": 4,
+      "paragraph_id": 2,
+      "section_id": 0,
+      "text": "These terms can be combined in ways that give rise to vivid mental images.",
+      "page_number": null
+    },
+    {
+      "text_id": 5,
+      "paragraph_id": 2,
+      "section_id": 0,
+      "text": "The \"shapely, hourglass woman\"; the \"muscular, athletic young man\"; and the \"stout, portly gentleman\" are imagined easily as complete human body shapes.",
+      "page_number": null
+    },
+    {
+      "text_id": 6,
+      "paragraph_id": 2,
+      "section_id": 0,
+      "text": "The images conjured by these descriptions come from combinations of features that reference global shapes (e.g., pear-shaped) and local parts (e.g., long legs), as well as biologically relevant body structure (e.g., masculine) and mobility or strength potential (e.g., athletic, fit).",
+      "page_number": null
+    },
+    {
+      "text_id": 7,
+      "paragraph_id": 2,
+      "section_id": 0,
+      "text": "These linguistic descriptions can provide a flexible framework for representing qualitatively diverse visual features about bodies that can exist 663878P SSXXX10.1177/0956797616663878Hill et al.",
+      "page_number": null
+    },
+    {
+      "text_id": 8,
+      "paragraph_id": 4,
+      "section_id": 1,
+      "text": "at different spatial scales and across multiple levels of abstraction.",
+      "page_number": null
+    },
+    {
+      "text_id": 9,
+      "paragraph_id": 5,
+      "section_id": 1,
+      "text": "How does one translate linguistic descriptions of people into visual images and visual images into descriptions?",
+      "page_number": null
+    },
+    {
+      "text_id": 10,
+      "paragraph_id": 5,
+      "section_id": 1,
+      "text": "We explored the relationship between the physical dimensions of body shape and the words commonly used to describe bodies.",
+      "page_number": null
+    },
+    {
+      "text_id": 11,
+      "paragraph_id": 5,
+      "section_id": 1,
+      "text": "We approached this question by constructing a multidimensional similarity-space representation of bodies using people's word-based descriptions of full-body photographs of clothed women.",
+      "page_number": null
+    },
+    {
+      "text_id": 12,
+      "paragraph_id": 5,
+      "section_id": 1,
+      "text": "The proximity of two bodies in this language space represents the similarity of the descriptions applied to them.",
+      "page_number": null
+    },
+    {
+      "text_id": 13,
+      "paragraph_id": 5,
+      "section_id": 1,
+      "text": "To link the language space to the physical variability of human body shapes, we collected verbal descriptions of three-dimensional graphics models of bodies (Allen, Curless, & Popovic´, 2003) and projected these descriptions into the language space, which provided physicalshape anchors to connect the linguistic descriptions to the three-dimensional shapes.",
+      "page_number": null
+    },
+    {
+      "text_id": 14,
+      "paragraph_id": 6,
+      "section_id": 1,
+      "text": "This approach was facilitated by an unexpected observation: The first five axes of the language space seemed to capture body-description \"features\" that could be used to label the axes of variability from a geometric shape space derived from three-dimensional laser scans of 2,094 bodies (cf.",
+      "page_number": null
+    },
+    {
+      "text_id": 15,
+      "paragraph_id": 6,
+      "section_id": 1,
+      "text": "Anguelov et al., 2005).",
+      "page_number": null
+    },
+    {
+      "text_id": 16,
+      "paragraph_id": 6,
+      "section_id": 1,
+      "text": "The order of the axes in the two spaces differed, but the potentially analogous structure of these multidimensional spaces offered a direct route for testing the relationship between body shapes and descriptions.",
+      "page_number": null
+    },
+    {
+      "text_id": 17,
+      "paragraph_id": 6,
+      "section_id": 1,
+      "text": "Specifically, if the axes from the language and shape spaces coarsely correspond, it should be possible to generate a three-dimensional physical body shape of an individual from the verbal description of a photograph of that person.",
+      "page_number": null
+    },
+    {
+      "text_id": 18,
+      "paragraph_id": 7,
+      "section_id": 1,
+      "text": "In the context of the similarity space, a person's description takes the form of a point in the multidimensional language space.",
+      "page_number": null
+    },
+    {
+      "text_id": 19,
+      "paragraph_id": 7,
+      "section_id": 1,
+      "text": "This point is specified by its coordinates in the space, which indicate where the person's description stands relative to the descriptions of other people on each axis in the space.",
+      "page_number": null
+    },
+    {
+      "text_id": 20,
+      "paragraph_id": 7,
+      "section_id": 1,
+      "text": "Thus, it was possible to select individual points from the language space (i.e., based on descriptions of photographs), and after transposing axes to account for rank-order differences between the two spaces, place the points into the bodyshape space.",
+      "page_number": null
+    },
+    {
+      "text_id": 21,
+      "paragraph_id": 7,
+      "section_id": 1,
+      "text": "We could then create three-dimensional graphics models of bodies at these locations in the shape space.",
+      "page_number": null
+    },
+    {
+      "text_id": 22,
+      "paragraph_id": 7,
+      "section_id": 1,
+      "text": "We hypothesized that if sparse language captures the complex physical variability of bodies, descriptions of the three-dimensional bodies in the shape space should correspond to-or approximately \"match\"-the descriptions from which those bodies were generated.",
+      "page_number": null
+    },
+    {
+      "text_id": 23,
+      "paragraph_id": 8,
+      "section_id": 1,
+      "text": "To summarize our methodology and findings, we first created a mapping from semantics (i.e., word-based body descriptions) to three-dimensional body shape by linking five multivariate axes across two independently derived similarity spaces: One space was based on body descriptions, and the other space was based on body shapes.",
+      "page_number": null
+    },
+    {
+      "text_id": 24,
+      "paragraph_id": 8,
+      "section_id": 1,
+      "text": "Second, we projected semantic descriptions of pictures into the body-shape space and generated three-dimensional models.",
+      "page_number": null
+    },
+    {
+      "text_id": 25,
+      "paragraph_id": 8,
+      "section_id": 1,
+      "text": "Third, we showed that participants' descriptions of the bodies in the original pictures closely matched the descriptions of their corresponding three-dimensional models.",
+      "page_number": null
+    },
+    {
+      "text_id": 26,
+      "paragraph_id": 8,
+      "section_id": 1,
+      "text": "These results indicate that language can act as a surprisingly effective code for body shape, capturing perceptually salient global and local body features.",
+      "page_number": null
+    },
+    {
+      "text_id": 27,
+      "paragraph_id": 12,
+      "section_id": 3,
+      "text": "Participants were recruited from the subject pool at The University of Texas at Dallas (UTD) through an online sign-up system and were compensated with one research credit for a psychology course.",
+      "page_number": null
+    },
+    {
+      "text_id": 28,
+      "paragraph_id": 12,
+      "section_id": 3,
+      "text": "The UTD Institutional Review Board approved all experimental procedures.",
+      "page_number": null
+    },
+    {
+      "text_id": 29,
+      "paragraph_id": 12,
+      "section_id": 3,
+      "text": "Twelve people (all female) participated in a pilot study to validate the description terms.",
+      "page_number": null
+    },
+    {
+      "text_id": 30,
+      "paragraph_id": 12,
+      "section_id": 3,
+      "text": "In the main experiment, 60 volunteers (30 female, 30 male) rated the body photographs, and another 60 volunteers (30 female, 30 male) rated the three-dimensional body reconstructions.",
+      "page_number": null
+    },
+    {
+      "text_id": 31,
+      "paragraph_id": 12,
+      "section_id": 3,
+      "text": "There were no overlapping participants in the three groups.",
+      "page_number": null
+    },
+    {
+      "text_id": 32,
+      "paragraph_id": 12,
+      "section_id": 3,
+      "text": "Because the study did not employ a traditional experimental design with manipulated variables, the goal was to include enough participants to achieve stable ratings of the bodies for the multivariate analysis.",
+      "page_number": null
+    },
+    {
+      "text_id": 33,
+      "paragraph_id": 12,
+      "section_id": 3,
+      "text": "We conducted the multivariate analysis when we had tested 15 participants per block (45 total) and repeated the analysis with 20 per block (60 total).",
+      "page_number": null
+    },
+    {
+      "text_id": 34,
+      "paragraph_id": 12,
+      "section_id": 3,
+      "text": "The interpreted axes remained stable with the additional participants.",
+      "page_number": null
+    },
+    {
+      "text_id": 35,
+      "paragraph_id": 12,
+      "section_id": 3,
+      "text": "The data analysis reported includes the full set of participants.",
+      "page_number": null
+    },
+    {
+      "text_id": 36,
+      "paragraph_id": 14,
+      "section_id": 4,
+      "text": "Screen captures of 164 women were taken from videos in the Human ID Database (O' Toole et al., 2005) that show people's full bodies as they walked toward a camera.",
+      "page_number": null
+    },
+    {
+      "text_id": 37,
+      "paragraph_id": 14,
+      "section_id": 4,
+      "text": "Two frames were selected from each video: a standing image and a midstride image.",
+      "page_number": null
+    },
+    {
+      "text_id": 38,
+      "paragraph_id": 14,
+      "section_id": 4,
+      "text": "Standing images were captured from the first frame of the video (~13.6 m from the camera) or from the earliest frame showing the person at rest with hands at her sides.",
+      "page_number": null
+    },
+    {
+      "text_id": 39,
+      "paragraph_id": 14,
+      "section_id": 4,
+      "text": "Midstride images were captured from the last full-stride frame in which the entire body was visible.",
+      "page_number": null
+    },
+    {
+      "text_id": 40,
+      "paragraph_id": 14,
+      "section_id": 4,
+      "text": "Standing images were somewhat blurrier than midstride images because of the difference in the distance from the camera.",
+      "page_number": null
+    },
+    {
+      "text_id": 41,
+      "paragraph_id": 15,
+      "section_id": 4,
+      "text": "The image frames were cropped to remove excess background and resized to a uniform height of 900 pixels, with each image's original aspect ratio preserved.",
+      "page_number": null
+    },
+    {
+      "text_id": 42,
+      "paragraph_id": 15,
+      "section_id": 4,
+      "text": "The Adobe Photoshop CS5 (Version 12.0) sponge filter was applied to the whole image to obscure facial detail.",
+      "page_number": null
+    },
+    {
+      "text_id": 43,
+      "paragraph_id": 15,
+      "section_id": 4,
+      "text": "This filter also preserves and sharpens body contours.",
+      "page_number": null
+    },
+    {
+      "text_id": 44,
+      "paragraph_id": 15,
+      "section_id": 4,
+      "text": "Figure 1a shows an example of the processed body photographs.",
+      "page_number": null
+    },
+    {
+      "text_id": 45,
+      "paragraph_id": 17,
+      "section_id": 5,
+      "text": "Descriptor terms were sourced first from online dating profiles and clothing store fit recommendations to produce an initial list.",
+      "page_number": null
+    },
+    {
+      "text_id": 46,
+      "paragraph_id": 17,
+      "section_id": 5,
+      "text": "Next, a pilot study was conducted to refine this list.",
+      "page_number": null
+    },
+    {
+      "text_id": 47,
+      "paragraph_id": 17,
+      "section_id": 5,
+      "text": "Participants in this pilot study freely described the bodies in the images by typing a short description of each person's body type in a small text box.",
+      "page_number": null
+    },
+    {
+      "text_id": 48,
+      "paragraph_id": 17,
+      "section_id": 5,
+      "text": "They were told to ignore the face, clothing, hair, and race.",
+      "page_number": null
+    },
+    {
+      "text_id": 49,
+      "paragraph_id": 17,
+      "section_id": 5,
+      "text": "The initial list was augmented using some of the words that appeared commonly in the pilot study.",
+      "page_number": null
+    },
+    {
+      "text_id": 50,
+      "paragraph_id": 17,
+      "section_id": 5,
+      "text": "The final list of terms captured global shape features, such as \"round\" and \"rectangular\"; local features, such as \"long legs\" and \"short torso\"; gender-related terms, such as \"curvy\" and \"masculine\"; and health-related terms, such as \"muscular\" and \"fit.\"",
+      "page_number": null
+    },
+    {
+      "text_id": 51,
+      "paragraph_id": 17,
+      "section_id": 5,
+      "text": "Table 1 lists the 27 body descriptor terms used.",
+      "page_number": null
+    },
+    {
+      "text_id": 52,
+      "paragraph_id": 19,
+      "section_id": 6,
+      "text": "On each trial, participants simultaneously viewed a person's standing and midstride image, along with the list of 27 descriptor terms (see Fig.",
+      "page_number": null
+    },
+    {
+      "text_id": 53,
+      "paragraph_id": 19,
+      "section_id": 6,
+      "text": "1).",
+      "page_number": null
+    },
+    {
+      "text_id": 54,
+      "paragraph_id": 19,
+      "section_id": 6,
+      "text": "For each body, participants clicked one of three radio buttons to indicate whether that descriptor did not apply, applied somewhat, or applied perfectly to the body.",
+      "page_number": null
+    },
+    {
+      "text_id": 55,
+      "paragraph_id": 19,
+      "section_id": 6,
+      "text": "At the outset of each trial, the radio buttons were all set to \"does not apply.\"",
+      "page_number": null
+    },
+    {
+      "text_id": 56,
+      "paragraph_id": 19,
+      "section_id": 6,
+      "text": "This made the task less tedious because participants usually selected only a small number of terms that applied somewhat or perfectly to the person.",
+      "page_number": null
+    },
+    {
+      "text_id": 57,
+      "paragraph_id": 19,
+      "section_id": 6,
+      "text": "Trials were self-paced.",
+      "page_number": null
+    },
+    {
+      "text_id": 58,
+      "paragraph_id": 19,
+      "section_id": 6,
+      "text": "Data ratings were carried out on 165 females and 60 males.",
+      "page_number": null
+    },
+    {
+      "text_id": 59,
+      "paragraph_id": 19,
+      "section_id": 6,
+      "text": "1 Because of the length of the task, photos were counterbalanced such that each participant saw a different subset of 75 of the total 225 people.",
+      "page_number": null
+    },
+    {
+      "text_id": 60,
+      "paragraph_id": 19,
+      "section_id": 6,
+      "text": "Across all participants, a full set of ratings was obtained from 20 participants for each body.",
+      "page_number": null
+    },
+    {
+      "text_id": 61,
+      "paragraph_id": 21,
+      "section_id": 7,
+      "text": "The language space was constructed using correspondence analysis (Benzécri, 1976;Greenacre, 2007)-a multivariate analysis method for categorical data, similar in form to principal component analysis.",
+      "page_number": null
+    },
+    {
+      "text_id": 62,
+      "paragraph_id": 21,
+      "section_id": 7,
+      "text": "Correspondence analysis was applied to ratings of 164 of the 165 female body photographs using only ratings of \"applies perfectly.\"",
+      "page_number": null
+    },
+    {
+      "text_id": 63,
+      "paragraph_id": 21,
+      "section_id": 7,
+      "text": "2 One female, who was perceived consistently as a male, 3 was omitted from the analysis.",
+      "page_number": null
+    },
+    {
+      "text_id": 64,
+      "paragraph_id": 21,
+      "section_id": 7,
+      "text": "The input to the correspondence analysis was an I × J matrix, X, of counts tallied across raters, where I was the number of bodies, and J was the number of descriptors.",
+      "page_number": null
+    },
+    {
+      "text_id": 65,
+      "paragraph_id": 21,
+      "section_id": 7,
+      "text": "X ij contained the number of participants who rated the jth descriptor as applying perfectly to the ith body.",
+      "page_number": null
+    },
+    {
+      "text_id": 66,
+      "paragraph_id": 21,
+      "section_id": 7,
+      "text": "The categorical nature of the data, expressed in a χ 2 contingency table, supports a biplot visualization of the rows (bodies) and columns (descriptors) in the same space.",
+      "page_number": null
+    },
+    {
+      "text_id": 67,
+      "paragraph_id": 21,
+      "section_id": 7,
+      "text": "Individual axes were interpreted using the contribution scores of the descriptor terms.",
+      "page_number": null
+    },
+    {
+      "text_id": 68,
+      "paragraph_id": 21,
+      "section_id": 7,
+      "text": "These indicate the importance of a term for establishing a component and are defined formally as the ratio of the squared factor score to the axis eigenvalue (Abdi & Williams, 2010).",
+      "page_number": null
+    },
+    {
+      "text_id": 69,
+      "paragraph_id": 21,
+      "section_id": 7,
+      "text": "Contributing descriptors were selected using a rule of thumb from Abdi and Williams (2010) that assigns importance to contribution scores greater than 1/n, where n is the number of descriptors.",
+      "page_number": null
+    },
+    {
+      "text_id": 70,
+      "paragraph_id": 22,
+      "section_id": 7,
+      "text": "As applied here, the correspondence analysis produced a multidimensional representation that enabled visualization of the bodies and descriptor terms in a common space.",
+      "page_number": null
+    },
+    {
+      "text_id": 71,
+      "paragraph_id": 22,
+      "section_id": 7,
+      "text": "The distance between bodies in this space is a measure of the similarity of the linguistic descriptions applied to them.",
+      "page_number": null
+    },
+    {
+      "text_id": 72,
+      "paragraph_id": 22,
+      "section_id": 7,
+      "text": "Because the terms and bodies coexist in the same space, each axis was interpreted by finding the descriptor terms with the highest axis-contribution scores.",
+      "page_number": null
+    },
+    {
+      "text_id": 73,
+      "paragraph_id": 22,
+      "section_id": 7,
+      "text": "Interpretations were made by comparing terms with large contribution scores that projected to opposite (i.e., positive and negative) sides of an axis.",
+      "page_number": null
+    },
+    {
+      "text_id": 74,
+      "paragraph_id": 23,
+      "section_id": 7,
+      "text": "Figure 2 illustrates the first four axes of the space and provides a qualitative interpretation of each.",
+      "page_number": null
+    },
+    {
+      "text_id": 75,
+      "paragraph_id": 23,
+      "section_id": 7,
+      "text": "The first two axes roughly correspond to weight and height.",
+      "page_number": null
+    },
+    {
+      "text_id": 76,
+      "paragraph_id": 23,
+      "section_id": 7,
+      "text": "The next two axes are related to different aspects of feminine appearance: Axis 3 spans classically feminine shapes (pear-shaped and curvy) versus women with various \"other,\" not classically feminine shapes, and Axis 4 spans masculine women versus curvy women.",
+      "page_number": null
+    },
+    {
+      "text_id": 77,
+      "paragraph_id": 23,
+      "section_id": 7,
+      "text": "The fifth axis (not plotted in Figs. 2a and 2b) was interpretable as waist-height or torso-to-leg-length ratio (see Figs. 2c and 2d).",
+      "page_number": null
+    },
+    {
+      "text_id": 78,
+      "paragraph_id": 24,
+      "section_id": 7,
+      "text": "Body-shape space.",
+      "page_number": null
+    },
+    {
+      "text_id": 79,
+      "paragraph_id": 24,
+      "section_id": 7,
+      "text": "The geometric shape space was an extended version of the Shape Completion and Animation of People (SCAPE) model of body pose and shape variation applied to data from laser scans of people (Anguelov et al., 2005).",
+      "page_number": null
+    },
+    {
+      "text_id": 80,
+      "paragraph_id": 24,
+      "section_id": 7,
+      "text": "In the SCAPE model, body shape is represented in terms of 3 × 3 deformation matrices (Sumner & Popovic ´, 2004) consisting of transformations of triangles in a template mesh into triangles in an instance mesh (see Anguelov et al., 2005, for full details).",
+      "page_number": null
+    },
+    {
+      "text_id": 81,
+      "paragraph_id": 24,
+      "section_id": 7,
+      "text": "A template mesh with 86,200 triangles was aligned (registered) to 2,094 laser scans of women from the Civilian American and European Anthropometry Resource Project (CAESAR) data set (cf.",
+      "page_number": null
+    },
+    {
+      "text_id": 82,
+      "paragraph_id": 24,
+      "section_id": 7,
+      "text": "Piryankova et al., 2014).",
+      "page_number": null
+    },
+    {
+      "text_id": 83,
+      "paragraph_id": 24,
+      "section_id": 7,
+      "text": "CAESAR contains full-body laser scans of American and European volunteers between the ages of 18 and 65 years; all are wearing bicycle-style shorts, and women are also wearing a sports bra.",
+      "page_number": null
+    },
+    {
+      "text_id": 84,
+      "paragraph_id": 24,
+      "section_id": 7,
+      "text": "The alignment process (Hirshberg, Loper, Rachlin, & Black, 2012) puts all the shapes into correspondence, which enables statistical analysis.",
+      "page_number": null
+    },
+    {
+      "text_id": 85,
+      "paragraph_id": 24,
+      "section_id": 7,
+      "text": "Further, the SCAPE representation separates pose and body shape, which allows analysis of only body shape.",
+      "page_number": null
+    },
+    {
+      "text_id": 86,
+      "paragraph_id": 24,
+      "section_id": 7,
+      "text": "A low-dimensional shape space was created by applying principal component analysis to the \"shapes\" of these bodies, defined as the triangle deformations of the 2,094 aligned template bodies.",
+      "page_number": null
+    },
+    {
+      "text_id": 87,
+      "paragraph_id": 24,
+      "section_id": 7,
+      "text": "This gave a three-dimensional-morphable representation of bodies that allowed for smooth transitions of body shape across arbitrary multivariate trajectories in the space.",
+      "page_number": null
+    },
+    {
+      "text_id": 88,
+      "paragraph_id": 25,
+      "section_id": 7,
+      "text": "Although the principal component axes are purely geometric, they have approximate linguistic interpretations (Fig. 3a).",
+      "page_number": null
+    },
+    {
+      "text_id": 89,
+      "paragraph_id": 25,
+      "section_id": 7,
+      "text": "Axes of the shape space were interpreted by visual inspection of bodies produced by adding and subtracting three standard deviations to and from each principal component (Fig. 3a).",
+      "page_number": null
+    },
+    {
+      "text_id": 90,
+      "paragraph_id": 25,
+      "section_id": 7,
+      "text": "We tentatively interpreted the shape space axes as representing (a) weight, (b) masculine versus curvy, (c) height, (d) waist height, and (e) classically feminine shapes versus other shapes.",
+      "page_number": null
+    },
+    {
+      "text_id": 91,
+      "paragraph_id": 25,
+      "section_id": 7,
+      "text": "These labels were chosen from the labels we applied to the first five axes of the language space, but with the rank order Height Taller Shorter Axis 2: 12.02% Classically Feminine vs.",
+      "page_number": null
+    },
+    {
+      "text_id": 92,
+      "paragraph_id": 25,
+      "section_id": 7,
+      "text": "Other More Feminine More Other Axis 3: 10.78% More Curvy More Masculine Big, Heavyset, Round (Apple), Stocky 1 Proportioned, Lean, Skinny Short, Short Legs, Small, Petite, Pear-Shaped 2 Long Legs, Long, Tall Skinny, Round (Apple), Lean, Petite, Small, Fit 3 Curvy, Pear-Shaped Masculine, Rectangular, Average, Broad Shoulders, Muscular, Long Torso, Short Legs 4 Curvy Long Torso, Pear-Shaped, Short Legs 5 Long Legs, Short Torso Axis Female Bodies: Axes 1-5 1 Weight 2 Height 3 Classically Feminine vs.",
+      "page_number": null
+    },
+    {
+      "text_id": 93,
+      "paragraph_id": 25,
+      "section_id": 7,
+      "text": "Other 4 Masculine vs.",
+      "page_number": null
+    },
+    {
+      "text_id": 94,
+      "paragraph_id": 25,
+      "section_id": 7,
+      "text": "Curvy 5 Waist Height Interpretation a b c d Axis 4: 6.73% Masculine vs.",
+      "page_number": null
+    },
+    {
+      "text_id": 95,
+      "paragraph_id": 25,
+      "section_id": 7,
+      "text": "Curvy of the axes shifted between the two spaces.",
+      "page_number": null
+    },
+    {
+      "text_id": 96,
+      "paragraph_id": 25,
+      "section_id": 7,
+      "text": "Specifically, we hypothesized parity between the following axes: (a) the first axis in both the language and shape space (weight), (b) Axis 2 in the language space and Axis 3 in the shape space (height), (c) Axis 3 in the language space and Axis 5 in the shape space (classically feminine shapes vs. other), (d) Axis 4 in the language space and Axis 2 in the shape space (masculine vs. curvy), and (e) Axis 5 in the language space and Axis 4 in the shape space (waist height).",
+      "page_number": null
+    },
+    {
+      "text_id": 97,
+      "paragraph_id": 27,
+      "section_id": 8,
+      "text": "Given the potentially analogous interpretation of the first five axes of the language and shape spaces, we aligned the two spaces by reordering the axes in the shape space to match the analogously interpreted axes in the language space.",
+      "page_number": null
+    },
+    {
+      "text_id": 98,
+      "paragraph_id": 27,
+      "section_id": 8,
+      "text": "Next, we approximated the shapes of the 164 photographed individuals by synthesizing their bodies in the shape space at positions specified by their locations (coordinates) in the language space.",
+      "page_number": null
+    },
+    {
+      "text_id": 99,
+      "paragraph_id": 27,
+      "section_id": 8,
+      "text": "Figure 3b shows a schematic of this process.",
+      "page_number": null
+    },
+    {
+      "text_id": 100,
+      "paragraph_id": 27,
+      "section_id": 8,
+      "text": "We began",
+      "page_number": null
+    },
+    {
+      "text_id": 101,
+      "paragraph_id": 28,
+      "section_id": 8,
+      "text": "Linguistic Subspace (5-space ) Shape Subspace (5-space ) weight 1 2 3 4 5 height masculine vs. curvy waist height classically fem. vs. other Shape-Space Axes a c b shows the process whereby three-dimensional body models of people in photographs were generated from the descriptions of the photographs.",
+      "page_number": null
+    },
+    {
+      "text_id": 102,
+      "paragraph_id": 28,
+      "section_id": 8,
+      "text": "These descriptions were used to generate a five-dimensional language subspace that was aligned with the five-dimensional shape subspace on the basis of analogously interpreted axes.",
+      "page_number": null
+    },
+    {
+      "text_id": 103,
+      "paragraph_id": 28,
+      "section_id": 8,
+      "text": "Corresponding points in the two subspaces were then used to generate the body models.",
+      "page_number": null
+    },
+    {
+      "text_id": 104,
+      "paragraph_id": 28,
+      "section_id": 8,
+      "text": "Example pairs of photographed bodies and their corresponding approximated three-dimensional bodies (c) are also shown.",
+      "page_number": null
+    },
+    {
+      "text_id": 105,
+      "paragraph_id": 29,
+      "section_id": 8,
+      "text": "with the coordinates of each person on the first five (interpreted) dimensions of the language space and constructed a corresponding three-dimensional body using the first five dimensions of the shape space.",
+      "page_number": null
+    },
+    {
+      "text_id": 106,
+      "paragraph_id": 29,
+      "section_id": 8,
+      "text": "We did this for all of the 164 photographed bodies.",
+      "page_number": null
+    },
+    {
+      "text_id": 107,
+      "paragraph_id": 29,
+      "section_id": 8,
+      "text": "For each body, synthesis in the shape space was accomplished by a linear combination of the principal components, where the weight applied to each principal component was the projection coefficient or \"coordinate\" specified by its position in the language space on the analogous dimension.",
+      "page_number": null
+    },
+    {
+      "text_id": 108,
+      "paragraph_id": 29,
+      "section_id": 8,
+      "text": "More concretely, the principal component shapespace model allows for a low-dimensional representation of body shape in the subspace U, defined by the first five \"interpreted\" dimensions.",
+      "page_number": null
+    },
+    {
+      "text_id": 109,
+      "paragraph_id": 29,
+      "section_id": 8,
+      "text": "An individual shape S j is represented by a set of five linear coefficients, β j , that represent a body's coordinates with respect to the principal components.",
+      "page_number": null
+    },
+    {
+      "text_id": 110,
+      "paragraph_id": 29,
+      "section_id": 8,
+      "text": "Thus, a body at a position in this fivedimensional subspace is approximated as S j = U j β j + u, where u is the average body (cf.",
+      "page_number": null
+    },
+    {
+      "text_id": 111,
+      "paragraph_id": 29,
+      "section_id": 8,
+      "text": "Piryankova et al., 2014).",
+      "page_number": null
+    },
+    {
+      "text_id": 112,
+      "paragraph_id": 29,
+      "section_id": 8,
+      "text": "To create body models of the 164 photographs using their coordinates in the language space, we standardized their factor scores on the first five axes.",
+      "page_number": null
+    },
+    {
+      "text_id": 113,
+      "paragraph_id": 29,
+      "section_id": 8,
+      "text": "Next, we reordered the coordinates of the photographed bodies in the language space to match the analogously interpreted axes in the shape space.",
+      "page_number": null
+    },
+    {
+      "text_id": 114,
+      "paragraph_id": 29,
+      "section_id": 8,
+      "text": "These new standardized coordinates were used to synthesize bodies at these positions in the shape space.",
+      "page_number": null
+    },
+    {
+      "text_id": 115,
+      "paragraph_id": 29,
+      "section_id": 8,
+      "text": "Thus, the modeled body was created as a weighted sum of the first five principal components, with the coordinate vectors serving as the weights.",
+      "page_number": null
+    },
+    {
+      "text_id": 116,
+      "paragraph_id": 29,
+      "section_id": 8,
+      "text": "This produced 164 synthetic geometric body models, which we rendered in two poses (standing and midstride) to match the photographic bodies.",
+      "page_number": null
+    },
+    {
+      "text_id": 117,
+      "paragraph_id": 29,
+      "section_id": 8,
+      "text": "Figure 3c shows example photographs and their corresponding synthesized three-dimensional bodies.",
+      "page_number": null
+    },
+    {
+      "text_id": 118,
+      "paragraph_id": 29,
+      "section_id": 8,
+      "text": "A casual visual inspection shows that these appear quite similar to each other.",
+      "page_number": null
+    },
+    {
+      "text_id": 119,
+      "paragraph_id": 31,
+      "section_id": 9,
+      "text": "To formally test the resemblance between the two-dimensional photographs and their three-dimensional synthesized body approximations, a new set of participants rated the synthesized bodies using a procedure identical to that used for the body photographs but with the rendered models replacing the photographs (see Fig. 1b).",
+      "page_number": null
+    },
+    {
+      "text_id": 120,
+      "paragraph_id": 31,
+      "section_id": 9,
+      "text": "For the analysis, we represented these data as a 27-element description vector that contained the frequency with which these descriptors were judged by participants to apply perfectly to the body, as was done for the photographs.",
+      "page_number": null
+    },
+    {
+      "text_id": 121,
+      "paragraph_id": 33,
+      "section_id": 10,
+      "text": "To test the perceptual similarity between the photographed bodies and the three-dimensionally rendered bodies, we projected the description vectors for the three-dimensional body models as supplementary points onto axes of the language space.",
+      "page_number": null
+    },
+    {
+      "text_id": 122,
+      "paragraph_id": 33,
+      "section_id": 10,
+      "text": "If the models resemble the photographs, we would expect the description vector projections (points) to be close in the multivariate language space to the descriptions (points) of the photographed bodies used to create them.",
+      "page_number": null
+    },
+    {
+      "text_id": 123,
+      "paragraph_id": 33,
+      "section_id": 10,
+      "text": "For brevity, we use the term true-match pair to refer to a pair of points in the language space representing, respectively, a three-dimensional body's description point and the description point of the photographed body from whose coefficients it was generated.",
+      "page_number": null
+    },
+    {
+      "text_id": 124,
+      "paragraph_id": 33,
+      "section_id": 10,
+      "text": "Nonmatched pairs refer to a three-dimensional body's description point and the description point of an unrelated photographed body.",
+      "page_number": null
+    },
+    {
+      "text_id": 125,
+      "paragraph_id": 33,
+      "section_id": 10,
+      "text": "Figure 4 shows a schematic of the method used for determining the similarity of descriptions for the photographed and three-dimensional body models.",
+      "page_number": null
+    },
+    {
+      "text_id": 126,
+      "paragraph_id": 34,
+      "section_id": 10,
+      "text": "A bootstrap hypothesis test was used to determine whether the descriptions of true-match pairs were closer in the language space than descriptions of randomly sampled nonmatched pairs.",
+      "page_number": null
+    },
+    {
+      "text_id": 127,
+      "paragraph_id": 34,
+      "section_id": 10,
+      "text": "For 1,000 iterations, we selected random samples of 164 nonmatched pairs and computed the mean Euclidian distance between pair descriptions in the five-dimensional language space.",
+      "page_number": null
+    },
+    {
+      "text_id": 128,
+      "paragraph_id": 34,
+      "section_id": 10,
+      "text": "This yielded a distribution of nonmatched sample means that we compared with the average true-match distance.",
+      "page_number": null
+    },
+    {
+      "text_id": 129,
+      "paragraph_id": 34,
+      "section_id": 10,
+      "text": "For inferential purposes, we selected a two-tailed cutoff value of p < .05.",
+      "page_number": null
+    },
+    {
+      "text_id": 130,
+      "paragraph_id": 34,
+      "section_id": 10,
+      "text": "In the top left graph in Figure 5, the matched mean is shown along with the histogram of the 1,000 nonmatched samples.",
+      "page_number": null
+    },
+    {
+      "text_id": 131,
+      "paragraph_id": 34,
+      "section_id": 10,
+      "text": "There is a wide separation between the matched mean and the nonmatched bootstrap distribution, with no overlap between the mean of the true-match pairs (M = 0.5626) and the distribution of 1,000 nonmatched sample means (M = 1.1449, 95% confidence interval, or CI = [1.1428, 1.1469]).",
+      "page_number": null
+    },
+    {
+      "text_id": 132,
+      "paragraph_id": 34,
+      "section_id": 10,
+      "text": "This indicates that the descriptions of the true matches were more similar to each other than were descriptions of random nonmatched pairs.",
+      "page_number": null
+    },
+    {
+      "text_id": 133,
+      "paragraph_id": 34,
+      "section_id": 10,
+      "text": "Therefore, the language-based descriptions of photographed bodies were sufficient to synthesize three-dimensional reconstructions of body shapes that matched these descriptions.",
+      "page_number": null
+    },
+    {
+      "text_id": 134,
+      "paragraph_id": 34,
+      "section_id": 10,
+      "text": "This synthesis was accomplished by linking a language space, derived from a handful of descriptor terms, to a shape space derived from a large and independent sample of human bodies.",
+      "page_number": null
+    },
+    {
+      "text_id": 135,
+      "paragraph_id": 35,
+      "section_id": 10,
+      "text": "Next, we asked whether the resemblance was based on the pattern of variation captured by the combination of all five dimensions in the language subspace or by one or two perceptually salient dimensions.",
+      "page_number": null
+    },
+    {
+      "text_id": 136,
+      "paragraph_id": 35,
+      "section_id": 10,
+      "text": "To dissect the role of individual axes of variation in resemblance, the distances between the projected and original points were recomputed along single dimensions in the language space corresponding to (a) weight, (b) height, (c) classically feminine versus other, (d) masculine versus curvy, and (e) waist height.",
+      "page_number": null
+    },
+    {
+      "text_id": 137,
+      "paragraph_id": 35,
+      "section_id": 10,
+      "text": "Figure 5 shows the results of a bootstrap test of the sample means of the nonmatched pairs along the individual axes.",
+      "page_number": null
+    },
+    {
+      "text_id": 138,
+      "paragraph_id": 35,
+      "section_id": 10,
+      "text": "There was no overlap (p < .001) between the mean of the true-match pairs and the bootstrap histogram for the axes corresponding to weight (Axis 1; true-match: M = 0.1710; nonmatched: M = 0.6961, 95% CI = [0.6935, 0.6988]), height (Axis 2; true-match: M = 0.1890; nonmatched: M = 0.4214, 95% CI = [0.4199, 0.4229]), and classically feminine shapes versus other shapes (Axis 3; true-match: M = 0.2187; nonmatched: M = 0.3750, 95% CI = [0.3737, 0.3763]).",
+      "page_number": null
+    },
+    {
+      "text_id": 139,
+      "paragraph_id": 35,
+      "section_id": 10,
+      "text": "For the waist-height axis, the descriptions of the true-match pairs were significantly more similar to each other than the bootstrapped nonmatched pairs (Axis 5; true-match: M = 0.1976; nonmatched: M = 0.2329, 95% CI = [0.2320, 0.2338], p = .013).",
+      "page_number": null
+    },
+    {
+      "text_id": 140,
+      "paragraph_id": 35,
+      "section_id": 10,
+      "text": "For the masculine-versus-curvy axis (Axis 4), the true pairs were marginally more similar than the descriptions made to random pairs (true-match: M = 0.2693; nonmatched: M = 0.3018, 95% CI = [0.3007, 0.3029], p = .067).",
+      "page_number": null
+    },
+    {
+      "text_id": 141,
+      "paragraph_id": 35,
+      "section_id": 10,
+      "text": "These results indicate that four of five dimensions contributed significantly to the overall resemblance between the photographs and three-dimensional models.",
+      "page_number": null
+    },
+    {
+      "text_id": 142,
+      "paragraph_id": 35,
+      "section_id": 10,
+      "text": "The remaining dimension was related marginally (p = .067) to the shape variation.",
+      "page_number": null
+    },
+    {
+      "text_id": 143,
+      "paragraph_id": 35,
+      "section_id": 10,
+      "text": "Given that Axis 4 was not significant, we recomputed the bootstrap on a fourdimensional subspace, eliminating this axis.",
+      "page_number": null
+    },
+    {
+      "text_id": 144,
+      "paragraph_id": 35,
+      "section_id": 10,
+      "text": "As was the case for the full five-dimensional subspace, there was no overlap between the mean of the matched identity distances and the histogram of means for sampled nonmatched identities (subspace of Axes 1, 2, 3, and 5; truematch: M = 0.3963; nonmatched: M = 1.0734, 95% CI = [1.0712, 1.0756]).",
+      "page_number": null
+    },
+    {
+      "text_id": 145,
+      "paragraph_id": 36,
+      "section_id": 10,
+      "text": "A closer look at the data also suggested that this resemblance was sufficient to support body-shape categorization but not identification as a unique individual.",
+      "page_number": null
+    },
+    {
+      "text_id": 146,
+      "paragraph_id": 36,
+      "section_id": 10,
+      "text": "This finding is consistent with humans' preferential reliance on faces for identification (Burton, Wilson, Cowan, & Bruce, 1999;Hahn et al., 2016;Robbins & Coltheart,",
+      "page_number": null
+    },
+    {
+      "text_id": 147,
+      "paragraph_id": 40,
+      "section_id": 12,
+      "text": "Fig.",
+      "page_number": null
+    },
+    {
+      "text_id": 148,
+      "paragraph_id": 40,
+      "section_id": 12,
+      "text": "4.",
+      "page_number": null
+    },
+    {
+      "text_id": 149,
+      "paragraph_id": 40,
+      "section_id": 12,
+      "text": "Schematic illustration of the method for measuring resemblance in the language space between photographed bodies (blue circles) and three-dimensional body models (red circles).",
+      "page_number": null
+    },
+    {
+      "text_id": 150,
+      "paragraph_id": 40,
+      "section_id": 12,
+      "text": "As illustrated, each three-dimensional body model is projected as a point into the language space using its description vector.",
+      "page_number": null
+    },
+    {
+      "text_id": 151,
+      "paragraph_id": 40,
+      "section_id": 12,
+      "text": "The dotted purple lines indicate true-match pairs (i.e., a photo and its corresponding model body).",
+      "page_number": null
+    },
+    {
+      "text_id": 152,
+      "paragraph_id": 40,
+      "section_id": 12,
+      "text": "An example of a true-match pair is circled at the upper left of the language space.",
+      "page_number": null
+    },
+    {
+      "text_id": 153,
+      "paragraph_id": 40,
+      "section_id": 12,
+      "text": "The oval at the bottom highlights a nonmatched pair, illustrating the distance between descriptions of a photographed body and an unrelated threedimensional body model.",
+      "page_number": null
+    },
+    {
+      "text_id": 154,
+      "paragraph_id": 41,
+      "section_id": 12,
+      "text": "2012).",
+      "page_number": null
+    },
+    {
+      "text_id": 155,
+      "paragraph_id": 41,
+      "section_id": 12,
+      "text": "Because categorical information supports social and affective judgments that rely on coarse shape (e.g., femininity, athleticism, obesity), particular body descriptions apply accurately to many people.",
+      "page_number": null
+    },
+    {
+      "text_id": 156,
+      "paragraph_id": 41,
+      "section_id": 12,
+      "text": "Therefore, the projection of a description of a three-dimensional body reconstruction should be close, not only to the body whose description was used to create it but also to other categorically similar bodies.",
+      "page_number": null
+    },
+    {
+      "text_id": 157,
+      "paragraph_id": 41,
+      "section_id": 12,
+      "text": "Evidence for this categorical role can be seen by looking at the rank of the proximity of the true match with respect to all other nonmatched pairs (Fig.",
+      "page_number": null
+    },
+    {
+      "text_id": 158,
+      "paragraph_id": 41,
+      "section_id": 12,
+      "text": "6).",
+      "page_number": null
+    },
+    {
+      "text_id": 159,
+      "paragraph_id": 41,
+      "section_id": 12,
+      "text": "The description of the three-dimensional body was the closest point (i.e., body description) to its matched photograph's description in only 8% of the 164 cases, but it was among the 10 closest points in 40% of cases and among the 30 closest points in 80% of the cases.",
+      "page_number": null
+    },
+    {
+      "text_id": 160,
+      "paragraph_id": 43,
+      "section_id": 13,
+      "text": "Language can act as a concise code for complex body shapes, which thereby provides a support structure for the social and interpersonal judgments people make about others on the basis of their bodies.",
+      "page_number": null
+    },
+    {
+      "text_id": 161,
+      "paragraph_id": 43,
+      "section_id": 13,
+      "text": "Linguistic body descriptors are compact but can operate as powerful perceptual discriminators.",
+      "page_number": null
+    },
+    {
+      "text_id": 162,
+      "paragraph_id": 43,
+      "section_id": 13,
+      "text": "Here, the primary axes of variation that emerged from short, language-based descriptions",
+      "page_number": null
+    },
+    {
+      "text_id": 163,
+      "paragraph_id": 45,
+      "section_id": 14,
+      "text": "Mean Distance",
+      "page_number": null
+    },
+    {
+      "text_id": 164,
+      "paragraph_id": 46,
+      "section_id": 14,
+      "text": "0.4 0.6 0.8 1.0 1.2 1.4 0.0 0.2 0.4 0.6 0.8 1.0 0.1 0.2 0.3 0.4 0.5 0.6 Axis 1: Weight Random Pairs Matched Pairs 95th Percentile Axis 2: Height Axis 3: Pear-Shaped vs.",
+      "page_number": null
+    },
+    {
+      "text_id": 165,
+      "paragraph_id": 46,
+      "section_id": 14,
+      "text": "Other 0.20 0.30 0.40 0.50 Axis 4: Masculine vs.",
+      "page_number": null
+    },
+    {
+      "text_id": 166,
+      "paragraph_id": 46,
+      "section_id": 14,
+      "text": "Curvy 0.20 0.25 0.30 0.35 0.40 Axis 5: Waist Height 0.15 0.20 0.25 0.30 Mean Distance Mean Distance Mean Distance Mean Distance Mean Distance of a modest number of people mirrored those extracted from high-resolution three-dimensional shape measurements captured from a far larger number of people.",
+      "page_number": null
+    },
+    {
+      "text_id": 167,
+      "paragraph_id": 46,
+      "section_id": 14,
+      "text": "This provided a simple and direct method for translating between verbal descriptions of people and complete human body shapes.",
+      "page_number": null
+    },
+    {
+      "text_id": 168,
+      "paragraph_id": 46,
+      "section_id": 14,
+      "text": "It is worth noting that an easily visible parity of axis interpretation (e.g., weight, height, waist-height) for the language and shape space is not necessary to establish a computationally valid mapping between descriptions and body shapes.",
+      "page_number": null
+    },
+    {
+      "text_id": 169,
+      "paragraph_id": 46,
+      "section_id": 14,
+      "text": "This is because standard machine-learning techniques can be applied to learn these mappings using a sample of descriptions and their associated body shapes (cf.",
+      "page_number": null
+    },
+    {
+      "text_id": 170,
+      "paragraph_id": 46,
+      "section_id": 14,
+      "text": "Streuber et al., 2016).",
+      "page_number": null
+    },
+    {
+      "text_id": 171,
+      "paragraph_id": 46,
+      "section_id": 14,
+      "text": "The direct machine-learning approach bypasses the underlying psychology of the language description space that ultimately makes it possible to generate bodies using the capacity of language to encapsulate a diverse set of visual features.",
+      "page_number": null
+    },
+    {
+      "text_id": 172,
+      "paragraph_id": 46,
+      "section_id": 14,
+      "text": "These complex features underlie such concepts as \"stout, portly gentlemen\" and \"shapely, hourglass women.\"",
+      "page_number": null
+    },
+    {
+      "text_id": 173,
+      "paragraph_id": 46,
+      "section_id": 14,
+      "text": "Language is fundamentally a tool for conveying meaning, with \"meaning\" in this case referring to body shape.",
+      "page_number": null
+    },
+    {
+      "text_id": 174,
+      "paragraph_id": 46,
+      "section_id": 14,
+      "text": "A fundamental task of the visual system is to convert retinal images into representations of meaningful objects.",
+      "page_number": null
+    },
+    {
+      "text_id": 175,
+      "paragraph_id": 46,
+      "section_id": 14,
+      "text": "Early visual processing extracts generic image-based features by filtering retinotopic data.",
+      "page_number": null
+    },
+    {
+      "text_id": 176,
+      "paragraph_id": 46,
+      "section_id": 14,
+      "text": "High-level visual cortex, however, is organized around categories of objects (Grill-Spector & Weiner, 2014).",
+      "page_number": null
+    },
+    {
+      "text_id": 177,
+      "paragraph_id": 46,
+      "section_id": 14,
+      "text": "Indeed, body-selective cortical areas in the ventral visual stream (Downing, Jiang, Shuman, & Kanwisher, 2001;Peelen & Downing, 2005) are anatomically distinct, even from presumably \"related\" face-selective areas (Schwarzlose, Baker, & Kanwisher, 2005).",
+      "page_number": null
+    },
+    {
+      "text_id": 178,
+      "paragraph_id": 47,
+      "section_id": 14,
+      "text": "Remarkably little is known about the visual features that operate within category-specific cortex.",
+      "page_number": null
+    },
+    {
+      "text_id": 179,
+      "paragraph_id": 47,
+      "section_id": 14,
+      "text": "Using bodies as a microcosm, the present results suggest that high-level visual features might be better modeled with linguistic constructs than with multipurpose shape primitives.",
+      "page_number": null
+    },
+    {
+      "text_id": 180,
+      "paragraph_id": 47,
+      "section_id": 14,
+      "text": "By contrast to features in early visual processing, these highlevel features would be category specific and would provide a flexible framework for representing qualitatively diverse, category-specific visual information (local, global, gender-specific, strength, and movement potential information) about bodies.",
+      "page_number": null
+    },
+    {
+      "text_id": 181,
+      "paragraph_id": 47,
+      "section_id": 14,
+      "text": "This information can exist at different spatial scales and across multiple levels of abstraction.",
+      "page_number": null
+    },
+    {
+      "text_id": 182,
+      "paragraph_id": 47,
+      "section_id": 14,
+      "text": "The perceptual relevance of these kinds of features provides psychological grounding for computational vision work that has harnessed human-sourced language-based descriptions of images to train machine-learning algorithms.",
+      "page_number": null
+    },
+    {
+      "text_id": 183,
+      "paragraph_id": 47,
+      "section_id": 14,
+      "text": "This approach has made impressive progress on long-standing challenges in classifying objects (Farhadi, Endres, Hoiem, & Forsyth, 2009;Lampert, Nickisch, & Harmeling, 2014;Yumer, Chaudhuri, Hodgins, & Kara, 2015), faces (Kumar, Berg, Belhumeur, & Nayar, 2011), human activities (Ziaeefar & Bergevin, 2015), and scenes (Li & Li, 2007).",
+      "page_number": null
+    },
+    {
+      "text_id": 184,
+      "paragraph_id": 48,
+      "section_id": 14,
+      "text": "In applied terms, eyewitnesses describe suspects' bodies as commonly as their faces (Reid, Nixon, & Stevenage, 2014), which indicates a pressing need for mechanisms that translate between body descriptions and shapes.",
+      "page_number": null
+    },
+    {
+      "text_id": 185,
+      "paragraph_id": 48,
+      "section_id": 14,
+      "text": "Comparative judgments of even single-word body descriptors (i.e., taller, heavier) can be used in computational applications to improve body descriptors for identification (Reid et al., 2014).",
+      "page_number": null
+    },
+    {
+      "text_id": 186,
+      "paragraph_id": 48,
+      "section_id": 14,
+      "text": "Our approach goes beyond comparative descriptions but is constrained by demographics, language, and culture.",
+      "page_number": null
+    },
+    {
+      "text_id": 187,
+      "paragraph_id": 48,
+      "section_id": 14,
+      "text": "Language and body-shape mappings will vary across ethnicity and demographics (e.g., age, sex), and particular mappings will apply only among people sharing the same language and cultural views of body shape.",
+      "page_number": null
+    },
+    {
+      "text_id": 188,
+      "paragraph_id": 48,
+      "section_id": 14,
+      "text": "Therefore, tuning these mappings to subpopulations is needed to optimize them for forensic applications.",
+      "page_number": null
+    },
+    {
+      "text_id": 189,
+      "paragraph_id": 48,
+      "section_id": 14,
+      "text": "Notwithstanding, it is possible to engineer the general principles uncovered here with a classical machine-learning approach to make flexible and potentially customizable systems for mapping between descriptions and body shapes (see Streuber et al., 2016).",
+      "page_number": null
+    },
+    {
+      "text_id": 190,
+      "paragraph_id": 48,
+      "section_id": 14,
+      "text": "Although customized mappings that work for particular languages and bodies from specific ethnic and racial groups remain a topic for future research, these tools could be useful for studying cultural and health-related aspects of person perception.",
+      "page_number": null
+    },
+    {
+      "text_id": 191,
+      "paragraph_id": 49,
+      "section_id": 14,
+      "text": "From a broader perspective, the effective use of language to guide body-shape analysis highlights the need for high-level visual representations to stand at the interface between understanding complex shapes and making this understanding available to others through language.",
+      "page_number": null
+    },
+    {
+      "text_id": 192,
+      "paragraph_id": 53,
+      "section_id": 16,
+      "text": "We thank Jake Swindle and Linda Nguyen for assisting in data collection.",
+      "page_number": null
+    },
+    {
+      "text_id": 193,
+      "paragraph_id": 55,
+      "section_id": 17,
+      "text": "All data have been made publicly available via the Open Science Framework and can be accessed at https://osf.io/32tsq/.",
+      "page_number": null
+    },
+    {
+      "text_id": 194,
+      "paragraph_id": 55,
+      "section_id": 17,
+      "text": "The complete Open Practices Disclosure for this article can be found at http://pss.sagepub.com/content/by/supplemental-data.",
+      "page_number": null
+    },
+    {
+      "text_id": 195,
+      "paragraph_id": 55,
+      "section_id": 17,
+      "text": "This article has received the badge for Open Data.",
+      "page_number": null
+    },
+    {
+      "text_id": 196,
+      "paragraph_id": 55,
+      "section_id": 17,
+      "text": "More information about the Open Practices badges can be found at https:// osf.io/tvyxz/wiki/1.",
+      "page_number": null
+    },
+    {
+      "text_id": 197,
+      "paragraph_id": 55,
+      "section_id": 17,
+      "text": "%20View%20the%20Badges/ and http://pss .sagepub.com/content/25/1/3.full.",
+      "page_number": null
+    },
+    {
+      "text_id": 198,
+      "paragraph_id": 57,
+      "section_id": 18,
+      "text": "The authors declared that they had no conflicts of interest with respect to their authorship or the publication of this article.",
+      "page_number": null
+    },
+    {
+      "text_id": 199,
+      "paragraph_id": 59,
+      "section_id": 19,
+      "text": "M Q Hill, C A Hahn, and A J O'Toole designed the experiment.",
+      "page_number": null
+    },
+    {
+      "text_id": 200,
+      "paragraph_id": 59,
+      "section_id": 19,
+      "text": "M Q Hill programmed the experiment and collected and analyzed the data.",
+      "page_number": null
+    },
+    {
+      "text_id": 201,
+      "paragraph_id": 59,
+      "section_id": 19,
+      "text": "S Streuber and M J Black provided geometric body stimuli and assisted in creating the sampling methodology.",
+      "page_number": null
+    },
+    {
+      "text_id": 202,
+      "paragraph_id": 59,
+      "section_id": 19,
+      "text": "C A Hahn assisted in data analysis.",
+      "page_number": null
+    },
+    {
+      "text_id": 203,
+      "paragraph_id": 59,
+      "section_id": 19,
+      "text": "All authors wrote the manuscript.",
+      "page_number": null
+    },
+    {
+      "text_id": 204,
+      "paragraph_id": 61,
+      "section_id": 20,
+      "text": "1.",
+      "page_number": null
+    },
+    {
+      "text_id": 205,
+      "paragraph_id": 61,
+      "section_id": 20,
+      "text": "We report only the analysis of female bodies to focus more on the language-vision relationship than on the actual emergent features for a particular demographic.",
+      "page_number": null
+    },
+    {
+      "text_id": 206,
+      "paragraph_id": 61,
+      "section_id": 20,
+      "text": "We assume that features will differ for sex, race, and age groups.",
+      "page_number": null
+    },
+    {
+      "text_id": 207,
+      "paragraph_id": 61,
+      "section_id": 20,
+      "text": "We chose to report the analysis for females rather than males, because the data set contained fewer males (n = 60) than females (n = 165).",
+      "page_number": null
+    },
+    {
+      "text_id": 208,
+      "paragraph_id": 61,
+      "section_id": 20,
+      "text": "See Streuber et al. (2016) for a related machine-learning approach applied to male bodies.",
+      "page_number": null
+    },
+    {
+      "text_id": 209,
+      "paragraph_id": 61,
+      "section_id": 20,
+      "text": "2.",
+      "page_number": null
+    },
+    {
+      "text_id": 210,
+      "paragraph_id": 61,
+      "section_id": 20,
+      "text": "The \"applies perfectly\" term was used for the analysis to declutter the correspondence-analysis visualization.",
+      "page_number": null
+    },
+    {
+      "text_id": 211,
+      "paragraph_id": 61,
+      "section_id": 20,
+      "text": "The interpretation of axes was the same when all response choices were input to the correspondence analysis.",
+      "page_number": null
+    },
+    {
+      "text_id": 212,
+      "paragraph_id": 61,
+      "section_id": 20,
+      "text": "3.",
+      "page_number": null
+    },
+    {
+      "text_id": 213,
+      "paragraph_id": 61,
+      "section_id": 20,
+      "text": "In a space with male and female bodies, this body clustered with males on Axis 1, which otherwise separated bodies by sex.",
+      "page_number": null
+    },
+    {
+      "text_id": 214,
+      "paragraph_id": 61,
+      "section_id": 20,
+      "text": "We agreed that this body appeared male.",
+      "page_number": null
+    },
+    {
+      "text_id": 215,
+      "paragraph_id": 62,
+      "section_id": 21,
+      "text": "Fig.1.",
+      "page_number": null
+    },
+    {
+      "text_id": 216,
+      "paragraph_id": 62,
+      "section_id": 21,
+      "text": "Example rating screen for (a) photographed bodies and (b) three-dimensional body models.",
+      "page_number": null
+    },
+    {
+      "text_id": 217,
+      "paragraph_id": 62,
+      "section_id": 21,
+      "text": "For each stimulus, participants viewed one standing image and one midstride image simultaneously, and they clicked one of three radio buttons to indicate whether each of 27 descriptor terms applied perfectly, applied somewhat, or did not apply to that particular stimulus.",
+      "page_number": null
+    },
+    {
+      "text_id": 218,
+      "paragraph_id": 62,
+      "section_id": 21,
+      "text": "Photographed bodies were shown with a filter applied to the whole image to obscure facial detail.",
+      "page_number": null
+    },
+    {
+      "text_id": 219,
+      "paragraph_id": 63,
+      "section_id": 22,
+      "text": "Fig.2.",
+      "page_number": null
+    },
+    {
+      "text_id": 220,
+      "paragraph_id": 63,
+      "section_id": 22,
+      "text": "Axes of the language space describing female body types.",
+      "page_number": null
+    },
+    {
+      "text_id": 221,
+      "paragraph_id": 63,
+      "section_id": 22,
+      "text": "Plots of (a) Axes 1 and 2 and (b) Axes 3 and 4 illustrate the relationship between body images (gray circles) and descriptor words (blue circles).",
+      "page_number": null
+    },
+    {
+      "text_id": 222,
+      "paragraph_id": 63,
+      "section_id": 22,
+      "text": "The size of the blue circles reflects the relative magnitude of their contribution scores.",
+      "page_number": null
+    },
+    {
+      "text_id": 223,
+      "paragraph_id": 63,
+      "section_id": 22,
+      "text": "The percentage of explained variance is indicated next to all axis labels.",
+      "page_number": null
+    },
+    {
+      "text_id": 224,
+      "paragraph_id": 63,
+      "section_id": 22,
+      "text": "The descriptor terms with the highest contribution scores for each of the five axes are shown in (c).",
+      "page_number": null
+    },
+    {
+      "text_id": 225,
+      "paragraph_id": 63,
+      "section_id": 22,
+      "text": "Terms with negative projection scores appear on the left, and terms with positive scores appear on the right.",
+      "page_number": null
+    },
+    {
+      "text_id": 226,
+      "paragraph_id": 63,
+      "section_id": 22,
+      "text": "The descriptor words with higher contribution scores appear in darker fonts.",
+      "page_number": null
+    },
+    {
+      "text_id": 227,
+      "paragraph_id": 63,
+      "section_id": 22,
+      "text": "Semantic interpretations of the axes (d) are based on the descriptors with the highest contribution scores at the opposite ends of each axis.",
+      "page_number": null
+    },
+    {
+      "text_id": 228,
+      "paragraph_id": 64,
+      "section_id": 23,
+      "text": "Fig.3.",
+      "page_number": null
+    },
+    {
+      "text_id": 229,
+      "paragraph_id": 64,
+      "section_id": 23,
+      "text": "Shape-space bodies and their relationship to photographed bodies.",
+      "page_number": null
+    },
+    {
+      "text_id": 230,
+      "paragraph_id": 64,
+      "section_id": 23,
+      "text": "The renderings in (a) illustrate the first five axes of the shape space.",
+      "page_number": null
+    },
+    {
+      "text_id": 231,
+      "paragraph_id": 64,
+      "section_id": 23,
+      "text": "For each component, a body 3 standard deviations above the origin and 3 standard deviations below the origin is shown.",
+      "page_number": null
+    },
+    {
+      "text_id": 232,
+      "paragraph_id": 64,
+      "section_id": 23,
+      "text": "The schematic (b) shows the process whereby three-dimensional body models of people in photographs were generated from the descriptions of the photographs.",
+      "page_number": null
+    },
+    {
+      "text_id": 233,
+      "paragraph_id": 64,
+      "section_id": 23,
+      "text": "These descriptions were used to generate a five-dimensional language subspace that was aligned with the five-dimensional shape subspace on the basis of analogously interpreted axes.",
+      "page_number": null
+    },
+    {
+      "text_id": 234,
+      "paragraph_id": 64,
+      "section_id": 23,
+      "text": "Corresponding points in the two subspaces were then used to generate the body models.",
+      "page_number": null
+    },
+    {
+      "text_id": 235,
+      "paragraph_id": 64,
+      "section_id": 23,
+      "text": "Example pairs of photographed bodies and their corresponding approximated three-dimensional bodies (c) are also shown.",
+      "page_number": null
+    },
+    {
+      "text_id": 236,
+      "paragraph_id": 65,
+      "section_id": 24,
+      "text": "Fig.5.",
+      "page_number": null
+    },
+    {
+      "text_id": 237,
+      "paragraph_id": 65,
+      "section_id": 24,
+      "text": "Results of the bootstrap test of pair distances in the language space.",
+      "page_number": null
+    },
+    {
+      "text_id": 238,
+      "paragraph_id": 65,
+      "section_id": 24,
+      "text": "Each panel shows the placement of the mean of distances between members of true-match pairs, along with the histogram of mean distances of nonmatched identity pairs.",
+      "page_number": null
+    },
+    {
+      "text_id": 239,
+      "paragraph_id": 65,
+      "section_id": 24,
+      "text": "Results are shown separately for the five-dimensional language subspace and each individual axis within that subspace.",
+      "page_number": null
+    },
+    {
+      "text_id": 240,
+      "paragraph_id": 66,
+      "section_id": 25,
+      "text": "Fig 6 Cumulative percentage of matched pairs as a function of ranked proximity in the five-dimensional language subspace.",
+      "page_number": null
+    },
+    {
+      "text_id": 241,
+      "paragraph_id": 66,
+      "section_id": 25,
+      "text": "The dashed lines serve as a visual aid to show the percentage of matched identity pairs at ranks 1, 10, and 30.",
+      "page_number": null
+    },
+    {
+      "text_id": 242,
+      "paragraph_id": 67,
+      "section_id": 26,
+      "text": "Body Descriptor Terms Used in the Experiment",
+      "page_number": null
+    },
+    {
+      "text_id": 243,
+      "paragraph_id": 68,
+      "section_id": 27,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 244,
+      "paragraph_id": 69,
+      "section_id": 27,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 245,
+      "paragraph_id": 70,
+      "section_id": 27,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 246,
+      "paragraph_id": 71,
+      "section_id": 27,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 247,
+      "paragraph_id": 72,
+      "section_id": 27,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 248,
+      "paragraph_id": 73,
+      "section_id": 27,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 249,
+      "paragraph_id": 74,
+      "section_id": 27,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 250,
+      "paragraph_id": 75,
+      "section_id": 27,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 251,
+      "paragraph_id": 76,
+      "section_id": 27,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 252,
+      "paragraph_id": 77,
+      "section_id": 27,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 253,
+      "paragraph_id": 78,
+      "section_id": 27,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 254,
+      "paragraph_id": 79,
+      "section_id": 27,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 255,
+      "paragraph_id": 80,
+      "section_id": 27,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 256,
+      "paragraph_id": 81,
+      "section_id": 27,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 257,
+      "paragraph_id": 82,
+      "section_id": 27,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 258,
+      "paragraph_id": 83,
+      "section_id": 27,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 259,
+      "paragraph_id": 84,
+      "section_id": 27,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 260,
+      "paragraph_id": 85,
+      "section_id": 27,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 261,
+      "paragraph_id": 86,
+      "section_id": 27,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 262,
+      "paragraph_id": 87,
+      "section_id": 27,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 263,
+      "paragraph_id": 88,
+      "section_id": 27,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 264,
+      "paragraph_id": 89,
+      "section_id": 27,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 265,
+      "paragraph_id": 90,
+      "section_id": 27,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 266,
+      "paragraph_id": 91,
+      "section_id": 27,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 267,
+      "paragraph_id": 92,
+      "section_id": 27,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 268,
+      "paragraph_id": 93,
+      "section_id": 27,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 269,
+      "paragraph_id": 94,
+      "section_id": 27,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 270,
+      "paragraph_id": 95,
+      "section_id": 27,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 271,
+      "paragraph_id": 96,
+      "section_id": 27,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 272,
+      "paragraph_id": 97,
+      "section_id": 27,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 273,
+      "paragraph_id": 98,
+      "section_id": 27,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 274,
+      "paragraph_id": 99,
+      "section_id": 27,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 275,
+      "paragraph_id": 100,
+      "section_id": 27,
+      "text": "",
+      "page_number": null
+    }
+  ],
+  "section": [
+    {
+      "section_id": 0,
+      "header": "Abstract",
+      "parent_section_id": null,
+      "section_type": "abstract",
+      "classification_score": null
+    },
+    {
+      "section_id": 1,
+      "header": "[div-01]",
+      "parent_section_id": null,
+      "section_type": "intro",
+      "classification_score": null
+    },
+    {
+      "section_id": 3,
+      "header": "Participants",
+      "parent_section_id": null,
+      "section_type": "method",
+      "classification_score": null
+    },
+    {
+      "section_id": 4,
+      "header": "Stimuli",
+      "parent_section_id": null,
+      "section_type": "method",
+      "classification_score": null
+    },
+    {
+      "section_id": 5,
+      "header": "Descriptor terms",
+      "parent_section_id": null,
+      "section_type": "method",
+      "classification_score": null
+    },
+    {
+      "section_id": 6,
+      "header": "Procedure",
+      "parent_section_id": null,
+      "section_type": "method",
+      "classification_score": null
+    },
+    {
+      "section_id": 7,
+      "header": "Language-based body-description space.",
+      "parent_section_id": null,
+      "section_type": "method",
+      "classification_score": null
+    },
+    {
+      "section_id": 8,
+      "header": "Generating three-dimensional body models from descriptions.",
+      "parent_section_id": null,
+      "section_type": "method",
+      "classification_score": null
+    },
+    {
+      "section_id": 9,
+      "header": "Human descriptions of three-dimensional bodies.",
+      "parent_section_id": null,
+      "section_type": "method",
+      "classification_score": null
+    },
+    {
+      "section_id": 10,
+      "header": "Results",
+      "parent_section_id": null,
+      "section_type": "results",
+      "classification_score": null
+    },
+    {
+      "section_id": 12,
+      "header": "Descriptor Space",
+      "parent_section_id": null,
+      "section_type": "results",
+      "classification_score": null
+    },
+    {
+      "section_id": 13,
+      "header": "Discussion",
+      "parent_section_id": null,
+      "section_type": "discussion",
+      "classification_score": null
+    },
+    {
+      "section_id": 14,
+      "header": "Five-Dimensional Language Subspace",
+      "parent_section_id": null,
+      "section_type": "discussion",
+      "classification_score": null
+    },
+    {
+      "section_id": 16,
+      "header": "Acknowledgments",
+      "parent_section_id": null,
+      "section_type": "acknowledgement",
+      "classification_score": null
+    },
+    {
+      "section_id": 17,
+      "header": "Open Practices",
+      "parent_section_id": null,
+      "section_type": "availability",
+      "classification_score": null
+    },
+    {
+      "section_id": 18,
+      "header": "Declaration of Conflicting Interests",
+      "parent_section_id": null,
+      "section_type": "conflict",
+      "classification_score": null
+    },
+    {
+      "section_id": 19,
+      "header": "Author Contributions",
+      "parent_section_id": null,
+      "section_type": "contribution",
+      "classification_score": null
+    },
+    {
+      "section_id": 20,
+      "header": "Notes",
+      "parent_section_id": null,
+      "section_type": "annex",
+      "classification_score": null
+    },
+    {
+      "section_id": 21,
+      "header": "Fig 1",
+      "parent_section_id": null,
+      "section_type": "figure",
+      "classification_score": null
+    },
+    {
+      "section_id": 22,
+      "header": "Fig 2",
+      "parent_section_id": null,
+      "section_type": "figure",
+      "classification_score": null
+    },
+    {
+      "section_id": 23,
+      "header": "Fig 3",
+      "parent_section_id": null,
+      "section_type": "figure",
+      "classification_score": null
+    },
+    {
+      "section_id": 24,
+      "header": "Fig 5",
+      "parent_section_id": null,
+      "section_type": "figure",
+      "classification_score": null
+    },
+    {
+      "section_id": 25,
+      "header": "Fig 6",
+      "parent_section_id": null,
+      "section_type": "figure",
+      "classification_score": null
+    },
+    {
+      "section_id": 26,
+      "header": "Table 1 .",
+      "parent_section_id": null,
+      "section_type": "table",
+      "classification_score": null
+    },
+    {
+      "section_id": 27,
+      "header": "References",
+      "parent_section_id": null,
+      "section_type": "references",
+      "classification_score": null
+    }
+  ],
+  "url": [
+    {
+      "href": "https://osf.io/32tsq",
+      "link_text": null,
+      "text_id": 193
+    },
+    {
+      "href": "http://pss.sagepub.com/content/by/supplemental-data",
+      "link_text": null,
+      "text_id": 194
+    },
+    {
+      "href": "osf.io/tvyxz/wiki/1",
+      "link_text": null,
+      "text_id": 196
+    },
+    {
+      "href": "sagepub.com/content/25/1/3.full",
+      "link_text": null,
+      "text_id": 197
+    }
+  ],
+  "bib": [
+    {
+      "bib_type": "article",
+      "doi": "10.4135/9781412961288",
+      "title": "Correspondence analysis",
+      "authors": "Abdi, H; Williams, L J",
+      "editors": "Salkind, N J",
+      "publisher": "Sage",
+      "year": 2010,
+      "volume": "1",
+      "issue": "",
+      "first_page": "267",
+      "last_page": "278",
+      "container": "",
+      "bib_id": 0,
+      "year_suffix": "",
+      "text_id": 243
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1145/882262.882311",
+      "title": "The space of human body shapes: Reconstruction and parameterization from range scans",
+      "authors": "Allen, B; Curless, B; Popovic, ´; , Z",
+      "editors": "",
+      "publisher": "",
+      "year": 2003,
+      "volume": "22",
+      "issue": "",
+      "first_page": "587",
+      "last_page": "594",
+      "container": "ACM Transactions on Graphics",
+      "bib_id": 1,
+      "year_suffix": "",
+      "text_id": 244
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1145/1073204.1073207",
+      "title": "SCAPE: Shape completion and animation of people",
+      "authors": "Anguelov, D; Srinivasan, P; Koller, D; Thrun, S; Rodgers, J; Davis, J",
+      "editors": "",
+      "publisher": "",
+      "year": 2005,
+      "volume": "24",
+      "issue": "",
+      "first_page": "408",
+      "last_page": "416",
+      "container": "ACM Transactions on Graphics",
+      "bib_id": 2,
+      "year_suffix": "",
+      "text_id": 245
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1126/science.1224313",
+      "title": "Body cues, not facial expressions, discriminate between intense positive and negative emotions",
+      "authors": "Aviezer, H; Trope, Y; Todorov, A",
+      "editors": "",
+      "publisher": "",
+      "year": 2012,
+      "volume": "338",
+      "issue": "",
+      "first_page": "1225",
+      "last_page": "1229",
+      "container": "Science",
+      "bib_id": 3,
+      "year_suffix": "",
+      "text_id": 246
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "",
+      "authors": "Benzécri, J.-P",
+      "editors": "",
+      "publisher": "Dunod",
+      "year": 1976,
+      "volume": "",
+      "issue": "",
+      "first_page": null,
+      "last_page": null,
+      "container": "",
+      "bib_id": 4,
+      "year_suffix": "",
+      "text_id": 247
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "Face recognition in poor-quality video: Evidence from security surveillance",
+      "authors": "Burton, A M; Wilson, S; Cowan, M; Bruce, V",
+      "editors": "",
+      "publisher": "",
+      "year": 1999,
+      "volume": "10",
+      "issue": "",
+      "first_page": "243",
+      "last_page": "248",
+      "container": "Psychological Science",
+      "bib_id": 5,
+      "year_suffix": "",
+      "text_id": 248
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1177/002214650504600303",
+      "title": "Is obesity stigmatizing? Body weight, perceived discrimination, and psychological wellbeing in the United States",
+      "authors": "Carr, D; Friedman, M A",
+      "editors": "",
+      "publisher": "",
+      "year": 2005,
+      "volume": "46",
+      "issue": "",
+      "first_page": "244",
+      "last_page": "259",
+      "container": "Journal of Health and Social Behavior",
+      "bib_id": 6,
+      "year_suffix": "",
+      "text_id": 249
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1016/j.evolhumbehav.2009.06.005",
+      "title": "The relative importance of the face and body in judgments of human physical attractiveness",
+      "authors": "Currie, T E; Little, A C",
+      "editors": "",
+      "publisher": "",
+      "year": 2009,
+      "volume": "30",
+      "issue": "",
+      "first_page": "409",
+      "last_page": "416",
+      "container": "Evolution & Human Behavior",
+      "bib_id": 7,
+      "year_suffix": "",
+      "text_id": 250
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1002/wcs.1335",
+      "title": "The perception of emotion in body expressions",
+      "authors": "De Gelder, B; De Borst, A W; Watson, R",
+      "editors": "",
+      "publisher": "",
+      "year": 2015,
+      "volume": "6",
+      "issue": "",
+      "first_page": "149",
+      "last_page": "158",
+      "container": "Wiley Interdisciplinary Reviews: Cognitive Science",
+      "bib_id": 8,
+      "year_suffix": "",
+      "text_id": 251
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1097/00001756-200604240-00006",
+      "title": "Non-conscious recognition of emotional body language",
+      "authors": "De Gelder, B; Hadjikhani, N",
+      "editors": "",
+      "publisher": "",
+      "year": 2006,
+      "volume": "17",
+      "issue": "",
+      "first_page": "583",
+      "last_page": "586",
+      "container": "NeuroReport",
+      "bib_id": 9,
+      "year_suffix": "",
+      "text_id": 252
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1126/science.1063414",
+      "title": "A cortical area selective for visual processing of the human body",
+      "authors": "Downing, P E; Jiang, Y; Shuman, M; Kanwisher, N",
+      "editors": "",
+      "publisher": "",
+      "year": 2001,
+      "volume": "293",
+      "issue": "",
+      "first_page": "2470",
+      "last_page": "2473",
+      "container": "Science",
+      "bib_id": 10,
+      "year_suffix": "",
+      "text_id": 253
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1109/CVPR.2009.5206772",
+      "title": "Describing objects by their attributes",
+      "authors": "Farhadi, A; Endres, I; Hoiem, D; Forsyth, D",
+      "editors": "",
+      "publisher": "",
+      "year": 2009,
+      "volume": "",
+      "issue": "",
+      "first_page": "1778",
+      "last_page": "1785",
+      "container": "",
+      "bib_id": 11,
+      "year_suffix": "",
+      "text_id": 254
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "",
+      "authors": "Greenacre, M",
+      "editors": "",
+      "publisher": "Chapman & Hall/CRC",
+      "year": 2007,
+      "volume": "",
+      "issue": "",
+      "first_page": null,
+      "last_page": null,
+      "container": "",
+      "bib_id": 12,
+      "year_suffix": "",
+      "text_id": 255
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1038/nrn3747",
+      "title": "The functional architecture of the ventral temporal cortex and its role in categorization",
+      "authors": "Grill-Spector, K; Weiner, K S",
+      "editors": "",
+      "publisher": "",
+      "year": 2014,
+      "volume": "15",
+      "issue": "",
+      "first_page": "536",
+      "last_page": "548",
+      "container": "Nature Reviews Neuroscience",
+      "bib_id": 13,
+      "year_suffix": "",
+      "text_id": 256
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1111/bjop.12125",
+      "title": "Dissecting the time course of person recognition in natural viewing environments",
+      "authors": "Hahn, C A; O'toole, A J; Phillips, P J",
+      "editors": "",
+      "publisher": "",
+      "year": 2016,
+      "volume": "107",
+      "issue": "",
+      "first_page": "117",
+      "last_page": "134",
+      "container": "British Journal of Psychology",
+      "bib_id": 14,
+      "year_suffix": "",
+      "text_id": 257
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1007/978-3-642-33783-3_18",
+      "title": "Coregistration: Simultaneous alignment and modeling of articulated 3D shape",
+      "authors": "Hirshberg, D A; Loper, M; Rachlin, E; Black, M J",
+      "editors": "Fitzgibbon, A; Lazebnik, S; Perona, P; Sato, Y; Schmid, C",
+      "publisher": "Springer-Verlag",
+      "year": 2012,
+      "volume": "7577",
+      "issue": "6",
+      "first_page": "242",
+      "last_page": "255",
+      "container": "",
+      "bib_id": 15,
+      "year_suffix": "",
+      "text_id": 258
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1109/TPAMI.2011",
+      "title": "Describable visual attributes for face verification and image search",
+      "authors": "Kumar, N; Berg, A; Belhumeur, P N; Nayar, S",
+      "editors": "",
+      "publisher": "",
+      "year": 2011,
+      "volume": "33",
+      "issue": "",
+      "first_page": "1962",
+      "last_page": "1977",
+      "container": "IEEE Transactions on Pattern Analysis and Machine Intelligence",
+      "bib_id": 16,
+      "year_suffix": "",
+      "text_id": 259
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "Attributebased classification for zero-shot visual object categorization",
+      "authors": "Lampert, C H; Nickisch, H; Harmeling, S",
+      "editors": "",
+      "publisher": "",
+      "year": 2014,
+      "volume": "36",
+      "issue": "",
+      "first_page": "453",
+      "last_page": "465",
+      "container": "IEEE: Transactions on Pattern Analysis and Machine Intelligence",
+      "bib_id": 17,
+      "year_suffix": "",
+      "text_id": 260
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1109/ICCV.2007.4408872",
+      "title": "What, where and who? Classifying events by scene and object recognition",
+      "authors": "Li, L.-J; Li, F.-F",
+      "editors": "",
+      "publisher": "IEEE",
+      "year": 2007,
+      "volume": "",
+      "issue": "",
+      "first_page": "1",
+      "last_page": "8",
+      "container": "",
+      "bib_id": 18,
+      "year_suffix": "",
+      "text_id": 261
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1109/TPAMI.2005.90",
+      "title": "A video database of moving faces and people",
+      "authors": "O'toole, A J; Harms, J; Snow, S L; Hurst, D R; Pappas, M R; Ayyad, J H; Abdi, H",
+      "editors": "",
+      "publisher": "",
+      "year": 2005,
+      "volume": "27",
+      "issue": "",
+      "first_page": "812",
+      "last_page": "816",
+      "container": "IEEE Transactions on Pattern Analysis and Machine Intelligence",
+      "bib_id": 19,
+      "year_suffix": "",
+      "text_id": 262
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1152/jn.00513.2004",
+      "title": "Selectivity for the human body in the fusiform gyrus",
+      "authors": "Peelen, M V; Downing, P E",
+      "editors": "",
+      "publisher": "",
+      "year": 2005,
+      "volume": "93",
+      "issue": "",
+      "first_page": "603",
+      "last_page": "608",
+      "container": "Journal of Neurophysiology",
+      "bib_id": 20,
+      "year_suffix": "",
+      "text_id": 263
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1111/j.1420-9101.2007.01477",
+      "title": "Does attractiveness in men provide clues to semen quality?",
+      "authors": "Peters, M; Rhodes, G; Simmons, L W",
+      "editors": "",
+      "publisher": "",
+      "year": 2008,
+      "volume": "21",
+      "issue": "",
+      "first_page": "572",
+      "last_page": "579",
+      "container": "Journal of Evolutionary Biology",
+      "bib_id": 21,
+      "year_suffix": "",
+      "text_id": 264
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1145/2641568",
+      "title": "Can I recognize my body's weight? The influence of shape and texture on the perception of self",
+      "authors": "Piryankova, I V; Stefanucci, J K; Romero, J; De La Rosa, S; Black, M J; Mohler, B J",
+      "editors": "",
+      "publisher": "",
+      "year": 2014,
+      "volume": "11",
+      "issue": "13",
+      "first_page": null,
+      "last_page": null,
+      "container": "ACM Transactions on Applied Perception",
+      "bib_id": 22,
+      "year_suffix": "",
+      "text_id": 265
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1038/oby.2008.636",
+      "title": "The stigma of obesity: A review and update",
+      "authors": "Puhl, R M; Heuer, C A",
+      "editors": "",
+      "publisher": "",
+      "year": 2009,
+      "volume": "17",
+      "issue": "",
+      "first_page": "941",
+      "last_page": "964",
+      "container": "Obesity",
+      "bib_id": 23,
+      "year_suffix": "",
+      "text_id": 266
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1109/TPAMI.2013.219",
+      "title": "Soft biometrics: Human identification using comparative descriptions",
+      "authors": "Reid, D A; Nixon, M S; Stevenage, S V",
+      "editors": "",
+      "publisher": "",
+      "year": 2014,
+      "volume": "36",
+      "issue": "",
+      "first_page": "1216",
+      "last_page": "1228",
+      "container": "IEEE Transactions on Pattern Analysis and Machine Intelligence",
+      "bib_id": 24,
+      "year_suffix": "",
+      "text_id": 267
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1177/0956797613492986",
+      "title": "Unaware person recognition from the body when face identification fails",
+      "authors": "Rice, A; Phillips, P J; Natu, V; An, X; O'toole, A J",
+      "editors": "",
+      "publisher": "",
+      "year": 2013,
+      "volume": "24",
+      "issue": "",
+      "first_page": "2235",
+      "last_page": "2243",
+      "container": "Psychological Science",
+      "bib_id": 25,
+      "year_suffix": "",
+      "text_id": 268
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1002/acp.2969",
+      "title": "The role of the face and body in unfamiliar person identification",
+      "authors": "Rice, A; Phillips, P J; O'toole, A",
+      "editors": "",
+      "publisher": "",
+      "year": 2013,
+      "volume": "27",
+      "issue": "",
+      "first_page": "761",
+      "last_page": "768",
+      "container": "Applied Cognitive Psychology",
+      "bib_id": 26,
+      "year_suffix": "",
+      "text_id": 269
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1037/a0028584",
+      "title": "The effects of inversion and familiarity on face versus body cues to person recognition",
+      "authors": "Robbins, R A; Coltheart, M",
+      "editors": "",
+      "publisher": "",
+      "year": 2012,
+      "volume": "38",
+      "issue": "",
+      "first_page": "1098",
+      "last_page": "1104",
+      "container": "Journal of Experimental Psychology: Human Perception and Performance",
+      "bib_id": 27,
+      "year_suffix": "",
+      "text_id": 270
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1523/JNEUROSCI.2621-05.2005",
+      "title": "Separate face and body selectivity on the fusiform gyrus",
+      "authors": "Schwarzlose, R F; Baker, C I; Kanwisher, N",
+      "editors": "",
+      "publisher": "",
+      "year": 2005,
+      "volume": "25",
+      "issue": "",
+      "first_page": "11055",
+      "last_page": "11059",
+      "container": "The Journal of Neuroscience",
+      "bib_id": 28,
+      "year_suffix": "",
+      "text_id": 271
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1145/2897824.2925981",
+      "title": "Body talk: Crowdshaping realistic 3D avatars with words",
+      "authors": "Streuber, S; Quiros-Ramirez, M A; Hill, M Q; Hahn, C A; Zuffi, S; O'toole, A; Black, M J",
+      "editors": "",
+      "publisher": "",
+      "year": 2016,
+      "volume": "35",
+      "issue": "54",
+      "first_page": null,
+      "last_page": null,
+      "container": "ACM Transactions on Graphics",
+      "bib_id": 29,
+      "year_suffix": "",
+      "text_id": 272
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1145/1015706.1015736",
+      "title": "Deformation transfer for triangle meshes",
+      "authors": "Sumner, R W; Popovic, ´; , J",
+      "editors": "",
+      "publisher": "",
+      "year": 2004,
+      "volume": "23",
+      "issue": "",
+      "first_page": "399",
+      "last_page": "405",
+      "container": "ACM Transactions on Graphics",
+      "bib_id": 30,
+      "year_suffix": "",
+      "text_id": 273
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1145/2766908",
+      "title": "Semantic shape editing using deformation handles",
+      "authors": "Yumer, M E; Chaudhuri, S; Hodgins, J K; Kara, L B",
+      "editors": "",
+      "publisher": "",
+      "year": 2015,
+      "volume": "34",
+      "issue": "86",
+      "first_page": null,
+      "last_page": null,
+      "container": "ACM Transactions on Graphics",
+      "bib_id": 31,
+      "year_suffix": "",
+      "text_id": 274
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1016/j.patcog.2015.03.006",
+      "title": "Semantic human activity recognition: A literature review",
+      "authors": "Ziaeefar, M; Bergevin, R",
+      "editors": "",
+      "publisher": "",
+      "year": 2015,
+      "volume": "48",
+      "issue": "",
+      "first_page": "2329",
+      "last_page": "2345",
+      "container": "Pattern Recognition",
+      "bib_id": 32,
+      "year_suffix": "",
+      "text_id": 275
+    }
+  ],
+  "xref": [
+    {
+      "xref_id": 0,
+      "xref_type": "bib",
+      "contents": "(Abdi & Williams, 2010)",
+      "text_id": 68
+    },
+    {
+      "xref_id": 0,
+      "xref_type": "bib",
+      "contents": "(Abdi & Williams, 2010)",
+      "text_id": 69
+    },
+    {
+      "xref_id": 0,
+      "xref_type": "bib",
+      "contents": "Abdi and Williams (2010)",
+      "text_id": 68
+    },
+    {
+      "xref_id": 0,
+      "xref_type": "bib",
+      "contents": "Abdi and Williams (2010)",
+      "text_id": 69
+    },
+    {
+      "xref_id": 1,
+      "xref_type": "bib",
+      "contents": "(Allen, Curless, & Popovic´, 2003)",
+      "text_id": 13
+    },
+    {
+      "xref_id": 2,
+      "xref_type": "bib",
+      "contents": "Anguelov et al., 2005)",
+      "text_id": null
+    },
+    {
+      "xref_id": 2,
+      "xref_type": "bib",
+      "contents": "(Anguelov et al., 2005)",
+      "text_id": 79
+    },
+    {
+      "xref_id": 2,
+      "xref_type": "bib",
+      "contents": "(Anguelov et al., 2005)",
+      "text_id": 80
+    },
+    {
+      "xref_id": 2,
+      "xref_type": "bib",
+      "contents": "(Anguelov et al., 2005)",
+      "text_id": null
+    },
+    {
+      "xref_id": 2,
+      "xref_type": "bib",
+      "contents": "Anguelov et al., 2005",
+      "text_id": 79
+    },
+    {
+      "xref_id": 2,
+      "xref_type": "bib",
+      "contents": "Anguelov et al., 2005",
+      "text_id": 80
+    },
+    {
+      "xref_id": 2,
+      "xref_type": "bib",
+      "contents": "Anguelov et al., 2005",
+      "text_id": null
+    },
+    {
+      "xref_id": 3,
+      "xref_type": "bib",
+      "contents": "(Aviezer et al., 2012;",
+      "text_id": 2
+    },
+    {
+      "xref_id": 4,
+      "xref_type": "bib",
+      "contents": "(Benzécri, 1976;",
+      "text_id": 61
+    },
+    {
+      "xref_id": 5,
+      "xref_type": "bib",
+      "contents": "(Burton, Wilson, Cowan, & Bruce, 1999;",
+      "text_id": 146
+    },
+    {
+      "xref_id": 10,
+      "xref_type": "bib",
+      "contents": "(Downing, Jiang, Shuman, & Kanwisher, 2001;",
+      "text_id": 177
+    },
+    {
+      "xref_id": 11,
+      "xref_type": "bib",
+      "contents": "(Farhadi, Endres, Hoiem, & Forsyth, 2009;",
+      "text_id": 183
+    },
+    {
+      "xref_id": 12,
+      "xref_type": "bib",
+      "contents": "Greenacre, 2007)",
+      "text_id": 61
+    },
+    {
+      "xref_id": 13,
+      "xref_type": "bib",
+      "contents": "(Grill-Spector & Weiner, 2014)",
+      "text_id": 176
+    },
+    {
+      "xref_id": 14,
+      "xref_type": "bib",
+      "contents": "O'Toole, & Phillips, 2016;",
+      "text_id": null
+    },
+    {
+      "xref_id": 14,
+      "xref_type": "bib",
+      "contents": "Hahn et al., 2016;",
+      "text_id": 146
+    },
+    {
+      "xref_id": 15,
+      "xref_type": "bib",
+      "contents": "(Hirshberg, Loper, Rachlin, & Black, 2012)",
+      "text_id": 84
+    },
+    {
+      "xref_id": 16,
+      "xref_type": "bib",
+      "contents": "(Kumar, Berg, Belhumeur, & Nayar, 2011)",
+      "text_id": 183
+    },
+    {
+      "xref_id": 17,
+      "xref_type": "bib",
+      "contents": "Lampert, Nickisch, & Harmeling, 2014;",
+      "text_id": 183
+    },
+    {
+      "xref_id": 18,
+      "xref_type": "bib",
+      "contents": "(Li & Li, 2007)",
+      "text_id": 183
+    },
+    {
+      "xref_id": 20,
+      "xref_type": "bib",
+      "contents": "Peelen & Downing, 2005)",
+      "text_id": 177
+    },
+    {
+      "xref_id": 22,
+      "xref_type": "bib",
+      "contents": "Piryankova et al., 2014)",
+      "text_id": null
+    },
+    {
+      "xref_id": 22,
+      "xref_type": "bib",
+      "contents": "Piryankova et al., 2014)",
+      "text_id": null
+    },
+    {
+      "xref_id": 24,
+      "xref_type": "bib",
+      "contents": "(Reid, Nixon, & Stevenage, 2014)",
+      "text_id": 184
+    },
+    {
+      "xref_id": 24,
+      "xref_type": "bib",
+      "contents": "(Reid, Nixon, & Stevenage, 2014)",
+      "text_id": 185
+    },
+    {
+      "xref_id": 24,
+      "xref_type": "bib",
+      "contents": "(Reid et al., 2014)",
+      "text_id": 184
+    },
+    {
+      "xref_id": 24,
+      "xref_type": "bib",
+      "contents": "(Reid et al., 2014)",
+      "text_id": 185
+    },
+    {
+      "xref_id": 25,
+      "xref_type": "bib",
+      "contents": "Rice, Phillips, Natu, An, & O'Toole, 2013;",
+      "text_id": null
+    },
+    {
+      "xref_id": 25,
+      "xref_type": "bib",
+      "contents": "Rice, Phillips, Natu, An, & O'Toole, 2013;",
+      "text_id": 2
+    },
+    {
+      "xref_id": 25,
+      "xref_type": "bib",
+      "contents": "Rice, Phillips, Natu, et al., 2013)",
+      "text_id": null
+    },
+    {
+      "xref_id": 25,
+      "xref_type": "bib",
+      "contents": "Rice, Phillips, Natu, et al., 2013)",
+      "text_id": 2
+    },
+    {
+      "xref_id": 27,
+      "xref_type": "bib",
+      "contents": "Robbins & Coltheart, 2012)",
+      "text_id": null
+    },
+    {
+      "xref_id": 27,
+      "xref_type": "bib",
+      "contents": "Robbins & Coltheart,",
+      "text_id": 146
+    },
+    {
+      "xref_id": 28,
+      "xref_type": "bib",
+      "contents": "(Schwarzlose, Baker, & Kanwisher, 2005)",
+      "text_id": 177
+    },
+    {
+      "xref_id": 29,
+      "xref_type": "bib",
+      "contents": "Streuber et al., 2016)",
+      "text_id": null
+    },
+    {
+      "xref_id": 29,
+      "xref_type": "bib",
+      "contents": "Streuber et al., 2016)",
+      "text_id": 189
+    },
+    {
+      "xref_id": 29,
+      "xref_type": "bib",
+      "contents": "Streuber et al. (2016)",
+      "text_id": 208
+    },
+    {
+      "xref_id": 30,
+      "xref_type": "bib",
+      "contents": "(Sumner & Popovic ´, 2004",
+      "text_id": 80
+    },
+    {
+      "xref_id": 31,
+      "xref_type": "bib",
+      "contents": "Yumer, Chaudhuri, Hodgins, & Kara, 2015)",
+      "text_id": 183
+    },
+    {
+      "xref_id": 32,
+      "xref_type": "bib",
+      "contents": "(Ziaeefar & Bergevin, 2015)",
+      "text_id": 183
+    },
+    {
+      "xref_id": null,
+      "xref_type": "bib",
+      "contents": "Toole et al., 2005)",
+      "text_id": 36
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "1a",
+      "text_id": 44
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "1",
+      "text_id": null
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "1b",
+      "text_id": 119
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "2",
+      "text_id": 74
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "2",
+      "text_id": 77
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "2a",
+      "text_id": 74
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "2a",
+      "text_id": 77
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "2b",
+      "text_id": 74
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "2b",
+      "text_id": 77
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "2c",
+      "text_id": 74
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "2c",
+      "text_id": 77
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "2d",
+      "text_id": 74
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "2d",
+      "text_id": 77
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "3a",
+      "text_id": 88
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "3a",
+      "text_id": 89
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "3b",
+      "text_id": 99
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "3c",
+      "text_id": 117
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "5",
+      "text_id": 130
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "5",
+      "text_id": 137
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "6",
+      "text_id": null
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "4",
+      "text_id": 125
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "4",
+      "text_id": null
+    },
+    {
+      "xref_id": null,
+      "xref_type": "table",
+      "contents": "1",
+      "text_id": 51
+    }
+  ],
+  "figure": [
+    {
+      "figure_id": 1,
+      "section_id": 21,
+      "image": null,
+      "page_number": null
+    },
+    {
+      "figure_id": 2,
+      "section_id": 22,
+      "image": null,
+      "page_number": null
+    },
+    {
+      "figure_id": 3,
+      "section_id": 23,
+      "image": null,
+      "page_number": null
+    },
+    {
+      "figure_id": 4,
+      "section_id": 24,
+      "image": null,
+      "page_number": null
+    },
+    {
+      "figure_id": 5,
+      "section_id": 25,
+      "image": null,
+      "page_number": null
+    }
+  ],
+  "table": [
+    {
+      "table_id": 1,
+      "section_id": 26,
+      "html": "<table>\n  <row>\n    <cell>proportioned<\/cell>\n    <cell>short legs<\/cell>\n    <cell>pear-shaped<\/cell>\n  <\/row>\n  <row>\n    <cell>rectangular<\/cell>\n    <cell>long legs<\/cell>\n    <cell>long<\/cell>\n  <\/row>\n  <row>\n    <cell>stocky<\/cell>\n    <cell>long torso<\/cell>\n    <cell>curvy<\/cell>\n  <\/row>\n  <row>\n    <cell>big<\/cell>\n    <cell>short torso<\/cell>\n    <cell>masculine<\/cell>\n  <\/row>\n  <row>\n    <cell>muscular<\/cell>\n    <cell>small<\/cell>\n    <cell>tall<\/cell>\n  <\/row>\n  <row>\n    <cell>average<\/cell>\n    <cell>lean<\/cell>\n    <cell>sturdy<\/cell>\n  <\/row>\n  <row>\n    <cell>skinny<\/cell>\n    <cell>round (apple)<\/cell>\n    <cell>built<\/cell>\n  <\/row>\n  <row>\n    <cell>fit<\/cell>\n    <cell>petite<\/cell>\n    <cell>heavyset<\/cell>\n  <\/row>\n  <row>\n    <cell>short<\/cell>\n    <cell>broad shoulders<\/cell>\n    <cell>feminine<\/cell>\n  <\/row>\n<\/table>",
+      "contents": null,
+      "page_number": null
+    }
+  ],
+  "eq": [
+    {
+      "text_id": 131,
+      "grp_id": 1,
+      "lhs": "M",
+      "comp": "=",
+      "rhs": "0.5626"
+    },
+    {
+      "text_id": 131,
+      "grp_id": 1,
+      "lhs": "M",
+      "comp": "=",
+      "rhs": "1.1449"
+    },
+    {
+      "text_id": 131,
+      "grp_id": 1,
+      "lhs": "CI",
+      "comp": "=",
+      "rhs": "[1.1428, 1.1469]"
+    },
+    {
+      "text_id": 138,
+      "grp_id": 2,
+      "lhs": "p",
+      "comp": "<",
+      "rhs": ".001"
+    },
+    {
+      "text_id": 138,
+      "grp_id": 2,
+      "lhs": "M",
+      "comp": "=",
+      "rhs": "0.1710"
+    },
+    {
+      "text_id": 138,
+      "grp_id": 2,
+      "lhs": "M",
+      "comp": "=",
+      "rhs": "0.6961"
+    },
+    {
+      "text_id": 138,
+      "grp_id": 2,
+      "lhs": "95% CI",
+      "comp": "=",
+      "rhs": "[0.6935, 0.6988]"
+    },
+    {
+      "text_id": 138,
+      "grp_id": 2,
+      "lhs": "M",
+      "comp": "=",
+      "rhs": "0.1890"
+    },
+    {
+      "text_id": 138,
+      "grp_id": 2,
+      "lhs": "M",
+      "comp": "=",
+      "rhs": "0.4214"
+    },
+    {
+      "text_id": 138,
+      "grp_id": 2,
+      "lhs": "95% CI",
+      "comp": "=",
+      "rhs": "[0.4199, 0.4229]"
+    },
+    {
+      "text_id": 138,
+      "grp_id": 2,
+      "lhs": "M",
+      "comp": "=",
+      "rhs": "0.2187"
+    },
+    {
+      "text_id": 138,
+      "grp_id": 2,
+      "lhs": "M",
+      "comp": "=",
+      "rhs": "0.3750"
+    },
+    {
+      "text_id": 138,
+      "grp_id": 2,
+      "lhs": "95% CI",
+      "comp": "=",
+      "rhs": "[0.3737, 0.3763]"
+    },
+    {
+      "text_id": 139,
+      "grp_id": 3,
+      "lhs": "M",
+      "comp": "=",
+      "rhs": "0.1976"
+    },
+    {
+      "text_id": 139,
+      "grp_id": 3,
+      "lhs": "M",
+      "comp": "=",
+      "rhs": "0.2329"
+    },
+    {
+      "text_id": 139,
+      "grp_id": 3,
+      "lhs": "95% CI",
+      "comp": "=",
+      "rhs": "[0.2320, 0.2338]"
+    },
+    {
+      "text_id": 139,
+      "grp_id": 3,
+      "lhs": "p",
+      "comp": "=",
+      "rhs": ".013"
+    },
+    {
+      "text_id": 140,
+      "grp_id": 4,
+      "lhs": "M",
+      "comp": "=",
+      "rhs": "0.2693"
+    },
+    {
+      "text_id": 140,
+      "grp_id": 4,
+      "lhs": "M",
+      "comp": "=",
+      "rhs": "0.3018"
+    },
+    {
+      "text_id": 140,
+      "grp_id": 4,
+      "lhs": "95% CI",
+      "comp": "=",
+      "rhs": "[0.3007, 0.3029]"
+    },
+    {
+      "text_id": 140,
+      "grp_id": 4,
+      "lhs": "p",
+      "comp": "=",
+      "rhs": ".067"
+    },
+    {
+      "text_id": 142,
+      "grp_id": 5,
+      "lhs": "p",
+      "comp": "=",
+      "rhs": ".067"
+    },
+    {
+      "text_id": 144,
+      "grp_id": 6,
+      "lhs": "M",
+      "comp": "=",
+      "rhs": "0.3963"
+    },
+    {
+      "text_id": 144,
+      "grp_id": 6,
+      "lhs": "M",
+      "comp": "=",
+      "rhs": "1.0734"
+    },
+    {
+      "text_id": 144,
+      "grp_id": 6,
+      "lhs": "95% CI",
+      "comp": "=",
+      "rhs": "[1.0712, 1.0756]"
+    },
+    {
+      "text_id": 207,
+      "grp_id": 7,
+      "lhs": "n",
+      "comp": "=",
+      "rhs": "60"
+    },
+    {
+      "text_id": 207,
+      "grp_id": 7,
+      "lhs": "n",
+      "comp": "=",
+      "rhs": "165"
+    },
+    {
+      "text_id": 129,
+      "grp_id": 8,
+      "lhs": "p",
+      "comp": "<",
+      "rhs": ".05"
+    }
+  ]
+}

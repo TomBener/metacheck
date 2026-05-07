@@ -1,0 +1,5464 @@
+{
+  "paper_id": "09567976231160098",
+  "info": [
+    {
+      "title": "Toward Antifragility: Social Defeat Stress Enhances Learning and Memory in Young Mice Via Hippocampal Synaptosome Associated Protein 25",
+      "keywords": ["social defeat stress (SDS)", "learning and memory", "hippocampus", "chemogenetic manipulation", "SNAP-25", "GluN2B", "antifragility", "young mice", "middle-aged mice"],
+      "doi": "10.1177/09567976231160098",
+      "file_hash": "fc41e1a1875dc262",
+      "input_format": "grobid 0.9.0",
+      "file_name": "data-raw/psychsci/grobid_0.9.0-full/09567976231160098.xml",
+      "bibr_version": "10.0",
+      "paper_type": "unknown",
+      "paper_type_confidence": 0,
+      "oecd_l1": null,
+      "oecd_l2": null,
+      "oecd_confidence": null
+    }
+  ],
+  "author": [
+    {
+      "author_id": 1,
+      "given": "Liu",
+      "family": "Yang",
+      "affiliation": "Department of Translational Neuroscience Institutes of Brain Science State Key Laboratory of Medical Neurobiology MOE Frontiers Center for Brain Science Jing'an District Centre Hospital of Shanghai Fudan University",
+      "email": "",
+      "corresponding": false,
+      "orcid": "",
+      "role": []
+    },
+    {
+      "author_id": 2,
+      "given": "Li-Jun",
+      "family": "Shi",
+      "affiliation": "Department of Translational Neuroscience Institutes of Brain Science State Key Laboratory of Medical Neurobiology MOE Frontiers Center for Brain Science Jing'an District Centre Hospital of Shanghai Fudan University",
+      "email": "",
+      "corresponding": false,
+      "orcid": "",
+      "role": []
+    },
+    {
+      "author_id": 3,
+      "given": "Shi-Yu",
+      "family": "Shen",
+      "affiliation": "Department of Integrative Medicine and Neurobiology School of Basic Medical Sciences State Key Laboratory of Medical Neurobiology Shanghai Medical College Fudan University",
+      "email": "",
+      "corresponding": false,
+      "orcid": "",
+      "role": []
+    },
+    {
+      "author_id": 4,
+      "given": "Jing-Yan",
+      "family": "Yang",
+      "affiliation": "Department of Translational Neuroscience Institutes of Brain Science State Key Laboratory of Medical Neurobiology MOE Frontiers Center for Brain Science Jing'an District Centre Hospital of Shanghai Fudan University",
+      "email": "",
+      "corresponding": false,
+      "orcid": "",
+      "role": []
+    },
+    {
+      "author_id": 5,
+      "given": "Su-Su",
+      "family": "Lv",
+      "affiliation": "Department of Translational Neuroscience Institutes of Brain Science State Key Laboratory of Medical Neurobiology MOE Frontiers Center for Brain Science Jing'an District Centre Hospital of Shanghai Fudan University",
+      "email": "",
+      "corresponding": false,
+      "orcid": "",
+      "role": []
+    },
+    {
+      "author_id": 6,
+      "given": "Zhe-Chen",
+      "family": "Wang",
+      "affiliation": "Department of Psychology School of Social Development and Public Policy Fudan University",
+      "email": "",
+      "corresponding": false,
+      "orcid": "",
+      "role": []
+    },
+    {
+      "author_id": 7,
+      "given": "Qian",
+      "family": "Huang",
+      "affiliation": "Department of Translational Neuroscience Institutes of Brain Science State Key Laboratory of Medical Neurobiology MOE Frontiers Center for Brain Science Jing'an District Centre Hospital of Shanghai Fudan University",
+      "email": "",
+      "corresponding": false,
+      "orcid": "",
+      "role": []
+    },
+    {
+      "author_id": 8,
+      "given": "Wen-Dong",
+      "family": "Xu",
+      "affiliation": "Department of Translational Neuroscience Institutes of Brain Science State Key Laboratory of Medical Neurobiology MOE Frontiers Center for Brain Science Jing'an District Centre Hospital of Shanghai Fudan University",
+      "email": "",
+      "corresponding": false,
+      "orcid": "",
+      "role": []
+    },
+    {
+      "author_id": 9,
+      "given": "Jin",
+      "family": "Yu",
+      "affiliation": "Department of Integrative Medicine and Neurobiology School of Basic Medical Sciences State Key Laboratory of Medical Neurobiology Shanghai Medical College Fudan University",
+      "email": "yujin@shmu.edu.cn",
+      "corresponding": false,
+      "orcid": "",
+      "role": []
+    },
+    {
+      "author_id": 10,
+      "given": "Yu-Qiu",
+      "family": "Zhang",
+      "affiliation": "Department of Translational Neuroscience Institutes of Brain Science State Key Laboratory of Medical Neurobiology MOE Frontiers Center for Brain Science Jing'an District Centre Hospital of Shanghai Fudan University",
+      "email": "yuqiuzhang@fudan.edu.cn",
+      "corresponding": false,
+      "orcid": "0000-0001-6623-9629",
+      "role": []
+    }
+  ],
+  "text": [
+    {
+      "text_id": 1,
+      "paragraph_id": 1,
+      "section_id": 0,
+      "text": "Exposure to adverse life events typically predicts subsequent negative effects on mental health and wellbeing.",
+      "page_number": null
+    },
+    {
+      "text_id": 2,
+      "paragraph_id": 1,
+      "section_id": 0,
+      "text": "For example, severe social conflicts lead to depression, neurodegeneration, and cognitive impairment (McKim et al., 2016;Yoshida et al., 2021).",
+      "page_number": null
+    },
+    {
+      "text_id": 3,
+      "paragraph_id": 1,
+      "section_id": 0,
+      "text": "On the other hand, it is also possible that adverse experiences bring about positive outcomes including enhancing learning and memory abilities (Kirby et al., 2013;Vogel & Schwabe, 2018).",
+      "page_number": null
+    },
+    {
+      "text_id": 4,
+      "paragraph_id": 1,
+      "section_id": 0,
+      "text": "However, experimental evidence on whether and how adversity might promote learning and memory capacities is still scarce.",
+      "page_number": null
+    },
+    {
+      "text_id": 5,
+      "paragraph_id": 1,
+      "section_id": 0,
+      "text": "Social defeat stress (SDS) induced by social conflict is an established preclinical model for studying the effects of social psychological stress that recapitulates certain behavioral aspects of human anxiety and/or depression (Anacker et al., 2018;Hammels et al., 2015).",
+      "page_number": null
+    },
+    {
+      "text_id": 6,
+      "paragraph_id": 3,
+      "section_id": 1,
+      "text": "In reality, social conflict not only results in cognitive deficits in individuals but also promotes massive growth and development; the outcome might depend on the duration and degree of social adversity/stress and individual age.",
+      "page_number": null
+    },
+    {
+      "text_id": 7,
+      "paragraph_id": 3,
+      "section_id": 1,
+      "text": "For instance, Monleon et al.",
+      "page_number": null
+    },
+    {
+      "text_id": 8,
+      "paragraph_id": 3,
+      "section_id": 1,
+      "text": "(2015Monleon et al. ( , 2016) ) showed that a moderate degree of SDS (5-min encounters) did not affect or even enhance passive avoidance in postpubertal mice, whereas a high degree of SDS had a clear impairing effect on memory.",
+      "page_number": null
+    },
+    {
+      "text_id": 9,
+      "paragraph_id": 3,
+      "section_id": 1,
+      "text": "Moreover, from an evolutionary perspective, we speculated that the enhancement of learning and memory ability induced by stress may be due to selective pressure for animals to rapidly recognize predator threats or acquire information about aggressors.",
+      "page_number": null
+    },
+    {
+      "text_id": 10,
+      "paragraph_id": 3,
+      "section_id": 1,
+      "text": "In particular, we predicted that when facing repeated SDS, animals would mobilize all stress responses to reduce the risk in social interactions (Allen & Badcock, 2003).",
+      "page_number": null
+    },
+    {
+      "text_id": 11,
+      "paragraph_id": 3,
+      "section_id": 1,
+      "text": "However, most previous studies using a rodent SDS model focused only on the detrimental effect and underlying mechanisms of mood (Wang et al., 2021).",
+      "page_number": null
+    },
+    {
+      "text_id": 12,
+      "paragraph_id": 3,
+      "section_id": 1,
+      "text": "The potential developmental effect of SDS experience, especially on learning and memory capacities, and its underlying mechanisms remains unclear.",
+      "page_number": null
+    },
+    {
+      "text_id": 13,
+      "paragraph_id": 4,
+      "section_id": 1,
+      "text": "In the present study, we exposed young male C57BL/6 mice to moderate SDS and examined the effects of SDS on their learning and memory in a variety of behavioral tests, including fear conditioning, novel object recognition, and spatial learning memory.",
+      "page_number": null
+    },
+    {
+      "text_id": 14,
+      "paragraph_id": 4,
+      "section_id": 1,
+      "text": "Mechanically, we revealed that the excitatory activity of hippocampal CA1 CaMK2A+ neurons, upregulated synaptosome associated protein 25 (SNAP-25) and N-methyl-D-aspartate (NMDA) receptor subunit GluN2B expression in the hippocampal CA1 area, and CA1 neural synaptic plasticity are involved as potential mechanisms in learning and memory enhancement.",
+      "page_number": null
+    },
+    {
+      "text_id": 15,
+      "paragraph_id": 6,
+      "section_id": 2,
+      "text": "All data required to evaluate our conclusions are present in this article and/or the Supplemental Material available online.",
+      "page_number": null
+    },
+    {
+      "text_id": 16,
+      "paragraph_id": 6,
+      "section_id": 2,
+      "text": "The design and analysis plans for the study were not preregistered.",
+      "page_number": null
+    },
+    {
+      "text_id": 17,
+      "paragraph_id": 10,
+      "section_id": 4,
+      "text": "Male young (6-8 weeks old) and middle-aged (9-11 months old) C57Bl/6J mice were purchased from the Shanghai Experimental Animal Center of Chinese Academy of Sciences (Shanghai, China).",
+      "page_number": null
+    },
+    {
+      "text_id": 18,
+      "paragraph_id": 10,
+      "section_id": 4,
+      "text": "Male CD1 retired breeder mice (single cage, 8-12 months old) from Vital River Laboratories (Beijing, China) were used as the aggressors.",
+      "page_number": null
+    },
+    {
+      "text_id": 19,
+      "paragraph_id": 10,
+      "section_id": 4,
+      "text": "The CaMK2A-Cre mice were obtained from Jackson Laboratory (Catalog No.",
+      "page_number": null
+    },
+    {
+      "text_id": 20,
+      "paragraph_id": 10,
+      "section_id": 4,
+      "text": "J005359, JAX, Bar Harbor, ME).",
+      "page_number": null
+    },
+    {
+      "text_id": 21,
+      "paragraph_id": 10,
+      "section_id": 4,
+      "text": "Mice were housed under a 12-hr:12-hr (7:00 a.m.-7:00 p.m.) light/dark cycle within a colony room at 22 °C (humidity ≈ 60%; illumination intensity ≈ 100 lux).",
+      "page_number": null
+    },
+    {
+      "text_id": 22,
+      "paragraph_id": 10,
+      "section_id": 4,
+      "text": "Mice had access to food and water ad libitum.",
+      "page_number": null
+    },
+    {
+      "text_id": 23,
+      "paragraph_id": 10,
+      "section_id": 4,
+      "text": "Mice were randomly assigned into different cages and groups and tested by an investigator blind to mouse genotypes/treatments and group assignments.",
+      "page_number": null
+    },
+    {
+      "text_id": 24,
+      "paragraph_id": 10,
+      "section_id": 4,
+      "text": "The sample sizes and power calculation were based on our previous knowledge and experience with similar experimental models and anticipated biological variables.",
+      "page_number": null
+    },
+    {
+      "text_id": 25,
+      "paragraph_id": 10,
+      "section_id": 4,
+      "text": "A total of 652 mice were used in the present study: 480 young and 47 middle-aged male C57B/L6 mice, 60 male CD1 mice, and 65 CaMK2A-Cre mice.",
+      "page_number": null
+    },
+    {
+      "text_id": 26,
+      "paragraph_id": 10,
+      "section_id": 4,
+      "text": "All experiments were approved by the Fudan University Experimental Animal Care and Use Committee.",
+      "page_number": null
+    },
+    {
+      "text_id": 27,
+      "paragraph_id": 10,
+      "section_id": 4,
+      "text": "Details of key resources and reagents are shown in Table S1 in the Supplemental Material.",
+      "page_number": null
+    },
+    {
+      "text_id": 28,
+      "paragraph_id": 10,
+      "section_id": 4,
+      "text": "After the experiments, the animals were euthanized via carbon dioxide inhalation.",
+      "page_number": null
+    },
+    {
+      "text_id": 29,
+      "paragraph_id": 12,
+      "section_id": 5,
+      "text": "Repeated SDS was applied as described in a previous article (Yang et al., 2016) with modifications to restrict the stress level to a moderate degree (Monleon et al., 2015(Monleon et al., , 2016)).",
+      "page_number": null
+    },
+    {
+      "text_id": 30,
+      "paragraph_id": 12,
+      "section_id": 5,
+      "text": "Briefly, the C57BL/6J mouse (intruder) was individually introduced into the home cage of an unfamiliar resident aggressor CD1 mouse for 5 min of direct contact, during which it was attacked up to 3 times and",
+      "page_number": null
+    },
+    {
+      "text_id": 31,
+      "paragraph_id": 14,
+      "section_id": 6,
+      "text": "Stress and conflict are not always negative for individuals.",
+      "page_number": null
+    },
+    {
+      "text_id": 32,
+      "paragraph_id": 14,
+      "section_id": 6,
+      "text": "Their effects on learning memory and cognition are highly complex.",
+      "page_number": null
+    },
+    {
+      "text_id": 33,
+      "paragraph_id": 14,
+      "section_id": 6,
+      "text": "For example, when stress is moderate or mild, it might present an opportunity for people to learn how to see and experience the world and help people grow.",
+      "page_number": null
+    },
+    {
+      "text_id": 34,
+      "paragraph_id": 14,
+      "section_id": 6,
+      "text": "However, the relevant neurobiological foundation has not been well studied.",
+      "page_number": null
+    },
+    {
+      "text_id": 35,
+      "paragraph_id": 14,
+      "section_id": 6,
+      "text": "Animal models provide an important means of understanding the positive effect of stress on learning and memory.",
+      "page_number": null
+    },
+    {
+      "text_id": 36,
+      "paragraph_id": 14,
+      "section_id": 6,
+      "text": "Here, we examined the fragility of young or middle-aged mice when facing moderate social defeat stress (SDS).",
+      "page_number": null
+    },
+    {
+      "text_id": 37,
+      "paragraph_id": 14,
+      "section_id": 6,
+      "text": "Interestingly, SDS significantly promotes spatial, recognition, and fear memory in an emotion-independent manner in young rather than middle-aged mice.",
+      "page_number": null
+    },
+    {
+      "text_id": 38,
+      "paragraph_id": 14,
+      "section_id": 6,
+      "text": "Hippocampal CA1 excitatory neurons and their expressed synaptosome associated protein 25 (SNAP-25) and GluNB2 were required for SDS-induced enhancement of learning and memory in young mice.",
+      "page_number": null
+    },
+    {
+      "text_id": 39,
+      "paragraph_id": 14,
+      "section_id": 6,
+      "text": "Our findings provide sound experimental evidence on animals, proving that youths are more antifragility to stress or conflict. displayed subordinate posturing.",
+      "page_number": null
+    },
+    {
+      "text_id": 40,
+      "paragraph_id": 14,
+      "section_id": 6,
+      "text": "If three attacks occurred, the attack will be terminated, although the duration of direct contact was less than 5 min.",
+      "page_number": null
+    },
+    {
+      "text_id": 41,
+      "paragraph_id": 14,
+      "section_id": 6,
+      "text": "After physical interaction, the aggressor and intruder were divided by perforated Plexiglas and remained in the same cage for 24 hr, allowing visual, auditory, and olfactory communication.",
+      "page_number": null
+    },
+    {
+      "text_id": 42,
+      "paragraph_id": 14,
+      "section_id": 6,
+      "text": "Prior to SDS, aggressor (CD1) mice were screened for their aggressiveness to a novel experimental (C57) mouse both in young and middleaged mice.",
+      "page_number": null
+    },
+    {
+      "text_id": 43,
+      "paragraph_id": 14,
+      "section_id": 6,
+      "text": "Only CD1 mice that met criteria were used: Latency to initial attack was less than 60 s but higher than 30 s, and during a 5-min encounter, there were at least two attacks, regardless of whether the experimental mice were young or middle aged.",
+      "page_number": null
+    },
+    {
+      "text_id": 44,
+      "paragraph_id": 14,
+      "section_id": 6,
+      "text": "Aggressor mice did not exhibit overly aggressive attack behavior, such as wounding and bleeding during SDS exposure.",
+      "page_number": null
+    },
+    {
+      "text_id": 45,
+      "paragraph_id": 14,
+      "section_id": 6,
+      "text": "This procedure was then repeated for 10 consecutive days and then the intruder was placed into a new CD1 cage that it had never entered before.",
+      "page_number": null
+    },
+    {
+      "text_id": 46,
+      "paragraph_id": 14,
+      "section_id": 6,
+      "text": "Considering that damage caused by social aggression may influence forced swimming and Morris water maze tests, young experimental mice that showed obvious visible wounds resulting from the SDS procedure were excluded from the experiments.",
+      "page_number": null
+    },
+    {
+      "text_id": 47,
+      "paragraph_id": 14,
+      "section_id": 6,
+      "text": "For a high degree of SDS (HSDS), the C57BL/6J mouse was individually introduced into the home cage of an unfamiliar resident CD1 mouse for 10 min of direct contact, regardless of whether the mice showed subordinate posturing, and the subsequent procedure was the same as for moderate SDS.",
+      "page_number": null
+    },
+    {
+      "text_id": 48,
+      "paragraph_id": 14,
+      "section_id": 6,
+      "text": "In general, during a 10-min encounter period, there were at least five to seven attacks, and the intruder usually had obvious visible wounds.",
+      "page_number": null
+    },
+    {
+      "text_id": 49,
+      "paragraph_id": 14,
+      "section_id": 6,
+      "text": "Thus, for HSDS mice, Morris water maze and forced-swimming tests were not performed.",
+      "page_number": null
+    },
+    {
+      "text_id": 50,
+      "paragraph_id": 14,
+      "section_id": 6,
+      "text": "Control animals were kept in identical home cages in pairs (separated by the shielding board) during the 10 days and were rotated to a different cage daily.",
+      "page_number": null
+    },
+    {
+      "text_id": 51,
+      "paragraph_id": 15,
+      "section_id": 6,
+      "text": "Details regarding behavioral tests, Western blotting, Golgi staining, fluorescent in situ hybridization, shorthairpin RNA (shRNA) and stereotaxic injection, chemogenetic manipulation, and electrophysiology recording are provided in the Supplemental Material.",
+      "page_number": null
+    },
+    {
+      "text_id": 52,
+      "paragraph_id": 17,
+      "section_id": 7,
+      "text": "All data in figures were presented as mean ± standard error of the mean and analyzed using GraphPad Prism (Version 8.0) and JASP software (Version 0.16.4; JASP Team, 2022).",
+      "page_number": null
+    },
+    {
+      "text_id": 53,
+      "paragraph_id": 17,
+      "section_id": 7,
+      "text": "All data were included in analysis, and all data were acquired and analyzed in a blind manner.",
+      "page_number": null
+    },
+    {
+      "text_id": 54,
+      "paragraph_id": 17,
+      "section_id": 7,
+      "text": "Sample sizes are shown in the figures or figure legends.",
+      "page_number": null
+    },
+    {
+      "text_id": 55,
+      "paragraph_id": 17,
+      "section_id": 7,
+      "text": "All data from different groups were verified for normality and homogeneity of variance using Shapiro-Wilk and Levene's tests before analysis.",
+      "page_number": null
+    },
+    {
+      "text_id": 56,
+      "paragraph_id": 17,
+      "section_id": 7,
+      "text": "We analyzed data using Student's t test or Mann-Whitney U test (nonparametric data) when comparing two groups or one-way or two-way repeated measures analysis of variance (ANOVA) or Kruskal-Wallis H (nonparametric data) followed by post hoc Holm-Sidak or Student-Newman-Keuls test when comparing more than two groups.",
+      "page_number": null
+    },
+    {
+      "text_id": 57,
+      "paragraph_id": 17,
+      "section_id": 7,
+      "text": "All the hypothesis testing was two-tailed, and p values less than .05 were considered statistically significant.",
+      "page_number": null
+    },
+    {
+      "text_id": 58,
+      "paragraph_id": 17,
+      "section_id": 7,
+      "text": "The data statistics and standardized estimate of effect size (Cohen's d, r, η 2 ) for each hypothesis tested are reported in Table S2 in the Supplemental Material.",
+      "page_number": null
+    },
+    {
+      "text_id": 59,
+      "paragraph_id": 17,
+      "section_id": 7,
+      "text": "Sample sizes are shown in the figures or figure legends.",
+      "page_number": null
+    },
+    {
+      "text_id": 60,
+      "paragraph_id": 21,
+      "section_id": 9,
+      "text": "Stress is well known to alter learning and memory processes (Riga et al., 2017;Vogel & Schwabe, 2018).",
+      "page_number": null
+    },
+    {
+      "text_id": 61,
+      "paragraph_id": 21,
+      "section_id": 9,
+      "text": "Here, we exposed young male C57BL/6 mice to a moderate degree of SDS (5-min encounter) and examined the effects of social stress on learning and memory functions (see Fig. 1a).",
+      "page_number": null
+    },
+    {
+      "text_id": 62,
+      "paragraph_id": 21,
+      "section_id": 9,
+      "text": "As shown in Figure 1b, SDS mice displayed a marked increase in freezing behavior in either the contextual or tone-cue fear-conditioning test, indicating enhanced conditioning fear memory (see Fig. 1b; Mann-Whitney U test, contextual: U = 37.0, p < .001, rank-biserial correlation [r] = .684, 95% confidence interval [CI] = [.40, .85]; tone: U = 62.5, p = .028, r = .466, 95% CI = [.09, .73]).",
+      "page_number": null
+    },
+    {
+      "text_id": 63,
+      "paragraph_id": 21,
+      "section_id": 9,
+      "text": "In novel object recognition testing, SDS mice spent more time with the novel object (see Fig. 1c), two-tailed Student's t test, t(26) = 2.45, p = .02, Cohen's d = 0.991, 95% CI = [0.15, 1.82].",
+      "page_number": null
+    },
+    {
+      "text_id": 64,
+      "paragraph_id": 21,
+      "section_id": 9,
+      "text": "We also performed spatial learning memory behavioral tests.",
+      "page_number": null
+    },
+    {
+      "text_id": 65,
+      "paragraph_id": 21,
+      "section_id": 9,
+      "text": "SDS mice showed a higher percentage of entries and time in the novel arm in the Y-maze task (see Fig. 1d), two-tailed Mann-Whitney U test or Student's t test, number: U = 33.5, p = .011, r = .61, 95% CI = [.24, .83]; time: t(26) = 2.23, p = .035, Cohen's d = 0.903, 95% CI = [0.07, 1.73], and spent more time exploring the moved object in object location recognition test (see Fig. 1e), two-tailed Student's t test, t(19) = 2.89, p = .009, Cohen's d = 1.297, 95% CI = [0.31, 2.25].",
+      "page_number": null
+    },
+    {
+      "text_id": 66,
+      "paragraph_id": 22,
+      "section_id": 9,
+      "text": "In the Morris water maze task, the latency with which SDS mice climbed onto the platform was significantly decreased during the 5-day training period compared with control mice, indicating an enhanced learning ability with SDS treatment (see Figs. 1f and 1g).",
+      "page_number": null
+    },
+    {
+      "text_id": 67,
+      "paragraph_id": 22,
+      "section_id": 9,
+      "text": "In the memory test on Day 6 (see Figs. 1h and 1i), the SDS mice exhibited shorter target quadrant entry latency, two-tailed Student's t test, t(20) = 2.19, p = .04, Cohen's d = 0.969, 95% CI = [0.04, 1.88]; more platform quadrant entries, two-tailed Student's t test, t(20) = 2.25, p = .036, Cohen's d = 0.996, 95% CI = [0.06, 1.91]; and longer platform quadrant swimming times, two-tailed Student's t test, t(20) = 2.32, p = .03, Cohen's d = 1.026, 95% CI = [0.09, 1.94].",
+      "page_number": null
+    },
+    {
+      "text_id": 68,
+      "paragraph_id": 22,
+      "section_id": 9,
+      "text": "There were no differences between SDS and control mice in mean swimming speed in the Morris water maze (see Fig. 1j) or the latency to fall from the accelerating rod (the duration of mouse holding on the accelerating rod) in the rotarod test (see Fig. 1k), indicating that the above behavioral phenotypic differences were not due to hyperactivity or motor impairment.",
+      "page_number": null
+    },
+    {
+      "text_id": 69,
+      "paragraph_id": 22,
+      "section_id": 9,
+      "text": "The enhancement of learning memory could persist up to 14 days after the termination of the social stress paradigm (see Figs.",
+      "page_number": null
+    },
+    {
+      "text_id": 70,
+      "paragraph_id": 22,
+      "section_id": 9,
+      "text": "S1a-S1d in the Supplemental Material).",
+      "page_number": null
+    },
+    {
+      "text_id": 71,
+      "paragraph_id": 23,
+      "section_id": 9,
+      "text": "Moreover, we performed HSDS (10-min encounter) to observe whether it affected learning and memory in young mice.",
+      "page_number": null
+    },
+    {
+      "text_id": 72,
+      "paragraph_id": 23,
+      "section_id": 9,
+      "text": "As shown in Figs.",
+      "page_number": null
+    },
+    {
+      "text_id": 73,
+      "paragraph_id": 23,
+      "section_id": 9,
+      "text": "S1e to S1l in the Supplemental Material, HSDS caused significant anxiety-and depressive-like behaviors but failed to enhance learning and memory ability in fear conditioning, object location recognition, and Y-maze tests, suggesting that stress level may have an important impact on learning and memory.",
+      "page_number": null
+    },
+    {
+      "text_id": 74,
+      "paragraph_id": 25,
+      "section_id": 10,
+      "text": "As previously reported (Cao et al., 2013), SDS mice can be divided into susceptible and resilient groups according to whether they exhibited social avoidance (susceptible: social interaction ratio [SIR] < 1) or social preference (resilient: SIR ≥ 1, see Figs. 2a-2c).",
+      "page_number": null
+    },
+    {
+      "text_id": 75,
+      "paragraph_id": 25,
+      "section_id": 10,
+      "text": "To address the relationship between enhanced learning memory and social avoidance, we compared the learning and memory levels of susceptible and resilient mice after SDS.",
+      "page_number": null
+    },
+    {
+      "text_id": 76,
+      "paragraph_id": 25,
+      "section_id": 10,
+      "text": "Unexpectedly, no difference was found between susceptible and resilient individuals in the multiple learning and memory paradigms we used (see Figs. 2d-2k), suggesting that the social interaction phenotype is not related to the SDS-induced enhancement of learning and memory.",
+      "page_number": null
+    },
+    {
+      "text_id": 77,
+      "paragraph_id": 26,
+      "section_id": 10,
+      "text": "We also evaluated the association between SDSinduced enhancement of learning memory and anxietylike behaviors.",
+      "page_number": null
+    },
+    {
+      "text_id": 78,
+      "paragraph_id": 26,
+      "section_id": 10,
+      "text": "Mice that were either susceptible or resilient in the social interaction test exhibited anxietylike behaviors in the open-field and elevated plus maze tests.",
+      "page_number": null
+    },
+    {
+      "text_id": 79,
+      "paragraph_id": 26,
+      "section_id": 10,
+      "text": "No significant difference was found between susceptible and resilient mice (see Figs.",
+      "page_number": null
+    },
+    {
+      "text_id": 80,
+      "paragraph_id": 26,
+      "section_id": 10,
+      "text": "S2a-S2d in the Supplemental Material).",
+      "page_number": null
+    },
+    {
+      "text_id": 81,
+      "paragraph_id": 26,
+      "section_id": 10,
+      "text": "These data suggest that SDSinduced anxiety-like phenotype is independent of social behavior.",
+      "page_number": null
+    },
+    {
+      "text_id": 82,
+      "paragraph_id": 26,
+      "section_id": 10,
+      "text": "Neither susceptible nor resilient mice showed depression-like behaviors in forced swimming (see Fig.",
+      "page_number": null
+    },
+    {
+      "text_id": 83,
+      "paragraph_id": 26,
+      "section_id": 10,
+      "text": "S2e in the Supplemental Material) and sucrose preference (see Fig.",
+      "page_number": null
+    },
+    {
+      "text_id": 84,
+      "paragraph_id": 26,
+      "section_id": 10,
+      "text": "S2f in the Supplemental Material) tests.",
+      "page_number": null
+    },
+    {
+      "text_id": 85,
+      "paragraph_id": 26,
+      "section_id": 10,
+      "text": "SDS-induced anxiety-like behaviors persisted at least 14 days after the termination of the social stress paradigm (see Figs.",
+      "page_number": null
+    },
+    {
+      "text_id": 86,
+      "paragraph_id": 26,
+      "section_id": 10,
+      "text": "S2g-S2i in the Supplemental Material).",
+      "page_number": null
+    },
+    {
+      "text_id": 87,
+      "paragraph_id": 27,
+      "section_id": 10,
+      "text": "To further determine whether enhanced learning or memory of SDS mice depends on the anxiety-like behaviors, we examined the effect of clomipramine, a classical tricyclic antidepressant, on anxiety behaviors and learning memory levels in mice that experienced SDS.",
+      "page_number": null
+    },
+    {
+      "text_id": 88,
+      "paragraph_id": 27,
+      "section_id": 10,
+      "text": "As shown in Figs.",
+      "page_number": null
+    },
+    {
+      "text_id": 89,
+      "paragraph_id": 27,
+      "section_id": 10,
+      "text": "S3a-S3e in the Supplemental Material, clomipramine significantly alleviated SDSinduced social avoidance (see Fig.",
+      "page_number": null
+    },
+    {
+      "text_id": 90,
+      "paragraph_id": 27,
+      "section_id": 10,
+      "text": "S3b) and anxiety-like behavior in the elevated plus maze test (see Fig.",
+      "page_number": null
+    },
+    {
+      "text_id": 91,
+      "paragraph_id": 27,
+      "section_id": 10,
+      "text": "S3d).",
+      "page_number": null
+    },
+    {
+      "text_id": 92,
+      "paragraph_id": 27,
+      "section_id": 10,
+      "text": "In contrast, clomipramine did not affect SDS-induced enhancement of learning and memory in multiple paradigms (see Figs.",
+      "page_number": null
+    },
+    {
+      "text_id": 93,
+      "paragraph_id": 27,
+      "section_id": 10,
+      "text": "S3f-S3m in the Supplemental Material).",
+      "page_number": null
+    },
+    {
+      "text_id": 94,
+      "paragraph_id": 27,
+      "section_id": 10,
+      "text": "These results suggest that learning memory enhancement and anxiety-like behaviors are two independent phenomena after SDS and may have different neural mechanisms.",
+      "page_number": null
+    },
+    {
+      "text_id": 95,
+      "paragraph_id": 29,
+      "section_id": 11,
+      "text": "The hippocampus is a brain area crucial for learning and memory (Lovett-Barron et al., 2014).",
+      "page_number": null
+    },
+    {
+      "text_id": 96,
+      "paragraph_id": 29,
+      "section_id": 11,
+      "text": "To explore the role of the hippocampus in SDS-induced enhancement of learning memory, we inhibited hippocampal CA1 excitatory neurons by chemogenetic manipulation (see Figs. 3a-3c).",
+      "page_number": null
+    },
+    {
+      "text_id": 97,
+      "paragraph_id": 29,
+      "section_id": 11,
+      "text": "Prior to the novel object recognition test, chemogenetic inhibition of CA1 CaMK2A+ excitatory neurons significantly reduced the percentage of time spent with the novel object in SDS mice (see Fig. 3d).",
+      "page_number": null
+    },
+    {
+      "text_id": 98,
+      "paragraph_id": 29,
+      "section_id": 11,
+      "text": "Similarly, chemogenetic inhibition of CA1 CaMK2A+ excitatory neurons prior to training also attenuated the percentage of entries and time in the novel arm in the Y-maze test (Fig. 3e) and fear conditioning (see Fig. 3f) in SDS mice.",
+      "page_number": null
+    },
+    {
+      "text_id": 99,
+      "paragraph_id": 29,
+      "section_id": 11,
+      "text": "These results indicate that inhibition of CaMK2A+ excitatory neurons in the hippocampal CA1 area blocked SDS-induced enhancement of learning or memory in different behavioral paradigms.",
+      "page_number": null
+    },
+    {
+      "text_id": 100,
+      "paragraph_id": 29,
+      "section_id": 11,
+      "text": "We also examined the effects of activating hippocampal CA1 CaMK2A+ neurons on mouse learning or memory ability (see Figs. 3g-3i).",
+      "page_number": null
+    },
+    {
+      "text_id": 101,
+      "paragraph_id": 29,
+      "section_id": 11,
+      "text": "Chemogenetic activation of CA1 excitatory neurons directly enhanced the acquisition of novel object/novel arm recognition and fear memory in the novel object recognition, Y-maze, and fear conditioning tests (see Figs. 3j-3l).",
+      "page_number": null
+    },
+    {
+      "text_id": 102,
+      "paragraph_id": 31,
+      "section_id": 12,
+      "text": "The SNAP-25 gene is located at chromosomal site 20p 12-p11.2, an area whose previous linage is suggestive of intelligence, and is highly expressed in hippocampal neurons (Zhang et al., 2014).",
+      "page_number": null
+    },
+    {
+      "text_id": 103,
+      "paragraph_id": 31,
+      "section_id": 12,
+      "text": "To address whether the SDS-induced enhancement of learning memory is related to hippocampal SNAP-25, we examined the expression level of SNAP-25 in the hippocampus and the effect of SNAP-25 knockdown on learning memory in SDS mice.",
+      "page_number": null
+    },
+    {
+      "text_id": 104,
+      "paragraph_id": 31,
+      "section_id": 12,
+      "text": "Western blot analysis showed that SDS induced a significant upregulation of SNAP-25 protein in the hippocampal CA1 areas (see Fig. 4a).",
+      "page_number": null
+    },
+    {
+      "text_id": 105,
+      "paragraph_id": 31,
+      "section_id": 12,
+      "text": "Next, we selectively knocked down SNAP-25 in hippocampal CA1 excitatory neurons by shRNA (see Fig. 4b).",
+      "page_number": null
+    },
+    {
+      "text_id": 106,
+      "paragraph_id": 31,
+      "section_id": 12,
+      "text": "As shown in Figures 4c to 4i, specific knockdown of SNAP-25 in CaMK2A+ excitatory pyramidal neurons in the CA1 area before behavioral training significantly blocked the SDS-induced enhancement of learning ability in the novel object recognition, Y-maze, object location recognition, fear conditioning, and Morris water maze tests (see Figs. 4d-4i).",
+      "page_number": null
+    },
+    {
+      "text_id": 107,
+      "paragraph_id": 31,
+      "section_id": 12,
+      "text": "Knockdown of SNAP-25 in CA1 excitatory pyramidal neurons did not affect the swimming speed of the mice (see Fig. 4j), indicating no motor impairment.",
+      "page_number": null
+    },
+    {
+      "text_id": 108,
+      "paragraph_id": 31,
+      "section_id": 12,
+      "text": "Neither SDS-induced social avoidance nor anxiety-like behavior was influenced by SNAP-25 knockdown (see Figs. 4k-4n).",
+      "page_number": null
+    },
+    {
+      "text_id": 109,
+      "paragraph_id": 31,
+      "section_id": 12,
+      "text": "Moreover, selective knockdown of SNAP-25 in hippocampal CaMK2A+ neurons of naive mice failed to affect the acquisition of fear and spatial memory (see Figs.",
+      "page_number": null
+    },
+    {
+      "text_id": 110,
+      "paragraph_id": 31,
+      "section_id": 12,
+      "text": "S4a-S4g in the Supplemental Material).",
+      "page_number": null
+    },
+    {
+      "text_id": 111,
+      "paragraph_id": 31,
+      "section_id": 12,
+      "text": "These results implied that SNAP-25 in the hippocampal CA1 CaMK2A+ excitatory neurons is necessary for the enhancement of learning and memory induced by SDS.",
+      "page_number": null
+    },
+    {
+      "text_id": 112,
+      "paragraph_id": 31,
+      "section_id": 12,
+      "text": "We also extensively knocked down SNAP-25 in the hippocampal CA1 area by injecting AAV-Ef1A-SNAP-25-shRNA into wild-type mice.",
+      "page_number": null
+    },
+    {
+      "text_id": 113,
+      "paragraph_id": 31,
+      "section_id": 12,
+      "text": "Similarly, the enhancement of learning ability induced by SDS was also eliminated by extensive knockdown without cell specificity of SNAP-25 in the CA1 area (see Figs.",
+      "page_number": null
+    },
+    {
+      "text_id": 114,
+      "paragraph_id": 31,
+      "section_id": 12,
+      "text": "S5a-S5f in the Supplemental Material).",
+      "page_number": null
+    },
+    {
+      "text_id": 115,
+      "paragraph_id": 31,
+      "section_id": 12,
+      "text": "Differently, knockdown of SNAP-25 in the medial prefrontal cortex, an emotion-related brain region, SDS-induced enhancement of learning ability was not affected (see Figs.",
+      "page_number": null
+    },
+    {
+      "text_id": 116,
+      "paragraph_id": 31,
+      "section_id": 12,
+      "text": "S5g-S5i in the Supplemental Material).",
+      "page_number": null
+    },
+    {
+      "text_id": 117,
+      "paragraph_id": 32,
+      "section_id": 12,
+      "text": "Furthermore, we assessed the morphology and density of dendritic spines in pyramidal neurons of the hippocampal CA1 area.",
+      "page_number": null
+    },
+    {
+      "text_id": 118,
+      "paragraph_id": 32,
+      "section_id": 12,
+      "text": "The average dendritic spine number, especially mature spines including mushroom and stubby spines, was significantly increased in young mice that underwent SDS (see Figs. 5a-5c).",
+      "page_number": null
+    },
+    {
+      "text_id": 119,
+      "paragraph_id": 32,
+      "section_id": 12,
+      "text": "After knockdown of SNAP-25, the number of dendritic spines in CA1 pyramidal neurons was decreased (see Figs. 5d and 5e).",
+      "page_number": null
+    },
+    {
+      "text_id": 120,
+      "paragraph_id": 32,
+      "section_id": 12,
+      "text": "We also examined the effects of SNAP-25 on hippocampal long-term potentiation (LTP) in the CA1 region.",
+      "page_number": null
+    },
+    {
+      "text_id": 121,
+      "paragraph_id": 32,
+      "section_id": 12,
+      "text": "Theta-burst stimulation produced LTP of field excitatory postsynaptic potentials.",
+      "page_number": null
+    },
+    {
+      "text_id": 122,
+      "paragraph_id": 32,
+      "section_id": 12,
+      "text": "The amplitude of LTP was significantly enhanced by SDS in young mice (see Figs. 5f and 5g) and was partially suppressed by knockdown of SNAP-25 in CA1 excitatory pyramidal neurons (see Figs. 5f and 5h).",
+      "page_number": null
+    },
+    {
+      "text_id": 123,
+      "paragraph_id": 34,
+      "section_id": 13,
+      "text": "SNAP-25 has been shown to control NMDA and kainate receptor trafficking (Lau et al., 2010;Selak et al., 2009). , c) SDS mice were divided into susceptible and resilient groups according to whether they exhibit social avoidance.",
+      "page_number": null
+    },
+    {
+      "text_id": 124,
+      "paragraph_id": 34,
+      "section_id": 13,
+      "text": "Susceptible individual spent less time in interaction zone and exhibited lower social interaction ratio (SIR). **p < .01; one-way analysis of variance (ANOVA) or Kruskal-Wallis H test followed by post hoc Holm-Sidak test. (d-g) No differences in contextual and tone cues conditioning fear (d), novel object recognition testing (e), and spatial learning memory in Y-maze (f), object location recognition (h) testing were found between susceptible and resilient groups.",
+      "page_number": null
+    },
+    {
+      "text_id": 125,
+      "paragraph_id": 34,
+      "section_id": 13,
+      "text": "Two-sided Student's t test or Mann-Whitney U test. (h) Schematic of the protocol for the experiments in (i) through (k). (i-k) In 5-day training and retention test in the Morris water maze, susceptible and resilient groups showed similar enhancement of learning and memory after SDS.",
+      "page_number": null
+    },
+    {
+      "text_id": 126,
+      "paragraph_id": 34,
+      "section_id": 13,
+      "text": "Two-way repeated measures ANOVA for (i); two-tailed Student's t test for (j).",
+      "page_number": null
+    },
+    {
+      "text_id": 127,
+      "paragraph_id": 34,
+      "section_id": 13,
+      "text": "Error bars indicate standard errors of the mean.",
+      "page_number": null
+    },
+    {
+      "text_id": 128,
+      "paragraph_id": 34,
+      "section_id": 13,
+      "text": "Sample sizes are indicated in brackets.",
+      "page_number": null
+    },
+    {
+      "text_id": 129,
+      "paragraph_id": 34,
+      "section_id": 13,
+      "text": "Therefore, we detected the NMDA receptor subunit GluN2B level following SDS.",
+      "page_number": null
+    },
+    {
+      "text_id": 130,
+      "paragraph_id": 34,
+      "section_id": 13,
+      "text": "Corresponding to the upregulation of SNAP-25 protein, the level of GluN2B increased in the hippocampal CA1 area (see Fig. 5i).",
+      "page_number": null
+    },
+    {
+      "text_id": 131,
+      "paragraph_id": 34,
+      "section_id": 13,
+      "text": "Intriguingly, GluN2B expression was decreased by knockdown of SNAP-25 (see Fig. 5j), and the GluN2B levels exhibited a linear relationship with the knockdown of SNAP-25 (see Fig. 5k).",
+      "page_number": null
+    },
+    {
+      "text_id": 132,
+      "paragraph_id": 34,
+      "section_id": 13,
+      "text": "Moreover, intra-CA1 injection of selective GluN2B antagonist RO 25-6981 (2 µg) 1 hr prior to behavioral testing significantly suppressed SDS-induced enhancement of novel object recognition and spatial memory (see Figs. 5m and 5n).",
+      "page_number": null
+    },
+    {
+      "text_id": 133,
+      "paragraph_id": 34,
+      "section_id": 13,
+      "text": "At the same dose, RO 25-6981 did not affect the relevant memory level of normal mice (see Figs.",
+      "page_number": null
+    },
+    {
+      "text_id": 134,
+      "paragraph_id": 34,
+      "section_id": 13,
+      "text": "S6a-S6c in the Supplemental Material).",
+      "page_number": null
+    },
+    {
+      "text_id": 135,
+      "paragraph_id": 36,
+      "section_id": 14,
+      "text": "To address whether the effect of SDS on learning and memory enhancement among young mice is age specific, we exposed another age group, middle-aged mice (8-10 months old; Dutta & Sengupta, 2016), to the same SDS procedure that young mice experienced.",
+      "page_number": null
+    },
+    {
+      "text_id": 136,
+      "paragraph_id": 36,
+      "section_id": 14,
+      "text": "No difference was found between SDS mice and control individuals in fear conditioning and spatial learning memory testing (see Figs. 6a-6f).",
+      "page_number": null
+    },
+    {
+      "text_id": 137,
+      "paragraph_id": 36,
+      "section_id": 14,
+      "text": "Following SDS exposure, the learning and memory ability of middle-aged mice was obviously weaker than that of young mice (see Figs.",
+      "page_number": null
+    },
+    {
+      "text_id": 138,
+      "paragraph_id": 36,
+      "section_id": 14,
+      "text": "S7a-S7f in the Supplemental Material), although the middle-aged mice showed similar social avoidance and anxiety-like behaviors as young mice (see Fig.",
+      "page_number": null
+    },
+    {
+      "text_id": 139,
+      "paragraph_id": 36,
+      "section_id": 14,
+      "text": "S8 and Movies S1 and S2 in the Supplemental Material).",
+      "page_number": null
+    },
+    {
+      "text_id": 140,
+      "paragraph_id": 36,
+      "section_id": 14,
+      "text": "Corresponding to the behavioral results, there was no difference in LTP of field excitatory postsynaptic potentials, dendritic spine density, and SNAP-25 level between middle-aged mice in the SDS and control groups (see Fig. 6g-i).",
+      "page_number": null
+    },
+    {
+      "text_id": 141,
+      "paragraph_id": 36,
+      "section_id": 14,
+      "text": "Moreover, selective knockdown of SNAP-25 in hippocampal CA1 excitatory neurons did not affect the acquisition of novel object and novel location recognition (see Figs. 7b-7d), as well as social avoidance and anxiety-like behaviors in middleaged SDS mice (see Figs. 7e and 7f ).",
+      "page_number": null
+    },
+    {
+      "text_id": 142,
+      "paragraph_id": 36,
+      "section_id": 14,
+      "text": "These results suggest that the beneficial effects of SDS on learning and memory in young mice did not occur in middleaged mice.",
+      "page_number": null
+    },
+    {
+      "text_id": 143,
+      "paragraph_id": 38,
+      "section_id": 15,
+      "text": "The effects of social adversity on learning and memory are controversial.",
+      "page_number": null
+    },
+    {
+      "text_id": 144,
+      "paragraph_id": 38,
+      "section_id": 15,
+      "text": "Previous studies have primarily focused on the negative consequences of psychosocial stress, generally resulting in anxiety, depression, and memory impairment (McKim et al., 2016).",
+      "page_number": null
+    },
+    {
+      "text_id": 145,
+      "paragraph_id": 38,
+      "section_id": 15,
+      "text": "Here, we report an unconventional finding that SDS enhanced learning and memory capacity in an emotion-independent manner among young mice in multiple behavioral paradigms.",
+      "page_number": null
+    },
+    {
+      "text_id": 146,
+      "paragraph_id": 38,
+      "section_id": 15,
+      "text": "We provided several lines of evidence to support the critical results.",
+      "page_number": null
+    },
+    {
+      "text_id": 147,
+      "paragraph_id": 38,
+      "section_id": 15,
+      "text": "First, SDS significantly enhanced conditioning fear memory, novelty recognition, and spatial learning memory in young mice regardless of whether the mice were susceptible or resilient to social interaction avoidance.",
+      "page_number": null
+    },
+    {
+      "text_id": 148,
+      "paragraph_id": 38,
+      "section_id": 15,
+      "text": "Second, chemogenetic inhibition of hippocampal CA1 CaMK2A+ excitatory neuron completely blocked SDS-induced enhancement of learning memory.",
+      "page_number": null
+    },
+    {
+      "text_id": 149,
+      "paragraph_id": 38,
+      "section_id": 15,
+      "text": "Third, SDS augmented synaptic connectivity and synaptic plasticity in hippocampal CA1 pyramidal neurons.",
+      "page_number": null
+    },
+    {
+      "text_id": 150,
+      "paragraph_id": 38,
+      "section_id": 15,
+      "text": "Fourth, selective knockdown of synaptosomal protein SNAP-25 in the CA1 CaMK2A+ excitatory neurons eliminated SDS-induced enhancement of learning ability, and blockade of NMDA receptor subunit GluN2B suppressed novel object recognition and spatial memory (see Fig.",
+      "page_number": null
+    },
+    {
+      "text_id": 151,
+      "paragraph_id": 38,
+      "section_id": 15,
+      "text": "S9 in the Supplemental Material).",
+      "page_number": null
+    },
+    {
+      "text_id": 152,
+      "paragraph_id": 38,
+      "section_id": 15,
+      "text": "These results provide sound experimental evidence in animals for the adversity-growth link and further reveal its possible neural mechanism.",
+      "page_number": null
+    },
+    {
+      "text_id": 153,
+      "paragraph_id": 39,
+      "section_id": 15,
+      "text": "From an evolutionary perspective, animals instinctually cope with social stress by a series of responses, including enhancing learning and memory abilities.",
+      "page_number": null
+    },
+    {
+      "text_id": 154,
+      "paragraph_id": 39,
+      "section_id": 15,
+      "text": "These responses help animals remember notable moments and places, thus helping them react to danger appropriately.",
+      "page_number": null
+    },
+    {
+      "text_id": 155,
+      "paragraph_id": 39,
+      "section_id": 15,
+      "text": "In that sense, the enhancement of learning and memory capacity by social stressors is vital for survival when facing danger repeatedly.",
+      "page_number": null
+    },
+    {
+      "text_id": 156,
+      "paragraph_id": 39,
+      "section_id": 15,
+      "text": "Today, for human beings, although many social stresses, such as competitions, are no longer vital, this evolutionary trait is still active in our brains and always pushes us to try to win such competitions.",
+      "page_number": null
+    },
+    {
+      "text_id": 157,
+      "paragraph_id": 39,
+      "section_id": 15,
+      "text": "It is reasonable that when faced with repeated social stress, mice may accurately identify the direction of attack, better avoid an attack by another animal, and survive by enhancing the ability of recognition and spatial memory.",
+      "page_number": null
+    },
+    {
+      "text_id": 158,
+      "paragraph_id": 40,
+      "section_id": 15,
+      "text": "From a psychological perspective, the present research offers insights to suggest an antifragility hypothesis: Apart from its negative outcomes, adversity (such as social defeat) might lead to growth (Aven, 2015;Taleb, 2013).",
+      "page_number": null
+    },
+    {
+      "text_id": 159,
+      "paragraph_id": 40,
+      "section_id": 15,
+      "text": "In future research, it is worth further investigating whether antifragility functions in line with the theory of hormesis (i.e., for a certain substance, a low dose has stimulatory or beneficial effects whereas a high dose has inhibitory or toxic effects; Mattson, 2008) or exhibits the Yerkes-Dodson law (i.e., one's performance is best with an intermediate intensity of physiological or mental arousal compared with either low or high arousal; Diamond et al., 2007).",
+      "page_number": null
+    },
+    {
+      "text_id": 160,
+      "paragraph_id": 41,
+      "section_id": 15,
+      "text": "From a neurobiological perspective, although most research using various stress paradigms has found that increased exposure to a challenge can impair spatial memory abilities (Pfau & Russo, 2016), there are a few studies that hint that SDS has no effect or even suggest a potential positive effect of SDS on learning and memory, especially in youths (Monleon et al., 2016).",
+      "page_number": null
+    },
+    {
+      "text_id": 161,
+      "paragraph_id": 41,
+      "section_id": 15,
+      "text": "A reactive scope model (Romero et al., 2009) may explain these discrepant results.",
+      "page_number": null
+    },
+    {
+      "text_id": 162,
+      "paragraph_id": 41,
+      "section_id": 15,
+      "text": "If a stressor is of a magnitude or duration surpassing the normal reactive scope, that stressor pushes an individual into homeostatic overload.",
+      "page_number": null
+    },
+    {
+      "text_id": 163,
+      "paragraph_id": 41,
+      "section_id": 15,
+      "text": "In this condition, synaptic plasticity and subsequent learning and memory may be compromised (McEwen & Akil, 2020).",
+      "page_number": null
+    },
+    {
+      "text_id": 164,
+      "paragraph_id": 41,
+      "section_id": 15,
+      "text": "However, the stressor remains within the normal reactive scope; the stressor can even be positively correlated with various physiological mediators (McEwen & Akil, 2020).",
+      "page_number": null
+    },
+    {
+      "text_id": 165,
+      "paragraph_id": 41,
+      "section_id": 15,
+      "text": "It has been reported that a moderate degree of SDS enhanced the learning of Pavlovian cue-outcome associations, assessed by conditioned place preference tests (Chuang et al., 2011;Stelly et al., 2016).",
+      "page_number": null
+    },
+    {
+      "text_id": 166,
+      "paragraph_id": 41,
+      "section_id": 15,
+      "text": "The present study proves that exposure to a moderate but not high degree of SDS significantly enhanced learning and memory in young mice, supporting the importance of the stress level on learning and memory.",
+      "page_number": null
+    },
+    {
+      "text_id": 167,
+      "paragraph_id": 42,
+      "section_id": 15,
+      "text": "The hippocampus is essential not only for spatial learning and memory but also for contextual-and cuefear leaning (Raybuck & Lattal, 2014).",
+      "page_number": null
+    },
+    {
+      "text_id": 168,
+      "paragraph_id": 42,
+      "section_id": 15,
+      "text": "Following contextual fear conditioning, dorsal hippocampal CA1 commissural pathway of left and right hippocampi was potentiated (Subramaniyan et al., 2021).",
+      "page_number": null
+    },
+    {
+      "text_id": 169,
+      "paragraph_id": 42,
+      "section_id": 15,
+      "text": "The neuronal activation of the dorsal CA1 region was increased in response to contextual fear memory in female rats (Yagi et al., 2022).",
+      "page_number": null
+    },
+    {
+      "text_id": 170,
+      "paragraph_id": 42,
+      "section_id": 15,
+      "text": "Overexpression of G protein-gated inwardly rectifying K+ (GIRK) channels 2a subunit (GIRK2a) in dorsal CA1 pyramidal neurons significantly enhanced fear-cue learning (Marron Fernandez de Velasco et al., 2017).",
+      "page_number": null
+    },
+    {
+      "text_id": 171,
+      "paragraph_id": 42,
+      "section_id": 15,
+      "text": "The present study further found that the activity of dorsal CA1 CaMK2A+ excitatory pyramidal neurons is necessary and sufficient for the enhancement of contextual and fear-cue learning in SDS mice.",
+      "page_number": null
+    },
+    {
+      "text_id": 172,
+      "paragraph_id": 42,
+      "section_id": 15,
+      "text": "Moreover, we also shed some light on the role of hippocampal synaptic plasticity in learning and memory and the emotional connection to stressful events.",
+      "page_number": null
+    },
+    {
+      "text_id": 173,
+      "paragraph_id": 42,
+      "section_id": 15,
+      "text": "For instance, a moderate degree of SDS increased the density of dendritic spines of hippocampal CA1 pyramidal neurons, promoted their maturation, and enhanced hippocampal LTP of field excitatory postsynaptic potentials.",
+      "page_number": null
+    },
+    {
+      "text_id": 174,
+      "paragraph_id": 42,
+      "section_id": 15,
+      "text": "LTP at Schaffer collateral-CA1 synapses has been extensively studied as a putative mechanism underlying learning and memory.",
+      "page_number": null
+    },
+    {
+      "text_id": 175,
+      "paragraph_id": 42,
+      "section_id": 15,
+      "text": "There is ample evidence to support the notion that acute stress can facilitate memory by enhancing synaptic plasticity (Shields et al., 2017;Yuen et al., 2011).",
+      "page_number": null
+    },
+    {
+      "text_id": 176,
+      "paragraph_id": 42,
+      "section_id": 15,
+      "text": "Acute stress-induced corticotropin-releasing factor rapidly increased synaptic strength of Schaffer collateral input into hippocampal CA1 neurons and enhanced memory consolidation (Vandael et al., 2021).",
+      "page_number": null
+    },
+    {
+      "text_id": 177,
+      "paragraph_id": 42,
+      "section_id": 15,
+      "text": "Acute stress also promoted the acquisition and consolidation of hippocampusdependent memory through rapid release of norepinephrine and glucocorticoids (Osborne et al., 2015).",
+      "page_number": null
+    },
+    {
+      "text_id": 178,
+      "paragraph_id": 42,
+      "section_id": 15,
+      "text": "Conversely, other studies have shown that chronic stress can impair learning and memory through reduced synaptic plasticity (Diamond et al., 2006).",
+      "page_number": null
+    },
+    {
+      "text_id": 179,
+      "paragraph_id": 42,
+      "section_id": 15,
+      "text": "This paradox might result from either the type of imposed stress or the degree of emotional connection to the stressful event (Diamond et al., 2007).",
+      "page_number": null
+    },
+    {
+      "text_id": 180,
+      "paragraph_id": 42,
+      "section_id": 15,
+      "text": "Different degrees of SDS might affect synaptic plasticity in different ways, and alterations in synaptic plasticity consistently underlie the processing of emotion and cognition.",
+      "page_number": null
+    },
+    {
+      "text_id": 181,
+      "paragraph_id": 42,
+      "section_id": 15,
+      "text": "A line of evidence suggests that SNAP-25 plays a major role in synaptic plasticity and learning memory in humans and rodents (Gosso et al., 2006;Hou et al., 2004;Tomasoni et al., 2013).",
+      "page_number": null
+    },
+    {
+      "text_id": 182,
+      "paragraph_id": 42,
+      "section_id": 15,
+      "text": "As a synaptosomal protein, SNAP-25 is not only essential for activity-dependent vesicle fusion and neurotransmitter release (Nagy et al., 2004) but also regulates the insertion and removal of postsynaptic NMDA and kainate receptors (Lau et al., 2010;Selak et al., 2009).",
+      "page_number": null
+    },
+    {
+      "text_id": 183,
+      "paragraph_id": 42,
+      "section_id": 15,
+      "text": "SNAP-25 makes a major contribution to dendritic spine density and function by mediating the insertion of postsynaptic components into the dendritic membrane (Tomasoni et al., 2013).",
+      "page_number": null
+    },
+    {
+      "text_id": 184,
+      "paragraph_id": 42,
+      "section_id": 15,
+      "text": "Consistent with previous studies, the present study found that SDS increased SNAP-25 levels and the number of mature spines in hippocampal CA1 neurons.",
+      "page_number": null
+    },
+    {
+      "text_id": 185,
+      "paragraph_id": 42,
+      "section_id": 15,
+      "text": "Cell-and regionspecific knockdown of SNAP-25 significantly decreased the density of dendritic spines of hippocampal CA1 pyramidal neurons, attenuated NMDA receptor GluN2B level and LTP amplitude of field excitatory postsynaptic potentials, and blocked SDS-induced enhancement of spatial and recognition memory without impairing the learning ability of normal mice.",
+      "page_number": null
+    },
+    {
+      "text_id": 186,
+      "paragraph_id": 43,
+      "section_id": 15,
+      "text": "As mentioned above, SNAP-25 is involved in the mechanisms underlying the trafficking of NMDA receptors, whereas NMDA receptors are critical molecules for hippocampal long-term synaptic plasticity and are required by α-amino-3-hydroxy-5-methyl-4-isoxazolepropionate (AMPA)-mediated field excitatory postsynaptic potentials LTP induction, thus affect learning and memory (Neves et al., 2008).",
+      "page_number": null
+    },
+    {
+      "text_id": 187,
+      "paragraph_id": 43,
+      "section_id": 15,
+      "text": "Increasing evidence indicates that NMDA receptors contribute to stress-induced structural remodeling in the hippocampus and other brain regions (Martin & Wellman, 2011).",
+      "page_number": null
+    },
+    {
+      "text_id": 188,
+      "paragraph_id": 43,
+      "section_id": 15,
+      "text": "The expression of glutamate receptors, mainly NMDA and AMPA, is altered in the brain by stress (Lesuis et al., 2019).",
+      "page_number": null
+    },
+    {
+      "text_id": 189,
+      "paragraph_id": 43,
+      "section_id": 15,
+      "text": "Consistent with the previous results, our study showed that a subunit of NMDA receptors, GluN2B, was increased in the hippocampus after exposure to SDS.",
+      "page_number": null
+    },
+    {
+      "text_id": 190,
+      "paragraph_id": 43,
+      "section_id": 15,
+      "text": "It has been reported that GluN2B subunit might be particularly important for synaptic plasticity (Shipton & Paulsen, 2014).",
+      "page_number": null
+    },
+    {
+      "text_id": 191,
+      "paragraph_id": 43,
+      "section_id": 15,
+      "text": "The current study demonstrated that pharmacological blockade of GluN2B completely reversed SDSinduced enhancement of novel object recognition and spatial memory but did not affect basic memory level of naive mice in the novel object recognition and Y-maze tests, suggesting that GluN2B is important for SDS-enhanced memory.",
+      "page_number": null
+    },
+    {
+      "text_id": 192,
+      "paragraph_id": 44,
+      "section_id": 15,
+      "text": "It is worth mentioning that SDS did not enhance learning and memory in middle-aged mice, and there was no change in SNAP-25 levels, dendritic spine density, or LTP in the hippocampus, which differed from the findings in young mice.",
+      "page_number": null
+    },
+    {
+      "text_id": 193,
+      "paragraph_id": 44,
+      "section_id": 15,
+      "text": "Moreover, selective knockdown of SNAP-25 did not change learning ability of middle-aged mice in novel object and novel location recognition tests.",
+      "page_number": null
+    },
+    {
+      "text_id": 194,
+      "paragraph_id": 44,
+      "section_id": 15,
+      "text": "Although some studies have reported that SNAP-25 in the hippocampus is involved in consolidation of contextual fear memory and water maze spatial memory in normal rats (Hou et al., 2004), we failed to detect the effect of SNAP-25 knockdown on the basic learning ability of normal young mice.",
+      "page_number": null
+    },
+    {
+      "text_id": 195,
+      "paragraph_id": 44,
+      "section_id": 15,
+      "text": "These discrepancies may be due to differences in animal species/strains (rat vs. mouse) and age (adult vs. young), gene knockdown strategy (antisense oligonucleotide vs. shRNA), and cell selectivity (all cell types vs.",
+      "page_number": null
+    },
+    {
+      "text_id": 196,
+      "paragraph_id": 44,
+      "section_id": 15,
+      "text": "CaMK2A+ neurons).",
+      "page_number": null
+    },
+    {
+      "text_id": 197,
+      "paragraph_id": 44,
+      "section_id": 15,
+      "text": "Taken together, our findings suggest that SDSinduced enhancement of learning and memory may be brought about by increased dendritic spine density and maturation, enhanced LTP, and upregulation of SNAP-25 in hippocampal CA1 neurons.",
+      "page_number": null
+    },
+    {
+      "text_id": 198,
+      "paragraph_id": 44,
+      "section_id": 15,
+      "text": "In particular, the present study reveals the important insight that when we are young, we can go forward bravely without being afraid of difficulties and setbacks.",
+      "page_number": null
+    },
+    {
+      "text_id": 199,
+      "paragraph_id": 45,
+      "section_id": 15,
+      "text": "This study had several limitations.",
+      "page_number": null
+    },
+    {
+      "text_id": 200,
+      "paragraph_id": 45,
+      "section_id": 15,
+      "text": "For example, we examined the effects of SDS on learning memory only in young and middle-aged mice; further studies are needed to determine whether SDS affects learning memory in mice of other ages, such as adult and aged mice.",
+      "page_number": null
+    },
+    {
+      "text_id": 201,
+      "paragraph_id": 45,
+      "section_id": 15,
+      "text": "Because of the limitation of the SDS model, we did not test the effect of social stress on learning and memory of female mice in this study; other social stress models could be used in future work to resolve this issue.",
+      "page_number": null
+    },
+    {
+      "text_id": 202,
+      "paragraph_id": 45,
+      "section_id": 15,
+      "text": "In addition, NMDA receptors consist of two obligatory GluN1 and two GluN2 or GluN3 subunits that confer the particular properties of the receptor.",
+      "page_number": null
+    },
+    {
+      "text_id": 203,
+      "paragraph_id": 45,
+      "section_id": 15,
+      "text": "In the hippocampus, the two predominant GluN2 subunits are GluN2A and GluN2B.",
+      "page_number": null
+    },
+    {
+      "text_id": 204,
+      "paragraph_id": 45,
+      "section_id": 15,
+      "text": "It remains to be determined whether GluN2A subunit, even other glutamate receptors (e.g., AMPA/kainate receptors and metabotropic glutamate receptor subunits), are involved in the SDSinduced enhancement of learning and memory.",
+      "page_number": null
+    },
+    {
+      "text_id": 205,
+      "paragraph_id": 46,
+      "section_id": 15,
+      "text": "In conclusion, SDS promotes learning and memory in young mice by regulating plasticity in hippocampal CA1 neurons through SNAP-25 and GluN2B.",
+      "page_number": null
+    },
+    {
+      "text_id": 206,
+      "paragraph_id": 46,
+      "section_id": 15,
+      "text": "This study supports the idea that adversity may become a catalyst for wisdom in youths.",
+      "page_number": null
+    },
+    {
+      "text_id": 207,
+      "paragraph_id": 47,
+      "section_id": 15,
+      "text": "Transparency Action Editor: Karen Rodrigue Editor: Patricia J Bauer Author Contributions Liu Yang: Data curation; Investigation; Writing -original draft.",
+      "page_number": null
+    },
+    {
+      "text_id": 208,
+      "paragraph_id": 47,
+      "section_id": 15,
+      "text": "Li-Jun Shi: Data curation; Formal analysis; Investigation.",
+      "page_number": null
+    },
+    {
+      "text_id": 209,
+      "paragraph_id": 47,
+      "section_id": 15,
+      "text": "Shi-Yu Shen: Data curation; Formal analysis; Investigation; Visualization.",
+      "page_number": null
+    },
+    {
+      "text_id": 210,
+      "paragraph_id": 49,
+      "section_id": 16,
+      "text": "Acknowledgments L Yang, L-J Shi, and S-Y Shen contributed equally to this work.",
+      "page_number": null
+    },
+    {
+      "text_id": 211,
+      "paragraph_id": 51,
+      "section_id": 17,
+      "text": "This work was supported by Ministry of Science and Technology Science and Technology Innovation (STI) 2030-Major Projects (2021ZD0203200-5), the National Natural Science Foundation of China (82130032, 82021002, and 31930042), and funds from the Innovative Research Team of High-Level Local Universities in Shanghai, Shanghai Municipal Science and Technology Major Project (2018SHZ-DZX01), ZJLab and Shanghai Center for Brain Science and Brain-Inspired Technology.",
+      "page_number": null
+    },
+    {
+      "text_id": 212,
+      "paragraph_id": 53,
+      "section_id": 18,
+      "text": "The author(s) declared that there were no conflicts of interest with respect to the authorship or the publication of this article.",
+      "page_number": null
+    },
+    {
+      "text_id": 213,
+      "paragraph_id": 55,
+      "section_id": 19,
+      "text": "Additional supporting information can be found at http:// journals.sagepub.com/doi/suppl/10.1177/09567976231160098",
+      "page_number": null
+    },
+    {
+      "text_id": 214,
+      "paragraph_id": 67,
+      "section_id": 0,
+      "text": "Fig 2 (continued on next page)",
+      "page_number": null
+    },
+    {
+      "text_id": 215,
+      "paragraph_id": 56,
+      "section_id": 20,
+      "text": "Fig 1 (continued on next page)",
+      "page_number": null
+    },
+    {
+      "text_id": 216,
+      "paragraph_id": 57,
+      "section_id": 21,
+      "text": "Fig 1 Social stress enhances learning and memory in young mice. (a) Schematic of the protocol for the moderate degree of social defeat stress (SDS; 5-min encounters) and behavioral testing.",
+      "page_number": null
+    },
+    {
+      "text_id": 217,
+      "paragraph_id": 57,
+      "section_id": 21,
+      "text": "SDS mice exhibited enhancement of fear conditioning in both contextual and tone cues (b), novel object recognition testing (c), spatial learning memory in the Y-maze task (d), and object location recognition (e). *p < .05, **p < .01, two-tailed Student's t test or Mann-Whitney U test. (f) Schematic of the protocol for the experiments shown in (g) through (j). (g) During the 5-day training in Morris water maze, SDS mice showed shorter platform arrival latency than control mice. *p < .05, **p < .01, two-way repeated measures analysis of variance followed by post hoc Holm-Sidak test. (h) SDS mice exhibited shorter target platform quadrant latency, more platform quadrant entries, and longer platform quadrant swimming time in retention test after 24 hr. *p < .05 versus controls; two-tailed Student's t test. (i) Swimming traces of a control and a SDS mouse in retention test after 24 hr. (j, k) SDS did not influence movement and motor coordination in swimming speed in Morris water maze test (j) and rotarod test (k).",
+      "page_number": null
+    },
+    {
+      "text_id": 218,
+      "paragraph_id": 57,
+      "section_id": 21,
+      "text": "Error bars indicate standard errors of the mean.",
+      "page_number": null
+    },
+    {
+      "text_id": 219,
+      "paragraph_id": 57,
+      "section_id": 21,
+      "text": "Sample sizes are indicated in brackets.",
+      "page_number": null
+    },
+    {
+      "text_id": 220,
+      "paragraph_id": 58,
+      "section_id": 22,
+      "text": "Fig.2.",
+      "page_number": null
+    },
+    {
+      "text_id": 221,
+      "paragraph_id": 58,
+      "section_id": 22,
+      "text": "Social defeat stress (SDS) enhances learning and memory of young mice in both susceptible and resilient individuals to social interaction avoidance. (a) Schematic of the protocol for the behavioral testing. (b, c) SDS mice were divided into susceptible and resilient groups according to whether they exhibit social avoidance.",
+      "page_number": null
+    },
+    {
+      "text_id": 222,
+      "paragraph_id": 58,
+      "section_id": 22,
+      "text": "Susceptible individual spent less time in interaction zone and exhibited lower social interaction ratio (SIR). **p < .01; one-way analysis of variance (ANOVA) or Kruskal-Wallis H test followed by post hoc Holm-Sidak test. (d-g) No differences in contextual and tone cues conditioning fear (d), novel object recognition testing (e), and spatial learning memory in Y-maze (f), object location recognition (h) testing were found between susceptible and resilient groups.",
+      "page_number": null
+    },
+    {
+      "text_id": 223,
+      "paragraph_id": 58,
+      "section_id": 22,
+      "text": "Two-sided Student's t test or Mann-Whitney U test. (h) Schematic of the protocol for the experiments in (i) through (k). (i-k) In 5-day training and retention test in the Morris water maze, susceptible and resilient groups showed similar enhancement of learning and memory after SDS.",
+      "page_number": null
+    },
+    {
+      "text_id": 224,
+      "paragraph_id": 58,
+      "section_id": 22,
+      "text": "Two-way repeated measures ANOVA for (i); two-tailed Student's t test for (j).",
+      "page_number": null
+    },
+    {
+      "text_id": 225,
+      "paragraph_id": 58,
+      "section_id": 22,
+      "text": "Error bars indicate standard errors of the mean.",
+      "page_number": null
+    },
+    {
+      "text_id": 226,
+      "paragraph_id": 58,
+      "section_id": 22,
+      "text": "Sample sizes are indicated in brackets.",
+      "page_number": null
+    },
+    {
+      "text_id": 227,
+      "paragraph_id": 59,
+      "section_id": 23,
+      "text": "Fig 3 Chemogenetic manipulation of hippocampal CA1 CaMK2A+ excitatory neurons influences learning and memory capability. (a, b) Schematic and photomicrograph of coronal section showing AAV-CaMK2A-hM4Di-mCherry injection into the CA1.",
+      "page_number": null
+    },
+    {
+      "text_id": 228,
+      "paragraph_id": 59,
+      "section_id": 23,
+      "text": "Scale bar: 100 µm. (c) Examples showing that bath CNO (500 nM) decreased action-potential firing frequencies in an AAV-hM4Di injection mouse. (d-f) Chemogenetic inhibition of CaMK2A+ excitatory neurons of the CA1 before test significantly blocked the SDS-induced enhancement of novel object recognition (NOR) memory in NOR (d) and acquisition of spatial (e) and fear (f) memory. *p < .05, **p < .01 versus AAV-mCherry control, two-tailed Student's t test or Mann-Whitney U test. (g, h) Schematic and photomicrograph of coronal section showing AAV-CaMK2A-hM3Dq-mCherry injection into the CA1.",
+      "page_number": null
+    },
+    {
+      "text_id": 229,
+      "paragraph_id": 59,
+      "section_id": 23,
+      "text": "Scale bar: 100 µm. (i) Examples showing that bath CNO (500 nM) increased action-potential firing frequencies in an AAV-hM3Dq injection mouse. (j-l) Chemogenetic activation of CaMK2A+ excitatory neurons in the CA1 directly enhanced novelty memory and acquisition of spatial and fear memory. *p < .05, **p < .01 versus vehicle control, two-tailed Student's t test.",
+      "page_number": null
+    },
+    {
+      "text_id": 230,
+      "paragraph_id": 59,
+      "section_id": 23,
+      "text": "Error bars indicate standard errors of the mean.",
+      "page_number": null
+    },
+    {
+      "text_id": 231,
+      "paragraph_id": 59,
+      "section_id": 23,
+      "text": "Sample sizes are indicated in brackets.",
+      "page_number": null
+    },
+    {
+      "text_id": 232,
+      "paragraph_id": 59,
+      "section_id": 23,
+      "text": "ACSF = artificial cerebrospinal fluid; CNO = clozapine N-oxide; FC = fear conditioning; MSDS = moderate social defeat stress; DAPI = 4′, 6-diamidino-2-phenylindole.",
+      "page_number": null
+    },
+    {
+      "text_id": 233,
+      "paragraph_id": 60,
+      "section_id": 24,
+      "text": "Fig 4 (continued on next page)",
+      "page_number": null
+    },
+    {
+      "text_id": 234,
+      "paragraph_id": 61,
+      "section_id": 25,
+      "text": "Fig 4 Synaptosome associated protein 25 (SNAP-25) expression in CaMK2A+ excitatory neurons of the CA1 is required by social defeat stress (SDS)-induced enhancement of learning memory. (a) Western blot analyses reveal an increase in SNAP-25 levels in the CA1 after SDS. **p < .01 versus controls; two-tailed Student's t test. (b) Schematic showing AAV-DIO-shRNA-mCherry injection into the bilateral hippocampal CA1 area of CaMK2A-cre mice and the protocol for the experiments in (d) through (j). (c) Knockdown of SNAP-25 was confirmed by fluorescence in situ hybridization, few SNAP-25 mRNA (green) colocalized with SNAP-25-shRNA-mCherry in CA1 CaMK2Apositive neurons.",
+      "page_number": null
+    },
+    {
+      "text_id": 235,
+      "paragraph_id": 61,
+      "section_id": 25,
+      "text": "Scale bar: 100 μm. (d-i) Knockdown of SNAP-25 in CaMK2A+ excitatory neurons of the CA1 blocked the SDS-induced enhancement of learning in novel object recognition (d) and fear conditioning (g) and spatial memory in Y-maze (e), object location recognition (f) and Morris water maze (h, i) tests. *p < .05, **p < .01 versus control-short-hairpin RNA (shRNA), two-way repeated measures analysis of variance followed by post hoc Holm-Sidak test for (h); two-tailed Student's t test or Mann-Whitney U test for (d) through (g) and (i). (j) Knockdown of SNAP-25 in CaMK2A+ excitatory neurons of the CA1 did not affect swimming speed in Morris water maze test.",
+      "page_number": null
+    },
+    {
+      "text_id": 236,
+      "paragraph_id": 61,
+      "section_id": 25,
+      "text": "Two-sided Mann-Whitney U test. (k-n) Knockdown of SNAP-25 in CaMK2A-positive neurons of the CA1 did not reverse the SDS-induced social avoidance (k, l) and anxiety-like behavior in elevated plus maze test (m, n).",
+      "page_number": null
+    },
+    {
+      "text_id": 237,
+      "paragraph_id": 61,
+      "section_id": 25,
+      "text": "Two-sided Student's t test or Mann-Whitney U test.",
+      "page_number": null
+    },
+    {
+      "text_id": 238,
+      "paragraph_id": 61,
+      "section_id": 25,
+      "text": "Error bars indicate standard errors of the mean.",
+      "page_number": null
+    },
+    {
+      "text_id": 239,
+      "paragraph_id": 61,
+      "section_id": 25,
+      "text": "Sample sizes are indicated in brackets.",
+      "page_number": null
+    },
+    {
+      "text_id": 240,
+      "paragraph_id": 61,
+      "section_id": 25,
+      "text": "GAPDH = glyceraldehyde 3-phosphate dehydrogenase.",
+      "page_number": null
+    },
+    {
+      "text_id": 241,
+      "paragraph_id": 62,
+      "section_id": 26,
+      "text": "Fig 5 (continued on next page)",
+      "page_number": null
+    },
+    {
+      "text_id": 242,
+      "paragraph_id": 63,
+      "section_id": 27,
+      "text": "Fig 5 Synaptosome associated protein 25 (SNAP-25) and N-methyl-D-aspartate (NMDA) receptor subunit GluN2B participate in the regulation of hippocampal neuronal plasticity and social defeat stress (SDS)-induced enhancement of learning and memory in young mice. (a-c) The average spine number, especially mushroom and stubby spines, was significantly increased in SDS mice.",
+      "page_number": null
+    },
+    {
+      "text_id": 243,
+      "paragraph_id": 63,
+      "section_id": 27,
+      "text": "Scale bar: 2.5 µm. **p < .01 versus controls, two-tailed Student's t test or Mann-Whitney U test. (d, e) SDS-induced increase in density of dendritic spines was prevented by SNAP-25 short-hairpin RNA (shRNA).",
+      "page_number": null
+    },
+    {
+      "text_id": 244,
+      "paragraph_id": 63,
+      "section_id": 27,
+      "text": "Scale bar: 10 µm. **p < .01 versus control-shRNA, two-tailed Student's t test. (f-h) Long-term potentiation (LTP) of field excitatory postsynaptic potential in area CA1 is induced by the theta-burst stimulation (TBS) stimulation (indicated by an arrow head).",
+      "page_number": null
+    },
+    {
+      "text_id": 245,
+      "paragraph_id": 63,
+      "section_id": 27,
+      "text": "Panel (f) shows the traces of field excitatory postsynaptic potentials before and after TBS stimulation in different treatment groups (Point 1 and 2, Point i and ii, point A, B or point a, b).",
+      "page_number": null
+    },
+    {
+      "text_id": 246,
+      "paragraph_id": 63,
+      "section_id": 27,
+      "text": "SDS mice showed higher amplitude of LTP than control mice (g).",
+      "page_number": null
+    },
+    {
+      "text_id": 247,
+      "paragraph_id": 63,
+      "section_id": 27,
+      "text": "Knockdown of SNAP-25 in CaMK2A+ excitatory neurons of the CA1 suppressed SDS-induced enhancement of LTP (h). *p < .05, two-way repeated measures analysis of variance. (i) Western blot analyses revealed an increase in NMDA receptors subunit GluN2B level in the CA1 after SDS. *p < .05 versus controls, two-tailed Mann-Whitney U test. (j) Western blot analysis showed reduced GluN2B level by knockdown SNAP-25 in the CA1. *p < .05, two-tailed Mann-Whitney U test. (k) GluN2B levels exhibited a linear relationship to the silencing SNAP-25 level. (l) Schematic and photomicrograph of coronal section showing GluN2B antagonist RO25-6981 (2 µg) microinjection sites in the bilateral hippocampal CA1 area and the protocol for the experiments in (m) and (n).",
+      "page_number": null
+    },
+    {
+      "text_id": 248,
+      "paragraph_id": 63,
+      "section_id": 27,
+      "text": "Scale bar: 1mm. (m, n) Intra-CA1 of RO25-6981 1 hr prior to tests significantly suppressed the SDS-induced enhancement of memory in novel object recognition (m) and spatial memory in Y maze (n). *p < .05, **p < .01 versus vehicle control, two-tailed Student's t test or Mann-Whitney U test.",
+      "page_number": null
+    },
+    {
+      "text_id": 249,
+      "paragraph_id": 63,
+      "section_id": 27,
+      "text": "Error bars indicate standard errors of the mean.",
+      "page_number": null
+    },
+    {
+      "text_id": 250,
+      "paragraph_id": 63,
+      "section_id": 27,
+      "text": "Sample sizes are indicated in brackets.",
+      "page_number": null
+    },
+    {
+      "text_id": 251,
+      "paragraph_id": 63,
+      "section_id": 27,
+      "text": "GAPDH = glyceraldehyde 3-phosphate dehydrogenase; fEPSP = field excitatory postsynaptic potentials.",
+      "page_number": null
+    },
+    {
+      "text_id": 252,
+      "paragraph_id": 64,
+      "section_id": 28,
+      "text": "Fig 6 (continued on next page)",
+      "page_number": null
+    },
+    {
+      "text_id": 253,
+      "paragraph_id": 65,
+      "section_id": 29,
+      "text": "Fig 7 Knockdown of synaptosome associated protein 25 (SNAP-25) in CaMK2A+ excitatory neurons of the CA1 does not influence learning ability of SDS middle-aged mice. (a) Schematic and photomicrograph showing AAV-CaMK2A-shRNA-mCherry injection into the bilateral hippocampal CA1 area of middle-aged mice and the protocol for the experiments in (b-f).",
+      "page_number": null
+    },
+    {
+      "text_id": 254,
+      "paragraph_id": 65,
+      "section_id": 29,
+      "text": "Scale bar: 100 μm. (b) Western blot analyses revealed a reduced SNAP-25 level by knockdown of SNAP-25 in the CA1 of middle-aged mice. **p < .01 versus controls, two-tailed Mann-Whitney U test. (c-f) Knockdown of SNAP-25 in CaMK2A+ excitatory neurons of the CA1 did not affect the behavioral phenotypes of middle-aged mice in novel object recognition (c), object location recognition (d), social interaction (e), and elevated plus maze (f) tests.",
+      "page_number": null
+    },
+    {
+      "text_id": 255,
+      "paragraph_id": 65,
+      "section_id": 29,
+      "text": "Two-sided Student's t test or Mann-Whitney U test.",
+      "page_number": null
+    },
+    {
+      "text_id": 256,
+      "paragraph_id": 65,
+      "section_id": 29,
+      "text": "Error bars indicate standard errors of the mean.",
+      "page_number": null
+    },
+    {
+      "text_id": 257,
+      "paragraph_id": 65,
+      "section_id": 29,
+      "text": "Sample sizes are indicated in brackets.",
+      "page_number": null
+    },
+    {
+      "text_id": 258,
+      "paragraph_id": 65,
+      "section_id": 29,
+      "text": "GAPDH = glyceraldehyde 3-phophate dehydrogenase; shRNA = short-hairpin RNA.",
+      "page_number": null
+    },
+    {
+      "text_id": 259,
+      "paragraph_id": 66,
+      "section_id": 30,
+      "text": "Fig 6 Social stress fails to enhance learning and memory capability and neuronal plasticity in middle-aged mice. (a) Schematic of the protocol for the moderate degree of social defeat stress (SDS) and behavioral tests. (b-d) Middle-aged mice did not exhibit any changes of conditioning fear in both contextual and tone cues (b) and spatial learning memory in Y-maze (c) and object location recognition (d) tests after exposure to SDS.",
+      "page_number": null
+    },
+    {
+      "text_id": 260,
+      "paragraph_id": 66,
+      "section_id": 30,
+      "text": "Two-sided Student's t test or Mann-Whitney U test. (e) During the 5-day training in the Morris water maze, middle-aged SDS mice showed similar platform arrival latency compared with middle-aged control mice.",
+      "page_number": null
+    },
+    {
+      "text_id": 261,
+      "paragraph_id": 66,
+      "section_id": 30,
+      "text": "Two-way repeated measures analysis of variance (ANOVA). (f) No differences in platform quadrant latency, platform quadrant swimming time, and platform quadrant entry tests were found between SDS and control mice.",
+      "page_number": null
+    },
+    {
+      "text_id": 262,
+      "paragraph_id": 66,
+      "section_id": 30,
+      "text": "Two-sided Student's t test or Mann-Whitney U test. (g) SDS mice showed similar long-term potentiation of field excitatory postsynaptic potentials by theta-burst stimulation (TBS) compared with control mice in middle age.",
+      "page_number": null
+    },
+    {
+      "text_id": 263,
+      "paragraph_id": 66,
+      "section_id": 30,
+      "text": "Two-way repeated measures ANOVA.",
+      "page_number": null
+    },
+    {
+      "text_id": 264,
+      "paragraph_id": 66,
+      "section_id": 30,
+      "text": "Insert showing the traces of field excitatory postsynaptic potentials before and after TBS stimulation in different treatment groups (Point 1 and 2, point a, b). (h) SDS did not affect the density and maturation of dendritic spines in CA1 pyramidal neurons in middle-aged mice.",
+      "page_number": null
+    },
+    {
+      "text_id": 265,
+      "paragraph_id": 66,
+      "section_id": 30,
+      "text": "Scale bar: 5 µm.",
+      "page_number": null
+    },
+    {
+      "text_id": 266,
+      "paragraph_id": 66,
+      "section_id": 30,
+      "text": "Two-sided Mann-Whitney U test. (i) Western blot analyses exhibited similar expression level of synaptosome associated protein 25 (SNAP-25) in the CA1 between the SDS and control groups in middle-aged mice.",
+      "page_number": null
+    },
+    {
+      "text_id": 267,
+      "paragraph_id": 66,
+      "section_id": 30,
+      "text": "Two-sided Student's t test.",
+      "page_number": null
+    },
+    {
+      "text_id": 268,
+      "paragraph_id": 66,
+      "section_id": 30,
+      "text": "Error bars indicate standard errors of the mean.",
+      "page_number": null
+    },
+    {
+      "text_id": 269,
+      "paragraph_id": 66,
+      "section_id": 30,
+      "text": "Sample sizes are indicated in brackets.",
+      "page_number": null
+    },
+    {
+      "text_id": 270,
+      "paragraph_id": 66,
+      "section_id": 30,
+      "text": "GAPDH = glyceraldehyde 3-phosphate dehydrogenase; fEPSP = field excitatory postsynaptic potentials.",
+      "page_number": null
+    },
+    {
+      "text_id": 271,
+      "paragraph_id": 68,
+      "section_id": 31,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 272,
+      "paragraph_id": 69,
+      "section_id": 31,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 273,
+      "paragraph_id": 70,
+      "section_id": 31,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 274,
+      "paragraph_id": 71,
+      "section_id": 31,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 275,
+      "paragraph_id": 72,
+      "section_id": 31,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 276,
+      "paragraph_id": 73,
+      "section_id": 31,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 277,
+      "paragraph_id": 74,
+      "section_id": 31,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 278,
+      "paragraph_id": 75,
+      "section_id": 31,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 279,
+      "paragraph_id": 76,
+      "section_id": 31,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 280,
+      "paragraph_id": 77,
+      "section_id": 31,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 281,
+      "paragraph_id": 78,
+      "section_id": 31,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 282,
+      "paragraph_id": 79,
+      "section_id": 31,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 283,
+      "paragraph_id": 80,
+      "section_id": 31,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 284,
+      "paragraph_id": 81,
+      "section_id": 31,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 285,
+      "paragraph_id": 82,
+      "section_id": 31,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 286,
+      "paragraph_id": 83,
+      "section_id": 31,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 287,
+      "paragraph_id": 84,
+      "section_id": 31,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 288,
+      "paragraph_id": 85,
+      "section_id": 31,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 289,
+      "paragraph_id": 86,
+      "section_id": 31,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 290,
+      "paragraph_id": 87,
+      "section_id": 31,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 291,
+      "paragraph_id": 88,
+      "section_id": 31,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 292,
+      "paragraph_id": 89,
+      "section_id": 31,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 293,
+      "paragraph_id": 90,
+      "section_id": 31,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 294,
+      "paragraph_id": 91,
+      "section_id": 31,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 295,
+      "paragraph_id": 92,
+      "section_id": 31,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 296,
+      "paragraph_id": 93,
+      "section_id": 31,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 297,
+      "paragraph_id": 94,
+      "section_id": 31,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 298,
+      "paragraph_id": 95,
+      "section_id": 31,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 299,
+      "paragraph_id": 96,
+      "section_id": 31,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 300,
+      "paragraph_id": 97,
+      "section_id": 31,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 301,
+      "paragraph_id": 98,
+      "section_id": 31,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 302,
+      "paragraph_id": 99,
+      "section_id": 31,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 303,
+      "paragraph_id": 100,
+      "section_id": 31,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 304,
+      "paragraph_id": 101,
+      "section_id": 31,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 305,
+      "paragraph_id": 102,
+      "section_id": 31,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 306,
+      "paragraph_id": 103,
+      "section_id": 31,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 307,
+      "paragraph_id": 104,
+      "section_id": 31,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 308,
+      "paragraph_id": 105,
+      "section_id": 31,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 309,
+      "paragraph_id": 106,
+      "section_id": 31,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 310,
+      "paragraph_id": 107,
+      "section_id": 31,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 311,
+      "paragraph_id": 108,
+      "section_id": 31,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 312,
+      "paragraph_id": 109,
+      "section_id": 31,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 313,
+      "paragraph_id": 110,
+      "section_id": 31,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 314,
+      "paragraph_id": 111,
+      "section_id": 31,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 315,
+      "paragraph_id": 112,
+      "section_id": 31,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 316,
+      "paragraph_id": 113,
+      "section_id": 31,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 317,
+      "paragraph_id": 114,
+      "section_id": 31,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 318,
+      "paragraph_id": 115,
+      "section_id": 31,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 319,
+      "paragraph_id": 116,
+      "section_id": 31,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 320,
+      "paragraph_id": 117,
+      "section_id": 31,
+      "text": "",
+      "page_number": null
+    }
+  ],
+  "section": [
+    {
+      "section_id": 0,
+      "header": "",
+      "parent_section_id": null,
+      "section_type": "foot",
+      "classification_score": null
+    },
+    {
+      "section_id": 0,
+      "header": "Abstract",
+      "parent_section_id": null,
+      "section_type": "abstract",
+      "classification_score": null
+    },
+    {
+      "section_id": 1,
+      "header": "[div-01]",
+      "parent_section_id": null,
+      "section_type": "intro",
+      "classification_score": null
+    },
+    {
+      "section_id": 2,
+      "header": "Open Practices Statement",
+      "parent_section_id": null,
+      "section_type": "intro",
+      "classification_score": null
+    },
+    {
+      "section_id": 4,
+      "header": "Subjects",
+      "parent_section_id": null,
+      "section_type": "method",
+      "classification_score": null
+    },
+    {
+      "section_id": 5,
+      "header": "SDS model",
+      "parent_section_id": null,
+      "section_type": "method",
+      "classification_score": null
+    },
+    {
+      "section_id": 6,
+      "header": "Statement of Relevance",
+      "parent_section_id": null,
+      "section_type": "method",
+      "classification_score": null
+    },
+    {
+      "section_id": 7,
+      "header": "Statistical analysis",
+      "parent_section_id": null,
+      "section_type": "method",
+      "classification_score": null
+    },
+    {
+      "section_id": 9,
+      "header": "Social stress enhances learning and memory ability in young mice",
+      "parent_section_id": null,
+      "section_type": "results",
+      "classification_score": null
+    },
+    {
+      "section_id": 10,
+      "header": "Enhancement of learning and memory by SDS is independent of social avoidance and anxiety-like behaviors",
+      "parent_section_id": null,
+      "section_type": "results",
+      "classification_score": null
+    },
+    {
+      "section_id": 11,
+      "header": "Excitatory neurons in the hippocampal CA1 area are involved in the enhancement of learning memory by SDS",
+      "parent_section_id": null,
+      "section_type": "results",
+      "classification_score": null
+    },
+    {
+      "section_id": 12,
+      "header": "SNAP-25 in the hippocampal CA1 area is associated with the enhancement of learning ability induced by SDS",
+      "parent_section_id": null,
+      "section_type": "results",
+      "classification_score": null
+    },
+    {
+      "section_id": 13,
+      "header": "NMDA receptor subunit GluN2B contributes to the SDS-induced enhancement of memory",
+      "parent_section_id": null,
+      "section_type": "results",
+      "classification_score": null
+    },
+    {
+      "section_id": 14,
+      "header": "Social stress failed to enhance learning and memory in middle-aged mice",
+      "parent_section_id": null,
+      "section_type": "results",
+      "classification_score": null
+    },
+    {
+      "section_id": 15,
+      "header": "Discussion",
+      "parent_section_id": null,
+      "section_type": "discussion",
+      "classification_score": null
+    },
+    {
+      "section_id": 16,
+      "header": "",
+      "parent_section_id": null,
+      "section_type": "acknowledgement",
+      "classification_score": null
+    },
+    {
+      "section_id": 17,
+      "header": "Funding",
+      "parent_section_id": null,
+      "section_type": "funding",
+      "classification_score": null
+    },
+    {
+      "section_id": 18,
+      "header": "Declaration of Conflicting Interests",
+      "parent_section_id": null,
+      "section_type": "conflict",
+      "classification_score": null
+    },
+    {
+      "section_id": 19,
+      "header": "Supplemental Material",
+      "parent_section_id": null,
+      "section_type": "annex",
+      "classification_score": null
+    },
+    {
+      "section_id": 20,
+      "header": "Fig 1",
+      "parent_section_id": null,
+      "section_type": "figure",
+      "classification_score": null
+    },
+    {
+      "section_id": 21,
+      "header": "Fig 1",
+      "parent_section_id": null,
+      "section_type": "figure",
+      "classification_score": null
+    },
+    {
+      "section_id": 22,
+      "header": "Fig 2",
+      "parent_section_id": null,
+      "section_type": "figure",
+      "classification_score": null
+    },
+    {
+      "section_id": 23,
+      "header": "Fig 3",
+      "parent_section_id": null,
+      "section_type": "figure",
+      "classification_score": null
+    },
+    {
+      "section_id": 24,
+      "header": "Fig 4",
+      "parent_section_id": null,
+      "section_type": "figure",
+      "classification_score": null
+    },
+    {
+      "section_id": 25,
+      "header": "Fig 4",
+      "parent_section_id": null,
+      "section_type": "figure",
+      "classification_score": null
+    },
+    {
+      "section_id": 26,
+      "header": "Fig 5",
+      "parent_section_id": null,
+      "section_type": "figure",
+      "classification_score": null
+    },
+    {
+      "section_id": 27,
+      "header": "Fig 5",
+      "parent_section_id": null,
+      "section_type": "figure",
+      "classification_score": null
+    },
+    {
+      "section_id": 28,
+      "header": "Fig 6",
+      "parent_section_id": null,
+      "section_type": "figure",
+      "classification_score": null
+    },
+    {
+      "section_id": 29,
+      "header": "Fig 7",
+      "parent_section_id": null,
+      "section_type": "figure",
+      "classification_score": null
+    },
+    {
+      "section_id": 30,
+      "header": "Fig 6",
+      "parent_section_id": null,
+      "section_type": "figure",
+      "classification_score": null
+    },
+    {
+      "section_id": 31,
+      "header": "References",
+      "parent_section_id": null,
+      "section_type": "references",
+      "classification_score": null
+    }
+  ],
+  "url": [
+    {
+      "href": "journals.sagepub.com/doi/suppl/10.1177/09567976231160098",
+      "link_text": null,
+      "text_id": 213
+    }
+  ],
+  "bib": [
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "Data curation; Investigation",
+      "authors": "Yang, Jing-Yan",
+      "editors": "",
+      "publisher": "",
+      "year": null,
+      "volume": "",
+      "issue": "",
+      "container": "",
+      "first_page": null,
+      "last_page": null,
+      "bib_id": 0,
+      "year_suffix": null,
+      "text_id": 271
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "",
+      "authors": "Wang, Zhe-Chen",
+      "editors": "",
+      "publisher": "",
+      "year": null,
+      "volume": "",
+      "issue": "",
+      "container": "",
+      "first_page": null,
+      "last_page": null,
+      "bib_id": 1,
+      "year_suffix": null,
+      "text_id": 272
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "",
+      "authors": "Huang, Qian",
+      "editors": "",
+      "publisher": "",
+      "year": null,
+      "volume": "",
+      "issue": "",
+      "container": "",
+      "first_page": null,
+      "last_page": null,
+      "bib_id": 2,
+      "year_suffix": null,
+      "text_id": 273
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "Formal analysis; Funding acquisition",
+      "authors": "Xu, Wen-Dong",
+      "editors": "",
+      "publisher": "",
+      "year": null,
+      "volume": "",
+      "issue": "",
+      "container": "",
+      "first_page": null,
+      "last_page": null,
+      "bib_id": 3,
+      "year_suffix": null,
+      "text_id": 274
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "",
+      "authors": "Zhang, Yu-Qiu",
+      "editors": "",
+      "publisher": "",
+      "year": null,
+      "volume": "",
+      "issue": "",
+      "container": "",
+      "first_page": null,
+      "last_page": null,
+      "bib_id": 4,
+      "year_suffix": null,
+      "text_id": 275
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "The social risk hypothesis of depressed mood: Evolutionary, psychosocial, and neurobiological perspectives",
+      "authors": "Allen, N B; Badcock, P B",
+      "editors": "",
+      "publisher": "",
+      "year": 2003,
+      "volume": "129",
+      "issue": "6",
+      "container": "Psychological Bulletin",
+      "first_page": "887",
+      "last_page": "913",
+      "bib_id": 5,
+      "year_suffix": "",
+      "text_id": 276
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "Hippocampal neurogenesis confers stress resilience by inhibiting the ventral dentate gyrus",
+      "authors": "Anacker, C; Luna, V M; Stevens, G S; Millette, A; Shores, R; Jimenez, J C; Chen, B; Hen, R",
+      "editors": "",
+      "publisher": "",
+      "year": 2018,
+      "volume": "559",
+      "issue": "7712",
+      "container": "Nature",
+      "first_page": "98",
+      "last_page": "102",
+      "bib_id": 6,
+      "year_suffix": "",
+      "text_id": 277
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "The concept of antifragility and its implications for the practice of risk analysis",
+      "authors": "Aven, T",
+      "editors": "",
+      "publisher": "",
+      "year": 2015,
+      "volume": "35",
+      "issue": "3",
+      "container": "Risk Analysis",
+      "first_page": "476",
+      "last_page": "483",
+      "bib_id": 7,
+      "year_suffix": "",
+      "text_id": 278
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "Astrocyte-derived ATP modulates depressive-like behaviors",
+      "authors": "Cao, X; Li, L P; Wang, Q; Wu, Q; Hu, H H; Zhang, M; Fang, Y Y; Zhang, J; Li, S J; Xiong, W C; Yan, H C; Gao, Y B; Liu, J H; Li, X W; Sun, L R; Zeng, Y N; Zhu, X H; Gao, T.-M",
+      "editors": "",
+      "publisher": "",
+      "year": 2013,
+      "volume": "19",
+      "issue": "6",
+      "container": "Nature Medicine",
+      "first_page": "773",
+      "last_page": "777",
+      "bib_id": 8,
+      "year_suffix": "",
+      "text_id": 279
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "Ghrelin mediates stress-induced food-reward behavior in mice",
+      "authors": "Chuang, J.-C; Perello, M; Sakata, I; Osborne-Lawrence, S; Savitt, J M; Lutter, M; Zigman, J M",
+      "editors": "",
+      "publisher": "",
+      "year": 2011,
+      "volume": "121",
+      "issue": "7",
+      "container": "Journal of Clinical Investigation",
+      "first_page": "2684",
+      "last_page": "2692",
+      "bib_id": 9,
+      "year_suffix": "",
+      "text_id": 280
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1155/2007/60803",
+      "title": "The temporal dynamics model of emotional memory processing: A synthesis on the neurobiological basis of stress-induced amnesia, flashbulb and traumatic memories, and the Yerkes-Dodson law",
+      "authors": "Diamond, D M; Campbell, A M; Park, C R; Halonen, J; Zoladz, P R",
+      "editors": "",
+      "publisher": "",
+      "year": 2007,
+      "volume": "",
+      "issue": "",
+      "container": "Neural Plasticity",
+      "first_page": "60803",
+      "last_page": null,
+      "bib_id": 10,
+      "year_suffix": "",
+      "text_id": 281
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "Influence of predator stress on the consolidation versus retrieval of long-term spatial memory and hippocampal spinogenesis",
+      "authors": "Diamond, D M; Campbell, A M; Park, C R; Woodson, J C; Conrad, C D; Bachstetter, A D; Mervis, R F",
+      "editors": "",
+      "publisher": "",
+      "year": 2006,
+      "volume": "16",
+      "issue": "7",
+      "container": "Hippocampus",
+      "first_page": "571",
+      "last_page": "576",
+      "bib_id": 11,
+      "year_suffix": "",
+      "text_id": 282
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "Men and mice: Relating their ages",
+      "authors": "Dutta, S; Sengupta, P",
+      "editors": "",
+      "publisher": "",
+      "year": 2016,
+      "volume": "152",
+      "issue": "",
+      "container": "Life Sciences",
+      "first_page": "244",
+      "last_page": "248",
+      "bib_id": 12,
+      "year_suffix": "",
+      "text_id": 283
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "The SNAP-25 gene is associated with cognitive ability: Evidence from a family-based study in two independent Dutch cohorts",
+      "authors": "Gosso, M F; De Geus, E J; Van Belzen, M J; Polderman, T J C; Heutink, P; Boomsma, D I; Posthuma, D",
+      "editors": "",
+      "publisher": "",
+      "year": 2006,
+      "volume": "11",
+      "issue": "9",
+      "container": "Molecular Psychiatry",
+      "first_page": "878",
+      "last_page": "886",
+      "bib_id": 13,
+      "year_suffix": "",
+      "text_id": 284
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "Defeat stress in rodents: From behavior to molecules",
+      "authors": "Hammels, C; Pishva, E; De Vry, J; Van Den Hove, D L; Prickaerts, J; Van Winkel, R; Selten, J.-P; Lesch, K.-P; Daskalakis, N P; Steinbusch, H W M; Van Os, J; Kenis, G; Rutten, B P F",
+      "editors": "",
+      "publisher": "",
+      "year": 2015,
+      "volume": "59",
+      "issue": "",
+      "container": "Neuroscience & Biobehavioral Reviews",
+      "first_page": "111",
+      "last_page": "140",
+      "bib_id": 14,
+      "year_suffix": "",
+      "text_id": 285
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "SNAP-25 in hippocampal CA1 region is involved in memory consolidation",
+      "authors": "Hou, Q; Gao, X; Zhang, X; Kong, L; Wang, X; Bian, W; Tu, Y; Jin, M; Guoping, Z; Baoming, L; Jing, N; Yu, L",
+      "editors": "",
+      "publisher": "",
+      "year": 2004,
+      "volume": "20",
+      "issue": "6",
+      "container": "European Journal of Neuroscience",
+      "first_page": "1593",
+      "last_page": "1603",
+      "bib_id": 15,
+      "year_suffix": "",
+      "text_id": 286
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "",
+      "authors": "",
+      "editors": "",
+      "publisher": "",
+      "year": 2022,
+      "volume": "",
+      "issue": "",
+      "container": "",
+      "first_page": null,
+      "last_page": null,
+      "bib_id": 16,
+      "year_suffix": "",
+      "text_id": 287
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.7554/eLife.00362",
+      "title": "Acute stress enhances adult rat hippocampal neurogenesis and activation of newborn neurons via secreted astrocytic FGF2",
+      "authors": "Kirby, E D; Muroy, S E; Sun, W G; Covarrubias, D; Leong, M J; Barchas, L A; Kaufer, D",
+      "editors": "",
+      "publisher": "",
+      "year": 2013,
+      "volume": "2",
+      "issue": "",
+      "container": "eLife",
+      "first_page": null,
+      "last_page": null,
+      "bib_id": 17,
+      "year_suffix": "",
+      "text_id": 288
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "SNAP-25 is a target of protein kinase C phosphorylation critical to NMDA receptor trafficking",
+      "authors": "Lau, C G; Takayasu, Y; Rodenas-Ruano, A; Paternain, A V; Lerma, J; Bennett, M V L; Zukin, R S",
+      "editors": "",
+      "publisher": "",
+      "year": 2010,
+      "volume": "30",
+      "issue": "1",
+      "container": "Journal of Neuroscience",
+      "first_page": "242",
+      "last_page": "254",
+      "bib_id": 18,
+      "year_suffix": "",
+      "text_id": 289
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "Early life stress impairs fear memory and synaptic plasticity; a potential role for GluN2B",
+      "authors": "Lesuis, S L; Lucassen, P J; Krugers, H J",
+      "editors": "",
+      "publisher": "",
+      "year": 2019,
+      "volume": "149",
+      "issue": "",
+      "container": "Neuropharmacology",
+      "first_page": "195",
+      "last_page": "203",
+      "bib_id": 19,
+      "year_suffix": "",
+      "text_id": 290
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "Dendritic inhibition in the hippocampus supports fear learning",
+      "authors": "Lovett-Barron, M; Kaifosh, P; Kheirbek, M A; Danielson, N; Zaremba, J D; Reardon, T R; Turi, G F; Hen, R; Zemelman, B V; Losonczy, A",
+      "editors": "",
+      "publisher": "",
+      "year": 2014,
+      "volume": "343",
+      "issue": "6173",
+      "container": "Science",
+      "first_page": "857",
+      "last_page": "863",
+      "bib_id": 20,
+      "year_suffix": "",
+      "text_id": 291
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1038/s41598-017-01820-2",
+      "title": "GIRK2 splice variants and neuronal G protein-gated K + channels: Implications for channel function and behavior",
+      "authors": "Fernandez De Velasco, Marron; Zhang, E; Vo, L; Tipps, B N; Farris, M; Xia, S; Anderson, Z; Carlblom, A; Weaver, N; Dudek, C D; Wickman, S M; , K",
+      "editors": "",
+      "publisher": "",
+      "year": 2017,
+      "volume": "7",
+      "issue": "1",
+      "container": "Scientific Reports",
+      "first_page": "1639",
+      "last_page": null,
+      "bib_id": 21,
+      "year_suffix": "",
+      "text_id": 292
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "NMDA receptor blockade alters stress-induced dendritic remodeling in medial prefrontal cortex",
+      "authors": "Martin, K P; Wellman, C L",
+      "editors": "",
+      "publisher": "",
+      "year": 2011,
+      "volume": "21",
+      "issue": "10",
+      "container": "Cerebral Cortex",
+      "first_page": "2366",
+      "last_page": "2373",
+      "bib_id": 22,
+      "year_suffix": "",
+      "text_id": 293
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "Hormesis defined",
+      "authors": "Mattson, M P",
+      "editors": "",
+      "publisher": "",
+      "year": 2008,
+      "volume": "7",
+      "issue": "1",
+      "container": "Aging Research Reviews",
+      "first_page": "1",
+      "last_page": "7",
+      "bib_id": 23,
+      "year_suffix": "",
+      "text_id": 294
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "Revisiting the stress concept: Implications for affective disorders",
+      "authors": "Mcewen, B S; Akil, H",
+      "editors": "",
+      "publisher": "",
+      "year": 2020,
+      "volume": "40",
+      "issue": "1",
+      "container": "Journal of Neuroscience",
+      "first_page": "12",
+      "last_page": "21",
+      "bib_id": 24,
+      "year_suffix": "",
+      "text_id": 295
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "Neuroinflammatory dynamics underlie memory impairments after repeated social defeat",
+      "authors": "Mckim, D B; Niraula, A; Tarr, A J; Wohleb, E S; Sheridan, J F; Godbout, J P",
+      "editors": "",
+      "publisher": "",
+      "year": 2016,
+      "volume": "36",
+      "issue": "9",
+      "container": "Journal of Neuroscience",
+      "first_page": "2590",
+      "last_page": "2604",
+      "bib_id": 25,
+      "year_suffix": "",
+      "text_id": 296
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "Inhibitory avoidance learning in CD1 mice: Effects of chronic social defeat stress",
+      "authors": "Monleon, S; Duque, A; Vinader-Caerols, C",
+      "editors": "",
+      "publisher": "",
+      "year": 2015,
+      "volume": "115",
+      "issue": "",
+      "container": "Behavioural Processes",
+      "first_page": "64",
+      "last_page": "69",
+      "bib_id": 26,
+      "year_suffix": "",
+      "text_id": 297
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "Effects of several degrees of chronic social defeat stress on emotional and spatial memory in CD1 mice",
+      "authors": "Monleon, S; Duque, A; Vinader-Caerols, C",
+      "editors": "",
+      "publisher": "",
+      "year": 2016,
+      "volume": "124",
+      "issue": "",
+      "container": "Behavioural Processes",
+      "first_page": "23",
+      "last_page": "31",
+      "bib_id": 27,
+      "year_suffix": "",
+      "text_id": 298
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "Regulation of releasable vesicle pool sizes by protein kinase A-dependent phosphorylation of SNAP-25",
+      "authors": "Nagy, G; Reim, K; Matti, U; Brose, N; Binz, T; Rettig, J; Neher, E; Sørensen, J B",
+      "editors": "",
+      "publisher": "",
+      "year": 2004,
+      "volume": "41",
+      "issue": "3",
+      "container": "Neuron",
+      "first_page": "417",
+      "last_page": "429",
+      "bib_id": 28,
+      "year_suffix": "",
+      "text_id": 299
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "Synaptic plasticity, memory and the hippocampus: A neural network approach to causality",
+      "authors": "Neves, G; Cooke, S F; Bliss, T V",
+      "editors": "",
+      "publisher": "",
+      "year": 2008,
+      "volume": "9",
+      "issue": "1",
+      "container": "Nature Reviews Neuroscience",
+      "first_page": "65",
+      "last_page": "75",
+      "bib_id": 29,
+      "year_suffix": "",
+      "text_id": 300
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.3389/fnins.2015.00164",
+      "title": "The neuroenergetics of stress hormones in the hippocampus and implications for memory",
+      "authors": "Osborne, D M; Pearson-Leary, J; Mcnay, E C",
+      "editors": "",
+      "publisher": "",
+      "year": 2015,
+      "volume": "9",
+      "issue": "",
+      "container": "Frontiers in Neuroscience",
+      "first_page": "164",
+      "last_page": null,
+      "bib_id": 30,
+      "year_suffix": "",
+      "text_id": 301
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "Neuroinflammation regulates cognitive impairment in socially defeated mice",
+      "authors": "Pfau, M L; Russo, S J",
+      "editors": "",
+      "publisher": "",
+      "year": 2016,
+      "volume": "39",
+      "issue": "6",
+      "container": "Trends in Neurosciences",
+      "first_page": "353",
+      "last_page": "355",
+      "bib_id": 31,
+      "year_suffix": "",
+      "text_id": 302
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "Bridging the interval: Theory and neurobiology of trace conditioning",
+      "authors": "Raybuck, J D; Lattal, K M",
+      "editors": "",
+      "publisher": "",
+      "year": 2014,
+      "volume": "101",
+      "issue": "",
+      "container": "Behavioural Processes",
+      "first_page": "103",
+      "last_page": "111",
+      "bib_id": 32,
+      "year_suffix": "",
+      "text_id": 303
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1126/scitranslmed.aai8753",
+      "title": "Hippocampal extracellular matrix alterations contribute to cognitive impairment associated with a chronic depressive-like state in rats",
+      "authors": "Riga, D; Kramvis, I; Koskinen, M K; Van Bokhoven, P; Van Der Harst, J E; Heistek, T S; Timmerman, A J; Van Nierop, P; Van Der Schors, R C; Pieneman, A W; De Weger, A; Van Mourik, Y; Schoffelmeer, A N M; Mansvelder, H D; Meredith, R M; Hoogendijk, W J G; Smit, A B; Spijker, S",
+      "editors": "",
+      "publisher": "",
+      "year": 2017,
+      "volume": "9",
+      "issue": "421",
+      "container": "Science Translational Medicine",
+      "first_page": null,
+      "last_page": null,
+      "bib_id": 33,
+      "year_suffix": "",
+      "text_id": 304
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "The reactive scope model: A new model integrating homeostasis, allostasis, and stress",
+      "authors": "Romero, L M; Dickens, M J; Cyr, N E",
+      "editors": "",
+      "publisher": "",
+      "year": 2009,
+      "volume": "55",
+      "issue": "3",
+      "container": "Hormones and Behavior",
+      "first_page": "375",
+      "last_page": "389",
+      "bib_id": 34,
+      "year_suffix": "",
+      "text_id": 305
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "A role for SNAP25 in internalization of kainate receptors and synaptic plasticity",
+      "authors": "Selak, S; Paternain, A V; Aller, M I; Picó, E; Rivera, R; Lerma, J",
+      "editors": "",
+      "publisher": "",
+      "year": 2009,
+      "volume": "63",
+      "issue": "3",
+      "container": "Neuron",
+      "first_page": "357",
+      "last_page": "371",
+      "bib_id": 35,
+      "year_suffix": "",
+      "text_id": 306
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "The effects of acute stress on episodic memory: A meta-analysis and integrative review",
+      "authors": "Shields, G S; Sazma, M A; Mccullough, A M; Yonelinas, A P",
+      "editors": "",
+      "publisher": "",
+      "year": 2017,
+      "volume": "143",
+      "issue": "6",
+      "container": "Psychological Bulletin",
+      "first_page": "636",
+      "last_page": "675",
+      "bib_id": 36,
+      "year_suffix": "",
+      "text_id": 307
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1098/rstb.2013.0163",
+      "title": "GluN2A and GluN2B subunit-containing NMDA receptors in hippocampal plasticity",
+      "authors": "Shipton, O A; Paulsen, O",
+      "editors": "",
+      "publisher": "",
+      "year": 2014,
+      "volume": "369",
+      "issue": "",
+      "container": "Philosophical Transactions of the Royal Society of London, Series B: Biological Sciences",
+      "first_page": null,
+      "last_page": null,
+      "bib_id": 37,
+      "year_suffix": "",
+      "text_id": 308
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.7554/eLife.15448",
+      "title": "Repeated social defeat stress enhances glutamatergic synaptic plasticity in the VTA and cocaine place conditioning",
+      "authors": "Stelly, C E; Pomrenze, M B; Cook, J B; Morikawa, H",
+      "editors": "",
+      "publisher": "",
+      "year": 2016,
+      "volume": "5",
+      "issue": "",
+      "container": "eLife",
+      "first_page": "15448",
+      "last_page": null,
+      "bib_id": 38,
+      "year_suffix": "",
+      "text_id": 309
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "Fear conditioning potentiates the hippocampal CA1 commissural pathway in vivo and increases awake phase sleep",
+      "authors": "Subramaniyan, M; Manivannan, S; Chelur, V; Tsetsenis, T; Jiang, E; Dani, J A",
+      "editors": "",
+      "publisher": "",
+      "year": 2021,
+      "volume": "31",
+      "issue": "10",
+      "container": "Hippocampus",
+      "first_page": "1154",
+      "last_page": "1175",
+      "bib_id": 39,
+      "year_suffix": "",
+      "text_id": 310
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1038/494430e",
+      "title": "Antifragility' as a mathematical idea",
+      "authors": "Taleb, N N",
+      "editors": "",
+      "publisher": "",
+      "year": 2013,
+      "volume": "494",
+      "issue": "7438",
+      "container": "Nature",
+      "first_page": "430",
+      "last_page": null,
+      "bib_id": 40,
+      "year_suffix": "",
+      "text_id": 311
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1038/ncomms3136",
+      "title": "SNAP-25 regulates spine formation through postsynaptic binding to p140Cap",
+      "authors": "Tomasoni, R; Repetto, D; Morini, R; Elia, C; Gardoni, F; Di Luca, M; Turco, E; Defilippi, P; Matteoli, M",
+      "editors": "",
+      "publisher": "",
+      "year": 2013,
+      "volume": "4",
+      "issue": "",
+      "container": "Nature Communications",
+      "first_page": "2136",
+      "last_page": null,
+      "bib_id": 41,
+      "year_suffix": "",
+      "text_id": 312
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1038/s41398-021-01497-2",
+      "title": "Corticotropin-releasing factor induces functional and structural synaptic remodelling in acute stress",
+      "authors": "Vandael, D; Wierda, K; Vints, K; Baatsen, P; De Groef, L; Moons, L; Rybakin, V; Gounko, N V",
+      "editors": "",
+      "publisher": "",
+      "year": 2021,
+      "volume": "11",
+      "issue": "1",
+      "container": "Translational Psychiatry",
+      "first_page": "378",
+      "last_page": null,
+      "bib_id": 42,
+      "year_suffix": "",
+      "text_id": 313
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "Tell me what to do: Stress facilitates stimulus-response learning by instruction",
+      "authors": "Vogel, S; Schwabe, L",
+      "editors": "",
+      "publisher": "",
+      "year": 2018,
+      "volume": "151",
+      "issue": "",
+      "container": "Neurobiology of Learning and Memory",
+      "first_page": "43",
+      "last_page": "52",
+      "bib_id": 43,
+      "year_suffix": "",
+      "text_id": 314
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "Chronic social defeat stress mouse model: Current view on its behavioral deficits and modifications",
+      "authors": "Wang, W; Liu, W; Duan, D; Bai, H; Wang, Z; Xing, Y",
+      "editors": "",
+      "publisher": "",
+      "year": 2021,
+      "volume": "135",
+      "issue": "3",
+      "container": "Behavioral Neuroscience",
+      "first_page": "326",
+      "last_page": "335",
+      "bib_id": 44,
+      "year_suffix": "",
+      "text_id": 315
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1186/s13293-022-00450-2",
+      "title": "Sex differences in contextual pattern separation, neurogenesis, and functional connectivity within the limbic system",
+      "authors": "Yagi, S; Lee, A; Truter, N; Galea, L A M",
+      "editors": "",
+      "publisher": "",
+      "year": 2022,
+      "volume": "13",
+      "issue": "1",
+      "container": "Biology of Sex Differences",
+      "first_page": "42",
+      "last_page": null,
+      "bib_id": 45,
+      "year_suffix": "",
+      "text_id": 316
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1186/s13041-015-0181-3",
+      "title": "Activation of protein kinase A in the amygdala modulates anxiety-like behaviors in social defeat exposed mice",
+      "authors": "Yang, L; Shi, L J; Yu, J; Zhang, Y Q",
+      "editors": "",
+      "publisher": "",
+      "year": 2016,
+      "volume": "9",
+      "issue": "3",
+      "container": "Molecular Brain",
+      "first_page": null,
+      "last_page": null,
+      "bib_id": 46,
+      "year_suffix": "",
+      "text_id": 317
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "Chronic social defeat stress impairs goal-directed behavior through dysregulation of ventral hippocampal activity in male mice",
+      "authors": "Yoshida, K; Drew, M R; Kono, A; Mimura, M; Takata, N; Tanaka, K F",
+      "editors": "",
+      "publisher": "",
+      "year": 2021,
+      "volume": "46",
+      "issue": "9",
+      "container": "Neuropsychopharmacology",
+      "first_page": "1606",
+      "last_page": "1616",
+      "bib_id": 47,
+      "year_suffix": "",
+      "text_id": 318
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "Mechanisms for acute stress-induced enhancement of glutamatergic transmission and working memory",
+      "authors": "Yuen, E Y; Liu, W; Karatsoreos, I N; Ren, Y; Feng, J; Mcewen, B S; Yan, Z",
+      "editors": "",
+      "publisher": "",
+      "year": 2011,
+      "volume": "16",
+      "issue": "2",
+      "container": "Molecular Psychiatry",
+      "first_page": "156",
+      "last_page": "170",
+      "bib_id": 48,
+      "year_suffix": "",
+      "text_id": 319
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "Abnormal expression of synaptophysin, SNAP-25, and synaptotagmin 1 in the hippocampus of kainic acid-exposed rats with behavioral deficits",
+      "authors": "Zhang, F.-X; Sun, Q.-J; Zheng, X.-Y; Lin, Y.-T; Shang, W; Wang, A.-H; Duan, R S; Chi, Z.-F",
+      "editors": "",
+      "publisher": "",
+      "year": 2014,
+      "volume": "34",
+      "issue": "6",
+      "container": "Cellular and Molecular Neurobiology",
+      "first_page": "813",
+      "last_page": "824",
+      "bib_id": 49,
+      "year_suffix": "",
+      "text_id": 320
+    }
+  ],
+  "xref": [
+    {
+      "xref_id": 5,
+      "xref_type": "bib",
+      "contents": "(Allen & Badcock, 2003)",
+      "text_id": 10
+    },
+    {
+      "xref_id": 6,
+      "xref_type": "bib",
+      "contents": "(Anacker et al., 2018;",
+      "text_id": 5
+    },
+    {
+      "xref_id": 7,
+      "xref_type": "bib",
+      "contents": "(Aven, 2015;",
+      "text_id": 158
+    },
+    {
+      "xref_id": 8,
+      "xref_type": "bib",
+      "contents": "(Cao et al., 2013)",
+      "text_id": 74
+    },
+    {
+      "xref_id": 9,
+      "xref_type": "bib",
+      "contents": "(Chuang et al., 2011;",
+      "text_id": 165
+    },
+    {
+      "xref_id": 10,
+      "xref_type": "bib",
+      "contents": "Diamond et al., 2007)",
+      "text_id": 159
+    },
+    {
+      "xref_id": 10,
+      "xref_type": "bib",
+      "contents": "(Diamond et al., 2007)",
+      "text_id": null
+    },
+    {
+      "xref_id": 11,
+      "xref_type": "bib",
+      "contents": "(Diamond et al., 2006)",
+      "text_id": 178
+    },
+    {
+      "xref_id": 12,
+      "xref_type": "bib",
+      "contents": "Dutta & Sengupta, 2016)",
+      "text_id": 135
+    },
+    {
+      "xref_id": 13,
+      "xref_type": "bib",
+      "contents": "(Gosso et al., 2006;",
+      "text_id": 181
+    },
+    {
+      "xref_id": 14,
+      "xref_type": "bib",
+      "contents": "Hammels et al., 2015)",
+      "text_id": 5
+    },
+    {
+      "xref_id": 15,
+      "xref_type": "bib",
+      "contents": "Hou et al., 2004;",
+      "text_id": 181
+    },
+    {
+      "xref_id": 15,
+      "xref_type": "bib",
+      "contents": "(Hou et al., 2004)",
+      "text_id": 194
+    },
+    {
+      "xref_id": 17,
+      "xref_type": "bib",
+      "contents": "(Kirby et al., 2013;",
+      "text_id": 3
+    },
+    {
+      "xref_id": 18,
+      "xref_type": "bib",
+      "contents": "(Lau et al., 2010;",
+      "text_id": null
+    },
+    {
+      "xref_id": 18,
+      "xref_type": "bib",
+      "contents": "(Lau et al., 2010;",
+      "text_id": 182
+    },
+    {
+      "xref_id": 19,
+      "xref_type": "bib",
+      "contents": "(Lesuis et al., 2019)",
+      "text_id": 188
+    },
+    {
+      "xref_id": 20,
+      "xref_type": "bib",
+      "contents": "(Lovett-Barron et al., 2014)",
+      "text_id": 95
+    },
+    {
+      "xref_id": 21,
+      "xref_type": "bib",
+      "contents": "Velasco et al., 2017)",
+      "text_id": 170
+    },
+    {
+      "xref_id": 22,
+      "xref_type": "bib",
+      "contents": "(Martin & Wellman, 2011)",
+      "text_id": 187
+    },
+    {
+      "xref_id": 23,
+      "xref_type": "bib",
+      "contents": "Mattson, 2008)",
+      "text_id": 159
+    },
+    {
+      "xref_id": 24,
+      "xref_type": "bib",
+      "contents": "(McEwen & Akil, 2020)",
+      "text_id": 163
+    },
+    {
+      "xref_id": 24,
+      "xref_type": "bib",
+      "contents": "(McEwen & Akil, 2020)",
+      "text_id": 164
+    },
+    {
+      "xref_id": 25,
+      "xref_type": "bib",
+      "contents": "(McKim et al., 2016;",
+      "text_id": 2
+    },
+    {
+      "xref_id": 25,
+      "xref_type": "bib",
+      "contents": "(McKim et al., 2016)",
+      "text_id": 144
+    },
+    {
+      "xref_id": 26,
+      "xref_type": "bib",
+      "contents": "Monleon et al. (2015",
+      "text_id": null
+    },
+    {
+      "xref_id": 26,
+      "xref_type": "bib",
+      "contents": "(Monleon et al., 2015",
+      "text_id": 29
+    },
+    {
+      "xref_id": 27,
+      "xref_type": "bib",
+      "contents": "Monleon et al. ( , 2016) )",
+      "text_id": null
+    },
+    {
+      "xref_id": 27,
+      "xref_type": "bib",
+      "contents": "(Monleon et al., , 2016))",
+      "text_id": 29
+    },
+    {
+      "xref_id": 27,
+      "xref_type": "bib",
+      "contents": "(Monleon et al., 2016)",
+      "text_id": 160
+    },
+    {
+      "xref_id": 28,
+      "xref_type": "bib",
+      "contents": "(Nagy et al., 2004)",
+      "text_id": 182
+    },
+    {
+      "xref_id": 29,
+      "xref_type": "bib",
+      "contents": "(Neves et al., 2008)",
+      "text_id": 186
+    },
+    {
+      "xref_id": 30,
+      "xref_type": "bib",
+      "contents": "(Osborne et al., 2015)",
+      "text_id": 177
+    },
+    {
+      "xref_id": 31,
+      "xref_type": "bib",
+      "contents": "(Pfau & Russo, 2016)",
+      "text_id": 160
+    },
+    {
+      "xref_id": 32,
+      "xref_type": "bib",
+      "contents": "(Raybuck & Lattal, 2014)",
+      "text_id": 167
+    },
+    {
+      "xref_id": 33,
+      "xref_type": "bib",
+      "contents": "(Riga et al., 2017;",
+      "text_id": 60
+    },
+    {
+      "xref_id": 34,
+      "xref_type": "bib",
+      "contents": "(Romero et al., 2009)",
+      "text_id": 161
+    },
+    {
+      "xref_id": 35,
+      "xref_type": "bib",
+      "contents": "Selak et al., 2009)",
+      "text_id": null
+    },
+    {
+      "xref_id": 35,
+      "xref_type": "bib",
+      "contents": "Selak et al., 2009)",
+      "text_id": 182
+    },
+    {
+      "xref_id": 36,
+      "xref_type": "bib",
+      "contents": "(Shields et al., 2017;",
+      "text_id": 175
+    },
+    {
+      "xref_id": 37,
+      "xref_type": "bib",
+      "contents": "(Shipton & Paulsen, 2014)",
+      "text_id": 190
+    },
+    {
+      "xref_id": 38,
+      "xref_type": "bib",
+      "contents": "Stelly et al., 2016)",
+      "text_id": 165
+    },
+    {
+      "xref_id": 39,
+      "xref_type": "bib",
+      "contents": "(Subramaniyan et al., 2021)",
+      "text_id": 168
+    },
+    {
+      "xref_id": 40,
+      "xref_type": "bib",
+      "contents": "Taleb, 2013)",
+      "text_id": 158
+    },
+    {
+      "xref_id": 41,
+      "xref_type": "bib",
+      "contents": "Tomasoni et al., 2013)",
+      "text_id": 181
+    },
+    {
+      "xref_id": 41,
+      "xref_type": "bib",
+      "contents": "Tomasoni et al., 2013)",
+      "text_id": 183
+    },
+    {
+      "xref_id": 41,
+      "xref_type": "bib",
+      "contents": "(Tomasoni et al., 2013)",
+      "text_id": 181
+    },
+    {
+      "xref_id": 41,
+      "xref_type": "bib",
+      "contents": "(Tomasoni et al., 2013)",
+      "text_id": 183
+    },
+    {
+      "xref_id": 42,
+      "xref_type": "bib",
+      "contents": "(Vandael et al., 2021)",
+      "text_id": 176
+    },
+    {
+      "xref_id": 43,
+      "xref_type": "bib",
+      "contents": "Vogel & Schwabe, 2018)",
+      "text_id": 3
+    },
+    {
+      "xref_id": 43,
+      "xref_type": "bib",
+      "contents": "Vogel & Schwabe, 2018)",
+      "text_id": 60
+    },
+    {
+      "xref_id": 44,
+      "xref_type": "bib",
+      "contents": "(Wang et al., 2021)",
+      "text_id": 11
+    },
+    {
+      "xref_id": 45,
+      "xref_type": "bib",
+      "contents": "(Yagi et al., 2022)",
+      "text_id": 169
+    },
+    {
+      "xref_id": 46,
+      "xref_type": "bib",
+      "contents": "(Yang et al., 2016)",
+      "text_id": 29
+    },
+    {
+      "xref_id": 47,
+      "xref_type": "bib",
+      "contents": "Yoshida et al., 2021)",
+      "text_id": 2
+    },
+    {
+      "xref_id": 48,
+      "xref_type": "bib",
+      "contents": "Yuen et al., 2011)",
+      "text_id": 175
+    },
+    {
+      "xref_id": 49,
+      "xref_type": "bib",
+      "contents": "(Zhang et al., 2014)",
+      "text_id": 102
+    },
+    {
+      "xref_id": null,
+      "xref_type": "bib",
+      "contents": "(Shanghai, China)",
+      "text_id": 17
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "1a",
+      "text_id": 61
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "1a",
+      "text_id": 62
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "1a",
+      "text_id": 63
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "1a",
+      "text_id": 65
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "1b",
+      "text_id": 61
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "1b",
+      "text_id": 62
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "1b",
+      "text_id": 63
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "1b",
+      "text_id": 65
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "1c",
+      "text_id": 61
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "1c",
+      "text_id": 62
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "1c",
+      "text_id": 63
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "1c",
+      "text_id": 65
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "1d",
+      "text_id": 61
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "1d",
+      "text_id": 62
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "1d",
+      "text_id": 63
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "1d",
+      "text_id": 65
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "1e",
+      "text_id": 61
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "1e",
+      "text_id": 62
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "1e",
+      "text_id": 63
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "1e",
+      "text_id": 65
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "1f",
+      "text_id": 66
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "1f",
+      "text_id": 67
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "1f",
+      "text_id": 68
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "1f",
+      "text_id": null
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "1g",
+      "text_id": 66
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "1g",
+      "text_id": 67
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "1g",
+      "text_id": 68
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "1g",
+      "text_id": null
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "1h",
+      "text_id": 66
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "1h",
+      "text_id": 67
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "1h",
+      "text_id": 68
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "1h",
+      "text_id": null
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "1i",
+      "text_id": 66
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "1i",
+      "text_id": 67
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "1i",
+      "text_id": 68
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "1i",
+      "text_id": null
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "1j",
+      "text_id": 66
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "1j",
+      "text_id": 67
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "1j",
+      "text_id": 68
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "1j",
+      "text_id": null
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "1k",
+      "text_id": 66
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "1k",
+      "text_id": 67
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "1k",
+      "text_id": 68
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "1k",
+      "text_id": null
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "S1a-S1d",
+      "text_id": 66
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "S1a-S1d",
+      "text_id": 67
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "S1a-S1d",
+      "text_id": 68
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "S1a-S1d",
+      "text_id": null
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "2a-2c",
+      "text_id": 74
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "2a-2c",
+      "text_id": 76
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "2d-2k",
+      "text_id": 74
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "2d-2k",
+      "text_id": 76
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "S2a-S2d",
+      "text_id": null
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "S2a-S2d",
+      "text_id": null
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "S2a-S2d",
+      "text_id": null
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "S2e",
+      "text_id": null
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "S2e",
+      "text_id": null
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "S2e",
+      "text_id": null
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "S2f",
+      "text_id": null
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "S2f",
+      "text_id": null
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "S2f",
+      "text_id": null
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "S2g-S2i",
+      "text_id": null
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "S2g-S2i",
+      "text_id": null
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "S2g-S2i",
+      "text_id": null
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "S3a-S3e",
+      "text_id": null
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "S3a-S3e",
+      "text_id": null
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "S3b",
+      "text_id": null
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "S3b",
+      "text_id": null
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "S3d",
+      "text_id": null
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "S3d",
+      "text_id": null
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "S3f-S3m",
+      "text_id": null
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "S3f-S3m",
+      "text_id": null
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "3a-3c",
+      "text_id": 96
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "3a-3c",
+      "text_id": 97
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "3a-3c",
+      "text_id": 98
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "3a-3c",
+      "text_id": 100
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "3a-3c",
+      "text_id": 101
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "3d",
+      "text_id": 96
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "3d",
+      "text_id": 97
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "3d",
+      "text_id": 98
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "3d",
+      "text_id": 100
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "3d",
+      "text_id": 101
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "3e",
+      "text_id": 96
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "3e",
+      "text_id": 97
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "3e",
+      "text_id": 98
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "3e",
+      "text_id": 100
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "3e",
+      "text_id": 101
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "3f",
+      "text_id": 96
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "3f",
+      "text_id": 97
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "3f",
+      "text_id": 98
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "3f",
+      "text_id": 100
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "3f",
+      "text_id": 101
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "3g-3i",
+      "text_id": 96
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "3g-3i",
+      "text_id": 97
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "3g-3i",
+      "text_id": 98
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "3g-3i",
+      "text_id": 100
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "3g-3i",
+      "text_id": 101
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "3j-3l",
+      "text_id": 96
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "3j-3l",
+      "text_id": 97
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "3j-3l",
+      "text_id": 98
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "3j-3l",
+      "text_id": 100
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "3j-3l",
+      "text_id": 101
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "4a",
+      "text_id": 104
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "4a",
+      "text_id": 105
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "4a",
+      "text_id": 106
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "4a",
+      "text_id": 107
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "4a",
+      "text_id": 108
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "4a",
+      "text_id": null
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "4b",
+      "text_id": 104
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "4b",
+      "text_id": 105
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "4b",
+      "text_id": 106
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "4b",
+      "text_id": 107
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "4b",
+      "text_id": 108
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "4b",
+      "text_id": null
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "4d-4i",
+      "text_id": 104
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "4d-4i",
+      "text_id": 105
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "4d-4i",
+      "text_id": 106
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "4d-4i",
+      "text_id": 107
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "4d-4i",
+      "text_id": 108
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "4d-4i",
+      "text_id": null
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "4j",
+      "text_id": 104
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "4j",
+      "text_id": 105
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "4j",
+      "text_id": 106
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "4j",
+      "text_id": 107
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "4j",
+      "text_id": 108
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "4j",
+      "text_id": null
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "4k-4n",
+      "text_id": 104
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "4k-4n",
+      "text_id": 105
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "4k-4n",
+      "text_id": 106
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "4k-4n",
+      "text_id": 107
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "4k-4n",
+      "text_id": 108
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "4k-4n",
+      "text_id": null
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "S4a-S4g",
+      "text_id": 104
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "S4a-S4g",
+      "text_id": 105
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "S4a-S4g",
+      "text_id": 106
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "S4a-S4g",
+      "text_id": 107
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "S4a-S4g",
+      "text_id": 108
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "S4a-S4g",
+      "text_id": null
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "S5a-S5f",
+      "text_id": null
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "S5a-S5f",
+      "text_id": null
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "S5g-S5i",
+      "text_id": null
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "S5g-S5i",
+      "text_id": null
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "5a-5c",
+      "text_id": 118
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "5a-5c",
+      "text_id": 119
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "5a-5c",
+      "text_id": 122
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "5d",
+      "text_id": 118
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "5d",
+      "text_id": 119
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "5d",
+      "text_id": 122
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "5e",
+      "text_id": 118
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "5e",
+      "text_id": 119
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "5e",
+      "text_id": 122
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "5f",
+      "text_id": 118
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "5f",
+      "text_id": 119
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "5f",
+      "text_id": 122
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "5g",
+      "text_id": 118
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "5g",
+      "text_id": 119
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "5g",
+      "text_id": 122
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "5h",
+      "text_id": 118
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "5h",
+      "text_id": 119
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "5h",
+      "text_id": 122
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "5i",
+      "text_id": 130
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "5i",
+      "text_id": 131
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "5i",
+      "text_id": 132
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "5j",
+      "text_id": 130
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "5j",
+      "text_id": 131
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "5j",
+      "text_id": 132
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "5k",
+      "text_id": 130
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "5k",
+      "text_id": 131
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "5k",
+      "text_id": 132
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "5m",
+      "text_id": 130
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "5m",
+      "text_id": 131
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "5m",
+      "text_id": 132
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "5n",
+      "text_id": 130
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "5n",
+      "text_id": 131
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "5n",
+      "text_id": 132
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "S7a-S7f",
+      "text_id": null
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "S7a-S7f",
+      "text_id": 141
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "7b-7d",
+      "text_id": null
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "7b-7d",
+      "text_id": 141
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "7e",
+      "text_id": null
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "7e",
+      "text_id": 141
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "7f",
+      "text_id": null
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "7f",
+      "text_id": 141
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "S6a-S6c",
+      "text_id": null
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "6a-6f",
+      "text_id": 136
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "6a-6f",
+      "text_id": 140
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "6g-i",
+      "text_id": 136
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "6g-i",
+      "text_id": 140
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "c",
+      "text_id": null
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "c",
+      "text_id": 130
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "c",
+      "text_id": 131
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "c",
+      "text_id": 132
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "c",
+      "text_id": null
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "S8",
+      "text_id": null
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "S9",
+      "text_id": null
+    },
+    {
+      "xref_id": null,
+      "xref_type": "table",
+      "contents": "S1",
+      "text_id": 27
+    },
+    {
+      "xref_id": null,
+      "xref_type": "table",
+      "contents": "S2",
+      "text_id": 58
+    }
+  ],
+  "figure": [
+    {
+      "figure_id": 1,
+      "section_id": 20,
+      "image": null,
+      "page_number": null
+    },
+    {
+      "figure_id": 2,
+      "section_id": 21,
+      "image": null,
+      "page_number": null
+    },
+    {
+      "figure_id": 3,
+      "section_id": 22,
+      "image": null,
+      "page_number": null
+    },
+    {
+      "figure_id": 4,
+      "section_id": 23,
+      "image": null,
+      "page_number": null
+    },
+    {
+      "figure_id": 5,
+      "section_id": 24,
+      "image": null,
+      "page_number": null
+    },
+    {
+      "figure_id": 6,
+      "section_id": 25,
+      "image": null,
+      "page_number": null
+    },
+    {
+      "figure_id": 7,
+      "section_id": 26,
+      "image": null,
+      "page_number": null
+    },
+    {
+      "figure_id": 8,
+      "section_id": 27,
+      "image": null,
+      "page_number": null
+    },
+    {
+      "figure_id": 9,
+      "section_id": 28,
+      "image": null,
+      "page_number": null
+    },
+    {
+      "figure_id": 10,
+      "section_id": 29,
+      "image": null,
+      "page_number": null
+    },
+    {
+      "figure_id": 11,
+      "section_id": 30,
+      "image": null,
+      "page_number": null
+    }
+  ],
+  "table": [],
+  "eq": [
+    {
+      "text_id": 62,
+      "grp_id": 1,
+      "lhs": "U",
+      "comp": "=",
+      "rhs": "37.0"
+    },
+    {
+      "text_id": 62,
+      "grp_id": 1,
+      "lhs": "p",
+      "comp": "<",
+      "rhs": ".001"
+    },
+    {
+      "text_id": 62,
+      "grp_id": 1,
+      "lhs": "U",
+      "comp": "=",
+      "rhs": "62.5"
+    },
+    {
+      "text_id": 62,
+      "grp_id": 1,
+      "lhs": "p",
+      "comp": "=",
+      "rhs": ".028"
+    },
+    {
+      "text_id": 62,
+      "grp_id": 1,
+      "lhs": "r",
+      "comp": "=",
+      "rhs": ".466"
+    },
+    {
+      "text_id": 62,
+      "grp_id": 1,
+      "lhs": "95% CI",
+      "comp": "=",
+      "rhs": "[.09, .73]"
+    },
+    {
+      "text_id": 63,
+      "grp_id": 2,
+      "lhs": "t(26)",
+      "comp": "=",
+      "rhs": "2.45"
+    },
+    {
+      "text_id": 63,
+      "grp_id": 2,
+      "lhs": "p",
+      "comp": "=",
+      "rhs": ".02"
+    },
+    {
+      "text_id": 63,
+      "grp_id": 2,
+      "lhs": "Cohen's d",
+      "comp": "=",
+      "rhs": "0.991"
+    },
+    {
+      "text_id": 63,
+      "grp_id": 2,
+      "lhs": "95% CI",
+      "comp": "=",
+      "rhs": "[0.15, 1.82]"
+    },
+    {
+      "text_id": 65,
+      "grp_id": 3,
+      "lhs": "U",
+      "comp": "=",
+      "rhs": "33.5"
+    },
+    {
+      "text_id": 65,
+      "grp_id": 3,
+      "lhs": "p",
+      "comp": "=",
+      "rhs": ".011"
+    },
+    {
+      "text_id": 65,
+      "grp_id": 3,
+      "lhs": "r",
+      "comp": "=",
+      "rhs": ".61"
+    },
+    {
+      "text_id": 65,
+      "grp_id": 3,
+      "lhs": "95% CI",
+      "comp": "=",
+      "rhs": "[.24, .83]"
+    },
+    {
+      "text_id": 65,
+      "grp_id": 3,
+      "lhs": "t(26)",
+      "comp": "=",
+      "rhs": "2.23"
+    },
+    {
+      "text_id": 65,
+      "grp_id": 3,
+      "lhs": "p",
+      "comp": "=",
+      "rhs": ".035"
+    },
+    {
+      "text_id": 65,
+      "grp_id": 3,
+      "lhs": "Cohen's d",
+      "comp": "=",
+      "rhs": "0.903"
+    },
+    {
+      "text_id": 65,
+      "grp_id": 3,
+      "lhs": "95% CI",
+      "comp": "=",
+      "rhs": "[0.07, 1.73]"
+    },
+    {
+      "text_id": 65,
+      "grp_id": 3,
+      "lhs": "t(19)",
+      "comp": "=",
+      "rhs": "2.89"
+    },
+    {
+      "text_id": 65,
+      "grp_id": 3,
+      "lhs": "p",
+      "comp": "=",
+      "rhs": ".009"
+    },
+    {
+      "text_id": 65,
+      "grp_id": 3,
+      "lhs": "Cohen's d",
+      "comp": "=",
+      "rhs": "1.297"
+    },
+    {
+      "text_id": 65,
+      "grp_id": 3,
+      "lhs": "95% CI",
+      "comp": "=",
+      "rhs": "[0.31, 2.25]"
+    },
+    {
+      "text_id": 67,
+      "grp_id": 4,
+      "lhs": "t(20)",
+      "comp": "=",
+      "rhs": "2.19"
+    },
+    {
+      "text_id": 67,
+      "grp_id": 4,
+      "lhs": "p",
+      "comp": "=",
+      "rhs": ".04"
+    },
+    {
+      "text_id": 67,
+      "grp_id": 4,
+      "lhs": "Cohen's d",
+      "comp": "=",
+      "rhs": "0.969"
+    },
+    {
+      "text_id": 67,
+      "grp_id": 4,
+      "lhs": "95% CI",
+      "comp": "=",
+      "rhs": "[0.04, 1.88]"
+    },
+    {
+      "text_id": 67,
+      "grp_id": 4,
+      "lhs": "t(20)",
+      "comp": "=",
+      "rhs": "2.25"
+    },
+    {
+      "text_id": 67,
+      "grp_id": 4,
+      "lhs": "p",
+      "comp": "=",
+      "rhs": ".036"
+    },
+    {
+      "text_id": 67,
+      "grp_id": 4,
+      "lhs": "Cohen's d",
+      "comp": "=",
+      "rhs": "0.996"
+    },
+    {
+      "text_id": 67,
+      "grp_id": 4,
+      "lhs": "95% CI",
+      "comp": "=",
+      "rhs": "[0.06, 1.91]"
+    },
+    {
+      "text_id": 67,
+      "grp_id": 4,
+      "lhs": "t(20)",
+      "comp": "=",
+      "rhs": "2.32"
+    },
+    {
+      "text_id": 67,
+      "grp_id": 4,
+      "lhs": "p",
+      "comp": "=",
+      "rhs": ".03"
+    },
+    {
+      "text_id": 67,
+      "grp_id": 4,
+      "lhs": "Cohen's d",
+      "comp": "=",
+      "rhs": "1.026"
+    },
+    {
+      "text_id": 67,
+      "grp_id": 4,
+      "lhs": "95% CI",
+      "comp": "=",
+      "rhs": "[0.09, 1.94]"
+    },
+    {
+      "text_id": 232,
+      "grp_id": 5,
+      "lhs": "DAPI",
+      "comp": "=",
+      "rhs": "4"
+    },
+    {
+      "text_id": 74,
+      "grp_id": 6,
+      "lhs": "SIR",
+      "comp": "≥",
+      "rhs": "1"
+    },
+    {
+      "text_id": 124,
+      "grp_id": 7,
+      "lhs": "p",
+      "comp": "<",
+      "rhs": ".01"
+    },
+    {
+      "text_id": 217,
+      "grp_id": 8,
+      "lhs": "p",
+      "comp": "<",
+      "rhs": ".05"
+    },
+    {
+      "text_id": 217,
+      "grp_id": 8,
+      "lhs": "p",
+      "comp": "<",
+      "rhs": ".01"
+    },
+    {
+      "text_id": 217,
+      "grp_id": 8,
+      "lhs": "p",
+      "comp": "<",
+      "rhs": ".05"
+    },
+    {
+      "text_id": 217,
+      "grp_id": 8,
+      "lhs": "p",
+      "comp": "<",
+      "rhs": ".01"
+    },
+    {
+      "text_id": 217,
+      "grp_id": 8,
+      "lhs": "p",
+      "comp": "<",
+      "rhs": ".05"
+    },
+    {
+      "text_id": 222,
+      "grp_id": 9,
+      "lhs": "p",
+      "comp": "<",
+      "rhs": ".01"
+    },
+    {
+      "text_id": 228,
+      "grp_id": 10,
+      "lhs": "p",
+      "comp": "<",
+      "rhs": ".05"
+    },
+    {
+      "text_id": 228,
+      "grp_id": 10,
+      "lhs": "p",
+      "comp": "<",
+      "rhs": ".01"
+    },
+    {
+      "text_id": 229,
+      "grp_id": 11,
+      "lhs": "p",
+      "comp": "<",
+      "rhs": ".05"
+    },
+    {
+      "text_id": 229,
+      "grp_id": 11,
+      "lhs": "p",
+      "comp": "<",
+      "rhs": ".01"
+    },
+    {
+      "text_id": 234,
+      "grp_id": 12,
+      "lhs": "p",
+      "comp": "<",
+      "rhs": ".01"
+    },
+    {
+      "text_id": 235,
+      "grp_id": 13,
+      "lhs": "p",
+      "comp": "<",
+      "rhs": ".05"
+    },
+    {
+      "text_id": 235,
+      "grp_id": 13,
+      "lhs": "p",
+      "comp": "<",
+      "rhs": ".01"
+    },
+    {
+      "text_id": 243,
+      "grp_id": 14,
+      "lhs": "p",
+      "comp": "<",
+      "rhs": ".01"
+    },
+    {
+      "text_id": 244,
+      "grp_id": 15,
+      "lhs": "p",
+      "comp": "<",
+      "rhs": ".01"
+    },
+    {
+      "text_id": 247,
+      "grp_id": 16,
+      "lhs": "p",
+      "comp": "<",
+      "rhs": ".05"
+    },
+    {
+      "text_id": 247,
+      "grp_id": 16,
+      "lhs": "p",
+      "comp": "<",
+      "rhs": ".05"
+    },
+    {
+      "text_id": 247,
+      "grp_id": 16,
+      "lhs": "p",
+      "comp": "<",
+      "rhs": ".05"
+    },
+    {
+      "text_id": 248,
+      "grp_id": 17,
+      "lhs": "p",
+      "comp": "<",
+      "rhs": ".05"
+    },
+    {
+      "text_id": 248,
+      "grp_id": 17,
+      "lhs": "p",
+      "comp": "<",
+      "rhs": ".01"
+    },
+    {
+      "text_id": 254,
+      "grp_id": 18,
+      "lhs": "p",
+      "comp": "<",
+      "rhs": ".01"
+    },
+    {
+      "text_id": 21,
+      "grp_id": 19,
+      "lhs": "humidity",
+      "comp": "≈",
+      "rhs": "60"
+    },
+    {
+      "text_id": 21,
+      "grp_id": 19,
+      "lhs": "intensity",
+      "comp": "≈",
+      "rhs": "100"
+    }
+  ]
+}

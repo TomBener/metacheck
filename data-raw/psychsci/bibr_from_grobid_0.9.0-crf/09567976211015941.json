@@ -1,0 +1,5378 @@
+{
+  "paper_id": "09567976211015941",
+  "info": [
+    {
+      "title": "A Personal Model of Trumpery: Linguistic Deception Detection in a Real-World High-Stakes Setting",
+      "keywords": ["deception detection", "linguistic analysis", "LIWC", "Twitter", "tailored model", "open data", "open materials"],
+      "doi": "10.1177/09567976211015941",
+      "file_hash": "d3d4240734a59381",
+      "input_format": "TEI XML",
+      "file_name": "data-raw/psychsci/grobid_0.9.0-crf/09567976211015941.xml",
+      "bibr_version": "10.0",
+      "paper_type": "unknown",
+      "paper_type_confidence": 0,
+      "oecd_l1": null,
+      "oecd_l2": null,
+      "oecd_confidence": null
+    }
+  ],
+  "author": [
+    {
+      "author_id": 1,
+      "given": "Sophie",
+      "family": "Van",
+      "affiliation": "",
+      "email": "",
+      "corresponding": false,
+      "orcid": "",
+      "role": []
+    },
+    {
+      "author_id": 2,
+      "given": "Der",
+      "family": "Zee",
+      "affiliation": "",
+      "email": "",
+      "corresponding": false,
+      "orcid": "",
+      "role": []
+    },
+    {
+      "author_id": 3,
+      "given": "Sophie",
+      "family": "Van Der Zee",
+      "affiliation": "Department of Applied Economics Erasmus School of Economics Erasmus University Rotterdam",
+      "email": "vanderzee@ese.eur.nl",
+      "corresponding": false,
+      "orcid": "",
+      "role": []
+    },
+    {
+      "author_id": 4,
+      "given": "Ronald",
+      "family": "Poppe",
+      "affiliation": "Department of Information and Computing Sciences Utrecht University",
+      "email": "",
+      "corresponding": false,
+      "orcid": "",
+      "role": []
+    },
+    {
+      "author_id": 5,
+      "given": "Alice",
+      "family": "Havrileck",
+      "affiliation": "Department of Applied Economics Erasmus School of Economics Erasmus University Rotterdam",
+      "email": "",
+      "corresponding": false,
+      "orcid": "",
+      "role": []
+    },
+    {
+      "author_id": 6,
+      "given": "Aurélien",
+      "family": "Baillon",
+      "affiliation": "Department of Applied Economics Erasmus School of Economics Erasmus University Rotterdam",
+      "email": "",
+      "corresponding": false,
+      "orcid": "",
+      "role": []
+    }
+  ],
+  "text": [
+    {
+      "text_id": 1,
+      "paragraph_id": 1,
+      "section_id": 0,
+      "text": "Language use differs between truthful and deceptive statements, but not all differences are consistent across people and contexts, complicating the identification of deceit in individuals.",
+      "page_number": null
+    },
+    {
+      "text_id": 2,
+      "paragraph_id": 1,
+      "section_id": 0,
+      "text": "By relying on fact-checked tweets, we showed in three studies (Study 1: 469 tweets; Study 2: 484 tweets; Study 3: 24 models) how well personalized linguistic deception detection performs by developing the first deception model tailored to an individual: the 45th US president.",
+      "page_number": null
+    },
+    {
+      "text_id": 3,
+      "paragraph_id": 1,
+      "section_id": 0,
+      "text": "First, we found substantial linguistic differences between factually correct and factually incorrect tweets.",
+      "page_number": null
+    },
+    {
+      "text_id": 4,
+      "paragraph_id": 1,
+      "section_id": 0,
+      "text": "We developed a quantitative model and achieved 73% overall accuracy.",
+      "page_number": null
+    },
+    {
+      "text_id": 5,
+      "paragraph_id": 1,
+      "section_id": 0,
+      "text": "Second, we tested out-of-sample prediction and achieved 74% overall accuracy.",
+      "page_number": null
+    },
+    {
+      "text_id": 6,
+      "paragraph_id": 1,
+      "section_id": 0,
+      "text": "Third, we compared our personalized model with linguistic models previously reported in the literature.",
+      "page_number": null
+    },
+    {
+      "text_id": 7,
+      "paragraph_id": 1,
+      "section_id": 0,
+      "text": "Our model outperformed existing models by 5 percentage points, demonstrating the added value of personalized linguistic analysis in real-world settings.",
+      "page_number": null
+    },
+    {
+      "text_id": 8,
+      "paragraph_id": 1,
+      "section_id": 0,
+      "text": "Our results indicate that factually incorrect tweets by the US president are not random mistakes of the sender.",
+      "page_number": null
+    },
+    {
+      "text_id": 9,
+      "paragraph_id": 3,
+      "section_id": 1,
+      "text": "Language use reveals information about who we are and how we feel (Ahmadian et al., 2017).",
+      "page_number": null
+    },
+    {
+      "text_id": 10,
+      "paragraph_id": 3,
+      "section_id": 1,
+      "text": "Based on pioneering work in text analysis by Walter Weintraub (1989), methods have been developed to automatically count the types of words people use (Fuller et al., 2006;Pennebaker et al., 2015).",
+      "page_number": null
+    },
+    {
+      "text_id": 11,
+      "paragraph_id": 3,
+      "section_id": 1,
+      "text": "These methods make text analysis an efficient and objective approach to study stable traits such as personality (Ahmadian et al., 2017;Weintraub, 1989) and more temporary states such as cooperation (Richardson et al., 2014) and solidarity (Smith et al., 2018).",
+      "page_number": null
+    },
+    {
+      "text_id": 12,
+      "paragraph_id": 3,
+      "section_id": 1,
+      "text": "Owing to substantial improvements in automated speech recognition, the applicability of such analyses will only further increase (Hirschberg & Manning, 2015).",
+      "page_number": null
+    },
+    {
+      "text_id": 13,
+      "paragraph_id": 4,
+      "section_id": 1,
+      "text": "Language use also differs between truthful and deceptive statements about past events (Bond & Lee, 2005;Fuller et al., 2015;Newman et al., 2003) and intentions (Kleinberg, van der Toolen, et al., 2018).",
+      "page_number": null
+    },
+    {
+      "text_id": 14,
+      "paragraph_id": 4,
+      "section_id": 1,
+      "text": "Linguistic analysis showed that liars tend to experience more cognitive load (e.g., fewer different words and exclusive terms), provide fewer details (e.g., fewer sensory-perceptual words), express more negative emotions (e.g., more anger words), distance themselves more than truth tellers (e.g., fewer first-person pronouns), and refer less to cognitive processes (e.g., fewer insight words; Hauch et al., 2015).",
+      "page_number": null
+    },
+    {
+      "text_id": 15,
+      "paragraph_id": 4,
+      "section_id": 1,
+      "text": "However, observed patterns have been partly contradictory and have limited discriminative power (DePaulo et al., 2003).",
+      "page_number": null
+    },
+    {
+      "text_id": 16,
+      "paragraph_id": 4,
+      "section_id": 1,
+      "text": "One possible explanation is that the differences between truthful and deceptive language are too small to be consistently observed (Vrij, 2008).",
+      "page_number": null
+    },
+    {
+      "text_id": 17,
+      "paragraph_id": 4,
+      "section_id": 1,
+      "text": "Alternatively, there might be significant variation between contexts and individuals in language use, which limits the performance of one-size-fits-all models (Bond et al., 2017).",
+      "page_number": null
+    },
+    {
+      "text_id": 18,
+      "paragraph_id": 4,
+      "section_id": 1,
+      "text": "Whereas several researchers have studied the effect of context on cues to deceit (Hauch et al., 2015;Markowitz & Hancock, 2019), the question remains how well the techniques for a whole population can be tailored to a single person.",
+      "page_number": null
+    },
+    {
+      "text_id": 19,
+      "paragraph_id": 4,
+      "section_id": 1,
+      "text": "This is important because practitioners must regularly determine whether a specific individual is being deceptive.",
+      "page_number": null
+    },
+    {
+      "text_id": 20,
+      "paragraph_id": 4,
+      "section_id": 1,
+      "text": "Answering this question requires a broad set of statements of which the veracity is known, all made by a single individual.",
+      "page_number": null
+    },
+    {
+      "text_id": 21,
+      "paragraph_id": 4,
+      "section_id": 1,
+      "text": "To date, this has proven challenging because the fact-checking efforts needed to acquire such a data set are significant.",
+      "page_number": null
+    },
+    {
+      "text_id": 22,
+      "paragraph_id": 5,
+      "section_id": 1,
+      "text": "In the present article, we put language-based lie detection to the test in a unique real-world setting.",
+      "page_number": null
+    },
+    {
+      "text_id": 23,
+      "paragraph_id": 5,
+      "section_id": 1,
+      "text": "We analyzed a multitude of statements made by a single individual, the 45th US president.",
+      "page_number": null
+    },
+    {
+      "text_id": 24,
+      "paragraph_id": 5,
+      "section_id": 1,
+      "text": "Several organizations have tasked themselves with fact-checking statements of US presidents, including those made in official speeches, Facebook posts, and tweets (Hasen, 2013).",
+      "page_number": null
+    },
+    {
+      "text_id": 25,
+      "paragraph_id": 5,
+      "section_id": 1,
+      "text": "Although some messages are posted under the president's name (e.g., Facebook posts) or are delivered by the president (e.g., speeches), the message itself may have been crafted by other individuals, potentially introducing noise to the signal.",
+      "page_number": null
+    },
+    {
+      "text_id": 26,
+      "paragraph_id": 5,
+      "section_id": 1,
+      "text": "Of all fact-checked communication channels, the 45th US president's Twitter account seemed to be the one he was most in control of (Barbaro, 2015).",
+      "page_number": null
+    },
+    {
+      "text_id": 27,
+      "paragraph_id": 5,
+      "section_id": 1,
+      "text": "In addition, tweets are considered official White House communication.",
+      "page_number": null
+    },
+    {
+      "text_id": 28,
+      "paragraph_id": 5,
+      "section_id": 1,
+      "text": "A court ruling (Case 1:17-cv-05205-NRB) indeed determined that it was unconstitutional for @realDonaldTrump to block Twitter followers.",
+      "page_number": null
+    },
+    {
+      "text_id": 29,
+      "paragraph_id": 5,
+      "section_id": 1,
+      "text": "This official status, combined with systematic fact checking, provides the opportunity for deception detection for a single individual in a highstakes context.",
+      "page_number": null
+    },
+    {
+      "text_id": 30,
+      "paragraph_id": 6,
+      "section_id": 1,
+      "text": "Previous analyses by independent fact checkers such as The Washington Post, PolitiFact, and The Star concluded that presidential candidates and US presidents regularly make factually incorrect statements (Alterman, 2004;Bond et al., 2017;McGranahan, 2017).",
+      "page_number": null
+    },
+    {
+      "text_id": 31,
+      "paragraph_id": 6,
+      "section_id": 1,
+      "text": "These statements are often portrayed as deceptive (Glasser, 2018).",
+      "page_number": null
+    },
+    {
+      "text_id": 32,
+      "paragraph_id": 6,
+      "section_id": 1,
+      "text": "However, an incorrect statement does not necessarily imply a lie.",
+      "page_number": null
+    },
+    {
+      "text_id": 33,
+      "paragraph_id": 6,
+      "section_id": 1,
+      "text": "The sender may simply be wrong and have a false belief (Bernstein & Loftus, 2009).",
+      "page_number": null
+    },
+    {
+      "text_id": 34,
+      "paragraph_id": 6,
+      "section_id": 1,
+      "text": "Being wrong should not affect language use because there is no difference in the perception or intention of the sender.",
+      "page_number": null
+    },
+    {
+      "text_id": 35,
+      "paragraph_id": 6,
+      "section_id": 1,
+      "text": "In contrast, when false statements are deliberately presented as truths, one would expect a change in language use, according to the deception hypothesis (Bond & Lee, 2005;Fuller et al., 2015;Hauch et al., 2015).",
+      "page_number": null
+    },
+    {
+      "text_id": 36,
+      "paragraph_id": 6,
+      "section_id": 1,
+      "text": "The deception hypothesis postulates that lying can cause behavioral change because lying can be cognitively demanding, elicit emotions and stress, and increase attempted behavioral control (DePaulo et al., 2003;Vrij, 2008;Vrij et al., 2017).",
+      "page_number": null
+    },
+    {
+      "text_id": 37,
+      "paragraph_id": 6,
+      "section_id": 1,
+      "text": "We tested the deception hypothesis by investigating whether differences in language can be used to distinguish between factually correct and factually incorrect statements in tweets of the 45th US president.",
+      "page_number": null
+    },
+    {
+      "text_id": 38,
+      "paragraph_id": 7,
+      "section_id": 1,
+      "text": "This research comprised three studies.",
+      "page_number": null
+    },
+    {
+      "text_id": 39,
+      "paragraph_id": 7,
+      "section_id": 1,
+      "text": "In Study 1, we analyzed differences in language use between factually correct and factually incorrect tweets and developed a personalized deception-detection model.",
+      "page_number": null
+    },
+    {
+      "text_id": 40,
+      "paragraph_id": 8,
+      "section_id": 1,
+      "text": "In Study 2, we tested the out-of-sample performance of our model.",
+      "page_number": null
+    },
+    {
+      "text_id": 41,
+      "paragraph_id": 8,
+      "section_id": 1,
+      "text": "In Study 3, we compared the performance of our personalized model with that of previously developed language-based deception-detection models.",
+      "page_number": null
+    },
+    {
+      "text_id": 42,
+      "paragraph_id": 12,
+      "section_id": 3,
+      "text": "Ethical approval was granted by the internal review board for nonexperimental research of the Erasmus School of Economics, Erasmus University Rotterdam.",
+      "page_number": null
+    },
+    {
+      "text_id": 43,
+      "paragraph_id": 14,
+      "section_id": 4,
+      "text": "To start, we collected a data set (Data Set 1) of all presidential tweets sent by @realDonaldTrump over the 3-month period from February to April 2018.",
+      "page_number": null
+    },
+    {
+      "text_id": 44,
+      "paragraph_id": 14,
+      "section_id": 4,
+      "text": "Data for Study 1 were gathered in May 2018.",
+      "page_number": null
+    },
+    {
+      "text_id": 45,
+      "paragraph_id": 14,
+      "section_id": 4,
+      "text": "We examined all tweets posted in the 3 most recent, yet completed,",
+      "page_number": null
+    },
+    {
+      "text_id": 46,
+      "paragraph_id": 16,
+      "section_id": 5,
+      "text": "People use different words when they lie and when they tell the truth.",
+      "page_number": null
+    },
+    {
+      "text_id": 47,
+      "paragraph_id": 16,
+      "section_id": 5,
+      "text": "Lying is cognitively demanding and can elicit emotional responses and stress, which is reflected in language use.",
+      "page_number": null
+    },
+    {
+      "text_id": 48,
+      "paragraph_id": 16,
+      "section_id": 5,
+      "text": "Several studies have identified linguistic differences between truth and lies, but some findings are contradictory.",
+      "page_number": null
+    },
+    {
+      "text_id": 49,
+      "paragraph_id": 16,
+      "section_id": 5,
+      "text": "A possible reason is that language use is personal and so is its modification caused by deception.",
+      "page_number": null
+    },
+    {
+      "text_id": 50,
+      "paragraph_id": 16,
+      "section_id": 5,
+      "text": "Linguistic analysis at the individual level is therefore a promising approach to lie detection.",
+      "page_number": null
+    },
+    {
+      "text_id": 51,
+      "paragraph_id": 16,
+      "section_id": 5,
+      "text": "To test this possibility, we made use of the existence of a unique data set of factually correct and factually incorrect statements of one single individual in a high-stakes setting: the fact-checked tweets of the 45th US president.",
+      "page_number": null
+    },
+    {
+      "text_id": 52,
+      "paragraph_id": 16,
+      "section_id": 5,
+      "text": "We developed a personalized language model, which allowed us to predict whether a statement was correct or potentially deceitful with reasonable accuracy.",
+      "page_number": null
+    },
+    {
+      "text_id": 53,
+      "paragraph_id": 16,
+      "section_id": 5,
+      "text": "Our personalized model outperformed existing models from the literature, thereby highlighting the added value of an individualized approach.",
+      "page_number": null
+    },
+    {
+      "text_id": 54,
+      "paragraph_id": 17,
+      "section_id": 5,
+      "text": "months.",
+      "page_number": null
+    },
+    {
+      "text_id": 55,
+      "paragraph_id": 17,
+      "section_id": 5,
+      "text": "The choice of 3 months was a deliberate tradeoff between collecting a sufficient number of tweets and the manual labor involved in data screening.",
+      "page_number": null
+    },
+    {
+      "text_id": 56,
+      "paragraph_id": 17,
+      "section_id": 5,
+      "text": "In total, 605 tweets were gathered.",
+      "page_number": null
+    },
+    {
+      "text_id": 57,
+      "paragraph_id": 17,
+      "section_id": 5,
+      "text": "The Washington Post provided us with a data set comprising fact-checked communications from this period that we matched to our Twitter data file.",
+      "page_number": null
+    },
+    {
+      "text_id": 58,
+      "paragraph_id": 17,
+      "section_id": 5,
+      "text": "As a result, we could identify which tweets were deemed factually incorrect and labeled the remainder as correct.",
+      "page_number": null
+    },
+    {
+      "text_id": 59,
+      "paragraph_id": 17,
+      "section_id": 5,
+      "text": "We named the obtained variable veracity.",
+      "page_number": null
+    },
+    {
+      "text_id": 60,
+      "paragraph_id": 17,
+      "section_id": 5,
+      "text": "Because fact checking may contain an element of subjectivity, we compared the judged veracity of Data Set 1 with the veracity determined by a second factchecking source, PolitiFact (see the Supplemental Material available online).",
+      "page_number": null
+    },
+    {
+      "text_id": 61,
+      "paragraph_id": 19,
+      "section_id": 6,
+      "text": "Next, the data set was screened to reduce noise.",
+      "page_number": null
+    },
+    {
+      "text_id": 62,
+      "paragraph_id": 19,
+      "section_id": 6,
+      "text": "To facilitate word recognition in linguistic analysis, we corrected misspellings (Bond & Lee, 2005;Newman et al., 2003).",
+      "page_number": null
+    },
+    {
+      "text_id": 63,
+      "paragraph_id": 19,
+      "section_id": 6,
+      "text": "Language use reveals information about the sender only when the sender actually writes the text himself or herself, so we removed tweets contaminated by other individuals.",
+      "page_number": null
+    },
+    {
+      "text_id": 64,
+      "paragraph_id": 19,
+      "section_id": 6,
+      "text": "We removed 66 retweets and 52 tweets containing quotes of more than six words to eliminate contamination of our data with tweets from other individuals.",
+      "page_number": null
+    },
+    {
+      "text_id": 65,
+      "paragraph_id": 19,
+      "section_id": 6,
+      "text": "We also removed 16 duplicate tweets and two tweets solely containing web links, leaving a final data set of 469 tweets with an average tweet length of 33.75 words.",
+      "page_number": null
+    },
+    {
+      "text_id": 66,
+      "paragraph_id": 19,
+      "section_id": 6,
+      "text": "Of these 469 tweets, 142 tweets (30.28%) were classified as factually incorrect and 327 as factually correct (69.72%).",
+      "page_number": null
+    },
+    {
+      "text_id": 67,
+      "paragraph_id": 19,
+      "section_id": 6,
+      "text": "Some tweets are part of a tweet series.",
+      "page_number": null
+    },
+    {
+      "text_id": 68,
+      "paragraph_id": 19,
+      "section_id": 6,
+      "text": "This is indicated by periods at the end of the first tweet and the beginning of succeeding tweets.",
+      "page_number": null
+    },
+    {
+      "text_id": 69,
+      "paragraph_id": 19,
+      "section_id": 6,
+      "text": "Although this series of tweets together conveys one message, we did not combine them to avoid artificial inflation of word count.",
+      "page_number": null
+    },
+    {
+      "text_id": 70,
+      "paragraph_id": 19,
+      "section_id": 6,
+      "text": "The Washington Post fact checked the veracity of these tweets separately, allowing for analysis on the tweet rather than message level.",
+      "page_number": null
+    },
+    {
+      "text_id": 71,
+      "paragraph_id": 21,
+      "section_id": 7,
+      "text": "We used the 2015 version of the wellvalidated text-analysis program Linguistic Inquiry and Word Count (LIWC2015; Pennebaker et al., 2015) to compare language use of correct and incorrect tweets.",
+      "page_number": null
+    },
+    {
+      "text_id": 72,
+      "paragraph_id": 21,
+      "section_id": 7,
+      "text": "LIWC assigns words to word categories, ranging from standard linguistic dimensions (e.g., personal pronouns, articles, negations) to psychological processes (e.g., positive and negative emotions, cognitive processing), punctuation categories (e.g., periods, commas, exclamation points), formality measures (e.g., swear words, fillers), and meta categories (e.g., analytic, authentic, tone; Pennebaker et al., 2015).",
+      "page_number": null
+    },
+    {
+      "text_id": 73,
+      "paragraph_id": 21,
+      "section_id": 7,
+      "text": "Word count is presented as the absolute number of words; all other variables are presented in percentages.",
+      "page_number": null
+    },
+    {
+      "text_id": 74,
+      "paragraph_id": 21,
+      "section_id": 7,
+      "text": "Percentages are calculated by counting the number of words belonging to a specific word category and then dividing by word count.",
+      "page_number": null
+    },
+    {
+      "text_id": 75,
+      "paragraph_id": 22,
+      "section_id": 7,
+      "text": "In Study 3, we applied models reported in the literature to our two data sets.",
+      "page_number": null
+    },
+    {
+      "text_id": 76,
+      "paragraph_id": 22,
+      "section_id": 7,
+      "text": "However, some of these models from the literature were created using older versions of LIWC (LIWC2001 and LIWC2007), which contained different sets of word categories from LIWC2015.",
+      "page_number": null
+    },
+    {
+      "text_id": 77,
+      "paragraph_id": 22,
+      "section_id": 7,
+      "text": "To allow for testing of those older models and to ensure compatibility between models, we used LIWC2015 for the main set of word categories and added relevant word categories from previous LIWC versions.",
+      "page_number": null
+    },
+    {
+      "text_id": 78,
+      "paragraph_id": 22,
+      "section_id": 7,
+      "text": "Our final variable set consisted of 103 variables (101 LIWC word categories from three LIWC versions and two additional Twitter variables).",
+      "page_number": null
+    },
+    {
+      "text_id": 79,
+      "paragraph_id": 22,
+      "section_id": 7,
+      "text": "Our set contained 92 out of 93 word categories from LIWC2015.",
+      "page_number": null
+    },
+    {
+      "text_id": 80,
+      "paragraph_id": 22,
+      "section_id": 7,
+      "text": "The variable semicolon was removed because there were no semicolons present in our two data sets.",
+      "page_number": null
+    },
+    {
+      "text_id": 81,
+      "paragraph_id": 22,
+      "section_id": 7,
+      "text": "In addition, we added four word categories from LIWC2007 (inclusive, inhibition, exclusive, humans) and five word categories from LIWC2001 (sensory and perceptual processes, optimism, total first person, total third person, metaphysical).",
+      "page_number": null
+    },
+    {
+      "text_id": 82,
+      "paragraph_id": 22,
+      "section_id": 7,
+      "text": "Last, we added two variables comprising the percentages of the symbols \"@\" and \"#\" present in each tweet because these variables play a central role in Twitter communication patterns but are not included in any LIWC variable.",
+      "page_number": null
+    },
+    {
+      "text_id": 83,
+      "paragraph_id": 22,
+      "section_id": 7,
+      "text": "The complete list of included LIWC variables appears in Table S1 in the Supplemental Material.",
+      "page_number": null
+    },
+    {
+      "text_id": 84,
+      "paragraph_id": 22,
+      "section_id": 7,
+      "text": "When possible, we have linked LIWC categories to the associated psychological processes on the basis of a categorization by Hauch et al.",
+      "page_number": null
+    },
+    {
+      "text_id": 85,
+      "paragraph_id": 22,
+      "section_id": 7,
+      "text": "(2015).",
+      "page_number": null
+    },
+    {
+      "text_id": 86,
+      "paragraph_id": 22,
+      "section_id": 7,
+      "text": "In Figure 1, the text of two categorized example tweets is displayed.",
+      "page_number": null
+    },
+    {
+      "text_id": 87,
+      "paragraph_id": 22,
+      "section_id": 7,
+      "text": "Colors indicate words identified by LIWC as belonging to each of nine example categories.",
+      "page_number": null
+    },
+    {
+      "text_id": 88,
+      "paragraph_id": 26,
+      "section_id": 9,
+      "text": "To test whether language use in factually correct and factually incorrect statements differed, we ran a multivariate analysis of variance (MANOVA).",
+      "page_number": null
+    },
+    {
+      "text_id": 89,
+      "paragraph_id": 26,
+      "section_id": 9,
+      "text": "We compared the means of the 101 LIWC variables and two Twitter variables (percentage of @ or # symbols) between the factually correct and the factually incorrect tweets.",
+      "page_number": null
+    },
+    {
+      "text_id": 90,
+      "paragraph_id": 26,
+      "section_id": 9,
+      "text": "Using Pillai's trace, this analysis revealed a main effect of veracity, V = .37, F(103, 365) = 2.10, p < .001 (two-sided, as are all the tests reported in this article), η p 2 = .37.",
+      "page_number": null
+    },
+    {
+      "text_id": 91,
+      "paragraph_id": 26,
+      "section_id": 9,
+      "text": "Table 1 provides the means for factually correct and incorrect statements in Data Set 1, the F statistics, p values adjusted with false-discovery-rate (FDR) correction for multiple comparisons (Benjamini & Hochberg, 1995), Bayes factors from a Bayesian t test, and Cohen's ds and their 95% confidence intervals.",
+      "page_number": null
+    },
+    {
+      "text_id": 92,
+      "paragraph_id": 26,
+      "section_id": 9,
+      "text": "Table 1 includes all variables that were significant at a 5% level with FDR correction (for results for all variables, see Table S1).",
+      "page_number": null
+    },
+    {
+      "text_id": 93,
+      "paragraph_id": 27,
+      "section_id": 9,
+      "text": "In total, 36 variables (35.0%) were significant at a 5% level, among which 15 (14.6%) were significant at a 1% level, and 9 (8.7%) were significant at a 0.1% level.",
+      "page_number": null
+    },
+    {
+      "text_id": 94,
+      "paragraph_id": 27,
+      "section_id": 9,
+      "text": "These results indicate substantial differences in language use between factually correct and incorrect statements, supporting the deception hypothesis.",
+      "page_number": null
+    },
+    {
+      "text_id": 95,
+      "paragraph_id": 27,
+      "section_id": 9,
+      "text": "Correct and incorrect statements differed in terms of cognitive load, certainty, emotions, distance, details, and cognitive processes.",
+      "page_number": null
+    },
+    {
+      "text_id": 96,
+      "paragraph_id": 28,
+      "section_id": 9,
+      "text": "The act of lying can impact language use in different ways.",
+      "page_number": null
+    },
+    {
+      "text_id": 97,
+      "paragraph_id": 28,
+      "section_id": 9,
+      "text": "First, lying can be more cognitively demanding than truth telling, leaving fewer cognitive resources for lie construction (DePaulo et al., 2003).",
+      "page_number": null
+    },
+    {
+      "text_id": 98,
+      "paragraph_id": 28,
+      "section_id": 9,
+      "text": "As a result, lies are expected to be shorter, less elaborate, and less complex than truths (Hauch et al., 2015).",
+      "page_number": null
+    },
+    {
+      "text_id": 99,
+      "paragraph_id": 28,
+      "section_id": 9,
+      "text": "Although the incorrect tweets were indeed less elaborate (i.e., fewer six-letter words), they were also longer (i.e., higher word count) and more complex (i.e., more causations and exclusive words) than truths.",
+      "page_number": null
+    },
+    {
+      "text_id": 100,
+      "paragraph_id": 28,
+      "section_id": 9,
+      "text": "Second, liars tend to be more verbally and vocally uncertain than truth tellers (DePaulo et al., 2003), arguably because of a lack of investment or psychological closeness to their deceptive statement.",
+      "page_number": null
+    },
+    {
+      "text_id": 101,
+      "paragraph_id": 28,
+      "section_id": 9,
+      "text": "Whereas the incorrect tweets indeed contained more tentative words, they also contained more certainty words.",
+      "page_number": null
+    },
+    {
+      "text_id": 102,
+      "paragraph_id": 28,
+      "section_id": 9,
+      "text": "Third, lying can elicit negative emotions (DePaulo et al., 2003).",
+      "page_number": null
+    },
+    {
+      "text_id": 103,
+      "paragraph_id": 28,
+      "section_id": 9,
+      "text": "Although incorrect tweets overall contained fewer emotion words than truths, the expressed emotions were more negative.",
+      "page_number": null
+    },
+    {
+      "text_id": 104,
+      "paragraph_id": 28,
+      "section_id": 9,
+      "text": "Incorrect tweets contained more anger words and more negative emotion words while containing fewer positive emotion words.",
+      "page_number": null
+    },
+    {
+      "text_id": 105,
+      "paragraph_id": 28,
+      "section_id": 9,
+      "text": "Lies also contained more negations, which could indicate a more defensive tone or denial of wrongdoing (Hauch et al., 2015).",
+      "page_number": null
+    },
+    {
+      "text_id": 106,
+      "paragraph_id": 28,
+      "section_id": 9,
+      "text": "Fourth, liars tend to be less forthcoming and distance themselves more from their story (DePaulo et al., 2003), resulting in fewer self-references and more other references (Hauch et al., 2015).",
+      "page_number": null
+    },
+    {
+      "text_id": 107,
+      "paragraph_id": 28,
+      "section_id": 9,
+      "text": "Incorrect tweets indeed contained fewer first-person pronouns and more third-person pronouns.",
+      "page_number": null
+    },
+    {
+      "text_id": 108,
+      "paragraph_id": 28,
+      "section_id": 9,
+      "text": "Fifth, truths and lies typically differ in the type of details.",
+      "page_number": null
+    },
+    {
+      "text_id": 109,
+      "paragraph_id": 28,
+      "section_id": 9,
+      "text": "Reality monitoring is a verbal-lie-detection tool that relies on differences between actual experiences (i.e., truths) and internally generated events (i.e., lies).",
+      "page_number": null
+    },
+    {
+      "text_id": 110,
+      "paragraph_id": 28,
+      "section_id": 9,
+      "text": "In contrast with imagined events, actual experiences are embedded in memory and typically include a variety of perceptual and sensory details (Vrij, 2015).",
+      "page_number": null
+    },
+    {
+      "text_id": 111,
+      "paragraph_id": 28,
+      "section_id": 9,
+      "text": "However, we did not find any differences in perceptual details between correct and incorrect tweets and even found an increase rather than a decrease in adverbs.",
+      "page_number": null
+    },
+    {
+      "text_id": 112,
+      "paragraph_id": 28,
+      "section_id": 9,
+      "text": "Last, the reality-monitoring approach specifies that liars refer more often to internal, cognitive processes because their story is constructed rather than experienced.",
+      "page_number": null
+    },
+    {
+      "text_id": 113,
+      "paragraph_id": 28,
+      "section_id": 9,
+      "text": "We indeed found that incorrect statements contained more cognitive-processing words.",
+      "page_number": null
+    },
+    {
+      "text_id": 114,
+      "paragraph_id": 30,
+      "section_id": 10,
+      "text": "Next, we aimed to explore whether we can predict the factual correctness or incorrectness of a statement.",
+      "page_number": null
+    },
+    {
+      "text_id": 115,
+      "paragraph_id": 30,
+      "section_id": 10,
+      "text": "To do so, we proposed to develop a model to predict factually incorrect statements.",
+      "page_number": null
+    },
+    {
+      "text_id": 116,
+      "paragraph_id": 30,
+      "section_id": 10,
+      "text": "We used logit regressions with veracity as the dependent variable and determined which subset of the 103 variables to use as independent variables.",
+      "page_number": null
+    },
+    {
+      "text_id": 117,
+      "paragraph_id": 30,
+      "section_id": 10,
+      "text": "Too many variables may lead to overfitting and poor out-of-sample prediction power.",
+      "page_number": null
+    },
+    {
+      "text_id": 118,
+      "paragraph_id": 30,
+      "section_id": 10,
+      "text": "Several approaches were possible to select variables for the model.",
+      "page_number": null
+    },
+    {
+      "text_id": 119,
+      "paragraph_id": 30,
+      "section_id": 10,
+      "text": "When evaluating these approaches, we considered only the 36 variables that were significant at a 5% level according to the MANOVA because regressions of 469 observations on 103 variables led to perfect separation issues with extreme but nonsignificant coefficients.",
+      "page_number": null
+    },
+    {
+      "text_id": 120,
+      "paragraph_id": 30,
+      "section_id": 10,
+      "text": "We compared three different model-selection approaches in detail (see the Supplemental Material).",
+      "page_number": null
+    },
+    {
+      "text_id": 121,
+      "paragraph_id": 30,
+      "section_id": 10,
+      "text": "Here, we report the results of the forward-stepwise selection, which gave the most parsimonious model.",
+      "page_number": null
+    },
+    {
+      "text_id": 122,
+      "paragraph_id": 30,
+      "section_id": 10,
+      "text": "This approach introduces variables one by one until the Akaike information criterion, which penalizes the log likelihood (measuring the goodness of fit) by the number of variables, does not decrease anymore.",
+      "page_number": null
+    },
+    {
+      "text_id": 123,
+      "paragraph_id": 30,
+      "section_id": 10,
+      "text": "We implemented this approach starting with the variable with the highest Cohen's d: negate.",
+      "page_number": null
+    },
+    {
+      "text_id": 124,
+      "paragraph_id": 31,
+      "section_id": 10,
+      "text": "In the remainder of the article, we call the obtained model the personalized model.",
+      "page_number": null
+    },
+    {
+      "text_id": 125,
+      "paragraph_id": 31,
+      "section_id": 10,
+      "text": "Table 2 reports the marginal effects of the personalized model.",
+      "page_number": null
+    },
+    {
+      "text_id": 126,
+      "paragraph_id": 31,
+      "section_id": 10,
+      "text": "For instance, an additional percentage point of negation words",
+      "page_number": null
+    },
+    {
+      "text_id": 127,
+      "paragraph_id": 33,
+      "section_id": 11,
+      "text": "Only fools or worse are saying that our money losing Post Office makes money with Amazon.",
+      "page_number": null
+    },
+    {
+      "text_id": 128,
+      "paragraph_id": 33,
+      "section_id": 11,
+      "text": "THEY LOSE A FORTUNE and this will be changed.",
+      "page_number": null
+    },
+    {
+      "text_id": 129,
+      "paragraph_id": 33,
+      "section_id": 11,
+      "text": "Also our fully tax paying retailers are closing stores all over the country...not a level playing field!",
+      "page_number": null
+    },
+    {
+      "text_id": 130,
+      "paragraph_id": 35,
+      "section_id": 12,
+      "text": "Congratulations @ElonMusk and @SpaceX on the successful #FalconHeavy launch.",
+      "page_number": null
+    },
+    {
+      "text_id": 131,
+      "paragraph_id": 35,
+      "section_id": 12,
+      "text": "This achievement along with @NASA's commercial and international partners continues to show American ingenuity at its best!",
+      "page_number": null
+    },
+    {
+      "text_id": 132,
+      "paragraph_id": 35,
+      "section_id": 12,
+      "text": "Legend Adverb @ Certain Compare Money Negate Period Tentative They increases the chance of an incorrect statement by 2.5 percentage points, whereas a 1-percentage-point increase in religious words decreases the chance of an incorrect statement by 6.7 percentage points.",
+      "page_number": null
+    },
+    {
+      "text_id": 133,
+      "paragraph_id": 35,
+      "section_id": 12,
+      "text": "We classified tweets as predicted incorrect if the model assigned a higher chance than we would expect a priori (i.e., higher than 30.28%), and as predicted correct otherwise.",
+      "page_number": null
+    },
+    {
+      "text_id": 134,
+      "paragraph_id": 35,
+      "section_id": 12,
+      "text": "We obtained an overall accuracy of 72.92%.",
+      "page_number": null
+    },
+    {
+      "text_id": 135,
+      "paragraph_id": 37,
+      "section_id": 13,
+      "text": "The deception hypothesis predicts that the type of words people use in truthful and deceptive statements differs.",
+      "page_number": null
+    },
+    {
+      "text_id": 136,
+      "paragraph_id": 37,
+      "section_id": 13,
+      "text": "To test the occurrence of language differences, we compared factually correct and incorrect tweets by the US president.",
+      "page_number": null
+    },
+    {
+      "text_id": 137,
+      "paragraph_id": 37,
+      "section_id": 13,
+      "text": "Results revealed that 35% (36 of the 104) of the tested word types differed between the two categories, supporting the deception hypothesis.",
+      "page_number": null
+    },
+    {
+      "text_id": 138,
+      "paragraph_id": 37,
+      "section_id": 13,
+      "text": "Correct and incorrect tweets differed in terms of cognitive load, certainty, negative emotions, distance, details, and cognitive processes.",
+      "page_number": null
+    },
+    {
+      "text_id": 139,
+      "paragraph_id": 37,
+      "section_id": 13,
+      "text": "The sender also used fewer @ symbols, a Twitter function to connect an individual to the sender's statement.",
+      "page_number": null
+    },
+    {
+      "text_id": 140,
+      "paragraph_id": 37,
+      "section_id": 13,
+      "text": "This finding may best be explained by the verifiability approach.",
+      "page_number": null
+    },
+    {
+      "text_id": 141,
+      "paragraph_id": 37,
+      "section_id": 13,
+      "text": "An identifiable person who can be traced is an example of a verifiable detail.",
+      "page_number": null
+    },
+    {
+      "text_id": 142,
+      "paragraph_id": 37,
+      "section_id": 13,
+      "text": "Liars use fewer verifiable details than truth tellers (Nahari et al., 2014).",
+      "page_number": null
+    },
+    {
+      "text_id": 143,
+      "paragraph_id": 37,
+      "section_id": 13,
+      "text": "We also identified differences that were not previously linked to relevant psychological processes, such as punctuation and comparisons.",
+      "page_number": null
+    },
+    {
+      "text_id": 144,
+      "paragraph_id": 37,
+      "section_id": 13,
+      "text": "Punctuation can indicate emotions (exclamation marks), suggestions (series of periods, question marks), or the continuation of an idea (periods used in a series of tweets).",
+      "page_number": null
+    },
+    {
+      "text_id": 145,
+      "paragraph_id": 38,
+      "section_id": 13,
+      "text": "Next, we estimated a logit model to determine how accurately we could identify the veracity of individual tweets on the basis of these language cues.",
+      "page_number": null
+    },
+    {
+      "text_id": 146,
+      "paragraph_id": 38,
+      "section_id": 13,
+      "text": "The final model contained 13 variables and correctly classified almost three out of four tweets as either factually correct or incorrect solely on the basis of word use.",
+      "page_number": null
+    },
+    {
+      "text_id": 147,
+      "paragraph_id": 38,
+      "section_id": 13,
+      "text": "Because the model was built and tested on the same data, overfitting may have occurred, thereby possibly inflating the results.",
+      "page_number": null
+    },
+    {
+      "text_id": 148,
+      "paragraph_id": 38,
+      "section_id": 13,
+      "text": "Out-of-sample testing would provide a more accurate estimate of the general performance of our personalized model.",
+      "page_number": null
+    },
+    {
+      "text_id": 149,
+      "paragraph_id": 42,
+      "section_id": 15,
+      "text": "To test the out-of-sample prediction accuracy of the personalized model developed in Study 1, we collected a second data set (Data Set 2) of presidential tweets.",
+      "page_number": null
+    },
+    {
+      "text_id": 150,
+      "paragraph_id": 42,
+      "section_id": 15,
+      "text": "Similar to Data Set 1, Data Set 2 comprised all presidential tweets by @realDonaldTrump covering a 3-month period.",
+      "page_number": null
+    },
+    {
+      "text_id": 151,
+      "paragraph_id": 42,
+      "section_id": 15,
+      "text": "Because 3 new months' worth of tweets was not yet available when we collected Data Set 2, we focused on the tweets in the 3 months preceding the period covered in Data Set 1 (November 2017-January 2018).",
+      "page_number": null
+    },
+    {
+      "text_id": 152,
+      "paragraph_id": 42,
+      "section_id": 15,
+      "text": "In total, 606 tweets were gathered.",
+      "page_number": null
+    },
+    {
+      "text_id": 153,
+      "paragraph_id": 42,
+      "section_id": 15,
+      "text": "We applied identical screening methods as in Study 1, correcting misspellings and removing 85 retweets, six duplications, two tweets containing severe spelling mistakes, and 29 tweets containing quotes with more than six words.",
+      "page_number": null
+    },
+    {
+      "text_id": 154,
+      "paragraph_id": 42,
+      "section_id": 15,
+      "text": "The final data set comprised 484 tweets with an average length of 29.37 words.",
+      "page_number": null
+    },
+    {
+      "text_id": 155,
+      "paragraph_id": 42,
+      "section_id": 15,
+      "text": "Of these 484 tweets, 111 (22.93%) were classified as factually incorrect by The Washington Post, leaving 373 factually correct tweets (77.07%).",
+      "page_number": null
+    },
+    {
+      "text_id": 156,
+      "paragraph_id": 44,
+      "section_id": 16,
+      "text": "Using the personalized model from Study 1, we computed predicted probabilities on out-of-sample tweets.",
+      "page_number": null
+    },
+    {
+      "text_id": 157,
+      "paragraph_id": 44,
+      "section_id": 16,
+      "text": "We used the coefficients obtained on the training set (Data Set 1) and applied them to the variables of the test set (Data Set 2) to predict the probability of each tweet being factually incorrect.",
+      "page_number": null
+    },
+    {
+      "text_id": 158,
+      "paragraph_id": 44,
+      "section_id": 16,
+      "text": "This probability was compared with a cutoff (e.g., 50%) to classify tweets as predicted correct or predicted incorrect.",
+      "page_number": null
+    },
+    {
+      "text_id": 159,
+      "paragraph_id": 44,
+      "section_id": 16,
+      "text": "A hit occurred when a factually incorrect statement was rightly predicted, and a false alarm occurred when a factually correct statement was wrongly predicted to be incorrect.",
+      "page_number": null
+    },
+    {
+      "text_id": 160,
+      "paragraph_id": 44,
+      "section_id": 16,
+      "text": "The resulting receiver operating characteristic (ROC) curves, shown in Figure 2, display hit rates as a function of false-alarm rates when the cutoff varies.",
+      "page_number": null
+    },
+    {
+      "text_id": 161,
+      "paragraph_id": 44,
+      "section_id": 16,
+      "text": "The diagonal represents random guessing.",
+      "page_number": null
+    },
+    {
+      "text_id": 162,
+      "paragraph_id": 44,
+      "section_id": 16,
+      "text": "The position of the curve above the diagonal shows the improvement over random guessing.",
+      "page_number": null
+    },
+    {
+      "text_id": 163,
+      "paragraph_id": 44,
+      "section_id": 16,
+      "text": "It is measured by the area under the curve (AUC); random guessing has an AUC of .5 and a perfect classifier of 1.",
+      "page_number": null
+    },
+    {
+      "text_id": 164,
+      "paragraph_id": 44,
+      "section_id": 16,
+      "text": "Figure 2 displays the ROC curves obtained for the test set and for the training set.",
+      "page_number": null
+    },
+    {
+      "text_id": 165,
+      "paragraph_id": 44,
+      "section_id": 16,
+      "text": "The ROC curve for Data Set 2 is lower than the curve for Data Set 1 but still clearly dominates random guessing.",
+      "page_number": null
+    },
+    {
+      "text_id": 166,
+      "paragraph_id": 44,
+      "section_id": 16,
+      "text": "The AUC for the test set is .789, compared with .822 for the training set.",
+      "page_number": null
+    },
+    {
+      "text_id": 167,
+      "paragraph_id": 44,
+      "section_id": 16,
+      "text": "As could be expected, it decreased but was still very close to .8.",
+      "page_number": null
+    },
+    {
+      "text_id": 168,
+      "paragraph_id": 44,
+      "section_id": 16,
+      "text": "To make the results more concrete, one may want to choose a specific cutoff (i.e., to decide which point of the curve to consider) and compute performance metrics for this cutoff.",
+      "page_number": null
+    },
+    {
+      "text_id": 169,
+      "paragraph_id": 44,
+      "section_id": 16,
+      "text": "Table 3 reports such metrics.",
+      "page_number": null
+    },
+    {
+      "text_id": 170,
+      "paragraph_id": 44,
+      "section_id": 16,
+      "text": "Several approaches to determining the cutoff are possible.",
+      "page_number": null
+    },
+    {
+      "text_id": 171,
+      "paragraph_id": 44,
+      "section_id": 16,
+      "text": "The first approach is simply to use .5.",
+      "page_number": null
+    },
+    {
+      "text_id": 172,
+      "paragraph_id": 44,
+      "section_id": 16,
+      "text": "In most deceptiondetection research, a cutoff score of .5 would be a sensible choice because half of the statements in such studies tend to be truthful and half deceptive (Levine, 2018).",
+      "page_number": null
+    },
+    {
+      "text_id": 173,
+      "paragraph_id": 44,
+      "section_id": 16,
+      "text": "For the test set, this gives an overall accuracy of 77.69%, a hit rate of 37.84%, and a false-alarm rate of 10.46%, whereas for the training set, overall accuracy is 76.76%, the hit rate is 49.30%, and the false-alarm rate is 11.31%.",
+      "page_number": null
+    },
+    {
+      "text_id": 174,
+      "paragraph_id": 44,
+      "section_id": 16,
+      "text": "This threshold is very conservative, missing many incorrect statements, and less applicable because outside the lab, truth-lie base rates are often not 50-50 (Levine, 2018).",
+      "page_number": null
+    },
+    {
+      "text_id": 175,
+      "paragraph_id": 44,
+      "section_id": 16,
+      "text": "An alternative is to rely on the direction of predictions with respect to our prior.",
+      "page_number": null
+    },
+    {
+      "text_id": 176,
+      "paragraph_id": 44,
+      "section_id": 16,
+      "text": "In other words, is a tweet more likely to be factually incorrect than we would have expected?",
+      "page_number": null
+    },
+    {
+      "text_id": 177,
+      "paragraph_id": 44,
+      "section_id": 16,
+      "text": "To investigate this question, we used the base rate of factually incorrect statements in the training set (30.28%) as the cutoff.",
+      "page_number": null
+    },
+    {
+      "text_id": 178,
+      "paragraph_id": 44,
+      "section_id": 16,
+      "text": "We classified statements for which the model gave a higher probability than the base rate as predicted incorrect.",
+      "page_number": null
+    },
+    {
+      "text_id": 179,
+      "paragraph_id": 44,
+      "section_id": 16,
+      "text": "This cutoff in the article is intuitive and easy to interpret.",
+      "page_number": null
+    },
+    {
+      "text_id": 180,
+      "paragraph_id": 44,
+      "section_id": 16,
+      "text": "In the test set, it gave a hit rate of 68.47% and a false-alarm rate of 24.66%, yielding an overall accuracy of 73.76%, whereas in the training set, it gave a hit rate of 79.58% and a false-alarm rate of 29.96%, yielding an overall accuracy of 72.92%.",
+      "page_number": null
+    },
+    {
+      "text_id": 181,
+      "paragraph_id": 44,
+      "section_id": 16,
+      "text": "For comparison, random guessing using the prior probability of 30.28% for any tweet to be incorrect, would obtain an overall accuracy of 60.68%.",
+      "page_number": null
+    },
+    {
+      "text_id": 182,
+      "paragraph_id": 44,
+      "section_id": 16,
+      "text": "Alternatively, the more traditional cutoff of 50% would give an accuracy of 50% for random guessing and higher overall accuracy for our model (76.76% for Data Set 1, 77.69% for Data Set 2).",
+      "page_number": null
+    },
+    {
+      "text_id": 183,
+      "paragraph_id": 44,
+      "section_id": 16,
+      "text": "Hence, our approach using a prior probability as the cutoff reduces the difference between random guessing and our model, representing a tougher test of our model.",
+      "page_number": null
+    },
+    {
+      "text_id": 184,
+      "paragraph_id": 45,
+      "section_id": 16,
+      "text": "We performed various robustness checks (see the Supplemental Material).",
+      "page_number": null
+    },
+    {
+      "text_id": 185,
+      "paragraph_id": 45,
+      "section_id": 16,
+      "text": "We (a) excluded word quantity from the analysis, (b) excluded topical variables such as religion and money, (c) developed models to specific topics (work and money), (d) studied the robustness of the out-of-sample performance to various splits between the training set and test set, and (e) conducted a placebo check.",
+      "page_number": null
+    },
+    {
+      "text_id": 186,
+      "paragraph_id": 45,
+      "section_id": 16,
+      "text": "Excluding word quantity of topical variables decreased the out-of-sample accuracy by 4 to 5 percentage points, but the obtained models still clearly outperformed random guessing.",
+      "page_number": null
+    },
+    {
+      "text_id": 187,
+      "paragraph_id": 45,
+      "section_id": 16,
+      "text": "Models developed for specific topics led to overfitting, with high within-sample AUCs but much lower outof-sample ones.",
+      "page_number": null
+    },
+    {
+      "text_id": 188,
+      "paragraph_id": 45,
+      "section_id": 16,
+      "text": "The average out-of-sample AUC over 1,000 splits between the training set and test set was .759, whereas the average AUC, if veracity were random (placebo check), was .5 and did not exceed .59 in 1,000 simulations.",
+      "page_number": null
+    },
+    {
+      "text_id": 189,
+      "paragraph_id": 45,
+      "section_id": 16,
+      "text": "In summary, our results were not due to chance, and random inaccuracies could not have been predicted with an AUC of .789.",
+      "page_number": null
+    },
+    {
+      "text_id": 190,
+      "paragraph_id": 47,
+      "section_id": 17,
+      "text": "We investigated how consistent the US president's differences in language use are by predicting the veracity of tweets in an out-of-sample test.",
+      "page_number": null
+    },
+    {
+      "text_id": 191,
+      "paragraph_id": 47,
+      "section_id": 17,
+      "text": "We applied the model developed in Study 1 to a new data set to identify classification accuracy on tweets from the same person but different time period.",
+      "page_number": null
+    },
+    {
+      "text_id": 192,
+      "paragraph_id": 47,
+      "section_id": 17,
+      "text": "The comparable accuracy within sample (72.92%) and out of sample (73.76%) demonstrates the consistency of the differences in language use over time.",
+      "page_number": null
+    },
+    {
+      "text_id": 193,
+      "paragraph_id": 48,
+      "section_id": 17,
+      "text": "There are several linguistic deception-detection models previously reported in the literature.",
+      "page_number": null
+    },
+    {
+      "text_id": 194,
+      "paragraph_id": 48,
+      "section_id": 17,
+      "text": "Our approach is unique because we developed the first personalized model rather than building a model based on statements by multiple people.",
+      "page_number": null
+    },
+    {
+      "text_id": 195,
+      "paragraph_id": 48,
+      "section_id": 17,
+      "text": "Whether unique is also meaningful needs further investigation.",
+      "page_number": null
+    },
+    {
+      "text_id": 196,
+      "paragraph_id": 52,
+      "section_id": 19,
+      "text": "To assess the value of tailoring deception-detection models to a specific individual, we compared the accuracy of our personalized model with models from the literature.",
+      "page_number": null
+    },
+    {
+      "text_id": 197,
+      "paragraph_id": 52,
+      "section_id": 19,
+      "text": "Using Google Scholar, we searched for articles containing the terms \"deception detection\" and \"LIWC.\"",
+      "page_number": null
+    },
+    {
+      "text_id": 198,
+      "paragraph_id": 52,
+      "section_id": 19,
+      "text": "We selected all articles that used LIWC to detect deception and specified the LIWC variables in their models.",
+      "page_number": null
+    },
+    {
+      "text_id": 199,
+      "paragraph_id": 52,
+      "section_id": 19,
+      "text": "In total, 24 LIWC-based deception-detection models from 14 articles met our criteria.",
+      "page_number": null
+    },
+    {
+      "text_id": 200,
+      "paragraph_id": 52,
+      "section_id": 19,
+      "text": "These models can be divided into three types.",
+      "page_number": null
+    },
+    {
+      "text_id": 201,
+      "paragraph_id": 52,
+      "section_id": 19,
+      "text": "Theoretical models come from research in which theoretical arguments based on psychological phenomena are made about why some variables should be used in a deception model.",
+      "page_number": null
+    },
+    {
+      "text_id": 202,
+      "paragraph_id": 52,
+      "section_id": 19,
+      "text": "For instance, Bond and Lee (2005) developed a LIWC-based deception-detection model based on reality-monitoring principles.",
+      "page_number": null
+    },
+    {
+      "text_id": 203,
+      "paragraph_id": 52,
+      "section_id": 19,
+      "text": "Reality monitoring was developed to distinguish true from false memories and relies on differences between such memories, such as sensory and perceptual details, temporal details, emotions, and plausibility.",
+      "page_number": null
+    },
+    {
+      "text_id": 204,
+      "paragraph_id": 52,
+      "section_id": 19,
+      "text": "Reality monitoring is now one of the most commonly used methods for verbal deception-detection purposes (Vrij, 2015).",
+      "page_number": null
+    },
+    {
+      "text_id": 205,
+      "paragraph_id": 52,
+      "section_id": 19,
+      "text": "As a result, Bond and Lee (2005) included the following LIWC categories in their reality-monitoring-based model: \"sensory words,\" \"spatial words,\" \"temporal words,\" \"affective words,\" and \"cognitive mechanism words\" (in LIWC 2015, these categories correspond to \"perceptual processes,\" \"space,\" \"time,\" \"affective processes,\" and \"cognitive processes,\" respectively).",
+      "page_number": null
+    },
+    {
+      "text_id": 206,
+      "paragraph_id": 53,
+      "section_id": 19,
+      "text": "By contrast, data-driven models have been proposed by authors who, as we did in Study 1, let the data speak.",
+      "page_number": null
+    },
+    {
+      "text_id": 207,
+      "paragraph_id": 53,
+      "section_id": 19,
+      "text": "Instead of relying on theory to select variables, datadriven models make selections solely on the basis of their performance in distinguishing between tested conditions (i.e., truthful vs. deceptive).",
+      "page_number": null
+    },
+    {
+      "text_id": 208,
+      "paragraph_id": 54,
+      "section_id": 19,
+      "text": "Finally, theoretical/data-driven models are obtained if theoretical models are restricted to the variables that the authors of the corresponding articles found statistically significant.",
+      "page_number": null
+    },
+    {
+      "text_id": 209,
+      "paragraph_id": 54,
+      "section_id": 19,
+      "text": "We added a model with only one predictor, word quantity, as an additional benchmark.",
+      "page_number": null
+    },
+    {
+      "text_id": 210,
+      "paragraph_id": 54,
+      "section_id": 19,
+      "text": "There are two reasons that this model makes an interesting benchmark.",
+      "page_number": null
+    },
+    {
+      "text_id": 211,
+      "paragraph_id": 54,
+      "section_id": 19,
+      "text": "First, veracity can affect statement length, although results in the literature are mixed.",
+      "page_number": null
+    },
+    {
+      "text_id": 212,
+      "paragraph_id": 54,
+      "section_id": 19,
+      "text": "In their metaanalysis, Hauch and colleagues (2015) found that liars tend to use fewer words but more sentences.",
+      "page_number": null
+    },
+    {
+      "text_id": 213,
+      "paragraph_id": 54,
+      "section_id": 19,
+      "text": "A previous meta-analysis by DePaulo and colleagues (2003) tested several related concepts and found that talking time differed between truth tellers and liars, but response length and duration did not.",
+      "page_number": null
+    },
+    {
+      "text_id": 214,
+      "paragraph_id": 54,
+      "section_id": 19,
+      "text": "Second, a longer tweet is simply more likely to contain an inaccuracy.",
+      "page_number": null
+    },
+    {
+      "text_id": 215,
+      "paragraph_id": 54,
+      "section_id": 19,
+      "text": "Hence, word quantity may be predictive by itself.",
+      "page_number": null
+    },
+    {
+      "text_id": 216,
+      "paragraph_id": 54,
+      "section_id": 19,
+      "text": "By comparing the accuracy of more complex models with the accuracy of this one-variable model, we can see the value of analyzing the content of the tweets beyond their mere length.",
+      "page_number": null
+    },
+    {
+      "text_id": 217,
+      "paragraph_id": 54,
+      "section_id": 19,
+      "text": "We also included, as another informative benchmark, random guessing using the prior probability of 30.28%.",
+      "page_number": null
+    },
+    {
+      "text_id": 218,
+      "paragraph_id": 55,
+      "section_id": 19,
+      "text": "For each of the 24 models from the literature, we identified which LIWC variables were included.",
+      "page_number": null
+    },
+    {
+      "text_id": 219,
+      "paragraph_id": 55,
+      "section_id": 19,
+      "text": "To allow for a fair comparison between models, instead of relying on coefficients reported in the original articles, we estimated all models on Data Set 1, following the same procedure as for our personalized model in Study 2.",
+      "page_number": null
+    },
+    {
+      "text_id": 220,
+      "paragraph_id": 55,
+      "section_id": 19,
+      "text": "We then used the obtained coefficients to compute the accuracy of each model on Data Sets 1 (training) and 2 (test).",
+      "page_number": null
+    },
+    {
+      "text_id": 221,
+      "paragraph_id": 57,
+      "section_id": 20,
+      "text": "The tested models are shown in Table 4.",
+      "page_number": null
+    },
+    {
+      "text_id": 222,
+      "paragraph_id": 57,
+      "section_id": 20,
+      "text": "We report the rank, article, type of data, type of model, model origin, LIWC variables included in the model, and overall accuracy and AUC scores for the training and test sets, respectively.",
+      "page_number": null
+    },
+    {
+      "text_id": 223,
+      "paragraph_id": 57,
+      "section_id": 20,
+      "text": "When several models were reported within one article, we differentiated between them in the model column.",
+      "page_number": null
+    },
+    {
+      "text_id": 224,
+      "paragraph_id": 57,
+      "section_id": 20,
+      "text": "The models are ranked in terms of overall accuracy on the test set (Data Set 2).",
+      "page_number": null
+    },
+    {
+      "text_id": 225,
+      "paragraph_id": 57,
+      "section_id": 20,
+      "text": "Overall accuracy scores on the test set range from 50% to 74%, whereas AUC scores range from .443 to .788.",
+      "page_number": null
+    },
+    {
+      "text_id": 226,
+      "paragraph_id": 57,
+      "section_id": 20,
+      "text": "The relatively small differences in classification accuracies of the models on Data Sets 1 and 2 again demonstrate the consistent language use in correct and incorrect tweets.",
+      "page_number": null
+    },
+    {
+      "text_id": 227,
+      "paragraph_id": 58,
+      "section_id": 20,
+      "text": "Our personalized model outperformed all models from the literature by 5 percentage points.",
+      "page_number": null
+    },
+    {
+      "text_id": 228,
+      "paragraph_id": 58,
+      "section_id": 20,
+      "text": "This is not surprising on the training set but was not guaranteed on the test set.",
+      "page_number": null
+    },
+    {
+      "text_id": 229,
+      "paragraph_id": 58,
+      "section_id": 20,
+      "text": "It shows that we did not overfit the data.",
+      "page_number": null
+    },
+    {
+      "text_id": 230,
+      "paragraph_id": 58,
+      "section_id": 20,
+      "text": "Among the best-scoring models from the literature are those that focus on brief chat messages (Ho et al., 2016) or political statements (Braun et al., 2015), both of which consider input that is similar to the political tweets used in the present study.",
+      "page_number": null
+    },
+    {
+      "text_id": 231,
+      "paragraph_id": 58,
+      "section_id": 20,
+      "text": "In contrast, the lowest scoring models were developed for other types of data, such as hotel reviews (Kleinberg, Mozes, et al., 2018) and research articles (Markowitz & Hancock, 2016).",
+      "page_number": null
+    },
+    {
+      "text_id": 232,
+      "paragraph_id": 58,
+      "section_id": 20,
+      "text": "These results indicate that context matters (Markowitz & Hancock, 2019), even though some models developed for other contexts also performed fairly well.",
+      "page_number": null
+    },
+    {
+      "text_id": 233,
+      "paragraph_id": 58,
+      "section_id": 20,
+      "text": "Our model included the variable @, which is specific for tweets.",
+      "page_number": null
+    },
+    {
+      "text_id": 234,
+      "paragraph_id": 58,
+      "section_id": 20,
+      "text": "Thus, it might have had an unfair advantage over other models that did not include Twitter-related variables.",
+      "page_number": null
+    },
+    {
+      "text_id": 235,
+      "paragraph_id": 58,
+      "section_id": 20,
+      "text": "When we ran our model without the @ variable, the classification accuracy on Data Set 1 remained the same (AUC = .816), whereas the accuracy on Data Set 2 decreased by 2 percentage points (AUC = .771).",
+      "page_number": null
+    },
+    {
+      "text_id": 236,
+      "paragraph_id": 58,
+      "section_id": 20,
+      "text": "Despite the minor decrease, this model still outperforms models that have not been developed for a specific individual.",
+      "page_number": null
+    },
+    {
+      "text_id": 237,
+      "paragraph_id": 59,
+      "section_id": 20,
+      "text": "Several variables in our personalized model have not been (e.g., tone, relig) or have rarely been (adverb, compare, money, period) included in other models.",
+      "page_number": null
+    },
+    {
+      "text_id": 238,
+      "paragraph_id": 59,
+      "section_id": 20,
+      "text": "This suggests that these variables have not been deemed relevant from a theoretical perspective, nor have they been identified as informative in previous data-driven approaches on other data sets.",
+      "page_number": null
+    },
+    {
+      "text_id": 239,
+      "paragraph_id": 59,
+      "section_id": 20,
+      "text": "The superior performance when these terms are present again points to the value of a deception-detection approach tailored to a specific individual in a specific communicative context.",
+      "page_number": null
+    },
+    {
+      "text_id": 240,
+      "paragraph_id": 60,
+      "section_id": 20,
+      "text": "Results also highlight the importance of word count in our data set.",
+      "page_number": null
+    },
+    {
+      "text_id": 241,
+      "paragraph_id": 60,
+      "section_id": 20,
+      "text": "The model comprising word count alone achieved a test set accuracy score of 64%.",
+      "page_number": null
+    },
+    {
+      "text_id": 242,
+      "paragraph_id": 60,
+      "section_id": 20,
+      "text": "Moreover, nine models in the top 10 included the word-count variable.",
+      "page_number": null
+    },
+    {
+      "text_id": 243,
+      "paragraph_id": 60,
+      "section_id": 20,
+      "text": "We did not see a clear relation between classification accuracy and parsimony (i.e., the number of variables included) of a model.",
+      "page_number": null
+    },
+    {
+      "text_id": 244,
+      "paragraph_id": 60,
+      "section_id": 20,
+      "text": "Table 4. (continued)",
+      "page_number": null
+    },
+    {
+      "text_id": 245,
+      "paragraph_id": 61,
+      "section_id": 20,
+      "text": "The results on model origin highlight the value of considering psychological processes.",
+      "page_number": null
+    },
+    {
+      "text_id": 246,
+      "paragraph_id": 61,
+      "section_id": 20,
+      "text": "Overall, pure theoretical models seem to perform slightly better than theoretical models that are restricted to their significant variables (theoretical/data-driven models).",
+      "page_number": null
+    },
+    {
+      "text_id": 247,
+      "paragraph_id": 61,
+      "section_id": 20,
+      "text": "This gives credit to the psychological processes underlying these models, especially when adapted to a context, even though which set of variables best captures these processes may differ from one study to the other.",
+      "page_number": null
+    },
+    {
+      "text_id": 248,
+      "paragraph_id": 63,
+      "section_id": 21,
+      "text": "In Study 3, we investigated how our personalized model performed against models previously reported in the literature.",
+      "page_number": null
+    },
+    {
+      "text_id": 249,
+      "paragraph_id": 63,
+      "section_id": 21,
+      "text": "Our personalized model appeared as the best-performing out-of-sample model, in terms of both accuracy and AUC.",
+      "page_number": null
+    },
+    {
+      "text_id": 250,
+      "paragraph_id": 63,
+      "section_id": 21,
+      "text": "We attribute this to the inclusion of variables that are specific to the individual under consideration and do not necessarily reflect tendencies of the general population.",
+      "page_number": null
+    },
+    {
+      "text_id": 251,
+      "paragraph_id": 63,
+      "section_id": 21,
+      "text": "With our data-driven approach, we could identify these variables, which previously have rarely been investigated.",
+      "page_number": null
+    },
+    {
+      "text_id": 252,
+      "paragraph_id": 64,
+      "section_id": 21,
+      "text": "Together, the way psychological processes are translated in word use seems to differ from one context to the other (Markowitz & Hancock, 2019) and, as the current results show, from one individual to the other.",
+      "page_number": null
+    },
+    {
+      "text_id": 253,
+      "paragraph_id": 64,
+      "section_id": 21,
+      "text": "The best-performing models from the literature were developed from theory for contexts (chats, politics) that are comparable with ours.",
+      "page_number": null
+    },
+    {
+      "text_id": 254,
+      "paragraph_id": 64,
+      "section_id": 21,
+      "text": "However, restricting the analysis to variables that were significant in the corresponding articles decreased accuracy.",
+      "page_number": null
+    },
+    {
+      "text_id": 255,
+      "paragraph_id": 66,
+      "section_id": 22,
+      "text": "Previous research demonstrated that people's language changes when they lie.",
+      "page_number": null
+    },
+    {
+      "text_id": 256,
+      "paragraph_id": 66,
+      "section_id": 22,
+      "text": "Most of this research was conducted using single statements from larger groups of people.",
+      "page_number": null
+    },
+    {
+      "text_id": 257,
+      "paragraph_id": 66,
+      "section_id": 22,
+      "text": "Here, we investigated whether we could distinguish between correct and incorrect statements made by a single individual.",
+      "page_number": null
+    },
+    {
+      "text_id": 258,
+      "paragraph_id": 66,
+      "section_id": 22,
+      "text": "Fact-checked tweets by the 45th US president uniquely allowed for such a comparison.",
+      "page_number": null
+    },
+    {
+      "text_id": 259,
+      "paragraph_id": 66,
+      "section_id": 22,
+      "text": "The MANOVA results from Study 1 showed substantial differences in language use between correct and incorrect tweets, suggesting that the sender was in a different cognitive state when constructing factually incorrect tweets.",
+      "page_number": null
+    },
+    {
+      "text_id": 260,
+      "paragraph_id": 66,
+      "section_id": 22,
+      "text": "This finding supports the deception hypothesis.",
+      "page_number": null
+    },
+    {
+      "text_id": 261,
+      "paragraph_id": 67,
+      "section_id": 22,
+      "text": "Some of these language differences are in line with previous findings in the deception literature.",
+      "page_number": null
+    },
+    {
+      "text_id": 262,
+      "paragraph_id": 67,
+      "section_id": 22,
+      "text": "For example, liars experience more negative emotions (Newman et al., 2003;i.e., increased use of negative emotions and anger words) and higher cognitive load (Vrij et al., 2017; i.e., increased use of cognitive-processing words and decreased use of six-letter words) than truth tellers.",
+      "page_number": null
+    },
+    {
+      "text_id": 263,
+      "paragraph_id": 67,
+      "section_id": 22,
+      "text": "Liars also tend to distance themselves more (Toma & Hancock, 2012;i.e., increased use of third-person pronouns and decreased use of first-person pronouns).",
+      "page_number": null
+    },
+    {
+      "text_id": 264,
+      "paragraph_id": 67,
+      "section_id": 22,
+      "text": "In contrast with previous findings (Hauch et al., 2015), our results showed that the factually incorrect tweets sent from the @real DonaldTrump account were longer and more complex than the correct ones.",
+      "page_number": null
+    },
+    {
+      "text_id": 265,
+      "paragraph_id": 67,
+      "section_id": 22,
+      "text": "Although tweets are restricted in length, we cannot reject the explanation that longer tweets are simply more likely than shorter tweets to contain erroneous statements.",
+      "page_number": null
+    },
+    {
+      "text_id": 266,
+      "paragraph_id": 68,
+      "section_id": 22,
+      "text": "Compared with previous findings on language-based deception, the 73% to 74% overall accuracy of our model for both within-sample and out-of-sample prediction is promising.",
+      "page_number": null
+    },
+    {
+      "text_id": 267,
+      "paragraph_id": 68,
+      "section_id": 22,
+      "text": "For example, Bond and colleagues (2017) tested only within-sample accuracy and found classification rates of 63% to 67% based on the communications of US presidential candidates during the 2016 US presidential debates.",
+      "page_number": null
+    },
+    {
+      "text_id": 268,
+      "paragraph_id": 68,
+      "section_id": 22,
+      "text": "Sporadically, deception researchers do make out-of-sample predictions, which tend to result in substantial accuracy reductions.",
+      "page_number": null
+    },
+    {
+      "text_id": 269,
+      "paragraph_id": 68,
+      "section_id": 22,
+      "text": "For example, Kleinberg, van der Toolen, et al. (2018) reached a within-sample accuracy of 80% in their study on deceptive intentions, but it dropped to 63% in out-of-sample testing.",
+      "page_number": null
+    },
+    {
+      "text_id": 270,
+      "paragraph_id": 68,
+      "section_id": 22,
+      "text": "Such accuracy reductions highlight the importance of out-ofsample testing in deception research.",
+      "page_number": null
+    },
+    {
+      "text_id": 271,
+      "paragraph_id": 68,
+      "section_id": 22,
+      "text": "Our high out-ofsample accuracy results show that the language differences between true and false statements are stable within the examined individual, providing support for the usefulness of personalized deception models.",
+      "page_number": null
+    },
+    {
+      "text_id": 272,
+      "paragraph_id": 68,
+      "section_id": 22,
+      "text": "Improving random guessing by 12 to 15 percentage points when relying on priors and 27 to 28 percentage points when assuming an equal split between truths and lies, this model could help as a screening tool for anyone interested in political fact checking.",
+      "page_number": null
+    },
+    {
+      "text_id": 273,
+      "paragraph_id": 69,
+      "section_id": 22,
+      "text": "A limitation of the current study is that we used the fact-checking output of an independent third party as a proxy for the ground truth, potentially introducing noise in our data.",
+      "page_number": null
+    },
+    {
+      "text_id": 274,
+      "paragraph_id": 69,
+      "section_id": 22,
+      "text": "The Washington Post labeled statements as incorrect only when they contained incorrect verifiable facts.",
+      "page_number": null
+    },
+    {
+      "text_id": 275,
+      "paragraph_id": 69,
+      "section_id": 22,
+      "text": "Opinions, statements that could not be verified, and those about the future are not labeled as factually incorrect, resulting in a conservative estimation of all incorrect tweets.",
+      "page_number": null
+    },
+    {
+      "text_id": 276,
+      "paragraph_id": 70,
+      "section_id": 22,
+      "text": "A second limitation concerns the sender in two manners.",
+      "page_number": null
+    },
+    {
+      "text_id": 277,
+      "paragraph_id": 70,
+      "section_id": 22,
+      "text": "First, we examined only one Twitter account.",
+      "page_number": null
+    },
+    {
+      "text_id": 278,
+      "paragraph_id": 70,
+      "section_id": 22,
+      "text": "Although Study 3 shows the strength of personalized deception-detection models, the generalizability of such models remains unclear.",
+      "page_number": null
+    },
+    {
+      "text_id": 279,
+      "paragraph_id": 70,
+      "section_id": 22,
+      "text": "Future research could test how well this model performs on other types of communication by the US president or tweets by other individuals.",
+      "page_number": null
+    },
+    {
+      "text_id": 280,
+      "paragraph_id": 70,
+      "section_id": 22,
+      "text": "Second, not all tweets sent by @realDonaldTrump may have been typed by the president himself (Draper, 2018), introducing noise to the data sets.",
+      "page_number": null
+    },
+    {
+      "text_id": 281,
+      "paragraph_id": 70,
+      "section_id": 22,
+      "text": "Journalists have been speculating on how to identify whether the president wrote a tweet himself (Feinberg, 2017), but so far, there is no reliable way to distinguish between writers.",
+      "page_number": null
+    },
+    {
+      "text_id": 282,
+      "paragraph_id": 70,
+      "section_id": 22,
+      "text": "A more homogeneous data set comprising tweets solely written by the US president would arguably result in stronger effects.",
+      "page_number": null
+    },
+    {
+      "text_id": 283,
+      "paragraph_id": 72,
+      "section_id": 23,
+      "text": "Linguistic analysis can test whether incorrect statements are predictable and therefore likely to be deceptive.",
+      "page_number": null
+    },
+    {
+      "text_id": 284,
+      "paragraph_id": 72,
+      "section_id": 23,
+      "text": "On the one hand, such models can be a screening tool to help journalists in their work as the fourth pillar of democracy.",
+      "page_number": null
+    },
+    {
+      "text_id": 285,
+      "paragraph_id": 72,
+      "section_id": 23,
+      "text": "They could also help in identifying potentially incorrect information on social media, where people increasingly turn for daily news (Allcott & Gentzkow, 2017).",
+      "page_number": null
+    },
+    {
+      "text_id": 286,
+      "paragraph_id": 72,
+      "section_id": 23,
+      "text": "On the other hand, any person having access to people's personal posts and a way to approximate ground truth could develop a model such as the one in this article.",
+      "page_number": null
+    },
+    {
+      "text_id": 287,
+      "paragraph_id": 72,
+      "section_id": 23,
+      "text": "Therefore, these results also constitute a warning to all individuals posting a wealth of private, or not so private, information online.",
+      "page_number": null
+    },
+    {
+      "text_id": 288,
+      "paragraph_id": 74,
+      "section_id": 24,
+      "text": "Action Editor: Vladimir Sloutsky Editor: Patricia J Bauer",
+      "page_number": null
+    },
+    {
+      "text_id": 289,
+      "paragraph_id": 76,
+      "section_id": 25,
+      "text": "We thank the Washington Post Fact Checker team for providing their fact-checked data set of Trump's communications, Benjamin Tereick for methodological suggestions, and Jozien Bensing and Annelies Vredeveldt for providing feedback on the manuscript.",
+      "page_number": null
+    },
+    {
+      "text_id": 290,
+      "paragraph_id": 76,
+      "section_id": 25,
+      "text": "For a website discussing the themes of this research, see https://www.apersonalmodeloftrum pery.com/.",
+      "page_number": null
+    },
+    {
+      "text_id": 291,
+      "paragraph_id": 78,
+      "section_id": 26,
+      "text": "This work was supported by European Research Council Starting Grant 638408 Bayesian Markets.",
+      "page_number": null
+    },
+    {
+      "text_id": 292,
+      "paragraph_id": 80,
+      "section_id": 27,
+      "text": "All data and analysis code have been made publicly available via Figshare and can be accessed at https://doi.org/ 10.25397/eur.17179514.",
+      "page_number": null
+    },
+    {
+      "text_id": 293,
+      "paragraph_id": 80,
+      "section_id": 27,
+      "text": "The design and analysis plans for the studies were not preregistered.",
+      "page_number": null
+    },
+    {
+      "text_id": 294,
+      "paragraph_id": 80,
+      "section_id": 27,
+      "text": "This article has received the badges for Open Data and Open Materials.",
+      "page_number": null
+    },
+    {
+      "text_id": 295,
+      "paragraph_id": 80,
+      "section_id": 27,
+      "text": "More information about the Open Practices badges can be found at http://www.psychologicalscience.org/publi cations/badges.",
+      "page_number": null
+    },
+    {
+      "text_id": 296,
+      "paragraph_id": 82,
+      "section_id": 28,
+      "text": "The author(s) declared that there were no conflicts of interest with respect to the authorship or the publication of this article.",
+      "page_number": null
+    },
+    {
+      "text_id": 297,
+      "paragraph_id": 84,
+      "section_id": 29,
+      "text": "S Van Der Zee conceived the idea for this research and gathered the data.",
+      "page_number": null
+    },
+    {
+      "text_id": 298,
+      "paragraph_id": 84,
+      "section_id": 29,
+      "text": "S Van Der Zee and A Havrileck screened the data and prepared it for analysis.",
+      "page_number": null
+    },
+    {
+      "text_id": 299,
+      "paragraph_id": 84,
+      "section_id": 29,
+      "text": "All the authors analyzed the data.",
+      "page_number": null
+    },
+    {
+      "text_id": 300,
+      "paragraph_id": 84,
+      "section_id": 29,
+      "text": "The figures were created for the article and for conference presentations by R Poppe and A Baillon, and the website for the article was created by A Havrileck.",
+      "page_number": null
+    },
+    {
+      "text_id": 301,
+      "paragraph_id": 84,
+      "section_id": 29,
+      "text": "S Van Der Zee, R Poppe, and A Baillon wrote the original draft of the manuscript, and all the authors provided feedback and approved the final manuscript for submission.",
+      "page_number": null
+    },
+    {
+      "text_id": 302,
+      "paragraph_id": 86,
+      "section_id": 30,
+      "text": "Additional supporting information can be found at http:// journals.sagepub.com/doi/suppl/10.1177/09567976211015941",
+      "page_number": null
+    },
+    {
+      "text_id": 303,
+      "paragraph_id": 87,
+      "section_id": 31,
+      "text": "Fig 1 Text of one factually incorrect and one factually correct tweet from Data Set 1 (Study 1).",
+      "page_number": null
+    },
+    {
+      "text_id": 304,
+      "paragraph_id": 87,
+      "section_id": 31,
+      "text": "Colors indicate words identified by Linguistic Inquiry and Word Count (LIWC) as belonging to each of nine word categories.",
+      "page_number": null
+    },
+    {
+      "text_id": 305,
+      "paragraph_id": 89,
+      "section_id": 33,
+      "text": "Fig.2.",
+      "page_number": null
+    },
+    {
+      "text_id": 306,
+      "paragraph_id": 89,
+      "section_id": 33,
+      "text": "Hit rate as a function of false-alarm rate when the cutoff to classify tweets as predicted correct or predicted incorrect varies (Study 2).",
+      "page_number": null
+    },
+    {
+      "text_id": 307,
+      "paragraph_id": 89,
+      "section_id": 33,
+      "text": "Predictions were obtained from the model shown in Table2.",
+      "page_number": null
+    },
+    {
+      "text_id": 308,
+      "paragraph_id": 89,
+      "section_id": 33,
+      "text": "The black curve is associated with Data Set 1 (training set) and the gray curve with Data Set 2 (test set).",
+      "page_number": null
+    },
+    {
+      "text_id": 309,
+      "paragraph_id": 89,
+      "section_id": 33,
+      "text": "The diagonal represents random guessing, and the black dot represents the prior used as a random guess.",
+      "page_number": null
+    },
+    {
+      "text_id": 310,
+      "paragraph_id": 89,
+      "section_id": 33,
+      "text": "The position of the curve above the diagonal shows the improvement over random guessing.",
+      "page_number": null
+    },
+    {
+      "text_id": 311,
+      "paragraph_id": 89,
+      "section_id": 33,
+      "text": "Triangles represent when the prior is used as a cutoff in our model.",
+      "page_number": null
+    },
+    {
+      "text_id": 312,
+      "paragraph_id": 89,
+      "section_id": 33,
+      "text": "Coordinates of each of these points (i.e., false-alarm and hit rates) are given in parentheses above the accuracy rate for each data set.",
+      "page_number": null
+    },
+    {
+      "text_id": 313,
+      "paragraph_id": 90,
+      "section_id": 34,
+      "text": "Statistics for Significant Linguistic Inquiry and Word Count (LIWC) Categories in Data Set 1 (Study 1)Note: The p values reported here are false-discovery-rate corrected.",
+      "page_number": null
+    },
+    {
+      "text_id": 314,
+      "paragraph_id": 90,
+      "section_id": 34,
+      "text": "Bayes factor were obtained from a Bayesian t test.",
+      "page_number": null
+    },
+    {
+      "text_id": 315,
+      "paragraph_id": 90,
+      "section_id": 34,
+      "text": "Values in brackets after Cohen's ds are 95% confidence intervals.",
+      "page_number": null
+    },
+    {
+      "text_id": 316,
+      "paragraph_id": 90,
+      "section_id": 34,
+      "text": "Associated psychological processes are based on categorizations from the study byHauch et al.",
+      "page_number": null
+    },
+    {
+      "text_id": 317,
+      "paragraph_id": 90,
+      "section_id": 34,
+      "text": "(2015).",
+      "page_number": null
+    },
+    {
+      "text_id": 318,
+      "paragraph_id": 91,
+      "section_id": 35,
+      "text": "Marginal Effects of Types of Words and Symbols on the Probability of a Tweet Being Incorrect (Study 1)Variables are expressed as percentage of total words, except word quantity, which is expressed as numbers of words.",
+      "page_number": null
+    },
+    {
+      "text_id": 319,
+      "paragraph_id": 91,
+      "section_id": 35,
+      "text": "Marginal effects indicate how much veracity varies when a given explanatory variable varies by one unit, other variables being kept constant at their mean value.",
+      "page_number": null
+    },
+    {
+      "text_id": 320,
+      "paragraph_id": 91,
+      "section_id": 35,
+      "text": "Results were obtained with a logit regression (log likelihood = -216.75, N = 469).",
+      "page_number": null
+    },
+    {
+      "text_id": 321,
+      "paragraph_id": 92,
+      "section_id": 36,
+      "text": "Performance Metrics (Study 2)Accuracy is defined as the percentage of correct responses.",
+      "page_number": null
+    },
+    {
+      "text_id": 322,
+      "paragraph_id": 92,
+      "section_id": 36,
+      "text": "Precision is defined as the number of hits divided by the total number of hits and false alarms.",
+      "page_number": null
+    },
+    {
+      "text_id": 323,
+      "paragraph_id": 92,
+      "section_id": 36,
+      "text": "F1 is the harmonic mean of precision and hit rate (also called recall).",
+      "page_number": null
+    },
+    {
+      "text_id": 324,
+      "paragraph_id": 92,
+      "section_id": 36,
+      "text": "AUC = area under the curve; CI = confidence interval.",
+      "page_number": null
+    },
+    {
+      "text_id": 325,
+      "paragraph_id": 93,
+      "section_id": 37,
+      "text": "Model Comparison (Study 3) RankThe column \"LIWC variable\" describes the model estimated on the training set.",
+      "page_number": null
+    },
+    {
+      "text_id": 326,
+      "paragraph_id": 93,
+      "section_id": 37,
+      "text": "Models are ranked on their accuracy on the test set.",
+      "page_number": null
+    },
+    {
+      "text_id": 327,
+      "paragraph_id": 93,
+      "section_id": 37,
+      "text": "LIWC =",
+      "page_number": null
+    },
+    {
+      "text_id": 328,
+      "paragraph_id": 94,
+      "section_id": 38,
+      "text": "Ahmadian, S., Azarshahi, S., & Paulhus, D. L. (2017). Explaining Donald Trump via communication style: Grandiosity, informality, and dynamism. Personality and Individual Differences, 107, 49-53. https://doi .org/10.1016/j.paid.2016.11.018",
+      "page_number": null
+    },
+    {
+      "text_id": 329,
+      "paragraph_id": 95,
+      "section_id": 38,
+      "text": "Allcott, H., & Gentzkow, M. (2017). Social media and fake news in the 2016 election. Journal of Economic Perspectives, 31(2), 211-236. https://doi.org/10.1257/jep.31.2.211",
+      "page_number": null
+    },
+    {
+      "text_id": 330,
+      "paragraph_id": 96,
+      "section_id": 38,
+      "text": "Alterman, E. (2004). When presidents lie: A history of official deception and its consequences. Penguin.",
+      "page_number": null
+    },
+    {
+      "text_id": 331,
+      "paragraph_id": 97,
+      "section_id": 38,
+      "text": "Barbaro, M. (2015, October 5). Pithy, mean and powerful: How Donald Trump mastered Twitter for 2016. The New York Times. https://www.nytimes.com/2015/10/06/us/ politics/donald-trump-twitter-use-campaign-2016.html",
+      "page_number": null
+    },
+    {
+      "text_id": 332,
+      "paragraph_id": 98,
+      "section_id": 38,
+      "text": "Benjamini, Y., & Hochberg, Y. (1995). Controlling the false discovery rate: A practical and powerful approach to multiple testing. Journal of the Royal Statistical Society: Series B (Methodological), 57(1), 289-300. https://doi .org/10.1111/j.2517-6161.1995.tb02031.x",
+      "page_number": null
+    },
+    {
+      "text_id": 333,
+      "paragraph_id": 99,
+      "section_id": 38,
+      "text": "Bernstein, D. M., & Loftus, E. F. (2009). How to tell if a partic- ular memory is true or false. Perspectives on Psychological Science, 4, 370-374. https://doi.org/10.1111/j.1745- 6924.2009.01140.x",
+      "page_number": null
+    },
+    {
+      "text_id": 334,
+      "paragraph_id": 100,
+      "section_id": 38,
+      "text": "Bond, G. D., Holman, R. D., Eggert, J.-A. L., Speller, L. F., Garcia, O. N., Mejia, S. C., Mcinnes, K. W., Ceniceros, E. C., & Rustige, R. (2017). 'Lyin' Ted', 'Crooked Hillary', and 'Deceptive Donald': Language of lies in the 2016 US presidential debates. Applied Cognitive Psychology, 31(6), 668-677. https://doi.org/10.1002/acp.3376",
+      "page_number": null
+    },
+    {
+      "text_id": 335,
+      "paragraph_id": 101,
+      "section_id": 38,
+      "text": "Bond, G. D., & Lee, A. Y. (2005). Language of lies in prison: Linguistic classification of prisoners' truthful and decep- tive natural language. Applied Cognitive Psychology, 19(3), 313-329. https://doi.org/10.1002/acp.1087",
+      "page_number": null
+    },
+    {
+      "text_id": 336,
+      "paragraph_id": 102,
+      "section_id": 38,
+      "text": "Braun, M. T., Van Swol, L. M., & Vang, L. (2015). His lips are moving: Pinocchio effect and other lexical indicators of political deceptions. Discourse Processes, 52(1), 1-20. https://doi.org/10.1080/0163853X.2014.942833",
+      "page_number": null
+    },
+    {
+      "text_id": 337,
+      "paragraph_id": 103,
+      "section_id": 38,
+      "text": "DePaulo, B. M., Lindsay, J. L., Malone, B. E., Muhlenbruck, L., Charlton, K., & Cooper, H. (2003). Cues to decep- tion. Psychological Bulletin, 129, 74-118. https://doi .org/10.1037/0033-2909",
+      "page_number": null
+    },
+    {
+      "text_id": 338,
+      "paragraph_id": 104,
+      "section_id": 38,
+      "text": "Draper, R. (2018, April 16). The man behind the presi- dent's tweets. The New York Times. https://www.nytimes .com/2018/04/16/magazine/dan-scavino-the-secretary-of- offense.html",
+      "page_number": null
+    },
+    {
+      "text_id": 339,
+      "paragraph_id": 105,
+      "section_id": 38,
+      "text": "Feinberg, A. (2017, June 18). How to tell when someone else tweets from @realDonaldTrump. Wired. https://www .wired.com/story/tell-when-someone-else-tweets-from- realdonaldtrump/",
+      "page_number": null
+    },
+    {
+      "text_id": 340,
+      "paragraph_id": 106,
+      "section_id": 38,
+      "text": "Fuller, C., Biros, D., Twitchell, D., Burgoon, J., & Adkins, M. (2006). An analysis of text-based deception detection tools. In Proceedings of the Twelfth Americas Conference on Information Systems (pp. 3465-3472). Americas Conference on Information Systems.",
+      "page_number": null
+    },
+    {
+      "text_id": 341,
+      "paragraph_id": 107,
+      "section_id": 38,
+      "text": "Fuller, C. M., Biros, D. P., Twitchell, D. P., & Wilson, R. L. (2015). Real-world deception and the impact of severity. Journal of Computer Information Systems, 55(2), 59-67. https://doi.org/10.1080/08874417.2015.11645757",
+      "page_number": null
+    },
+    {
+      "text_id": 342,
+      "paragraph_id": 108,
+      "section_id": 38,
+      "text": "Glasser, S. B. (2018, August 3). It's true: Trump is lying more, and he's doing it on purpose. The New Yorker. https:// www.newyorker.com/news/letter-from-trumps-washing- ton/trumps-escalating-war-on-the-truth-is-on-purpose",
+      "page_number": null
+    },
+    {
+      "text_id": 343,
+      "paragraph_id": 109,
+      "section_id": 38,
+      "text": "Hancock, J. T., Curry, L. E., Goorha, S., & Woodworth, M. (2007). On lying and being lied to: A linguistic analy- sis of deception in computer-mediated communica- tion. Discourse Processes, 45(1), 1-23. https://doi.org/ 10.1080/01638530701739181",
+      "page_number": null
+    },
+    {
+      "text_id": 344,
+      "paragraph_id": 110,
+      "section_id": 38,
+      "text": "Hasen, R. L. (2013). A constitutional right to lie in campaigns and elections. Montana Law Review, 74, 53-77.",
+      "page_number": null
+    },
+    {
+      "text_id": 345,
+      "paragraph_id": 111,
+      "section_id": 38,
+      "text": "Hauch, V., Blandon-Gitlin, I., Masip, J., & Sporer, S. L. (2015). Are computers effective lie detectors? A meta- analysis of linguistic cues to deception. Personality and Social Psychology Review, 19, 307-342. https://doi .org/10.1177/1088868314556539",
+      "page_number": null
+    },
+    {
+      "text_id": 346,
+      "paragraph_id": 112,
+      "section_id": 38,
+      "text": "Hirschberg, J., & Manning, C. D. (2015). Advances in natural language processing. Science, 349, 261-266. https://doi .org/10.1126/science.aaa8685",
+      "page_number": null
+    },
+    {
+      "text_id": 347,
+      "paragraph_id": 113,
+      "section_id": 38,
+      "text": "Ho, S. M., Hancock, J. T., Booth, C., & Liu, X. (2016). Computer-mediated deception: Strategies revealed by language-action cues in spontaneous communication. Journal of Management Information Systems, 33(2), 393-420. https://doi.org/10.1080/07421222.2016.1205924",
+      "page_number": null
+    },
+    {
+      "text_id": 348,
+      "paragraph_id": 114,
+      "section_id": 38,
+      "text": "Kleinberg, B., Mozes, M., Arntz, A., & Verschuere, B. (2018). Using named entities for computer-automated verbal deception detection. Journal of Forensic Sciences, 63, 714-723. https://doi.org/10.1111/1556-4029.13645",
+      "page_number": null
+    },
+    {
+      "text_id": 349,
+      "paragraph_id": 115,
+      "section_id": 38,
+      "text": "Kleinberg, B., van der Toolen, Y., Vrij, A., Arntz, A., & Verschuere, B. (2018). Automated verbal credibility assessment of intentions: The model statement technique and predictive modeling. Applied Cognitive Psychology, 32, 354-366. https://doi.org/10.1002/acp.3407",
+      "page_number": null
+    },
+    {
+      "text_id": 350,
+      "paragraph_id": 116,
+      "section_id": 38,
+      "text": "Levine, T. R. (2018). Ecological validity and deception detection research design. Communication Methods and Measures, 12(1), 45-54. https://doi.org/10.1080/1931245",
+      "page_number": null
+    },
+    {
+      "text_id": 351,
+      "paragraph_id": 117,
+      "section_id": 38,
+      "text": "2017.1411471",
+      "page_number": null
+    },
+    {
+      "text_id": 352,
+      "paragraph_id": 118,
+      "section_id": 38,
+      "text": "Levitan, S. I., Maredia, A., & Hirschberg, J. (2018). Linguistic cues to deception and perceived deception in interview dialogues. In Proceedings of the Conference of the North American Chapter of the Association for Computational Linguistics: Human language technologies (pp. 1941- 1950). Association for Computational Linguistics.",
+      "page_number": null
+    },
+    {
+      "text_id": 353,
+      "paragraph_id": 119,
+      "section_id": 38,
+      "text": "Markowitz, D. M., & Griffin, D. J. (2019). When context mat- ters: How false, truthful, and genre-related communica- tion styles are revealed in language. Psychology, Crime & Law, 26(3), 287-310. https://doi.org/10.1080/10683 16X.2019.1652751",
+      "page_number": null
+    },
+    {
+      "text_id": 354,
+      "paragraph_id": 120,
+      "section_id": 38,
+      "text": "Markowitz, D. M., & Hancock, J. T. (2016). Linguistic obfus- cation in fraudulent science. Journal of Language and Social Psychology, 35(4), 435-445. https://doi.org/10 .1177/0261927X15614605",
+      "page_number": null
+    },
+    {
+      "text_id": 355,
+      "paragraph_id": 121,
+      "section_id": 38,
+      "text": "Markowitz, D. M., & Hancock, J. T. (2019). Deception and language: The Contextual Organization of Language and Deception (COLD) framework. In T. Docan-Morgan (Ed.), The Palgrave handbook of deceptive communication (pp. 193-212). Palgrave Macmillan.",
+      "page_number": null
+    },
+    {
+      "text_id": 356,
+      "paragraph_id": 122,
+      "section_id": 38,
+      "text": "Matsumoto, D., & Hwang, H. C. (2015). Differences in word usage by truth tellers and liars in written statements and an investigative interview after a mock crime. Journal of Investigative Psychology and Offender Profiling, 12, 199-216. https://doi.org/10.1002/jip.1423",
+      "page_number": null
+    },
+    {
+      "text_id": 357,
+      "paragraph_id": 123,
+      "section_id": 38,
+      "text": "McGranahan, C. (2017). An anthropology of lying: Trump and the political sociality of moral outrage. American Ethnologist, 44, 243-248. https://doi.org/10.1111/amet .12475",
+      "page_number": null
+    },
+    {
+      "text_id": 358,
+      "paragraph_id": 124,
+      "section_id": 38,
+      "text": "Mihalcea, R., & Strapparava, C. (2009). The lie detector: Explorations in the automatic recognition of decep- tive language. In Proceedings of the Association for Computational Linguistics International Joint Conference on Natural Language Processing Conference (pp. 309- 312). Association for Computational Linguistics.",
+      "page_number": null
+    },
+    {
+      "text_id": 359,
+      "paragraph_id": 125,
+      "section_id": 38,
+      "text": "Nahari, G., Vrij, A., & Fisher, R. P. (2014). Exploiting liars' verbal strategies by examining the verifiability of details. Legal and Criminological Psychology, 19, 227-239. https:// doi.org/10.1111/j.2044-8333.2012.02069.x",
+      "page_number": null
+    },
+    {
+      "text_id": 360,
+      "paragraph_id": 126,
+      "section_id": 38,
+      "text": "Newman, M. L., Pennebaker, J. W., Berry, D. S., & Richards, J. M. (2003). Lying words: Predicting deception from linguis- tic styles. Personality and Social Psychology Bulletin, 29, 665-675. https://doi.org/10.1177/0146167203029005010",
+      "page_number": null
+    },
+    {
+      "text_id": 361,
+      "paragraph_id": 127,
+      "section_id": 38,
+      "text": "Pennebaker, J. W., Boyd, R. L., Jordan, K., & Blackburn, K. (2015). The development and psychometric properties of LIWC2015. University of Texas.",
+      "page_number": null
+    },
+    {
+      "text_id": 362,
+      "paragraph_id": 128,
+      "section_id": 38,
+      "text": "Richardson, B. H., Taylor, P. J., Snook, B., Conchie, S. M., & Bennell, C. (2014). Language style matching and police interrogation outcomes. Law and Human Behavior, 38, 357-366. https://doi.org/10.1037/lhb0000077",
+      "page_number": null
+    },
+    {
+      "text_id": 363,
+      "paragraph_id": 129,
+      "section_id": 38,
+      "text": "Sharabi, L. L., & Caughlin, J. P. (2019). Deception in online dating: Significance and implications for the first offline date. New Media & Society, 21(1), 229-247. https://doi .org/10.1177/1461444818792425",
+      "page_number": null
+    },
+    {
+      "text_id": 364,
+      "paragraph_id": 130,
+      "section_id": 38,
+      "text": "Smith, L. G. E., McGarty, C., & Thomas, E. F. (2018). After Aylan Kurdi: How tweeting about death, threat, and harm predict increased expressions of solidarity with refugees over time. Psychological Science, 29(4), 623-634. https:// doi.org/10.1177/0956797617741107",
+      "page_number": null
+    },
+    {
+      "text_id": 365,
+      "paragraph_id": 131,
+      "section_id": 38,
+      "text": "Toma, C. L., & Hancock, J. T. (2012). What lies beneath: The linguistic traces of deception in online dating pro- files. Journal of Communication, 62(1), 78-97. https://doi .org/10.1111/j.1460-2466.2011.01619.x",
+      "page_number": null
+    },
+    {
+      "text_id": 366,
+      "paragraph_id": 132,
+      "section_id": 38,
+      "text": "Vrij, A. (2008). Detecting lies and deceit: Pitfalls and oppor- tunities. Wiley.",
+      "page_number": null
+    },
+    {
+      "text_id": 367,
+      "paragraph_id": 133,
+      "section_id": 38,
+      "text": "Vrij, A. (2015). Verbal lie detection tools: Statement validity analysis, reality monitoring and scientific content analy- sis.",
+      "page_number": null
+    },
+    {
+      "text_id": 368,
+      "paragraph_id": 134,
+      "section_id": 38,
+      "text": "In P. A. Granhag, A. Vrij, & B. Verschuere (Eds.), Detecting deception: Current challenges and cognitive approaches (pp. 3-35). Wiley-Blackwell.",
+      "page_number": null
+    },
+    {
+      "text_id": 369,
+      "paragraph_id": 135,
+      "section_id": 38,
+      "text": "Vrij, A., Fisher, R. P., & Blank, H. (2017). A cognitive approach to lie detection: A meta-analysis. Legal Criminological Psychology, 22(1), 1-21. https://doi.org/10.1111/ lcrp.12088",
+      "page_number": null
+    },
+    {
+      "text_id": 370,
+      "paragraph_id": 136,
+      "section_id": 38,
+      "text": "Weintraub, W. (1989). Verbal behavior in everyday life. Springer.",
+      "page_number": null
+    }
+  ],
+  "section": [
+    {
+      "section_id": 0,
+      "header": "Abstract",
+      "parent_section_id": null,
+      "section_type": "abstract",
+      "classification_score": null
+    },
+    {
+      "section_id": 1,
+      "header": "[div-01]",
+      "parent_section_id": null,
+      "section_type": "intro",
+      "classification_score": null
+    },
+    {
+      "section_id": 3,
+      "header": "Method",
+      "parent_section_id": null,
+      "section_type": "method",
+      "classification_score": null
+    },
+    {
+      "section_id": 4,
+      "header": "Data collection.",
+      "parent_section_id": null,
+      "section_type": "method",
+      "classification_score": null
+    },
+    {
+      "section_id": 5,
+      "header": "Statement of Relevance",
+      "parent_section_id": null,
+      "section_type": "method",
+      "classification_score": null
+    },
+    {
+      "section_id": 6,
+      "header": "Data screening.",
+      "parent_section_id": null,
+      "section_type": "method",
+      "classification_score": null
+    },
+    {
+      "section_id": 7,
+      "header": "Linguistic cues.",
+      "parent_section_id": null,
+      "section_type": "method",
+      "classification_score": null
+    },
+    {
+      "section_id": 9,
+      "header": "Comparing factually correct and incorrect tweets.",
+      "parent_section_id": null,
+      "section_type": "results",
+      "classification_score": null
+    },
+    {
+      "section_id": 10,
+      "header": "Model selection.",
+      "parent_section_id": null,
+      "section_type": "results",
+      "classification_score": null
+    },
+    {
+      "section_id": 11,
+      "header": "Factually Incorrect Tweet",
+      "parent_section_id": null,
+      "section_type": "results",
+      "classification_score": null
+    },
+    {
+      "section_id": 12,
+      "header": "Factually Correct Tweet",
+      "parent_section_id": null,
+      "section_type": "results",
+      "classification_score": null
+    },
+    {
+      "section_id": 13,
+      "header": "Discussion",
+      "parent_section_id": null,
+      "section_type": "discussion",
+      "classification_score": null
+    },
+    {
+      "section_id": 15,
+      "header": "Method",
+      "parent_section_id": null,
+      "section_type": "method",
+      "classification_score": null
+    },
+    {
+      "section_id": 16,
+      "header": "Results",
+      "parent_section_id": null,
+      "section_type": "results",
+      "classification_score": null
+    },
+    {
+      "section_id": 17,
+      "header": "Discussion",
+      "parent_section_id": null,
+      "section_type": "discussion",
+      "classification_score": null
+    },
+    {
+      "section_id": 19,
+      "header": "Method",
+      "parent_section_id": null,
+      "section_type": "method",
+      "classification_score": null
+    },
+    {
+      "section_id": 20,
+      "header": "Results",
+      "parent_section_id": null,
+      "section_type": "results",
+      "classification_score": null
+    },
+    {
+      "section_id": 21,
+      "header": "Discussion",
+      "parent_section_id": null,
+      "section_type": "discussion",
+      "classification_score": null
+    },
+    {
+      "section_id": 22,
+      "header": "General Discussion",
+      "parent_section_id": null,
+      "section_type": "discussion",
+      "classification_score": null
+    },
+    {
+      "section_id": 23,
+      "header": "Conclusion",
+      "parent_section_id": null,
+      "section_type": "discussion",
+      "classification_score": null
+    },
+    {
+      "section_id": 24,
+      "header": "Transparency",
+      "parent_section_id": null,
+      "section_type": "discussion",
+      "classification_score": null
+    },
+    {
+      "section_id": 25,
+      "header": "Acknowledgments",
+      "parent_section_id": null,
+      "section_type": "acknowledgement",
+      "classification_score": null
+    },
+    {
+      "section_id": 26,
+      "header": "Funding",
+      "parent_section_id": null,
+      "section_type": "funding",
+      "classification_score": null
+    },
+    {
+      "section_id": 27,
+      "header": "Open Practices",
+      "parent_section_id": null,
+      "section_type": "funding",
+      "classification_score": null
+    },
+    {
+      "section_id": 28,
+      "header": "Declaration of Conflicting Interests",
+      "parent_section_id": null,
+      "section_type": "conflict",
+      "classification_score": null
+    },
+    {
+      "section_id": 29,
+      "header": "Author Contributions",
+      "parent_section_id": null,
+      "section_type": "contribution",
+      "classification_score": null
+    },
+    {
+      "section_id": 30,
+      "header": "Supplemental Material",
+      "parent_section_id": null,
+      "section_type": "annex",
+      "classification_score": null
+    },
+    {
+      "section_id": 31,
+      "header": "Fig 1",
+      "parent_section_id": null,
+      "section_type": "figure",
+      "classification_score": null
+    },
+    {
+      "section_id": 33,
+      "header": "Fig 2",
+      "parent_section_id": null,
+      "section_type": "figure",
+      "classification_score": null
+    },
+    {
+      "section_id": 34,
+      "header": "Table 1 .",
+      "parent_section_id": null,
+      "section_type": "table",
+      "classification_score": null
+    },
+    {
+      "section_id": 35,
+      "header": "Table 2 .",
+      "parent_section_id": null,
+      "section_type": "table",
+      "classification_score": null
+    },
+    {
+      "section_id": 36,
+      "header": "Table 3 .",
+      "parent_section_id": null,
+      "section_type": "table",
+      "classification_score": null
+    },
+    {
+      "section_id": 37,
+      "header": "Table 4 .",
+      "parent_section_id": null,
+      "section_type": "table",
+      "classification_score": null
+    },
+    {
+      "section_id": 38,
+      "header": "References",
+      "parent_section_id": null,
+      "section_type": "references",
+      "classification_score": null
+    }
+  ],
+  "url": [
+    {
+      "href": "country...not",
+      "link_text": null,
+      "text_id": 129
+    },
+    {
+      "href": "pery.com",
+      "link_text": null,
+      "text_id": 290
+    },
+    {
+      "href": "https://doi.org",
+      "link_text": null,
+      "text_id": 292
+    },
+    {
+      "href": "http://www.psychologicalscience.org/publi",
+      "link_text": null,
+      "text_id": 295
+    },
+    {
+      "href": "journals.sagepub.com/doi/suppl/10.1177/09567976211015941",
+      "link_text": null,
+      "text_id": 302
+    }
+  ],
+  "bib": [
+    {
+      "bib_type": "article",
+      "doi": "10.1016/j.paid.2016.11.018",
+      "title": "Explaining Donald Trump via communication style: Grandiosity, informality, and dynamism",
+      "authors": "Ahmadian, S; Azarshahi, S; Paulhus, D L",
+      "editors": "",
+      "publisher": "",
+      "year": 2017,
+      "volume": "107",
+      "issue": "",
+      "first_page": "49",
+      "last_page": "53",
+      "container": "Personality and Individual Differences",
+      "bib_id": 0,
+      "year_suffix": "",
+      "text_id": 328
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1257/jep.31.2.211",
+      "title": "Social media and fake news in the 2016 election",
+      "authors": "Allcott, H; Gentzkow, M",
+      "editors": "",
+      "publisher": "",
+      "year": 2017,
+      "volume": "31",
+      "issue": "2",
+      "first_page": "211",
+      "last_page": "236",
+      "container": "Journal of Economic Perspectives",
+      "bib_id": 1,
+      "year_suffix": "",
+      "text_id": 329
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "",
+      "authors": "Alterman, E",
+      "editors": "",
+      "publisher": "",
+      "year": 2004,
+      "volume": "",
+      "issue": "",
+      "first_page": null,
+      "last_page": null,
+      "container": "",
+      "bib_id": 2,
+      "year_suffix": "",
+      "text_id": 330
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "Pithy, mean and powerful: How Donald Trump mastered Twitter for 2016",
+      "authors": "Barbaro, M",
+      "editors": "",
+      "publisher": "",
+      "year": 2015,
+      "volume": "",
+      "issue": "",
+      "first_page": null,
+      "last_page": null,
+      "container": "The New York Times",
+      "bib_id": 3,
+      "year_suffix": "",
+      "text_id": 331
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1111/j.2517-6161.1995.tb02031.x",
+      "title": "Controlling the false discovery rate: A practical and powerful approach to multiple testing",
+      "authors": "Benjamini, Y; Hochberg, Y",
+      "editors": "",
+      "publisher": "",
+      "year": 1995,
+      "volume": "57",
+      "issue": "1",
+      "first_page": "289",
+      "last_page": "300",
+      "container": "Journal of the Royal Statistical Society: Series B (Methodological)",
+      "bib_id": 4,
+      "year_suffix": "",
+      "text_id": 332
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1111/j.1745-6924.2009.01140.x",
+      "title": "How to tell if a particular memory is true or false",
+      "authors": "Bernstein, D M; Loftus, E F",
+      "editors": "",
+      "publisher": "",
+      "year": 2009,
+      "volume": "4",
+      "issue": "",
+      "first_page": "370",
+      "last_page": "374",
+      "container": "Perspectives on Psychological Science",
+      "bib_id": 5,
+      "year_suffix": "",
+      "text_id": 333
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1002/acp.3376",
+      "title": "Crooked Hillary', and 'Deceptive Donald': Language of lies in the 2016 US presidential debates",
+      "authors": "Bond, G D; Holman, R D; Eggert, J.-A L; Speller, L F; Garcia, O N; Mejia, S C; Mcinnes, K W; Ceniceros, E C; Rustige, R",
+      "editors": "",
+      "publisher": "",
+      "year": 2017,
+      "volume": "31",
+      "issue": "6",
+      "first_page": "668",
+      "last_page": "677",
+      "container": "Applied Cognitive Psychology",
+      "bib_id": 6,
+      "year_suffix": "",
+      "text_id": 334
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1002/acp.1087",
+      "title": "Language of lies in prison: Linguistic classification of prisoners' truthful and deceptive natural language",
+      "authors": "Bond, G D; Lee, A Y",
+      "editors": "",
+      "publisher": "",
+      "year": 2005,
+      "volume": "19",
+      "issue": "3",
+      "first_page": "313",
+      "last_page": "329",
+      "container": "Applied Cognitive Psychology",
+      "bib_id": 7,
+      "year_suffix": "",
+      "text_id": 335
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1080/0163853X.2014.942833",
+      "title": "His lips are moving: Pinocchio effect and other lexical indicators of political deceptions",
+      "authors": "Braun, M T; Van Swol, L M; Vang, L",
+      "editors": "",
+      "publisher": "",
+      "year": 2015,
+      "volume": "52",
+      "issue": "1",
+      "first_page": "1",
+      "last_page": "20",
+      "container": "Discourse Processes",
+      "bib_id": 8,
+      "year_suffix": "",
+      "text_id": 336
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1037/0033-2909",
+      "title": "Cues to deception",
+      "authors": "Depaulo, B M; Lindsay, J L; Malone, B E; Muhlenbruck, L; Charlton, K; Cooper, H",
+      "editors": "",
+      "publisher": "",
+      "year": 2003,
+      "volume": "129",
+      "issue": "",
+      "first_page": "74",
+      "last_page": "118",
+      "container": "Psychological Bulletin",
+      "bib_id": 9,
+      "year_suffix": "",
+      "text_id": 337
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "The man behind the president's tweets",
+      "authors": "Draper, R",
+      "editors": "",
+      "publisher": "",
+      "year": 2018,
+      "volume": "",
+      "issue": "",
+      "first_page": null,
+      "last_page": null,
+      "container": "The New York Times",
+      "bib_id": 10,
+      "year_suffix": "",
+      "text_id": 338
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "",
+      "authors": "Feinberg, A",
+      "editors": "",
+      "publisher": "",
+      "year": 2017,
+      "volume": "",
+      "issue": "",
+      "first_page": null,
+      "last_page": null,
+      "container": "",
+      "bib_id": 11,
+      "year_suffix": "",
+      "text_id": 339
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "An analysis of text-based deception detection tools",
+      "authors": "Fuller, C; Biros, D; Twitchell, D; Burgoon, J; Adkins, M",
+      "editors": "",
+      "publisher": "",
+      "year": 2006,
+      "volume": "",
+      "issue": "",
+      "first_page": "3465",
+      "last_page": "3472",
+      "container": "",
+      "bib_id": 12,
+      "year_suffix": "",
+      "text_id": 340
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1080/08874417.2015.11645757",
+      "title": "Real-world deception and the impact of severity",
+      "authors": "Fuller, C M; Biros, D P; Twitchell, D P; Wilson, R L",
+      "editors": "",
+      "publisher": "",
+      "year": 2015,
+      "volume": "55",
+      "issue": "2",
+      "first_page": "59",
+      "last_page": "67",
+      "container": "Journal of Computer Information Systems",
+      "bib_id": 13,
+      "year_suffix": "",
+      "text_id": 341
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "It's true: Trump is lying more, and he's doing it on purpose",
+      "authors": "Glasser, S B",
+      "editors": "",
+      "publisher": "",
+      "year": 2018,
+      "volume": "",
+      "issue": "",
+      "first_page": null,
+      "last_page": null,
+      "container": "The New Yorker",
+      "bib_id": 14,
+      "year_suffix": "",
+      "text_id": 342
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1080/01638530701739181",
+      "title": "On lying and being lied to: A linguistic analysis of deception in computer-mediated communication",
+      "authors": "Hancock, J T; Curry, L E; Goorha, S; Woodworth, M",
+      "editors": "",
+      "publisher": "",
+      "year": 2007,
+      "volume": "45",
+      "issue": "1",
+      "first_page": "1",
+      "last_page": "23",
+      "container": "Discourse Processes",
+      "bib_id": 15,
+      "year_suffix": "",
+      "text_id": 343
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "A constitutional right to lie in campaigns and elections",
+      "authors": "Hasen, R L",
+      "editors": "",
+      "publisher": "",
+      "year": 2013,
+      "volume": "74",
+      "issue": "",
+      "first_page": "53",
+      "last_page": "77",
+      "container": "Montana Law Review",
+      "bib_id": 16,
+      "year_suffix": "",
+      "text_id": 344
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1177/1088868314556539",
+      "title": "Are computers effective lie detectors? A metaanalysis of linguistic cues to deception",
+      "authors": "Hauch, V; Blandon-Gitlin, I; Masip, J; Sporer, S L",
+      "editors": "",
+      "publisher": "",
+      "year": 2015,
+      "volume": "19",
+      "issue": "",
+      "first_page": "307",
+      "last_page": "342",
+      "container": "Personality and Social Psychology Review",
+      "bib_id": 17,
+      "year_suffix": "",
+      "text_id": 345
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1126/science.aaa8685",
+      "title": "Advances in natural language processing",
+      "authors": "Hirschberg, J; Manning, C D",
+      "editors": "",
+      "publisher": "",
+      "year": 2015,
+      "volume": "349",
+      "issue": "",
+      "first_page": "261",
+      "last_page": "266",
+      "container": "Science",
+      "bib_id": 18,
+      "year_suffix": "",
+      "text_id": 346
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1080/07421222.2016.1205924",
+      "title": "Computer-mediated deception: Strategies revealed by language-action cues in spontaneous communication",
+      "authors": "Ho, S M; Hancock, J T; Booth, C; Liu, X",
+      "editors": "",
+      "publisher": "",
+      "year": 2016,
+      "volume": "33",
+      "issue": "2",
+      "first_page": "393",
+      "last_page": "420",
+      "container": "Journal of Management Information Systems",
+      "bib_id": 19,
+      "year_suffix": "",
+      "text_id": 347
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1111/1556-4029.13645",
+      "title": "Using named entities for computer-automated verbal deception detection",
+      "authors": "Kleinberg, B; Mozes, M; Arntz, A; Verschuere, B",
+      "editors": "",
+      "publisher": "",
+      "year": 2018,
+      "volume": "63",
+      "issue": "",
+      "first_page": "714",
+      "last_page": "723",
+      "container": "Journal of Forensic Sciences",
+      "bib_id": 20,
+      "year_suffix": "",
+      "text_id": 348
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1002/acp.3407",
+      "title": "Automated verbal credibility assessment of intentions: The model statement technique and predictive modeling",
+      "authors": "Kleinberg, B; Van Der Toolen, Y; Vrij, A; Arntz, A; Verschuere, B",
+      "editors": "",
+      "publisher": "",
+      "year": 2018,
+      "volume": "32",
+      "issue": "",
+      "first_page": "354",
+      "last_page": "366",
+      "container": "Applied Cognitive Psychology",
+      "bib_id": 21,
+      "year_suffix": "",
+      "text_id": 349
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1080/19312458.2017.1411471",
+      "title": "Ecological validity and deception detection research design",
+      "authors": "Levine, T R",
+      "editors": "",
+      "publisher": "",
+      "year": 2018,
+      "volume": "12",
+      "issue": "1",
+      "first_page": "45",
+      "last_page": "54",
+      "container": "Communication Methods and Measures",
+      "bib_id": 22,
+      "year_suffix": "",
+      "text_id": 350
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1080/19312458.2017.1411471",
+      "title": "",
+      "authors": "",
+      "editors": "",
+      "publisher": "",
+      "year": 2017,
+      "volume": "",
+      "issue": "",
+      "first_page": null,
+      "last_page": null,
+      "container": "",
+      "bib_id": 23,
+      "year_suffix": "",
+      "text_id": 351
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "Linguistic cues to deception and perceived deception in interview dialogues",
+      "authors": "Levitan, S I; Maredia, A; Hirschberg, J",
+      "editors": "",
+      "publisher": "Association for Computational Linguistics",
+      "year": 2018,
+      "volume": "",
+      "issue": "",
+      "first_page": "1941",
+      "last_page": "1950",
+      "container": "",
+      "bib_id": 24,
+      "year_suffix": "",
+      "text_id": 352
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1080/1068316X.2019.1652751",
+      "title": "When context matters: How false, truthful, and genre-related communication styles are revealed in language",
+      "authors": "Markowitz, D M; Griffin, D J",
+      "editors": "",
+      "publisher": "",
+      "year": 2019,
+      "volume": "26",
+      "issue": "3",
+      "first_page": "287",
+      "last_page": "310",
+      "container": "Crime & Law",
+      "bib_id": 25,
+      "year_suffix": "",
+      "text_id": 353
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1177/0261927X15614605",
+      "title": "Linguistic obfuscation in fraudulent science",
+      "authors": "Markowitz, D M; Hancock, J T",
+      "editors": "",
+      "publisher": "",
+      "year": 2016,
+      "volume": "35",
+      "issue": "4",
+      "first_page": "435",
+      "last_page": "445",
+      "container": "Journal of Language and Social Psychology",
+      "bib_id": 26,
+      "year_suffix": "",
+      "text_id": 354
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "Deception and language: The Contextual Organization of Language and Deception (COLD) framework",
+      "authors": "Markowitz, D M; Hancock, J T",
+      "editors": "Docan-Morgan, T",
+      "publisher": "Palgrave Macmillan",
+      "year": 2019,
+      "volume": "",
+      "issue": "",
+      "first_page": "193",
+      "last_page": "212",
+      "container": "",
+      "bib_id": 27,
+      "year_suffix": "",
+      "text_id": 355
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1002/jip.1423",
+      "title": "Differences in word usage by truth tellers and liars in written statements and an investigative interview after a mock crime",
+      "authors": "Matsumoto, D; Hwang, H C",
+      "editors": "",
+      "publisher": "",
+      "year": 2015,
+      "volume": "12",
+      "issue": "",
+      "first_page": "199",
+      "last_page": "216",
+      "container": "Journal of Investigative Psychology and Offender Profiling",
+      "bib_id": 28,
+      "year_suffix": "",
+      "text_id": 356
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1111/amet.12475",
+      "title": "An anthropology of lying: Trump and the political sociality of moral outrage",
+      "authors": "Mcgranahan, C",
+      "editors": "",
+      "publisher": "",
+      "year": 2017,
+      "volume": "44",
+      "issue": "",
+      "first_page": "243",
+      "last_page": "248",
+      "container": "American Ethnologist",
+      "bib_id": 29,
+      "year_suffix": "",
+      "text_id": 357
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "The lie detector: Explorations in the automatic recognition of deceptive language",
+      "authors": "Mihalcea, R; Strapparava, C",
+      "editors": "",
+      "publisher": "Association for Computational Linguistics",
+      "year": 2009,
+      "volume": "",
+      "issue": "",
+      "first_page": "309",
+      "last_page": "312",
+      "container": "",
+      "bib_id": 30,
+      "year_suffix": "",
+      "text_id": 358
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1111/j.2044-8333.2012.02069.x",
+      "title": "",
+      "authors": "Nahari, G; Vrij, A; Fisher, R P",
+      "editors": "",
+      "publisher": "",
+      "year": 2014,
+      "volume": "19",
+      "issue": "",
+      "first_page": "227",
+      "last_page": "239",
+      "container": "",
+      "bib_id": 31,
+      "year_suffix": "",
+      "text_id": 359
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1177/0146167203029005010",
+      "title": "Lying words: Predicting deception from linguistic styles",
+      "authors": "Newman, M L; Pennebaker, J W; Berry, D S; Richards, J M",
+      "editors": "",
+      "publisher": "",
+      "year": 2003,
+      "volume": "29",
+      "issue": "",
+      "first_page": "665",
+      "last_page": "675",
+      "container": "Personality and Social Psychology Bulletin",
+      "bib_id": 32,
+      "year_suffix": "",
+      "text_id": 360
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "",
+      "authors": "Pennebaker, J W; Boyd, R L; Jordan, K; Blackburn, K",
+      "editors": "",
+      "publisher": "",
+      "year": 2015,
+      "volume": "",
+      "issue": "",
+      "first_page": null,
+      "last_page": null,
+      "container": "",
+      "bib_id": 33,
+      "year_suffix": "",
+      "text_id": 361
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1037/lhb0000077",
+      "title": "Language style matching and police interrogation outcomes",
+      "authors": "Richardson, B H; Taylor, P J; Snook, B; Conchie, S M; Bennell, C",
+      "editors": "",
+      "publisher": "",
+      "year": 2014,
+      "volume": "38",
+      "issue": "",
+      "first_page": "357",
+      "last_page": "366",
+      "container": "Law and Human Behavior",
+      "bib_id": 34,
+      "year_suffix": "",
+      "text_id": 362
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1177/1461444818792425",
+      "title": "Deception in online dating: Significance and implications for the first offline date",
+      "authors": "Sharabi, L L; Caughlin, J P",
+      "editors": "",
+      "publisher": "",
+      "year": 2019,
+      "volume": "21",
+      "issue": "1",
+      "first_page": "229",
+      "last_page": "247",
+      "container": "New Media & Society",
+      "bib_id": 35,
+      "year_suffix": "",
+      "text_id": 363
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1177/0956797617741107",
+      "title": "After Aylan Kurdi: How tweeting about death, threat, and harm predict increased expressions of solidarity with refugees over time",
+      "authors": "Smith, L G E; Mcgarty, C; Thomas, E F",
+      "editors": "",
+      "publisher": "",
+      "year": 2018,
+      "volume": "29",
+      "issue": "4",
+      "first_page": "623",
+      "last_page": "634",
+      "container": "Psychological Science",
+      "bib_id": 36,
+      "year_suffix": "",
+      "text_id": 364
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1111/j.1460-2466.2011.01619.x",
+      "title": "What lies beneath: The linguistic traces of deception in online dating profiles",
+      "authors": "Toma, C L; Hancock, J T",
+      "editors": "",
+      "publisher": "",
+      "year": 2012,
+      "volume": "62",
+      "issue": "1",
+      "first_page": "78",
+      "last_page": "97",
+      "container": "Journal of Communication",
+      "bib_id": 37,
+      "year_suffix": "",
+      "text_id": 365
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "",
+      "authors": "Vrij, A",
+      "editors": "",
+      "publisher": "Wiley",
+      "year": 2008,
+      "volume": "",
+      "issue": "",
+      "first_page": null,
+      "last_page": null,
+      "container": "",
+      "bib_id": 38,
+      "year_suffix": "",
+      "text_id": 366
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "",
+      "authors": "Vrij, A",
+      "editors": "",
+      "publisher": "",
+      "year": 2015,
+      "volume": "",
+      "issue": "",
+      "first_page": null,
+      "last_page": null,
+      "container": "",
+      "bib_id": 39,
+      "year_suffix": "",
+      "text_id": 367
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "",
+      "authors": "",
+      "editors": "Granhag, P A; Vrij, A; Verschuere, B",
+      "publisher": "Wiley-Blackwell",
+      "year": null,
+      "volume": "",
+      "issue": "",
+      "first_page": "3",
+      "last_page": "35",
+      "container": "",
+      "bib_id": 40,
+      "year_suffix": null,
+      "text_id": 368
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1111/lcrp.12088",
+      "title": "A cognitive approach to lie detection: A meta-analysis",
+      "authors": "Vrij, A; Fisher, R P; Blank, H",
+      "editors": "",
+      "publisher": "",
+      "year": 2017,
+      "volume": "22",
+      "issue": "1",
+      "first_page": "1",
+      "last_page": "21",
+      "container": "Legal Criminological Psychology",
+      "bib_id": 41,
+      "year_suffix": "",
+      "text_id": 369
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "",
+      "authors": "Weintraub, W",
+      "editors": "",
+      "publisher": "Springer",
+      "year": 1989,
+      "volume": "",
+      "issue": "",
+      "first_page": null,
+      "last_page": null,
+      "container": "",
+      "bib_id": 42,
+      "year_suffix": "",
+      "text_id": 370
+    }
+  ],
+  "xref": [
+    {
+      "xref_id": 0,
+      "xref_type": "bib",
+      "contents": "(Ahmadian et al., 2017)",
+      "text_id": 9
+    },
+    {
+      "xref_id": 0,
+      "xref_type": "bib",
+      "contents": "(Ahmadian et al., 2017)",
+      "text_id": 11
+    },
+    {
+      "xref_id": 0,
+      "xref_type": "bib",
+      "contents": "(Ahmadian et al., 2017;",
+      "text_id": 9
+    },
+    {
+      "xref_id": 0,
+      "xref_type": "bib",
+      "contents": "(Ahmadian et al., 2017;",
+      "text_id": 11
+    },
+    {
+      "xref_id": 1,
+      "xref_type": "bib",
+      "contents": "(Allcott & Gentzkow, 2017)",
+      "text_id": 285
+    },
+    {
+      "xref_id": 2,
+      "xref_type": "bib",
+      "contents": "(Alterman, 2004;",
+      "text_id": 30
+    },
+    {
+      "xref_id": 3,
+      "xref_type": "bib",
+      "contents": "(Barbaro, 2015)",
+      "text_id": 26
+    },
+    {
+      "xref_id": 4,
+      "xref_type": "bib",
+      "contents": "(Benjamini & Hochberg, 1995)",
+      "text_id": 91
+    },
+    {
+      "xref_id": 5,
+      "xref_type": "bib",
+      "contents": "(Bernstein & Loftus, 2009)",
+      "text_id": 33
+    },
+    {
+      "xref_id": 6,
+      "xref_type": "bib",
+      "contents": "(Bond et al., 2017)",
+      "text_id": 17
+    },
+    {
+      "xref_id": 6,
+      "xref_type": "bib",
+      "contents": "Bond et al., 2017;",
+      "text_id": 30
+    },
+    {
+      "xref_id": 7,
+      "xref_type": "bib",
+      "contents": "(Bond & Lee, 2005;",
+      "text_id": 13
+    },
+    {
+      "xref_id": 7,
+      "xref_type": "bib",
+      "contents": "(Bond & Lee, 2005;",
+      "text_id": 35
+    },
+    {
+      "xref_id": 7,
+      "xref_type": "bib",
+      "contents": "(Bond & Lee, 2005;",
+      "text_id": 62
+    },
+    {
+      "xref_id": 7,
+      "xref_type": "bib",
+      "contents": "Bond and Lee (2005)",
+      "text_id": 202
+    },
+    {
+      "xref_id": 7,
+      "xref_type": "bib",
+      "contents": "Bond and Lee (2005)",
+      "text_id": 205
+    },
+    {
+      "xref_id": 8,
+      "xref_type": "bib",
+      "contents": "(Braun et al., 2015)",
+      "text_id": 230
+    },
+    {
+      "xref_id": 9,
+      "xref_type": "bib",
+      "contents": "(DePaulo et al., 2003)",
+      "text_id": 15
+    },
+    {
+      "xref_id": 9,
+      "xref_type": "bib",
+      "contents": "(DePaulo et al., 2003;",
+      "text_id": 36
+    },
+    {
+      "xref_id": 9,
+      "xref_type": "bib",
+      "contents": "(DePaulo et al., 2003)",
+      "text_id": 97
+    },
+    {
+      "xref_id": 9,
+      "xref_type": "bib",
+      "contents": "(DePaulo et al., 2003)",
+      "text_id": 100
+    },
+    {
+      "xref_id": 9,
+      "xref_type": "bib",
+      "contents": "(DePaulo et al., 2003)",
+      "text_id": 102
+    },
+    {
+      "xref_id": 9,
+      "xref_type": "bib",
+      "contents": "(DePaulo et al., 2003)",
+      "text_id": 106
+    },
+    {
+      "xref_id": 10,
+      "xref_type": "bib",
+      "contents": "(Draper, 2018)",
+      "text_id": 280
+    },
+    {
+      "xref_id": 11,
+      "xref_type": "bib",
+      "contents": "(Feinberg, 2017)",
+      "text_id": 281
+    },
+    {
+      "xref_id": 12,
+      "xref_type": "bib",
+      "contents": "(Fuller et al., 2006;",
+      "text_id": 10
+    },
+    {
+      "xref_id": 13,
+      "xref_type": "bib",
+      "contents": "Fuller et al., 2015;",
+      "text_id": 13
+    },
+    {
+      "xref_id": 13,
+      "xref_type": "bib",
+      "contents": "Fuller et al., 2015;",
+      "text_id": 35
+    },
+    {
+      "xref_id": 14,
+      "xref_type": "bib",
+      "contents": "(Glasser, 2018)",
+      "text_id": 31
+    },
+    {
+      "xref_id": 16,
+      "xref_type": "bib",
+      "contents": "(Hasen, 2013)",
+      "text_id": 24
+    },
+    {
+      "xref_id": 17,
+      "xref_type": "bib",
+      "contents": "Hauch et al., 2015)",
+      "text_id": 14
+    },
+    {
+      "xref_id": 17,
+      "xref_type": "bib",
+      "contents": "Hauch et al., 2015)",
+      "text_id": 18
+    },
+    {
+      "xref_id": 17,
+      "xref_type": "bib",
+      "contents": "(Hauch et al., 2015;",
+      "text_id": 14
+    },
+    {
+      "xref_id": 17,
+      "xref_type": "bib",
+      "contents": "(Hauch et al., 2015;",
+      "text_id": 18
+    },
+    {
+      "xref_id": 17,
+      "xref_type": "bib",
+      "contents": "Hauch et al., 2015)",
+      "text_id": 35
+    },
+    {
+      "xref_id": 17,
+      "xref_type": "bib",
+      "contents": "Hauch et al. (2015)",
+      "text_id": null
+    },
+    {
+      "xref_id": 17,
+      "xref_type": "bib",
+      "contents": "(Hauch et al., 2015)",
+      "text_id": 98
+    },
+    {
+      "xref_id": 17,
+      "xref_type": "bib",
+      "contents": "(Hauch et al., 2015)",
+      "text_id": 105
+    },
+    {
+      "xref_id": 17,
+      "xref_type": "bib",
+      "contents": "(Hauch et al., 2015)",
+      "text_id": 106
+    },
+    {
+      "xref_id": 17,
+      "xref_type": "bib",
+      "contents": "(Hauch et al., 2015)",
+      "text_id": 264
+    },
+    {
+      "xref_id": 17,
+      "xref_type": "bib",
+      "contents": "Hauch et al. (2015)",
+      "text_id": null
+    },
+    {
+      "xref_id": 18,
+      "xref_type": "bib",
+      "contents": "(Hirschberg & Manning, 2015)",
+      "text_id": 12
+    },
+    {
+      "xref_id": 19,
+      "xref_type": "bib",
+      "contents": "(Ho et al., 2016)",
+      "text_id": 230
+    },
+    {
+      "xref_id": 20,
+      "xref_type": "bib",
+      "contents": "(Kleinberg, Mozes, et al., 2018)",
+      "text_id": 231
+    },
+    {
+      "xref_id": 21,
+      "xref_type": "bib",
+      "contents": "(Kleinberg, van der Toolen, et al., 2018)",
+      "text_id": 13
+    },
+    {
+      "xref_id": 21,
+      "xref_type": "bib",
+      "contents": "Kleinberg, van der Toolen, et al. (2018)",
+      "text_id": 269
+    },
+    {
+      "xref_id": 22,
+      "xref_type": "bib",
+      "contents": "(Levine, 2018)",
+      "text_id": 172
+    },
+    {
+      "xref_id": 22,
+      "xref_type": "bib",
+      "contents": "(Levine, 2018)",
+      "text_id": 174
+    },
+    {
+      "xref_id": 26,
+      "xref_type": "bib",
+      "contents": "(Markowitz & Hancock, 2016)",
+      "text_id": 231
+    },
+    {
+      "xref_id": 27,
+      "xref_type": "bib",
+      "contents": "Markowitz & Hancock, 2019)",
+      "text_id": 18
+    },
+    {
+      "xref_id": 27,
+      "xref_type": "bib",
+      "contents": "(Markowitz & Hancock, 2019)",
+      "text_id": 232
+    },
+    {
+      "xref_id": 27,
+      "xref_type": "bib",
+      "contents": "(Markowitz & Hancock, 2019)",
+      "text_id": 252
+    },
+    {
+      "xref_id": 29,
+      "xref_type": "bib",
+      "contents": "McGranahan, 2017)",
+      "text_id": 30
+    },
+    {
+      "xref_id": 31,
+      "xref_type": "bib",
+      "contents": "(Nahari et al., 2014)",
+      "text_id": 142
+    },
+    {
+      "xref_id": 32,
+      "xref_type": "bib",
+      "contents": "Newman et al., 2003)",
+      "text_id": 13
+    },
+    {
+      "xref_id": 32,
+      "xref_type": "bib",
+      "contents": "Newman et al., 2003)",
+      "text_id": 62
+    },
+    {
+      "xref_id": 32,
+      "xref_type": "bib",
+      "contents": "(Newman et al., 2003;",
+      "text_id": 262
+    },
+    {
+      "xref_id": 33,
+      "xref_type": "bib",
+      "contents": "Pennebaker et al., 2015)",
+      "text_id": 10
+    },
+    {
+      "xref_id": 33,
+      "xref_type": "bib",
+      "contents": "Pennebaker et al., 2015)",
+      "text_id": 71
+    },
+    {
+      "xref_id": 33,
+      "xref_type": "bib",
+      "contents": "Pennebaker et al., 2015)",
+      "text_id": 72
+    },
+    {
+      "xref_id": 34,
+      "xref_type": "bib",
+      "contents": "(Richardson et al., 2014)",
+      "text_id": 11
+    },
+    {
+      "xref_id": 36,
+      "xref_type": "bib",
+      "contents": "(Smith et al., 2018)",
+      "text_id": 11
+    },
+    {
+      "xref_id": 37,
+      "xref_type": "bib",
+      "contents": "(Toma & Hancock, 2012;",
+      "text_id": 263
+    },
+    {
+      "xref_id": 38,
+      "xref_type": "bib",
+      "contents": "(Vrij, 2008)",
+      "text_id": 16
+    },
+    {
+      "xref_id": 38,
+      "xref_type": "bib",
+      "contents": "Vrij, 2008;",
+      "text_id": 36
+    },
+    {
+      "xref_id": 39,
+      "xref_type": "bib",
+      "contents": "(Vrij, 2015)",
+      "text_id": 110
+    },
+    {
+      "xref_id": 39,
+      "xref_type": "bib",
+      "contents": "(Vrij, 2015)",
+      "text_id": 204
+    },
+    {
+      "xref_id": 41,
+      "xref_type": "bib",
+      "contents": "Vrij et al., 2017)",
+      "text_id": 36
+    },
+    {
+      "xref_id": 41,
+      "xref_type": "bib",
+      "contents": "(Vrij et al., 2017;",
+      "text_id": 262
+    },
+    {
+      "xref_id": 42,
+      "xref_type": "bib",
+      "contents": "Weintraub (1989)",
+      "text_id": 10
+    },
+    {
+      "xref_id": 42,
+      "xref_type": "bib",
+      "contents": "Weintraub (1989)",
+      "text_id": 11
+    },
+    {
+      "xref_id": 42,
+      "xref_type": "bib",
+      "contents": "Weintraub, 1989)",
+      "text_id": 10
+    },
+    {
+      "xref_id": 42,
+      "xref_type": "bib",
+      "contents": "Weintraub, 1989)",
+      "text_id": 11
+    },
+    {
+      "xref_id": null,
+      "xref_type": "bib",
+      "contents": "Hauch and colleagues (2015)",
+      "text_id": 212
+    },
+    {
+      "xref_id": null,
+      "xref_type": "bib",
+      "contents": "DePaulo and colleagues (2003)",
+      "text_id": 213
+    },
+    {
+      "xref_id": null,
+      "xref_type": "bib",
+      "contents": "i.e",
+      "text_id": 262
+    },
+    {
+      "xref_id": null,
+      "xref_type": "bib",
+      "contents": "i.e",
+      "text_id": 263
+    },
+    {
+      "xref_id": null,
+      "xref_type": "bib",
+      "contents": "",
+      "text_id": 262
+    },
+    {
+      "xref_id": null,
+      "xref_type": "bib",
+      "contents": "",
+      "text_id": 263
+    },
+    {
+      "xref_id": null,
+      "xref_type": "bib",
+      "contents": "",
+      "text_id": 264
+    },
+    {
+      "xref_id": null,
+      "xref_type": "bib",
+      "contents": "Bond and colleagues (2017)",
+      "text_id": 267
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "1",
+      "text_id": 86
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "2",
+      "text_id": 160
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "2",
+      "text_id": 164
+    },
+    {
+      "xref_id": null,
+      "xref_type": "table",
+      "contents": "S1",
+      "text_id": 83
+    },
+    {
+      "xref_id": null,
+      "xref_type": "table",
+      "contents": "1",
+      "text_id": 91
+    },
+    {
+      "xref_id": null,
+      "xref_type": "table",
+      "contents": "1",
+      "text_id": 92
+    },
+    {
+      "xref_id": null,
+      "xref_type": "table",
+      "contents": "S1",
+      "text_id": 91
+    },
+    {
+      "xref_id": null,
+      "xref_type": "table",
+      "contents": "S1",
+      "text_id": 92
+    },
+    {
+      "xref_id": null,
+      "xref_type": "table",
+      "contents": "2",
+      "text_id": 125
+    },
+    {
+      "xref_id": null,
+      "xref_type": "table",
+      "contents": "3",
+      "text_id": 169
+    },
+    {
+      "xref_id": null,
+      "xref_type": "table",
+      "contents": "4",
+      "text_id": 221
+    }
+  ],
+  "figure": [
+    {
+      "figure_id": 1,
+      "section_id": 31,
+      "image": null,
+      "page_number": null
+    },
+    {
+      "figure_id": 2,
+      "section_id": 33,
+      "image": null,
+      "page_number": null
+    }
+  ],
+  "table": [
+    {
+      "table_id": 1,
+      "section_id": 34,
+      "html": "<table>\n  <row>\n    <cell>LIWC<\/cell>\n    <cell/>\n    <cell>Psychological<\/cell>\n    <cell>M if<\/cell>\n    <cell>M if<\/cell>\n    <cell/>\n    <cell/>\n    <cell>Bayes<\/cell>\n    <cell/>\n  <\/row>\n  <row>\n    <cell>name<\/cell>\n    <cell>Variable name<\/cell>\n    <cell>process<\/cell>\n    <cell>correct<\/cell>\n    <cell cols=\"2\">incorrect F(1, 603)<\/cell>\n    <cell>p<\/cell>\n    <cell>factor<\/cell>\n    <cell>Cohen's d<\/cell>\n  <\/row>\n  <row>\n    <cell>Adverb<\/cell>\n    <cell>Adverbs<\/cell>\n    <cell>Details<\/cell>\n    <cell>3.65<\/cell>\n    <cell>5.36<\/cell>\n    <cell>17.70<\/cell>\n    <cell>.000<\/cell>\n    <cell cols=\"2\">503.44 -0.42 [-0.62, -0.22]<\/cell>\n  <\/row>\n  <row>\n    <cell>Affect<\/cell>\n    <cell>Emotions<\/cell>\n    <cell>Emotion<\/cell>\n    <cell>9.76<\/cell>\n    <cell>7.79<\/cell>\n    <cell>7.15<\/cell>\n    <cell>.026<\/cell>\n    <cell>3.43<\/cell>\n    <cell>0.27 [0.07, 0.47]<\/cell>\n  <\/row>\n  <row>\n    <cell/>\n    <cell/>\n    <cell>(unspecified)<\/cell>\n    <cell/>\n    <cell/>\n    <cell/>\n    <cell/>\n    <cell/>\n    <cell/>\n  <\/row>\n  <row>\n    <cell>Affiliation<\/cell>\n    <cell>Affiliation<\/cell>\n    <cell/>\n    <cell>3.68<\/cell>\n    <cell>2.30<\/cell>\n    <cell>9.09<\/cell>\n    <cell>.012<\/cell>\n    <cell>8.65<\/cell>\n    <cell>0.30 [0.10, 0.50]<\/cell>\n  <\/row>\n  <row>\n    <cell>Analytic<\/cell>\n    <cell>Analytic thinking<\/cell>\n    <cell/>\n    <cell>74.71<\/cell>\n    <cell>68.38<\/cell>\n    <cell>5.76<\/cell>\n    <cell>.048<\/cell>\n    <cell>1.77<\/cell>\n    <cell>0.24 [0.04, 0.44]<\/cell>\n  <\/row>\n  <row>\n    <cell>Anger<\/cell>\n    <cell>Anger<\/cell>\n    <cell>Emotion<\/cell>\n    <cell>0.39<\/cell>\n    <cell>0.77<\/cell>\n    <cell>9.64<\/cell>\n    <cell>.011<\/cell>\n    <cell cols=\"2\">11.22 -0.31 [-0.51, -0.11]<\/cell>\n  <\/row>\n  <row>\n    <cell/>\n    <cell/>\n    <cell>(negative)<\/cell>\n    <cell/>\n    <cell/>\n    <cell/>\n    <cell/>\n    <cell/>\n    <cell/>\n  <\/row>\n  <row>\n    <cell>Apostro<\/cell>\n    <cell>Apostrophes<\/cell>\n    <cell/>\n    <cell>0.71<\/cell>\n    <cell>1.26<\/cell>\n    <cell>7.04<\/cell>\n    <cell>.026<\/cell>\n    <cell cols=\"2\">3.27 -0.27 [-0.46, -0.07]<\/cell>\n  <\/row>\n  <row>\n    <cell>At<\/cell>\n    <cell>@<\/cell>\n    <cell/>\n    <cell>1.42<\/cell>\n    <cell>0.11<\/cell>\n    <cell>16.67<\/cell>\n    <cell>.001<\/cell>\n    <cell>310.45<\/cell>\n    <cell>0.41 [0.21, 0.61]<\/cell>\n  <\/row>\n  <row>\n    <cell>Auxverb<\/cell>\n    <cell>Auxiliary verbs<\/cell>\n    <cell/>\n    <cell>7.59<\/cell>\n    <cell>9.24<\/cell>\n    <cell>9.45<\/cell>\n    <cell>.012<\/cell>\n    <cell cols=\"2\">10.28 -0.31 [-0.51, -0.11]<\/cell>\n  <\/row>\n  <row>\n    <cell>Cause<\/cell>\n    <cell>Causations<\/cell>\n    <cell>Cognitive load<\/cell>\n    <cell>1.07<\/cell>\n    <cell>1.81<\/cell>\n    <cell>12.25<\/cell>\n    <cell>.004<\/cell>\n    <cell cols=\"2\">38.75 -0.35 [-0.55, -0.15]<\/cell>\n  <\/row>\n  <row>\n    <cell>Certain<\/cell>\n    <cell>Certainty<\/cell>\n    <cell>Certainty<\/cell>\n    <cell>1.80<\/cell>\n    <cell>2.54<\/cell>\n    <cell>6.19<\/cell>\n    <cell>.039<\/cell>\n    <cell cols=\"2\">2.18 -0.25 [-0.45, -0.05]<\/cell>\n  <\/row>\n  <row>\n    <cell>Clout<\/cell>\n    <cell>Clout<\/cell>\n    <cell/>\n    <cell>70.26<\/cell>\n    <cell>61.17<\/cell>\n    <cell>14.23<\/cell>\n    <cell>.002<\/cell>\n    <cell>98.62<\/cell>\n    <cell>0.38 [0.18, 0.58]<\/cell>\n  <\/row>\n  <row>\n    <cell>Cogproc<\/cell>\n    <cell>Cognitive<\/cell>\n    <cell>Cognitive<\/cell>\n    <cell>7.07<\/cell>\n    <cell>10.59<\/cell>\n    <cell>36.86<\/cell>\n    <cell cols=\"3\">.000 &gt; 1,000 -0.61 [-0.81, -0.41]<\/cell>\n  <\/row>\n  <row>\n    <cell/>\n    <cell>processes<\/cell>\n    <cell>processes<\/cell>\n    <cell/>\n    <cell/>\n    <cell/>\n    <cell/>\n    <cell/>\n    <cell/>\n  <\/row>\n  <row>\n    <cell>Compare<\/cell>\n    <cell>Comparison words<\/cell>\n    <cell/>\n    <cell>1.40<\/cell>\n    <cell>2.37<\/cell>\n    <cell>12.07<\/cell>\n    <cell>.004<\/cell>\n    <cell cols=\"2\">35.65 -0.35 [-0.55, -0.15]<\/cell>\n  <\/row>\n  <row>\n    <cell>Differ<\/cell>\n    <cell>Differentiation<\/cell>\n    <cell/>\n    <cell>1.62<\/cell>\n    <cell>2.63<\/cell>\n    <cell>15.35<\/cell>\n    <cell>.001<\/cell>\n    <cell cols=\"2\">167.56 -0.39 [-0.59, -0.19]<\/cell>\n  <\/row>\n  <row>\n    <cell>Discrep<\/cell>\n    <cell>Discrepancy<\/cell>\n    <cell/>\n    <cell>1.17<\/cell>\n    <cell>1.73<\/cell>\n    <cell>6.40<\/cell>\n    <cell>.037<\/cell>\n    <cell cols=\"2\">2.40 -0.25 [-0.45, -0.06]<\/cell>\n  <\/row>\n  <row>\n    <cell>Drives<\/cell>\n    <cell>Drives<\/cell>\n    <cell/>\n    <cell>13.24<\/cell>\n    <cell>10.92<\/cell>\n    <cell>8.40<\/cell>\n    <cell>.016<\/cell>\n    <cell>6.24<\/cell>\n    <cell>0.29 [0.09, 0.49]<\/cell>\n  <\/row>\n  <row>\n    <cell>Excl<\/cell>\n    <cell>Exclusive<\/cell>\n    <cell>Cognitive load<\/cell>\n    <cell>1.40<\/cell>\n    <cell>2.05<\/cell>\n    <cell>8.18<\/cell>\n    <cell>.016<\/cell>\n    <cell cols=\"2\">5.62 -0.29 [-0.49, -0.09]<\/cell>\n  <\/row>\n  <row>\n    <cell>Exclam<\/cell>\n    <cell>Exclamation marks<\/cell>\n    <cell/>\n    <cell>5.13<\/cell>\n    <cell>2.81<\/cell>\n    <cell>8.28<\/cell>\n    <cell>.016<\/cell>\n    <cell>5.90<\/cell>\n    <cell>0.29 [0.09, 0.49]<\/cell>\n  <\/row>\n  <row>\n    <cell>Focuspast<\/cell>\n    <cell>Past orientation<\/cell>\n    <cell/>\n    <cell>2.48<\/cell>\n    <cell>3.59<\/cell>\n    <cell>10.27<\/cell>\n    <cell>.010<\/cell>\n    <cell cols=\"2\">15.19 -0.32 [-0.52, -0.12]<\/cell>\n  <\/row>\n  <row>\n    <cell>Function<\/cell>\n    <cell>Total function<\/cell>\n    <cell/>\n    <cell>43.37<\/cell>\n    <cell>47.58<\/cell>\n    <cell>14.59<\/cell>\n    <cell>.001<\/cell>\n    <cell cols=\"2\">116.68 -0.38 [-0.58, -0.18]<\/cell>\n  <\/row>\n  <row>\n    <cell/>\n    <cell>words<\/cell>\n    <cell/>\n    <cell/>\n    <cell/>\n    <cell/>\n    <cell/>\n    <cell/>\n    <cell/>\n  <\/row>\n  <row>\n    <cell>Metaph<\/cell>\n    <cell>Metaphysical<\/cell>\n    <cell/>\n    <cell>1.09<\/cell>\n    <cell>0.16<\/cell>\n    <cell>7.70<\/cell>\n    <cell>.020<\/cell>\n    <cell>4.47<\/cell>\n    <cell>0.28 [0.08, 0.48]<\/cell>\n  <\/row>\n  <row>\n    <cell>Money<\/cell>\n    <cell>Money<\/cell>\n    <cell/>\n    <cell>1.26<\/cell>\n    <cell>2.16<\/cell>\n    <cell>8.22<\/cell>\n    <cell>.016<\/cell>\n    <cell cols=\"2\">5.71 -0.29 [-0.49, -0.09]<\/cell>\n  <\/row>\n  <row>\n    <cell>Negate<\/cell>\n    <cell>Negations<\/cell>\n    <cell>Emotion<\/cell>\n    <cell>1.05<\/cell>\n    <cell>2.51<\/cell>\n    <cell>47.01<\/cell>\n    <cell cols=\"3\">.000 &gt; 1,000 -0.69 [-0.89, -0.49]<\/cell>\n  <\/row>\n  <row>\n    <cell/>\n    <cell/>\n    <cell>(negative)<\/cell>\n    <cell/>\n    <cell/>\n    <cell/>\n    <cell/>\n    <cell/>\n    <cell/>\n  <\/row>\n  <row>\n    <cell>Negemo<\/cell>\n    <cell>Negative emotions<\/cell>\n    <cell>Emotion<\/cell>\n    <cell>2.25<\/cell>\n    <cell>3.66<\/cell>\n    <cell>9.99<\/cell>\n    <cell>.010<\/cell>\n    <cell cols=\"2\">13.26 -0.32 [-0.52, -0.12]<\/cell>\n  <\/row>\n  <row>\n    <cell/>\n    <cell/>\n    <cell>(negative)<\/cell>\n    <cell/>\n    <cell/>\n    <cell/>\n    <cell/>\n    <cell/>\n    <cell/>\n  <\/row>\n  <row>\n    <cell>Other<\/cell>\n    <cell>Total third person<\/cell>\n    <cell>Distance<\/cell>\n    <cell>1.41<\/cell>\n    <cell>2.25<\/cell>\n    <cell>9.88<\/cell>\n    <cell>.010<\/cell>\n    <cell cols=\"2\">12.58 -0.32 [-0.51, -0.12]<\/cell>\n  <\/row>\n  <row>\n    <cell>OtherP<\/cell>\n    <cell>Other punctuation<\/cell>\n    <cell/>\n    <cell>3.02<\/cell>\n    <cell>1.17<\/cell>\n    <cell>7.21<\/cell>\n    <cell>.026<\/cell>\n    <cell>3.53<\/cell>\n    <cell>0.27 [0.07, 0.47]<\/cell>\n  <\/row>\n  <row>\n    <cell>Period<\/cell>\n    <cell>Periods<\/cell>\n    <cell/>\n    <cell>6.24<\/cell>\n    <cell>7.99<\/cell>\n    <cell>9.23<\/cell>\n    <cell>.012<\/cell>\n    <cell cols=\"2\">9.24 -0.31 [-0.50, -0.11]<\/cell>\n  <\/row>\n  <row>\n    <cell>Posemo<\/cell>\n    <cell>Positive emotions<\/cell>\n    <cell>Emotion<\/cell>\n    <cell>7.43<\/cell>\n    <cell>4.04<\/cell>\n    <cell>23.66<\/cell>\n    <cell cols=\"2\">.000 &gt; 1,000<\/cell>\n    <cell>0.49 [0.29, 0.69]<\/cell>\n  <\/row>\n  <row>\n    <cell/>\n    <cell/>\n    <cell>(positive)<\/cell>\n    <cell/>\n    <cell/>\n    <cell/>\n    <cell/>\n    <cell/>\n    <cell/>\n  <\/row>\n  <row>\n    <cell>Relig<\/cell>\n    <cell>Religion<\/cell>\n    <cell/>\n    <cell>0.67<\/cell>\n    <cell>0.05<\/cell>\n    <cell>9.35<\/cell>\n    <cell>.012<\/cell>\n    <cell>9.81<\/cell>\n    <cell>0.31 [0.11, 0.51]<\/cell>\n  <\/row>\n  <row>\n    <cell>Reward<\/cell>\n    <cell>Reward focus<\/cell>\n    <cell/>\n    <cell>2.92<\/cell>\n    <cell>1.74<\/cell>\n    <cell>8.47<\/cell>\n    <cell>.016<\/cell>\n    <cell>6.45<\/cell>\n    <cell>0.29 [0.09, 0.49]<\/cell>\n  <\/row>\n  <row>\n    <cell>Sixltr<\/cell>\n    <cell>Six-letter words<\/cell>\n    <cell>Cognitive load<\/cell>\n    <cell>22.90<\/cell>\n    <cell>20.34<\/cell>\n    <cell>6.32<\/cell>\n    <cell>.037<\/cell>\n    <cell>2.32<\/cell>\n    <cell>0.25 [0.05, 0.45]<\/cell>\n  <\/row>\n  <row>\n    <cell>Tentat<\/cell>\n    <cell>Tentative<\/cell>\n    <cell>Certainty<\/cell>\n    <cell>1.20<\/cell>\n    <cell>2.16<\/cell>\n    <cell>18.87<\/cell>\n    <cell>.000<\/cell>\n    <cell cols=\"2\">872.37 -0.44 [-0.64, -0.24]<\/cell>\n  <\/row>\n  <row>\n    <cell>They<\/cell>\n    <cell>Third-person<\/cell>\n    <cell/>\n    <cell>0.73<\/cell>\n    <cell>1.52<\/cell>\n    <cell>16.23<\/cell>\n    <cell>.001<\/cell>\n    <cell cols=\"2\">252.35 -0.40 [-0.6, -0.21]<\/cell>\n  <\/row>\n  <row>\n    <cell/>\n    <cell>plural pronouns<\/cell>\n    <cell/>\n    <cell/>\n    <cell/>\n    <cell/>\n    <cell/>\n    <cell/>\n    <cell/>\n  <\/row>\n  <row>\n    <cell>Tone<\/cell>\n    <cell>Emotional tone<\/cell>\n    <cell/>\n    <cell>67.52<\/cell>\n    <cell>44.73<\/cell>\n    <cell>33.95<\/cell>\n    <cell cols=\"2\">.000 &gt; 1,000<\/cell>\n    <cell>0.59 [0.38, 0.79]<\/cell>\n  <\/row>\n  <row>\n    <cell>Verb<\/cell>\n    <cell>Common verbs<\/cell>\n    <cell/>\n    <cell>13.43<\/cell>\n    <cell>15.70<\/cell>\n    <cell>9.87<\/cell>\n    <cell>.010<\/cell>\n    <cell cols=\"2\">12.56 -0.32 [-0.51, -0.12]<\/cell>\n  <\/row>\n  <row>\n    <cell>WC<\/cell>\n    <cell>Word count<\/cell>\n    <cell>Cognitive load<\/cell>\n    <cell>31.22<\/cell>\n    <cell>39.57<\/cell>\n    <cell>37.03<\/cell>\n    <cell cols=\"3\">.000 &gt; 1,000 -0.61 [-0.81, -0.41]<\/cell>\n  <\/row>\n<\/table>",
+      "contents": null,
+      "page_number": null
+    },
+    {
+      "table_id": 2,
+      "section_id": 35,
+      "html": "<table>\n  <row>\n    <cell>LIWC variable<\/cell>\n    <cell>Variable name<\/cell>\n    <cell>Marginal effect<\/cell>\n    <cell>SE<\/cell>\n    <cell>z<\/cell>\n    <cell>p<\/cell>\n  <\/row>\n  <row>\n    <cell>Negate<\/cell>\n    <cell>Negation<\/cell>\n    <cell>.025<\/cell>\n    <cell>.009<\/cell>\n    <cell>2.925<\/cell>\n    <cell>.003<\/cell>\n  <\/row>\n  <row>\n    <cell>WC<\/cell>\n    <cell>Word count<\/cell>\n    <cell>.005<\/cell>\n    <cell>.001<\/cell>\n    <cell>3.346<\/cell>\n    <cell>.001<\/cell>\n  <\/row>\n  <row>\n    <cell>Tone<\/cell>\n    <cell>Emotional tone<\/cell>\n    <cell>-.002<\/cell>\n    <cell>.000<\/cell>\n    <cell>-3.565<\/cell>\n    <cell>.000<\/cell>\n  <\/row>\n  <row>\n    <cell>At<\/cell>\n    <cell>@<\/cell>\n    <cell>-.050<\/cell>\n    <cell>.019<\/cell>\n    <cell>-2.629<\/cell>\n    <cell>.009<\/cell>\n  <\/row>\n  <row>\n    <cell>Relig<\/cell>\n    <cell>Religion<\/cell>\n    <cell>-.067<\/cell>\n    <cell>.032<\/cell>\n    <cell>-2.121<\/cell>\n    <cell>.034<\/cell>\n  <\/row>\n  <row>\n    <cell>Compare<\/cell>\n    <cell>Comparison words<\/cell>\n    <cell>.013<\/cell>\n    <cell>.006<\/cell>\n    <cell>2.183<\/cell>\n    <cell>.029<\/cell>\n  <\/row>\n  <row>\n    <cell>Period<\/cell>\n    <cell>Periods<\/cell>\n    <cell>.008<\/cell>\n    <cell>.003<\/cell>\n    <cell>2.466<\/cell>\n    <cell>.014<\/cell>\n  <\/row>\n  <row>\n    <cell>Tentat<\/cell>\n    <cell>Tentative<\/cell>\n    <cell>.015<\/cell>\n    <cell>.008<\/cell>\n    <cell>1.887<\/cell>\n    <cell>.059<\/cell>\n  <\/row>\n  <row>\n    <cell>Money<\/cell>\n    <cell>Money<\/cell>\n    <cell>.011<\/cell>\n    <cell>.005<\/cell>\n    <cell>2.120<\/cell>\n    <cell>.034<\/cell>\n  <\/row>\n  <row>\n    <cell>Certain<\/cell>\n    <cell>Certainty<\/cell>\n    <cell>.012<\/cell>\n    <cell>.006<\/cell>\n    <cell>2.013<\/cell>\n    <cell>.044<\/cell>\n  <\/row>\n  <row>\n    <cell>They<\/cell>\n    <cell>Third-person plural<\/cell>\n    <cell>.016<\/cell>\n    <cell>.009<\/cell>\n    <cell>1.757<\/cell>\n    <cell>.079<\/cell>\n  <\/row>\n  <row>\n    <cell>Adverb<\/cell>\n    <cell>Adverbs<\/cell>\n    <cell>.011<\/cell>\n    <cell>.005<\/cell>\n    <cell>2.181<\/cell>\n    <cell>.029<\/cell>\n  <\/row>\n  <row>\n    <cell>Analytic<\/cell>\n    <cell>Analytic thinking<\/cell>\n    <cell>.002<\/cell>\n    <cell>.001<\/cell>\n    <cell>1.809<\/cell>\n    <cell>.070<\/cell>\n  <\/row>\n  <row>\n    <cell>Note:<\/cell>\n    <cell/>\n    <cell/>\n    <cell/>\n    <cell/>\n    <cell/>\n  <\/row>\n<\/table>",
+      "contents": null,
+      "page_number": null
+    },
+    {
+      "table_id": 3,
+      "section_id": 36,
+      "html": "<table>\n  <row>\n    <cell>Data set<\/cell>\n    <cell/>\n    <cell>95% CI for<\/cell>\n    <cell/>\n    <cell>False-<\/cell>\n    <cell/>\n    <cell/>\n    <cell/>\n    <cell>95% CI for<\/cell>\n  <\/row>\n  <row>\n    <cell>and cutoff<\/cell>\n    <cell>Accuracy<\/cell>\n    <cell>accuracy<\/cell>\n    <cell>Hit rate<\/cell>\n    <cell>alarm rate<\/cell>\n    <cell>Precision<\/cell>\n    <cell>F1<\/cell>\n    <cell>AUC<\/cell>\n    <cell>AUC<\/cell>\n  <\/row>\n  <row>\n    <cell>Data Set 1<\/cell>\n    <cell/>\n    <cell/>\n    <cell/>\n    <cell/>\n    <cell/>\n    <cell/>\n    <cell/>\n    <cell/>\n  <\/row>\n  <row>\n    <cell>50.00%<\/cell>\n    <cell>76.76%<\/cell>\n    <cell>[72.5, 80.4]<\/cell>\n    <cell>49.30%<\/cell>\n    <cell>11.31%<\/cell>\n    <cell>65.42%<\/cell>\n    <cell>0.562<\/cell>\n    <cell>.822<\/cell>\n    <cell>[.784, .860]<\/cell>\n  <\/row>\n  <row>\n    <cell>30.28%<\/cell>\n    <cell>72.92%<\/cell>\n    <cell>[70.8, 75.1]<\/cell>\n    <cell>79.58%<\/cell>\n    <cell>29.97%<\/cell>\n    <cell>53.55%<\/cell>\n    <cell>0.640<\/cell>\n    <cell>.822<\/cell>\n    <cell>[.784, .860]<\/cell>\n  <\/row>\n  <row>\n    <cell>Data Set 2<\/cell>\n    <cell/>\n    <cell/>\n    <cell/>\n    <cell/>\n    <cell/>\n    <cell/>\n    <cell/>\n    <cell/>\n  <\/row>\n  <row>\n    <cell>50.00%<\/cell>\n    <cell>77.69%<\/cell>\n    <cell>[75.2, 80.0]<\/cell>\n    <cell>37.84%<\/cell>\n    <cell>10.46%<\/cell>\n    <cell>51.85%<\/cell>\n    <cell>0.438<\/cell>\n    <cell>.788<\/cell>\n    <cell>[.745, .832]<\/cell>\n  <\/row>\n  <row>\n    <cell>30.28%<\/cell>\n    <cell>73.76%<\/cell>\n    <cell>[70.7, 76.7]<\/cell>\n    <cell>68.47%<\/cell>\n    <cell>24.66%<\/cell>\n    <cell>45.24%<\/cell>\n    <cell>0.545<\/cell>\n    <cell>.788<\/cell>\n    <cell>[.745, .832]<\/cell>\n  <\/row>\n<\/table>",
+      "contents": null,
+      "page_number": null
+    },
+    {
+      "table_id": 4,
+      "section_id": 37,
+      "html": "<table>\n  <row>\n    <cell>Test set<\/cell>\n    <cell>Accuracy AUC<\/cell>\n    <cell>74% .788<\/cell>\n    <cell/>\n    <cell/>\n    <cell/>\n    <cell>72% .771<\/cell>\n    <cell/>\n    <cell/>\n    <cell/>\n    <cell>69% .710<\/cell>\n    <cell/>\n    <cell/>\n    <cell/>\n    <cell/>\n    <cell>69% .705<\/cell>\n    <cell/>\n    <cell/>\n    <cell>69% .698<\/cell>\n    <cell/>\n    <cell/>\n    <cell/>\n    <cell/>\n    <cell>69% .691<\/cell>\n    <cell/>\n    <cell/>\n    <cell>69% .677<\/cell>\n    <cell/>\n    <cell/>\n    <cell/>\n    <cell>69% .670<\/cell>\n    <cell/>\n    <cell/>\n    <cell/>\n    <cell>68% .677<\/cell>\n    <cell>68% .672<\/cell>\n    <cell>(continued)<\/cell>\n  <\/row>\n  <row>\n    <cell>Training set<\/cell>\n    <cell>Accuracy AUC<\/cell>\n    <cell>73% .822<\/cell>\n    <cell/>\n    <cell/>\n    <cell/>\n    <cell>73% .816<\/cell>\n    <cell/>\n    <cell/>\n    <cell/>\n    <cell>68% .786<\/cell>\n    <cell/>\n    <cell/>\n    <cell/>\n    <cell/>\n    <cell>68% .758<\/cell>\n    <cell/>\n    <cell/>\n    <cell>71% .785<\/cell>\n    <cell/>\n    <cell/>\n    <cell/>\n    <cell/>\n    <cell>70% .767<\/cell>\n    <cell/>\n    <cell/>\n    <cell>66% .741<\/cell>\n    <cell/>\n    <cell/>\n    <cell/>\n    <cell>70% .768<\/cell>\n    <cell/>\n    <cell/>\n    <cell/>\n    <cell>68% .754<\/cell>\n    <cell>69% .726<\/cell>\n  <\/row>\n  <row>\n    <cell/>\n    <cell>Origin LIWC variable<\/cell>\n    <cell>Data driven WC + tone + adverb + negate<\/cell>\n    <cell>+ compare + tentat +<\/cell>\n    <cell>money + relig + period +<\/cell>\n    <cell>at + excl<\/cell>\n    <cell>Data driven WC + tone + adverb + negate<\/cell>\n    <cell>+ compare + tentat +<\/cell>\n    <cell>money + relig + period +<\/cell>\n    <cell>excl<\/cell>\n    <cell>Theoretical WC + i + we + you + posemo<\/cell>\n    <cell>+ negemo + insight + cause<\/cell>\n    <cell>+ discrep + tentat + certain<\/cell>\n    <cell>+ inhib + incl + excl +<\/cell>\n    <cell>social + negate<\/cell>\n    <cell>Theoretical/ WC + see + posemo + negate<\/cell>\n    <cell>data + tentat + motion + time<\/cell>\n    <cell>driven<\/cell>\n    <cell>Theoretical WC + i + we + you + shehe<\/cell>\n    <cell>+ they + see + hear + feel<\/cell>\n    <cell>+ posemo + negemo +<\/cell>\n    <cell>motion + negate + excl +<\/cell>\n    <cell>tentat + time<\/cell>\n    <cell>Theoretical WC + i + we + shehe + they<\/cell>\n    <cell>+ negate + negemo<\/cell>\n    <cell/>\n    <cell>Theoretical WC + dic + sixltr + pronoun +<\/cell>\n    <cell>i + self + other + negate +<\/cell>\n    <cell>article + prep<\/cell>\n    <cell/>\n    <cell>Theoretical WC + qmark + WPS + i + you<\/cell>\n    <cell>+ shehe + they + negemo<\/cell>\n    <cell>+ negate + excl + cause +<\/cell>\n    <cell>senses<\/cell>\n    <cell>Theoretical/ WC + i + negate + negemo<\/cell>\n    <cell>data<\/cell>\n    <cell>driven<\/cell>\n    <cell>Theoretical i + negate + negemo<\/cell>\n  <\/row>\n  <row>\n    <cell/>\n    <cell>Model name<\/cell>\n    <cell>Personalized<\/cell>\n    <cell/>\n    <cell/>\n    <cell/>\n    <cell>Personalized<\/cell>\n    <cell>without At<\/cell>\n    <cell/>\n    <cell/>\n    <cell>Full<\/cell>\n    <cell/>\n    <cell/>\n    <cell/>\n    <cell/>\n    <cell>Backward<\/cell>\n    <cell/>\n    <cell/>\n    <cell>Full<\/cell>\n    <cell/>\n    <cell/>\n    <cell/>\n    <cell/>\n    <cell/>\n    <cell/>\n    <cell/>\n    <cell>Linguistic<\/cell>\n    <cell>dimensions<\/cell>\n    <cell/>\n    <cell/>\n    <cell>Full<\/cell>\n    <cell/>\n    <cell/>\n    <cell/>\n    <cell>Full<\/cell>\n    <cell>Emotional<\/cell>\n  <\/row>\n  <row>\n    <cell>Communication<\/cell>\n    <cell>Article Context channel<\/cell>\n    <cell>Current article Political Twitter<\/cell>\n    <cell/>\n    <cell/>\n    <cell/>\n    <cell>Current article Political Twitter<\/cell>\n    <cell/>\n    <cell/>\n    <cell/>\n    <cell>Ho et al., 2016 Personal Dyadic chat<\/cell>\n    <cell>experiences messages<\/cell>\n    <cell/>\n    <cell/>\n    <cell/>\n    <cell>Matsumoto &amp; Mock crime Written<\/cell>\n    <cell>Hwang, 2015 statements vs.<\/cell>\n    <cell>interviews<\/cell>\n    <cell>Matsumoto &amp; Mock crime Written<\/cell>\n    <cell>Hwang, 2015 statements vs.<\/cell>\n    <cell>interviews<\/cell>\n    <cell/>\n    <cell/>\n    <cell>Braun et al., Political Scripted vs.<\/cell>\n    <cell>2015 interactive<\/cell>\n    <cell>messages<\/cell>\n    <cell>Newman et al., Mock crime Videotaped<\/cell>\n    <cell>2003 Opinions vs. typed vs.<\/cell>\n    <cell>handwritten<\/cell>\n    <cell>statements<\/cell>\n    <cell>Hancock et al., Personal Dyadic chat<\/cell>\n    <cell>2007 experiences messages<\/cell>\n    <cell/>\n    <cell/>\n    <cell>Toma &amp; Online dating Profiles<\/cell>\n    <cell>Hancock,<\/cell>\n    <cell>2012<\/cell>\n    <cell>Toma &amp; Online dating Profiles<\/cell>\n    <cell>Hancock,<\/cell>\n    <cell>2012<\/cell>\n  <\/row>\n  <row>\n    <cell/>\n    <cell/>\n    <cell>1<\/cell>\n    <cell/>\n    <cell/>\n    <cell/>\n    <cell>2<\/cell>\n    <cell/>\n    <cell/>\n    <cell/>\n    <cell>3<\/cell>\n    <cell/>\n    <cell/>\n    <cell/>\n    <cell/>\n    <cell>4<\/cell>\n    <cell/>\n    <cell/>\n    <cell>5<\/cell>\n    <cell/>\n    <cell/>\n    <cell/>\n    <cell/>\n    <cell>6<\/cell>\n    <cell/>\n    <cell/>\n    <cell>7<\/cell>\n    <cell/>\n    <cell/>\n    <cell/>\n    <cell>8<\/cell>\n    <cell/>\n    <cell/>\n    <cell/>\n    <cell>9<\/cell>\n    <cell>10<\/cell>\n  <\/row>\n<\/table>",
+      "contents": null,
+      "page_number": null
+    }
+  ],
+  "eq": [
+    {
+      "text_id": 90,
+      "grp_id": 1,
+      "lhs": "V",
+      "comp": "=",
+      "rhs": ".37"
+    },
+    {
+      "text_id": 90,
+      "grp_id": 1,
+      "lhs": "F(103, 365)",
+      "comp": "=",
+      "rhs": "2.10"
+    },
+    {
+      "text_id": 90,
+      "grp_id": 1,
+      "lhs": "p",
+      "comp": "<",
+      "rhs": ".001"
+    },
+    {
+      "text_id": 90,
+      "grp_id": 1,
+      "lhs": "2",
+      "comp": "=",
+      "rhs": ".37"
+    },
+    {
+      "text_id": 235,
+      "grp_id": 2,
+      "lhs": "AUC",
+      "comp": "=",
+      "rhs": ".816"
+    },
+    {
+      "text_id": 235,
+      "grp_id": 2,
+      "lhs": "AUC",
+      "comp": "=",
+      "rhs": ".771"
+    },
+    {
+      "text_id": 320,
+      "grp_id": 3,
+      "lhs": "likelihood",
+      "comp": "=",
+      "rhs": "-216.75"
+    },
+    {
+      "text_id": 320,
+      "grp_id": 3,
+      "lhs": "N",
+      "comp": "=",
+      "rhs": "469"
+    }
+  ],
+  "bib_match": [
+    {
+      "bib_id": 0,
+      "service": "crossref",
+      "service_id": null,
+      "score": 145.3987,
+      "bib_type": "article",
+      "doi": "10.1016/j.paid.2016.11.018",
+      "title": "Explaining Donald Trump via communication style: Grandiosity, informality, and dynamism",
+      "authors": [
+        {
+          "given": "Sara",
+          "family": "Ahmadian"
+        },
+        {
+          "given": "Sara",
+          "family": "Azarshahi"
+        },
+        {
+          "given": "Delroy L.",
+          "family": "Paulhus"
+        }
+      ],
+      "editors": [],
+      "publisher": "Elsevier BV",
+      "year": 2017,
+      "date": null,
+      "container": "Personality and Individual Differences",
+      "volume": "107",
+      "issue": null,
+      "first_page": "49",
+      "last_page": "53",
+      "edition": null,
+      "version": null,
+      "url": "https://doi.org/10.1016/j.paid.2016.11.018"
+    },
+    {
+      "bib_id": 1,
+      "service": "crossref",
+      "service_id": null,
+      "score": 80.919,
+      "bib_type": "techreport",
+      "doi": "10.3386/w23089",
+      "title": "Social Media and Fake News in the 2016 Election",
+      "authors": [
+        {
+          "given": "Hunt",
+          "family": "Allcott"
+        },
+        {
+          "given": "Matthew",
+          "family": "Gentzkow"
+        }
+      ],
+      "editors": [],
+      "publisher": "National Bureau of Economic Research",
+      "year": 2017,
+      "date": null,
+      "container": null,
+      "volume": null,
+      "issue": null,
+      "first_page": null,
+      "last_page": null,
+      "edition": null,
+      "version": null,
+      "url": "https://doi.org/10.3386/w23089"
+    },
+    {
+      "bib_id": 4,
+      "service": "crossref",
+      "service_id": null,
+      "score": 96.2558,
+      "bib_type": "article",
+      "doi": "10.1111/j.2517-6161.1995.tb02031.x",
+      "title": "Controlling the False Discovery Rate: A Practical and Powerful Approach to Multiple Testing",
+      "authors": [
+        {
+          "given": "Yoav",
+          "family": "Benjamini"
+        },
+        {
+          "given": "Yosef",
+          "family": "Hochberg"
+        }
+      ],
+      "editors": [],
+      "publisher": "Oxford University Press (OUP)",
+      "year": 1995,
+      "date": null,
+      "container": "Journal of the Royal Statistical Society Series B: Statistical Methodology",
+      "volume": "57",
+      "issue": "1",
+      "first_page": "289",
+      "last_page": "300",
+      "edition": null,
+      "version": null,
+      "url": "https://doi.org/10.1111/j.2517-6161.1995.tb02031.x"
+    },
+    {
+      "bib_id": 5,
+      "service": "crossref",
+      "service_id": null,
+      "score": 75.2303,
+      "bib_type": "article",
+      "doi": "10.1111/j.1745-6924.2009.01140.x",
+      "title": "How to Tell If a Particular Memory Is True or False",
+      "authors": [
+        {
+          "given": "Daniel M.",
+          "family": "Bernstein"
+        },
+        {
+          "given": "Elizabeth F.",
+          "family": "Loftus"
+        }
+      ],
+      "editors": [],
+      "publisher": "SAGE Publications",
+      "year": 2009,
+      "date": null,
+      "container": "Perspectives on Psychological Science",
+      "volume": "4",
+      "issue": "4",
+      "first_page": "370",
+      "last_page": "374",
+      "edition": null,
+      "version": null,
+      "url": "https://doi.org/10.1111/j.1745-6924.2009.01140.x"
+    },
+    {
+      "bib_id": 6,
+      "service": "crossref",
+      "service_id": null,
+      "score": 150.5418,
+      "bib_type": "article",
+      "doi": "10.1002/acp.3376",
+      "title": "‘Lyin' Ted’, ‘Crooked Hillary’, and ‘Deceptive Donald’: Language of Lies in the 2016 US Presidential Debates",
+      "authors": [
+        {
+          "given": "Gary D.",
+          "family": "Bond"
+        },
+        {
+          "given": "Rebecka D.",
+          "family": "Holman"
+        },
+        {
+          "given": "Jamie‐Ann L.",
+          "family": "Eggert"
+        },
+        {
+          "given": "Lassiter F.",
+          "family": "Speller"
+        },
+        {
+          "given": "Olivia N.",
+          "family": "Garcia"
+        },
+        {
+          "given": "Sasha C.",
+          "family": "Mejia"
+        },
+        {
+          "given": "Kohlby W.",
+          "family": "Mcinnes"
+        },
+        {
+          "given": "Eleny C.",
+          "family": "Ceniceros"
+        },
+        {
+          "given": "Rebecca",
+          "family": "Rustige"
+        }
+      ],
+      "editors": [],
+      "publisher": "Wiley",
+      "year": 2017,
+      "date": null,
+      "container": "Applied Cognitive Psychology",
+      "volume": "31",
+      "issue": "6",
+      "first_page": "668",
+      "last_page": "677",
+      "edition": null,
+      "version": null,
+      "url": "https://doi.org/10.1002/acp.3376"
+    },
+    {
+      "bib_id": 7,
+      "service": "crossref",
+      "service_id": null,
+      "score": 108.7231,
+      "bib_type": "article",
+      "doi": "10.1002/acp.1087",
+      "title": "Language of lies in prison: linguistic classification of prisoners' truthful and deceptive natural language",
+      "authors": [
+        {
+          "given": "Gary D.",
+          "family": "Bond"
+        },
+        {
+          "given": "Adrienne Y.",
+          "family": "Lee"
+        }
+      ],
+      "editors": [],
+      "publisher": "Wiley",
+      "year": 2005,
+      "date": null,
+      "container": "Applied Cognitive Psychology",
+      "volume": "19",
+      "issue": "3",
+      "first_page": "313",
+      "last_page": "329",
+      "edition": null,
+      "version": null,
+      "url": "https://doi.org/10.1002/acp.1087"
+    },
+    {
+      "bib_id": 8,
+      "service": "crossref",
+      "service_id": null,
+      "score": 128.4698,
+      "bib_type": "article",
+      "doi": "10.1080/0163853x.2014.942833",
+      "title": "His Lips Are Moving: Pinocchio Effect and Other Lexical Indicators of Political Deceptions",
+      "authors": [
+        {
+          "given": "Michael T.",
+          "family": "Braun"
+        },
+        {
+          "given": "Lyn M.",
+          "family": "Van Swol"
+        },
+        {
+          "given": "Lisa",
+          "family": "Vang"
+        }
+      ],
+      "editors": [],
+      "publisher": "Informa UK Limited",
+      "year": 2014,
+      "date": null,
+      "container": "Discourse Processes",
+      "volume": "52",
+      "issue": "1",
+      "first_page": "1",
+      "last_page": "20",
+      "edition": null,
+      "version": null,
+      "url": "https://doi.org/10.1080/0163853x.2014.942833"
+    },
+    {
+      "bib_id": 9,
+      "service": "crossref",
+      "service_id": null,
+      "score": 95.814,
+      "bib_type": "article",
+      "doi": "10.1037/0033-2909.129.1.74",
+      "title": "Cues to deception.",
+      "authors": [
+        {
+          "given": "Bella M.",
+          "family": "DePaulo"
+        },
+        {
+          "given": "James J.",
+          "family": "Lindsay"
+        },
+        {
+          "given": "Brian E.",
+          "family": "Malone"
+        },
+        {
+          "given": "Laura",
+          "family": "Muhlenbruck"
+        },
+        {
+          "given": "Kelly",
+          "family": "Charlton"
+        },
+        {
+          "given": "Harris",
+          "family": "Cooper"
+        }
+      ],
+      "editors": [],
+      "publisher": "American Psychological Association (APA)",
+      "year": 2003,
+      "date": null,
+      "container": "Psychological Bulletin",
+      "volume": "129",
+      "issue": "1",
+      "first_page": "74",
+      "last_page": "118",
+      "edition": null,
+      "version": null,
+      "url": "https://doi.org/10.1037/0033-2909.129.1.74"
+    },
+    {
+      "bib_id": 12,
+      "service": "crossref",
+      "service_id": null,
+      "score": 55.6678,
+      "bib_type": "inproceedings",
+      "doi": "10.1109/hicss.2005.578",
+      "title": "Task Performance Under Deceptive Conditions: Using Military Scenarios in Deception Detection Research",
+      "authors": [
+        {
+          "given": "D.P.",
+          "family": "Biros"
+        },
+        {
+          "given": "M.C.",
+          "family": "Hass"
+        },
+        {
+          "given": "K.",
+          "family": "Wiers"
+        },
+        {
+          "given": "D.",
+          "family": "Twitchell"
+        },
+        {
+          "given": "M.",
+          "family": "Adkins"
+        },
+        {
+          "given": "J.K.",
+          "family": "Burgoon"
+        },
+        {
+          "given": "J.F.",
+          "family": "Nunamaker"
+        }
+      ],
+      "editors": [],
+      "publisher": "IEEE",
+      "year": null,
+      "date": null,
+      "container": "Proceedings of the 38th Annual Hawaii International Conference on System Sciences",
+      "volume": null,
+      "issue": null,
+      "first_page": "22b",
+      "last_page": "22b",
+      "edition": null,
+      "version": null,
+      "url": "https://doi.org/10.1109/hicss.2005.578"
+    },
+    {
+      "bib_id": 13,
+      "service": "crossref",
+      "service_id": null,
+      "score": 80.7908,
+      "bib_type": "article",
+      "doi": "10.1080/08874417.2015.11645757",
+      "title": "Real-World Deception and the Impact of Severity",
+      "authors": [
+        {
+          "given": "Christie M.",
+          "family": "Fuller"
+        },
+        {
+          "given": "David P.",
+          "family": "Biros"
+        },
+        {
+          "given": "Douglas P.",
+          "family": "Twitchell"
+        },
+        {
+          "given": "Rick L.",
+          "family": "Wilson"
+        }
+      ],
+      "editors": [],
+      "publisher": "Informa UK Limited",
+      "year": 2015,
+      "date": null,
+      "container": "Journal of Computer Information Systems",
+      "volume": "55",
+      "issue": "2",
+      "first_page": "59",
+      "last_page": "67",
+      "edition": null,
+      "version": null,
+      "url": "https://doi.org/10.1080/08874417.2015.11645757"
+    },
+    {
+      "bib_id": 15,
+      "service": "crossref",
+      "service_id": null,
+      "score": 112.4313,
+      "bib_type": "article",
+      "doi": "10.1080/01638530701739181",
+      "title": "On Lying and Being Lied To: A Linguistic Analysis of Deception in Computer-Mediated Communication",
+      "authors": [
+        {
+          "given": "Jeffrey T.",
+          "family": "Hancock"
+        },
+        {
+          "given": "Lauren E.",
+          "family": "Curry"
+        },
+        {
+          "given": "Saurabh",
+          "family": "Goorha"
+        },
+        {
+          "given": "Michael",
+          "family": "Woodworth"
+        }
+      ],
+      "editors": [],
+      "publisher": "Informa UK Limited",
+      "year": 2007,
+      "date": null,
+      "container": "Discourse Processes",
+      "volume": "45",
+      "issue": "1",
+      "first_page": "1",
+      "last_page": "23",
+      "edition": null,
+      "version": null,
+      "url": "https://doi.org/10.1080/01638530701739181"
+    },
+    {
+      "bib_id": 17,
+      "service": "crossref",
+      "service_id": null,
+      "score": 106.1274,
+      "bib_type": "article",
+      "doi": "10.1177/1088868314556539",
+      "title": "Are Computers Effective Lie Detectors? A Meta-Analysis of Linguistic Cues to Deception",
+      "authors": [
+        {
+          "given": "Valerie",
+          "family": "Hauch"
+        },
+        {
+          "given": "Iris",
+          "family": "Blandón-Gitlin"
+        },
+        {
+          "given": "Jaume",
+          "family": "Masip"
+        },
+        {
+          "given": "Siegfried L.",
+          "family": "Sporer"
+        }
+      ],
+      "editors": [],
+      "publisher": "SAGE Publications",
+      "year": 2014,
+      "date": null,
+      "container": "Personality and Social Psychology Review",
+      "volume": "19",
+      "issue": "4",
+      "first_page": "307",
+      "last_page": "342",
+      "edition": null,
+      "version": null,
+      "url": "https://doi.org/10.1177/1088868314556539"
+    },
+    {
+      "bib_id": 19,
+      "service": "crossref",
+      "service_id": null,
+      "score": 97.2483,
+      "bib_type": "article",
+      "doi": "10.1080/07421222.2016.1205924",
+      "title": "Computer-Mediated Deception: Strategies Revealed by Language-Action Cues in Spontaneous Communication",
+      "authors": [
+        {
+          "given": "Shuyuan Mary",
+          "family": "Ho"
+        },
+        {
+          "given": "Jeffrey T.",
+          "family": "Hancock"
+        },
+        {
+          "given": "Cheryl",
+          "family": "Booth"
+        },
+        {
+          "given": "Xiuwen",
+          "family": "Liu"
+        }
+      ],
+      "editors": [],
+      "publisher": "Informa UK Limited",
+      "year": 2016,
+      "date": null,
+      "container": "Journal of Management Information Systems",
+      "volume": "33",
+      "issue": "2",
+      "first_page": "393",
+      "last_page": "420",
+      "edition": null,
+      "version": null,
+      "url": "https://doi.org/10.1080/07421222.2016.1205924"
+    },
+    {
+      "bib_id": 20,
+      "service": "crossref",
+      "service_id": null,
+      "score": 116.0799,
+      "bib_type": "misc",
+      "doi": "10.31219/osf.io/hk6yf",
+      "title": "Preprint: Using named entities for computer-automated verbal deception detection",
+      "authors": [
+        {
+          "given": "Bennett",
+          "family": "Kleinberg"
+        },
+        {
+          "given": "Maximilian",
+          "family": "Mozes"
+        },
+        {
+          "given": "Arnoud",
+          "family": "Arntz"
+        },
+        {
+          "given": "Bruno",
+          "family": "Verschuere"
+        }
+      ],
+      "editors": [],
+      "publisher": "Center for Open Science",
+      "year": 2017,
+      "date": null,
+      "container": null,
+      "volume": null,
+      "issue": null,
+      "first_page": null,
+      "last_page": null,
+      "edition": null,
+      "version": null,
+      "url": "https://doi.org/10.31219/osf.io/hk6yf"
+    },
+    {
+      "bib_id": 21,
+      "service": "crossref",
+      "service_id": null,
+      "score": 145.5115,
+      "bib_type": "article",
+      "doi": "10.1002/acp.3407",
+      "title": "Automated verbal credibility assessment of intentions: The model statement technique and predictive modeling",
+      "authors": [
+        {
+          "given": "Bennett",
+          "family": "Kleinberg"
+        },
+        {
+          "given": "Yaloe",
+          "family": "van der Toolen"
+        },
+        {
+          "given": "Aldert",
+          "family": "Vrij"
+        },
+        {
+          "given": "Arnoud",
+          "family": "Arntz"
+        },
+        {
+          "given": "Bruno",
+          "family": "Verschuere"
+        }
+      ],
+      "editors": [],
+      "publisher": "Wiley",
+      "year": 2018,
+      "date": null,
+      "container": "Applied Cognitive Psychology",
+      "volume": "32",
+      "issue": "3",
+      "first_page": "354",
+      "last_page": "366",
+      "edition": null,
+      "version": null,
+      "url": "https://doi.org/10.1002/acp.3407"
+    },
+    {
+      "bib_id": 22,
+      "service": "crossref",
+      "service_id": null,
+      "score": 68.6768,
+      "bib_type": "article",
+      "doi": "10.1080/19312458.2017.1411471",
+      "title": "Ecological Validity and Deception Detection Research Design",
+      "authors": [
+        {
+          "given": "Timothy R",
+          "family": "Levine"
+        }
+      ],
+      "editors": [],
+      "publisher": "Informa UK Limited",
+      "year": 2017,
+      "date": null,
+      "container": "Communication Methods and Measures",
+      "volume": "12",
+      "issue": "1",
+      "first_page": "45",
+      "last_page": "54",
+      "edition": null,
+      "version": null,
+      "url": "https://doi.org/10.1080/19312458.2017.1411471"
+    },
+    {
+      "bib_id": 24,
+      "service": "crossref",
+      "service_id": null,
+      "score": 89.8945,
+      "bib_type": "inproceedings",
+      "doi": "10.18653/v1/n18-1176",
+      "title": "Linguistic Cues to Deception and Perceived Deception in Interview Dialogues",
+      "authors": [
+        {
+          "given": "Sarah Ita",
+          "family": "Levitan"
+        },
+        {
+          "given": "Angel",
+          "family": "Maredia"
+        },
+        {
+          "given": "Julia",
+          "family": "Hirschberg"
+        }
+      ],
+      "editors": [],
+      "publisher": "Association for Computational Linguistics",
+      "year": 2018,
+      "date": null,
+      "container": "Proceedings of the 2018 Conference of the North American Chapter of\n          the Association for Computational Linguistics: Human Language\n          Technologies, Volume 1 (Long Papers)",
+      "volume": null,
+      "issue": null,
+      "first_page": "1941",
+      "last_page": "1950",
+      "edition": null,
+      "version": null,
+      "url": "https://doi.org/10.18653/v1/n18-1176"
+    },
+    {
+      "bib_id": 25,
+      "service": "crossref",
+      "service_id": null,
+      "score": 109.0218,
+      "bib_type": "article",
+      "doi": "10.1080/1068316x.2019.1652751",
+      "title": "When context matters: how false, truthful, and genre-related communication styles are revealed in language",
+      "authors": [
+        {
+          "given": "David M.",
+          "family": "Markowitz"
+        },
+        {
+          "given": "Darrin J.",
+          "family": "Griffin"
+        }
+      ],
+      "editors": [],
+      "publisher": "Informa UK Limited",
+      "year": 2019,
+      "date": null,
+      "container": "Psychology, Crime &amp; Law",
+      "volume": "26",
+      "issue": "3",
+      "first_page": "287",
+      "last_page": "310",
+      "edition": null,
+      "version": null,
+      "url": "https://doi.org/10.1080/1068316x.2019.1652751"
+    },
+    {
+      "bib_id": 26,
+      "service": "crossref",
+      "service_id": null,
+      "score": 69.9542,
+      "bib_type": "article",
+      "doi": "10.1177/0261927x15614605",
+      "title": "Linguistic Obfuscation in Fraudulent Science",
+      "authors": [
+        {
+          "given": "David M.",
+          "family": "Markowitz"
+        },
+        {
+          "given": "Jeffrey T.",
+          "family": "Hancock"
+        }
+      ],
+      "editors": [],
+      "publisher": "SAGE Publications",
+      "year": 2016,
+      "date": null,
+      "container": "Journal of Language and Social Psychology",
+      "volume": "35",
+      "issue": "4",
+      "first_page": "435",
+      "last_page": "445",
+      "edition": null,
+      "version": null,
+      "url": "https://doi.org/10.1177/0261927x15614605"
+    },
+    {
+      "bib_id": 27,
+      "service": "crossref",
+      "service_id": null,
+      "score": 86.5805,
+      "bib_type": "incollection",
+      "doi": "10.1007/978-3-319-96334-1_10",
+      "title": "Deception and Language: The Contextual Organization of Language and Deception (COLD) Framework",
+      "authors": [
+        {
+          "given": "David M.",
+          "family": "Markowitz"
+        },
+        {
+          "given": "Jeffrey T.",
+          "family": "Hancock"
+        }
+      ],
+      "editors": [],
+      "publisher": "Springer International Publishing",
+      "year": 2019,
+      "date": null,
+      "container": "The Palgrave Handbook of Deceptive Communication",
+      "volume": null,
+      "issue": null,
+      "first_page": "193",
+      "last_page": "212",
+      "edition": null,
+      "version": null,
+      "url": "https://doi.org/10.1007/978-3-319-96334-1_10"
+    },
+    {
+      "bib_id": 28,
+      "service": "crossref",
+      "service_id": null,
+      "score": 139.5873,
+      "bib_type": "article",
+      "doi": "10.1002/jip.1423",
+      "title": "Differences in Word Usage by Truth Tellers and Liars in Written Statements and an Investigative Interview After a Mock Crime",
+      "authors": [
+        {
+          "given": "David",
+          "family": "Matsumoto"
+        },
+        {
+          "given": "Hyisung C.",
+          "family": "Hwang"
+        }
+      ],
+      "editors": [],
+      "publisher": "Wiley",
+      "year": 2014,
+      "date": null,
+      "container": "Journal of Investigative Psychology and Offender Profiling",
+      "volume": "12",
+      "issue": "2",
+      "first_page": "199",
+      "last_page": "216",
+      "edition": null,
+      "version": null,
+      "url": "https://doi.org/10.1002/jip.1423"
+    },
+    {
+      "bib_id": 29,
+      "service": "crossref",
+      "service_id": null,
+      "score": 99.8369,
+      "bib_type": "article",
+      "doi": "10.1111/amet.12475",
+      "title": "An anthropology of lying: Trump and the political sociality of moral outrage",
+      "authors": [
+        {
+          "given": "CAROLE",
+          "family": "McGRANAHAN"
+        }
+      ],
+      "editors": [],
+      "publisher": "Wiley",
+      "year": 2017,
+      "date": null,
+      "container": "American Ethnologist",
+      "volume": "44",
+      "issue": "2",
+      "first_page": "243",
+      "last_page": "248",
+      "edition": null,
+      "version": null,
+      "url": "https://doi.org/10.1111/amet.12475"
+    },
+    {
+      "bib_id": 30,
+      "service": "crossref",
+      "service_id": null,
+      "score": 79.5852,
+      "bib_type": "inproceedings",
+      "doi": "10.3115/1667583.1667679",
+      "title": "The lie detector",
+      "authors": [
+        {
+          "given": "Rada",
+          "family": "Mihalcea"
+        },
+        {
+          "given": "Carlo",
+          "family": "Strapparava"
+        }
+      ],
+      "editors": [],
+      "publisher": "Association for Computational Linguistics",
+      "year": 2009,
+      "date": null,
+      "container": "Proceedings of the ACL-IJCNLP 2009 Conference Short Papers on - ACL-IJCNLP '09",
+      "volume": null,
+      "issue": null,
+      "first_page": "309",
+      "last_page": null,
+      "edition": null,
+      "version": null,
+      "url": "https://doi.org/10.3115/1667583.1667679"
+    },
+    {
+      "bib_id": 32,
+      "service": "crossref",
+      "service_id": null,
+      "score": 101.0539,
+      "bib_type": "article",
+      "doi": "10.1177/0146167203029005010",
+      "title": "Lying Words: Predicting Deception from Linguistic Styles",
+      "authors": [
+        {
+          "given": "Matthew L.",
+          "family": "Newman"
+        },
+        {
+          "given": "James W.",
+          "family": "Pennebaker"
+        },
+        {
+          "given": "Diane S.",
+          "family": "Berry"
+        },
+        {
+          "given": "Jane M.",
+          "family": "Richards"
+        }
+      ],
+      "editors": [],
+      "publisher": "SAGE Publications",
+      "year": 2003,
+      "date": null,
+      "container": "Personality and Social Psychology Bulletin",
+      "volume": "29",
+      "issue": "5",
+      "first_page": "665",
+      "last_page": "675",
+      "edition": null,
+      "version": null,
+      "url": "https://doi.org/10.1177/0146167203029005010"
+    },
+    {
+      "bib_id": 34,
+      "service": "crossref",
+      "service_id": null,
+      "score": 107.542,
+      "bib_type": "article",
+      "doi": "10.1037/lhb0000077",
+      "title": "Language style matching and police interrogation outcomes.",
+      "authors": [
+        {
+          "given": "Beth H.",
+          "family": "Richardson"
+        },
+        {
+          "given": "Paul J.",
+          "family": "Taylor"
+        },
+        {
+          "given": "Brent",
+          "family": "Snook"
+        },
+        {
+          "given": "Stacey M.",
+          "family": "Conchie"
+        },
+        {
+          "given": "Craig",
+          "family": "Bennell"
+        }
+      ],
+      "editors": [],
+      "publisher": "American Psychological Association (APA)",
+      "year": 2014,
+      "date": null,
+      "container": "Law and Human Behavior",
+      "volume": "38",
+      "issue": "4",
+      "first_page": "357",
+      "last_page": "366",
+      "edition": null,
+      "version": null,
+      "url": "https://doi.org/10.1037/lhb0000077"
+    },
+    {
+      "bib_id": 35,
+      "service": "crossref",
+      "service_id": null,
+      "score": 95.7457,
+      "bib_type": "article",
+      "doi": "10.1177/1461444818792425",
+      "title": "Deception in online dating: Significance and implications for the first offline date",
+      "authors": [
+        {
+          "given": "Liesel L",
+          "family": "Sharabi"
+        },
+        {
+          "given": "John P",
+          "family": "Caughlin"
+        }
+      ],
+      "editors": [],
+      "publisher": "SAGE Publications",
+      "year": 2018,
+      "date": null,
+      "container": "New Media &amp; Society",
+      "volume": "21",
+      "issue": "1",
+      "first_page": "229",
+      "last_page": "247",
+      "edition": null,
+      "version": null,
+      "url": "https://doi.org/10.1177/1461444818792425"
+    },
+    {
+      "bib_id": 36,
+      "service": "crossref",
+      "service_id": null,
+      "score": 140.7481,
+      "bib_type": "article",
+      "doi": "10.1177/0956797617741107",
+      "title": "After Aylan Kurdi: How Tweeting About Death, Threat, and Harm Predict Increased Expressions of Solidarity With Refugees Over Time",
+      "authors": [
+        {
+          "given": "Laura G. E.",
+          "family": "Smith"
+        },
+        {
+          "given": "Craig",
+          "family": "McGarty"
+        },
+        {
+          "given": "Emma F.",
+          "family": "Thomas"
+        }
+      ],
+      "editors": [],
+      "publisher": "SAGE Publications",
+      "year": 2018,
+      "date": null,
+      "container": "Psychological Science",
+      "volume": "29",
+      "issue": "4",
+      "first_page": "623",
+      "last_page": "634",
+      "edition": null,
+      "version": null,
+      "url": "https://doi.org/10.1177/0956797617741107"
+    },
+    {
+      "bib_id": 37,
+      "service": "crossref",
+      "service_id": null,
+      "score": 96.4338,
+      "bib_type": "article",
+      "doi": "10.1111/j.1460-2466.2011.01619.x",
+      "title": "What Lies Beneath: The Linguistic Traces of Deception in Online Dating Profiles",
+      "authors": [
+        {
+          "given": "Catalina L.",
+          "family": "Toma"
+        },
+        {
+          "given": "Jeffrey T.",
+          "family": "Hancock"
+        }
+      ],
+      "editors": [],
+      "publisher": "Oxford University Press (OUP)",
+      "year": 2012,
+      "date": null,
+      "container": "Journal of Communication",
+      "volume": "62",
+      "issue": "1",
+      "first_page": "78",
+      "last_page": "97",
+      "edition": null,
+      "version": null,
+      "url": "https://doi.org/10.1111/j.1460-2466.2011.01619.x"
+    },
+    {
+      "bib_id": 41,
+      "service": "crossref",
+      "service_id": null,
+      "score": 83.0661,
+      "bib_type": "article",
+      "doi": "10.1111/lcrp.12088",
+      "title": "A cognitive approach to lie detection: A meta‐analysis",
+      "authors": [
+        {
+          "given": "Aldert",
+          "family": "Vrij"
+        },
+        {
+          "given": "Ronald P.",
+          "family": "Fisher"
+        },
+        {
+          "given": "Hartmut",
+          "family": "Blank"
+        }
+      ],
+      "editors": [],
+      "publisher": "Wiley",
+      "year": 2015,
+      "date": null,
+      "container": "Legal and Criminological Psychology",
+      "volume": "22",
+      "issue": "1",
+      "first_page": "1",
+      "last_page": "21",
+      "edition": null,
+      "version": null,
+      "url": "https://doi.org/10.1111/lcrp.12088"
+    }
+  ]
+}

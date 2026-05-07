@@ -1,0 +1,5939 @@
+{
+  "paper_id": "09567976241279291",
+  "info": [
+    {
+      "title": "Cognitive Maps for a Non-Euclidean Environment: Path Integration and Spatial Memory on a Sphere",
+      "keywords": ["spherical geometry", "path integration", "Euclidean", "non-Euclidean", "cognitive map", "open data", "open materials", "preregistered"],
+      "doi": "10.1177/09567976241279291",
+      "file_hash": "9b966c3641b7c3e3",
+      "input_format": "TEI XML",
+      "file_name": "data-raw/psychsci/grobid_0.9.0-crf/09567976241279291.xml",
+      "bibr_version": "10.0",
+      "paper_type": "unknown",
+      "paper_type_confidence": 0,
+      "oecd_l1": null,
+      "oecd_l2": null,
+      "oecd_confidence": null
+    }
+  ],
+  "author": [
+    {
+      "author_id": 1,
+      "given": "Misun",
+      "family": "Kim",
+      "affiliation": "Max Planck Institute for Human Cognitive and Brain Sciences Leipzig Germany;",
+      "email": "misun.kim@ucl.ac.uk",
+      "corresponding": false,
+      "orcid": "",
+      "role": []
+    },
+    {
+      "author_id": 2,
+      "given": "Christian",
+      "family": "Doeller",
+      "affiliation": "Max Planck Institute for Human Cognitive and Brain Sciences Leipzig Germany;",
+      "email": "",
+      "corresponding": false,
+      "orcid": "",
+      "role": []
+    }
+  ],
+  "text": [
+    {
+      "text_id": 1,
+      "paragraph_id": 1,
+      "section_id": 0,
+      "text": "Humans build mental models of the world and utilize them for various cognitive tasks.",
+      "page_number": null
+    },
+    {
+      "text_id": 2,
+      "paragraph_id": 1,
+      "section_id": 0,
+      "text": "The exact form of cognitive maps is not fully understood, especially for novel and complex environments beyond the flat Euclidean environment.",
+      "page_number": null
+    },
+    {
+      "text_id": 3,
+      "paragraph_id": 1,
+      "section_id": 0,
+      "text": "To address this gap, we investigated path integration-a critical process underlying cognitive mapping-and spatialmemory capacity on the spherical (non-Euclidean) and planar (Euclidean) environments in young healthy adults (N = 20) using immersive virtual reality.",
+      "page_number": null
+    },
+    {
+      "text_id": 4,
+      "paragraph_id": 1,
+      "section_id": 0,
+      "text": "We observed a strong Euclidean bias during the path-integration task on the spherical surface, even among participants who possessed knowledge of non-Euclidean geometry.",
+      "page_number": null
+    },
+    {
+      "text_id": 5,
+      "paragraph_id": 1,
+      "section_id": 0,
+      "text": "Notably, despite this bias, participants demonstrated reasonable navigation ability on the sphere.",
+      "page_number": null
+    },
+    {
+      "text_id": 6,
+      "paragraph_id": 1,
+      "section_id": 0,
+      "text": "This observation and simulation suggest that humans navigate nonflat surfaces by constructing locally confined Euclidean maps and flexibly combining them.",
+      "page_number": null
+    },
+    {
+      "text_id": 7,
+      "paragraph_id": 1,
+      "section_id": 0,
+      "text": "This insight sheds light on potential neural mechanisms and behavioral strategies for solving complex cognitive tasks.",
+      "page_number": null
+    },
+    {
+      "text_id": 8,
+      "paragraph_id": 3,
+      "section_id": 1,
+      "text": "Humans build a mental model or a cognitive map of the environment to efficiently navigate within it.",
+      "page_number": null
+    },
+    {
+      "text_id": 9,
+      "paragraph_id": 3,
+      "section_id": 1,
+      "text": "A cognitive map is a useful framework that can describe many cognitive processes beyond physical navigation, such as categorization, concept learning, and planning (Behrens et al., 2018;Bellmund et al., 2018;Gärdenfors, 2000;O'Keefe & Nadel, 1978).",
+      "page_number": null
+    },
+    {
+      "text_id": 10,
+      "paragraph_id": 3,
+      "section_id": 1,
+      "text": "Exactly how humans develop cognitive maps and which form they take (e.g., metric, graph, hybrid format) are essential questions in cognitive science that still lack a definite answer.",
+      "page_number": null
+    },
+    {
+      "text_id": 11,
+      "paragraph_id": 4,
+      "section_id": 1,
+      "text": "When we explore our environment, we sequentially move from one location to another.",
+      "page_number": null
+    },
+    {
+      "text_id": 12,
+      "paragraph_id": 4,
+      "section_id": 1,
+      "text": "Path integration is the ability to keep track of one's location by integrating previous movements.",
+      "page_number": null
+    },
+    {
+      "text_id": 13,
+      "paragraph_id": 4,
+      "section_id": 1,
+      "text": "Path integration serves as a basis for building cognitive maps, and it is universally observed from insects to mammals (McNaughton et al., 2006;Wang, 2016).",
+      "page_number": null
+    },
+    {
+      "text_id": 14,
+      "paragraph_id": 4,
+      "section_id": 1,
+      "text": "Importantly, the neural circuitry for path integration (e.g., head-direction cells, grid cells) has mainly been studied when animals navigate on flat 2D surfaces, except for a few recent studies (Ginosar et al., 2021;Grieves et al., 2020;Ulsaker-Janke et al., 2023).",
+      "page_number": null
+    },
+    {
+      "text_id": 15,
+      "paragraph_id": 4,
+      "section_id": 1,
+      "text": "For accurate navigation in 3D space with undulating terrain, one needs to integrate 3D movement directions and build a global 3D map.",
+      "page_number": null
+    },
+    {
+      "text_id": 16,
+      "paragraph_id": 4,
+      "section_id": 1,
+      "text": "However, building a 3D map can be costly, and the neural circuitry for path integration may be optimized for 2D Euclidean geometry, particularly for surface-dwelling animals like humans.",
+      "page_number": null
+    },
+    {
+      "text_id": 17,
+      "paragraph_id": 4,
+      "section_id": 1,
+      "text": "Nonetheless, relying on 2D path integration would result in systematic errors when people try to navigate a nonflat surface like a sphere.",
+      "page_number": null
+    },
+    {
+      "text_id": 18,
+      "paragraph_id": 4,
+      "section_id": 1,
+      "text": "For instance, if people move straight from the North Pole to the equator, turn 90 degrees to the right, and then move the same distance (see the red line in Fig. 1a), they will be on the equator.",
+      "page_number": null
+    },
+    {
+      "text_id": 19,
+      "paragraph_id": 4,
+      "section_id": 1,
+      "text": "They could then turn 90 degrees again and move straight back to the North Pole (see the blue line in Fig. 1a).",
+      "page_number": null
+    },
+    {
+      "text_id": 20,
+      "paragraph_id": 4,
+      "section_id": 1,
+      "text": "However, a path-integration system, optimized for a flat surface where the sum of angles of a triangle is 180 degrees, will tell the agents to turn with an inner angle of 45 degrees (see the green line in Fig. 1a).",
+      "page_number": null
+    },
+    {
+      "text_id": 21,
+      "paragraph_id": 5,
+      "section_id": 1,
+      "text": "If the path-integration system is predominantly 2D, people are likely to build multiple local planar maps that cover the curved surface (Fig. 1b), rather than building a global 3D map (Fig. 1b).",
+      "page_number": null
+    },
+    {
+      "text_id": 22,
+      "paragraph_id": 5,
+      "section_id": 1,
+      "text": "Path planning would be particularly difficult for long distances on a sphere if participants use local planar maps, because planning a route across multiple regions could be more difficult than planning within a region (Montello & Pick, 1993;Wiener & Mallot, 2003).",
+      "page_number": null
+    },
+    {
+      "text_id": 23,
+      "paragraph_id": 5,
+      "section_id": 1,
+      "text": "In contrast, agents using a global 3D metric map should be able to draw a straight 3D shortcut and project it to the surface to find the optimal path, regardless of distance.",
+      "page_number": null
+    },
+    {
+      "text_id": 24,
+      "paragraph_id": 6,
+      "section_id": 1,
+      "text": "In this preregistered study we built spherical and planar virtual environments tightly matched in visual appearance and complexity.",
+      "page_number": null
+    },
+    {
+      "text_id": 25,
+      "paragraph_id": 6,
+      "section_id": 1,
+      "text": "In an immersive virtualreality (VR) setting, participants performed a pathintegration task known as a triangle completion (Chrastil & Warren, 2021) and spatial-memory tests with landmarks.",
+      "page_number": null
+    },
+    {
+      "text_id": 26,
+      "paragraph_id": 6,
+      "section_id": 1,
+      "text": "We examined whether participants relied on 2D path integration, consequently using planar maps instead of a global 3D map.",
+      "page_number": null
+    },
+    {
+      "text_id": 27,
+      "paragraph_id": 6,
+      "section_id": 1,
+      "text": "We then simulated the efficacy of multiple planar maps for solving a navigation problem on a spherical surface.",
+      "page_number": null
+    },
+    {
+      "text_id": 28,
+      "paragraph_id": 10,
+      "section_id": 3,
+      "text": "Twenty healthy young participants completed the experiment (10 male, mean age = 26.4 years, SD = 4.8 years).",
+      "page_number": null
+    },
+    {
+      "text_id": 29,
+      "paragraph_id": 10,
+      "section_id": 3,
+      "text": "This study was approved by a local ethics committee.",
+      "page_number": null
+    },
+    {
+      "text_id": 30,
+      "paragraph_id": 12,
+      "section_id": 4,
+      "text": "We determined this sample size on the basis of the pilot data, which are reported in preregistration (https://osf .io/hv29w).",
+      "page_number": null
+    },
+    {
+      "text_id": 31,
+      "paragraph_id": 12,
+      "section_id": 4,
+      "text": "For the triangle-completion task, we generated 1,000 data sets for the turn angle and distance using either planar or spherical geometry prediction using the Mixedpower R package (Kreidler et al., 2021;Kumle et al., 2021).",
+      "page_number": null
+    },
+    {
+      "text_id": 32,
+      "paragraph_id": 12,
+      "section_id": 4,
+      "text": "We then counted the number of simulations when the approximated Bayes factor (BF) for the true geometrical model was greater than another model by 10.",
+      "page_number": null
+    },
+    {
+      "text_id": 33,
+      "paragraph_id": 12,
+      "section_id": 4,
+      "text": "With a sample size of 20, the power was 100%.",
+      "page_number": null
+    },
+    {
+      "text_id": 34,
+      "paragraph_id": 12,
+      "section_id": 4,
+      "text": "For the comparison of short and long trial errors in the object-location memory test, we used the Bayes factor design analysis R package to simulate the paired t test result for the effect size estimated from the pilot data (d = 1.9; Stefan et al., 2019).",
+      "page_number": null
+    },
+    {
+      "text_id": 35,
+      "paragraph_id": 12,
+      "section_id": 4,
+      "text": "Simulation (1,000 iterations) with a sample size of 20 predicted that 100% would reach the sensitivity threshold (BF = 3) and a false positive rate was less than 1%.",
+      "page_number": null
+    },
+    {
+      "text_id": 36,
+      "paragraph_id": 14,
+      "section_id": 5,
+      "text": "We used Unity 2020.2.6.f1 (Unity Technologies, San Francisco, US) to implement the two virtual environments that contain either a planar or spherical surface (Fig. 2; see also Supplemental Videos S1 and S2 in the Supplemental Material available online).",
+      "page_number": null
+    },
+    {
+      "text_id": 37,
+      "paragraph_id": 14,
+      "section_id": 5,
+      "text": "Participants walked on an omnidirectional treadmill (Virtualizer 2, Cyberith GmbH, Vienna, Austria) while wearing a headmounted display (Valve Index, Valve, Bellevue, US) to explore the virtual environments.",
+      "page_number": null
+    },
+    {
+      "text_id": 38,
+      "paragraph_id": 14,
+      "section_id": 5,
+      "text": "Both environments had a moon-like appearance and the same starry sky as a background.",
+      "page_number": null
+    },
+    {
+      "text_id": 39,
+      "paragraph_id": 14,
+      "section_id": 5,
+      "text": "The textured surface and sky provided optic flow and a sense of motion to participants.",
+      "page_number": null
+    },
+    {
+      "text_id": 40,
+      "paragraph_id": 14,
+      "section_id": 5,
+      "text": "The radius of the sphere was 12.5 virtual units, and the camera height was 1.5 virtual units.",
+      "page_number": null
+    },
+    {
+      "text_id": 41,
+      "paragraph_id": 14,
+      "section_id": 5,
+      "text": "On the sphere, arc lengths presented in degrees gave a more intuitive sense of the distance than the distance presented in the virtual units.",
+      "page_number": null
+    },
+    {
+      "text_id": 42,
+      "paragraph_id": 14,
+      "section_id": 5,
+      "text": "For example, it is easier to know that 180° corresponds to half of the circumference, as opposed to 39.2 virtual units.",
+      "page_number": null
+    },
+    {
+      "text_id": 43,
+      "paragraph_id": 14,
+      "section_id": 5,
+      "text": "Thus, we used degrees as the unit to describe both length and angular variables in this article.",
+      "page_number": null
+    },
+    {
+      "text_id": 44,
+      "paragraph_id": 14,
+      "section_id": 5,
+      "text": "Maximum translational speed was 20°/s so that",
+      "page_number": null
+    },
+    {
+      "text_id": 45,
+      "paragraph_id": 16,
+      "section_id": 6,
+      "text": "Humans build mental models of their surroundings.",
+      "page_number": null
+    },
+    {
+      "text_id": 46,
+      "paragraph_id": 16,
+      "section_id": 6,
+      "text": "The mental models are called cognitive maps, and they help us navigate the world.",
+      "page_number": null
+    },
+    {
+      "text_id": 47,
+      "paragraph_id": 16,
+      "section_id": 6,
+      "text": "The neural underpinnings of such maps, and how humans build on them, have primarily been studied in flat 2D worlds.",
+      "page_number": null
+    },
+    {
+      "text_id": 48,
+      "paragraph_id": 16,
+      "section_id": 6,
+      "text": "Little is known about how the process generalizes to more complex, highdimensional environments.",
+      "page_number": null
+    },
+    {
+      "text_id": 49,
+      "paragraph_id": 16,
+      "section_id": 6,
+      "text": "Here, using virtual reality, we assessed how people form a map and navigate in a spherical environment.",
+      "page_number": null
+    },
+    {
+      "text_id": 50,
+      "paragraph_id": 16,
+      "section_id": 6,
+      "text": "Participants walked on a small planet (as in The Little Prince) and searched for the optimal path on this curved surface.",
+      "page_number": null
+    },
+    {
+      "text_id": 51,
+      "paragraph_id": 16,
+      "section_id": 6,
+      "text": "We found a strong Euclidean bias that leads to systematic errors on the sphere in all participants.",
+      "page_number": null
+    },
+    {
+      "text_id": 52,
+      "paragraph_id": 16,
+      "section_id": 6,
+      "text": "Our results suggest that humans build multiple local planar maps to navigate in a complex environment by utilizing neural circuitry optimized for 2D navigation.",
+      "page_number": null
+    },
+    {
+      "text_id": 53,
+      "paragraph_id": 16,
+      "section_id": 6,
+      "text": "This strategy might be useful for more general cognitive tasks beyond physical navigation. participants could complete the circle in about 18 s if they walked without stopping.",
+      "page_number": null
+    },
+    {
+      "text_id": 54,
+      "paragraph_id": 17,
+      "section_id": 6,
+      "text": "For the object-location tasks, we placed a unique set of 12 animals on the planar and spherical surfaces.",
+      "page_number": null
+    },
+    {
+      "text_id": 55,
+      "paragraph_id": 17,
+      "section_id": 6,
+      "text": "On the plane, the animals were located at the vertices of triangular tessellation, and all faced toward a fixed point near the center (Fig. 2b).",
+      "page_number": null
+    },
+    {
+      "text_id": 56,
+      "paragraph_id": 17,
+      "section_id": 6,
+      "text": "On the sphere, the animals were placed at the 12 vertices of a regular icosahedron, which corresponds to a triangular tessellation of a spherical surface.",
+      "page_number": null
+    },
+    {
+      "text_id": 57,
+      "paragraph_id": 17,
+      "section_id": 6,
+      "text": "The animals faced toward the imaginary north pole of the sphere (Fig. 2a).",
+      "page_number": null
+    },
+    {
+      "text_id": 58,
+      "paragraph_id": 17,
+      "section_id": 6,
+      "text": "Participants were explicitly told that they could rely on the fixed-pointfacing animals to get oriented.",
+      "page_number": null
+    },
+    {
+      "text_id": 59,
+      "paragraph_id": 17,
+      "section_id": 6,
+      "text": "These animals served as both local landmarks and global-orientation cues (e.g., an imaginary north-south axis).",
+      "page_number": null
+    },
+    {
+      "text_id": 60,
+      "paragraph_id": 17,
+      "section_id": 6,
+      "text": "The geodesic distance between the neighboring animals on the plane and sphere was identical (63°).",
+      "page_number": null
+    },
+    {
+      "text_id": 61,
+      "paragraph_id": 18,
+      "section_id": 6,
+      "text": "Importantly, we also matched the visible distance of the two environments.",
+      "page_number": null
+    },
+    {
+      "text_id": 62,
+      "paragraph_id": 18,
+      "section_id": 6,
+      "text": "In an open field, people can normally see things on the plane that are very far away from them.",
+      "page_number": null
+    },
+    {
+      "text_id": 63,
+      "paragraph_id": 18,
+      "section_id": 6,
+      "text": "In contrast, people cannot see things that are positioned far away on the curved surface because the light travels straight and is obstructed by the surface itself.",
+      "page_number": null
+    },
+    {
+      "text_id": 64,
+      "paragraph_id": 18,
+      "section_id": 6,
+      "text": "By adding fog, we matched the number of visible landmarks in the two environments. environment on the first day and the plane on the second day, and the other half did the reverse.",
+      "page_number": null
+    },
+    {
+      "text_id": 65,
+      "paragraph_id": 18,
+      "section_id": 6,
+      "text": "On the first day, via a desktop computer, participants were given detailed instructions about all the upcoming tasks.",
+      "page_number": null
+    },
+    {
+      "text_id": 66,
+      "paragraph_id": 18,
+      "section_id": 6,
+      "text": "They then had a short movement-practice session on the VR treadmill before starting the main experiment.",
+      "page_number": null
+    },
+    {
+      "text_id": 67,
+      "paragraph_id": 18,
+      "section_id": 6,
+      "text": "We warned participants of potential VR-related motion sickness and offered ginger tea and candies that might alleviate motionrelated nausea.",
+      "page_number": null
+    },
+    {
+      "text_id": 68,
+      "paragraph_id": 18,
+      "section_id": 6,
+      "text": "The experiment stopped immediately if the participant felt uncomfortable.",
+      "page_number": null
+    },
+    {
+      "text_id": 69,
+      "paragraph_id": 18,
+      "section_id": 6,
+      "text": "On each day, the same set of primary tasks was completed in the following order: learning by free exploration, object-location memory training, object-location memory test, trianglecompletion tasks, and debriefing.",
+      "page_number": null
+    },
+    {
+      "text_id": 70,
+      "paragraph_id": 18,
+      "section_id": 6,
+      "text": "In total, participants spent 2.5 to 3 hrs per day.",
+      "page_number": null
+    },
+    {
+      "text_id": 71,
+      "paragraph_id": 18,
+      "section_id": 6,
+      "text": "To increase the motivation of participants, we offered a small monetary bonus at the end of the experiment, depending on the spatialmemory performance.",
+      "page_number": null
+    },
+    {
+      "text_id": 72,
+      "paragraph_id": 20,
+      "section_id": 7,
+      "text": "Movement practice on the VR treadmill.",
+      "page_number": null
+    },
+    {
+      "text_id": 73,
+      "paragraph_id": 20,
+      "section_id": 7,
+      "text": "The VR treadmill had optic sensors on the platform that recorded the movement of participants' feet.",
+      "page_number": null
+    },
+    {
+      "text_id": 74,
+      "paragraph_id": 20,
+      "section_id": 7,
+      "text": "A rotatable ring, at waist level, recorded any change in direction.",
+      "page_number": null
+    },
+    {
+      "text_id": 75,
+      "paragraph_id": 20,
+      "section_id": 7,
+      "text": "Participants walked forward and rotated their bodies to change the direction of movement.",
+      "page_number": null
+    },
+    {
+      "text_id": 76,
+      "paragraph_id": 20,
+      "section_id": 7,
+      "text": "Backward walking was not supported.",
+      "page_number": null
+    },
+    {
+      "text_id": 77,
+      "paragraph_id": 20,
+      "section_id": 7,
+      "text": "When they moved \"straight\" on the sphere they followed a great circle such that they would return to where they started after walking for a while.",
+      "page_number": null
+    },
+    {
+      "text_id": 78,
+      "paragraph_id": 20,
+      "section_id": 7,
+      "text": "While practicing the movement for a few minutes, participants collected virtual traffic cones placed on the surface.",
+      "page_number": null
+    },
+    {
+      "text_id": 79,
+      "paragraph_id": 21,
+      "section_id": 7,
+      "text": "Learning by free exploration.",
+      "page_number": null
+    },
+    {
+      "text_id": 80,
+      "paragraph_id": 21,
+      "section_id": 7,
+      "text": "Participants were given 15 min to freely explore the environment and learn the location of the 12 animals as precisely as they could.",
+      "page_number": null
+    },
+    {
+      "text_id": 81,
+      "paragraph_id": 21,
+      "section_id": 7,
+      "text": "A list of all animals was shown at the top of the screen.",
+      "page_number": null
+    },
+    {
+      "text_id": 82,
+      "paragraph_id": 21,
+      "section_id": 7,
+      "text": "This allowed participants to easily check whether they had found each animal in the foggy environments.",
+      "page_number": null
+    },
+    {
+      "text_id": 83,
+      "paragraph_id": 21,
+      "section_id": 7,
+      "text": "On the plane, participants heard an alarm if they reached an invisible boundary of the environment.",
+      "page_number": null
+    },
+    {
+      "text_id": 84,
+      "paragraph_id": 21,
+      "section_id": 7,
+      "text": "Participants were instructed to return to the center of the plane, where the animals were located, if they hear the alarm.",
+      "page_number": null
+    },
+    {
+      "text_id": 85,
+      "paragraph_id": 21,
+      "section_id": 7,
+      "text": "On the sphere such an alarm was unnecessary, because the sphere does not have a boundary, and participants could always find animals in any direction.",
+      "page_number": null
+    },
+    {
+      "text_id": 86,
+      "paragraph_id": 21,
+      "section_id": 7,
+      "text": "The task is shown in Supplemental Videos S1 (https://osf.io/2es6n) and S2 (https://osf.io/jpm5a), and the actual trajectories of participants are shown in Supplemental Figures S1 and S2.",
+      "page_number": null
+    },
+    {
+      "text_id": 87,
+      "paragraph_id": 22,
+      "section_id": 7,
+      "text": "Participants tended to repeatedly walk along a great circle on a sphere, whereas the exploration pattern on a plane was more variable across participants.",
+      "page_number": null
+    },
+    {
+      "text_id": 88,
+      "paragraph_id": 23,
+      "section_id": 7,
+      "text": "Object-location memory training and test.",
+      "page_number": null
+    },
+    {
+      "text_id": 89,
+      "paragraph_id": 23,
+      "section_id": 7,
+      "text": "After the initial learning task, participants were asked to find target animals from pseudorandom starting locations.",
+      "page_number": null
+    },
+    {
+      "text_id": 90,
+      "paragraph_id": 23,
+      "section_id": 7,
+      "text": "At the beginning of each trial, a target animal was cued with a picture, and then participants had to indicate which direction would lead to the shortest path to the target.",
+      "page_number": null
+    },
+    {
+      "text_id": 91,
+      "paragraph_id": 23,
+      "section_id": 7,
+      "text": "Once they had indicated the optimal direction with a button press, they could move freely to find the target animal.",
+      "page_number": null
+    },
+    {
+      "text_id": 92,
+      "paragraph_id": 23,
+      "section_id": 7,
+      "text": "All animals, including the target, were present in the environment, so participants were able to change their trajectory after seeing other animals while on the move.",
+      "page_number": null
+    },
+    {
+      "text_id": 93,
+      "paragraph_id": 23,
+      "section_id": 7,
+      "text": "Once they found the target, a corridor that linked the start and target location by the shortest path was shown.",
+      "page_number": null
+    },
+    {
+      "text_id": 94,
+      "paragraph_id": 23,
+      "section_id": 7,
+      "text": "This corridor taught participants about the optimal route on the sphere.",
+      "page_number": null
+    },
+    {
+      "text_id": 95,
+      "paragraph_id": 23,
+      "section_id": 7,
+      "text": "Thus, we gave participants a fair opportunity to learn the spatial layout and to practice route planning in the unfamiliar spherical condition.",
+      "page_number": null
+    },
+    {
+      "text_id": 96,
+      "paragraph_id": 23,
+      "section_id": 7,
+      "text": "Participants completed two runs of 12 training trials.",
+      "page_number": null
+    },
+    {
+      "text_id": 97,
+      "paragraph_id": 23,
+      "section_id": 7,
+      "text": "After the training, participants were given a similar target-searching task.",
+      "page_number": null
+    },
+    {
+      "text_id": 98,
+      "paragraph_id": 23,
+      "section_id": 7,
+      "text": "This time, animals were visible only at the start, and the rest of the animals, including the target, were hidden after the participant began to move.",
+      "page_number": null
+    },
+    {
+      "text_id": 99,
+      "paragraph_id": 23,
+      "section_id": 7,
+      "text": "This meant that participants had to accurately estimate the distance and direction to the target at the start of the trial and try to move straight thereafter.",
+      "page_number": null
+    },
+    {
+      "text_id": 100,
+      "paragraph_id": 23,
+      "section_id": 7,
+      "text": "During movement they had to update their location on their mental map by integrating motion cues (e.g., proprioception, optic flow from the floor texture and starry sky, and the passage of time).",
+      "page_number": null
+    },
+    {
+      "text_id": 101,
+      "paragraph_id": 23,
+      "section_id": 7,
+      "text": "After participants indicated the location of the hidden target with a button press, they received feedback on their performance, measured by the geodesic distance between the true location and indicated locations (on a 5-point smileyface scale ranging from a frowning face to a smiling face).",
+      "page_number": null
+    },
+    {
+      "text_id": 102,
+      "paragraph_id": 23,
+      "section_id": 7,
+      "text": "Additionally, the optimal route was shown during feedback.",
+      "page_number": null
+    },
+    {
+      "text_id": 103,
+      "paragraph_id": 24,
+      "section_id": 7,
+      "text": "Critically, we varied the distance between the starting location and the target location to test whether path planning was more difficult, particularly for longdistance trials on the sphere.",
+      "page_number": null
+    },
+    {
+      "text_id": 104,
+      "paragraph_id": 24,
+      "section_id": 7,
+      "text": "In half of the trials, targets were directly behind visible landmarks (short trials), whereas extra hidden landmarks were between the start and the target in the other half (long trials).",
+      "page_number": null
+    },
+    {
+      "text_id": 105,
+      "paragraph_id": 24,
+      "section_id": 7,
+      "text": "Unbeknownst to participants, only 6 of the 12 animals were used as targets.",
+      "page_number": null
+    },
+    {
+      "text_id": 106,
+      "paragraph_id": 24,
+      "section_id": 7,
+      "text": "This was done to increase the number of repetitions per target object within the limited experiment duration.",
+      "page_number": null
+    },
+    {
+      "text_id": 107,
+      "paragraph_id": 24,
+      "section_id": 7,
+      "text": "Because of the random starting location, a good knowledge of the layout of all 12 animals was required to perform well in this task.",
+      "page_number": null
+    },
+    {
+      "text_id": 108,
+      "paragraph_id": 24,
+      "section_id": 7,
+      "text": "Each of the six target objects was presented twice in each run, and each participant completed two runs.",
+      "page_number": null
+    },
+    {
+      "text_id": 109,
+      "paragraph_id": 24,
+      "section_id": 7,
+      "text": "The task is shown in Supplemental Videos S3 (https://osf.io/aux7s) and S4 (https://osf.io/nw3mc).",
+      "page_number": null
+    },
+    {
+      "text_id": 110,
+      "paragraph_id": 25,
+      "section_id": 7,
+      "text": "Triangle-completion test.",
+      "page_number": null
+    },
+    {
+      "text_id": 111,
+      "paragraph_id": 25,
+      "section_id": 7,
+      "text": "Last, participants were given a commonly used path-integration task called the trianglecompletion task (Chrastil & Warren, 2021).",
+      "page_number": null
+    },
+    {
+      "text_id": 112,
+      "paragraph_id": 25,
+      "section_id": 7,
+      "text": "During this task, all animal landmarks were removed, and participants saw only a narrow corridor consisting of two straight legs (Figs. 2e and 2f).",
+      "page_number": null
+    },
+    {
+      "text_id": 113,
+      "paragraph_id": 25,
+      "section_id": 7,
+      "text": "Participants first walked straight until the end of the first leg of the corridor.",
+      "page_number": null
+    },
+    {
+      "text_id": 114,
+      "paragraph_id": 25,
+      "section_id": 7,
+      "text": "Then the second leg of the corridor became visible, and participants turned and kept walking until the end of it.",
+      "page_number": null
+    },
+    {
+      "text_id": 115,
+      "paragraph_id": 25,
+      "section_id": 7,
+      "text": "Upon arrival, they first indicated the optimal direction back to the starting location.",
+      "page_number": null
+    },
+    {
+      "text_id": 116,
+      "paragraph_id": 25,
+      "section_id": 7,
+      "text": "Subsequently, they walked straight to the remembered starting location.",
+      "page_number": null
+    },
+    {
+      "text_id": 117,
+      "paragraph_id": 25,
+      "section_id": 7,
+      "text": "During the response phase, the corridor was invisible so that participants could not rely on visual traces to find the starting location.",
+      "page_number": null
+    },
+    {
+      "text_id": 118,
+      "paragraph_id": 26,
+      "section_id": 7,
+      "text": "To motivate the participants, we gave feedback on the geodesic-distance error between the true starting location and their response location, using a 5-point smiley-face scale ranging from frowning to smiling.",
+      "page_number": null
+    },
+    {
+      "text_id": 119,
+      "paragraph_id": 26,
+      "section_id": 7,
+      "text": "However, we kept the corridor invisible during feedback.",
+      "page_number": null
+    },
+    {
+      "text_id": 120,
+      "paragraph_id": 26,
+      "section_id": 7,
+      "text": "Therefore, it was not possible for participants to notice if they made a systematic error (e.g., overturning on the sphere) and simply adjust their response strategy.",
+      "page_number": null
+    },
+    {
+      "text_id": 121,
+      "paragraph_id": 26,
+      "section_id": 7,
+      "text": "In this way, we could probe their pure pathintegration ability and their sense of geometry on the novel spherical and planar surfaces.",
+      "page_number": null
+    },
+    {
+      "text_id": 122,
+      "paragraph_id": 27,
+      "section_id": 7,
+      "text": "We used seven triangle shapes (see Supplemental Fig.",
+      "page_number": null
+    },
+    {
+      "text_id": 123,
+      "paragraph_id": 27,
+      "section_id": 7,
+      "text": "S3).",
+      "page_number": null
+    },
+    {
+      "text_id": 124,
+      "paragraph_id": 27,
+      "section_id": 7,
+      "text": "We carefully selected the triangle-shape parameters to have a large range of inbound turn angle and distance.",
+      "page_number": null
+    },
+    {
+      "text_id": 125,
+      "paragraph_id": 27,
+      "section_id": 7,
+      "text": "This was to prevent participants from following a stereotypical response that was insensitive to the exact shape of the triangles.",
+      "page_number": null
+    },
+    {
+      "text_id": 126,
+      "paragraph_id": 27,
+      "section_id": 7,
+      "text": "Insensitive responses were a concern in a previous study (Kearns et al., 2002).",
+      "page_number": null
+    },
+    {
+      "text_id": 127,
+      "paragraph_id": 27,
+      "section_id": 7,
+      "text": "The shape parameters-the lengths of the two legs and the angle between them-were identical for the planar and spherical conditions, but the ideal inbound turn angle and length were different because of geometry.",
+      "page_number": null
+    },
+    {
+      "text_id": 128,
+      "paragraph_id": 27,
+      "section_id": 7,
+      "text": "This allowed us to test whether participants' responses were closer to the planar or spherical solution.",
+      "page_number": null
+    },
+    {
+      "text_id": 129,
+      "paragraph_id": 27,
+      "section_id": 7,
+      "text": "We presented each triangle shape four times across the two runs.",
+      "page_number": null
+    },
+    {
+      "text_id": 130,
+      "paragraph_id": 27,
+      "section_id": 7,
+      "text": "Each triangle shape was presented with left/right symmetry; that means that participants turned left on half of the trials and turned right on the other half of the trials.",
+      "page_number": null
+    },
+    {
+      "text_id": 131,
+      "paragraph_id": 27,
+      "section_id": 7,
+      "text": "The trial order was randomized.",
+      "page_number": null
+    },
+    {
+      "text_id": 132,
+      "paragraph_id": 27,
+      "section_id": 7,
+      "text": "The task is shown in Supplemental Videos S5 (https://osf.io/ks639) and S6 (https://osf.io/y75nu).",
+      "page_number": null
+    },
+    {
+      "text_id": 133,
+      "paragraph_id": 28,
+      "section_id": 7,
+      "text": "Debriefing.",
+      "page_number": null
+    },
+    {
+      "text_id": 134,
+      "paragraph_id": 28,
+      "section_id": 7,
+      "text": "Each day, at the end of the experiment, we asked participants about their strategy (e.g., first-person, bird's-eye view) for each task.",
+      "page_number": null
+    },
+    {
+      "text_id": 135,
+      "paragraph_id": 28,
+      "section_id": 7,
+      "text": "For the triangle-completion task on the sphere, we asked whether they had thought about how much they moved on the sphere, in terms of absolute length (such as 90°).",
+      "page_number": null
+    },
+    {
+      "text_id": 136,
+      "paragraph_id": 28,
+      "section_id": 7,
+      "text": "We also asked whether participants had any knowledge about the difference between planar and spherical geometry (e.g., that the sum of the angles of a triangle is not 180° on the sphere).",
+      "page_number": null
+    },
+    {
+      "text_id": 137,
+      "paragraph_id": 30,
+      "section_id": 8,
+      "text": "We examined whether participants used planar or 3D path integration on the sphere using two types of measurements: inbound turn angle and distance.",
+      "page_number": null
+    },
+    {
+      "text_id": 138,
+      "paragraph_id": 30,
+      "section_id": 8,
+      "text": "As a preprocessing step, the left and right symmetric triangles were pooled.",
+      "page_number": null
+    },
+    {
+      "text_id": 139,
+      "paragraph_id": 30,
+      "section_id": 8,
+      "text": "This restricted the ideal turn angle to a range of 0° to 180°, rather than -180° to 180°.",
+      "page_number": null
+    },
+    {
+      "text_id": 140,
+      "paragraph_id": 30,
+      "section_id": 8,
+      "text": "Thus, we could treat the turn angle like a linear variable.",
+      "page_number": null
+    },
+    {
+      "text_id": 141,
+      "paragraph_id": 30,
+      "section_id": 8,
+      "text": "Previous studies have also treated the turn angle as a linear variable by following the same procedure (Chrastil & Warren, 2021;Kearns et al., 2002;Tcheang et al., 2011).",
+      "page_number": null
+    },
+    {
+      "text_id": 142,
+      "paragraph_id": 30,
+      "section_id": 8,
+      "text": "We defined trials as outliers when either the inbound turn angle or distance was outside 1.5 times the interquartile range of all participants' data, within each triangle type.",
+      "page_number": null
+    },
+    {
+      "text_id": 143,
+      "paragraph_id": 30,
+      "section_id": 8,
+      "text": "Outlier trials were excluded from further analysis (52 out of 1,119 trials in total).",
+      "page_number": null
+    },
+    {
+      "text_id": 144,
+      "paragraph_id": 30,
+      "section_id": 8,
+      "text": "We built two simple linear mixed models with the main predictors being, respectively, the ideal turn angle by planar or spherical geometry.",
+      "page_number": null
+    },
+    {
+      "text_id": 145,
+      "paragraph_id": 30,
+      "section_id": 8,
+      "text": "All participants' turn angles were the dependent variable.",
+      "page_number": null
+    },
+    {
+      "text_id": 146,
+      "paragraph_id": 30,
+      "section_id": 8,
+      "text": "Given that each participant could have shown different sensitivity to the ideal turn angle, as well as a different intercept, we included the random intercept and slope for each participant.",
+      "page_number": null
+    },
+    {
+      "text_id": 147,
+      "paragraph_id": 30,
+      "section_id": 8,
+      "text": "We then compared whether the spherical or planar model fitted the data better by comparing the associated Bayesian information criteria (BICs).",
+      "page_number": null
+    },
+    {
+      "text_id": 148,
+      "paragraph_id": 30,
+      "section_id": 8,
+      "text": "The BF was approximated as exp(difference in BIC/2) (Raftery, 1999).",
+      "page_number": null
+    },
+    {
+      "text_id": 149,
+      "paragraph_id": 30,
+      "section_id": 8,
+      "text": "A large BF for the planar model (BF > 3) would suggest that people rely on a 2D path-integration system, even when they are on the sphere.",
+      "page_number": null
+    },
+    {
+      "text_id": 150,
+      "paragraph_id": 30,
+      "section_id": 8,
+      "text": "In contrast, a small BF (BF < 1/3) would suggest that people can use a volumetric map and 3D path-integration system on the sphere.",
+      "page_number": null
+    },
+    {
+      "text_id": 151,
+      "paragraph_id": 30,
+      "section_id": 8,
+      "text": "In addition to the BF for the linear mixed model, we report the mean R 2 for the linear model of each participant.",
+      "page_number": null
+    },
+    {
+      "text_id": 152,
+      "paragraph_id": 30,
+      "section_id": 8,
+      "text": "This can help readers understand how well the planar and spherical geometry models fitted the actual data at the individual participant level.",
+      "page_number": null
+    },
+    {
+      "text_id": 153,
+      "paragraph_id": 30,
+      "section_id": 8,
+      "text": "We repeated the analysis process for the inbound distance variable.",
+      "page_number": null
+    },
+    {
+      "text_id": 154,
+      "paragraph_id": 30,
+      "section_id": 8,
+      "text": "As a quality check, we also ran the same analysis for the data from the plane condition, in which the planar-geometry model should obviously fit the data better.",
+      "page_number": null
+    },
+    {
+      "text_id": 155,
+      "paragraph_id": 31,
+      "section_id": 8,
+      "text": "Triangle-completion task: additional analysis.",
+      "page_number": null
+    },
+    {
+      "text_id": 156,
+      "paragraph_id": 31,
+      "section_id": 8,
+      "text": "In addition to the preregistered main hypothesis testing, we conducted the following exploratory analyses.",
+      "page_number": null
+    },
+    {
+      "text_id": 157,
+      "paragraph_id": 31,
+      "section_id": 8,
+      "text": "First, we built a model that contains both planar and spherical predictors and tested whether this combined model could explain the data better than the planar model alone, using the BIC.",
+      "page_number": null
+    },
+    {
+      "text_id": 158,
+      "paragraph_id": 31,
+      "section_id": 8,
+      "text": "Second, we constructed spherical models with various radii, ranging from 1 to 3 times the original radius, to determine the best-fitting radius (Supplemental Fig.",
+      "page_number": null
+    },
+    {
+      "text_id": 159,
+      "paragraph_id": 31,
+      "section_id": 8,
+      "text": "S4).",
+      "page_number": null
+    },
+    {
+      "text_id": 160,
+      "paragraph_id": 31,
+      "section_id": 8,
+      "text": "We then evaluated whether the larger-radius spherical model provided a better fit to the actual data than the planar model at both the group and single-subject levels.",
+      "page_number": null
+    },
+    {
+      "text_id": 161,
+      "paragraph_id": 31,
+      "section_id": 8,
+      "text": "A radius three times the original was large enough to make the spherical model's predictions indistinguishable from those of the planar model, eliminating the need to simulate larger radii.",
+      "page_number": null
+    },
+    {
+      "text_id": 162,
+      "paragraph_id": 31,
+      "section_id": 8,
+      "text": "At both group level and singlesubject level, we checked whether the larger-radius spherical model could fit the actual data better than the planar model.",
+      "page_number": null
+    },
+    {
+      "text_id": 163,
+      "paragraph_id": 31,
+      "section_id": 8,
+      "text": "Third, we tested whether participants may have tried to adjust their path-integration system to the curved surface by using more cognitive resources (through an analysis of reaction time) or a bird's-eye-view perspective, compared to when they were doing the same task in the plane condition.",
+      "page_number": null
+    },
+    {
+      "text_id": 164,
+      "paragraph_id": 31,
+      "section_id": 8,
+      "text": "We performed a t test on the mean reaction time and McNemar's test on the proportion of participants who used the bird's-eye-view strategy in the plane and sphere conditions.",
+      "page_number": null
+    },
+    {
+      "text_id": 165,
+      "paragraph_id": 31,
+      "section_id": 8,
+      "text": "Last, we divided the participants into two groups on the basis of their self-reported prior knowledge of spherical geometry and tested whether those with geometrical knowledge also showed a planar bias on the sphere.",
+      "page_number": null
+    },
+    {
+      "text_id": 166,
+      "paragraph_id": 33,
+      "section_id": 9,
+      "text": "Our main hypothesis concerned the optimal route-planning ability that depends on whether participants use a 3D Euclidean map or multiple planar maps.",
+      "page_number": null
+    },
+    {
+      "text_id": 167,
+      "paragraph_id": 33,
+      "section_id": 9,
+      "text": "There were two types of errors reflecting the optimal route-planning ability: a direction error, which is an angular deviation of a participant's initial route from the ideal route to the target, and a position error, which is a geodesic distance between the recalled location and the true location of the target.",
+      "page_number": null
+    },
+    {
+      "text_id": 168,
+      "paragraph_id": 34,
+      "section_id": 9,
+      "text": "As a first step of the analysis, we defined outlying trials (position error beyond 1.5 times the interquartile range within each participant) and removed them.",
+      "page_number": null
+    },
+    {
+      "text_id": 169,
+      "paragraph_id": 34,
+      "section_id": 9,
+      "text": "A few large positional errors could occur if participants swapped the identity of landmarks.",
+      "page_number": null
+    },
+    {
+      "text_id": 170,
+      "paragraph_id": 34,
+      "section_id": 9,
+      "text": "We then grouped trials into short or long on the basis of the geodesic distance between the start and target locations, with the distance threshold of 110°.",
+      "page_number": null
+    },
+    {
+      "text_id": 171,
+      "paragraph_id": 34,
+      "section_id": 9,
+      "text": "Next, the mean direction error for the short and long trials in the plane and sphere conditions was computed for each participant (2 × 2 factors).",
+      "page_number": null
+    },
+    {
+      "text_id": 172,
+      "paragraph_id": 34,
+      "section_id": 9,
+      "text": "Long-distance trials could generally be harder (main effect of distance).",
+      "page_number": null
+    },
+    {
+      "text_id": 173,
+      "paragraph_id": 34,
+      "section_id": 9,
+      "text": "However, if participants used multiple planar maps instead of building a global 3D map, the direction error was expected to be particularly large for long-distance trials on the sphere (interaction effect).",
+      "page_number": null
+    },
+    {
+      "text_id": 174,
+      "paragraph_id": 34,
+      "section_id": 9,
+      "text": "Thus, we tested for this interaction effect using a Bayesian t test on the difference between the long-and short-distance trials on the sphere and on the plane.",
+      "page_number": null
+    },
+    {
+      "text_id": 175,
+      "paragraph_id": 34,
+      "section_id": 9,
+      "text": "We performed the t test using the Bayes factor R package and JASP with the default objective prior (Cauchy distribution with a scale parameter of r = 2 2 / ).",
+      "page_number": null
+    },
+    {
+      "text_id": 176,
+      "paragraph_id": 34,
+      "section_id": 9,
+      "text": "We also report the statistics from a classical t test for completeness, but our conclusion was based on the BF.",
+      "page_number": null
+    },
+    {
+      "text_id": 177,
+      "paragraph_id": 36,
+      "section_id": 10,
+      "text": "To simulate the route-planning performance, we sampled random start locations with varying distance from one fixed target location on the sphere (Supplemental Fig.",
+      "page_number": null
+    },
+    {
+      "text_id": 178,
+      "paragraph_id": 36,
+      "section_id": 10,
+      "text": "S7).",
+      "page_number": null
+    },
+    {
+      "text_id": 179,
+      "paragraph_id": 36,
+      "section_id": 10,
+      "text": "Because of the rotation symmetry of a sphere, it is sufficient to use one fixed target.",
+      "page_number": null
+    },
+    {
+      "text_id": 180,
+      "paragraph_id": 36,
+      "section_id": 10,
+      "text": "A spherical surface could be divided into triangular patches using 12 landmark animals that were evenly distributed on the surface (i.e., vertices of icosahedron).",
+      "page_number": null
+    },
+    {
+      "text_id": 181,
+      "paragraph_id": 36,
+      "section_id": 10,
+      "text": "When multiple planar maps are used to approximate the spherical surface, triangular patches could be arranged on a hypothetical plane optimally or suboptimally (see the Results section).",
+      "page_number": null
+    },
+    {
+      "text_id": 182,
+      "paragraph_id": 36,
+      "section_id": 10,
+      "text": "Every start location on a spherical surface was projected to a location on a triangular patch.",
+      "page_number": null
+    },
+    {
+      "text_id": 183,
+      "paragraph_id": 36,
+      "section_id": 10,
+      "text": "We then computed the direction and distance of a path from each start location to the target on the plane.",
+      "page_number": null
+    },
+    {
+      "text_id": 184,
+      "paragraph_id": 36,
+      "section_id": 10,
+      "text": "Next, we drew a path on the sphere using the direction and distance computed on the plane; we then measured angular and location errors on the sphere.",
+      "page_number": null
+    },
+    {
+      "text_id": 185,
+      "paragraph_id": 40,
+      "section_id": 12,
+      "text": "Participants performed a triangle-completion task on both the sphere and plane.",
+      "page_number": null
+    },
+    {
+      "text_id": 186,
+      "paragraph_id": 40,
+      "section_id": 12,
+      "text": "Figure 3b and 3c shows the raw data from three example shapes (all shapes are shown in Supplemental Fig.",
+      "page_number": null
+    },
+    {
+      "text_id": 187,
+      "paragraph_id": 40,
+      "section_id": 12,
+      "text": "S3).",
+      "page_number": null
+    },
+    {
+      "text_id": 188,
+      "paragraph_id": 40,
+      "section_id": 12,
+      "text": "It is apparent that participants' trajectories (black lines) were closer to the ideal response for planar geometry (green line) than those for spherical geometry (blue line).",
+      "page_number": null
+    },
+    {
+      "text_id": 189,
+      "paragraph_id": 40,
+      "section_id": 12,
+      "text": "This was true in both the plane and sphere conditions.",
+      "page_number": null
+    },
+    {
+      "text_id": 190,
+      "paragraph_id": 40,
+      "section_id": 12,
+      "text": "A comparison of two linear mixed models revealed strong evidence for the planar-geometry model over the spherical model when people were on the sphere (approximated BF for the planar vs. sphere model: turn angle, BF = 3.5e54; distance, BF = 2.6e23).",
+      "page_number": null
+    },
+    {
+      "text_id": 191,
+      "paragraph_id": 40,
+      "section_id": 12,
+      "text": "Supplemental Tables S1 through S4 contain a detailed report on the fixed and random effects for each model.",
+      "page_number": null
+    },
+    {
+      "text_id": 192,
+      "paragraph_id": 40,
+      "section_id": 12,
+      "text": "Next, we report how well individual participants' turn angles and distances were fitted to the ideal turn angle and distance for the planar and spherical geometry.",
+      "page_number": null
+    },
+    {
+      "text_id": 193,
+      "paragraph_id": 40,
+      "section_id": 12,
+      "text": "A strong linear relationship between the actual data and predictors were observed in most participants, and R 2 values for individual participants were higher for the plane model than the sphere model for the turn angle (the planar geometry model = 0.67 ± 0.19 vs. sphere model = 0.50 ± 0.18) as well as for distance (the planar geometry model = 0.36 ± 0.13 vs. sphere model = 0.23 ± 0.15; Figs. 3d and 3e).",
+      "page_number": null
+    },
+    {
+      "text_id": 194,
+      "paragraph_id": 40,
+      "section_id": 12,
+      "text": "These results imply that participants used a 2D pathintegration system rather than a precise 3D pathintegration system based on a volumetric map.",
+      "page_number": null
+    },
+    {
+      "text_id": 195,
+      "paragraph_id": 42,
+      "section_id": 13,
+      "text": "As exploratory analyses, we tested whether participants tried to overcome the strong planar bias on the sphere.",
+      "page_number": null
+    },
+    {
+      "text_id": 196,
+      "paragraph_id": 42,
+      "section_id": 13,
+      "text": "If that was the case, a mixed influence of planar and spherical geometry would be expected.",
+      "page_number": null
+    },
+    {
+      "text_id": 197,
+      "paragraph_id": 42,
+      "section_id": 13,
+      "text": "We built a model that contains both planar and spherical geometry predictors and compared it to a model that contains only the planar predictor.",
+      "page_number": null
+    },
+    {
+      "text_id": 198,
+      "paragraph_id": 42,
+      "section_id": 13,
+      "text": "The planar-geometry model remained the clear winner over the mixed-geometry model (BF = 1.3e4 for the turn angle, BF = 2.1e3 for distance).",
+      "page_number": null
+    },
+    {
+      "text_id": 199,
+      "paragraph_id": 42,
+      "section_id": 13,
+      "text": "We also built the spherical models with various radii to check whether participants overestimated the radius of the sphere and whether a larger-radius spherical model could fit the data better than a plane model.",
+      "page_number": null
+    },
+    {
+      "text_id": 200,
+      "paragraph_id": 42,
+      "section_id": 13,
+      "text": "A group-level analysis showed that larger-radius models fitted the data better than smaller-radius models, and the plane model outperformed the spherical model of all radii we tested (Supplemental Fig.",
+      "page_number": null
+    },
+    {
+      "text_id": 201,
+      "paragraph_id": 42,
+      "section_id": 13,
+      "text": "S4c).",
+      "page_number": null
+    },
+    {
+      "text_id": 202,
+      "paragraph_id": 42,
+      "section_id": 13,
+      "text": "We also investigated the best-fitting radius at the singlesubject level.",
+      "page_number": null
+    },
+    {
+      "text_id": 203,
+      "paragraph_id": 42,
+      "section_id": 13,
+      "text": "The model with the largest radius was often the best model (Supplemental Fig.",
+      "page_number": null
+    },
+    {
+      "text_id": 204,
+      "paragraph_id": 42,
+      "section_id": 13,
+      "text": "S4d).",
+      "page_number": null
+    },
+    {
+      "text_id": 205,
+      "paragraph_id": 42,
+      "section_id": 13,
+      "text": "Because of the small number of data points at the single-subject level and reduced model discriminability between larger radii, the best-fitting radius should be interpreted with caution.",
+      "page_number": null
+    },
+    {
+      "text_id": 206,
+      "paragraph_id": 43,
+      "section_id": 13,
+      "text": "Next, we compared the reaction time and self-reported strategy for the path-integration task in the sphere and plane conditions.",
+      "page_number": null
+    },
+    {
+      "text_id": 207,
+      "paragraph_id": 43,
+      "section_id": 13,
+      "text": "We reasoned that if participants consider the curvature of the surface and update their location by using a 3D map, reaction time would be slower on the sphere and they would be more likely to use the bird's-eye view (third-person perspective) than a first-person perspective on the sphere.",
+      "page_number": null
+    },
+    {
+      "text_id": 208,
+      "paragraph_id": 43,
+      "section_id": 13,
+      "text": "Neither the reaction time nor the proportion of bird's-eye-view strategy use was larger for the sphere-mean time on sphere = 6.4 ± 2.5 s versus on plane = 7.0 ± 2.4 s, t(19) = 1.1, p = .85, one-sided; proportion of bird's-eye-view perspective on sphere = 7 out of 20 vs. on plane = 5 out of 20, McNemara test, p = .31.",
+      "page_number": null
+    },
+    {
+      "text_id": 209,
+      "paragraph_id": 43,
+      "section_id": 13,
+      "text": "We also note that none of the participants reported paying attention to the absolute",
+      "page_number": null
+    },
+    {
+      "text_id": 210,
+      "paragraph_id": 44,
+      "section_id": 13,
+      "text": "c Sphere Plane Actual Actual Leg 1 Leg 2 Sphere Sphere Plane Plane a b e d Example Shape 1 Turn Angle on Sphere Actual Turn (deg) Actual Turn (deg) Ideal Turn 0 0 100 100 200 200 0 0 100 100 200 200 100 150 50 0.8 R 2 Actual Distance (deg) 0.6 0.4 0.2 0 200 Ideal Turn Ideal Distance 50 100 150 200 200 100 150 50 Actual Distance (deg) 50 100 150 200 Ideal Distance Plane Sphere 0.8 R 2 0.6 0.4 0.2 0 Plane Sphere Inbound Distance on Sphere Plane Model Sphere Model Plane Model Sphere Model Example Shape 2 Example Shape 3 traveled distance relative to the size of the sphere, which was necessary for path integration based on a 3D map.",
+      "page_number": null
+    },
+    {
+      "text_id": 211,
+      "paragraph_id": 44,
+      "section_id": 13,
+      "text": "Finally, we tested whether explicit knowledge of 3D geometry helped people to overcome the planargeometry bias and to utilize a 3D map.",
+      "page_number": null
+    },
+    {
+      "text_id": 212,
+      "paragraph_id": 44,
+      "section_id": 13,
+      "text": "Those who possessed geometrical knowledge of the sphere (n = 9) showed a similarly strong planar bias on the sphere, as did those without the knowledge (n = 11; Supplemental Fig.",
+      "page_number": null
+    },
+    {
+      "text_id": 213,
+      "paragraph_id": 44,
+      "section_id": 13,
+      "text": "S5).",
+      "page_number": null
+    },
+    {
+      "text_id": 214,
+      "paragraph_id": 45,
+      "section_id": 13,
+      "text": "In sum, participants performed the path-integration task on the sphere as if they were still on the plane.",
+      "page_number": null
+    },
+    {
+      "text_id": 215,
+      "paragraph_id": 45,
+      "section_id": 13,
+      "text": "Thus, the planar bias cannot be readily eliminated by explicit knowledge of spherical geometry.",
+      "page_number": null
+    },
+    {
+      "text_id": 216,
+      "paragraph_id": 45,
+      "section_id": 13,
+      "text": "In the next sections, we present how people with such planar bias performed in the object-location memory task.",
+      "page_number": null
+    },
+    {
+      "text_id": 217,
+      "paragraph_id": 47,
+      "section_id": 14,
+      "text": "When participants rely on planar maps instead of a 3D map, path planning for long-distance trials on the sphere is expected to be particularly challenging.",
+      "page_number": null
+    },
+    {
+      "text_id": 218,
+      "paragraph_id": 47,
+      "section_id": 14,
+      "text": "Indeed, we observed a significantly larger initial direction error on the sphere compared to the plane when the target was farther away (Figs. 4b and 4c).",
+      "page_number": null
+    },
+    {
+      "text_id": 219,
+      "paragraph_id": 47,
+      "section_id": 14,
+      "text": "The angular difference between long and short trials was 2.5 ± 4.8° on the plane, but a substantial 38.5 ± 19.4° on the sphere-BF = 1.1e5, interaction effect, t(19) = 7.7, p < .001, Cohen's d = 1.7.",
+      "page_number": null
+    },
+    {
+      "text_id": 220,
+      "paragraph_id": 47,
+      "section_id": 14,
+      "text": "We also found that the final position error was larger for long-distance trials on both sphere and plane.",
+      "page_number": null
+    },
+    {
+      "text_id": 221,
+      "paragraph_id": 47,
+      "section_id": 14,
+      "text": "However, no significant interaction effect was observed.",
+      "page_number": null
+    },
+    {
+      "text_id": 222,
+      "paragraph_id": 47,
+      "section_id": 14,
+      "text": "The difference in error between long and short trials on the plane was 15.8 ± 10.4°, whereas on the sphere it was 21.3 ± 18.3°, BF = 0.8, t(19) = 1.3, p = .2, Cohen's d = 0.3.",
+      "page_number": null
+    },
+    {
+      "text_id": 223,
+      "paragraph_id": 48,
+      "section_id": 14,
+      "text": "It is worth noting that participants achieved better accuracy than chance even in the long-distance trials on the sphere (mean position error for long trials on sphere = 50.6 ± 20.4°, chance = 90°; final errors for all targets are displayed in Supplemental Fig.",
+      "page_number": null
+    },
+    {
+      "text_id": 224,
+      "paragraph_id": 48,
+      "section_id": 14,
+      "text": "S6).",
+      "page_number": null
+    },
+    {
+      "text_id": 225,
+      "paragraph_id": 48,
+      "section_id": 14,
+      "text": "This dissociated pattern of error for direction and position was possible because of the nonflat geometry of the sphere, where routes that initially deviate significantly from the shortest path can eventually converge near the target.",
+      "page_number": null
+    },
+    {
+      "text_id": 226,
+      "paragraph_id": 49,
+      "section_id": 14,
+      "text": "a b c Recall Recall Start Start Short Long Short Long 100 50 0 100 50 0 Plane Sphere Plane Sphere Target Target ∆ ∆ θ θ θ Direction Error (deg) ∆ Position Error (deg) In (b), example optimal paths (red lines) and all participants' trajectories (blue lines) are shown when the start locations were either at a short or long distance from the target.",
+      "page_number": null
+    },
+    {
+      "text_id": 227,
+      "paragraph_id": 49,
+      "section_id": 14,
+      "text": "If participants used multiple planar maps instead of a volumetric map, path planning would be particularly difficult for long trials on the sphere.",
+      "page_number": null
+    },
+    {
+      "text_id": 228,
+      "paragraph_id": 49,
+      "section_id": 14,
+      "text": "Indeed, direction errors (c) were significantly larger for long trials on the sphere, and a significant interaction effect between the distance and environment type was observed.",
+      "page_number": null
+    },
+    {
+      "text_id": 229,
+      "paragraph_id": 49,
+      "section_id": 14,
+      "text": "Position errors (c) were significantly larger for long-distance trials on both the plane and the sphere, without an interaction effect.",
+      "page_number": null
+    },
+    {
+      "text_id": 230,
+      "paragraph_id": 49,
+      "section_id": 14,
+      "text": "Colored dots represent each participant's mean error; error bars represent standard errors.",
+      "page_number": null
+    },
+    {
+      "text_id": 231,
+      "paragraph_id": 51,
+      "section_id": 15,
+      "text": "We conducted simulations to assess the accuracy of path planning on a sphere based on multiple planar maps.",
+      "page_number": null
+    },
+    {
+      "text_id": 232,
+      "paragraph_id": 51,
+      "section_id": 15,
+      "text": "In this simulation, we divided the spherical surface into triangular patches that can be dynamically aligned for path planning.",
+      "page_number": null
+    },
+    {
+      "text_id": 233,
+      "paragraph_id": 51,
+      "section_id": 15,
+      "text": "In an optimal scenario, participants would recall the minimal number of landmarks between the start and target and align the map accordingly (e.g., if the start is between landmarks 1, 2, and 3, the shortest route to the target, landmark 6, would include landmarks 4 and 5; see Fig. 5a, middle panel).",
+      "page_number": null
+    },
+    {
+      "text_id": 234,
+      "paragraph_id": 51,
+      "section_id": 15,
+      "text": "The path direction and distance can then be estimated by drawing a straight line on an imaginary plane and executed on the sphere (see the red line in Fig. 5a).",
+      "page_number": null
+    },
+    {
+      "text_id": 235,
+      "paragraph_id": 51,
+      "section_id": 15,
+      "text": "This path, based on the optimally arranged planar maps, closely approximates a true geodesic path on the sphere, resulting in a position and direction error of less than 20° for distant targets (Fig. 5b, red dots).",
+      "page_number": null
+    },
+    {
+      "text_id": 236,
+      "paragraph_id": 51,
+      "section_id": 15,
+      "text": "Next, we simulated a scenario in which the agent recalls a suboptimal route and aligns the planar map differently.",
+      "page_number": null
+    },
+    {
+      "text_id": 237,
+      "paragraph_id": 51,
+      "section_id": 15,
+      "text": "For example, the agent might first recall landmark 7, followed by 5, 4, and finally the target 6 (see the blue line in Fig. 5a, right side).",
+      "page_number": null
+    },
+    {
+      "text_id": 238,
+      "paragraph_id": 51,
+      "section_id": 15,
+      "text": "The direction and position error on the sphere are generally larger compared to the ideal case, reaching up to 60° of direction error and 40° of position error (Fig. 5b; see the blue dots).",
+      "page_number": null
+    },
+    {
+      "text_id": 239,
+      "paragraph_id": 51,
+      "section_id": 15,
+      "text": "However, these errors still remain well below the chance level, indicating that reasonable navigation on the sphere can be achieved using multiple planar maps.",
+      "page_number": null
+    },
+    {
+      "text_id": 240,
+      "paragraph_id": 53,
+      "section_id": 16,
+      "text": "To understand the nature of cognitive maps, we examined how people navigated a novel spherical environment.",
+      "page_number": null
+    },
+    {
+      "text_id": 241,
+      "paragraph_id": 53,
+      "section_id": 16,
+      "text": "The path-integration task revealed a strong bias for planar geometry.",
+      "page_number": null
+    },
+    {
+      "text_id": 242,
+      "paragraph_id": 53,
+      "section_id": 16,
+      "text": "Despite this bias, participants achieved a reasonable level of accuracy in the objectlocation memory test, potentially by utilizing multiple planar maps.",
+      "page_number": null
+    },
+    {
+      "text_id": 243,
+      "paragraph_id": 53,
+      "section_id": 16,
+      "text": "In the following sections, we discuss our findings in relation to the existing literature, explore potential neural circuitry underlying the cognitive map, and speculate on the implications of multiple planar maps for solving broader cognitive tasks.",
+      "page_number": null
+    },
+    {
+      "text_id": 244,
+      "paragraph_id": 54,
+      "section_id": 16,
+      "text": "Our study highlights a pronounced planar geometry bias during path integration.",
+      "page_number": null
+    },
+    {
+      "text_id": 245,
+      "paragraph_id": 54,
+      "section_id": 16,
+      "text": "This finding aligns with a recent study that also observed a dominance of Euclidean geometry on spherical and hyperbolic space (Widdowson & Wang, 2022).",
+      "page_number": null
+    },
+    {
+      "text_id": 246,
+      "paragraph_id": 54,
+      "section_id": 16,
+      "text": "However, it is important to note several critical differences between this previous study and ours.",
+      "page_number": null
+    },
+    {
+      "text_id": 247,
+      "paragraph_id": 54,
+      "section_id": 16,
+      "text": "In Widdowson and Wang, participants were immersed in a science-fiction-style warped universe, where light was curved and landmarks were absent.",
+      "page_number": null
+    },
+    {
+      "text_id": 248,
+      "paragraph_id": 54,
+      "section_id": 16,
+      "text": "This means it was nearly impossible for participants to know whether they were walking in a curved world, potentially leading them to rely on familiar planar geometry for path integration.",
+      "page_number": null
+    },
+    {
+      "text_id": 249,
+      "paragraph_id": 54,
+      "section_id": 16,
+      "text": "In contrast, the participants in our study were explicitly aware of the spherical surface on which they were walking.",
+      "page_number": null
+    },
+    {
+      "text_id": 250,
+      "paragraph_id": 54,
+      "section_id": 16,
+      "text": "During the training phase, they encountered multiple landmarks along the great circle of the sphere.",
+      "page_number": null
+    },
+    {
+      "text_id": 251,
+      "paragraph_id": 54,
+      "section_id": 16,
+      "text": "They also learned about the existence of multiple routes on the sphere.",
+      "page_number": null
+    },
+    {
+      "text_id": 252,
+      "paragraph_id": 54,
+      "section_id": 16,
+      "text": "Half of participants even possessed prior knowledge of spherical geometry.",
+      "page_number": null
+    },
+    {
+      "text_id": 253,
+      "paragraph_id": 54,
+      "section_id": 16,
+      "text": "Nevertheless, they all performed the pathintegration task on the sphere as if they were on a plane, indicating a robust planar-geometry bias.",
+      "page_number": null
+    },
+    {
+      "text_id": 254,
+      "paragraph_id": 55,
+      "section_id": 16,
+      "text": "What could be the origin of this strong Euclidean bias in path integration?",
+      "page_number": null
+    },
+    {
+      "text_id": 255,
+      "paragraph_id": 55,
+      "section_id": 16,
+      "text": "Is it hardwired in the brain, or acquired through experience or formal education?",
+      "page_number": null
+    },
+    {
+      "text_id": 256,
+      "paragraph_id": 55,
+      "section_id": 16,
+      "text": "The philosopher Kant proposed that Euclidean geometry might be a priori knowledge in humans.",
+      "page_number": null
+    },
+    {
+      "text_id": 257,
+      "paragraph_id": 55,
+      "section_id": 16,
+      "text": "Evidence from studies on individuals without formal math education, such as children and certain Amazonian indigenous groups, suggests an intuitive understanding of Euclidean geometrical concepts like line, right angle, and parallelism (Dehaene et al., 2006;Izard et al., 2011).",
+      "page_number": null
+    },
+    {
+      "text_id": 258,
+      "paragraph_id": 55,
+      "section_id": 16,
+      "text": "In the natural world that humans live in, surfaces often have modest curvature that can be closely approximated by Euclidean geometry.",
+      "page_number": null
+    },
+    {
+      "text_id": 259,
+      "paragraph_id": 55,
+      "section_id": 16,
+      "text": "The brain contains multiple specialized cell types that encode spatial information such as head direction, speed, and location-the basis of path integration (Moser et al., 2017;Wittmann & Schwegler, 1995).",
+      "page_number": null
+    },
+    {
+      "text_id": 260,
+      "paragraph_id": 55,
+      "section_id": 16,
+      "text": "To test the impact of early geometrical experience on the development of spatial cells, Ulsaker-Janke et al., 2023, raised rat pups in an opaque spherical cage.",
+      "page_number": null
+    },
+    {
+      "text_id": 261,
+      "paragraph_id": 55,
+      "section_id": 16,
+      "text": "Unlike the human participants who freely explored the entire spherical surface in our VR experiment, because of gravity the rat's movement was constrained to the bottom part of the spherical cage.",
+      "page_number": null
+    },
+    {
+      "text_id": 262,
+      "paragraph_id": 55,
+      "section_id": 16,
+      "text": "The spherical cage was different from a typical rectangular cage because it did not contain a vertical boundary that defines geometry.",
+      "page_number": null
+    },
+    {
+      "text_id": 263,
+      "paragraph_id": 55,
+      "section_id": 16,
+      "text": "When the rats were later placed in a typical 2D environment, normal grid cells were absent on the first day but quickly emerged within a few days.",
+      "page_number": null
+    },
+    {
+      "text_id": 264,
+      "paragraph_id": 55,
+      "section_id": 16,
+      "text": "These findings imply that a minimal experience with a typical environment is necessary for maturation of 2D grid fields that are anchored to an environment, but the topology of grid cells for a 2D flat surface is preconfigured independently of experience (Gardner et al., 2022;Ulsaker-Janke et al., 2023).",
+      "page_number": null
+    },
+    {
+      "text_id": 265,
+      "paragraph_id": 55,
+      "section_id": 16,
+      "text": "Furthermore, studies on rodents walking on slopes or walls connected to a horizontal floor have shown that head-direction cells and grid cells continue to encode the direction and locations relative to a local surface, rather than a global 3D reference (Hayman et al., 2015;Stackman et al., 2000).",
+      "page_number": null
+    },
+    {
+      "text_id": 266,
+      "paragraph_id": 55,
+      "section_id": 16,
+      "text": "This suggests that the brain treats joined surfaces as a Euclidean plane, resembling a hypothetical plane where multiple planar maps could be arranged in our simulation.",
+      "page_number": null
+    },
+    {
+      "text_id": 267,
+      "paragraph_id": 55,
+      "section_id": 16,
+      "text": "Taken together, these findings suggest that the neural circuitry for path integration in the human brain may also be optimized for a flat surface, leading to the construction of multiple planar maps.",
+      "page_number": null
+    },
+    {
+      "text_id": 268,
+      "paragraph_id": 56,
+      "section_id": 16,
+      "text": "The dominance of the 2D path-integration system and the utilization of planar maps can be viewed as a useful feature rather than a limitation.",
+      "page_number": null
+    },
+    {
+      "text_id": 269,
+      "paragraph_id": 56,
+      "section_id": 16,
+      "text": "Although path planning based on planar maps introduces some angular error at the start, our data and simulations have demonstrated that it is still possible to reach the target with a small overall error.",
+      "page_number": null
+    },
+    {
+      "text_id": 270,
+      "paragraph_id": 56,
+      "section_id": 16,
+      "text": "This is because of the positive curvature of the sphere following Riemannian geometry.",
+      "page_number": null
+    },
+    {
+      "text_id": 271,
+      "paragraph_id": 56,
+      "section_id": 16,
+      "text": "Building a precise map for high-dimensional space can be costly and inefficient when only a part of the space is relevant for behavior (e.g., walkable surfaces are 2D manifolds within a 3D world).",
+      "page_number": null
+    },
+    {
+      "text_id": 272,
+      "paragraph_id": 56,
+      "section_id": 16,
+      "text": "If animals can achieve reasonable navigation accuracy by utilizing an existing path-integration system and multiple planar maps, there might be a limited demand for building more complex high-dimensional maps.",
+      "page_number": null
+    },
+    {
+      "text_id": 273,
+      "paragraph_id": 56,
+      "section_id": 16,
+      "text": "It is also more ecological to use multiple small maps as opposed to building a single global map.",
+      "page_number": null
+    },
+    {
+      "text_id": 274,
+      "paragraph_id": 56,
+      "section_id": 16,
+      "text": "Animals constantly interact with their environment and update their estimates of location and direction.",
+      "page_number": null
+    },
+    {
+      "text_id": 275,
+      "paragraph_id": 56,
+      "section_id": 16,
+      "text": "Thus, a dynamic and flexible arrangement of cognitive maps becomes more desirable (Kim & Doeller, 2022).",
+      "page_number": null
+    },
+    {
+      "text_id": 276,
+      "paragraph_id": 57,
+      "section_id": 16,
+      "text": "The utilization of multiple planar maps on a sphere provides new insights into the longstanding question regarding the nature of cognitive maps.",
+      "page_number": null
+    },
+    {
+      "text_id": 277,
+      "paragraph_id": 57,
+      "section_id": 16,
+      "text": "An earlier theory proposed a cognitive map that adheres to Euclidean geometry and contains precise metric information (O'Keefe & Nadel, 1978).",
+      "page_number": null
+    },
+    {
+      "text_id": 278,
+      "paragraph_id": 57,
+      "section_id": 16,
+      "text": "However, it has been observed that people do not always rely on a coherent Euclidean map for navigation.",
+      "page_number": null
+    },
+    {
+      "text_id": 279,
+      "paragraph_id": 57,
+      "section_id": 16,
+      "text": "Spatial memory and planning is strongly influenced by regional boundaries instead of Euclidean relations alone (Hirtle & Jonides, 1985;Kim & Maguire, 2018;Wiener & Mallot, 2003).",
+      "page_number": null
+    },
+    {
+      "text_id": 280,
+      "paragraph_id": 57,
+      "section_id": 16,
+      "text": "Furthermore, in VR experiments in which the global adherence to Euclidean laws was broken through teleports, participants were still able to successfully navigate by attending to local spatial features (Warren et al., 2017).",
+      "page_number": null
+    },
+    {
+      "text_id": 281,
+      "paragraph_id": 57,
+      "section_id": 16,
+      "text": "This suggests that cognitive maps may take on a graph or topographic form across multiple hierarchies (Chrastil & Warren, 2014;Peer et al., 2020).",
+      "page_number": null
+    },
+    {
+      "text_id": 282,
+      "paragraph_id": 57,
+      "section_id": 16,
+      "text": "We propose that cognitive maps are Euclidean at the local level and that multiple planar maps are flexibly combined to represent a large and complex environment.",
+      "page_number": null
+    },
+    {
+      "text_id": 283,
+      "paragraph_id": 57,
+      "section_id": 16,
+      "text": "This idea is in line with the neurophysiological mechanisms of grid cells, initially believed to provide global metric information but later proposed to encode spatial information rather locally (Ginosar et al., 2023).",
+      "page_number": null
+    },
+    {
+      "text_id": 284,
+      "paragraph_id": 57,
+      "section_id": 16,
+      "text": "It is also noteworthy that simulations of grid cells predict imperfect global-scale path integration on the sphere (Stella et al., 2020).",
+      "page_number": null
+    },
+    {
+      "text_id": 285,
+      "paragraph_id": 58,
+      "section_id": 16,
+      "text": "Local planar maps might be useful for cognition beyond the physical navigation domain.",
+      "page_number": null
+    },
+    {
+      "text_id": 286,
+      "paragraph_id": 58,
+      "section_id": 16,
+      "text": "There is abundant evidence that neural circuitry for physical navigation can be used for organizing various types of information, including odors and social and visual features (Aronov et al., 2017;Bao et al., 2019;Bellmund et al., 2018;Gärdenfors, 2000;Park et al., 2020).",
+      "page_number": null
+    },
+    {
+      "text_id": 287,
+      "paragraph_id": 58,
+      "section_id": 16,
+      "text": "One limitation of the previous research is that the researchers used only 2D stimuli analogous to physical navigation on a flat surface.",
+      "page_number": null
+    },
+    {
+      "text_id": 288,
+      "paragraph_id": 58,
+      "section_id": 16,
+      "text": "However, nonphysical information can be high-dimensional.",
+      "page_number": null
+    },
+    {
+      "text_id": 289,
+      "paragraph_id": 58,
+      "section_id": 16,
+      "text": "Our findings of multiple planar maps for a spherical surface suggest that we can divide complex nonphysical space into multiple lowdimensional patches.",
+      "page_number": null
+    },
+    {
+      "text_id": 290,
+      "paragraph_id": 58,
+      "section_id": 16,
+      "text": "The projection of multidimensional inputs onto low-dimensional vectors has been also proposed in the computational models of grid cells (Klukas et al., 2020).",
+      "page_number": null
+    },
+    {
+      "text_id": 291,
+      "paragraph_id": 59,
+      "section_id": 16,
+      "text": "We hope that some of the limitations in the current project can be addressed in future research.",
+      "page_number": null
+    },
+    {
+      "text_id": 292,
+      "paragraph_id": 59,
+      "section_id": 16,
+      "text": "First, the vestibular and proprioceptive input in our setup was limited, because participants walked on a flat treadmill surface.",
+      "page_number": null
+    },
+    {
+      "text_id": 293,
+      "paragraph_id": 59,
+      "section_id": 16,
+      "text": "It would be valuable to investigate whether additional 3D vestibular inputs, such as those experienced in a large microgravity environment or through the use of a 3D motion simulator (Barnett-Cowan et al., 2012), would result in the utilization of more volumetric cognitive maps.",
+      "page_number": null
+    },
+    {
+      "text_id": 294,
+      "paragraph_id": 59,
+      "section_id": 16,
+      "text": "Second, exploring the impact of extended experience in nonflat environments on the format of cognitive maps would be intriguing.",
+      "page_number": null
+    },
+    {
+      "text_id": 295,
+      "paragraph_id": 59,
+      "section_id": 16,
+      "text": "A recent experiment demonstrated that young children exhibited some understanding of a shortcut on spherical geometry (Huey et al., 2023).",
+      "page_number": null
+    },
+    {
+      "text_id": 296,
+      "paragraph_id": 59,
+      "section_id": 16,
+      "text": "Investigating learning processes and the adaptability of humans to novel environments would contribute to a deeper understanding of cognitivemap formation.",
+      "page_number": null
+    },
+    {
+      "text_id": 297,
+      "paragraph_id": 61,
+      "section_id": 17,
+      "text": "Action Editor: Angela Lukowski Editor: Patricia J Bauer",
+      "page_number": null
+    },
+    {
+      "text_id": 298,
+      "paragraph_id": 63,
+      "section_id": 18,
+      "text": "We thank Alessandro Treves and Federico Stella for pioneering the spatial cell modeling on the sphere and sharing their script.",
+      "page_number": null
+    },
+    {
+      "text_id": 299,
+      "paragraph_id": 63,
+      "section_id": 18,
+      "text": "We thank Max Schultz and Paul Brockmeyer for helping with data collection and Josh Grant for proofreading.",
+      "page_number": null
+    },
+    {
+      "text_id": 300,
+      "paragraph_id": 63,
+      "section_id": 18,
+      "text": "Grammarly and ChatGPT were used for editing language.",
+      "page_number": null
+    },
+    {
+      "text_id": 301,
+      "paragraph_id": 65,
+      "section_id": 19,
+      "text": "This work has been supported by the Max Planck Society.",
+      "page_number": null
+    },
+    {
+      "text_id": 302,
+      "paragraph_id": 65,
+      "section_id": 19,
+      "text": "C F Doeller's research is further supported by the European Research Council (Grant No.",
+      "page_number": null
+    },
+    {
+      "text_id": 303,
+      "paragraph_id": 65,
+      "section_id": 19,
+      "text": "ERC-CoG GEOCOG 724836), the Kavli Foundation, the Jebsen Foundation, Helse Midt Norge, and the Research Council of Norway (Grant Nos.",
+      "page_number": null
+    },
+    {
+      "text_id": 304,
+      "paragraph_id": 65,
+      "section_id": 19,
+      "text": "223262/F50 and 197467/F50).",
+      "page_number": null
+    },
+    {
+      "text_id": 305,
+      "paragraph_id": 67,
+      "section_id": 20,
+      "text": "The hypotheses and analysis plan were preregistered (https://doi.org/10.17605/OSF.IO/4TYM7) prior to data collection.",
+      "page_number": null
+    },
+    {
+      "text_id": 306,
+      "paragraph_id": 67,
+      "section_id": 20,
+      "text": "Additional analyses were conducted for the triangle-completion task, as described in the Method section.",
+      "page_number": null
+    },
+    {
+      "text_id": 307,
+      "paragraph_id": 67,
+      "section_id": 20,
+      "text": "Simulation of route planning was also added later.",
+      "page_number": null
+    },
+    {
+      "text_id": 308,
+      "paragraph_id": 67,
+      "section_id": 20,
+      "text": "Materials, data, and analysis scripts are publicly available (https://doi.org/10.17605/OSF.IO/X4T9A).",
+      "page_number": null
+    },
+    {
+      "text_id": 309,
+      "paragraph_id": 67,
+      "section_id": 20,
+      "text": "The authors are applying for a Computational Reproducibility Badge which will be awarded pending checks by the STAR team.",
+      "page_number": null
+    },
+    {
+      "text_id": 310,
+      "paragraph_id": 67,
+      "section_id": 20,
+      "text": "This article has received the badges for Open Data, Open Materials, and Preregistration.",
+      "page_number": null
+    },
+    {
+      "text_id": 311,
+      "paragraph_id": 67,
+      "section_id": 20,
+      "text": "More information about the Open Practices badges can be found at http://www.psychologicalscience.org/publications/ badges.",
+      "page_number": null
+    },
+    {
+      "text_id": 312,
+      "paragraph_id": 69,
+      "section_id": 21,
+      "text": "The author(s) declared that there were no conflicts of interest with respect to the authorship or the publication of this article.",
+      "page_number": null
+    },
+    {
+      "text_id": 313,
+      "paragraph_id": 73,
+      "section_id": 23,
+      "text": "Christian F Doeller: Conceptualization; Resources; Writing -review & editing.",
+      "page_number": null
+    },
+    {
+      "text_id": 314,
+      "paragraph_id": 75,
+      "section_id": 24,
+      "text": "Additional supporting information can be found at http:// journals.sagepub.com/doi/suppl/10.1177/09567976241279291",
+      "page_number": null
+    },
+    {
+      "text_id": 315,
+      "paragraph_id": 76,
+      "section_id": 25,
+      "text": "Fig.1.",
+      "page_number": null
+    },
+    {
+      "text_id": 316,
+      "paragraph_id": 76,
+      "section_id": 25,
+      "text": "Path integration and cognitive maps for a spherical and planar surface.",
+      "page_number": null
+    },
+    {
+      "text_id": 317,
+      "paragraph_id": 76,
+      "section_id": 25,
+      "text": "If people rely on a path-integration mechanism built on a flat surface (a), they will make a systematic error (overturn and overshoot) on the sphere.",
+      "page_number": null
+    },
+    {
+      "text_id": 318,
+      "paragraph_id": 76,
+      "section_id": 25,
+      "text": "Red lines represent the outbound journey; green lines represent the inbound journey for planar geometry; and blue lines represent the inbound journey for spherical geometry.",
+      "page_number": null
+    },
+    {
+      "text_id": 319,
+      "paragraph_id": 76,
+      "section_id": 25,
+      "text": "Spatial layout on the spherical surface (b) can be encoded in a global 3D map or multiple patches of planar maps.",
+      "page_number": null
+    },
+    {
+      "text_id": 320,
+      "paragraph_id": 77,
+      "section_id": 26,
+      "text": "Fig 2 Virtual environments.",
+      "page_number": null
+    },
+    {
+      "text_id": 321,
+      "paragraph_id": 77,
+      "section_id": 26,
+      "text": "Bird's-eye views of the sphere and planar environments are shown in (a) and (b), respectively.",
+      "page_number": null
+    },
+    {
+      "text_id": 322,
+      "paragraph_id": 77,
+      "section_id": 26,
+      "text": "Both environments featured the same moon-like texture and a dark background.",
+      "page_number": null
+    },
+    {
+      "text_id": 323,
+      "paragraph_id": 77,
+      "section_id": 26,
+      "text": "Twelve animal landmarks were positioned in a regular triangular lattice with the geodesic distance between the neighboring landmarks identical in the two environments.",
+      "page_number": null
+    },
+    {
+      "text_id": 324,
+      "paragraph_id": 77,
+      "section_id": 26,
+      "text": "In (c) and (d) are example views from a first-person perspective during the object-location task on the sphere and planar surfaces.",
+      "page_number": null
+    },
+    {
+      "text_id": 325,
+      "paragraph_id": 77,
+      "section_id": 26,
+      "text": "Visibility was matched in the two environments thanks to the fog.",
+      "page_number": null
+    },
+    {
+      "text_id": 326,
+      "paragraph_id": 77,
+      "section_id": 26,
+      "text": "In (e) and (f) are shown example views of the corridor that participants walked along during the triangle-completion task.",
+      "page_number": null
+    },
+    {
+      "text_id": 327,
+      "paragraph_id": 77,
+      "section_id": 26,
+      "text": "Of note, participants performed the tasks with a VR headset, and the field of view and depth perception were of higher quality than the current snapshots.",
+      "page_number": null
+    },
+    {
+      "text_id": 328,
+      "paragraph_id": 78,
+      "section_id": 27,
+      "text": "Fig.3.",
+      "page_number": null
+    },
+    {
+      "text_id": 329,
+      "paragraph_id": 78,
+      "section_id": 27,
+      "text": "Triangle-completion task.",
+      "page_number": null
+    },
+    {
+      "text_id": 330,
+      "paragraph_id": 78,
+      "section_id": 27,
+      "text": "Following an outbound journey consisting of two legs (a; red line), participants turned and moved straight to the invisible start location (black line).",
+      "page_number": null
+    },
+    {
+      "text_id": 331,
+      "paragraph_id": 78,
+      "section_id": 27,
+      "text": "Participants performed the same task on the sphere and plane.",
+      "page_number": null
+    },
+    {
+      "text_id": 332,
+      "paragraph_id": 78,
+      "section_id": 27,
+      "text": "If a path-integration system is based on planar geometry, participants were expected to follow the green line in both conditions.",
+      "page_number": null
+    },
+    {
+      "text_id": 333,
+      "paragraph_id": 78,
+      "section_id": 27,
+      "text": "In contrast, participants would follow an optimal route on the sphere (blue line) if the path-integration system is adjusted for spherical geometry.",
+      "page_number": null
+    },
+    {
+      "text_id": 334,
+      "paragraph_id": 78,
+      "section_id": 27,
+      "text": "All participants' inbound paths on the sphere (b) are shown for three example triangle shapes.",
+      "page_number": null
+    },
+    {
+      "text_id": 335,
+      "paragraph_id": 78,
+      "section_id": 27,
+      "text": "Gray lines show individual trials; the thick black line represents the mean path of all trials.",
+      "page_number": null
+    },
+    {
+      "text_id": 336,
+      "paragraph_id": 78,
+      "section_id": 27,
+      "text": "In (c) the same is shown for the plane condition.",
+      "page_number": null
+    },
+    {
+      "text_id": 337,
+      "paragraph_id": 78,
+      "section_id": 27,
+      "text": "The comparison of two linear mixed models in (d) shows that actual turn angle on the sphere was better explained by the ideal turn angle on the planar model.",
+      "page_number": null
+    },
+    {
+      "text_id": 338,
+      "paragraph_id": 78,
+      "section_id": 27,
+      "text": "Individual participant data are colored together, and a small jitter is applied on the horizontal axis for visualization purposes.",
+      "page_number": null
+    },
+    {
+      "text_id": 339,
+      "paragraph_id": 78,
+      "section_id": 27,
+      "text": "A bar graph shows the R 2 of model fit for the plane and sphere model at the individual-participant level.",
+      "page_number": null
+    },
+    {
+      "text_id": 340,
+      "paragraph_id": 78,
+      "section_id": 27,
+      "text": "Error bars show standard errors.",
+      "page_number": null
+    },
+    {
+      "text_id": 341,
+      "paragraph_id": 78,
+      "section_id": 27,
+      "text": "In (e) the same is shown for the inbound distance.",
+      "page_number": null
+    },
+    {
+      "text_id": 342,
+      "paragraph_id": 79,
+      "section_id": 28,
+      "text": "Fig.4.",
+      "page_number": null
+    },
+    {
+      "text_id": 343,
+      "paragraph_id": 79,
+      "section_id": 28,
+      "text": "Object-location memory tasks.",
+      "page_number": null
+    },
+    {
+      "text_id": 344,
+      "paragraph_id": 79,
+      "section_id": 28,
+      "text": "Two types of error (a) were measured in this task, in which participants had to walk straight to an invisible target from various start locations on a sphere (top) and a plane (bottom).",
+      "page_number": null
+    },
+    {
+      "text_id": 345,
+      "paragraph_id": 79,
+      "section_id": 28,
+      "text": "Direction error (θ) refers to the angle between the optimal route (red line) and the path taken by participants (blue line).",
+      "page_number": null
+    },
+    {
+      "text_id": 346,
+      "paragraph_id": 79,
+      "section_id": 28,
+      "text": "Position error (-) refers to the geodesic distance between the true target location and the recalled location (black dotted line).",
+      "page_number": null
+    },
+    {
+      "text_id": 347,
+      "paragraph_id": 79,
+      "section_id": 28,
+      "text": "In (b), example optimal paths (red lines) and all participants' trajectories (blue lines) are shown when the start locations were either at a short or long distance from the target.",
+      "page_number": null
+    },
+    {
+      "text_id": 348,
+      "paragraph_id": 79,
+      "section_id": 28,
+      "text": "If participants used multiple planar maps instead of a volumetric map, path planning would be particularly difficult for long trials on the sphere.",
+      "page_number": null
+    },
+    {
+      "text_id": 349,
+      "paragraph_id": 79,
+      "section_id": 28,
+      "text": "Indeed, direction errors (c) were significantly larger for long trials on the sphere, and a significant interaction effect between the distance and environment type was observed.",
+      "page_number": null
+    },
+    {
+      "text_id": 350,
+      "paragraph_id": 79,
+      "section_id": 28,
+      "text": "Position errors (c) were significantly larger for long-distance trials on both the plane and the sphere, without an interaction effect.",
+      "page_number": null
+    },
+    {
+      "text_id": 351,
+      "paragraph_id": 79,
+      "section_id": 28,
+      "text": "Colored dots represent each participant's mean error; error bars represent standard errors.",
+      "page_number": null
+    },
+    {
+      "text_id": 352,
+      "paragraph_id": 80,
+      "section_id": 29,
+      "text": "Fig.5.",
+      "page_number": null
+    },
+    {
+      "text_id": 353,
+      "paragraph_id": 80,
+      "section_id": 29,
+      "text": "Path planning on the sphere based on multiple planar maps.",
+      "page_number": null
+    },
+    {
+      "text_id": 354,
+      "paragraph_id": 80,
+      "section_id": 29,
+      "text": "Local triangular maps (a) are stitched together to find a route to the target.",
+      "page_number": null
+    },
+    {
+      "text_id": 355,
+      "paragraph_id": 80,
+      "section_id": 29,
+      "text": "The maps can be aligned either optimally or suboptimally on a hypothetical plane.",
+      "page_number": null
+    },
+    {
+      "text_id": 356,
+      "paragraph_id": 80,
+      "section_id": 29,
+      "text": "An example path is shown for a target at position 6 and a start location between positions 1, 2, and 3 (with a distance of 134° to the target).",
+      "page_number": null
+    },
+    {
+      "text_id": 357,
+      "paragraph_id": 80,
+      "section_id": 29,
+      "text": "The purple line represents a geodesic line on the sphere; a red line represents a path based on an optimal arrangement of the planar map; and a blue line represents a path based on a suboptimal arrangement.",
+      "page_number": null
+    },
+    {
+      "text_id": 358,
+      "paragraph_id": 80,
+      "section_id": 29,
+      "text": "Direction and position errors for trials with varying distance between the start and target are shown in (b), with red dots representing errors based on the optimal arrangement and blue dots representing errors based on the suboptimal arrangement.",
+      "page_number": null
+    },
+    {
+      "text_id": 359,
+      "paragraph_id": 80,
+      "section_id": 29,
+      "text": "We simulated the suboptimal arrangement only for distances far enough (> 120°), as it is unlikely that people would recall suboptimal routes when the target is close to the start location.",
+      "page_number": null
+    },
+    {
+      "text_id": 360,
+      "paragraph_id": 81,
+      "section_id": 30,
+      "text": "Aronov, D., Nevers, R., & Tank, D. W. (2017). Mapping of a non-spatial dimension by the hippocampal-entorhinal cir- cuit. Nature, 543(7647), 719-722. https://doi.org/10.1038/ nature21692",
+      "page_number": null
+    },
+    {
+      "text_id": 361,
+      "paragraph_id": 82,
+      "section_id": 30,
+      "text": "Bao, X., Gjorgieva, E., Shanahan, L. K., Howard, J. D., Kahnt, T., & Gottfried, J. A. (2019). Grid-like neural representations support olfactory navigation of a two-dimensional odor space. Neuron, 102(5), 1066-1075.e5. https://doi.org/ 10.1016/j.neuron.2019.03.034",
+      "page_number": null
+    },
+    {
+      "text_id": 362,
+      "paragraph_id": 83,
+      "section_id": 30,
+      "text": "Barnett-Cowan, M., Meilinger, T., Vidal, M., Teufel, H., & Bülthoff, H. H. (2012). MPI CyberMotion Simulator: Implementation of a novel motion simulator to investi- gate multisensory path integration in three dimensions. Journal of Visualized Experiments, 63, Article 3436. https://doi.org/10.3791/3436",
+      "page_number": null
+    },
+    {
+      "text_id": 363,
+      "paragraph_id": 84,
+      "section_id": 30,
+      "text": "Behrens, T. E. J., Muller, T. H., Whittington, J. C. R., Mark, S., Baram, A. B., Stachenfeld, K. L., & Kurth-Nelson, Z. (2018). What is a cognitive map? Organizing knowledge for flexible behavior. Neuron, 100(2), 490-509. https:// doi.org/10.1016/j.neuron.2018.10.002",
+      "page_number": null
+    },
+    {
+      "text_id": 364,
+      "paragraph_id": 85,
+      "section_id": 30,
+      "text": "Bellmund, J. L. S., Gärdenfors, P., Moser, E. I., & Doeller, C. F. (2018). Navigating cognition: Spatial codes for human thinking. Science, 362(6415). https://doi.org/10.1126/ science.aat6766",
+      "page_number": null
+    },
+    {
+      "text_id": 365,
+      "paragraph_id": 86,
+      "section_id": 30,
+      "text": "Chrastil, E. R., & Warren, W. H. (2014). From cognitive maps to cognitive graphs. PLOS ONE, 9(11), Article e112544. https://doi.org/10.1371/journal.pone.0112544",
+      "page_number": null
+    },
+    {
+      "text_id": 366,
+      "paragraph_id": 87,
+      "section_id": 30,
+      "text": "Chrastil, E. R., & Warren, W. H. (2021). Executing the home- bound path is a major source of error in homing by path integration. Journal of Experimental Psychology: Human Perception and Performance, 47(1), 13-35. https://doi.org/ 10.1037/xhp0000875",
+      "page_number": null
+    },
+    {
+      "text_id": 367,
+      "paragraph_id": 88,
+      "section_id": 30,
+      "text": "Dehaene, S., Izard, V., Pica, P., & Spelke, E. (2006). Core knowledge of geometry in an Amazonian indigene group. Science, 311(5759), 381-384. https://doi.org/10.1126/sci ence.1121739",
+      "page_number": null
+    },
+    {
+      "text_id": 368,
+      "paragraph_id": 89,
+      "section_id": 30,
+      "text": "Gärdenfors, P. (2000). Conceptual spaces: The geometry of thought. Bradford Books.",
+      "page_number": null
+    },
+    {
+      "text_id": 369,
+      "paragraph_id": 90,
+      "section_id": 30,
+      "text": "Gardner, R. J., Hermansen, E., Pachitariu, M., Burak, Y., Baas, N. A., Dunn, B. A., Moser, M.-B., & Moser, E. I. (2022). Toroidal topology of population activity in grid cells. Nature, 602, 123-128. https://doi.org/10.1038/s41586- 021-04268-7",
+      "page_number": null
+    },
+    {
+      "text_id": 370,
+      "paragraph_id": 91,
+      "section_id": 30,
+      "text": "Ginosar, G., Aljadeff, J., Burak, Y., Sompolinsky, H., Las, L., & Ulanovsky, N. (2021). Locally ordered representation of 3D space in the entorhinal cortex. Nature, 596, 404-409. https://doi.org/10.1038/s41586-021-03783-x",
+      "page_number": null
+    },
+    {
+      "text_id": 371,
+      "paragraph_id": 92,
+      "section_id": 30,
+      "text": "Ginosar, G., Aljadeff, J., Las, L., Derdikman, D., & Ulanovsky, N. (2023). Are grid cells used for navigation? On local met- rics, subjective spaces, and black holes. Neuron, 111(12), 1858-1875. https://doi.org/10.1016/j.neuron.2023.03.027",
+      "page_number": null
+    },
+    {
+      "text_id": 372,
+      "paragraph_id": 93,
+      "section_id": 30,
+      "text": "Grieves, R. M., Jedidi-Ayoub, S., Mishchanchuk, K., Liu, A., Renaudineau, S., & Jeffery, K. J. (2020). The place- cell representation of volumetric space in rats. Nature Communications, 11(1), 1-13. https://doi.org/10.1038/ s41467-020-14611-7",
+      "page_number": null
+    },
+    {
+      "text_id": 373,
+      "paragraph_id": 94,
+      "section_id": 30,
+      "text": "Hayman, R. M. A., Casali, G., Wilson, J. J., & Jeffery, K. J. (2015). Grid cells on steeply sloping terrain: Evidence for planar rather than volumetric encoding. Frontiers in Psychology, 6, Article 925. https://doi.org/10.3389/ fpsyg.2015.00925",
+      "page_number": null
+    },
+    {
+      "text_id": 374,
+      "paragraph_id": 95,
+      "section_id": 30,
+      "text": "Hirtle, S. C., & Jonides, J. (1985). Evidence of hierarchies in cognitive maps. Memory & Cognition, 13(3), 208-217. https://doi.org/10.3758/BF03197683",
+      "page_number": null
+    },
+    {
+      "text_id": 375,
+      "paragraph_id": 96,
+      "section_id": 30,
+      "text": "Huey, H., Jordan, M., Hart, Y., & Dillon, M. R. (2023). Mind- bending geometry: Children's and adults' intuitions about linearity on spheres. Developmental Psychology, 59(5), 886-892. https://doi.org/10.1037/dev0001509",
+      "page_number": null
+    },
+    {
+      "text_id": 376,
+      "paragraph_id": 97,
+      "section_id": 30,
+      "text": "Izard, V., Pica, P., Spelke, E. S., & Dehaene, S. (2011). Flexible intuitions of Euclidean geometry in an Amazonian indi- gene group. Proceedings of the National Academy of Sciences, USA, 108(24), 9782-9787. https://doi.org/ 10.1073/pnas.1016686108",
+      "page_number": null
+    },
+    {
+      "text_id": 377,
+      "paragraph_id": 98,
+      "section_id": 30,
+      "text": "Kearns, M. J., Warren, W. H., Duchon, A. P., & Tarr, M. J. (2002). Path integration from optic flow and body senses in a homing task. Perception, 31(3), 349-374. https://doi .org/10.1068/p3311",
+      "page_number": null
+    },
+    {
+      "text_id": 378,
+      "paragraph_id": 99,
+      "section_id": 30,
+      "text": "Kim, M., & Doeller, C. F. (2022). Adaptive cognitive maps for curved surfaces in the 3D world. Cognition, 225, Article 105126. https://doi.org/10.1016/j.cognition.2022.105126",
+      "page_number": null
+    },
+    {
+      "text_id": 379,
+      "paragraph_id": 100,
+      "section_id": 30,
+      "text": "Kim, M., & Maguire, E. A. (2018). Hippocampus, retrosplenial and parahippocampal cortices encode multicompartment 3D space in a hierarchical manner. Cerebral Cortex, 28(5), 1898-1909. https://doi.org/10.1093/cercor/bhy054",
+      "page_number": null
+    },
+    {
+      "text_id": 380,
+      "paragraph_id": 101,
+      "section_id": 30,
+      "text": "Klukas, M., Lewis, M., & Fiete, I. (2020). Efficient and flexible representation of higher-dimensional cognitive variables with grid cells. PLOS Computational Biology, 16(4), Article e1007796. https://doi.org/10.1371/journal.pcbi.1007796",
+      "page_number": null
+    },
+    {
+      "text_id": 381,
+      "paragraph_id": 102,
+      "section_id": 30,
+      "text": "Kreidler, S. M., Ringham, B. M., Muller, K. E., & Glueck, D. H. (2021). A power approximation for the Kenward and Roger Wald test in the linear mixed model. PLOS ONE, 16(7), Article e0254811. https://doi.org/10.1371/ journal.pone.0254811",
+      "page_number": null
+    },
+    {
+      "text_id": 382,
+      "paragraph_id": 103,
+      "section_id": 30,
+      "text": "Kumle, L., Võ, M. L.-H., & Draschkow, D. (2021). Estimating power in (generalized) linear mixed models: An open introduction and tutorial in R. Behavior Research Methods, 53(6), 2528-2543. https://doi.org/10.3758/s13428-021- 01546-0",
+      "page_number": null
+    },
+    {
+      "text_id": 383,
+      "paragraph_id": 104,
+      "section_id": 30,
+      "text": "McNaughton, B. L., Battaglia, F. P., Jensen, O., Moser, E. I., & Moser, M.-B. (2006). Path integration and the neural basis of the \"cognitive map.\" Nature Reviews Neuroscience, 7(8), 663-678. https://doi.org/10.1038/nrn1932",
+      "page_number": null
+    },
+    {
+      "text_id": 384,
+      "paragraph_id": 105,
+      "section_id": 30,
+      "text": "Montello, D. R., & Pick, H. L. (1993). Integrating knowl- edge of vertically aligned large-scale spaces. Environ- ment and Behavior, 25(3), 457-484. https://doi.org/10 .1177/0013916593253002",
+      "page_number": null
+    },
+    {
+      "text_id": 385,
+      "paragraph_id": 106,
+      "section_id": 30,
+      "text": "Moser, E. I., Moser, M.-B., & McNaughton, B. L. (2017). Spatial representation in the hippocampal formation: A history. Nature Neuroscience, 20(11), 1448-1464. https://doi.org/ 10.1038/nn.4653",
+      "page_number": null
+    },
+    {
+      "text_id": 386,
+      "paragraph_id": 107,
+      "section_id": 30,
+      "text": "O'Keefe, J., & Nadel, L. (1978). The hippocampus as a cogni- tive map. Oxford University Press.",
+      "page_number": null
+    },
+    {
+      "text_id": 387,
+      "paragraph_id": 108,
+      "section_id": 30,
+      "text": "Park, S. A., Miller, D. S., Nili, H., Ranganath, C., & Boorman, E. D. (2020). Map making: Constructing, combin- ing, and inferring on abstract cognitive maps. Neuron, 107(6), 1226-1238.e8. https://doi.org/10.1016/j.neuron .2020.06.030",
+      "page_number": null
+    },
+    {
+      "text_id": 388,
+      "paragraph_id": 109,
+      "section_id": 30,
+      "text": "Peer, M., Brunec, I. K., Newcombe, N., & Epstein, R. A. (2020). Structuring knowledge with cognitive maps and cogni- tive graphs. Trends in Cognitive Science, 25(1), 37-54. https://doi.org/10.1016/j.tics.2020.10.004",
+      "page_number": null
+    },
+    {
+      "text_id": 389,
+      "paragraph_id": 110,
+      "section_id": 30,
+      "text": "Raftery, A. E. (1999). Bayes factors and BIC: Comment on \"a critique of the Bayesian information criterion for model selection.\" Sociological Methods & Research, 27(3), 411- 427. https://doi.org/10.1177/0049124199027003005",
+      "page_number": null
+    },
+    {
+      "text_id": 390,
+      "paragraph_id": 111,
+      "section_id": 30,
+      "text": "Stackman, R. W., Tullman, M. L., & Taube, J. S. (2000). Maintenance of rat head direction cell firing during loco- motion in the vertical plane. Journal of Neurophysiology, 83(1), 393-405. https://doi.org/10.1152/jn.2000.83.1.393",
+      "page_number": null
+    },
+    {
+      "text_id": 391,
+      "paragraph_id": 112,
+      "section_id": 30,
+      "text": "Stefan, A. M., Gronau, Q. F., Schönbrodt, F. D., & Wagenmakers, E.-J. (2019). A tutorial on Bayes Factor Design Analysis using an informed prior. Behavior Research Methods, 51(3), 1042-1058. https://doi.org/10.3758/s13428-018- 01189-8",
+      "page_number": null
+    },
+    {
+      "text_id": 392,
+      "paragraph_id": 113,
+      "section_id": 30,
+      "text": "Stella, F., Urdapilleta, E., Luo, Y., & Treves, A. (2020). Partial coherence and frustration in self-organizing spherical grids. Hippocampus, 30(4), 302-313. https://doi.org/10 .1002/hipo.23144",
+      "page_number": null
+    },
+    {
+      "text_id": 393,
+      "paragraph_id": 114,
+      "section_id": 30,
+      "text": "Tcheang, L., Bulthoff, H. H., & Burgess, N. (2011). Visual influence on path integration in darkness indicates a mul- timodal representation of large-scale space. Proceedings of the National Academy of Sciences, USA, 108(3), 1152- 1157. https://doi.org/10.1073/pnas.1011843108",
+      "page_number": null
+    },
+    {
+      "text_id": 394,
+      "paragraph_id": 115,
+      "section_id": 30,
+      "text": "Ulsaker-Janke, I., Waaga, T., Waaga, T., Moser, E. I., & Moser, M.-B. (2023). Grid cells in rats deprived of geo- metric experience during development. Proceedings of the National Academy of Sciences, USA, 120(41), Article e2310820120. https://doi.org/10.1073/pnas.2310 820120",
+      "page_number": null
+    },
+    {
+      "text_id": 395,
+      "paragraph_id": 116,
+      "section_id": 30,
+      "text": "Wang, R. F. (2016). Building a cognitive map by assembling multiple path integration systems. Psychonomic Bulletin & Review, 23(3), 692-702. https://doi.org/10.3758/s13423- 015-0952-y",
+      "page_number": null
+    },
+    {
+      "text_id": 396,
+      "paragraph_id": 117,
+      "section_id": 30,
+      "text": "Warren, W. H., Rothman, D. B., Schnapp, B. H., & Ericson, J. D. (2017). Wormholes in virtual space: From cogni- tive maps to cognitive graphs. Cognition, 166, 152-163. https://doi.org/10.1016/j.cognition.2017.05.020",
+      "page_number": null
+    },
+    {
+      "text_id": 397,
+      "paragraph_id": 118,
+      "section_id": 30,
+      "text": "Widdowson, C., & Wang, R. F. (2022). Human navigation in curved spaces. Cognition, 218, Article 104923. https:// doi.org/10.1016/j.cognition.2021.104923",
+      "page_number": null
+    },
+    {
+      "text_id": 398,
+      "paragraph_id": 119,
+      "section_id": 30,
+      "text": "Wiener, J. M., & Mallot, H. A. (2003). \"Fine-to-coarse\" route planning and navigation in regionalized environments. Spatial Cognition & Computation, 3(4), 331-358. https:// doi.org/10.1207/s15427633scc0304_5",
+      "page_number": null
+    },
+    {
+      "text_id": 399,
+      "paragraph_id": 120,
+      "section_id": 30,
+      "text": "Wittmann, T., & Schwegler, H. (1995). Path integration-A network model. Biological Cybernetics, 73(6), 569-575. https://doi.org/10.1007/BF00199549",
+      "page_number": null
+    }
+  ],
+  "section": [
+    {
+      "section_id": 0,
+      "header": "Abstract",
+      "parent_section_id": null,
+      "section_type": "abstract",
+      "classification_score": null
+    },
+    {
+      "section_id": 1,
+      "header": "Introduction",
+      "parent_section_id": null,
+      "section_type": "intro",
+      "classification_score": null
+    },
+    {
+      "section_id": 3,
+      "header": "Participants",
+      "parent_section_id": null,
+      "section_type": "method",
+      "classification_score": null
+    },
+    {
+      "section_id": 4,
+      "header": "Justification for sample size",
+      "parent_section_id": null,
+      "section_type": "method",
+      "classification_score": null
+    },
+    {
+      "section_id": 5,
+      "header": "Virtual environment and equipment",
+      "parent_section_id": null,
+      "section_type": "method",
+      "classification_score": null
+    },
+    {
+      "section_id": 6,
+      "header": "Statement of Relevance",
+      "parent_section_id": null,
+      "section_type": "method",
+      "classification_score": null
+    },
+    {
+      "section_id": 7,
+      "header": "Experiment",
+      "parent_section_id": null,
+      "section_type": "method",
+      "classification_score": null
+    },
+    {
+      "section_id": 8,
+      "header": "Analysis Triangle-completion task: main hypothesis testing.",
+      "parent_section_id": null,
+      "section_type": "method",
+      "classification_score": null
+    },
+    {
+      "section_id": 9,
+      "header": "Object-location memory test.",
+      "parent_section_id": null,
+      "section_type": "method",
+      "classification_score": null
+    },
+    {
+      "section_id": 10,
+      "header": "Simulation of route planning based on multiple planar maps.",
+      "parent_section_id": null,
+      "section_type": "method",
+      "classification_score": null
+    },
+    {
+      "section_id": 12,
+      "header": "Path integration on the sphere is better explained by a planar geometry model",
+      "parent_section_id": null,
+      "section_type": "results",
+      "classification_score": null
+    },
+    {
+      "section_id": 13,
+      "header": "Planar bias prevails: exploratory analyses on mixed models, spherical models of various radii, reaction time, strategy, and previous knowledge of spherical geometry",
+      "parent_section_id": null,
+      "section_type": "results",
+      "classification_score": null
+    },
+    {
+      "section_id": 14,
+      "header": "Large direction error at the start, but small position error at the end",
+      "parent_section_id": null,
+      "section_type": "results",
+      "classification_score": null
+    },
+    {
+      "section_id": 15,
+      "header": "Reasonable navigation performance can be achieved by using multiple planar maps",
+      "parent_section_id": null,
+      "section_type": "results",
+      "classification_score": null
+    },
+    {
+      "section_id": 16,
+      "header": "Discussion",
+      "parent_section_id": null,
+      "section_type": "discussion",
+      "classification_score": null
+    },
+    {
+      "section_id": 17,
+      "header": "Transparency",
+      "parent_section_id": null,
+      "section_type": "discussion",
+      "classification_score": null
+    },
+    {
+      "section_id": 18,
+      "header": "Acknowledgments",
+      "parent_section_id": null,
+      "section_type": "acknowledgement",
+      "classification_score": null
+    },
+    {
+      "section_id": 19,
+      "header": "Funding",
+      "parent_section_id": null,
+      "section_type": "funding",
+      "classification_score": null
+    },
+    {
+      "section_id": 20,
+      "header": "Open Practices",
+      "parent_section_id": null,
+      "section_type": "funding",
+      "classification_score": null
+    },
+    {
+      "section_id": 21,
+      "header": "Declaration of Conflicting Interests",
+      "parent_section_id": null,
+      "section_type": "conflict",
+      "classification_score": null
+    },
+    {
+      "section_id": 23,
+      "header": "Misun Kim: Conceptualization; Data curation; Formal analysis; Investigation; Methodology; Project administration; Software; Supervision; Validation; Visualization; Writing -original draft; Writing -review & editing.",
+      "parent_section_id": null,
+      "section_type": "contribution",
+      "classification_score": null
+    },
+    {
+      "section_id": 24,
+      "header": "Supplemental Material",
+      "parent_section_id": null,
+      "section_type": "annex",
+      "classification_score": null
+    },
+    {
+      "section_id": 25,
+      "header": "Fig 1",
+      "parent_section_id": null,
+      "section_type": "figure",
+      "classification_score": null
+    },
+    {
+      "section_id": 26,
+      "header": "Fig 2",
+      "parent_section_id": null,
+      "section_type": "figure",
+      "classification_score": null
+    },
+    {
+      "section_id": 27,
+      "header": "Fig 3",
+      "parent_section_id": null,
+      "section_type": "figure",
+      "classification_score": null
+    },
+    {
+      "section_id": 28,
+      "header": "Fig 4",
+      "parent_section_id": null,
+      "section_type": "figure",
+      "classification_score": null
+    },
+    {
+      "section_id": 29,
+      "header": "Fig 5",
+      "parent_section_id": null,
+      "section_type": "figure",
+      "classification_score": null
+    },
+    {
+      "section_id": 30,
+      "header": "References",
+      "parent_section_id": null,
+      "section_type": "references",
+      "classification_score": null
+    }
+  ],
+  "url": [
+    {
+      "href": "https://osf.io/2es6n",
+      "link_text": null,
+      "text_id": 86
+    },
+    {
+      "href": "https://osf.io/jpm5a",
+      "link_text": null,
+      "text_id": 86
+    },
+    {
+      "href": "https://osf.io/aux7s",
+      "link_text": null,
+      "text_id": 109
+    },
+    {
+      "href": "https://osf.io/nw3mc",
+      "link_text": null,
+      "text_id": 109
+    },
+    {
+      "href": "https://osf.io/ks639",
+      "link_text": null,
+      "text_id": 132
+    },
+    {
+      "href": "https://osf.io/y75nu",
+      "link_text": null,
+      "text_id": 132
+    },
+    {
+      "href": "https://doi.org/10.17605/OSF.IO/4TYM7",
+      "link_text": null,
+      "text_id": 305
+    },
+    {
+      "href": "https://doi.org/10.17605/OSF.IO/X4T9A",
+      "link_text": null,
+      "text_id": 308
+    },
+    {
+      "href": "http://www.psychologicalscience.org/publications",
+      "link_text": null,
+      "text_id": 311
+    },
+    {
+      "href": "journals.sagepub.com/doi/suppl/10.1177/09567976241279291",
+      "link_text": null,
+      "text_id": 314
+    }
+  ],
+  "bib": [
+    {
+      "bib_type": "article",
+      "doi": "10.1038/nature21692",
+      "title": "Mapping of a non-spatial dimension by the hippocampal-entorhinal circuit",
+      "authors": "Aronov, D; Nevers, R; Tank, D W",
+      "editors": "",
+      "publisher": "",
+      "year": 2017,
+      "volume": "543",
+      "issue": "7647",
+      "first_page": "719",
+      "last_page": "722",
+      "container": "Nature",
+      "bib_id": 0,
+      "year_suffix": "",
+      "text_id": 360
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1016/j.neuron.2019.03.034",
+      "title": "Grid-like neural representations support olfactory navigation of a two-dimensional odor space",
+      "authors": "Bao, X; Gjorgieva, E; Shanahan, L K; Howard, J D; Kahnt, T; Gottfried, J A",
+      "editors": "",
+      "publisher": "",
+      "year": 2019,
+      "volume": "102",
+      "issue": "5",
+      "first_page": "1066",
+      "last_page": "1075",
+      "container": "Neuron",
+      "bib_id": 1,
+      "year_suffix": "",
+      "text_id": 361
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.3791/3436",
+      "title": "MPI CyberMotion Simulator: Implementation of a novel motion simulator to investigate multisensory path integration in three dimensions",
+      "authors": "Barnett-Cowan, M; Meilinger, T; Vidal, M; Teufel, H; Bülthoff, H H",
+      "editors": "",
+      "publisher": "",
+      "year": 2012,
+      "volume": "",
+      "issue": "",
+      "first_page": "63",
+      "last_page": "3436",
+      "container": "Journal of Visualized Experiments",
+      "bib_id": 2,
+      "year_suffix": "",
+      "text_id": 362
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1016/j.neuron.2018.10.002",
+      "title": "What is a cognitive map? Organizing knowledge for flexible behavior",
+      "authors": "Behrens, T E J; Muller, T H; Whittington, J C R; Mark, S; Baram, A B; Stachenfeld, K L; Kurth-Nelson, Z",
+      "editors": "",
+      "publisher": "",
+      "year": 2018,
+      "volume": "100",
+      "issue": "2",
+      "first_page": "490",
+      "last_page": "509",
+      "container": "Neuron",
+      "bib_id": 3,
+      "year_suffix": "",
+      "text_id": 363
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1126/science.aat6766",
+      "title": "Navigating cognition: Spatial codes for human thinking",
+      "authors": "Bellmund, J L S; Gärdenfors, P; Moser, E I; Doeller, C F",
+      "editors": "",
+      "publisher": "",
+      "year": 2018,
+      "volume": "",
+      "issue": "6415",
+      "first_page": "362",
+      "last_page": null,
+      "container": "Science",
+      "bib_id": 4,
+      "year_suffix": "",
+      "text_id": 364
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1371/journal.pone.0112544",
+      "title": "From cognitive maps to cognitive graphs",
+      "authors": "Chrastil, E R; Warren, W H",
+      "editors": "",
+      "publisher": "",
+      "year": 2014,
+      "volume": "9",
+      "issue": "11",
+      "first_page": null,
+      "last_page": null,
+      "container": "PLOS ONE",
+      "bib_id": 5,
+      "year_suffix": "",
+      "text_id": 365
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1037/xhp0000875",
+      "title": "Executing the homebound path is a major source of error in homing by path integration",
+      "authors": "Chrastil, E R; Warren, W H",
+      "editors": "",
+      "publisher": "",
+      "year": 2021,
+      "volume": "47",
+      "issue": "1",
+      "first_page": "13",
+      "last_page": "35",
+      "container": "Journal of Experimental Psychology: Human Perception and Performance",
+      "bib_id": 6,
+      "year_suffix": "",
+      "text_id": 366
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1126/science.1121739",
+      "title": "Core knowledge of geometry in an Amazonian indigene group",
+      "authors": "Dehaene, S; Izard, V; Pica, P; Spelke, E",
+      "editors": "",
+      "publisher": "",
+      "year": 2006,
+      "volume": "311",
+      "issue": "5759",
+      "first_page": "381",
+      "last_page": "384",
+      "container": "Science",
+      "bib_id": 7,
+      "year_suffix": "",
+      "text_id": 367
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "",
+      "authors": "Gärdenfors, P",
+      "editors": "",
+      "publisher": "Bradford Books",
+      "year": 2000,
+      "volume": "",
+      "issue": "",
+      "first_page": null,
+      "last_page": null,
+      "container": "",
+      "bib_id": 8,
+      "year_suffix": "",
+      "text_id": 368
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1038/s41586-021-04268-7",
+      "title": "Toroidal topology of population activity in grid cells",
+      "authors": "Gardner, R J; Hermansen, E; Pachitariu, M; Burak, Y; Baas, N A; Dunn, B A; Moser, M.-B; Moser, E I",
+      "editors": "",
+      "publisher": "",
+      "year": 2022,
+      "volume": "602",
+      "issue": "",
+      "first_page": "123",
+      "last_page": "128",
+      "container": "Nature",
+      "bib_id": 9,
+      "year_suffix": "",
+      "text_id": 369
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1038/s41586-021-03783-x",
+      "title": "Locally ordered representation of 3D space in the entorhinal cortex",
+      "authors": "Ginosar, G; Aljadeff, J; Burak, Y; Sompolinsky, H; Las, L; Ulanovsky, N",
+      "editors": "",
+      "publisher": "",
+      "year": 2021,
+      "volume": "596",
+      "issue": "",
+      "first_page": "404",
+      "last_page": "409",
+      "container": "Nature",
+      "bib_id": 10,
+      "year_suffix": "",
+      "text_id": 370
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1016/j.neuron.2023.03.027",
+      "title": "Are grid cells used for navigation? On local metrics, subjective spaces, and black holes",
+      "authors": "Ginosar, G; Aljadeff, J; Las, L; Derdikman, D; Ulanovsky, N",
+      "editors": "",
+      "publisher": "",
+      "year": 2023,
+      "volume": "111",
+      "issue": "12",
+      "first_page": "1858",
+      "last_page": "1875",
+      "container": "Neuron",
+      "bib_id": 11,
+      "year_suffix": "",
+      "text_id": 371
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1038/s41467-020-14611-7",
+      "title": "The placecell representation of volumetric space in rats",
+      "authors": "Grieves, R M; Jedidi-Ayoub, S; Mishchanchuk, K; Liu, A; Renaudineau, S; Jeffery, K J",
+      "editors": "",
+      "publisher": "",
+      "year": 2020,
+      "volume": "11",
+      "issue": "1",
+      "first_page": "1",
+      "last_page": "13",
+      "container": "Nature Communications",
+      "bib_id": 12,
+      "year_suffix": "",
+      "text_id": 372
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.3389/fpsyg.2015.00925",
+      "title": "Grid cells on steeply sloping terrain: Evidence for planar rather than volumetric encoding",
+      "authors": "Hayman, R M A; Casali, G; Wilson, J J; Jeffery, K J",
+      "editors": "",
+      "publisher": "",
+      "year": 2015,
+      "volume": "6",
+      "issue": "",
+      "first_page": null,
+      "last_page": null,
+      "container": "Frontiers in Psychology",
+      "bib_id": 13,
+      "year_suffix": "",
+      "text_id": 373
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.3758/BF03197683",
+      "title": "Evidence of hierarchies in cognitive maps",
+      "authors": "Hirtle, S C; Jonides, J",
+      "editors": "",
+      "publisher": "",
+      "year": 1985,
+      "volume": "13",
+      "issue": "3",
+      "first_page": "208",
+      "last_page": "217",
+      "container": "Memory & Cognition",
+      "bib_id": 14,
+      "year_suffix": "",
+      "text_id": 374
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1037/dev0001509",
+      "title": "Mindbending geometry: Children's and adults' intuitions about linearity on spheres",
+      "authors": "Huey, H; Jordan, M; Hart, Y; Dillon, M R",
+      "editors": "",
+      "publisher": "",
+      "year": 2023,
+      "volume": "59",
+      "issue": "5",
+      "first_page": "886",
+      "last_page": "892",
+      "container": "Developmental Psychology",
+      "bib_id": 15,
+      "year_suffix": "",
+      "text_id": 375
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1073/pnas.1016686108",
+      "title": "Flexible intuitions of Euclidean geometry in an Amazonian indigene group",
+      "authors": "Izard, V; Pica, P; Spelke, E S; Dehaene, S",
+      "editors": "",
+      "publisher": "",
+      "year": 2011,
+      "volume": "108",
+      "issue": "24",
+      "first_page": "9782",
+      "last_page": "9787",
+      "container": "Proceedings of the National Academy of Sciences",
+      "bib_id": 16,
+      "year_suffix": "",
+      "text_id": 376
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1068/p3311",
+      "title": "Path integration from optic flow and body senses in a homing task",
+      "authors": "Kearns, M J; Warren, W H; Duchon, A P; Tarr, M J",
+      "editors": "",
+      "publisher": "",
+      "year": 2002,
+      "volume": "31",
+      "issue": "3",
+      "first_page": "349",
+      "last_page": "374",
+      "container": "Perception",
+      "bib_id": 17,
+      "year_suffix": "",
+      "text_id": 377
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1016/j.cognition.2022.105126",
+      "title": "Adaptive cognitive maps for curved surfaces in the 3D world",
+      "authors": "Kim, M; Doeller, C F",
+      "editors": "",
+      "publisher": "",
+      "year": 2022,
+      "volume": "",
+      "issue": "",
+      "first_page": "225",
+      "last_page": "105126",
+      "container": "Cognition",
+      "bib_id": 18,
+      "year_suffix": "",
+      "text_id": 378
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1093/cercor/bhy054",
+      "title": "Hippocampus, retrosplenial and parahippocampal cortices encode multicompartment 3D space in a hierarchical manner",
+      "authors": "Kim, M; Maguire, E A",
+      "editors": "",
+      "publisher": "",
+      "year": 2018,
+      "volume": "28",
+      "issue": "5",
+      "first_page": "1898",
+      "last_page": "1909",
+      "container": "Cerebral Cortex",
+      "bib_id": 19,
+      "year_suffix": "",
+      "text_id": 379
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1371/journal.pcbi.1007796",
+      "title": "Efficient and flexible representation of higher-dimensional cognitive variables with grid cells",
+      "authors": "Klukas, M; Lewis, M; Fiete, I",
+      "editors": "",
+      "publisher": "",
+      "year": 2020,
+      "volume": "16",
+      "issue": "4",
+      "first_page": "e1007796",
+      "last_page": null,
+      "container": "PLOS Computational Biology",
+      "bib_id": 20,
+      "year_suffix": "",
+      "text_id": 380
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1371/journal.pone.0254811",
+      "title": "A power approximation for the Kenward and Roger Wald test in the linear mixed model",
+      "authors": "Kreidler, S M; Ringham, B M; Muller, K E; Glueck, D H",
+      "editors": "",
+      "publisher": "",
+      "year": 2021,
+      "volume": "16",
+      "issue": "7",
+      "first_page": null,
+      "last_page": null,
+      "container": "PLOS ONE",
+      "bib_id": 21,
+      "year_suffix": "",
+      "text_id": 381
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.3758/s13428-021-01546-0",
+      "title": "Estimating power in (generalized) linear mixed models: An open introduction and tutorial in R",
+      "authors": "Kumle, L; Võ, M L; Draschkow, -H; , D",
+      "editors": "",
+      "publisher": "",
+      "year": 2021,
+      "volume": "53",
+      "issue": "6",
+      "first_page": "2528",
+      "last_page": "2543",
+      "container": "Behavior Research Methods",
+      "bib_id": 22,
+      "year_suffix": "",
+      "text_id": 382
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1038/nrn1932",
+      "title": "Path integration and the neural basis of the \"cognitive map",
+      "authors": "Mcnaughton, B L; Battaglia, F P; Jensen, O; Moser, E I; Moser, M.-B",
+      "editors": "",
+      "publisher": "",
+      "year": 2006,
+      "volume": "7",
+      "issue": "8",
+      "first_page": "663",
+      "last_page": "678",
+      "container": "Nature Reviews Neuroscience",
+      "bib_id": 23,
+      "year_suffix": "",
+      "text_id": 383
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1177/0013916593253002",
+      "title": "Integrating knowledge of vertically aligned large-scale spaces",
+      "authors": "Montello, D R; Pick, H L",
+      "editors": "",
+      "publisher": "",
+      "year": 1993,
+      "volume": "25",
+      "issue": "3",
+      "first_page": "457",
+      "last_page": "484",
+      "container": "Environment and Behavior",
+      "bib_id": 24,
+      "year_suffix": "",
+      "text_id": 384
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1038/nn.4653",
+      "title": "Spatial representation in the hippocampal formation: A history",
+      "authors": "Moser, E I; Moser, M.-B; Mcnaughton, B L",
+      "editors": "",
+      "publisher": "",
+      "year": 2017,
+      "volume": "20",
+      "issue": "11",
+      "first_page": "1448",
+      "last_page": "1464",
+      "container": "Nature Neuroscience",
+      "bib_id": 25,
+      "year_suffix": "",
+      "text_id": 385
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "",
+      "authors": "O'keefe, J; Nadel, L",
+      "editors": "",
+      "publisher": "Oxford University Press",
+      "year": 1978,
+      "volume": "",
+      "issue": "",
+      "first_page": null,
+      "last_page": null,
+      "container": "",
+      "bib_id": 26,
+      "year_suffix": "",
+      "text_id": 386
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1016/j.neuron.2020.06.030",
+      "title": "Map making: Constructing, combining, and inferring on abstract cognitive maps",
+      "authors": "Park, S A; Miller, D S; Nili, H; Ranganath, C; Boorman, E D",
+      "editors": "",
+      "publisher": "",
+      "year": 2020,
+      "volume": "107",
+      "issue": "6",
+      "first_page": "1226",
+      "last_page": "1238",
+      "container": "Neuron",
+      "bib_id": 27,
+      "year_suffix": "",
+      "text_id": 387
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1016/j.tics.2020.10.004",
+      "title": "Structuring knowledge with cognitive maps and cognitive graphs",
+      "authors": "Peer, M; Brunec, I K; Newcombe, N; Epstein, R A",
+      "editors": "",
+      "publisher": "",
+      "year": 2020,
+      "volume": "25",
+      "issue": "1",
+      "first_page": "37",
+      "last_page": "54",
+      "container": "Trends in Cognitive Science",
+      "bib_id": 28,
+      "year_suffix": "",
+      "text_id": 388
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1177/0049124199027003005",
+      "title": "Bayes factors and BIC: Comment on \"a critique of the Bayesian information criterion for model selection",
+      "authors": "Raftery, A E",
+      "editors": "",
+      "publisher": "",
+      "year": 1999,
+      "volume": "27",
+      "issue": "3",
+      "first_page": "411",
+      "last_page": "427",
+      "container": "Sociological Methods & Research",
+      "bib_id": 29,
+      "year_suffix": "",
+      "text_id": 389
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1152/jn.2000.83.1.393",
+      "title": "Maintenance of rat head direction cell firing during locomotion in the vertical plane",
+      "authors": "Stackman, R W; Tullman, M L; Taube, J S",
+      "editors": "",
+      "publisher": "",
+      "year": 2000,
+      "volume": "83",
+      "issue": "1",
+      "first_page": "393",
+      "last_page": "405",
+      "container": "Journal of Neurophysiology",
+      "bib_id": 30,
+      "year_suffix": "",
+      "text_id": 390
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.3758/s13428-018-01189-8",
+      "title": "A tutorial on Bayes Factor Design Analysis using an informed prior",
+      "authors": "Stefan, A M; Gronau, Q F; Schönbrodt, F D; Wagenmakers, E.-J",
+      "editors": "",
+      "publisher": "",
+      "year": 2019,
+      "volume": "51",
+      "issue": "3",
+      "first_page": "1042",
+      "last_page": "1058",
+      "container": "Behavior Research Methods",
+      "bib_id": 31,
+      "year_suffix": "",
+      "text_id": 391
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1002/hipo.23144",
+      "title": "Partial coherence and frustration in self-organizing spherical grids",
+      "authors": "Stella, F; Urdapilleta, E; Luo, Y; Treves, A",
+      "editors": "",
+      "publisher": "",
+      "year": 2020,
+      "volume": "30",
+      "issue": "4",
+      "first_page": "302",
+      "last_page": "313",
+      "container": "Hippocampus",
+      "bib_id": 32,
+      "year_suffix": "",
+      "text_id": 392
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1073/pnas.1011843108",
+      "title": "Visual influence on path integration in darkness indicates a multimodal representation of large-scale space",
+      "authors": "Tcheang, L; Bulthoff, H H; Burgess, N",
+      "editors": "",
+      "publisher": "",
+      "year": 2011,
+      "volume": "108",
+      "issue": "3",
+      "first_page": "1152",
+      "last_page": "1157",
+      "container": "Proceedings of the National Academy of Sciences",
+      "bib_id": 33,
+      "year_suffix": "",
+      "text_id": 393
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1073/pnas.2310820120",
+      "title": "Grid cells in rats deprived of geometric experience during development",
+      "authors": "Ulsaker-Janke, I; Waaga, T; Waaga, T; Moser, E I; Moser, M.-B",
+      "editors": "",
+      "publisher": "",
+      "year": 2023,
+      "volume": "120",
+      "issue": "41",
+      "first_page": null,
+      "last_page": null,
+      "container": "Proceedings of the National Academy of Sciences, USA",
+      "bib_id": 34,
+      "year_suffix": "",
+      "text_id": 394
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.3758/s13423-015-0952-y",
+      "title": "Building a cognitive map by assembling multiple path integration systems",
+      "authors": "Wang, R F",
+      "editors": "",
+      "publisher": "",
+      "year": 2016,
+      "volume": "23",
+      "issue": "3",
+      "first_page": "692",
+      "last_page": "702",
+      "container": "Psychonomic Bulletin & Review",
+      "bib_id": 35,
+      "year_suffix": "",
+      "text_id": 395
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1016/j.cognition.2017.05.020",
+      "title": "Wormholes in virtual space: From cognitive maps to cognitive graphs",
+      "authors": "Warren, W H; Rothman, D B; Schnapp, B H; Ericson, J D",
+      "editors": "",
+      "publisher": "",
+      "year": 2017,
+      "volume": "166",
+      "issue": "",
+      "first_page": "152",
+      "last_page": "163",
+      "container": "Cognition",
+      "bib_id": 36,
+      "year_suffix": "",
+      "text_id": 396
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1016/j.cognition.2021.104923",
+      "title": "Human navigation in curved spaces",
+      "authors": "Widdowson, C; Wang, R F",
+      "editors": "",
+      "publisher": "",
+      "year": 2022,
+      "volume": "",
+      "issue": "",
+      "first_page": "218",
+      "last_page": "104923",
+      "container": "Cognition",
+      "bib_id": 37,
+      "year_suffix": "",
+      "text_id": 397
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1207/s15427633scc0304_5",
+      "title": "Fine-to-coarse\" route planning and navigation in regionalized environments",
+      "authors": "Wiener, J M; Mallot, H A",
+      "editors": "",
+      "publisher": "",
+      "year": 2003,
+      "volume": "3",
+      "issue": "4",
+      "first_page": "331",
+      "last_page": "358",
+      "container": "Spatial Cognition & Computation",
+      "bib_id": 38,
+      "year_suffix": "",
+      "text_id": 398
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1007/BF00199549",
+      "title": "Path integration-A network model",
+      "authors": "Wittmann, T; Schwegler, H",
+      "editors": "",
+      "publisher": "",
+      "year": 1995,
+      "volume": "73",
+      "issue": "6",
+      "first_page": "569",
+      "last_page": "575",
+      "container": "Biological Cybernetics",
+      "bib_id": 39,
+      "year_suffix": "",
+      "text_id": 399
+    }
+  ],
+  "xref": [
+    {
+      "xref_id": 0,
+      "xref_type": "bib",
+      "contents": "(Aronov et al., 2017;",
+      "text_id": 286
+    },
+    {
+      "xref_id": 1,
+      "xref_type": "bib",
+      "contents": "Bao et al., 2019;",
+      "text_id": 286
+    },
+    {
+      "xref_id": 2,
+      "xref_type": "bib",
+      "contents": "(Barnett-Cowan et al., 2012)",
+      "text_id": 293
+    },
+    {
+      "xref_id": 3,
+      "xref_type": "bib",
+      "contents": "(Behrens et al., 2018;",
+      "text_id": 9
+    },
+    {
+      "xref_id": 4,
+      "xref_type": "bib",
+      "contents": "Bellmund et al., 2018;",
+      "text_id": 9
+    },
+    {
+      "xref_id": 4,
+      "xref_type": "bib",
+      "contents": "Bellmund et al., 2018;",
+      "text_id": 286
+    },
+    {
+      "xref_id": 5,
+      "xref_type": "bib",
+      "contents": "(Chrastil & Warren, 2014;",
+      "text_id": 281
+    },
+    {
+      "xref_id": 6,
+      "xref_type": "bib",
+      "contents": "(Chrastil & Warren, 2021)",
+      "text_id": 25
+    },
+    {
+      "xref_id": 6,
+      "xref_type": "bib",
+      "contents": "(Chrastil & Warren, 2021)",
+      "text_id": 111
+    },
+    {
+      "xref_id": 6,
+      "xref_type": "bib",
+      "contents": "(Chrastil & Warren, 2021;",
+      "text_id": 141
+    },
+    {
+      "xref_id": 7,
+      "xref_type": "bib",
+      "contents": "(Dehaene et al., 2006;",
+      "text_id": 257
+    },
+    {
+      "xref_id": 8,
+      "xref_type": "bib",
+      "contents": "Gärdenfors, 2000;",
+      "text_id": 9
+    },
+    {
+      "xref_id": 8,
+      "xref_type": "bib",
+      "contents": "Gärdenfors, 2000;",
+      "text_id": 286
+    },
+    {
+      "xref_id": 9,
+      "xref_type": "bib",
+      "contents": "(Gardner et al., 2022;",
+      "text_id": 264
+    },
+    {
+      "xref_id": 10,
+      "xref_type": "bib",
+      "contents": "(Ginosar et al., 2021;",
+      "text_id": 14
+    },
+    {
+      "xref_id": 11,
+      "xref_type": "bib",
+      "contents": "(Ginosar et al., 2023)",
+      "text_id": 283
+    },
+    {
+      "xref_id": 12,
+      "xref_type": "bib",
+      "contents": "Grieves et al., 2020;",
+      "text_id": 14
+    },
+    {
+      "xref_id": 13,
+      "xref_type": "bib",
+      "contents": "(Hayman et al., 2015;",
+      "text_id": 265
+    },
+    {
+      "xref_id": 14,
+      "xref_type": "bib",
+      "contents": "(Hirtle & Jonides, 1985;",
+      "text_id": 279
+    },
+    {
+      "xref_id": 15,
+      "xref_type": "bib",
+      "contents": "(Huey et al., 2023)",
+      "text_id": 295
+    },
+    {
+      "xref_id": 16,
+      "xref_type": "bib",
+      "contents": "Izard et al., 2011)",
+      "text_id": 257
+    },
+    {
+      "xref_id": 17,
+      "xref_type": "bib",
+      "contents": "(Kearns et al., 2002)",
+      "text_id": 126
+    },
+    {
+      "xref_id": 17,
+      "xref_type": "bib",
+      "contents": "Kearns et al., 2002;",
+      "text_id": 141
+    },
+    {
+      "xref_id": 18,
+      "xref_type": "bib",
+      "contents": "(Kim & Doeller, 2022)",
+      "text_id": 275
+    },
+    {
+      "xref_id": 19,
+      "xref_type": "bib",
+      "contents": "Kim & Maguire, 2018;",
+      "text_id": 279
+    },
+    {
+      "xref_id": 20,
+      "xref_type": "bib",
+      "contents": "(Klukas et al., 2020)",
+      "text_id": 290
+    },
+    {
+      "xref_id": 21,
+      "xref_type": "bib",
+      "contents": "(Kreidler et al., 2021;",
+      "text_id": 31
+    },
+    {
+      "xref_id": 22,
+      "xref_type": "bib",
+      "contents": "Kumle et al., 2021)",
+      "text_id": 31
+    },
+    {
+      "xref_id": 23,
+      "xref_type": "bib",
+      "contents": "(McNaughton et al., 2006;",
+      "text_id": 13
+    },
+    {
+      "xref_id": 24,
+      "xref_type": "bib",
+      "contents": "(Montello & Pick, 1993;",
+      "text_id": 22
+    },
+    {
+      "xref_id": 25,
+      "xref_type": "bib",
+      "contents": "(Moser et al., 2017;",
+      "text_id": 259
+    },
+    {
+      "xref_id": 26,
+      "xref_type": "bib",
+      "contents": "O'Keefe & Nadel, 1978)",
+      "text_id": 9
+    },
+    {
+      "xref_id": 26,
+      "xref_type": "bib",
+      "contents": "(O'Keefe & Nadel, 1978)",
+      "text_id": 277
+    },
+    {
+      "xref_id": 27,
+      "xref_type": "bib",
+      "contents": "Park et al., 2020)",
+      "text_id": 286
+    },
+    {
+      "xref_id": 28,
+      "xref_type": "bib",
+      "contents": "Peer et al., 2020)",
+      "text_id": 281
+    },
+    {
+      "xref_id": 29,
+      "xref_type": "bib",
+      "contents": "(Raftery, 1999)",
+      "text_id": 148
+    },
+    {
+      "xref_id": 30,
+      "xref_type": "bib",
+      "contents": "Stackman et al., 2000)",
+      "text_id": 265
+    },
+    {
+      "xref_id": 31,
+      "xref_type": "bib",
+      "contents": "Stefan et al., 2019)",
+      "text_id": 34
+    },
+    {
+      "xref_id": 32,
+      "xref_type": "bib",
+      "contents": "(Stella et al., 2020)",
+      "text_id": 284
+    },
+    {
+      "xref_id": 33,
+      "xref_type": "bib",
+      "contents": "Tcheang et al., 2011)",
+      "text_id": 141
+    },
+    {
+      "xref_id": 34,
+      "xref_type": "bib",
+      "contents": "Ulsaker-Janke et al., 2023)",
+      "text_id": 14
+    },
+    {
+      "xref_id": 34,
+      "xref_type": "bib",
+      "contents": "Ulsaker-Janke et al., 2023)",
+      "text_id": 264
+    },
+    {
+      "xref_id": 35,
+      "xref_type": "bib",
+      "contents": "Wang, 2016)",
+      "text_id": 13
+    },
+    {
+      "xref_id": 36,
+      "xref_type": "bib",
+      "contents": "(Warren et al., 2017)",
+      "text_id": 280
+    },
+    {
+      "xref_id": 37,
+      "xref_type": "bib",
+      "contents": "(Widdowson & Wang, 2022)",
+      "text_id": 245
+    },
+    {
+      "xref_id": 38,
+      "xref_type": "bib",
+      "contents": "Wiener & Mallot, 2003)",
+      "text_id": 22
+    },
+    {
+      "xref_id": 38,
+      "xref_type": "bib",
+      "contents": "Wiener & Mallot, 2003)",
+      "text_id": 279
+    },
+    {
+      "xref_id": 39,
+      "xref_type": "bib",
+      "contents": "Wittmann & Schwegler, 1995)",
+      "text_id": 259
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "1a",
+      "text_id": 18
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "1a",
+      "text_id": 19
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "1a",
+      "text_id": 20
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "1b",
+      "text_id": 21
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "S1",
+      "text_id": 86
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "2",
+      "text_id": 36
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "2b",
+      "text_id": 55
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "2b",
+      "text_id": 57
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "2a",
+      "text_id": 55
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "2a",
+      "text_id": 57
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "S2",
+      "text_id": 86
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "2e",
+      "text_id": 112
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "2f",
+      "text_id": 112
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "S3",
+      "text_id": null
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "3b",
+      "text_id": null
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "3b",
+      "text_id": 193
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "3c",
+      "text_id": null
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "3c",
+      "text_id": 193
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "S3",
+      "text_id": null
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "S3",
+      "text_id": 193
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "3d",
+      "text_id": null
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "3d",
+      "text_id": 193
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "3e",
+      "text_id": null
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "3e",
+      "text_id": 193
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "S4",
+      "text_id": null
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "S4c",
+      "text_id": null
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "S4c",
+      "text_id": null
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "S4d",
+      "text_id": null
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "S4d",
+      "text_id": null
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "4b",
+      "text_id": 218
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "4c",
+      "text_id": 218
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "S5",
+      "text_id": null
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "5a",
+      "text_id": 233
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "5a",
+      "text_id": 234
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "5a",
+      "text_id": 235
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "5a",
+      "text_id": 237
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "5a",
+      "text_id": 238
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "5b",
+      "text_id": 233
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "5b",
+      "text_id": 234
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "5b",
+      "text_id": 235
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "5b",
+      "text_id": 237
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "5b",
+      "text_id": 238
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "S7",
+      "text_id": null
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "S6",
+      "text_id": null
+    },
+    {
+      "xref_id": null,
+      "xref_type": "table",
+      "contents": "S1 through  S4",
+      "text_id": null
+    }
+  ],
+  "figure": [
+    {
+      "figure_id": 1,
+      "section_id": 25,
+      "image": null,
+      "page_number": null
+    },
+    {
+      "figure_id": 2,
+      "section_id": 26,
+      "image": null,
+      "page_number": null
+    },
+    {
+      "figure_id": 3,
+      "section_id": 27,
+      "image": null,
+      "page_number": null
+    },
+    {
+      "figure_id": 4,
+      "section_id": 28,
+      "image": null,
+      "page_number": null
+    },
+    {
+      "figure_id": 5,
+      "section_id": 29,
+      "image": null,
+      "page_number": null
+    }
+  ],
+  "table": [],
+  "eq": [
+    {
+      "text_id": 3,
+      "grp_id": 1,
+      "lhs": "N",
+      "comp": "=",
+      "rhs": "20"
+    },
+    {
+      "text_id": 28,
+      "grp_id": 2,
+      "lhs": "age",
+      "comp": "=",
+      "rhs": "26.4"
+    },
+    {
+      "text_id": 28,
+      "grp_id": 2,
+      "lhs": "SD",
+      "comp": "=",
+      "rhs": "4.8"
+    },
+    {
+      "text_id": 34,
+      "grp_id": 3,
+      "lhs": "d",
+      "comp": "=",
+      "rhs": "1.9"
+    },
+    {
+      "text_id": 35,
+      "grp_id": 4,
+      "lhs": "BF",
+      "comp": "=",
+      "rhs": "3"
+    },
+    {
+      "text_id": 175,
+      "grp_id": 5,
+      "lhs": "r",
+      "comp": "=",
+      "rhs": "2"
+    },
+    {
+      "text_id": 190,
+      "grp_id": 6,
+      "lhs": "BF",
+      "comp": "=",
+      "rhs": "3.5"
+    },
+    {
+      "text_id": 190,
+      "grp_id": 6,
+      "lhs": "BF",
+      "comp": "=",
+      "rhs": "2.6"
+    },
+    {
+      "text_id": 193,
+      "grp_id": 7,
+      "lhs": "model",
+      "comp": "=",
+      "rhs": "0.67"
+    },
+    {
+      "text_id": 193,
+      "grp_id": 7,
+      "lhs": "model",
+      "comp": "=",
+      "rhs": "0.50"
+    },
+    {
+      "text_id": 193,
+      "grp_id": 7,
+      "lhs": "model",
+      "comp": "=",
+      "rhs": "0.36"
+    },
+    {
+      "text_id": 193,
+      "grp_id": 7,
+      "lhs": "model",
+      "comp": "=",
+      "rhs": "0.23"
+    },
+    {
+      "text_id": 198,
+      "grp_id": 8,
+      "lhs": "BF",
+      "comp": "=",
+      "rhs": "1.3"
+    },
+    {
+      "text_id": 198,
+      "grp_id": 8,
+      "lhs": "BF",
+      "comp": "=",
+      "rhs": "2.1"
+    },
+    {
+      "text_id": 208,
+      "grp_id": 9,
+      "lhs": "sphere",
+      "comp": "=",
+      "rhs": "6.4"
+    },
+    {
+      "text_id": 208,
+      "grp_id": 9,
+      "lhs": "plane",
+      "comp": "=",
+      "rhs": "7.0"
+    },
+    {
+      "text_id": 208,
+      "grp_id": 9,
+      "lhs": "t(19)",
+      "comp": "=",
+      "rhs": "1.1"
+    },
+    {
+      "text_id": 208,
+      "grp_id": 9,
+      "lhs": "p",
+      "comp": "=",
+      "rhs": ".85"
+    },
+    {
+      "text_id": 208,
+      "grp_id": 9,
+      "lhs": "sphere",
+      "comp": "=",
+      "rhs": "7"
+    },
+    {
+      "text_id": 208,
+      "grp_id": 9,
+      "lhs": "plane",
+      "comp": "=",
+      "rhs": "5"
+    },
+    {
+      "text_id": 208,
+      "grp_id": 9,
+      "lhs": "p",
+      "comp": "=",
+      "rhs": ".31"
+    },
+    {
+      "text_id": 212,
+      "grp_id": 10,
+      "lhs": "n",
+      "comp": "=",
+      "rhs": "9"
+    },
+    {
+      "text_id": 212,
+      "grp_id": 10,
+      "lhs": "n",
+      "comp": "=",
+      "rhs": "11"
+    },
+    {
+      "text_id": 219,
+      "grp_id": 11,
+      "lhs": "sphere-BF",
+      "comp": "=",
+      "rhs": "1.1"
+    },
+    {
+      "text_id": 219,
+      "grp_id": 11,
+      "lhs": "t(19)",
+      "comp": "=",
+      "rhs": "7.7"
+    },
+    {
+      "text_id": 219,
+      "grp_id": 11,
+      "lhs": "p",
+      "comp": "<",
+      "rhs": ".001"
+    },
+    {
+      "text_id": 219,
+      "grp_id": 11,
+      "lhs": "Cohen's d",
+      "comp": "=",
+      "rhs": "1.7"
+    },
+    {
+      "text_id": 222,
+      "grp_id": 12,
+      "lhs": "BF",
+      "comp": "=",
+      "rhs": "0.8"
+    },
+    {
+      "text_id": 222,
+      "grp_id": 12,
+      "lhs": "t(19)",
+      "comp": "=",
+      "rhs": "1.3"
+    },
+    {
+      "text_id": 222,
+      "grp_id": 12,
+      "lhs": "p",
+      "comp": "=",
+      "rhs": ".2"
+    },
+    {
+      "text_id": 222,
+      "grp_id": 12,
+      "lhs": "Cohen's d",
+      "comp": "=",
+      "rhs": "0.3"
+    },
+    {
+      "text_id": 223,
+      "grp_id": 13,
+      "lhs": "sphere",
+      "comp": "=",
+      "rhs": "50.6"
+    },
+    {
+      "text_id": 223,
+      "grp_id": 13,
+      "lhs": "chance",
+      "comp": "=",
+      "rhs": "90"
+    },
+    {
+      "text_id": 150,
+      "grp_id": 14,
+      "lhs": "BF",
+      "comp": "<",
+      "rhs": "1"
+    },
+    {
+      "text_id": 149,
+      "grp_id": 15,
+      "lhs": "BF",
+      "comp": ">",
+      "rhs": "3"
+    }
+  ],
+  "bib_match": [
+    {
+      "bib_id": 0,
+      "service": "crossref",
+      "service_id": null,
+      "score": 90.9456,
+      "bib_type": "article",
+      "doi": "10.1038/nature21692",
+      "title": "Mapping of a non-spatial dimension by the hippocampal–entorhinal circuit",
+      "authors": [
+        {
+          "given": "Dmitriy",
+          "family": "Aronov"
+        },
+        {
+          "given": "Rhino",
+          "family": "Nevers"
+        },
+        {
+          "given": "David W.",
+          "family": "Tank"
+        }
+      ],
+      "editors": [],
+      "publisher": "Springer Science and Business Media LLC",
+      "year": 2017,
+      "date": null,
+      "container": "Nature",
+      "volume": "543",
+      "issue": "7647",
+      "first_page": "719",
+      "last_page": "722",
+      "edition": null,
+      "version": null,
+      "url": "https://doi.org/10.1038/nature21692"
+    },
+    {
+      "bib_id": 1,
+      "service": "crossref",
+      "service_id": null,
+      "score": 132.1522,
+      "bib_type": "article",
+      "doi": "10.1016/j.neuron.2019.03.034",
+      "title": "Grid-like Neural Representations Support Olfactory Navigation of a Two-Dimensional Odor Space",
+      "authors": [
+        {
+          "given": "Xiaojun",
+          "family": "Bao"
+        },
+        {
+          "given": "Eva",
+          "family": "Gjorgieva"
+        },
+        {
+          "given": "Laura K.",
+          "family": "Shanahan"
+        },
+        {
+          "given": "James D.",
+          "family": "Howard"
+        },
+        {
+          "given": "Thorsten",
+          "family": "Kahnt"
+        },
+        {
+          "given": "Jay A.",
+          "family": "Gottfried"
+        }
+      ],
+      "editors": [],
+      "publisher": "Elsevier BV",
+      "year": 2019,
+      "date": null,
+      "container": "Neuron",
+      "volume": "102",
+      "issue": "5",
+      "first_page": "1066",
+      "last_page": "1075.e5",
+      "edition": null,
+      "version": null,
+      "url": "https://doi.org/10.1016/j.neuron.2019.03.034"
+    },
+    {
+      "bib_id": 2,
+      "service": "crossref",
+      "service_id": null,
+      "score": 173.9378,
+      "bib_type": "article",
+      "doi": "10.3791/3436",
+      "title": "MPI CyberMotion Simulator: Implementation of a Novel Motion Simulator to Investigate Multisensory Path Integration in Three Dimensions",
+      "authors": [
+        {
+          "given": "Michael",
+          "family": "Barnett-Cowan"
+        },
+        {
+          "given": "Tobias",
+          "family": "Meilinger"
+        },
+        {
+          "given": "Manuel",
+          "family": "Vidal"
+        },
+        {
+          "given": "Harald",
+          "family": "Teufel"
+        },
+        {
+          "given": "Heinrich H.",
+          "family": "Bülthoff"
+        }
+      ],
+      "editors": [],
+      "publisher": "MyJove Corporation",
+      "year": 2012,
+      "date": null,
+      "container": "Journal of Visualized Experiments",
+      "volume": null,
+      "issue": "63",
+      "first_page": null,
+      "last_page": null,
+      "edition": null,
+      "version": null,
+      "url": "https://doi.org/10.3791/3436"
+    },
+    {
+      "bib_id": 3,
+      "service": "crossref",
+      "service_id": null,
+      "score": 118.4139,
+      "bib_type": "article",
+      "doi": "10.1016/j.neuron.2018.10.002",
+      "title": "What Is a Cognitive Map? Organizing Knowledge for Flexible Behavior",
+      "authors": [
+        {
+          "given": "Timothy E.J.",
+          "family": "Behrens"
+        },
+        {
+          "given": "Timothy H.",
+          "family": "Muller"
+        },
+        {
+          "given": "James C.R.",
+          "family": "Whittington"
+        },
+        {
+          "given": "Shirley",
+          "family": "Mark"
+        },
+        {
+          "given": "Alon B.",
+          "family": "Baram"
+        },
+        {
+          "given": "Kimberly L.",
+          "family": "Stachenfeld"
+        },
+        {
+          "given": "Zeb",
+          "family": "Kurth-Nelson"
+        }
+      ],
+      "editors": [],
+      "publisher": "Elsevier BV",
+      "year": 2018,
+      "date": null,
+      "container": "Neuron",
+      "volume": "100",
+      "issue": "2",
+      "first_page": "490",
+      "last_page": "509",
+      "edition": null,
+      "version": null,
+      "url": "https://doi.org/10.1016/j.neuron.2018.10.002"
+    },
+    {
+      "bib_id": 4,
+      "service": "crossref",
+      "service_id": null,
+      "score": 95.539,
+      "bib_type": "article",
+      "doi": "10.1126/science.aat6766",
+      "title": "Navigating cognition: Spatial codes for human thinking",
+      "authors": [
+        {
+          "given": "Jacob L. S.",
+          "family": "Bellmund"
+        },
+        {
+          "given": "Peter",
+          "family": "Gärdenfors"
+        },
+        {
+          "given": "Edvard I.",
+          "family": "Moser"
+        },
+        {
+          "given": "Christian F.",
+          "family": "Doeller"
+        }
+      ],
+      "editors": [],
+      "publisher": "American Association for the Advancement of Science (AAAS)",
+      "year": 2018,
+      "date": null,
+      "container": "Science",
+      "volume": "362",
+      "issue": "6415",
+      "first_page": null,
+      "last_page": null,
+      "edition": null,
+      "version": null,
+      "url": "https://doi.org/10.1126/science.aat6766"
+    },
+    {
+      "bib_id": 6,
+      "service": "crossref",
+      "service_id": null,
+      "score": 114.1777,
+      "bib_type": "article",
+      "doi": "10.1037/xhp0000875",
+      "title": "Executing the homebound path is a major source of error in homing by path integration.",
+      "authors": [
+        {
+          "given": "Elizabeth R.",
+          "family": "Chrastil"
+        },
+        {
+          "given": "William H.",
+          "family": "Warren"
+        }
+      ],
+      "editors": [],
+      "publisher": "American Psychological Association (APA)",
+      "year": 2021,
+      "date": null,
+      "container": "Journal of Experimental Psychology: Human Perception and Performance",
+      "volume": "47",
+      "issue": "1",
+      "first_page": "13",
+      "last_page": "35",
+      "edition": null,
+      "version": null,
+      "url": "https://doi.org/10.1037/xhp0000875"
+    },
+    {
+      "bib_id": 7,
+      "service": "crossref",
+      "service_id": null,
+      "score": 99.5513,
+      "bib_type": "article",
+      "doi": "10.1126/science.1121739",
+      "title": "Core Knowledge of Geometry in an Amazonian Indigene Group",
+      "authors": [
+        {
+          "given": "Stanislas",
+          "family": "Dehaene"
+        },
+        {
+          "given": "Véronique",
+          "family": "Izard"
+        },
+        {
+          "given": "Pierre",
+          "family": "Pica"
+        },
+        {
+          "given": "Elizabeth",
+          "family": "Spelke"
+        }
+      ],
+      "editors": [],
+      "publisher": "American Association for the Advancement of Science (AAAS)",
+      "year": 2006,
+      "date": null,
+      "container": "Science",
+      "volume": "311",
+      "issue": "5759",
+      "first_page": "381",
+      "last_page": "384",
+      "edition": null,
+      "version": null,
+      "url": "https://doi.org/10.1126/science.1121739"
+    },
+    {
+      "bib_id": 9,
+      "service": "crossref",
+      "service_id": null,
+      "score": 125.9387,
+      "bib_type": "misc",
+      "doi": "10.1101/2021.02.25.432776",
+      "title": "Toroidal topology of population activity in grid cells",
+      "authors": [
+        {
+          "given": "Richard J.",
+          "family": "Gardner"
+        },
+        {
+          "given": "Erik",
+          "family": "Hermansen"
+        },
+        {
+          "given": "Marius",
+          "family": "Pachitariu"
+        },
+        {
+          "given": "Yoram",
+          "family": "Burak"
+        },
+        {
+          "given": "Nils A.",
+          "family": "Baas"
+        },
+        {
+          "given": "Benjamin A.",
+          "family": "Dunn"
+        },
+        {
+          "given": "May-Britt",
+          "family": "Moser"
+        },
+        {
+          "given": "Edvard I.",
+          "family": "Moser"
+        }
+      ],
+      "editors": [],
+      "publisher": "openRxiv",
+      "year": 2021,
+      "date": null,
+      "container": null,
+      "volume": null,
+      "issue": null,
+      "first_page": null,
+      "last_page": null,
+      "edition": null,
+      "version": null,
+      "url": "https://doi.org/10.1101/2021.02.25.432776"
+    },
+    {
+      "bib_id": 10,
+      "service": "crossref",
+      "service_id": null,
+      "score": 124.5251,
+      "bib_type": "article",
+      "doi": "10.1038/s41586-021-03783-x",
+      "title": "Locally ordered representation of 3D space in the entorhinal cortex",
+      "authors": [
+        {
+          "given": "Gily",
+          "family": "Ginosar"
+        },
+        {
+          "given": "Johnatan",
+          "family": "Aljadeff"
+        },
+        {
+          "given": "Yoram",
+          "family": "Burak"
+        },
+        {
+          "given": "Haim",
+          "family": "Sompolinsky"
+        },
+        {
+          "given": "Liora",
+          "family": "Las"
+        },
+        {
+          "given": "Nachum",
+          "family": "Ulanovsky"
+        }
+      ],
+      "editors": [],
+      "publisher": "Springer Science and Business Media LLC",
+      "year": 2021,
+      "date": null,
+      "container": "Nature",
+      "volume": "596",
+      "issue": "7872",
+      "first_page": "404",
+      "last_page": "409",
+      "edition": null,
+      "version": null,
+      "url": "https://doi.org/10.1038/s41586-021-03783-x"
+    },
+    {
+      "bib_id": 11,
+      "service": "crossref",
+      "service_id": null,
+      "score": 135.4857,
+      "bib_type": "article",
+      "doi": "10.1016/j.neuron.2023.03.027",
+      "title": "Are grid cells used for navigation? On local metrics, subjective spaces, and black holes",
+      "authors": [
+        {
+          "given": "Gily",
+          "family": "Ginosar"
+        },
+        {
+          "given": "Johnatan",
+          "family": "Aljadeff"
+        },
+        {
+          "given": "Liora",
+          "family": "Las"
+        },
+        {
+          "given": "Dori",
+          "family": "Derdikman"
+        },
+        {
+          "given": "Nachum",
+          "family": "Ulanovsky"
+        }
+      ],
+      "editors": [],
+      "publisher": "Elsevier BV",
+      "year": 2023,
+      "date": null,
+      "container": "Neuron",
+      "volume": "111",
+      "issue": "12",
+      "first_page": "1858",
+      "last_page": "1875",
+      "edition": null,
+      "version": null,
+      "url": "https://doi.org/10.1016/j.neuron.2023.03.027"
+    },
+    {
+      "bib_id": 12,
+      "service": "crossref",
+      "service_id": null,
+      "score": 110.5795,
+      "bib_type": "article",
+      "doi": "10.1038/s41467-020-14611-7",
+      "title": "The place-cell representation of volumetric space in rats",
+      "authors": [
+        {
+          "given": "Roddy M.",
+          "family": "Grieves"
+        },
+        {
+          "given": "Selim",
+          "family": "Jedidi-Ayoub"
+        },
+        {
+          "given": "Karyna",
+          "family": "Mishchanchuk"
+        },
+        {
+          "given": "Anyi",
+          "family": "Liu"
+        },
+        {
+          "given": "Sophie",
+          "family": "Renaudineau"
+        },
+        {
+          "given": "Kate J.",
+          "family": "Jeffery"
+        }
+      ],
+      "editors": [],
+      "publisher": "Springer Science and Business Media LLC",
+      "year": 2020,
+      "date": null,
+      "container": "Nature Communications",
+      "volume": "11",
+      "issue": "1",
+      "first_page": null,
+      "last_page": null,
+      "edition": null,
+      "version": null,
+      "url": "https://doi.org/10.1038/s41467-020-14611-7"
+    },
+    {
+      "bib_id": 13,
+      "service": "crossref",
+      "service_id": null,
+      "score": 131.0267,
+      "bib_type": "article",
+      "doi": "10.3389/fpsyg.2015.00925",
+      "title": "Grid cells on steeply sloping terrain: evidence for planar rather than volumetric encoding",
+      "authors": [
+        {
+          "given": "Robin M. A.",
+          "family": "Hayman"
+        },
+        {
+          "given": "Giulio",
+          "family": "Casali"
+        },
+        {
+          "given": "Jonathan J.",
+          "family": "Wilson"
+        },
+        {
+          "given": "Kate J.",
+          "family": "Jeffery"
+        }
+      ],
+      "editors": [],
+      "publisher": "Frontiers Media SA",
+      "year": 2015,
+      "date": null,
+      "container": "Frontiers in Psychology",
+      "volume": "6",
+      "issue": null,
+      "first_page": null,
+      "last_page": null,
+      "edition": null,
+      "version": null,
+      "url": "https://doi.org/10.3389/fpsyg.2015.00925"
+    },
+    {
+      "bib_id": 14,
+      "service": "crossref",
+      "service_id": null,
+      "score": 76.737,
+      "bib_type": "article",
+      "doi": "10.3758/bf03197683",
+      "title": "Evidence of hierarchies in cognitive maps",
+      "authors": [
+        {
+          "given": "Stephen C.",
+          "family": "Hirtle"
+        },
+        {
+          "given": "John",
+          "family": "Jonides"
+        }
+      ],
+      "editors": [],
+      "publisher": "Springer Science and Business Media LLC",
+      "year": 1985,
+      "date": null,
+      "container": "Memory &amp; Cognition",
+      "volume": "13",
+      "issue": "3",
+      "first_page": "208",
+      "last_page": "217",
+      "edition": null,
+      "version": null,
+      "url": "https://doi.org/10.3758/bf03197683"
+    },
+    {
+      "bib_id": 15,
+      "service": "crossref",
+      "service_id": null,
+      "score": 97.941,
+      "bib_type": "article",
+      "doi": "10.1037/dev0001509",
+      "title": "Mind-bending geometry: Children’s and adults’ intuitions about linearity on spheres.",
+      "authors": [
+        {
+          "given": "Holly",
+          "family": "Huey"
+        },
+        {
+          "given": "Matthew",
+          "family": "Jordan"
+        },
+        {
+          "given": "Yuval",
+          "family": "Hart"
+        },
+        {
+          "given": "Moira R.",
+          "family": "Dillon"
+        }
+      ],
+      "editors": [],
+      "publisher": "American Psychological Association (APA)",
+      "year": 2023,
+      "date": null,
+      "container": "Developmental Psychology",
+      "volume": "59",
+      "issue": "5",
+      "first_page": "886",
+      "last_page": "892",
+      "edition": null,
+      "version": null,
+      "url": "https://doi.org/10.1037/dev0001509"
+    },
+    {
+      "bib_id": 16,
+      "service": "crossref",
+      "service_id": null,
+      "score": 110.3584,
+      "bib_type": "article",
+      "doi": "10.1073/pnas.1016686108",
+      "title": "Flexible intuitions of Euclidean geometry in an Amazonian indigene group",
+      "authors": [
+        {
+          "given": "Véronique",
+          "family": "Izard"
+        },
+        {
+          "given": "Pierre",
+          "family": "Pica"
+        },
+        {
+          "given": "Elizabeth S.",
+          "family": "Spelke"
+        },
+        {
+          "given": "Stanislas",
+          "family": "Dehaene"
+        }
+      ],
+      "editors": [],
+      "publisher": "Proceedings of the National Academy of Sciences",
+      "year": 2011,
+      "date": null,
+      "container": "Proceedings of the National Academy of Sciences",
+      "volume": "108",
+      "issue": "24",
+      "first_page": "9782",
+      "last_page": "9787",
+      "edition": null,
+      "version": null,
+      "url": "https://doi.org/10.1073/pnas.1016686108"
+    },
+    {
+      "bib_id": 17,
+      "service": "crossref",
+      "service_id": null,
+      "score": 105.1645,
+      "bib_type": "article",
+      "doi": "10.1068/p3311",
+      "title": "Path Integration from Optic Flow and Body Senses in a Homing Task",
+      "authors": [
+        {
+          "given": "Melissa J",
+          "family": "Kearns"
+        },
+        {
+          "given": "William H",
+          "family": "Warren"
+        },
+        {
+          "given": "Andrew P",
+          "family": "Duchon"
+        },
+        {
+          "given": "Michael J",
+          "family": "Tarr"
+        }
+      ],
+      "editors": [],
+      "publisher": "SAGE Publications",
+      "year": 2002,
+      "date": null,
+      "container": "Perception",
+      "volume": "31",
+      "issue": "3",
+      "first_page": "349",
+      "last_page": "374",
+      "edition": null,
+      "version": null,
+      "url": "https://doi.org/10.1068/p3311"
+    },
+    {
+      "bib_id": 18,
+      "service": "crossref",
+      "service_id": null,
+      "score": 80.4224,
+      "bib_type": "article",
+      "doi": "10.1016/j.cognition.2022.105126",
+      "title": "Adaptive cognitive maps for curved surfaces in the 3D world",
+      "authors": [
+        {
+          "given": "Misun",
+          "family": "Kim"
+        },
+        {
+          "given": "Christian F.",
+          "family": "Doeller"
+        }
+      ],
+      "editors": [],
+      "publisher": "Elsevier BV",
+      "year": 2022,
+      "date": null,
+      "container": "Cognition",
+      "volume": "225",
+      "issue": null,
+      "first_page": "105126",
+      "last_page": null,
+      "edition": null,
+      "version": null,
+      "url": "https://doi.org/10.1016/j.cognition.2022.105126"
+    },
+    {
+      "bib_id": 19,
+      "service": "crossref",
+      "service_id": null,
+      "score": 120.6282,
+      "bib_type": "article",
+      "doi": "10.1093/cercor/bhy054",
+      "title": "Hippocampus, Retrosplenial and Parahippocampal Cortices Encode Multicompartment 3D Space in a Hierarchical Manner",
+      "authors": [
+        {
+          "given": "Misun",
+          "family": "Kim"
+        },
+        {
+          "given": "Eleanor A",
+          "family": "Maguire"
+        }
+      ],
+      "editors": [],
+      "publisher": "Oxford University Press (OUP)",
+      "year": 2018,
+      "date": null,
+      "container": "Cerebral Cortex",
+      "volume": "28",
+      "issue": "5",
+      "first_page": "1898",
+      "last_page": "1909",
+      "edition": null,
+      "version": null,
+      "url": "https://doi.org/10.1093/cercor/bhy054"
+    },
+    {
+      "bib_id": 22,
+      "service": "crossref",
+      "service_id": null,
+      "score": 101.1986,
+      "bib_type": "article",
+      "doi": "10.3758/s13428-021-01546-0",
+      "title": "Estimating power in (generalized) linear mixed models: An open introduction and tutorial in R",
+      "authors": [
+        {
+          "given": "Levi",
+          "family": "Kumle"
+        },
+        {
+          "given": "Melissa L.-H.",
+          "family": "Võ"
+        },
+        {
+          "given": "Dejan",
+          "family": "Draschkow"
+        }
+      ],
+      "editors": [],
+      "publisher": "Springer Science and Business Media LLC",
+      "year": 2021,
+      "date": null,
+      "container": "Behavior Research Methods",
+      "volume": "53",
+      "issue": "6",
+      "first_page": "2528",
+      "last_page": "2543",
+      "edition": null,
+      "version": null,
+      "url": "https://doi.org/10.3758/s13428-021-01546-0"
+    },
+    {
+      "bib_id": 23,
+      "service": "crossref",
+      "service_id": null,
+      "score": 94.5693,
+      "bib_type": "article",
+      "doi": "10.1038/nrn1932",
+      "title": "Path integration and the neural basis of the 'cognitive map'",
+      "authors": [
+        {
+          "given": "Bruce L.",
+          "family": "McNaughton"
+        },
+        {
+          "given": "Francesco P.",
+          "family": "Battaglia"
+        },
+        {
+          "given": "Ole",
+          "family": "Jensen"
+        },
+        {
+          "given": "Edvard I",
+          "family": "Moser"
+        },
+        {
+          "given": "May-Britt",
+          "family": "Moser"
+        }
+      ],
+      "editors": [],
+      "publisher": "Springer Science and Business Media LLC",
+      "year": 2006,
+      "date": null,
+      "container": "Nature Reviews Neuroscience",
+      "volume": "7",
+      "issue": "8",
+      "first_page": "663",
+      "last_page": "678",
+      "edition": null,
+      "version": null,
+      "url": "https://doi.org/10.1038/nrn1932"
+    },
+    {
+      "bib_id": 24,
+      "service": "crossref",
+      "service_id": null,
+      "score": 86.936,
+      "bib_type": "article",
+      "doi": "10.1177/0013916593253002",
+      "title": "Integrating Knowledge of Vertically Aligned Large-Scale Spaces",
+      "authors": [
+        {
+          "given": "Daniel R.",
+          "family": "Montello"
+        },
+        {
+          "given": "Herbert L.",
+          "family": "Pick"
+        }
+      ],
+      "editors": [],
+      "publisher": "SAGE Publications",
+      "year": 1993,
+      "date": null,
+      "container": "Environment and Behavior",
+      "volume": "25",
+      "issue": "3",
+      "first_page": "457",
+      "last_page": "484",
+      "edition": null,
+      "version": null,
+      "url": "https://doi.org/10.1177/0013916593253002"
+    },
+    {
+      "bib_id": 25,
+      "service": "crossref",
+      "service_id": null,
+      "score": 75.5259,
+      "bib_type": "article",
+      "doi": "10.1038/nn.4653",
+      "title": "Spatial representation in the hippocampal formation: a history",
+      "authors": [
+        {
+          "given": "Edvard I",
+          "family": "Moser"
+        },
+        {
+          "given": "May-Britt",
+          "family": "Moser"
+        },
+        {
+          "given": "Bruce L",
+          "family": "McNaughton"
+        }
+      ],
+      "editors": [],
+      "publisher": "Springer Science and Business Media LLC",
+      "year": 2017,
+      "date": null,
+      "container": "Nature Neuroscience",
+      "volume": "20",
+      "issue": "11",
+      "first_page": "1448",
+      "last_page": "1464",
+      "edition": null,
+      "version": null,
+      "url": "https://doi.org/10.1038/nn.4653"
+    },
+    {
+      "bib_id": 27,
+      "service": "crossref",
+      "service_id": null,
+      "score": 110.7968,
+      "bib_type": "misc",
+      "doi": "10.1101/810051",
+      "title": "Map making: Constructing, combining, and inferring on abstract cognitive maps",
+      "authors": [
+        {
+          "given": "Seongmin A.",
+          "family": "Park"
+        },
+        {
+          "given": "Douglas S.",
+          "family": "Miller"
+        },
+        {
+          "given": "Hamed",
+          "family": "Nili"
+        },
+        {
+          "given": "Charan",
+          "family": "Ranganath"
+        },
+        {
+          "given": "Erie D.",
+          "family": "Boorman"
+        }
+      ],
+      "editors": [],
+      "publisher": "openRxiv",
+      "year": 2019,
+      "date": null,
+      "container": null,
+      "volume": null,
+      "issue": null,
+      "first_page": null,
+      "last_page": null,
+      "edition": null,
+      "version": null,
+      "url": "https://doi.org/10.1101/810051"
+    },
+    {
+      "bib_id": 28,
+      "service": "crossref",
+      "service_id": null,
+      "score": 101.5549,
+      "bib_type": "article",
+      "doi": "10.1016/j.tics.2020.10.004",
+      "title": "Structuring Knowledge with Cognitive Maps and Cognitive Graphs",
+      "authors": [
+        {
+          "given": "Michael",
+          "family": "Peer"
+        },
+        {
+          "given": "Iva K.",
+          "family": "Brunec"
+        },
+        {
+          "given": "Nora S.",
+          "family": "Newcombe"
+        },
+        {
+          "given": "Russell A.",
+          "family": "Epstein"
+        }
+      ],
+      "editors": [],
+      "publisher": "Elsevier BV",
+      "year": 2021,
+      "date": null,
+      "container": "Trends in Cognitive Sciences",
+      "volume": "25",
+      "issue": "1",
+      "first_page": "37",
+      "last_page": "54",
+      "edition": null,
+      "version": null,
+      "url": "https://doi.org/10.1016/j.tics.2020.10.004"
+    },
+    {
+      "bib_id": 29,
+      "service": "crossref",
+      "service_id": null,
+      "score": 95.1938,
+      "bib_type": "article",
+      "doi": "10.1177/0049124199027003005",
+      "title": "Bayes Factors and BIC",
+      "authors": [
+        {
+          "given": "ADRIAN E.",
+          "family": "RAFTERY"
+        }
+      ],
+      "editors": [],
+      "publisher": "SAGE Publications",
+      "year": 1999,
+      "date": null,
+      "container": "Sociological Methods &amp; Research",
+      "volume": "27",
+      "issue": "3",
+      "first_page": "411",
+      "last_page": "427",
+      "edition": null,
+      "version": null,
+      "url": "https://doi.org/10.1177/0049124199027003005"
+    },
+    {
+      "bib_id": 30,
+      "service": "crossref",
+      "service_id": null,
+      "score": 108.1569,
+      "bib_type": "article",
+      "doi": "10.1152/jn.2000.83.1.393",
+      "title": "Maintenance of Rat Head Direction Cell Firing During Locomotion in the Vertical Plane",
+      "authors": [
+        {
+          "given": "Robert W.",
+          "family": "Stackman"
+        },
+        {
+          "given": "Matthew L.",
+          "family": "Tullman"
+        },
+        {
+          "given": "Jeffrey S.",
+          "family": "Taube"
+        }
+      ],
+      "editors": [],
+      "publisher": "American Physiological Society",
+      "year": 2000,
+      "date": null,
+      "container": "Journal of Neurophysiology",
+      "volume": "83",
+      "issue": "1",
+      "first_page": "393",
+      "last_page": "405",
+      "edition": null,
+      "version": null,
+      "url": "https://doi.org/10.1152/jn.2000.83.1.393"
+    },
+    {
+      "bib_id": 31,
+      "service": "crossref",
+      "service_id": null,
+      "score": 103.9938,
+      "bib_type": "misc",
+      "doi": "10.31234/osf.io/aqr79",
+      "title": "A Tutorial on Bayes Factor Design Analysis Using an Informed Prior",
+      "authors": [
+        {
+          "given": "Angelika Marlene",
+          "family": "Stefan"
+        },
+        {
+          "given": "Quentin Frederik",
+          "family": "Gronau"
+        },
+        {
+          "given": "Felix D.",
+          "family": "Schönbrodt"
+        },
+        {
+          "given": "Eric-Jan",
+          "family": "Wagenmakers"
+        }
+      ],
+      "editors": [],
+      "publisher": "Center for Open Science",
+      "year": 2017,
+      "date": null,
+      "container": null,
+      "volume": null,
+      "issue": null,
+      "first_page": null,
+      "last_page": null,
+      "edition": null,
+      "version": null,
+      "url": "https://doi.org/10.31234/osf.io/aqr79"
+    },
+    {
+      "bib_id": 32,
+      "service": "crossref",
+      "service_id": null,
+      "score": 108.5275,
+      "bib_type": "article",
+      "doi": "10.1002/hipo.23144",
+      "title": "Partial coherence and frustration in self‐organizing spherical grids",
+      "authors": [
+        {
+          "given": "Federico",
+          "family": "Stella"
+        },
+        {
+          "given": "Eugenio",
+          "family": "Urdapilleta"
+        },
+        {
+          "given": "Yifan",
+          "family": "Luo"
+        },
+        {
+          "given": "Alessandro",
+          "family": "Treves"
+        }
+      ],
+      "editors": [],
+      "publisher": "Wiley",
+      "year": 2019,
+      "date": null,
+      "container": "Hippocampus",
+      "volume": "30",
+      "issue": "4",
+      "first_page": "302",
+      "last_page": "313",
+      "edition": null,
+      "version": null,
+      "url": "https://doi.org/10.1002/hipo.23144"
+    },
+    {
+      "bib_id": 33,
+      "service": "crossref",
+      "service_id": null,
+      "score": 95.6139,
+      "bib_type": "article",
+      "doi": "10.1073/pnas.1011843108",
+      "title": "Visual influence on path integration in darkness indicates a multimodal representation of large-scale space",
+      "authors": [
+        {
+          "given": "Lili",
+          "family": "Tcheang"
+        },
+        {
+          "given": "Heinrich H.",
+          "family": "Bülthoff"
+        },
+        {
+          "given": "Neil",
+          "family": "Burgess"
+        }
+      ],
+      "editors": [],
+      "publisher": "Proceedings of the National Academy of Sciences",
+      "year": 2011,
+      "date": null,
+      "container": "Proceedings of the National Academy of Sciences",
+      "volume": "108",
+      "issue": "3",
+      "first_page": "1152",
+      "last_page": "1157",
+      "edition": null,
+      "version": null,
+      "url": "https://doi.org/10.1073/pnas.1011843108"
+    },
+    {
+      "bib_id": 34,
+      "service": "crossref",
+      "service_id": null,
+      "score": 132.055,
+      "bib_type": "article",
+      "doi": "10.1073/pnas.2310820120",
+      "title": "Grid cells in rats deprived of geometric experience during development",
+      "authors": [
+        {
+          "given": "Ingvild",
+          "family": "Ulsaker-Janke"
+        },
+        {
+          "given": "Torgeir",
+          "family": "Waaga"
+        },
+        {
+          "given": "Tanja",
+          "family": "Waaga"
+        },
+        {
+          "given": "Edvard I.",
+          "family": "Moser"
+        },
+        {
+          "given": "May-Britt",
+          "family": "Moser"
+        }
+      ],
+      "editors": [],
+      "publisher": "Proceedings of the National Academy of Sciences",
+      "year": 2023,
+      "date": null,
+      "container": "Proceedings of the National Academy of Sciences",
+      "volume": "120",
+      "issue": "41",
+      "first_page": null,
+      "last_page": null,
+      "edition": null,
+      "version": null,
+      "url": "https://doi.org/10.1073/pnas.2310820120"
+    },
+    {
+      "bib_id": 35,
+      "service": "crossref",
+      "service_id": null,
+      "score": 72.5937,
+      "bib_type": "article",
+      "doi": "10.3758/s13423-015-0952-y",
+      "title": "Building a cognitive map by assembling multiple path integration systems",
+      "authors": [
+        {
+          "given": "Ranxiao Frances",
+          "family": "Wang"
+        }
+      ],
+      "editors": [],
+      "publisher": "Springer Science and Business Media LLC",
+      "year": 2015,
+      "date": null,
+      "container": "Psychonomic Bulletin &amp; Review",
+      "volume": "23",
+      "issue": "3",
+      "first_page": "692",
+      "last_page": "702",
+      "edition": null,
+      "version": null,
+      "url": "https://doi.org/10.3758/s13423-015-0952-y"
+    },
+    {
+      "bib_id": 36,
+      "service": "crossref",
+      "service_id": null,
+      "score": 106.99,
+      "bib_type": "article",
+      "doi": "10.1016/j.cognition.2017.05.020",
+      "title": "Wormholes in virtual space: From cognitive maps to cognitive graphs",
+      "authors": [
+        {
+          "given": "William H.",
+          "family": "Warren"
+        },
+        {
+          "given": "Daniel B.",
+          "family": "Rothman"
+        },
+        {
+          "given": "Benjamin H.",
+          "family": "Schnapp"
+        },
+        {
+          "given": "Jonathan D.",
+          "family": "Ericson"
+        }
+      ],
+      "editors": [],
+      "publisher": "Elsevier BV",
+      "year": 2017,
+      "date": null,
+      "container": "Cognition",
+      "volume": "166",
+      "issue": null,
+      "first_page": "152",
+      "last_page": "163",
+      "edition": null,
+      "version": null,
+      "url": "https://doi.org/10.1016/j.cognition.2017.05.020"
+    },
+    {
+      "bib_id": 37,
+      "service": "crossref",
+      "service_id": null,
+      "score": 60.5423,
+      "bib_type": "article",
+      "doi": "10.1016/j.cognition.2021.104923",
+      "title": "Human navigation in curved spaces",
+      "authors": [
+        {
+          "given": "Christopher",
+          "family": "Widdowson"
+        },
+        {
+          "given": "Ranxiao Frances",
+          "family": "Wang"
+        }
+      ],
+      "editors": [],
+      "publisher": "Elsevier BV",
+      "year": 2022,
+      "date": null,
+      "container": "Cognition",
+      "volume": "218",
+      "issue": null,
+      "first_page": "104923",
+      "last_page": null,
+      "edition": null,
+      "version": null,
+      "url": "https://doi.org/10.1016/j.cognition.2021.104923"
+    },
+    {
+      "bib_id": 38,
+      "service": "crossref",
+      "service_id": null,
+      "score": 99.4518,
+      "bib_type": "article",
+      "doi": "10.1207/s15427633scc0304_5",
+      "title": "'Fine-to-Coarse' Route Planning and Navigation in Regionalized Environments",
+      "authors": [
+        {
+          "given": "Jan M.",
+          "family": "Wiener"
+        },
+        {
+          "given": "Hanspeter A.",
+          "family": "Mallot"
+        }
+      ],
+      "editors": [],
+      "publisher": "Informa UK Limited",
+      "year": 2003,
+      "date": null,
+      "container": "Spatial Cognition &amp; Computation",
+      "volume": "3",
+      "issue": "4",
+      "first_page": "331",
+      "last_page": "358",
+      "edition": null,
+      "version": null,
+      "url": "https://doi.org/10.1207/s15427633scc0304_5"
+    },
+    {
+      "bib_id": 39,
+      "service": "crossref",
+      "service_id": null,
+      "score": 62.3789,
+      "bib_type": "article",
+      "doi": "10.1007/bf00199549",
+      "title": "Path integration — a network model",
+      "authors": [
+        {
+          "given": "Thomas",
+          "family": "Wittmann"
+        },
+        {
+          "given": "Helmut",
+          "family": "Schwegler"
+        }
+      ],
+      "editors": [],
+      "publisher": "Springer Science and Business Media LLC",
+      "year": 1995,
+      "date": null,
+      "container": "Biological Cybernetics",
+      "volume": "73",
+      "issue": "6",
+      "first_page": "569",
+      "last_page": "575",
+      "edition": null,
+      "version": null,
+      "url": "https://doi.org/10.1007/bf00199549"
+    }
+  ]
+}

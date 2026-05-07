@@ -1,0 +1,689 @@
+{
+  "paper_id": "09567976221139496",
+  "info": [
+    {
+      "title": "Corrigendum: Causal Inference About Good and Bad Outcomes",
+      "keywords": null,
+      "doi": "10.1177/09567976221139496",
+      "file_hash": "931aa362b07d5432",
+      "input_format": "grobid 0.9.0",
+      "file_name": "data-raw/psychsci/grobid_0.9.0-full/09567976221139496.xml",
+      "bibr_version": "10.0",
+      "paper_type": "unknown",
+      "paper_type_confidence": 0,
+      "oecd_l1": null,
+      "oecd_l2": null,
+      "oecd_confidence": null
+    }
+  ],
+  "author": [],
+  "text": [
+    {
+      "text_id": 1,
+      "paragraph_id": 1,
+      "section_id": 0,
+      "text": "Because of a data-entry error, some t statistics, confidence intervals (CIs), and effect sizes were incorrect.",
+      "page_number": null
+    },
+    {
+      "text_id": 2,
+      "paragraph_id": 1,
+      "section_id": 0,
+      "text": "The authors have completed a thorough re-analysis of the data, and the overall conclusions expressed in the article were not affected by the errors; however, several results reported in Experiments 1 and 2 did change.",
+      "page_number": null
+    },
+    {
+      "text_id": 3,
+      "paragraph_id": 2,
+      "section_id": 0,
+      "text": "The corrected text is as follows:",
+      "page_number": null
+    },
+    {
+      "text_id": 4,
+      "paragraph_id": 6,
+      "section_id": 2,
+      "text": "As a preliminary manipulation check, we verified that participants' beliefs about hidden causes varied with the outcome valence in a condition-specific manner (Fig. 2a).",
+      "page_number": null
+    },
+    {
+      "text_id": 5,
+      "paragraph_id": 6,
+      "section_id": 2,
+      "text": "Participants were more likely to believe that a hidden cause resulted in negative outcomes, as opposed to positive outcomes, overall, t(71) = 4.71, p < .001, d = 0.55, 95% CI = [0.08, 0.20].",
+      "page_number": null
+    },
+    {
+      "text_id": 6,
+      "paragraph_id": 6,
+      "section_id": 2,
+      "text": "Importantly, participants were more likely to believe that the hidden agent had intervened after negative than after positive outcomes in the adversarial condition, t(71) = 17.56, p < .001, d = 2.07, 95% CI = [0.54, 0.67], and after positive than after negative outcomes in the benevolent condition, t(71) = -10.38, p < .001, d = 1.22, 95% CI = [-0.49, -0.33].",
+      "page_number": null
+    },
+    {
+      "text_id": 7,
+      "paragraph_id": 6,
+      "section_id": 2,
+      "text": "Participants were also slightly more likely to believe that the hidden agent had intervened after negative outcomes in the neutral condition, t(71) = 2.22, p = .03, d = 0.26, 95% CI = [0.01, 0.22].",
+      "page_number": null
+    },
+    {
+      "text_id": 8,
+      "paragraph_id": 6,
+      "section_id": 2,
+      "text": "We will revisit this effect in the context of our computational model.",
+      "page_number": null
+    },
+    {
+      "text_id": 9,
+      "paragraph_id": 8,
+      "section_id": 3,
+      "text": "To characterize the effects of outcome valence and agent type on learning, we first fitted a reinforcementlearning model with six separate learning rates.",
+      "page_number": null
+    },
+    {
+      "text_id": 10,
+      "paragraph_id": 8,
+      "section_id": 3,
+      "text": "As shown in Figure 3a, participants generally learned more from positive than from negative outcomes across all conditions, t(71) = 3.10, p < .01, d = 0.37, 95% CI = [0.00, 0.01].",
+      "page_number": null
+    },
+    {
+      "text_id": 11,
+      "paragraph_id": 8,
+      "section_id": 3,
+      "text": "By treating the positivity bias in the neutral condition, t(71) = 2.17, p = .03, d = 0.25, 95% CI = [0.00, 0.02], as a participant-specific baseline and subtracting it from the other conditions, we obtained a relative measure of learning rates for the adversarial and benevolent conditions (Fig. 3b), revealing an underlying sensitivity to condition and valence.",
+      "page_number": null
+    },
+    {
+      "text_id": 12,
+      "paragraph_id": 8,
+      "section_id": 3,
+      "text": "A 2 (condition: adversarial vs. benevolent) × 2 (valence: positive vs. negative) repeated measures analysis of variance on relative learning rates revealed no significant main effects (p = .57 for condition, p = .84 for valence) but a significant interaction, F(1, 71) = 4.91, p < .05.",
+      "page_number": null
+    },
+    {
+      "text_id": 13,
+      "paragraph_id": 8,
+      "section_id": 3,
+      "text": "Consistent with our hypothesis, results showed that the learningrate advantage for positive versus negative outcomes reverses depending on the causal structure of the task.",
+      "page_number": null
+    },
+    {
+      "text_id": 14,
+      "paragraph_id": 9,
+      "section_id": 3,
+      "text": "As expected, the Bayesian model showed a strong interaction between condition and outcome valence (Fig. 3c), a direct consequence of causal inference.",
+      "page_number": null
+    },
+    {
+      "text_id": 15,
+      "paragraph_id": 9,
+      "section_id": 3,
+      "text": "To bolster our claim that causal inference predicts the valence-dependent learning-rate asymmetry, we examined the relationship between intervention judgments and learning rates (derived from the Bayesian model).",
+      "page_number": null
+    },
+    {
+      "text_id": 16,
+      "paragraph_id": 9,
+      "section_id": 3,
+      "text": "We found that learning rates were significantly lower for trials in which participants believed that the hidden agent intervened, compared with trials in which participants believed that the hidden agent did not intervene, t(71) = 10.38, p < .001, d = 1.22, 95% CI = [0.02, 0.04] (Fig. 4a).",
+      "page_number": null
+    },
+    {
+      "text_id": 17,
+      "paragraph_id": 13,
+      "section_id": 5,
+      "text": "Results of Experiment 2 replicated those of Experiment 1: Participants believed that the hidden agent caused negative outcomes more often than positive outcomes across all conditions, t(254) = 6.26, p < .001, d = 0.39, 2019.",
+      "page_number": null
+    },
+    {
+      "text_id": 18,
+      "paragraph_id": 13,
+      "section_id": 5,
+      "text": "Causal inference about good and bad outcomes.",
+      "page_number": null
+    },
+    {
+      "text_id": 19,
+      "paragraph_id": 13,
+      "section_id": 5,
+      "text": "Psychological Science, 30(4), 516-525. https://doi.org/10.1177/0956797619828724 95% CI = [0.08, 0.15].",
+      "page_number": null
+    },
+    {
+      "text_id": 20,
+      "paragraph_id": 13,
+      "section_id": 5,
+      "text": "Participants were significantly more likely to believe that the hidden agent had intervened after negative compared with positive outcomes in the adversarial condition, t(254) = 43.72, p < .001, d = 2.74, 95% CI = [0.68, 0.74], and after positive compared with negative outcomes in the benevolent condition, t(254) = -21.78, p < .001, d = -1.36, 95% CI = [-0.59, -0.49].",
+      "page_number": null
+    },
+    {
+      "text_id": 21,
+      "paragraph_id": 13,
+      "section_id": 5,
+      "text": "Participants were also slightly more likely to believe that the hidden agent had intervened after negative outcomes in the neutral condition, although this effect was not significant, t(254) = 1.62, p = .11, d = 0.10, 95% CI = [-0.01, 0.12].",
+      "page_number": null
+    },
+    {
+      "text_id": 22,
+      "paragraph_id": 15,
+      "section_id": 6,
+      "text": "Once again, we found that participants had significantly higher learning rates for positive outcomes than for negative outcomes, t(254) = 3.57, p < .001, d = 0.22, 95% CI = [0.00, 0.01].",
+      "page_number": null
+    },
+    {
+      "text_id": 23,
+      "paragraph_id": 15,
+      "section_id": 6,
+      "text": "In a further replication of our results from Experiment 1, we also found that learning rates were significantly lower for trials in which participants believed that the hidden agent intervened, compared with trials in which they believed that the hidden agent did not intervene, t(252) = 17.55, p < .001, d = 1.10, 95% CI = [0.04, 0.05] (Fig. 4b).",
+      "page_number": null
+    },
+    {
+      "text_id": 24,
+      "paragraph_id": 16,
+      "section_id": 7,
+      "text": "Original article: Dorfman, H M, Bhui, R, Hughes, B L, & Gershman, S J",
+      "page_number": null
+    }
+  ],
+  "section": [
+    {
+      "section_id": 0,
+      "header": "Abstract",
+      "parent_section_id": null,
+      "section_type": "abstract",
+      "classification_score": null
+    },
+    {
+      "section_id": 2,
+      "header": "Behavioral analyses",
+      "parent_section_id": null,
+      "section_type": "results",
+      "classification_score": null
+    },
+    {
+      "section_id": 3,
+      "header": "Computational modeling",
+      "parent_section_id": null,
+      "section_type": "results",
+      "classification_score": null
+    },
+    {
+      "section_id": 5,
+      "header": "Behavioral analyses",
+      "parent_section_id": null,
+      "section_type": "results",
+      "classification_score": null
+    },
+    {
+      "section_id": 6,
+      "header": "Computational modeling",
+      "parent_section_id": null,
+      "section_type": "results",
+      "classification_score": null
+    },
+    {
+      "section_id": 7,
+      "header": "",
+      "parent_section_id": null,
+      "section_type": "figure",
+      "classification_score": null
+    }
+  ],
+  "url": [
+    {
+      "href": "https://doi.org/10.1177/0956797619828724",
+      "link_text": null,
+      "text_id": 19
+    }
+  ],
+  "bib": [],
+  "xref": [
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "2a",
+      "text_id": 4
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "3a",
+      "text_id": 10
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "3b",
+      "text_id": 11
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "3c",
+      "text_id": 14
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "4a",
+      "text_id": 16
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "4b",
+      "text_id": 23
+    },
+    {
+      "xref_id": null,
+      "xref_type": null,
+      "contents": "2019",
+      "text_id": null
+    }
+  ],
+  "figure": [
+    {
+      "figure_id": 1,
+      "section_id": 7,
+      "image": null,
+      "page_number": null
+    }
+  ],
+  "table": [],
+  "eq": [
+    {
+      "text_id": 5,
+      "grp_id": 1,
+      "lhs": "t(71)",
+      "comp": "=",
+      "rhs": "4.71"
+    },
+    {
+      "text_id": 5,
+      "grp_id": 1,
+      "lhs": "p",
+      "comp": "<",
+      "rhs": ".001"
+    },
+    {
+      "text_id": 5,
+      "grp_id": 1,
+      "lhs": "d",
+      "comp": "=",
+      "rhs": "0.55"
+    },
+    {
+      "text_id": 5,
+      "grp_id": 1,
+      "lhs": "95% CI",
+      "comp": "=",
+      "rhs": "[0.08, 0.20]"
+    },
+    {
+      "text_id": 6,
+      "grp_id": 2,
+      "lhs": "t(71)",
+      "comp": "=",
+      "rhs": "17.56"
+    },
+    {
+      "text_id": 6,
+      "grp_id": 2,
+      "lhs": "p",
+      "comp": "<",
+      "rhs": ".001"
+    },
+    {
+      "text_id": 6,
+      "grp_id": 2,
+      "lhs": "d",
+      "comp": "=",
+      "rhs": "2.07"
+    },
+    {
+      "text_id": 6,
+      "grp_id": 2,
+      "lhs": "95% CI",
+      "comp": "=",
+      "rhs": "[0.54, 0.67]"
+    },
+    {
+      "text_id": 6,
+      "grp_id": 2,
+      "lhs": "t(71)",
+      "comp": "=",
+      "rhs": "-10.38"
+    },
+    {
+      "text_id": 6,
+      "grp_id": 2,
+      "lhs": "p",
+      "comp": "<",
+      "rhs": ".001"
+    },
+    {
+      "text_id": 6,
+      "grp_id": 2,
+      "lhs": "d",
+      "comp": "=",
+      "rhs": "1.22"
+    },
+    {
+      "text_id": 6,
+      "grp_id": 2,
+      "lhs": "95% CI",
+      "comp": "=",
+      "rhs": "[-0.49, -0.33]"
+    },
+    {
+      "text_id": 7,
+      "grp_id": 3,
+      "lhs": "t(71)",
+      "comp": "=",
+      "rhs": "2.22"
+    },
+    {
+      "text_id": 7,
+      "grp_id": 3,
+      "lhs": "p",
+      "comp": "=",
+      "rhs": ".03"
+    },
+    {
+      "text_id": 7,
+      "grp_id": 3,
+      "lhs": "d",
+      "comp": "=",
+      "rhs": "0.26"
+    },
+    {
+      "text_id": 7,
+      "grp_id": 3,
+      "lhs": "95% CI",
+      "comp": "=",
+      "rhs": "[0.01, 0.22]"
+    },
+    {
+      "text_id": 10,
+      "grp_id": 4,
+      "lhs": "t(71)",
+      "comp": "=",
+      "rhs": "3.10"
+    },
+    {
+      "text_id": 10,
+      "grp_id": 4,
+      "lhs": "p",
+      "comp": "<",
+      "rhs": ".01"
+    },
+    {
+      "text_id": 10,
+      "grp_id": 4,
+      "lhs": "d",
+      "comp": "=",
+      "rhs": "0.37"
+    },
+    {
+      "text_id": 10,
+      "grp_id": 4,
+      "lhs": "95% CI",
+      "comp": "=",
+      "rhs": "[0.00, 0.01]"
+    },
+    {
+      "text_id": 11,
+      "grp_id": 5,
+      "lhs": "t(71)",
+      "comp": "=",
+      "rhs": "2.17"
+    },
+    {
+      "text_id": 11,
+      "grp_id": 5,
+      "lhs": "p",
+      "comp": "=",
+      "rhs": ".03"
+    },
+    {
+      "text_id": 11,
+      "grp_id": 5,
+      "lhs": "d",
+      "comp": "=",
+      "rhs": "0.25"
+    },
+    {
+      "text_id": 11,
+      "grp_id": 5,
+      "lhs": "95% CI",
+      "comp": "=",
+      "rhs": "[0.00, 0.02]"
+    },
+    {
+      "text_id": 12,
+      "grp_id": 6,
+      "lhs": "p",
+      "comp": "=",
+      "rhs": ".57"
+    },
+    {
+      "text_id": 12,
+      "grp_id": 6,
+      "lhs": "p",
+      "comp": "=",
+      "rhs": ".84"
+    },
+    {
+      "text_id": 12,
+      "grp_id": 6,
+      "lhs": "F(1, 71)",
+      "comp": "=",
+      "rhs": "4.91"
+    },
+    {
+      "text_id": 12,
+      "grp_id": 6,
+      "lhs": "p",
+      "comp": "<",
+      "rhs": ".05"
+    },
+    {
+      "text_id": 16,
+      "grp_id": 7,
+      "lhs": "t(71)",
+      "comp": "=",
+      "rhs": "10.38"
+    },
+    {
+      "text_id": 16,
+      "grp_id": 7,
+      "lhs": "p",
+      "comp": "<",
+      "rhs": ".001"
+    },
+    {
+      "text_id": 16,
+      "grp_id": 7,
+      "lhs": "d",
+      "comp": "=",
+      "rhs": "1.22"
+    },
+    {
+      "text_id": 16,
+      "grp_id": 7,
+      "lhs": "95% CI",
+      "comp": "=",
+      "rhs": "[0.02, 0.04]"
+    },
+    {
+      "text_id": 17,
+      "grp_id": 8,
+      "lhs": "t(254)",
+      "comp": "=",
+      "rhs": "6.26"
+    },
+    {
+      "text_id": 17,
+      "grp_id": 8,
+      "lhs": "p",
+      "comp": "<",
+      "rhs": ".001"
+    },
+    {
+      "text_id": 17,
+      "grp_id": 8,
+      "lhs": "d",
+      "comp": "=",
+      "rhs": "0.39"
+    },
+    {
+      "text_id": 19,
+      "grp_id": 9,
+      "lhs": "95% CI",
+      "comp": "=",
+      "rhs": "[0.08, 0.15]"
+    },
+    {
+      "text_id": 20,
+      "grp_id": 10,
+      "lhs": "t(254)",
+      "comp": "=",
+      "rhs": "43.72"
+    },
+    {
+      "text_id": 20,
+      "grp_id": 10,
+      "lhs": "p",
+      "comp": "<",
+      "rhs": ".001"
+    },
+    {
+      "text_id": 20,
+      "grp_id": 10,
+      "lhs": "d",
+      "comp": "=",
+      "rhs": "2.74"
+    },
+    {
+      "text_id": 20,
+      "grp_id": 10,
+      "lhs": "95% CI",
+      "comp": "=",
+      "rhs": "[0.68, 0.74]"
+    },
+    {
+      "text_id": 20,
+      "grp_id": 10,
+      "lhs": "t(254)",
+      "comp": "=",
+      "rhs": "-21.78"
+    },
+    {
+      "text_id": 20,
+      "grp_id": 10,
+      "lhs": "p",
+      "comp": "<",
+      "rhs": ".001"
+    },
+    {
+      "text_id": 20,
+      "grp_id": 10,
+      "lhs": "d",
+      "comp": "=",
+      "rhs": "-1.36"
+    },
+    {
+      "text_id": 20,
+      "grp_id": 10,
+      "lhs": "95% CI",
+      "comp": "=",
+      "rhs": "[-0.59, -0.49]"
+    },
+    {
+      "text_id": 21,
+      "grp_id": 11,
+      "lhs": "t(254)",
+      "comp": "=",
+      "rhs": "1.62"
+    },
+    {
+      "text_id": 21,
+      "grp_id": 11,
+      "lhs": "p",
+      "comp": "=",
+      "rhs": ".11"
+    },
+    {
+      "text_id": 21,
+      "grp_id": 11,
+      "lhs": "d",
+      "comp": "=",
+      "rhs": "0.10"
+    },
+    {
+      "text_id": 21,
+      "grp_id": 11,
+      "lhs": "95% CI",
+      "comp": "=",
+      "rhs": "[-0.01, 0.12]"
+    },
+    {
+      "text_id": 22,
+      "grp_id": 12,
+      "lhs": "t(254)",
+      "comp": "=",
+      "rhs": "3.57"
+    },
+    {
+      "text_id": 22,
+      "grp_id": 12,
+      "lhs": "p",
+      "comp": "<",
+      "rhs": ".001"
+    },
+    {
+      "text_id": 22,
+      "grp_id": 12,
+      "lhs": "d",
+      "comp": "=",
+      "rhs": "0.22"
+    },
+    {
+      "text_id": 22,
+      "grp_id": 12,
+      "lhs": "95% CI",
+      "comp": "=",
+      "rhs": "[0.00, 0.01]"
+    },
+    {
+      "text_id": 23,
+      "grp_id": 13,
+      "lhs": "t(252)",
+      "comp": "=",
+      "rhs": "17.55"
+    },
+    {
+      "text_id": 23,
+      "grp_id": 13,
+      "lhs": "p",
+      "comp": "<",
+      "rhs": ".001"
+    },
+    {
+      "text_id": 23,
+      "grp_id": 13,
+      "lhs": "d",
+      "comp": "=",
+      "rhs": "1.10"
+    },
+    {
+      "text_id": 23,
+      "grp_id": 13,
+      "lhs": "95% CI",
+      "comp": "=",
+      "rhs": "[0.04, 0.05]"
+    }
+  ]
+}

@@ -1,0 +1,5582 @@
+{
+  "paper_id": "0956797620916782",
+  "info": [
+    {
+      "title": "Beyond Western, Educated, Industrial, Rich, and Democratic (WEIRD) Psychology: Measuring and Mapping Scales of Cultural and Psychological Distance",
+      "keywords": ["WEIRD people", "cultural psychology", "cultural distance", "cross-cultural differences", "replication crisis"],
+      "doi": "10.1177/0956797620916782",
+      "file_hash": "25227b2afbccc67c",
+      "input_format": "grobid 0.9.0",
+      "file_name": "data-raw/psychsci/grobid_0.9.0-full/0956797620916782.xml",
+      "bibr_version": "10.0",
+      "paper_type": "unknown",
+      "paper_type_confidence": 0,
+      "oecd_l1": null,
+      "oecd_l2": null,
+      "oecd_confidence": null
+    }
+  ],
+  "author": [
+    {
+      "author_id": 1,
+      "given": "Michael",
+      "family": "Muthukrishna",
+      "affiliation": "Department of Psychological and Behavioural Science London School of Economics and Political Science",
+      "email": "m.muthukrishna@lse.ac.uk",
+      "corresponding": false,
+      "orcid": "0000-0002-7079-5166",
+      "role": []
+    },
+    {
+      "author_id": 2,
+      "given": "Adrian",
+      "family": "Bell",
+      "affiliation": "Department of Anthropology The University of Utah",
+      "email": "",
+      "corresponding": false,
+      "orcid": "",
+      "role": []
+    },
+    {
+      "author_id": 3,
+      "given": "Joseph",
+      "family": "Henrich",
+      "affiliation": "Department of Human Evolutionary Biology Harvard University",
+      "email": "",
+      "corresponding": false,
+      "orcid": "",
+      "role": []
+    },
+    {
+      "author_id": 4,
+      "given": "Cameron",
+      "family": "Curtin",
+      "affiliation": "Department of Human Evolutionary Biology Harvard University",
+      "email": "",
+      "corresponding": false,
+      "orcid": "",
+      "role": []
+    },
+    {
+      "author_id": 5,
+      "given": "Alexander",
+      "family": "Gedranovich",
+      "affiliation": "Department of Psychological and Behavioural Science London School of Economics and Political Science",
+      "email": "",
+      "corresponding": false,
+      "orcid": "",
+      "role": []
+    },
+    {
+      "author_id": 6,
+      "given": "Jason",
+      "family": "Mcinerney",
+      "affiliation": "Department of Computer Science Iowa State University",
+      "email": "",
+      "corresponding": false,
+      "orcid": "",
+      "role": []
+    },
+    {
+      "author_id": 7,
+      "given": "Braden",
+      "family": "Thue",
+      "affiliation": "Department of Human Evolutionary Biology Harvard University",
+      "email": "",
+      "corresponding": false,
+      "orcid": "",
+      "role": []
+    }
+  ],
+  "text": [
+    {
+      "text_id": 1,
+      "paragraph_id": 1,
+      "section_id": 0,
+      "text": "Decades of psychological research designed to uncover truths about human psychology may have instead uncovered truths about a thin slice of our speciespeople who live in Western, educated, industrialized, rich, and democratic (WEIRD) nations (Henrich, Heine, & Norenzayan, 2010).",
+      "page_number": null
+    },
+    {
+      "text_id": 2,
+      "paragraph_id": 1,
+      "section_id": 0,
+      "text": "Researchers often assess the generalizability of these findings by comparing Western nations with East Asian nations but are increasingly documenting differences in small-scale societies.",
+      "page_number": null
+    },
+    {
+      "text_id": 3,
+      "paragraph_id": 1,
+      "section_id": 0,
+      "text": "Nonetheless, the literature remains overwhelmingly WEIRD (Rad, Martingano, & Ginges, 2018), and there exists no systematic method for determining which societies will provide useful comparisons or even the size of the psychological differences-the cultural distancebetween societies, be they non-Western, less-educated, less-industrialized, poorer, nondemocratic, or some subset of these.",
+      "page_number": null
+    },
+    {
+      "text_id": 4,
+      "paragraph_id": 1,
+      "section_id": 0,
+      "text": "And even within WEIRD nations, there are psychologically relevant cultural differences (Henrich et al.,",
+      "page_number": null
+    },
+    {
+      "text_id": 5,
+      "paragraph_id": 3,
+      "section_id": 1,
+      "text": "body of theoretical and empirical work in cultural evolution emphasizes that our species is fundamentally cultural, and thus, these cultural differences are also psychological differences: from norms and attitudes, to the degree to which these norms are enforced, to lowlevel perception of color and visual illusions (Boyd, 2017;Gelfand, 2019;Henrich, 2016).",
+      "page_number": null
+    },
+    {
+      "text_id": 6,
+      "paragraph_id": 4,
+      "section_id": 1,
+      "text": "Just how psychologically different are the nations of the world compared with each other and with the overscrutinized United States?",
+      "page_number": null
+    },
+    {
+      "text_id": 7,
+      "paragraph_id": 4,
+      "section_id": 1,
+      "text": "Many hard drives have been filled with the ways in which China and Japan differ from the United States and Canada, but just how psychologically distant is the culture of China from Japan, the United States from Canada, or Azerbaijan from Zambia?",
+      "page_number": null
+    },
+    {
+      "text_id": 8,
+      "paragraph_id": 4,
+      "section_id": 1,
+      "text": "Here, we introduce a robust method for quantifying this distance.",
+      "page_number": null
+    },
+    {
+      "text_id": 9,
+      "paragraph_id": 4,
+      "section_id": 1,
+      "text": "This method allows us to develop scales of cultural distance, and therefore cross-cultural psychological distance, 1 by selecting any population as a point of comparison.",
+      "page_number": null
+    },
+    {
+      "text_id": 10,
+      "paragraph_id": 4,
+      "section_id": 1,
+      "text": "Because psychological data remain largely American (Rad et al., 2018), we developed an American scale of cultural distance from the United States as an example.",
+      "page_number": null
+    },
+    {
+      "text_id": 11,
+      "paragraph_id": 4,
+      "section_id": 1,
+      "text": "As a point of comparison, we also developed a Chinese scale of cultural distance from China, the largest population on Earth and a common cultural comparison.",
+      "page_number": null
+    },
+    {
+      "text_id": 12,
+      "paragraph_id": 4,
+      "section_id": 1,
+      "text": "Using our R code or online tool (www.culturaldistance.com), researchers can create scales of cultural distance with any comparison population, which will become increasingly important as the literature becomes less WEIRD.",
+      "page_number": null
+    },
+    {
+      "text_id": 13,
+      "paragraph_id": 5,
+      "section_id": 1,
+      "text": "The measurement of cross-cultural psychological differences and cultural distances has a long history.",
+      "page_number": null
+    },
+    {
+      "text_id": 14,
+      "paragraph_id": 5,
+      "section_id": 1,
+      "text": "Apart from the many differences identified by cultural psychologists (Heine, 2015;Henrich et al., 2010), notable attempts to quantify these differences include Hofstede's (2001) cultural dimensions, Inglehart and Welzel's (2005) cultural map, and Schwartz's (2006) values.",
+      "page_number": null
+    },
+    {
+      "text_id": 15,
+      "paragraph_id": 5,
+      "section_id": 1,
+      "text": "These difference measures are sometimes combined and used as distance measures.",
+      "page_number": null
+    },
+    {
+      "text_id": 16,
+      "paragraph_id": 5,
+      "section_id": 1,
+      "text": "Notable examples include Kogut and Singh's (1988) composite measure of Hofstede's Cultural Dimensions and Demes and Geeraert's (2014) scale of perceived cultural distance.",
+      "page_number": null
+    },
+    {
+      "text_id": 17,
+      "paragraph_id": 5,
+      "section_id": 1,
+      "text": "Within economics and political science, genetic distance and linguistic distance are often used as proxies for cultural distance (Desmet, Ortuño-Ortín, & Wacziarg, 2017;Gorodnichenko & Roland, 2017;Spolaore & Wacziarg, 2018).",
+      "page_number": null
+    },
+    {
+      "text_id": 18,
+      "paragraph_id": 6,
+      "section_id": 1,
+      "text": "These approaches are widely used but have various limitations.",
+      "page_number": null
+    },
+    {
+      "text_id": 19,
+      "paragraph_id": 6,
+      "section_id": 1,
+      "text": "For example, the values-and-dimensions approach characteristic of Hofstede (2001), Inglehart and Welzel (2005), and Schwartz (2006) focuses on identifying the values or dimensions along which groups differ, focusing on cultural differences rather than cultural distance.",
+      "page_number": null
+    },
+    {
+      "text_id": 20,
+      "paragraph_id": 6,
+      "section_id": 1,
+      "text": "Moreover, these values represent mean differences, largely ignoring differences in variance or frequencies of beliefs and behaviors-bimodal or multimodal populations appear the same if they have the same mean.",
+      "page_number": null
+    },
+    {
+      "text_id": 21,
+      "paragraph_id": 6,
+      "section_id": 1,
+      "text": "For example, Brazil and Turkey have almost identical scores along Hofstede's Individualism dimension (38 and 37,respectively).",
+      "page_number": null
+    },
+    {
+      "text_id": 22,
+      "paragraph_id": 6,
+      "section_id": 1,
+      "text": "Indeed, Brazil and Turkey look very similar along most Hofstede dimensions (see Fig.",
+      "page_number": null
+    },
+    {
+      "text_id": 23,
+      "paragraph_id": 6,
+      "section_id": 1,
+      "text": "1).",
+      "page_number": null
+    },
+    {
+      "text_id": 24,
+      "paragraph_id": 6,
+      "section_id": 1,
+      "text": "Brazil and Turkey differ in a variety of ways; however, overall, Brazil has greater variability in beliefs and values than Turkey (variance in beliefs is sometimes measured as \"looseness,\" or tolerance for deviant behavior; Brazil and Turkey are on opposite ends of this spectrum; Gelfand et al., 2011).",
+      "page_number": null
+    },
+    {
+      "text_id": 25,
+      "paragraph_id": 6,
+      "section_id": 1,
+      "text": "But looseness, too, is a point estimate-cultural traits vary by domain, even if some nations tend to be tighter or looser overall.",
+      "page_number": null
+    },
+    {
+      "text_id": 26,
+      "paragraph_id": 6,
+      "section_id": 1,
+      "text": "And when it comes to nominal cultural traits, such as whether a participant's political priorities are to give people more to say, maintain order in the nation, fight rising prices, or protect freedom of speech, neither mean nor variance captures the relative frequencies.",
+      "page_number": null
+    },
+    {
+      "text_id": 27,
+      "paragraph_id": 7,
+      "section_id": 1,
+      "text": "Here, we present the cultural fixation index (CF ST ), a measure built on the fixation index (F ST ) measure from population biology (Bell, Richerson, & McElreath, 2009;Cavalli-Sforza, Menozzi, & Piazza, 1994), as a tool for measuring cultural distance.",
+      "page_number": null
+    },
+    {
+      "text_id": 28,
+      "paragraph_id": 7,
+      "section_id": 1,
+      "text": "The CF ST is robust and theoretically defensible.",
+      "page_number": null
+    },
+    {
+      "text_id": 29,
+      "paragraph_id": 7,
+      "section_id": 1,
+      "text": "It can be used as a high-resolution method to identify regional, national, or arbitrary cultural groupings (such as class differences).",
+      "page_number": null
+    },
+    {
+      "text_id": 30,
+      "paragraph_id": 7,
+      "section_id": 1,
+      "text": "It can also be used to identify the distance between two groups on the basis of an aggregate of many cultural dimensions or along any arbitrary dimensions, such as politics or social relations, depending on the theory being tested (Muthukrishna & Henrich, 2019).",
+      "page_number": null
+    },
+    {
+      "text_id": 31,
+      "paragraph_id": 7,
+      "section_id": 1,
+      "text": "We first discuss the technique and then use it to construct example scales of cultural distance that can guide researchers in deciding where to target their data-collection efforts.",
+      "page_number": null
+    },
+    {
+      "text_id": 32,
+      "paragraph_id": 7,
+      "section_id": 1,
+      "text": "To make it easy for researchers to use this method, we have made the R code available and developed an online tool (www .culturaldistance.com).",
+      "page_number": null
+    },
+    {
+      "text_id": 33,
+      "paragraph_id": 7,
+      "section_id": 1,
+      "text": "The online tool allows researchers to explore particular dimensions of difference, and future versions of the tool will allow comparisons at the regional level.",
+      "page_number": null
+    },
+    {
+      "text_id": 34,
+      "paragraph_id": 7,
+      "section_id": 1,
+      "text": "A guide to using the online tool can be found in the Supplemental Material available online.",
+      "page_number": null
+    },
+    {
+      "text_id": 35,
+      "paragraph_id": 8,
+      "section_id": 1,
+      "text": "The F ST is theoretically meaningful within evolution because it measures how genotype frequencies for each subpopulation differ from expectations if there were random mating over the entire population; that is, it measures the degree to which the populations can be considered structured and separate.",
+      "page_number": null
+    },
+    {
+      "text_id": 36,
+      "paragraph_id": 8,
+      "section_id": 1,
+      "text": "For cultural inheritance, this is directly analogous to between-group differentiation caused by selection, migration, and social-learning mechanisms.",
+      "page_number": null
+    },
+    {
+      "text_id": 37,
+      "paragraph_id": 8,
+      "section_id": 1,
+      "text": "Thus, insofar as one advocates a formal theoretical approach to psychological research (Muthukrishna & Henrich, 2019) and insofar as cultural evolution offers a compelling explanation for cultural change, F ST offers a theoretically informed approach to measuring cultural distance with a long and established history within the broader evolutionary sciences.",
+      "page_number": null
+    },
+    {
+      "text_id": 38,
+      "paragraph_id": 8,
+      "section_id": 1,
+      "text": "We discuss this in more detail, and compare the F ST with other methods, in the Supplemental Material.",
+      "page_number": null
+    },
+    {
+      "text_id": 39,
+      "paragraph_id": 9,
+      "section_id": 1,
+      "text": "We begin by comparing the CF ST with other common approaches to measuring cultural distance.",
+      "page_number": null
+    },
+    {
+      "text_id": 40,
+      "paragraph_id": 9,
+      "section_id": 1,
+      "text": "We then formally describe the CF ST statistic and how we used it to develop the American and Chinese scales.",
+      "page_number": null
+    },
+    {
+      "text_id": 41,
+      "paragraph_id": 9,
+      "section_id": 1,
+      "text": "We demonstrate the robustness of the scales to missing or incomplete data and show how it can also be used to study cultural variation within a population, using regional variation as an example.",
+      "page_number": null
+    },
+    {
+      "text_id": 42,
+      "paragraph_id": 9,
+      "section_id": 1,
+      "text": "Finally, we show the relationship between these scales and other measures of cultural distance, and we discuss tests of how well they predict common or high-profile measures of crosscultural psychological differences.",
+      "page_number": null
+    },
+    {
+      "text_id": 43,
+      "paragraph_id": 11,
+      "section_id": 2,
+      "text": "One approach to measuring cultural distance is to turn multiple difference measures, such as Hofstede's cultural dimensions, into a distance measure by taking a weighted mean of the distance between a country's values on the difference scale.",
+      "page_number": null
+    },
+    {
+      "text_id": 44,
+      "paragraph_id": 11,
+      "section_id": 2,
+      "text": "The most popular of these composite measures is the formulation by Kogut and Singh (1988):",
+      "page_number": null
+    },
+    {
+      "text_id": 45,
+      "paragraph_id": 12,
+      "section_id": 2,
+      "text": "where cultural distance CD between country c and country j is the mean over all dimensions d of the squared difference between the countries' cultural difference value I for dimension i weighted by the variance V of that dimension i.",
+      "page_number": null
+    },
+    {
+      "text_id": 46,
+      "paragraph_id": 12,
+      "section_id": 2,
+      "text": "This method allows researchers to turn these differences into a composite distance measure that captures a distance between countries on Hofstede's cultural dimensions.",
+      "page_number": null
+    },
+    {
+      "text_id": 47,
+      "paragraph_id": 12,
+      "section_id": 2,
+      "text": "However, it suffers the same limitations as the underlying difference measures, such as focusing on mean differences between countries and ignoring differences in variance or frequencies (the variance above is the variance of the index across countries, not variance in culture within the country).",
+      "page_number": null
+    },
+    {
+      "text_id": 48,
+      "paragraph_id": 12,
+      "section_id": 2,
+      "text": "Brazil and Turkey still look culturally close because they have similar mean culturaldifference values along most dimensions.",
+      "page_number": null
+    },
+    {
+      "text_id": 49,
+      "paragraph_id": 12,
+      "section_id": 2,
+      "text": "Another approach, as exemplified by Demes and Geeraert (2014), is to develop a scale that asks participants to compare countries on perceived cultural distance along dimensions such as climate, food and eating, and values and beliefs.",
+      "page_number": null
+    },
+    {
+      "text_id": 50,
+      "paragraph_id": 12,
+      "section_id": 2,
+      "text": "This is similar to how any psychometric scale is developed but is a measure of the perception of participants from country A about country B This approach may be a good measure of perceptions of culture but may be limited by the knowledge of participants from country A about participants from country B Here, we use the World Values Survey (WVS) as a measure of what people report that they do and believe.",
+      "page_number": null
+    },
+    {
+      "text_id": 51,
+      "paragraph_id": 13,
+      "section_id": 2,
+      "text": "Genetic distance and linguistic distance do not share these limitations; instead, they serve as an overall proxy measure of cultural distance between any two nations.",
+      "page_number": null
+    },
+    {
+      "text_id": 52,
+      "paragraph_id": 13,
+      "section_id": 2,
+      "text": "But because they do not measure culture directly, they can be misleading.",
+      "page_number": null
+    },
+    {
+      "text_id": 53,
+      "paragraph_id": 13,
+      "section_id": 2,
+      "text": "For example, Hong Kong is greater than an order of magnitude more genetically similar to China (F ST = 9.59 × 10 -4 ) than to Great Britain (F ST = 3.96 × 10 -2 ; Pemberton, DeGiorgio, & Rosenberg, 2013;Spolaore & Wacziarg, 2018) but is culturally similar to both countries because of Britain's century-long history in Hong Kong.",
+      "page_number": null
+    },
+    {
+      "text_id": 54,
+      "paragraph_id": 13,
+      "section_id": 2,
+      "text": "Linguistic distance is a better measure of cultural distance-language is a core aspect of culture, and the lack of a common language can culturally isolate groups-but the resolution of language distance makes it difficult to distinguish the cultures of Australia, Canada, the United Kingdom, and the United States, all of whose populations speak English.",
+      "page_number": null
+    },
+    {
+      "text_id": 55,
+      "paragraph_id": 13,
+      "section_id": 2,
+      "text": "These differences drive tourism and migration but are largely invisible on a language family tree.",
+      "page_number": null
+    },
+    {
+      "text_id": 56,
+      "paragraph_id": 13,
+      "section_id": 2,
+      "text": "None of these measures serve as a robust and defensible cultural-distance scale that can be used to compare two sampled populations, an important tool given the stark psychological differences between cultural groups (Henrich et al., 2010).",
+      "page_number": null
+    },
+    {
+      "text_id": 57,
+      "paragraph_id": 15,
+      "section_id": 3,
+      "text": "F ST (Cavalli-Sforza et al., 1994) is a method used to calculate the size of the genetic differences (genetic distance) between two populations.",
+      "page_number": null
+    },
+    {
+      "text_id": 58,
+      "paragraph_id": 15,
+      "section_id": 3,
+      "text": "In the genetic case, F ST represents the ratio of the between-and withingroups variance of alleles (such as gene variants for blue or brown eyes) at a particular locus (such as the DNA location for the main eye-color gene) in the genomes of individuals in two populations.",
+      "page_number": null
+    },
+    {
+      "text_id": 59,
+      "paragraph_id": 15,
+      "section_id": 3,
+      "text": "Formally,",
+      "page_number": null
+    },
+    {
+      "text_id": 60,
+      "paragraph_id": 16,
+      "section_id": 3,
+      "text": ", where σ g 2 is the variance of allele frequency between populations, and σ T 2 is the variance of allele frequency in the total population.",
+      "page_number": null
+    },
+    {
+      "text_id": 61,
+      "paragraph_id": 16,
+      "section_id": 3,
+      "text": "In practice, F ST is calculated as H H H T g T -, where H T is the average number of pairwise differences in alleles (for genetic distance) or answers (for cultural distance) between individuals drawn from the total population (both populations), and H g is the average number of pairwise differences in alleles or answers between two individuals from the same population.",
+      "page_number": null
+    },
+    {
+      "text_id": 62,
+      "paragraph_id": 16,
+      "section_id": 3,
+      "text": "If these pairwise differences are the same, F ST = 0, the populations are identical.",
+      "page_number": null
+    },
+    {
+      "text_id": 63,
+      "paragraph_id": 16,
+      "section_id": 3,
+      "text": "If the two equal-size populations are more homogeneous but different, we get the maximum distance, F ST = 1 (see Fig.",
+      "page_number": null
+    },
+    {
+      "text_id": 64,
+      "paragraph_id": 16,
+      "section_id": 3,
+      "text": "2).",
+      "page_number": null
+    },
+    {
+      "text_id": 65,
+      "paragraph_id": 16,
+      "section_id": 3,
+      "text": "Like a correlation coefficient, F ST is also a nonlinear metric.",
+      "page_number": null
+    },
+    {
+      "text_id": 66,
+      "paragraph_id": 16,
+      "section_id": 3,
+      "text": "This means that the numbers are meaningful for comparisons, but an F ST of .6 is not twice as large as an F ST of .3-just as a correlation (r) of .6 is not twice as high a correlation as .3.",
+      "page_number": null
+    },
+    {
+      "text_id": 67,
+      "paragraph_id": 17,
+      "section_id": 3,
+      "text": "To get an overall genetic distance between two populations, one can aggregate the F ST values for allele frequencies across all loci or some subset loci of interest in the genome of a representative sample of each population.",
+      "page_number": null
+    },
+    {
+      "text_id": 68,
+      "paragraph_id": 17,
+      "section_id": 3,
+      "text": "The availability of large, representative, cross-national surveys of cultural values has allowed the same technique to be applied to culture.",
+      "page_number": null
+    },
+    {
+      "text_id": 69,
+      "paragraph_id": 19,
+      "section_id": 4,
+      "text": "The CF ST is calculated in the same manner as the genetic F ST , but instead of a genome, we use a large survey of cultural values as a \"culturome,\" with questions treated as loci and answers treated as alleles.",
+      "page_number": null
+    },
+    {
+      "text_id": 70,
+      "paragraph_id": 19,
+      "section_id": 4,
+      "text": "Note that, strictly speaking, the answers to such questions are phenotypes-that is, responses are based on a combination of culture, genes, personal experience, and perhaps other inheritance systems (epigenetics, microbiota, etc.",
+      "page_number": null
+    },
+    {
+      "text_id": 71,
+      "paragraph_id": 19,
+      "section_id": 4,
+      "text": "; Laland, 2017).",
+      "page_number": null
+    },
+    {
+      "text_id": 72,
+      "paragraph_id": 19,
+      "section_id": 4,
+      "text": "This does not affect use for scales of cultural distance, and arguably, what we are really interested in are these expressed phenotypic differences.",
+      "page_number": null
+    },
+    {
+      "text_id": 73,
+      "paragraph_id": 19,
+      "section_id": 4,
+      "text": "The CF ST allows us to flexibly quantify the overall size of cultural differences (cultural distance).",
+      "page_number": null
+    },
+    {
+      "text_id": 74,
+      "paragraph_id": 19,
+      "section_id": 4,
+      "text": "In contrast to many other Fig.",
+      "page_number": null
+    },
+    {
+      "text_id": 75,
+      "paragraph_id": 19,
+      "section_id": 4,
+      "text": "2.",
+      "page_number": null
+    },
+    {
+      "text_id": 76,
+      "paragraph_id": 19,
+      "section_id": 4,
+      "text": "Three scores on the fixation index (F ST ) calculated along a single dimension with two options-yes (Y) or no (X).",
+      "page_number": null
+    },
+    {
+      "text_id": 77,
+      "paragraph_id": 19,
+      "section_id": 4,
+      "text": "In Case 3, the cultural distance between the two populations is 0 because 50% of both populations answered yes (or no).",
+      "page_number": null
+    },
+    {
+      "text_id": 78,
+      "paragraph_id": 19,
+      "section_id": 4,
+      "text": "In Case 2, the F ST is .11.",
+      "page_number": null
+    },
+    {
+      "text_id": 79,
+      "paragraph_id": 19,
+      "section_id": 4,
+      "text": "Finally, in Case 1, the populations are maximally different because all individuals in Population 1 answered no, and all individuals in Population 2 answered yes.",
+      "page_number": null
+    },
+    {
+      "text_id": 80,
+      "paragraph_id": 19,
+      "section_id": 4,
+      "text": "Calculations for each of these cases can be found in the Supplemental Material available online.",
+      "page_number": null
+    },
+    {
+      "text_id": 81,
+      "paragraph_id": 19,
+      "section_id": 4,
+      "text": "For the two populations, we calculated the mean F ST along all cultural questions or along specific questions of interest (such as those mapping onto a particular dimension).",
+      "page_number": null
+    },
+    {
+      "text_id": 82,
+      "paragraph_id": 20,
+      "section_id": 4,
+      "text": "measures of cultural differences, the CF ST compares distributions rather than point estimates (not simply that one group has a higher mean than another), does not assume homogeneity in groups (instead looking at the frequencies of cultural traits), and does not assume that traits fall along a single dimension (instead, individuals can be higher or lower along related continuous cultural traits or have a range of discrete, orthogonal cultural traits).",
+      "page_number": null
+    },
+    {
+      "text_id": 83,
+      "paragraph_id": 20,
+      "section_id": 4,
+      "text": "Moreover, the CF ST can handle continuous, binary, or nominal traits.",
+      "page_number": null
+    },
+    {
+      "text_id": 84,
+      "paragraph_id": 20,
+      "section_id": 4,
+      "text": "By calculating CF ST scores for subsets of questions, we can also see how nations differ along different dimensions.",
+      "page_number": null
+    },
+    {
+      "text_id": 85,
+      "paragraph_id": 20,
+      "section_id": 4,
+      "text": "For example, a family-values dimension might include questions on the importance of family, respect for parents, parents' duty toward their children, and the various values that parents wish to instill in their children.",
+      "page_number": null
+    },
+    {
+      "text_id": 86,
+      "paragraph_id": 20,
+      "section_id": 4,
+      "text": "These dimensions may be predetermined (similar to including all genes associated with height or skin color) or based on dimension-reduction techniques.",
+      "page_number": null
+    },
+    {
+      "text_id": 87,
+      "paragraph_id": 20,
+      "section_id": 4,
+      "text": "A list of predetermined dimensions and statistically reduced dimensions can be found in the Data section.",
+      "page_number": null
+    },
+    {
+      "text_id": 88,
+      "paragraph_id": 20,
+      "section_id": 4,
+      "text": "Researchers can examine predetermined dimensions at www.cultur aldistance.com.",
+      "page_number": null
+    },
+    {
+      "text_id": 89,
+      "paragraph_id": 20,
+      "section_id": 4,
+      "text": "Of course, the use of particular dimensions should be theoretically motivated (see Muthukrishna & Henrich, 2019), and so here we use an aggregate measure to demonstrate the use of the CF ST .",
+      "page_number": null
+    },
+    {
+      "text_id": 90,
+      "paragraph_id": 20,
+      "section_id": 4,
+      "text": "The CF ST can also be calculated between regions within larger nations; nations are not equally heterogeneous.",
+      "page_number": null
+    },
+    {
+      "text_id": 91,
+      "paragraph_id": 20,
+      "section_id": 4,
+      "text": "Such within-countries variation is important for assessing generalizability.",
+      "page_number": null
+    },
+    {
+      "text_id": 92,
+      "paragraph_id": 20,
+      "section_id": 4,
+      "text": "Using this common currency, we can apply several visualization techniques commonly used in bioinformatics, such as neighbor joining to cluster countries that are most similar, multidimensional scaling plots to visualize diversity within a nation or identify \"cultural continents,\" and density plots to investigate subdimensions or questions within subdimensions (see examples in the Supplemental Material).",
+      "page_number": null
+    },
+    {
+      "text_id": 93,
+      "paragraph_id": 20,
+      "section_id": 4,
+      "text": "Moreover, we can calculate confidence intervals (CIs) as a measure of uncertainty.",
+      "page_number": null
+    },
+    {
+      "text_id": 94,
+      "paragraph_id": 22,
+      "section_id": 5,
+      "text": "The CF ST can be computed for any measured trait as long as there are data measured at an individual level and we know the group or groups to which the individual belongs.",
+      "page_number": null
+    },
+    {
+      "text_id": 95,
+      "paragraph_id": 22,
+      "section_id": 5,
+      "text": "The data can be continuous (quantitative, cardinal, ordinal) or categorical (nominal).",
+      "page_number": null
+    },
+    {
+      "text_id": 96,
+      "paragraph_id": 22,
+      "section_id": 5,
+      "text": "The CF ST is computed for a particular trait.",
+      "page_number": null
+    },
+    {
+      "text_id": 97,
+      "paragraph_id": 22,
+      "section_id": 5,
+      "text": "To calculate the CF ST between groups, we can use the mean CF ST across all traits for an overall distance measure or all traits of interest for a particular domain or dimension.",
+      "page_number": null
+    },
+    {
+      "text_id": 98,
+      "paragraph_id": 22,
+      "section_id": 5,
+      "text": "When measuring genetic distance, one could measure overall genetic distance or only the distance for loci associated with a particular disease or associated with a physical trait, such as height.",
+      "page_number": null
+    },
+    {
+      "text_id": 99,
+      "paragraph_id": 22,
+      "section_id": 5,
+      "text": "Similarly, for the CF ST , we might be interested only in traits associated with prosociality, sexual attitudes, or political positions.",
+      "page_number": null
+    },
+    {
+      "text_id": 100,
+      "paragraph_id": 22,
+      "section_id": 5,
+      "text": "Focusing on specific dimensions may be important for particular research questions driven by a particular theory (Muthukrishna & Henrich, 2019), but because we have no particular theoretical basis for examining subdimensions, here we focus on overall cultural distance as a demonstration.",
+      "page_number": null
+    },
+    {
+      "text_id": 101,
+      "paragraph_id": 22,
+      "section_id": 5,
+      "text": "We begin by explaining the CF ST formula, starting with continuous data, which is more straightforward and should be more familiar.",
+      "page_number": null
+    },
+    {
+      "text_id": 102,
+      "paragraph_id": 24,
+      "section_id": 6,
+      "text": "As discussed, at its core, the CF ST is the ratio of the between-group variance (σ g 2 ) and total variance (σ T 2 ):",
+      "page_number": null
+    },
+    {
+      "text_id": 103,
+      "paragraph_id": 25,
+      "section_id": 6,
+      "text": "We can use standard ways of computing a statistical variance when dealing with quantitative characters and, in some cases, cardinal and ordinal data.",
+      "page_number": null
+    },
+    {
+      "text_id": 104,
+      "paragraph_id": 25,
+      "section_id": 6,
+      "text": "The variance for the whole population is taken by summing the data from all individuals in the population:",
+      "page_number": null
+    },
+    {
+      "text_id": 105,
+      "paragraph_id": 26,
+      "section_id": 6,
+      "text": "where x ij is the quantitative measure of an observation from individual j in group i, n i is the number of individuals in group i (with sample size s), xis the mean trait value summed across all individuals in the population, and N = Σ i i n .",
+      "page_number": null
+    },
+    {
+      "text_id": 106,
+      "paragraph_id": 26,
+      "section_id": 6,
+      "text": "Similarly, the variance between groups σ g 2 can be computed as",
+      "page_number": null
+    },
+    {
+      "text_id": 107,
+      "paragraph_id": 27,
+      "section_id": 6,
+      "text": "where x i is the mean quantitative trait value in group i.",
+      "page_number": null
+    },
+    {
+      "text_id": 108,
+      "paragraph_id": 27,
+      "section_id": 6,
+      "text": "Categorical data.",
+      "page_number": null
+    },
+    {
+      "text_id": 109,
+      "paragraph_id": 27,
+      "section_id": 6,
+      "text": "For categorical data, we can adapt the Equation 4 formula in Table 1.10.1 of Cavalli-Sforza et al.",
+      "page_number": null
+    },
+    {
+      "text_id": 110,
+      "paragraph_id": 27,
+      "section_id": 6,
+      "text": "(1994).",
+      "page_number": null
+    },
+    {
+      "text_id": 111,
+      "paragraph_id": 27,
+      "section_id": 6,
+      "text": "For a question or loci with L number of outcomes and p ki as the frequency of outcome (e.g., answer) k in group i, we can compute the CF ST for a particular observation:",
+      "page_number": null
+    },
+    {
+      "text_id": 112,
+      "paragraph_id": 28,
+      "section_id": 6,
+      "text": "is the average allele frequency across s populations weighted by sample size (n i ), and",
+      "page_number": null
+    },
+    {
+      "text_id": 113,
+      "paragraph_id": 29,
+      "section_id": 6,
+      "text": "is the between-group variance in observed frequencies of answers.",
+      "page_number": null
+    },
+    {
+      "text_id": 114,
+      "paragraph_id": 29,
+      "section_id": 6,
+      "text": "This specification gives us the deviations from the mean trait frequency across all groups.",
+      "page_number": null
+    },
+    {
+      "text_id": 115,
+      "paragraph_id": 29,
+      "section_id": 6,
+      "text": "Across all questions, the CF ST is",
+      "page_number": null
+    },
+    {
+      "text_id": 116,
+      "paragraph_id": 31,
+      "section_id": 7,
+      "text": "Cultural distance is calculated using combined data from the two most recent waves of the WVS (2005-2009and 2010-2014;Inglehart et al., 2014).",
+      "page_number": null
+    },
+    {
+      "text_id": 117,
+      "paragraph_id": 31,
+      "section_id": 7,
+      "text": "These waves contain answers from 170,247 participants gathered from nationally representative samples of 80 countries where approximately 85% of the world's population lives.",
+      "page_number": null
+    },
+    {
+      "text_id": 118,
+      "paragraph_id": 31,
+      "section_id": 7,
+      "text": "We included values, beliefs, and behaviors that we judged as culturally transmissible, largely similar to those selected by Bell et al. (2009), but excluded questions that were specific to a region (e.g., confidence in the North American Free Trade Agreement); Bell and colleagues compared only neighboring countries within the same region, so were able to include these.",
+      "page_number": null
+    },
+    {
+      "text_id": 119,
+      "paragraph_id": 31,
+      "section_id": 7,
+      "text": "We also excluded all demographic questions (e.g., age, sex).",
+      "page_number": null
+    },
+    {
+      "text_id": 120,
+      "paragraph_id": 31,
+      "section_id": 7,
+      "text": "A full list of our inclusion and exclusion decisions for all WVS questions is available in the Supplemental Material.",
+      "page_number": null
+    },
+    {
+      "text_id": 121,
+      "paragraph_id": 32,
+      "section_id": 7,
+      "text": "We used the CF ST to develop an American scale of cultural distance from the United States and a Chinese scale of cultural distance from China.",
+      "page_number": null
+    },
+    {
+      "text_id": 122,
+      "paragraph_id": 32,
+      "section_id": 7,
+      "text": "We compared these scales with the following cultural differences, psychological outcomes, and distance measures.",
+      "page_number": null
+    },
+    {
+      "text_id": 123,
+      "paragraph_id": 33,
+      "section_id": 7,
+      "text": "Hofstede's cultural dimensions.",
+      "page_number": null
+    },
+    {
+      "text_id": 124,
+      "paragraph_id": 33,
+      "section_id": 7,
+      "text": "Hofstede's (2001) cultural dimensions were originally based on surveys of IBM staff collected between 1967 and 1973.",
+      "page_number": null
+    },
+    {
+      "text_id": 125,
+      "paragraph_id": 33,
+      "section_id": 7,
+      "text": "The original dimensions included Collectivism-Individualism, Power Distance, Femininity-Masculinity, and Uncertainty Avoidance.",
+      "page_number": null
+    },
+    {
+      "text_id": 126,
+      "paragraph_id": 33,
+      "section_id": 7,
+      "text": "Two additional dimensions, Long-Term Orientation and Indulgence, were added later.",
+      "page_number": null
+    },
+    {
+      "text_id": 127,
+      "paragraph_id": 34,
+      "section_id": 7,
+      "text": "Hofstede (n.d.) offers the following descriptions on his website: Individualism is the extent to which people feel independent, as opposed to being interdependent as members of larger wholes.",
+      "page_number": null
+    },
+    {
+      "text_id": 128,
+      "paragraph_id": 34,
+      "section_id": 7,
+      "text": "Power Distance is the extent to which the less powerful members of organizations and institutions (such as the family) accept and expect that power is distributed unequally.",
+      "page_number": null
+    },
+    {
+      "text_id": 129,
+      "paragraph_id": 34,
+      "section_id": 7,
+      "text": "Masculinity is the extent to which the use of force [is] endorsed socially.",
+      "page_number": null
+    },
+    {
+      "text_id": 130,
+      "paragraph_id": 34,
+      "section_id": 7,
+      "text": "Uncertainty Avoidance deals with a society's tolerance for uncertainty and ambiguity.",
+      "page_number": null
+    },
+    {
+      "text_id": 131,
+      "paragraph_id": 34,
+      "section_id": 7,
+      "text": "Long-Term Orientation deals with change.",
+      "page_number": null
+    },
+    {
+      "text_id": 132,
+      "paragraph_id": 34,
+      "section_id": 7,
+      "text": "In a longtime-oriented culture, the basic notion about the world is that it is in flux, and preparing for the future is always needed.",
+      "page_number": null
+    },
+    {
+      "text_id": 133,
+      "paragraph_id": 34,
+      "section_id": 7,
+      "text": "In a short-[term]-oriented culture, the world is essentially as it was created, so that the past provides a moral compass, and adhering to it is morally good.",
+      "page_number": null
+    },
+    {
+      "text_id": 134,
+      "paragraph_id": 34,
+      "section_id": 7,
+      "text": "Indulgence is about the good things in life.",
+      "page_number": null
+    },
+    {
+      "text_id": 135,
+      "paragraph_id": 34,
+      "section_id": 7,
+      "text": "In an indulgent culture, it is good to be free.",
+      "page_number": null
+    },
+    {
+      "text_id": 136,
+      "paragraph_id": 34,
+      "section_id": 7,
+      "text": "Doing what your impulses want you to do, is good.",
+      "page_number": null
+    },
+    {
+      "text_id": 137,
+      "paragraph_id": 34,
+      "section_id": 7,
+      "text": "Friends are important and life makes sense.",
+      "page_number": null
+    },
+    {
+      "text_id": 138,
+      "paragraph_id": 34,
+      "section_id": 7,
+      "text": "In a restrained culture, the feeling is that life is hard, and duty, not freedom, is the normal state of being. (https://geerthofstede.com/culture-geert-hofstede- gert-jan-hofstede/6d-model-of-national-culture/) Tightness-looseness.",
+      "page_number": null
+    },
+    {
+      "text_id": 139,
+      "paragraph_id": 34,
+      "section_id": 7,
+      "text": "Gelfand et al. (2011) described tight societies as having many strong norms and a low tolerance for deviant behavior.",
+      "page_number": null
+    },
+    {
+      "text_id": 140,
+      "paragraph_id": 34,
+      "section_id": 7,
+      "text": "In contrast, loose societies are characterized as having weak social norms and a high tolerance for deviant behavior.",
+      "page_number": null
+    },
+    {
+      "text_id": 141,
+      "paragraph_id": 34,
+      "section_id": 7,
+      "text": "Gelfand et al. measured tightness on the basis of perceptions of social norms and norm enforcement using a survey that includes questions such as \"There are many social norms that people are supposed to abide by in this country,\" and \"In this country, if someone acts in an inappropriate way, others will strongly disapprove.\"",
+      "page_number": null
+    },
+    {
+      "text_id": 142,
+      "paragraph_id": 35,
+      "section_id": 7,
+      "text": "More recently, Uz (2015) has suggested measuring tightness-looseness on the basis of its outcomegreater variance or standard deviation in professed cultural values.",
+      "page_number": null
+    },
+    {
+      "text_id": 143,
+      "paragraph_id": 35,
+      "section_id": 7,
+      "text": "Uz introduced three standard-deviation measures of answers in the 2000 wave of the WVS.",
+      "page_number": null
+    },
+    {
+      "text_id": 144,
+      "paragraph_id": 35,
+      "section_id": 7,
+      "text": "These included (a) a domain-specific index of the standard deviation of answers to the Morally Debatable Behaviors Scale, which included attitudes toward prostitution, abortion, divorce, euthanasia, and suicide; (b) a domain-general index based on the standard deviation of a variety of values and behavioral practices in the WVS; and (c) a composite measure based on a factor analysis of the domains in the WVS.",
+      "page_number": null
+    },
+    {
+      "text_id": 145,
+      "paragraph_id": 35,
+      "section_id": 7,
+      "text": "This combined or composite measure had the greatest validity.",
+      "page_number": null
+    },
+    {
+      "text_id": 146,
+      "paragraph_id": 35,
+      "section_id": 7,
+      "text": "All Uz measures of looseness are correlated only weakly with the Gelfand et al. ( 2011) measure (rs = .16-.30).",
+      "page_number": null
+    },
+    {
+      "text_id": 147,
+      "paragraph_id": 35,
+      "section_id": 7,
+      "text": "Schwartz's values.",
+      "page_number": null
+    },
+    {
+      "text_id": 148,
+      "paragraph_id": 35,
+      "section_id": 7,
+      "text": "Schwartz's (2006) cultural-value orientation is a theory that outlines various values that help regulate human behavior in different societies.",
+      "page_number": null
+    },
+    {
+      "text_id": 149,
+      "paragraph_id": 35,
+      "section_id": 7,
+      "text": "Harmony refers to fitting into the world as it is, whereas mastery refers to the tendency to change the world to achieve your goals.",
+      "page_number": null
+    },
+    {
+      "text_id": 150,
+      "paragraph_id": 35,
+      "section_id": 7,
+      "text": "Affective autonomy refers to pursuing pleasurable experiences.",
+      "page_number": null
+    },
+    {
+      "text_id": 151,
+      "paragraph_id": 35,
+      "section_id": 7,
+      "text": "Intellectual autonomy refers to pursuing your own ideas independently.",
+      "page_number": null
+    },
+    {
+      "text_id": 152,
+      "paragraph_id": 35,
+      "section_id": 7,
+      "text": "Embeddedness is similar to collectivism.",
+      "page_number": null
+    },
+    {
+      "text_id": 153,
+      "paragraph_id": 35,
+      "section_id": 7,
+      "text": "Hierarchy refers to unequal distribution of power, whereas egalitarianism refers to recognizing all people as moral equals.",
+      "page_number": null
+    },
+    {
+      "text_id": 154,
+      "paragraph_id": 36,
+      "section_id": 7,
+      "text": "Five-factor model of personality.",
+      "page_number": null
+    },
+    {
+      "text_id": 155,
+      "paragraph_id": 36,
+      "section_id": 7,
+      "text": "We used cross-cultural data gathered by McCrae et al. (2005) for the five-factor model of personality.",
+      "page_number": null
+    },
+    {
+      "text_id": 156,
+      "paragraph_id": 36,
+      "section_id": 7,
+      "text": "These personality factors include Openness, Conscientiousness, Extraversion, Agreeableness, and Neuroticism.",
+      "page_number": null
+    },
+    {
+      "text_id": 157,
+      "paragraph_id": 36,
+      "section_id": 7,
+      "text": "These data were gathered with 133 to 919 participants within each of 50 societies using the 240-item Revised NEO Personality Inventory (NEO-PI-R) measure given in the participants' native language.",
+      "page_number": null
+    },
+    {
+      "text_id": 158,
+      "paragraph_id": 36,
+      "section_id": 7,
+      "text": "The standard deviation was the mean T-score-standardized standard deviation across 30 NEO-PI-R facet scales.",
+      "page_number": null
+    },
+    {
+      "text_id": 159,
+      "paragraph_id": 36,
+      "section_id": 7,
+      "text": "Recent research suggests that variance in personality is predicted by sociocultural complexity (Smaldino, Lukaszewski, von Rueden, & Gurven, 2019).",
+      "page_number": null
+    },
+    {
+      "text_id": 160,
+      "paragraph_id": 37,
+      "section_id": 7,
+      "text": "Other psychological and behavioral measures.",
+      "page_number": null
+    },
+    {
+      "text_id": 161,
+      "paragraph_id": 37,
+      "section_id": 7,
+      "text": "We also included several other measures that have been used by psychologists, behavioral scientists, and economists.",
+      "page_number": null
+    },
+    {
+      "text_id": 162,
+      "paragraph_id": 37,
+      "section_id": 7,
+      "text": "With the exception of the corruption-perceptions index, these variables capture psychological outcomes that have been suggested to have WEIRD origins (Schulz, Bahrami-Rad, Beauchamp, & Henrich, 2019).",
+      "page_number": null
+    },
+    {
+      "text_id": 163,
+      "paragraph_id": 38,
+      "section_id": 7,
+      "text": "Blood donations per 1,000 individuals were used as a measure of impersonal cooperative altruism.",
+      "page_number": null
+    },
+    {
+      "text_id": 164,
+      "paragraph_id": 38,
+      "section_id": 7,
+      "text": "The frequency of voluntary, unpaid, anonymous blood donations from countries (World Health Organization) and Italian provinces was measured.",
+      "page_number": null
+    },
+    {
+      "text_id": 165,
+      "paragraph_id": 38,
+      "section_id": 7,
+      "text": "These data were collated by Schulz et al. (2019) from the World Health Organization Global Status Report on Blood Safety and Availability.",
+      "page_number": null
+    },
+    {
+      "text_id": 166,
+      "paragraph_id": 38,
+      "section_id": 7,
+      "text": "Diplomat Parking Tickets is based on data on unpaid parking tickets of United Nations diplomats in New York City.",
+      "page_number": null
+    },
+    {
+      "text_id": 167,
+      "paragraph_id": 38,
+      "section_id": 7,
+      "text": "These data come from a classic economics study showing that the number of unpaid parking tickets is predicted by corruption norms (Fisman & Miguel, 2007).",
+      "page_number": null
+    },
+    {
+      "text_id": 168,
+      "paragraph_id": 38,
+      "section_id": 7,
+      "text": "Diplomats do not face sanctions for unpaid parking tickets because of diplomatic immunity, but the rate of accruing tickets varies considerably by country of origin, ranging from a mean of 0 per diplomat to 249 per diplomat.",
+      "page_number": null
+    },
+    {
+      "text_id": 169,
+      "paragraph_id": 38,
+      "section_id": 7,
+      "text": "The Corruption Perceptions Index is a measure of the descriptive corruption norm published by Transparency International (2016), using the 2015 index to match the WVS.",
+      "page_number": null
+    },
+    {
+      "text_id": 170,
+      "paragraph_id": 38,
+      "section_id": 7,
+      "text": "In addition to predicting the accrual of diplomats' parking tickets, it also predicts bribery behavior within economic games (Muthukrishna, Francois, Pourahmadi, & Henrich, 2017).",
+      "page_number": null
+    },
+    {
+      "text_id": 171,
+      "paragraph_id": 38,
+      "section_id": 7,
+      "text": "We used the 2015 index, the final year of the current wave of the WVS.",
+      "page_number": null
+    },
+    {
+      "text_id": 172,
+      "paragraph_id": 38,
+      "section_id": 7,
+      "text": "The Return Wallet data are from a recent study comparing return rates of dropped wallets in several countries around the world (Cohn, Maréchal, Tannenbaum, & Zünd, 2019).",
+      "page_number": null
+    },
+    {
+      "text_id": 173,
+      "paragraph_id": 39,
+      "section_id": 7,
+      "text": "Distance measures.",
+      "page_number": null
+    },
+    {
+      "text_id": 174,
+      "paragraph_id": 39,
+      "section_id": 7,
+      "text": "The Centre d'Études Prospectives et d'Informations Internationales (CEPII) GeoDist data set (Mayer & Zignago, 2012) contains pairwise geographic distance measures between countries calculated in four different ways.",
+      "page_number": null
+    },
+    {
+      "text_id": 175,
+      "paragraph_id": 39,
+      "section_id": 7,
+      "text": "The first measure (Geographic Distance Population Center) is a simple distance calculation based on the latitudes and longitudes of the most important city (in terms of population) in each country.",
+      "page_number": null
+    },
+    {
+      "text_id": 176,
+      "paragraph_id": 39,
+      "section_id": 7,
+      "text": "The second measure (Geographic Distance Capitals) is calculated using the same approach but uses the official capital of each country.",
+      "page_number": null
+    },
+    {
+      "text_id": 177,
+      "paragraph_id": 39,
+      "section_id": 7,
+      "text": "The third and fourth measures are weighted to account for the geographic location of the population within each country.",
+      "page_number": null
+    },
+    {
+      "text_id": 178,
+      "paragraph_id": 39,
+      "section_id": 7,
+      "text": "This approach, akin to gravitational attraction, calculates the distance between the largest cities in each country, weighted by the share of the population within those cities.",
+      "page_number": null
+    },
+    {
+      "text_id": 179,
+      "paragraph_id": 39,
+      "section_id": 7,
+      "text": "Geographic Distance Gravity Weight 1 uses an arithmetic mean, and Geographic Distance Gravity Weight 2 uses a harmonic mean.",
+      "page_number": null
+    },
+    {
+      "text_id": 180,
+      "paragraph_id": 40,
+      "section_id": 7,
+      "text": "The CEPII Language data set (Melitz & Toubal, 2014) contains pairwise linguistic distance measures between countries calculated in two different ways.",
+      "page_number": null
+    },
+    {
+      "text_id": 181,
+      "paragraph_id": 40,
+      "section_id": 7,
+      "text": "Linguistic Distance Ethnologue calculates linguistic distance using the Ethnologue language trees (www.ethnologue.com).",
+      "page_number": null
+    },
+    {
+      "text_id": 182,
+      "paragraph_id": 40,
+      "section_id": 7,
+      "text": "Linguistic Distance ASJP is based on the results of the Automated Similarity Judgment Program (ASJP) project (https://asjp.clld.org), which looks at lexical similarity between 40 words in 256 languages (as defined by the Ethnologue project).",
+      "page_number": null
+    },
+    {
+      "text_id": 183,
+      "paragraph_id": 41,
+      "section_id": 7,
+      "text": "Genetic distance is based on genetic data from Pemberton et al.'s (2013) work, matched to countries by Spolaore and Wacziarg (2018).",
+      "page_number": null
+    },
+    {
+      "text_id": 184,
+      "paragraph_id": 41,
+      "section_id": 7,
+      "text": "Genetic Distance Ethnic Weighting weights the ethnic groups within a country by their population size.",
+      "page_number": null
+    },
+    {
+      "text_id": 185,
+      "paragraph_id": 41,
+      "section_id": 7,
+      "text": "Genetic Distance Ethnic Plurality considers only genetic distance from the largest ethnic plurality in the country.",
+      "page_number": null
+    },
+    {
+      "text_id": 186,
+      "paragraph_id": 43,
+      "section_id": 8,
+      "text": "The WVS contains various answer types, including Likert-type scales, binary approve/disapprove responses, and categorical responses.",
+      "page_number": null
+    },
+    {
+      "text_id": 187,
+      "paragraph_id": 43,
+      "section_id": 8,
+      "text": "Societies have markedly different answering styles (Chen, Lee, & Stevenson, 1995;Heine, Lehman, Peng, & Greenholtz, 2002).",
+      "page_number": null
+    },
+    {
+      "text_id": 188,
+      "paragraph_id": 43,
+      "section_id": 8,
+      "text": "There are also issues with using Likert-type scales crossculturally for a variety of reasons, including cross-cultural differences in preferences for yes/no answers versus a Likert-type scale rating (for discussion and a review, see Hruschka, Munira, Jesmin, Hackman, & Tiokhin, 2018).",
+      "page_number": null
+    },
+    {
+      "text_id": 189,
+      "paragraph_id": 43,
+      "section_id": 8,
+      "text": "To reduce the possibility that differences in answer distributions were due to differences in answering style rather than the actual belief or behavior of interest, we split and collapsed valenced questions into positive or negative values akin to alleles (e.g., very important and rather important were combined and not very important and not at all important were combined; if a midpoint existed, it was treated as a separate response).",
+      "page_number": null
+    },
+    {
+      "text_id": 190,
+      "paragraph_id": 43,
+      "section_id": 8,
+      "text": "This avoided differences in answering styles masking true differences in beliefs, values, and behaviors and was conservative in collapsing graded differences and showing only opposite beliefs or behaviors.",
+      "page_number": null
+    },
+    {
+      "text_id": 191,
+      "paragraph_id": 43,
+      "section_id": 8,
+      "text": "That is, larger distances may exist because of the extent of a belief or behavior-for example, both country A and country B may be more liberal but country A even more so.",
+      "page_number": null
+    },
+    {
+      "text_id": 192,
+      "paragraph_id": 43,
+      "section_id": 8,
+      "text": "Unfortunately, we cannot distinguish this from a tendency for people from country A to answer more extremely.",
+      "page_number": null
+    },
+    {
+      "text_id": 193,
+      "paragraph_id": 43,
+      "section_id": 8,
+      "text": "The distance we show here represents opposite beliefs and behaviors-for example, country A is more liberal, and country B is more conservative.",
+      "page_number": null
+    },
+    {
+      "text_id": 194,
+      "paragraph_id": 44,
+      "section_id": 8,
+      "text": "Nominal responses such as religious classification (\"a religious person,\" \"not a religious person,\" \"a convinced atheist\") were treated akin to separate \"alleles.\"",
+      "page_number": null
+    },
+    {
+      "text_id": 195,
+      "paragraph_id": 44,
+      "section_id": 8,
+      "text": "We discuss this in more detail below.",
+      "page_number": null
+    },
+    {
+      "text_id": 196,
+      "paragraph_id": 44,
+      "section_id": 8,
+      "text": "Moreover, some ordinal questions had very few responses for a particular option.",
+      "page_number": null
+    },
+    {
+      "text_id": 197,
+      "paragraph_id": 45,
+      "section_id": 8,
+      "text": "Our decision strategy was as follows.",
+      "page_number": null
+    },
+    {
+      "text_id": 198,
+      "paragraph_id": 45,
+      "section_id": 8,
+      "text": "First, we changed all valence questions to a positive allele and a negative allele.",
+      "page_number": null
+    },
+    {
+      "text_id": 199,
+      "paragraph_id": 45,
+      "section_id": 8,
+      "text": "A midpoint was coded as a third allele.",
+      "page_number": null
+    },
+    {
+      "text_id": 200,
+      "paragraph_id": 45,
+      "section_id": 8,
+      "text": "For example, answers options for the question \"Indicate how important it is in your life: Family\" were very important, rather important, not very important, and not at all important.",
+      "page_number": null
+    },
+    {
+      "text_id": 201,
+      "paragraph_id": 45,
+      "section_id": 8,
+      "text": "These were condensed to two cultural alleles: Allele 1 consisted of very important and rather important, and Allele 2 consisted of not very important and not at all important.",
+      "page_number": null
+    },
+    {
+      "text_id": 202,
+      "paragraph_id": 45,
+      "section_id": 8,
+      "text": "Another example is the question, \"To fully develop your talents, you need to have a job,\" which had answer options of strongly agree, agree, neither, disagree, and strongly disagree.",
+      "page_number": null
+    },
+    {
+      "text_id": 203,
+      "paragraph_id": 45,
+      "section_id": 8,
+      "text": "These were condensed to three alleles-one for each valence and one for the midpoint: Allele 1 consisted of strongly agree and agree, Allele 2 consisted of disagree and strongly disagree, and Allele 3 consisted of neither.",
+      "page_number": null
+    },
+    {
+      "text_id": 204,
+      "paragraph_id": 46,
+      "section_id": 8,
+      "text": "Second, we restricted this breakdown to a maximum of four alleles, combining multiple answers on the basis of overall distributions of responses.",
+      "page_number": null
+    },
+    {
+      "text_id": 205,
+      "paragraph_id": 46,
+      "section_id": 8,
+      "text": "For examples, the answer options for the question \"Apart from weddings and funerals, about how often do you attend religious services these days?\"",
+      "page_number": null
+    },
+    {
+      "text_id": 206,
+      "paragraph_id": 46,
+      "section_id": 8,
+      "text": "were more than once a week, once a week, once a month, only holy days, once a year, less often, and never (the wording was changed slightly between waves).",
+      "page_number": null
+    },
+    {
+      "text_id": 207,
+      "paragraph_id": 46,
+      "section_id": 8,
+      "text": "These were condensed to four alleles: Allele 1 consisted of more than once a week and once a week, Allele 2 consisted of once a month and only holy days, Allele 3 consisted of once a year and less often, and Allele 4 consisted of never.",
+      "page_number": null
+    },
+    {
+      "text_id": 208,
+      "paragraph_id": 46,
+      "section_id": 8,
+      "text": "(A full list of allele categorizations is available in the file \"alleledimension-data.csv\" in the Supplemental Material.)",
+      "page_number": null
+    },
+    {
+      "text_id": 209,
+      "paragraph_id": 48,
+      "section_id": 9,
+      "text": "We calculated 95% CIs by bootstrapping with 1,000 replications as recommended by Bell et al.",
+      "page_number": null
+    },
+    {
+      "text_id": 210,
+      "paragraph_id": 48,
+      "section_id": 9,
+      "text": "(2009).",
+      "page_number": null
+    },
+    {
+      "text_id": 211,
+      "paragraph_id": 48,
+      "section_id": 9,
+      "text": "Figures S1 and S2 in the Supplemental Material show the American and Chinese scales, respectively, with 95% CIs.",
+      "page_number": null
+    },
+    {
+      "text_id": 212,
+      "paragraph_id": 49,
+      "section_id": 9,
+      "text": "We investigated the robustness of the CF ST in two ways: (a) by randomly resampling a fixed percentage of the question set (increments of 10% from 10% to 90%; new random selection of questions for each sample) and (b) by randomly resampling a fixed percentage of the values (increments of 10% from 10% to 90%; new random selection of values for each sample).",
+      "page_number": null
+    },
+    {
+      "text_id": 213,
+      "paragraph_id": 49,
+      "section_id": 9,
+      "text": "In both cases, we compared the calculated CF ST scores with the scores using the full data set.",
+      "page_number": null
+    },
+    {
+      "text_id": 214,
+      "paragraph_id": 49,
+      "section_id": 9,
+      "text": "We did this 10,000 times for each percentage value for each method of resampling and then compared the result with the real CF ST values, recording (a) the size of the deviation, (b) the Pearson correlation, and (c) the Spearman correlation.",
+      "page_number": null
+    },
+    {
+      "text_id": 215,
+      "paragraph_id": 49,
+      "section_id": 9,
+      "text": "For the purposes of the American scale, we did this for all countries relative to the United States.",
+      "page_number": null
+    },
+    {
+      "text_id": 216,
+      "paragraph_id": 49,
+      "section_id": 9,
+      "text": "For a comparison, we did the same to create a Chinese scale with all countries relative to China.",
+      "page_number": null
+    },
+    {
+      "text_id": 217,
+      "paragraph_id": 53,
+      "section_id": 11,
+      "text": "We constructed an American scale by calculating the cultural distance for all countries relative to the United States, the most overrepresented country in psychological research by a wide margin (Henrich et al., 2010).",
+      "page_number": null
+    },
+    {
+      "text_id": 218,
+      "paragraph_id": 53,
+      "section_id": 11,
+      "text": "As a point of comparison and to reinforce the point that cultural distances do not unidimensionally range from WEIRD to non-WEIRD, we also constructed a Chinese scale by calculating the cultural distance for all countries relative to China, a common cultural comparison in cultural psychology.",
+      "page_number": null
+    },
+    {
+      "text_id": 219,
+      "paragraph_id": 54,
+      "section_id": 11,
+      "text": "Because the CF ST is a composite of many questions, we effectively cut a line through a large multidimensional culture space and looked only at the distance from a particular point (the United States in the American scale, China in the Chinese scale).",
+      "page_number": null
+    },
+    {
+      "text_id": 220,
+      "paragraph_id": 54,
+      "section_id": 11,
+      "text": "Thus, Japan and Norway are similarly culturally distant from the United States (.115 and .124, respectively) but are not necessarily similar to each other, just as Colombia and the United Kingdom are similarly geographically distant from the United States but nowhere near each other.",
+      "page_number": null
+    },
+    {
+      "text_id": 221,
+      "paragraph_id": 54,
+      "section_id": 11,
+      "text": "Table 1 contains the values of the American scale and Chinese scale of cultural distance, which are also graphed on a map in Figure 3 and on number lines in Figure 4 (note that the most commonly studied non-Western nations-Japan, Hong Kong, and China-are by no means the extreme on the American scale).",
+      "page_number": null
+    },
+    {
+      "text_id": 222,
+      "paragraph_id": 54,
+      "section_id": 11,
+      "text": "Figures S1 and S2 show the American scale and Chinese scale number lines, respectively, with 95% CIs shaded in blue.",
+      "page_number": null
+    },
+    {
+      "text_id": 223,
+      "paragraph_id": 54,
+      "section_id": 11,
+      "text": "Further emphasizing that cultural distances are distances in a large multidimensional culture space, Figure 5 shows a 2-D plot of distance from both the United States and China.",
+      "page_number": null
+    },
+    {
+      "text_id": 224,
+      "paragraph_id": 54,
+      "section_id": 11,
+      "text": "The plot reveals that many countries are close to neither the United States nor China (and are not necessarily culturally close to each other).",
+      "page_number": null
+    },
+    {
+      "text_id": 225,
+      "paragraph_id": 54,
+      "section_id": 11,
+      "text": "For example, Sweden and Colombia are similarly distant from both the United States (CF ST scores = .115 and .102, respectively) and China (CF ST scores = .186 Table 1. (continued)",
+      "page_number": null
+    },
+    {
+      "text_id": 226,
+      "paragraph_id": 55,
+      "section_id": 11,
+      "text": "and .182, respectively), but they are not culturally close to each other (indeed, they are very different; CF ST score = .261).",
+      "page_number": null
+    },
+    {
+      "text_id": 227,
+      "paragraph_id": 55,
+      "section_id": 11,
+      "text": "But here, too, bear in mind that countries close to each other on this plot are not necessarily culturally close to each other; any low-dimensional plot will necessarily collapse the distances in the large multidimensional culture space.",
+      "page_number": null
+    },
+    {
+      "text_id": 228,
+      "paragraph_id": 56,
+      "section_id": 11,
+      "text": "Recent research (Klein et al., 2018) suggests that researchers may also wish to have a proxy for a WEIRD scale.",
+      "page_number": null
+    },
+    {
+      "text_id": 229,
+      "paragraph_id": 56,
+      "section_id": 11,
+      "text": "The American scale may serve as a proxy for a WEIRD scale, given that American samples dominate psychological research.",
+      "page_number": null
+    },
+    {
+      "text_id": 230,
+      "paragraph_id": 56,
+      "section_id": 11,
+      "text": "However, as the American scale reveals, there is considerable distance between different nations that may all be classified as WEIRD (see Table 1 and Figs. 3 and 4).",
+      "page_number": null
+    },
+    {
+      "text_id": 231,
+      "paragraph_id": 56,
+      "section_id": 11,
+      "text": "Moreover, there is a high but imperfect correlation between scales constructed with distance from different WEIRD nations (e.g., American scale correlation with Canadian scale: r = .94, p < .001; Australian scale: r = .89, p < .001; New Zealand scale: r = .86, p < .001; and British scale: r = .83, p < .001).",
+      "page_number": null
+    },
+    {
+      "text_id": 232,
+      "paragraph_id": 56,
+      "section_id": 11,
+      "text": "Whenever possible, we encourage researchers to look at the distance between specific samples or even between participants at a national or regional level.",
+      "page_number": null
+    },
+    {
+      "text_id": 233,
+      "paragraph_id": 56,
+      "section_id": 11,
+      "text": "For example, conducting studies to test generalizability or explain anticipated cultural variation from US studies will be less powerful if done in Australia compared with Yemen, but generalizing a study conducted in Turkey will be less powerful if done in Yemen compared with Australia.",
+      "page_number": null
+    },
+    {
+      "text_id": 234,
+      "paragraph_id": 57,
+      "section_id": 11,
+      "text": "To make it easy to quickly calculate the cultural distance between any two nations, we have provided Andorra Argentina Armenia A Australia Azerbaijan Bahrain Belarus Brazil Bulgaria Burkina Faso Canada Chile Colombia Cyprus Ecuador Egypt Estonia Ethiopia Finland France Georgia Germany Ghana Great Britain Guatemala Hong Kong Hungary India Indonesia nd Iran Iraq Italy Japan Jordan Kazakhstan Kuwait Kyrgyzstan Lebanon Libya Malaysia Mali Mexico Moldova Morocco Netherlands New Zealand Nigeria Norway Pakistan Palestine Peru Philippines Poland Qatar Romania Russia Rwanda Serbia and Montenegro Singapore Slovenia South Africa South Korea Spain Sweden Switzerland Taiwan Thailand Trinidad and Tobago",
+      "page_number": null
+    },
+    {
+      "text_id": 235,
+      "paragraph_id": 58,
+      "section_id": 11,
+      "text": "Tunisia Turkey Ukraine Uruguay Uzbekistan Viet Nam Yemen Zambia Zimbabwe Distance From United States Distance From China Region Africa Asia Europe Middle East North America Oceania South America .05 .10 .15 .20 .25 .05 .10 .15 . 20 the R code and created an online tool (www.cultur aldistance.com).",
+      "page_number": null
+    },
+    {
+      "text_id": 236,
+      "paragraph_id": 58,
+      "section_id": 11,
+      "text": "In the future, this tool will also allow region-by-region comparisons.",
+      "page_number": null
+    },
+    {
+      "text_id": 237,
+      "paragraph_id": 60,
+      "section_id": 12,
+      "text": "Many readers will be familiar with the cultural differences within the United States-the honor culture of the South (Nisbett & Cohen, 1996), the corporate and educational culture of New England, the liberal culture of the West Coast, and so on (Woodard, 2011).",
+      "page_number": null
+    },
+    {
+      "text_id": 238,
+      "paragraph_id": 60,
+      "section_id": 12,
+      "text": "However, CF ST analyses comparing the WVS regions (with at least 100 surveyed individuals) within the United States, China, India, and the European Union reveal the relative homogeneity of the United States compared with these other large populations.",
+      "page_number": null
+    },
+    {
+      "text_id": 239,
+      "paragraph_id": 61,
+      "section_id": 12,
+      "text": "lgaria Bulg Swed eden Liaoning Provin ng Province ngjiang Province Heilo Sha anxi Province Shaannxi Province nce Hebei Provin Beijing e Jiangsu Province ce ce Jia Jia an e J Fujian Province Shandong Province ng Province Zhejian S Shanghai Guangdong Province unan Province H Hubei Provinc ce Henan Pr rovince Jiangxi Province J Anhui Province Gu Guizhou Province Guangxi Pr rovince us Cypru Finland Italy Poland Romania ma Slovenia Britain Great Br France Germany Assam am Karnataka Punjab Kerala Orrisa Andhra a Pradesh Bi Bihar ujarat Guj Madhya Pradesh Maharashtra n Rajasthan Tamil Nadu Uttar Prad adesh West Bengal Netherlands Spain West North C h Central th East South Central uth Atlantic Sout tic States Middle Atlant ntral East North Cent New England West South Central th Ce Mountain state Rocky M California Hungary Pacific c nia Eston Gansu NMDS 1 NMDS 2 Region China European Union India United States India, \"the country of a hundred nations and a hundred tongues, of a thousand religions and two million gods\" (Twain, 1897(Twain, /1989, p. 348), p. 348), has the largest mean regional diversity of these populations (CF ST = .11).",
+      "page_number": null
+    },
+    {
+      "text_id": 240,
+      "paragraph_id": 61,
+      "section_id": 12,
+      "text": "The European Union, a long-running project attempting to create a political and economic union, is next (CF ST = .09), followed by China, despite being 90% Han (CF ST = .05).",
+      "page_number": null
+    },
+    {
+      "text_id": 241,
+      "paragraph_id": 61,
+      "section_id": 12,
+      "text": "The United States has the least regional diversity with a CF ST of .01.",
+      "page_number": null
+    },
+    {
+      "text_id": 242,
+      "paragraph_id": 62,
+      "section_id": 12,
+      "text": "We illustrate these differences in Figure 6, displaying nonmetric multidimensional scaling with the R MASS package (Venables & Ripley, 2002) on a pairwise CF ST matrix including the WVS regions within the United States, China, India, and the European Union with at least 100 surveyed individuals.",
+      "page_number": null
+    },
+    {
+      "text_id": 243,
+      "paragraph_id": 63,
+      "section_id": 12,
+      "text": "These within-population analyses reveal the importance of remembering that societies are not homogeneous but, rather, have multivariate distributions of many traits along many dimensions with structure within structure.",
+      "page_number": null
+    },
+    {
+      "text_id": 244,
+      "paragraph_id": 63,
+      "section_id": 12,
+      "text": "There are likely to be cultural differences between not only regions within a country but also ethnicities, religions, socioeconomic class, and other groupings.",
+      "page_number": null
+    },
+    {
+      "text_id": 245,
+      "paragraph_id": 63,
+      "section_id": 12,
+      "text": "These are all avenues for future research.",
+      "page_number": null
+    },
+    {
+      "text_id": 246,
+      "paragraph_id": 65,
+      "section_id": 13,
+      "text": "We investigated the robustness of the CF ST by randomly resampling a fixed proportion of the question set and comparing these values with the full question set.",
+      "page_number": null
+    },
+    {
+      "text_id": 247,
+      "paragraph_id": 65,
+      "section_id": 13,
+      "text": "We did this 10,000 times for each proportion value and then (a) counted the number of times a value fell outside the CI calculated on all questions and (b) recorded the size of the deviation from the CF ST value calculated on all questions for two different measures of robustness.",
+      "page_number": null
+    },
+    {
+      "text_id": 248,
+      "paragraph_id": 65,
+      "section_id": 13,
+      "text": "For the purposes of the American scale, we did this for all countries relative to the United States.",
+      "page_number": null
+    },
+    {
+      "text_id": 249,
+      "paragraph_id": 65,
+      "section_id": 13,
+      "text": "For the Chinese scale, we did the same with all countries relative to China.",
+      "page_number": null
+    },
+    {
+      "text_id": 250,
+      "paragraph_id": 65,
+      "section_id": 13,
+      "text": "We plot these in Figures 7 and 8.",
+      "page_number": null
+    },
+    {
+      "text_id": 251,
+      "paragraph_id": 66,
+      "section_id": 13,
+      "text": "These analyses show that the CF ST is highly robust.",
+      "page_number": null
+    },
+    {
+      "text_id": 252,
+      "paragraph_id": 66,
+      "section_id": 13,
+      "text": "We can sample up to only 50% of questions and still get only small deviations (.013 and .026 from the United States and China, respectively) and values that remain highly correlated with the original scale by both Pearson correlation (rs = .95 and .87 from the United States and China, respectively) and Spearman correlation (rs = .95 and .85 from the United States and China, respectively).",
+      "page_number": null
+    },
+    {
+      "text_id": 253,
+      "paragraph_id": 66,
+      "section_id": 13,
+      "text": "When we sample by values instead of entire questions, deviations are smaller still.",
+      "page_number": null
+    },
+    {
+      "text_id": 254,
+      "paragraph_id": 66,
+      "section_id": 13,
+      "text": "This robustness, even to losing entire questions, is not so surprising when you consider that culture tends to cluster (Harton & Bullock, 2007) because of cultural transmission mechanisms such as common sources of information and the conformist bias in cultural learning (Chudek, Muthukrishna, & Henrich, 2015;Henrich, 2016;Muthukrishna, Morgan, & Henrich, 2016).",
+      "page_number": null
+    },
+    {
+      "text_id": 255,
+      "paragraph_id": 66,
+      "section_id": 13,
+      "text": "Thus, the CF ST will be robust even if we do not ask every conceivable question, as long as we have a variety of questions that capture a variety of cultural traits (the correlation between cultural traits is not perfect).",
+      "page_number": null
+    },
+    {
+      "text_id": 256,
+      "paragraph_id": 66,
+      "section_id": 13,
+      "text": "To this end, the WVS is an ideal survey for creating scales of cultural distance.",
+      "page_number": null
+    },
+    {
+      "text_id": 257,
+      "paragraph_id": 68,
+      "section_id": 14,
+      "text": "In Table 2, we compare the American scale and Chinese scale with other commonly used measures of psychological and cultural differences.",
+      "page_number": null
+    },
+    {
+      "text_id": 258,
+      "paragraph_id": 68,
+      "section_id": 14,
+      "text": "For the difference measures, we report the correlation with the raw value and also subtract each country's score from the score for the United States and China, respectively (labeled \"relative\").",
+      "page_number": null
+    },
+    {
+      "text_id": 259,
+      "paragraph_id": 68,
+      "section_id": 14,
+      "text": "For the distance scores, we compare the distance from the United States and China, respectively.",
+      "page_number": null
+    },
+    {
+      "text_id": 260,
+      "paragraph_id": 68,
+      "section_id": 14,
+      "text": "We plot these correlations visually in Figure S4 in the Supplemental Material.",
+      "page_number": null
+    },
+    {
+      "text_id": 261,
+      "paragraph_id": 69,
+      "section_id": 14,
+      "text": "These correlations reveal that the American scale predicts many more cross-cultural differences in psychology than the Chinese scale.",
+      "page_number": null
+    },
+    {
+      "text_id": 262,
+      "paragraph_id": 69,
+      "section_id": 14,
+      "text": "Remarkably, many of these correlations are large and significant even when we correlated the raw values of the various measures.",
+      "page_number": null
+    },
+    {
+      "text_id": 263,
+      "paragraph_id": 69,
+      "section_id": 14,
+      "text": "This suggests that WEIRD societies, as typified by the United States, are truly odd outliers in human psychology (Schulz et al., 2019).",
+      "page_number": null
+    },
+    {
+      "text_id": 264,
+      "paragraph_id": 69,
+      "section_id": 14,
+      "text": "Another nonexclusive possibility is that researchers from WEIRD countries have focused their data-gathering efforts on psychological dimensions that they find odd in comparison with Western psychology.",
+      "page_number": null
+    },
+    {
+      "text_id": 265,
+      "paragraph_id": 69,
+      "section_id": 14,
+      "text": "Long-Term Orientation, a new addition to Hofstede's cultural dimensions, is a nice illustration of a trait for which China, rather than the United States, is the outlier.",
+      "page_number": null
+    },
+    {
+      "text_id": 266,
+      "paragraph_id": 69,
+      "section_id": 14,
+      "text": "If psychology were dominated by China, Table 2 would have perhaps been dominated by dimensions that Chinese researchers found to be different in other parts of the world, and the Chinese scale, rather than the American scale, would consequently be more predictive of differences.",
+      "page_number": null
+    },
+    {
+      "text_id": 267,
+      "paragraph_id": 70,
+      "section_id": 14,
+      "text": "It is reassuring that, in contrast to these psychological differences, the proxies for cultural distancegeographic, linguistic, and genetic-although weakly correlated, are predictive of cultural distance from both the United States and China and not just the United States.",
+      "page_number": null
+    },
+    {
+      "text_id": 268,
+      "paragraph_id": 70,
+      "section_id": 14,
+      "text": "Together, these correlations suggest that (a) we are measuring an overall cultural distance-a strength of the CF ST approach, (b) an American scale is predictive of various psychological variables, and (c) the United States is unique either as a psychological outlier or because of what the United States and other WEIRD researchers have chosen to study.",
+      "page_number": null
+    },
+    {
+      "text_id": 269,
+      "paragraph_id": 70,
+      "section_id": 14,
+      "text": "Hofstede's (2001) Individualism dimension is perhaps the dimension most often used and cited across the social sciences.",
+      "page_number": null
+    },
+    {
+      "text_id": 270,
+      "paragraph_id": 70,
+      "section_id": 14,
+      "text": "It has the highest correlation with the American scale of cultural distance, with more collectivist societies further away from the United States.",
+      "page_number": null
+    },
+    {
+      "text_id": 271,
+      "paragraph_id": 70,
+      "section_id": 14,
+      "text": "The next most commonly used and cited cultural dimension is probably Power Distance, which has the second highest correlation with the American scale.",
+      "page_number": null
+    },
+    {
+      "text_id": 272,
+      "paragraph_id": 70,
+      "section_id": 14,
+      "text": "Societies with a larger power distance are more culturally distant to the United States.",
+      "page_number": null
+    },
+    {
+      "text_id": 273,
+      "paragraph_id": 70,
+      "section_id": 14,
+      "text": "The only other measure with a reasonably large correlation with the American scale is Indulgence, for which societies that have more emphasis on individual freedom are more culturally similar to the United States.",
+      "page_number": null
+    },
+    {
+      "text_id": 274,
+      "paragraph_id": 70,
+      "section_id": 14,
+      "text": "These correlations match US stereotypes that emphasize equality and individual Schwartz's (2006) values of embeddedness and autonomy correlate with the American scale, as may harmony and hierarchy.",
+      "page_number": null
+    },
+    {
+      "text_id": 275,
+      "paragraph_id": 70,
+      "section_id": 14,
+      "text": "These correlations mirror the correlation with Hofstede's Individualism and Indulgence dimensions.",
+      "page_number": null
+    },
+    {
+      "text_id": 276,
+      "paragraph_id": 70,
+      "section_id": 14,
+      "text": "The correlations with the Chinese scale are more unreliable, although there may be a relationship with embeddedness, egalitarianism, and autonomy, suggesting that China may be an extreme on these dimensions.",
+      "page_number": null
+    },
+    {
+      "text_id": 277,
+      "paragraph_id": 71,
+      "section_id": 14,
+      "text": "Extraversion, Agreeableness, and perhaps Openness correlated with the American scale, again suggesting that the United States is an outlier on these dimensions.",
+      "page_number": null
+    },
+    {
+      "text_id": 278,
+      "paragraph_id": 71,
+      "section_id": 14,
+      "text": "None of the personality factors reliably correlate with the Chinese scale.",
+      "page_number": null
+    },
+    {
+      "text_id": 279,
+      "paragraph_id": 71,
+      "section_id": 14,
+      "text": "McCrae et al. (2005) noted that Western nations tend to have larger variance across personality traits, which is borne out by the correlation with the American scale but not the Chinese scale.",
+      "page_number": null
+    },
+    {
+      "text_id": 280,
+      "paragraph_id": 71,
+      "section_id": 14,
+      "text": "This may fit with greater latitude for self-expression in WEIRD societies.",
+      "page_number": null
+    },
+    {
+      "text_id": 281,
+      "paragraph_id": 72,
+      "section_id": 14,
+      "text": "WEIRD nations are outliers on creativity, altruism, obedience, and corruption (Schulz et al., 2019).",
+      "page_number": null
+    },
+    {
+      "text_id": 282,
+      "paragraph_id": 72,
+      "section_id": 14,
+      "text": "In contrast, the Chinese scale correlates with obedience and blood donations but not with the other psychological outcomes.",
+      "page_number": null
+    },
+    {
+      "text_id": 283,
+      "paragraph_id": 73,
+      "section_id": 14,
+      "text": "All distance measures show weak to moderate correlations with the American scale.",
+      "page_number": null
+    },
+    {
+      "text_id": 284,
+      "paragraph_id": 73,
+      "section_id": 14,
+      "text": "With the exception of the traditional Kogut-Singh (1988) scale and the language-distance scale, most measures also correlate with the Chinese scale.",
+      "page_number": null
+    },
+    {
+      "text_id": 285,
+      "paragraph_id": 73,
+      "section_id": 14,
+      "text": "The traditional Kogut-Singh scale derived from the original four Hofstede dimensions does not correlate with the Chinese scale, but the addition of the two variables that correlate with the Chinese scale increases the correlation.",
+      "page_number": null
+    },
+    {
+      "text_id": 286,
+      "paragraph_id": 73,
+      "section_id": 14,
+      "text": "These correlations are reassuring in showing that the CF ST approach to measuring cultural distance correlates in the right direction, with fewer high-resolution measures of cultural distance.",
+      "page_number": null
+    },
+    {
+      "text_id": 287,
+      "paragraph_id": 73,
+      "section_id": 14,
+      "text": "The relationship between linguistic distance and the American scale was inconsistent, although the plots make clear that there is a huge amount of variance.",
+      "page_number": null
+    },
+    {
+      "text_id": 288,
+      "paragraph_id": 73,
+      "section_id": 14,
+      "text": "Many countries with linguistic similarity are quite culturally distant and vice versa.",
+      "page_number": null
+    },
+    {
+      "text_id": 289,
+      "paragraph_id": 73,
+      "section_id": 14,
+      "text": "Both genetic measures suggest a fairly modest correlation with our American scale.",
+      "page_number": null
+    },
+    {
+      "text_id": 290,
+      "paragraph_id": 73,
+      "section_id": 14,
+      "text": "Such a low value is problematic given the common usage of genetic distance as a proxy for cultural distance (Gorodnichenko & Roland, 2017) but is consistent with that found by other researchers (Giuliano, Spilimbergo, & Tonon, 2013), who argued that genetic distance captures geography but not culture.",
+      "page_number": null
+    },
+    {
+      "text_id": 291,
+      "paragraph_id": 75,
+      "section_id": 15,
+      "text": "The psychological sciences face multiple crises, one of which is their overreliance on samples from WEIRD nations and on samples from the United States in particular (Henrich et al., 2010).",
+      "page_number": null
+    },
+    {
+      "text_id": 292,
+      "paragraph_id": 75,
+      "section_id": 15,
+      "text": "A more general theory of human behavior requires a theoretical and empirical understanding of humans across the globe and across the life span.",
+      "page_number": null
+    },
+    {
+      "text_id": 293,
+      "paragraph_id": 75,
+      "section_id": 15,
+      "text": "We present a cultural-distance metric based on the F ST technique from population genetics, applied to the WVS, a large survey of cultural values.",
+      "page_number": null
+    },
+    {
+      "text_id": 294,
+      "paragraph_id": 75,
+      "section_id": 15,
+      "text": "CF ST is a theoretically defensible and robust method of measuring cultural distance, grounded in evolutionary theory.",
+      "page_number": null
+    },
+    {
+      "text_id": 295,
+      "paragraph_id": 75,
+      "section_id": 15,
+      "text": "It considers differences between distributions of cultural traits rather than point estimates or arbitrary dimensions.",
+      "page_number": null
+    },
+    {
+      "text_id": 296,
+      "paragraph_id": 75,
+      "section_id": 15,
+      "text": "This approach has proven useful in answering questions in anthropology and economics (Bell et al., 2009;Desmet et al., 2017;Spolaore & Wacziarg, 2018).",
+      "page_number": null
+    },
+    {
+      "text_id": 297,
+      "paragraph_id": 75,
+      "section_id": 15,
+      "text": "We anticipate that it will be equally useful to psychologists in addressing the WEIRD people problem.",
+      "page_number": null
+    },
+    {
+      "text_id": 298,
+      "paragraph_id": 76,
+      "section_id": 15,
+      "text": "To this end, we used the CF ST to develop an American scale of cultural distance from the United States and a Chinese scale of cultural distance from China.",
+      "page_number": null
+    },
+    {
+      "text_id": 299,
+      "paragraph_id": 76,
+      "section_id": 15,
+      "text": "CF ST values can range from 0 to 1, yet all values on both scales are less than .3.",
+      "page_number": null
+    },
+    {
+      "text_id": 300,
+      "paragraph_id": 76,
+      "section_id": 15,
+      "text": "This is consistent with findings of past research (e.g., Saucier et al., 2015) showing that we have more in common across cultures than we have differences.",
+      "page_number": null
+    },
+    {
+      "text_id": 301,
+      "paragraph_id": 76,
+      "section_id": 15,
+      "text": "Yet just as only 4% of our genes separate us from chimpanzees, those differences can be important and predictive.",
+      "page_number": null
+    },
+    {
+      "text_id": 302,
+      "paragraph_id": 77,
+      "section_id": 15,
+      "text": "The American scale correlates with many documented cross-cultural psychological differences, but the Chinese scale is far less predictive.",
+      "page_number": null
+    },
+    {
+      "text_id": 303,
+      "paragraph_id": 77,
+      "section_id": 15,
+      "text": "Remarkably, the American scale correlates even with the raw scores of these various measures.",
+      "page_number": null
+    },
+    {
+      "text_id": 304,
+      "paragraph_id": 77,
+      "section_id": 15,
+      "text": "Together, these results suggest that WEIRD nations are truly psychological outliers in some objective sense, as has been recently argued (Schulz et al., 2019).",
+      "page_number": null
+    },
+    {
+      "text_id": 305,
+      "paragraph_id": 77,
+      "section_id": 15,
+      "text": "Alternatively, although not mutually exclusively, it could be that these psychological measures have been studied because they are remarkable to researchers from WEIRD countries or remarkable because of how they differ from other nations.",
+      "page_number": null
+    },
+    {
+      "text_id": 306,
+      "paragraph_id": 77,
+      "section_id": 15,
+      "text": "That is, if psychology were dominated by Chinese psychologists, we would see a different set of psychological outcomes covered in textbooks, and these psychologies would correlate with a Chinese scale.",
+      "page_number": null
+    },
+    {
+      "text_id": 307,
+      "paragraph_id": 77,
+      "section_id": 15,
+      "text": "Resolving which of these explanations is correct will require greater diversity in both researchers and samples.",
+      "page_number": null
+    },
+    {
+      "text_id": 308,
+      "paragraph_id": 78,
+      "section_id": 15,
+      "text": "Reassuringly, both the American scale and the Chinese scale correlate with proxies of cultural distance, suggesting that the scales are capturing some true cultural distance.",
+      "page_number": null
+    },
+    {
+      "text_id": 309,
+      "paragraph_id": 78,
+      "section_id": 15,
+      "text": "In contrast, the original Kogut-Singh (1988) distance is predictive only of the American scale.",
+      "page_number": null
+    },
+    {
+      "text_id": 310,
+      "paragraph_id": 78,
+      "section_id": 15,
+      "text": "The addition of new dimensions with strong correlations to the Chinese scale improves the correlation with both the WEIRD and Chinese scales.",
+      "page_number": null
+    },
+    {
+      "text_id": 311,
+      "paragraph_id": 78,
+      "section_id": 15,
+      "text": "We argue that by capturing only mean differences and ignoring differences in distributions, this alternative approach is systematically misleading.",
+      "page_number": null
+    },
+    {
+      "text_id": 312,
+      "paragraph_id": 79,
+      "section_id": 15,
+      "text": "The CF ST (which has been made available through R code and at www.culturaldistance.com) allows researchers to measure cultural distance between any two countries.",
+      "page_number": null
+    },
+    {
+      "text_id": 313,
+      "paragraph_id": 79,
+      "section_id": 15,
+      "text": "The technique may also be used to explore cultural differences between regions within countries, between social classes, between age groups, or between any other grouping.",
+      "page_number": null
+    },
+    {
+      "text_id": 314,
+      "paragraph_id": 79,
+      "section_id": 15,
+      "text": "We used this flexibility to compare the cultural differences between regions within the four largest populations-China, India, the United States, and the European Union.",
+      "page_number": null
+    },
+    {
+      "text_id": 315,
+      "paragraph_id": 79,
+      "section_id": 15,
+      "text": "These analyses reveal that the cultural differences between regions of the overscrutinized United States are considerably smaller than those of the European Union, China, or India.",
+      "page_number": null
+    },
+    {
+      "text_id": 316,
+      "paragraph_id": 80,
+      "section_id": 15,
+      "text": "Researchers may disagree with our various decisions in constructing these scales.",
+      "page_number": null
+    },
+    {
+      "text_id": 317,
+      "paragraph_id": 80,
+      "section_id": 15,
+      "text": "For example, we conservatively removed much of the variance in the degree to which societies agree or disagree on a cultural trait.",
+      "page_number": null
+    },
+    {
+      "text_id": 318,
+      "paragraph_id": 80,
+      "section_id": 15,
+      "text": "We removed these to reduce concerns around response biases (see the Answers as Alleles section), but other researchers may wish to include the full extent of this variance.",
+      "page_number": null
+    },
+    {
+      "text_id": 319,
+      "paragraph_id": 80,
+      "section_id": 15,
+      "text": "Similarly, other researchers may wish to use a different set of questions that they believe are more defensible as culturally transmissible (see included-variables.csv in the Supplemental Material) or even argue that a different statistic is more appropriate (see Section 2 in the Supplemental Material).",
+      "page_number": null
+    },
+    {
+      "text_id": 320,
+      "paragraph_id": 80,
+      "section_id": 15,
+      "text": "And indeed, biases may exist in the questions chosen for the WVS itself.",
+      "page_number": null
+    },
+    {
+      "text_id": 321,
+      "paragraph_id": 80,
+      "section_id": 15,
+      "text": "We hope that the code we have provided and the transparency of our decisions aid in extending this research beyond these limitations.",
+      "page_number": null
+    },
+    {
+      "text_id": 322,
+      "paragraph_id": 81,
+      "section_id": 15,
+      "text": "We hope that this technique and tool may guide researchers in selecting sites and samples that are sufficiently culturally different to test the generalizability of their hypotheses.",
+      "page_number": null
+    },
+    {
+      "text_id": 323,
+      "paragraph_id": 81,
+      "section_id": 15,
+      "text": "For example, the Far East has always held a certain exoticism for people from the West, which may have driven a generation of cultural psychologists to document the many ways in which East Asian societies differ from the West.",
+      "page_number": null
+    },
+    {
+      "text_id": 324,
+      "paragraph_id": 81,
+      "section_id": 15,
+      "text": "However, as Figure 4 illustrates, the most extensively researched East Asian nations-Japan, Hong Kong, and China (marked with asterisks)-are not anywhere near the extreme on the American scale, and some are barely halfway.",
+      "page_number": null
+    },
+    {
+      "text_id": 325,
+      "paragraph_id": 81,
+      "section_id": 15,
+      "text": "Moreover, as illustrated in Figure 6, there is considerable diversity within China, let alone among China, Japan, and Hong Kong.",
+      "page_number": null
+    },
+    {
+      "text_id": 326,
+      "paragraph_id": 81,
+      "section_id": 15,
+      "text": "This diversity has been exploited by some researchers, for example, showing the role of agriculture on individualism and collectivism within China (Talhelm et al., 2014).",
+      "page_number": null
+    },
+    {
+      "text_id": 327,
+      "paragraph_id": 81,
+      "section_id": 15,
+      "text": "But we know far less about psychological differences within countries beyond the United States, where we know state-by-state differences in psychological traits such as tightness-looseness (Harrington & Gelfand, 2014).",
+      "page_number": null
+    },
+    {
+      "text_id": 328,
+      "paragraph_id": 81,
+      "section_id": 15,
+      "text": "We hope that researchers find the CF ST technique, toolkit, and American scale useful not only for generalizing their findings but also for developing theories to explain cross-cultural differences between and within nations.",
+      "page_number": null
+    },
+    {
+      "text_id": 329,
+      "paragraph_id": 81,
+      "section_id": 15,
+      "text": "With such theories, it may also make more sense to use dimensions of cultural distances rather than an aggregate scale, but we emphasize the need for this investigation to be theoretically driven (Muthukrishna & Henrich, 2019).",
+      "page_number": null
+    },
+    {
+      "text_id": 330,
+      "paragraph_id": 81,
+      "section_id": 15,
+      "text": "In the Supplemental Material, we offer some suggestions for developing these dimensions.",
+      "page_number": null
+    },
+    {
+      "text_id": 331,
+      "paragraph_id": 82,
+      "section_id": 15,
+      "text": "Relatively little attention has been paid to the Middle East and Africa by both the WVS (see gray regions in Fig. 3) and the psychological sciences more generally.",
+      "page_number": null
+    },
+    {
+      "text_id": 332,
+      "paragraph_id": 82,
+      "section_id": 15,
+      "text": "However, given the relative cultural distance from the United States and Africa's large genetic (Ramachandran et al., 2005), linguistic (Atkinson, 2011), and likely cultural variation, we have every reason to suspect that the American scale will continue to stretch as we map out these psychological terrae incognitae.",
+      "page_number": null
+    },
+    {
+      "text_id": 333,
+      "paragraph_id": 82,
+      "section_id": 15,
+      "text": "These regions, as well as other underrepresented regions such as the South Pacific, may in fact hold a treasure trove of findings for the next wave of cultural psychologists.",
+      "page_number": null
+    },
+    {
+      "text_id": 334,
+      "paragraph_id": 82,
+      "section_id": 15,
+      "text": "And as our results illustrate, this may not only shape the breadth of existing psychological outcomes but also lead to questions we have not even thought to ask, new psychologies, and new ways of organizing psychology.",
+      "page_number": null
+    },
+    {
+      "text_id": 335,
+      "paragraph_id": 83,
+      "section_id": 15,
+      "text": "Thus, what we know so far may represent the tip of the iceberg of a more fully fledged picture of the human psyche.",
+      "page_number": null
+    },
+    {
+      "text_id": 336,
+      "paragraph_id": 87,
+      "section_id": 17,
+      "text": "Data for this study were obtained from sources identified in the text.",
+      "page_number": null
+    },
+    {
+      "text_id": 337,
+      "paragraph_id": 87,
+      "section_id": 17,
+      "text": "R code can be found in the Supplemental Material available online.",
+      "page_number": null
+    },
+    {
+      "text_id": 338,
+      "paragraph_id": 87,
+      "section_id": 17,
+      "text": "The design and analysis plans for this study were not preregistered.",
+      "page_number": null
+    },
+    {
+      "text_id": 339,
+      "paragraph_id": 89,
+      "section_id": 18,
+      "text": "We thank all of the individuals who provided comments about the draft version of this article on Twitter, various blogs, and other social media, and in particular, the detailed comments provided by R McElreath, B Purzycki, and other members of the Max Planck Institute for Evolutionary Anthropology.",
+      "page_number": null
+    },
+    {
+      "text_id": 340,
+      "paragraph_id": 89,
+      "section_id": 18,
+      "text": "M Muthukrishna also thanks Tyler Lieberthal for creating Figure 2.",
+      "page_number": null
+    },
+    {
+      "text_id": 341,
+      "paragraph_id": 91,
+      "section_id": 19,
+      "text": "Funding for this study was provided by The London School of Economics and Political Science under the Suntory and",
+      "page_number": null
+    },
+    {
+      "text_id": 342,
+      "paragraph_id": 93,
+      "section_id": 20,
+      "text": "The author(s) declared that there were no conflicts of interest with respect to the authorship or the publication of this article.",
+      "page_number": null
+    },
+    {
+      "text_id": 343,
+      "paragraph_id": 95,
+      "section_id": 21,
+      "text": "M Muthukrishna developed the study concept with guidance from A V Bell and J Henrich.",
+      "page_number": null
+    },
+    {
+      "text_id": 344,
+      "paragraph_id": 95,
+      "section_id": 21,
+      "text": "A V Bell provided advice and analysis code for the fixation index.",
+      "page_number": null
+    },
+    {
+      "text_id": 345,
+      "paragraph_id": 95,
+      "section_id": 21,
+      "text": "M Muthukrishna, C M Curtin, A Gedranovich, J McInerney, and B Thue wrote code to analyze and graph the data.",
+      "page_number": null
+    },
+    {
+      "text_id": 346,
+      "paragraph_id": 95,
+      "section_id": 21,
+      "text": "M Muthukrishna drafted the manuscript.",
+      "page_number": null
+    },
+    {
+      "text_id": 347,
+      "paragraph_id": 95,
+      "section_id": 21,
+      "text": "All the authors provided critical revisions and approved the final manuscript for submission.",
+      "page_number": null
+    },
+    {
+      "text_id": 348,
+      "paragraph_id": 97,
+      "section_id": 22,
+      "text": "Distance measures Kogut-Singh cultural distance original j .41** [.17, .60] 57 .01 [-.24, .27] 57 Kogut-Singh cultural distance all j .43** [.18, .62] 57 .37** [.11, .58] 57 Geographic Distance Population Center k .21 † [-.01, .42] 72 .25* [.02, .45] 72 Geographic Distance Capitals k .23* [.00, .44] 72 .25* [.03, .46] 72 Geographic Distance Gravity Weight 1 k .29* [.06, .48] 72 .26* [.04, .46] 72 Geographic Distance Gravity Weight 2 k .29* [.07, .49] 72 .27* [.05, .47] 72 Linguistic Distance Ethnologue l .14 [-.17, .43] 38 --38 Linguistic Distance ASJP l -.17 [-.39, .08] 65 .14 [-.10, .38] 63 Genetic Distance Ethnic Weighting m .21 † [-.02, .42] 72 .37** [.16, .55] 72 Genetic Distance Ethnic Plurality m .17 [-.07, .38] 72 .38*** [.17, .56] 72 Note: Although low obedience and high creativity were identified by Schulz, Bahrami-Rad, Beauchamp, and Henrich (2019) as part of a Western, educated, industrialized, rich, and democratic package, we did not include them here because they are derived from World Values Survey (WVS) questions.",
+      "page_number": null
+    },
+    {
+      "text_id": 349,
+      "paragraph_id": 97,
+      "section_id": 22,
+      "text": "CF ST = cultural fixation index; CI = confidence interval; ASJP = Automated Similarity Judgment Program. a These values were taken from geert-hofstede.com.",
+      "page_number": null
+    },
+    {
+      "text_id": 350,
+      "paragraph_id": 97,
+      "section_id": 22,
+      "text": "Higher scores indicate greater values on the raw scale.",
+      "page_number": null
+    },
+    {
+      "text_id": 351,
+      "paragraph_id": 97,
+      "section_id": 22,
+      "text": "Relative values are absolute values relative to the comparison country (United States or China). b These values were taken from Gelfand et al.",
+      "page_number": null
+    },
+    {
+      "text_id": 352,
+      "paragraph_id": 97,
+      "section_id": 22,
+      "text": "(2011).",
+      "page_number": null
+    },
+    {
+      "text_id": 353,
+      "paragraph_id": 97,
+      "section_id": 22,
+      "text": "Higher scores indicate greater tightness.",
+      "page_number": null
+    },
+    {
+      "text_id": 354,
+      "paragraph_id": 97,
+      "section_id": 22,
+      "text": "The mean for East and West Germany was used for Germany.",
+      "page_number": null
+    },
+    {
+      "text_id": 355,
+      "paragraph_id": 97,
+      "section_id": 22,
+      "text": "Relative values are absolute values relative to the comparison country (United States or China). c These values were taken from Uz (2015), whose measure of looseness uses variance in WVS responses instead of the Gelfand et al. (2011) scale.",
+      "page_number": null
+    },
+    {
+      "text_id": 356,
+      "paragraph_id": 97,
+      "section_id": 22,
+      "text": "Higher scores indicate greater looseness.",
+      "page_number": null
+    },
+    {
+      "text_id": 357,
+      "paragraph_id": 97,
+      "section_id": 22,
+      "text": "Relative values are absolute values relative to the comparison country (United States or China).",
+      "page_number": null
+    },
+    {
+      "text_id": 358,
+      "paragraph_id": 97,
+      "section_id": 22,
+      "text": "The domain-general and composite values did not exist for China.",
+      "page_number": null
+    },
+    {
+      "text_id": 359,
+      "paragraph_id": 97,
+      "section_id": 22,
+      "text": "For the relative measure, we used the domain-specific value as a proxy. d These values are Schwartz's (2006) culture-value orientation scores.",
+      "page_number": null
+    },
+    {
+      "text_id": 360,
+      "paragraph_id": 97,
+      "section_id": 22,
+      "text": "The mean for East and West Germany was used for Germany.",
+      "page_number": null
+    },
+    {
+      "text_id": 361,
+      "paragraph_id": 97,
+      "section_id": 22,
+      "text": "The mean for French and German Switzerland was used for Switzerland.",
+      "page_number": null
+    },
+    {
+      "text_id": 362,
+      "paragraph_id": 97,
+      "section_id": 22,
+      "text": "Relative values are absolute values relative to the comparison country (United States or China). e The personality-factor data for each country were taken from Table 2 in the study by McCrae, Terracciano, and 79 Members of the Personality Profiles of Cultures Project (2005).",
+      "page_number": null
+    },
+    {
+      "text_id": 363,
+      "paragraph_id": 97,
+      "section_id": 22,
+      "text": "The mean for French and German Switzerland was used for Switzerland.",
+      "page_number": null
+    },
+    {
+      "text_id": 364,
+      "paragraph_id": 97,
+      "section_id": 22,
+      "text": "Relative values are absolute values relative to the comparison country (United States or China). f Blooddonations data per 1,000 persons were collated from the World Health Organization Global Status Report on Blood Safety and Availability (Schulz et al., 2019). g Data on unpaid parking tickets accrued by diplomats in New York City are from the Fisman and Miguel (2007) study. h Corruption Perceptions Index (CPI) is a measure of the descriptive corruption norm from Transparency International's 2015 report. i The percentage of dropped wallets with money returned was taken from Figure 1 in the study by Cohn, Maréchal, Tannenbaum, and Zünd (2019). j Cultural distance was calculated following Kogut and Singh (1988) on the original four Hofstede dimensions (Power Distance, Individualism, Masculinity, and Uncertainty Avoidance; labeled \"original\") and on all six dimensions (labeled \"all\"). k Geographic Distance data were taken from the Centre d'Études Prospectives et d'Informations Internationales (CEPII) GeoDist database (Mayer & Zignago, 2012).",
+      "page_number": null
+    },
+    {
+      "text_id": 365,
+      "paragraph_id": 97,
+      "section_id": 22,
+      "text": "Higher scores indicate a larger distance.",
+      "page_number": null
+    },
+    {
+      "text_id": 366,
+      "paragraph_id": 98,
+      "section_id": 22,
+      "text": "l Linguistic-distance data were taken from the CCEPII Language database (Melitz & Toubal, 2014).",
+      "page_number": null
+    },
+    {
+      "text_id": 367,
+      "paragraph_id": 98,
+      "section_id": 22,
+      "text": "Higher scores indicate greater difference in language. m These scores are based on genetic data from the Pemberton, DeGiorgio, and Rosenberg (2013) study, matched to country by Spolaore and Wacziarg (2018).",
+      "page_number": null
+    },
+    {
+      "text_id": 368,
+      "paragraph_id": 98,
+      "section_id": 22,
+      "text": "Higher scores indicate a larger genetic distance. † p < .10. *p < .05. **p < .01. ***p < .001.",
+      "page_number": null
+    },
+    {
+      "text_id": 369,
+      "paragraph_id": 99,
+      "section_id": 22,
+      "text": "Table 2. (continued) freedom.",
+      "page_number": null
+    },
+    {
+      "text_id": 370,
+      "paragraph_id": 99,
+      "section_id": 22,
+      "text": "The American scale has a smaller correlation with Long-Term Orientation, for which societies with more focus on the future are more culturally similar to the United States.",
+      "page_number": null
+    },
+    {
+      "text_id": 371,
+      "paragraph_id": 99,
+      "section_id": 22,
+      "text": "The Chinese scale correlates with only Long-Term Orientation and perhaps Indulgence.",
+      "page_number": null
+    },
+    {
+      "text_id": 372,
+      "paragraph_id": 99,
+      "section_id": 22,
+      "text": "These results may suggest that these dimensions largely emphasize cultural differences in psychology that look remarkable from a WEIRD standpoint but perhaps not from the standpoints of other societies.",
+      "page_number": null
+    },
+    {
+      "text_id": 373,
+      "paragraph_id": 99,
+      "section_id": 22,
+      "text": "The tightness-looseness scale developed by Gelfand (2011) has a moderate correlation with the American scale-tighter societies are more culturally distant from Supplemental Material Additional supporting information can be found at http:// journals.sagepub.com/doi/suppl/10.1177/0956797620916782",
+      "page_number": null
+    },
+    {
+      "text_id": 374,
+      "paragraph_id": 100,
+      "section_id": 22,
+      "text": "Note 1.",
+      "page_number": null
+    },
+    {
+      "text_id": 375,
+      "paragraph_id": 100,
+      "section_id": 22,
+      "text": "By cross-cultural psychological distance, we refer to the size of the difference in psychology between different societies rather than the perceived cognitive distance between the self and other individuals, objects, or events (psychological distance in construal-level theory).",
+      "page_number": null
+    },
+    {
+      "text_id": 376,
+      "paragraph_id": 101,
+      "section_id": 23,
+      "text": "Fig 1 Brazil's and Turkey's scores on Hofstede's cultural dimensions (data taken from https://www.hofstedeinsights.com/product/compare-countries/).",
+      "page_number": null
+    },
+    {
+      "text_id": 377,
+      "paragraph_id": 103,
+      "section_id": 25,
+      "text": "Fig 3 Cultural distances on the cultural fixation index (CF ST ) visualized on a world map.",
+      "page_number": null
+    },
+    {
+      "text_id": 378,
+      "paragraph_id": 103,
+      "section_id": 25,
+      "text": "The top map shows the distance of countries from the United States on the American scale of cultural distance.",
+      "page_number": null
+    },
+    {
+      "text_id": 379,
+      "paragraph_id": 103,
+      "section_id": 25,
+      "text": "The bottom map shows the distance of countries from China on the Chinese scale of cultural distance.",
+      "page_number": null
+    },
+    {
+      "text_id": 380,
+      "paragraph_id": 104,
+      "section_id": 26,
+      "text": "Fig 5 Scatterplot showing the relation between countries' scores on the American and Chinese cultural fixation index (CF ST ), color-coded by region.",
+      "page_number": null
+    },
+    {
+      "text_id": 381,
+      "paragraph_id": 105,
+      "section_id": 27,
+      "text": "Fig 6 Two-dimensional nonmetric multidimensional scaling (NMDS) plot of the pairwise cultural fixation index (CF ST ) matrix of regions with at least 100 survey participants in the four largest populations: United States, China, India, and the countries of the European Union.",
+      "page_number": null
+    },
+    {
+      "text_id": 382,
+      "paragraph_id": 106,
+      "section_id": 28,
+      "text": "Fig 7 Size of the deviations in the 10,000 resampled values for each proportion sampled, separately for the American (top row) and Chinese (bottom row) scales.",
+      "page_number": null
+    },
+    {
+      "text_id": 383,
+      "paragraph_id": 106,
+      "section_id": 28,
+      "text": "The graphs on the left show sampling by the proportion of questions.",
+      "page_number": null
+    },
+    {
+      "text_id": 384,
+      "paragraph_id": 106,
+      "section_id": 28,
+      "text": "The graphs on the right show sampling by the proportion of values.",
+      "page_number": null
+    },
+    {
+      "text_id": 385,
+      "paragraph_id": 106,
+      "section_id": 28,
+      "text": "In each box-and-whisker plot, the central horizontal line indicates the median; the bottom and top edges of the box indicate the 25th and 75th percentiles, respectively; whiskers mark 1.5 times the interquartile range from the 25th and 75th percentiles; and dots indicate outlier data points.",
+      "page_number": null
+    },
+    {
+      "text_id": 386,
+      "paragraph_id": 109,
+      "section_id": 31,
+      "text": "Values From the American Scale and Chinese Scale of Cultural Distance",
+      "page_number": null
+    },
+    {
+      "text_id": 387,
+      "paragraph_id": 110,
+      "section_id": 32,
+      "text": "Correlations Between the American Scale (CF ST Distance From the United States), the Chinese Scale (CF ST Distance From China), and Other Commonly Used Psychological and Cultural Difference and Distance Measures United States, but there are several outliers.",
+      "page_number": null
+    },
+    {
+      "text_id": 388,
+      "paragraph_id": 110,
+      "section_id": 32,
+      "text": "In contrast, the Uz (2015) measure is strongly correlated with the American scale of cultural distance, with tighter societies being more culturally distant from the United States.",
+      "page_number": null
+    },
+    {
+      "text_id": 389,
+      "paragraph_id": 110,
+      "section_id": 32,
+      "text": "However, with the possible exception of the domain-general Uz measure, tightness-looseness does not reliably correlate with the Chinese scale.",
+      "page_number": null
+    },
+    {
+      "text_id": 390,
+      "paragraph_id": 110,
+      "section_id": 32,
+      "text": "This suggests that internal cultural variation or tolerance for deviation may be distinct features of the United Statesremarkable from a WEIRD standpoint but not representative of the world.",
+      "page_number": null
+    },
+    {
+      "text_id": 391,
+      "paragraph_id": 111,
+      "section_id": 33,
+      "text": "Cultural distances on the cultural fixation index (CF ST ) visualized on a number line.",
+      "page_number": null
+    },
+    {
+      "text_id": 392,
+      "paragraph_id": 111,
+      "section_id": 33,
+      "text": "The top graph shows the distance of countries from the United States on the American scale of cultural distance.",
+      "page_number": null
+    },
+    {
+      "text_id": 393,
+      "paragraph_id": 111,
+      "section_id": 33,
+      "text": "The bottom graph shows the distance of countries from China on the Chinese scale of cultural distance.",
+      "page_number": null
+    },
+    {
+      "text_id": 394,
+      "paragraph_id": 111,
+      "section_id": 33,
+      "text": "The most commonly studied non-Western nations are marked with asterisks.",
+      "page_number": null
+    },
+    {
+      "text_id": 395,
+      "paragraph_id": 112,
+      "section_id": 34,
+      "text": "(continued on next page) Spearman and Pearson correlations in the 10,000 resampled values for each proportion sampled, separately for the American (top two rows) and Chinese (bottom two rows) scales.",
+      "page_number": null
+    },
+    {
+      "text_id": 396,
+      "paragraph_id": 112,
+      "section_id": 34,
+      "text": "The graphs on the left show sampling by the proportion of questions.",
+      "page_number": null
+    },
+    {
+      "text_id": 397,
+      "paragraph_id": 112,
+      "section_id": 34,
+      "text": "The graphs on the right show sampling by the proportion of values.",
+      "page_number": null
+    },
+    {
+      "text_id": 398,
+      "paragraph_id": 112,
+      "section_id": 34,
+      "text": "In each boxand-whisker plot, the central horizontal line indicates the median; the bottom and top edges of the box indicate the 25th and 75th percentiles, respectively; whiskers mark 1.5 times the interquartile range from the 25th and 75th percentiles; and dots indicate outlier data points.",
+      "page_number": null
+    },
+    {
+      "text_id": 399,
+      "paragraph_id": 113,
+      "section_id": 35,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 400,
+      "paragraph_id": 114,
+      "section_id": 35,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 401,
+      "paragraph_id": 115,
+      "section_id": 35,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 402,
+      "paragraph_id": 116,
+      "section_id": 35,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 403,
+      "paragraph_id": 117,
+      "section_id": 35,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 404,
+      "paragraph_id": 118,
+      "section_id": 35,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 405,
+      "paragraph_id": 119,
+      "section_id": 35,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 406,
+      "paragraph_id": 120,
+      "section_id": 35,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 407,
+      "paragraph_id": 121,
+      "section_id": 35,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 408,
+      "paragraph_id": 122,
+      "section_id": 35,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 409,
+      "paragraph_id": 123,
+      "section_id": 35,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 410,
+      "paragraph_id": 124,
+      "section_id": 35,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 411,
+      "paragraph_id": 125,
+      "section_id": 35,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 412,
+      "paragraph_id": 126,
+      "section_id": 35,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 413,
+      "paragraph_id": 127,
+      "section_id": 35,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 414,
+      "paragraph_id": 128,
+      "section_id": 35,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 415,
+      "paragraph_id": 129,
+      "section_id": 35,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 416,
+      "paragraph_id": 130,
+      "section_id": 35,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 417,
+      "paragraph_id": 131,
+      "section_id": 35,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 418,
+      "paragraph_id": 132,
+      "section_id": 35,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 419,
+      "paragraph_id": 133,
+      "section_id": 35,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 420,
+      "paragraph_id": 134,
+      "section_id": 35,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 421,
+      "paragraph_id": 135,
+      "section_id": 35,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 422,
+      "paragraph_id": 136,
+      "section_id": 35,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 423,
+      "paragraph_id": 137,
+      "section_id": 35,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 424,
+      "paragraph_id": 138,
+      "section_id": 35,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 425,
+      "paragraph_id": 139,
+      "section_id": 35,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 426,
+      "paragraph_id": 140,
+      "section_id": 35,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 427,
+      "paragraph_id": 141,
+      "section_id": 35,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 428,
+      "paragraph_id": 142,
+      "section_id": 35,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 429,
+      "paragraph_id": 143,
+      "section_id": 35,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 430,
+      "paragraph_id": 144,
+      "section_id": 35,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 431,
+      "paragraph_id": 145,
+      "section_id": 35,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 432,
+      "paragraph_id": 146,
+      "section_id": 35,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 433,
+      "paragraph_id": 147,
+      "section_id": 35,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 434,
+      "paragraph_id": 148,
+      "section_id": 35,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 435,
+      "paragraph_id": 149,
+      "section_id": 35,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 436,
+      "paragraph_id": 150,
+      "section_id": 35,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 437,
+      "paragraph_id": 151,
+      "section_id": 35,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 438,
+      "paragraph_id": 152,
+      "section_id": 35,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 439,
+      "paragraph_id": 153,
+      "section_id": 35,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 440,
+      "paragraph_id": 154,
+      "section_id": 35,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 441,
+      "paragraph_id": 155,
+      "section_id": 35,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 442,
+      "paragraph_id": 156,
+      "section_id": 35,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 443,
+      "paragraph_id": 157,
+      "section_id": 35,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 444,
+      "paragraph_id": 158,
+      "section_id": 35,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 445,
+      "paragraph_id": 159,
+      "section_id": 35,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 446,
+      "paragraph_id": 160,
+      "section_id": 35,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 447,
+      "paragraph_id": 161,
+      "section_id": 35,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 448,
+      "paragraph_id": 162,
+      "section_id": 35,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 449,
+      "paragraph_id": 163,
+      "section_id": 35,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 450,
+      "paragraph_id": 164,
+      "section_id": 35,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 451,
+      "paragraph_id": 165,
+      "section_id": 35,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 452,
+      "paragraph_id": 166,
+      "section_id": 35,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 453,
+      "paragraph_id": 167,
+      "section_id": 35,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 454,
+      "paragraph_id": 168,
+      "section_id": 35,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 455,
+      "paragraph_id": 169,
+      "section_id": 35,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 456,
+      "paragraph_id": 170,
+      "section_id": 35,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 457,
+      "paragraph_id": 171,
+      "section_id": 35,
+      "text": "",
+      "page_number": null
+    }
+  ],
+  "section": [
+    {
+      "section_id": 0,
+      "header": "Abstract",
+      "parent_section_id": null,
+      "section_type": "abstract",
+      "classification_score": null
+    },
+    {
+      "section_id": 1,
+      "header": "[div-01]",
+      "parent_section_id": null,
+      "section_type": "intro",
+      "classification_score": null
+    },
+    {
+      "section_id": 2,
+      "header": "Method",
+      "parent_section_id": null,
+      "section_type": "method",
+      "classification_score": null
+    },
+    {
+      "section_id": 3,
+      "header": "Fixation index (F ST )",
+      "parent_section_id": null,
+      "section_type": "method",
+      "classification_score": null
+    },
+    {
+      "section_id": 4,
+      "header": "Summary of the CF ST",
+      "parent_section_id": null,
+      "section_type": "method",
+      "classification_score": null
+    },
+    {
+      "section_id": 5,
+      "header": "Formal description of the CF ST",
+      "parent_section_id": null,
+      "section_type": "method",
+      "classification_score": null
+    },
+    {
+      "section_id": 6,
+      "header": "Continuous data.",
+      "parent_section_id": null,
+      "section_type": "method",
+      "classification_score": null
+    },
+    {
+      "section_id": 7,
+      "header": "Data",
+      "parent_section_id": null,
+      "section_type": "method",
+      "classification_score": null
+    },
+    {
+      "section_id": 8,
+      "header": "Answers as alleles.",
+      "parent_section_id": null,
+      "section_type": "method",
+      "classification_score": null
+    },
+    {
+      "section_id": 9,
+      "header": "CIs and robustness calculations",
+      "parent_section_id": null,
+      "section_type": "method",
+      "classification_score": null
+    },
+    {
+      "section_id": 11,
+      "header": "American scale and Chinese scale",
+      "parent_section_id": null,
+      "section_type": "results",
+      "classification_score": null
+    },
+    {
+      "section_id": 12,
+      "header": "Within-nations regional variation",
+      "parent_section_id": null,
+      "section_type": "results",
+      "classification_score": null
+    },
+    {
+      "section_id": 13,
+      "header": "Robustness tests",
+      "parent_section_id": null,
+      "section_type": "results",
+      "classification_score": null
+    },
+    {
+      "section_id": 14,
+      "header": "Comparison with other measured psychological and cultural differences",
+      "parent_section_id": null,
+      "section_type": "results",
+      "classification_score": null
+    },
+    {
+      "section_id": 15,
+      "header": "Discussion",
+      "parent_section_id": null,
+      "section_type": "discussion",
+      "classification_score": null
+    },
+    {
+      "section_id": 17,
+      "header": "Open Practices",
+      "parent_section_id": null,
+      "section_type": "discussion",
+      "classification_score": null
+    },
+    {
+      "section_id": 18,
+      "header": "Acknowledgments",
+      "parent_section_id": null,
+      "section_type": "acknowledgement",
+      "classification_score": null
+    },
+    {
+      "section_id": 19,
+      "header": "Funding",
+      "parent_section_id": null,
+      "section_type": "funding",
+      "classification_score": null
+    },
+    {
+      "section_id": 20,
+      "header": "Declaration of Conflicting Interests",
+      "parent_section_id": null,
+      "section_type": "conflict",
+      "classification_score": null
+    },
+    {
+      "section_id": 21,
+      "header": "Author Contributions",
+      "parent_section_id": null,
+      "section_type": "contribution",
+      "classification_score": null
+    },
+    {
+      "section_id": 22,
+      "header": "",
+      "parent_section_id": null,
+      "section_type": "annex",
+      "classification_score": null
+    },
+    {
+      "section_id": 23,
+      "header": "Fig 1",
+      "parent_section_id": null,
+      "section_type": "figure",
+      "classification_score": null
+    },
+    {
+      "section_id": 25,
+      "header": "Fig 3",
+      "parent_section_id": null,
+      "section_type": "figure",
+      "classification_score": null
+    },
+    {
+      "section_id": 26,
+      "header": "Fig 5",
+      "parent_section_id": null,
+      "section_type": "figure",
+      "classification_score": null
+    },
+    {
+      "section_id": 27,
+      "header": "Fig 6",
+      "parent_section_id": null,
+      "section_type": "figure",
+      "classification_score": null
+    },
+    {
+      "section_id": 28,
+      "header": "Fig 7",
+      "parent_section_id": null,
+      "section_type": "figure",
+      "classification_score": null
+    },
+    {
+      "section_id": 31,
+      "header": "Table 1 .",
+      "parent_section_id": null,
+      "section_type": "table",
+      "classification_score": null
+    },
+    {
+      "section_id": 32,
+      "header": "Table 2 .",
+      "parent_section_id": null,
+      "section_type": "table",
+      "classification_score": null
+    },
+    {
+      "section_id": 33,
+      "header": "Fig 4",
+      "parent_section_id": null,
+      "section_type": "figure",
+      "classification_score": null
+    },
+    {
+      "section_id": 34,
+      "header": "Fig 8Fig 8",
+      "parent_section_id": null,
+      "section_type": "figure",
+      "classification_score": null
+    },
+    {
+      "section_id": 35,
+      "header": "References",
+      "parent_section_id": null,
+      "section_type": "references",
+      "classification_score": null
+    }
+  ],
+  "url": [
+    {
+      "href": "www.culturaldistance.com",
+      "link_text": null,
+      "text_id": 12
+    },
+    {
+      "href": "culturaldistance.com",
+      "link_text": null,
+      "text_id": 32
+    },
+    {
+      "href": "www.cultur",
+      "link_text": null,
+      "text_id": 88
+    },
+    {
+      "href": "aldistance.com",
+      "link_text": null,
+      "text_id": 88
+    },
+    {
+      "href": "https://geerthofstede.com/culture-geert-hofstede",
+      "link_text": null,
+      "text_id": 138
+    },
+    {
+      "href": "www.ethnologue.com",
+      "link_text": null,
+      "text_id": 181
+    },
+    {
+      "href": "https://asjp.clld.org",
+      "link_text": null,
+      "text_id": 182
+    },
+    {
+      "href": "alleledimension-data.csv",
+      "link_text": null,
+      "text_id": 208
+    },
+    {
+      "href": "www.cultur",
+      "link_text": null,
+      "text_id": 235
+    },
+    {
+      "href": "aldistance.com",
+      "link_text": null,
+      "text_id": 235
+    },
+    {
+      "href": "www.culturaldistance.com",
+      "link_text": null,
+      "text_id": 312
+    },
+    {
+      "href": "included-variables.csv",
+      "link_text": null,
+      "text_id": 319
+    },
+    {
+      "href": "geert-hofstede.com",
+      "link_text": null,
+      "text_id": 349
+    },
+    {
+      "href": "journals.sagepub.com/doi/suppl/10.1177/0956797620916782",
+      "link_text": null,
+      "text_id": 373
+    },
+    {
+      "href": "https://www.hofstedeinsights.com/product/compare-countries",
+      "link_text": null,
+      "text_id": 376
+    }
+  ],
+  "bib": [
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "",
+      "authors": "",
+      "editors": "",
+      "publisher": "",
+      "year": null,
+      "volume": "51",
+      "issue": "",
+      "first_page": "57",
+      "container": "",
+      "last_page": null,
+      "bib_id": 0,
+      "year_suffix": null,
+      "text_id": 399
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "",
+      "authors": "",
+      "editors": "",
+      "publisher": "",
+      "year": null,
+      "volume": "42",
+      "issue": "19",
+      "first_page": "57",
+      "container": "Power Distance a",
+      "last_page": null,
+      "bib_id": 1,
+      "year_suffix": null,
+      "text_id": 400
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "",
+      "authors": "",
+      "editors": "",
+      "publisher": "",
+      "year": null,
+      "volume": "40",
+      "issue": "",
+      "first_page": null,
+      "container": "",
+      "last_page": null,
+      "bib_id": 2,
+      "year_suffix": null,
+      "text_id": 401
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "",
+      "authors": "",
+      "editors": "",
+      "publisher": "",
+      "year": null,
+      "volume": "23",
+      "issue": "",
+      "first_page": null,
+      "container": "",
+      "last_page": null,
+      "bib_id": 3,
+      "year_suffix": null,
+      "text_id": 402
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "",
+      "authors": "",
+      "editors": "",
+      "publisher": "",
+      "year": null,
+      "volume": "06",
+      "issue": "",
+      "first_page": "53",
+      "container": "",
+      "last_page": null,
+      "bib_id": 4,
+      "year_suffix": null,
+      "text_id": 403
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "",
+      "authors": "",
+      "editors": "",
+      "publisher": "",
+      "year": null,
+      "volume": "44",
+      "issue": "07",
+      "first_page": "55",
+      "container": "Indulgence a",
+      "last_page": null,
+      "bib_id": 5,
+      "year_suffix": null,
+      "text_id": 404
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "",
+      "authors": "",
+      "editors": "",
+      "publisher": "",
+      "year": null,
+      "volume": "41",
+      "issue": "02",
+      "first_page": "23",
+      "container": "Tightness-looseness Tightness Gelfand",
+      "last_page": null,
+      "bib_id": 6,
+      "year_suffix": null,
+      "text_id": 405
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "",
+      "authors": "",
+      "editors": "",
+      "publisher": "",
+      "year": null,
+      "volume": "62",
+      "issue": "29",
+      "first_page": "56",
+      "container": "Tightness Gelfand relative",
+      "last_page": null,
+      "bib_id": 7,
+      "year_suffix": null,
+      "text_id": 406
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "",
+      "authors": "",
+      "editors": "",
+      "publisher": "",
+      "year": null,
+      "volume": "29",
+      "issue": "",
+      "first_page": "47",
+      "container": "",
+      "last_page": null,
+      "bib_id": 8,
+      "year_suffix": null,
+      "text_id": 407
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "Phonemic diversity supports a serial founder effect model of language expansion from Africa",
+      "authors": "Atkinson, Q D",
+      "editors": "",
+      "publisher": "",
+      "year": 2011,
+      "volume": "332",
+      "issue": "",
+      "first_page": "346",
+      "container": "Science",
+      "last_page": "349",
+      "bib_id": 9,
+      "year_suffix": "",
+      "text_id": 408
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "Culture rather than genes provides greater scope for the evolution of large-scale human prosociality",
+      "authors": "Bell, A V; Richerson, P J; Mcelreath, R",
+      "editors": "",
+      "publisher": "",
+      "year": 2009,
+      "volume": "106",
+      "issue": "",
+      "first_page": "17671",
+      "container": "Proceedings of the National Academy of Sciences",
+      "last_page": "17674",
+      "bib_id": 10,
+      "year_suffix": "",
+      "text_id": 409
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "",
+      "authors": "Boyd, R",
+      "editors": "",
+      "publisher": "Princeton University Press",
+      "year": 2017,
+      "volume": "",
+      "issue": "",
+      "first_page": null,
+      "container": "",
+      "last_page": null,
+      "bib_id": 11,
+      "year_suffix": "",
+      "text_id": 410
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "",
+      "authors": "Cavalli-Sforza, L L; Menozzi, P; Piazza, A",
+      "editors": "",
+      "publisher": "Princeton University Press",
+      "year": 1994,
+      "volume": "",
+      "issue": "",
+      "first_page": null,
+      "container": "",
+      "last_page": null,
+      "bib_id": 12,
+      "year_suffix": "",
+      "text_id": 411
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "Response style and cross-cultural comparisons of rating scales among East Asian and North American students",
+      "authors": "Chen, C; Lee, S.-Y; Stevenson, H W",
+      "editors": "",
+      "publisher": "",
+      "year": 1995,
+      "volume": "6",
+      "issue": "",
+      "first_page": "170",
+      "container": "Psychological Science",
+      "last_page": "175",
+      "bib_id": 13,
+      "year_suffix": "",
+      "text_id": 412
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1002/9781119125563",
+      "title": "Cultural evolution",
+      "authors": "Chudek, M; Muthukrishna, M; Henrich, J",
+      "editors": "Buss, D M",
+      "publisher": "John Wiley and Sons",
+      "year": 2015,
+      "volume": "2",
+      "issue": "",
+      "first_page": "749",
+      "container": "",
+      "last_page": "769",
+      "bib_id": 14,
+      "year_suffix": "",
+      "text_id": 413
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "",
+      "authors": "",
+      "editors": "",
+      "publisher": "",
+      "year": null,
+      "volume": "",
+      "issue": "",
+      "first_page": "230",
+      "container": "evpsych",
+      "last_page": null,
+      "bib_id": 15,
+      "year_suffix": null,
+      "text_id": 414
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "Civic honesty around the globe",
+      "authors": "Cohn, A; Maréchal, M A; Tannenbaum, D; Zünd, C L",
+      "editors": "",
+      "publisher": "",
+      "year": 2019,
+      "volume": "365",
+      "issue": "",
+      "first_page": "70",
+      "container": "Science",
+      "last_page": "73",
+      "bib_id": 16,
+      "year_suffix": "",
+      "text_id": 415
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "Measures matter: Scales for adaptation, cultural distance, and acculturation orientation revisited",
+      "authors": "Demes, K A; Geeraert, N",
+      "editors": "",
+      "publisher": "",
+      "year": 2014,
+      "volume": "45",
+      "issue": "",
+      "first_page": "91",
+      "container": "Journal of Cross-Cultural Psychology",
+      "last_page": "109",
+      "bib_id": 17,
+      "year_suffix": "",
+      "text_id": 416
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "Culture, ethnicity, and diversity",
+      "authors": "Desmet, K; Ortuño-Ortín, I; Wacziarg, R",
+      "editors": "",
+      "publisher": "",
+      "year": 2017,
+      "volume": "107",
+      "issue": "",
+      "first_page": "2479",
+      "container": "American Economic Review",
+      "last_page": "2513",
+      "bib_id": 18,
+      "year_suffix": "",
+      "text_id": 417
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "Corruption, norms, and legal enforcement: Evidence from diplomatic parking tickets",
+      "authors": "Fisman, R; Miguel, E",
+      "editors": "",
+      "publisher": "",
+      "year": 2007,
+      "volume": "115",
+      "issue": "",
+      "first_page": "1020",
+      "container": "Journal of Political Economy",
+      "last_page": "1048",
+      "bib_id": 19,
+      "year_suffix": "",
+      "text_id": 418
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "",
+      "authors": "Gelfand, M",
+      "editors": "",
+      "publisher": "Scribner",
+      "year": 2019,
+      "volume": "",
+      "issue": "",
+      "first_page": null,
+      "container": "",
+      "last_page": null,
+      "bib_id": 20,
+      "year_suffix": "",
+      "text_id": 419
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "Differences between tight and loose cultures: A 33-nation study",
+      "authors": "Gelfand, M J; Raver, J L; Nishii, L; Leslie, L M; Lun, J; Lim, B C; Arnadottir, . .; , J",
+      "editors": "",
+      "publisher": "",
+      "year": 2011,
+      "volume": "332",
+      "issue": "",
+      "first_page": "1100",
+      "container": "Science",
+      "last_page": "1104",
+      "bib_id": 21,
+      "year_suffix": "",
+      "text_id": 420
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "Genetic distance, transportation costs, and trade",
+      "authors": "Giuliano, P; Spilimbergo, A; Tonon, G",
+      "editors": "",
+      "publisher": "",
+      "year": 2013,
+      "volume": "14",
+      "issue": "",
+      "first_page": "179",
+      "container": "Journal of Economic Geography",
+      "last_page": "198",
+      "bib_id": 22,
+      "year_suffix": "",
+      "text_id": 421
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "Culture, institutions, and the wealth of nations",
+      "authors": "Gorodnichenko, Y; Roland, G",
+      "editors": "",
+      "publisher": "",
+      "year": 2017,
+      "volume": "99",
+      "issue": "",
+      "first_page": "402",
+      "container": "Review of Economics and Statistics",
+      "last_page": "416",
+      "bib_id": 23,
+      "year_suffix": "",
+      "text_id": 422
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "Tightness-looseness across the 50 United States",
+      "authors": "Harrington, J R; Gelfand, M J",
+      "editors": "",
+      "publisher": "",
+      "year": 2014,
+      "volume": "111",
+      "issue": "",
+      "first_page": "7990",
+      "container": "Proceedings of the National Academy of Sciences",
+      "last_page": "7995",
+      "bib_id": 24,
+      "year_suffix": "",
+      "text_id": 423
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "Dynamic social impact: A theory of the origins and evolution of culture",
+      "authors": "Harton, H C; Bullock, M",
+      "editors": "",
+      "publisher": "",
+      "year": 2007,
+      "volume": "1",
+      "issue": "",
+      "first_page": "521",
+      "container": "Social and Personality Psychology Compass",
+      "last_page": "540",
+      "bib_id": 25,
+      "year_suffix": "",
+      "text_id": 424
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "",
+      "authors": "Heine, S J",
+      "editors": "",
+      "publisher": "W. W. Norton",
+      "year": 2015,
+      "volume": "",
+      "issue": "",
+      "first_page": null,
+      "container": "",
+      "last_page": null,
+      "bib_id": 26,
+      "year_suffix": "",
+      "text_id": 425
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "What's wrong with cross-cultural comparisons of subjective Likert scales? The reference-group effect",
+      "authors": "Heine, S J; Lehman, D R; Peng, K; Greenholtz, J",
+      "editors": "",
+      "publisher": "",
+      "year": 2002,
+      "volume": "82",
+      "issue": "",
+      "first_page": "903",
+      "container": "Journal of Personality and Social Psychology",
+      "last_page": "918",
+      "bib_id": 27,
+      "year_suffix": "",
+      "text_id": 426
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "",
+      "authors": "Henrich, J",
+      "editors": "",
+      "publisher": "Princeton University Press",
+      "year": 2016,
+      "volume": "",
+      "issue": "",
+      "first_page": null,
+      "container": "",
+      "last_page": null,
+      "bib_id": 28,
+      "year_suffix": "",
+      "text_id": 427
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "The weirdest people in the world?",
+      "authors": "Henrich, J; Heine, S J; Norenzayan, A",
+      "editors": "",
+      "publisher": "",
+      "year": 2010,
+      "volume": "33",
+      "issue": "",
+      "first_page": "61",
+      "container": "Behavioral & Brain Sciences",
+      "last_page": "83",
+      "bib_id": 29,
+      "year_suffix": "",
+      "text_id": 428
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "",
+      "authors": "Hofstede, G H",
+      "editors": "",
+      "publisher": "",
+      "year": null,
+      "volume": "",
+      "issue": "",
+      "first_page": null,
+      "container": "",
+      "last_page": null,
+      "bib_id": 30,
+      "year_suffix": null,
+      "text_id": 429
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "",
+      "authors": "Hofstede, G H",
+      "editors": "",
+      "publisher": "SAGE",
+      "year": 2001,
+      "volume": "",
+      "issue": "",
+      "first_page": null,
+      "container": "",
+      "last_page": null,
+      "bib_id": 31,
+      "year_suffix": "",
+      "text_id": 430
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "Learning from failures of protocol in crosscultural research",
+      "authors": "Hruschka, D; Munira, S; Jesmin, K; Hackman, J; Tiokhin, L",
+      "editors": "",
+      "publisher": "",
+      "year": 2018,
+      "volume": "115",
+      "issue": "",
+      "first_page": "11428",
+      "container": "Proceedings of the National Academy of Sciences",
+      "last_page": "11434",
+      "bib_id": 32,
+      "year_suffix": "",
+      "text_id": 431
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "",
+      "authors": "Inglehart, R; Haerpfer, C; Moreno, A",
+      "editors": "Welzel, C; Kizilova, K; Diez-Medrano, J",
+      "publisher": "",
+      "year": 2014,
+      "volume": "",
+      "issue": "",
+      "first_page": null,
+      "container": "",
+      "last_page": null,
+      "bib_id": 33,
+      "year_suffix": "",
+      "text_id": 432
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "",
+      "authors": "Inglehart, R; Welzel, C",
+      "editors": "",
+      "publisher": "Cambridge University Press",
+      "year": 2005,
+      "volume": "",
+      "issue": "",
+      "first_page": null,
+      "container": "",
+      "last_page": null,
+      "bib_id": 34,
+      "year_suffix": "",
+      "text_id": 433
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "Many Labs 2: Investigating variation in replicability across samples and settings",
+      "authors": "Klein, R A; Vianello, M; Hasselman, F; Adams, B G; Adams, R B; Jr, ; Alper, S; Nosek, . .; , B A",
+      "editors": "",
+      "publisher": "",
+      "year": 2018,
+      "volume": "1",
+      "issue": "",
+      "first_page": "443",
+      "container": "Advances in Methods and Practices in Psychological Science",
+      "last_page": "490",
+      "bib_id": 35,
+      "year_suffix": "",
+      "text_id": 434
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "The effect of national culture on the choice of entry mode",
+      "authors": "Kogut, B; Singh, H",
+      "editors": "",
+      "publisher": "",
+      "year": 1988,
+      "volume": "19",
+      "issue": "",
+      "first_page": "411",
+      "container": "Journal of International Business Studies",
+      "last_page": "432",
+      "bib_id": 36,
+      "year_suffix": "",
+      "text_id": 435
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "",
+      "authors": "Laland, K N",
+      "editors": "",
+      "publisher": "Princeton University Press",
+      "year": 2017,
+      "volume": "",
+      "issue": "",
+      "first_page": null,
+      "container": "",
+      "last_page": null,
+      "bib_id": 37,
+      "year_suffix": "",
+      "text_id": 436
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.2139/ssrn.1994531",
+      "title": "",
+      "authors": "Mayer, T; Zignago, S",
+      "editors": "",
+      "publisher": "",
+      "year": 2012,
+      "volume": "",
+      "issue": "",
+      "first_page": null,
+      "container": "",
+      "last_page": null,
+      "bib_id": 38,
+      "year_suffix": "",
+      "text_id": 437
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "Personality profiles of cultures: Aggregate personality traits",
+      "authors": "Mccrae, R R; Terracciano, A",
+      "editors": "",
+      "publisher": "",
+      "year": 2005,
+      "volume": "89",
+      "issue": "",
+      "first_page": "407",
+      "container": "Journal of Personality and Social Psychology",
+      "last_page": "425",
+      "bib_id": 39,
+      "year_suffix": "",
+      "text_id": 438
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "Native language, spoken language, translation and trade",
+      "authors": "Melitz, J; Toubal, F",
+      "editors": "",
+      "publisher": "",
+      "year": 2014,
+      "volume": "93",
+      "issue": "",
+      "first_page": "351",
+      "container": "Journal of International Economics",
+      "last_page": "363",
+      "bib_id": 40,
+      "year_suffix": "",
+      "text_id": 439
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1038/s41562-017-0138",
+      "title": "Corrupting cooperation and how anti-corruption strategies may backfire",
+      "authors": "Muthukrishna, M; Francois, P; Pourahmadi, S; Henrich, J",
+      "editors": "",
+      "publisher": "",
+      "year": 2017,
+      "volume": "1",
+      "issue": "",
+      "first_page": null,
+      "container": "Nature Human Behaviour",
+      "last_page": null,
+      "bib_id": 41,
+      "year_suffix": "",
+      "text_id": 440
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "A problem in theory",
+      "authors": "Muthukrishna, M; Henrich, J",
+      "editors": "",
+      "publisher": "",
+      "year": 2019,
+      "volume": "3",
+      "issue": "",
+      "first_page": "221",
+      "container": "Nature Human Behaviour",
+      "last_page": "229",
+      "bib_id": 42,
+      "year_suffix": "",
+      "text_id": 441
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "The when and who of social learning and conformist transmission",
+      "authors": "Muthukrishna, M; Morgan, T J H; Henrich, J",
+      "editors": "",
+      "publisher": "",
+      "year": 2016,
+      "volume": "37",
+      "issue": "",
+      "first_page": "10",
+      "container": "Evolution & Human Behavior",
+      "last_page": "20",
+      "bib_id": 43,
+      "year_suffix": "",
+      "text_id": 442
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "",
+      "authors": "Nisbett, R E; Cohen, D",
+      "editors": "",
+      "publisher": "Westview Press",
+      "year": 1996,
+      "volume": "",
+      "issue": "",
+      "first_page": null,
+      "container": "",
+      "last_page": null,
+      "bib_id": 44,
+      "year_suffix": "",
+      "text_id": 443
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "Population structure in a comprehensive genomic data set on human microsatellite variation. G3: Genes, Genomes",
+      "authors": "Pemberton, T J; Degiorgio, M; Rosenberg, N A",
+      "editors": "",
+      "publisher": "",
+      "year": 2013,
+      "volume": "3",
+      "issue": "",
+      "first_page": "891",
+      "container": "Genetics",
+      "last_page": "907",
+      "bib_id": 45,
+      "year_suffix": "",
+      "text_id": 444
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "Toward a psychology of Homo sapiens: Making psychological science more representative of the human population",
+      "authors": "Rad, M S; Martingano, A J; Ginges, J",
+      "editors": "",
+      "publisher": "",
+      "year": 2018,
+      "volume": "115",
+      "issue": "",
+      "first_page": "11401",
+      "container": "Proceedings of the National Academy of Sciences",
+      "last_page": "11405",
+      "bib_id": 46,
+      "year_suffix": "",
+      "text_id": 445
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "Support from the relationship of genetic and geographic distance in human populations for a serial founder effect originating in Africa",
+      "authors": "Ramachandran, S; Deshpande, O; Roseman, C C; Rosenberg, N A; Feldman, M W; Cavalli-Sforza, L L",
+      "editors": "",
+      "publisher": "",
+      "year": 2005,
+      "volume": "102",
+      "issue": "",
+      "first_page": "15942",
+      "container": "Proceedings of the National Academy of Sciences",
+      "last_page": "15947",
+      "bib_id": 47,
+      "year_suffix": "",
+      "text_id": 446
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "Cross-cultural differences in a global \"survey of world views",
+      "authors": "Saucier, G; Kenner, J; Iurino, K; Bou Malham, P; Chen, Z; Thalmayer, A G; Metaferia, . .; , H",
+      "editors": "",
+      "publisher": "",
+      "year": 2015,
+      "volume": "46",
+      "issue": "",
+      "first_page": "53",
+      "container": "Journal of Cross-Cultural Psychology",
+      "last_page": "70",
+      "bib_id": 48,
+      "year_suffix": "",
+      "text_id": 447
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1126/science.aau5141",
+      "title": "The church, intensive kinship, and global psychological variation",
+      "authors": "Schulz, J F; Bahrami-Rad, D; Beauchamp, J P; Henrich, J",
+      "editors": "",
+      "publisher": "",
+      "year": 2019,
+      "volume": "366",
+      "issue": "6466",
+      "first_page": null,
+      "container": "Science",
+      "last_page": null,
+      "bib_id": 49,
+      "year_suffix": "",
+      "text_id": 448
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "A theory of cultural value orientations: Explication and applications",
+      "authors": "Schwartz, S H",
+      "editors": "",
+      "publisher": "",
+      "year": 2006,
+      "volume": "5",
+      "issue": "",
+      "first_page": "137",
+      "container": "Comparative Sociology",
+      "last_page": "182",
+      "bib_id": 50,
+      "year_suffix": "",
+      "text_id": 449
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "Niche diversity can explain cross-cultural differences in personality structure",
+      "authors": "Smaldino, P E; Lukaszewski, A; Von Rueden, C; Gurven, M",
+      "editors": "",
+      "publisher": "",
+      "year": 2019,
+      "volume": "3",
+      "issue": "",
+      "first_page": "1276",
+      "container": "Nature Human Behaviour",
+      "last_page": "1283",
+      "bib_id": 51,
+      "year_suffix": "",
+      "text_id": 450
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "Ancestry and development: New evidence",
+      "authors": "Spolaore, E; Wacziarg, R",
+      "editors": "",
+      "publisher": "",
+      "year": 2018,
+      "volume": "33",
+      "issue": "",
+      "first_page": "748",
+      "container": "Journal of Applied Econometrics",
+      "last_page": "762",
+      "bib_id": 52,
+      "year_suffix": "",
+      "text_id": 451
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "Large-scale psychological differences within China explained by rice versus wheat agriculture",
+      "authors": "Talhelm, T; Zhang, X; Oishi, S; Shimin, C; Duan, D; Lan, X; Kitayama, S",
+      "editors": "",
+      "publisher": "",
+      "year": 2014,
+      "volume": "344",
+      "issue": "",
+      "first_page": "603",
+      "container": "Science",
+      "last_page": "608",
+      "bib_id": 53,
+      "year_suffix": "",
+      "text_id": 452
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "",
+      "authors": "",
+      "editors": "",
+      "publisher": "Transparency International",
+      "year": 2016,
+      "volume": "",
+      "issue": "",
+      "first_page": null,
+      "container": "",
+      "last_page": null,
+      "bib_id": 54,
+      "year_suffix": "",
+      "text_id": 453
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "",
+      "authors": "Twain, M",
+      "editors": "",
+      "publisher": "Dover",
+      "year": 1989,
+      "volume": "",
+      "issue": "",
+      "first_page": null,
+      "container": "",
+      "last_page": null,
+      "bib_id": 55,
+      "year_suffix": "",
+      "text_id": 454
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "The index of cultural tightness and looseness among 68 countries",
+      "authors": "Uz, I",
+      "editors": "",
+      "publisher": "",
+      "year": 2015,
+      "volume": "46",
+      "issue": "",
+      "first_page": "319",
+      "container": "Journal of Cross-Cultural Psychology",
+      "last_page": "335",
+      "bib_id": 56,
+      "year_suffix": "",
+      "text_id": 455
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "",
+      "authors": "Venables, W N; Ripley, B D",
+      "editors": "",
+      "publisher": "Springer",
+      "year": 2002,
+      "volume": "",
+      "issue": "",
+      "first_page": null,
+      "container": "",
+      "last_page": null,
+      "bib_id": 57,
+      "year_suffix": "",
+      "text_id": 456
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "",
+      "authors": "Woodard, C",
+      "editors": "",
+      "publisher": "Penguin",
+      "year": 2011,
+      "volume": "",
+      "issue": "",
+      "first_page": null,
+      "container": "",
+      "last_page": null,
+      "bib_id": 58,
+      "year_suffix": "",
+      "text_id": 457
+    }
+  ],
+  "xref": [
+    {
+      "xref_id": 9,
+      "xref_type": "bib",
+      "contents": "(Atkinson, 2011)",
+      "text_id": 332
+    },
+    {
+      "xref_id": 10,
+      "xref_type": "bib",
+      "contents": "(Bell, Richerson, & McElreath, 2009;",
+      "text_id": 27
+    },
+    {
+      "xref_id": 10,
+      "xref_type": "bib",
+      "contents": "-2009",
+      "text_id": 116
+    },
+    {
+      "xref_id": 10,
+      "xref_type": "bib",
+      "contents": "-2009",
+      "text_id": 118
+    },
+    {
+      "xref_id": 10,
+      "xref_type": "bib",
+      "contents": "Bell et al. (2009)",
+      "text_id": 116
+    },
+    {
+      "xref_id": 10,
+      "xref_type": "bib",
+      "contents": "Bell et al. (2009)",
+      "text_id": 118
+    },
+    {
+      "xref_id": 10,
+      "xref_type": "bib",
+      "contents": "Bell et al. (2009)",
+      "text_id": null
+    },
+    {
+      "xref_id": 10,
+      "xref_type": "bib",
+      "contents": "(Bell et al., 2009;",
+      "text_id": 296
+    },
+    {
+      "xref_id": 11,
+      "xref_type": "bib",
+      "contents": "(Boyd, 2017;",
+      "text_id": 5
+    },
+    {
+      "xref_id": 12,
+      "xref_type": "bib",
+      "contents": "Cavalli-Sforza, Menozzi, & Piazza, 1994)",
+      "text_id": 27
+    },
+    {
+      "xref_id": 12,
+      "xref_type": "bib",
+      "contents": "(Cavalli-Sforza et al., 1994)",
+      "text_id": 57
+    },
+    {
+      "xref_id": 13,
+      "xref_type": "bib",
+      "contents": "(Chen, Lee, & Stevenson, 1995;",
+      "text_id": 187
+    },
+    {
+      "xref_id": 14,
+      "xref_type": "bib",
+      "contents": "(Chudek, Muthukrishna, & Henrich, 2015;",
+      "text_id": 254
+    },
+    {
+      "xref_id": 16,
+      "xref_type": "bib",
+      "contents": "(Cohn, Maréchal, Tannenbaum, & Zünd, 2019)",
+      "text_id": 172
+    },
+    {
+      "xref_id": 16,
+      "xref_type": "bib",
+      "contents": "Cohn, Maréchal, Tannenbaum, and Zünd (2019)",
+      "text_id": 364
+    },
+    {
+      "xref_id": 17,
+      "xref_type": "bib",
+      "contents": "Demes and Geeraert (2014)",
+      "text_id": 49
+    },
+    {
+      "xref_id": 18,
+      "xref_type": "bib",
+      "contents": "(Desmet, Ortuño-Ortín, & Wacziarg, 2017;",
+      "text_id": 17
+    },
+    {
+      "xref_id": 18,
+      "xref_type": "bib",
+      "contents": "Desmet et al., 2017;",
+      "text_id": 296
+    },
+    {
+      "xref_id": 19,
+      "xref_type": "bib",
+      "contents": "(Fisman & Miguel, 2007)",
+      "text_id": 167
+    },
+    {
+      "xref_id": 20,
+      "xref_type": "bib",
+      "contents": "Gelfand, 2019;",
+      "text_id": 5
+    },
+    {
+      "xref_id": 21,
+      "xref_type": "bib",
+      "contents": "Gelfand et al., 2011)",
+      "text_id": 24
+    },
+    {
+      "xref_id": 21,
+      "xref_type": "bib",
+      "contents": "Gelfand et al. (2011)",
+      "text_id": null
+    },
+    {
+      "xref_id": 22,
+      "xref_type": "bib",
+      "contents": "(Giuliano, Spilimbergo, & Tonon, 2013)",
+      "text_id": 290
+    },
+    {
+      "xref_id": 23,
+      "xref_type": "bib",
+      "contents": "Gorodnichenko & Roland, 2017;",
+      "text_id": 17
+    },
+    {
+      "xref_id": 23,
+      "xref_type": "bib",
+      "contents": "(Gorodnichenko & Roland, 2017)",
+      "text_id": 290
+    },
+    {
+      "xref_id": 24,
+      "xref_type": "bib",
+      "contents": "(Harrington & Gelfand, 2014)",
+      "text_id": 327
+    },
+    {
+      "xref_id": 25,
+      "xref_type": "bib",
+      "contents": "(Harton & Bullock, 2007)",
+      "text_id": 254
+    },
+    {
+      "xref_id": 26,
+      "xref_type": "bib",
+      "contents": "(Heine, 2015;",
+      "text_id": 14
+    },
+    {
+      "xref_id": 27,
+      "xref_type": "bib",
+      "contents": "Heine, Lehman, Peng, & Greenholtz, 2002)",
+      "text_id": 187
+    },
+    {
+      "xref_id": 28,
+      "xref_type": "bib",
+      "contents": "Henrich, 2016)",
+      "text_id": 5
+    },
+    {
+      "xref_id": 28,
+      "xref_type": "bib",
+      "contents": "Henrich, 2016;",
+      "text_id": 254
+    },
+    {
+      "xref_id": 29,
+      "xref_type": "bib",
+      "contents": "(Henrich, Heine, & Norenzayan, 2010)",
+      "text_id": 1
+    },
+    {
+      "xref_id": 29,
+      "xref_type": "bib",
+      "contents": "Henrich et al., 2010)",
+      "text_id": 14
+    },
+    {
+      "xref_id": 29,
+      "xref_type": "bib",
+      "contents": "(Henrich et al., 2010)",
+      "text_id": 56
+    },
+    {
+      "xref_id": 29,
+      "xref_type": "bib",
+      "contents": "and 2010",
+      "text_id": 116
+    },
+    {
+      "xref_id": 29,
+      "xref_type": "bib",
+      "contents": "(Henrich et al., 2010)",
+      "text_id": 217
+    },
+    {
+      "xref_id": 29,
+      "xref_type": "bib",
+      "contents": "(Henrich et al., 2010)",
+      "text_id": 291
+    },
+    {
+      "xref_id": 31,
+      "xref_type": "bib",
+      "contents": "Hofstede's (2001)",
+      "text_id": 14
+    },
+    {
+      "xref_id": 31,
+      "xref_type": "bib",
+      "contents": "Hofstede (2001)",
+      "text_id": 19
+    },
+    {
+      "xref_id": 31,
+      "xref_type": "bib",
+      "contents": "Hofstede's (2001)",
+      "text_id": null
+    },
+    {
+      "xref_id": 31,
+      "xref_type": "bib",
+      "contents": "Hofstede's (2001)",
+      "text_id": null
+    },
+    {
+      "xref_id": 32,
+      "xref_type": "bib",
+      "contents": "Hruschka, Munira, Jesmin, Hackman, & Tiokhin, 2018)",
+      "text_id": 188
+    },
+    {
+      "xref_id": 33,
+      "xref_type": "bib",
+      "contents": "Inglehart et al., 2014)",
+      "text_id": 116
+    },
+    {
+      "xref_id": 34,
+      "xref_type": "bib",
+      "contents": "Inglehart and Welzel's (2005)",
+      "text_id": 14
+    },
+    {
+      "xref_id": 34,
+      "xref_type": "bib",
+      "contents": "Inglehart and Welzel (2005)",
+      "text_id": 19
+    },
+    {
+      "xref_id": 35,
+      "xref_type": "bib",
+      "contents": "(Klein et al., 2018)",
+      "text_id": 228
+    },
+    {
+      "xref_id": 36,
+      "xref_type": "bib",
+      "contents": "Kogut and Singh's (1988)",
+      "text_id": 16
+    },
+    {
+      "xref_id": 36,
+      "xref_type": "bib",
+      "contents": "Kogut and Singh (1988)",
+      "text_id": 44
+    },
+    {
+      "xref_id": 36,
+      "xref_type": "bib",
+      "contents": "Kogut-Singh (1988)",
+      "text_id": 284
+    },
+    {
+      "xref_id": 36,
+      "xref_type": "bib",
+      "contents": "Kogut-Singh (1988)",
+      "text_id": 309
+    },
+    {
+      "xref_id": 36,
+      "xref_type": "bib",
+      "contents": "Kogut and Singh (1988)",
+      "text_id": 364
+    },
+    {
+      "xref_id": 37,
+      "xref_type": "bib",
+      "contents": "Laland, 2017)",
+      "text_id": null
+    },
+    {
+      "xref_id": 38,
+      "xref_type": "bib",
+      "contents": "(Mayer & Zignago, 2012)",
+      "text_id": 174
+    },
+    {
+      "xref_id": 38,
+      "xref_type": "bib",
+      "contents": "(Mayer & Zignago, 2012)",
+      "text_id": 364
+    },
+    {
+      "xref_id": 39,
+      "xref_type": "bib",
+      "contents": "McCrae et al. (2005)",
+      "text_id": 155
+    },
+    {
+      "xref_id": 39,
+      "xref_type": "bib",
+      "contents": "McCrae et al. (2005)",
+      "text_id": null
+    },
+    {
+      "xref_id": 40,
+      "xref_type": "bib",
+      "contents": "(Melitz & Toubal, 2014",
+      "text_id": 180
+    },
+    {
+      "xref_id": 40,
+      "xref_type": "bib",
+      "contents": "(Melitz & Toubal, 2014)",
+      "text_id": 366
+    },
+    {
+      "xref_id": 41,
+      "xref_type": "bib",
+      "contents": "(Muthukrishna, Francois, Pourahmadi, & Henrich, 2017)",
+      "text_id": 170
+    },
+    {
+      "xref_id": 42,
+      "xref_type": "bib",
+      "contents": "(Muthukrishna & Henrich, 2019)",
+      "text_id": 30
+    },
+    {
+      "xref_id": 42,
+      "xref_type": "bib",
+      "contents": "(Muthukrishna & Henrich, 2019)",
+      "text_id": 37
+    },
+    {
+      "xref_id": 42,
+      "xref_type": "bib",
+      "contents": "Muthukrishna & Henrich, 2019)",
+      "text_id": 89
+    },
+    {
+      "xref_id": 42,
+      "xref_type": "bib",
+      "contents": "(Muthukrishna & Henrich, 2019)",
+      "text_id": 100
+    },
+    {
+      "xref_id": 42,
+      "xref_type": "bib",
+      "contents": "(Muthukrishna & Henrich, 2019)",
+      "text_id": 329
+    },
+    {
+      "xref_id": 43,
+      "xref_type": "bib",
+      "contents": "Muthukrishna, Morgan, & Henrich, 2016)",
+      "text_id": 254
+    },
+    {
+      "xref_id": 44,
+      "xref_type": "bib",
+      "contents": "(Nisbett & Cohen, 1996)",
+      "text_id": 237
+    },
+    {
+      "xref_id": 45,
+      "xref_type": "bib",
+      "contents": "Pemberton, DeGiorgio, & Rosenberg, 2013;",
+      "text_id": 53
+    },
+    {
+      "xref_id": 46,
+      "xref_type": "bib",
+      "contents": "(Rad, Martingano, & Ginges, 2018)",
+      "text_id": 3
+    },
+    {
+      "xref_id": 46,
+      "xref_type": "bib",
+      "contents": "(Rad et al., 2018)",
+      "text_id": 10
+    },
+    {
+      "xref_id": 47,
+      "xref_type": "bib",
+      "contents": "(Ramachandran et al., 2005)",
+      "text_id": 332
+    },
+    {
+      "xref_id": 48,
+      "xref_type": "bib",
+      "contents": "Saucier et al., 2015)",
+      "text_id": 300
+    },
+    {
+      "xref_id": 49,
+      "xref_type": "bib",
+      "contents": "(Schulz, Bahrami-Rad, Beauchamp, & Henrich, 2019)",
+      "text_id": 162
+    },
+    {
+      "xref_id": 49,
+      "xref_type": "bib",
+      "contents": "Schulz et al. (2019)",
+      "text_id": 165
+    },
+    {
+      "xref_id": 49,
+      "xref_type": "bib",
+      "contents": "(Schulz et al., 2019)",
+      "text_id": 263
+    },
+    {
+      "xref_id": 49,
+      "xref_type": "bib",
+      "contents": "(Schulz et al., 2019)",
+      "text_id": 281
+    },
+    {
+      "xref_id": 49,
+      "xref_type": "bib",
+      "contents": "(Schulz et al., 2019)",
+      "text_id": 304
+    },
+    {
+      "xref_id": 50,
+      "xref_type": "bib",
+      "contents": "Schwartz's (2006)",
+      "text_id": 14
+    },
+    {
+      "xref_id": 50,
+      "xref_type": "bib",
+      "contents": "Schwartz (2006)",
+      "text_id": 19
+    },
+    {
+      "xref_id": 50,
+      "xref_type": "bib",
+      "contents": "Schwartz's (2006)",
+      "text_id": null
+    },
+    {
+      "xref_id": 50,
+      "xref_type": "bib",
+      "contents": "Schwartz's (2006)",
+      "text_id": null
+    },
+    {
+      "xref_id": 51,
+      "xref_type": "bib",
+      "contents": "(Smaldino, Lukaszewski, von Rueden, & Gurven, 2019)",
+      "text_id": 159
+    },
+    {
+      "xref_id": 52,
+      "xref_type": "bib",
+      "contents": "Spolaore & Wacziarg, 2018)",
+      "text_id": 17
+    },
+    {
+      "xref_id": 52,
+      "xref_type": "bib",
+      "contents": "Spolaore & Wacziarg, 2018)",
+      "text_id": 53
+    },
+    {
+      "xref_id": 52,
+      "xref_type": "bib",
+      "contents": "Spolaore and Wacziarg (2018)",
+      "text_id": 183
+    },
+    {
+      "xref_id": 52,
+      "xref_type": "bib",
+      "contents": "Spolaore & Wacziarg, 2018)",
+      "text_id": 296
+    },
+    {
+      "xref_id": 53,
+      "xref_type": "bib",
+      "contents": "(Talhelm et al., 2014)",
+      "text_id": 326
+    },
+    {
+      "xref_id": 55,
+      "xref_type": "bib",
+      "contents": "(Twain, 1897",
+      "text_id": 239
+    },
+    {
+      "xref_id": 56,
+      "xref_type": "bib",
+      "contents": "Uz (2015)",
+      "text_id": 142
+    },
+    {
+      "xref_id": 57,
+      "xref_type": "bib",
+      "contents": "(Venables & Ripley, 2002)",
+      "text_id": 242
+    },
+    {
+      "xref_id": 58,
+      "xref_type": "bib",
+      "contents": "(Woodard, 2011)",
+      "text_id": 237
+    },
+    {
+      "xref_id": null,
+      "xref_type": "bib",
+      "contents": "Hofstede's Cultural Dimensions and Demes and Geeraert's (2014)",
+      "text_id": 16
+    },
+    {
+      "xref_id": null,
+      "xref_type": "bib",
+      "contents": "Hofstede's Individualism dimension (38 and 37,",
+      "text_id": 21
+    },
+    {
+      "xref_id": null,
+      "xref_type": "bib",
+      "contents": "respectively)",
+      "text_id": 21
+    },
+    {
+      "xref_id": null,
+      "xref_type": "bib",
+      "contents": "(1994)",
+      "text_id": null
+    },
+    {
+      "xref_id": null,
+      "xref_type": "bib",
+      "contents": "(2005",
+      "text_id": 116
+    },
+    {
+      "xref_id": null,
+      "xref_type": "bib",
+      "contents": "-2014;",
+      "text_id": 116
+    },
+    {
+      "xref_id": null,
+      "xref_type": "bib",
+      "contents": "Pemberton et al.'s (2013)",
+      "text_id": 183
+    },
+    {
+      "xref_id": null,
+      "xref_type": "bib",
+      "contents": "(Twain, /1989, p. 348), p. 348)",
+      "text_id": 239
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "1",
+      "text_id": null
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "S1",
+      "text_id": 211
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "3",
+      "text_id": 221
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "3",
+      "text_id": 230
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "3",
+      "text_id": 331
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "5",
+      "text_id": 223
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "6",
+      "text_id": 242
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "6",
+      "text_id": 325
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "7",
+      "text_id": 250
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "2",
+      "text_id": null
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "2",
+      "text_id": null
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "2",
+      "text_id": null
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "S2",
+      "text_id": 211
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "4",
+      "text_id": 221
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "4",
+      "text_id": 230
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "8",
+      "text_id": 250
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "S4",
+      "text_id": 260
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "4",
+      "text_id": 324
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "4",
+      "text_id": 326
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "4",
+      "text_id": 327
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "2",
+      "text_id": null
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "1",
+      "text_id": 364
+    },
+    {
+      "xref_id": null,
+      "xref_type": null,
+      "contents": "2011",
+      "text_id": 146
+    },
+    {
+      "xref_id": null,
+      "xref_type": "table",
+      "contents": "1",
+      "text_id": 221
+    },
+    {
+      "xref_id": null,
+      "xref_type": "table",
+      "contents": "1",
+      "text_id": 230
+    },
+    {
+      "xref_id": null,
+      "xref_type": "table",
+      "contents": "2",
+      "text_id": 257
+    },
+    {
+      "xref_id": null,
+      "xref_type": "table",
+      "contents": "2",
+      "text_id": 266
+    }
+  ],
+  "figure": [
+    {
+      "figure_id": 1,
+      "section_id": 23,
+      "image": null,
+      "page_number": null
+    },
+    {
+      "figure_id": 2,
+      "section_id": 25,
+      "image": null,
+      "page_number": null
+    },
+    {
+      "figure_id": 3,
+      "section_id": 26,
+      "image": null,
+      "page_number": null
+    },
+    {
+      "figure_id": 4,
+      "section_id": 27,
+      "image": null,
+      "page_number": null
+    },
+    {
+      "figure_id": 5,
+      "section_id": 28,
+      "image": null,
+      "page_number": null
+    },
+    {
+      "figure_id": 6,
+      "section_id": 33,
+      "image": null,
+      "page_number": null
+    },
+    {
+      "figure_id": 7,
+      "section_id": 34,
+      "image": null,
+      "page_number": null
+    }
+  ],
+  "table": [
+    {
+      "table_id": 1,
+      "section_id": 31,
+      "html": "<table>\n  <row>\n    <cell/>\n    <cell/>\n    <cell>American<\/cell>\n    <cell cols=\"2\">Chinese<\/cell>\n  <\/row>\n  <row>\n    <cell/>\n    <cell>Cultural<\/cell>\n    <cell/>\n    <cell>Cultural<\/cell>\n    <cell/>\n  <\/row>\n  <row>\n    <cell>Country<\/cell>\n    <cell>distance<\/cell>\n    <cell>95% CI<\/cell>\n    <cell>distance<\/cell>\n    <cell>95% CI<\/cell>\n  <\/row>\n  <row>\n    <cell>Algeria<\/cell>\n    <cell>.138<\/cell>\n    <cell>[.132, .144]<\/cell>\n    <cell>.221<\/cell>\n    <cell>[.216, .228]<\/cell>\n  <\/row>\n  <row>\n    <cell>Andorra<\/cell>\n    <cell>.115<\/cell>\n    <cell>[.109, .122]<\/cell>\n    <cell>.249<\/cell>\n    <cell>[.242, .258]<\/cell>\n  <\/row>\n  <row>\n    <cell>Argentina<\/cell>\n    <cell>.071<\/cell>\n    <cell>[.069, .075]<\/cell>\n    <cell>.150<\/cell>\n    <cell>[.146, .155]<\/cell>\n  <\/row>\n  <row>\n    <cell>Armenia<\/cell>\n    <cell>.154<\/cell>\n    <cell>[.149, .161]<\/cell>\n    <cell>.177<\/cell>\n    <cell>[.171, .183]<\/cell>\n  <\/row>\n  <row>\n    <cell>Australia<\/cell>\n    <cell>.035<\/cell>\n    <cell>[.033, .039]<\/cell>\n    <cell>.131<\/cell>\n    <cell>[.127, .135]<\/cell>\n  <\/row>\n  <row>\n    <cell>Azerbaijan<\/cell>\n    <cell>.175<\/cell>\n    <cell>[.169, .181]<\/cell>\n    <cell>.158<\/cell>\n    <cell>[.153, .165]<\/cell>\n  <\/row>\n  <row>\n    <cell>Bahrain<\/cell>\n    <cell>.167<\/cell>\n    <cell>[.161, .173]<\/cell>\n    <cell>.195<\/cell>\n    <cell>[.189, .201]<\/cell>\n  <\/row>\n  <row>\n    <cell>Belarus<\/cell>\n    <cell>.071<\/cell>\n    <cell>[.068, .075]<\/cell>\n    <cell>.101<\/cell>\n    <cell>[.097, .106]<\/cell>\n  <\/row>\n  <row>\n    <cell>Brazil<\/cell>\n    <cell>.072<\/cell>\n    <cell>[.069, .075]<\/cell>\n    <cell>.159<\/cell>\n    <cell>[.156, .163]<\/cell>\n  <\/row>\n  <row>\n    <cell>Bulgaria<\/cell>\n    <cell>.108<\/cell>\n    <cell>[.104, .114]<\/cell>\n    <cell>.116<\/cell>\n    <cell>[.111, .123]<\/cell>\n  <\/row>\n  <row>\n    <cell>Burkina Faso<\/cell>\n    <cell>.143<\/cell>\n    <cell>[.139, .149]<\/cell>\n    <cell>.153<\/cell>\n    <cell>[.149, .157]<\/cell>\n  <\/row>\n  <row>\n    <cell>Canada<\/cell>\n    <cell>.026<\/cell>\n    <cell>[.025, .028]<\/cell>\n    <cell>.135<\/cell>\n    <cell>[.132, .140]<\/cell>\n  <\/row>\n  <row>\n    <cell>Chile<\/cell>\n    <cell>.078<\/cell>\n    <cell>[.075, .081]<\/cell>\n    <cell>.156<\/cell>\n    <cell>[.152, .161]<\/cell>\n  <\/row>\n  <row>\n    <cell>China<\/cell>\n    <cell>.150<\/cell>\n    <cell>[.146, .155]<\/cell>\n    <cell>-<\/cell>\n    <cell>-<\/cell>\n  <\/row>\n  <row>\n    <cell>Colombia<\/cell>\n    <cell>.102<\/cell>\n    <cell>[.0987, .106]<\/cell>\n    <cell>.182<\/cell>\n    <cell>[.178, .186]<\/cell>\n  <\/row>\n  <row>\n    <cell>Cyprus<\/cell>\n    <cell>.057<\/cell>\n    <cell>[.055, .061]<\/cell>\n    <cell>.118<\/cell>\n    <cell>[.114, .122]<\/cell>\n  <\/row>\n  <row>\n    <cell>Ecuador<\/cell>\n    <cell>.109<\/cell>\n    <cell>[.105, .114]<\/cell>\n    <cell>.197<\/cell>\n    <cell>[.192, .204]<\/cell>\n  <\/row>\n  <row>\n    <cell>Egypt<\/cell>\n    <cell>.234<\/cell>\n    <cell>[.228, .241]<\/cell>\n    <cell>.186<\/cell>\n    <cell>[.183, .190]<\/cell>\n  <\/row>\n  <row>\n    <cell>Estonia<\/cell>\n    <cell>.117<\/cell>\n    <cell>[.112, .122]<\/cell>\n    <cell>.097<\/cell>\n    <cell>[.093, .102]<\/cell>\n  <\/row>\n  <row>\n    <cell>Ethiopia<\/cell>\n    <cell>.130<\/cell>\n    <cell>[.126, .136]<\/cell>\n    <cell>.153<\/cell>\n    <cell>[.149, .158]<\/cell>\n  <\/row>\n  <row>\n    <cell>Finland<\/cell>\n    <cell>.072<\/cell>\n    <cell>[.069, .076]<\/cell>\n    <cell>.176<\/cell>\n    <cell>[.171, .185]<\/cell>\n  <\/row>\n  <row>\n    <cell>France<\/cell>\n    <cell>.079<\/cell>\n    <cell>[.075, .085]<\/cell>\n    <cell>.181<\/cell>\n    <cell>[.175, .190]<\/cell>\n  <\/row>\n  <row>\n    <cell>Georgia<\/cell>\n    <cell>.143<\/cell>\n    <cell>[.139, .148]<\/cell>\n    <cell>.143<\/cell>\n    <cell>[.140, .146]<\/cell>\n  <\/row>\n  <row>\n    <cell>Germany<\/cell>\n    <cell>.080<\/cell>\n    <cell>[.078, .084]<\/cell>\n    <cell>.114<\/cell>\n    <cell>[.111, .117]<\/cell>\n  <\/row>\n  <row>\n    <cell>Ghana<\/cell>\n    <cell>.153<\/cell>\n    <cell>[.149, .158]<\/cell>\n    <cell>.172<\/cell>\n    <cell>[.169, .175]<\/cell>\n  <\/row>\n  <row>\n    <cell>Great Britain<\/cell>\n    <cell>.046<\/cell>\n    <cell>[.043, .051]<\/cell>\n    <cell>.172<\/cell>\n    <cell>[.166, .181]<\/cell>\n  <\/row>\n  <row>\n    <cell>Guatemala<\/cell>\n    <cell>.134<\/cell>\n    <cell>[.130, .140]<\/cell>\n    <cell>.192<\/cell>\n    <cell>[.186, .198]<\/cell>\n  <\/row>\n  <row>\n    <cell>Hong Kong<\/cell>\n    <cell>.090<\/cell>\n    <cell>[.088, .095]<\/cell>\n    <cell>.085<\/cell>\n    <cell>[.082, .090]<\/cell>\n  <\/row>\n  <row>\n    <cell>Hungary<\/cell>\n    <cell>.102<\/cell>\n    <cell>[.098, .108]<\/cell>\n    <cell>.125<\/cell>\n    <cell>[.121, .132]<\/cell>\n  <\/row>\n  <row>\n    <cell>India<\/cell>\n    <cell>.093<\/cell>\n    <cell>[.091, .097]<\/cell>\n    <cell>.106<\/cell>\n    <cell>[.104, .110]<\/cell>\n  <\/row>\n  <row>\n    <cell>Indonesia<\/cell>\n    <cell>.178<\/cell>\n    <cell>[.173, .184]<\/cell>\n    <cell>.167<\/cell>\n    <cell>[.163, .171]<\/cell>\n  <\/row>\n  <row>\n    <cell>Iran<\/cell>\n    <cell>.150<\/cell>\n    <cell>[.145, .156]<\/cell>\n    <cell>.125<\/cell>\n    <cell>[.122, .128]<\/cell>\n  <\/row>\n  <row>\n    <cell>Iraq<\/cell>\n    <cell>.162<\/cell>\n    <cell>[.158, .167]<\/cell>\n    <cell>.193<\/cell>\n    <cell>[.189, .197]<\/cell>\n  <\/row>\n  <row>\n    <cell>Italy<\/cell>\n    <cell>.061<\/cell>\n    <cell>[.059, .065]<\/cell>\n    <cell>.163<\/cell>\n    <cell>[.157, .169]<\/cell>\n  <\/row>\n  <row>\n    <cell>Japan<\/cell>\n    <cell>.115<\/cell>\n    <cell>[.112, .119]<\/cell>\n    <cell>.118<\/cell>\n    <cell>[.114, .122]<\/cell>\n  <\/row>\n  <row>\n    <cell>Jordan<\/cell>\n    <cell>.195<\/cell>\n    <cell>[.190, .200]<\/cell>\n    <cell>.193<\/cell>\n    <cell>[.189, .197]<\/cell>\n  <\/row>\n  <row>\n    <cell>Kazakhstan<\/cell>\n    <cell>.107<\/cell>\n    <cell>[.103, .111]<\/cell>\n    <cell>.099<\/cell>\n    <cell>[.095, .104]<\/cell>\n  <\/row>\n  <row>\n    <cell>Kuwait<\/cell>\n    <cell>.122<\/cell>\n    <cell>[.117, .127]<\/cell>\n    <cell>.163<\/cell>\n    <cell>[.157, .169]<\/cell>\n  <\/row>\n  <row>\n    <cell>Kyrgyzstan<\/cell>\n    <cell>.132<\/cell>\n    <cell>[.128, .137]<\/cell>\n    <cell>.161<\/cell>\n    <cell>[.156, .166]<\/cell>\n  <\/row>\n  <row>\n    <cell>Lebanon<\/cell>\n    <cell>.103<\/cell>\n    <cell>[.099, .109]<\/cell>\n    <cell>.175<\/cell>\n    <cell>[.169, .182]<\/cell>\n  <\/row>\n  <row>\n    <cell>Libya<\/cell>\n    <cell>.146<\/cell>\n    <cell>[.142, .151]<\/cell>\n    <cell>.198<\/cell>\n    <cell>[.194, .202]<\/cell>\n  <\/row>\n  <row>\n    <cell>Malaysia<\/cell>\n    <cell>.125<\/cell>\n    <cell>[.121, .129]<\/cell>\n    <cell>.156<\/cell>\n    <cell>[.153, .160]<\/cell>\n  <\/row>\n  <row>\n    <cell>Mali<\/cell>\n    <cell>.155<\/cell>\n    <cell>[.150, .161]<\/cell>\n    <cell>.155<\/cell>\n    <cell>[.151, .160]<\/cell>\n  <\/row>\n  <row>\n    <cell>Mexico<\/cell>\n    <cell>.077<\/cell>\n    <cell>[.074, .080]<\/cell>\n    <cell>.138<\/cell>\n    <cell>[.135, .141]<\/cell>\n  <\/row>\n  <row>\n    <cell>Moldova<\/cell>\n    <cell>.100<\/cell>\n    <cell>[.096, .105]<\/cell>\n    <cell>.133<\/cell>\n    <cell>[.128, .140]<\/cell>\n  <\/row>\n  <row>\n    <cell>Morocco<\/cell>\n    <cell>.149<\/cell>\n    <cell>[.145, .155]<\/cell>\n    <cell>.176<\/cell>\n    <cell>[.172, .180]<\/cell>\n  <\/row>\n  <row>\n    <cell>Netherlands<\/cell>\n    <cell>.079<\/cell>\n    <cell>[.076, .083]<\/cell>\n    <cell>.146<\/cell>\n    <cell>[.142, .150]<\/cell>\n  <\/row>\n  <row>\n    <cell>New Zealand<\/cell>\n    <cell>.053<\/cell>\n    <cell>[.050, .058]<\/cell>\n    <cell>.162<\/cell>\n    <cell>[.156, .168]<\/cell>\n  <\/row>\n  <row>\n    <cell>Nigeria<\/cell>\n    <cell>.130<\/cell>\n    <cell>[.126, .135]<\/cell>\n    <cell>.222<\/cell>\n    <cell>[.217, .227]<\/cell>\n  <\/row>\n  <row>\n    <cell/>\n    <cell/>\n    <cell/>\n    <cell/>\n    <cell>(continued)<\/cell>\n  <\/row>\n<\/table>",
+      "contents": null,
+      "page_number": null
+    },
+    {
+      "table_id": 2,
+      "section_id": 32,
+      "html": "<table>\n  <row>\n    <cell/>\n    <cell/>\n    <cell>American scale<\/cell>\n    <cell/>\n    <cell/>\n    <cell>Chinese scale<\/cell>\n    <cell/>\n  <\/row>\n  <row>\n    <cell>Correlated measure<\/cell>\n    <cell>r<\/cell>\n    <cell>95% CI<\/cell>\n    <cell>df<\/cell>\n    <cell>r<\/cell>\n    <cell>95% CI<\/cell>\n    <cell>df<\/cell>\n  <\/row>\n<\/table>",
+      "contents": null,
+      "page_number": null
+    }
+  ],
+  "eq": [
+    {
+      "text_id": 53,
+      "grp_id": 1,
+      "lhs": "ST",
+      "comp": "=",
+      "rhs": "9.59"
+    },
+    {
+      "text_id": 53,
+      "grp_id": 1,
+      "lhs": "ST",
+      "comp": "=",
+      "rhs": "3.96"
+    },
+    {
+      "text_id": 62,
+      "grp_id": 2,
+      "lhs": "ST",
+      "comp": "=",
+      "rhs": "0"
+    },
+    {
+      "text_id": 63,
+      "grp_id": 3,
+      "lhs": "ST",
+      "comp": "=",
+      "rhs": "1"
+    },
+    {
+      "text_id": 146,
+      "grp_id": 4,
+      "lhs": "rs",
+      "comp": "=",
+      "rhs": ".16-.30"
+    },
+    {
+      "text_id": 225,
+      "grp_id": 5,
+      "lhs": "scores",
+      "comp": "=",
+      "rhs": ".115"
+    },
+    {
+      "text_id": 225,
+      "grp_id": 5,
+      "lhs": "scores",
+      "comp": "=",
+      "rhs": ".186"
+    },
+    {
+      "text_id": 226,
+      "grp_id": 6,
+      "lhs": "score",
+      "comp": "=",
+      "rhs": ".261"
+    },
+    {
+      "text_id": 231,
+      "grp_id": 7,
+      "lhs": "r",
+      "comp": "=",
+      "rhs": ".94"
+    },
+    {
+      "text_id": 231,
+      "grp_id": 7,
+      "lhs": "p",
+      "comp": "<",
+      "rhs": ".001"
+    },
+    {
+      "text_id": 231,
+      "grp_id": 7,
+      "lhs": "r",
+      "comp": "=",
+      "rhs": ".89"
+    },
+    {
+      "text_id": 231,
+      "grp_id": 7,
+      "lhs": "p",
+      "comp": "<",
+      "rhs": ".001"
+    },
+    {
+      "text_id": 231,
+      "grp_id": 7,
+      "lhs": "r",
+      "comp": "=",
+      "rhs": ".86"
+    },
+    {
+      "text_id": 231,
+      "grp_id": 7,
+      "lhs": "p",
+      "comp": "<",
+      "rhs": ".001"
+    },
+    {
+      "text_id": 231,
+      "grp_id": 7,
+      "lhs": "r",
+      "comp": "=",
+      "rhs": ".83"
+    },
+    {
+      "text_id": 231,
+      "grp_id": 7,
+      "lhs": "p",
+      "comp": "<",
+      "rhs": ".001"
+    },
+    {
+      "text_id": 239,
+      "grp_id": 8,
+      "lhs": "ST",
+      "comp": "=",
+      "rhs": ".11"
+    },
+    {
+      "text_id": 240,
+      "grp_id": 9,
+      "lhs": "ST",
+      "comp": "=",
+      "rhs": ".09"
+    },
+    {
+      "text_id": 240,
+      "grp_id": 9,
+      "lhs": "ST",
+      "comp": "=",
+      "rhs": ".05"
+    },
+    {
+      "text_id": 252,
+      "grp_id": 10,
+      "lhs": "rs",
+      "comp": "=",
+      "rhs": ".95"
+    },
+    {
+      "text_id": 252,
+      "grp_id": 10,
+      "lhs": "rs",
+      "comp": "=",
+      "rhs": ".95"
+    },
+    {
+      "text_id": 368,
+      "grp_id": 11,
+      "lhs": "p",
+      "comp": "<",
+      "rhs": ".10"
+    },
+    {
+      "text_id": 368,
+      "grp_id": 11,
+      "lhs": "p",
+      "comp": "<",
+      "rhs": ".05"
+    },
+    {
+      "text_id": 368,
+      "grp_id": 11,
+      "lhs": "p",
+      "comp": "<",
+      "rhs": ".01"
+    },
+    {
+      "text_id": 368,
+      "grp_id": 11,
+      "lhs": "p",
+      "comp": "<",
+      "rhs": ".001"
+    }
+  ]
+}

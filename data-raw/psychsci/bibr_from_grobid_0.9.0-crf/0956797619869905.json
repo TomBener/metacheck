@@ -1,0 +1,5843 @@
+{
+  "paper_id": "0956797619869905",
+  "info": [
+    {
+      "title": "Scenes Modulate Object Processing Before Interacting With Memory Templates",
+      "keywords": ["visual search", "visual attention", "visual memory", "visual perception", "scene perception", "attentional capture", "open data", "open materials"],
+      "doi": "10.1177/0956797619869905",
+      "file_hash": "51e820ca8ce80daa",
+      "input_format": "TEI XML",
+      "file_name": "data-raw/psychsci/grobid_0.9.0-crf/0956797619869905.xml",
+      "bibr_version": "10.0",
+      "paper_type": "unknown",
+      "paper_type_confidence": 0,
+      "oecd_l1": null,
+      "oecd_l2": null,
+      "oecd_confidence": null
+    }
+  ],
+  "author": [
+    {
+      "author_id": 1,
+      "given": "Surya",
+      "family": "Gayet",
+      "affiliation": "",
+      "email": "s.gayet@donders.ru.nl",
+      "corresponding": false,
+      "orcid": "",
+      "role": []
+    },
+    {
+      "author_id": 2,
+      "given": "Marius",
+      "family": "Peelen",
+      "affiliation": "",
+      "email": "",
+      "corresponding": false,
+      "orcid": "",
+      "role": []
+    }
+  ],
+  "text": [
+    {
+      "text_id": 1,
+      "paragraph_id": 1,
+      "section_id": 0,
+      "text": "When searching for relevant objects in our environment (say, an apple), we create a memory template (a red sphere), which causes our visual system to favor template-matching visual input (applelike objects) at the expense of templatemismatching visual input (e.g., leaves).",
+      "page_number": null
+    },
+    {
+      "text_id": 2,
+      "paragraph_id": 1,
+      "section_id": 0,
+      "text": "Although this principle seems straightforward in a lab setting, it poses a problem in naturalistic viewing: Two objects that have the same size on the retina will differ in real-world size if one is nearby and the other is far away.",
+      "page_number": null
+    },
+    {
+      "text_id": 3,
+      "paragraph_id": 1,
+      "section_id": 0,
+      "text": "Using the Ponzo illusion to manipulate perceived size while keeping retinal size constant, we demonstrated across 71 participants that visual objects attract attention when their perceived size matches a memory template, compared with mismatching objects that have the same size on the retina.",
+      "page_number": null
+    },
+    {
+      "text_id": 4,
+      "paragraph_id": 1,
+      "section_id": 0,
+      "text": "This shows that memory templates affect visual selection after object representations are modulated by scene context, thus providing a working mechanism for template-based search in naturalistic vision.",
+      "page_number": null
+    },
+    {
+      "text_id": 5,
+      "paragraph_id": 3,
+      "section_id": 1,
+      "text": "The ability to rapidly detect behaviorally relevant objects within a rich visual environment provides a clear adaptive advantage.",
+      "page_number": null
+    },
+    {
+      "text_id": 6,
+      "paragraph_id": 3,
+      "section_id": 1,
+      "text": "To agents navigating through a complex and dynamic world, the currently relevant object might differ from the objects that were relevant a day ago or even a few seconds ago.",
+      "page_number": null
+    },
+    {
+      "text_id": 7,
+      "paragraph_id": 3,
+      "section_id": 1,
+      "text": "To account for this, nature has equipped human observers with the ability to strategically filter the influx of retinal input in a goal-directed manner (e.g., Desimone & Duncan, 1995).",
+      "page_number": null
+    },
+    {
+      "text_id": 8,
+      "paragraph_id": 3,
+      "section_id": 1,
+      "text": "Extant theories of visual search described this process as follows: When searching for a relevant item (say, an apple) in our visual environment, we maintain a visual template in memory (e.g., a representation of a small circular red object), which causes our visual system to favor template-matching visual input (e.g., apples) at the expense of template-mismatching visual input (e.g., leaves of the apple tree).",
+      "page_number": null
+    },
+    {
+      "text_id": 9,
+      "paragraph_id": 3,
+      "section_id": 1,
+      "text": "This fundamental principle of human vision underlies all major theories of visual search (Desimone & Duncan, 1995;Duncan & Humphreys, 1989;Eimer, 2014;Kastner & Ungerleider, 2001;Wolfe, 1994;Wolfe & Horowitz, 2004).",
+      "page_number": null
+    },
+    {
+      "text_id": 10,
+      "paragraph_id": 4,
+      "section_id": 1,
+      "text": "Although template-based visual selection has been extensively studied in laboratory settings, where objects are presented in isolation, it remains an open question whether this principle generalizes to naturalistic vision outside of the laboratory (Wolfe & Horowitz, 2004;Wolfe, Võ, Evans, & Greene, 2011), where objects are presented in context (Bar, 2004;Oliva & Torralba, 2007).",
+      "page_number": null
+    },
+    {
+      "text_id": 11,
+      "paragraph_id": 5,
+      "section_id": 1,
+      "text": "One key property of naturalistic vision constitutes a particular challenge for template-based visual selection: The image that an object produces on the retina depends on where the object is situated in the real world.",
+      "page_number": null
+    },
+    {
+      "text_id": 12,
+      "paragraph_id": 5,
+      "section_id": 1,
+      "text": "For instance, the light source, viewpoint, and distance of an object in the real world dramatically alter the brightness, color, shape, and size of its image on the retina.",
+      "page_number": null
+    },
+    {
+      "text_id": 13,
+      "paragraph_id": 5,
+      "section_id": 1,
+      "text": "Consequently, the visual system first needs to account for the context in which an object is situated before a concurrent memory template can favor this object over irrelevant visual input.",
+      "page_number": null
+    },
+    {
+      "text_id": 14,
+      "paragraph_id": 5,
+      "section_id": 1,
+      "text": "This would entail, for example, first rescaling the representation of an object to account for viewing distance and then comparing the rescaled representation with a canonically sized memory template.",
+      "page_number": null
+    },
+    {
+      "text_id": 15,
+      "paragraph_id": 5,
+      "section_id": 1,
+      "text": "Alternatively, if this were not the case, observers would need to continuously adjust their memory template to match the retinal image that an object would produce at a given location (e.g., generating smaller templates to search at greater distance).",
+      "page_number": null
+    },
+    {
+      "text_id": 16,
+      "paragraph_id": 5,
+      "section_id": 1,
+      "text": "To the best of our knowledge, it remains unknown whether memory templates impact the visual-processing stream before or after object representations are modulated by their visual context.",
+      "page_number": null
+    },
+    {
+      "text_id": 17,
+      "paragraph_id": 5,
+      "section_id": 1,
+      "text": "Consequently, it remains unknown how template-based visual selection is applicable to naturalistic viewing.",
+      "page_number": null
+    },
+    {
+      "text_id": 18,
+      "paragraph_id": 6,
+      "section_id": 1,
+      "text": "The critical role of context in naturalistic viewing is arguably best exemplified by differences in distance between an object of interest and the observer: Two objects that produce an image of the same size on the retina can be of vastly different sizes in the real world if one is nearby and the other one is farther away.",
+      "page_number": null
+    },
+    {
+      "text_id": 19,
+      "paragraph_id": 6,
+      "section_id": 1,
+      "text": "Human observers rarely mistake a small, nearby object (say, a toy car at a distance of 1 m) for a large object at greater distance (an actual car at a distance of 20 m), despite significant overlap in visual characteristics.",
+      "page_number": null
+    },
+    {
+      "text_id": 20,
+      "paragraph_id": 6,
+      "section_id": 1,
+      "text": "In fact, observers will often fail to detect an object when it produces a retinal image of a size that is incompatible with the object's canonical size at the inferred distance from the observer (Eckstein, Koehler, Welbourne, & Akbas, 2017).",
+      "page_number": null
+    },
+    {
+      "text_id": 21,
+      "paragraph_id": 6,
+      "section_id": 1,
+      "text": "Thus, observers utilize the inferred distance to an object of interest to derive an estimate of the size that this object should produce on the retina.",
+      "page_number": null
+    },
+    {
+      "text_id": 22,
+      "paragraph_id": 6,
+      "section_id": 1,
+      "text": "In addition, differences in inferred distance also strongly affect the perceived size of an object (e.g., Gregory, 1968).",
+      "page_number": null
+    },
+    {
+      "text_id": 23,
+      "paragraph_id": 7,
+      "section_id": 1,
+      "text": "In the current study, we capitalized on a variant of the Ponzo illusion (Ponzo, 1911) to manipulate the perceived size of a visual object by altering its context.",
+      "page_number": null
+    },
+    {
+      "text_id": 24,
+      "paragraph_id": 7,
+      "section_id": 1,
+      "text": "Specifically, we made objects of fixed retinal size appear larger or smaller by positioning them at locations that corresponded to either the near plane or the far plane of a naturalistic scene.",
+      "page_number": null
+    },
+    {
+      "text_id": 25,
+      "paragraph_id": 7,
+      "section_id": 1,
+      "text": "In order to manipulate participants' memory template, we asked participants to concurrently maintain either a smaller or larger version of the object in memory for later recall.",
+      "page_number": null
+    },
+    {
+      "text_id": 26,
+      "paragraph_id": 7,
+      "section_id": 1,
+      "text": "This allowed us to investigate whether visual objects that perceptually match the size of a memory template are favored over mismatching visual objects, even when the competing objects have the same size on the retina.",
+      "page_number": null
+    },
+    {
+      "text_id": 27,
+      "paragraph_id": 8,
+      "section_id": 1,
+      "text": "A visual-probe paradigm was used to assess whether memory templates cause the visual system to systematically favor template-matching over template-mismatching visual objects.",
+      "page_number": null
+    },
+    {
+      "text_id": 28,
+      "paragraph_id": 8,
+      "section_id": 1,
+      "text": "In this paradigm, two competing images are briefly presented (in this case, a template-matching and a template-mismatching visual object) and immediately followed by an unrelated target presented at the location of one of the two competing images.",
+      "page_number": null
+    },
+    {
+      "text_id": 29,
+      "paragraph_id": 8,
+      "section_id": 1,
+      "text": "Better target detection or discrimination performance at the location of one of the two images provides evidence that this image was favored by the visual system (i.e., it captured attention) relative to the competing image (for a similar approach, see Jiang, Costello, Fang, Huang, & He, 2006;Reeder & Peelen, 2013).",
+      "page_number": null
+    },
+    {
+      "text_id": 30,
+      "paragraph_id": 8,
+      "section_id": 1,
+      "text": "In our case, we hypothesized that participants would be faster at reporting the orientation of a target grating if it appeared at the location of the template-matching object (i.e., a distant object when a large item was memorized or a near object when a small item was memorized) than at the location of the templatemismatching object.",
+      "page_number": null
+    },
+    {
+      "text_id": 31,
+      "paragraph_id": 8,
+      "section_id": 1,
+      "text": "This would indicate that the visual system favored visual objects whose perceived size, as inferred from the context, matched the current memory template.",
+      "page_number": null
+    },
+    {
+      "text_id": 32,
+      "paragraph_id": 9,
+      "section_id": 1,
+      "text": "In Experiment 1, we demonstrated that templatematching visual objects are favored over templatemismatching objects, even when the competing objects produce the same retinal image.",
+      "page_number": null
+    },
+    {
+      "text_id": 33,
+      "paragraph_id": 9,
+      "section_id": 1,
+      "text": "This effect was replicated in Experiments 2 and 3, following a power analysis based on the data of Experiment 1.",
+      "page_number": null
+    },
+    {
+      "text_id": 34,
+      "paragraph_id": 9,
+      "section_id": 1,
+      "text": "Additionally, Experiment 2 demonstrated that this effect genuinely relies on the perception of depth induced by the scenes, as the effect was not observed with control scenes that did not induce a perception of depth.",
+      "page_number": null
+    },
+    {
+      "text_id": 35,
+      "paragraph_id": 9,
+      "section_id": 1,
+      "text": "Moreover, the effect correlated with the degree to which individual scenes induced a size illusion for a given participant.",
+      "page_number": null
+    },
+    {
+      "text_id": 36,
+      "paragraph_id": 9,
+      "section_id": 1,
+      "text": "Finally, Experiment 3 confirmed that attentional resources are allocated to template-matching objects automatically (i.e., through involuntary capture of attention) rather than strategically.",
+      "page_number": null
+    },
+    {
+      "text_id": 37,
+      "paragraph_id": 13,
+      "section_id": 3,
+      "text": "Participants were gathered via the Radboud University online recruitment system (Sona Systems) and were compensated with course credit or monetary reward.",
+      "page_number": null
+    },
+    {
+      "text_id": 38,
+      "paragraph_id": 13,
+      "section_id": 3,
+      "text": "All participants had normal or corrected-to-normal vision, were no older than 30 years of age, and provided written informed consent prior to participation.",
+      "page_number": null
+    },
+    {
+      "text_id": 39,
+      "paragraph_id": 13,
+      "section_id": 3,
+      "text": "The study was approved by the Faculty of Social Sciences Ethics Committee (ECSW2017-2306-517).",
+      "page_number": null
+    },
+    {
+      "text_id": 40,
+      "paragraph_id": 14,
+      "section_id": 3,
+      "text": "In Experiment 1, we collected data until 20 participants met our inclusion criteria (2 participants were replaced, following the exclusion criteria described in the Data Selection and Preparation section).",
+      "page_number": null
+    },
+    {
+      "text_id": 41,
+      "paragraph_id": 14,
+      "section_id": 3,
+      "text": "Because of the exploratory nature of this first experiment, the sample size was based on data from earlier studies in which the influence of color (rather than size) templates on attentional capture was investigated (e.g., Olivers, Meijer, & Theeuwes, 2006;van Moorselaar, Theeuwes, & Olivers, 2014).",
+      "page_number": null
+    },
+    {
+      "text_id": 42,
+      "paragraph_id": 14,
+      "section_id": 3,
+      "text": "The final participant group had an average age of 24.2 years (SD = 3.7), and 8 of the participants were male.",
+      "page_number": null
+    },
+    {
+      "text_id": 43,
+      "paragraph_id": 15,
+      "section_id": 3,
+      "text": "For Experiment 2, the sample size was determined through a power analysis based on the data of Experiment 1.",
+      "page_number": null
+    },
+    {
+      "text_id": 44,
+      "paragraph_id": 15,
+      "section_id": 3,
+      "text": "This analysis revealed that a sample size of 25 participants was required to obtain 80% power to detect a difference in response times (RTs) between templatematching trials and template-mismatching trials at least as large as the one observed in Experiment 1, on the basis of a simple t contrast.",
+      "page_number": null
+    },
+    {
+      "text_id": 45,
+      "paragraph_id": 15,
+      "section_id": 3,
+      "text": "Thus, data acquisition in Experiment 2 continued until 26 participants met our inclusion criteria, 13 in each counterbalancing condition (5 participants were replaced).",
+      "page_number": null
+    },
+    {
+      "text_id": 46,
+      "paragraph_id": 15,
+      "section_id": 3,
+      "text": "The final pool of participants had an average age of 21.7 years (SD = 2.8), and 6 of the participants were male.",
+      "page_number": null
+    },
+    {
+      "text_id": 47,
+      "paragraph_id": 16,
+      "section_id": 3,
+      "text": "On the basis of the same power analysis, we continued data acquisition for Experiment 3 until 25 participants met our inclusion criteria (3 participants were replaced).",
+      "page_number": null
+    },
+    {
+      "text_id": 48,
+      "paragraph_id": 16,
+      "section_id": 3,
+      "text": "Nine of the participants in the final pool of participants were male, and their average age was 23.2 years (SD = 3.6).",
+      "page_number": null
+    },
+    {
+      "text_id": 49,
+      "paragraph_id": 18,
+      "section_id": 4,
+      "text": "Experiment 1.",
+      "page_number": null
+    },
+    {
+      "text_id": 50,
+      "paragraph_id": 18,
+      "section_id": 4,
+      "text": "Experiment 1 consisted of two parts.",
+      "page_number": null
+    },
+    {
+      "text_id": 51,
+      "paragraph_id": 18,
+      "section_id": 4,
+      "text": "The first part (the main experiment) was designed to investigate whether template-matching visual objects are favored over template-mismatching visual objects.",
+      "page_number": null
+    },
+    {
+      "text_id": 52,
+      "paragraph_id": 18,
+      "section_id": 4,
+      "text": "Before participating in four blocks of 32 trials each (128 trials in total, or 64 per condition of interest), participants viewed a step-by-step demonstration of the trial sequence and performed 20 practice trials.",
+      "page_number": null
+    },
+    {
+      "text_id": 53,
+      "paragraph_id": 19,
+      "section_id": 4,
+      "text": "Each trial (illustrated in Fig. 1b) started with a 1-s fixation interval.",
+      "page_number": null
+    },
+    {
+      "text_id": 54,
+      "paragraph_id": 19,
+      "section_id": 4,
+      "text": "Next, a relatively large visual object was presented at fixation, followed by a relatively small visual object (or vice versa) and then a retrospective cue indicating which of the two object sizes should be memorized for later recall (a \"1\" or \"2\" instructed participants to memorize the first or second object, respectively).",
+      "page_number": null
+    },
+    {
+      "text_id": 55,
+      "paragraph_id": 19,
+      "section_id": 4,
+      "text": "During the retention period, a scene comprising two intermediate-sized versions of the same object was presented for 150 ms (1.5 s to 2 s after the cue).",
+      "page_number": null
+    },
+    {
+      "text_id": 56,
+      "paragraph_id": 19,
+      "section_id": 4,
+      "text": "One of these objects was presented above fixation (corresponding to a \"distant\" location), and one was presented below fixation (corresponding to a \"nearby\" location), at a vertical distance of 2.1° of visual angle.",
+      "page_number": null
+    },
+    {
+      "text_id": 57,
+      "paragraph_id": 19,
+      "section_id": 4,
+      "text": "Importantly, the distant object would appear larger than the nearby object, despite being identical in retinal size.",
+      "page_number": null
+    },
+    {
+      "text_id": 58,
+      "paragraph_id": 19,
+      "section_id": 4,
+      "text": "Participants were instructed that these task-irrelevant scenes could be ignored but that they would be followed shortly by a task-relevant target.",
+      "page_number": null
+    },
+    {
+      "text_id": 59,
+      "paragraph_id": 19,
+      "section_id": 4,
+      "text": "After 100 ms, a small target grating was briefly presented (at 0.8° of visual angle; 100 ms) at the same location as one of the two previously presented objects.",
+      "page_number": null
+    },
+    {
+      "text_id": 60,
+      "paragraph_id": 19,
+      "section_id": 4,
+      "text": "The grating was tilted 10° clockwise or counterclockwise from the vertical midline, and participants were instructed to report its tilt as quickly and accurately as possible.",
+      "page_number": null
+    },
+    {
+      "text_id": 61,
+      "paragraph_id": 19,
+      "section_id": 4,
+      "text": "After they provided their response, participants were presented with a randomly sized variant of the memorized object, which they were required to adjust until it matched the exact size of the memorized object.",
+      "page_number": null
+    },
+    {
+      "text_id": 62,
+      "paragraph_id": 19,
+      "section_id": 4,
+      "text": "This task was not speeded, and participants received feedback on their accuracy after each response: a green (< 15% error), orange (< 28.5% error), or red (> 28.5% error) outline of the correct size was displayed on top of the reported size.",
+      "page_number": null
+    },
+    {
+      "text_id": 63,
+      "paragraph_id": 19,
+      "section_id": 4,
+      "text": "At the end of each block, participants received feedback on their average accuracy on the memoryrecall task, as well as on their average RT and accuracy on the orientation-discrimination task.",
+      "page_number": null
+    },
+    {
+      "text_id": 64,
+      "paragraph_id": 20,
+      "section_id": 4,
+      "text": "The second part (the size-illusion measurement) was designed to assess whether our stimuli successfully elicited a size illusion, that is, visual objects presented far away appeared larger than the same visual objects presented nearby.",
+      "page_number": null
+    },
+    {
+      "text_id": 65,
+      "paragraph_id": 20,
+      "section_id": 4,
+      "text": "Participants performed two blocks of 32 trials, or 64 trials in total (32 per distance condition).",
+      "page_number": null
+    },
+    {
+      "text_id": 66,
+      "paragraph_id": 20,
+      "section_id": 4,
+      "text": "Each trial (illustrated in Fig. 1a) started with a 1-s fixation interval.",
+      "page_number": null
+    },
+    {
+      "text_id": 67,
+      "paragraph_id": 20,
+      "section_id": 4,
+      "text": "Next, 1 of 16 possible scenes was briefly presented with either a near or a distant object.",
+      "page_number": null
+    },
+    {
+      "text_id": 68,
+      "paragraph_id": 20,
+      "section_id": 4,
+      "text": "After a 1-s delay, that same object (but of a random size) was displayed in isolation at fixation, and participants were asked to rescale it until it matched the size (in pixels) of the visual object that had just been presented in the scene.",
+      "page_number": null
+    },
+    {
+      "text_id": 69,
+      "paragraph_id": 20,
+      "section_id": 4,
+      "text": "No feedback was provided.",
+      "page_number": null
+    },
+    {
+      "text_id": 70,
+      "paragraph_id": 20,
+      "section_id": 4,
+      "text": "All stimulus properties (e.g., timing, stimulus sizes) were identical to those in the main experiment.",
+      "page_number": null
+    },
+    {
+      "text_id": 71,
+      "paragraph_id": 21,
+      "section_id": 4,
+      "text": "Experiment 2.",
+      "page_number": null
+    },
+    {
+      "text_id": 72,
+      "paragraph_id": 21,
+      "section_id": 4,
+      "text": "Experiment 2 was identical to Experiment 1, except that participants now participated in two experimental sessions on separate days (the order of which was counterbalanced across participants).",
+      "page_number": null
+    },
+    {
+      "text_id": 73,
+      "paragraph_id": 21,
+      "section_id": 4,
+      "text": "One of these sessions was a direct replica of Experiment 1, and in the other session, the depth-inducing scenes were replaced with \"flat\" control scenes, which we expected would not differentially affect the perceived size of the top and bottom objects (Fig. 1d).",
+      "page_number": null
+    },
+    {
+      "text_id": 74,
+      "paragraph_id": 22,
+      "section_id": 4,
+      "text": "Experiment 3.",
+      "page_number": null
+    },
+    {
+      "text_id": 75,
+      "paragraph_id": 22,
+      "section_id": 4,
+      "text": "The main experiment of Experiment 3 was identical to that of Experiment 1, except that participants now performed either the memory-recall task or the orientation-discrimination task on any given trial but never both (see Fig.",
+      "page_number": null
+    },
+    {
+      "text_id": 76,
+      "paragraph_id": 22,
+      "section_id": 4,
+      "text": "2).",
+      "page_number": null
+    },
+    {
+      "text_id": 77,
+      "paragraph_id": 22,
+      "section_id": 4,
+      "text": "Critically, the two trial types were intermixed to incite participants to memorize the retrospectively cued object on each trial.",
+      "page_number": null
+    },
+    {
+      "text_id": 78,
+      "paragraph_id": 22,
+      "section_id": 4,
+      "text": "Finally, there was no size-illusion measurement in Experiment 3.",
+      "page_number": null
+    },
+    {
+      "text_id": 79,
+      "paragraph_id": 24,
+      "section_id": 5,
+      "text": "Sixteen different naturalistic scenes were retrieved via Google image search and cropped to a height of 6.3° of visual angle and a width of 14°.",
+      "page_number": null
+    },
+    {
+      "text_id": 80,
+      "paragraph_id": 24,
+      "section_id": 5,
+      "text": "These scenes were On each trial of the size-illusion measurement (a), an object was presented either nearby or far away in a scene, after which participants were asked to reproduce the size of the object by up-or downscaling a test object.",
+      "page_number": null
+    },
+    {
+      "text_id": 81,
+      "paragraph_id": 24,
+      "section_id": 5,
+      "text": "In the main experiment (b), participants were retrospectively cued to memorize the exact size of the first or second object they had seen for subsequent recall.",
+      "page_number": null
+    },
+    {
+      "text_id": 82,
+      "paragraph_id": 24,
+      "section_id": 5,
+      "text": "During the retention interval, participants performed a speeded orientationdiscrimination task on a target grating that appeared at a location that was preceded by either a template-matching visual object (e.g., a perceptually large object when a large object had been memorized; shown here) or a template-mismatching visual object (e.g., a perceptually large object when a small object had been memorized; not shown).",
+      "page_number": null
+    },
+    {
+      "text_id": 83,
+      "paragraph_id": 24,
+      "section_id": 5,
+      "text": "The same visual stimulation led to matching and mismatching trials (c): Depending on whether the large or small object was memorized, either the nearby or the distant object matched the template (and gratings presented at that object's location were hypothesized to yield faster response times).",
+      "page_number": null
+    },
+    {
+      "text_id": 84,
+      "paragraph_id": 24,
+      "section_id": 5,
+      "text": "In Experiment 2, a condition was included with scenes that should not induce a size illusion (no-depth control condition; d provides one example).",
+      "page_number": null
+    },
+    {
+      "text_id": 85,
+      "paragraph_id": 25,
+      "section_id": 5,
+      "text": "images of roads, paths, runways, or train tracks, which were selected (and pilot tested) to induce a sense of depth (Fig. 1a).",
+      "page_number": null
+    },
+    {
+      "text_id": 86,
+      "paragraph_id": 25,
+      "section_id": 5,
+      "text": "The upper part of the image depicted a location that was farther away from the viewer than the lower part of the image.",
+      "page_number": null
+    },
+    {
+      "text_id": 87,
+      "paragraph_id": 25,
+      "section_id": 5,
+      "text": "Experiment 2 included 16 additional natural scenes, also retrieved from Google image search, for a separate control condition.",
+      "page_number": null
+    },
+    {
+      "text_id": 88,
+      "paragraph_id": 25,
+      "section_id": 5,
+      "text": "These scenes featured walls, hedges, buildings, cliffs, and similar images, and the upper part of the image did not depict a location farther away from the viewer than the lower part of the image (Fig. 1d).",
+      "page_number": null
+    },
+    {
+      "text_id": 89,
+      "paragraph_id": 26,
+      "section_id": 5,
+      "text": "The visual objects presented in the scenes, and presented in isolation for the memory task, consisted of 40 different visual objects created in the GNU Image Manipulation Program (https://www.gimp.org)-either cubes or spheres, with 1 of 20 different textures (see Figs. 1a, 1b, and 1d for different examples of objects).",
+      "page_number": null
+    },
+    {
+      "text_id": 90,
+      "paragraph_id": 27,
+      "section_id": 5,
+      "text": "To keep the memory task challenging, we varied the sizes of the visual objects throughout the experiment.",
+      "page_number": null
+    },
+    {
+      "text_id": 91,
+      "paragraph_id": 27,
+      "section_id": 5,
+      "text": "The eventual object sizes were obtained by multiplying the native size of the visual object ( 0.7° × 0.7° of visual angle) by predetermined factors.",
+      "page_number": null
+    },
+    {
+      "text_id": 92,
+      "paragraph_id": 27,
+      "section_id": 5,
+      "text": "First, on each trial, 1 Memorize Cued Object (First or Second) Report Grating Orientation Memory Item 1: 0.8 s Blank: 0.8 s Memory Item 2: 0.8 s Blank: 0.8 s Retrospective Cue: 0.8 s Scene: 0.15 s Blank: 0.1 s Target Grating: 0.1 s Blank: 0.8 s Recall Task: Until Response Feedback & Intertrial Time: 1 s + 1 s Blank: 1.5-3 s Task A: Memory Recall Task B: Orientation Discrimination Trials in Experiment 3 were identical to those in Experiments 1 and 2, with one crucial distinction: On each trial, after participants were cued to memorize the size of the large or small object, they performed either the memory task or the orientation-discrimination task but never both.",
+      "page_number": null
+    },
+    {
+      "text_id": 93,
+      "paragraph_id": 27,
+      "section_id": 5,
+      "text": "The two trial types were intermixed.",
+      "page_number": null
+    },
+    {
+      "text_id": 94,
+      "paragraph_id": 27,
+      "section_id": 5,
+      "text": "This adaptation allowed us to ensure that participants would not strategically allocate more attentional resources to one of the objects in the scene in the belief that this would help them for the ensuing memory-recall task. of 20 possible base object sizes was drawn, ranging from 15% smaller to 15% larger than the native object.",
+      "page_number": null
+    },
+    {
+      "text_id": 95,
+      "paragraph_id": 27,
+      "section_id": 5,
+      "text": "The competing visual objects within the scenes were always of this base object size.",
+      "page_number": null
+    },
+    {
+      "text_id": 96,
+      "paragraph_id": 27,
+      "section_id": 5,
+      "text": "To obtain the small and large objects for the memory task, we decreased and increased the base object size by 28.5%; in addition, we applied 1 of 10 possible size variations ranging from 8% smaller to 8% larger than the resulting size.",
+      "page_number": null
+    },
+    {
+      "text_id": 97,
+      "paragraph_id": 27,
+      "section_id": 5,
+      "text": "The same size variation was applied to the cued (i.e., to be memorized) and the noncued (i.e., to be discarded) objects of the memory task.",
+      "page_number": null
+    },
+    {
+      "text_id": 98,
+      "paragraph_id": 28,
+      "section_id": 5,
+      "text": "Participants provided a speeded report of the orientation of a target stimulus.",
+      "page_number": null
+    },
+    {
+      "text_id": 99,
+      "paragraph_id": 28,
+      "section_id": 5,
+      "text": "This target stimulus was a gray-scale sine-wave grating (with the same mean luminance as the gray background), which was rotated 10° clockwise or 10° counterclockwise from the vertical midline.",
+      "page_number": null
+    },
+    {
+      "text_id": 100,
+      "paragraph_id": 28,
+      "section_id": 5,
+      "text": "More details on the stimuli and the experimental setup are provided in the Supplemental Material available online (see Section S5).",
+      "page_number": null
+    },
+    {
+      "text_id": 101,
+      "paragraph_id": 30,
+      "section_id": 6,
+      "text": "In the main experiment, there was one dependent variable (RT to the target grating) and one factor of interest: congruence (i.e., whether the target grating appeared at the location of the template-matching or templatemismatching visual object; Fig. 1c).",
+      "page_number": null
+    },
+    {
+      "text_id": 102,
+      "paragraph_id": 30,
+      "section_id": 6,
+      "text": "Three additional factors were also fully counterbalanced within each of the four experimental blocks: template size (participants memorized either the large or the small object), retrospective cue (participants memorized either the first or the second object), and grating orientation (the target grating was tilted 10° clockwise or counterclockwise from the vertical midline).",
+      "page_number": null
+    },
+    {
+      "text_id": 103,
+      "paragraph_id": 30,
+      "section_id": 6,
+      "text": "Each specific combination of these counterbalanced conditions was repeated twice within each block and presented in randomized order.",
+      "page_number": null
+    },
+    {
+      "text_id": 104,
+      "paragraph_id": 30,
+      "section_id": 6,
+      "text": "In addition, a number of factors were not counterbalanced, but their prevalence was optimally equated between blocks, and they were presented in random order.",
+      "page_number": null
+    },
+    {
+      "text_id": 105,
+      "paragraph_id": 30,
+      "section_id": 6,
+      "text": "This included the 16 different scenes, two different object shapes (cube or sphere), 20 different object textures, 20 different base object sizes, 20 different size variations for the to-be-memorized objects, 10 horizontal positions for the objects in the scene, and 32 different initial sizes for the test object in the recall phase.",
+      "page_number": null
+    },
+    {
+      "text_id": 106,
+      "paragraph_id": 31,
+      "section_id": 6,
+      "text": "In the size-illusion measurement, there was also one dependent variable (reported object size) and one factor of interest: distance (whether the visual object was distant or nearby).",
+      "page_number": null
+    },
+    {
+      "text_id": 107,
+      "paragraph_id": 31,
+      "section_id": 6,
+      "text": "Two additional factors were also fully counterbalanced: the scene (16 variations) and the object shape (cube or sphere).",
+      "page_number": null
+    },
+    {
+      "text_id": 108,
+      "paragraph_id": 31,
+      "section_id": 6,
+      "text": "Each specific combination of these counterbalanced conditions was repeated once within the entire 64-trial size-illusion measurement, and the combinations were presented in randomized order.",
+      "page_number": null
+    },
+    {
+      "text_id": 109,
+      "paragraph_id": 31,
+      "section_id": 6,
+      "text": "A number of additional factors were not counterbalanced, but their prevalence was optimally equated: 20 different object textures, 16 different object sizes, 10 horizontal positions for the objects in the scene, and 32 different initial sizes for the test object in the recall phase.",
+      "page_number": null
+    },
+    {
+      "text_id": 110,
+      "paragraph_id": 31,
+      "section_id": 6,
+      "text": "(Table S1 in the Supplemental Material provides an overview of all experimental factors in our design.)",
+      "page_number": null
+    },
+    {
+      "text_id": 111,
+      "paragraph_id": 33,
+      "section_id": 7,
+      "text": "Participants were excluded from further analysis if they performed at chance on either the orientation-report task (i.e., not better than 50% correct, as determined with a one-sided t test) or on the memory-recall task (i.e., size error not below 28.5%, as determined with a one-sided t test) of the main experiment.",
+      "page_number": null
+    },
+    {
+      "text_id": 112,
+      "paragraph_id": 33,
+      "section_id": 7,
+      "text": "The threshold of 28.5% reflects the minimally required recall precision for distinguishing between the sizes of the cued (i.e., to-be-memorized) and uncued (i.e., to-be-discarded) objects in the memory task, whose size differed by 57%.",
+      "page_number": null
+    },
+    {
+      "text_id": 113,
+      "paragraph_id": 33,
+      "section_id": 7,
+      "text": "Errors beyond 28.5% thus reflect a category error (i.e., the wrong size category was memorized).",
+      "page_number": null
+    },
+    {
+      "text_id": 114,
+      "paragraph_id": 34,
+      "section_id": 7,
+      "text": "In the main experiment, RTs to the target grating were excluded from further analysis (a) if the orientation of the target grating was incorrectly reported, (b) if the response was more than 3 standard deviations from that participant's mean RT within a condition of interest (reflecting lapses or anticipatory responses), and (c) if the size-judgment error on the recall task was 28.5% or more (reflecting a failure to memorize the cued object size).",
+      "page_number": null
+    },
+    {
+      "text_id": 115,
+      "paragraph_id": 34,
+      "section_id": 7,
+      "text": "In the size-illusion measurement, difference fractions between the veridical and the reported error size were excluded from further analysis if they were more than 3 standard deviations from the participant average for that particular condition of interest.",
+      "page_number": null
+    },
+    {
+      "text_id": 116,
+      "paragraph_id": 34,
+      "section_id": 7,
+      "text": "Data inclusion and participant inclusion are covered in detail in Sections S2.1 (Experiment 1), S3.1 (Experiment 2), and S4.1 (Experiment 3) in the Supplemental Material.",
+      "page_number": null
+    },
+    {
+      "text_id": 117,
+      "paragraph_id": 35,
+      "section_id": 7,
+      "text": "In the main experiment, each size error (S E ) was computed as the unsigned size difference-in percentage-between the reported size (S R ) and the veridical size (S V ), using the equation S",
+      "page_number": null
+    },
+    {
+      "text_id": 118,
+      "paragraph_id": 36,
+      "section_id": 7,
+      "text": "Hence, low values (close to zero) reflect small size-recall errors in the memory-recall task, and high values reflect large size-recall errors in the memory-recall task.",
+      "page_number": null
+    },
+    {
+      "text_id": 119,
+      "paragraph_id": 36,
+      "section_id": 7,
+      "text": "In the sizeillusion measurement, participants' size judgments (S J s) were obtained by expressing the reported object size (S R ) as a percentage of the veridical object size (S V ), using the equation S S S S J R V V = + -100 1 × ( ) .",
+      "page_number": null
+    },
+    {
+      "text_id": 120,
+      "paragraph_id": 36,
+      "section_id": 7,
+      "text": "Hence, a percentage above 100% reflects an overestimation of the object size, and a percentage below 100% reflects an underestimation of the object size.",
+      "page_number": null
+    },
+    {
+      "text_id": 121,
+      "paragraph_id": 38,
+      "section_id": 8,
+      "text": "The relatively large fraction of excluded trials in the main experiments of Experiment 1 (18.8%) and Experiment 2 (13.4%) jeopardized the balancing of observations across experimental conditions.",
+      "page_number": null
+    },
+    {
+      "text_id": 122,
+      "paragraph_id": 38,
+      "section_id": 8,
+      "text": "Therefore, we tested our hypotheses using linear mixed-effects models (LMEMs), which circumvent this issue, as they allow for including all individual data points rather than relying on point estimates per condition (Baayen, Davidson, & Bates, 2008;Magezi, 2015).",
+      "page_number": null
+    },
+    {
+      "text_id": 123,
+      "paragraph_id": 38,
+      "section_id": 8,
+      "text": "Because many different LMEMs can be devised for analyzing the same data set, we first compared the potency of an exhaustive range of models (i.e., including all possible combinations of main effects and interaction terms) in describing the observed data.",
+      "page_number": null
+    },
+    {
+      "text_id": 124,
+      "paragraph_id": 38,
+      "section_id": 8,
+      "text": "Models were compared using Akaike information criterion (AIC) values, which penalize for the addition of factors (Akaike, 1981;Bozdogan, 1987; see Table S1).",
+      "page_number": null
+    },
+    {
+      "text_id": 125,
+      "paragraph_id": 38,
+      "section_id": 8,
+      "text": "In the Results section, we report statistical tests for the factors included in the best-fitting model to assess whether or not they significantly contributed to describing the observed data.",
+      "page_number": null
+    },
+    {
+      "text_id": 126,
+      "paragraph_id": 38,
+      "section_id": 8,
+      "text": "We also report 95% confidence intervals (CIs) for each of these statistical tests; when the interval includes 0, no variance was reliably explained by the factor that was tested.",
+      "page_number": null
+    },
+    {
+      "text_id": 127,
+      "paragraph_id": 38,
+      "section_id": 8,
+      "text": "In the Supplemental Material (Sections S6, S7, and S8 for Experiments 1, 2, and 3, respectively), we provide converging evidence from traditional repeated measures analyses of variance (ANOVAs) and Student's t tests (including standardized effect sizes) to facilitate comparison with existing studies.",
+      "page_number": null
+    },
+    {
+      "text_id": 128,
+      "paragraph_id": 42,
+      "section_id": 10,
+      "text": "Size-illusion measurement.",
+      "page_number": null
+    },
+    {
+      "text_id": 129,
+      "paragraph_id": 42,
+      "section_id": 10,
+      "text": "First, we aimed to establish whether the scenes and objects used in this experiment induced a size illusion, whereby distant objects were perceived as larger than nearby objects.",
+      "page_number": null
+    },
+    {
+      "text_id": 130,
+      "paragraph_id": 42,
+      "section_id": 10,
+      "text": "The LMEM that best described the observed data contained fixed effects for distance and an interaction between distance and shape, along with random effects for object size and participant (see Table S1).",
+      "page_number": null
+    },
+    {
+      "text_id": 131,
+      "paragraph_id": 42,
+      "section_id": 10,
+      "text": "According to this model, distant objects were reported as 19.3% larger (95% CI = [13.7%, 24.9%]) than nearby objects, t(1257) = 6.75, p < .001.",
+      "page_number": null
+    },
+    {
+      "text_id": 132,
+      "paragraph_id": 42,
+      "section_id": 10,
+      "text": "An interaction between distance and shape reflected that this effect was slightly more pronounced for cubes than for spheres, t(1257) = 2.06, p = .039, 95% CI for the fixed-effect coefficient = [0.2%, 7.6%].",
+      "page_number": null
+    },
+    {
+      "text_id": 133,
+      "paragraph_id": 42,
+      "section_id": 10,
+      "text": "The effect of distance on reported object size (Fig. 3a) was corroborated by a traditional repeated measures ANOVA and was consistently observed across different object sizes, object shapes, and scenes (see Section S6.1 in the Supplemental Material).",
+      "page_number": null
+    },
+    {
+      "text_id": 134,
+      "paragraph_id": 42,
+      "section_id": 10,
+      "text": "Thus, the stimuli employed in Experiment 1 allowed for manipulating the perceived size of physically identical visual objects.",
+      "page_number": null
+    },
+    {
+      "text_id": 135,
+      "paragraph_id": 42,
+      "section_id": 10,
+      "text": "Main experiment.",
+      "page_number": null
+    },
+    {
+      "text_id": 136,
+      "paragraph_id": 42,
+      "section_id": 10,
+      "text": "Next, we addressed the main research question of whether memory templates favor perceptually matching relative to perceptually mismatching visual objects, even when the competing objects are physically identical.",
+      "page_number": null
+    },
+    {
+      "text_id": 137,
+      "paragraph_id": 42,
+      "section_id": 10,
+      "text": "The LMEM that best described the observed data contained fixed effects for congruence and for the interaction between congruence and template size, and a random effect for participant (see Table S1).",
+      "page_number": null
+    },
+    {
+      "text_id": 138,
+      "paragraph_id": 42,
+      "section_id": 10,
+      "text": "According to this best-fitting model, participants were 17 ms faster (95% CI = [6 ms, 27 ms]) at reporting the orientation of a target grating when it was presented at the location of a template-matching visual object (mean from model fit = 528 ms) compared with a template-mismatching visual object (544 ms), as reflected by a significant effect of congruence, t(2077) = 3.04, p = .002 (see Fig. 3b).",
+      "page_number": null
+    },
+    {
+      "text_id": 139,
+      "paragraph_id": 42,
+      "section_id": 10,
+      "text": "A significant interaction between congruence and template size reflected that the congruence effect was slightly larger when participants memorized the larger of the two presented objects, t(2077) = 1.99, p = .046, 95% CI for the fixed-effect coefficient = [0 ms, 24 ms].",
+      "page_number": null
+    },
+    {
+      "text_id": 140,
+      "paragraph_id": 42,
+      "section_id": 10,
+      "text": "The main effect of congruence was corroborated by a traditional repeated measures ANOVA (see Section S6.2 in the Supplemental Material).",
+      "page_number": null
+    },
+    {
+      "text_id": 141,
+      "paragraph_id": 42,
+      "section_id": 10,
+      "text": "Taken together, these data support the hypothesis that the visual system favors objects that perceptually match the size of a concurrent memory template, even when the competing objects are physically identical.",
+      "page_number": null
+    },
+    {
+      "text_id": 142,
+      "paragraph_id": 43,
+      "section_id": 10,
+      "text": "When reporting the orientation of a target grating, participants were 93.6% accurate (SD = 5.4) when the grating appeared at the location of a template-matching object and 94.7% accurate (SD = 4.4) when it appeared at the location of a template-mismatching object.",
+      "page_number": null
+    },
+    {
+      "text_id": 143,
+      "paragraph_id": 43,
+      "section_id": 10,
+      "text": "Unlike RT, accuracy did not significantly differ between these two conditions, t(19) = -1.55, p = .137, suggesting that the increase in performance at the location of the template-matching object was RT specific.",
+      "page_number": null
+    },
+    {
+      "text_id": 144,
+      "paragraph_id": 43,
+      "section_id": 10,
+      "text": "At the same time, these data provide no evidence for the existence of a speed/accuracy trade-off.",
+      "page_number": null
+    },
+    {
+      "text_id": 145,
+      "paragraph_id": 43,
+      "section_id": 10,
+      "text": "Note that t tests were conducted on participant means because the trial-based LMEM approach used for the RT data could not be trivially applied to the binary accuracy measure (for comparison, the same analysis approach was applied to the RT data in the Supplemental Material; see Section S6.2).",
+      "page_number": null
+    },
+    {
+      "text_id": 146,
+      "paragraph_id": 43,
+      "section_id": 10,
+      "text": "On average, the reported object size differed 15.1% (SD = 3.4) from the actual size of the object that had to be memorized.",
+      "page_number": null
+    },
+    {
+      "text_id": 147,
+      "paragraph_id": 45,
+      "section_id": 11,
+      "text": "Rationale and prediction.",
+      "page_number": null
+    },
+    {
+      "text_id": 148,
+      "paragraph_id": 45,
+      "section_id": 11,
+      "text": "The purpose of Experiment 2 was twofold.",
+      "page_number": null
+    },
+    {
+      "text_id": 149,
+      "paragraph_id": 45,
+      "section_id": 11,
+      "text": "First, we aimed to replicate the findings of Experiment 1, basing our sample size on the effect size obtained in Experiment 1 and following the exact same preprocessing and analysis pipeline.",
+      "page_number": null
+    },
+    {
+      "text_id": 150,
+      "paragraph_id": 45,
+      "section_id": 11,
+      "text": "Second, we aimed to address an alternative explanation of the pattern of results observed in Experiment 1.",
+      "page_number": null
+    },
+    {
+      "text_id": 151,
+      "paragraph_id": 45,
+      "section_id": 11,
+      "text": "In Experiment 1, the perceptually large object in the scene was always presented above fixation, and the perceptually small object was always presented below fixation.",
+      "page_number": null
+    },
+    {
+      "text_id": 152,
+      "paragraph_id": 45,
+      "section_id": 11,
+      "text": "Consequently, the results of Experiment 1 could also simply reflect that maintaining a large object in memory biases perception toward the upper visual field, whereas maintaining a small object in memory biases perception toward the lower visual field.",
+      "page_number": null
+    },
+    {
+      "text_id": 153,
+      "paragraph_id": 45,
+      "section_id": 11,
+      "text": "To test this possibility, we included an additional condition with scenes that should not induce a size illusion.",
+      "page_number": null
+    },
+    {
+      "text_id": 154,
+      "paragraph_id": 45,
+      "section_id": 11,
+      "text": "We expected that the results of Experiment 1 would be replicated when depth-inducing scenes were presented but not when no-depth control scenes were presented.",
+      "page_number": null
+    },
+    {
+      "text_id": 155,
+      "paragraph_id": 47,
+      "section_id": 12,
+      "text": "The data from Experiment 2 were analyzed using the LMEMs that best described the data in Experiment 1.",
+      "page_number": null
+    },
+    {
+      "text_id": 156,
+      "paragraph_id": 47,
+      "section_id": 12,
+      "text": "By taking this approach, we ensured that the initial model selection was hypothesis free (i.e., datadriven) and that the statistical tests in Experiment 2 were confirmatory rather than exploratory.",
+      "page_number": null
+    },
+    {
+      "text_id": 157,
+      "paragraph_id": 47,
+      "section_id": 12,
+      "text": "The present findings were corroborated by performing model comparisons on the data of Experiment 2 (see Sections S3.2 and S3.3 in the Supplemental Material).",
+      "page_number": null
+    },
+    {
+      "text_id": 158,
+      "paragraph_id": 48,
+      "section_id": 12,
+      "text": "Size-illusion measurement.",
+      "page_number": null
+    },
+    {
+      "text_id": 159,
+      "paragraph_id": 48,
+      "section_id": 12,
+      "text": "Before addressing the main research question, we needed to establish that, in contrast to the depth-inducing scenes, the no-depth control scenes did not induce a size illusion.",
+      "page_number": null
+    },
+    {
+      "text_id": 160,
+      "paragraph_id": 48,
+      "section_id": 12,
+      "text": "To address this question, we first contemplated only the condition with depth-inducing scenes, using the best-fitting LMEM from Experiment 1.",
+      "page_number": null
+    },
+    {
+      "text_id": 161,
+      "paragraph_id": 48,
+      "section_id": 12,
+      "text": "According to this model, distant objects were reported to be 14.6% larger (95% CI = [10.5%, 18.6%]) than nearby objects, as revealed by a main effect of distance, t(1637) = 7.07, p < .001.",
+      "page_number": null
+    },
+    {
+      "text_id": 162,
+      "paragraph_id": 48,
+      "section_id": 12,
+      "text": "An interaction between distance and shape showed that this distance modulation was slightly stronger For the size-illusion measurement, positive values depict larger reconstructed object sizes for distant objects than for nearby objects.",
+      "page_number": null
+    },
+    {
+      "text_id": 163,
+      "paragraph_id": 48,
+      "section_id": 12,
+      "text": "For the orientationdiscrimination tasks, positive values reflect faster response times (RTs) to gratings appearing at the location of template-matching objects than at the location of template-mismatching objects.",
+      "page_number": null
+    },
+    {
+      "text_id": 164,
+      "paragraph_id": 48,
+      "section_id": 12,
+      "text": "In both panels, results are depicted for objects presented in depth-inducing scenes (blue) and for objects presented in no-depth control scenes (red).",
+      "page_number": null
+    },
+    {
+      "text_id": 165,
+      "paragraph_id": 48,
+      "section_id": 12,
+      "text": "Gray circles represent individual participants, colored circles represent the estimated average effect size from the best-fitting linear mixed-effects model (based on the data of Experiment 1), and error bars represent the 95% confidence intervals for these estimates.",
+      "page_number": null
+    },
+    {
+      "text_id": 166,
+      "paragraph_id": 48,
+      "section_id": 12,
+      "text": "Asterisks on the x-axis indicate a significant nonzero effect of the factor congruence (i.e., a difference in RTs between gratings appearing at the location of a template-matching and a template-mismatching object), and asterisks above brackets indicate that this effect of congruence significantly differed between conditions (p < .005).",
+      "page_number": null
+    },
+    {
+      "text_id": 167,
+      "paragraph_id": 49,
+      "section_id": 12,
+      "text": "for cubes than for spheres, t(1637) = 2.50, p = .013, 95% CI for the fixed-effect coefficient = [0.9%, 7.9%].",
+      "page_number": null
+    },
+    {
+      "text_id": 168,
+      "paragraph_id": 49,
+      "section_id": 12,
+      "text": "These findings replicate those of Experiment 1.",
+      "page_number": null
+    },
+    {
+      "text_id": 169,
+      "paragraph_id": 49,
+      "section_id": 12,
+      "text": "In the condition with no-depth control scenes, in contrast, there was no difference between nearby and distant objects, t(1633) = -0.31, p = .753, 95% CI for the fixed-effect coefficient = [-6.4%, 4.6%].",
+      "page_number": null
+    },
+    {
+      "text_id": 170,
+      "paragraph_id": 49,
+      "section_id": 12,
+      "text": "The interaction between distance and shape was not significant either, t(1633) = 0.45, p = .654, 95% CI for the fixed-effect coefficient = [3.1%, 5.0%].",
+      "page_number": null
+    },
+    {
+      "text_id": 171,
+      "paragraph_id": 49,
+      "section_id": 12,
+      "text": "Thus, it appears that the scenes that were chosen for the no-depth control condition indeed did not induce a size illusion.",
+      "page_number": null
+    },
+    {
+      "text_id": 172,
+      "paragraph_id": 50,
+      "section_id": 12,
+      "text": "In order to obtain statistical support for this difference between depth-inducing scenes and no-depth control scenes, we ran an aggregate LMEM, which also included fixed effects for depth (depth-inducing or nodepth control scene) and for the interaction between depth and distance.",
+      "page_number": null
+    },
+    {
+      "text_id": 173,
+      "paragraph_id": 50,
+      "section_id": 12,
+      "text": "A significant interaction between depth and distance confirmed that the overestimation of distant compared with nearby objects was 13.9% more pronounced (95% CI = [10.1%, 17.7%]) in the depth-inducing condition than in the no-depth control condition, t(3271) = 7.16, p < .001.",
+      "page_number": null
+    },
+    {
+      "text_id": 174,
+      "paragraph_id": 50,
+      "section_id": 12,
+      "text": "The pattern of results obtained here was replicated with LMEM comparisons performed on the data of Experiment 2 (see Section S3.2 in the Supplemental Material) and with traditional repeated measures ANOVAs (see Section S7.1 in the Supplemental Material); this pattern was consistent across the full range of object sizes and individual scenes (see Section S7.1).",
+      "page_number": null
+    },
+    {
+      "text_id": 175,
+      "paragraph_id": 50,
+      "section_id": 12,
+      "text": "Taken together, these data confirm that the scenes that were chosen for the depthinducing and no-depth control conditions were successful in either inducing or not inducing a size illusion, respectively (Fig. 3a).",
+      "page_number": null
+    },
+    {
+      "text_id": 176,
+      "paragraph_id": 52,
+      "section_id": 13,
+      "text": "In an attempt to replicate the findings of Experiment 1, we first applied the best-fitting LMEM from Experiment 1 to the condition with depthinducing scenes from Experiment 2.",
+      "page_number": null
+    },
+    {
+      "text_id": 177,
+      "paragraph_id": 52,
+      "section_id": 13,
+      "text": "As in Experiment 1, we found that participants were 24 ms faster (95% CI = [16 ms, 32 ms]) at discriminating gratings that appeared at the location of a template-matching object (mean from model fit = 464 ms) compared with a template-mismatching object (588 ms), as indicated by a main effect of congruence, t(2885) = 6.24, p < .001.",
+      "page_number": null
+    },
+    {
+      "text_id": 178,
+      "paragraph_id": 52,
+      "section_id": 13,
+      "text": "In Experiment 2, this effect did not depend on whether the small or large object was memorized, as revealed by the absence of an interaction between congruence and template size, t(2885) = 0.52, p = .604, 95% CI for the fixed-effect coefficient = [-6 ms, 11 ms].",
+      "page_number": null
+    },
+    {
+      "text_id": 179,
+      "paragraph_id": 52,
+      "section_id": 13,
+      "text": "Thus, these data replicate the main finding from Experiment 1-that visual objects that match the perceived size of a memory template are favored over mismatching visual objects.",
+      "page_number": null
+    },
+    {
+      "text_id": 180,
+      "paragraph_id": 53,
+      "section_id": 13,
+      "text": "Next, we applied the same LMEM to the condition with no-depth control scenes to investigate whether this effect would persist for scenes that do not induce a size illusion.",
+      "page_number": null
+    },
+    {
+      "text_id": 181,
+      "paragraph_id": 53,
+      "section_id": 13,
+      "text": "Here, participants were 6 ms slower (95% CI = [-14 ms, 2 ms]) at discriminating gratings that appeared at the location of a template-matching object (478 ms) compared with a template-mismatching object (472 ms), as indicated by the absence of a main effect of congruence, t(2885) = 1.52, p = .13.",
+      "page_number": null
+    },
+    {
+      "text_id": 182,
+      "paragraph_id": 53,
+      "section_id": 13,
+      "text": "The interaction between congruence and template size did not reach significance either, t(2885) = -1.18, p = .237, 95% CI for the fixed-effect coefficient = [-14 ms, 3 ms].",
+      "page_number": null
+    },
+    {
+      "text_id": 183,
+      "paragraph_id": 53,
+      "section_id": 13,
+      "text": "In sum, when objects are presented in scenes that do not induce a size illusion, the memory-contingent effect on RTs from Experiment 1 does not replicate.",
+      "page_number": null
+    },
+    {
+      "text_id": 184,
+      "paragraph_id": 54,
+      "section_id": 13,
+      "text": "In order to obtain statistical support for this difference between depth-inducing scenes and no-depth control scenes, we ran an aggregate LMEM, which also included fixed effects for depth and for the interaction between depth and congruence.",
+      "page_number": null
+    },
+    {
+      "text_id": 185,
+      "paragraph_id": 54,
+      "section_id": 13,
+      "text": "A significant interaction between congruence and depth revealed that the effect of congruence was 26 ms more pronounced (95% CI = [17 ms, 36 ms]) with depth-inducing scenes than with no-depth control scenes, t(5747) = 5.58, p < .001.",
+      "page_number": null
+    },
+    {
+      "text_id": 186,
+      "paragraph_id": 54,
+      "section_id": 13,
+      "text": "These findings were corroborated by model comparisons of LMEMs based on the data of Experiment 2 (see Section S3.3 in the Supplemental Material) and traditional repeated measures ANOVAs (see Section S7.2 in the Supplemental Material).",
+      "page_number": null
+    },
+    {
+      "text_id": 187,
+      "paragraph_id": 54,
+      "section_id": 13,
+      "text": "From this, we conclude that the main findings of Experiment 1 are caused by the match between the memory template and the perceived size of the visual objects (as modulated by the scene) and not by a generalized anisotropic deployment of attention following memorization of large or small objects (Fig. 3b).",
+      "page_number": null
+    },
+    {
+      "text_id": 188,
+      "paragraph_id": 55,
+      "section_id": 13,
+      "text": "In the condition with depth-inducing scenes, participants were 94.2% accurate (SD = 4.9) when reporting the orientation of a target grating appearing at the location of a template-matching object and 95.0% accurate (SD = 5.5) when reporting the orientation of a grating at the location of a template-mismatching object.",
+      "page_number": null
+    },
+    {
+      "text_id": 189,
+      "paragraph_id": 55,
+      "section_id": 13,
+      "text": "As in Experiment 1, accuracy did not significantly differ between these two conditions, t(25) = -0.89, p = .385.",
+      "page_number": null
+    },
+    {
+      "text_id": 190,
+      "paragraph_id": 55,
+      "section_id": 13,
+      "text": "Similarly, in the condition with no-depth control scenes, accuracy did not differ between the template-matching (94.1%, SD = 5.0) and the template-mismatching (94.5%, SD = 5.4) conditions, t(25) = -0.55, p = .584.",
+      "page_number": null
+    },
+    {
+      "text_id": 191,
+      "paragraph_id": 55,
+      "section_id": 13,
+      "text": "Generally, we found no evidence for an accuracy-based increase in performance at the location of the template-matching object and no evidence for a speed/accuracy trade-off.",
+      "page_number": null
+    },
+    {
+      "text_id": 192,
+      "paragraph_id": 55,
+      "section_id": 13,
+      "text": "The average recall error in the memory-recall task was 12.2% (SD = 2.2).",
+      "page_number": null
+    },
+    {
+      "text_id": 193,
+      "paragraph_id": 57,
+      "section_id": 14,
+      "text": "Finally, we inquired whether scenes that induce a stronger size illusion would also elicit a stronger template-based attentional-capture effect.",
+      "page_number": null
+    },
+    {
+      "text_id": 194,
+      "paragraph_id": 57,
+      "section_id": 14,
+      "text": "To test this, we performed within-subjects correlations between the magnitude of the size illusion (difference in size estimate for nearby and distant objects) and the magnitude of the capture effect (RT difference between gratings presented at template-matching and template-mismatching locations) across each of the 32 scenes.",
+      "page_number": null
+    },
+    {
+      "text_id": 195,
+      "paragraph_id": 57,
+      "section_id": 14,
+      "text": "Because of violation of the assumption of normality, Kendall's τ correlations are reported, and significance at the group level was assessed through bootstrapping (Wilcoxon's signedrank test provided similar results).",
+      "page_number": null
+    },
+    {
+      "text_id": 196,
+      "paragraph_id": 58,
+      "section_id": 14,
+      "text": "Across all scenes (16 depth-inducing and 16 nodepth control), those scenes that elicited a stronger size illusion for a participant also elicited a larger attentionalcapture effect, average correlation τ = .09 (SD = .03), p = .001, bootstrapped 95% CI = [.03, .14], 1 × 10 5 samples.",
+      "page_number": null
+    },
+    {
+      "text_id": 197,
+      "paragraph_id": 58,
+      "section_id": 14,
+      "text": "Moreover, this correlation was observed even when we considered only the condition with depthinducing scenes, average correlation τ = .09 (SD = .04), p = .009, bootstrapped 95% CI = [.03, .16], 1 × 10 5 samples (see also Section S7.3 in the Supplemental Material).",
+      "page_number": null
+    },
+    {
+      "text_id": 198,
+      "paragraph_id": 58,
+      "section_id": 14,
+      "text": "Thus, the scenes that induced a stronger size illusion for a particular participant also caused stronger template-based attentional capture for that participant.",
+      "page_number": null
+    },
+    {
+      "text_id": 199,
+      "paragraph_id": 58,
+      "section_id": 14,
+      "text": "This suggests that the main finding reported in this manuscript, the template-based attentional-capture effect, genuinely builds on perceived object size as inferred from initial scene analysis.",
+      "page_number": null
+    },
+    {
+      "text_id": 200,
+      "paragraph_id": 60,
+      "section_id": 15,
+      "text": "Rationale and prediction.",
+      "page_number": null
+    },
+    {
+      "text_id": 201,
+      "paragraph_id": 60,
+      "section_id": 15,
+      "text": "Experiment 3 was designed to test whether the allocation of attention toward templatematching objects occurred automatically (i.e., attentional capture) as opposed to volitionally.",
+      "page_number": null
+    },
+    {
+      "text_id": 202,
+      "paragraph_id": 60,
+      "section_id": 15,
+      "text": "Because the two objects in the scene were equally uninformative for the upcoming recall task, participants had no objective motivation to volitionally allocate more attentional resources to the template-matching (compared with the templatemismatching) object.",
+      "page_number": null
+    },
+    {
+      "text_id": 203,
+      "paragraph_id": 60,
+      "section_id": 15,
+      "text": "We therefore interpreted the findings of Experiments 1 and 2 as reflecting automatic capture of attention by template-matching objects.",
+      "page_number": null
+    },
+    {
+      "text_id": 204,
+      "paragraph_id": 60,
+      "section_id": 15,
+      "text": "Nonetheless, we cannot exclude the possibility that participants falsely believed that the (perceptually more similar) templatematching objects were of the same, or similar, size as the objects that should be reproduced during the upcoming memory task.",
+      "page_number": null
+    },
+    {
+      "text_id": 205,
+      "paragraph_id": 60,
+      "section_id": 15,
+      "text": "This false belief would incite participants to volitionally attend to the template-matching objects.",
+      "page_number": null
+    },
+    {
+      "text_id": 206,
+      "paragraph_id": 61,
+      "section_id": 15,
+      "text": "In Experiment 3, we tackled this issue by changing only one crucial aspect of the experimental design: After the memorization phase, participants performed either the memory-recall task or the orientationdiscrimination task but never both (see Fig.",
+      "page_number": null
+    },
+    {
+      "text_id": 207,
+      "paragraph_id": 61,
+      "section_id": 15,
+      "text": "2).",
+      "page_number": null
+    },
+    {
+      "text_id": 208,
+      "paragraph_id": 61,
+      "section_id": 15,
+      "text": "These two trial types were intermixed, thereby requiring participants to memorize the cued-object size on every trial.",
+      "page_number": null
+    },
+    {
+      "text_id": 209,
+      "paragraph_id": 61,
+      "section_id": 15,
+      "text": "Crucially, because the orientation-discrimination task was never followed by a recall task, it no longer made sense for participants to attend the templatematching object in aid of the upcoming memory task, as there was no upcoming memory task.",
+      "page_number": null
+    },
+    {
+      "text_id": 210,
+      "paragraph_id": 61,
+      "section_id": 15,
+      "text": "Consequently, if we still observed enhanced target-grating discrimination in Experiment 3 at the location of template-matching objects compared with template-mismatching objects, this could not be accounted for by a strategic allocation of attention toward the template-matching objects.",
+      "page_number": null
+    },
+    {
+      "text_id": 211,
+      "paragraph_id": 63,
+      "section_id": 16,
+      "text": "Data from Experiment 3 were analyzed using the LMEMs that best described the data in Experiment 1.",
+      "page_number": null
+    },
+    {
+      "text_id": 212,
+      "paragraph_id": 63,
+      "section_id": 16,
+      "text": "By doing this, we ensured that initial model selection was hypothesis free (i.e., data driven) and that the statistical tests in Experiment 3 were confirmatory rather than exploratory.",
+      "page_number": null
+    },
+    {
+      "text_id": 213,
+      "paragraph_id": 63,
+      "section_id": 16,
+      "text": "The present findings were corroborated by performing model comparisons on the data of Experiment 3 (see Section S4.2 in the Supplemental Material).",
+      "page_number": null
+    },
+    {
+      "text_id": 214,
+      "paragraph_id": 64,
+      "section_id": 16,
+      "text": "Main experiment.",
+      "page_number": null
+    },
+    {
+      "text_id": 215,
+      "paragraph_id": 64,
+      "section_id": 16,
+      "text": "In order to replicate the findings of Experiments 1 and 2, we first applied the best-fitting LMEM from Experiment 1 to the data of Experiment 3.",
+      "page_number": null
+    },
+    {
+      "text_id": 216,
+      "paragraph_id": 64,
+      "section_id": 16,
+      "text": "As in Experiment 1, we found that participants were 18 ms faster (95% CI = [11 ms, 26 ms]) at discriminating gratings that appeared at the location of a template-matching object (mean from model fit = 477 ms) than at the location of a template-mismatching object (496 ms), as reflected by a main effect of congruence, t(2904) = 4.78, p < .001.",
+      "page_number": null
+    },
+    {
+      "text_id": 217,
+      "paragraph_id": 64,
+      "section_id": 16,
+      "text": "In Experiment 3 (as in Experiment 2), this effect did not depend on whether the small or large object was memorized, as revealed by the absence of an interaction between congruence and template size, t(2904) = 1.12, p = .265, 95% CI for the fixed-effect coefficient = [-14 ms, 4 ms].",
+      "page_number": null
+    },
+    {
+      "text_id": 218,
+      "paragraph_id": 64,
+      "section_id": 16,
+      "text": "Thus, these data replicate the main finding from Experiments 1 and 2 (Fig. 3b) while precluding strategical biases toward the template-matching objects.",
+      "page_number": null
+    },
+    {
+      "text_id": 219,
+      "paragraph_id": 65,
+      "section_id": 16,
+      "text": "As in Experiments 1 and 2, participants' accuracy in reporting the orientation of the target grating did not reliably differ between the template-matching condition (92.4% accurate, SD = 5.0) and the template-mismatching condition (91.7% accurate, SD = 47.2), t(24) = 0.65, p = .524.",
+      "page_number": null
+    },
+    {
+      "text_id": 220,
+      "paragraph_id": 65,
+      "section_id": 16,
+      "text": "Again, we found no evidence for an accuracybased increase in performance at the location of the template-matching object and no evidence for a speed/ accuracy trade-off.",
+      "page_number": null
+    },
+    {
+      "text_id": 221,
+      "paragraph_id": 65,
+      "section_id": 16,
+      "text": "On average, participants had a recall error of 11.8% (SD = 2.2) in the memory task.",
+      "page_number": null
+    },
+    {
+      "text_id": 222,
+      "paragraph_id": 67,
+      "section_id": 17,
+      "text": "In naturalistic vision, the behaviorally relevant interpretation of specific visual input (e.g., of a particular object in the world) is dependent on the context within which it is embedded.",
+      "page_number": null
+    },
+    {
+      "text_id": 223,
+      "paragraph_id": 67,
+      "section_id": 17,
+      "text": "Here, we investigated whether template-based visual selection, a fundamental property of current theories of visual search, could in principle apply to naturalistic vision given these contextual interactions.",
+      "page_number": null
+    },
+    {
+      "text_id": 224,
+      "paragraph_id": 67,
+      "section_id": 17,
+      "text": "Across three experiments, we demonstrated that physically identical visual objects are differently affected by concurrent memory templates when they are presented at different depth planes of a visual scene such that one appears larger than the other.",
+      "page_number": null
+    },
+    {
+      "text_id": 225,
+      "paragraph_id": 67,
+      "section_id": 17,
+      "text": "Specifically, when observers memorized a large object, their attention was automatically drawn toward the larger object, compared with a smaller object that produced the same image on the retina; the reverse was true as well.",
+      "page_number": null
+    },
+    {
+      "text_id": 226,
+      "paragraph_id": 67,
+      "section_id": 17,
+      "text": "Because the retinal size of the competing objects was identical, template-based selection necessarily operated on the object representations that were rescaled on the basis of the scene context.",
+      "page_number": null
+    },
+    {
+      "text_id": 227,
+      "paragraph_id": 67,
+      "section_id": 17,
+      "text": "This implies that scene context modulates object representations before they are compared with a concurrent memory template, thus allowing for template-based selection to accommodate the contextual dependencies that are typical of naturalistic vision.",
+      "page_number": null
+    },
+    {
+      "text_id": 228,
+      "paragraph_id": 68,
+      "section_id": 17,
+      "text": "In addition to providing insight into naturalistic search mechanisms, our findings also contribute to the literature on working-memory-based attentional capture (for a review, see Soto, Hodsoll, Rotshtein, & Humphreys, 2008).",
+      "page_number": null
+    },
+    {
+      "text_id": 229,
+      "paragraph_id": 68,
+      "section_id": 17,
+      "text": "To the best of our knowledge, this is the first evidence that size-based working memory templates can induce automatic shifts of attention, thus extending previous observations of color-based and shape-based templates (e.g., Olivers et al., 2006;Soto, Heinke, Humphreys, & Blanco, 2005).",
+      "page_number": null
+    },
+    {
+      "text_id": 230,
+      "paragraph_id": 68,
+      "section_id": 17,
+      "text": "Moreover, the current findings are the first to demonstrate that memory templates can bias visual selection toward an object that is perceptually different from-but physically identical to-distractor objects.",
+      "page_number": null
+    },
+    {
+      "text_id": 231,
+      "paragraph_id": 69,
+      "section_id": 17,
+      "text": "Template-based visual selection and scene context are both regarded as important factors underlying naturalistic visual search, yet little is known about how these factors interact (Wolfe & Horowitz, 2017).",
+      "page_number": null
+    },
+    {
+      "text_id": 232,
+      "paragraph_id": 69,
+      "section_id": 17,
+      "text": "Focusing on the size dimension, it is known that inferred object distance modulates the size of object representations as early as the primary visual cortex (V1; Fang, Boyaci, Kersten, & Murray, 2008;He, Mo, Wang, & Fang, 2015;Murray, Boyaci, & Kersten, 2006;Ni, Murray, & Horwitz, 2014;Schwarzkopf, Song, & Rees, 2011; for a review, see Sperandio & Chouinard, 2015).",
+      "page_number": null
+    },
+    {
+      "text_id": 233,
+      "paragraph_id": 69,
+      "section_id": 17,
+      "text": "There is some debate, however, as to whether such depth-dependent V1 responses are driven by early lateral projections occurring 30 ms to 60 ms after stimulus presentation (Ni et al., 2014) or by later top-down projections occurring around 150 ms after visual stimulation (Chen, Sperandio, Henry, & Goodale, 2019).",
+      "page_number": null
+    },
+    {
+      "text_id": 234,
+      "paragraph_id": 69,
+      "section_id": 17,
+      "text": "Either way, the current finding that memory templates discriminate between visual objects that differ only on the basis of their context implies that the interaction between memory templates and visual-object representations takes place later in the visual processing hierarchy than the interaction between scene processing and object processing.",
+      "page_number": null
+    },
+    {
+      "text_id": 235,
+      "paragraph_id": 69,
+      "section_id": 17,
+      "text": "Mnemonic and sensory representations of visual objects have been shown to coincide and enhance one another in relatively high-level visual-processing areas, including V4 (Bichot, Rossi, & Desimone, 2005;Chelazzi, Miller, Duncan, & Desimone, 2001), the inferotemporal cortex (Chelazzi, Duncan, Miller, & Desimone, 1998), and lateral occipital and superior parietal areas (Gayet et al., 2017).",
+      "page_number": null
+    },
+    {
+      "text_id": 236,
+      "paragraph_id": 69,
+      "section_id": 17,
+      "text": "In light of our current findings, we speculate that an initial gist-based scene analysis modulates early responses to visual objects presented within the scene, the result of which is then fed forward to higher-level visual areas where it is compared with the concurrent memory template.",
+      "page_number": null
+    },
+    {
+      "text_id": 237,
+      "paragraph_id": 70,
+      "section_id": 17,
+      "text": "In the current study, we induced memory templates by instructing participants to memorize an object for subsequent recall rather than by instructing participants to search for a particular object.",
+      "page_number": null
+    },
+    {
+      "text_id": 238,
+      "paragraph_id": 70,
+      "section_id": 17,
+      "text": "Earlier research has shown that sustained visual search requires visual memory (Carlisle, Arita, Pardo, & Woodman, 2011;Chun, 2011;Chun, Golomb, & Turk-Browne, 2011;Hodsoll & Humphreys, 2005) and that search instructions and memorization instructions induce memory templates that are qualitatively equivalent (Bundesen, Habekost, & Kyllingsbaek, 2005;Carlisle et al., 2011;de Fockert, Rees, Frith, & Lavie, 2001;Gunseli, Meeter, & Olivers, 2014).",
+      "page_number": null
+    },
+    {
+      "text_id": 239,
+      "paragraph_id": 70,
+      "section_id": 17,
+      "text": "A critical difference between the two types of instructions, however, is that while search instructions provide a direct incentive for participants to attend the object that matches the to-be-searched-for feature (e.g., a specific size, as in Hodsoll, Humphreys, & Braithwaite, 2006), a memorization instruction does not.",
+      "page_number": null
+    },
+    {
+      "text_id": 240,
+      "paragraph_id": 70,
+      "section_id": 17,
+      "text": "The current findings, which were brought about by a memorization instruction, thus underline the automatic nature of context-dependent template-based visual selection.",
+      "page_number": null
+    },
+    {
+      "text_id": 241,
+      "paragraph_id": 70,
+      "section_id": 17,
+      "text": "The automaticity of this effect was confirmed by the findings of Experiment 3, in which the bias toward templatematching objects persisted when strategical shifts of attention were precluded.",
+      "page_number": null
+    },
+    {
+      "text_id": 242,
+      "paragraph_id": 71,
+      "section_id": 17,
+      "text": "The current observation that template-based visual selection can take into account scene-object interactions makes working-memory-based search strategies a viable mechanism for naturalistic visual search.",
+      "page_number": null
+    },
+    {
+      "text_id": 243,
+      "paragraph_id": 71,
+      "section_id": 17,
+      "text": "Future research will establish whether the current findings indeed generalize to context-dependent features other than size, such as shape, brightness, and color.",
+      "page_number": null
+    },
+    {
+      "text_id": 244,
+      "paragraph_id": 71,
+      "section_id": 17,
+      "text": "Sceneobject interactions in template-based visual search could also be accounted for by other mechanisms.",
+      "page_number": null
+    },
+    {
+      "text_id": 245,
+      "paragraph_id": 71,
+      "section_id": 17,
+      "text": "For instance, rather than altering the representation of the object that is compared with the template (as shown in the present study), observers could also alter the template before processing the object-for example, by decreasing or increasing the template size when searching for objects at greater or lesser distances, respectively.",
+      "page_number": null
+    },
+    {
+      "text_id": 246,
+      "paragraph_id": 71,
+      "section_id": 17,
+      "text": "Whether or not the visual system utilizes this strategy remains a question for future research.",
+      "page_number": null
+    },
+    {
+      "text_id": 247,
+      "paragraph_id": 71,
+      "section_id": 17,
+      "text": "Yet another possibility is that observers create memory templates that are distance, illumination, or viewpoint invariant.",
+      "page_number": null
+    },
+    {
+      "text_id": 248,
+      "paragraph_id": 71,
+      "section_id": 17,
+      "text": "In line with such a possibility, findings have shown that when observers search for a person among cars (or a car among people), briefly presented person silhouettes capture attention to a similar extent when they are upright or rotated (Reeder & Peelen, 2013), suggesting that the memory template is orientation invariant.",
+      "page_number": null
+    },
+    {
+      "text_id": 249,
+      "paragraph_id": 71,
+      "section_id": 17,
+      "text": "Bravo and Farid (2009) showed that, even when not fully invariant, search templates can be resilient to small transformations of size and orientation.",
+      "page_number": null
+    },
+    {
+      "text_id": 250,
+      "paragraph_id": 72,
+      "section_id": 17,
+      "text": "All three mechanisms described here have computational advantages and drawbacks.",
+      "page_number": null
+    },
+    {
+      "text_id": 251,
+      "paragraph_id": 72,
+      "section_id": 17,
+      "text": "Considering the efficiency with which we extract information from natural scenes (Bar, 2004;Peelen & Kastner, 2014), these mechanisms might all jointly contribute to effective templatebased visual selection in naturalistic visual search.",
+      "page_number": null
+    },
+    {
+      "text_id": 252,
+      "paragraph_id": 74,
+      "section_id": 18,
+      "text": "The present findings show that human observers can, in principle, use size-based memory templates to favor template-matching visual objects at the expense of template-mismatching visual objects, even when the competing objects produce the same image on the retina.",
+      "page_number": null
+    },
+    {
+      "text_id": 253,
+      "paragraph_id": 74,
+      "section_id": 18,
+      "text": "This implies that the representation of visual objects is modulated by the scene context before being compared with current memory templates, thus providing a means for effective template-based visual selection under naturalistic viewing conditions.",
+      "page_number": null
+    },
+    {
+      "text_id": 254,
+      "paragraph_id": 76,
+      "section_id": 19,
+      "text": "Philippe G Schyns served as action editor for this article.",
+      "page_number": null
+    },
+    {
+      "text_id": 255,
+      "paragraph_id": 78,
+      "section_id": 20,
+      "text": "We thank Elisa Battistoni for providing us with the stimulus set used in Experiments 1 and 3 and in part of Experiment 2.",
+      "page_number": null
+    },
+    {
+      "text_id": 256,
+      "paragraph_id": 80,
+      "section_id": 21,
+      "text": "This project received funding from the European Research Council under the European Union's Horizon 2020 research and innovation program (Grant Agreement No.",
+      "page_number": null
+    },
+    {
+      "text_id": 257,
+      "paragraph_id": 80,
+      "section_id": 21,
+      "text": "725970).",
+      "page_number": null
+    },
+    {
+      "text_id": 258,
+      "paragraph_id": 82,
+      "section_id": 22,
+      "text": "The author(s) declared that there were no conflicts of interest with respect to the authorship or the publication of this article.",
+      "page_number": null
+    },
+    {
+      "text_id": 259,
+      "paragraph_id": 84,
+      "section_id": 23,
+      "text": "S Gayet and M V Peelen developed the study concept and experimental design.",
+      "page_number": null
+    },
+    {
+      "text_id": 260,
+      "paragraph_id": 84,
+      "section_id": 23,
+      "text": "S Gayet programmed the experiment, collected the data, and analyzed the data.",
+      "page_number": null
+    },
+    {
+      "text_id": 261,
+      "paragraph_id": 84,
+      "section_id": 23,
+      "text": "S Gayet and M V Peelen interpreted the data.",
+      "page_number": null
+    },
+    {
+      "text_id": 262,
+      "paragraph_id": 84,
+      "section_id": 23,
+      "text": "S Gayet drafted the manuscript, and M V Peelen provided critical revisions.",
+      "page_number": null
+    },
+    {
+      "text_id": 263,
+      "paragraph_id": 84,
+      "section_id": 23,
+      "text": "Both authors approved the final version of the manuscript for submission.",
+      "page_number": null
+    },
+    {
+      "text_id": 264,
+      "paragraph_id": 86,
+      "section_id": 24,
+      "text": "Additional supporting information can be found at http:// journals.sagepub.com/doi/suppl/10.1177/0956797619869905",
+      "page_number": null
+    },
+    {
+      "text_id": 265,
+      "paragraph_id": 88,
+      "section_id": 25,
+      "text": "All raw data, experiment scripts, and analysis scripts have been made publicly available via the Open Science Framework and can be accessed at https://osf.io/x6t4e/.",
+      "page_number": null
+    },
+    {
+      "text_id": 266,
+      "paragraph_id": 88,
+      "section_id": 25,
+      "text": "The design and analysis plans for the experiments were not preregistered.",
+      "page_number": null
+    },
+    {
+      "text_id": 267,
+      "paragraph_id": 88,
+      "section_id": 25,
+      "text": "The complete Open Practices Disclosure for this article can be found at http:// journals.sagepub.com/doi/suppl/10.1177/0956797619869905.",
+      "page_number": null
+    },
+    {
+      "text_id": 268,
+      "paragraph_id": 88,
+      "section_id": 25,
+      "text": "This article has received the badges for Open Data and Open Materials.",
+      "page_number": null
+    },
+    {
+      "text_id": 269,
+      "paragraph_id": 88,
+      "section_id": 25,
+      "text": "More information about the Open Practices badges can be found at http://www.psychologicalscience.org/publications/ badges.",
+      "page_number": null
+    },
+    {
+      "text_id": 270,
+      "paragraph_id": 89,
+      "section_id": 26,
+      "text": "Fig.1.",
+      "page_number": null
+    },
+    {
+      "text_id": 271,
+      "paragraph_id": 89,
+      "section_id": 26,
+      "text": "Example trial sequence and stimuli for Experiments 1 and 2.",
+      "page_number": null
+    },
+    {
+      "text_id": 272,
+      "paragraph_id": 89,
+      "section_id": 26,
+      "text": "On each trial of the size-illusion measurement (a), an object was presented either nearby or far away in a scene, after which participants were asked to reproduce the size of the object by up-or downscaling a test object.",
+      "page_number": null
+    },
+    {
+      "text_id": 273,
+      "paragraph_id": 89,
+      "section_id": 26,
+      "text": "In the main experiment (b), participants were retrospectively cued to memorize the exact size of the first or second object they had seen for subsequent recall.",
+      "page_number": null
+    },
+    {
+      "text_id": 274,
+      "paragraph_id": 89,
+      "section_id": 26,
+      "text": "During the retention interval, participants performed a speeded orientationdiscrimination task on a target grating that appeared at a location that was preceded by either a template-matching visual object (e.g., a perceptually large object when a large object had been memorized; shown here) or a template-mismatching visual object (e.g., a perceptually large object when a small object had been memorized; not shown).",
+      "page_number": null
+    },
+    {
+      "text_id": 275,
+      "paragraph_id": 89,
+      "section_id": 26,
+      "text": "The same visual stimulation led to matching and mismatching trials (c): Depending on whether the large or small object was memorized, either the nearby or the distant object matched the template (and gratings presented at that object's location were hypothesized to yield faster response times).",
+      "page_number": null
+    },
+    {
+      "text_id": 276,
+      "paragraph_id": 89,
+      "section_id": 26,
+      "text": "In Experiment 2, a condition was included with scenes that should not induce a size illusion (no-depth control condition; d provides one example).",
+      "page_number": null
+    },
+    {
+      "text_id": 277,
+      "paragraph_id": 90,
+      "section_id": 27,
+      "text": "Fig.2.",
+      "page_number": null
+    },
+    {
+      "text_id": 278,
+      "paragraph_id": 90,
+      "section_id": 27,
+      "text": "Example trial sequence in Experiment 3.",
+      "page_number": null
+    },
+    {
+      "text_id": 279,
+      "paragraph_id": 90,
+      "section_id": 27,
+      "text": "Trials in Experiment 3 were identical to those in Experiments 1 and 2, with one crucial distinction: On each trial, after participants were cued to memorize the size of the large or small object, they performed either the memory task or the orientation-discrimination task but never both.",
+      "page_number": null
+    },
+    {
+      "text_id": 280,
+      "paragraph_id": 90,
+      "section_id": 27,
+      "text": "The two trial types were intermixed.",
+      "page_number": null
+    },
+    {
+      "text_id": 281,
+      "paragraph_id": 90,
+      "section_id": 27,
+      "text": "This adaptation allowed us to ensure that participants would not strategically allocate more attentional resources to one of the objects in the scene in the belief that this would help them for the ensuing memory-recall task.",
+      "page_number": null
+    },
+    {
+      "text_id": 282,
+      "paragraph_id": 91,
+      "section_id": 28,
+      "text": "Fig.3.",
+      "page_number": null
+    },
+    {
+      "text_id": 283,
+      "paragraph_id": 91,
+      "section_id": 28,
+      "text": "Results of the (a) size-illusion measurement and (b) orientation-discrimination tasks in Experiments 1, 2, and 3.",
+      "page_number": null
+    },
+    {
+      "text_id": 284,
+      "paragraph_id": 91,
+      "section_id": 28,
+      "text": "For the size-illusion measurement, positive values depict larger reconstructed object sizes for distant objects than for nearby objects.",
+      "page_number": null
+    },
+    {
+      "text_id": 285,
+      "paragraph_id": 91,
+      "section_id": 28,
+      "text": "For the orientationdiscrimination tasks, positive values reflect faster response times (RTs) to gratings appearing at the location of template-matching objects than at the location of template-mismatching objects.",
+      "page_number": null
+    },
+    {
+      "text_id": 286,
+      "paragraph_id": 91,
+      "section_id": 28,
+      "text": "In both panels, results are depicted for objects presented in depth-inducing scenes (blue) and for objects presented in no-depth control scenes (red).",
+      "page_number": null
+    },
+    {
+      "text_id": 287,
+      "paragraph_id": 91,
+      "section_id": 28,
+      "text": "Gray circles represent individual participants, colored circles represent the estimated average effect size from the best-fitting linear mixed-effects model (based on the data of Experiment 1), and error bars represent the 95% confidence intervals for these estimates.",
+      "page_number": null
+    },
+    {
+      "text_id": 288,
+      "paragraph_id": 91,
+      "section_id": 28,
+      "text": "Asterisks on the x-axis indicate a significant nonzero effect of the factor congruence (i.e., a difference in RTs between gratings appearing at the location of a template-matching and a template-mismatching object), and asterisks above brackets indicate that this effect of congruence significantly differed between conditions (p < .005).",
+      "page_number": null
+    },
+    {
+      "text_id": 289,
+      "paragraph_id": 92,
+      "section_id": 29,
+      "text": "Akaike, H. (1981). Likelihood of a model and information criteria. Journal of Econometrics, 16, 3-14.",
+      "page_number": null
+    },
+    {
+      "text_id": 290,
+      "paragraph_id": 93,
+      "section_id": 29,
+      "text": "Baayen, R. H., Davidson, D. J., & Bates, D. M. (2008). Mixed- effects modeling with crossed random effects for subjects and items. Journal of Memory and Language, 59, 390-412.",
+      "page_number": null
+    },
+    {
+      "text_id": 291,
+      "paragraph_id": 94,
+      "section_id": 29,
+      "text": "Bar, M. (2004). Visual objects in context. Nature Reviews Neuroscience, 5, 617-629.",
+      "page_number": null
+    },
+    {
+      "text_id": 292,
+      "paragraph_id": 95,
+      "section_id": 29,
+      "text": "Bichot, N. P., Rossi, A. F., & Desimone, R. (2005). Parallel and serial neural mechanisms for visual search in macaque area V4. Science, 308, 529-534.",
+      "page_number": null
+    },
+    {
+      "text_id": 293,
+      "paragraph_id": 96,
+      "section_id": 29,
+      "text": "Bozdogan, H. (1987). Model selection and Akaike's informa- tion criterion (AIC): The general theory and its analytical extensions. Psychometrika, 52, 345-370.",
+      "page_number": null
+    },
+    {
+      "text_id": 294,
+      "paragraph_id": 97,
+      "section_id": 29,
+      "text": "Bravo, M. J., & Farid, H. (2009). The specificity of the search template. Journal of Vision, 9(1), Article 34. doi:10.1167/ 9.1.34.",
+      "page_number": null
+    },
+    {
+      "text_id": 295,
+      "paragraph_id": 98,
+      "section_id": 29,
+      "text": "Bundesen, C., Habekost, T., & Kyllingsbaek, S. (2005). A neu- ral theory of visual attention: Bridging cognition and neu- rophysiology. Psychological Review, 112, 291-328.",
+      "page_number": null
+    },
+    {
+      "text_id": 296,
+      "paragraph_id": 99,
+      "section_id": 29,
+      "text": "Carlisle, N. B., Arita, J. T., Pardo, D., & Woodman, G. F. (2011). Attentional templates in visual working memory. The Journal of Neuroscience, 31, 9315-9322.",
+      "page_number": null
+    },
+    {
+      "text_id": 297,
+      "paragraph_id": 100,
+      "section_id": 29,
+      "text": "Chelazzi, L., Duncan, J., Miller, E. K., & Desimone, R. (1998). Responses of neurons in inferior temporal cortex during memory-guided visual search. Journal of Neurophysiology, 80, 2918-2940.",
+      "page_number": null
+    },
+    {
+      "text_id": 298,
+      "paragraph_id": 101,
+      "section_id": 29,
+      "text": "Chelazzi, L., Miller, E. K., Duncan, J., & Desimone, R. (2001). Responses of neurons in macaque area V4 during mem- ory-guided visual search. Cerebral Cortex, 11, 761-772.",
+      "page_number": null
+    },
+    {
+      "text_id": 299,
+      "paragraph_id": 102,
+      "section_id": 29,
+      "text": "Chen, J., Sperandio, I., Henry, M. J., & Goodale, M. A. (2019). Changing the real viewing distance reveals the tempo- ral evolution of size constancy in visual cortex. Current Biology, 29, 2237-2243.",
+      "page_number": null
+    },
+    {
+      "text_id": 300,
+      "paragraph_id": 103,
+      "section_id": 29,
+      "text": "Chun, M. M. (2011). Visual working memory as visual atten- tion sustained internally over time. Neuropsychologia, 49, 1407-1409.",
+      "page_number": null
+    },
+    {
+      "text_id": 301,
+      "paragraph_id": 104,
+      "section_id": 29,
+      "text": "Chun, M. M., Golomb, J. D., & Turk-Browne, N. B. (2011). A taxonomy of external and internal attention. Annual Review of Psychology, 62, 73-101.",
+      "page_number": null
+    },
+    {
+      "text_id": 302,
+      "paragraph_id": 105,
+      "section_id": 29,
+      "text": "de Fockert, J. W., Rees, G., Frith, C. D., & Lavie, N. (2001). The role of working memory in visual selective attention. Science, 291, 1803-1806.",
+      "page_number": null
+    },
+    {
+      "text_id": 303,
+      "paragraph_id": 106,
+      "section_id": 29,
+      "text": "Desimone, R., & Duncan, J. (1995). Neural mechanisms of selective visual attention. Annual Review of Neuroscience, 18, 193-222.",
+      "page_number": null
+    },
+    {
+      "text_id": 304,
+      "paragraph_id": 107,
+      "section_id": 29,
+      "text": "Duncan, J., & Humphreys, G. W. (1989). Visual search and stimulus similarity. Psychological Review, 96, 433-458.",
+      "page_number": null
+    },
+    {
+      "text_id": 305,
+      "paragraph_id": 108,
+      "section_id": 29,
+      "text": "Eckstein, M. P., Koehler, K., Welbourne, L. E., & Akbas, E. (2017). Humans, but not deep neural networks, often miss giant targets in scenes. Current Biology, 27, 2827-2832.",
+      "page_number": null
+    },
+    {
+      "text_id": 306,
+      "paragraph_id": 109,
+      "section_id": 29,
+      "text": "Eimer, M. (2014). The neural basis of attentional control in visual search. Trends in Cognitive Sciences, 18, 526-535.",
+      "page_number": null
+    },
+    {
+      "text_id": 307,
+      "paragraph_id": 110,
+      "section_id": 29,
+      "text": "Fang, F., Boyaci, H., Kersten, D., & Murray, S. O. (2008). Attention-dependent representation of a size illusion in human V1. Current Biology, 18, 1707-1712.",
+      "page_number": null
+    },
+    {
+      "text_id": 308,
+      "paragraph_id": 111,
+      "section_id": 29,
+      "text": "Gayet, S., Guggenmos, M., Christophel, T. B., Haynes, J. D., Paffen, C. L., Van der Stigchel, S., & Sterzer, P. (2017). Visual working memory enhances the neural response to matching visual input. The Journal of Neuroscience, 37, 6638-6647.",
+      "page_number": null
+    },
+    {
+      "text_id": 309,
+      "paragraph_id": 112,
+      "section_id": 29,
+      "text": "Gregory, R. L. (1968). Visual illusions. Scientific American, 219(5), 66-79.",
+      "page_number": null
+    },
+    {
+      "text_id": 310,
+      "paragraph_id": 113,
+      "section_id": 29,
+      "text": "Gunseli, E., Meeter, M., & Olivers, C. N. L. (2014). Is a search template an ordinary working memory? Comparing elec- trophysiological markers of working memory maintenance for visual search and recognition. Neuropsychologia, 60, 29-38.",
+      "page_number": null
+    },
+    {
+      "text_id": 311,
+      "paragraph_id": 114,
+      "section_id": 29,
+      "text": "He, D., Mo, C., Wang, Y., & Fang, F. (2015). Position shifts of fMRI-based population receptive fields in human visual cortex induced by Ponzo illusion. Experimental Brain Research, 233, 3535-3541.",
+      "page_number": null
+    },
+    {
+      "text_id": 312,
+      "paragraph_id": 115,
+      "section_id": 29,
+      "text": "Hodsoll, J. P., & Humphreys, G. W. (2005). The effect of target foreknowledge on visual search for categorically sepa- rable orientation targets. Vision Research, 45, 2346-2351.",
+      "page_number": null
+    },
+    {
+      "text_id": 313,
+      "paragraph_id": 116,
+      "section_id": 29,
+      "text": "Hodsoll, J. P., Humphreys, G. W., & Braithwaite, J. J. (2006). Dissociating the effects of similarity, salience, and top- down processes in search for linearly separable size tar- gets. Perception & Psychophysics, 68, 558-570.",
+      "page_number": null
+    },
+    {
+      "text_id": 314,
+      "paragraph_id": 117,
+      "section_id": 29,
+      "text": "Jiang, Y., Costello, P., Fang, F., Huang, M., & He, S. (2006). A gender-and sexual orientation-dependent spatial attentional effect of invisible images. Proceedings of the National Academy of Sciences, USA, 103, 17048-17052.",
+      "page_number": null
+    },
+    {
+      "text_id": 315,
+      "paragraph_id": 118,
+      "section_id": 29,
+      "text": "Kastner, S., & Ungerleider, L. G. (2001). The neural basis of biased competition in human visual cortex. Neuro- psychologia, 39, 1263-1276.",
+      "page_number": null
+    },
+    {
+      "text_id": 316,
+      "paragraph_id": 119,
+      "section_id": 29,
+      "text": "Magezi, D. A. (2015). Linear mixed-effects models for within- participant psychology experiments: An introductory tuto- rial and free, graphical user interface (LMMgui). Frontiers in Psychology, 6, Article 2. doi:10.3389/fpsyg.2015.00002",
+      "page_number": null
+    },
+    {
+      "text_id": 317,
+      "paragraph_id": 120,
+      "section_id": 29,
+      "text": "Murray, S. O., Boyaci, H., & Kersten, D. (2006). The represen- tation of perceived angular size in human primary visual cortex. Nature Neuroscience, 9, 429-434.",
+      "page_number": null
+    },
+    {
+      "text_id": 318,
+      "paragraph_id": 121,
+      "section_id": 29,
+      "text": "Ni, A. M., Murray, S. O., & Horwitz, G. D. (2014). Object- centered shifts of receptive field positions in monkey primary visual cortex. Current Biology, 24, 1653-1658.",
+      "page_number": null
+    },
+    {
+      "text_id": 319,
+      "paragraph_id": 122,
+      "section_id": 29,
+      "text": "Oliva, A., & Torralba, A. (2007). The role of context in object recognition. Trends in Cognitive Sciences, 11, 520-527.",
+      "page_number": null
+    },
+    {
+      "text_id": 320,
+      "paragraph_id": 123,
+      "section_id": 29,
+      "text": "Olivers, C. N. L., Meijer, F., & Theeuwes, J. (2006). Feature- based memory-driven attentional capture: Visual work- ing memory content affects visual attention. Journal of Experimental Psychology: Human Perception and Performance, 32, 1243-1265.",
+      "page_number": null
+    },
+    {
+      "text_id": 321,
+      "paragraph_id": 124,
+      "section_id": 29,
+      "text": "Peelen, M. V., & Kastner, S. (2014). Attention in the real world: Toward understanding its neural basis. Trends in Cognitive Sciences, 18, 242-250.",
+      "page_number": null
+    },
+    {
+      "text_id": 322,
+      "paragraph_id": 125,
+      "section_id": 29,
+      "text": "Ponzo, M. (1911). Intorno ad alcune illusioni nel campo delle sensazioni tattili, sull'illusione di Aristotele e fenomeni analoghi [Regarding some illusions in the field of tactile sensations, after the illusion of Aristotle and analogous phenomena]. Archive für die Gesamte Psychologie, 16, 307-345.",
+      "page_number": null
+    },
+    {
+      "text_id": 323,
+      "paragraph_id": 126,
+      "section_id": 29,
+      "text": "Reeder, R. R., & Peelen, M. V. (2013). The contents of the search template for category-level search in natural scenes. Journal of Vision, 13(3), Article 13. doi:10.1167/13.3.13",
+      "page_number": null
+    },
+    {
+      "text_id": 324,
+      "paragraph_id": 127,
+      "section_id": 29,
+      "text": "Schwarzkopf, D. S., Song, C., & Rees, G. (2011). The surface area of human V1 predicts the subjective experience of object size. Nature Neuroscience, 14, 28-31.",
+      "page_number": null
+    },
+    {
+      "text_id": 325,
+      "paragraph_id": 128,
+      "section_id": 29,
+      "text": "Soto, D., Heinke, D., Humphreys, G. W., & Blanco, M. J. (2005). Early, involuntary top-down guidance of attention from working memory. Journal of Experimental Psychology: Human Perception and Performance, 31, 248-261.",
+      "page_number": null
+    },
+    {
+      "text_id": 326,
+      "paragraph_id": 129,
+      "section_id": 29,
+      "text": "Soto, D., Hodsoll, J., Rotshtein, P., & Humphreys, G. W. (2008). Automatic guidance of attention from working memory. Trends in Cognitive Sciences, 12, 342-348.",
+      "page_number": null
+    },
+    {
+      "text_id": 327,
+      "paragraph_id": 130,
+      "section_id": 29,
+      "text": "Sperandio, I., & Chouinard, P. A. (2015). The mechanisms of size constancy. Multisensory Research, 28, 253-283.",
+      "page_number": null
+    },
+    {
+      "text_id": 328,
+      "paragraph_id": 131,
+      "section_id": 29,
+      "text": "van Moorselaar, D., Theeuwes, J., & Olivers, C. N. L. (2014). In competition for the attentional template: Can multiple items within visual working memory guide attention? Journal of Experimental Psychology: Human Perception and Performance, 40, 1450-1464.",
+      "page_number": null
+    },
+    {
+      "text_id": 329,
+      "paragraph_id": 132,
+      "section_id": 29,
+      "text": "Wolfe, J. M. (1994). Guided search 2.0 A revised model of visual search. Psychonomic Bulletin & Review, 1, 202-238.",
+      "page_number": null
+    },
+    {
+      "text_id": 330,
+      "paragraph_id": 133,
+      "section_id": 29,
+      "text": "Wolfe, J. M., & Horowitz, T. S. (2004). What attributes guide the deployment of visual attention and how do they do it? Nature Reviews Neuroscience, 5, 495-501.",
+      "page_number": null
+    },
+    {
+      "text_id": 331,
+      "paragraph_id": 134,
+      "section_id": 29,
+      "text": "Wolfe, J. M., & Horowitz, T. S. (2017). Five factors that guide attention in visual search. Nature Human Behaviour, 1, Article 0058. doi:10.1038/s41562-017-0058",
+      "page_number": null
+    },
+    {
+      "text_id": 332,
+      "paragraph_id": 135,
+      "section_id": 29,
+      "text": "Wolfe, J. M., Võ, M. L. H., Evans, K. K., & Greene, M. R. (2011). Visual search in scenes involves selective and nonselective pathways. Trends in Cognitive Sciences, 15, 77-84.",
+      "page_number": null
+    }
+  ],
+  "section": [
+    {
+      "section_id": 0,
+      "header": "Abstract",
+      "parent_section_id": null,
+      "section_type": "abstract",
+      "classification_score": null
+    },
+    {
+      "section_id": 1,
+      "header": "[div-01]",
+      "parent_section_id": null,
+      "section_type": "intro",
+      "classification_score": null
+    },
+    {
+      "section_id": 3,
+      "header": "Participants",
+      "parent_section_id": null,
+      "section_type": "method",
+      "classification_score": null
+    },
+    {
+      "section_id": 4,
+      "header": "Procedure",
+      "parent_section_id": null,
+      "section_type": "method",
+      "classification_score": null
+    },
+    {
+      "section_id": 5,
+      "header": "Stimuli",
+      "parent_section_id": null,
+      "section_type": "method",
+      "classification_score": null
+    },
+    {
+      "section_id": 6,
+      "header": "Experimental design",
+      "parent_section_id": null,
+      "section_type": "method",
+      "classification_score": null
+    },
+    {
+      "section_id": 7,
+      "header": "Data selection and preparation",
+      "parent_section_id": null,
+      "section_type": "method",
+      "classification_score": null
+    },
+    {
+      "section_id": 8,
+      "header": "Data analysis",
+      "parent_section_id": null,
+      "section_type": "method",
+      "classification_score": null
+    },
+    {
+      "section_id": 10,
+      "header": "Experiment 1",
+      "parent_section_id": null,
+      "section_type": "results",
+      "classification_score": null
+    },
+    {
+      "section_id": 11,
+      "header": "Experiment 2",
+      "parent_section_id": null,
+      "section_type": "results",
+      "classification_score": null
+    },
+    {
+      "section_id": 12,
+      "header": "Data analyses.",
+      "parent_section_id": null,
+      "section_type": "results",
+      "classification_score": null
+    },
+    {
+      "section_id": 13,
+      "header": "Main experiment.",
+      "parent_section_id": null,
+      "section_type": "results",
+      "classification_score": null
+    },
+    {
+      "section_id": 14,
+      "header": "Correlations between the main experiment and sizeillusion measurement.",
+      "parent_section_id": null,
+      "section_type": "results",
+      "classification_score": null
+    },
+    {
+      "section_id": 15,
+      "header": "Experiment 3",
+      "parent_section_id": null,
+      "section_type": "results",
+      "classification_score": null
+    },
+    {
+      "section_id": 16,
+      "header": "Data analyses.",
+      "parent_section_id": null,
+      "section_type": "results",
+      "classification_score": null
+    },
+    {
+      "section_id": 17,
+      "header": "General Discussion",
+      "parent_section_id": null,
+      "section_type": "discussion",
+      "classification_score": null
+    },
+    {
+      "section_id": 18,
+      "header": "Conclusion",
+      "parent_section_id": null,
+      "section_type": "discussion",
+      "classification_score": null
+    },
+    {
+      "section_id": 19,
+      "header": "Action Editor",
+      "parent_section_id": null,
+      "section_type": "discussion",
+      "classification_score": null
+    },
+    {
+      "section_id": 20,
+      "header": "Acknowledgments",
+      "parent_section_id": null,
+      "section_type": "acknowledgement",
+      "classification_score": null
+    },
+    {
+      "section_id": 21,
+      "header": "Funding",
+      "parent_section_id": null,
+      "section_type": "funding",
+      "classification_score": null
+    },
+    {
+      "section_id": 22,
+      "header": "Declaration of Conflicting Interests",
+      "parent_section_id": null,
+      "section_type": "conflict",
+      "classification_score": null
+    },
+    {
+      "section_id": 23,
+      "header": "Author Contributions",
+      "parent_section_id": null,
+      "section_type": "contribution",
+      "classification_score": null
+    },
+    {
+      "section_id": 24,
+      "header": "Supplemental Material",
+      "parent_section_id": null,
+      "section_type": "annex",
+      "classification_score": null
+    },
+    {
+      "section_id": 25,
+      "header": "Open Practices",
+      "parent_section_id": null,
+      "section_type": "annex",
+      "classification_score": null
+    },
+    {
+      "section_id": 26,
+      "header": "Fig 1",
+      "parent_section_id": null,
+      "section_type": "figure",
+      "classification_score": null
+    },
+    {
+      "section_id": 27,
+      "header": "Fig 2",
+      "parent_section_id": null,
+      "section_type": "figure",
+      "classification_score": null
+    },
+    {
+      "section_id": 28,
+      "header": "Fig 3",
+      "parent_section_id": null,
+      "section_type": "figure",
+      "classification_score": null
+    },
+    {
+      "section_id": 29,
+      "header": "References",
+      "parent_section_id": null,
+      "section_type": "references",
+      "classification_score": null
+    }
+  ],
+  "url": [
+    {
+      "href": "https://www.gimp.org",
+      "link_text": null,
+      "text_id": 89
+    },
+    {
+      "href": "journals.sagepub.com/doi/suppl/10.1177/0956797619869905",
+      "link_text": null,
+      "text_id": 264
+    },
+    {
+      "href": "https://osf.io/x6t4e",
+      "link_text": null,
+      "text_id": 265
+    },
+    {
+      "href": "journals.sagepub.com/doi/suppl/10.1177/0956797619869905",
+      "link_text": null,
+      "text_id": 267
+    },
+    {
+      "href": "http://www.psychologicalscience.org/publications",
+      "link_text": null,
+      "text_id": 269
+    }
+  ],
+  "bib": [
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "Likelihood of a model and information criteria",
+      "authors": "Akaike, H",
+      "editors": "",
+      "publisher": "",
+      "year": 1981,
+      "volume": "16",
+      "issue": "",
+      "first_page": "3",
+      "last_page": "14",
+      "container": "Journal of Econometrics",
+      "bib_id": 0,
+      "year_suffix": "",
+      "text_id": 289
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "Mixedeffects modeling with crossed random effects for subjects and items",
+      "authors": "Baayen, R H; Davidson, D J; Bates, D M",
+      "editors": "",
+      "publisher": "",
+      "year": 2008,
+      "volume": "59",
+      "issue": "",
+      "first_page": "390",
+      "last_page": "412",
+      "container": "Journal of Memory and Language",
+      "bib_id": 1,
+      "year_suffix": "",
+      "text_id": 290
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "Visual objects in context",
+      "authors": "Bar, M",
+      "editors": "",
+      "publisher": "",
+      "year": 2004,
+      "volume": "5",
+      "issue": "",
+      "first_page": "617",
+      "last_page": "629",
+      "container": "Nature Reviews Neuroscience",
+      "bib_id": 2,
+      "year_suffix": "",
+      "text_id": 291
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "Parallel and serial neural mechanisms for visual search in macaque area V4",
+      "authors": "Bichot, N P; Rossi, A F; Desimone, R",
+      "editors": "",
+      "publisher": "",
+      "year": 2005,
+      "volume": "308",
+      "issue": "",
+      "first_page": "529",
+      "last_page": "534",
+      "container": "Science",
+      "bib_id": 3,
+      "year_suffix": "",
+      "text_id": 292
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "Model selection and Akaike's information criterion (AIC): The general theory and its analytical extensions",
+      "authors": "Bozdogan, H",
+      "editors": "",
+      "publisher": "",
+      "year": 1987,
+      "volume": "52",
+      "issue": "",
+      "first_page": "345",
+      "last_page": "370",
+      "container": "Psychometrika",
+      "bib_id": 4,
+      "year_suffix": "",
+      "text_id": 293
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1167/9.1.34",
+      "title": "The specificity of the search template",
+      "authors": "Bravo, M J; Farid, H",
+      "editors": "",
+      "publisher": "",
+      "year": 2009,
+      "volume": "9",
+      "issue": "1",
+      "first_page": "34",
+      "last_page": null,
+      "container": "Journal of Vision",
+      "bib_id": 5,
+      "year_suffix": "",
+      "text_id": 294
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "A neural theory of visual attention: Bridging cognition and neurophysiology",
+      "authors": "Bundesen, C; Habekost, T; Kyllingsbaek, S",
+      "editors": "",
+      "publisher": "",
+      "year": 2005,
+      "volume": "112",
+      "issue": "",
+      "first_page": "291",
+      "last_page": "328",
+      "container": "Psychological Review",
+      "bib_id": 6,
+      "year_suffix": "",
+      "text_id": 295
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "Attentional templates in visual working memory",
+      "authors": "Carlisle, N B; Arita, J T; Pardo, D; Woodman, G F",
+      "editors": "",
+      "publisher": "",
+      "year": 2011,
+      "volume": "31",
+      "issue": "",
+      "first_page": "9315",
+      "last_page": "9322",
+      "container": "The Journal of Neuroscience",
+      "bib_id": 7,
+      "year_suffix": "",
+      "text_id": 296
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "Responses of neurons in inferior temporal cortex during memory-guided visual search",
+      "authors": "Chelazzi, L; Duncan, J; Miller, E K; Desimone, R",
+      "editors": "",
+      "publisher": "",
+      "year": 1998,
+      "volume": "80",
+      "issue": "",
+      "first_page": "2918",
+      "last_page": "2940",
+      "container": "Journal of Neurophysiology",
+      "bib_id": 8,
+      "year_suffix": "",
+      "text_id": 297
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "Responses of neurons in macaque area V4 during memory-guided visual search",
+      "authors": "Chelazzi, L; Miller, E K; Duncan, J; Desimone, R",
+      "editors": "",
+      "publisher": "",
+      "year": 2001,
+      "volume": "11",
+      "issue": "",
+      "first_page": "761",
+      "last_page": "772",
+      "container": "Cerebral Cortex",
+      "bib_id": 9,
+      "year_suffix": "",
+      "text_id": 298
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "Changing the real viewing distance reveals the temporal evolution of size constancy in visual cortex",
+      "authors": "Chen, J; Sperandio, I; Henry, M J; Goodale, M A",
+      "editors": "",
+      "publisher": "",
+      "year": 2019,
+      "volume": "29",
+      "issue": "",
+      "first_page": "2237",
+      "last_page": "2243",
+      "container": "Current Biology",
+      "bib_id": 10,
+      "year_suffix": "",
+      "text_id": 299
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "Visual working memory as visual attention sustained internally over time",
+      "authors": "Chun, M M",
+      "editors": "",
+      "publisher": "",
+      "year": 2011,
+      "volume": "49",
+      "issue": "",
+      "first_page": "1407",
+      "last_page": "1409",
+      "container": "Neuropsychologia",
+      "bib_id": 11,
+      "year_suffix": "",
+      "text_id": 300
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "A taxonomy of external and internal attention",
+      "authors": "Chun, M M; Golomb, J D; Turk-Browne, N B",
+      "editors": "",
+      "publisher": "",
+      "year": 2011,
+      "volume": "62",
+      "issue": "",
+      "first_page": "73",
+      "last_page": "101",
+      "container": "Annual Review of Psychology",
+      "bib_id": 12,
+      "year_suffix": "",
+      "text_id": 301
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "The role of working memory in visual selective attention",
+      "authors": "De Fockert, J W; Rees, G; Frith, C D; Lavie, N",
+      "editors": "",
+      "publisher": "",
+      "year": 2001,
+      "volume": "291",
+      "issue": "",
+      "first_page": "1803",
+      "last_page": "1806",
+      "container": "Science",
+      "bib_id": 13,
+      "year_suffix": "",
+      "text_id": 302
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "Neural mechanisms of selective visual attention",
+      "authors": "Desimone, R; Duncan, J",
+      "editors": "",
+      "publisher": "",
+      "year": 1995,
+      "volume": "18",
+      "issue": "",
+      "first_page": "193",
+      "last_page": "222",
+      "container": "Annual Review of Neuroscience",
+      "bib_id": 14,
+      "year_suffix": "",
+      "text_id": 303
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "Visual search and stimulus similarity",
+      "authors": "Duncan, J; Humphreys, G W",
+      "editors": "",
+      "publisher": "",
+      "year": 1989,
+      "volume": "96",
+      "issue": "",
+      "first_page": "433",
+      "last_page": "458",
+      "container": "Psychological Review",
+      "bib_id": 15,
+      "year_suffix": "",
+      "text_id": 304
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "Humans, but not deep neural networks, often miss giant targets in scenes",
+      "authors": "Eckstein, M P; Koehler, K; Welbourne, L E; Akbas, E",
+      "editors": "",
+      "publisher": "",
+      "year": 2017,
+      "volume": "27",
+      "issue": "",
+      "first_page": "2827",
+      "last_page": "2832",
+      "container": "Current Biology",
+      "bib_id": 16,
+      "year_suffix": "",
+      "text_id": 305
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "The neural basis of attentional control in visual search",
+      "authors": "Eimer, M",
+      "editors": "",
+      "publisher": "",
+      "year": 2014,
+      "volume": "18",
+      "issue": "",
+      "first_page": "526",
+      "last_page": "535",
+      "container": "Trends in Cognitive Sciences",
+      "bib_id": 17,
+      "year_suffix": "",
+      "text_id": 306
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "Attention-dependent representation of a size illusion in human V1",
+      "authors": "Fang, F; Boyaci, H; Kersten, D; Murray, S O",
+      "editors": "",
+      "publisher": "",
+      "year": 2008,
+      "volume": "18",
+      "issue": "",
+      "first_page": "1707",
+      "last_page": "1712",
+      "container": "Current Biology",
+      "bib_id": 18,
+      "year_suffix": "",
+      "text_id": 307
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "Visual working memory enhances the neural response to matching visual input",
+      "authors": "Gayet, S; Guggenmos, M; Christophel, T B; Haynes, J D; Paffen, C L; Van Der Stigchel, S; Sterzer, P",
+      "editors": "",
+      "publisher": "",
+      "year": 2017,
+      "volume": "37",
+      "issue": "",
+      "first_page": "6638",
+      "last_page": "6647",
+      "container": "The Journal of Neuroscience",
+      "bib_id": 19,
+      "year_suffix": "",
+      "text_id": 308
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "Visual illusions",
+      "authors": "Gregory, R L",
+      "editors": "",
+      "publisher": "",
+      "year": 1968,
+      "volume": "219",
+      "issue": "5",
+      "first_page": "66",
+      "last_page": "79",
+      "container": "Scientific American",
+      "bib_id": 20,
+      "year_suffix": "",
+      "text_id": 309
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "Is a search template an ordinary working memory? Comparing electrophysiological markers of working memory maintenance for visual search and recognition",
+      "authors": "Gunseli, E; Meeter, M; Olivers, C N L",
+      "editors": "",
+      "publisher": "",
+      "year": 2014,
+      "volume": "60",
+      "issue": "",
+      "first_page": "29",
+      "last_page": "38",
+      "container": "Neuropsychologia",
+      "bib_id": 21,
+      "year_suffix": "",
+      "text_id": 310
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "Position shifts of fMRI-based population receptive fields in human visual cortex induced by Ponzo illusion",
+      "authors": "He, D; Mo, C; Wang, Y; Fang, F",
+      "editors": "",
+      "publisher": "",
+      "year": 2015,
+      "volume": "233",
+      "issue": "",
+      "first_page": "3535",
+      "last_page": "3541",
+      "container": "Experimental Brain Research",
+      "bib_id": 22,
+      "year_suffix": "",
+      "text_id": 311
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "The effect of target foreknowledge on visual search for categorically separable orientation targets",
+      "authors": "Hodsoll, J P; Humphreys, G W",
+      "editors": "",
+      "publisher": "",
+      "year": 2005,
+      "volume": "45",
+      "issue": "",
+      "first_page": "2346",
+      "last_page": "2351",
+      "container": "Vision Research",
+      "bib_id": 23,
+      "year_suffix": "",
+      "text_id": 312
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "Dissociating the effects of similarity, salience, and topdown processes in search for linearly separable size targets",
+      "authors": "Hodsoll, J P; Humphreys, G W; Braithwaite, J J",
+      "editors": "",
+      "publisher": "",
+      "year": 2006,
+      "volume": "68",
+      "issue": "",
+      "first_page": "558",
+      "last_page": "570",
+      "container": "Perception & Psychophysics",
+      "bib_id": 24,
+      "year_suffix": "",
+      "text_id": 313
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "A gender-and sexual orientation-dependent spatial attentional effect of invisible images",
+      "authors": "Jiang, Y; Costello, P; Fang, F; Huang, M; He, S",
+      "editors": "",
+      "publisher": "",
+      "year": 2006,
+      "volume": "103",
+      "issue": "",
+      "first_page": "17048",
+      "last_page": "17052",
+      "container": "Proceedings of the National Academy of Sciences",
+      "bib_id": 25,
+      "year_suffix": "",
+      "text_id": 314
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "The neural basis of biased competition in human visual cortex",
+      "authors": "Kastner, S; Ungerleider, L G",
+      "editors": "",
+      "publisher": "",
+      "year": 2001,
+      "volume": "39",
+      "issue": "",
+      "first_page": "1263",
+      "last_page": "1276",
+      "container": "Neuropsychologia",
+      "bib_id": 26,
+      "year_suffix": "",
+      "text_id": 315
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.3389/fpsyg.2015.00002",
+      "title": "Linear mixed-effects models for withinparticipant psychology experiments: An introductory tutorial and free, graphical user interface (LMMgui)",
+      "authors": "Magezi, D A",
+      "editors": "",
+      "publisher": "",
+      "year": 2015,
+      "volume": "6",
+      "issue": "",
+      "first_page": null,
+      "last_page": null,
+      "container": "Frontiers in Psychology",
+      "bib_id": 27,
+      "year_suffix": "",
+      "text_id": 316
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "The representation of perceived angular size in human primary visual cortex",
+      "authors": "Murray, S O; Boyaci, H; Kersten, D",
+      "editors": "",
+      "publisher": "",
+      "year": 2006,
+      "volume": "9",
+      "issue": "",
+      "first_page": "429",
+      "last_page": "434",
+      "container": "Nature Neuroscience",
+      "bib_id": 28,
+      "year_suffix": "",
+      "text_id": 317
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "Objectcentered shifts of receptive field positions in monkey primary visual cortex",
+      "authors": "Ni, A M; Murray, S O; Horwitz, G D",
+      "editors": "",
+      "publisher": "",
+      "year": 2014,
+      "volume": "24",
+      "issue": "",
+      "first_page": "1653",
+      "last_page": "1658",
+      "container": "Current Biology",
+      "bib_id": 29,
+      "year_suffix": "",
+      "text_id": 318
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "The role of context in object recognition",
+      "authors": "Oliva, A; Torralba, A",
+      "editors": "",
+      "publisher": "",
+      "year": 2007,
+      "volume": "11",
+      "issue": "",
+      "first_page": "520",
+      "last_page": "527",
+      "container": "Trends in Cognitive Sciences",
+      "bib_id": 30,
+      "year_suffix": "",
+      "text_id": 319
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "Featurebased memory-driven attentional capture: Visual working memory content affects visual attention",
+      "authors": "Olivers, C N L; Meijer, F; Theeuwes, J",
+      "editors": "",
+      "publisher": "",
+      "year": 2006,
+      "volume": "32",
+      "issue": "",
+      "first_page": "1243",
+      "last_page": "1265",
+      "container": "Journal of Experimental Psychology: Human Perception and Performance",
+      "bib_id": 31,
+      "year_suffix": "",
+      "text_id": 320
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "Attention in the real world: Toward understanding its neural basis",
+      "authors": "Peelen, M V; Kastner, S",
+      "editors": "",
+      "publisher": "",
+      "year": 2014,
+      "volume": "18",
+      "issue": "",
+      "first_page": "242",
+      "last_page": "250",
+      "container": "Trends in Cognitive Sciences",
+      "bib_id": 32,
+      "year_suffix": "",
+      "text_id": 321
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "Intorno ad alcune illusioni nel campo delle sensazioni tattili, sull'illusione di Aristotele e fenomeni analoghi [Regarding some illusions in the field of tactile sensations, after the illusion of Aristotle and analogous phenomena]",
+      "authors": "Ponzo, M",
+      "editors": "",
+      "publisher": "",
+      "year": 1911,
+      "volume": "16",
+      "issue": "",
+      "first_page": "307",
+      "last_page": "345",
+      "container": "Archive für die Gesamte Psychologie",
+      "bib_id": 33,
+      "year_suffix": "",
+      "text_id": 322
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1167/13.3.13",
+      "title": "The contents of the search template for category-level search in natural scenes",
+      "authors": "Reeder, R R; Peelen, M V",
+      "editors": "",
+      "publisher": "",
+      "year": 2013,
+      "volume": "13",
+      "issue": "3",
+      "first_page": "13",
+      "last_page": null,
+      "container": "Journal of Vision",
+      "bib_id": 34,
+      "year_suffix": "",
+      "text_id": 323
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "The surface area of human V1 predicts the subjective experience of object size",
+      "authors": "Schwarzkopf, D S; Song, C; Rees, G",
+      "editors": "",
+      "publisher": "",
+      "year": 2011,
+      "volume": "14",
+      "issue": "",
+      "first_page": "28",
+      "last_page": "31",
+      "container": "Nature Neuroscience",
+      "bib_id": 35,
+      "year_suffix": "",
+      "text_id": 324
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "Early, involuntary top-down guidance of attention from working memory",
+      "authors": "Soto, D; Heinke, D; Humphreys, G W; Blanco, M J",
+      "editors": "",
+      "publisher": "",
+      "year": 2005,
+      "volume": "31",
+      "issue": "",
+      "first_page": "248",
+      "last_page": "261",
+      "container": "Journal of Experimental Psychology: Human Perception and Performance",
+      "bib_id": 36,
+      "year_suffix": "",
+      "text_id": 325
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "Automatic guidance of attention from working memory",
+      "authors": "Soto, D; Hodsoll, J; Rotshtein, P; Humphreys, G W",
+      "editors": "",
+      "publisher": "",
+      "year": 2008,
+      "volume": "12",
+      "issue": "",
+      "first_page": "342",
+      "last_page": "348",
+      "container": "Trends in Cognitive Sciences",
+      "bib_id": 37,
+      "year_suffix": "",
+      "text_id": 326
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "The mechanisms of size constancy",
+      "authors": "Sperandio, I; Chouinard, P A",
+      "editors": "",
+      "publisher": "",
+      "year": 2015,
+      "volume": "28",
+      "issue": "",
+      "first_page": "253",
+      "last_page": "283",
+      "container": "Multisensory Research",
+      "bib_id": 38,
+      "year_suffix": "",
+      "text_id": 327
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "In competition for the attentional template: Can multiple items within visual working memory guide attention",
+      "authors": "Van Moorselaar, D; Theeuwes, J; Olivers, C N L",
+      "editors": "",
+      "publisher": "",
+      "year": 2014,
+      "volume": "40",
+      "issue": "",
+      "first_page": "1450",
+      "last_page": "1464",
+      "container": "Journal of Experimental Psychology: Human Perception and Performance",
+      "bib_id": 39,
+      "year_suffix": "",
+      "text_id": 328
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "Guided search 2.0 A revised model of visual search",
+      "authors": "Wolfe, J M",
+      "editors": "",
+      "publisher": "",
+      "year": 1994,
+      "volume": "1",
+      "issue": "",
+      "first_page": "202",
+      "last_page": "238",
+      "container": "Psychonomic Bulletin & Review",
+      "bib_id": 40,
+      "year_suffix": "",
+      "text_id": 329
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "What attributes guide the deployment of visual attention and how do they do it?",
+      "authors": "Wolfe, J M; Horowitz, T S",
+      "editors": "",
+      "publisher": "",
+      "year": 2004,
+      "volume": "5",
+      "issue": "",
+      "first_page": "495",
+      "last_page": "501",
+      "container": "Nature Reviews Neuroscience",
+      "bib_id": 41,
+      "year_suffix": "",
+      "text_id": 330
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1038/s41562-017-0058",
+      "title": "Five factors that guide attention in visual search",
+      "authors": "Wolfe, J M; Horowitz, T S",
+      "editors": "",
+      "publisher": "",
+      "year": 2017,
+      "volume": "1",
+      "issue": "",
+      "first_page": "58",
+      "last_page": null,
+      "container": "Nature Human Behaviour",
+      "bib_id": 42,
+      "year_suffix": "",
+      "text_id": 331
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "Visual search in scenes involves selective and nonselective pathways",
+      "authors": "Wolfe, J M; Võ, M L H; Evans, K K; Greene, M R",
+      "editors": "",
+      "publisher": "",
+      "year": 2011,
+      "volume": "15",
+      "issue": "",
+      "first_page": "77",
+      "last_page": "84",
+      "container": "Trends in Cognitive Sciences",
+      "bib_id": 43,
+      "year_suffix": "",
+      "text_id": 332
+    }
+  ],
+  "xref": [
+    {
+      "xref_id": 0,
+      "xref_type": "bib",
+      "contents": "(Akaike, 1981;",
+      "text_id": null
+    },
+    {
+      "xref_id": 1,
+      "xref_type": "bib",
+      "contents": "(Baayen, Davidson, & Bates, 2008;",
+      "text_id": 122
+    },
+    {
+      "xref_id": 2,
+      "xref_type": "bib",
+      "contents": "(Bar, 2004;",
+      "text_id": 10
+    },
+    {
+      "xref_id": 2,
+      "xref_type": "bib",
+      "contents": "(Bar, 2004;",
+      "text_id": 251
+    },
+    {
+      "xref_id": 3,
+      "xref_type": "bib",
+      "contents": "(Bichot, Rossi, & Desimone, 2005;",
+      "text_id": 232
+    },
+    {
+      "xref_id": 3,
+      "xref_type": "bib",
+      "contents": "(Bichot, Rossi, & Desimone, 2005;",
+      "text_id": 235
+    },
+    {
+      "xref_id": 4,
+      "xref_type": "bib",
+      "contents": "Bozdogan, 1987",
+      "text_id": null
+    },
+    {
+      "xref_id": 5,
+      "xref_type": "bib",
+      "contents": "Bravo and Farid (2009)",
+      "text_id": null
+    },
+    {
+      "xref_id": 6,
+      "xref_type": "bib",
+      "contents": "(Bundesen, Habekost, & Kyllingsbaek, 2005;",
+      "text_id": 238
+    },
+    {
+      "xref_id": 7,
+      "xref_type": "bib",
+      "contents": "(Carlisle, Arita, Pardo, & Woodman, 2011;",
+      "text_id": 238
+    },
+    {
+      "xref_id": 7,
+      "xref_type": "bib",
+      "contents": "Carlisle et al., 2011;",
+      "text_id": 238
+    },
+    {
+      "xref_id": 8,
+      "xref_type": "bib",
+      "contents": "(Chelazzi, Duncan, Miller, & Desimone, 1998)",
+      "text_id": 235
+    },
+    {
+      "xref_id": 9,
+      "xref_type": "bib",
+      "contents": "Chelazzi, Miller, Duncan, & Desimone, 2001)",
+      "text_id": 235
+    },
+    {
+      "xref_id": 10,
+      "xref_type": "bib",
+      "contents": "(Chen, Sperandio, Henry, & Goodale, 2019)",
+      "text_id": 233
+    },
+    {
+      "xref_id": 11,
+      "xref_type": "bib",
+      "contents": "Chun, 2011;",
+      "text_id": 238
+    },
+    {
+      "xref_id": 12,
+      "xref_type": "bib",
+      "contents": "Chun, Golomb, & Turk-Browne, 2011;",
+      "text_id": 238
+    },
+    {
+      "xref_id": 13,
+      "xref_type": "bib",
+      "contents": "de Fockert, Rees, Frith, & Lavie, 2001;",
+      "text_id": 238
+    },
+    {
+      "xref_id": 14,
+      "xref_type": "bib",
+      "contents": "Desimone & Duncan, 1995)",
+      "text_id": 7
+    },
+    {
+      "xref_id": 14,
+      "xref_type": "bib",
+      "contents": "Desimone & Duncan, 1995)",
+      "text_id": 9
+    },
+    {
+      "xref_id": 14,
+      "xref_type": "bib",
+      "contents": "(Desimone & Duncan, 1995;",
+      "text_id": 7
+    },
+    {
+      "xref_id": 14,
+      "xref_type": "bib",
+      "contents": "(Desimone & Duncan, 1995;",
+      "text_id": 9
+    },
+    {
+      "xref_id": 15,
+      "xref_type": "bib",
+      "contents": "Duncan & Humphreys, 1989;",
+      "text_id": 9
+    },
+    {
+      "xref_id": 16,
+      "xref_type": "bib",
+      "contents": "(Eckstein, Koehler, Welbourne, & Akbas, 2017)",
+      "text_id": 20
+    },
+    {
+      "xref_id": 17,
+      "xref_type": "bib",
+      "contents": "Eimer, 2014;",
+      "text_id": 9
+    },
+    {
+      "xref_id": 18,
+      "xref_type": "bib",
+      "contents": "Fang, Boyaci, Kersten, & Murray, 2008;",
+      "text_id": 232
+    },
+    {
+      "xref_id": 19,
+      "xref_type": "bib",
+      "contents": "(Gayet et al., 2017)",
+      "text_id": 235
+    },
+    {
+      "xref_id": 20,
+      "xref_type": "bib",
+      "contents": "Gregory, 1968",
+      "text_id": 22
+    },
+    {
+      "xref_id": 21,
+      "xref_type": "bib",
+      "contents": "Gunseli, Meeter, & Olivers, 2014)",
+      "text_id": 238
+    },
+    {
+      "xref_id": 22,
+      "xref_type": "bib",
+      "contents": "He, Mo, Wang, & Fang, 2015;",
+      "text_id": 232
+    },
+    {
+      "xref_id": 23,
+      "xref_type": "bib",
+      "contents": "Hodsoll & Humphreys, 2005)",
+      "text_id": 238
+    },
+    {
+      "xref_id": 24,
+      "xref_type": "bib",
+      "contents": "Hodsoll, Humphreys, & Braithwaite, 2006)",
+      "text_id": 239
+    },
+    {
+      "xref_id": 25,
+      "xref_type": "bib",
+      "contents": "Jiang, Costello, Fang, Huang, & He, 2006;",
+      "text_id": 29
+    },
+    {
+      "xref_id": 26,
+      "xref_type": "bib",
+      "contents": "Kastner & Ungerleider, 2001;",
+      "text_id": 9
+    },
+    {
+      "xref_id": 27,
+      "xref_type": "bib",
+      "contents": "Magezi, 2015)",
+      "text_id": 122
+    },
+    {
+      "xref_id": 28,
+      "xref_type": "bib",
+      "contents": "Murray, Boyaci, & Kersten, 2006;",
+      "text_id": 232
+    },
+    {
+      "xref_id": 29,
+      "xref_type": "bib",
+      "contents": "Ni, Murray, & Horwitz, 2014;",
+      "text_id": 232
+    },
+    {
+      "xref_id": 29,
+      "xref_type": "bib",
+      "contents": "Ni, Murray, & Horwitz, 2014;",
+      "text_id": 233
+    },
+    {
+      "xref_id": 29,
+      "xref_type": "bib",
+      "contents": "(Ni et al., 2014)",
+      "text_id": 232
+    },
+    {
+      "xref_id": 29,
+      "xref_type": "bib",
+      "contents": "(Ni et al., 2014)",
+      "text_id": 233
+    },
+    {
+      "xref_id": 30,
+      "xref_type": "bib",
+      "contents": "Oliva & Torralba, 2007)",
+      "text_id": 10
+    },
+    {
+      "xref_id": 31,
+      "xref_type": "bib",
+      "contents": "Olivers, Meijer, & Theeuwes, 2006;",
+      "text_id": 41
+    },
+    {
+      "xref_id": 31,
+      "xref_type": "bib",
+      "contents": "Olivers et al., 2006;",
+      "text_id": 229
+    },
+    {
+      "xref_id": 32,
+      "xref_type": "bib",
+      "contents": "Peelen & Kastner, 2014)",
+      "text_id": 251
+    },
+    {
+      "xref_id": 33,
+      "xref_type": "bib",
+      "contents": "(Ponzo, 1911)",
+      "text_id": 23
+    },
+    {
+      "xref_id": 34,
+      "xref_type": "bib",
+      "contents": "Reeder & Peelen, 2013)",
+      "text_id": 29
+    },
+    {
+      "xref_id": 34,
+      "xref_type": "bib",
+      "contents": "(Reeder & Peelen, 2013)",
+      "text_id": null
+    },
+    {
+      "xref_id": 35,
+      "xref_type": "bib",
+      "contents": "Schwarzkopf, Song, & Rees, 2011",
+      "text_id": 232
+    },
+    {
+      "xref_id": 36,
+      "xref_type": "bib",
+      "contents": "Soto, Heinke, Humphreys, & Blanco, 2005)",
+      "text_id": 229
+    },
+    {
+      "xref_id": 37,
+      "xref_type": "bib",
+      "contents": "Soto, Hodsoll, Rotshtein, & Humphreys, 2008)",
+      "text_id": 228
+    },
+    {
+      "xref_id": 38,
+      "xref_type": "bib",
+      "contents": "Sperandio & Chouinard, 2015)",
+      "text_id": 232
+    },
+    {
+      "xref_id": 39,
+      "xref_type": "bib",
+      "contents": "van Moorselaar, Theeuwes, & Olivers, 2014)",
+      "text_id": 41
+    },
+    {
+      "xref_id": 40,
+      "xref_type": "bib",
+      "contents": "Wolfe, 1994;",
+      "text_id": 9
+    },
+    {
+      "xref_id": 41,
+      "xref_type": "bib",
+      "contents": "Wolfe & Horowitz, 2004)",
+      "text_id": 9
+    },
+    {
+      "xref_id": 41,
+      "xref_type": "bib",
+      "contents": "(Wolfe & Horowitz, 2004;",
+      "text_id": 10
+    },
+    {
+      "xref_id": 42,
+      "xref_type": "bib",
+      "contents": "(Wolfe & Horowitz, 2017)",
+      "text_id": 231
+    },
+    {
+      "xref_id": 43,
+      "xref_type": "bib",
+      "contents": "Wolfe, Võ, Evans, & Greene, 2011)",
+      "text_id": 10
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "1b",
+      "text_id": 53
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "1a",
+      "text_id": 66
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "1d",
+      "text_id": 73
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "1a",
+      "text_id": 85
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "1a",
+      "text_id": 88
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "1d",
+      "text_id": 85
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "1d",
+      "text_id": 88
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "1a",
+      "text_id": 89
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "1b",
+      "text_id": 89
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "1d",
+      "text_id": 89
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "1c",
+      "text_id": 101
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "2",
+      "text_id": null
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "2",
+      "text_id": null
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "3a",
+      "text_id": 133
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "3a",
+      "text_id": 138
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "3b",
+      "text_id": 133
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "3b",
+      "text_id": 138
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "3a",
+      "text_id": 175
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "3b",
+      "text_id": 187
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "3b",
+      "text_id": 218
+    },
+    {
+      "xref_id": null,
+      "xref_type": null,
+      "contents": "0",
+      "text_id": 91
+    },
+    {
+      "xref_id": null,
+      "xref_type": "table",
+      "contents": "S",
+      "text_id": null
+    },
+    {
+      "xref_id": null,
+      "xref_type": "table",
+      "contents": "S",
+      "text_id": null
+    },
+    {
+      "xref_id": null,
+      "xref_type": "table",
+      "contents": "S",
+      "text_id": null
+    },
+    {
+      "xref_id": null,
+      "xref_type": "table",
+      "contents": "S",
+      "text_id": 133
+    },
+    {
+      "xref_id": null,
+      "xref_type": "table",
+      "contents": "S",
+      "text_id": null
+    }
+  ],
+  "figure": [
+    {
+      "figure_id": 1,
+      "section_id": 26,
+      "image": null,
+      "page_number": null
+    },
+    {
+      "figure_id": 2,
+      "section_id": 27,
+      "image": null,
+      "page_number": null
+    },
+    {
+      "figure_id": 3,
+      "section_id": 28,
+      "image": null,
+      "page_number": null
+    }
+  ],
+  "table": [],
+  "eq": [
+    {
+      "text_id": 42,
+      "grp_id": 1,
+      "lhs": "SD",
+      "comp": "=",
+      "rhs": "3.7"
+    },
+    {
+      "text_id": 46,
+      "grp_id": 2,
+      "lhs": "SD",
+      "comp": "=",
+      "rhs": "2.8"
+    },
+    {
+      "text_id": 48,
+      "grp_id": 3,
+      "lhs": "SD",
+      "comp": "=",
+      "rhs": "3.6"
+    },
+    {
+      "text_id": 131,
+      "grp_id": 4,
+      "lhs": "95% CI",
+      "comp": "=",
+      "rhs": "[13.7%, 24.9%]"
+    },
+    {
+      "text_id": 131,
+      "grp_id": 4,
+      "lhs": "t(1257)",
+      "comp": "=",
+      "rhs": "6.75"
+    },
+    {
+      "text_id": 131,
+      "grp_id": 4,
+      "lhs": "p",
+      "comp": "<",
+      "rhs": ".001"
+    },
+    {
+      "text_id": 132,
+      "grp_id": 5,
+      "lhs": "t(1257)",
+      "comp": "=",
+      "rhs": "2.06"
+    },
+    {
+      "text_id": 132,
+      "grp_id": 5,
+      "lhs": "p",
+      "comp": "=",
+      "rhs": ".039"
+    },
+    {
+      "text_id": 132,
+      "grp_id": 5,
+      "lhs": "coefficient",
+      "comp": "=",
+      "rhs": "[0.2%, 7.6%]"
+    },
+    {
+      "text_id": 138,
+      "grp_id": 6,
+      "lhs": "95% CI",
+      "comp": "=",
+      "rhs": "[6 ms, 27 ms]"
+    },
+    {
+      "text_id": 138,
+      "grp_id": 6,
+      "lhs": "fit",
+      "comp": "=",
+      "rhs": "528"
+    },
+    {
+      "text_id": 138,
+      "grp_id": 6,
+      "lhs": "t(2077)",
+      "comp": "=",
+      "rhs": "3.04"
+    },
+    {
+      "text_id": 138,
+      "grp_id": 6,
+      "lhs": "p",
+      "comp": "=",
+      "rhs": ".002"
+    },
+    {
+      "text_id": 139,
+      "grp_id": 7,
+      "lhs": "t(2077)",
+      "comp": "=",
+      "rhs": "1.99"
+    },
+    {
+      "text_id": 139,
+      "grp_id": 7,
+      "lhs": "p",
+      "comp": "=",
+      "rhs": ".046"
+    },
+    {
+      "text_id": 139,
+      "grp_id": 7,
+      "lhs": "coefficient",
+      "comp": "=",
+      "rhs": "[0 ms, 24 ms]"
+    },
+    {
+      "text_id": 142,
+      "grp_id": 8,
+      "lhs": "SD",
+      "comp": "=",
+      "rhs": "5.4"
+    },
+    {
+      "text_id": 142,
+      "grp_id": 8,
+      "lhs": "SD",
+      "comp": "=",
+      "rhs": "4.4"
+    },
+    {
+      "text_id": 143,
+      "grp_id": 9,
+      "lhs": "t(19)",
+      "comp": "=",
+      "rhs": "-1.55"
+    },
+    {
+      "text_id": 143,
+      "grp_id": 9,
+      "lhs": "p",
+      "comp": "=",
+      "rhs": ".137"
+    },
+    {
+      "text_id": 146,
+      "grp_id": 10,
+      "lhs": "SD",
+      "comp": "=",
+      "rhs": "3.4"
+    },
+    {
+      "text_id": 161,
+      "grp_id": 11,
+      "lhs": "95% CI",
+      "comp": "=",
+      "rhs": "[10.5%, 18.6%]"
+    },
+    {
+      "text_id": 161,
+      "grp_id": 11,
+      "lhs": "t(1637)",
+      "comp": "=",
+      "rhs": "7.07"
+    },
+    {
+      "text_id": 161,
+      "grp_id": 11,
+      "lhs": "p",
+      "comp": "<",
+      "rhs": ".001"
+    },
+    {
+      "text_id": 167,
+      "grp_id": 12,
+      "lhs": "t(1637)",
+      "comp": "=",
+      "rhs": "2.50"
+    },
+    {
+      "text_id": 167,
+      "grp_id": 12,
+      "lhs": "p",
+      "comp": "=",
+      "rhs": ".013"
+    },
+    {
+      "text_id": 167,
+      "grp_id": 12,
+      "lhs": "coefficient",
+      "comp": "=",
+      "rhs": "[0.9%, 7.9%]"
+    },
+    {
+      "text_id": 169,
+      "grp_id": 13,
+      "lhs": "t(1633)",
+      "comp": "=",
+      "rhs": "-0.31"
+    },
+    {
+      "text_id": 169,
+      "grp_id": 13,
+      "lhs": "p",
+      "comp": "=",
+      "rhs": ".753"
+    },
+    {
+      "text_id": 169,
+      "grp_id": 13,
+      "lhs": "coefficient",
+      "comp": "=",
+      "rhs": "[-6.4%, 4.6%]"
+    },
+    {
+      "text_id": 170,
+      "grp_id": 14,
+      "lhs": "t(1633)",
+      "comp": "=",
+      "rhs": "0.45"
+    },
+    {
+      "text_id": 170,
+      "grp_id": 14,
+      "lhs": "p",
+      "comp": "=",
+      "rhs": ".654"
+    },
+    {
+      "text_id": 170,
+      "grp_id": 14,
+      "lhs": "coefficient",
+      "comp": "=",
+      "rhs": "[3.1%, 5.0%]"
+    },
+    {
+      "text_id": 173,
+      "grp_id": 15,
+      "lhs": "95% CI",
+      "comp": "=",
+      "rhs": "[10.1%, 17.7%]"
+    },
+    {
+      "text_id": 173,
+      "grp_id": 15,
+      "lhs": "t(3271)",
+      "comp": "=",
+      "rhs": "7.16"
+    },
+    {
+      "text_id": 173,
+      "grp_id": 15,
+      "lhs": "p",
+      "comp": "<",
+      "rhs": ".001"
+    },
+    {
+      "text_id": 177,
+      "grp_id": 16,
+      "lhs": "95% CI",
+      "comp": "=",
+      "rhs": "[16 ms, 32 ms]"
+    },
+    {
+      "text_id": 177,
+      "grp_id": 16,
+      "lhs": "fit",
+      "comp": "=",
+      "rhs": "464"
+    },
+    {
+      "text_id": 177,
+      "grp_id": 16,
+      "lhs": "t(2885)",
+      "comp": "=",
+      "rhs": "6.24"
+    },
+    {
+      "text_id": 177,
+      "grp_id": 16,
+      "lhs": "p",
+      "comp": "<",
+      "rhs": ".001"
+    },
+    {
+      "text_id": 178,
+      "grp_id": 17,
+      "lhs": "t(2885)",
+      "comp": "=",
+      "rhs": "0.52"
+    },
+    {
+      "text_id": 178,
+      "grp_id": 17,
+      "lhs": "p",
+      "comp": "=",
+      "rhs": ".604"
+    },
+    {
+      "text_id": 178,
+      "grp_id": 17,
+      "lhs": "coefficient",
+      "comp": "=",
+      "rhs": "[-6 ms, 11 ms]"
+    },
+    {
+      "text_id": 181,
+      "grp_id": 18,
+      "lhs": "95% CI",
+      "comp": "=",
+      "rhs": "[-14 ms, 2 ms]"
+    },
+    {
+      "text_id": 181,
+      "grp_id": 18,
+      "lhs": "t(2885)",
+      "comp": "=",
+      "rhs": "1.52"
+    },
+    {
+      "text_id": 181,
+      "grp_id": 18,
+      "lhs": "p",
+      "comp": "=",
+      "rhs": ".13"
+    },
+    {
+      "text_id": 182,
+      "grp_id": 19,
+      "lhs": "t(2885)",
+      "comp": "=",
+      "rhs": "-1.18"
+    },
+    {
+      "text_id": 182,
+      "grp_id": 19,
+      "lhs": "p",
+      "comp": "=",
+      "rhs": ".237"
+    },
+    {
+      "text_id": 182,
+      "grp_id": 19,
+      "lhs": "coefficient",
+      "comp": "=",
+      "rhs": "[-14 ms, 3 ms]"
+    },
+    {
+      "text_id": 185,
+      "grp_id": 20,
+      "lhs": "95% CI",
+      "comp": "=",
+      "rhs": "[17 ms, 36 ms]"
+    },
+    {
+      "text_id": 185,
+      "grp_id": 20,
+      "lhs": "t(5747)",
+      "comp": "=",
+      "rhs": "5.58"
+    },
+    {
+      "text_id": 185,
+      "grp_id": 20,
+      "lhs": "p",
+      "comp": "<",
+      "rhs": ".001"
+    },
+    {
+      "text_id": 188,
+      "grp_id": 21,
+      "lhs": "SD",
+      "comp": "=",
+      "rhs": "4.9"
+    },
+    {
+      "text_id": 188,
+      "grp_id": 21,
+      "lhs": "SD",
+      "comp": "=",
+      "rhs": "5.5"
+    },
+    {
+      "text_id": 189,
+      "grp_id": 22,
+      "lhs": "t(25)",
+      "comp": "=",
+      "rhs": "-0.89"
+    },
+    {
+      "text_id": 189,
+      "grp_id": 22,
+      "lhs": "p",
+      "comp": "=",
+      "rhs": ".385"
+    },
+    {
+      "text_id": 190,
+      "grp_id": 23,
+      "lhs": "SD",
+      "comp": "=",
+      "rhs": "5.0"
+    },
+    {
+      "text_id": 190,
+      "grp_id": 23,
+      "lhs": "SD",
+      "comp": "=",
+      "rhs": "5.4"
+    },
+    {
+      "text_id": 190,
+      "grp_id": 23,
+      "lhs": "t(25)",
+      "comp": "=",
+      "rhs": "-0.55"
+    },
+    {
+      "text_id": 190,
+      "grp_id": 23,
+      "lhs": "p",
+      "comp": "=",
+      "rhs": ".584"
+    },
+    {
+      "text_id": 192,
+      "grp_id": 24,
+      "lhs": "SD",
+      "comp": "=",
+      "rhs": "2.2"
+    },
+    {
+      "text_id": 196,
+      "grp_id": 25,
+      "lhs": "SD",
+      "comp": "=",
+      "rhs": ".03"
+    },
+    {
+      "text_id": 196,
+      "grp_id": 25,
+      "lhs": "p",
+      "comp": "=",
+      "rhs": ".001"
+    },
+    {
+      "text_id": 196,
+      "grp_id": 25,
+      "lhs": "95% CI",
+      "comp": "=",
+      "rhs": "[.03, .14]"
+    },
+    {
+      "text_id": 197,
+      "grp_id": 26,
+      "lhs": "SD",
+      "comp": "=",
+      "rhs": ".04"
+    },
+    {
+      "text_id": 197,
+      "grp_id": 26,
+      "lhs": "p",
+      "comp": "=",
+      "rhs": ".009"
+    },
+    {
+      "text_id": 197,
+      "grp_id": 26,
+      "lhs": "95% CI",
+      "comp": "=",
+      "rhs": "[.03, .16]"
+    },
+    {
+      "text_id": 216,
+      "grp_id": 27,
+      "lhs": "95% CI",
+      "comp": "=",
+      "rhs": "[11 ms, 26 ms]"
+    },
+    {
+      "text_id": 216,
+      "grp_id": 27,
+      "lhs": "fit",
+      "comp": "=",
+      "rhs": "477"
+    },
+    {
+      "text_id": 216,
+      "grp_id": 27,
+      "lhs": "t(2904)",
+      "comp": "=",
+      "rhs": "4.78"
+    },
+    {
+      "text_id": 216,
+      "grp_id": 27,
+      "lhs": "p",
+      "comp": "<",
+      "rhs": ".001"
+    },
+    {
+      "text_id": 217,
+      "grp_id": 28,
+      "lhs": "t(2904)",
+      "comp": "=",
+      "rhs": "1.12"
+    },
+    {
+      "text_id": 217,
+      "grp_id": 28,
+      "lhs": "p",
+      "comp": "=",
+      "rhs": ".265"
+    },
+    {
+      "text_id": 217,
+      "grp_id": 28,
+      "lhs": "coefficient",
+      "comp": "=",
+      "rhs": "[-14 ms, 4 ms]"
+    },
+    {
+      "text_id": 219,
+      "grp_id": 29,
+      "lhs": "SD",
+      "comp": "=",
+      "rhs": "5.0"
+    },
+    {
+      "text_id": 219,
+      "grp_id": 29,
+      "lhs": "SD",
+      "comp": "=",
+      "rhs": "47.2"
+    },
+    {
+      "text_id": 219,
+      "grp_id": 29,
+      "lhs": "t(24)",
+      "comp": "=",
+      "rhs": "0.65"
+    },
+    {
+      "text_id": 219,
+      "grp_id": 29,
+      "lhs": "p",
+      "comp": "=",
+      "rhs": ".524"
+    },
+    {
+      "text_id": 221,
+      "grp_id": 30,
+      "lhs": "SD",
+      "comp": "=",
+      "rhs": "2.2"
+    },
+    {
+      "text_id": 166,
+      "grp_id": 31,
+      "lhs": "p",
+      "comp": "<",
+      "rhs": ".005"
+    },
+    {
+      "text_id": 288,
+      "grp_id": 32,
+      "lhs": "p",
+      "comp": "<",
+      "rhs": ".005"
+    }
+  ],
+  "bib_match": [
+    {
+      "bib_id": 0,
+      "service": "crossref",
+      "service_id": null,
+      "score": 52.2447,
+      "bib_type": "article",
+      "doi": "10.1016/0304-4076(81)90071-3",
+      "title": "Likelihood of a model and information criteria",
+      "authors": [
+        {
+          "given": "Hirotugu",
+          "family": "Akaike"
+        }
+      ],
+      "editors": [],
+      "publisher": "Elsevier BV",
+      "year": 1981,
+      "date": null,
+      "container": "Journal of Econometrics",
+      "volume": "16",
+      "issue": "1",
+      "first_page": "3",
+      "last_page": "14",
+      "edition": null,
+      "version": null,
+      "url": "https://doi.org/10.1016/0304-4076(81)90071-3"
+    },
+    {
+      "bib_id": 1,
+      "service": "crossref",
+      "service_id": null,
+      "score": 82.8217,
+      "bib_type": "article",
+      "doi": "10.1016/j.jml.2007.12.005",
+      "title": "Mixed-effects modeling with crossed random effects for subjects and items",
+      "authors": [
+        {
+          "given": "R.H.",
+          "family": "Baayen"
+        },
+        {
+          "given": "D.J.",
+          "family": "Davidson"
+        },
+        {
+          "given": "D.M.",
+          "family": "Bates"
+        }
+      ],
+      "editors": [],
+      "publisher": "Elsevier BV",
+      "year": 2008,
+      "date": null,
+      "container": "Journal of Memory and Language",
+      "volume": "59",
+      "issue": "4",
+      "first_page": "390",
+      "last_page": "412",
+      "edition": null,
+      "version": null,
+      "url": "https://doi.org/10.1016/j.jml.2007.12.005"
+    },
+    {
+      "bib_id": 3,
+      "service": "crossref",
+      "service_id": null,
+      "score": 100.1773,
+      "bib_type": "article",
+      "doi": "10.1126/science.1109676",
+      "title": "Parallel and Serial Neural Mechanisms for Visual Search in Macaque Area V4",
+      "authors": [
+        {
+          "given": "Narcisse P.",
+          "family": "Bichot"
+        },
+        {
+          "given": "Andrew F.",
+          "family": "Rossi"
+        },
+        {
+          "given": "Robert",
+          "family": "Desimone"
+        }
+      ],
+      "editors": [],
+      "publisher": "American Association for the Advancement of Science (AAAS)",
+      "year": 2005,
+      "date": null,
+      "container": "Science",
+      "volume": "308",
+      "issue": "5721",
+      "first_page": "529",
+      "last_page": "534",
+      "edition": null,
+      "version": null,
+      "url": "https://doi.org/10.1126/science.1109676"
+    },
+    {
+      "bib_id": 4,
+      "service": "crossref",
+      "service_id": null,
+      "score": 93.4415,
+      "bib_type": "article",
+      "doi": "10.1007/bf02294361",
+      "title": "Model Selection and Akaike's Information Criterion (AIC): The General Theory and its Analytical Extensions",
+      "authors": [
+        {
+          "given": "Hamparsum",
+          "family": "Bozdogan"
+        }
+      ],
+      "editors": [],
+      "publisher": "Cambridge University Press (CUP)",
+      "year": 1987,
+      "date": null,
+      "container": "Psychometrika",
+      "volume": "52",
+      "issue": "3",
+      "first_page": "345",
+      "last_page": "370",
+      "edition": null,
+      "version": null,
+      "url": "https://doi.org/10.1007/bf02294361"
+    },
+    {
+      "bib_id": 5,
+      "service": "crossref",
+      "service_id": null,
+      "score": 52.8824,
+      "bib_type": "article",
+      "doi": "10.1167/9.1.34",
+      "title": "The specificity of the search template",
+      "authors": [
+        {
+          "given": "M. J.",
+          "family": "Bravo"
+        },
+        {
+          "given": "H.",
+          "family": "Farid"
+        }
+      ],
+      "editors": [],
+      "publisher": "Association for Research in Vision and Ophthalmology (ARVO)",
+      "year": 2009,
+      "date": null,
+      "container": "Journal of Vision",
+      "volume": "9",
+      "issue": "1",
+      "first_page": "34",
+      "last_page": "34",
+      "edition": null,
+      "version": null,
+      "url": "https://doi.org/10.1167/9.1.34"
+    },
+    {
+      "bib_id": 6,
+      "service": "crossref",
+      "service_id": null,
+      "score": 87.7647,
+      "bib_type": "article",
+      "doi": "10.1037/0033-295x.112.2.291",
+      "title": "A Neural Theory of Visual Attention: Bridging Cognition and Neurophysiology.",
+      "authors": [
+        {
+          "given": "Claus",
+          "family": "Bundesen"
+        },
+        {
+          "given": "Thomas",
+          "family": "Habekost"
+        },
+        {
+          "given": "Søren",
+          "family": "Kyllingsbæk"
+        }
+      ],
+      "editors": [],
+      "publisher": "American Psychological Association (APA)",
+      "year": 2005,
+      "date": null,
+      "container": "Psychological Review",
+      "volume": "112",
+      "issue": "2",
+      "first_page": "291",
+      "last_page": "328",
+      "edition": null,
+      "version": null,
+      "url": "https://doi.org/10.1037/0033-295x.112.2.291"
+    },
+    {
+      "bib_id": 7,
+      "service": "crossref",
+      "service_id": null,
+      "score": 82.3672,
+      "bib_type": "article",
+      "doi": "10.1523/jneurosci.1097-11.2011",
+      "title": "Attentional Templates in Visual Working Memory",
+      "authors": [
+        {
+          "given": "N. B.",
+          "family": "Carlisle"
+        },
+        {
+          "given": "J. T.",
+          "family": "Arita"
+        },
+        {
+          "given": "D.",
+          "family": "Pardo"
+        },
+        {
+          "given": "G. F.",
+          "family": "Woodman"
+        }
+      ],
+      "editors": [],
+      "publisher": "Society for Neuroscience",
+      "year": 2011,
+      "date": null,
+      "container": "Journal of Neuroscience",
+      "volume": "31",
+      "issue": "25",
+      "first_page": "9315",
+      "last_page": "9322",
+      "edition": null,
+      "version": null,
+      "url": "https://doi.org/10.1523/jneurosci.1097-11.2011"
+    },
+    {
+      "bib_id": 8,
+      "service": "crossref",
+      "service_id": null,
+      "score": 105.356,
+      "bib_type": "article",
+      "doi": "10.1152/jn.1998.80.6.2918",
+      "title": "Responses of Neurons in Inferior Temporal Cortex During Memory-Guided Visual Search",
+      "authors": [
+        {
+          "given": "Leonardo",
+          "family": "Chelazzi"
+        },
+        {
+          "given": "John",
+          "family": "Duncan"
+        },
+        {
+          "given": "Earl K.",
+          "family": "Miller"
+        },
+        {
+          "given": "Robert",
+          "family": "Desimone"
+        }
+      ],
+      "editors": [],
+      "publisher": "American Physiological Society",
+      "year": 1998,
+      "date": null,
+      "container": "Journal of Neurophysiology",
+      "volume": "80",
+      "issue": "6",
+      "first_page": "2918",
+      "last_page": "2940",
+      "edition": null,
+      "version": null,
+      "url": "https://doi.org/10.1152/jn.1998.80.6.2918"
+    },
+    {
+      "bib_id": 9,
+      "service": "crossref",
+      "service_id": null,
+      "score": 117.9657,
+      "bib_type": "article",
+      "doi": "10.1093/cercor/11.8.761",
+      "title": "Responses of Neurons in Macaque Area V4 During Memory-guided Visual Search",
+      "authors": [
+        {
+          "given": "Leonardo",
+          "family": "Chelazzi"
+        },
+        {
+          "given": "Earl K.",
+          "family": "Miller"
+        },
+        {
+          "given": "John",
+          "family": "Duncan"
+        },
+        {
+          "given": "Robert",
+          "family": "Desimone"
+        }
+      ],
+      "editors": [],
+      "publisher": "Oxford University Press (OUP)",
+      "year": 2001,
+      "date": null,
+      "container": "Cerebral Cortex",
+      "volume": "11",
+      "issue": "8",
+      "first_page": "761",
+      "last_page": "772",
+      "edition": null,
+      "version": null,
+      "url": "https://doi.org/10.1093/cercor/11.8.761"
+    },
+    {
+      "bib_id": 10,
+      "service": "crossref",
+      "service_id": null,
+      "score": 113.4658,
+      "bib_type": "article",
+      "doi": "10.1016/j.cub.2019.05.069",
+      "title": "Changing the Real Viewing Distance Reveals the Temporal Evolution of Size Constancy in Visual Cortex",
+      "authors": [
+        {
+          "given": "Juan",
+          "family": "Chen"
+        },
+        {
+          "given": "Irene",
+          "family": "Sperandio"
+        },
+        {
+          "given": "Molly J.",
+          "family": "Henry"
+        },
+        {
+          "given": "Melvyn A.",
+          "family": "Goodale"
+        }
+      ],
+      "editors": [],
+      "publisher": "Elsevier BV",
+      "year": 2019,
+      "date": null,
+      "container": "Current Biology",
+      "volume": "29",
+      "issue": "13",
+      "first_page": "2237",
+      "last_page": "2243.e4",
+      "edition": null,
+      "version": null,
+      "url": "https://doi.org/10.1016/j.cub.2019.05.069"
+    },
+    {
+      "bib_id": 11,
+      "service": "crossref",
+      "service_id": null,
+      "score": 93.6578,
+      "bib_type": "article",
+      "doi": "10.1016/j.neuropsychologia.2011.01.029",
+      "title": "Visual working memory as visual attention sustained internally over time",
+      "authors": [
+        {
+          "given": "Marvin M.",
+          "family": "Chun"
+        }
+      ],
+      "editors": [],
+      "publisher": "Elsevier BV",
+      "year": 2011,
+      "date": null,
+      "container": "Neuropsychologia",
+      "volume": "49",
+      "issue": "6",
+      "first_page": "1407",
+      "last_page": "1409",
+      "edition": null,
+      "version": null,
+      "url": "https://doi.org/10.1016/j.neuropsychologia.2011.01.029"
+    },
+    {
+      "bib_id": 12,
+      "service": "crossref",
+      "service_id": null,
+      "score": 75.4001,
+      "bib_type": "article",
+      "doi": "10.1146/annurev.psych.093008.100427",
+      "title": "A Taxonomy of External and Internal Attention",
+      "authors": [
+        {
+          "given": "Marvin M.",
+          "family": "Chun"
+        },
+        {
+          "given": "Julie D.",
+          "family": "Golomb"
+        },
+        {
+          "given": "Nicholas B.",
+          "family": "Turk-Browne"
+        }
+      ],
+      "editors": [],
+      "publisher": "Annual Reviews",
+      "year": 2011,
+      "date": null,
+      "container": "Annual Review of Psychology",
+      "volume": "62",
+      "issue": "1",
+      "first_page": "73",
+      "last_page": "101",
+      "edition": null,
+      "version": null,
+      "url": "https://doi.org/10.1146/annurev.psych.093008.100427"
+    },
+    {
+      "bib_id": 13,
+      "service": "crossref",
+      "service_id": null,
+      "score": 85.2493,
+      "bib_type": "article",
+      "doi": "10.1126/science.1056496",
+      "title": "The Role of Working Memory in Visual Selective Attention",
+      "authors": [
+        {
+          "given": "Jan W.",
+          "family": "de Fockert"
+        },
+        {
+          "given": "Geraint",
+          "family": "Rees"
+        },
+        {
+          "given": "Christopher D.",
+          "family": "Frith"
+        },
+        {
+          "given": "Nilli",
+          "family": "Lavie"
+        }
+      ],
+      "editors": [],
+      "publisher": "American Association for the Advancement of Science (AAAS)",
+      "year": 2001,
+      "date": null,
+      "container": "Science",
+      "volume": "291",
+      "issue": "5509",
+      "first_page": "1803",
+      "last_page": "1806",
+      "edition": null,
+      "version": null,
+      "url": "https://doi.org/10.1126/science.1056496"
+    },
+    {
+      "bib_id": 14,
+      "service": "crossref",
+      "service_id": null,
+      "score": 66.9538,
+      "bib_type": "article",
+      "doi": "10.1146/annurev.ne.18.030195.001205",
+      "title": "Neural Mechanisms of Selective Visual Attention",
+      "authors": [
+        {
+          "given": "Robert",
+          "family": "Desimone"
+        },
+        {
+          "given": "John",
+          "family": "Duncan"
+        }
+      ],
+      "editors": [],
+      "publisher": "Annual Reviews",
+      "year": 1995,
+      "date": null,
+      "container": "Annual Review of Neuroscience",
+      "volume": "18",
+      "issue": "1",
+      "first_page": "193",
+      "last_page": "222",
+      "edition": null,
+      "version": null,
+      "url": "https://doi.org/10.1146/annurev.ne.18.030195.001205"
+    },
+    {
+      "bib_id": 15,
+      "service": "crossref",
+      "service_id": null,
+      "score": 65.1943,
+      "bib_type": "article",
+      "doi": "10.1037/0033-295x.96.3.433",
+      "title": "Visual search and stimulus similarity.",
+      "authors": [
+        {
+          "given": "John",
+          "family": "Duncan"
+        },
+        {
+          "given": "Glyn W.",
+          "family": "Humphreys"
+        }
+      ],
+      "editors": [],
+      "publisher": "American Psychological Association (APA)",
+      "year": 1989,
+      "date": null,
+      "container": "Psychological Review",
+      "volume": "96",
+      "issue": "3",
+      "first_page": "433",
+      "last_page": "458",
+      "edition": null,
+      "version": null,
+      "url": "https://doi.org/10.1037/0033-295x.96.3.433"
+    },
+    {
+      "bib_id": 16,
+      "service": "crossref",
+      "service_id": null,
+      "score": 116.6517,
+      "bib_type": "article",
+      "doi": "10.1016/j.cub.2017.07.068",
+      "title": "Humans, but Not Deep Neural Networks, Often Miss Giant Targets in Scenes",
+      "authors": [
+        {
+          "given": "Miguel P.",
+          "family": "Eckstein"
+        },
+        {
+          "given": "Kathryn",
+          "family": "Koehler"
+        },
+        {
+          "given": "Lauren E.",
+          "family": "Welbourne"
+        },
+        {
+          "given": "Emre",
+          "family": "Akbas"
+        }
+      ],
+      "editors": [],
+      "publisher": "Elsevier BV",
+      "year": 2017,
+      "date": null,
+      "container": "Current Biology",
+      "volume": "27",
+      "issue": "18",
+      "first_page": "2827",
+      "last_page": "2832.e3",
+      "edition": null,
+      "version": null,
+      "url": "https://doi.org/10.1016/j.cub.2017.07.068"
+    },
+    {
+      "bib_id": 17,
+      "service": "crossref",
+      "service_id": null,
+      "score": 74.6829,
+      "bib_type": "article",
+      "doi": "10.1016/j.tics.2014.05.005",
+      "title": "The neural basis of attentional control in visual search",
+      "authors": [
+        {
+          "given": "Martin",
+          "family": "Eimer"
+        }
+      ],
+      "editors": [],
+      "publisher": "Elsevier BV",
+      "year": 2014,
+      "date": null,
+      "container": "Trends in Cognitive Sciences",
+      "volume": "18",
+      "issue": "10",
+      "first_page": "526",
+      "last_page": "535",
+      "edition": null,
+      "version": null,
+      "url": "https://doi.org/10.1016/j.tics.2014.05.005"
+    },
+    {
+      "bib_id": 18,
+      "service": "crossref",
+      "service_id": null,
+      "score": 96.214,
+      "bib_type": "article",
+      "doi": "10.1016/j.cub.2008.09.025",
+      "title": "Attention-Dependent Representation of a Size Illusion in Human V1",
+      "authors": [
+        {
+          "given": "Fang",
+          "family": "Fang"
+        },
+        {
+          "given": "Huseyin",
+          "family": "Boyaci"
+        },
+        {
+          "given": "Daniel",
+          "family": "Kersten"
+        },
+        {
+          "given": "Scott O.",
+          "family": "Murray"
+        }
+      ],
+      "editors": [],
+      "publisher": "Elsevier BV",
+      "year": 2008,
+      "date": null,
+      "container": "Current Biology",
+      "volume": "18",
+      "issue": "21",
+      "first_page": "1707",
+      "last_page": "1712",
+      "edition": null,
+      "version": null,
+      "url": "https://doi.org/10.1016/j.cub.2008.09.025"
+    },
+    {
+      "bib_id": 19,
+      "service": "crossref",
+      "service_id": null,
+      "score": 157.4681,
+      "bib_type": "misc",
+      "doi": "10.7490/f1000research.1112184.1",
+      "title": "Visual working memory enhances neural representations of matching visual input",
+      "authors": [
+        {
+          "given": "Surya",
+          "family": "Gayet"
+        },
+        {
+          "given": "Chris",
+          "family": "Paffen"
+        },
+        {
+          "given": "Stefan",
+          "family": "Van der Stigchel"
+        },
+        {
+          "given": "Thomas",
+          "family": "Christophel"
+        },
+        {
+          "given": "John-Dylan",
+          "family": "Haynes"
+        },
+        {
+          "given": "Matthias",
+          "family": "Guggenmos"
+        },
+        {
+          "given": "Philipp",
+          "family": "Sterzer"
+        }
+      ],
+      "editors": [],
+      "publisher": "F1000 Research Ltd",
+      "year": 2016,
+      "date": null,
+      "container": null,
+      "volume": null,
+      "issue": null,
+      "first_page": null,
+      "last_page": null,
+      "edition": null,
+      "version": null,
+      "url": "https://doi.org/10.7490/f1000research.1112184.1"
+    },
+    {
+      "bib_id": 21,
+      "service": "crossref",
+      "service_id": null,
+      "score": 155.1181,
+      "bib_type": "article",
+      "doi": "10.1016/j.neuropsychologia.2014.05.012",
+      "title": "Is a search template an ordinary working memory? Comparing electrophysiological markers of working memory maintenance for visual search and recognition",
+      "authors": [
+        {
+          "given": "Eren",
+          "family": "Gunseli"
+        },
+        {
+          "given": "Martijn",
+          "family": "Meeter"
+        },
+        {
+          "given": "Christian N.L.",
+          "family": "Olivers"
+        }
+      ],
+      "editors": [],
+      "publisher": "Elsevier BV",
+      "year": 2014,
+      "date": null,
+      "container": "Neuropsychologia",
+      "volume": "60",
+      "issue": null,
+      "first_page": "29",
+      "last_page": "38",
+      "edition": null,
+      "version": null,
+      "url": "https://doi.org/10.1016/j.neuropsychologia.2014.05.012"
+    },
+    {
+      "bib_id": 22,
+      "service": "crossref",
+      "service_id": null,
+      "score": 116.4115,
+      "bib_type": "article",
+      "doi": "10.1007/s00221-015-4425-3",
+      "title": "Position shifts of fMRI-based population receptive fields in human visual cortex induced by Ponzo illusion",
+      "authors": [
+        {
+          "given": "Dongjun",
+          "family": "He"
+        },
+        {
+          "given": "Ce",
+          "family": "Mo"
+        },
+        {
+          "given": "Yizhou",
+          "family": "Wang"
+        },
+        {
+          "given": "Fang",
+          "family": "Fang"
+        }
+      ],
+      "editors": [],
+      "publisher": "Springer Science and Business Media LLC",
+      "year": 2015,
+      "date": null,
+      "container": "Experimental Brain Research",
+      "volume": "233",
+      "issue": "12",
+      "first_page": "3535",
+      "last_page": "3541",
+      "edition": null,
+      "version": null,
+      "url": "https://doi.org/10.1007/s00221-015-4425-3"
+    },
+    {
+      "bib_id": 23,
+      "service": "crossref",
+      "service_id": null,
+      "score": 111.9614,
+      "bib_type": "article",
+      "doi": "10.1016/j.visres.2005.03.017",
+      "title": "The effect of target foreknowledge on visual search for categorically separable orientation targets",
+      "authors": [
+        {
+          "given": "J.P.",
+          "family": "Hodsoll"
+        },
+        {
+          "given": "G.W.",
+          "family": "Humphreys"
+        }
+      ],
+      "editors": [],
+      "publisher": "Elsevier BV",
+      "year": 2005,
+      "date": null,
+      "container": "Vision Research",
+      "volume": "45",
+      "issue": "18",
+      "first_page": "2346",
+      "last_page": "2351",
+      "edition": null,
+      "version": null,
+      "url": "https://doi.org/10.1016/j.visres.2005.03.017"
+    },
+    {
+      "bib_id": 24,
+      "service": "crossref",
+      "service_id": null,
+      "score": 119.6788,
+      "bib_type": "article",
+      "doi": "10.3758/bf03208758",
+      "title": "Dissociating the effects of similarity, salience, and top-down processes in search for linearly separable size targets",
+      "authors": [
+        {
+          "given": "John P.",
+          "family": "Hodsoll"
+        },
+        {
+          "given": "Glyn W.",
+          "family": "Humphreys"
+        },
+        {
+          "given": "Jason J.",
+          "family": "Braithwaite"
+        }
+      ],
+      "editors": [],
+      "publisher": "Springer Science and Business Media LLC",
+      "year": 2006,
+      "date": null,
+      "container": "Perception &amp; Psychophysics",
+      "volume": "68",
+      "issue": "4",
+      "first_page": "558",
+      "last_page": "570",
+      "edition": null,
+      "version": null,
+      "url": "https://doi.org/10.3758/bf03208758"
+    },
+    {
+      "bib_id": 25,
+      "service": "crossref",
+      "service_id": null,
+      "score": 89.8572,
+      "bib_type": "article",
+      "doi": "10.1073/pnas.0605678103",
+      "title": "A gender- and sexual orientation-dependent spatial attentional effect of invisible images",
+      "authors": [
+        {
+          "given": "Yi",
+          "family": "Jiang"
+        },
+        {
+          "given": "Patricia",
+          "family": "Costello"
+        },
+        {
+          "given": "Fang",
+          "family": "Fang"
+        },
+        {
+          "given": "Miner",
+          "family": "Huang"
+        },
+        {
+          "given": "Sheng",
+          "family": "He"
+        }
+      ],
+      "editors": [],
+      "publisher": "Proceedings of the National Academy of Sciences",
+      "year": 2006,
+      "date": null,
+      "container": "Proceedings of the National Academy of Sciences",
+      "volume": "103",
+      "issue": "45",
+      "first_page": "17048",
+      "last_page": "17052",
+      "edition": null,
+      "version": null,
+      "url": "https://doi.org/10.1073/pnas.0605678103"
+    },
+    {
+      "bib_id": 26,
+      "service": "crossref",
+      "service_id": null,
+      "score": 87.7604,
+      "bib_type": "article",
+      "doi": "10.1016/s0028-3932(01)00116-6",
+      "title": "The neural basis of biased competition in human visual cortex",
+      "authors": [
+        {
+          "given": "Sabine",
+          "family": "Kastner"
+        },
+        {
+          "given": "Leslie G",
+          "family": "Ungerleider"
+        }
+      ],
+      "editors": [],
+      "publisher": "Elsevier BV",
+      "year": 2001,
+      "date": null,
+      "container": "Neuropsychologia",
+      "volume": "39",
+      "issue": "12",
+      "first_page": "1263",
+      "last_page": "1276",
+      "edition": null,
+      "version": null,
+      "url": "https://doi.org/10.1016/s0028-3932(01)00116-6"
+    },
+    {
+      "bib_id": 27,
+      "service": "crossref",
+      "service_id": null,
+      "score": 122.5905,
+      "bib_type": "article",
+      "doi": "10.3389/fpsyg.2015.00002",
+      "title": "Linear mixed-effects models for within-participant psychology experiments: an introductory tutorial and free, graphical user interface (LMMgui)",
+      "authors": [
+        {
+          "given": "David A.",
+          "family": "Magezi"
+        }
+      ],
+      "editors": [],
+      "publisher": "Frontiers Media SA",
+      "year": 2015,
+      "date": null,
+      "container": "Frontiers in Psychology",
+      "volume": "6",
+      "issue": null,
+      "first_page": null,
+      "last_page": null,
+      "edition": null,
+      "version": null,
+      "url": "https://doi.org/10.3389/fpsyg.2015.00002"
+    },
+    {
+      "bib_id": 28,
+      "service": "crossref",
+      "service_id": null,
+      "score": 90.1805,
+      "bib_type": "article",
+      "doi": "10.1038/nn1641",
+      "title": "The representation of perceived angular size in human primary visual cortex",
+      "authors": [
+        {
+          "given": "Scott O",
+          "family": "Murray"
+        },
+        {
+          "given": "Huseyin",
+          "family": "Boyaci"
+        },
+        {
+          "given": "Daniel",
+          "family": "Kersten"
+        }
+      ],
+      "editors": [],
+      "publisher": "Springer Science and Business Media LLC",
+      "year": 2006,
+      "date": null,
+      "container": "Nature Neuroscience",
+      "volume": "9",
+      "issue": "3",
+      "first_page": "429",
+      "last_page": "434",
+      "edition": null,
+      "version": null,
+      "url": "https://doi.org/10.1038/nn1641"
+    },
+    {
+      "bib_id": 29,
+      "service": "crossref",
+      "service_id": null,
+      "score": 96.3868,
+      "bib_type": "article",
+      "doi": "10.1016/j.cub.2014.06.003",
+      "title": "Object-Centered Shifts of Receptive Field Positions in Monkey Primary Visual Cortex",
+      "authors": [
+        {
+          "given": "Amy M.",
+          "family": "Ni"
+        },
+        {
+          "given": "Scott O.",
+          "family": "Murray"
+        },
+        {
+          "given": "Gregory D.",
+          "family": "Horwitz"
+        }
+      ],
+      "editors": [],
+      "publisher": "Elsevier BV",
+      "year": 2014,
+      "date": null,
+      "container": "Current Biology",
+      "volume": "24",
+      "issue": "14",
+      "first_page": "1653",
+      "last_page": "1658",
+      "edition": null,
+      "version": null,
+      "url": "https://doi.org/10.1016/j.cub.2014.06.003"
+    },
+    {
+      "bib_id": 30,
+      "service": "crossref",
+      "service_id": null,
+      "score": 67.2262,
+      "bib_type": "article",
+      "doi": "10.1016/j.tics.2007.09.009",
+      "title": "The role of context in object recognition",
+      "authors": [
+        {
+          "given": "Aude",
+          "family": "Oliva"
+        },
+        {
+          "given": "Antonio",
+          "family": "Torralba"
+        }
+      ],
+      "editors": [],
+      "publisher": "Elsevier BV",
+      "year": 2007,
+      "date": null,
+      "container": "Trends in Cognitive Sciences",
+      "volume": "11",
+      "issue": "12",
+      "first_page": "520",
+      "last_page": "527",
+      "edition": null,
+      "version": null,
+      "url": "https://doi.org/10.1016/j.tics.2007.09.009"
+    },
+    {
+      "bib_id": 31,
+      "service": "crossref",
+      "service_id": null,
+      "score": 130.5518,
+      "bib_type": "article",
+      "doi": "10.1037/0096-1523.32.5.1243",
+      "title": "Feature-based memory-driven attentional capture: Visual working memory content affects visual attention.",
+      "authors": [
+        {
+          "given": "Christian N. L.",
+          "family": "Olivers"
+        },
+        {
+          "given": "Frank",
+          "family": "Meijer"
+        },
+        {
+          "given": "Jan",
+          "family": "Theeuwes"
+        }
+      ],
+      "editors": [],
+      "publisher": "American Psychological Association (APA)",
+      "year": 2006,
+      "date": null,
+      "container": "Journal of Experimental Psychology: Human Perception and Performance",
+      "volume": "32",
+      "issue": "5",
+      "first_page": "1243",
+      "last_page": "1265",
+      "edition": null,
+      "version": null,
+      "url": "https://doi.org/10.1037/0096-1523.32.5.1243"
+    },
+    {
+      "bib_id": 32,
+      "service": "crossref",
+      "service_id": null,
+      "score": 89.9128,
+      "bib_type": "article",
+      "doi": "10.1016/j.tics.2014.02.004",
+      "title": "Attention in the real world: toward understanding its neural basis",
+      "authors": [
+        {
+          "given": "Marius V.",
+          "family": "Peelen"
+        },
+        {
+          "given": "Sabine",
+          "family": "Kastner"
+        }
+      ],
+      "editors": [],
+      "publisher": "Elsevier BV",
+      "year": 2014,
+      "date": null,
+      "container": "Trends in Cognitive Sciences",
+      "volume": "18",
+      "issue": "5",
+      "first_page": "242",
+      "last_page": "250",
+      "edition": null,
+      "version": null,
+      "url": "https://doi.org/10.1016/j.tics.2014.02.004"
+    },
+    {
+      "bib_id": 34,
+      "service": "crossref",
+      "service_id": null,
+      "score": 89.4236,
+      "bib_type": "article",
+      "doi": "10.1167/13.3.13",
+      "title": "The contents of the search template for category-level search in natural scenes",
+      "authors": [
+        {
+          "given": "R. R.",
+          "family": "Reeder"
+        },
+        {
+          "given": "M. V.",
+          "family": "Peelen"
+        }
+      ],
+      "editors": [],
+      "publisher": "Association for Research in Vision and Ophthalmology (ARVO)",
+      "year": 2013,
+      "date": null,
+      "container": "Journal of Vision",
+      "volume": "13",
+      "issue": "3",
+      "first_page": "13",
+      "last_page": "13",
+      "edition": null,
+      "version": null,
+      "url": "https://doi.org/10.1167/13.3.13"
+    },
+    {
+      "bib_id": 35,
+      "service": "crossref",
+      "service_id": null,
+      "score": 90.4761,
+      "bib_type": "article",
+      "doi": "10.1038/nn.2706",
+      "title": "The surface area of human V1 predicts the subjective experience of object size",
+      "authors": [
+        {
+          "given": "D Samuel",
+          "family": "Schwarzkopf"
+        },
+        {
+          "given": "Chen",
+          "family": "Song"
+        },
+        {
+          "given": "Geraint",
+          "family": "Rees"
+        }
+      ],
+      "editors": [],
+      "publisher": "Springer Science and Business Media LLC",
+      "year": 2010,
+      "date": null,
+      "container": "Nature Neuroscience",
+      "volume": "14",
+      "issue": "1",
+      "first_page": "28",
+      "last_page": "30",
+      "edition": null,
+      "version": null,
+      "url": "https://doi.org/10.1038/nn.2706"
+    },
+    {
+      "bib_id": 36,
+      "service": "crossref",
+      "service_id": null,
+      "score": 113.3994,
+      "bib_type": "article",
+      "doi": "10.1037/0096-1523.31.2.248",
+      "title": "Early, Involuntary Top-Down Guidance of Attention From Working Memory.",
+      "authors": [
+        {
+          "given": "David",
+          "family": "Soto"
+        },
+        {
+          "given": "Dietmar",
+          "family": "Heinke"
+        },
+        {
+          "given": "Glyn W.",
+          "family": "Humphreys"
+        },
+        {
+          "given": "Manuel J.",
+          "family": "Blanco"
+        }
+      ],
+      "editors": [],
+      "publisher": "American Psychological Association (APA)",
+      "year": 2005,
+      "date": null,
+      "container": "Journal of Experimental Psychology: Human Perception and Performance",
+      "volume": "31",
+      "issue": "2",
+      "first_page": "248",
+      "last_page": "261",
+      "edition": null,
+      "version": null,
+      "url": "https://doi.org/10.1037/0096-1523.31.2.248"
+    },
+    {
+      "bib_id": 37,
+      "service": "crossref",
+      "service_id": null,
+      "score": 100.9614,
+      "bib_type": "article",
+      "doi": "10.1016/j.tics.2008.05.007",
+      "title": "Automatic guidance of attention from working memory",
+      "authors": [
+        {
+          "given": "David",
+          "family": "Soto"
+        },
+        {
+          "given": "John",
+          "family": "Hodsoll"
+        },
+        {
+          "given": "Pia",
+          "family": "Rotshtein"
+        },
+        {
+          "given": "Glyn W.",
+          "family": "Humphreys"
+        }
+      ],
+      "editors": [],
+      "publisher": "Elsevier BV",
+      "year": 2008,
+      "date": null,
+      "container": "Trends in Cognitive Sciences",
+      "volume": "12",
+      "issue": "9",
+      "first_page": "342",
+      "last_page": "348",
+      "edition": null,
+      "version": null,
+      "url": "https://doi.org/10.1016/j.tics.2008.05.007"
+    },
+    {
+      "bib_id": 38,
+      "service": "crossref",
+      "service_id": null,
+      "score": 66.1162,
+      "bib_type": "article",
+      "doi": "10.1163/22134808-00002483",
+      "title": "The Mechanisms of Size Constancy",
+      "authors": [
+        {
+          "given": "Irene",
+          "family": "Sperandio"
+        },
+        {
+          "given": "Irene",
+          "family": "Sperandio"
+        },
+        {
+          "given": "Philippe A.",
+          "family": "Chouinard"
+        }
+      ],
+      "editors": [],
+      "publisher": "Walter de Gruyter GmbH",
+      "year": 2015,
+      "date": null,
+      "container": "Multisensory Research",
+      "volume": "28",
+      "issue": "3-4",
+      "first_page": "253",
+      "last_page": "283",
+      "edition": null,
+      "version": null,
+      "url": "https://doi.org/10.1163/22134808-00002483"
+    },
+    {
+      "bib_id": 39,
+      "service": "crossref",
+      "service_id": null,
+      "score": 132.1427,
+      "bib_type": "article",
+      "doi": "10.1037/a0036229",
+      "title": "In competition for the attentional template: Can multiple items within visual working memory guide attention?",
+      "authors": [
+        {
+          "given": "Dirk",
+          "family": "van Moorselaar"
+        },
+        {
+          "given": "Jan",
+          "family": "Theeuwes"
+        },
+        {
+          "given": "Christian N. L.",
+          "family": "Olivers"
+        }
+      ],
+      "editors": [],
+      "publisher": "American Psychological Association (APA)",
+      "year": 2014,
+      "date": null,
+      "container": "Journal of Experimental Psychology: Human Perception and Performance",
+      "volume": "40",
+      "issue": "4",
+      "first_page": "1450",
+      "last_page": "1464",
+      "edition": null,
+      "version": null,
+      "url": "https://doi.org/10.1037/a0036229"
+    },
+    {
+      "bib_id": 40,
+      "service": "crossref",
+      "service_id": null,
+      "score": 75.871,
+      "bib_type": "article",
+      "doi": "10.3758/bf03200774",
+      "title": "Guided Search 2.0 A revised model of visual search",
+      "authors": [
+        {
+          "given": "Jeremy M.",
+          "family": "Wolfe"
+        }
+      ],
+      "editors": [],
+      "publisher": "Springer Science and Business Media LLC",
+      "year": 1994,
+      "date": null,
+      "container": "Psychonomic Bulletin &amp; Review",
+      "volume": "1",
+      "issue": "2",
+      "first_page": "202",
+      "last_page": "238",
+      "edition": null,
+      "version": null,
+      "url": "https://doi.org/10.3758/bf03200774"
+    },
+    {
+      "bib_id": 41,
+      "service": "crossref",
+      "service_id": null,
+      "score": 88.2076,
+      "bib_type": "article",
+      "doi": "10.1038/nrn1411",
+      "title": "What attributes guide the deployment of visual attention and how do they do it?",
+      "authors": [
+        {
+          "given": "Jeremy M.",
+          "family": "Wolfe"
+        },
+        {
+          "given": "Todd S.",
+          "family": "Horowitz"
+        }
+      ],
+      "editors": [],
+      "publisher": "Springer Science and Business Media LLC",
+      "year": 2004,
+      "date": null,
+      "container": "Nature Reviews Neuroscience",
+      "volume": "5",
+      "issue": "6",
+      "first_page": "495",
+      "last_page": "501",
+      "edition": null,
+      "version": null,
+      "url": "https://doi.org/10.1038/nrn1411"
+    },
+    {
+      "bib_id": 42,
+      "service": "crossref",
+      "service_id": null,
+      "score": 75.815,
+      "bib_type": "article",
+      "doi": "10.1038/s41562-017-0058",
+      "title": "Five factors that guide attention in visual search",
+      "authors": [
+        {
+          "given": "Jeremy M.",
+          "family": "Wolfe"
+        },
+        {
+          "given": "Todd S.",
+          "family": "Horowitz"
+        }
+      ],
+      "editors": [],
+      "publisher": "Springer Science and Business Media LLC",
+      "year": 2017,
+      "date": null,
+      "container": "Nature Human Behaviour",
+      "volume": "1",
+      "issue": "3",
+      "first_page": null,
+      "last_page": null,
+      "edition": null,
+      "version": null,
+      "url": "https://doi.org/10.1038/s41562-017-0058"
+    },
+    {
+      "bib_id": 43,
+      "service": "crossref",
+      "service_id": null,
+      "score": 103.3045,
+      "bib_type": "article",
+      "doi": "10.1016/j.tics.2010.12.001",
+      "title": "Visual search in scenes involves selective and nonselective pathways",
+      "authors": [
+        {
+          "given": "Jeremy M.",
+          "family": "Wolfe"
+        },
+        {
+          "given": "Melissa L.-H.",
+          "family": "Võ"
+        },
+        {
+          "given": "Karla K.",
+          "family": "Evans"
+        },
+        {
+          "given": "Michelle R.",
+          "family": "Greene"
+        }
+      ],
+      "editors": [],
+      "publisher": "Elsevier BV",
+      "year": 2011,
+      "date": null,
+      "container": "Trends in Cognitive Sciences",
+      "volume": "15",
+      "issue": "2",
+      "first_page": "77",
+      "last_page": "84",
+      "edition": null,
+      "version": null,
+      "url": "https://doi.org/10.1016/j.tics.2010.12.001"
+    }
+  ]
+}

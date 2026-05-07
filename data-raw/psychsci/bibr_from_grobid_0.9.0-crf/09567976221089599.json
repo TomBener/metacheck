@@ -1,0 +1,4460 @@
+{
+  "paper_id": "09567976221089599",
+  "info": [
+    {
+      "title": "Perceptual and Cognitive Judgments Show Both Anchoring and Repulsion",
+      "keywords": ["decision-making", "judgment", "anchoring", "repulsion", "cognitive biases", "open data", "open materials", "preregistered"],
+      "doi": "10.1177/09567976221089599",
+      "file_hash": "53f2a120d07f85b2",
+      "input_format": "TEI XML",
+      "file_name": "data-raw/psychsci/grobid_0.9.0-crf/09567976221089599.xml",
+      "bibr_version": "10.0",
+      "paper_type": "unknown",
+      "paper_type_confidence": 0,
+      "oecd_l1": null,
+      "oecd_l2": null,
+      "oecd_confidence": null
+    }
+  ],
+  "author": [
+    {
+      "author_id": 1,
+      "given": "Jake",
+      "family": "Spicer",
+      "affiliation": "Department of Psychology University of Warwick",
+      "email": "jake.spicer@warwick.ac.uk",
+      "corresponding": false,
+      "orcid": "",
+      "role": []
+    },
+    {
+      "author_id": 2,
+      "given": "Jian-Qiao",
+      "family": "Zhu",
+      "affiliation": "Department of Psychology University of Warwick",
+      "email": "",
+      "corresponding": false,
+      "orcid": "",
+      "role": []
+    },
+    {
+      "author_id": 3,
+      "given": "Nick",
+      "family": "Chater",
+      "affiliation": "Warwick Business School University of Warwick",
+      "email": "",
+      "corresponding": false,
+      "orcid": "",
+      "role": []
+    },
+    {
+      "author_id": 4,
+      "given": "Adam",
+      "family": "Sanborn",
+      "affiliation": "Department of Psychology University of Warwick",
+      "email": "",
+      "corresponding": false,
+      "orcid": "",
+      "role": []
+    }
+  ],
+  "text": [
+    {
+      "text_id": 1,
+      "paragraph_id": 1,
+      "section_id": 0,
+      "text": "One of the most robust effects in cognitive psychology is anchoring, in which judgments show a bias toward previously viewed values.",
+      "page_number": null
+    },
+    {
+      "text_id": 2,
+      "paragraph_id": 1,
+      "section_id": 0,
+      "text": "However, in what is essentially the same task as used in anchoring research, a perceptual illusion demonstrates the opposite effect of repulsion.",
+      "page_number": null
+    },
+    {
+      "text_id": 3,
+      "paragraph_id": 1,
+      "section_id": 0,
+      "text": "Here, we united these two literatures, testing in two experiments with adults (total N = 200) whether prior comparative decisions bias cognitive and perceptual judgments in opposing directions or whether anchoring and repulsion are two domain-general biases whose co-occurrence has so far gone undetected.",
+      "page_number": null
+    },
+    {
+      "text_id": 4,
+      "paragraph_id": 1,
+      "section_id": 0,
+      "text": "We found that in both perceptual and cognitive tasks, anchoring and repulsion co-occur.",
+      "page_number": null
+    },
+    {
+      "text_id": 5,
+      "paragraph_id": 1,
+      "section_id": 0,
+      "text": "Further, the direction of the bias depends on the comparison value: Distant values attract judgments, whereas nearby values repulse judgments.",
+      "page_number": null
+    },
+    {
+      "text_id": 6,
+      "paragraph_id": 1,
+      "section_id": 0,
+      "text": "Because none of the leading theories for either effect account for both biases, theoretical integration is needed.",
+      "page_number": null
+    },
+    {
+      "text_id": 7,
+      "paragraph_id": 1,
+      "section_id": 0,
+      "text": "As a starting point, we describe one such joint theory based on sampling models of cognition.",
+      "page_number": null
+    },
+    {
+      "text_id": 8,
+      "paragraph_id": 3,
+      "section_id": 1,
+      "text": "Much research in decision-making has investigated how judgments may be biased by preceding experience, but there is a disconnect between the cognitive and perceptual literatures on this subject that we believe has thus far gone unnoticed.",
+      "page_number": null
+    },
+    {
+      "text_id": 9,
+      "paragraph_id": 3,
+      "section_id": 1,
+      "text": "On one hand, research in cognitive psychology has found anchoring, in which preceding a judgment with some arbitrary value can pull subsequent responses toward that value: For example, estimates of the percentage of African countries in the United Nations were higher when participants first judged whether this value was above or below a high comparison value and lower when first judged against a low comparison value (Tversky & Kahneman, 1974).",
+      "page_number": null
+    },
+    {
+      "text_id": 10,
+      "paragraph_id": 3,
+      "section_id": 1,
+      "text": "Such effects have subsequently been widely replicated, and similar results have been found for related, incidental, and self-generated anchor values (Ariely et al., 2003;Chapman & Johnson, 1994, 1999;Epley & Gilovich, 2006).",
+      "page_number": null
+    },
+    {
+      "text_id": 11,
+      "paragraph_id": 3,
+      "section_id": 1,
+      "text": "On the other hand, more recent research in perceptual tasks has used a similar paradigm but found an opposing effect: Preceding perceptual judgments with similar comparative decisions has been observed to lead to a repulsion from the given decision boundary.",
+      "page_number": null
+    },
+    {
+      "text_id": 12,
+      "paragraph_id": 4,
+      "section_id": 1,
+      "text": "For example, deciding whether a set of moving dots is traveling clockwise or counterclockwise from a given reference line leads subsequent judgments of the true direction to be further from the reference than equivalent judgments without such a comparison ( Jazayeri & Movshon, 2007;Zamboni et al., 2016).",
+      "page_number": null
+    },
+    {
+      "text_id": 13,
+      "paragraph_id": 5,
+      "section_id": 1,
+      "text": "These two sets of findings then present an apparent contradiction: In some cases, judgments are pulled toward decision values, whereas in others, they are pushed away.",
+      "page_number": null
+    },
+    {
+      "text_id": 14,
+      "paragraph_id": 5,
+      "section_id": 1,
+      "text": "A key question then is how these two effects relate to one another: Why would similar decisions lead to different effects in these tasks?",
+      "page_number": null
+    },
+    {
+      "text_id": 15,
+      "paragraph_id": 5,
+      "section_id": 1,
+      "text": "Despite the correspondence between these paradigms, there has been very little acknowledgment of these divergent findings; although some work has investigated similar concepts in preferential choice in reaction to the addition of new alternatives (Tsetsos et al., 2010;Turner et al., 2018), to our knowledge, there has not yet been any comparison of these effects in more basic direct estimation tasks.",
+      "page_number": null
+    },
+    {
+      "text_id": 16,
+      "paragraph_id": 5,
+      "section_id": 1,
+      "text": "1 Indeed, although multiple explanations have been offered for both anchoring and repulsion, the separation between these literatures means that these theories have thus far remained independent of one another: Accounts for one effect do not predict the other.",
+      "page_number": null
+    },
+    {
+      "text_id": 17,
+      "paragraph_id": 5,
+      "section_id": 1,
+      "text": "In the case of anchoring, a common explanation is that the comparison value is used as a starting point for the subsequent judgment and adjusted until an \"acceptable\" answer is reached (Epley & Gilovich, 2006;Jacowitz & Kahneman, 1995;Lichtenstein & Slovic, 1971;Simmons et al., 2010;Tversky & Kahneman, 1974).",
+      "page_number": null
+    },
+    {
+      "text_id": 18,
+      "paragraph_id": 5,
+      "section_id": 1,
+      "text": "More recently, this has been formalized using statistical sampling algorithms (Lieder et al., 2018) based on the suggestion that such effects result from a rational trade-off between time and accuracy: Further adjustment may produce more accurate judgments but may not be worth the additional effort incurred.",
+      "page_number": null
+    },
+    {
+      "text_id": 19,
+      "paragraph_id": 5,
+      "section_id": 1,
+      "text": "Alternative accounts propose that the anchor activates relevant information to direct responses to the comparison that are then reused in judgments (Chapman & Johnson, 1999;Mussweiler & Strack, 2000;Strack & Mussweiler, 1997), that the comparison is treated as a cue toward the correct answer (Schwarz et al., 1991), and that anchors distort the scale used to select responses (Frederick & Mochon, 2012;Mochon & Frederick, 2013).",
+      "page_number": null
+    },
+    {
+      "text_id": 20,
+      "paragraph_id": 6,
+      "section_id": 1,
+      "text": "Repulsion, meanwhile, has been attributed to a reweighting of sensory information to aid the initial comparison, which then favors signals further from the boundary in the subsequent judgment ( Jazayeri & Movshon, 2007), or a truncation of beliefs following decisions to ensure that judgments are consistent with that choice (Luu & Stocker, 2018).",
+      "page_number": null
+    },
+    {
+      "text_id": 21,
+      "paragraph_id": 6,
+      "section_id": 1,
+      "text": "We ourselves have previously offered an explanation for repulsion based on adaptive stopping of a mental sampling process: Beliefs are sampled until there is substantial evidence for one alternative over the other in the initial comparison, resulting in a bias away from the comparison boundary (i.e., indifference) in the samples and, therefore, any estimates based on these samples (Zhu et al., 2019).",
+      "page_number": null
+    },
+    {
+      "text_id": 22,
+      "paragraph_id": 7,
+      "section_id": 1,
+      "text": "Here, we sought to bridge the gap between these literatures by examining the connection, or lack thereof, between anchoring and repulsion and what this suggests for models of human judgments.",
+      "page_number": null
+    },
+    {
+      "text_id": 23,
+      "paragraph_id": 7,
+      "section_id": 1,
+      "text": "In broad terms, the distinction between anchoring and repulsion could be explained by two main hypotheses.",
+      "page_number": null
+    },
+    {
+      "text_id": 24,
+      "paragraph_id": 7,
+      "section_id": 1,
+      "text": "The first possibility is that these effects are domain specific and that anchoring is restricted to cognitive judgments and repulsion to perceptual judgments.",
+      "page_number": null
+    },
+    {
+      "text_id": 25,
+      "paragraph_id": 7,
+      "section_id": 1,
+      "text": "This would suggest that the systems used in cognitive and perceptual tasks each have their own individual biases.",
+      "page_number": null
+    },
+    {
+      "text_id": 26,
+      "paragraph_id": 7,
+      "section_id": 1,
+      "text": "If this is the case, then the current independent explanations for each effect could remain unchanged, although it is notable that the majority of these explanations make no reference to such domain dependency and so offer no reason for such specificity.",
+      "page_number": null
+    },
+    {
+      "text_id": 27,
+      "paragraph_id": 8,
+      "section_id": 1,
+      "text": "The alternate possibility is that these effects may each be domain general, reflecting global properties of human judgment displayed across multiple tasks, and have been observed only individually because of the nature of the tasks used to elicit them: Indeed, a key difference in these tasks beyond domain is the placement of the decision boundary relative to the target, being close to the target in repulsion tasks but more distant in anchoring tasks.",
+      "page_number": null
+    },
+    {
+      "text_id": 28,
+      "paragraph_id": 8,
+      "section_id": 1,
+      "text": "This would then mean that each effect could be observed outside of its original domain or even that both could be found in the same task, depending only on the placement of the decision boundary.",
+      "page_number": null
+    },
+    {
+      "text_id": 29,
+      "paragraph_id": 8,
+      "section_id": 1,
+      "text": "Furthermore, in contrast to the domainspecific hypothesis, any model of these judgments would then have to predict both effects in order to offer a complete account of behavior, providing a challenge to existing theories.",
+      "page_number": null
+    },
+    {
+      "text_id": 30,
+      "paragraph_id": 9,
+      "section_id": 1,
+      "text": "In this study, we aimed to separate these possibilities by testing whether both anchoring and repulsion can indeed be displayed in the same task.",
+      "page_number": null
+    },
+    {
+      "text_id": 31,
+      "paragraph_id": 9,
+      "section_id": 1,
+      "text": "This was assessed experimentally in both the perceptual and cognitive domains using highly similar designs.",
+      "page_number": null
+    },
+    {
+      "text_id": 32,
+      "paragraph_id": 11,
+      "section_id": 2,
+      "text": "Previous research has found that estimates are pulled toward values in preceding comparisons in cognitive tasks (e.g., \"Was Attila the Hun defeated before or after 1300?\")",
+      "page_number": null
+    },
+    {
+      "text_id": 33,
+      "paragraph_id": 11,
+      "section_id": 2,
+      "text": "but pushed away from values in preceding comparisons in perceptual tasks (e.g., \"Was the number of dots just shown higher or lower than 25?\").",
+      "page_number": null
+    },
+    {
+      "text_id": 34,
+      "paragraph_id": 11,
+      "section_id": 2,
+      "text": "Although this could suggest that different psychological systems are involved in each type of task, here we show that both effects can be found in both task types depending on how close the comparison value is to the target value: Estimates are pulled toward far-off values but pushed away from nearby values.",
+      "page_number": null
+    },
+    {
+      "text_id": 35,
+      "paragraph_id": 11,
+      "section_id": 2,
+      "text": "Because existing explanations each predict only one of these effects, we propose a new joint theory positing that people sample a series of potential values in their mind to answer both comparisons and estimates.",
+      "page_number": null
+    },
+    {
+      "text_id": 36,
+      "paragraph_id": 11,
+      "section_id": 2,
+      "text": "Our results thus unite two previously separate lines of research, revealing new ways in which both real-world cognitive and perceptual judgments can be biased.",
+      "page_number": null
+    },
+    {
+      "text_id": 37,
+      "paragraph_id": 13,
+      "section_id": 3,
+      "text": "In Experiment 1, we looked for both anchoring and repulsion in a perceptual task similar to those used in previous displays of repulsion ( Jazayeri & Movshon, 2007;Zamboni et al., 2016;Zhu et al., 2019).",
+      "page_number": null
+    },
+    {
+      "text_id": 38,
+      "paragraph_id": 13,
+      "section_id": 3,
+      "text": "We asked participants to make judgments of numerosity against preselected comparison values as well as in absolute estimates.",
+      "page_number": null
+    },
+    {
+      "text_id": 39,
+      "paragraph_id": 13,
+      "section_id": 3,
+      "text": "The key modification from such work, however, was the inclusion of decision boundaries further from the target, allowing for tests of anchoring in the perceptual domain.",
+      "page_number": null
+    },
+    {
+      "text_id": 40,
+      "paragraph_id": 15,
+      "section_id": 4,
+      "text": "Participants.",
+      "page_number": null
+    },
+    {
+      "text_id": 41,
+      "paragraph_id": 15,
+      "section_id": 4,
+      "text": "Fifty adult participants were recruited via Prolific in return for £5 in financial compensation.",
+      "page_number": null
+    },
+    {
+      "text_id": 42,
+      "paragraph_id": 15,
+      "section_id": 4,
+      "text": "Because the task was partly designed to replicate repulsion effects, we recruited a sample size that would provide an approximately equivalent number of data points as in previous examinations of repulsion (e.g., Jazayeri & Movshon, 2007;Zamboni et al., 2016) after accounting for differences in trial count per participant given the restrictions of an online experiment.",
+      "page_number": null
+    },
+    {
+      "text_id": 43,
+      "paragraph_id": 15,
+      "section_id": 4,
+      "text": "The sample included 32 men and 17 women (one declined to provide gender information), and ages ranged between 18 and 56 years (M = 25 years).",
+      "page_number": null
+    },
+    {
+      "text_id": 44,
+      "paragraph_id": 15,
+      "section_id": 4,
+      "text": "Ethical approval for the experiment was given by the University of Warwick Humanities and Social Sciences Research Ethics Committee.",
+      "page_number": null
+    },
+    {
+      "text_id": 45,
+      "paragraph_id": 17,
+      "section_id": 5,
+      "text": "Experiment 1 involved a numerosity task in which sets of dots briefly appeared on screen and participants were asked about the number of these dots in different ways.",
+      "page_number": null
+    },
+    {
+      "text_id": 46,
+      "paragraph_id": 17,
+      "section_id": 5,
+      "text": "Twenty potential dot counts were used in the task, divided into a low region of 21 to 30 and a high region of 71 to 80, although participants were informed only that counts would fall between 0 and 100.",
+      "page_number": null
+    },
+    {
+      "text_id": 47,
+      "paragraph_id": 17,
+      "section_id": 5,
+      "text": "To reduce focus on salient numbers, we directed participants to make all responses using an on-screen semicircular scale marked only with the limits of 0 and 100; a semicircular shape was used so we could designate a cursor position equidistant from any point on the scale.",
+      "page_number": null
+    },
+    {
+      "text_id": 48,
+      "paragraph_id": 17,
+      "section_id": 5,
+      "text": "This cursor position, which was marked with a white cross, could be used as a reset point to avoid any influence of prior mouse position between responses.",
+      "page_number": null
+    },
+    {
+      "text_id": 49,
+      "paragraph_id": 18,
+      "section_id": 5,
+      "text": "Figure 1 provides an illustration of the experiment.",
+      "page_number": null
+    },
+    {
+      "text_id": 50,
+      "paragraph_id": 18,
+      "section_id": 5,
+      "text": "The task used two key question types: decisions and estimates.",
+      "page_number": null
+    },
+    {
+      "text_id": 51,
+      "paragraph_id": 18,
+      "section_id": 5,
+      "text": "Decisions required participants to compare the number of dots with a preselected comparison value, marked by an orthogonal line on the scale, and to choose whether the actual number was higher or lower than the comparison value.",
+      "page_number": null
+    },
+    {
+      "text_id": 52,
+      "paragraph_id": 18,
+      "section_id": 5,
+      "text": "Each potential dot count was compared with both a nearby and a distant comparison value across each participant's trials to mirror previous repulsion and anchoring designs, respectively.",
+      "page_number": null
+    },
+    {
+      "text_id": 53,
+      "paragraph_id": 18,
+      "section_id": 5,
+      "text": "Two comparison values were there fore set according to the center point of the two dot regions and labeled as the low (25.5) and high (75.5) boundaries.",
+      "page_number": null
+    },
+    {
+      "text_id": 54,
+      "paragraph_id": 18,
+      "section_id": 5,
+      "text": "This created 40 potential trial combinations (20 dot counts and two boundaries), which were divided into four cases depending on boundary (low vs. high) and dot region (low vs. high).",
+      "page_number": null
+    },
+    {
+      "text_id": 55,
+      "paragraph_id": 18,
+      "section_id": 5,
+      "text": "For clarity, we use low and high to refer to the absolute magnitude of the regions and boundaries, and local and distant to refer to the relationship between these values: Local cases (low boundary and low region, high boundary and high region) tested repulsion, and distant cases (low boundary and high region, high boundary and low region) tested anchoring.",
+      "page_number": null
+    },
+    {
+      "text_id": 56,
+      "paragraph_id": 18,
+      "section_id": 5,
+      "text": "Decisions were made on all trials.",
+      "page_number": null
+    },
+    {
+      "text_id": 57,
+      "paragraph_id": 19,
+      "section_id": 5,
+      "text": "Estimates required participants to directly report the number of dots by clicking a point on the semicircular scale that matched their answer, which prevented rounding to salient values as may occur with symbolic numerical responses.",
+      "page_number": null
+    },
+    {
+      "text_id": 58,
+      "paragraph_id": 19,
+      "section_id": 5,
+      "text": "Participants made all estimates by first clicking the equidistant point of the scale, in order to prevent bias from prior mouse position, and then drawing a line to the intended response point on the scale.",
+      "page_number": null
+    },
+    {
+      "text_id": 59,
+      "paragraph_id": 19,
+      "section_id": 5,
+      "text": "Unlike decisions, estimates were required in only 30% of trials, randomly selected for each participant.",
+      "page_number": null
+    },
+    {
+      "text_id": 60,
+      "paragraph_id": 19,
+      "section_id": 5,
+      "text": "This procedure was adopted from previous repulsion designs ( Jazayeri & Movshon, 2007;Zamboni et al., 2016) in order to prevent participants from anticipating estimates on each trial.",
+      "page_number": null
+    },
+    {
+      "text_id": 61,
+      "paragraph_id": 20,
+      "section_id": 5,
+      "text": "Procedure.",
+      "page_number": null
+    },
+    {
+      "text_id": 62,
+      "paragraph_id": 20,
+      "section_id": 5,
+      "text": "The experiment was run online using the Pavlovia platform and was programmed with the PsychoJS software package (Version 2020.1.3; Peirce et al., 2019).",
+      "page_number": null
+    },
+    {
+      "text_id": 63,
+      "paragraph_id": 20,
+      "section_id": 5,
+      "text": "Before starting the task, participants were informed that the experiment involved a dot-counting task and were introduced to the semicircular scale used in all trials, the two potential comparison values, and the decision and estimate question types.",
+      "page_number": null
+    },
+    {
+      "text_id": 64,
+      "paragraph_id": 21,
+      "section_id": 5,
+      "text": "When each trial began, the comparison point for the subsequent decision appeared on the semicircle to make participants aware of the boundary when the target stimulus was shown.",
+      "page_number": null
+    },
+    {
+      "text_id": 65,
+      "paragraph_id": 21,
+      "section_id": 5,
+      "text": "Comparison points were presented as randomly selected from the two possible values (i.e., high or low) to prevent any assumption that the boundary was informative as to the number of dots for that trial: The screen rapidly alternated between the two possible boundaries for 1 s before settling on the boundary for that trial for 2 s.",
+      "page_number": null
+    },
+    {
+      "text_id": 66,
+      "paragraph_id": 21,
+      "section_id": 5,
+      "text": "Following presentation of the comparison point, a fixation cross was shown for 0.5 s.",
+      "page_number": null
+    },
+    {
+      "text_id": 67,
+      "paragraph_id": 21,
+      "section_id": 5,
+      "text": "The dot array then appeared for 0.5 s, after which the decision phase immediately began.",
+      "page_number": null
+    },
+    {
+      "text_id": 68,
+      "paragraph_id": 21,
+      "section_id": 5,
+      "text": "Participants then had to indicate whether the dot count was higher or lower than the selected boundary value using a key on the keyboard.",
+      "page_number": null
+    },
+    {
+      "text_id": 69,
+      "paragraph_id": 21,
+      "section_id": 5,
+      "text": "If an estimate was included on a given trial, participants were then asked to indicate the point on the scale that corresponded with the actual dot count by drawing a line with the mouse from the equidistant cross to the outer line.",
+      "page_number": null
+    },
+    {
+      "text_id": 70,
+      "paragraph_id": 21,
+      "section_id": 5,
+      "text": "If an estimate was not requested for that trial, participants were given onscreen feedback on their decision (\"Correct\" or \"Incorrect\").",
+      "page_number": null
+    },
+    {
+      "text_id": 71,
+      "paragraph_id": 21,
+      "section_id": 5,
+      "text": "No feedback was given for trials in which estimates were requested.",
+      "page_number": null
+    },
+    {
+      "text_id": 72,
+      "paragraph_id": 22,
+      "section_id": 5,
+      "text": "To demonstrate the procedure, we began the task with a set of four practice trials drawn from a subset of the main experimental trials common to all participants.",
+      "page_number": null
+    },
+    {
+      "text_id": 73,
+      "paragraph_id": 22,
+      "section_id": 5,
+      "text": "This was followed by the main trial block, which consisted of five repetitions of each of the 40 trial combinations described above for a total of 200 trials, presented in a random order.",
+      "page_number": null
+    },
+    {
+      "text_id": 74,
+      "paragraph_id": 22,
+      "section_id": 5,
+      "text": "As noted above, decisions were requested on all trials, whereas 30% of trials were randomly selected to include an estimate.",
+      "page_number": null
+    },
+    {
+      "text_id": 75,
+      "paragraph_id": 23,
+      "section_id": 5,
+      "text": "After completing all trials, participants were asked whether they believed that the comparison points were related to the dot values for their respective trials; this question was included to examine whether the decision boundary was treated as informative about the true dot count.",
+      "page_number": null
+    },
+    {
+      "text_id": 76,
+      "paragraph_id": 23,
+      "section_id": 5,
+      "text": "Finally, participants were debriefed on the aims and expectations of the experiment.",
+      "page_number": null
+    },
+    {
+      "text_id": 77,
+      "paragraph_id": 25,
+      "section_id": 6,
+      "text": "Data from two participants were lost because of computer error during submission.",
+      "page_number": null
+    },
+    {
+      "text_id": 78,
+      "paragraph_id": 25,
+      "section_id": 6,
+      "text": "Three participants were excluded for basing their estimates on decision boundaries rather than dot counts (measured as > 20% of a participant's estimates falling within 1 point of the displayed boundary value), and one further participant was excluded for answering at the nondisplayed boundary for that trial (i.e., answering at the high boundary when the low boundary was shown and vice versa, measured as > 20% of estimates falling within 2 points of the nondisplayed boundary value, using a wider window After the array disappeared, participants were asked to decide whether the number of dots in the array had been higher or lower than the boundary line (c).",
+      "page_number": null
+    },
+    {
+      "text_id": 79,
+      "paragraph_id": 25,
+      "section_id": 6,
+      "text": "On 30% of trials (randomly selected), participants were additionally asked to estimate the true number of dots (d).",
+      "page_number": null
+    },
+    {
+      "text_id": 80,
+      "paragraph_id": 26,
+      "section_id": 6,
+      "text": "given that this boundary was not shown on these trials).",
+      "page_number": null
+    },
+    {
+      "text_id": 81,
+      "paragraph_id": 26,
+      "section_id": 6,
+      "text": "After exclusions, data from 44 participants were left for analysis.",
+      "page_number": null
+    },
+    {
+      "text_id": 82,
+      "paragraph_id": 26,
+      "section_id": 6,
+      "text": "Estimates that differed from the true dot count for that trial by more than 50 points were classified as errors and removed from analysis, which resulted in the filtering of 25 estimates (0.95%) across all participants; this criterion was based on the difference between the two boundary values to avoid excluding strong anchoring effects from the data.",
+      "page_number": null
+    },
+    {
+      "text_id": 83,
+      "paragraph_id": 26,
+      "section_id": 6,
+      "text": "Finally, estimates made within 200 ms were excluded because of potential imprecision in use of the response scale, which resulted in the removal of a further 61 estimates (2.31%).",
+      "page_number": null
+    },
+    {
+      "text_id": 84,
+      "paragraph_id": 27,
+      "section_id": 6,
+      "text": "Anchoring.",
+      "page_number": null
+    },
+    {
+      "text_id": 85,
+      "paragraph_id": 27,
+      "section_id": 6,
+      "text": "We first performed a standard anchoring analysis comparing estimates between the high-and lowboundary conditions.",
+      "page_number": null
+    },
+    {
+      "text_id": 86,
+      "paragraph_id": 27,
+      "section_id": 6,
+      "text": "To simplify this comparison, we averaged estimates for each participant within each combination of region and boundary, which yielded four averages per person.",
+      "page_number": null
+    },
+    {
+      "text_id": 87,
+      "paragraph_id": 27,
+      "section_id": 6,
+      "text": "Comparisons were then made between average responses from the high-and low-boundary cases in each region using paired-samples t tests; regions were separated to allow for different effects between higher and lower target values.",
+      "page_number": null
+    },
+    {
+      "text_id": 88,
+      "paragraph_id": 27,
+      "section_id": 6,
+      "text": "Given the near ubiquity of anchoring effects in previous research, these were all onetailed tests.",
+      "page_number": null
+    },
+    {
+      "text_id": 89,
+      "paragraph_id": 27,
+      "section_id": 6,
+      "text": "Our assumption was that responses would be higher for the high-boundary cases and lower for the lowboundary cases, although the significance criterion for these tests was Bonferroni corrected from .05 to .025 because of the use of two comparisons.",
+      "page_number": null
+    },
+    {
+      "text_id": 90,
+      "paragraph_id": 27,
+      "section_id": 6,
+      "text": "Estimates in the low dot region were significantly higher when preceded by the high-boundary comparison (M = 26.5, 95% confidence interval [CI] = [25.0, 27.9]) than the low-boundary comparison (M = 24.4, 95% CI = [22.9, 25.8]), t(43) = 2.05, p = .023, d = 0.31, 95% CI = [-0.03, 0.65]; conversely, estimates in the high dot region were significantly lower following comparison with the low boundary (M = 65.8, 95% CI = [64.5, 67.1]) than the high boundary (M = 72.9, 95% CI = [71.6, 74.1]), t(42) = 7.84, p < .001, d = 1.20, 95% CI = [0.83, 1.57].",
+      "page_number": null
+    },
+    {
+      "text_id": 91,
+      "paragraph_id": 27,
+      "section_id": 6,
+      "text": "This suggests that anchoring effects were present in both regions and that estimates were drawn toward both high and low comparison values, although these effects were notably stronger in the high dot region.",
+      "page_number": null
+    },
+    {
+      "text_id": 92,
+      "paragraph_id": 27,
+      "section_id": 6,
+      "text": "Such asymmetry may be attributable to a difference in perceptual precision between the regions; higher stimulus values have greater uncertainty and so may be more affected by the comparison value.",
+      "page_number": null
+    },
+    {
+      "text_id": 93,
+      "paragraph_id": 27,
+      "section_id": 6,
+      "text": "A further breakdown of these results by dot value is provided in the Supplemental Material available online.",
+      "page_number": null
+    },
+    {
+      "text_id": 94,
+      "paragraph_id": 28,
+      "section_id": 6,
+      "text": "Repulsion.",
+      "page_number": null
+    },
+    {
+      "text_id": 95,
+      "paragraph_id": 28,
+      "section_id": 6,
+      "text": "We next investigated repulsion effects by examining the response patterns around each decision boundary.",
+      "page_number": null
+    },
+    {
+      "text_id": 96,
+      "paragraph_id": 28,
+      "section_id": 6,
+      "text": "Figure 2 shows the distribution of estimates for each of the four trial cases (low boundary and low region, high boundary and high region, low boundary and high region, and high boundary and low region).",
+      "page_number": null
+    },
+    {
+      "text_id": 97,
+      "paragraph_id": 28,
+      "section_id": 6,
+      "text": "There was a notable divot around the boundary when participants responded to nearby stimuli values, although the divot appeared to fall slightly below the boundary in the highboundary/high-region case.",
+      "page_number": null
+    },
+    {
+      "text_id": 98,
+      "paragraph_id": 28,
+      "section_id": 6,
+      "text": "This divot was quantified using Hartigan's dip test ( J A Hartigan & Hartigan, 1985), as used in previous displays of perceptual repulsion (Zamboni et al., 2016).",
+      "page_number": null
+    },
+    {
+      "text_id": 99,
+      "paragraph_id": 28,
+      "section_id": 6,
+      "text": "This test provides a score measuring the deviation from unimodality in the given distribution; higher scores indicate greater deviation.",
+      "page_number": null
+    },
+    {
+      "text_id": 100,
+      "paragraph_id": 28,
+      "section_id": 6,
+      "text": "The dip test has advantages over methods such as kerneldensity estimation because the dip test does not require definition of a specific distribution function or optimization of model parameters.",
+      "page_number": null
+    },
+    {
+      "text_id": 101,
+      "paragraph_id": 29,
+      "section_id": 6,
+      "text": "Dip statistics were calculated for each of the four trial cases.",
+      "page_number": null
+    },
+    {
+      "text_id": 102,
+      "paragraph_id": 29,
+      "section_id": 6,
+      "text": "We also calculated the probability of each of these scores arising by chance in a comparison with 10,000 bootstrapped estimates using randomized uniform samples (P M Hartigan, 1985).",
+      "page_number": null
+    },
+    {
+      "text_id": 103,
+      "paragraph_id": 29,
+      "section_id": 6,
+      "text": "These tests found a significant effect in the low-boundary/low-region case (dip = 0.023, p = .018) but no significant effects in the low-boundary/ high-region (dip = 0.014, p = .653), high-boundary/lowregion (dip = 0.008, p = .999), or high-boundary/highregion (dip = 0.017, p = .217) cases.",
+      "page_number": null
+    },
+    {
+      "text_id": 104,
+      "paragraph_id": 29,
+      "section_id": 6,
+      "text": "This indicates a repulsion effect around the low boundary for low stimulus values but no reliable evidence of a corresponding effect around the high boundary for high stimulus values despite the patterns evident in the distribution.",
+      "page_number": null
+    },
+    {
+      "text_id": 105,
+      "paragraph_id": 29,
+      "section_id": 6,
+      "text": "Such results again reflect an asymmetry between the high and low regions, which may further suggest a greater malleability in estimates where perceptual precision is lower, although the longer tail in this distribution may also have caused issues with the dip test.",
+      "page_number": null
+    },
+    {
+      "text_id": 106,
+      "paragraph_id": 30,
+      "section_id": 6,
+      "text": "Although the dip test provides an established measure of repulsion, issues could be raised with its use in this analysis because of the dependencies present in these data: The above response distributions collect multiple estimates from each participant to provide greater resolution, but this also means that these distributions were not composed of entirely independent observations.",
+      "page_number": null
+    },
+    {
+      "text_id": 107,
+      "paragraph_id": 30,
+      "section_id": 6,
+      "text": "This does not violate any specific assumptions of the dip statistic itself but could lead to concerns that the above results are attributable to individual differences in estimates between participants.",
+      "page_number": null
+    },
+    {
+      "text_id": 108,
+      "paragraph_id": 30,
+      "section_id": 6,
+      "text": "This cannot, however, be addressed by using average responses from each participant for each region and boundary as in the above anchoring analysis because such aggregation could in fact mask repulsion effects by collapsing responses above and below the apparent dip.",
+      "page_number": null
+    },
+    {
+      "text_id": 109,
+      "paragraph_id": 31,
+      "section_id": 6,
+      "text": "Thus, we supplemented the dip test with an additional analysis comparing the response rate falling around each boundary value when that boundary did and did not precede estimates.",
+      "page_number": null
+    },
+    {
+      "text_id": 110,
+      "paragraph_id": 31,
+      "section_id": 6,
+      "text": "This was assessed using paired-samples t tests comparing each participant's proportion of responses falling within a symmetrical window around each boundary value between boundary conditions to determine whether certain responses are less prevalent following comparison of a local boundary with a distant boundary, as illustrated in Figure 3.",
+      "page_number": null
+    },
+    {
+      "text_id": 111,
+      "paragraph_id": 32,
+      "section_id": 6,
+      "text": "We used tests at multiple window sizes to give a more detailed depiction of the distribution of estimates around each boundary.",
+      "page_number": null
+    },
+    {
+      "text_id": 112,
+      "paragraph_id": 32,
+      "section_id": 6,
+      "text": "We did not correct for multiple comparisons because the relation between response proportions at similar window sizes meant that these tests were not independent of one another; all comparisons therefore used a significance criterion of p < .05 based on the assumption that rates would be lower for the local boundary cases.",
+      "page_number": null
+    },
+    {
+      "text_id": 113,
+      "paragraph_id": 32,
+      "section_id": 6,
+      "text": "Given the number of these comparisons (100 per region), we do not report detailed results here, but they are available on this project's OSF page (https://osf.io/s2md8/).",
+      "page_number": null
+    },
+    {
+      "text_id": 114,
+      "paragraph_id": 32,
+      "section_id": 6,
+      "text": "These tests revealed significantly lower response rates in a narrow window (approximately ±2 dots) around each boundary location when that boundary preceded estimates than when the alternate boundary was used (see Fig. 3), though this window of difference was notably smaller in the high dot region.",
+      "page_number": null
+    },
+    {
+      "text_id": 115,
+      "paragraph_id": 32,
+      "section_id": 6,
+      "text": "This effect did, however, fade as the window expanded, eventually crossing over between boundary conditions; this likely reflects a shift to anchoring for values further from the boundary, although this is not a traditional measure of anchoring effects.",
+      "page_number": null
+    },
+    {
+      "text_id": 116,
+      "paragraph_id": 32,
+      "section_id": 6,
+      "text": "We also performed an alternate version of this analysis using nonparametric bootstrapping comparisons in place of the paired-samples t tests and found nearly identical results (detailed further in the Supplemental Material).",
+      "page_number": null
+    },
+    {
+      "text_id": 117,
+      "paragraph_id": 32,
+      "section_id": 6,
+      "text": "This provides additional evidence of repulsion effects in the data, although once again, these effects appeared stronger in the lower region.",
+      "page_number": null
+    },
+    {
+      "text_id": 118,
+      "paragraph_id": 34,
+      "section_id": 7,
+      "text": "Experiment 1 provided evidence that both anchoring and repulsion can be observed in the same task: Estimates were pulled toward distant comparison values but pushed away from nearby comparison values.",
+      "page_number": null
+    },
+    {
+      "text_id": 119,
+      "paragraph_id": 34,
+      "section_id": 7,
+      "text": "Such findings do not suggest domain specificity in these effects; instead, they indicate that these biases represent differing reactions according to boundary location rather than task type.",
+      "page_number": null
+    },
+    {
+      "text_id": 120,
+      "paragraph_id": 34,
+      "section_id": 7,
+      "text": "To complement these results, we next examined whether similar patterns are displayed within the cognitive domain.",
+      "page_number": null
+    },
+    {
+      "text_id": 121,
+      "paragraph_id": 36,
+      "section_id": 8,
+      "text": "In Experiment 2, we aimed to replicate as much of the design of Experiment 1 as possible in a cognitive-judgment task: Instead of making numerosity judgements, participants answered questions regarding commonly experienced values.",
+      "page_number": null
+    },
+    {
+      "text_id": 122,
+      "paragraph_id": 36,
+      "section_id": 8,
+      "text": "This acted as a mirror to the previous experiment: We here sought to replicate previous displays of anchoring as well as to test for repulsion effects in such a design.",
+      "page_number": null
+    },
+    {
+      "text_id": 123,
+      "paragraph_id": 36,
+      "section_id": 8,
+      "text": "The hypotheses, experimental design, and planned data analysis for Experiment 2 were preregistered on the OSF (https://osf.io/bsajt/).",
+      "page_number": null
+    },
+    {
+      "text_id": 124,
+      "paragraph_id": 38,
+      "section_id": 9,
+      "text": "Participants.",
+      "page_number": null
+    },
+    {
+      "text_id": 125,
+      "paragraph_id": 38,
+      "section_id": 9,
+      "text": "One hundred fifty adult participants were recruited via the Prolific recruitment platform in return for £1.50 in financial compensation.",
+      "page_number": null
+    },
+    {
+      "text_id": 126,
+      "paragraph_id": 38,
+      "section_id": 9,
+      "text": "We recruited a sample size that would provide an approximately equal number of observations to Experiment 1 after accounting for differences in trial count per participant (detailed below).",
+      "page_number": null
+    },
+    {
+      "text_id": 127,
+      "paragraph_id": 38,
+      "section_id": 9,
+      "text": "The sample included 74 men and 74 women (two declined to provide gender information), and ages ranged between 18 and 65 years (M = 28.8 years).",
+      "page_number": null
+    },
+    {
+      "text_id": 128,
+      "paragraph_id": 38,
+      "section_id": 9,
+      "text": "Ethical approval for the experiment was again provided by the University of Warwick Humanities and Social Sciences Research Ethics Committee.",
+      "page_number": null
+    },
+    {
+      "text_id": 129,
+      "paragraph_id": 39,
+      "section_id": 9,
+      "text": "Design and materials.",
+      "page_number": null
+    },
+    {
+      "text_id": 130,
+      "paragraph_id": 39,
+      "section_id": 9,
+      "text": "Experiment 2 used a similar design to Experiment 1, except that the dot arrays were replaced with questions about the most likely age at which people perform certain behaviors (e.g., \"What age is someone most likely to get married?\").",
+      "page_number": null
+    },
+    {
+      "text_id": 131,
+      "paragraph_id": 39,
+      "section_id": 9,
+      "text": "Age was selected as a dimension because it provided an intuitive match to the 100-point scale used in Experiment 1 and is an aspect with which participants would be familiar.",
+      "page_number": null
+    },
+    {
+      "text_id": 132,
+      "paragraph_id": 39,
+      "section_id": 9,
+      "text": "Unlike the dot arrays used in Experiment 1, these questions do not have objectively correct answers; instead, unbiased estimates were obtained using a preliminary survey in which a separate set of participants (N = 100) gave their own answers to these questions without any preceding comparisons (further details on this survey are given in the Supplemental Material).",
+      "page_number": null
+    },
+    {
+      "text_id": 133,
+      "paragraph_id": 39,
+      "section_id": 9,
+      "text": "Participants in Experiment 2 were therefore asked to estimate the average answers given in this survey, which allowed us to designate responses as correct.",
+      "page_number": null
+    },
+    {
+      "text_id": 134,
+      "paragraph_id": 39,
+      "section_id": 9,
+      "text": "Questions were selected to mirror the division between",
+      "page_number": null
+    },
+    {
+      "text_id": 135,
+      "paragraph_id": 40,
+      "section_id": 9,
+      "text": "Target Window 0 0.1 0.2 0.3 0.4 0.5 0.6 0.7 Response Proportion Target = 25.5 Local Boundary Distant Boundary ±0 ±2 ±4 ±6 ±8 ±10 ±0 ±2 ±4 ±6 ±8 ±10 Target Window 0 0.1 0.2 0.3 0.4 0.5 0.6 Response Proportion Target = 75.5 Fig 3 Mean proportion of responses falling within expanding windows around each boundary value (25.5 [low] vs.",
+      "page_number": null
+    },
+    {
+      "text_id": 136,
+      "paragraph_id": 40,
+      "section_id": 9,
+      "text": "75.5 [high]) as a function of boundary condition (local vs. distant) in each dot region in Experiment 1.",
+      "page_number": null
+    },
+    {
+      "text_id": 137,
+      "paragraph_id": 40,
+      "section_id": 9,
+      "text": "Shaded areas denote 95% confidence intervals, corrected for within-subjects variation (O'Brien & Cousineau, 2014).",
+      "page_number": null
+    },
+    {
+      "text_id": 138,
+      "paragraph_id": 40,
+      "section_id": 9,
+      "text": "Asterisks denote regions of significant repulsion effects ( p < .05).",
+      "page_number": null
+    },
+    {
+      "text_id": 139,
+      "paragraph_id": 41,
+      "section_id": 9,
+      "text": "high and low stimulus regions from Experiment 1: 10 questions had answers of approximately 20 to 30, and 10 had answers of approximately 70 to 80 (based on survey responses).",
+      "page_number": null
+    },
+    {
+      "text_id": 140,
+      "paragraph_id": 41,
+      "section_id": 9,
+      "text": "Both the questions and the expected answers are provided in the Supplemental Material.",
+      "page_number": null
+    },
+    {
+      "text_id": 141,
+      "paragraph_id": 42,
+      "section_id": 9,
+      "text": "Figure 4 provides an illustration of the experiment.",
+      "page_number": null
+    },
+    {
+      "text_id": 142,
+      "paragraph_id": 42,
+      "section_id": 9,
+      "text": "The design of the task was highly similar to that in Experiment 1, except that age questions instead of dot arrays were used as target stimuli.",
+      "page_number": null
+    },
+    {
+      "text_id": 143,
+      "paragraph_id": 42,
+      "section_id": 9,
+      "text": "On each trial, participants were asked to compare the answer to a given question with either a low or high boundary.",
+      "page_number": null
+    },
+    {
+      "text_id": 144,
+      "paragraph_id": 42,
+      "section_id": 9,
+      "text": "This again created four trial cases according to boundary value (low vs. high) and question region (low vs. high).",
+      "page_number": null
+    },
+    {
+      "text_id": 145,
+      "paragraph_id": 42,
+      "section_id": 9,
+      "text": "Given the similarity in stimulus regions between experiments, the same boundary values (25.5 and 75.5) were used.",
+      "page_number": null
+    },
+    {
+      "text_id": 146,
+      "paragraph_id": 42,
+      "section_id": 9,
+      "text": "As in Experiment 1, these values represented the approximate midpoint of these regions, thus producing both local and distant comparison cases.",
+      "page_number": null
+    },
+    {
+      "text_id": 147,
+      "paragraph_id": 42,
+      "section_id": 9,
+      "text": "In contrast to Experiment 1, however, all trials in Experiment 2 included a direct estimate of the target because each question was viewed only once by each participant; unlike the randomized dot arrays, the age questions do not vary between repetitions and so were not repeated so we could avoid potential carryover effects.",
+      "page_number": null
+    },
+    {
+      "text_id": 148,
+      "paragraph_id": 42,
+      "section_id": 9,
+      "text": "Indeed, an initial experiment that presented questions repeatedly to each participant (detailed further in the Supplemental Material) found evidence of repulsion but not anchoring, suggesting that this design was too different from previous anchoring studies to effectively replicate the effect.",
+      "page_number": null
+    },
+    {
+      "text_id": 149,
+      "paragraph_id": 42,
+      "section_id": 9,
+      "text": "This also means that each participant compared each question with only one of the two potential boundaries in their trials; thus, two versions of the question set were created, and these sets were balanced so that questions compared with the low boundary in one set were compared with the high boundary in the other, and vice versa.",
+      "page_number": null
+    },
+    {
+      "text_id": 150,
+      "paragraph_id": 42,
+      "section_id": 9,
+      "text": "Each set was evenly divided between both regions and boundaries and thus contained five trials from each of the four trial cases, controlled to",
+      "page_number": null
+    },
+    {
+      "text_id": 151,
+      "paragraph_id": 43,
+      "section_id": 9,
+      "text": "a c d b Boundary 0 1 00 This is your comparison point for this trial Stimulus We asked: What age is someone most likely to live on their own?",
+      "page_number": null
+    },
+    {
+      "text_id": 152,
+      "paragraph_id": 43,
+      "section_id": 9,
+      "text": "Decision Estimate 0 1 00",
+      "page_number": null
+    },
+    {
+      "text_id": 153,
+      "paragraph_id": 44,
+      "section_id": 9,
+      "text": "We asked: What age is someone most likely to live on their own?",
+      "page_number": null
+    },
+    {
+      "text_id": 154,
+      "paragraph_id": 45,
+      "section_id": 9,
+      "text": "Was the average answer higher or lower than this line?",
+      "page_number": null
+    },
+    {
+      "text_id": 155,
+      "paragraph_id": 45,
+      "section_id": 9,
+      "text": "L -higher A -lower + 0 100",
+      "page_number": null
+    },
+    {
+      "text_id": 156,
+      "paragraph_id": 46,
+      "section_id": 9,
+      "text": "We asked: What age is someone most likely to live on their own?",
+      "page_number": null
+    },
+    {
+      "text_id": 157,
+      "paragraph_id": 46,
+      "section_id": 9,
+      "text": "Click the point on the scale which matches your answer Participants were asked to decide whether the average answer to the question was higher or lower than the boundary line (c).",
+      "page_number": null
+    },
+    {
+      "text_id": 158,
+      "paragraph_id": 46,
+      "section_id": 9,
+      "text": "On all trials, they were additionally asked to provide a direct estimate of the answer to the question (d).",
+      "page_number": null
+    },
+    {
+      "text_id": 159,
+      "paragraph_id": 47,
+      "section_id": 9,
+      "text": "provide approximately equal average expected answers in each condition a priori on the basis of survey responses (for full details, see the Supplemental Material).",
+      "page_number": null
+    },
+    {
+      "text_id": 160,
+      "paragraph_id": 47,
+      "section_id": 9,
+      "text": "Each participant was randomly assigned one of these sets at the start of the task to further reduce potential biases.",
+      "page_number": null
+    },
+    {
+      "text_id": 161,
+      "paragraph_id": 47,
+      "section_id": 9,
+      "text": "As with Experiment 1, all responses were directed using a semicircular scale ranging between 0 and 100.",
+      "page_number": null
+    },
+    {
+      "text_id": 162,
+      "paragraph_id": 48,
+      "section_id": 9,
+      "text": "Procedure.",
+      "page_number": null
+    },
+    {
+      "text_id": 163,
+      "paragraph_id": 48,
+      "section_id": 9,
+      "text": "Experiment 2 used a similar procedure to that in Experiment 1, except that minor alterations were made to suit the different target stimuli.",
+      "page_number": null
+    },
+    {
+      "text_id": 164,
+      "paragraph_id": 48,
+      "section_id": 9,
+      "text": "First, as noted, each question was viewed only once, meaning that each participant completed only 20 trials during the experiment.",
+      "page_number": null
+    },
+    {
+      "text_id": 165,
+      "paragraph_id": 48,
+      "section_id": 9,
+      "text": "An estimate was requested on all trials so we would have a sufficient count for analysis.",
+      "page_number": null
+    },
+    {
+      "text_id": 166,
+      "paragraph_id": 48,
+      "section_id": 9,
+      "text": "Second, to encourage engagement with the task, we gave participants feedback on every trial after making their estimate about whether their higher/lower decision was correct or incorrect (though no feedback was given about their estimate).",
+      "page_number": null
+    },
+    {
+      "text_id": 167,
+      "paragraph_id": 48,
+      "section_id": 9,
+      "text": "Third, rather than being briefly displayed prior to decisions, each question was held on screen throughout both the decision and estimate to aid response.",
+      "page_number": null
+    },
+    {
+      "text_id": 168,
+      "paragraph_id": 48,
+      "section_id": 9,
+      "text": "All other aspects of the procedure were identical to that of Experiment 1.",
+      "page_number": null
+    },
+    {
+      "text_id": 169,
+      "paragraph_id": 50,
+      "section_id": 10,
+      "text": "Data from two participants were lost because of computer error in data submission.",
+      "page_number": null
+    },
+    {
+      "text_id": 170,
+      "paragraph_id": 50,
+      "section_id": 10,
+      "text": "The same exclusion criteria were applied in Experiment 2 as in Experiment 1: 11 participants were removed for basing their responses on decision boundaries (six used the presented boundary, five used the alternate boundary), 39 total estimates (1.39%) were removed for being more than 50 years away from the true answer for that trial, and 38 estimates (1.36%) were removed for being made within 200 ms.",
+      "page_number": null
+    },
+    {
+      "text_id": 171,
+      "paragraph_id": 50,
+      "section_id": 10,
+      "text": "These exclusion criteria were preregistered, with the exception of the use of the alternate boundary to guide estimates, which was not anticipated a priori.",
+      "page_number": null
+    },
+    {
+      "text_id": 172,
+      "paragraph_id": 50,
+      "section_id": 10,
+      "text": "2 Anchoring.",
+      "page_number": null
+    },
+    {
+      "text_id": 173,
+      "paragraph_id": 50,
+      "section_id": 10,
+      "text": "Anchoring was examined using pairedsamples t tests to compare mean estimates from each participant in the high-and low-boundary cases within each stimulus region.",
+      "page_number": null
+    },
+    {
+      "text_id": 174,
+      "paragraph_id": 50,
+      "section_id": 10,
+      "text": "3 This involved contrasts between answers to different questions within a region given that each participant compared a given question with only one of the two boundaries, although both the controls and counterbalancing of question sets should have limited any potential bias raised by such comparisons.",
+      "page_number": null
+    },
+    {
+      "text_id": 175,
+      "paragraph_id": 50,
+      "section_id": 10,
+      "text": "As in Experiment 1, estimates in the low question region were significantly higher following comparison with the high boundary (M = 29.6, 95% CI = [28.8, 30.3]) than the low boundary (M = 28.3, 95% CI = [27.5, 29.1]), t(135) = 2.23, p = .014, d = 0.19, 95% CI = [0, 0.38], and estimates in the high question region were significantly lower following comparison with the low boundary (M = 71.0, 95% CI = [69.9, 72.1]) than the high boundary (M = 74.5, 95% CI = [73.4, 75.6]), t(135) = 4.48, p < .001, d = 0.38, 95% CI = [0.18, 0.58].",
+      "page_number": null
+    },
+    {
+      "text_id": 176,
+      "paragraph_id": 50,
+      "section_id": 10,
+      "text": "These results suggest that anchoring was observed in both regions, although this effect was again stronger in the high region.",
+      "page_number": null
+    },
+    {
+      "text_id": 177,
+      "paragraph_id": 50,
+      "section_id": 10,
+      "text": "This further suggests that higher values were more susceptible to presentation of the comparison point.",
+      "page_number": null
+    },
+    {
+      "text_id": 178,
+      "paragraph_id": 50,
+      "section_id": 10,
+      "text": "A breakdown of the results for each question is given in the Supplemental Material.",
+      "page_number": null
+    },
+    {
+      "text_id": 179,
+      "paragraph_id": 51,
+      "section_id": 10,
+      "text": "Repulsion.",
+      "page_number": null
+    },
+    {
+      "text_id": 180,
+      "paragraph_id": 51,
+      "section_id": 10,
+      "text": "Estimate distributions from each trial case in Experiment 2 are shown in Figure 5.",
+      "page_number": null
+    },
+    {
+      "text_id": 181,
+      "paragraph_id": 51,
+      "section_id": 10,
+      "text": "These distributions suggest lower rates of responses around the boundaries where these values were closer to the target, although these appear less prominent than in the perceptual case.",
+      "page_number": null
+    },
+    {
+      "text_id": 182,
+      "paragraph_id": 51,
+      "section_id": 10,
+      "text": "It is also notable that the divot in the high-region/highboundary case again appears to fall below the boundary, possibly indicating similar effects in this task.",
+      "page_number": null
+    },
+    {
+      "text_id": 183,
+      "paragraph_id": 51,
+      "section_id": 10,
+      "text": "Repulsion was again assessed using Hartigan's dip test of unimodality in each of the four trial cases.",
+      "page_number": null
+    },
+    {
+      "text_id": 184,
+      "paragraph_id": 51,
+      "section_id": 10,
+      "text": "As in Experiment 1, dip tests revealed a significant effect in the low-boundary/ low-region case (dip = 0.032, p < .001) but no significant effects in the low-boundary/high-region (dip = 0.011, p = .930), high-boundary/low-region (dip = 0.010, p = .984), or high-boundary/high-region (dip = 0.011, p = .908) cases.",
+      "page_number": null
+    },
+    {
+      "text_id": 185,
+      "paragraph_id": 51,
+      "section_id": 10,
+      "text": "This again suggests that repulsion effects were more prominent in the low region, although in this case, such results may be attributable to a greater proportion of the mass falling above the boundary point in the highboundary/high-region case.",
+      "page_number": null
+    },
+    {
+      "text_id": 186,
+      "paragraph_id": 52,
+      "section_id": 10,
+      "text": "As in Experiment 1, the dip test was supplemented with an additional analysis comparing the rate of responses around each boundary value between boundary conditions (results are summarized in Fig. 6; for full details of these comparisons, see https://osf.io/s2md8/).",
+      "page_number": null
+    },
+    {
+      "text_id": 187,
+      "paragraph_id": 52,
+      "section_id": 10,
+      "text": "This test again revealed significantly higher response rates around the boundary value for the distant boundary cases, further suggesting that participants had an aversion to estimates close to a displayed boundary, although the effect does appear more consistent between regions than in the previous experiment.",
+      "page_number": null
+    },
+    {
+      "text_id": 188,
+      "paragraph_id": 52,
+      "section_id": 10,
+      "text": "Once again, however, this effect extended for only ±2 points around the boundary, eventually crossing over into anchoring effects at wider windows.",
+      "page_number": null
+    },
+    {
+      "text_id": 189,
+      "paragraph_id": 52,
+      "section_id": 10,
+      "text": "As in the previous experiment, a nonparametric version of this analysis found nearly identical results, detailed further in the Supplemental Material.",
+      "page_number": null
+    },
+    {
+      "text_id": 190,
+      "paragraph_id": 52,
+      "section_id": 10,
+      "text": "4",
+      "page_number": null
+    },
+    {
+      "text_id": 191,
+      "paragraph_id": 54,
+      "section_id": 11,
+      "text": "The results of Experiment 2 are highly consistent with those of Experiment 1, showing evidence of both anchoring and repulsion within cognitive estimates.",
+      "page_number": null
+    },
+    {
+      "text_id": 192,
+      "paragraph_id": 54,
+      "section_id": 11,
+      "text": "This provides further evidence that such effects are not restricted to a specific domain but may both be considered general properties of human judgments.",
+      "page_number": null
+    },
+    {
+      "text_id": 193,
+      "paragraph_id": 56,
+      "section_id": 12,
+      "text": "Across two experiments, we found that judgments of both perceptual and cognitive targets can be biased by preceding comparison decisions in two opposing ways: Judgments are drawn toward distant comparison values but pushed away from nearby comparison values.",
+      "page_number": null
+    },
+    {
+      "text_id": 194,
+      "paragraph_id": 56,
+      "section_id": 12,
+      "text": "These data replicated both anchoring and repulsion effects documented in the existing literature but notably did so within the same task structure, the key deciding element being the relative position of the boundary to the target.",
+      "page_number": null
+    },
+    {
+      "text_id": 195,
+      "paragraph_id": 56,
+      "section_id": 12,
+      "text": "Anchoring and repulsion may not be as opposed as they initially appear but could in fact be two aspects of an overarching estimation process that reacts differently to varying decision boundaries.",
+      "page_number": null
+    },
+    {
+      "text_id": 196,
+      "paragraph_id": 56,
+      "section_id": 12,
+      "text": "Such findings bridge the previously disconnected literatures on these phenomena, revealing the importance of considerations of each effect to the other: Decision biases clearly do not run entirely in one direction but are sensitive to specific details of the task at hand.",
+      "page_number": null
+    },
+    {
+      "text_id": 197,
+      "paragraph_id": 56,
+      "section_id": 12,
+      "text": "Furthermore, the consistency in results between the perceptual and cognitive tasks shows that both effects are not restricted to the domain in which they were originally shown, providing evidence that these effects are general aspects of human judgment rather than the result of more specialized systems, such as the sensoryreweighting explanation of repulsion ( Jazayeri & Movshon, 2007).",
+      "page_number": null
+    },
+    {
+      "text_id": 198,
+      "paragraph_id": 57,
+      "section_id": 12,
+      "text": "The co-occurrence of these effects therefore carries major implications for existing theories of human judgment; as previously noted.",
+      "page_number": null
+    },
+    {
+      "text_id": 199,
+      "paragraph_id": 57,
+      "section_id": 12,
+      "text": "Although many explanations have been offered for both anchoring and repulsion, they are designed to account for only one of these Low Boundary, Low Region effects and so do not consider the other.",
+      "page_number": null
+    },
+    {
+      "text_id": 200,
+      "paragraph_id": 57,
+      "section_id": 12,
+      "text": "These results demonstrate the need for theories that can unite these phenomena to accurately describe the range of human behavior, as any individual explanation alone is clearly insufficient.",
+      "page_number": null
+    },
+    {
+      "text_id": 201,
+      "paragraph_id": 57,
+      "section_id": 12,
+      "text": "One avenue for such work is to look for potential combinations of existing explanations to create more general theories, although this is reliant on coherence between the individual elements.",
+      "page_number": null
+    },
+    {
+      "text_id": 202,
+      "paragraph_id": 57,
+      "section_id": 12,
+      "text": "In this regard, we suggest that sampling theories are a particularly compelling candidate, not only having been offered for both effects individually (Lieder et al., 2018;Zhu et al., 2019) but also more naturally fitting together because of their common framework; indeed, we provide a preliminary definition of such a model in the Supplemental Material, showing that this model can predict both effects.",
+      "page_number": null
+    },
+    {
+      "text_id": 203,
+      "paragraph_id": 57,
+      "section_id": 12,
+      "text": "Sampling theories also carry the advantage of explaining various other judgment biases beyond anchoring and repulsion (Dasgupta et al., 2017;Sanborn et al., 2021;Zhu et al., 2020), presenting the current findings as one aspect of a general resourcerational depiction of human behavior.",
+      "page_number": null
+    },
+    {
+      "text_id": 204,
+      "paragraph_id": 57,
+      "section_id": 12,
+      "text": "This is not to say that sampling is the only solution that can unite anchoring and repulsion; the current data do not provide sufficient detail to identify the underlying processes in these tasks, meaning that it remains possible that this co-occurrence may simply reflect the overlap of previously suggested independent mechanisms.",
+      "page_number": null
+    },
+    {
+      "text_id": 205,
+      "paragraph_id": 57,
+      "section_id": 12,
+      "text": "Even so, this finding does at least constrain potential combinations to those with compatible mechanisms: If judgments are subject to both biases, then the factors responsible must ultimately be somehow integrated into a single response.",
+      "page_number": null
+    },
+    {
+      "text_id": 206,
+      "paragraph_id": 57,
+      "section_id": 12,
+      "text": "Although this is simple for sampling mechanisms, other combinations are far less clear: For example, it is complicated to determine how anchoring theories such as scale distortion can be reconciled with self-consistency explanations for repulsion or, indeed, how sampling and nonsampling elements might be combined.",
+      "page_number": null
+    },
+    {
+      "text_id": 207,
+      "paragraph_id": 57,
+      "section_id": 12,
+      "text": "This may not invalidate such theories but does present substantial challenges to be answered, whereas sampling's consistent framework has an advantage in terms of parsimony.",
+      "page_number": null
+    },
+    {
+      "text_id": 208,
+      "paragraph_id": 57,
+      "section_id": 12,
+      "text": "More targeted experimental designs, such as manipulations of response time or accuracy incentives that may impact the number of samples taken for a response, are thus required to further assess the sampling explanation and thereby the degree of bias.",
+      "page_number": null
+    },
+    {
+      "text_id": 209,
+      "paragraph_id": 57,
+      "section_id": 12,
+      "text": "We therefore offer these results as a foundation for further research, providing new behavioral targets for future models.",
+      "page_number": null
+    },
+    {
+      "text_id": 210,
+      "paragraph_id": 58,
+      "section_id": 12,
+      "text": "It should also be noted that these results do not mean that anchoring and repulsion co-occur in all situations; indeed, an additional experiment (reported in the Supplemental Material) using an alternate cognitivejudgment task revealed evidence of repulsion but no replication of anchoring when questions were repeated multiple times.",
+      "page_number": null
+    },
+    {
+      "text_id": 211,
+      "paragraph_id": 58,
+      "section_id": 12,
+      "text": "Such results help to illustrate the limits of these phenomena both individually and in",
+      "page_number": null
+    },
+    {
+      "text_id": 212,
+      "paragraph_id": 59,
+      "section_id": 12,
+      "text": "Target Window 0 0.1 0.2 0.3 0.4 0.5 0.6 0.8 0.7 Response Proportion Target = 25.5 ±0 ±2 ±4 ±6 ±8 ±10 ±0 ±2 ±4 ±6 ±8 ±10 Target Window 0 0.1 0.2 0.3 0.4 0.5 0.6 0.7 Response Proportion Target = 75.5 Local Boundary Distant Boundary Fig 6 Mean proportion of responses falling within expanding windows around each boundary value (25.5 [low] vs.",
+      "page_number": null
+    },
+    {
+      "text_id": 213,
+      "paragraph_id": 59,
+      "section_id": 12,
+      "text": "75.5 [high]) as a function of boundary condition (local vs. distant) in each stimulus region in Experiment 2.",
+      "page_number": null
+    },
+    {
+      "text_id": 214,
+      "paragraph_id": 59,
+      "section_id": 12,
+      "text": "Shaded areas denote 95% confidence intervals, corrected for within-subjects variation (O'Brien & Cousineau, 2014).",
+      "page_number": null
+    },
+    {
+      "text_id": 215,
+      "paragraph_id": 59,
+      "section_id": 12,
+      "text": "Asterisks denote regions of significant repulsion effects ( p < .05).",
+      "page_number": null
+    },
+    {
+      "text_id": 216,
+      "paragraph_id": 60,
+      "section_id": 12,
+      "text": "combination and will require further development to define when and why such effects are displayed; for example, does the co-occurrence persist for incidental comparison values in place of explicit boundaries or where estimates are not constrained to a limited scale?",
+      "page_number": null
+    },
+    {
+      "text_id": 217,
+      "paragraph_id": 60,
+      "section_id": 12,
+      "text": "This will be a key factor in distinguishing between models of these effects in subsequent research.",
+      "page_number": null
+    },
+    {
+      "text_id": 218,
+      "paragraph_id": 60,
+      "section_id": 12,
+      "text": "More broadly, the current results present this co-occurrence only for two particular tasks (dot numerosity and age questions), both using similar online participant samples.",
+      "page_number": null
+    },
+    {
+      "text_id": 219,
+      "paragraph_id": 60,
+      "section_id": 12,
+      "text": "Further work may therefore be required to assess how these findings generalize to alternate stimuli and subjects, though these data do already show consistent patterns across cognitive and perceptual domains, offering some support for their generality.",
+      "page_number": null
+    },
+    {
+      "text_id": 220,
+      "paragraph_id": 60,
+      "section_id": 12,
+      "text": "It is also notable that anchoring itself has been found to be one of the more robust decision biases, displayed across both tasks and populations (Chapman & Johnson, 1999;Ariely et al., 2003;Epley & Gilovich, 2006;Harris & Speekenbrink, 2016), though the literature on repulsion is less extensive, which suggests that further examination is still needed.",
+      "page_number": null
+    },
+    {
+      "text_id": 221,
+      "paragraph_id": 62,
+      "section_id": 13,
+      "text": "Action Editor: Vladimir Sloutsky Editor: Patricia J Bauer",
+      "page_number": null
+    },
+    {
+      "text_id": 222,
+      "paragraph_id": 64,
+      "section_id": 14,
+      "text": "This work was supported by a European Research Council consolidator grant (No.",
+      "page_number": null
+    },
+    {
+      "text_id": 223,
+      "paragraph_id": 64,
+      "section_id": 14,
+      "text": "817492-SAMPLING) supporting J Spicer, J-Q Zhu, and A N Sanborn and by an Economic and Social Research Council Network for Integrated Behavioural Science grant (No.",
+      "page_number": null
+    },
+    {
+      "text_id": 224,
+      "paragraph_id": 64,
+      "section_id": 14,
+      "text": "ES/P008976/1) to N Chater.",
+      "page_number": null
+    },
+    {
+      "text_id": 225,
+      "paragraph_id": 64,
+      "section_id": 14,
+      "text": "Open Practices All data, code, and materials for Experiments 1 and 2 have been made publicly available via OSF and can be accessed at https://osf.io/s2md8/.",
+      "page_number": null
+    },
+    {
+      "text_id": 226,
+      "paragraph_id": 64,
+      "section_id": 14,
+      "text": "Experiment 1 was not preregistered.",
+      "page_number": null
+    },
+    {
+      "text_id": 227,
+      "paragraph_id": 64,
+      "section_id": 14,
+      "text": "Experiment 2 was preregistered on OSF at https:// osf.io/bsajt/.",
+      "page_number": null
+    },
+    {
+      "text_id": 228,
+      "paragraph_id": 64,
+      "section_id": 14,
+      "text": "This article has received the badges for Open Data, Open Materials, and Preregistration.",
+      "page_number": null
+    },
+    {
+      "text_id": 229,
+      "paragraph_id": 64,
+      "section_id": 14,
+      "text": "More information about the Open Practices badges can be found at http://www.psychologicalscience.org/publications/ badges.",
+      "page_number": null
+    },
+    {
+      "text_id": 230,
+      "paragraph_id": 66,
+      "section_id": 15,
+      "text": "The author(s) declared that there were no conflicts of interest with respect to the authorship or the publication of this article.",
+      "page_number": null
+    },
+    {
+      "text_id": 231,
+      "paragraph_id": 68,
+      "section_id": 16,
+      "text": "J Spicer, J-Q Zhu, N Chater, and A N Sanborn contributed to the concept and design of this study.",
+      "page_number": null
+    },
+    {
+      "text_id": 232,
+      "paragraph_id": 68,
+      "section_id": 16,
+      "text": "J Spicer coded and ran the experiments.",
+      "page_number": null
+    },
+    {
+      "text_id": 233,
+      "paragraph_id": 68,
+      "section_id": 16,
+      "text": "J Spicer analyzed the data in discussion with all the authors.",
+      "page_number": null
+    },
+    {
+      "text_id": 234,
+      "paragraph_id": 68,
+      "section_id": 16,
+      "text": "J Spicer drafted the manuscript, and the other authors provided revisions.",
+      "page_number": null
+    },
+    {
+      "text_id": 235,
+      "paragraph_id": 68,
+      "section_id": 16,
+      "text": "All the authors approved the final manuscript for submission.",
+      "page_number": null
+    },
+    {
+      "text_id": 236,
+      "paragraph_id": 70,
+      "section_id": 17,
+      "text": "Additional supporting information can be found at http:// journals.sagepub.com/doi/suppl/10.1177/09567976221089599 Notes 1.",
+      "page_number": null
+    },
+    {
+      "text_id": 237,
+      "paragraph_id": 70,
+      "section_id": 17,
+      "text": "We noted this divergence in the conclusions of a previous article (Zhu et al., 2019) and discussed how it could be modeled in another article (Sanborn et al., 2021), but we are not aware of any other acknowledgment.",
+      "page_number": null
+    },
+    {
+      "text_id": 238,
+      "paragraph_id": 70,
+      "section_id": 17,
+      "text": "2.",
+      "page_number": null
+    },
+    {
+      "text_id": 239,
+      "paragraph_id": 70,
+      "section_id": 17,
+      "text": "This behavior was discovered during analysis of Experiment 2 and retroactively excluded from Experiment 1.",
+      "page_number": null
+    },
+    {
+      "text_id": 240,
+      "paragraph_id": 70,
+      "section_id": 17,
+      "text": "Inclusion of these participants does not qualitatively change repulsion results but does render anchoring effects nonsignificant in lower stimulus regions (but not higher regions) because these participants specifically answered away from the displayed boundary.",
+      "page_number": null
+    },
+    {
+      "text_id": 241,
+      "paragraph_id": 70,
+      "section_id": 17,
+      "text": "3.",
+      "page_number": null
+    },
+    {
+      "text_id": 242,
+      "paragraph_id": 70,
+      "section_id": 17,
+      "text": "The significance criterion (a = .025) for these tests was again Bonferroni corrected.",
+      "page_number": null
+    },
+    {
+      "text_id": 243,
+      "paragraph_id": 70,
+      "section_id": 17,
+      "text": "This was not part of the preregistered analysis plan but was suggested by an anonymous reviewer.",
+      "page_number": null
+    },
+    {
+      "text_id": 244,
+      "paragraph_id": 70,
+      "section_id": 17,
+      "text": "4.",
+      "page_number": null
+    },
+    {
+      "text_id": 245,
+      "paragraph_id": 70,
+      "section_id": 17,
+      "text": "This analysis was not preregistered but was suggested by an anonymous reviewer.",
+      "page_number": null
+    },
+    {
+      "text_id": 246,
+      "paragraph_id": 71,
+      "section_id": 18,
+      "text": "Fig.1.",
+      "page_number": null
+    },
+    {
+      "text_id": 247,
+      "paragraph_id": 71,
+      "section_id": 18,
+      "text": "Example trial sequence from Experiment 1.",
+      "page_number": null
+    },
+    {
+      "text_id": 248,
+      "paragraph_id": 71,
+      "section_id": 18,
+      "text": "Participants were first shown a scale from 0 to 100 on which a line marked either a low boundary (shown here) or a high boundary (a).",
+      "page_number": null
+    },
+    {
+      "text_id": 249,
+      "paragraph_id": 71,
+      "section_id": 18,
+      "text": "The given boundary was either near or distant from the number of dots shown in a subsequent stimulus array (b).",
+      "page_number": null
+    },
+    {
+      "text_id": 250,
+      "paragraph_id": 71,
+      "section_id": 18,
+      "text": "After the array disappeared, participants were asked to decide whether the number of dots in the array had been higher or lower than the boundary line (c).",
+      "page_number": null
+    },
+    {
+      "text_id": 251,
+      "paragraph_id": 71,
+      "section_id": 18,
+      "text": "On 30% of trials (randomly selected), participants were additionally asked to estimate the true number of dots (d).",
+      "page_number": null
+    },
+    {
+      "text_id": 252,
+      "paragraph_id": 72,
+      "section_id": 19,
+      "text": "Fig 2 Distribution of participants' estimates of the true number of dots in each array shown in Experiment 1, separately for each of the four trial cases.",
+      "page_number": null
+    },
+    {
+      "text_id": 253,
+      "paragraph_id": 72,
+      "section_id": 19,
+      "text": "Dashed lines indicate decision boundaries preceding those estimates.",
+      "page_number": null
+    },
+    {
+      "text_id": 254,
+      "paragraph_id": 73,
+      "section_id": 20,
+      "text": "Fig.4.",
+      "page_number": null
+    },
+    {
+      "text_id": 255,
+      "paragraph_id": 73,
+      "section_id": 20,
+      "text": "Example trial sequence from Experiment 2.",
+      "page_number": null
+    },
+    {
+      "text_id": 256,
+      "paragraph_id": 73,
+      "section_id": 20,
+      "text": "Participants were first shown a scale from 0 to 100 on which a line marked either a low boundary (shown here) or a high boundary (a).",
+      "page_number": null
+    },
+    {
+      "text_id": 257,
+      "paragraph_id": 73,
+      "section_id": 20,
+      "text": "The given boundary was either near or distant from the answer to the question shown in the subsequent stimulus (b).",
+      "page_number": null
+    },
+    {
+      "text_id": 258,
+      "paragraph_id": 73,
+      "section_id": 20,
+      "text": "Participants were asked to decide whether the average answer to the question was higher or lower than the boundary line (c).",
+      "page_number": null
+    },
+    {
+      "text_id": 259,
+      "paragraph_id": 73,
+      "section_id": 20,
+      "text": "On all trials, they were additionally asked to provide a direct estimate of the answer to the question (d).",
+      "page_number": null
+    },
+    {
+      "text_id": 260,
+      "paragraph_id": 74,
+      "section_id": 21,
+      "text": "Fig 5 Distribution of participants' estimates of the answer to each question in Experiment 2, separately for each of the four trial cases.",
+      "page_number": null
+    },
+    {
+      "text_id": 261,
+      "paragraph_id": 74,
+      "section_id": 21,
+      "text": "Dashed lines indicate decision boundaries preceding those estimates.",
+      "page_number": null
+    },
+    {
+      "text_id": 262,
+      "paragraph_id": 75,
+      "section_id": 22,
+      "text": "Ariely, D., Loewenstein, G., & Prelec, D. (2003). \"Coherent arbitrariness\": Stable demand curves without stable pref- erences. The Quarterly Journal of Economics, 118(1), 73-106. https://doi.org/10.1162/00335530360535153",
+      "page_number": null
+    },
+    {
+      "text_id": 263,
+      "paragraph_id": 76,
+      "section_id": 22,
+      "text": "Chapman, G. B., & Johnson, E. J. (1994). The limits of anchor- ing. Journal of Behavioral Decision Making, 7(4), 223- 242. https://doi.org/10.1002/bdm.3960070402",
+      "page_number": null
+    },
+    {
+      "text_id": 264,
+      "paragraph_id": 77,
+      "section_id": 22,
+      "text": "Chapman, G. B., & Johnson, E. J. (1999). Anchoring, acti- vation, and the construction of values. Organizational Behavior and Human Decision Processes, 79(2), 115-153. https://doi.org/10.1006/obhd.1999.2841",
+      "page_number": null
+    },
+    {
+      "text_id": 265,
+      "paragraph_id": 78,
+      "section_id": 22,
+      "text": "Dasgupta, I., Schulz, E., & Gershman, S. J. (2017). Where do hypotheses come from? Cognitive Psychology, 96, 1-25. https://doi.org/10.1016/j.cogpsych.2017.05.001",
+      "page_number": null
+    },
+    {
+      "text_id": 266,
+      "paragraph_id": 79,
+      "section_id": 22,
+      "text": "Epley, N., & Gilovich, T. (2006). The anchoring-and-adjust- ment heuristic: Why the adjustments are insufficient. Psychological Science, 17(4), 311-318. https://doi.org/ 10.1111/j.1467-9280.2006.01704.x",
+      "page_number": null
+    },
+    {
+      "text_id": 267,
+      "paragraph_id": 80,
+      "section_id": 22,
+      "text": "Frederick, S. W., & Mochon, D. (2012). A scale distortion theory of anchoring. Journal of Experimental Psychology: General, 141(1), 124-133. https://doi.org/10.1037/a00 24006",
+      "page_number": null
+    },
+    {
+      "text_id": 268,
+      "paragraph_id": 81,
+      "section_id": 22,
+      "text": "Harris, A. J., & Speekenbrink, M. (2016). Semantic cross-scale numerical anchoring. Judgment and Decision Making, 11(6), 572-581.",
+      "page_number": null
+    },
+    {
+      "text_id": 269,
+      "paragraph_id": 82,
+      "section_id": 22,
+      "text": "Hartigan, J. A., & Hartigan, P. M. (1985). The dip test of uni- modality. Annals of Statistics, 13(1), 70-84. https://doi .org/10.1214/aos/1176346577",
+      "page_number": null
+    },
+    {
+      "text_id": 270,
+      "paragraph_id": 83,
+      "section_id": 22,
+      "text": "Hartigan, P. M. (1985). Algorithm AS 217: Computation of the dip statistic to test for unimodality. Journal of the Royal Statistical Society C: Applied Statistics, 34(3), 320-325. https://doi.org/10.2307/2347485",
+      "page_number": null
+    },
+    {
+      "text_id": 271,
+      "paragraph_id": 84,
+      "section_id": 22,
+      "text": "Jacowitz, K. E., & Kahneman, D. (1995). Measures of anchor- ing in estimation tasks. Personality and Social Psychology Bulletin, 21(11), 1161-1166. https://doi.org/10.1177/ 01461672952111004",
+      "page_number": null
+    },
+    {
+      "text_id": 272,
+      "paragraph_id": 85,
+      "section_id": 22,
+      "text": "Jazayeri, M., & Movshon, J. A. (2007). A new perceptual illu- sion reveals mechanisms of sensory decoding. Nature, 446(7138), 912-915. https://doi.org/10.1038/nature05739",
+      "page_number": null
+    },
+    {
+      "text_id": 273,
+      "paragraph_id": 86,
+      "section_id": 22,
+      "text": "Lichtenstein, S., & Slovic, P. (1971). Reversals of preference between bids and choices in gambling decisions. Journal of Experimental Psychology, 89(1), 46-55. https://doi .org/10.1037/h0031207",
+      "page_number": null
+    },
+    {
+      "text_id": 274,
+      "paragraph_id": 87,
+      "section_id": 22,
+      "text": "Lieder, F., Griffiths, T. L., Huys, Q. J., & Goodman, N. D. (2018). The anchoring bias reflects rational use of cogni- tive resources. Psychonomic Bulletin & Review, 25, 322- 349. https://doi.org/10.3758/s13423-017-1286-8",
+      "page_number": null
+    },
+    {
+      "text_id": 275,
+      "paragraph_id": 88,
+      "section_id": 22,
+      "text": "Luu, L., & Stocker, A. A. (2018). Post-decision biases reveal a self-consistency principle in perceptual inference. eLife, 7, Article e33334. https://doi.org/10.7554/eLife.33334",
+      "page_number": null
+    },
+    {
+      "text_id": 276,
+      "paragraph_id": 89,
+      "section_id": 22,
+      "text": "Mochon, D., & Frederick, S. (2013). Anchoring in sequential judgments. Organizational Behavior and Human Decision Processes, 122(1), 69-79. https://doi.org/10.1016/j.obhdp .2013.04.002",
+      "page_number": null
+    },
+    {
+      "text_id": 277,
+      "paragraph_id": 90,
+      "section_id": 22,
+      "text": "Mussweiler, T., & Strack, F. (2000). Numeric judgments under uncertainty: The role of knowledge in anchoring. Journal of Experimental Social Psychology, 36(5), 495-518. https:// doi.org/10.1006/jesp.1999.1414",
+      "page_number": null
+    },
+    {
+      "text_id": 278,
+      "paragraph_id": 91,
+      "section_id": 22,
+      "text": "O'Brien, F., & Cousineau, D. (2014). Representing error bars in within-subject designs in typical software packages. The Quantitative Methods for Psychology, 10(1), 56-67.",
+      "page_number": null
+    },
+    {
+      "text_id": 279,
+      "paragraph_id": 92,
+      "section_id": 22,
+      "text": "Peirce, J., Gray, J. R., Simpson, S., MacAskill, M., Höchenberger, R., Sogo, H., Kastman, E., & Lindeløv, J. K. (2019). PsychoPy2: Experiments in behavior made easy. Behavior Research Methods, 51(1), 195-203. https:// doi.org/10.3758/s13428-018-01193-y",
+      "page_number": null
+    },
+    {
+      "text_id": 280,
+      "paragraph_id": 93,
+      "section_id": 22,
+      "text": "Sanborn, A. N., Zhu, J.-Q., Spicer, J., Sundh, J., León-Villagrá, P., & Chater, N. (2021). Sampling as the human approxi- mation to probabilistic inference. In S. Muggleton & N. Chater (Eds.), Human-like machine intelligence (pp. 430-448). Oxford University Press.",
+      "page_number": null
+    },
+    {
+      "text_id": 281,
+      "paragraph_id": 94,
+      "section_id": 22,
+      "text": "Schwarz, N., Strack, F., Hilton, D., & Naderer, G. (1991). Base rates, representativeness, and the logic of conversa- tion: The contextual relevance of \"irrelevant\" information. Social Cognition, 9(1), 67-84. https://doi.org/10.1521/ soco.1991.9.1.67",
+      "page_number": null
+    },
+    {
+      "text_id": 282,
+      "paragraph_id": 95,
+      "section_id": 22,
+      "text": "Simmons, J. P., LeBoeuf, R. A., & Nelson, L. D. (2010). The effect of accuracy motivation on anchoring and adjust- ment: Do people adjust from provided anchors? Journal of Personality and Social Psychology, 99(6), 917-932. https://doi.org/10.1037/a0021540",
+      "page_number": null
+    },
+    {
+      "text_id": 283,
+      "paragraph_id": 96,
+      "section_id": 22,
+      "text": "Strack, F., & Mussweiler, T. (1997). Explaining the enigmatic anchoring effect: Mechanisms of selective accessibility. Journal of Personality and Social Psychology, 73(3), 437- 446. https://doi.org/10.1037/0022-3514.73.3.437",
+      "page_number": null
+    },
+    {
+      "text_id": 284,
+      "paragraph_id": 97,
+      "section_id": 22,
+      "text": "Tsetsos, K., Usher, M., & Chater, N. (2010). Preference rever- sal in multiattribute choice. Psychological Review, 117(4), 1275-1291. https://doi.org/10.1037/a0020580",
+      "page_number": null
+    },
+    {
+      "text_id": 285,
+      "paragraph_id": 98,
+      "section_id": 22,
+      "text": "Turner, B. M., Schley, D. R., Muller, C., & Tsetsos, K. (2018). Competing theories of multialternative, multiattribute preferential choice. Psychological Review, 125(3), 329- 362. https://doi.org/10.1037/rev0000089",
+      "page_number": null
+    },
+    {
+      "text_id": 286,
+      "paragraph_id": 99,
+      "section_id": 22,
+      "text": "Tversky, A., & Kahneman, D. (1974). Judgment under uncer- tainty: Heuristics and biases. Science, 185(4157), 1124- 1131. https://doi.org/10.1126/science.185.4157.1124",
+      "page_number": null
+    },
+    {
+      "text_id": 287,
+      "paragraph_id": 100,
+      "section_id": 22,
+      "text": "Zamboni, E., Ledgeway, T., McGraw, P. V., & Schluppeck, D. (2016). Do perceptual biases emerge early or late in visual processing? Decision-biases in motion perception. Proceedings of the Royal Society B: Biological Sciences, 283(1833), Article 20160263. https://doi.org/10.1098/ rspb.2016.0263",
+      "page_number": null
+    },
+    {
+      "text_id": 288,
+      "paragraph_id": 101,
+      "section_id": 22,
+      "text": "Zhu, J.-Q., Sanborn, A. N., & Chater, N. (2019). Why deci- sions bias perception: An amortised sequential sam- pling account. In A. Goel, C. Seifert, & C. Freksa (Eds.), Proceedings of the 41st annual conference of the Cognitive Science Society (pp. 3220-3226). Cognitive Science Society.",
+      "page_number": null
+    },
+    {
+      "text_id": 289,
+      "paragraph_id": 102,
+      "section_id": 22,
+      "text": "Zhu, J.-Q., Sanborn, A. N., & Chater, N. (2020). The Bayesian sampler: Generic Bayesian inference causes incoherence in human probability judgments. Psychological Review, 127(5), 719-748. https://doi.org/10.1037/rev0000190",
+      "page_number": null
+    }
+  ],
+  "section": [
+    {
+      "section_id": 0,
+      "header": "Abstract",
+      "parent_section_id": null,
+      "section_type": "abstract",
+      "classification_score": null
+    },
+    {
+      "section_id": 1,
+      "header": "[div-01]",
+      "parent_section_id": null,
+      "section_type": "intro",
+      "classification_score": null
+    },
+    {
+      "section_id": 2,
+      "header": "Statement of Relevance",
+      "parent_section_id": null,
+      "section_type": "intro",
+      "classification_score": null
+    },
+    {
+      "section_id": 3,
+      "header": "Experiment 1: Perceptual Judgments",
+      "parent_section_id": null,
+      "section_type": "intro",
+      "classification_score": null
+    },
+    {
+      "section_id": 4,
+      "header": "Method",
+      "parent_section_id": null,
+      "section_type": "method",
+      "classification_score": null
+    },
+    {
+      "section_id": 5,
+      "header": "Design and materials.",
+      "parent_section_id": null,
+      "section_type": "method",
+      "classification_score": null
+    },
+    {
+      "section_id": 6,
+      "header": "Results",
+      "parent_section_id": null,
+      "section_type": "results",
+      "classification_score": null
+    },
+    {
+      "section_id": 7,
+      "header": "Summary",
+      "parent_section_id": null,
+      "section_type": "results",
+      "classification_score": null
+    },
+    {
+      "section_id": 8,
+      "header": "Experiment 2: Cognitive Judgments",
+      "parent_section_id": null,
+      "section_type": "results",
+      "classification_score": null
+    },
+    {
+      "section_id": 9,
+      "header": "Method",
+      "parent_section_id": null,
+      "section_type": "method",
+      "classification_score": null
+    },
+    {
+      "section_id": 10,
+      "header": "Results",
+      "parent_section_id": null,
+      "section_type": "results",
+      "classification_score": null
+    },
+    {
+      "section_id": 11,
+      "header": "Summary",
+      "parent_section_id": null,
+      "section_type": "results",
+      "classification_score": null
+    },
+    {
+      "section_id": 12,
+      "header": "Discussion",
+      "parent_section_id": null,
+      "section_type": "discussion",
+      "classification_score": null
+    },
+    {
+      "section_id": 13,
+      "header": "Transparency",
+      "parent_section_id": null,
+      "section_type": "discussion",
+      "classification_score": null
+    },
+    {
+      "section_id": 14,
+      "header": "Funding",
+      "parent_section_id": null,
+      "section_type": "funding",
+      "classification_score": null
+    },
+    {
+      "section_id": 15,
+      "header": "Declaration of Conflicting Interests",
+      "parent_section_id": null,
+      "section_type": "conflict",
+      "classification_score": null
+    },
+    {
+      "section_id": 16,
+      "header": "Author Contributions",
+      "parent_section_id": null,
+      "section_type": "contribution",
+      "classification_score": null
+    },
+    {
+      "section_id": 17,
+      "header": "Supplemental Material",
+      "parent_section_id": null,
+      "section_type": "annex",
+      "classification_score": null
+    },
+    {
+      "section_id": 18,
+      "header": "Fig 1",
+      "parent_section_id": null,
+      "section_type": "figure",
+      "classification_score": null
+    },
+    {
+      "section_id": 19,
+      "header": "Fig 2",
+      "parent_section_id": null,
+      "section_type": "figure",
+      "classification_score": null
+    },
+    {
+      "section_id": 20,
+      "header": "Fig 4",
+      "parent_section_id": null,
+      "section_type": "figure",
+      "classification_score": null
+    },
+    {
+      "section_id": 21,
+      "header": "Fig 5",
+      "parent_section_id": null,
+      "section_type": "figure",
+      "classification_score": null
+    },
+    {
+      "section_id": 22,
+      "header": "References",
+      "parent_section_id": null,
+      "section_type": "references",
+      "classification_score": null
+    }
+  ],
+  "url": [
+    {
+      "href": "https://osf.io/s2md8",
+      "link_text": null,
+      "text_id": 113
+    },
+    {
+      "href": "https://osf.io/bsajt",
+      "link_text": null,
+      "text_id": 123
+    },
+    {
+      "href": "https://osf.io/s2md8",
+      "link_text": null,
+      "text_id": 186
+    },
+    {
+      "href": "https://osf.io/s2md8",
+      "link_text": null,
+      "text_id": 225
+    },
+    {
+      "href": "osf.io/bsajt",
+      "link_text": null,
+      "text_id": 227
+    },
+    {
+      "href": "http://www.psychologicalscience.org/publications",
+      "link_text": null,
+      "text_id": 229
+    },
+    {
+      "href": "journals.sagepub.com/doi/suppl/10.1177/09567976221089599",
+      "link_text": null,
+      "text_id": 236
+    }
+  ],
+  "bib": [
+    {
+      "bib_type": "article",
+      "doi": "10.1162/00335530360535153",
+      "title": "Coherent arbitrariness\": Stable demand curves without stable preferences",
+      "authors": "Ariely, D; Loewenstein, G; Prelec, D",
+      "editors": "",
+      "publisher": "",
+      "year": 2003,
+      "volume": "118",
+      "issue": "1",
+      "first_page": "73",
+      "last_page": "106",
+      "container": "The Quarterly Journal of Economics",
+      "bib_id": 0,
+      "year_suffix": "",
+      "text_id": 262
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1002/bdm.3960070402",
+      "title": "The limits of anchoring",
+      "authors": "Chapman, G B; Johnson, E J",
+      "editors": "",
+      "publisher": "",
+      "year": 1994,
+      "volume": "7",
+      "issue": "4",
+      "first_page": "223",
+      "last_page": "242",
+      "container": "Journal of Behavioral Decision Making",
+      "bib_id": 1,
+      "year_suffix": "",
+      "text_id": 263
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1006/obhd.1999.2841",
+      "title": "Anchoring, activation, and the construction of values",
+      "authors": "Chapman, G B; Johnson, E J",
+      "editors": "",
+      "publisher": "",
+      "year": 1999,
+      "volume": "79",
+      "issue": "2",
+      "first_page": "115",
+      "last_page": "153",
+      "container": "Organizational Behavior and Human Decision Processes",
+      "bib_id": 2,
+      "year_suffix": "",
+      "text_id": 264
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1016/j.cogpsych.2017.05.001",
+      "title": "Where do hypotheses come from?",
+      "authors": "Dasgupta, I; Schulz, E; Gershman, S J",
+      "editors": "",
+      "publisher": "",
+      "year": 2017,
+      "volume": "96",
+      "issue": "",
+      "first_page": "1",
+      "last_page": "25",
+      "container": "Cognitive Psychology",
+      "bib_id": 3,
+      "year_suffix": "",
+      "text_id": 265
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1111/j.1467-9280.2006.01704.x",
+      "title": "The anchoring-and-adjustment heuristic: Why the adjustments are insufficient",
+      "authors": "Epley, N; Gilovich, T",
+      "editors": "",
+      "publisher": "",
+      "year": 2006,
+      "volume": "17",
+      "issue": "4",
+      "first_page": "311",
+      "last_page": "318",
+      "container": "Psychological Science",
+      "bib_id": 4,
+      "year_suffix": "",
+      "text_id": 266
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1037/a0024006",
+      "title": "A scale distortion theory of anchoring",
+      "authors": "Frederick, S W; Mochon, D",
+      "editors": "",
+      "publisher": "",
+      "year": 2012,
+      "volume": "141",
+      "issue": "1",
+      "first_page": "124",
+      "last_page": "133",
+      "container": "Journal of Experimental Psychology: General",
+      "bib_id": 5,
+      "year_suffix": "",
+      "text_id": 267
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "Semantic cross-scale numerical anchoring",
+      "authors": "Harris, A J; Speekenbrink, M",
+      "editors": "",
+      "publisher": "",
+      "year": 2016,
+      "volume": "11",
+      "issue": "6",
+      "first_page": "572",
+      "last_page": "581",
+      "container": "Judgment and Decision Making",
+      "bib_id": 6,
+      "year_suffix": "",
+      "text_id": 268
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1214/aos/1176346577",
+      "title": "The dip test of unimodality",
+      "authors": "Hartigan, J A; Hartigan, P M",
+      "editors": "",
+      "publisher": "",
+      "year": 1985,
+      "volume": "13",
+      "issue": "1",
+      "first_page": "70",
+      "last_page": "84",
+      "container": "Annals of Statistics",
+      "bib_id": 7,
+      "year_suffix": "",
+      "text_id": 269
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.2307/2347485",
+      "title": "Algorithm AS 217: Computation of the dip statistic to test for unimodality",
+      "authors": "Hartigan, P M",
+      "editors": "",
+      "publisher": "",
+      "year": 1985,
+      "volume": "34",
+      "issue": "3",
+      "first_page": "320",
+      "last_page": "325",
+      "container": "Journal of the Royal Statistical Society C: Applied Statistics",
+      "bib_id": 8,
+      "year_suffix": "",
+      "text_id": 270
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1177/01461672952111004",
+      "title": "Measures of anchoring in estimation tasks",
+      "authors": "Jacowitz, K E; Kahneman, D",
+      "editors": "",
+      "publisher": "",
+      "year": 1995,
+      "volume": "21",
+      "issue": "11",
+      "first_page": "1161",
+      "last_page": "1166",
+      "container": "Personality and Social Psychology Bulletin",
+      "bib_id": 9,
+      "year_suffix": "",
+      "text_id": 271
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1038/nature05739",
+      "title": "A new perceptual illusion reveals mechanisms of sensory decoding",
+      "authors": "Jazayeri, M; Movshon, J A",
+      "editors": "",
+      "publisher": "",
+      "year": 2007,
+      "volume": "446",
+      "issue": "7138",
+      "first_page": "912",
+      "last_page": "915",
+      "container": "Nature",
+      "bib_id": 10,
+      "year_suffix": "",
+      "text_id": 272
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1037/h0031207",
+      "title": "Reversals of preference between bids and choices in gambling decisions",
+      "authors": "Lichtenstein, S; Slovic, P",
+      "editors": "",
+      "publisher": "",
+      "year": 1971,
+      "volume": "89",
+      "issue": "1",
+      "first_page": "46",
+      "last_page": "55",
+      "container": "Journal of Experimental Psychology",
+      "bib_id": 11,
+      "year_suffix": "",
+      "text_id": 273
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.3758/s13423-017-1286-8",
+      "title": "The anchoring bias reflects rational use of cognitive resources",
+      "authors": "Lieder, F; Griffiths, T L; Huys, Q J; Goodman, N D",
+      "editors": "",
+      "publisher": "",
+      "year": 2018,
+      "volume": "25",
+      "issue": "",
+      "first_page": "322",
+      "last_page": "349",
+      "container": "Psychonomic Bulletin & Review",
+      "bib_id": 12,
+      "year_suffix": "",
+      "text_id": 274
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.7554/eLife.33334",
+      "title": "",
+      "authors": "Luu, L; Stocker, A A",
+      "editors": "",
+      "publisher": "",
+      "year": 2018,
+      "volume": "",
+      "issue": "",
+      "first_page": null,
+      "last_page": null,
+      "container": "",
+      "bib_id": 13,
+      "year_suffix": "",
+      "text_id": 275
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1016/j.obhdp.2013.04.002",
+      "title": "Anchoring in sequential judgments",
+      "authors": "Mochon, D; Frederick, S",
+      "editors": "",
+      "publisher": "",
+      "year": 2013,
+      "volume": "122",
+      "issue": "1",
+      "first_page": "69",
+      "last_page": "79",
+      "container": "Organizational Behavior and Human Decision Processes",
+      "bib_id": 14,
+      "year_suffix": "",
+      "text_id": 276
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1006/jesp.1999.1414",
+      "title": "Numeric judgments under uncertainty: The role of knowledge in anchoring",
+      "authors": "Mussweiler, T; Strack, F",
+      "editors": "",
+      "publisher": "",
+      "year": 2000,
+      "volume": "36",
+      "issue": "5",
+      "first_page": "495",
+      "last_page": "518",
+      "container": "Journal of Experimental Social Psychology",
+      "bib_id": 15,
+      "year_suffix": "",
+      "text_id": 277
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "Representing error bars in within-subject designs in typical software packages",
+      "authors": "O'brien, F; Cousineau, D",
+      "editors": "",
+      "publisher": "",
+      "year": 2014,
+      "volume": "10",
+      "issue": "1",
+      "first_page": "56",
+      "last_page": "67",
+      "container": "The Quantitative Methods for Psychology",
+      "bib_id": 16,
+      "year_suffix": "",
+      "text_id": 278
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.3758/s13428-018-01193-y",
+      "title": "PsychoPy2: Experiments in behavior made easy",
+      "authors": "Peirce, J; Gray, J R; Simpson, S; Macaskill, M; Höchenberger, R; Sogo, H; Kastman, E; Lindeløv, J K",
+      "editors": "",
+      "publisher": "",
+      "year": 2019,
+      "volume": "51",
+      "issue": "1",
+      "first_page": "195",
+      "last_page": "203",
+      "container": "Behavior Research Methods",
+      "bib_id": 17,
+      "year_suffix": "",
+      "text_id": 279
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "Sampling as the human approximation to probabilistic inference",
+      "authors": "Sanborn, A N; Zhu, J.-Q; Spicer, J; Sundh, J; León-Villagrá, P; Chater, N",
+      "editors": "Muggleton, S; Chater, N",
+      "publisher": "Oxford University Press",
+      "year": 2021,
+      "volume": "",
+      "issue": "",
+      "first_page": "430",
+      "last_page": "448",
+      "container": "",
+      "bib_id": 18,
+      "year_suffix": "",
+      "text_id": 280
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1521/soco.1991.9.1.67",
+      "title": "Base rates, representativeness, and the logic of conversation: The contextual relevance of \"irrelevant",
+      "authors": "Schwarz, N; Strack, F; Hilton, D; Naderer, G",
+      "editors": "",
+      "publisher": "",
+      "year": 1991,
+      "volume": "9",
+      "issue": "1",
+      "first_page": "67",
+      "last_page": "84",
+      "container": "information. Social Cognition",
+      "bib_id": 19,
+      "year_suffix": "",
+      "text_id": 281
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1037/a0021540",
+      "title": "The effect of accuracy motivation on anchoring and adjustment: Do people adjust from provided anchors?",
+      "authors": "Simmons, J P; Leboeuf, R A; Nelson, L D",
+      "editors": "",
+      "publisher": "",
+      "year": 2010,
+      "volume": "99",
+      "issue": "6",
+      "first_page": "917",
+      "last_page": "932",
+      "container": "Journal of Personality and Social Psychology",
+      "bib_id": 20,
+      "year_suffix": "",
+      "text_id": 282
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1037/0022-3514.73.3.437",
+      "title": "Explaining the enigmatic anchoring effect: Mechanisms of selective accessibility",
+      "authors": "Strack, F; Mussweiler, T",
+      "editors": "",
+      "publisher": "",
+      "year": 1997,
+      "volume": "73",
+      "issue": "3",
+      "first_page": "437",
+      "last_page": "446",
+      "container": "Journal of Personality and Social Psychology",
+      "bib_id": 21,
+      "year_suffix": "",
+      "text_id": 283
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1037/a0020580",
+      "title": "Preference reversal in multiattribute choice",
+      "authors": "Tsetsos, K; Usher, M; Chater, N",
+      "editors": "",
+      "publisher": "",
+      "year": 2010,
+      "volume": "117",
+      "issue": "4",
+      "first_page": "1275",
+      "last_page": "1291",
+      "container": "Psychological Review",
+      "bib_id": 22,
+      "year_suffix": "",
+      "text_id": 284
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1037/rev0000089",
+      "title": "Competing theories of multialternative, multiattribute preferential choice",
+      "authors": "Turner, B M; Schley, D R; Muller, C; Tsetsos, K",
+      "editors": "",
+      "publisher": "",
+      "year": 2018,
+      "volume": "125",
+      "issue": "3",
+      "first_page": "329",
+      "last_page": "362",
+      "container": "Psychological Review",
+      "bib_id": 23,
+      "year_suffix": "",
+      "text_id": 285
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1126/science.185.4157.1124",
+      "title": "Judgment under uncertainty: Heuristics and biases",
+      "authors": "Tversky, A; Kahneman, D",
+      "editors": "",
+      "publisher": "",
+      "year": 1974,
+      "volume": "185",
+      "issue": "4157",
+      "first_page": "1124",
+      "last_page": "1131",
+      "container": "Science",
+      "bib_id": 24,
+      "year_suffix": "",
+      "text_id": 286
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1098/rspb.2016.0263",
+      "title": "Do perceptual biases emerge early or late in visual processing? Decision-biases in motion perception",
+      "authors": "Zamboni, E; Ledgeway, T; Mcgraw, P V; Schluppeck, D",
+      "editors": "",
+      "publisher": "",
+      "year": 2016,
+      "volume": "283",
+      "issue": "",
+      "first_page": null,
+      "last_page": null,
+      "container": "Proceedings of the Royal Society B: Biological Sciences",
+      "bib_id": 25,
+      "year_suffix": "",
+      "text_id": 287
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "Why decisions bias perception: An amortised sequential sampling account",
+      "authors": "Zhu, J.-Q; Sanborn, A N; Chater, N",
+      "editors": "Goel, A; Seifert, C; Freksa, C",
+      "publisher": "",
+      "year": 2019,
+      "volume": "",
+      "issue": "",
+      "first_page": "3220",
+      "last_page": "3226",
+      "container": "",
+      "bib_id": 26,
+      "year_suffix": "",
+      "text_id": 288
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1037/rev0000190",
+      "title": "The Bayesian sampler: Generic Bayesian inference causes incoherence in human probability judgments",
+      "authors": "Zhu, J.-Q; Sanborn, A N; Chater, N",
+      "editors": "",
+      "publisher": "",
+      "year": 2020,
+      "volume": "127",
+      "issue": "5",
+      "first_page": "719",
+      "last_page": "748",
+      "container": "Psychological Review",
+      "bib_id": 27,
+      "year_suffix": "",
+      "text_id": 289
+    }
+  ],
+  "xref": [
+    {
+      "xref_id": 0,
+      "xref_type": "bib",
+      "contents": "(Ariely et al., 2003;",
+      "text_id": 10
+    },
+    {
+      "xref_id": 0,
+      "xref_type": "bib",
+      "contents": "Ariely et al., 2003;",
+      "text_id": 220
+    },
+    {
+      "xref_id": 1,
+      "xref_type": "bib",
+      "contents": "Chapman & Johnson, 1994",
+      "text_id": 10
+    },
+    {
+      "xref_id": 2,
+      "xref_type": "bib",
+      "contents": ", 1999;",
+      "text_id": 9
+    },
+    {
+      "xref_id": 2,
+      "xref_type": "bib",
+      "contents": ", 1999;",
+      "text_id": 10
+    },
+    {
+      "xref_id": 2,
+      "xref_type": "bib",
+      "contents": "(Chapman & Johnson, 1999;",
+      "text_id": 15
+    },
+    {
+      "xref_id": 2,
+      "xref_type": "bib",
+      "contents": "(Chapman & Johnson, 1999;",
+      "text_id": 17
+    },
+    {
+      "xref_id": 2,
+      "xref_type": "bib",
+      "contents": "(Chapman & Johnson, 1999;",
+      "text_id": 19
+    },
+    {
+      "xref_id": 2,
+      "xref_type": "bib",
+      "contents": "(Chapman & Johnson, 1999;",
+      "text_id": 220
+    },
+    {
+      "xref_id": 3,
+      "xref_type": "bib",
+      "contents": "(Dasgupta et al., 2017;",
+      "text_id": 203
+    },
+    {
+      "xref_id": 4,
+      "xref_type": "bib",
+      "contents": "Epley & Gilovich, 2006)",
+      "text_id": 10
+    },
+    {
+      "xref_id": 4,
+      "xref_type": "bib",
+      "contents": "(Epley & Gilovich, 2006;",
+      "text_id": 17
+    },
+    {
+      "xref_id": 4,
+      "xref_type": "bib",
+      "contents": "Epley & Gilovich, 2006;",
+      "text_id": 220
+    },
+    {
+      "xref_id": 5,
+      "xref_type": "bib",
+      "contents": "(Frederick & Mochon, 2012;",
+      "text_id": 19
+    },
+    {
+      "xref_id": 6,
+      "xref_type": "bib",
+      "contents": "Harris & Speekenbrink, 2016)",
+      "text_id": 220
+    },
+    {
+      "xref_id": 8,
+      "xref_type": "bib",
+      "contents": "Hartigan & Hartigan, 1985)",
+      "text_id": 98
+    },
+    {
+      "xref_id": 8,
+      "xref_type": "bib",
+      "contents": "Hartigan, 1985)",
+      "text_id": 102
+    },
+    {
+      "xref_id": 9,
+      "xref_type": "bib",
+      "contents": "Jacowitz & Kahneman, 1995;",
+      "text_id": 17
+    },
+    {
+      "xref_id": 10,
+      "xref_type": "bib",
+      "contents": "( Jazayeri & Movshon, 2007;",
+      "text_id": 12
+    },
+    {
+      "xref_id": 10,
+      "xref_type": "bib",
+      "contents": "( Jazayeri & Movshon, 2007)",
+      "text_id": 20
+    },
+    {
+      "xref_id": 10,
+      "xref_type": "bib",
+      "contents": "( Jazayeri & Movshon, 2007;",
+      "text_id": 37
+    },
+    {
+      "xref_id": 10,
+      "xref_type": "bib",
+      "contents": "Jazayeri & Movshon, 2007;",
+      "text_id": 42
+    },
+    {
+      "xref_id": 10,
+      "xref_type": "bib",
+      "contents": "( Jazayeri & Movshon, 2007;",
+      "text_id": 60
+    },
+    {
+      "xref_id": 10,
+      "xref_type": "bib",
+      "contents": "( Jazayeri & Movshon, 2007)",
+      "text_id": 197
+    },
+    {
+      "xref_id": 11,
+      "xref_type": "bib",
+      "contents": "Lichtenstein & Slovic, 1971;",
+      "text_id": 17
+    },
+    {
+      "xref_id": 12,
+      "xref_type": "bib",
+      "contents": "(Lieder et al., 2018)",
+      "text_id": 18
+    },
+    {
+      "xref_id": 12,
+      "xref_type": "bib",
+      "contents": "(Lieder et al., 2018;",
+      "text_id": 202
+    },
+    {
+      "xref_id": 13,
+      "xref_type": "bib",
+      "contents": "(Luu & Stocker, 2018)",
+      "text_id": 20
+    },
+    {
+      "xref_id": 14,
+      "xref_type": "bib",
+      "contents": "Mochon & Frederick, 2013)",
+      "text_id": 19
+    },
+    {
+      "xref_id": 15,
+      "xref_type": "bib",
+      "contents": "Mussweiler & Strack, 2000;",
+      "text_id": 19
+    },
+    {
+      "xref_id": 17,
+      "xref_type": "bib",
+      "contents": "Peirce et al., 2019)",
+      "text_id": 62
+    },
+    {
+      "xref_id": 18,
+      "xref_type": "bib",
+      "contents": "Sanborn et al., 2021;",
+      "text_id": 203
+    },
+    {
+      "xref_id": 18,
+      "xref_type": "bib",
+      "contents": "(Sanborn et al., 2021",
+      "text_id": 237
+    },
+    {
+      "xref_id": 19,
+      "xref_type": "bib",
+      "contents": "(Schwarz et al., 1991)",
+      "text_id": 19
+    },
+    {
+      "xref_id": 20,
+      "xref_type": "bib",
+      "contents": "Simmons et al., 2010;",
+      "text_id": 17
+    },
+    {
+      "xref_id": 21,
+      "xref_type": "bib",
+      "contents": "Strack & Mussweiler, 1997)",
+      "text_id": 19
+    },
+    {
+      "xref_id": 22,
+      "xref_type": "bib",
+      "contents": "(Tsetsos et al., 2010;",
+      "text_id": 15
+    },
+    {
+      "xref_id": 23,
+      "xref_type": "bib",
+      "contents": "Turner et al., 2018)",
+      "text_id": 15
+    },
+    {
+      "xref_id": 24,
+      "xref_type": "bib",
+      "contents": "(Tversky & Kahneman, 1974)",
+      "text_id": 9
+    },
+    {
+      "xref_id": 24,
+      "xref_type": "bib",
+      "contents": "Tversky & Kahneman, 1974)",
+      "text_id": 17
+    },
+    {
+      "xref_id": 25,
+      "xref_type": "bib",
+      "contents": "Zamboni et al., 2016)",
+      "text_id": 12
+    },
+    {
+      "xref_id": 25,
+      "xref_type": "bib",
+      "contents": "Zamboni et al., 2016;",
+      "text_id": 37
+    },
+    {
+      "xref_id": 25,
+      "xref_type": "bib",
+      "contents": "Zamboni et al., 2016)",
+      "text_id": 42
+    },
+    {
+      "xref_id": 25,
+      "xref_type": "bib",
+      "contents": "Zamboni et al., 2016)",
+      "text_id": 60
+    },
+    {
+      "xref_id": 25,
+      "xref_type": "bib",
+      "contents": "(Zamboni et al., 2016)",
+      "text_id": 98
+    },
+    {
+      "xref_id": 26,
+      "xref_type": "bib",
+      "contents": "(Zhu et al., 2019)",
+      "text_id": 21
+    },
+    {
+      "xref_id": 26,
+      "xref_type": "bib",
+      "contents": "Zhu et al., 2019)",
+      "text_id": 37
+    },
+    {
+      "xref_id": 26,
+      "xref_type": "bib",
+      "contents": "Zhu et al., 2019)",
+      "text_id": 202
+    },
+    {
+      "xref_id": 26,
+      "xref_type": "bib",
+      "contents": "(Zhu et al., 2019)",
+      "text_id": 237
+    },
+    {
+      "xref_id": 27,
+      "xref_type": "bib",
+      "contents": "Zhu et al., 2020)",
+      "text_id": 203
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "1",
+      "text_id": 49
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "2",
+      "text_id": 96
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "4",
+      "text_id": 141
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "5",
+      "text_id": 180
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "3",
+      "text_id": 110
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "3",
+      "text_id": 114
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "6",
+      "text_id": 186
+    }
+  ],
+  "figure": [
+    {
+      "figure_id": 1,
+      "section_id": 18,
+      "image": null,
+      "page_number": null
+    },
+    {
+      "figure_id": 2,
+      "section_id": 19,
+      "image": null,
+      "page_number": null
+    },
+    {
+      "figure_id": 3,
+      "section_id": 20,
+      "image": null,
+      "page_number": null
+    },
+    {
+      "figure_id": 4,
+      "section_id": 21,
+      "image": null,
+      "page_number": null
+    }
+  ],
+  "table": [],
+  "eq": [
+    {
+      "text_id": 3,
+      "grp_id": 1,
+      "lhs": "N",
+      "comp": "=",
+      "rhs": "200"
+    },
+    {
+      "text_id": 43,
+      "grp_id": 2,
+      "lhs": "M",
+      "comp": "=",
+      "rhs": "25"
+    },
+    {
+      "text_id": 90,
+      "grp_id": 3,
+      "lhs": "M",
+      "comp": "=",
+      "rhs": "26.5"
+    },
+    {
+      "text_id": 90,
+      "grp_id": 3,
+      "lhs": "M",
+      "comp": "=",
+      "rhs": "24.4"
+    },
+    {
+      "text_id": 90,
+      "grp_id": 3,
+      "lhs": "95% CI",
+      "comp": "=",
+      "rhs": "[22.9, 25.8]"
+    },
+    {
+      "text_id": 90,
+      "grp_id": 3,
+      "lhs": "t(43)",
+      "comp": "=",
+      "rhs": "2.05"
+    },
+    {
+      "text_id": 90,
+      "grp_id": 3,
+      "lhs": "p",
+      "comp": "=",
+      "rhs": ".023"
+    },
+    {
+      "text_id": 90,
+      "grp_id": 3,
+      "lhs": "d",
+      "comp": "=",
+      "rhs": "0.31"
+    },
+    {
+      "text_id": 90,
+      "grp_id": 3,
+      "lhs": "95% CI",
+      "comp": "=",
+      "rhs": "[-0.03, 0.65]"
+    },
+    {
+      "text_id": 90,
+      "grp_id": 3,
+      "lhs": "M",
+      "comp": "=",
+      "rhs": "65.8"
+    },
+    {
+      "text_id": 90,
+      "grp_id": 3,
+      "lhs": "95% CI",
+      "comp": "=",
+      "rhs": "[64.5, 67.1]"
+    },
+    {
+      "text_id": 90,
+      "grp_id": 3,
+      "lhs": "M",
+      "comp": "=",
+      "rhs": "72.9"
+    },
+    {
+      "text_id": 90,
+      "grp_id": 3,
+      "lhs": "95% CI",
+      "comp": "=",
+      "rhs": "[71.6, 74.1]"
+    },
+    {
+      "text_id": 90,
+      "grp_id": 3,
+      "lhs": "t(42)",
+      "comp": "=",
+      "rhs": "7.84"
+    },
+    {
+      "text_id": 90,
+      "grp_id": 3,
+      "lhs": "p",
+      "comp": "<",
+      "rhs": ".001"
+    },
+    {
+      "text_id": 90,
+      "grp_id": 3,
+      "lhs": "d",
+      "comp": "=",
+      "rhs": "1.20"
+    },
+    {
+      "text_id": 90,
+      "grp_id": 3,
+      "lhs": "95% CI",
+      "comp": "=",
+      "rhs": "[0.83, 1.57]"
+    },
+    {
+      "text_id": 103,
+      "grp_id": 4,
+      "lhs": "dip",
+      "comp": "=",
+      "rhs": "0.023"
+    },
+    {
+      "text_id": 103,
+      "grp_id": 4,
+      "lhs": "p",
+      "comp": "=",
+      "rhs": ".018"
+    },
+    {
+      "text_id": 103,
+      "grp_id": 4,
+      "lhs": "dip",
+      "comp": "=",
+      "rhs": "0.014"
+    },
+    {
+      "text_id": 103,
+      "grp_id": 4,
+      "lhs": "p",
+      "comp": "=",
+      "rhs": ".653"
+    },
+    {
+      "text_id": 103,
+      "grp_id": 4,
+      "lhs": "dip",
+      "comp": "=",
+      "rhs": "0.008"
+    },
+    {
+      "text_id": 103,
+      "grp_id": 4,
+      "lhs": "p",
+      "comp": "=",
+      "rhs": ".999"
+    },
+    {
+      "text_id": 103,
+      "grp_id": 4,
+      "lhs": "dip",
+      "comp": "=",
+      "rhs": "0.017"
+    },
+    {
+      "text_id": 103,
+      "grp_id": 4,
+      "lhs": "p",
+      "comp": "=",
+      "rhs": ".217"
+    },
+    {
+      "text_id": 127,
+      "grp_id": 5,
+      "lhs": "M",
+      "comp": "=",
+      "rhs": "28.8"
+    },
+    {
+      "text_id": 132,
+      "grp_id": 6,
+      "lhs": "N",
+      "comp": "=",
+      "rhs": "100"
+    },
+    {
+      "text_id": 135,
+      "grp_id": 7,
+      "lhs": "Target",
+      "comp": "=",
+      "rhs": "25.5"
+    },
+    {
+      "text_id": 135,
+      "grp_id": 7,
+      "lhs": "Target",
+      "comp": "=",
+      "rhs": "75.5"
+    },
+    {
+      "text_id": 175,
+      "grp_id": 8,
+      "lhs": "M",
+      "comp": "=",
+      "rhs": "29.6"
+    },
+    {
+      "text_id": 175,
+      "grp_id": 8,
+      "lhs": "95% CI",
+      "comp": "=",
+      "rhs": "[28.8, 30.3]"
+    },
+    {
+      "text_id": 175,
+      "grp_id": 8,
+      "lhs": "M",
+      "comp": "=",
+      "rhs": "28.3"
+    },
+    {
+      "text_id": 175,
+      "grp_id": 8,
+      "lhs": "95% CI",
+      "comp": "=",
+      "rhs": "[27.5, 29.1]"
+    },
+    {
+      "text_id": 175,
+      "grp_id": 8,
+      "lhs": "t(135)",
+      "comp": "=",
+      "rhs": "2.23"
+    },
+    {
+      "text_id": 175,
+      "grp_id": 8,
+      "lhs": "p",
+      "comp": "=",
+      "rhs": ".014"
+    },
+    {
+      "text_id": 175,
+      "grp_id": 8,
+      "lhs": "d",
+      "comp": "=",
+      "rhs": "0.19"
+    },
+    {
+      "text_id": 175,
+      "grp_id": 8,
+      "lhs": "95% CI",
+      "comp": "=",
+      "rhs": "[0, 0.38]"
+    },
+    {
+      "text_id": 175,
+      "grp_id": 8,
+      "lhs": "M",
+      "comp": "=",
+      "rhs": "71.0"
+    },
+    {
+      "text_id": 175,
+      "grp_id": 8,
+      "lhs": "95% CI",
+      "comp": "=",
+      "rhs": "[69.9, 72.1]"
+    },
+    {
+      "text_id": 175,
+      "grp_id": 8,
+      "lhs": "M",
+      "comp": "=",
+      "rhs": "74.5"
+    },
+    {
+      "text_id": 175,
+      "grp_id": 8,
+      "lhs": "95% CI",
+      "comp": "=",
+      "rhs": "[73.4, 75.6]"
+    },
+    {
+      "text_id": 175,
+      "grp_id": 8,
+      "lhs": "t(135)",
+      "comp": "=",
+      "rhs": "4.48"
+    },
+    {
+      "text_id": 175,
+      "grp_id": 8,
+      "lhs": "p",
+      "comp": "<",
+      "rhs": ".001"
+    },
+    {
+      "text_id": 175,
+      "grp_id": 8,
+      "lhs": "d",
+      "comp": "=",
+      "rhs": "0.38"
+    },
+    {
+      "text_id": 175,
+      "grp_id": 8,
+      "lhs": "95% CI",
+      "comp": "=",
+      "rhs": "[0.18, 0.58]"
+    },
+    {
+      "text_id": 184,
+      "grp_id": 9,
+      "lhs": "dip",
+      "comp": "=",
+      "rhs": "0.032"
+    },
+    {
+      "text_id": 184,
+      "grp_id": 9,
+      "lhs": "p",
+      "comp": "<",
+      "rhs": ".001"
+    },
+    {
+      "text_id": 184,
+      "grp_id": 9,
+      "lhs": "dip",
+      "comp": "=",
+      "rhs": "0.011"
+    },
+    {
+      "text_id": 184,
+      "grp_id": 9,
+      "lhs": "p",
+      "comp": "=",
+      "rhs": ".930"
+    },
+    {
+      "text_id": 184,
+      "grp_id": 9,
+      "lhs": "dip",
+      "comp": "=",
+      "rhs": "0.010"
+    },
+    {
+      "text_id": 184,
+      "grp_id": 9,
+      "lhs": "p",
+      "comp": "=",
+      "rhs": ".984"
+    },
+    {
+      "text_id": 184,
+      "grp_id": 9,
+      "lhs": "dip",
+      "comp": "=",
+      "rhs": "0.011"
+    },
+    {
+      "text_id": 184,
+      "grp_id": 9,
+      "lhs": "p",
+      "comp": "=",
+      "rhs": ".908"
+    },
+    {
+      "text_id": 212,
+      "grp_id": 10,
+      "lhs": "Target",
+      "comp": "=",
+      "rhs": "25.5"
+    },
+    {
+      "text_id": 212,
+      "grp_id": 10,
+      "lhs": "Target",
+      "comp": "=",
+      "rhs": "75.5"
+    },
+    {
+      "text_id": 242,
+      "grp_id": 11,
+      "lhs": "a",
+      "comp": "=",
+      "rhs": ".025"
+    },
+    {
+      "text_id": 112,
+      "grp_id": 12,
+      "lhs": "p",
+      "comp": "<",
+      "rhs": ".05"
+    },
+    {
+      "text_id": 138,
+      "grp_id": 13,
+      "lhs": "p",
+      "comp": "<",
+      "rhs": ".05"
+    },
+    {
+      "text_id": 215,
+      "grp_id": 14,
+      "lhs": "p",
+      "comp": "<",
+      "rhs": ".05"
+    },
+    {
+      "text_id": 78,
+      "grp_id": 15,
+      "lhs": "as",
+      "comp": ">",
+      "rhs": "20"
+    },
+    {
+      "text_id": 78,
+      "grp_id": 15,
+      "lhs": "as",
+      "comp": ">",
+      "rhs": "20"
+    }
+  ],
+  "bib_match": [
+    {
+      "bib_id": 0,
+      "service": "crossref",
+      "service_id": null,
+      "score": 120.7011,
+      "bib_type": "incollection",
+      "doi": "10.1093/oso/9780199257072.003.0010",
+      "title": "“Coherent Arbitrariness”: Stable Demand Curves without Stable Preferences",
+      "authors": [
+        {
+          "given": "Dan",
+          "family": "Ariely"
+        },
+        {
+          "given": "George",
+          "family": "Loewenstein,"
+        },
+        {
+          "given": "Drazen",
+          "family": "Prelec"
+        }
+      ],
+      "editors": [],
+      "publisher": "Oxford University PressOxford",
+      "year": 2007,
+      "date": null,
+      "container": "Exotic Preferences",
+      "volume": null,
+      "issue": null,
+      "first_page": "279",
+      "last_page": "310",
+      "edition": null,
+      "version": null,
+      "url": "https://doi.org/10.1093/oso/9780199257072.003.0010"
+    },
+    {
+      "bib_id": 1,
+      "service": "crossref",
+      "service_id": null,
+      "score": 56.2409,
+      "bib_type": "article",
+      "doi": "10.1002/bdm.3960070402",
+      "title": "The limits of anchoring",
+      "authors": [
+        {
+          "given": "Gretchen B.",
+          "family": "Chapman"
+        },
+        {
+          "given": "Eric J.",
+          "family": "Johnson"
+        }
+      ],
+      "editors": [],
+      "publisher": "Wiley",
+      "year": 1994,
+      "date": null,
+      "container": "Journal of Behavioral Decision Making",
+      "volume": "7",
+      "issue": "4",
+      "first_page": "223",
+      "last_page": "242",
+      "edition": null,
+      "version": null,
+      "url": "https://doi.org/10.1002/bdm.3960070402"
+    },
+    {
+      "bib_id": 2,
+      "service": "crossref",
+      "service_id": null,
+      "score": 76.9962,
+      "bib_type": "article",
+      "doi": "10.1006/obhd.1999.2841",
+      "title": "Anchoring, Activation, and the Construction of Values",
+      "authors": [
+        {
+          "given": "Gretchen B.",
+          "family": "Chapman"
+        },
+        {
+          "given": "Eric J.",
+          "family": "Johnson"
+        }
+      ],
+      "editors": [],
+      "publisher": "Elsevier BV",
+      "year": 1999,
+      "date": null,
+      "container": "Organizational Behavior and Human Decision Processes",
+      "volume": "79",
+      "issue": "2",
+      "first_page": "115",
+      "last_page": "153",
+      "edition": null,
+      "version": null,
+      "url": "https://doi.org/10.1006/obhd.1999.2841"
+    },
+    {
+      "bib_id": 3,
+      "service": "crossref",
+      "service_id": null,
+      "score": 83.5923,
+      "bib_type": "article",
+      "doi": "10.1016/j.cogpsych.2017.05.001",
+      "title": "Where do hypotheses come from?",
+      "authors": [
+        {
+          "given": "Ishita",
+          "family": "Dasgupta"
+        },
+        {
+          "given": "Eric",
+          "family": "Schulz"
+        },
+        {
+          "given": "Samuel J.",
+          "family": "Gershman"
+        }
+      ],
+      "editors": [],
+      "publisher": "Elsevier BV",
+      "year": 2017,
+      "date": null,
+      "container": "Cognitive Psychology",
+      "volume": "96",
+      "issue": null,
+      "first_page": "1",
+      "last_page": "25",
+      "edition": null,
+      "version": null,
+      "url": "https://doi.org/10.1016/j.cogpsych.2017.05.001"
+    },
+    {
+      "bib_id": 4,
+      "service": "crossref",
+      "service_id": null,
+      "score": 90.7793,
+      "bib_type": "article",
+      "doi": "10.1111/j.1467-9280.2006.01704.x",
+      "title": "The Anchoring-and-Adjustment Heuristic",
+      "authors": [
+        {
+          "given": "Nicholas",
+          "family": "Epley"
+        },
+        {
+          "given": "Thomas",
+          "family": "Gilovich"
+        }
+      ],
+      "editors": [],
+      "publisher": "SAGE Publications",
+      "year": 2006,
+      "date": null,
+      "container": "Psychological Science",
+      "volume": "17",
+      "issue": "4",
+      "first_page": "311",
+      "last_page": "318",
+      "edition": null,
+      "version": null,
+      "url": "https://doi.org/10.1111/j.1467-9280.2006.01704.x"
+    },
+    {
+      "bib_id": 5,
+      "service": "crossref",
+      "service_id": null,
+      "score": 72.0056,
+      "bib_type": "article",
+      "doi": "10.1037/a0024006",
+      "title": "A scale distortion theory of anchoring.",
+      "authors": [
+        {
+          "given": "Shane W.",
+          "family": "Frederick"
+        },
+        {
+          "given": "Daniel",
+          "family": "Mochon"
+        }
+      ],
+      "editors": [],
+      "publisher": "American Psychological Association (APA)",
+      "year": 2012,
+      "date": null,
+      "container": "Journal of Experimental Psychology: General",
+      "volume": "141",
+      "issue": "1",
+      "first_page": "124",
+      "last_page": "133",
+      "edition": null,
+      "version": null,
+      "url": "https://doi.org/10.1037/a0024006"
+    },
+    {
+      "bib_id": 6,
+      "service": "crossref",
+      "service_id": null,
+      "score": 78.8457,
+      "bib_type": "article",
+      "doi": "10.1017/s1930297500004782",
+      "title": "Semantic cross-scale numerical anchoring",
+      "authors": [
+        {
+          "given": "Adam J. L.",
+          "family": "Harris"
+        },
+        {
+          "given": "Maarten",
+          "family": "Speekenbrink"
+        }
+      ],
+      "editors": [],
+      "publisher": "Cambridge University Press (CUP)",
+      "year": 2016,
+      "date": null,
+      "container": "Judgment and Decision Making",
+      "volume": "11",
+      "issue": "6",
+      "first_page": "572",
+      "last_page": "581",
+      "edition": null,
+      "version": null,
+      "url": "https://doi.org/10.1017/s1930297500004782"
+    },
+    {
+      "bib_id": 7,
+      "service": "crossref",
+      "service_id": null,
+      "score": 79.9165,
+      "bib_type": "article",
+      "doi": "10.1214/aos/1176346577",
+      "title": "The Dip Test of Unimodality",
+      "authors": [
+        {
+          "given": "J. A.",
+          "family": "Hartigan"
+        },
+        {
+          "given": "P. M.",
+          "family": "Hartigan"
+        }
+      ],
+      "editors": [],
+      "publisher": "Institute of Mathematical Statistics",
+      "year": 1985,
+      "date": null,
+      "container": "The Annals of Statistics",
+      "volume": "13",
+      "issue": "1",
+      "first_page": null,
+      "last_page": null,
+      "edition": null,
+      "version": null,
+      "url": "https://doi.org/10.1214/aos/1176346577"
+    },
+    {
+      "bib_id": 8,
+      "service": "crossref",
+      "service_id": null,
+      "score": 88.2394,
+      "bib_type": "article",
+      "doi": "10.2307/2347485",
+      "title": "Algorithm AS 217: Computation of the Dip Statistic to Test for Unimodality",
+      "authors": [
+        {
+          "given": "P. M.",
+          "family": "Hartigan"
+        }
+      ],
+      "editors": [],
+      "publisher": "JSTOR",
+      "year": 1985,
+      "date": null,
+      "container": "Applied Statistics",
+      "volume": "34",
+      "issue": "3",
+      "first_page": "320",
+      "last_page": null,
+      "edition": null,
+      "version": null,
+      "url": "https://doi.org/10.2307/2347485"
+    },
+    {
+      "bib_id": 9,
+      "service": "crossref",
+      "service_id": null,
+      "score": 80.5071,
+      "bib_type": "article",
+      "doi": "10.1177/01461672952111004",
+      "title": "Measures of Anchoring in Estimation Tasks",
+      "authors": [
+        {
+          "given": "Karen E.",
+          "family": "Jacowitz"
+        },
+        {
+          "given": "Daniel",
+          "family": "Kahneman"
+        }
+      ],
+      "editors": [],
+      "publisher": "SAGE Publications",
+      "year": 1995,
+      "date": null,
+      "container": "Personality and Social Psychology Bulletin",
+      "volume": "21",
+      "issue": "11",
+      "first_page": "1161",
+      "last_page": "1166",
+      "edition": null,
+      "version": null,
+      "url": "https://doi.org/10.1177/01461672952111004"
+    },
+    {
+      "bib_id": 10,
+      "service": "crossref",
+      "service_id": null,
+      "score": 86.7078,
+      "bib_type": "article",
+      "doi": "10.1038/nature05739",
+      "title": "A new perceptual illusion reveals mechanisms of sensory decoding",
+      "authors": [
+        {
+          "given": "Mehrdad",
+          "family": "Jazayeri"
+        },
+        {
+          "given": "J. Anthony",
+          "family": "Movshon"
+        }
+      ],
+      "editors": [],
+      "publisher": "Springer Science and Business Media LLC",
+      "year": 2007,
+      "date": null,
+      "container": "Nature",
+      "volume": "446",
+      "issue": "7138",
+      "first_page": "912",
+      "last_page": "915",
+      "edition": null,
+      "version": null,
+      "url": "https://doi.org/10.1038/nature05739"
+    },
+    {
+      "bib_id": 11,
+      "service": "crossref",
+      "service_id": null,
+      "score": 98.1295,
+      "bib_type": "article",
+      "doi": "10.1037/h0031207",
+      "title": "Reversals of preference between bids and choices in gambling decisions.",
+      "authors": [
+        {
+          "given": "Sarah",
+          "family": "Lichtenstein"
+        },
+        {
+          "given": "Paul",
+          "family": "Slovic"
+        }
+      ],
+      "editors": [],
+      "publisher": "American Psychological Association (APA)",
+      "year": 1971,
+      "date": null,
+      "container": "Journal of Experimental Psychology",
+      "volume": "89",
+      "issue": "1",
+      "first_page": "46",
+      "last_page": "55",
+      "edition": null,
+      "version": null,
+      "url": "https://doi.org/10.1037/h0031207"
+    },
+    {
+      "bib_id": 12,
+      "service": "crossref",
+      "service_id": null,
+      "score": 102.8403,
+      "bib_type": "misc",
+      "doi": "10.31234/osf.io/5x2em",
+      "title": "The anchoring bias reflects rational use of cognitive resources",
+      "authors": [
+        {
+          "given": "Falk",
+          "family": "Lieder"
+        },
+        {
+          "given": "Tom",
+          "family": "Griffiths"
+        },
+        {
+          "given": "Quentin J.M.",
+          "family": "Huys"
+        },
+        {
+          "given": "Noah D.",
+          "family": "Goodman"
+        }
+      ],
+      "editors": [],
+      "publisher": "Center for Open Science",
+      "year": 2017,
+      "date": null,
+      "container": null,
+      "volume": null,
+      "issue": null,
+      "first_page": null,
+      "last_page": null,
+      "edition": null,
+      "version": null,
+      "url": "https://doi.org/10.31234/osf.io/5x2em"
+    },
+    {
+      "bib_id": 14,
+      "service": "crossref",
+      "service_id": null,
+      "score": 88.0444,
+      "bib_type": "article",
+      "doi": "10.1016/j.obhdp.2013.04.002",
+      "title": "Anchoring in sequential judgments",
+      "authors": [
+        {
+          "given": "Daniel",
+          "family": "Mochon"
+        },
+        {
+          "given": "Shane",
+          "family": "Frederick"
+        }
+      ],
+      "editors": [],
+      "publisher": "Elsevier BV",
+      "year": 2013,
+      "date": null,
+      "container": "Organizational Behavior and Human Decision Processes",
+      "volume": "122",
+      "issue": "1",
+      "first_page": "69",
+      "last_page": "79",
+      "edition": null,
+      "version": null,
+      "url": "https://doi.org/10.1016/j.obhdp.2013.04.002"
+    },
+    {
+      "bib_id": 15,
+      "service": "crossref",
+      "service_id": null,
+      "score": 94.5227,
+      "bib_type": "article",
+      "doi": "10.1006/jesp.1999.1414",
+      "title": "Numeric Judgments under Uncertainty: The Role of Knowledge in Anchoring",
+      "authors": [
+        {
+          "given": "Thomas",
+          "family": "Mussweiler"
+        },
+        {
+          "given": "Fritz",
+          "family": "Strack"
+        }
+      ],
+      "editors": [],
+      "publisher": "Elsevier BV",
+      "year": 2000,
+      "date": null,
+      "container": "Journal of Experimental Social Psychology",
+      "volume": "36",
+      "issue": "5",
+      "first_page": "495",
+      "last_page": "518",
+      "edition": null,
+      "version": null,
+      "url": "https://doi.org/10.1006/jesp.1999.1414"
+    },
+    {
+      "bib_id": 16,
+      "service": "crossref",
+      "service_id": null,
+      "score": 100.2816,
+      "bib_type": "article",
+      "doi": "10.20982/tqmp.10.1.p056",
+      "title": "Representing Error bars in within-subject designs in typical software packages",
+      "authors": [
+        {
+          "given": "Fearghal",
+          "family": "O'Brien"
+        },
+        {
+          "given": "Denis",
+          "family": "Cousineau"
+        }
+      ],
+      "editors": [],
+      "publisher": "The Quantitative Methods for Psychology",
+      "year": 2014,
+      "date": null,
+      "container": "The Quantitative Methods for Psychology",
+      "volume": "10",
+      "issue": "1",
+      "first_page": "56",
+      "last_page": "67",
+      "edition": null,
+      "version": null,
+      "url": "https://doi.org/10.20982/tqmp.10.1.p056"
+    },
+    {
+      "bib_id": 17,
+      "service": "crossref",
+      "service_id": null,
+      "score": 138.4144,
+      "bib_type": "article",
+      "doi": "10.3758/s13428-018-01193-y",
+      "title": "PsychoPy2: Experiments in behavior made easy",
+      "authors": [
+        {
+          "given": "Jonathan",
+          "family": "Peirce"
+        },
+        {
+          "given": "Jeremy R.",
+          "family": "Gray"
+        },
+        {
+          "given": "Sol",
+          "family": "Simpson"
+        },
+        {
+          "given": "Michael",
+          "family": "MacAskill"
+        },
+        {
+          "given": "Richard",
+          "family": "Höchenberger"
+        },
+        {
+          "given": "Hiroyuki",
+          "family": "Sogo"
+        },
+        {
+          "given": "Erik",
+          "family": "Kastman"
+        },
+        {
+          "given": "Jonas Kristoffer",
+          "family": "Lindeløv"
+        }
+      ],
+      "editors": [],
+      "publisher": "Springer Science and Business Media LLC",
+      "year": 2019,
+      "date": null,
+      "container": "Behavior Research Methods",
+      "volume": "51",
+      "issue": "1",
+      "first_page": "195",
+      "last_page": "203",
+      "edition": null,
+      "version": null,
+      "url": "https://doi.org/10.3758/s13428-018-01193-y"
+    },
+    {
+      "bib_id": 18,
+      "service": "crossref",
+      "service_id": null,
+      "score": 104.7697,
+      "bib_type": "incollection",
+      "doi": "10.1093/oso/9780198862536.003.0021",
+      "title": "Sampling as the Human Approximation to Probabilistic Inference",
+      "authors": [
+        {
+          "given": "Adam",
+          "family": "Sanborn"
+        },
+        {
+          "given": "Jian-Qiao",
+          "family": "Zhu"
+        },
+        {
+          "given": "Jake",
+          "family": "Spicer"
+        },
+        {
+          "given": "Joakim",
+          "family": "Sundh"
+        },
+        {
+          "given": "Pablo",
+          "family": "León-Villagrá"
+        },
+        {
+          "given": "Nick",
+          "family": "Chater"
+        }
+      ],
+      "editors": [],
+      "publisher": "Oxford University Press",
+      "year": 2021,
+      "date": null,
+      "container": "Human-Like Machine Intelligence",
+      "volume": null,
+      "issue": null,
+      "first_page": "430",
+      "last_page": "448",
+      "edition": null,
+      "version": null,
+      "url": "https://doi.org/10.1093/oso/9780198862536.003.0021"
+    },
+    {
+      "bib_id": 19,
+      "service": "crossref",
+      "service_id": null,
+      "score": 123.2991,
+      "bib_type": "article",
+      "doi": "10.1521/soco.1991.9.1.67",
+      "title": "Base Rates, Representativeness, and the Logic of Conversation: The Contextual Relevance of “Irrelevant” Information",
+      "authors": [
+        {
+          "given": "Norbert",
+          "family": "Schwarz"
+        },
+        {
+          "given": "Fritz",
+          "family": "Strack"
+        },
+        {
+          "given": "Denis",
+          "family": "Hilton"
+        },
+        {
+          "given": "Gabi",
+          "family": "Naderer"
+        }
+      ],
+      "editors": [],
+      "publisher": "Guilford Publications",
+      "year": 1991,
+      "date": null,
+      "container": "Social Cognition",
+      "volume": "9",
+      "issue": "1",
+      "first_page": "67",
+      "last_page": "84",
+      "edition": null,
+      "version": null,
+      "url": "https://doi.org/10.1521/soco.1991.9.1.67"
+    },
+    {
+      "bib_id": 20,
+      "service": "crossref",
+      "service_id": null,
+      "score": 111.4846,
+      "bib_type": "article",
+      "doi": "10.1037/a0021540",
+      "title": "The effect of accuracy motivation on anchoring and adjustment: Do people adjust from provided anchors?",
+      "authors": [
+        {
+          "given": "Joseph P.",
+          "family": "Simmons"
+        },
+        {
+          "given": "Robyn A.",
+          "family": "LeBoeuf"
+        },
+        {
+          "given": "Leif D.",
+          "family": "Nelson"
+        }
+      ],
+      "editors": [],
+      "publisher": "American Psychological Association (APA)",
+      "year": 2010,
+      "date": null,
+      "container": "Journal of Personality and Social Psychology",
+      "volume": "99",
+      "issue": "6",
+      "first_page": "917",
+      "last_page": "932",
+      "edition": null,
+      "version": null,
+      "url": "https://doi.org/10.1037/a0021540"
+    },
+    {
+      "bib_id": 21,
+      "service": "crossref",
+      "service_id": null,
+      "score": 96.9262,
+      "bib_type": "article",
+      "doi": "10.1037/0022-3514.73.3.437",
+      "title": "Explaining the enigmatic anchoring effect: Mechanisms of selective accessibility.",
+      "authors": [
+        {
+          "given": "Fritz",
+          "family": "Strack"
+        },
+        {
+          "given": "Thomas",
+          "family": "Mussweiler"
+        }
+      ],
+      "editors": [],
+      "publisher": "American Psychological Association (APA)",
+      "year": 1997,
+      "date": null,
+      "container": "Journal of Personality and Social Psychology",
+      "volume": "73",
+      "issue": "3",
+      "first_page": "437",
+      "last_page": "446",
+      "edition": null,
+      "version": null,
+      "url": "https://doi.org/10.1037/0022-3514.73.3.437"
+    },
+    {
+      "bib_id": 22,
+      "service": "crossref",
+      "service_id": null,
+      "score": 89.5366,
+      "bib_type": "article",
+      "doi": "10.1037/a0020580",
+      "title": "Preference reversal in multiattribute choice.",
+      "authors": [
+        {
+          "given": "Konstantinos",
+          "family": "Tsetsos"
+        },
+        {
+          "given": "Marius",
+          "family": "Usher"
+        },
+        {
+          "given": "Nick",
+          "family": "Chater"
+        }
+      ],
+      "editors": [],
+      "publisher": "American Psychological Association (APA)",
+      "year": 2010,
+      "date": null,
+      "container": "Psychological Review",
+      "volume": "117",
+      "issue": "4",
+      "first_page": "1275",
+      "last_page": "1291",
+      "edition": null,
+      "version": null,
+      "url": "https://doi.org/10.1037/a0020580"
+    },
+    {
+      "bib_id": 23,
+      "service": "crossref",
+      "service_id": null,
+      "score": 112.5522,
+      "bib_type": "article",
+      "doi": "10.1037/rev0000089",
+      "title": "Competing theories of multialternative, multiattribute preferential choice.",
+      "authors": [
+        {
+          "given": "Brandon M.",
+          "family": "Turner"
+        },
+        {
+          "given": "Dan R.",
+          "family": "Schley"
+        },
+        {
+          "given": "Carly",
+          "family": "Muller"
+        },
+        {
+          "given": "Konstantinos",
+          "family": "Tsetsos"
+        }
+      ],
+      "editors": [],
+      "publisher": "American Psychological Association (APA)",
+      "year": 2018,
+      "date": null,
+      "container": "Psychological Review",
+      "volume": "125",
+      "issue": "3",
+      "first_page": "329",
+      "last_page": "362",
+      "edition": null,
+      "version": null,
+      "url": "https://doi.org/10.1037/rev0000089"
+    },
+    {
+      "bib_id": 24,
+      "service": "crossref",
+      "service_id": null,
+      "score": 86.6944,
+      "bib_type": "incollection",
+      "doi": "10.1017/cbo9780511809477.002",
+      "title": "Judgment under uncertainty: Heuristics and biases",
+      "authors": [
+        {
+          "given": "Amos",
+          "family": "Tversky"
+        },
+        {
+          "given": "Daniel",
+          "family": "Kahneman"
+        }
+      ],
+      "editors": [],
+      "publisher": "Cambridge University Press",
+      "year": 1982,
+      "date": null,
+      "container": "Judgment under Uncertainty",
+      "volume": null,
+      "issue": null,
+      "first_page": "3",
+      "last_page": "20",
+      "edition": null,
+      "version": null,
+      "url": "https://doi.org/10.1017/cbo9780511809477.002"
+    },
+    {
+      "bib_id": 25,
+      "service": "crossref",
+      "service_id": null,
+      "score": 136.0536,
+      "bib_type": "article",
+      "doi": "10.1098/rspb.2016.0263",
+      "title": "Do perceptual biases emerge early or late in visual processing? Decision-biases in motion perception",
+      "authors": [
+        {
+          "given": "Elisa",
+          "family": "Zamboni"
+        },
+        {
+          "given": "Timothy",
+          "family": "Ledgeway"
+        },
+        {
+          "given": "Paul V.",
+          "family": "McGraw"
+        },
+        {
+          "given": "Denis",
+          "family": "Schluppeck"
+        }
+      ],
+      "editors": [],
+      "publisher": "The Royal Society",
+      "year": 2016,
+      "date": null,
+      "container": "Proceedings of the Royal Society B: Biological Sciences",
+      "volume": "283",
+      "issue": "1833",
+      "first_page": "20160263",
+      "last_page": null,
+      "edition": null,
+      "version": null,
+      "url": "https://doi.org/10.1098/rspb.2016.0263"
+    },
+    {
+      "bib_id": 27,
+      "service": "crossref",
+      "service_id": null,
+      "score": 125.9855,
+      "bib_type": "misc",
+      "doi": "10.31234/osf.io/af9vy",
+      "title": "The Bayesian Sampler: Generic Bayesian Inference Causes Incoherence in Human Probability Judgments",
+      "authors": [
+        {
+          "given": "Jian-Qiao",
+          "family": "Zhu"
+        },
+        {
+          "given": "Adam N",
+          "family": "Sanborn"
+        },
+        {
+          "given": "Nick",
+          "family": "Chater"
+        }
+      ],
+      "editors": [],
+      "publisher": "Center for Open Science",
+      "year": 2018,
+      "date": null,
+      "container": null,
+      "volume": null,
+      "issue": null,
+      "first_page": null,
+      "last_page": null,
+      "edition": null,
+      "version": null,
+      "url": "https://doi.org/10.31234/osf.io/af9vy"
+    }
+  ]
+}

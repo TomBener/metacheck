@@ -1,0 +1,4216 @@
+{
+  "paper_id": "0956797620959594",
+  "info": [
+    {
+      "title": "Using Machine Learning to Generate Novel Hypotheses: Increasing Optimism About COVID-19 Makes People Less Willing to Justify Unethical Behaviors",
+      "keywords": ["COVID-19", "machine learning", "optimism", "neural network", "unethical behavior", "open data", "open materials", "preregistered"],
+      "doi": "10.1177/0956797620959594",
+      "file_hash": "02827a0bc9d522d6",
+      "input_format": "grobid 0.9.0",
+      "file_name": "data-raw/psychsci/grobid_0.9.0-full/0956797620959594.xml",
+      "bibr_version": "10.0",
+      "paper_type": "unknown",
+      "paper_type_confidence": 0,
+      "oecd_l1": null,
+      "oecd_l2": null,
+      "oecd_confidence": null
+    }
+  ],
+  "author": [
+    {
+      "author_id": 1,
+      "given": "Abhishek",
+      "family": "Sheetal",
+      "affiliation": "Nanyang Business School Nanyang Technological University",
+      "email": "asheetal@ntu.edu.sg",
+      "corresponding": false,
+      "orcid": "0000-0002-4585-5358",
+      "role": []
+    },
+    {
+      "author_id": 2,
+      "given": "Zhiyu",
+      "family": "Feng",
+      "affiliation": "Department of Organization and Human Resources Business School Renmin University of China",
+      "email": "fengzhiyu@rmbs.ruc.edu.cn",
+      "corresponding": false,
+      "orcid": "",
+      "role": []
+    },
+    {
+      "author_id": 3,
+      "given": "Krishna",
+      "family": "Savani",
+      "affiliation": "Nanyang Business School Nanyang Technological University",
+      "email": "ksavani@ntu.edu.sg",
+      "corresponding": false,
+      "orcid": "0000-0002-6934-1917",
+      "role": []
+    }
+  ],
+  "text": [
+    {
+      "text_id": 1,
+      "paragraph_id": 1,
+      "section_id": 0,
+      "text": "Unethical behaviors can have substantial consequences in times of crisis.",
+      "page_number": null
+    },
+    {
+      "text_id": 2,
+      "paragraph_id": 1,
+      "section_id": 0,
+      "text": "For example, in the midst of the COVID-19 pandemic, many people hoarded face masks and hand sanitizers; this hoarding deprived those who needed protective supplies most (e.g., medical workers and the elderly) and, therefore, put them at risk.",
+      "page_number": null
+    },
+    {
+      "text_id": 3,
+      "paragraph_id": 1,
+      "section_id": 0,
+      "text": "Despite escalating deaths, more than 50,000 people were caught violating quarantine orders in Italy, putting themselves and others at risk.",
+      "page_number": null
+    },
+    {
+      "text_id": 4,
+      "paragraph_id": 1,
+      "section_id": 0,
+      "text": "Governments covered up the scale of the pandemic in that country, thereby allowing the infection to spread in an uncontrolled manner.",
+      "page_number": null
+    },
+    {
+      "text_id": 5,
+      "paragraph_id": 1,
+      "section_id": 0,
+      "text": "Thus, understanding antecedents of unethical behavior and identifying nudges to reduce unethical behaviors are particularly important in times of crisis.",
+      "page_number": null
+    },
+    {
+      "text_id": 6,
+      "paragraph_id": 2,
+      "section_id": 0,
+      "text": "Unethical behavior is a major research topic within psychology and other behavioral sciences.",
+      "page_number": null
+    },
+    {
+      "text_id": 7,
+      "paragraph_id": 2,
+      "section_id": 0,
+      "text": "Researchers have identified dozens of predictors of unethical behavior, including characteristics of the person and of the situation.",
+      "page_number": null
+    },
+    {
+      "text_id": 8,
+      "paragraph_id": 2,
+      "section_id": 0,
+      "text": "For example, people are more ethical when honesty is the descriptive norm or the salient prescriptive norm, when they are reminded of God or religion, when they are feeling less anxious, when they 959594P SSXXX10.1177/0956797620959594Sheetal et al.Using Machine Learning to Generate Hypotheses",
+      "page_number": null
+    },
+    {
+      "text_id": 9,
+      "paragraph_id": 4,
+      "section_id": 1,
+      "text": "are not depleted, and so on (for reviews, see Ellemers, van der Toorn, Paunov, & van Leeuwen, 2019;Gerlach, Teodorescu, & Hertwig, 2019).",
+      "page_number": null
+    },
+    {
+      "text_id": 10,
+      "paragraph_id": 4,
+      "section_id": 1,
+      "text": "However, these interventions to reduce unethical behaviors cannot be easily implemented in the field.",
+      "page_number": null
+    },
+    {
+      "text_id": 11,
+      "paragraph_id": 4,
+      "section_id": 1,
+      "text": "For example, during a stayat-home order, it would be advisable for people to not follow the social norm-if there are too many people outside, it is advisable to stay indoors; if there is no one outside, then it is safe to go out.",
+      "page_number": null
+    },
+    {
+      "text_id": 12,
+      "paragraph_id": 5,
+      "section_id": 1,
+      "text": "In this research, we sought to identify novel antecedents of unethical behavior by examining existing data sets that were designed for other purposes (Goldstone & Lupyan, 2016).",
+      "page_number": null
+    },
+    {
+      "text_id": 13,
+      "paragraph_id": 5,
+      "section_id": 1,
+      "text": "Specifically, we used the World Values Survey (WVS; Inglehart et al., 2014), which contains measures of unethical behavior.",
+      "page_number": null
+    },
+    {
+      "text_id": 14,
+      "paragraph_id": 5,
+      "section_id": 1,
+      "text": "Using this data set, past research has identified a number of predictors of unethical behavior, including Big Five personality traits (Simha & Parboteeah, 2019); happiness and belief in free will (Martin, Rigoni, & Vohs, 2017); filial piety and materialism (Cullen, Parboteeah, & Hoegl, 2004); political orientation, pride in nation, generalized trust, and satisfaction with household income (Sommer, Bloom, & Arikan, 2013); and religiosity, risk aversion, interest in politics, and trust in the political system (Dong & Torgler, 2009).",
+      "page_number": null
+    },
+    {
+      "text_id": 15,
+      "paragraph_id": 5,
+      "section_id": 1,
+      "text": "Most of these are individual-difference variables that cannot easily be experimentally manipulated and, therefore, cannot be easily used by policymakers to help arrest the COVID-19 pandemic.",
+      "page_number": null
+    },
+    {
+      "text_id": 16,
+      "paragraph_id": 5,
+      "section_id": 1,
+      "text": "However, given that the WVS asked respondents hundreds of questions, there are likely other predictors of unethical behavior in the data that researchers have not yet examined.",
+      "page_number": null
+    },
+    {
+      "text_id": 17,
+      "paragraph_id": 6,
+      "section_id": 1,
+      "text": "There are many ways to generate novel hypotheses from large data sets.",
+      "page_number": null
+    },
+    {
+      "text_id": 18,
+      "paragraph_id": 6,
+      "section_id": 1,
+      "text": "Researchers could examine which variables in the WVS data set are most strongly correlated with the variables measuring unethical behavior.",
+      "page_number": null
+    },
+    {
+      "text_id": 19,
+      "paragraph_id": 6,
+      "section_id": 1,
+      "text": "Researchers could run regressions with regularization methods (e.g., lasso, ridge, and elastic net) to select an optimum number of predictors (Hastie, Tibshirani, & Friedman, 2009).",
+      "page_number": null
+    },
+    {
+      "text_id": 20,
+      "paragraph_id": 6,
+      "section_id": 1,
+      "text": "However, the large proportion of missing values in the WVS data set limits the use of these regression-based methods, as they can be run only on observations without any missing values.",
+      "page_number": null
+    },
+    {
+      "text_id": 21,
+      "paragraph_id": 6,
+      "section_id": 1,
+      "text": "Further, linear regressions require that key assumptions, such as homoscedasticity and independently, identically, and normally distributed residuals, are met.",
+      "page_number": null
+    },
+    {
+      "text_id": 22,
+      "paragraph_id": 6,
+      "section_id": 1,
+      "text": "Researchers could also use machine-learning methods, such as random forest, gradient boost, k-nearest neighbors, support-vector machine, and neural networks (Alpaydin, 2020).",
+      "page_number": null
+    },
+    {
+      "text_id": 23,
+      "paragraph_id": 6,
+      "section_id": 1,
+      "text": "These methods do not make any auxiliary assumptions and can impute even large volumes of missing data (either in a separate stage prior to modeling or during the process of modeling).",
+      "page_number": null
+    },
+    {
+      "text_id": 24,
+      "paragraph_id": 7,
+      "section_id": 1,
+      "text": "Once a machine-learning model is trained, we can query it to identify the top predictors.",
+      "page_number": null
+    },
+    {
+      "text_id": 25,
+      "paragraph_id": 7,
+      "section_id": 1,
+      "text": "Certain challenges emerge, however, when attempting to do so.",
+      "page_number": null
+    },
+    {
+      "text_id": 26,
+      "paragraph_id": 8,
+      "section_id": 1,
+      "text": "In particular, identifying the top predictors in a large data set is a nondeterministic-polynomial-time-complete problem (Karp, 1975), and there is no known closedform solution to this problem.",
+      "page_number": null
+    },
+    {
+      "text_id": 27,
+      "paragraph_id": 8,
+      "section_id": 1,
+      "text": "Only approximate solutions are possible for all problems of this class, and any given approximate solution can neither be proven to be the best solution nor be proven to be an inferior solution.",
+      "page_number": null
+    },
+    {
+      "text_id": 28,
+      "paragraph_id": 8,
+      "section_id": 1,
+      "text": "Various regression-based and machinelearning methods merely provide a possible solution; neither the similarity of solutions provided by different methods nor their difference is guaranteed (Reyzin, 2019).",
+      "page_number": null
+    },
+    {
+      "text_id": 29,
+      "paragraph_id": 8,
+      "section_id": 1,
+      "text": "Thus, researchers can freely choose any method to identify the top predictors in a large data set as long as the data meet the assumptions of the method and researchers have sufficient computing power.",
+      "page_number": null
+    },
+    {
+      "text_id": 30,
+      "paragraph_id": 9,
+      "section_id": 1,
+      "text": "In the present research, we chose to use a deep neural network to generate novel hypotheses about antecedents of unethical behavior in the WVS.",
+      "page_number": null
+    },
+    {
+      "text_id": 31,
+      "paragraph_id": 9,
+      "section_id": 1,
+      "text": "We chose deep learning because this method has been the source of recent groundbreaking discoveries in physics (e.g., novel particles; Baldi, Sadowski, & Whiteson, 2014), chemistry (e.g., novel materials; Jha et al., 2018), and biology (e.g., novel antibiotics; Stokes et al., 2020).",
+      "page_number": null
+    },
+    {
+      "text_id": 32,
+      "paragraph_id": 9,
+      "section_id": 1,
+      "text": "Further, regression-based methods limit the range of possible predictor variables to those that have a mostly linear and direct relationship with the dependent variable; in contrast, deep-learning models can capture nonlinear effects and complex interactions.",
+      "page_number": null
+    },
+    {
+      "text_id": 33,
+      "paragraph_id": 11,
+      "section_id": 2,
+      "text": "This research is likely to be of interest to all researchers in the social-behavioral sciences who work on hypothesis testing, because it demonstrates a general method to generate novel hypotheses using machine-learning techniques.",
+      "page_number": null
+    },
+    {
+      "text_id": 34,
+      "paragraph_id": 11,
+      "section_id": 2,
+      "text": "This method can be applied in any field in which researchers have access to reasonably large data sets.",
+      "page_number": null
+    },
+    {
+      "text_id": 35,
+      "paragraph_id": 11,
+      "section_id": 2,
+      "text": "The present research significantly expands the scope of machine learning in psychology, which has been nearly exclusively focused on prediction until now.",
+      "page_number": null
+    },
+    {
+      "text_id": 36,
+      "paragraph_id": 11,
+      "section_id": 2,
+      "text": "The current research demonstrates that machine-learning methods can be used simultaneously for prediction and for theory development.",
+      "page_number": null
+    },
+    {
+      "text_id": 37,
+      "paragraph_id": 11,
+      "section_id": 2,
+      "text": "The context in which we tested the hypothesis generated by the machine-learning method-unethical behaviors surrounding the COVID-19 pandemic-is immediately relevant to policymakers and the general public who wish people to act in a more ethical manner to arrest the pandemic.",
+      "page_number": null
+    },
+    {
+      "text_id": 38,
+      "paragraph_id": 11,
+      "section_id": 2,
+      "text": "Our experimental materials provide messages that policymakers and public-interest organizations can immediately use.",
+      "page_number": null
+    },
+    {
+      "text_id": 39,
+      "paragraph_id": 13,
+      "section_id": 3,
+      "text": "The goal of Study 1 was to identify novel predictors of unethical behavior using a deep-learning model.",
+      "page_number": null
+    },
+    {
+      "text_id": 40,
+      "paragraph_id": 13,
+      "section_id": 3,
+      "text": "We used the WVS because it contains items that could be used to measure people's willingness to engage in unethical behaviors, as well as items associated with variables that might predict their willingness to engage in unethical behaviors.",
+      "page_number": null
+    },
+    {
+      "text_id": 41,
+      "paragraph_id": 13,
+      "section_id": 3,
+      "text": "Many predictors of unethical behavior uncovered by the deep-learning model might already have been examined in past research.",
+      "page_number": null
+    },
+    {
+      "text_id": 42,
+      "paragraph_id": 13,
+      "section_id": 3,
+      "text": "However, it is also possible that some predictors might not match those that have been discussed in the literature, which would be an interesting and novel result.",
+      "page_number": null
+    },
+    {
+      "text_id": 43,
+      "paragraph_id": 15,
+      "section_id": 4,
+      "text": "Figure 1 illustrates the procedure that we used for the machine-learning analysis.",
+      "page_number": null
+    },
+    {
+      "text_id": 44,
+      "paragraph_id": 15,
+      "section_id": 4,
+      "text": "The code that was used to build the model and the final model is available in the OSF data repository for this project (https://doi .org/10.17605/OSF.IO/A6Y7R).",
+      "page_number": null
+    },
+    {
+      "text_id": 45,
+      "paragraph_id": 15,
+      "section_id": 4,
+      "text": "We used a desktop computer running Linux with a 16-thread CPU, 128 GB RAM, and four GeForce GTX1070 8GB graphics cards (Nvidia, Santa Clara, CA) and running OpenCL drivers to support the graphics card's interface with R We used Intel's PlaidML libraries to conduct the lower level matrix-multiplication programming on the graphics card.",
+      "page_number": null
+    },
+    {
+      "text_id": 46,
+      "paragraph_id": 16,
+      "section_id": 4,
+      "text": "Data set.",
+      "page_number": null
+    },
+    {
+      "text_id": 47,
+      "paragraph_id": 16,
+      "section_id": 4,
+      "text": "The WVS contains 348,532 rows of data, representing individuals, and 975 variables with at least one nonmissing data point.",
+      "page_number": null
+    },
+    {
+      "text_id": 48,
+      "paragraph_id": 16,
+      "section_id": 4,
+      "text": "The surveys were conducted in 98 countries across six waves : 1981-1984, 1989-1993, 1994-1998, 1999-2004, 2005-2009, and 2010-2014.",
+      "page_number": null
+    },
+    {
+      "text_id": 49,
+      "paragraph_id": 16,
+      "section_id": 4,
+      "text": "Different items were administered in different waves and in different countries within each wave.",
+      "page_number": null
+    },
+    {
+      "text_id": 50,
+      "paragraph_id": 16,
+      "section_id": 4,
+      "text": "The survey was administered during a face-to-face interview at respondents' homes.",
+      "page_number": null
+    },
+    {
+      "text_id": 51,
+      "paragraph_id": 16,
+      "section_id": 4,
+      "text": "Participants responded to between 17 and 361 items.",
+      "page_number": null
+    },
+    {
+      "text_id": 52,
+      "paragraph_id": 16,
+      "section_id": 4,
+      "text": "The survey was translated into all local languages that were spoken by at least 15% of the country's residents.",
+      "page_number": null
+    },
+    {
+      "text_id": 53,
+      "paragraph_id": 16,
+      "section_id": 4,
+      "text": "The survey items were decided by a multidisciplinary group of social scientists and spanned multiple domains: perceptions of life, environment, work, family, politics and society, religion and morals, national identity, security, science, and sociodemographics.",
+      "page_number": null
+    },
+    {
+      "text_id": 54,
+      "paragraph_id": 16,
+      "section_id": 4,
+      "text": "We chose this data set because it contained a measure of unethical behavior and a large number of other items that could potentially serve as predictors.",
+      "page_number": null
+    },
+    {
+      "text_id": 55,
+      "paragraph_id": 17,
+      "section_id": 4,
+      "text": "Outcome variable.",
+      "page_number": null
+    },
+    {
+      "text_id": 56,
+      "paragraph_id": 17,
+      "section_id": 4,
+      "text": "Following past research (Martin et al., 2017), we used four items administered in all six waves of the WVS as a measure of justifiability of unethical behavior: \"Justifiable: claiming government benefits to which you are not entitled\" (variable f114 in the WVS data set), \"Justifiable: avoiding a fare on public transport\" (variable f115), \"Justifiable: cheating on taxes if you have a chance\" (variable f116), and \"Justifiable: someone accepting a bribe in the course of their duties\" (variable f117; α = .79).",
+      "page_number": null
+    },
+    {
+      "text_id": 57,
+      "paragraph_id": 17,
+      "section_id": 4,
+      "text": "Participants responded to these items on a 10-point scale ranging from 1, never justifiable, to 10, always justifiable.",
+      "page_number": null
+    },
+    {
+      "text_id": 58,
+      "paragraph_id": 17,
+      "section_id": 4,
+      "text": "The WVS included additional items about the justifiability of unethical behavior (e.g., variable f114_01, \"Justifiable: stealing property\"), but these items were not administered in all six waves, and thus we did not use them.",
+      "page_number": null
+    },
+    {
+      "text_id": 59,
+      "paragraph_id": 18,
+      "section_id": 4,
+      "text": "As the modal response for each of these four items was \"never justifiable\" (chosen by 58%, 57%, 63%, and 74% of the respondents, respectively), we converted participants' responses from a continuous variable to a binary variable, with 0 indicating \"never justifiable\" and 1 indicating \"justifiable\" (i.e., if participants selected a response greater than 1).",
+      "page_number": null
+    },
+    {
+      "text_id": 60,
+      "paragraph_id": 18,
+      "section_id": 4,
+      "text": "Of the 348,532 individuals in the data set, 12,226 had a missing value for all four items and were thus dropped from the analyses.",
+      "page_number": null
+    },
+    {
+      "text_id": 61,
+      "paragraph_id": 18,
+      "section_id": 4,
+      "text": "Of the remaining 336,306 individuals, we coded 139,412 individuals (41.45%) who selected \"not justified\" to all four items as ethical and the 196,894 remaining individuals (58.55%) as unethical.",
+      "page_number": null
+    },
+    {
+      "text_id": 62,
+      "paragraph_id": 19,
+      "section_id": 4,
+      "text": "Data cleaning before imputation.",
+      "page_number": null
+    },
+    {
+      "text_id": 63,
+      "paragraph_id": 19,
+      "section_id": 4,
+      "text": "We first dropped columns in the data file that were created by WVS researchers (e.g., weights, administrative codes, and factor variables), items that contained a large number of categorical responses or open-ended responses, and items that represented \"don't know\" or \"none\" responses.",
+      "page_number": null
+    },
+    {
+      "text_id": 64,
+      "paragraph_id": 19,
+      "section_id": 4,
+      "text": "Next, we dummy-coded all categorical response options, including the WVS wave (variable s002 in the WVS data file) and country (variable s003; \"Bosnia\" and \"Srpska\" Republic were merged with \"Bosnia and Herzegovina\").",
+      "page_number": null
+    },
+    {
+      "text_id": 65,
+      "paragraph_id": 19,
+      "section_id": 4,
+      "text": "Further, we added dummy variables indicating the International Organization for Standardization (ISO) region code and ISO subregion code for each country.",
+      "page_number": null
+    },
+    {
+      "text_id": 66,
+      "paragraph_id": 19,
+      "section_id": 4,
+      "text": "The full list of variables deleted and dummy-coded is available in this project's OSF data repository (https://doi.org/10.17605/OSF.IO/A6Y7R).",
+      "page_number": null
+    },
+    {
+      "text_id": 67,
+      "paragraph_id": 21,
+      "section_id": 5,
+      "text": "To test our model, we used the holdout technique.",
+      "page_number": null
+    },
+    {
+      "text_id": 68,
+      "paragraph_id": 21,
+      "section_id": 5,
+      "text": "We split the above data set randomly into two parts.",
+      "page_number": null
+    },
+    {
+      "text_id": 69,
+      "paragraph_id": 21,
+      "section_id": 5,
+      "text": "We used 90% of the observations for the training or model-building phase (called the seen data) and reserved the remaining 10% of the data to test the model (called the unseen data).",
+      "page_number": null
+    },
+    {
+      "text_id": 70,
+      "paragraph_id": 21,
+      "section_id": 5,
+      "text": "To ensure that the unseen data did not influence the training data in any way, we performed this split before imputing missing values in the seen data.",
+      "page_number": null
+    },
+    {
+      "text_id": 71,
+      "paragraph_id": 21,
+      "section_id": 5,
+      "text": "This way, the unseen data could not influence the deep-learning model in any way.",
+      "page_number": null
+    },
+    {
+      "text_id": 72,
+      "paragraph_id": 22,
+      "section_id": 5,
+      "text": "Data Set Imputation Parameters Split the data into two parts: 90% training data, 10% unseen data Identify outcome and predictor variables, continuous and categorical variables Stop and restart the project from the very beginning Do not touch the unseen data until the model has been finalized Impute missing values in the unseen data Assess accuracy of the machine-learning model's predictions in the unseen data Use the training data to build the model Impute missing values in the training data Conduct exploratory analyses to build a model with reasonable accuracy Make informed guesses about the viable range of all model parameters Conduct hyperparameter search and identify the model with the lowest loss value Does the model have reasonably high accuracy in the unseen data?",
+      "page_number": null
+    },
+    {
+      "text_id": 73,
+      "paragraph_id": 22,
+      "section_id": 5,
+      "text": "Imputing missing data.",
+      "page_number": null
+    },
+    {
+      "text_id": 74,
+      "paragraph_id": 22,
+      "section_id": 5,
+      "text": "Because the WVS administered different items in different waves and countries, at least 60% of the data were missing for every respondent.",
+      "page_number": null
+    },
+    {
+      "text_id": 75,
+      "paragraph_id": 22,
+      "section_id": 5,
+      "text": "Thus, it was not possible to consider all items administered in the WVS as predictors without imputing missing data, as every participant would otherwise drop out from the data set.",
+      "page_number": null
+    },
+    {
+      "text_id": 76,
+      "paragraph_id": 22,
+      "section_id": 5,
+      "text": "Overall, 75.55% of the values were missing in our truncated data set.",
+      "page_number": null
+    },
+    {
+      "text_id": 77,
+      "paragraph_id": 22,
+      "section_id": 5,
+      "text": "Because the machine-learning package that we used would also drop all rows with any missing value, we imputed all missing values in the seen data using a machine-learning algorithm.",
+      "page_number": null
+    },
+    {
+      "text_id": 78,
+      "paragraph_id": 23,
+      "section_id": 5,
+      "text": "Although traditional approaches recommend multiple imputation only when the missing data are sparse and missing at random, newer machine-learning-based imputation methods can be used when data are missing systematically (e.g., many items were not administered in multiple waves and multiple countries in the WVS) and when a majority of the data are missing (Deng, Chang, Ido, & Long, 2016).",
+      "page_number": null
+    },
+    {
+      "text_id": 79,
+      "paragraph_id": 23,
+      "section_id": 5,
+      "text": "To impute the missing values, we used a randomforest algorithm, the missRanger package in R, which is an improved version of the older missForest package (Stekhoven & Bühlmann, 2012).",
+      "page_number": null
+    },
+    {
+      "text_id": 80,
+      "paragraph_id": 23,
+      "section_id": 5,
+      "text": "We ran 15 iterations of the imputation, which completed in 14 days, using these parameters: \"num.trees = 100 trees, maxiter = 15, respect. unordered.factors = TRUE, splitrule = \"extratrees.\"",
+      "page_number": null
+    },
+    {
+      "text_id": 81,
+      "paragraph_id": 24,
+      "section_id": 5,
+      "text": "Once we imputed missing information in the seen data, we appended the unseen data to the imputed seen data and imputed all missing values in the unseen data using the missRanger package.",
+      "page_number": null
+    },
+    {
+      "text_id": 82,
+      "paragraph_id": 24,
+      "section_id": 5,
+      "text": "This way, any bias in the imputation would transfer over from the seen data to the unseen data, so if the imputation were unreliable or erroneous, the model would have low accuracy when predicting the nonimputed dependent variable in the unseen data.",
+      "page_number": null
+    },
+    {
+      "text_id": 83,
+      "paragraph_id": 24,
+      "section_id": 5,
+      "text": "Note that the dependent variable is never imputed.",
+      "page_number": null
+    },
+    {
+      "text_id": 84,
+      "paragraph_id": 24,
+      "section_id": 5,
+      "text": "If the model had reasonably high accuracy in predicting the dependent variable in the unseen data, that would mean that the imputation was sufficiently accurate.",
+      "page_number": null
+    },
+    {
+      "text_id": 85,
+      "paragraph_id": 24,
+      "section_id": 5,
+      "text": "In any case, if the imputation process yielded spurious predictors of unethical behavior, then we would fail to find causal support for these spurious predictors.",
+      "page_number": null
+    },
+    {
+      "text_id": 86,
+      "paragraph_id": 26,
+      "section_id": 6,
+      "text": "After all missing values were imputed, we excluded variables f114, f115, f116, and f117, which were used to compute the dependent variable.",
+      "page_number": null
+    },
+    {
+      "text_id": 87,
+      "paragraph_id": 26,
+      "section_id": 6,
+      "text": "We also excluded all variables between f114 and f144, as well as variable f199, because these variables were asked in the same format as f114 to f117 (i.e., starting with \"Justifiable:\") and thus might be correlated with f114 through f117 because of common method variance.",
+      "page_number": null
+    },
+    {
+      "text_id": 88,
+      "paragraph_id": 26,
+      "section_id": 6,
+      "text": "We also deleted a number of items that would not help generate testable hypotheses about predictors of unethical behavior, such as demographic questions, membership to various groups, and confidence in various international organizations.",
+      "page_number": null
+    },
+    {
+      "text_id": 89,
+      "paragraph_id": 26,
+      "section_id": 6,
+      "text": "The full list of items deleted and dummycoded is available at https://doi.org/10.17605/OSF.IO/ A6Y7R.",
+      "page_number": null
+    },
+    {
+      "text_id": 90,
+      "paragraph_id": 26,
+      "section_id": 6,
+      "text": "We were left with 708 predictors after the second round of data cleaning.",
+      "page_number": null
+    },
+    {
+      "text_id": 91,
+      "paragraph_id": 28,
+      "section_id": 7,
+      "text": "We thus analyzed the training data using a fully connected deep-learning neural network.",
+      "page_number": null
+    },
+    {
+      "text_id": 92,
+      "paragraph_id": 28,
+      "section_id": 7,
+      "text": "We experimented by varying the number of hidden layers in the mode from zero to seven.",
+      "page_number": null
+    },
+    {
+      "text_id": 93,
+      "paragraph_id": 28,
+      "section_id": 7,
+      "text": "We observed sizable increases in accuracy up to three hidden layers but less than 1% increase in accuracy with additional layers; however, computing time increased substantially with more hidden layers.",
+      "page_number": null
+    },
+    {
+      "text_id": 94,
+      "paragraph_id": 28,
+      "section_id": 7,
+      "text": "We thus selected a model with three hidden layers.",
+      "page_number": null
+    },
+    {
+      "text_id": 95,
+      "paragraph_id": 28,
+      "section_id": 7,
+      "text": "We first standardized responses to all items to range from 0 to 1.",
+      "page_number": null
+    },
+    {
+      "text_id": 96,
+      "paragraph_id": 28,
+      "section_id": 7,
+      "text": "The model training was performed on graphics cards instead of the CPU to reduce the modelbuilding time.",
+      "page_number": null
+    },
+    {
+      "text_id": 97,
+      "paragraph_id": 28,
+      "section_id": 7,
+      "text": "We used the Keras package in R (Chollet, 2015), which implemented a multilayer perceptron.",
+      "page_number": null
+    },
+    {
+      "text_id": 98,
+      "paragraph_id": 29,
+      "section_id": 7,
+      "text": "Figure 2 illustrates the model.",
+      "page_number": null
+    },
+    {
+      "text_id": 99,
+      "paragraph_id": 29,
+      "section_id": 7,
+      "text": "Using an initial set of weights that we had seeded, the model predicted the",
+      "page_number": null
+    },
+    {
+      "text_id": 100,
+      "paragraph_id": 30,
+      "section_id": 7,
+      "text": "Predictor 1 Predictor 2 Predictor 708 Unethical (x ) Standardization Layer Input Layer Hidden Layer 1 Hidden Layer 2",
+      "page_number": null
+    },
+    {
+      "text_id": 101,
+      "paragraph_id": 31,
+      "section_id": 7,
+      "text": "Output Layer outcome variable (ethical or unethical) for each respondent and then computed the loss (i.e., the gap between the actual values and the predicted values across the entire data set) using the binary-cross-entropy loss function.",
+      "page_number": null
+    },
+    {
+      "text_id": 102,
+      "paragraph_id": 31,
+      "section_id": 7,
+      "text": "The model then adjusted the weights and recomputed the loss.",
+      "page_number": null
+    },
+    {
+      "text_id": 103,
+      "paragraph_id": 31,
+      "section_id": 7,
+      "text": "This procedure continued until either a maximum of 200 iterations were run or the loss did not reduce in 10 consecutive iterations.",
+      "page_number": null
+    },
+    {
+      "text_id": 104,
+      "paragraph_id": 31,
+      "section_id": 7,
+      "text": "Figure 3 depicts the loss across all the iterations of our model.",
+      "page_number": null
+    },
+    {
+      "text_id": 105,
+      "paragraph_id": 32,
+      "section_id": 7,
+      "text": "We used the leave-p-out (LPO) cross-validation technique, which allowed us to assess the generalizability of the model (Celisse, 2014).",
+      "page_number": null
+    },
+    {
+      "text_id": 106,
+      "paragraph_id": 32,
+      "section_id": 7,
+      "text": "In each iteration of the model, the LPO technique randomly split the 90% training data into two components: 70% of the data were used for model-building and 20% for validation.",
+      "page_number": null
+    },
+    {
+      "text_id": 107,
+      "paragraph_id": 32,
+      "section_id": 7,
+      "text": "In each iteration, the deep-learning algorithm built a model using just the model-building data and then tested the performance of this model on the validation data (in terms of accuracy and the binary-cross-entropy loss).",
+      "page_number": null
+    },
+    {
+      "text_id": 108,
+      "paragraph_id": 32,
+      "section_id": 7,
+      "text": "The magnitude of the loss in the validation data indicates the model fit.",
+      "page_number": null
+    },
+    {
+      "text_id": 109,
+      "paragraph_id": 32,
+      "section_id": 7,
+      "text": "For the model-building data, the accuracy and loss typically reach an asymptote toward 1 and 0, respectively.",
+      "page_number": null
+    },
+    {
+      "text_id": 110,
+      "paragraph_id": 32,
+      "section_id": 7,
+      "text": "For the validation data, once the model begins converging, the loss typically reduces and the accuracy increases.",
+      "page_number": null
+    },
+    {
+      "text_id": 111,
+      "paragraph_id": 32,
+      "section_id": 7,
+      "text": "But after some point, the model tries to overfit the model-building data (Hansel, Mato, & Meunier, 1992) and then the loss begins to increase while the accuracy begins to decrease in the validation data.",
+      "page_number": null
+    },
+    {
+      "text_id": 112,
+      "paragraph_id": 32,
+      "section_id": 7,
+      "text": "To discourage the model from overfitting, in each iteration, we dropped a proportion of all neural connections (Hinton, Srivastava, Krizhevsky, Sutskever, & Salakhutdinov, 2012).",
+      "page_number": null
+    },
+    {
+      "text_id": 113,
+      "paragraph_id": 33,
+      "section_id": 7,
+      "text": "Hyperparameter search.",
+      "page_number": null
+    },
+    {
+      "text_id": 114,
+      "paragraph_id": 33,
+      "section_id": 7,
+      "text": "To identify successively better models (i.e., models with a smaller loss), we used the hyperparameter search procedure, which adjusts a number of model parameters over several iterations.",
+      "page_number": null
+    },
+    {
+      "text_id": 115,
+      "paragraph_id": 33,
+      "section_id": 7,
+      "text": "Specifically, we varied the number of perceptrons in each layer, the proportion of neural connections that are dropped after every iteration in each layer, the batch size (i.e., the number of rows that the model processes in one step of one iteration), and the learning rate (see Table 1).",
+      "page_number": null
+    },
+    {
+      "text_id": 116,
+      "paragraph_id": 33,
+      "section_id": 7,
+      "text": "The hyperparameter search procedure experimented with 1,000 different random combinations of the 10 parameters.",
+      "page_number": null
+    },
+    {
+      "text_id": 117,
+      "paragraph_id": 33,
+      "section_id": 7,
+      "text": "Of these 1,000 models, we chose the parameter combination that generated the smallest binary-crossentropy loss.",
+      "page_number": null
+    },
+    {
+      "text_id": 118,
+      "paragraph_id": 33,
+      "section_id": 7,
+      "text": "Table 2 presents the parameters used in our final model (see Fig. 2 for a depiction of the perceptrons in the final model).",
+      "page_number": null
+    },
+    {
+      "text_id": 119,
+      "paragraph_id": 34,
+      "section_id": 7,
+      "text": "Because this model was run on four graphics cards rather than on the CPU, and because each of our graphics cards contained 1,920 mini-CPUs, the computations within the individual perceptrons ran in parallel.",
+      "page_number": null
+    },
+    {
+      "text_id": 120,
+      "paragraph_id": 34,
+      "section_id": 7,
+      "text": "This parallel processing introduced an indeterminacy because the order in which all the perceptrons of the model are computed is not guaranteed.",
+      "page_number": null
+    },
+    {
+      "text_id": 121,
+      "paragraph_id": 34,
+      "section_id": 7,
+      "text": "Thus, if the same model is run repeatedly with identical parameters, the results of the model may vary on the scale of 0.1%.",
+      "page_number": null
+    },
+    {
+      "text_id": 122,
+      "paragraph_id": 34,
+      "section_id": 7,
+      "text": "This minor variation is acceptable given that the time needed to build the model on graphics cards is approximately 200-fold faster than doing so on the CPU.",
+      "page_number": null
+    },
+    {
+      "text_id": 123,
+      "paragraph_id": 36,
+      "section_id": 8,
+      "text": "Figure 3 across successive iterations.",
+      "page_number": null
+    },
+    {
+      "text_id": 124,
+      "paragraph_id": 36,
+      "section_id": 8,
+      "text": "As expected, in the training data, accuracy increased monotonically and loss decreased monotonically with successive iterations.",
+      "page_number": null
+    },
+    {
+      "text_id": 125,
+      "paragraph_id": 36,
+      "section_id": 8,
+      "text": "However, with the validation data, accuracy increased and loss decreased up to a certain point and thereafter plateaued.",
+      "page_number": null
+    },
+    {
+      "text_id": 126,
+      "paragraph_id": 36,
+      "section_id": 8,
+      "text": "Keras automatically saved the model that yielded the minimum loss in the validation data.",
+      "page_number": null
+    },
+    {
+      "text_id": 127,
+      "paragraph_id": 36,
+      "section_id": 8,
+      "text": "The results reported are from this model.",
+      "page_number": null
+    },
+    {
+      "text_id": 128,
+      "paragraph_id": 38,
+      "section_id": 9,
+      "text": "Once the model was finalized, we analyzed how accurately it classified individuals in the unseen data as ethical or unethical.",
+      "page_number": null
+    },
+    {
+      "text_id": 129,
+      "paragraph_id": 39,
+      "section_id": 9,
+      "text": "Alternate model.",
+      "page_number": null
+    },
+    {
+      "text_id": 130,
+      "paragraph_id": 39,
+      "section_id": 9,
+      "text": "We also tried analyzing the data using a random-forest model, which ran on the CPU rather than on graphics cards and was much easier and simpler to run than deep-learning models.",
+      "page_number": null
+    },
+    {
+      "text_id": 131,
+      "paragraph_id": 39,
+      "section_id": 9,
+      "text": "However, the random-forest model did not complete a single iteration on our computer within 10 days.",
+      "page_number": null
+    },
+    {
+      "text_id": 132,
+      "paragraph_id": 39,
+      "section_id": 9,
+      "text": "We thus abandoned this approach.",
+      "page_number": null
+    },
+    {
+      "text_id": 133,
+      "paragraph_id": 41,
+      "section_id": 10,
+      "text": "Reliability of the outcome measure.",
+      "page_number": null
+    },
+    {
+      "text_id": 134,
+      "paragraph_id": 41,
+      "section_id": 10,
+      "text": "We had classified WVS respondents as either ethical or unethical on the basis of their responses to four items administered in all waves of the survey.",
+      "page_number": null
+    },
+    {
+      "text_id": 135,
+      "paragraph_id": 41,
+      "section_id": 10,
+      "text": "To assess the reliability of this measure, we administered these four items to 204 US residents recruited from Amazon Mechanical Turk (MTurk; age: M = 41.45 years, SD = 12.04; 87 women, 56 men, 61 missing values).",
+      "page_number": null
+    },
+    {
+      "text_id": 136,
+      "paragraph_id": 41,
+      "section_id": 10,
+      "text": "Participants responded to the same four items used in the WVS (on the same response scale) twice, with an approximately 2-month gap in between the two measures.",
+      "page_number": null
+    },
+    {
+      "text_id": 137,
+      "paragraph_id": 42,
+      "section_id": 10,
+      "text": "Each time participants took the survey, we classified them as either ethical or unethical using the same method that we used to classify the WVS respondents.",
+      "page_number": null
+    },
+    {
+      "text_id": 138,
+      "paragraph_id": 42,
+      "section_id": 10,
+      "text": "We found that 81.86% of the MTurk participants received the same classification on both occasions (63.49% for individuals classified as ethical at Time 1; 90.07% for individuals classified as unethical at Time 1).",
+      "page_number": null
+    },
+    {
+      "text_id": 139,
+      "paragraph_id": 42,
+      "section_id": 10,
+      "text": "Thus, 81.86% (95% confidence interval, or CI = [75.88%, 86.90%]) represents the upper bound for the deeplearning model's accuracy.",
+      "page_number": null
+    },
+    {
+      "text_id": 140,
+      "paragraph_id": 43,
+      "section_id": 10,
+      "text": "Predictability of unethical behavior.",
+      "page_number": null
+    },
+    {
+      "text_id": 141,
+      "paragraph_id": 43,
+      "section_id": 10,
+      "text": "Overall, in the unseen data (i.e., data that were not used in any way to build the model), the deep-learning model accurately classified respondents as ethical or unethical in 73.7% of the cases (95% CI = [73.2%, 74.2%]).",
+      "page_number": null
+    },
+    {
+      "text_id": 142,
+      "paragraph_id": 43,
+      "section_id": 10,
+      "text": "Given that the dependent measure's test-retest reliability, 81.86%, imposed a theoretical upper bound on the deep-learning model's accuracy, our model's accuracy was 90% of the theoretical maximum accuracy.",
+      "page_number": null
+    },
+    {
+      "text_id": 143,
+      "paragraph_id": 43,
+      "section_id": 10,
+      "text": "The overall accuracy of the model was above chance level, κ = 38.6%.",
+      "page_number": null
+    },
+    {
+      "text_id": 144,
+      "paragraph_id": 43,
+      "section_id": 10,
+      "text": "The model's specificity (i.e., its accuracy in classifying ethical individuals) was 50.1%, whereas the model's sensitivity or recall (i.e., its accuracy in classifying unethical individuals) was 86.3%.",
+      "page_number": null
+    },
+    {
+      "text_id": 145,
+      "paragraph_id": 43,
+      "section_id": 10,
+      "text": "This pattern is congruent with the results from the test-retest reliability study reported above, in which individuals classified as ethical at Time 1 were classified as ethical at Time 2 in only 63% of the cases, but individuals classified as unethical at Time 1 were classified as unethical at Time 2 in 90% of the cases.",
+      "page_number": null
+    },
+    {
+      "text_id": 146,
+      "paragraph_id": 43,
+      "section_id": 10,
+      "text": "Table 3 presents the confusion matrix of the predictions of the deep-learning model using the unseen data.",
+      "page_number": null
+    },
+    {
+      "text_id": 147,
+      "paragraph_id": 44,
+      "section_id": 10,
+      "text": "The model's area under the receiver-operatingcharacteristic curve was 79.6%, indicating that if presented with a randomly selected ethical individual and a randomly selected unethical individual, the model would rank the unethical individual as unethical with this probability.",
+      "page_number": null
+    },
+    {
+      "text_id": 148,
+      "paragraph_id": 44,
+      "section_id": 10,
+      "text": "The model's precision was 76.5%, indicating that if the model predicted that a person is unethical, its prediction was accurate in this proportion of the cases.",
+      "page_number": null
+    },
+    {
+      "text_id": 149,
+      "paragraph_id": 44,
+      "section_id": 10,
+      "text": "The model's F 1 statistic, the harmonic mean",
+      "page_number": null
+    },
+    {
+      "text_id": 150,
+      "paragraph_id": 46,
+      "section_id": 11,
+      "text": "Numerous methods exist to identify the top predictors in a deep-learning model, including iml, LIME, and DALEX (Molnar, 2020).",
+      "page_number": null
+    },
+    {
+      "text_id": 151,
+      "paragraph_id": 46,
+      "section_id": 11,
+      "text": "The packages work by altering the values of one predictor at a time and assessing the extent to which this permutation influences the error term of the model; variables whose permutations cause a bigger change in the model's error term are assigned higher importance (Boehmke & Greenwell, 2019).",
+      "page_number": null
+    },
+    {
+      "text_id": 152,
+      "paragraph_id": 46,
+      "section_id": 11,
+      "text": "Because all methods provide approximate solutions, the top predictors identified by one method might or might not match those identified by another method.",
+      "page_number": null
+    },
+    {
+      "text_id": 153,
+      "paragraph_id": 46,
+      "section_id": 11,
+      "text": "We used the DALEX package (Biecek, 2018) to identify the top predictors.",
+      "page_number": null
+    },
+    {
+      "text_id": 154,
+      "paragraph_id": 46,
+      "section_id": 11,
+      "text": "This analysis was performed on the seen data because the model was built on this data set.",
+      "page_number": null
+    },
+    {
+      "text_id": 155,
+      "paragraph_id": 46,
+      "section_id": 11,
+      "text": "The top 50 predictors of unethicality in the entire data set, in each wave of the WVS, in each subregion, and in each country are available at https://doi.org/10.17605/OSF.IO/A6Y7R.",
+      "page_number": null
+    },
+    {
+      "text_id": 156,
+      "paragraph_id": 46,
+      "section_id": 11,
+      "text": "Specifically, the DALEX package estimated the increase in the model's binary-cross-entropy loss if each of the 708 variables in the data set was dropped from the model one at a time.",
+      "page_number": null
+    },
+    {
+      "text_id": 157,
+      "paragraph_id": 46,
+      "section_id": 11,
+      "text": "The top 10 predictors in the entire data set are presented in Table 4.",
+      "page_number": null
+    },
+    {
+      "text_id": 158,
+      "paragraph_id": 47,
+      "section_id": 11,
+      "text": "For comparison, Table 5 presents the top 10 predictors with the highest point-biserial correlation with the dependent variable in the original WVS data set (before imputation).",
+      "page_number": null
+    },
+    {
+      "text_id": 159,
+      "paragraph_id": 47,
+      "section_id": 11,
+      "text": "Quite strikingly, there was absolutely no overlap between the top 10 predictors identified by the deep-learning model and the top 10 predictors identified by a linear correlational analysis.",
+      "page_number": null
+    },
+    {
+      "text_id": 160,
+      "paragraph_id": 47,
+      "section_id": 11,
+      "text": "Thus, the set of cause-effect hypotheses can be generated from a machine-learning analysis, and those that can be generated from a correlational analysis are nonoverlapping in the present case.",
+      "page_number": null
+    },
+    {
+      "text_id": 161,
+      "paragraph_id": 47,
+      "section_id": 11,
+      "text": "This disjunction shows that predictor variables did not need to be highly correlated with the dependent variable to make a significant contribution to the deep-learning model's prediction accuracy.",
+      "page_number": null
+    },
+    {
+      "text_id": 162,
+      "paragraph_id": 48,
+      "section_id": 11,
+      "text": "We could not conduct a regression on the original WVS data because every respondent had many missing values.",
+      "page_number": null
+    },
+    {
+      "text_id": 163,
+      "paragraph_id": 48,
+      "section_id": 11,
+      "text": "However, we ran a generalized linear model (GLM) with a logistic link function to predict unethicality in the imputed data based on all 708 variables.",
+      "page_number": null
+    },
+    {
+      "text_id": 164,
+      "paragraph_id": 48,
+      "section_id": 11,
+      "text": "The model's accuracy was 72.4% (95% CI = [71.9%, 72.8%]), which was slightly lower than the lower deep-learning model's accuracy of 73.7%; however, the 95% CI of the GLM's accuracy was below the lower bound of the 95% CI of the deep-learning model's accuracy (95% CI = [73.2%, 74.2%]), indicating that the deep-learning model was significantly more accurate than the GLM.",
+      "page_number": null
+    },
+    {
+      "text_id": 165,
+      "paragraph_id": 48,
+      "section_id": 11,
+      "text": "To identify the top predictors, we conducted a logistic regression with lasso regularization on the imputed data The \"ΔDropout loss\" column refers to the change in the model's binary-cross-entropy loss if the predictor mentioned in that row is permuted.",
+      "page_number": null
+    },
+    {
+      "text_id": 166,
+      "paragraph_id": 48,
+      "section_id": 11,
+      "text": "(Hastie et al., 2009).",
+      "page_number": null
+    },
+    {
+      "text_id": 167,
+      "paragraph_id": 48,
+      "section_id": 11,
+      "text": "We first used a 10-fold cross-validation to determine the minimal lambda value using the cv.glmnet command in R, and we then used this value in the logistic lasso regression.",
+      "page_number": null
+    },
+    {
+      "text_id": 168,
+      "paragraph_id": 48,
+      "section_id": 11,
+      "text": "The lasso regression's accuracy, 72.4% (95% CI = [71.9%, 72.8%]) was virtually identical to the regular logistic regression's.",
+      "page_number": null
+    },
+    {
+      "text_id": 169,
+      "paragraph_id": 48,
+      "section_id": 11,
+      "text": "Table 6 presents the top 10 predictors from a lasso regression.",
+      "page_number": null
+    },
+    {
+      "text_id": 170,
+      "paragraph_id": 48,
+      "section_id": 11,
+      "text": "Four predictors identified by the lasso regression were also identified by the deep-learning model, but the rest were different.",
+      "page_number": null
+    },
+    {
+      "text_id": 171,
+      "paragraph_id": 48,
+      "section_id": 11,
+      "text": "Importantly, the rank ordering of the top predictors of the deep-learning model is not guaranteed, because changes in the model parameters can lead to different rank orderings.",
+      "page_number": null
+    },
+    {
+      "text_id": 172,
+      "paragraph_id": 48,
+      "section_id": 11,
+      "text": "This is particularly the case when different predictors have very similar dropout loss, as in the current results.",
+      "page_number": null
+    },
+    {
+      "text_id": 173,
+      "paragraph_id": 48,
+      "section_id": 11,
+      "text": "Thus, it is up to researchers to select predictors that they find most interesting to pursue.",
+      "page_number": null
+    },
+    {
+      "text_id": 174,
+      "paragraph_id": 48,
+      "section_id": 11,
+      "text": "Figure S1 in the Supplemental Material available online depicts the nature of the relationship between three of these predictors and the dependent variable.",
+      "page_number": null
+    },
+    {
+      "text_id": 175,
+      "paragraph_id": 49,
+      "section_id": 11,
+      "text": "Overall, the top predictor of unethicality identified by the machine-learning model (i.e., importance of daily prayer) is consistent with existing psychological theories claiming that more religious people are more prosocial and ethical (Norenzayan & Shariff, 2008).",
+      "page_number": null
+    },
+    {
+      "text_id": 176,
+      "paragraph_id": 49,
+      "section_id": 11,
+      "text": "The next predictor, \"religion is a cause of terrorism,\" possibly reflects an antireligion bias, but it is difficult to be confident about the underlying psychological construct without additional research.",
+      "page_number": null
+    },
+    {
+      "text_id": 177,
+      "paragraph_id": 49,
+      "section_id": 11,
+      "text": "The third predictor, \"confidence in the presidency,\" is probably difficult to experimentally manipulate in the present times, in which people's views about the presidency are highly polarized, particularly in the United States.",
+      "page_number": null
+    },
+    {
+      "text_id": 178,
+      "paragraph_id": 49,
+      "section_id": 11,
+      "text": "The next predictor is a double-barreled item-it is unclear whether participants were responding to \"civil marriage is important\" or \"civil marriage helps maintain the family.\"",
+      "page_number": null
+    },
+    {
+      "text_id": 179,
+      "paragraph_id": 49,
+      "section_id": 11,
+      "text": "The next two predictors (and also the 10th predictor) were from the same WVS item, in which participants were asked to choose the important option from \"a stable economy,\" \"progress toward a less impersonal and more humane society,\" \"ideas count more than money,\" and \"the fight against crime.\"",
+      "page_number": null
+    },
+    {
+      "text_id": 180,
+      "paragraph_id": 49,
+      "section_id": 11,
+      "text": "These response options varied across multiple dimensions rather than a single dimension.",
+      "page_number": null
+    },
+    {
+      "text_id": 181,
+      "paragraph_id": 49,
+      "section_id": 11,
+      "text": "Thus, it is difficult to identify the precise psychological construct underlying participants' responses.",
+      "page_number": null
+    },
+    {
+      "text_id": 182,
+      "paragraph_id": 49,
+      "section_id": 11,
+      "text": "The next predictor tapped how important it is that women wear a veil; this item is culture-specific, because women in most cultures do not wear a veil, and thus we did not pursue this construct.",
+      "page_number": null
+    },
+    {
+      "text_id": 183,
+      "paragraph_id": 49,
+      "section_id": 11,
+      "text": "The next predictor was, \"Humanity has a bright or bleak future\" (variable b017; response options: \"bright future,\" \"bleak future,\" \"both,\" \"neither,\" and \"other\"; dummy-coded in the analysis).",
+      "page_number": null
+    },
+    {
+      "text_id": 184,
+      "paragraph_id": 49,
+      "section_id": 11,
+      "text": "The deep-learning model identified the first option, \"bright future,\" as the one most diagnostic of ethicality.",
+      "page_number": null
+    },
+    {
+      "text_id": 185,
+      "paragraph_id": 49,
+      "section_id": 11,
+      "text": "We interpreted this variable to reflect optimism about the future of humanity.",
+      "page_number": null
+    },
+    {
+      "text_id": 186,
+      "paragraph_id": 49,
+      "section_id": 11,
+      "text": "There is a large literature on unethical behavior and a reasonably large literature on optimism.",
+      "page_number": null
+    },
+    {
+      "text_id": 187,
+      "paragraph_id": 49,
+      "section_id": 11,
+      "text": "Yet researchers have not connected the two.",
+      "page_number": null
+    },
+    {
+      "text_id": 188,
+      "paragraph_id": 49,
+      "section_id": 11,
+      "text": "Because we had imputed a large volume of data, we first sought to verify whether there is a relationship between participants' responses to this item and their ethicality in the unimputed WVS data set.",
+      "page_number": null
+    },
+    {
+      "text_id": 189,
+      "paragraph_id": 49,
+      "section_id": 11,
+      "text": "We found a significant direct relationship: 61.21% of the respondents who believed that humanity has a bright future justified at least one of the four unethical behaviors, but 65.00% of the participants who believed that humanity has a bleak future did so, χ 2 (1) = 82.92, p < .001.",
+      "page_number": null
+    },
+    {
+      "text_id": 190,
+      "paragraph_id": 50,
+      "section_id": 11,
+      "text": "Item b017 was probably not identified as a top predictor by bivariate correlations or the lasso regression because it was only weakly correlated with the dependent variable, r = -.0383.",
+      "page_number": null
+    },
+    {
+      "text_id": 191,
+      "paragraph_id": 50,
+      "section_id": 11,
+      "text": "In contrast to regressionbased methods, deep-learning models can capture nonlinear effects and complex interactions.",
+      "page_number": null
+    },
+    {
+      "text_id": 192,
+      "paragraph_id": 50,
+      "section_id": 11,
+      "text": "In this case, though, because we had dummy-coded b017, the deeplearning model could map only a linear relationship between optimism about humanity and unethicality.",
+      "page_number": null
+    },
+    {
+      "text_id": 193,
+      "paragraph_id": 50,
+      "section_id": 11,
+      "text": "Nevertheless, b017 probably contributed to the deeplearning model's predictions through interactions with other items included in the WVS.",
+      "page_number": null
+    },
+    {
+      "text_id": 194,
+      "paragraph_id": 50,
+      "section_id": 11,
+      "text": "In any case, the deeplearning model did identify a direct relationship between optimism and unethicality (see Fig.",
+      "page_number": null
+    },
+    {
+      "text_id": 195,
+      "paragraph_id": 50,
+      "section_id": 11,
+      "text": "S1).",
+      "page_number": null
+    },
+    {
+      "text_id": 196,
+      "paragraph_id": 50,
+      "section_id": 11,
+      "text": "The correlation in the original WVS data further confirms that notwithstanding any interaction effects, a direct relationship does exist between optimism and ethicality.",
+      "page_number": null
+    },
+    {
+      "text_id": 197,
+      "paragraph_id": 50,
+      "section_id": 11,
+      "text": "We thus decided to test the hypothesis that optimism reduces the justifiability of unethical behavior.",
+      "page_number": null
+    },
+    {
+      "text_id": 198,
+      "paragraph_id": 51,
+      "section_id": 11,
+      "text": "Although we focus on a hypothesis based on the worldwide top predictors from the deep-learning model, the model also generated region-specific and countryspecific top predictors (see https://doi.org/10.17605/ OSF.IO/A6Y7R).",
+      "page_number": null
+    },
+    {
+      "text_id": 199,
+      "paragraph_id": 51,
+      "section_id": 11,
+      "text": "For example, a top predictor in Northern Africa was variable f175 (\"Religions limit democratic processes\"); variable e003, Response Option 3 (\"Aims of respondent, first choice: fighting rising prices\") in Eastern Asia; and variable e003, Response Option 2 (\"Aims of respondent, first choice: give people more say\") in Latin America.",
+      "page_number": null
+    },
+    {
+      "text_id": 200,
+      "paragraph_id": 51,
+      "section_id": 11,
+      "text": "Future research can examine these region-specific hypotheses, thereby helping researchers expand their theorizing beyond ideas generated from Western, educated, industrialized, rich, and democratic (WEIRD) cultural contexts (Henrich, Heine, & Norenzayan, 2010).",
+      "page_number": null
+    },
+    {
+      "text_id": 201,
+      "paragraph_id": 51,
+      "section_id": 11,
+      "text": "Future research can test such culture-specific hypotheses.",
+      "page_number": null
+    },
+    {
+      "text_id": 202,
+      "paragraph_id": 53,
+      "section_id": 12,
+      "text": "The goal of Study 2 was to provide a conceptual replication of the key result found in Study 1 using different measures of the underlying constructs.",
+      "page_number": null
+    },
+    {
+      "text_id": 203,
+      "paragraph_id": 53,
+      "section_id": 12,
+      "text": "Instead of the single-item measure of optimism included in the WVS, we used Scheier and Carver's (1985) optimism scale, which taps a general and global positive expectancy about the future.",
+      "page_number": null
+    },
+    {
+      "text_id": 204,
+      "paragraph_id": 53,
+      "section_id": 12,
+      "text": "Further, instead of the WVS questions asking people whether unethical behaviors are justifiable, we administered Detert, Treviño, and Sweitzer's (2008) unethical-decision-making scale, because people who are higher on this scale are more likely to engage in actual unethical behaviors.",
+      "page_number": null
+    },
+    {
+      "text_id": 205,
+      "paragraph_id": 55,
+      "section_id": 13,
+      "text": "In this study, we report all conditions, measures, and participants.",
+      "page_number": null
+    },
+    {
+      "text_id": 206,
+      "paragraph_id": 55,
+      "section_id": 13,
+      "text": "The study was conducted in a single wave, and data were analyzed only after data collection was completed.",
+      "page_number": null
+    },
+    {
+      "text_id": 207,
+      "paragraph_id": 55,
+      "section_id": 13,
+      "text": "We preregistered the methods and analyses of this study at https://osf.io/4v3sg/.",
+      "page_number": null
+    },
+    {
+      "text_id": 208,
+      "paragraph_id": 56,
+      "section_id": 13,
+      "text": "Participants.",
+      "page_number": null
+    },
+    {
+      "text_id": 209,
+      "paragraph_id": 56,
+      "section_id": 13,
+      "text": "In a previous study using the same measures, we found an effect size in the predicted direction, r = -.172.",
+      "page_number": null
+    },
+    {
+      "text_id": 210,
+      "paragraph_id": 56,
+      "section_id": 13,
+      "text": "A power analysis with this correlation, an α of .05 (one-tailed), and power equal to 80% indicated that we needed to recruit 205 participants.",
+      "page_number": null
+    },
+    {
+      "text_id": 211,
+      "paragraph_id": 56,
+      "section_id": 13,
+      "text": "A survey seeking 205 US residents was posted on MTurk.",
+      "page_number": null
+    },
+    {
+      "text_id": 212,
+      "paragraph_id": 56,
+      "section_id": 13,
+      "text": "In response, 218 participants completed the survey (age: M = 42.18 years, SD = 13.61, 7 missing values; 93 women, 117 men, 8 missing values).",
+      "page_number": null
+    },
+    {
+      "text_id": 213,
+      "paragraph_id": 56,
+      "section_id": 13,
+      "text": "All participants had unique Internet protocol (IP) addresses.",
+      "page_number": null
+    },
+    {
+      "text_id": 214,
+      "paragraph_id": 57,
+      "section_id": 13,
+      "text": "Procedure.",
+      "page_number": null
+    },
+    {
+      "text_id": 215,
+      "paragraph_id": 57,
+      "section_id": 13,
+      "text": "We measured people's dispositional optimism using the eight-item scale developed by Scheier and Carver (1985).",
+      "page_number": null
+    },
+    {
+      "text_id": 216,
+      "paragraph_id": 57,
+      "section_id": 13,
+      "text": "Participants were asked to respond to sample items such as \"I always look on the bright side of things\" on a 7-point scale ranging from strongly disagree to strongly agree (α = .89).",
+      "page_number": null
+    },
+    {
+      "text_id": 217,
+      "paragraph_id": 57,
+      "section_id": 13,
+      "text": "We measured people's willingness to engage in unethical behaviors using the eight-item unethical-decision-making scale developed by Detert et al.",
+      "page_number": null
+    },
+    {
+      "text_id": 218,
+      "paragraph_id": 57,
+      "section_id": 13,
+      "text": "(2008, Appendix B).",
+      "page_number": null
+    },
+    {
+      "text_id": 219,
+      "paragraph_id": 57,
+      "section_id": 13,
+      "text": "Participants were presented with eight ethically charged scenarios and were asked to rate how likely they would engage in the unethical behaviors described in these scenarios using a 7-point scale ranging from not at all likely to extremely likely (α = .88).",
+      "page_number": null
+    },
+    {
+      "text_id": 220,
+      "paragraph_id": 57,
+      "section_id": 13,
+      "text": "A sample scenario is \"You work as an office assistant for a department in a large company.",
+      "page_number": null
+    },
+    {
+      "text_id": 221,
+      "paragraph_id": 57,
+      "section_id": 13,
+      "text": "You're alone in the office making copies and realize you're out of copy paper at home.",
+      "page_number": null
+    },
+    {
+      "text_id": 222,
+      "paragraph_id": 57,
+      "section_id": 13,
+      "text": "You therefore slip a ream of paper into your backpack.\"",
+      "page_number": null
+    },
+    {
+      "text_id": 223,
+      "paragraph_id": 57,
+      "section_id": 13,
+      "text": "Thereafter, we asked participants to respond to an open-ended statement: \"Please summarize the main point of the statements that you just responded to in this survey.\"",
+      "page_number": null
+    },
+    {
+      "text_id": 224,
+      "paragraph_id": 59,
+      "section_id": 14,
+      "text": "Following our preregistered analysis plan, we excluded 30 participants from our final analyses because they provided gibberish or irrelevant responses to the openended statement asking them to summarize the main point of the two measures that they responded to (see the Supplemental Material for the responses that were judged to be gibberish).",
+      "page_number": null
+    },
+    {
+      "text_id": 225,
+      "paragraph_id": 60,
+      "section_id": 14,
+      "text": "We found that dispositional optimism was negatively related to people's willingness to engage in unethical behaviors, r(186) = -.213, 95% CI = [-.351, -.070], p = .003.",
+      "page_number": null
+    },
+    {
+      "text_id": 226,
+      "paragraph_id": 60,
+      "section_id": 14,
+      "text": "Therefore, this correlational study provides support for the hypothesis generated by the machine-learning analysis: More optimistic people are less willing to engage in unethical behaviors.",
+      "page_number": null
+    },
+    {
+      "text_id": 227,
+      "paragraph_id": 60,
+      "section_id": 14,
+      "text": "Importantly, we replicated the key finding from Study 1 using measures that differed from those included in the WVS.",
+      "page_number": null
+    },
+    {
+      "text_id": 228,
+      "paragraph_id": 62,
+      "section_id": 15,
+      "text": "Study 3 tested the hypothesis that experimentally manipulating optimism would reduce people's tendency to perceive unethical behaviors as justifiable.",
+      "page_number": null
+    },
+    {
+      "text_id": 229,
+      "paragraph_id": 62,
+      "section_id": 15,
+      "text": "We did so in the context of the COVID-19 epidemic.",
+      "page_number": null
+    },
+    {
+      "text_id": 230,
+      "paragraph_id": 62,
+      "section_id": 15,
+      "text": "Two experiments reported in the Supplemental Material confirmed our prediction but with a slightly broader measure of unethical behavior in the context of COVID-19.",
+      "page_number": null
+    },
+    {
+      "text_id": 231,
+      "paragraph_id": 62,
+      "section_id": 15,
+      "text": "In Experiment 3, we sought to replicate these findings with a more precisely defined measure of unethical behavior.",
+      "page_number": null
+    },
+    {
+      "text_id": 232,
+      "paragraph_id": 64,
+      "section_id": 16,
+      "text": "As in Study 2, we report all conditions, measures, and participants.",
+      "page_number": null
+    },
+    {
+      "text_id": 233,
+      "paragraph_id": 64,
+      "section_id": 16,
+      "text": "The study was conducted in a single wave, and data were analyzed only after data collection was completed.",
+      "page_number": null
+    },
+    {
+      "text_id": 234,
+      "paragraph_id": 64,
+      "section_id": 16,
+      "text": "We preregistered the method and analysis plan for this study at https://osf.io/hwu9x/.",
+      "page_number": null
+    },
+    {
+      "text_id": 235,
+      "paragraph_id": 65,
+      "section_id": 16,
+      "text": "Participants.",
+      "page_number": null
+    },
+    {
+      "text_id": 236,
+      "paragraph_id": 65,
+      "section_id": 16,
+      "text": "In the two prior experiments (reported in the Supplemental Material), we found an average effect size (Cohen's d = 0.36).",
+      "page_number": null
+    },
+    {
+      "text_id": 237,
+      "paragraph_id": 65,
+      "section_id": 16,
+      "text": "A power analysis based on this effect size, an α of .05 (one-tailed), and power equal to 90%, indicated that we needed to recruit 266 participants.",
+      "page_number": null
+    },
+    {
+      "text_id": 238,
+      "paragraph_id": 65,
+      "section_id": 16,
+      "text": "In the two previous studies, 8% of the participants, on average, were excluded because they provided gibberish or irrelevant responses to an open-ended statement.",
+      "page_number": null
+    },
+    {
+      "text_id": 239,
+      "paragraph_id": 65,
+      "section_id": 16,
+      "text": "We thus posted a survey seeking 289 (i.e., 266/(1%-8%)) US residents on MTurk.",
+      "page_number": null
+    },
+    {
+      "text_id": 240,
+      "paragraph_id": 65,
+      "section_id": 16,
+      "text": "In response, 294 participants completed the survey (age: M = 34.87 years, SD = 11.93; 157 women, 135 men, 1 other, and 1 missing value).",
+      "page_number": null
+    },
+    {
+      "text_id": 241,
+      "paragraph_id": 65,
+      "section_id": 16,
+      "text": "All responses came from unique IP addresses.",
+      "page_number": null
+    },
+    {
+      "text_id": 242,
+      "paragraph_id": 65,
+      "section_id": 16,
+      "text": "Each participant was randomly assigned to either the pessimism condition or the optimism condition.",
+      "page_number": null
+    },
+    {
+      "text_id": 243,
+      "paragraph_id": 66,
+      "section_id": 16,
+      "text": "Procedure.",
+      "page_number": null
+    },
+    {
+      "text_id": 244,
+      "paragraph_id": 66,
+      "section_id": 16,
+      "text": "Each participant was presented with a scenario stating that the future of the COVID-19 epidemic was either bright or bleak (see the Supplemental Material for detailed scenarios).",
+      "page_number": null
+    },
+    {
+      "text_id": 245,
+      "paragraph_id": 66,
+      "section_id": 16,
+      "text": "For example, participants in the optimism condition were told that the virus should be contained within two months, that a vaccine should be ready within 6 months, and that the rate of new infections is guaranteed to go down.",
+      "page_number": null
+    },
+    {
+      "text_id": 246,
+      "paragraph_id": 66,
+      "section_id": 16,
+      "text": "In contrast, participants in the pessimism condition were told that it will be very difficult to contain the virus, that a vaccine is unlikely to be ready in time, and that the rate of new infections is still pretty high.",
+      "page_number": null
+    },
+    {
+      "text_id": 247,
+      "paragraph_id": 66,
+      "section_id": 16,
+      "text": "After they read the scenario, participants were asked to summarize the main idea it expressed and to respond to a manipulation-check question: \"What are your expectations for the future of the coronavirus situation?\"",
+      "page_number": null
+    },
+    {
+      "text_id": 248,
+      "paragraph_id": 66,
+      "section_id": 16,
+      "text": "Participants responded on a 7-point scale ranging from 1, it will be a very bleak future, to 7, it will be a very bright future.",
+      "page_number": null
+    },
+    {
+      "text_id": 249,
+      "paragraph_id": 67,
+      "section_id": 16,
+      "text": "We finally measured the dependent variable by asking participants to rate the extent to which they found five unethical behaviors related to the COVID-19 situation justifiable: (a) \"It is OK to go to a park that is closed for some fresh air and exercise, especially because there are likely to be very few people in a closed park\"; (b) \"It is justifiable to hoard face masks and hand sanitizers given how hard it is to buy them anywhere\"; (c) \"We must buy as many groceries as possible and stock up because who knows when supermarkets will run out of food\"; (d) \"Despite all the social distancing guidelines, it is OK to shake hands when meeting someone because otherwise one would appear extremely rude\"; and (e) \"Despite the social distancing guidelines, it is OK to get together with a few friends for a drink, as long as everyone doesn't show any respiratory symptoms\" (see the Supplemental Material for the full items).",
+      "page_number": null
+    },
+    {
+      "text_id": 250,
+      "paragraph_id": 67,
+      "section_id": 16,
+      "text": "Participants were asked to respond on a 11-point scale ranging from -5, definitely express my disagreement, to 5, definitely express my agreement.",
+      "page_number": null
+    },
+    {
+      "text_id": 251,
+      "paragraph_id": 69,
+      "section_id": 17,
+      "text": "Following our preregistered plan, we excluded 52 participants who provided gibberish or irrelevant responses to the open-ended statement asking them to summarize the main point of the information provided in the scenario (see the Supplemental Material for the responses that were judged to be gibberish).",
+      "page_number": null
+    },
+    {
+      "text_id": 252,
+      "paragraph_id": 70,
+      "section_id": 17,
+      "text": "An independent-samples t test revealed that participants in the optimism condition thought that the future of the coronavirus situation was more bright (M = 4.88, 95% CI = [4.65, 5.13], SD = 1.35) than those in the pessimism condition (M = 3.21, 95% CI = [2.96, 3.47], SD = 1.42), t(240) = 9.40, p < .001, Cohen's d = 1.21, 95% CI = [1.04, 1.39].",
+      "page_number": null
+    },
+    {
+      "text_id": 253,
+      "paragraph_id": 70,
+      "section_id": 17,
+      "text": "This finding indicates that our experimental manipulation was successful.",
+      "page_number": null
+    },
+    {
+      "text_id": 254,
+      "paragraph_id": 71,
+      "section_id": 17,
+      "text": "The five-item measure of justifiability of unethical behaviors had high reliability, α = .80.",
+      "page_number": null
+    },
+    {
+      "text_id": 255,
+      "paragraph_id": 71,
+      "section_id": 17,
+      "text": "Another independent-samples t test found that participants in the optimism condition were less likely to find unethical behaviors justifiable (M = -3.15, 95% CI = [-3.41, -2.87], SD = 1.55) than participants in the pessimism condition (M = -2.79, 95% CI = [-3.07, -2.49], SD = 1.72), t(240) = 1.67, p = .048 (one-tailed, given the preregistered directional hypothesis), Cohen's d = 0.215, 90% CI = [0.002, 0.427].",
+      "page_number": null
+    },
+    {
+      "text_id": 256,
+      "paragraph_id": 71,
+      "section_id": 17,
+      "text": "This experiment thus provided causal support for the hypotheses generated by the machinelearning analysis: Increasing participants' optimism about the COVID-19 epidemic reduced the extent to which they justified unethical behaviors related to the epidemic.",
+      "page_number": null
+    },
+    {
+      "text_id": 257,
+      "paragraph_id": 73,
+      "section_id": 18,
+      "text": "In the current research, we used a deep-learning model to predict whether people perceive unethical behaviors as justifiable and to generate novel hypotheses about antecedents of perceived justifiability of unethical behaviors.",
+      "page_number": null
+    },
+    {
+      "text_id": 258,
+      "paragraph_id": 73,
+      "section_id": 18,
+      "text": "The deep neural network that we built was able to classify respondents of the WVS as ethical or unethical with high accuracy-the model's accuracy was 90% of the test-retest accuracy of the measure of unethicality.",
+      "page_number": null
+    },
+    {
+      "text_id": 259,
+      "paragraph_id": 74,
+      "section_id": 18,
+      "text": "Notably, the top 10 predictors of unethicality identified by the deep-learning model did not overlap at all with the top 10 predictors identified by a correlational analysis and partially overlapped with those identified by a lasso regression.",
+      "page_number": null
+    },
+    {
+      "text_id": 260,
+      "paragraph_id": 74,
+      "section_id": 18,
+      "text": "This probably occurred because the deep-learning model could have modeled any number of interactions and nonlinear effects.",
+      "page_number": null
+    },
+    {
+      "text_id": 261,
+      "paragraph_id": 74,
+      "section_id": 18,
+      "text": "Researchers have recently made advances in uncovering interactions from deep-learning models (Tsang, Cheng, & Liu, 2018).",
+      "page_number": null
+    },
+    {
+      "text_id": 262,
+      "paragraph_id": 75,
+      "section_id": 18,
+      "text": "In the current research, we focused on the main effect of optimism on unethical behavior because we reasoned that if a top predictor does not directly cause the outcome variable, its interactions with other variables on the outcome effects would be of limited theoretical and practical utility.",
+      "page_number": null
+    },
+    {
+      "text_id": 263,
+      "paragraph_id": 75,
+      "section_id": 18,
+      "text": "Nevertheless, given that optimism was not identified as a top predictor by the lasso regression and by bivariate correlations, the bulk of its contributions to predicting unethicality in the deep-learning model likely occurred through interactions.",
+      "page_number": null
+    },
+    {
+      "text_id": 264,
+      "paragraph_id": 75,
+      "section_id": 18,
+      "text": "This means that in other data sets, if the unknown variables that the optimism variable has been interacting with are not included, then the predictive value of optimism might be lower.",
+      "page_number": null
+    },
+    {
+      "text_id": 265,
+      "paragraph_id": 76,
+      "section_id": 18,
+      "text": "We formulated a novel hypothesis-that optimism reduces unethicality-on the basis of the deep-learning model's finding that whether people think that the future of humanity is bleak or bright is a strong predictor of unethicality.",
+      "page_number": null
+    },
+    {
+      "text_id": 266,
+      "paragraph_id": 76,
+      "section_id": 18,
+      "text": "This variable was not flagged as a top predictor either by the correlational analysis or by the lasso regression.",
+      "page_number": null
+    },
+    {
+      "text_id": 267,
+      "paragraph_id": 76,
+      "section_id": 18,
+      "text": "Consistent with this idea, the results of a correlational study showed that people higher on dispositional optimism were less willing to engage in unethical behaviors.",
+      "page_number": null
+    },
+    {
+      "text_id": 268,
+      "paragraph_id": 76,
+      "section_id": 18,
+      "text": "A following experiment found that increasing participants' optimism about the COVID-19 epidemic reduced the extent to which they justified unethical behaviors related to the epidemic.",
+      "page_number": null
+    },
+    {
+      "text_id": 269,
+      "paragraph_id": 76,
+      "section_id": 18,
+      "text": "The behavioral studies were conducted with US American participants; thus, the cultural generalizability of the present findings is unclear.",
+      "page_number": null
+    },
+    {
+      "text_id": 270,
+      "paragraph_id": 76,
+      "section_id": 18,
+      "text": "Future research needs to test whether optimism reduces unethical behavior in other cultural contexts.",
+      "page_number": null
+    },
+    {
+      "text_id": 271,
+      "paragraph_id": 77,
+      "section_id": 18,
+      "text": "Although we could not locate research documenting the link between optimism and unethical behavior, we found research on mood and unethical behavior.",
+      "page_number": null
+    },
+    {
+      "text_id": 272,
+      "paragraph_id": 77,
+      "section_id": 18,
+      "text": "Whereas Vincent, Emich, and Goncalo (2013) report that people in a more positive mood are more likely to engage in unethical behaviors, a meta-analysis by Kong and Drew (2016) suggests the opposite, namely, that people in a more positive mood are more likely to disengage from unethical behaviors.",
+      "page_number": null
+    },
+    {
+      "text_id": 273,
+      "paragraph_id": 77,
+      "section_id": 18,
+      "text": "Optimism and mood are related in that more optimistic people tend to have more positive mood (Marshall, Wortman, Kusulas, Hervig, & Vickers, 1992;Segerstrom, Taylor, Kemeny, & Fahey, 1998), and inducing positive mood in people increases their optimism (Salovey & Birnbaum, 1989).",
+      "page_number": null
+    },
+    {
+      "text_id": 274,
+      "paragraph_id": 77,
+      "section_id": 18,
+      "text": "Thus, past research on mood does not lead to clear predictions about the relationship between optimism and unethical behavior.",
+      "page_number": null
+    },
+    {
+      "text_id": 275,
+      "paragraph_id": 77,
+      "section_id": 18,
+      "text": "Machine learning aided generation of the current directional hypothesis.",
+      "page_number": null
+    },
+    {
+      "text_id": 276,
+      "paragraph_id": 78,
+      "section_id": 18,
+      "text": "A key shortcoming of the machine-learning procedure to generate hypotheses is that machine-learning models give us ideas for a novel cause-effect relationship but do not provide a theory or a mechanism explaining this relationship.",
+      "page_number": null
+    },
+    {
+      "text_id": 277,
+      "paragraph_id": 78,
+      "section_id": 18,
+      "text": "It is up to us researchers to theorize about and identify mechanisms underlying the cause-effect relationship.",
+      "page_number": null
+    },
+    {
+      "text_id": 278,
+      "paragraph_id": 78,
+      "section_id": 18,
+      "text": "In the present context, we provide a conjecture for why optimistic people might be less likely to engage in unethical behaviors: People typically engage in unethical behaviors because they want to obtain some positive outcomes that they think cannot be obtained otherwise, and by definition, more optimistic people believe that they are more likely to obtain positive outcomes in the future.",
+      "page_number": null
+    },
+    {
+      "text_id": 279,
+      "paragraph_id": 78,
+      "section_id": 18,
+      "text": "Thus, optimism might obviate the need to engage in unethical behaviors to obtain a positive outcome because people think that they already have a higher chance of obtaining the outcome.",
+      "page_number": null
+    },
+    {
+      "text_id": 280,
+      "paragraph_id": 78,
+      "section_id": 18,
+      "text": "Future research can test this and other explanations as to why optimism reduces the justifiability of unethical behavior.",
+      "page_number": null
+    },
+    {
+      "text_id": 281,
+      "paragraph_id": 79,
+      "section_id": 18,
+      "text": "In the context of the COVID-19 pandemic, our findings suggest that if we want people to act in an ethical manner (e.g., to not hoard, to follow social-distancing guidelines), we should give people reasons to be optimistic about the future of the epidemic.",
+      "page_number": null
+    },
+    {
+      "text_id": 282,
+      "paragraph_id": 79,
+      "section_id": 18,
+      "text": "For example, the media and governments can emphasize (a) that with sufficient measures, it is possible to contain the epidemic, as we know from China's experience; (b) reductions in the rate of new infections and death, even while total infections and death are increasing; and (c) that initial trials of numerous vaccines have been successful.",
+      "page_number": null
+    },
+    {
+      "text_id": 283,
+      "paragraph_id": 79,
+      "section_id": 18,
+      "text": "One limitation of the current research is that we tested the hypothesis generated only with US residents.",
+      "page_number": null
+    },
+    {
+      "text_id": 284,
+      "paragraph_id": 79,
+      "section_id": 18,
+      "text": "Future research can test whether optimism reduces unethical behaviors in other parts of the world.",
+      "page_number": null
+    },
+    {
+      "text_id": 285,
+      "paragraph_id": 80,
+      "section_id": 18,
+      "text": "The current research presents significant advances in the use of machine-learning techniques in psychology.",
+      "page_number": null
+    },
+    {
+      "text_id": 286,
+      "paragraph_id": 80,
+      "section_id": 18,
+      "text": "Past research at this intersection has primarily focused on prediction (Bleidorn & Hopwood, 2019), and researchers have conceptualized machine-learning models' ability to predict behavior as an alternative approach to traditional research's ability to explain behavior (Yarkoni & Westfall, 2017).",
+      "page_number": null
+    },
+    {
+      "text_id": 287,
+      "paragraph_id": 80,
+      "section_id": 18,
+      "text": "However, in the current research, we used machine-learning tools simultaneously for predicting behavior (with 90% accuracy) and explaining behavior (identifying a novel cause-effect relationship).",
+      "page_number": null
+    },
+    {
+      "text_id": 288,
+      "paragraph_id": 80,
+      "section_id": 18,
+      "text": "Thus, the current research demonstrates that using machine-learning algorithms, we can achieve relatively high predictability while also generating novel theoretical insights that are borne out by experimental tests.",
+      "page_number": null
+    },
+    {
+      "text_id": 289,
+      "paragraph_id": 82,
+      "section_id": 19,
+      "text": "Action Editor: Marc J Buehner Editor: Patricia J Bauer",
+      "page_number": null
+    },
+    {
+      "text_id": 290,
+      "paragraph_id": 84,
+      "section_id": 20,
+      "text": "We thank Ee Hwee Lau, Dayana Bulchand, Sylvia Chin, and Andrea Low for invaluable research assistance.",
+      "page_number": null
+    },
+    {
+      "text_id": 291,
+      "paragraph_id": 86,
+      "section_id": 21,
+      "text": "This research was supported by a Nanyang Assistant Professorship grant awarded by Nanyang Technological University to K Savani.",
+      "page_number": null
+    },
+    {
+      "text_id": 292,
+      "paragraph_id": 86,
+      "section_id": 21,
+      "text": "Open Practices",
+      "page_number": null
+    },
+    {
+      "text_id": 293,
+      "paragraph_id": 88,
+      "section_id": 22,
+      "text": "Data for Studies 1 through 3, modeling code for Study 1, materials for Studies 2 and 3, and information about Studies S1 and S2 have been made publicly available via OSF and can be accessed at https://doi.org/10.17605/OSF.IO/ A6Y7R.",
+      "page_number": null
+    },
+    {
+      "text_id": 294,
+      "paragraph_id": 88,
+      "section_id": 22,
+      "text": "The design and analysis plan for Studies 2 and 3 were preregistered at https://osf.io/4v3sg/ and https://osf .io/hwu9x/, respectively.",
+      "page_number": null
+    },
+    {
+      "text_id": 295,
+      "paragraph_id": 88,
+      "section_id": 22,
+      "text": "The complete Open Practices Disclosure for this article can be found at http://journals .sagepub.com/doi/suppl/10.1177/0956797620959594.",
+      "page_number": null
+    },
+    {
+      "text_id": 296,
+      "paragraph_id": 88,
+      "section_id": 22,
+      "text": "This article has received the badges for Open Data, Open Materials, and Preregistration.",
+      "page_number": null
+    },
+    {
+      "text_id": 297,
+      "paragraph_id": 88,
+      "section_id": 22,
+      "text": "More information about the Open Practices badges can be found at http://www.psy chologicalscience.org/publications/badges.",
+      "page_number": null
+    },
+    {
+      "text_id": 298,
+      "paragraph_id": 90,
+      "section_id": 23,
+      "text": "The author(s) declared that there were no conflicts of interest with respect to the authorship or the publication of this article.",
+      "page_number": null
+    },
+    {
+      "text_id": 299,
+      "paragraph_id": 92,
+      "section_id": 24,
+      "text": "A Sheetal conceived the idea for the study and designed and performed the machine-learning research.",
+      "page_number": null
+    },
+    {
+      "text_id": 300,
+      "paragraph_id": 92,
+      "section_id": 24,
+      "text": "Z Feng and K Savani designed the behavioral research.",
+      "page_number": null
+    },
+    {
+      "text_id": 301,
+      "paragraph_id": 92,
+      "section_id": 24,
+      "text": "Z Feng collected and analyzed the behavioral data.",
+      "page_number": null
+    },
+    {
+      "text_id": 302,
+      "paragraph_id": 92,
+      "section_id": 24,
+      "text": "All authors wrote the manuscript and approved the final version for submission.",
+      "page_number": null
+    },
+    {
+      "text_id": 303,
+      "paragraph_id": 92,
+      "section_id": 24,
+      "text": "A Sheetal and Z Feng contributed equally to this study.",
+      "page_number": null
+    },
+    {
+      "text_id": 304,
+      "paragraph_id": 94,
+      "section_id": 25,
+      "text": "Additional supporting information can be found at http:// journals.sagepub.com/doi/suppl/10.1177/0956797620959594",
+      "page_number": null
+    },
+    {
+      "text_id": 305,
+      "paragraph_id": 95,
+      "section_id": 26,
+      "text": "Fig 1 Flowchart showing the machine-learning procedure used in Study 1.",
+      "page_number": null
+    },
+    {
+      "text_id": 306,
+      "paragraph_id": 96,
+      "section_id": 27,
+      "text": "Fig 2 Illustration of the deep-learning model used in Study 1.",
+      "page_number": null
+    },
+    {
+      "text_id": 307,
+      "paragraph_id": 96,
+      "section_id": 27,
+      "text": "The green circles represent standardized versions of the 708 predictors.",
+      "page_number": null
+    },
+    {
+      "text_id": 308,
+      "paragraph_id": 96,
+      "section_id": 27,
+      "text": "The yellow and purple circles represent perceptrons containing the relu activation function.",
+      "page_number": null
+    },
+    {
+      "text_id": 309,
+      "paragraph_id": 96,
+      "section_id": 27,
+      "text": "The bottom row indicates the total number of perceptrons in each layer.",
+      "page_number": null
+    },
+    {
+      "text_id": 310,
+      "paragraph_id": 96,
+      "section_id": 27,
+      "text": "The pink circle represents the perceptron in the final layer containing the sigmoid activation function, which predicted whether participants were ethical or unethical.",
+      "page_number": null
+    },
+    {
+      "text_id": 311,
+      "paragraph_id": 97,
+      "section_id": 28,
+      "text": "Fig 3 Accuracy and binary-cross-entropy loss in the model-building (training) data and the validation data across successive iterations (Study 1).",
+      "page_number": null
+    },
+    {
+      "text_id": 312,
+      "paragraph_id": 98,
+      "section_id": 29,
+      "text": "Parameters Values Used in the Hyperparameter Search (Study 1)",
+      "page_number": null
+    },
+    {
+      "text_id": 313,
+      "paragraph_id": 99,
+      "section_id": 30,
+      "text": "Parameters of the Final Model (Study 1)",
+      "page_number": null
+    },
+    {
+      "text_id": 314,
+      "paragraph_id": 100,
+      "section_id": 31,
+      "text": "Number of Actual Versus Predicted Cases in the Unseen Data (Study 1)",
+      "page_number": null
+    },
+    {
+      "text_id": 315,
+      "paragraph_id": 101,
+      "section_id": 32,
+      "text": "Top 10 Predictors of Unethicality Based on the Deep-Learning Model (Excluding Country, Wave, and Subregion Dummy Variables That Showed Up as Top Predictors; Study 1)",
+      "page_number": null
+    },
+    {
+      "text_id": 316,
+      "paragraph_id": 102,
+      "section_id": 33,
+      "text": "Top 10 Nonexcluded Items With the Highest Bivariate Point-Biserial Correlation With the Dependent Variable in the Original WVS Data Set (Before Imputation; Study 1)",
+      "page_number": null
+    },
+    {
+      "text_id": 317,
+      "paragraph_id": 103,
+      "section_id": 34,
+      "text": "Top 10 Predictors From a Logistic Lasso Regression Conducted on the Imputed WVS Data (Study 1)",
+      "page_number": null
+    },
+    {
+      "text_id": 318,
+      "paragraph_id": 104,
+      "section_id": 35,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 319,
+      "paragraph_id": 105,
+      "section_id": 35,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 320,
+      "paragraph_id": 106,
+      "section_id": 35,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 321,
+      "paragraph_id": 107,
+      "section_id": 35,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 322,
+      "paragraph_id": 108,
+      "section_id": 35,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 323,
+      "paragraph_id": 109,
+      "section_id": 35,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 324,
+      "paragraph_id": 110,
+      "section_id": 35,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 325,
+      "paragraph_id": 111,
+      "section_id": 35,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 326,
+      "paragraph_id": 112,
+      "section_id": 35,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 327,
+      "paragraph_id": 113,
+      "section_id": 35,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 328,
+      "paragraph_id": 114,
+      "section_id": 35,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 329,
+      "paragraph_id": 115,
+      "section_id": 35,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 330,
+      "paragraph_id": 116,
+      "section_id": 35,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 331,
+      "paragraph_id": 117,
+      "section_id": 35,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 332,
+      "paragraph_id": 118,
+      "section_id": 35,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 333,
+      "paragraph_id": 119,
+      "section_id": 35,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 334,
+      "paragraph_id": 120,
+      "section_id": 35,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 335,
+      "paragraph_id": 121,
+      "section_id": 35,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 336,
+      "paragraph_id": 122,
+      "section_id": 35,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 337,
+      "paragraph_id": 123,
+      "section_id": 35,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 338,
+      "paragraph_id": 124,
+      "section_id": 35,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 339,
+      "paragraph_id": 125,
+      "section_id": 35,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 340,
+      "paragraph_id": 126,
+      "section_id": 35,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 341,
+      "paragraph_id": 127,
+      "section_id": 35,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 342,
+      "paragraph_id": 128,
+      "section_id": 35,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 343,
+      "paragraph_id": 129,
+      "section_id": 35,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 344,
+      "paragraph_id": 130,
+      "section_id": 35,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 345,
+      "paragraph_id": 131,
+      "section_id": 35,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 346,
+      "paragraph_id": 132,
+      "section_id": 35,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 347,
+      "paragraph_id": 133,
+      "section_id": 35,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 348,
+      "paragraph_id": 134,
+      "section_id": 35,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 349,
+      "paragraph_id": 135,
+      "section_id": 35,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 350,
+      "paragraph_id": 136,
+      "section_id": 35,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 351,
+      "paragraph_id": 137,
+      "section_id": 35,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 352,
+      "paragraph_id": 138,
+      "section_id": 35,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 353,
+      "paragraph_id": 139,
+      "section_id": 35,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 354,
+      "paragraph_id": 140,
+      "section_id": 35,
+      "text": "",
+      "page_number": null
+    }
+  ],
+  "section": [
+    {
+      "section_id": 0,
+      "header": "Abstract",
+      "parent_section_id": null,
+      "section_type": "abstract",
+      "classification_score": null
+    },
+    {
+      "section_id": 1,
+      "header": "[div-01]",
+      "parent_section_id": null,
+      "section_type": "intro",
+      "classification_score": null
+    },
+    {
+      "section_id": 2,
+      "header": "Statement of Relevance",
+      "parent_section_id": null,
+      "section_type": "intro",
+      "classification_score": null
+    },
+    {
+      "section_id": 3,
+      "header": "Study 1: Machine Learning",
+      "parent_section_id": null,
+      "section_type": "intro",
+      "classification_score": null
+    },
+    {
+      "section_id": 4,
+      "header": "Method",
+      "parent_section_id": null,
+      "section_type": "method",
+      "classification_score": null
+    },
+    {
+      "section_id": 5,
+      "header": "Splitting the data.",
+      "parent_section_id": null,
+      "section_type": "method",
+      "classification_score": null
+    },
+    {
+      "section_id": 6,
+      "header": "Data cleaning (second round).",
+      "parent_section_id": null,
+      "section_type": "method",
+      "classification_score": null
+    },
+    {
+      "section_id": 7,
+      "header": "Model building.",
+      "parent_section_id": null,
+      "section_type": "method",
+      "classification_score": null
+    },
+    {
+      "section_id": 8,
+      "header": "Model selection.",
+      "parent_section_id": null,
+      "section_type": "method",
+      "classification_score": null
+    },
+    {
+      "section_id": 9,
+      "header": "Holdout testing.",
+      "parent_section_id": null,
+      "section_type": "method",
+      "classification_score": null
+    },
+    {
+      "section_id": 10,
+      "header": "Results",
+      "parent_section_id": null,
+      "section_type": "results",
+      "classification_score": null
+    },
+    {
+      "section_id": 11,
+      "header": "Predictors of unethicality.",
+      "parent_section_id": null,
+      "section_type": "results",
+      "classification_score": null
+    },
+    {
+      "section_id": 12,
+      "header": "Study 2: Correlational Replication",
+      "parent_section_id": null,
+      "section_type": "results",
+      "classification_score": null
+    },
+    {
+      "section_id": 13,
+      "header": "Method",
+      "parent_section_id": null,
+      "section_type": "method",
+      "classification_score": null
+    },
+    {
+      "section_id": 14,
+      "header": "Results",
+      "parent_section_id": null,
+      "section_type": "results",
+      "classification_score": null
+    },
+    {
+      "section_id": 15,
+      "header": "Study 3: Experiment",
+      "parent_section_id": null,
+      "section_type": "results",
+      "classification_score": null
+    },
+    {
+      "section_id": 16,
+      "header": "Method",
+      "parent_section_id": null,
+      "section_type": "method",
+      "classification_score": null
+    },
+    {
+      "section_id": 17,
+      "header": "Results",
+      "parent_section_id": null,
+      "section_type": "results",
+      "classification_score": null
+    },
+    {
+      "section_id": 18,
+      "header": "General Discussion",
+      "parent_section_id": null,
+      "section_type": "discussion",
+      "classification_score": null
+    },
+    {
+      "section_id": 19,
+      "header": "Transparency",
+      "parent_section_id": null,
+      "section_type": "discussion",
+      "classification_score": null
+    },
+    {
+      "section_id": 20,
+      "header": "Acknowledgments",
+      "parent_section_id": null,
+      "section_type": "acknowledgement",
+      "classification_score": null
+    },
+    {
+      "section_id": 21,
+      "header": "Funding",
+      "parent_section_id": null,
+      "section_type": "funding",
+      "classification_score": null
+    },
+    {
+      "section_id": 22,
+      "header": "",
+      "parent_section_id": null,
+      "section_type": "availability",
+      "classification_score": null
+    },
+    {
+      "section_id": 23,
+      "header": "Declaration of Conflicting Interests",
+      "parent_section_id": null,
+      "section_type": "conflict",
+      "classification_score": null
+    },
+    {
+      "section_id": 24,
+      "header": "Author Contributions",
+      "parent_section_id": null,
+      "section_type": "contribution",
+      "classification_score": null
+    },
+    {
+      "section_id": 25,
+      "header": "Supplemental Material",
+      "parent_section_id": null,
+      "section_type": "annex",
+      "classification_score": null
+    },
+    {
+      "section_id": 26,
+      "header": "Fig 1",
+      "parent_section_id": null,
+      "section_type": "figure",
+      "classification_score": null
+    },
+    {
+      "section_id": 27,
+      "header": "Fig 2",
+      "parent_section_id": null,
+      "section_type": "figure",
+      "classification_score": null
+    },
+    {
+      "section_id": 28,
+      "header": "",
+      "parent_section_id": null,
+      "section_type": "figure",
+      "classification_score": null
+    },
+    {
+      "section_id": 29,
+      "header": "Table 1 .",
+      "parent_section_id": null,
+      "section_type": "table",
+      "classification_score": null
+    },
+    {
+      "section_id": 30,
+      "header": "Table 2 .",
+      "parent_section_id": null,
+      "section_type": "table",
+      "classification_score": null
+    },
+    {
+      "section_id": 31,
+      "header": "Table 3 .",
+      "parent_section_id": null,
+      "section_type": "table",
+      "classification_score": null
+    },
+    {
+      "section_id": 32,
+      "header": "Table 4 .",
+      "parent_section_id": null,
+      "section_type": "table",
+      "classification_score": null
+    },
+    {
+      "section_id": 33,
+      "header": "Table 5 .",
+      "parent_section_id": null,
+      "section_type": "table",
+      "classification_score": null
+    },
+    {
+      "section_id": 34,
+      "header": "Table 6 .",
+      "parent_section_id": null,
+      "section_type": "table",
+      "classification_score": null
+    },
+    {
+      "section_id": 35,
+      "header": "References",
+      "parent_section_id": null,
+      "section_type": "references",
+      "classification_score": null
+    }
+  ],
+  "url": [
+    {
+      "href": "al.Using",
+      "link_text": null,
+      "text_id": 8
+    },
+    {
+      "href": "OSF.IO/A6Y7R",
+      "link_text": null,
+      "text_id": 44
+    },
+    {
+      "href": "https://doi.org/10.17605/OSF.IO/A6Y7R",
+      "link_text": null,
+      "text_id": 66
+    },
+    {
+      "href": "num.trees",
+      "link_text": null,
+      "text_id": 80
+    },
+    {
+      "href": "https://doi.org/10.17605/OSF.IO",
+      "link_text": null,
+      "text_id": 89
+    },
+    {
+      "href": "https://doi.org/10.17605/OSF.IO/A6Y7R",
+      "link_text": null,
+      "text_id": 155
+    },
+    {
+      "href": "cv.glmnet",
+      "link_text": null,
+      "text_id": 167
+    },
+    {
+      "href": "https://doi.org/10.17605",
+      "link_text": null,
+      "text_id": 198
+    },
+    {
+      "href": "OSF.IO/A6Y7R",
+      "link_text": null,
+      "text_id": 198
+    },
+    {
+      "href": "https://osf.io/4v3sg",
+      "link_text": null,
+      "text_id": 207
+    },
+    {
+      "href": "https://osf.io/hwu9x",
+      "link_text": null,
+      "text_id": 234
+    },
+    {
+      "href": "https://doi.org/10.17605/OSF.IO",
+      "link_text": null,
+      "text_id": 293
+    },
+    {
+      "href": "https://osf.io/4v3sg",
+      "link_text": null,
+      "text_id": 294
+    },
+    {
+      "href": "sagepub.com/doi/suppl/10.1177/0956797620959594",
+      "link_text": null,
+      "text_id": 295
+    },
+    {
+      "href": "http://www.psy",
+      "link_text": null,
+      "text_id": 297
+    },
+    {
+      "href": "chologicalscience.org/publications/badges",
+      "link_text": null,
+      "text_id": 297
+    },
+    {
+      "href": "journals.sagepub.com/doi/suppl/10.1177/0956797620959594",
+      "link_text": null,
+      "text_id": 304
+    }
+  ],
+  "bib": [
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "",
+      "authors": "Alpaydin, E",
+      "editors": "",
+      "publisher": "MIT Press",
+      "year": 2020,
+      "volume": "",
+      "issue": "",
+      "container": "",
+      "first_page": null,
+      "last_page": null,
+      "bib_id": 0,
+      "year_suffix": "",
+      "text_id": 318
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "Searching for exotic particles in high-energy physics with deep learning",
+      "authors": "Baldi, P; Sadowski, P; Whiteson, D",
+      "editors": "",
+      "publisher": "",
+      "year": 2014,
+      "volume": "5",
+      "issue": "",
+      "container": "Nature Communications",
+      "first_page": "4308",
+      "last_page": "4316",
+      "bib_id": 1,
+      "year_suffix": "",
+      "text_id": 319
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "DALEX: Explainers for complex predictive models in R",
+      "authors": "Biecek, P",
+      "editors": "",
+      "publisher": "",
+      "year": 2018,
+      "volume": "19",
+      "issue": "",
+      "container": "The Journal of Machine Learning Research",
+      "first_page": "3245",
+      "last_page": "3249",
+      "bib_id": 2,
+      "year_suffix": "",
+      "text_id": 320
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "Using machine learning to advance personality assessment and theory",
+      "authors": "Bleidorn, W; Hopwood, C J",
+      "editors": "",
+      "publisher": "",
+      "year": 2019,
+      "volume": "23",
+      "issue": "",
+      "container": "Personality and Social Psychology Review",
+      "first_page": "190",
+      "last_page": "203",
+      "bib_id": 3,
+      "year_suffix": "",
+      "text_id": 321
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "",
+      "authors": "Boehmke, B; Greenwell, B M",
+      "editors": "",
+      "publisher": "CRC Press",
+      "year": 2019,
+      "volume": "",
+      "issue": "",
+      "container": "",
+      "first_page": null,
+      "last_page": null,
+      "bib_id": 4,
+      "year_suffix": "",
+      "text_id": 322
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "Optimal cross-validation in density estimation with the L 2 -loss",
+      "authors": "Celisse, A",
+      "editors": "",
+      "publisher": "",
+      "year": 2014,
+      "volume": "42",
+      "issue": "",
+      "container": "The Annals of Statistics",
+      "first_page": "1879",
+      "last_page": "1910",
+      "bib_id": 5,
+      "year_suffix": "",
+      "text_id": 323
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "Keras",
+      "authors": "Chollet, F",
+      "editors": "",
+      "publisher": "",
+      "year": 2015,
+      "volume": "",
+      "issue": "",
+      "container": "",
+      "first_page": null,
+      "last_page": null,
+      "bib_id": 6,
+      "year_suffix": "",
+      "text_id": 324
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "Crossnational differences in managers' willingness to justify ethically suspect behaviors: A test of institutional anomie theory",
+      "authors": "Cullen, J B; Parboteeah, K P; Hoegl, M",
+      "editors": "",
+      "publisher": "",
+      "year": 2004,
+      "volume": "47",
+      "issue": "",
+      "container": "Academy of Management Journal",
+      "first_page": "411",
+      "last_page": "421",
+      "bib_id": 7,
+      "year_suffix": "",
+      "text_id": 325
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1038/srep21689",
+      "title": "Multiple imputation for general missing data patterns in the presence of high-dimensional data",
+      "authors": "Deng, Y; Chang, C; Ido, M S; Long, Q",
+      "editors": "",
+      "publisher": "",
+      "year": 2016,
+      "volume": "6",
+      "issue": "",
+      "container": "Scientific Reports",
+      "first_page": "21689",
+      "last_page": null,
+      "bib_id": 8,
+      "year_suffix": "",
+      "text_id": 326
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "Moral disengagement in ethical decision making: A study of antecedents and outcomes",
+      "authors": "Detert, J R; Treviño, L K; Sweitzer, V L",
+      "editors": "",
+      "publisher": "",
+      "year": 2008,
+      "volume": "93",
+      "issue": "",
+      "container": "Journal of Applied Psychology",
+      "first_page": "374",
+      "last_page": "391",
+      "bib_id": 9,
+      "year_suffix": "",
+      "text_id": 327
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "Corruption and political interest: Empirical evidence at the micro level",
+      "authors": "Dong, B; Torgler, B",
+      "editors": "",
+      "publisher": "",
+      "year": 2009,
+      "volume": "21",
+      "issue": "",
+      "container": "Journal of Interdisciplinary Economics",
+      "first_page": "295",
+      "last_page": "325",
+      "bib_id": 10,
+      "year_suffix": "",
+      "text_id": 328
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "The psychology of morality: A review and analysis of empirical studies published from 1940 through 2017",
+      "authors": "Ellemers, N; Van Der Toorn, J; Paunov, Y; Van Leeuwen, T",
+      "editors": "",
+      "publisher": "",
+      "year": 2019,
+      "volume": "23",
+      "issue": "",
+      "container": "Personality and Social Psychology Review",
+      "first_page": "332",
+      "last_page": "336",
+      "bib_id": 11,
+      "year_suffix": "",
+      "text_id": 329
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "The truth about lies: A meta-analysis on dishonest behavior",
+      "authors": "Gerlach, P; Teodorescu, K; Hertwig, R",
+      "editors": "",
+      "publisher": "",
+      "year": 2019,
+      "volume": "145",
+      "issue": "",
+      "container": "Psychological Bulletin",
+      "first_page": "1",
+      "last_page": "44",
+      "bib_id": 12,
+      "year_suffix": "",
+      "text_id": 330
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "Discovering psychological principles by mining naturally occurring data sets",
+      "authors": "Goldstone, R L; Lupyan, G",
+      "editors": "",
+      "publisher": "",
+      "year": 2016,
+      "volume": "8",
+      "issue": "",
+      "container": "Topics in Cognitive Science",
+      "first_page": "548",
+      "last_page": "568",
+      "bib_id": 13,
+      "year_suffix": "",
+      "text_id": 331
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "Memorization without generalization in a multilayered neural network",
+      "authors": "Hansel, D; Mato, G; Meunier, C",
+      "editors": "",
+      "publisher": "",
+      "year": 1992,
+      "volume": "20",
+      "issue": "",
+      "container": "Europhysics Letters)",
+      "first_page": "471",
+      "last_page": "476",
+      "bib_id": 14,
+      "year_suffix": "",
+      "text_id": 332
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "",
+      "authors": "Hastie, T; Tibshirani, R; Friedman, J",
+      "editors": "",
+      "publisher": "Springer Science & Business Media",
+      "year": 2009,
+      "volume": "",
+      "issue": "",
+      "container": "",
+      "first_page": null,
+      "last_page": null,
+      "bib_id": 15,
+      "year_suffix": "",
+      "text_id": 333
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "The weirdest people in the world?",
+      "authors": "Henrich, J; Heine, S J; Norenzayan, A",
+      "editors": "",
+      "publisher": "",
+      "year": 2010,
+      "volume": "33",
+      "issue": "",
+      "container": "Behavioral and Brain Sciences",
+      "first_page": "61",
+      "last_page": "83",
+      "bib_id": 16,
+      "year_suffix": "",
+      "text_id": 334
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "",
+      "authors": "Hinton, G E; Srivastava, N; Krizhevsky, A; Sutskever, I; Salakhutdinov, R R",
+      "editors": "",
+      "publisher": "",
+      "year": 2012,
+      "volume": "",
+      "issue": "",
+      "container": "",
+      "first_page": null,
+      "last_page": null,
+      "bib_id": 17,
+      "year_suffix": "",
+      "text_id": 335
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "",
+      "authors": "Inglehart, R; Haerpfer, C; Moreno, A",
+      "editors": "Welzel, C; Kizilova, K; Diez-Medrano, J; Puranen, . .; , B",
+      "publisher": "",
+      "year": 2014,
+      "volume": "",
+      "issue": "",
+      "container": "",
+      "first_page": null,
+      "last_page": null,
+      "bib_id": 18,
+      "year_suffix": "",
+      "text_id": 336
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1038/s41598-018-35934-y",
+      "title": "ElemNet: Deep learning the chemistry of materials from only elemental composition",
+      "authors": "Jha, D; Ward, L; Paul, A; Liao, W.-K; Choudhary, A; Wolverton, C; Agrawal, A",
+      "editors": "",
+      "publisher": "",
+      "year": 2018,
+      "volume": "8",
+      "issue": "",
+      "container": "Scientific Reports",
+      "first_page": "17593",
+      "last_page": null,
+      "bib_id": 19,
+      "year_suffix": "",
+      "text_id": 337
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "On the computational complexity of combinatorial problems",
+      "authors": "Karp, R M",
+      "editors": "",
+      "publisher": "",
+      "year": 1975,
+      "volume": "5",
+      "issue": "",
+      "container": "Networks",
+      "first_page": "45",
+      "last_page": "68",
+      "bib_id": 20,
+      "year_suffix": "",
+      "text_id": 338
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "Meta-analyzing the differential effects of emotions on disengagement from unethical behavior: An asymmetric self-regulation model",
+      "authors": "Kong, D T; Drew, S",
+      "editors": "Kong, D T; Forsyth, D R",
+      "publisher": "Palgrave Macmillan",
+      "year": 2016,
+      "volume": "",
+      "issue": "",
+      "container": "",
+      "first_page": "23",
+      "last_page": "44",
+      "bib_id": 21,
+      "year_suffix": "",
+      "text_id": 339
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "Distinguishing optimism from pessimism: Relations to fundamental dimensions of mood and personality",
+      "authors": "Marshall, G N; Wortman, C B; Kusulas, J W; Hervig, L K; Vickers, R R; Jr, ",
+      "editors": "",
+      "publisher": "",
+      "year": 1992,
+      "volume": "62",
+      "issue": "",
+      "container": "Journal of Personality and Social Psychology",
+      "first_page": "1067",
+      "last_page": "1074",
+      "bib_id": 22,
+      "year_suffix": "",
+      "text_id": 340
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "Free will beliefs predict attitudes toward unethical behavior and criminal punishment",
+      "authors": "Martin, N D; Rigoni, D; Vohs, K D",
+      "editors": "",
+      "publisher": "",
+      "year": 2017,
+      "volume": "114",
+      "issue": "",
+      "container": "Proceedings of the National Academy of Sciences",
+      "first_page": "7325",
+      "last_page": "7330",
+      "bib_id": 23,
+      "year_suffix": "",
+      "text_id": 341
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "",
+      "authors": "Molnar, C",
+      "editors": "",
+      "publisher": "",
+      "year": 2020,
+      "volume": "",
+      "issue": "",
+      "container": "",
+      "first_page": null,
+      "last_page": null,
+      "bib_id": 24,
+      "year_suffix": "",
+      "text_id": 342
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "The origin and evolution of religious prosociality",
+      "authors": "Norenzayan, A; Shariff, A F",
+      "editors": "",
+      "publisher": "",
+      "year": 2008,
+      "volume": "322",
+      "issue": "",
+      "container": "Science",
+      "first_page": "58",
+      "last_page": "62",
+      "bib_id": 25,
+      "year_suffix": "",
+      "text_id": 343
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "Unprovability comes to machine learning",
+      "authors": "Reyzin, L",
+      "editors": "",
+      "publisher": "",
+      "year": 2019,
+      "volume": "565",
+      "issue": "",
+      "container": "Nature",
+      "first_page": "166",
+      "last_page": "167",
+      "bib_id": 26,
+      "year_suffix": "",
+      "text_id": 344
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "Influence of mood on health-relevant cognitions",
+      "authors": "Salovey, P; Birnbaum, D",
+      "editors": "",
+      "publisher": "",
+      "year": 1989,
+      "volume": "57",
+      "issue": "",
+      "container": "Journal of Personality and Social Psychology",
+      "first_page": "539",
+      "last_page": "551",
+      "bib_id": 27,
+      "year_suffix": "",
+      "text_id": 345
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "Optimism, coping, and health: Assessment and implications of generalized outcome expectancies",
+      "authors": "Scheier, M F; Carver, C S",
+      "editors": "",
+      "publisher": "",
+      "year": 1985,
+      "volume": "4",
+      "issue": "",
+      "container": "Health Psychology",
+      "first_page": "219",
+      "last_page": "247",
+      "bib_id": 28,
+      "year_suffix": "",
+      "text_id": 346
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "Optimism is associated with mood, coping, and immune change in response to stress",
+      "authors": "Segerstrom, S C; Taylor, S E; Kemeny, M E; Fahey, J L",
+      "editors": "",
+      "publisher": "",
+      "year": 1998,
+      "volume": "74",
+      "issue": "",
+      "container": "Journal of Personality and Social Psychology",
+      "first_page": "1646",
+      "last_page": "1655",
+      "bib_id": 29,
+      "year_suffix": "",
+      "text_id": 347
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1007/s10551-019-04142-7",
+      "title": "The Big 5 personality traits and willingness to justify unethical behavior-A crossnational examination",
+      "authors": "Simha, A; Parboteeah, K P",
+      "editors": "",
+      "publisher": "",
+      "year": 2019,
+      "volume": "",
+      "issue": "",
+      "container": "Journal of Business Ethics",
+      "first_page": null,
+      "last_page": null,
+      "bib_id": 30,
+      "year_suffix": "",
+      "text_id": 348
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "Does faith limit immorality? The politics of religion and corruption",
+      "authors": "Sommer, U; Bloom, P B N; Arikan, G",
+      "editors": "",
+      "publisher": "",
+      "year": 2013,
+      "volume": "20",
+      "issue": "",
+      "container": "Democratization",
+      "first_page": "287",
+      "last_page": "309",
+      "bib_id": 31,
+      "year_suffix": "",
+      "text_id": 349
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "MissForest-nonparametric missing value imputation for mixed-type data",
+      "authors": "Stekhoven, D J; Bühlmann, P",
+      "editors": "",
+      "publisher": "",
+      "year": 2012,
+      "volume": "28",
+      "issue": "",
+      "container": "Bioinformatics",
+      "first_page": "112",
+      "last_page": "118",
+      "bib_id": 32,
+      "year_suffix": "",
+      "text_id": 350
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "A deep learning approach to antibiotic discovery",
+      "authors": "Stokes, J M; Yang, K; Swanson, K; Jin, W; Cubillos-Ruiz, A; Donghia, N M; Tran, V M",
+      "editors": "",
+      "publisher": "",
+      "year": 2020,
+      "volume": "180",
+      "issue": "",
+      "container": "Cell",
+      "first_page": "688",
+      "last_page": "702",
+      "bib_id": 33,
+      "year_suffix": "",
+      "text_id": 351
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "",
+      "authors": "Tsang, M; Cheng, D; Liu, Y",
+      "editors": "",
+      "publisher": "",
+      "year": 2018,
+      "volume": "",
+      "issue": "",
+      "container": "",
+      "first_page": null,
+      "last_page": null,
+      "bib_id": 34,
+      "year_suffix": "",
+      "text_id": 352
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "Stretching the moral gray zone: Positive affect, moral disengagement, and dishonesty",
+      "authors": "Vincent, L C; Emich, K J; Goncalo, J A",
+      "editors": "",
+      "publisher": "",
+      "year": 2013,
+      "volume": "24",
+      "issue": "",
+      "container": "Psychological Science",
+      "first_page": "595",
+      "last_page": "599",
+      "bib_id": 35,
+      "year_suffix": "",
+      "text_id": 353
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "Choosing prediction over explanation in psychology: Lessons from machine learning",
+      "authors": "Yarkoni, T; Westfall, J",
+      "editors": "",
+      "publisher": "",
+      "year": 2017,
+      "volume": "12",
+      "issue": "",
+      "container": "Perspectives on Psychological Science",
+      "first_page": "1100",
+      "last_page": "1122",
+      "bib_id": 36,
+      "year_suffix": "",
+      "text_id": 354
+    }
+  ],
+  "xref": [
+    {
+      "xref_id": 0,
+      "xref_type": "bib",
+      "contents": "(Alpaydin, 2020)",
+      "text_id": 22
+    },
+    {
+      "xref_id": 1,
+      "xref_type": "bib",
+      "contents": "Baldi, Sadowski, & Whiteson, 2014)",
+      "text_id": 31
+    },
+    {
+      "xref_id": 2,
+      "xref_type": "bib",
+      "contents": "(Biecek, 2018)",
+      "text_id": 150
+    },
+    {
+      "xref_id": 2,
+      "xref_type": "bib",
+      "contents": "(Biecek, 2018)",
+      "text_id": 153
+    },
+    {
+      "xref_id": 3,
+      "xref_type": "bib",
+      "contents": "(Bleidorn & Hopwood, 2019)",
+      "text_id": 286
+    },
+    {
+      "xref_id": 4,
+      "xref_type": "bib",
+      "contents": "(Boehmke & Greenwell, 2019)",
+      "text_id": 151
+    },
+    {
+      "xref_id": 5,
+      "xref_type": "bib",
+      "contents": "(Celisse, 2014)",
+      "text_id": 105
+    },
+    {
+      "xref_id": 6,
+      "xref_type": "bib",
+      "contents": "(Chollet, 2015)",
+      "text_id": 97
+    },
+    {
+      "xref_id": 7,
+      "xref_type": "bib",
+      "contents": "(Cullen, Parboteeah, & Hoegl, 2004)",
+      "text_id": 14
+    },
+    {
+      "xref_id": 8,
+      "xref_type": "bib",
+      "contents": "(Deng, Chang, Ido, & Long, 2016)",
+      "text_id": 78
+    },
+    {
+      "xref_id": 9,
+      "xref_type": "bib",
+      "contents": "Detert, Treviño, and Sweitzer's (2008)",
+      "text_id": 204
+    },
+    {
+      "xref_id": 10,
+      "xref_type": "bib",
+      "contents": "(Dong & Torgler, 2009)",
+      "text_id": 14
+    },
+    {
+      "xref_id": 11,
+      "xref_type": "bib",
+      "contents": "Ellemers, van der Toorn, Paunov, & van Leeuwen, 2019;",
+      "text_id": 9
+    },
+    {
+      "xref_id": 12,
+      "xref_type": "bib",
+      "contents": "Gerlach, Teodorescu, & Hertwig, 2019)",
+      "text_id": 9
+    },
+    {
+      "xref_id": 13,
+      "xref_type": "bib",
+      "contents": "(Goldstone & Lupyan, 2016)",
+      "text_id": 12
+    },
+    {
+      "xref_id": 14,
+      "xref_type": "bib",
+      "contents": "(Hansel, Mato, & Meunier, 1992)",
+      "text_id": 111
+    },
+    {
+      "xref_id": 15,
+      "xref_type": "bib",
+      "contents": "(Hastie, Tibshirani, & Friedman, 2009)",
+      "text_id": 19
+    },
+    {
+      "xref_id": 15,
+      "xref_type": "bib",
+      "contents": "(Hastie et al., 2009)",
+      "text_id": null
+    },
+    {
+      "xref_id": 16,
+      "xref_type": "bib",
+      "contents": "(Henrich, Heine, & Norenzayan, 2010)",
+      "text_id": 200
+    },
+    {
+      "xref_id": 17,
+      "xref_type": "bib",
+      "contents": "(Hinton, Srivastava, Krizhevsky, Sutskever, & Salakhutdinov, 2012)",
+      "text_id": 112
+    },
+    {
+      "xref_id": 18,
+      "xref_type": "bib",
+      "contents": "Inglehart et al., 2014)",
+      "text_id": 13
+    },
+    {
+      "xref_id": 19,
+      "xref_type": "bib",
+      "contents": "Jha et al., 2018)",
+      "text_id": 31
+    },
+    {
+      "xref_id": 20,
+      "xref_type": "bib",
+      "contents": "(Karp, 1975)",
+      "text_id": 26
+    },
+    {
+      "xref_id": 21,
+      "xref_type": "bib",
+      "contents": "Kong and Drew (2016)",
+      "text_id": 272
+    },
+    {
+      "xref_id": 22,
+      "xref_type": "bib",
+      "contents": "(Marshall, Wortman, Kusulas, Hervig, & Vickers, 1992;",
+      "text_id": 273
+    },
+    {
+      "xref_id": 23,
+      "xref_type": "bib",
+      "contents": "(Martin, Rigoni, & Vohs, 2017)",
+      "text_id": 14
+    },
+    {
+      "xref_id": 23,
+      "xref_type": "bib",
+      "contents": "(Martin et al., 2017)",
+      "text_id": 56
+    },
+    {
+      "xref_id": 24,
+      "xref_type": "bib",
+      "contents": "(Molnar, 2020)",
+      "text_id": 150
+    },
+    {
+      "xref_id": 25,
+      "xref_type": "bib",
+      "contents": "(Norenzayan & Shariff, 2008)",
+      "text_id": 175
+    },
+    {
+      "xref_id": 26,
+      "xref_type": "bib",
+      "contents": "(Reyzin, 2019)",
+      "text_id": 28
+    },
+    {
+      "xref_id": 27,
+      "xref_type": "bib",
+      "contents": "(Salovey & Birnbaum, 1989)",
+      "text_id": 273
+    },
+    {
+      "xref_id": 28,
+      "xref_type": "bib",
+      "contents": "Scheier and Carver's (1985)",
+      "text_id": 203
+    },
+    {
+      "xref_id": 28,
+      "xref_type": "bib",
+      "contents": "Scheier and Carver (1985)",
+      "text_id": 215
+    },
+    {
+      "xref_id": 29,
+      "xref_type": "bib",
+      "contents": "Segerstrom, Taylor, Kemeny, & Fahey, 1998)",
+      "text_id": 273
+    },
+    {
+      "xref_id": 30,
+      "xref_type": "bib",
+      "contents": "(Simha & Parboteeah, 2019)",
+      "text_id": 14
+    },
+    {
+      "xref_id": 31,
+      "xref_type": "bib",
+      "contents": "(Sommer, Bloom, & Arikan, 2013)",
+      "text_id": 14
+    },
+    {
+      "xref_id": 32,
+      "xref_type": "bib",
+      "contents": "(Stekhoven & Bühlmann, 2012)",
+      "text_id": 79
+    },
+    {
+      "xref_id": 33,
+      "xref_type": "bib",
+      "contents": "Stokes et al., 2020)",
+      "text_id": 31
+    },
+    {
+      "xref_id": 34,
+      "xref_type": "bib",
+      "contents": "(Tsang, Cheng, & Liu, 2018)",
+      "text_id": 261
+    },
+    {
+      "xref_id": 35,
+      "xref_type": "bib",
+      "contents": "Vincent, Emich, and Goncalo (2013)",
+      "text_id": 272
+    },
+    {
+      "xref_id": 36,
+      "xref_type": "bib",
+      "contents": "(Yarkoni & Westfall, 2017)",
+      "text_id": 286
+    },
+    {
+      "xref_id": null,
+      "xref_type": "bib",
+      "contents": ": 1981-1984, 1989-1993, 1994-1998, 1999-2004, 2005-2009, and 2010-2014",
+      "text_id": 48
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "1",
+      "text_id": 43
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "S1",
+      "text_id": 174
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "S1",
+      "text_id": null
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "2",
+      "text_id": 98
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "2",
+      "text_id": 118
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "3",
+      "text_id": 104
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "3",
+      "text_id": null
+    },
+    {
+      "xref_id": null,
+      "xref_type": "table",
+      "contents": "1",
+      "text_id": 115
+    },
+    {
+      "xref_id": null,
+      "xref_type": "table",
+      "contents": "2",
+      "text_id": 118
+    },
+    {
+      "xref_id": null,
+      "xref_type": "table",
+      "contents": "3",
+      "text_id": 146
+    },
+    {
+      "xref_id": null,
+      "xref_type": "table",
+      "contents": "4",
+      "text_id": 157
+    },
+    {
+      "xref_id": null,
+      "xref_type": "table",
+      "contents": "5",
+      "text_id": 158
+    },
+    {
+      "xref_id": null,
+      "xref_type": "table",
+      "contents": "6",
+      "text_id": 169
+    }
+  ],
+  "figure": [
+    {
+      "figure_id": 1,
+      "section_id": 26,
+      "image": null,
+      "page_number": null
+    },
+    {
+      "figure_id": 2,
+      "section_id": 27,
+      "image": null,
+      "page_number": null
+    },
+    {
+      "figure_id": 3,
+      "section_id": 28,
+      "image": null,
+      "page_number": null
+    }
+  ],
+  "table": [
+    {
+      "table_id": 1,
+      "section_id": 29,
+      "html": "<table>\n  <row>\n    <cell>Parameter<\/cell>\n    <cell>Value<\/cell>\n  <\/row>\n  <row>\n    <cell>Number of neurons in first layer<\/cell>\n    <cell>100-1,000<\/cell>\n  <\/row>\n  <row>\n    <cell>Number of neurons in second layer<\/cell>\n    <cell>100-1,000<\/cell>\n  <\/row>\n  <row>\n    <cell>Number of neurons in third layer<\/cell>\n    <cell>100-500<\/cell>\n  <\/row>\n  <row>\n    <cell>Number of neurons in fourth layer<\/cell>\n    <cell>10-50<\/cell>\n  <\/row>\n  <row>\n    <cell>Dropped connections in each layer<\/cell>\n    <cell>0.1-0.8<\/cell>\n  <\/row>\n  <row>\n    <cell>Batch size<\/cell>\n    <cell>65, 128, 256, 512<\/cell>\n  <\/row>\n  <row>\n    <cell>Learning rate<\/cell>\n    <cell>[200-1,500] × 10 -6<\/cell>\n  <\/row>\n<\/table>",
+      "contents": null,
+      "page_number": null
+    },
+    {
+      "table_id": 2,
+      "section_id": 30,
+      "html": "<table>\n  <row>\n    <cell>Parameter<\/cell>\n    <cell>Value<\/cell>\n  <\/row>\n  <row>\n    <cell>Neurons in first layer<\/cell>\n    <cell>900<\/cell>\n  <\/row>\n  <row>\n    <cell>Neurons in second layer<\/cell>\n    <cell>479<\/cell>\n  <\/row>\n  <row>\n    <cell>Neurons in third layer<\/cell>\n    <cell>225<\/cell>\n  <\/row>\n  <row>\n    <cell>Neurons in fourth layer<\/cell>\n    <cell>46<\/cell>\n  <\/row>\n  <row>\n    <cell>Dropped-connection rate for first layer<\/cell>\n    <cell>0.2101<\/cell>\n  <\/row>\n  <row>\n    <cell>Dropped-connection rate for second layer<\/cell>\n    <cell>0.1660<\/cell>\n  <\/row>\n  <row>\n    <cell>Dropped-connection rate for third layer<\/cell>\n    <cell>0.6732<\/cell>\n  <\/row>\n  <row>\n    <cell>Dropped-connection rate for fourth layer<\/cell>\n    <cell>0.1455<\/cell>\n  <\/row>\n  <row>\n    <cell>Batch size<\/cell>\n    <cell>64<\/cell>\n  <\/row>\n  <row>\n    <cell>Learning rate<\/cell>\n    <cell>460 × 10 -6<\/cell>\n  <\/row>\n  <row>\n    <cell>Kernel initializer for first three layers<\/cell>\n    <cell>All 1s<\/cell>\n  <\/row>\n  <row>\n    <cell>Kernel initializer for output layer<\/cell>\n    <cell>All 0s<\/cell>\n  <\/row>\n  <row>\n    <cell>Activation function in first three layers<\/cell>\n    <cell>Relu<\/cell>\n  <\/row>\n  <row>\n    <cell>Activation function in output layer<\/cell>\n    <cell>Sigmoid<\/cell>\n  <\/row>\n  <row>\n    <cell>Optimizer<\/cell>\n    <cell>Adam<\/cell>\n  <\/row>\n  <row>\n    <cell>Learning-rate patience<\/cell>\n    <cell>.50<\/cell>\n  <\/row>\n  <row>\n    <cell>Early-stopping patience<\/cell>\n    <cell>20<\/cell>\n  <\/row>\n<\/table>",
+      "contents": null,
+      "page_number": null
+    },
+    {
+      "table_id": 3,
+      "section_id": 31,
+      "html": "<table>\n  <row>\n    <cell/>\n    <cell cols=\"2\">Actual value<\/cell>\n  <\/row>\n  <row>\n    <cell/>\n    <cell>Ethical<\/cell>\n    <cell>Unethical<\/cell>\n  <\/row>\n  <row>\n    <cell>Predicted value<\/cell>\n    <cell>participants<\/cell>\n    <cell>participants<\/cell>\n  <\/row>\n  <row>\n    <cell>Ethical participants<\/cell>\n    <cell>5,848<\/cell>\n    <cell>3,008<\/cell>\n  <\/row>\n  <row>\n    <cell>Unethical participants<\/cell>\n    <cell>5,817<\/cell>\n    <cell>18,901<\/cell>\n  <\/row>\n  <row>\n    <cell cols=\"2\">Note: Accuracy was 73.7% (κ = 38.6%).<\/cell>\n    <cell/>\n  <\/row>\n<\/table>",
+      "contents": null,
+      "page_number": null
+    },
+    {
+      "table_id": 4,
+      "section_id": 32,
+      "html": "<table>\n  <row>\n    <cell/>\n    <cell>WVS<\/cell>\n    <cell/>\n  <\/row>\n  <row>\n    <cell/>\n    <cell>variable<\/cell>\n    <cell>ΔDropout<\/cell>\n  <\/row>\n  <row>\n    <cell>Item<\/cell>\n    <cell>number<\/cell>\n    <cell>loss<\/cell>\n  <\/row>\n  <row>\n    <cell>How important: daily prayer<\/cell>\n    <cell>f194<\/cell>\n    <cell>0.4211<\/cell>\n  <\/row>\n  <row>\n    <cell>Religion is a cause of terrorism<\/cell>\n    <cell>f186<\/cell>\n    <cell>0.4180<\/cell>\n  <\/row>\n  <row>\n    <cell>Confidence: the presidency<\/cell>\n    <cell>e069_39<\/cell>\n    <cell>0.4175<\/cell>\n  <\/row>\n  <row>\n    <cell>Civil marriage is very important because it helps maintain the family<\/cell>\n    <cell>f193<\/cell>\n    <cell>0.4162<\/cell>\n  <\/row>\n  <row>\n    <cell>Aims of respondent: first choice (a stable economy)<\/cell>\n    <cell>e005 (1)<\/cell>\n    <cell>0.4161<\/cell>\n  <\/row>\n  <row>\n    <cell>Aims of respondent: first choice (the fight against crime)<\/cell>\n    <cell>e005 (4)<\/cell>\n    <cell>0.4153<\/cell>\n  <\/row>\n  <row>\n    <cell>Traits in a woman: woman wearing veil<\/cell>\n    <cell>d067<\/cell>\n    <cell>0.4152<\/cell>\n  <\/row>\n  <row>\n    <cell>Humanity has a bright or bleak future (bright future)<\/cell>\n    <cell>b017 (1)<\/cell>\n    <cell>0.4147<\/cell>\n  <\/row>\n  <row>\n    <cell>Meaning of religion: to follow religious norms and ceremonies vs. to do good to other people (both)<\/cell>\n    <cell>f200 (4)<\/cell>\n    <cell>0.4144<\/cell>\n  <\/row>\n  <row>\n    <cell>Aims of respondent: first choice (progress toward a less impersonal and more humane society)<\/cell>\n    <cell>e005 (2)<\/cell>\n    <cell>0.4142<\/cell>\n  <\/row>\n<\/table>",
+      "contents": null,
+      "page_number": null
+    },
+    {
+      "table_id": 5,
+      "section_id": 33,
+      "html": "<table>\n  <row>\n    <cell/>\n    <cell>WVS variable<\/cell>\n    <cell>Point-<\/cell>\n  <\/row>\n  <row>\n    <cell>Item<\/cell>\n    <cell>number<\/cell>\n    <cell>biserial r<\/cell>\n  <\/row>\n  <row>\n    <cell>I see myself as someone who: tends to be lazy<\/cell>\n    <cell>a215<\/cell>\n    <cell>.1661<\/cell>\n  <\/row>\n  <row>\n    <cell>Democracy: criminals are severely punished<\/cell>\n    <cell>e231<\/cell>\n    <cell>.1597<\/cell>\n  <\/row>\n  <row>\n    <cell>Democracy: people choose their leaders in free elections<\/cell>\n    <cell>e226<\/cell>\n    <cell>.1593<\/cell>\n  <\/row>\n  <row>\n    <cell>Democracy: the economy is prospering<\/cell>\n    <cell>e230<\/cell>\n    <cell>.1575<\/cell>\n  <\/row>\n  <row>\n    <cell>Why people work: work most important in my life<\/cell>\n    <cell>c042b5<\/cell>\n    <cell>.1498<\/cell>\n  <\/row>\n  <row>\n    <cell>Millennial development goal: reduce child mortality<\/cell>\n    <cell>e244<\/cell>\n    <cell>.1473<\/cell>\n  <\/row>\n  <row>\n    <cell>Importance of democracy<\/cell>\n    <cell>e235<\/cell>\n    <cell>.1450<\/cell>\n  <\/row>\n  <row>\n    <cell>Democracy: people can change the laws in referendums<\/cell>\n    <cell>e232<\/cell>\n    <cell>.1403<\/cell>\n  <\/row>\n  <row>\n    <cell>Humiliating to receive money without having to work for it<\/cell>\n    <cell>c037<\/cell>\n    <cell>.1382<\/cell>\n  <\/row>\n  <row>\n    <cell>National goals: free speech<\/cell>\n    <cell>e010<\/cell>\n    <cell>.1376<\/cell>\n  <\/row>\n  <row>\n    <cell>Note: WVS = World Values Survey.<\/cell>\n    <cell/>\n    <cell/>\n  <\/row>\n<\/table>",
+      "contents": null,
+      "page_number": null
+    },
+    {
+      "table_id": 6,
+      "section_id": 34,
+      "html": "<table>\n  <row>\n    <cell/>\n    <cell>WVS variable<\/cell>\n    <cell/>\n  <\/row>\n  <row>\n    <cell>Item<\/cell>\n    <cell>number<\/cell>\n    <cell>Coefficient<\/cell>\n  <\/row>\n  <row>\n    <cell>How important: daily prayer<\/cell>\n    <cell>f194<\/cell>\n    <cell>0.5672<\/cell>\n  <\/row>\n  <row>\n    <cell>Civil marriage is very important because it helps maintain the family<\/cell>\n    <cell>f193<\/cell>\n    <cell>0.4803<\/cell>\n  <\/row>\n  <row>\n    <cell>Religions limit democratic processes<\/cell>\n    <cell>f175<\/cell>\n    <cell>0.4524<\/cell>\n  <\/row>\n  <row>\n    <cell>Confidence: the presidency<\/cell>\n    <cell>e069_39<\/cell>\n    <cell>0.4404<\/cell>\n  <\/row>\n  <row>\n    <cell>Who should decide: international peacekeeping (nonprofit/nongovernmental organization)<\/cell>\n    <cell>e135 (5)<\/cell>\n    <cell>0.4264<\/cell>\n  <\/row>\n  <row>\n    <cell>Who should decide: human rights (commercial enterprise)<\/cell>\n    <cell>e139 (6)<\/cell>\n    <cell>0.4211<\/cell>\n  <\/row>\n  <row>\n    <cell>Good human relationships (other answer)<\/cell>\n    <cell>a169 (5)<\/cell>\n    <cell>0.3982<\/cell>\n  <\/row>\n  <row>\n    <cell>Religion is a cause of terrorism<\/cell>\n    <cell>f186<\/cell>\n    <cell>0.3625<\/cell>\n  <\/row>\n  <row>\n    <cell>Importation of goods (other answers)<\/cell>\n    <cell>e062 (3)<\/cell>\n    <cell>0.3148<\/cell>\n  <\/row>\n  <row>\n    <cell>Who should decide: refugees (nonprofit/nongovernmental organization)<\/cell>\n    <cell>e138 (5)<\/cell>\n    <cell>0.2584<\/cell>\n  <\/row>\n<\/table>",
+      "contents": null,
+      "page_number": null
+    }
+  ],
+  "eq": [
+    {
+      "text_id": 56,
+      "grp_id": 1,
+      "lhs": "α",
+      "comp": "=",
+      "rhs": ".79"
+    },
+    {
+      "text_id": 80,
+      "grp_id": 2,
+      "lhs": "num.trees",
+      "comp": "=",
+      "rhs": "100"
+    },
+    {
+      "text_id": 80,
+      "grp_id": 2,
+      "lhs": "maxiter",
+      "comp": "=",
+      "rhs": "15"
+    },
+    {
+      "text_id": 135,
+      "grp_id": 3,
+      "lhs": "M",
+      "comp": "=",
+      "rhs": "41.45"
+    },
+    {
+      "text_id": 135,
+      "grp_id": 3,
+      "lhs": "SD",
+      "comp": "=",
+      "rhs": "12.04"
+    },
+    {
+      "text_id": 139,
+      "grp_id": 4,
+      "lhs": "CI",
+      "comp": "=",
+      "rhs": "[75.88%, 86.90%]"
+    },
+    {
+      "text_id": 141,
+      "grp_id": 5,
+      "lhs": "95% CI",
+      "comp": "=",
+      "rhs": "[73.2%, 74.2%]"
+    },
+    {
+      "text_id": 164,
+      "grp_id": 6,
+      "lhs": "95% CI",
+      "comp": "=",
+      "rhs": "[71.9%, 72.8%]"
+    },
+    {
+      "text_id": 164,
+      "grp_id": 6,
+      "lhs": "95% CI",
+      "comp": "=",
+      "rhs": "[73.2%, 74.2%]"
+    },
+    {
+      "text_id": 168,
+      "grp_id": 7,
+      "lhs": "95% CI",
+      "comp": "=",
+      "rhs": "[71.9%, 72.8%]"
+    },
+    {
+      "text_id": 189,
+      "grp_id": 8,
+      "lhs": "2 (1)",
+      "comp": "=",
+      "rhs": "82.92"
+    },
+    {
+      "text_id": 189,
+      "grp_id": 8,
+      "lhs": "p",
+      "comp": "<",
+      "rhs": ".001"
+    },
+    {
+      "text_id": 190,
+      "grp_id": 9,
+      "lhs": "r",
+      "comp": "=",
+      "rhs": "-.0383"
+    },
+    {
+      "text_id": 209,
+      "grp_id": 10,
+      "lhs": "r",
+      "comp": "=",
+      "rhs": "-.172"
+    },
+    {
+      "text_id": 212,
+      "grp_id": 11,
+      "lhs": "M",
+      "comp": "=",
+      "rhs": "42.18"
+    },
+    {
+      "text_id": 212,
+      "grp_id": 11,
+      "lhs": "SD",
+      "comp": "=",
+      "rhs": "13.61"
+    },
+    {
+      "text_id": 216,
+      "grp_id": 12,
+      "lhs": "α",
+      "comp": "=",
+      "rhs": ".89"
+    },
+    {
+      "text_id": 219,
+      "grp_id": 13,
+      "lhs": "α",
+      "comp": "=",
+      "rhs": ".88"
+    },
+    {
+      "text_id": 225,
+      "grp_id": 14,
+      "lhs": "r(186)",
+      "comp": "=",
+      "rhs": "-.213"
+    },
+    {
+      "text_id": 225,
+      "grp_id": 14,
+      "lhs": "95% CI",
+      "comp": "=",
+      "rhs": "[-.351, -.070]"
+    },
+    {
+      "text_id": 225,
+      "grp_id": 14,
+      "lhs": "p",
+      "comp": "=",
+      "rhs": ".003"
+    },
+    {
+      "text_id": 236,
+      "grp_id": 15,
+      "lhs": "Cohen's d",
+      "comp": "=",
+      "rhs": "0.36"
+    },
+    {
+      "text_id": 240,
+      "grp_id": 16,
+      "lhs": "M",
+      "comp": "=",
+      "rhs": "34.87"
+    },
+    {
+      "text_id": 240,
+      "grp_id": 16,
+      "lhs": "SD",
+      "comp": "=",
+      "rhs": "11.93"
+    },
+    {
+      "text_id": 252,
+      "grp_id": 17,
+      "lhs": "M",
+      "comp": "=",
+      "rhs": "4.88"
+    },
+    {
+      "text_id": 252,
+      "grp_id": 17,
+      "lhs": "95% CI",
+      "comp": "=",
+      "rhs": "[4.65, 5.13]"
+    },
+    {
+      "text_id": 252,
+      "grp_id": 17,
+      "lhs": "SD",
+      "comp": "=",
+      "rhs": "1.35"
+    },
+    {
+      "text_id": 252,
+      "grp_id": 17,
+      "lhs": "M",
+      "comp": "=",
+      "rhs": "3.21"
+    },
+    {
+      "text_id": 252,
+      "grp_id": 17,
+      "lhs": "95% CI",
+      "comp": "=",
+      "rhs": "[2.96, 3.47]"
+    },
+    {
+      "text_id": 252,
+      "grp_id": 17,
+      "lhs": "SD",
+      "comp": "=",
+      "rhs": "1.42"
+    },
+    {
+      "text_id": 252,
+      "grp_id": 17,
+      "lhs": "t(240)",
+      "comp": "=",
+      "rhs": "9.40"
+    },
+    {
+      "text_id": 252,
+      "grp_id": 17,
+      "lhs": "p",
+      "comp": "<",
+      "rhs": ".001"
+    },
+    {
+      "text_id": 252,
+      "grp_id": 17,
+      "lhs": "Cohen's d",
+      "comp": "=",
+      "rhs": "1.21"
+    },
+    {
+      "text_id": 252,
+      "grp_id": 17,
+      "lhs": "95% CI",
+      "comp": "=",
+      "rhs": "[1.04, 1.39]"
+    },
+    {
+      "text_id": 254,
+      "grp_id": 18,
+      "lhs": "α",
+      "comp": "=",
+      "rhs": ".80"
+    },
+    {
+      "text_id": 255,
+      "grp_id": 19,
+      "lhs": "M",
+      "comp": "=",
+      "rhs": "-3.15"
+    },
+    {
+      "text_id": 255,
+      "grp_id": 19,
+      "lhs": "95% CI",
+      "comp": "=",
+      "rhs": "[-3.41, -2.87]"
+    },
+    {
+      "text_id": 255,
+      "grp_id": 19,
+      "lhs": "SD",
+      "comp": "=",
+      "rhs": "1.55"
+    },
+    {
+      "text_id": 255,
+      "grp_id": 19,
+      "lhs": "M",
+      "comp": "=",
+      "rhs": "-2.79"
+    },
+    {
+      "text_id": 255,
+      "grp_id": 19,
+      "lhs": "95% CI",
+      "comp": "=",
+      "rhs": "[-3.07, -2.49]"
+    },
+    {
+      "text_id": 255,
+      "grp_id": 19,
+      "lhs": "SD",
+      "comp": "=",
+      "rhs": "1.72"
+    },
+    {
+      "text_id": 255,
+      "grp_id": 19,
+      "lhs": "t(240)",
+      "comp": "=",
+      "rhs": "1.67"
+    },
+    {
+      "text_id": 255,
+      "grp_id": 19,
+      "lhs": "p",
+      "comp": "=",
+      "rhs": ".048"
+    },
+    {
+      "text_id": 255,
+      "grp_id": 19,
+      "lhs": "Cohen's d",
+      "comp": "=",
+      "rhs": "0.215"
+    },
+    {
+      "text_id": 255,
+      "grp_id": 19,
+      "lhs": "90% CI",
+      "comp": "=",
+      "rhs": "[0.002, 0.427]"
+    }
+  ]
+}

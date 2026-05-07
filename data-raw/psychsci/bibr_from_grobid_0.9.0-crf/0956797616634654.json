@@ -1,0 +1,4857 @@
+{
+  "paper_id": "0956797616634654",
+  "info": [
+    {
+      "title": "Models of Affective Decision Making: How Do Feelings Predict Choice?",
+      "keywords": ["decision making", "feelings", "subjective well-being", "value", "utility", "prospect theory"],
+      "doi": "10.1177/0956797616634654",
+      "file_hash": "c48215f0ef5fcb2b",
+      "input_format": "TEI XML",
+      "file_name": "data-raw/psychsci/grobid_0.9.0-crf/0956797616634654.xml",
+      "bibr_version": "10.0",
+      "paper_type": "unknown",
+      "paper_type_confidence": 0,
+      "oecd_l1": null,
+      "oecd_l2": null,
+      "oecd_confidence": null
+    }
+  ],
+  "author": [
+    {
+      "author_id": 1,
+      "given": "Caroline",
+      "family": "Charpentier",
+      "affiliation": "Institute of Cognitive Neuroscience University College London",
+      "email": "caroline.charpentier.11@ucl.ac.uk",
+      "corresponding": false,
+      "orcid": "",
+      "role": []
+    },
+    {
+      "author_id": 2,
+      "given": "Tali",
+      "family": "Sharot",
+      "affiliation": "Department of Experimental Psychology Affective Brain Lab University College London",
+      "email": "t.sharot@ucl.ac.uk",
+      "corresponding": false,
+      "orcid": "",
+      "role": []
+    },
+    {
+      "author_id": 3,
+      "given": "Jan-Emmanuel",
+      "family": "De Neve",
+      "affiliation": "Saïd Business School University of Oxford",
+      "email": "",
+      "corresponding": false,
+      "orcid": "",
+      "role": []
+    },
+    {
+      "author_id": 4,
+      "given": "Xinyi",
+      "family": "Li",
+      "affiliation": "Department of Experimental Psychology Affective Brain Lab University College London",
+      "email": "",
+      "corresponding": false,
+      "orcid": "",
+      "role": []
+    },
+    {
+      "author_id": 5,
+      "given": "Jonathan",
+      "family": "Roiser",
+      "affiliation": "Institute of Cognitive Neuroscience University College London",
+      "email": "",
+      "corresponding": false,
+      "orcid": "",
+      "role": []
+    }
+  ],
+  "text": [
+    {
+      "text_id": 1,
+      "paragraph_id": 1,
+      "section_id": 0,
+      "text": "Intuitively, how you feel about potential outcomes will determine your decisions.",
+      "page_number": null
+    },
+    {
+      "text_id": 2,
+      "paragraph_id": 1,
+      "section_id": 0,
+      "text": "Indeed, an implicit assumption in one of the most influential theories in psychology, prospect theory, is that feelings govern choice.",
+      "page_number": null
+    },
+    {
+      "text_id": 3,
+      "paragraph_id": 1,
+      "section_id": 0,
+      "text": "Surprisingly, however, very little is known about the rules by which feelings are transformed into decisions.",
+      "page_number": null
+    },
+    {
+      "text_id": 4,
+      "paragraph_id": 1,
+      "section_id": 0,
+      "text": "Here, we specified a computational model that used feelings to predict choices.",
+      "page_number": null
+    },
+    {
+      "text_id": 5,
+      "paragraph_id": 1,
+      "section_id": 0,
+      "text": "We found that this model predicted choice better than existing value-based models, showing a unique contribution of feelings to decisions, over and above value.",
+      "page_number": null
+    },
+    {
+      "text_id": 6,
+      "paragraph_id": 1,
+      "section_id": 0,
+      "text": "Similar to the value function in prospect theory, our feeling function showed diminished sensitivity to outcomes as value increased.",
+      "page_number": null
+    },
+    {
+      "text_id": 7,
+      "paragraph_id": 1,
+      "section_id": 0,
+      "text": "However, loss aversion in choice was explained by an asymmetry in how feelings about losses and gains were weighted when making a decision, not by an asymmetry in the feelings themselves.",
+      "page_number": null
+    },
+    {
+      "text_id": 8,
+      "paragraph_id": 1,
+      "section_id": 0,
+      "text": "The results provide new insights into how feelings are utilized to reach a decision.",
+      "page_number": null
+    },
+    {
+      "text_id": 9,
+      "paragraph_id": 3,
+      "section_id": 1,
+      "text": "How would you feel if you won an award for outstanding professional achievement?",
+      "page_number": null
+    },
+    {
+      "text_id": 10,
+      "paragraph_id": 3,
+      "section_id": 1,
+      "text": "How would you feel if your marriage broke apart?",
+      "page_number": null
+    },
+    {
+      "text_id": 11,
+      "paragraph_id": 3,
+      "section_id": 1,
+      "text": "Intuitively, answers to these questions are important, as they should predict your actions.",
+      "page_number": null
+    },
+    {
+      "text_id": 12,
+      "paragraph_id": 3,
+      "section_id": 1,
+      "text": "If the prospect of losing your spouse does not fill you with negative feelings, you may not attempt to keep your marriage intact.",
+      "page_number": null
+    },
+    {
+      "text_id": 13,
+      "paragraph_id": 3,
+      "section_id": 1,
+      "text": "But how exactly do feelings associated with possible outcomes relate to actual choices?",
+      "page_number": null
+    },
+    {
+      "text_id": 14,
+      "paragraph_id": 3,
+      "section_id": 1,
+      "text": "What are the computational rules by which feelings are transformed into decisions?",
+      "page_number": null
+    },
+    {
+      "text_id": 15,
+      "paragraph_id": 3,
+      "section_id": 1,
+      "text": "While an expanding body of literature has been dedicated to answering the reverse question, namely how decision outcomes affect feelings (Carter & McBride, 2013;Kassam, Morewedge, Gilbert, & Wilson, 2011;Kermer, Driver-Linn, Wilson, & Gilbert, 2006;McGraw, Larsen, Kahneman, & Schkade, 2010;Mellers, Schwartz, Ho, & Ritov, 1997;Rutledge, Skandali, Dayan, & Dolan, 2014;Yechiam, Telpaz, & Hochman, 2014), little is known about how feelings drive decisions about potential outcomes.",
+      "page_number": null
+    },
+    {
+      "text_id": 16,
+      "paragraph_id": 4,
+      "section_id": 1,
+      "text": "In the present study, we examined whether feelings predict choice and built a computational model that specified this relationship.",
+      "page_number": null
+    },
+    {
+      "text_id": 17,
+      "paragraph_id": 4,
+      "section_id": 1,
+      "text": "We turned to prospect theory (Kahneman & Tversky, 1979;Tversky & Kahneman, 1986, 1992) as a starting point in this research.",
+      "page_number": null
+    },
+    {
+      "text_id": 18,
+      "paragraph_id": 4,
+      "section_id": 1,
+      "text": "Prospect theory was not derived by eliciting people's feelings to predict choice, but rather by observing people's choices in order to estimate the subjective value associated with possible outcomes.",
+      "page_number": null
+    },
+    {
+      "text_id": 19,
+      "paragraph_id": 4,
+      "section_id": 1,
+      "text": "An implicit assumption of the theory, however, is that subjective value (utility) is a proxy for feelings, which in turn govern choice; \"humans described by Prospect Theory are guided by the immediate emotional impact of gains and losses\" (Kahneman, 2011, p.",
+      "page_number": null
+    },
+    {
+      "text_id": 20,
+      "paragraph_id": 4,
+      "section_id": 1,
+      "text": "287).",
+      "page_number": null
+    },
+    {
+      "text_id": 21,
+      "paragraph_id": 4,
+      "section_id": 1,
+      "text": "This suggests that if one measures a person's feelings associated with different outcomes, one should be able to generate that person's utility function and use it to predict his or her choices.",
+      "page_number": null
+    },
+    {
+      "text_id": 22,
+      "paragraph_id": 4,
+      "section_id": 1,
+      "text": "While prospect theory is one of the most influential theories in economics and psychology, this implicit assumption has never been empirically tested.",
+      "page_number": null
+    },
+    {
+      "text_id": 23,
+      "paragraph_id": 4,
+      "section_id": 1,
+      "text": "Thus, it is not known if and how feelings guide choice.",
+      "page_number": null
+    },
+    {
+      "text_id": 24,
+      "paragraph_id": 5,
+      "section_id": 1,
+      "text": "To address this question, we conducted three studies, in which we asked participants to report how they felt or expected to feel after winning or losing different amounts of money (the main study is presented here and the two extension and replication studies are presented in the Supplemental Material available online).",
+      "page_number": null
+    },
+    {
+      "text_id": 25,
+      "paragraph_id": 5,
+      "section_id": 1,
+      "text": "We used those self-reported feelings to create a feeling function, a function that best relates feelings (expected or experienced) to objective value.",
+      "page_number": null
+    },
+    {
+      "text_id": 26,
+      "paragraph_id": 5,
+      "section_id": 1,
+      "text": "Next, we used this function to predict participants' choices in a different decision-making task.",
+      "page_number": null
+    },
+    {
+      "text_id": 27,
+      "paragraph_id": 5,
+      "section_id": 1,
+      "text": "Our findings were replicated in all three studies.",
+      "page_number": null
+    },
+    {
+      "text_id": 28,
+      "paragraph_id": 6,
+      "section_id": 1,
+      "text": "An intriguing question was what such a feeling function would look like.",
+      "page_number": null
+    },
+    {
+      "text_id": 29,
+      "paragraph_id": 6,
+      "section_id": 1,
+      "text": "One possibility is that it would resemble the value function in prospect theory, which relates the subjective value estimated from choice data to objective value.",
+      "page_number": null
+    },
+    {
+      "text_id": 30,
+      "paragraph_id": 6,
+      "section_id": 1,
+      "text": "First, for most people, the value function is steeper for losses than for gains.",
+      "page_number": null
+    },
+    {
+      "text_id": 31,
+      "paragraph_id": 6,
+      "section_id": 1,
+      "text": "This results in loss aversion, such that the absolute subjective value of losing a dollar is greater than that of winning a dollar.",
+      "page_number": null
+    },
+    {
+      "text_id": 32,
+      "paragraph_id": 6,
+      "section_id": 1,
+      "text": "Yet while it appears that \"losses loom larger than gains\" (Kahneman & Tversky, 1979, p. 279), it is not known whether the impact of a loss on one's feelings is greater than the impact of an equivalent gain.",
+      "page_number": null
+    },
+    {
+      "text_id": 33,
+      "paragraph_id": 6,
+      "section_id": 1,
+      "text": "Alternatively, it is possible that the impact of gains and losses on feelings is similar but that the weight given to those feelings differs when one makes a choice.",
+      "page_number": null
+    },
+    {
+      "text_id": 34,
+      "paragraph_id": 7,
+      "section_id": 1,
+      "text": "Second, prospect theory's value function is convex in the loss domain while concave in the gain domain (such that it resembles an S).",
+      "page_number": null
+    },
+    {
+      "text_id": 35,
+      "paragraph_id": 7,
+      "section_id": 1,
+      "text": "The curvature of the function in both domains represents the notion of diminishing sensitivity to changes in value as gains and losses increase.",
+      "page_number": null
+    },
+    {
+      "text_id": 36,
+      "paragraph_id": 7,
+      "section_id": 1,
+      "text": "In other words, the subjective value of gaining (or losing) $10 is smaller than twice that of gaining (or losing) $5.",
+      "page_number": null
+    },
+    {
+      "text_id": 37,
+      "paragraph_id": 7,
+      "section_id": 1,
+      "text": "This diminishing sensitivity results in risk aversion in the gain domain and risk seeking in the loss domain, with individuals tending to choose a small sure gain over a high but risky gain, but a high risky loss over a small sure loss.",
+      "page_number": null
+    },
+    {
+      "text_id": 38,
+      "paragraph_id": 7,
+      "section_id": 1,
+      "text": "We examined whether our feeling function was also concave for gains and convex for losses, which would imply that similar to subjective value, feelings associated with gains and losses are less sensitive to outcome value as gains and losses increase.",
+      "page_number": null
+    },
+    {
+      "text_id": 39,
+      "paragraph_id": 7,
+      "section_id": 1,
+      "text": "That is, the impact of winning (or losing) $10 on feelings is less than twice the impact of winning (or losing) $5.",
+      "page_number": null
+    },
+    {
+      "text_id": 40,
+      "paragraph_id": 8,
+      "section_id": 1,
+      "text": "Once feelings were modeled using this feeling function, we asked whether they could predict choice.",
+      "page_number": null
+    },
+    {
+      "text_id": 41,
+      "paragraph_id": 8,
+      "section_id": 1,
+      "text": "Understanding how explicit feelings relate to behavior has important real-world implications for domains ranging from policy to industry.",
+      "page_number": null
+    },
+    {
+      "text_id": 42,
+      "paragraph_id": 12,
+      "section_id": 3,
+      "text": "Fifty-nine healthy volunteers (24 males, 35 females; mean age = 23.94 years, age range 19-35) from the University College London Subject Pool were recruited to take part in the experiment.",
+      "page_number": null
+    },
+    {
+      "text_id": 43,
+      "paragraph_id": 12,
+      "section_id": 3,
+      "text": "Sample size was determined using a power analysis (G*Power Version 3.1.9.2; Faul, Erdfelder, Lang, & Buchner, 2007) based on previous studies that have investigated the link between decision outcomes and self-reported feelings using within-subjects designs.",
+      "page_number": null
+    },
+    {
+      "text_id": 44,
+      "paragraph_id": 12,
+      "section_id": 3,
+      "text": "Effect sizes (Cohen's d) in those studies ranged from 0.245 to 0.798, with a mean of 0.401 (Harinck, Van Dijk, Van Beest, & Mersmann, 2007;Kermer et al., 2006;Yechiam et al., 2014).",
+      "page_number": null
+    },
+    {
+      "text_id": 45,
+      "paragraph_id": 12,
+      "section_id": 3,
+      "text": "We determined that a sample size of 59 participants would achieve 85% power to detect an effect size of 0.401 with an alpha of .05.",
+      "page_number": null
+    },
+    {
+      "text_id": 46,
+      "paragraph_id": 13,
+      "section_id": 3,
+      "text": "Three participants were excluded: 1 whose feeling ratings showed no variation at all, 1 whose data from the gambling task were lost, and 1 who failed to complete more than 50% of the trials in the gambling task.",
+      "page_number": null
+    },
+    {
+      "text_id": 47,
+      "paragraph_id": 13,
+      "section_id": 3,
+      "text": "Final analyses were therefore run on 56 participants (22 males, 34 females; mean age = 23.91 years, age range 19-35).",
+      "page_number": null
+    },
+    {
+      "text_id": 48,
+      "paragraph_id": 13,
+      "section_id": 3,
+      "text": "All participants gave written informed consent and were paid for their participation.",
+      "page_number": null
+    },
+    {
+      "text_id": 49,
+      "paragraph_id": 13,
+      "section_id": 3,
+      "text": "All started the experiment with an initial endowment of £12 and were paid according to their choices on two randomly chosen trials (across the two tasks) at the end of the experiment.",
+      "page_number": null
+    },
+    {
+      "text_id": 50,
+      "paragraph_id": 13,
+      "section_id": 3,
+      "text": "The experiment was approved by the departmental ethics committee at University College London.",
+      "page_number": null
+    },
+    {
+      "text_id": 51,
+      "paragraph_id": 15,
+      "section_id": 4,
+      "text": "Participants completed two tasks, the feelings task and the gambling task, the order of which was counterbalanced.",
+      "page_number": null
+    },
+    {
+      "text_id": 52,
+      "paragraph_id": 17,
+      "section_id": 5,
+      "text": "In the feelings task, participants completed four blocks of 40 to 48 trials each, in which they reported either expected (Fig. 1a) or experienced (Fig. 1b) feelings associated with a range of wins and losses (between £0.2 and £12) or with no change in monetary amount (£0).",
+      "page_number": null
+    },
+    {
+      "text_id": 53,
+      "paragraph_id": 17,
+      "section_id": 5,
+      "text": "At the beginning of each trial, participants were told how much was at stake and whether it was a win trial (e.g., \"If you choose the GOOD picture, you will: WIN £10\") or a loss trial (e.g., \"If you choose the BAD picture, you will: LOSE £10\").",
+      "page_number": null
+    },
+    {
+      "text_id": 54,
+      "paragraph_id": 17,
+      "section_id": 5,
+      "text": "On each trial, their task was to make a simple arbitrary choice between two different geometrical shapes.",
+      "page_number": null
+    },
+    {
+      "text_id": 55,
+      "paragraph_id": 17,
+      "section_id": 5,
+      "text": "Participants were told that one stimulus was randomly associated with a gain or loss (between £0.2 and £12) and the other stimulus with no gain and no loss (£0).",
+      "page_number": null
+    },
+    {
+      "text_id": 56,
+      "paragraph_id": 17,
+      "section_id": 5,
+      "text": "Each stimulus was presented only once across the entire task so there was no way for participants to learn which stimulus was associated with a better outcome.",
+      "page_number": null
+    },
+    {
+      "text_id": 57,
+      "paragraph_id": 18,
+      "section_id": 5,
+      "text": "The probability of sampling each amount was controlled to ensure that each gain and each loss c * If you choose the GOOD picture, you will: WIN £4 If you choose the GOOD picture, you will: WIN £1 How will you feel if you WIN?",
+      "page_number": null
+    },
+    {
+      "text_id": 58,
+      "paragraph_id": 18,
+      "section_id": 5,
+      "text": "| | - ------------------------------------------| a b + £1 + £1",
+      "page_number": null
+    },
+    {
+      "text_id": 59,
+      "paragraph_id": 19,
+      "section_id": 5,
+      "text": "How do you feel NOW?",
+      "page_number": null
+    },
+    {
+      "text_id": 60,
+      "paragraph_id": 21,
+      "section_id": 6,
+      "text": "Counterbalanced Across Trials",
+      "page_number": null
+    },
+    {
+      "text_id": 61,
+      "paragraph_id": 22,
+      "section_id": 6,
+      "text": "LOSE £2 WIN £4 £0 WIN £1 WIN £0.4 £0 LOSE £1 WIN £10 £0 £0 LOSE £6 LOSE £4 £0 LOSE £1 LOSE £0.2 WIN £8 WIN £2 £0 Feelings Task-Expected Feelings Block Feelings Task-Experienced Feelings Block Gambling Task Extremely unhappy Extremely happy How will you feel if you DON'T WIN?",
+      "page_number": null
+    },
+    {
+      "text_id": 62,
+      "paragraph_id": 22,
+      "section_id": 6,
+      "text": "feelings and (b) experienced-feelings blocks (one trial of each is shown here), participants won or lost money if they correctly chose between one of two shapes.",
+      "page_number": null
+    },
+    {
+      "text_id": 63,
+      "paragraph_id": 22,
+      "section_id": 6,
+      "text": "The amount was specified at the start of the trial, along with whether the trial involved winning money (as shown here) or losing money.",
+      "page_number": null
+    },
+    {
+      "text_id": 64,
+      "paragraph_id": 22,
+      "section_id": 6,
+      "text": "In all feelings trials, they rated how happy they would be if they won or lost, with the sole difference being that they rated their feelings before choosing between the stimuli on expected-feelings trials but after choosing between the stimuli on experienced-feelings trials.",
+      "page_number": null
+    },
+    {
+      "text_id": 65,
+      "paragraph_id": 22,
+      "section_id": 6,
+      "text": "On each trial of (c) the gambling task (six trials of which are shown here), participants chose between a sure option (e.g., getting £0) and a risky option (e.g., winning £2 or losing £4).",
+      "page_number": null
+    },
+    {
+      "text_id": 66,
+      "paragraph_id": 22,
+      "section_id": 6,
+      "text": "The same amounts were used in the gambling and feelings tasks.",
+      "page_number": null
+    },
+    {
+      "text_id": 67,
+      "paragraph_id": 24,
+      "section_id": 7,
+      "text": "from the range was sampled twice in each block: In one instance, the outcome was the amount at stake (win/loss), and in the other, the outcome was £0 (no win/no loss).",
+      "page_number": null
+    },
+    {
+      "text_id": 68,
+      "paragraph_id": 25,
+      "section_id": 7,
+      "text": "In two of the four blocks (counterbalanced order), participants reported their expected feelings prior to choosing between the two stimuli (Fig. 1a), and in the other two blocks, they reported their experienced feelings after choosing between the two stimuli (Fig. 1b).",
+      "page_number": null
+    },
+    {
+      "text_id": 69,
+      "paragraph_id": 25,
+      "section_id": 7,
+      "text": "Participants reported their expected feelings by answering one of four questions asking how they would feel if they \"win,\" \"lose,\" \"don't win,\" or \"don't lose\" (the order of win/lose and don't-win/don't-lose questions was counterbalanced across trials).",
+      "page_number": null
+    },
+    {
+      "text_id": 70,
+      "paragraph_id": 25,
+      "section_id": 7,
+      "text": "In experienced-feelings blocks, participants answered the question \"How do you feel now?\"",
+      "page_number": null
+    },
+    {
+      "text_id": 71,
+      "paragraph_id": 25,
+      "section_id": 7,
+      "text": "All feelings were rated using a subjective rating scale ranging from extremely unhappy to extremely happy.",
+      "page_number": null
+    },
+    {
+      "text_id": 72,
+      "paragraph_id": 25,
+      "section_id": 7,
+      "text": "Expected and experienced feelings were collected in different blocks to ensure participants did not simply remember and repeat the same rating.",
+      "page_number": null
+    },
+    {
+      "text_id": 73,
+      "paragraph_id": 25,
+      "section_id": 7,
+      "text": "The choice between the two geometrical shapes was arbitrary and implemented simply in order to have participants actively involved with the outcomes.",
+      "page_number": null
+    },
+    {
+      "text_id": 74,
+      "paragraph_id": 27,
+      "section_id": 8,
+      "text": "Participants also completed a probabilistic-choice task (Fig. 1c) in which they made 288 to 322 choices between a risky 50-50 gamble and a sure option.",
+      "page_number": null
+    },
+    {
+      "text_id": 75,
+      "paragraph_id": 27,
+      "section_id": 8,
+      "text": "Importantly, all the amounts used in the gambling task were the same as those used in the feelings task (between £0.2 and £12), so feelings associated with these outcomes could be combined to predict gambling choice.",
+      "page_number": null
+    },
+    {
+      "text_id": 76,
+      "paragraph_id": 27,
+      "section_id": 8,
+      "text": "There were three gamble types: mixed (participants had to choose between a gamble with a 50% chance of a gain and 50% chance of a loss, or a sure option of £0), gain only (participants had to choose between a gamble with a 50% chance of a high gain and a 50% chance of £0, or a sure, smaller gain), and loss only (participants had to choose between a gamble with 50% chance of a high loss and 50% chance of £0, or a sure, smaller loss).",
+      "page_number": null
+    },
+    {
+      "text_id": 77,
+      "paragraph_id": 27,
+      "section_id": 8,
+      "text": "According to prospect theory, these three types of choices are essential to estimate loss aversion, risk preference for gains, and risk preference for losses, respectively.",
+      "page_number": null
+    },
+    {
+      "text_id": 78,
+      "paragraph_id": 29,
+      "section_id": 9,
+      "text": "The impact of outcome on feelings was calculated relative to three different baselines: difference from the midpoint of the rating scale, difference from the rating reported on the previous trial (for experienced feelings only), and difference from the corresponding zero outcome.",
+      "page_number": null
+    },
+    {
+      "text_id": 79,
+      "paragraph_id": 29,
+      "section_id": 9,
+      "text": "These were calculated for each win and loss amount, for expected and experienced feelings separately.",
+      "page_number": null
+    },
+    {
+      "text_id": 80,
+      "paragraph_id": 29,
+      "section_id": 9,
+      "text": "Using each of the three methods, we fit 20 feelingfunction models (10 for expected feelings and 10 for experienced feelings) for each participant to explain how feelings best related to value outcomes:",
+      "page_number": null
+    },
+    {
+      "text_id": 81,
+      "paragraph_id": 30,
+      "section_id": 9,
+      "text": "Feeling Model 2: gain loss",
+      "page_number": null
+    },
+    {
+      "text_id": 82,
+      "paragraph_id": 31,
+      "section_id": 9,
+      "text": "In all these models, x represents the value (from -12 to -0.2 for losses and from 0.2 to 12 for gains) and F the associated feeling.",
+      "page_number": null
+    },
+    {
+      "text_id": 83,
+      "paragraph_id": 31,
+      "section_id": 9,
+      "text": "The slope between feelings and values is represented by the parameter β estimated as a single parameter in all odd-numbered models, or separately for losses and gains in all even-numbered models.",
+      "page_number": null
+    },
+    {
+      "text_id": 84,
+      "paragraph_id": 31,
+      "section_id": 9,
+      "text": "If loss aversion is reflected in feelings, β loss should be significantly greater than β gain , and even-numbered models should perform better overall.",
+      "page_number": null
+    },
+    {
+      "text_id": 85,
+      "paragraph_id": 31,
+      "section_id": 9,
+      "text": "Similar to the curvature parameter of the value function in prospect theory, ρ reflects the curvature of the feeling function, that is, the fact that feelings become more or less sensitive to changes in value as absolute value increases (Feeling Models 3 to 6).",
+      "page_number": null
+    },
+    {
+      "text_id": 86,
+      "paragraph_id": 31,
+      "section_id": 9,
+      "text": "In Feeling Models 5 and 6, the curvature is estimated separately in the gain and loss domains.",
+      "page_number": null
+    },
+    {
+      "text_id": 87,
+      "paragraph_id": 31,
+      "section_id": 9,
+      "text": "If the feeling function is S-shaped (concave function for gains and convex function for losses), ρ values should be significantly smaller than 1.",
+      "page_number": null
+    },
+    {
+      "text_id": 88,
+      "paragraph_id": 31,
+      "section_id": 9,
+      "text": "To ensure that a function with curvature fit the feelings data better than a simple linear function with an intercept, we defined Feeling Models 7 to 10 (as respective comparisons for Feeling Models 3-6); in these models, ε represents the intercept, or the offset (positive for gains, negative for losses) where feelings start for values close to £0.",
+      "page_number": null
+    },
+    {
+      "text_id": 89,
+      "paragraph_id": 31,
+      "section_id": 9,
+      "text": "All these models were estimated in MATLAB (The MathWorks, Natick, MA) using a maximum-likelihood estimation procedure (Myung, 2003).",
+      "page_number": null
+    },
+    {
+      "text_id": 90,
+      "paragraph_id": 31,
+      "section_id": 9,
+      "text": "Bayesian information criterions (BICs) were calculated for each participant and model, and then summed across participants (see the Supplemental Material for details).",
+      "page_number": null
+    },
+    {
+      "text_id": 91,
+      "paragraph_id": 32,
+      "section_id": 9,
+      "text": "Lower BICs indicate better model fit.",
+      "page_number": null
+    },
+    {
+      "text_id": 92,
+      "paragraph_id": 34,
+      "section_id": 10,
+      "text": "Feeling values from Feeling Model 3 (found to be the most parsimonious model overall) were then used to predict choices in the gambling task.",
+      "page_number": null
+    },
+    {
+      "text_id": 93,
+      "paragraph_id": 34,
+      "section_id": 10,
+      "text": "Specifically, the feeling associated with each amount was calculated from Feeling Model 3 using each participant's estimated parameters (β and ρ).",
+      "page_number": null
+    },
+    {
+      "text_id": 94,
+      "paragraph_id": 34,
+      "section_id": 10,
+      "text": "Thus, for each trial of the gambling task, a feelings value was obtained for the sure option, the gain, and the loss presented on that trial.",
+      "page_number": null
+    },
+    {
+      "text_id": 95,
+      "paragraph_id": 34,
+      "section_id": 10,
+      "text": "A feelings value of 0 was used when the amount in the gambling trial was £0.",
+      "page_number": null
+    },
+    {
+      "text_id": 96,
+      "paragraph_id": 34,
+      "section_id": 10,
+      "text": "The probability of choosing the gamble on each trial, coded as 1 if the gamble was chosen and 0 if the sure option was chosen, was then entered as the dependent variable of a logistic regression (choice model), with feelings associated with the sure option (S, coded negatively in order to obtain a positive weight), the gain (G, multiplied by its probability .5), and the loss (L, multiplied by its probability .5) entered as the three predictor variables:",
+      "page_number": null
+    },
+    {
+      "text_id": 97,
+      "paragraph_id": 35,
+      "section_id": 10,
+      "text": "where ω is a weight value.",
+      "page_number": null
+    },
+    {
+      "text_id": 98,
+      "paragraph_id": 35,
+      "section_id": 10,
+      "text": "For example, if a participant were offered a mixed-gamble trial in which he or she could choose either a gamble that offered a 50% chance of winning £10 and a 50% chance of losing £6 or a sure option of £0, we estimated the feelings associated with these three elements multiplied by their probability: the feeling associated with gaining £10, F(₤10) = β × 10 ρ × .5; the feeling associated with losing £6, F(-₤6) = β × (-6) ρ × .5, and the feeling associated with getting £0: F(₤0) = 0 × 1 = 0.",
+      "page_number": null
+    },
+    {
+      "text_id": 99,
+      "paragraph_id": 35,
+      "section_id": 10,
+      "text": "Logistic regressions were run in MATLAB using the glmfit function, using either expected feelings (Choice Model 1) or experienced feelings (Choice Model 2).",
+      "page_number": null
+    },
+    {
+      "text_id": 100,
+      "paragraph_id": 35,
+      "section_id": 10,
+      "text": "Each logistic regression resulted in three weight parameters ω, which reflected the weight assigned to feelings when making a choice: one for gains (ω G ), one for losses (ω L ), and one for sure options (ω S ).",
+      "page_number": null
+    },
+    {
+      "text_id": 101,
+      "paragraph_id": 35,
+      "section_id": 10,
+      "text": "To determine whether those modeled feelings predicted choice better than value-based models, we defined five other comparison models.",
+      "page_number": null
+    },
+    {
+      "text_id": 102,
+      "paragraph_id": 35,
+      "section_id": 10,
+      "text": "One predicted choice from objective values (Choice Model 3), and another predicted choice from the log of objective values (consistent with standard economics models to account for the curvature of utility-Choice Model 4).",
+      "page_number": null
+    },
+    {
+      "text_id": 103,
+      "paragraph_id": 35,
+      "section_id": 10,
+      "text": "The final three models were derived from prospect theory; in these models, value was weighted for each participant with his or her loss-aversion parameter (Choice Model 5), risk-aversion parameter (Choice Model 6), or both (Choice Model 7; see the Supplemental Material for more details).",
+      "page_number": null
+    },
+    {
+      "text_id": 104,
+      "paragraph_id": 35,
+      "section_id": 10,
+      "text": "To avoid circularity and ensure all choice models were run on the same set of choice data, we estimated loss-and risk-aversion parameters using half the choice data; then, all seven choice models, including those in which we used extracted feelings rather than values, were run on the other half of the choice data.",
+      "page_number": null
+    },
+    {
+      "text_id": 105,
+      "paragraph_id": 36,
+      "section_id": 10,
+      "text": "To compare across conditions and participants, we standardized weight values ω using the following equation (Menard, 2004;Schielzeth, 2010):",
+      "page_number": null
+    },
+    {
+      "text_id": 106,
+      "paragraph_id": 37,
+      "section_id": 10,
+      "text": "where ′ ω x is the standardized weight value, ω x the original weight for predictor variable x obtained from the regression, s x the standard deviation of variable x, and s y the standard deviation of the dependent variable y, here the binary choice values.",
+      "page_number": null
+    },
+    {
+      "text_id": 107,
+      "paragraph_id": 37,
+      "section_id": 10,
+      "text": "Standardized weight values were extracted from each regression and compared using repeated measures analysis of variance (ANOVA) and paired-samples t tests.",
+      "page_number": null
+    },
+    {
+      "text_id": 108,
+      "paragraph_id": 39,
+      "section_id": 11,
+      "text": "Two separate studies were conducted to replicate the findings and extend them to cases in which the impact of a loss and a gain on feelings was evaluated (a) within the same trial (Replication and Extension Study 1) and (b) on the same unipolar rating scale (Replication and Extension Study 2).",
+      "page_number": null
+    },
+    {
+      "text_id": 109,
+      "paragraph_id": 39,
+      "section_id": 11,
+      "text": "These studies suggest that the results are robust and not driven by these specific factors (see the Supplemental Material for details and results).",
+      "page_number": null
+    },
+    {
+      "text_id": 110,
+      "paragraph_id": 41,
+      "section_id": 12,
+      "text": "Our analysis followed two main steps.",
+      "page_number": null
+    },
+    {
+      "text_id": 111,
+      "paragraph_id": 41,
+      "section_id": 12,
+      "text": "First, we used participants' reported feelings associated with different monetary outcomes in the feelings task to build a feeling function.",
+      "page_number": null
+    },
+    {
+      "text_id": 112,
+      "paragraph_id": 41,
+      "section_id": 12,
+      "text": "Specifically, we found the best-fitting computational model to specify how feelings associated with different amounts of gains and losses relate to the objective value of these amounts.",
+      "page_number": null
+    },
+    {
+      "text_id": 113,
+      "paragraph_id": 41,
+      "section_id": 12,
+      "text": "Second, we tested whether that model of feelings predicted participants' choices on the gambling task.",
+      "page_number": null
+    },
+    {
+      "text_id": 114,
+      "paragraph_id": 41,
+      "section_id": 12,
+      "text": "Results of the main study are reported here, and results of the replication and extension studies are reported in the Supplemental Material.",
+      "page_number": null
+    },
+    {
+      "text_id": 115,
+      "paragraph_id": 43,
+      "section_id": 13,
+      "text": "For all the models described below, the method of computing change from the rating associated with the zero outcome (i.e., the rating associated with not winning or not losing the equivalent amount) resulted in the best fit (Table S1 in the Supplemental Material).",
+      "page_number": null
+    },
+    {
+      "text_id": 116,
+      "paragraph_id": 43,
+      "section_id": 13,
+      "text": "Thus, we report results using this baseline; however, the results were the same when we used the other two methods of calculating feelings (see the Supplemental Material for details).",
+      "page_number": null
+    },
+    {
+      "text_id": 117,
+      "paragraph_id": 44,
+      "section_id": 13,
+      "text": "The BIC, which penalizes for additional parameters, showed that the best-fitting model (i.e., the one with the lowest BIC value) for both expected (Fig. 2a) and experienced (Fig. 2b) feelings was Feeling Model 3 (see Table S2 in the Supplemental Material for BIC and R 2 values), which has one ρ and one β.",
+      "page_number": null
+    },
+    {
+      "text_id": 118,
+      "paragraph_id": 44,
+      "section_id": 13,
+      "text": "This suggests two things.",
+      "page_number": null
+    },
+    {
+      "text_id": 119,
+      "paragraph_id": 44,
+      "section_id": 13,
+      "text": "First, it indicates that feelings' sensitivity to outcomes gradually decreased as outcomes increased.",
+      "page_number": null
+    },
+    {
+      "text_id": 120,
+      "paragraph_id": 44,
+      "section_id": 13,
+      "text": "Similar to the value function in prospect theory, ρ was significantly smaller than 1-expected feelings: ρ = .512, SD = .26, 95% confidence interval (CI) = [.418, .558], t(55) = -14.05, p < .001, Cohen's d = 1.88; experienced feelings: ρ = .425, SD = .23, 95% CI = [.513, .637], t(55) = -18.52, p < .001, Cohen's d = 2.5-which indicates that the feeling function was concave in the gain domain and convex in the loss domain.",
+      "page_number": null
+    },
+    {
+      "text_id": 121,
+      "paragraph_id": 44,
+      "section_id": 13,
+      "text": "Figure 3 shows that the magnitude of feelings associated with £10, for example, was less than twice the magnitude of feelings associated with £5.",
+      "page_number": null
+    },
+    {
+      "text_id": 122,
+      "paragraph_id": 44,
+      "section_id": 13,
+      "text": "The average β across participants, which represents the slope of the function, was 0.857 (SD = 0.36) for expected feelings and 0.819 (SD = 0.37) for experienced feelings.",
+      "page_number": null
+    },
+    {
+      "text_id": 123,
+      "paragraph_id": 45,
+      "section_id": 13,
+      "text": "Second, we found that neither sensitivity (β) nor curvature (ρ) differed for gains and losses.",
+      "page_number": null
+    },
+    {
+      "text_id": 124,
+      "paragraph_id": 45,
+      "section_id": 13,
+      "text": "Equal sensitivity suggests that when feelings associated with losses and gains are evaluated separately, their impact is symmetrical, such that losses are not experienced more intensely than gains.",
+      "page_number": null
+    },
+    {
+      "text_id": 125,
+      "paragraph_id": 45,
+      "section_id": 13,
+      "text": "On the surface, these findings contradict the notion of loss aversion, as proposed by prospect theory.",
+      "page_number": null
+    },
+    {
+      "text_id": 126,
+      "paragraph_id": 45,
+      "section_id": 13,
+      "text": "However, what we will show later is that while here losses do not necessarily affect feelings more than gains, they are weighted to a greater extent when making a choice.",
+      "page_number": null
+    },
+    {
+      "text_id": 127,
+      "paragraph_id": 45,
+      "section_id": 13,
+      "text": "With regards to curvature, a single ρ was more parsimonious than two separate ones for gains and losses, which suggests that the extent of concavity for gains was equivalent to the extent of convexity for losses.",
+      "page_number": null
+    },
+    {
+      "text_id": 128,
+      "paragraph_id": 46,
+      "section_id": 13,
+      "text": "Further support for the observation that feelings' sensitivity to outcomes gradually decreased as outcomes increased came from the fact that all models with a curvature parameter ρ (Feeling Models 3-6) were better fits, as indicated by lower BIC values, than corresponding linear models with an intercept (Feeling Models 7-10).",
+      "page_number": null
+    },
+    {
+      "text_id": 129,
+      "paragraph_id": 46,
+      "section_id": 13,
+      "text": "This was true both when comparing BICs for models fitting expected feelings (BIC difference < -112) and experienced feelings (BIC difference < -37; Table S2).",
+      "page_number": null
+    },
+    {
+      "text_id": 130,
+      "paragraph_id": 46,
+      "section_id": 13,
+      "text": "Further support for the observation that neither sensitivity nor curvature differed between gains and losses came from the fact that Feeling Model 3 had lower BICs than other curved functions with additional parameters that fit gains and losses with separate parameters (Feeling Models 4-6; see Table S3 in the Supplemental Material) for both expected and experienced feelings.",
+      "page_number": null
+    },
+    {
+      "text_id": 131,
+      "paragraph_id": 46,
+      "section_id": 13,
+      "text": "In addition, the absolute impact of losses and gains on ratings of feelings relative to a zero outcome revealed no difference, F(1, 55) = 0.01, p = .92, η p 2 = .00018.",
+      "page_number": null
+    },
+    {
+      "text_id": 132,
+      "paragraph_id": 48,
+      "section_id": 14,
+      "text": "Interestingly, comparing the functions for experienced and expected feelings revealed an impact bias that increased with the amounts lost or gained.",
+      "page_number": null
+    },
+    {
+      "text_id": 133,
+      "paragraph_id": 48,
+      "section_id": 14,
+      "text": "The impact bias is the tendency to expect losses or gains to affect feelings more than they actually do (Gilbert, Pinel, Wilson, Blumberg, & Wheatley, 1998).",
+      "page_number": null
+    },
+    {
+      "text_id": 134,
+      "paragraph_id": 48,
+      "section_id": 14,
+      "text": "Specifically, the curvature (ρ) was smaller for the experienced-feeling function relative to the expected-feeling function-paired-samples t(55) = 3.31, p = .002, Cohen's d = 0.442, 95% CI = [0.034, 0.138], while there was no difference in sensitivity values (βs), t(55) = 0.65, p = .52, Cohen's d = 0.087, 95% CI = [-0.079, 0.155].",
+      "page_number": null
+    },
+    {
+      "text_id": 135,
+      "paragraph_id": 48,
+      "section_id": 14,
+      "text": "Thus, although both expected and experienced feelings became less sensitive to outcomes as absolute values of loss and gain increased, this diminished sensitivity was more pronounced in experience than in expectation.",
+      "page_number": null
+    },
+    {
+      "text_id": 136,
+      "paragraph_id": 48,
+      "section_id": 14,
+      "text": "As a result, for small amounts of money gained or lost, people's expectations of how they would feel were more likely to align with their experience.",
+      "page_number": null
+    },
+    {
+      "text_id": 137,
+      "paragraph_id": 48,
+      "section_id": 14,
+      "text": "However, as amounts gained or lost increased, people were more likely to overestimate the effect of outcomes on their feelings, expecting to be affected more by gains and losses than they actually were (i.e., the impact bias; Gilbert et al., 1998).",
+      "page_number": null
+    },
+    {
+      "text_id": 138,
+      "paragraph_id": 48,
+      "section_id": 14,
+      "text": "The growth of the impact bias can be seen in Fig. 3 as the increase in separation between the solid line (experienced feelings) and the more extreme (i.e., higher for gains, lower for losses) dashed line (expected feelings).",
+      "page_number": null
+    },
+    {
+      "text_id": 139,
+      "paragraph_id": 50,
+      "section_id": 15,
+      "text": "Once we established a function that fit feelings to outcome value, we turned to the question of how well those feelings predict choices, in particular how they are combined and weighted to make a decision.",
+      "page_number": null
+    },
+    {
+      "text_id": 140,
+      "paragraph_id": 51,
+      "section_id": 15,
+      "text": "Choice Models 1 and 2, in which choice was predicted from feelings extracted from the expected-and experienced-feeling function, respectively, predicted choice better than all value-based comparison models (Choice Models 3-7), as indicated by lower BIC scores (Fig. 4a) and higher R 2 values (Table S4 in the Supplemental Material).",
+      "page_number": null
+    },
+    {
+      "text_id": 141,
+      "paragraph_id": 51,
+      "section_id": 15,
+      "text": "Running the split-half analysis 100 times, with a different way to split the data on every iteration, revealed that models using feelings predicted choice better than all five comparison models in 99 iterations out of 100, thus confirming the reliability of this finding.",
+      "page_number": null
+    },
+    {
+      "text_id": 142,
+      "paragraph_id": 53,
+      "section_id": 16,
+      "text": "Are feelings about potential losses and gains given equal weights when people deliberate on a decision?",
+      "page_number": null
+    },
+    {
+      "text_id": 143,
+      "paragraph_id": 53,
+      "section_id": 16,
+      "text": "Our feeling function indicated that the impact of a loss on feelings was equal to the impact of an equivalent gain.",
+      "page_number": null
+    },
+    {
+      "text_id": 144,
+      "paragraph_id": 53,
+      "section_id": 16,
+      "text": "Yet while losses and gains may affect explicit feelings similarly, we found that these feelings are weighted differently when people are making a choice. a 5,000 5,500 6 ,000 6,500 7,000 β β gain , β loss β, ρ β gain , β loss , ρ β, ρ gain , ρ loss β gain , β loss , ρ gain , ρ loss β, ε β gain , β loss , ε β, ε gain , ε loss β gain , β loss , ε gain , ε loss β β gain , β loss β, ρ β gain , β loss , ρ β, ρ gain , ρ loss β gain , β loss , ρ gain , ρ loss β, ε β gain , β loss , ε β, ε gain , ε loss β gain , β loss , ε gain , ε loss",
+      "page_number": null
+    },
+    {
+      "text_id": 145,
+      "paragraph_id": 54,
+      "section_id": 16,
+      "text": "1 2 3 4 5 6 7 8 9 10 BIC (Summed Across Participants) Better Fit (Lower BIC) 1 2 3 4 5 6 7 8 9 10 5,000 5 ,500 6,000 6 ,500 7,000 BIC (Summed Across Participants) Better Fit (Lower BIC) Best-Fitting Model Best-Fitting Model b Model No.",
+      "page_number": null
+    },
+    {
+      "text_id": 146,
+      "paragraph_id": 54,
+      "section_id": 16,
+      "text": "Parameters in Model Model No.",
+      "page_number": null
+    },
+    {
+      "text_id": 147,
+      "paragraph_id": 54,
+      "section_id": 16,
+      "text": "Parameters in Model Expected-Feeling Models Experienced-Feeling Models Specifically, ω parameters from our choice models, which predicted choices from feelings, revealed a greater weight for feelings associated with losses (ω L ) relative to feelings associated with gains (ω G ) in predicting choicefor expected feelings: t(55) = 3.04, p = .004, 95% CI = [0.684, 3.33], Cohen's d = 0.406; for experienced feelings: t(55) = 2.93, p = .005, 95% CI = [0.599, 3.19], Cohen's d = 0.392 (Fig. 4b).",
+      "page_number": null
+    },
+    {
+      "text_id": 148,
+      "paragraph_id": 54,
+      "section_id": 16,
+      "text": "Models that allowed different weights for losses and gains performed significantly better than models that did not (Table S5 in the Supplemental Material).",
+      "page_number": null
+    },
+    {
+      "text_id": 149,
+      "paragraph_id": 55,
+      "section_id": 16,
+      "text": "Follow-up analysis revealed that this was true only in mixed-gamble trials, in which losses and gains are weighted simultaneously, but not in gain-only and lossonly trials, in which gains and losses are evaluated at different time points (different trials).",
+      "page_number": null
+    },
+    {
+      "text_id": 150,
+      "paragraph_id": 55,
+      "section_id": 16,
+      "text": "Specifically, we ran logistic regressions to predict choice from feelings separately for each trial type, and then entered weightof-feelings parameters into a 2 (trial type: mixed, nonmixed) by 2 (outcome: loss, gain) repeated measures ANOVA.",
+      "page_number": null
+    },
+    {
+      "text_id": 151,
+      "paragraph_id": 55,
+      "section_id": 16,
+      "text": "This revealed a significant interactionexpected feelings: F(1, 55) = 6.54, p = .013, η p 2 = .106; experienced feelings: F(1, 55) = 7.46, p = .008, η p 2 = .119 (Fig.",
+      "page_number": null
+    },
+    {
+      "text_id": 152,
+      "paragraph_id": 55,
+      "section_id": 16,
+      "text": "S1 in the Supplemental Material)-driven by a greater weight put on feelings associated with losses relative to feelings associated with gains during mixedgamble choices-expected feelings: t(55) = 3.66, p = .001, 95% CI = [1.67, 5.71], Cohen's d = 0.489; experienced feelings: t(55) = 2.45, p = .018, 95% CI = [0.91, 9.10], Cohen's d = 0.327-but not during loss-versus gain-only trials-expected feelings: t(55) = 0.82, p = .42, 95% CI = [-3.25, 7.71], Cohen's d = 0.109; experienced feelings: t(55) = 0.79, p = .43, 95% CI = [-2.75, 6.32], Cohen's d = 0.105.",
+      "page_number": null
+    },
+    {
+      "text_id": 153,
+      "paragraph_id": 55,
+      "section_id": 16,
+      "text": "In other words, only when potential losses and gains are evaluated simultaneously (i.e., in the same choice) are feelings about losses weighted more strongly than feelings about gains.",
+      "page_number": null
+    },
+    {
+      "text_id": 154,
+      "paragraph_id": 55,
+      "section_id": 16,
+      "text": "Results of our first replication and extension study further show that even when gains and losses were evaluated in the same trial during the feelings task, their impact on feelings does not differ, but their weight on gambling choices does (see the Supplemental Material for details).",
+      "page_number": null
+    },
+    {
+      "text_id": 155,
+      "paragraph_id": 56,
+      "section_id": 16,
+      "text": "To further tease apart the asymmetrical use of feelings associated with gains and losses in shaping choice from the use of value alone, we ran another logistic regression (Choice Model 8) in which raw feelings (i.e., reported feelings relative to baseline rather than those derived from the feeling function) were added as predictors of choice in the same logistic regression as objective values themselves.",
+      "page_number": null
+    },
+    {
+      "text_id": 156,
+      "paragraph_id": 56,
+      "section_id": 16,
+      "text": "This was done to reveal the weight assigned to feelings in making a choice over and beyond the effect of value per se, when the two compete.",
+      "page_number": null
+    },
+    {
+      "text_id": 157,
+      "paragraph_id": 56,
+      "section_id": 16,
+      "text": "The results showed no difference in the weight assigned to the value of losses and gains per se, t(55) < 1.2, p > .23, Cohen's d < .17, only to the weight assigned to the associated feelings-expected feelings: t(55) = 3.59, p = .001, 95% CI = [1.29, 4.55], Cohen's d = .479; experienced feelings: t(55) = 2.28, p = .027, 95% CI = [0.197, 2.89], Cohen's d = 0.307.",
+      "page_number": null
+    },
+    {
+      "text_id": 158,
+      "paragraph_id": 56,
+      "section_id": 16,
+      "text": "Again, this was true only for mixed-gamble choices, not for gain-only or loss-only trials, in which neither feelings nor values were weighted differently between losses and gains (Table S6 in the Supplemental Material).",
+      "page_number": null
+    },
+    {
+      "text_id": 159,
+      "paragraph_id": 56,
+      "section_id": 16,
+      "text": "This suggests that losses are not weighted differently from gains; rather, feelings associated with losses and with gains are weighted differently, which emphasizes the importance of feelings in decision making.",
+      "page_number": null
+    },
+    {
+      "text_id": 160,
+      "paragraph_id": 57,
+      "section_id": 16,
+      "text": "This last conclusion raises the possibility that individual differences in decision making could be explained by how people weigh feelings when making a choice.",
+      "page_number": null
+    },
+    {
+      "text_id": 161,
+      "paragraph_id": 57,
+      "section_id": 16,
+      "text": "Indeed, using the weights from Choice Model 8, we found that, controlling for value, individual differences in both loss aversion and the propensity to choose gambles were directly correlated with the extent to which feelings associated with losses were overweighted compared with feelings associated with gains-correlation between loss aversion and loss-gain weight difference for expected feelings: r(56) = .56, p < .001; for experienced feelings: r(56) = .34, p = .012; correlation between propensity to gamble and loss-gain weight difference for expected feelings: r(56) = -.61, p < .001; for experienced feelings: r(56) = -.46, p < .001 (Fig. 5; see the Supplemental Material for loss-aversion modeling).",
+      "page_number": null
+    },
+    {
+      "text_id": 162,
+      "paragraph_id": 57,
+      "section_id": 16,
+      "text": "Specifically, participants who weighted feelings associated with losses more than feelings associated with gains were more loss averse and less likely to gamble.",
+      "page_number": null
+    },
+    {
+      "text_id": 163,
+      "paragraph_id": 58,
+      "section_id": 16,
+      "text": "8,600 8,800 9,000 9,200 9,400 BIC (Summed Across Participants) Better Fit (Lower BIC) a b Expected Feelings Experienced Feelings Value Log(Value) Value & Loss Aversion Value & Risk Aversion Value, Loss & Risk Aversion Predictor of Choice 0 2 4 6 8 10 12 14 16 18 Expected Feelings Experienced Feelings Sure Option Risky Gain Risky Loss * * * * Standardized Weight (Relating Feelings and Choice) 1 2 3 4 5 6 7 Model No.",
+      "page_number": null
+    },
+    {
+      "text_id": 164,
+      "paragraph_id": 60,
+      "section_id": 17,
+      "text": "Fig.",
+      "page_number": null
+    },
+    {
+      "text_id": 165,
+      "paragraph_id": 60,
+      "section_id": 17,
+      "text": "4.",
+      "page_number": null
+    },
+    {
+      "text_id": 166,
+      "paragraph_id": 60,
+      "section_id": 17,
+      "text": "Results from the choice models.",
+      "page_number": null
+    },
+    {
+      "text_id": 167,
+      "paragraph_id": 60,
+      "section_id": 17,
+      "text": "The Bayesian information criterion (BIC), summed across participants, is shown in (a) for each of the seven models predicting choices on the gambling task.",
+      "page_number": null
+    },
+    {
+      "text_id": 168,
+      "paragraph_id": 60,
+      "section_id": 17,
+      "text": "Standardized weight parameters predicting choices from feelings are shown in (b) for each option of the gambling task, separately for expected feelings and experienced feelings (modeled from the feelings task).",
+      "page_number": null
+    },
+    {
+      "text_id": 169,
+      "paragraph_id": 60,
+      "section_id": 17,
+      "text": "Higher values on the y-axis indicate that feelings about the corresponding gamble option (e.g., risky loss) are weighted more strongly during the decision.",
+      "page_number": null
+    },
+    {
+      "text_id": 170,
+      "paragraph_id": 60,
+      "section_id": 17,
+      "text": "Error bars represent ±1 SEM.",
+      "page_number": null
+    },
+    {
+      "text_id": 171,
+      "paragraph_id": 60,
+      "section_id": 17,
+      "text": "Asterisks represent significant differences between the options (p < .05), as determined by two-tailed paired-samples t tests.",
+      "page_number": null
+    },
+    {
+      "text_id": 172,
+      "paragraph_id": 61,
+      "section_id": 17,
+      "text": "This set of results suggests that the asymmetric influence of gains and losses on decision making, as suggested by prospect theory, is not necessarily reflected in expected or experienced feelings, or in different weights assigned to value per se, but rather in the extent to which feelings associated with losses and gains are taken into account when one makes a decision.",
+      "page_number": null
+    },
+    {
+      "text_id": 173,
+      "paragraph_id": 63,
+      "section_id": 18,
+      "text": "The relationship between people's feelings and the choices they make has occupied scientists, policymakers, and philosophers for decades.",
+      "page_number": null
+    },
+    {
+      "text_id": 174,
+      "paragraph_id": 63,
+      "section_id": 18,
+      "text": "Indeed, in recent years, numerous studies have investigated how decisions and outcomes affect people's feelings (Carter & McBride, 2013;Kassam et al., 2011;Kermer et al., 2006;McGraw et al., 2010;Mellers et al., 1997;Rutledge et al., 2014;Yechiam et al., 2014) and life satisfaction (Boyce, Wood, Banks, Clark, & Brown, 2013;De Neve et al., 2015).",
+      "page_number": null
+    },
+    {
+      "text_id": 175,
+      "paragraph_id": 63,
+      "section_id": 18,
+      "text": "Yet the equally critical question of how people's explicit feelings affect their decisions has been relatively neglected.",
+      "page_number": null
+    },
+    {
+      "text_id": 176,
+      "paragraph_id": 63,
+      "section_id": 18,
+      "text": "In this study, we addressed this important question in a controlled laboratory setting and modeled how feelings are integrated into decisions.",
+      "page_number": null
+    },
+    {
+      "text_id": 177,
+      "paragraph_id": 63,
+      "section_id": 18,
+      "text": "We demonstrated that feelings drive the decisions people make.",
+      "page_number": null
+    },
+    {
+      "text_id": 178,
+      "paragraph_id": 63,
+      "section_id": 18,
+      "text": "However, the rules by which they do so differ from those that were previously assumed.",
+      "page_number": null
+    },
+    {
+      "text_id": 179,
+      "paragraph_id": 64,
+      "section_id": 18,
+      "text": "Our feeling model predicted choice better than objective values did, and a unique contribution of feelings in the decision process was demonstrated.",
+      "page_number": null
+    },
+    {
+      "text_id": 180,
+      "paragraph_id": 64,
+      "section_id": 18,
+      "text": "The feeling function that best related feelings to value was revealed to be concave for gains and convex for losses, much as the value function in prospect theory (Kahneman & Tversky, 1979;Tversky & Kahneman, 1992) and other nonlinear utility functions (Bernoulli, 1954;Fox & Poldrack, 2014;Stauffer, Lak, & Schultz, 2014; Von Neumann & -20 -15 -10 -5 0 5 10 15 20 0.0 0.5 1.0 1.5 2.0 2.5 Weight Loss -Weight Gain Expected Feelings -20 -15 -10 -5 0 5 10 15 20 0.0 0.5 1.0 -20 -15 -10 -5 0 5 10 15 20 0.0 0.5 1.0 1.5 2.0 2.5 Weight Loss -Weight Gain Experienced Feelings Loss Aversion (log-transformed) -20 -15 -10 -5 0 5 10 15 20 0.0 0.5 1.0 Propensity to Gamble R = -.61* R = .56* R = .34* R = -.46* These correlations indicate that the greater weight a participant put on feelings associated with a loss relative to a gain when making a decision, the more loss averse (and less likely to gamble) they were.",
+      "page_number": null
+    },
+    {
+      "text_id": 181,
+      "paragraph_id": 64,
+      "section_id": 18,
+      "text": "Morgenstern, 1947).",
+      "page_number": null
+    },
+    {
+      "text_id": 182,
+      "paragraph_id": 64,
+      "section_id": 18,
+      "text": "This curvature suggests that explicit feelings, similar to subjective value or utility, show diminishing sensitivity to outcomes as the value of these outcomes increases (Carter & McBride, 2013).",
+      "page_number": null
+    },
+    {
+      "text_id": 183,
+      "paragraph_id": 64,
+      "section_id": 18,
+      "text": "In other words, when it comes to one's feelings, the impact of winning or losing $10 is less than twice that of winning or losing $5.",
+      "page_number": null
+    },
+    {
+      "text_id": 184,
+      "paragraph_id": 64,
+      "section_id": 18,
+      "text": "Our feeling model also revealed no asymmetry between gains and losses, which suggests that the impact of a loss on feelings is not necessarily greater than the impact of an equivalent gain.",
+      "page_number": null
+    },
+    {
+      "text_id": 185,
+      "paragraph_id": 64,
+      "section_id": 18,
+      "text": "This finding was replicated in two additional studies in which a gain and a loss were evaluated at the same time and in which the associated feelings about gains and losses were reported using the same unipolar scale.",
+      "page_number": null
+    },
+    {
+      "text_id": 186,
+      "paragraph_id": 64,
+      "section_id": 18,
+      "text": "We do not suggest that the feelings associated with losses and gains will always be symmetric.",
+      "page_number": null
+    },
+    {
+      "text_id": 187,
+      "paragraph_id": 64,
+      "section_id": 18,
+      "text": "On the contrary, different stimuli and contexts may result in varying asymmetric effects (Harinck et al., 2007;McGraw et al., 2010).",
+      "page_number": null
+    },
+    {
+      "text_id": 188,
+      "paragraph_id": 64,
+      "section_id": 18,
+      "text": "In particular, in contrast to the findings reported here, a loss-gain asymmetry in feelings has been previously reported in a study using a one-shot game, in which the stakes consisted of large ($200) hypothetical amounts (McGraw et al., 2010).",
+      "page_number": null
+    },
+    {
+      "text_id": 189,
+      "paragraph_id": 64,
+      "section_id": 18,
+      "text": "Our study examined responses to incentive-compatible, but relatively small, gains and losses.",
+      "page_number": null
+    },
+    {
+      "text_id": 190,
+      "paragraph_id": 64,
+      "section_id": 18,
+      "text": "It is possible that for higher amounts, an asymmetry in feelings would emerge.",
+      "page_number": null
+    },
+    {
+      "text_id": 191,
+      "paragraph_id": 64,
+      "section_id": 18,
+      "text": "However, we speculate that even for large stakes, the feeling function may do a better job at predicting choice than value alone.",
+      "page_number": null
+    },
+    {
+      "text_id": 192,
+      "paragraph_id": 64,
+      "section_id": 18,
+      "text": "That question awaits testing.",
+      "page_number": null
+    },
+    {
+      "text_id": 193,
+      "paragraph_id": 65,
+      "section_id": 18,
+      "text": "Despite this absence of asymmetry in feelings, we found that loss aversion was still present in choice (see the Supplemental Material for the mean and median statistics for loss aversion as well as details on the proportions of risky choices), consistent with the predictions of prospect theory.",
+      "page_number": null
+    },
+    {
+      "text_id": 194,
+      "paragraph_id": 65,
+      "section_id": 18,
+      "text": "Importantly, when participants made a decision, a greater weight was put on feelings associated with losses relative to gains.",
+      "page_number": null
+    },
+    {
+      "text_id": 195,
+      "paragraph_id": 65,
+      "section_id": 18,
+      "text": "Therefore, our finding suggests that even when losses do not affect feelings more strongly than gains do, those feelings are weighted more when making a choice than feelings about gains.",
+      "page_number": null
+    },
+    {
+      "text_id": 196,
+      "paragraph_id": 65,
+      "section_id": 18,
+      "text": "Moreover, the amount by which feelings associated with losses are overweighted relative to feelings associated with gains when one makes a decision relates to individual differences in loss aversion and propensity to gamble.",
+      "page_number": null
+    },
+    {
+      "text_id": 197,
+      "paragraph_id": 66,
+      "section_id": 18,
+      "text": "This finding resolves a long-standing puzzle in which loss aversion is often observed in choice but not necessarily in explicit feelings (Harinck et al., 2007;Kermer et al., 2006;McGraw et al., 2010;Mellers et al., 1997).",
+      "page_number": null
+    },
+    {
+      "text_id": 198,
+      "paragraph_id": 66,
+      "section_id": 18,
+      "text": "We suggest that the asymmetric influence of gains and losses on decision making, as suggested by prospect theory, is \"reflected neither in expected or experienced feelings directly, nor in different weights assigned to value per se, but\" in the extent to which feelings about losses and gains are taken into account when people make a decision.",
+      "page_number": null
+    },
+    {
+      "text_id": 199,
+      "paragraph_id": 66,
+      "section_id": 18,
+      "text": "Our result is consistent with the interpretation of an increased attention to losses when one makes a choice (Yechiam & Hochman, 2013).",
+      "page_number": null
+    },
+    {
+      "text_id": 200,
+      "paragraph_id": 66,
+      "section_id": 18,
+      "text": "When losses and gains are presented separately in a decision, the feelings associated with them are weighted in a symmetrical way.",
+      "page_number": null
+    },
+    {
+      "text_id": 201,
+      "paragraph_id": 66,
+      "section_id": 18,
+      "text": "However, when they compete for attention, as is the case in mixed gambles, people may allocate more attention to the feelings they would derive from the loss than from the gain, which leads them to choose in a loss-averse manner.",
+      "page_number": null
+    },
+    {
+      "text_id": 202,
+      "paragraph_id": 66,
+      "section_id": 18,
+      "text": "It is also possible that people implicitly experience losses to a greater extent than they experience gains (Hochman & Yechiam, 2011;Sokol-Hessner et al., 2009), but this difference is not exhibited in explicit reports.",
+      "page_number": null
+    },
+    {
+      "text_id": 203,
+      "paragraph_id": 67,
+      "section_id": 18,
+      "text": "Our findings also provide the first demonstration of an impact bias that increases with value.",
+      "page_number": null
+    },
+    {
+      "text_id": 204,
+      "paragraph_id": 67,
+      "section_id": 18,
+      "text": "Specifically, we found that participants' self-report feelings exhibited an impact bias (also called affective-forecasting error), such that they expected the emotional impact of an event to be greater than it actually turned out to be (Gilbert et al., 1998;Kermer et al., 2006;Kwong, Wong, & Tang, 2013;Levine, Lench, Kaplan, & Safer, 2013;Morewedge & Buechel, 2013;Wilson & Gilbert, 2013).",
+      "page_number": null
+    },
+    {
+      "text_id": 205,
+      "paragraph_id": 67,
+      "section_id": 18,
+      "text": "Interestingly, this impact bias was not constant but increased with value.",
+      "page_number": null
+    },
+    {
+      "text_id": 206,
+      "paragraph_id": 67,
+      "section_id": 18,
+      "text": "This was because of a stronger curvature of experienced feelings relative to expected feelings.",
+      "page_number": null
+    },
+    {
+      "text_id": 207,
+      "paragraph_id": 67,
+      "section_id": 18,
+      "text": "In other words, as absolute value increased, sensitivity to value diminished more quickly for experienced relative to expected feelings.",
+      "page_number": null
+    },
+    {
+      "text_id": 208,
+      "paragraph_id": 67,
+      "section_id": 18,
+      "text": "This suggests that as people win or lose more money, they are more and more biased toward overestimating the emotional impact of these outcomes.",
+      "page_number": null
+    },
+    {
+      "text_id": 209,
+      "paragraph_id": 68,
+      "section_id": 18,
+      "text": "Our modeling approach provides novel insight into how explicit feelings relate to choice.",
+      "page_number": null
+    },
+    {
+      "text_id": 210,
+      "paragraph_id": 68,
+      "section_id": 18,
+      "text": "Such understanding is of theoretical importance and also has practical implications for policymakers, economists, and clinicians who often measure explicit feelings to predict choice (Benjamin, Heffetz, Kimball, & Rees-Jones, 2012, 2014).",
+      "page_number": null
+    },
+    {
+      "text_id": 211,
+      "paragraph_id": 70,
+      "section_id": 19,
+      "text": "Hal Arkes served as action editor for this article.",
+      "page_number": null
+    },
+    {
+      "text_id": 212,
+      "paragraph_id": 72,
+      "section_id": 20,
+      "text": "We thank Benedetto De Martino, Ori Heffetz, Neil Garrett, Sebastian Bobadilla-Suarez, Stephanie Lazzaro, and Vincent Valton for helpful comments on a previous version of this",
+      "page_number": null
+    },
+    {
+      "text_id": 213,
+      "paragraph_id": 74,
+      "section_id": 21,
+      "text": "This work was supported by a University College London Grand Challenge award to C J Charpentier, a Wellcome Trust Career Development Fellowship to T Sharot, and US National Institute on Aging (Grant No.",
+      "page_number": null
+    },
+    {
+      "text_id": 214,
+      "paragraph_id": 74,
+      "section_id": 21,
+      "text": "R01AG040640) and UK Economic and Social Research Council grants to J-E De Neve.",
+      "page_number": null
+    },
+    {
+      "text_id": 215,
+      "paragraph_id": 76,
+      "section_id": 22,
+      "text": "The authors declared that they had no conflicts of interest with respect to their authorship or the publication of this article.",
+      "page_number": null
+    },
+    {
+      "text_id": 216,
+      "paragraph_id": 78,
+      "section_id": 23,
+      "text": "C J Charpentier, J-E De Neve, and T Sharot developed the study concept and design.",
+      "page_number": null
+    },
+    {
+      "text_id": 217,
+      "paragraph_id": 78,
+      "section_id": 23,
+      "text": "C J Charpentier and X Li collected and analyzed the data.",
+      "page_number": null
+    },
+    {
+      "text_id": 218,
+      "paragraph_id": 78,
+      "section_id": 23,
+      "text": "C J Charpentier and T Sharot drafted the manuscript.",
+      "page_number": null
+    },
+    {
+      "text_id": 219,
+      "paragraph_id": 78,
+      "section_id": 23,
+      "text": "All authors discussed data analysis and interpretation, provided critical revisions, and approved the final version of the manuscript for submission. manuscript; Robb Rutledge, Dan Benjamin, Miles Kimball, and Richard Layard for helpful discussion and suggestions; and Eleanor Barley and Joshua Lim for assistance with data collection.",
+      "page_number": null
+    },
+    {
+      "text_id": 220,
+      "paragraph_id": 80,
+      "section_id": 24,
+      "text": "Additional supporting information can be found at http:// pss.sagepub.com/content/by/supplemental-data",
+      "page_number": null
+    },
+    {
+      "text_id": 221,
+      "paragraph_id": 81,
+      "section_id": 25,
+      "text": "Fig 1 Example trial sequences from the (a, b) feelings task and (c) gambling task.",
+      "page_number": null
+    },
+    {
+      "text_id": 222,
+      "paragraph_id": 81,
+      "section_id": 25,
+      "text": "Participants completed two versions of the feelings task in different blocks.",
+      "page_number": null
+    },
+    {
+      "text_id": 223,
+      "paragraph_id": 81,
+      "section_id": 25,
+      "text": "On both (a) expected-feelings and (b) experienced-feelings blocks (one trial of each is shown here), participants won or lost money if they correctly chose between one of two shapes.",
+      "page_number": null
+    },
+    {
+      "text_id": 224,
+      "paragraph_id": 81,
+      "section_id": 25,
+      "text": "The amount was specified at the start of the trial, along with whether the trial involved winning money (as shown here) or losing money.",
+      "page_number": null
+    },
+    {
+      "text_id": 225,
+      "paragraph_id": 81,
+      "section_id": 25,
+      "text": "In all feelings trials, they rated how happy they would be if",
+      "page_number": null
+    },
+    {
+      "text_id": 226,
+      "paragraph_id": 82,
+      "section_id": 26,
+      "text": "Fig 2 Bayesian information criterion (BIC), summed across participants, for each of the 10 models fitting feelings to outcome value, separately for (a) expected-feelings ratings and (b) experienced-feelings ratings.",
+      "page_number": null
+    },
+    {
+      "text_id": 227,
+      "paragraph_id": 83,
+      "section_id": 27,
+      "text": "Fig 3 Feeling function.",
+      "page_number": null
+    },
+    {
+      "text_id": 228,
+      "paragraph_id": 83,
+      "section_id": 27,
+      "text": "Plotted are expected-and experienced-feelings ratings averaged across participants for each outcome value, as well as predictions of the best-fitting model (Feeling Model 3).",
+      "page_number": null
+    },
+    {
+      "text_id": 229,
+      "paragraph_id": 83,
+      "section_id": 27,
+      "text": "Feelings ratings are shown as a function of change from baseline (i.e., the rating associated with the zero outcome of neither winning nor losing).",
+      "page_number": null
+    },
+    {
+      "text_id": 230,
+      "paragraph_id": 83,
+      "section_id": 27,
+      "text": "Error bars represent ±1 SEM.",
+      "page_number": null
+    },
+    {
+      "text_id": 231,
+      "paragraph_id": 84,
+      "section_id": 28,
+      "text": "Fig.5.",
+      "page_number": null
+    },
+    {
+      "text_id": 232,
+      "paragraph_id": 84,
+      "section_id": 28,
+      "text": "Relation between individual choice behavior and weight difference in feelings associated with losses and gains.",
+      "page_number": null
+    },
+    {
+      "text_id": 233,
+      "paragraph_id": 84,
+      "section_id": 28,
+      "text": "The left column shows correlations between loss aversion and the loss-gain weight difference for expected feelings (top) and experienced feelings (bottom).",
+      "page_number": null
+    },
+    {
+      "text_id": 234,
+      "paragraph_id": 84,
+      "section_id": 28,
+      "text": "The right column shows correlations between the propensity to gamble and loss-gain weight difference for expected feelings (top) and experienced feelings (bottom).",
+      "page_number": null
+    },
+    {
+      "text_id": 235,
+      "paragraph_id": 84,
+      "section_id": 28,
+      "text": "Best-fitting regression lines are shown for each set of data.",
+      "page_number": null
+    },
+    {
+      "text_id": 236,
+      "paragraph_id": 84,
+      "section_id": 28,
+      "text": "Asterisks indicate that linear correlations were significant (p < .05).",
+      "page_number": null
+    },
+    {
+      "text_id": 237,
+      "paragraph_id": 84,
+      "section_id": 28,
+      "text": "These correlations indicate that the greater weight a participant put on feelings associated with a loss relative to a gain when making a decision, the more loss averse (and less likely to gamble) they were.",
+      "page_number": null
+    },
+    {
+      "text_id": 238,
+      "paragraph_id": 85,
+      "section_id": 29,
+      "text": "Benjamin, D. J., Heffetz, O., Kimball, M. S., & Rees-Jones, A. (2012). What do you think would make you happier? What do you think you would choose? American Economic Review, 102, 2083-2110. doi:10.1257/aer.102.5.2083",
+      "page_number": null
+    },
+    {
+      "text_id": 239,
+      "paragraph_id": 86,
+      "section_id": 29,
+      "text": "Benjamin, D. J., Heffetz, O., Kimball, M. S., & Rees-Jones, A. (2014). Can marginal rates of substitution be inferred from happiness data? Evidence from residency choices. American Economic Review, 104, 3498-3528. doi:10.1257/ aer.104.11.3498",
+      "page_number": null
+    },
+    {
+      "text_id": 240,
+      "paragraph_id": 87,
+      "section_id": 29,
+      "text": "Bernoulli, D. (1954). Exposition of a new theory on the mea- surement of risk. Econometrica, 22, 23-36.",
+      "page_number": null
+    },
+    {
+      "text_id": 241,
+      "paragraph_id": 88,
+      "section_id": 29,
+      "text": "Boyce, C. J., Wood, A. M., Banks, J., Clark, A. E., & Brown, G. D. A. (2013). Money, well-being, and loss aversion: Does an income loss have a greater effect on well-being than an equivalent income gain? Psychological Science, 24, 2557-2562. doi:10.1177/0956797613496436",
+      "page_number": null
+    },
+    {
+      "text_id": 242,
+      "paragraph_id": 89,
+      "section_id": 29,
+      "text": "Carter, S., & McBride, M. (2013). Experienced utility versus deci- sion utility: Putting the \"S\" in satisfaction. Journal of Socio- Economics, 42, 13-23. doi:10.1016/j.socec.2012.11.009",
+      "page_number": null
+    },
+    {
+      "text_id": 243,
+      "paragraph_id": 90,
+      "section_id": 29,
+      "text": "De Neve, J.-E., Ward, G., De Keulenaer, F., Van Landeghem, B., Kavetsos, G., & Norton, M. (2015). The asymmetric experi- ence of positive and negative economic growth: Global evi- dence using subjective well-being data (Centre for Economic Performance Discussion Paper No. 1304). Retrieved from http://cep.lse.ac.uk/pubs/download/dp1304.pdf",
+      "page_number": null
+    },
+    {
+      "text_id": 244,
+      "paragraph_id": 91,
+      "section_id": 29,
+      "text": "Faul, F., Erdfelder, E., Lang, A., & Buchner, A. (2007). G*Power 3: A flexible statistical power analysis program for the social, behavioral, and biomedical sciences. Behavior Research Methods, 39, 175-191.",
+      "page_number": null
+    },
+    {
+      "text_id": 245,
+      "paragraph_id": 92,
+      "section_id": 29,
+      "text": "Fox, C. R., & Poldrack, R. A. (2014). Prospect theory and the brain. In P. W. Glimcher & E. Fehr (Eds.), Neuroeconomics: Decision making and the brain (2nd ed., pp. 533-568). New York, NY: Elsevier.",
+      "page_number": null
+    },
+    {
+      "text_id": 246,
+      "paragraph_id": 93,
+      "section_id": 29,
+      "text": "Gilbert, D. T., Pinel, E. C., Wilson, T. D., Blumberg, S. J., & Wheatley, T. P. (1998). Immune neglect: A source of durability bias in affective forecasting. Journal of Personal- ity and Social Psychology, 75, 617-638. doi:10.1037/0022- 3514.75.3.617",
+      "page_number": null
+    },
+    {
+      "text_id": 247,
+      "paragraph_id": 94,
+      "section_id": 29,
+      "text": "Harinck, F., Van Dijk, E., Van Beest, I., & Mersmann, P. (2007). When gains loom larger than losses: Reversed loss aver- sion for small amounts of money. Psychological Science, 18, 1099-1105. doi:10.1111/j.1467-9280.2007.02031.x",
+      "page_number": null
+    },
+    {
+      "text_id": 248,
+      "paragraph_id": 95,
+      "section_id": 29,
+      "text": "Hochman, G., & Yechiam, E. (2011). Loss aversion in the eye and in the heart: The autonomic nervous system's responses to losses. Journal of Behavioral Decision Making, 24, 140- 156. doi:10.1002/bdm.692",
+      "page_number": null
+    },
+    {
+      "text_id": 249,
+      "paragraph_id": 96,
+      "section_id": 29,
+      "text": "Kahneman, D. (2011). Thinking, fast and slow. New York, NY: Farrar, Straus and Giroux.",
+      "page_number": null
+    },
+    {
+      "text_id": 250,
+      "paragraph_id": 97,
+      "section_id": 29,
+      "text": "Kahneman, D., & Tversky, A. (1979). Prospect theory: An anal- ysis of decision under risk. Econometrica, 47, 263-292. doi:10.2307/1914185",
+      "page_number": null
+    },
+    {
+      "text_id": 251,
+      "paragraph_id": 98,
+      "section_id": 29,
+      "text": "Kassam, K. S., Morewedge, C. K., Gilbert, D. T., & Wilson, T. D. (2011). Winners love winning and losers love money. Psychological Science, 22, 602-606. doi:10.1177/ 0956797611405681",
+      "page_number": null
+    },
+    {
+      "text_id": 252,
+      "paragraph_id": 99,
+      "section_id": 29,
+      "text": "Kermer, D. A., Driver-Linn, E., Wilson, T. D., & Gilbert, D. T. (2006). Loss aversion is an affective forecasting error. Psychological Science, 17, 649-653. doi:10.1111/j.1467- 9280.2006.01760.x",
+      "page_number": null
+    },
+    {
+      "text_id": 253,
+      "paragraph_id": 100,
+      "section_id": 29,
+      "text": "Kwong, J. Y. Y., Wong, K. F. E., & Tang, S. K. Y. (2013). Comparing predicted and actual affective responses to pro- cess versus outcome: An emotion-as-feedback perspective. Cognition, 129, 42-50. doi:10.1016/j.cognition.2013.05.012",
+      "page_number": null
+    },
+    {
+      "text_id": 254,
+      "paragraph_id": 101,
+      "section_id": 29,
+      "text": "Levine, L. J., Lench, H. C., Kaplan, R. L., & Safer, M. A. (2013). Like Schrodinger's cat, the impact bias is both dead and alive: Reply to Wilson and Gilbert (2013). Journal of Personality and Social Psychology, 105, 749-756. doi:10 .1037/a0034340",
+      "page_number": null
+    },
+    {
+      "text_id": 255,
+      "paragraph_id": 102,
+      "section_id": 29,
+      "text": "McGraw, A. P., Larsen, J. T., Kahneman, D., & Schkade, D. (2010). Comparing gains and losses. Psychological Science, 21, 1438-1445. doi:10.1177/0956797610381504",
+      "page_number": null
+    },
+    {
+      "text_id": 256,
+      "paragraph_id": 103,
+      "section_id": 29,
+      "text": "Mellers, B. A., Schwartz, A., Ho, K., & Ritov, I. (1997). Decision affect theory: Emotional reactions to the outcomes of risky options. Psychological Science, 8, 423-429.",
+      "page_number": null
+    },
+    {
+      "text_id": 257,
+      "paragraph_id": 104,
+      "section_id": 29,
+      "text": "Menard, S. (2004). Six approaches to calculating standardized logistic regression coefficients. American Statistician, 58, 218-223. doi:10.1198/000313004X946",
+      "page_number": null
+    },
+    {
+      "text_id": 258,
+      "paragraph_id": 105,
+      "section_id": 29,
+      "text": "Morewedge, C. K., & Buechel, E. C. (2013). Motivated under- pinning of the impact bias in affective forecasts. Emotion, 13, 1023-1029. doi:10.1037/a0033797",
+      "page_number": null
+    },
+    {
+      "text_id": 259,
+      "paragraph_id": 106,
+      "section_id": 29,
+      "text": "Myung, I. J. (2003). Tutorial on maximum likelihood estima- tion. Journal of Mathematical Psychology, 47, 90-100. doi:10.1016/S0022-2496(02)00028-7",
+      "page_number": null
+    },
+    {
+      "text_id": 260,
+      "paragraph_id": 107,
+      "section_id": 29,
+      "text": "Rutledge, R. B., Skandali, N., Dayan, P., & Dolan, R. J. (2014). A computational and neural model of momentary subjective well-being. Proceedings of the National Academy of Sciences, USA, 111, 12252-12257. doi:10.1073/pnas.1407535111",
+      "page_number": null
+    },
+    {
+      "text_id": 261,
+      "paragraph_id": 108,
+      "section_id": 29,
+      "text": "Schielzeth, H. (2010). Simple means to improve the inter- pretability of regression coefficients. Methods in Ecology and Evolution, 1, 103-113. doi:10.1111/j.2041-210X.2010 .00012.x",
+      "page_number": null
+    },
+    {
+      "text_id": 262,
+      "paragraph_id": 109,
+      "section_id": 29,
+      "text": "Sokol-Hessner, P., Hsu, M., Curley, N. G., Delgado, M. R., Camerer, C. F., & Phelps, E. A. (2009). Thinking like a trader selectively reduces individuals' loss aversion. Proceedings of the National Academy of Sciences, USA, 106, 5035-5040.",
+      "page_number": null
+    },
+    {
+      "text_id": 263,
+      "paragraph_id": 110,
+      "section_id": 29,
+      "text": "Stauffer, W. R., Lak, A., & Schultz, W. (2014). Dopamine reward prediction error responses reflect marginal util- ity. Current Biology, 24, 2491-2500. doi:10.1016/j.cub .2014.08.064",
+      "page_number": null
+    },
+    {
+      "text_id": 264,
+      "paragraph_id": 111,
+      "section_id": 29,
+      "text": "Tversky, A., & Kahneman, D. (1986). Rational choice and the framing of decisions. The Journal of Business, 59, S251-S278.",
+      "page_number": null
+    },
+    {
+      "text_id": 265,
+      "paragraph_id": 112,
+      "section_id": 29,
+      "text": "Tversky, A., & Kahneman, D. (1992). Advances in prospect theory: Cumulative representation of uncertainty. Journal of Risk and Uncertainty, 5, 297-323.",
+      "page_number": null
+    },
+    {
+      "text_id": 266,
+      "paragraph_id": 113,
+      "section_id": 29,
+      "text": "Von Neumann, J., & Morgenstern, O. (1947). Theory of games and economic behavior (2nd ed.). Princeton, NJ: Princeton University Press.",
+      "page_number": null
+    },
+    {
+      "text_id": 267,
+      "paragraph_id": 114,
+      "section_id": 29,
+      "text": "Wilson, T. D., & Gilbert, D. T. (2013). The impact bias is alive and well. Journal of Personality and Social Psychology, 105, 740-748. doi:10.1037/a0032662",
+      "page_number": null
+    },
+    {
+      "text_id": 268,
+      "paragraph_id": 115,
+      "section_id": 29,
+      "text": "Yechiam, E., & Hochman, G. (2013). Losses as modulators of attention: Review and analysis of the unique effects of losses over gains. Psychological Bulletin, 139, 497-518. doi:10.1037/a0029383",
+      "page_number": null
+    },
+    {
+      "text_id": 269,
+      "paragraph_id": 116,
+      "section_id": 29,
+      "text": "Yechiam, E., Telpaz, A., & Hochman, G. (2014). The complaint bias in subjective evaluations of incentives. Decision, 1, 147-160. doi:10.1037/dec0000008",
+      "page_number": null
+    }
+  ],
+  "section": [
+    {
+      "section_id": 0,
+      "header": "Abstract",
+      "parent_section_id": null,
+      "section_type": "abstract",
+      "classification_score": null
+    },
+    {
+      "section_id": 1,
+      "header": "Research Article",
+      "parent_section_id": null,
+      "section_type": "intro",
+      "classification_score": null
+    },
+    {
+      "section_id": 3,
+      "header": "Participants",
+      "parent_section_id": null,
+      "section_type": "method",
+      "classification_score": null
+    },
+    {
+      "section_id": 4,
+      "header": "Behavioral tasks",
+      "parent_section_id": null,
+      "section_type": "method",
+      "classification_score": null
+    },
+    {
+      "section_id": 5,
+      "header": "Feelings task.",
+      "parent_section_id": null,
+      "section_type": "method",
+      "classification_score": null
+    },
+    {
+      "section_id": 6,
+      "header": "|---------------------|----------------------|",
+      "parent_section_id": null,
+      "section_type": "method",
+      "classification_score": null
+    },
+    {
+      "section_id": 7,
+      "header": "---------------------|--------------------",
+      "parent_section_id": null,
+      "section_type": "method",
+      "classification_score": null
+    },
+    {
+      "section_id": 8,
+      "header": "Gambling task.",
+      "parent_section_id": null,
+      "section_type": "method",
+      "classification_score": null
+    },
+    {
+      "section_id": 9,
+      "header": "Feeling-function models",
+      "parent_section_id": null,
+      "section_type": "method",
+      "classification_score": null
+    },
+    {
+      "section_id": 10,
+      "header": "Prediction of gambling choice",
+      "parent_section_id": null,
+      "section_type": "method",
+      "classification_score": null
+    },
+    {
+      "section_id": 11,
+      "header": "Replication and extension studies",
+      "parent_section_id": null,
+      "section_type": "method",
+      "classification_score": null
+    },
+    {
+      "section_id": 12,
+      "header": "Results",
+      "parent_section_id": null,
+      "section_type": "results",
+      "classification_score": null
+    },
+    {
+      "section_id": 13,
+      "header": "Characterizing a feeling function",
+      "parent_section_id": null,
+      "section_type": "results",
+      "classification_score": null
+    },
+    {
+      "section_id": 14,
+      "header": "Impact bias increases with the amount at stake",
+      "parent_section_id": null,
+      "section_type": "results",
+      "classification_score": null
+    },
+    {
+      "section_id": 15,
+      "header": "Feeling function predicts choice better than value-based models",
+      "parent_section_id": null,
+      "section_type": "results",
+      "classification_score": null
+    },
+    {
+      "section_id": 16,
+      "header": "Feelings associated with losses are weighted more than feelings associated with gains when decisions are being made",
+      "parent_section_id": null,
+      "section_type": "results",
+      "classification_score": null
+    },
+    {
+      "section_id": 17,
+      "header": "Choice Models",
+      "parent_section_id": null,
+      "section_type": "results",
+      "classification_score": null
+    },
+    {
+      "section_id": 18,
+      "header": "Discussion",
+      "parent_section_id": null,
+      "section_type": "discussion",
+      "classification_score": null
+    },
+    {
+      "section_id": 19,
+      "header": "Action Editor",
+      "parent_section_id": null,
+      "section_type": "discussion",
+      "classification_score": null
+    },
+    {
+      "section_id": 20,
+      "header": "Acknowledgments",
+      "parent_section_id": null,
+      "section_type": "acknowledgement",
+      "classification_score": null
+    },
+    {
+      "section_id": 21,
+      "header": "Funding",
+      "parent_section_id": null,
+      "section_type": "funding",
+      "classification_score": null
+    },
+    {
+      "section_id": 22,
+      "header": "Declaration of Conflicting Interests",
+      "parent_section_id": null,
+      "section_type": "conflict",
+      "classification_score": null
+    },
+    {
+      "section_id": 23,
+      "header": "Author Contributions",
+      "parent_section_id": null,
+      "section_type": "contribution",
+      "classification_score": null
+    },
+    {
+      "section_id": 24,
+      "header": "Supplemental Material",
+      "parent_section_id": null,
+      "section_type": "annex",
+      "classification_score": null
+    },
+    {
+      "section_id": 25,
+      "header": "Fig 1",
+      "parent_section_id": null,
+      "section_type": "figure",
+      "classification_score": null
+    },
+    {
+      "section_id": 26,
+      "header": "Fig 2",
+      "parent_section_id": null,
+      "section_type": "figure",
+      "classification_score": null
+    },
+    {
+      "section_id": 27,
+      "header": "Fig 3",
+      "parent_section_id": null,
+      "section_type": "figure",
+      "classification_score": null
+    },
+    {
+      "section_id": 28,
+      "header": "Fig 5",
+      "parent_section_id": null,
+      "section_type": "figure",
+      "classification_score": null
+    },
+    {
+      "section_id": 29,
+      "header": "References",
+      "parent_section_id": null,
+      "section_type": "references",
+      "classification_score": null
+    }
+  ],
+  "url": [
+    {
+      "href": "3.1.9.2",
+      "link_text": null,
+      "text_id": 43
+    },
+    {
+      "href": "pss.sagepub.com/content/by/supplemental-data",
+      "link_text": null,
+      "text_id": 220
+    }
+  ],
+  "bib": [
+    {
+      "bib_type": "article",
+      "doi": "10.1257/aer.102.5.2083",
+      "title": "What do you think would make you happier? What do you think you would choose?",
+      "authors": "Benjamin, D J; Heffetz, O; Kimball, M S; Rees-Jones, A",
+      "editors": "",
+      "publisher": "",
+      "year": 2012,
+      "volume": "102",
+      "issue": "",
+      "first_page": "2083",
+      "last_page": "2110",
+      "container": "American Economic Review",
+      "bib_id": 0,
+      "year_suffix": "",
+      "text_id": 238
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1257/aer.104.11.3498",
+      "title": "Can marginal rates of substitution be inferred from happiness data? Evidence from residency choices",
+      "authors": "Benjamin, D J; Heffetz, O; Kimball, M S; Rees-Jones, A",
+      "editors": "",
+      "publisher": "",
+      "year": 2014,
+      "volume": "104",
+      "issue": "",
+      "first_page": "3498",
+      "last_page": "3528",
+      "container": "American Economic Review",
+      "bib_id": 1,
+      "year_suffix": "",
+      "text_id": 239
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "Exposition of a new theory on the measurement of risk",
+      "authors": "Bernoulli, D",
+      "editors": "",
+      "publisher": "",
+      "year": 1954,
+      "volume": "22",
+      "issue": "",
+      "first_page": "23",
+      "last_page": "36",
+      "container": "Econometrica",
+      "bib_id": 2,
+      "year_suffix": "",
+      "text_id": 240
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1177/0956797613496436",
+      "title": "Money, well-being, and loss aversion: Does an income loss have a greater effect on well-being than an equivalent income gain?",
+      "authors": "Boyce, C J; Wood, A M; Banks, J; Clark, A E; Brown, G D A",
+      "editors": "",
+      "publisher": "",
+      "year": 2013,
+      "volume": "24",
+      "issue": "",
+      "first_page": "2557",
+      "last_page": "2562",
+      "container": "Psychological Science",
+      "bib_id": 3,
+      "year_suffix": "",
+      "text_id": 241
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1016/j.socec.2012.11.009",
+      "title": "Experienced utility versus decision utility: Putting the \"S\" in satisfaction",
+      "authors": "Carter, S; Mcbride, M",
+      "editors": "",
+      "publisher": "",
+      "year": 2013,
+      "volume": "42",
+      "issue": "",
+      "first_page": "13",
+      "last_page": "23",
+      "container": "Journal of Socio-Economics",
+      "bib_id": 4,
+      "year_suffix": "",
+      "text_id": 242
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "",
+      "authors": "De Neve, J.-E; Ward, G; De Keulenaer, F; Van Landeghem, B; Kavetsos, G; Norton, M",
+      "editors": "",
+      "publisher": "",
+      "year": 2015,
+      "volume": "",
+      "issue": "",
+      "first_page": null,
+      "last_page": null,
+      "container": "",
+      "bib_id": 5,
+      "year_suffix": "",
+      "text_id": 243
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "G*Power 3: A flexible statistical power analysis program for the social, behavioral, and biomedical sciences",
+      "authors": "Faul, F; Erdfelder, E; Lang, A; Buchner, A",
+      "editors": "",
+      "publisher": "",
+      "year": 2007,
+      "volume": "39",
+      "issue": "",
+      "first_page": "175",
+      "last_page": "191",
+      "container": "Behavior Research Methods",
+      "bib_id": 6,
+      "year_suffix": "",
+      "text_id": 244
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "Prospect theory and the brain",
+      "authors": "Fox, C R; Poldrack, R A",
+      "editors": "Glimcher, P W; Fehr, E",
+      "publisher": "Elsevier",
+      "year": 2014,
+      "volume": "",
+      "issue": "",
+      "first_page": "533",
+      "last_page": "568",
+      "container": "",
+      "bib_id": 7,
+      "year_suffix": "",
+      "text_id": 245
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1037/0022-3514.75.3.617",
+      "title": "Immune neglect: A source of durability bias in affective forecasting",
+      "authors": "Gilbert, D T; Pinel, E C; Wilson, T D; Blumberg, S J; Wheatley, T P",
+      "editors": "",
+      "publisher": "",
+      "year": 1998,
+      "volume": "75",
+      "issue": "",
+      "first_page": "617",
+      "last_page": "638",
+      "container": "Journal of Personality and Social Psychology",
+      "bib_id": 8,
+      "year_suffix": "",
+      "text_id": 246
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1111/j.1467-9280.2007.02031.x",
+      "title": "When gains loom larger than losses: Reversed loss aversion for small amounts of money",
+      "authors": "Harinck, F; Van Dijk, E; Van Beest, I; Mersmann, P",
+      "editors": "",
+      "publisher": "",
+      "year": 2007,
+      "volume": "18",
+      "issue": "",
+      "first_page": "1099",
+      "last_page": "1105",
+      "container": "Psychological Science",
+      "bib_id": 9,
+      "year_suffix": "",
+      "text_id": 247
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1002/bdm.692",
+      "title": "Loss aversion in the eye and in the heart: The autonomic nervous system's responses to losses",
+      "authors": "Hochman, G; Yechiam, E",
+      "editors": "",
+      "publisher": "",
+      "year": 2011,
+      "volume": "24",
+      "issue": "",
+      "first_page": "140",
+      "last_page": "156",
+      "container": "Journal of Behavioral Decision Making",
+      "bib_id": 10,
+      "year_suffix": "",
+      "text_id": 248
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "",
+      "authors": "Kahneman, D",
+      "editors": "",
+      "publisher": "Farrar, Straus and Giroux",
+      "year": 2011,
+      "volume": "",
+      "issue": "",
+      "first_page": null,
+      "last_page": null,
+      "container": "",
+      "bib_id": 11,
+      "year_suffix": "",
+      "text_id": 249
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.2307/1914185",
+      "title": "Prospect theory: An analysis of decision under risk",
+      "authors": "Kahneman, D; Tversky, A",
+      "editors": "",
+      "publisher": "",
+      "year": 1979,
+      "volume": "47",
+      "issue": "",
+      "first_page": "263",
+      "last_page": "292",
+      "container": "Econometrica",
+      "bib_id": 12,
+      "year_suffix": "",
+      "text_id": 250
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1177/0956797611405681",
+      "title": "Winners love winning and losers love money",
+      "authors": "Kassam, K S; Morewedge, C K; Gilbert, D T; Wilson, T D",
+      "editors": "",
+      "publisher": "",
+      "year": 2011,
+      "volume": "22",
+      "issue": "",
+      "first_page": "602",
+      "last_page": "606",
+      "container": "Psychological Science",
+      "bib_id": 13,
+      "year_suffix": "",
+      "text_id": 251
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1111/j.1467-9280.2006.01760.x",
+      "title": "Loss aversion is an affective forecasting error",
+      "authors": "Kermer, D A; Driver-Linn, E; Wilson, T D; Gilbert, D T",
+      "editors": "",
+      "publisher": "",
+      "year": 2006,
+      "volume": "17",
+      "issue": "",
+      "first_page": "649",
+      "last_page": "653",
+      "container": "Psychological Science",
+      "bib_id": 14,
+      "year_suffix": "",
+      "text_id": 252
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1016/j.cognition.2013.05.012",
+      "title": "Comparing predicted and actual affective responses to process versus outcome: An emotion-as-feedback perspective",
+      "authors": "Kwong, J Y Y; Wong, K F E; Tang, S K Y",
+      "editors": "",
+      "publisher": "",
+      "year": 2013,
+      "volume": "129",
+      "issue": "",
+      "first_page": "42",
+      "last_page": "50",
+      "container": "Cognition",
+      "bib_id": 15,
+      "year_suffix": "",
+      "text_id": 253
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1037/a0034340",
+      "title": "Like Schrodinger's cat, the impact bias is both dead and alive: Reply to Wilson and Gilbert",
+      "authors": "Levine, L J; Lench, H C; Kaplan, R L; Safer, M A",
+      "editors": "",
+      "publisher": "",
+      "year": 2013,
+      "volume": "105",
+      "issue": "",
+      "first_page": "749",
+      "last_page": "756",
+      "container": "Journal of Personality and Social Psychology",
+      "bib_id": 16,
+      "year_suffix": "",
+      "text_id": 254
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1177/0956797610381504",
+      "title": "Comparing gains and losses",
+      "authors": "Mcgraw, A P; Larsen, J T; Kahneman, D; Schkade, D",
+      "editors": "",
+      "publisher": "",
+      "year": 2010,
+      "volume": "21",
+      "issue": "",
+      "first_page": "1438",
+      "last_page": "1445",
+      "container": "Psychological Science",
+      "bib_id": 17,
+      "year_suffix": "",
+      "text_id": 255
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "Decision affect theory: Emotional reactions to the outcomes of risky options",
+      "authors": "Mellers, B A; Schwartz, A; Ho, K; Ritov, I",
+      "editors": "",
+      "publisher": "",
+      "year": 1997,
+      "volume": "8",
+      "issue": "",
+      "first_page": "423",
+      "last_page": "429",
+      "container": "Psychological Science",
+      "bib_id": 18,
+      "year_suffix": "",
+      "text_id": 256
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1198/000313004X946",
+      "title": "Six approaches to calculating standardized logistic regression coefficients",
+      "authors": "Menard, S",
+      "editors": "",
+      "publisher": "",
+      "year": 2004,
+      "volume": "58",
+      "issue": "",
+      "first_page": "218",
+      "last_page": "223",
+      "container": "American Statistician",
+      "bib_id": 19,
+      "year_suffix": "",
+      "text_id": 257
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1037/a0033797",
+      "title": "Motivated underpinning of the impact bias in affective forecasts",
+      "authors": "Morewedge, C K; Buechel, E C",
+      "editors": "",
+      "publisher": "",
+      "year": 2013,
+      "volume": "13",
+      "issue": "",
+      "first_page": "1023",
+      "last_page": "1029",
+      "container": "Emotion",
+      "bib_id": 20,
+      "year_suffix": "",
+      "text_id": 258
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1016/S0022-2496(02)00028-7",
+      "title": "Tutorial on maximum likelihood estimation",
+      "authors": "Myung, I J",
+      "editors": "",
+      "publisher": "",
+      "year": 2003,
+      "volume": "47",
+      "issue": "",
+      "first_page": "90",
+      "last_page": "100",
+      "container": "Journal of Mathematical Psychology",
+      "bib_id": 21,
+      "year_suffix": "",
+      "text_id": 259
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1073/pnas.1407535111",
+      "title": "A computational and neural model of momentary subjective well-being",
+      "authors": "Rutledge, R B; Skandali, N; Dayan, P; Dolan, R J",
+      "editors": "",
+      "publisher": "",
+      "year": 2014,
+      "volume": "111",
+      "issue": "",
+      "first_page": "12252",
+      "last_page": "12257",
+      "container": "Proceedings of the National Academy of Sciences",
+      "bib_id": 22,
+      "year_suffix": "",
+      "text_id": 260
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1111/j.2041-210X.2010.00012.x",
+      "title": "Simple means to improve the interpretability of regression coefficients",
+      "authors": "Schielzeth, H",
+      "editors": "",
+      "publisher": "",
+      "year": 2010,
+      "volume": "1",
+      "issue": "",
+      "first_page": "103",
+      "last_page": "113",
+      "container": "Methods in Ecology and Evolution",
+      "bib_id": 23,
+      "year_suffix": "",
+      "text_id": 261
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "Thinking like a trader selectively reduces individuals' loss aversion",
+      "authors": "Sokol-Hessner, P; Hsu, M; Curley, N G; Delgado, M R; Camerer, C F; Phelps, E A",
+      "editors": "",
+      "publisher": "",
+      "year": 2009,
+      "volume": "106",
+      "issue": "",
+      "first_page": "5035",
+      "last_page": "5040",
+      "container": "Proceedings of the National Academy of Sciences",
+      "bib_id": 24,
+      "year_suffix": "",
+      "text_id": 262
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1016/j.cub.2014.08.064",
+      "title": "Dopamine reward prediction error responses reflect marginal utility",
+      "authors": "Stauffer, W R; Lak, A; Schultz, W",
+      "editors": "",
+      "publisher": "",
+      "year": 2014,
+      "volume": "24",
+      "issue": "",
+      "first_page": "2491",
+      "last_page": "2500",
+      "container": "Current Biology",
+      "bib_id": 25,
+      "year_suffix": "",
+      "text_id": 263
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "Rational choice and the framing of decisions",
+      "authors": "Tversky, A; Kahneman, D",
+      "editors": "",
+      "publisher": "",
+      "year": 1986,
+      "volume": "59",
+      "issue": "",
+      "first_page": "251",
+      "last_page": "S278",
+      "container": "The Journal of Business",
+      "bib_id": 26,
+      "year_suffix": "",
+      "text_id": 264
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "Advances in prospect theory: Cumulative representation of uncertainty",
+      "authors": "Tversky, A; Kahneman, D",
+      "editors": "",
+      "publisher": "",
+      "year": 1992,
+      "volume": "5",
+      "issue": "",
+      "first_page": "297",
+      "last_page": "323",
+      "container": "Journal of Risk and Uncertainty",
+      "bib_id": 27,
+      "year_suffix": "",
+      "text_id": 265
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "",
+      "authors": "Von Neumann, J; Morgenstern, O",
+      "editors": "",
+      "publisher": "Princeton University Press",
+      "year": 1947,
+      "volume": "",
+      "issue": "",
+      "first_page": null,
+      "last_page": null,
+      "container": "",
+      "bib_id": 28,
+      "year_suffix": "",
+      "text_id": 266
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1037/a0032662",
+      "title": "The impact bias is alive and well",
+      "authors": "Wilson, T D; Gilbert, D T",
+      "editors": "",
+      "publisher": "",
+      "year": 2013,
+      "volume": "105",
+      "issue": "",
+      "first_page": "740",
+      "last_page": "748",
+      "container": "Journal of Personality and Social Psychology",
+      "bib_id": 29,
+      "year_suffix": "",
+      "text_id": 267
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1037/a0029383",
+      "title": "Losses as modulators of attention: Review and analysis of the unique effects of losses over gains",
+      "authors": "Yechiam, E; Hochman, G",
+      "editors": "",
+      "publisher": "",
+      "year": 2013,
+      "volume": "139",
+      "issue": "",
+      "first_page": "497",
+      "last_page": "518",
+      "container": "Psychological Bulletin",
+      "bib_id": 30,
+      "year_suffix": "",
+      "text_id": 268
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1037/dec0000008",
+      "title": "The complaint bias in subjective evaluations of incentives",
+      "authors": "Yechiam, E; Telpaz, A; Hochman, G",
+      "editors": "",
+      "publisher": "",
+      "year": 2014,
+      "volume": "1",
+      "issue": "",
+      "first_page": "147",
+      "last_page": "160",
+      "container": "Decision",
+      "bib_id": 31,
+      "year_suffix": "",
+      "text_id": 269
+    }
+  ],
+  "xref": [
+    {
+      "xref_id": 0,
+      "xref_type": "bib",
+      "contents": "(Benjamin, Heffetz, Kimball, & Rees-Jones, 2012",
+      "text_id": 210
+    },
+    {
+      "xref_id": 2,
+      "xref_type": "bib",
+      "contents": "(Bernoulli, 1954;",
+      "text_id": null
+    },
+    {
+      "xref_id": 3,
+      "xref_type": "bib",
+      "contents": "(Boyce, Wood, Banks, Clark, & Brown, 2013;",
+      "text_id": 174
+    },
+    {
+      "xref_id": 4,
+      "xref_type": "bib",
+      "contents": "(Carter & McBride, 2013;",
+      "text_id": 15
+    },
+    {
+      "xref_id": 4,
+      "xref_type": "bib",
+      "contents": "(Carter & McBride, 2013;",
+      "text_id": 174
+    },
+    {
+      "xref_id": 4,
+      "xref_type": "bib",
+      "contents": "(Carter & McBride, 2013)",
+      "text_id": 182
+    },
+    {
+      "xref_id": 5,
+      "xref_type": "bib",
+      "contents": "De Neve et al., 2015)",
+      "text_id": 174
+    },
+    {
+      "xref_id": 6,
+      "xref_type": "bib",
+      "contents": "Faul, Erdfelder, Lang, & Buchner, 2007)",
+      "text_id": 43
+    },
+    {
+      "xref_id": 7,
+      "xref_type": "bib",
+      "contents": "Fox & Poldrack, 2014;",
+      "text_id": null
+    },
+    {
+      "xref_id": 8,
+      "xref_type": "bib",
+      "contents": "(Gilbert, Pinel, Wilson, Blumberg, & Wheatley, 1998)",
+      "text_id": 133
+    },
+    {
+      "xref_id": 8,
+      "xref_type": "bib",
+      "contents": "(Gilbert, Pinel, Wilson, Blumberg, & Wheatley, 1998)",
+      "text_id": 137
+    },
+    {
+      "xref_id": 8,
+      "xref_type": "bib",
+      "contents": "Gilbert et al., 1998)",
+      "text_id": 133
+    },
+    {
+      "xref_id": 8,
+      "xref_type": "bib",
+      "contents": "Gilbert et al., 1998)",
+      "text_id": 137
+    },
+    {
+      "xref_id": 8,
+      "xref_type": "bib",
+      "contents": "(Gilbert et al., 1998;",
+      "text_id": 204
+    },
+    {
+      "xref_id": 9,
+      "xref_type": "bib",
+      "contents": "(Harinck, Van Dijk, Van Beest, & Mersmann, 2007;",
+      "text_id": 44
+    },
+    {
+      "xref_id": 9,
+      "xref_type": "bib",
+      "contents": "(Harinck et al., 2007;",
+      "text_id": 187
+    },
+    {
+      "xref_id": 9,
+      "xref_type": "bib",
+      "contents": "(Harinck et al., 2007;",
+      "text_id": 197
+    },
+    {
+      "xref_id": 10,
+      "xref_type": "bib",
+      "contents": "(Hochman & Yechiam, 2011;",
+      "text_id": 202
+    },
+    {
+      "xref_id": 12,
+      "xref_type": "bib",
+      "contents": "(Kahneman & Tversky, 1979;",
+      "text_id": 17
+    },
+    {
+      "xref_id": 12,
+      "xref_type": "bib",
+      "contents": "(Kahneman & Tversky, 1979;",
+      "text_id": null
+    },
+    {
+      "xref_id": 13,
+      "xref_type": "bib",
+      "contents": "Kassam, Morewedge, Gilbert, & Wilson, 2011;",
+      "text_id": 15
+    },
+    {
+      "xref_id": 13,
+      "xref_type": "bib",
+      "contents": "Kassam et al., 2011;",
+      "text_id": 174
+    },
+    {
+      "xref_id": 14,
+      "xref_type": "bib",
+      "contents": "Kermer, Driver-Linn, Wilson, & Gilbert, 2006;",
+      "text_id": 15
+    },
+    {
+      "xref_id": 14,
+      "xref_type": "bib",
+      "contents": "Kermer et al., 2006;",
+      "text_id": 44
+    },
+    {
+      "xref_id": 14,
+      "xref_type": "bib",
+      "contents": "Kermer et al., 2006;",
+      "text_id": 174
+    },
+    {
+      "xref_id": 14,
+      "xref_type": "bib",
+      "contents": "Kermer et al., 2006;",
+      "text_id": 197
+    },
+    {
+      "xref_id": 14,
+      "xref_type": "bib",
+      "contents": "Kermer et al., 2006;",
+      "text_id": 204
+    },
+    {
+      "xref_id": 15,
+      "xref_type": "bib",
+      "contents": "Kwong, Wong, & Tang, 2013;",
+      "text_id": 204
+    },
+    {
+      "xref_id": 16,
+      "xref_type": "bib",
+      "contents": "Levine, Lench, Kaplan, & Safer, 2013;",
+      "text_id": 204
+    },
+    {
+      "xref_id": 17,
+      "xref_type": "bib",
+      "contents": "McGraw, Larsen, Kahneman, & Schkade, 2010;",
+      "text_id": 15
+    },
+    {
+      "xref_id": 17,
+      "xref_type": "bib",
+      "contents": "McGraw et al., 2010;",
+      "text_id": 174
+    },
+    {
+      "xref_id": 17,
+      "xref_type": "bib",
+      "contents": "McGraw et al., 2010)",
+      "text_id": 187
+    },
+    {
+      "xref_id": 17,
+      "xref_type": "bib",
+      "contents": "McGraw et al., 2010)",
+      "text_id": 188
+    },
+    {
+      "xref_id": 17,
+      "xref_type": "bib",
+      "contents": "(McGraw et al., 2010)",
+      "text_id": 187
+    },
+    {
+      "xref_id": 17,
+      "xref_type": "bib",
+      "contents": "(McGraw et al., 2010)",
+      "text_id": 188
+    },
+    {
+      "xref_id": 17,
+      "xref_type": "bib",
+      "contents": "McGraw et al., 2010;",
+      "text_id": 197
+    },
+    {
+      "xref_id": 18,
+      "xref_type": "bib",
+      "contents": "Mellers, Schwartz, Ho, & Ritov, 1997;",
+      "text_id": 15
+    },
+    {
+      "xref_id": 18,
+      "xref_type": "bib",
+      "contents": "Mellers et al., 1997;",
+      "text_id": 174
+    },
+    {
+      "xref_id": 18,
+      "xref_type": "bib",
+      "contents": "Mellers et al., 1997)",
+      "text_id": 197
+    },
+    {
+      "xref_id": 19,
+      "xref_type": "bib",
+      "contents": "(Menard, 2004;",
+      "text_id": 105
+    },
+    {
+      "xref_id": 20,
+      "xref_type": "bib",
+      "contents": "Morewedge & Buechel, 2013;",
+      "text_id": 204
+    },
+    {
+      "xref_id": 21,
+      "xref_type": "bib",
+      "contents": "(Myung, 2003)",
+      "text_id": 89
+    },
+    {
+      "xref_id": 22,
+      "xref_type": "bib",
+      "contents": "Rutledge, Skandali, Dayan, & Dolan, 2014;",
+      "text_id": 15
+    },
+    {
+      "xref_id": 22,
+      "xref_type": "bib",
+      "contents": "Rutledge et al., 2014;",
+      "text_id": 174
+    },
+    {
+      "xref_id": 23,
+      "xref_type": "bib",
+      "contents": "Schielzeth, 2010)",
+      "text_id": 105
+    },
+    {
+      "xref_id": 24,
+      "xref_type": "bib",
+      "contents": "Sokol-Hessner et al., 2009)",
+      "text_id": 202
+    },
+    {
+      "xref_id": 25,
+      "xref_type": "bib",
+      "contents": "Stauffer, Lak, & Schultz, 2014",
+      "text_id": null
+    },
+    {
+      "xref_id": 26,
+      "xref_type": "bib",
+      "contents": "Tversky & Kahneman, 1986",
+      "text_id": 17
+    },
+    {
+      "xref_id": 27,
+      "xref_type": "bib",
+      "contents": ", 1992)",
+      "text_id": 17
+    },
+    {
+      "xref_id": 27,
+      "xref_type": "bib",
+      "contents": "Tversky & Kahneman, 1992)",
+      "text_id": null
+    },
+    {
+      "xref_id": 28,
+      "xref_type": "bib",
+      "contents": "Morgenstern, 1947)",
+      "text_id": null
+    },
+    {
+      "xref_id": 29,
+      "xref_type": "bib",
+      "contents": "Wilson & Gilbert, 2013)",
+      "text_id": 204
+    },
+    {
+      "xref_id": 30,
+      "xref_type": "bib",
+      "contents": "(Yechiam & Hochman, 2013)",
+      "text_id": 199
+    },
+    {
+      "xref_id": 31,
+      "xref_type": "bib",
+      "contents": "Yechiam, Telpaz, & Hochman, 2014)",
+      "text_id": 15
+    },
+    {
+      "xref_id": 31,
+      "xref_type": "bib",
+      "contents": "Yechiam et al., 2014)",
+      "text_id": 44
+    },
+    {
+      "xref_id": 31,
+      "xref_type": "bib",
+      "contents": "Yechiam et al., 2014)",
+      "text_id": 174
+    },
+    {
+      "xref_id": null,
+      "xref_type": "bib",
+      "contents": "(Kahneman, 2011, p. 287)",
+      "text_id": null
+    },
+    {
+      "xref_id": null,
+      "xref_type": "bib",
+      "contents": "(Kahneman & Tversky, 1979, p. 279)",
+      "text_id": 32
+    },
+    {
+      "xref_id": null,
+      "xref_type": "bib",
+      "contents": ", 2014)",
+      "text_id": 210
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "1a",
+      "text_id": 52
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "1b",
+      "text_id": 52
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "1a",
+      "text_id": 68
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "1b",
+      "text_id": 68
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "1c",
+      "text_id": 74
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "S1",
+      "text_id": null
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "2a",
+      "text_id": 117
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "2b",
+      "text_id": 117
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "3",
+      "text_id": 121
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "3",
+      "text_id": 138
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "5",
+      "text_id": 161
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "------------------------------------------|",
+      "text_id": 58
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "4a",
+      "text_id": 140
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "4b",
+      "text_id": 147
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "4",
+      "text_id": null
+    },
+    {
+      "xref_id": null,
+      "xref_type": "table",
+      "contents": "S1",
+      "text_id": 115
+    },
+    {
+      "xref_id": null,
+      "xref_type": "table",
+      "contents": "S2",
+      "text_id": 117
+    },
+    {
+      "xref_id": null,
+      "xref_type": "table",
+      "contents": "S2",
+      "text_id": 129
+    },
+    {
+      "xref_id": null,
+      "xref_type": "table",
+      "contents": "S3",
+      "text_id": 130
+    },
+    {
+      "xref_id": null,
+      "xref_type": "table",
+      "contents": "S4",
+      "text_id": 140
+    },
+    {
+      "xref_id": null,
+      "xref_type": "table",
+      "contents": "S5",
+      "text_id": 148
+    },
+    {
+      "xref_id": null,
+      "xref_type": "table",
+      "contents": "S6",
+      "text_id": 158
+    }
+  ],
+  "figure": [
+    {
+      "figure_id": 1,
+      "section_id": 25,
+      "image": null,
+      "page_number": null
+    },
+    {
+      "figure_id": 2,
+      "section_id": 26,
+      "image": null,
+      "page_number": null
+    },
+    {
+      "figure_id": 3,
+      "section_id": 27,
+      "image": null,
+      "page_number": null
+    },
+    {
+      "figure_id": 4,
+      "section_id": 28,
+      "image": null,
+      "page_number": null
+    }
+  ],
+  "table": [],
+  "eq": [
+    {
+      "text_id": 42,
+      "grp_id": 1,
+      "lhs": "age",
+      "comp": "=",
+      "rhs": "23.94"
+    },
+    {
+      "text_id": 47,
+      "grp_id": 2,
+      "lhs": "age",
+      "comp": "=",
+      "rhs": "23.91"
+    },
+    {
+      "text_id": 98,
+      "grp_id": 3,
+      "lhs": "F(₤0)",
+      "comp": "=",
+      "rhs": "0"
+    },
+    {
+      "text_id": 98,
+      "grp_id": 3,
+      "lhs": "1",
+      "comp": "=",
+      "rhs": "0"
+    },
+    {
+      "text_id": 120,
+      "grp_id": 4,
+      "lhs": "SD",
+      "comp": "=",
+      "rhs": ".26"
+    },
+    {
+      "text_id": 120,
+      "grp_id": 4,
+      "lhs": "interval (CI)",
+      "comp": "=",
+      "rhs": "[.418, .558]"
+    },
+    {
+      "text_id": 120,
+      "grp_id": 4,
+      "lhs": "t(55)",
+      "comp": "=",
+      "rhs": "-14.05"
+    },
+    {
+      "text_id": 120,
+      "grp_id": 4,
+      "lhs": "p",
+      "comp": "<",
+      "rhs": ".001"
+    },
+    {
+      "text_id": 120,
+      "grp_id": 4,
+      "lhs": "Cohen's d",
+      "comp": "=",
+      "rhs": "1.88"
+    },
+    {
+      "text_id": 120,
+      "grp_id": 4,
+      "lhs": "SD",
+      "comp": "=",
+      "rhs": ".23"
+    },
+    {
+      "text_id": 120,
+      "grp_id": 4,
+      "lhs": "95% CI",
+      "comp": "=",
+      "rhs": "[.513, .637]"
+    },
+    {
+      "text_id": 120,
+      "grp_id": 4,
+      "lhs": "t(55)",
+      "comp": "=",
+      "rhs": "-18.52"
+    },
+    {
+      "text_id": 120,
+      "grp_id": 4,
+      "lhs": "p",
+      "comp": "<",
+      "rhs": ".001"
+    },
+    {
+      "text_id": 120,
+      "grp_id": 4,
+      "lhs": "Cohen's d",
+      "comp": "=",
+      "rhs": "2.5"
+    },
+    {
+      "text_id": 122,
+      "grp_id": 5,
+      "lhs": "SD",
+      "comp": "=",
+      "rhs": "0.36"
+    },
+    {
+      "text_id": 122,
+      "grp_id": 5,
+      "lhs": "SD",
+      "comp": "=",
+      "rhs": "0.37"
+    },
+    {
+      "text_id": 131,
+      "grp_id": 6,
+      "lhs": "F(1, 55)",
+      "comp": "=",
+      "rhs": "0.01"
+    },
+    {
+      "text_id": 131,
+      "grp_id": 6,
+      "lhs": "p",
+      "comp": "=",
+      "rhs": ".92"
+    },
+    {
+      "text_id": 131,
+      "grp_id": 6,
+      "lhs": "2",
+      "comp": "=",
+      "rhs": ".00018"
+    },
+    {
+      "text_id": 134,
+      "grp_id": 7,
+      "lhs": "t(55)",
+      "comp": "=",
+      "rhs": "3.31"
+    },
+    {
+      "text_id": 134,
+      "grp_id": 7,
+      "lhs": "p",
+      "comp": "=",
+      "rhs": ".002"
+    },
+    {
+      "text_id": 134,
+      "grp_id": 7,
+      "lhs": "Cohen's d",
+      "comp": "=",
+      "rhs": "0.442"
+    },
+    {
+      "text_id": 134,
+      "grp_id": 7,
+      "lhs": "95% CI",
+      "comp": "=",
+      "rhs": "[0.034, 0.138]"
+    },
+    {
+      "text_id": 134,
+      "grp_id": 7,
+      "lhs": "t(55)",
+      "comp": "=",
+      "rhs": "0.65"
+    },
+    {
+      "text_id": 134,
+      "grp_id": 7,
+      "lhs": "p",
+      "comp": "=",
+      "rhs": ".52"
+    },
+    {
+      "text_id": 134,
+      "grp_id": 7,
+      "lhs": "Cohen's d",
+      "comp": "=",
+      "rhs": "0.087"
+    },
+    {
+      "text_id": 134,
+      "grp_id": 7,
+      "lhs": "95% CI",
+      "comp": "=",
+      "rhs": "[-0.079, 0.155]"
+    },
+    {
+      "text_id": 147,
+      "grp_id": 8,
+      "lhs": "t(55)",
+      "comp": "=",
+      "rhs": "3.04"
+    },
+    {
+      "text_id": 147,
+      "grp_id": 8,
+      "lhs": "p",
+      "comp": "=",
+      "rhs": ".004"
+    },
+    {
+      "text_id": 147,
+      "grp_id": 8,
+      "lhs": "95% CI",
+      "comp": "=",
+      "rhs": "[0.684, 3.33]"
+    },
+    {
+      "text_id": 147,
+      "grp_id": 8,
+      "lhs": "Cohen's d",
+      "comp": "=",
+      "rhs": "0.406"
+    },
+    {
+      "text_id": 147,
+      "grp_id": 8,
+      "lhs": "t(55)",
+      "comp": "=",
+      "rhs": "2.93"
+    },
+    {
+      "text_id": 147,
+      "grp_id": 8,
+      "lhs": "p",
+      "comp": "=",
+      "rhs": ".005"
+    },
+    {
+      "text_id": 147,
+      "grp_id": 8,
+      "lhs": "95% CI",
+      "comp": "=",
+      "rhs": "[0.599, 3.19]"
+    },
+    {
+      "text_id": 147,
+      "grp_id": 8,
+      "lhs": "Cohen's d",
+      "comp": "=",
+      "rhs": "0.392"
+    },
+    {
+      "text_id": 151,
+      "grp_id": 9,
+      "lhs": "F(1, 55)",
+      "comp": "=",
+      "rhs": "6.54"
+    },
+    {
+      "text_id": 151,
+      "grp_id": 9,
+      "lhs": "p",
+      "comp": "=",
+      "rhs": ".013"
+    },
+    {
+      "text_id": 151,
+      "grp_id": 9,
+      "lhs": "2",
+      "comp": "=",
+      "rhs": ".106"
+    },
+    {
+      "text_id": 151,
+      "grp_id": 9,
+      "lhs": "F(1, 55)",
+      "comp": "=",
+      "rhs": "7.46"
+    },
+    {
+      "text_id": 151,
+      "grp_id": 9,
+      "lhs": "p",
+      "comp": "=",
+      "rhs": ".008"
+    },
+    {
+      "text_id": 151,
+      "grp_id": 9,
+      "lhs": "2",
+      "comp": "=",
+      "rhs": ".119"
+    },
+    {
+      "text_id": 152,
+      "grp_id": 10,
+      "lhs": "t(55)",
+      "comp": "=",
+      "rhs": "3.66"
+    },
+    {
+      "text_id": 152,
+      "grp_id": 10,
+      "lhs": "p",
+      "comp": "=",
+      "rhs": ".001"
+    },
+    {
+      "text_id": 152,
+      "grp_id": 10,
+      "lhs": "95% CI",
+      "comp": "=",
+      "rhs": "[1.67, 5.71]"
+    },
+    {
+      "text_id": 152,
+      "grp_id": 10,
+      "lhs": "Cohen's d",
+      "comp": "=",
+      "rhs": "0.489"
+    },
+    {
+      "text_id": 152,
+      "grp_id": 10,
+      "lhs": "t(55)",
+      "comp": "=",
+      "rhs": "2.45"
+    },
+    {
+      "text_id": 152,
+      "grp_id": 10,
+      "lhs": "p",
+      "comp": "=",
+      "rhs": ".018"
+    },
+    {
+      "text_id": 152,
+      "grp_id": 10,
+      "lhs": "95% CI",
+      "comp": "=",
+      "rhs": "[0.91, 9.10]"
+    },
+    {
+      "text_id": 152,
+      "grp_id": 10,
+      "lhs": "Cohen's d",
+      "comp": "=",
+      "rhs": "0.327"
+    },
+    {
+      "text_id": 152,
+      "grp_id": 10,
+      "lhs": "t(55)",
+      "comp": "=",
+      "rhs": "0.82"
+    },
+    {
+      "text_id": 152,
+      "grp_id": 10,
+      "lhs": "p",
+      "comp": "=",
+      "rhs": ".42"
+    },
+    {
+      "text_id": 152,
+      "grp_id": 10,
+      "lhs": "95% CI",
+      "comp": "=",
+      "rhs": "[-3.25, 7.71]"
+    },
+    {
+      "text_id": 152,
+      "grp_id": 10,
+      "lhs": "Cohen's d",
+      "comp": "=",
+      "rhs": "0.109"
+    },
+    {
+      "text_id": 152,
+      "grp_id": 10,
+      "lhs": "t(55)",
+      "comp": "=",
+      "rhs": "0.79"
+    },
+    {
+      "text_id": 152,
+      "grp_id": 10,
+      "lhs": "p",
+      "comp": "=",
+      "rhs": ".43"
+    },
+    {
+      "text_id": 152,
+      "grp_id": 10,
+      "lhs": "95% CI",
+      "comp": "=",
+      "rhs": "[-2.75, 6.32]"
+    },
+    {
+      "text_id": 152,
+      "grp_id": 10,
+      "lhs": "Cohen's d",
+      "comp": "=",
+      "rhs": "0.105"
+    },
+    {
+      "text_id": 157,
+      "grp_id": 11,
+      "lhs": "t(55)",
+      "comp": "<",
+      "rhs": "1.2"
+    },
+    {
+      "text_id": 157,
+      "grp_id": 11,
+      "lhs": "p",
+      "comp": ">",
+      "rhs": ".23"
+    },
+    {
+      "text_id": 157,
+      "grp_id": 11,
+      "lhs": "Cohen's d",
+      "comp": "<",
+      "rhs": ".17"
+    },
+    {
+      "text_id": 157,
+      "grp_id": 11,
+      "lhs": "t(55)",
+      "comp": "=",
+      "rhs": "3.59"
+    },
+    {
+      "text_id": 157,
+      "grp_id": 11,
+      "lhs": "p",
+      "comp": "=",
+      "rhs": ".001"
+    },
+    {
+      "text_id": 157,
+      "grp_id": 11,
+      "lhs": "95% CI",
+      "comp": "=",
+      "rhs": "[1.29, 4.55]"
+    },
+    {
+      "text_id": 157,
+      "grp_id": 11,
+      "lhs": "Cohen's d",
+      "comp": "=",
+      "rhs": ".479"
+    },
+    {
+      "text_id": 157,
+      "grp_id": 11,
+      "lhs": "t(55)",
+      "comp": "=",
+      "rhs": "2.28"
+    },
+    {
+      "text_id": 157,
+      "grp_id": 11,
+      "lhs": "p",
+      "comp": "=",
+      "rhs": ".027"
+    },
+    {
+      "text_id": 157,
+      "grp_id": 11,
+      "lhs": "95% CI",
+      "comp": "=",
+      "rhs": "[0.197, 2.89]"
+    },
+    {
+      "text_id": 157,
+      "grp_id": 11,
+      "lhs": "Cohen's d",
+      "comp": "=",
+      "rhs": "0.307"
+    },
+    {
+      "text_id": 161,
+      "grp_id": 12,
+      "lhs": "r(56)",
+      "comp": "=",
+      "rhs": ".56"
+    },
+    {
+      "text_id": 161,
+      "grp_id": 12,
+      "lhs": "p",
+      "comp": "<",
+      "rhs": ".001"
+    },
+    {
+      "text_id": 161,
+      "grp_id": 12,
+      "lhs": "r(56)",
+      "comp": "=",
+      "rhs": ".34"
+    },
+    {
+      "text_id": 161,
+      "grp_id": 12,
+      "lhs": "p",
+      "comp": "=",
+      "rhs": ".012"
+    },
+    {
+      "text_id": 161,
+      "grp_id": 12,
+      "lhs": "r(56)",
+      "comp": "=",
+      "rhs": "-.61"
+    },
+    {
+      "text_id": 161,
+      "grp_id": 12,
+      "lhs": "p",
+      "comp": "<",
+      "rhs": ".001"
+    },
+    {
+      "text_id": 161,
+      "grp_id": 12,
+      "lhs": "r(56)",
+      "comp": "=",
+      "rhs": "-.46"
+    },
+    {
+      "text_id": 161,
+      "grp_id": 12,
+      "lhs": "p",
+      "comp": "<",
+      "rhs": ".001"
+    },
+    {
+      "text_id": 180,
+      "grp_id": 13,
+      "lhs": "R",
+      "comp": "=",
+      "rhs": "-.61"
+    },
+    {
+      "text_id": 180,
+      "grp_id": 13,
+      "lhs": "R",
+      "comp": "=",
+      "rhs": ".56"
+    },
+    {
+      "text_id": 180,
+      "grp_id": 13,
+      "lhs": "R",
+      "comp": "=",
+      "rhs": ".34"
+    },
+    {
+      "text_id": 180,
+      "grp_id": 13,
+      "lhs": "R",
+      "comp": "=",
+      "rhs": "-.46"
+    },
+    {
+      "text_id": 129,
+      "grp_id": 14,
+      "lhs": "difference",
+      "comp": "<",
+      "rhs": "-112"
+    },
+    {
+      "text_id": 129,
+      "grp_id": 14,
+      "lhs": "difference",
+      "comp": "<",
+      "rhs": "-37"
+    },
+    {
+      "text_id": 171,
+      "grp_id": 15,
+      "lhs": "p",
+      "comp": "<",
+      "rhs": ".05"
+    },
+    {
+      "text_id": 236,
+      "grp_id": 16,
+      "lhs": "p",
+      "comp": "<",
+      "rhs": ".05"
+    }
+  ],
+  "bib_match": [
+    {
+      "bib_id": 0,
+      "service": "crossref",
+      "service_id": null,
+      "score": 194.8215,
+      "bib_type": "article",
+      "doi": "10.1257/aer.102.5.2083",
+      "title": "What Do You Think Would Make You Happier? What Do You Think You Would Choose?",
+      "authors": [
+        {
+          "given": "Daniel J",
+          "family": "Benjamin"
+        },
+        {
+          "given": "Ori",
+          "family": "Heffetz"
+        },
+        {
+          "given": "Miles S",
+          "family": "Kimball"
+        },
+        {
+          "given": "Alex",
+          "family": "Rees-Jones"
+        }
+      ],
+      "editors": [],
+      "publisher": "American Economic Association",
+      "year": 2012,
+      "date": null,
+      "container": "American Economic Review",
+      "volume": "102",
+      "issue": "5",
+      "first_page": "2083",
+      "last_page": "2110",
+      "edition": null,
+      "version": null,
+      "url": "https://doi.org/10.1257/aer.102.5.2083"
+    },
+    {
+      "bib_id": 1,
+      "service": "crossref",
+      "service_id": null,
+      "score": 140.4787,
+      "bib_type": "techreport",
+      "doi": "10.3386/w18927",
+      "title": "Can Marginal Rates of Substitution Be Inferred from Happiness Data? Evidence from Residency Choices",
+      "authors": [
+        {
+          "given": "Daniel",
+          "family": "Benjamin"
+        },
+        {
+          "given": "Ori",
+          "family": "Heffetz"
+        },
+        {
+          "given": "Miles",
+          "family": "Kimball"
+        },
+        {
+          "given": "Alex",
+          "family": "Rees-Jones"
+        }
+      ],
+      "editors": [],
+      "publisher": "National Bureau of Economic Research",
+      "year": 2013,
+      "date": null,
+      "container": null,
+      "volume": null,
+      "issue": null,
+      "first_page": null,
+      "last_page": null,
+      "edition": null,
+      "version": null,
+      "url": "https://doi.org/10.3386/w18927"
+    },
+    {
+      "bib_id": 2,
+      "service": "crossref",
+      "service_id": null,
+      "score": 56.8014,
+      "bib_type": "article",
+      "doi": "10.2307/1909829",
+      "title": "Exposition of a New Theory on the Measurement of Risk",
+      "authors": [
+        {
+          "given": "Daniel",
+          "family": "Bernoulli"
+        }
+      ],
+      "editors": [],
+      "publisher": "JSTOR",
+      "year": 1954,
+      "date": null,
+      "container": "Econometrica",
+      "volume": "22",
+      "issue": "1",
+      "first_page": "23",
+      "last_page": null,
+      "edition": null,
+      "version": null,
+      "url": "https://doi.org/10.2307/1909829"
+    },
+    {
+      "bib_id": 3,
+      "service": "crossref",
+      "service_id": null,
+      "score": 150.3702,
+      "bib_type": "article",
+      "doi": "10.1177/0956797613496436",
+      "title": "Money, Well-Being, and Loss Aversion",
+      "authors": [
+        {
+          "given": "Christopher J.",
+          "family": "Boyce"
+        },
+        {
+          "given": "Alex M.",
+          "family": "Wood"
+        },
+        {
+          "given": "James",
+          "family": "Banks"
+        },
+        {
+          "given": "Andrew E.",
+          "family": "Clark"
+        },
+        {
+          "given": "Gordon D. A.",
+          "family": "Brown"
+        }
+      ],
+      "editors": [],
+      "publisher": "SAGE Publications",
+      "year": 2013,
+      "date": null,
+      "container": "Psychological Science",
+      "volume": "24",
+      "issue": "12",
+      "first_page": "2557",
+      "last_page": "2562",
+      "edition": null,
+      "version": null,
+      "url": "https://doi.org/10.1177/0956797613496436"
+    },
+    {
+      "bib_id": 4,
+      "service": "crossref",
+      "service_id": null,
+      "score": 89.9744,
+      "bib_type": "article",
+      "doi": "10.1016/j.socec.2012.11.009",
+      "title": "Experienced utility versus decision utility: Putting the ‘S’ in satisfaction",
+      "authors": [
+        {
+          "given": "Steven",
+          "family": "Carter"
+        },
+        {
+          "given": "Michael",
+          "family": "McBride"
+        }
+      ],
+      "editors": [],
+      "publisher": "Elsevier BV",
+      "year": 2013,
+      "date": null,
+      "container": "The Journal of Socio-Economics",
+      "volume": "42",
+      "issue": null,
+      "first_page": "13",
+      "last_page": "23",
+      "edition": null,
+      "version": null,
+      "url": "https://doi.org/10.1016/j.socec.2012.11.009"
+    },
+    {
+      "bib_id": 5,
+      "service": "crossref",
+      "service_id": null,
+      "score": 72.3612,
+      "bib_type": "article",
+      "doi": "10.2139/ssrn.2586417",
+      "title": "The Asymmetric Experience of Positive and Negative Economic Growth: Global Evidence Using Subjective Well-Being Data",
+      "authors": [
+        {
+          "given": "Jan-Emmanuel",
+          "family": "De Neve"
+        },
+        {
+          "given": "George",
+          "family": "Ward"
+        },
+        {
+          "given": "Femke",
+          "family": "De Keulenaer"
+        },
+        {
+          "given": "Bert",
+          "family": "Van Landeghem"
+        },
+        {
+          "given": "Georgios",
+          "family": "Kavetsos"
+        },
+        {
+          "given": "Michael I.",
+          "family": "Norton"
+        }
+      ],
+      "editors": [],
+      "publisher": "Elsevier BV",
+      "year": 2015,
+      "date": null,
+      "container": "SSRN Electronic Journal",
+      "volume": null,
+      "issue": null,
+      "first_page": null,
+      "last_page": null,
+      "edition": null,
+      "version": null,
+      "url": "https://doi.org/10.2139/ssrn.2586417"
+    },
+    {
+      "bib_id": 6,
+      "service": "crossref",
+      "service_id": null,
+      "score": 102.6952,
+      "bib_type": "article",
+      "doi": "10.3758/bf03193146",
+      "title": "G*Power 3: A flexible statistical power analysis program for the social, behavioral, and biomedical sciences",
+      "authors": [
+        {
+          "given": "Franz",
+          "family": "Faul"
+        },
+        {
+          "given": "Edgar",
+          "family": "Erdfelder"
+        },
+        {
+          "given": "Albert-Georg",
+          "family": "Lang"
+        },
+        {
+          "given": "Axel",
+          "family": "Buchner"
+        }
+      ],
+      "editors": [],
+      "publisher": "Springer Science and Business Media LLC",
+      "year": 2007,
+      "date": null,
+      "container": "Behavior Research Methods",
+      "volume": "39",
+      "issue": "2",
+      "first_page": "175",
+      "last_page": "191",
+      "edition": null,
+      "version": null,
+      "url": "https://doi.org/10.3758/bf03193146"
+    },
+    {
+      "bib_id": 8,
+      "service": "crossref",
+      "service_id": null,
+      "score": 100.6012,
+      "bib_type": "article",
+      "doi": "10.1037/0022-3514.75.3.617",
+      "title": "Immune neglect: A source of durability bias in affective forecasting.",
+      "authors": [
+        {
+          "given": "Daniel T.",
+          "family": "Gilbert"
+        },
+        {
+          "given": "Elizabeth C.",
+          "family": "Pinel"
+        },
+        {
+          "given": "Timothy D.",
+          "family": "Wilson"
+        },
+        {
+          "given": "Stephen J.",
+          "family": "Blumberg"
+        },
+        {
+          "given": "Thalia P.",
+          "family": "Wheatley"
+        }
+      ],
+      "editors": [],
+      "publisher": "American Psychological Association (APA)",
+      "year": 1998,
+      "date": null,
+      "container": "Journal of Personality and Social Psychology",
+      "volume": "75",
+      "issue": "3",
+      "first_page": "617",
+      "last_page": "638",
+      "edition": null,
+      "version": null,
+      "url": "https://doi.org/10.1037/0022-3514.75.3.617"
+    },
+    {
+      "bib_id": 9,
+      "service": "crossref",
+      "service_id": null,
+      "score": 153.0354,
+      "bib_type": "article",
+      "doi": "10.1111/j.1467-9280.2007.02031.x",
+      "title": "When Gains Loom Larger Than Losses",
+      "authors": [
+        {
+          "given": "Fieke",
+          "family": "Harinck"
+        },
+        {
+          "given": "Eric",
+          "family": "Van Dijk"
+        },
+        {
+          "given": "Ilja",
+          "family": "Van Beest"
+        },
+        {
+          "given": "Paul",
+          "family": "Mersmann"
+        }
+      ],
+      "editors": [],
+      "publisher": "SAGE Publications",
+      "year": 2007,
+      "date": null,
+      "container": "Psychological Science",
+      "volume": "18",
+      "issue": "12",
+      "first_page": "1099",
+      "last_page": "1105",
+      "edition": null,
+      "version": null,
+      "url": "https://doi.org/10.1111/j.1467-9280.2007.02031.x"
+    },
+    {
+      "bib_id": 10,
+      "service": "crossref",
+      "service_id": null,
+      "score": 98.858,
+      "bib_type": "article",
+      "doi": "10.1002/bdm.692",
+      "title": "Loss aversion in the eye and in the heart: The autonomic nervous system's responses to losses",
+      "authors": [
+        {
+          "given": "Guy",
+          "family": "Hochman"
+        },
+        {
+          "given": "Eldad",
+          "family": "Yechiam"
+        }
+      ],
+      "editors": [],
+      "publisher": "Wiley",
+      "year": 2011,
+      "date": null,
+      "container": "Journal of Behavioral Decision Making",
+      "volume": "24",
+      "issue": "2",
+      "first_page": "140",
+      "last_page": "156",
+      "edition": null,
+      "version": null,
+      "url": "https://doi.org/10.1002/bdm.692"
+    },
+    {
+      "bib_id": 12,
+      "service": "crossref",
+      "service_id": null,
+      "score": 81.5211,
+      "bib_type": "article",
+      "doi": "10.2307/1914185",
+      "title": "Prospect Theory: An Analysis of Decision under Risk",
+      "authors": [
+        {
+          "given": "Daniel",
+          "family": "Kahneman"
+        },
+        {
+          "given": "Amos",
+          "family": "Tversky"
+        }
+      ],
+      "editors": [],
+      "publisher": "JSTOR",
+      "year": 1979,
+      "date": null,
+      "container": "Econometrica",
+      "volume": "47",
+      "issue": "2",
+      "first_page": "263",
+      "last_page": null,
+      "edition": null,
+      "version": null,
+      "url": "https://doi.org/10.2307/1914185"
+    },
+    {
+      "bib_id": 13,
+      "service": "crossref",
+      "service_id": null,
+      "score": 103.7802,
+      "bib_type": "article",
+      "doi": "10.1177/0956797611405681",
+      "title": "Winners Love Winning and Losers Love Money",
+      "authors": [
+        {
+          "given": "Karim S.",
+          "family": "Kassam"
+        },
+        {
+          "given": "Carey K.",
+          "family": "Morewedge"
+        },
+        {
+          "given": "Daniel T.",
+          "family": "Gilbert"
+        },
+        {
+          "given": "Timothy D.",
+          "family": "Wilson"
+        }
+      ],
+      "editors": [],
+      "publisher": "SAGE Publications",
+      "year": 2011,
+      "date": null,
+      "container": "Psychological Science",
+      "volume": "22",
+      "issue": "5",
+      "first_page": "602",
+      "last_page": "606",
+      "edition": null,
+      "version": null,
+      "url": "https://doi.org/10.1177/0956797611405681"
+    },
+    {
+      "bib_id": 14,
+      "service": "crossref",
+      "service_id": null,
+      "score": 88.9735,
+      "bib_type": "article",
+      "doi": "10.1111/j.1467-9280.2006.01760.x",
+      "title": "Loss Aversion Is an Affective Forecasting Error",
+      "authors": [
+        {
+          "given": "Deborah A.",
+          "family": "Kermer"
+        },
+        {
+          "given": "Erin",
+          "family": "Driver-Linn"
+        },
+        {
+          "given": "Timothy D.",
+          "family": "Wilson"
+        },
+        {
+          "given": "Daniel T.",
+          "family": "Gilbert"
+        }
+      ],
+      "editors": [],
+      "publisher": "SAGE Publications",
+      "year": 2006,
+      "date": null,
+      "container": "Psychological Science",
+      "volume": "17",
+      "issue": "8",
+      "first_page": "649",
+      "last_page": "653",
+      "edition": null,
+      "version": null,
+      "url": "https://doi.org/10.1111/j.1467-9280.2006.01760.x"
+    },
+    {
+      "bib_id": 15,
+      "service": "crossref",
+      "service_id": null,
+      "score": 100.8372,
+      "bib_type": "article",
+      "doi": "10.1016/j.cognition.2013.05.012",
+      "title": "Comparing predicted and actual affective responses to process versus outcome: An emotion-as-feedback perspective",
+      "authors": [
+        {
+          "given": "Jessica Y.Y.",
+          "family": "Kwong"
+        },
+        {
+          "given": "Kin Fai Ellick",
+          "family": "Wong"
+        },
+        {
+          "given": "Suki K.Y.",
+          "family": "Tang"
+        }
+      ],
+      "editors": [],
+      "publisher": "Elsevier BV",
+      "year": 2013,
+      "date": null,
+      "container": "Cognition",
+      "volume": "129",
+      "issue": "1",
+      "first_page": "42",
+      "last_page": "50",
+      "edition": null,
+      "version": null,
+      "url": "https://doi.org/10.1016/j.cognition.2013.05.012"
+    },
+    {
+      "bib_id": 16,
+      "service": "crossref",
+      "service_id": null,
+      "score": 106.7395,
+      "bib_type": "article",
+      "doi": "10.1037/a0034340",
+      "title": "Like Schrödinger’s cat, the impact bias is both dead and alive: Reply to Wilson and Gilbert (2013).",
+      "authors": [
+        {
+          "given": "Linda J.",
+          "family": "Levine"
+        },
+        {
+          "given": "Heather C.",
+          "family": "Lench"
+        },
+        {
+          "given": "Robin L.",
+          "family": "Kaplan"
+        },
+        {
+          "given": "Martin A.",
+          "family": "Safer"
+        }
+      ],
+      "editors": [],
+      "publisher": "American Psychological Association (APA)",
+      "year": 2013,
+      "date": null,
+      "container": "Journal of Personality and Social Psychology",
+      "volume": "105",
+      "issue": "5",
+      "first_page": "749",
+      "last_page": "756",
+      "edition": null,
+      "version": null,
+      "url": "https://doi.org/10.1037/a0034340"
+    },
+    {
+      "bib_id": 17,
+      "service": "crossref",
+      "service_id": null,
+      "score": 81.3737,
+      "bib_type": "article",
+      "doi": "10.1177/0956797610381504",
+      "title": "Comparing Gains and Losses",
+      "authors": [
+        {
+          "given": "A. Peter",
+          "family": "McGraw"
+        },
+        {
+          "given": "Jeff T.",
+          "family": "Larsen"
+        },
+        {
+          "given": "Daniel",
+          "family": "Kahneman"
+        },
+        {
+          "given": "David",
+          "family": "Schkade"
+        }
+      ],
+      "editors": [],
+      "publisher": "SAGE Publications",
+      "year": 2010,
+      "date": null,
+      "container": "Psychological Science",
+      "volume": "21",
+      "issue": "10",
+      "first_page": "1438",
+      "last_page": "1445",
+      "edition": null,
+      "version": null,
+      "url": "https://doi.org/10.1177/0956797610381504"
+    },
+    {
+      "bib_id": 18,
+      "service": "crossref",
+      "service_id": null,
+      "score": 98.1466,
+      "bib_type": "article",
+      "doi": "10.1111/j.1467-9280.1997.tb00455.x",
+      "title": "Decision Affect Theory: Emotional Reactions to the Outcomes of Risky Options",
+      "authors": [
+        {
+          "given": "Barbara A",
+          "family": "Mellers"
+        },
+        {
+          "given": "Alan",
+          "family": "Schwartz"
+        },
+        {
+          "given": "Katty",
+          "family": "Ho"
+        },
+        {
+          "given": "Ilana",
+          "family": "Ritov"
+        }
+      ],
+      "editors": [],
+      "publisher": "SAGE Publications",
+      "year": 1997,
+      "date": null,
+      "container": "Psychological Science",
+      "volume": "8",
+      "issue": "6",
+      "first_page": "423",
+      "last_page": "429",
+      "edition": null,
+      "version": null,
+      "url": "https://doi.org/10.1111/j.1467-9280.1997.tb00455.x"
+    },
+    {
+      "bib_id": 19,
+      "service": "crossref",
+      "service_id": null,
+      "score": 87.6287,
+      "bib_type": "article",
+      "doi": "10.1198/000313004x946",
+      "title": "Six Approaches to Calculating Standardized Logistic Regression Coefficients",
+      "authors": [
+        {
+          "given": "Scott",
+          "family": "Menard"
+        }
+      ],
+      "editors": [],
+      "publisher": "Informa UK Limited",
+      "year": 2004,
+      "date": null,
+      "container": "The American Statistician",
+      "volume": "58",
+      "issue": "3",
+      "first_page": "218",
+      "last_page": "223",
+      "edition": null,
+      "version": null,
+      "url": "https://doi.org/10.1198/000313004x946"
+    },
+    {
+      "bib_id": 20,
+      "service": "crossref",
+      "service_id": null,
+      "score": 79.9217,
+      "bib_type": "article",
+      "doi": "10.1037/a0033797",
+      "title": "Motivated underpinnings of the impact bias in affective forecasts.",
+      "authors": [
+        {
+          "given": "Carey K.",
+          "family": "Morewedge"
+        },
+        {
+          "given": "Eva C.",
+          "family": "Buechel"
+        }
+      ],
+      "editors": [],
+      "publisher": "American Psychological Association (APA)",
+      "year": 2013,
+      "date": null,
+      "container": "Emotion",
+      "volume": "13",
+      "issue": "6",
+      "first_page": "1023",
+      "last_page": "1029",
+      "edition": null,
+      "version": null,
+      "url": "https://doi.org/10.1037/a0033797"
+    },
+    {
+      "bib_id": 21,
+      "service": "crossref",
+      "service_id": null,
+      "score": 59.9354,
+      "bib_type": "article",
+      "doi": "10.1016/s0022-2496(02)00028-7",
+      "title": "Tutorial on maximum likelihood estimation",
+      "authors": [
+        {
+          "given": "In Jae",
+          "family": "Myung"
+        }
+      ],
+      "editors": [],
+      "publisher": "Elsevier BV",
+      "year": 2003,
+      "date": null,
+      "container": "Journal of Mathematical Psychology",
+      "volume": "47",
+      "issue": "1",
+      "first_page": "90",
+      "last_page": "100",
+      "edition": null,
+      "version": null,
+      "url": "https://doi.org/10.1016/s0022-2496(02)00028-7"
+    },
+    {
+      "bib_id": 22,
+      "service": "crossref",
+      "service_id": null,
+      "score": 91.1103,
+      "bib_type": "article",
+      "doi": "10.1073/pnas.1407535111",
+      "title": "A computational and neural model of momentary subjective well-being",
+      "authors": [
+        {
+          "given": "Robb B.",
+          "family": "Rutledge"
+        },
+        {
+          "given": "Nikolina",
+          "family": "Skandali"
+        },
+        {
+          "given": "Peter",
+          "family": "Dayan"
+        },
+        {
+          "given": "Raymond J.",
+          "family": "Dolan"
+        }
+      ],
+      "editors": [],
+      "publisher": "Proceedings of the National Academy of Sciences",
+      "year": 2014,
+      "date": null,
+      "container": "Proceedings of the National Academy of Sciences",
+      "volume": "111",
+      "issue": "33",
+      "first_page": "12252",
+      "last_page": "12257",
+      "edition": null,
+      "version": null,
+      "url": "https://doi.org/10.1073/pnas.1407535111"
+    },
+    {
+      "bib_id": 23,
+      "service": "crossref",
+      "service_id": null,
+      "score": 78.6374,
+      "bib_type": "article",
+      "doi": "10.1111/j.2041-210x.2010.00012.x",
+      "title": "Simple means to improve the interpretability of regression coefficients",
+      "authors": [
+        {
+          "given": "Holger",
+          "family": "Schielzeth"
+        }
+      ],
+      "editors": [],
+      "publisher": "Wiley",
+      "year": 2010,
+      "date": null,
+      "container": "Methods in Ecology and Evolution",
+      "volume": "1",
+      "issue": "2",
+      "first_page": "103",
+      "last_page": "113",
+      "edition": null,
+      "version": null,
+      "url": "https://doi.org/10.1111/j.2041-210x.2010.00012.x"
+    },
+    {
+      "bib_id": 24,
+      "service": "crossref",
+      "service_id": null,
+      "score": 121.9601,
+      "bib_type": "article",
+      "doi": "10.1073/pnas.0806761106",
+      "title": "Thinking like a trader selectively reduces individuals' loss aversion",
+      "authors": [
+        {
+          "given": "Peter",
+          "family": "Sokol-Hessner"
+        },
+        {
+          "given": "Ming",
+          "family": "Hsu"
+        },
+        {
+          "given": "Nina G.",
+          "family": "Curley"
+        },
+        {
+          "given": "Mauricio R.",
+          "family": "Delgado"
+        },
+        {
+          "given": "Colin F.",
+          "family": "Camerer"
+        },
+        {
+          "given": "Elizabeth A.",
+          "family": "Phelps"
+        }
+      ],
+      "editors": [],
+      "publisher": "Proceedings of the National Academy of Sciences",
+      "year": 2009,
+      "date": null,
+      "container": "Proceedings of the National Academy of Sciences",
+      "volume": "106",
+      "issue": "13",
+      "first_page": "5035",
+      "last_page": "5040",
+      "edition": null,
+      "version": null,
+      "url": "https://doi.org/10.1073/pnas.0806761106"
+    },
+    {
+      "bib_id": 25,
+      "service": "crossref",
+      "service_id": null,
+      "score": 109.0145,
+      "bib_type": "article",
+      "doi": "10.1016/j.cub.2014.08.064",
+      "title": "Dopamine Reward Prediction Error Responses Reflect Marginal Utility",
+      "authors": [
+        {
+          "given": "William R.",
+          "family": "Stauffer"
+        },
+        {
+          "given": "Armin",
+          "family": "Lak"
+        },
+        {
+          "given": "Wolfram",
+          "family": "Schultz"
+        }
+      ],
+      "editors": [],
+      "publisher": "Elsevier BV",
+      "year": 2014,
+      "date": null,
+      "container": "Current Biology",
+      "volume": "24",
+      "issue": "21",
+      "first_page": "2491",
+      "last_page": "2500",
+      "edition": null,
+      "version": null,
+      "url": "https://doi.org/10.1016/j.cub.2014.08.064"
+    },
+    {
+      "bib_id": 26,
+      "service": "crossref",
+      "service_id": null,
+      "score": 66.2008,
+      "bib_type": "incollection",
+      "doi": "10.1017/cbo9780511803475.013",
+      "title": "Rational Choice and the Framing of Decisions",
+      "authors": [
+        {
+          "given": "Amos",
+          "family": "Tversky"
+        },
+        {
+          "given": "Daniel",
+          "family": "Kahneman"
+        }
+      ],
+      "editors": [],
+      "publisher": "Cambridge University Press",
+      "year": 2000,
+      "date": null,
+      "container": "Choices, Values, and Frames",
+      "volume": null,
+      "issue": null,
+      "first_page": "209",
+      "last_page": "223",
+      "edition": null,
+      "version": null,
+      "url": "https://doi.org/10.1017/cbo9780511803475.013"
+    },
+    {
+      "bib_id": 27,
+      "service": "crossref",
+      "service_id": null,
+      "score": 86.9884,
+      "bib_type": "article",
+      "doi": "10.1007/bf00122574",
+      "title": "Advances in prospect theory: Cumulative representation of uncertainty",
+      "authors": [
+        {
+          "given": "Amos",
+          "family": "Tversky"
+        },
+        {
+          "given": "Daniel",
+          "family": "Kahneman"
+        }
+      ],
+      "editors": [],
+      "publisher": "Springer Science and Business Media LLC",
+      "year": 1992,
+      "date": null,
+      "container": "Journal of Risk and Uncertainty",
+      "volume": "5",
+      "issue": "4",
+      "first_page": "297",
+      "last_page": "323",
+      "edition": null,
+      "version": null,
+      "url": "https://doi.org/10.1007/bf00122574"
+    },
+    {
+      "bib_id": 29,
+      "service": "crossref",
+      "service_id": null,
+      "score": 62.2269,
+      "bib_type": "article",
+      "doi": "10.1037/a0032662",
+      "title": "The impact bias is alive and well.",
+      "authors": [
+        {
+          "given": "Timothy D.",
+          "family": "Wilson"
+        },
+        {
+          "given": "Daniel T.",
+          "family": "Gilbert"
+        }
+      ],
+      "editors": [],
+      "publisher": "American Psychological Association (APA)",
+      "year": 2013,
+      "date": null,
+      "container": "Journal of Personality and Social Psychology",
+      "volume": "105",
+      "issue": "5",
+      "first_page": "740",
+      "last_page": "748",
+      "edition": null,
+      "version": null,
+      "url": "https://doi.org/10.1037/a0032662"
+    },
+    {
+      "bib_id": 30,
+      "service": "crossref",
+      "service_id": null,
+      "score": 108.0016,
+      "bib_type": "article",
+      "doi": "10.1037/a0029383",
+      "title": "Losses as modulators of attention: Review and analysis of the unique effects of losses over gains.",
+      "authors": [
+        {
+          "given": "Eldad",
+          "family": "Yechiam"
+        },
+        {
+          "given": "Guy",
+          "family": "Hochman"
+        }
+      ],
+      "editors": [],
+      "publisher": "American Psychological Association (APA)",
+      "year": 2013,
+      "date": null,
+      "container": "Psychological Bulletin",
+      "volume": "139",
+      "issue": "2",
+      "first_page": "497",
+      "last_page": "518",
+      "edition": null,
+      "version": null,
+      "url": "https://doi.org/10.1037/a0029383"
+    },
+    {
+      "bib_id": 31,
+      "service": "crossref",
+      "service_id": null,
+      "score": 99.3299,
+      "bib_type": "article",
+      "doi": "10.1037/dec0000008",
+      "title": "The complaint bias in subjective evaluations of incentives.",
+      "authors": [
+        {
+          "given": "Eldad",
+          "family": "Yechiam"
+        },
+        {
+          "given": "Ariel",
+          "family": "Telpaz"
+        },
+        {
+          "given": "Guy",
+          "family": "Hochman"
+        }
+      ],
+      "editors": [],
+      "publisher": "American Psychological Association (APA)",
+      "year": 2014,
+      "date": null,
+      "container": "Decision",
+      "volume": "1",
+      "issue": "2",
+      "first_page": "147",
+      "last_page": "160",
+      "edition": null,
+      "version": null,
+      "url": "https://doi.org/10.1037/dec0000008"
+    }
+  ]
+}

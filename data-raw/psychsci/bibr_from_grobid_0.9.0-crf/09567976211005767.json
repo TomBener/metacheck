@@ -1,0 +1,4705 @@
+{
+  "paper_id": "09567976211005767",
+  "info": [
+    {
+      "title": "The Effect of Replications on Citation Patterns: Evidence From a Large-Scale Reproducibility Project",
+      "keywords": ["scientific communication", "statistical analysis", "open data", "preregistered"],
+      "doi": "10.1177/09567976211005767",
+      "file_hash": "4e7e3a1029d7071f",
+      "input_format": "TEI XML",
+      "file_name": "data-raw/psychsci/grobid_0.9.0-crf/09567976211005767.xml",
+      "bibr_version": "10.0",
+      "paper_type": "unknown",
+      "paper_type_confidence": 0,
+      "oecd_l1": null,
+      "oecd_l2": null,
+      "oecd_confidence": null
+    }
+  ],
+  "author": [
+    {
+      "author_id": 1,
+      "given": "Felix",
+      "family": "Schafmeister",
+      "affiliation": "Department of Economics Department of Economics Stockholm School of Economics Stockholm School of Economics",
+      "email": "felix.schafmeister@phdstudent.hhs.se",
+      "corresponding": false,
+      "orcid": "",
+      "role": []
+    }
+  ],
+  "text": [
+    {
+      "text_id": 1,
+      "paragraph_id": 1,
+      "section_id": 0,
+      "text": "Replication of existing research is often referred to as one of the cornerstones of modern science.",
+      "page_number": null
+    },
+    {
+      "text_id": 2,
+      "paragraph_id": 1,
+      "section_id": 0,
+      "text": "In this study, I tested whether the publication of independent replication attempts affects the citation patterns of the original studies.",
+      "page_number": null
+    },
+    {
+      "text_id": 3,
+      "paragraph_id": 1,
+      "section_id": 0,
+      "text": "Investigating 95 replications conducted in the context of the Reproducibility Project: Psychology, I found little evidence for an adjustment of citation patterns in response to the publication of these independent replication attempts.",
+      "page_number": null
+    },
+    {
+      "text_id": 4,
+      "paragraph_id": 1,
+      "section_id": 0,
+      "text": "This finding was robust to the choice of replication criterion, various model specifications, and the composition of the contrast group.",
+      "page_number": null
+    },
+    {
+      "text_id": 5,
+      "paragraph_id": 1,
+      "section_id": 0,
+      "text": "I further present some suggestive evidence that shifts in the underlying composition of supporting and disputing citations have likely been small.",
+      "page_number": null
+    },
+    {
+      "text_id": 6,
+      "paragraph_id": 1,
+      "section_id": 0,
+      "text": "I conclude with a review of the evidence in favor of the remaining explanations and discuss the potential consequences of these findings for the workings of the scientific process.",
+      "page_number": null
+    },
+    {
+      "text_id": 7,
+      "paragraph_id": 5,
+      "section_id": 2,
+      "text": "Replication of existing research is often referred to as one of the cornerstones of modern science.",
+      "page_number": null
+    },
+    {
+      "text_id": 8,
+      "paragraph_id": 5,
+      "section_id": 2,
+      "text": "However, direct replications, defined as the same analyses being conducted on newly collected data using original materials, have historically been published infrequently.",
+      "page_number": null
+    },
+    {
+      "text_id": 9,
+      "paragraph_id": 5,
+      "section_id": 2,
+      "text": "1 Recently, a number of systematic, large-scale replication attempts have been published in prominent scientific journals (e.g., see Camerer et al., 2016Camerer et al., , 2018;;Klein et al., 2018;Open Science Collaboration, 2015), and the question of replicability has received a substantial amount of attention in subsequent academic publications and media outlets.",
+      "page_number": null
+    },
+    {
+      "text_id": 10,
+      "paragraph_id": 6,
+      "section_id": 2,
+      "text": "The replication projects published thus far have undoubtedly succeeded in raising awareness of methodological shortcomings with regard to the power of research designs and the pitfalls of postdiction, culminating in the advent of Registered Reports (Nosek & Lakens, 2014) and a widespread adoption of preregistration of research designs in psychology (Nosek & Lindsay, 2018).",
+      "page_number": null
+    },
+    {
+      "text_id": 11,
+      "paragraph_id": 6,
+      "section_id": 2,
+      "text": "However, little is known about how these replication attempts have shaped the way specific findings are perceived in the literature.",
+      "page_number": null
+    },
+    {
+      "text_id": 12,
+      "paragraph_id": 6,
+      "section_id": 2,
+      "text": "In this study, I attempted to fill this gap by analyzing changes in yearly citation patterns of articles replicated in the context of the Reproducibility Project: Psychology (RP:P; Open Science Collaboration, 2015) after the publication of its results in Science in 2015.",
+      "page_number": null
+    },
+    {
+      "text_id": 13,
+      "paragraph_id": 7,
+      "section_id": 2,
+      "text": "A single replication attempt, especially if insufficiently powered, provides only limited information about whether a prior research result is robust.",
+      "page_number": null
+    },
+    {
+      "text_id": 14,
+      "paragraph_id": 7,
+      "section_id": 2,
+      "text": "However, I worked under the assumption that replication attempts can shift beliefs about the validity of an existing research finding (McDiarmid et al., 2021).",
+      "page_number": null
+    },
+    {
+      "text_id": 15,
+      "paragraph_id": 7,
+      "section_id": 2,
+      "text": "In particular, replications that produce evidence in line with the original findings should strengthen beliefs in their validity, whereas nonsupportive or contradicting replications should weaken these beliefs (Earp & Trafimow, 2015).",
+      "page_number": null
+    },
+    {
+      "text_id": 16,
+      "paragraph_id": 7,
+      "section_id": 2,
+      "text": "This motivated my main research question: Does the publication of supportive versus nonsupportive replication attempts affect the frequency with which the underlying studies are cited?",
+      "page_number": null
+    },
+    {
+      "text_id": 17,
+      "paragraph_id": 7,
+      "section_id": 2,
+      "text": "2 I believe that the answer to this question could provide important insights into the workings of the scientific process by illuminating the extent to which new insights replace or strengthen existing knowledge and thereby shape the way new research is conducted.",
+      "page_number": null
+    },
+    {
+      "text_id": 18,
+      "paragraph_id": 8,
+      "section_id": 2,
+      "text": "I found that neither supportive nor nonsupportive replications have had a statistically significant effect on the number of times articles are cited.",
+      "page_number": null
+    },
+    {
+      "text_id": 19,
+      "paragraph_id": 8,
+      "section_id": 2,
+      "text": "This null result is robust to different replication criteria and various model specifications as well as to alternative compositions of the contrast group.",
+      "page_number": null
+    },
+    {
+      "text_id": 20,
+      "paragraph_id": 8,
+      "section_id": 2,
+      "text": "In investigating potential explanations for my findings, I present some suggestive evidence that shifts in the underlying composition of supporting and disputing citations have likely been small and discuss how the remaining explanations fit with the evidence.",
+      "page_number": null
+    },
+    {
+      "text_id": 21,
+      "paragraph_id": 9,
+      "section_id": 2,
+      "text": "Although I acknowledge that a number of forces are at the heart of my results, some of the contending explanations have particularly daunting consequences and therefore deserve additional attention: If researchers either were unaware of replication results or, in spite of their awareness, chose to discount them and continued to cite the original results at face value, this could considerably limit the self-corrective ability of the scientific process because it would reduce the likelihood that research results that have been called into question will be phased out and replaced by new insights.",
+      "page_number": null
+    },
+    {
+      "text_id": 22,
+      "paragraph_id": 9,
+      "section_id": 2,
+      "text": "This could be particularly problematic in light of evidence by Gneezy and Serra-Garcia (2021), who report that studies that failed to replicate within three large-scale replication projects (and for which prediction markets were conducted) have higher citation counts than studies that replicated successfully.",
+      "page_number": null
+    },
+    {
+      "text_id": 23,
+      "paragraph_id": 13,
+      "section_id": 4,
+      "text": "My empirical approach built on the sampling design of the RP:P (Open Science Collaboration, 2012, 2015).",
+      "page_number": null
+    },
+    {
+      "text_id": 24,
+      "paragraph_id": 13,
+      "section_id": 4,
+      "text": "This project was a coordinated effort by the Center for Open Science that brought together a large and diverse group of more than 200 researchers and aimed to test the reproducibility of psychological science.",
+      "page_number": null
+    },
+    {
+      "text_id": 25,
+      "paragraph_id": 13,
+      "section_id": 4,
+      "text": "Participating research teams chose studies to replicate from a predefined sampling frame and subsequently conducted independent replication attempts \"using high-powered designs and original materials when available\" (Open Science Collaboration, 2015, abstract).",
+      "page_number": null
+    },
+    {
+      "text_id": 26,
+      "paragraph_id": 13,
+      "section_id": 4,
+      "text": "Ultimately, the results of 100 such replication attempts were included in the publication, which concluded that merely 36% of the replications had resulted in statistically significant results compared with 97% of the original studies.",
+      "page_number": null
+    },
+    {
+      "text_id": 27,
+      "paragraph_id": 14,
+      "section_id": 4,
+      "text": "Although a number of drawbacks in the design of the RP:P have been identified, it is one of the most comprehensive attempts to study replicability and followed a strict sampling protocol designed to minimize selection effects.",
+      "page_number": null
+    },
+    {
+      "text_id": 28,
+      "paragraph_id": 14,
+      "section_id": 4,
+      "text": "This particular feature made it an appealing setting to study the present research question because it allowed for the definition of a contrast group against which the effect of replications can be evaluated.",
+      "page_number": null
+    },
+    {
+      "text_id": 29,
+      "paragraph_id": 15,
+      "section_id": 4,
+      "text": "Specifically, the sample of eligible studies for the RP:P was selected from the 2008 issues of the Journal of Experimental Psychology: Learning, Memory, and Cognition (JEP), Journal of Personality and Social Psychology (JPSP), and Psychological Science (PS).",
+      "page_number": null
+    },
+    {
+      "text_id": 30,
+      "paragraph_id": 15,
+      "section_id": 4,
+      "text": "Replication teams chose studies from among the first 30 articles published in each of these journals beginning with the first 2008 issue; additional articles were made available in sets of 10 in case of additional demand.",
+      "page_number": null
+    },
+    {
+      "text_id": 31,
+      "paragraph_id": 15,
+      "section_id": 4,
+      "text": "3 This sampling strategy limits concerns regarding the selection of articles on the basis of observable or unobservable characteristics, which could complicate an analysis of citation patterns if those characteristics were correlated with both the likelihood of successful replication and citation patterns.",
+      "page_number": null
+    },
+    {
+      "text_id": 32,
+      "paragraph_id": 15,
+      "section_id": 4,
+      "text": "Further, I expected that if the articles included in the RP:P sampling frame had not been selected for replication, they would have had similar citation patterns over time as studies published immediately prior or shortly after in the same journals.",
+      "page_number": null
+    },
+    {
+      "text_id": 33,
+      "paragraph_id": 16,
+      "section_id": 4,
+      "text": "The resulting variation therefore lends itself to be exploited in a generalized differences-in-differences",
+      "page_number": null
+    },
+    {
+      "text_id": 34,
+      "paragraph_id": 18,
+      "section_id": 5,
+      "text": "A crucial feature of the scientific process is its ability to self-correct by identifying and promoting robust results and phasing out those that fail to hold up to further scrutiny.",
+      "page_number": null
+    },
+    {
+      "text_id": 35,
+      "paragraph_id": 18,
+      "section_id": 5,
+      "text": "This process ensures that through the cumulative generation of research and systematic replications, a reliable body of knowledge is created.",
+      "page_number": null
+    },
+    {
+      "text_id": 36,
+      "paragraph_id": 18,
+      "section_id": 5,
+      "text": "This article provides a test of this self-corrective ability \"in the medium run\" by analyzing articles replicated in the context of the Reproducibility Project: Psychology.",
+      "page_number": null
+    },
+    {
+      "text_id": 37,
+      "paragraph_id": 18,
+      "section_id": 5,
+      "text": "I investigated changes in citation patterns around the time the replication results were published, and my findings do not support the hypothesis that citation rates changed in response to independent replications.",
+      "page_number": null
+    },
+    {
+      "text_id": 38,
+      "paragraph_id": 18,
+      "section_id": 5,
+      "text": "These results thus emphasize the need for replication on a large scale and the effective communication of replication results. design.",
+      "page_number": null
+    },
+    {
+      "text_id": 39,
+      "paragraph_id": 18,
+      "section_id": 5,
+      "text": "This design compares changes in yearly citations after the publication of the replication results between the replicated and the contrast sample.",
+      "page_number": null
+    },
+    {
+      "text_id": 40,
+      "paragraph_id": 18,
+      "section_id": 5,
+      "text": "Under the assumption of parallel trends-in the absence of the RP:P replications, the different sets of studies would have followed similar citation trajectories-this allowed me to identify the effect of interest.",
+      "page_number": null
+    },
+    {
+      "text_id": 41,
+      "paragraph_id": 20,
+      "section_id": 6,
+      "text": "The definition of a contrast group is complicated by two notable deviations of the RP:P from its intended sampling frame.",
+      "page_number": null
+    },
+    {
+      "text_id": 42,
+      "paragraph_id": 20,
+      "section_id": 6,
+      "text": "First, because of constraints regarding available instruments, samples, and knowledge among replicators, not all studies in the sampling frame could be replicated.",
+      "page_number": null
+    },
+    {
+      "text_id": 43,
+      "paragraph_id": 20,
+      "section_id": 6,
+      "text": "Second, the sampling frame was not always followed, resulting in some studies being replicated despite being published in an issue that had not been made available for selection.",
+      "page_number": null
+    },
+    {
+      "text_id": 44,
+      "paragraph_id": 21,
+      "section_id": 6,
+      "text": "This introduces some degree of selection into the sample of replicated studies.",
+      "page_number": null
+    },
+    {
+      "text_id": 45,
+      "paragraph_id": 21,
+      "section_id": 6,
+      "text": "The first deviation implies that studies with certain features were infrequently subjected to replications.",
+      "page_number": null
+    },
+    {
+      "text_id": 46,
+      "paragraph_id": 21,
+      "section_id": 6,
+      "text": "This becomes an issue if these types of studies are also subject to different citation trends, thus potentially violating the common-trends assumption that underlies my identification of the effect of interest.",
+      "page_number": null
+    },
+    {
+      "text_id": 47,
+      "paragraph_id": 21,
+      "section_id": 6,
+      "text": "Similarly, the second deviation suggests that some studies might have been selected by groups of researchers particularly interested in their results.",
+      "page_number": null
+    },
+    {
+      "text_id": 48,
+      "paragraph_id": 21,
+      "section_id": 6,
+      "text": "Although the exact drivers of these choices are unclear, this interest might correlate with factors that affect citation trends and could therefore present a challenge to the identifying assumption.",
+      "page_number": null
+    },
+    {
+      "text_id": 49,
+      "paragraph_id": 22,
+      "section_id": 6,
+      "text": "To deal with these concerns, I implemented the following sample-selection protocol.",
+      "page_number": null
+    },
+    {
+      "text_id": 50,
+      "paragraph_id": 22,
+      "section_id": 6,
+      "text": "I collected data for the 95 unique articles that had significant original findings and for which a replication was reported in the RP:P, thus excluding the three studies with insignificant original findings as well as the two duplicate replications.",
+      "page_number": null
+    },
+    {
+      "text_id": 51,
+      "paragraph_id": 22,
+      "section_id": 6,
+      "text": "These data were combined with information from articles that were published in the same journals in adjacent months.",
+      "page_number": null
+    },
+    {
+      "text_id": 52,
+      "paragraph_id": 22,
+      "section_id": 6,
+      "text": "This initial selection of eligible articles is detailed in Table 1.",
+      "page_number": null
+    },
+    {
+      "text_id": 53,
+      "paragraph_id": 22,
+      "section_id": 6,
+      "text": "Within the sampling frame, all original research articles were considered eligible.",
+      "page_number": null
+    },
+    {
+      "text_id": 54,
+      "paragraph_id": 22,
+      "section_id": 6,
+      "text": "Other material, such as editorials, commentaries, corrigenda, and book reviews, were excluded.",
+      "page_number": null
+    },
+    {
+      "text_id": 55,
+      "paragraph_id": 23,
+      "section_id": 6,
+      "text": "I further implemented a set of exclusion criteria intended to increase the comparability of the contrast and treatment groups.",
+      "page_number": null
+    },
+    {
+      "text_id": 56,
+      "paragraph_id": 23,
+      "section_id": 6,
+      "text": "These exclusion criteria were designed to mimic the constraints faced by the replication teams in the RP:P, eliminating studies that use hard-to-access samples or that require specialized instruments that are not readily available in most laboratories.",
+      "page_number": null
+    },
+    {
+      "text_id": 57,
+      "paragraph_id": 23,
+      "section_id": 6,
+      "text": "Further, I eliminated articles that did not include any experimental results that can be represented by a single statistical inference test or effect size.",
+      "page_number": null
+    },
+    {
+      "text_id": 58,
+      "paragraph_id": 23,
+      "section_id": 6,
+      "text": "4 I first coded the articles according to these criteria.",
+      "page_number": null
+    },
+    {
+      "text_id": 59,
+      "paragraph_id": 23,
+      "section_id": 6,
+      "text": "To ensure the fidelity of the coding, a research assistant blind to the research question additionally coded a random subsample of 169 studies.",
+      "page_number": null
+    },
+    {
+      "text_id": 60,
+      "paragraph_id": 23,
+      "section_id": 6,
+      "text": "The two classifications aligned in 97% of cases.",
+      "page_number": null
+    },
+    {
+      "text_id": 61,
+      "paragraph_id": 24,
+      "section_id": 6,
+      "text": "The sampling frame laid out in Table 1 contains a total of 476 articles, of which 202 were published in PS, 144 in JPSP, and 130 in JEP.",
+      "page_number": null
+    },
+    {
+      "text_id": 62,
+      "paragraph_id": 24,
+      "section_id": 6,
+      "text": "Applying the exclusion criteria left 329 articles, of which 117 were published in PS, 112 in JPSP, and 100 in JEP.",
+      "page_number": null
+    },
+    {
+      "text_id": 63,
+      "paragraph_id": 24,
+      "section_id": 6,
+      "text": "This implies journal shares ranging from 30% for JEP to 36% for PS, which closely matches the percentages of articles replicated in the RP:P (29% for JEP to 41% for PS).",
+      "page_number": null
+    },
+    {
+      "text_id": 64,
+      "paragraph_id": 26,
+      "section_id": 7,
+      "text": "My main outcome variable was the number of citations that a publication received in a specific year.",
+      "page_number": null
+    },
+    {
+      "text_id": 65,
+      "paragraph_id": 26,
+      "section_id": 7,
+      "text": "I collected these data from the Web of Science Core Collection between 2010 and 2019.",
+      "page_number": null
+    },
+    {
+      "text_id": 66,
+      "paragraph_id": 26,
+      "section_id": 7,
+      "text": "This time range was chosen with the aim of constructing a balanced panel data set despite the fact that the sampling frame contains articles published between 2007 and 2009.",
+      "page_number": null
+    },
+    {
+      "text_id": 67,
+      "paragraph_id": 26,
+      "section_id": 7,
+      "text": "The fact that the coverage of the Web of Science is limited within the social sciences (Kousha & Thelwall, 2007) was unlikely to represent a problem for my empirical strategy because there should not be any reason to expect that coverage of citing articles would have changed over time for different studies in my sample.",
+      "page_number": null
+    },
+    {
+      "text_id": 68,
+      "paragraph_id": 26,
+      "section_id": 7,
+      "text": "In the main analyses, I applied an inverse hyperbolic sine (IHS) transformation to account for the nonnormality of the data.",
+      "page_number": null
+    },
+    {
+      "text_id": 69,
+      "paragraph_id": 26,
+      "section_id": 7,
+      "text": "This transformation is conceptually similar to the approach of adding 1 unit to each observation and taking the natural logarithm recommended by Thelwall and Wilson (2014) but is generally considered less arbitrary (Bellemare & Wichman, 2020).",
+      "page_number": null
+    },
+    {
+      "text_id": 70,
+      "paragraph_id": 26,
+      "section_id": 7,
+      "text": "Further, to address the research question, I required a measure to evaluate the degree to which a replication attempt supports the original finding.",
+      "page_number": null
+    },
+    {
+      "text_id": 71,
+      "paragraph_id": 26,
+      "section_id": 7,
+      "text": "An intuitive criterion relies on the binary decision of whether the replication produces evidence that is statistically significant at the 5% level in the same direction as the original finding.",
+      "page_number": null
+    },
+    {
+      "text_id": 72,
+      "paragraph_id": 26,
+      "section_id": 7,
+      "text": "The main point of contention in using this criterion is its inability to quantify the strength of the evidence contained in a replication coded as failed or successful.",
+      "page_number": null
+    },
+    {
+      "text_id": 73,
+      "paragraph_id": 26,
+      "section_id": 7,
+      "text": "For example, a failed replication attempt might not be able to detect a true effect if it is itself underpowered, whereas a high-powered replication might uncover an effect that is orders of magnitude smaller than the original effect.",
+      "page_number": null
+    },
+    {
+      "text_id": 74,
+      "paragraph_id": 26,
+      "section_id": 7,
+      "text": "The \"small-telescopes\" approach of Simonsohn (2015) is based on the idea of detectability in that it tests whether the effect obtained in a replication study is smaller than an effect size that the original study had only 33% power to detect.",
+      "page_number": null
+    },
+    {
+      "text_id": 75,
+      "paragraph_id": 26,
+      "section_id": 7,
+      "text": "In comparison, the Bayesian approach applied by Etz (2015) is based on the calculation of Bayes factors (BFs) comparing the hypothesis of no effect with an alternative of the effect size found in the original publication, originally proposed by Verhagen and Wagenmakers (2014).",
+      "page_number": null
+    },
+    {
+      "text_id": 76,
+      "paragraph_id": 27,
+      "section_id": 7,
+      "text": "In the main specification, I employed the intuitive binary criterion, which has been used as the main replication criterion in the RP:P and has been widely communicated.",
+      "page_number": null
+    },
+    {
+      "text_id": 77,
+      "paragraph_id": 27,
+      "section_id": 7,
+      "text": "In a secondary analysis, I instead used an alternative definition of failed replications based on the Bayesian approach outlined above.",
+      "page_number": null
+    },
+    {
+      "text_id": 78,
+      "paragraph_id": 27,
+      "section_id": 7,
+      "text": "To ensure the comparability of my analyses across the different criteria, I collapsed the continuous BF into three categories.",
+      "page_number": null
+    },
+    {
+      "text_id": 79,
+      "paragraph_id": 27,
+      "section_id": 7,
+      "text": "Specifically, I coded a replication as successful if it yielded a BF of 3 or more and as unsuccessful if it yielded a BF of one third or less; all remaining replications were coded as inconclusive.",
+      "page_number": null
+    },
+    {
+      "text_id": 80,
+      "paragraph_id": 27,
+      "section_id": 7,
+      "text": "In Section S1 in the Supplemental Material available online, I further implemented similar analyses on the basis of the small-telescopes approach.",
+      "page_number": null
+    },
+    {
+      "text_id": 81,
+      "paragraph_id": 29,
+      "section_id": 8,
+      "text": "The main criterion classified 35 replication attempts as successful and the remaining 60 as unsuccessful.",
+      "page_number": null
+    },
+    {
+      "text_id": 82,
+      "paragraph_id": 29,
+      "section_id": 8,
+      "text": "The Bayesian criterion considered 31 replications successful, 34 unsuccessful, and 26 inconclusive.",
+      "page_number": null
+    },
+    {
+      "text_id": 83,
+      "paragraph_id": 29,
+      "section_id": 8,
+      "text": "5 The discrepancy in the number of articles coded is due to three studies missing effect-size estimates for either the original analysis or the replication attempt in the RP:P files.",
+      "page_number": null
+    },
+    {
+      "text_id": 84,
+      "paragraph_id": 29,
+      "section_id": 8,
+      "text": "For one further study, the BF could not be calculated, resulting in a total of 91 replicated studies for which I had a valid classification.",
+      "page_number": null
+    },
+    {
+      "text_id": 85,
+      "paragraph_id": 30,
+      "section_id": 8,
+      "text": "Regarding the distribution of yearly citations, the average study in my estimation sample received 7.34 (SD = 7.91) citations, and the share of article years with no citations was 0.068.",
+      "page_number": null
+    },
+    {
+      "text_id": 86,
+      "paragraph_id": 30,
+      "section_id": 8,
+      "text": "Further, yearly citations have been on an increasing trajectory even several years after the initial publication: On average, there were 6.46 (SD = 5.37) citations per year between 2010 and 2014 and 8.22 (SD = 8.81) yearly citations from 2015 to 2019.",
+      "page_number": null
+    },
+    {
+      "text_id": 87,
+      "paragraph_id": 30,
+      "section_id": 8,
+      "text": "This reflects the fact that the articles under consideration are among the most influential in the field and thus have a long citation half-life (Walters, 2011).",
+      "page_number": null
+    },
+    {
+      "text_id": 88,
+      "paragraph_id": 30,
+      "section_id": 8,
+      "text": "6",
+      "page_number": null
+    },
+    {
+      "text_id": 89,
+      "paragraph_id": 32,
+      "section_id": 9,
+      "text": "The core of the estimation strategy lies in the assumption that in the absence of the RP:P replications, the studies included in the contrast group would have been subject to the same citation trends as those in the RP:P sample.",
+      "page_number": null
+    },
+    {
+      "text_id": 90,
+      "paragraph_id": 32,
+      "section_id": 9,
+      "text": "Under this assumption, I could identify the effect of interest in a generalized differences-in-differences estimation framework by comparing changes in citation trends.",
+      "page_number": null
+    },
+    {
+      "text_id": 91,
+      "paragraph_id": 32,
+      "section_id": 9,
+      "text": "I employed two closely related operationalizations: The first assumed that treatment effects are constant over time, whereas the second allowed for time-varying treatment effects.",
+      "page_number": null
+    },
+    {
+      "text_id": 92,
+      "paragraph_id": 33,
+      "section_id": 9,
+      "text": "The first model was",
+      "page_number": null
+    },
+    {
+      "text_id": 93,
+      "paragraph_id": 34,
+      "section_id": 9,
+      "text": "where Y i t , is the IHS-transformed number of citations for article i in year t, with t running from 2010 to 2019, and α i and β t indicate article and year fixed effects, respectively.",
+      "page_number": null
+    },
+    {
+      "text_id": 94,
+      "paragraph_id": 34,
+      "section_id": 9,
+      "text": "D i t , Successful and D i t , Failed are indicator variables taking a value of 1 for observations from 2015 or later for which the replication attempt has been successful or unsuccessful, respectively.",
+      "page_number": null
+    },
+    {
+      "text_id": 95,
+      "paragraph_id": 34,
+      "section_id": 9,
+      "text": "Finally, the matrix X i,t indicates time-varying, article-specific controls that are described in more detail below.",
+      "page_number": null
+    },
+    {
+      "text_id": 96,
+      "paragraph_id": 34,
+      "section_id": 9,
+      "text": "The model is estimated with ordinary least squares (OLS), and standard errors allow for clustering at the article level.",
+      "page_number": null
+    },
+    {
+      "text_id": 97,
+      "paragraph_id": 35,
+      "section_id": 9,
+      "text": "The two sets of fixed effects α β i t and control for time-invariant, article-specific variation as well as articleinvariant, year-specific effects.",
+      "page_number": null
+    },
+    {
+      "text_id": 98,
+      "paragraph_id": 35,
+      "section_id": 9,
+      "text": "In particular, assuming that beliefs about an article's replicability as well as their effect on citations are time invariant, the article fixed effects account for initial heterogeneity in beliefs about the likelihood of replication success.",
+      "page_number": null
+    },
+    {
+      "text_id": 99,
+      "paragraph_id": 35,
+      "section_id": 9,
+      "text": "This is important because considerable heterogeneity likely exists in beliefs about the likelihood of replication success in the contrast group, and no survey measures are available to control for these beliefs.",
+      "page_number": null
+    },
+    {
+      "text_id": 100,
+      "paragraph_id": 35,
+      "section_id": 9,
+      "text": "Dreber et al. (2015) have shown that prediction markets, in which experts bet on the outcome of the replications, can be successful at predicting the results of replications, as can machine-learning algorithms (Altmejd et al., 2019;Yang et al., 2020).",
+      "page_number": null
+    },
+    {
+      "text_id": 101,
+      "paragraph_id": 35,
+      "section_id": 9,
+      "text": "This suggests that researchers have meaningful priors about the likelihood of replication, which should correlate with the number of citations (Gneezy & Serra-Garcia, 2021).",
+      "page_number": null
+    },
+    {
+      "text_id": 102,
+      "paragraph_id": 35,
+      "section_id": 9,
+      "text": "Hence, these fixed effects alleviate concerns about articles that were replicated successfully receiving on average higher (or lower) citations than those in the contrast group because the latter is a mixture of studies that would replicate successfully and others that would not.",
+      "page_number": null
+    },
+    {
+      "text_id": 103,
+      "paragraph_id": 36,
+      "section_id": 9,
+      "text": "The second model differs from the first only in that it allows for time-varying treatment coefficients.",
+      "page_number": null
+    },
+    {
+      "text_id": 104,
+      "paragraph_id": 36,
+      "section_id": 9,
+      "text": "It is given by",
+      "page_number": null
+    },
+    {
+      "text_id": 105,
+      "paragraph_id": 37,
+      "section_id": 9,
+      "text": "with S equal to {2010, . . ., 2019}\\{2014}.",
+      "page_number": null
+    },
+    {
+      "text_id": 106,
+      "paragraph_id": 37,
+      "section_id": 9,
+      "text": "The variables D i t j , , Successful take a value of 1 if an article was replicated successfully and the observation is from year j, and equivalently for D i t j , , Failed .",
+      "page_number": null
+    },
+    {
+      "text_id": 107,
+      "paragraph_id": 37,
+      "section_id": 9,
+      "text": "The 2014 coefficients are normalized to 0 and thus serve as the reference categories against which the posttreatment coefficients will be compared.",
+      "page_number": null
+    },
+    {
+      "text_id": 108,
+      "paragraph_id": 38,
+      "section_id": 9,
+      "text": "This specification has two advantages.",
+      "page_number": null
+    },
+    {
+      "text_id": 109,
+      "paragraph_id": 38,
+      "section_id": 9,
+      "text": "First, it allows one to gauge whether any effects of replications on citation patterns arise immediately or only with a lag as well as whether these effects persist over time.",
+      "page_number": null
+    },
+    {
+      "text_id": 110,
+      "paragraph_id": 38,
+      "section_id": 9,
+      "text": "Second, the pre-2014 coefficients allow for an investigation of the identifying assumption: If the estimated coefficients prior to the publication of the RP:P results were significantly different from zero, this would call into question the assumption that replicated and nonreplicated articles would have followed similar citation trends in the absence of the RP:P",
+      "page_number": null
+    },
+    {
+      "text_id": 111,
+      "paragraph_id": 39,
+      "section_id": 9,
+      "text": "It is important to note that the above exposition deviates from my preregistered analysis plan in a number of ways.",
+      "page_number": null
+    },
+    {
+      "text_id": 112,
+      "paragraph_id": 39,
+      "section_id": 9,
+      "text": "7 Most importantly, I specified Equation 2 as my main model and proposed to test my main hypothesis by testing for the joint significance of the post-2014 coefficients.",
+      "page_number": null
+    },
+    {
+      "text_id": 113,
+      "paragraph_id": 39,
+      "section_id": 9,
+      "text": "I chose to deviate from this strategy because it did not take into account the direction of the estimated effects and depends strongly on the choice of base year.",
+      "page_number": null
+    },
+    {
+      "text_id": 114,
+      "paragraph_id": 39,
+      "section_id": 9,
+      "text": "The results of this test and further explanations are provided in Section S1.",
+      "page_number": null
+    },
+    {
+      "text_id": 115,
+      "paragraph_id": 41,
+      "section_id": 10,
+      "text": "Table 2 presents four specifications of Equation 1 that differ in terms of which set of time-varying controls were included in the model.",
+      "page_number": null
+    },
+    {
+      "text_id": 116,
+      "paragraph_id": 41,
+      "section_id": 10,
+      "text": "Row 2 presents the prespecified model equation including fixed effects for the number of years since publication.",
+      "page_number": null
+    },
+    {
+      "text_id": 117,
+      "paragraph_id": 41,
+      "section_id": 10,
+      "text": "Rows 3 and 4 represent further attempts at accounting for potential deviations from the common-trends assumption by including separate year-fixed effects for each journal (Row 3) or allowing for issue-specific linear trends (Row 4).",
+      "page_number": null
+    },
+    {
+      "text_id": 118,
+      "paragraph_id": 41,
+      "section_id": 10,
+      "text": "In all specifications, successful replications were positively associated with citation rates, δ  = 0 053 . , 95% confidence interval (CI) = [ . , .",
+      "page_number": null
+    },
+    {
+      "text_id": 119,
+      "paragraph_id": 42,
+      "section_id": 10,
+      "text": "] -0 09 0 195 , t( ) . 423 0 73 = , p = .468 , and failed replications were negatively associated with citation rates, ρ  = -0 035 . , 95% CI = [ -0 159 0 089 . , . ], t( ) . 423 0 56 = -, p = .576, but neither of these effects for large values of y, the coefficient estimates obtained in the main specification, taken at face value, suggest that successful replications led to an increase in yearly citations of around 5% and that unsuccessful replications led to a decrease in yearly citations of around 4%.",
+      "page_number": null
+    },
+    {
+      "text_id": 120,
+      "paragraph_id": 42,
+      "section_id": 10,
+      "text": "For the average article in my sample, which has roughly eight citations per year, this would imply a change of ±1 citation every 2 to 3 years.",
+      "page_number": null
+    },
+    {
+      "text_id": 121,
+      "paragraph_id": 44,
+      "section_id": 11,
+      "text": "An obvious question is whether my inability to reject the null hypothesis is the result of the study being inadequately powered.",
+      "page_number": null
+    },
+    {
+      "text_id": 122,
+      "paragraph_id": 44,
+      "section_id": 11,
+      "text": "On the basis of the estimated standard errors in the main specification, I had 80% power to detect an effect of around 0.2 in IHS units for successful replications and around 0.18 IHS units for failed replications at an α of .05, corresponding to 0.19 and 0.17 standard deviations, respectively.",
+      "page_number": null
+    },
+    {
+      "text_id": 123,
+      "paragraph_id": 44,
+      "section_id": 11,
+      "text": "I thus conclude that my results are informative about effect sizes in this range but cannot make meaningful statements about the presence or absence of subtler effects.",
+      "page_number": null
+    },
+    {
+      "text_id": 124,
+      "paragraph_id": 44,
+      "section_id": 11,
+      "text": "Although this important qualification should be taken into account in interpreting my results, I nonetheless emphasize that, as of yet, the RP:P represents the largest available sample to test my main hypothesis.",
+      "page_number": null
+    },
+    {
+      "text_id": 125,
+      "paragraph_id": 44,
+      "section_id": 11,
+      "text": "It is my hope that future systematic replications will allow for the effect to be analyzed in even larger samples, thus enabling the investigation of smaller effect sizes.",
+      "page_number": null
+    },
+    {
+      "text_id": 126,
+      "paragraph_id": 45,
+      "section_id": 11,
+      "text": "Another possible explanation lies in the relatively short postreplication time window I had at my disposal.",
+      "page_number": null
+    },
+    {
+      "text_id": 127,
+      "paragraph_id": 46,
+      "section_id": 11,
+      "text": "The citation count in the Web of Science is largely based on articles published in peer-reviewed journals.",
+      "page_number": null
+    },
+    {
+      "text_id": 128,
+      "paragraph_id": 46,
+      "section_id": 11,
+      "text": "Hence, in order to be represented in the citation count, an article has to be written and pass through peer review, two processes that take a considerable amount of time.",
+      "page_number": null
+    },
+    {
+      "text_id": 129,
+      "paragraph_id": 46,
+      "section_id": 11,
+      "text": "This could call into question my assumption of time-invariant treatment effects, a violation that could bias my estimates toward zero and hence drive the null result.",
+      "page_number": null
+    },
+    {
+      "text_id": 130,
+      "paragraph_id": 47,
+      "section_id": 11,
+      "text": "To investigate this concern, I present OLS estimates of Equation 2 in Figure 1, including the additional set of fixed effects for years since publication.",
+      "page_number": null
+    },
+    {
+      "text_id": 131,
+      "paragraph_id": 47,
+      "section_id": 11,
+      "text": "The plot reveals two main patterns.",
+      "page_number": null
+    },
+    {
+      "text_id": 132,
+      "paragraph_id": 47,
+      "section_id": 11,
+      "text": "First, the estimated coefficients in the years up to the publication of the RP:P do not differ substantially from zero for either the successful or the unsuccessful replications, which increases confidence in the common-trends assumption underlying my previous estimation results.",
+      "page_number": null
+    },
+    {
+      "text_id": 133,
+      "paragraph_id": 47,
+      "section_id": 11,
+      "text": "Second, the plot provides scant evidence for treatment effects arising in later years.",
+      "page_number": null
+    },
+    {
+      "text_id": 134,
+      "paragraph_id": 47,
+      "section_id": 11,
+      "text": "Although some of the estimated yearly coefficients are significantly different from zero at the 5% level on the basis of a two-sided t test, no consistent pattern arises.",
+      "page_number": null
+    },
+    {
+      "text_id": 135,
+      "paragraph_id": 47,
+      "section_id": 11,
+      "text": "Further, these effects are dependent on the normalization with regard to the base year 2014.",
+      "page_number": null
+    },
+    {
+      "text_id": 136,
+      "paragraph_id": 48,
+      "section_id": 11,
+      "text": "-1 -.5 0 .5 1 Estimated b 2010 2011 2012 2013 2014 2015 2016 2017 2018 2019Successful Replication",
+      "page_number": null
+    },
+    {
+      "text_id": 137,
+      "paragraph_id": 50,
+      "section_id": 12,
+      "text": "Fig.",
+      "page_number": null
+    },
+    {
+      "text_id": 138,
+      "paragraph_id": 50,
+      "section_id": 12,
+      "text": "1.",
+      "page_number": null
+    },
+    {
+      "text_id": 139,
+      "paragraph_id": 50,
+      "section_id": 12,
+      "text": "Estimated coefficients for successful and failed replications across time.",
+      "page_number": null
+    },
+    {
+      "text_id": 140,
+      "paragraph_id": 50,
+      "section_id": 12,
+      "text": "A replication is considered successful if it yields an effect in the same direction as the original and the replication p value is below .05.",
+      "page_number": null
+    },
+    {
+      "text_id": 141,
+      "paragraph_id": 50,
+      "section_id": 12,
+      "text": "Error bars indicate 95% confidence intervals.",
+      "page_number": null
+    },
+    {
+      "text_id": 142,
+      "paragraph_id": 50,
+      "section_id": 12,
+      "text": "Estimates were obtained from an ordinary least squares regression of Equation 2, in which the dependent variable is the inverse hyperbolic sine of yearly citations.",
+      "page_number": null
+    },
+    {
+      "text_id": 143,
+      "paragraph_id": 50,
+      "section_id": 12,
+      "text": "The regression includes fixed effects for article, calendar year, and years since publication.",
+      "page_number": null
+    },
+    {
+      "text_id": 144,
+      "paragraph_id": 50,
+      "section_id": 12,
+      "text": "Standard errors are clustered at the article level.",
+      "page_number": null
+    },
+    {
+      "text_id": 145,
+      "paragraph_id": 51,
+      "section_id": 12,
+      "text": "This is reflected in the fact that already prior to 2014, all estimated coefficients for successful replications are positive, and all estimated coefficients for unsuccessful replications are negative.",
+      "page_number": null
+    },
+    {
+      "text_id": 146,
+      "paragraph_id": 51,
+      "section_id": 12,
+      "text": "As a result, the coefficients would appear considerably more muted if compared with those of the average prereplication year.",
+      "page_number": null
+    },
+    {
+      "text_id": 147,
+      "paragraph_id": 51,
+      "section_id": 12,
+      "text": "Overall, the figure provides little evidence that time-varying effects were driving the null result.",
+      "page_number": null
+    },
+    {
+      "text_id": 148,
+      "paragraph_id": 52,
+      "section_id": 12,
+      "text": "A third candidate explanation for the absence of a statistically significant effect is that the replication criterion did not account for the strength of the evidence obtained in the replication.",
+      "page_number": null
+    },
+    {
+      "text_id": 149,
+      "paragraph_id": 52,
+      "section_id": 12,
+      "text": "This issue is particularly important because the power calculations underlying the RP:P replications were based on the original effect sizes.",
+      "page_number": null
+    },
+    {
+      "text_id": 150,
+      "paragraph_id": 52,
+      "section_id": 12,
+      "text": "In the presence of a type-M error (Gelman & Carlin, 2014), this practice is likely to result in replication attempts that are themselves not sufficiently powered to detect the effects of interest and hence could render some of the evidence too weak to shift researchers' beliefs.",
+      "page_number": null
+    },
+    {
+      "text_id": 151,
+      "paragraph_id": 52,
+      "section_id": 12,
+      "text": "In line with this argument, the Bayesian analysis by Etz and Vandekerckhove (2016) suggests that many original studies and their replications did not provide strong evidence for either the null or the alternative hypothesis, implying a limited need for belief updating in many cases.",
+      "page_number": null
+    },
+    {
+      "text_id": 152,
+      "paragraph_id": 52,
+      "section_id": 12,
+      "text": "Thus, my measure of the effects of failed replications represents a weighted average of inconclusive and refuting information, which might shift the estimated coefficient toward zero.",
+      "page_number": null
+    },
+    {
+      "text_id": 153,
+      "paragraph_id": 53,
+      "section_id": 12,
+      "text": "I addressed this concern by classifying replication attempts according to the Bayesian criterion, thereby introducing an explicit distinction between failed and inconclusive replication attempts (see Table 3).",
+      "page_number": null
+    },
+    {
+      "text_id": 154,
+      "paragraph_id": 53,
+      "section_id": 12,
+      "text": "The results were largely in line with those obtained previously: Neither successful, δ  = 0 057 . , 95% CI = [ . , .",
+      "page_number": null
+    },
+    {
+      "text_id": 155,
+      "paragraph_id": 54,
+      "section_id": 12,
+      "text": "] -0 091 0 204 , t( ) . 419 0 76 = , p = .45 ; inconclusive, φ  = -0 127 . , 95% CI = [ . , . ] -0 319 0 066 , t( ) . 419 1 30 = -, p = .196 ; nor failed, ρ  = -0 002 . , 95% CI = [-0.146, 0.143], t( ) . 419 0 02 = -, p = . , 98 replication attempts displayed a statistically significant effect.",
+      "page_number": null
+    },
+    {
+      "text_id": 156,
+      "paragraph_id": 54,
+      "section_id": 12,
+      "text": "Although one has to be cautious in interpreting insignificant differences between coefficients, it is worth noting that the estimates in Table 3 do not support my previous conjecture.",
+      "page_number": null
+    },
+    {
+      "text_id": 157,
+      "paragraph_id": 54,
+      "section_id": 12,
+      "text": "If anything, the coefficient on inconclusive replications was more negative than that on failed replications.",
+      "page_number": null
+    },
+    {
+      "text_id": 158,
+      "paragraph_id": 54,
+      "section_id": 12,
+      "text": "The corresponding time-varying coefficients are presented in Figure 2 and closely mirror the coefficients obtained in Figure 1.",
+      "page_number": null
+    },
+    {
+      "text_id": 159,
+      "paragraph_id": 56,
+      "section_id": 13,
+      "text": "In this subsection, I address some remaining concerns regarding the validity of my estimates along two dimensions.",
+      "page_number": null
+    },
+    {
+      "text_id": 160,
+      "paragraph_id": 57,
+      "section_id": 13,
+      "text": "First, as described in more detail in Section S2 in the Supplemental Material, I acknowledge that the inclusion criteria at best resulted in a rough approximation of the selection process of studies to be replicated in the RP:P To ensure that my sample selection did not drive the results, I included all nonretracted studies in the contrast group in Row 1 of Table 4.",
+      "page_number": null
+    },
+    {
+      "text_id": 161,
+      "paragraph_id": 57,
+      "section_id": 13,
+      "text": "This expansion of my estimation sample resulted in small gains in the precision of estimates and both successful, δ  = 0 064 . , 95% CI = [ . , .",
+      "page_number": null
+    },
+    {
+      "text_id": 162,
+      "paragraph_id": 58,
+      "section_id": 13,
+      "text": "] -0 074 0 202 , t( ) . 567 0 91 = , p = . , 362 and unsuccessful, ρ  = -0 024 . , 95% CI = [ . , . ] -0 143 0 095 , t( ) . 567 0 39 = -, p = .695, replications continued to yield insignificant coefficient estimates.",
+      "page_number": null
+    },
+    {
+      "text_id": 163,
+      "paragraph_id": 59,
+      "section_id": 13,
+      "text": "Second, I considered whether my results were sensitive to the choice of transformation applied to the outcome variable.",
+      "page_number": null
+    },
+    {
+      "text_id": 164,
+      "paragraph_id": 59,
+      "section_id": 13,
+      "text": "Thus far, all regressions employed the IHS transformation.",
+      "page_number": null
+    },
+    {
+      "text_id": 165,
+      "paragraph_id": 59,
+      "section_id": 13,
+      "text": "An alternative approach that has frequently been implemented when working with count data is adding a value of 1 to each observation and subsequently taking the logarithm.",
+      "page_number": null
+    },
+    {
+      "text_id": 166,
+      "paragraph_id": 59,
+      "section_id": 13,
+      "text": "Although this approach has been criticized by some researchers for being inherently arbitrary (Burbidge et al., 1988;Campbell & Mau, 2020), in Table 4, I present estimates of Equation 1 for both untransformed citation counts (Row 2) and the logarithmic transformation (Row 3).",
+      "page_number": null
+    },
+    {
+      "text_id": 167,
+      "paragraph_id": 59,
+      "section_id": 13,
+      "text": "Although the coefficients are not directly comparable across models, the broad patterns are very similar, with both successful and unsuccessful replications resulting in small and statistically insignificant coefficient estimates-succesful untrans formed: δ  = 0 056 . , 95% CI = [ -1 158 1 27 . , . ], t( ) . 423 0 09 = , p = .928; successful logarithmic: δ  = 0 044 . , -1 -.5 0 .5 1 2010 2011 2012 2013 2014 2015 2016 2017 20182019 Successful Replication Inconclusive Replication Failed Replication Estimated b Fig 2 Estimated coefficients for successful, inconclusive, and failed replications across time.",
+      "page_number": null
+    },
+    {
+      "text_id": 168,
+      "paragraph_id": 59,
+      "section_id": 13,
+      "text": "A replication is considered successful if it results in a Bayes factor of more than 3 and as unsuccessful if it yields a Bayes factor of less than 1/3.",
+      "page_number": null
+    },
+    {
+      "text_id": 169,
+      "paragraph_id": 59,
+      "section_id": 13,
+      "text": "Error bars indicate 95% confidence intervals.",
+      "page_number": null
+    },
+    {
+      "text_id": 170,
+      "paragraph_id": 59,
+      "section_id": 13,
+      "text": "Estimates were obtained from an ordinary least squares regression of Equation 2, in which the dependent variable is the inverse hyperbolic sine of yearly citations.",
+      "page_number": null
+    },
+    {
+      "text_id": 171,
+      "paragraph_id": 59,
+      "section_id": 13,
+      "text": "The regression includes fixed effects for article, calendar year, and years since publication.",
+      "page_number": null
+    },
+    {
+      "text_id": 172,
+      "paragraph_id": 59,
+      "section_id": 13,
+      "text": "Standard errors are clustered at the article level.",
+      "page_number": null
+    },
+    {
+      "text_id": 173,
+      "paragraph_id": 59,
+      "section_id": 13,
+      "text": "95% CI = [ -0 076 0 163 . , . ], t( ) . 423 0 72 = , p = .475; unsuccessful untransformed: ρ  = -0 48 . , 95% CI = [-1 585 0 625 . , . ], t( ) . 423 0 85 = -, p = .393 ; unsuccesful logari thmic: ρ  = -0 032 . , 95% CI = [ -0 135 0 072 . , . ], t( ) . 423 0 60 = -, p = .548.",
+      "page_number": null
+    },
+    {
+      "text_id": 174,
+      "paragraph_id": 61,
+      "section_id": 14,
+      "text": "The failure of my analyses to reject the null hypothesis that there was no effect of RP:P replications on yearly citation counts ran counter to my hypothesis that citation patterns should change as researchers adjust their beliefs about the validity of an existing research result.",
+      "page_number": null
+    },
+    {
+      "text_id": 175,
+      "paragraph_id": 61,
+      "section_id": 14,
+      "text": "In the following, I outline a number of contending explanations for this null result and discuss the extent to which they are in line with the data.",
+      "page_number": null
+    },
+    {
+      "text_id": 176,
+      "paragraph_id": 62,
+      "section_id": 14,
+      "text": "First, a necessary condition for belief updating in response to replication attempts is researchers' awareness of the replication results.",
+      "page_number": null
+    },
+    {
+      "text_id": 177,
+      "paragraph_id": 62,
+      "section_id": 14,
+      "text": "Previous findings of Simkin and Roychowdhury (2005) suggest that a large number of citations are merely copied from existing reference lists and not actually read by the citing authors, making it likely that at least some researchers remain unaware of existing replications for the studies they cite.",
+      "page_number": null
+    },
+    {
+      "text_id": 178,
+      "paragraph_id": 63,
+      "section_id": 14,
+      "text": "Such inattention is likely exacerbated by the general difficulty of acquiring information about replication results.",
+      "page_number": null
+    },
+    {
+      "text_id": 179,
+      "paragraph_id": 63,
+      "section_id": 14,
+      "text": "Unpublished replications are often difficult to find, but even if replication results are published, finding and evaluating them requires a substantial time investment from citing researchers.",
+      "page_number": null
+    },
+    {
+      "text_id": 180,
+      "paragraph_id": 63,
+      "section_id": 14,
+      "text": "This concern carries particular weight in my setting because the RP:P was designed with the intention to draw conclusions about replicability on an aggregate level rather than to scrutinize individual research results.",
+      "page_number": null
+    },
+    {
+      "text_id": 181,
+      "paragraph_id": 63,
+      "section_id": 14,
+      "text": "As a consequence, the outcomes of individual replication attempts were neither discussed in detail by the Open Science Collaboration (2015), nor were citations to the original studies included in their article, requiring researchers interested in the results of individual replication attempts to delve into the supplemental materials.",
+      "page_number": null
+    },
+    {
+      "text_id": 182,
+      "paragraph_id": 63,
+      "section_id": 14,
+      "text": "This factor substantially qualifies the external validity of my findings because other replication studies might discuss individual replication outcomes in more detail and are more easily picked up by search engines if they are similar in title and include direct references to the original study.",
+      "page_number": null
+    },
+    {
+      "text_id": 183,
+      "paragraph_id": 63,
+      "section_id": 14,
+      "text": "This increased visibility has the potential to alter the citation impact of a replication attempt compared with the effects that I uncovered in the context of the RP:P; indeed, the case studies by Hardwicke et al. (2021) suggest that somewhat more marked effects might arise in other settings.",
+      "page_number": null
+    },
+    {
+      "text_id": 184,
+      "paragraph_id": 64,
+      "section_id": 14,
+      "text": "Second, even among researchers aware of the replication attempts, belief updating might have been limited.",
+      "page_number": null
+    },
+    {
+      "text_id": 185,
+      "paragraph_id": 64,
+      "section_id": 14,
+      "text": "Although McDiarmid et al. (2021) show that researchers updated their beliefs about the strength of a research finding in reaction to replications conducted in a number of large-scale replication projects (not including the RP:P), it is unclear to what extent these findings can be extrapolated to my setting.",
+      "page_number": null
+    },
+    {
+      "text_id": 186,
+      "paragraph_id": 64,
+      "section_id": 14,
+      "text": "In particular, the authors note the possibility that experimenter demand and observer effects could have resulted in inflated estimates of researchers' true belief updating.",
+      "page_number": null
+    },
+    {
+      "text_id": 187,
+      "paragraph_id": 64,
+      "section_id": 14,
+      "text": "Moreover, some authors of original studies that were replicated in the RP:P voiced concerns regarding the fidelity of the replication attempts (e.g., Bressan, 2019;Gilbert et al., 2016; and replies to the RP:P published on OSF by the original authors).",
+      "page_number": null
+    },
+    {
+      "text_id": 188,
+      "paragraph_id": 64,
+      "section_id": 14,
+      "text": "Although Ebersole et al. (2020) show that the results of the RP:P replications were not sensitive to using peer-reviewed protocols, if citing researchers were nonetheless convinced that the replication attempts were not true to the original study, this might have weakened belief updating.",
+      "page_number": null
+    },
+    {
+      "text_id": 189,
+      "paragraph_id": 65,
+      "section_id": 14,
+      "text": "Other potential explanations could lie in articles gaining additional citations by being cited in the context of replications rather than for their content or in the citation count not taking into account citation content.",
+      "page_number": null
+    },
+    {
+      "text_id": 190,
+      "paragraph_id": 65,
+      "section_id": 14,
+      "text": "Regarding the first argument, if this factor were to play a large role, one would expect to find an increase in citation rates for successful and inconclusive replications.",
+      "page_number": null
+    },
+    {
+      "text_id": 191,
+      "paragraph_id": 65,
+      "section_id": 14,
+      "text": "In particular, because inconclusive replications were largely considered failures by the main criterion, these replications were likely among the most controversial and thus should have received the largest number of citations through this channel, a hypothesis that is not borne out by the present results.",
+      "page_number": null
+    },
+    {
+      "text_id": 192,
+      "paragraph_id": 66,
+      "section_id": 14,
+      "text": "Further, the second concern suggests that even if one cannot detect changes in total citation counts, the composition of supporting and disputing citations might have shifted.",
+      "page_number": null
+    },
+    {
+      "text_id": 193,
+      "paragraph_id": 66,
+      "section_id": 14,
+      "text": "The analyses above are unable to directly shed light on the importance of this explanation because I am missing a reliable measure of citation content.",
+      "page_number": null
+    },
+    {
+      "text_id": 194,
+      "paragraph_id": 66,
+      "section_id": 14,
+      "text": "Recently, a large-scale source of citation content classifications has become available through the website scite.ai, which uses deep learning to determine whether a citation supports, disputes, or merely mentions an existing research result.",
+      "page_number": null
+    },
+    {
+      "text_id": 195,
+      "paragraph_id": 66,
+      "section_id": 14,
+      "text": "However, at the time of writing, the service is still in its beta stage and has only limited coverage.",
+      "page_number": null
+    },
+    {
+      "text_id": 196,
+      "paragraph_id": 66,
+      "section_id": 14,
+      "text": "Hence, rather than subjecting these noisy measures to a formal statistical analysis, I present some suggestive evidence on the role of this channel.",
+      "page_number": null
+    },
+    {
+      "text_id": 197,
+      "paragraph_id": 67,
+      "section_id": 14,
+      "text": "According to the scite.ai classifications, only a small minority of citations are disputing or supporting existing findings.",
+      "page_number": null
+    },
+    {
+      "text_id": 198,
+      "paragraph_id": 67,
+      "section_id": 14,
+      "text": "In the 10 years between 2010 and 2019, the average article in the RP:P sample has been subject to merely 0.83 disputing and 4.39 supporting citations, and 46% of the sample was never disputed.",
+      "page_number": null
+    },
+    {
+      "text_id": 199,
+      "paragraph_id": 67,
+      "section_id": 14,
+      "text": "Moreover, investigating the timing of citations, I found little evidence that the frequency of disputing citations has been affected by the replication results.",
+      "page_number": null
+    },
+    {
+      "text_id": 200,
+      "paragraph_id": 67,
+      "section_id": 14,
+      "text": "When the main replication criterion was used, studies that were replicated successfully received on average 0.4 disputing citations between 2015 and 2019, compared with 0.66 in the 5 years prior to replication, and studies that were replicated unsuccessfully received on average 0.38 disputing citations between 2015 and 2019, compared with 0.32 in the 5 years prior to replication.",
+      "page_number": null
+    },
+    {
+      "text_id": 201,
+      "paragraph_id": 67,
+      "section_id": 14,
+      "text": "These numbers suggest that even if the RP:P replications shifted citation content, the size of these effects would likely be small.",
+      "page_number": null
+    },
+    {
+      "text_id": 202,
+      "paragraph_id": 68,
+      "section_id": 14,
+      "text": "In conclusion, my analyses fail to support the hypothesis that citation patterns adjust in response to the release of replication results.",
+      "page_number": null
+    },
+    {
+      "text_id": 203,
+      "paragraph_id": 68,
+      "section_id": 14,
+      "text": "Among the potential reasons underlying these findings, a lack of attention to and the limited communication of replication results stand out as particularly important.",
+      "page_number": null
+    },
+    {
+      "text_id": 204,
+      "paragraph_id": 68,
+      "section_id": 14,
+      "text": "These factors therefore have the potential to slow down the self-corrective ability of the scientific process and addressing them could represent an important step in maximizing the impact of recent advances to improve the quality and reliability of academic research.",
+      "page_number": null
+    },
+    {
+      "text_id": 205,
+      "paragraph_id": 68,
+      "section_id": 14,
+      "text": "I am hopeful that technological advances such as scite.ai, with their potential to greatly improve the accessibility of the body of knowledge, can help to alleviate these issues in the future.",
+      "page_number": null
+    },
+    {
+      "text_id": 206,
+      "paragraph_id": 70,
+      "section_id": 15,
+      "text": "Action Editor: Marc J Buehner Editor: Patricia J Bauer 1.",
+      "page_number": null
+    },
+    {
+      "text_id": 207,
+      "paragraph_id": 70,
+      "section_id": 15,
+      "text": "Makel et al. (2012) showed that among all articles published in the top 100 psychology journals since 1900, roughly 1% contain a direct replication of an original result.",
+      "page_number": null
+    },
+    {
+      "text_id": 208,
+      "paragraph_id": 70,
+      "section_id": 15,
+      "text": "Makel and Plucker (2014), Makel et al.",
+      "page_number": null
+    },
+    {
+      "text_id": 209,
+      "paragraph_id": 70,
+      "section_id": 15,
+      "text": "(2016), Evanschitzky et al. (2007), and Hubbard and Armstrong (1994) present similar results for educational sciences, special education, and marketing.",
+      "page_number": null
+    },
+    {
+      "text_id": 210,
+      "paragraph_id": 70,
+      "section_id": 15,
+      "text": "2.",
+      "page_number": null
+    },
+    {
+      "text_id": 211,
+      "paragraph_id": 70,
+      "section_id": 15,
+      "text": "Tahamtan and Bornmann (2018) review the manifold reasons underlying citations that prior research has identified.",
+      "page_number": null
+    },
+    {
+      "text_id": 212,
+      "paragraph_id": 70,
+      "section_id": 15,
+      "text": "My research design assumed that at least some citations accrue from sources with the intent to build on the prior study.",
+      "page_number": null
+    },
+    {
+      "text_id": 213,
+      "paragraph_id": 70,
+      "section_id": 15,
+      "text": "3.",
+      "page_number": null
+    },
+    {
+      "text_id": 214,
+      "paragraph_id": 70,
+      "section_id": 15,
+      "text": "A more detailed description of the sampling frame can be found in the article by the Open Science Collaboration (2012, 2015).",
+      "page_number": null
+    },
+    {
+      "text_id": 215,
+      "paragraph_id": 70,
+      "section_id": 15,
+      "text": "4.",
+      "page_number": null
+    },
+    {
+      "text_id": 216,
+      "paragraph_id": 70,
+      "section_id": 15,
+      "text": "A detailed description of the exclusions is presented in Section S2 in the Supplemental Material available online.",
+      "page_number": null
+    },
+    {
+      "text_id": 217,
+      "paragraph_id": 70,
+      "section_id": 15,
+      "text": "5.",
+      "page_number": null
+    },
+    {
+      "text_id": 218,
+      "paragraph_id": 70,
+      "section_id": 15,
+      "text": "For one of the two articles that were replicated twice, the replication outcome according to the Bayesian criterion was ambiguous; one replication attempt was coded as failed and one as inconclusive.",
+      "page_number": null
+    },
+    {
+      "text_id": 219,
+      "paragraph_id": 70,
+      "section_id": 15,
+      "text": "I coded this replication as inconclusive.",
+      "page_number": null
+    },
+    {
+      "text_id": 220,
+      "paragraph_id": 70,
+      "section_id": 15,
+      "text": "6.",
+      "page_number": null
+    },
+    {
+      "text_id": 221,
+      "paragraph_id": 70,
+      "section_id": 15,
+      "text": "Section S2 presents more detailed summary statistics.",
+      "page_number": null
+    },
+    {
+      "text_id": 222,
+      "paragraph_id": 70,
+      "section_id": 15,
+      "text": "7.",
+      "page_number": null
+    },
+    {
+      "text_id": 223,
+      "paragraph_id": 70,
+      "section_id": 15,
+      "text": "Because the observational nature of the data led to some unexpected complications, a number of deviations from the preregistration protocol were made.",
+      "page_number": null
+    },
+    {
+      "text_id": 224,
+      "paragraph_id": 70,
+      "section_id": 15,
+      "text": "The Supplemental Material presents an explicit mapping of all changes from the preregistered analysis plan to the final article.",
+      "page_number": null
+    },
+    {
+      "text_id": 225,
+      "paragraph_id": 70,
+      "section_id": 15,
+      "text": "The Supplemental Material further contains all analyses that were preregistered but not included in the present article, as well as some of the robustness tests.",
+      "page_number": null
+    },
+    {
+      "text_id": 226,
+      "paragraph_id": 70,
+      "section_id": 15,
+      "text": "The main article and Supplemental Material in combination contain all preregistered analyses.",
+      "page_number": null
+    },
+    {
+      "text_id": 227,
+      "paragraph_id": 71,
+      "section_id": 15,
+      "text": "The most important change was to the main estimation model.",
+      "page_number": null
+    },
+    {
+      "text_id": 228,
+      "paragraph_id": 71,
+      "section_id": 15,
+      "text": "I prespecified the use of a model with time-varying coefficients but chose to present the coefficients from a timeinvariant model as my main analysis instead.",
+      "page_number": null
+    },
+    {
+      "text_id": 229,
+      "paragraph_id": 71,
+      "section_id": 15,
+      "text": "The reason for this was that (a) it was noticed that the coefficient estimates were highly dependent on the year that was chosen as the base period, rendering the use of the time-invariant model more robust, and (b) the test I specified based on the timevarying model did not take into account the direction of the effect, which was crucial for the purpose of my study.",
+      "page_number": null
+    },
+    {
+      "text_id": 230,
+      "paragraph_id": 71,
+      "section_id": 15,
+      "text": "The timevarying estimates are nonetheless presented in Figures 1 and 2.",
+      "page_number": null
+    },
+    {
+      "text_id": 231,
+      "paragraph_id": 72,
+      "section_id": 15,
+      "text": "Further deviations from the preregistration were due to unanticipated reductions in sample size as a result of missing information.",
+      "page_number": null
+    },
+    {
+      "text_id": 232,
+      "paragraph_id": 72,
+      "section_id": 15,
+      "text": "For example, I had not anticipated that my sampling frame contained studies that were subsequently retracted and hence did not have citation data available; in addition, the RP:P files contained a few missing values.",
+      "page_number": null
+    },
+    {
+      "text_id": 233,
+      "paragraph_id": 72,
+      "section_id": 15,
+      "text": "8.",
+      "page_number": null
+    },
+    {
+      "text_id": 234,
+      "paragraph_id": 72,
+      "section_id": 15,
+      "text": "For concision, only the coefficients and p values from the preregistered specifications are noted in the text.",
+      "page_number": null
+    },
+    {
+      "text_id": 235,
+      "paragraph_id": 72,
+      "section_id": 15,
+      "text": "Unless otherwise stated, reported p values are based on two-sided t tests.",
+      "page_number": null
+    },
+    {
+      "text_id": 236,
+      "paragraph_id": 72,
+      "section_id": 15,
+      "text": "Following the recommendation of Wilkinson (1999), I report effect sizes as unstandardized regression coefficients.",
+      "page_number": null
+    },
+    {
+      "text_id": 237,
+      "paragraph_id": 74,
+      "section_id": 16,
+      "text": "I am thankful to Anna Dreber Almenberg, Oliver Engist, Magnus Johannesson, Brian Nosek, Robert Östling, Joakim Semb, and Domenico Viganola for their helpful comments.",
+      "page_number": null
+    },
+    {
+      "text_id": 238,
+      "paragraph_id": 74,
+      "section_id": 16,
+      "text": "Vera Wellander Lindén provided excellent research assistance.",
+      "page_number": null
+    },
+    {
+      "text_id": 239,
+      "paragraph_id": 76,
+      "section_id": 17,
+      "text": "This research was supported by the Jan Wallander and Tom Hedelius Foundation (Svenska Handelsbanken Forskningsstiftelser; Grant Nos.",
+      "page_number": null
+    },
+    {
+      "text_id": 240,
+      "paragraph_id": 76,
+      "section_id": 17,
+      "text": "P18 0073 and P21 0091) and the Knut and Alice Wallenberg Foundation.",
+      "page_number": null
+    },
+    {
+      "text_id": 241,
+      "paragraph_id": 76,
+      "section_id": 17,
+      "text": "Further support for this research was provided by a grant to F Schafmeister's PhD supervisor, Anna Dreber Almenberg, from the Marianne and Marcus Wallenberg Foundation.",
+      "page_number": null
+    },
+    {
+      "text_id": 242,
+      "paragraph_id": 78,
+      "section_id": 18,
+      "text": "All data and analysis code have been made publicly available via OSF and can be accessed at https://osf.io/8vgm2.",
+      "page_number": null
+    },
+    {
+      "text_id": 243,
+      "paragraph_id": 79,
+      "section_id": 18,
+      "text": "The design and analysis plan for this study were preregistered at https://osf.io/gct5x.",
+      "page_number": null
+    },
+    {
+      "text_id": 244,
+      "paragraph_id": 79,
+      "section_id": 18,
+      "text": "A number of deviations were made from the preregistration (for more information, see Note 7).",
+      "page_number": null
+    },
+    {
+      "text_id": 245,
+      "paragraph_id": 79,
+      "section_id": 18,
+      "text": "This article has received the badges for Open",
+      "page_number": null
+    },
+    {
+      "text_id": 246,
+      "paragraph_id": 81,
+      "section_id": 19,
+      "text": "Data and Preregistration.",
+      "page_number": null
+    },
+    {
+      "text_id": 247,
+      "paragraph_id": 81,
+      "section_id": 19,
+      "text": "More information about the Open Practices badges can be found at http://www.psychologi calscience.org/publications/badges.",
+      "page_number": null
+    },
+    {
+      "text_id": 248,
+      "paragraph_id": 83,
+      "section_id": 20,
+      "text": "The author(s) declared that there were no conflicts of interest with respect to the authorship or the publication of this article.",
+      "page_number": null
+    },
+    {
+      "text_id": 249,
+      "paragraph_id": 85,
+      "section_id": 21,
+      "text": "F Schafmeister is the sole author of this article and is responsible for its content.",
+      "page_number": null
+    },
+    {
+      "text_id": 250,
+      "paragraph_id": 87,
+      "section_id": 22,
+      "text": "Additional supporting information can be found at http:// journals.sagepub.com/doi/suppl/10.1177/0956797621100 5767",
+      "page_number": null
+    },
+    {
+      "text_id": 251,
+      "paragraph_id": 88,
+      "section_id": 23,
+      "text": "Sampling Frame",
+      "page_number": null
+    },
+    {
+      "text_id": 252,
+      "paragraph_id": 89,
+      "section_id": 24,
+      "text": "Differences-in-Differences Estimates of the Effect of Replications on Yearly Citations: Main CriterionThe table presents ordinary least squares estimates of Equation 1 with different sets of time-varying control variables.",
+      "page_number": null
+    },
+    {
+      "text_id": 253,
+      "paragraph_id": 89,
+      "section_id": 24,
+      "text": "The outcome variable (yearly citations) has been transformed using an inverse hyperbolic sine to account for the nonnormality of the data.",
+      "page_number": null
+    },
+    {
+      "text_id": 254,
+      "paragraph_id": 89,
+      "section_id": 24,
+      "text": "Successful replication is an indicator variable that takes the value of 1 if the article has been successfully replicated and t is greater than 2014.",
+      "page_number": null
+    },
+    {
+      "text_id": 255,
+      "paragraph_id": 89,
+      "section_id": 24,
+      "text": "A replication is considered successful if it yields an effect in the same direction as the original effect and the replication p value is below .05.",
+      "page_number": null
+    },
+    {
+      "text_id": 256,
+      "paragraph_id": 89,
+      "section_id": 24,
+      "text": "Standard errors allow for clustering at the article level and are presented in parentheses; p values were obtained from two-sided t tests.",
+      "page_number": null
+    },
+    {
+      "text_id": 257,
+      "paragraph_id": 90,
+      "section_id": 25,
+      "text": "Differences-in-Differences Estimates of the Effect of Replications on Yearly Citations: Bayesian CriterionThe table presents ordinary least squares estimates of Equation 1, further allowing for replications to be categorized as inconclusive.",
+      "page_number": null
+    },
+    {
+      "text_id": 258,
+      "paragraph_id": 90,
+      "section_id": 25,
+      "text": "The outcome variable (yearly citations) has been transformed using an inverse hyperbolic sine to account for the nonnormality of the data.",
+      "page_number": null
+    },
+    {
+      "text_id": 259,
+      "paragraph_id": 90,
+      "section_id": 25,
+      "text": "Successful replication is an indicator variable that takes the value of 1 if the article has been successfully replicated and t is greater than 2014.",
+      "page_number": null
+    },
+    {
+      "text_id": 260,
+      "paragraph_id": 90,
+      "section_id": 25,
+      "text": "A replication is considered successful if it results in a Bayes factor of more than 3 and as unsuccessful if it yields a Bayes factor of less than 1/3.",
+      "page_number": null
+    },
+    {
+      "text_id": 261,
+      "paragraph_id": 90,
+      "section_id": 25,
+      "text": "Standard errors allow for clustering at the article level and are presented in parentheses; p values were obtained from two-sided t tests.",
+      "page_number": null
+    },
+    {
+      "text_id": 262,
+      "paragraph_id": 91,
+      "section_id": 26,
+      "text": "Robustness Checks: Sample and Outcome VariablesThe table presents ordinary least squares estimates of Equation 1.",
+      "page_number": null
+    },
+    {
+      "text_id": 263,
+      "paragraph_id": 91,
+      "section_id": 26,
+      "text": "Row 1 uses the full sample for the contrast group, whereas Row 2 and Row 3 use the sample subjected to the exclusion criteria outlined in the text.",
+      "page_number": null
+    },
+    {
+      "text_id": 264,
+      "paragraph_id": 91,
+      "section_id": 26,
+      "text": "The outcome variable (yearly citations) in Row 1 has been transformed using the inverse hyperbolic sine (IHS), whereas the values in Row 2 were obtained using raw citation counts, and the values in Row 3 were obtained by adding a value of 1 to each observation and taking the natural logarithm.",
+      "page_number": null
+    },
+    {
+      "text_id": 265,
+      "paragraph_id": 91,
+      "section_id": 26,
+      "text": "Successful replication is an indicator variable that takes the value of 1 if the article has been successfully replicated and t is greater than 2014.",
+      "page_number": null
+    },
+    {
+      "text_id": 266,
+      "paragraph_id": 91,
+      "section_id": 26,
+      "text": "A replication is considered successful if it yields an effect in the same direction as the original effect and the replication p value is below .05.",
+      "page_number": null
+    },
+    {
+      "text_id": 267,
+      "paragraph_id": 91,
+      "section_id": 26,
+      "text": "Standard errors allow for clustering at the article level and are presented in parentheses; p values were obtained from two-sided t tests.",
+      "page_number": null
+    },
+    {
+      "text_id": 268,
+      "paragraph_id": 92,
+      "section_id": 27,
+      "text": "Altmejd, A., Dreber, A., Forsell, E., Huber, J., Imai, T., Johannesson, M., Kirchler, M., Nave, G., & Camerer, C. (2019). Predicting the replicability of social science lab experiments. PLOS ONE, 14(12), Article e0225826. https:// doi.org/10.1371/journal.pone.0225826",
+      "page_number": null
+    },
+    {
+      "text_id": 269,
+      "paragraph_id": 93,
+      "section_id": 27,
+      "text": "Bellemare, M. F., & Wichman, C. J. (2020). Elasticities and the inverse hyperbolic sine transformation. Oxford Bulletin of Economics and Statistics, 82(1), 50-61.",
+      "page_number": null
+    },
+    {
+      "text_id": 270,
+      "paragraph_id": 94,
+      "section_id": 27,
+      "text": "Bressan, P. (2019). Confounds in \"failed\" replications. Frontiers in Psychology, 10, Article 1884. https://doi.org/10.3389/ fpsyg.2019.01884",
+      "page_number": null
+    },
+    {
+      "text_id": 271,
+      "paragraph_id": 95,
+      "section_id": 27,
+      "text": "Burbidge, J. B., Magee, L., & Robb, A. L. (1988). Alternative transformations to handle extreme values of the dependent variable. Journal of the American Statistical Association, 83(401), 123-127.",
+      "page_number": null
+    },
+    {
+      "text_id": 272,
+      "paragraph_id": 96,
+      "section_id": 27,
+      "text": "Camerer, C. F., Dreber, A., Forsell, E., Ho, T.-H., Huber, J., Johannesson, M., Kirchler, M., Almenberg, J., Altmejd, A., Chan, T., Heikensten, E., Holzmeister, F., Imai, T., Isaksson, S., Nave, G., Pfeiffer, T., Razen, M., & Wu, H. (2016). Evaluating replicability of laboratory experiments in economics. Science, 351(6280), 1433-1436.",
+      "page_number": null
+    },
+    {
+      "text_id": 273,
+      "paragraph_id": 97,
+      "section_id": 27,
+      "text": "Camerer, C. F., Dreber, A., Holzmeister, F., Ho, T.-H., Huber, J., Johannesson, M., Kirchler, M., Nave, G., Nosek, B. A., Pfeiffer, T., Altmejd, A., Buttrick, N., Chan, T., Chen, Y., Forsell, E., Gampa, A., Heikensten, E., Hummer, L., Imai, T., . . . Wu, H. (2018). Evaluating the replicability of social science experiments in Nature and Science between 2010 and 2015. Nature Human Behaviour, 2(9), 637-644.",
+      "page_number": null
+    },
+    {
+      "text_id": 274,
+      "paragraph_id": 98,
+      "section_id": 27,
+      "text": "Campbell, D. L., & Mau, K. (2020). On trade induced technical change: The impact of Chinese imports on innovation, IT and productivity (Working Paper w0264). New Economic School.",
+      "page_number": null
+    },
+    {
+      "text_id": 275,
+      "paragraph_id": 99,
+      "section_id": 27,
+      "text": "Dreber, A., Pfeiffer, T., Almenberg, J., Isaksson, S., Wilson, B., Chen, Y., Nosek, B. A., & Johannesson, M. (2015). Using prediction markets to estimate the reproducibility of sci- entific research. Proceedings of the National Academy of Sciences, USA, 112(50), 15343-15347.",
+      "page_number": null
+    },
+    {
+      "text_id": 276,
+      "paragraph_id": 100,
+      "section_id": 27,
+      "text": "Earp, B. D., & Trafimow, D. (2015). Replication, falsifica- tion, and the crisis of confidence in social psychology. Frontiers in Psychology, 6, Article 621. https://doi.org/ 10.3389/fpsyg.2015.00621",
+      "page_number": null
+    },
+    {
+      "text_id": 277,
+      "paragraph_id": 101,
+      "section_id": 27,
+      "text": "Ebersole, C. R., Nosek, B. A., Kidwell, M. C., Buttrick, N., Baranski, E., & Hartshorne, J. (2020). Many Labs 5: Testing pre-data collection peer review as an intervention to increase replicability. Advances in Methods and Practices in Psychological Science, 3(3), 309-331.",
+      "page_number": null
+    },
+    {
+      "text_id": 278,
+      "paragraph_id": 102,
+      "section_id": 27,
+      "text": "Etz, A. (2015). The Bayesian reproducibility project. https:// alexanderetz.com/2015/08/30/the-bayesian-reproducibil ity-project/",
+      "page_number": null
+    },
+    {
+      "text_id": 279,
+      "paragraph_id": 103,
+      "section_id": 27,
+      "text": "Etz, A., & Vandekerckhove, J. (2016). A Bayesian perspective on the Reproducibility Project: Psychology. PLOS ONE, 11(2), Article e0149794. https://doi.org/10.1371/journal .pone.0149794",
+      "page_number": null
+    },
+    {
+      "text_id": 280,
+      "paragraph_id": 104,
+      "section_id": 27,
+      "text": "Evanschitzky, H., Baumgarth, C., Hubbard, R., & Armstrong, J. S. (2007). Replication research's disturbing trend. Journal of Business Research, 60(4), 411-415.",
+      "page_number": null
+    },
+    {
+      "text_id": 281,
+      "paragraph_id": 105,
+      "section_id": 27,
+      "text": "Gelman, A., & Carlin, J. (2014). Beyond power calculations: Assessing type S (sign) and type M (magnitude) errors. Perspectives on Psychological Science, 9(6), 641-651.",
+      "page_number": null
+    },
+    {
+      "text_id": 282,
+      "paragraph_id": 106,
+      "section_id": 27,
+      "text": "Gilbert, D. T., King, G., Pettigrew, S., & Wilson, T. D. (2016). Comment on \"Estimating the reproducibility of psycho- logical science.\" Science, 351(6277), 1037-1037.",
+      "page_number": null
+    },
+    {
+      "text_id": 283,
+      "paragraph_id": 107,
+      "section_id": 27,
+      "text": "Gneezy, U., & Serra-Garcia, M. (2021). Nonreplicable pub- lications are cited more than replicable ones. Science Advances, 7(21), Article eabd1705. https://doi.org/10.1126/ sciadv.abd1705",
+      "page_number": null
+    },
+    {
+      "text_id": 284,
+      "paragraph_id": 108,
+      "section_id": 27,
+      "text": "Hardwicke, T. E., Szücs, D., Thibault, R. T., Crüwell, S., Van den Akker, O., Nuijten, M. B., & Ioannidis, J. (2021). Citation patterns following a strongly contradictory replication result: Four case studies from psychology. MetaArXiv. https://doi.org/10.31222/osf.io/wt5ny",
+      "page_number": null
+    },
+    {
+      "text_id": 285,
+      "paragraph_id": 109,
+      "section_id": 27,
+      "text": "Hubbard, R., & Armstrong, J. S. (1994). Replications and extensions in marketing: Rarely published but quite contrary. International Journal of Research in Marketing, 11(3), 233-248.",
+      "page_number": null
+    },
+    {
+      "text_id": 286,
+      "paragraph_id": 110,
+      "section_id": 27,
+      "text": "Klein, R. A., Vianello, M., Hasselman, F., Adams, B. G., Adams, R. B., Jr., Alper, S., Aveyard, M., Axt, J. R., Babalola, M. T., Bahník, Š., Batra, R., Berkics, M., Bernstein, M. J., Berry, D. R., Bialobrzeska, O., Binan, E. D., Bocian, K., Brandt, M. J., Busching, R., . . . Nosek, B. A. (2018). Many Labs 2: Investigating variation in replicability across samples and settings. Advances in Methods and Practices in Psychological Science, 1(4), 443-490.",
+      "page_number": null
+    },
+    {
+      "text_id": 287,
+      "paragraph_id": 111,
+      "section_id": 27,
+      "text": "Kousha, K., & Thelwall, M. (2007). Google Scholar cita- tions and Google Web/URL citations: A multi-discipline exploratory analysis. Journal of the American Society for Information Science and Technology, 58(7), 1055-1065.",
+      "page_number": null
+    },
+    {
+      "text_id": 288,
+      "paragraph_id": 112,
+      "section_id": 27,
+      "text": "Makel, M. C., & Plucker, J. A. (2014). Facts are more impor- tant than novelty: Replication in the education sciences. Educational Researcher, 43(6), 304-316.",
+      "page_number": null
+    },
+    {
+      "text_id": 289,
+      "paragraph_id": 113,
+      "section_id": 27,
+      "text": "Makel, M. C., Plucker, J. A., Freeman, J., Lombardi, A., Simonsen, B., & Coyne, M. (2016). Replication of special education research: Necessary but far too rare. Remedial and Special Education, 37(4), 205-212.",
+      "page_number": null
+    },
+    {
+      "text_id": 290,
+      "paragraph_id": 114,
+      "section_id": 27,
+      "text": "Makel, M. C., Plucker, J. A., & Hegarty, B. (2012). Replications in psychology research: How often do they really occur? Perspectives on Psychological Science, 7(6), 537-542.",
+      "page_number": null
+    },
+    {
+      "text_id": 291,
+      "paragraph_id": 115,
+      "section_id": 27,
+      "text": "McDiarmid, A. D., Tullett, A. M., Whitt, C. M., Vazire, S., Smaldino, P. E., & Stephens, E. E. (2021). Self-correction in psychological science: How do psychologists update their beliefs in response to replications? PsyArXiv. https://doi .org/10.31234/osf.io/hjcm4",
+      "page_number": null
+    },
+    {
+      "text_id": 292,
+      "paragraph_id": 116,
+      "section_id": 27,
+      "text": "Nosek, B. A., & Lakens, D. (2014). Registered reports: A method to increase the credibility of published results. Social Psychology, 45, 137-141.",
+      "page_number": null
+    },
+    {
+      "text_id": 293,
+      "paragraph_id": 117,
+      "section_id": 27,
+      "text": "Nosek, B. A., & Lindsay, D. S. (2018). Preregistration becom- ing the norm in psychological science. APS Observer, 31(3), 19-21.",
+      "page_number": null
+    },
+    {
+      "text_id": 294,
+      "paragraph_id": 118,
+      "section_id": 27,
+      "text": "Open Science Collaboration. (2012). An open, large-scale, collaborative effort to estimate the reproducibility of psy- chological science. Perspectives on Psychological Science, 7(6), 657-660.",
+      "page_number": null
+    },
+    {
+      "text_id": 295,
+      "paragraph_id": 119,
+      "section_id": 27,
+      "text": "Open Science Collaboration. (2015). Estimating the repro- ducibility of psychological science. Science, 349(6251), Article aac4716. https://doi.org/10.1126/science.aac4716",
+      "page_number": null
+    },
+    {
+      "text_id": 296,
+      "paragraph_id": 120,
+      "section_id": 27,
+      "text": "Simkin, M. V., & Roychowdhury, V. P. (2005). Stochastic modeling of citation slips. Scientometrics, 62(3), 367-384.",
+      "page_number": null
+    },
+    {
+      "text_id": 297,
+      "paragraph_id": 121,
+      "section_id": 27,
+      "text": "Simonsohn, U. (2015). Small telescopes: Detectability and the evaluation of replication results. Psychological Science, 26(5), 559-569.",
+      "page_number": null
+    },
+    {
+      "text_id": 298,
+      "paragraph_id": 122,
+      "section_id": 27,
+      "text": "Tahamtan, I., & Bornmann, L. (2018). Core elements in the process of citing publications: Conceptual overview of the literature. Journal of Informetrics, 12(1), 203-216.",
+      "page_number": null
+    },
+    {
+      "text_id": 299,
+      "paragraph_id": 123,
+      "section_id": 27,
+      "text": "Thelwall, M., & Wilson, P. (2014). Regression for citation data: An evaluation of different methods. Journal of Informetrics, 8(4), 963-971.",
+      "page_number": null
+    },
+    {
+      "text_id": 300,
+      "paragraph_id": 124,
+      "section_id": 27,
+      "text": "Verhagen, J., & Wagenmakers, E.-J. (2014). Bayesian tests to quantify the result of a replication attempt. Journal of Experimental Psychology: General, 143(4), 1457-1475.",
+      "page_number": null
+    },
+    {
+      "text_id": 301,
+      "paragraph_id": 125,
+      "section_id": 27,
+      "text": "Walters, G. D. (2011). The citation life cycle of articles pub- lished in 13 American Psychological Association journals: A 25-year longitudinal analysis. Journal of the American Society for Information Science and Technology, 62(8), 1629-1636.",
+      "page_number": null
+    },
+    {
+      "text_id": 302,
+      "paragraph_id": 126,
+      "section_id": 27,
+      "text": "Wilkinson, L. (1999). Statistical methods in psychology jour- nals: Guidelines and explanations. American Psychologist, 54(8), 594-604.",
+      "page_number": null
+    },
+    {
+      "text_id": 303,
+      "paragraph_id": 127,
+      "section_id": 27,
+      "text": "Yang, Y., Youyou, W., & Uzzi, B. (2020). Estimating the deep replicability of scientific findings using human and artifi- cial intelligence. Proceedings of the National Academy of Sciences, USA, 117(20), 10762-10768.",
+      "page_number": null
+    }
+  ],
+  "section": [
+    {
+      "section_id": 0,
+      "header": "Abstract",
+      "parent_section_id": null,
+      "section_type": "abstract",
+      "classification_score": null
+    },
+    {
+      "section_id": 2,
+      "header": "Research Article",
+      "parent_section_id": null,
+      "section_type": "intro",
+      "classification_score": null
+    },
+    {
+      "section_id": 4,
+      "header": "Setting",
+      "parent_section_id": null,
+      "section_type": "method",
+      "classification_score": null
+    },
+    {
+      "section_id": 5,
+      "header": "Statement of Relevance",
+      "parent_section_id": null,
+      "section_type": "method",
+      "classification_score": null
+    },
+    {
+      "section_id": 6,
+      "header": "Sample selection",
+      "parent_section_id": null,
+      "section_type": "method",
+      "classification_score": null
+    },
+    {
+      "section_id": 7,
+      "header": "Variable definitions",
+      "parent_section_id": null,
+      "section_type": "method",
+      "classification_score": null
+    },
+    {
+      "section_id": 8,
+      "header": "Summary statistics",
+      "parent_section_id": null,
+      "section_type": "method",
+      "classification_score": null
+    },
+    {
+      "section_id": 9,
+      "header": "Empirical strategy",
+      "parent_section_id": null,
+      "section_type": "method",
+      "classification_score": null
+    },
+    {
+      "section_id": 10,
+      "header": "Results",
+      "parent_section_id": null,
+      "section_type": "results",
+      "classification_score": null
+    },
+    {
+      "section_id": 11,
+      "header": "Potential explanations",
+      "parent_section_id": null,
+      "section_type": "results",
+      "classification_score": null
+    },
+    {
+      "section_id": 12,
+      "header": "Failed Replication",
+      "parent_section_id": null,
+      "section_type": "results",
+      "classification_score": null
+    },
+    {
+      "section_id": 13,
+      "header": "Robustness",
+      "parent_section_id": null,
+      "section_type": "results",
+      "classification_score": null
+    },
+    {
+      "section_id": 14,
+      "header": "Discussion",
+      "parent_section_id": null,
+      "section_type": "discussion",
+      "classification_score": null
+    },
+    {
+      "section_id": 15,
+      "header": "Transparency",
+      "parent_section_id": null,
+      "section_type": "discussion",
+      "classification_score": null
+    },
+    {
+      "section_id": 16,
+      "header": "Acknowledgments",
+      "parent_section_id": null,
+      "section_type": "acknowledgement",
+      "classification_score": null
+    },
+    {
+      "section_id": 17,
+      "header": "Funding",
+      "parent_section_id": null,
+      "section_type": "funding",
+      "classification_score": null
+    },
+    {
+      "section_id": 18,
+      "header": "Open Practices",
+      "parent_section_id": null,
+      "section_type": "funding",
+      "classification_score": null
+    },
+    {
+      "section_id": 19,
+      "header": "",
+      "parent_section_id": null,
+      "section_type": "availability",
+      "classification_score": null
+    },
+    {
+      "section_id": 20,
+      "header": "Declaration of Conflicting Interests",
+      "parent_section_id": null,
+      "section_type": "conflict",
+      "classification_score": null
+    },
+    {
+      "section_id": 21,
+      "header": "Author Contributions",
+      "parent_section_id": null,
+      "section_type": "contribution",
+      "classification_score": null
+    },
+    {
+      "section_id": 22,
+      "header": "Supplemental Material",
+      "parent_section_id": null,
+      "section_type": "annex",
+      "classification_score": null
+    },
+    {
+      "section_id": 23,
+      "header": "Table 1 .",
+      "parent_section_id": null,
+      "section_type": "table",
+      "classification_score": null
+    },
+    {
+      "section_id": 24,
+      "header": "Table 2 .",
+      "parent_section_id": null,
+      "section_type": "table",
+      "classification_score": null
+    },
+    {
+      "section_id": 25,
+      "header": "Table 3 .",
+      "parent_section_id": null,
+      "section_type": "table",
+      "classification_score": null
+    },
+    {
+      "section_id": 26,
+      "header": "Table 4 .",
+      "parent_section_id": null,
+      "section_type": "table",
+      "classification_score": null
+    },
+    {
+      "section_id": 27,
+      "header": "References",
+      "parent_section_id": null,
+      "section_type": "references",
+      "classification_score": null
+    }
+  ],
+  "url": [
+    {
+      "href": "scite.ai",
+      "link_text": null,
+      "text_id": 194
+    },
+    {
+      "href": "scite.ai",
+      "link_text": null,
+      "text_id": 197
+    },
+    {
+      "href": "scite.ai",
+      "link_text": null,
+      "text_id": 205
+    },
+    {
+      "href": "https://osf.io/8vgm2",
+      "link_text": null,
+      "text_id": 242
+    },
+    {
+      "href": "https://osf.io/gct5x",
+      "link_text": null,
+      "text_id": 243
+    },
+    {
+      "href": "calscience.org/publications/badges",
+      "link_text": null,
+      "text_id": 247
+    },
+    {
+      "href": "journals.sagepub.com/doi/suppl/10.1177/0956797621100",
+      "link_text": null,
+      "text_id": 250
+    }
+  ],
+  "bib": [
+    {
+      "bib_type": "article",
+      "doi": "10.1371/journal.pone.0225826",
+      "title": "Predicting the replicability of social science lab experiments",
+      "authors": "Altmejd, A; Dreber, A; Forsell, E; Huber, J; Imai, T; Johannesson, M; Kirchler, M; Nave, G; Camerer, C",
+      "editors": "",
+      "publisher": "",
+      "year": 2019,
+      "volume": "14",
+      "issue": "12",
+      "container": "PLOS ONE",
+      "first_page": null,
+      "last_page": null,
+      "bib_id": 0,
+      "year_suffix": "",
+      "text_id": 268
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "Elasticities and the inverse hyperbolic sine transformation",
+      "authors": "Bellemare, M F; Wichman, C J",
+      "editors": "",
+      "publisher": "",
+      "year": 2020,
+      "volume": "82",
+      "issue": "1",
+      "container": "Oxford Bulletin of Economics and Statistics",
+      "first_page": "50",
+      "last_page": "61",
+      "bib_id": 1,
+      "year_suffix": "",
+      "text_id": 269
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.3389/fpsyg.2019.01884",
+      "title": "",
+      "authors": "Bressan, P",
+      "editors": "",
+      "publisher": "",
+      "year": 2019,
+      "volume": "",
+      "issue": "",
+      "container": "",
+      "first_page": null,
+      "last_page": null,
+      "bib_id": 2,
+      "year_suffix": "",
+      "text_id": 270
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "Alternative transformations to handle extreme values of the dependent variable",
+      "authors": "Burbidge, J B; Magee, L; Robb, A L",
+      "editors": "",
+      "publisher": "",
+      "year": 1988,
+      "volume": "83",
+      "issue": "401",
+      "container": "Journal of the American Statistical Association",
+      "first_page": "123",
+      "last_page": "127",
+      "bib_id": 3,
+      "year_suffix": "",
+      "text_id": 271
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "Evaluating replicability of laboratory experiments in economics",
+      "authors": "Camerer, C F; Dreber, A; Forsell, E; Ho, T.-H; Huber, J; Johannesson, M; Kirchler, M; Almenberg, J; Altmejd, A; Chan, T; Heikensten, E; Holzmeister, F; Imai, T; Isaksson, S; Nave, G; Pfeiffer, T; Razen, M; Wu, H",
+      "editors": "",
+      "publisher": "",
+      "year": 2016,
+      "volume": "351",
+      "issue": "6280",
+      "container": "Science",
+      "first_page": "1433",
+      "last_page": "1436",
+      "bib_id": 4,
+      "year_suffix": "",
+      "text_id": 272
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "Evaluating the replicability of social science experiments in Nature and Science between 2010 and 2015",
+      "authors": "Camerer, C F; Dreber, A; Holzmeister, F; Ho, T.-H; Huber, J; Johannesson, M; Kirchler, M; Nave, G; Nosek, B A; Pfeiffer, T; Altmejd, A; Buttrick, N; Chan, T; Chen, Y; Forsell, E; Gampa, A; Heikensten, E; Hummer, L; Imai, T; Wu, . .; , H",
+      "editors": "",
+      "publisher": "",
+      "year": 2018,
+      "volume": "2",
+      "issue": "9",
+      "container": "Nature Human Behaviour",
+      "first_page": "637",
+      "last_page": "644",
+      "bib_id": 5,
+      "year_suffix": "",
+      "text_id": 273
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "On trade induced technical change: The impact of Chinese imports on innovation, IT and productivity (Working Paper w0264)",
+      "authors": "Campbell, D L; Mau, K",
+      "editors": "",
+      "publisher": "",
+      "year": 2020,
+      "volume": "",
+      "issue": "",
+      "container": "New Economic School",
+      "first_page": null,
+      "last_page": null,
+      "bib_id": 6,
+      "year_suffix": "",
+      "text_id": 274
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "Using prediction markets to estimate the reproducibility of scientific research",
+      "authors": "Dreber, A; Pfeiffer, T; Almenberg, J; Isaksson, S; Wilson, B; Chen, Y; Nosek, B A; Johannesson, M",
+      "editors": "",
+      "publisher": "",
+      "year": 2015,
+      "volume": "112",
+      "issue": "50",
+      "container": "Proceedings of the National Academy of Sciences",
+      "first_page": "15343",
+      "last_page": "15347",
+      "bib_id": 7,
+      "year_suffix": "",
+      "text_id": 275
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.3389/fpsyg.2015.00621",
+      "title": "Replication, falsification, and the crisis of confidence in social psychology",
+      "authors": "Earp, B D; Trafimow, D",
+      "editors": "",
+      "publisher": "",
+      "year": 2015,
+      "volume": "6",
+      "issue": "",
+      "container": "Frontiers in Psychology",
+      "first_page": "621",
+      "last_page": null,
+      "bib_id": 8,
+      "year_suffix": "",
+      "text_id": 276
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "Many Labs 5: Testing pre-data collection peer review as an intervention to increase replicability",
+      "authors": "Ebersole, C R; Nosek, B A; Kidwell, M C; Buttrick, N; Baranski, E; Hartshorne, J",
+      "editors": "",
+      "publisher": "",
+      "year": 2020,
+      "volume": "3",
+      "issue": "3",
+      "container": "Advances in Methods and Practices in Psychological Science",
+      "first_page": "309",
+      "last_page": "331",
+      "bib_id": 9,
+      "year_suffix": "",
+      "text_id": 277
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "",
+      "authors": "Etz, A",
+      "editors": "",
+      "publisher": "",
+      "year": 2015,
+      "volume": "",
+      "issue": "",
+      "container": "",
+      "first_page": null,
+      "last_page": null,
+      "bib_id": 10,
+      "year_suffix": "",
+      "text_id": 278
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1371/journal.pone.0149794",
+      "title": "A Bayesian perspective on the Reproducibility Project",
+      "authors": "Etz, A; Vandekerckhove, J",
+      "editors": "",
+      "publisher": "",
+      "year": 2016,
+      "volume": "11",
+      "issue": "2",
+      "container": "Psychology. PLOS ONE",
+      "first_page": null,
+      "last_page": null,
+      "bib_id": 11,
+      "year_suffix": "",
+      "text_id": 279
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "Replication research's disturbing trend",
+      "authors": "Evanschitzky, H; Baumgarth, C; Hubbard, R; Armstrong, J S",
+      "editors": "",
+      "publisher": "",
+      "year": 2007,
+      "volume": "60",
+      "issue": "4",
+      "container": "Journal of Business Research",
+      "first_page": "411",
+      "last_page": "415",
+      "bib_id": 12,
+      "year_suffix": "",
+      "text_id": 280
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "Beyond power calculations: Assessing type S (sign) and type M (magnitude) errors",
+      "authors": "Gelman, A; Carlin, J",
+      "editors": "",
+      "publisher": "",
+      "year": 2014,
+      "volume": "9",
+      "issue": "6",
+      "container": "Perspectives on Psychological Science",
+      "first_page": "641",
+      "last_page": "651",
+      "bib_id": 13,
+      "year_suffix": "",
+      "text_id": 281
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "Estimating the reproducibility of psychological science",
+      "authors": "Gilbert, D T; King, G; Pettigrew, S; Wilson, T D",
+      "editors": "",
+      "publisher": "",
+      "year": 2016,
+      "volume": "351",
+      "issue": "",
+      "container": "",
+      "first_page": "1037",
+      "last_page": "1037",
+      "bib_id": 14,
+      "year_suffix": "",
+      "text_id": 282
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1126/sciadv.abd1705",
+      "title": "Nonreplicable publications are cited more than replicable ones",
+      "authors": "Gneezy, U; Serra-Garcia, M",
+      "editors": "",
+      "publisher": "",
+      "year": 2021,
+      "volume": "7",
+      "issue": "",
+      "container": "",
+      "first_page": null,
+      "last_page": null,
+      "bib_id": 15,
+      "year_suffix": "",
+      "text_id": 283
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.31222/osf.io/wt5ny",
+      "title": "Citation patterns following a strongly contradictory replication result: Four case studies from psychology",
+      "authors": "Hardwicke, T E; Szücs, D; Thibault, R T; Crüwell, S; Van Den Akker, O; Nuijten, M B; Ioannidis, J",
+      "editors": "",
+      "publisher": "",
+      "year": 2021,
+      "volume": "",
+      "issue": "",
+      "container": "MetaArXiv",
+      "first_page": null,
+      "last_page": null,
+      "bib_id": 16,
+      "year_suffix": "",
+      "text_id": 284
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "Replications and extensions in marketing: Rarely published but quite contrary",
+      "authors": "Hubbard, R; Armstrong, J S",
+      "editors": "",
+      "publisher": "",
+      "year": 1994,
+      "volume": "11",
+      "issue": "3",
+      "container": "International Journal of Research in Marketing",
+      "first_page": "233",
+      "last_page": "248",
+      "bib_id": 17,
+      "year_suffix": "",
+      "text_id": 285
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "Many Labs 2: Investigating variation in replicability across samples and settings",
+      "authors": "Klein, R A; Vianello, M; Hasselman, F; Adams, B G; Adams, R B; Jr, ; Alper, S; Aveyard, M; Axt, J R; Babalola, M T; Bahník, Š; Batra, R; Berkics, M; Bernstein, M J; Berry, D R; Bialobrzeska, O; Binan, E D; Bocian, K; Brandt, M J; Busching, R; Nosek, . .; , B A",
+      "editors": "",
+      "publisher": "",
+      "year": 2018,
+      "volume": "1",
+      "issue": "4",
+      "container": "Advances in Methods and Practices in Psychological Science",
+      "first_page": "443",
+      "last_page": "490",
+      "bib_id": 18,
+      "year_suffix": "",
+      "text_id": 286
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "Google Scholar citations and Google Web/URL citations: A multi-discipline exploratory analysis",
+      "authors": "Kousha, K; Thelwall, M",
+      "editors": "",
+      "publisher": "",
+      "year": 2007,
+      "volume": "58",
+      "issue": "7",
+      "container": "Journal of the American Society for Information Science and Technology",
+      "first_page": "1055",
+      "last_page": "1065",
+      "bib_id": 19,
+      "year_suffix": "",
+      "text_id": 287
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "Facts are more important than novelty: Replication in the education sciences",
+      "authors": "Makel, M C; Plucker, J A",
+      "editors": "",
+      "publisher": "",
+      "year": 2014,
+      "volume": "43",
+      "issue": "6",
+      "container": "Educational Researcher",
+      "first_page": "304",
+      "last_page": "316",
+      "bib_id": 20,
+      "year_suffix": "",
+      "text_id": 288
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "Replication of special education research: Necessary but far too rare",
+      "authors": "Makel, M C; Plucker, J A; Freeman, J; Lombardi, A; Simonsen, B; Coyne, M",
+      "editors": "",
+      "publisher": "",
+      "year": 2016,
+      "volume": "37",
+      "issue": "4",
+      "container": "Remedial and Special Education",
+      "first_page": "205",
+      "last_page": "212",
+      "bib_id": 21,
+      "year_suffix": "",
+      "text_id": 289
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "Replications in psychology research: How often do they really occur?",
+      "authors": "Makel, M C; Plucker, J A; Hegarty, B",
+      "editors": "",
+      "publisher": "",
+      "year": 2012,
+      "volume": "7",
+      "issue": "6",
+      "container": "Perspectives on Psychological Science",
+      "first_page": "537",
+      "last_page": "542",
+      "bib_id": 22,
+      "year_suffix": "",
+      "text_id": 290
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.31234/osf.io/hjcm4",
+      "title": "Self-correction in psychological science: How do psychologists update their beliefs in response to replications?",
+      "authors": "Mcdiarmid, A D; Tullett, A M; Whitt, C M; Vazire, S; Smaldino, P E; Stephens, E E",
+      "editors": "",
+      "publisher": "",
+      "year": 2021,
+      "volume": "",
+      "issue": "",
+      "container": "PsyArXiv",
+      "first_page": null,
+      "last_page": null,
+      "bib_id": 23,
+      "year_suffix": "",
+      "text_id": 291
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "Registered reports: A method to increase the credibility of published results",
+      "authors": "Nosek, B A; Lakens, D",
+      "editors": "",
+      "publisher": "",
+      "year": 2014,
+      "volume": "45",
+      "issue": "",
+      "container": "Social Psychology",
+      "first_page": "137",
+      "last_page": "141",
+      "bib_id": 24,
+      "year_suffix": "",
+      "text_id": 292
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "Preregistration becoming the norm in psychological science",
+      "authors": "Nosek, B A; Lindsay, D S",
+      "editors": "",
+      "publisher": "",
+      "year": 2018,
+      "volume": "31",
+      "issue": "3",
+      "container": "APS Observer",
+      "first_page": "19",
+      "last_page": "21",
+      "bib_id": 25,
+      "year_suffix": "",
+      "text_id": 293
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "An open, large-scale, collaborative effort to estimate the reproducibility of psychological science",
+      "authors": "",
+      "editors": "",
+      "publisher": "",
+      "year": 2012,
+      "volume": "7",
+      "issue": "6",
+      "container": "Perspectives on Psychological Science",
+      "first_page": "657",
+      "last_page": "660",
+      "bib_id": 26,
+      "year_suffix": "",
+      "text_id": 294
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1126/science.aac4716",
+      "title": "Estimating the reproducibility of psychological science",
+      "authors": "",
+      "editors": "",
+      "publisher": "",
+      "year": 2015,
+      "volume": "349",
+      "issue": "",
+      "container": "",
+      "first_page": null,
+      "last_page": null,
+      "bib_id": 27,
+      "year_suffix": "",
+      "text_id": 295
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "Stochastic modeling of citation slips",
+      "authors": "Simkin, M V; Roychowdhury, V P",
+      "editors": "",
+      "publisher": "",
+      "year": 2005,
+      "volume": "62",
+      "issue": "3",
+      "container": "Scientometrics",
+      "first_page": "367",
+      "last_page": "384",
+      "bib_id": 28,
+      "year_suffix": "",
+      "text_id": 296
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "Small telescopes: Detectability and the evaluation of replication results",
+      "authors": "Simonsohn, U",
+      "editors": "",
+      "publisher": "",
+      "year": 2015,
+      "volume": "26",
+      "issue": "5",
+      "container": "Psychological Science",
+      "first_page": "559",
+      "last_page": "569",
+      "bib_id": 29,
+      "year_suffix": "",
+      "text_id": 297
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "Core elements in the process of citing publications: Conceptual overview of the literature",
+      "authors": "Tahamtan, I; Bornmann, L",
+      "editors": "",
+      "publisher": "",
+      "year": 2018,
+      "volume": "12",
+      "issue": "1",
+      "container": "Journal of Informetrics",
+      "first_page": "203",
+      "last_page": "216",
+      "bib_id": 30,
+      "year_suffix": "",
+      "text_id": 298
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "Regression for citation data: An evaluation of different methods",
+      "authors": "Thelwall, M; Wilson, P",
+      "editors": "",
+      "publisher": "",
+      "year": 2014,
+      "volume": "8",
+      "issue": "4",
+      "container": "Journal of Informetrics",
+      "first_page": "963",
+      "last_page": "971",
+      "bib_id": 31,
+      "year_suffix": "",
+      "text_id": 299
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "Bayesian tests to quantify the result of a replication attempt",
+      "authors": "Verhagen, J; Wagenmakers, E.-J",
+      "editors": "",
+      "publisher": "",
+      "year": 2014,
+      "volume": "143",
+      "issue": "4",
+      "container": "Journal of Experimental Psychology: General",
+      "first_page": "1457",
+      "last_page": "1475",
+      "bib_id": 32,
+      "year_suffix": "",
+      "text_id": 300
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "The citation life cycle of articles published in 13 American Psychological Association journals: A 25-year longitudinal analysis",
+      "authors": "Walters, G D",
+      "editors": "",
+      "publisher": "",
+      "year": 2011,
+      "volume": "62",
+      "issue": "8",
+      "container": "Journal of the American Society for Information Science and Technology",
+      "first_page": "1629",
+      "last_page": "1636",
+      "bib_id": 33,
+      "year_suffix": "",
+      "text_id": 301
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "Statistical methods in psychology journals: Guidelines and explanations",
+      "authors": "Wilkinson, L",
+      "editors": "",
+      "publisher": "",
+      "year": 1999,
+      "volume": "54",
+      "issue": "8",
+      "container": "American Psychologist",
+      "first_page": "594",
+      "last_page": "604",
+      "bib_id": 34,
+      "year_suffix": "",
+      "text_id": 302
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "Estimating the deep replicability of scientific findings using human and artificial intelligence",
+      "authors": "Yang, Y; Youyou, W; Uzzi, B",
+      "editors": "",
+      "publisher": "",
+      "year": 2020,
+      "volume": "117",
+      "issue": "20",
+      "container": "Proceedings of the National Academy of Sciences",
+      "first_page": "10762",
+      "last_page": "10768",
+      "bib_id": 35,
+      "year_suffix": "",
+      "text_id": 303
+    }
+  ],
+  "xref": [
+    {
+      "xref_id": 0,
+      "xref_type": "bib",
+      "contents": "(Altmejd et al., 2019;",
+      "text_id": null
+    },
+    {
+      "xref_id": 1,
+      "xref_type": "bib",
+      "contents": "(Bellemare & Wichman, 2020)",
+      "text_id": 67
+    },
+    {
+      "xref_id": 1,
+      "xref_type": "bib",
+      "contents": "(Bellemare & Wichman, 2020)",
+      "text_id": 69
+    },
+    {
+      "xref_id": 1,
+      "xref_type": "bib",
+      "contents": "(Bellemare & Wichman, 2020)",
+      "text_id": 75
+    },
+    {
+      "xref_id": 2,
+      "xref_type": "bib",
+      "contents": "Bressan, 2019;",
+      "text_id": 185
+    },
+    {
+      "xref_id": 2,
+      "xref_type": "bib",
+      "contents": "Bressan, 2019;",
+      "text_id": 187
+    },
+    {
+      "xref_id": 3,
+      "xref_type": "bib",
+      "contents": "(Burbidge et al., 1988;",
+      "text_id": 166
+    },
+    {
+      "xref_id": 4,
+      "xref_type": "bib",
+      "contents": "Camerer et al., 2016",
+      "text_id": null
+    },
+    {
+      "xref_id": 5,
+      "xref_type": "bib",
+      "contents": "Camerer et al., , 2018;;",
+      "text_id": null
+    },
+    {
+      "xref_id": 6,
+      "xref_type": "bib",
+      "contents": "Campbell & Mau, 2020)",
+      "text_id": 166
+    },
+    {
+      "xref_id": 7,
+      "xref_type": "bib",
+      "contents": "Dreber et al. (2015)",
+      "text_id": null
+    },
+    {
+      "xref_id": 8,
+      "xref_type": "bib",
+      "contents": "(Earp & Trafimow, 2015)",
+      "text_id": 15
+    },
+    {
+      "xref_id": 9,
+      "xref_type": "bib",
+      "contents": "Ebersole et al. (2020)",
+      "text_id": 188
+    },
+    {
+      "xref_id": 10,
+      "xref_type": "bib",
+      "contents": "Etz (2015)",
+      "text_id": 75
+    },
+    {
+      "xref_id": 11,
+      "xref_type": "bib",
+      "contents": "Etz and Vandekerckhove (2016)",
+      "text_id": 151
+    },
+    {
+      "xref_id": 12,
+      "xref_type": "bib",
+      "contents": "Evanschitzky et al. (2007)",
+      "text_id": null
+    },
+    {
+      "xref_id": 13,
+      "xref_type": "bib",
+      "contents": "(Gelman & Carlin, 2014)",
+      "text_id": 150
+    },
+    {
+      "xref_id": 14,
+      "xref_type": "bib",
+      "contents": "Gilbert et al., 2016",
+      "text_id": 187
+    },
+    {
+      "xref_id": 15,
+      "xref_type": "bib",
+      "contents": "Gneezy and Serra-Garcia (2021)",
+      "text_id": 22
+    },
+    {
+      "xref_id": 15,
+      "xref_type": "bib",
+      "contents": "(Gneezy & Serra-Garcia, 2021)",
+      "text_id": 101
+    },
+    {
+      "xref_id": 16,
+      "xref_type": "bib",
+      "contents": "Hardwicke et al. (2021)",
+      "text_id": 183
+    },
+    {
+      "xref_id": 17,
+      "xref_type": "bib",
+      "contents": "Hubbard and Armstrong (1994)",
+      "text_id": null
+    },
+    {
+      "xref_id": 18,
+      "xref_type": "bib",
+      "contents": "Klein et al., 2018;",
+      "text_id": null
+    },
+    {
+      "xref_id": 19,
+      "xref_type": "bib",
+      "contents": "(Kousha & Thelwall, 2007)",
+      "text_id": 67
+    },
+    {
+      "xref_id": 21,
+      "xref_type": "bib",
+      "contents": "Makel et al. (2016)",
+      "text_id": null
+    },
+    {
+      "xref_id": 22,
+      "xref_type": "bib",
+      "contents": "Makel et al. (2012)",
+      "text_id": null
+    },
+    {
+      "xref_id": 23,
+      "xref_type": "bib",
+      "contents": "(McDiarmid et al., 2021)",
+      "text_id": 14
+    },
+    {
+      "xref_id": 23,
+      "xref_type": "bib",
+      "contents": "McDiarmid et al. (2021)",
+      "text_id": 185
+    },
+    {
+      "xref_id": 24,
+      "xref_type": "bib",
+      "contents": "(Nosek & Lakens, 2014)",
+      "text_id": 10
+    },
+    {
+      "xref_id": 25,
+      "xref_type": "bib",
+      "contents": "(Nosek & Lindsay, 2018)",
+      "text_id": 10
+    },
+    {
+      "xref_id": 28,
+      "xref_type": "bib",
+      "contents": "Simkin and Roychowdhury (2005)",
+      "text_id": 177
+    },
+    {
+      "xref_id": 29,
+      "xref_type": "bib",
+      "contents": "Simonsohn (2015)",
+      "text_id": 74
+    },
+    {
+      "xref_id": 31,
+      "xref_type": "bib",
+      "contents": "Thelwall and Wilson (2014)",
+      "text_id": 69
+    },
+    {
+      "xref_id": 32,
+      "xref_type": "bib",
+      "contents": "Verhagen and Wagenmakers (2014)",
+      "text_id": 75
+    },
+    {
+      "xref_id": 33,
+      "xref_type": "bib",
+      "contents": "(Walters, 2011)",
+      "text_id": 87
+    },
+    {
+      "xref_id": 34,
+      "xref_type": "bib",
+      "contents": "Wilkinson (1999)",
+      "text_id": 236
+    },
+    {
+      "xref_id": 35,
+      "xref_type": "bib",
+      "contents": "Yang et al., 2020)",
+      "text_id": null
+    },
+    {
+      "xref_id": null,
+      "xref_type": "bib",
+      "contents": "Open Science Collaboration, 2015)",
+      "text_id": null
+    },
+    {
+      "xref_id": null,
+      "xref_type": "bib",
+      "contents": "(Open Science Collaboration, 2012",
+      "text_id": 23
+    },
+    {
+      "xref_id": null,
+      "xref_type": "bib",
+      "contents": ", 2015)",
+      "text_id": 23
+    },
+    {
+      "xref_id": null,
+      "xref_type": "bib",
+      "contents": "(Open Science Collaboration, 2015, abstract)",
+      "text_id": 25
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "1",
+      "text_id": 130
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "1",
+      "text_id": null
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "2",
+      "text_id": 158
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "1",
+      "text_id": 158
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "1",
+      "text_id": 230
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "2",
+      "text_id": 230
+    },
+    {
+      "xref_id": null,
+      "xref_type": null,
+      "contents": "1   2010 2011 2012 2013 2014 2015 2016 2017 2018",
+      "text_id": null
+    },
+    {
+      "xref_id": null,
+      "xref_type": null,
+      "contents": "2010 2011 2012 2013 2014 2015 2016 2017 2018 2019",
+      "text_id": 136
+    },
+    {
+      "xref_id": null,
+      "xref_type": "table",
+      "contents": "1",
+      "text_id": 52
+    },
+    {
+      "xref_id": null,
+      "xref_type": "table",
+      "contents": "1",
+      "text_id": 61
+    },
+    {
+      "xref_id": null,
+      "xref_type": "table",
+      "contents": "3",
+      "text_id": 153
+    },
+    {
+      "xref_id": null,
+      "xref_type": "table",
+      "contents": "3",
+      "text_id": 156
+    },
+    {
+      "xref_id": null,
+      "xref_type": "table",
+      "contents": "4",
+      "text_id": 160
+    },
+    {
+      "xref_id": null,
+      "xref_type": "table",
+      "contents": "4",
+      "text_id": 166
+    }
+  ],
+  "figure": [],
+  "table": [
+    {
+      "table_id": 1,
+      "section_id": 23,
+      "html": "<table>\n  <row>\n    <cell>Journal and year<\/cell>\n    <cell>Volume<\/cell>\n    <cell>Issue<\/cell>\n  <\/row>\n  <row>\n    <cell>Psychological Science<\/cell>\n    <cell/>\n    <cell/>\n  <\/row>\n  <row>\n    <cell>2007<\/cell>\n    <cell>18<\/cell>\n    <cell>10, 11, 12<\/cell>\n  <\/row>\n  <row>\n    <cell>2008<\/cell>\n    <cell>19<\/cell>\n    <cell>5, 6, 8, 9, 10, 11<\/cell>\n  <\/row>\n  <row>\n    <cell>2009<\/cell>\n    <cell>20<\/cell>\n    <cell>1, 2, 3<\/cell>\n  <\/row>\n  <row>\n    <cell>Journal of Experimental<\/cell>\n    <cell/>\n    <cell/>\n  <\/row>\n  <row>\n    <cell>Psychology: Learning,<\/cell>\n    <cell/>\n    <cell/>\n  <\/row>\n  <row>\n    <cell>Memory, and Cognition<\/cell>\n    <cell/>\n    <cell/>\n  <\/row>\n  <row>\n    <cell>2007<\/cell>\n    <cell>33<\/cell>\n    <cell>5, 6<\/cell>\n  <\/row>\n  <row>\n    <cell>2008<\/cell>\n    <cell>34<\/cell>\n    <cell>4, 5, 6<\/cell>\n  <\/row>\n  <row>\n    <cell>2009<\/cell>\n    <cell>35<\/cell>\n    <cell>1, 2<\/cell>\n  <\/row>\n  <row>\n    <cell>Journal of Personality and<\/cell>\n    <cell/>\n    <cell/>\n  <\/row>\n  <row>\n    <cell>Social Psychology<\/cell>\n    <cell/>\n    <cell/>\n  <\/row>\n  <row>\n    <cell>2007<\/cell>\n    <cell>93<\/cell>\n    <cell>4, 5, 6<\/cell>\n  <\/row>\n  <row>\n    <cell>2008<\/cell>\n    <cell>94<\/cell>\n    <cell>6<\/cell>\n  <\/row>\n  <row>\n    <cell>2008<\/cell>\n    <cell>95<\/cell>\n    <cell>4, 5, 6<\/cell>\n  <\/row>\n  <row>\n    <cell>2009<\/cell>\n    <cell>96<\/cell>\n    <cell>1, 2, 3<\/cell>\n  <\/row>\n<\/table>",
+      "contents": null,
+      "page_number": null
+    },
+    {
+      "table_id": 2,
+      "section_id": 24,
+      "html": "<table>\n  <row>\n    <cell/>\n    <cell cols=\"2\">Successful replication<\/cell>\n    <cell cols=\"2\">Failed replication<\/cell>\n    <cell/>\n    <cell cols=\"2\">Fixed effects<\/cell>\n    <cell/>\n  <\/row>\n  <row>\n    <cell/>\n    <cell/>\n    <cell/>\n    <cell/>\n    <cell/>\n    <cell/>\n    <cell/>\n    <cell>Years since<\/cell>\n    <cell>Number of<\/cell>\n  <\/row>\n  <row>\n    <cell>Model<\/cell>\n    <cell>b<\/cell>\n    <cell>p<\/cell>\n    <cell>b<\/cell>\n    <cell>p<\/cell>\n    <cell>Article<\/cell>\n    <cell>Year<\/cell>\n    <cell>publication<\/cell>\n    <cell>observations<\/cell>\n  <\/row>\n  <row>\n    <cell>Baseline<\/cell>\n    <cell>0.037<\/cell>\n    <cell>.609<\/cell>\n    <cell>-0.051<\/cell>\n    <cell>.412<\/cell>\n    <cell>Yes<\/cell>\n    <cell>Yes<\/cell>\n    <cell>No<\/cell>\n    <cell>4,240<\/cell>\n  <\/row>\n  <row>\n    <cell/>\n    <cell>(0.072)<\/cell>\n    <cell/>\n    <cell>(0.062)<\/cell>\n    <cell/>\n    <cell/>\n    <cell/>\n    <cell/>\n    <cell/>\n  <\/row>\n  <row>\n    <cell>Baseline + fixed effects<\/cell>\n    <cell>0.053<\/cell>\n    <cell>.468<\/cell>\n    <cell>-0.035<\/cell>\n    <cell>.576<\/cell>\n    <cell>Yes<\/cell>\n    <cell>Yes<\/cell>\n    <cell>Yes<\/cell>\n    <cell>4,240<\/cell>\n  <\/row>\n  <row>\n    <cell>for number of years<\/cell>\n    <cell>(0.073)<\/cell>\n    <cell/>\n    <cell>(0.063)<\/cell>\n    <cell/>\n    <cell/>\n    <cell/>\n    <cell/>\n    <cell/>\n  <\/row>\n  <row>\n    <cell>since publication<\/cell>\n    <cell/>\n    <cell/>\n    <cell/>\n    <cell/>\n    <cell/>\n    <cell/>\n    <cell/>\n    <cell/>\n  <\/row>\n  <row>\n    <cell>Baseline + separate year<\/cell>\n    <cell>0.082<\/cell>\n    <cell>.260<\/cell>\n    <cell>-0.050<\/cell>\n    <cell>.424<\/cell>\n    <cell>Yes<\/cell>\n    <cell>Yes<\/cell>\n    <cell>Yes<\/cell>\n    <cell>4,240<\/cell>\n  <\/row>\n  <row>\n    <cell>fixed effects for each<\/cell>\n    <cell>(0.073)<\/cell>\n    <cell/>\n    <cell>(0.063)<\/cell>\n    <cell/>\n    <cell/>\n    <cell/>\n    <cell/>\n    <cell/>\n  <\/row>\n  <row>\n    <cell>journal<\/cell>\n    <cell/>\n    <cell/>\n    <cell/>\n    <cell/>\n    <cell/>\n    <cell/>\n    <cell/>\n    <cell/>\n  <\/row>\n  <row>\n    <cell>Baseline allowing for<\/cell>\n    <cell>0.102<\/cell>\n    <cell>.319<\/cell>\n    <cell>-0.010<\/cell>\n    <cell>.906<\/cell>\n    <cell>Yes<\/cell>\n    <cell>Yes<\/cell>\n    <cell>Yes<\/cell>\n    <cell>4,240<\/cell>\n  <\/row>\n  <row>\n    <cell>issue-specific linear<\/cell>\n    <cell>(0.102)<\/cell>\n    <cell/>\n    <cell>(0.082)<\/cell>\n    <cell/>\n    <cell/>\n    <cell/>\n    <cell/>\n    <cell/>\n  <\/row>\n  <row>\n    <cell>trends<\/cell>\n    <cell/>\n    <cell/>\n    <cell/>\n    <cell/>\n    <cell/>\n    <cell/>\n    <cell/>\n    <cell/>\n  <\/row>\n<\/table>",
+      "contents": null,
+      "page_number": null
+    },
+    {
+      "table_id": 3,
+      "section_id": 25,
+      "html": "<table>\n  <row>\n    <cell/>\n    <cell cols=\"2\">Successful<\/cell>\n    <cell cols=\"2\">Inconclusive<\/cell>\n    <cell>Failed<\/cell>\n    <cell/>\n    <cell/>\n    <cell/>\n    <cell/>\n    <cell/>\n  <\/row>\n  <row>\n    <cell/>\n    <cell cols=\"2\">replication<\/cell>\n    <cell cols=\"2\">replication<\/cell>\n    <cell cols=\"2\">replication<\/cell>\n    <cell/>\n    <cell cols=\"2\">Fixed effects<\/cell>\n    <cell/>\n  <\/row>\n  <row>\n    <cell/>\n    <cell/>\n    <cell/>\n    <cell/>\n    <cell/>\n    <cell/>\n    <cell/>\n    <cell/>\n    <cell/>\n    <cell/>\n    <cell>Number<\/cell>\n  <\/row>\n  <row>\n    <cell/>\n    <cell/>\n    <cell/>\n    <cell/>\n    <cell/>\n    <cell/>\n    <cell/>\n    <cell/>\n    <cell/>\n    <cell>Years since<\/cell>\n    <cell>of<\/cell>\n  <\/row>\n  <row>\n    <cell>Model<\/cell>\n    <cell>b<\/cell>\n    <cell>p<\/cell>\n    <cell>b<\/cell>\n    <cell>p<\/cell>\n    <cell>b<\/cell>\n    <cell>p<\/cell>\n    <cell>Article<\/cell>\n    <cell>Year<\/cell>\n    <cell>publication<\/cell>\n    <cell>observations<\/cell>\n  <\/row>\n  <row>\n    <cell>Baseline<\/cell>\n    <cell>0.040<\/cell>\n    <cell>.585<\/cell>\n    <cell>-0.143<\/cell>\n    <cell>.144<\/cell>\n    <cell>-0.018<\/cell>\n    <cell>.807<\/cell>\n    <cell>Yes<\/cell>\n    <cell>Yes<\/cell>\n    <cell>No<\/cell>\n    <cell>4,200<\/cell>\n  <\/row>\n  <row>\n    <cell/>\n    <cell>(0.074)<\/cell>\n    <cell/>\n    <cell>(0.097)<\/cell>\n    <cell/>\n    <cell>(0.073)<\/cell>\n    <cell/>\n    <cell/>\n    <cell/>\n    <cell/>\n    <cell/>\n  <\/row>\n  <row>\n    <cell>Baseline + fixed effects<\/cell>\n    <cell>0.057<\/cell>\n    <cell>.450<\/cell>\n    <cell>-0.127<\/cell>\n    <cell>.196<\/cell>\n    <cell>-0.002<\/cell>\n    <cell>.980<\/cell>\n    <cell>Yes<\/cell>\n    <cell>Yes<\/cell>\n    <cell>Yes<\/cell>\n    <cell>4,200<\/cell>\n  <\/row>\n  <row>\n    <cell>for number of years<\/cell>\n    <cell>(0.075)<\/cell>\n    <cell/>\n    <cell>(0.098)<\/cell>\n    <cell/>\n    <cell>(0.073)<\/cell>\n    <cell/>\n    <cell/>\n    <cell/>\n    <cell/>\n    <cell/>\n  <\/row>\n  <row>\n    <cell>since publication<\/cell>\n    <cell/>\n    <cell/>\n    <cell/>\n    <cell/>\n    <cell/>\n    <cell/>\n    <cell/>\n    <cell/>\n    <cell/>\n    <cell/>\n  <\/row>\n  <row>\n    <cell>Baseline + separate year<\/cell>\n    <cell>0.117<\/cell>\n    <cell>.131<\/cell>\n    <cell>-0.139<\/cell>\n    <cell>.162<\/cell>\n    <cell>-0.028<\/cell>\n    <cell>.700<\/cell>\n    <cell>Yes<\/cell>\n    <cell>Yes<\/cell>\n    <cell>Yes<\/cell>\n    <cell>4,200<\/cell>\n  <\/row>\n  <row>\n    <cell>fixed effects for each<\/cell>\n    <cell>(0.077)<\/cell>\n    <cell/>\n    <cell>(0.099)<\/cell>\n    <cell/>\n    <cell>(0.072)<\/cell>\n    <cell/>\n    <cell/>\n    <cell/>\n    <cell/>\n    <cell/>\n  <\/row>\n  <row>\n    <cell>journal<\/cell>\n    <cell/>\n    <cell/>\n    <cell/>\n    <cell/>\n    <cell/>\n    <cell/>\n    <cell/>\n    <cell/>\n    <cell/>\n    <cell/>\n  <\/row>\n  <row>\n    <cell>Baseline allowing for<\/cell>\n    <cell>0.096<\/cell>\n    <cell>.375<\/cell>\n    <cell>-0.101<\/cell>\n    <cell>.342<\/cell>\n    <cell>0.032<\/cell>\n    <cell>.738<\/cell>\n    <cell>Yes<\/cell>\n    <cell>Yes<\/cell>\n    <cell>Yes<\/cell>\n    <cell>4,200<\/cell>\n  <\/row>\n  <row>\n    <cell>issue-specific linear<\/cell>\n    <cell>(0.108)<\/cell>\n    <cell/>\n    <cell>(0.106)<\/cell>\n    <cell/>\n    <cell>(0.095)<\/cell>\n    <cell/>\n    <cell/>\n    <cell/>\n    <cell/>\n    <cell/>\n  <\/row>\n  <row>\n    <cell>trends<\/cell>\n    <cell/>\n    <cell/>\n    <cell/>\n    <cell/>\n    <cell/>\n    <cell/>\n    <cell/>\n    <cell/>\n    <cell/>\n    <cell/>\n  <\/row>\n<\/table>",
+      "contents": null,
+      "page_number": null
+    },
+    {
+      "table_id": 4,
+      "section_id": 26,
+      "html": "<table>\n  <row>\n    <cell/>\n    <cell cols=\"2\">Successful<\/cell>\n    <cell>Failed<\/cell>\n    <cell/>\n    <cell/>\n    <cell/>\n    <cell/>\n    <cell/>\n  <\/row>\n  <row>\n    <cell/>\n    <cell cols=\"2\">replication<\/cell>\n    <cell cols=\"2\">replication<\/cell>\n    <cell/>\n    <cell cols=\"2\">Fixed effects<\/cell>\n    <cell/>\n  <\/row>\n  <row>\n    <cell/>\n    <cell/>\n    <cell/>\n    <cell/>\n    <cell/>\n    <cell/>\n    <cell/>\n    <cell>Years since<\/cell>\n    <cell>Number of<\/cell>\n  <\/row>\n  <row>\n    <cell>Specification<\/cell>\n    <cell>b<\/cell>\n    <cell>p<\/cell>\n    <cell>b<\/cell>\n    <cell>p<\/cell>\n    <cell>Article<\/cell>\n    <cell>Year<\/cell>\n    <cell>publication<\/cell>\n    <cell>observations<\/cell>\n  <\/row>\n  <row>\n    <cell>All articles using IHS-<\/cell>\n    <cell>0.064<\/cell>\n    <cell>.362<\/cell>\n    <cell>-0.024<\/cell>\n    <cell>.695<\/cell>\n    <cell>Yes<\/cell>\n    <cell>Yes<\/cell>\n    <cell>Yes<\/cell>\n    <cell>5,680<\/cell>\n  <\/row>\n  <row>\n    <cell>transformed citation<\/cell>\n    <cell>(0.070)<\/cell>\n    <cell/>\n    <cell>(0.061)<\/cell>\n    <cell/>\n    <cell/>\n    <cell/>\n    <cell/>\n    <cell/>\n  <\/row>\n  <row>\n    <cell>counts<\/cell>\n    <cell/>\n    <cell/>\n    <cell/>\n    <cell/>\n    <cell/>\n    <cell/>\n    <cell/>\n    <cell/>\n  <\/row>\n  <row>\n    <cell>Main sample using raw<\/cell>\n    <cell>0.056<\/cell>\n    <cell>.928<\/cell>\n    <cell>-0.480<\/cell>\n    <cell>.393<\/cell>\n    <cell>Yes<\/cell>\n    <cell>Yes<\/cell>\n    <cell>Yes<\/cell>\n    <cell>4,240<\/cell>\n  <\/row>\n  <row>\n    <cell>citation counts<\/cell>\n    <cell>(0.618)<\/cell>\n    <cell/>\n    <cell>(0.562)<\/cell>\n    <cell/>\n    <cell/>\n    <cell/>\n    <cell/>\n    <cell/>\n  <\/row>\n  <row>\n    <cell>Main sample using<\/cell>\n    <cell>0.044<\/cell>\n    <cell>.475<\/cell>\n    <cell>-0.032<\/cell>\n    <cell>.548<\/cell>\n    <cell>Yes<\/cell>\n    <cell>Yes<\/cell>\n    <cell>Yes<\/cell>\n    <cell>4,240<\/cell>\n  <\/row>\n  <row>\n    <cell>logarithmically<\/cell>\n    <cell>(0.061)<\/cell>\n    <cell/>\n    <cell>(0.053)<\/cell>\n    <cell/>\n    <cell/>\n    <cell/>\n    <cell/>\n    <cell/>\n  <\/row>\n  <row>\n    <cell>transformed citation<\/cell>\n    <cell/>\n    <cell/>\n    <cell/>\n    <cell/>\n    <cell/>\n    <cell/>\n    <cell/>\n    <cell/>\n  <\/row>\n  <row>\n    <cell>counts: ln(citations + 1)<\/cell>\n    <cell/>\n    <cell/>\n    <cell/>\n    <cell/>\n    <cell/>\n    <cell/>\n    <cell/>\n    <cell/>\n  <\/row>\n<\/table>",
+      "contents": null,
+      "page_number": null
+    }
+  ],
+  "eq": [
+    {
+      "text_id": 85,
+      "grp_id": 1,
+      "lhs": "SD",
+      "comp": "=",
+      "rhs": "7.91"
+    },
+    {
+      "text_id": 86,
+      "grp_id": 2,
+      "lhs": "SD",
+      "comp": "=",
+      "rhs": "5.37"
+    },
+    {
+      "text_id": 86,
+      "grp_id": 2,
+      "lhs": "SD",
+      "comp": "=",
+      "rhs": "8.81"
+    },
+    {
+      "text_id": 119,
+      "grp_id": 3,
+      "lhs": "p",
+      "comp": "=",
+      "rhs": ".468"
+    },
+    {
+      "text_id": 119,
+      "grp_id": 3,
+      "lhs": "95% CI",
+      "comp": "=",
+      "rhs": "[ -0 159 0 089 ., . ]"
+    },
+    {
+      "text_id": 119,
+      "grp_id": 3,
+      "lhs": "p",
+      "comp": "=",
+      "rhs": ".576"
+    },
+    {
+      "text_id": 155,
+      "grp_id": 4,
+      "lhs": "p",
+      "comp": "=",
+      "rhs": ".45"
+    },
+    {
+      "text_id": 155,
+      "grp_id": 4,
+      "lhs": "95% CI",
+      "comp": "=",
+      "rhs": "[ ., . ]"
+    },
+    {
+      "text_id": 155,
+      "grp_id": 4,
+      "lhs": "p",
+      "comp": "=",
+      "rhs": ".196"
+    },
+    {
+      "text_id": 155,
+      "grp_id": 4,
+      "lhs": "95% CI",
+      "comp": "=",
+      "rhs": "[-0.146, 0.143]"
+    },
+    {
+      "text_id": 162,
+      "grp_id": 5,
+      "lhs": "95% CI",
+      "comp": "=",
+      "rhs": "[ ., . ]"
+    },
+    {
+      "text_id": 162,
+      "grp_id": 5,
+      "lhs": "p",
+      "comp": "=",
+      "rhs": ".695"
+    },
+    {
+      "text_id": 167,
+      "grp_id": 6,
+      "lhs": "95% CI",
+      "comp": "=",
+      "rhs": "[ -1 158 1 27 ., . ]"
+    },
+    {
+      "text_id": 167,
+      "grp_id": 6,
+      "lhs": "p",
+      "comp": "=",
+      "rhs": ".928"
+    },
+    {
+      "text_id": 173,
+      "grp_id": 7,
+      "lhs": "95% CI",
+      "comp": "=",
+      "rhs": "[ -0 076 0 163 ., . ]"
+    },
+    {
+      "text_id": 173,
+      "grp_id": 7,
+      "lhs": "p",
+      "comp": "=",
+      "rhs": ".475"
+    },
+    {
+      "text_id": 173,
+      "grp_id": 7,
+      "lhs": "95% CI",
+      "comp": "=",
+      "rhs": "[-1 585 0 625 ., . ]"
+    },
+    {
+      "text_id": 173,
+      "grp_id": 7,
+      "lhs": "p",
+      "comp": "=",
+      "rhs": ".393"
+    },
+    {
+      "text_id": 173,
+      "grp_id": 7,
+      "lhs": "95% CI",
+      "comp": "=",
+      "rhs": "[ -0 135 0 072 ., . ]"
+    },
+    {
+      "text_id": 173,
+      "grp_id": 7,
+      "lhs": "p",
+      "comp": "=",
+      "rhs": ".548"
+    }
+  ],
+  "bib_match": [
+    {
+      "bib_id": 1,
+      "service": "crossref",
+      "service_id": null,
+      "score": 86.8363,
+      "bib_type": "article",
+      "doi": "10.1111/obes.12325",
+      "title": "Elasticities and the Inverse Hyperbolic Sine Transformation",
+      "authors": [
+        {
+          "given": "Marc F.",
+          "family": "Bellemare"
+        },
+        {
+          "given": "Casey J.",
+          "family": "Wichman"
+        }
+      ],
+      "editors": [],
+      "publisher": "Wiley",
+      "year": 2019,
+      "date": null,
+      "container": "Oxford Bulletin of Economics and Statistics",
+      "volume": "82",
+      "issue": "1",
+      "first_page": "50",
+      "last_page": "61",
+      "edition": null,
+      "version": null,
+      "url": "https://doi.org/10.1111/obes.12325"
+    },
+    {
+      "bib_id": 3,
+      "service": "crossref",
+      "service_id": null,
+      "score": 91.2254,
+      "bib_type": "article",
+      "doi": "10.1080/01621459.1988.10478575",
+      "title": "Alternative Transformations to Handle Extreme Values of the Dependent Variable",
+      "authors": [
+        {
+          "given": "John B.",
+          "family": "Burbidge"
+        },
+        {
+          "given": "Lonnie",
+          "family": "Magee"
+        },
+        {
+          "given": "A. Leslie",
+          "family": "Robb"
+        }
+      ],
+      "editors": [],
+      "publisher": "Informa UK Limited",
+      "year": 1988,
+      "date": null,
+      "container": "Journal of the American Statistical Association",
+      "volume": "83",
+      "issue": "401",
+      "first_page": "123",
+      "last_page": "127",
+      "edition": null,
+      "version": null,
+      "url": "https://doi.org/10.1080/01621459.1988.10478575"
+    },
+    {
+      "bib_id": 4,
+      "service": "crossref",
+      "service_id": null,
+      "score": 179.7446,
+      "bib_type": "article",
+      "doi": "10.1126/science.aaf0918",
+      "title": "Evaluating replicability of laboratory experiments in economics",
+      "authors": [
+        {
+          "given": "Colin F.",
+          "family": "Camerer"
+        },
+        {
+          "given": "Anna",
+          "family": "Dreber"
+        },
+        {
+          "given": "Eskil",
+          "family": "Forsell"
+        },
+        {
+          "given": "Teck-Hua",
+          "family": "Ho"
+        },
+        {
+          "given": "Jürgen",
+          "family": "Huber"
+        },
+        {
+          "given": "Magnus",
+          "family": "Johannesson"
+        },
+        {
+          "given": "Michael",
+          "family": "Kirchler"
+        },
+        {
+          "given": "Johan",
+          "family": "Almenberg"
+        },
+        {
+          "given": "Adam",
+          "family": "Altmejd"
+        },
+        {
+          "given": "Taizan",
+          "family": "Chan"
+        },
+        {
+          "given": "Emma",
+          "family": "Heikensten"
+        },
+        {
+          "given": "Felix",
+          "family": "Holzmeister"
+        },
+        {
+          "given": "Taisuke",
+          "family": "Imai"
+        },
+        {
+          "given": "Siri",
+          "family": "Isaksson"
+        },
+        {
+          "given": "Gideon",
+          "family": "Nave"
+        },
+        {
+          "given": "Thomas",
+          "family": "Pfeiffer"
+        },
+        {
+          "given": "Michael",
+          "family": "Razen"
+        },
+        {
+          "given": "Hang",
+          "family": "Wu"
+        }
+      ],
+      "editors": [],
+      "publisher": "American Association for the Advancement of Science (AAAS)",
+      "year": 2016,
+      "date": null,
+      "container": "Science",
+      "volume": "351",
+      "issue": "6280",
+      "first_page": "1433",
+      "last_page": "1436",
+      "edition": null,
+      "version": null,
+      "url": "https://doi.org/10.1126/science.aaf0918"
+    },
+    {
+      "bib_id": 5,
+      "service": "crossref",
+      "service_id": null,
+      "score": 177.1507,
+      "bib_type": "article",
+      "doi": "10.1038/s41562-018-0399-z",
+      "title": "Evaluating the replicability of social science experiments in Nature and Science between 2010 and 2015",
+      "authors": [
+        {
+          "given": "Colin F.",
+          "family": "Camerer"
+        },
+        {
+          "given": "Anna",
+          "family": "Dreber"
+        },
+        {
+          "given": "Felix",
+          "family": "Holzmeister"
+        },
+        {
+          "given": "Teck-Hua",
+          "family": "Ho"
+        },
+        {
+          "given": "Jürgen",
+          "family": "Huber"
+        },
+        {
+          "given": "Magnus",
+          "family": "Johannesson"
+        },
+        {
+          "given": "Michael",
+          "family": "Kirchler"
+        },
+        {
+          "given": "Gideon",
+          "family": "Nave"
+        },
+        {
+          "given": "Brian A.",
+          "family": "Nosek"
+        },
+        {
+          "given": "Thomas",
+          "family": "Pfeiffer"
+        },
+        {
+          "given": "Adam",
+          "family": "Altmejd"
+        },
+        {
+          "given": "Nick",
+          "family": "Buttrick"
+        },
+        {
+          "given": "Taizan",
+          "family": "Chan"
+        },
+        {
+          "given": "Yiling",
+          "family": "Chen"
+        },
+        {
+          "given": "Eskil",
+          "family": "Forsell"
+        },
+        {
+          "given": "Anup",
+          "family": "Gampa"
+        },
+        {
+          "given": "Emma",
+          "family": "Heikensten"
+        },
+        {
+          "given": "Lily",
+          "family": "Hummer"
+        },
+        {
+          "given": "Taisuke",
+          "family": "Imai"
+        },
+        {
+          "given": "Siri",
+          "family": "Isaksson"
+        },
+        {
+          "given": "Dylan",
+          "family": "Manfredi"
+        },
+        {
+          "given": "Julia",
+          "family": "Rose"
+        },
+        {
+          "given": "Eric-Jan",
+          "family": "Wagenmakers"
+        },
+        {
+          "given": "Hang",
+          "family": "Wu"
+        }
+      ],
+      "editors": [],
+      "publisher": "Springer Science and Business Media LLC",
+      "year": 2018,
+      "date": null,
+      "container": "Nature Human Behaviour",
+      "volume": "2",
+      "issue": "9",
+      "first_page": "637",
+      "last_page": "644",
+      "edition": null,
+      "version": null,
+      "url": "https://doi.org/10.1038/s41562-018-0399-z"
+    },
+    {
+      "bib_id": 6,
+      "service": "crossref",
+      "service_id": null,
+      "score": 73.6085,
+      "bib_type": "article",
+      "doi": "10.1093/restud/rdab037",
+      "title": "On “Trade Induced Technical Change: The Impact of Chinese Imports on Innovation, IT, and Productivity”",
+      "authors": [
+        {
+          "given": "Douglas L",
+          "family": "Campbell"
+        },
+        {
+          "given": "Karsten",
+          "family": "Mau"
+        }
+      ],
+      "editors": [],
+      "publisher": "Oxford University Press (OUP)",
+      "year": 2021,
+      "date": null,
+      "container": "The Review of Economic Studies",
+      "volume": "88",
+      "issue": "5",
+      "first_page": "2555",
+      "last_page": "2559",
+      "edition": null,
+      "version": null,
+      "url": "https://doi.org/10.1093/restud/rdab037"
+    },
+    {
+      "bib_id": 7,
+      "service": "crossref",
+      "service_id": null,
+      "score": 112.4117,
+      "bib_type": "article",
+      "doi": "10.1073/pnas.1516179112",
+      "title": "Using prediction markets to estimate the reproducibility of scientific research",
+      "authors": [
+        {
+          "given": "Anna",
+          "family": "Dreber"
+        },
+        {
+          "given": "Thomas",
+          "family": "Pfeiffer"
+        },
+        {
+          "given": "Johan",
+          "family": "Almenberg"
+        },
+        {
+          "given": "Siri",
+          "family": "Isaksson"
+        },
+        {
+          "given": "Brad",
+          "family": "Wilson"
+        },
+        {
+          "given": "Yiling",
+          "family": "Chen"
+        },
+        {
+          "given": "Brian A.",
+          "family": "Nosek"
+        },
+        {
+          "given": "Magnus",
+          "family": "Johannesson"
+        }
+      ],
+      "editors": [],
+      "publisher": "Proceedings of the National Academy of Sciences",
+      "year": 2015,
+      "date": null,
+      "container": "Proceedings of the National Academy of Sciences",
+      "volume": "112",
+      "issue": "50",
+      "first_page": "15343",
+      "last_page": "15347",
+      "edition": null,
+      "version": null,
+      "url": "https://doi.org/10.1073/pnas.1516179112"
+    },
+    {
+      "bib_id": 8,
+      "service": "crossref",
+      "service_id": null,
+      "score": 89.2535,
+      "bib_type": "article",
+      "doi": "10.3389/fpsyg.2015.00621",
+      "title": "Replication, falsification, and the crisis of confidence in social psychology",
+      "authors": [
+        {
+          "given": "Brian D.",
+          "family": "Earp"
+        },
+        {
+          "given": "David",
+          "family": "Trafimow"
+        }
+      ],
+      "editors": [],
+      "publisher": "Frontiers Media SA",
+      "year": 2015,
+      "date": null,
+      "container": "Frontiers in Psychology",
+      "volume": "6",
+      "issue": null,
+      "first_page": null,
+      "last_page": null,
+      "edition": null,
+      "version": null,
+      "url": "https://doi.org/10.3389/fpsyg.2015.00621"
+    },
+    {
+      "bib_id": 9,
+      "service": "crossref",
+      "service_id": null,
+      "score": 116.5853,
+      "bib_type": "misc",
+      "doi": "10.31234/osf.io/jmnsq",
+      "title": "Many Labs 5: Testing pre-data collection peer review as an intervention to increase replicability",
+      "authors": [
+        {
+          "given": "Charles R.",
+          "family": "Ebersole"
+        },
+        {
+          "given": "Brian A.",
+          "family": "Nosek"
+        },
+        {
+          "given": "Mallory",
+          "family": "Kidwell"
+        },
+        {
+          "given": "Nick",
+          "family": "Buttrick"
+        },
+        {
+          "given": "Erica",
+          "family": "Baranski"
+        },
+        {
+          "given": "Christopher R.",
+          "family": "Chartier"
+        },
+        {
+          "given": "Maya B",
+          "family": "Mathur"
+        },
+        {
+          "given": "Hans",
+          "family": "IJzerman"
+        },
+        {
+          "given": "Ljiljana B.",
+          "family": "Lazarevic"
+        },
+        {
+          "given": "Katherine S.",
+          "family": "Corker"
+        },
+        {
+          "given": "Hugh",
+          "family": "Rabagliati"
+        },
+        {
+          "given": "Martin",
+          "family": "Corley"
+        },
+        {
+          "given": "Joshua K.",
+          "family": "Hartshorne"
+        },
+        {
+          "given": "Ivan",
+          "family": "Ropovik"
+        }
+      ],
+      "editors": [],
+      "publisher": "Center for Open Science",
+      "year": 2020,
+      "date": null,
+      "container": null,
+      "volume": null,
+      "issue": null,
+      "first_page": null,
+      "last_page": null,
+      "edition": null,
+      "version": null,
+      "url": "https://doi.org/10.31234/osf.io/jmnsq"
+    },
+    {
+      "bib_id": 12,
+      "service": "crossref",
+      "service_id": null,
+      "score": 88.0005,
+      "bib_type": "article",
+      "doi": "10.1016/j.jbusres.2006.12.003",
+      "title": "Replication research's disturbing trend",
+      "authors": [
+        {
+          "given": "Heiner",
+          "family": "Evanschitzky"
+        },
+        {
+          "given": "Carsten",
+          "family": "Baumgarth"
+        },
+        {
+          "given": "Raymond",
+          "family": "Hubbard"
+        },
+        {
+          "given": "J. Scott",
+          "family": "Armstrong"
+        }
+      ],
+      "editors": [],
+      "publisher": "Elsevier BV",
+      "year": 2007,
+      "date": null,
+      "container": "Journal of Business Research",
+      "volume": "60",
+      "issue": "4",
+      "first_page": "411",
+      "last_page": "415",
+      "edition": null,
+      "version": null,
+      "url": "https://doi.org/10.1016/j.jbusres.2006.12.003"
+    },
+    {
+      "bib_id": 13,
+      "service": "crossref",
+      "service_id": null,
+      "score": 95.7244,
+      "bib_type": "article",
+      "doi": "10.1177/1745691614551642",
+      "title": "Beyond Power Calculations",
+      "authors": [
+        {
+          "given": "Andrew",
+          "family": "Gelman"
+        },
+        {
+          "given": "John",
+          "family": "Carlin"
+        }
+      ],
+      "editors": [],
+      "publisher": "SAGE Publications",
+      "year": 2014,
+      "date": null,
+      "container": "Perspectives on Psychological Science",
+      "volume": "9",
+      "issue": "6",
+      "first_page": "641",
+      "last_page": "651",
+      "edition": null,
+      "version": null,
+      "url": "https://doi.org/10.1177/1745691614551642"
+    },
+    {
+      "bib_id": 14,
+      "service": "crossref",
+      "service_id": null,
+      "score": 58.7524,
+      "bib_type": "article",
+      "doi": "10.1126/science.aad7243",
+      "title": "Comment on “Estimating the reproducibility of psychological science”",
+      "authors": [
+        {
+          "given": "Daniel T.",
+          "family": "Gilbert"
+        },
+        {
+          "given": "Gary",
+          "family": "King"
+        },
+        {
+          "given": "Stephen",
+          "family": "Pettigrew"
+        },
+        {
+          "given": "Timothy D.",
+          "family": "Wilson"
+        }
+      ],
+      "editors": [],
+      "publisher": "American Association for the Advancement of Science (AAAS)",
+      "year": 2016,
+      "date": null,
+      "container": "Science",
+      "volume": "351",
+      "issue": "6277",
+      "first_page": "1037",
+      "last_page": "1037",
+      "edition": null,
+      "version": null,
+      "url": "https://doi.org/10.1126/science.aad7243"
+    },
+    {
+      "bib_id": 15,
+      "service": "crossref",
+      "service_id": null,
+      "score": 103.3581,
+      "bib_type": "article",
+      "doi": "10.1126/sciadv.abd1705",
+      "title": "Nonreplicable publications are cited more than replicable ones",
+      "authors": [
+        {
+          "given": "Marta",
+          "family": "Serra-Garcia"
+        },
+        {
+          "given": "Uri",
+          "family": "Gneezy"
+        }
+      ],
+      "editors": [],
+      "publisher": "American Association for the Advancement of Science (AAAS)",
+      "year": 2021,
+      "date": null,
+      "container": "Science Advances",
+      "volume": "7",
+      "issue": "21",
+      "first_page": null,
+      "last_page": null,
+      "edition": null,
+      "version": null,
+      "url": "https://doi.org/10.1126/sciadv.abd1705"
+    },
+    {
+      "bib_id": 16,
+      "service": "crossref",
+      "service_id": null,
+      "score": 164.9255,
+      "bib_type": "misc",
+      "doi": "10.31222/osf.io/wt5ny",
+      "title": "Citation patterns following a strongly contradictory replication result:  Four case studies from psychology",
+      "authors": [
+        {
+          "given": "Tom Elis",
+          "family": "Hardwicke"
+        },
+        {
+          "given": "Dénes",
+          "family": "Szűcs"
+        },
+        {
+          "given": "Robert T.",
+          "family": "Thibault"
+        },
+        {
+          "given": "Sophia",
+          "family": "Crüwell"
+        },
+        {
+          "given": "Olmo",
+          "family": "Van den Akker"
+        },
+        {
+          "given": "Michele B.",
+          "family": "Nuijten"
+        },
+        {
+          "given": "John P.A.",
+          "family": "Ioannidis"
+        }
+      ],
+      "editors": [],
+      "publisher": "Center for Open Science",
+      "year": 2021,
+      "date": null,
+      "container": null,
+      "volume": null,
+      "issue": null,
+      "first_page": null,
+      "last_page": null,
+      "edition": null,
+      "version": null,
+      "url": "https://doi.org/10.31222/osf.io/wt5ny"
+    },
+    {
+      "bib_id": 17,
+      "service": "crossref",
+      "service_id": null,
+      "score": 102.9532,
+      "bib_type": "article",
+      "doi": "10.1016/0167-8116(94)90003-5",
+      "title": "Replications and extensions in marketing: Rarely published but quite contrary",
+      "authors": [
+        {
+          "given": "Raymond",
+          "family": "Hubbard"
+        },
+        {
+          "given": "J.Scott",
+          "family": "Armstrong"
+        }
+      ],
+      "editors": [],
+      "publisher": "Elsevier BV",
+      "year": 1994,
+      "date": null,
+      "container": "International Journal of Research in Marketing",
+      "volume": "11",
+      "issue": "3",
+      "first_page": "233",
+      "last_page": "248",
+      "edition": null,
+      "version": null,
+      "url": "https://doi.org/10.1016/0167-8116(94)90003-5"
+    },
+    {
+      "bib_id": 18,
+      "service": "crossref",
+      "service_id": null,
+      "score": 65.1145,
+      "bib_type": "misc",
+      "doi": "10.3410/f.734754107.793567432",
+      "title": "Faculty Opinions recommendation of Many Labs 2: Investigating Variation in Replicability Across Samples and Settings.",
+      "authors": [
+        {
+          "given": "Tyson S",
+          "family": "Barrett"
+        }
+      ],
+      "editors": [],
+      "publisher": "H1 Connect",
+      "year": 2019,
+      "date": null,
+      "container": "Faculty Opinions – Post-Publication Peer Review of the Biomedical Literature",
+      "volume": null,
+      "issue": null,
+      "first_page": null,
+      "last_page": null,
+      "edition": null,
+      "version": null,
+      "url": "https://doi.org/10.3410/f.734754107.793567432"
+    },
+    {
+      "bib_id": 19,
+      "service": "crossref",
+      "service_id": null,
+      "score": 129.7983,
+      "bib_type": "article",
+      "doi": "10.1002/asi.20584",
+      "title": "Google Scholar citations and Google Web/URL citations: A multi‐discipline exploratory analysis",
+      "authors": [
+        {
+          "given": "Kayvan",
+          "family": "Kousha"
+        },
+        {
+          "given": "Mike",
+          "family": "Thelwall"
+        }
+      ],
+      "editors": [],
+      "publisher": "Wiley",
+      "year": 2007,
+      "date": null,
+      "container": "Journal of the American Society for Information Science and Technology",
+      "volume": "58",
+      "issue": "7",
+      "first_page": "1055",
+      "last_page": "1065",
+      "edition": null,
+      "version": null,
+      "url": "https://doi.org/10.1002/asi.20584"
+    },
+    {
+      "bib_id": 20,
+      "service": "crossref",
+      "service_id": null,
+      "score": 100.5201,
+      "bib_type": "article",
+      "doi": "10.3102/0013189x14545513",
+      "title": "Facts Are More Important Than Novelty",
+      "authors": [
+        {
+          "given": "Matthew C.",
+          "family": "Makel"
+        },
+        {
+          "given": "Jonathan A.",
+          "family": "Plucker"
+        }
+      ],
+      "editors": [],
+      "publisher": "American Educational Research Association (AERA)",
+      "year": 2014,
+      "date": null,
+      "container": "Educational Researcher",
+      "volume": "43",
+      "issue": "6",
+      "first_page": "304",
+      "last_page": "316",
+      "edition": null,
+      "version": null,
+      "url": "https://doi.org/10.3102/0013189x14545513"
+    },
+    {
+      "bib_id": 21,
+      "service": "crossref",
+      "service_id": null,
+      "score": 134.0317,
+      "bib_type": "article",
+      "doi": "10.1177/0741932516646083",
+      "title": "Replication of Special Education Research",
+      "authors": [
+        {
+          "given": "Matthew C.",
+          "family": "Makel"
+        },
+        {
+          "given": "Jonathan A.",
+          "family": "Plucker"
+        },
+        {
+          "given": "Jennifer",
+          "family": "Freeman"
+        },
+        {
+          "given": "Allison",
+          "family": "Lombardi"
+        },
+        {
+          "given": "Brandi",
+          "family": "Simonsen"
+        },
+        {
+          "given": "Michael",
+          "family": "Coyne"
+        }
+      ],
+      "editors": [],
+      "publisher": "SAGE Publications",
+      "year": 2016,
+      "date": null,
+      "container": "Remedial and Special Education",
+      "volume": "37",
+      "issue": "4",
+      "first_page": "205",
+      "last_page": "212",
+      "edition": null,
+      "version": null,
+      "url": "https://doi.org/10.1177/0741932516646083"
+    },
+    {
+      "bib_id": 22,
+      "service": "crossref",
+      "service_id": null,
+      "score": 104.8237,
+      "bib_type": "article",
+      "doi": "10.1177/1745691612460688",
+      "title": "Replications in Psychology Research",
+      "authors": [
+        {
+          "given": "Matthew C.",
+          "family": "Makel"
+        },
+        {
+          "given": "Jonathan A.",
+          "family": "Plucker"
+        },
+        {
+          "given": "Boyd",
+          "family": "Hegarty"
+        }
+      ],
+      "editors": [],
+      "publisher": "SAGE Publications",
+      "year": 2012,
+      "date": null,
+      "container": "Perspectives on Psychological Science",
+      "volume": "7",
+      "issue": "6",
+      "first_page": "537",
+      "last_page": "542",
+      "edition": null,
+      "version": null,
+      "url": "https://doi.org/10.1177/1745691612460688"
+    },
+    {
+      "bib_id": 23,
+      "service": "crossref",
+      "service_id": null,
+      "score": 102.2118,
+      "bib_type": "misc",
+      "doi": "10.31234/osf.io/hjcm4",
+      "title": "Psychologists Update their Beliefs About Effect Sizes After Replication Studies",
+      "authors": [
+        {
+          "given": "Alexander",
+          "family": "McDiarmid"
+        },
+        {
+          "given": "Alexa Mary",
+          "family": "Tullett"
+        },
+        {
+          "given": "Cassie Marie",
+          "family": "Whitt"
+        },
+        {
+          "given": "Simine",
+          "family": "Vazire"
+        },
+        {
+          "given": "Paul E.",
+          "family": "Smaldino"
+        },
+        {
+          "given": null,
+          "family": "Eli"
+        }
+      ],
+      "editors": [],
+      "publisher": "Center for Open Science",
+      "year": 2021,
+      "date": null,
+      "container": null,
+      "volume": null,
+      "issue": null,
+      "first_page": null,
+      "last_page": null,
+      "edition": null,
+      "version": null,
+      "url": "https://doi.org/10.31234/osf.io/hjcm4"
+    },
+    {
+      "bib_id": 24,
+      "service": "crossref",
+      "service_id": null,
+      "score": 86.319,
+      "bib_type": "article",
+      "doi": "10.1027/1864-9335/a000192",
+      "title": "Registered Reports",
+      "authors": [
+        {
+          "given": "Brian A.",
+          "family": "Nosek"
+        },
+        {
+          "given": "Daniël",
+          "family": "Lakens"
+        }
+      ],
+      "editors": [],
+      "publisher": "Hogrefe Publishing Group",
+      "year": 2014,
+      "date": null,
+      "container": "Social Psychology",
+      "volume": "45",
+      "issue": "3",
+      "first_page": "137",
+      "last_page": "141",
+      "edition": null,
+      "version": null,
+      "url": "https://doi.org/10.1027/1864-9335/a000192"
+    },
+    {
+      "bib_id": 26,
+      "service": "crossref",
+      "service_id": null,
+      "score": 80.5786,
+      "bib_type": "article",
+      "doi": "10.1177/1745691612462588",
+      "title": "An Open, Large-Scale, Collaborative Effort to Estimate the Reproducibility of Psychological Science",
+      "authors": [],
+      "editors": [],
+      "publisher": "SAGE Publications",
+      "year": 2012,
+      "date": null,
+      "container": "Perspectives on Psychological Science",
+      "volume": "7",
+      "issue": "6",
+      "first_page": "657",
+      "last_page": "660",
+      "edition": null,
+      "version": null,
+      "url": "https://doi.org/10.1177/1745691612462588"
+    },
+    {
+      "bib_id": 28,
+      "service": "crossref",
+      "service_id": null,
+      "score": 75.3047,
+      "bib_type": "article",
+      "doi": "10.1007/s11192-005-0028-2",
+      "title": "Stochastic modeling of citation slips",
+      "authors": [
+        {
+          "given": "M. V.",
+          "family": "Simkin"
+        },
+        {
+          "given": "V. P.",
+          "family": "Roychowdhury"
+        }
+      ],
+      "editors": [],
+      "publisher": "Springer Science and Business Media LLC",
+      "year": 2005,
+      "date": null,
+      "container": "Scientometrics",
+      "volume": "62",
+      "issue": "3",
+      "first_page": "367",
+      "last_page": "384",
+      "edition": null,
+      "version": null,
+      "url": "https://doi.org/10.1007/s11192-005-0028-2"
+    },
+    {
+      "bib_id": 29,
+      "service": "crossref",
+      "service_id": null,
+      "score": 70.1792,
+      "bib_type": "article",
+      "doi": "10.1177/0956797614567341",
+      "title": "Small Telescopes",
+      "authors": [
+        {
+          "given": "Uri",
+          "family": "Simonsohn"
+        }
+      ],
+      "editors": [],
+      "publisher": "SAGE Publications",
+      "year": 2015,
+      "date": null,
+      "container": "Psychological Science",
+      "volume": "26",
+      "issue": "5",
+      "first_page": "559",
+      "last_page": "569",
+      "edition": null,
+      "version": null,
+      "url": "https://doi.org/10.1177/0956797614567341"
+    },
+    {
+      "bib_id": 30,
+      "service": "crossref",
+      "service_id": null,
+      "score": 96.4184,
+      "bib_type": "article",
+      "doi": "10.1016/j.joi.2018.01.002",
+      "title": "Core elements in the process of citing publications: Conceptual overview of the literature",
+      "authors": [
+        {
+          "given": "Iman",
+          "family": "Tahamtan"
+        },
+        {
+          "given": "Lutz",
+          "family": "Bornmann"
+        }
+      ],
+      "editors": [],
+      "publisher": "Elsevier BV",
+      "year": 2018,
+      "date": null,
+      "container": "Journal of Informetrics",
+      "volume": "12",
+      "issue": "1",
+      "first_page": "203",
+      "last_page": "216",
+      "edition": null,
+      "version": null,
+      "url": "https://doi.org/10.1016/j.joi.2018.01.002"
+    },
+    {
+      "bib_id": 31,
+      "service": "crossref",
+      "service_id": null,
+      "score": 72.2919,
+      "bib_type": "article",
+      "doi": "10.1016/j.joi.2014.09.011",
+      "title": "Regression for citation data: An evaluation of different methods",
+      "authors": [
+        {
+          "given": "Mike",
+          "family": "Thelwall"
+        },
+        {
+          "given": "Paul",
+          "family": "Wilson"
+        }
+      ],
+      "editors": [],
+      "publisher": "Elsevier BV",
+      "year": 2014,
+      "date": null,
+      "container": "Journal of Informetrics",
+      "volume": "8",
+      "issue": "4",
+      "first_page": "963",
+      "last_page": "971",
+      "edition": null,
+      "version": null,
+      "url": "https://doi.org/10.1016/j.joi.2014.09.011"
+    },
+    {
+      "bib_id": 32,
+      "service": "crossref",
+      "service_id": null,
+      "score": 91.4722,
+      "bib_type": "article",
+      "doi": "10.1037/a0038326",
+      "title": "\"Bayesian tests to quantify the result of a replication attempt\": Correction to Verhagen and Wagenmakers (2014).",
+      "authors": [
+        {
+          "given": "Josine",
+          "family": "Verhagen"
+        },
+        {
+          "given": "Eric-Jan",
+          "family": "Wagenmakers"
+        }
+      ],
+      "editors": [],
+      "publisher": "American Psychological Association (APA)",
+      "year": 2014,
+      "date": null,
+      "container": "Journal of Experimental Psychology: General",
+      "volume": "143",
+      "issue": "6",
+      "first_page": "2073",
+      "last_page": "2073",
+      "edition": null,
+      "version": null,
+      "url": "https://doi.org/10.1037/a0038326"
+    },
+    {
+      "bib_id": 33,
+      "service": "crossref",
+      "service_id": null,
+      "score": 95.9727,
+      "bib_type": "article",
+      "doi": "10.1002/asi.21560",
+      "title": "The citation life cycle of articles published in 13 American Psychological Association journals: A 25‐year longitudinal analysis",
+      "authors": [
+        {
+          "given": "Glenn D.",
+          "family": "Walters"
+        }
+      ],
+      "editors": [],
+      "publisher": "Wiley",
+      "year": 2011,
+      "date": null,
+      "container": "Journal of the American Society for Information Science and Technology",
+      "volume": "62",
+      "issue": "8",
+      "first_page": "1629",
+      "last_page": "1636",
+      "edition": null,
+      "version": null,
+      "url": "https://doi.org/10.1002/asi.21560"
+    },
+    {
+      "bib_id": 34,
+      "service": "crossref",
+      "service_id": null,
+      "score": 69.4731,
+      "bib_type": "article",
+      "doi": "10.1037/0003-066x.54.8.594",
+      "title": "Statistical methods in psychology journals: Guidelines and explanations.",
+      "authors": [
+        {
+          "given": "Leland",
+          "family": "Wilkinson"
+        }
+      ],
+      "editors": [],
+      "publisher": "American Psychological Association (APA)",
+      "year": 1999,
+      "date": null,
+      "container": "American Psychologist",
+      "volume": "54",
+      "issue": "8",
+      "first_page": "594",
+      "last_page": "604",
+      "edition": null,
+      "version": null,
+      "url": "https://doi.org/10.1037/0003-066x.54.8.594"
+    },
+    {
+      "bib_id": 35,
+      "service": "crossref",
+      "service_id": null,
+      "score": 91.0675,
+      "bib_type": "article",
+      "doi": "10.1073/pnas.1909046117",
+      "title": "Estimating the deep replicability of scientific findings using human and artificial intelligence",
+      "authors": [
+        {
+          "given": "Yang",
+          "family": "Yang"
+        },
+        {
+          "given": "Wu",
+          "family": "Youyou"
+        },
+        {
+          "given": "Brian",
+          "family": "Uzzi"
+        }
+      ],
+      "editors": [],
+      "publisher": "Proceedings of the National Academy of Sciences",
+      "year": 2020,
+      "date": null,
+      "container": "Proceedings of the National Academy of Sciences",
+      "volume": "117",
+      "issue": "20",
+      "first_page": "10762",
+      "last_page": "10768",
+      "edition": null,
+      "version": null,
+      "url": "https://doi.org/10.1073/pnas.1909046117"
+    }
+  ]
+}

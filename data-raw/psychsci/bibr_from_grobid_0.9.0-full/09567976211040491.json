@@ -1,0 +1,2553 @@
+{
+  "paper_id": "09567976211040491",
+  "info": [
+    {
+      "title": "Behavioral Consistency in the Digital Age",
+      "keywords": ["behavioral consistency", "personality", "digital footprint", "intraindividual", "open data", "preregistered"],
+      "doi": "10.1177/09567976211040491",
+      "file_hash": "7c9f9ca841633f66",
+      "input_format": "grobid 0.9.0",
+      "file_name": "data-raw/psychsci/grobid_0.9.0-full/09567976211040491.xml",
+      "bibr_version": "10.0",
+      "paper_type": "unknown",
+      "paper_type_confidence": 0,
+      "oecd_l1": null,
+      "oecd_l2": null,
+      "oecd_confidence": null
+    }
+  ],
+  "author": [
+    {
+      "author_id": 1,
+      "given": "Heather",
+      "family": "Shaw",
+      "affiliation": "Department of Psychology Lancaster University",
+      "email": "h.shaw5@lancaster.ac.uk",
+      "corresponding": false,
+      "orcid": "0000-0003-1449-3160",
+      "role": []
+    },
+    {
+      "author_id": 2,
+      "given": "Paul",
+      "family": "Taylor",
+      "affiliation": "Department of Psychology Lancaster University",
+      "email": "",
+      "corresponding": false,
+      "orcid": "0000-0001-8743-7667",
+      "role": []
+    },
+    {
+      "author_id": 3,
+      "given": "David",
+      "family": "Ellis",
+      "affiliation": "School of Management University of Bath",
+      "email": "",
+      "corresponding": false,
+      "orcid": "0000-0001-6172-3323",
+      "role": []
+    },
+    {
+      "author_id": 4,
+      "given": "Stacey",
+      "family": "Conchie",
+      "affiliation": "Department of Psychology Lancaster University",
+      "email": "",
+      "corresponding": false,
+      "orcid": "",
+      "role": []
+    }
+  ],
+  "text": [
+    {
+      "text_id": 1,
+      "paragraph_id": 1,
+      "section_id": 0,
+      "text": "Efforts to infer personality from digital footprints have focused on behavioral stability at the trait level without considering situational dependency.",
+      "page_number": null
+    },
+    {
+      "text_id": 2,
+      "paragraph_id": 1,
+      "section_id": 0,
+      "text": "We repeated a classic study of intraindividual consistency with secondary data (five data sets) containing 28,692 days of smartphone usage from 780 people.",
+      "page_number": null
+    },
+    {
+      "text_id": 3,
+      "paragraph_id": 1,
+      "section_id": 0,
+      "text": "Using per-app measures of pickup frequency and usage duration, we found that profiles of daily smartphone usage were significantly more consistent when taken from the same user than from different users (d > 1.46).",
+      "page_number": null
+    },
+    {
+      "text_id": 4,
+      "paragraph_id": 1,
+      "section_id": 0,
+      "text": "Random-forest models trained on 6 days of behavior identified each of the 780 users in test data with 35.8% accuracy for pickup frequency and 38.5% accuracy for duration frequency.",
+      "page_number": null
+    },
+    {
+      "text_id": 5,
+      "paragraph_id": 1,
+      "section_id": 0,
+      "text": "This increased to 73.5% and 75.3%, respectively, when success was taken as the user appearing in the top 10 predictions (i.e., top 1%).",
+      "page_number": null
+    },
+    {
+      "text_id": 6,
+      "paragraph_id": 1,
+      "section_id": 0,
+      "text": "Thus, situation-dependent stability in behavior is present in our digital lives, and its uniqueness provides both opportunities and risks to privacy.",
+      "page_number": null
+    },
+    {
+      "text_id": 7,
+      "paragraph_id": 3,
+      "section_id": 1,
+      "text": "In searching for the locus of personality, psychologists theorize that people behave consistently in situations perceived as psychologically equivalent (Mischel, 2004).",
+      "page_number": null
+    },
+    {
+      "text_id": 8,
+      "paragraph_id": 3,
+      "section_id": 1,
+      "text": "This \"interactionist\" account may be expressed using if-then statements.",
+      "page_number": null
+    },
+    {
+      "text_id": 9,
+      "paragraph_id": 3,
+      "section_id": 1,
+      "text": "If a person is in situation X, then they perform behavior A, but if a person is in situation Y, then they perform behavior B (Shoda et al., 1994).",
+      "page_number": null
+    },
+    {
+      "text_id": 10,
+      "paragraph_id": 3,
+      "section_id": 1,
+      "text": "Behavioral consistency was originally studied in faceto-face interactions through field observations (Shoda et al., 1993) and experimental tests (Furr & Funder, 2004), but more recent evidence of behavioral consistency has come from studies of our digital lives.",
+      "page_number": null
+    },
+    {
+      "text_id": 11,
+      "paragraph_id": 3,
+      "section_id": 1,
+      "text": "Harari et al. (2020) found high consistency in individuals' use of calls, text messages, and social media across days, and the use of social applications (apps) was the most consistent.",
+      "page_number": null
+    },
+    {
+      "text_id": 12,
+      "paragraph_id": 3,
+      "section_id": 1,
+      "text": "Aledavood et al. (2015) analyzed the call patterns of 24 individuals over an 18-month period and found that the frequency of calls at each hour of the day was distinct and persistent within an individual.",
+      "page_number": null
+    },
+    {
+      "text_id": 13,
+      "paragraph_id": 4,
+      "section_id": 1,
+      "text": "To date, studies of the consistency of digital behavior have focused on stability in general usage (e.g., calls vs. text messages) or stability within a specific app (e.g., phone calls).",
+      "page_number": null
+    },
+    {
+      "text_id": 14,
+      "paragraph_id": 4,
+      "section_id": 1,
+      "text": "There has been no consideration of patterns of behavior across apps.",
+      "page_number": null
+    },
+    {
+      "text_id": 15,
+      "paragraph_id": 4,
+      "section_id": 1,
+      "text": "Yet apps extend our social environment in different ways depending on their features and extrinsic factors (Shaw et al., 2018).",
+      "page_number": null
+    },
+    {
+      "text_id": 16,
+      "paragraph_id": 4,
+      "section_id": 1,
+      "text": "Users' self-identities have amalgamated with the technology they use because self-expression can be enacted digitally from avatars to social media (Belk, 2013).",
+      "page_number": null
+    },
+    {
+      "text_id": 17,
+      "paragraph_id": 4,
+      "section_id": 1,
+      "text": "Therefore, each app represents a nominal situation to its user because it comprises a unique interface (i.e., setting) and distinguishing features (i.e., activities; Davidson & Joinson, 2021;Mischel & Shoda, 2010).",
+      "page_number": null
+    },
+    {
+      "text_id": 18,
+      "paragraph_id": 4,
+      "section_id": 1,
+      "text": "It can also elicit mood states (Alvarez-Lozano et al., 2014) and often presents psychological features that are characteristic of \"active ingredients\" (e.g., peer adoration on Twitter, paper rejection on email).",
+      "page_number": null
+    },
+    {
+      "text_id": 19,
+      "paragraph_id": 4,
+      "section_id": 1,
+      "text": "Qualitative analysis shows that these active ingredients differ not only when apps serve distinct functions (e.g., productivity vs. social) but also when they offer similar functionality such as communication (Nouwens et al., 2017).",
+      "page_number": null
+    },
+    {
+      "text_id": 20,
+      "paragraph_id": 4,
+      "section_id": 1,
+      "text": "Quantitative analysis confirms that daily interactions with apps are unique, even for apps that share identical, high-level categorizations including \"social media\" (see the supplemental material available at https://osf.io/6x3fs/).",
+      "page_number": null
+    },
+    {
+      "text_id": 21,
+      "paragraph_id": 4,
+      "section_id": 1,
+      "text": "Collectively, this suggests that smartphone apps are psychologically distinct situations.",
+      "page_number": null
+    },
+    {
+      "text_id": 22,
+      "paragraph_id": 5,
+      "section_id": 1,
+      "text": "Thus, if intraindividual stability exists within digital behavior, we should find that users show different levels of engagement (a behavior) with each situation (the apps) but that this pattern of situation-level engagement will remain stable across time (i.e., their personality signature).",
+      "page_number": null
+    },
+    {
+      "text_id": 23,
+      "paragraph_id": 5,
+      "section_id": 1,
+      "text": "We tested this notion with a preregistered hypothesis that daily profiles of usage behavior across smartphone apps will show higher intraindividual consistency than interindividual consistency.",
+      "page_number": null
+    },
+    {
+      "text_id": 24,
+      "paragraph_id": 5,
+      "section_id": 1,
+      "text": "We used naturally occurring large-sample data as a complement to prior observational and experimental studies.",
+      "page_number": null
+    },
+    {
+      "text_id": 25,
+      "paragraph_id": 9,
+      "section_id": 3,
+      "text": "We combined five preexisting data sets that recorded foreground app use for 1,119 smartphone users.",
+      "page_number": null
+    },
+    {
+      "text_id": 26,
+      "paragraph_id": 9,
+      "section_id": 3,
+      "text": "These usage data comprised time-stamped actions that showed what app was on a user's screen, on what day, and for how long (for details on data collection, see the supplemental material at https://osf.io/6x3fs/).",
+      "page_number": null
+    },
+    {
+      "text_id": 27,
+      "paragraph_id": 9,
+      "section_id": 3,
+      "text": "Age selfreports were available for 913 users and revealed a wide range of ages (in years): 18 to 24 (n = 131), 25 to 34 (n = 214), 35 to 44 (n = 245), 45 to 54 (n = 190), and 55 and older (n = 133).",
+      "page_number": null
+    },
+    {
+      "text_id": 28,
+      "paragraph_id": 9,
+      "section_id": 3,
+      "text": "Of the 909 users who reported their gender, 426 were women and 483 were men.",
+      "page_number": null
+    },
+    {
+      "text_id": 29,
+      "paragraph_id": 10,
+      "section_id": 3,
+      "text": "We standardized, cleaned, and combined the data sets (for all procedures, see the supplemental material at https://osf.io/6x3fs/).",
+      "page_number": null
+    },
+    {
+      "text_id": 30,
+      "paragraph_id": 10,
+      "section_id": 3,
+      "text": "To ensure that we could examine behavior across multiple days, we excluded users whose record contained fewer than 9 days of data.",
+      "page_number": null
+    },
+    {
+      "text_id": 31,
+      "paragraph_id": 10,
+      "section_id": 3,
+      "text": "We then removed the first day and last day of data for each user because data from these days reflected only a partial day of use depending on when the logging app was installed and uninstalled.",
+      "page_number": null
+    },
+    {
+      "text_id": 32,
+      "paragraph_id": 10,
+      "section_id": 3,
+      "text": "This left 824 users in the sample, each of whom had 7 or more days of usage data.",
+      "page_number": null
+    },
+    {
+      "text_id": 33,
+      "paragraph_id": 11,
+      "section_id": 3,
+      "text": "Some apps were used by very few users.",
+      "page_number": null
+    },
+    {
+      "text_id": 34,
+      "paragraph_id": 11,
+      "section_id": 3,
+      "text": "Including these apps in our analyses could artificially increase our consistency measure because \"no use\" would appear across many days and many users.",
+      "page_number": null
+    },
+    {
+      "text_id": 35,
+      "paragraph_id": 11,
+      "section_id": 3,
+      "text": "Accordingly, we included only apps used by more than 25% of the sample (> 206 people) that were not system apps (e.g., Android system).",
+      "page_number": null
+    },
+    {
+      "text_id": 36,
+      "paragraph_id": 11,
+      "section_id": 3,
+      "text": "This left 21 apps in our analysis: Calculator, Calendar, Camera, Clock, Contacts, Facebook, Gallery, Gmail, Google Play Store, Google Search, Instagram, Internet, Maps, Messaging, Messenger, Phone (native phone-call app), Photos, Settings, Twitter, Whats-App, and YouTube.",
+      "page_number": null
+    },
+    {
+      "text_id": 37,
+      "paragraph_id": 13,
+      "section_id": 4,
+      "text": "As outlined by Ellis et al. (2019), smartphone behaviors may be examined at different levels of specificity.",
+      "page_number": null
+    },
+    {
+      "text_id": 38,
+      "paragraph_id": 13,
+      "section_id": 4,
+      "text": "One fundamental behavior is positive engagement, the extent that a person acts rather than avoids the situation presented by the app.",
+      "page_number": null
+    },
+    {
+      "text_id": 39,
+      "paragraph_id": 13,
+      "section_id": 4,
+      "text": "Although such a measure ignores more qualitative aspects in how a person engages (e.g., liking or commenting), the variation in engagement behaviors is itself a consequence of cognitions and affects about the stimuli presented by the app (Shaw et al., 2018).",
+      "page_number": null
+    },
+    {
+      "text_id": 40,
+      "paragraph_id": 13,
+      "section_id": 4,
+      "text": "For example, one person may read and respond enthusiastically every time they receive a message in a messenger app, whereas another may ignore the message and glance only briefly at the end of the day.",
+      "page_number": null
+    },
+    {
+      "text_id": 41,
+      "paragraph_id": 13,
+      "section_id": 4,
+      "text": "One metric of engagement is the number of daily app pickups (henceforth, pickups), which measures the number of times a participant engages.",
+      "page_number": null
+    },
+    {
+      "text_id": 42,
+      "paragraph_id": 13,
+      "section_id": 4,
+      "text": "A second useful metric is the daily time spent on the app (henceforth, duration), which is the equivalent of measuring the magnitude of the engagement.",
+      "page_number": null
+    },
+    {
+      "text_id": 43,
+      "paragraph_id": 13,
+      "section_id": 4,
+      "text": "By assessing these variables, we can examine if-then patterns of behavior of the form, given situation X (app), this person will show Y amount of engagement.",
+      "page_number": null
+    },
+    {
+      "text_id": 44,
+      "paragraph_id": 13,
+      "section_id": 4,
+      "text": "Although some research suggests that daily pickups will be more consistent than daily duration behavior (Wilcockson et al., 2018), we tested both frequency and magnitude to reflect different aspects of our behavioral tendency.",
+      "page_number": null
+    },
+    {
+      "text_id": 45,
+      "paragraph_id": 14,
+      "section_id": 4,
+      "text": "We calculated pickups and duration for each app across all of the days of data available for each user.",
+      "page_number": null
+    },
+    {
+      "text_id": 46,
+      "paragraph_id": 14,
+      "section_id": 4,
+      "text": "We",
+      "page_number": null
+    },
+    {
+      "text_id": 47,
+      "paragraph_id": 16,
+      "section_id": 5,
+      "text": "Whenever people use technology, they leave behind a digital trace that documents their behavior.",
+      "page_number": null
+    },
+    {
+      "text_id": 48,
+      "paragraph_id": 16,
+      "section_id": 5,
+      "text": "We used these data to study-at scalethe question of whether people behave consistently in their digital lives but in a way that is context dependent.",
+      "page_number": null
+    },
+    {
+      "text_id": 49,
+      "paragraph_id": 16,
+      "section_id": 5,
+      "text": "By analyzing 28,692 days of smartphone app usage across 780 individuals, we found that it is possible to profile a person's day-to-day use of different apps and showed that this profile remains consistent over time.",
+      "page_number": null
+    },
+    {
+      "text_id": 50,
+      "paragraph_id": 16,
+      "section_id": 5,
+      "text": "We found that a single day of data from an anonymous user can be matched to the correct originating user's profile with greater than 70% accuracy when success is taken as the user appearing in the first 10 (top 1%) of all candidates.",
+      "page_number": null
+    },
+    {
+      "text_id": 51,
+      "paragraph_id": 16,
+      "section_id": 5,
+      "text": "Thus, people show distinctive patterns of digital behavior even when compared with hundreds of other individuals.",
+      "page_number": null
+    },
+    {
+      "text_id": 52,
+      "paragraph_id": 16,
+      "section_id": 5,
+      "text": "This has implications for security and privacy in the digital age.",
+      "page_number": null
+    },
+    {
+      "text_id": 53,
+      "paragraph_id": 17,
+      "section_id": 5,
+      "text": "removed days of data where none of the 21 apps were used, which may reflect a technical issue with the logging.",
+      "page_number": null
+    },
+    {
+      "text_id": 54,
+      "paragraph_id": 17,
+      "section_id": 5,
+      "text": "This process left 44 users without 7 full days of smartphone data, so we removed them, leaving 780 users with full pickup and duration data.",
+      "page_number": null
+    },
+    {
+      "text_id": 55,
+      "paragraph_id": 17,
+      "section_id": 5,
+      "text": "On average, users had 36.80 days of data (total = 28,692 days), with a minimum of 7 and a maximum of 377 (skewness = 4.61).",
+      "page_number": null
+    },
+    {
+      "text_id": 56,
+      "paragraph_id": 17,
+      "section_id": 5,
+      "text": "Pickups were the number of times a user accessed each of the 21 apps per day; durations were how long in seconds each user spent on each of the 21 apps per day.",
+      "page_number": null
+    },
+    {
+      "text_id": 57,
+      "paragraph_id": 18,
+      "section_id": 5,
+      "text": "Our assessment of consistency followed Shoda et al.'s (1994) approach of comparing profiles of behavior across the 21 apps.",
+      "page_number": null
+    },
+    {
+      "text_id": 58,
+      "paragraph_id": 18,
+      "section_id": 5,
+      "text": "We first calculated, for each app, the daily mean and standard deviation of pickups and duration (separately); this represented a normative profile of the sample's behavior.",
+      "page_number": null
+    },
+    {
+      "text_id": 59,
+      "paragraph_id": 18,
+      "section_id": 5,
+      "text": "We then calculated how each of the 28,692 daily cases deviated from this norm by computing standardized scores (specifically, z scores).",
+      "page_number": null
+    },
+    {
+      "text_id": 60,
+      "paragraph_id": 18,
+      "section_id": 5,
+      "text": "For each day's data, for each app's score, we subtracted the sample mean and divided it by the sample standard deviation.",
+      "page_number": null
+    },
+    {
+      "text_id": 61,
+      "paragraph_id": 18,
+      "section_id": 5,
+      "text": "The resulting 21 standardized values made up a user's behavioral profile of app use for that day.",
+      "page_number": null
+    },
+    {
+      "text_id": 62,
+      "paragraph_id": 18,
+      "section_id": 5,
+      "text": "If a particular app had a score above zero in the behavioral profile, this meant that app was used for longer or more times than the sample norm on that day.",
+      "page_number": null
+    },
+    {
+      "text_id": 63,
+      "paragraph_id": 18,
+      "section_id": 5,
+      "text": "Because every user had at least 7 days of usage data, we created multiple profiles for each user, allowing us to examine the consistency of profiles over time.",
+      "page_number": null
+    },
+    {
+      "text_id": 64,
+      "paragraph_id": 19,
+      "section_id": 5,
+      "text": "Finally, to ascertain whether apps should be analyzed individually or grouped together into types of apps with similar purposes (e.g., social media apps), we analyzed the structure of the daily behavior profiles using exploratory factor analysis (see the supplemental material at https://osf.io/6x3fs/).",
+      "page_number": null
+    },
+    {
+      "text_id": 65,
+      "paragraph_id": 19,
+      "section_id": 5,
+      "text": "When we used an eight-factor solution, findings showed that the variance explained by the factors was low (pickups = .32, durations = .19) and indicated no clear way to group the apps together.",
+      "page_number": null
+    },
+    {
+      "text_id": 66,
+      "paragraph_id": 19,
+      "section_id": 5,
+      "text": "We thus treated the apps as psychologically distinct situations, with unique daily engagement levels, and analyzed them separately (for the full procedures, see the supplemental material at https://osf.io/6x3fs/).",
+      "page_number": null
+    },
+    {
+      "text_id": 67,
+      "paragraph_id": 20,
+      "section_id": 5,
+      "text": "This research received ethical approval from the Faculty of Science and Technology Research Ethics Committee (FST19002) and the Security Research Ethics Committee.",
+      "page_number": null
+    },
+    {
+      "text_id": 68,
+      "paragraph_id": 20,
+      "section_id": 5,
+      "text": "Our analysis plan was preregistered at https://osf.io/u6hsc/, and the methods and processed data (distributions of coefficients) are available at https://osf.io/xvd6s/.",
+      "page_number": null
+    },
+    {
+      "text_id": 69,
+      "paragraph_id": 24,
+      "section_id": 7,
+      "text": "Following the approach of Shoda et al. (1994), we assessed the similarity of users' daily profiles using ipsative correlations (i.e., we calculated Pearson correlations on rank-ordered profile scores).",
+      "page_number": null
+    },
+    {
+      "text_id": 70,
+      "paragraph_id": 24,
+      "section_id": 7,
+      "text": "We did this for two daily profiles randomly selected from the same user (within-user pairs) and two daily profiles randomly selected from different users (between-user pairs).",
+      "page_number": null
+    },
+    {
+      "text_id": 71,
+      "paragraph_id": 24,
+      "section_id": 7,
+      "text": "There were 411,601,086 unique comparisons in the data, that is, n(n -1)/2.",
+      "page_number": null
+    },
+    {
+      "text_id": 72,
+      "paragraph_id": 24,
+      "section_id": 7,
+      "text": "We calculated ipsative correlations for 10 million randomly selected within-user pairs and 10 million randomly selected between-user pairs (10 million was our computational limit).",
+      "page_number": null
+    },
+    {
+      "text_id": 73,
+      "paragraph_id": 24,
+      "section_id": 7,
+      "text": "We repeated these calculations a further 44 times to obtain bootstrapped confidence intervals (CIs) and effect sizes.",
+      "page_number": null
+    },
+    {
+      "text_id": 74,
+      "paragraph_id": 24,
+      "section_id": 7,
+      "text": "See our data visualization website (https://behavioural analytics.shinyapps.io/AppUseProfiles/) for examples of daily profiles alongside a demonstration of how between-subject and within-subject profiles were compared to create distributions.",
+      "page_number": null
+    },
+    {
+      "text_id": 75,
+      "paragraph_id": 25,
+      "section_id": 7,
+      "text": "Figure 1 presents the distribution of observed correlations for within-and between-user groups for pickups (right panel) and duration (left panel).",
+      "page_number": null
+    },
+    {
+      "text_id": 76,
+      "paragraph_id": 25,
+      "section_id": 7,
+      "text": "Confirmatory t tests supported our prediction that pickups would be higher in within-user pairs (M = .73, 95% CI = [.73, .73], SD = .19) compared with between-user pairs (M = .30, 95% CI = [.30, .30], SD = .30), Welsh's t(17004202) = 3,797.93, p < .001, d = 1.70, 95% CI = [1.70, 1.70], and that duration would be higher in within-user pairs (M = .81, 95% CI = [.81, .81], SD = .16) compared with between-user pairs (M = .49, 95% CI = [.49, .49], SD = .27), Welsh's t(16010722) = 3,274.61, p < .001, d = 1.46, 95% CI = [1.46, 1.47].",
+      "page_number": null
+    },
+    {
+      "text_id": 77,
+      "paragraph_id": 26,
+      "section_id": 7,
+      "text": "To assess the robustness of our analysis, we ran two complementary tests.",
+      "page_number": null
+    },
+    {
+      "text_id": 78,
+      "paragraph_id": 26,
+      "section_id": 7,
+      "text": "First, because both within-user and between-user distributions deviated from normality, we ran a nonparametric comparison using Wilcoxon rank-sum test (W) and Vargha and Delaney's A effect size (VD.A).",
+      "page_number": null
+    },
+    {
+      "text_id": 79,
+      "paragraph_id": 26,
+      "section_id": 7,
+      "text": "1 These analyses replicated our finding that within-user comparisons were significantly more consistent than between-user comparisons for pickups (W = 88,324,600,000,000, p < .001, VD.A = 0.12) and for duration (W = 85,210,000,000,000, p < .001, VD.A = 0.15).",
+      "page_number": null
+    },
+    {
+      "text_id": 80,
+      "paragraph_id": 26,
+      "section_id": 7,
+      "text": "Second, we reanalyzed the data using a split-half comparison, creating an average behavioral profile for the first half and second half of a user's data and then comparing them (for a within-user comparison) or comparing one half with another user's half (for a betweenuser comparison).",
+      "page_number": null
+    },
+    {
+      "text_id": 81,
+      "paragraph_id": 26,
+      "section_id": 7,
+      "text": "This split-half approach removed the unbalanced influence that users with more behavioral profiles had in the day pair comparisons because all users had only two data points.",
+      "page_number": null
+    },
+    {
+      "text_id": 82,
+      "paragraph_id": 26,
+      "section_id": 7,
+      "text": "As before, pickups were significantly higher in within-user comparisons (M = .89, 95% CI = [.88, .90], SD = .10) than between-user comparisons (M = .23, 95% CI = [.21, .26], SD = .30), t(942.70) = 57.13, p < .001, d = 2.89, 95% CI = [2.75, 3.03], and durations were significantly higher in within-user comparisons (M = .91, 95% CI = [.91, .92], SD = .09) than between-user comparisons (M = .39, 95% CI = [.37, .41], SD = .32), t(905.43) = 43.46, p < .001, d = 2.20, 95% CI = [2.07, 2.33].",
+      "page_number": null
+    },
+    {
+      "text_id": 83,
+      "paragraph_id": 28,
+      "section_id": 8,
+      "text": "Given the intraindividual stability in daily app use, one practical question is to what extent a user can be identified within a crowd of data on the basis of historic information.",
+      "page_number": null
+    },
+    {
+      "text_id": 84,
+      "paragraph_id": 28,
+      "section_id": 8,
+      "text": "This has important security and privacy applications, such as identifying people across multiple devices (e.g., burner phones).",
+      "page_number": null
+    },
+    {
+      "text_id": 85,
+      "paragraph_id": 28,
+      "section_id": 8,
+      "text": "Classification algorithms were used to explore this question of profile uniqueness.",
+      "page_number": null
+    },
+    {
+      "text_id": 86,
+      "paragraph_id": 28,
+      "section_id": 8,
+      "text": "To do this, we made each user a class in a categorical variable, which had 780 classes (users).",
+      "page_number": null
+    },
+    {
+      "text_id": 87,
+      "paragraph_id": 28,
+      "section_id": 8,
+      "text": "Therefore, the aim of this analysis was to build models that could predict which user was associated with each daily profile.",
+      "page_number": null
+    },
+    {
+      "text_id": 88,
+      "paragraph_id": 29,
+      "section_id": 8,
+      "text": "Random-forest models were our classification algorithm of choice.",
+      "page_number": null
+    },
+    {
+      "text_id": 89,
+      "paragraph_id": 29,
+      "section_id": 8,
+      "text": "This was because building models with a high number of classes is computationally intensive, and algorithms such as neural networks could not be trained on our high-end cluster.",
+      "page_number": null
+    },
+    {
+      "text_id": 90,
+      "paragraph_id": 29,
+      "section_id": 8,
+      "text": "However, random-forest models are alternatively very efficient, and previous literature has shown that they have competitive accuracy in comparison with many other classification models (Fernándes-Delgado et al., 2014).",
+      "page_number": null
+    },
+    {
+      "text_id": 91,
+      "paragraph_id": 29,
+      "section_id": 8,
+      "text": "Consequently, we trained a random-forest model for pickups and duration (separately) using the rpart package (Version 4.1.15; Therneau et al., 2019) in R (Version 4.0.1; R Core Team, 2020).",
+      "page_number": null
+    },
+    {
+      "text_id": 92,
+      "paragraph_id": 29,
+      "section_id": 8,
+      "text": "The data entered into the models were the behavioral profiles, which contained the 21 normalized app-usage scores per day, per user.",
+      "page_number": null
+    },
+    {
+      "text_id": 93,
+      "paragraph_id": 29,
+      "section_id": 8,
+      "text": "Because each behavior profile in the data was paired with a user and a day (e.g., Person 10, Day 2), we used this information to both train and test the models.",
+      "page_number": null
+    },
+    {
+      "text_id": 94,
+      "paragraph_id": 29,
+      "section_id": 8,
+      "text": "Specifically, because all 780 users had at least 7 days of data, we used the first 6 days of users' profiles to train the models and their 7th-day profile as test data.",
+      "page_number": null
+    },
+    {
+      "text_id": 95,
+      "paragraph_id": 29,
+      "section_id": 8,
+      "text": "Therefore, training data consisted of 126 data points per person (21 apps and 6 days), and test data consisted of 21 data points per person (21 apps and 1 day).",
+      "page_number": null
+    },
+    {
+      "text_id": 96,
+      "paragraph_id": 30,
+      "section_id": 8,
+      "text": "Both random forests contained 3,120 trees (4 × n), each taking a bootstrapped sample of the data and selecting only four variables to be assessed per split (mtry = √ 21) 2 when building individual trees.",
+      "page_number": null
+    },
+    {
+      "text_id": 97,
+      "paragraph_id": 30,
+      "section_id": 8,
+      "text": "No pruning took place, and trees were grown to full size.",
+      "page_number": null
+    },
+    {
+      "text_id": 98,
+      "paragraph_id": 30,
+      "section_id": 8,
+      "text": "When we assessed confusion matrices, the pickup random-forest model classified users from their seventh behavioral profile with 35.76% accuracy (95% CI = [32.4%, 29.25%], no-information rate [NIR] = .0013, p < .001); the duration random-forest model classified users with 38.46% accuracy (95% CI = [35.03%, 41.98%], NIR = .0013, p < .001).",
+      "page_number": null
+    },
+    {
+      "text_id": 99,
+      "paragraph_id": 30,
+      "section_id": 8,
+      "text": "See the supplemental material for performance measures for each class (user) including sensitivity (M = .36), specificity (M = 1), and recall (M = .36).",
+      "page_number": null
+    },
+    {
+      "text_id": 100,
+      "paragraph_id": 30,
+      "section_id": 8,
+      "text": "3 Probabilities that a behavior profile belongs to each user could be exported from the random-forest models.",
+      "page_number": null
+    },
+    {
+      "text_id": 101,
+      "paragraph_id": 30,
+      "section_id": 8,
+      "text": "Each user could then be ranked for each behavior profile, from the least to the most probable user.",
+      "page_number": null
+    },
+    {
+      "text_id": 102,
+      "paragraph_id": 30,
+      "section_id": 8,
+      "text": "As a result, it was possible to assess the classification accuracy of both random-forest models when investigating whether the correct user appeared in the top 10 most probable users.",
+      "page_number": null
+    },
+    {
+      "text_id": 103,
+      "paragraph_id": 30,
+      "section_id": 8,
+      "text": "This assessment showed that the accuracy rates of our random-forest models on test data increased to 73.46% for pickups and 75.25% for duration when success was counted as the user appearing in the highest 10 (approximately the top 1%) of probabilities.",
+      "page_number": null
+    },
+    {
+      "text_id": 104,
+      "paragraph_id": 30,
+      "section_id": 8,
+      "text": "Therefore, our models show the potential to narrow down a subject pool of 10 individuals from their daily app-use data with a three in four success rate.",
+      "page_number": null
+    },
+    {
+      "text_id": 105,
+      "paragraph_id": 32,
+      "section_id": 9,
+      "text": "It has been almost five decades since Mischel (1973) outlined an interactionist conception of behavioral dispositions, yet most evidence for the theory comes from observations of off-line interactions.",
+      "page_number": null
+    },
+    {
+      "text_id": 106,
+      "paragraph_id": 32,
+      "section_id": 9,
+      "text": "Here, we considered consistency in digital behaviors, through studying the variation of engagement (a behavior) across several nominal situations (apps), collected unobtrusively every second across several days.",
+      "page_number": null
+    },
+    {
+      "text_id": 107,
+      "paragraph_id": 32,
+      "section_id": 9,
+      "text": "We found that smartphone users have unique patterns of behaviors for 21 different apps and the cues they present to the user.",
+      "page_number": null
+    },
+    {
+      "text_id": 108,
+      "paragraph_id": 32,
+      "section_id": 9,
+      "text": "These usage profiles showed a degree of intraindividual consistency over repeated daily observations that was far greater than equivalent interindividual comparisons (e.g., a person consistently uses Facebook the most and Calculator the least every day).",
+      "page_number": null
+    },
+    {
+      "text_id": 109,
+      "paragraph_id": 32,
+      "section_id": 9,
+      "text": "This was true for the daily duration of app use but also the simpler measure of daily app pickups-how many times you open each app per day.",
+      "page_number": null
+    },
+    {
+      "text_id": 110,
+      "paragraph_id": 32,
+      "section_id": 9,
+      "text": "It was also true for profiles derived from individual days and profiles aggregated across multiple days.",
+      "page_number": null
+    },
+    {
+      "text_id": 111,
+      "paragraph_id": 32,
+      "section_id": 9,
+      "text": "Therefore, by adopting an interactionist approach in personality research, we can predict a person's future behavior from digital traces while mapping the unique characteristics of a particular individual.",
+      "page_number": null
+    },
+    {
+      "text_id": 112,
+      "paragraph_id": 32,
+      "section_id": 9,
+      "text": "Research indicates that people spend on average 4 hr per day on their smartphone and pick up their smartphone on average 85 times per day (Ellis et al., 2019).",
+      "page_number": null
+    },
+    {
+      "text_id": 113,
+      "paragraph_id": 32,
+      "section_id": 9,
+      "text": "It is important that theories can adapt to the way people behave presently in digital environments.",
+      "page_number": null
+    },
+    {
+      "text_id": 114,
+      "paragraph_id": 33,
+      "section_id": 9,
+      "text": "It may be considered a limitation that when examining if-then statements, we did not examine within-app behaviors (e.g., posts and comments) that result from experiencing the active ingredients of a particular digital situation.",
+      "page_number": null
+    },
+    {
+      "text_id": 115,
+      "paragraph_id": 33,
+      "section_id": 9,
+      "text": "In future studies, researchers may wish to explore data that can be retrieved from different apps that share similar behaviors (e.g., posts across different social media sites).",
+      "page_number": null
+    },
+    {
+      "text_id": 116,
+      "paragraph_id": 33,
+      "section_id": 9,
+      "text": "Instead, we examined the crosssituational engagement (a behavior) with each app (situation), which is a comparatively simple digital trace that can be collected easily and unobtrusively, to demonstrate that this alone has within-user consistency.",
+      "page_number": null
+    },
+    {
+      "text_id": 117,
+      "paragraph_id": 34,
+      "section_id": 9,
+      "text": "Consequently, the extent to which our daily smartphone use could act as a digital fingerprint, sufficient to betray our privacy in anonymized data or across devices (e.g., personal phone vs. work phone), is an increasing ethical concern.",
+      "page_number": null
+    },
+    {
+      "text_id": 118,
+      "paragraph_id": 34,
+      "section_id": 9,
+      "text": "Our study adds value to the existing literature by illustrating how engagement with apps alone shows within-user consistency that can identify an individual.",
+      "page_number": null
+    },
+    {
+      "text_id": 119,
+      "paragraph_id": 34,
+      "section_id": 9,
+      "text": "We modeled users' unique behaviors by training random forests and then used their exported predictions to assign them to a top-10 candidate pool in separate data with 75.25% accuracy.",
+      "page_number": null
+    },
+    {
+      "text_id": 120,
+      "paragraph_id": 34,
+      "section_id": 9,
+      "text": "Thus, an app that is granted access to a smartphone's standard activity logging could render a reasonable prediction about a user's identity even when they are logged out of their account.",
+      "page_number": null
+    },
+    {
+      "text_id": 121,
+      "paragraph_id": 34,
+      "section_id": 9,
+      "text": "Similarly, if an app receives usage data from several third-party apps, our findings show that this can be used to profile a user and provide a signature that is separate from the device ID or username.",
+      "page_number": null
+    },
+    {
+      "text_id": 122,
+      "paragraph_id": 34,
+      "section_id": 9,
+      "text": "So, for example, a law enforcement investigation to identify a criminal's new phone from knowledge of their historic phone use could reduce a candidate pool of approximately 1,000 phones to 10 phones, with a 25% risk of missing them.",
+      "page_number": null
+    },
+    {
+      "text_id": 123,
+      "paragraph_id": 35,
+      "section_id": 9,
+      "text": "Pertinently, this identification is possible with no monitoring of the conversations or behaviors within the apps themselves and without triangulation of other data, such as geo-location.",
+      "page_number": null
+    },
+    {
+      "text_id": 124,
+      "paragraph_id": 35,
+      "section_id": 9,
+      "text": "Perhaps this should come as no surprise.",
+      "page_number": null
+    },
+    {
+      "text_id": 125,
+      "paragraph_id": 35,
+      "section_id": 9,
+      "text": "It is consistent with other research that shows how simple metadata can be used to make inferences about a particular user, such as assessing their personality from the smartphone operating system used (Shaw et al., 2016) and determining their home location from sparse call logs (Mayer et al., 2016), as well as identifying a particular user from installed apps (Tu et al., 2018).",
+      "page_number": null
+    },
+    {
+      "text_id": 126,
+      "paragraph_id": 35,
+      "section_id": 9,
+      "text": "Given that many websites and apps collect these metadata from their users, it is important to acknowledge that usage alone can be sufficient to identify a user.",
+      "page_number": null
+    },
+    {
+      "text_id": 127,
+      "paragraph_id": 35,
+      "section_id": 9,
+      "text": "It underscores the need for researchers collecting digital-trace data to ensure that usage profiles cannot be reverse engineered to determine participants' identities, particularly if data are to be shared widely.",
+      "page_number": null
+    },
+    {
+      "text_id": 128,
+      "paragraph_id": 35,
+      "section_id": 9,
+      "text": "Thus, context-dependent intraindividual stability in behavior extends into our digital lives, and its uniqueness affords both opportunities and risks.",
+      "page_number": null
+    },
+    {
+      "text_id": 129,
+      "paragraph_id": 36,
+      "section_id": 9,
+      "text": "Transparency",
+      "page_number": null
+    },
+    {
+      "text_id": 130,
+      "paragraph_id": 38,
+      "section_id": 10,
+      "text": "We thank the many authors who provided access to their data and our colleagues in the Social Processes Research Group for feedback.",
+      "page_number": null
+    },
+    {
+      "text_id": 131,
+      "paragraph_id": 38,
+      "section_id": 10,
+      "text": "Notes 1.",
+      "page_number": null
+    },
+    {
+      "text_id": 132,
+      "paragraph_id": 38,
+      "section_id": 10,
+      "text": "Vargha and Delaney's A shows the proportion of times that condition X will be higher than condition Y It ranges from .00 to 1.00; .50 represents equal probability (i.e., no difference), and values moving toward .00 and 1.00 indicate less equivalence.",
+      "page_number": null
+    },
+    {
+      "text_id": 133,
+      "paragraph_id": 38,
+      "section_id": 10,
+      "text": "2.",
+      "page_number": null
+    },
+    {
+      "text_id": 134,
+      "paragraph_id": 38,
+      "section_id": 10,
+      "text": "\"Mtry\" is a parameter that can be set in random-forest models.",
+      "page_number": null
+    },
+    {
+      "text_id": 135,
+      "paragraph_id": 38,
+      "section_id": 10,
+      "text": "It controls the number of variables evaluated at any given split.",
+      "page_number": null
+    },
+    {
+      "text_id": 136,
+      "paragraph_id": 38,
+      "section_id": 10,
+      "text": "An mtry of 4 in our example means that for each split, the tree randomly selected four applications and then evaluated their scores to determine the best split.",
+      "page_number": null
+    },
+    {
+      "text_id": 137,
+      "paragraph_id": 38,
+      "section_id": 10,
+      "text": "3.",
+      "page_number": null
+    },
+    {
+      "text_id": 138,
+      "paragraph_id": 38,
+      "section_id": 10,
+      "text": "Performance means across all classes were equivalent across pickups and duration forests.",
+      "page_number": null
+    },
+    {
+      "text_id": 139,
+      "paragraph_id": 40,
+      "section_id": 11,
+      "text": "This work was supported by the Centre for Research and Evidence on Security Threats (Economic and Social Research Council Award No.",
+      "page_number": null
+    },
+    {
+      "text_id": 140,
+      "paragraph_id": 40,
+      "section_id": 11,
+      "text": "ES/V002775/1), which is funded in part by the UK security and intelligence agencies.",
+      "page_number": null
+    },
+    {
+      "text_id": 141,
+      "paragraph_id": 42,
+      "section_id": 12,
+      "text": "The data sets used in the present study are listed in Table 1 in the supplemental material at https://osf.io/6x3fs/.",
+      "page_number": null
+    },
+    {
+      "text_id": 142,
+      "paragraph_id": 43,
+      "section_id": 12,
+      "text": "Requests to access the data should be directed to the relevant authors.",
+      "page_number": null
+    },
+    {
+      "text_id": 143,
+      "paragraph_id": 43,
+      "section_id": 12,
+      "text": "The distributions of coefficients derived from our data processing, alongside annotated analysis scripts, are publicly available via OSF and can be accessed at https://osf.io/xvd6s/.",
+      "page_number": null
+    },
+    {
+      "text_id": 144,
+      "paragraph_id": 43,
+      "section_id": 12,
+      "text": "Data transformed into daily behavioral profiles are available at https://osf.io/j6r7h/.",
+      "page_number": null
+    },
+    {
+      "text_id": 145,
+      "paragraph_id": 43,
+      "section_id": 12,
+      "text": "The following interactive data-visualization website demonstrates how we created coefficient distributions during data processing: https://behaviouralanalytics.shinyapps.io/ AppUseProfiles/.",
+      "page_number": null
+    },
+    {
+      "text_id": 146,
+      "paragraph_id": 43,
+      "section_id": 12,
+      "text": "The hypotheses, design, and analysis plan for this study were preregistered on OSF at https:// osf.io/u6hsc/.",
+      "page_number": null
+    },
+    {
+      "text_id": 147,
+      "paragraph_id": 43,
+      "section_id": 12,
+      "text": "This article has received the badges for Open Data and Preregistration.",
+      "page_number": null
+    },
+    {
+      "text_id": 148,
+      "paragraph_id": 43,
+      "section_id": 12,
+      "text": "More information about the Open Practices badges can be found at http://www .psychologicalscience.org/publications/badges.",
+      "page_number": null
+    },
+    {
+      "text_id": 149,
+      "paragraph_id": 45,
+      "section_id": 13,
+      "text": "The author(s) declared that there were no conflicts of interest with respect to the authorship or the publication of this article.",
+      "page_number": null
+    },
+    {
+      "text_id": 150,
+      "paragraph_id": 47,
+      "section_id": 14,
+      "text": "All the authors developed the study concept.",
+      "page_number": null
+    },
+    {
+      "text_id": 151,
+      "paragraph_id": 47,
+      "section_id": 14,
+      "text": "H Shaw obtained the data from external sources.",
+      "page_number": null
+    },
+    {
+      "text_id": 152,
+      "paragraph_id": 47,
+      "section_id": 14,
+      "text": "P J Taylor and",
+      "page_number": null
+    },
+    {
+      "text_id": 153,
+      "paragraph_id": 49,
+      "section_id": 15,
+      "text": "Action Editor: Kate Ratliff Editor: Patricia J Bauer H Shaw preregistered the study.",
+      "page_number": null
+    },
+    {
+      "text_id": 154,
+      "paragraph_id": 49,
+      "section_id": 15,
+      "text": "H Shaw analyzed and interpreted the data under the supervision of P J Taylor.",
+      "page_number": null
+    },
+    {
+      "text_id": 155,
+      "paragraph_id": 49,
+      "section_id": 15,
+      "text": "The first draft of the manuscript was written by H Shaw, and P J Taylor, D A Ellis, and S M Conchie provided critical revisions.",
+      "page_number": null
+    },
+    {
+      "text_id": 156,
+      "paragraph_id": 49,
+      "section_id": 15,
+      "text": "All the authors approved the final manuscript for submission.",
+      "page_number": null
+    },
+    {
+      "text_id": 157,
+      "paragraph_id": 50,
+      "section_id": 16,
+      "text": "Fig.1.",
+      "page_number": null
+    },
+    {
+      "text_id": 158,
+      "paragraph_id": 50,
+      "section_id": 16,
+      "text": "Distribution of ipsative correlation coefficients as a function of within-user comparisons and between-user comparisons for daily app pickups (left panel) and daily app durations of use (right panel).",
+      "page_number": null
+    },
+    {
+      "text_id": 159,
+      "paragraph_id": 50,
+      "section_id": 16,
+      "text": "A higher coefficient represents greater similarity in the profile of behavior across the comparison pair.",
+      "page_number": null
+    },
+    {
+      "text_id": 160,
+      "paragraph_id": 50,
+      "section_id": 16,
+      "text": "The graph style is a tribute to the work ofShoda et al.",
+      "page_number": null
+    },
+    {
+      "text_id": 161,
+      "paragraph_id": 50,
+      "section_id": 16,
+      "text": "(1993).",
+      "page_number": null
+    },
+    {
+      "text_id": 162,
+      "paragraph_id": 51,
+      "section_id": 17,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 163,
+      "paragraph_id": 52,
+      "section_id": 17,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 164,
+      "paragraph_id": 53,
+      "section_id": 17,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 165,
+      "paragraph_id": 54,
+      "section_id": 17,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 166,
+      "paragraph_id": 55,
+      "section_id": 17,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 167,
+      "paragraph_id": 56,
+      "section_id": 17,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 168,
+      "paragraph_id": 57,
+      "section_id": 17,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 169,
+      "paragraph_id": 58,
+      "section_id": 17,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 170,
+      "paragraph_id": 59,
+      "section_id": 17,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 171,
+      "paragraph_id": 60,
+      "section_id": 17,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 172,
+      "paragraph_id": 61,
+      "section_id": 17,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 173,
+      "paragraph_id": 62,
+      "section_id": 17,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 174,
+      "paragraph_id": 63,
+      "section_id": 17,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 175,
+      "paragraph_id": 64,
+      "section_id": 17,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 176,
+      "paragraph_id": 65,
+      "section_id": 17,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 177,
+      "paragraph_id": 66,
+      "section_id": 17,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 178,
+      "paragraph_id": 67,
+      "section_id": 17,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 179,
+      "paragraph_id": 68,
+      "section_id": 17,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 180,
+      "paragraph_id": 69,
+      "section_id": 17,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 181,
+      "paragraph_id": 70,
+      "section_id": 17,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 182,
+      "paragraph_id": 71,
+      "section_id": 17,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 183,
+      "paragraph_id": 72,
+      "section_id": 17,
+      "text": "",
+      "page_number": null
+    }
+  ],
+  "section": [
+    {
+      "section_id": 0,
+      "header": "Abstract",
+      "parent_section_id": null,
+      "section_type": "abstract",
+      "classification_score": null
+    },
+    {
+      "section_id": 1,
+      "header": "[div-01]",
+      "parent_section_id": null,
+      "section_type": "intro",
+      "classification_score": null
+    },
+    {
+      "section_id": 3,
+      "header": "User data",
+      "parent_section_id": null,
+      "section_type": "method",
+      "classification_score": null
+    },
+    {
+      "section_id": 4,
+      "header": "Assessing consistency",
+      "parent_section_id": null,
+      "section_type": "method",
+      "classification_score": null
+    },
+    {
+      "section_id": 5,
+      "header": "Statement of Relevance",
+      "parent_section_id": null,
+      "section_type": "method",
+      "classification_score": null
+    },
+    {
+      "section_id": 7,
+      "header": "Assessing similarities in daily profiles",
+      "parent_section_id": null,
+      "section_type": "results",
+      "classification_score": null
+    },
+    {
+      "section_id": 8,
+      "header": "Identifying individuals from app use",
+      "parent_section_id": null,
+      "section_type": "results",
+      "classification_score": null
+    },
+    {
+      "section_id": 9,
+      "header": "Discussion",
+      "parent_section_id": null,
+      "section_type": "discussion",
+      "classification_score": null
+    },
+    {
+      "section_id": 10,
+      "header": "Acknowledgments",
+      "parent_section_id": null,
+      "section_type": "acknowledgement",
+      "classification_score": null
+    },
+    {
+      "section_id": 11,
+      "header": "Funding",
+      "parent_section_id": null,
+      "section_type": "funding",
+      "classification_score": null
+    },
+    {
+      "section_id": 12,
+      "header": "Open Practices",
+      "parent_section_id": null,
+      "section_type": "availability",
+      "classification_score": null
+    },
+    {
+      "section_id": 13,
+      "header": "Declaration of Conflicting Interests",
+      "parent_section_id": null,
+      "section_type": "conflict",
+      "classification_score": null
+    },
+    {
+      "section_id": 14,
+      "header": "Author Contributions",
+      "parent_section_id": null,
+      "section_type": "contribution",
+      "classification_score": null
+    },
+    {
+      "section_id": 15,
+      "header": "",
+      "parent_section_id": null,
+      "section_type": "annex",
+      "classification_score": null
+    },
+    {
+      "section_id": 16,
+      "header": "Fig 1",
+      "parent_section_id": null,
+      "section_type": "figure",
+      "classification_score": null
+    },
+    {
+      "section_id": 17,
+      "header": "References",
+      "parent_section_id": null,
+      "section_type": "references",
+      "classification_score": null
+    }
+  ],
+  "url": [
+    {
+      "href": "https://osf.io/6x3fs",
+      "link_text": null,
+      "text_id": 20
+    },
+    {
+      "href": "https://osf.io/6x3fs",
+      "link_text": null,
+      "text_id": 26
+    },
+    {
+      "href": "https://osf.io/6x3fs",
+      "link_text": null,
+      "text_id": 29
+    },
+    {
+      "href": "https://osf.io/6x3fs",
+      "link_text": null,
+      "text_id": 64
+    },
+    {
+      "href": "https://osf.io/6x3fs",
+      "link_text": null,
+      "text_id": 66
+    },
+    {
+      "href": "https://osf.io/u6hsc",
+      "link_text": null,
+      "text_id": 68
+    },
+    {
+      "href": "https://osf.io/xvd6s",
+      "link_text": null,
+      "text_id": 68
+    },
+    {
+      "href": "analytics.shinyapps.io/AppUseProfiles",
+      "link_text": null,
+      "text_id": 74
+    },
+    {
+      "href": "https://osf.io/6x3fs",
+      "link_text": null,
+      "text_id": 141
+    },
+    {
+      "href": "https://osf.io/xvd6s",
+      "link_text": null,
+      "text_id": 143
+    },
+    {
+      "href": "https://osf.io/j6r7h",
+      "link_text": null,
+      "text_id": 144
+    },
+    {
+      "href": "https://behaviouralanalytics.shinyapps.io",
+      "link_text": null,
+      "text_id": 145
+    },
+    {
+      "href": "osf.io/u6hsc",
+      "link_text": null,
+      "text_id": 146
+    },
+    {
+      "href": "psychologicalscience.org/publications/badges",
+      "link_text": null,
+      "text_id": 148
+    }
+  ],
+  "bib": [
+    {
+      "bib_type": "article",
+      "doi": "10.1371/journal.pone.0138098",
+      "title": "Daily rhythms in mobile telephone communication",
+      "authors": "Aledavood, T; López, E; Roberts, S G B; Reed-Tsochas, F; Moro, E; Dunbar, R I M; Saramäki, J",
+      "editors": "",
+      "publisher": "",
+      "year": 2015,
+      "volume": "10",
+      "issue": "9",
+      "first_page": "138098",
+      "container": "PLOS ONE",
+      "last_page": null,
+      "bib_id": 0,
+      "year_suffix": "",
+      "text_id": 162
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1145/2674396.2674408",
+      "title": "Tell me your apps and I will tell you your mood: Correlation of apps usage with bipolar disorder state",
+      "authors": "Alvarez-Lozano, J; Osmani, V; Mayora, O; Frost, M; Bardram, J; Faurholt-Jepsen, M; Kessing, L V",
+      "editors": "",
+      "publisher": "",
+      "year": 2014,
+      "volume": "19",
+      "issue": "",
+      "first_page": null,
+      "container": "",
+      "last_page": null,
+      "bib_id": 1,
+      "year_suffix": "",
+      "text_id": 163
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1086/671052",
+      "title": "Extended self in a digital world",
+      "authors": "Belk, R W",
+      "editors": "",
+      "publisher": "",
+      "year": 2013,
+      "volume": "4",
+      "issue": "3",
+      "first_page": "477",
+      "container": "Journal of Consumer Research",
+      "last_page": "500",
+      "bib_id": 2,
+      "year_suffix": "",
+      "text_id": 164
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1177/2056305121990632",
+      "title": "Shape shifting across social media",
+      "authors": "Davidson, B I; Joinson, A N",
+      "editors": "",
+      "publisher": "",
+      "year": 2021,
+      "volume": "7",
+      "issue": "1",
+      "first_page": null,
+      "container": "Social Media + Society",
+      "last_page": null,
+      "bib_id": 3,
+      "year_suffix": "",
+      "text_id": 165
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1016/j.ijhcs.2019.05.004",
+      "title": "Do smartphone usage scales predict behavior?",
+      "authors": "Ellis, D A; Davidson, B I; Shaw, H; Geyer, K",
+      "editors": "",
+      "publisher": "",
+      "year": 2019,
+      "volume": "130",
+      "issue": "",
+      "first_page": "86",
+      "container": "International Journal of Human Computer Studies",
+      "last_page": "92",
+      "bib_id": 4,
+      "year_suffix": "",
+      "text_id": 166
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "Do we need hundreds of classifiers to solve real world problems",
+      "authors": "Fernándes-Delgado, M; Cernadas, E; Barro, S",
+      "editors": "",
+      "publisher": "",
+      "year": 2014,
+      "volume": "15",
+      "issue": "",
+      "first_page": "3133",
+      "container": "Journal of Machine Learning Research",
+      "last_page": "3181",
+      "bib_id": 5,
+      "year_suffix": "",
+      "text_id": 167
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1016/j.jrp.2003.10.001",
+      "title": "Situational similarity and behavioral consistency: Subjective, objective, variable-centered and person-centered approaches",
+      "authors": "Furr, R M; Funder, D C",
+      "editors": "",
+      "publisher": "",
+      "year": 2004,
+      "volume": "38",
+      "issue": "",
+      "first_page": "421",
+      "container": "Journal of Research in Personality",
+      "last_page": "447",
+      "bib_id": 6,
+      "year_suffix": "",
+      "text_id": 168
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1037/pspp0000245",
+      "title": "Sensing sociability: Individual differences in young adults' conversation, calling, texting, and app use behaviors in daily life",
+      "authors": "Harari, G M; Müller, S R; Stachl, C; Wang, R; Wang, W; Bühner, M; Rentfrow, P J; Campbell, A T; Gosling, S D",
+      "editors": "",
+      "publisher": "",
+      "year": 2020,
+      "volume": "119",
+      "issue": "1",
+      "first_page": "204",
+      "container": "Journal of Personality and Social Psychology",
+      "last_page": "228",
+      "bib_id": 7,
+      "year_suffix": "",
+      "text_id": 169
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1073/pnas.1508081113",
+      "title": "Evaluating the privacy properties of telephone metadata",
+      "authors": "Mayer, J; Mutchler, P; Mitchell, J C",
+      "editors": "",
+      "publisher": "",
+      "year": 2016,
+      "volume": "113",
+      "issue": "",
+      "first_page": "5536",
+      "container": "Proceedings of the National Academy of Sciences",
+      "last_page": "5541",
+      "bib_id": 8,
+      "year_suffix": "",
+      "text_id": 170
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1037/h0035002",
+      "title": "Toward a cognitive social learning reconceptualization of personality",
+      "authors": "Mischel, W",
+      "editors": "",
+      "publisher": "",
+      "year": 1973,
+      "volume": "80",
+      "issue": "",
+      "first_page": "252",
+      "container": "Psychological Review",
+      "last_page": "288",
+      "bib_id": 9,
+      "year_suffix": "",
+      "text_id": 171
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1146/annurev.psych.55.042902.130709",
+      "title": "Toward an integrative science of the person",
+      "authors": "Mischel, W",
+      "editors": "",
+      "publisher": "",
+      "year": 2004,
+      "volume": "55",
+      "issue": "",
+      "first_page": "1",
+      "container": "Annual Review of Psychology",
+      "last_page": "22",
+      "bib_id": 10,
+      "year_suffix": "",
+      "text_id": 172
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "The situated person",
+      "authors": "Mischel, W; Shoda, Y",
+      "editors": "Mesquita, B; Barrett, L Feldman; Smith, E R",
+      "publisher": "Guilford Press",
+      "year": 2010,
+      "volume": "",
+      "issue": "",
+      "first_page": "149",
+      "container": "",
+      "last_page": "173",
+      "bib_id": 11,
+      "year_suffix": "",
+      "text_id": 173
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1145/3025453.3025484",
+      "title": "WhatsApp is for family; messenger is for friends\": Communication places in app ecosystems",
+      "authors": "Nouwens, M; Griggio, C F; Mackay, W E",
+      "editors": "Mark, G; Fussell, S; Chairs, ",
+      "publisher": "Association for Computing Machinery",
+      "year": 2017,
+      "volume": "",
+      "issue": "",
+      "first_page": "727",
+      "container": "",
+      "last_page": "735",
+      "bib_id": 12,
+      "year_suffix": "",
+      "text_id": 174
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "",
+      "authors": "Core, Team",
+      "editors": "",
+      "publisher": "",
+      "year": 2020,
+      "volume": "",
+      "issue": "",
+      "first_page": null,
+      "container": "",
+      "last_page": null,
+      "bib_id": 13,
+      "year_suffix": "",
+      "text_id": 175
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "",
+      "authors": "",
+      "editors": "",
+      "publisher": "",
+      "year": null,
+      "volume": "",
+      "issue": "",
+      "first_page": null,
+      "container": "",
+      "last_page": null,
+      "bib_id": 14,
+      "year_suffix": null,
+      "text_id": 176
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1089/cyber.2016.0324",
+      "title": "Predicting smartphone operating system from personality and individual differences",
+      "authors": "Shaw, H; Ellis, D A; Kendrick, L.-R; Ziegler, F V; Wiseman, R",
+      "editors": "",
+      "publisher": "",
+      "year": 2016,
+      "volume": "19",
+      "issue": "",
+      "first_page": "727",
+      "container": "Cyberpsychology, Behavior, and Social Networking",
+      "last_page": "732",
+      "bib_id": 15,
+      "year_suffix": "",
+      "text_id": 177
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1016/j.chb.2018.02.001",
+      "title": "The technology integration model (TIM). Predicting the continued use of technology",
+      "authors": "Shaw, H; Ellis, D A; Ziegler, F V",
+      "editors": "",
+      "publisher": "",
+      "year": 2018,
+      "volume": "83",
+      "issue": "",
+      "first_page": "204",
+      "container": "Computers in Human Behavior",
+      "last_page": "214",
+      "bib_id": 16,
+      "year_suffix": "",
+      "text_id": 178
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1521/soco.1993.11.4.399",
+      "title": "Links between personality judgments and contextualized behavior patterns: Situation-behavior profiles of personality prototypes",
+      "authors": "Shoda, Y; Mischel, W; Wright, J C",
+      "editors": "",
+      "publisher": "",
+      "year": 1993,
+      "volume": "11",
+      "issue": "",
+      "first_page": "399",
+      "container": "Social Cognition",
+      "last_page": "429",
+      "bib_id": 17,
+      "year_suffix": "",
+      "text_id": 179
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1037/0022-3514.67.4.674",
+      "title": "Intraindividual stability in the organization and patterning of behavior: Incorporating psychological situations into the idiographic analysis of personality",
+      "authors": "Shoda, Y; Mischel, W; Wright, J C",
+      "editors": "",
+      "publisher": "",
+      "year": 1994,
+      "volume": "67",
+      "issue": "",
+      "first_page": "674",
+      "container": "Journal of Personality and Social Psychology",
+      "last_page": "687",
+      "bib_id": 18,
+      "year_suffix": "",
+      "text_id": 180
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "",
+      "authors": "Therneau, T; Atkinson, B; Ripley, B",
+      "editors": "",
+      "publisher": "",
+      "year": 2019,
+      "volume": "",
+      "issue": "",
+      "first_page": null,
+      "container": "",
+      "last_page": null,
+      "bib_id": 19,
+      "year_suffix": "",
+      "text_id": 181
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1145/3264948",
+      "title": "Your apps give you away: Distinguishing mobile users by their app usage",
+      "authors": "Tu, Z; Li, R; Li, Y; Wang, G; Wu, D; Hui, P; Su, L; Jin, D",
+      "editors": "",
+      "publisher": "",
+      "year": 2018,
+      "volume": "2",
+      "issue": "",
+      "first_page": "138",
+      "container": "",
+      "last_page": null,
+      "bib_id": 20,
+      "year_suffix": "",
+      "text_id": 182
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1089/cyber.2017.0652",
+      "title": "Determining typical smartphone usage: What data do we need? Cyberpsychology",
+      "authors": "Wilcockson, T D W; Ellis, D A; Shaw, H",
+      "editors": "",
+      "publisher": "",
+      "year": 2018,
+      "volume": "21",
+      "issue": "",
+      "first_page": "395",
+      "container": "Behavior, and Social Net working",
+      "last_page": "398",
+      "bib_id": 21,
+      "year_suffix": "",
+      "text_id": 183
+    }
+  ],
+  "xref": [
+    {
+      "xref_id": 0,
+      "xref_type": "bib",
+      "contents": "Aledavood et al. (2015)",
+      "text_id": null
+    },
+    {
+      "xref_id": 1,
+      "xref_type": "bib",
+      "contents": "(Alvarez-Lozano et al., 2014)",
+      "text_id": 15
+    },
+    {
+      "xref_id": 1,
+      "xref_type": "bib",
+      "contents": "(Alvarez-Lozano et al., 2014)",
+      "text_id": 17
+    },
+    {
+      "xref_id": 1,
+      "xref_type": "bib",
+      "contents": "(Alvarez-Lozano et al., 2014)",
+      "text_id": 18
+    },
+    {
+      "xref_id": 1,
+      "xref_type": "bib",
+      "contents": "(Alvarez-Lozano et al., 2014)",
+      "text_id": 19
+    },
+    {
+      "xref_id": 2,
+      "xref_type": "bib",
+      "contents": "(Belk, 2013)",
+      "text_id": 16
+    },
+    {
+      "xref_id": 3,
+      "xref_type": "bib",
+      "contents": "Davidson & Joinson, 2021;",
+      "text_id": 17
+    },
+    {
+      "xref_id": 4,
+      "xref_type": "bib",
+      "contents": "Ellis et al. (2019)",
+      "text_id": 37
+    },
+    {
+      "xref_id": 4,
+      "xref_type": "bib",
+      "contents": "(Ellis et al., 2019)",
+      "text_id": 112
+    },
+    {
+      "xref_id": 5,
+      "xref_type": "bib",
+      "contents": "(Fernándes-Delgado et al., 2014)",
+      "text_id": 90
+    },
+    {
+      "xref_id": 6,
+      "xref_type": "bib",
+      "contents": "(Furr & Funder, 2004)",
+      "text_id": null
+    },
+    {
+      "xref_id": 7,
+      "xref_type": "bib",
+      "contents": "Harari et al. (2020)",
+      "text_id": null
+    },
+    {
+      "xref_id": 8,
+      "xref_type": "bib",
+      "contents": "(Mayer et al., 2016)",
+      "text_id": 125
+    },
+    {
+      "xref_id": 9,
+      "xref_type": "bib",
+      "contents": "Mischel (1973)",
+      "text_id": 105
+    },
+    {
+      "xref_id": 10,
+      "xref_type": "bib",
+      "contents": "(Mischel, 2004)",
+      "text_id": 7
+    },
+    {
+      "xref_id": 11,
+      "xref_type": "bib",
+      "contents": "Mischel & Shoda, 2010)",
+      "text_id": 17
+    },
+    {
+      "xref_id": 12,
+      "xref_type": "bib",
+      "contents": "(Nouwens et al., 2017)",
+      "text_id": 19
+    },
+    {
+      "xref_id": 13,
+      "xref_type": "bib",
+      "contents": "R Core Team, 2020)",
+      "text_id": 91
+    },
+    {
+      "xref_id": 15,
+      "xref_type": "bib",
+      "contents": "(Shaw et al., 2016)",
+      "text_id": 125
+    },
+    {
+      "xref_id": 16,
+      "xref_type": "bib",
+      "contents": "(Shaw et al., 2018)",
+      "text_id": 15
+    },
+    {
+      "xref_id": 16,
+      "xref_type": "bib",
+      "contents": "(Shaw et al., 2018)",
+      "text_id": 39
+    },
+    {
+      "xref_id": 17,
+      "xref_type": "bib",
+      "contents": "(Shoda et al., 1993)",
+      "text_id": null
+    },
+    {
+      "xref_id": 17,
+      "xref_type": "bib",
+      "contents": "Shoda et al. (1993)",
+      "text_id": null
+    },
+    {
+      "xref_id": 18,
+      "xref_type": "bib",
+      "contents": "(Shoda et al., 1994)",
+      "text_id": 9
+    },
+    {
+      "xref_id": 18,
+      "xref_type": "bib",
+      "contents": "Shoda et al. (1994)",
+      "text_id": 69
+    },
+    {
+      "xref_id": 19,
+      "xref_type": "bib",
+      "contents": "Therneau et al., 2019)",
+      "text_id": 91
+    },
+    {
+      "xref_id": 20,
+      "xref_type": "bib",
+      "contents": "(Tu et al., 2018)",
+      "text_id": 125
+    },
+    {
+      "xref_id": 21,
+      "xref_type": "bib",
+      "contents": "(Wilcockson et al., 2018)",
+      "text_id": 44
+    },
+    {
+      "xref_id": null,
+      "xref_type": "bib",
+      "contents": "Shoda et al.'s (1994)",
+      "text_id": 57
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "1",
+      "text_id": 75
+    },
+    {
+      "xref_id": null,
+      "xref_type": "table",
+      "contents": "1",
+      "text_id": 141
+    }
+  ],
+  "figure": [
+    {
+      "figure_id": 1,
+      "section_id": 16,
+      "image": null,
+      "page_number": null
+    }
+  ],
+  "table": [],
+  "eq": [
+    {
+      "text_id": 27,
+      "grp_id": 1,
+      "lhs": "n",
+      "comp": "=",
+      "rhs": "131"
+    },
+    {
+      "text_id": 27,
+      "grp_id": 1,
+      "lhs": "n",
+      "comp": "=",
+      "rhs": "214"
+    },
+    {
+      "text_id": 27,
+      "grp_id": 1,
+      "lhs": "n",
+      "comp": "=",
+      "rhs": "245"
+    },
+    {
+      "text_id": 27,
+      "grp_id": 1,
+      "lhs": "n",
+      "comp": "=",
+      "rhs": "190"
+    },
+    {
+      "text_id": 27,
+      "grp_id": 1,
+      "lhs": "n",
+      "comp": "=",
+      "rhs": "133"
+    },
+    {
+      "text_id": 55,
+      "grp_id": 2,
+      "lhs": "total",
+      "comp": "=",
+      "rhs": "28,692"
+    },
+    {
+      "text_id": 55,
+      "grp_id": 2,
+      "lhs": "skewness",
+      "comp": "=",
+      "rhs": "4.61"
+    },
+    {
+      "text_id": 65,
+      "grp_id": 3,
+      "lhs": "pickups",
+      "comp": "=",
+      "rhs": ".32"
+    },
+    {
+      "text_id": 65,
+      "grp_id": 3,
+      "lhs": "durations",
+      "comp": "=",
+      "rhs": ".19"
+    },
+    {
+      "text_id": 76,
+      "grp_id": 4,
+      "lhs": "M",
+      "comp": "=",
+      "rhs": ".73"
+    },
+    {
+      "text_id": 76,
+      "grp_id": 4,
+      "lhs": "95% CI",
+      "comp": "=",
+      "rhs": "[.73, .73]"
+    },
+    {
+      "text_id": 76,
+      "grp_id": 4,
+      "lhs": "SD",
+      "comp": "=",
+      "rhs": ".19"
+    },
+    {
+      "text_id": 76,
+      "grp_id": 4,
+      "lhs": "M",
+      "comp": "=",
+      "rhs": ".30"
+    },
+    {
+      "text_id": 76,
+      "grp_id": 4,
+      "lhs": "95% CI",
+      "comp": "=",
+      "rhs": "[.30, .30]"
+    },
+    {
+      "text_id": 76,
+      "grp_id": 4,
+      "lhs": "SD",
+      "comp": "=",
+      "rhs": ".30"
+    },
+    {
+      "text_id": 76,
+      "grp_id": 4,
+      "lhs": "t(17004202)",
+      "comp": "=",
+      "rhs": "3,797.93"
+    },
+    {
+      "text_id": 76,
+      "grp_id": 4,
+      "lhs": "p",
+      "comp": "<",
+      "rhs": ".001"
+    },
+    {
+      "text_id": 76,
+      "grp_id": 4,
+      "lhs": "d",
+      "comp": "=",
+      "rhs": "1.70"
+    },
+    {
+      "text_id": 76,
+      "grp_id": 4,
+      "lhs": "95% CI",
+      "comp": "=",
+      "rhs": "[1.70, 1.70]"
+    },
+    {
+      "text_id": 76,
+      "grp_id": 4,
+      "lhs": "M",
+      "comp": "=",
+      "rhs": ".81"
+    },
+    {
+      "text_id": 76,
+      "grp_id": 4,
+      "lhs": "95% CI",
+      "comp": "=",
+      "rhs": "[.81, .81]"
+    },
+    {
+      "text_id": 76,
+      "grp_id": 4,
+      "lhs": "SD",
+      "comp": "=",
+      "rhs": ".16"
+    },
+    {
+      "text_id": 76,
+      "grp_id": 4,
+      "lhs": "M",
+      "comp": "=",
+      "rhs": ".49"
+    },
+    {
+      "text_id": 76,
+      "grp_id": 4,
+      "lhs": "95% CI",
+      "comp": "=",
+      "rhs": "[.49, .49]"
+    },
+    {
+      "text_id": 76,
+      "grp_id": 4,
+      "lhs": "SD",
+      "comp": "=",
+      "rhs": ".27"
+    },
+    {
+      "text_id": 76,
+      "grp_id": 4,
+      "lhs": "t(16010722)",
+      "comp": "=",
+      "rhs": "3,274.61"
+    },
+    {
+      "text_id": 76,
+      "grp_id": 4,
+      "lhs": "p",
+      "comp": "<",
+      "rhs": ".001"
+    },
+    {
+      "text_id": 76,
+      "grp_id": 4,
+      "lhs": "d",
+      "comp": "=",
+      "rhs": "1.46"
+    },
+    {
+      "text_id": 76,
+      "grp_id": 4,
+      "lhs": "95% CI",
+      "comp": "=",
+      "rhs": "[1.46, 1.47]"
+    },
+    {
+      "text_id": 79,
+      "grp_id": 5,
+      "lhs": "W",
+      "comp": "=",
+      "rhs": "88,324,600,000,000"
+    },
+    {
+      "text_id": 79,
+      "grp_id": 5,
+      "lhs": "p",
+      "comp": "<",
+      "rhs": ".001"
+    },
+    {
+      "text_id": 79,
+      "grp_id": 5,
+      "lhs": "VD.A",
+      "comp": "=",
+      "rhs": "0.12"
+    },
+    {
+      "text_id": 79,
+      "grp_id": 5,
+      "lhs": "W",
+      "comp": "=",
+      "rhs": "85,210,000,000,000"
+    },
+    {
+      "text_id": 79,
+      "grp_id": 5,
+      "lhs": "p",
+      "comp": "<",
+      "rhs": ".001"
+    },
+    {
+      "text_id": 79,
+      "grp_id": 5,
+      "lhs": "VD.A",
+      "comp": "=",
+      "rhs": "0.15"
+    },
+    {
+      "text_id": 82,
+      "grp_id": 6,
+      "lhs": "M",
+      "comp": "=",
+      "rhs": ".89"
+    },
+    {
+      "text_id": 82,
+      "grp_id": 6,
+      "lhs": "95% CI",
+      "comp": "=",
+      "rhs": "[.88, .90]"
+    },
+    {
+      "text_id": 82,
+      "grp_id": 6,
+      "lhs": "SD",
+      "comp": "=",
+      "rhs": ".10"
+    },
+    {
+      "text_id": 82,
+      "grp_id": 6,
+      "lhs": "M",
+      "comp": "=",
+      "rhs": ".23"
+    },
+    {
+      "text_id": 82,
+      "grp_id": 6,
+      "lhs": "95% CI",
+      "comp": "=",
+      "rhs": "[.21, .26]"
+    },
+    {
+      "text_id": 82,
+      "grp_id": 6,
+      "lhs": "SD",
+      "comp": "=",
+      "rhs": ".30"
+    },
+    {
+      "text_id": 82,
+      "grp_id": 6,
+      "lhs": "t(942.70)",
+      "comp": "=",
+      "rhs": "57.13"
+    },
+    {
+      "text_id": 82,
+      "grp_id": 6,
+      "lhs": "p",
+      "comp": "<",
+      "rhs": ".001"
+    },
+    {
+      "text_id": 82,
+      "grp_id": 6,
+      "lhs": "d",
+      "comp": "=",
+      "rhs": "2.89"
+    },
+    {
+      "text_id": 82,
+      "grp_id": 6,
+      "lhs": "95% CI",
+      "comp": "=",
+      "rhs": "[2.75, 3.03]"
+    },
+    {
+      "text_id": 82,
+      "grp_id": 6,
+      "lhs": "M",
+      "comp": "=",
+      "rhs": ".91"
+    },
+    {
+      "text_id": 82,
+      "grp_id": 6,
+      "lhs": "95% CI",
+      "comp": "=",
+      "rhs": "[.91, .92]"
+    },
+    {
+      "text_id": 82,
+      "grp_id": 6,
+      "lhs": "SD",
+      "comp": "=",
+      "rhs": ".09"
+    },
+    {
+      "text_id": 82,
+      "grp_id": 6,
+      "lhs": "M",
+      "comp": "=",
+      "rhs": ".39"
+    },
+    {
+      "text_id": 82,
+      "grp_id": 6,
+      "lhs": "95% CI",
+      "comp": "=",
+      "rhs": "[.37, .41]"
+    },
+    {
+      "text_id": 82,
+      "grp_id": 6,
+      "lhs": "SD",
+      "comp": "=",
+      "rhs": ".32"
+    },
+    {
+      "text_id": 82,
+      "grp_id": 6,
+      "lhs": "t(905.43)",
+      "comp": "=",
+      "rhs": "43.46"
+    },
+    {
+      "text_id": 82,
+      "grp_id": 6,
+      "lhs": "p",
+      "comp": "<",
+      "rhs": ".001"
+    },
+    {
+      "text_id": 82,
+      "grp_id": 6,
+      "lhs": "d",
+      "comp": "=",
+      "rhs": "2.20"
+    },
+    {
+      "text_id": 82,
+      "grp_id": 6,
+      "lhs": "95% CI",
+      "comp": "=",
+      "rhs": "[2.07, 2.33]"
+    },
+    {
+      "text_id": 98,
+      "grp_id": 7,
+      "lhs": "95% CI",
+      "comp": "=",
+      "rhs": "[32.4%, 29.25%]"
+    },
+    {
+      "text_id": 98,
+      "grp_id": 7,
+      "lhs": "p",
+      "comp": "<",
+      "rhs": ".001"
+    },
+    {
+      "text_id": 98,
+      "grp_id": 7,
+      "lhs": "95% CI",
+      "comp": "=",
+      "rhs": "[35.03%, 41.98%]"
+    },
+    {
+      "text_id": 98,
+      "grp_id": 7,
+      "lhs": "NIR",
+      "comp": "=",
+      "rhs": ".0013"
+    },
+    {
+      "text_id": 98,
+      "grp_id": 7,
+      "lhs": "p",
+      "comp": "<",
+      "rhs": ".001"
+    },
+    {
+      "text_id": 99,
+      "grp_id": 8,
+      "lhs": "M",
+      "comp": "=",
+      "rhs": ".36"
+    },
+    {
+      "text_id": 99,
+      "grp_id": 8,
+      "lhs": "M",
+      "comp": "=",
+      "rhs": "1"
+    },
+    {
+      "text_id": 99,
+      "grp_id": 8,
+      "lhs": "M",
+      "comp": "=",
+      "rhs": ".36"
+    },
+    {
+      "text_id": 3,
+      "grp_id": 9,
+      "lhs": "d",
+      "comp": ">",
+      "rhs": "1.46"
+    }
+  ]
+}

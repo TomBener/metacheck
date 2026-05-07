@@ -1,0 +1,6529 @@
+{
+  "paper_id": "0956797621996667",
+  "info": [
+    {
+      "title": "Charged With a Crime: The Neuronal Signature of Processing Negatively Evaluated Faces Under Different Attentional Conditions",
+      "keywords": ["affective person knowledge", "attention task", "attention to emotional information", "feature-based attention", "EEG", "ERP", "open data", "preregistered"],
+      "doi": "10.1177/0956797621996667",
+      "file_hash": "2939e2d58780fb4e",
+      "input_format": "TEI XML",
+      "file_name": "data-raw/psychsci/grobid_0.9.0-crf/0956797621996667.xml",
+      "bibr_version": "10.0",
+      "paper_type": "unknown",
+      "paper_type_confidence": 0,
+      "oecd_l1": null,
+      "oecd_l2": null,
+      "oecd_confidence": null
+    }
+  ],
+  "author": [
+    {
+      "author_id": 1,
+      "given": "Sebastian",
+      "family": "Schindler",
+      "affiliation": "Institute of Medical Psychology and Systems Neuroscience University of Münster",
+      "email": "sebastian.schindler@ukmuenster.de",
+      "corresponding": false,
+      "orcid": "",
+      "role": []
+    },
+    {
+      "author_id": 2,
+      "given": "Maximilian",
+      "family": "Bruchmann",
+      "affiliation": "Institute of Medical Psychology and Systems Neuroscience University of Münster",
+      "email": "maximilian.bruchmann@uni-muenster.de",
+      "corresponding": false,
+      "orcid": "",
+      "role": []
+    },
+    {
+      "author_id": 3,
+      "given": "Claudia",
+      "family": "Krasowski",
+      "affiliation": "Institute of Medical Psychology and Systems Neuroscience University of Münster",
+      "email": "",
+      "corresponding": false,
+      "orcid": "",
+      "role": []
+    },
+    {
+      "author_id": 4,
+      "given": "Robert",
+      "family": "Moeck",
+      "affiliation": "Institute of Medical Psychology and Systems Neuroscience University of Münster",
+      "email": "",
+      "corresponding": false,
+      "orcid": "",
+      "role": []
+    },
+    {
+      "author_id": 5,
+      "given": "Thomas",
+      "family": "Straube",
+      "affiliation": "Institute of Medical Psychology and Systems Neuroscience University of Münster",
+      "email": "",
+      "corresponding": false,
+      "orcid": "",
+      "role": []
+    }
+  ],
+  "text": [
+    {
+      "text_id": 1,
+      "paragraph_id": 1,
+      "section_id": 0,
+      "text": "Our brains rapidly respond to human faces and can differentiate between many identities, retrieving rich semantic emotional-knowledge information.",
+      "page_number": null
+    },
+    {
+      "text_id": 2,
+      "paragraph_id": 1,
+      "section_id": 0,
+      "text": "Studies provide a mixed picture of how such information affects event-related potentials (ERPs).",
+      "page_number": null
+    },
+    {
+      "text_id": 3,
+      "paragraph_id": 1,
+      "section_id": 0,
+      "text": "We systematically examined the effect of feature-based attention on ERP modulations to briefly presented faces of individuals associated with a crime.",
+      "page_number": null
+    },
+    {
+      "text_id": 4,
+      "paragraph_id": 1,
+      "section_id": 0,
+      "text": "The tasks required participants (N = 40 adults) to discriminate the orientation of lines overlaid onto the face, the age of the face, or emotional information associated with the face.",
+      "page_number": null
+    },
+    {
+      "text_id": 5,
+      "paragraph_id": 1,
+      "section_id": 0,
+      "text": "Negative faces amplified the N170 ERP component during all tasks, whereas the early posterior negativity (EPN) and late positive potential (LPP) components were increased only when the emotional information was attended to.",
+      "page_number": null
+    },
+    {
+      "text_id": 6,
+      "paragraph_id": 1,
+      "section_id": 0,
+      "text": "These findings suggest that during early configural analyses (N170), evaluative information potentiates face processing regardless of feature-based attention.",
+      "page_number": null
+    },
+    {
+      "text_id": 7,
+      "paragraph_id": 1,
+      "section_id": 0,
+      "text": "During intermediate, only partially resource-dependent, processing stages (EPN) and late stages of elaborate stimulus processing (LPP), attention to the acquired emotional information is necessary for amplified processing of negatively evaluated faces.",
+      "page_number": null
+    },
+    {
+      "text_id": 8,
+      "paragraph_id": 3,
+      "section_id": 1,
+      "text": "Faces constitute a significant part of human communication because they transfer nonverbal signals to other people and transmit rich information about a person, including unique identity information.",
+      "page_number": null
+    },
+    {
+      "text_id": 9,
+      "paragraph_id": 3,
+      "section_id": 1,
+      "text": "A growing body of research shows that contextual effects influence how we interpret faces (Wieser & Brosch, 2012), including during instructed threat, in which by merely informing participants that a face will be associated with a shock, persistent threat-related effects are found (Bublatzky et al., 2014).",
+      "page_number": null
+    },
+    {
+      "text_id": 10,
+      "paragraph_id": 3,
+      "section_id": 1,
+      "text": "These effects modulate specific eventrelated potentials (ERPs; see Schellhaas et al., 2020).",
+      "page_number": null
+    },
+    {
+      "text_id": 11,
+      "paragraph_id": 3,
+      "section_id": 1,
+      "text": "Such threat signals can likewise be elicited by associating a neutral face with danger because of highly negative biographical knowledge, typically conveyed in various media outlets.",
+      "page_number": null
+    },
+    {
+      "text_id": 12,
+      "paragraph_id": 3,
+      "section_id": 1,
+      "text": "Although research has shown that evaluative knowledge modulates ERPs, findings regarding the time course of such effects are conflicting, leading to an ongoing debate on whether early (rather automatic) or late (controlled) stages of processing are modulated (e.g., see Abdel Rahman, 2011;Baum et al., 2020;McCrackin & Itier, 2018).",
+      "page_number": null
+    },
+    {
+      "text_id": 13,
+      "paragraph_id": 4,
+      "section_id": 1,
+      "text": "Early and late ERP components represent distinct stages of face processing (for a review, see Schweinberger & Neumann, 2016).",
+      "page_number": null
+    },
+    {
+      "text_id": 14,
+      "paragraph_id": 4,
+      "section_id": 1,
+      "text": "The occipitally scored P1 is known to reflect early stages of stimulus detection and discrimination (e.g., Luck & Hillyard, 1994).",
+      "page_number": null
+    },
+    {
+      "text_id": 15,
+      "paragraph_id": 4,
+      "section_id": 1,
+      "text": "The following N170 is viewed as a structural encoding component, and larger amplitudes are reported for faces compared with objects at this component (Eimer, 2011).",
+      "page_number": null
+    },
+    {
+      "text_id": 16,
+      "paragraph_id": 4,
+      "section_id": 1,
+      "text": "The subsequent early posterior negativity (EPN) is observed as a differential negativity when contrasting emotional and neutral expressions and has been related to early attentional selection processes (Schupp et al., 2004).",
+      "page_number": null
+    },
+    {
+      "text_id": 17,
+      "paragraph_id": 4,
+      "section_id": 1,
+      "text": "The EPN indexes sensitivity to salient emotional information ( Junghöfer et al., 2001) and is modulated by emotional expressions partially independent of attentional resources (e.g., see Frühholz et al., 2011;Hammerschmidt et al., 2018;Itier & Neath-Tavares, 2017;Rellecke et al., 2012;Schacht & Sommer, 2009).",
+      "page_number": null
+    },
+    {
+      "text_id": 18,
+      "paragraph_id": 4,
+      "section_id": 1,
+      "text": "Finally, the late positive potential (LPP) indicates elaborated stimulus evaluation and controlled attention processes, particularly when the appraisal of affective meaning is involved (e.g., see Hajcak et al., 2009;Schupp et al., 2006).",
+      "page_number": null
+    },
+    {
+      "text_id": 19,
+      "paragraph_id": 5,
+      "section_id": 1,
+      "text": "Evaluative person knowledge has been shown to modulate early and late ERPs.",
+      "page_number": null
+    },
+    {
+      "text_id": 20,
+      "paragraph_id": 5,
+      "section_id": 1,
+      "text": "However, experimental tasks and examined ERPs vary considerably, and the resulting findings are conflicting.",
+      "page_number": null
+    },
+    {
+      "text_id": 21,
+      "paragraph_id": 5,
+      "section_id": 1,
+      "text": "These experiments included tasks that required responding to an oddball stimulus (Xu et al., 2016), discriminating gender (Luo et al., 2016), recollecting nationality information (Suess et al., 2014), discriminating semantic features (wellknown faces vs. new faces, nationality, and names of the individuals pictured; Abdel Rahman, 2011), or responding to evaluative emotional information (Baum et al., 2020;Kissler & Strehlow, 2017).",
+      "page_number": null
+    },
+    {
+      "text_id": 22,
+      "paragraph_id": 5,
+      "section_id": 1,
+      "text": "Only one study examined the P1, and it showed no evaluative effects (Luo et al., 2016), whereas there are two conflicting findings regarding the N170 (Luo et al., 2016;Xu et al., 2016).",
+      "page_number": null
+    },
+    {
+      "text_id": 23,
+      "paragraph_id": 5,
+      "section_id": 1,
+      "text": "One study used a passive-viewing task and observed no effects (Luo et al., 2016;Xu et al., 2016), whereas the other study required participant to explicitly attend to the gender of faces and found an increased N170 (Luo et al., 2016).",
+      "page_number": null
+    },
+    {
+      "text_id": 24,
+      "paragraph_id": 5,
+      "section_id": 1,
+      "text": "It remains an open question whether conflicting findings depend on differences in feature-based attention to faces and emotional information of faces.",
+      "page_number": null
+    },
+    {
+      "text_id": 25,
+      "paragraph_id": 5,
+      "section_id": 1,
+      "text": "For later components, larger EPN amplitudes were found for faces paired with negative compared with neutral biographical information (Abdel Rahman, 2011;Luo et al., 2016;Suess et al., 2014;Xu et al., 2016).",
+      "page_number": null
+    },
+    {
+      "text_id": 26,
+      "paragraph_id": 5,
+      "section_id": 1,
+      "text": "However, other studies observed no effect of negative evaluative information at the EPN level (Baum et al., 2020;Kissler & Strehlow, 2017; for unfamiliar faces, see Abdel Rahman, 2011).",
+      "page_number": null
+    },
+    {
+      "text_id": 27,
+      "paragraph_id": 5,
+      "section_id": 1,
+      "text": "For the LPP, a majority of the studies show larger amplitudes for faces with negative associations (Abdel Rahman, 2011;Baum et al., 2020;Kissler & Strehlow, 2017;Xu et al., 2016; but see Luo et al., 2016).",
+      "page_number": null
+    },
+    {
+      "text_id": 28,
+      "paragraph_id": 5,
+      "section_id": 1,
+      "text": "In summary, studies show that evaluative information modulates ERPs but provide a mixed picture of which information-processing stages are affected.",
+      "page_number": null
+    },
+    {
+      "text_id": 29,
+      "paragraph_id": 5,
+      "section_id": 1,
+      "text": "Research on emotional expressions showed that feature-based attention to the emotional information is crucial for late modulations, whereas early components are less vulnerable to a competing task (Rellecke et al., 2012;Schindler, Bruchmann, et al., 2020).",
+      "page_number": null
+    },
+    {
+      "text_id": 30,
+      "paragraph_id": 5,
+      "section_id": 1,
+      "text": "Whether this holds true for faces associated with evaluative information is unknown.",
+      "page_number": null
+    },
+    {
+      "text_id": 31,
+      "paragraph_id": 6,
+      "section_id": 1,
+      "text": "Because ERPs index distinct stages of processing and these stages depend on available resources, studies in which task conditions are systematically varied might resolve the inconsistent findings during the processing of faces with acquired emotional meaning.",
+      "page_number": null
+    },
+    {
+      "text_id": 32,
+      "paragraph_id": 6,
+      "section_id": 1,
+      "text": "In this preregistered study (https://osf.io/erkdt), we examined how feature-based attention modulates evaluative person knowledge for early (P1, N170), midlatency (EPN), and late (LPP) ERPs.",
+      "page_number": null
+    },
+    {
+      "text_id": 33,
+      "paragraph_id": 6,
+      "section_id": 1,
+      "text": "Participants were required to (a)",
+      "page_number": null
+    },
+    {
+      "text_id": 34,
+      "paragraph_id": 8,
+      "section_id": 2,
+      "text": "Humans are highly sensitive to individual faces that have been associated with negative information.",
+      "page_number": null
+    },
+    {
+      "text_id": 35,
+      "paragraph_id": 8,
+      "section_id": 2,
+      "text": "In this research, we asked how our brain differentiates individual human faces on the basis of relevant biographic information, such as that provided by newspaper headlines.",
+      "page_number": null
+    },
+    {
+      "text_id": 36,
+      "paragraph_id": 8,
+      "section_id": 2,
+      "text": "We gave adult participants the task of responding to faces, some of which we associated with a brutal crime.",
+      "page_number": null
+    },
+    {
+      "text_id": 37,
+      "paragraph_id": 8,
+      "section_id": 2,
+      "text": "While they viewed the faces, we recorded electroencephalograms (EEGs).",
+      "page_number": null
+    },
+    {
+      "text_id": 38,
+      "paragraph_id": 8,
+      "section_id": 2,
+      "text": "Very early in the viewing period, we found an attention-independent potentiation of brain responses as participants processed the faces of supposed criminals.",
+      "page_number": null
+    },
+    {
+      "text_id": 39,
+      "paragraph_id": 8,
+      "section_id": 2,
+      "text": "When participants' attention was directed to the evaluative background information, subsequent processing of the faces also showed an additional increase in neural activity.",
+      "page_number": null
+    },
+    {
+      "text_id": 40,
+      "paragraph_id": 8,
+      "section_id": 2,
+      "text": "These findings suggest a mandatory early prioritization of the processing of negatively evaluated faces, whereas attention to relevant facial features evokes a second stage of potentiated brain responses to faces of individuals charged with a crime.",
+      "page_number": null
+    },
+    {
+      "text_id": 41,
+      "paragraph_id": 8,
+      "section_id": 2,
+      "text": "Our findings indicate that negative biographical information that resembles typical newspaper headlines strongly affects the neuronal processing of individual faces. perform a perceptual line-discrimination task, in which faces served as distractor stimuli; (b) discriminate the age of faces, in which attention was directed to the face but not to the evaluative information; or (c) decide about the person's evaluative backstory, thus directing participants' attention to the emotional information.",
+      "page_number": null
+    },
+    {
+      "text_id": 42,
+      "paragraph_id": 8,
+      "section_id": 2,
+      "text": "We expected no P1 effects of evaluative emotional information.",
+      "page_number": null
+    },
+    {
+      "text_id": 43,
+      "paragraph_id": 8,
+      "section_id": 2,
+      "text": "For the N170 and EPN, on the basis of findings of partially resource-independent increases for emotional information, we expected increased differentiation between negative and neutral faces when attention was directed to the face and even more when attention was directed to the emotional information.",
+      "page_number": null
+    },
+    {
+      "text_id": 44,
+      "paragraph_id": 8,
+      "section_id": 2,
+      "text": "Finally, larger LPP amplitudes for negative compared with neutral faces were expected only in the emotion task.",
+      "page_number": null
+    },
+    {
+      "text_id": 45,
+      "paragraph_id": 12,
+      "section_id": 4,
+      "text": "Following our preregistered data-sampling plan, we recruited 40 participants.",
+      "page_number": null
+    },
+    {
+      "text_id": 46,
+      "paragraph_id": 12,
+      "section_id": 4,
+      "text": "Calculations using G*Power (Version 3.1.7; Faul et al., 2009) showed that this sample size would yield a power of greater than 90% to detect medium-sized effects of evaluative information and interactions of evaluative information and attention tasks (η p 2 = .06).",
+      "page_number": null
+    },
+    {
+      "text_id": 47,
+      "paragraph_id": 12,
+      "section_id": 4,
+      "text": "In total, 41 participants were recruited at the University of Münster, but one participant had to be excluded because of a neurological disorder.",
+      "page_number": null
+    },
+    {
+      "text_id": 48,
+      "paragraph_id": 12,
+      "section_id": 4,
+      "text": "The remaining 40 participants (30 women) were 23.50 years old (SD = 3.31) on average, gave written informed consent, and received €10 per hour for participation.",
+      "page_number": null
+    },
+    {
+      "text_id": 49,
+      "paragraph_id": 12,
+      "section_id": 4,
+      "text": "All participants had normal or corrected-to-normal vision, were right-handed, and reported no history of neurological or psychiatric disorders.",
+      "page_number": null
+    },
+    {
+      "text_id": 50,
+      "paragraph_id": 14,
+      "section_id": 5,
+      "text": "The facial stimuli for the experiment were taken from the FACES database with permission for use in the current experiment (Ebner et al., 2010).",
+      "page_number": null
+    },
+    {
+      "text_id": 51,
+      "paragraph_id": 14,
+      "section_id": 5,
+      "text": "Specifically, eight identities (four young men, four middle-age men) 1 with neutral expressions were chosen.",
+      "page_number": null
+    },
+    {
+      "text_id": 52,
+      "paragraph_id": 14,
+      "section_id": 5,
+      "text": "Half of the faces were associated with highly negative evaluative knowledge and the other half with neutral information (see below).",
+      "page_number": null
+    },
+    {
+      "text_id": 53,
+      "paragraph_id": 14,
+      "section_id": 5,
+      "text": "Each half contained two young and two middle-age men.",
+      "page_number": null
+    },
+    {
+      "text_id": 54,
+      "paragraph_id": 14,
+      "section_id": 5,
+      "text": "Identities were counterbalanced when they were assigned to the conditions, thus they were equally often associated with negative and neutral information across participants.",
+      "page_number": null
+    },
+    {
+      "text_id": 55,
+      "paragraph_id": 14,
+      "section_id": 5,
+      "text": "Moreover, the grouping of identities was balanced across participants; thus, all combinations of identities were equally distributed across experimental conditions.",
+      "page_number": null
+    },
+    {
+      "text_id": 56,
+      "paragraph_id": 14,
+      "section_id": 5,
+      "text": "To ensure face validity when coupling the faces with different pieces of narrative information, we displayed only headshots of each face, keeping the facial hair but removing the shirts.",
+      "page_number": null
+    },
+    {
+      "text_id": 57,
+      "paragraph_id": 14,
+      "section_id": 5,
+      "text": "The faces were always presented with an overlay of horizontal or vertical thin lines (creating using Presentation software; Version 21.1; Neurobehavioral Systems, 2019).",
+      "page_number": null
+    },
+    {
+      "text_id": 58,
+      "paragraph_id": 14,
+      "section_id": 5,
+      "text": "Five horizontal or five vertical lines appeared within the boundaries of each face (horizontal lines: 3.3 degrees of visual angle [DVA]; vertical lines: 4.5 DVA; thickness: 0.03 DVA; centered x = 0, y = 0).",
+      "page_number": null
+    },
+    {
+      "text_id": 59,
+      "paragraph_id": 16,
+      "section_id": 6,
+      "text": "Participants first responded to a demographic questionnaire.",
+      "page_number": null
+    },
+    {
+      "text_id": 60,
+      "paragraph_id": 16,
+      "section_id": 6,
+      "text": "Then they were seated 60 cm in front of a gammacorrected display (Iiyama G-Master GB2488HSU) running at 60 Hz with a Michelson contrast of .9979 (minimum L = 0.35 cd/m 2 ; maximum L = 327.43 cd/m 2 ).",
+      "page_number": null
+    },
+    {
+      "text_id": 61,
+      "paragraph_id": 16,
+      "section_id": 6,
+      "text": "The background was set to medium gray (red, green, blue [RGB] value = 108, 108, 108).",
+      "page_number": null
+    },
+    {
+      "text_id": 62,
+      "paragraph_id": 16,
+      "section_id": 6,
+      "text": "Before participants started the first task, we gave them negative and then neutral background information for each of the eight face identities by presenting newspaper headlines and detailed background explanations.",
+      "page_number": null
+    },
+    {
+      "text_id": 63,
+      "paragraph_id": 16,
+      "section_id": 6,
+      "text": "Two young and two middle-age men were portrayed as having committed a brutal crime-raping, mutilating, and killing two young women.",
+      "page_number": null
+    },
+    {
+      "text_id": 64,
+      "paragraph_id": 16,
+      "section_id": 6,
+      "text": "The other two young and two middleage men were described as firefighter trainees.",
+      "page_number": null
+    },
+    {
+      "text_id": 65,
+      "paragraph_id": 16,
+      "section_id": 6,
+      "text": "After each newspaper article, all four individual faces were presented on the screen, and participants were requested to attentively look at all faces and memorize them.",
+      "page_number": null
+    },
+    {
+      "text_id": 66,
+      "paragraph_id": 16,
+      "section_id": 6,
+      "text": "This information was presented each time before a task started (see Fig.",
+      "page_number": null
+    },
+    {
+      "text_id": 67,
+      "paragraph_id": 16,
+      "section_id": 6,
+      "text": "1).",
+      "page_number": null
+    },
+    {
+      "text_id": 68,
+      "paragraph_id": 17,
+      "section_id": 6,
+      "text": "Participants were instructed to avoid eye movements and blinks during the stimulus presentation and started with the perceptual task, the age task, or the emotion task (see Fig.",
+      "page_number": null
+    },
+    {
+      "text_id": 69,
+      "paragraph_id": 17,
+      "section_id": 6,
+      "text": "1).",
+      "page_number": null
+    },
+    {
+      "text_id": 70,
+      "paragraph_id": 17,
+      "section_id": 6,
+      "text": "Task order and response keys (X and M) were counterbalanced across participants.",
+      "page_number": null
+    },
+    {
+      "text_id": 71,
+      "paragraph_id": 17,
+      "section_id": 6,
+      "text": "In each trial, participants had to make a two-alternative forced choice, deciding (a) whether the overlaid line orientation was horizontal or vertical, (b) whether the age of the face was old or young, or (c) whether the associated evaluative emotional information was negative or neutral (i.e., whether the face belonged to the criminal group or the firefighter-training group).",
+      "page_number": null
+    },
+    {
+      "text_id": 72,
+      "paragraph_id": 17,
+      "section_id": 6,
+      "text": "Before each task started, the background stories were repeated to ensure that participants would remember the evaluative information.",
+      "page_number": null
+    },
+    {
+      "text_id": 73,
+      "paragraph_id": 17,
+      "section_id": 6,
+      "text": "The trial structure and mode of presentation were kept constant across all tasks.",
+      "page_number": null
+    },
+    {
+      "text_id": 74,
+      "paragraph_id": 17,
+      "section_id": 6,
+      "text": "Each trial started with the display of a fixation cross for 800 to 1,000 ms, after which a face was presented for 100 ms.",
+      "page_number": null
+    },
+    {
+      "text_id": 75,
+      "paragraph_id": 17,
+      "section_id": 6,
+      "text": "This short presentation time of the faces was done to avoid attention shifts to other facial features.",
+      "page_number": null
+    },
+    {
+      "text_id": 76,
+      "paragraph_id": 17,
+      "section_id": 6,
+      "text": "The face was followed by another fixation cross presented for 1,500 ms, during which responses were recorded.",
+      "page_number": null
+    },
+    {
+      "text_id": 77,
+      "paragraph_id": 17,
+      "section_id": 6,
+      "text": "Each face was repeated 16 times during each task, yielding 64 trials presenting faces associated with neutral information and 64 trials with faces associated with negative information, totaling 384 trials across the three tasks.",
+      "page_number": null
+    },
+    {
+      "text_id": 78,
+      "paragraph_id": 17,
+      "section_id": 6,
+      "text": "After testing, participants rated each face on valence, arousal, and perceived threat.",
+      "page_number": null
+    },
+    {
+      "text_id": 79,
+      "paragraph_id": 17,
+      "section_id": 6,
+      "text": "Finally, they responded to the Beck Depression Inventory-II and the State-Trait Anxiety Inventory (Hautzinger et al., 2009;Spielberger et al., 1999) as well as to a short version of the NEO Five-Factor Inventory (Körner et al., 2008); these measures were not relevant for the current study but for the analyses of individual differences in effects of evaluative person knowledge in larger samples.",
+      "page_number": null
+    },
+    {
+      "text_id": 80,
+      "paragraph_id": 19,
+      "section_id": 7,
+      "text": "EEG signals were recorded from 64 active electrodes using Biosemi's ActiView software (Version 8.12; https://www.biosemi.com/download.htm).",
+      "page_number": null
+    },
+    {
+      "text_id": 81,
+      "paragraph_id": 19,
+      "section_id": 7,
+      "text": "Four additional electrodes measured horizontal and vertical eye movements.",
+      "page_number": null
+    },
+    {
+      "text_id": 82,
+      "paragraph_id": 19,
+      "section_id": 7,
+      "text": "The recording sampling rate was 512 Hz.",
+      "page_number": null
+    },
+    {
+      "text_id": 83,
+      "paragraph_id": 19,
+      "section_id": 7,
+      "text": "Off-line data were re-referenced to the average reference and a low-cutoff filter of 0.01 and a highcutoff filter of 40 Hz were applied.",
+      "page_number": null
+    },
+    {
+      "text_id": 84,
+      "paragraph_id": 19,
+      "section_id": 7,
+      "text": "Recorded eye movements were corrected using the automatic eye-artifact correction method implemented in BESA Research (Version 6.0; BESA, 2014).",
+      "page_number": null
+    },
+    {
+      "text_id": 85,
+      "paragraph_id": 19,
+      "section_id": 7,
+      "text": "A trigger delay of 15 ms was measured using a photodiode and corrected during the process of extracting epochs from the EEG time window.",
+      "page_number": null
+    },
+    {
+      "text_id": 86,
+      "paragraph_id": 19,
+      "section_id": 7,
+      "text": "Filtered data were segmented from 100 ms before stimulus onset to 1,000 ms after stimulus presentation.",
+      "page_number": null
+    },
+    {
+      "text_id": 87,
+      "paragraph_id": 19,
+      "section_id": 7,
+      "text": "The 100 ms before stimulus onset was used for baseline correction.",
+      "page_number": null
+    },
+    {
+      "text_id": 88,
+      "paragraph_id": 21,
+      "section_id": 8,
+      "text": "Data were analyzed using 2 (emotion: negative, neutral) × 3 (task: perceptual, age, emotion) repeated measures , the experiment started with one of the three attention tasks, counterbalanced across participants.",
+      "page_number": null
+    },
+    {
+      "text_id": 89,
+      "paragraph_id": 21,
+      "section_id": 8,
+      "text": "Each task required them to perform a binary forced-choice decision, in which they had to discriminate line orientation, age, or emotional information.",
+      "page_number": null
+    },
+    {
+      "text_id": 90,
+      "paragraph_id": 21,
+      "section_id": 8,
+      "text": "During each trial (b), the backstory was presented in the form of newspaper articles, after which the faces of all four group members were presented.",
+      "page_number": null
+    },
+    {
+      "text_id": 91,
+      "paragraph_id": 21,
+      "section_id": 8,
+      "text": "The story and members of the criminal group were presented first, followed by the story and members of the firefighters.",
+      "page_number": null
+    },
+    {
+      "text_id": 92,
+      "paragraph_id": 21,
+      "section_id": 8,
+      "text": "Next, participants were informed about the discriminative feature.",
+      "page_number": null
+    },
+    {
+      "text_id": 93,
+      "paragraph_id": 21,
+      "section_id": 8,
+      "text": "During each task, the trial structure was identical.",
+      "page_number": null
+    },
+    {
+      "text_id": 94,
+      "paragraph_id": 21,
+      "section_id": 8,
+      "text": "Note that stimulus displays in the illustration are not drawn to scale, and the depicted face identity was not used in the experiment but is shown only for display purposes.",
+      "page_number": null
+    },
+    {
+      "text_id": 95,
+      "paragraph_id": 22,
+      "section_id": 8,
+      "text": "analyses of variance.",
+      "page_number": null
+    },
+    {
+      "text_id": 96,
+      "paragraph_id": 22,
+      "section_id": 8,
+      "text": "For ERP analyses of the P1, N170, and EPN, channel-group laterality (left, right) was included as a factor.",
+      "page_number": null
+    },
+    {
+      "text_id": 97,
+      "paragraph_id": 22,
+      "section_id": 8,
+      "text": "Effect sizes were calculated as η p 2 s (Cohen, 1988).",
+      "page_number": null
+    },
+    {
+      "text_id": 98,
+      "paragraph_id": 22,
+      "section_id": 8,
+      "text": "When Mauchly's test of sphericity indicated a violation of sphericity, degrees of freedom were corrected following the Greenhouse-Geisser method.",
+      "page_number": null
+    },
+    {
+      "text_id": 99,
+      "paragraph_id": 22,
+      "section_id": 8,
+      "text": "For secondary analyses, hit rates and reaction times were examined, excluding trials with reaction times of less than 100 ms and greater than 1,500 ms.",
+      "page_number": null
+    },
+    {
+      "text_id": 100,
+      "paragraph_id": 23,
+      "section_id": 8,
+      "text": "EEG scalp data were statistically analyzed using Electromagnetic Encephalography Software (EMEGS; Version 2.8; Peyk et al., 2011).",
+      "page_number": null
+    },
+    {
+      "text_id": 101,
+      "paragraph_id": 23,
+      "section_id": 8,
+      "text": "The main effects of emotion, task, and their interaction were examined.",
+      "page_number": null
+    },
+    {
+      "text_id": 102,
+      "paragraph_id": 23,
+      "section_id": 8,
+      "text": "Time windows were segmented into intervals from 80 to 100 ms for the P1, 120 to 170 ms for the N170, 250 to 350 ms for the EPN, and 400 to 600 ms for the LPP.",
+      "page_number": null
+    },
+    {
+      "text_id": 103,
+      "paragraph_id": 23,
+      "section_id": 8,
+      "text": "We measured the P1, N170, and EPN over two symmetrical occipital clusters (P1 and N170: left P9, P7, PO7; right P10, P8, PO8; EPN: left P9, P7, PO7, O1; right P10, P8, PO8, O2).",
+      "page_number": null
+    },
+    {
+      "text_id": 104,
+      "paragraph_id": 23,
+      "section_id": 8,
+      "text": "Additionally, we measured the LPP component over a centroparietal cluster (C1, Cz, C2, CP1, CPz, CP2, P1, Pz, P2).",
+      "page_number": null
+    },
+    {
+      "text_id": 105,
+      "paragraph_id": 23,
+      "section_id": 8,
+      "text": "We slightly deviated from our preregistration in time (preregistered N170: 130-170 ms; preregistered EPN: 200-350 ms) and space (preregistered EPN: left P9, P7, PO7; right P10, P8, PO8; preregistered LPP: C1, Cz, C2, CP1, CPz, CP2).",
+      "page_number": null
+    },
+    {
+      "text_id": 106,
+      "paragraph_id": 23,
+      "section_id": 8,
+      "text": "This was because of the preregistered approach to validate ERP windows for the P1 and N170 by collapsing ERPs across all conditions (Luck & Gaspelin, 2017).",
+      "page_number": null
+    },
+    {
+      "text_id": 107,
+      "paragraph_id": 23,
+      "section_id": 8,
+      "text": "For the EPN and LPP, which are typically scored as differences between negative and neutral stimuli, we collapsed waveforms to negative faces and neutral faces across all attention tasks to identify differential effects.",
+      "page_number": null
+    },
+    {
+      "text_id": 108,
+      "paragraph_id": 23,
+      "section_id": 8,
+      "text": "Finally, analyses of covariance (ANCOVAs) with reaction time as a covariate were calculated to account for possible influences of reaction time differences on ERP modulations.",
+      "page_number": null
+    },
+    {
+      "text_id": 109,
+      "paragraph_id": 23,
+      "section_id": 8,
+      "text": "All data (https://osf.io/rzevn) and a copy of the preregistration (https://osf.io/erkdt) and are available on OSF.",
+      "page_number": null
+    },
+    {
+      "text_id": 110,
+      "paragraph_id": 27,
+      "section_id": 10,
+      "text": "Face ratings.",
+      "page_number": null
+    },
+    {
+      "text_id": 111,
+      "paragraph_id": 27,
+      "section_id": 10,
+      "text": "After the experiment, participants rated the valence, arousal, and perceived threat of faces.",
+      "page_number": null
+    },
+    {
+      "text_id": 112,
+      "paragraph_id": 27,
+      "section_id": 10,
+      "text": "Rating showed effects of emotional evaluative information for valence, F(1, 39) = 33.92, p < .001, η p 2 = .465 (see Fig. 2); arousal, F(1, 39) = 15.00, p < .001, η p 2 = .278; and perceived threat, F(1, 39) = 37.73, p < .001, η p 2 = .492.",
+      "page_number": null
+    },
+    {
+      "text_id": 113,
+      "paragraph_id": 27,
+      "section_id": 10,
+      "text": "Faces associated with negative evaluative information were rated as more negative (criminal faces: M = 2.88, SD = 0.78; neutral faces: M = 3.99, SD = 0.71), more arousing (criminal faces: M = 3.84, SD = 1.35; neutral faces: M = 2.84, SD = 1.03), and more threatening (criminal faces: M = 4.26, SD = 1.25; neutral faces: M = 2.59, SD = 0.88) than faces paired with neutral information.",
+      "page_number": null
+    },
+    {
+      "text_id": 114,
+      "paragraph_id": 27,
+      "section_id": 10,
+      "text": "Finally, participants' ratings of the credibility of the cover story were rather high (Likert-type scale: 1 = not credible, 4 = highly credible; M = 3.1, SD = 0.55).",
+      "page_number": null
+    },
+    {
+      "text_id": 115,
+      "paragraph_id": 29,
+      "section_id": 11,
+      "text": "With regard to hit rate, there was no main effect of emotion, F(1, 38) = 1.48, p = .231, η p 2 = .037 (see Fig. 2 and Table 1), but a significant effect of task, F(1.45, 55.13) = 27.59, p < .001, η p 2 = .421.",
+      "page_number": null
+    },
+    {
+      "text_id": 116,
+      "paragraph_id": 29,
+      "section_id": 11,
+      "text": "The percentage of correct choices was lowest in the emotion task compared with both the age and the perceptual tasks (ps < .001).",
+      "page_number": null
+    },
+    {
+      "text_id": 117,
+      "paragraph_id": 29,
+      "section_id": 11,
+      "text": "Further, more hits were made in the perceptual task compared with the age task (p = .003).",
+      "page_number": null
+    },
+    {
+      "text_id": 118,
+      "paragraph_id": 29,
+      "section_id": 11,
+      "text": "There was no significant interaction between emotion and task, F(2, 76) = 0.81, p = .449, η p 2 = .021.",
+      "page_number": null
+    },
+    {
+      "text_id": 119,
+      "paragraph_id": 31,
+      "section_id": 12,
+      "text": "Regarding reaction time, main effects of emotion, F(1, 38) = 18.02, p < .001, η p 2 = .322 (see Fig. 2 and Table 1), and task, F(2, 76) = 127.86, p < .001, η p 2 = .771, were found.",
+      "page_number": null
+    },
+    {
+      "text_id": 120,
+      "paragraph_id": 31,
+      "section_id": 12,
+      "text": "These main effects show shorter reaction times for faces associated with negative compared with neutral information and the shortest reaction times during the perceptual task, the age task ranking second and the emotion task eliciting the longest reaction times (all ps < .001).",
+      "page_number": null
+    },
+    {
+      "text_id": 121,
+      "paragraph_id": 31,
+      "section_id": 12,
+      "text": "Moreover, there was a significant interaction between emotion and task, F(2, 76) = 16.38, p < .001, η p 2 = .301.",
+      "page_number": null
+    },
+    {
+      "text_id": 122,
+      "paragraph_id": 31,
+      "section_id": 12,
+      "text": "When we resolved this interaction, it became evident that there were no differences between negative and neutral faces for the comparison of the perceptual and the age tasks (p = .916).",
+      "page_number": null
+    },
+    {
+      "text_id": 123,
+      "paragraph_id": 31,
+      "section_id": 12,
+      "text": "However, larger reaction times were found for the emotion task compared with both the age task (p < .001) and perceptual task (p < .001).",
+      "page_number": null
+    },
+    {
+      "text_id": 124,
+      "paragraph_id": 31,
+      "section_id": 12,
+      "text": "In the emotion task, faster responses were found toward faces paired with negative information.",
+      "page_number": null
+    },
+    {
+      "text_id": 125,
+      "paragraph_id": 31,
+      "section_id": 12,
+      "text": "For descriptive information, see Table 1.",
+      "page_number": null
+    },
+    {
+      "text_id": 126,
+      "paragraph_id": 35,
+      "section_id": 14,
+      "text": "With respect to the P1, there was no main effect of emotion, F(1, 39) = 0.16, p = .693, η p 2 = .004, but a main effect of task, F(2, 78) = 4.82, p = .011, η p 2 = .110.",
+      "page_number": null
+    },
+    {
+      "text_id": 127,
+      "paragraph_id": 35,
+      "section_id": 14,
+      "text": "Furthermore, the effect of channel-group laterality did not reach significance, F(1, 39) = 1.85, p = .182, η p 2 = .045.",
+      "page_number": null
+    },
+    {
+      "text_id": 128,
+      "paragraph_id": 35,
+      "section_id": 14,
+      "text": "Regarding the main effect of task, smaller P1 amplitudes were found in the emotion task compared with the perceptual task (p = .038) and the age task (p = .002); the latter two did not differ significantly in amplitude from each other (p = .674).",
+      "page_number": null
+    },
+    {
+      "text_id": 129,
+      "paragraph_id": 35,
+      "section_id": 14,
+      "text": "There was no interaction between emotion and task, F(2, 78) = 1.18, p = .312, η p 2 = .029, and further interactions did not reach significance either (Fs < 3.79, ps > .059).",
+      "page_number": null
+    },
+    {
+      "text_id": 130,
+      "paragraph_id": 37,
+      "section_id": 15,
+      "text": "For the N170, there was a large main effect of emotion, F(1, 39) = 16.12, p < .001, η p 2 = .292 (see Fig. 3), but no main effect of task, F(2, 78) = 0.81, p = .448, η p 2 = .020.",
+      "page_number": null
+    },
+    {
+      "text_id": 131,
+      "paragraph_id": 37,
+      "section_id": 15,
+      "text": "Moreover, the main effect of channel-group laterality reached significance, F(1, 39) = 8.50, p = .006, η p 2 = .179.",
+      "page_number": null
+    },
+    {
+      "text_id": 132,
+      "paragraph_id": 37,
+      "section_id": 15,
+      "text": "With respect to the main effects, faces paired with negative information elicited larger N170 amplitudes than those coupled with neutral information, and larger N170 Negative Neutral Negative -Neutral 100 200 300 Time (ms) 0 10 100 200 300 0.5 egat 1 100 200 300 0 10 100 200 300 0 10 100 200 300 0.5 1 0 00 200 300 0 10 100 200 300 -4 -3 -2 -1 1 2 3 4 -4 -3 -2 -1 1 2 3 4 -4 -3 -2 -1 1 2 3 4 0 10 100 200 300 -0.5 -0.5 -0.5 0.5 10 00 200 300 0 0 Perceptual Age Task Task Emotion 0 5 10 P1 Perceptual Age Emotion -6 -4 -2 0 2 N170 P1 (80-100 ms) and N170 (130-170 ms): Main Effects of Emotion Perceptual Task Age Task Emotion Task P1 µV µV µV N170 P1 N170 N170 P1 Negative Neutral 1 0 -1 1 0 -1 1 0 -1 Amplitude (µV) Amplitude (µV) Amplitude (µV) Amplitude (µV) amplitudes were recorded over the right compared with the left electrode cluster.",
+      "page_number": null
+    },
+    {
+      "text_id": 133,
+      "paragraph_id": 37,
+      "section_id": 15,
+      "text": "There was no significant interaction between emotion and task, F(2, 78) = 0.24, p = .784, η p 2 = .006, nor did any further interactions reach significance (Fs < 0.54, ps > .584).",
+      "page_number": null
+    },
+    {
+      "text_id": 134,
+      "paragraph_id": 39,
+      "section_id": 16,
+      "text": "Concerning the EPN, there was no main effect of emotion, F(1, 39) = 2.60, p = .115, η p 2 = .063, but the main effect of task reached significance, F(2, 78) = 8.15, p = .001, η p 2 = .173.",
+      "page_number": null
+    },
+    {
+      "text_id": 135,
+      "paragraph_id": 39,
+      "section_id": 16,
+      "text": "Moreover, no effect of channel-group laterality was identified, F(1, 39) < 0.01, p = .948, η p 2 < .001.",
+      "page_number": null
+    },
+    {
+      "text_id": 136,
+      "paragraph_id": 39,
+      "section_id": 16,
+      "text": "Smaller EPN amplitudes were recorded in the age task compared with the perceptual task (p = .002) and emotion task (p < .001).",
+      "page_number": null
+    },
+    {
+      "text_id": 137,
+      "paragraph_id": 39,
+      "section_id": 16,
+      "text": "The perceptual and emotion tasks did not differ significantly in amplitude (p = .801).",
+      "page_number": null
+    },
+    {
+      "text_id": 138,
+      "paragraph_id": 40,
+      "section_id": 16,
+      "text": "We observed a significant interaction between emotion and task, F(2, 78) = 3.45, p = .037, η p 2 = .081 (see Fig.",
+      "page_number": null
+    },
+    {
+      "text_id": 139,
+      "paragraph_id": 40,
+      "section_id": 16,
+      "text": "4).",
+      "page_number": null
+    },
+    {
+      "text_id": 140,
+      "paragraph_id": 40,
+      "section_id": 16,
+      "text": "When we resolved this interaction, results showed no significant differences between the perceptual and age tasks for differences between faces paired with negative compared with neutral information (p = .564).",
+      "page_number": null
+    },
+    {
+      "text_id": 141,
+      "paragraph_id": 40,
+      "section_id": 16,
+      "text": "In contrast, larger differentiation was found for the emotion task compared with both the age task (p = .027) and perceptual task (p = .039).",
+      "page_number": null
+    },
+    {
+      "text_id": 142,
+      "paragraph_id": 40,
+      "section_id": 16,
+      "text": "Moreover, a significant interaction of task and channel-group laterality was found, F(2, 78) = 6.70, p = .002, η p 2 = .147.",
+      "page_number": null
+    },
+    {
+      "text_id": 143,
+      "paragraph_id": 40,
+      "section_id": 16,
+      "text": "Here, analyses showed that the task differences were stronger over the left electrode cluster, F(2, 78) = 10.50, p < .001, η p 2 = .212, than over the right cluster, F(2, 78) = 5.51, p = .006, η p 2 = .124.",
+      "page_number": null
+    },
+    {
+      "text_id": 144,
+      "paragraph_id": 40,
+      "section_id": 16,
+      "text": "All further interactions remained insignificant (Fs < 3.29, ps > .077).",
+      "page_number": null
+    },
+    {
+      "text_id": 145,
+      "paragraph_id": 42,
+      "section_id": 17,
+      "text": "Regarding the LPP, the main effects of emotion, F(1, 39) = 20.34, p < .001, η p 2 = .343 (see Fig. 5), and of task reached significance, F(1.70, 66.28) = 6.52, p = .004, η p 2 = .143.",
+      "page_number": null
+    },
+    {
+      "text_id": 146,
+      "paragraph_id": 42,
+      "section_id": 17,
+      "text": "Faces associated with negative information elicited larger positivities than faces paired with neutral information.",
+      "page_number": null
+    },
+    {
+      "text_id": 147,
+      "paragraph_id": 42,
+      "section_id": 17,
+      "text": "Furthermore, smaller LPP amplitudes were found for the perceptual task compared with the age task (p = .048) and emotion task (p = .004), the latter two not differing significantly in amplitude (p = .051).",
+      "page_number": null
+    },
+    {
+      "text_id": 148,
+      "paragraph_id": 42,
+      "section_id": 17,
+      "text": "Importantly, we observed the predicted interaction between emotion and task, F(2, 78) = 6.29, p = .003, η p 2 = .139 (see Fig.",
+      "page_number": null
+    },
+    {
+      "text_id": 149,
+      "paragraph_id": 42,
+      "section_id": 17,
+      "text": "5).",
+      "page_number": null
+    },
+    {
+      "text_id": 150,
+      "paragraph_id": 42,
+      "section_id": 17,
+      "text": "When we resolved this interaction, results showed no significant differences for faces paired with negative and neutral information between the perceptual task and the age task (p = .831).",
+      "page_number": null
+    },
+    {
+      "text_id": 151,
+      "paragraph_id": 42,
+      "section_id": 17,
+      "text": "In contrast, a larger differentiation was found for the emotion task compared with both the age task (p = .008) and perceptual task (p = .001).",
+      "page_number": null
+    },
+    {
+      "text_id": 152,
+      "paragraph_id": 44,
+      "section_id": 18,
+      "text": "Because we observed reaction time differences between the tasks as well as interactions of emotion and task, we calculated ANCOVAs with reaction time as a covariate (see Table 2).",
+      "page_number": null
+    },
+    {
+      "text_id": 153,
+      "paragraph_id": 44,
+      "section_id": 18,
+      "text": "For the P1, the main effect of task disappeared when the analysis accounted for reaction time differences; however, N170 and LPP main effects of emotion, EPN and LPP main effects of task, and most importantly, EPN and LPP interaction effects of emotion and task remained significant.",
+      "page_number": null
+    },
+    {
+      "text_id": 154,
+      "paragraph_id": 46,
+      "section_id": 19,
+      "text": "We tested how feature-based attention to perceptual, face, or emotional information differentially influences evaluative-knowledge effects on early (P1, N170), midlatency (EPN), and late (LPP) ERP components.",
+      "page_number": null
+    },
+    {
+      "text_id": 155,
+      "paragraph_id": 46,
+      "section_id": 19,
+      "text": "Faces of supposed criminals were rated more negatively, arousing, and threatening than neutral faces.",
+      "page_number": null
+    },
+    {
+      "text_id": 156,
+      "paragraph_id": 46,
+      "section_id": 19,
+      "text": "During all tasks, accuracy was at ceiling, whereas for reaction times, faster responses toward faces of criminals were found only during the evaluative task.",
+      "page_number": null
+    },
+    {
+      "text_id": 157,
+      "paragraph_id": 46,
+      "section_id": 19,
+      "text": "Interestingly, we found a task-independent effect of negative evaluative knowledge on the N170 as well as interactions of emotion and task for the EPN and LPP, showing differentiation between faces with negative and neutral associations only when participants attended to the associated emotional information.",
+      "page_number": null
+    },
+    {
+      "text_id": 158,
+      "paragraph_id": 47,
+      "section_id": 19,
+      "text": "The P1 is hypothesized to be related to early stimulus detection and discrimination (e.g., Luck & Hillyard, 1994).",
+      "page_number": null
+    },
+    {
+      "text_id": 159,
+      "paragraph_id": 47,
+      "section_id": 19,
+      "text": "We expected no significant effects of evaluative emotional information, in line with the few studies examining P1 effects for different kinds of evaluative or context manipulations (e.g., Luo et al., 2016;Wieser et al., 2014).",
+      "page_number": null
+    },
+    {
+      "text_id": 160,
+      "paragraph_id": 47,
+      "section_id": 19,
+      "text": "This indicates that the mere evaluative information is not sufficient to increase P1 amplitudes for neutral expressions, in contrast to findings of studies that examined associated monetary gains (Hammerschmidt et al., 2017; but see Hammerschmidt et al., 2018).",
+      "page_number": null
+    },
+    {
+      "text_id": 161,
+      "paragraph_id": 47,
+      "section_id": 19,
+      "text": "C1 modulations have been observed even in studies associating monetary information with visual stimuli (Rossi et al., 2017) and studies in which participants were conditioned to associate faces with an electric shock (Rehbein et al., 2014).",
+      "page_number": null
+    },
+    {
+      "text_id": 162,
+      "paragraph_id": 47,
+      "section_id": 19,
+      "text": "Finally, we found a smaller P1 during the emotion task, which could indicate differences in tonic vigilance.",
+      "page_number": null
+    },
+    {
+      "text_id": 163,
+      "paragraph_id": 48,
+      "section_id": 19,
+      "text": "The N170, which follows the P1, is viewed as a structural encoding component related to configural processing, and its amplitude is increased for faces compared with objects (Eimer, 2011).",
+      "page_number": null
+    },
+    {
+      "text_id": 164,
+      "paragraph_id": 48,
+      "section_id": 19,
+      "text": "Here, we found a task-independent evaluative-information effect with negative biographical information increasing amplitudes for the presented faces.",
+      "page_number": null
+    },
+    {
+      "text_id": 165,
+      "paragraph_id": 48,
+      "section_id": 19,
+      "text": "Interestingly, N170 modulations are rarely examined in studies on evaluative person knowledge, but results are conflicting (Luo et al., 2016;Xu et al., 2016).",
+      "page_number": null
+    },
+    {
+      "text_id": 166,
+      "paragraph_id": 48,
+      "section_id": 19,
+      "text": "A critical factor in our results could be the small number of face identities.",
+      "page_number": null
+    },
+    {
+      "text_id": 167,
+      "paragraph_id": 48,
+      "section_id": 19,
+      "text": "Because we used two groups and presented all group members together, it might have been easy to distinguish between subsequently presented LPP (400-600 ms) Main Effects of Evaluative Information Perceptual Task Age Task Emotion Task Time (ms) Negative -Neutral Tim e -Neut N 200 400 600 1 2 3 4 00 60 200 400 600 200 400 600 200 400 600 200 400 600 200 400 600 0.5 -1 1 2 3 4 0.5 -1 1 2 3 4 0.5 00 60 200 4 0 Perceptual Age Task Emotion 0 2 4 6 8 Negative Neutral Amplitude (µV) Amplitude (µV) Amplitude (µV) Negative Neutral µV 1 0 -1 µV 1 0 -1 µV 1 0 -1 -1 Fig 5 Main effects of evaluative information on the late positive potential (LPP) in each of the three tasks (perceptual, age, and emotion).",
+      "page_number": null
+    },
+    {
+      "text_id": 168,
+      "paragraph_id": 48,
+      "section_id": 19,
+      "text": "Scalp topographies depict the differences between event-related potentials (ERPs) in response to faces associated with criminal (negative) and neutral backstories.",
+      "page_number": null
+    },
+    {
+      "text_id": 169,
+      "paragraph_id": 48,
+      "section_id": 19,
+      "text": "Black dots indicate positions of electrodes.",
+      "page_number": null
+    },
+    {
+      "text_id": 170,
+      "paragraph_id": 48,
+      "section_id": 19,
+      "text": "The top row of ERP waveforms shows the mean time course for highlighted sensors in the negative and neutral conditions.",
+      "page_number": null
+    },
+    {
+      "text_id": 171,
+      "paragraph_id": 48,
+      "section_id": 19,
+      "text": "The bottom row of ERP waveforms shows differences between means for the two emotion conditions; error bands show 95% bootstrapped confidence intervals.",
+      "page_number": null
+    },
+    {
+      "text_id": 172,
+      "paragraph_id": 48,
+      "section_id": 19,
+      "text": "The gray shaded areas in all waveform graphs highlight the range of the LPP.",
+      "page_number": null
+    },
+    {
+      "text_id": 173,
+      "paragraph_id": 48,
+      "section_id": 19,
+      "text": "The bar plot shows average amplitude across selected sensors in each combination of task and emotion condition.",
+      "page_number": null
+    },
+    {
+      "text_id": 174,
+      "paragraph_id": 48,
+      "section_id": 19,
+      "text": "Data bars show group means, and error bars depict 95% confidence intervals.",
+      "page_number": null
+    },
+    {
+      "text_id": 175,
+      "paragraph_id": 48,
+      "section_id": 19,
+      "text": "Semitransparent dots depict individual data.",
+      "page_number": null
+    },
+    {
+      "text_id": 176,
+      "paragraph_id": 49,
+      "section_id": 19,
+      "text": "faces and associate all face identities with their evaluative background.",
+      "page_number": null
+    },
+    {
+      "text_id": 177,
+      "paragraph_id": 49,
+      "section_id": 19,
+      "text": "This possibly enabled participants to discriminate configural features between putative criminal and neutral identities.",
+      "page_number": null
+    },
+    {
+      "text_id": 178,
+      "paragraph_id": 49,
+      "section_id": 19,
+      "text": "The task-independent N170 modulation indicates that this discriminatory process did not need attention to face or emotional features.",
+      "page_number": null
+    },
+    {
+      "text_id": 179,
+      "paragraph_id": 49,
+      "section_id": 19,
+      "text": "Building on this empirical finding, we found that the processing of configural information can be influenced by instructed evaluative knowledge, enabling an early sensory differentiation.",
+      "page_number": null
+    },
+    {
+      "text_id": 180,
+      "paragraph_id": 49,
+      "section_id": 19,
+      "text": "Adding to this idea, a recent study has shown increased N170 responses for neutral faces for which participants exhibit more negative stereotypes (Giménez-Fernández et al., 2020).",
+      "page_number": null
+    },
+    {
+      "text_id": 181,
+      "paragraph_id": 49,
+      "section_id": 19,
+      "text": "For the following EPN component, which has been examined more frequently, studies have also provided a mixed picture so far (e.g., Baum et al., 2020;Kissler & Strehlow, 2017;Luo et al., 2016;Suess et al., 2014).",
+      "page_number": null
+    },
+    {
+      "text_id": 182,
+      "paragraph_id": 49,
+      "section_id": 19,
+      "text": "We expected increasing EPN differences across tasks.",
+      "page_number": null
+    },
+    {
+      "text_id": 183,
+      "paragraph_id": 49,
+      "section_id": 19,
+      "text": "However, we observed an effect of negative biographical information only when attention was directed to the biographical background of a given face.",
+      "page_number": null
+    },
+    {
+      "text_id": 184,
+      "paragraph_id": 49,
+      "section_id": 19,
+      "text": "Thus, our findings conflict with those of studies showing increased EPN amplitudes for faces associated with negative person knowledge in tasks that do not require attention to the emotional information (Suess et al., 2014;Xu et al., 2016).",
+      "page_number": null
+    },
+    {
+      "text_id": 185,
+      "paragraph_id": 49,
+      "section_id": 19,
+      "text": "An explanation for this finding could be related to the short presentation time of the faces, which was done to avoid attention shifts to other facial features.",
+      "page_number": null
+    },
+    {
+      "text_id": 186,
+      "paragraph_id": 49,
+      "section_id": 19,
+      "text": "Further explanations for conflicting EPN findings could be related to the specific learning task used to acquire the evaluative biographical information (see the Supplemental Material at https://osf.io/abx27/), the limited number of identities, or the specific attention tasks.",
+      "page_number": null
+    },
+    {
+      "text_id": 187,
+      "paragraph_id": 49,
+      "section_id": 19,
+      "text": "It might be that in tasks, which require attending to a semantic face feature (e.g., see Suess et al., 2014), the associated emotional biographical information is more readily retrieved than in other tasks.",
+      "page_number": null
+    },
+    {
+      "text_id": 188,
+      "paragraph_id": 49,
+      "section_id": 19,
+      "text": "We believe that during the EPN stage, attentional selection mechanisms depend on both the emotional saliency of the given stimulus and available processing capacities (see Junghöfer et al., 2001;Schindler, Caldarone, et al., 2020).",
+      "page_number": null
+    },
+    {
+      "text_id": 189,
+      "paragraph_id": 49,
+      "section_id": 19,
+      "text": "Previous studies using emotional facial expressions (e.g., Rellecke et al., 2012;Schindler, Bruchmann, et al., 2020) have clearly shown that the EPN can be dissociated from both earlier stages (N170) and later stages (LPP; see below).",
+      "page_number": null
+    },
+    {
+      "text_id": 190,
+      "paragraph_id": 49,
+      "section_id": 19,
+      "text": "For example, in a similar paradigm, we showed increasing EPN amplitudes with increasing attention to relevant features of fearful faces, showing also an increased EPN during a genderdiscrimination task (Schindler, Bruchmann, et al., 2020).",
+      "page_number": null
+    },
+    {
+      "text_id": 191,
+      "paragraph_id": 49,
+      "section_id": 19,
+      "text": "In line with this, other studies showed significant EPN modulations by emotional expressions when participants discriminated face identity (Hammerschmidt et al., 2018) and even when participants performed perceptual-discrimination tasks (Itier & Neath-Tavares, 2017;Rellecke et al., 2012).",
+      "page_number": null
+    },
+    {
+      "text_id": 192,
+      "paragraph_id": 49,
+      "section_id": 19,
+      "text": "Thus, even though experimental effects on the EPN and LPP were highly similar in the present study, this does not imply that both components have similar functional roles.",
+      "page_number": null
+    },
+    {
+      "text_id": 193,
+      "paragraph_id": 49,
+      "section_id": 19,
+      "text": "In contrast to the intermediate stage associated with the EPN, the LPP indicates stimulus evaluation and controlled attention processes (e.g., see Hajcak et al., 2009;Schupp et al., 2006), and LPP effects are based on various sources, including evaluative, episodic, personal, and biographical information (see Schweinberger & Neumann, 2016).",
+      "page_number": null
+    },
+    {
+      "text_id": 194,
+      "paragraph_id": 49,
+      "section_id": 19,
+      "text": "The majority of studies that used evaluative-knowledge designs found late differential effects (Abdel Rahman, 2011;Baum et al., 2020;Kissler & Strehlow, 2017;Klein et al., 2015;Xu et al., 2016).",
+      "page_number": null
+    },
+    {
+      "text_id": 195,
+      "paragraph_id": 49,
+      "section_id": 19,
+      "text": "Regarding those studies with no significant LPP modulation (e.g., Luo et al., 2016), our data suggest that the attended feature matters much for a late differentiation, and elaborate differentiation does not occur inevitably but requires attention to the emotional information.",
+      "page_number": null
+    },
+    {
+      "text_id": 196,
+      "paragraph_id": 49,
+      "section_id": 19,
+      "text": "These findings are similar to those of studies that manipulated featurebased attention to threatening emotional expressions (Rellecke et al., 2012;Schindler, Bruchmann, et al., 2020) and suggest that at these late processing stages, topdown processes interact with the associated emotional significance of a face more generally.",
+      "page_number": null
+    },
+    {
+      "text_id": 197,
+      "paragraph_id": 51,
+      "section_id": 20,
+      "text": "To the best of our knowledge, this is the first EEG study that systematically manipulated attention to evaluative emotional person knowledge.",
+      "page_number": null
+    },
+    {
+      "text_id": 198,
+      "paragraph_id": 51,
+      "section_id": 20,
+      "text": "However, the stimulus presentation was very short, which possibly added to the clarity of our findings, and we used specific tasks to manipulate attention to perceptual, face, or emotional features.",
+      "page_number": null
+    },
+    {
+      "text_id": 199,
+      "paragraph_id": 51,
+      "section_id": 20,
+      "text": "Future studies are needed, using other tasks to generalize our findings (e.g., attention to gender, face, or nationality information).",
+      "page_number": null
+    },
+    {
+      "text_id": 200,
+      "paragraph_id": 51,
+      "section_id": 20,
+      "text": "Secondly, for cover-story purposes, the faces we used were all male, whereas the sample was predominantly women (n = 30 vs. n = 10 men), and effects could be more pronounced for female participants.",
+      "page_number": null
+    },
+    {
+      "text_id": 201,
+      "paragraph_id": 51,
+      "section_id": 20,
+      "text": "In this regard, future studies should also resolve how depicted face identity interacts with evaluative information (e.g., age, gender, ethnic background).",
+      "page_number": null
+    },
+    {
+      "text_id": 202,
+      "paragraph_id": 51,
+      "section_id": 20,
+      "text": "Third, other operationalizations of emotional face learning should be examined, including instructed threat or classic conditioning (e.g., Bublatzky et al., 2014;Rehbein et al., 2014;Schellhaas et al., 2020).",
+      "page_number": null
+    },
+    {
+      "text_id": 203,
+      "paragraph_id": 51,
+      "section_id": 20,
+      "text": "Lastly, we focused only on negative evaluative information because it is reported to be highly effective (see Bublatzky et al., 2020;Suess et al., 2014).",
+      "page_number": null
+    },
+    {
+      "text_id": 204,
+      "paragraph_id": 51,
+      "section_id": 20,
+      "text": "For future studies, it seems promising to include positive evaluative manipulations, for which studies have shown modulations starting with the P1 component (see Hammerschmidt et al., 2017;Schacht & Vrtic ˇka, 2018).",
+      "page_number": null
+    },
+    {
+      "text_id": 205,
+      "paragraph_id": 53,
+      "section_id": 21,
+      "text": "In summary, early (N170) effects of evaluative emotional knowledge are task independent and increased for arguably criminal identities.",
+      "page_number": null
+    },
+    {
+      "text_id": 206,
+      "paragraph_id": 53,
+      "section_id": 21,
+      "text": "In contrast, differential EPN and LPP effects depended on attention to the emotional background information.",
+      "page_number": null
+    },
+    {
+      "text_id": 207,
+      "paragraph_id": 53,
+      "section_id": 21,
+      "text": "These findings are vitally important for researchers who conduct ERP studies using evaluative information because they reveal a systematic pattern of emotional sensitivity for competing attention tasks.",
+      "page_number": null
+    },
+    {
+      "text_id": 208,
+      "paragraph_id": 55,
+      "section_id": 22,
+      "text": "Action Editor: Karen Rodrigue Editor: Patricia J Bauer",
+      "page_number": null
+    },
+    {
+      "text_id": 209,
+      "paragraph_id": 57,
+      "section_id": 23,
+      "text": "We thank Nele Johanna Bögemann for her corrections and all participants who contributed to this study.",
+      "page_number": null
+    },
+    {
+      "text_id": 210,
+      "paragraph_id": 57,
+      "section_id": 23,
+      "text": "Note 1.",
+      "page_number": null
+    },
+    {
+      "text_id": 211,
+      "paragraph_id": 57,
+      "section_id": 23,
+      "text": "For young men, we selected identities 025, 037, 049, 123, and for middle-age men, identities 058, 108, 178, and 179.",
+      "page_number": null
+    },
+    {
+      "text_id": 212,
+      "paragraph_id": 59,
+      "section_id": 24,
+      "text": "The author(s) declared that there were no conflicts of interest with respect to the authorship or the publication of this article.",
+      "page_number": null
+    },
+    {
+      "text_id": 213,
+      "paragraph_id": 61,
+      "section_id": 25,
+      "text": "All data have been made publicly available via OSF and can be accessed at https://osf.io/rzevn.",
+      "page_number": null
+    },
+    {
+      "text_id": 214,
+      "paragraph_id": 61,
+      "section_id": 25,
+      "text": "The study was preregistered at https://osf.io/erkdt.",
+      "page_number": null
+    },
+    {
+      "text_id": 215,
+      "paragraph_id": 61,
+      "section_id": 25,
+      "text": "This article has received the badges for Open Data and Preregistration.",
+      "page_number": null
+    },
+    {
+      "text_id": 216,
+      "paragraph_id": 61,
+      "section_id": 25,
+      "text": "More information about the Open Practices badges can be found at http://www.psychologicalscience.org/publica tions/badges.",
+      "page_number": null
+    },
+    {
+      "text_id": 217,
+      "paragraph_id": 63,
+      "section_id": 26,
+      "text": "S Schindler and M Bruchmann contributed equally to this study.",
+      "page_number": null
+    },
+    {
+      "text_id": 218,
+      "paragraph_id": 63,
+      "section_id": 26,
+      "text": "All the authors contributed to the study design.",
+      "page_number": null
+    },
+    {
+      "text_id": 219,
+      "paragraph_id": 63,
+      "section_id": 26,
+      "text": "R Moeck programmed the experiment.",
+      "page_number": null
+    },
+    {
+      "text_id": 220,
+      "paragraph_id": 63,
+      "section_id": 26,
+      "text": "S Schindler, C Krasowski, and M Bruchmann pilot-tested the experiment.",
+      "page_number": null
+    },
+    {
+      "text_id": 221,
+      "paragraph_id": 63,
+      "section_id": 26,
+      "text": "C Krasowski tested participants.",
+      "page_number": null
+    },
+    {
+      "text_id": 222,
+      "paragraph_id": 63,
+      "section_id": 26,
+      "text": "S Schindler and M Bruchmann analyzed the data.",
+      "page_number": null
+    },
+    {
+      "text_id": 223,
+      "paragraph_id": 63,
+      "section_id": 26,
+      "text": "S Schindler and M Bruchmann wrote the manuscript under the supervision of T Straube.",
+      "page_number": null
+    },
+    {
+      "text_id": 224,
+      "paragraph_id": 63,
+      "section_id": 26,
+      "text": "All the authors approved the final manuscript for submission.",
+      "page_number": null
+    },
+    {
+      "text_id": 225,
+      "paragraph_id": 64,
+      "section_id": 27,
+      "text": "Fig 1 Schematic overview of (a) the experimental flow and (b) trial presentation in all tasks.",
+      "page_number": null
+    },
+    {
+      "text_id": 226,
+      "paragraph_id": 64,
+      "section_id": 27,
+      "text": "After electroencephalogram (EEG) preparation was complete (a), the experiment started with one of the three attention tasks, counterbalanced across participants.",
+      "page_number": null
+    },
+    {
+      "text_id": 227,
+      "paragraph_id": 64,
+      "section_id": 27,
+      "text": "Each task required them to perform a binary forced-choice decision, in which they had to discriminate line orientation, age, or emotional information.",
+      "page_number": null
+    },
+    {
+      "text_id": 228,
+      "paragraph_id": 64,
+      "section_id": 27,
+      "text": "During each trial (b), the backstory was presented in the form of newspaper articles, after which the faces of all four group members were presented.",
+      "page_number": null
+    },
+    {
+      "text_id": 229,
+      "paragraph_id": 64,
+      "section_id": 27,
+      "text": "The story and members of the criminal group were presented first, followed by the story and members of the firefighters.",
+      "page_number": null
+    },
+    {
+      "text_id": 230,
+      "paragraph_id": 64,
+      "section_id": 27,
+      "text": "Next, participants were informed about the discriminative feature.",
+      "page_number": null
+    },
+    {
+      "text_id": 231,
+      "paragraph_id": 64,
+      "section_id": 27,
+      "text": "During each task, the trial structure was identical.",
+      "page_number": null
+    },
+    {
+      "text_id": 232,
+      "paragraph_id": 64,
+      "section_id": 27,
+      "text": "Note that stimulus displays in the illustration are not drawn to scale, and the depicted face identity was not used in the experiment but is shown only for display purposes.",
+      "page_number": null
+    },
+    {
+      "text_id": 233,
+      "paragraph_id": 65,
+      "section_id": 28,
+      "text": "Fig 2 Ratings and behavioral results in the three attention tasks.",
+      "page_number": null
+    },
+    {
+      "text_id": 234,
+      "paragraph_id": 65,
+      "section_id": 28,
+      "text": "Average ratings of the (a) valence, (b) arousal, and (c) perceived threat of the stimuli are shown for each emotion condition.",
+      "page_number": null
+    },
+    {
+      "text_id": 235,
+      "paragraph_id": 65,
+      "section_id": 28,
+      "text": "Average (d) reaction time (RT) and (e) hit rate (proportion of correct responses) for each emotion condition are shown separately for the three different tasks.",
+      "page_number": null
+    },
+    {
+      "text_id": 236,
+      "paragraph_id": 65,
+      "section_id": 28,
+      "text": "Data bars show group means, and error bars depict 95% confidence intervals.",
+      "page_number": null
+    },
+    {
+      "text_id": 237,
+      "paragraph_id": 65,
+      "section_id": 28,
+      "text": "Semitransparent dots depict individual data.",
+      "page_number": null
+    },
+    {
+      "text_id": 238,
+      "paragraph_id": 66,
+      "section_id": 29,
+      "text": "Fig 3 Main effects of emotion on the P1 and N170, respectively, in each of the three tasks (perceptual, age, and emotion).",
+      "page_number": null
+    },
+    {
+      "text_id": 239,
+      "paragraph_id": 66,
+      "section_id": 29,
+      "text": "Scalp topographies depict the differences between event-related potentials (ERPs) in response to faces associated with criminal (negative) and neutral backstories.",
+      "page_number": null
+    },
+    {
+      "text_id": 240,
+      "paragraph_id": 66,
+      "section_id": 29,
+      "text": "Black dots indicate positions of electrodes.",
+      "page_number": null
+    },
+    {
+      "text_id": 241,
+      "paragraph_id": 66,
+      "section_id": 29,
+      "text": "The top row of ERP waveforms shows the mean time course for highlighted sensors in the negative and neutral conditions.",
+      "page_number": null
+    },
+    {
+      "text_id": 242,
+      "paragraph_id": 66,
+      "section_id": 29,
+      "text": "The bottom row of ERP waveforms shows differences between means for the two emotion conditions; error bands show 95% bootstrapped confidence intervals.",
+      "page_number": null
+    },
+    {
+      "text_id": 243,
+      "paragraph_id": 66,
+      "section_id": 29,
+      "text": "The gray shaded areas in all waveform graphs highlight the range of the P1 and N170, respectively.",
+      "page_number": null
+    },
+    {
+      "text_id": 244,
+      "paragraph_id": 66,
+      "section_id": 29,
+      "text": "The bar plots show average amplitude across selected sensors in each combination of task and emotion condition.",
+      "page_number": null
+    },
+    {
+      "text_id": 245,
+      "paragraph_id": 66,
+      "section_id": 29,
+      "text": "Data bars show group means, and error bars depict 95% confidence intervals.",
+      "page_number": null
+    },
+    {
+      "text_id": 246,
+      "paragraph_id": 66,
+      "section_id": 29,
+      "text": "Semitransparent dots depict individual data.",
+      "page_number": null
+    },
+    {
+      "text_id": 247,
+      "paragraph_id": 67,
+      "section_id": 30,
+      "text": "Fig 4 Main effects of emotion on the early posterior negativity (EPN) in each of the three tasks (perceptual, age, and emotion).",
+      "page_number": null
+    },
+    {
+      "text_id": 248,
+      "paragraph_id": 67,
+      "section_id": 30,
+      "text": "Scalp topographies depict the differences between event-related potentials (ERPs) in response to faces associated with criminal (negative) and neutral backstories.",
+      "page_number": null
+    },
+    {
+      "text_id": 249,
+      "paragraph_id": 67,
+      "section_id": 30,
+      "text": "Black dots indicate positions of electrodes.",
+      "page_number": null
+    },
+    {
+      "text_id": 250,
+      "paragraph_id": 67,
+      "section_id": 30,
+      "text": "The top row of ERP waveforms shows the mean time course for highlighted sensors in the negative and neutral conditions.",
+      "page_number": null
+    },
+    {
+      "text_id": 251,
+      "paragraph_id": 67,
+      "section_id": 30,
+      "text": "The bottom row of ERP waveforms shows differences between means for the two emotion conditions; error bands show 95% bootstrapped confidence intervals.",
+      "page_number": null
+    },
+    {
+      "text_id": 252,
+      "paragraph_id": 67,
+      "section_id": 30,
+      "text": "The gray shaded areas in all waveform graphs highlight the range of the EPN.",
+      "page_number": null
+    },
+    {
+      "text_id": 253,
+      "paragraph_id": 67,
+      "section_id": 30,
+      "text": "The bar plot shows average amplitude across selected sensors in each combination of task and emotion condition.",
+      "page_number": null
+    },
+    {
+      "text_id": 254,
+      "paragraph_id": 67,
+      "section_id": 30,
+      "text": "Data bars show group means, and error bars depict 95% confidence intervals.",
+      "page_number": null
+    },
+    {
+      "text_id": 255,
+      "paragraph_id": 67,
+      "section_id": 30,
+      "text": "Semitransparent dots depict individual data.",
+      "page_number": null
+    },
+    {
+      "text_id": 256,
+      "paragraph_id": 68,
+      "section_id": 31,
+      "text": "Means for Behavioral Measures Across the Three Attention Tasks",
+      "page_number": null
+    },
+    {
+      "text_id": 257,
+      "paragraph_id": 69,
+      "section_id": 32,
+      "text": "Results From Repeated Measures Analyses on the Four Event-Related Potential Components, Both With and Without Reaction Time (RT) as a Covariate",
+      "page_number": null
+    },
+    {
+      "text_id": 258,
+      "paragraph_id": 70,
+      "section_id": 33,
+      "text": "Abdel Rahman, R. (2011). Facing good and evil: Early brain signatures of affective biographical knowledge in face rec- ognition. Emotion, 11(6), 1397-1405. https://doi.org/10 .1037/a0024717",
+      "page_number": null
+    },
+    {
+      "text_id": 259,
+      "paragraph_id": 71,
+      "section_id": 33,
+      "text": "Baum, J., Rabovsky, M., Rose, S. B., & Abdel Rahman, R. (2020). Clear judgments based on unclear evidence: Person evaluation is strongly influenced by untrustworthy gossip. Emotion, 20(2), 248-260. https://doi.org/10.1037/ emo0000545",
+      "page_number": null
+    },
+    {
+      "text_id": 260,
+      "paragraph_id": 72,
+      "section_id": 33,
+      "text": "BESA. (2014). BESA Research (Version 6.0) [Computer soft- ware]. https://www.besa.de/products/besa-research/ besa-research-overview/",
+      "page_number": null
+    },
+    {
+      "text_id": 261,
+      "paragraph_id": 73,
+      "section_id": 33,
+      "text": "Bublatzky, F., Gerdes, A. B. M., & Alpers, G. W. (2014). The per- sistence of socially instructed threat: Two threat-of-shock studies. Psychophysiology, 51(10), 1005-1014. https:// doi.org/10.1111/psyp.12251",
+      "page_number": null
+    },
+    {
+      "text_id": 262,
+      "paragraph_id": 74,
+      "section_id": 33,
+      "text": "Bublatzky, F., Guerra, P., & Alpers, G. W. (2020). Watch out, he's dangerous! Electrocortical indicators of selec- tive visual attention to allegedly threatening persons. Cortex, 131, 164-178. https://doi.org/10.1016/j.cortex .2020.07.009",
+      "page_number": null
+    },
+    {
+      "text_id": 263,
+      "paragraph_id": 75,
+      "section_id": 33,
+      "text": "Cohen, J. (1988). Statistical power analysis for the behavioral sciences. Routledge.",
+      "page_number": null
+    },
+    {
+      "text_id": 264,
+      "paragraph_id": 76,
+      "section_id": 33,
+      "text": "Ebner, N. C., Riediger, M., & Lindenberger, U. (2010). FACES-A database of facial expressions in young, mid- dle-aged, and older women and men: Development and validation. Behavior Research Methods, 42(1), 351-362. https://doi.org/10.3758/BRM.42.1.351",
+      "page_number": null
+    },
+    {
+      "text_id": 265,
+      "paragraph_id": 77,
+      "section_id": 33,
+      "text": "Eimer, M. (2011). The face-sensitive N170 component of the event-related brain potential. In G. Rhodes, A. Calder, M. Johnson, & J. V. Haxby (Eds.), The Oxford hand- book of face perception (pp. 329-344). Oxford University Press. https://doi.org/10.1093/oxfordhb/9780199559053 .013.0017",
+      "page_number": null
+    },
+    {
+      "text_id": 266,
+      "paragraph_id": 78,
+      "section_id": 33,
+      "text": "Faul, F., Erdfelder, E., Buchner, A., & Lang, A.-G. (2009). Statis- tical power analyses using G*Power 3.1: Tests for correla- tion and regression analyses. Behavior Research Methods, 41(4), 1149-1160.",
+      "page_number": null
+    },
+    {
+      "text_id": 267,
+      "paragraph_id": 79,
+      "section_id": 33,
+      "text": "Frühholz, S., Jellinghaus, A., & Herrmann, M. (2011). Time course of implicit processing and explicit processing of emotional faces and emotional words. Biological Psychology, 87(2), 265-274. https://doi.org/10.1016/j .biopsycho.2011.03.008",
+      "page_number": null
+    },
+    {
+      "text_id": 268,
+      "paragraph_id": 80,
+      "section_id": 33,
+      "text": "Giménez-Fernández, T., Kessel, D., Fernández-Folgueiras, U., Fondevila, S., Méndez-Bértolo, C., Aceves, N., García- Rubio, M. J., & Carretié, L. (2020). Prejudice drives exogenous attention to outgroups. Social Cognitive and Affective Neuroscience, 15(6), 615-624. https://doi .org/10.1093/scan/nsaa087",
+      "page_number": null
+    },
+    {
+      "text_id": 269,
+      "paragraph_id": 81,
+      "section_id": 33,
+      "text": "Hajcak, G., Dunning, J. P., & Foti, D. (2009). Motivated and controlled attention to emotion: Time-course of the late positive potential. Clinical Neurophysiology, 120(3), 505- 510. https://doi.org/10.1016/j.clinph.2008.11.028",
+      "page_number": null
+    },
+    {
+      "text_id": 270,
+      "paragraph_id": 82,
+      "section_id": 33,
+      "text": "Hammerschmidt, W., Kagan, I., Kulke, L., & Schacht, A. (2018). Implicit reward associations impact face process- ing: Time-resolved evidence from event-related brain potentials and pupil dilations. NeuroImage, 179, 557-569. https://doi.org/10.1016/j.neuroimage.2018.06.055",
+      "page_number": null
+    },
+    {
+      "text_id": 271,
+      "paragraph_id": 83,
+      "section_id": 33,
+      "text": "Hammerschmidt, W., Sennhenn-Reulen, H., & Schacht, A. (2017). Associated motivational salience impacts early sen- sory processing of human faces. NeuroImage, 156, 466- 474. https://doi.org/10.1016/j.neuroimage.2017.04.032",
+      "page_number": null
+    },
+    {
+      "text_id": 272,
+      "paragraph_id": 84,
+      "section_id": 33,
+      "text": "Hautzinger, M., Keller, F., & Kühner, C. (2009). BDI-II. Beck- Depressions-Inventar. Revision: Vol. 2. Auflage [BDI-II. Beck Depression Inventory Version 2]. Pearson Assessment.",
+      "page_number": null
+    },
+    {
+      "text_id": 273,
+      "paragraph_id": 85,
+      "section_id": 33,
+      "text": "Itier, R. J., & Neath-Tavares, K. N. (2017). Effects of task demands on the early neural processing of fearful and happy facial expressions. Brain Research, 1663, 38-50. https://doi.org/10.1016/j.brainres.2017.03.013",
+      "page_number": null
+    },
+    {
+      "text_id": 274,
+      "paragraph_id": 86,
+      "section_id": 33,
+      "text": "Junghöfer, M., Bradley, M. M., Elbert, T. R., & Lang, P. J. (2001). Fleeting images: A new look at early emotion discrimination. Psychophysiology, 38, 175-178.",
+      "page_number": null
+    },
+    {
+      "text_id": 275,
+      "paragraph_id": 87,
+      "section_id": 33,
+      "text": "Kissler, J., & Strehlow, J. (2017). Something always sticks? How emotional language modulates neural processes involved in face encoding and recognition memory. Poznan Studies in Contemporary Linguistics, 53(1), 63- 93. https://doi.org/10.1515/psicl-2017-0004",
+      "page_number": null
+    },
+    {
+      "text_id": 276,
+      "paragraph_id": 88,
+      "section_id": 33,
+      "text": "Klein, F., Iffland, B., Schindler, S., Wabnitz, P., & Neuner, F. (2015). This person is saying bad things about you: The influence of physically and socially threatening context information on the processing of inherently neutral faces. Cognitive, Affective, & Behavioral Neuroscience, 15(4), 736-748. https://doi.org/10.3758/s13415-015-0361-8",
+      "page_number": null
+    },
+    {
+      "text_id": 277,
+      "paragraph_id": 89,
+      "section_id": 33,
+      "text": "Körner, A., Geyer, M., Roth, M., Drapeau, M., Schmutzer, G., Albani, C., Schumann, S., & Brähler, E. (2008). Persön- lichkeitsdiagnostik mit dem NEO-Fünf-Faktoren-Inventar: Die 30-Item-Kurzversion (NEO-FFI-30) [Personality assess- ment with the NEO-Five-Factor Inventory: The 30-Item- Short-Version (NEO-FFI-30)].",
+      "page_number": null
+    },
+    {
+      "text_id": 278,
+      "paragraph_id": 90,
+      "section_id": 33,
+      "text": "PPmP-Psychotherapie Psychosomatik Medizinische Psychologie, 58(6), 238-245.",
+      "page_number": null
+    },
+    {
+      "text_id": 279,
+      "paragraph_id": 91,
+      "section_id": 33,
+      "text": "Luck, S. J., & Gaspelin, N. (2017). How to get statistically significant effects in any ERP experiment (and why you shouldn't). Psychophysiology, 54(1), 146-157.",
+      "page_number": null
+    },
+    {
+      "text_id": 280,
+      "paragraph_id": 92,
+      "section_id": 33,
+      "text": "Luck, S. J., & Hillyard, S. A. (1994). Electrophysiological cor- relates of feature analysis during visual search. Psycho- physiology, 31(3), 291-308. https://doi.org/10.1111/j .1469-8986.1994.tb02218.x",
+      "page_number": null
+    },
+    {
+      "text_id": 281,
+      "paragraph_id": 93,
+      "section_id": 33,
+      "text": "Luo, Q. L., Wang, H. L., Dzhelyova, M., Huang, P., & Mo, L. (2016). Effect of affective personality information on face processing: Evidence from ERPs. Frontiers in Psychology, 7, Article 810. https://doi.org/10.3389/fpsyg.2016.00810",
+      "page_number": null
+    },
+    {
+      "text_id": 282,
+      "paragraph_id": 94,
+      "section_id": 33,
+      "text": "McCrackin, S. D., & Itier, R. J. (2018). Is it about me? Time- course of self-relevance and valence effects on the percep- tion of neutral faces with direct and averted gaze. Biological Psychology, 135, 47-64. https://doi.org/10.1016/j.biopsy cho.2018.03.003",
+      "page_number": null
+    },
+    {
+      "text_id": 283,
+      "paragraph_id": 95,
+      "section_id": 33,
+      "text": "Neurobehavioral Systems. (2019). Presentation (Version 21.1) [Computer software]. www.neurobs.com",
+      "page_number": null
+    },
+    {
+      "text_id": 284,
+      "paragraph_id": 96,
+      "section_id": 33,
+      "text": "Peyk, P., De Cesarei, A., & Junghöfer, M. (2011). ElectroMagnetoEncephalography software: Overview and integration with other EEG/MEG toolboxes. Computational Intelligence and Neuroscience, 2011, Article 861705. https://doi.org/10.1155/2011/861705",
+      "page_number": null
+    },
+    {
+      "text_id": 285,
+      "paragraph_id": 97,
+      "section_id": 33,
+      "text": "Rehbein, M. A., Steinberg, C., Wessing, I., Pastor, M. C., Zwitserlood, P., Keuper, K., & Junghöfer, M. (2014). Rapid plasticity in the prefrontal cortex during affective associa- tive learning. PLOS ONE, 9(10), Article e110720. https:// doi.org/10.1371/journal.pone.0110720",
+      "page_number": null
+    },
+    {
+      "text_id": 286,
+      "paragraph_id": 98,
+      "section_id": 33,
+      "text": "Rellecke, J., Sommer, W., & Schacht, A. (2012). Does process- ing of emotional facial expressions depend on intention? Time-resolved evidence from event-related brain poten- tials. Biological Psychology, 90(1), 23-32.",
+      "page_number": null
+    },
+    {
+      "text_id": 287,
+      "paragraph_id": 99,
+      "section_id": 33,
+      "text": "Rossi, V., Vanlessen, N., Bayer, M., Grass, A., Pourtois, G., & Schacht, A. (2017). Motivational salience modulates early visual cortex responses across task sets. Journal of Cognitive Neuroscience, 29(6), 968-979.",
+      "page_number": null
+    },
+    {
+      "text_id": 288,
+      "paragraph_id": 100,
+      "section_id": 33,
+      "text": "Schacht, A., & Sommer, W. (2009). Emotions in word and face processing: Early and late cortical responses. Brain and Cognition, 69, 538-550.",
+      "page_number": null
+    },
+    {
+      "text_id": 289,
+      "paragraph_id": 101,
+      "section_id": 33,
+      "text": "Schacht, A., & Vrtic ˇka, P. (2018). Spatiotemporal pattern of appraising social and emotional relevance: Evidence from event-related brain potentials. Cognitive, Affective, & Behavioral Neuroscience, 18(6), 1172-1187. https://doi .org/10.3758/s13415-018-0629-x",
+      "page_number": null
+    },
+    {
+      "text_id": 290,
+      "paragraph_id": 102,
+      "section_id": 33,
+      "text": "Schellhaas, S., Arnold, N., Schmahl, C., & Bublatzky, F. (2020). Contextual source information modulates neural face pro- cessing in the absence of conscious recognition: A threat- of-shock study. Neurobiology of Learning and Memory, 174, Article 107280. https://doi.org/10.1016/j.nlm.2020.107280",
+      "page_number": null
+    },
+    {
+      "text_id": 291,
+      "paragraph_id": 103,
+      "section_id": 33,
+      "text": "Schindler, S., Bruchmann, M., Steinweg, A.-L., Moeck, R., & Straube, T. (2020). Attentional conditions differentially affect early, intermediate and late neural responses to fearful and neutral faces. Social Cognitive and Affective Neuroscience, 15(7), 765-774. https://doi.org/10.1093/ scan/nsaa098",
+      "page_number": null
+    },
+    {
+      "text_id": 292,
+      "paragraph_id": 104,
+      "section_id": 33,
+      "text": "Schindler, S., Caldarone, F., Bruchmann, M., Moeck, R., & Straube, T. (2020). Time-dependent effects of percep- tual load on processing fearful and neutral faces. Neuro- psychologia, 146, Article 107529. https://doi.org/10.1016/j .neuropsychologia.2020.107529",
+      "page_number": null
+    },
+    {
+      "text_id": 293,
+      "paragraph_id": 105,
+      "section_id": 33,
+      "text": "Schupp, H. T., Flaisch, T., Stockburger, J., & Junghöfer, M. (2006). Emotion and attention: Event-related brain potential studies. Progress in Brain Research, 156, 31-51. https://doi.org/10.1016/S0079-6123(06)56002-9",
+      "page_number": null
+    },
+    {
+      "text_id": 294,
+      "paragraph_id": 106,
+      "section_id": 33,
+      "text": "Schupp, H. T., Junghöfer, M., Weike, A. I., & Hamm, A. O. (2004). The selective processing of briefly presented affec- tive pictures: An ERP analysis. Psychophysiology, 41, 441- 449. https://doi.org/10.1111/j.1469-8986.2004.00174.x",
+      "page_number": null
+    },
+    {
+      "text_id": 295,
+      "paragraph_id": 107,
+      "section_id": 33,
+      "text": "Schweinberger, S. R., & Neumann, M. F. (2016). Repetition effects in human ERPs to faces. Cortex, 80(Suppl. C), 141-153. https://doi.org/10.1016/j.cortex.2015.11.001",
+      "page_number": null
+    },
+    {
+      "text_id": 296,
+      "paragraph_id": 108,
+      "section_id": 33,
+      "text": "Spielberger, C. D., Sydeman, S. J., Owen, A. E., & Marsh, B. J. (1999). Measuring anxiety and anger with the State- Trait Anxiety Inventory (STAI) and the State-Trait Anger Expression Inventory (STAXI). In M. E. Maruish (Ed.), The use of psychological testing for treatment planning and outcomes assessment (2nd ed., pp. 993-1021). Erlbaum.",
+      "page_number": null
+    },
+    {
+      "text_id": 297,
+      "paragraph_id": 109,
+      "section_id": 33,
+      "text": "Suess, F., Rabovsky, M., & Abdel Rahman, R. (2014). Per- ceiving emotions in neutral faces: Expression processing is biased by affective person knowledge. Social Cognitive and Affective Neuroscience, 10(4), 531-536.",
+      "page_number": null
+    },
+    {
+      "text_id": 298,
+      "paragraph_id": 110,
+      "section_id": 33,
+      "text": "Wieser, M. J., & Brosch, T. (2012). Faces in context: A review and systematization of contextual influences on affective face processing. Frontiers in Psychology, 3, Article 471. https://doi.org/10.3389/fpsyg.2012.00471",
+      "page_number": null
+    },
+    {
+      "text_id": 299,
+      "paragraph_id": 111,
+      "section_id": 33,
+      "text": "Wieser, M. J., Gerdes, A. B. M., Büngel, I., Schwarz, K. A., Mühlberger, A., & Pauli, P. (2014). Not so harmless any- more: How context impacts the perception and elec- trocortical processing of neutral faces. NeuroImage, 92, 74-82. https://doi.org/10.1016/j.neuroimage.2014.01.022",
+      "page_number": null
+    },
+    {
+      "text_id": 300,
+      "paragraph_id": 112,
+      "section_id": 33,
+      "text": "Xu, M., Li, Z., Diao, L., Fan, L., & Yang, D. (2016). Contextual valence and sociality jointly influence the early and later stages of neutral face processing. Frontiers in Psychology, 7, Article 1258. https://doi.org/10.3389/fpsyg.2016.01258",
+      "page_number": null
+    }
+  ],
+  "section": [
+    {
+      "section_id": 0,
+      "header": "Abstract",
+      "parent_section_id": null,
+      "section_type": "abstract",
+      "classification_score": null
+    },
+    {
+      "section_id": 1,
+      "header": "[div-01]",
+      "parent_section_id": null,
+      "section_type": "intro",
+      "classification_score": null
+    },
+    {
+      "section_id": 2,
+      "header": "Statement of Relevance",
+      "parent_section_id": null,
+      "section_type": "intro",
+      "classification_score": null
+    },
+    {
+      "section_id": 4,
+      "header": "Participants",
+      "parent_section_id": null,
+      "section_type": "method",
+      "classification_score": null
+    },
+    {
+      "section_id": 5,
+      "header": "Stimuli",
+      "parent_section_id": null,
+      "section_type": "method",
+      "classification_score": null
+    },
+    {
+      "section_id": 6,
+      "header": "Procedure",
+      "parent_section_id": null,
+      "section_type": "method",
+      "classification_score": null
+    },
+    {
+      "section_id": 7,
+      "header": "Electroencephalogram (EEG) recording and preprocessing",
+      "parent_section_id": null,
+      "section_type": "method",
+      "classification_score": null
+    },
+    {
+      "section_id": 8,
+      "header": "Data analyses",
+      "parent_section_id": null,
+      "section_type": "method",
+      "classification_score": null
+    },
+    {
+      "section_id": 10,
+      "header": "Manipulation check",
+      "parent_section_id": null,
+      "section_type": "results",
+      "classification_score": null
+    },
+    {
+      "section_id": 11,
+      "header": "Hit rate.",
+      "parent_section_id": null,
+      "section_type": "results",
+      "classification_score": null
+    },
+    {
+      "section_id": 12,
+      "header": "Reaction time.",
+      "parent_section_id": null,
+      "section_type": "results",
+      "classification_score": null
+    },
+    {
+      "section_id": 14,
+      "header": "P1.",
+      "parent_section_id": null,
+      "section_type": "results",
+      "classification_score": null
+    },
+    {
+      "section_id": 15,
+      "header": "N170.",
+      "parent_section_id": null,
+      "section_type": "results",
+      "classification_score": null
+    },
+    {
+      "section_id": 16,
+      "header": "EPN.",
+      "parent_section_id": null,
+      "section_type": "results",
+      "classification_score": null
+    },
+    {
+      "section_id": 17,
+      "header": "LPP.",
+      "parent_section_id": null,
+      "section_type": "results",
+      "classification_score": null
+    },
+    {
+      "section_id": 18,
+      "header": "Control analyses: ANCOVAs with reaction time as a covariate",
+      "parent_section_id": null,
+      "section_type": "results",
+      "classification_score": null
+    },
+    {
+      "section_id": 19,
+      "header": "Discussion",
+      "parent_section_id": null,
+      "section_type": "discussion",
+      "classification_score": null
+    },
+    {
+      "section_id": 20,
+      "header": "Constraints on generality and future directions",
+      "parent_section_id": null,
+      "section_type": "discussion",
+      "classification_score": null
+    },
+    {
+      "section_id": 21,
+      "header": "Conclusion",
+      "parent_section_id": null,
+      "section_type": "discussion",
+      "classification_score": null
+    },
+    {
+      "section_id": 22,
+      "header": "Transparency",
+      "parent_section_id": null,
+      "section_type": "discussion",
+      "classification_score": null
+    },
+    {
+      "section_id": 23,
+      "header": "Acknowledgments",
+      "parent_section_id": null,
+      "section_type": "acknowledgement",
+      "classification_score": null
+    },
+    {
+      "section_id": 24,
+      "header": "Declaration of Conflicting Interests",
+      "parent_section_id": null,
+      "section_type": "conflict",
+      "classification_score": null
+    },
+    {
+      "section_id": 25,
+      "header": "Open Practices",
+      "parent_section_id": null,
+      "section_type": "conflict",
+      "classification_score": null
+    },
+    {
+      "section_id": 26,
+      "header": "Author Contributions",
+      "parent_section_id": null,
+      "section_type": "contribution",
+      "classification_score": null
+    },
+    {
+      "section_id": 27,
+      "header": "Fig 1",
+      "parent_section_id": null,
+      "section_type": "figure",
+      "classification_score": null
+    },
+    {
+      "section_id": 28,
+      "header": "Fig 2",
+      "parent_section_id": null,
+      "section_type": "figure",
+      "classification_score": null
+    },
+    {
+      "section_id": 29,
+      "header": "Fig 3",
+      "parent_section_id": null,
+      "section_type": "figure",
+      "classification_score": null
+    },
+    {
+      "section_id": 30,
+      "header": "Fig 4Fig 5",
+      "parent_section_id": null,
+      "section_type": "figure",
+      "classification_score": null
+    },
+    {
+      "section_id": 31,
+      "header": "Table 1 .",
+      "parent_section_id": null,
+      "section_type": "table",
+      "classification_score": null
+    },
+    {
+      "section_id": 32,
+      "header": "Table 2 .",
+      "parent_section_id": null,
+      "section_type": "table",
+      "classification_score": null
+    },
+    {
+      "section_id": 33,
+      "header": "References",
+      "parent_section_id": null,
+      "section_type": "references",
+      "classification_score": null
+    }
+  ],
+  "url": [
+    {
+      "href": "https://osf.io/erkdt",
+      "link_text": null,
+      "text_id": 32
+    },
+    {
+      "href": "https://www.biosemi.com/download.htm",
+      "link_text": null,
+      "text_id": 80
+    },
+    {
+      "href": "https://osf.io/rzevn",
+      "link_text": null,
+      "text_id": 109
+    },
+    {
+      "href": "https://osf.io/erkdt",
+      "link_text": null,
+      "text_id": 109
+    },
+    {
+      "href": "https://osf.io/abx27",
+      "link_text": null,
+      "text_id": 186
+    },
+    {
+      "href": "https://osf.io/rzevn",
+      "link_text": null,
+      "text_id": 213
+    },
+    {
+      "href": "https://osf.io/erkdt",
+      "link_text": null,
+      "text_id": 214
+    },
+    {
+      "href": "http://www.psychologicalscience.org/publica",
+      "link_text": null,
+      "text_id": 216
+    }
+  ],
+  "bib": [
+    {
+      "bib_type": "article",
+      "doi": "10.1037/a0024717",
+      "title": "Facing good and evil: Early brain signatures of affective biographical knowledge in face recognition",
+      "authors": "Abdel Rahman, R",
+      "editors": "",
+      "publisher": "",
+      "year": 2011,
+      "volume": "11",
+      "issue": "6",
+      "first_page": "1397",
+      "last_page": "1405",
+      "container": "Emotion",
+      "bib_id": 0,
+      "year_suffix": "",
+      "text_id": 258
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1037/emo0000545",
+      "title": "Clear judgments based on unclear evidence: Person evaluation is strongly influenced by untrustworthy gossip",
+      "authors": "Baum, J; Rabovsky, M; Rose, S B; Abdel Rahman, R",
+      "editors": "",
+      "publisher": "",
+      "year": 2020,
+      "volume": "20",
+      "issue": "2",
+      "first_page": "545",
+      "last_page": null,
+      "container": "Emotion",
+      "bib_id": 1,
+      "year_suffix": "",
+      "text_id": 259
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "",
+      "authors": "Besa, ",
+      "editors": "",
+      "publisher": "",
+      "year": 2014,
+      "volume": "",
+      "issue": "",
+      "first_page": null,
+      "last_page": null,
+      "container": "",
+      "bib_id": 2,
+      "year_suffix": "",
+      "text_id": 260
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1111/psyp.12251",
+      "title": "The persistence of socially instructed threat: Two threat-of-shock studies",
+      "authors": "Bublatzky, F; Gerdes, A B M; Alpers, G W",
+      "editors": "",
+      "publisher": "",
+      "year": 2014,
+      "volume": "51",
+      "issue": "10",
+      "first_page": "1005",
+      "last_page": "1014",
+      "container": "Psychophysiology",
+      "bib_id": 3,
+      "year_suffix": "",
+      "text_id": 261
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1016/j.cortex.2020.07.009",
+      "title": "Watch out, he's dangerous! Electrocortical indicators of selective visual attention to allegedly threatening persons",
+      "authors": "Bublatzky, F; Guerra, P; Alpers, G W",
+      "editors": "",
+      "publisher": "",
+      "year": 2020,
+      "volume": "131",
+      "issue": "",
+      "first_page": "164",
+      "last_page": "178",
+      "container": "Cortex",
+      "bib_id": 4,
+      "year_suffix": "",
+      "text_id": 262
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "",
+      "authors": "Cohen, J",
+      "editors": "",
+      "publisher": "Routledge",
+      "year": 1988,
+      "volume": "",
+      "issue": "",
+      "first_page": null,
+      "last_page": null,
+      "container": "",
+      "bib_id": 5,
+      "year_suffix": "",
+      "text_id": 263
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.3758/BRM.42.1.351",
+      "title": "FACES-A database of facial expressions in young, middle-aged, and older women and men: Development and validation",
+      "authors": "Ebner, N C; Riediger, M; Lindenberger, U",
+      "editors": "",
+      "publisher": "",
+      "year": 2010,
+      "volume": "42",
+      "issue": "1",
+      "first_page": "351",
+      "last_page": "362",
+      "container": "Behavior Research Methods",
+      "bib_id": 6,
+      "year_suffix": "",
+      "text_id": 264
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1093/oxfordhb/9780199559053.013.0017",
+      "title": "The face-sensitive N170 component of the event-related brain potential",
+      "authors": "Eimer, M",
+      "editors": "Rhodes, G; Calder, A; Johnson, M; Haxby, J V",
+      "publisher": "Oxford University Press",
+      "year": 2011,
+      "volume": "",
+      "issue": "",
+      "first_page": "329",
+      "last_page": "344",
+      "container": "",
+      "bib_id": 7,
+      "year_suffix": "",
+      "text_id": 265
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "Statistical power analyses using G*Power 3.1: Tests for correlation and regression analyses",
+      "authors": "Faul, F; Erdfelder, E; Buchner, A; Lang, A.-G",
+      "editors": "",
+      "publisher": "",
+      "year": 2009,
+      "volume": "41",
+      "issue": "4",
+      "first_page": "1149",
+      "last_page": "1160",
+      "container": "Behavior Research Methods",
+      "bib_id": 8,
+      "year_suffix": "",
+      "text_id": 266
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1016/j.biopsycho.2011.03.008",
+      "title": "Time course of implicit processing and explicit processing of emotional faces and emotional words",
+      "authors": "Frühholz, S; Jellinghaus, A; Herrmann, M",
+      "editors": "",
+      "publisher": "",
+      "year": 2011,
+      "volume": "87",
+      "issue": "2",
+      "first_page": "265",
+      "last_page": "274",
+      "container": "Biological Psychology",
+      "bib_id": 9,
+      "year_suffix": "",
+      "text_id": 267
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1093/scan/nsaa087",
+      "title": "Prejudice drives exogenous attention to outgroups",
+      "authors": "Giménez-Fernández, T; Kessel, D; Fernández-Folgueiras, U; Fondevila, S; Méndez-Bértolo, C; Aceves, N; García-Rubio, M J; Carretié, L",
+      "editors": "",
+      "publisher": "",
+      "year": 2020,
+      "volume": "15",
+      "issue": "6",
+      "first_page": "615",
+      "last_page": "624",
+      "container": "Social Cognitive and Affective Neuroscience",
+      "bib_id": 10,
+      "year_suffix": "",
+      "text_id": 268
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1016/j.clinph.2008.11.028",
+      "title": "Motivated and controlled attention to emotion: Time-course of the late positive potential",
+      "authors": "Hajcak, G; Dunning, J P; Foti, D",
+      "editors": "",
+      "publisher": "",
+      "year": 2009,
+      "volume": "120",
+      "issue": "3",
+      "first_page": "505",
+      "last_page": "510",
+      "container": "Clinical Neurophysiology",
+      "bib_id": 11,
+      "year_suffix": "",
+      "text_id": 269
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1016/j.neuroimage.2018.06.055",
+      "title": "Implicit reward associations impact face processing: Time-resolved evidence from event-related brain potentials and pupil dilations",
+      "authors": "Hammerschmidt, W; Kagan, I; Kulke, L; Schacht, A",
+      "editors": "",
+      "publisher": "",
+      "year": 2018,
+      "volume": "179",
+      "issue": "",
+      "first_page": "557",
+      "last_page": "569",
+      "container": "NeuroImage",
+      "bib_id": 12,
+      "year_suffix": "",
+      "text_id": 270
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1016/j.neuroimage.2017.04.032",
+      "title": "Associated motivational salience impacts early sensory processing of human faces",
+      "authors": "Hammerschmidt, W; Sennhenn-Reulen, H; Schacht, A",
+      "editors": "",
+      "publisher": "",
+      "year": 2017,
+      "volume": "156",
+      "issue": "",
+      "first_page": "466",
+      "last_page": "474",
+      "container": "NeuroImage",
+      "bib_id": 13,
+      "year_suffix": "",
+      "text_id": 271
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "Auflage [BDI-II. Beck Depression Inventory Version 2]",
+      "authors": "Hautzinger, M; Keller, F; Kühner, C",
+      "editors": "",
+      "publisher": "Pearson Assessment",
+      "year": 2009,
+      "volume": "2",
+      "issue": "",
+      "first_page": null,
+      "last_page": null,
+      "container": "",
+      "bib_id": 14,
+      "year_suffix": "",
+      "text_id": 272
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1016/j.brainres.2017.03.013",
+      "title": "Effects of task demands on the early neural processing of fearful and happy facial expressions",
+      "authors": "Itier, R J; Neath-Tavares, K N",
+      "editors": "",
+      "publisher": "",
+      "year": 2017,
+      "volume": "1663",
+      "issue": "",
+      "first_page": "38",
+      "last_page": "50",
+      "container": "Brain Research",
+      "bib_id": 15,
+      "year_suffix": "",
+      "text_id": 273
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "Fleeting images: A new look at early emotion discrimination",
+      "authors": "Junghöfer, M; Bradley, M M; Elbert, T R; Lang, P J",
+      "editors": "",
+      "publisher": "",
+      "year": 2001,
+      "volume": "38",
+      "issue": "",
+      "first_page": "175",
+      "last_page": "178",
+      "container": "Psychophysiology",
+      "bib_id": 16,
+      "year_suffix": "",
+      "text_id": 274
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1515/psicl-2017-0004",
+      "title": "",
+      "authors": "Kissler, J; Strehlow, J",
+      "editors": "",
+      "publisher": "",
+      "year": 2017,
+      "volume": "53",
+      "issue": "",
+      "first_page": "63",
+      "last_page": "93",
+      "container": "",
+      "bib_id": 17,
+      "year_suffix": "",
+      "text_id": 275
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.3758/s13415-015-0361-8",
+      "title": "This person is saying bad things about you: The influence of physically and socially threatening context information on the processing of inherently neutral faces",
+      "authors": "Klein, F; Iffland, B; Schindler, S; Wabnitz, P; Neuner, F",
+      "editors": "",
+      "publisher": "",
+      "year": 2015,
+      "volume": "15",
+      "issue": "4",
+      "first_page": "736",
+      "last_page": "748",
+      "container": "Cognitive, Affective, & Behavioral Neuroscience",
+      "bib_id": 18,
+      "year_suffix": "",
+      "text_id": 276
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "",
+      "authors": "Körner, A; Geyer, M; Roth, M; Drapeau, M; Schmutzer, G; Albani, C; Schumann, S; Brähler, E",
+      "editors": "",
+      "publisher": "",
+      "year": 2008,
+      "volume": "",
+      "issue": "",
+      "first_page": null,
+      "last_page": null,
+      "container": "",
+      "bib_id": 19,
+      "year_suffix": "",
+      "text_id": 277
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "",
+      "authors": "",
+      "editors": "",
+      "publisher": "",
+      "year": null,
+      "volume": "58",
+      "issue": "6",
+      "first_page": "238",
+      "last_page": "245",
+      "container": "PPmP-Psychotherapie Psychosomatik Medizinische Psychologie",
+      "bib_id": 20,
+      "year_suffix": null,
+      "text_id": 278
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "How to get statistically significant effects in any ERP experiment (and why you shouldn't)",
+      "authors": "Luck, S J; Gaspelin, N",
+      "editors": "",
+      "publisher": "",
+      "year": 2017,
+      "volume": "54",
+      "issue": "1",
+      "first_page": "146",
+      "last_page": "157",
+      "container": "Psychophysiology",
+      "bib_id": 21,
+      "year_suffix": "",
+      "text_id": 279
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1111/j.1469-8986.1994.tb02218.x",
+      "title": "Electrophysiological correlates of feature analysis during visual search",
+      "authors": "Luck, S J; Hillyard, S A",
+      "editors": "",
+      "publisher": "",
+      "year": 1994,
+      "volume": "31",
+      "issue": "3",
+      "first_page": "291",
+      "last_page": "308",
+      "container": "Psychophysiology",
+      "bib_id": 22,
+      "year_suffix": "",
+      "text_id": 280
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.3389/fpsyg.2016.00810",
+      "title": "Effect of affective personality information on face processing: Evidence from ERPs",
+      "authors": "Luo, Q L; Wang, H L; Dzhelyova, M; Huang, P; Mo, L",
+      "editors": "",
+      "publisher": "",
+      "year": 2016,
+      "volume": "7",
+      "issue": "",
+      "first_page": null,
+      "last_page": null,
+      "container": "Frontiers in Psychology",
+      "bib_id": 23,
+      "year_suffix": "",
+      "text_id": 281
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1016/j.biopsycho.2018.03.003",
+      "title": "Is it about me? Timecourse of self-relevance and valence effects on the perception of neutral faces with direct and averted gaze",
+      "authors": "Mccrackin, S D; Itier, R J",
+      "editors": "",
+      "publisher": "",
+      "year": 2018,
+      "volume": "135",
+      "issue": "",
+      "first_page": "47",
+      "last_page": "64",
+      "container": "Biological Psychology",
+      "bib_id": 24,
+      "year_suffix": "",
+      "text_id": 282
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "",
+      "authors": "Systems, Neurobehavioral",
+      "editors": "",
+      "publisher": "",
+      "year": 2019,
+      "volume": "",
+      "issue": "",
+      "first_page": null,
+      "last_page": null,
+      "container": "",
+      "bib_id": 25,
+      "year_suffix": "",
+      "text_id": 283
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1155/2011/861705",
+      "title": "ElectroMagnetoEncephalography software: Overview and integration with other EEG/MEG toolboxes",
+      "authors": "Peyk, P; De Cesarei, A; Junghöfer, M",
+      "editors": "",
+      "publisher": "",
+      "year": 2011,
+      "volume": "",
+      "issue": "",
+      "first_page": "861705",
+      "last_page": null,
+      "container": "Computational Intelligence and Neuroscience",
+      "bib_id": 26,
+      "year_suffix": "",
+      "text_id": 284
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1371/journal.pone.0110720",
+      "title": "Rapid plasticity in the prefrontal cortex during affective associative learning",
+      "authors": "Rehbein, M A; Steinberg, C; Wessing, I; Pastor, M C; Zwitserlood, P; Keuper, K; Junghöfer, M",
+      "editors": "",
+      "publisher": "",
+      "year": 2014,
+      "volume": "9",
+      "issue": "10",
+      "first_page": null,
+      "last_page": null,
+      "container": "PLOS ONE",
+      "bib_id": 27,
+      "year_suffix": "",
+      "text_id": 285
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "Does processing of emotional facial expressions depend on intention? Time-resolved evidence from event-related brain potentials",
+      "authors": "Rellecke, J; Sommer, W; Schacht, A",
+      "editors": "",
+      "publisher": "",
+      "year": 2012,
+      "volume": "90",
+      "issue": "1",
+      "first_page": "23",
+      "last_page": "32",
+      "container": "Biological Psychology",
+      "bib_id": 28,
+      "year_suffix": "",
+      "text_id": 286
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "Motivational salience modulates early visual cortex responses across task sets",
+      "authors": "Rossi, V; Vanlessen, N; Bayer, M; Grass, A; Pourtois, G; Schacht, A",
+      "editors": "",
+      "publisher": "",
+      "year": 2017,
+      "volume": "29",
+      "issue": "6",
+      "first_page": "968",
+      "last_page": "979",
+      "container": "Journal of Cognitive Neuroscience",
+      "bib_id": 29,
+      "year_suffix": "",
+      "text_id": 287
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "Emotions in word and face processing: Early and late cortical responses",
+      "authors": "Schacht, A; Sommer, W",
+      "editors": "",
+      "publisher": "",
+      "year": 2009,
+      "volume": "69",
+      "issue": "",
+      "first_page": "538",
+      "last_page": "550",
+      "container": "Brain and Cognition",
+      "bib_id": 30,
+      "year_suffix": "",
+      "text_id": 288
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.3758/s13415-018-0629-x",
+      "title": "Spatiotemporal pattern of appraising social and emotional relevance: Evidence from event-related brain potentials",
+      "authors": "Schacht, A; Vrtic ˇka, P",
+      "editors": "",
+      "publisher": "",
+      "year": 2018,
+      "volume": "18",
+      "issue": "6",
+      "first_page": "1172",
+      "last_page": "1187",
+      "container": "Cognitive, Affective, & Behavioral Neuroscience",
+      "bib_id": 31,
+      "year_suffix": "",
+      "text_id": 289
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1016/j.nlm.2020.107280",
+      "title": "Contextual source information modulates neural face processing in the absence of conscious recognition: A threatof-shock study",
+      "authors": "Schellhaas, S; Arnold, N; Schmahl, C; Bublatzky, F",
+      "editors": "",
+      "publisher": "",
+      "year": 2020,
+      "volume": "174",
+      "issue": "",
+      "first_page": null,
+      "last_page": null,
+      "container": "Neurobiology of Learning and Memory",
+      "bib_id": 32,
+      "year_suffix": "",
+      "text_id": 290
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1093/scan/nsaa098",
+      "title": "Attentional conditions differentially affect early, intermediate and late neural responses to fearful and neutral faces",
+      "authors": "Schindler, S; Bruchmann, M; Steinweg, A.-L; Moeck, R; Straube, T",
+      "editors": "",
+      "publisher": "",
+      "year": 2020,
+      "volume": "15",
+      "issue": "7",
+      "first_page": "765",
+      "last_page": "774",
+      "container": "Social Cognitive and Affective Neuroscience",
+      "bib_id": 33,
+      "year_suffix": "",
+      "text_id": 291
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1016/j.neuropsychologia.2020.107529",
+      "title": "Time-dependent effects of perceptual load on processing fearful and neutral faces",
+      "authors": "Schindler, S; Caldarone, F; Bruchmann, M; Moeck, R; Straube, T",
+      "editors": "",
+      "publisher": "",
+      "year": 2020,
+      "volume": "",
+      "issue": "",
+      "first_page": "146",
+      "last_page": "107529",
+      "container": "Neuropsychologia",
+      "bib_id": 34,
+      "year_suffix": "",
+      "text_id": 292
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1016/S0079-6123(06)56002-9",
+      "title": "Emotion and attention: Event-related brain potential studies",
+      "authors": "Schupp, H T; Flaisch, T; Stockburger, J; Junghöfer, M",
+      "editors": "",
+      "publisher": "",
+      "year": 2006,
+      "volume": "156",
+      "issue": "",
+      "first_page": "31",
+      "last_page": "51",
+      "container": "Progress in Brain Research",
+      "bib_id": 35,
+      "year_suffix": "",
+      "text_id": 293
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1111/j.1469-8986.2004.00174.x",
+      "title": "The selective processing of briefly presented affective pictures: An ERP analysis",
+      "authors": "Schupp, H T; Junghöfer, M; Weike, A I; Hamm, A O",
+      "editors": "",
+      "publisher": "",
+      "year": 2004,
+      "volume": "41",
+      "issue": "",
+      "first_page": "441",
+      "last_page": "449",
+      "container": "Psychophysiology",
+      "bib_id": 36,
+      "year_suffix": "",
+      "text_id": 294
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1016/j.cortex.2015.11.001",
+      "title": "Repetition effects in human ERPs to faces",
+      "authors": "Schweinberger, S R; Neumann, M F",
+      "editors": "",
+      "publisher": "",
+      "year": 2016,
+      "volume": "80",
+      "issue": "",
+      "first_page": "141",
+      "last_page": "153",
+      "container": "Cortex",
+      "bib_id": 37,
+      "year_suffix": "",
+      "text_id": 295
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "",
+      "authors": "Spielberger, C D; Sydeman, S J; Owen, A E; Marsh, B J",
+      "editors": "Maruish, M E",
+      "publisher": "Erlbaum",
+      "year": 1999,
+      "volume": "",
+      "issue": "",
+      "first_page": "993",
+      "last_page": "1021",
+      "container": "",
+      "bib_id": 38,
+      "year_suffix": "",
+      "text_id": 296
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "Perceiving emotions in neutral faces: Expression processing is biased by affective person knowledge",
+      "authors": "Suess, F; Rabovsky, M; Abdel Rahman, R",
+      "editors": "",
+      "publisher": "",
+      "year": 2014,
+      "volume": "10",
+      "issue": "4",
+      "first_page": "531",
+      "last_page": "536",
+      "container": "Social Cognitive and Affective Neuroscience",
+      "bib_id": 39,
+      "year_suffix": "",
+      "text_id": 297
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.3389/fpsyg.2012.00471",
+      "title": "Faces in context: A review and systematization of contextual influences on affective face processing",
+      "authors": "Wieser, M J; Brosch, T",
+      "editors": "",
+      "publisher": "",
+      "year": 2012,
+      "volume": "3",
+      "issue": "",
+      "first_page": "471",
+      "last_page": null,
+      "container": "Frontiers in Psychology",
+      "bib_id": 40,
+      "year_suffix": "",
+      "text_id": 298
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1016/j.neuroimage.2014.01.022",
+      "title": "Not so harmless anymore: How context impacts the perception and electrocortical processing of neutral faces",
+      "authors": "Wieser, M J; Gerdes, A B M; Büngel, I; Schwarz, K A; Mühlberger, A; Pauli, P",
+      "editors": "",
+      "publisher": "",
+      "year": 2014,
+      "volume": "92",
+      "issue": "",
+      "first_page": "74",
+      "last_page": "82",
+      "container": "NeuroImage",
+      "bib_id": 41,
+      "year_suffix": "",
+      "text_id": 299
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.3389/fpsyg.2016.01258",
+      "title": "Contextual valence and sociality jointly influence the early and later stages of neutral face processing",
+      "authors": "Xu, M; Li, Z; Diao, L; Fan, L; Yang, D",
+      "editors": "",
+      "publisher": "",
+      "year": 2016,
+      "volume": "7",
+      "issue": "",
+      "first_page": null,
+      "last_page": null,
+      "container": "Frontiers in Psychology",
+      "bib_id": 42,
+      "year_suffix": "",
+      "text_id": 300
+    }
+  ],
+  "xref": [
+    {
+      "xref_id": 0,
+      "xref_type": "bib",
+      "contents": "Rahman, 2011;",
+      "text_id": 12
+    },
+    {
+      "xref_id": 0,
+      "xref_type": "bib",
+      "contents": "Rahman, 2011)",
+      "text_id": 21
+    },
+    {
+      "xref_id": 0,
+      "xref_type": "bib",
+      "contents": "Rahman, 2011)",
+      "text_id": 25
+    },
+    {
+      "xref_id": 0,
+      "xref_type": "bib",
+      "contents": "Rahman, 2011)",
+      "text_id": 27
+    },
+    {
+      "xref_id": 0,
+      "xref_type": "bib",
+      "contents": "(Abdel Rahman, 2011;",
+      "text_id": 21
+    },
+    {
+      "xref_id": 0,
+      "xref_type": "bib",
+      "contents": "(Abdel Rahman, 2011;",
+      "text_id": 25
+    },
+    {
+      "xref_id": 0,
+      "xref_type": "bib",
+      "contents": "(Abdel Rahman, 2011;",
+      "text_id": 27
+    },
+    {
+      "xref_id": 0,
+      "xref_type": "bib",
+      "contents": "(Abdel Rahman, 2011;",
+      "text_id": 194
+    },
+    {
+      "xref_id": 1,
+      "xref_type": "bib",
+      "contents": "Baum et al., 2020;",
+      "text_id": 12
+    },
+    {
+      "xref_id": 1,
+      "xref_type": "bib",
+      "contents": "(Baum et al., 2020;",
+      "text_id": 21
+    },
+    {
+      "xref_id": 1,
+      "xref_type": "bib",
+      "contents": "(Baum et al., 2020;",
+      "text_id": 26
+    },
+    {
+      "xref_id": 1,
+      "xref_type": "bib",
+      "contents": "(Baum et al., 2020;",
+      "text_id": 27
+    },
+    {
+      "xref_id": 1,
+      "xref_type": "bib",
+      "contents": "Baum et al., 2020;",
+      "text_id": 21
+    },
+    {
+      "xref_id": 1,
+      "xref_type": "bib",
+      "contents": "Baum et al., 2020;",
+      "text_id": 26
+    },
+    {
+      "xref_id": 1,
+      "xref_type": "bib",
+      "contents": "Baum et al., 2020;",
+      "text_id": 27
+    },
+    {
+      "xref_id": 1,
+      "xref_type": "bib",
+      "contents": "Baum et al., 2020;",
+      "text_id": 180
+    },
+    {
+      "xref_id": 1,
+      "xref_type": "bib",
+      "contents": "Baum et al., 2020;",
+      "text_id": 181
+    },
+    {
+      "xref_id": 1,
+      "xref_type": "bib",
+      "contents": "Baum et al., 2020;",
+      "text_id": 188
+    },
+    {
+      "xref_id": 1,
+      "xref_type": "bib",
+      "contents": "Baum et al., 2020;",
+      "text_id": 191
+    },
+    {
+      "xref_id": 1,
+      "xref_type": "bib",
+      "contents": "Baum et al., 2020;",
+      "text_id": 193
+    },
+    {
+      "xref_id": 1,
+      "xref_type": "bib",
+      "contents": "Baum et al., 2020;",
+      "text_id": 194
+    },
+    {
+      "xref_id": 3,
+      "xref_type": "bib",
+      "contents": "(Bublatzky et al., 2014)",
+      "text_id": 9
+    },
+    {
+      "xref_id": 3,
+      "xref_type": "bib",
+      "contents": "(Bublatzky et al., 2014)",
+      "text_id": 10
+    },
+    {
+      "xref_id": 3,
+      "xref_type": "bib",
+      "contents": "Bublatzky et al., 2014;",
+      "text_id": 202
+    },
+    {
+      "xref_id": 3,
+      "xref_type": "bib",
+      "contents": "Bublatzky et al., 2014;",
+      "text_id": 203
+    },
+    {
+      "xref_id": 3,
+      "xref_type": "bib",
+      "contents": "Bublatzky et al., 2014;",
+      "text_id": 204
+    },
+    {
+      "xref_id": 4,
+      "xref_type": "bib",
+      "contents": "Bublatzky et al., 2020;",
+      "text_id": 203
+    },
+    {
+      "xref_id": 5,
+      "xref_type": "bib",
+      "contents": "(Cohen, 1988)",
+      "text_id": 97
+    },
+    {
+      "xref_id": 6,
+      "xref_type": "bib",
+      "contents": "(Ebner et al., 2010)",
+      "text_id": 50
+    },
+    {
+      "xref_id": 7,
+      "xref_type": "bib",
+      "contents": "(Eimer, 2011)",
+      "text_id": 15
+    },
+    {
+      "xref_id": 7,
+      "xref_type": "bib",
+      "contents": "(Eimer, 2011)",
+      "text_id": 163
+    },
+    {
+      "xref_id": 8,
+      "xref_type": "bib",
+      "contents": "Faul et al., 2009)",
+      "text_id": 46
+    },
+    {
+      "xref_id": 9,
+      "xref_type": "bib",
+      "contents": "Frühholz et al., 2011;",
+      "text_id": 17
+    },
+    {
+      "xref_id": 10,
+      "xref_type": "bib",
+      "contents": "(Giménez-Fernández et al., 2020)",
+      "text_id": 180
+    },
+    {
+      "xref_id": 11,
+      "xref_type": "bib",
+      "contents": "Hajcak et al., 2009;",
+      "text_id": 18
+    },
+    {
+      "xref_id": 11,
+      "xref_type": "bib",
+      "contents": "Hajcak et al., 2009;",
+      "text_id": 193
+    },
+    {
+      "xref_id": 12,
+      "xref_type": "bib",
+      "contents": "Hammerschmidt et al., 2018;",
+      "text_id": 17
+    },
+    {
+      "xref_id": 12,
+      "xref_type": "bib",
+      "contents": "Hammerschmidt et al., 2018)",
+      "text_id": 160
+    },
+    {
+      "xref_id": 12,
+      "xref_type": "bib",
+      "contents": "(Hammerschmidt et al., 2018)",
+      "text_id": 191
+    },
+    {
+      "xref_id": 13,
+      "xref_type": "bib",
+      "contents": "(Hammerschmidt et al., 2017",
+      "text_id": 160
+    },
+    {
+      "xref_id": 13,
+      "xref_type": "bib",
+      "contents": "Hammerschmidt et al., 2017;",
+      "text_id": 204
+    },
+    {
+      "xref_id": 14,
+      "xref_type": "bib",
+      "contents": "(Hautzinger et al., 2009;",
+      "text_id": 79
+    },
+    {
+      "xref_id": 15,
+      "xref_type": "bib",
+      "contents": "Itier & Neath-Tavares, 2017;",
+      "text_id": 17
+    },
+    {
+      "xref_id": 15,
+      "xref_type": "bib",
+      "contents": "(Itier & Neath-Tavares, 2017;",
+      "text_id": 191
+    },
+    {
+      "xref_id": 16,
+      "xref_type": "bib",
+      "contents": "( Junghöfer et al., 2001)",
+      "text_id": 17
+    },
+    {
+      "xref_id": 16,
+      "xref_type": "bib",
+      "contents": "Junghöfer et al., 2001;",
+      "text_id": 188
+    },
+    {
+      "xref_id": 17,
+      "xref_type": "bib",
+      "contents": "Kissler & Strehlow, 2017)",
+      "text_id": 21
+    },
+    {
+      "xref_id": 17,
+      "xref_type": "bib",
+      "contents": "Kissler & Strehlow, 2017)",
+      "text_id": 26
+    },
+    {
+      "xref_id": 17,
+      "xref_type": "bib",
+      "contents": "Kissler & Strehlow, 2017)",
+      "text_id": 27
+    },
+    {
+      "xref_id": 17,
+      "xref_type": "bib",
+      "contents": "Kissler & Strehlow, 2017;",
+      "text_id": 21
+    },
+    {
+      "xref_id": 17,
+      "xref_type": "bib",
+      "contents": "Kissler & Strehlow, 2017;",
+      "text_id": 26
+    },
+    {
+      "xref_id": 17,
+      "xref_type": "bib",
+      "contents": "Kissler & Strehlow, 2017;",
+      "text_id": 27
+    },
+    {
+      "xref_id": 17,
+      "xref_type": "bib",
+      "contents": "Kissler & Strehlow, 2017;",
+      "text_id": 181
+    },
+    {
+      "xref_id": 17,
+      "xref_type": "bib",
+      "contents": "Kissler & Strehlow, 2017;",
+      "text_id": 194
+    },
+    {
+      "xref_id": 18,
+      "xref_type": "bib",
+      "contents": "Klein et al., 2015;",
+      "text_id": 194
+    },
+    {
+      "xref_id": 19,
+      "xref_type": "bib",
+      "contents": "(Körner et al., 2008)",
+      "text_id": 79
+    },
+    {
+      "xref_id": 21,
+      "xref_type": "bib",
+      "contents": "(Luck & Gaspelin, 2017)",
+      "text_id": 106
+    },
+    {
+      "xref_id": 22,
+      "xref_type": "bib",
+      "contents": "Luck & Hillyard, 1994)",
+      "text_id": 14
+    },
+    {
+      "xref_id": 22,
+      "xref_type": "bib",
+      "contents": "Luck & Hillyard, 1994)",
+      "text_id": 158
+    },
+    {
+      "xref_id": 23,
+      "xref_type": "bib",
+      "contents": "(Luo et al., 2016)",
+      "text_id": 21
+    },
+    {
+      "xref_id": 23,
+      "xref_type": "bib",
+      "contents": "(Luo et al., 2016)",
+      "text_id": 22
+    },
+    {
+      "xref_id": 23,
+      "xref_type": "bib",
+      "contents": "(Luo et al., 2016)",
+      "text_id": 23
+    },
+    {
+      "xref_id": 23,
+      "xref_type": "bib",
+      "contents": "(Luo et al., 2016)",
+      "text_id": 25
+    },
+    {
+      "xref_id": 23,
+      "xref_type": "bib",
+      "contents": "(Luo et al., 2016)",
+      "text_id": 27
+    },
+    {
+      "xref_id": 23,
+      "xref_type": "bib",
+      "contents": "(Luo et al., 2016;",
+      "text_id": 21
+    },
+    {
+      "xref_id": 23,
+      "xref_type": "bib",
+      "contents": "(Luo et al., 2016;",
+      "text_id": 22
+    },
+    {
+      "xref_id": 23,
+      "xref_type": "bib",
+      "contents": "(Luo et al., 2016;",
+      "text_id": 23
+    },
+    {
+      "xref_id": 23,
+      "xref_type": "bib",
+      "contents": "(Luo et al., 2016;",
+      "text_id": 25
+    },
+    {
+      "xref_id": 23,
+      "xref_type": "bib",
+      "contents": "(Luo et al., 2016;",
+      "text_id": 27
+    },
+    {
+      "xref_id": 23,
+      "xref_type": "bib",
+      "contents": "Luo et al., 2016;",
+      "text_id": 21
+    },
+    {
+      "xref_id": 23,
+      "xref_type": "bib",
+      "contents": "Luo et al., 2016;",
+      "text_id": 22
+    },
+    {
+      "xref_id": 23,
+      "xref_type": "bib",
+      "contents": "Luo et al., 2016;",
+      "text_id": 23
+    },
+    {
+      "xref_id": 23,
+      "xref_type": "bib",
+      "contents": "Luo et al., 2016;",
+      "text_id": 25
+    },
+    {
+      "xref_id": 23,
+      "xref_type": "bib",
+      "contents": "Luo et al., 2016;",
+      "text_id": 27
+    },
+    {
+      "xref_id": 23,
+      "xref_type": "bib",
+      "contents": "Luo et al., 2016)",
+      "text_id": 21
+    },
+    {
+      "xref_id": 23,
+      "xref_type": "bib",
+      "contents": "Luo et al., 2016)",
+      "text_id": 22
+    },
+    {
+      "xref_id": 23,
+      "xref_type": "bib",
+      "contents": "Luo et al., 2016)",
+      "text_id": 23
+    },
+    {
+      "xref_id": 23,
+      "xref_type": "bib",
+      "contents": "Luo et al., 2016)",
+      "text_id": 25
+    },
+    {
+      "xref_id": 23,
+      "xref_type": "bib",
+      "contents": "Luo et al., 2016)",
+      "text_id": 27
+    },
+    {
+      "xref_id": 23,
+      "xref_type": "bib",
+      "contents": "Luo et al., 2016;",
+      "text_id": 159
+    },
+    {
+      "xref_id": 23,
+      "xref_type": "bib",
+      "contents": "(Luo et al., 2016;",
+      "text_id": 165
+    },
+    {
+      "xref_id": 23,
+      "xref_type": "bib",
+      "contents": "Luo et al., 2016;",
+      "text_id": 181
+    },
+    {
+      "xref_id": 23,
+      "xref_type": "bib",
+      "contents": "Luo et al., 2016;",
+      "text_id": 195
+    },
+    {
+      "xref_id": 23,
+      "xref_type": "bib",
+      "contents": "Luo et al., 2016)",
+      "text_id": 181
+    },
+    {
+      "xref_id": 23,
+      "xref_type": "bib",
+      "contents": "Luo et al., 2016)",
+      "text_id": 195
+    },
+    {
+      "xref_id": 24,
+      "xref_type": "bib",
+      "contents": "McCrackin & Itier, 2018)",
+      "text_id": 12
+    },
+    {
+      "xref_id": 26,
+      "xref_type": "bib",
+      "contents": "Peyk et al., 2011)",
+      "text_id": 100
+    },
+    {
+      "xref_id": 27,
+      "xref_type": "bib",
+      "contents": "(Rehbein et al., 2014)",
+      "text_id": 161
+    },
+    {
+      "xref_id": 27,
+      "xref_type": "bib",
+      "contents": "Rehbein et al., 2014;",
+      "text_id": 202
+    },
+    {
+      "xref_id": 28,
+      "xref_type": "bib",
+      "contents": "Rellecke et al., 2012;",
+      "text_id": 17
+    },
+    {
+      "xref_id": 28,
+      "xref_type": "bib",
+      "contents": "(Rellecke et al., 2012;",
+      "text_id": 29
+    },
+    {
+      "xref_id": 28,
+      "xref_type": "bib",
+      "contents": "Rellecke et al., 2012;",
+      "text_id": 189
+    },
+    {
+      "xref_id": 28,
+      "xref_type": "bib",
+      "contents": "Rellecke et al., 2012;",
+      "text_id": 191
+    },
+    {
+      "xref_id": 28,
+      "xref_type": "bib",
+      "contents": "Rellecke et al., 2012;",
+      "text_id": 196
+    },
+    {
+      "xref_id": 28,
+      "xref_type": "bib",
+      "contents": "Rellecke et al., 2012)",
+      "text_id": 189
+    },
+    {
+      "xref_id": 28,
+      "xref_type": "bib",
+      "contents": "Rellecke et al., 2012)",
+      "text_id": 191
+    },
+    {
+      "xref_id": 28,
+      "xref_type": "bib",
+      "contents": "Rellecke et al., 2012)",
+      "text_id": 196
+    },
+    {
+      "xref_id": 28,
+      "xref_type": "bib",
+      "contents": "(Rellecke et al., 2012;",
+      "text_id": 189
+    },
+    {
+      "xref_id": 28,
+      "xref_type": "bib",
+      "contents": "(Rellecke et al., 2012;",
+      "text_id": 191
+    },
+    {
+      "xref_id": 28,
+      "xref_type": "bib",
+      "contents": "(Rellecke et al., 2012;",
+      "text_id": 196
+    },
+    {
+      "xref_id": 29,
+      "xref_type": "bib",
+      "contents": "(Rossi et al., 2017)",
+      "text_id": 161
+    },
+    {
+      "xref_id": 30,
+      "xref_type": "bib",
+      "contents": "Schacht & Sommer, 2009)",
+      "text_id": 17
+    },
+    {
+      "xref_id": 31,
+      "xref_type": "bib",
+      "contents": "Schacht & Vrtic ˇka, 2018)",
+      "text_id": 204
+    },
+    {
+      "xref_id": 32,
+      "xref_type": "bib",
+      "contents": "Schellhaas et al., 2020)",
+      "text_id": 10
+    },
+    {
+      "xref_id": 32,
+      "xref_type": "bib",
+      "contents": "Schellhaas et al., 2020)",
+      "text_id": 202
+    },
+    {
+      "xref_id": 34,
+      "xref_type": "bib",
+      "contents": "Schindler, Caldarone, et al., 2020)",
+      "text_id": 188
+    },
+    {
+      "xref_id": 35,
+      "xref_type": "bib",
+      "contents": "Schupp et al., 2006)",
+      "text_id": 18
+    },
+    {
+      "xref_id": 35,
+      "xref_type": "bib",
+      "contents": "Schupp et al., 2006)",
+      "text_id": 193
+    },
+    {
+      "xref_id": 36,
+      "xref_type": "bib",
+      "contents": "(Schupp et al., 2004)",
+      "text_id": 16
+    },
+    {
+      "xref_id": 37,
+      "xref_type": "bib",
+      "contents": "Schweinberger & Neumann, 2016)",
+      "text_id": 13
+    },
+    {
+      "xref_id": 37,
+      "xref_type": "bib",
+      "contents": "Schweinberger & Neumann, 2016)",
+      "text_id": 193
+    },
+    {
+      "xref_id": 38,
+      "xref_type": "bib",
+      "contents": "Spielberger et al., 1999)",
+      "text_id": 79
+    },
+    {
+      "xref_id": 39,
+      "xref_type": "bib",
+      "contents": "(Suess et al., 2014)",
+      "text_id": 21
+    },
+    {
+      "xref_id": 39,
+      "xref_type": "bib",
+      "contents": "(Suess et al., 2014)",
+      "text_id": 25
+    },
+    {
+      "xref_id": 39,
+      "xref_type": "bib",
+      "contents": "Suess et al., 2014;",
+      "text_id": 21
+    },
+    {
+      "xref_id": 39,
+      "xref_type": "bib",
+      "contents": "Suess et al., 2014;",
+      "text_id": 25
+    },
+    {
+      "xref_id": 39,
+      "xref_type": "bib",
+      "contents": "Suess et al., 2014)",
+      "text_id": 181
+    },
+    {
+      "xref_id": 39,
+      "xref_type": "bib",
+      "contents": "Suess et al., 2014)",
+      "text_id": 184
+    },
+    {
+      "xref_id": 39,
+      "xref_type": "bib",
+      "contents": "Suess et al., 2014)",
+      "text_id": 187
+    },
+    {
+      "xref_id": 39,
+      "xref_type": "bib",
+      "contents": "(Suess et al., 2014;",
+      "text_id": 181
+    },
+    {
+      "xref_id": 39,
+      "xref_type": "bib",
+      "contents": "(Suess et al., 2014;",
+      "text_id": 184
+    },
+    {
+      "xref_id": 39,
+      "xref_type": "bib",
+      "contents": "(Suess et al., 2014;",
+      "text_id": 187
+    },
+    {
+      "xref_id": 39,
+      "xref_type": "bib",
+      "contents": "Suess et al., 2014)",
+      "text_id": 203
+    },
+    {
+      "xref_id": 40,
+      "xref_type": "bib",
+      "contents": "(Wieser & Brosch, 2012)",
+      "text_id": 9
+    },
+    {
+      "xref_id": 41,
+      "xref_type": "bib",
+      "contents": "Wieser et al., 2014)",
+      "text_id": 159
+    },
+    {
+      "xref_id": 42,
+      "xref_type": "bib",
+      "contents": "(Xu et al., 2016)",
+      "text_id": 21
+    },
+    {
+      "xref_id": 42,
+      "xref_type": "bib",
+      "contents": "(Xu et al., 2016)",
+      "text_id": 22
+    },
+    {
+      "xref_id": 42,
+      "xref_type": "bib",
+      "contents": "(Xu et al., 2016)",
+      "text_id": 23
+    },
+    {
+      "xref_id": 42,
+      "xref_type": "bib",
+      "contents": "(Xu et al., 2016)",
+      "text_id": 25
+    },
+    {
+      "xref_id": 42,
+      "xref_type": "bib",
+      "contents": "(Xu et al., 2016)",
+      "text_id": 27
+    },
+    {
+      "xref_id": 42,
+      "xref_type": "bib",
+      "contents": "Xu et al., 2016)",
+      "text_id": 21
+    },
+    {
+      "xref_id": 42,
+      "xref_type": "bib",
+      "contents": "Xu et al., 2016)",
+      "text_id": 22
+    },
+    {
+      "xref_id": 42,
+      "xref_type": "bib",
+      "contents": "Xu et al., 2016)",
+      "text_id": 23
+    },
+    {
+      "xref_id": 42,
+      "xref_type": "bib",
+      "contents": "Xu et al., 2016)",
+      "text_id": 25
+    },
+    {
+      "xref_id": 42,
+      "xref_type": "bib",
+      "contents": "Xu et al., 2016)",
+      "text_id": 27
+    },
+    {
+      "xref_id": 42,
+      "xref_type": "bib",
+      "contents": "Xu et al., 2016",
+      "text_id": 21
+    },
+    {
+      "xref_id": 42,
+      "xref_type": "bib",
+      "contents": "Xu et al., 2016",
+      "text_id": 22
+    },
+    {
+      "xref_id": 42,
+      "xref_type": "bib",
+      "contents": "Xu et al., 2016",
+      "text_id": 23
+    },
+    {
+      "xref_id": 42,
+      "xref_type": "bib",
+      "contents": "Xu et al., 2016",
+      "text_id": 25
+    },
+    {
+      "xref_id": 42,
+      "xref_type": "bib",
+      "contents": "Xu et al., 2016",
+      "text_id": 27
+    },
+    {
+      "xref_id": 42,
+      "xref_type": "bib",
+      "contents": "Xu et al., 2016)",
+      "text_id": 165
+    },
+    {
+      "xref_id": 42,
+      "xref_type": "bib",
+      "contents": "Xu et al., 2016",
+      "text_id": 184
+    },
+    {
+      "xref_id": 42,
+      "xref_type": "bib",
+      "contents": "Xu et al., 2016",
+      "text_id": 194
+    },
+    {
+      "xref_id": 42,
+      "xref_type": "bib",
+      "contents": "Xu et al., 2016)",
+      "text_id": 184
+    },
+    {
+      "xref_id": 42,
+      "xref_type": "bib",
+      "contents": "Xu et al., 2016)",
+      "text_id": 194
+    },
+    {
+      "xref_id": null,
+      "xref_type": "bib",
+      "contents": "",
+      "text_id": 21
+    },
+    {
+      "xref_id": null,
+      "xref_type": "bib",
+      "contents": "",
+      "text_id": 22
+    },
+    {
+      "xref_id": null,
+      "xref_type": "bib",
+      "contents": "",
+      "text_id": 23
+    },
+    {
+      "xref_id": null,
+      "xref_type": "bib",
+      "contents": "",
+      "text_id": 25
+    },
+    {
+      "xref_id": null,
+      "xref_type": "bib",
+      "contents": "",
+      "text_id": 26
+    },
+    {
+      "xref_id": null,
+      "xref_type": "bib",
+      "contents": "",
+      "text_id": 27
+    },
+    {
+      "xref_id": null,
+      "xref_type": "bib",
+      "contents": "",
+      "text_id": 29
+    },
+    {
+      "xref_id": null,
+      "xref_type": "bib",
+      "contents": "Schindler, Bruchmann, et al., 2020)",
+      "text_id": 29
+    },
+    {
+      "xref_id": null,
+      "xref_type": "bib",
+      "contents": "Schindler, Bruchmann, et al., 2020)",
+      "text_id": 189
+    },
+    {
+      "xref_id": null,
+      "xref_type": "bib",
+      "contents": "Schindler, Bruchmann, et al., 2020)",
+      "text_id": 190
+    },
+    {
+      "xref_id": null,
+      "xref_type": "bib",
+      "contents": "Schindler, Bruchmann, et al., 2020)",
+      "text_id": 196
+    },
+    {
+      "xref_id": null,
+      "xref_type": "bib",
+      "contents": "(Schindler, Bruchmann, et al., 2020)",
+      "text_id": 190
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "1",
+      "text_id": null
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "1",
+      "text_id": null
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "2",
+      "text_id": 112
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "2",
+      "text_id": 115
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "2",
+      "text_id": 119
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "3",
+      "text_id": 130
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "4",
+      "text_id": null
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "5",
+      "text_id": 145
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "5",
+      "text_id": null
+    },
+    {
+      "xref_id": null,
+      "xref_type": "table",
+      "contents": "1",
+      "text_id": 115
+    },
+    {
+      "xref_id": null,
+      "xref_type": "table",
+      "contents": "1",
+      "text_id": 119
+    },
+    {
+      "xref_id": null,
+      "xref_type": "table",
+      "contents": "1",
+      "text_id": 125
+    },
+    {
+      "xref_id": null,
+      "xref_type": "table",
+      "contents": "2",
+      "text_id": 152
+    }
+  ],
+  "figure": [
+    {
+      "figure_id": 1,
+      "section_id": 27,
+      "image": null,
+      "page_number": null
+    },
+    {
+      "figure_id": 2,
+      "section_id": 28,
+      "image": null,
+      "page_number": null
+    },
+    {
+      "figure_id": 3,
+      "section_id": 29,
+      "image": null,
+      "page_number": null
+    },
+    {
+      "figure_id": 4,
+      "section_id": 30,
+      "image": null,
+      "page_number": null
+    }
+  ],
+  "table": [
+    {
+      "table_id": 1,
+      "section_id": 31,
+      "html": "<table>\n  <row>\n    <cell/>\n    <cell cols=\"2\">Perceptual task<\/cell>\n    <cell cols=\"2\">Age task<\/cell>\n    <cell cols=\"2\">Emotion task<\/cell>\n  <\/row>\n  <row>\n    <cell>Measure<\/cell>\n    <cell>Criminal faces<\/cell>\n    <cell>Neutral faces<\/cell>\n    <cell>Criminal faces<\/cell>\n    <cell>Neutral faces<\/cell>\n    <cell>Criminal faces<\/cell>\n    <cell>Neutral faces<\/cell>\n  <\/row>\n  <row>\n    <cell>Number of hits<\/cell>\n    <cell>61.95<\/cell>\n    <cell>62.18<\/cell>\n    <cell>60.90<\/cell>\n    <cell>59.93<\/cell>\n    <cell>54.93<\/cell>\n    <cell>55.28<\/cell>\n  <\/row>\n  <row>\n    <cell/>\n    <cell>(1.87)<\/cell>\n    <cell>(1.97)<\/cell>\n    <cell>(3.61)<\/cell>\n    <cell>(5.29)<\/cell>\n    <cell>(11.01)<\/cell>\n    <cell>(8.20)<\/cell>\n  <\/row>\n  <row>\n    <cell>Reaction time (ms)<\/cell>\n    <cell>581.73<\/cell>\n    <cell>581.67<\/cell>\n    <cell>634.20<\/cell>\n    <cell>631.80<\/cell>\n    <cell>722.00<\/cell>\n    <cell>786.55<\/cell>\n  <\/row>\n  <row>\n    <cell/>\n    <cell>(91.86)<\/cell>\n    <cell>(91.65)<\/cell>\n    <cell>(93.18)<\/cell>\n    <cell>(91.50)<\/cell>\n    <cell>(142.96)<\/cell>\n    <cell>(96.95)<\/cell>\n  <\/row>\n<\/table>",
+      "contents": null,
+      "page_number": null
+    },
+    {
+      "table_id": 2,
+      "section_id": 32,
+      "html": "<table>\n  <row>\n    <cell/>\n    <cell/>\n    <cell cols=\"2\">With RT<\/cell>\n    <cell cols=\"2\">Without RT<\/cell>\n  <\/row>\n  <row>\n    <cell>Component and effect<\/cell>\n    <cell>dfs<\/cell>\n    <cell>F<\/cell>\n    <cell>p<\/cell>\n    <cell>F<\/cell>\n    <cell>p<\/cell>\n  <\/row>\n  <row>\n    <cell>P1<\/cell>\n    <cell/>\n    <cell/>\n    <cell/>\n    <cell/>\n    <cell/>\n  <\/row>\n  <row>\n    <cell>Emotion<\/cell>\n    <cell>(1, 39)<\/cell>\n    <cell>0.158<\/cell>\n    <cell>.693<\/cell>\n    <cell>0.513<\/cell>\n    <cell>.478<\/cell>\n  <\/row>\n  <row>\n    <cell>Task<\/cell>\n    <cell>(2, 78)<\/cell>\n    <cell>4.816<\/cell>\n    <cell>.011<\/cell>\n    <cell>1.050<\/cell>\n    <cell>.337<\/cell>\n  <\/row>\n  <row>\n    <cell>Emotion × Task<\/cell>\n    <cell>(2, 78)<\/cell>\n    <cell>1.184<\/cell>\n    <cell>.312<\/cell>\n    <cell>1.878<\/cell>\n    <cell>.160<\/cell>\n  <\/row>\n  <row>\n    <cell>N170<\/cell>\n    <cell/>\n    <cell/>\n    <cell/>\n    <cell/>\n    <cell/>\n  <\/row>\n  <row>\n    <cell>Emotion<\/cell>\n    <cell>(1, 39)<\/cell>\n    <cell>16.120<\/cell>\n    <cell>&lt; .001<\/cell>\n    <cell>15.298<\/cell>\n    <cell>&lt; .001<\/cell>\n  <\/row>\n  <row>\n    <cell>Task<\/cell>\n    <cell>(2, 78)<\/cell>\n    <cell>0.810<\/cell>\n    <cell>.448<\/cell>\n    <cell>2.090<\/cell>\n    <cell>.150<\/cell>\n  <\/row>\n  <row>\n    <cell>Emotion × Task<\/cell>\n    <cell>(2, 78)<\/cell>\n    <cell>0.244<\/cell>\n    <cell>.784<\/cell>\n    <cell>0.707<\/cell>\n    <cell>.496<\/cell>\n  <\/row>\n  <row>\n    <cell>Early posterior negativity<\/cell>\n    <cell/>\n    <cell/>\n    <cell/>\n    <cell/>\n    <cell/>\n  <\/row>\n  <row>\n    <cell>Emotion<\/cell>\n    <cell>(1, 39)<\/cell>\n    <cell>2.601<\/cell>\n    <cell>.115<\/cell>\n    <cell>3.736<\/cell>\n    <cell>.061<\/cell>\n  <\/row>\n  <row>\n    <cell>Task<\/cell>\n    <cell>(2, 78)<\/cell>\n    <cell>8.152<\/cell>\n    <cell>.001<\/cell>\n    <cell>10.114<\/cell>\n    <cell>.001<\/cell>\n  <\/row>\n  <row>\n    <cell>Emotion × Task<\/cell>\n    <cell>(2, 78)<\/cell>\n    <cell>3.448<\/cell>\n    <cell>.037<\/cell>\n    <cell>4.455<\/cell>\n    <cell>.015<\/cell>\n  <\/row>\n  <row>\n    <cell>Late positive potential<\/cell>\n    <cell/>\n    <cell/>\n    <cell/>\n    <cell/>\n    <cell/>\n  <\/row>\n  <row>\n    <cell>Emotion<\/cell>\n    <cell>(1, 39)<\/cell>\n    <cell>20.335<\/cell>\n    <cell>&lt; .001<\/cell>\n    <cell>15.846<\/cell>\n    <cell>&lt; .001<\/cell>\n  <\/row>\n  <row>\n    <cell>Task<\/cell>\n    <cell>(2, 78)<\/cell>\n    <cell>6.520<\/cell>\n    <cell>&lt; .001<\/cell>\n    <cell>4.050<\/cell>\n    <cell>.029<\/cell>\n  <\/row>\n  <row>\n    <cell>Emotion × Task<\/cell>\n    <cell>(2, 78)<\/cell>\n    <cell>6.287<\/cell>\n    <cell>&lt; .001<\/cell>\n    <cell>5.690<\/cell>\n    <cell>.008<\/cell>\n  <\/row>\n<\/table>",
+      "contents": null,
+      "page_number": null
+    }
+  ],
+  "eq": [
+    {
+      "text_id": 4,
+      "grp_id": 1,
+      "lhs": "N",
+      "comp": "=",
+      "rhs": "40"
+    },
+    {
+      "text_id": 46,
+      "grp_id": 2,
+      "lhs": "2",
+      "comp": "=",
+      "rhs": ".06"
+    },
+    {
+      "text_id": 48,
+      "grp_id": 3,
+      "lhs": "SD",
+      "comp": "=",
+      "rhs": "3.31"
+    },
+    {
+      "text_id": 58,
+      "grp_id": 4,
+      "lhs": "x",
+      "comp": "=",
+      "rhs": "0"
+    },
+    {
+      "text_id": 58,
+      "grp_id": 4,
+      "lhs": "y",
+      "comp": "=",
+      "rhs": "0"
+    },
+    {
+      "text_id": 60,
+      "grp_id": 5,
+      "lhs": "L",
+      "comp": "=",
+      "rhs": "0.35"
+    },
+    {
+      "text_id": 60,
+      "grp_id": 5,
+      "lhs": "L",
+      "comp": "=",
+      "rhs": "327.43"
+    },
+    {
+      "text_id": 61,
+      "grp_id": 6,
+      "lhs": "value",
+      "comp": "=",
+      "rhs": "108"
+    },
+    {
+      "text_id": 112,
+      "grp_id": 7,
+      "lhs": "F(1, 39)",
+      "comp": "=",
+      "rhs": "33.92"
+    },
+    {
+      "text_id": 112,
+      "grp_id": 7,
+      "lhs": "p",
+      "comp": "<",
+      "rhs": ".001"
+    },
+    {
+      "text_id": 112,
+      "grp_id": 7,
+      "lhs": "2",
+      "comp": "=",
+      "rhs": ".465"
+    },
+    {
+      "text_id": 112,
+      "grp_id": 7,
+      "lhs": "F(1, 39)",
+      "comp": "=",
+      "rhs": "15.00"
+    },
+    {
+      "text_id": 112,
+      "grp_id": 7,
+      "lhs": "p",
+      "comp": "<",
+      "rhs": ".001"
+    },
+    {
+      "text_id": 112,
+      "grp_id": 7,
+      "lhs": "2",
+      "comp": "=",
+      "rhs": ".278"
+    },
+    {
+      "text_id": 112,
+      "grp_id": 7,
+      "lhs": "F(1, 39)",
+      "comp": "=",
+      "rhs": "37.73"
+    },
+    {
+      "text_id": 112,
+      "grp_id": 7,
+      "lhs": "p",
+      "comp": "<",
+      "rhs": ".001"
+    },
+    {
+      "text_id": 112,
+      "grp_id": 7,
+      "lhs": "2",
+      "comp": "=",
+      "rhs": ".492"
+    },
+    {
+      "text_id": 113,
+      "grp_id": 8,
+      "lhs": "M",
+      "comp": "=",
+      "rhs": "2.88"
+    },
+    {
+      "text_id": 113,
+      "grp_id": 8,
+      "lhs": "SD",
+      "comp": "=",
+      "rhs": "0.78"
+    },
+    {
+      "text_id": 113,
+      "grp_id": 8,
+      "lhs": "M",
+      "comp": "=",
+      "rhs": "3.99"
+    },
+    {
+      "text_id": 113,
+      "grp_id": 8,
+      "lhs": "SD",
+      "comp": "=",
+      "rhs": "0.71"
+    },
+    {
+      "text_id": 113,
+      "grp_id": 8,
+      "lhs": "M",
+      "comp": "=",
+      "rhs": "3.84"
+    },
+    {
+      "text_id": 113,
+      "grp_id": 8,
+      "lhs": "SD",
+      "comp": "=",
+      "rhs": "1.35"
+    },
+    {
+      "text_id": 113,
+      "grp_id": 8,
+      "lhs": "M",
+      "comp": "=",
+      "rhs": "2.84"
+    },
+    {
+      "text_id": 113,
+      "grp_id": 8,
+      "lhs": "SD",
+      "comp": "=",
+      "rhs": "1.03"
+    },
+    {
+      "text_id": 113,
+      "grp_id": 8,
+      "lhs": "M",
+      "comp": "=",
+      "rhs": "4.26"
+    },
+    {
+      "text_id": 113,
+      "grp_id": 8,
+      "lhs": "SD",
+      "comp": "=",
+      "rhs": "1.25"
+    },
+    {
+      "text_id": 113,
+      "grp_id": 8,
+      "lhs": "M",
+      "comp": "=",
+      "rhs": "2.59"
+    },
+    {
+      "text_id": 113,
+      "grp_id": 8,
+      "lhs": "SD",
+      "comp": "=",
+      "rhs": "0.88"
+    },
+    {
+      "text_id": 114,
+      "grp_id": 9,
+      "lhs": "M",
+      "comp": "=",
+      "rhs": "3.1"
+    },
+    {
+      "text_id": 114,
+      "grp_id": 9,
+      "lhs": "SD",
+      "comp": "=",
+      "rhs": "0.55"
+    },
+    {
+      "text_id": 115,
+      "grp_id": 10,
+      "lhs": "F(1, 38)",
+      "comp": "=",
+      "rhs": "1.48"
+    },
+    {
+      "text_id": 115,
+      "grp_id": 10,
+      "lhs": "p",
+      "comp": "=",
+      "rhs": ".231"
+    },
+    {
+      "text_id": 115,
+      "grp_id": 10,
+      "lhs": "2",
+      "comp": "=",
+      "rhs": ".037"
+    },
+    {
+      "text_id": 115,
+      "grp_id": 10,
+      "lhs": "F(1.45, 55.13)",
+      "comp": "=",
+      "rhs": "27.59"
+    },
+    {
+      "text_id": 115,
+      "grp_id": 10,
+      "lhs": "p",
+      "comp": "<",
+      "rhs": ".001"
+    },
+    {
+      "text_id": 115,
+      "grp_id": 10,
+      "lhs": "2",
+      "comp": "=",
+      "rhs": ".421"
+    },
+    {
+      "text_id": 117,
+      "grp_id": 11,
+      "lhs": "p",
+      "comp": "=",
+      "rhs": ".003"
+    },
+    {
+      "text_id": 118,
+      "grp_id": 12,
+      "lhs": "F(2, 76)",
+      "comp": "=",
+      "rhs": "0.81"
+    },
+    {
+      "text_id": 118,
+      "grp_id": 12,
+      "lhs": "p",
+      "comp": "=",
+      "rhs": ".449"
+    },
+    {
+      "text_id": 118,
+      "grp_id": 12,
+      "lhs": "2",
+      "comp": "=",
+      "rhs": ".021"
+    },
+    {
+      "text_id": 119,
+      "grp_id": 13,
+      "lhs": "F(1, 38)",
+      "comp": "=",
+      "rhs": "18.02"
+    },
+    {
+      "text_id": 119,
+      "grp_id": 13,
+      "lhs": "p",
+      "comp": "<",
+      "rhs": ".001"
+    },
+    {
+      "text_id": 119,
+      "grp_id": 13,
+      "lhs": "2",
+      "comp": "=",
+      "rhs": ".322"
+    },
+    {
+      "text_id": 119,
+      "grp_id": 13,
+      "lhs": "F(2, 76)",
+      "comp": "=",
+      "rhs": "127.86"
+    },
+    {
+      "text_id": 119,
+      "grp_id": 13,
+      "lhs": "p",
+      "comp": "<",
+      "rhs": ".001"
+    },
+    {
+      "text_id": 119,
+      "grp_id": 13,
+      "lhs": "2",
+      "comp": "=",
+      "rhs": ".771"
+    },
+    {
+      "text_id": 121,
+      "grp_id": 14,
+      "lhs": "F(2, 76)",
+      "comp": "=",
+      "rhs": "16.38"
+    },
+    {
+      "text_id": 121,
+      "grp_id": 14,
+      "lhs": "p",
+      "comp": "<",
+      "rhs": ".001"
+    },
+    {
+      "text_id": 121,
+      "grp_id": 14,
+      "lhs": "2",
+      "comp": "=",
+      "rhs": ".301"
+    },
+    {
+      "text_id": 122,
+      "grp_id": 15,
+      "lhs": "p",
+      "comp": "=",
+      "rhs": ".916"
+    },
+    {
+      "text_id": 126,
+      "grp_id": 16,
+      "lhs": "F(1, 39)",
+      "comp": "=",
+      "rhs": "0.16"
+    },
+    {
+      "text_id": 126,
+      "grp_id": 16,
+      "lhs": "p",
+      "comp": "=",
+      "rhs": ".693"
+    },
+    {
+      "text_id": 126,
+      "grp_id": 16,
+      "lhs": "2",
+      "comp": "=",
+      "rhs": ".004"
+    },
+    {
+      "text_id": 126,
+      "grp_id": 16,
+      "lhs": "F(2, 78)",
+      "comp": "=",
+      "rhs": "4.82"
+    },
+    {
+      "text_id": 126,
+      "grp_id": 16,
+      "lhs": "p",
+      "comp": "=",
+      "rhs": ".011"
+    },
+    {
+      "text_id": 126,
+      "grp_id": 16,
+      "lhs": "2",
+      "comp": "=",
+      "rhs": ".110"
+    },
+    {
+      "text_id": 127,
+      "grp_id": 17,
+      "lhs": "F(1, 39)",
+      "comp": "=",
+      "rhs": "1.85"
+    },
+    {
+      "text_id": 127,
+      "grp_id": 17,
+      "lhs": "p",
+      "comp": "=",
+      "rhs": ".182"
+    },
+    {
+      "text_id": 127,
+      "grp_id": 17,
+      "lhs": "2",
+      "comp": "=",
+      "rhs": ".045"
+    },
+    {
+      "text_id": 128,
+      "grp_id": 18,
+      "lhs": "p",
+      "comp": "=",
+      "rhs": ".038"
+    },
+    {
+      "text_id": 128,
+      "grp_id": 18,
+      "lhs": "p",
+      "comp": "=",
+      "rhs": ".002"
+    },
+    {
+      "text_id": 128,
+      "grp_id": 18,
+      "lhs": "p",
+      "comp": "=",
+      "rhs": ".674"
+    },
+    {
+      "text_id": 129,
+      "grp_id": 19,
+      "lhs": "F(2, 78)",
+      "comp": "=",
+      "rhs": "1.18"
+    },
+    {
+      "text_id": 129,
+      "grp_id": 19,
+      "lhs": "p",
+      "comp": "=",
+      "rhs": ".312"
+    },
+    {
+      "text_id": 129,
+      "grp_id": 19,
+      "lhs": "2",
+      "comp": "=",
+      "rhs": ".029"
+    },
+    {
+      "text_id": 129,
+      "grp_id": 19,
+      "lhs": "Fs",
+      "comp": "<",
+      "rhs": "3.79"
+    },
+    {
+      "text_id": 129,
+      "grp_id": 19,
+      "lhs": "ps",
+      "comp": ">",
+      "rhs": ".059"
+    },
+    {
+      "text_id": 130,
+      "grp_id": 20,
+      "lhs": "F(1, 39)",
+      "comp": "=",
+      "rhs": "16.12"
+    },
+    {
+      "text_id": 130,
+      "grp_id": 20,
+      "lhs": "p",
+      "comp": "<",
+      "rhs": ".001"
+    },
+    {
+      "text_id": 130,
+      "grp_id": 20,
+      "lhs": "2",
+      "comp": "=",
+      "rhs": ".292"
+    },
+    {
+      "text_id": 130,
+      "grp_id": 20,
+      "lhs": "F(2, 78)",
+      "comp": "=",
+      "rhs": "0.81"
+    },
+    {
+      "text_id": 130,
+      "grp_id": 20,
+      "lhs": "p",
+      "comp": "=",
+      "rhs": ".448"
+    },
+    {
+      "text_id": 130,
+      "grp_id": 20,
+      "lhs": "2",
+      "comp": "=",
+      "rhs": ".020"
+    },
+    {
+      "text_id": 131,
+      "grp_id": 21,
+      "lhs": "F(1, 39)",
+      "comp": "=",
+      "rhs": "8.50"
+    },
+    {
+      "text_id": 131,
+      "grp_id": 21,
+      "lhs": "p",
+      "comp": "=",
+      "rhs": ".006"
+    },
+    {
+      "text_id": 131,
+      "grp_id": 21,
+      "lhs": "2",
+      "comp": "=",
+      "rhs": ".179"
+    },
+    {
+      "text_id": 133,
+      "grp_id": 22,
+      "lhs": "F(2, 78)",
+      "comp": "=",
+      "rhs": "0.24"
+    },
+    {
+      "text_id": 133,
+      "grp_id": 22,
+      "lhs": "p",
+      "comp": "=",
+      "rhs": ".784"
+    },
+    {
+      "text_id": 133,
+      "grp_id": 22,
+      "lhs": "2",
+      "comp": "=",
+      "rhs": ".006"
+    },
+    {
+      "text_id": 133,
+      "grp_id": 22,
+      "lhs": "Fs",
+      "comp": "<",
+      "rhs": "0.54"
+    },
+    {
+      "text_id": 133,
+      "grp_id": 22,
+      "lhs": "ps",
+      "comp": ">",
+      "rhs": ".584"
+    },
+    {
+      "text_id": 134,
+      "grp_id": 23,
+      "lhs": "F(1, 39)",
+      "comp": "=",
+      "rhs": "2.60"
+    },
+    {
+      "text_id": 134,
+      "grp_id": 23,
+      "lhs": "p",
+      "comp": "=",
+      "rhs": ".115"
+    },
+    {
+      "text_id": 134,
+      "grp_id": 23,
+      "lhs": "2",
+      "comp": "=",
+      "rhs": ".063"
+    },
+    {
+      "text_id": 134,
+      "grp_id": 23,
+      "lhs": "F(2, 78)",
+      "comp": "=",
+      "rhs": "8.15"
+    },
+    {
+      "text_id": 134,
+      "grp_id": 23,
+      "lhs": "p",
+      "comp": "=",
+      "rhs": ".001"
+    },
+    {
+      "text_id": 134,
+      "grp_id": 23,
+      "lhs": "2",
+      "comp": "=",
+      "rhs": ".173"
+    },
+    {
+      "text_id": 135,
+      "grp_id": 24,
+      "lhs": "F(1, 39)",
+      "comp": "<",
+      "rhs": "0.01"
+    },
+    {
+      "text_id": 135,
+      "grp_id": 24,
+      "lhs": "p",
+      "comp": "=",
+      "rhs": ".948"
+    },
+    {
+      "text_id": 135,
+      "grp_id": 24,
+      "lhs": "2",
+      "comp": "<",
+      "rhs": ".001"
+    },
+    {
+      "text_id": 136,
+      "grp_id": 25,
+      "lhs": "p",
+      "comp": "=",
+      "rhs": ".002"
+    },
+    {
+      "text_id": 136,
+      "grp_id": 25,
+      "lhs": "p",
+      "comp": "<",
+      "rhs": ".001"
+    },
+    {
+      "text_id": 137,
+      "grp_id": 26,
+      "lhs": "p",
+      "comp": "=",
+      "rhs": ".801"
+    },
+    {
+      "text_id": 138,
+      "grp_id": 27,
+      "lhs": "F(2, 78)",
+      "comp": "=",
+      "rhs": "3.45"
+    },
+    {
+      "text_id": 138,
+      "grp_id": 27,
+      "lhs": "p",
+      "comp": "=",
+      "rhs": ".037"
+    },
+    {
+      "text_id": 138,
+      "grp_id": 27,
+      "lhs": "2",
+      "comp": "=",
+      "rhs": ".081"
+    },
+    {
+      "text_id": 140,
+      "grp_id": 28,
+      "lhs": "p",
+      "comp": "=",
+      "rhs": ".564"
+    },
+    {
+      "text_id": 141,
+      "grp_id": 29,
+      "lhs": "p",
+      "comp": "=",
+      "rhs": ".027"
+    },
+    {
+      "text_id": 141,
+      "grp_id": 29,
+      "lhs": "p",
+      "comp": "=",
+      "rhs": ".039"
+    },
+    {
+      "text_id": 142,
+      "grp_id": 30,
+      "lhs": "F(2, 78)",
+      "comp": "=",
+      "rhs": "6.70"
+    },
+    {
+      "text_id": 142,
+      "grp_id": 30,
+      "lhs": "p",
+      "comp": "=",
+      "rhs": ".002"
+    },
+    {
+      "text_id": 142,
+      "grp_id": 30,
+      "lhs": "2",
+      "comp": "=",
+      "rhs": ".147"
+    },
+    {
+      "text_id": 143,
+      "grp_id": 31,
+      "lhs": "F(2, 78)",
+      "comp": "=",
+      "rhs": "10.50"
+    },
+    {
+      "text_id": 143,
+      "grp_id": 31,
+      "lhs": "p",
+      "comp": "<",
+      "rhs": ".001"
+    },
+    {
+      "text_id": 143,
+      "grp_id": 31,
+      "lhs": "2",
+      "comp": "=",
+      "rhs": ".212"
+    },
+    {
+      "text_id": 143,
+      "grp_id": 31,
+      "lhs": "F(2, 78)",
+      "comp": "=",
+      "rhs": "5.51"
+    },
+    {
+      "text_id": 143,
+      "grp_id": 31,
+      "lhs": "p",
+      "comp": "=",
+      "rhs": ".006"
+    },
+    {
+      "text_id": 143,
+      "grp_id": 31,
+      "lhs": "2",
+      "comp": "=",
+      "rhs": ".124"
+    },
+    {
+      "text_id": 145,
+      "grp_id": 32,
+      "lhs": "F(1, 39)",
+      "comp": "=",
+      "rhs": "20.34"
+    },
+    {
+      "text_id": 145,
+      "grp_id": 32,
+      "lhs": "p",
+      "comp": "<",
+      "rhs": ".001"
+    },
+    {
+      "text_id": 145,
+      "grp_id": 32,
+      "lhs": "2",
+      "comp": "=",
+      "rhs": ".343"
+    },
+    {
+      "text_id": 145,
+      "grp_id": 32,
+      "lhs": "F(1.70, 66.28)",
+      "comp": "=",
+      "rhs": "6.52"
+    },
+    {
+      "text_id": 145,
+      "grp_id": 32,
+      "lhs": "p",
+      "comp": "=",
+      "rhs": ".004"
+    },
+    {
+      "text_id": 145,
+      "grp_id": 32,
+      "lhs": "2",
+      "comp": "=",
+      "rhs": ".143"
+    },
+    {
+      "text_id": 147,
+      "grp_id": 33,
+      "lhs": "p",
+      "comp": "=",
+      "rhs": ".048"
+    },
+    {
+      "text_id": 147,
+      "grp_id": 33,
+      "lhs": "p",
+      "comp": "=",
+      "rhs": ".004"
+    },
+    {
+      "text_id": 147,
+      "grp_id": 33,
+      "lhs": "p",
+      "comp": "=",
+      "rhs": ".051"
+    },
+    {
+      "text_id": 148,
+      "grp_id": 34,
+      "lhs": "F(2, 78)",
+      "comp": "=",
+      "rhs": "6.29"
+    },
+    {
+      "text_id": 148,
+      "grp_id": 34,
+      "lhs": "p",
+      "comp": "=",
+      "rhs": ".003"
+    },
+    {
+      "text_id": 148,
+      "grp_id": 34,
+      "lhs": "2",
+      "comp": "=",
+      "rhs": ".139"
+    },
+    {
+      "text_id": 150,
+      "grp_id": 35,
+      "lhs": "p",
+      "comp": "=",
+      "rhs": ".831"
+    },
+    {
+      "text_id": 151,
+      "grp_id": 36,
+      "lhs": "p",
+      "comp": "=",
+      "rhs": ".008"
+    },
+    {
+      "text_id": 151,
+      "grp_id": 36,
+      "lhs": "p",
+      "comp": "=",
+      "rhs": ".001"
+    },
+    {
+      "text_id": 200,
+      "grp_id": 37,
+      "lhs": "n",
+      "comp": "=",
+      "rhs": "30"
+    },
+    {
+      "text_id": 200,
+      "grp_id": 37,
+      "lhs": "n",
+      "comp": "=",
+      "rhs": "10"
+    },
+    {
+      "text_id": 116,
+      "grp_id": 38,
+      "lhs": "ps",
+      "comp": "<",
+      "rhs": ".001"
+    },
+    {
+      "text_id": 120,
+      "grp_id": 39,
+      "lhs": "ps",
+      "comp": "<",
+      "rhs": ".001"
+    },
+    {
+      "text_id": 123,
+      "grp_id": 40,
+      "lhs": "p",
+      "comp": "<",
+      "rhs": ".001"
+    },
+    {
+      "text_id": 123,
+      "grp_id": 40,
+      "lhs": "p",
+      "comp": "<",
+      "rhs": ".001"
+    },
+    {
+      "text_id": 144,
+      "grp_id": 41,
+      "lhs": "Fs",
+      "comp": "<",
+      "rhs": "3.29"
+    },
+    {
+      "text_id": 144,
+      "grp_id": 41,
+      "lhs": "ps",
+      "comp": ">",
+      "rhs": ".077"
+    }
+  ],
+  "bib_match": [
+    {
+      "bib_id": 0,
+      "service": "crossref",
+      "service_id": null,
+      "score": 106.1093,
+      "bib_type": "article",
+      "doi": "10.1037/a0024717",
+      "title": "Facing good and evil: Early brain signatures of affective biographical knowledge in face recognition.",
+      "authors": [
+        {
+          "given": "Rasha",
+          "family": "Abdel Rahman"
+        }
+      ],
+      "editors": [],
+      "publisher": "American Psychological Association (APA)",
+      "year": 2011,
+      "date": null,
+      "container": "Emotion",
+      "volume": "11",
+      "issue": "6",
+      "first_page": "1397",
+      "last_page": "1405",
+      "edition": null,
+      "version": null,
+      "url": "https://doi.org/10.1037/a0024717"
+    },
+    {
+      "bib_id": 1,
+      "service": "crossref",
+      "service_id": null,
+      "score": 145.9635,
+      "bib_type": "misc",
+      "doi": "10.31234/osf.io/hwnp9",
+      "title": "Clear judgments based on unclear evidence: Person evaluation is strongly influenced by untrustworthy gossip",
+      "authors": [
+        {
+          "given": "Julia",
+          "family": "Baum"
+        },
+        {
+          "given": "Milena",
+          "family": "Rabovsky"
+        },
+        {
+          "given": "Sebastian Benjamin",
+          "family": "Rose"
+        },
+        {
+          "given": "Rasha",
+          "family": "Abdel Rahman"
+        }
+      ],
+      "editors": [],
+      "publisher": "Center for Open Science",
+      "year": 2019,
+      "date": null,
+      "container": null,
+      "volume": null,
+      "issue": null,
+      "first_page": null,
+      "last_page": null,
+      "edition": null,
+      "version": null,
+      "url": "https://doi.org/10.31234/osf.io/hwnp9"
+    },
+    {
+      "bib_id": 3,
+      "service": "crossref",
+      "service_id": null,
+      "score": 112.4306,
+      "bib_type": "article",
+      "doi": "10.1111/psyp.12251",
+      "title": "The persistence of socially instructed threat: Two threat‐of‐shock studies",
+      "authors": [
+        {
+          "given": "Florian",
+          "family": "Bublatzky"
+        },
+        {
+          "given": "Antje B. M.",
+          "family": "Gerdes"
+        },
+        {
+          "given": "Georg W.",
+          "family": "Alpers"
+        }
+      ],
+      "editors": [],
+      "publisher": "Wiley",
+      "year": 2014,
+      "date": null,
+      "container": "Psychophysiology",
+      "volume": "51",
+      "issue": "10",
+      "first_page": "1005",
+      "last_page": "1014",
+      "edition": null,
+      "version": null,
+      "url": "https://doi.org/10.1111/psyp.12251"
+    },
+    {
+      "bib_id": 4,
+      "service": "crossref",
+      "service_id": null,
+      "score": 138.4457,
+      "bib_type": "article",
+      "doi": "10.1016/j.cortex.2020.07.009",
+      "title": "Watch out, he's dangerous! Electrocortical indicators of selective visual attention to allegedly threatening persons",
+      "authors": [
+        {
+          "given": "Florian",
+          "family": "Bublatzky"
+        },
+        {
+          "given": "Pedro",
+          "family": "Guerra"
+        },
+        {
+          "given": "Georg W.",
+          "family": "Alpers"
+        }
+      ],
+      "editors": [],
+      "publisher": "Elsevier BV",
+      "year": 2020,
+      "date": null,
+      "container": "Cortex",
+      "volume": "131",
+      "issue": null,
+      "first_page": "164",
+      "last_page": "178",
+      "edition": null,
+      "version": null,
+      "url": "https://doi.org/10.1016/j.cortex.2020.07.009"
+    },
+    {
+      "bib_id": 6,
+      "service": "crossref",
+      "service_id": null,
+      "score": 117.9219,
+      "bib_type": "article",
+      "doi": "10.3758/brm.42.1.351",
+      "title": "FACES—A database of facial expressions in young, middle-aged, and older women and men: Development and validation",
+      "authors": [
+        {
+          "given": "Natalie C.",
+          "family": "Ebner"
+        },
+        {
+          "given": "Michaela",
+          "family": "Riediger"
+        },
+        {
+          "given": "Ulman",
+          "family": "Lindenberger"
+        }
+      ],
+      "editors": [],
+      "publisher": "Springer Science and Business Media LLC",
+      "year": 2010,
+      "date": null,
+      "container": "Behavior Research Methods",
+      "volume": "42",
+      "issue": "1",
+      "first_page": "351",
+      "last_page": "362",
+      "edition": null,
+      "version": null,
+      "url": "https://doi.org/10.3758/brm.42.1.351"
+    },
+    {
+      "bib_id": 7,
+      "service": "crossref",
+      "service_id": null,
+      "score": 81.2139,
+      "bib_type": "book",
+      "doi": "10.1093/oxfordhb/9780199559053.013.0017",
+      "title": "The Face-Sensitive N170 Component of the Event-Related Brain Potential",
+      "authors": [
+        {
+          "given": "Martin",
+          "family": "Eimer"
+        }
+      ],
+      "editors": [],
+      "publisher": "Oxford University Press",
+      "year": 2011,
+      "date": null,
+      "container": "Oxford Handbooks Online",
+      "volume": null,
+      "issue": null,
+      "first_page": null,
+      "last_page": null,
+      "edition": null,
+      "version": null,
+      "url": "https://doi.org/10.1093/oxfordhb/9780199559053.013.0017"
+    },
+    {
+      "bib_id": 8,
+      "service": "crossref",
+      "service_id": null,
+      "score": 111.2552,
+      "bib_type": "article",
+      "doi": "10.3758/brm.41.4.1149",
+      "title": "Statistical power analyses using G*Power 3.1: Tests for correlation and regression analyses",
+      "authors": [
+        {
+          "given": "Franz",
+          "family": "Faul"
+        },
+        {
+          "given": "Edgar",
+          "family": "Erdfelder"
+        },
+        {
+          "given": "Axel",
+          "family": "Buchner"
+        },
+        {
+          "given": "Albert-Georg",
+          "family": "Lang"
+        }
+      ],
+      "editors": [],
+      "publisher": "Springer Science and Business Media LLC",
+      "year": 2009,
+      "date": null,
+      "container": "Behavior Research Methods",
+      "volume": "41",
+      "issue": "4",
+      "first_page": "1149",
+      "last_page": "1160",
+      "edition": null,
+      "version": null,
+      "url": "https://doi.org/10.3758/brm.41.4.1149"
+    },
+    {
+      "bib_id": 9,
+      "service": "crossref",
+      "service_id": null,
+      "score": 126.4209,
+      "bib_type": "article",
+      "doi": "10.1016/j.biopsycho.2011.03.008",
+      "title": "Time course of implicit processing and explicit processing of emotional faces and emotional words",
+      "authors": [
+        {
+          "given": "Sascha",
+          "family": "Frühholz"
+        },
+        {
+          "given": "Anne",
+          "family": "Jellinghaus"
+        },
+        {
+          "given": "Manfred",
+          "family": "Herrmann"
+        }
+      ],
+      "editors": [],
+      "publisher": "Elsevier BV",
+      "year": 2011,
+      "date": null,
+      "container": "Biological Psychology",
+      "volume": "87",
+      "issue": "2",
+      "first_page": "265",
+      "last_page": "274",
+      "edition": null,
+      "version": null,
+      "url": "https://doi.org/10.1016/j.biopsycho.2011.03.008"
+    },
+    {
+      "bib_id": 10,
+      "service": "crossref",
+      "service_id": null,
+      "score": 170.0725,
+      "bib_type": "article",
+      "doi": "10.1093/scan/nsaa087",
+      "title": "Prejudice drives exogenous attention to outgroups",
+      "authors": [
+        {
+          "given": "Tamara",
+          "family": "Giménez-Fernández"
+        },
+        {
+          "given": "Dominique",
+          "family": "Kessel"
+        },
+        {
+          "given": "Uxía",
+          "family": "Fernández-Folgueiras"
+        },
+        {
+          "given": "Sabela",
+          "family": "Fondevila"
+        },
+        {
+          "given": "Constantino",
+          "family": "Méndez-Bértolo"
+        },
+        {
+          "given": "Nayamin",
+          "family": "Aceves"
+        },
+        {
+          "given": "María José",
+          "family": "García-Rubio"
+        },
+        {
+          "given": "Luis",
+          "family": "Carretié"
+        }
+      ],
+      "editors": [],
+      "publisher": "Oxford University Press (OUP)",
+      "year": 2020,
+      "date": null,
+      "container": "Social Cognitive and Affective Neuroscience",
+      "volume": "15",
+      "issue": "6",
+      "first_page": "615",
+      "last_page": "624",
+      "edition": null,
+      "version": null,
+      "url": "https://doi.org/10.1093/scan/nsaa087"
+    },
+    {
+      "bib_id": 11,
+      "service": "crossref",
+      "service_id": null,
+      "score": 106.752,
+      "bib_type": "article",
+      "doi": "10.1016/j.clinph.2008.11.028",
+      "title": "Motivated and controlled attention to emotion: Time-course of the late positive potential",
+      "authors": [
+        {
+          "given": "Greg",
+          "family": "Hajcak"
+        },
+        {
+          "given": "Jonathan P.",
+          "family": "Dunning"
+        },
+        {
+          "given": "Dan",
+          "family": "Foti"
+        }
+      ],
+      "editors": [],
+      "publisher": "Elsevier BV",
+      "year": 2009,
+      "date": null,
+      "container": "Clinical Neurophysiology",
+      "volume": "120",
+      "issue": "3",
+      "first_page": "505",
+      "last_page": "510",
+      "edition": null,
+      "version": null,
+      "url": "https://doi.org/10.1016/j.clinph.2008.11.028"
+    },
+    {
+      "bib_id": 12,
+      "service": "crossref",
+      "service_id": null,
+      "score": 159.4044,
+      "bib_type": "misc",
+      "doi": "10.1101/232538",
+      "title": "Implicit reward associations impact face processing: Time-resolved evidence from event-related brain potentials and pupil dilations",
+      "authors": [
+        {
+          "given": "Wiebke",
+          "family": "Hammerschmidt"
+        },
+        {
+          "given": "Igor",
+          "family": "Kagan"
+        },
+        {
+          "given": "Louisa",
+          "family": "Kulke"
+        },
+        {
+          "given": "Annekathrin",
+          "family": "Schacht"
+        }
+      ],
+      "editors": [],
+      "publisher": "openRxiv",
+      "year": 2017,
+      "date": null,
+      "container": null,
+      "volume": null,
+      "issue": null,
+      "first_page": null,
+      "last_page": null,
+      "edition": null,
+      "version": null,
+      "url": "https://doi.org/10.1101/232538"
+    },
+    {
+      "bib_id": 13,
+      "service": "crossref",
+      "service_id": null,
+      "score": 129.4936,
+      "bib_type": "article",
+      "doi": "10.1016/j.neuroimage.2017.04.032",
+      "title": "Associated motivational salience impacts early sensory processing of human faces",
+      "authors": [
+        {
+          "given": "Wiebke",
+          "family": "Hammerschmidt"
+        },
+        {
+          "given": "Holger",
+          "family": "Sennhenn-Reulen"
+        },
+        {
+          "given": "Annekathrin",
+          "family": "Schacht"
+        }
+      ],
+      "editors": [],
+      "publisher": "Elsevier BV",
+      "year": 2017,
+      "date": null,
+      "container": "NeuroImage",
+      "volume": "156",
+      "issue": null,
+      "first_page": "466",
+      "last_page": "474",
+      "edition": null,
+      "version": null,
+      "url": "https://doi.org/10.1016/j.neuroimage.2017.04.032"
+    },
+    {
+      "bib_id": 14,
+      "service": "crossref",
+      "service_id": null,
+      "score": 66.6005,
+      "bib_type": "article",
+      "doi": "10.1007/s00115-006-2098-7",
+      "title": "Reliabilität und Validität des revidierten Beck-Depressionsinventars (BDI-II)",
+      "authors": [
+        {
+          "given": "C.",
+          "family": "Kühner"
+        },
+        {
+          "given": "C.",
+          "family": "Bürger"
+        },
+        {
+          "given": "F.",
+          "family": "Keller"
+        },
+        {
+          "given": "M.",
+          "family": "Hautzinger"
+        }
+      ],
+      "editors": [],
+      "publisher": "Springer Science and Business Media LLC",
+      "year": 2007,
+      "date": null,
+      "container": "Der Nervenarzt",
+      "volume": "78",
+      "issue": "6",
+      "first_page": "651",
+      "last_page": "656",
+      "edition": null,
+      "version": null,
+      "url": "https://doi.org/10.1007/s00115-006-2098-7"
+    },
+    {
+      "bib_id": 15,
+      "service": "crossref",
+      "service_id": null,
+      "score": 115.7407,
+      "bib_type": "article",
+      "doi": "10.1016/j.brainres.2017.03.013",
+      "title": "Effects of task demands on the early neural processing of fearful and happy facial expressions",
+      "authors": [
+        {
+          "given": "Roxane J.",
+          "family": "Itier"
+        },
+        {
+          "given": "Karly N.",
+          "family": "Neath-Tavares"
+        }
+      ],
+      "editors": [],
+      "publisher": "Elsevier BV",
+      "year": 2017,
+      "date": null,
+      "container": "Brain Research",
+      "volume": "1663",
+      "issue": null,
+      "first_page": "38",
+      "last_page": "50",
+      "edition": null,
+      "version": null,
+      "url": "https://doi.org/10.1016/j.brainres.2017.03.013"
+    },
+    {
+      "bib_id": 16,
+      "service": "crossref",
+      "service_id": null,
+      "score": 100.9479,
+      "bib_type": "article",
+      "doi": "10.1111/1469-8986.3820175",
+      "title": "Fleeting images: A new look at early emotion discrimination",
+      "authors": [
+        {
+          "given": "Markus",
+          "family": "Junghöfer"
+        },
+        {
+          "given": "Margaret M.",
+          "family": "Bradley"
+        },
+        {
+          "given": "Thomas R.",
+          "family": "Elbert"
+        },
+        {
+          "given": "Peter J.",
+          "family": "Lang"
+        }
+      ],
+      "editors": [],
+      "publisher": "Wiley",
+      "year": 2001,
+      "date": null,
+      "container": "Psychophysiology",
+      "volume": "38",
+      "issue": "2",
+      "first_page": "175",
+      "last_page": "178",
+      "edition": null,
+      "version": null,
+      "url": "https://doi.org/10.1111/1469-8986.3820175"
+    },
+    {
+      "bib_id": 18,
+      "service": "crossref",
+      "service_id": null,
+      "score": 157.4001,
+      "bib_type": "article",
+      "doi": "10.3758/s13415-015-0361-8",
+      "title": "This person is saying bad things about you: The influence of physically and socially threatening context information on the processing of inherently neutral faces",
+      "authors": [
+        {
+          "given": "Fabian",
+          "family": "Klein"
+        },
+        {
+          "given": "Benjamin",
+          "family": "Iffland"
+        },
+        {
+          "given": "Sebastian",
+          "family": "Schindler"
+        },
+        {
+          "given": "Pascal",
+          "family": "Wabnitz"
+        },
+        {
+          "given": "Frank",
+          "family": "Neuner"
+        }
+      ],
+      "editors": [],
+      "publisher": "Springer Science and Business Media LLC",
+      "year": 2015,
+      "date": null,
+      "container": "Cognitive, Affective, &amp; Behavioral Neuroscience",
+      "volume": "15",
+      "issue": "4",
+      "first_page": "736",
+      "last_page": "748",
+      "edition": null,
+      "version": null,
+      "url": "https://doi.org/10.3758/s13415-015-0361-8"
+    },
+    {
+      "bib_id": 19,
+      "service": "crossref",
+      "service_id": null,
+      "score": 69.1268,
+      "bib_type": "article",
+      "doi": "10.1055/s-2007-986199",
+      "title": "Persönlichkeitsdiagnostik mit dem NEO-Fünf-Faktoren-Inventar: Die 30-Item-Kurzversion (NEO-FFI-30)",
+      "authors": [
+        {
+          "given": "Annett",
+          "family": "Körner"
+        },
+        {
+          "given": "Michael",
+          "family": "Geyer"
+        },
+        {
+          "given": "Marcus",
+          "family": "Roth"
+        },
+        {
+          "given": "Martin",
+          "family": "Drapeau"
+        },
+        {
+          "given": "Gabriele",
+          "family": "Schmutzer"
+        },
+        {
+          "given": "Cornelia",
+          "family": "Albani"
+        },
+        {
+          "given": "Siegfried",
+          "family": "Schumann"
+        },
+        {
+          "given": "Elmar",
+          "family": "Brähler"
+        }
+      ],
+      "editors": [],
+      "publisher": "Georg Thieme Verlag KG",
+      "year": 2008,
+      "date": null,
+      "container": "PPmP - Psychotherapie · Psychosomatik · Medizinische Psychologie",
+      "volume": "58",
+      "issue": "6",
+      "first_page": "238",
+      "last_page": "245",
+      "edition": null,
+      "version": null,
+      "url": "https://doi.org/10.1055/s-2007-986199"
+    },
+    {
+      "bib_id": 20,
+      "service": "crossref",
+      "service_id": null,
+      "score": 60.2591,
+      "bib_type": "journal",
+      "doi": "10.1055/s-00000060",
+      "title": "PPmP - Psychotherapie · Psychosomatik · Medizinische Psychologie",
+      "authors": [],
+      "editors": [],
+      "publisher": "Georg Thieme Verlag KG",
+      "year": null,
+      "date": null,
+      "container": null,
+      "volume": null,
+      "issue": null,
+      "first_page": null,
+      "last_page": null,
+      "edition": null,
+      "version": null,
+      "url": "https://doi.org/10.1055/s-00000060"
+    },
+    {
+      "bib_id": 21,
+      "service": "crossref",
+      "service_id": null,
+      "score": 107.8193,
+      "bib_type": "article",
+      "doi": "10.1111/psyp.12639",
+      "title": "How to get statistically significant effects in any ERP experiment (and why you shouldn't)",
+      "authors": [
+        {
+          "given": "Steven J.",
+          "family": "Luck"
+        },
+        {
+          "given": "Nicholas",
+          "family": "Gaspelin"
+        }
+      ],
+      "editors": [],
+      "publisher": "Wiley",
+      "year": 2016,
+      "date": null,
+      "container": "Psychophysiology",
+      "volume": "54",
+      "issue": "1",
+      "first_page": "146",
+      "last_page": "157",
+      "edition": null,
+      "version": null,
+      "url": "https://doi.org/10.1111/psyp.12639"
+    },
+    {
+      "bib_id": 22,
+      "service": "crossref",
+      "service_id": null,
+      "score": 83.0233,
+      "bib_type": "article",
+      "doi": "10.1111/j.1469-8986.1994.tb02218.x",
+      "title": "Electrophysiological correlates of feature analysis during visual search",
+      "authors": [
+        {
+          "given": "STEVEN J.",
+          "family": "LUCK"
+        },
+        {
+          "given": "STEVEN A.",
+          "family": "HILLYARD"
+        }
+      ],
+      "editors": [],
+      "publisher": "Wiley",
+      "year": 1994,
+      "date": null,
+      "container": "Psychophysiology",
+      "volume": "31",
+      "issue": "3",
+      "first_page": "291",
+      "last_page": "308",
+      "edition": null,
+      "version": null,
+      "url": "https://doi.org/10.1111/j.1469-8986.1994.tb02218.x"
+    },
+    {
+      "bib_id": 23,
+      "service": "crossref",
+      "service_id": null,
+      "score": 100.5396,
+      "bib_type": "article",
+      "doi": "10.3389/fpsyg.2016.00810",
+      "title": "Effect of Affective Personality Information on Face Processing: Evidence from ERPs",
+      "authors": [
+        {
+          "given": "Qiu L.",
+          "family": "Luo"
+        },
+        {
+          "given": "Han L.",
+          "family": "Wang"
+        },
+        {
+          "given": "Milena",
+          "family": "Dzhelyova"
+        },
+        {
+          "given": "Ping",
+          "family": "Huang"
+        },
+        {
+          "given": "Lei",
+          "family": "Mo"
+        }
+      ],
+      "editors": [],
+      "publisher": "Frontiers Media SA",
+      "year": 2016,
+      "date": null,
+      "container": "Frontiers in Psychology",
+      "volume": "7",
+      "issue": null,
+      "first_page": null,
+      "last_page": null,
+      "edition": null,
+      "version": null,
+      "url": "https://doi.org/10.3389/fpsyg.2016.00810"
+    },
+    {
+      "bib_id": 24,
+      "service": "crossref",
+      "service_id": null,
+      "score": 118.1604,
+      "bib_type": "article",
+      "doi": "10.1016/j.biopsycho.2018.03.003",
+      "title": "Is it about me? Time-course of self-relevance and valence effects on the perception of neutral faces with direct and averted gaze",
+      "authors": [
+        {
+          "given": "Sarah D.",
+          "family": "McCrackin"
+        },
+        {
+          "given": "Roxane J.",
+          "family": "Itier"
+        }
+      ],
+      "editors": [],
+      "publisher": "Elsevier BV",
+      "year": 2018,
+      "date": null,
+      "container": "Biological Psychology",
+      "volume": "135",
+      "issue": null,
+      "first_page": "47",
+      "last_page": "64",
+      "edition": null,
+      "version": null,
+      "url": "https://doi.org/10.1016/j.biopsycho.2018.03.003"
+    },
+    {
+      "bib_id": 26,
+      "service": "crossref",
+      "service_id": null,
+      "score": 137.2322,
+      "bib_type": "article",
+      "doi": "10.1155/2011/861705",
+      "title": "ElectroMagnetoEncephalography Software: Overview and Integration with Other EEG/MEG Toolboxes",
+      "authors": [
+        {
+          "given": "Peter",
+          "family": "Peyk"
+        },
+        {
+          "given": "Andrea",
+          "family": "De Cesarei"
+        },
+        {
+          "given": "Markus",
+          "family": "Junghöfer"
+        }
+      ],
+      "editors": [],
+      "publisher": "Wiley",
+      "year": 2011,
+      "date": null,
+      "container": "Computational Intelligence and Neuroscience",
+      "volume": "2011",
+      "issue": null,
+      "first_page": "1",
+      "last_page": "10",
+      "edition": null,
+      "version": null,
+      "url": "https://doi.org/10.1155/2011/861705"
+    },
+    {
+      "bib_id": 28,
+      "service": "crossref",
+      "service_id": null,
+      "score": 137.8463,
+      "bib_type": "article",
+      "doi": "10.1016/j.biopsycho.2012.02.002",
+      "title": "Does processing of emotional facial expressions depend on intention? Time-resolved evidence from event-related brain potentials",
+      "authors": [
+        {
+          "given": "Julian",
+          "family": "Rellecke"
+        },
+        {
+          "given": "Werner",
+          "family": "Sommer"
+        },
+        {
+          "given": "Annekathrin",
+          "family": "Schacht"
+        }
+      ],
+      "editors": [],
+      "publisher": "Elsevier BV",
+      "year": 2012,
+      "date": null,
+      "container": "Biological Psychology",
+      "volume": "90",
+      "issue": "1",
+      "first_page": "23",
+      "last_page": "32",
+      "edition": null,
+      "version": null,
+      "url": "https://doi.org/10.1016/j.biopsycho.2012.02.002"
+    },
+    {
+      "bib_id": 29,
+      "service": "crossref",
+      "service_id": null,
+      "score": 138.0591,
+      "bib_type": "article",
+      "doi": "10.1162/jocn_a_01093",
+      "title": "Motivational Salience Modulates Early Visual Cortex Responses across Task Sets",
+      "authors": [
+        {
+          "given": "Valentina",
+          "family": "Rossi"
+        },
+        {
+          "given": "Naomi",
+          "family": "Vanlessen"
+        },
+        {
+          "given": "Mareike",
+          "family": "Bayer"
+        },
+        {
+          "given": "Annika",
+          "family": "Grass"
+        },
+        {
+          "given": "Gilles",
+          "family": "Pourtois"
+        },
+        {
+          "given": "Annekathrin",
+          "family": "Schacht"
+        }
+      ],
+      "editors": [],
+      "publisher": "MIT Press - Journals",
+      "year": 2017,
+      "date": null,
+      "container": "Journal of Cognitive Neuroscience",
+      "volume": "29",
+      "issue": "6",
+      "first_page": "968",
+      "last_page": "979",
+      "edition": null,
+      "version": null,
+      "url": "https://doi.org/10.1162/jocn_a_01093"
+    },
+    {
+      "bib_id": 30,
+      "service": "crossref",
+      "service_id": null,
+      "score": 90.3295,
+      "bib_type": "article",
+      "doi": "10.1016/j.bandc.2008.11.005",
+      "title": "Emotions in word and face processing: Early and late cortical responses",
+      "authors": [
+        {
+          "given": "Annekathrin",
+          "family": "Schacht"
+        },
+        {
+          "given": "Werner",
+          "family": "Sommer"
+        }
+      ],
+      "editors": [],
+      "publisher": "Elsevier BV",
+      "year": 2009,
+      "date": null,
+      "container": "Brain and Cognition",
+      "volume": "69",
+      "issue": "3",
+      "first_page": "538",
+      "last_page": "550",
+      "edition": null,
+      "version": null,
+      "url": "https://doi.org/10.1016/j.bandc.2008.11.005"
+    },
+    {
+      "bib_id": 31,
+      "service": "crossref",
+      "service_id": null,
+      "score": 105.1195,
+      "bib_type": "article",
+      "doi": "10.3758/s13415-018-0629-x",
+      "title": "Spatiotemporal pattern of appraising social and emotional relevance: Evidence from event-related brain potentials",
+      "authors": [
+        {
+          "given": "Annekathrin",
+          "family": "Schacht"
+        },
+        {
+          "given": "Pascal",
+          "family": "Vrtička"
+        }
+      ],
+      "editors": [],
+      "publisher": "Springer Science and Business Media LLC",
+      "year": 2018,
+      "date": null,
+      "container": "Cognitive, Affective, &amp; Behavioral Neuroscience",
+      "volume": "18",
+      "issue": "6",
+      "first_page": "1172",
+      "last_page": "1187",
+      "edition": null,
+      "version": null,
+      "url": "https://doi.org/10.3758/s13415-018-0629-x"
+    },
+    {
+      "bib_id": 32,
+      "service": "crossref",
+      "service_id": null,
+      "score": 131.5851,
+      "bib_type": "article",
+      "doi": "10.1016/j.nlm.2020.107280",
+      "title": "Contextual source information modulates neural face processing in the absence of conscious recognition: A threat-of-shock study",
+      "authors": [
+        {
+          "given": "Sabine",
+          "family": "Schellhaas"
+        },
+        {
+          "given": "Nina",
+          "family": "Arnold"
+        },
+        {
+          "given": "Christian",
+          "family": "Schmahl"
+        },
+        {
+          "given": "Florian",
+          "family": "Bublatzky"
+        }
+      ],
+      "editors": [],
+      "publisher": "Elsevier BV",
+      "year": 2020,
+      "date": null,
+      "container": "Neurobiology of Learning and Memory",
+      "volume": "174",
+      "issue": null,
+      "first_page": "107280",
+      "last_page": null,
+      "edition": null,
+      "version": null,
+      "url": "https://doi.org/10.1016/j.nlm.2020.107280"
+    },
+    {
+      "bib_id": 33,
+      "service": "crossref",
+      "service_id": null,
+      "score": 151.9051,
+      "bib_type": "article",
+      "doi": "10.1093/scan/nsaa098",
+      "title": "Attentional conditions differentially affect early, intermediate and late neural responses to fearful and neutral faces",
+      "authors": [
+        {
+          "given": "Sebastian",
+          "family": "Schindler"
+        },
+        {
+          "given": "Maximilian",
+          "family": "Bruchmann"
+        },
+        {
+          "given": "Anna-Lena",
+          "family": "Steinweg"
+        },
+        {
+          "given": "Robert",
+          "family": "Moeck"
+        },
+        {
+          "given": "Thomas",
+          "family": "Straube"
+        }
+      ],
+      "editors": [],
+      "publisher": "Oxford University Press (OUP)",
+      "year": 2020,
+      "date": null,
+      "container": "Social Cognitive and Affective Neuroscience",
+      "volume": "15",
+      "issue": "7",
+      "first_page": "765",
+      "last_page": "774",
+      "edition": null,
+      "version": null,
+      "url": "https://doi.org/10.1093/scan/nsaa098"
+    },
+    {
+      "bib_id": 34,
+      "service": "crossref",
+      "service_id": null,
+      "score": 134.8092,
+      "bib_type": "article",
+      "doi": "10.1016/j.neuropsychologia.2020.107529",
+      "title": "Time-dependent effects of perceptual load on processing fearful and neutral faces",
+      "authors": [
+        {
+          "given": "Sebastian",
+          "family": "Schindler"
+        },
+        {
+          "given": "Flora",
+          "family": "Caldarone"
+        },
+        {
+          "given": "Maximilian",
+          "family": "Bruchmann"
+        },
+        {
+          "given": "Robert",
+          "family": "Moeck"
+        },
+        {
+          "given": "Thomas",
+          "family": "Straube"
+        }
+      ],
+      "editors": [],
+      "publisher": "Elsevier BV",
+      "year": 2020,
+      "date": null,
+      "container": "Neuropsychologia",
+      "volume": "146",
+      "issue": null,
+      "first_page": "107529",
+      "last_page": null,
+      "edition": null,
+      "version": null,
+      "url": "https://doi.org/10.1016/j.neuropsychologia.2020.107529"
+    },
+    {
+      "bib_id": 35,
+      "service": "crossref",
+      "service_id": null,
+      "score": 111.7897,
+      "bib_type": "incollection",
+      "doi": "10.1016/s0079-6123(06)56002-9",
+      "title": "Emotion and attention: event-related brain potential studies",
+      "authors": [
+        {
+          "given": "Harald T.",
+          "family": "Schupp"
+        },
+        {
+          "given": "Tobias",
+          "family": "Flaisch"
+        },
+        {
+          "given": "Jessica",
+          "family": "Stockburger"
+        },
+        {
+          "given": "Markus",
+          "family": "Junghöfer"
+        }
+      ],
+      "editors": [],
+      "publisher": "Elsevier",
+      "year": 2006,
+      "date": null,
+      "container": "Progress in Brain Research",
+      "volume": null,
+      "issue": null,
+      "first_page": "31",
+      "last_page": "51",
+      "edition": null,
+      "version": null,
+      "url": "https://doi.org/10.1016/s0079-6123(06)56002-9"
+    },
+    {
+      "bib_id": 36,
+      "service": "crossref",
+      "service_id": null,
+      "score": 115.7865,
+      "bib_type": "article",
+      "doi": "10.1111/j.1469-8986.2004.00174.x",
+      "title": "The selective processing of briefly presented affective pictures: An ERP analysis",
+      "authors": [
+        {
+          "given": "Harald T.",
+          "family": "Schupp"
+        },
+        {
+          "given": "Markus",
+          "family": "Junghöfer"
+        },
+        {
+          "given": "Almut I.",
+          "family": "Weike"
+        },
+        {
+          "given": "Alfons O.",
+          "family": "Hamm"
+        }
+      ],
+      "editors": [],
+      "publisher": "Wiley",
+      "year": 2004,
+      "date": null,
+      "container": "Psychophysiology",
+      "volume": "41",
+      "issue": "3",
+      "first_page": "441",
+      "last_page": "449",
+      "edition": null,
+      "version": null,
+      "url": "https://doi.org/10.1111/j.1469-8986.2004.00174.x"
+    },
+    {
+      "bib_id": 37,
+      "service": "crossref",
+      "service_id": null,
+      "score": 76.1407,
+      "bib_type": "article",
+      "doi": "10.1016/j.cortex.2015.11.001",
+      "title": "Repetition effects in human ERPs to faces",
+      "authors": [
+        {
+          "given": "Stefan R.",
+          "family": "Schweinberger"
+        },
+        {
+          "given": "Markus F.",
+          "family": "Neumann"
+        }
+      ],
+      "editors": [],
+      "publisher": "Elsevier BV",
+      "year": 2016,
+      "date": null,
+      "container": "Cortex",
+      "volume": "80",
+      "issue": null,
+      "first_page": "141",
+      "last_page": "153",
+      "edition": null,
+      "version": null,
+      "url": "https://doi.org/10.1016/j.cortex.2015.11.001"
+    },
+    {
+      "bib_id": 39,
+      "service": "crossref",
+      "service_id": null,
+      "score": 137.1851,
+      "bib_type": "article",
+      "doi": "10.1093/scan/nsu088",
+      "title": "Perceiving emotions in neutral faces: expression processing is biased by affective person knowledge",
+      "authors": [
+        {
+          "given": "Franziska",
+          "family": "Suess"
+        },
+        {
+          "given": "Milena",
+          "family": "Rabovsky"
+        },
+        {
+          "given": "Rasha",
+          "family": "Abdel Rahman"
+        }
+      ],
+      "editors": [],
+      "publisher": "Oxford University Press (OUP)",
+      "year": 2014,
+      "date": null,
+      "container": "Social Cognitive and Affective Neuroscience",
+      "volume": "10",
+      "issue": "4",
+      "first_page": "531",
+      "last_page": "536",
+      "edition": null,
+      "version": null,
+      "url": "https://doi.org/10.1093/scan/nsu088"
+    },
+    {
+      "bib_id": 40,
+      "service": "crossref",
+      "service_id": null,
+      "score": 101.8389,
+      "bib_type": "article",
+      "doi": "10.3389/fpsyg.2012.00471",
+      "title": "Faces in Context: A Review and Systematization of Contextual Influences on Affective Face Processing",
+      "authors": [
+        {
+          "given": "Matthias J.",
+          "family": "Wieser"
+        },
+        {
+          "given": "Tobias",
+          "family": "Brosch"
+        }
+      ],
+      "editors": [],
+      "publisher": "Frontiers Media SA",
+      "year": 2012,
+      "date": null,
+      "container": "Frontiers in Psychology",
+      "volume": "3",
+      "issue": null,
+      "first_page": null,
+      "last_page": null,
+      "edition": null,
+      "version": null,
+      "url": "https://doi.org/10.3389/fpsyg.2012.00471"
+    },
+    {
+      "bib_id": 41,
+      "service": "crossref",
+      "service_id": null,
+      "score": 151.4503,
+      "bib_type": "article",
+      "doi": "10.1016/j.neuroimage.2014.01.022",
+      "title": "Not so harmless anymore: How context impacts the perception and electrocortical processing of neutral faces",
+      "authors": [
+        {
+          "given": "Matthias J.",
+          "family": "Wieser"
+        },
+        {
+          "given": "Antje B.M.",
+          "family": "Gerdes"
+        },
+        {
+          "given": "Inga",
+          "family": "Büngel"
+        },
+        {
+          "given": "Katharina A.",
+          "family": "Schwarz"
+        },
+        {
+          "given": "Andreas",
+          "family": "Mühlberger"
+        },
+        {
+          "given": "Paul",
+          "family": "Pauli"
+        }
+      ],
+      "editors": [],
+      "publisher": "Elsevier BV",
+      "year": 2014,
+      "date": null,
+      "container": "NeuroImage",
+      "volume": "92",
+      "issue": null,
+      "first_page": "74",
+      "last_page": "82",
+      "edition": null,
+      "version": null,
+      "url": "https://doi.org/10.1016/j.neuroimage.2014.01.022"
+    },
+    {
+      "bib_id": 42,
+      "service": "crossref",
+      "service_id": null,
+      "score": 116.0804,
+      "bib_type": "article",
+      "doi": "10.3389/fpsyg.2016.01258",
+      "title": "Contextual Valence and Sociality Jointly Influence the Early and Later Stages of Neutral Face Processing",
+      "authors": [
+        {
+          "given": "Mengsi",
+          "family": "Xu"
+        },
+        {
+          "given": "Zhiai",
+          "family": "Li"
+        },
+        {
+          "given": "Liuting",
+          "family": "Diao"
+        },
+        {
+          "given": "Lingxia",
+          "family": "Fan"
+        },
+        {
+          "given": "Dong",
+          "family": "Yang"
+        }
+      ],
+      "editors": [],
+      "publisher": "Frontiers Media SA",
+      "year": 2016,
+      "date": null,
+      "container": "Frontiers in Psychology",
+      "volume": "07",
+      "issue": null,
+      "first_page": null,
+      "last_page": null,
+      "edition": null,
+      "version": null,
+      "url": "https://doi.org/10.3389/fpsyg.2016.01258"
+    }
+  ]
+}

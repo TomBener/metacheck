@@ -1,0 +1,6807 @@
+{
+  "paper_id": "09567976231190546",
+  "info": [
+    {
+      "title": "Changing What You Like: Modifying Contour Properties Shifts Aesthetic Valuations of Scenes",
+      "keywords": ["visual aesthetics", "contour properties", "line drawings", "valuation", "empirical aesthetics"],
+      "doi": "10.1177/09567976231190546",
+      "file_hash": "c1aca764c3e88162",
+      "input_format": "grobid 0.9.0",
+      "file_name": "data-raw/psychsci/grobid_0.9.0-full/09567976231190546.xml",
+      "bibr_version": "10.0",
+      "paper_type": "unknown",
+      "paper_type_confidence": 0,
+      "oecd_l1": null,
+      "oecd_l2": null,
+      "oecd_confidence": null
+    }
+  ],
+  "author": [
+    {
+      "author_id": 1,
+      "given": "Delaram",
+      "family": "Farzanfar",
+      "affiliation": "Department of Psychology Department of Psychology Department of Psychology University of Toronto University of Toronto University of Toronto",
+      "email": "delaram.farzanfar@mail.utoronto.ca",
+      "corresponding": false,
+      "orcid": "0000-0002-1234-5511",
+      "role": []
+    },
+    {
+      "author_id": 2,
+      "given": "Dirk",
+      "family": "Walther",
+      "affiliation": "Department of Psychology Department of Psychology Department of Psychology University of Toronto University of Toronto University of Toronto",
+      "email": "",
+      "corresponding": false,
+      "orcid": "0000-0001-8585-9858",
+      "role": []
+    }
+  ],
+  "text": [
+    {
+      "text_id": 1,
+      "paragraph_id": 1,
+      "section_id": 0,
+      "text": "To what extent do aesthetic experiences arise from the human ability to perceive and extract meaning from visual features?",
+      "page_number": null
+    },
+    {
+      "text_id": 2,
+      "paragraph_id": 1,
+      "section_id": 0,
+      "text": "Ordinary scenes, such as a beach sunset, can elicit a sense of beauty in most observers.",
+      "page_number": null
+    },
+    {
+      "text_id": 3,
+      "paragraph_id": 1,
+      "section_id": 0,
+      "text": "Although it appears that aesthetic responses can be shared among humans, little is known about the cognitive mechanisms that underlie this phenomenon.",
+      "page_number": null
+    },
+    {
+      "text_id": 4,
+      "paragraph_id": 1,
+      "section_id": 0,
+      "text": "We developed a contour model of aesthetics that assigns values to visual properties in scenes, allowing us to predict aesthetic responses in adults from around the world.",
+      "page_number": null
+    },
+    {
+      "text_id": 5,
+      "paragraph_id": 1,
+      "section_id": 0,
+      "text": "Through a series of experiments, we manipulate contours to increase or decrease aesthetic value while preserving scene semantic identity.",
+      "page_number": null
+    },
+    {
+      "text_id": 6,
+      "paragraph_id": 1,
+      "section_id": 0,
+      "text": "Contour manipulations directly shift subjective aesthetic judgments.",
+      "page_number": null
+    },
+    {
+      "text_id": 7,
+      "paragraph_id": 1,
+      "section_id": 0,
+      "text": "This provides the first experimental evidence for a causal relationship between contour properties and aesthetic valuation.",
+      "page_number": null
+    },
+    {
+      "text_id": 8,
+      "paragraph_id": 1,
+      "section_id": 0,
+      "text": "Our findings support the notion that visual regularities underlie the human capacity to derive pleasure from visual information.",
+      "page_number": null
+    },
+    {
+      "text_id": 9,
+      "paragraph_id": 3,
+      "section_id": 1,
+      "text": "Aesthetic considerations impact human behavior (Chatterjee & Vartanian, 2014;Vessel et al., 2019).",
+      "page_number": null
+    },
+    {
+      "text_id": 10,
+      "paragraph_id": 3,
+      "section_id": 1,
+      "text": "Visual information elicit a sense of aesthetic pleasure in perceivers (Biederman & Vessel, 2006;Brielmann & Pelli, 2018;Chatterjee, 2022;Palmer et al., 2013).",
+      "page_number": null
+    },
+    {
+      "text_id": 11,
+      "paragraph_id": 3,
+      "section_id": 1,
+      "text": "Across different cultures, artists similarly arrange visual features and use heuristics to communicate information (Cavanagh, 2005;Mamassian, 2008;Sayim & Cavanagh, 2011).",
+      "page_number": null
+    },
+    {
+      "text_id": 12,
+      "paragraph_id": 3,
+      "section_id": 1,
+      "text": "Mere lines carry information about category membership (Walther et al., 2011) and affect (Bar & Neta, 2006;Damiano et al., 2021).",
+      "page_number": null
+    },
+    {
+      "text_id": 13,
+      "paragraph_id": 3,
+      "section_id": 1,
+      "text": "General mechanisms of human vision help parse a complex visual scene into attentional targets with the goal of understanding the environment (Võ et al., 2019).",
+      "page_number": null
+    },
+    {
+      "text_id": 14,
+      "paragraph_id": 3,
+      "section_id": 1,
+      "text": "This meaning-making process is facilitated by detecting visual primitives that help with evaluating the potential cost and reward for interacting with different objects and environments (Bar & Neta, 2006;Biederman, 1987;Chatterjee, 2022).",
+      "page_number": null
+    },
+    {
+      "text_id": 15,
+      "paragraph_id": 4,
+      "section_id": 1,
+      "text": "What is the nature of these visual features, and what role do they play in aesthetic judgments?",
+      "page_number": null
+    },
+    {
+      "text_id": 16,
+      "paragraph_id": 4,
+      "section_id": 1,
+      "text": "We investigate the contributions of contour properties and their spatial relations in aesthetic judgments of natural scenes.",
+      "page_number": null
+    },
+    {
+      "text_id": 17,
+      "paragraph_id": 4,
+      "section_id": 1,
+      "text": "It is possible to detect to structural regularities in complex visual scenes using biologically-inspired computer vision techniques (Rezanejad et al., 2019;Walther et al., 2023;Walther & Shen, 2014).",
+      "page_number": null
+    },
+    {
+      "text_id": 18,
+      "paragraph_id": 4,
+      "section_id": 1,
+      "text": "These techniques can help uncover a visual language for aesthetics.",
+      "page_number": null
+    },
+    {
+      "text_id": 19,
+      "paragraph_id": 4,
+      "section_id": 1,
+      "text": "Given the universal mechanisms of human vision (Graham & Redies, 2010;Iigaya et al., 2021), humans may have evolved an ongoing readiness for aesthetic evaluations, which conferred evolutionary advantages, such as finding a potential mate or ideal habitat (Brielmann & Pelli, 2018;Chatterjee, 2022;Wassiliwizky & Menninghaus, 2021).",
+      "page_number": null
+    },
+    {
+      "text_id": 20,
+      "paragraph_id": 5,
+      "section_id": 1,
+      "text": "People need to identify objects in their environment to act on them (Gibson, 1986).",
+      "page_number": null
+    },
+    {
+      "text_id": 21,
+      "paragraph_id": 5,
+      "section_id": 1,
+      "text": "Similar objects tend to share visual features that help us recognize their category membership despite variations in their appearance.",
+      "page_number": null
+    },
+    {
+      "text_id": 22,
+      "paragraph_id": 5,
+      "section_id": 1,
+      "text": "According to recognition-by-components theory, an extension of Marr's framework for vision (Marr, 1982), this process occurs via a set of visual primitives, akin to geometric building blocks of shapes, which are viewpoint invariant (i.e., nonaccidental; Biederman, 1987).",
+      "page_number": null
+    },
+    {
+      "text_id": 23,
+      "paragraph_id": 5,
+      "section_id": 1,
+      "text": "Importantly, contour junctions are nonaccidental properties that convey information about spatial relationships of objects and surfaces in 3D space.",
+      "page_number": null
+    },
+    {
+      "text_id": 24,
+      "paragraph_id": 5,
+      "section_id": 1,
+      "text": "These features help people recognize shapes presented in varying orientations and under perceptually ambiguous situations, and they even underlie our ability to accurately categorize objects and scenes (Attneave, 1954;Cavanagh, 2005;Walther & Shen, 2014;Wilder et al., 2019).",
+      "page_number": null
+    },
+    {
+      "text_id": 25,
+      "paragraph_id": 5,
+      "section_id": 1,
+      "text": "Viewpoint-invariant visual features are represented along the ventral visual stream and shown to play an important role in detecting shape skeletons and aesthetic qualities (Ayzenberg et al., 2022;Sun & Firestone, 2021), as well as affective responses to contour (Bar & Neta, 2006;Damiano et al., 2021;Vartanian et al., 2013).",
+      "page_number": null
+    },
+    {
+      "text_id": 26,
+      "paragraph_id": 6,
+      "section_id": 1,
+      "text": "This article investigates whether nonaccidental properties previously found to underlie the ability to perform general visual perceptual tasks, such as object recognition and scene categorization (Biederman, 1987;Walther & Shen, 2014), predict subjective aesthetic valuations.",
+      "page_number": null
+    },
+    {
+      "text_id": 27,
+      "paragraph_id": 6,
+      "section_id": 1,
+      "text": "We take an empirical approach to studying the effect of systematic variation in visual features in scenes on observers' aesthetic responses (Berlyne, 1970;Brielmann & Pelli, 2018).",
+      "page_number": null
+    },
+    {
+      "text_id": 28,
+      "paragraph_id": 6,
+      "section_id": 1,
+      "text": "If visual-processing mechanisms underlie the capacity to derive pleasure from seeing, then understanding the causal relationship between statistical properties of contours and subjective aesthetic valuations of scenes is the first step to understanding aesthetics from below (Fechner, 1876).",
+      "page_number": null
+    },
+    {
+      "text_id": 29,
+      "paragraph_id": 7,
+      "section_id": 1,
+      "text": "In Experiment 1, we built a contour model of aesthetic valuation using individual contour propertiesorientations, lengths, curvature, and junctions.",
+      "page_number": null
+    },
+    {
+      "text_id": 30,
+      "paragraph_id": 7,
+      "section_id": 1,
+      "text": "In Experiment 2, contours in each scene were modified to change the aesthetic value of a given scene, generating contour-modified scenes with different aesthetic value.",
+      "page_number": null
+    },
+    {
+      "text_id": 31,
+      "paragraph_id": 7,
+      "section_id": 1,
+      "text": "In Experiment 2, we tested whether an independent group of observers perceived contour-modified scenes with high-value contours more aesthetically pleasing than scenes with low-value contours.",
+      "page_number": null
+    },
+    {
+      "text_id": 32,
+      "paragraph_id": 7,
+      "section_id": 1,
+      "text": "In Experiment 3, we expanded the range of features in the contour model from Experiment 2 to include quantitative measures of spatial relations between adjacent contours-separation, parallelism, and local mirror symmetry.",
+      "page_number": null
+    },
+    {
+      "text_id": 33,
+      "paragraph_id": 7,
+      "section_id": 1,
+      "text": "We then generated new contour-modified scenes and obtained aesthetic valuations of these scenes from a second independent group of observers, controlling for individual differences.",
+      "page_number": null
+    },
+    {
+      "text_id": 34,
+      "paragraph_id": 7,
+      "section_id": 1,
+      "text": "We used scene inversion to manipulate access to scene semantic content and explicitly measured it in a separate scene-categorization experiment.",
+      "page_number": null
+    },
+    {
+      "text_id": 35,
+      "paragraph_id": 7,
+      "section_id": 1,
+      "text": "Last, we investigated the relative statistical contributions of individual contours and their spatial relations in aesthetic responses.",
+      "page_number": null
+    },
+    {
+      "text_id": 36,
+      "paragraph_id": 7,
+      "section_id": 1,
+      "text": "The data, materials, and code for this study are publicly available on the Open Science Framework (https://osf.io/rb2wc/).",
+      "page_number": null
+    },
+    {
+      "text_id": 37,
+      "paragraph_id": 7,
+      "section_id": 1,
+      "text": "The study was not preregistered.",
+      "page_number": null
+    },
+    {
+      "text_id": 38,
+      "paragraph_id": 9,
+      "section_id": 2,
+      "text": "In Experiment 1, we asked whether a supervised learning algorithm trained on statistical properties of individual contours can generate accurate predictions of aesthetic values for line drawings and color photographs of scenes.",
+      "page_number": null
+    },
+    {
+      "text_id": 39,
+      "paragraph_id": 11,
+      "section_id": 3,
+      "text": "Stimuli.",
+      "page_number": null
+    },
+    {
+      "text_id": 40,
+      "paragraph_id": 11,
+      "section_id": 3,
+      "text": "The stimuli consisted of color photographs (n = 475) and line drawings (n = 475) of natural scenes from the Toronto Scenes Dataset available freely on the Open Science Framework (https://osf.io/9squn/).",
+      "page_number": null
+    },
+    {
+      "text_id": 41,
+      "paragraph_id": 11,
+      "section_id": 3,
+      "text": "This image set has been characterized in several previous studies (Torralbo et al., 2013;Walther et al., 2011;Walther & Shen, 2014).",
+      "page_number": null
+    },
+    {
+      "text_id": 42,
+      "paragraph_id": 11,
+      "section_id": 3,
+      "text": "The line drawings were produced by trained artists by tracing the most salient outlines in a set of color photographs (Walther et al., 2011).",
+      "page_number": null
+    },
+    {
+      "text_id": 43,
+      "paragraph_id": 11,
+      "section_id": 3,
+      "text": "These scenes were rated as good exemplars of six scene categories-offices, mountains, beaches, forests, and cities (Torralbo et al., 2013).",
+      "page_number": null
+    },
+    {
+      "text_id": 44,
+      "paragraph_id": 11,
+      "section_id": 3,
+      "text": "Line drawings provide explicit access to structural contour properties present in scenes (Walther et al., 2011).",
+      "page_number": null
+    },
+    {
+      "text_id": 45,
+      "paragraph_id": 13,
+      "section_id": 4,
+      "text": "What makes some pictures more pleasing to our eyes than others?",
+      "page_number": null
+    },
+    {
+      "text_id": 46,
+      "paragraph_id": 13,
+      "section_id": 4,
+      "text": "Artists and architects have long known that our brains can be tricked into liking some images and environments over others by using carefully curated combinations of visual features.",
+      "page_number": null
+    },
+    {
+      "text_id": 47,
+      "paragraph_id": 13,
+      "section_id": 4,
+      "text": "We are beginning to understand that aspects of aesthetic experiences, such as how much a person likes a particular image, can be shared among people with different backgrounds and interests.",
+      "page_number": null
+    },
+    {
+      "text_id": 48,
+      "paragraph_id": 13,
+      "section_id": 4,
+      "text": "We also know that the human visual system uses structural regularities in contour-lines that mark the outline of various shapes in a sceneto help us process information efficiently.",
+      "page_number": null
+    },
+    {
+      "text_id": 49,
+      "paragraph_id": 13,
+      "section_id": 4,
+      "text": "In this study, we asked whether these structural regularities can be used to predict how pleasant an image looks on average to a group of adults from around the world.",
+      "page_number": null
+    },
+    {
+      "text_id": 50,
+      "paragraph_id": 13,
+      "section_id": 4,
+      "text": "By changing different contour properties in images we could control how much people judged an image to be enjoyable to view.",
+      "page_number": null
+    },
+    {
+      "text_id": 51,
+      "paragraph_id": 15,
+      "section_id": 5,
+      "text": "In Experiment 1, participants were recruited using Prolific (https://www.prolific.co) and provided with an average hourly monetary compensation of between CAD$12 and $15.",
+      "page_number": null
+    },
+    {
+      "text_id": 52,
+      "paragraph_id": 15,
+      "section_id": 5,
+      "text": "For line drawings, a total of 75 participants provided ratings.",
+      "page_number": null
+    },
+    {
+      "text_id": 53,
+      "paragraph_id": 15,
+      "section_id": 5,
+      "text": "For color photographs, ratings were obtained in a separate experiment with 121 participants providing ratings for a larger set of 1,243 images.",
+      "page_number": null
+    },
+    {
+      "text_id": 54,
+      "paragraph_id": 15,
+      "section_id": 5,
+      "text": "The recruited samples were gender balanced (50% females and 50% males).",
+      "page_number": null
+    },
+    {
+      "text_id": 55,
+      "paragraph_id": 15,
+      "section_id": 5,
+      "text": "This study was approved by the University of Toronto Research Ethics Board (Protocol No. 30999) and adhered to the tenets of the Declaration of Helsinki.",
+      "page_number": null
+    },
+    {
+      "text_id": 56,
+      "paragraph_id": 15,
+      "section_id": 5,
+      "text": "After providing informed consent, participants were redirected to the Inquisit software (https://www.millisecond.com) to begin task administration remotely.",
+      "page_number": null
+    },
+    {
+      "text_id": 57,
+      "paragraph_id": 15,
+      "section_id": 5,
+      "text": "Inclusion criteria for participation were fluency in English, an approval rating of > 95%, and past participation in at least 10 studies on the platform.",
+      "page_number": null
+    },
+    {
+      "text_id": 58,
+      "paragraph_id": 15,
+      "section_id": 5,
+      "text": "Exclusion criteria were based on recommendations for identifying careless responders in self-report studies (Maniaci & Rogge, 2014;Meade & Craig, 2012).",
+      "page_number": null
+    },
+    {
+      "text_id": 59,
+      "paragraph_id": 16,
+      "section_id": 5,
+      "text": "Responses were analyzed using several data-screening methods, including 40 Max LongString (maximum number of identical consecutive responses), failure on two out of three attention-check items (e.g., \"please press the number 3 on your keyboard\"), and an unusually short completion time (i.e., > 3 SDs below the mean).",
+      "page_number": null
+    },
+    {
+      "text_id": 60,
+      "paragraph_id": 16,
+      "section_id": 5,
+      "text": "A total of 6 participants were excluded from the analysis.",
+      "page_number": null
+    },
+    {
+      "text_id": 61,
+      "paragraph_id": 16,
+      "section_id": 5,
+      "text": "The criteria were based on a pilot study and were set before data collection began.",
+      "page_number": null
+    },
+    {
+      "text_id": 62,
+      "paragraph_id": 16,
+      "section_id": 5,
+      "text": "Procedure.",
+      "page_number": null
+    },
+    {
+      "text_id": 63,
+      "paragraph_id": 16,
+      "section_id": 5,
+      "text": "For line drawings, each participant viewed and rated between 150 and 158 images, chosen pseudorandomly from a set of 475 line drawings in such a way that an equal number of images were drawn from a given scene category.",
+      "page_number": null
+    },
+    {
+      "text_id": 64,
+      "paragraph_id": 16,
+      "section_id": 5,
+      "text": "For color photographs, each participant viewed and rated between 213 and 214 images pseudorandomly drawn from a larger set of 1,243 images.",
+      "page_number": null
+    },
+    {
+      "text_id": 65,
+      "paragraph_id": 16,
+      "section_id": 5,
+      "text": "There were three versions of the experiment for line drawings and five for photographs.",
+      "page_number": null
+    },
+    {
+      "text_id": 66,
+      "paragraph_id": 16,
+      "section_id": 5,
+      "text": "Between 14 to 38 independent ratings were obtained for each scene.",
+      "page_number": null
+    },
+    {
+      "text_id": 67,
+      "paragraph_id": 16,
+      "section_id": 5,
+      "text": "After viewing each image, participants provided aesthetic judgments on a 5-point Likert scale in response to the following question: \"How much do you enjoy looking at this image?\"",
+      "page_number": null
+    },
+    {
+      "text_id": 68,
+      "paragraph_id": 16,
+      "section_id": 5,
+      "text": "The response options were 1 = not at all, 2 = barely enjoy, 3 = somewhat enjoy, 4 = enjoy, and 5 = enjoy very much.",
+      "page_number": null
+    },
+    {
+      "text_id": 69,
+      "paragraph_id": 16,
+      "section_id": 5,
+      "text": "In addition, subjective ratings for two other measures of fluency and complexity were also obtained but not included in the present analysis.",
+      "page_number": null
+    },
+    {
+      "text_id": 70,
+      "paragraph_id": 16,
+      "section_id": 5,
+      "text": "Each experiment consisted of two blocks of images with an opportunity to take a short break after the first block.",
+      "page_number": null
+    },
+    {
+      "text_id": 71,
+      "paragraph_id": 16,
+      "section_id": 5,
+      "text": "Images remained on the screen until participants provided a response, with a time limit of 30 s.",
+      "page_number": null
+    },
+    {
+      "text_id": 72,
+      "paragraph_id": 16,
+      "section_id": 5,
+      "text": "Presentation time was not limited because of differences in aesthetic judgments as a function of presentation times (Verhavert et al., 2018).",
+      "page_number": null
+    },
+    {
+      "text_id": 73,
+      "paragraph_id": 16,
+      "section_id": 5,
+      "text": "The average time taken to complete the experiments was between 32 and 50 min.",
+      "page_number": null
+    },
+    {
+      "text_id": 74,
+      "paragraph_id": 16,
+      "section_id": 5,
+      "text": "The average trial response time was 2.1 s.",
+      "page_number": null
+    },
+    {
+      "text_id": 75,
+      "paragraph_id": 16,
+      "section_id": 5,
+      "text": "The total duration of the experiments included instructions, self-paced breaks, and questionnaires to assess the observer's personal characteristics.",
+      "page_number": null
+    },
+    {
+      "text_id": 76,
+      "paragraph_id": 16,
+      "section_id": 5,
+      "text": "Aesthetic judgment responses were converted to normalized scores (z-scores) for a given participant.",
+      "page_number": null
+    },
+    {
+      "text_id": 77,
+      "paragraph_id": 16,
+      "section_id": 5,
+      "text": "The mean of responses was subtracted from each response, and this value was divided by the standard deviation of responses.",
+      "page_number": null
+    },
+    {
+      "text_id": 78,
+      "paragraph_id": 16,
+      "section_id": 5,
+      "text": "Then, for each image, an average aesthetic value was calculated by obtaining the average z-scores across different individuals.",
+      "page_number": null
+    },
+    {
+      "text_id": 79,
+      "paragraph_id": 18,
+      "section_id": 6,
+      "text": "Properties of individual scene contours (orientation, length, curvature) and contour junctions (angles and type) were computed on the basis of the methodology described by Walther and Shen (2014).",
+      "page_number": null
+    },
+    {
+      "text_id": 80,
+      "paragraph_id": 18,
+      "section_id": 6,
+      "text": "Previous studies have used these quantifications of scene-contour properties (Damiano et al., 2021;Wilder et al., 2019).",
+      "page_number": null
+    },
+    {
+      "text_id": 81,
+      "paragraph_id": 18,
+      "section_id": 6,
+      "text": "The methodology for extracting the statistical distribution of contour properties in real-world scenes is now implemented in a freely available software package, the Mid-Level Vision Toolbox (https://mlvtool box.org; Walther et al., 2023).",
+      "page_number": null
+    },
+    {
+      "text_id": 82,
+      "paragraph_id": 18,
+      "section_id": 6,
+      "text": "Briefly, for a given scene line drawing, 8-bin histograms of a given contour property (e.g., orientation) were constructed to quantify the distribution of this property in a scene.",
+      "page_number": null
+    },
+    {
+      "text_id": 83,
+      "paragraph_id": 18,
+      "section_id": 6,
+      "text": "Orientation refers to the counterclockwise angle of the line from the horizontal.",
+      "page_number": null
+    },
+    {
+      "text_id": 84,
+      "paragraph_id": 18,
+      "section_id": 6,
+      "text": "The orientation histogram bins ranged from horizontal to vertical and were centered at 0° (Orientation 1), 22.5° (Orientation 2), 45° (Orientation 3), 67.5° (Orientation 4), 90° (Orientation 5), 112.5° (Orientation 6), 135° (Orientation 7), and 157.5° (Orientation 8).",
+      "page_number": null
+    },
+    {
+      "text_id": 85,
+      "paragraph_id": 18,
+      "section_id": 6,
+      "text": "For angles larger than 180°, the opposite angles were used.",
+      "page_number": null
+    },
+    {
+      "text_id": 86,
+      "paragraph_id": 18,
+      "section_id": 6,
+      "text": "The length of each contour was calculated by summing the lengths of its segments.",
+      "page_number": null
+    },
+    {
+      "text_id": 87,
+      "paragraph_id": 18,
+      "section_id": 6,
+      "text": "The length histogram ranged from 2 pixels to the sum of the width and length of the images in pixels.",
+      "page_number": null
+    },
+    {
+      "text_id": 88,
+      "paragraph_id": 18,
+      "section_id": 6,
+      "text": "The logarithms of lengths were equally divided into 8 bins (Length 1, Length 2, etc.), ranging from short to long contours.",
+      "page_number": null
+    },
+    {
+      "text_id": 89,
+      "paragraph_id": 18,
+      "section_id": 6,
+      "text": "Curvature was parameterized as the change in orientation from one contour segment to the next within a contour, divided by the length of the current contour segment.",
+      "page_number": null
+    },
+    {
+      "text_id": 90,
+      "paragraph_id": 18,
+      "section_id": 6,
+      "text": "Curvature histogram bins ranged from 0° (Curvature 1) to 90° (Curvature 8) per pixel, which means ranging from low curvature (flat) to high curvature (sharp).",
+      "page_number": null
+    },
+    {
+      "text_id": 91,
+      "paragraph_id": 18,
+      "section_id": 6,
+      "text": "Contour junctions were classified by their type (X, T, Y, Arrow, Star) and quantified using their number in the scene (i.e., how many times contours intersected with a given angle range).",
+      "page_number": null
+    },
+    {
+      "text_id": 92,
+      "paragraph_id": 18,
+      "section_id": 6,
+      "text": "More information about contour classifications can be found in the work of Walther et al. (2023) and Walther and Shen (2014).",
+      "page_number": null
+    },
+    {
+      "text_id": 93,
+      "paragraph_id": 19,
+      "section_id": 6,
+      "text": "Histograms of all contour properties were normalized for the total number of pixels in each image to make it possible to compare scene properties across images with varying amounts of visual information (e.g., comparing busier and more sparsely populated images).",
+      "page_number": null
+    },
+    {
+      "text_id": 94,
+      "paragraph_id": 19,
+      "section_id": 6,
+      "text": "Figure 1 shows the distribution of contour properties in scenes from the original stimulus set.",
+      "page_number": null
+    },
+    {
+      "text_id": 95,
+      "paragraph_id": 20,
+      "section_id": 6,
+      "text": "Contour properties of objects and scenes have been investigated as the basis of high-level vision processes (Biederman, 1987).",
+      "page_number": null
+    },
+    {
+      "text_id": 96,
+      "paragraph_id": 20,
+      "section_id": 6,
+      "text": "However, practical difficulties in extracting contours and their properties from photographs have confined such research to hand-coded (Hummel & Biederman, 1992, pp. 480-517) or semiautomated contours features (Elder & Goldberg, 2002).",
+      "page_number": null
+    },
+    {
+      "text_id": 97,
+      "paragraph_id": 21,
+      "section_id": 6,
+      "text": "1 5 Average Number of Pixels Average Number of Pixels Average Number of Pixels Count of Junctions Orientation Junctions Curvature Length Individual features have been extracted directly from photographic images, such as rectilinearity (Nasr et al., 2014) or the distribution of oriented spatial frequencies (Oliva & Torralba, 2001).",
+      "page_number": null
+    },
+    {
+      "text_id": 98,
+      "paragraph_id": 21,
+      "section_id": 6,
+      "text": "In the context of aesthetics, Iigaya et al. relied on features extracted from deep neural networks (Iigaya et al., 2021).",
+      "page_number": null
+    },
+    {
+      "text_id": 99,
+      "paragraph_id": 21,
+      "section_id": 6,
+      "text": "To our knowledge, our approach is the first that defines a comprehensive set of contour features in closed mathematical form on the basis of contours in complex, real-world scenes.",
+      "page_number": null
+    },
+    {
+      "text_id": 100,
+      "paragraph_id": 22,
+      "section_id": 6,
+      "text": "Random forest algorithm.",
+      "page_number": null
+    },
+    {
+      "text_id": 101,
+      "paragraph_id": 22,
+      "section_id": 6,
+      "text": "We trained a random forest (RF) regression model (RF Model 1; Fig. 2a), a supervised learning algorithm, to generate aesthetic-value predictions for scenes, using contour properties as features.",
+      "page_number": null
+    },
+    {
+      "text_id": 102,
+      "paragraph_id": 22,
+      "section_id": 6,
+      "text": "Random forest models generate robust predictions in the presence of statistical dependencies and nonparametric data (Fife & D'Onofrio, 2022).",
+      "page_number": null
+    },
+    {
+      "text_id": 103,
+      "paragraph_id": 22,
+      "section_id": 6,
+      "text": "Random forest models aggregate predictions from several decision trees.",
+      "page_number": null
+    },
+    {
+      "text_id": 104,
+      "paragraph_id": 22,
+      "section_id": 6,
+      "text": "The fitensemble function from MATLAB's Statistics and Machine Learning Toolbox was used to train an ensemble of boosted regression trees.",
+      "page_number": null
+    },
+    {
+      "text_id": 105,
+      "paragraph_id": 22,
+      "section_id": 6,
+      "text": "Out-of-bag predictions were obtained using the oobPredict function, which computes predicted responses for a given training sample using only those trees that did not contain the sample in their bootstrap training set.",
+      "page_number": null
+    },
+    {
+      "text_id": 106,
+      "paragraph_id": 22,
+      "section_id": 6,
+      "text": "For observations that are in the bootstrap training set for all trees, the predicted response is the weighted mean of all of the training responses.",
+      "page_number": null
+    },
+    {
+      "text_id": 107,
+      "paragraph_id": 22,
+      "section_id": 6,
+      "text": "The correlation between the predicted and observed values was computed to provide a measure of prediction accuracy.",
+      "page_number": null
+    },
+    {
+      "text_id": 108,
+      "paragraph_id": 22,
+      "section_id": 6,
+      "text": "The loss function was also applied to obtain the cumulative classification accuracy using mean squared error (MSE).",
+      "page_number": null
+    },
+    {
+      "text_id": 109,
+      "paragraph_id": 22,
+      "section_id": 6,
+      "text": "MSE is the sum of squared residuals using \"out-of-bag\" observations at the tree level.",
+      "page_number": null
+    },
+    {
+      "text_id": 110,
+      "paragraph_id": 22,
+      "section_id": 6,
+      "text": "The MSE provided the cross-validated accuracy of predictions.",
+      "page_number": null
+    },
+    {
+      "text_id": 111,
+      "paragraph_id": 22,
+      "section_id": 6,
+      "text": "The contribution of each predictor in the model was assessed using \"variable importance\" (Fig. 2b).",
+      "page_number": null
+    },
+    {
+      "text_id": 112,
+      "paragraph_id": 22,
+      "section_id": 6,
+      "text": "Variable importance for scene properties was calculated using mean decrease in impurity (Gini index), which compares the reduction in prediction accuracy when the predictor of interest is left out (Fife & D'Onofrio, 2022).",
+      "page_number": null
+    },
+    {
+      "text_id": 113,
+      "paragraph_id": 23,
+      "section_id": 6,
+      "text": "Figure 2c shows a representative decision tree for RF Model 1.",
+      "page_number": null
+    },
+    {
+      "text_id": 114,
+      "paragraph_id": 23,
+      "section_id": 6,
+      "text": "In this model, 100 decision trees generated aesthetic-value predictions for different combinations of contour properties.",
+      "page_number": null
+    },
+    {
+      "text_id": 115,
+      "paragraph_id": 23,
+      "section_id": 6,
+      "text": "Each decision tree used a randomly selected subset of images with replacement (bootstrapping) and assigned a predicted aesthetic value for those images.",
+      "page_number": null
+    },
+    {
+      "text_id": 116,
+      "paragraph_id": 23,
+      "section_id": 6,
+      "text": "In the model, 29 contour properties were used as predictive features.",
+      "page_number": null
+    },
+    {
+      "text_id": 117,
+      "paragraph_id": 23,
+      "section_id": 6,
+      "text": "These included eight normalized histograms for each of the three individual contour features-orientation, length, and curvature-and the number of five classes of contour junctions (T, X, Y, Arrow, Star).",
+      "page_number": null
+    },
+    {
+      "text_id": 118,
+      "paragraph_id": 23,
+      "section_id": 6,
+      "text": "The algorithm averaged the predictions from these decision trees to derive a robust aesthetic-value prediction for a given scene (bootstrap aggregation).",
+      "page_number": null
+    },
+    {
+      "text_id": 119,
+      "paragraph_id": 23,
+      "section_id": 6,
+      "text": "At the top node of the decision tree shown in Figure 2c, the algorithm asked whether the number of T junctions in the image exceeded an optimal threshold.",
+      "page_number": null
+    },
+    {
+      "text_id": 120,
+      "paragraph_id": 23,
+      "section_id": 6,
+      "text": "This root node split the tree into two branches.",
+      "page_number": null
+    },
+    {
+      "text_id": 121,
+      "paragraph_id": 23,
+      "section_id": 6,
+      "text": "Other contour features were then used to split the decision tree further until an aesthetic-value prediction for the random sample was reached at the leaf nodes.",
+      "page_number": null
+    },
+    {
+      "text_id": 122,
+      "paragraph_id": 25,
+      "section_id": 7,
+      "text": "To test the consistency of statistical properties of contours across line drawings and color photographs of the scenes, we also collected aesthetic ratings of color photographs using the same procedure (Fig. 3a).",
+      "page_number": null
+    },
+    {
+      "text_id": 123,
+      "paragraph_id": 25,
+      "section_id": 7,
+      "text": "A new random forest model (RF Model Color) was built for the aesthetic responses to color photographs with the addition of nine color statistics as predictors (Fig. 3b).",
+      "page_number": null
+    },
+    {
+      "text_id": 124,
+      "paragraph_id": 26,
+      "section_id": 7,
+      "text": "Color statistics for each photograph were computed in the CIELAB color space (Nakauchi & Tamura, 2022).",
+      "page_number": null
+    },
+    {
+      "text_id": 125,
+      "paragraph_id": 26,
+      "section_id": 7,
+      "text": "Each color is represented in a space consisting of three indices: lightness (L) and chromaticity (a, b).",
+      "page_number": null
+    },
+    {
+      "text_id": 126,
+      "paragraph_id": 26,
+      "section_id": 7,
+      "text": "L represents a change in color intensity from black to white, chromaticity index a corresponds to a change from green to red, and chromaticity index b corresponds to a change from blue to yellow.",
+      "page_number": null
+    },
+    {
+      "text_id": 127,
+      "paragraph_id": 26,
+      "section_id": 7,
+      "text": "For each of these indices, three statistics were computed: mean, variance, and skewness of the colorimetric values in the CIELAB color space, as described previously (Nakauchi & Tamura, 2022).",
+      "page_number": null
+    },
+    {
+      "text_id": 128,
+      "paragraph_id": 28,
+      "section_id": 8,
+      "text": "On a scale from 1 to 5, the average aesthetic rating for the line-drawing stimulus set was 2.9 (SD = 0.5); for color photographs, it was 3.05 (SD = 0.85).",
+      "page_number": null
+    },
+    {
+      "text_id": 129,
+      "paragraph_id": 28,
+      "section_id": 8,
+      "text": "Average normalized ratings for intact line drawings and color photographs based on scene categories were for beaches (line drawings = 0.07, SD = 0.42; color photographs = 0.58, SD = 0.34), for cities (line drawings = 0.36, SD = 0.35; color photographs = -0.18, SD = 0.41), for forests (line drawings = -0.4, SD = 0.28; color photographs = 0.35, SD = 0.29), for highways (line drawings = 0.09, SD = 0.30; color photographs = -0.62, SD = 0.29), for mountains (line drawings = -0.24, SD = 0.32; color photographs = 0.71, SD = 0.26), and for offices (line drawings = 0.1, SD = 0.3; color photographs = -0.84, SD = 0.31).",
+      "page_number": null
+    },
+    {
+      "text_id": 130,
+      "paragraph_id": 28,
+      "section_id": 8,
+      "text": "Interestingly, human-made scene categories such as cities, offices, and highways were deemed to be liked more when viewed in line-drawing form than in photograph form.",
+      "page_number": null
+    },
+    {
+      "text_id": 131,
+      "paragraph_id": 29,
+      "section_id": 8,
+      "text": "Scene-contour properties (RF Model 1) predicted subjective aesthetic valuations of intact line drawings",
+      "page_number": null
+    },
+    {
+      "text_id": 132,
+      "paragraph_id": 30,
+      "section_id": 8,
+      "text": "T Junctions Curvature 7 Orientation 1 X Junctions Length 1 Length 2 Y Junctions Orientation 6 Length 3 Orientation 5 Length 5 Curvature 6 Length 8 Curvature 3 Length 7 Arrow Junction Length 6 Orientation 8 Curvature 4 Orientation 4 Length 4 Curvature 2 Curvature 8 Orientation 2 Curvature 5 Orientation 7 Orientation 3 Curvature 1 Junctions Length Curvature Orientation Variable Importance (AU) Junctions Curvature Length Orientation Decision Tree 1 Decision Tree N Predicted Aesthetic Value Data Set Extract Contour Properties Random Forest Algorithm b a Fig 2 (continued on next page) -0.37 -0.09 -0.18 -0.19 -0.32 -0.45 -0.63 0.15 -0.50 -0.51 0.1 -0.19 -0.18 -0.37 -0.13 -0.17 -0.20 0.10 0.27 -0.19 0.05 -0.63 -0.42 -0.22 0.36 -0.06 -0.31 0.27 0.43 -0.23 -0.36 -0.05 0.03 0.26 0.59 0.09 0.48 -0.21 -0.05 0.43 0.11 -0.04 0.20 0.11 0.09 0.55 0.67 0.35 0.18 0.009 -0.53 0.29 -0.04 0.70 0.38 0.71 0.48 0.59 0.50 0.25 0.52 1.23 -0.49 -0.71 -0.22 0.51 T Junctions < 69.4 Orientation 1 < 2,012.2 Length 5 < 2,619.7 Length 3 < 404.35 Curvature 7 < 3.6 Curvature 8 < 7.7 Length 8 < 861.8 T Junctions < 17.5 Length 1 < 31.7 Curvature 5 < 763.1 Curvature 6 < 298.3 Arrow Junction < 3.3 Orientation 6 < 973.8 Curvature 1 < 4,719.6 Length 7 < 1,646.1 Orientation 6 < 1,245.9 Length 8 < 634.5 Length 5 < 1,175.6 Curvature 1 < 5,378 Arrow Junction < 9.4 T junction < 129.3 Orientation 2 < 337.7 c (Figs. 1 and 2).",
+      "page_number": null
+    },
+    {
+      "text_id": 133,
+      "paragraph_id": 30,
+      "section_id": 8,
+      "text": "Cross-validation shows that predicted aesthetic values correlate significantly with observed aesthetic ratings (line drawings: r = .64, p < .001; color photographs: r = .77, p < .001; Fig. 4b).",
+      "page_number": null
+    },
+    {
+      "text_id": 134,
+      "paragraph_id": 30,
+      "section_id": 8,
+      "text": "The MSE was .031 for line drawings and .058 for color photographs.",
+      "page_number": null
+    },
+    {
+      "text_id": 135,
+      "paragraph_id": 31,
+      "section_id": 8,
+      "text": "The most robust finding concerning the contribution of contour properties in the model was that T junctions are the most informative visual cues for aesthetic-value predictions in scenes (Fig. 2b).",
+      "page_number": null
+    },
+    {
+      "text_id": 136,
+      "paragraph_id": 31,
+      "section_id": 8,
+      "text": "This result was found for both line drawing (Fig. 2b) and color photograph (Fig. 3b) RF models.",
+      "page_number": null
+    },
+    {
+      "text_id": 137,
+      "paragraph_id": 31,
+      "section_id": 8,
+      "text": "See Figure 3c for a visualization of the average aesthetic responses for different scene categories in line drawings and photographs.",
+      "page_number": null
+    },
+    {
+      "text_id": 138,
+      "paragraph_id": 33,
+      "section_id": 9,
+      "text": "In Experiment 2, we investigate whether a shift in aesthetic responses in an expected direction can be caused by modifying contour properties according to model predictions from Experiment 1.",
+      "page_number": null
+    },
+    {
+      "text_id": 139,
+      "paragraph_id": 35,
+      "section_id": 10,
+      "text": "Stimuli.",
+      "page_number": null
+    },
+    {
+      "text_id": 140,
+      "paragraph_id": 35,
+      "section_id": 10,
+      "text": "Using the trained RF Model 1, we generated predictions of aesthetic value for individual contours by considering the distribution of contour properties for this one contour in an image.",
+      "page_number": null
+    },
+    {
+      "text_id": 141,
+      "paragraph_id": 35,
+      "section_id": 10,
+      "text": "Once we acquired the predicted",
+      "page_number": null
+    },
+    {
+      "text_id": 142,
+      "paragraph_id": 36,
+      "section_id": 10,
+      "text": "Junctions Curvature Length Orientation Decision Tree 1 Decision Tree N Predicted Aesthetic Value Data Set Extract Visual Properties Random Forest Algorithm Color Statistics b+ b-a+ a-L T Junctions X Junctions Orientation 5 B Variance Orientation 1 Length 1 B Mean Length 2 Curvature 5 Y Junctions Curvature 4 Orientation 3 Variable Importance Junctions Length Curvature Orientation Intensity L Chromaticity b Chromaticity a Legend Orientation 6 A Skew Orientation 2 Orientaiton 4 A Mean L Mean Curvature 6 A Variance Length 7 Length 8 L Skew Length 3 L Variance Orientation 8 B Skew Length 6 Curvature 2 Arrow Junction Orientation 7 Curvature 7 Length 5 Length 4 Curvature 8 Curvature 1 Curvature 3 2 3 4 Photographs Line Drawings Cities Beaches Forests Highways Mountains Mean Aesthetic Value Top-ranked Contour Bottom-ranked Contour 1 2 3 4 5 Observed Aesthetic Value -1.5 -1 -0.5 0 0.5 1 1.5 Observed Aesthetic Value -1 -0.8 -0.6 -0.4 -0.2 0 0.2 0.4 0.6 0.8 Predicted Aesthetic Value 0 10 20 30 40 50 60 70 80 0 10 20 30 40 50 60 70 80 90 100 Split Predict Intact Line Drawing r = 0.64, p < .001 Low Aesthetic Value High Aesthetic Value 1 2 3 4 5 Low H igh Low High Observed Aesthetic Value Beach City Forest Highway Mountain Office * a b c Fig 4 Line drawing analyses from Experiment 2. (a) contours in a city scene colour-coded by predicted aesthetic valuation from RF model 1.",
+      "page_number": null
+    },
+    {
+      "text_id": 143,
+      "paragraph_id": 36,
+      "section_id": 10,
+      "text": "Half-split scenes containing either top-ranked or bottom-ranked contours generated for Experiment 2, (b) RF model 1 cross-validation showing the correlation between predicted and observed aesthetic values for high and low aesthetic conditions, and (c) left: Aesthetic judgements of half-split scenes, right: differences in aesthetic judgements of modified scenes across scene categories.",
+      "page_number": null
+    },
+    {
+      "text_id": 144,
+      "paragraph_id": 37,
+      "section_id": 10,
+      "text": "aesthetic values, we ranked the contours from lowest to highest with respect to predicted aesthetic value.",
+      "page_number": null
+    },
+    {
+      "text_id": 145,
+      "paragraph_id": 37,
+      "section_id": 10,
+      "text": "We then performed a median split of the contours so that equal numbers of contour pixels were contained in the top and the bottom half of the rank list.",
+      "page_number": null
+    },
+    {
+      "text_id": 146,
+      "paragraph_id": 37,
+      "section_id": 10,
+      "text": "Contours that were not uniquely assigned to the top or bottom halves were omitted from both.",
+      "page_number": null
+    },
+    {
+      "text_id": 147,
+      "paragraph_id": 37,
+      "section_id": 10,
+      "text": "We then rendered contour drawings that contained the bottom or the top half of the contours by predicted aesthetic value.",
+      "page_number": null
+    },
+    {
+      "text_id": 148,
+      "paragraph_id": 37,
+      "section_id": 10,
+      "text": "Finally, we generated predictions for the aesthetic appeal for each scene.",
+      "page_number": null
+    },
+    {
+      "text_id": 149,
+      "paragraph_id": 37,
+      "section_id": 10,
+      "text": "As anticipated, predictions for scenes consisting of the top-ranked contours were significantly higher than those consisting of the bottom-ranked contours.",
+      "page_number": null
+    },
+    {
+      "text_id": 150,
+      "paragraph_id": 38,
+      "section_id": 10,
+      "text": "Participants.",
+      "page_number": null
+    },
+    {
+      "text_id": 151,
+      "paragraph_id": 38,
+      "section_id": 10,
+      "text": "Seventy-seven participants (52.1% female) were recruited using the same criteria and procedure as described in Experiment 1 (mean age = 25.3 years).",
+      "page_number": null
+    },
+    {
+      "text_id": 152,
+      "paragraph_id": 39,
+      "section_id": 10,
+      "text": "Individual differences.",
+      "page_number": null
+    },
+    {
+      "text_id": 153,
+      "paragraph_id": 39,
+      "section_id": 10,
+      "text": "Several measures that captured the personal characteristics of the observers were included in this study.",
+      "page_number": null
+    },
+    {
+      "text_id": 154,
+      "paragraph_id": 39,
+      "section_id": 10,
+      "text": "In Experiment 2, information on age, gender, educational attainment, environmental-type familiarity, mood or affect, creativity, artistic training, and experience was collected.",
+      "page_number": null
+    },
+    {
+      "text_id": 155,
+      "paragraph_id": 39,
+      "section_id": 10,
+      "text": "Affect was measured using the Positive and Negative Affect Schedule (PANAS; Watson et al., 1988), a validated self-report questionnaire composed of 10-item scales to provide measures of positive affect (e.g., excited, inspired) and negative affect (e.g., afraid, sad).",
+      "page_number": null
+    },
+    {
+      "text_id": 156,
+      "paragraph_id": 39,
+      "section_id": 10,
+      "text": "The Divergent Association Task was used to measure creativity, as described in a previous study (Olson et al., 2021).",
+      "page_number": null
+    },
+    {
+      "text_id": 157,
+      "paragraph_id": 39,
+      "section_id": 10,
+      "text": "This task involves naming ten nouns that differ as much as possible from each other.",
+      "page_number": null
+    },
+    {
+      "text_id": 158,
+      "paragraph_id": 39,
+      "section_id": 10,
+      "text": "The average semantic distance between generated nouns was shown to be a reliable marker of creativity (Olson et al., 2021).",
+      "page_number": null
+    },
+    {
+      "text_id": 159,
+      "paragraph_id": 39,
+      "section_id": 10,
+      "text": "To assess their environmental familiarity, participants responded to the following question: \"How would you describe the environment where you grew up?\"",
+      "page_number": null
+    },
+    {
+      "text_id": 160,
+      "paragraph_id": 39,
+      "section_id": 10,
+      "text": "The response choices included urban, suburban, and rural.",
+      "page_number": null
+    },
+    {
+      "text_id": 161,
+      "paragraph_id": 40,
+      "section_id": 10,
+      "text": "To assess artistic experience and training, the participants responded to the following questions: \"How often are you involved in practicing or learning about visual arts (e.g., painting, drawing, photography, design, architecture, filmmaking)?\"",
+      "page_number": null
+    },
+    {
+      "text_id": 162,
+      "paragraph_id": 40,
+      "section_id": 10,
+      "text": "and \"How many years of artistic training do you have?\"",
+      "page_number": null
+    },
+    {
+      "text_id": 163,
+      "paragraph_id": 40,
+      "section_id": 10,
+      "text": "We also obtained information on formal education, which is a reliable indicator of an individual's cognitive reserve.",
+      "page_number": null
+    },
+    {
+      "text_id": 164,
+      "paragraph_id": 42,
+      "section_id": 11,
+      "text": "We first used a paired-samples t test to test whether there is a statistically significant difference in mean aesthetic-value judgments ascribed to viewing modified scenes with high-versus low-ranked contours.",
+      "page_number": null
+    },
+    {
+      "text_id": 165,
+      "paragraph_id": 42,
+      "section_id": 11,
+      "text": "To model the contribution of interindividual factors in addition to scene condition, we performed a linear mixed-effects model analysis using the lmer package (Bates et al., 2015) in R We used age, gender, educational attainment, environmental-type familiarity, positive affect score, negative affect score, creativity score, years of artistic training and experience as fixed-effects predictors of aesthetic ratings, in addition to aesthetic condition.",
+      "page_number": null
+    },
+    {
+      "text_id": 166,
+      "paragraph_id": 42,
+      "section_id": 11,
+      "text": "Participant identity was included as a random-effect term, using the following expression: lmer(response ~ condition +. . .+ (1 + condition|participant)).",
+      "page_number": null
+    },
+    {
+      "text_id": 167,
+      "paragraph_id": 42,
+      "section_id": 11,
+      "text": "This means that slopes and intercepts of aesthetic responses were allowed to vary across participants.",
+      "page_number": null
+    },
+    {
+      "text_id": 168,
+      "paragraph_id": 42,
+      "section_id": 11,
+      "text": "We used Satterthwaite's approximation in the lmerTest package to calculate p values (Kuznetsova et al., 2017) with 95% confidence intervals (CIs) for fixed effects.",
+      "page_number": null
+    },
+    {
+      "text_id": 169,
+      "paragraph_id": 42,
+      "section_id": 11,
+      "text": "The MuMIn package ( Johnson et al., 2014) was used to derive conditional and marginal R 2 .",
+      "page_number": null
+    },
+    {
+      "text_id": 170,
+      "paragraph_id": 42,
+      "section_id": 11,
+      "text": "We performed likelihood ratio tests and obtained Akaike Information Criterion (AIC) values to compare the models with fixed effects to the null models with only the random effects.",
+      "page_number": null
+    },
+    {
+      "text_id": 171,
+      "paragraph_id": 42,
+      "section_id": 11,
+      "text": "These tests were used to assess the validity of the mixed-effects model.",
+      "page_number": null
+    },
+    {
+      "text_id": 172,
+      "paragraph_id": 44,
+      "section_id": 12,
+      "text": "In Experiment 2, we found that contour-modified scenes that retained the top-ranked contours (M = 2.72, SD = 1.22) were perceived to be more aesthetically pleasing than contour-modified scenes with bottomranked contours preserved (M = 2.37, SD = 1.18), t(398) = 15.73, p < .00001, 95% confidence interval (CI) = [0.30, 0.39], Cohen's d = 0.69.",
+      "page_number": null
+    },
+    {
+      "text_id": 173,
+      "paragraph_id": 44,
+      "section_id": 12,
+      "text": "The effect was consistent across different scene categories (Fig. 4c).",
+      "page_number": null
+    },
+    {
+      "text_id": 174,
+      "paragraph_id": 45,
+      "section_id": 12,
+      "text": "The linear mixed-effects model showed a statistically significant effect for aesthetic condition with scenes containing high-ranked contours favored over scenes containing low-ranked contours (high vs. low estimate = 0.33, 95% CI = [0.27, 0.38], t(1, 76) = 12.36, p < 2 × 10 -16 ).",
+      "page_number": null
+    },
+    {
+      "text_id": 175,
+      "paragraph_id": 45,
+      "section_id": 12,
+      "text": "In this model, affect was a significant predictor of aesthetic responses: Higher scores on the negative-affect index were associated with higher aesthetic ratings (estimate = 0.052, 95% CI = [0.015, 0.09], t(1, 67) = 2.59, p = .01).",
+      "page_number": null
+    },
+    {
+      "text_id": 176,
+      "paragraph_id": 45,
+      "section_id": 12,
+      "text": "The marginal (fixed effects) and conditional (fixed and random effects) pseudo-R 2 values for the mixedeffects model were 0.068 and 0.388, respectively.",
+      "page_number": null
+    },
+    {
+      "text_id": 177,
+      "paragraph_id": 45,
+      "section_id": 12,
+      "text": "The standard deviation of the random effect for participants was 0.68, showing considerable variation between participants with respect to the fixed effects.",
+      "page_number": null
+    },
+    {
+      "text_id": 178,
+      "paragraph_id": 45,
+      "section_id": 12,
+      "text": "Other individual factors such as age-estimate = 0.012, 95% CI = [-0.011, 0.037], t(1, 67) = 0.98, p = .33; gender (male vs. female)-estimate = -0.07, 95% CI = [-0.37, 0.22], t(1, 67) = -0.45, p = .65; creativity-estimate = 0.007, 95% CI = [-0.015, 0.03], t(1, 67) = 0.59, p = .55; artistic training-estimate = 0.049, 95% CI = [-0.10, 0.20], t(1, 67) = 0.58, p = .55; and experience-estimate = -0.009, 95% CI = [-0.088, 0.069], t(1, 67) = -0.22, p = -.22; environmental familiarity-urban versus rural estimate = 0.17, 95% CI = [-0.25, 0.59], t(1, 67) = 0.74, p = .45; suburban versus rural estimate = 0.20, 95% CI = [-0.24, 0.66], t(1, 67) = 0.87, p = .38; and positive affect-estimate = 0.036, 95% CI = [-0.007, 0.08], t(1, 67) = 1.53, p = .12-were not significant predictors of aesthetic responses.",
+      "page_number": null
+    },
+    {
+      "text_id": 179,
+      "paragraph_id": 47,
+      "section_id": 13,
+      "text": "We showed in Experiment 1 that a random forest model of aesthetic valuation using contour properties as predictors successfully predicted subjective aesthetic judgments of scenes (Fig. 4b).",
+      "page_number": null
+    },
+    {
+      "text_id": 180,
+      "paragraph_id": 47,
+      "section_id": 13,
+      "text": "In Experiment 2, we found that altering individual contour properties on the basis of model predictions directly changed subjective aesthetic responses to scenes.",
+      "page_number": null
+    },
+    {
+      "text_id": 181,
+      "paragraph_id": 47,
+      "section_id": 13,
+      "text": "Following these findings, we aimed to probe further the contributions of higherlevel visual representations in aesthetic responses.",
+      "page_number": null
+    },
+    {
+      "text_id": 182,
+      "paragraph_id": 49,
+      "section_id": 14,
+      "text": "To understand the role of higher-level visual representations in shifting aesthetic responses in contourmodified scenes, we asked whether the effect of preference for top-ranked contours over bottom-ranked contours persists when semantic processing of the scenes is disrupted (Fig.",
+      "page_number": null
+    },
+    {
+      "text_id": 183,
+      "paragraph_id": 49,
+      "section_id": 14,
+      "text": "7).",
+      "page_number": null
+    },
+    {
+      "text_id": 184,
+      "paragraph_id": 49,
+      "section_id": 14,
+      "text": "Inversion is thought to disrupt the ability of observers to detect the configuration or semantic aspects of visual stimuli (Epstein et al., 2006).",
+      "page_number": null
+    },
+    {
+      "text_id": 185,
+      "paragraph_id": 49,
+      "section_id": 14,
+      "text": "Face and scene inversions make object identification, change detection, and extraction of visual properties harder (Epstein et al., 2006;Hayes & Henderson, 2022).",
+      "page_number": null
+    },
+    {
+      "text_id": 186,
+      "paragraph_id": 49,
+      "section_id": 14,
+      "text": "In Experiment 3, we used scene inversions to explore the impact of disrupting configurational and holistic information processing on aesthetic judgments of contour-modified scenes.",
+      "page_number": null
+    },
+    {
+      "text_id": 187,
+      "paragraph_id": 49,
+      "section_id": 14,
+      "text": "If the aesthetic valuation of inverted contour-manipulated scenes were to follow the same pattern as observed in Experiment 2, this would suggest that top-ranked contours are more aesthetically pleasing than bottom-ranked contours even when access to semantic content is reduced through scene inversion.",
+      "page_number": null
+    },
+    {
+      "text_id": 188,
+      "paragraph_id": 49,
+      "section_id": 14,
+      "text": "Finally, we verified that the contour manipulations did not disrupt access to semantic information in a categorization experiment.",
+      "page_number": null
+    },
+    {
+      "text_id": 189,
+      "paragraph_id": 51,
+      "section_id": 15,
+      "text": "Participants.",
+      "page_number": null
+    },
+    {
+      "text_id": 190,
+      "paragraph_id": 51,
+      "section_id": 15,
+      "text": "Seventy-seven participants were recruited using the same criteria and procedure described in Experiment 1 (mean age = 24.5 years) for aesthetic-rating experiments.",
+      "page_number": null
+    },
+    {
+      "text_id": 191,
+      "paragraph_id": 51,
+      "section_id": 15,
+      "text": "Similarly, 60 participants were recruited in a separate scene-categorization experiment using the same criteria.",
+      "page_number": null
+    },
+    {
+      "text_id": 192,
+      "paragraph_id": 51,
+      "section_id": 15,
+      "text": "The recruited samples were gender balanced.",
+      "page_number": null
+    },
+    {
+      "text_id": 193,
+      "paragraph_id": 52,
+      "section_id": 15,
+      "text": "Extracting contour properties.",
+      "page_number": null
+    },
+    {
+      "text_id": 194,
+      "paragraph_id": 52,
+      "section_id": 15,
+      "text": "Spatial relations between adjacent contours for each image were computed on the basis of medial-axis computations for complex scenes, a novel methodology developed by Rezanejad et al.",
+      "page_number": null
+    },
+    {
+      "text_id": 195,
+      "paragraph_id": 52,
+      "section_id": 15,
+      "text": "(Rezanejad, 2020;Rezanejad et al., 2019).",
+      "page_number": null
+    },
+    {
+      "text_id": 196,
+      "paragraph_id": 52,
+      "section_id": 15,
+      "text": "Parallelism refers to the rate of change in the distance between adjacent contours from the medial axis, separation is the contour's distance from the medial axis, and local mirror symmetry reflects the degree to which a part of the image is reflected across a straight axis.",
+      "page_number": null
+    },
+    {
+      "text_id": 197,
+      "paragraph_id": 52,
+      "section_id": 15,
+      "text": "We therefore computed a measure of local mirror symmetry from the local curvature of the medial axis.",
+      "page_number": null
+    },
+    {
+      "text_id": 198,
+      "paragraph_id": 52,
+      "section_id": 15,
+      "text": "As with individual contour properties, normalized 8-bin histograms of contour spatial relationships for these three measures were constructed (Fig.",
+      "page_number": null
+    },
+    {
+      "text_id": 199,
+      "paragraph_id": 52,
+      "section_id": 15,
+      "text": "5).",
+      "page_number": null
+    },
+    {
+      "text_id": 200,
+      "paragraph_id": 52,
+      "section_id": 15,
+      "text": "Code for computing these properties is available at http://mlvtoobox.org (Walther et al., 2023).",
+      "page_number": null
+    },
+    {
+      "text_id": 201,
+      "paragraph_id": 54,
+      "section_id": 16,
+      "text": "In this experiment, a new random forest model (RF Model 2) was used to predict average normalized aesthetic ratings for a given scene, using the same procedure as the one used in Experiment 1.",
+      "page_number": null
+    },
+    {
+      "text_id": 202,
+      "paragraph_id": 54,
+      "section_id": 16,
+      "text": "In this experiment, histogram bins of spatial relation properties of adjacent contours (separation, parallelism, mirror symmetry) were added to the feature list.",
+      "page_number": null
+    },
+    {
+      "text_id": 203,
+      "paragraph_id": 54,
+      "section_id": 16,
+      "text": "A total of 53 features were used as predictors of aesthetic value (Fig.",
+      "page_number": null
+    },
+    {
+      "text_id": 204,
+      "paragraph_id": 54,
+      "section_id": 16,
+      "text": "6).",
+      "page_number": null
+    },
+    {
+      "text_id": 205,
+      "paragraph_id": 56,
+      "section_id": 17,
+      "text": "Following the same procedure for stimuli generation as in Experiment 2, half-split images based on predicted scores from RF Model 2 were generated for this experiment; 132 of these contour-modified scenes were also presented in an inverted condition (i.e., rotated by 180 degrees) with a randomized presentation order (Fig.",
+      "page_number": null
+    },
+    {
+      "text_id": 206,
+      "paragraph_id": 56,
+      "section_id": 17,
+      "text": "7).",
+      "page_number": null
+    },
+    {
+      "text_id": 207,
+      "paragraph_id": 57,
+      "section_id": 17,
+      "text": "Procedure.",
+      "page_number": null
+    },
+    {
+      "text_id": 208,
+      "paragraph_id": 57,
+      "section_id": 17,
+      "text": "Aesthetic judgments of contour-modified scenes were collected following the procedure used in Experiments 1 and 2.",
+      "page_number": null
+    },
+    {
+      "text_id": 209,
+      "paragraph_id": 57,
+      "section_id": 17,
+      "text": "The experiment was run using Inquisit software with participants recruited from Prolific.",
+      "page_number": null
+    },
+    {
+      "text_id": 210,
+      "paragraph_id": 57,
+      "section_id": 17,
+      "text": "There were 950 upright and 132 inverted contour-modified scenes, and they were rated by 18 to 20 observers.",
+      "page_number": null
+    },
+    {
+      "text_id": 211,
+      "paragraph_id": 57,
+      "section_id": 17,
+      "text": "Five versions of the experiments were used, so each participant rated a maximum of 266 images.",
+      "page_number": null
+    },
+    {
+      "text_id": 212,
+      "paragraph_id": 58,
+      "section_id": 17,
+      "text": "In a separate categorization experiment, participants were shown half-split and inverted stimuli in a random presentation order and asked to respond with the category of the scene.",
+      "page_number": null
+    },
+    {
+      "text_id": 213,
+      "paragraph_id": 58,
+      "section_id": 17,
+      "text": "Each participant categorized 350 scenes, which contained balanced numbers of images from each scene category (aesthetic and inverted conditions).",
+      "page_number": null
+    },
+    {
+      "text_id": 214,
+      "paragraph_id": 58,
+      "section_id": 17,
+      "text": "There were six possible scene categories.",
+      "page_number": null
+    },
+    {
+      "text_id": 215,
+      "paragraph_id": 58,
+      "section_id": 17,
+      "text": "The key mapping (e.g., s = forest, d = city, f = mountain, j = highway, k = beach, l = office) was pseudorandomized for different participants.",
+      "page_number": null
+    },
+    {
+      "text_id": 216,
+      "paragraph_id": 58,
+      "section_id": 17,
+      "text": "Each participant completed 10 practice trials with feedback before proceeding to the main experiment.",
+      "page_number": null
+    },
+    {
+      "text_id": 217,
+      "paragraph_id": 58,
+      "section_id": 17,
+      "text": "Each trial started with the presentation of a fixation cross at the center of the display for 100 ms, followed by the scene image.",
+      "page_number": null
+    },
+    {
+      "text_id": 218,
+      "paragraph_id": 58,
+      "section_id": 17,
+      "text": "Category keys were also shown at the bottom of the page as a reminder of the key mapping.",
+      "page_number": null
+    },
+    {
+      "text_id": 219,
+      "paragraph_id": 58,
+      "section_id": 17,
+      "text": "Response time was limited to 10 s.",
+      "page_number": null
+    },
+    {
+      "text_id": 220,
+      "paragraph_id": 58,
+      "section_id": 17,
+      "text": "Figure 8c shows a schematic of the categorization",
+      "page_number": null
+    },
+    {
+      "text_id": 221,
+      "paragraph_id": 59,
+      "section_id": 17,
+      "text": "Separation Symmetry Parallelism Average Number of Pixels Average Number of Pixels Average Number of Pixels T Junctions Separation 1 Separation 5 Curvature 7 Orientation 1 Symmetry 3 Symmetry 1 X Junctions Orientation 6 Length 1 Separation 8 Symmetry 2 Separation 4 Separation 6 Length 2 Separation 7 Separation 2 Y Junctions Length 8 Curvature 8 Curvature 6 Orientation 5 Symmetry 6 Length 6 Length 5 Separation 3 Curvature 2 Parallelism 1 Curvature 4 Symmetry 7 Orientation 7 Orientation 8 Orientation 4 Symmetry 8 Parallelism 3 Length 3 Length 7 Orientation 3 Parallelism 6 Orientation 2 Curvature 3 Parallelism 4 Curvature 1 Length 4 Curvature 5 Parallelism 2 Symmetry 4 Parallelism 8 Parallelism 7 Symmetry 5 Parallelism 5 Junctions Length Curvature Orientation Symmetry Separation Parallelism Variable Importance (AU) Arrow Junction Legend Parallelism Mirror Symmetry Separation Junctions Curvature Length Orientation Decision Tree 1 Decision Tree N Predicted Aesthetic Value Data Set Extract Contour Properties Random Forest Algorithm a b Scene Inversion Split Predict Intact Line Drawing Low Aesthetic Value High Aesthetic Value Upright Inverted Top-ranked Contour Bottom-ranked Contour a b Fig 7 More results of Experiment 3.",
+      "page_number": null
+    },
+    {
+      "text_id": 222,
+      "paragraph_id": 59,
+      "section_id": 17,
+      "text": "In (a) are shown contour valuations in a city scene based on predicted aesthetic values obtained from RF Model 2 (Experiment 3); in (b) are shown the top-ranked (red) and bottom-ranked (blue) contours used to generate split drawings.",
+      "page_number": null
+    },
+    {
+      "text_id": 223,
+      "paragraph_id": 59,
+      "section_id": 17,
+      "text": "These split drawings were inverted (i.e., rotated by 180 degrees) to disrupt semantic processing.",
+      "page_number": null
+    },
+    {
+      "text_id": 224,
+      "paragraph_id": 60,
+      "section_id": 17,
+      "text": "experiment.",
+      "page_number": null
+    },
+    {
+      "text_id": 225,
+      "paragraph_id": 60,
+      "section_id": 17,
+      "text": "Categorization accuracy was computed as the fraction of correctly categorized images for each participant and averaged across participants.",
+      "page_number": null
+    },
+    {
+      "text_id": 226,
+      "paragraph_id": 61,
+      "section_id": 17,
+      "text": "Individual differences.",
+      "page_number": null
+    },
+    {
+      "text_id": 227,
+      "paragraph_id": 61,
+      "section_id": 17,
+      "text": "Similar to Experiment 2, several measures that captured the personal characteristics of the observers were included in this study, including age, gender, educational attainment, environmental-type familiarity, and mood or affect.",
+      "page_number": null
+    },
+    {
+      "text_id": 228,
+      "paragraph_id": 61,
+      "section_id": 17,
+      "text": "In addition, the aesthetic responsiveness assessment (AReA) was administered, which provides a broad measure of individual differences in responsiveness to aesthetic experiences (Schlotz et al., 2021).",
+      "page_number": null
+    },
+    {
+      "text_id": 229,
+      "paragraph_id": 61,
+      "section_id": 17,
+      "text": "This measure consists of three separate subscales-aesthetic appreciation, creative behavior, and intense aesthetic experience.",
+      "page_number": null
+    },
+    {
+      "text_id": 230,
+      "paragraph_id": 63,
+      "section_id": 18,
+      "text": "A variance partitioning analysis was conducted to examine the correlations among the residuals of RF Model 1 (contour properties) and RF Model 2 (contour properties and spatial relations).",
+      "page_number": null
+    },
+    {
+      "text_id": 231,
+      "paragraph_id": 63,
+      "section_id": 18,
+      "text": "We obtained the residuals of Model 1 (Y1) and Model 2 (Y2).",
+      "page_number": null
+    },
+    {
+      "text_id": 232,
+      "paragraph_id": 63,
+      "section_id": 18,
+      "text": "A partial-correlation analysis was conducted using Y1, Y2, and aesthetic responses from Experiment 1 (Y).",
+      "page_number": null
+    },
+    {
+      "text_id": 233,
+      "paragraph_id": 63,
+      "section_id": 18,
+      "text": "The ppcor package in R was used for this computation (Kim, 2015).",
+      "page_number": null
+    },
+    {
+      "text_id": 234,
+      "paragraph_id": 63,
+      "section_id": 18,
+      "text": "Partial correlations are used to explore the amount of variance explained by one variable after eliminating the effects of other variables in a model.",
+      "page_number": null
+    },
+    {
+      "text_id": 235,
+      "paragraph_id": 65,
+      "section_id": 19,
+      "text": "The random forest model (RF Model 2) trained on individual contour properties and spatial relation cues predicted aesthetic responses.",
+      "page_number": null
+    },
+    {
+      "text_id": 236,
+      "paragraph_id": 65,
+      "section_id": 19,
+      "text": "These predictions were significantly correlated with observed aesthetic ratings (r = .62, p < .001).",
+      "page_number": null
+    },
+    {
+      "text_id": 237,
+      "paragraph_id": 65,
+      "section_id": 19,
+      "text": "The MSE was .027.",
+      "page_number": null
+    },
+    {
+      "text_id": 238,
+      "paragraph_id": 65,
+      "section_id": 19,
+      "text": "A two-way analysis of variance showed a significant main effect for both the aesthetic condition, F(1, 494) = 323.77, p < .001, 95% CI = [0.22, 0.29], Cohen's d = 0.10, and the semantic condition (inverted vs. upright estimate = 0.40), 95% CI = [0.35, 0.44], F(1, 573) = 375.81, p < .001.",
+      "page_number": null
+    },
+    {
+      "text_id": 239,
+      "paragraph_id": 65,
+      "section_id": 19,
+      "text": "As in Experiment 2, we found that contourmodified scenes that retained the top-ranked contours (M = 2.35, SD = 1.26) were perceived to be more aesthetically pleasing than scenes with bottom-ranked contours preserved (M = 2.11, SD = 1.23; Fig. 8a).",
+      "page_number": null
+    },
+    {
+      "text_id": 240,
+      "paragraph_id": 65,
+      "section_id": 19,
+      "text": "This effect was also found within inverted scenes, M diff = 0.14, 95% CI = [0.04, 0.23], p adj = .002.",
+      "page_number": null
+    },
+    {
+      "text_id": 241,
+      "paragraph_id": 65,
+      "section_id": 19,
+      "text": "We also found that aesthetic judgments of upright drawings were more favorable than aesthetic judgments of inverted drawings for both the high aesthetic condition, M diff = 0.45, 95% CI = [0.38, 0.53], p adj < .00001, and the low aesthetic condition, M diff = 0.34, 95% CI = [0.26, 0.42], p adj < .00001 (Fig. 8b).",
+      "page_number": null
+    },
+    {
+      "text_id": 242,
+      "paragraph_id": 66,
+      "section_id": 19,
+      "text": "A linear mixed-effects model showed a statistically significant effect for aesthetic condition with highranked contours favored over low-ranked contours (high vs. low estimate = 0.33), 95% CI = [0.27, 0.38], t(1, 76) = 12.36, p < 2 × 10 -16 ).",
+      "page_number": null
+    },
+    {
+      "text_id": 243,
+      "paragraph_id": 66,
+      "section_id": 19,
+      "text": "The marginal (fixed effects) and conditional (fixed and random effects) pseudo-R 2 values for the mixed-effects model were 0.159 and 0.382, respectively.",
+      "page_number": null
+    },
+    {
+      "text_id": 244,
+      "paragraph_id": 66,
+      "section_id": 19,
+      "text": "The standard deviation of the random effect for participants was 0.63, showing considerable variation between participants with respect to the fixed effects.",
+      "page_number": null
+    },
+    {
+      "text_id": 245,
+      "paragraph_id": 66,
+      "section_id": 19,
+      "text": "Consistent with results from Experiment 2, affect was a significant predictor of aesthetic responses.",
+      "page_number": null
+    },
+    {
+      "text_id": 246,
+      "paragraph_id": 66,
+      "section_id": 19,
+      "text": "Higher scores on negative affect were positively associated with aesthetic ratings, β = 0.014, 95% CI = [0.003, 0.03], t(1, 65) = 2.33, p = .02, whereas higher scores on positive affect were negatively associated with aesthetic ratings, β = -0.01, 95% CI = [-0.02, -0.002], t(1, 65) = -2.21, p = .03.",
+      "page_number": null
+    },
+    {
+      "text_id": 247,
+      "paragraph_id": 67,
+      "section_id": 19,
+      "text": "Other individual factors were not significant predictors of aesthetic responses.",
+      "page_number": null
+    },
+    {
+      "text_id": 248,
+      "paragraph_id": 67,
+      "section_id": 19,
+      "text": "These included age, β = 0.004, 95% CI = [-0.018, 0.026], t(1, 66) = 0.33, p = .74; gender (male vs. female), β = 0.32, 95% CI = [0.03, 0.62], t(1, 65) = 2.06, p = .04; gender (other vs. female), β = -0.41, 95% CI = [-1.67, 0.84], t(1,66) = -0.60, p = .54; aesthetic responsiveness (creative behavior), β = 0.034, 95% CI = [-0.10, 0.20], t(1, 65) = 1.23, p = .21; aesthetic responsiveness (intense aesthetic experience), β = 0.05, 95% CI = [-0.10, 0.20], t(1, 65) = 1.82, p = .07; aesthetic appreciation, β = -0.009, 95% CI = [-0.10, 0.20], t(1, 65) = -0.56, p = .57; environmental familiarity (urban vs. rural), β = 0.17, 95% CI = [-1.25, -0.03], t(1, 67) = 0.74, p = .45; and environmental familiarity (suburban vs. rural), β = 0.20, 95% CI = [-0.12, 0.06], t(1, 67) = 0.7, p = .38.",
+      "page_number": null
+    },
+    {
+      "text_id": 249,
+      "paragraph_id": 69,
+      "section_id": 20,
+      "text": "We found that the RF model consisting of contour properties alone (RF Model 1) explained 87.1% of the variance in aesthetic responses, F(1, 473) = 3,193, p < .001, R 2 = .87.",
+      "page_number": null
+    },
+    {
+      "text_id": 250,
+      "paragraph_id": 69,
+      "section_id": 20,
+      "text": "The RF model consisting of both contour properties and spatial relation cues (RF Model 2) similarly explained 86.1% of the variance in aesthetic responses, F(1, 473) = 2,922, p < .001, R 2 = .86.",
+      "page_number": null
+    },
+    {
+      "text_id": 251,
+      "paragraph_id": 69,
+      "section_id": 20,
+      "text": "The partial correlation between the RF Model 1 and aesthetic responses after eliminating the effect of RF Model 2 was .35.",
+      "page_number": null
+    },
+    {
+      "text_id": 252,
+      "paragraph_id": 69,
+      "section_id": 20,
+      "text": "Thus, contour properties explained 62.7% of the variance once spatial relations (RF Model 2) were accounted for.",
+      "page_number": null
+    },
+    {
+      "text_id": 253,
+      "paragraph_id": 70,
+      "section_id": 20,
+      "text": "Control experiment for semantic content.",
+      "page_number": null
+    },
+    {
+      "text_id": 254,
+      "paragraph_id": 70,
+      "section_id": 20,
+      "text": "The average accuracy in the scene-categorization tasks for the high (M = 0.87, SD = 0.14) versus low (M = 0.86, SD = 0.15) aesthetic conditions was comparable, F(1, 948) = 1.9, p = .168 (high vs. low aesthetic condition difference = .013, 95% CI = [-.005, .031]), showing that access to overall scene semantic content is not differentially altered by these specific contour manipulations.",
+      "page_number": null
+    },
+    {
+      "text_id": 255,
+      "paragraph_id": 70,
+      "section_id": 20,
+      "text": "Similarly, for inverted scenes, categorization accuracy was comparable across high (M = 0.82, SD = 0.14) and low (M = 0.81, SD = 0.85) aesthetic conditions, F(1, 98) = 0.21, p = .647 (high vs. low aesthetic condition difference = .015, 95% CI = [-.051, .082]).",
+      "page_number": null
+    },
+    {
+      "text_id": 256,
+      "paragraph_id": 70,
+      "section_id": 20,
+      "text": "Interestingly, the average categorizationaccuracy performance was significantly higher for upright (M = 0.87, SD = 0.14) compared with inverted (M = 0.82, SD = 0.17) scenes, F(1, 1048) = 10.64, p = .001 (upright vs. inverted difference = -.05 [95% CI = -.08, -.02]).",
+      "page_number": null
+    },
+    {
+      "text_id": 257,
+      "paragraph_id": 70,
+      "section_id": 20,
+      "text": "This confirmed that the scene-inversion manipulation disrupted semantic processing of both low and high aesthetic conditions and that targeted contour manipulations did not change the semantic content of scenes (Fig. 8d).",
+      "page_number": null
+    },
+    {
+      "text_id": 258,
+      "paragraph_id": 72,
+      "section_id": 21,
+      "text": "We have demonstrated that observers' aesthetic responses to natural scenes can be shifted in a predicted direction by manipulating the properties of contours within a scene.",
+      "page_number": null
+    },
+    {
+      "text_id": 259,
+      "paragraph_id": 72,
+      "section_id": 21,
+      "text": "We presented a contour model of visual aesthetics and a method for modifying contour properties according to predicted aesthetic value.",
+      "page_number": null
+    },
+    {
+      "text_id": 260,
+      "paragraph_id": 72,
+      "section_id": 21,
+      "text": "We modified contours in scenes while retaining scene identity and showed a causal relationship between participants' aesthetic judgments and contour properties.",
+      "page_number": null
+    },
+    {
+      "text_id": 261,
+      "paragraph_id": 72,
+      "section_id": 21,
+      "text": "For different semantic categories of scenes and in different groups of observers, we found that scenes with topranked contours were judged to be more aesthetically pleasing than scenes with bottom-ranked contours, as predicted by the model.",
+      "page_number": null
+    },
+    {
+      "text_id": 262,
+      "paragraph_id": 72,
+      "section_id": 21,
+      "text": "We also showed that disrupting access to semantic content through scene inversion does not change the aesthetic advantage of top-ranked contours, indicating that the feature manipulations directly change aesthetic judgments rather than affect semantic processing.",
+      "page_number": null
+    },
+    {
+      "text_id": 263,
+      "paragraph_id": 72,
+      "section_id": 21,
+      "text": "This effect was confirmed in a scene-categorization task, which showed that the categorization performance is diminished by a scene-inversion manipulation but not by aesthetic contour manipulations.",
+      "page_number": null
+    },
+    {
+      "text_id": 264,
+      "paragraph_id": 73,
+      "section_id": 21,
+      "text": "Finally, we found that there is considerable individual variation in the extent to which contour manipulations shift aesthetic evaluations, with observers' negative affect as a predictive individual characteristic.",
+      "page_number": null
+    },
+    {
+      "text_id": 265,
+      "paragraph_id": 74,
+      "section_id": 21,
+      "text": "In three experiments, we investigated the extent to which individual contour properties (orientation, length, curvature, junctions) and spatial relations between them (separation, parallelism, local mirror symmetry) contributed to subjective aesthetic responses.",
+      "page_number": null
+    },
+    {
+      "text_id": 266,
+      "paragraph_id": 74,
+      "section_id": 21,
+      "text": "Our results show that much of the variance explained in responses is attributed to modifications of individual contour properties.",
+      "page_number": null
+    },
+    {
+      "text_id": 267,
+      "paragraph_id": 74,
+      "section_id": 21,
+      "text": "Notably, contour junctions, specifically T junctions, were found to be the most potent visual cue for informing subjective aesthetic judgments, consistent with their important role in object and scene perception (Biederman, 1987;Choo & Walther, 2016). types of visual information-a property often used by artists in different cultures to create aesthetic effects (Cavanagh, 2005;Sayim & Cavanagh, 2011).",
+      "page_number": null
+    },
+    {
+      "text_id": 268,
+      "paragraph_id": 74,
+      "section_id": 21,
+      "text": "For example, X junctions signal transparency, whereas T junctions signal occlusion boundaries (Cavanagh, 2005).",
+      "page_number": null
+    },
+    {
+      "text_id": 269,
+      "paragraph_id": 74,
+      "section_id": 21,
+      "text": "T junctions help with recognizing objects and their configurations in space.",
+      "page_number": null
+    },
+    {
+      "text_id": 270,
+      "paragraph_id": 74,
+      "section_id": 21,
+      "text": "These informative visual cues facilitate scene understanding and a subsequent sense of environmental safety, possibly through learned scene grammar (Võ et al., 2019), spatial schemas (Farzanfar et al., 2023), or perceptual fluency (Reber et al., 2004).",
+      "page_number": null
+    },
+    {
+      "text_id": 271,
+      "paragraph_id": 74,
+      "section_id": 21,
+      "text": "The presence of nonaccidental scene properties likely improves aesthetic valuations by increasing information gain about the 3D structure of the scene and category membership as well as by possibly eliciting a sense of psychological safety.",
+      "page_number": null
+    },
+    {
+      "text_id": 272,
+      "paragraph_id": 74,
+      "section_id": 21,
+      "text": "The robust effect of T junctions as a key predictor of aesthetic value in our models suggests that visual cues that resolve perceptual ambiguities and facilitate understanding of scene geometry are important for shaping our aesthetic judgments.",
+      "page_number": null
+    },
+    {
+      "text_id": 273,
+      "paragraph_id": 74,
+      "section_id": 21,
+      "text": "We found that aesthetic evaluations are shaped by contour properties but not to the exclusion of individual observers' characteristics.",
+      "page_number": null
+    },
+    {
+      "text_id": 274,
+      "paragraph_id": 74,
+      "section_id": 21,
+      "text": "It is noteworthy that affect (Watson et al., 1988) modulated the relationship between contour and aesthetic valuations in such a way that participants with stronger negative affect were more likely to rate line drawings favorably.",
+      "page_number": null
+    },
+    {
+      "text_id": 275,
+      "paragraph_id": 74,
+      "section_id": 21,
+      "text": "Previous studies have shown human preferences for certain contour properties, such as curvature in objects, faces, and architectural scenes (Bar & Neta, 2006;Vartanian et al., 2013), but context moderates this effect (Chuquichambi et al., 2022;Dai et al., 2022).",
+      "page_number": null
+    },
+    {
+      "text_id": 276,
+      "paragraph_id": 74,
+      "section_id": 21,
+      "text": "Another study found that threat judgments can be predicted by contour properties (Damiano et al., 2021).",
+      "page_number": null
+    },
+    {
+      "text_id": 277,
+      "paragraph_id": 74,
+      "section_id": 21,
+      "text": "Daniel Berlyne conceptualized the arousal potential of visual stimuli as the mediator between collative variables (e.g., novelty and complexity) and aesthetic response (Berlyne, 1970;Silvia, 2005).",
+      "page_number": null
+    },
+    {
+      "text_id": 278,
+      "paragraph_id": 74,
+      "section_id": 21,
+      "text": "Changes in momentary reports of subjective happiness have also been shown to reflect a state represented by reward prediction-error signals in midbrain dopaminergic neurons (Rutledge et al., 2014).",
+      "page_number": null
+    },
+    {
+      "text_id": 279,
+      "paragraph_id": 74,
+      "section_id": 21,
+      "text": "These findings suggest that aesthetic responses are coupled with affective responses (Chatterjee & Vartanian, 2014) in such a way that simple lines can indeed modulate affective responses.",
+      "page_number": null
+    },
+    {
+      "text_id": 280,
+      "paragraph_id": 74,
+      "section_id": 21,
+      "text": "In response to viewing line drawings of scenes, we also found that individuals with higher negative baseline affect are more likely to be \"pleasantly surprised,\" as shown by an elevation in their self-reported aesthetic experience.",
+      "page_number": null
+    },
+    {
+      "text_id": 281,
+      "paragraph_id": 74,
+      "section_id": 21,
+      "text": "We hypothesize that negative affect increases an individual's potential for arousal and aesthetic responsiveness (Schlotz et al., 2021).",
+      "page_number": null
+    },
+    {
+      "text_id": 282,
+      "paragraph_id": 74,
+      "section_id": 21,
+      "text": "More research is needed in this area to help us understand whether aesthetic responses are distinct from both reward and affective processing.",
+      "page_number": null
+    },
+    {
+      "text_id": 283,
+      "paragraph_id": 75,
+      "section_id": 21,
+      "text": "Our results support the notion of a perceptual reward system (Biederman & Vessel, 2006;Vessel et al., 2021).",
+      "page_number": null
+    },
+    {
+      "text_id": 284,
+      "paragraph_id": 75,
+      "section_id": 21,
+      "text": "Previous studies that have investigated the role of statistical image properties using global quantitative measures such as contrast, entropy, spatial frequency, and self-similarity (Graham & Redies, 2010;Iigaya et al., 2021;Palmer et al., 2013).",
+      "page_number": null
+    },
+    {
+      "text_id": 285,
+      "paragraph_id": 75,
+      "section_id": 21,
+      "text": "In this study, we found that structural contour properties are remarkably predictive of aesthetic responses to natural scenes.",
+      "page_number": null
+    },
+    {
+      "text_id": 286,
+      "paragraph_id": 75,
+      "section_id": 21,
+      "text": "This methodology allowed us to investigate aesthetic valuation beyond the global level of a scene and to focus on target local elements.",
+      "page_number": null
+    },
+    {
+      "text_id": 287,
+      "paragraph_id": 75,
+      "section_id": 21,
+      "text": "Specifically, local elements that are defined by the medial axis are represented in the ventral visual stream (Ayzenberg et al., 2022).",
+      "page_number": null
+    },
+    {
+      "text_id": 288,
+      "paragraph_id": 75,
+      "section_id": 21,
+      "text": "These local regions guide attentional processes that are supported by midlevel vision neural substrates (Ayzenberg et al., 2022;Peirce, 2015).",
+      "page_number": null
+    },
+    {
+      "text_id": 289,
+      "paragraph_id": 75,
+      "section_id": 21,
+      "text": "Contour properties also help people recognize visual primitives that make it easier to recognize items that share similar features with items encountered in the past and encoded in their semantic memory store.",
+      "page_number": null
+    },
+    {
+      "text_id": 290,
+      "paragraph_id": 75,
+      "section_id": 21,
+      "text": "Research has shown that individuals tend to agree more with one another when evaluating real-world scenes than works of art and architecture (Vessel et al., 2018(Vessel et al., , 2019) ) and that viewing nature scenes has restorative effects (Berman et al., 2008;Kaplan & Kaplan, 1989).",
+      "page_number": null
+    },
+    {
+      "text_id": 291,
+      "paragraph_id": 75,
+      "section_id": 21,
+      "text": "Aesthetic pleasure likely depends on visual properties that conferred evolutionary advantages and played a role in affordances-the possibilities for use and action that an external environment offers (Brielmann & Pelli, 2018;Gibson, 1986;Vartanian et al., 2013).",
+      "page_number": null
+    },
+    {
+      "text_id": 292,
+      "paragraph_id": 75,
+      "section_id": 21,
+      "text": "Contour regularities may also guide human spatial navigation in the form of spatial schemas (Farzanfar et al., 2023); the extent to which aesthetic qualities of space facilitate navigation is an active area for future research.",
+      "page_number": null
+    },
+    {
+      "text_id": 293,
+      "paragraph_id": 76,
+      "section_id": 21,
+      "text": "Interestingly, we found that aesthetic judgments of natural scenes were lower when line drawings of scenes were evaluated compared with when their photographs were evaluated.",
+      "page_number": null
+    },
+    {
+      "text_id": 294,
+      "paragraph_id": 76,
+      "section_id": 21,
+      "text": "Line drawings of cities and other human-made artifacts, on the other hand, were liked more than their photographed counterparts.",
+      "page_number": null
+    },
+    {
+      "text_id": 295,
+      "paragraph_id": 76,
+      "section_id": 21,
+      "text": "This interesting finding can be explained by a complexity-fluency trade-off phenomenon (Berlyne, 1970;Donderi, 2006).",
+      "page_number": null
+    },
+    {
+      "text_id": 296,
+      "paragraph_id": 76,
+      "section_id": 21,
+      "text": "Line drawings contain less information.",
+      "page_number": null
+    },
+    {
+      "text_id": 297,
+      "paragraph_id": 76,
+      "section_id": 21,
+      "text": "Therefore, an inherently more complex scene category, such as a city, is more likely to reach the optimal arousal point when presented as a drawing than as a comparably more complex color photograph.",
+      "page_number": null
+    },
+    {
+      "text_id": 298,
+      "paragraph_id": 76,
+      "section_id": 21,
+      "text": "By contrast, natural scene categories are liked more as photographs than as line drawings, presumably because the decrease in complexity in the drawings moves them away from the optimal arousal point.",
+      "page_number": null
+    },
+    {
+      "text_id": 299,
+      "paragraph_id": 76,
+      "section_id": 21,
+      "text": "Similarly, perceptual grouping cues such as symmetry that increase information gain are associated with aesthetic responses (Arnheim, 1974;Attneave, 1954;Bertamini et al., 1997;Van de Cruys & Wagemans, 2011;Koffka, 1935;Palmer, 1992;Wagemans, 1993) and have been found to contribute to aesthetic judgments to some degree in our study.",
+      "page_number": null
+    },
+    {
+      "text_id": 300,
+      "paragraph_id": 76,
+      "section_id": 21,
+      "text": "Given the facilitative effect of prototypicality on aesthetic valuations across a range of stimuli (Brielmann & Pelli, 2018;Martindale & Moore, 1988;Palmer et al., 2013), we propose that visual features that enhance our perception of aesthetic value are likely also involved in category learning.",
+      "page_number": null
+    },
+    {
+      "text_id": 301,
+      "paragraph_id": 77,
+      "section_id": 21,
+      "text": "We note that the generalizability of our findings is potentially limited to an adult population recruited remotely.",
+      "page_number": null
+    },
+    {
+      "text_id": 302,
+      "paragraph_id": 77,
+      "section_id": 21,
+      "text": "We have shown that changes to contour properties and grouping cues directly alter aesthetic responses, even for inverted scenes with disrupted semantic processing.",
+      "page_number": null
+    },
+    {
+      "text_id": 303,
+      "paragraph_id": 77,
+      "section_id": 21,
+      "text": "Our experimental method using targeted contour modifications allowed us to show a causal relationship between visual properties and aesthetic responses to scenes, taking prior correlational evidence of regularities in human aesthetic responses to an experimental test.",
+      "page_number": null
+    },
+    {
+      "text_id": 304,
+      "paragraph_id": 79,
+      "section_id": 22,
+      "text": "Action Editor: M Natasha Rajah Editor: Patricia J Bauer",
+      "page_number": null
+    },
+    {
+      "text_id": 305,
+      "paragraph_id": 81,
+      "section_id": 23,
+      "text": "The author(s) declared that there were no conflicts of interest with respect to the authorship or the publication of this article.",
+      "page_number": null
+    },
+    {
+      "text_id": 306,
+      "paragraph_id": 83,
+      "section_id": 24,
+      "text": "The data, materials, and code for this study have been made publicly available on the Open Science Framework and can be accessed at https://osf.io/rb2wc/.",
+      "page_number": null
+    },
+    {
+      "text_id": 307,
+      "paragraph_id": 83,
+      "section_id": 24,
+      "text": "The study was not preregistered.",
+      "page_number": null
+    },
+    {
+      "text_id": 308,
+      "paragraph_id": 85,
+      "section_id": 25,
+      "text": "Delaram Farzanfar: Conceptualization; Data curation; Formal analysis; Funding acquisition; Investigation; Methodology; Project administration; Software; Validation; Visualization; Writing -original draft; Writing -review & editing.",
+      "page_number": null
+    },
+    {
+      "text_id": 309,
+      "paragraph_id": 85,
+      "section_id": 25,
+      "text": "Dirk B Walther: Conceptualization; Funding acquisition; Investigation; Methodology; Project administration; Resources; Software; Supervision; Validation; Writingreview & editing.",
+      "page_number": null
+    },
+    {
+      "text_id": 310,
+      "paragraph_id": 86,
+      "section_id": 26,
+      "text": "Fig 1 Visualization of contour properties for five representative line drawings.",
+      "page_number": null
+    },
+    {
+      "text_id": 311,
+      "paragraph_id": 86,
+      "section_id": 26,
+      "text": "The bottom row shows the relative frequency of these properties for all stimuli.",
+      "page_number": null
+    },
+    {
+      "text_id": 312,
+      "paragraph_id": 87,
+      "section_id": 27,
+      "text": "Fig 2 Some results from Experiment 1.",
+      "page_number": null
+    },
+    {
+      "text_id": 313,
+      "paragraph_id": 87,
+      "section_id": 27,
+      "text": "In (a), a schematic of the construction of the random forest model is shown, from contour properties in Experiment 1.",
+      "page_number": null
+    },
+    {
+      "text_id": 314,
+      "paragraph_id": 87,
+      "section_id": 27,
+      "text": "A variable importance plot is illustrated in (b), and a representative decision tree is shown in (c), with predicted aesthetic ratings at the bottom of the graph.",
+      "page_number": null
+    },
+    {
+      "text_id": 315,
+      "paragraph_id": 87,
+      "section_id": 27,
+      "text": "AU = arbitrary units.",
+      "page_number": null
+    },
+    {
+      "text_id": 316,
+      "paragraph_id": 88,
+      "section_id": 28,
+      "text": "Fig 3 More results from Experiment 1. (a) schematic of the construction of the random forest model from image features for color photographs, (b) variable importance plot, and (c) mean aesthetic ratings for line drawings and color photographs for different scene categories.",
+      "page_number": null
+    },
+    {
+      "text_id": 317,
+      "paragraph_id": 89,
+      "section_id": 29,
+      "text": "Fig 5 Visualization of measures of the spatial relation between contours for four representative line drawings.",
+      "page_number": null
+    },
+    {
+      "text_id": 318,
+      "paragraph_id": 89,
+      "section_id": 29,
+      "text": "The bottom row shows the distribution of these properties for all stimuli.",
+      "page_number": null
+    },
+    {
+      "text_id": 319,
+      "paragraph_id": 90,
+      "section_id": 30,
+      "text": "Fig 6 Results of Experiment 3. (a) variable importance plot, and (b) schematic of the construction 453 of random the forest model from image features for Experiment 3.",
+      "page_number": null
+    },
+    {
+      "text_id": 320,
+      "paragraph_id": 90,
+      "section_id": 30,
+      "text": "AU = arbitrary units.",
+      "page_number": null
+    },
+    {
+      "text_id": 321,
+      "paragraph_id": 91,
+      "section_id": 31,
+      "text": "Different junction types are thought to carry different",
+      "page_number": null
+    },
+    {
+      "text_id": 322,
+      "paragraph_id": 92,
+      "section_id": 32,
+      "text": "Fig 8 Results for Experiment 3, including (a) mean aesthetic ratings across categories for each aesthetic condition in Experiment 3 and (b) violin plots showing the distribution of aesthetic judgments for upright and inverted images in both aesthetic conditions (*p < .001).",
+      "page_number": null
+    },
+    {
+      "text_id": 323,
+      "paragraph_id": 92,
+      "section_id": 32,
+      "text": "The effect was consistent across scene categories.",
+      "page_number": null
+    },
+    {
+      "text_id": 324,
+      "paragraph_id": 92,
+      "section_id": 32,
+      "text": "In (c) is shown a schematic of the scene-categorization experiment, and in (d) is shown mean categorization accuracy for aesthetic and semantic conditions.",
+      "page_number": null
+    },
+    {
+      "text_id": 325,
+      "paragraph_id": 92,
+      "section_id": 32,
+      "text": "Errors bars represent 95% confidence intervals.",
+      "page_number": null
+    },
+    {
+      "text_id": 326,
+      "paragraph_id": 93,
+      "section_id": 33,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 327,
+      "paragraph_id": 94,
+      "section_id": 33,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 328,
+      "paragraph_id": 95,
+      "section_id": 33,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 329,
+      "paragraph_id": 96,
+      "section_id": 33,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 330,
+      "paragraph_id": 97,
+      "section_id": 33,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 331,
+      "paragraph_id": 98,
+      "section_id": 33,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 332,
+      "paragraph_id": 99,
+      "section_id": 33,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 333,
+      "paragraph_id": 100,
+      "section_id": 33,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 334,
+      "paragraph_id": 101,
+      "section_id": 33,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 335,
+      "paragraph_id": 102,
+      "section_id": 33,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 336,
+      "paragraph_id": 103,
+      "section_id": 33,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 337,
+      "paragraph_id": 104,
+      "section_id": 33,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 338,
+      "paragraph_id": 105,
+      "section_id": 33,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 339,
+      "paragraph_id": 106,
+      "section_id": 33,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 340,
+      "paragraph_id": 107,
+      "section_id": 33,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 341,
+      "paragraph_id": 108,
+      "section_id": 33,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 342,
+      "paragraph_id": 109,
+      "section_id": 33,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 343,
+      "paragraph_id": 110,
+      "section_id": 33,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 344,
+      "paragraph_id": 111,
+      "section_id": 33,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 345,
+      "paragraph_id": 112,
+      "section_id": 33,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 346,
+      "paragraph_id": 113,
+      "section_id": 33,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 347,
+      "paragraph_id": 114,
+      "section_id": 33,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 348,
+      "paragraph_id": 115,
+      "section_id": 33,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 349,
+      "paragraph_id": 116,
+      "section_id": 33,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 350,
+      "paragraph_id": 117,
+      "section_id": 33,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 351,
+      "paragraph_id": 118,
+      "section_id": 33,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 352,
+      "paragraph_id": 119,
+      "section_id": 33,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 353,
+      "paragraph_id": 120,
+      "section_id": 33,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 354,
+      "paragraph_id": 121,
+      "section_id": 33,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 355,
+      "paragraph_id": 122,
+      "section_id": 33,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 356,
+      "paragraph_id": 123,
+      "section_id": 33,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 357,
+      "paragraph_id": 124,
+      "section_id": 33,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 358,
+      "paragraph_id": 125,
+      "section_id": 33,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 359,
+      "paragraph_id": 126,
+      "section_id": 33,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 360,
+      "paragraph_id": 127,
+      "section_id": 33,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 361,
+      "paragraph_id": 128,
+      "section_id": 33,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 362,
+      "paragraph_id": 129,
+      "section_id": 33,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 363,
+      "paragraph_id": 130,
+      "section_id": 33,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 364,
+      "paragraph_id": 131,
+      "section_id": 33,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 365,
+      "paragraph_id": 132,
+      "section_id": 33,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 366,
+      "paragraph_id": 133,
+      "section_id": 33,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 367,
+      "paragraph_id": 134,
+      "section_id": 33,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 368,
+      "paragraph_id": 135,
+      "section_id": 33,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 369,
+      "paragraph_id": 136,
+      "section_id": 33,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 370,
+      "paragraph_id": 137,
+      "section_id": 33,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 371,
+      "paragraph_id": 138,
+      "section_id": 33,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 372,
+      "paragraph_id": 139,
+      "section_id": 33,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 373,
+      "paragraph_id": 140,
+      "section_id": 33,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 374,
+      "paragraph_id": 141,
+      "section_id": 33,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 375,
+      "paragraph_id": 142,
+      "section_id": 33,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 376,
+      "paragraph_id": 143,
+      "section_id": 33,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 377,
+      "paragraph_id": 144,
+      "section_id": 33,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 378,
+      "paragraph_id": 145,
+      "section_id": 33,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 379,
+      "paragraph_id": 146,
+      "section_id": 33,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 380,
+      "paragraph_id": 147,
+      "section_id": 33,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 381,
+      "paragraph_id": 148,
+      "section_id": 33,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 382,
+      "paragraph_id": 149,
+      "section_id": 33,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 383,
+      "paragraph_id": 150,
+      "section_id": 33,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 384,
+      "paragraph_id": 151,
+      "section_id": 33,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 385,
+      "paragraph_id": 152,
+      "section_id": 33,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 386,
+      "paragraph_id": 153,
+      "section_id": 33,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 387,
+      "paragraph_id": 154,
+      "section_id": 33,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 388,
+      "paragraph_id": 155,
+      "section_id": 33,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 389,
+      "paragraph_id": 156,
+      "section_id": 33,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 390,
+      "paragraph_id": 157,
+      "section_id": 33,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 391,
+      "paragraph_id": 158,
+      "section_id": 33,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 392,
+      "paragraph_id": 159,
+      "section_id": 33,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 393,
+      "paragraph_id": 160,
+      "section_id": 33,
+      "text": "",
+      "page_number": null
+    }
+  ],
+  "section": [
+    {
+      "section_id": 0,
+      "header": "Abstract",
+      "parent_section_id": null,
+      "section_type": "abstract",
+      "classification_score": null
+    },
+    {
+      "section_id": 1,
+      "header": "Introduction",
+      "parent_section_id": null,
+      "section_type": "intro",
+      "classification_score": null
+    },
+    {
+      "section_id": 2,
+      "header": "Experiment 1",
+      "parent_section_id": null,
+      "section_type": "intro",
+      "classification_score": null
+    },
+    {
+      "section_id": 3,
+      "header": "Method",
+      "parent_section_id": null,
+      "section_type": "method",
+      "classification_score": null
+    },
+    {
+      "section_id": 4,
+      "header": "Statement of Relevance",
+      "parent_section_id": null,
+      "section_type": "method",
+      "classification_score": null
+    },
+    {
+      "section_id": 5,
+      "header": "Participants.",
+      "parent_section_id": null,
+      "section_type": "method",
+      "classification_score": null
+    },
+    {
+      "section_id": 6,
+      "header": "Extracting contour properties.",
+      "parent_section_id": null,
+      "section_type": "method",
+      "classification_score": null
+    },
+    {
+      "section_id": 7,
+      "header": "Extracting color statistics.",
+      "parent_section_id": null,
+      "section_type": "method",
+      "classification_score": null
+    },
+    {
+      "section_id": 8,
+      "header": "Results",
+      "parent_section_id": null,
+      "section_type": "results",
+      "classification_score": null
+    },
+    {
+      "section_id": 9,
+      "header": "Experiment 2",
+      "parent_section_id": null,
+      "section_type": "results",
+      "classification_score": null
+    },
+    {
+      "section_id": 10,
+      "header": "Method",
+      "parent_section_id": null,
+      "section_type": "method",
+      "classification_score": null
+    },
+    {
+      "section_id": 11,
+      "header": "Statistical analysis.",
+      "parent_section_id": null,
+      "section_type": "method",
+      "classification_score": null
+    },
+    {
+      "section_id": 12,
+      "header": "Results",
+      "parent_section_id": null,
+      "section_type": "results",
+      "classification_score": null
+    },
+    {
+      "section_id": 13,
+      "header": "Experiment 3",
+      "parent_section_id": null,
+      "section_type": "results",
+      "classification_score": null
+    },
+    {
+      "section_id": 14,
+      "header": "Finally, in Experiment 3, we investigated the contributions of spatial-relationship cues and disruption of semantic processing through scene inversion on aesthetic valuations of scenes.",
+      "parent_section_id": null,
+      "section_type": "results",
+      "classification_score": null
+    },
+    {
+      "section_id": 15,
+      "header": "Method",
+      "parent_section_id": null,
+      "section_type": "method",
+      "classification_score": null
+    },
+    {
+      "section_id": 16,
+      "header": "Random forest algorithm.",
+      "parent_section_id": null,
+      "section_type": "method",
+      "classification_score": null
+    },
+    {
+      "section_id": 17,
+      "header": "Stimuli.",
+      "parent_section_id": null,
+      "section_type": "method",
+      "classification_score": null
+    },
+    {
+      "section_id": 18,
+      "header": "Model comparison.",
+      "parent_section_id": null,
+      "section_type": "method",
+      "classification_score": null
+    },
+    {
+      "section_id": 19,
+      "header": "Results",
+      "parent_section_id": null,
+      "section_type": "results",
+      "classification_score": null
+    },
+    {
+      "section_id": 20,
+      "header": "Comparison of Experiment 2 RF model and Experiment 3 RF model.",
+      "parent_section_id": null,
+      "section_type": "results",
+      "classification_score": null
+    },
+    {
+      "section_id": 21,
+      "header": "Discussion",
+      "parent_section_id": null,
+      "section_type": "discussion",
+      "classification_score": null
+    },
+    {
+      "section_id": 22,
+      "header": "Transparency",
+      "parent_section_id": null,
+      "section_type": "discussion",
+      "classification_score": null
+    },
+    {
+      "section_id": 23,
+      "header": "Declaration of Conflicting Interests",
+      "parent_section_id": null,
+      "section_type": "conflict",
+      "classification_score": null
+    },
+    {
+      "section_id": 24,
+      "header": "Open Practices",
+      "parent_section_id": null,
+      "section_type": "conflict",
+      "classification_score": null
+    },
+    {
+      "section_id": 25,
+      "header": "Author Contributions",
+      "parent_section_id": null,
+      "section_type": "contribution",
+      "classification_score": null
+    },
+    {
+      "section_id": 26,
+      "header": "Fig 1",
+      "parent_section_id": null,
+      "section_type": "figure",
+      "classification_score": null
+    },
+    {
+      "section_id": 27,
+      "header": "Fig 2",
+      "parent_section_id": null,
+      "section_type": "figure",
+      "classification_score": null
+    },
+    {
+      "section_id": 28,
+      "header": "Fig 3Fig 4",
+      "parent_section_id": null,
+      "section_type": "figure",
+      "classification_score": null
+    },
+    {
+      "section_id": 29,
+      "header": "Fig 5",
+      "parent_section_id": null,
+      "section_type": "figure",
+      "classification_score": null
+    },
+    {
+      "section_id": 30,
+      "header": "Fig 6Fig 7",
+      "parent_section_id": null,
+      "section_type": "figure",
+      "classification_score": null
+    },
+    {
+      "section_id": 31,
+      "header": "",
+      "parent_section_id": null,
+      "section_type": "figure",
+      "classification_score": null
+    },
+    {
+      "section_id": 32,
+      "header": "Fig 8",
+      "parent_section_id": null,
+      "section_type": "figure",
+      "classification_score": null
+    },
+    {
+      "section_id": 33,
+      "header": "References",
+      "parent_section_id": null,
+      "section_type": "references",
+      "classification_score": null
+    }
+  ],
+  "url": [
+    {
+      "href": "https://osf.io/rb2wc",
+      "link_text": null,
+      "text_id": 36
+    },
+    {
+      "href": "https://osf.io/9squn",
+      "link_text": null,
+      "text_id": 40
+    },
+    {
+      "href": "https://www.prolific.co",
+      "link_text": null,
+      "text_id": 51
+    },
+    {
+      "href": "https://www.millisecond.com",
+      "link_text": null,
+      "text_id": 56
+    },
+    {
+      "href": "box.org",
+      "link_text": null,
+      "text_id": 81
+    },
+    {
+      "href": "http://mlvtoobox.org",
+      "link_text": null,
+      "text_id": 200
+    },
+    {
+      "href": "https://osf.io/rb2wc",
+      "link_text": null,
+      "text_id": 306
+    }
+  ],
+  "bib": [
+    {
+      "bib_type": "article",
+      "doi": "10.1525/9780520351271-005",
+      "title": "",
+      "authors": "Arnheim, R",
+      "editors": "",
+      "publisher": "",
+      "year": 1974,
+      "volume": "",
+      "issue": "",
+      "container": "",
+      "first_page": null,
+      "last_page": null,
+      "bib_id": 0,
+      "year_suffix": "",
+      "text_id": 326
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "Some informational aspects of visual perception",
+      "authors": "Attneave, F",
+      "editors": "",
+      "publisher": "",
+      "year": 1954,
+      "volume": "61",
+      "issue": "3",
+      "container": "Psychological Review",
+      "first_page": "183",
+      "last_page": "193",
+      "bib_id": 1,
+      "year_suffix": "",
+      "text_id": 327
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "Skeletal representations of shape in the human visual cortex",
+      "authors": "Ayzenberg, V; Kamps, F S; Dilks, D D; Lourenco, S F",
+      "editors": "",
+      "publisher": "",
+      "year": 2022,
+      "volume": "164",
+      "issue": "",
+      "container": "Neuropsychologia",
+      "first_page": "108092",
+      "last_page": null,
+      "bib_id": 2,
+      "year_suffix": "",
+      "text_id": 328
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1111/j.1467-9280.2006.01759.x",
+      "title": "Humans prefer curved visual objects",
+      "authors": "Bar, M; Neta, M",
+      "editors": "",
+      "publisher": "",
+      "year": 2006,
+      "volume": "17",
+      "issue": "8",
+      "container": "Psychological Science",
+      "first_page": "645",
+      "last_page": "648",
+      "bib_id": 3,
+      "year_suffix": "",
+      "text_id": 329
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "lme4: Linear mixedeffects models using",
+      "authors": "Bates, D; Mächler, M; Bolker, B; Walker, S; Christensen, R H; Singmann, H; Dai, B",
+      "editors": "",
+      "publisher": "",
+      "year": 2015,
+      "volume": "4",
+      "issue": "",
+      "container": "Eigen and S",
+      "first_page": "1",
+      "last_page": "7",
+      "bib_id": 4,
+      "year_suffix": "",
+      "text_id": 330
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "Novelty, complexity, and hedonic value",
+      "authors": "Berlyne, D E",
+      "editors": "",
+      "publisher": "",
+      "year": 1970,
+      "volume": "8",
+      "issue": "5",
+      "container": "Perception & Psychophysics",
+      "first_page": "279",
+      "last_page": "286",
+      "bib_id": 5,
+      "year_suffix": "",
+      "text_id": 331
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "The cognitive benefits of interacting with nature",
+      "authors": "Berman, M G; Jonides, J; Kaplan, S",
+      "editors": "",
+      "publisher": "",
+      "year": 2008,
+      "volume": "19",
+      "issue": "12",
+      "container": "Psychological Science",
+      "first_page": "1207",
+      "last_page": "1212",
+      "bib_id": 6,
+      "year_suffix": "",
+      "text_id": 332
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "Detection of symmetry and perceptual organization: The way a lock-and-key process works",
+      "authors": "Bertamini, M; Friedenberg, J D; Kubovy, M",
+      "editors": "",
+      "publisher": "",
+      "year": 1997,
+      "volume": "95",
+      "issue": "2",
+      "container": "Acta Psychologica",
+      "first_page": "119",
+      "last_page": "140",
+      "bib_id": 7,
+      "year_suffix": "",
+      "text_id": 333
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "Recognition-by-components: A theory of human image understanding",
+      "authors": "Biederman, I",
+      "editors": "",
+      "publisher": "",
+      "year": 1987,
+      "volume": "94",
+      "issue": "2",
+      "container": "Psychological Review",
+      "first_page": "115",
+      "last_page": "147",
+      "bib_id": 8,
+      "year_suffix": "",
+      "text_id": 334
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "Perceptual pleasure and the brain: A novel theory explains why the brain craves information and seeks it through the senses",
+      "authors": "Biederman, I; Vessel, E A",
+      "editors": "",
+      "publisher": "",
+      "year": 2006,
+      "volume": "94",
+      "issue": "3",
+      "container": "American Scientist",
+      "first_page": "247",
+      "last_page": "253",
+      "bib_id": 9,
+      "year_suffix": "",
+      "text_id": 335
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1016/j.cub.2018.06.004",
+      "title": "",
+      "authors": "Brielmann, A A; Pelli, D G",
+      "editors": "",
+      "publisher": "",
+      "year": 2018,
+      "volume": "28",
+      "issue": "16",
+      "container": "Aesthetics. Current Biology",
+      "first_page": "859",
+      "last_page": "R863",
+      "bib_id": 10,
+      "year_suffix": "",
+      "text_id": 336
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1038/434301a",
+      "title": "The artist as neuroscientist",
+      "authors": "Cavanagh, P",
+      "editors": "",
+      "publisher": "",
+      "year": 2005,
+      "volume": "434",
+      "issue": "7031",
+      "container": "Nature",
+      "first_page": "301",
+      "last_page": "307",
+      "bib_id": 11,
+      "year_suffix": "",
+      "text_id": 337
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "An early framework for a cognitive neuroscience of visual aesthetics",
+      "authors": "Chatterjee, A",
+      "editors": "Chatterjee, A; Cardillo, E R",
+      "publisher": "Oxford University Press",
+      "year": 2022,
+      "volume": "",
+      "issue": "",
+      "container": "",
+      "first_page": "3",
+      "last_page": "7",
+      "bib_id": 12,
+      "year_suffix": "",
+      "text_id": 338
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1016/j.tics.2014.03.003",
+      "title": "Neuroaesthetics",
+      "authors": "Chatterjee, A; Vartanian, O",
+      "editors": "",
+      "publisher": "",
+      "year": 2014,
+      "volume": "18",
+      "issue": "7",
+      "container": "Trends in Cognitive Sciences",
+      "first_page": "370",
+      "last_page": "375",
+      "bib_id": 13,
+      "year_suffix": "",
+      "text_id": 339
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "Contour junctions underlie neural representations of scene categories in high-level human visual cortex",
+      "authors": "Choo, H; Walther, D B",
+      "editors": "",
+      "publisher": "",
+      "year": 2016,
+      "volume": "135",
+      "issue": "",
+      "container": "NeuroImage",
+      "first_page": "32",
+      "last_page": "44",
+      "bib_id": 14,
+      "year_suffix": "",
+      "text_id": 340
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1111/nyas.14919",
+      "title": "How universal is preference for visual curvature? A systematic review and meta-analysis",
+      "authors": "Chuquichambi, E G; Vartanian, O; Skov, M; Corradi, G B; Nadal, M; Silvia, P J; Munar, E",
+      "editors": "",
+      "publisher": "",
+      "year": 2022,
+      "volume": "1518",
+      "issue": "1",
+      "container": "Annals of the New York Academy of Sciences",
+      "first_page": "151",
+      "last_page": "165",
+      "bib_id": 15,
+      "year_suffix": "",
+      "text_id": 341
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1371/journal.pone.0265412",
+      "title": "Aesthetic judgment of architecture for Chinese observers",
+      "authors": "Dai, A; Zou, J; Wang, J; Ding, N; Fukuda, H",
+      "editors": "",
+      "publisher": "",
+      "year": 2022,
+      "volume": "17",
+      "issue": "4",
+      "container": "PLOS ONE",
+      "first_page": "265412",
+      "last_page": null,
+      "bib_id": 16,
+      "year_suffix": "",
+      "text_id": 342
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "Contour features predict valence and threat judgements in scenes",
+      "authors": "Damiano, C; Walther, D B; Cunningham, W A",
+      "editors": "",
+      "publisher": "",
+      "year": 2021,
+      "volume": "11",
+      "issue": "1",
+      "container": "Scientific Reports",
+      "first_page": "1",
+      "last_page": "12",
+      "bib_id": 17,
+      "year_suffix": "",
+      "text_id": 343
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "Visual complexity: A review",
+      "authors": "Donderi, D C",
+      "editors": "",
+      "publisher": "",
+      "year": 2006,
+      "volume": "132",
+      "issue": "1",
+      "container": "Psychological Bulletin",
+      "first_page": "73",
+      "last_page": "97",
+      "bib_id": 18,
+      "year_suffix": "",
+      "text_id": 344
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1167/2.4.5",
+      "title": "Ecological statistics of Gestalt laws for the perceptual organization of contours",
+      "authors": "Elder, J H; Goldberg, R M",
+      "editors": "",
+      "publisher": "",
+      "year": 2002,
+      "volume": "2",
+      "issue": "4",
+      "container": "Journal of Vision",
+      "first_page": null,
+      "last_page": null,
+      "bib_id": 19,
+      "year_suffix": "",
+      "text_id": 345
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "Cortical correlates of face and scene inversion: A comparison",
+      "authors": "Epstein, R A; Higgins, J S; Parker, W; Aguirre, G K; Cooperman, S",
+      "editors": "",
+      "publisher": "",
+      "year": 2006,
+      "volume": "44",
+      "issue": "7",
+      "container": "Neuropsychologia",
+      "first_page": "1145",
+      "last_page": "1158",
+      "bib_id": 20,
+      "year_suffix": "",
+      "text_id": 346
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "From cognitive maps to spatial schemas",
+      "authors": "Farzanfar, D; Spiers, H J; Moscovitch, M; Rosenbaum, R S",
+      "editors": "",
+      "publisher": "",
+      "year": 2023,
+      "volume": "24",
+      "issue": "2",
+      "container": "Nature Reviews Neuroscience",
+      "first_page": "63",
+      "last_page": "79",
+      "bib_id": 21,
+      "year_suffix": "",
+      "text_id": 347
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "",
+      "authors": "Fechner, G T",
+      "editors": "",
+      "publisher": "Breitkopf & Härtel",
+      "year": 1876,
+      "volume": "",
+      "issue": "",
+      "container": "",
+      "first_page": null,
+      "last_page": null,
+      "bib_id": 22,
+      "year_suffix": "",
+      "text_id": 348
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.3758/s13428-022-01901-9",
+      "title": "Common, uncommon, and novel applications of random forest in psychological research",
+      "authors": "Fife, D A; Onofrio, J",
+      "editors": "",
+      "publisher": "",
+      "year": 2022,
+      "volume": "",
+      "issue": "",
+      "container": "",
+      "first_page": null,
+      "last_page": null,
+      "bib_id": 23,
+      "year_suffix": "",
+      "text_id": 349
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.4324/9780203767764",
+      "title": "",
+      "authors": "Gibson, J J",
+      "editors": "",
+      "publisher": "",
+      "year": 1986,
+      "volume": "",
+      "issue": "",
+      "container": "",
+      "first_page": null,
+      "last_page": null,
+      "bib_id": 24,
+      "year_suffix": "",
+      "text_id": 350
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1016/j.visres.2010.05.002",
+      "title": "Statistical regularities in art: Relations with visual coding and perception",
+      "authors": "Graham, D J; Redies, C",
+      "editors": "",
+      "publisher": "",
+      "year": 2010,
+      "volume": "50",
+      "issue": "16",
+      "container": "Vision Research",
+      "first_page": "1503",
+      "last_page": "1509",
+      "bib_id": 25,
+      "year_suffix": "",
+      "text_id": 351
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "Scene inversion reveals distinct patterns of attention to semantically interpreted and uninterpreted features",
+      "authors": "Hayes, T R; Henderson, J M",
+      "editors": "",
+      "publisher": "",
+      "year": 2022,
+      "volume": "229",
+      "issue": "",
+      "container": "Cognition",
+      "first_page": "105231",
+      "last_page": null,
+      "bib_id": 26,
+      "year_suffix": "",
+      "text_id": 352
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "Dynamic binding in a neural network for shape recognition",
+      "authors": "Hummel, J E; Biederman, I",
+      "editors": "",
+      "publisher": "",
+      "year": 1992,
+      "volume": "99",
+      "issue": "3",
+      "container": "Psychological Review",
+      "first_page": "480",
+      "last_page": "517",
+      "bib_id": 27,
+      "year_suffix": "",
+      "text_id": 353
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1038/s41562-021-01124-6",
+      "title": "Aesthetic preference for art can be predicted from a mixture of low-and high-level visual features",
+      "authors": "Iigaya, K; Yi, S; Wahle, I A; Tanwisuth, K; Doherty, J P",
+      "editors": "",
+      "publisher": "",
+      "year": 2021,
+      "volume": "5",
+      "issue": "",
+      "container": "Nature Human Behaviour",
+      "first_page": "743",
+      "last_page": "755",
+      "bib_id": 28,
+      "year_suffix": "",
+      "text_id": 354
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "Extension of Nakagawa & Schielzeth's R2GLMM to random slopes models",
+      "authors": "Johnson, P C",
+      "editors": "",
+      "publisher": "",
+      "year": 2014,
+      "volume": "5",
+      "issue": "9",
+      "container": "Methods in Ecology and Evolution",
+      "first_page": "944",
+      "last_page": "946",
+      "bib_id": 29,
+      "year_suffix": "",
+      "text_id": 355
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "",
+      "authors": "Kaplan, R; Kaplan, S",
+      "editors": "",
+      "publisher": "Cambridge University Press",
+      "year": 1989,
+      "volume": "",
+      "issue": "",
+      "container": "",
+      "first_page": null,
+      "last_page": null,
+      "bib_id": 30,
+      "year_suffix": "",
+      "text_id": 356
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "ppcor: An R package for a fast calculation to semi-partial correlation coefficients",
+      "authors": "Kim, S",
+      "editors": "",
+      "publisher": "",
+      "year": 2015,
+      "volume": "22",
+      "issue": "6",
+      "container": "Communications for Statistical Applications and Methods",
+      "first_page": "665",
+      "last_page": "674",
+      "bib_id": 31,
+      "year_suffix": "",
+      "text_id": 357
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "",
+      "authors": "Koffka, K",
+      "editors": "",
+      "publisher": "",
+      "year": 1935,
+      "volume": "",
+      "issue": "",
+      "container": "",
+      "first_page": null,
+      "last_page": null,
+      "bib_id": 32,
+      "year_suffix": "",
+      "text_id": 358
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "lmerTest package: Tests in linear mixed effects models",
+      "authors": "Kuznetsova, A; Brockhoff, P B; Christensen, R H",
+      "editors": "",
+      "publisher": "",
+      "year": 2017,
+      "volume": "82",
+      "issue": "",
+      "container": "Journal of Statistical Software",
+      "first_page": "1",
+      "last_page": "26",
+      "bib_id": 33,
+      "year_suffix": "",
+      "text_id": 359
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1016/j.visres.2008.06.010",
+      "title": "Ambiguities and conventions in the perception of visual art",
+      "authors": "Mamassian, P",
+      "editors": "",
+      "publisher": "",
+      "year": 2008,
+      "volume": "48",
+      "issue": "20",
+      "container": "Vision Research",
+      "first_page": "2143",
+      "last_page": "2153",
+      "bib_id": 34,
+      "year_suffix": "",
+      "text_id": 360
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1016/j.jrp.2013.09.008",
+      "title": "Caring about carelessness: Participant inattention and its effects on research",
+      "authors": "Maniaci, M R; Rogge, R D",
+      "editors": "",
+      "publisher": "",
+      "year": 2014,
+      "volume": "48",
+      "issue": "",
+      "container": "Journal of Research in Personality",
+      "first_page": "61",
+      "last_page": "83",
+      "bib_id": 35,
+      "year_suffix": "",
+      "text_id": 361
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "",
+      "authors": "Marr, D",
+      "editors": "",
+      "publisher": "MIT Press",
+      "year": 1982,
+      "volume": "",
+      "issue": "",
+      "container": "",
+      "first_page": null,
+      "last_page": null,
+      "bib_id": 36,
+      "year_suffix": "",
+      "text_id": 362
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1037/0096-1523.14.4.661",
+      "title": "Priming, prototypicality, and preference",
+      "authors": "Martindale, C; Moore, K",
+      "editors": "",
+      "publisher": "",
+      "year": 1988,
+      "volume": "14",
+      "issue": "4",
+      "container": "Journal of Experimental Psychology: Human Perception and Performance",
+      "first_page": "661",
+      "last_page": "670",
+      "bib_id": 37,
+      "year_suffix": "",
+      "text_id": 363
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1037/a0028085",
+      "title": "Identifying careless responses in survey data",
+      "authors": "Meade, A W; Craig, S B",
+      "editors": "",
+      "publisher": "",
+      "year": 2012,
+      "volume": "17",
+      "issue": "3",
+      "container": "Psychological Methods",
+      "first_page": "437",
+      "last_page": "455",
+      "bib_id": 38,
+      "year_suffix": "",
+      "text_id": 364
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1038/s41598-022-18847-9",
+      "title": "Regularity of colour statistics in explaining colour composition preferences in art paintings",
+      "authors": "Nakauchi, S; Tamura, H",
+      "editors": "",
+      "publisher": "",
+      "year": 2022,
+      "volume": "12",
+      "issue": "1",
+      "container": "Scientific Reports",
+      "first_page": "14585",
+      "last_page": null,
+      "bib_id": 39,
+      "year_suffix": "",
+      "text_id": 365
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "Thinking outside the box: Rectilinear shapes selectively activate scene-selective cortex",
+      "authors": "Nasr, S; Echavarria, C E; Tootell, R B",
+      "editors": "",
+      "publisher": "",
+      "year": 2014,
+      "volume": "34",
+      "issue": "20",
+      "container": "Journal of Neuroscience",
+      "first_page": "6721",
+      "last_page": "6735",
+      "bib_id": 40,
+      "year_suffix": "",
+      "text_id": 366
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1023/A:1011139631724",
+      "title": "Modeling the shape of the scene: A holistic representation of the spatial envelope",
+      "authors": "Oliva, A; Torralba, A",
+      "editors": "",
+      "publisher": "",
+      "year": 2001,
+      "volume": "42",
+      "issue": "3",
+      "container": "International Journal of Computer Vision",
+      "first_page": "145",
+      "last_page": "175",
+      "bib_id": 41,
+      "year_suffix": "",
+      "text_id": 367
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "Naming unrelated words predicts creativity",
+      "authors": "Olson, J A; Nahas, J; Chmoulevitch, D; Cropper, S J; Webb, M E",
+      "editors": "",
+      "publisher": "",
+      "year": 2021,
+      "volume": "118",
+      "issue": "25",
+      "container": "Proceedings of the National Academy of Sciences",
+      "first_page": null,
+      "last_page": null,
+      "bib_id": 42,
+      "year_suffix": "",
+      "text_id": 368
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1146/annurev-psych-120710-100504",
+      "title": "Common region: A new principle of perceptual grouping",
+      "authors": "Palmer, S E; Schloss, K B; Sammartino, J",
+      "editors": "",
+      "publisher": "",
+      "year": 1992,
+      "volume": "24",
+      "issue": "3",
+      "container": "Annual Review of Psychology",
+      "first_page": "77",
+      "last_page": "107",
+      "bib_id": 43,
+      "year_suffix": "",
+      "text_id": 369
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "Understanding mid-level representations in visual processing",
+      "authors": "Peirce, J W",
+      "editors": "",
+      "publisher": "",
+      "year": 2015,
+      "volume": "15",
+      "issue": "7",
+      "container": "Journal of Vision",
+      "first_page": null,
+      "last_page": null,
+      "bib_id": 44,
+      "year_suffix": "",
+      "text_id": 370
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1207/s15327957pspr0804_3",
+      "title": "Processing fluency and aesthetic pleasure: Is beauty in the perceiver's processing experience?",
+      "authors": "Reber, R; Schwarz, N; Winkielman, P",
+      "editors": "",
+      "publisher": "",
+      "year": 2004,
+      "volume": "8",
+      "issue": "4",
+      "container": "Personality and Social Psychology Review",
+      "first_page": "364",
+      "last_page": "382",
+      "bib_id": 45,
+      "year_suffix": "",
+      "text_id": 371
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "",
+      "authors": "Rezanejad, M",
+      "editors": "",
+      "publisher": "",
+      "year": 2020,
+      "volume": "",
+      "issue": "",
+      "container": "",
+      "first_page": null,
+      "last_page": null,
+      "bib_id": 46,
+      "year_suffix": "",
+      "text_id": 372
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "",
+      "authors": "Rezanejad, M; Downs, G; Wilder, J; Walther, D B; Jepson, A; Dickinson, S; Siddiqi, K",
+      "editors": "",
+      "publisher": "",
+      "year": 2019,
+      "volume": "",
+      "issue": "",
+      "container": "",
+      "first_page": null,
+      "last_page": null,
+      "bib_id": 47,
+      "year_suffix": "",
+      "text_id": 373
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1073/pnas.1407535111",
+      "title": "A computational and neural model of momentary subjective well-being",
+      "authors": "Rutledge, R B; Skandali, N; Dayan, P; Dolan, R J",
+      "editors": "",
+      "publisher": "",
+      "year": 2014,
+      "volume": "111",
+      "issue": "33",
+      "container": "Proceedings of the National Academy of Sciences",
+      "first_page": "12252",
+      "last_page": "12257",
+      "bib_id": 48,
+      "year_suffix": "",
+      "text_id": 374
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.3389/fnhum.2011.00118",
+      "title": "What line drawings reveal about the visual brain",
+      "authors": "Sayim, B; Cavanagh, P",
+      "editors": "",
+      "publisher": "",
+      "year": 2011,
+      "volume": "5",
+      "issue": "",
+      "container": "Frontiers in Human Neuroscience",
+      "first_page": "118",
+      "last_page": null,
+      "bib_id": 49,
+      "year_suffix": "",
+      "text_id": 375
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "The Aesthetic Responsiveness Assessment (AReA): A screening tool to assess individual differences in responsiveness to art in English and German",
+      "authors": "Schlotz, W; Wallot, S; Omigie, D; Masucci, M D; Hoelzmann, S C; Vessel, E A",
+      "editors": "",
+      "publisher": "",
+      "year": 2021,
+      "volume": "15",
+      "issue": "4",
+      "container": "Psychology of Aesthetics, Creativity, and the Arts",
+      "first_page": "682",
+      "last_page": "696",
+      "bib_id": 50,
+      "year_suffix": "",
+      "text_id": 376
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1037/1089-2680.9.4.342",
+      "title": "Emotional responses to art: From collation and arousal to cognition and emotion",
+      "authors": "Silvia, P J",
+      "editors": "",
+      "publisher": "",
+      "year": 2005,
+      "volume": "9",
+      "issue": "4",
+      "container": "Review of General Psychology",
+      "first_page": "342",
+      "last_page": "357",
+      "bib_id": 51,
+      "year_suffix": "",
+      "text_id": 377
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1111/cogs.12933",
+      "title": "Curious objects: How visual complexity guides attention and engagement",
+      "authors": "Sun, Z; Firestone, C",
+      "editors": "",
+      "publisher": "",
+      "year": 2021,
+      "volume": "45",
+      "issue": "4",
+      "container": "Cognitive Science",
+      "first_page": null,
+      "last_page": null,
+      "bib_id": 52,
+      "year_suffix": "",
+      "text_id": 378
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1371/journal.pone.0058594",
+      "title": "Good exemplars of natural scene categories elicit clearer patterns than bad exemplars but not greater BOLD activity",
+      "authors": "Torralbo, A; Walther, D B; Chai, B; Caddigan, E; Fei-Fei, L; Beck, D M",
+      "editors": "",
+      "publisher": "",
+      "year": 2013,
+      "volume": "8",
+      "issue": "3",
+      "container": "PLOS ONE",
+      "first_page": null,
+      "last_page": null,
+      "bib_id": 53,
+      "year_suffix": "",
+      "text_id": 379
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1068/i0466aap",
+      "title": "Putting reward in art: A tentative prediction error account of visual art",
+      "authors": "Van De Cruys, S; Wagemans, J",
+      "editors": "",
+      "publisher": "",
+      "year": 2011,
+      "volume": "2",
+      "issue": "9",
+      "container": "I-Perception",
+      "first_page": "1035",
+      "last_page": "1062",
+      "bib_id": 54,
+      "year_suffix": "",
+      "text_id": 380
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1073/pnas.1301227110",
+      "title": "Impact of contour on aesthetic judgments and approachavoidance decisions in architecture",
+      "authors": "Vartanian, O; Navarrete, G; Chatterjee, A; Fich, L B; Leder, H; Modroño, C; Nadal, M; Rostrup, N; Skov, M",
+      "editors": "",
+      "publisher": "",
+      "year": 2013,
+      "volume": "110",
+      "issue": "2",
+      "container": "Proceedings of the National Academy of Sciences",
+      "first_page": "10446",
+      "last_page": "10453",
+      "bib_id": 55,
+      "year_suffix": "",
+      "text_id": 381
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "Beauty in the blink of an eye: The time course of aesthetic experiences",
+      "authors": "Verhavert, S; Wagemans, J; Augustin, M D",
+      "editors": "",
+      "publisher": "",
+      "year": 2018,
+      "volume": "109",
+      "issue": "1",
+      "container": "British Journal of Psychology",
+      "first_page": "63",
+      "last_page": "84",
+      "bib_id": 56,
+      "year_suffix": "",
+      "text_id": 382
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1073/pnas.1902650116",
+      "title": "The default-mode network represents aesthetic appeal that generalizes across visual domains",
+      "authors": "Vessel, E A; Isik, A I; Belfi, A M; Stahl, J L; Starr, G G",
+      "editors": "",
+      "publisher": "",
+      "year": 2019,
+      "volume": "116",
+      "issue": "38",
+      "container": "Proceedings of the National Academy of Sciences",
+      "first_page": "19155",
+      "last_page": "19164",
+      "bib_id": 57,
+      "year_suffix": "",
+      "text_id": 383
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1016/j.cognition.2018.06.009",
+      "title": "Stronger shared taste for natural aesthetic domains than for artifacts of human culture",
+      "authors": "Vessel, E A; Maurer, N; Denker, A H; Starr, G G",
+      "editors": "",
+      "publisher": "",
+      "year": 2018,
+      "volume": "179",
+      "issue": "",
+      "container": "Cognition",
+      "first_page": "121",
+      "last_page": "131",
+      "bib_id": 58,
+      "year_suffix": "",
+      "text_id": 384
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "Scene preferences, aesthetic appeal, and curiosity",
+      "authors": "Vessel, E A; Yue, X; Biederman, I",
+      "editors": "Chatterjee, A; Cardilo, E",
+      "publisher": "Oxford University Press",
+      "year": 2021,
+      "volume": "",
+      "issue": "",
+      "container": "",
+      "first_page": "61",
+      "last_page": "65",
+      "bib_id": 59,
+      "year_suffix": "",
+      "text_id": 385
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1016/j.copsyc.2019.03.009",
+      "title": "Reading scenes: How scene grammar guides attention and aids perception in real-world environments",
+      "authors": "Võ, M L; Boettcher, -H; Draschkow, S E; , D",
+      "editors": "",
+      "publisher": "",
+      "year": 2019,
+      "volume": "29",
+      "issue": "",
+      "container": "Attention & Perception",
+      "first_page": "205",
+      "last_page": "210",
+      "bib_id": 60,
+      "year_suffix": "",
+      "text_id": 386
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "Skewed symmetry: A nonaccidental property used to perceive visual forms",
+      "authors": "Wagemans, J",
+      "editors": "",
+      "publisher": "",
+      "year": 1993,
+      "volume": "19",
+      "issue": "2",
+      "container": "Journal of Experimental Psychology: Human Perception and Performance",
+      "first_page": "364",
+      "last_page": "380",
+      "bib_id": 61,
+      "year_suffix": "",
+      "text_id": 387
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1073/pnas.1015666108",
+      "title": "Simple line drawings suffice for functional MRI decoding of natural scene categories",
+      "authors": "Walther, D B; Chai, B; Caddigan, E; Beck, D M; Fei-Fei, L",
+      "editors": "",
+      "publisher": "",
+      "year": 2011,
+      "volume": "108",
+      "issue": "23",
+      "container": "Proceedings of the National Academy of Sciences",
+      "first_page": "9661",
+      "last_page": "9666",
+      "bib_id": 62,
+      "year_suffix": "",
+      "text_id": 388
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.3389/.2023.1140723/abstract",
+      "title": "The Mid-level Vision Toolbox for computing structural properties of real-world images",
+      "authors": "Walther, D B; Farzanfar, D; Han, S; Rezanejad, M",
+      "editors": "",
+      "publisher": "",
+      "year": 2023,
+      "volume": "14",
+      "issue": "",
+      "container": "Frontiers in Psychology",
+      "first_page": "1140723",
+      "last_page": null,
+      "bib_id": 63,
+      "year_suffix": "",
+      "text_id": 389
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1177/0956797613512662",
+      "title": "Nonaccidental properties underlie human categorization of complex natural scenes",
+      "authors": "Walther, D B; Shen, D",
+      "editors": "",
+      "publisher": "",
+      "year": 2014,
+      "volume": "25",
+      "issue": "4",
+      "container": "Psychological Science",
+      "first_page": "851",
+      "last_page": "860",
+      "bib_id": 64,
+      "year_suffix": "",
+      "text_id": 390
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "Why and how should cognitive science care about aesthetics?",
+      "authors": "Wassiliwizky, E; Menninghaus, W",
+      "editors": "",
+      "publisher": "",
+      "year": 2021,
+      "volume": "25",
+      "issue": "6",
+      "container": "Trends in Cognitive Sciences",
+      "first_page": "437",
+      "last_page": "449",
+      "bib_id": 65,
+      "year_suffix": "",
+      "text_id": 391
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "Development and validation of brief measures of positive and negative affect: The PANAS scales",
+      "authors": "Watson, D; Clark, L A; Tellegen, A",
+      "editors": "",
+      "publisher": "",
+      "year": 1988,
+      "volume": "54",
+      "issue": "6",
+      "container": "Journal of Personality and Social Psychology",
+      "first_page": "1063",
+      "last_page": "1070",
+      "bib_id": 66,
+      "year_suffix": "",
+      "text_id": 392
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1016/j.cognition.2018.09.014",
+      "title": "Local contour symmetry facilitates scene categorization",
+      "authors": "Wilder, J; Rezanejad, M; Dickinson, S; Siddiqi, K; Jepson, A; Walther, D B",
+      "editors": "",
+      "publisher": "",
+      "year": 2019,
+      "volume": "182",
+      "issue": "",
+      "container": "Cognition",
+      "first_page": "307",
+      "last_page": "317",
+      "bib_id": 67,
+      "year_suffix": "",
+      "text_id": 393
+    }
+  ],
+  "xref": [
+    {
+      "xref_id": 0,
+      "xref_type": "bib",
+      "contents": "(Arnheim, 1974;",
+      "text_id": 299
+    },
+    {
+      "xref_id": 1,
+      "xref_type": "bib",
+      "contents": "(Attneave, 1954;",
+      "text_id": 24
+    },
+    {
+      "xref_id": 1,
+      "xref_type": "bib",
+      "contents": "(Attneave, 1954;",
+      "text_id": 25
+    },
+    {
+      "xref_id": 1,
+      "xref_type": "bib",
+      "contents": "Attneave, 1954;",
+      "text_id": 295
+    },
+    {
+      "xref_id": 1,
+      "xref_type": "bib",
+      "contents": "Attneave, 1954;",
+      "text_id": 299
+    },
+    {
+      "xref_id": 1,
+      "xref_type": "bib",
+      "contents": "Attneave, 1954;",
+      "text_id": 300
+    },
+    {
+      "xref_id": 2,
+      "xref_type": "bib",
+      "contents": "(Ayzenberg et al., 2022;",
+      "text_id": 20
+    },
+    {
+      "xref_id": 2,
+      "xref_type": "bib",
+      "contents": "(Ayzenberg et al., 2022;",
+      "text_id": 25
+    },
+    {
+      "xref_id": 2,
+      "xref_type": "bib",
+      "contents": "(Ayzenberg et al., 2022)",
+      "text_id": 284
+    },
+    {
+      "xref_id": 2,
+      "xref_type": "bib",
+      "contents": "(Ayzenberg et al., 2022)",
+      "text_id": 287
+    },
+    {
+      "xref_id": 2,
+      "xref_type": "bib",
+      "contents": "(Ayzenberg et al., 2022)",
+      "text_id": 288
+    },
+    {
+      "xref_id": 2,
+      "xref_type": "bib",
+      "contents": "(Ayzenberg et al., 2022)",
+      "text_id": 291
+    },
+    {
+      "xref_id": 2,
+      "xref_type": "bib",
+      "contents": "(Ayzenberg et al., 2022)",
+      "text_id": 292
+    },
+    {
+      "xref_id": 2,
+      "xref_type": "bib",
+      "contents": "(Ayzenberg et al., 2022;",
+      "text_id": 284
+    },
+    {
+      "xref_id": 2,
+      "xref_type": "bib",
+      "contents": "(Ayzenberg et al., 2022;",
+      "text_id": 287
+    },
+    {
+      "xref_id": 2,
+      "xref_type": "bib",
+      "contents": "(Ayzenberg et al., 2022;",
+      "text_id": 288
+    },
+    {
+      "xref_id": 2,
+      "xref_type": "bib",
+      "contents": "(Ayzenberg et al., 2022;",
+      "text_id": 291
+    },
+    {
+      "xref_id": 2,
+      "xref_type": "bib",
+      "contents": "(Ayzenberg et al., 2022;",
+      "text_id": 292
+    },
+    {
+      "xref_id": 3,
+      "xref_type": "bib",
+      "contents": "(Bar & Neta, 2006;",
+      "text_id": 11
+    },
+    {
+      "xref_id": 3,
+      "xref_type": "bib",
+      "contents": "(Bar & Neta, 2006;",
+      "text_id": 12
+    },
+    {
+      "xref_id": 3,
+      "xref_type": "bib",
+      "contents": "(Bar & Neta, 2006;",
+      "text_id": 14
+    },
+    {
+      "xref_id": 3,
+      "xref_type": "bib",
+      "contents": "(Bar & Neta, 2006;",
+      "text_id": 22
+    },
+    {
+      "xref_id": 3,
+      "xref_type": "bib",
+      "contents": "(Bar & Neta, 2006;",
+      "text_id": 25
+    },
+    {
+      "xref_id": 3,
+      "xref_type": "bib",
+      "contents": "(Bar & Neta, 2006;",
+      "text_id": 275
+    },
+    {
+      "xref_id": 4,
+      "xref_type": "bib",
+      "contents": "(Bates et al., 2015)",
+      "text_id": 165
+    },
+    {
+      "xref_id": 5,
+      "xref_type": "bib",
+      "contents": "(Berlyne, 1970;",
+      "text_id": 27
+    },
+    {
+      "xref_id": 5,
+      "xref_type": "bib",
+      "contents": "(Berlyne, 1970;",
+      "text_id": 275
+    },
+    {
+      "xref_id": 5,
+      "xref_type": "bib",
+      "contents": "(Berlyne, 1970;",
+      "text_id": 277
+    },
+    {
+      "xref_id": 5,
+      "xref_type": "bib",
+      "contents": "(Berlyne, 1970;",
+      "text_id": 281
+    },
+    {
+      "xref_id": 5,
+      "xref_type": "bib",
+      "contents": "(Berlyne, 1970;",
+      "text_id": 295
+    },
+    {
+      "xref_id": 5,
+      "xref_type": "bib",
+      "contents": "(Berlyne, 1970;",
+      "text_id": 299
+    },
+    {
+      "xref_id": 6,
+      "xref_type": "bib",
+      "contents": "(Berman et al., 2008;",
+      "text_id": 290
+    },
+    {
+      "xref_id": 7,
+      "xref_type": "bib",
+      "contents": "Bertamini et al., 1997;",
+      "text_id": 299
+    },
+    {
+      "xref_id": 8,
+      "xref_type": "bib",
+      "contents": "Biederman, 1987;",
+      "text_id": 14
+    },
+    {
+      "xref_id": 8,
+      "xref_type": "bib",
+      "contents": "Biederman, 1987)",
+      "text_id": 22
+    },
+    {
+      "xref_id": 8,
+      "xref_type": "bib",
+      "contents": "(Biederman, 1987;",
+      "text_id": 26
+    },
+    {
+      "xref_id": 8,
+      "xref_type": "bib",
+      "contents": "(Biederman, 1987)",
+      "text_id": 95
+    },
+    {
+      "xref_id": 8,
+      "xref_type": "bib",
+      "contents": "(Biederman, 1987;",
+      "text_id": null
+    },
+    {
+      "xref_id": 9,
+      "xref_type": "bib",
+      "contents": "(Biederman & Vessel, 2006;",
+      "text_id": 10
+    },
+    {
+      "xref_id": 9,
+      "xref_type": "bib",
+      "contents": "(Biederman & Vessel, 2006;",
+      "text_id": 283
+    },
+    {
+      "xref_id": 10,
+      "xref_type": "bib",
+      "contents": "Brielmann & Pelli, 2018;",
+      "text_id": 10
+    },
+    {
+      "xref_id": 10,
+      "xref_type": "bib",
+      "contents": "(Brielmann & Pelli, 2018;",
+      "text_id": 19
+    },
+    {
+      "xref_id": 10,
+      "xref_type": "bib",
+      "contents": "Brielmann & Pelli, 2018)",
+      "text_id": 27
+    },
+    {
+      "xref_id": 10,
+      "xref_type": "bib",
+      "contents": "(Brielmann & Pelli, 2018;",
+      "text_id": 291
+    },
+    {
+      "xref_id": 10,
+      "xref_type": "bib",
+      "contents": "(Brielmann & Pelli, 2018;",
+      "text_id": 300
+    },
+    {
+      "xref_id": 11,
+      "xref_type": "bib",
+      "contents": "(Cavanagh, 2005;",
+      "text_id": 11
+    },
+    {
+      "xref_id": 11,
+      "xref_type": "bib",
+      "contents": "Cavanagh, 2005;",
+      "text_id": 24
+    },
+    {
+      "xref_id": 11,
+      "xref_type": "bib",
+      "contents": "(Cavanagh, 2005;",
+      "text_id": null
+    },
+    {
+      "xref_id": 11,
+      "xref_type": "bib",
+      "contents": "(Cavanagh, 2005;",
+      "text_id": 268
+    },
+    {
+      "xref_id": 11,
+      "xref_type": "bib",
+      "contents": "(Cavanagh, 2005)",
+      "text_id": null
+    },
+    {
+      "xref_id": 11,
+      "xref_type": "bib",
+      "contents": "(Cavanagh, 2005)",
+      "text_id": 268
+    },
+    {
+      "xref_id": 12,
+      "xref_type": "bib",
+      "contents": "Chatterjee, 2022;",
+      "text_id": 10
+    },
+    {
+      "xref_id": 12,
+      "xref_type": "bib",
+      "contents": "Chatterjee, 2022;",
+      "text_id": 14
+    },
+    {
+      "xref_id": 12,
+      "xref_type": "bib",
+      "contents": "Chatterjee, 2022)",
+      "text_id": 10
+    },
+    {
+      "xref_id": 12,
+      "xref_type": "bib",
+      "contents": "Chatterjee, 2022)",
+      "text_id": 14
+    },
+    {
+      "xref_id": 12,
+      "xref_type": "bib",
+      "contents": "Chatterjee, 2022;",
+      "text_id": 19
+    },
+    {
+      "xref_id": 13,
+      "xref_type": "bib",
+      "contents": "(Chatterjee & Vartanian, 2014;",
+      "text_id": 9
+    },
+    {
+      "xref_id": 13,
+      "xref_type": "bib",
+      "contents": "(Chatterjee & Vartanian, 2014)",
+      "text_id": 279
+    },
+    {
+      "xref_id": 14,
+      "xref_type": "bib",
+      "contents": "Choo & Walther, 2016)",
+      "text_id": null
+    },
+    {
+      "xref_id": 15,
+      "xref_type": "bib",
+      "contents": "(Chuquichambi et al., 2022;",
+      "text_id": 275
+    },
+    {
+      "xref_id": 16,
+      "xref_type": "bib",
+      "contents": "Dai et al., 2022)",
+      "text_id": 275
+    },
+    {
+      "xref_id": 17,
+      "xref_type": "bib",
+      "contents": "Damiano et al., 2021)",
+      "text_id": 12
+    },
+    {
+      "xref_id": 17,
+      "xref_type": "bib",
+      "contents": "Damiano et al., 2021;",
+      "text_id": 25
+    },
+    {
+      "xref_id": 17,
+      "xref_type": "bib",
+      "contents": "(Damiano et al., 2021;",
+      "text_id": 80
+    },
+    {
+      "xref_id": 17,
+      "xref_type": "bib",
+      "contents": "(Damiano et al., 2021)",
+      "text_id": 276
+    },
+    {
+      "xref_id": 18,
+      "xref_type": "bib",
+      "contents": "Donderi, 2006)",
+      "text_id": 295
+    },
+    {
+      "xref_id": 19,
+      "xref_type": "bib",
+      "contents": "(Elder & Goldberg, 2002)",
+      "text_id": 96
+    },
+    {
+      "xref_id": 20,
+      "xref_type": "bib",
+      "contents": "(Epstein et al., 2006)",
+      "text_id": 184
+    },
+    {
+      "xref_id": 20,
+      "xref_type": "bib",
+      "contents": "(Epstein et al., 2006)",
+      "text_id": 185
+    },
+    {
+      "xref_id": 20,
+      "xref_type": "bib",
+      "contents": "(Epstein et al., 2006;",
+      "text_id": 184
+    },
+    {
+      "xref_id": 20,
+      "xref_type": "bib",
+      "contents": "(Epstein et al., 2006;",
+      "text_id": 185
+    },
+    {
+      "xref_id": 21,
+      "xref_type": "bib",
+      "contents": "(Farzanfar et al., 2023)",
+      "text_id": 270
+    },
+    {
+      "xref_id": 21,
+      "xref_type": "bib",
+      "contents": "(Farzanfar et al., 2023)",
+      "text_id": 292
+    },
+    {
+      "xref_id": 22,
+      "xref_type": "bib",
+      "contents": "(Fechner, 1876)",
+      "text_id": 28
+    },
+    {
+      "xref_id": 23,
+      "xref_type": "bib",
+      "contents": "(Fife & D'Onofrio, 2022)",
+      "text_id": 102
+    },
+    {
+      "xref_id": 23,
+      "xref_type": "bib",
+      "contents": "(Fife & D'Onofrio, 2022)",
+      "text_id": 112
+    },
+    {
+      "xref_id": 24,
+      "xref_type": "bib",
+      "contents": "(Gibson, 1986)",
+      "text_id": 20
+    },
+    {
+      "xref_id": 24,
+      "xref_type": "bib",
+      "contents": "Gibson, 1986;",
+      "text_id": 291
+    },
+    {
+      "xref_id": 25,
+      "xref_type": "bib",
+      "contents": "(Graham & Redies, 2010;",
+      "text_id": 19
+    },
+    {
+      "xref_id": 25,
+      "xref_type": "bib",
+      "contents": "(Graham & Redies, 2010;",
+      "text_id": 284
+    },
+    {
+      "xref_id": 26,
+      "xref_type": "bib",
+      "contents": "Hayes & Henderson, 2022)",
+      "text_id": 185
+    },
+    {
+      "xref_id": 28,
+      "xref_type": "bib",
+      "contents": "Iigaya et al., 2021)",
+      "text_id": 19
+    },
+    {
+      "xref_id": 28,
+      "xref_type": "bib",
+      "contents": "(Iigaya et al., 2021)",
+      "text_id": 98
+    },
+    {
+      "xref_id": 28,
+      "xref_type": "bib",
+      "contents": "Iigaya et al., 2021;",
+      "text_id": 284
+    },
+    {
+      "xref_id": 29,
+      "xref_type": "bib",
+      "contents": "( Johnson et al., 2014)",
+      "text_id": 169
+    },
+    {
+      "xref_id": 30,
+      "xref_type": "bib",
+      "contents": "Kaplan & Kaplan, 1989)",
+      "text_id": 290
+    },
+    {
+      "xref_id": 31,
+      "xref_type": "bib",
+      "contents": "(Kim, 2015)",
+      "text_id": 233
+    },
+    {
+      "xref_id": 32,
+      "xref_type": "bib",
+      "contents": "Koffka, 1935;",
+      "text_id": 299
+    },
+    {
+      "xref_id": 33,
+      "xref_type": "bib",
+      "contents": "(Kuznetsova et al., 2017)",
+      "text_id": 168
+    },
+    {
+      "xref_id": 34,
+      "xref_type": "bib",
+      "contents": "Mamassian, 2008;",
+      "text_id": 11
+    },
+    {
+      "xref_id": 35,
+      "xref_type": "bib",
+      "contents": "(Maniaci & Rogge, 2014;",
+      "text_id": 58
+    },
+    {
+      "xref_id": 36,
+      "xref_type": "bib",
+      "contents": "(Marr, 1982)",
+      "text_id": 22
+    },
+    {
+      "xref_id": 37,
+      "xref_type": "bib",
+      "contents": "Martindale & Moore, 1988;",
+      "text_id": 300
+    },
+    {
+      "xref_id": 38,
+      "xref_type": "bib",
+      "contents": "Meade & Craig, 2012)",
+      "text_id": 58
+    },
+    {
+      "xref_id": 39,
+      "xref_type": "bib",
+      "contents": "(Nakauchi & Tamura, 2022)",
+      "text_id": 124
+    },
+    {
+      "xref_id": 39,
+      "xref_type": "bib",
+      "contents": "(Nakauchi & Tamura, 2022)",
+      "text_id": 127
+    },
+    {
+      "xref_id": 40,
+      "xref_type": "bib",
+      "contents": "(Nasr et al., 2014)",
+      "text_id": 97
+    },
+    {
+      "xref_id": 41,
+      "xref_type": "bib",
+      "contents": "(Oliva & Torralba, 2001)",
+      "text_id": 97
+    },
+    {
+      "xref_id": 42,
+      "xref_type": "bib",
+      "contents": "(Olson et al., 2021)",
+      "text_id": 156
+    },
+    {
+      "xref_id": 42,
+      "xref_type": "bib",
+      "contents": "(Olson et al., 2021)",
+      "text_id": 158
+    },
+    {
+      "xref_id": 43,
+      "xref_type": "bib",
+      "contents": "Palmer et al., 2013)",
+      "text_id": 10
+    },
+    {
+      "xref_id": 43,
+      "xref_type": "bib",
+      "contents": "Palmer et al., 2013)",
+      "text_id": 284
+    },
+    {
+      "xref_id": 43,
+      "xref_type": "bib",
+      "contents": "Palmer, 1992;",
+      "text_id": 299
+    },
+    {
+      "xref_id": 43,
+      "xref_type": "bib",
+      "contents": "Palmer, 1992;",
+      "text_id": 300
+    },
+    {
+      "xref_id": 43,
+      "xref_type": "bib",
+      "contents": "Palmer et al., 2013)",
+      "text_id": 299
+    },
+    {
+      "xref_id": 43,
+      "xref_type": "bib",
+      "contents": "Palmer et al., 2013)",
+      "text_id": 300
+    },
+    {
+      "xref_id": 44,
+      "xref_type": "bib",
+      "contents": "Peirce, 2015)",
+      "text_id": 288
+    },
+    {
+      "xref_id": 45,
+      "xref_type": "bib",
+      "contents": "(Reber et al., 2004)",
+      "text_id": 270
+    },
+    {
+      "xref_id": 46,
+      "xref_type": "bib",
+      "contents": "(Rezanejad, 2020;",
+      "text_id": null
+    },
+    {
+      "xref_id": 47,
+      "xref_type": "bib",
+      "contents": "(Rezanejad et al., 2019;",
+      "text_id": 17
+    },
+    {
+      "xref_id": 47,
+      "xref_type": "bib",
+      "contents": "Rezanejad et al., 2019)",
+      "text_id": null
+    },
+    {
+      "xref_id": 48,
+      "xref_type": "bib",
+      "contents": "(Rutledge et al., 2014)",
+      "text_id": 278
+    },
+    {
+      "xref_id": 49,
+      "xref_type": "bib",
+      "contents": "Sayim & Cavanagh, 2011)",
+      "text_id": 11
+    },
+    {
+      "xref_id": 49,
+      "xref_type": "bib",
+      "contents": "Sayim & Cavanagh, 2011)",
+      "text_id": null
+    },
+    {
+      "xref_id": 50,
+      "xref_type": "bib",
+      "contents": "(Schlotz et al., 2021)",
+      "text_id": 228
+    },
+    {
+      "xref_id": 50,
+      "xref_type": "bib",
+      "contents": "(Schlotz et al., 2021)",
+      "text_id": 281
+    },
+    {
+      "xref_id": 51,
+      "xref_type": "bib",
+      "contents": "Silvia, 2005)",
+      "text_id": 277
+    },
+    {
+      "xref_id": 52,
+      "xref_type": "bib",
+      "contents": "Sun & Firestone, 2021)",
+      "text_id": 25
+    },
+    {
+      "xref_id": 53,
+      "xref_type": "bib",
+      "contents": "(Torralbo et al., 2013;",
+      "text_id": 41
+    },
+    {
+      "xref_id": 53,
+      "xref_type": "bib",
+      "contents": "(Torralbo et al., 2013;",
+      "text_id": 43
+    },
+    {
+      "xref_id": 53,
+      "xref_type": "bib",
+      "contents": "(Torralbo et al., 2013)",
+      "text_id": 41
+    },
+    {
+      "xref_id": 53,
+      "xref_type": "bib",
+      "contents": "(Torralbo et al., 2013)",
+      "text_id": 43
+    },
+    {
+      "xref_id": 54,
+      "xref_type": "bib",
+      "contents": "Van de Cruys & Wagemans, 2011;",
+      "text_id": 299
+    },
+    {
+      "xref_id": 55,
+      "xref_type": "bib",
+      "contents": "Vartanian et al., 2013)",
+      "text_id": 25
+    },
+    {
+      "xref_id": 55,
+      "xref_type": "bib",
+      "contents": "Vartanian et al., 2013)",
+      "text_id": 275
+    },
+    {
+      "xref_id": 55,
+      "xref_type": "bib",
+      "contents": "Vartanian et al., 2013)",
+      "text_id": 291
+    },
+    {
+      "xref_id": 56,
+      "xref_type": "bib",
+      "contents": "(Verhavert et al., 2018)",
+      "text_id": 72
+    },
+    {
+      "xref_id": 57,
+      "xref_type": "bib",
+      "contents": "Vessel et al., 2019)",
+      "text_id": 9
+    },
+    {
+      "xref_id": 57,
+      "xref_type": "bib",
+      "contents": "(Vessel et al., , 2019) )",
+      "text_id": 290
+    },
+    {
+      "xref_id": 58,
+      "xref_type": "bib",
+      "contents": "(Vessel et al., 2018",
+      "text_id": 290
+    },
+    {
+      "xref_id": 59,
+      "xref_type": "bib",
+      "contents": "Vessel et al., 2021)",
+      "text_id": 283
+    },
+    {
+      "xref_id": 60,
+      "xref_type": "bib",
+      "contents": "(Võ et al., 2019)",
+      "text_id": 13
+    },
+    {
+      "xref_id": 60,
+      "xref_type": "bib",
+      "contents": "(Võ et al., 2019)",
+      "text_id": 270
+    },
+    {
+      "xref_id": 61,
+      "xref_type": "bib",
+      "contents": "Wagemans, 1993)",
+      "text_id": 299
+    },
+    {
+      "xref_id": 62,
+      "xref_type": "bib",
+      "contents": "(Walther et al., 2011)",
+      "text_id": 12
+    },
+    {
+      "xref_id": 62,
+      "xref_type": "bib",
+      "contents": "Walther et al., 2011;",
+      "text_id": 41
+    },
+    {
+      "xref_id": 62,
+      "xref_type": "bib",
+      "contents": "Walther et al., 2011;",
+      "text_id": 42
+    },
+    {
+      "xref_id": 62,
+      "xref_type": "bib",
+      "contents": "Walther et al., 2011;",
+      "text_id": 44
+    },
+    {
+      "xref_id": 62,
+      "xref_type": "bib",
+      "contents": "(Walther et al., 2011)",
+      "text_id": 41
+    },
+    {
+      "xref_id": 62,
+      "xref_type": "bib",
+      "contents": "(Walther et al., 2011)",
+      "text_id": 42
+    },
+    {
+      "xref_id": 62,
+      "xref_type": "bib",
+      "contents": "(Walther et al., 2011)",
+      "text_id": 44
+    },
+    {
+      "xref_id": 63,
+      "xref_type": "bib",
+      "contents": "Walther et al., 2023;",
+      "text_id": 17
+    },
+    {
+      "xref_id": 63,
+      "xref_type": "bib",
+      "contents": "Walther et al., 2023)",
+      "text_id": null
+    },
+    {
+      "xref_id": 63,
+      "xref_type": "bib",
+      "contents": "Walther et al., 2023)",
+      "text_id": 92
+    },
+    {
+      "xref_id": 63,
+      "xref_type": "bib",
+      "contents": "Walther et al. (2023)",
+      "text_id": null
+    },
+    {
+      "xref_id": 63,
+      "xref_type": "bib",
+      "contents": "Walther et al. (2023)",
+      "text_id": 92
+    },
+    {
+      "xref_id": 63,
+      "xref_type": "bib",
+      "contents": "(Walther et al., 2023)",
+      "text_id": null
+    },
+    {
+      "xref_id": 64,
+      "xref_type": "bib",
+      "contents": "Walther & Shen, 2014)",
+      "text_id": 17
+    },
+    {
+      "xref_id": 64,
+      "xref_type": "bib",
+      "contents": "Walther & Shen, 2014;",
+      "text_id": 24
+    },
+    {
+      "xref_id": 64,
+      "xref_type": "bib",
+      "contents": "Walther & Shen, 2014)",
+      "text_id": 26
+    },
+    {
+      "xref_id": 64,
+      "xref_type": "bib",
+      "contents": "Walther & Shen, 2014)",
+      "text_id": 41
+    },
+    {
+      "xref_id": 64,
+      "xref_type": "bib",
+      "contents": "Walther and Shen (2014)",
+      "text_id": 79
+    },
+    {
+      "xref_id": 64,
+      "xref_type": "bib",
+      "contents": "Walther and Shen (2014)",
+      "text_id": 92
+    },
+    {
+      "xref_id": 65,
+      "xref_type": "bib",
+      "contents": "Wassiliwizky & Menninghaus, 2021)",
+      "text_id": 19
+    },
+    {
+      "xref_id": 66,
+      "xref_type": "bib",
+      "contents": "Watson et al., 1988)",
+      "text_id": 155
+    },
+    {
+      "xref_id": 66,
+      "xref_type": "bib",
+      "contents": "(Watson et al., 1988",
+      "text_id": 274
+    },
+    {
+      "xref_id": 67,
+      "xref_type": "bib",
+      "contents": "Wilder et al., 2019)",
+      "text_id": 24
+    },
+    {
+      "xref_id": 67,
+      "xref_type": "bib",
+      "contents": "Wilder et al., 2019)",
+      "text_id": 80
+    },
+    {
+      "xref_id": null,
+      "xref_type": "bib",
+      "contents": "(Hummel & Biederman, 1992, pp. 480-517)",
+      "text_id": 96
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "1",
+      "text_id": 94
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "1",
+      "text_id": 132
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "2a",
+      "text_id": 101
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "2a",
+      "text_id": 111
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "2b",
+      "text_id": 101
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "2b",
+      "text_id": 111
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "2c",
+      "text_id": 113
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "2c",
+      "text_id": 119
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "2",
+      "text_id": 132
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "2b",
+      "text_id": 135
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "2b",
+      "text_id": 136
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "5",
+      "text_id": null
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "8c",
+      "text_id": 220
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "8a",
+      "text_id": 239
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "8a",
+      "text_id": 241
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "8b",
+      "text_id": 239
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "8b",
+      "text_id": 241
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "8d",
+      "text_id": 257
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "3a",
+      "text_id": 122
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "3b",
+      "text_id": 123
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "4b",
+      "text_id": 133
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "3b",
+      "text_id": 136
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "3c",
+      "text_id": 137
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "4c",
+      "text_id": 173
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "4b",
+      "text_id": 179
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "7",
+      "text_id": null
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "6",
+      "text_id": null
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "7",
+      "text_id": null
+    }
+  ],
+  "figure": [
+    {
+      "figure_id": 1,
+      "section_id": 26,
+      "image": null,
+      "page_number": null
+    },
+    {
+      "figure_id": 2,
+      "section_id": 27,
+      "image": null,
+      "page_number": null
+    },
+    {
+      "figure_id": 3,
+      "section_id": 28,
+      "image": null,
+      "page_number": null
+    },
+    {
+      "figure_id": 4,
+      "section_id": 29,
+      "image": null,
+      "page_number": null
+    },
+    {
+      "figure_id": 5,
+      "section_id": 30,
+      "image": null,
+      "page_number": null
+    },
+    {
+      "figure_id": 6,
+      "section_id": 31,
+      "image": null,
+      "page_number": null
+    },
+    {
+      "figure_id": 7,
+      "section_id": 32,
+      "image": null,
+      "page_number": null
+    }
+  ],
+  "table": [],
+  "eq": [
+    {
+      "text_id": 40,
+      "grp_id": 1,
+      "lhs": "n",
+      "comp": "=",
+      "rhs": "475"
+    },
+    {
+      "text_id": 40,
+      "grp_id": 1,
+      "lhs": "n",
+      "comp": "=",
+      "rhs": "475"
+    },
+    {
+      "text_id": 128,
+      "grp_id": 2,
+      "lhs": "SD",
+      "comp": "=",
+      "rhs": "0.5"
+    },
+    {
+      "text_id": 128,
+      "grp_id": 2,
+      "lhs": "SD",
+      "comp": "=",
+      "rhs": "0.85"
+    },
+    {
+      "text_id": 129,
+      "grp_id": 3,
+      "lhs": "drawings",
+      "comp": "=",
+      "rhs": "0.07"
+    },
+    {
+      "text_id": 129,
+      "grp_id": 3,
+      "lhs": "SD",
+      "comp": "=",
+      "rhs": "0.42"
+    },
+    {
+      "text_id": 129,
+      "grp_id": 3,
+      "lhs": "photographs",
+      "comp": "=",
+      "rhs": "0.58"
+    },
+    {
+      "text_id": 129,
+      "grp_id": 3,
+      "lhs": "SD",
+      "comp": "=",
+      "rhs": "0.34"
+    },
+    {
+      "text_id": 129,
+      "grp_id": 3,
+      "lhs": "drawings",
+      "comp": "=",
+      "rhs": "0.36"
+    },
+    {
+      "text_id": 129,
+      "grp_id": 3,
+      "lhs": "SD",
+      "comp": "=",
+      "rhs": "0.35"
+    },
+    {
+      "text_id": 129,
+      "grp_id": 3,
+      "lhs": "photographs",
+      "comp": "=",
+      "rhs": "-0.18"
+    },
+    {
+      "text_id": 129,
+      "grp_id": 3,
+      "lhs": "SD",
+      "comp": "=",
+      "rhs": "0.41"
+    },
+    {
+      "text_id": 129,
+      "grp_id": 3,
+      "lhs": "drawings",
+      "comp": "=",
+      "rhs": "-0.4"
+    },
+    {
+      "text_id": 129,
+      "grp_id": 3,
+      "lhs": "SD",
+      "comp": "=",
+      "rhs": "0.28"
+    },
+    {
+      "text_id": 129,
+      "grp_id": 3,
+      "lhs": "photographs",
+      "comp": "=",
+      "rhs": "0.35"
+    },
+    {
+      "text_id": 129,
+      "grp_id": 3,
+      "lhs": "SD",
+      "comp": "=",
+      "rhs": "0.29"
+    },
+    {
+      "text_id": 129,
+      "grp_id": 3,
+      "lhs": "drawings",
+      "comp": "=",
+      "rhs": "0.09"
+    },
+    {
+      "text_id": 129,
+      "grp_id": 3,
+      "lhs": "SD",
+      "comp": "=",
+      "rhs": "0.30"
+    },
+    {
+      "text_id": 129,
+      "grp_id": 3,
+      "lhs": "photographs",
+      "comp": "=",
+      "rhs": "-0.62"
+    },
+    {
+      "text_id": 129,
+      "grp_id": 3,
+      "lhs": "SD",
+      "comp": "=",
+      "rhs": "0.29"
+    },
+    {
+      "text_id": 129,
+      "grp_id": 3,
+      "lhs": "drawings",
+      "comp": "=",
+      "rhs": "-0.24"
+    },
+    {
+      "text_id": 129,
+      "grp_id": 3,
+      "lhs": "SD",
+      "comp": "=",
+      "rhs": "0.32"
+    },
+    {
+      "text_id": 129,
+      "grp_id": 3,
+      "lhs": "photographs",
+      "comp": "=",
+      "rhs": "0.71"
+    },
+    {
+      "text_id": 129,
+      "grp_id": 3,
+      "lhs": "SD",
+      "comp": "=",
+      "rhs": "0.26"
+    },
+    {
+      "text_id": 129,
+      "grp_id": 3,
+      "lhs": "drawings",
+      "comp": "=",
+      "rhs": "0.1"
+    },
+    {
+      "text_id": 129,
+      "grp_id": 3,
+      "lhs": "SD",
+      "comp": "=",
+      "rhs": "0.3"
+    },
+    {
+      "text_id": 129,
+      "grp_id": 3,
+      "lhs": "photographs",
+      "comp": "=",
+      "rhs": "-0.84"
+    },
+    {
+      "text_id": 129,
+      "grp_id": 3,
+      "lhs": "SD",
+      "comp": "=",
+      "rhs": "0.31"
+    },
+    {
+      "text_id": 133,
+      "grp_id": 4,
+      "lhs": "r",
+      "comp": "=",
+      "rhs": ".64"
+    },
+    {
+      "text_id": 133,
+      "grp_id": 4,
+      "lhs": "p",
+      "comp": "<",
+      "rhs": ".001"
+    },
+    {
+      "text_id": 133,
+      "grp_id": 4,
+      "lhs": "r",
+      "comp": "=",
+      "rhs": ".77"
+    },
+    {
+      "text_id": 133,
+      "grp_id": 4,
+      "lhs": "p",
+      "comp": "<",
+      "rhs": ".001"
+    },
+    {
+      "text_id": 142,
+      "grp_id": 5,
+      "lhs": "r",
+      "comp": "=",
+      "rhs": "0.64"
+    },
+    {
+      "text_id": 142,
+      "grp_id": 5,
+      "lhs": "p",
+      "comp": "<",
+      "rhs": ".001"
+    },
+    {
+      "text_id": 151,
+      "grp_id": 6,
+      "lhs": "age",
+      "comp": "=",
+      "rhs": "25.3"
+    },
+    {
+      "text_id": 172,
+      "grp_id": 7,
+      "lhs": "M",
+      "comp": "=",
+      "rhs": "2.72"
+    },
+    {
+      "text_id": 172,
+      "grp_id": 7,
+      "lhs": "SD",
+      "comp": "=",
+      "rhs": "1.22"
+    },
+    {
+      "text_id": 172,
+      "grp_id": 7,
+      "lhs": "M",
+      "comp": "=",
+      "rhs": "2.37"
+    },
+    {
+      "text_id": 172,
+      "grp_id": 7,
+      "lhs": "SD",
+      "comp": "=",
+      "rhs": "1.18"
+    },
+    {
+      "text_id": 172,
+      "grp_id": 7,
+      "lhs": "t(398)",
+      "comp": "=",
+      "rhs": "15.73"
+    },
+    {
+      "text_id": 172,
+      "grp_id": 7,
+      "lhs": "p",
+      "comp": "<",
+      "rhs": ".00001"
+    },
+    {
+      "text_id": 172,
+      "grp_id": 7,
+      "lhs": "interval (CI)",
+      "comp": "=",
+      "rhs": "[0.30, 0.39]"
+    },
+    {
+      "text_id": 172,
+      "grp_id": 7,
+      "lhs": "Cohen's d",
+      "comp": "=",
+      "rhs": "0.69"
+    },
+    {
+      "text_id": 174,
+      "grp_id": 8,
+      "lhs": "contours (high vs. low estimate",
+      "comp": "=",
+      "rhs": "0.33, 95% CI"
+    },
+    {
+      "text_id": 174,
+      "grp_id": 8,
+      "lhs": "p",
+      "comp": "<",
+      "rhs": "2"
+    },
+    {
+      "text_id": 175,
+      "grp_id": 9,
+      "lhs": "ratings (estimate",
+      "comp": "=",
+      "rhs": "0.052, 95% CI"
+    },
+    {
+      "text_id": 175,
+      "grp_id": 9,
+      "lhs": "p",
+      "comp": "=",
+      "rhs": ".01"
+    },
+    {
+      "text_id": 178,
+      "grp_id": 10,
+      "lhs": "age-estimate",
+      "comp": "=",
+      "rhs": "0.012"
+    },
+    {
+      "text_id": 178,
+      "grp_id": 10,
+      "lhs": "95% CI",
+      "comp": "=",
+      "rhs": "[-0.011, 0.037]"
+    },
+    {
+      "text_id": 178,
+      "grp_id": 10,
+      "lhs": "t(1, 67)",
+      "comp": "=",
+      "rhs": "0.98"
+    },
+    {
+      "text_id": 178,
+      "grp_id": 10,
+      "lhs": "p",
+      "comp": "=",
+      "rhs": ".33"
+    },
+    {
+      "text_id": 178,
+      "grp_id": 10,
+      "lhs": "-estimate",
+      "comp": "=",
+      "rhs": "-0.07"
+    },
+    {
+      "text_id": 178,
+      "grp_id": 10,
+      "lhs": "95% CI",
+      "comp": "=",
+      "rhs": "[-0.37, 0.22]"
+    },
+    {
+      "text_id": 178,
+      "grp_id": 10,
+      "lhs": "t(1, 67)",
+      "comp": "=",
+      "rhs": "-0.45"
+    },
+    {
+      "text_id": 178,
+      "grp_id": 10,
+      "lhs": "p",
+      "comp": "=",
+      "rhs": ".65"
+    },
+    {
+      "text_id": 178,
+      "grp_id": 10,
+      "lhs": "creativity-estimate",
+      "comp": "=",
+      "rhs": "0.007"
+    },
+    {
+      "text_id": 178,
+      "grp_id": 10,
+      "lhs": "95% CI",
+      "comp": "=",
+      "rhs": "[-0.015, 0.03]"
+    },
+    {
+      "text_id": 178,
+      "grp_id": 10,
+      "lhs": "t(1, 67)",
+      "comp": "=",
+      "rhs": "0.59"
+    },
+    {
+      "text_id": 178,
+      "grp_id": 10,
+      "lhs": "p",
+      "comp": "=",
+      "rhs": ".55"
+    },
+    {
+      "text_id": 178,
+      "grp_id": 10,
+      "lhs": "training-estimate",
+      "comp": "=",
+      "rhs": "0.049"
+    },
+    {
+      "text_id": 178,
+      "grp_id": 10,
+      "lhs": "95% CI",
+      "comp": "=",
+      "rhs": "[-0.10, 0.20]"
+    },
+    {
+      "text_id": 178,
+      "grp_id": 10,
+      "lhs": "t(1, 67)",
+      "comp": "=",
+      "rhs": "0.58"
+    },
+    {
+      "text_id": 178,
+      "grp_id": 10,
+      "lhs": "p",
+      "comp": "=",
+      "rhs": ".55"
+    },
+    {
+      "text_id": 178,
+      "grp_id": 10,
+      "lhs": "experience-estimate",
+      "comp": "=",
+      "rhs": "-0.009"
+    },
+    {
+      "text_id": 178,
+      "grp_id": 10,
+      "lhs": "95% CI",
+      "comp": "=",
+      "rhs": "[-0.088, 0.069]"
+    },
+    {
+      "text_id": 178,
+      "grp_id": 10,
+      "lhs": "t(1, 67)",
+      "comp": "=",
+      "rhs": "-0.22"
+    },
+    {
+      "text_id": 178,
+      "grp_id": 10,
+      "lhs": "p",
+      "comp": "=",
+      "rhs": "-.22"
+    },
+    {
+      "text_id": 178,
+      "grp_id": 10,
+      "lhs": "estimate",
+      "comp": "=",
+      "rhs": "0.17"
+    },
+    {
+      "text_id": 178,
+      "grp_id": 10,
+      "lhs": "95% CI",
+      "comp": "=",
+      "rhs": "[-0.25, 0.59]"
+    },
+    {
+      "text_id": 178,
+      "grp_id": 10,
+      "lhs": "t(1, 67)",
+      "comp": "=",
+      "rhs": "0.74"
+    },
+    {
+      "text_id": 178,
+      "grp_id": 10,
+      "lhs": "p",
+      "comp": "=",
+      "rhs": ".45"
+    },
+    {
+      "text_id": 178,
+      "grp_id": 10,
+      "lhs": "estimate",
+      "comp": "=",
+      "rhs": "0.20"
+    },
+    {
+      "text_id": 178,
+      "grp_id": 10,
+      "lhs": "95% CI",
+      "comp": "=",
+      "rhs": "[-0.24, 0.66]"
+    },
+    {
+      "text_id": 178,
+      "grp_id": 10,
+      "lhs": "t(1, 67)",
+      "comp": "=",
+      "rhs": "0.87"
+    },
+    {
+      "text_id": 178,
+      "grp_id": 10,
+      "lhs": "p",
+      "comp": "=",
+      "rhs": ".38"
+    },
+    {
+      "text_id": 178,
+      "grp_id": 10,
+      "lhs": "affect-estimate",
+      "comp": "=",
+      "rhs": "0.036"
+    },
+    {
+      "text_id": 178,
+      "grp_id": 10,
+      "lhs": "95% CI",
+      "comp": "=",
+      "rhs": "[-0.007, 0.08]"
+    },
+    {
+      "text_id": 178,
+      "grp_id": 10,
+      "lhs": "t(1, 67)",
+      "comp": "=",
+      "rhs": "1.53"
+    },
+    {
+      "text_id": 178,
+      "grp_id": 10,
+      "lhs": "p",
+      "comp": "=",
+      "rhs": ".12"
+    },
+    {
+      "text_id": 190,
+      "grp_id": 11,
+      "lhs": "age",
+      "comp": "=",
+      "rhs": "24.5"
+    },
+    {
+      "text_id": 236,
+      "grp_id": 12,
+      "lhs": "r",
+      "comp": "=",
+      "rhs": ".62"
+    },
+    {
+      "text_id": 236,
+      "grp_id": 12,
+      "lhs": "p",
+      "comp": "<",
+      "rhs": ".001"
+    },
+    {
+      "text_id": 238,
+      "grp_id": 13,
+      "lhs": "F(1, 494)",
+      "comp": "=",
+      "rhs": "323.77"
+    },
+    {
+      "text_id": 238,
+      "grp_id": 13,
+      "lhs": "p",
+      "comp": "<",
+      "rhs": ".001"
+    },
+    {
+      "text_id": 238,
+      "grp_id": 13,
+      "lhs": "95% CI",
+      "comp": "=",
+      "rhs": "[0.22, 0.29]"
+    },
+    {
+      "text_id": 238,
+      "grp_id": 13,
+      "lhs": "Cohen's d",
+      "comp": "=",
+      "rhs": "0.10"
+    },
+    {
+      "text_id": 238,
+      "grp_id": 13,
+      "lhs": "estimate",
+      "comp": "=",
+      "rhs": "0.40"
+    },
+    {
+      "text_id": 238,
+      "grp_id": 13,
+      "lhs": "95% CI",
+      "comp": "=",
+      "rhs": "[0.35, 0.44]"
+    },
+    {
+      "text_id": 238,
+      "grp_id": 13,
+      "lhs": "F(1, 573)",
+      "comp": "=",
+      "rhs": "375.81"
+    },
+    {
+      "text_id": 238,
+      "grp_id": 13,
+      "lhs": "p",
+      "comp": "<",
+      "rhs": ".001"
+    },
+    {
+      "text_id": 239,
+      "grp_id": 14,
+      "lhs": "M",
+      "comp": "=",
+      "rhs": "2.35"
+    },
+    {
+      "text_id": 239,
+      "grp_id": 14,
+      "lhs": "SD",
+      "comp": "=",
+      "rhs": "1.26"
+    },
+    {
+      "text_id": 239,
+      "grp_id": 14,
+      "lhs": "M",
+      "comp": "=",
+      "rhs": "2.11"
+    },
+    {
+      "text_id": 239,
+      "grp_id": 14,
+      "lhs": "SD",
+      "comp": "=",
+      "rhs": "1.23"
+    },
+    {
+      "text_id": 240,
+      "grp_id": 15,
+      "lhs": "diff",
+      "comp": "=",
+      "rhs": "0.14"
+    },
+    {
+      "text_id": 240,
+      "grp_id": 15,
+      "lhs": "95% CI",
+      "comp": "=",
+      "rhs": "[0.04, 0.23]"
+    },
+    {
+      "text_id": 240,
+      "grp_id": 15,
+      "lhs": "adj",
+      "comp": "=",
+      "rhs": ".002"
+    },
+    {
+      "text_id": 241,
+      "grp_id": 16,
+      "lhs": "diff",
+      "comp": "=",
+      "rhs": "0.45"
+    },
+    {
+      "text_id": 241,
+      "grp_id": 16,
+      "lhs": "95% CI",
+      "comp": "=",
+      "rhs": "[0.38, 0.53]"
+    },
+    {
+      "text_id": 241,
+      "grp_id": 16,
+      "lhs": "adj",
+      "comp": "<",
+      "rhs": ".00001"
+    },
+    {
+      "text_id": 241,
+      "grp_id": 16,
+      "lhs": "diff",
+      "comp": "=",
+      "rhs": "0.34"
+    },
+    {
+      "text_id": 241,
+      "grp_id": 16,
+      "lhs": "95% CI",
+      "comp": "=",
+      "rhs": "[0.26, 0.42]"
+    },
+    {
+      "text_id": 241,
+      "grp_id": 16,
+      "lhs": "adj",
+      "comp": "<",
+      "rhs": ".00001"
+    },
+    {
+      "text_id": 242,
+      "grp_id": 17,
+      "lhs": "estimate",
+      "comp": "=",
+      "rhs": "0.33"
+    },
+    {
+      "text_id": 242,
+      "grp_id": 17,
+      "lhs": "95% CI",
+      "comp": "=",
+      "rhs": "[0.27, 0.38]"
+    },
+    {
+      "text_id": 242,
+      "grp_id": 17,
+      "lhs": "t(1, 76)",
+      "comp": "=",
+      "rhs": "12.36"
+    },
+    {
+      "text_id": 242,
+      "grp_id": 17,
+      "lhs": "p",
+      "comp": "<",
+      "rhs": "2"
+    },
+    {
+      "text_id": 246,
+      "grp_id": 18,
+      "lhs": "β",
+      "comp": "=",
+      "rhs": "0.014"
+    },
+    {
+      "text_id": 246,
+      "grp_id": 18,
+      "lhs": "95% CI",
+      "comp": "=",
+      "rhs": "[0.003, 0.03]"
+    },
+    {
+      "text_id": 246,
+      "grp_id": 18,
+      "lhs": "t(1, 65)",
+      "comp": "=",
+      "rhs": "2.33"
+    },
+    {
+      "text_id": 246,
+      "grp_id": 18,
+      "lhs": "p",
+      "comp": "=",
+      "rhs": ".02"
+    },
+    {
+      "text_id": 246,
+      "grp_id": 18,
+      "lhs": "β",
+      "comp": "=",
+      "rhs": "-0.01"
+    },
+    {
+      "text_id": 246,
+      "grp_id": 18,
+      "lhs": "95% CI",
+      "comp": "=",
+      "rhs": "[-0.02, -0.002]"
+    },
+    {
+      "text_id": 246,
+      "grp_id": 18,
+      "lhs": "t(1, 65)",
+      "comp": "=",
+      "rhs": "-2.21"
+    },
+    {
+      "text_id": 246,
+      "grp_id": 18,
+      "lhs": "p",
+      "comp": "=",
+      "rhs": ".03"
+    },
+    {
+      "text_id": 248,
+      "grp_id": 19,
+      "lhs": "β",
+      "comp": "=",
+      "rhs": "0.004"
+    },
+    {
+      "text_id": 248,
+      "grp_id": 19,
+      "lhs": "95% CI",
+      "comp": "=",
+      "rhs": "[-0.018, 0.026]"
+    },
+    {
+      "text_id": 248,
+      "grp_id": 19,
+      "lhs": "t(1, 66)",
+      "comp": "=",
+      "rhs": "0.33"
+    },
+    {
+      "text_id": 248,
+      "grp_id": 19,
+      "lhs": "p",
+      "comp": "=",
+      "rhs": ".74"
+    },
+    {
+      "text_id": 248,
+      "grp_id": 19,
+      "lhs": "β",
+      "comp": "=",
+      "rhs": "0.32"
+    },
+    {
+      "text_id": 248,
+      "grp_id": 19,
+      "lhs": "95% CI",
+      "comp": "=",
+      "rhs": "[0.03, 0.62]"
+    },
+    {
+      "text_id": 248,
+      "grp_id": 19,
+      "lhs": "t(1, 65)",
+      "comp": "=",
+      "rhs": "2.06"
+    },
+    {
+      "text_id": 248,
+      "grp_id": 19,
+      "lhs": "p",
+      "comp": "=",
+      "rhs": ".04"
+    },
+    {
+      "text_id": 248,
+      "grp_id": 19,
+      "lhs": "β",
+      "comp": "=",
+      "rhs": "-0.41"
+    },
+    {
+      "text_id": 248,
+      "grp_id": 19,
+      "lhs": "95% CI",
+      "comp": "=",
+      "rhs": "[-1.67, 0.84]"
+    },
+    {
+      "text_id": 248,
+      "grp_id": 19,
+      "lhs": "t(1,66)",
+      "comp": "=",
+      "rhs": "-0.60"
+    },
+    {
+      "text_id": 248,
+      "grp_id": 19,
+      "lhs": "p",
+      "comp": "=",
+      "rhs": ".54"
+    },
+    {
+      "text_id": 248,
+      "grp_id": 19,
+      "lhs": "β",
+      "comp": "=",
+      "rhs": "0.034"
+    },
+    {
+      "text_id": 248,
+      "grp_id": 19,
+      "lhs": "95% CI",
+      "comp": "=",
+      "rhs": "[-0.10, 0.20]"
+    },
+    {
+      "text_id": 248,
+      "grp_id": 19,
+      "lhs": "t(1, 65)",
+      "comp": "=",
+      "rhs": "1.23"
+    },
+    {
+      "text_id": 248,
+      "grp_id": 19,
+      "lhs": "p",
+      "comp": "=",
+      "rhs": ".21"
+    },
+    {
+      "text_id": 248,
+      "grp_id": 19,
+      "lhs": "β",
+      "comp": "=",
+      "rhs": "0.05"
+    },
+    {
+      "text_id": 248,
+      "grp_id": 19,
+      "lhs": "95% CI",
+      "comp": "=",
+      "rhs": "[-0.10, 0.20]"
+    },
+    {
+      "text_id": 248,
+      "grp_id": 19,
+      "lhs": "t(1, 65)",
+      "comp": "=",
+      "rhs": "1.82"
+    },
+    {
+      "text_id": 248,
+      "grp_id": 19,
+      "lhs": "p",
+      "comp": "=",
+      "rhs": ".07"
+    },
+    {
+      "text_id": 248,
+      "grp_id": 19,
+      "lhs": "β",
+      "comp": "=",
+      "rhs": "-0.009"
+    },
+    {
+      "text_id": 248,
+      "grp_id": 19,
+      "lhs": "95% CI",
+      "comp": "=",
+      "rhs": "[-0.10, 0.20]"
+    },
+    {
+      "text_id": 248,
+      "grp_id": 19,
+      "lhs": "t(1, 65)",
+      "comp": "=",
+      "rhs": "-0.56"
+    },
+    {
+      "text_id": 248,
+      "grp_id": 19,
+      "lhs": "p",
+      "comp": "=",
+      "rhs": ".57"
+    },
+    {
+      "text_id": 248,
+      "grp_id": 19,
+      "lhs": "β",
+      "comp": "=",
+      "rhs": "0.17"
+    },
+    {
+      "text_id": 248,
+      "grp_id": 19,
+      "lhs": "95% CI",
+      "comp": "=",
+      "rhs": "[-1.25, -0.03]"
+    },
+    {
+      "text_id": 248,
+      "grp_id": 19,
+      "lhs": "t(1, 67)",
+      "comp": "=",
+      "rhs": "0.74"
+    },
+    {
+      "text_id": 248,
+      "grp_id": 19,
+      "lhs": "p",
+      "comp": "=",
+      "rhs": ".45"
+    },
+    {
+      "text_id": 248,
+      "grp_id": 19,
+      "lhs": "β",
+      "comp": "=",
+      "rhs": "0.20"
+    },
+    {
+      "text_id": 248,
+      "grp_id": 19,
+      "lhs": "95% CI",
+      "comp": "=",
+      "rhs": "[-0.12, 0.06]"
+    },
+    {
+      "text_id": 248,
+      "grp_id": 19,
+      "lhs": "t(1, 67)",
+      "comp": "=",
+      "rhs": "0.7"
+    },
+    {
+      "text_id": 248,
+      "grp_id": 19,
+      "lhs": "p",
+      "comp": "=",
+      "rhs": ".38"
+    },
+    {
+      "text_id": 249,
+      "grp_id": 20,
+      "lhs": "F(1, 473)",
+      "comp": "=",
+      "rhs": "3,193"
+    },
+    {
+      "text_id": 249,
+      "grp_id": 20,
+      "lhs": "p",
+      "comp": "<",
+      "rhs": ".001"
+    },
+    {
+      "text_id": 249,
+      "grp_id": 20,
+      "lhs": "2",
+      "comp": "=",
+      "rhs": ".87"
+    },
+    {
+      "text_id": 250,
+      "grp_id": 21,
+      "lhs": "F(1, 473)",
+      "comp": "=",
+      "rhs": "2,922"
+    },
+    {
+      "text_id": 250,
+      "grp_id": 21,
+      "lhs": "p",
+      "comp": "<",
+      "rhs": ".001"
+    },
+    {
+      "text_id": 250,
+      "grp_id": 21,
+      "lhs": "2",
+      "comp": "=",
+      "rhs": ".86"
+    },
+    {
+      "text_id": 254,
+      "grp_id": 22,
+      "lhs": "M",
+      "comp": "=",
+      "rhs": "0.87"
+    },
+    {
+      "text_id": 254,
+      "grp_id": 22,
+      "lhs": "SD",
+      "comp": "=",
+      "rhs": "0.14"
+    },
+    {
+      "text_id": 254,
+      "grp_id": 22,
+      "lhs": "M",
+      "comp": "=",
+      "rhs": "0.86"
+    },
+    {
+      "text_id": 254,
+      "grp_id": 22,
+      "lhs": "SD",
+      "comp": "=",
+      "rhs": "0.15"
+    },
+    {
+      "text_id": 254,
+      "grp_id": 22,
+      "lhs": "F(1, 948)",
+      "comp": "=",
+      "rhs": "1.9"
+    },
+    {
+      "text_id": 254,
+      "grp_id": 22,
+      "lhs": "p",
+      "comp": "=",
+      "rhs": ".168"
+    },
+    {
+      "text_id": 254,
+      "grp_id": 22,
+      "lhs": "difference",
+      "comp": "=",
+      "rhs": ".013"
+    },
+    {
+      "text_id": 254,
+      "grp_id": 22,
+      "lhs": "95% CI",
+      "comp": "=",
+      "rhs": "[-.005, .031]"
+    },
+    {
+      "text_id": 255,
+      "grp_id": 23,
+      "lhs": "M",
+      "comp": "=",
+      "rhs": "0.82"
+    },
+    {
+      "text_id": 255,
+      "grp_id": 23,
+      "lhs": "SD",
+      "comp": "=",
+      "rhs": "0.14"
+    },
+    {
+      "text_id": 255,
+      "grp_id": 23,
+      "lhs": "M",
+      "comp": "=",
+      "rhs": "0.81"
+    },
+    {
+      "text_id": 255,
+      "grp_id": 23,
+      "lhs": "SD",
+      "comp": "=",
+      "rhs": "0.85"
+    },
+    {
+      "text_id": 255,
+      "grp_id": 23,
+      "lhs": "F(1, 98)",
+      "comp": "=",
+      "rhs": "0.21"
+    },
+    {
+      "text_id": 255,
+      "grp_id": 23,
+      "lhs": "p",
+      "comp": "=",
+      "rhs": ".647"
+    },
+    {
+      "text_id": 255,
+      "grp_id": 23,
+      "lhs": "difference",
+      "comp": "=",
+      "rhs": ".015"
+    },
+    {
+      "text_id": 255,
+      "grp_id": 23,
+      "lhs": "95% CI",
+      "comp": "=",
+      "rhs": "[-.051, .082]"
+    },
+    {
+      "text_id": 256,
+      "grp_id": 24,
+      "lhs": "M",
+      "comp": "=",
+      "rhs": "0.87"
+    },
+    {
+      "text_id": 256,
+      "grp_id": 24,
+      "lhs": "SD",
+      "comp": "=",
+      "rhs": "0.14"
+    },
+    {
+      "text_id": 256,
+      "grp_id": 24,
+      "lhs": "M",
+      "comp": "=",
+      "rhs": "0.82"
+    },
+    {
+      "text_id": 256,
+      "grp_id": 24,
+      "lhs": "SD",
+      "comp": "=",
+      "rhs": "0.17"
+    },
+    {
+      "text_id": 256,
+      "grp_id": 24,
+      "lhs": "F(1, 1048)",
+      "comp": "=",
+      "rhs": "10.64"
+    },
+    {
+      "text_id": 256,
+      "grp_id": 24,
+      "lhs": "p",
+      "comp": "=",
+      "rhs": ".001"
+    },
+    {
+      "text_id": 256,
+      "grp_id": 24,
+      "lhs": "difference",
+      "comp": "=",
+      "rhs": "-.05"
+    },
+    {
+      "text_id": 256,
+      "grp_id": 24,
+      "lhs": "95% CI",
+      "comp": "=",
+      "rhs": "-.08"
+    },
+    {
+      "text_id": 132,
+      "grp_id": 25,
+      "lhs": "Junctions",
+      "comp": "<",
+      "rhs": "69.4"
+    },
+    {
+      "text_id": 132,
+      "grp_id": 25,
+      "lhs": "1",
+      "comp": "<",
+      "rhs": "2,012.2"
+    },
+    {
+      "text_id": 132,
+      "grp_id": 25,
+      "lhs": "5",
+      "comp": "<",
+      "rhs": "2,619.7"
+    },
+    {
+      "text_id": 132,
+      "grp_id": 25,
+      "lhs": "3",
+      "comp": "<",
+      "rhs": "404.35"
+    },
+    {
+      "text_id": 132,
+      "grp_id": 25,
+      "lhs": "7",
+      "comp": "<",
+      "rhs": "3.6"
+    },
+    {
+      "text_id": 132,
+      "grp_id": 25,
+      "lhs": "8",
+      "comp": "<",
+      "rhs": "7.7"
+    },
+    {
+      "text_id": 132,
+      "grp_id": 25,
+      "lhs": "8",
+      "comp": "<",
+      "rhs": "861.8"
+    },
+    {
+      "text_id": 132,
+      "grp_id": 25,
+      "lhs": "Junctions",
+      "comp": "<",
+      "rhs": "17.5"
+    },
+    {
+      "text_id": 132,
+      "grp_id": 25,
+      "lhs": "1",
+      "comp": "<",
+      "rhs": "31.7"
+    },
+    {
+      "text_id": 132,
+      "grp_id": 25,
+      "lhs": "5",
+      "comp": "<",
+      "rhs": "763.1"
+    },
+    {
+      "text_id": 132,
+      "grp_id": 25,
+      "lhs": "6",
+      "comp": "<",
+      "rhs": "298.3"
+    },
+    {
+      "text_id": 132,
+      "grp_id": 25,
+      "lhs": "Junction",
+      "comp": "<",
+      "rhs": "3.3"
+    },
+    {
+      "text_id": 132,
+      "grp_id": 25,
+      "lhs": "6",
+      "comp": "<",
+      "rhs": "973.8"
+    },
+    {
+      "text_id": 132,
+      "grp_id": 25,
+      "lhs": "1",
+      "comp": "<",
+      "rhs": "4,719.6"
+    },
+    {
+      "text_id": 132,
+      "grp_id": 25,
+      "lhs": "7",
+      "comp": "<",
+      "rhs": "1,646.1"
+    },
+    {
+      "text_id": 132,
+      "grp_id": 25,
+      "lhs": "6",
+      "comp": "<",
+      "rhs": "1,245.9"
+    },
+    {
+      "text_id": 132,
+      "grp_id": 25,
+      "lhs": "8",
+      "comp": "<",
+      "rhs": "634.5"
+    },
+    {
+      "text_id": 132,
+      "grp_id": 25,
+      "lhs": "5",
+      "comp": "<",
+      "rhs": "1,175.6"
+    },
+    {
+      "text_id": 132,
+      "grp_id": 25,
+      "lhs": "1",
+      "comp": "<",
+      "rhs": "5,378"
+    },
+    {
+      "text_id": 132,
+      "grp_id": 25,
+      "lhs": "Junction",
+      "comp": "<",
+      "rhs": "9.4"
+    },
+    {
+      "text_id": 132,
+      "grp_id": 25,
+      "lhs": "junction",
+      "comp": "<",
+      "rhs": "129.3"
+    },
+    {
+      "text_id": 132,
+      "grp_id": 25,
+      "lhs": "2",
+      "comp": "<",
+      "rhs": "337.7"
+    },
+    {
+      "text_id": 322,
+      "grp_id": 26,
+      "lhs": "p",
+      "comp": "<",
+      "rhs": ".001"
+    },
+    {
+      "text_id": 57,
+      "grp_id": 27,
+      "lhs": "of",
+      "comp": ">",
+      "rhs": "95"
+    }
+  ]
+}

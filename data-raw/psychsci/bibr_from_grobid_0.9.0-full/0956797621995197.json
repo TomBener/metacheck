@@ -1,0 +1,4918 @@
+{
+  "paper_id": "0956797621995197",
+  "info": [
+    {
+      "title": "Let’s Talk About Each Other: Neural Responses to Dissenting Personality Evaluations Based on Real Dyadic Interactions",
+      "keywords": ["EEG", "ERP", "social interaction", "real social evaluation", "dyadic interaction", "self-incongruence", "preregistered"],
+      "doi": "10.1177/0956797621995197",
+      "file_hash": "519ec0eab191383b",
+      "input_format": "grobid 0.9.0",
+      "file_name": "data-raw/psychsci/grobid_0.9.0-full/0956797621995197.xml",
+      "bibr_version": "10.0",
+      "paper_type": "unknown",
+      "paper_type_confidence": 0,
+      "oecd_l1": null,
+      "oecd_l2": null,
+      "oecd_confidence": null
+    }
+  ],
+  "author": [
+    {
+      "author_id": 1,
+      "given": "Sebastian",
+      "family": "Schindler",
+      "affiliation": "Institute of Medical Psychology and Systems Neuroscience University of Münster",
+      "email": "sebastian.schindler@ukmuenster.de",
+      "corresponding": false,
+      "orcid": "0000-0002-7054-5431",
+      "role": []
+    },
+    {
+      "author_id": 2,
+      "given": "Anne",
+      "family": "Höhner",
+      "affiliation": "Institute of Medical Psychology and Systems Neuroscience University of Münster",
+      "email": "",
+      "corresponding": false,
+      "orcid": "",
+      "role": []
+    },
+    {
+      "author_id": 3,
+      "given": "Robert",
+      "family": "Moeck",
+      "affiliation": "Institute of Medical Psychology and Systems Neuroscience University of Münster",
+      "email": "",
+      "corresponding": false,
+      "orcid": "",
+      "role": []
+    },
+    {
+      "author_id": 4,
+      "given": "Maximilian",
+      "family": "Bruchmann",
+      "affiliation": "Institute of Medical Psychology and Systems Neuroscience University of Münster",
+      "email": "",
+      "corresponding": false,
+      "orcid": "",
+      "role": []
+    },
+    {
+      "author_id": 5,
+      "given": "Thomas",
+      "family": "Straube",
+      "affiliation": "Institute of Medical Psychology and Systems Neuroscience University of Münster",
+      "email": "",
+      "corresponding": false,
+      "orcid": "",
+      "role": []
+    }
+  ],
+  "text": [
+    {
+      "text_id": 1,
+      "paragraph_id": 1,
+      "section_id": 0,
+      "text": "During communication, we constantly exchange and share evaluations, including personality-related judgments (for a recent review, see Falk & Scholz, 2018).",
+      "page_number": null
+    },
+    {
+      "text_id": 2,
+      "paragraph_id": 1,
+      "section_id": 0,
+      "text": "The motivational importance of such evaluations is associated with pronounced modulations of early and late neural processes of feedback processing, which have been found in event-related potential (ERP) studies (e.g., Rohr & Abdel Rahman, 2018;Schindler et al., 2015).",
+      "page_number": null
+    },
+    {
+      "text_id": 3,
+      "paragraph_id": 1,
+      "section_id": 0,
+      "text": "Several studies have revealed that the self-relatedness of the evaluation and the relevance of the interaction partner affect early and late components of the ERP, which are associated with sensory processing (P1, N1; e.g., Bayer et al., 2017), early attentional selection (early posterior negativity [EPN]; e.g., Schindler et al., 2015), and sustained emotional processing and stimulus evaluation (late positive potential [LPP]; e.g., Herbert et al., 2011).",
+      "page_number": null
+    },
+    {
+      "text_id": 4,
+      "paragraph_id": 1,
+      "section_id": 0,
+      "text": "Whereas negative feedback-especially unexpected negative feedback-has been shown to affect early responses (P1 and N1; see Harrewijn et al., 2018;Schindler, Vormbrock, & Kissler, 2019), the effect of positive feedback is expected to affect later processing stages.",
+      "page_number": null
+    },
+    {
+      "text_id": 5,
+      "paragraph_id": 1,
+      "section_id": 0,
+      "text": "It has recently been suggested that healthy participants exhibit positively biased self-updating processes, leading to a more elaborative processing of self-serving information (e.g., Korn et al., 2012;Sharot & Garrett, 2016).",
+      "page_number": null
+    },
+    {
+      "text_id": 6,
+      "paragraph_id": 1,
+      "section_id": 0,
+      "text": "Such elaborative stimulus 995197P SSXXX10.",
+      "page_number": null
+    },
+    {
+      "text_id": 7,
+      "paragraph_id": 3,
+      "section_id": 1,
+      "text": "processing, including self-relational processing, integration, and emotion-regulation processes, more heavily influence late processing stages (see Hajcak et al., 2010;Schupp et al., 2006).",
+      "page_number": null
+    },
+    {
+      "text_id": 8,
+      "paragraph_id": 4,
+      "section_id": 1,
+      "text": "However, how recipients process evaluations during social interactions also depends on their expectations and on their self-concepts (see Kissler, 2020).",
+      "page_number": null
+    },
+    {
+      "text_id": 9,
+      "paragraph_id": 4,
+      "section_id": 1,
+      "text": "The detection and integration of discrepant evaluations given by the interaction partner are a key aspect here (Shrauger & Schoeneman, 1979).",
+      "page_number": null
+    },
+    {
+      "text_id": 10,
+      "paragraph_id": 4,
+      "section_id": 1,
+      "text": "Thus, the recipients' own views and the way they process the received feedback matter strongly in social settings (Behrens et al., 2008), leading to the question of how neural correlates of feedback processing are modulated by the congruence and incongruence between the self-view and the evaluation given by the interaction partner.",
+      "page_number": null
+    },
+    {
+      "text_id": 11,
+      "paragraph_id": 4,
+      "section_id": 1,
+      "text": "Here, performance and social-feedback studies identified two ERP components of special interest-the feedback-related negativity (FRN) and the feedback-related P3 (Becker et al., 2014;Kujawa et al., 2014; see also Pfabigan et al., 2011;van der Molen et al., 2017;Veen et al., 2016).",
+      "page_number": null
+    },
+    {
+      "text_id": 12,
+      "paragraph_id": 4,
+      "section_id": 1,
+      "text": "The FRN is measured as a relative negativity after feedback, where negative feedback elicits a more negative deflection and positive feedback elicits more positive amplitudes ( Hajcak et al., 2006).",
+      "page_number": null
+    },
+    {
+      "text_id": 13,
+      "paragraph_id": 4,
+      "section_id": 1,
+      "text": "These relatively more positivegoing amplitudes are also described as reward positivity (Proudfit, 2015).",
+      "page_number": null
+    },
+    {
+      "text_id": 14,
+      "paragraph_id": 4,
+      "section_id": 1,
+      "text": "Studies have shown more negative FRN responses for social rejections but more positive feedback-related P3 responses for social acceptance (Kujawa et al., 2014;van der Molen et al., 2017;Veen et al., 2016).",
+      "page_number": null
+    },
+    {
+      "text_id": 15,
+      "paragraph_id": 4,
+      "section_id": 1,
+      "text": "Surprisingly, there is a lack of research on neural activations during the processing of congruent or incongruent personality-related messages-that is, the judgment of the interaction partner compared with one's own personal evaluation.",
+      "page_number": null
+    },
+    {
+      "text_id": 16,
+      "paragraph_id": 4,
+      "section_id": 1,
+      "text": "Furthermore, studies are needed to investigate how real social interactions affect neuronal responses, in accordance with a recent call for a second-person neuroscience from researchers positing that real interactions are necessary to understand social cognition (Caruana et al., 2017;Schilbach et al., 2013) and advocating real-life interactive paradigms (Shamay-Tsoory & Mendelsohn, 2019).",
+      "page_number": null
+    },
+    {
+      "text_id": 17,
+      "paragraph_id": 5,
+      "section_id": 1,
+      "text": "In this preregistered study (https://osf.io/9eqvy), we investigated ERPs during the processing of congruent and incongruent personality-related messages based on real dyadic interactions.",
+      "page_number": null
+    },
+    {
+      "text_id": 18,
+      "paragraph_id": 5,
+      "section_id": 1,
+      "text": "We predicted that self-related evaluations should increase ERPs across all processing stages, whereas incongruent evaluations were expected to strongly affect FRN and feedback-P3 amplitudes.",
+      "page_number": null
+    },
+    {
+      "text_id": 19,
+      "paragraph_id": 5,
+      "section_id": 1,
+      "text": "Importantly, we predicted an early amplification of selfrelated incongruent negative evaluations (P1, N1, EPN), which we expected would be followed by stronger effects of self-related positively dissenting evaluations during late time windows (feedback P3, LPP).",
+      "page_number": null
+    },
+    {
+      "text_id": 20,
+      "paragraph_id": 9,
+      "section_id": 3,
+      "text": "Fifty-two participants (26 dyads; 13 male-male, 13 female-female) were recruited at the University of Münster.",
+      "page_number": null
+    },
+    {
+      "text_id": 21,
+      "paragraph_id": 9,
+      "section_id": 3,
+      "text": "All gave informed consent and received €10 per hour for participation.",
+      "page_number": null
+    },
+    {
+      "text_id": 22,
+      "paragraph_id": 9,
+      "section_id": 3,
+      "text": "Six participants were excluded because of extensive artifacts in the recorded electroencephalogram (EEG).",
+      "page_number": null
+    },
+    {
+      "text_id": 23,
+      "paragraph_id": 9,
+      "section_id": 3,
+      "text": "We investigated dyads only of the same sex to control for possible confounds of sameversus other-sex dyads.",
+      "page_number": null
+    },
+    {
+      "text_id": 24,
+      "paragraph_id": 9,
+      "section_id": 3,
+      "text": "The final sample (N = 46; 23 male, 23 female) consisted of native German speakers; all were right-handed, had normal or corrected-tonormal vision, and reported no previous or current neuro logical or psychiatric disorders.",
+      "page_number": null
+    },
+    {
+      "text_id": 25,
+      "paragraph_id": 9,
+      "section_id": 3,
+      "text": "On average, participants were 23.70 years old (SD = 3.45).",
+      "page_number": null
+    },
+    {
+      "text_id": 26,
+      "paragraph_id": 11,
+      "section_id": 4,
+      "text": "A stimulus set of 120 adjectives (60 negative, 60 positive) was selected.",
+      "page_number": null
+    },
+    {
+      "text_id": 27,
+      "paragraph_id": 11,
+      "section_id": 4,
+      "text": "These adjectives had previously been rated by 22 students in terms of valence and arousal using the Self-Assessment Manikin (SAM; Bradley & Lang, 1994).",
+      "page_number": null
+    },
+    {
+      "text_id": 28,
+      "paragraph_id": 11,
+      "section_id": 4,
+      "text": "We also created an analogous SAM scale for concreteness ratings, referring to the appropriateness of an adjective to characterize a person.",
+      "page_number": null
+    },
+    {
+      "text_id": 29,
+      "paragraph_id": 11,
+      "section_id": 4,
+      "text": "These raters",
+      "page_number": null
+    },
+    {
+      "text_id": 30,
+      "paragraph_id": 13,
+      "section_id": 5,
+      "text": "Exchanging social evaluations about each other is a central aspect of human communication.",
+      "page_number": null
+    },
+    {
+      "text_id": 31,
+      "paragraph_id": 13,
+      "section_id": 5,
+      "text": "These opinions of others can differ from our own.",
+      "page_number": null
+    },
+    {
+      "text_id": 32,
+      "paragraph_id": 13,
+      "section_id": 5,
+      "text": "In this study, participants were shown adjectives describing personality traits, and they rated the degree to which the adjectives applied to themselves and their interaction partners.",
+      "page_number": null
+    },
+    {
+      "text_id": 33,
+      "paragraph_id": 13,
+      "section_id": 5,
+      "text": "We showed participants both evaluations and measured how their brains reacted to violations of their own ratings.",
+      "page_number": null
+    },
+    {
+      "text_id": 34,
+      "paragraph_id": 13,
+      "section_id": 5,
+      "text": "EEG recordings allowed us to assign these violations to different stages of information processing.",
+      "page_number": null
+    },
+    {
+      "text_id": 35,
+      "paragraph_id": 13,
+      "section_id": 5,
+      "text": "Participants' own evaluations were more intensely processed across the entire processing stream than their evaluations about others.",
+      "page_number": null
+    },
+    {
+      "text_id": 36,
+      "paragraph_id": 13,
+      "section_id": 5,
+      "text": "Interestingly, neuronal responses to self-incongruent evaluations showed an early negative bias, followed by a late positive bias.",
+      "page_number": null
+    },
+    {
+      "text_id": 37,
+      "paragraph_id": 13,
+      "section_id": 5,
+      "text": "This late response to more positive evaluations might explain previously observed positively biased self-updating after social feedback.",
+      "page_number": null
+    },
+    {
+      "text_id": 38,
+      "paragraph_id": 13,
+      "section_id": 5,
+      "text": "Thus, when you are faced with incongruent evaluations given by others, it matters when it is about yourself.",
+      "page_number": null
+    },
+    {
+      "text_id": 39,
+      "paragraph_id": 13,
+      "section_id": 5,
+      "text": "This incongruence is detected early and shows specific temporal-valence biases.",
+      "page_number": null
+    },
+    {
+      "text_id": 40,
+      "paragraph_id": 14,
+      "section_id": 5,
+      "text": "had been instructed to consider the adjectives' valence, arousal, and concreteness in an interpersonal evaluative context.",
+      "page_number": null
+    },
+    {
+      "text_id": 41,
+      "paragraph_id": 14,
+      "section_id": 5,
+      "text": "The selected adjectives were strictly matched with regard to their ratings and linguistic properties (word length, frequency, familiarity, and regularity), and eventually differed only in rated valence (see Table 1).",
+      "page_number": null
+    },
+    {
+      "text_id": 42,
+      "paragraph_id": 16,
+      "section_id": 6,
+      "text": "Participants were recruited via mass mailing and informed that an actual short interaction with another participant would take place during the experimental session.",
+      "page_number": null
+    },
+    {
+      "text_id": 43,
+      "paragraph_id": 16,
+      "section_id": 6,
+      "text": "Within dyads, only participants who did not know each other were allowed to participate.",
+      "page_number": null
+    },
+    {
+      "text_id": 44,
+      "paragraph_id": 16,
+      "section_id": 6,
+      "text": "In the lab, the two participants interacted with each other on the basis of a short, structured interview consisting of five questions alternating between participants (for an overview, see Fig. 1a).",
+      "page_number": null
+    },
+    {
+      "text_id": 45,
+      "paragraph_id": 16,
+      "section_id": 6,
+      "text": "These questions asked the participants to describe themselves and gave them 1 min to answer each question.",
+      "page_number": null
+    },
+    {
+      "text_id": 46,
+      "paragraph_id": 16,
+      "section_id": 6,
+      "text": "After the interview, participants were prepared for the EEG recording in two separate laboratories.",
+      "page_number": null
+    },
+    {
+      "text_id": 47,
+      "paragraph_id": 16,
+      "section_id": 6,
+      "text": "During this preparation phase, they responded to different questionnaires-demographics questions, the Beck Depression Inventory (Hautzinger et al., 2009) and the State-Trait Anxiety Inventory ( Spielberger et al., 1999)-and evaluated their initial interaction.",
+      "page_number": null
+    },
+    {
+      "text_id": 48,
+      "paragraph_id": 16,
+      "section_id": 6,
+      "text": "Then they were asked to evaluate themselves and the other participant on all 60 negative and 60 positive adjectives (see Fig. 1b).",
+      "page_number": null
+    },
+    {
+      "text_id": 49,
+      "paragraph_id": 16,
+      "section_id": 6,
+      "text": "The recipient of the ratings (self-evaluation or evaluation of the interaction partner) switched every 10 trials, as indicated by a short instruction presented for 3,000 ms.",
+      "page_number": null
+    },
+    {
+      "text_id": 50,
+      "paragraph_id": 16,
+      "section_id": 6,
+      "text": "Each new rating trial started with a fixation cross presented for 1,000 ms, after which a personality word and a 6-point rating scale were displayed.",
+      "page_number": null
+    },
+    {
+      "text_id": 51,
+      "paragraph_id": 16,
+      "section_id": 6,
+      "text": "Participants then had to assess the fit of that adjective-with respect to themselves or their interaction partner-using a 6-point Likert-type scale consisting of a series of arrows.",
+      "page_number": null
+    },
+    {
+      "text_id": 52,
+      "paragraph_id": 16,
+      "section_id": 6,
+      "text": "The display highlighted their rating by changing the number of arrows selected to purple and the arrows not selected to blue (e.g., for a rating of 4, the first four arrows would turn purple, and the remaining two arrows would turn blue).",
+      "page_number": null
+    },
+    {
+      "text_id": 53,
+      "paragraph_id": 16,
+      "section_id": 6,
+      "text": "The color constellation was counterbalanced across trials and depicted the evaluation value, from 1 (weakly applicable) to 6 (strongly applicable).",
+      "page_number": null
+    },
+    {
+      "text_id": 54,
+      "paragraph_id": 17,
+      "section_id": 6,
+      "text": "The subsequent EEG session started when all ratings had been collected and the two evaluation files were uploaded into the presentation program (see Fig. 1c).",
+      "page_number": null
+    },
+    {
+      "text_id": 55,
+      "paragraph_id": 17,
+      "section_id": 6,
+      "text": "Participants were informed that during the session, their previously collected rating would be presented first each time (own evaluation), followed by the evaluation collected from the other participant (other evaluation).",
+      "page_number": null
+    },
+    {
+      "text_id": 56,
+      "paragraph_id": 17,
+      "section_id": 6,
+      "text": "The recipient of these ratings (reference: self-related, otherrelated) switched every 10 trials, and this switch was highlighted by a short instruction presented for 3,000 ms.",
+      "page_number": null
+    },
+    {
+      "text_id": 57,
+      "paragraph_id": 17,
+      "section_id": 6,
+      "text": "Each trial started with a short written prompt (500 ms) indicating that the participant's own rating would be presented first, followed a fixation cross for 800 to 1,000 ms and then by the given rating for 1,000 ms.",
+      "page_number": null
+    },
+    {
+      "text_id": 58,
+      "paragraph_id": 17,
+      "section_id": 6,
+      "text": "After another 800-to 1,000-ms fixation cross, a second prompt (500 ms) reminded the participant that now their interaction partner's evaluation would be presented.",
+      "page_number": null
+    },
+    {
+      "text_id": 59,
+      "paragraph_id": 17,
+      "section_id": 6,
+      "text": "This information was again followed by a fixation cross (800-1,000 ms) and finally by the other person's rating (for 1,000 ms).",
+      "page_number": null
+    },
+    {
+      "text_id": 60,
+      "paragraph_id": 17,
+      "section_id": 6,
+      "text": "Each trial finished with the display of another fixation cross for 2,300 to 3,000 ms, after which the next trial started or a block change occurred.",
+      "page_number": null
+    },
+    {
+      "text_id": 61,
+      "paragraph_id": 17,
+      "section_id": 6,
+      "text": "Stimulus presentation was conducted using Presentation software (Version 21.1; Neurobehavioral Systems, 2019).",
+      "page_number": null
+    },
+    {
+      "text_id": 62,
+      "paragraph_id": 17,
+      "section_id": 6,
+      "text": "In total, the experiment took about 2.5 hr.",
+      "page_number": null
+    },
+    {
+      "text_id": 63,
+      "paragraph_id": 19,
+      "section_id": 7,
+      "text": "EEG data were recorded from 64 active electrodes (BioSemi, Amsterdam, The Netherlands; for the electrode layout, see https://www.biosemi.com/headcap.htm; for and c).",
+      "page_number": null
+    },
+    {
+      "text_id": 64,
+      "paragraph_id": 19,
+      "section_id": 7,
+      "text": "The complete timeline of the experiment is shown in (a).",
+      "page_number": null
+    },
+    {
+      "text_id": 65,
+      "paragraph_id": 19,
+      "section_id": 7,
+      "text": "Electroencephalograms (EEGs) were prepared while participants responded to pretest questionnaires.",
+      "page_number": null
+    },
+    {
+      "text_id": 66,
+      "paragraph_id": 19,
+      "section_id": 7,
+      "text": "Next (b), participants rated how well each of a set of adjectives described themselves or their interaction partner.",
+      "page_number": null
+    },
+    {
+      "text_id": 67,
+      "paragraph_id": 19,
+      "section_id": 7,
+      "text": "Ratings were made by selecting from 1 to 6 arrows, which changed color to indicate the participants' selection (a rating of 4 is shown here).",
+      "page_number": null
+    },
+    {
+      "text_id": 68,
+      "paragraph_id": 19,
+      "section_id": 7,
+      "text": "In the main experiment (c), participants' own ratings were presented first, followed by the rating decisions made by the interaction partner.",
+      "page_number": null
+    },
+    {
+      "text_id": 69,
+      "paragraph_id": 19,
+      "section_id": 7,
+      "text": "The stimulus used for event-related potential (ERP) analyses is highlighted.",
+      "page_number": null
+    },
+    {
+      "text_id": 70,
+      "paragraph_id": 20,
+      "section_id": 7,
+      "text": "exact coordinates, see https://www.biosemi.com/down load/Cap_coords_all.xls).",
+      "page_number": null
+    },
+    {
+      "text_id": 71,
+      "paragraph_id": 20,
+      "section_id": 7,
+      "text": "The recorded sampling rate was 512 Hz.",
+      "page_number": null
+    },
+    {
+      "text_id": 72,
+      "paragraph_id": 20,
+      "section_id": 7,
+      "text": "During recording, BioSemi uses two separate electrodes as ground electrodes (a Common Mode Sense active electrode and a Driven Right Leg passive electrode).",
+      "page_number": null
+    },
+    {
+      "text_id": 73,
+      "paragraph_id": 20,
+      "section_id": 7,
+      "text": "Four additional electrodes were used to measure horizontal and vertical eye movements.",
+      "page_number": null
+    },
+    {
+      "text_id": 74,
+      "paragraph_id": 20,
+      "section_id": 7,
+      "text": "These additional electrodes were placed at the outer canthi of the eyes and below and above the left eye.",
+      "page_number": null
+    },
+    {
+      "text_id": 75,
+      "paragraph_id": 21,
+      "section_id": 7,
+      "text": "Preprocessing and statistical analyses were conducted using BESA Research (Version 6.0; BESA, 2014) and Electromagnetic Encaphalography Software (EMEGS; Version 2.8; Peyk et al., 2011).",
+      "page_number": null
+    },
+    {
+      "text_id": 76,
+      "paragraph_id": 21,
+      "section_id": 7,
+      "text": "Data were filtered off-line with a 0.01-Hz high-pass forward filter and a 40-Hz low-pass zero-phase filter.",
+      "page_number": null
+    },
+    {
+      "text_id": 77,
+      "paragraph_id": 21,
+      "section_id": 7,
+      "text": "Filtered data were segmented from 100 ms before the onset of the other-evaluation display to 1,000 ms after stimulus presentation (see Fig. 1c).",
+      "page_number": null
+    },
+    {
+      "text_id": 78,
+      "paragraph_id": 21,
+      "section_id": 7,
+      "text": "The 100 ms before evaluation onset were used for baseline correction.",
+      "page_number": null
+    },
+    {
+      "text_id": 79,
+      "paragraph_id": 21,
+      "section_id": 7,
+      "text": "Eye movements were corrected using the automatic eye-artifact correction method implemented in BESA (Ille et al., 2002).",
+      "page_number": null
+    },
+    {
+      "text_id": 80,
+      "paragraph_id": 21,
+      "section_id": 7,
+      "text": "Remaining artifacts were rejected on the basis of absolute threshold (120 µV), gradient (75), and low signal change (0.01).",
+      "page_number": null
+    },
+    {
+      "text_id": 81,
+      "paragraph_id": 21,
+      "section_id": 7,
+      "text": "Bad EEG sensors were interpolated using a spline-interpolation procedure.",
+      "page_number": null
+    },
+    {
+      "text_id": 82,
+      "paragraph_id": 21,
+      "section_id": 7,
+      "text": "On average, 3.02 electrodes (SD = 1.77) were interpolated.",
+      "page_number": null
+    },
+    {
+      "text_id": 83,
+      "paragraph_id": 21,
+      "section_id": 7,
+      "text": "For ERP trials that were retained, no main effect of reference was found, F(1, 45) = 0.02, p = .874, η p ² = .001.",
+      "page_number": null
+    },
+    {
+      "text_id": 84,
+      "paragraph_id": 21,
+      "section_id": 7,
+      "text": "For congruence, there were fewer trials with the same rating from both interaction partners, leading to a main effect of congruence, F(1.43, 64.53) = 7.27, p = .004, η p ² = .139.",
+      "page_number": null
+    },
+    {
+      "text_id": 85,
+      "paragraph_id": 21,
+      "section_id": 7,
+      "text": "Importantly, there was no interaction effect of reference and congruence, F(1.30, 58.53) = 0.53, p = .515, η p ² = .012.",
+      "page_number": null
+    },
+    {
+      "text_id": 86,
+      "paragraph_id": 21,
+      "section_id": 7,
+      "text": "With respect to congruency, more incongruent negative evaluations (33.66 trials) and incongruent positive evaluations (34.19 trials) than congruent evaluations (26.03 trials) were kept (both ps < .001).",
+      "page_number": null
+    },
+    {
+      "text_id": 87,
+      "paragraph_id": 21,
+      "section_id": 7,
+      "text": "Incongruent evaluations did not differ significantly (p = .865).",
+      "page_number": null
+    },
+    {
+      "text_id": 88,
+      "paragraph_id": 21,
+      "section_id": 7,
+      "text": "For total available trials, see the first section in Results.",
+      "page_number": null
+    },
+    {
+      "text_id": 89,
+      "paragraph_id": 23,
+      "section_id": 8,
+      "text": "EEG scalp data were statistically analyzed using EMEGS.",
+      "page_number": null
+    },
+    {
+      "text_id": 90,
+      "paragraph_id": 23,
+      "section_id": 8,
+      "text": "For the evaluations, we used 2 (reference: self-related, other-related) × 3 (congruency: other evaluation more negative than self-rating, congruent self-rating and other evaluation, other evaluation more positive than selfrating) repeated measures analyses of variance (ANOVAs) investigating the main effects of reference and congruence and their interaction.",
+      "page_number": null
+    },
+    {
+      "text_id": 91,
+      "paragraph_id": 23,
+      "section_id": 8,
+      "text": "For the N1 and EPN, the factor channel-group laterality (left, right) was also included.",
+      "page_number": null
+    },
+    {
+      "text_id": 92,
+      "paragraph_id": 24,
+      "section_id": 8,
+      "text": "Effect sizes are given as η p 2 s (Cohen, 1988).",
+      "page_number": null
+    },
+    {
+      "text_id": 93,
+      "paragraph_id": 24,
+      "section_id": 8,
+      "text": "Degrees of freedom were Greenhouse-Geisser corrected when Mauchly's test indicated a violation of sphericity.",
+      "page_number": null
+    },
+    {
+      "text_id": 94,
+      "paragraph_id": 24,
+      "section_id": 8,
+      "text": "To validate expected time windows and electrode clusters, we inspected ERPs collapsed across all conditions (Luck & Gaspelin, 2017).",
+      "page_number": null
+    },
+    {
+      "text_id": 95,
+      "paragraph_id": 24,
+      "section_id": 8,
+      "text": "Further, for the EPN and LPP, we used ERPs collapsed across reference conditions, inspecting differences between the incongruent and congruent conditions.",
+      "page_number": null
+    },
+    {
+      "text_id": 96,
+      "paragraph_id": 24,
+      "section_id": 8,
+      "text": "Time windows were segmented from 80 to 100 ms for P1 effects, from 130 to 180 ms for N1, from 200 to 280 ms for FRN, from 260 to 360 ms for EPN, from 300 to 400 ms for frontal feedback P3, and from 500 to 750 ms for LPP effects.",
+      "page_number": null
+    },
+    {
+      "text_id": 97,
+      "paragraph_id": 24,
+      "section_id": 8,
+      "text": "The P1 was scored over an occipital cluster (O1, Oz, O2), and the N1 and EPN were derived from two symmetrical occipital clusters (P9, PO7, P7, P10, P8, PO8).",
+      "page_number": null
+    },
+    {
+      "text_id": 98,
+      "paragraph_id": 24,
+      "section_id": 8,
+      "text": "The FRN and frontal P3 were extracted from a frontal cluster (F1, Fz, F2, FC1, FCz, FC2), and the LPP component was scored centrally (FC3, FC1, FCz, FC2, FC4, C3, C1, Cz, C2, C4, CP1, CPz, CP2, P1, Pz, P2).",
+      "page_number": null
+    },
+    {
+      "text_id": 99,
+      "paragraph_id": 24,
+      "section_id": 8,
+      "text": "The hypotheses, experimental design, and analysis plan were preregistered (https://osf .io/9eqvy).",
+      "page_number": null
+    },
+    {
+      "text_id": 100,
+      "paragraph_id": 24,
+      "section_id": 8,
+      "text": "For a second hypothesis on ERP modulations for all evaluations, including participants' own evaluations, see Section B in the Supplemental Material available online.",
+      "page_number": null
+    },
+    {
+      "text_id": 101,
+      "paragraph_id": 24,
+      "section_id": 8,
+      "text": "All raw data have been made publicly available via OSF (https://osf.io/cfts6/).",
+      "page_number": null
+    },
+    {
+      "text_id": 102,
+      "paragraph_id": 28,
+      "section_id": 10,
+      "text": "For the evaluations, available trial numbers of self-and other-referent evaluations were obviously identical, F(1, 45) = 0.00, p = 1.0, η p ² < .001, but there were more incongruent positive and negative evaluations than congruent evaluations, F(1.29, 58.16) = 7.35, p = .005, η p ² = .140, post hoc ps < .001 (see Table 2).",
+      "page_number": null
+    },
+    {
+      "text_id": 103,
+      "paragraph_id": 28,
+      "section_id": 10,
+      "text": "The number of incongruent negative and positive trials did not differ (p = .974).",
+      "page_number": null
+    },
+    {
+      "text_id": 104,
+      "paragraph_id": 28,
+      "section_id": 10,
+      "text": "Further, there was no interaction of reference and congruency, F(1.26, 56.65) = 0.12, p = .794, η p ² = .003.",
+      "page_number": null
+    },
+    {
+      "text_id": 105,
+      "paragraph_id": 29,
+      "section_id": 10,
+      "text": "Participants also provided ratings about the interaction and evaluation both before and after Time 2 receiving evaluations from the other participant (Times 1 and 2, respectively; see Table 3).",
+      "page_number": null
+    },
+    {
+      "text_id": 106,
+      "paragraph_id": 29,
+      "section_id": 10,
+      "text": "Compared with a hypothetical scale mean value, these ratings indicated aboveaverage sympathy for the other participant, honesty of their submitted evaluations, and pleasantness.",
+      "page_number": null
+    },
+    {
+      "text_id": 107,
+      "paragraph_id": 29,
+      "section_id": 10,
+      "text": "After participants received evaluations, their ratings indicated above-average ratings for perceived correctness, motivation to attend to self-related evaluations, and pleasantness (see Table 3).",
+      "page_number": null
+    },
+    {
+      "text_id": 108,
+      "paragraph_id": 31,
+      "section_id": 11,
+      "text": "P1 (80-100 ms).",
+      "page_number": null
+    },
+    {
+      "text_id": 109,
+      "paragraph_id": 31,
+      "section_id": 11,
+      "text": "For the P1, there were no significant main effects of reference or congruency and no significant interaction between reference and congruency (see Tables 4 and 5).",
+      "page_number": null
+    },
+    {
+      "text_id": 110,
+      "paragraph_id": 33,
+      "section_id": 12,
+      "text": "Regarding the N1, no significant effects of reference or congruency were found.",
+      "page_number": null
+    },
+    {
+      "text_id": 111,
+      "paragraph_id": 33,
+      "section_id": 12,
+      "text": "There was a significant main effect of laterality, F(1, 45) = 14.32, p < .001, η p ² = .241; participants exhibited larger N1 amplitudes over the left than over the right sensor cluster (left: M = -1.76, SD = 1.93; right: M = -0.45, SD = 2.46).",
+      "page_number": null
+    },
+    {
+      "text_id": 112,
+      "paragraph_id": 33,
+      "section_id": 12,
+      "text": "Importantly, a significant interaction between reference and congruency was identified (see Tables 4 and 5 and Fig.",
+      "page_number": null
+    },
+    {
+      "text_id": 113,
+      "paragraph_id": 33,
+      "section_id": 12,
+      "text": "2).",
+      "page_number": null
+    },
+    {
+      "text_id": 114,
+      "paragraph_id": 33,
+      "section_id": 12,
+      "text": "Post hoc analyses on participants' own evaluations revealed larger N1 amplitudes for incongruent negative evaluations compared with congruent evaluations (p = .006) but not compared with incongruent positive evaluations (p = .058).",
+      "page_number": null
+    },
+    {
+      "text_id": 115,
+      "paragraph_id": 33,
+      "section_id": 12,
+      "text": "Congruent and incongruent positive evaluations did not differ significantly (p = .359).",
+      "page_number": null
+    },
+    {
+      "text_id": 116,
+      "paragraph_id": 33,
+      "section_id": 12,
+      "text": "Within evaluations about the interaction partner, no post hoc comparison reached significance (ps > .089).",
+      "page_number": null
+    },
+    {
+      "text_id": 117,
+      "paragraph_id": 33,
+      "section_id": 12,
+      "text": "All further possible interactions also remained insignificant (Fs < 2.98, ps > .091; see Tables 4 and 5).",
+      "page_number": null
+    },
+    {
+      "text_id": 118,
+      "paragraph_id": 35,
+      "section_id": 13,
+      "text": "For the EPN, significant main effects of reference (see Tables 4 and 5 and Fig. 2) and congruency were found.",
+      "page_number": null
+    },
+    {
+      "text_id": 119,
+      "paragraph_id": 35,
+      "section_id": 13,
+      "text": "Regarding the main effect of reference, larger EPN amplitudes were elicited for self-related compared with other-related evaluations (self: M = -2.21, SD = 2.44; other: M = -1.89, SD = 2.33).",
+      "page_number": null
+    },
+    {
+      "text_id": 120,
+      "paragraph_id": 35,
+      "section_id": 13,
+      "text": "For congruency, larger EPN amplitudes (incongruent negative: M = -2.09, SD = 2.29; M = -1.82, SD = 2.48; incongruent positive: M = -2.25, SD = 2.51) were found for incongruent positive compared with congruent evaluations (p = .004) but not compared with incongruent negative evaluations (p = .077).",
+      "page_number": null
+    },
+    {
+      "text_id": 121,
+      "paragraph_id": 35,
+      "section_id": 13,
+      "text": "Congruent and incongruent negative evaluations did not differ significantly (p = .230).",
+      "page_number": null
+    },
+    {
+      "text_id": 122,
+      "paragraph_id": 35,
+      "section_id": 13,
+      "text": "There was no main effect of channel-group laterality, F(1, 45) < 0.01, p = .960, η p ² < .001.",
+      "page_number": null
+    },
+    {
+      "text_id": 123,
+      "paragraph_id": 36,
+      "section_id": 13,
+      "text": "Importantly, we identified an interaction between reference and congruency again (see Tables 4 and 5 and Fig.",
+      "page_number": null
+    },
+    {
+      "text_id": 124,
+      "paragraph_id": 36,
+      "section_id": 13,
+      "text": "2).",
+      "page_number": null
+    },
+    {
+      "text_id": 125,
+      "paragraph_id": 36,
+      "section_id": 13,
+      "text": "Post hoc analyses within self-related evaluations showed larger EPN amplitudes for incongruent positive (p < .001) and incongruent negative (p = .002) compared with congruent evaluations.",
+      "page_number": null
+    },
+    {
+      "text_id": 126,
+      "paragraph_id": 36,
+      "section_id": 13,
+      "text": "These incongruent positive and negative judgments did not differ significantly (p = .655).",
+      "page_number": null
+    },
+    {
+      "text_id": 127,
+      "paragraph_id": 36,
+      "section_id": 13,
+      "text": "In other-related evaluations, no post hoc comparison reached significance (ps > .210).",
+      "page_number": null
+    },
+    {
+      "text_id": 128,
+      "paragraph_id": 36,
+      "section_id": 13,
+      "text": "Additionally, there were significant interactions between congruency and laterality, F(2, 90) = 4.24, p = .017, η p ² = .086, and between reference and laterality, F(1, 45) = 5.60, p = .022, η p ² = .111.",
+      "page_number": null
+    },
+    {
+      "text_id": 129,
+      "paragraph_id": 36,
+      "section_id": 13,
+      "text": "Effects of reference and congruency were not significant over left sensors-reference: F(1, 45) = 2.37, p = .131, η p ² = .050; congruency: F(2, 90) = 0.99, p = .377, η p ² = .021-but reached significance over right sensors-reference: F(1, 45) = 17.86, p < .001, η p ² = .284; congruency: F(2, 90) = 9.21, p < .001, η p ² = .170 (see Fig.",
+      "page_number": null
+    },
+    {
+      "text_id": 130,
+      "paragraph_id": 36,
+      "section_id": 13,
+      "text": "2).",
+      "page_number": null
+    },
+    {
+      "text_id": 131,
+      "paragraph_id": 36,
+      "section_id": 13,
+      "text": "Finally, the remaining three-way interaction among reference, congruency, and laterality remained insignificant, F(2, 90) = 1.63, p = .201, η p ² = .035.",
+      "page_number": null
+    },
+    {
+      "text_id": 132,
+      "paragraph_id": 38,
+      "section_id": 14,
+      "text": "We explored a single time interval starting with the N1 and extending into the EPN window.",
+      "page_number": null
+    },
+    {
+      "text_id": 133,
+      "paragraph_id": 38,
+      "section_id": 14,
+      "text": "We found a main effect of reference, F(1, 45) = 7.75, p = .008, η p ² = .147, with more negative amplitudes for self-referent evaluations.",
+      "page_number": null
+    },
+    {
+      "text_id": 134,
+      "paragraph_id": 38,
+      "section_id": 14,
+      "text": "There was a main effect of congruency, F(2, 90) = 6.26, p = .003, η p ² = .122, with larger negative amplitudes for incongruent negative (p = .02) and incongruent positive (p = .001) evaluations compared with congruent evaluations.",
+      "page_number": null
+    },
+    {
+      "text_id": 135,
+      "paragraph_id": 38,
+      "section_id": 14,
+      "text": "Finally, we observed an interaction of reference and congruency, F(2, 90) = 5.42, p = .006, η p ² = .107.",
+      "page_number": null
+    },
+    {
+      "text_id": 136,
+      "paragraph_id": 38,
+      "section_id": 14,
+      "text": "Within self-referent evaluations, incongruent negative (p < .001) and incongruent positive (p < .001) evaluations elicited a larger occipital negativity compared with congruent evaluations.",
+      "page_number": null
+    },
+    {
+      "text_id": 137,
+      "paragraph_id": 38,
+      "section_id": 14,
+      "text": "All other comparisons were nonsignificant (ps > .171).",
+      "page_number": null
+    },
+    {
+      "text_id": 138,
+      "paragraph_id": 40,
+      "section_id": 15,
+      "text": "For the FRN, a significant main effect of reference (see Tables 4 and 5 and Fig. 3) was observed; more positive FRN amplitudes were elicited for self-related compared with other-related evaluations (self: M = 0.31, SD = 1.99; other: M = 0.08, SD = 1.95).",
+      "page_number": null
+    },
+    {
+      "text_id": 139,
+      "paragraph_id": 40,
+      "section_id": 15,
+      "text": "There was no significant main effect of congruency and no significant interaction effect of reference and congruency (see Tables 4 and 5).",
+      "page_number": null
+    },
+    {
+      "text_id": 140,
+      "paragraph_id": 40,
+      "section_id": 15,
+      "text": "Exploratory analyses within the reference conditions showed that self-related incongruent positive evaluations elicited a larger positivity compared with both congruent evaluations (p = .011) and incongruent negative evaluations (p = .042), which did not differ significantly (p = .903).",
+      "page_number": null
+    },
+    {
+      "text_id": 141,
+      "paragraph_id": 40,
+      "section_id": 15,
+      "text": "Within other-related evaluations, no differences occurred (ps > .873).",
+      "page_number": null
+    },
+    {
+      "text_id": 142,
+      "paragraph_id": 42,
+      "section_id": 16,
+      "text": "Regarding the frontal feedback P3, a significant main effect of reference was found (see Tables 4 and 5 and Fig.",
+      "page_number": null
+    },
+    {
+      "text_id": 143,
+      "paragraph_id": 42,
+      "section_id": 16,
+      "text": "3); P3 amplitudes were greater for self-related compared with other-related evaluations (self: M = 1.38, SD = 2.28; other: M = 0.99, SD = 2.01).",
+      "page_number": null
+    },
+    {
+      "text_id": 144,
+      "paragraph_id": 42,
+      "section_id": 16,
+      "text": "In contrast, no significant main effect of congruency was identified.",
+      "page_number": null
+    },
+    {
+      "text_id": 145,
+      "paragraph_id": 42,
+      "section_id": 16,
+      "text": "Importantly, the interaction between reference and congruency reached significance (see Tables 4 and 5 and Fig.",
+      "page_number": null
+    },
+    {
+      "text_id": 146,
+      "paragraph_id": 42,
+      "section_id": 16,
+      "text": "3).",
+      "page_number": null
+    },
+    {
+      "text_id": 147,
+      "paragraph_id": 42,
+      "section_id": 16,
+      "text": "Post hoc analyses within self-related evaluations showed larger P3 amplitudes for incongruent positive evaluations compared with both congruent evaluations (p = .035) and incongruent negative evaluations (p = .040); the latter two conditions did not differ significantly (p = .767).",
+      "page_number": null
+    },
+    {
+      "text_id": 148,
+      "paragraph_id": 42,
+      "section_id": 16,
+      "text": "No differences were found within other-related evaluations (ps > .127).",
+      "page_number": null
+    },
+    {
+      "text_id": 149,
+      "paragraph_id": 44,
+      "section_id": 17,
+      "text": "For the LPP, significant main effects of reference and congruency were detected (see Tables 4 and 5 and Fig.",
+      "page_number": null
+    },
+    {
+      "text_id": 150,
+      "paragraph_id": 44,
+      "section_id": 17,
+      "text": "4).",
+      "page_number": null
+    },
+    {
+      "text_id": 151,
+      "paragraph_id": 44,
+      "section_id": 17,
+      "text": "Here, larger LPP amplitudes were µV Amplitude (µV) Amplitude (µV)",
+      "page_number": null
+    },
+    {
+      "text_id": 152,
+      "paragraph_id": 45,
+      "section_id": 17,
+      "text": "-1.5 1.5 0 µV -1.5 1.5 0 FRN: 200-280 ms P3: 300-400 ms Self-Related Other-Related Other-Related Negative -Congruent Positive -Congruent Self-Related Negative -Congruent Positive -Congruent Self More Negative Self Congruent Self More Positive Other More Negative Other Congruent Other More Positive Self More Negative Self Congruent Self More Positive Other More Negative Other Congruent Other More Positive Self More Negative Self Congruent Self More Positive Other More Negative Other Congruent Other More Positive Difference FRN: 200-280 ms P3: 300-400 ms Self More Negative -Self Congruent Self More Positive -Self Congruent Other More Negative -Other Congruent Other More Positive -Other Congruent -2 -1.5 -0.5 -1 0.5 1 1.5 2 0 -2 -1.5 -0.5 -1 0.5 1 1.5 2 0 µV -1 1 0 Self More Negative -Self Congruent Self More Positive -Self Congruent Other More Negative -Other Congruent Other More Positive -Other Congruent Self-Related Negative -Congruent Positive -Congruent Other-Related LPP: 500-750 ms Self More Negative Self Congruent Self More Positive Other More Negative Other Congruent Other More Positive Self More Negative Self Congruent Self More Positive Other More Negative Other Congruent Other More Positive Difference LPP: 500-750 ms -1 1 2 3 0 Amplitude (µV) found for self-related compared with other-related evaluations (self: M = 2.11, SD = 1.32; other: M = 1.78, SD = 1.29) and for incongruent positive evaluations compared with congruent evaluations (p = .003) but not compared with incongruent negative evaluations (p = .085; incongruent negative: M = 1.94, SD = 1.40; congruent: M = 1.78, SD = 1.21; incongruent positive: M = 2.12, SD = 1.40).",
+      "page_number": null
+    },
+    {
+      "text_id": 153,
+      "paragraph_id": 45,
+      "section_id": 17,
+      "text": "Congruent and incongruent negative evaluations did not differ significantly (p = .165).",
+      "page_number": null
+    },
+    {
+      "text_id": 154,
+      "paragraph_id": 45,
+      "section_id": 17,
+      "text": "Importantly, there was a significant interaction between reference and congruency (see Fig.",
+      "page_number": null
+    },
+    {
+      "text_id": 155,
+      "paragraph_id": 45,
+      "section_id": 17,
+      "text": "4).",
+      "page_number": null
+    },
+    {
+      "text_id": 156,
+      "paragraph_id": 45,
+      "section_id": 17,
+      "text": "Post hoc analyses on self-related evaluations revealed larger LPP amplitudes for both incongruent positive (p < .001) and incongruent negative (p = .034) evaluations compared with congruent evaluations, but they did not differ significantly from each other (p = .094).",
+      "page_number": null
+    },
+    {
+      "text_id": 157,
+      "paragraph_id": 45,
+      "section_id": 17,
+      "text": "For other-related evaluations, no significant differences were found (ps > .436).",
+      "page_number": null
+    },
+    {
+      "text_id": 158,
+      "paragraph_id": 47,
+      "section_id": 18,
+      "text": "In control analyses, we found a main effect of congruency; there were more trials for incongruent negative and positive trials than congruent trials.",
+      "page_number": null
+    },
+    {
+      "text_id": 159,
+      "paragraph_id": 47,
+      "section_id": 18,
+      "text": "Thus, we tested whether this imbalance of trial numbers influenced ERP differences.",
+      "page_number": null
+    },
+    {
+      "text_id": 160,
+      "paragraph_id": 47,
+      "section_id": 18,
+      "text": "First, we calculated analyses with matched trial numbers per congruence condition, resulting in highly similar ERP effects; the LPP interaction was not significant (see Section A in the Supplemental Material).",
+      "page_number": null
+    },
+    {
+      "text_id": 161,
+      "paragraph_id": 47,
+      "section_id": 18,
+      "text": "Second, to test whether an imbalance of total trial numbers during the experiment, rather than an imbalance in available ERP trials, affected ERP effects (see the first section in Results), we correlated the difference between incongruent and congruent total trials with ERP differences.",
+      "page_number": null
+    },
+    {
+      "text_id": 162,
+      "paragraph_id": 47,
+      "section_id": 18,
+      "text": "We found no relationship between differences in the total number of available trial and ERP differences for the EPN (r = .140, p = .352, N = 46) but a negative relationship with the LPP (r = -.302, p = .041, N = 46).",
+      "page_number": null
+    },
+    {
+      "text_id": 163,
+      "paragraph_id": 49,
+      "section_id": 19,
+      "text": "This study examined ERPs in response to social evaluations based on real social interactions.",
+      "page_number": null
+    },
+    {
+      "text_id": 164,
+      "paragraph_id": 49,
+      "section_id": 19,
+      "text": "Specifically, we investigated the effects of self-relevance and of congruency between participants' own evaluations and their partner's judgments.",
+      "page_number": null
+    },
+    {
+      "text_id": 165,
+      "paragraph_id": 49,
+      "section_id": 19,
+      "text": "Our results showed that the selfrelated evaluations increased ERP amplitudes from early time points (N1) throughout midlatency (FRN, EPN) and late time windows (feedback P3, LPP).",
+      "page_number": null
+    },
+    {
+      "text_id": 166,
+      "paragraph_id": 49,
+      "section_id": 19,
+      "text": "Furthermore, incongruence led to larger EPN, feedback P3, and LPP amplitudes.",
+      "page_number": null
+    },
+    {
+      "text_id": 167,
+      "paragraph_id": 49,
+      "section_id": 19,
+      "text": "Most importantly, interactions between self-relevance and congruence occurred throughout the entire processing cascade.",
+      "page_number": null
+    },
+    {
+      "text_id": 168,
+      "paragraph_id": 49,
+      "section_id": 19,
+      "text": "At early, sensory-related processing stages (N1), self-related incongruent negative evaluations differed significantly from congruent ones.",
+      "page_number": null
+    },
+    {
+      "text_id": 169,
+      "paragraph_id": 49,
+      "section_id": 19,
+      "text": "Subsequently, both incongruent negative and positive self-related evaluations increased EPN and LPP responses.",
+      "page_number": null
+    },
+    {
+      "text_id": 170,
+      "paragraph_id": 49,
+      "section_id": 19,
+      "text": "Finally, a selective amplification for self-related incongruent positive evaluations was detected for the feedback P3.",
+      "page_number": null
+    },
+    {
+      "text_id": 171,
+      "paragraph_id": 49,
+      "section_id": 19,
+      "text": "In the following, we will discuss this selective modulation of all ERP components in order across the processing cascade.",
+      "page_number": null
+    },
+    {
+      "text_id": 172,
+      "paragraph_id": 49,
+      "section_id": 19,
+      "text": "From the N1 onward, amplitudes for self-related evaluations increased, which is in line with the selfreference effect (Symons & Johnson, 1997).",
+      "page_number": null
+    },
+    {
+      "text_id": 173,
+      "paragraph_id": 49,
+      "section_id": 19,
+      "text": "Additionally, larger amplitudes were already observed at the N1 for participants' incongruent negative self-evaluations.",
+      "page_number": null
+    },
+    {
+      "text_id": 174,
+      "paragraph_id": 49,
+      "section_id": 19,
+      "text": "Such an enhancement of the N1 possibly reflects an early visual amplification of socially relevant information.",
+      "page_number": null
+    },
+    {
+      "text_id": 175,
+      "paragraph_id": 49,
+      "section_id": 19,
+      "text": "This in line with the results of several other studies that have found enlarged amplitudes for socially significant decisions made by an interaction partner (Baess & Prinz, 2015;Schindler, Miller, & Kissler, 2019).",
+      "page_number": null
+    },
+    {
+      "text_id": 176,
+      "paragraph_id": 49,
+      "section_id": 19,
+      "text": "Moreover, the N1 has recently been suggested as a marker of threat sensitivity in a two-generation study on social anxiety disorder (Harrewijn et al., 2018).",
+      "page_number": null
+    },
+    {
+      "text_id": 177,
+      "paragraph_id": 49,
+      "section_id": 19,
+      "text": "In this regard, the enlarged N1 amplitudes found for self-related incongruent negative feedback in our study could be explained by the enhanced processing of self-threatening feedback.",
+      "page_number": null
+    },
+    {
+      "text_id": 178,
+      "paragraph_id": 49,
+      "section_id": 19,
+      "text": "These interactions suggest that mismatches between participants' own evaluations and the evaluations made by their interaction partners were detected at an early time point and seem to reflect a sustained increased negativity, showing a similar pattern in the EPN time window.",
+      "page_number": null
+    },
+    {
+      "text_id": 179,
+      "paragraph_id": 49,
+      "section_id": 19,
+      "text": "This possibly reflects initial and sustained effects of updating and comparison processes for the integration of self-views and other views (Shrauger & Schoeneman, 1979).",
+      "page_number": null
+    },
+    {
+      "text_id": 180,
+      "paragraph_id": 50,
+      "section_id": 19,
+      "text": "Related to N1 interaction effects, during the EPN, both incongruent negative and positive evaluations were amplified when evaluations were related to participants' own evaluations.",
+      "page_number": null
+    },
+    {
+      "text_id": 181,
+      "paragraph_id": 50,
+      "section_id": 19,
+      "text": "These findings are consistent not only with the results of a number of studies showing self-relevance effects (e.g., Bayer et al., 2017) but also with the findings of social-feedback studies revealing stronger responses to emotionally relevant evaluations (e.g., Schindler et al., 2015).",
+      "page_number": null
+    },
+    {
+      "text_id": 182,
+      "paragraph_id": 50,
+      "section_id": 19,
+      "text": "The increased early negativities are in line with early attentional-selection processes (see Schupp et al., 2004).",
+      "page_number": null
+    },
+    {
+      "text_id": 183,
+      "paragraph_id": 51,
+      "section_id": 19,
+      "text": "In the same time window, a main effect of selfreference was found for the FRN, which showed higher positivity for self-related evaluations.",
+      "page_number": null
+    },
+    {
+      "text_id": 184,
+      "paragraph_id": 51,
+      "section_id": 19,
+      "text": "Although we found no main effect of congruency and no interaction, exploratory analyses showed more positive FRN amplitudes for self-related incongruent positive compared with congruent or incongruent negative feedback.",
+      "page_number": null
+    },
+    {
+      "text_id": 185,
+      "paragraph_id": 51,
+      "section_id": 19,
+      "text": "Previous studies found larger FRN negativities for social rejections (e.g., Kujawa et al., 2014Kujawa et al., , 2017)), and some mostly found an effect of feedback expectedness (van der Molen et al., 2017;Veen et al., 2016).",
+      "page_number": null
+    },
+    {
+      "text_id": 186,
+      "paragraph_id": 51,
+      "section_id": 19,
+      "text": "One explanation might be that self-related positive evaluations are highly expected compared with all other conditions, in line with strong self-positivity biases (e.g., Korn et al., 2012;Sharot & Garrett, 2016).",
+      "page_number": null
+    },
+    {
+      "text_id": 187,
+      "paragraph_id": 51,
+      "section_id": 19,
+      "text": "A second explanation might be that as this is the first study realizing a sort of baseline comparison (i.e., a congruent condition), this enables us to frame the findings into the large body of research relating the FRN as a reward positivity (Becker et al., 2014;Proudfit, 2015).",
+      "page_number": null
+    },
+    {
+      "text_id": 188,
+      "paragraph_id": 52,
+      "section_id": 19,
+      "text": "We found an interaction of self-reference and congruency here for subsequently peaking feedback P3 (see Fig.",
+      "page_number": null
+    },
+    {
+      "text_id": 189,
+      "paragraph_id": 52,
+      "section_id": 19,
+      "text": "3): Self-related positive information led to a pronounced frontal positivity that differed from all other conditions.",
+      "page_number": null
+    },
+    {
+      "text_id": 190,
+      "paragraph_id": 52,
+      "section_id": 19,
+      "text": "This is consistent with recent findings showing large P3 amplitudes for positive evaluations, which previous research has suggested may represent a reward-related positivity (e.g., Pfabigan et al., 2011).",
+      "page_number": null
+    },
+    {
+      "text_id": 191,
+      "paragraph_id": 52,
+      "section_id": 19,
+      "text": "Remarkably, we also observed that participants' congruent and incongruent negative self-evaluations induced a larger feedback P3 than any evaluation about the interaction partner, which necessitates an extension of the above-mentioned hypothesis.",
+      "page_number": null
+    },
+    {
+      "text_id": 192,
+      "paragraph_id": 52,
+      "section_id": 19,
+      "text": "Either self-related evaluations induce a higher global magnitude of feedback signaling (Osinsky et al., 2012;Pfabigan et al., 2011), or evaluations about oneself are rewarding per se.",
+      "page_number": null
+    },
+    {
+      "text_id": 193,
+      "paragraph_id": 52,
+      "section_id": 19,
+      "text": "In line with the latter assumption, results of other research have shown larger striatal activations for social feedback per se (Schindler, Kruse, et al., 2019) and even for putative interactions with another human, regardless of the outcome (Pfeiffer et al., 2014).",
+      "page_number": null
+    },
+    {
+      "text_id": 194,
+      "paragraph_id": 53,
+      "section_id": 19,
+      "text": "Finally, we also found that self-related incongruent negative and positive evaluations led to larger LPP amplitudes (but see Section A in the Supplemental Material).",
+      "page_number": null
+    },
+    {
+      "text_id": 195,
+      "paragraph_id": 53,
+      "section_id": 19,
+      "text": "As expected, self-related incongruent positive evaluations elicited the largest late positivities.",
+      "page_number": null
+    },
+    {
+      "text_id": 196,
+      "paragraph_id": 53,
+      "section_id": 19,
+      "text": "These results are consistent with the findings of previous studies showing increased LPPs for self-relevant contexts (e.g., Herbert et al., 2011) and proposing a high relevance of social evaluations (e.g., Schindler, Miller, & Kissler, 2019).",
+      "page_number": null
+    },
+    {
+      "text_id": 197,
+      "paragraph_id": 53,
+      "section_id": 19,
+      "text": "This is in line with the processes occurring during the late LPP time window, including stimulus evaluation, affective labeling, and controlling of self-related and emotion-regulation processes (see Hajcak et al., 2010;Schupp et al., 2006).",
+      "page_number": null
+    },
+    {
+      "text_id": 198,
+      "paragraph_id": 53,
+      "section_id": 19,
+      "text": "In this regard, it is likely that the LPP reflects the suggested positively biased self-updating, leading to a more elaborative processing of self-serving information (e.g., Korn et al., 2012;Sharot & Garrett, 2016).",
+      "page_number": null
+    },
+    {
+      "text_id": 199,
+      "paragraph_id": 53,
+      "section_id": 19,
+      "text": "In neuroimaging studies, self-view and self-updating processes have been associated with the activation of midline posterior areas (e.g., see Lieberman, 2007).",
+      "page_number": null
+    },
+    {
+      "text_id": 200,
+      "paragraph_id": 53,
+      "section_id": 19,
+      "text": "Indeed, recent functional MRI findings show pronounced activations for self-relevant social evaluations in these regions (posterior cingulate cortex and precuneus; Schindler, Kruse, et al., 2019).",
+      "page_number": null
+    },
+    {
+      "text_id": 201,
+      "paragraph_id": 53,
+      "section_id": 19,
+      "text": "Interestingly, these brain areas are also activated when participants have to give self-serving favorable selfevaluations after receiving social-rejection feedback (Hughes & Beer, 2012).",
+      "page_number": null
+    },
+    {
+      "text_id": 202,
+      "paragraph_id": 53,
+      "section_id": 19,
+      "text": "This medial posterior activation has been associated with a protective strategy to maintain a positive self-view (Hughes & Beer, 2012).",
+      "page_number": null
+    },
+    {
+      "text_id": 203,
+      "paragraph_id": 53,
+      "section_id": 19,
+      "text": "Of note, control analyses revealed that with increasing numbers of incongruent evaluations, LPP differences decreased, underestimating the LPP effects.",
+      "page_number": null
+    },
+    {
+      "text_id": 204,
+      "paragraph_id": 55,
+      "section_id": 20,
+      "text": "In this study, we employed a novel design reporting neural responses during social interactions in a large sample.",
+      "page_number": null
+    },
+    {
+      "text_id": 205,
+      "paragraph_id": 55,
+      "section_id": 20,
+      "text": "Our results clearly show that self-related and incongruent evaluations modulate neural processes at early and late stages.",
+      "page_number": null
+    },
+    {
+      "text_id": 206,
+      "paragraph_id": 55,
+      "section_id": 20,
+      "text": "One limitation of this study is the naturalistic context with reduced experimental control (described above).",
+      "page_number": null
+    },
+    {
+      "text_id": 207,
+      "paragraph_id": 55,
+      "section_id": 20,
+      "text": "However, in this dyadic approach we were able to develop a paradigm in which real social evaluations resulted in an equal proportion of self-compared with other-related and incongruent positive compared with negative evaluations.",
+      "page_number": null
+    },
+    {
+      "text_id": 208,
+      "paragraph_id": 55,
+      "section_id": 20,
+      "text": "Further, with the limited number of positive and negative words (60 each), we could not perform any fine-grained analyses of how word valence affected incongruence.",
+      "page_number": null
+    },
+    {
+      "text_id": 209,
+      "paragraph_id": 56,
+      "section_id": 20,
+      "text": "Our results here might even underestimate the impact of self-related incongruent evaluations for two reasons.",
+      "page_number": null
+    },
+    {
+      "text_id": 210,
+      "paragraph_id": 56,
+      "section_id": 20,
+      "text": "First, self-verification is proposed to be a central human motive, and therefore receiving congruent ratings about oneself should be rewarding per se (Kwang & Swann, 2010).",
+      "page_number": null
+    },
+    {
+      "text_id": 211,
+      "paragraph_id": 56,
+      "section_id": 20,
+      "text": "Second, as people typically exhibit a strong social interest in others and compare themselves with others (Swencionis & Fiske, 2014), even other-related evaluations might have elicited intense electrophysiological responses.",
+      "page_number": null
+    },
+    {
+      "text_id": 212,
+      "paragraph_id": 56,
+      "section_id": 20,
+      "text": "In our view, a promising direction for future studies is to collect, next to self-evaluations, participants' predictions of how they expect to be evaluated by another participant, because self-evaluations do not necessarily match people's expectations of how they are seen by others.",
+      "page_number": null
+    },
+    {
+      "text_id": 213,
+      "paragraph_id": 56,
+      "section_id": 20,
+      "text": "Further, such predictions might change during the experiment.",
+      "page_number": null
+    },
+    {
+      "text_id": 214,
+      "paragraph_id": 56,
+      "section_id": 20,
+      "text": "If indeed there are mismatches between expectations and self-evaluations, these can inform how one or the other drive specific modulations (e.g., FRN) in socioevaluative settings.",
+      "page_number": null
+    },
+    {
+      "text_id": 215,
+      "paragraph_id": 58,
+      "section_id": 21,
+      "text": "For the first time, we investigated ERPs toward social evaluations after a real social interaction.",
+      "page_number": null
+    },
+    {
+      "text_id": 216,
+      "paragraph_id": 58,
+      "section_id": 21,
+      "text": "We showed that evaluations of oneself increase early and late components of the ERP.",
+      "page_number": null
+    },
+    {
+      "text_id": 217,
+      "paragraph_id": 58,
+      "section_id": 21,
+      "text": "Self-related incongruence is detected already at early processing stages (N1).",
+      "page_number": null
+    },
+    {
+      "text_id": 218,
+      "paragraph_id": 58,
+      "section_id": 21,
+      "text": "Although a bias toward incongruent negative evaluations was initially found, at midlatency stages (EPN), both incongruent negative and positive self-evaluations were amplified, eventually leading to a more pronounced processing of incongruent positive self-evaluations (feedback-related P3, LPP).",
+      "page_number": null
+    },
+    {
+      "text_id": 219,
+      "paragraph_id": 58,
+      "section_id": 21,
+      "text": "Thus, in real social interactions, evaluative feedback about oneself, and especially incongruent positive evaluations that violate one's self-view, appear to modulate all processing stages, suggesting a strong social motive.",
+      "page_number": null
+    },
+    {
+      "text_id": 220,
+      "paragraph_id": 60,
+      "section_id": 22,
+      "text": "Action Editor: M Natasha Rajah Editor: Patricia J Bauer",
+      "page_number": null
+    },
+    {
+      "text_id": 221,
+      "paragraph_id": 62,
+      "section_id": 23,
+      "text": "We thank Maren-Isabel Wolf and Sophie Krebs for their help with data acquisition and all participants who contributed to this study.",
+      "page_number": null
+    },
+    {
+      "text_id": 222,
+      "paragraph_id": 64,
+      "section_id": 24,
+      "text": "The author(s) declared that there were no conflicts of interest with respect to the authorship or the publication of this article.",
+      "page_number": null
+    },
+    {
+      "text_id": 223,
+      "paragraph_id": 66,
+      "section_id": 25,
+      "text": "All data have been made publicly available via OSF and can be accessed at https://osf.io/cfts6/.",
+      "page_number": null
+    },
+    {
+      "text_id": 224,
+      "paragraph_id": 66,
+      "section_id": 25,
+      "text": "The hypotheses, experimental design, and analysis plan were preregistered at https://osf.io/9eqvy.",
+      "page_number": null
+    },
+    {
+      "text_id": 225,
+      "paragraph_id": 66,
+      "section_id": 25,
+      "text": "This article has received the badge for Preregistration.",
+      "page_number": null
+    },
+    {
+      "text_id": 226,
+      "paragraph_id": 66,
+      "section_id": 25,
+      "text": "More information about the Open Practices badges can be found at http://www.psychologi calscience.org/publications/badges.",
+      "page_number": null
+    },
+    {
+      "text_id": 227,
+      "paragraph_id": 68,
+      "section_id": 26,
+      "text": "A Höhner, S Schindler, and T Straube designed the study.",
+      "page_number": null
+    },
+    {
+      "text_id": 228,
+      "paragraph_id": 68,
+      "section_id": 26,
+      "text": "R Moeck programmed the experiment.",
+      "page_number": null
+    },
+    {
+      "text_id": 229,
+      "paragraph_id": 68,
+      "section_id": 26,
+      "text": "A Höhner and S Schindler pilot-tested the design and tested participants.",
+      "page_number": null
+    },
+    {
+      "text_id": 230,
+      "paragraph_id": 68,
+      "section_id": 26,
+      "text": "A Höhner, M Bruchmann, and S Schindler analyzed the data.",
+      "page_number": null
+    },
+    {
+      "text_id": 231,
+      "paragraph_id": 68,
+      "section_id": 26,
+      "text": "S Schindler wrote the manuscript under the supervision of T Straube.",
+      "page_number": null
+    },
+    {
+      "text_id": 232,
+      "paragraph_id": 68,
+      "section_id": 26,
+      "text": "All authors read and approved the final manuscript for submission.",
+      "page_number": null
+    },
+    {
+      "text_id": 233,
+      "paragraph_id": 70,
+      "section_id": 27,
+      "text": "Additional supporting information can be found at http:// journals.sagepub.com/doi/suppl/10.1177/0956797621995197",
+      "page_number": null
+    },
+    {
+      "text_id": 234,
+      "paragraph_id": 80,
+      "section_id": 0,
+      "text": "P3, respectively.",
+      "page_number": null
+    },
+    {
+      "text_id": 235,
+      "paragraph_id": 80,
+      "section_id": 0,
+      "text": "The bar charts (right) show mean amplitudes for each evaluation type, separately for the FRN and P3.",
+      "page_number": null
+    },
+    {
+      "text_id": 236,
+      "paragraph_id": 80,
+      "section_id": 0,
+      "text": "Error bars represent 95% confidence intervals.The difference waveforms (bottom middle) show 95% bootstrapped confidence intervals of intra-individual differences in comparisons of interest.",
+      "page_number": null
+    },
+    {
+      "text_id": 237,
+      "paragraph_id": 71,
+      "section_id": 28,
+      "text": "Fig 1 Experimental design (a) and trial sequence (band c).",
+      "page_number": null
+    },
+    {
+      "text_id": 238,
+      "paragraph_id": 71,
+      "section_id": 28,
+      "text": "The complete timeline of the experiment is shown in (a).",
+      "page_number": null
+    },
+    {
+      "text_id": 239,
+      "paragraph_id": 71,
+      "section_id": 28,
+      "text": "Electroencephalograms (EEGs) were prepared while participants responded to pretest questionnaires.",
+      "page_number": null
+    },
+    {
+      "text_id": 240,
+      "paragraph_id": 71,
+      "section_id": 28,
+      "text": "Next (b), participants rated how well each of a set of adjectives described themselves or their interaction partner.",
+      "page_number": null
+    },
+    {
+      "text_id": 241,
+      "paragraph_id": 71,
+      "section_id": 28,
+      "text": "Ratings were made by selecting from 1 to 6 arrows, which changed color to indicate the participants' selection (a rating of 4 is shown here).",
+      "page_number": null
+    },
+    {
+      "text_id": 242,
+      "paragraph_id": 71,
+      "section_id": 28,
+      "text": "In the main experiment (c), participants' own ratings were presented first, followed by the rating decisions made by the interaction partner.",
+      "page_number": null
+    },
+    {
+      "text_id": 243,
+      "paragraph_id": 71,
+      "section_id": 28,
+      "text": "The stimulus used for event-related potential (ERP) analyses is highlighted.",
+      "page_number": null
+    },
+    {
+      "text_id": 244,
+      "paragraph_id": 72,
+      "section_id": 29,
+      "text": "Fig 2 N1 and early posterior negativity (EPN): interaction effects of reference and evaluation congruency.",
+      "page_number": null
+    },
+    {
+      "text_id": 245,
+      "paragraph_id": 72,
+      "section_id": 29,
+      "text": "Scalp topographies (left) depict differences between the negative and congruent conditions and positive and congruent conditions, separately for self-related and other-related evaluations.",
+      "page_number": null
+    },
+    {
+      "text_id": 246,
+      "paragraph_id": 72,
+      "section_id": 29,
+      "text": "Black dots indicate positions of electrodes.",
+      "page_number": null
+    },
+    {
+      "text_id": 247,
+      "paragraph_id": 72,
+      "section_id": 29,
+      "text": "The waveform graph (top middle) shows the time course of event-related potentials (ERPs) over the depicted average N1/EPN cluster, separately for incongruent positive, incongruent negative, and congruent self-and other evaluations.",
+      "page_number": null
+    },
+    {
+      "text_id": 248,
+      "paragraph_id": 72,
+      "section_id": 29,
+      "text": "The gray shaded areas highlight the range of the N1 and EPN, respectively.",
+      "page_number": null
+    },
+    {
+      "text_id": 249,
+      "paragraph_id": 72,
+      "section_id": 29,
+      "text": "The bar charts (right) show mean amplitudes for each evaluation type, separately for the N1 and EPN.",
+      "page_number": null
+    },
+    {
+      "text_id": 250,
+      "paragraph_id": 72,
+      "section_id": 29,
+      "text": "Error bars represent 95% confidence intervals.",
+      "page_number": null
+    },
+    {
+      "text_id": 251,
+      "paragraph_id": 72,
+      "section_id": 29,
+      "text": "The difference waveforms (bottom middle) show 95% bootstrapped confidence intervals of intra-individual differences in comparisons of interest.",
+      "page_number": null
+    },
+    {
+      "text_id": 252,
+      "paragraph_id": 73,
+      "section_id": 30,
+      "text": "Fig 3 Feedback-related negativity (FRN): main effects of reference and frontal P3 interaction effects of reference and evaluation congruency.",
+      "page_number": null
+    },
+    {
+      "text_id": 253,
+      "paragraph_id": 73,
+      "section_id": 30,
+      "text": "Scalp topographies (left) depict differences between the negative and congruent conditions and positive and congruent conditions, separately for self-related and other-related evaluations.",
+      "page_number": null
+    },
+    {
+      "text_id": 254,
+      "paragraph_id": 73,
+      "section_id": 30,
+      "text": "Black dots indicate positions of electrodes.",
+      "page_number": null
+    },
+    {
+      "text_id": 255,
+      "paragraph_id": 73,
+      "section_id": 30,
+      "text": "The waveform graph (top middle) shows the time course of event-related potentials (ERPs) over the depicted average FRN/P3 cluster, separately for incongruent positive, incongruent negative, and congruent self-and other evaluations.",
+      "page_number": null
+    },
+    {
+      "text_id": 256,
+      "paragraph_id": 73,
+      "section_id": 30,
+      "text": "The gray shaded areas highlight the range of the FRN and",
+      "page_number": null
+    },
+    {
+      "text_id": 257,
+      "paragraph_id": 74,
+      "section_id": 31,
+      "text": "Fig 4 Late positive potential (LPP): main effects and interaction effects of reference and evaluation congruency.",
+      "page_number": null
+    },
+    {
+      "text_id": 258,
+      "paragraph_id": 74,
+      "section_id": 31,
+      "text": "Scalp topographies (left) depict differences between the negative and congruent conditions and positive and congruent conditions, separately for self-related and other-related evaluations.",
+      "page_number": null
+    },
+    {
+      "text_id": 259,
+      "paragraph_id": 74,
+      "section_id": 31,
+      "text": "Black dots indicate positions of electrodes.",
+      "page_number": null
+    },
+    {
+      "text_id": 260,
+      "paragraph_id": 74,
+      "section_id": 31,
+      "text": "The waveform graph (top middle) shows the time course of event-related potentials (ERPs) over the depicted average LPP cluster, separately for incongruent positive, incongruent negative, and congruent self-and other evaluations.",
+      "page_number": null
+    },
+    {
+      "text_id": 261,
+      "paragraph_id": 74,
+      "section_id": 31,
+      "text": "The gray shaded area highlights the range of the LPP.",
+      "page_number": null
+    },
+    {
+      "text_id": 262,
+      "paragraph_id": 74,
+      "section_id": 31,
+      "text": "The bar chart (right) shows mean amplitudes for each evaluation type.",
+      "page_number": null
+    },
+    {
+      "text_id": 263,
+      "paragraph_id": 74,
+      "section_id": 31,
+      "text": "Error bars represent 95% confidence intervals.",
+      "page_number": null
+    },
+    {
+      "text_id": 264,
+      "paragraph_id": 74,
+      "section_id": 31,
+      "text": "The difference waveforms (bottom middle) show 95% bootstrapped confidence intervals of intra-individual differences in comparisons of interest.",
+      "page_number": null
+    },
+    {
+      "text_id": 265,
+      "paragraph_id": 75,
+      "section_id": 32,
+      "text": "Comparisons of Negative and Positive Adjectives Using Independent-Samples t Tests",
+      "page_number": null
+    },
+    {
+      "text_id": 266,
+      "paragraph_id": 76,
+      "section_id": 33,
+      "text": "Mean Interaction Ratings",
+      "page_number": null
+    },
+    {
+      "text_id": 267,
+      "paragraph_id": 77,
+      "section_id": 34,
+      "text": "Comparison of Partner Ratings Before and After Evaluations Were Received",
+      "page_number": null
+    },
+    {
+      "text_id": 268,
+      "paragraph_id": 78,
+      "section_id": 35,
+      "text": "Mean Amplitude (µV) for all Event-Related Potential Components",
+      "page_number": null
+    },
+    {
+      "text_id": 269,
+      "paragraph_id": 79,
+      "section_id": 36,
+      "text": "Results From Analyses of Variance for all Event-Related Potential Components",
+      "page_number": null
+    },
+    {
+      "text_id": 270,
+      "paragraph_id": 81,
+      "section_id": 37,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 271,
+      "paragraph_id": 82,
+      "section_id": 37,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 272,
+      "paragraph_id": 83,
+      "section_id": 37,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 273,
+      "paragraph_id": 84,
+      "section_id": 37,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 274,
+      "paragraph_id": 85,
+      "section_id": 37,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 275,
+      "paragraph_id": 86,
+      "section_id": 37,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 276,
+      "paragraph_id": 87,
+      "section_id": 37,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 277,
+      "paragraph_id": 88,
+      "section_id": 37,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 278,
+      "paragraph_id": 89,
+      "section_id": 37,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 279,
+      "paragraph_id": 90,
+      "section_id": 37,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 280,
+      "paragraph_id": 91,
+      "section_id": 37,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 281,
+      "paragraph_id": 92,
+      "section_id": 37,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 282,
+      "paragraph_id": 93,
+      "section_id": 37,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 283,
+      "paragraph_id": 94,
+      "section_id": 37,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 284,
+      "paragraph_id": 95,
+      "section_id": 37,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 285,
+      "paragraph_id": 96,
+      "section_id": 37,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 286,
+      "paragraph_id": 97,
+      "section_id": 37,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 287,
+      "paragraph_id": 98,
+      "section_id": 37,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 288,
+      "paragraph_id": 99,
+      "section_id": 37,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 289,
+      "paragraph_id": 100,
+      "section_id": 37,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 290,
+      "paragraph_id": 101,
+      "section_id": 37,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 291,
+      "paragraph_id": 102,
+      "section_id": 37,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 292,
+      "paragraph_id": 103,
+      "section_id": 37,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 293,
+      "paragraph_id": 104,
+      "section_id": 37,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 294,
+      "paragraph_id": 105,
+      "section_id": 37,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 295,
+      "paragraph_id": 106,
+      "section_id": 37,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 296,
+      "paragraph_id": 107,
+      "section_id": 37,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 297,
+      "paragraph_id": 108,
+      "section_id": 37,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 298,
+      "paragraph_id": 109,
+      "section_id": 37,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 299,
+      "paragraph_id": 110,
+      "section_id": 37,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 300,
+      "paragraph_id": 111,
+      "section_id": 37,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 301,
+      "paragraph_id": 112,
+      "section_id": 37,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 302,
+      "paragraph_id": 113,
+      "section_id": 37,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 303,
+      "paragraph_id": 114,
+      "section_id": 37,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 304,
+      "paragraph_id": 115,
+      "section_id": 37,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 305,
+      "paragraph_id": 116,
+      "section_id": 37,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 306,
+      "paragraph_id": 117,
+      "section_id": 37,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 307,
+      "paragraph_id": 118,
+      "section_id": 37,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 308,
+      "paragraph_id": 119,
+      "section_id": 37,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 309,
+      "paragraph_id": 120,
+      "section_id": 37,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 310,
+      "paragraph_id": 121,
+      "section_id": 37,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 311,
+      "paragraph_id": 122,
+      "section_id": 37,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 312,
+      "paragraph_id": 123,
+      "section_id": 37,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 313,
+      "paragraph_id": 124,
+      "section_id": 37,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 314,
+      "paragraph_id": 125,
+      "section_id": 37,
+      "text": "",
+      "page_number": null
+    }
+  ],
+  "section": [
+    {
+      "section_id": 0,
+      "header": "",
+      "parent_section_id": null,
+      "section_type": "foot",
+      "classification_score": null
+    },
+    {
+      "section_id": 0,
+      "header": "Abstract",
+      "parent_section_id": null,
+      "section_type": "abstract",
+      "classification_score": null
+    },
+    {
+      "section_id": 1,
+      "header": "[div-01]",
+      "parent_section_id": null,
+      "section_type": "intro",
+      "classification_score": null
+    },
+    {
+      "section_id": 3,
+      "header": "Participants",
+      "parent_section_id": null,
+      "section_type": "method",
+      "classification_score": null
+    },
+    {
+      "section_id": 4,
+      "header": "Stimuli",
+      "parent_section_id": null,
+      "section_type": "method",
+      "classification_score": null
+    },
+    {
+      "section_id": 5,
+      "header": "Statement of Relevance",
+      "parent_section_id": null,
+      "section_type": "method",
+      "classification_score": null
+    },
+    {
+      "section_id": 6,
+      "header": "Procedure",
+      "parent_section_id": null,
+      "section_type": "method",
+      "classification_score": null
+    },
+    {
+      "section_id": 7,
+      "header": "EEG recording and analysis",
+      "parent_section_id": null,
+      "section_type": "method",
+      "classification_score": null
+    },
+    {
+      "section_id": 8,
+      "header": "Statistical analyses",
+      "parent_section_id": null,
+      "section_type": "method",
+      "classification_score": null
+    },
+    {
+      "section_id": 10,
+      "header": "Interaction ratings and evaluation congruency",
+      "parent_section_id": null,
+      "section_type": "results",
+      "classification_score": null
+    },
+    {
+      "section_id": 11,
+      "header": "ERP results",
+      "parent_section_id": null,
+      "section_type": "results",
+      "classification_score": null
+    },
+    {
+      "section_id": 12,
+      "header": "N1 (130-180 ms).",
+      "parent_section_id": null,
+      "section_type": "results",
+      "classification_score": null
+    },
+    {
+      "section_id": 13,
+      "header": "EPN (260-360 ms).",
+      "parent_section_id": null,
+      "section_type": "results",
+      "classification_score": null
+    },
+    {
+      "section_id": 14,
+      "header": "Post hoc analyses N1-EPN (130-400 ms).",
+      "parent_section_id": null,
+      "section_type": "results",
+      "classification_score": null
+    },
+    {
+      "section_id": 15,
+      "header": "FRN (200-280 ms).",
+      "parent_section_id": null,
+      "section_type": "results",
+      "classification_score": null
+    },
+    {
+      "section_id": 16,
+      "header": "Frontal feedback P3 (300-400 ms).",
+      "parent_section_id": null,
+      "section_type": "results",
+      "classification_score": null
+    },
+    {
+      "section_id": 17,
+      "header": "LPP (500-750 ms).",
+      "parent_section_id": null,
+      "section_type": "results",
+      "classification_score": null
+    },
+    {
+      "section_id": 18,
+      "header": "Control analyses.",
+      "parent_section_id": null,
+      "section_type": "results",
+      "classification_score": null
+    },
+    {
+      "section_id": 19,
+      "header": "Discussion",
+      "parent_section_id": null,
+      "section_type": "discussion",
+      "classification_score": null
+    },
+    {
+      "section_id": 20,
+      "header": "Constraints on generality and outlook",
+      "parent_section_id": null,
+      "section_type": "discussion",
+      "classification_score": null
+    },
+    {
+      "section_id": 21,
+      "header": "Conclusion",
+      "parent_section_id": null,
+      "section_type": "discussion",
+      "classification_score": null
+    },
+    {
+      "section_id": 22,
+      "header": "Transparency",
+      "parent_section_id": null,
+      "section_type": "discussion",
+      "classification_score": null
+    },
+    {
+      "section_id": 23,
+      "header": "Acknowledgments",
+      "parent_section_id": null,
+      "section_type": "acknowledgement",
+      "classification_score": null
+    },
+    {
+      "section_id": 24,
+      "header": "Declaration of Conflicting Interests",
+      "parent_section_id": null,
+      "section_type": "conflict",
+      "classification_score": null
+    },
+    {
+      "section_id": 25,
+      "header": "Open Practices",
+      "parent_section_id": null,
+      "section_type": "conflict",
+      "classification_score": null
+    },
+    {
+      "section_id": 26,
+      "header": "Author Contributions",
+      "parent_section_id": null,
+      "section_type": "contribution",
+      "classification_score": null
+    },
+    {
+      "section_id": 27,
+      "header": "Supplemental Material",
+      "parent_section_id": null,
+      "section_type": "annex",
+      "classification_score": null
+    },
+    {
+      "section_id": 28,
+      "header": "Fig 1",
+      "parent_section_id": null,
+      "section_type": "figure",
+      "classification_score": null
+    },
+    {
+      "section_id": 29,
+      "header": "Fig 2",
+      "parent_section_id": null,
+      "section_type": "figure",
+      "classification_score": null
+    },
+    {
+      "section_id": 30,
+      "header": "Fig 3",
+      "parent_section_id": null,
+      "section_type": "figure",
+      "classification_score": null
+    },
+    {
+      "section_id": 31,
+      "header": "Fig 4",
+      "parent_section_id": null,
+      "section_type": "figure",
+      "classification_score": null
+    },
+    {
+      "section_id": 32,
+      "header": "Table 1 .",
+      "parent_section_id": null,
+      "section_type": "table",
+      "classification_score": null
+    },
+    {
+      "section_id": 33,
+      "header": "Table 2 .",
+      "parent_section_id": null,
+      "section_type": "table",
+      "classification_score": null
+    },
+    {
+      "section_id": 34,
+      "header": "Table 3 .",
+      "parent_section_id": null,
+      "section_type": "table",
+      "classification_score": null
+    },
+    {
+      "section_id": 35,
+      "header": "Table 4 .",
+      "parent_section_id": null,
+      "section_type": "table",
+      "classification_score": null
+    },
+    {
+      "section_id": 36,
+      "header": "Table 5 .",
+      "parent_section_id": null,
+      "section_type": "table",
+      "classification_score": null
+    },
+    {
+      "section_id": 37,
+      "header": "References",
+      "parent_section_id": null,
+      "section_type": "references",
+      "classification_score": null
+    }
+  ],
+  "url": [
+    {
+      "href": "https://osf.io/9eqvy",
+      "link_text": null,
+      "text_id": 17
+    },
+    {
+      "href": "https://www.biosemi.com/headcap.htm",
+      "link_text": null,
+      "text_id": 63
+    },
+    {
+      "href": "https://www.biosemi.com/down",
+      "link_text": null,
+      "text_id": 70
+    },
+    {
+      "href": "https://osf.io/cfts6",
+      "link_text": null,
+      "text_id": 101
+    },
+    {
+      "href": "https://osf.io/cfts6",
+      "link_text": null,
+      "text_id": 223
+    },
+    {
+      "href": "https://osf.io/9eqvy",
+      "link_text": null,
+      "text_id": 224
+    },
+    {
+      "href": "calscience.org/publications/badges",
+      "link_text": null,
+      "text_id": 226
+    },
+    {
+      "href": "journals.sagepub.com/doi/suppl/10.1177/0956797621995197",
+      "link_text": null,
+      "text_id": 233
+    },
+    {
+      "href": "intervals.The",
+      "link_text": null,
+      "text_id": 236
+    },
+    {
+      "href": "intervals.The",
+      "link_text": null,
+      "text_id": 236
+    }
+  ],
+  "bib": [
+    {
+      "bib_type": "article",
+      "doi": "10.1007/s00221-014-4092-9",
+      "title": "My partner is also on my mind: Social context modulates the N1 response",
+      "authors": "Baess, P; Prinz, W",
+      "editors": "",
+      "publisher": "",
+      "year": 2015,
+      "volume": "233",
+      "issue": "1",
+      "first_page": "105",
+      "last_page": "113",
+      "container": "Experimental Brain Research",
+      "bib_id": 0,
+      "year_suffix": "",
+      "text_id": 270
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1093/scan/nsx075",
+      "title": "The impact of personal relevance on emotion processing: Evidence from event-related potentials and pupillary responses",
+      "authors": "Bayer, M; Ruthmann, K; Schacht, A",
+      "editors": "",
+      "publisher": "",
+      "year": 2017,
+      "volume": "12",
+      "issue": "9",
+      "first_page": "1470",
+      "last_page": "1479",
+      "container": "Social Cognitive and Affective Neuroscience",
+      "bib_id": 1,
+      "year_suffix": "",
+      "text_id": 271
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1523/JNEUROSCI.3684-13.2014",
+      "title": "A single-trial estimation of the feedback-related negativity and its relation to BOLD responses in a timeestimation task",
+      "authors": "Becker, M P I; Nitsch, A M; Miltner, W H R; Straube, T",
+      "editors": "",
+      "publisher": "",
+      "year": 2014,
+      "volume": "34",
+      "issue": "8",
+      "first_page": "3005",
+      "last_page": "3012",
+      "container": "The Journal of Neuroscience",
+      "bib_id": 2,
+      "year_suffix": "",
+      "text_id": 272
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1038/nature07538",
+      "title": "Associative learning of social value",
+      "authors": "Behrens, T E J; Hunt, L T; Woolrich, M W; Rushworth, M F S",
+      "editors": "",
+      "publisher": "",
+      "year": 2008,
+      "volume": "456",
+      "issue": "7219",
+      "first_page": "245",
+      "last_page": "249",
+      "container": "Nature",
+      "bib_id": 3,
+      "year_suffix": "",
+      "text_id": 273
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "",
+      "authors": "Besa, ",
+      "editors": "",
+      "publisher": "",
+      "year": 2014,
+      "volume": "",
+      "issue": "",
+      "first_page": null,
+      "last_page": null,
+      "container": "",
+      "bib_id": 4,
+      "year_suffix": "",
+      "text_id": 274
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1016/0005-7916(94)90063-9",
+      "title": "Measuring emotion: The self-assessment manikin and the semantic differential",
+      "authors": "Bradley, M M; Lang, P J",
+      "editors": "",
+      "publisher": "",
+      "year": 1994,
+      "volume": "25",
+      "issue": "1",
+      "first_page": "49",
+      "last_page": "59",
+      "container": "Journal of Behavior Therapy and Experimental Psychiatry",
+      "bib_id": 5,
+      "year_suffix": "",
+      "text_id": 275
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1016/j.neubiorev.2016.12.022",
+      "title": "Simulating social interactions for the experimental investigation of joint attention",
+      "authors": "Caruana, N; Mcarthur, G; Woolgar, A; Brock, J",
+      "editors": "",
+      "publisher": "",
+      "year": 2017,
+      "volume": "74",
+      "issue": "",
+      "first_page": "115",
+      "last_page": "125",
+      "container": "Neuroscience & Biobehavioral Reviews",
+      "bib_id": 6,
+      "year_suffix": "",
+      "text_id": 276
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "",
+      "authors": "Cohen, J",
+      "editors": "",
+      "publisher": "Routledge",
+      "year": 1988,
+      "volume": "",
+      "issue": "",
+      "first_page": null,
+      "last_page": null,
+      "container": "",
+      "bib_id": 7,
+      "year_suffix": "",
+      "text_id": 277
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1146/annurev-psych-122216-011821",
+      "title": "Persuasion, influence, and value: Perspectives from communication and social neuroscience",
+      "authors": "Falk, E; Scholz, C",
+      "editors": "",
+      "publisher": "",
+      "year": 2018,
+      "volume": "69",
+      "issue": "1",
+      "first_page": "329",
+      "last_page": "356",
+      "container": "Annual Review of Psychology",
+      "bib_id": 8,
+      "year_suffix": "",
+      "text_id": 278
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1080/87565640903526504",
+      "title": "Eventrelated potentials, emotion, and emotion regulation: An integrative review",
+      "authors": "Hajcak, G; Macnamara, A; Olvet, D M",
+      "editors": "",
+      "publisher": "",
+      "year": 2010,
+      "volume": "35",
+      "issue": "2",
+      "first_page": "129",
+      "last_page": "155",
+      "container": "Developmental Neuropsychology",
+      "bib_id": 9,
+      "year_suffix": "",
+      "text_id": 279
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1016/j.biopsycho.2005.04.001",
+      "title": "The feedback-related negativity reflects the binary evaluation of good versus bad outcomes",
+      "authors": "Hajcak, G; Moser, J S; Holroyd, C B; Simons, R F",
+      "editors": "",
+      "publisher": "",
+      "year": 2006,
+      "volume": "71",
+      "issue": "2",
+      "first_page": "148",
+      "last_page": "154",
+      "container": "Biological Psychology",
+      "bib_id": 10,
+      "year_suffix": "",
+      "text_id": 280
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1016/j.nicl.2017.11.010",
+      "title": "Behavioral and EEG responses to social evaluation: A two-generation family study on social anxiety",
+      "authors": "Harrewijn, A; Van Der Molen, M J W; Van Vliet, I M; Tissier, R L M; Westenberg, P M",
+      "editors": "",
+      "publisher": "",
+      "year": 2018,
+      "volume": "17",
+      "issue": "",
+      "first_page": "549",
+      "last_page": "562",
+      "container": "NeuroImage: Clinical",
+      "bib_id": 11,
+      "year_suffix": "",
+      "text_id": 281
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "",
+      "authors": "Hautzinger, M; Keller, F; Kühner, C",
+      "editors": "",
+      "publisher": "Pearson Assessment",
+      "year": 2009,
+      "volume": "2",
+      "issue": "",
+      "first_page": null,
+      "last_page": null,
+      "container": "",
+      "bib_id": 12,
+      "year_suffix": "",
+      "text_id": 282
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1016/j.neuropsychologia.2011.06.026",
+      "title": "Emotional selfreference: Brain structures involved in the processing of words describing one's own emotions",
+      "authors": "Herbert, C; Herbert, B M; Pauli, P",
+      "editors": "",
+      "publisher": "",
+      "year": 2011,
+      "volume": "49",
+      "issue": "10",
+      "first_page": "2947",
+      "last_page": "2956",
+      "container": "Neuropsychologia",
+      "bib_id": 13,
+      "year_suffix": "",
+      "text_id": 283
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1162/jocn_a_00343",
+      "title": "Protecting the self: The effect of social-evaluative threat on neural representations of self",
+      "authors": "Hughes, B L; Beer, J S",
+      "editors": "",
+      "publisher": "",
+      "year": 2012,
+      "volume": "25",
+      "issue": "4",
+      "first_page": "613",
+      "last_page": "622",
+      "container": "Journal of Cognitive Neuroscience",
+      "bib_id": 14,
+      "year_suffix": "",
+      "text_id": 284
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1097/00004691-200203000-00002",
+      "title": "Artifact correction of the ongoing EEG using spatial filters based on artifact and brain signal topographies",
+      "authors": "Ille, N; Berg, P; Scherg, M",
+      "editors": "",
+      "publisher": "",
+      "year": 2002,
+      "volume": "19",
+      "issue": "2",
+      "first_page": "113",
+      "last_page": "124",
+      "container": "Journal of Clinical Neurophysiology",
+      "bib_id": 15,
+      "year_suffix": "",
+      "text_id": 285
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1080/23273798.2019.1694159",
+      "title": "Affective neurolinguistics: A new field to grow at the intersection of emotion and language? -Commentary on Hinojosa et al",
+      "authors": "Kissler, J",
+      "editors": "",
+      "publisher": "",
+      "year": 2020,
+      "volume": "35",
+      "issue": "7",
+      "first_page": "850",
+      "last_page": "857",
+      "container": "Language, Cognition and Neuroscience",
+      "bib_id": 16,
+      "year_suffix": "",
+      "text_id": 286
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1523/JNEUROSCI.3016-12.2012",
+      "title": "Positively biased processing of self-relevant social feedback",
+      "authors": "Korn, C W; Prehn, K; Park, S Q; Walter, H; Heekeren, H R",
+      "editors": "",
+      "publisher": "",
+      "year": 2012,
+      "volume": "32",
+      "issue": "",
+      "first_page": "16832",
+      "last_page": "16844",
+      "container": "The Journal of Neuroscience",
+      "bib_id": 17,
+      "year_suffix": "",
+      "text_id": 287
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1016/j.dcn.2014.08.008",
+      "title": "Electrocortical reactivity to social feedback in youth: A pilot study of the Island Getaway task",
+      "authors": "Kujawa, A; Arfer, K B; Klein, D N; Proudfit, G H",
+      "editors": "",
+      "publisher": "",
+      "year": 2014,
+      "volume": "10",
+      "issue": "",
+      "first_page": "140",
+      "last_page": "147",
+      "container": "Developmental Cognitive Neuroscience",
+      "bib_id": 18,
+      "year_suffix": "",
+      "text_id": 288
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1016/j.biopsycho.2017.07.001",
+      "title": "Social processing in early adolescence: Associations between neurophysiological, self-report, and behavioral measures",
+      "authors": "Kujawa, A; Kessel, E M; Carroll, A; Arfer, K B; Klein, D N",
+      "editors": "",
+      "publisher": "",
+      "year": 2017,
+      "volume": "128",
+      "issue": "",
+      "first_page": "55",
+      "last_page": "62",
+      "container": "Biological Psychology",
+      "bib_id": 19,
+      "year_suffix": "",
+      "text_id": 289
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1177/1088868310365876",
+      "title": "Do people embrace praise even when they feel unworthy? A review of critical tests of self-enhancement versus self-verification",
+      "authors": "Kwang, T; Swann, W B; Jr, ",
+      "editors": "",
+      "publisher": "",
+      "year": 2010,
+      "volume": "14",
+      "issue": "3",
+      "first_page": "263",
+      "last_page": "280",
+      "container": "Personality and Social Psychology Review",
+      "bib_id": 20,
+      "year_suffix": "",
+      "text_id": 290
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1146/annurev.psych.58.110405.085654",
+      "title": "Social cognitive neuroscience: A review of core processes",
+      "authors": "Lieberman, M D",
+      "editors": "",
+      "publisher": "",
+      "year": 2007,
+      "volume": "58",
+      "issue": "",
+      "first_page": "259",
+      "last_page": "289",
+      "container": "Annual Review of Psychology",
+      "bib_id": 21,
+      "year_suffix": "",
+      "text_id": 291
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1111/psyp.12639",
+      "title": "How to get statistically significant effects in any ERP experiment (and why you shouldn't)",
+      "authors": "Luck, S J; Gaspelin, N",
+      "editors": "",
+      "publisher": "",
+      "year": 2017,
+      "volume": "54",
+      "issue": "1",
+      "first_page": "146",
+      "last_page": "157",
+      "container": "Psychophysiology",
+      "bib_id": 22,
+      "year_suffix": "",
+      "text_id": 292
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "",
+      "authors": "",
+      "editors": "",
+      "publisher": "",
+      "year": 2019,
+      "volume": "",
+      "issue": "",
+      "first_page": null,
+      "last_page": null,
+      "container": "",
+      "bib_id": 23,
+      "year_suffix": "",
+      "text_id": 293
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1111/j.1469-8986.2012.01473.x",
+      "title": "Feedback-related potentials are sensitive to sequential order of decision outcomes in a gambling task",
+      "authors": "Osinsky, R; Mussel, P; Hewig, J",
+      "editors": "",
+      "publisher": "",
+      "year": 2012,
+      "volume": "49",
+      "issue": "12",
+      "first_page": "1579",
+      "last_page": "1589",
+      "container": "Psychophysiology",
+      "bib_id": 24,
+      "year_suffix": "",
+      "text_id": 294
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1155/2011/861705",
+      "title": "Electro-MagnetoEncephalograhy Software: Overview and integration with other EEG/MEG toolboxes",
+      "authors": "Peyk, P; De Cesarei, A; Junghöfer, M",
+      "editors": "",
+      "publisher": "",
+      "year": 2011,
+      "volume": "",
+      "issue": "",
+      "first_page": "861705",
+      "last_page": null,
+      "container": "Computational Intelligence and Neuroscience",
+      "bib_id": 25,
+      "year_suffix": "",
+      "text_id": 295
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1111/j.1469-8986.2010.01136.x",
+      "title": "Manipulation of feedback expectancy and valence induces negative and positive reward prediction error signals manifest in event-related brain potentials",
+      "authors": "Pfabigan, D M; Alexopoulos, J; Bauer, H; Sailer, U",
+      "editors": "",
+      "publisher": "",
+      "year": 2011,
+      "volume": "48",
+      "issue": "5",
+      "first_page": "656",
+      "last_page": "664",
+      "container": "Psychophysiology",
+      "bib_id": 26,
+      "year_suffix": "",
+      "text_id": 296
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1016/j.neuroimage.2014.06.061",
+      "title": "Why we interact: On the functional role of the striatum in the subjective experience of social interaction",
+      "authors": "Pfeiffer, U J; Schilbach, L; Timmermans, B; Kuzmanovic, B; Georgescu, A L; Bente, G; Vogeley, K",
+      "editors": "",
+      "publisher": "",
+      "year": 2014,
+      "volume": "101",
+      "issue": "",
+      "first_page": "124",
+      "last_page": "137",
+      "container": "NeuroImage",
+      "bib_id": 27,
+      "year_suffix": "",
+      "text_id": 297
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1111/psyp.12370",
+      "title": "The reward positivity: From basic research on reward to a biomarker for depression",
+      "authors": "Proudfit, G H",
+      "editors": "",
+      "publisher": "",
+      "year": 2015,
+      "volume": "52",
+      "issue": "4",
+      "first_page": "449",
+      "last_page": "459",
+      "container": "Psychophysiology",
+      "bib_id": 28,
+      "year_suffix": "",
+      "text_id": 298
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1111/psyp.13067",
+      "title": "Loser! On the combined impact of emotional and person-descriptive word meanings in communicative situations",
+      "authors": "Rohr, L; Abdel Rahman, R",
+      "editors": "",
+      "publisher": "",
+      "year": 2018,
+      "volume": "55",
+      "issue": "7",
+      "first_page": null,
+      "last_page": null,
+      "container": "Psychophysiology",
+      "bib_id": 29,
+      "year_suffix": "",
+      "text_id": 299
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1017/S0140525X12000660",
+      "title": "Toward a secondperson neuroscience",
+      "authors": "Schilbach, L; Timmermans, B; Reddy, V; Costall, A; Bente, G; Schlicht, T; Vogeley, K",
+      "editors": "",
+      "publisher": "",
+      "year": 2013,
+      "volume": "36",
+      "issue": "4",
+      "first_page": "393",
+      "last_page": "414",
+      "container": "Behavioral and Brain Sciences",
+      "bib_id": 30,
+      "year_suffix": "",
+      "text_id": 300
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.3758/s13415-018-00660-5",
+      "title": "Attributed social context and emotional content recruit frontal and limbic brain regions during virtual feedback processing",
+      "authors": "Schindler, S; Kruse, O; Stark, R; Kissler, J",
+      "editors": "",
+      "publisher": "",
+      "year": 2019,
+      "volume": "19",
+      "issue": "2",
+      "first_page": "239",
+      "last_page": "252",
+      "container": "Cognitive, Affective, & Behavioral Neuroscience",
+      "bib_id": 31,
+      "year_suffix": "",
+      "text_id": 301
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1093/scan/nsz075",
+      "title": "Attending to Eliza: Rapid brain responses reflect competence attribution in virtual social feedback processing",
+      "authors": "Schindler, S; Miller, G A; Kissler, J",
+      "editors": "",
+      "publisher": "",
+      "year": 2019,
+      "volume": "14",
+      "issue": "10",
+      "first_page": "1073",
+      "last_page": "1086",
+      "container": "Social Cognitive and Affective Neuroscience",
+      "bib_id": 32,
+      "year_suffix": "",
+      "text_id": 302
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.3389/fpsyg.2019.00094",
+      "title": "Emotion in context: How sender predictability and identity affect processing of words as imminent personality feedback",
+      "authors": "Schindler, S; Vormbrock, R; Kissler, J",
+      "editors": "",
+      "publisher": "",
+      "year": 2019,
+      "volume": "10",
+      "issue": "94",
+      "first_page": null,
+      "last_page": null,
+      "container": "Frontiers in Psychology",
+      "bib_id": 33,
+      "year_suffix": "",
+      "text_id": 303
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1523/JNEUROSCI.3346-14.2015",
+      "title": "Perceived communicative context and emotional content amplify visual word processing in the fusiform gyrus",
+      "authors": "Schindler, S; Wegrzyn, M; Steppacher, I; Kissler, J",
+      "editors": "",
+      "publisher": "",
+      "year": 2015,
+      "volume": "35",
+      "issue": "15",
+      "first_page": "6010",
+      "last_page": "6019",
+      "container": "The Journal of Neuroscience",
+      "bib_id": 34,
+      "year_suffix": "",
+      "text_id": 304
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1016/S0079-6123(06)56002-9",
+      "title": "Emotion and attention: Event-related brain potential studies",
+      "authors": "Schupp, H T; Flaisch, T; Stockburger, J; Junghofer, M",
+      "editors": "",
+      "publisher": "",
+      "year": 2006,
+      "volume": "156",
+      "issue": "",
+      "first_page": "31",
+      "last_page": "51",
+      "container": "Progress in Brain Research",
+      "bib_id": 35,
+      "year_suffix": "",
+      "text_id": 305
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1111/j.1469-8986.2004.00174.x",
+      "title": "The selective processing of briefly presented affective pictures: An ERP analysis",
+      "authors": "Schupp, H T; Junghöfer, M; Weike, A I; Hamm, A O",
+      "editors": "",
+      "publisher": "",
+      "year": 2004,
+      "volume": "41",
+      "issue": "",
+      "first_page": "441",
+      "last_page": "449",
+      "container": "Psychophysiology",
+      "bib_id": 36,
+      "year_suffix": "",
+      "text_id": 306
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1177/1745691619856350",
+      "title": "Real-life neuroscience: An ecological approach to brain and behavior research",
+      "authors": "Shamay-Tsoory, S G; Mendelsohn, A",
+      "editors": "",
+      "publisher": "",
+      "year": 2019,
+      "volume": "14",
+      "issue": "5",
+      "first_page": "841",
+      "last_page": "859",
+      "container": "Perspectives on Psychological Science",
+      "bib_id": 37,
+      "year_suffix": "",
+      "text_id": 307
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1016/j.tics.2015.11.002",
+      "title": "Forming beliefs: Why valence matters",
+      "authors": "Sharot, T; Garrett, N",
+      "editors": "",
+      "publisher": "",
+      "year": 2016,
+      "volume": "20",
+      "issue": "1",
+      "first_page": "25",
+      "last_page": "33",
+      "container": "Trends in Cognitive Sciences",
+      "bib_id": 38,
+      "year_suffix": "",
+      "text_id": 308
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "Symbolic interactionist view of self-concept: Through the looking glass darkly",
+      "authors": "Shrauger, J S; Schoeneman, T J",
+      "editors": "",
+      "publisher": "",
+      "year": 1979,
+      "volume": "86",
+      "issue": "3",
+      "first_page": "549",
+      "last_page": "573",
+      "container": "Psychological Bulletin",
+      "bib_id": 39,
+      "year_suffix": "",
+      "text_id": 309
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "Measuring anxiety and anger with the State-Trait Anxiety Inventory (STAI) and the State-Trait Anger Expression Inventory (STAXI)",
+      "authors": "Spielberger, C D; Sydeman, S J; Owen, A E; Marsh, B J",
+      "editors": "Maruish, M E",
+      "publisher": "Erlbaum",
+      "year": 1999,
+      "volume": "",
+      "issue": "",
+      "first_page": "993",
+      "last_page": "1021",
+      "container": "",
+      "bib_id": 40,
+      "year_suffix": "",
+      "text_id": 310
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1016/j.neuropsychologia.2014.01.009",
+      "title": "How social neuroscience can inform theories of social comparison",
+      "authors": "Swencionis, J K; Fiske, S T",
+      "editors": "",
+      "publisher": "",
+      "year": 2014,
+      "volume": "56",
+      "issue": "",
+      "first_page": "140",
+      "last_page": "146",
+      "container": "Neuropsychologia",
+      "bib_id": 41,
+      "year_suffix": "",
+      "text_id": 311
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1037/0033-2909.121.3.371",
+      "title": "The self-reference effect in memory: A meta-analysis",
+      "authors": "Symons, C S; Johnson, B T",
+      "editors": "",
+      "publisher": "",
+      "year": 1997,
+      "volume": "121",
+      "issue": "3",
+      "first_page": "371",
+      "last_page": "394",
+      "container": "Psychological Bulletin",
+      "bib_id": 42,
+      "year_suffix": "",
+      "text_id": 312
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1016/j.neuroimage.2016.08.045",
+      "title": "Why don't you like me? Midfrontal theta power in response to unexpected peer rejection feedback",
+      "authors": "Van Der Molen, M J W; Dekkers, L M S; Westenberg, P M; Van Der Veen, F M; Van Der Molen, M W",
+      "editors": "",
+      "publisher": "",
+      "year": 2017,
+      "volume": "146",
+      "issue": "",
+      "first_page": "474",
+      "last_page": "483",
+      "container": "NeuroImage",
+      "bib_id": 43,
+      "year_suffix": "",
+      "text_id": 313
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.3758/s13415-016-0435-2",
+      "title": "Thumbs up or thumbs down? Effects of neuroticism and depressive symptoms on psychophysiological responses to social evaluation in healthy students",
+      "authors": "Veen, F M; Van Der Molen, M J W; Van Der Molen, M W; Van Der Franken, I H A",
+      "editors": "",
+      "publisher": "",
+      "year": 2016,
+      "volume": "16",
+      "issue": "5",
+      "first_page": "836",
+      "last_page": "847",
+      "container": "Cognitive, Affective, & Behavioral Neuroscience",
+      "bib_id": 44,
+      "year_suffix": "",
+      "text_id": 314
+    }
+  ],
+  "xref": [
+    {
+      "xref_id": 0,
+      "xref_type": "bib",
+      "contents": "(Baess & Prinz, 2015;",
+      "text_id": 175
+    },
+    {
+      "xref_id": 1,
+      "xref_type": "bib",
+      "contents": "Bayer et al., 2017)",
+      "text_id": 3
+    },
+    {
+      "xref_id": 1,
+      "xref_type": "bib",
+      "contents": "Bayer et al., 2017)",
+      "text_id": 4
+    },
+    {
+      "xref_id": 1,
+      "xref_type": "bib",
+      "contents": "Bayer et al., 2017)",
+      "text_id": 5
+    },
+    {
+      "xref_id": 1,
+      "xref_type": "bib",
+      "contents": "Bayer et al., 2017)",
+      "text_id": 181
+    },
+    {
+      "xref_id": 2,
+      "xref_type": "bib",
+      "contents": "(Becker et al., 2014;",
+      "text_id": 11
+    },
+    {
+      "xref_id": 2,
+      "xref_type": "bib",
+      "contents": "(Becker et al., 2014;",
+      "text_id": 13
+    },
+    {
+      "xref_id": 2,
+      "xref_type": "bib",
+      "contents": "(Becker et al., 2014;",
+      "text_id": 187
+    },
+    {
+      "xref_id": 3,
+      "xref_type": "bib",
+      "contents": "(Behrens et al., 2008)",
+      "text_id": 9
+    },
+    {
+      "xref_id": 3,
+      "xref_type": "bib",
+      "contents": "(Behrens et al., 2008)",
+      "text_id": 10
+    },
+    {
+      "xref_id": 3,
+      "xref_type": "bib",
+      "contents": "(Behrens et al., 2008)",
+      "text_id": 16
+    },
+    {
+      "xref_id": 5,
+      "xref_type": "bib",
+      "contents": "Bradley & Lang, 1994)",
+      "text_id": 27
+    },
+    {
+      "xref_id": 6,
+      "xref_type": "bib",
+      "contents": "(Caruana et al., 2017;",
+      "text_id": 16
+    },
+    {
+      "xref_id": 7,
+      "xref_type": "bib",
+      "contents": "(Cohen, 1988)",
+      "text_id": 92
+    },
+    {
+      "xref_id": 8,
+      "xref_type": "bib",
+      "contents": "Falk & Scholz, 2018)",
+      "text_id": 1
+    },
+    {
+      "xref_id": 9,
+      "xref_type": "bib",
+      "contents": "Hajcak et al., 2010;",
+      "text_id": 7
+    },
+    {
+      "xref_id": 9,
+      "xref_type": "bib",
+      "contents": "Hajcak et al., 2010;",
+      "text_id": 197
+    },
+    {
+      "xref_id": 10,
+      "xref_type": "bib",
+      "contents": "( Hajcak et al., 2006)",
+      "text_id": 12
+    },
+    {
+      "xref_id": 11,
+      "xref_type": "bib",
+      "contents": "Harrewijn et al., 2018;",
+      "text_id": 4
+    },
+    {
+      "xref_id": 11,
+      "xref_type": "bib",
+      "contents": "(Harrewijn et al., 2018)",
+      "text_id": 176
+    },
+    {
+      "xref_id": 12,
+      "xref_type": "bib",
+      "contents": "(Hautzinger et al., 2009)",
+      "text_id": 47
+    },
+    {
+      "xref_id": 13,
+      "xref_type": "bib",
+      "contents": "Herbert et al., 2011)",
+      "text_id": 3
+    },
+    {
+      "xref_id": 13,
+      "xref_type": "bib",
+      "contents": "Herbert et al., 2011)",
+      "text_id": 196
+    },
+    {
+      "xref_id": 14,
+      "xref_type": "bib",
+      "contents": "(Hughes & Beer, 2012)",
+      "text_id": 201
+    },
+    {
+      "xref_id": 14,
+      "xref_type": "bib",
+      "contents": "(Hughes & Beer, 2012)",
+      "text_id": 202
+    },
+    {
+      "xref_id": 15,
+      "xref_type": "bib",
+      "contents": "(Ille et al., 2002)",
+      "text_id": 79
+    },
+    {
+      "xref_id": 16,
+      "xref_type": "bib",
+      "contents": "Kissler, 2020)",
+      "text_id": 8
+    },
+    {
+      "xref_id": 17,
+      "xref_type": "bib",
+      "contents": "Korn et al., 2012;",
+      "text_id": 5
+    },
+    {
+      "xref_id": 17,
+      "xref_type": "bib",
+      "contents": "Korn et al., 2012;",
+      "text_id": 186
+    },
+    {
+      "xref_id": 17,
+      "xref_type": "bib",
+      "contents": "Korn et al., 2012;",
+      "text_id": 198
+    },
+    {
+      "xref_id": 18,
+      "xref_type": "bib",
+      "contents": "Kujawa et al., 2014",
+      "text_id": 11
+    },
+    {
+      "xref_id": 18,
+      "xref_type": "bib",
+      "contents": "Kujawa et al., 2014",
+      "text_id": 14
+    },
+    {
+      "xref_id": 18,
+      "xref_type": "bib",
+      "contents": "(Kujawa et al., 2014;",
+      "text_id": 11
+    },
+    {
+      "xref_id": 18,
+      "xref_type": "bib",
+      "contents": "(Kujawa et al., 2014;",
+      "text_id": 14
+    },
+    {
+      "xref_id": 18,
+      "xref_type": "bib",
+      "contents": "Kujawa et al., 2014",
+      "text_id": 185
+    },
+    {
+      "xref_id": 19,
+      "xref_type": "bib",
+      "contents": "Kujawa et al., , 2017))",
+      "text_id": 185
+    },
+    {
+      "xref_id": 20,
+      "xref_type": "bib",
+      "contents": "(Kwang & Swann, 2010)",
+      "text_id": 210
+    },
+    {
+      "xref_id": 21,
+      "xref_type": "bib",
+      "contents": "Lieberman, 2007)",
+      "text_id": 199
+    },
+    {
+      "xref_id": 22,
+      "xref_type": "bib",
+      "contents": "(Luck & Gaspelin, 2017)",
+      "text_id": 94
+    },
+    {
+      "xref_id": 24,
+      "xref_type": "bib",
+      "contents": "(Osinsky et al., 2012;",
+      "text_id": 192
+    },
+    {
+      "xref_id": 25,
+      "xref_type": "bib",
+      "contents": "Peyk et al., 2011)",
+      "text_id": 75
+    },
+    {
+      "xref_id": 26,
+      "xref_type": "bib",
+      "contents": "Pfabigan et al., 2011;",
+      "text_id": 11
+    },
+    {
+      "xref_id": 26,
+      "xref_type": "bib",
+      "contents": "Pfabigan et al., 2011)",
+      "text_id": 190
+    },
+    {
+      "xref_id": 26,
+      "xref_type": "bib",
+      "contents": "Pfabigan et al., 2011)",
+      "text_id": 192
+    },
+    {
+      "xref_id": 27,
+      "xref_type": "bib",
+      "contents": "(Pfeiffer et al., 2014)",
+      "text_id": 193
+    },
+    {
+      "xref_id": 28,
+      "xref_type": "bib",
+      "contents": "(Proudfit, 2015)",
+      "text_id": 13
+    },
+    {
+      "xref_id": 28,
+      "xref_type": "bib",
+      "contents": "Proudfit, 2015)",
+      "text_id": 187
+    },
+    {
+      "xref_id": 29,
+      "xref_type": "bib",
+      "contents": "Rohr & Abdel Rahman, 2018;",
+      "text_id": 2
+    },
+    {
+      "xref_id": 30,
+      "xref_type": "bib",
+      "contents": "Schilbach et al., 2013)",
+      "text_id": 16
+    },
+    {
+      "xref_id": 31,
+      "xref_type": "bib",
+      "contents": "(Schindler, Kruse, et al., 2019)",
+      "text_id": 193
+    },
+    {
+      "xref_id": 31,
+      "xref_type": "bib",
+      "contents": "Schindler, Kruse, et al., 2019)",
+      "text_id": 200
+    },
+    {
+      "xref_id": 32,
+      "xref_type": "bib",
+      "contents": "Schindler, Miller, & Kissler, 2019)",
+      "text_id": 175
+    },
+    {
+      "xref_id": 32,
+      "xref_type": "bib",
+      "contents": "Schindler, Miller, & Kissler, 2019)",
+      "text_id": 196
+    },
+    {
+      "xref_id": 33,
+      "xref_type": "bib",
+      "contents": "Schindler, Vormbrock, & Kissler, 2019)",
+      "text_id": 4
+    },
+    {
+      "xref_id": 34,
+      "xref_type": "bib",
+      "contents": "Schindler et al., 2015)",
+      "text_id": 2
+    },
+    {
+      "xref_id": 34,
+      "xref_type": "bib",
+      "contents": "Schindler et al., 2015)",
+      "text_id": 3
+    },
+    {
+      "xref_id": 34,
+      "xref_type": "bib",
+      "contents": "Schindler et al., 2015)",
+      "text_id": 181
+    },
+    {
+      "xref_id": 35,
+      "xref_type": "bib",
+      "contents": "Schupp et al., 2006)",
+      "text_id": 7
+    },
+    {
+      "xref_id": 35,
+      "xref_type": "bib",
+      "contents": "Schupp et al., 2006)",
+      "text_id": 197
+    },
+    {
+      "xref_id": 36,
+      "xref_type": "bib",
+      "contents": "Schupp et al., 2004)",
+      "text_id": 182
+    },
+    {
+      "xref_id": 37,
+      "xref_type": "bib",
+      "contents": "(Shamay-Tsoory & Mendelsohn, 2019)",
+      "text_id": 16
+    },
+    {
+      "xref_id": 38,
+      "xref_type": "bib",
+      "contents": "Sharot & Garrett, 2016)",
+      "text_id": 5
+    },
+    {
+      "xref_id": 38,
+      "xref_type": "bib",
+      "contents": "Sharot & Garrett, 2016)",
+      "text_id": 186
+    },
+    {
+      "xref_id": 38,
+      "xref_type": "bib",
+      "contents": "Sharot & Garrett, 2016)",
+      "text_id": 198
+    },
+    {
+      "xref_id": 39,
+      "xref_type": "bib",
+      "contents": "(Shrauger & Schoeneman, 1979)",
+      "text_id": 9
+    },
+    {
+      "xref_id": 39,
+      "xref_type": "bib",
+      "contents": "(Shrauger & Schoeneman, 1979)",
+      "text_id": 179
+    },
+    {
+      "xref_id": 40,
+      "xref_type": "bib",
+      "contents": "( Spielberger et al., 1999)",
+      "text_id": 47
+    },
+    {
+      "xref_id": 41,
+      "xref_type": "bib",
+      "contents": "(Swencionis & Fiske, 2014)",
+      "text_id": 211
+    },
+    {
+      "xref_id": 42,
+      "xref_type": "bib",
+      "contents": "(Symons & Johnson, 1997)",
+      "text_id": 172
+    },
+    {
+      "xref_id": 43,
+      "xref_type": "bib",
+      "contents": "van der Molen et al., 2017;",
+      "text_id": 11
+    },
+    {
+      "xref_id": 43,
+      "xref_type": "bib",
+      "contents": "van der Molen et al., 2017;",
+      "text_id": 14
+    },
+    {
+      "xref_id": 43,
+      "xref_type": "bib",
+      "contents": "(van der Molen et al., 2017;",
+      "text_id": 185
+    },
+    {
+      "xref_id": 44,
+      "xref_type": "bib",
+      "contents": "Veen et al., 2016)",
+      "text_id": 11
+    },
+    {
+      "xref_id": 44,
+      "xref_type": "bib",
+      "contents": "Veen et al., 2016)",
+      "text_id": 14
+    },
+    {
+      "xref_id": 44,
+      "xref_type": "bib",
+      "contents": "Veen et al., 2016)",
+      "text_id": 185
+    },
+    {
+      "xref_id": null,
+      "xref_type": "bib",
+      "contents": "electroencephalogram (EEG)",
+      "text_id": 22
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "1a",
+      "text_id": 44
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "1a",
+      "text_id": 48
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "1b",
+      "text_id": 44
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "1b",
+      "text_id": 48
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "1c",
+      "text_id": 54
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "1c",
+      "text_id": 77
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "2",
+      "text_id": null
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "2",
+      "text_id": 118
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "2",
+      "text_id": null
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "2",
+      "text_id": null
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "3",
+      "text_id": 138
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "3",
+      "text_id": null
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "3",
+      "text_id": null
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "3",
+      "text_id": null
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "4",
+      "text_id": null
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "4",
+      "text_id": null
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "c",
+      "text_id": null
+    },
+    {
+      "xref_id": null,
+      "xref_type": "table",
+      "contents": "1",
+      "text_id": 41
+    },
+    {
+      "xref_id": null,
+      "xref_type": "table",
+      "contents": "2",
+      "text_id": 102
+    },
+    {
+      "xref_id": null,
+      "xref_type": "table",
+      "contents": "3",
+      "text_id": 105
+    },
+    {
+      "xref_id": null,
+      "xref_type": "table",
+      "contents": "3",
+      "text_id": 107
+    },
+    {
+      "xref_id": null,
+      "xref_type": "table",
+      "contents": "4",
+      "text_id": 109
+    },
+    {
+      "xref_id": null,
+      "xref_type": "table",
+      "contents": "4",
+      "text_id": null
+    },
+    {
+      "xref_id": null,
+      "xref_type": "table",
+      "contents": "4",
+      "text_id": 117
+    },
+    {
+      "xref_id": null,
+      "xref_type": "table",
+      "contents": "4",
+      "text_id": 118
+    },
+    {
+      "xref_id": null,
+      "xref_type": "table",
+      "contents": "4",
+      "text_id": null
+    },
+    {
+      "xref_id": null,
+      "xref_type": "table",
+      "contents": "4",
+      "text_id": 138
+    },
+    {
+      "xref_id": null,
+      "xref_type": "table",
+      "contents": "4",
+      "text_id": 139
+    },
+    {
+      "xref_id": null,
+      "xref_type": "table",
+      "contents": "4",
+      "text_id": null
+    },
+    {
+      "xref_id": null,
+      "xref_type": "table",
+      "contents": "4",
+      "text_id": null
+    },
+    {
+      "xref_id": null,
+      "xref_type": "table",
+      "contents": "4",
+      "text_id": null
+    },
+    {
+      "xref_id": null,
+      "xref_type": "table",
+      "contents": "5",
+      "text_id": 109
+    },
+    {
+      "xref_id": null,
+      "xref_type": "table",
+      "contents": "5",
+      "text_id": null
+    },
+    {
+      "xref_id": null,
+      "xref_type": "table",
+      "contents": "5",
+      "text_id": 117
+    },
+    {
+      "xref_id": null,
+      "xref_type": "table",
+      "contents": "5",
+      "text_id": 118
+    },
+    {
+      "xref_id": null,
+      "xref_type": "table",
+      "contents": "5",
+      "text_id": null
+    },
+    {
+      "xref_id": null,
+      "xref_type": "table",
+      "contents": "5",
+      "text_id": 138
+    },
+    {
+      "xref_id": null,
+      "xref_type": "table",
+      "contents": "5",
+      "text_id": 139
+    },
+    {
+      "xref_id": null,
+      "xref_type": "table",
+      "contents": "5",
+      "text_id": null
+    },
+    {
+      "xref_id": null,
+      "xref_type": "table",
+      "contents": "5",
+      "text_id": null
+    },
+    {
+      "xref_id": null,
+      "xref_type": "table",
+      "contents": "5",
+      "text_id": null
+    }
+  ],
+  "figure": [
+    {
+      "figure_id": 1,
+      "section_id": 28,
+      "image": null,
+      "page_number": null
+    },
+    {
+      "figure_id": 2,
+      "section_id": 29,
+      "image": null,
+      "page_number": null
+    },
+    {
+      "figure_id": 3,
+      "section_id": 30,
+      "image": null,
+      "page_number": null
+    },
+    {
+      "figure_id": 4,
+      "section_id": 31,
+      "image": null,
+      "page_number": null
+    }
+  ],
+  "table": [
+    {
+      "table_id": 1,
+      "section_id": 32,
+      "html": "<table>\n  <row>\n    <cell/>\n    <cell>Negative adjectives<\/cell>\n    <cell>Positive adjectives<\/cell>\n    <cell/>\n    <cell/>\n  <\/row>\n  <row>\n    <cell>Variable<\/cell>\n    <cell>(n = 60)<\/cell>\n    <cell>(n = 60)<\/cell>\n    <cell>t(118)<\/cell>\n    <cell>p<\/cell>\n  <\/row>\n  <row>\n    <cell>Valence<\/cell>\n    <cell>3.01 (0.58)<\/cell>\n    <cell>7.25 (0.62)<\/cell>\n    <cell>38.68<\/cell>\n    <cell>&lt; .001<\/cell>\n  <\/row>\n  <row>\n    <cell>Arousal<\/cell>\n    <cell>4.65 (0.71)<\/cell>\n    <cell>4.57 (0.71)<\/cell>\n    <cell>0.65<\/cell>\n    <cell>.515<\/cell>\n  <\/row>\n  <row>\n    <cell>Concreteness<\/cell>\n    <cell>3.13 (0.67)<\/cell>\n    <cell>2.98 (1.03)<\/cell>\n    <cell>0.97<\/cell>\n    <cell>.334<\/cell>\n  <\/row>\n  <row>\n    <cell>Word length<\/cell>\n    <cell>8.95 (2.68)<\/cell>\n    <cell>9.12 (2.98)<\/cell>\n    <cell>0.34<\/cell>\n    <cell>.731<\/cell>\n  <\/row>\n  <row>\n    <cell>Word frequency (per million)<\/cell>\n    <cell>465.23 (728.19)<\/cell>\n    <cell>471.88 (783.92)<\/cell>\n    <cell>0.05<\/cell>\n    <cell>.962<\/cell>\n  <\/row>\n  <row>\n    <cell>Familiarity (absolute)<\/cell>\n    <cell>16,229.55 (32,065.90)<\/cell>\n    <cell>19,923.33 (42,684.62)<\/cell>\n    <cell>0.54<\/cell>\n    <cell>.593<\/cell>\n  <\/row>\n  <row>\n    <cell>Regularity (absolute)<\/cell>\n    <cell>212.90 (398.68)<\/cell>\n    <cell>292.72 (447.57)<\/cell>\n    <cell>1.03<\/cell>\n    <cell>.304<\/cell>\n  <\/row>\n  <row>\n    <cell>Initial trigram frequency (absolute)<\/cell>\n    <cell>264,114.77 (508,249.74)<\/cell>\n    <cell>237,740.53 (429,313.24)<\/cell>\n    <cell>0.31<\/cell>\n    <cell>.759<\/cell>\n  <\/row>\n  <row>\n    <cell>Coltheart's neighborhood density<\/cell>\n    <cell>2,780.72 (18,325.83)<\/cell>\n    <cell>2,678.58 (12,709.54)<\/cell>\n    <cell>0.04<\/cell>\n    <cell>.972<\/cell>\n  <\/row>\n  <row>\n    <cell>(cumulative frequency)<\/cell>\n    <cell/>\n    <cell/>\n    <cell/>\n    <cell/>\n  <\/row>\n  <row>\n    <cell cols=\"2\">Note: Standard deviations are given in parentheses.<\/cell>\n    <cell/>\n    <cell/>\n    <cell/>\n  <\/row>\n<\/table>",
+      "contents": null,
+      "page_number": null
+    },
+    {
+      "table_id": 2,
+      "section_id": 33,
+      "html": "<table>\n  <row>\n    <cell/>\n    <cell/>\n    <cell>Self-related<\/cell>\n    <cell/>\n    <cell/>\n    <cell>Other-related<\/cell>\n    <cell/>\n  <\/row>\n  <row>\n    <cell/>\n    <cell>Incongruent<\/cell>\n    <cell/>\n    <cell>Incongruent<\/cell>\n    <cell>Incongruent<\/cell>\n    <cell/>\n    <cell>Incongruent<\/cell>\n  <\/row>\n  <row>\n    <cell>Rating<\/cell>\n    <cell>negative<\/cell>\n    <cell>Congruent<\/cell>\n    <cell>positive<\/cell>\n    <cell>negative<\/cell>\n    <cell>Congruent<\/cell>\n    <cell>positive<\/cell>\n  <\/row>\n  <row>\n    <cell>Absolute evaluation<\/cell>\n    <cell>43.87<\/cell>\n    <cell>33.34<\/cell>\n    <cell>42.70<\/cell>\n    <cell>43.00<\/cell>\n    <cell>33.00<\/cell>\n    <cell>43.91<\/cell>\n  <\/row>\n  <row>\n    <cell/>\n    <cell>(17.14)<\/cell>\n    <cell>(7.46)<\/cell>\n    <cell>(17.57)<\/cell>\n    <cell>(17.84)<\/cell>\n    <cell>(7.57)<\/cell>\n    <cell>(17.54)<\/cell>\n  <\/row>\n<\/table>",
+      "contents": null,
+      "page_number": null
+    },
+    {
+      "table_id": 3,
+      "section_id": 34,
+      "html": "<table>\n  <row>\n    <cell>Time and variable<\/cell>\n    <cell>M<\/cell>\n    <cell>One-sample t test<\/cell>\n    <cell>p<\/cell>\n  <\/row>\n  <row>\n    <cell>Before receiving evaluations (Time 1)<\/cell>\n    <cell/>\n    <cell/>\n    <cell/>\n  <\/row>\n  <row>\n    <cell>Sympathy<\/cell>\n    <cell>4.42 a (0.58)<\/cell>\n    <cell>16.35 a<\/cell>\n    <cell>&lt; .001<\/cell>\n  <\/row>\n  <row>\n    <cell>Honesty<\/cell>\n    <cell>4.60 a (0.58)<\/cell>\n    <cell>18.51 a<\/cell>\n    <cell>&lt; .001<\/cell>\n  <\/row>\n  <row>\n    <cell>Valence<\/cell>\n    <cell>3.25 a (0.82)<\/cell>\n    <cell>2.29 a<\/cell>\n    <cell>.027<\/cell>\n  <\/row>\n  <row>\n    <cell>After receiving evaluations (Time 2)<\/cell>\n    <cell/>\n    <cell/>\n    <cell/>\n  <\/row>\n  <row>\n    <cell>Correctness<\/cell>\n    <cell>4.28 b (0.59)<\/cell>\n    <cell>14.70 b<\/cell>\n    <cell>&lt; .001<\/cell>\n  <\/row>\n  <row>\n    <cell>Motivation<\/cell>\n    <cell>4.56 b (0.63)<\/cell>\n    <cell>17.04 b<\/cell>\n    <cell>&lt; .001<\/cell>\n  <\/row>\n  <row>\n    <cell>Valence<\/cell>\n    <cell>3.74 b (0.79)<\/cell>\n    <cell>6.18 b<\/cell>\n    <cell>&lt; .001<\/cell>\n  <\/row>\n<\/table>",
+      "contents": null,
+      "page_number": null
+    },
+    {
+      "table_id": 4,
+      "section_id": 35,
+      "html": "<table>\n  <row>\n    <cell/>\n    <cell/>\n    <cell>Self-related<\/cell>\n    <cell/>\n    <cell/>\n    <cell>Other-related<\/cell>\n    <cell/>\n  <\/row>\n  <row>\n    <cell>Component<\/cell>\n    <cell>More negative<\/cell>\n    <cell>Congruent<\/cell>\n    <cell>More positive<\/cell>\n    <cell>More negative<\/cell>\n    <cell>Congruent<\/cell>\n    <cell>More positive<\/cell>\n  <\/row>\n  <row>\n    <cell>P1<\/cell>\n    <cell>1.68 (4.09)<\/cell>\n    <cell>1.51 (4.13)<\/cell>\n    <cell>1.42 (3.71)<\/cell>\n    <cell>1.43 (3.94)<\/cell>\n    <cell>1.65 (3.79)<\/cell>\n    <cell>1.39 (3.72)<\/cell>\n  <\/row>\n  <row>\n    <cell>N1<\/cell>\n    <cell>-1.35 (1.99)<\/cell>\n    <cell>-0.93 (1.95)<\/cell>\n    <cell>-1.23 (1.99)<\/cell>\n    <cell>-0.90 (1.91)<\/cell>\n    <cell>-1.05 (2.01)<\/cell>\n    <cell>-1.16 (2.03)<\/cell>\n  <\/row>\n  <row>\n    <cell>EPN<\/cell>\n    <cell>-2.40 (2.37)<\/cell>\n    <cell>-1.79 (2.58)<\/cell>\n    <cell>-2.46 (2.62)<\/cell>\n    <cell>-1.79 (2.38)<\/cell>\n    <cell>-1.85 (2.46)<\/cell>\n    <cell>-2.03 (2.48)<\/cell>\n  <\/row>\n  <row>\n    <cell>FRN<\/cell>\n    <cell>0.28 (1.96)<\/cell>\n    <cell>0.08 (2.19)<\/cell>\n    <cell>0.56 (2.09)<\/cell>\n    <cell>0.10 (2.16)<\/cell>\n    <cell>0.07 (2.02)<\/cell>\n    <cell>0.07 (2.02)<\/cell>\n  <\/row>\n  <row>\n    <cell>Feedback P3<\/cell>\n    <cell>1.28 (2.39)<\/cell>\n    <cell>1.22 (2.42)<\/cell>\n    <cell>1.65 (2.39)<\/cell>\n    <cell>0.96 (2.11)<\/cell>\n    <cell>1.14 (2.12)<\/cell>\n    <cell>0.87 (2.21)<\/cell>\n  <\/row>\n  <row>\n    <cell>LPP<\/cell>\n    <cell>2.15 (1.51)<\/cell>\n    <cell>1.79 (1.32)<\/cell>\n    <cell>2.40 (1.53)<\/cell>\n    <cell>1.76 (1.29)<\/cell>\n    <cell>1.76 (1.30)<\/cell>\n    <cell>1.85 (1.46)<\/cell>\n  <\/row>\n  <row>\n    <cell cols=\"7\">Note: Standard deviations are given in parentheses. EPN = early posterior negativity; FRN = feedback-related negativity; LPP = late<\/cell>\n  <\/row>\n  <row>\n    <cell>positive potential.<\/cell>\n    <cell/>\n    <cell/>\n    <cell/>\n    <cell/>\n    <cell/>\n    <cell/>\n  <\/row>\n<\/table>",
+      "contents": null,
+      "page_number": null
+    },
+    {
+      "table_id": 5,
+      "section_id": 36,
+      "html": "<table>\n  <row>\n    <cell/>\n    <cell cols=\"3\">Main effect of reference<\/cell>\n    <cell cols=\"3\">Main effect of congruency<\/cell>\n    <cell cols=\"2\">Interaction effect<\/cell>\n    <cell/>\n  <\/row>\n  <row>\n    <cell>Component<\/cell>\n    <cell>F(1, 39)<\/cell>\n    <cell>p<\/cell>\n    <cell>η p ²<\/cell>\n    <cell>F(1, 39)<\/cell>\n    <cell>p<\/cell>\n    <cell>η p ²<\/cell>\n    <cell>F(2, 90)<\/cell>\n    <cell>p<\/cell>\n    <cell>η p ²<\/cell>\n  <\/row>\n  <row>\n    <cell>P1<\/cell>\n    <cell>0.17<\/cell>\n    <cell>.685<\/cell>\n    <cell>.004<\/cell>\n    <cell>1.21<\/cell>\n    <cell>.302<\/cell>\n    <cell>.026<\/cell>\n    <cell>1.11<\/cell>\n    <cell>.336<\/cell>\n    <cell>.024<\/cell>\n  <\/row>\n  <row>\n    <cell>N1<\/cell>\n    <cell>2.13<\/cell>\n    <cell>.151<\/cell>\n    <cell>.045<\/cell>\n    <cell>1.91<\/cell>\n    <cell>.155<\/cell>\n    <cell>.041<\/cell>\n    <cell>4.49<\/cell>\n    <cell>.014<\/cell>\n    <cell>.091<\/cell>\n  <\/row>\n  <row>\n    <cell>EPN<\/cell>\n    <cell>12.29<\/cell>\n    <cell>.001<\/cell>\n    <cell>.214<\/cell>\n    <cell>4.78<\/cell>\n    <cell>.011<\/cell>\n    <cell>.096<\/cell>\n    <cell>4.99<\/cell>\n    <cell>.009<\/cell>\n    <cell>.100<\/cell>\n  <\/row>\n  <row>\n    <cell>FRN<\/cell>\n    <cell>5.55<\/cell>\n    <cell>.023<\/cell>\n    <cell>.110<\/cell>\n    <cell>.193<\/cell>\n    <cell>.151<\/cell>\n    <cell>.041<\/cell>\n    <cell>2.14<\/cell>\n    <cell>.124<\/cell>\n    <cell>.045<\/cell>\n  <\/row>\n  <row>\n    <cell>Feedback P3<\/cell>\n    <cell>8.45<\/cell>\n    <cell>.006<\/cell>\n    <cell>.158<\/cell>\n    <cell>0.41<\/cell>\n    <cell>.663<\/cell>\n    <cell>.009<\/cell>\n    <cell>4.53<\/cell>\n    <cell>.013<\/cell>\n    <cell>.091<\/cell>\n  <\/row>\n  <row>\n    <cell>LPP<\/cell>\n    <cell>12.75<\/cell>\n    <cell>.001<\/cell>\n    <cell>.221<\/cell>\n    <cell>4.93<\/cell>\n    <cell>.009<\/cell>\n    <cell>.099<\/cell>\n    <cell>3.48<\/cell>\n    <cell>.035<\/cell>\n    <cell>.072<\/cell>\n  <\/row>\n<\/table>",
+      "contents": null,
+      "page_number": null
+    }
+  ],
+  "eq": [
+    {
+      "text_id": 24,
+      "grp_id": 1,
+      "lhs": "N",
+      "comp": "=",
+      "rhs": "46"
+    },
+    {
+      "text_id": 25,
+      "grp_id": 2,
+      "lhs": "SD",
+      "comp": "=",
+      "rhs": "3.45"
+    },
+    {
+      "text_id": 82,
+      "grp_id": 3,
+      "lhs": "SD",
+      "comp": "=",
+      "rhs": "1.77"
+    },
+    {
+      "text_id": 83,
+      "grp_id": 4,
+      "lhs": "F(1, 45)",
+      "comp": "=",
+      "rhs": "0.02"
+    },
+    {
+      "text_id": 83,
+      "grp_id": 4,
+      "lhs": "p",
+      "comp": "=",
+      "rhs": ".874"
+    },
+    {
+      "text_id": 84,
+      "grp_id": 5,
+      "lhs": "F(1.43, 64.53)",
+      "comp": "=",
+      "rhs": "7.27"
+    },
+    {
+      "text_id": 84,
+      "grp_id": 5,
+      "lhs": "p",
+      "comp": "=",
+      "rhs": ".004"
+    },
+    {
+      "text_id": 85,
+      "grp_id": 6,
+      "lhs": "F(1.30, 58.53)",
+      "comp": "=",
+      "rhs": "0.53"
+    },
+    {
+      "text_id": 85,
+      "grp_id": 6,
+      "lhs": "p",
+      "comp": "=",
+      "rhs": ".515"
+    },
+    {
+      "text_id": 87,
+      "grp_id": 7,
+      "lhs": "p",
+      "comp": "=",
+      "rhs": ".865"
+    },
+    {
+      "text_id": 102,
+      "grp_id": 8,
+      "lhs": "F(1, 45)",
+      "comp": "=",
+      "rhs": "0.00"
+    },
+    {
+      "text_id": 102,
+      "grp_id": 8,
+      "lhs": "p",
+      "comp": "=",
+      "rhs": "1.0"
+    },
+    {
+      "text_id": 102,
+      "grp_id": 8,
+      "lhs": "F(1.29, 58.16)",
+      "comp": "=",
+      "rhs": "7.35"
+    },
+    {
+      "text_id": 102,
+      "grp_id": 8,
+      "lhs": "p",
+      "comp": "=",
+      "rhs": ".005"
+    },
+    {
+      "text_id": 102,
+      "grp_id": 8,
+      "lhs": "ps",
+      "comp": "<",
+      "rhs": ".001"
+    },
+    {
+      "text_id": 103,
+      "grp_id": 9,
+      "lhs": "p",
+      "comp": "=",
+      "rhs": ".974"
+    },
+    {
+      "text_id": 104,
+      "grp_id": 10,
+      "lhs": "F(1.26, 56.65)",
+      "comp": "=",
+      "rhs": "0.12"
+    },
+    {
+      "text_id": 104,
+      "grp_id": 10,
+      "lhs": "p",
+      "comp": "=",
+      "rhs": ".794"
+    },
+    {
+      "text_id": 111,
+      "grp_id": 11,
+      "lhs": "F(1, 45)",
+      "comp": "=",
+      "rhs": "14.32"
+    },
+    {
+      "text_id": 111,
+      "grp_id": 11,
+      "lhs": "p",
+      "comp": "<",
+      "rhs": ".001"
+    },
+    {
+      "text_id": 111,
+      "grp_id": 11,
+      "lhs": "M",
+      "comp": "=",
+      "rhs": "-1.76"
+    },
+    {
+      "text_id": 111,
+      "grp_id": 11,
+      "lhs": "SD",
+      "comp": "=",
+      "rhs": "1.93"
+    },
+    {
+      "text_id": 111,
+      "grp_id": 11,
+      "lhs": "M",
+      "comp": "=",
+      "rhs": "-0.45"
+    },
+    {
+      "text_id": 111,
+      "grp_id": 11,
+      "lhs": "SD",
+      "comp": "=",
+      "rhs": "2.46"
+    },
+    {
+      "text_id": 114,
+      "grp_id": 12,
+      "lhs": "p",
+      "comp": "=",
+      "rhs": ".006"
+    },
+    {
+      "text_id": 114,
+      "grp_id": 12,
+      "lhs": "p",
+      "comp": "=",
+      "rhs": ".058"
+    },
+    {
+      "text_id": 115,
+      "grp_id": 13,
+      "lhs": "p",
+      "comp": "=",
+      "rhs": ".359"
+    },
+    {
+      "text_id": 119,
+      "grp_id": 14,
+      "lhs": "M",
+      "comp": "=",
+      "rhs": "-2.21"
+    },
+    {
+      "text_id": 119,
+      "grp_id": 14,
+      "lhs": "SD",
+      "comp": "=",
+      "rhs": "2.44"
+    },
+    {
+      "text_id": 119,
+      "grp_id": 14,
+      "lhs": "M",
+      "comp": "=",
+      "rhs": "-1.89"
+    },
+    {
+      "text_id": 119,
+      "grp_id": 14,
+      "lhs": "SD",
+      "comp": "=",
+      "rhs": "2.33"
+    },
+    {
+      "text_id": 120,
+      "grp_id": 15,
+      "lhs": "M",
+      "comp": "=",
+      "rhs": "-2.09"
+    },
+    {
+      "text_id": 120,
+      "grp_id": 15,
+      "lhs": "SD",
+      "comp": "=",
+      "rhs": "2.29"
+    },
+    {
+      "text_id": 120,
+      "grp_id": 15,
+      "lhs": "M",
+      "comp": "=",
+      "rhs": "-1.82"
+    },
+    {
+      "text_id": 120,
+      "grp_id": 15,
+      "lhs": "SD",
+      "comp": "=",
+      "rhs": "2.48"
+    },
+    {
+      "text_id": 120,
+      "grp_id": 15,
+      "lhs": "M",
+      "comp": "=",
+      "rhs": "-2.25"
+    },
+    {
+      "text_id": 120,
+      "grp_id": 15,
+      "lhs": "SD",
+      "comp": "=",
+      "rhs": "2.51"
+    },
+    {
+      "text_id": 120,
+      "grp_id": 15,
+      "lhs": "p",
+      "comp": "=",
+      "rhs": ".004"
+    },
+    {
+      "text_id": 120,
+      "grp_id": 15,
+      "lhs": "p",
+      "comp": "=",
+      "rhs": ".077"
+    },
+    {
+      "text_id": 121,
+      "grp_id": 16,
+      "lhs": "p",
+      "comp": "=",
+      "rhs": ".230"
+    },
+    {
+      "text_id": 122,
+      "grp_id": 17,
+      "lhs": "F(1, 45)",
+      "comp": "<",
+      "rhs": "0.01"
+    },
+    {
+      "text_id": 122,
+      "grp_id": 17,
+      "lhs": "p",
+      "comp": "=",
+      "rhs": ".960"
+    },
+    {
+      "text_id": 125,
+      "grp_id": 18,
+      "lhs": "p",
+      "comp": "<",
+      "rhs": ".001"
+    },
+    {
+      "text_id": 125,
+      "grp_id": 18,
+      "lhs": "p",
+      "comp": "=",
+      "rhs": ".002"
+    },
+    {
+      "text_id": 126,
+      "grp_id": 19,
+      "lhs": "p",
+      "comp": "=",
+      "rhs": ".655"
+    },
+    {
+      "text_id": 128,
+      "grp_id": 20,
+      "lhs": "F(2, 90)",
+      "comp": "=",
+      "rhs": "4.24"
+    },
+    {
+      "text_id": 128,
+      "grp_id": 20,
+      "lhs": "p",
+      "comp": "=",
+      "rhs": ".017"
+    },
+    {
+      "text_id": 128,
+      "grp_id": 20,
+      "lhs": "F(1, 45)",
+      "comp": "=",
+      "rhs": "5.60"
+    },
+    {
+      "text_id": 128,
+      "grp_id": 20,
+      "lhs": "p",
+      "comp": "=",
+      "rhs": ".022"
+    },
+    {
+      "text_id": 129,
+      "grp_id": 21,
+      "lhs": "F(1, 45)",
+      "comp": "=",
+      "rhs": "2.37"
+    },
+    {
+      "text_id": 129,
+      "grp_id": 21,
+      "lhs": "p",
+      "comp": "=",
+      "rhs": ".131"
+    },
+    {
+      "text_id": 129,
+      "grp_id": 21,
+      "lhs": "F(2, 90)",
+      "comp": "=",
+      "rhs": "0.99"
+    },
+    {
+      "text_id": 129,
+      "grp_id": 21,
+      "lhs": "p",
+      "comp": "=",
+      "rhs": ".377"
+    },
+    {
+      "text_id": 129,
+      "grp_id": 21,
+      "lhs": "F(1, 45)",
+      "comp": "=",
+      "rhs": "17.86"
+    },
+    {
+      "text_id": 129,
+      "grp_id": 21,
+      "lhs": "p",
+      "comp": "<",
+      "rhs": ".001"
+    },
+    {
+      "text_id": 129,
+      "grp_id": 21,
+      "lhs": "F(2, 90)",
+      "comp": "=",
+      "rhs": "9.21"
+    },
+    {
+      "text_id": 129,
+      "grp_id": 21,
+      "lhs": "p",
+      "comp": "<",
+      "rhs": ".001"
+    },
+    {
+      "text_id": 131,
+      "grp_id": 22,
+      "lhs": "F(2, 90)",
+      "comp": "=",
+      "rhs": "1.63"
+    },
+    {
+      "text_id": 131,
+      "grp_id": 22,
+      "lhs": "p",
+      "comp": "=",
+      "rhs": ".201"
+    },
+    {
+      "text_id": 133,
+      "grp_id": 23,
+      "lhs": "F(1, 45)",
+      "comp": "=",
+      "rhs": "7.75"
+    },
+    {
+      "text_id": 133,
+      "grp_id": 23,
+      "lhs": "p",
+      "comp": "=",
+      "rhs": ".008"
+    },
+    {
+      "text_id": 134,
+      "grp_id": 24,
+      "lhs": "F(2, 90)",
+      "comp": "=",
+      "rhs": "6.26"
+    },
+    {
+      "text_id": 134,
+      "grp_id": 24,
+      "lhs": "p",
+      "comp": "=",
+      "rhs": ".003"
+    },
+    {
+      "text_id": 134,
+      "grp_id": 24,
+      "lhs": "p",
+      "comp": "=",
+      "rhs": ".02"
+    },
+    {
+      "text_id": 134,
+      "grp_id": 24,
+      "lhs": "p",
+      "comp": "=",
+      "rhs": ".001"
+    },
+    {
+      "text_id": 135,
+      "grp_id": 25,
+      "lhs": "F(2, 90)",
+      "comp": "=",
+      "rhs": "5.42"
+    },
+    {
+      "text_id": 135,
+      "grp_id": 25,
+      "lhs": "p",
+      "comp": "=",
+      "rhs": ".006"
+    },
+    {
+      "text_id": 138,
+      "grp_id": 26,
+      "lhs": "M",
+      "comp": "=",
+      "rhs": "0.31"
+    },
+    {
+      "text_id": 138,
+      "grp_id": 26,
+      "lhs": "SD",
+      "comp": "=",
+      "rhs": "1.99"
+    },
+    {
+      "text_id": 138,
+      "grp_id": 26,
+      "lhs": "M",
+      "comp": "=",
+      "rhs": "0.08"
+    },
+    {
+      "text_id": 138,
+      "grp_id": 26,
+      "lhs": "SD",
+      "comp": "=",
+      "rhs": "1.95"
+    },
+    {
+      "text_id": 140,
+      "grp_id": 27,
+      "lhs": "p",
+      "comp": "=",
+      "rhs": ".011"
+    },
+    {
+      "text_id": 140,
+      "grp_id": 27,
+      "lhs": "p",
+      "comp": "=",
+      "rhs": ".042"
+    },
+    {
+      "text_id": 140,
+      "grp_id": 27,
+      "lhs": "p",
+      "comp": "=",
+      "rhs": ".903"
+    },
+    {
+      "text_id": 143,
+      "grp_id": 28,
+      "lhs": "M",
+      "comp": "=",
+      "rhs": "1.38"
+    },
+    {
+      "text_id": 143,
+      "grp_id": 28,
+      "lhs": "SD",
+      "comp": "=",
+      "rhs": "2.28"
+    },
+    {
+      "text_id": 143,
+      "grp_id": 28,
+      "lhs": "M",
+      "comp": "=",
+      "rhs": "0.99"
+    },
+    {
+      "text_id": 143,
+      "grp_id": 28,
+      "lhs": "SD",
+      "comp": "=",
+      "rhs": "2.01"
+    },
+    {
+      "text_id": 147,
+      "grp_id": 29,
+      "lhs": "p",
+      "comp": "=",
+      "rhs": ".035"
+    },
+    {
+      "text_id": 147,
+      "grp_id": 29,
+      "lhs": "p",
+      "comp": "=",
+      "rhs": ".040"
+    },
+    {
+      "text_id": 147,
+      "grp_id": 29,
+      "lhs": "p",
+      "comp": "=",
+      "rhs": ".767"
+    },
+    {
+      "text_id": 152,
+      "grp_id": 30,
+      "lhs": "M",
+      "comp": "=",
+      "rhs": "2.11"
+    },
+    {
+      "text_id": 152,
+      "grp_id": 30,
+      "lhs": "SD",
+      "comp": "=",
+      "rhs": "1.32"
+    },
+    {
+      "text_id": 152,
+      "grp_id": 30,
+      "lhs": "M",
+      "comp": "=",
+      "rhs": "1.78"
+    },
+    {
+      "text_id": 152,
+      "grp_id": 30,
+      "lhs": "SD",
+      "comp": "=",
+      "rhs": "1.29"
+    },
+    {
+      "text_id": 152,
+      "grp_id": 30,
+      "lhs": "p",
+      "comp": "=",
+      "rhs": ".003"
+    },
+    {
+      "text_id": 152,
+      "grp_id": 30,
+      "lhs": "p",
+      "comp": "=",
+      "rhs": ".085"
+    },
+    {
+      "text_id": 152,
+      "grp_id": 30,
+      "lhs": "M",
+      "comp": "=",
+      "rhs": "1.94"
+    },
+    {
+      "text_id": 152,
+      "grp_id": 30,
+      "lhs": "SD",
+      "comp": "=",
+      "rhs": "1.40"
+    },
+    {
+      "text_id": 152,
+      "grp_id": 30,
+      "lhs": "M",
+      "comp": "=",
+      "rhs": "1.78"
+    },
+    {
+      "text_id": 152,
+      "grp_id": 30,
+      "lhs": "SD",
+      "comp": "=",
+      "rhs": "1.21"
+    },
+    {
+      "text_id": 152,
+      "grp_id": 30,
+      "lhs": "M",
+      "comp": "=",
+      "rhs": "2.12"
+    },
+    {
+      "text_id": 152,
+      "grp_id": 30,
+      "lhs": "SD",
+      "comp": "=",
+      "rhs": "1.40"
+    },
+    {
+      "text_id": 153,
+      "grp_id": 31,
+      "lhs": "p",
+      "comp": "=",
+      "rhs": ".165"
+    },
+    {
+      "text_id": 156,
+      "grp_id": 32,
+      "lhs": "p",
+      "comp": "<",
+      "rhs": ".001"
+    },
+    {
+      "text_id": 156,
+      "grp_id": 32,
+      "lhs": "p",
+      "comp": "=",
+      "rhs": ".034"
+    },
+    {
+      "text_id": 156,
+      "grp_id": 32,
+      "lhs": "p",
+      "comp": "=",
+      "rhs": ".094"
+    },
+    {
+      "text_id": 162,
+      "grp_id": 33,
+      "lhs": "r",
+      "comp": "=",
+      "rhs": ".140"
+    },
+    {
+      "text_id": 162,
+      "grp_id": 33,
+      "lhs": "p",
+      "comp": "=",
+      "rhs": ".352"
+    },
+    {
+      "text_id": 162,
+      "grp_id": 33,
+      "lhs": "N",
+      "comp": "=",
+      "rhs": "46"
+    },
+    {
+      "text_id": 162,
+      "grp_id": 33,
+      "lhs": "r",
+      "comp": "=",
+      "rhs": "-.302"
+    },
+    {
+      "text_id": 162,
+      "grp_id": 33,
+      "lhs": "p",
+      "comp": "=",
+      "rhs": ".041"
+    },
+    {
+      "text_id": 162,
+      "grp_id": 33,
+      "lhs": "N",
+      "comp": "=",
+      "rhs": "46"
+    },
+    {
+      "text_id": 86,
+      "grp_id": 34,
+      "lhs": "ps",
+      "comp": "<",
+      "rhs": ".001"
+    },
+    {
+      "text_id": 117,
+      "grp_id": 35,
+      "lhs": "Fs",
+      "comp": "<",
+      "rhs": "2.98"
+    },
+    {
+      "text_id": 117,
+      "grp_id": 35,
+      "lhs": "ps",
+      "comp": ">",
+      "rhs": ".091"
+    },
+    {
+      "text_id": 136,
+      "grp_id": 36,
+      "lhs": "p",
+      "comp": "<",
+      "rhs": ".001"
+    },
+    {
+      "text_id": 136,
+      "grp_id": 36,
+      "lhs": "p",
+      "comp": "<",
+      "rhs": ".001"
+    },
+    {
+      "text_id": 116,
+      "grp_id": 37,
+      "lhs": "ps",
+      "comp": ">",
+      "rhs": ".089"
+    },
+    {
+      "text_id": 127,
+      "grp_id": 38,
+      "lhs": "ps",
+      "comp": ">",
+      "rhs": ".210"
+    },
+    {
+      "text_id": 137,
+      "grp_id": 39,
+      "lhs": "ps",
+      "comp": ">",
+      "rhs": ".171"
+    },
+    {
+      "text_id": 141,
+      "grp_id": 40,
+      "lhs": "ps",
+      "comp": ">",
+      "rhs": ".873"
+    },
+    {
+      "text_id": 148,
+      "grp_id": 41,
+      "lhs": "ps",
+      "comp": ">",
+      "rhs": ".127"
+    },
+    {
+      "text_id": 157,
+      "grp_id": 42,
+      "lhs": "ps",
+      "comp": ">",
+      "rhs": ".436"
+    }
+  ]
+}

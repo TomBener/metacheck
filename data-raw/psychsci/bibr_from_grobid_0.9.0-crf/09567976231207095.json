@@ -1,0 +1,5742 @@
+{
+  "paper_id": "09567976231207095",
+  "info": [
+    {
+      "title": "AI Hyperrealism: Why AI Faces Are Perceived as More Real Than Human Ones",
+      "keywords": ["artificial intelligence", "face perception", "face-space theory", "generative adversarial network", "StyleGAN2", "open data", "open materials"],
+      "doi": "10.1177/09567976231207095",
+      "file_hash": "a4fc584dd9299c58",
+      "input_format": "TEI XML",
+      "file_name": "data-raw/psychsci/grobid_0.9.0-crf/09567976231207095.xml",
+      "bibr_version": "10.0",
+      "paper_type": "unknown",
+      "paper_type_confidence": 0,
+      "oecd_l1": null,
+      "oecd_l2": null,
+      "oecd_confidence": null
+    }
+  ],
+  "author": [
+    {
+      "author_id": 1,
+      "given": "Amy",
+      "family": "Dawel",
+      "affiliation": "School of Medicine and Psychology Australian National University",
+      "email": "amy.dawel@anu.edu.au",
+      "corresponding": false,
+      "orcid": "",
+      "role": []
+    },
+    {
+      "author_id": 2,
+      "given": "Elizabeth",
+      "family": "Miller",
+      "affiliation": "School of Medicine and Psychology Australian National University",
+      "email": "",
+      "corresponding": false,
+      "orcid": "",
+      "role": []
+    },
+    {
+      "author_id": 3,
+      "given": "Ben",
+      "family": "Steward",
+      "affiliation": "School of Medicine and Psychology Australian National University",
+      "email": "",
+      "corresponding": false,
+      "orcid": "",
+      "role": []
+    },
+    {
+      "author_id": 4,
+      "given": "Zak",
+      "family": "Witkower",
+      "affiliation": "Department of Psychology University of Toronto",
+      "email": "",
+      "corresponding": false,
+      "orcid": "",
+      "role": []
+    },
+    {
+      "author_id": 5,
+      "given": "Clare",
+      "family": "Sutherland",
+      "affiliation": "School of Psychology King's College University of Aberdeen",
+      "email": "",
+      "corresponding": false,
+      "orcid": "",
+      "role": []
+    },
+    {
+      "author_id": 6,
+      "given": "Eva",
+      "family": "Krumhuber",
+      "affiliation": "Department of Experimental Psychology University College London",
+      "email": "",
+      "corresponding": false,
+      "orcid": "",
+      "role": []
+    },
+    {
+      "author_id": 7,
+      "given": "Eva",
+      "family": "Krumhub",
+      "affiliation": "",
+      "email": "",
+      "corresponding": false,
+      "orcid": "0000-0001-6668-3121",
+      "role": []
+    }
+  ],
+  "text": [
+    {
+      "text_id": 1,
+      "paragraph_id": 1,
+      "section_id": 0,
+      "text": "Recent evidence shows that AI-generated faces are now indistinguishable from human faces.",
+      "page_number": null
+    },
+    {
+      "text_id": 2,
+      "paragraph_id": 1,
+      "section_id": 0,
+      "text": "However, algorithms are trained disproportionately on White faces, and thus White AI faces may appear especially realistic.",
+      "page_number": null
+    },
+    {
+      "text_id": 3,
+      "paragraph_id": 1,
+      "section_id": 0,
+      "text": "In Experiment 1 (N = 124 adults), alongside our reanalysis of previously published data, we showed that White AI faces are judged as human more often than actual human faces-a phenomenon we term AI hyperrealism.",
+      "page_number": null
+    },
+    {
+      "text_id": 4,
+      "paragraph_id": 1,
+      "section_id": 0,
+      "text": "Paradoxically, people who made the most errors in this task were the most confident (a Dunning-Kruger effect).",
+      "page_number": null
+    },
+    {
+      "text_id": 5,
+      "paragraph_id": 1,
+      "section_id": 0,
+      "text": "In Experiment 2 (N = 610 adults), we used face-space theory and participant qualitative reports to identify key facial attributes that distinguish AI from human faces but were misinterpreted by participants, leading to AI hyperrealism.",
+      "page_number": null
+    },
+    {
+      "text_id": 6,
+      "paragraph_id": 1,
+      "section_id": 0,
+      "text": "However, the attributes permitted high accuracy using machine learning.",
+      "page_number": null
+    },
+    {
+      "text_id": 7,
+      "paragraph_id": 1,
+      "section_id": 0,
+      "text": "These findings illustrate how psychological theory can inform understanding of AI outputs and provide direction for debiasing AI algorithms, thereby promoting the ethical use of AI.",
+      "page_number": null
+    },
+    {
+      "text_id": 8,
+      "paragraph_id": 3,
+      "section_id": 1,
+      "text": "The dawn of the artificial intelligence (AI) revolution has marked an unprecedented societal shift (Xie, 2023).",
+      "page_number": null
+    },
+    {
+      "text_id": 9,
+      "paragraph_id": 3,
+      "section_id": 1,
+      "text": "Prominent in this shift is the generation of realistic humanlike AI faces, twinned with public concern that AI might distort the perception of truth (Devlin, 2023).",
+      "page_number": null
+    },
+    {
+      "text_id": 10,
+      "paragraph_id": 3,
+      "section_id": 1,
+      "text": "AI-generated faces are now widely available (e.g., this- person-does-not-exist.com) and are being used for both prosocial and nefarious purposes, from finding missing children (Chandaliya & Nain, 2022) to transmitting political misinformation via fake social media accounts (e.g., Hatmaker, 2020).",
+      "page_number": null
+    },
+    {
+      "text_id": 11,
+      "paragraph_id": 3,
+      "section_id": 1,
+      "text": "AI faces are now so realistic that people often fail to detect they are not human (e.g., Nightingale & Farid, 2022).",
+      "page_number": null
+    },
+    {
+      "text_id": 12,
+      "paragraph_id": 3,
+      "section_id": 1,
+      "text": "However, because this technology has advanced so rapidly (Hao, 2021), there have been few empirical tests of this ability.",
+      "page_number": null
+    },
+    {
+      "text_id": 13,
+      "paragraph_id": 3,
+      "section_id": 1,
+      "text": "Here we argue that AI faces are not just indistinguishable from human faces but that, in fact, they may be perceived as more \"human\" than real human faces.",
+      "page_number": null
+    },
+    {
+      "text_id": 14,
+      "paragraph_id": 3,
+      "section_id": 1,
+      "text": "We term this striking and counterintuitive phenomenon hyperrealism.",
+      "page_number": null
+    },
+    {
+      "text_id": 15,
+      "paragraph_id": 3,
+      "section_id": 1,
+      "text": "The present research aimed to test for and explain AI hyperrealism, investigate whether people have insight into their AI detection errors, and discover visual attributes that can be used to reveal AI imposters.",
+      "page_number": null
+    },
+    {
+      "text_id": 16,
+      "paragraph_id": 4,
+      "section_id": 1,
+      "text": "Psychology offers decades of theoretical and empirical work with potential to explain AI hyperrealism.",
+      "page_number": null
+    },
+    {
+      "text_id": 17,
+      "paragraph_id": 4,
+      "section_id": 1,
+      "text": "For example, the influential face-space theory (Fig.",
+      "page_number": null
+    },
+    {
+      "text_id": 18,
+      "paragraph_id": 4,
+      "section_id": 1,
+      "text": "1; Valentine, 1991;Valentine et al., 2016) proposes a hypothetical multidimensional space in which faces are coded along unspecified dimensions according to how much they differ from an average face located at the center.",
+      "page_number": null
+    },
+    {
+      "text_id": 19,
+      "paragraph_id": 4,
+      "section_id": 1,
+      "text": "Human faces are supposed to be normally distributed within this space in such a way that more average features (for all dimensions) are statistically overrepresented.",
+      "page_number": null
+    },
+    {
+      "text_id": 20,
+      "paragraph_id": 4,
+      "section_id": 1,
+      "text": "This bias toward average features that generative algorithms are trained on (e.g., StyleGAN2 for faces; Karras et al., 2020Karras et al., , 2021) may be further exaggerated in the AI faces they generate, as these algorithms are biased toward the most common statistical properties of their training data (Grossman et al., 2019).",
+      "page_number": null
+    },
+    {
+      "text_id": 21,
+      "paragraph_id": 4,
+      "section_id": 1,
+      "text": "Although the specific dimensions of face-space are unknown, it is possible to measure the relative location of faces indirectly via the emergent perceptual attributes of face-space, such as facial averageness.",
+      "page_number": null
+    },
+    {
+      "text_id": 22,
+      "paragraph_id": 4,
+      "section_id": 1,
+      "text": "Thus, we hypothesized that StyleGAN2-generated faces would embody the attributes of average faces to a greater extent than real human faces.",
+      "page_number": null
+    },
+    {
+      "text_id": 23,
+      "paragraph_id": 5,
+      "section_id": 1,
+      "text": "A psychological analysis of AI representativeness can also help with understanding a puzzle arising from the handful of studies that have investigated people's ability to detect AI faces: Although one recent study found that people were unable to distinguish AI from human faces (Nightingale & Farid, 2022), two others go further to suggest that people may overidentify AI faces as human (Shen et al., 2021;Tucciarelli et al., 2022).",
+      "page_number": null
+    },
+    {
+      "text_id": 24,
+      "paragraph_id": 5,
+      "section_id": 1,
+      "text": "How can we explain this puzzle?",
+      "page_number": null
+    },
+    {
+      "text_id": 25,
+      "paragraph_id": 5,
+      "section_id": 1,
+      "text": "All three studies used the StyleGAN2 algorithm but varied in the race of the faces they tested.",
+      "page_number": null
+    },
+    {
+      "text_id": 26,
+      "paragraph_id": 5,
+      "section_id": 1,
+      "text": "These demographic differentials are critical because StyleGAN2 was trained on primarily White faces (~69% White, ~31% for all other races combined; see Supplemental File S1 in the Supplemental Material available online), potentially biasing the algorithm toward the statistical regularities of White faces.",
+      "page_number": null
+    },
+    {
+      "text_id": 27,
+      "paragraph_id": 5,
+      "section_id": 1,
+      "text": "This bias may lead to White AI faces that appear especially average (indicated in Fig. 1) and therefore, potentially, especially realistic.",
+      "page_number": null
+    },
+    {
+      "text_id": 28,
+      "paragraph_id": 5,
+      "section_id": 1,
+      "text": "Consistent with this theory, Shen et al. (2021) and Tucciarelli et al. (2022) found preliminary evidence of AI hyperrealism to the extent they tested White faces, although Tucciarelli et al.'s (2022) stimuli were also preselected to be particularly realistic, biasing them toward this finding.",
+      "page_number": null
+    },
+    {
+      "text_id": 29,
+      "paragraph_id": 5,
+      "section_id": 1,
+      "text": "Intriguingly, Nightingale and Farid (2022) also reported more errors for White than non-White AI face detection.",
+      "page_number": null
+    },
+    {
+      "text_id": 30,
+      "paragraph_id": 5,
+      "section_id": 1,
+      "text": "However, they did not pursue this question further.",
+      "page_number": null
+    },
+    {
+      "text_id": 31,
+      "paragraph_id": 5,
+      "section_id": 1,
+      "text": "If AI faces do appear more realistic for White faces than other groups, their use will confound perceptions of race with perceptions of being \"human.\"",
+      "page_number": null
+    },
+    {
+      "text_id": 32,
+      "paragraph_id": 5,
+      "section_id": 1,
+      "text": "Thus, the use of popular StyleGAN2 faces may risk misleading scientific conclusions (Dawel et al., 2022) and may even perpetuate social biases in real-world outcomes, from influencing elections to finding missing children (Chandaliya & Nain, 2022;Hatmaker, 2020).",
+      "page_number": null
+    },
+    {
+      "text_id": 33,
+      "paragraph_id": 7,
+      "section_id": 2,
+      "text": "Here we aimed to investigate the potential for AI hyperrealism and provide the first test of whether people Distinctive faces are coded further out on face-space dimensions; stand out from crowd due to lower face density, so more memorable.",
+      "page_number": null
+    },
+    {
+      "text_id": 34,
+      "paragraph_id": 8,
+      "section_id": 2,
+      "text": "Average faces cluster densely around center; more confusable with neighbors so less memorable; but more familiar and attractive; maybe Al faces are all average-ish?",
+      "page_number": null
+    },
+    {
+      "text_id": 35,
+      "paragraph_id": 8,
+      "section_id": 2,
+      "text": "2016).",
+      "page_number": null
+    },
+    {
+      "text_id": 36,
+      "paragraph_id": 8,
+      "section_id": 2,
+      "text": "For psychophysics-related work, see Abudarham and Yovel (2016) and Rhodes and Jeffery (2006).",
+      "page_number": null
+    },
+    {
+      "text_id": 37,
+      "paragraph_id": 10,
+      "section_id": 3,
+      "text": "Artificial intelligence, or AI, can now generate faces that are indistinguishable from human faces.",
+      "page_number": null
+    },
+    {
+      "text_id": 38,
+      "paragraph_id": 10,
+      "section_id": 3,
+      "text": "However, AI algorithms tend to be trained using a disproportionate number of White faces.",
+      "page_number": null
+    },
+    {
+      "text_id": 39,
+      "paragraph_id": 10,
+      "section_id": 3,
+      "text": "As a result, AI faces may appear especially realistic when they are White.",
+      "page_number": null
+    },
+    {
+      "text_id": 40,
+      "paragraph_id": 10,
+      "section_id": 3,
+      "text": "Here, we show that White (but not non-White) AI faces are, remarkably, judged as human more often than pictures of actual humans.",
+      "page_number": null
+    },
+    {
+      "text_id": 41,
+      "paragraph_id": 10,
+      "section_id": 3,
+      "text": "We pinpoint the perceptual qualities of faces that contribute to this hyperrealism phenomenon, including facial proportions, familiarity, and memorability.",
+      "page_number": null
+    },
+    {
+      "text_id": 42,
+      "paragraph_id": 10,
+      "section_id": 3,
+      "text": "Problematically, the people who were most likely to be fooled by AI faces were the least likely to detect that they were being fooled.",
+      "page_number": null
+    },
+    {
+      "text_id": 43,
+      "paragraph_id": 10,
+      "section_id": 3,
+      "text": "Our results explain why AI hyperrealism occurs and show that not all AI faces appear equally realistic, with implications for proliferating social bias and for public misidentification of AI.",
+      "page_number": null
+    },
+    {
+      "text_id": 44,
+      "paragraph_id": 11,
+      "section_id": 3,
+      "text": "have insight into their AI detection errors.",
+      "page_number": null
+    },
+    {
+      "text_id": 45,
+      "paragraph_id": 11,
+      "section_id": 3,
+      "text": "If people mistake AI faces as human but have low confidence in their judgment, they may respond more cautiously (e.g., investigating an online profile).",
+      "page_number": null
+    },
+    {
+      "text_id": 46,
+      "paragraph_id": 11,
+      "section_id": 3,
+      "text": "However, if they are convinced their judgment is correct, their errors may be more consequential (e.g., falling for a fraudulent profile).",
+      "page_number": null
+    },
+    {
+      "text_id": 47,
+      "paragraph_id": 11,
+      "section_id": 3,
+      "text": "Although Tucciarelli et al. (2022) found confidence was higher for judgments of AI than for human faces overall, it is currently unknown whether people are aware of their AI detection errors.",
+      "page_number": null
+    },
+    {
+      "text_id": 48,
+      "paragraph_id": 11,
+      "section_id": 3,
+      "text": "Errors are associated with lower confidence for other face judgments (e.g., face identity recognition, Palermo et al., 2017;eyewitness identification, Wixted & Wells, 2017).",
+      "page_number": null
+    },
+    {
+      "text_id": 49,
+      "paragraph_id": 11,
+      "section_id": 3,
+      "text": "Thus, we predicted that poorer AI detection would be associated with lower confidence.",
+      "page_number": null
+    },
+    {
+      "text_id": 50,
+      "paragraph_id": 12,
+      "section_id": 3,
+      "text": "We also aimed to identify visual attributes that distinguish AI from human faces and address the critical unanswered question of why people fail to detect AI faces.",
+      "page_number": null
+    },
+    {
+      "text_id": 51,
+      "paragraph_id": 12,
+      "section_id": 3,
+      "text": "Our theorizing suggests that the emergent perceptual attributes of face-space-such as facial averageness, memorability, attractiveness, and familiarity-may play a role, given their importance for human face perception (Valentine et al., 2016;Vokey & Read, 1992).",
+      "page_number": null
+    },
+    {
+      "text_id": 52,
+      "paragraph_id": 12,
+      "section_id": 3,
+      "text": "Because little is known about which cues people use for AI detection, we augmented this theoretical perspective with a data-driven approach by asking participants what information they used to guide their judgments.",
+      "page_number": null
+    },
+    {
+      "text_id": 53,
+      "paragraph_id": 13,
+      "section_id": 3,
+      "text": "Reanalysis of Nightingale and Farid (2022) We started with a proof-of-principle by reanalyzing data from a prominent recent study that included information about face race (Nightingale & Farid, 2022, Experiment 1) to investigate the potential for AI hyperrealism.",
+      "page_number": null
+    },
+    {
+      "text_id": 54,
+      "paragraph_id": 13,
+      "section_id": 3,
+      "text": "Analyses showed clear evidence of AI hyperrealism for White faces, but not for non-White faces.",
+      "page_number": null
+    },
+    {
+      "text_id": 55,
+      "paragraph_id": 13,
+      "section_id": 3,
+      "text": "Figure 2a shows that White AI faces were judged as human significantly more often than White human faces, M White-AI = 69.5% versus M White-human = 52.2%, t(314) = 13.25, p < .001, d = 0.75, 95% confidence interval (CI) = [0.62, 0.87], and significantly more often than chance (= 50% in the two-alternative forced choice task), t(314) = 16.01, p < .001, d = 0.90, 95% CI = [0.77, 1.03].",
+      "page_number": null
+    },
+    {
+      "text_id": 56,
+      "paragraph_id": 13,
+      "section_id": 3,
+      "text": "In contrast, non-White AI faces (left side of Fig. 2a) were judged as human at around chance levels, M non-White-AI = 50.5%, t(314) = 0.41, p = .682, d = 0.02, 95% CI = [-0.09, 0.13], which did not differ significantly from how often non-White human faces were judged to be human, versus M non-White-human = 51.3%, t(314) = 0.74, p = .461, d = 0.04, 95% CI = [-0.07, 0.15].",
+      "page_number": null
+    },
+    {
+      "text_id": 57,
+      "paragraph_id": 13,
+      "section_id": 3,
+      "text": "Unusually, d ′ -a measure of people's ability to discriminate between AI and human faces that is unaffected by response bias-was also significantly negative for White faces, M = -.59, t( 314 result indicates that participants did discriminate between White AI and human faces, but in the wrong direction, providing clear evidence of AI hyperrealism for White faces.",
+      "page_number": null
+    },
+    {
+      "text_id": 58,
+      "paragraph_id": 15,
+      "section_id": 4,
+      "text": "To investigate whether people have insight into their AI hyperrealism errors and uncover what causes this somewhat counterintuitive phenomenon, we asked a new set of participants to report how confident they felt, and what information they used, when attempting to distinguish AI from human faces.",
+      "page_number": null
+    },
+    {
+      "text_id": 59,
+      "paragraph_id": 15,
+      "section_id": 4,
+      "text": "Focusing our new empirical work on the White AI faces from Nightingale and Farid (2022) enabled us to test the robustness of AI hyperrealism with a new set of participants.",
+      "page_number": null
+    },
+    {
+      "text_id": 60,
+      "paragraph_id": 17,
+      "section_id": 5,
+      "text": "We report all measures and exclusions (see Supplemental File S2), along with power analyses justifying our sample sizes (see Supplemental File S3).",
+      "page_number": null
+    },
+    {
+      "text_id": 61,
+      "paragraph_id": 17,
+      "section_id": 5,
+      "text": "Data, analysis scripts, and materials are available on the Open Science Framework at osf.io/sz2fe/.",
+      "page_number": null
+    },
+    {
+      "text_id": 62,
+      "paragraph_id": 17,
+      "section_id": 5,
+      "text": "Stimuli are available at osf .io/ru36d/.",
+      "page_number": null
+    },
+    {
+      "text_id": 63,
+      "paragraph_id": 17,
+      "section_id": 5,
+      "text": "Data were analyzed using R version 4.2.1 (R Core Team, 2021) and JASP ( JASP Team, 2023).",
+      "page_number": null
+    },
+    {
+      "text_id": 64,
+      "paragraph_id": 17,
+      "section_id": 5,
+      "text": "Metad ′ was calculated in MATLAB (The MathWorks, Natick, MA; Maniscalco & Lau, 2012, 2014).",
+      "page_number": null
+    },
+    {
+      "text_id": 65,
+      "paragraph_id": 19,
+      "section_id": 6,
+      "text": "The final data were from 124 adults (61 men, 62 women, 1 preferred another term) recruited from Prolific (www. prolific.co).",
+      "page_number": null
+    },
+    {
+      "text_id": 66,
+      "paragraph_id": 19,
+      "section_id": 6,
+      "text": "Participants were White US residents, aged 18 to 50 years (M age = 34.4 years, SD = 8.0 years), who had not lived outside the United States for more than 2 years before they turned 18 and who reported not having autism spectrum disorder, attention deficit disorder/attention deficit hyperactivity disorder, schizophrenia, or a major neurological condition.",
+      "page_number": null
+    },
+    {
+      "text_id": 67,
+      "paragraph_id": 19,
+      "section_id": 6,
+      "text": "We recruited only White participants because of potential out-group effects in humanness ratings (McLoughlin et al., 2018) and other-race effects (McKone et al., 2019;Meissner & Brigham, 2001).",
+      "page_number": null
+    },
+    {
+      "text_id": 68,
+      "paragraph_id": 19,
+      "section_id": 6,
+      "text": "1 Participants' data were excluded if they did not complete the full study or missed > 10% of experimental trials in the AI or human face conditions; used a mobile phone (because face stimuli would not appear appropriately sized); responded incorrectly on more than one attention check question; or responded incorrectly when they were asked at the end of the study what task they had performed (see Supplemental File S2).",
+      "page_number": null
+    },
+    {
+      "text_id": 69,
+      "paragraph_id": 19,
+      "section_id": 6,
+      "text": "All participants in this research provided informed consent, and all experiments were approved by the Australian National University Human Research Ethics Committee (Protocol 2019/970).",
+      "page_number": null
+    },
+    {
+      "text_id": 70,
+      "paragraph_id": 21,
+      "section_id": 7,
+      "text": "We used the 100 AI and 100 human White faces (half male, half female) from Nightingale and Farid (2022; see osf.io/ru36d/).",
+      "page_number": null
+    },
+    {
+      "text_id": 71,
+      "paragraph_id": 21,
+      "section_id": 7,
+      "text": "The AI faces were generated using StyleGAN2.",
+      "page_number": null
+    },
+    {
+      "text_id": 72,
+      "paragraph_id": 21,
+      "section_id": 7,
+      "text": "The human faces were selected from the Flickr-Faces-HQ Dataset (Karras et al., 2021, used to develop StyleGAN2) to match each of the AI faces as closely as possible (e.g., same gender, posture, and expression).",
+      "page_number": null
+    },
+    {
+      "text_id": 73,
+      "paragraph_id": 21,
+      "section_id": 7,
+      "text": "All stimuli had blurred or mostly plain backgrounds, and AI faces were screened to ensure they had no obvious rendering artifacts (e.g., no extra faces in background).",
+      "page_number": null
+    },
+    {
+      "text_id": 74,
+      "paragraph_id": 21,
+      "section_id": 7,
+      "text": "Screening for artifacts mimics how real-world users screen AI faces, either as scientists (Peterson et al., 2022) or for public use (Satter, 2021), and therefore captures the type and range of stimuli that appear online.",
+      "page_number": null
+    },
+    {
+      "text_id": 75,
+      "paragraph_id": 21,
+      "section_id": 7,
+      "text": "Participants were asked to resize their screen so that stimuli had a visual angle of 12° wide × 12° high at ~50 cm viewing distance.",
+      "page_number": null
+    },
+    {
+      "text_id": 76,
+      "paragraph_id": 21,
+      "section_id": 7,
+      "text": "Participants were assigned in counterbalanced order by gender to view either all the male or female faces (50 AI + 50 human faces = 100 trials in total) so that approximately equal numbers of men and women were assigned to each face sex.",
+      "page_number": null
+    },
+    {
+      "text_id": 77,
+      "paragraph_id": 21,
+      "section_id": 7,
+      "text": "Faces were shown individually until a response was made, with order randomized across participants.",
+      "page_number": null
+    },
+    {
+      "text_id": 78,
+      "paragraph_id": 23,
+      "section_id": 8,
+      "text": "Participants were told that they would see approximately 100 faces with the task of deciding whether each face depicts a real human or is computer-generated (AI).",
+      "page_number": null
+    },
+    {
+      "text_id": 79,
+      "paragraph_id": 23,
+      "section_id": 8,
+      "text": "We defined \"human\" as people who exist in the real world and \"computer-generated\" as pictures that have been made by AI technology for generating highly realistic images of people who do not exist in the real world.",
+      "page_number": null
+    },
+    {
+      "text_id": 80,
+      "paragraph_id": 23,
+      "section_id": 8,
+      "text": "After deciding whether a face was AI or human, participants rated their confidence on each trial from 0 (not at all) to 100 (completely).",
+      "page_number": null
+    },
+    {
+      "text_id": 81,
+      "paragraph_id": 23,
+      "section_id": 8,
+      "text": "The AI and human response options were shown horizontally on screen with the left/right position counterbalanced across participants.",
+      "page_number": null
+    },
+    {
+      "text_id": 82,
+      "paragraph_id": 23,
+      "section_id": 8,
+      "text": "In five additional trials, as an attention check, participants decided whether a face was under or over 50 years of age (see Supplemental File S4).",
+      "page_number": null
+    },
+    {
+      "text_id": 83,
+      "paragraph_id": 23,
+      "section_id": 8,
+      "text": "Finally, to investigate the visual attributes used by participants to judge whether faces were AI or human, we asked participants to give open-ended responses about what information they used.",
+      "page_number": null
+    },
+    {
+      "text_id": 84,
+      "paragraph_id": 23,
+      "section_id": 8,
+      "text": "At the end of the experiment, participants reported their age, gender identity, time spent outside the United States, state of residence, and any clinical or neurological conditions, and they confirmed they were White.",
+      "page_number": null
+    },
+    {
+      "text_id": 85,
+      "paragraph_id": 27,
+      "section_id": 10,
+      "text": "First, we calculated the percentage of stimuli judged as human, the error percentages, and the mean confidence ratings for each participant (for AI and human faces separately; Supplemental File S5).",
+      "page_number": null
+    },
+    {
+      "text_id": 86,
+      "paragraph_id": 27,
+      "section_id": 10,
+      "text": "Complementary stimulus-level analyses are reported in Supplemental File S6.",
+      "page_number": null
+    },
+    {
+      "text_id": 87,
+      "paragraph_id": 27,
+      "section_id": 10,
+      "text": "We also calculated participant-level signal detection measures: d ′ and meta-d ′ .",
+      "page_number": null
+    },
+    {
+      "text_id": 88,
+      "paragraph_id": 27,
+      "section_id": 10,
+      "text": "Meta-d ′ combines confidence ratings with response correctness to measure metacognitive sensitivity-participants' insight into whether their responses are correct or incorrect (Maniscalco & Lau, 2012, 2014)",
+      "page_number": null
+    },
+    {
+      "text_id": 89,
+      "paragraph_id": 29,
+      "section_id": 11,
+      "text": "To analyze the open-ended qualitative responses, we used data-driven (inductive) thematic analysis following the stages proposed by Braun and Clarke (2006).",
+      "page_number": null
+    },
+    {
+      "text_id": 90,
+      "paragraph_id": 29,
+      "section_id": 11,
+      "text": "The first author initially read through the responses and formulated an initial thematic framework.",
+      "page_number": null
+    },
+    {
+      "text_id": 91,
+      "paragraph_id": 29,
+      "section_id": 11,
+      "text": "The themes were then refined and finalized via detailed discussion with the second and last authors.",
+      "page_number": null
+    },
+    {
+      "text_id": 92,
+      "paragraph_id": 31,
+      "section_id": 12,
+      "text": "Figure 2a shows that the hyperrealism found for White AI faces in our reanalysis of Nightingale and Farid (2022) was fully replicated in our new sample, indicating that this effect is robust.",
+      "page_number": null
+    },
+    {
+      "text_id": 93,
+      "paragraph_id": 31,
+      "section_id": 12,
+      "text": "White AI faces were judged as human significantly more often than White human faces, M AI = 65.9% versus M human = 51.1%, t(123) = 7.14, p < .001, d = 0.64, 95% CI = [0.45, 0.83], and significantly more often than chance (50% in 2AFC task), t(123) = 7.82, p < .001, d = 0.70, 95% CI = [0.51, 0.90].",
+      "page_number": null
+    },
+    {
+      "text_id": 94,
+      "paragraph_id": 31,
+      "section_id": 12,
+      "text": "In contrast, performance for White human faces did not differ significantly from chance, t(123) = 0.60, p = .550, d = 0.05, 95% CI [-0.12, 0.23].",
+      "page_number": null
+    },
+    {
+      "text_id": 95,
+      "paragraph_id": 31,
+      "section_id": 12,
+      "text": "As in our reanalysis of Nightingale and Farid (2022), d ′ was significantly negative, d ′ = -0.49 (vs. 0 = no sensitivity), t(123) = 5.20, p < .001, d = 0.68, 95% CI = [0.49, 0.88].",
+      "page_number": null
+    },
+    {
+      "text_id": 96,
+      "paragraph_id": 31,
+      "section_id": 12,
+      "text": "Findings held for male and female faces separately (Supplemental File S8).",
+      "page_number": null
+    },
+    {
+      "text_id": 97,
+      "paragraph_id": 31,
+      "section_id": 12,
+      "text": "Figure 3 shows the faces that were judged as human and AI most often: Notably, the top three most humanlike faces were actually AI-generated.",
+      "page_number": null
+    },
+    {
+      "text_id": 98,
+      "paragraph_id": 33,
+      "section_id": 13,
+      "text": "Concerningly, we found that participants who were the worst at detecting AI faces had the poorest insight into their abilities, against our prediction from the face identification literature.",
+      "page_number": null
+    },
+    {
+      "text_id": 99,
+      "paragraph_id": 33,
+      "section_id": 13,
+      "text": "However, the accuracyconfidence relationship differed by face type: Although lower error rates for classification of human faces were associated with higher confidence as predicted, r human = -.235, 95% CI = [-.395, -.061], p = .009 (Fig. 2b), for AI faces more errors were unexpectedly associated with higher confidence, r AI = .385, 95% CI = [.224, .526], p < .001 (Fig. 2c), indicating that the tendency for AI hyperrealism is exacerbated by overconfidence.",
+      "page_number": null
+    },
+    {
+      "text_id": 100,
+      "paragraph_id": 34,
+      "section_id": 13,
+      "text": "To investigate participants' insight into their performance, free from bias in confidence ratings (e.g., reporting high confidence for all judgments), we used meta-d ′ .",
+      "page_number": null
+    },
+    {
+      "text_id": 101,
+      "paragraph_id": 34,
+      "section_id": 13,
+      "text": "Positive meta-d ′ values indicate participants have insight into whether their responses are correct or incorrect, whereas negative meta-d ′ values indicate participants have misplaced confidence in the correctness of their responses.",
+      "page_number": null
+    },
+    {
+      "text_id": 102,
+      "paragraph_id": 34,
+      "section_id": 13,
+      "text": "Participants' meta-d ′ values in the present study were frequently negative (59% of participants), indicating poor insight.",
+      "page_number": null
+    },
+    {
+      "text_id": 103,
+      "paragraph_id": 34,
+      "section_id": 13,
+      "text": "Moreover, Figure 2d shows lower insight (meta-d ′ ) was associated with poorer performance (d ′ ) on the AI versus human judgment task, r = .479, 95% CI = [.330, .604], p < .001, indicating the poorest performers were the least aware of their AI detection errors.",
+      "page_number": null
+    },
+    {
+      "text_id": 104,
+      "paragraph_id": 34,
+      "section_id": 13,
+      "text": "We divided Figure 2d into quadrants at d ′ = 0 and meta-d ′ = 0 to identify groups of participants with each combination of good and poor performance (d ′ ) and insight (meta-d ′ ).",
+      "page_number": null
+    },
+    {
+      "text_id": 105,
+      "paragraph_id": 34,
+      "section_id": 13,
+      "text": "Half of the participants (51%) fell into the bottom left quadrant, pairing poor performance with poor insight (versus ~23% with poor performance and good insight; ~8% with good performance and poor insight; and ~18% with good performance and good insight).",
+      "page_number": null
+    },
+    {
+      "text_id": 106,
+      "paragraph_id": 34,
+      "section_id": 13,
+      "text": "These findings are incongruent with prior face perception literature (Palermo et al., 2017;Wixted & Wells, 2017) but in line with other types of judgments in which people can be highly confident but incorrect (e.g., when people are unknowingly exposed to misinformation but report it with high confidence; Flowe et al., 2019), or overestimate their competence at a task, commonly referred to as the Dunning-Kruger effect (Kruger & Dunning, 1999).",
+      "page_number": null
+    },
+    {
+      "text_id": 107,
+      "paragraph_id": 36,
+      "section_id": 14,
+      "text": "Figure 4 presents the qualitative coding framework capturing the attributes that participants reported using when they judged whether faces were AI or human.",
+      "page_number": null
+    },
+    {
+      "text_id": 108,
+      "paragraph_id": 36,
+      "section_id": 14,
+      "text": "The size of each segment indicates the percentage of total codes captured by each theme.",
+      "page_number": null
+    },
+    {
+      "text_id": 109,
+      "paragraph_id": 36,
+      "section_id": 14,
+      "text": "The framework is composed of 21 main themes with 20 subthemes (e.g., \"eyes\" is a subtheme of the specific facial features theme).",
+      "page_number": null
+    },
+    {
+      "text_id": 110,
+      "paragraph_id": 36,
+      "section_id": 14,
+      "text": "Responses could be coded into multiple themes, and thus each response was coded into an average of 2.29 themes.",
+      "page_number": null
+    },
+    {
+      "text_id": 111,
+      "paragraph_id": 36,
+      "section_id": 14,
+      "text": "For instance, the response, \"If the faces were overly symmetrical and if they [sic] eyes looked fake\" was coded into the \"symmetry,\" \"eyes,\" and \"artificial\" themes.",
+      "page_number": null
+    },
+    {
+      "text_id": 112,
+      "paragraph_id": 36,
+      "section_id": 14,
+      "text": "A total of 546 codes were applied to the 239 responses.",
+      "page_number": null
+    },
+    {
+      "text_id": 113,
+      "paragraph_id": 36,
+      "section_id": 14,
+      "text": "Supplemental File S9 includes example quotes for each theme.",
+      "page_number": null
+    },
+    {
+      "text_id": 114,
+      "paragraph_id": 38,
+      "section_id": 15,
+      "text": "The phenomenon of AI hyperrealism implies there must be some visual differences between AI and human faces, which people misinterpret.",
+      "page_number": null
+    },
+    {
+      "text_id": 115,
+      "paragraph_id": 38,
+      "section_id": 15,
+      "text": "Very little is known about what these differences might be.",
+      "page_number": null
+    },
+    {
+      "text_id": 116,
+      "paragraph_id": 38,
+      "section_id": 15,
+      "text": "Tucciarelli et al. (2022) found a partial negative contribution of attractiveness, which aligns with our predictions based on face-space, because faces at the core of face-space (more average faces) tend to be more attractive, all else being equal (Rhodes, 2006).",
+      "page_number": null
+    },
+    {
+      "text_id": 117,
+      "paragraph_id": 38,
+      "section_id": 15,
+      "text": "Shen et al. (2021) also found that removing background scenery made AI and human faces indistinguishable; however, background information was matched for our stimuli, rendering this latter explanation unlikely here.",
+      "page_number": null
+    },
+    {
+      "text_id": 118,
+      "paragraph_id": 39,
+      "section_id": 15,
+      "text": "Thus, in Experiment 2 we investigated the capacity of 14 attributes derived from face-space and Experiment 1 qualitative reports to explain AI hyperrealism.",
+      "page_number": null
+    },
+    {
+      "text_id": 119,
+      "paragraph_id": 39,
+      "section_id": 15,
+      "text": "We also tested for the first time whether human-perceivable information can be used to accurately classify AI and human faces, using machine learning.",
+      "page_number": null
+    },
+    {
+      "text_id": 120,
+      "paragraph_id": 39,
+      "section_id": 15,
+      "text": "If, as we hypothesize, StyleGAN2 is biased to produce faces toward the center of face-space, AI faces should be perceived as more average, familiar, and attractive, but as less memorable than human faces.",
+      "page_number": null
+    },
+    {
+      "text_id": 121,
+      "paragraph_id": 43,
+      "section_id": 17,
+      "text": "The final data were from 610 participants (290 men, 312 women, 8 preferred another term; M age = 35.3 years, SD = 8.6 years), recruited to rate the AI and human faces on one of 14 attributes.",
+      "page_number": null
+    },
+    {
+      "text_id": 122,
+      "paragraph_id": 43,
+      "section_id": 17,
+      "text": "In contrast to Experiment 1, participants were not told AI faces were present, and we excluded those who guessed that AI faces were present (N = 44, 7%).",
+      "page_number": null
+    },
+    {
+      "text_id": 123,
+      "paragraph_id": 43,
+      "section_id": 17,
+      "text": "Participant screening was otherwise identical to Experiment 1.",
+      "page_number": null
+    },
+    {
+      "text_id": 124,
+      "paragraph_id": 45,
+      "section_id": 18,
+      "text": "In total, 14 attributes were rated (Table 1).",
+      "page_number": null
+    },
+    {
+      "text_id": 125,
+      "paragraph_id": 45,
+      "section_id": 18,
+      "text": "In addition to the four attributes derived from face space theory (distinctiveness/averageness, memorability, familiarity, attractiveness), we focused our analyses on attributes commonly mentioned in Experiment 1, resulting in nine attributes.",
+      "page_number": null
+    },
+    {
+      "text_id": 126,
+      "paragraph_id": 45,
+      "section_id": 18,
+      "text": "We also included perceived age because we wanted to isolate the contributions of other related attributes, such as attractiveness and skin smoothness.",
+      "page_number": null
+    },
+    {
+      "text_id": 127,
+      "paragraph_id": 45,
+      "section_id": 18,
+      "text": "Supplemental File S10 provides a detailed rationale.",
+      "page_number": null
+    },
+    {
+      "text_id": 128,
+      "paragraph_id": 45,
+      "section_id": 18,
+      "text": "Each condition had five attention checks that asked for specific numeric ratings.",
+      "page_number": null
+    },
+    {
+      "text_id": 129,
+      "paragraph_id": 45,
+      "section_id": 18,
+      "text": "Experimental stimuli and procedure were otherwise identical to Experiment 1.",
+      "page_number": null
+    },
+    {
+      "text_id": 130,
+      "paragraph_id": 49,
+      "section_id": 20,
+      "text": "We calculated the stimulus-level mean rating for each face for each of the 14 attributes separately.",
+      "page_number": null
+    },
+    {
+      "text_id": 131,
+      "paragraph_id": 49,
+      "section_id": 20,
+      "text": "Then, using our data from Experiment 1, we calculated the percentage of participants who judged each face as human.",
+      "page_number": null
+    },
+    {
+      "text_id": 132,
+      "paragraph_id": 49,
+      "section_id": 20,
+      "text": "Higher percentage values indicate that more participants judged the face as human.",
+      "page_number": null
+    },
+    {
+      "text_id": 133,
+      "paragraph_id": 49,
+      "section_id": 20,
+      "text": "Stimulus type (i.e., AI or human faces) was dummy-coded (0 = AI faces and 1 = human faces).",
+      "page_number": null
+    },
+    {
+      "text_id": 134,
+      "paragraph_id": 51,
+      "section_id": 21,
+      "text": "To determine what attributes made faces look real (even if they were AI-generated), we constructed a multiple linear regression model predicting the percentage of participants who judged each stimulus as human from the 14 stimulus-level attribute means.",
+      "page_number": null
+    },
+    {
+      "text_id": 135,
+      "paragraph_id": 51,
+      "section_id": 21,
+      "text": "2 All variables were standardized prior to model entry.",
+      "page_number": null
+    },
+    {
+      "text_id": 136,
+      "paragraph_id": 51,
+      "section_id": 21,
+      "text": "The model explained the majority of observed variance (62%) in how often faces were judged as human, R 2 adj = .62, 95% CI = [.57, .72], p < .001.",
+      "page_number": null
+    },
+    {
+      "text_id": 137,
+      "paragraph_id": 51,
+      "section_id": 21,
+      "text": "Standardized coefficients for each individual predictor show that faces were more likely to be judged as human if they were more proportional, alive in the eyes, and familiar; and less memorable, symmetrical, attractive, and smooth-skinned (Table 2).",
+      "page_number": null
+    },
+    {
+      "text_id": 138,
+      "paragraph_id": 53,
+      "section_id": 22,
+      "text": "Here, we take a novel approach by applying a Brunswikian lens model (Brunswik, 1956;Hall et al., 2019) to reveal how each of the 14 attributes contributed to faces being (mis)judged as human (Fig.",
+      "page_number": null
+    },
+    {
+      "text_id": 139,
+      "paragraph_id": 53,
+      "section_id": 22,
+      "text": "5).",
+      "page_number": null
+    },
+    {
+      "text_id": 140,
+      "paragraph_id": 53,
+      "section_id": 22,
+      "text": "Constructing a stimulus-level lens model (using lavaan; Rossell, 2012) allowed us to investigate the attributes as simultaneous mediators explaining the correspondence between the AI or human status of faces and how often they were judged as human, thereby distinguishing between cue validity (differences in the visual attributes of human and AI faces) and cue utilization (the extent to which each attribute contributes to faces being judged as human).",
+      "page_number": null
+    },
+    {
+      "text_id": 141,
+      "paragraph_id": 53,
+      "section_id": 22,
+      "text": "In this model, face type was the focal predictor (AI = 0 vs. human = 1), the 14 attributes were entered as simultaneous mediators, and the percentage of participants who judged each face as human was the outcome variable.",
+      "page_number": null
+    },
+    {
+      "text_id": 142,
+      "paragraph_id": 53,
+      "section_id": 22,
+      "text": "All attributes were allowed to freely correlate with each other (see Supplemental File S12 for the correlation matrix), producing a fully saturated model that perfectly fit the data (comparative fit indices = 1.00, Tucker-Lewis indices = 1.00, root-mean-square errors of approximation = .00).",
+      "page_number": null
+    },
+    {
+      "text_id": 143,
+      "paragraph_id": 53,
+      "section_id": 22,
+      "text": "3 Consistent with Experiment 1, the total effect indicated that AI faces were more likely to be perceived as human than actual human faces, β = -0.41, z = -6.26, p < .001.",
+      "page_number": null
+    },
+    {
+      "text_id": 144,
+      "paragraph_id": 54,
+      "section_id": 22,
+      "text": "Critically, in line with our face-space theory prediction that AI faces would be more average than human ones, AI faces were significantly more average (less distinctive), familiar, and attractive, and less memorable than human faces.",
+      "page_number": null
+    },
+    {
+      "text_id": 145,
+      "paragraph_id": 54,
+      "section_id": 22,
+      "text": "Overall, AI hyperrealism was explained by larger cumulative effects for the attributes that were utilized in the wrong direction-facial proportions, familiarity, and memorability (in red, Fig. 5; β = -0.67, 95% CI = [-.88, -.46], z = -6.10, p < .001)-compared with those utilized in the correct direction-facial attractiveness, symmetry, and congruent lighting/shadows (in green; β = 0.37, 95% CI = [.21, .53], z = 4.47, p < .001).",
+      "page_number": null
+    },
+    {
+      "text_id": 146,
+      "paragraph_id": 54,
+      "section_id": 22,
+      "text": "Additionally, several valid cues were not utilized by participants-namely, facial averageness/ distinctiveness, image quality, and expressivity (in gray).",
+      "page_number": null
+    },
+    {
+      "text_id": 147,
+      "paragraph_id": 54,
+      "section_id": 22,
+      "text": "There also remained a residual direct effect of face type (human vs.",
+      "page_number": null
+    },
+    {
+      "text_id": 148,
+      "paragraph_id": 54,
+      "section_id": 22,
+      "text": "AI) on perceiving the face as human, over and above the 14 attributes we measured, β = -0.22, 95% CI = [-.40, -.03], z = -2.33, p = .020.",
+      "page_number": null
+    },
+    {
+      "text_id": 149,
+      "paragraph_id": 54,
+      "section_id": 22,
+      "text": "Therefore, Note: See also the full experimental surveys on the Open Science Framework (osf.io/sz2fe/). a \"Alive in the eyes\" combines the \"eyes\" and \"uncanny valley\" themes from Experiment 1's qualitative framework. b \"Proportional\" combines the \"features work as a whole\" (are in proportion with one another) and \"proportional\" themes. c \"Smooth-skinned\" derives from \"the skin or wrinkles\" and \"perfectness\" themes.",
+      "page_number": null
+    },
+    {
+      "text_id": 150,
+      "paragraph_id": 55,
+      "section_id": 22,
+      "text": "although our identified mediators explained the majority of the AI hyperrealism effect, there are aspects still to be uncovered (we return to this in the Discussion).",
+      "page_number": null
+    },
+    {
+      "text_id": 151,
+      "paragraph_id": 57,
+      "section_id": 23,
+      "text": "Given that humans are unable to detect current AI faces, society needs tools that can accurately identify AI imposters.",
+      "page_number": null
+    },
+    {
+      "text_id": 152,
+      "paragraph_id": 57,
+      "section_id": 23,
+      "text": "Present AI detection algorithms are limited to specific databases (e.g., the popular Google Chrome extension, V7 Fake Profile Detector, works only for StyleGAN faces).",
+      "page_number": null
+    },
+    {
+      "text_id": 153,
+      "paragraph_id": 57,
+      "section_id": 23,
+      "text": "Human perception may be useful for improving algorithmic generalizability, as integrating additional parameters into algorithms has proved useful in other domains ( J W Miller et al., 2022).",
+      "page_number": null
+    },
+    {
+      "text_id": 154,
+      "paragraph_id": 57,
+      "section_id": 23,
+      "text": "We therefore provide the first investigation of whether machine learning can leverage human-perceived attributes to accurately classify AI and human faces.",
+      "page_number": null
+    },
+    {
+      "text_id": 155,
+      "paragraph_id": 57,
+      "section_id": 23,
+      "text": "Using 10-fold cross-validation, we constructed a random forest classification model (mtry = 4; the square root of the number of predictors, rounded to the nearest whole number) predicting face type (AI vs. human) from the 14 attributes identified in Experiment 2.",
+      "page_number": null
+    },
+    {
+      "text_id": 156,
+      "paragraph_id": 57,
+      "section_id": 23,
+      "text": "The model was able to accurately classify face type with 94% accuracy, 95% CI = [91%, 97%], z = 56.53, p < .001, k = .88 (also see Table 3 for the confusion matrix specifying the predicted and actual values during crossvalidation).",
+      "page_number": null
+    },
+    {
+      "text_id": 157,
+      "paragraph_id": 57,
+      "section_id": 23,
+      "text": "AI faces, at least those generated by Style-GAN2, can therefore be distinguished from human faces on the basis of human-perceived attributes with extremely high accuracy.",
+      "page_number": null
+    },
+    {
+      "text_id": 158,
+      "paragraph_id": 59,
+      "section_id": 24,
+      "text": "We find that White AI faces are perceived as hyperreal and that observers are overconfident in their ability to detect them.",
+      "page_number": null
+    },
+    {
+      "text_id": 159,
+      "paragraph_id": 59,
+      "section_id": 24,
+      "text": "By combining psychological theory with a novel data-driven approach and machine learning, our study significantly advances understanding of why AI hyperrealism occurs.",
+      "page_number": null
+    },
+    {
+      "text_id": 160,
+      "paragraph_id": 59,
+      "section_id": 24,
+      "text": "Specifically, we were able to pinpoint perceptual attributes that accurately distinguish AI from human faces and model how people misuse this information, explaining a significant majority of the variance in humans' AI judgments.",
+      "page_number": null
+    },
+    {
+      "text_id": 161,
+      "paragraph_id": 59,
+      "section_id": 24,
+      "text": "The identification of these attributes provides a critical foundation in the future for detailed psychophysics work aiming to map AI face-space.",
+      "page_number": null
+    },
+    {
+      "text_id": 162,
+      "paragraph_id": 59,
+      "section_id": 24,
+      "text": "Importantly, the present findings are generalizable to the types of images used online, because AI faces are screened for image artifacts as they are selected for real-world use (e.g., when committing fraud; Satter, 2021).",
+      "page_number": null
+    },
+    {
+      "text_id": 163,
+      "paragraph_id": 59,
+      "section_id": 24,
+      "text": "Also, artifact screening cannot explain the White specificity of hyperrealism in our reanalysis of Nightingale and Farids's (2022) data, as the same screening criteria were applied across face race.",
+      "page_number": null
+    },
+    {
+      "text_id": 164,
+      "paragraph_id": 60,
+      "section_id": 24,
+      "text": "Our study highlights two separate, and critical, biases.",
+      "page_number": null
+    },
+    {
+      "text_id": 165,
+      "paragraph_id": 60,
+      "section_id": 24,
+      "text": "First, generative adversarial networks (GANs) are biased toward the statistical regularities of their most common inputs, which we argue produces AI hyperrealism.",
+      "page_number": null
+    },
+    {
+      "text_id": 166,
+      "paragraph_id": 60,
+      "section_id": 24,
+      "text": "Although we demonstrate this point in the context of AI faces, the foundational idea may generalize to other important types of AI outputs, including text and artwork from ChatGPT and DALL-E Here, as this argument predicts, we found AI faces appeared more average than their human counterparts (see Supplemental Fig.",
+      "page_number": null
+    },
+    {
+      "text_id": 167,
+      "paragraph_id": 60,
+      "section_id": 24,
+      "text": "S14).",
+      "page_number": null
+    },
+    {
+      "text_id": 168,
+      "paragraph_id": 60,
+      "section_id": 24,
+      "text": "Notably, participants failed to utilize facial distinctiveness/averageness for AI detection and inappropriately utilized several other associated cues (facial proportions, memorability, familiarity), producing hyperrealism.",
+      "page_number": null
+    },
+    {
+      "text_id": 169,
+      "paragraph_id": 60,
+      "section_id": 24,
+      "text": "Attractiveness was correctly used as a distinguishing feature, confirming Tucciarelli et al.'s (2022) initial finding.",
+      "page_number": null
+    },
+    {
+      "text_id": 170,
+      "paragraph_id": 60,
+      "section_id": 24,
+      "text": "The minority of variance left to be explained suggests that other cues, such as those mentioned less often in Experiment 1 (e.g., \"ears,\" \"glasses\"), may also play a small but cumulative role.",
+      "page_number": null
+    },
+    {
+      "text_id": 171,
+      "paragraph_id": 60,
+      "section_id": 24,
+      "text": "Second, we found evidence of White racial bias in algorithmic training that produces racial differentials in the presence of AI hyperrealism, with significant implications for the use of AI faces online and in science.",
+      "page_number": null
+    },
+    {
+      "text_id": 172,
+      "paragraph_id": 60,
+      "section_id": 24,
+      "text": "Previously, less realistic computer-generated faces have been used as stand-ins for human faces when it was inappropriate to do so (Dawel et al., 2022;E J Miller et al., 2023), and there is concern that the same will happen with AI faces, with implications for inequality.",
+      "page_number": null
+    },
+    {
+      "text_id": 173,
+      "paragraph_id": 60,
+      "section_id": 24,
+      "text": "We recommend that studies using AI faces should verify that they are perceived as equally natural across races.",
+      "page_number": null
+    },
+    {
+      "text_id": 174,
+      "paragraph_id": 60,
+      "section_id": 24,
+      "text": "On a related note, a pressing question is how to address racial differentials in GANs.",
+      "page_number": null
+    },
+    {
+      "text_id": 175,
+      "paragraph_id": 60,
+      "section_id": 24,
+      "text": "It is unclear in face-space theory whether there is one face-space or separate spaces for different demographic groups (e.g., Valentine et al., 2016).",
+      "page_number": null
+    },
+    {
+      "text_id": 176,
+      "paragraph_id": 60,
+      "section_id": 24,
+      "text": "Future research could fruitfully test these theoretical questions by comparing a GAN trained on equal numbers of faces of each race with GANs trained separately on different demographic groups.",
+      "page_number": null
+    },
+    {
+      "text_id": 177,
+      "paragraph_id": 61,
+      "section_id": 24,
+      "text": "Importantly, and in contrast to standard AI detection algorithms (which are \"black boxes\"), the present work makes known the perceptual attributes that lead to accurate AI detection in machine learning.",
+      "page_number": null
+    },
+    {
+      "text_id": 178,
+      "paragraph_id": 61,
+      "section_id": 24,
+      "text": "Human accuracy may also be improved by training people to utilize attributes appropriately, though this strategy risks exacerbating overconfidence as technologies progress and certain attributes become outdated.",
+      "page_number": null
+    },
+    {
+      "text_id": 179,
+      "paragraph_id": 61,
+      "section_id": 24,
+      "text": "Currently, most algorithms produce only single images of each identity, but soon multiple images of AI products are likely to be available (Chan et al., 2023).",
+      "page_number": null
+    },
+    {
+      "text_id": 180,
+      "paragraph_id": 61,
+      "section_id": 24,
+      "text": "We likewise drew on a theoretical account of face-space that focuses on variation between single images; when multiple within-identity AI images are commonplace, future work could apply more nuanced face-space theories (e.g., Burton et al., 2016;O'Toole et al., 2018).",
+      "page_number": null
+    },
+    {
+      "text_id": 181,
+      "paragraph_id": 61,
+      "section_id": 24,
+      "text": "Regardless, because AI technology is advancing so rapidly (Bond, 2023), training focused on metacognition and education may be more helpful.",
+      "page_number": null
+    },
+    {
+      "text_id": 182,
+      "paragraph_id": 61,
+      "section_id": 24,
+      "text": "For example, Szpitalak et al. (2021) found that people who were advised about the unreliability of human memory were more resistant to misinformation than naive individuals.",
+      "page_number": null
+    },
+    {
+      "text_id": 183,
+      "paragraph_id": 61,
+      "section_id": 24,
+      "text": "Educating people about the perceived realism of AI faces could likewise reduce risks by making the public appropriately skeptical.",
+      "page_number": null
+    },
+    {
+      "text_id": 184,
+      "paragraph_id": 62,
+      "section_id": 24,
+      "text": "We also found individual differences in the accuracy of AI face detection (Fig. 2c), opening new lines of research.",
+      "page_number": null
+    },
+    {
+      "text_id": 185,
+      "paragraph_id": 62,
+      "section_id": 24,
+      "text": "Participants were selected to have normalrange face perception, yet the best performer achieved only 80% accuracy.",
+      "page_number": null
+    },
+    {
+      "text_id": 186,
+      "paragraph_id": 62,
+      "section_id": 24,
+      "text": "However, people with exceptional face recognition abilities (super recognizers; Ramon et al., 2019) may possess superior AI detection skills.",
+      "page_number": null
+    },
+    {
+      "text_id": 187,
+      "paragraph_id": 62,
+      "section_id": 24,
+      "text": "A further intriguing question is whether individual differences in the utilization of specific attributes can shed light on why certain individuals are more vulnerable to deception by AI faces.",
+      "page_number": null
+    },
+    {
+      "text_id": 188,
+      "paragraph_id": 64,
+      "section_id": 25,
+      "text": "The present study demonstrates a robust AI hyperrealism effect: Remarkably, White AI faces can convincingly pass as more real than human faces-and people do not realize they are being fooled.",
+      "page_number": null
+    },
+    {
+      "text_id": 189,
+      "paragraph_id": 64,
+      "section_id": 25,
+      "text": "We believe psychology has a critical role to play in holding AI technologies accountable to the public good.",
+      "page_number": null
+    },
+    {
+      "text_id": 190,
+      "paragraph_id": 64,
+      "section_id": 25,
+      "text": "Society has faced many large-scale, seemingly unsolvable challenges that have subsequently become a normal, and manageable, part of life (e.g., automobile safety).",
+      "page_number": null
+    },
+    {
+      "text_id": 191,
+      "paragraph_id": 64,
+      "section_id": 25,
+      "text": "We remain hopeful that social and regulatory responses will reduce potential risks as society adjusts to the inevitable presence of AI in our world.",
+      "page_number": null
+    },
+    {
+      "text_id": 192,
+      "paragraph_id": 66,
+      "section_id": 26,
+      "text": "Action Editor: Rachael Jack Editor: Jennifer L Tackett",
+      "page_number": null
+    },
+    {
+      "text_id": 193,
+      "paragraph_id": 68,
+      "section_id": 27,
+      "text": "We thank Sophie J Nightingale and Hany Farid for providing open access to their stimuli and data.",
+      "page_number": null
+    },
+    {
+      "text_id": 194,
+      "paragraph_id": 70,
+      "section_id": 28,
+      "text": "This research is supported by the Australian Government through the Australian Research Council's Discovery Projects funding scheme (Project No.",
+      "page_number": null
+    },
+    {
+      "text_id": 195,
+      "paragraph_id": 70,
+      "section_id": 28,
+      "text": "DP220101026), a TRANSFORM Career Development Fellowship to A Dawel from the Australian National University College of Health and Medicine, and an Experimental Psychology Society Small Grant to C A M Sutherland.",
+      "page_number": null
+    },
+    {
+      "text_id": 196,
+      "paragraph_id": 70,
+      "section_id": 28,
+      "text": "The funders had no role in developing or conducting this research.",
+      "page_number": null
+    },
+    {
+      "text_id": 197,
+      "paragraph_id": 72,
+      "section_id": 29,
+      "text": "The author(s) declared that there were no conflicts of interest with respect to the authorship or the publication of this article.",
+      "page_number": null
+    },
+    {
+      "text_id": 198,
+      "paragraph_id": 74,
+      "section_id": 30,
+      "text": "This article has received the badges for Open Data and Open Materials.",
+      "page_number": null
+    },
+    {
+      "text_id": 199,
+      "paragraph_id": 74,
+      "section_id": 30,
+      "text": "More information about the Open Practices badges can be found at http://www.psychologicalscience .org/publications/badges.",
+      "page_number": null
+    },
+    {
+      "text_id": 200,
+      "paragraph_id": 76,
+      "section_id": 31,
+      "text": "Elizabeth J Miller: Conceptualization; Data curation; Formal analysis; Methodology; Visualization; Writingoriginal draft; Writing -review & editing.",
+      "page_number": null
+    },
+    {
+      "text_id": 201,
+      "paragraph_id": 76,
+      "section_id": 31,
+      "text": "Ben A Steward: Formal analysis; Methodology; Visualization; Writing -original draft; Writing -review & editing.",
+      "page_number": null
+    },
+    {
+      "text_id": 202,
+      "paragraph_id": 76,
+      "section_id": 31,
+      "text": "Zak Witkower: Formal analysis; Methodology; Visualization; Writing -original draft; Writing -review & editing.",
+      "page_number": null
+    },
+    {
+      "text_id": 203,
+      "paragraph_id": 76,
+      "section_id": 31,
+      "text": "Clare A M Sutherland: Conceptualization; Funding acquisition; Methodology; Writing -review & editing.",
+      "page_number": null
+    },
+    {
+      "text_id": 204,
+      "paragraph_id": 76,
+      "section_id": 31,
+      "text": "Eva G Krumhuber: Conceptualization; Funding acquisition; Methodology; Writing -review & editing.",
+      "page_number": null
+    },
+    {
+      "text_id": 205,
+      "paragraph_id": 76,
+      "section_id": 31,
+      "text": "Amy Dawel: Conceptualization; Data curation; Formal analysis; Funding acquisition; Methodology; Project administration; Supervision; Visualization; Writing -original draft; Writing -review & editing.",
+      "page_number": null
+    },
+    {
+      "text_id": 206,
+      "paragraph_id": 78,
+      "section_id": 32,
+      "text": "Additional supporting information can be found at http:// journals.sagepub.com/doi/suppl/10.1177/09567976231207095 Notes 1.",
+      "page_number": null
+    },
+    {
+      "text_id": 207,
+      "paragraph_id": 78,
+      "section_id": 32,
+      "text": "Nightingale and Farid's (2022) Experiment 1 sample was 73% White.",
+      "page_number": null
+    },
+    {
+      "text_id": 208,
+      "paragraph_id": 78,
+      "section_id": 32,
+      "text": "We ran a mixed analysis of variance on the percentage of faces judged as human with face type (White AI, White human) within subjects and participant race (White, non-White) between subjects and found no significant main effect of participant race, F(1, 313) = 1.23, MSE = 267.22, p = .268, or interaction with face type, F(1, 313) = 1.01, MSE = 581.35, p = .316.",
+      "page_number": null
+    },
+    {
+      "text_id": 209,
+      "paragraph_id": 78,
+      "section_id": 32,
+      "text": "However, the other-race effect arises from a lack of early-life exposure to other-race faces (McKone et al., 2019;Singh et al., 2022), which may be unevenly distributed across non-White participants.",
+      "page_number": null
+    },
+    {
+      "text_id": 210,
+      "paragraph_id": 78,
+      "section_id": 32,
+      "text": "Therefore, we took a conservative approach and recruited only White participants in the current studies.",
+      "page_number": null
+    },
+    {
+      "text_id": 211,
+      "paragraph_id": 78,
+      "section_id": 32,
+      "text": "2.",
+      "page_number": null
+    },
+    {
+      "text_id": 212,
+      "paragraph_id": 78,
+      "section_id": 32,
+      "text": "Constructing a binomial regression model instead of a linear one yielded a nearly identical pattern of results (Supplemental File S11).",
+      "page_number": null
+    },
+    {
+      "text_id": 213,
+      "paragraph_id": 78,
+      "section_id": 32,
+      "text": "3.",
+      "page_number": null
+    },
+    {
+      "text_id": 214,
+      "paragraph_id": 78,
+      "section_id": 32,
+      "text": "We were interested in whether the attributes differed for human versus AI faces and whether each attribute relates to perceptions of faces being human rather than to how these attributes relate to each other.",
+      "page_number": null
+    },
+    {
+      "text_id": 215,
+      "paragraph_id": 78,
+      "section_id": 32,
+      "text": "By allowing all attributes to correlate, we excuse model-fit issues generated by these expected covariances.",
+      "page_number": null
+    },
+    {
+      "text_id": 216,
+      "paragraph_id": 79,
+      "section_id": 33,
+      "text": "Fig 1 Schematic illustration of face-space theory: A potential explanation for AI hyperrealism.",
+      "page_number": null
+    },
+    {
+      "text_id": 217,
+      "paragraph_id": 79,
+      "section_id": 33,
+      "text": "Orange dots show sample distribution of human faces; purple dots show hypothesized distribution of AI faces.",
+      "page_number": null
+    },
+    {
+      "text_id": 218,
+      "paragraph_id": 79,
+      "section_id": 33,
+      "text": "We focus on relevant abstract principles of face-space theory (e.g., relating to single images of faces in human perception).",
+      "page_number": null
+    },
+    {
+      "text_id": 219,
+      "paragraph_id": 79,
+      "section_id": 33,
+      "text": "For more nuanced discussions, see Burton et al.",
+      "page_number": null
+    },
+    {
+      "text_id": 220,
+      "paragraph_id": 79,
+      "section_id": 33,
+      "text": "(2016), O'Toole et al. (2018), and Valentine et al.",
+      "page_number": null
+    },
+    {
+      "text_id": 221,
+      "paragraph_id": 79,
+      "section_id": 33,
+      "text": "(2016).",
+      "page_number": null
+    },
+    {
+      "text_id": 222,
+      "paragraph_id": 79,
+      "section_id": 33,
+      "text": "For psychophysics-related work, seeAbudarham and Yovel (2016) andRhodes and Jeffery (2006).",
+      "page_number": null
+    },
+    {
+      "text_id": 223,
+      "paragraph_id": 80,
+      "section_id": 34,
+      "text": ") = 13.17, p < .001, d = 0.74, 95% CI = [0.62, 0.87].",
+      "page_number": null
+    },
+    {
+      "text_id": 224,
+      "paragraph_id": 80,
+      "section_id": 34,
+      "text": "The d ′",
+      "page_number": null
+    },
+    {
+      "text_id": 225,
+      "paragraph_id": 81,
+      "section_id": 35,
+      "text": "Fig 2 Reanalysis of data from Experiment 1 of Nightingale and Farid (2022) and results for current Experiment 1.",
+      "page_number": null
+    },
+    {
+      "text_id": 226,
+      "paragraph_id": 81,
+      "section_id": 35,
+      "text": "Error bars represent 95% confidence intervals.",
+      "page_number": null
+    },
+    {
+      "text_id": 227,
+      "paragraph_id": 81,
+      "section_id": 35,
+      "text": "N&F E1 = data from Nightingale and Farid (2022), Experiment 1; n.s. = nonsignificant. **p < .01. ***p < .001.",
+      "page_number": null
+    },
+    {
+      "text_id": 228,
+      "paragraph_id": 82,
+      "section_id": 36,
+      "text": "Fig 3 Faces judged most often as (a) human and (b) AI.",
+      "page_number": null
+    },
+    {
+      "text_id": 229,
+      "paragraph_id": 82,
+      "section_id": 36,
+      "text": "The stimulus type (AI or human; male or female), the stimulus ID (Nightingale & Farid, 2022), and the percentage of participants who judged the face as (a) human or (b) AI are listed below each face.",
+      "page_number": null
+    },
+    {
+      "text_id": 230,
+      "paragraph_id": 83,
+      "section_id": 37,
+      "text": "Fig 4 Qualitative responses from Experiment 1: percentage of codes (N = 546) in each theme.",
+      "page_number": null
+    },
+    {
+      "text_id": 231,
+      "paragraph_id": 83,
+      "section_id": 37,
+      "text": "Subthemes are shown at the outside edge of the main theme.",
+      "page_number": null
+    },
+    {
+      "text_id": 232,
+      "paragraph_id": 84,
+      "section_id": 38,
+      "text": "Experiment 2 Visual-Attribute Rating Conditions",
+      "page_number": null
+    },
+    {
+      "text_id": 233,
+      "paragraph_id": 85,
+      "section_id": 39,
+      "text": "Standardized Coefficients for Each Attribute (Ordered by β Weight) in Our Linear Regression Model Predicting Experiment 1 Stimulus-Level Percentage Judged as HumanLens model testing contributions of each attribute to (mis)judgment of faces as human (ordered by indirect effect size).",
+      "page_number": null
+    },
+    {
+      "text_id": 234,
+      "paragraph_id": 85,
+      "section_id": 39,
+      "text": "Red boxes show significant negative indirect effectsattributes that were utilized in the wrong direction to judge AI/human status.",
+      "page_number": null
+    },
+    {
+      "text_id": 235,
+      "paragraph_id": 85,
+      "section_id": 39,
+      "text": "Green boxes show significant positive indirect effects (attributes that contributed to accurate AI/human judgments).",
+      "page_number": null
+    },
+    {
+      "text_id": 236,
+      "paragraph_id": 85,
+      "section_id": 39,
+      "text": "Gray boxes show attributes that are useful for detecting AI faces but were not utilized by human observers.",
+      "page_number": null
+    },
+    {
+      "text_id": 237,
+      "paragraph_id": 85,
+      "section_id": 39,
+      "text": "Dashed lines indicate nonsignificant effects (see TableS13in",
+      "page_number": null
+    },
+    {
+      "text_id": 238,
+      "paragraph_id": 86,
+      "section_id": 40,
+      "text": "Confusion Matrix of Correct and Incorrect Machine Classifications",
+      "page_number": null
+    },
+    {
+      "text_id": 239,
+      "paragraph_id": 87,
+      "section_id": 41,
+      "text": "Abudarham, N., & Yovel, G. (2016). Reverse engineering the face space: Discovering the critical features for face iden- tification. Journal of Vision, 16(3), Article 40. https://doi .org/10.1167/16.3.40",
+      "page_number": null
+    },
+    {
+      "text_id": 240,
+      "paragraph_id": 88,
+      "section_id": 41,
+      "text": "Bond, S. (2023, March 23). It takes a few dollars and 8 min- utes to create a deepfake. And that's only the start. NPR. https://www.npr.org/2023/03/23/1165146797/it-takes- a-few-dollars-and-8-minutes-to-create-a-deepfake-and- thats-only-the-sta",
+      "page_number": null
+    },
+    {
+      "text_id": 241,
+      "paragraph_id": 89,
+      "section_id": 41,
+      "text": "Braun, V., & Clarke, V. (2006). Using thematic analysis in psychology. Quantitative Research in Psychology, 3(2), 77-101. https://doi.org/10.1191/1478088706qp063oa",
+      "page_number": null
+    },
+    {
+      "text_id": 242,
+      "paragraph_id": 90,
+      "section_id": 41,
+      "text": "Brunswik, E. (1956). Perception and the representative design of psychological experiments. University of California Press.",
+      "page_number": null
+    },
+    {
+      "text_id": 243,
+      "paragraph_id": 91,
+      "section_id": 41,
+      "text": "Burton, A. M., Kramer, R. S. S., Ritchie, K. L., & Jenkins, R. (2016). Identity from variation: Representations of faces derived from multiple instances. Cognitive Science, 40(1), 202-223. https://doi.org/10.1111/cogs.12231",
+      "page_number": null
+    },
+    {
+      "text_id": 244,
+      "paragraph_id": 92,
+      "section_id": 41,
+      "text": "Chan, E. R., Nagano, K., Chan, M. A., Bergman, A. W., Park, J. J., Levy, A., Aittala, M., De Mello, S., Karras, T., & Wetzstein, G. (2023, April 5). Generative novel view syn- thesis with 3D-aware diffusion models. ArXiv.org. https:// arxiv.org/abs/2304.02602v1",
+      "page_number": null
+    },
+    {
+      "text_id": 245,
+      "paragraph_id": 93,
+      "section_id": 41,
+      "text": "Chandaliya, P. K., & Nain, N. (2022). ChildGAN: Face aging and rejuvenation to find missing children. Pattern Recognition, 129, Article 108761. https://doi.org/10.1016/ j.patcog.2022.108761",
+      "page_number": null
+    },
+    {
+      "text_id": 246,
+      "paragraph_id": 94,
+      "section_id": 41,
+      "text": "Dawel, A., Miller, E. J., Horsburgh, A., & Ford, P. (2022). A systematic survey of face stimuli used in psychological research 2000-2020. Behavior Research Methods, 54(4), 1889-1901. https://doi.org/10.3758/s13428-021-01705-3",
+      "page_number": null
+    },
+    {
+      "text_id": 247,
+      "paragraph_id": 95,
+      "section_id": 41,
+      "text": "Devlin, H. (2023, May 3). AI 'could be as transformative as Industrial Revolution.' The Guardian. https://www.the guardian.com/technology/2023/may/03/ai-could-be-as- transformative-as-industrial-revolution-patrick-vallance Flowe, H. D., Humphries, J. E., Takarangi, M. K., Zelek, K., Karoğlu, N., Gabbert, F., & Hope, L. (2019). An experimental examination of the effects of alcohol con- sumption and exposure to misleading postevent infor- mation on remembering a hypothetical rape scenario. Applied Cognitive Psychology, 33(3), 393-413. https://doi .org/10.1002/acp.3531",
+      "page_number": null
+    },
+    {
+      "text_id": 248,
+      "paragraph_id": 96,
+      "section_id": 41,
+      "text": "Grossman, S., Gaziv, G., Yeagle, E. M., Harel, M., Mégevand, P., Groppe, D. M., Khuvis, S., Herrero, J. L., Irani, M., Mehta, A. D., & Malach, R. (2019). Convergent evolution of face spaces across human face-selective neuronal groups and deep convolutional networks. Nature Communications, 10(1), Article 1. https://doi.org/10.1038/s41467-019-12623-6",
+      "page_number": null
+    },
+    {
+      "text_id": 249,
+      "paragraph_id": 97,
+      "section_id": 41,
+      "text": "Hall, J. A., Horgan, T. G., & Murphy, N. A. (2019). Nonverbal Communication. Annual Review of Psychology, 70(1), 271-294. https://doi.org/10.1146/annurev-psych-010418- 103145",
+      "page_number": null
+    },
+    {
+      "text_id": 250,
+      "paragraph_id": 98,
+      "section_id": 41,
+      "text": "Hao, K. (2021, June 11). These creepy fake humans herald a new age in AI. MIT Technology Review. https://www .technologyreview.com/2021/06/11/1026135/ai-synthetic- data/ Hatmaker, T. (2020, September 22). Chinese propaganda net- work on Facebook used AI-generated faces. TechCrunch. https://techcrunch.com/2020/09/22/facebook-gans-takes- down-networks-of-fake-accounts-originating-in-china- and-the-philippines/",
+      "page_number": null
+    },
+    {
+      "text_id": 251,
+      "paragraph_id": 99,
+      "section_id": 41,
+      "text": "JASP Team. (2023). JASP (0.17) [Computer software]. https:// jasp-stats.org/ Karras, T., Laine, S., & Aila, T. (2021). A style-based gen- erator architecture for Generative Adversarial Networks. IEEE Transactions on Pattern Analysis and Machine Intelligence, 43(12), 4217-4228. https://doi.org/10.1109/ TPAMI.2020.2970919",
+      "page_number": null
+    },
+    {
+      "text_id": 252,
+      "paragraph_id": 100,
+      "section_id": 41,
+      "text": "Karras, T., Laine, S., Aittala, M., Hellsten, J., Lehtinen, J., & Aila, T. (2020). Analyzing and improving the image quality of StyleGAN. https://openaccess.thecvf.com/con tent_CVPR_2020/html/Karras_Analyzing_and_Improving_ the_Image_Quality_of_StyleGAN_CVPR_2020_paper.html",
+      "page_number": null
+    },
+    {
+      "text_id": 253,
+      "paragraph_id": 101,
+      "section_id": 41,
+      "text": "Kruger, J., & Dunning, D. (1999). Unskilled and unaware of it: How difficulties in recognizing one's own incompetence lead to inflated self-assessments. Journal of Personality and Social Psychology, 77(6), 1121-1134. https://doi .org/10.1037/0022-3514.77.6.1121",
+      "page_number": null
+    },
+    {
+      "text_id": 254,
+      "paragraph_id": 102,
+      "section_id": 41,
+      "text": "Maniscalco, B., & Lau, H. (2012). A signal detection theoretic approach for estimating metacognitive sensitivity from confidence ratings. Consciousness and Cognition, 21(1), 422-430. https://doi.org/10.1016/j.concog.2011.09.021",
+      "page_number": null
+    },
+    {
+      "text_id": 255,
+      "paragraph_id": 103,
+      "section_id": 41,
+      "text": "Maniscalco, B., & Lau, H. (2014). Signal detection theory analysis of type 1 and type 2 data: Meta-d ′ , response- specific meta-d ′ , and the unequal variance SDT model. In S. M. Fleming & C. D. Frith (Eds.), The cognitive neu- roscience of metacognition (pp. 25-66). Springer. https:// doi.org/10.1007/978-3-642-45190-4_3",
+      "page_number": null
+    },
+    {
+      "text_id": 256,
+      "paragraph_id": 104,
+      "section_id": 41,
+      "text": "McKone, E., Wan, L., Pidcock, M., Crookes, K., Reynolds, K., Dawel, A., Kidd, E., & Fiorentini, C. (2019). A critical period for faces: Other-race face recognition is improved by childhood but not adult social contact. Scientific Reports, 9(1), Article 12820. https://doi.org/10.1038/ s41598-019-49202-0",
+      "page_number": null
+    },
+    {
+      "text_id": 257,
+      "paragraph_id": 105,
+      "section_id": 41,
+      "text": "McLoughlin, N., Tipper, S. P., & Over, H. (2018). Young children perceive less humanness in outgroup faces. Developmental Science, 21(2), Article e12539. https://doi .org/10.1111/desc.12539",
+      "page_number": null
+    },
+    {
+      "text_id": 258,
+      "paragraph_id": 106,
+      "section_id": 41,
+      "text": "Meissner, C. A., & Brigham, J. C. (2001). Thirty years of investigating the own-race bias in memory for faces: A meta-analytic review. Psychology, Public Policy, and Law, 7(1), 3-35. https://doi.org/10.1037/1076-8971.7.1.3",
+      "page_number": null
+    },
+    {
+      "text_id": 259,
+      "paragraph_id": 107,
+      "section_id": 41,
+      "text": "Miller, E. J., Foo, Y. Z., Mewton, P., & Dawel, A. (2023). How do people respond to computer-generated versus human faces? A systematic review and meta-analyses. Computers in Human Behavior Reports, 10, Article 100283. https:// doi.org/10.1016/j.chbr.2023.100283",
+      "page_number": null
+    },
+    {
+      "text_id": 260,
+      "paragraph_id": 108,
+      "section_id": 41,
+      "text": "Miller, J. W., O'Neill, C., Constantinou, N. C., & Azencot, O. (2022, December 23). Eigenvalue initialisation and regu- larisation for Koopman autoencoders. ArXiv.org. https:// arxiv.org/abs/2212.12086v2",
+      "page_number": null
+    },
+    {
+      "text_id": 261,
+      "paragraph_id": 109,
+      "section_id": 41,
+      "text": "Nightingale, S. J., & Farid, H. (2022). AI-synthesized faces are indistinguishable from real faces and more trustworthy. Proceedings of the National Academy of Sciences, USA, 119(8), Article e2120481119. https://doi.org/10.1073/pnas .2120481119",
+      "page_number": null
+    },
+    {
+      "text_id": 262,
+      "paragraph_id": 110,
+      "section_id": 41,
+      "text": "O'Toole, A. J., Castillo, C. D., Parde, C. J., Hill, M. Q., & Chellappa, R. (2018). Face space representations in deep convolutional neural networks. Trends in Cognitive Sciences, 22(9), 794-809. https://doi.org/10.1016/j.tics .2018.06.006",
+      "page_number": null
+    },
+    {
+      "text_id": 263,
+      "paragraph_id": 111,
+      "section_id": 41,
+      "text": "Palermo, R., Rossion, B., Rhodes, G., Laguesse, R., Tez, T., Hall, B., Albonico, A., Malaspina, M., Daini, R., Irons, J., Al-Janabi, S., Taylor, L. C., Rivolta, D., & McKone, E. (2017). Do people have insight into their face recognition abilities? Quarterly Journal of Experimental Psychology, 70(2), 218-233. https://doi.org/10.1080/17470218.2016 .1161058",
+      "page_number": null
+    },
+    {
+      "text_id": 264,
+      "paragraph_id": 112,
+      "section_id": 41,
+      "text": "Peterson, J. C., Uddenberg, S., Griffiths, T. L., Todorov, A., & Suchow, J. W. (2022). Deep models of superficial face judgments. Proceedings of the National Academy of Sciences, USA, 119(17), Article e2115228119. https://doi .org/10.1073/pnas.2115228119",
+      "page_number": null
+    },
+    {
+      "text_id": 265,
+      "paragraph_id": 113,
+      "section_id": 41,
+      "text": "Ramon, M., Bobak, A. K., & White, D. (2019). Super- recognizers: From the lab to the world and back again. British Journal of Psychology, 110(3), 461-479. https:// doi.org/10.1111/bjop.12368",
+      "page_number": null
+    },
+    {
+      "text_id": 266,
+      "paragraph_id": 114,
+      "section_id": 41,
+      "text": "R Core Team. (2021). R: A language and environment for statistical computing (4.2.1) [Computer software].",
+      "page_number": null
+    },
+    {
+      "text_id": 267,
+      "paragraph_id": 115,
+      "section_id": 41,
+      "text": "R Foundation for Statistical Computing. https://www.R- project.org/ Rhodes, G. (2006). The evolutionary psychology of facial beauty. Annual Review of Psychology, 57(1), 199-226. https://doi.org/10.1146/annurev.psych.57.102904.190208",
+      "page_number": null
+    },
+    {
+      "text_id": 268,
+      "paragraph_id": 116,
+      "section_id": 41,
+      "text": "Rhodes, G., & Jeffery, L. (2006). Adaptive norm-based cod- ing of facial identity. Vision Research, 46(18), 2977-2987. https://doi.org/10.1016/j.visres.2006.03.002",
+      "page_number": null
+    },
+    {
+      "text_id": 269,
+      "paragraph_id": 117,
+      "section_id": 41,
+      "text": "Rosseel, Y. (2012). lavaan: An R package for structural equa- tion modeling. Journal of Statistical Software, 48(2), 1-36. https://doi.org/10.18637/jss.v048.i02",
+      "page_number": null
+    },
+    {
+      "text_id": 270,
+      "paragraph_id": 118,
+      "section_id": 41,
+      "text": "Satter, R. (2021, April 20). Experts: Spy used AI-generated face to connect with targets. AP News. https://apnews.com/arti cle/ap-top-news-artificial-intelligence-social-platforms- think-tanks-politics-bc2f19097a4c4fffaa00de6770b8a60d",
+      "page_number": null
+    },
+    {
+      "text_id": 271,
+      "paragraph_id": 119,
+      "section_id": 41,
+      "text": "Shen, B., RichardWebster, B., O'Toole, A., Bowyer, K., & Scheirer, W. J. (2021). A study of the human percep- tion of synthetic faces. In 2021 16th IEEE International Conference on Automatic Face and Gesture Recognition (FG 2021) (pp. 1-8). https://doi.org/10.1109/FG52635 .2021.9667066",
+      "page_number": null
+    },
+    {
+      "text_id": 272,
+      "paragraph_id": 120,
+      "section_id": 41,
+      "text": "Singh, B., Mellinger, C., Earls, H. A., Tran, J., Bardsley, B., & Correll, J. (2022). Does cross-race contact improve cross-race face perception? A meta-analysis of the cross-race deficit and contact. Personality and Social Psychology Bulletin, 48(6), 865-887. https://doi.org/10 .1177/01461672211024463",
+      "page_number": null
+    },
+    {
+      "text_id": 273,
+      "paragraph_id": 121,
+      "section_id": 41,
+      "text": "Szpitalak, M., Woltmann, A., Polczyk, R., & Kękuś, M. (2021). Memory training as a method for reducing the misin- formation effect. Current Psychology, 40(11), 5410-5419. https://doi.org/10.1007/s12144-019-00490-9",
+      "page_number": null
+    },
+    {
+      "text_id": 274,
+      "paragraph_id": 122,
+      "section_id": 41,
+      "text": "Tucciarelli, R., Vehar, N., Chandaria, S., & Tsakiris, M. (2022). On the realness of people who do not exist: The social processing of artificial faces. IScience, 25(12), Article 105441. https://doi.org/10.1016/j.isci.2022.105441",
+      "page_number": null
+    },
+    {
+      "text_id": 275,
+      "paragraph_id": 123,
+      "section_id": 41,
+      "text": "Valentine, T. (1991). A unified account of the effects of distinctive- ness, inversion, and race in face recognition. The Quarterly Journal of Experimental Psychology Section A, 43(2), 161- 204. https://doi.org/10.1080/14640749108400966",
+      "page_number": null
+    },
+    {
+      "text_id": 276,
+      "paragraph_id": 124,
+      "section_id": 41,
+      "text": "Valentine, T., Lewis, M. B., & Hills, P. J. (2016). Face-space: A unifying concept in face recognition research. Quarterly Journal of Experimental Psychology, 69(10), 1996-2019. https://doi.org/10.1080/17470218.2014.990392",
+      "page_number": null
+    },
+    {
+      "text_id": 277,
+      "paragraph_id": 125,
+      "section_id": 41,
+      "text": "Vokey, J. R., & Read, J. D. (1992). Familiarity, memorability, and the effect of typicality on the recognition of faces. Memory & Cognition, 20(3), 291-302. https://doi.org/ 10.3758/BF03199666",
+      "page_number": null
+    },
+    {
+      "text_id": 278,
+      "paragraph_id": 126,
+      "section_id": 41,
+      "text": "Wixted, J. T., & Wells, G. L. (2017). The relationship between eyewitness confidence and identification accuracy: A new synthesis. Psychological Science in the Public Interest, 18(1), 10-65. https://doi.org/10.1177/1529100616686966",
+      "page_number": null
+    },
+    {
+      "text_id": 279,
+      "paragraph_id": 127,
+      "section_id": 41,
+      "text": "Xie, H. (2023). The promising future of cognitive science and artificial intelligence. Nature Reviews Psychology, 2(4), Article 4. https://doi.org/10.1038/s44159-023-00170-3",
+      "page_number": null
+    }
+  ],
+  "section": [
+    {
+      "section_id": 0,
+      "header": "Abstract",
+      "parent_section_id": null,
+      "section_type": "abstract",
+      "classification_score": null
+    },
+    {
+      "section_id": 1,
+      "header": "[div-01]",
+      "parent_section_id": null,
+      "section_type": "intro",
+      "classification_score": null
+    },
+    {
+      "section_id": 2,
+      "header": "The Present Research",
+      "parent_section_id": null,
+      "section_type": "intro",
+      "classification_score": null
+    },
+    {
+      "section_id": 3,
+      "header": "Statement of Relevance",
+      "parent_section_id": null,
+      "section_type": "intro",
+      "classification_score": null
+    },
+    {
+      "section_id": 4,
+      "header": "Experiment 1",
+      "parent_section_id": null,
+      "section_type": "intro",
+      "classification_score": null
+    },
+    {
+      "section_id": 5,
+      "header": "Open practices statement",
+      "parent_section_id": null,
+      "section_type": "intro",
+      "classification_score": null
+    },
+    {
+      "section_id": 6,
+      "header": "Method and participants",
+      "parent_section_id": null,
+      "section_type": "method",
+      "classification_score": null
+    },
+    {
+      "section_id": 7,
+      "header": "Stimulus materials",
+      "parent_section_id": null,
+      "section_type": "method",
+      "classification_score": null
+    },
+    {
+      "section_id": 8,
+      "header": "Procedure",
+      "parent_section_id": null,
+      "section_type": "method",
+      "classification_score": null
+    },
+    {
+      "section_id": 10,
+      "header": "Analytic strategy",
+      "parent_section_id": null,
+      "section_type": "results",
+      "classification_score": null
+    },
+    {
+      "section_id": 11,
+      "header": "(Supplemental File S7).",
+      "parent_section_id": null,
+      "section_type": "results",
+      "classification_score": null
+    },
+    {
+      "section_id": 12,
+      "header": "AI hyperrealism is robust",
+      "parent_section_id": null,
+      "section_type": "results",
+      "classification_score": null
+    },
+    {
+      "section_id": 13,
+      "header": "Do people have insight into their AI detection errors?",
+      "parent_section_id": null,
+      "section_type": "results",
+      "classification_score": null
+    },
+    {
+      "section_id": 14,
+      "header": "What visual attributes do participants report using to judge faces as AI versus human?",
+      "parent_section_id": null,
+      "section_type": "results",
+      "classification_score": null
+    },
+    {
+      "section_id": 15,
+      "header": "Experiment 2",
+      "parent_section_id": null,
+      "section_type": "results",
+      "classification_score": null
+    },
+    {
+      "section_id": 17,
+      "header": "Participants",
+      "parent_section_id": null,
+      "section_type": "method",
+      "classification_score": null
+    },
+    {
+      "section_id": 18,
+      "header": "Procedure",
+      "parent_section_id": null,
+      "section_type": "method",
+      "classification_score": null
+    },
+    {
+      "section_id": 20,
+      "header": "Analytic strategy",
+      "parent_section_id": null,
+      "section_type": "results",
+      "classification_score": null
+    },
+    {
+      "section_id": 21,
+      "header": "Which visual attributes contribute to faces being judged as human?",
+      "parent_section_id": null,
+      "section_type": "results",
+      "classification_score": null
+    },
+    {
+      "section_id": 22,
+      "header": "Which attributes contribute to AI hyperrealism?",
+      "parent_section_id": null,
+      "section_type": "results",
+      "classification_score": null
+    },
+    {
+      "section_id": 23,
+      "header": "Can human-perceived attributes be used to accurately classify AI and human faces?",
+      "parent_section_id": null,
+      "section_type": "results",
+      "classification_score": null
+    },
+    {
+      "section_id": 24,
+      "header": "General Discussion",
+      "parent_section_id": null,
+      "section_type": "discussion",
+      "classification_score": null
+    },
+    {
+      "section_id": 25,
+      "header": "Conclusion",
+      "parent_section_id": null,
+      "section_type": "discussion",
+      "classification_score": null
+    },
+    {
+      "section_id": 26,
+      "header": "Transparency",
+      "parent_section_id": null,
+      "section_type": "discussion",
+      "classification_score": null
+    },
+    {
+      "section_id": 27,
+      "header": "Acknowledgment",
+      "parent_section_id": null,
+      "section_type": "acknowledgement",
+      "classification_score": null
+    },
+    {
+      "section_id": 28,
+      "header": "Funding",
+      "parent_section_id": null,
+      "section_type": "funding",
+      "classification_score": null
+    },
+    {
+      "section_id": 29,
+      "header": "Declaration of Conflicting Interests",
+      "parent_section_id": null,
+      "section_type": "conflict",
+      "classification_score": null
+    },
+    {
+      "section_id": 30,
+      "header": "Declaration of Conflicting Interests",
+      "parent_section_id": null,
+      "section_type": "conflict",
+      "classification_score": null
+    },
+    {
+      "section_id": 31,
+      "header": "Author Contributions",
+      "parent_section_id": null,
+      "section_type": "contribution",
+      "classification_score": null
+    },
+    {
+      "section_id": 32,
+      "header": "Supplemental Material",
+      "parent_section_id": null,
+      "section_type": "annex",
+      "classification_score": null
+    },
+    {
+      "section_id": 33,
+      "header": "Fig 1",
+      "parent_section_id": null,
+      "section_type": "figure",
+      "classification_score": null
+    },
+    {
+      "section_id": 34,
+      "header": "",
+      "parent_section_id": null,
+      "section_type": "figure",
+      "classification_score": null
+    },
+    {
+      "section_id": 35,
+      "header": "Fig 2",
+      "parent_section_id": null,
+      "section_type": "figure",
+      "classification_score": null
+    },
+    {
+      "section_id": 36,
+      "header": "Fig 3",
+      "parent_section_id": null,
+      "section_type": "figure",
+      "classification_score": null
+    },
+    {
+      "section_id": 37,
+      "header": "Fig 4",
+      "parent_section_id": null,
+      "section_type": "figure",
+      "classification_score": null
+    },
+    {
+      "section_id": 38,
+      "header": "Table 1 .",
+      "parent_section_id": null,
+      "section_type": "table",
+      "classification_score": null
+    },
+    {
+      "section_id": 39,
+      "header": "Table 2 .",
+      "parent_section_id": null,
+      "section_type": "table",
+      "classification_score": null
+    },
+    {
+      "section_id": 40,
+      "header": "Table 3 .",
+      "parent_section_id": null,
+      "section_type": "table",
+      "classification_score": null
+    },
+    {
+      "section_id": 41,
+      "header": "References",
+      "parent_section_id": null,
+      "section_type": "references",
+      "classification_score": null
+    }
+  ],
+  "url": [
+    {
+      "href": "person-does-not-exist.com",
+      "link_text": null,
+      "text_id": 10
+    },
+    {
+      "href": "osf.io/sz2fe",
+      "link_text": null,
+      "text_id": 61
+    },
+    {
+      "href": "prolific.co",
+      "link_text": null,
+      "text_id": 65
+    },
+    {
+      "href": "osf.io/ru36d",
+      "link_text": null,
+      "text_id": 70
+    },
+    {
+      "href": "osf.io/sz2fe",
+      "link_text": null,
+      "text_id": 149
+    },
+    {
+      "href": "journals.sagepub.com/doi/suppl/10.1177/09567976231207095",
+      "link_text": null,
+      "text_id": 206
+    }
+  ],
+  "bib": [
+    {
+      "bib_type": "article",
+      "doi": "10.1167/16.3.40",
+      "title": "Reverse engineering the face space: Discovering the critical features for face identification",
+      "authors": "Abudarham, N; Yovel, G",
+      "editors": "",
+      "publisher": "",
+      "year": 2016,
+      "volume": "16",
+      "issue": "3",
+      "first_page": "40",
+      "container": "Journal of Vision",
+      "last_page": null,
+      "bib_id": 0,
+      "year_suffix": "",
+      "text_id": 239
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "It takes a few dollars and 8 minutes to create a deepfake. And that's only the start",
+      "authors": "Bond, S",
+      "editors": "",
+      "publisher": "",
+      "year": 2023,
+      "volume": "",
+      "issue": "",
+      "first_page": null,
+      "container": "NPR",
+      "last_page": null,
+      "bib_id": 1,
+      "year_suffix": "",
+      "text_id": 240
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1191/1478088706qp063oa",
+      "title": "Using thematic analysis in psychology",
+      "authors": "Braun, V; Clarke, V",
+      "editors": "",
+      "publisher": "",
+      "year": 2006,
+      "volume": "3",
+      "issue": "2",
+      "first_page": "77",
+      "container": "Quantitative Research in Psychology",
+      "last_page": "101",
+      "bib_id": 2,
+      "year_suffix": "",
+      "text_id": 241
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "",
+      "authors": "Brunswik, E",
+      "editors": "",
+      "publisher": "University of California Press",
+      "year": 1956,
+      "volume": "",
+      "issue": "",
+      "first_page": null,
+      "container": "",
+      "last_page": null,
+      "bib_id": 3,
+      "year_suffix": "",
+      "text_id": 242
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1111/cogs.12231",
+      "title": "Identity from variation: Representations of faces derived from multiple instances",
+      "authors": "Burton, A M; Kramer, R S S; Ritchie, K L; Jenkins, R",
+      "editors": "",
+      "publisher": "",
+      "year": 2016,
+      "volume": "40",
+      "issue": "1",
+      "first_page": "202",
+      "container": "Cognitive Science",
+      "last_page": "223",
+      "bib_id": 4,
+      "year_suffix": "",
+      "text_id": 243
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "Generative novel view synthesis with 3D-aware diffusion models",
+      "authors": "Chan, E R; Nagano, K; Chan, M A; Bergman, A W; Park, J J; Levy, A; Aittala, M; De Mello, S; Karras, T; Wetzstein, G",
+      "editors": "",
+      "publisher": "",
+      "year": 2023,
+      "volume": "",
+      "issue": "",
+      "first_page": null,
+      "container": "ArXiv.org",
+      "last_page": null,
+      "bib_id": 5,
+      "year_suffix": "",
+      "text_id": 244
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1016/j.patcog.2022.108761",
+      "title": "ChildGAN: Face aging and rejuvenation to find missing children",
+      "authors": "Chandaliya, P K; Nain, N",
+      "editors": "",
+      "publisher": "",
+      "year": 2022,
+      "volume": "",
+      "issue": "",
+      "first_page": "129",
+      "container": "Pattern Recognition",
+      "last_page": "108761",
+      "bib_id": 6,
+      "year_suffix": "",
+      "text_id": 245
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.3758/s13428-021-01705-3",
+      "title": "A systematic survey of face stimuli used in psychological research 2000-2020",
+      "authors": "Dawel, A; Miller, E J; Horsburgh, A; Ford, P",
+      "editors": "",
+      "publisher": "",
+      "year": 2022,
+      "volume": "54",
+      "issue": "4",
+      "first_page": "1889",
+      "container": "Behavior Research Methods",
+      "last_page": "1901",
+      "bib_id": 7,
+      "year_suffix": "",
+      "text_id": 246
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1002/acp.3531",
+      "title": "An experimental examination of the effects of alcohol consumption and exposure to misleading postevent information on remembering a hypothetical rape scenario",
+      "authors": "Devlin, H; Flowe, H D; Humphries, J E; Takarangi, M K; Zelek, K; Karoğlu, N; Gabbert, F; Hope, L",
+      "editors": "",
+      "publisher": "",
+      "year": 2023,
+      "volume": "33",
+      "issue": "",
+      "first_page": "393",
+      "container": "",
+      "last_page": "413",
+      "bib_id": 8,
+      "year_suffix": "",
+      "text_id": 247
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1038/s41467-019-12623-6",
+      "title": "Convergent evolution of face spaces across human face-selective neuronal groups and deep convolutional networks",
+      "authors": "Grossman, S; Gaziv, G; Yeagle, E M; Harel, M; Mégevand, P; Groppe, D M; Khuvis, S; Herrero, J L; Irani, M; Mehta, A D; Malach, R",
+      "editors": "",
+      "publisher": "",
+      "year": 2019,
+      "volume": "10",
+      "issue": "1",
+      "first_page": null,
+      "container": "Nature Communications",
+      "last_page": null,
+      "bib_id": 9,
+      "year_suffix": "",
+      "text_id": 248
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1146/annurev-psych-010418-103145",
+      "title": "Nonverbal Communication",
+      "authors": "Hall, J A; Horgan, T G; Murphy, N A",
+      "editors": "",
+      "publisher": "",
+      "year": 2019,
+      "volume": "70",
+      "issue": "1",
+      "first_page": "271",
+      "container": "Annual Review of Psychology",
+      "last_page": "294",
+      "bib_id": 10,
+      "year_suffix": "",
+      "text_id": 249
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "Chinese propaganda network on Facebook used AI-generated faces",
+      "authors": "Hao, K",
+      "editors": "",
+      "publisher": "",
+      "year": 2021,
+      "volume": "",
+      "issue": "",
+      "first_page": null,
+      "container": "",
+      "last_page": null,
+      "bib_id": 11,
+      "year_suffix": "",
+      "text_id": 250
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1109/TPAMI.2020.2970919",
+      "title": "A style-based generator architecture for Generative Adversarial Networks",
+      "authors": "Jasp Team, T; Laine, S; Aila, T",
+      "editors": "",
+      "publisher": "",
+      "year": 2023,
+      "volume": "43",
+      "issue": "12",
+      "first_page": "4217",
+      "container": "IEEE Transactions on Pattern Analysis and Machine Intelligence",
+      "last_page": "4228",
+      "bib_id": 12,
+      "year_suffix": "",
+      "text_id": 251
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "",
+      "authors": "Karras, T; Laine, S; Aittala, M; Hellsten, J; Lehtinen, J; Aila, T",
+      "editors": "",
+      "publisher": "",
+      "year": 2020,
+      "volume": "",
+      "issue": "",
+      "first_page": null,
+      "container": "",
+      "last_page": null,
+      "bib_id": 13,
+      "year_suffix": "",
+      "text_id": 252
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1037/0022-3514.77.6.1121",
+      "title": "Unskilled and unaware of it: How difficulties in recognizing one's own incompetence lead to inflated self-assessments",
+      "authors": "Kruger, J; Dunning, D",
+      "editors": "",
+      "publisher": "",
+      "year": 1999,
+      "volume": "77",
+      "issue": "6",
+      "first_page": "1121",
+      "container": "Journal of Personality and Social Psychology",
+      "last_page": "1134",
+      "bib_id": 14,
+      "year_suffix": "",
+      "text_id": 253
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1016/j.concog.2011.09.021",
+      "title": "A signal detection theoretic approach for estimating metacognitive sensitivity from confidence ratings",
+      "authors": "Maniscalco, B; Lau, H",
+      "editors": "",
+      "publisher": "",
+      "year": 2012,
+      "volume": "21",
+      "issue": "1",
+      "first_page": "422",
+      "container": "Consciousness and Cognition",
+      "last_page": "430",
+      "bib_id": 15,
+      "year_suffix": "",
+      "text_id": 254
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1007/978-3-642-45190-4_3",
+      "title": "Signal detection theory analysis of type 1 and type 2 data: Meta-d ′ , responsespecific meta-d ′ , and the unequal variance SDT model",
+      "authors": "Maniscalco, B; Lau, H",
+      "editors": "Fleming, S M; Frith, C D",
+      "publisher": "Springer",
+      "year": 2014,
+      "volume": "",
+      "issue": "",
+      "first_page": "25",
+      "container": "",
+      "last_page": "66",
+      "bib_id": 16,
+      "year_suffix": "",
+      "text_id": 255
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1038/s41598-019-49202-0",
+      "title": "A critical period for faces: Other-race face recognition is improved by childhood but not adult social contact",
+      "authors": "Mckone, E; Wan, L; Pidcock, M; Crookes, K; Reynolds, K; Dawel, A; Kidd, E; Fiorentini, C",
+      "editors": "",
+      "publisher": "",
+      "year": 2019,
+      "volume": "9",
+      "issue": "",
+      "first_page": null,
+      "container": "",
+      "last_page": null,
+      "bib_id": 17,
+      "year_suffix": "",
+      "text_id": 256
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1111/desc.12539",
+      "title": "Young children perceive less humanness in outgroup faces",
+      "authors": "Mcloughlin, N; Tipper, S P; Over, H",
+      "editors": "",
+      "publisher": "",
+      "year": 2018,
+      "volume": "21",
+      "issue": "2",
+      "first_page": "e12539",
+      "container": "Developmental Science",
+      "last_page": null,
+      "bib_id": 18,
+      "year_suffix": "",
+      "text_id": 257
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1037/1076-8971.7.1.3",
+      "title": "Thirty years of investigating the own-race bias in memory for faces: A meta-analytic review",
+      "authors": "Meissner, C A; Brigham, J C",
+      "editors": "",
+      "publisher": "",
+      "year": 2001,
+      "volume": "7",
+      "issue": "1",
+      "first_page": "3",
+      "container": "Public Policy, and Law",
+      "last_page": "35",
+      "bib_id": 19,
+      "year_suffix": "",
+      "text_id": 258
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1016/j.chbr.2023.100283",
+      "title": "How do people respond to computer-generated versus human faces? A systematic review and meta-analyses",
+      "authors": "Miller, E J; Foo, Y Z; Mewton, P; Dawel, A",
+      "editors": "",
+      "publisher": "",
+      "year": 2023,
+      "volume": "",
+      "issue": "",
+      "first_page": "10",
+      "container": "Computers in Human Behavior Reports",
+      "last_page": "100283",
+      "bib_id": 20,
+      "year_suffix": "",
+      "text_id": 259
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "Eigenvalue initialisation and regularisation for Koopman autoencoders",
+      "authors": "Miller, J W; O'neill, C; Constantinou, N C; Azencot, O",
+      "editors": "",
+      "publisher": "",
+      "year": 2022,
+      "volume": "",
+      "issue": "",
+      "first_page": null,
+      "container": "ArXiv.org",
+      "last_page": null,
+      "bib_id": 21,
+      "year_suffix": "",
+      "text_id": 260
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1073/pnas.2120481119",
+      "title": "AI-synthesized faces are indistinguishable from real faces and more trustworthy",
+      "authors": "Nightingale, S J; Farid, H",
+      "editors": "",
+      "publisher": "",
+      "year": 2022,
+      "volume": "119",
+      "issue": "8",
+      "first_page": null,
+      "container": "Proceedings of the National Academy of Sciences, USA",
+      "last_page": null,
+      "bib_id": 22,
+      "year_suffix": "",
+      "text_id": 261
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1016/j.tics.2018.06.006",
+      "title": "Face space representations in deep convolutional neural networks",
+      "authors": "O'toole, A J; Castillo, C D; Parde, C J; Hill, M Q; Chellappa, R",
+      "editors": "",
+      "publisher": "",
+      "year": 2018,
+      "volume": "22",
+      "issue": "9",
+      "first_page": "794",
+      "container": "Trends in Cognitive Sciences",
+      "last_page": "809",
+      "bib_id": 23,
+      "year_suffix": "",
+      "text_id": 262
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1080/17470218.2016.1161058",
+      "title": "Do people have insight into their face recognition abilities?",
+      "authors": "Palermo, R; Rossion, B; Rhodes, G; Laguesse, R; Tez, T; Hall, B; Albonico, A; Malaspina, M; Daini, R; Irons, J; Al-Janabi, S; Taylor, L C; Rivolta, D; Mckone, E",
+      "editors": "",
+      "publisher": "",
+      "year": 2017,
+      "volume": "70",
+      "issue": "2",
+      "first_page": "218",
+      "container": "Quarterly Journal of Experimental Psychology",
+      "last_page": "233",
+      "bib_id": 24,
+      "year_suffix": "",
+      "text_id": 263
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1073/pnas.2115228119",
+      "title": "Deep models of superficial face judgments",
+      "authors": "Peterson, J C; Uddenberg, S; Griffiths, T L; Todorov, A; Suchow, J W",
+      "editors": "",
+      "publisher": "",
+      "year": 2022,
+      "volume": "119",
+      "issue": "17",
+      "first_page": null,
+      "container": "Proceedings of the National Academy of Sciences",
+      "last_page": null,
+      "bib_id": 25,
+      "year_suffix": "",
+      "text_id": 264
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1111/bjop.12368",
+      "title": "Superrecognizers: From the lab to the world and back again",
+      "authors": "Ramon, M; Bobak, A K; White, D",
+      "editors": "",
+      "publisher": "",
+      "year": 2019,
+      "volume": "110",
+      "issue": "3",
+      "first_page": "461",
+      "container": "British Journal of Psychology",
+      "last_page": "479",
+      "bib_id": 26,
+      "year_suffix": "",
+      "text_id": 265
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "",
+      "authors": "",
+      "editors": "",
+      "publisher": "",
+      "year": 2021,
+      "volume": "",
+      "issue": "",
+      "first_page": null,
+      "container": "",
+      "last_page": null,
+      "bib_id": 27,
+      "year_suffix": "",
+      "text_id": 266
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1146/annurev.psych.57.102904.190208",
+      "title": "The evolutionary psychology of facial beauty",
+      "authors": "",
+      "editors": "",
+      "publisher": "",
+      "year": 2006,
+      "volume": "57",
+      "issue": "",
+      "first_page": "199",
+      "container": "",
+      "last_page": "226",
+      "bib_id": 28,
+      "year_suffix": "",
+      "text_id": 267
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1016/j.visres.2006.03.002",
+      "title": "Adaptive norm-based coding of facial identity",
+      "authors": "Rhodes, G; Jeffery, L",
+      "editors": "",
+      "publisher": "",
+      "year": 2006,
+      "volume": "46",
+      "issue": "18",
+      "first_page": "2977",
+      "container": "Vision Research",
+      "last_page": "2987",
+      "bib_id": 29,
+      "year_suffix": "",
+      "text_id": 268
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.18637/jss.v048.i02",
+      "title": "lavaan: An R package for structural equation modeling",
+      "authors": "Rosseel, Y",
+      "editors": "",
+      "publisher": "",
+      "year": 2012,
+      "volume": "48",
+      "issue": "2",
+      "first_page": "1",
+      "container": "Journal of Statistical Software",
+      "last_page": "36",
+      "bib_id": 30,
+      "year_suffix": "",
+      "text_id": 269
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "Experts: Spy used AI-generated face to connect with targets",
+      "authors": "Satter, R",
+      "editors": "",
+      "publisher": "",
+      "year": 2021,
+      "volume": "",
+      "issue": "",
+      "first_page": "60",
+      "container": "AP News",
+      "last_page": null,
+      "bib_id": 31,
+      "year_suffix": "",
+      "text_id": 270
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1109/FG52635.2021.9667066",
+      "title": "A study of the human perception of synthetic faces",
+      "authors": "Shen, B; Richardwebster, B; O'toole, A; Bowyer, K; Scheirer, W J",
+      "editors": "",
+      "publisher": "",
+      "year": 2021,
+      "volume": "",
+      "issue": "",
+      "first_page": "1",
+      "container": "",
+      "last_page": "8",
+      "bib_id": 32,
+      "year_suffix": "",
+      "text_id": 271
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1177/01461672211024463",
+      "title": "Does cross-race contact improve cross-race face perception? A meta-analysis of the cross-race deficit and contact",
+      "authors": "Singh, B; Mellinger, C; Earls, H A; Tran, J; Bardsley, B; Correll, J",
+      "editors": "",
+      "publisher": "",
+      "year": 2022,
+      "volume": "48",
+      "issue": "6",
+      "first_page": "865",
+      "container": "Personality and Social Psychology Bulletin",
+      "last_page": "887",
+      "bib_id": 33,
+      "year_suffix": "",
+      "text_id": 272
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1007/s12144-019-00490-9",
+      "title": "Memory training as a method for reducing the misinformation effect",
+      "authors": "Szpitalak, M; Woltmann, A; Polczyk, R; Kękuś, M",
+      "editors": "",
+      "publisher": "",
+      "year": 2021,
+      "volume": "40",
+      "issue": "11",
+      "first_page": "5410",
+      "container": "Current Psychology",
+      "last_page": "5419",
+      "bib_id": 34,
+      "year_suffix": "",
+      "text_id": 273
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1016/j.isci.2022.105441",
+      "title": "On the realness of people who do not exist: The social processing of artificial faces",
+      "authors": "Tucciarelli, R; Vehar, N; Chandaria, S; Tsakiris, M",
+      "editors": "",
+      "publisher": "",
+      "year": 2022,
+      "volume": "25",
+      "issue": "",
+      "first_page": null,
+      "container": "",
+      "last_page": null,
+      "bib_id": 35,
+      "year_suffix": "",
+      "text_id": 274
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1080/14640749108400966",
+      "title": "A unified account of the effects of distinctiveness, inversion, and race in face recognition",
+      "authors": "Valentine, T",
+      "editors": "",
+      "publisher": "",
+      "year": 1991,
+      "volume": "43",
+      "issue": "2",
+      "first_page": "161",
+      "container": "The Quarterly Journal of Experimental Psychology Section A",
+      "last_page": "204",
+      "bib_id": 36,
+      "year_suffix": "",
+      "text_id": 275
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1080/17470218.2014.990392",
+      "title": "Face-space: A unifying concept in face recognition research",
+      "authors": "Valentine, T; Lewis, M B; Hills, P J",
+      "editors": "",
+      "publisher": "",
+      "year": 2016,
+      "volume": "69",
+      "issue": "10",
+      "first_page": "1996",
+      "container": "Quarterly Journal of Experimental Psychology",
+      "last_page": "2019",
+      "bib_id": 37,
+      "year_suffix": "",
+      "text_id": 276
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.3758/BF03199666",
+      "title": "Familiarity, memorability, and the effect of typicality on the recognition of faces",
+      "authors": "Vokey, J R; Read, J D",
+      "editors": "",
+      "publisher": "",
+      "year": 1992,
+      "volume": "20",
+      "issue": "3",
+      "first_page": "291",
+      "container": "Memory & Cognition",
+      "last_page": "302",
+      "bib_id": 38,
+      "year_suffix": "",
+      "text_id": 277
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1177/1529100616686966",
+      "title": "The relationship between eyewitness confidence and identification accuracy: A new synthesis",
+      "authors": "Wixted, J T; Wells, G L",
+      "editors": "",
+      "publisher": "",
+      "year": 2017,
+      "volume": "18",
+      "issue": "1",
+      "first_page": "10",
+      "container": "Psychological Science in the Public Interest",
+      "last_page": "65",
+      "bib_id": 39,
+      "year_suffix": "",
+      "text_id": 278
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1038/s44159-023-00170-3",
+      "title": "The promising future of cognitive science and artificial intelligence",
+      "authors": "Xie, H",
+      "editors": "",
+      "publisher": "",
+      "year": 2023,
+      "volume": "2",
+      "issue": "4",
+      "first_page": null,
+      "container": "Nature Reviews Psychology",
+      "last_page": null,
+      "bib_id": 40,
+      "year_suffix": "",
+      "text_id": 279
+    }
+  ],
+  "xref": [
+    {
+      "xref_id": 0,
+      "xref_type": "bib",
+      "contents": "Abudarham and Yovel (2016)",
+      "text_id": 36
+    },
+    {
+      "xref_id": 0,
+      "xref_type": "bib",
+      "contents": "Abudarham and Yovel (2016)",
+      "text_id": 222
+    },
+    {
+      "xref_id": 1,
+      "xref_type": "bib",
+      "contents": "(Bond, 2023)",
+      "text_id": 181
+    },
+    {
+      "xref_id": 2,
+      "xref_type": "bib",
+      "contents": "Braun and Clarke (2006)",
+      "text_id": 89
+    },
+    {
+      "xref_id": 3,
+      "xref_type": "bib",
+      "contents": "(Brunswik, 1956;",
+      "text_id": null
+    },
+    {
+      "xref_id": 4,
+      "xref_type": "bib",
+      "contents": "Burton et al., 2016;",
+      "text_id": 180
+    },
+    {
+      "xref_id": 5,
+      "xref_type": "bib",
+      "contents": "(Chan et al., 2023)",
+      "text_id": 179
+    },
+    {
+      "xref_id": 6,
+      "xref_type": "bib",
+      "contents": "(Chandaliya & Nain, 2022)",
+      "text_id": 10
+    },
+    {
+      "xref_id": 6,
+      "xref_type": "bib",
+      "contents": "(Chandaliya & Nain, 2022;",
+      "text_id": 32
+    },
+    {
+      "xref_id": 7,
+      "xref_type": "bib",
+      "contents": "(Dawel et al., 2022)",
+      "text_id": 32
+    },
+    {
+      "xref_id": 7,
+      "xref_type": "bib",
+      "contents": "(Dawel et al., 2022;",
+      "text_id": 172
+    },
+    {
+      "xref_id": 8,
+      "xref_type": "bib",
+      "contents": "(Devlin, 2023)",
+      "text_id": 9
+    },
+    {
+      "xref_id": 9,
+      "xref_type": "bib",
+      "contents": "(Grossman et al., 2019)",
+      "text_id": 20
+    },
+    {
+      "xref_id": 10,
+      "xref_type": "bib",
+      "contents": "Hall et al.",
+      "text_id": null
+    },
+    {
+      "xref_id": 11,
+      "xref_type": "bib",
+      "contents": "(Hao, 2021)",
+      "text_id": 12
+    },
+    {
+      "xref_id": 13,
+      "xref_type": "bib",
+      "contents": "Karras et al., 2020",
+      "text_id": 20
+    },
+    {
+      "xref_id": 14,
+      "xref_type": "bib",
+      "contents": "(Kruger & Dunning, 1999)",
+      "text_id": 106
+    },
+    {
+      "xref_id": 15,
+      "xref_type": "bib",
+      "contents": "Maniscalco & Lau, 2012",
+      "text_id": 64
+    },
+    {
+      "xref_id": 15,
+      "xref_type": "bib",
+      "contents": "(Maniscalco & Lau, 2012",
+      "text_id": 88
+    },
+    {
+      "xref_id": 16,
+      "xref_type": "bib",
+      "contents": ", 2014)",
+      "text_id": 64
+    },
+    {
+      "xref_id": 16,
+      "xref_type": "bib",
+      "contents": ", 2014)",
+      "text_id": 88
+    },
+    {
+      "xref_id": 17,
+      "xref_type": "bib",
+      "contents": "(McKone et al., 2019;",
+      "text_id": 67
+    },
+    {
+      "xref_id": 17,
+      "xref_type": "bib",
+      "contents": "(McKone et al., 2019;",
+      "text_id": 209
+    },
+    {
+      "xref_id": 18,
+      "xref_type": "bib",
+      "contents": "(McLoughlin et al., 2018)",
+      "text_id": 67
+    },
+    {
+      "xref_id": 19,
+      "xref_type": "bib",
+      "contents": "Meissner & Brigham, 2001",
+      "text_id": 67
+    },
+    {
+      "xref_id": 20,
+      "xref_type": "bib",
+      "contents": "E. J. Miller et al., 2023)",
+      "text_id": 172
+    },
+    {
+      "xref_id": 21,
+      "xref_type": "bib",
+      "contents": "Miller et al., 2022)",
+      "text_id": 153
+    },
+    {
+      "xref_id": 22,
+      "xref_type": "bib",
+      "contents": "Nightingale & Farid, 2022)",
+      "text_id": 11
+    },
+    {
+      "xref_id": 22,
+      "xref_type": "bib",
+      "contents": "(Nightingale & Farid, 2022)",
+      "text_id": 23
+    },
+    {
+      "xref_id": 22,
+      "xref_type": "bib",
+      "contents": "(Nightingale & Farid, 2022)",
+      "text_id": 29
+    },
+    {
+      "xref_id": 22,
+      "xref_type": "bib",
+      "contents": "Nightingale and Farid (2022)",
+      "text_id": 23
+    },
+    {
+      "xref_id": 22,
+      "xref_type": "bib",
+      "contents": "Nightingale and Farid (2022)",
+      "text_id": 29
+    },
+    {
+      "xref_id": 22,
+      "xref_type": "bib",
+      "contents": "Nightingale and Farid (2022)",
+      "text_id": 53
+    },
+    {
+      "xref_id": 22,
+      "xref_type": "bib",
+      "contents": "(Nightingale & Farid, 2022",
+      "text_id": 53
+    },
+    {
+      "xref_id": 22,
+      "xref_type": "bib",
+      "contents": "Nightingale and Farid (2022)",
+      "text_id": 59
+    },
+    {
+      "xref_id": 22,
+      "xref_type": "bib",
+      "contents": "Nightingale and Farid (2022)",
+      "text_id": 92
+    },
+    {
+      "xref_id": 22,
+      "xref_type": "bib",
+      "contents": "Nightingale and Farid (2022)",
+      "text_id": 95
+    },
+    {
+      "xref_id": 22,
+      "xref_type": "bib",
+      "contents": "Nightingale and Farid's (2022)",
+      "text_id": null
+    },
+    {
+      "xref_id": 23,
+      "xref_type": "bib",
+      "contents": "O'Toole et al., 2018)",
+      "text_id": 180
+    },
+    {
+      "xref_id": 24,
+      "xref_type": "bib",
+      "contents": "Palermo et al., 2017;",
+      "text_id": 48
+    },
+    {
+      "xref_id": 24,
+      "xref_type": "bib",
+      "contents": "(Palermo et al., 2017;",
+      "text_id": 106
+    },
+    {
+      "xref_id": 25,
+      "xref_type": "bib",
+      "contents": "(Peterson et al., 2022)",
+      "text_id": 74
+    },
+    {
+      "xref_id": 26,
+      "xref_type": "bib",
+      "contents": "Ramon et al., 2019)",
+      "text_id": 186
+    },
+    {
+      "xref_id": 29,
+      "xref_type": "bib",
+      "contents": "Rhodes and Jeffery (2006)",
+      "text_id": 36
+    },
+    {
+      "xref_id": 29,
+      "xref_type": "bib",
+      "contents": "(Rhodes, 2006)",
+      "text_id": null
+    },
+    {
+      "xref_id": 29,
+      "xref_type": "bib",
+      "contents": "Rhodes and Jeffery (2006)",
+      "text_id": 222
+    },
+    {
+      "xref_id": 31,
+      "xref_type": "bib",
+      "contents": "(Satter, 2021)",
+      "text_id": 74
+    },
+    {
+      "xref_id": 31,
+      "xref_type": "bib",
+      "contents": "Satter, 2021)",
+      "text_id": 162
+    },
+    {
+      "xref_id": 32,
+      "xref_type": "bib",
+      "contents": "(Shen et al., 2021;",
+      "text_id": 23
+    },
+    {
+      "xref_id": 32,
+      "xref_type": "bib",
+      "contents": "(Shen et al., 2021;",
+      "text_id": 28
+    },
+    {
+      "xref_id": 32,
+      "xref_type": "bib",
+      "contents": "Shen et al. (2021)",
+      "text_id": 23
+    },
+    {
+      "xref_id": 32,
+      "xref_type": "bib",
+      "contents": "Shen et al. (2021)",
+      "text_id": 28
+    },
+    {
+      "xref_id": 32,
+      "xref_type": "bib",
+      "contents": "Shen et al. (2021)",
+      "text_id": null
+    },
+    {
+      "xref_id": 33,
+      "xref_type": "bib",
+      "contents": "Singh et al., 2022)",
+      "text_id": 209
+    },
+    {
+      "xref_id": 34,
+      "xref_type": "bib",
+      "contents": "Szpitalak et al. (2021)",
+      "text_id": 182
+    },
+    {
+      "xref_id": 35,
+      "xref_type": "bib",
+      "contents": "Tucciarelli et al., 2022)",
+      "text_id": 23
+    },
+    {
+      "xref_id": 35,
+      "xref_type": "bib",
+      "contents": "Tucciarelli et al., 2022)",
+      "text_id": 28
+    },
+    {
+      "xref_id": 35,
+      "xref_type": "bib",
+      "contents": "Tucciarelli et al. (2022)",
+      "text_id": 23
+    },
+    {
+      "xref_id": 35,
+      "xref_type": "bib",
+      "contents": "Tucciarelli et al. (2022)",
+      "text_id": 28
+    },
+    {
+      "xref_id": 35,
+      "xref_type": "bib",
+      "contents": "Tucciarelli et al.'s (2022)",
+      "text_id": 23
+    },
+    {
+      "xref_id": 35,
+      "xref_type": "bib",
+      "contents": "Tucciarelli et al.'s (2022)",
+      "text_id": 28
+    },
+    {
+      "xref_id": 35,
+      "xref_type": "bib",
+      "contents": "Tucciarelli et al. (2022)",
+      "text_id": 47
+    },
+    {
+      "xref_id": 35,
+      "xref_type": "bib",
+      "contents": "Tucciarelli et al. (2022)",
+      "text_id": null
+    },
+    {
+      "xref_id": 35,
+      "xref_type": "bib",
+      "contents": "Tucciarelli et al.'s (2022)",
+      "text_id": 169
+    },
+    {
+      "xref_id": 36,
+      "xref_type": "bib",
+      "contents": "Valentine, 1991;",
+      "text_id": null
+    },
+    {
+      "xref_id": 37,
+      "xref_type": "bib",
+      "contents": "Valentine et al., 2016)",
+      "text_id": null
+    },
+    {
+      "xref_id": 37,
+      "xref_type": "bib",
+      "contents": "(Valentine et al., 2016;",
+      "text_id": 51
+    },
+    {
+      "xref_id": 37,
+      "xref_type": "bib",
+      "contents": "Valentine et al., 2016)",
+      "text_id": 175
+    },
+    {
+      "xref_id": 38,
+      "xref_type": "bib",
+      "contents": "Vokey & Read, 1992)",
+      "text_id": 51
+    },
+    {
+      "xref_id": 39,
+      "xref_type": "bib",
+      "contents": "Wixted & Wells, 2017)",
+      "text_id": 106
+    },
+    {
+      "xref_id": 40,
+      "xref_type": "bib",
+      "contents": "(Xie, 2023)",
+      "text_id": 8
+    },
+    {
+      "xref_id": null,
+      "xref_type": "bib",
+      "contents": "Karras et al., , 2021",
+      "text_id": 20
+    },
+    {
+      "xref_id": null,
+      "xref_type": "bib",
+      "contents": "Hatmaker, 2020)",
+      "text_id": 32
+    },
+    {
+      "xref_id": null,
+      "xref_type": "bib",
+      "contents": "eyewitness identification, Wixted & Wells, 2017)",
+      "text_id": 48
+    },
+    {
+      "xref_id": null,
+      "xref_type": "bib",
+      "contents": "(Karras et al., 2021, used to develop StyleGAN2)",
+      "text_id": 72
+    },
+    {
+      "xref_id": null,
+      "xref_type": "bib",
+      "contents": "Nightingale and Farids's (2022)",
+      "text_id": 163
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "1",
+      "text_id": null
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "1",
+      "text_id": 27
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "2a",
+      "text_id": 55
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "2a",
+      "text_id": 56
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "2a",
+      "text_id": 92
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "2b",
+      "text_id": 99
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "2c",
+      "text_id": 99
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "2d",
+      "text_id": 103
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "2d",
+      "text_id": 104
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "2c",
+      "text_id": 184
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "3",
+      "text_id": 97
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "4",
+      "text_id": 107
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "S14",
+      "text_id": null
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "5",
+      "text_id": null
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "5",
+      "text_id": 145
+    },
+    {
+      "xref_id": null,
+      "xref_type": null,
+      "contents": "2016",
+      "text_id": 35
+    },
+    {
+      "xref_id": null,
+      "xref_type": null,
+      "contents": "2016",
+      "text_id": 36
+    },
+    {
+      "xref_id": null,
+      "xref_type": null,
+      "contents": "314",
+      "text_id": 55
+    },
+    {
+      "xref_id": null,
+      "xref_type": null,
+      "contents": "314",
+      "text_id": 56
+    },
+    {
+      "xref_id": null,
+      "xref_type": null,
+      "contents": "314",
+      "text_id": null
+    },
+    {
+      "xref_id": null,
+      "xref_type": "table",
+      "contents": "1",
+      "text_id": 124
+    },
+    {
+      "xref_id": null,
+      "xref_type": "table",
+      "contents": "S2",
+      "text_id": 68
+    },
+    {
+      "xref_id": null,
+      "xref_type": "table",
+      "contents": "2",
+      "text_id": 137
+    },
+    {
+      "xref_id": null,
+      "xref_type": "table",
+      "contents": "S3",
+      "text_id": 60
+    },
+    {
+      "xref_id": null,
+      "xref_type": "table",
+      "contents": "3",
+      "text_id": 156
+    }
+  ],
+  "figure": [
+    {
+      "figure_id": 1,
+      "section_id": 33,
+      "image": null,
+      "page_number": null
+    },
+    {
+      "figure_id": 2,
+      "section_id": 34,
+      "image": null,
+      "page_number": null
+    },
+    {
+      "figure_id": 3,
+      "section_id": 35,
+      "image": null,
+      "page_number": null
+    },
+    {
+      "figure_id": 4,
+      "section_id": 36,
+      "image": null,
+      "page_number": null
+    },
+    {
+      "figure_id": 5,
+      "section_id": 37,
+      "image": null,
+      "page_number": null
+    }
+  ],
+  "table": [
+    {
+      "table_id": 1,
+      "section_id": 38,
+      "html": "<table>\n  <row>\n    <cell/>\n    <cell>N raters for<\/cell>\n    <cell/>\n    <cell/>\n    <cell/>\n  <\/row>\n  <row>\n    <cell>Attribute<\/cell>\n    <cell>M/F faces<\/cell>\n    <cell>Rating question<\/cell>\n    <cell>Low anchor = 0<\/cell>\n    <cell>High anchor = 100<\/cell>\n  <\/row>\n  <row>\n    <cell>Age<\/cell>\n    <cell>23/21<\/cell>\n    <cell>How old is this person?<\/cell>\n    <cell>0 years<\/cell>\n    <cell>100 years<\/cell>\n  <\/row>\n  <row>\n    <cell>Alive in the eyes/<\/cell>\n    <cell>22/21<\/cell>\n    <cell>When you look at this<\/cell>\n    <cell>Definitely not<\/cell>\n    <cell>Definitely alive<\/cell>\n  <\/row>\n  <row>\n    <cell>uncanny valley a<\/cell>\n    <cell/>\n    <cell>person's eyes, how alive do<\/cell>\n    <cell>alive<\/cell>\n    <cell/>\n  <\/row>\n  <row>\n    <cell/>\n    <cell/>\n    <cell>they seem?<\/cell>\n    <cell/>\n    <cell/>\n  <\/row>\n  <row>\n    <cell>Attractive<\/cell>\n    <cell>20/22<\/cell>\n    <cell>How attractive is this face?<\/cell>\n    <cell>Not at all<\/cell>\n    <cell>Very attractive<\/cell>\n  <\/row>\n  <row>\n    <cell>Congruent lighting<\/cell>\n    <cell>21/21<\/cell>\n    <cell>How much would this face<\/cell>\n    <cell>Not at all<\/cell>\n    <cell>Very much<\/cell>\n  <\/row>\n  <row>\n    <cell/>\n    <cell/>\n    <cell>stand out in a crowd?<\/cell>\n    <cell/>\n    <cell/>\n  <\/row>\n  <row>\n    <cell>Distinctive/average<\/cell>\n    <cell>22/20<\/cell>\n    <cell>How congruent are the<\/cell>\n    <cell>Not at all<\/cell>\n    <cell>Very congruent<\/cell>\n  <\/row>\n  <row>\n    <cell/>\n    <cell/>\n    <cell>lighting and shadows<\/cell>\n    <cell/>\n    <cell/>\n  <\/row>\n  <row>\n    <cell/>\n    <cell/>\n    <cell>across this picture?<\/cell>\n    <cell/>\n    <cell/>\n  <\/row>\n  <row>\n    <cell>Expressive<\/cell>\n    <cell>21/22<\/cell>\n    <cell>How emotionally expressive<\/cell>\n    <cell>Not at all<\/cell>\n    <cell>Very expressive<\/cell>\n  <\/row>\n  <row>\n    <cell/>\n    <cell/>\n    <cell>is this face?<\/cell>\n    <cell/>\n    <cell/>\n  <\/row>\n  <row>\n    <cell>Eye contact<\/cell>\n    <cell>22/22<\/cell>\n    <cell>Is this person making eye<\/cell>\n    <cell>No, they are<\/cell>\n    <cell>Yes, they definitely are<\/cell>\n  <\/row>\n  <row>\n    <cell/>\n    <cell/>\n    <cell>contact with you?<\/cell>\n    <cell>definitely not<\/cell>\n    <cell/>\n  <\/row>\n  <row>\n    <cell>Familiar<\/cell>\n    <cell>21/23<\/cell>\n    <cell>How familiar is this face?<\/cell>\n    <cell>Not at all<\/cell>\n    <cell>Very familiar<\/cell>\n  <\/row>\n  <row>\n    <cell>Genuinely happy<\/cell>\n    <cell>21/21<\/cell>\n    <cell>How happy is this person<\/cell>\n    <cell>Not at all<\/cell>\n    <cell>Very much<\/cell>\n  <\/row>\n  <row>\n    <cell/>\n    <cell/>\n    <cell>genuinely feeling?<\/cell>\n    <cell/>\n    <cell/>\n  <\/row>\n  <row>\n    <cell>Image quality<\/cell>\n    <cell>21/21<\/cell>\n    <cell>How good is the quality of<\/cell>\n    <cell>Poor<\/cell>\n    <cell>Excellent<\/cell>\n  <\/row>\n  <row>\n    <cell/>\n    <cell/>\n    <cell>this picture?<\/cell>\n    <cell/>\n    <cell/>\n  <\/row>\n  <row>\n    <cell>Memorable<\/cell>\n    <cell>21/22<\/cell>\n    <cell>How memorable is this face?<\/cell>\n    <cell>Not at all<\/cell>\n    <cell>Very memorable<\/cell>\n  <\/row>\n  <row>\n    <cell>Proportional/features<\/cell>\n    <cell>21/22<\/cell>\n    <cell>How proportional is this face?<\/cell>\n    <cell>Not at all<\/cell>\n    <cell>Very proportional<\/cell>\n  <\/row>\n  <row>\n    <cell>work as a whole b<\/cell>\n    <cell/>\n    <cell/>\n    <cell/>\n    <cell/>\n  <\/row>\n  <row>\n    <cell>Smooth-skinned/<\/cell>\n    <cell>24/23<\/cell>\n    <cell>How smooth is this person's<\/cell>\n    <cell>Not at all<\/cell>\n    <cell>Very smooth<\/cell>\n  <\/row>\n  <row>\n    <cell>perfectness c<\/cell>\n    <cell/>\n    <cell>skin?<\/cell>\n    <cell/>\n    <cell/>\n  <\/row>\n  <row>\n    <cell>Symmetrical<\/cell>\n    <cell>22/27<\/cell>\n    <cell>How symmetrical is this face?<\/cell>\n    <cell>Not at all<\/cell>\n    <cell>Very symmetrical<\/cell>\n  <\/row>\n<\/table>",
+      "contents": null,
+      "page_number": null
+    },
+    {
+      "table_id": 2,
+      "section_id": 39,
+      "html": "<table>\n  <row>\n    <cell>Attribute<\/cell>\n    <cell>β<\/cell>\n    <cell>SE<\/cell>\n    <cell>t<\/cell>\n    <cell>p<\/cell>\n    <cell>95% CI<\/cell>\n  <\/row>\n  <row>\n    <cell>Proportional<\/cell>\n    <cell>0.67<\/cell>\n    <cell>0.11<\/cell>\n    <cell>6.05<\/cell>\n    <cell>&lt; .001***<\/cell>\n    <cell>[0.45, 0.89]<\/cell>\n  <\/row>\n  <row>\n    <cell>Alive in the eyes<\/cell>\n    <cell>0.37<\/cell>\n    <cell>0.08<\/cell>\n    <cell>4.56<\/cell>\n    <cell>&lt; .001***<\/cell>\n    <cell>[0.21, 0.53]<\/cell>\n  <\/row>\n  <row>\n    <cell>Expressive<\/cell>\n    <cell>0.23<\/cell>\n    <cell>0.14<\/cell>\n    <cell>1.68<\/cell>\n    <cell>.096 †<\/cell>\n    <cell>[-0.04, 0.51]<\/cell>\n  <\/row>\n  <row>\n    <cell>Familiar<\/cell>\n    <cell>0.20<\/cell>\n    <cell>0.08<\/cell>\n    <cell>2.69<\/cell>\n    <cell>.008**<\/cell>\n    <cell>[0.05, 0.35]<\/cell>\n  <\/row>\n  <row>\n    <cell>Eye contact<\/cell>\n    <cell>-0.01<\/cell>\n    <cell>0.05<\/cell>\n    <cell>-0.17<\/cell>\n    <cell>.864<\/cell>\n    <cell>[-0.11, 0.09]<\/cell>\n  <\/row>\n  <row>\n    <cell>Distinctive/average<\/cell>\n    <cell>-0.04<\/cell>\n    <cell>0.08<\/cell>\n    <cell>-0.45<\/cell>\n    <cell>.654<\/cell>\n    <cell>[-0.19, 0.12]<\/cell>\n  <\/row>\n  <row>\n    <cell>Image quality<\/cell>\n    <cell>-0.08<\/cell>\n    <cell>0.07<\/cell>\n    <cell>-1.10<\/cell>\n    <cell>.274<\/cell>\n    <cell>[-0.22, 0.06]<\/cell>\n  <\/row>\n  <row>\n    <cell>Congruent lighting<\/cell>\n    <cell>-0.10<\/cell>\n    <cell>0.06<\/cell>\n    <cell>-1.63<\/cell>\n    <cell>.104<\/cell>\n    <cell>[-0.22, 0.02]<\/cell>\n  <\/row>\n  <row>\n    <cell>Age<\/cell>\n    <cell>-0.14<\/cell>\n    <cell>0.10<\/cell>\n    <cell>-1.42<\/cell>\n    <cell>.156<\/cell>\n    <cell>[-0.33, 0.05]<\/cell>\n  <\/row>\n  <row>\n    <cell>Memorable<\/cell>\n    <cell>-0.17<\/cell>\n    <cell>0.08<\/cell>\n    <cell>-2.17<\/cell>\n    <cell>.031*<\/cell>\n    <cell>[-0.32, -0.02]<\/cell>\n  <\/row>\n  <row>\n    <cell>Symmetrical<\/cell>\n    <cell>-0.21<\/cell>\n    <cell>0.09<\/cell>\n    <cell>-2.33<\/cell>\n    <cell>.021*<\/cell>\n    <cell>[-0.39, -0.03]<\/cell>\n  <\/row>\n  <row>\n    <cell>Attractive<\/cell>\n    <cell>-0.27<\/cell>\n    <cell>0.09<\/cell>\n    <cell>-2.90<\/cell>\n    <cell>.004**<\/cell>\n    <cell>[-0.45, -0.09]<\/cell>\n  <\/row>\n  <row>\n    <cell>Genuinely happy<\/cell>\n    <cell>-0.28<\/cell>\n    <cell>0.15<\/cell>\n    <cell>-1.81<\/cell>\n    <cell>.071 †<\/cell>\n    <cell>[-0.58, 0.02]<\/cell>\n  <\/row>\n  <row>\n    <cell>Smooth-skinned<\/cell>\n    <cell>-0.61<\/cell>\n    <cell>0.10<\/cell>\n    <cell>-6.07<\/cell>\n    <cell>&lt; .001***<\/cell>\n    <cell>[-0.81, -0.41]<\/cell>\n  <\/row>\n<\/table>",
+      "contents": null,
+      "page_number": null
+    },
+    {
+      "table_id": 3,
+      "section_id": 40,
+      "html": "<table>\n  <row>\n    <cell/>\n    <cell>Actual: AI<\/cell>\n    <cell>Actual: Human<\/cell>\n  <\/row>\n  <row>\n    <cell>Predicted: AI<\/cell>\n    <cell>93<\/cell>\n    <cell>5<\/cell>\n  <\/row>\n  <row>\n    <cell>Predicted: Human<\/cell>\n    <cell>7<\/cell>\n    <cell>95<\/cell>\n  <\/row>\n<\/table>",
+      "contents": null,
+      "page_number": null
+    }
+  ],
+  "eq": [
+    {
+      "text_id": 3,
+      "grp_id": 1,
+      "lhs": "N",
+      "comp": "=",
+      "rhs": "124"
+    },
+    {
+      "text_id": 5,
+      "grp_id": 2,
+      "lhs": "N",
+      "comp": "=",
+      "rhs": "610"
+    },
+    {
+      "text_id": 55,
+      "grp_id": 3,
+      "lhs": "White-AI",
+      "comp": "=",
+      "rhs": "69.5"
+    },
+    {
+      "text_id": 55,
+      "grp_id": 3,
+      "lhs": "White-human",
+      "comp": "=",
+      "rhs": "52.2"
+    },
+    {
+      "text_id": 55,
+      "grp_id": 3,
+      "lhs": "t(314)",
+      "comp": "=",
+      "rhs": "13.25"
+    },
+    {
+      "text_id": 55,
+      "grp_id": 3,
+      "lhs": "p",
+      "comp": "<",
+      "rhs": ".001"
+    },
+    {
+      "text_id": 55,
+      "grp_id": 3,
+      "lhs": "d",
+      "comp": "=",
+      "rhs": "0.75"
+    },
+    {
+      "text_id": 55,
+      "grp_id": 3,
+      "lhs": "interval (CI)",
+      "comp": "=",
+      "rhs": "[0.62, 0.87]"
+    },
+    {
+      "text_id": 55,
+      "grp_id": 3,
+      "lhs": "t(314)",
+      "comp": "=",
+      "rhs": "16.01"
+    },
+    {
+      "text_id": 55,
+      "grp_id": 3,
+      "lhs": "p",
+      "comp": "<",
+      "rhs": ".001"
+    },
+    {
+      "text_id": 55,
+      "grp_id": 3,
+      "lhs": "d",
+      "comp": "=",
+      "rhs": "0.90"
+    },
+    {
+      "text_id": 55,
+      "grp_id": 3,
+      "lhs": "95% CI",
+      "comp": "=",
+      "rhs": "[0.77, 1.03]"
+    },
+    {
+      "text_id": 56,
+      "grp_id": 4,
+      "lhs": "non-White-AI",
+      "comp": "=",
+      "rhs": "50.5"
+    },
+    {
+      "text_id": 56,
+      "grp_id": 4,
+      "lhs": "t(314)",
+      "comp": "=",
+      "rhs": "0.41"
+    },
+    {
+      "text_id": 56,
+      "grp_id": 4,
+      "lhs": "p",
+      "comp": "=",
+      "rhs": ".682"
+    },
+    {
+      "text_id": 56,
+      "grp_id": 4,
+      "lhs": "d",
+      "comp": "=",
+      "rhs": "0.02"
+    },
+    {
+      "text_id": 56,
+      "grp_id": 4,
+      "lhs": "95% CI",
+      "comp": "=",
+      "rhs": "[-0.09, 0.13]"
+    },
+    {
+      "text_id": 56,
+      "grp_id": 4,
+      "lhs": "non-White-human",
+      "comp": "=",
+      "rhs": "51.3"
+    },
+    {
+      "text_id": 56,
+      "grp_id": 4,
+      "lhs": "t(314)",
+      "comp": "=",
+      "rhs": "0.74"
+    },
+    {
+      "text_id": 56,
+      "grp_id": 4,
+      "lhs": "p",
+      "comp": "=",
+      "rhs": ".461"
+    },
+    {
+      "text_id": 56,
+      "grp_id": 4,
+      "lhs": "d",
+      "comp": "=",
+      "rhs": "0.04"
+    },
+    {
+      "text_id": 56,
+      "grp_id": 4,
+      "lhs": "95% CI",
+      "comp": "=",
+      "rhs": "[-0.07, 0.15]"
+    },
+    {
+      "text_id": 57,
+      "grp_id": 5,
+      "lhs": "M",
+      "comp": "=",
+      "rhs": "-.59"
+    },
+    {
+      "text_id": 66,
+      "grp_id": 6,
+      "lhs": "age",
+      "comp": "=",
+      "rhs": "34.4"
+    },
+    {
+      "text_id": 66,
+      "grp_id": 6,
+      "lhs": "SD",
+      "comp": "=",
+      "rhs": "8.0"
+    },
+    {
+      "text_id": 76,
+      "grp_id": 7,
+      "lhs": "faces",
+      "comp": "=",
+      "rhs": "100"
+    },
+    {
+      "text_id": 93,
+      "grp_id": 8,
+      "lhs": "AI",
+      "comp": "=",
+      "rhs": "65.9"
+    },
+    {
+      "text_id": 93,
+      "grp_id": 8,
+      "lhs": "human",
+      "comp": "=",
+      "rhs": "51.1"
+    },
+    {
+      "text_id": 93,
+      "grp_id": 8,
+      "lhs": "t(123)",
+      "comp": "=",
+      "rhs": "7.14"
+    },
+    {
+      "text_id": 93,
+      "grp_id": 8,
+      "lhs": "p",
+      "comp": "<",
+      "rhs": ".001"
+    },
+    {
+      "text_id": 93,
+      "grp_id": 8,
+      "lhs": "d",
+      "comp": "=",
+      "rhs": "0.64"
+    },
+    {
+      "text_id": 93,
+      "grp_id": 8,
+      "lhs": "95% CI",
+      "comp": "=",
+      "rhs": "[0.45, 0.83]"
+    },
+    {
+      "text_id": 93,
+      "grp_id": 8,
+      "lhs": "t(123)",
+      "comp": "=",
+      "rhs": "7.82"
+    },
+    {
+      "text_id": 93,
+      "grp_id": 8,
+      "lhs": "p",
+      "comp": "<",
+      "rhs": ".001"
+    },
+    {
+      "text_id": 93,
+      "grp_id": 8,
+      "lhs": "d",
+      "comp": "=",
+      "rhs": "0.70"
+    },
+    {
+      "text_id": 93,
+      "grp_id": 8,
+      "lhs": "95% CI",
+      "comp": "=",
+      "rhs": "[0.51, 0.90]"
+    },
+    {
+      "text_id": 94,
+      "grp_id": 9,
+      "lhs": "t(123)",
+      "comp": "=",
+      "rhs": "0.60"
+    },
+    {
+      "text_id": 94,
+      "grp_id": 9,
+      "lhs": "p",
+      "comp": "=",
+      "rhs": ".550"
+    },
+    {
+      "text_id": 94,
+      "grp_id": 9,
+      "lhs": "d",
+      "comp": "=",
+      "rhs": "0.05"
+    },
+    {
+      "text_id": 95,
+      "grp_id": 10,
+      "lhs": "t(123)",
+      "comp": "=",
+      "rhs": "5.20"
+    },
+    {
+      "text_id": 95,
+      "grp_id": 10,
+      "lhs": "p",
+      "comp": "<",
+      "rhs": ".001"
+    },
+    {
+      "text_id": 95,
+      "grp_id": 10,
+      "lhs": "d",
+      "comp": "=",
+      "rhs": "0.68"
+    },
+    {
+      "text_id": 95,
+      "grp_id": 10,
+      "lhs": "95% CI",
+      "comp": "=",
+      "rhs": "[0.49, 0.88]"
+    },
+    {
+      "text_id": 99,
+      "grp_id": 11,
+      "lhs": "human",
+      "comp": "=",
+      "rhs": "-.235"
+    },
+    {
+      "text_id": 99,
+      "grp_id": 11,
+      "lhs": "95% CI",
+      "comp": "=",
+      "rhs": "[-.395, -.061]"
+    },
+    {
+      "text_id": 99,
+      "grp_id": 11,
+      "lhs": "p",
+      "comp": "=",
+      "rhs": ".009"
+    },
+    {
+      "text_id": 99,
+      "grp_id": 11,
+      "lhs": "AI",
+      "comp": "=",
+      "rhs": ".385"
+    },
+    {
+      "text_id": 99,
+      "grp_id": 11,
+      "lhs": "95% CI",
+      "comp": "=",
+      "rhs": "[.224, .526]"
+    },
+    {
+      "text_id": 99,
+      "grp_id": 11,
+      "lhs": "p",
+      "comp": "<",
+      "rhs": ".001"
+    },
+    {
+      "text_id": 103,
+      "grp_id": 12,
+      "lhs": "r",
+      "comp": "=",
+      "rhs": ".479"
+    },
+    {
+      "text_id": 103,
+      "grp_id": 12,
+      "lhs": "95% CI",
+      "comp": "=",
+      "rhs": "[.330, .604]"
+    },
+    {
+      "text_id": 103,
+      "grp_id": 12,
+      "lhs": "p",
+      "comp": "<",
+      "rhs": ".001"
+    },
+    {
+      "text_id": 121,
+      "grp_id": 13,
+      "lhs": "age",
+      "comp": "=",
+      "rhs": "35.3"
+    },
+    {
+      "text_id": 121,
+      "grp_id": 13,
+      "lhs": "SD",
+      "comp": "=",
+      "rhs": "8.6"
+    },
+    {
+      "text_id": 122,
+      "grp_id": 14,
+      "lhs": "N",
+      "comp": "=",
+      "rhs": "44"
+    },
+    {
+      "text_id": 136,
+      "grp_id": 15,
+      "lhs": "adj",
+      "comp": "=",
+      "rhs": ".62"
+    },
+    {
+      "text_id": 136,
+      "grp_id": 15,
+      "lhs": "95% CI",
+      "comp": "=",
+      "rhs": "[.57, .72]"
+    },
+    {
+      "text_id": 136,
+      "grp_id": 15,
+      "lhs": "p",
+      "comp": "<",
+      "rhs": ".001"
+    },
+    {
+      "text_id": 141,
+      "grp_id": 16,
+      "lhs": "AI",
+      "comp": "=",
+      "rhs": "0"
+    },
+    {
+      "text_id": 141,
+      "grp_id": 16,
+      "lhs": "human",
+      "comp": "=",
+      "rhs": "1"
+    },
+    {
+      "text_id": 142,
+      "grp_id": 17,
+      "lhs": "indices",
+      "comp": "=",
+      "rhs": "1.00"
+    },
+    {
+      "text_id": 142,
+      "grp_id": 17,
+      "lhs": "indices",
+      "comp": "=",
+      "rhs": "1.00"
+    },
+    {
+      "text_id": 142,
+      "grp_id": 17,
+      "lhs": "approximation",
+      "comp": "=",
+      "rhs": ".00"
+    },
+    {
+      "text_id": 143,
+      "grp_id": 18,
+      "lhs": "β",
+      "comp": "=",
+      "rhs": "-0.41"
+    },
+    {
+      "text_id": 143,
+      "grp_id": 18,
+      "lhs": "z",
+      "comp": "=",
+      "rhs": "-6.26"
+    },
+    {
+      "text_id": 143,
+      "grp_id": 18,
+      "lhs": "p",
+      "comp": "<",
+      "rhs": ".001"
+    },
+    {
+      "text_id": 145,
+      "grp_id": 19,
+      "lhs": "β",
+      "comp": "=",
+      "rhs": "-0.67"
+    },
+    {
+      "text_id": 145,
+      "grp_id": 19,
+      "lhs": "95% CI",
+      "comp": "=",
+      "rhs": "[-.88, -.46]"
+    },
+    {
+      "text_id": 145,
+      "grp_id": 19,
+      "lhs": "z",
+      "comp": "=",
+      "rhs": "-6.10"
+    },
+    {
+      "text_id": 145,
+      "grp_id": 19,
+      "lhs": "p",
+      "comp": "<",
+      "rhs": ".001"
+    },
+    {
+      "text_id": 145,
+      "grp_id": 19,
+      "lhs": "β",
+      "comp": "=",
+      "rhs": "0.37"
+    },
+    {
+      "text_id": 145,
+      "grp_id": 19,
+      "lhs": "95% CI",
+      "comp": "=",
+      "rhs": "[.21, .53]"
+    },
+    {
+      "text_id": 145,
+      "grp_id": 19,
+      "lhs": "z",
+      "comp": "=",
+      "rhs": "4.47"
+    },
+    {
+      "text_id": 145,
+      "grp_id": 19,
+      "lhs": "p",
+      "comp": "<",
+      "rhs": ".001"
+    },
+    {
+      "text_id": 148,
+      "grp_id": 20,
+      "lhs": "β",
+      "comp": "=",
+      "rhs": "-0.22"
+    },
+    {
+      "text_id": 148,
+      "grp_id": 20,
+      "lhs": "95% CI",
+      "comp": "=",
+      "rhs": "[-.40, -.03]"
+    },
+    {
+      "text_id": 148,
+      "grp_id": 20,
+      "lhs": "z",
+      "comp": "=",
+      "rhs": "-2.33"
+    },
+    {
+      "text_id": 148,
+      "grp_id": 20,
+      "lhs": "p",
+      "comp": "=",
+      "rhs": ".020"
+    },
+    {
+      "text_id": 155,
+      "grp_id": 21,
+      "lhs": "mtry",
+      "comp": "=",
+      "rhs": "4"
+    },
+    {
+      "text_id": 156,
+      "grp_id": 22,
+      "lhs": "95% CI",
+      "comp": "=",
+      "rhs": "[91%, 97%]"
+    },
+    {
+      "text_id": 156,
+      "grp_id": 22,
+      "lhs": "z",
+      "comp": "=",
+      "rhs": "56.53"
+    },
+    {
+      "text_id": 156,
+      "grp_id": 22,
+      "lhs": "p",
+      "comp": "<",
+      "rhs": ".001"
+    },
+    {
+      "text_id": 156,
+      "grp_id": 22,
+      "lhs": "k",
+      "comp": "=",
+      "rhs": ".88"
+    },
+    {
+      "text_id": 208,
+      "grp_id": 23,
+      "lhs": "F(1, 313)",
+      "comp": "=",
+      "rhs": "1.23"
+    },
+    {
+      "text_id": 208,
+      "grp_id": 23,
+      "lhs": "MSE",
+      "comp": "=",
+      "rhs": "267.22"
+    },
+    {
+      "text_id": 208,
+      "grp_id": 23,
+      "lhs": "p",
+      "comp": "=",
+      "rhs": ".268"
+    },
+    {
+      "text_id": 208,
+      "grp_id": 23,
+      "lhs": "F(1, 313)",
+      "comp": "=",
+      "rhs": "1.01"
+    },
+    {
+      "text_id": 208,
+      "grp_id": 23,
+      "lhs": "MSE",
+      "comp": "=",
+      "rhs": "581.35"
+    },
+    {
+      "text_id": 208,
+      "grp_id": 23,
+      "lhs": "p",
+      "comp": "=",
+      "rhs": ".316"
+    },
+    {
+      "text_id": 223,
+      "grp_id": 24,
+      "lhs": "p",
+      "comp": "<",
+      "rhs": ".001"
+    },
+    {
+      "text_id": 223,
+      "grp_id": 24,
+      "lhs": "d",
+      "comp": "=",
+      "rhs": "0.74"
+    },
+    {
+      "text_id": 223,
+      "grp_id": 24,
+      "lhs": "95% CI",
+      "comp": "=",
+      "rhs": "[0.62, 0.87]"
+    },
+    {
+      "text_id": 227,
+      "grp_id": 25,
+      "lhs": "p",
+      "comp": "<",
+      "rhs": ".01"
+    },
+    {
+      "text_id": 227,
+      "grp_id": 25,
+      "lhs": "p",
+      "comp": "<",
+      "rhs": ".001"
+    },
+    {
+      "text_id": 230,
+      "grp_id": 26,
+      "lhs": "N",
+      "comp": "=",
+      "rhs": "546"
+    },
+    {
+      "text_id": 68,
+      "grp_id": 27,
+      "lhs": "missed",
+      "comp": ">",
+      "rhs": "10"
+    },
+    {
+      "text_id": 75,
+      "grp_id": 28,
+      "lhs": "at",
+      "comp": "~",
+      "rhs": "50"
+    },
+    {
+      "text_id": 105,
+      "grp_id": 29,
+      "lhs": "versus",
+      "comp": "~",
+      "rhs": "23"
+    },
+    {
+      "text_id": 105,
+      "grp_id": 29,
+      "lhs": "and",
+      "comp": "~",
+      "rhs": "18"
+    }
+  ],
+  "bib_match": [
+    {
+      "bib_id": 0,
+      "service": "crossref",
+      "service_id": null,
+      "score": 98.8487,
+      "bib_type": "article",
+      "doi": "10.1167/16.3.40",
+      "title": "Reverse engineering the face space: Discovering the critical features for face identification",
+      "authors": [
+        {
+          "given": "Naphtali",
+          "family": "Abudarham"
+        },
+        {
+          "given": "Galit",
+          "family": "Yovel"
+        }
+      ],
+      "editors": [],
+      "publisher": "Association for Research in Vision and Ophthalmology (ARVO)",
+      "year": 2016,
+      "date": null,
+      "container": "Journal of Vision",
+      "volume": "16",
+      "issue": "3",
+      "first_page": "40",
+      "last_page": null,
+      "edition": null,
+      "version": null,
+      "url": "https://doi.org/10.1167/16.3.40"
+    },
+    {
+      "bib_id": 2,
+      "service": "crossref",
+      "service_id": null,
+      "score": 53.5076,
+      "bib_type": "article",
+      "doi": "10.1191/1478088706qp063oa",
+      "title": "Using thematic analysis in psychology",
+      "authors": [
+        {
+          "given": "Virginia",
+          "family": "Braun"
+        },
+        {
+          "given": "Victoria",
+          "family": "Clarke"
+        }
+      ],
+      "editors": [],
+      "publisher": "Informa UK Limited",
+      "year": 2006,
+      "date": null,
+      "container": "Qualitative Research in Psychology",
+      "volume": "3",
+      "issue": "2",
+      "first_page": "77",
+      "last_page": "101",
+      "edition": null,
+      "version": null,
+      "url": "https://doi.org/10.1191/1478088706qp063oa"
+    },
+    {
+      "bib_id": 4,
+      "service": "crossref",
+      "service_id": null,
+      "score": 98.6429,
+      "bib_type": "article",
+      "doi": "10.1111/cogs.12231",
+      "title": "Identity From Variation: Representations of Faces Derived From Multiple Instances",
+      "authors": [
+        {
+          "given": "A. Mike",
+          "family": "Burton"
+        },
+        {
+          "given": "Robin S. S.",
+          "family": "Kramer"
+        },
+        {
+          "given": "Kay L.",
+          "family": "Ritchie"
+        },
+        {
+          "given": "Rob",
+          "family": "Jenkins"
+        }
+      ],
+      "editors": [],
+      "publisher": "Wiley",
+      "year": 2015,
+      "date": null,
+      "container": "Cognitive Science",
+      "volume": "40",
+      "issue": "1",
+      "first_page": "202",
+      "last_page": "223",
+      "edition": null,
+      "version": null,
+      "url": "https://doi.org/10.1111/cogs.12231"
+    },
+    {
+      "bib_id": 5,
+      "service": "crossref",
+      "service_id": null,
+      "score": 124.5946,
+      "bib_type": "inproceedings",
+      "doi": "10.1109/iccv51070.2023.00389",
+      "title": "Generative Novel View Synthesis with 3D-Aware Diffusion Models",
+      "authors": [
+        {
+          "given": "Eric R.",
+          "family": "Chan"
+        },
+        {
+          "given": "Koki",
+          "family": "Nagano"
+        },
+        {
+          "given": "Matthew A.",
+          "family": "Chan"
+        },
+        {
+          "given": "Alexander W.",
+          "family": "Bergman"
+        },
+        {
+          "given": "Jeong Joon",
+          "family": "Park"
+        },
+        {
+          "given": "Axel",
+          "family": "Levy"
+        },
+        {
+          "given": "Miika",
+          "family": "Aittala"
+        },
+        {
+          "given": "Shalini",
+          "family": "De Mello"
+        },
+        {
+          "given": "Tero",
+          "family": "Karras"
+        },
+        {
+          "given": "Gordon",
+          "family": "Wetzstein"
+        }
+      ],
+      "editors": [],
+      "publisher": "IEEE",
+      "year": 2023,
+      "date": null,
+      "container": "2023 IEEE/CVF International Conference on Computer Vision (ICCV)",
+      "volume": null,
+      "issue": null,
+      "first_page": "4194",
+      "last_page": "4206",
+      "edition": null,
+      "version": null,
+      "url": "https://doi.org/10.1109/iccv51070.2023.00389"
+    },
+    {
+      "bib_id": 6,
+      "service": "crossref",
+      "service_id": null,
+      "score": 113.4629,
+      "bib_type": "article",
+      "doi": "10.1016/j.patcog.2022.108761",
+      "title": "ChildGAN: Face aging and rejuvenation to find missing children",
+      "authors": [
+        {
+          "given": "Praveen Kumar",
+          "family": "Chandaliya"
+        },
+        {
+          "given": "Neeta",
+          "family": "Nain"
+        }
+      ],
+      "editors": [],
+      "publisher": "Elsevier BV",
+      "year": 2022,
+      "date": null,
+      "container": "Pattern Recognition",
+      "volume": "129",
+      "issue": null,
+      "first_page": "108761",
+      "last_page": null,
+      "edition": null,
+      "version": null,
+      "url": "https://doi.org/10.1016/j.patcog.2022.108761"
+    },
+    {
+      "bib_id": 7,
+      "service": "crossref",
+      "service_id": null,
+      "score": 101.1905,
+      "bib_type": "article",
+      "doi": "10.3758/s13428-021-01705-3",
+      "title": "A systematic survey of face stimuli used in psychological research 2000–2020",
+      "authors": [
+        {
+          "given": "Amy",
+          "family": "Dawel"
+        },
+        {
+          "given": "Elizabeth J.",
+          "family": "Miller"
+        },
+        {
+          "given": "Annabel",
+          "family": "Horsburgh"
+        },
+        {
+          "given": "Patrice",
+          "family": "Ford"
+        }
+      ],
+      "editors": [],
+      "publisher": "Springer Science and Business Media LLC",
+      "year": 2021,
+      "date": null,
+      "container": "Behavior Research Methods",
+      "volume": "54",
+      "issue": "4",
+      "first_page": "1889",
+      "last_page": "1901",
+      "edition": null,
+      "version": null,
+      "url": "https://doi.org/10.3758/s13428-021-01705-3"
+    },
+    {
+      "bib_id": 8,
+      "service": "crossref",
+      "service_id": null,
+      "score": 144.3872,
+      "bib_type": "article",
+      "doi": "10.1002/acp.3531",
+      "title": "An experimental examination of the effects of alcohol consumption and exposure to misleading postevent information on remembering a hypothetical rape scenario",
+      "authors": [
+        {
+          "given": "Heather D.",
+          "family": "Flowe"
+        },
+        {
+          "given": "Joyce E.",
+          "family": "Humphries"
+        },
+        {
+          "given": "Melanie K.",
+          "family": "Takarangi"
+        },
+        {
+          "given": "Kasia",
+          "family": "Zelek"
+        },
+        {
+          "given": "Nilda",
+          "family": "Karoğlu"
+        },
+        {
+          "given": "Fiona",
+          "family": "Gabbert"
+        },
+        {
+          "given": "Lorraine",
+          "family": "Hope"
+        }
+      ],
+      "editors": [],
+      "publisher": "Wiley",
+      "year": 2019,
+      "date": null,
+      "container": "Applied Cognitive Psychology",
+      "volume": "33",
+      "issue": "3",
+      "first_page": "393",
+      "last_page": "413",
+      "edition": null,
+      "version": null,
+      "url": "https://doi.org/10.1002/acp.3531"
+    },
+    {
+      "bib_id": 9,
+      "service": "crossref",
+      "service_id": null,
+      "score": 182.372,
+      "bib_type": "article",
+      "doi": "10.1038/s41467-019-12623-6",
+      "title": "Convergent evolution of face spaces across human face-selective neuronal groups and deep convolutional networks",
+      "authors": [
+        {
+          "given": "Shany",
+          "family": "Grossman"
+        },
+        {
+          "given": "Guy",
+          "family": "Gaziv"
+        },
+        {
+          "given": "Erin M.",
+          "family": "Yeagle"
+        },
+        {
+          "given": "Michal",
+          "family": "Harel"
+        },
+        {
+          "given": "Pierre",
+          "family": "Mégevand"
+        },
+        {
+          "given": "David M.",
+          "family": "Groppe"
+        },
+        {
+          "given": "Simon",
+          "family": "Khuvis"
+        },
+        {
+          "given": "Jose L.",
+          "family": "Herrero"
+        },
+        {
+          "given": "Michal",
+          "family": "Irani"
+        },
+        {
+          "given": "Ashesh D.",
+          "family": "Mehta"
+        },
+        {
+          "given": "Rafael",
+          "family": "Malach"
+        }
+      ],
+      "editors": [],
+      "publisher": "Springer Science and Business Media LLC",
+      "year": 2019,
+      "date": null,
+      "container": "Nature Communications",
+      "volume": "10",
+      "issue": "1",
+      "first_page": null,
+      "last_page": null,
+      "edition": null,
+      "version": null,
+      "url": "https://doi.org/10.1038/s41467-019-12623-6"
+    },
+    {
+      "bib_id": 10,
+      "service": "crossref",
+      "service_id": null,
+      "score": 54.9776,
+      "bib_type": "article",
+      "doi": "10.1146/annurev-psych-010418-103145",
+      "title": "Nonverbal Communication",
+      "authors": [
+        {
+          "given": "Judith A.",
+          "family": "Hall"
+        },
+        {
+          "given": "Terrence G.",
+          "family": "Horgan"
+        },
+        {
+          "given": "Nora A.",
+          "family": "Murphy"
+        }
+      ],
+      "editors": [],
+      "publisher": "Annual Reviews",
+      "year": 2019,
+      "date": null,
+      "container": "Annual Review of Psychology",
+      "volume": "70",
+      "issue": "1",
+      "first_page": "271",
+      "last_page": "294",
+      "edition": null,
+      "version": null,
+      "url": "https://doi.org/10.1146/annurev-psych-010418-103145"
+    },
+    {
+      "bib_id": 12,
+      "service": "crossref",
+      "service_id": null,
+      "score": 90.2255,
+      "bib_type": "article",
+      "doi": "10.1109/tpami.2020.2970919",
+      "title": "A Style-Based Generator Architecture for Generative Adversarial Networks",
+      "authors": [
+        {
+          "given": "Tero",
+          "family": "Karras"
+        },
+        {
+          "given": "Samuli",
+          "family": "Laine"
+        },
+        {
+          "given": "Timo",
+          "family": "Aila"
+        }
+      ],
+      "editors": [],
+      "publisher": "Institute of Electrical and Electronics Engineers (IEEE)",
+      "year": 2021,
+      "date": null,
+      "container": "IEEE Transactions on Pattern Analysis and Machine Intelligence",
+      "volume": "43",
+      "issue": "12",
+      "first_page": "4217",
+      "last_page": "4228",
+      "edition": null,
+      "version": null,
+      "url": "https://doi.org/10.1109/tpami.2020.2970919"
+    },
+    {
+      "bib_id": 13,
+      "service": "crossref",
+      "service_id": null,
+      "score": 66.9163,
+      "bib_type": "inproceedings",
+      "doi": "10.1109/cvpr42600.2020.00813",
+      "title": "Analyzing and Improving the Image Quality of StyleGAN",
+      "authors": [
+        {
+          "given": "Tero",
+          "family": "Karras"
+        },
+        {
+          "given": "Samuli",
+          "family": "Laine"
+        },
+        {
+          "given": "Miika",
+          "family": "Aittala"
+        },
+        {
+          "given": "Janne",
+          "family": "Hellsten"
+        },
+        {
+          "given": "Jaakko",
+          "family": "Lehtinen"
+        },
+        {
+          "given": "Timo",
+          "family": "Aila"
+        }
+      ],
+      "editors": [],
+      "publisher": "IEEE",
+      "year": 2020,
+      "date": null,
+      "container": "2020 IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)",
+      "volume": null,
+      "issue": null,
+      "first_page": "8107",
+      "last_page": "8116",
+      "edition": null,
+      "version": null,
+      "url": "https://doi.org/10.1109/cvpr42600.2020.00813"
+    },
+    {
+      "bib_id": 14,
+      "service": "crossref",
+      "service_id": null,
+      "score": 122.7623,
+      "bib_type": "article",
+      "doi": "10.1037/0022-3514.77.6.1121",
+      "title": "Unskilled and unaware of it: How difficulties in recognizing one's own incompetence lead to inflated self-assessments.",
+      "authors": [
+        {
+          "given": "Justin",
+          "family": "Kruger"
+        },
+        {
+          "given": "David",
+          "family": "Dunning"
+        }
+      ],
+      "editors": [],
+      "publisher": "American Psychological Association (APA)",
+      "year": 1999,
+      "date": null,
+      "container": "Journal of Personality and Social Psychology",
+      "volume": "77",
+      "issue": "6",
+      "first_page": "1121",
+      "last_page": "1134",
+      "edition": null,
+      "version": null,
+      "url": "https://doi.org/10.1037/0022-3514.77.6.1121"
+    },
+    {
+      "bib_id": 15,
+      "service": "crossref",
+      "service_id": null,
+      "score": 109.2457,
+      "bib_type": "article",
+      "doi": "10.1016/j.concog.2011.09.021",
+      "title": "A signal detection theoretic approach for estimating metacognitive sensitivity from confidence ratings",
+      "authors": [
+        {
+          "given": "Brian",
+          "family": "Maniscalco"
+        },
+        {
+          "given": "Hakwan",
+          "family": "Lau"
+        }
+      ],
+      "editors": [],
+      "publisher": "Elsevier BV",
+      "year": 2012,
+      "date": null,
+      "container": "Consciousness and Cognition",
+      "volume": "21",
+      "issue": "1",
+      "first_page": "422",
+      "last_page": "430",
+      "edition": null,
+      "version": null,
+      "url": "https://doi.org/10.1016/j.concog.2011.09.021"
+    },
+    {
+      "bib_id": 16,
+      "service": "crossref",
+      "service_id": null,
+      "score": 96.6837,
+      "bib_type": "incollection",
+      "doi": "10.1007/978-3-642-45190-4_3",
+      "title": "Signal Detection Theory Analysis of Type 1 and Type 2 Data: Meta-d′, Response-Specific Meta-d′, and the Unequal Variance SDT Model",
+      "authors": [
+        {
+          "given": "Brian",
+          "family": "Maniscalco"
+        },
+        {
+          "given": "Hakwan",
+          "family": "Lau"
+        }
+      ],
+      "editors": [],
+      "publisher": "Springer Berlin Heidelberg",
+      "year": 2014,
+      "date": null,
+      "container": "The Cognitive Neuroscience of Metacognition",
+      "volume": null,
+      "issue": null,
+      "first_page": "25",
+      "last_page": "66",
+      "edition": null,
+      "version": null,
+      "url": "https://doi.org/10.1007/978-3-642-45190-4_3"
+    },
+    {
+      "bib_id": 17,
+      "service": "crossref",
+      "service_id": null,
+      "score": 142.5634,
+      "bib_type": "article",
+      "doi": "10.1038/s41598-019-49202-0",
+      "title": "A critical period for faces: Other-race face recognition is improved by childhood but not adult social contact",
+      "authors": [
+        {
+          "given": "Elinor",
+          "family": "McKone"
+        },
+        {
+          "given": "Lulu",
+          "family": "Wan"
+        },
+        {
+          "given": "Madeleine",
+          "family": "Pidcock"
+        },
+        {
+          "given": "Kate",
+          "family": "Crookes"
+        },
+        {
+          "given": "Katherine",
+          "family": "Reynolds"
+        },
+        {
+          "given": "Amy",
+          "family": "Dawel"
+        },
+        {
+          "given": "Evan",
+          "family": "Kidd"
+        },
+        {
+          "given": "Chiara",
+          "family": "Fiorentini"
+        }
+      ],
+      "editors": [],
+      "publisher": "Springer Science and Business Media LLC",
+      "year": 2019,
+      "date": null,
+      "container": "Scientific Reports",
+      "volume": "9",
+      "issue": "1",
+      "first_page": null,
+      "last_page": null,
+      "edition": null,
+      "version": null,
+      "url": "https://doi.org/10.1038/s41598-019-49202-0"
+    },
+    {
+      "bib_id": 18,
+      "service": "crossref",
+      "service_id": null,
+      "score": 108.4331,
+      "bib_type": "article",
+      "doi": "10.1111/desc.12539",
+      "title": "Young children perceive less humanness in outgroup faces",
+      "authors": [
+        {
+          "given": "Niamh",
+          "family": "McLoughlin"
+        },
+        {
+          "given": "Steven P.",
+          "family": "Tipper"
+        },
+        {
+          "given": "Harriet",
+          "family": "Over"
+        }
+      ],
+      "editors": [],
+      "publisher": "Wiley",
+      "year": 2017,
+      "date": null,
+      "container": "Developmental Science",
+      "volume": "21",
+      "issue": "2",
+      "first_page": null,
+      "last_page": null,
+      "edition": null,
+      "version": null,
+      "url": "https://doi.org/10.1111/desc.12539"
+    },
+    {
+      "bib_id": 19,
+      "service": "crossref",
+      "service_id": null,
+      "score": 105.2118,
+      "bib_type": "article",
+      "doi": "10.1037/1076-8971.7.1.3",
+      "title": "Thirty years of investigating the own-race bias in memory for faces: A meta-analytic review.",
+      "authors": [
+        {
+          "given": "Christian A.",
+          "family": "Meissner"
+        },
+        {
+          "given": "John C.",
+          "family": "Brigham"
+        }
+      ],
+      "editors": [],
+      "publisher": "American Psychological Association (APA)",
+      "year": 2001,
+      "date": null,
+      "container": "Psychology, Public Policy, and Law",
+      "volume": "7",
+      "issue": "1",
+      "first_page": "3",
+      "last_page": "35",
+      "edition": null,
+      "version": null,
+      "url": "https://doi.org/10.1037/1076-8971.7.1.3"
+    },
+    {
+      "bib_id": 20,
+      "service": "crossref",
+      "service_id": null,
+      "score": 134.0747,
+      "bib_type": "article",
+      "doi": "10.1016/j.chbr.2023.100283",
+      "title": "How do people respond to computer-generated versus human faces? A systematic review and meta-analyses",
+      "authors": [
+        {
+          "given": "Elizabeth J.",
+          "family": "Miller"
+        },
+        {
+          "given": "Yong Zhi",
+          "family": "Foo"
+        },
+        {
+          "given": "Paige",
+          "family": "Mewton"
+        },
+        {
+          "given": "Amy",
+          "family": "Dawel"
+        }
+      ],
+      "editors": [],
+      "publisher": "Elsevier BV",
+      "year": 2023,
+      "date": null,
+      "container": "Computers in Human Behavior Reports",
+      "volume": "10",
+      "issue": null,
+      "first_page": "100283",
+      "last_page": null,
+      "edition": null,
+      "version": null,
+      "url": "https://doi.org/10.1016/j.chbr.2023.100283"
+    },
+    {
+      "bib_id": 22,
+      "service": "crossref",
+      "service_id": null,
+      "score": 101.7427,
+      "bib_type": "article",
+      "doi": "10.1073/pnas.2120481119",
+      "title": "AI-synthesized faces are indistinguishable from real faces and more trustworthy",
+      "authors": [
+        {
+          "given": "Sophie J.",
+          "family": "Nightingale"
+        },
+        {
+          "given": "Hany",
+          "family": "Farid"
+        }
+      ],
+      "editors": [],
+      "publisher": "Proceedings of the National Academy of Sciences",
+      "year": 2022,
+      "date": null,
+      "container": "Proceedings of the National Academy of Sciences",
+      "volume": "119",
+      "issue": "8",
+      "first_page": null,
+      "last_page": null,
+      "edition": null,
+      "version": null,
+      "url": "https://doi.org/10.1073/pnas.2120481119"
+    },
+    {
+      "bib_id": 23,
+      "service": "crossref",
+      "service_id": null,
+      "score": 96.3986,
+      "bib_type": "article",
+      "doi": "10.1016/j.tics.2018.06.006",
+      "title": "Face Space Representations in Deep Convolutional Neural Networks",
+      "authors": [
+        {
+          "given": "Alice J.",
+          "family": "O’Toole"
+        },
+        {
+          "given": "Carlos D.",
+          "family": "Castillo"
+        },
+        {
+          "given": "Connor J.",
+          "family": "Parde"
+        },
+        {
+          "given": "Matthew Q.",
+          "family": "Hill"
+        },
+        {
+          "given": "Rama",
+          "family": "Chellappa"
+        }
+      ],
+      "editors": [],
+      "publisher": "Elsevier BV",
+      "year": 2018,
+      "date": null,
+      "container": "Trends in Cognitive Sciences",
+      "volume": "22",
+      "issue": "9",
+      "first_page": "794",
+      "last_page": "809",
+      "edition": null,
+      "version": null,
+      "url": "https://doi.org/10.1016/j.tics.2018.06.006"
+    },
+    {
+      "bib_id": 24,
+      "service": "crossref",
+      "service_id": null,
+      "score": 173.4247,
+      "bib_type": "article",
+      "doi": "10.1080/17470218.2016.1161058",
+      "title": "Do People Have Insight into their Face Recognition Abilities?",
+      "authors": [
+        {
+          "given": "Romina",
+          "family": "Palermo"
+        },
+        {
+          "given": "Bruno",
+          "family": "Rossion"
+        },
+        {
+          "given": "Gillian",
+          "family": "Rhodes"
+        },
+        {
+          "given": "Renaud",
+          "family": "Laguesse"
+        },
+        {
+          "given": "Tolga",
+          "family": "Tez"
+        },
+        {
+          "given": "Bronwyn",
+          "family": "Hall"
+        },
+        {
+          "given": "Andrea",
+          "family": "Albonico"
+        },
+        {
+          "given": "Manuela",
+          "family": "Malaspina"
+        },
+        {
+          "given": "Roberta",
+          "family": "Daini"
+        },
+        {
+          "given": "Jessica",
+          "family": "Irons"
+        },
+        {
+          "given": "Shahd",
+          "family": "Al-Janabi"
+        },
+        {
+          "given": "Libby C.",
+          "family": "Taylor"
+        },
+        {
+          "given": "Davide",
+          "family": "Rivolta"
+        },
+        {
+          "given": "Elinor",
+          "family": "McKone"
+        }
+      ],
+      "editors": [],
+      "publisher": "SAGE Publications",
+      "year": 2017,
+      "date": null,
+      "container": "Quarterly Journal of Experimental Psychology",
+      "volume": "70",
+      "issue": "2",
+      "first_page": "218",
+      "last_page": "233",
+      "edition": null,
+      "version": null,
+      "url": "https://doi.org/10.1080/17470218.2016.1161058"
+    },
+    {
+      "bib_id": 25,
+      "service": "crossref",
+      "service_id": null,
+      "score": 96.6027,
+      "bib_type": "article",
+      "doi": "10.2139/ssrn.4041458",
+      "title": "Deep models of superficial face judgments",
+      "authors": [
+        {
+          "given": "Joshua",
+          "family": "Peterson"
+        },
+        {
+          "given": "Thomas",
+          "family": "Griffiths"
+        },
+        {
+          "given": "Stefan",
+          "family": "Uddenberg"
+        },
+        {
+          "given": "Alexander",
+          "family": "Todorov"
+        },
+        {
+          "given": "Jordan W.",
+          "family": "Suchow"
+        }
+      ],
+      "editors": [],
+      "publisher": "Elsevier BV",
+      "year": 2022,
+      "date": null,
+      "container": "SSRN Electronic Journal",
+      "volume": null,
+      "issue": null,
+      "first_page": null,
+      "last_page": null,
+      "edition": null,
+      "version": null,
+      "url": "https://doi.org/10.2139/ssrn.4041458"
+    },
+    {
+      "bib_id": 26,
+      "service": "crossref",
+      "service_id": null,
+      "score": 68.3522,
+      "bib_type": "article",
+      "doi": "10.1111/bjop.12368",
+      "title": "Super‐recognizers: From the lab to the world and back again",
+      "authors": [
+        {
+          "given": "Meike",
+          "family": "Ramon"
+        },
+        {
+          "given": "Anna K.",
+          "family": "Bobak"
+        },
+        {
+          "given": "David",
+          "family": "White"
+        }
+      ],
+      "editors": [],
+      "publisher": "Wiley",
+      "year": 2019,
+      "date": null,
+      "container": "British Journal of Psychology",
+      "volume": "110",
+      "issue": "3",
+      "first_page": "461",
+      "last_page": "479",
+      "edition": null,
+      "version": null,
+      "url": "https://doi.org/10.1111/bjop.12368"
+    },
+    {
+      "bib_id": 29,
+      "service": "crossref",
+      "service_id": null,
+      "score": 77.0463,
+      "bib_type": "article",
+      "doi": "10.1016/j.visres.2006.03.002",
+      "title": "Adaptive norm-based coding of facial identity",
+      "authors": [
+        {
+          "given": "Gillian",
+          "family": "Rhodes"
+        },
+        {
+          "given": "Linda",
+          "family": "Jeffery"
+        }
+      ],
+      "editors": [],
+      "publisher": "Elsevier BV",
+      "year": 2006,
+      "date": null,
+      "container": "Vision Research",
+      "volume": "46",
+      "issue": "18",
+      "first_page": "2977",
+      "last_page": "2987",
+      "edition": null,
+      "version": null,
+      "url": "https://doi.org/10.1016/j.visres.2006.03.002"
+    },
+    {
+      "bib_id": 30,
+      "service": "crossref",
+      "service_id": null,
+      "score": 67.9188,
+      "bib_type": "article",
+      "doi": "10.18637/jss.v048.i02",
+      "title": "<b>lavaan<\/b>: An<i>R<\/i>Package for Structural Equation Modeling",
+      "authors": [
+        {
+          "given": "Yves",
+          "family": "Rosseel"
+        }
+      ],
+      "editors": [],
+      "publisher": "Foundation for Open Access Statistic",
+      "year": 2012,
+      "date": null,
+      "container": "Journal of Statistical Software",
+      "volume": "48",
+      "issue": "2",
+      "first_page": null,
+      "last_page": null,
+      "edition": null,
+      "version": null,
+      "url": "https://doi.org/10.18637/jss.v048.i02"
+    },
+    {
+      "bib_id": 32,
+      "service": "crossref",
+      "service_id": null,
+      "score": 69.0723,
+      "bib_type": "inproceedings",
+      "doi": "10.1109/fg52635.2021.9667066",
+      "title": "A Study of the Human Perception of Synthetic Faces",
+      "authors": [
+        {
+          "given": "Bingyu",
+          "family": "Shen"
+        },
+        {
+          "given": "Brandon",
+          "family": "RichardWebster"
+        },
+        {
+          "given": "Alice",
+          "family": "O'Toole"
+        },
+        {
+          "given": "Kevin",
+          "family": "Bowyer"
+        },
+        {
+          "given": "Walter J.",
+          "family": "Scheirer"
+        }
+      ],
+      "editors": [],
+      "publisher": "IEEE",
+      "year": 2021,
+      "date": null,
+      "container": "2021 16th IEEE International Conference on Automatic Face and Gesture Recognition (FG 2021)",
+      "volume": null,
+      "issue": null,
+      "first_page": "1",
+      "last_page": "8",
+      "edition": null,
+      "version": null,
+      "url": "https://doi.org/10.1109/fg52635.2021.9667066"
+    },
+    {
+      "bib_id": 33,
+      "service": "crossref",
+      "service_id": null,
+      "score": 166.0147,
+      "bib_type": "article",
+      "doi": "10.1177/01461672211024463",
+      "title": "Does Cross-Race Contact Improve Cross-Race Face Perception? A Meta-Analysis of the Cross-Race Deficit and Contact",
+      "authors": [
+        {
+          "given": "Balbir",
+          "family": "Singh"
+        },
+        {
+          "given": "Christopher",
+          "family": "Mellinger"
+        },
+        {
+          "given": "Holly A.",
+          "family": "Earls"
+        },
+        {
+          "given": "Janis",
+          "family": "Tran"
+        },
+        {
+          "given": "Brighid",
+          "family": "Bardsley"
+        },
+        {
+          "given": "Joshua",
+          "family": "Correll"
+        }
+      ],
+      "editors": [],
+      "publisher": "SAGE Publications",
+      "year": 2021,
+      "date": null,
+      "container": "Personality and Social Psychology Bulletin",
+      "volume": "48",
+      "issue": "6",
+      "first_page": "865",
+      "last_page": "887",
+      "edition": null,
+      "version": null,
+      "url": "https://doi.org/10.1177/01461672211024463"
+    },
+    {
+      "bib_id": 34,
+      "service": "crossref",
+      "service_id": null,
+      "score": 103.6304,
+      "bib_type": "article",
+      "doi": "10.1007/s12144-019-00490-9",
+      "title": "Memory Training as a Method for Reducing the Misinformation Effect",
+      "authors": [
+        {
+          "given": "Malwina",
+          "family": "Szpitalak"
+        },
+        {
+          "given": "Adrianna",
+          "family": "Woltmann"
+        },
+        {
+          "given": "Romuald",
+          "family": "Polczyk"
+        },
+        {
+          "given": "Magdalena",
+          "family": "Kękuś"
+        }
+      ],
+      "editors": [],
+      "publisher": "Springer Science and Business Media LLC",
+      "year": 2019,
+      "date": null,
+      "container": "Current Psychology",
+      "volume": "40",
+      "issue": "11",
+      "first_page": "5410",
+      "last_page": "5419",
+      "edition": null,
+      "version": null,
+      "url": "https://doi.org/10.1007/s12144-019-00490-9"
+    },
+    {
+      "bib_id": 35,
+      "service": "crossref",
+      "service_id": null,
+      "score": 115.7257,
+      "bib_type": "article",
+      "doi": "10.2139/ssrn.4061183",
+      "title": "On the Realness of People Who Do Not Exist: The Social Processing of Artificial Faces",
+      "authors": [
+        {
+          "given": "Raffaele",
+          "family": "Tucciarelli"
+        },
+        {
+          "given": "Neza",
+          "family": "Vehar"
+        },
+        {
+          "given": "Shamil",
+          "family": "Chandaria"
+        },
+        {
+          "given": "Manos",
+          "family": "Tsakiris"
+        }
+      ],
+      "editors": [],
+      "publisher": "Elsevier BV",
+      "year": 2022,
+      "date": null,
+      "container": "SSRN Electronic Journal",
+      "volume": null,
+      "issue": null,
+      "first_page": null,
+      "last_page": null,
+      "edition": null,
+      "version": null,
+      "url": "https://doi.org/10.2139/ssrn.4061183"
+    },
+    {
+      "bib_id": 36,
+      "service": "crossref",
+      "service_id": null,
+      "score": 86.561,
+      "bib_type": "article",
+      "doi": "10.1080/14640749108400966",
+      "title": "A Unified Account of the Effects of Distinctiveness, Inversion, and Race in Face Recognition",
+      "authors": [
+        {
+          "given": "Tim",
+          "family": "Valentine"
+        }
+      ],
+      "editors": [],
+      "publisher": "SAGE Publications",
+      "year": 1991,
+      "date": null,
+      "container": "The Quarterly Journal of Experimental Psychology Section A",
+      "volume": "43",
+      "issue": "2",
+      "first_page": "161",
+      "last_page": "204",
+      "edition": null,
+      "version": null,
+      "url": "https://doi.org/10.1080/14640749108400966"
+    },
+    {
+      "bib_id": 37,
+      "service": "crossref",
+      "service_id": null,
+      "score": 89.7,
+      "bib_type": "article",
+      "doi": "10.1080/17470218.2014.990392",
+      "title": "Face-Space: A Unifying Concept in Face Recognition Research",
+      "authors": [
+        {
+          "given": "Tim",
+          "family": "Valentine"
+        },
+        {
+          "given": "Michael B.",
+          "family": "Lewis"
+        },
+        {
+          "given": "Peter J.",
+          "family": "Hills"
+        }
+      ],
+      "editors": [],
+      "publisher": "SAGE Publications",
+      "year": 2016,
+      "date": null,
+      "container": "Quarterly Journal of Experimental Psychology",
+      "volume": "69",
+      "issue": "10",
+      "first_page": "1996",
+      "last_page": "2019",
+      "edition": null,
+      "version": null,
+      "url": "https://doi.org/10.1080/17470218.2014.990392"
+    },
+    {
+      "bib_id": 38,
+      "service": "crossref",
+      "service_id": null,
+      "score": 90.5542,
+      "bib_type": "article",
+      "doi": "10.3758/bf03199666",
+      "title": "Familiarity, memorability, and the effect of typicality on the recognition of faces",
+      "authors": [
+        {
+          "given": "John R.",
+          "family": "Vokey"
+        },
+        {
+          "given": "J. Don",
+          "family": "Read"
+        }
+      ],
+      "editors": [],
+      "publisher": "Springer Science and Business Media LLC",
+      "year": 1992,
+      "date": null,
+      "container": "Memory &amp; Cognition",
+      "volume": "20",
+      "issue": "3",
+      "first_page": "291",
+      "last_page": "302",
+      "edition": null,
+      "version": null,
+      "url": "https://doi.org/10.3758/bf03199666"
+    },
+    {
+      "bib_id": 39,
+      "service": "crossref",
+      "service_id": null,
+      "score": 89.0273,
+      "bib_type": "article",
+      "doi": "10.1177/1529100616686966",
+      "title": "The Relationship Between Eyewitness Confidence and Identification Accuracy: A New Synthesis",
+      "authors": [
+        {
+          "given": "John T.",
+          "family": "Wixted"
+        },
+        {
+          "given": "Gary L.",
+          "family": "Wells"
+        }
+      ],
+      "editors": [],
+      "publisher": "SAGE Publications",
+      "year": 2017,
+      "date": null,
+      "container": "Psychological Science in the Public Interest",
+      "volume": "18",
+      "issue": "1",
+      "first_page": "10",
+      "last_page": "65",
+      "edition": null,
+      "version": null,
+      "url": "https://doi.org/10.1177/1529100616686966"
+    },
+    {
+      "bib_id": 40,
+      "service": "crossref",
+      "service_id": null,
+      "score": 59.3672,
+      "bib_type": "article",
+      "doi": "10.1038/s44159-023-00170-3",
+      "title": "The promising future of cognitive science and artificial intelligence",
+      "authors": [
+        {
+          "given": "Hanbo",
+          "family": "Xie"
+        }
+      ],
+      "editors": [],
+      "publisher": "Springer Science and Business Media LLC",
+      "year": 2023,
+      "date": null,
+      "container": "Nature Reviews Psychology",
+      "volume": "2",
+      "issue": "4",
+      "first_page": "202",
+      "last_page": "202",
+      "edition": null,
+      "version": null,
+      "url": "https://doi.org/10.1038/s44159-023-00170-3"
+    }
+  ]
+}

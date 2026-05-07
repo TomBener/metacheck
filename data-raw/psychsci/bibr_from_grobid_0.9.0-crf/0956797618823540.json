@@ -1,0 +1,3230 @@
+{
+  "paper_id": "0956797618823540",
+  "info": [
+    {
+      "title": "Understanding Dyslexia Through Personalized Large-Scale Computational Models",
+      "keywords": ["dyslexia", "computer simulation", "reading"],
+      "doi": "10.1177/0956797618823540",
+      "file_hash": "c0af3b62db945f74",
+      "input_format": "TEI XML",
+      "file_name": "data-raw/psychsci/grobid_0.9.0-crf/0956797618823540.xml",
+      "bibr_version": "10.0",
+      "paper_type": "unknown",
+      "paper_type_confidence": 0,
+      "oecd_l1": null,
+      "oecd_l2": null,
+      "oecd_confidence": null
+    }
+  ],
+  "author": [
+    {
+      "author_id": 1,
+      "given": "Conrad",
+      "family": "Perry",
+      "affiliation": "Faculty of Health, Arts and Design Swinburne University of Technology",
+      "email": "conradperry@gmail.com",
+      "corresponding": false,
+      "orcid": "",
+      "role": []
+    },
+    {
+      "author_id": 2,
+      "given": "Marco",
+      "family": "Zorzi",
+      "affiliation": "Department of General Psychology University of Padova",
+      "email": "",
+      "corresponding": false,
+      "orcid": "",
+      "role": []
+    },
+    {
+      "author_id": 3,
+      "given": "Johannes",
+      "family": "Ziegler",
+      "affiliation": "Laboratoire de Psychologie Cognitive Centre National de la Recherche Scientifique Aix-Marseille University",
+      "email": "",
+      "corresponding": false,
+      "orcid": "",
+      "role": []
+    }
+  ],
+  "text": [
+    {
+      "text_id": 1,
+      "paragraph_id": 1,
+      "section_id": 0,
+      "text": "Learning to read is foundational for literacy development, yet many children in primary school fail to become efficient readers despite normal intelligence and schooling.",
+      "page_number": null
+    },
+    {
+      "text_id": 2,
+      "paragraph_id": 1,
+      "section_id": 0,
+      "text": "This condition, referred to as developmental dyslexia, has been hypothesized to occur because of deficits in vision, attention, auditory and temporal processes, and phonology and language.",
+      "page_number": null
+    },
+    {
+      "text_id": 3,
+      "paragraph_id": 1,
+      "section_id": 0,
+      "text": "Here, we used a developmentally plausible computational model of reading acquisition to investigate how the core deficits of dyslexia determined individual learning outcomes for 622 children (388 with dyslexia).",
+      "page_number": null
+    },
+    {
+      "text_id": 4,
+      "paragraph_id": 1,
+      "section_id": 0,
+      "text": "We found that individual learning trajectories could be simulated on the basis of three component skills related to orthography, phonology, and vocabulary.",
+      "page_number": null
+    },
+    {
+      "text_id": 5,
+      "paragraph_id": 1,
+      "section_id": 0,
+      "text": "In contrast, single-deficit models captured the means but not the distribution of reading scores, and a model with noise added to all representations could not even capture the means.",
+      "page_number": null
+    },
+    {
+      "text_id": 6,
+      "paragraph_id": 1,
+      "section_id": 0,
+      "text": "These results show that heterogeneity and individual differences in dyslexia profiles can be simulated only with a personalized computational model that allows for multiple deficits.",
+      "page_number": null
+    },
+    {
+      "text_id": 7,
+      "paragraph_id": 3,
+      "section_id": 1,
+      "text": "Learning to read is foundational for literacy development, yet a large percentage of children in primary school (~5%-17%) fail to become efficient and autonomous readers despite normal intelligence and schooling, a condition referred to as developmental dyslexia (Snowling, 2000).",
+      "page_number": null
+    },
+    {
+      "text_id": 8,
+      "paragraph_id": 3,
+      "section_id": 1,
+      "text": "Research on developmental dyslexia has documented deficits in vision (Stein & Walsh, 1997), attention (Vidyasagar & Pammer, 2010), auditory and temporal processes (Vandermosten et al., 2010), and phonology and language (Hulme, Nash, Gooch, Lervåg, & Snowling, 2015;Snowling, 2001).",
+      "page_number": null
+    },
+    {
+      "text_id": 9,
+      "paragraph_id": 3,
+      "section_id": 1,
+      "text": "It remains a challenge to link the various deficits to the precise learning mechanisms that cause atypical reading development.",
+      "page_number": null
+    },
+    {
+      "text_id": 10,
+      "paragraph_id": 4,
+      "section_id": 1,
+      "text": "Computational models provide a unique tool for understanding how deficits in component skills affect the mechanisms or representations that underlie reading development.",
+      "page_number": null
+    },
+    {
+      "text_id": 11,
+      "paragraph_id": 4,
+      "section_id": 1,
+      "text": "Harm and Seidenberg (1999) were the first to use a computational modeling approach to understand developmental dyslexia.",
+      "page_number": null
+    },
+    {
+      "text_id": 12,
+      "paragraph_id": 4,
+      "section_id": 1,
+      "text": "They assumed, in line with mainstream theories of reading acquisition (Ziegler & Goswami, 2005), that learning to read consisted of mapping an orthographic code onto a preexisting phonological system, modeled with an attractor neural network that learned phonological structure from phonetic input.",
+      "page_number": null
+    },
+    {
+      "text_id": 13,
+      "paragraph_id": 4,
+      "section_id": 1,
+      "text": "Then, following the dominant view of dyslexia as being caused by a core phonological deficit (Vellutino, Fletcher, Snowling, & Scanlon, 2004), they impaired the phonological network to create impoverished representations and trained the model to map orthography onto them.",
+      "page_number": null
+    },
+    {
+      "text_id": 14,
+      "paragraph_id": 4,
+      "section_id": 1,
+      "text": "A mild phonological impairment resulted in impaired nonword reading (e.g., blorf ) but not irregular word reading (e.g., aisle, yacht, pint), a moderate impairment resulted in strong deficits in nonword reading but smaller deficits in irregular word reading, and a severe deficit caused very strong deficits in both nonword and irregular word reading.",
+      "page_number": null
+    },
+    {
+      "text_id": 15,
+      "paragraph_id": 4,
+      "section_id": 1,
+      "text": "These simulations provided a proof of concept that one can impair a model such that it reflects impaired reading performance.",
+      "page_number": null
+    },
+    {
+      "text_id": 16,
+      "paragraph_id": 4,
+      "section_id": 1,
+      "text": "However, they did not investigate how the size of the phonological deficit for any given child would affect his or her reading outcomes.",
+      "page_number": null
+    },
+    {
+      "text_id": 17,
+      "paragraph_id": 4,
+      "section_id": 1,
+      "text": "Moreover, they did not investigate how different types of impairments, including nonphonological deficits, affect reading outcomes.",
+      "page_number": null
+    },
+    {
+      "text_id": 18,
+      "paragraph_id": 4,
+      "section_id": 1,
+      "text": "This issue is of great importance because it has become increasingly clear that the causes of developmental dyslexia are multifactorial (Menghini et al., 2010).",
+      "page_number": null
+    },
+    {
+      "text_id": 19,
+      "paragraph_id": 5,
+      "section_id": 1,
+      "text": "In the present research, we went a major step further.",
+      "page_number": null
+    },
+    {
+      "text_id": 20,
+      "paragraph_id": 5,
+      "section_id": 1,
+      "text": "First, we implemented a developmentally plausible computational model of reading acquisition that learns to read in the same way children do, that is, through a combination of explicit teaching (i.e., direct instruction), phonological decoding, and self-teaching (Share, 1995).",
+      "page_number": null
+    },
+    {
+      "text_id": 21,
+      "paragraph_id": 5,
+      "section_id": 1,
+      "text": "Second, we used real data from one of the biggest dyslexia samples (Peterson, Pennington, & Olson, 2013; 622 children, 388 of whom have dyslexia) to set up 622 individual models, in which the efficiency of key mechanisms and representations was set up using individual measures in tasks that tap these component skills.",
+      "page_number": null
+    },
+    {
+      "text_id": 22,
+      "paragraph_id": 5,
+      "section_id": 1,
+      "text": "Third, we simulated the real reading performance of these 622 children using exactly the same words that the children read.",
+      "page_number": null
+    },
+    {
+      "text_id": 23,
+      "paragraph_id": 5,
+      "section_id": 1,
+      "text": "Fourth, we investigated whether a multideficit model was superior to three alternative models that represent different major theories of developmental dyslexia: the core phonological-deficit model (Vellutino et al., 2004), a visual-deficit model (Stein, 2014), and a noisy computation model (Hancock, Pugh, & Hoeft, 2017).",
+      "page_number": null
+    },
+    {
+      "text_id": 24,
+      "paragraph_id": 5,
+      "section_id": 1,
+      "text": "Finally, we investigated how changing the efficiency of a given component skill affects individual learning outcomes for word and nonword reading.",
+      "page_number": null
+    },
+    {
+      "text_id": 25,
+      "paragraph_id": 7,
+      "section_id": 2,
+      "text": "The model is presented in Figure 1a.",
+      "page_number": null
+    },
+    {
+      "text_id": 26,
+      "paragraph_id": 7,
+      "section_id": 2,
+      "text": "The basic architecture was taken from the connectionist dual-process model (Perry, Ziegler, & Zorzi, 2007, 2010, 2013), but new dynamics and mechanisms were introduced to capture reading acquisition within a realistic learning environment.",
+      "page_number": null
+    },
+    {
+      "text_id": 27,
+      "paragraph_id": 7,
+      "section_id": 2,
+      "text": "It is assumed that the phonological lexicon is largely in place prior to reading, although its size can vary from one child to another.",
+      "page_number": null
+    },
+    {
+      "text_id": 28,
+      "paragraph_id": 7,
+      "section_id": 2,
+      "text": "The graphemephoneme mapping system (i.e., the decoding network) is initially taught with a small number of graphemephoneme correspondences (e.g., b → /b/) in a supervised fashion using a simple associative-learning rule (for these correspondences, see the Supplemental Material available online).",
+      "page_number": null
+    },
+    {
+      "text_id": 29,
+      "paragraph_id": 7,
+      "section_id": 2,
+      "text": "This process reflects the explicit teaching of grapheme-phoneme correspondences, as it occurs during early reading instruction (e.g., see the statutory requirements of the National Curriculum in England; UK Department for Education, 2013; Hulme, Bowyer-Crane, Carroll, Duff, & Snowling, 2012).",
+      "page_number": null
+    },
+    {
+      "text_id": 30,
+      "paragraph_id": 8,
+      "section_id": 2,
+      "text": "From there on, however, learning becomes unsupervised, and most of the correspondences are picked up via implicit statistical-learning procedures.",
+      "page_number": null
+    },
+    {
+      "text_id": 31,
+      "paragraph_id": 8,
+      "section_id": 2,
+      "text": "That is, when presented with a new word, the initially rudimentary decoding network generates a phoneme sequence that potentially activates entries in the phonological lexicon.",
+      "page_number": null
+    },
+    {
+      "text_id": 32,
+      "paragraph_id": 8,
+      "section_id": 2,
+      "text": "If the correct word is in the phonological lexicon and passes a critical threshold, it is selected, and a representation is set up in the orthographic lexicon (i.e., orthographic learning), which is connected to its phonological representation.",
+      "page_number": null
+    },
+    {
+      "text_id": 33,
+      "paragraph_id": 8,
+      "section_id": 2,
+      "text": "Importantly, the internally generated phonological representation is then used as a teaching signal (i.e., self-teaching) to improve the decoding network.",
+      "page_number": null
+    },
+    {
+      "text_id": 34,
+      "paragraph_id": 8,
+      "section_id": 2,
+      "text": "That is, every successful decoding of a new word provides the child (and the network) with an opportunity to set up an orthographic representation and improve the decoding network without an external teacher or teaching signal.",
+      "page_number": null
+    },
+    {
+      "text_id": 35,
+      "paragraph_id": 8,
+      "section_id": 2,
+      "text": "Indeed, we showed in previous simulations that 80% of words from an English corpus of more than 32,000 words can be learned through decoding alone (Ziegler, Perry, & Zorzi, 2014).",
+      "page_number": null
+    },
+    {
+      "text_id": 36,
+      "paragraph_id": 8,
+      "section_id": 2,
+      "text": "The remaining 20% are too irregular (e.g., yacht, aisle, chef ) to be learned through decoding.",
+      "page_number": null
+    },
+    {
+      "text_id": 37,
+      "paragraph_id": 9,
+      "section_id": 2,
+      "text": "To simulate irregular word learning and readingthat is, words that were not able to be learned via decoding-we added a mechanism that specifies how irregular words would get into the orthographic lexicon.",
+      "page_number": null
+    },
+    {
+      "text_id": 38,
+      "paragraph_id": 9,
+      "section_id": 2,
+      "text": "The basic idea is that children learn these words via direct instruction (e.g., flash cards).",
+      "page_number": null
+    },
+    {
+      "text_id": 39,
+      "paragraph_id": 9,
+      "section_id": 2,
+      "text": "Direct instruction of irregular words is explicitly listed as one of the statutory requirements up to Grade 4 in the National Curriculum in England (UK Department for Education, 2013).",
+      "page_number": null
+    },
+    {
+      "text_id": 40,
+      "paragraph_id": 9,
+      "section_id": 2,
+      "text": "Direct instruction on irregular words is also achieved in the context of teaching word spelling.",
+      "page_number": null
+    },
+    {
+      "text_id": 41,
+      "paragraph_id": 9,
+      "section_id": 2,
+      "text": "Thus, each time a word was not lexicalized via phonological decoding, we allowed for the possibility that it might be lexicalized via direct instruction.",
+      "page_number": null
+    },
+    {
+      "text_id": 42,
+      "paragraph_id": 9,
+      "section_id": 2,
+      "text": "We made this a probabilistic process in which the chance that a word would enter the orthographic lexicon varied as a function of the orthographic ability of each child (see Simulation Methods in the Supplemental Material).",
+      "page_number": null
+    },
+    {
+      "text_id": 43,
+      "paragraph_id": 10,
+      "section_id": 2,
+      "text": "We used this computational model to investigate how deficits in the underlying components of the reading network can predict interindividual differences in reading performance.",
+      "page_number": null
+    },
+    {
+      "text_id": 44,
+      "paragraph_id": 10,
+      "section_id": 2,
+      "text": "The general approach is outlined in Figure 1b.",
+      "page_number": null
+    },
+    {
+      "text_id": 45,
+      "paragraph_id": 10,
+      "section_id": 2,
+      "text": "We used the data of all children included in the study by Peterson et al. (2013) and additional children tested by the same group, which included accuracy in reading aloud (on regular words, irregular words, and nonwords) as well as performance measures in other nonreading tasks for 622 English-speaking children, including 388 children with dyslexia.",
+      "page_number": null
+    },
+    {
+      "text_id": 46,
+      "paragraph_id": 10,
+      "section_id": 2,
+      "text": "We selected three component tasks that map relatively directly onto processes and processing components of the model (i.e., orthographic lexicon, phonological lexicon, phonemes).",
+      "page_number": null
+    },
+    {
+      "text_id": 47,
+      "paragraph_id": 10,
+      "section_id": 2,
+      "text": "Orthographic choice was taken as a measure of processing efficiency in the orthographic lexicon, phoneme deletion was taken as a measure of the efficiency of activating phonemes correctly, and vocabulary score was taken as a measure of the size of a child's phonological lexicon.",
+      "page_number": null
+    },
+    {
+      "text_id": 48,
+      "paragraph_id": 11,
+      "section_id": 2,
+      "text": "For each child, we used performance on these three tasks to create individual models, one for each child, in which the parameterization of the models' components and processes was changed using a simple linear function based on the child's performance on the three component tasks.",
+      "page_number": null
+    },
+    {
+      "text_id": 49,
+      "paragraph_id": 11,
+      "section_id": 2,
+      "text": "In particular, performance in the orthographicchoice task was used to parameterize the amount of noise in the orthographic lexicon and the probability that a word would be lexicalized if successfully decoded or found through direct instruction.",
+      "page_number": null
+    },
+    {
+      "text_id": 50,
+      "paragraph_id": 11,
+      "section_id": 2,
+      "text": "Performance in the phoneme-deletion task was used to parameterize the amount of noise in the decoding network during training, Schematics illustrating how a developmentally plausible computational model of reading development can be used to predict learning outcomes.",
+      "page_number": null
+    },
+    {
+      "text_id": 51,
+      "paragraph_id": 11,
+      "section_id": 2,
+      "text": "After initial explicit teaching on a small set of grapheme-phoneme correspondences (GPCs), the decoding network (a) is able to decode words that have a preexisting representation in the phonological lexicon but no orthographic representation.",
+      "page_number": null
+    },
+    {
+      "text_id": 52,
+      "paragraph_id": 11,
+      "section_id": 2,
+      "text": "If the decoding mechanism activates a word in the phonological lexicon, an orthographic entry is created, and the phonology is used as an internally generated teaching signal (red arrows) to refine and strengthen letter-sound connections, thereby improving the efficiency of the decoding network.",
+      "page_number": null
+    },
+    {
+      "text_id": 53,
+      "paragraph_id": 11,
+      "section_id": 2,
+      "text": "In the individual-deficit simulation approach (b), the efficiency of various components of the reading network can be estimated individually for each child (N = 622) through performance on component tasks that map directly onto model components.",
+      "page_number": null
+    },
+    {
+      "text_id": 54,
+      "paragraph_id": 11,
+      "section_id": 2,
+      "text": "The performance of each child in the three component tasks is used to individually set the parameters of the model in order to predict individual learning outcomes.",
+      "page_number": null
+    },
+    {
+      "text_id": 55,
+      "paragraph_id": 12,
+      "section_id": 2,
+      "text": "in which noise was used probabilistically to swap correct phonemes with phonetically similar ones (see Ziegler et al., 2014).",
+      "page_number": null
+    },
+    {
+      "text_id": 56,
+      "paragraph_id": 12,
+      "section_id": 2,
+      "text": "Finally, the vocabulary score was used to set the size of the phonological lexicon, that is, how many words a child knows when he or she begins the task of learning to read.",
+      "page_number": null
+    },
+    {
+      "text_id": 57,
+      "paragraph_id": 12,
+      "section_id": 2,
+      "text": "Importantly, model parameters were not optimized to fit the individual reading scores, thereby preventing overfitting (see Materials and Methods in the Supplemental Material).",
+      "page_number": null
+    },
+    {
+      "text_id": 58,
+      "paragraph_id": 12,
+      "section_id": 2,
+      "text": "A full learning simulation was performed for each individual model, and its performance after learning was assessed by presenting the same words and nonwords used by Peterson et al.",
+      "page_number": null
+    },
+    {
+      "text_id": 59,
+      "paragraph_id": 12,
+      "section_id": 2,
+      "text": "(2013).",
+      "page_number": null
+    },
+    {
+      "text_id": 60,
+      "paragraph_id": 12,
+      "section_id": 2,
+      "text": "This allowed a direct comparison between learning outcomes in the simulation and actual reading performance of the child that the simulation was meant to capture.",
+      "page_number": null
+    },
+    {
+      "text_id": 61,
+      "paragraph_id": 12,
+      "section_id": 2,
+      "text": "It is important to point out that the three component tasks do not map directly onto the three word types (e.g., orthographic choice for irregular words, phoneme deletion for nonwords), but rather, they affect different aspects of processing in the model and thus the way activation is generated and combined in the model before a final output is produced.",
+      "page_number": null
+    },
+    {
+      "text_id": 62,
+      "paragraph_id": 14,
+      "section_id": 3,
+      "text": "Overall reading performance (proportion of correct responses) averaged across the 622 simulations (model) and 622 children (human) is presented in Figure 2a.",
+      "page_number": null
+    },
+    {
+      "text_id": 63,
+      "paragraph_id": 14,
+      "section_id": 3,
+      "text": "These data are further broken down for dyslexic and normally developing readers.",
+      "page_number": null
+    },
+    {
+      "text_id": 64,
+      "paragraph_id": 14,
+      "section_id": 3,
+      "text": "As can be seen in Figure 2a, the overall means of the children and the predicted means of the model for the very same children are highly similar, for both the normally developing readers and the readers with dyslexia.",
+      "page_number": null
+    },
+    {
+      "text_id": 65,
+      "paragraph_id": 14,
+      "section_id": 3,
+      "text": "That is, the model accurately simulated normal and impaired reading development on the basis of performance in three component tasks.",
+      "page_number": null
+    },
+    {
+      "text_id": 66,
+      "paragraph_id": 14,
+      "section_id": 3,
+      "text": "To investigate how well the model captured interindividual differences and reading outcomes, we plotted the actual versus predicted reading performance for the 622 children on the three reading outcome measures (see Fig. 2b).",
+      "page_number": null
+    },
+    {
+      "text_id": 67,
+      "paragraph_id": 14,
+      "section_id": 3,
+      "text": "The fit was very good, as indexed by r 2 values ranging from .63 to .72.",
+      "page_number": null
+    },
+    {
+      "text_id": 68,
+      "paragraph_id": 14,
+      "section_id": 3,
+      "text": "That is, knowing a child's performance on only three component tasks of reading allows the model to predict his or her learning outcomes on regular words, irregular words, and nonwords with high accuracy.",
+      "page_number": null
+    },
+    {
+      "text_id": 69,
+      "paragraph_id": 15,
+      "section_id": 3,
+      "text": "In addition to examining the accuracy of the model, we examined its reliance on decoding versus direct instruction for word learning.",
+      "page_number": null
+    },
+    {
+      "text_id": 70,
+      "paragraph_id": 15,
+      "section_id": 3,
+      "text": "This is an interesting analysis because a large number of studies have suggested that good readers are initially efficient decoders and poor readers tend to be poor decoders (e.g., Gentaz, Sprenger-Charolles, Theurel, & Colé, 2013;Juel, 1988).",
+      "page_number": null
+    },
+    {
+      "text_id": 71,
+      "paragraph_id": 16,
+      "section_id": 3,
+      "text": "Poor readers are thus more reliant on direct instruction when learning to read than are good readers.",
+      "page_number": null
+    },
+    {
+      "text_id": 72,
+      "paragraph_id": 16,
+      "section_id": 3,
+      "text": "The results of our simulations show that the predictions of the multideficit model are consistent with these findings.",
+      "page_number": null
+    },
+    {
+      "text_id": 73,
+      "paragraph_id": 16,
+      "section_id": 3,
+      "text": "In particular, Figure 3a presents the proportion of words that entered the lexicon through decoding or direct instruction as a function of overall reading skill (the average performance of each child across all word types).",
+      "page_number": null
+    },
+    {
+      "text_id": 74,
+      "paragraph_id": 16,
+      "section_id": 3,
+      "text": "Figure 3b complements the analysis by presenting the number of direct instruction attempts as a function of overall reading skill.",
+      "page_number": null
+    },
+    {
+      "text_id": 75,
+      "paragraph_id": 16,
+      "section_id": 3,
+      "text": "As can be seen from the simulations of poor readers, only a small proportion of the words were learned through decoding compared with direct instruction, and there were far more attempts at direct instruction compared with the simulations of good readers.",
+      "page_number": null
+    },
+    {
+      "text_id": 76,
+      "paragraph_id": 16,
+      "section_id": 3,
+      "text": "Alternatively, in the simulations of good readers, most of the words were learned via decoding.",
+      "page_number": null
+    },
+    {
+      "text_id": 77,
+      "paragraph_id": 17,
+      "section_id": 3,
+      "text": "The performance of the multideficit model in simulating the whole distribution of reading deficits in children with dyslexia was then compared with that of three alternative models: (a) a phonological-deficit model, which assumes deficits in activating correct phonemes (i.e., deficits in phonological awareness, phoneme discrimination, and categorical perception of phonemes); (b) a visual-deficit model, which assumes impoverished orthographic processing due to poor letter-position coding (e.g., letter reversals); and (c) a global-noise model, which assumes general processing inefficiency (set as a function of the child's overall level of performance) due to noisy computations (Hancock et al., 2017;Sperling, Lu, Manis, & Seidenberg, 2005).",
+      "page_number": null
+    },
+    {
+      "text_id": 78,
+      "paragraph_id": 17,
+      "section_id": 3,
+      "text": "For all models, the vocabulary score was used to set the size of the individual phonological lexicon (with the same procedure used for the multideficit model).",
+      "page_number": null
+    },
+    {
+      "text_id": 79,
+      "paragraph_id": 17,
+      "section_id": 3,
+      "text": "These simulations were designed to examine whether simpler models could account for the distribution of reading scores and to investigate how single deficits may affect different aspects of reading (for further details, see the Supplemental Material).",
+      "page_number": null
+    },
+    {
+      "text_id": 80,
+      "paragraph_id": 17,
+      "section_id": 3,
+      "text": "The mean results appear in Figure 4.",
+      "page_number": null
+    },
+    {
+      "text_id": 81,
+      "paragraph_id": 18,
+      "section_id": 3,
+      "text": "As can be seen, the mean results from the multideficit, phonological-deficit, and visual-deficit models were very similar to the mean results found with the human data.",
+      "page_number": null
+    },
+    {
+      "text_id": 82,
+      "paragraph_id": 18,
+      "section_id": 3,
+      "text": "Only the global-noise model was not parameterizable in such a way as to allow it to capture the mean results.",
+      "page_number": null
+    },
+    {
+      "text_id": 83,
+      "paragraph_id": 18,
+      "section_id": 3,
+      "text": "Despite the similarities in the mean results across models, however, only the multideficit model captured the distribution of reading scores across word types, as can be seen in Figure 5, in which the data from all children with dyslexia are displayed (see also Fig.",
+      "page_number": null
+    },
+    {
+      "text_id": 84,
+      "paragraph_id": 18,
+      "section_id": 3,
+      "text": "S2 in the Supplemental Material for the whole data set and Fig.",
+      "page_number": null
+    },
+    {
+      "text_id": 85,
+      "paragraph_id": 18,
+      "section_id": 3,
+      "text": "S3 in the Supplemental Material for only the normally developing children).",
+      "page_number": null
+    },
+    {
+      "text_id": 86,
+      "paragraph_id": 18,
+      "section_id": 3,
+      "text": "To quantitatively compare the predictive accuracy of the different",
+      "page_number": null
+    },
+    {
+      "text_id": 87,
+      "paragraph_id": 19,
+      "section_id": 3,
+      "text": "0 0.2 0.4 0.6 0.8 1 0 2,000 4,000 6,000 8,000 10,000 Direct Decoding Best Proportion Learned Direct Instruction Attempts Worst Best Worst a b Reading Performance Reading Performance Proportion Correct Human MDM Noise Phon Visual Human MDM Noise Phon Visual Human MDM Noise Phon Visual Proportion Correct Proportion Correct 1 .9 .8 .7 .6 .5 .4 All 1 .9 .8 .7 .6 .5 .4 1 .9 .8 .7 .6 .5 .4 Dyslexics Controls Regular Irregular Nonword Fig 4 Reading performance for regular words, irregular words, and nonwords for all children, dyslexic children, and control children, compared with performance of the multideficit model (MDM), the global-noise model (noise), the phonological-deficit model (phon), and the visual-deficit model (visual).",
+      "page_number": null
+    },
+    {
+      "text_id": 88,
+      "paragraph_id": 19,
+      "section_id": 3,
+      "text": "Error bars show 95% confidence intervals.",
+      "page_number": null
+    },
+    {
+      "text_id": 89,
+      "paragraph_id": 19,
+      "section_id": 3,
+      "text": "0.4 0.6 0.8 1 0.4 0.6 0.8 1 0.4 0.6 0.8 1 0.4 0.6 0.8 1 0 0.2 0.4 0.6 0.8 1 0 0 0.2 0.4 0.6 0.8 1 0 0.2 0.4 0.6 0.8 1 0 0.2 0.4 0.6 0.8 1 0 0.2 0.4 0.6 0.8 1 0 0 0.2 0.4 0.6 0.8 1 Regular Words Proportion Correct (Model) 0.2 0.4 0.6 0.8 1 0 0.2 0.4 0.6 0.8 1 0 0 0.2 0.4 0.6 0.8 1 0 0.2 0.4 0.6 0.8 1 0 0.2 0.4 0.6 0.8 1 0 0.2 0.4 0.6 0.8 1 0 0.2 0.4 0.6 0.8 1 0 0.2 0.4 0.6 0.8 1 0 Multideficit Global Noise Visual Deficit Phonological Deficit 0 0.2 0.4 0.6 0.8 1 All BICs =",
+      "page_number": null
+    },
+    {
+      "text_id": 90,
+      "paragraph_id": 20,
+      "section_id": 3,
+      "text": "-19; r 2 = .28 All BICs = -1,398; r 2 = .71 All BICs = -1,189; r 2 = .64 All BICs = -1,074; r 2 = .59 BIC = -516; r 2 = .49 BIC = -529; r 2 = .60 BIC = -135; r 2 = .43 BIC = -551; r 2 = .54 BIC = -487; r 2 = .57 BIC = -209; r 2 = .58 BIC = -576; r 2 = .58 BIC = 184; r 2 = .51 BIC = 72; r 2 = .52 BIC = -587; r 2 = .65 BIC = -625; r 2 = .69",
+      "page_number": null
+    },
+    {
+      "text_id": 91,
+      "paragraph_id": 21,
+      "section_id": 3,
+      "text": "Proportion Correct (Human)",
+      "page_number": null
+    },
+    {
+      "text_id": 92,
+      "paragraph_id": 22,
+      "section_id": 3,
+      "text": "Fig.",
+      "page_number": null
+    },
+    {
+      "text_id": 93,
+      "paragraph_id": 22,
+      "section_id": 3,
+      "text": "5.",
+      "page_number": null
+    },
+    {
+      "text_id": 94,
+      "paragraph_id": 22,
+      "section_id": 3,
+      "text": "Predicted mean dyslexic reading performance (bar graphs) and the association between predicted and actual reading performance of individual dyslexics (scatterplots) of the multideficit, global-noise, phonological-deficit, and visual-deficit models.",
+      "page_number": null
+    },
+    {
+      "text_id": 95,
+      "paragraph_id": 22,
+      "section_id": 3,
+      "text": "A Bayesian information criterion (BIC) difference of 10 corresponds to a posterior odds of about 150:1 (Raftery, 1995), and a larger negative value is an index of better fit.",
+      "page_number": null
+    },
+    {
+      "text_id": 96,
+      "paragraph_id": 22,
+      "section_id": 3,
+      "text": "Error bars show 95% confidence intervals.",
+      "page_number": null
+    },
+    {
+      "text_id": 97,
+      "paragraph_id": 23,
+      "section_id": 3,
+      "text": "models, we calculated the residual sum of squares between the simulated data and the empirical data (i.e., scores for regular words, irregular words, and nonwords for each child) and computed the Bayesian information criterion (BIC) for each model.",
+      "page_number": null
+    },
+    {
+      "text_id": 98,
+      "paragraph_id": 24,
+      "section_id": 3,
+      "text": "On the full set of data, although the multideficit model was penalized for its larger number of free parameters-four (orthographic noise, phoneme switching, lexicalization threshold, and vocabulary) versus two for the single-deficit models (one specific parameter and vocabulary)-it yielded a markedly lower BIC score (-2,630) than all alternative models (the global-noise, phonological-deficit, and visualdeficit models had scores of -316, -2,244, and -2,027, respectively); the size of the difference between BIC scores represents very strong evidence in favor of the multideficit model (a BIC difference of 10 corresponds to a posterior odds of about 150:1; Raftery, 1995).",
+      "page_number": null
+    },
+    {
+      "text_id": 99,
+      "paragraph_id": 24,
+      "section_id": 3,
+      "text": "The same pattern was found when the comparison was restricted to the dyslexic children, with the multideficit model having the lowest BIC score (-1,398) compared with all alternative models (-19, -1,189, and -1,074 for the global-noise, phonological-deficit, and visual-deficit models, respectively), as well as when the comparison was restricted to the normally developing children (-1,288 for the multideficit model; -321, -1,101, and -985 for the global-noise, phonological-deficit, and visual-deficit models, respectively).",
+      "page_number": null
+    },
+    {
+      "text_id": 100,
+      "paragraph_id": 25,
+      "section_id": 3,
+      "text": "A potential problem with the model comparison is that a systematic search of the optimal parameter set for each model was computationally unfeasible despite our use of supercomputing facilities.",
+      "page_number": null
+    },
+    {
+      "text_id": 101,
+      "paragraph_id": 25,
+      "section_id": 3,
+      "text": "However, there is no reason to believe that the alternative models were penalized with respect to the multideficit model because it is much easier to find suitable values in a two-parameter space (for the single-deficit models) than in a fourparameter space (for the multideficit model).",
+      "page_number": null
+    },
+    {
+      "text_id": 102,
+      "paragraph_id": 25,
+      "section_id": 3,
+      "text": "Our handsearch approach was to explore the parameter space of each model until the overall means in the simulations were close to the empirical means.",
+      "page_number": null
+    },
+    {
+      "text_id": 103,
+      "paragraph_id": 25,
+      "section_id": 3,
+      "text": "As can be seen in Table S2 in the Supplemental Material, apart from the global-noise model, the fit of all models with respect to the overall means was indeed rather good.",
+      "page_number": null
+    },
+    {
+      "text_id": 104,
+      "paragraph_id": 25,
+      "section_id": 3,
+      "text": "Thus, it is only when it comes to explaining the individual distributions (i.e., interindividual differences) that the phonological-deficit and visual-deficit models go off track.",
+      "page_number": null
+    },
+    {
+      "text_id": 105,
+      "paragraph_id": 25,
+      "section_id": 3,
+      "text": "Further inspection of the results showed that the single-deficit models were worse because there were no parameters that could be changed to fix this (for further discussion, see the Supplemental Material).",
+      "page_number": null
+    },
+    {
+      "text_id": 106,
+      "paragraph_id": 26,
+      "section_id": 3,
+      "text": "Finally, we used the multideficit model as a tool to predict how the increase in the efficiency of a single component would change reading performance on regular words, irregular words, and nonwords.",
+      "page_number": null
+    },
+    {
+      "text_id": 107,
+      "paragraph_id": 26,
+      "section_id": 3,
+      "text": "This was done by first selecting the 100 children with the worst average deficit scores (i.e., the most negative z scores averaged across the three types of deficit).",
+      "page_number": null
+    },
+    {
+      "text_id": 108,
+      "paragraph_id": 26,
+      "section_id": 3,
+      "text": "Then, each deficit score of each child was increased in 0.2 z-score steps until it reached a level corresponding to unimpaired processing (for orthographic and phonological deficits) or a full vocabulary size.",
+      "page_number": null
+    },
+    {
+      "text_id": 109,
+      "paragraph_id": 26,
+      "section_id": 3,
+      "text": "Thus, each z score was increased as much as it could be, and the other two z scores were held constant.",
+      "page_number": null
+    },
+    {
+      "text_id": 110,
+      "paragraph_id": 26,
+      "section_id": 3,
+      "text": "Predicted reading scores were generated at each step using the same method as in the previous simulations.",
+      "page_number": null
+    },
+    {
+      "text_id": 111,
+      "paragraph_id": 26,
+      "section_id": 3,
+      "text": "The results appear in Figure 6.",
+      "page_number": null
+    },
+    {
+      "text_id": 112,
+      "paragraph_id": 27,
+      "section_id": 3,
+      "text": "The results of the simulations show that increasing vocabulary tends to be more beneficial for irregular word reading (i.e., sight word reading) than nonword reading (i.e., decoding), whereas increasing the efficiency of phonological processing shows the opposite pattern.",
+      "page_number": null
+    },
+    {
+      "text_id": 113,
+      "paragraph_id": 27,
+      "section_id": 3,
+      "text": "Increasing orthographic efficiency helps all word types.",
+      "page_number": null
+    },
+    {
+      "text_id": 114,
+      "paragraph_id": 27,
+      "section_id": 3,
+      "text": "However, Figure 6 shows important interindividual differences, which suggest that the choice of an optimal intervention depends on the initial conditions, that is, the individual starting point in the 3-D deficit space.",
+      "page_number": null
+    },
+    {
+      "text_id": 115,
+      "paragraph_id": 27,
+      "section_id": 3,
+      "text": "The validity of these models' predictions should be tested in future empirical studies.",
+      "page_number": null
+    },
+    {
+      "text_id": 116,
+      "paragraph_id": 29,
+      "section_id": 4,
+      "text": "Our results show that large-scale simulations with a developmentally plausible computational model of reading acquisition allow us to predict learning outcomes for individual children and reading profiles of children with dyslexia on the basis of performance on three component tasks (orthographic choice, phoneme deletion, vocabulary).",
+      "page_number": null
+    },
+    {
+      "text_id": 117,
+      "paragraph_id": 29,
+      "section_id": 4,
+      "text": "The multideficit model is superior to alternative single-deficit models in all respects, which suggests that future research needs to take into account the multidimensional nature of the deficits that cause dyslexia.",
+      "page_number": null
+    },
+    {
+      "text_id": 118,
+      "paragraph_id": 29,
+      "section_id": 4,
+      "text": "This novel computational approach establishes causal relations between deficits and outcomes that can be used to make long-term predictions on learning outcomes for at-risk children.",
+      "page_number": null
+    },
+    {
+      "text_id": 119,
+      "paragraph_id": 29,
+      "section_id": 4,
+      "text": "Importantly, the model can be used to predict how changing the efficiency of one component might change reading performance for an individual child.",
+      "page_number": null
+    },
+    {
+      "text_id": 120,
+      "paragraph_id": 29,
+      "section_id": 4,
+      "text": "One limitation is that the present simulations were based on a cross-sectional sample of children rather than on data from a longitudinal study.",
+      "page_number": null
+    },
+    {
+      "text_id": 121,
+      "paragraph_id": 29,
+      "section_id": 4,
+      "text": "In particular, it would be of great interest to validate the model's predictions of intervention outcomes in future intervention studies.",
+      "page_number": null
+    },
+    {
+      "text_id": 122,
+      "paragraph_id": 29,
+      "section_id": 4,
+      "text": "Confirming the validity of the model's predictions would pave the way for developing personalized computer models to guide the design of individually tailored remediation strategies.",
+      "page_number": null
+    },
+    {
+      "text_id": 123,
+      "paragraph_id": 30,
+      "section_id": 4,
+      "text": "0 20 40 60 80 Orthography Phonology Vocabulary 0 20 40 60 80 0 1 2 3 4 5 0 20 40 60 80 0 1 2 3 4 5 0 1 2 3 4 5 Increase in z Score Accuracy Increase for Irregular Words (%) Component Score Accuracy Increase for Regular Words (%) Accuracy Increase for Nonwords (%) Increase in z Score Increase in z Score Predicting learning outcomes as a function of improvements in orthography, phonology, and vocabulary.",
+      "page_number": null
+    },
+    {
+      "text_id": 124,
+      "paragraph_id": 30,
+      "section_id": 4,
+      "text": "The scores of each child were normalized to start at 0, and the component scores were increased by 0.2 of a z score until they were at their maximum.",
+      "page_number": null
+    },
+    {
+      "text_id": 125,
+      "paragraph_id": 30,
+      "section_id": 4,
+      "text": "Thus, the start of a line represents a child's initial state, and the end of a line represents how a child was predicted to perform when a single component score was increased as much as possible.",
+      "page_number": null
+    },
+    {
+      "text_id": 126,
+      "paragraph_id": 30,
+      "section_id": 4,
+      "text": "Thus, the length of the line represents the potential gain (in z scores) for a given child.",
+      "page_number": null
+    },
+    {
+      "text_id": 127,
+      "paragraph_id": 32,
+      "section_id": 5,
+      "text": "Erika E Forbes served as action editor for this article.",
+      "page_number": null
+    },
+    {
+      "text_id": 128,
+      "paragraph_id": 34,
+      "section_id": 6,
+      "text": "This work was performed in part on the swinSTAR supercomputer at Swinburne University of Technology.",
+      "page_number": null
+    },
+    {
+      "text_id": 129,
+      "paragraph_id": 34,
+      "section_id": 6,
+      "text": "We thank Robin",
+      "page_number": null
+    },
+    {
+      "text_id": 130,
+      "paragraph_id": 36,
+      "section_id": 7,
+      "text": "Funding This research was supported by grants from the Australian Research Council (DP170101857); the European Research Council (210922-GENMOD); the Agence National de la Recherche (ANR-13-APPR-0003); the Labex Brain and Language Research Institute (ANR-11-LABX-0036); the Institute of Convergence at the Institute for Language, Communication and the Brain (ANR-16-CONV-0002); the Excellence Initiative of Aix-Marseille University A*MIDEX (ANR-11-IDEX-0001-02); and the University of Padova (Strategic Grant NEURAT).",
+      "page_number": null
+    },
+    {
+      "text_id": 131,
+      "paragraph_id": 36,
+      "section_id": 7,
+      "text": "Behavioral data were collected with support from the National Institutes of Health to the Colorado Learning Disabilities Research Center (Grant No.",
+      "page_number": null
+    },
+    {
+      "text_id": 132,
+      "paragraph_id": 36,
+      "section_id": 7,
+      "text": "P50 HD027802).",
+      "page_number": null
+    },
+    {
+      "text_id": 133,
+      "paragraph_id": 38,
+      "section_id": 8,
+      "text": "The author(s) declared that there were no conflicts of interest with respect to the authorship or the publication of this article.",
+      "page_number": null
+    },
+    {
+      "text_id": 134,
+      "paragraph_id": 40,
+      "section_id": 9,
+      "text": "All the authors contributed equally to the study concept and design.",
+      "page_number": null
+    },
+    {
+      "text_id": 135,
+      "paragraph_id": 40,
+      "section_id": 9,
+      "text": "C Perry implemented the computational model and performed all simulations and statistical analyses under the supervision of M Zorzi.",
+      "page_number": null
+    },
+    {
+      "text_id": 136,
+      "paragraph_id": 40,
+      "section_id": 9,
+      "text": "All the authors interpreted the results of the simulations.",
+      "page_number": null
+    },
+    {
+      "text_id": 137,
+      "paragraph_id": 40,
+      "section_id": 9,
+      "text": "C Perry and J C Ziegler drafted the manuscript, and M Zorzi provided critical revisions.",
+      "page_number": null
+    },
+    {
+      "text_id": 138,
+      "paragraph_id": 40,
+      "section_id": 9,
+      "text": "All the authors approved the final manuscript for submission.",
+      "page_number": null
+    },
+    {
+      "text_id": 139,
+      "paragraph_id": 41,
+      "section_id": 9,
+      "text": "Peterson, Bruce Pennington, and Richard Olson for many insightful comments and discussions and for providing the behavioral data.",
+      "page_number": null
+    },
+    {
+      "text_id": 140,
+      "paragraph_id": 43,
+      "section_id": 10,
+      "text": "Additional supporting information can be found at http:// journals.sagepub.com/doi/suppl/10.1177/0956797618823540",
+      "page_number": null
+    },
+    {
+      "text_id": 141,
+      "paragraph_id": 45,
+      "section_id": 11,
+      "text": "All data from all simulations as well as an executable version of the model can be downloaded from C Perry's website (https:// sites.google.com/site/conradperryshome/).",
+      "page_number": null
+    },
+    {
+      "text_id": 142,
+      "paragraph_id": 45,
+      "section_id": 11,
+      "text": "The original behavioral data were taken from the study of Peterson, Pennington, and Olson (2013) and are not owned by the authors of the current article.",
+      "page_number": null
+    },
+    {
+      "text_id": 143,
+      "paragraph_id": 45,
+      "section_id": 11,
+      "text": "The design and analysis plans were not preregistered.",
+      "page_number": null
+    },
+    {
+      "text_id": 144,
+      "paragraph_id": 46,
+      "section_id": 12,
+      "text": "Fig.1.",
+      "page_number": null
+    },
+    {
+      "text_id": 145,
+      "paragraph_id": 46,
+      "section_id": 12,
+      "text": "Schematics illustrating how a developmentally plausible computational model of reading development can be used to predict learning outcomes.",
+      "page_number": null
+    },
+    {
+      "text_id": 146,
+      "paragraph_id": 46,
+      "section_id": 12,
+      "text": "After initial explicit teaching on a small set of grapheme-phoneme correspondences (GPCs), the decoding network (a) is able to decode words that have a preexisting representation in the phonological lexicon but no orthographic representation.",
+      "page_number": null
+    },
+    {
+      "text_id": 147,
+      "paragraph_id": 46,
+      "section_id": 12,
+      "text": "If the decoding mechanism activates a word in the phonological lexicon, an orthographic entry is created, and the phonology is used as an internally generated teaching signal (red arrows) to refine and strengthen letter-sound connections, thereby improving the efficiency of the decoding network.",
+      "page_number": null
+    },
+    {
+      "text_id": 148,
+      "paragraph_id": 46,
+      "section_id": 12,
+      "text": "In the individual-deficit simulation approach (b), the efficiency of various components of the reading network can be estimated individually for each child (N = 622) through performance on component tasks that map directly onto model components.",
+      "page_number": null
+    },
+    {
+      "text_id": 149,
+      "paragraph_id": 46,
+      "section_id": 12,
+      "text": "The performance of each child in the three component tasks is used to individually set the parameters of the model in order to predict individual learning outcomes.",
+      "page_number": null
+    },
+    {
+      "text_id": 150,
+      "paragraph_id": 47,
+      "section_id": 13,
+      "text": "Fig.3.",
+      "page_number": null
+    },
+    {
+      "text_id": 151,
+      "paragraph_id": 47,
+      "section_id": 13,
+      "text": "The use of decoding versus direct instruction as a function of reading skill.",
+      "page_number": null
+    },
+    {
+      "text_id": 152,
+      "paragraph_id": 47,
+      "section_id": 13,
+      "text": "Simulations show (a) the proportion of words that were learned via self-generated decoding and via direct instruction and (b) the number of direct instruction attempts.",
+      "page_number": null
+    },
+    {
+      "text_id": 153,
+      "paragraph_id": 47,
+      "section_id": 13,
+      "text": "Both are plotted as a function of the average reading performance of each child.",
+      "page_number": null
+    },
+    {
+      "text_id": 154,
+      "paragraph_id": 47,
+      "section_id": 13,
+      "text": "Colored lines represent the individual data, and the black overlaid lines are the results in deciles.",
+      "page_number": null
+    },
+    {
+      "text_id": 155,
+      "paragraph_id": 47,
+      "section_id": 13,
+      "text": "The proportions of words in (a) do not add up to 1.0 because they refer to a full-size phonological lexicon, which includes words that were not learned by either decoding or direct instruction for most of the simulated individuals.",
+      "page_number": null
+    },
+    {
+      "text_id": 156,
+      "paragraph_id": 48,
+      "section_id": 14,
+      "text": "Fig.6.",
+      "page_number": null
+    },
+    {
+      "text_id": 157,
+      "paragraph_id": 48,
+      "section_id": 14,
+      "text": "Predicting learning outcomes as a function of improvements in orthography, phonology, and vocabulary.",
+      "page_number": null
+    },
+    {
+      "text_id": 158,
+      "paragraph_id": 48,
+      "section_id": 14,
+      "text": "The scores of each child were normalized to start at 0, and the component scores were increased by 0.2 of a z score until they were at their maximum.",
+      "page_number": null
+    },
+    {
+      "text_id": 159,
+      "paragraph_id": 48,
+      "section_id": 14,
+      "text": "Thus, the start of a line represents a child's initial state, and the end of a line represents how a child was predicted to perform when a single component score was increased as much as possible.",
+      "page_number": null
+    },
+    {
+      "text_id": 160,
+      "paragraph_id": 48,
+      "section_id": 14,
+      "text": "Thus, the length of the line represents the potential gain (in z scores) for a given child.",
+      "page_number": null
+    },
+    {
+      "text_id": 161,
+      "paragraph_id": 49,
+      "section_id": 15,
+      "text": "Predicted versus actual reading performance.",
+      "page_number": null
+    },
+    {
+      "text_id": 162,
+      "paragraph_id": 49,
+      "section_id": 15,
+      "text": "The bar graphs (a) show the proportion of correct responses for regular words, irregular words, and nonwords by the multideficit model (MDM) and humans, separately for all children (N = 622), children with dyslexia (n = 388), and normally developing children (controls; n = 234).",
+      "page_number": null
+    },
+    {
+      "text_id": 163,
+      "paragraph_id": 49,
+      "section_id": 15,
+      "text": "Error bars show 95% confidence intervals.",
+      "page_number": null
+    },
+    {
+      "text_id": 164,
+      "paragraph_id": 49,
+      "section_id": 15,
+      "text": "The scatterplots (b) show the relationship between predicted and actual individual reading scores for regular words, irregular words, and nonwords for all children.",
+      "page_number": null
+    },
+    {
+      "text_id": 165,
+      "paragraph_id": 50,
+      "section_id": 16,
+      "text": "Gentaz, E., Sprenger-Charolles, L., Theurel, A., & Colé, P. (2013). Reading comprehension in a large cohort of French first graders from low socio-economic status families: A 7-month longitudinal study. PLOS ONE, 8(11), Article e78608. doi:10.1371/journal.pone.0078608",
+      "page_number": null
+    },
+    {
+      "text_id": 166,
+      "paragraph_id": 51,
+      "section_id": 16,
+      "text": "Hancock, R., Pugh, K. R., & Hoeft, F. (2017). Neural noise hypothesis of developmental dyslexia. Trends in Cognitive Sciences, 21, 434-448.",
+      "page_number": null
+    },
+    {
+      "text_id": 167,
+      "paragraph_id": 52,
+      "section_id": 16,
+      "text": "Harm, M. W., & Seidenberg, M. S. (1999). Phonology, read- ing acquisition, and dyslexia: Insights from connectionist models. Psychological Review, 106, 491-528.",
+      "page_number": null
+    },
+    {
+      "text_id": 168,
+      "paragraph_id": 53,
+      "section_id": 16,
+      "text": "Hulme, C., Bowyer-Crane, C., Carroll, J. M., Duff, F. J., & Snowling, M. J. (2012). The causal role of phoneme awareness and letter-sound knowledge in learning to read: Combining intervention studies with mediation analyses. Psychological Science, 23, 572-577.",
+      "page_number": null
+    },
+    {
+      "text_id": 169,
+      "paragraph_id": 54,
+      "section_id": 16,
+      "text": "Hulme, C., Nash, H. M., Gooch, D., Lervåg, A., & Snowling, M. J. (2015). The foundations of literacy development in children at familial risk of dyslexia. Psychological Science, 26, 1877-1886.",
+      "page_number": null
+    },
+    {
+      "text_id": 170,
+      "paragraph_id": 55,
+      "section_id": 16,
+      "text": "Juel, C. (1988). Learning to read and write: A longitudinal study of 54 children from first through fourth grades. Journal of Educational Psychology, 80, 437-447.",
+      "page_number": null
+    },
+    {
+      "text_id": 171,
+      "paragraph_id": 56,
+      "section_id": 16,
+      "text": "Menghini, D., Finzi, A., Benassi, M., Bolzani, R., Facoetti, A., Giovagnoli, S., . . . Vicari, S. (2010). Different underly- ing neurocognitive deficits in developmental dyslexia: A comparative study. Neuropsychologia, 48, 863-872.",
+      "page_number": null
+    },
+    {
+      "text_id": 172,
+      "paragraph_id": 57,
+      "section_id": 16,
+      "text": "Perry, C., Ziegler, J. C., & Zorzi, M. (2007). Nested incremental modeling in the development of computational theories: The CDP+ model of reading aloud. Psychological Review, 114, 273-315.",
+      "page_number": null
+    },
+    {
+      "text_id": 173,
+      "paragraph_id": 58,
+      "section_id": 16,
+      "text": "Perry, C., Ziegler, J. C., & Zorzi, M. (2010). Beyond single syllables: Large-scale modeling of reading aloud with the connectionist dual process (CDP++) model. Cognitive Psychology, 61, 106-151.",
+      "page_number": null
+    },
+    {
+      "text_id": 174,
+      "paragraph_id": 59,
+      "section_id": 16,
+      "text": "Perry, C., Ziegler, J. C., & Zorzi, M. (2013). A computational and empirical investigation of graphemes in reading. Cognitive Science, 37, 800-828.",
+      "page_number": null
+    },
+    {
+      "text_id": 175,
+      "paragraph_id": 60,
+      "section_id": 16,
+      "text": "Peterson, R. L., Pennington, B. F., & Olson, R. K. (2013). Subtypes of developmental dyslexia: Testing the predic- tions of the dual-route and connectionist frameworks. Cognition, 126, 20-38.",
+      "page_number": null
+    },
+    {
+      "text_id": 176,
+      "paragraph_id": 61,
+      "section_id": 16,
+      "text": "Raftery, A. E. (1995). Bayesian model selection in social research. Sociological Methodology, 25, 111-163.",
+      "page_number": null
+    },
+    {
+      "text_id": 177,
+      "paragraph_id": 62,
+      "section_id": 16,
+      "text": "Share, D. L. (1995). Phonological recoding and self-teaching: Sine qua non of reading acquisition. Cognition, 55, 151-218.",
+      "page_number": null
+    },
+    {
+      "text_id": 178,
+      "paragraph_id": 63,
+      "section_id": 16,
+      "text": "Snowling, M. J. (2000). Dyslexia. Oxford, England: Blackwell.",
+      "page_number": null
+    },
+    {
+      "text_id": 179,
+      "paragraph_id": 64,
+      "section_id": 16,
+      "text": "Snowling, M. J. (2001). From language to reading and dys- lexia. Dyslexia, 7, 37-46.",
+      "page_number": null
+    },
+    {
+      "text_id": 180,
+      "paragraph_id": 65,
+      "section_id": 16,
+      "text": "Sperling, A. J., Lu, Z. L., Manis, F. R., & Seidenberg, M. S. (2005). Deficits in perceptual noise exclusion in develop- mental dyslexia. Nature Neuroscience, 8, 862-863.",
+      "page_number": null
+    },
+    {
+      "text_id": 181,
+      "paragraph_id": 66,
+      "section_id": 16,
+      "text": "Stein, J. (2014). Dyslexia: The role of vision and visual atten- tion. Current Developmental Disorders Reports, 1, 267-280.",
+      "page_number": null
+    },
+    {
+      "text_id": 182,
+      "paragraph_id": 67,
+      "section_id": 16,
+      "text": "Stein, J., & Walsh, V. (1997). To see but not to read; the mag- nocellular theory of dyslexia. Trends in Neurosciences, 20, 147-152.",
+      "page_number": null
+    },
+    {
+      "text_id": 183,
+      "paragraph_id": 68,
+      "section_id": 16,
+      "text": "U.K. Department for Education. (2013). National curriculum in England: Framework for key stages 1 to 4. Retrieved from https://www.gov.uk/government/publications/ national-curriculum-in-england-framework-for-key- stages-1-to-4/the-national-curriculum-in-england-frame- work-for-key-stages-1-to-4",
+      "page_number": null
+    },
+    {
+      "text_id": 184,
+      "paragraph_id": 69,
+      "section_id": 16,
+      "text": "Vandermosten, M., Boets, B., Luts, H., Poelmans, H., Golestani, N., Wouters, J., & Ghesquière, P. (2010). Adults with dys- lexia are impaired in categorizing speech and nonspeech sounds on the basis of temporal cues. Proceedings of the National Academy of Sciences, USA, 107, 10389-10394.",
+      "page_number": null
+    },
+    {
+      "text_id": 185,
+      "paragraph_id": 70,
+      "section_id": 16,
+      "text": "Vellutino, F. R., Fletcher, J. M., Snowling, M. J., & Scanlon, D. M. (2004). Specific reading disability (dyslexia): What have we learned in the past four decades? Journal of Child Psychology and Psychiatry, 45, 2-40.",
+      "page_number": null
+    },
+    {
+      "text_id": 186,
+      "paragraph_id": 71,
+      "section_id": 16,
+      "text": "Vidyasagar, T. R., & Pammer, K. (2010). Dyslexia: A deficit in visuo-spatial attention, not in phonological processing. Trends in Cognitive Sciences, 14, 57-63.",
+      "page_number": null
+    },
+    {
+      "text_id": 187,
+      "paragraph_id": 72,
+      "section_id": 16,
+      "text": "Ziegler, J. C., & Goswami, U. (2005). Reading acquisition, developmental dyslexia, and skilled reading across lan- guages: A psycholinguistic grain size theory. Psychological Bulletin, 131, 3-29.",
+      "page_number": null
+    },
+    {
+      "text_id": 188,
+      "paragraph_id": 73,
+      "section_id": 16,
+      "text": "Ziegler, J. C., Perry, C., & Zorzi, M. (2014). Modelling read- ing development through phonological decoding and self-teaching: Implications for dyslexia. Philosophical Transactions of the Royal Society B: Biological Sciences, 369(1634), Article 20120397.",
+      "page_number": null
+    }
+  ],
+  "section": [
+    {
+      "section_id": 0,
+      "header": "Abstract",
+      "parent_section_id": null,
+      "section_type": "abstract",
+      "classification_score": null
+    },
+    {
+      "section_id": 1,
+      "header": "[div-01]",
+      "parent_section_id": null,
+      "section_type": "intro",
+      "classification_score": null
+    },
+    {
+      "section_id": 2,
+      "header": "Model Description and Method",
+      "parent_section_id": null,
+      "section_type": "method",
+      "classification_score": null
+    },
+    {
+      "section_id": 3,
+      "header": "Results",
+      "parent_section_id": null,
+      "section_type": "results",
+      "classification_score": null
+    },
+    {
+      "section_id": 4,
+      "header": "Conclusion",
+      "parent_section_id": null,
+      "section_type": "results",
+      "classification_score": null
+    },
+    {
+      "section_id": 5,
+      "header": "Action Editor",
+      "parent_section_id": null,
+      "section_type": "results",
+      "classification_score": null
+    },
+    {
+      "section_id": 6,
+      "header": "Acknowledgments",
+      "parent_section_id": null,
+      "section_type": "acknowledgement",
+      "classification_score": null
+    },
+    {
+      "section_id": 7,
+      "header": "",
+      "parent_section_id": null,
+      "section_type": "funding",
+      "classification_score": null
+    },
+    {
+      "section_id": 8,
+      "header": "Declaration of Conflicting Interests",
+      "parent_section_id": null,
+      "section_type": "conflict",
+      "classification_score": null
+    },
+    {
+      "section_id": 9,
+      "header": "Author Contributions",
+      "parent_section_id": null,
+      "section_type": "contribution",
+      "classification_score": null
+    },
+    {
+      "section_id": 10,
+      "header": "Supplemental Material",
+      "parent_section_id": null,
+      "section_type": "annex",
+      "classification_score": null
+    },
+    {
+      "section_id": 11,
+      "header": "Open Practices",
+      "parent_section_id": null,
+      "section_type": "annex",
+      "classification_score": null
+    },
+    {
+      "section_id": 12,
+      "header": "",
+      "parent_section_id": null,
+      "section_type": "figure",
+      "classification_score": null
+    },
+    {
+      "section_id": 13,
+      "header": "Fig 3",
+      "parent_section_id": null,
+      "section_type": "figure",
+      "classification_score": null
+    },
+    {
+      "section_id": 14,
+      "header": "Fig",
+      "parent_section_id": null,
+      "section_type": "figure",
+      "classification_score": null
+    },
+    {
+      "section_id": 15,
+      "header": "Fig 2",
+      "parent_section_id": null,
+      "section_type": "figure",
+      "classification_score": null
+    },
+    {
+      "section_id": 16,
+      "header": "References",
+      "parent_section_id": null,
+      "section_type": "references",
+      "classification_score": null
+    }
+  ],
+  "url": [
+    {
+      "href": "journals.sagepub.com/doi/suppl/10.1177/0956797618823540",
+      "link_text": null,
+      "text_id": 140
+    },
+    {
+      "href": "sites.google.com/site/conradperryshome",
+      "link_text": null,
+      "text_id": 141
+    }
+  ],
+  "bib": [
+    {
+      "bib_type": "article",
+      "doi": "10.1371/journal.pone.0078608",
+      "title": "Reading comprehension in a large cohort of French first graders from low socio-economic status families: A 7-month longitudinal study",
+      "authors": "Gentaz, E; Sprenger-Charolles, L; Theurel, A; Colé, P",
+      "editors": "",
+      "publisher": "",
+      "year": 2013,
+      "volume": "8",
+      "issue": "11",
+      "first_page": "78608",
+      "container": "PLOS ONE",
+      "last_page": null,
+      "bib_id": 0,
+      "year_suffix": "",
+      "text_id": 165
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "Neural noise hypothesis of developmental dyslexia",
+      "authors": "Hancock, R; Pugh, K R; Hoeft, F",
+      "editors": "",
+      "publisher": "",
+      "year": 2017,
+      "volume": "21",
+      "issue": "",
+      "first_page": "434",
+      "container": "Trends in Cognitive Sciences",
+      "last_page": "448",
+      "bib_id": 1,
+      "year_suffix": "",
+      "text_id": 166
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "Phonology, reading acquisition, and dyslexia: Insights from connectionist models",
+      "authors": "Harm, M W; Seidenberg, M S",
+      "editors": "",
+      "publisher": "",
+      "year": 1999,
+      "volume": "106",
+      "issue": "",
+      "first_page": "491",
+      "container": "Psychological Review",
+      "last_page": "528",
+      "bib_id": 2,
+      "year_suffix": "",
+      "text_id": 167
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "The causal role of phoneme awareness and letter-sound knowledge in learning to read: Combining intervention studies with mediation analyses",
+      "authors": "Hulme, C; Bowyer-Crane, C; Carroll, J M; Duff, F J; Snowling, M J",
+      "editors": "",
+      "publisher": "",
+      "year": 2012,
+      "volume": "23",
+      "issue": "",
+      "first_page": "572",
+      "container": "Psychological Science",
+      "last_page": "577",
+      "bib_id": 3,
+      "year_suffix": "",
+      "text_id": 168
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "The foundations of literacy development in children at familial risk of dyslexia",
+      "authors": "Hulme, C; Nash, H M; Gooch, D; Lervåg, A; Snowling, M J",
+      "editors": "",
+      "publisher": "",
+      "year": 2015,
+      "volume": "26",
+      "issue": "",
+      "first_page": "1877",
+      "container": "Psychological Science",
+      "last_page": "1886",
+      "bib_id": 4,
+      "year_suffix": "",
+      "text_id": 169
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "Learning to read and write: A longitudinal study of 54 children from first through fourth grades",
+      "authors": "Juel, C",
+      "editors": "",
+      "publisher": "",
+      "year": 1988,
+      "volume": "80",
+      "issue": "",
+      "first_page": "437",
+      "container": "Journal of Educational Psychology",
+      "last_page": "447",
+      "bib_id": 5,
+      "year_suffix": "",
+      "text_id": 170
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "Different underlying neurocognitive deficits in developmental dyslexia: A comparative study",
+      "authors": "Menghini, D; Finzi, A; Benassi, M; Bolzani, R; Facoetti, A; Giovagnoli, S; Vicari, . .; , S",
+      "editors": "",
+      "publisher": "",
+      "year": 2010,
+      "volume": "48",
+      "issue": "",
+      "first_page": "863",
+      "container": "Neuropsychologia",
+      "last_page": "872",
+      "bib_id": 6,
+      "year_suffix": "",
+      "text_id": 171
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "Nested incremental modeling in the development of computational theories: The CDP+ model of reading aloud",
+      "authors": "Perry, C; Ziegler, J C; Zorzi, M",
+      "editors": "",
+      "publisher": "",
+      "year": 2007,
+      "volume": "114",
+      "issue": "",
+      "first_page": "273",
+      "container": "Psychological Review",
+      "last_page": "315",
+      "bib_id": 7,
+      "year_suffix": "",
+      "text_id": 172
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "Beyond single syllables: Large-scale modeling of reading aloud with the connectionist dual process (CDP++) model",
+      "authors": "Perry, C; Ziegler, J C; Zorzi, M",
+      "editors": "",
+      "publisher": "",
+      "year": 2010,
+      "volume": "61",
+      "issue": "",
+      "first_page": "106",
+      "container": "Cognitive Psychology",
+      "last_page": "151",
+      "bib_id": 8,
+      "year_suffix": "",
+      "text_id": 173
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "A computational and empirical investigation of graphemes in reading",
+      "authors": "Perry, C; Ziegler, J C; Zorzi, M",
+      "editors": "",
+      "publisher": "",
+      "year": 2013,
+      "volume": "37",
+      "issue": "",
+      "first_page": "800",
+      "container": "Cognitive Science",
+      "last_page": "828",
+      "bib_id": 9,
+      "year_suffix": "",
+      "text_id": 174
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "Subtypes of developmental dyslexia: Testing the predictions of the dual-route and connectionist frameworks",
+      "authors": "Peterson, R L; Pennington, B F; Olson, R K",
+      "editors": "",
+      "publisher": "",
+      "year": 2013,
+      "volume": "126",
+      "issue": "",
+      "first_page": "20",
+      "container": "Cognition",
+      "last_page": "38",
+      "bib_id": 10,
+      "year_suffix": "",
+      "text_id": 175
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "Bayesian model selection in social research",
+      "authors": "Raftery, A E",
+      "editors": "",
+      "publisher": "",
+      "year": 1995,
+      "volume": "25",
+      "issue": "",
+      "first_page": "111",
+      "container": "Sociological Methodology",
+      "last_page": "163",
+      "bib_id": 11,
+      "year_suffix": "",
+      "text_id": 176
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "Phonological recoding and self-teaching: Sine qua non of reading acquisition",
+      "authors": "Share, D L",
+      "editors": "",
+      "publisher": "",
+      "year": 1995,
+      "volume": "55",
+      "issue": "",
+      "first_page": "151",
+      "container": "Cognition",
+      "last_page": "218",
+      "bib_id": 12,
+      "year_suffix": "",
+      "text_id": 177
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "",
+      "authors": "Snowling, M J",
+      "editors": "",
+      "publisher": "Blackwell",
+      "year": 2000,
+      "volume": "",
+      "issue": "",
+      "first_page": null,
+      "container": "Dyslexia",
+      "last_page": null,
+      "bib_id": 13,
+      "year_suffix": "",
+      "text_id": 178
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "From language to reading and dyslexia",
+      "authors": "Snowling, M J",
+      "editors": "",
+      "publisher": "",
+      "year": 2001,
+      "volume": "7",
+      "issue": "",
+      "first_page": "37",
+      "container": "Dyslexia",
+      "last_page": "46",
+      "bib_id": 14,
+      "year_suffix": "",
+      "text_id": 179
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "Deficits in perceptual noise exclusion in developmental dyslexia",
+      "authors": "Sperling, A J; Lu, Z L; Manis, F R; Seidenberg, M S",
+      "editors": "",
+      "publisher": "",
+      "year": 2005,
+      "volume": "8",
+      "issue": "",
+      "first_page": "862",
+      "container": "Nature Neuroscience",
+      "last_page": "863",
+      "bib_id": 15,
+      "year_suffix": "",
+      "text_id": 180
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "Dyslexia: The role of vision and visual attention",
+      "authors": "Stein, J",
+      "editors": "",
+      "publisher": "",
+      "year": 2014,
+      "volume": "1",
+      "issue": "",
+      "first_page": "267",
+      "container": "Current Developmental Disorders Reports",
+      "last_page": "280",
+      "bib_id": 16,
+      "year_suffix": "",
+      "text_id": 181
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "To see but not to read; the magnocellular theory of dyslexia",
+      "authors": "Stein, J; Walsh, V",
+      "editors": "",
+      "publisher": "",
+      "year": 1997,
+      "volume": "20",
+      "issue": "",
+      "first_page": "147",
+      "container": "Trends in Neurosciences",
+      "last_page": "152",
+      "bib_id": 17,
+      "year_suffix": "",
+      "text_id": 182
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "",
+      "authors": "",
+      "editors": "",
+      "publisher": "U.K. Department for Education",
+      "year": 2013,
+      "volume": "",
+      "issue": "",
+      "first_page": null,
+      "container": "",
+      "last_page": null,
+      "bib_id": 18,
+      "year_suffix": "",
+      "text_id": 183
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "Adults with dyslexia are impaired in categorizing speech and nonspeech sounds on the basis of temporal cues",
+      "authors": "Vandermosten, M; Boets, B; Luts, H; Poelmans, H; Golestani, N; Wouters, J; Ghesquière, P",
+      "editors": "",
+      "publisher": "",
+      "year": 2010,
+      "volume": "107",
+      "issue": "",
+      "first_page": "10389",
+      "container": "Proceedings of the National Academy of Sciences",
+      "last_page": "10394",
+      "bib_id": 19,
+      "year_suffix": "",
+      "text_id": 184
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "Specific reading disability (dyslexia): What have we learned in the past four decades",
+      "authors": "Vellutino, F R; Fletcher, J M; Snowling, M J; Scanlon, D M",
+      "editors": "",
+      "publisher": "",
+      "year": 2004,
+      "volume": "45",
+      "issue": "",
+      "first_page": "2",
+      "container": "Journal of Child Psychology and Psychiatry",
+      "last_page": "40",
+      "bib_id": 20,
+      "year_suffix": "",
+      "text_id": 185
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "Dyslexia: A deficit in visuo-spatial attention, not in phonological processing",
+      "authors": "Vidyasagar, T R; Pammer, K",
+      "editors": "",
+      "publisher": "",
+      "year": 2010,
+      "volume": "14",
+      "issue": "",
+      "first_page": "57",
+      "container": "Trends in Cognitive Sciences",
+      "last_page": "63",
+      "bib_id": 21,
+      "year_suffix": "",
+      "text_id": 186
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "Reading acquisition, developmental dyslexia, and skilled reading across languages: A psycholinguistic grain size theory",
+      "authors": "Ziegler, J C; Goswami, U",
+      "editors": "",
+      "publisher": "",
+      "year": 2005,
+      "volume": "131",
+      "issue": "",
+      "first_page": "3",
+      "container": "Psychological Bulletin",
+      "last_page": "29",
+      "bib_id": 22,
+      "year_suffix": "",
+      "text_id": 187
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "Modelling reading development through phonological decoding and self-teaching: Implications for dyslexia",
+      "authors": "Ziegler, J C; Perry, C; Zorzi, M",
+      "editors": "",
+      "publisher": "",
+      "year": 2014,
+      "volume": "369",
+      "issue": "",
+      "first_page": null,
+      "container": "Philosophical Transactions of the Royal Society B: Biological Sciences",
+      "last_page": null,
+      "bib_id": 23,
+      "year_suffix": "",
+      "text_id": 188
+    }
+  ],
+  "xref": [
+    {
+      "xref_id": 0,
+      "xref_type": "bib",
+      "contents": "Gentaz, Sprenger-Charolles, Theurel, & Colé, 2013;",
+      "text_id": 70
+    },
+    {
+      "xref_id": 1,
+      "xref_type": "bib",
+      "contents": "(Hancock, Pugh, & Hoeft, 2017)",
+      "text_id": 20
+    },
+    {
+      "xref_id": 1,
+      "xref_type": "bib",
+      "contents": "(Hancock, Pugh, & Hoeft, 2017)",
+      "text_id": 21
+    },
+    {
+      "xref_id": 1,
+      "xref_type": "bib",
+      "contents": "(Hancock, Pugh, & Hoeft, 2017)",
+      "text_id": 23
+    },
+    {
+      "xref_id": 1,
+      "xref_type": "bib",
+      "contents": "(Hancock et al., 2017;",
+      "text_id": 77
+    },
+    {
+      "xref_id": 2,
+      "xref_type": "bib",
+      "contents": "Harm and Seidenberg (1999)",
+      "text_id": null
+    },
+    {
+      "xref_id": 2,
+      "xref_type": "bib",
+      "contents": "Harm and Seidenberg (1999)",
+      "text_id": 12
+    },
+    {
+      "xref_id": 2,
+      "xref_type": "bib",
+      "contents": "Harm and Seidenberg (1999)",
+      "text_id": 13
+    },
+    {
+      "xref_id": 3,
+      "xref_type": "bib",
+      "contents": "Hulme, Bowyer-Crane, Carroll, Duff, & Snowling, 2012)",
+      "text_id": 29
+    },
+    {
+      "xref_id": 4,
+      "xref_type": "bib",
+      "contents": "(Hulme, Nash, Gooch, Lervåg, & Snowling, 2015;",
+      "text_id": 8
+    },
+    {
+      "xref_id": 5,
+      "xref_type": "bib",
+      "contents": "Juel, 1988)",
+      "text_id": 70
+    },
+    {
+      "xref_id": 6,
+      "xref_type": "bib",
+      "contents": "(Menghini et al., 2010)",
+      "text_id": 18
+    },
+    {
+      "xref_id": 7,
+      "xref_type": "bib",
+      "contents": "(Perry, Ziegler, & Zorzi, 2007",
+      "text_id": 26
+    },
+    {
+      "xref_id": 10,
+      "xref_type": "bib",
+      "contents": "(Peterson, Pennington, & Olson, 2013",
+      "text_id": 21
+    },
+    {
+      "xref_id": 10,
+      "xref_type": "bib",
+      "contents": "Peterson et al. (2013)",
+      "text_id": 45
+    },
+    {
+      "xref_id": 10,
+      "xref_type": "bib",
+      "contents": "Peterson et al. (2013)",
+      "text_id": null
+    },
+    {
+      "xref_id": 10,
+      "xref_type": "bib",
+      "contents": "Peterson, Pennington, and Olson (2013)",
+      "text_id": 142
+    },
+    {
+      "xref_id": 11,
+      "xref_type": "bib",
+      "contents": "(Raftery, 1995)",
+      "text_id": 95
+    },
+    {
+      "xref_id": 11,
+      "xref_type": "bib",
+      "contents": "Raftery, 1995)",
+      "text_id": 98
+    },
+    {
+      "xref_id": 12,
+      "xref_type": "bib",
+      "contents": "(Share, 1995)",
+      "text_id": 20
+    },
+    {
+      "xref_id": 13,
+      "xref_type": "bib",
+      "contents": "(Snowling, 2000)",
+      "text_id": 7
+    },
+    {
+      "xref_id": 14,
+      "xref_type": "bib",
+      "contents": "Snowling, 2001)",
+      "text_id": 8
+    },
+    {
+      "xref_id": 15,
+      "xref_type": "bib",
+      "contents": "Sperling, Lu, Manis, & Seidenberg, 2005)",
+      "text_id": 77
+    },
+    {
+      "xref_id": 16,
+      "xref_type": "bib",
+      "contents": "(Stein, 2014)",
+      "text_id": 23
+    },
+    {
+      "xref_id": 17,
+      "xref_type": "bib",
+      "contents": "(Stein & Walsh, 1997)",
+      "text_id": 8
+    },
+    {
+      "xref_id": 19,
+      "xref_type": "bib",
+      "contents": "(Vandermosten et al., 2010)",
+      "text_id": 8
+    },
+    {
+      "xref_id": 20,
+      "xref_type": "bib",
+      "contents": "(Vellutino, Fletcher, Snowling, & Scanlon, 2004)",
+      "text_id": 13
+    },
+    {
+      "xref_id": 20,
+      "xref_type": "bib",
+      "contents": "(Vellutino et al., 2004)",
+      "text_id": 23
+    },
+    {
+      "xref_id": 21,
+      "xref_type": "bib",
+      "contents": "(Vidyasagar & Pammer, 2010)",
+      "text_id": 8
+    },
+    {
+      "xref_id": 22,
+      "xref_type": "bib",
+      "contents": "(Ziegler & Goswami, 2005)",
+      "text_id": 12
+    },
+    {
+      "xref_id": 23,
+      "xref_type": "bib",
+      "contents": "(Ziegler, Perry, & Zorzi, 2014)",
+      "text_id": 35
+    },
+    {
+      "xref_id": 23,
+      "xref_type": "bib",
+      "contents": "Ziegler et al., 2014)",
+      "text_id": 55
+    },
+    {
+      "xref_id": null,
+      "xref_type": "bib",
+      "contents": ", 2010",
+      "text_id": 26
+    },
+    {
+      "xref_id": null,
+      "xref_type": "bib",
+      "contents": ", 2013)",
+      "text_id": 26
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "3a",
+      "text_id": 73
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "3a",
+      "text_id": 74
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "3b",
+      "text_id": 73
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "3b",
+      "text_id": 74
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "S3",
+      "text_id": null
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "1a",
+      "text_id": 25
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "1b",
+      "text_id": 44
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "2a",
+      "text_id": 62
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "2a",
+      "text_id": 64
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "2b",
+      "text_id": 66
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "4",
+      "text_id": 80
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "5",
+      "text_id": null
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "S2",
+      "text_id": null
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "5",
+      "text_id": null
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "5",
+      "text_id": 95
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "6",
+      "text_id": 111
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "6",
+      "text_id": 114
+    },
+    {
+      "xref_id": null,
+      "xref_type": "table",
+      "contents": "S2",
+      "text_id": 103
+    }
+  ],
+  "figure": [
+    {
+      "figure_id": 1,
+      "section_id": 12,
+      "image": null,
+      "page_number": null
+    },
+    {
+      "figure_id": 2,
+      "section_id": 13,
+      "image": null,
+      "page_number": null
+    },
+    {
+      "figure_id": 3,
+      "section_id": 14,
+      "image": null,
+      "page_number": null
+    },
+    {
+      "figure_id": 4,
+      "section_id": 15,
+      "image": null,
+      "page_number": null
+    }
+  ],
+  "table": [],
+  "eq": [
+    {
+      "text_id": 53,
+      "grp_id": 1,
+      "lhs": "N",
+      "comp": "=",
+      "rhs": "622"
+    },
+    {
+      "text_id": 90,
+      "grp_id": 2,
+      "lhs": "2",
+      "comp": "=",
+      "rhs": ".28"
+    },
+    {
+      "text_id": 90,
+      "grp_id": 2,
+      "lhs": "BICs",
+      "comp": "=",
+      "rhs": "-1,398"
+    },
+    {
+      "text_id": 90,
+      "grp_id": 2,
+      "lhs": "2",
+      "comp": "=",
+      "rhs": ".71"
+    },
+    {
+      "text_id": 90,
+      "grp_id": 2,
+      "lhs": "BICs",
+      "comp": "=",
+      "rhs": "-1,189"
+    },
+    {
+      "text_id": 90,
+      "grp_id": 2,
+      "lhs": "2",
+      "comp": "=",
+      "rhs": ".64"
+    },
+    {
+      "text_id": 90,
+      "grp_id": 2,
+      "lhs": "BICs",
+      "comp": "=",
+      "rhs": "-1,074"
+    },
+    {
+      "text_id": 90,
+      "grp_id": 2,
+      "lhs": "2",
+      "comp": "=",
+      "rhs": ".59"
+    },
+    {
+      "text_id": 90,
+      "grp_id": 2,
+      "lhs": "BIC",
+      "comp": "=",
+      "rhs": "-516"
+    },
+    {
+      "text_id": 90,
+      "grp_id": 2,
+      "lhs": "2",
+      "comp": "=",
+      "rhs": ".49"
+    },
+    {
+      "text_id": 90,
+      "grp_id": 2,
+      "lhs": "BIC",
+      "comp": "=",
+      "rhs": "-529"
+    },
+    {
+      "text_id": 90,
+      "grp_id": 2,
+      "lhs": "2",
+      "comp": "=",
+      "rhs": ".60"
+    },
+    {
+      "text_id": 90,
+      "grp_id": 2,
+      "lhs": "BIC",
+      "comp": "=",
+      "rhs": "-135"
+    },
+    {
+      "text_id": 90,
+      "grp_id": 2,
+      "lhs": "2",
+      "comp": "=",
+      "rhs": ".43"
+    },
+    {
+      "text_id": 90,
+      "grp_id": 2,
+      "lhs": "BIC",
+      "comp": "=",
+      "rhs": "-551"
+    },
+    {
+      "text_id": 90,
+      "grp_id": 2,
+      "lhs": "2",
+      "comp": "=",
+      "rhs": ".54"
+    },
+    {
+      "text_id": 90,
+      "grp_id": 2,
+      "lhs": "BIC",
+      "comp": "=",
+      "rhs": "-487"
+    },
+    {
+      "text_id": 90,
+      "grp_id": 2,
+      "lhs": "2",
+      "comp": "=",
+      "rhs": ".57"
+    },
+    {
+      "text_id": 90,
+      "grp_id": 2,
+      "lhs": "BIC",
+      "comp": "=",
+      "rhs": "-209"
+    },
+    {
+      "text_id": 90,
+      "grp_id": 2,
+      "lhs": "2",
+      "comp": "=",
+      "rhs": ".58"
+    },
+    {
+      "text_id": 90,
+      "grp_id": 2,
+      "lhs": "BIC",
+      "comp": "=",
+      "rhs": "-576"
+    },
+    {
+      "text_id": 90,
+      "grp_id": 2,
+      "lhs": "2",
+      "comp": "=",
+      "rhs": ".58"
+    },
+    {
+      "text_id": 90,
+      "grp_id": 2,
+      "lhs": "BIC",
+      "comp": "=",
+      "rhs": "184"
+    },
+    {
+      "text_id": 90,
+      "grp_id": 2,
+      "lhs": "2",
+      "comp": "=",
+      "rhs": ".51"
+    },
+    {
+      "text_id": 90,
+      "grp_id": 2,
+      "lhs": "BIC",
+      "comp": "=",
+      "rhs": "72"
+    },
+    {
+      "text_id": 90,
+      "grp_id": 2,
+      "lhs": "2",
+      "comp": "=",
+      "rhs": ".52"
+    },
+    {
+      "text_id": 90,
+      "grp_id": 2,
+      "lhs": "BIC",
+      "comp": "=",
+      "rhs": "-587"
+    },
+    {
+      "text_id": 90,
+      "grp_id": 2,
+      "lhs": "2",
+      "comp": "=",
+      "rhs": ".65"
+    },
+    {
+      "text_id": 90,
+      "grp_id": 2,
+      "lhs": "BIC",
+      "comp": "=",
+      "rhs": "-625"
+    },
+    {
+      "text_id": 90,
+      "grp_id": 2,
+      "lhs": "2",
+      "comp": "=",
+      "rhs": ".69"
+    },
+    {
+      "text_id": 148,
+      "grp_id": 3,
+      "lhs": "N",
+      "comp": "=",
+      "rhs": "622"
+    },
+    {
+      "text_id": 162,
+      "grp_id": 4,
+      "lhs": "N",
+      "comp": "=",
+      "rhs": "622"
+    },
+    {
+      "text_id": 162,
+      "grp_id": 4,
+      "lhs": "n",
+      "comp": "=",
+      "rhs": "388"
+    },
+    {
+      "text_id": 162,
+      "grp_id": 4,
+      "lhs": "n",
+      "comp": "=",
+      "rhs": "234"
+    }
+  ],
+  "bib_match": [
+    {
+      "bib_id": 1,
+      "service": "crossref",
+      "service_id": null,
+      "score": 89.837,
+      "bib_type": "article",
+      "doi": "10.1016/j.tics.2017.08.003",
+      "title": "Neural Noise Hypothesis of Developmental Dyslexia",
+      "authors": [
+        {
+          "given": "Roeland",
+          "family": "Hancock"
+        },
+        {
+          "given": "Kenneth R.",
+          "family": "Pugh"
+        },
+        {
+          "given": "Fumiko",
+          "family": "Hoeft"
+        }
+      ],
+      "editors": [],
+      "publisher": "Elsevier BV",
+      "year": 2017,
+      "date": null,
+      "container": "Trends in Cognitive Sciences",
+      "volume": "21",
+      "issue": "11",
+      "first_page": "909",
+      "last_page": null,
+      "edition": null,
+      "version": null,
+      "url": "https://doi.org/10.1016/j.tics.2017.08.003"
+    },
+    {
+      "bib_id": 2,
+      "service": "crossref",
+      "service_id": null,
+      "score": 96.378,
+      "bib_type": "article",
+      "doi": "10.1037//0033-295x.106.3.491",
+      "title": "Phonology, reading acquisition, and dyslexia: Insights from connectionist models.",
+      "authors": [
+        {
+          "given": "Michael W.",
+          "family": "Harm"
+        },
+        {
+          "given": "Mark S.",
+          "family": "Seidenberg"
+        }
+      ],
+      "editors": [],
+      "publisher": "American Psychological Association (APA)",
+      "year": 1999,
+      "date": null,
+      "container": "Psychological Review",
+      "volume": "106",
+      "issue": "3",
+      "first_page": "491",
+      "last_page": "528",
+      "edition": null,
+      "version": null,
+      "url": "https://doi.org/10.1037//0033-295x.106.3.491"
+    },
+    {
+      "bib_id": 3,
+      "service": "crossref",
+      "service_id": null,
+      "score": 135.3033,
+      "bib_type": "article",
+      "doi": "10.1177/0956797611435921",
+      "title": "The Causal Role of Phoneme Awareness and Letter-Sound Knowledge in Learning to Read",
+      "authors": [
+        {
+          "given": "Charles",
+          "family": "Hulme"
+        },
+        {
+          "given": "Claudine",
+          "family": "Bowyer-Crane"
+        },
+        {
+          "given": "Julia M.",
+          "family": "Carroll"
+        },
+        {
+          "given": "Fiona J.",
+          "family": "Duff"
+        },
+        {
+          "given": "Margaret J.",
+          "family": "Snowling"
+        }
+      ],
+      "editors": [],
+      "publisher": "SAGE Publications",
+      "year": 2012,
+      "date": null,
+      "container": "Psychological Science",
+      "volume": "23",
+      "issue": "6",
+      "first_page": "572",
+      "last_page": "577",
+      "edition": null,
+      "version": null,
+      "url": "https://doi.org/10.1177/0956797611435921"
+    },
+    {
+      "bib_id": 4,
+      "service": "crossref",
+      "service_id": null,
+      "score": 100.6611,
+      "bib_type": "article",
+      "doi": "10.1177/0956797615603702",
+      "title": "The Foundations of Literacy Development in Children at Familial Risk of Dyslexia",
+      "authors": [
+        {
+          "given": "Charles",
+          "family": "Hulme"
+        },
+        {
+          "given": "Hannah M.",
+          "family": "Nash"
+        },
+        {
+          "given": "Debbie",
+          "family": "Gooch"
+        },
+        {
+          "given": "Arne",
+          "family": "Lervåg"
+        },
+        {
+          "given": "Margaret J.",
+          "family": "Snowling"
+        }
+      ],
+      "editors": [],
+      "publisher": "SAGE Publications",
+      "year": 2015,
+      "date": null,
+      "container": "Psychological Science",
+      "volume": "26",
+      "issue": "12",
+      "first_page": "1877",
+      "last_page": "1886",
+      "edition": null,
+      "version": null,
+      "url": "https://doi.org/10.1177/0956797615603702"
+    },
+    {
+      "bib_id": 5,
+      "service": "crossref",
+      "service_id": null,
+      "score": 93.7446,
+      "bib_type": "article",
+      "doi": "10.1037/0022-0663.80.4.437",
+      "title": "Learning to read and write: A longitudinal study of 54 children from first through fourth grades.",
+      "authors": [
+        {
+          "given": "Connie",
+          "family": "Juel"
+        }
+      ],
+      "editors": [],
+      "publisher": "American Psychological Association (APA)",
+      "year": 1988,
+      "date": null,
+      "container": "Journal of Educational Psychology",
+      "volume": "80",
+      "issue": "4",
+      "first_page": "437",
+      "last_page": "447",
+      "edition": null,
+      "version": null,
+      "url": "https://doi.org/10.1037/0022-0663.80.4.437"
+    },
+    {
+      "bib_id": 6,
+      "service": "crossref",
+      "service_id": null,
+      "score": 144.0827,
+      "bib_type": "article",
+      "doi": "10.1016/j.neuropsychologia.2009.11.003",
+      "title": "Different underlying neurocognitive deficits in developmental dyslexia: A comparative study",
+      "authors": [
+        {
+          "given": "D.",
+          "family": "Menghini"
+        },
+        {
+          "given": "A.",
+          "family": "Finzi"
+        },
+        {
+          "given": "M.",
+          "family": "Benassi"
+        },
+        {
+          "given": "R.",
+          "family": "Bolzani"
+        },
+        {
+          "given": "A.",
+          "family": "Facoetti"
+        },
+        {
+          "given": "S.",
+          "family": "Giovagnoli"
+        },
+        {
+          "given": "M.",
+          "family": "Ruffino"
+        },
+        {
+          "given": "S.",
+          "family": "Vicari"
+        }
+      ],
+      "editors": [],
+      "publisher": "Elsevier BV",
+      "year": 2010,
+      "date": null,
+      "container": "Neuropsychologia",
+      "volume": "48",
+      "issue": "4",
+      "first_page": "863",
+      "last_page": "872",
+      "edition": null,
+      "version": null,
+      "url": "https://doi.org/10.1016/j.neuropsychologia.2009.11.003"
+    },
+    {
+      "bib_id": 7,
+      "service": "crossref",
+      "service_id": null,
+      "score": 107.919,
+      "bib_type": "article",
+      "doi": "10.1037/0033-295x.114.2.273",
+      "title": "Nested incremental modeling in the development of computational theories: The CDP+ model of reading aloud.",
+      "authors": [
+        {
+          "given": "Conrad",
+          "family": "Perry"
+        },
+        {
+          "given": "Johannes C.",
+          "family": "Ziegler"
+        },
+        {
+          "given": "Marco",
+          "family": "Zorzi"
+        }
+      ],
+      "editors": [],
+      "publisher": "American Psychological Association (APA)",
+      "year": 2007,
+      "date": null,
+      "container": "Psychological Review",
+      "volume": "114",
+      "issue": "2",
+      "first_page": "273",
+      "last_page": "315",
+      "edition": null,
+      "version": null,
+      "url": "https://doi.org/10.1037/0033-295x.114.2.273"
+    },
+    {
+      "bib_id": 8,
+      "service": "crossref",
+      "service_id": null,
+      "score": 130.3639,
+      "bib_type": "article",
+      "doi": "10.1016/j.cogpsych.2010.04.001",
+      "title": "Beyond single syllables: Large-scale modeling of reading aloud with the Connectionist Dual Process (CDP++) model",
+      "authors": [
+        {
+          "given": "Conrad",
+          "family": "Perry"
+        },
+        {
+          "given": "Johannes C.",
+          "family": "Ziegler"
+        },
+        {
+          "given": "Marco",
+          "family": "Zorzi"
+        }
+      ],
+      "editors": [],
+      "publisher": "Elsevier BV",
+      "year": 2010,
+      "date": null,
+      "container": "Cognitive Psychology",
+      "volume": "61",
+      "issue": "2",
+      "first_page": "106",
+      "last_page": "151",
+      "edition": null,
+      "version": null,
+      "url": "https://doi.org/10.1016/j.cogpsych.2010.04.001"
+    },
+    {
+      "bib_id": 9,
+      "service": "crossref",
+      "service_id": null,
+      "score": 78.1026,
+      "bib_type": "article",
+      "doi": "10.1111/cogs.12030",
+      "title": "A Computational and Empirical Investigation of Graphemes in Reading",
+      "authors": [
+        {
+          "given": "Conrad",
+          "family": "Perry"
+        },
+        {
+          "given": "Johannes C.",
+          "family": "Ziegler"
+        },
+        {
+          "given": "Marco",
+          "family": "Zorzi"
+        }
+      ],
+      "editors": [],
+      "publisher": "Wiley",
+      "year": 2013,
+      "date": null,
+      "container": "Cognitive Science",
+      "volume": "37",
+      "issue": "5",
+      "first_page": "800",
+      "last_page": "828",
+      "edition": null,
+      "version": null,
+      "url": "https://doi.org/10.1111/cogs.12030"
+    },
+    {
+      "bib_id": 10,
+      "service": "crossref",
+      "service_id": null,
+      "score": 103.4666,
+      "bib_type": "article",
+      "doi": "10.1016/j.cognition.2012.08.007",
+      "title": "Subtypes of developmental dyslexia: Testing the predictions of the dual-route and connectionist frameworks",
+      "authors": [
+        {
+          "given": "Robin L.",
+          "family": "Peterson"
+        },
+        {
+          "given": "Bruce F.",
+          "family": "Pennington"
+        },
+        {
+          "given": "Richard K.",
+          "family": "Olson"
+        }
+      ],
+      "editors": [],
+      "publisher": "Elsevier BV",
+      "year": 2013,
+      "date": null,
+      "container": "Cognition",
+      "volume": "126",
+      "issue": "1",
+      "first_page": "20",
+      "last_page": "38",
+      "edition": null,
+      "version": null,
+      "url": "https://doi.org/10.1016/j.cognition.2012.08.007"
+    },
+    {
+      "bib_id": 11,
+      "service": "crossref",
+      "service_id": null,
+      "score": 63.9882,
+      "bib_type": "article",
+      "doi": "10.2307/271063",
+      "title": "Bayesian Model Selection in Social Research",
+      "authors": [
+        {
+          "given": "Adrian E.",
+          "family": "Raftery"
+        }
+      ],
+      "editors": [],
+      "publisher": "JSTOR",
+      "year": 1995,
+      "date": null,
+      "container": "Sociological Methodology",
+      "volume": "25",
+      "issue": null,
+      "first_page": "111",
+      "last_page": null,
+      "edition": null,
+      "version": null,
+      "url": "https://doi.org/10.2307/271063"
+    },
+    {
+      "bib_id": 12,
+      "service": "crossref",
+      "service_id": null,
+      "score": 98.135,
+      "bib_type": "article",
+      "doi": "10.1016/0010-0277(94)00645-2",
+      "title": "Phonological recoding and self-teaching: sine qua non of reading acquisition",
+      "authors": [
+        {
+          "given": "David L.",
+          "family": "Share"
+        }
+      ],
+      "editors": [],
+      "publisher": "Elsevier BV",
+      "year": 1995,
+      "date": null,
+      "container": "Cognition",
+      "volume": "55",
+      "issue": "2",
+      "first_page": "151",
+      "last_page": "218",
+      "edition": null,
+      "version": null,
+      "url": "https://doi.org/10.1016/0010-0277(94)00645-2"
+    },
+    {
+      "bib_id": 14,
+      "service": "crossref",
+      "service_id": null,
+      "score": 61.0912,
+      "bib_type": "article",
+      "doi": "10.1002/dys.185",
+      "title": "From language to reading and dyslexia1",
+      "authors": [
+        {
+          "given": "Margaret J.",
+          "family": "Snowling"
+        }
+      ],
+      "editors": [],
+      "publisher": "Wiley",
+      "year": 2001,
+      "date": null,
+      "container": "Dyslexia",
+      "volume": "7",
+      "issue": "1",
+      "first_page": "37",
+      "last_page": "46",
+      "edition": null,
+      "version": null,
+      "url": "https://doi.org/10.1002/dys.185"
+    },
+    {
+      "bib_id": 15,
+      "service": "crossref",
+      "service_id": null,
+      "score": 93.0866,
+      "bib_type": "article",
+      "doi": "10.1038/nn1474",
+      "title": "Deficits in perceptual noise exclusion in developmental dyslexia",
+      "authors": [
+        {
+          "given": "Anne J",
+          "family": "Sperling"
+        },
+        {
+          "given": "Zhong-Lin",
+          "family": "Lu"
+        },
+        {
+          "given": "Franklin R",
+          "family": "Manis"
+        },
+        {
+          "given": "Mark S",
+          "family": "Seidenberg"
+        }
+      ],
+      "editors": [],
+      "publisher": "Springer Science and Business Media LLC",
+      "year": 2005,
+      "date": null,
+      "container": "Nature Neuroscience",
+      "volume": "8",
+      "issue": "7",
+      "first_page": "862",
+      "last_page": "863",
+      "edition": null,
+      "version": null,
+      "url": "https://doi.org/10.1038/nn1474"
+    },
+    {
+      "bib_id": 16,
+      "service": "crossref",
+      "service_id": null,
+      "score": 67.0011,
+      "bib_type": "article",
+      "doi": "10.1007/s40474-014-0030-6",
+      "title": "Dyslexia: the Role of Vision and Visual Attention",
+      "authors": [
+        {
+          "given": "John",
+          "family": "Stein"
+        }
+      ],
+      "editors": [],
+      "publisher": "Springer Science and Business Media LLC",
+      "year": 2014,
+      "date": null,
+      "container": "Current Developmental Disorders Reports",
+      "volume": "1",
+      "issue": "4",
+      "first_page": "267",
+      "last_page": "280",
+      "edition": null,
+      "version": null,
+      "url": "https://doi.org/10.1007/s40474-014-0030-6"
+    },
+    {
+      "bib_id": 17,
+      "service": "crossref",
+      "service_id": null,
+      "score": 69.8993,
+      "bib_type": "article",
+      "doi": "10.1016/s0166-2236(96)01005-3",
+      "title": "To see but not to read; the magnocellular theory of dyslexia",
+      "authors": [
+        {
+          "given": "J",
+          "family": "Stein"
+        }
+      ],
+      "editors": [],
+      "publisher": "Elsevier BV",
+      "year": 1997,
+      "date": null,
+      "container": "Trends in Neurosciences",
+      "volume": "20",
+      "issue": "4",
+      "first_page": "147",
+      "last_page": "152",
+      "edition": null,
+      "version": null,
+      "url": "https://doi.org/10.1016/s0166-2236(96)01005-3"
+    },
+    {
+      "bib_id": 19,
+      "service": "crossref",
+      "service_id": null,
+      "score": 146.6298,
+      "bib_type": "article",
+      "doi": "10.1073/pnas.0912858107",
+      "title": "Adults with dyslexia are impaired in categorizing speech and nonspeech sounds on the basis of temporal cues",
+      "authors": [
+        {
+          "given": "Maaike",
+          "family": "Vandermosten"
+        },
+        {
+          "given": "Bart",
+          "family": "Boets"
+        },
+        {
+          "given": "Heleen",
+          "family": "Luts"
+        },
+        {
+          "given": "Hanne",
+          "family": "Poelmans"
+        },
+        {
+          "given": "Narly",
+          "family": "Golestani"
+        },
+        {
+          "given": "Jan",
+          "family": "Wouters"
+        },
+        {
+          "given": "Pol",
+          "family": "Ghesquière"
+        }
+      ],
+      "editors": [],
+      "publisher": "Proceedings of the National Academy of Sciences",
+      "year": 2010,
+      "date": null,
+      "container": "Proceedings of the National Academy of Sciences",
+      "volume": "107",
+      "issue": "23",
+      "first_page": "10389",
+      "last_page": "10394",
+      "edition": null,
+      "version": null,
+      "url": "https://doi.org/10.1073/pnas.0912858107"
+    },
+    {
+      "bib_id": 20,
+      "service": "crossref",
+      "service_id": null,
+      "score": 126.8578,
+      "bib_type": "article",
+      "doi": "10.1046/j.0021-9630.2003.00305.x",
+      "title": "Specific reading disability (dyslexia): what have we learned in the past four decades?",
+      "authors": [
+        {
+          "given": "Frank R.",
+          "family": "Vellutino"
+        },
+        {
+          "given": "Jack M.",
+          "family": "Fletcher"
+        },
+        {
+          "given": "Margaret J.",
+          "family": "Snowling"
+        },
+        {
+          "given": "Donna M.",
+          "family": "Scanlon"
+        }
+      ],
+      "editors": [],
+      "publisher": "Wiley",
+      "year": 2004,
+      "date": null,
+      "container": "Journal of Child Psychology and Psychiatry",
+      "volume": "45",
+      "issue": "1",
+      "first_page": "2",
+      "last_page": "40",
+      "edition": null,
+      "version": null,
+      "url": "https://doi.org/10.1046/j.0021-9630.2003.00305.x"
+    },
+    {
+      "bib_id": 21,
+      "service": "crossref",
+      "service_id": null,
+      "score": 99.2833,
+      "bib_type": "article",
+      "doi": "10.1016/j.tics.2009.12.003",
+      "title": "Dyslexia: a deficit in visuo-spatial attention, not in phonological processing",
+      "authors": [
+        {
+          "given": "Trichur R.",
+          "family": "Vidyasagar"
+        },
+        {
+          "given": "Kristen",
+          "family": "Pammer"
+        }
+      ],
+      "editors": [],
+      "publisher": "Elsevier BV",
+      "year": 2010,
+      "date": null,
+      "container": "Trends in Cognitive Sciences",
+      "volume": "14",
+      "issue": "2",
+      "first_page": "57",
+      "last_page": "63",
+      "edition": null,
+      "version": null,
+      "url": "https://doi.org/10.1016/j.tics.2009.12.003"
+    },
+    {
+      "bib_id": 22,
+      "service": "crossref",
+      "service_id": null,
+      "score": 124.0349,
+      "bib_type": "article",
+      "doi": "10.1037/0033-2909.131.1.3",
+      "title": "Reading Acquisition, Developmental Dyslexia, and Skilled Reading Across Languages: A Psycholinguistic Grain Size Theory.",
+      "authors": [
+        {
+          "given": "Johannes C.",
+          "family": "Ziegler"
+        },
+        {
+          "given": "Usha",
+          "family": "Goswami"
+        }
+      ],
+      "editors": [],
+      "publisher": "American Psychological Association (APA)",
+      "year": 2005,
+      "date": null,
+      "container": "Psychological Bulletin",
+      "volume": "131",
+      "issue": "1",
+      "first_page": "3",
+      "last_page": "29",
+      "edition": null,
+      "version": null,
+      "url": "https://doi.org/10.1037/0033-2909.131.1.3"
+    },
+    {
+      "bib_id": 23,
+      "service": "crossref",
+      "service_id": null,
+      "score": 107.4341,
+      "bib_type": "article",
+      "doi": "10.1098/rstb.2012.0397",
+      "title": "Modelling reading development through phonological decoding and self-teaching: implications for dyslexia",
+      "authors": [
+        {
+          "given": "Johannes C.",
+          "family": "Ziegler"
+        },
+        {
+          "given": "Conrad",
+          "family": "Perry"
+        },
+        {
+          "given": "Marco",
+          "family": "Zorzi"
+        }
+      ],
+      "editors": [],
+      "publisher": "The Royal Society",
+      "year": 2014,
+      "date": null,
+      "container": "Philosophical Transactions of the Royal Society B: Biological Sciences",
+      "volume": "369",
+      "issue": "1634",
+      "first_page": "20120397",
+      "last_page": null,
+      "edition": null,
+      "version": null,
+      "url": "https://doi.org/10.1098/rstb.2012.0397"
+    }
+  ]
+}

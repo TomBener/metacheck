@@ -1,0 +1,5575 @@
+{
+  "paper_id": "0956797620970559",
+  "info": [
+    {
+      "title": "Effects of Time-Varying Parent Input on Children's Language Outcomes Differ for Vocabulary and Syntax",
+      "keywords": ["language development", "environmental effects", "causal analysis"],
+      "doi": "10.1177/0956797620970559",
+      "file_hash": "0ab3abdbe5832a4c",
+      "input_format": "TEI XML",
+      "file_name": "data-raw/psychsci/grobid_0.9.0-crf/0956797620970559.xml",
+      "bibr_version": "10.0",
+      "paper_type": "unknown",
+      "paper_type_confidence": 0,
+      "oecd_l1": null,
+      "oecd_l2": null,
+      "oecd_confidence": null
+    }
+  ],
+  "author": [
+    {
+      "author_id": 1,
+      "given": "Catriona",
+      "family": "Silvey",
+      "affiliation": "Division of Psychology and Language Sciences University College London",
+      "email": "c.silvey@ucl.ac.uk",
+      "corresponding": false,
+      "orcid": "",
+      "role": []
+    },
+    {
+      "author_id": 2,
+      "given": "Ece",
+      "family": "Özlem",
+      "affiliation": "",
+      "email": "",
+      "corresponding": false,
+      "orcid": "",
+      "role": []
+    },
+    {
+      "author_id": 3,
+      "given": "",
+      "family": "Demir-Lira",
+      "affiliation": "Department of Psychological and Brain Sciences The University of Iowa",
+      "email": "",
+      "corresponding": false,
+      "orcid": "",
+      "role": []
+    },
+    {
+      "author_id": 4,
+      "given": "Susan",
+      "family": "Goldin-Meadow",
+      "affiliation": "Department of Psychology The University of Chicago",
+      "email": "",
+      "corresponding": false,
+      "orcid": "",
+      "role": []
+    },
+    {
+      "author_id": 5,
+      "given": "Stephen",
+      "family": "Raudenbush",
+      "affiliation": "Department of Sociology The University of Chicago",
+      "email": "",
+      "corresponding": false,
+      "orcid": "",
+      "role": []
+    }
+  ],
+  "text": [
+    {
+      "text_id": 1,
+      "paragraph_id": 1,
+      "section_id": 0,
+      "text": "Early linguistic input is a powerful predictor of children's language outcomes.",
+      "page_number": null
+    },
+    {
+      "text_id": 2,
+      "paragraph_id": 1,
+      "section_id": 0,
+      "text": "We investigated two novel questions about this relationship: Does the impact of language input vary over time, and does the impact of time-varying language input on child outcomes differ for vocabulary and for syntax?",
+      "page_number": null
+    },
+    {
+      "text_id": 3,
+      "paragraph_id": 1,
+      "section_id": 0,
+      "text": "Using methods from epidemiology to account for baseline and time-varying confounding, we predicted 64 children's outcomes on standardized tests of vocabulary and syntax in kindergarten from their parents' vocabulary and syntax input when the children were 14 and 30 months old.",
+      "page_number": null
+    },
+    {
+      "text_id": 4,
+      "paragraph_id": 1,
+      "section_id": 0,
+      "text": "For vocabulary, children whose parents provided diverse input earlier as well as later in development were predicted to have the highest outcomes.",
+      "page_number": null
+    },
+    {
+      "text_id": 5,
+      "paragraph_id": 1,
+      "section_id": 0,
+      "text": "For syntax, children whose parents' input substantially increased in syntactic complexity over time were predicted to have the highest outcomes.",
+      "page_number": null
+    },
+    {
+      "text_id": 6,
+      "paragraph_id": 1,
+      "section_id": 0,
+      "text": "The optimal sequence of parents' linguistic input for supporting children's language acquisition thus varies for vocabulary and for syntax.",
+      "page_number": null
+    },
+    {
+      "text_id": 7,
+      "paragraph_id": 3,
+      "section_id": 1,
+      "text": "One of the most broadly studied topics in child development is the association between parents' language input and children's language development.",
+      "page_number": null
+    },
+    {
+      "text_id": 8,
+      "paragraph_id": 3,
+      "section_id": 1,
+      "text": "Previous literature shows that variation in the quantity and quality of the language children receive from caregivers robustly predicts children's language outcomes (e.g., Cartmill et al., 2013;Hart & Risley, 1995;Hoff, 2003;Huttenlocher et al., 1991Huttenlocher et al., , 2002;;Rowe et al., 2009;Rowe & Goldin-Meadow, 2009;Weizman & Snow, 2001).",
+      "page_number": null
+    },
+    {
+      "text_id": 9,
+      "paragraph_id": 3,
+      "section_id": 1,
+      "text": "However, two important questions about this relation remain unanswered: Does the impact of parent language input (a) vary over developmental time and (b) vary with the specific child language skill measured?",
+      "page_number": null
+    },
+    {
+      "text_id": 10,
+      "paragraph_id": 3,
+      "section_id": 1,
+      "text": "Our goal in this research was to address these questions by examining longitudinal, dynamic relations between parent language input and two child language outcomes: vocabulary and syntax (the structured arrangement of words).",
+      "page_number": null
+    },
+    {
+      "text_id": 11,
+      "paragraph_id": 3,
+      "section_id": 1,
+      "text": "We use novel statistical techniques to answer these time-dependent questions in a way that was not previously possible.",
+      "page_number": null
+    },
+    {
+      "text_id": 12,
+      "paragraph_id": 4,
+      "section_id": 1,
+      "text": "Our first question concerns the timing of the association between parent input and child outcomes.",
+      "page_number": null
+    },
+    {
+      "text_id": 13,
+      "paragraph_id": 4,
+      "section_id": 1,
+      "text": "Researchers typically record interactions between the primary caregiver and child at a single time point, often before the child begins to utter words; they later measure the child's language outcomes (Hoff, 2003;Huttenlocher et al., 2002;Weizman & Snow, 2001).",
+      "page_number": null
+    },
+    {
+      "text_id": 14,
+      "paragraph_id": 4,
+      "section_id": 1,
+      "text": "In these paradigms, parent input measured early reliably predicts children's later outcomes in both vocabulary (Hart & Risley, 1995;Huttenlocher et al., 1991) and syntax (Gleitman et al., 1984;Huttenlocher et al., 2002;Rowe et al., 2009) after analyses control for relevant parent and child background characteristics.",
+      "page_number": null
+    },
+    {
+      "text_id": 15,
+      "paragraph_id": 4,
+      "section_id": 1,
+      "text": "However, because most studies track parent input at only one time point, the extent to which early input is key is not clear.",
+      "page_number": null
+    },
+    {
+      "text_id": 16,
+      "paragraph_id": 4,
+      "section_id": 1,
+      "text": "Early language input could set in motion a growth process that leads to high levels of language development; early exposure to a wide range of sounds, meanings, and structures would then be sufficient for subsequent child language development, and later input would be less important.",
+      "page_number": null
+    },
+    {
+      "text_id": 17,
+      "paragraph_id": 4,
+      "section_id": 1,
+      "text": "Although consistent with this sensitive-period hypothesis (Newport, 2006), the data collected thus far are also consistent with other explanations.",
+      "page_number": null
+    },
+    {
+      "text_id": 18,
+      "paragraph_id": 4,
+      "section_id": 1,
+      "text": "One is that parents who provide high input early are likely to continue to do so throughout development; later parent input (and not early input) might then be what actually triggers child language growth.",
+      "page_number": null
+    },
+    {
+      "text_id": 19,
+      "paragraph_id": 4,
+      "section_id": 1,
+      "text": "Another possibility is that the impacts of early input and later input combine; in other words, it is not parent input at one point but rather sequences of early and late input that best predict child outcomes.",
+      "page_number": null
+    },
+    {
+      "text_id": 20,
+      "paragraph_id": 4,
+      "section_id": 1,
+      "text": "To adjudicate among these explanations, we need to examine parent-child interactions over time and compare sequences of parent input as predictors of later child outcomes.",
+      "page_number": null
+    },
+    {
+      "text_id": 21,
+      "paragraph_id": 5,
+      "section_id": 1,
+      "text": "The second question concerns the specificity of the association between parent input and child outcomes.",
+      "page_number": null
+    },
+    {
+      "text_id": 22,
+      "paragraph_id": 5,
+      "section_id": 1,
+      "text": "Vocabulary and syntax have related, yet distinct, developmental trajectories.",
+      "page_number": null
+    },
+    {
+      "text_id": 23,
+      "paragraph_id": 5,
+      "section_id": 1,
+      "text": "Thus, we might expect that the time in development when parent input has its largest impact on child outcome will vary for these two skills.",
+      "page_number": null
+    },
+    {
+      "text_id": 24,
+      "paragraph_id": 5,
+      "section_id": 1,
+      "text": "Children start producing their first words around their first birthday, and their vocabulary continues to increase in size and diversity throughout preschool.",
+      "page_number": null
+    },
+    {
+      "text_id": 25,
+      "paragraph_id": 5,
+      "section_id": 1,
+      "text": "Children start combining words into sentences between 1.5 and 2 years of age, produce basic syntactic operations such as negation between 2 and 3 years, and diversify their syntactic forms throughout preschool (Hoff, 2013).",
+      "page_number": null
+    },
+    {
+      "text_id": 26,
+      "paragraph_id": 5,
+      "section_id": 1,
+      "text": "Parent input may then have an impact on vocabulary earlier in children's development than it does on syntax.",
+      "page_number": null
+    },
+    {
+      "text_id": 27,
+      "paragraph_id": 5,
+      "section_id": 1,
+      "text": "However, children might benefit from receiving syntactically rich input even before they start producing complex syntax themselves (Gomez & Gerken, 1999;Hirsh-Pasek & Golinkoff, 1999;Naigles, 1990).",
+      "page_number": null
+    },
+    {
+      "text_id": 28,
+      "paragraph_id": 5,
+      "section_id": 1,
+      "text": "Early parent input could then have an impact not only on vocabulary development but also on syntactic development.",
+      "page_number": null
+    },
+    {
+      "text_id": 29,
+      "paragraph_id": 6,
+      "section_id": 1,
+      "text": "The majority of previous work has focused on the role of parent input in vocabulary development.",
+      "page_number": null
+    },
+    {
+      "text_id": 30,
+      "paragraph_id": 6,
+      "section_id": 1,
+      "text": "Much less is known about its role in syntactic development, and even less is known about the effects of input on vocabulary and syntactic development in the same child.",
+      "page_number": null
+    },
+    {
+      "text_id": 31,
+      "paragraph_id": 6,
+      "section_id": 1,
+      "text": "One exception is a study that examined parent input in relation to both vocabulary and syntax in the same children (Rowe et al., 2009); however, the study focused on input at one time point, and thus the researchers could not ask whether the period during which parent input has its biggest effect varies for vocabulary and syntax.",
+      "page_number": null
+    },
+    {
+      "text_id": 32,
+      "paragraph_id": 7,
+      "section_id": 1,
+      "text": "Our goal was to compare, for the first time, the impact that the timing of parent input has on child vocabulary and syntax development.",
+      "page_number": null
+    },
+    {
+      "text_id": 33,
+      "paragraph_id": 7,
+      "section_id": 1,
+      "text": "We measured parent vocabulary and syntax input earlier (age 14 months) and later (age 30 months) in a child's development, and we tested three hypotheses with respect to child vocabulary and syntactic outcomes: (a) Earlier parent input is more important than later input, (b) later parent input is more important than earlier input, and (c) the sequencing of parent input is key.",
+      "page_number": null
+    },
+    {
+      "text_id": 34,
+      "paragraph_id": 8,
+      "section_id": 1,
+      "text": "As in previous studies, we controlled for baseline covariates, such as household income.",
+      "page_number": null
+    },
+    {
+      "text_id": 35,
+      "paragraph_id": 8,
+      "section_id": 1,
+      "text": "However, examining input at multiple time points introduces another type of confounding.",
+      "page_number": null
+    },
+    {
+      "text_id": 36,
+      "paragraph_id": 8,
+      "section_id": 1,
+      "text": "Parent speech is part of a dynamic process in which early parent input shapes intermediate child outcomes, which, in turn, shape later input and later outcomes (Irvin et al., 2016).",
+      "page_number": null
+    },
+    {
+      "text_id": 37,
+      "paragraph_id": 8,
+      "section_id": 1,
+      "text": "Parents are likely to adjust their later input to the response the child gave to earlier input.",
+      "page_number": null
+    },
+    {
+      "text_id": 38,
+      "paragraph_id": 8,
+      "section_id": 1,
+      "text": "A response to early input that predicts later input and long-term outcome is called a timevarying confounder.",
+      "page_number": null
+    },
+    {
+      "text_id": 39,
+      "paragraph_id": 8,
+      "section_id": 1,
+      "text": "These confounders prevented us from using standard methods to assess the true impact of parent input on child outcome.",
+      "page_number": null
+    },
+    {
+      "text_id": 40,
+      "paragraph_id": 8,
+      "section_id": 1,
+      "text": "We used methods derived from epidemiology (Naimi et al., 2014;Robins et al., 2000) to control for time-varying confounders, as well as time-invariant baseline covariates, and thus estimate the true effect of earlier and later parent input on",
+      "page_number": null
+    },
+    {
+      "text_id": 41,
+      "paragraph_id": 10,
+      "section_id": 2,
+      "text": "The way parents talk to their children has a crucial impact on the development of children's language skills.",
+      "page_number": null
+    },
+    {
+      "text_id": 42,
+      "paragraph_id": 10,
+      "section_id": 2,
+      "text": "Previous work has shown that the number of unique words parents use early in their child's development predicts the child's later vocabulary.",
+      "page_number": null
+    },
+    {
+      "text_id": 43,
+      "paragraph_id": 10,
+      "section_id": 2,
+      "text": "However, the impact of parents' language input on children's syntax-the grammatical combination of words-is less clear.",
+      "page_number": null
+    },
+    {
+      "text_id": 44,
+      "paragraph_id": 10,
+      "section_id": 2,
+      "text": "Furthermore, analysis techniques used in previous research cannot discriminate between effects of earlier and later input.",
+      "page_number": null
+    },
+    {
+      "text_id": 45,
+      "paragraph_id": 10,
+      "section_id": 2,
+      "text": "We applied novel statistical techniques to examine the effects of earlier and later language input on children's vocabulary and syntax.",
+      "page_number": null
+    },
+    {
+      "text_id": 46,
+      "paragraph_id": 10,
+      "section_id": 2,
+      "text": "For vocabulary, children whose parents used many unique words both earlier as well as later in their development had the best outcomes.",
+      "page_number": null
+    },
+    {
+      "text_id": 47,
+      "paragraph_id": 10,
+      "section_id": 2,
+      "text": "For syntax, children whose parents' input increased in syntactic complexity over time had the best outcomes.",
+      "page_number": null
+    },
+    {
+      "text_id": 48,
+      "paragraph_id": 10,
+      "section_id": 2,
+      "text": "This work has implications for parents and caregivers seeking to optimally support children's language development. child language outcomes measured in kindergarten, under the assumption that our observed covariates adequately captured confounding.",
+      "page_number": null
+    },
+    {
+      "text_id": 49,
+      "paragraph_id": 11,
+      "section_id": 2,
+      "text": "We thus attempted to provide novel answers to one of the longest-standing questions in developmental psychology-the role of parents' language input in children's language development.",
+      "page_number": null
+    },
+    {
+      "text_id": 50,
+      "paragraph_id": 11,
+      "section_id": 2,
+      "text": "In so doing, we also tackled a central methodological challenge to exploring broader questions regarding the mechanisms that underlie the intergenerational transmission of cognitive skill.",
+      "page_number": null
+    },
+    {
+      "text_id": 51,
+      "paragraph_id": 13,
+      "section_id": 3,
+      "text": "Data were taken from a longitudinal study of language development (Goldin-Meadow et al., 2014), which was approved by The University of Chicago Institutional Review Board.",
+      "page_number": null
+    },
+    {
+      "text_id": 52,
+      "paragraph_id": 13,
+      "section_id": 3,
+      "text": "Participants were 64 children (31 girls; 36 firstborn children) and their primary caregivers, selected to be representative of the greater Chicago area in terms of race, ethnicity, and income.",
+      "page_number": null
+    },
+    {
+      "text_id": 53,
+      "paragraph_id": 13,
+      "section_id": 3,
+      "text": "This sample size is larger than in any existing longitudinal study of child language development with comparable observation intervals.",
+      "page_number": null
+    },
+    {
+      "text_id": 54,
+      "paragraph_id": 13,
+      "section_id": 3,
+      "text": "Of the primary caregivers, 56 were mothers and one was a father; in the remaining seven families, mother and father were joint primary caregivers.",
+      "page_number": null
+    },
+    {
+      "text_id": 55,
+      "paragraph_id": 13,
+      "section_id": 3,
+      "text": "Children were visited at home every 4 months from age 14 months to age 58 months and were videotaped for 90 min engaging in typical interaction with their caregivers.",
+      "page_number": null
+    },
+    {
+      "text_id": 56,
+      "paragraph_id": 13,
+      "section_id": 3,
+      "text": "All speech and gestures by the primary caregiver and the child were transcribed.",
+      "page_number": null
+    },
+    {
+      "text_id": 57,
+      "paragraph_id": 13,
+      "section_id": 3,
+      "text": "From these transcripts, we calculated measures of baseline and time-varying child language and measures of parent vocabulary and syntax input.",
+      "page_number": null
+    },
+    {
+      "text_id": 58,
+      "paragraph_id": 15,
+      "section_id": 4,
+      "text": "Our research questions concern the effects of parent language input given earlier and later during child language development.",
+      "page_number": null
+    },
+    {
+      "text_id": 59,
+      "paragraph_id": 15,
+      "section_id": 4,
+      "text": "We therefore needed to select time points for \"earlier\" and \"later\" on a principled basis so that the time periods related to distinct stages in a typically developing child's learning trajectory.",
+      "page_number": null
+    },
+    {
+      "text_id": 60,
+      "paragraph_id": 15,
+      "section_id": 4,
+      "text": "Earlier input should be measured at a time when the child's own language production is still very limited.",
+      "page_number": null
+    },
+    {
+      "text_id": 61,
+      "paragraph_id": 15,
+      "section_id": 4,
+      "text": "Later input should be measured during a qualitatively different period when the child's language is beginning to become more sophisticated.",
+      "page_number": null
+    },
+    {
+      "text_id": 62,
+      "paragraph_id": 15,
+      "section_id": 4,
+      "text": "At 14 months, most children are just beginning to produce their first words: The median number of unique word types produced by children in our sample during the 14-month observation session was 8.5.",
+      "page_number": null
+    },
+    {
+      "text_id": 63,
+      "paragraph_id": 15,
+      "section_id": 4,
+      "text": "We therefore chose 14 months as our time point for earlier input.",
+      "page_number": null
+    },
+    {
+      "text_id": 64,
+      "paragraph_id": 15,
+      "section_id": 4,
+      "text": "Thirty months is the median session in which children in our sample began to produce utterances that contained more than one clause, indicating that, by 30 months, the children's language was becoming more complex (cf.",
+      "page_number": null
+    },
+    {
+      "text_id": 65,
+      "paragraph_id": 15,
+      "section_id": 4,
+      "text": "Vasilyeva et al., 2008).",
+      "page_number": null
+    },
+    {
+      "text_id": 66,
+      "paragraph_id": 15,
+      "section_id": 4,
+      "text": "We therefore chose 30 months as our time point for later input.",
+      "page_number": null
+    },
+    {
+      "text_id": 67,
+      "paragraph_id": 16,
+      "section_id": 4,
+      "text": "We chose to measure child vocabulary and syntax outcomes in kindergarten for two reasons: (a) Kindergarten typically marks the beginning of the period during which children receive oral and written language input in formal schooling contexts, and (b) children's receptive language skills measured at school entry are a significant predictor of future academic achievement (Duncan et al., 2007;Pagani et al., 2010).",
+      "page_number": null
+    },
+    {
+      "text_id": 68,
+      "paragraph_id": 18,
+      "section_id": 5,
+      "text": "Nonlinguistic covariates.",
+      "page_number": null
+    },
+    {
+      "text_id": 69,
+      "paragraph_id": 18,
+      "section_id": 5,
+      "text": "We used annual household income and primary caregiver years of education as covariates in our analyses.",
+      "page_number": null
+    },
+    {
+      "text_id": 70,
+      "paragraph_id": 18,
+      "section_id": 5,
+      "text": "Income was coded as one of six categories: between $0 and $14,999, between $15,000 and $34,999, between $35,000 and $49,999, between $50,000 and $74,999, between $75,000 and $99,999, and $100,000 or above.",
+      "page_number": null
+    },
+    {
+      "text_id": 71,
+      "paragraph_id": 18,
+      "section_id": 5,
+      "text": "The midpoint of each category in thousands of dollars was assigned as the value of household income, except for the highest category, which was assigned a value of 100.",
+      "page_number": null
+    },
+    {
+      "text_id": 72,
+      "paragraph_id": 18,
+      "section_id": 5,
+      "text": "Education was coded as one of five categories: some high school (10 years), high school/ GED (12 years), some college or trade school (14 years), bachelor's degree (16 years), and advanced degree (18 years).",
+      "page_number": null
+    },
+    {
+      "text_id": 73,
+      "paragraph_id": 18,
+      "section_id": 5,
+      "text": "Income and education were collected by parent report at each visit.",
+      "page_number": null
+    },
+    {
+      "text_id": 74,
+      "paragraph_id": 18,
+      "section_id": 5,
+      "text": "We measured income and education as baseline covariates, taking the values reported at the first visit when the children were 14 months old.",
+      "page_number": null
+    },
+    {
+      "text_id": 75,
+      "paragraph_id": 18,
+      "section_id": 5,
+      "text": "For 36 families, the income category did not change during the course of the study.",
+      "page_number": null
+    },
+    {
+      "text_id": 76,
+      "paragraph_id": 18,
+      "section_id": 5,
+      "text": "Of the remaining 28 families, 23 ended the study within one income category from where they had started, four were two categories higher, and one was three categories higher.",
+      "page_number": null
+    },
+    {
+      "text_id": 77,
+      "paragraph_id": 18,
+      "section_id": 5,
+      "text": "Years of education did not change during the course of the study for any caregiver.",
+      "page_number": null
+    },
+    {
+      "text_id": 78,
+      "paragraph_id": 18,
+      "section_id": 5,
+      "text": "For families with joint primary caregivers, we took the mother's years of education.",
+      "page_number": null
+    },
+    {
+      "text_id": 79,
+      "paragraph_id": 18,
+      "section_id": 5,
+      "text": "For three of the seven joint caregivers, the mother's years of education were identical to the father's; for the remaining four, the mother's and father's education levels were within one category of each other.",
+      "page_number": null
+    },
+    {
+      "text_id": 80,
+      "paragraph_id": 19,
+      "section_id": 5,
+      "text": "To account for genetic similarities between parents and children, as well as other parental influences, we measured the verbal IQ of the primary caregiver when children were in fifth grade using the vocabulary t score from the second edition of the Wechsler Abbreviated Scale of Intelligence (WASI; Wechsler, 2011).",
+      "page_number": null
+    },
+    {
+      "text_id": 81,
+      "paragraph_id": 19,
+      "section_id": 5,
+      "text": "Where mother and father were joint primary caregivers, only the mother's verbal IQ was measured, with one exception (a joint caregiver family in which only the father elected to take the WASI).",
+      "page_number": null
+    },
+    {
+      "text_id": 82,
+      "paragraph_id": 19,
+      "section_id": 5,
+      "text": "Our remaining nonlinguistic covariates were child gender and child birth order.",
+      "page_number": null
+    },
+    {
+      "text_id": 83,
+      "paragraph_id": 19,
+      "section_id": 5,
+      "text": "Following previous research on the influence of birth order on language development (e.g., Hoff-Ginsberg, 1998), we coded birth order as one of two categories: (a) firstborn or only child and (b) second or later-born child.",
+      "page_number": null
+    },
+    {
+      "text_id": 84,
+      "paragraph_id": 19,
+      "section_id": 5,
+      "text": "There might be further differences between second-born and later-born children (Kristensen & Bjerkedal, 2007), but in our small sample, only 11 children had two or more siblings; of these 11, only three had three or more siblings.",
+      "page_number": null
+    },
+    {
+      "text_id": 85,
+      "paragraph_id": 19,
+      "section_id": 5,
+      "text": "Further, the categorical and continuous measures of birth order were significantly correlated, r = .78, 95% confidence interval (CI) = [.66, .86], p < .01.",
+      "page_number": null
+    },
+    {
+      "text_id": 86,
+      "paragraph_id": 20,
+      "section_id": 5,
+      "text": "Baseline measures of child language and gesture.",
+      "page_number": null
+    },
+    {
+      "text_id": 87,
+      "paragraph_id": 20,
+      "section_id": 5,
+      "text": "From transcripts of the 14-month visit, we calculated child word types, defined as the number of unique words the child produced during the observation session, and used this as a baseline measure of the child's productive vocabulary, which could influence both child outcomes and later parent input.",
+      "page_number": null
+    },
+    {
+      "text_id": 88,
+      "paragraph_id": 20,
+      "section_id": 5,
+      "text": "We also calculated child gesture types, defined as the number of unique meanings the child conveyed in gesture.",
+      "page_number": null
+    },
+    {
+      "text_id": 89,
+      "paragraph_id": 20,
+      "section_id": 5,
+      "text": "Previous work found that early gesture is associated with later vocabulary and syntax (Rowe & Goldin-Meadow, 2009), motivating us to include this measure as one of our covariates.",
+      "page_number": null
+    },
+    {
+      "text_id": 90,
+      "paragraph_id": 22,
+      "section_id": 6,
+      "text": "From transcripts of the 14-month (earlier input) and 30-month (later input) visits, we calculated parent word types, defined as the number of unique words the parent produced during the observation session.",
+      "page_number": null
+    },
+    {
+      "text_id": 91,
+      "paragraph_id": 22,
+      "section_id": 6,
+      "text": "We followed many previous studies (e.g., Bornstein et al., 1998;Hoff & Naigles, 2002) in using word types to measure the diversity of the vocabulary to which the child is exposed.",
+      "page_number": null
+    },
+    {
+      "text_id": 92,
+      "paragraph_id": 22,
+      "section_id": 6,
+      "text": "Word tokens, or the total number of words addressed to the child, are also important in fostering child vocabulary development (Huttenlocher et al., 1991).",
+      "page_number": null
+    },
+    {
+      "text_id": 93,
+      "paragraph_id": 22,
+      "section_id": 6,
+      "text": "However, in most samples, including ours, word types and tokens are highly correlated (r = .89, 95% CI = [.82, .93], at 14 months, r = .91, 95% CI = [.85, .94], at 30 months); as a result, their potential independent contributions to child vocabulary cannot be easily disentangled.",
+      "page_number": null
+    },
+    {
+      "text_id": 94,
+      "paragraph_id": 24,
+      "section_id": 7,
+      "text": "From transcripts of the 14-month visit (earlier input) and 30-month visit (later input), we calculated the syntactic complexity of parent speech, defined as the number of clauses per sentence that the parent produced during the observation session.",
+      "page_number": null
+    },
+    {
+      "text_id": 95,
+      "paragraph_id": 24,
+      "section_id": 7,
+      "text": "Following Huttenlocher et al. (2002), we excluded utterances that were not complete sentences (i.e., utterances not containing a verb) from the calculation.",
+      "page_number": null
+    },
+    {
+      "text_id": 96,
+      "paragraph_id": 24,
+      "section_id": 7,
+      "text": "We chose number of clauses per sentence, rather than absolute number of multiclause sentences, because Huttenlocher et al. showed that the absolute number of multiclause sentences in parent input did not predict child language complexity.",
+      "page_number": null
+    },
+    {
+      "text_id": 97,
+      "paragraph_id": 24,
+      "section_id": 7,
+      "text": "In our data, we also found that the absolute number of multiclause sentences was highly correlated with the total number of utterances the parent produced (.65 < r < .78).",
+      "page_number": null
+    },
+    {
+      "text_id": 98,
+      "paragraph_id": 24,
+      "section_id": 7,
+      "text": "Huttenlocher et al. used the proportion of multiclause parent sentences as their predictor; we chose instead to use number of clauses per sentence, as this gave us a more fine-grained, and more statistically robust, measure of syntactic complexity in the input.",
+      "page_number": null
+    },
+    {
+      "text_id": 99,
+      "paragraph_id": 24,
+      "section_id": 7,
+      "text": "Finally, we multiplied this value by 100 to obtain the number of clauses per 100 sentences so that our measures of vocabulary and syntax input would be on similar scales.",
+      "page_number": null
+    },
+    {
+      "text_id": 100,
+      "paragraph_id": 25,
+      "section_id": 7,
+      "text": "Time-varying measure of child language.",
+      "page_number": null
+    },
+    {
+      "text_id": 101,
+      "paragraph_id": 25,
+      "section_id": 7,
+      "text": "From transcripts of the 26-month visit, we calculated child word types as described earlier.",
+      "page_number": null
+    },
+    {
+      "text_id": 102,
+      "paragraph_id": 25,
+      "section_id": 7,
+      "text": "We also calculated child mean length of utterance in words.",
+      "page_number": null
+    },
+    {
+      "text_id": 103,
+      "paragraph_id": 25,
+      "section_id": 7,
+      "text": "In English, mean length of utterance in words correlates almost perfectly (r = .998) with mean length of utterance in morphemes (Parker & Brorson, 2005); mean length of utterance in words can also be calculated more reliably and requires fewer unwarranted theoretical commitments about the nature of children's representations.",
+      "page_number": null
+    },
+    {
+      "text_id": 104,
+      "paragraph_id": 25,
+      "section_id": 7,
+      "text": "We averaged children's z scores on this syntactic measure with their z scores on word types to create a composite measure of child language during the period between earlier input (14 months) and later input (30 months).",
+      "page_number": null
+    },
+    {
+      "text_id": 105,
+      "paragraph_id": 26,
+      "section_id": 7,
+      "text": "Vocabulary outcome.",
+      "page_number": null
+    },
+    {
+      "text_id": 106,
+      "paragraph_id": 26,
+      "section_id": 7,
+      "text": "For the child's vocabulary outcome, we chose the third edition of the Peabody Picture Vocabulary Test (PPVT; Dunn & Dunn, 1997), a widely used assessment of receptive vocabulary.",
+      "page_number": null
+    },
+    {
+      "text_id": 107,
+      "paragraph_id": 26,
+      "section_id": 7,
+      "text": "The PPVT was administered to children at several time points throughout the study.",
+      "page_number": null
+    },
+    {
+      "text_id": 108,
+      "paragraph_id": 26,
+      "section_id": 7,
+      "text": "We were interested in children's vocabulary skill in kindergarten.",
+      "page_number": null
+    },
+    {
+      "text_id": 109,
+      "paragraph_id": 26,
+      "section_id": 7,
+      "text": "To increase the reliability of our PPVT estimate, we combined the administrations of PPVT when children were 42 months old, 54 months old, in preschool, in kindergarten, and in second grade into a growth model centered at 74 months, the median age at which our syntax outcome (which was administered only once) was measured.",
+      "page_number": null
+    },
+    {
+      "text_id": 110,
+      "paragraph_id": 26,
+      "section_id": 7,
+      "text": "The child-specific intercept from this growth model represented our best estimate of the child's true standardized PPVT score in kindergarten.",
+      "page_number": null
+    },
+    {
+      "text_id": 111,
+      "paragraph_id": 26,
+      "section_id": 7,
+      "text": "Details of the growth model are reported in Section S1 in the Supplemental Material available online.",
+      "page_number": null
+    },
+    {
+      "text_id": 112,
+      "paragraph_id": 28,
+      "section_id": 8,
+      "text": "When the children were in kindergarten (median age = 74 months), they completed the Recalling Sentences subtest from the Clinical Evaluation of Language Fundamentals (CELF; Semel et al., 2003).",
+      "page_number": null
+    },
+    {
+      "text_id": 113,
+      "paragraph_id": 28,
+      "section_id": 8,
+      "text": "In this test, the child is asked to repeat sentences of increasing length and complexity.",
+      "page_number": null
+    },
+    {
+      "text_id": 114,
+      "paragraph_id": 28,
+      "section_id": 8,
+      "text": "Previous work suggests that sentence-repetition tasks are a valid index of children's language skills (Klem et al., 2015), and the CELF is recognized as one of the more reliable and valid language-evaluation instruments available (Denman et al., 2017).",
+      "page_number": null
+    },
+    {
+      "text_id": 115,
+      "paragraph_id": 28,
+      "section_id": 8,
+      "text": "We were unable to build growth models for CELF because it was administered only once.",
+      "page_number": null
+    },
+    {
+      "text_id": 116,
+      "paragraph_id": 28,
+      "section_id": 8,
+      "text": "The children's standardized scores on the CELF Recalling Sentences (CELF-RS) subtest constituted our syntax outcome.",
+      "page_number": null
+    },
+    {
+      "text_id": 117,
+      "paragraph_id": 28,
+      "section_id": 8,
+      "text": "We used standardized scores to ensure comparability across children because their exact age when the CELF was administered varied.",
+      "page_number": null
+    },
+    {
+      "text_id": 118,
+      "paragraph_id": 29,
+      "section_id": 8,
+      "text": "Descriptive statistics for all variables are shown in Table 1.",
+      "page_number": null
+    },
+    {
+      "text_id": 119,
+      "paragraph_id": 29,
+      "section_id": 8,
+      "text": "Note that our data set contains missing values.",
+      "page_number": null
+    },
+    {
+      "text_id": 120,
+      "paragraph_id": 29,
+      "section_id": 8,
+      "text": "We addressed these omissions via multiple imputation with the method of predictive mean matching, implemented using the mice library in R (van Buuren & Groothuis-Oudshoorn, 2011).",
+      "page_number": null
+    },
+    {
+      "text_id": 121,
+      "paragraph_id": 29,
+      "section_id": 8,
+      "text": "See Section S2 in Supplemental Material for details of the imputation procedure and an alternative analysis that used only complete cases.",
+      "page_number": null
+    },
+    {
+      "text_id": 122,
+      "paragraph_id": 31,
+      "section_id": 9,
+      "text": "Our goal was to investigate the timing and specificity of the relationship between parent input and child outcomes in vocabulary and syntax.",
+      "page_number": null
+    },
+    {
+      "text_id": 123,
+      "paragraph_id": 31,
+      "section_id": 9,
+      "text": "However, in order to make valid inferences, we had to account for baseline covariates that were associated with levels of parent input and also with child language outcomes (e.g., household income, parent verbal IQ).",
+      "page_number": null
+    },
+    {
+      "text_id": 124,
+      "paragraph_id": 31,
+      "section_id": 9,
+      "text": "Furthermore, we had to account for child language measured between the earlier and later input periods, a time-varying confounder that could be influenced by earlier input and could in turn influence later input.",
+      "page_number": null
+    },
+    {
+      "text_id": 125,
+      "paragraph_id": 32,
+      "section_id": 9,
+      "text": "If we were running an experiment, we would have assigned children at random to sequences of input and observed their outcomes.",
+      "page_number": null
+    },
+    {
+      "text_id": 126,
+      "paragraph_id": 32,
+      "section_id": 9,
+      "text": "We could not follow this procedure in an observational study, but we could use a statistical approach that allowed us to treat observational data as if they were from a randomized experimentinverse probability of treatment weighting (IPTW; Robins et al., 2000).",
+      "page_number": null
+    },
+    {
+      "text_id": 127,
+      "paragraph_id": 32,
+      "section_id": 9,
+      "text": "The concept is simple.",
+      "page_number": null
+    },
+    {
+      "text_id": 128,
+      "paragraph_id": 32,
+      "section_id": 9,
+      "text": "We gave more weight to children who were unlikely (given their covariates) to receive the sequence of input they received at 14 and 30 months.",
+      "page_number": null
+    },
+    {
+      "text_id": 129,
+      "paragraph_id": 32,
+      "section_id": 9,
+      "text": "Conversely, we gave less weight to children who were likely (given their covariates) to receive the sequence of input they received.",
+      "page_number": null
+    },
+    {
+      "text_id": 130,
+      "paragraph_id": 32,
+      "section_id": 9,
+      "text": "If the measured covariates adequately accounted for confounding, the weighted data would then resemble data from an experiment in which sequences of input were assigned at random.",
+      "page_number": null
+    },
+    {
+      "text_id": 131,
+      "paragraph_id": 32,
+      "section_id": 9,
+      "text": "We adapted the quantile-binning approach (Naimi et al., 2014), a version of IPTW that can be used to adjust for confounding in the case of continuous input, which characterized our data.",
+      "page_number": null
+    },
+    {
+      "text_id": 132,
+      "paragraph_id": 32,
+      "section_id": 9,
+      "text": "A full description of the method is provided in Section S3 in the Supplemental Material.",
+      "page_number": null
+    },
+    {
+      "text_id": 133,
+      "paragraph_id": 32,
+      "section_id": 9,
+      "text": "For evidence that this method, originally developed in the context of large samples, also produces robust estimates in small samples such as ours, see the simulations reported in Section S5 in the Supplemental Material.",
+      "page_number": null
+    },
+    {
+      "text_id": 134,
+      "paragraph_id": 33,
+      "section_id": 9,
+      "text": "We were interested in the effect on child language of any possible sequence of inputs (i.e., Z 1 , Z 2 , where Z 1 = earlier input and Z 2 = later input).",
+      "page_number": null
+    },
+    {
+      "text_id": 135,
+      "paragraph_id": 33,
+      "section_id": 9,
+      "text": "The primary hypotheses we wanted to test related to the timing of language input and its effect on children's vocabulary and syntax outcomes.",
+      "page_number": null
+    },
+    {
+      "text_id": 136,
+      "paragraph_id": 33,
+      "section_id": 9,
+      "text": "Specifically, our candidate hypotheses were (a) that earlier parent input is more important than later input, (b) that later parent input is more important than earlier input, and (c) that cumulative parent input is key, with timing being of little importance.",
+      "page_number": null
+    },
+    {
+      "text_id": 137,
+      "paragraph_id": 33,
+      "section_id": 9,
+      "text": "Note that the answers to these questions may differ for vocabulary and syntax.",
+      "page_number": null
+    },
+    {
+      "text_id": 138,
+      "paragraph_id": 33,
+      "section_id": 9,
+      "text": "In order to answer these questions, we estimated the statistical model",
+      "page_number": null
+    },
+    {
+      "text_id": 139,
+      "paragraph_id": 34,
+      "section_id": 9,
+      "text": "where Y i is the language outcome (vocabulary or syntax) for child i; δ 1 is the impact of each additional unit of parent input Z 1i received when the child was 14 months old, holding constant parent input Z 2i received when the child was 30 months old; δ 2 is the impact of each additional unit of parent input Z 2i received when the child was 30 months old, holding constant parent input Z 1i received at age 14 months; α is the model intercept; and e i is a random error assumed to be uncorrelated with Z 1 and Z 2 .",
+      "page_number": null
+    },
+    {
+      "text_id": 140,
+      "paragraph_id": 34,
+      "section_id": 9,
+      "text": "Under the null hypothesis, δ 1 = δ 2 = δ, input at each age is equally important, and what matters is simply the cumulative input, that is, Y Z Z e",
+      "page_number": null
+    },
+    {
+      "text_id": 141,
+      "paragraph_id": 35,
+      "section_id": 9,
+      "text": ".",
+      "page_number": null
+    },
+    {
+      "text_id": 142,
+      "paragraph_id": 35,
+      "section_id": 9,
+      "text": "Assuming input is positive at each age but δ 1 is greater than δ 2 , earlier input is more important than later input.",
+      "page_number": null
+    },
+    {
+      "text_id": 143,
+      "paragraph_id": 35,
+      "section_id": 9,
+      "text": "Sensitive-period theory (that input during an early window is necessary and sufficient for later growth; see Newport, 2006) is a strong version of this hypothesis, that is, δ 1 > 0, δ 2 = 0.",
+      "page_number": null
+    },
+    {
+      "text_id": 144,
+      "paragraph_id": 35,
+      "section_id": 9,
+      "text": "A similarly strong hypothesis, δ 1 = 0, = δ 2 > 0, indicates that earlier input is unimportant and that later input is necessary and sufficient for growth.",
+      "page_number": null
+    },
+    {
+      "text_id": 145,
+      "paragraph_id": 36,
+      "section_id": 9,
+      "text": "As a preliminary step, we also estimated the apparent effect of earlier input without controlling for later input, an approach taken in many previous studies.",
+      "page_number": null
+    },
+    {
+      "text_id": 146,
+      "paragraph_id": 36,
+      "section_id": 9,
+      "text": "To do this, we estimated the model",
+      "page_number": null
+    },
+    {
+      "text_id": 147,
+      "paragraph_id": 37,
+      "section_id": 9,
+      "text": "(",
+      "page_number": null
+    },
+    {
+      "text_id": 148,
+      "paragraph_id": 38,
+      "section_id": 9,
+      "text": "Here, δ * is the expected increment to the outcome Y associated with a unit increase in Z 1i .",
+      "page_number": null
+    },
+    {
+      "text_id": 149,
+      "paragraph_id": 38,
+      "section_id": 9,
+      "text": "We assumed here that the random error e i is uncorrelated with earlier input Z 1 after controlling for observed baseline covariates through weighting.",
+      "page_number": null
+    },
+    {
+      "text_id": 150,
+      "paragraph_id": 38,
+      "section_id": 9,
+      "text": "Even when this assumption is true, ambiguity surrounds the interpretation of δ * .",
+      "page_number": null
+    },
+    {
+      "text_id": 151,
+      "paragraph_id": 38,
+      "section_id": 9,
+      "text": "On the one hand, δ * is equal to δ 1 only when δ 2 is set to 0 (i.e., later input has no effect), corresponding to sensitiveperiod theory.",
+      "page_number": null
+    },
+    {
+      "text_id": 152,
+      "paragraph_id": 38,
+      "section_id": 9,
+      "text": "On the other hand, if δ 2 does not equal 0, then δ * represents the joint effect of earlier and later input combined in some unspecified manner.",
+      "page_number": null
+    },
+    {
+      "text_id": 153,
+      "paragraph_id": 38,
+      "section_id": 9,
+      "text": "The ambiguity of δ * is one of the primary motivations for our study.",
+      "page_number": null
+    },
+    {
+      "text_id": 154,
+      "paragraph_id": 38,
+      "section_id": 9,
+      "text": "Whereas the studies reviewed earlier focused on the association between earlier input and later outcomes, effectively seeking an inference about δ * , our goal was to study δ 1 and δ 2 , the impacts of parent input at Z 1 and Z 2 .",
+      "page_number": null
+    },
+    {
+      "text_id": 155,
+      "paragraph_id": 38,
+      "section_id": 9,
+      "text": "Finally, we wanted to assess the extent to which our results may be sensitive to two potential sources of bias.",
+      "page_number": null
+    },
+    {
+      "text_id": 156,
+      "paragraph_id": 38,
+      "section_id": 9,
+      "text": "First, there may be confounders we did not observe.",
+      "page_number": null
+    },
+    {
+      "text_id": 157,
+      "paragraph_id": 38,
+      "section_id": 9,
+      "text": "We needed to assess the magnitude of possible biases that could result from a range of potential unobserved confounders.",
+      "page_number": null
+    },
+    {
+      "text_id": 158,
+      "paragraph_id": 38,
+      "section_id": 9,
+      "text": "Second, we assumed a linear relationship between parent input and child outcomes.",
+      "page_number": null
+    },
+    {
+      "text_id": 159,
+      "paragraph_id": 38,
+      "section_id": 9,
+      "text": "We needed to assess the robustness of our results to differing assumptions about the functional form of the relationship between input and outcome.",
+      "page_number": null
+    },
+    {
+      "text_id": 160,
+      "paragraph_id": 38,
+      "section_id": 9,
+      "text": "All analysis and simulation scripts are available at https://github.com/silveycat/vocab-syntax.",
+      "page_number": null
+    },
+    {
+      "text_id": 161,
+      "paragraph_id": 42,
+      "section_id": 11,
+      "text": "We divided the sample into eight quantiles by parent word types when children were 14 months old (Z 1V ) and used an ordinal model to predict quantile from covariates (see Section S4 in the Supplemental Material for simulations justifying our choice of eight quantiles, and see Section S6 for the procedure we used to assess covariates for inclusion).",
+      "page_number": null
+    },
+    {
+      "text_id": 162,
+      "paragraph_id": 42,
+      "section_id": 11,
+      "text": "Covariates included in the model for Z 1V were parent verbal IQ, household income, and child gender.",
+      "page_number": null
+    },
+    {
+      "text_id": 163,
+      "paragraph_id": 42,
+      "section_id": 11,
+      "text": "We then generated weights for Z 1V , as described in Section S3 in the Supplemental Material.",
+      "page_number": null
+    },
+    {
+      "text_id": 164,
+      "paragraph_id": 42,
+      "section_id": 11,
+      "text": "Adjusting for these three covariates was sufficient to achieve balance on all baseline covariates.",
+      "page_number": null
+    },
+    {
+      "text_id": 165,
+      "paragraph_id": 42,
+      "section_id": 11,
+      "text": "We then repeated the same process for parent word types when children were 30 months old (Z 2V ).",
+      "page_number": null
+    },
+    {
+      "text_id": 166,
+      "paragraph_id": 42,
+      "section_id": 11,
+      "text": "Covariates included in this model were parent word types when the child was 14 months old (Z 1V ) and a composite measure of child language at 26 months (X 1 ; see the \"Time-varying measure of child language\" subsection above).",
+      "page_number": null
+    },
+    {
+      "text_id": 167,
+      "paragraph_id": 42,
+      "section_id": 11,
+      "text": "Adjusting for these two covariates was sufficient to achieve balance on all covariates.",
+      "page_number": null
+    },
+    {
+      "text_id": 168,
+      "paragraph_id": 42,
+      "section_id": 11,
+      "text": "Balance checking and common support for the vocabulary models are reported in Tables S3 and S4 and Figures S3 and S4 in the Supplemental Material.",
+      "page_number": null
+    },
+    {
+      "text_id": 169,
+      "paragraph_id": 43,
+      "section_id": 11,
+      "text": "To replicate previous analyses that have assessed the impact of parent input on child outcomes, we first estimated Equation 2, which represents the effect of earlier input without accounting for later input.",
+      "page_number": null
+    },
+    {
+      "text_id": 170,
+      "paragraph_id": 43,
+      "section_id": 11,
+      "text": "We found a δ  * of 0.028, 95% CI = [0.004, 0.052], nominal p = .023.",
+      "page_number": null
+    },
+    {
+      "text_id": 171,
+      "paragraph_id": 43,
+      "section_id": 11,
+      "text": "This effect corresponded to an expected 2.8 additional points on our vocabulary measure-standardized PPVT score in kindergarten-for every 100 additional word types the parent provided when the child was 14 months old.",
+      "page_number": null
+    },
+    {
+      "text_id": 172,
+      "paragraph_id": 43,
+      "section_id": 11,
+      "text": "This result was in line with previous results but, as noted earlier, was ambiguous.",
+      "page_number": null
+    },
+    {
+      "text_id": 173,
+      "paragraph_id": 43,
+      "section_id": 11,
+      "text": "This apparently strong effect could reflect the critical importance of earlier input, as emphasized in much of the past literature.",
+      "page_number": null
+    },
+    {
+      "text_id": 174,
+      "paragraph_id": 43,
+      "section_id": 11,
+      "text": "However, the same result would arise if later input were critically important, simply because parents tend to provide stable vocabulary input; in our sample, the correlation between Z 1V and Z 2V for vocabulary was .60, 95% CI = [.41, .74].",
+      "page_number": null
+    },
+    {
+      "text_id": 175,
+      "paragraph_id": 44,
+      "section_id": 11,
+      "text": "To address this possibility, we estimated Equation 1, which represents the impact of possible sequences Z 1i , Z 2i of input using combined weights (see Section S3 in the Supplemental Material), so that we accounted for the child's propensity to receive high input both earlier and later.",
+      "page_number": null
+    },
+    {
+      "text_id": 176,
+      "paragraph_id": 44,
+      "section_id": 11,
+      "text": "The results can be seen in Table 2, Rows 1 and 2.",
+      "page_number": null
+    },
+    {
+      "text_id": 177,
+      "paragraph_id": 44,
+      "section_id": 11,
+      "text": "We found a δ  1 of 0.013, 95% CI = [-0.014, 0.041], nominal p = .340, and a δ  2 of 0.029, 95% CI = [-0.000, 0.058], nominal p = .050.",
+      "page_number": null
+    },
+    {
+      "text_id": 178,
+      "paragraph_id": 44,
+      "section_id": 11,
+      "text": "Under this model, the difference between the effects of earlier and later input was 0.017, 95% CI = [-0.031, 0.065] (not shown in Table 2).",
+      "page_number": null
+    },
+    {
+      "text_id": 179,
+      "paragraph_id": 44,
+      "section_id": 11,
+      "text": "This CI included 0.",
+      "page_number": null
+    },
+    {
+      "text_id": 180,
+      "paragraph_id": 44,
+      "section_id": 11,
+      "text": "We therefore retained the null hypothesis: δ δ δ 1 2 513 = = = , . p (not shown in Table 2).",
+      "page_number": null
+    },
+    {
+      "text_id": 181,
+      "paragraph_id": 44,
+      "section_id": 11,
+      "text": "Equation 1 reducesto Y Z Z e i i i i = + + + α δ( ) 1 2",
+      "page_number": null
+    },
+    {
+      "text_id": 182,
+      "paragraph_id": 45,
+      "section_id": 11,
+      "text": ", a constant-effects model in which earlier and later input make equal contributions to vocabulary.",
+      "page_number": null
+    },
+    {
+      "text_id": 183,
+      "paragraph_id": 45,
+      "section_id": 11,
+      "text": "Our estimate (δ  ) was 0.021, 95% CI = [0.007, 0.034], nominal p = .003 (Table 2, Row 3).",
+      "page_number": null
+    },
+    {
+      "text_id": 184,
+      "paragraph_id": 46,
+      "section_id": 11,
+      "text": "Although the conclusion of equal contributions was parsimonious, our confidence in this conclusion was undermined by the weak power of the test of the null hypothesis: δ δ δ 1 2 = = .",
+      "page_number": null
+    },
+    {
+      "text_id": 185,
+      "paragraph_id": 46,
+      "section_id": 11,
+      "text": "Our estimate was 0.017 with a wide 95% CI of [-0.031, 0.065].",
+      "page_number": null
+    },
+    {
+      "text_id": 186,
+      "paragraph_id": 46,
+      "section_id": 11,
+      "text": "This CI does not rule out large differences between the effects of earlier and later input.",
+      "page_number": null
+    },
+    {
+      "text_id": 187,
+      "paragraph_id": 46,
+      "section_id": 11,
+      "text": "The lack of power arises from the small sample size and the moderately high correlation between earlier and later vocabulary input.",
+      "page_number": null
+    },
+    {
+      "text_id": 188,
+      "paragraph_id": 47,
+      "section_id": 11,
+      "text": "Although we could not precisely estimate the difference between the impact of earlier and later input, we were able to test two strong models.",
+      "page_number": null
+    },
+    {
+      "text_id": 189,
+      "paragraph_id": 47,
+      "section_id": 11,
+      "text": "The first was the model based on the sensitive-period theory, according to which δ 1 was greater than 0 and δ 2 was equal to 0.",
+      "page_number": null
+    },
+    {
+      "text_id": 190,
+      "paragraph_id": 47,
+      "section_id": 11,
+      "text": "Estimation of this model (Table 2, Row 4) yielded the following results: δ  1 0 027 = .",
+      "page_number": null
+    },
+    {
+      "text_id": 191,
+      "paragraph_id": 48,
+      "section_id": 11,
+      "text": ", 95% CI = [0.004, 0.051], nominal p = .025.",
+      "page_number": null
+    },
+    {
+      "text_id": 192,
+      "paragraph_id": 48,
+      "section_id": 11,
+      "text": "An alternative strong model assumed that δ 1 was equal to 0 and δ 2 was greater than 0-that is, only later input matters.",
+      "page_number": null
+    },
+    {
+      "text_id": 193,
+      "paragraph_id": 48,
+      "section_id": 11,
+      "text": "Estimation of this model (Table 2, Row 5) yielded the following results: δ  2 0 036 = .",
+      "page_number": null
+    },
+    {
+      "text_id": 194,
+      "paragraph_id": 49,
+      "section_id": 11,
+      "text": ", 95% CI = [0.011, 0.061], nominal p = .005.",
+      "page_number": null
+    },
+    {
+      "text_id": 195,
+      "paragraph_id": 49,
+      "section_id": 11,
+      "text": "Using the standard Akaike information criterion (AIC) method of model comparison (in which a lower AIC corresponds to a better model), we found that neither of these two strong models (Rows 4 and 5 of Table 2) fitted the data as well as the parsimonious model of equal contributions in which δ 1 was equal to δ 2 (Table 2, Row 3).",
+      "page_number": null
+    },
+    {
+      "text_id": 196,
+      "paragraph_id": 50,
+      "section_id": 11,
+      "text": "Our conclusion is that higher levels of input both earlier and later in development have a beneficial effect on vocabulary.",
+      "page_number": null
+    },
+    {
+      "text_id": 197,
+      "paragraph_id": 50,
+      "section_id": 11,
+      "text": "There was no evidence in our data that earlier input is more important than later input in predicting vocabulary in kindergarten.",
+      "page_number": null
+    },
+    {
+      "text_id": 198,
+      "paragraph_id": 50,
+      "section_id": 11,
+      "text": "Indeed, there was some suggestion that later input may be more important than earlier input, but our sample was too small to strongly warrant this claim.",
+      "page_number": null
+    },
+    {
+      "text_id": 199,
+      "paragraph_id": 50,
+      "section_id": 11,
+      "text": "Our sensitivity analysis, reported in Section S8 in the Supplemental Material, suggested that reasonable levels of unobserved confounding would not lead to a bias of more than 24% of our estimate and would not qualitatively change our conclusions.",
+      "page_number": null
+    },
+    {
+      "text_id": 200,
+      "paragraph_id": 52,
+      "section_id": 12,
+      "text": "We followed the same procedure for syntax.",
+      "page_number": null
+    },
+    {
+      "text_id": 201,
+      "paragraph_id": 52,
+      "section_id": 12,
+      "text": "We divided the sample into eight quantiles by parent clauses per 100 sentences at 14 months ( Z S 1 ) and used an ordinal model to predict quantile from covariates (see Section S6 in the Supplemental Material for the procedure we used to assess covariates for inclusion).",
+      "page_number": null
+    },
+    {
+      "text_id": 202,
+      "paragraph_id": 52,
+      "section_id": 12,
+      "text": "A model for Z S 1 that included parent verbal IQ, child birth order, and child word types at 14 months achieved balance on all baseline covariates.",
+      "page_number": null
+    },
+    {
+      "text_id": 203,
+      "paragraph_id": 52,
+      "section_id": 12,
+      "text": "A model for parent clauses per 100 sentences at 30 months (Z S 2 ) that included parent clauses per 100 sentences at 14 months (Z S 1 ), a composite measure of child language at 26 months (X 1 ), parent verbal IQ, parent education, and child gender achieved balance on all covariates.",
+      "page_number": null
+    },
+    {
+      "text_id": 204,
+      "paragraph_id": 52,
+      "section_id": 12,
+      "text": "Balance checking and common support for the syntax models are reported in Tables S5 and S6 and Figures S5 and S6 in the Supplemental Material.",
+      "page_number": null
+    },
+    {
+      "text_id": 205,
+      "paragraph_id": 53,
+      "section_id": 12,
+      "text": "To replicate what other researchers have done, we again first estimated Equation 2, which represents the effect of earlier input without accounting for later input.",
+      "page_number": null
+    },
+    {
+      "text_id": 206,
+      "paragraph_id": 53,
+      "section_id": 12,
+      "text": "We found no clear effect of earlier input, δ  * = -0 03 . , 95% CI = [-0.23, 0.18], nominal p = .792, on our syntax measure, the standardized CELF-RS score.",
+      "page_number": null
+    },
+    {
+      "text_id": 207,
+      "paragraph_id": 53,
+      "section_id": 12,
+      "text": "This result is ambiguous.",
+      "page_number": null
+    },
+    {
+      "text_id": 208,
+      "paragraph_id": 53,
+      "section_id": 12,
+      "text": "Given the width of the CI, we cannot rule out the possibility that high complexity in earlier input was truly associated with lower scores on our outcome measure and that later input may have a different effect.",
+      "page_number": null
+    },
+    {
+      "text_id": 209,
+      "paragraph_id": 53,
+      "section_id": 12,
+      "text": "If this is the case, we may have a better chance of disentangling the effects of earlier and later input for syntax than we had for vocabulary, as the correlation between Z 1 and Z 2 for syntax (r = .37, 95% CI = [.13, .57]) was weaker than for vocabulary (r = .60, 95% CI = [.41, .74]).",
+      "page_number": null
+    },
+    {
+      "text_id": 210,
+      "paragraph_id": 54,
+      "section_id": 12,
+      "text": "To address this possibility, we estimated Equation 1, which represents the impact of possible sequences ( , )",
+      "page_number": null
+    },
+    {
+      "text_id": 211,
+      "paragraph_id": 55,
+      "section_id": 12,
+      "text": "of input using combined weights (see Section S3 in the Supplemental Material), so that we could account for the child's propensity to receive high input both earlier and later.",
+      "page_number": null
+    },
+    {
+      "text_id": 212,
+      "paragraph_id": 55,
+      "section_id": 12,
+      "text": "The results can be seen in Table 3.",
+      "page_number": null
+    },
+    {
+      "text_id": 213,
+      "paragraph_id": 55,
+      "section_id": 12,
+      "text": "We found a δ  1 of -0.24, 95% CI = [-0.44, -0.03], nominal p = .024, and a δ  2 of 0.22, 95% CI = [0.05, 0.38], nominal p = .014.",
+      "page_number": null
+    },
+    {
+      "text_id": 214,
+      "paragraph_id": 55,
+      "section_id": 12,
+      "text": "Under this model, we rejected the null hypothesis (earlier and later input have an equal and cumulative effect): δ δ δ 1 2 007 = = = , . p (not shown in Table 3).",
+      "page_number": null
+    },
+    {
+      "text_id": 215,
+      "paragraph_id": 55,
+      "section_id": 12,
+      "text": "Our data provide evidence that high syntactic complexity in later input has a more beneficial effect in promoting syntax skill than does high syntactic complexity in earlier input (when, at each time point, we control for input received at the other time point).",
+      "page_number": null
+    },
+    {
+      "text_id": 216,
+      "paragraph_id": 55,
+      "section_id": 12,
+      "text": "This is shown by the 95% CI for our estimator of the difference between the effects of later and earlier input, δ δ   2 1 -= 0.045, 95% CI = [0.19, 0.71], which does not include 0.",
+      "page_number": null
+    },
+    {
+      "text_id": 217,
+      "paragraph_id": 55,
+      "section_id": 12,
+      "text": "Unlike the vocabulary case presented earlier, no simplification of the model for syntax is justified.",
+      "page_number": null
+    },
+    {
+      "text_id": 218,
+      "paragraph_id": 55,
+      "section_id": 12,
+      "text": "We have evidence that the coefficients for earlier input and later input are each nonzero for syntax, as neither CI includes 0 (see the 95% CI column in Table 3); it therefore does not make sense to estimate models in which either δ 1 or δ 2 is set to zero (an estimation that was warranted for vocabulary; see Rows 4 and 5 in Table 2).",
+      "page_number": null
+    },
+    {
+      "text_id": 219,
+      "paragraph_id": 55,
+      "section_id": 12,
+      "text": "We also have evidence that the two effects differ; it therefore does not make sense to estimate a constant-effects model that constrains the effects to be equal (an estimation that was also warranted for vocabulary; see Row 3 in Table 2).",
+      "page_number": null
+    },
+    {
+      "text_id": 220,
+      "paragraph_id": 56,
+      "section_id": 12,
+      "text": "Thus, for syntax, we estimated only one model: a differing-effects model, in which the coefficients for earlier and later input differ (Table 3).",
+      "page_number": null
+    },
+    {
+      "text_id": 221,
+      "paragraph_id": 56,
+      "section_id": 12,
+      "text": "In this model, our estimate of the effect of earlier syntax input was negative, and our estimate of the effect of later syntax input was positive (see the β column in Table 3).",
+      "page_number": null
+    },
+    {
+      "text_id": 222,
+      "paragraph_id": 56,
+      "section_id": 12,
+      "text": "This pattern suggests that (a) when syntax input later in development is taken into account, more complex early input is associated with significantly lower child syntax outcomes than less complex early input, and (b) when syntax input earlier in development is taken into account, more complex later input is associated with significantly higher child syntax outcomes than less complex later input.",
+      "page_number": null
+    },
+    {
+      "text_id": 223,
+      "paragraph_id": 56,
+      "section_id": 12,
+      "text": "However, before we interpret this finding, it is important to look at the patterns of earlier and later input that we actually observed in our data and place the model results in this context.",
+      "page_number": null
+    },
+    {
+      "text_id": 224,
+      "paragraph_id": 56,
+      "section_id": 12,
+      "text": "Our sensitivity analysis, reported in Section S8 in the Supplemental Material, suggests that reasonable levels of unobserved confounding would not lead to a bias of more than 18% of our estimates and would not qualitatively change our conclusions.",
+      "page_number": null
+    },
+    {
+      "text_id": 225,
+      "paragraph_id": 58,
+      "section_id": 13,
+      "text": "To visually compare our best-fitting models for vocabulary and syntax, we first plotted each parent's input for vocabulary (parent word types; Fig. 1a) and for syntax (parent clauses per 100 sentences; Fig. 1b) when their child was 14 months old and 30 months old.",
+      "page_number": null
+    },
+    {
+      "text_id": 226,
+      "paragraph_id": 58,
+      "section_id": 13,
+      "text": "We then categorized each child's predicted vocabulary outcome (PPVT) and predicted syntactic outcome (CELF-RS) using our best-fitting models (constant-effects model for vocabulary; differing-effects model for syntax).",
+      "page_number": null
+    },
+    {
+      "text_id": 227,
+      "paragraph_id": 58,
+      "section_id": 13,
+      "text": "Children predicted by our models to have the highest outcomes for vocabulary or for syntax are highlighted in blue, children predicted to have middling outcomes are highlighted in gray, and children predicted to have the lowest outcomes are highlighted in red.",
+      "page_number": null
+    },
+    {
+      "text_id": 228,
+      "paragraph_id": 59,
+      "section_id": 13,
+      "text": "As our models suggested, we saw different patterns for vocabulary and syntax.",
+      "page_number": null
+    },
+    {
+      "text_id": 229,
+      "paragraph_id": 59,
+      "section_id": 13,
+      "text": "First, it is important to note that parents' word types tended to be stable across the two time points (the dots are arrayed along the dashed equality line in Fig. 1a), but their syntax tended to become more complex (the dots are above the dashed equality line in Fig. 1b).",
+      "page_number": null
+    },
+    {
+      "text_id": 230,
+      "paragraph_id": 59,
+      "section_id": 13,
+      "text": "With respect to children's outcomes, for vocabulary, children predicted to have the best outcomes (blue dots in Fig. 1a) were those whose parents' input is in the top right of the graph, that is, parents who provided a diverse range of word types both earlier and later in the acquisition process.",
+      "page_number": null
+    },
+    {
+      "text_id": 231,
+      "paragraph_id": 59,
+      "section_id": 13,
+      "text": "For Note: Results are based on five imputed data sets, with estimates and standard errors pooled according to Rubin's rules (Rubin, 1987).",
+      "page_number": null
+    },
+    {
+      "text_id": 232,
+      "paragraph_id": 59,
+      "section_id": 13,
+      "text": "The mean Akaike information criterion adjusted for small sample size (AICc) is reported from the models run on the five imputed data sets.",
+      "page_number": null
+    },
+    {
+      "text_id": 233,
+      "paragraph_id": 59,
+      "section_id": 13,
+      "text": "PPVT = Peabody Picture Vocabulary Test; CI = confidence interval.",
+      "page_number": null
+    },
+    {
+      "text_id": 234,
+      "paragraph_id": 60,
+      "section_id": 13,
+      "text": "syntax, children predicted to have the best outcomes (blue dots in Fig. 1b) were those whose parents are substantially above the equality line; that is, parents whose speech substantially increased in syntactic complexity when their child was 30 months old, compared with their baseline when the child was 14 months old.",
+      "page_number": null
+    },
+    {
+      "text_id": 235,
+      "paragraph_id": 61,
+      "section_id": 13,
+      "text": "Children predicted to have the lowest outcomes for syntax (red dots) were those whose parents' syntactic input remained stable, compared with their baseline, between when the children were 14 months and 30 months (points falling on the equality line).",
+      "page_number": null
+    },
+    {
+      "text_id": 236,
+      "paragraph_id": 61,
+      "section_id": 13,
+      "text": "Interest ingly, there were parents for whom the syntactic complexity of the input they give their children started high and remained high, but their children were predicted to have relatively low outcomes (the red dots in the upper right quadrant along the equality line).",
+      "page_number": null
+    },
+    {
+      "text_id": 237,
+      "paragraph_id": 61,
+      "section_id": 13,
+      "text": "Note that few parents fell far below the equality line-in other words, it was rare for parents in our sample to provide substantially less complex input in absolute terms in either vocabulary or syntax when their child was 30 months old than when their child was 14 months old.",
+      "page_number": null
+    },
+    {
+      "text_id": 238,
+      "paragraph_id": 61,
+      "section_id": 13,
+      "text": "Our findings should therefore not be interpreted as evidence that providing highly complex input too early actively harms children's syntactic development.",
+      "page_number": null
+    },
+    {
+      "text_id": 239,
+      "paragraph_id": 61,
+      "section_id": 13,
+      "text": "Rather, our a b Parent Word Types When Child Was 14 Months Parent Clauses per 100 Sentences When Child Was 14 Months Parent Word Types When Child Was 30 Months Parent Clauses per 100 Sentences When Child Was 30 Months 600 400 200 400 6 00 200 130 120 110 100 130 120 110 100 Note: Results are based on five imputed data sets, with estimates and standard errors pooled according to Rubin's rules (Rubin, 1987).",
+      "page_number": null
+    },
+    {
+      "text_id": 240,
+      "paragraph_id": 61,
+      "section_id": 13,
+      "text": "CELF-RS = Clinical Evaluation of Language Fundamentals, Recalling Sentences subtest; CI = confidence interval.",
+      "page_number": null
+    },
+    {
+      "text_id": 241,
+      "paragraph_id": 62,
+      "section_id": 13,
+      "text": "data suggest that parents looking to support their children's syntactic development should aim to increase the complexity of their own utterances over time.",
+      "page_number": null
+    },
+    {
+      "text_id": 242,
+      "paragraph_id": 62,
+      "section_id": 13,
+      "text": "Using our best-fitting model of the effects of vocabulary input, the constant-effects model reported in Row 3 of Table 2, we can calibrate the expected effect of different levels of cumulative input on child vocabulary outcomes.",
+      "page_number": null
+    },
+    {
+      "text_id": 243,
+      "paragraph_id": 62,
+      "section_id": 13,
+      "text": "Consider, for example, a primary caregiver who provides vocabulary input of 336 word types when the child is 14 months old and 362 word types when the child is 30 months old (corresponding to the 25th percentile at both time points).",
+      "page_number": null
+    },
+    {
+      "text_id": 244,
+      "paragraph_id": 62,
+      "section_id": 13,
+      "text": "For the child of this caregiver, our model predicts a PPVT score of 109.6.",
+      "page_number": null
+    },
+    {
+      "text_id": 245,
+      "paragraph_id": 62,
+      "section_id": 13,
+      "text": "In contrast, consider a primary caregiver who provides vocabulary input of 474 word types when the child is 14 months old and 540 word types when the child is 30 months old (corresponding to the 75th percentile at both time points).",
+      "page_number": null
+    },
+    {
+      "text_id": 246,
+      "paragraph_id": 62,
+      "section_id": 13,
+      "text": "For the child of this caregiver, our model predicts a PPVT score of 115.7.",
+      "page_number": null
+    },
+    {
+      "text_id": 247,
+      "paragraph_id": 62,
+      "section_id": 13,
+      "text": "Referring to Table 1, we can see that the difference between the predicted PPVT scores of these two children is 0.46 of a standard deviation.",
+      "page_number": null
+    },
+    {
+      "text_id": 248,
+      "paragraph_id": 62,
+      "section_id": 13,
+      "text": "To situate this finding in terms of previous results, consider that 0.46 is more than twice the average standardized effect of state prekindergarten intervention programs on PPVT (Wong et al., 2008).",
+      "page_number": null
+    },
+    {
+      "text_id": 249,
+      "paragraph_id": 63,
+      "section_id": 13,
+      "text": "For syntax, we found that caregivers whose speech increased in absolute complexity between when their child was 14 and 30 months old generated favorable syntax outcomes in their children.",
+      "page_number": null
+    },
+    {
+      "text_id": 250,
+      "paragraph_id": 63,
+      "section_id": 13,
+      "text": "We can calibrate the impact of sequences of input by applying our bestfitting model for syntax (a differing-effects model; Table 3).",
+      "page_number": null
+    },
+    {
+      "text_id": 251,
+      "paragraph_id": 63,
+      "section_id": 13,
+      "text": "Consider, for example, two caregivers, each of whom produces 108 clauses per 100 utterances when the child is 14 months old (corresponding to the 25th percentile).",
+      "page_number": null
+    },
+    {
+      "text_id": 252,
+      "paragraph_id": 63,
+      "section_id": 13,
+      "text": "Now suppose that one caregiver's input is roughly the same when the child is 30 months old-112 clauses per 100 utterances (corresponding again to the 25th percentile).",
+      "page_number": null
+    },
+    {
+      "text_id": 253,
+      "paragraph_id": 63,
+      "section_id": 13,
+      "text": "Our model predicts a CELF-RS score of 10.5 for the child of this caregiver.",
+      "page_number": null
+    },
+    {
+      "text_id": 254,
+      "paragraph_id": 63,
+      "section_id": 13,
+      "text": "In contrast, the second caregiver's syntactic input increases when the child is 30 months old to 121 clauses per 100 utterances (corresponding to the 75th percentile).",
+      "page_number": null
+    },
+    {
+      "text_id": 255,
+      "paragraph_id": 63,
+      "section_id": 13,
+      "text": "Our model predicts a CELF-RS score of 12.4 for the child of this caregiver.",
+      "page_number": null
+    },
+    {
+      "text_id": 256,
+      "paragraph_id": 63,
+      "section_id": 13,
+      "text": "Referring to Table 1 to find the standard deviation of CELF-RS score, we computed a difference score between the expected outcomes for these two children and found that the difference was 0.63 of a standard deviation, which is a large effect.",
+      "page_number": null
+    },
+    {
+      "text_id": 257,
+      "paragraph_id": 65,
+      "section_id": 14,
+      "text": "Parents provide varying language experiences to their children.",
+      "page_number": null
+    },
+    {
+      "text_id": 258,
+      "paragraph_id": 65,
+      "section_id": 14,
+      "text": "This variability has catalyzed decades of research examining how the input that parents provide shapes children's language development.",
+      "page_number": null
+    },
+    {
+      "text_id": 259,
+      "paragraph_id": 65,
+      "section_id": 14,
+      "text": "Previous work has found a strong relation between early parent input and child vocabulary at school entrance (Hoff, 2003;Huttenlocher et al., 1991;Rowe et al., 2009;Rowe & Goldin-Meadow, 2009;Weizman & Snow, 2001) but contradictory results on child syntax (Gleitman et al., 1984;Huttenlocher et al., 2002;Scarborough & Wyckoff, 1986).",
+      "page_number": null
+    },
+    {
+      "text_id": 260,
+      "paragraph_id": 65,
+      "section_id": 14,
+      "text": "These findings are open to multiple interpretations.",
+      "page_number": null
+    },
+    {
+      "text_id": 261,
+      "paragraph_id": 65,
+      "section_id": 14,
+      "text": "First, earlier parent input could be responsible for the relation between parent input and later child outcomes, as has been assumed.",
+      "page_number": null
+    },
+    {
+      "text_id": 262,
+      "paragraph_id": 65,
+      "section_id": 14,
+      "text": "Alternatively, later input could also be responsible for this relation, because parents who use rich input when speaking to their child early in development are likely to continue to do so.",
+      "page_number": null
+    },
+    {
+      "text_id": 263,
+      "paragraph_id": 65,
+      "section_id": 14,
+      "text": "The third possibility is that the sequence of input over time, not input at a particular time point, could be responsible for later child outcomes.",
+      "page_number": null
+    },
+    {
+      "text_id": 264,
+      "paragraph_id": 65,
+      "section_id": 14,
+      "text": "Our goal was to distinguish among these hypotheses and thus determine whether the impact of parent language input varies as a function of developmental time.",
+      "page_number": null
+    },
+    {
+      "text_id": 265,
+      "paragraph_id": 65,
+      "section_id": 14,
+      "text": "If it does, we also asked whether these timing effects differ for vocabulary and syntax acquisition.",
+      "page_number": null
+    },
+    {
+      "text_id": 266,
+      "paragraph_id": 66,
+      "section_id": 14,
+      "text": "We first replicated the effects found in the literature.",
+      "page_number": null
+    },
+    {
+      "text_id": 267,
+      "paragraph_id": 66,
+      "section_id": 14,
+      "text": "Early parent input in our data predicted later child outcomes with respect to vocabulary but not with respect to syntax.",
+      "page_number": null
+    },
+    {
+      "text_id": 268,
+      "paragraph_id": 66,
+      "section_id": 14,
+      "text": "We then assessed the impact of sequences of input when children were 14 and 30 months old and found different answers for vocabulary and syntax.",
+      "page_number": null
+    },
+    {
+      "text_id": 269,
+      "paragraph_id": 66,
+      "section_id": 14,
+      "text": "For vocabulary, the most parsimonious explanation of our data was that providing a diverse range of parent word types earlier and later in the acquisition process predicts the best child outcomes.",
+      "page_number": null
+    },
+    {
+      "text_id": 270,
+      "paragraph_id": 66,
+      "section_id": 14,
+      "text": "In contrast, for syntax, the most parsimonious explanation of our data was that the effects of earlier and later parent input vary and that sequencing of the input matters; the optimal sequence was for parents' absolute level of syntactic complexity of input to increase over time rather than simply remain stable.",
+      "page_number": null
+    },
+    {
+      "text_id": 271,
+      "paragraph_id": 67,
+      "section_id": 14,
+      "text": "Why might timing effects differ for vocabulary and syntax?",
+      "page_number": null
+    },
+    {
+      "text_id": 272,
+      "paragraph_id": 67,
+      "section_id": 14,
+      "text": "Learning the lexical items of a language requires a great deal of data from that language-according to Cristia (2020), it is a data-hungry process.",
+      "page_number": null
+    },
+    {
+      "text_id": 273,
+      "paragraph_id": 67,
+      "section_id": 14,
+      "text": "Consistent with this view, our results showed that high levels of vocabulary input were beneficial both earlier and later in development.",
+      "page_number": null
+    },
+    {
+      "text_id": 274,
+      "paragraph_id": 67,
+      "section_id": 14,
+      "text": "Learning other aspects of language may be supported by strong prior knowledge and thus may not require as much input (Cristia, 2020); for example, deaf children who are not exposed to sign language nevertheless develop the ability to produce sentences containing multiple verbs, showing that this syntactic skill can emerge without any linguistic input whatsoever (Goldin-Meadow, 2020;Goldin-Meadow & Mylander, 1998).",
+      "page_number": null
+    },
+    {
+      "text_id": 275,
+      "paragraph_id": 67,
+      "section_id": 14,
+      "text": "But linguistic input is clearly essential when it comes time for children to learn how to produce multiple-verb sentences in the language of their community.",
+      "page_number": null
+    },
+    {
+      "text_id": 276,
+      "paragraph_id": 67,
+      "section_id": 14,
+      "text": "We did find that input matters for syntax, but child outcomes seemed to depend less on the absolute complexity of syntax input at each time point than on the extent to which input complexity increased over time.",
+      "page_number": null
+    },
+    {
+      "text_id": 277,
+      "paragraph_id": 67,
+      "section_id": 14,
+      "text": "One possibility is that this increase in complexity in the input itself functions as a cue, prompting children to attend to and acquire these and other syntactic structures at this later point in language development.",
+      "page_number": null
+    },
+    {
+      "text_id": 278,
+      "paragraph_id": 67,
+      "section_id": 14,
+      "text": "Another possibility is that although diverse vocabulary input is useful to children from the beginning of language development, complex syntax input is useful only once children's language reaches a sufficient level of development (Vygotsky, 1978).",
+      "page_number": null
+    },
+    {
+      "text_id": 279,
+      "paragraph_id": 68,
+      "section_id": 14,
+      "text": "Our results underscore the need for novel approaches that account for the dynamic relations between parents and children.",
+      "page_number": null
+    },
+    {
+      "text_id": 280,
+      "paragraph_id": 68,
+      "section_id": 14,
+      "text": "Recent examinations of the role of parent language input highlight the predictive power of both quantitative and qualitative differences in parent input (e.g., Cartmill et al., 2013).",
+      "page_number": null
+    },
+    {
+      "text_id": 281,
+      "paragraph_id": 68,
+      "section_id": 14,
+      "text": "Our findings suggest that characterizing static features of input, quantity or quality, at a single time point provides a limited view.",
+      "page_number": null
+    },
+    {
+      "text_id": 282,
+      "paragraph_id": 68,
+      "section_id": 14,
+      "text": "We should instead characterize features of input dynamically at multiple levels of analysis and multiple time points (e.g., Irvin et al., 2016).",
+      "page_number": null
+    },
+    {
+      "text_id": 283,
+      "paragraph_id": 69,
+      "section_id": 14,
+      "text": "Our study is unique in bringing methods from epidemiology into language acquisition, enabling us to adjust for time-invariant and time-varying confounding and thus estimate the true impact of parent input on child outcomes.",
+      "page_number": null
+    },
+    {
+      "text_id": 284,
+      "paragraph_id": 69,
+      "section_id": 14,
+      "text": "These methods allowed us to account for important confounders known to influence this relation.",
+      "page_number": null
+    },
+    {
+      "text_id": 285,
+      "paragraph_id": 69,
+      "section_id": 14,
+      "text": "1 However, we cannot rule out the potential influence of confounders we did not directly observe; for example, genetic factors not captured by parent verbal IQ, prenatal environment, or environmental stressors.",
+      "page_number": null
+    },
+    {
+      "text_id": 286,
+      "paragraph_id": 69,
+      "section_id": 14,
+      "text": "In addition, our results were restricted to a North American sample and thus need to be extended to cultures in which children receive less child-directed speech from their parents (Casillas et al., 2020).",
+      "page_number": null
+    },
+    {
+      "text_id": 287,
+      "paragraph_id": 69,
+      "section_id": 14,
+      "text": "The differences we observed between input effects on vocabulary and syntax in English may not replicate in children acquiring other languages, particularly those with more complex morphosyntax.",
+      "page_number": null
+    },
+    {
+      "text_id": 288,
+      "paragraph_id": 69,
+      "section_id": 14,
+      "text": "Finally, although our work constitutes an advance in showing that later input matters even when earlier input is accounted for, we cannot rule out effects of input measured still later (after 30 months).",
+      "page_number": null
+    },
+    {
+      "text_id": 289,
+      "paragraph_id": 69,
+      "section_id": 14,
+      "text": "Future work should focus on a wider range of input time points to obtain a richer picture of the optimal sequencing of language input.",
+      "page_number": null
+    },
+    {
+      "text_id": 290,
+      "paragraph_id": 70,
+      "section_id": 14,
+      "text": "The novel approach we employed here is well suited to exploring the dynamic relations between parent language input and child language outcomes.",
+      "page_number": null
+    },
+    {
+      "text_id": 291,
+      "paragraph_id": 70,
+      "section_id": 14,
+      "text": "Our hope is that this approach will be extended to other areas-for example, to the effects of stress, instruction, or therapyin which it is essential to understand the impact of continuously measured, time-varying exposures.",
+      "page_number": null
+    },
+    {
+      "text_id": 292,
+      "paragraph_id": 73,
+      "section_id": 16,
+      "text": "Action Editor: Rebecca Treiman Editor: D Stephen Lindsay",
+      "page_number": null
+    },
+    {
+      "text_id": 293,
+      "paragraph_id": 76,
+      "section_id": 17,
+      "text": "We thank Kristi Schonwald for administrative support, Venkat Somala for data cleaning, our research assistants for data collection and transcription, and the families who participated in this study.",
+      "page_number": null
+    },
+    {
+      "text_id": 294,
+      "paragraph_id": 78,
+      "section_id": 18,
+      "text": "This research was supported by the National Institute of Child Health and Human Development (Grant No.",
+      "page_number": null
+    },
+    {
+      "text_id": 295,
+      "paragraph_id": 78,
+      "section_id": 18,
+      "text": "P01-HD40605; principal investigators: S Goldin-Meadow, S W Raudenbush) and the Successful Pathways from School to Work initiative, funded by the Hymen Milgrom Supporting Organization.",
+      "page_number": null
+    },
+    {
+      "text_id": 296,
+      "paragraph_id": 78,
+      "section_id": 18,
+      "text": "C Silvey is supported by a British Academy Postdoctoral Fellowship.",
+      "page_number": null
+    },
+    {
+      "text_id": 297,
+      "paragraph_id": 78,
+      "section_id": 18,
+      "text": "Open Practices",
+      "page_number": null
+    },
+    {
+      "text_id": 298,
+      "paragraph_id": 80,
+      "section_id": 19,
+      "text": "Code for the data analysis and simulations is provided on GitHub at https://github.com/silveycat/vocab-syntax.",
+      "page_number": null
+    },
+    {
+      "text_id": 299,
+      "paragraph_id": 80,
+      "section_id": 19,
+      "text": "Data cannot be publicly shared because the relevant permissions were not obtained from participants when the data were originally collected.",
+      "page_number": null
+    },
+    {
+      "text_id": 300,
+      "paragraph_id": 80,
+      "section_id": 19,
+      "text": "Materials for this study have not been made publicly available, and the design and analysis plans were not preregistered.",
+      "page_number": null
+    },
+    {
+      "text_id": 301,
+      "paragraph_id": 82,
+      "section_id": 20,
+      "text": "The author(s) declared that there were no conflicts of interest with respect to the authorship or the publication of this article.",
+      "page_number": null
+    },
+    {
+      "text_id": 302,
+      "paragraph_id": 84,
+      "section_id": 21,
+      "text": "S W Raudenbush and S Goldin-Meadow conceived the study.",
+      "page_number": null
+    },
+    {
+      "text_id": 303,
+      "paragraph_id": 84,
+      "section_id": 21,
+      "text": "S Goldin-Meadow was in charge of collecting the longitudinal data.",
+      "page_number": null
+    },
+    {
+      "text_id": 304,
+      "paragraph_id": 84,
+      "section_id": 21,
+      "text": "C Silvey and Ö.",
+      "page_number": null
+    },
+    {
+      "text_id": 305,
+      "paragraph_id": 84,
+      "section_id": 21,
+      "text": "E Demir-Lira analyzed the data in consultation with S W Raudenbush.",
+      "page_number": null
+    },
+    {
+      "text_id": 306,
+      "paragraph_id": 84,
+      "section_id": 21,
+      "text": "S W Raudenbush developed the method for the sensitivity analysis and derived the proofs.",
+      "page_number": null
+    },
+    {
+      "text_id": 307,
+      "paragraph_id": 84,
+      "section_id": 21,
+      "text": "C Silvey developed and coded the simulations for determining number of quantiles and for testing the robustness of the method in small samples.",
+      "page_number": null
+    },
+    {
+      "text_id": 308,
+      "paragraph_id": 84,
+      "section_id": 21,
+      "text": "C Silvey and Ö.",
+      "page_number": null
+    },
+    {
+      "text_id": 309,
+      "paragraph_id": 84,
+      "section_id": 21,
+      "text": "E Demir-Lira drafted the manuscript, and all authors provided critical revisions.",
+      "page_number": null
+    },
+    {
+      "text_id": 310,
+      "paragraph_id": 84,
+      "section_id": 21,
+      "text": "All authors approved the final version of the manuscript for submission.",
+      "page_number": null
+    },
+    {
+      "text_id": 311,
+      "paragraph_id": 86,
+      "section_id": 22,
+      "text": "Additional supporting information can be found at http:// journals.sagepub.com/doi/suppl/10.1177/0956797620970559 Note 1.",
+      "page_number": null
+    },
+    {
+      "text_id": 312,
+      "paragraph_id": 86,
+      "section_id": 22,
+      "text": "As discussed in the Method section, because we used weighting to control for child speech as a time-varying confounder, our model controlled for the extent to which parents tailor their later input to the child's response to earlier input.",
+      "page_number": null
+    },
+    {
+      "text_id": 313,
+      "paragraph_id": 86,
+      "section_id": 22,
+      "text": "If we could randomly assign children to sequences of input, we would not need this control.",
+      "page_number": null
+    },
+    {
+      "text_id": 314,
+      "paragraph_id": 87,
+      "section_id": 23,
+      "text": "Fig 1 Scatterplots classifying each child's predicted vocabulary outcome (a) and predicted syntactic outcome (b).",
+      "page_number": null
+    },
+    {
+      "text_id": 315,
+      "paragraph_id": 87,
+      "section_id": 23,
+      "text": "Each point represents a child, plotted according to the parent's input when the child was 14 months old (x-axis) and 30 months old (y-axis).",
+      "page_number": null
+    },
+    {
+      "text_id": 316,
+      "paragraph_id": 87,
+      "section_id": 23,
+      "text": "Vocabulary input was measured as the number of unique word types the parent provided at each time point, and syntax input was measured as the number of clauses per 100 sentences the parent provided at each time point.",
+      "page_number": null
+    },
+    {
+      "text_id": 317,
+      "paragraph_id": 87,
+      "section_id": 23,
+      "text": "Children's vocabulary outcome was the Peabody Picture Vocabulary Test, and children's syntax outcome was the Recalling Sentences subtest from the Clinical Evaluation of Language Fundamentals.",
+      "page_number": null
+    },
+    {
+      "text_id": 318,
+      "paragraph_id": 87,
+      "section_id": 23,
+      "text": "Points in blue are children with the highest 16 predicted outcomes according to our best-fitting models (constant-effects model for vocabulary; differing-effects model for syntax).",
+      "page_number": null
+    },
+    {
+      "text_id": 319,
+      "paragraph_id": 87,
+      "section_id": 23,
+      "text": "Points in red are children with the lowest 16 predicted outcomes; gray points are children in between.",
+      "page_number": null
+    },
+    {
+      "text_id": 320,
+      "paragraph_id": 87,
+      "section_id": 23,
+      "text": "The dashed line shows where children would fall if their parents were perfectly stable in the input they provided (i.e., earlier and later input were identical).",
+      "page_number": null
+    },
+    {
+      "text_id": 321,
+      "paragraph_id": 88,
+      "section_id": 24,
+      "text": "Descriptive Statistics for All Baseline Covariates X 0 , Time-Varying Covariate X 1 , Input Variables Z 1V and Z 2V for Vocabulary and Z 1S and Z 2S for Syntax, Vocabulary Outcome Y V , and Syntax Outcome Y S",
+      "page_number": null
+    },
+    {
+      "text_id": 322,
+      "paragraph_id": 89,
+      "section_id": 25,
+      "text": "Results of Weighted Outcome Models Estimating the Effect of Earlier (Z 1V ) and Later (Z 2V ) Parent Vocabulary Input on Children's Standardized PPVT Scores in Kindergarten",
+      "page_number": null
+    },
+    {
+      "text_id": 323,
+      "paragraph_id": 90,
+      "section_id": 26,
+      "text": "Results of the Weighted Outcome Model Estimating the Effect of Earlier (Z 1S ) and Later (Z 2S ) Parent Syntactic Input on Children's Standardized CELF-RS Scores in Kindergarten",
+      "page_number": null
+    },
+    {
+      "text_id": 324,
+      "paragraph_id": 91,
+      "section_id": 27,
+      "text": "Bornstein, M. H., Haynes, M. O., & Painter, K. M. (1998). Sources of child vocabulary competence: A multivariate model. Journal of Child Language, 25(2), 367-393.",
+      "page_number": null
+    },
+    {
+      "text_id": 325,
+      "paragraph_id": 92,
+      "section_id": 27,
+      "text": "Cartmill, E. A., Armstrong, B. F., III, Gleitman, L. R., Goldin- Meadow, S., Medina, T. N., & Trueswell, J. C. (2013). Quality of early parent input predicts child vocabulary 3 years later. Proceedings of the National Academy of Sciences, USA, 110(28), 11278-11283. https://doi.org/ 10.1073/pnas.1309518110",
+      "page_number": null
+    },
+    {
+      "text_id": 326,
+      "paragraph_id": 93,
+      "section_id": 27,
+      "text": "Casillas, M., Brown, P., & Levinson, S. C. (2020). Early language experience in a Tseltal Mayan village. Child Development, 91(5), 1819-1835.",
+      "page_number": null
+    },
+    {
+      "text_id": 327,
+      "paragraph_id": 94,
+      "section_id": 27,
+      "text": "Cristia, A. (2020). Language input and outcome variation as a test of theory plausibility: The case of early phonological acquisition. Developmental Review, 57, Article 100914. https://doi.org/10.1016/j.dr.2020.100914",
+      "page_number": null
+    },
+    {
+      "text_id": 328,
+      "paragraph_id": 95,
+      "section_id": 27,
+      "text": "Denman, D., Speyer, R., Munro, N., Pearce, W. M., Chen, Y.-W., & Cordier, R. (2017). Psychometric properties of language assessments for children aged 4-12 years: A systematic review. Frontiers in Psychology, 8, Article 1515. https://doi.org/10.3389/fpsyg.2017.01515",
+      "page_number": null
+    },
+    {
+      "text_id": 329,
+      "paragraph_id": 96,
+      "section_id": 27,
+      "text": "Duncan, G. J., Dowsett, C. J., Claessens, A., Magnuson, K., Huston, A. C., Klebanov, P., Pagani, L. S., Feinstein, L., Engel, M., Brooks-Gunn, J., Sexton, H., Duckworth, K., & Japel, C. (2007). School readiness and later achievement. Developmental Psychology, 43(6), 1428-1446.",
+      "page_number": null
+    },
+    {
+      "text_id": 330,
+      "paragraph_id": 97,
+      "section_id": 27,
+      "text": "Dunn, L. M., & Dunn, L. M. (1997). Peabody Picture Vocabulary Test (3rd ed.). American Guidance Service.",
+      "page_number": null
+    },
+    {
+      "text_id": 331,
+      "paragraph_id": 98,
+      "section_id": 27,
+      "text": "Gleitman, L. R., Newport, E. L., & Gleitman, H. (1984). The current status of the motherese hypothesis. Journal of Child Language, 11(1), 43-79.",
+      "page_number": null
+    },
+    {
+      "text_id": 332,
+      "paragraph_id": 99,
+      "section_id": 27,
+      "text": "Goldin-Meadow, S. (2020). Discovering the biases chil- dren bring to language learning. Child Development Perspectives, 14(4), 195-201.",
+      "page_number": null
+    },
+    {
+      "text_id": 333,
+      "paragraph_id": 100,
+      "section_id": 27,
+      "text": "Goldin-Meadow, S., Levine, S. C., Hedges, L. V., Huttenlocher, J., Raudenbush, S. W., & Small, S. L. (2014). New evi- dence about language and cognitive development based on a longitudinal study: Hypotheses for intervention. American Psychologist, 69(6), 588-599.",
+      "page_number": null
+    },
+    {
+      "text_id": 334,
+      "paragraph_id": 101,
+      "section_id": 27,
+      "text": "Goldin-Meadow, S., & Mylander, C. (1998). Spontaneous sign systems created by deaf children in two cultures. Nature, 391, 279-281.",
+      "page_number": null
+    },
+    {
+      "text_id": 335,
+      "paragraph_id": 102,
+      "section_id": 27,
+      "text": "Gomez, R. L., & Gerken, L. (1999). Artificial grammar learning by 1-year-olds leads to specific and abstract knowledge. Cognition, 70(2), 109-135.",
+      "page_number": null
+    },
+    {
+      "text_id": 336,
+      "paragraph_id": 103,
+      "section_id": 27,
+      "text": "Hart, B., & Risley, T. R. (1995). Meaningful differences in the everyday experiences of young American children. Paul H. Brookes.",
+      "page_number": null
+    },
+    {
+      "text_id": 337,
+      "paragraph_id": 104,
+      "section_id": 27,
+      "text": "Hirsh-Pasek, K., & Golinkoff, R. M. (1999). The origins of grammar: Evidence from early language comprehension. MIT Press.",
+      "page_number": null
+    },
+    {
+      "text_id": 338,
+      "paragraph_id": 105,
+      "section_id": 27,
+      "text": "Hoff, E. (2003). The specificity of environmental influence: Socioeconomic status affects early vocabulary develop- ment via maternal speech. Child Development, 74(5), 1368-1378.",
+      "page_number": null
+    },
+    {
+      "text_id": 339,
+      "paragraph_id": 106,
+      "section_id": 27,
+      "text": "Hoff, E. (2013). Interpreting the early language trajectories of children from low-SES and language minority homes: Implications for closing achievement gaps. Developmental Psychology, 49(1), 4-14.",
+      "page_number": null
+    },
+    {
+      "text_id": 340,
+      "paragraph_id": 107,
+      "section_id": 27,
+      "text": "Hoff, E., & Naigles, L. (2002). How children use input to acquire a lexicon. Child Development, 73(2), 418-433.",
+      "page_number": null
+    },
+    {
+      "text_id": 341,
+      "paragraph_id": 108,
+      "section_id": 27,
+      "text": "Hoff-Ginsberg, E. (1998). The relation of birth order and socioeconomic status to children's language experience and language development. Applied Psycholinguistics, 19(4), 603-629.",
+      "page_number": null
+    },
+    {
+      "text_id": 342,
+      "paragraph_id": 109,
+      "section_id": 27,
+      "text": "Huttenlocher, J., Haight, W., Bryk, A., Seltzer, M., & Lyons, T. (1991). Early vocabulary growth: Relation to language input and gender. Developmental Psychology, 27(2), 236-248.",
+      "page_number": null
+    },
+    {
+      "text_id": 343,
+      "paragraph_id": 110,
+      "section_id": 27,
+      "text": "Huttenlocher, J., Vasilyeva, M., Cymerman, E., & Levine, S. (2002). Language input and child syntax. Cognitive Psy- chology, 45(3), 337-374.",
+      "page_number": null
+    },
+    {
+      "text_id": 344,
+      "paragraph_id": 111,
+      "section_id": 27,
+      "text": "Irvin, J., Spokoyny, D., & Moscoso del Prado Martín, F. (2016). Dynamical systems modeling of the child- mother dyad: Causality between child-directed lan- guage complexity and language development. In A. Papafragou, D. Grodner, D. Mirman, & J. C. Trueswell (Eds.), Proceedings of the 38th Annual Conference of the Cognitive Science Society (pp. 2645-2650). Cognitive Science Society.",
+      "page_number": null
+    },
+    {
+      "text_id": 345,
+      "paragraph_id": 112,
+      "section_id": 27,
+      "text": "Klem, M., Melby-Lervåg, M., Hagtvet, B., Lyster, S. A. H., Gustafsson, J. E., & Hulme, C. (2015). Sentence repe- tition is a measure of children's language skills rather than working memory limitations. Developmental Science, 18(1), 146-154.",
+      "page_number": null
+    },
+    {
+      "text_id": 346,
+      "paragraph_id": 113,
+      "section_id": 27,
+      "text": "Kristensen, P., & Bjerkedal, T. (2007). Explaining the relation between birth order and intelligence. Science, 316(5832), 1717.",
+      "page_number": null
+    },
+    {
+      "text_id": 347,
+      "paragraph_id": 114,
+      "section_id": 27,
+      "text": "Naigles, L. (1990). Children use syntax to learn verb mean- ings. Journal of Child Language, 17(2), 357-374.",
+      "page_number": null
+    },
+    {
+      "text_id": 348,
+      "paragraph_id": 115,
+      "section_id": 27,
+      "text": "Naimi, A. I., Moodie, E. E. M., Auger, N., & Kaufman, J. S. (2014). Constructing inverse probability weights for con tinuous exposures: A comparison of methods. Epi- demiology, 25(2), 292-299.",
+      "page_number": null
+    },
+    {
+      "text_id": 349,
+      "paragraph_id": 116,
+      "section_id": 27,
+      "text": "Newport, E. L. (2006). Language development, critical periods in. In L. Nadel (Ed.), Encyclopedia of cognitive science (pp. 737-740). Nature Group Press. https://doi.org/10 .1002/0470018860.s00506",
+      "page_number": null
+    },
+    {
+      "text_id": 350,
+      "paragraph_id": 117,
+      "section_id": 27,
+      "text": "Pagani, L. S., Fitzpatrick, C., Archambault, I., & Janosz, M. (2010). School readiness and later achievement: A French Canadian replication and extension. Developmental Psychology, 46(5), 984-994.",
+      "page_number": null
+    },
+    {
+      "text_id": 351,
+      "paragraph_id": 118,
+      "section_id": 27,
+      "text": "Parker, M. D., & Brorson, K. (2005). A comparative study between mean length of utterance in morphemes (MLUm) and mean length of utterance in words (MLUw). First Language, 25(3), 365-376.",
+      "page_number": null
+    },
+    {
+      "text_id": 352,
+      "paragraph_id": 119,
+      "section_id": 27,
+      "text": "Robins, J. M., Hernán, M. A., & Brumback, B. (2000). Marginal structural models and causal inference in epidemiology. Epidemiology, 11(5), 550-560.",
+      "page_number": null
+    },
+    {
+      "text_id": 353,
+      "paragraph_id": 120,
+      "section_id": 27,
+      "text": "Rowe, M. L., & Goldin-Meadow, S. (2009). Differences in early gesture explain SES disparities in child vocabulary size at school entry. Science, 323, 951-953.",
+      "page_number": null
+    },
+    {
+      "text_id": 354,
+      "paragraph_id": 121,
+      "section_id": 27,
+      "text": "Rowe, M. L., Levine, S. C., Fisher, J. A., & Goldin-Meadow, S. (2009). Does linguistic input play the same role in lan- guage learning for children with and without early brain injury? Developmental Psychology, 45(1), 90-102.",
+      "page_number": null
+    },
+    {
+      "text_id": 355,
+      "paragraph_id": 122,
+      "section_id": 27,
+      "text": "Rubin, D. B. (1987). Multiple imputation for nonresponse in surveys. John Wiley.",
+      "page_number": null
+    },
+    {
+      "text_id": 356,
+      "paragraph_id": 123,
+      "section_id": 27,
+      "text": "Scarborough, H. S., & Wyckoff, J. (1986). Mother, I'd still rather do it myself: Some further non-effects of 'moth- erese.' Journal of Child Language, 13(2), 431-437.",
+      "page_number": null
+    },
+    {
+      "text_id": 357,
+      "paragraph_id": 124,
+      "section_id": 27,
+      "text": "Semel, E., Wiig, E. H., & Secord, W. A. (2003). Clinical Evaluation of Language Fundamentals, fourth edition (CELF-4). Psychological Corp.",
+      "page_number": null
+    },
+    {
+      "text_id": 358,
+      "paragraph_id": 125,
+      "section_id": 27,
+      "text": "van Buuren, S., & Groothuis-Oudshoorn, K. (2011). mice: Multivariate Imputation by Chained Equations in R. Journal of Statistical Software, 45(3). https://doi.org.10.18637/ jss.v045.i03",
+      "page_number": null
+    },
+    {
+      "text_id": 359,
+      "paragraph_id": 126,
+      "section_id": 27,
+      "text": "Vasilyeva, M., Waterfall, H., & Huttenlocher, J. (2008). Emergence of syntax: Commonalities and differences across children. Developmental Science, 11(1), 84- 97.",
+      "page_number": null
+    },
+    {
+      "text_id": 360,
+      "paragraph_id": 127,
+      "section_id": 27,
+      "text": "Vygotsky, L. S. (1978). Mind in society: The development of higher psychological processes. Harvard University Press.",
+      "page_number": null
+    },
+    {
+      "text_id": 361,
+      "paragraph_id": 128,
+      "section_id": 27,
+      "text": "Wechsler, D. (2011). Wechsler Abbreviated Scale of Intelli- gence, second edition (WASI-II). Pearson.",
+      "page_number": null
+    },
+    {
+      "text_id": 362,
+      "paragraph_id": 129,
+      "section_id": 27,
+      "text": "Weizman, Z. O., & Snow, C. E. (2001). Lexical input as related to children's vocabulary acquisition: Effects of sophisti- cated exposure and support for meaning. Developmental Psychology, 37(2), 265-279.",
+      "page_number": null
+    },
+    {
+      "text_id": 363,
+      "paragraph_id": 130,
+      "section_id": 27,
+      "text": "Wong, V. C., Cook, T. D., Barnett, W. S., & Jung, K. (2008). An effectiveness-based evaluation of five state pre- kindergarten programs. Journal of Policy Analysis and Management, 27, 122-154.",
+      "page_number": null
+    }
+  ],
+  "section": [
+    {
+      "section_id": 0,
+      "header": "Abstract",
+      "parent_section_id": null,
+      "section_type": "abstract",
+      "classification_score": null
+    },
+    {
+      "section_id": 1,
+      "header": "[div-01]",
+      "parent_section_id": null,
+      "section_type": "intro",
+      "classification_score": null
+    },
+    {
+      "section_id": 2,
+      "header": "Statement of Relevance",
+      "parent_section_id": null,
+      "section_type": "intro",
+      "classification_score": null
+    },
+    {
+      "section_id": 3,
+      "header": "Method",
+      "parent_section_id": null,
+      "section_type": "method",
+      "classification_score": null
+    },
+    {
+      "section_id": 4,
+      "header": "Time points",
+      "parent_section_id": null,
+      "section_type": "method",
+      "classification_score": null
+    },
+    {
+      "section_id": 5,
+      "header": "Variables",
+      "parent_section_id": null,
+      "section_type": "method",
+      "classification_score": null
+    },
+    {
+      "section_id": 6,
+      "header": "Measure of parent vocabulary input.",
+      "parent_section_id": null,
+      "section_type": "method",
+      "classification_score": null
+    },
+    {
+      "section_id": 7,
+      "header": "Measure of parent syntax input.",
+      "parent_section_id": null,
+      "section_type": "method",
+      "classification_score": null
+    },
+    {
+      "section_id": 8,
+      "header": "Syntax outcome.",
+      "parent_section_id": null,
+      "section_type": "method",
+      "classification_score": null
+    },
+    {
+      "section_id": 9,
+      "header": "Procedure",
+      "parent_section_id": null,
+      "section_type": "method",
+      "classification_score": null
+    },
+    {
+      "section_id": 11,
+      "header": "Vocabulary",
+      "parent_section_id": null,
+      "section_type": "results",
+      "classification_score": null
+    },
+    {
+      "section_id": 12,
+      "header": "Syntax",
+      "parent_section_id": null,
+      "section_type": "results",
+      "classification_score": null
+    },
+    {
+      "section_id": 13,
+      "header": "Vocabulary and syntax compared",
+      "parent_section_id": null,
+      "section_type": "results",
+      "classification_score": null
+    },
+    {
+      "section_id": 14,
+      "header": "Discussion",
+      "parent_section_id": null,
+      "section_type": "discussion",
+      "classification_score": null
+    },
+    {
+      "section_id": 16,
+      "header": "Action Editor: Rebecca Treiman Editor: D. Stephen Lindsay",
+      "parent_section_id": null,
+      "section_type": "discussion",
+      "classification_score": null
+    },
+    {
+      "section_id": 17,
+      "header": "Acknowledgments",
+      "parent_section_id": null,
+      "section_type": "acknowledgement",
+      "classification_score": null
+    },
+    {
+      "section_id": 18,
+      "header": "Funding",
+      "parent_section_id": null,
+      "section_type": "funding",
+      "classification_score": null
+    },
+    {
+      "section_id": 19,
+      "header": "",
+      "parent_section_id": null,
+      "section_type": "availability",
+      "classification_score": null
+    },
+    {
+      "section_id": 20,
+      "header": "Declaration of Conflicting Interests",
+      "parent_section_id": null,
+      "section_type": "conflict",
+      "classification_score": null
+    },
+    {
+      "section_id": 21,
+      "header": "Author Contributions",
+      "parent_section_id": null,
+      "section_type": "contribution",
+      "classification_score": null
+    },
+    {
+      "section_id": 22,
+      "header": "Supplemental Material",
+      "parent_section_id": null,
+      "section_type": "annex",
+      "classification_score": null
+    },
+    {
+      "section_id": 23,
+      "header": "Fig 1",
+      "parent_section_id": null,
+      "section_type": "figure",
+      "classification_score": null
+    },
+    {
+      "section_id": 24,
+      "header": "Table 1 .",
+      "parent_section_id": null,
+      "section_type": "table",
+      "classification_score": null
+    },
+    {
+      "section_id": 25,
+      "header": "Table 2 .",
+      "parent_section_id": null,
+      "section_type": "table",
+      "classification_score": null
+    },
+    {
+      "section_id": 26,
+      "header": "Table 3 .",
+      "parent_section_id": null,
+      "section_type": "table",
+      "classification_score": null
+    },
+    {
+      "section_id": 27,
+      "header": "References",
+      "parent_section_id": null,
+      "section_type": "references",
+      "classification_score": null
+    }
+  ],
+  "url": [
+    {
+      "href": "https://github.com/silveycat/vocab-syntax",
+      "link_text": null,
+      "text_id": 160
+    },
+    {
+      "href": "https://github.com/silveycat/vocab-syntax",
+      "link_text": null,
+      "text_id": 298
+    },
+    {
+      "href": "journals.sagepub.com/doi/suppl/10.1177/0956797620970559",
+      "link_text": null,
+      "text_id": 311
+    }
+  ],
+  "bib": [
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "Sources of child vocabulary competence: A multivariate model",
+      "authors": "Bornstein, M H; Haynes, M O; Painter, K M",
+      "editors": "",
+      "publisher": "",
+      "year": 1998,
+      "volume": "25",
+      "issue": "2",
+      "first_page": "367",
+      "last_page": "393",
+      "container": "Journal of Child Language",
+      "bib_id": 0,
+      "year_suffix": "",
+      "text_id": 324
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1073/pnas.1309518110",
+      "title": "Quality of early parent input predicts child vocabulary 3 years later",
+      "authors": "Cartmill, E A; Armstrong, B F; Iii, ; Gleitman, L R; Goldin-Meadow, S; Medina, T N; Trueswell, J C",
+      "editors": "",
+      "publisher": "",
+      "year": 2013,
+      "volume": "110",
+      "issue": "28",
+      "first_page": "11278",
+      "last_page": "11283",
+      "container": "Proceedings of the National Academy of Sciences",
+      "bib_id": 1,
+      "year_suffix": "",
+      "text_id": 325
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "Early language experience in a Tseltal Mayan village",
+      "authors": "Casillas, M; Brown, P; Levinson, S C",
+      "editors": "",
+      "publisher": "",
+      "year": 2020,
+      "volume": "91",
+      "issue": "5",
+      "first_page": "1819",
+      "last_page": "1835",
+      "container": "Child Development",
+      "bib_id": 2,
+      "year_suffix": "",
+      "text_id": 326
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1016/j.dr.2020.100914",
+      "title": "Language input and outcome variation as a test of theory plausibility: The case of early phonological acquisition",
+      "authors": "Cristia, A",
+      "editors": "",
+      "publisher": "",
+      "year": 2020,
+      "volume": "",
+      "issue": "",
+      "first_page": "57",
+      "last_page": "100914",
+      "container": "Developmental Review",
+      "bib_id": 3,
+      "year_suffix": "",
+      "text_id": 327
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.3389/fpsyg.2017.01515",
+      "title": "Psychometric properties of language assessments for children aged 4-12 years: A systematic review",
+      "authors": "Denman, D; Speyer, R; Munro, N; Pearce, W M; Chen, Y.-W; Cordier, R",
+      "editors": "",
+      "publisher": "",
+      "year": 2017,
+      "volume": "8",
+      "issue": "",
+      "first_page": null,
+      "last_page": null,
+      "container": "Frontiers in Psychology",
+      "bib_id": 4,
+      "year_suffix": "",
+      "text_id": 328
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "",
+      "authors": "Duncan, G J; Dowsett, C J; Claessens, A; Magnuson, K; Huston, A C; Klebanov, P; Pagani, L S; Feinstein, L; Engel, M; Brooks-Gunn, J; Sexton, H; Duckworth, K; Japel, C",
+      "editors": "",
+      "publisher": "",
+      "year": 2007,
+      "volume": "43",
+      "issue": "",
+      "first_page": "1428",
+      "last_page": "1446",
+      "container": "",
+      "bib_id": 5,
+      "year_suffix": "",
+      "text_id": 329
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "",
+      "authors": "Dunn, L M; Dunn, L M",
+      "editors": "",
+      "publisher": "American Guidance Service",
+      "year": 1997,
+      "volume": "",
+      "issue": "",
+      "first_page": null,
+      "last_page": null,
+      "container": "",
+      "bib_id": 6,
+      "year_suffix": "",
+      "text_id": 330
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "The current status of the motherese hypothesis",
+      "authors": "Gleitman, L R; Newport, E L; Gleitman, H",
+      "editors": "",
+      "publisher": "",
+      "year": 1984,
+      "volume": "11",
+      "issue": "1",
+      "first_page": "43",
+      "last_page": "79",
+      "container": "Journal of Child Language",
+      "bib_id": 7,
+      "year_suffix": "",
+      "text_id": 331
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "Discovering the biases children bring to language learning",
+      "authors": "Goldin-Meadow, S",
+      "editors": "",
+      "publisher": "",
+      "year": 2020,
+      "volume": "14",
+      "issue": "4",
+      "first_page": "195",
+      "last_page": "201",
+      "container": "Child Development Perspectives",
+      "bib_id": 8,
+      "year_suffix": "",
+      "text_id": 332
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "New evidence about language and cognitive development based on a longitudinal study: Hypotheses for intervention",
+      "authors": "Goldin-Meadow, S; Levine, S C; Hedges, L V; Huttenlocher, J; Raudenbush, S W; Small, S L",
+      "editors": "",
+      "publisher": "",
+      "year": 2014,
+      "volume": "69",
+      "issue": "6",
+      "first_page": "588",
+      "last_page": "599",
+      "container": "American Psychologist",
+      "bib_id": 9,
+      "year_suffix": "",
+      "text_id": 333
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "Spontaneous sign systems created by deaf children in two cultures",
+      "authors": "Goldin-Meadow, S; Mylander, C",
+      "editors": "",
+      "publisher": "",
+      "year": 1998,
+      "volume": "391",
+      "issue": "",
+      "first_page": "279",
+      "last_page": "281",
+      "container": "Nature",
+      "bib_id": 10,
+      "year_suffix": "",
+      "text_id": 334
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "Artificial grammar learning by 1-year-olds leads to specific and abstract knowledge",
+      "authors": "Gomez, R L; Gerken, L",
+      "editors": "",
+      "publisher": "",
+      "year": 1999,
+      "volume": "70",
+      "issue": "2",
+      "first_page": "109",
+      "last_page": "135",
+      "container": "Cognition",
+      "bib_id": 11,
+      "year_suffix": "",
+      "text_id": 335
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "",
+      "authors": "Hart, B; Risley, T R",
+      "editors": "",
+      "publisher": "Paul H. Brookes",
+      "year": 1995,
+      "volume": "",
+      "issue": "",
+      "first_page": null,
+      "last_page": null,
+      "container": "",
+      "bib_id": 12,
+      "year_suffix": "",
+      "text_id": 336
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "",
+      "authors": "Hirsh-Pasek, K; Golinkoff, R M",
+      "editors": "",
+      "publisher": "MIT Press",
+      "year": 1999,
+      "volume": "",
+      "issue": "",
+      "first_page": null,
+      "last_page": null,
+      "container": "",
+      "bib_id": 13,
+      "year_suffix": "",
+      "text_id": 337
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "The specificity of environmental influence: Socioeconomic status affects early vocabulary development via maternal speech",
+      "authors": "Hoff, E",
+      "editors": "",
+      "publisher": "",
+      "year": 2003,
+      "volume": "74",
+      "issue": "5",
+      "first_page": "1368",
+      "last_page": "1378",
+      "container": "Child Development",
+      "bib_id": 14,
+      "year_suffix": "",
+      "text_id": 338
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "Interpreting the early language trajectories of children from low-SES and language minority homes: Implications for closing achievement gaps",
+      "authors": "Hoff, E",
+      "editors": "",
+      "publisher": "",
+      "year": 2013,
+      "volume": "49",
+      "issue": "1",
+      "first_page": "4",
+      "last_page": "14",
+      "container": "Developmental Psychology",
+      "bib_id": 15,
+      "year_suffix": "",
+      "text_id": 339
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "How children use input to acquire a lexicon",
+      "authors": "Hoff, E; Naigles, L",
+      "editors": "",
+      "publisher": "",
+      "year": 2002,
+      "volume": "73",
+      "issue": "2",
+      "first_page": "418",
+      "last_page": "433",
+      "container": "Child Development",
+      "bib_id": 16,
+      "year_suffix": "",
+      "text_id": 340
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "The relation of birth order and socioeconomic status to children's language experience and language development",
+      "authors": "Hoff-Ginsberg, E",
+      "editors": "",
+      "publisher": "",
+      "year": 1998,
+      "volume": "19",
+      "issue": "4",
+      "first_page": "603",
+      "last_page": "629",
+      "container": "Applied Psycholinguistics",
+      "bib_id": 17,
+      "year_suffix": "",
+      "text_id": 341
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "Early vocabulary growth: Relation to language input and gender",
+      "authors": "Huttenlocher, J; Haight, W; Bryk, A; Seltzer, M; Lyons, T",
+      "editors": "",
+      "publisher": "",
+      "year": 1991,
+      "volume": "27",
+      "issue": "2",
+      "first_page": "236",
+      "last_page": "248",
+      "container": "Developmental Psychology",
+      "bib_id": 18,
+      "year_suffix": "",
+      "text_id": 342
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "Language input and child syntax",
+      "authors": "Huttenlocher, J; Vasilyeva, M; Cymerman, E; Levine, S",
+      "editors": "",
+      "publisher": "",
+      "year": 2002,
+      "volume": "45",
+      "issue": "3",
+      "first_page": "337",
+      "last_page": "374",
+      "container": "Cognitive Psychology",
+      "bib_id": 19,
+      "year_suffix": "",
+      "text_id": 343
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "Dynamical systems modeling of the childmother dyad: Causality between child-directed language complexity and language development",
+      "authors": "Irvin, J; Spokoyny, D; Del Prado Martín, Moscoso; , F",
+      "editors": "Papafragou, A; Grodner, D; Mirman, D; Trueswell, J C",
+      "publisher": "",
+      "year": 2016,
+      "volume": "",
+      "issue": "",
+      "first_page": "2645",
+      "last_page": "2650",
+      "container": "",
+      "bib_id": 20,
+      "year_suffix": "",
+      "text_id": 344
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "Sentence repetition is a measure of children's language skills rather than working memory limitations",
+      "authors": "Klem, M; Melby-Lervåg, M; Hagtvet, B; Lyster, S A H; Gustafsson, J E; Hulme, C",
+      "editors": "",
+      "publisher": "",
+      "year": 2015,
+      "volume": "18",
+      "issue": "1",
+      "first_page": "146",
+      "last_page": "154",
+      "container": "Developmental Science",
+      "bib_id": 21,
+      "year_suffix": "",
+      "text_id": 345
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "Explaining the relation between birth order and intelligence",
+      "authors": "Kristensen, P; Bjerkedal, T",
+      "editors": "",
+      "publisher": "",
+      "year": 2007,
+      "volume": "316",
+      "issue": "5832",
+      "first_page": "1717",
+      "last_page": null,
+      "container": "Science",
+      "bib_id": 22,
+      "year_suffix": "",
+      "text_id": 346
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "Children use syntax to learn verb meanings",
+      "authors": "Naigles, L",
+      "editors": "",
+      "publisher": "",
+      "year": 1990,
+      "volume": "17",
+      "issue": "2",
+      "first_page": "357",
+      "last_page": "374",
+      "container": "Journal of Child Language",
+      "bib_id": 23,
+      "year_suffix": "",
+      "text_id": 347
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "",
+      "authors": "Naimi, A I; Moodie, E E M; Auger, N; Kaufman, J S",
+      "editors": "",
+      "publisher": "",
+      "year": 2014,
+      "volume": "25",
+      "issue": "",
+      "first_page": "292",
+      "last_page": "299",
+      "container": "",
+      "bib_id": 24,
+      "year_suffix": "",
+      "text_id": 348
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1002/0470018860.s00506",
+      "title": "Language development, critical periods in",
+      "authors": "Newport, E L",
+      "editors": "Nadel, L",
+      "publisher": "Nature Group Press",
+      "year": 2006,
+      "volume": "",
+      "issue": "",
+      "first_page": "737",
+      "last_page": "740",
+      "container": "",
+      "bib_id": 25,
+      "year_suffix": "",
+      "text_id": 349
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "School readiness and later achievement: A French Canadian replication and extension",
+      "authors": "Pagani, L S; Fitzpatrick, C; Archambault, I; Janosz, M",
+      "editors": "",
+      "publisher": "",
+      "year": 2010,
+      "volume": "46",
+      "issue": "5",
+      "first_page": "984",
+      "last_page": "994",
+      "container": "Developmental Psychology",
+      "bib_id": 26,
+      "year_suffix": "",
+      "text_id": 350
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "A comparative study between mean length of utterance in morphemes (MLUm) and mean length of utterance in words (MLUw)",
+      "authors": "Parker, M D; Brorson, K",
+      "editors": "",
+      "publisher": "",
+      "year": 2005,
+      "volume": "25",
+      "issue": "3",
+      "first_page": "365",
+      "last_page": "376",
+      "container": "First Language",
+      "bib_id": 27,
+      "year_suffix": "",
+      "text_id": 351
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "Marginal structural models and causal inference in epidemiology",
+      "authors": "Robins, J M; Hernán, M A; Brumback, B",
+      "editors": "",
+      "publisher": "",
+      "year": 2000,
+      "volume": "11",
+      "issue": "5",
+      "first_page": "550",
+      "last_page": "560",
+      "container": "Epidemiology",
+      "bib_id": 28,
+      "year_suffix": "",
+      "text_id": 352
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "Differences in early gesture explain SES disparities in child vocabulary size at school entry",
+      "authors": "Rowe, M L; Goldin-Meadow, S",
+      "editors": "",
+      "publisher": "",
+      "year": 2009,
+      "volume": "323",
+      "issue": "",
+      "first_page": "951",
+      "last_page": "953",
+      "container": "Science",
+      "bib_id": 29,
+      "year_suffix": "",
+      "text_id": 353
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "Does linguistic input play the same role in language learning for children with and without early brain injury?",
+      "authors": "Rowe, M L; Levine, S C; Fisher, J A; Goldin-Meadow, S",
+      "editors": "",
+      "publisher": "",
+      "year": 2009,
+      "volume": "45",
+      "issue": "1",
+      "first_page": "90",
+      "last_page": "102",
+      "container": "Developmental Psychology",
+      "bib_id": 30,
+      "year_suffix": "",
+      "text_id": 354
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "",
+      "authors": "Rubin, D B",
+      "editors": "",
+      "publisher": "John Wiley",
+      "year": 1987,
+      "volume": "",
+      "issue": "",
+      "first_page": null,
+      "last_page": null,
+      "container": "",
+      "bib_id": 31,
+      "year_suffix": "",
+      "text_id": 355
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "Mother, I'd still rather do it myself: Some further non-effects of 'motherese",
+      "authors": "Scarborough, H S; Wyckoff, J",
+      "editors": "",
+      "publisher": "",
+      "year": 1986,
+      "volume": "13",
+      "issue": "2",
+      "first_page": "431",
+      "last_page": "437",
+      "container": "Journal of Child Language",
+      "bib_id": 32,
+      "year_suffix": "",
+      "text_id": 356
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "",
+      "authors": "Semel, E; Wiig, E H; Secord, W A",
+      "editors": "",
+      "publisher": "Psychological Corp",
+      "year": 2003,
+      "volume": "",
+      "issue": "",
+      "first_page": null,
+      "last_page": null,
+      "container": "",
+      "bib_id": 33,
+      "year_suffix": "",
+      "text_id": 357
+    },
+    {
+      "bib_type": "article",
+      "doi": "https://doi.org.10.18637/jss.v045.i03",
+      "title": "mice: Multivariate Imputation by Chained Equations in R",
+      "authors": "Van Buuren, S; Groothuis-Oudshoorn, K",
+      "editors": "",
+      "publisher": "",
+      "year": 2011,
+      "volume": "45",
+      "issue": "3",
+      "first_page": null,
+      "last_page": null,
+      "container": "Journal of Statistical Software",
+      "bib_id": 34,
+      "year_suffix": "",
+      "text_id": 358
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "Emergence of syntax: Commonalities and differences across children",
+      "authors": "Vasilyeva, M; Waterfall, H; Huttenlocher, J",
+      "editors": "",
+      "publisher": "",
+      "year": 2008,
+      "volume": "11",
+      "issue": "1",
+      "first_page": "84",
+      "last_page": "97",
+      "container": "Developmental Science",
+      "bib_id": 35,
+      "year_suffix": "",
+      "text_id": 359
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "",
+      "authors": "Vygotsky, L S",
+      "editors": "",
+      "publisher": "Harvard University Press",
+      "year": 1978,
+      "volume": "",
+      "issue": "",
+      "first_page": null,
+      "last_page": null,
+      "container": "",
+      "bib_id": 36,
+      "year_suffix": "",
+      "text_id": 360
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "",
+      "authors": "Wechsler, D",
+      "editors": "",
+      "publisher": "Pearson",
+      "year": 2011,
+      "volume": "",
+      "issue": "",
+      "first_page": null,
+      "last_page": null,
+      "container": "",
+      "bib_id": 37,
+      "year_suffix": "",
+      "text_id": 361
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "Lexical input as related to children's vocabulary acquisition: Effects of sophisticated exposure and support for meaning",
+      "authors": "Weizman, Z O; Snow, C E",
+      "editors": "",
+      "publisher": "",
+      "year": 2001,
+      "volume": "37",
+      "issue": "2",
+      "first_page": "265",
+      "last_page": "279",
+      "container": "Developmental Psychology",
+      "bib_id": 38,
+      "year_suffix": "",
+      "text_id": 362
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "An effectiveness-based evaluation of five state prekindergarten programs",
+      "authors": "Wong, V C; Cook, T D; Barnett, W S; Jung, K",
+      "editors": "",
+      "publisher": "",
+      "year": 2008,
+      "volume": "27",
+      "issue": "",
+      "first_page": "122",
+      "last_page": "154",
+      "container": "Journal of Policy Analysis and Management",
+      "bib_id": 39,
+      "year_suffix": "",
+      "text_id": 363
+    }
+  ],
+  "xref": [
+    {
+      "xref_id": 0,
+      "xref_type": "bib",
+      "contents": "Bornstein et al., 1998;",
+      "text_id": 91
+    },
+    {
+      "xref_id": 1,
+      "xref_type": "bib",
+      "contents": "Cartmill et al., 2013;",
+      "text_id": 8
+    },
+    {
+      "xref_id": 1,
+      "xref_type": "bib",
+      "contents": "Cartmill et al., 2013)",
+      "text_id": 280
+    },
+    {
+      "xref_id": 2,
+      "xref_type": "bib",
+      "contents": "(Casillas et al., 2020)",
+      "text_id": 286
+    },
+    {
+      "xref_id": 3,
+      "xref_type": "bib",
+      "contents": "Cristia (2020)",
+      "text_id": 272
+    },
+    {
+      "xref_id": 3,
+      "xref_type": "bib",
+      "contents": "Cristia (2020)",
+      "text_id": 274
+    },
+    {
+      "xref_id": 3,
+      "xref_type": "bib",
+      "contents": "Cristia (2020)",
+      "text_id": 278
+    },
+    {
+      "xref_id": 3,
+      "xref_type": "bib",
+      "contents": "(Cristia, 2020)",
+      "text_id": 272
+    },
+    {
+      "xref_id": 3,
+      "xref_type": "bib",
+      "contents": "(Cristia, 2020)",
+      "text_id": 274
+    },
+    {
+      "xref_id": 3,
+      "xref_type": "bib",
+      "contents": "(Cristia, 2020)",
+      "text_id": 278
+    },
+    {
+      "xref_id": 4,
+      "xref_type": "bib",
+      "contents": "(Denman et al., 2017)",
+      "text_id": 114
+    },
+    {
+      "xref_id": 5,
+      "xref_type": "bib",
+      "contents": "(Duncan et al., 2007;",
+      "text_id": 67
+    },
+    {
+      "xref_id": 6,
+      "xref_type": "bib",
+      "contents": "Dunn & Dunn, 1997)",
+      "text_id": 106
+    },
+    {
+      "xref_id": 7,
+      "xref_type": "bib",
+      "contents": "(Gleitman et al., 1984;",
+      "text_id": 14
+    },
+    {
+      "xref_id": 7,
+      "xref_type": "bib",
+      "contents": "(Gleitman et al., 1984;",
+      "text_id": 259
+    },
+    {
+      "xref_id": 8,
+      "xref_type": "bib",
+      "contents": "(Goldin-Meadow, 2020;",
+      "text_id": 274
+    },
+    {
+      "xref_id": 9,
+      "xref_type": "bib",
+      "contents": "(Goldin-Meadow et al., 2014)",
+      "text_id": 51
+    },
+    {
+      "xref_id": 10,
+      "xref_type": "bib",
+      "contents": "Goldin-Meadow & Mylander, 1998)",
+      "text_id": 274
+    },
+    {
+      "xref_id": 11,
+      "xref_type": "bib",
+      "contents": "(Gomez & Gerken, 1999;",
+      "text_id": 27
+    },
+    {
+      "xref_id": 12,
+      "xref_type": "bib",
+      "contents": "Hart & Risley, 1995;",
+      "text_id": 8
+    },
+    {
+      "xref_id": 12,
+      "xref_type": "bib",
+      "contents": "(Hart & Risley, 1995;",
+      "text_id": 14
+    },
+    {
+      "xref_id": 13,
+      "xref_type": "bib",
+      "contents": "Hirsh-Pasek & Golinkoff, 1999;",
+      "text_id": 27
+    },
+    {
+      "xref_id": 14,
+      "xref_type": "bib",
+      "contents": "Hoff, 2003;",
+      "text_id": 8
+    },
+    {
+      "xref_id": 14,
+      "xref_type": "bib",
+      "contents": "(Hoff, 2003;",
+      "text_id": 13
+    },
+    {
+      "xref_id": 14,
+      "xref_type": "bib",
+      "contents": "(Hoff, 2003;",
+      "text_id": 259
+    },
+    {
+      "xref_id": 15,
+      "xref_type": "bib",
+      "contents": "(Hoff, 2013)",
+      "text_id": 25
+    },
+    {
+      "xref_id": 16,
+      "xref_type": "bib",
+      "contents": "Hoff & Naigles, 2002)",
+      "text_id": 91
+    },
+    {
+      "xref_id": 17,
+      "xref_type": "bib",
+      "contents": "Hoff-Ginsberg, 1998)",
+      "text_id": 83
+    },
+    {
+      "xref_id": 18,
+      "xref_type": "bib",
+      "contents": "Huttenlocher et al., 1991",
+      "text_id": 8
+    },
+    {
+      "xref_id": 18,
+      "xref_type": "bib",
+      "contents": "Huttenlocher et al., 1991)",
+      "text_id": 14
+    },
+    {
+      "xref_id": 18,
+      "xref_type": "bib",
+      "contents": "(Huttenlocher et al., 1991)",
+      "text_id": 92
+    },
+    {
+      "xref_id": 18,
+      "xref_type": "bib",
+      "contents": "Huttenlocher et al., 1991;",
+      "text_id": 259
+    },
+    {
+      "xref_id": 19,
+      "xref_type": "bib",
+      "contents": "Huttenlocher et al., , 2002;;",
+      "text_id": 8
+    },
+    {
+      "xref_id": 19,
+      "xref_type": "bib",
+      "contents": "Huttenlocher et al., 2002;",
+      "text_id": 13
+    },
+    {
+      "xref_id": 19,
+      "xref_type": "bib",
+      "contents": "Huttenlocher et al., 2002;",
+      "text_id": 14
+    },
+    {
+      "xref_id": 19,
+      "xref_type": "bib",
+      "contents": "Huttenlocher et al. (2002)",
+      "text_id": 95
+    },
+    {
+      "xref_id": 19,
+      "xref_type": "bib",
+      "contents": "Huttenlocher et al., 2002;",
+      "text_id": 259
+    },
+    {
+      "xref_id": 20,
+      "xref_type": "bib",
+      "contents": "(Irvin et al., 2016)",
+      "text_id": 36
+    },
+    {
+      "xref_id": 20,
+      "xref_type": "bib",
+      "contents": "Irvin et al., 2016)",
+      "text_id": 282
+    },
+    {
+      "xref_id": 21,
+      "xref_type": "bib",
+      "contents": "(Klem et al., 2015)",
+      "text_id": 114
+    },
+    {
+      "xref_id": 22,
+      "xref_type": "bib",
+      "contents": "(Kristensen & Bjerkedal, 2007)",
+      "text_id": 84
+    },
+    {
+      "xref_id": 23,
+      "xref_type": "bib",
+      "contents": "Naigles, 1990)",
+      "text_id": 27
+    },
+    {
+      "xref_id": 24,
+      "xref_type": "bib",
+      "contents": "(Naimi et al., 2014;",
+      "text_id": 40
+    },
+    {
+      "xref_id": 24,
+      "xref_type": "bib",
+      "contents": "(Naimi et al., 2014)",
+      "text_id": 131
+    },
+    {
+      "xref_id": 25,
+      "xref_type": "bib",
+      "contents": "(Newport, 2006)",
+      "text_id": 17
+    },
+    {
+      "xref_id": 25,
+      "xref_type": "bib",
+      "contents": "Newport, 2006)",
+      "text_id": 143
+    },
+    {
+      "xref_id": 26,
+      "xref_type": "bib",
+      "contents": "Pagani et al., 2010)",
+      "text_id": 67
+    },
+    {
+      "xref_id": 27,
+      "xref_type": "bib",
+      "contents": "(Parker & Brorson, 2005)",
+      "text_id": 103
+    },
+    {
+      "xref_id": 28,
+      "xref_type": "bib",
+      "contents": "Robins et al., 2000)",
+      "text_id": 40
+    },
+    {
+      "xref_id": 28,
+      "xref_type": "bib",
+      "contents": "Robins et al., 2000)",
+      "text_id": 126
+    },
+    {
+      "xref_id": 31,
+      "xref_type": "bib",
+      "contents": "(Rubin, 1987)",
+      "text_id": 231
+    },
+    {
+      "xref_id": 31,
+      "xref_type": "bib",
+      "contents": "(Rubin, 1987)",
+      "text_id": null
+    },
+    {
+      "xref_id": 32,
+      "xref_type": "bib",
+      "contents": "Scarborough & Wyckoff, 1986)",
+      "text_id": 259
+    },
+    {
+      "xref_id": 33,
+      "xref_type": "bib",
+      "contents": "Semel et al., 2003)",
+      "text_id": 112
+    },
+    {
+      "xref_id": 34,
+      "xref_type": "bib",
+      "contents": "Buuren & Groothuis-Oudshoorn, 2011)",
+      "text_id": 120
+    },
+    {
+      "xref_id": 35,
+      "xref_type": "bib",
+      "contents": "Vasilyeva et al., 2008)",
+      "text_id": null
+    },
+    {
+      "xref_id": 36,
+      "xref_type": "bib",
+      "contents": "(Vygotsky, 1978)",
+      "text_id": 278
+    },
+    {
+      "xref_id": 37,
+      "xref_type": "bib",
+      "contents": "Wechsler, 2011)",
+      "text_id": 80
+    },
+    {
+      "xref_id": 38,
+      "xref_type": "bib",
+      "contents": "Weizman & Snow, 2001)",
+      "text_id": 8
+    },
+    {
+      "xref_id": 38,
+      "xref_type": "bib",
+      "contents": "Weizman & Snow, 2001)",
+      "text_id": 13
+    },
+    {
+      "xref_id": 38,
+      "xref_type": "bib",
+      "contents": "Weizman & Snow, 2001",
+      "text_id": 259
+    },
+    {
+      "xref_id": 39,
+      "xref_type": "bib",
+      "contents": "(Wong et al., 2008)",
+      "text_id": 248
+    },
+    {
+      "xref_id": null,
+      "xref_type": "bib",
+      "contents": "Rowe et al., 2009;",
+      "text_id": 8
+    },
+    {
+      "xref_id": null,
+      "xref_type": "bib",
+      "contents": "Rowe & Goldin-Meadow, 2009;",
+      "text_id": 8
+    },
+    {
+      "xref_id": null,
+      "xref_type": "bib",
+      "contents": "Rowe et al., 2009)",
+      "text_id": 14
+    },
+    {
+      "xref_id": null,
+      "xref_type": "bib",
+      "contents": "(Rowe et al., 2009)",
+      "text_id": 31
+    },
+    {
+      "xref_id": null,
+      "xref_type": "bib",
+      "contents": "(Rowe & Goldin-Meadow, 2009)",
+      "text_id": 89
+    },
+    {
+      "xref_id": null,
+      "xref_type": "bib",
+      "contents": "Rowe et al., 2009;",
+      "text_id": 259
+    },
+    {
+      "xref_id": null,
+      "xref_type": "bib",
+      "contents": "Rowe & Goldin-Meadow, 2009;",
+      "text_id": 259
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "1a",
+      "text_id": 225
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "1b",
+      "text_id": 225
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "1a",
+      "text_id": 229
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "1a",
+      "text_id": 230
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "1b",
+      "text_id": 229
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "1b",
+      "text_id": 230
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "1b",
+      "text_id": 234
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "S3",
+      "text_id": 168
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "S4",
+      "text_id": 168
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "S3",
+      "text_id": 175
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "S5",
+      "text_id": 204
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "S6",
+      "text_id": 204
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "S3",
+      "text_id": 211
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "4",
+      "text_id": 218
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "5",
+      "text_id": 218
+    },
+    {
+      "xref_id": null,
+      "xref_type": null,
+      "contents": "1 reduces",
+      "text_id": 181
+    },
+    {
+      "xref_id": null,
+      "xref_type": "table",
+      "contents": "1",
+      "text_id": 118
+    },
+    {
+      "xref_id": null,
+      "xref_type": "table",
+      "contents": "1",
+      "text_id": 247
+    },
+    {
+      "xref_id": null,
+      "xref_type": "table",
+      "contents": "1",
+      "text_id": 256
+    },
+    {
+      "xref_id": null,
+      "xref_type": "table",
+      "contents": "2",
+      "text_id": 176
+    },
+    {
+      "xref_id": null,
+      "xref_type": "table",
+      "contents": "2",
+      "text_id": 178
+    },
+    {
+      "xref_id": null,
+      "xref_type": "table",
+      "contents": "2",
+      "text_id": 180
+    },
+    {
+      "xref_id": null,
+      "xref_type": "table",
+      "contents": "2",
+      "text_id": 183
+    },
+    {
+      "xref_id": null,
+      "xref_type": "table",
+      "contents": "2",
+      "text_id": 190
+    },
+    {
+      "xref_id": null,
+      "xref_type": "table",
+      "contents": "2",
+      "text_id": 193
+    },
+    {
+      "xref_id": null,
+      "xref_type": "table",
+      "contents": "2",
+      "text_id": 195
+    },
+    {
+      "xref_id": null,
+      "xref_type": "table",
+      "contents": "2",
+      "text_id": 218
+    },
+    {
+      "xref_id": null,
+      "xref_type": "table",
+      "contents": "2",
+      "text_id": 219
+    },
+    {
+      "xref_id": null,
+      "xref_type": "table",
+      "contents": "2",
+      "text_id": 242
+    },
+    {
+      "xref_id": null,
+      "xref_type": "table",
+      "contents": "S3",
+      "text_id": 168
+    },
+    {
+      "xref_id": null,
+      "xref_type": "table",
+      "contents": "3",
+      "text_id": 212
+    },
+    {
+      "xref_id": null,
+      "xref_type": "table",
+      "contents": "3",
+      "text_id": 214
+    },
+    {
+      "xref_id": null,
+      "xref_type": "table",
+      "contents": "3",
+      "text_id": 218
+    },
+    {
+      "xref_id": null,
+      "xref_type": "table",
+      "contents": "3",
+      "text_id": 220
+    },
+    {
+      "xref_id": null,
+      "xref_type": "table",
+      "contents": "3",
+      "text_id": 221
+    },
+    {
+      "xref_id": null,
+      "xref_type": "table",
+      "contents": "3",
+      "text_id": 250
+    },
+    {
+      "xref_id": null,
+      "xref_type": "table",
+      "contents": "S4",
+      "text_id": 168
+    },
+    {
+      "xref_id": null,
+      "xref_type": "table",
+      "contents": "S5",
+      "text_id": 204
+    },
+    {
+      "xref_id": null,
+      "xref_type": "table",
+      "contents": "S6",
+      "text_id": 204
+    }
+  ],
+  "figure": [
+    {
+      "figure_id": 1,
+      "section_id": 23,
+      "image": null,
+      "page_number": null
+    }
+  ],
+  "table": [
+    {
+      "table_id": 1,
+      "section_id": 24,
+      "html": "<table>\n  <row>\n    <cell>Variable<\/cell>\n  <\/row>\n<\/table>",
+      "contents": null,
+      "page_number": null
+    },
+    {
+      "table_id": 2,
+      "section_id": 25,
+      "html": "<table>\n  <row>\n    <cell/>\n    <cell/>\n    <cell>Coefficient<\/cell>\n    <cell/>\n    <cell/>\n    <cell/>\n    <cell/>\n    <cell>Nominal<\/cell>\n    <cell/>\n  <\/row>\n  <row>\n    <cell>Model and predictor<\/cell>\n    <cell>Effect<\/cell>\n    <cell>estimate<\/cell>\n    <cell>β<\/cell>\n    <cell>95% CI<\/cell>\n    <cell>SE<\/cell>\n    <cell>t ratio<\/cell>\n    <cell>p<\/cell>\n    <cell>AICc<\/cell>\n  <\/row>\n  <row>\n    <cell>Differing effects<\/cell>\n    <cell/>\n    <cell/>\n    <cell/>\n    <cell/>\n    <cell/>\n    <cell/>\n    <cell/>\n    <cell/>\n  <\/row>\n  <row>\n    <cell>Z 1V<\/cell>\n    <cell>δ  1<\/cell>\n    <cell>0.013<\/cell>\n    <cell>0.123<\/cell>\n    <cell>[-0.014, 0.041]<\/cell>\n    <cell>0.014<\/cell>\n    <cell>0.96<\/cell>\n    <cell>.340<\/cell>\n    <cell>496.4<\/cell>\n  <\/row>\n  <row>\n    <cell>Z 2V<\/cell>\n    <cell>δ  2<\/cell>\n    <cell>0.029<\/cell>\n    <cell>0.280<\/cell>\n    <cell>[-0.000, 0.058]<\/cell>\n    <cell>0.014<\/cell>\n    <cell>2.00<\/cell>\n    <cell>.050<\/cell>\n    <cell>496.4<\/cell>\n  <\/row>\n  <row>\n    <cell>Constant effects<\/cell>\n    <cell/>\n    <cell/>\n    <cell/>\n    <cell/>\n    <cell/>\n    <cell/>\n    <cell/>\n    <cell/>\n  <\/row>\n  <row>\n    <cell>Z 1V + Z 2V<\/cell>\n    <cell>δ <\/cell>\n    <cell>0.021<\/cell>\n    <cell>0.358<\/cell>\n    <cell>[0.007, 0.034]<\/cell>\n    <cell>0.007<\/cell>\n    <cell>3.06<\/cell>\n    <cell>.003<\/cell>\n    <cell>494.7<\/cell>\n  <\/row>\n  <row>\n    <cell>Earlier input is sufficient<\/cell>\n    <cell/>\n    <cell/>\n    <cell/>\n    <cell/>\n    <cell/>\n    <cell/>\n    <cell/>\n    <cell/>\n  <\/row>\n  <row>\n    <cell>Z 1V<\/cell>\n    <cell>δ  1<\/cell>\n    <cell>0.027<\/cell>\n    <cell>0.255<\/cell>\n    <cell>[0.004, 0.051]<\/cell>\n    <cell>0.012<\/cell>\n    <cell>2.30<\/cell>\n    <cell>.025<\/cell>\n    <cell>498.6<\/cell>\n  <\/row>\n  <row>\n    <cell>Later input is sufficient<\/cell>\n    <cell/>\n    <cell/>\n    <cell/>\n    <cell/>\n    <cell/>\n    <cell/>\n    <cell/>\n    <cell/>\n  <\/row>\n  <row>\n    <cell>Z 2V<\/cell>\n    <cell>δ  2<\/cell>\n    <cell>0.036<\/cell>\n    <cell>0.347<\/cell>\n    <cell>[0.011, 0.061]<\/cell>\n    <cell>0.012<\/cell>\n    <cell>2.91<\/cell>\n    <cell>.005<\/cell>\n    <cell>495.1<\/cell>\n  <\/row>\n<\/table>",
+      "contents": null,
+      "page_number": null
+    },
+    {
+      "table_id": 3,
+      "section_id": 26,
+      "html": "<table>\n  <row>\n    <cell/>\n    <cell/>\n    <cell>Coefficient<\/cell>\n    <cell/>\n    <cell/>\n    <cell/>\n    <cell/>\n    <cell/>\n  <\/row>\n  <row>\n    <cell cols=\"2\">Model and predictor Effect<\/cell>\n    <cell>estimate<\/cell>\n    <cell>β<\/cell>\n    <cell>95% CI<\/cell>\n    <cell>SE<\/cell>\n    <cell>t ratio<\/cell>\n    <cell>Nominal p<\/cell>\n  <\/row>\n  <row>\n    <cell>Differing effects<\/cell>\n    <cell/>\n    <cell/>\n    <cell/>\n    <cell/>\n    <cell/>\n    <cell/>\n    <cell/>\n  <\/row>\n  <row>\n    <cell>Z 1V<\/cell>\n    <cell>δ  1<\/cell>\n    <cell>-0.24<\/cell>\n    <cell>-0.336<\/cell>\n    <cell>[-0.44, -0.03]<\/cell>\n    <cell>0.10<\/cell>\n    <cell>-2.36<\/cell>\n    <cell>.024<\/cell>\n  <\/row>\n  <row>\n    <cell>Z 2V<\/cell>\n    <cell>δ  2<\/cell>\n    <cell>0.22<\/cell>\n    <cell>0.446<\/cell>\n    <cell>[0.05, 0.38]<\/cell>\n    <cell>0.08<\/cell>\n    <cell>2.69<\/cell>\n    <cell>.014<\/cell>\n  <\/row>\n<\/table>",
+      "contents": null,
+      "page_number": null
+    }
+  ],
+  "eq": [
+    {
+      "text_id": 85,
+      "grp_id": 1,
+      "lhs": "r",
+      "comp": "=",
+      "rhs": ".78"
+    },
+    {
+      "text_id": 85,
+      "grp_id": 1,
+      "lhs": "interval (CI)",
+      "comp": "=",
+      "rhs": "[.66, .86]"
+    },
+    {
+      "text_id": 85,
+      "grp_id": 1,
+      "lhs": "p",
+      "comp": "<",
+      "rhs": ".01"
+    },
+    {
+      "text_id": 93,
+      "grp_id": 2,
+      "lhs": "r",
+      "comp": "=",
+      "rhs": ".89"
+    },
+    {
+      "text_id": 93,
+      "grp_id": 2,
+      "lhs": "95% CI",
+      "comp": "=",
+      "rhs": "[.82, .93]"
+    },
+    {
+      "text_id": 93,
+      "grp_id": 2,
+      "lhs": "r",
+      "comp": "=",
+      "rhs": ".91"
+    },
+    {
+      "text_id": 93,
+      "grp_id": 2,
+      "lhs": "95% CI",
+      "comp": "=",
+      "rhs": "[.85, .94]"
+    },
+    {
+      "text_id": 103,
+      "grp_id": 3,
+      "lhs": "r",
+      "comp": "=",
+      "rhs": ".998"
+    },
+    {
+      "text_id": 112,
+      "grp_id": 4,
+      "lhs": "age",
+      "comp": "=",
+      "rhs": "74"
+    },
+    {
+      "text_id": 143,
+      "grp_id": 5,
+      "lhs": "1",
+      "comp": ">",
+      "rhs": "0"
+    },
+    {
+      "text_id": 143,
+      "grp_id": 5,
+      "lhs": "2",
+      "comp": "=",
+      "rhs": "0"
+    },
+    {
+      "text_id": 144,
+      "grp_id": 6,
+      "lhs": "1",
+      "comp": "=",
+      "rhs": "0"
+    },
+    {
+      "text_id": 144,
+      "grp_id": 6,
+      "lhs": "2",
+      "comp": ">",
+      "rhs": "0"
+    },
+    {
+      "text_id": 170,
+      "grp_id": 7,
+      "lhs": "95% CI",
+      "comp": "=",
+      "rhs": "[0.004, 0.052]"
+    },
+    {
+      "text_id": 170,
+      "grp_id": 7,
+      "lhs": "p",
+      "comp": "=",
+      "rhs": ".023"
+    },
+    {
+      "text_id": 174,
+      "grp_id": 8,
+      "lhs": "95% CI",
+      "comp": "=",
+      "rhs": "[.41, .74]"
+    },
+    {
+      "text_id": 177,
+      "grp_id": 9,
+      "lhs": "95% CI",
+      "comp": "=",
+      "rhs": "[-0.014, 0.041]"
+    },
+    {
+      "text_id": 177,
+      "grp_id": 9,
+      "lhs": "p",
+      "comp": "=",
+      "rhs": ".340"
+    },
+    {
+      "text_id": 177,
+      "grp_id": 9,
+      "lhs": "95% CI",
+      "comp": "=",
+      "rhs": "[-0.000, 0.058]"
+    },
+    {
+      "text_id": 177,
+      "grp_id": 9,
+      "lhs": "p",
+      "comp": "=",
+      "rhs": ".050"
+    },
+    {
+      "text_id": 178,
+      "grp_id": 10,
+      "lhs": "95% CI",
+      "comp": "=",
+      "rhs": "[-0.031, 0.065]"
+    },
+    {
+      "text_id": 183,
+      "grp_id": 11,
+      "lhs": "95% CI",
+      "comp": "=",
+      "rhs": "[0.007, 0.034]"
+    },
+    {
+      "text_id": 183,
+      "grp_id": 11,
+      "lhs": "p",
+      "comp": "=",
+      "rhs": ".003"
+    },
+    {
+      "text_id": 191,
+      "grp_id": 12,
+      "lhs": "95% CI",
+      "comp": "=",
+      "rhs": "[0.004, 0.051]"
+    },
+    {
+      "text_id": 191,
+      "grp_id": 12,
+      "lhs": "p",
+      "comp": "=",
+      "rhs": ".025"
+    },
+    {
+      "text_id": 194,
+      "grp_id": 13,
+      "lhs": "95% CI",
+      "comp": "=",
+      "rhs": "[0.011, 0.061]"
+    },
+    {
+      "text_id": 194,
+      "grp_id": 13,
+      "lhs": "p",
+      "comp": "=",
+      "rhs": ".005"
+    },
+    {
+      "text_id": 206,
+      "grp_id": 14,
+      "lhs": "95% CI",
+      "comp": "=",
+      "rhs": "[-0.23, 0.18]"
+    },
+    {
+      "text_id": 206,
+      "grp_id": 14,
+      "lhs": "p",
+      "comp": "=",
+      "rhs": ".792"
+    },
+    {
+      "text_id": 209,
+      "grp_id": 15,
+      "lhs": "r",
+      "comp": "=",
+      "rhs": ".37"
+    },
+    {
+      "text_id": 209,
+      "grp_id": 15,
+      "lhs": "95% CI",
+      "comp": "=",
+      "rhs": "[.13, .57]"
+    },
+    {
+      "text_id": 209,
+      "grp_id": 15,
+      "lhs": "r",
+      "comp": "=",
+      "rhs": ".60"
+    },
+    {
+      "text_id": 209,
+      "grp_id": 15,
+      "lhs": "95% CI",
+      "comp": "=",
+      "rhs": "[.41, .74]"
+    },
+    {
+      "text_id": 213,
+      "grp_id": 16,
+      "lhs": "95% CI",
+      "comp": "=",
+      "rhs": "[-0.44, -0.03]"
+    },
+    {
+      "text_id": 213,
+      "grp_id": 16,
+      "lhs": "p",
+      "comp": "=",
+      "rhs": ".024"
+    },
+    {
+      "text_id": 213,
+      "grp_id": 16,
+      "lhs": "95% CI",
+      "comp": "=",
+      "rhs": "[0.05, 0.38]"
+    },
+    {
+      "text_id": 213,
+      "grp_id": 16,
+      "lhs": "p",
+      "comp": "=",
+      "rhs": ".014"
+    },
+    {
+      "text_id": 216,
+      "grp_id": 17,
+      "lhs": "-",
+      "comp": "=",
+      "rhs": "0.045"
+    },
+    {
+      "text_id": 216,
+      "grp_id": 17,
+      "lhs": "95% CI",
+      "comp": "=",
+      "rhs": "[0.19, 0.71]"
+    },
+    {
+      "text_id": 97,
+      "grp_id": 18,
+      "lhs": "r",
+      "comp": "<",
+      "rhs": ".78"
+    }
+  ],
+  "bib_match": [
+    {
+      "bib_id": 0,
+      "service": "crossref",
+      "service_id": null,
+      "score": 82.86,
+      "bib_type": "article",
+      "doi": "10.1017/s0305000998003456",
+      "title": "Sources of child vocabulary competence: \na multivariate model",
+      "authors": [
+        {
+          "given": "MARC H.",
+          "family": "BORNSTEIN"
+        },
+        {
+          "given": "MAURICE O.",
+          "family": "HAYNES"
+        },
+        {
+          "given": "KATHLEEN M.",
+          "family": "PAINTER"
+        }
+      ],
+      "editors": [],
+      "publisher": "Cambridge University Press (CUP)",
+      "year": 1998,
+      "date": null,
+      "container": "Journal of Child Language",
+      "volume": "25",
+      "issue": "2",
+      "first_page": "367",
+      "last_page": "393",
+      "edition": null,
+      "version": null,
+      "url": "https://doi.org/10.1017/s0305000998003456"
+    },
+    {
+      "bib_id": 1,
+      "service": "crossref",
+      "service_id": null,
+      "score": 121.0145,
+      "bib_type": "article",
+      "doi": "10.1073/pnas.1309518110",
+      "title": "Quality of early parent input predicts child vocabulary 3 years later",
+      "authors": [
+        {
+          "given": "Erica A.",
+          "family": "Cartmill"
+        },
+        {
+          "given": "Benjamin F.",
+          "family": "Armstrong"
+        },
+        {
+          "given": "Lila R.",
+          "family": "Gleitman"
+        },
+        {
+          "given": "Susan",
+          "family": "Goldin-Meadow"
+        },
+        {
+          "given": "Tamara N.",
+          "family": "Medina"
+        },
+        {
+          "given": "John C.",
+          "family": "Trueswell"
+        }
+      ],
+      "editors": [],
+      "publisher": "Proceedings of the National Academy of Sciences",
+      "year": 2013,
+      "date": null,
+      "container": "Proceedings of the National Academy of Sciences",
+      "volume": "110",
+      "issue": "28",
+      "first_page": "11278",
+      "last_page": "11283",
+      "edition": null,
+      "version": null,
+      "url": "https://doi.org/10.1073/pnas.1309518110"
+    },
+    {
+      "bib_id": 2,
+      "service": "crossref",
+      "service_id": null,
+      "score": 89.6349,
+      "bib_type": "article",
+      "doi": "10.1111/cdev.13349",
+      "title": "Early Language Experience in a Tseltal Mayan Village",
+      "authors": [
+        {
+          "given": "Marisa",
+          "family": "Casillas"
+        },
+        {
+          "given": "Penelope",
+          "family": "Brown"
+        },
+        {
+          "given": "Stephen C",
+          "family": "Levinson"
+        }
+      ],
+      "editors": [],
+      "publisher": "Oxford University Press (OUP)",
+      "year": 2020,
+      "date": null,
+      "container": "Child Development",
+      "volume": "91",
+      "issue": "5",
+      "first_page": "1819",
+      "last_page": "1835",
+      "edition": null,
+      "version": null,
+      "url": "https://doi.org/10.1111/cdev.13349"
+    },
+    {
+      "bib_id": 3,
+      "service": "crossref",
+      "service_id": null,
+      "score": 101.9629,
+      "bib_type": "article",
+      "doi": "10.1016/j.dr.2020.100914",
+      "title": "Language input and outcome variation as a test of theory plausibility: The case of early phonological acquisition",
+      "authors": [
+        {
+          "given": "Alejandrina",
+          "family": "Cristia"
+        }
+      ],
+      "editors": [],
+      "publisher": "Elsevier BV",
+      "year": 2020,
+      "date": null,
+      "container": "Developmental Review",
+      "volume": "57",
+      "issue": null,
+      "first_page": "100914",
+      "last_page": null,
+      "edition": null,
+      "version": null,
+      "url": "https://doi.org/10.1016/j.dr.2020.100914"
+    },
+    {
+      "bib_id": 4,
+      "service": "crossref",
+      "service_id": null,
+      "score": 113.2307,
+      "bib_type": "article",
+      "doi": "10.3389/fpsyg.2017.01515",
+      "title": "Psychometric Properties of Language Assessments for Children Aged 4–12 Years: A Systematic Review",
+      "authors": [
+        {
+          "given": "Deborah",
+          "family": "Denman"
+        },
+        {
+          "given": "Renée",
+          "family": "Speyer"
+        },
+        {
+          "given": "Natalie",
+          "family": "Munro"
+        },
+        {
+          "given": "Wendy M.",
+          "family": "Pearce"
+        },
+        {
+          "given": "Yu-Wei",
+          "family": "Chen"
+        },
+        {
+          "given": "Reinie",
+          "family": "Cordier"
+        }
+      ],
+      "editors": [],
+      "publisher": "Frontiers Media SA",
+      "year": 2017,
+      "date": null,
+      "container": "Frontiers in Psychology",
+      "volume": "8",
+      "issue": null,
+      "first_page": null,
+      "last_page": null,
+      "edition": null,
+      "version": null,
+      "url": "https://doi.org/10.3389/fpsyg.2017.01515"
+    },
+    {
+      "bib_id": 5,
+      "service": "crossref",
+      "service_id": null,
+      "score": 117.8262,
+      "bib_type": "article",
+      "doi": "10.1037/0012-1649.43.6.1428",
+      "title": "School readiness and later achievement.",
+      "authors": [
+        {
+          "given": "Greg J.",
+          "family": "Duncan"
+        },
+        {
+          "given": "Chantelle J.",
+          "family": "Dowsett"
+        },
+        {
+          "given": "Amy",
+          "family": "Claessens"
+        },
+        {
+          "given": "Katherine",
+          "family": "Magnuson"
+        },
+        {
+          "given": "Aletha C.",
+          "family": "Huston"
+        },
+        {
+          "given": "Pamela",
+          "family": "Klebanov"
+        },
+        {
+          "given": "Linda S.",
+          "family": "Pagani"
+        },
+        {
+          "given": "Leon",
+          "family": "Feinstein"
+        },
+        {
+          "given": "Mimi",
+          "family": "Engel"
+        },
+        {
+          "given": "Jeanne",
+          "family": "Brooks-Gunn"
+        },
+        {
+          "given": "Holly",
+          "family": "Sexton"
+        },
+        {
+          "given": "Kathryn",
+          "family": "Duckworth"
+        },
+        {
+          "given": "Crista",
+          "family": "Japel"
+        }
+      ],
+      "editors": [],
+      "publisher": "American Psychological Association (APA)",
+      "year": 2007,
+      "date": null,
+      "container": "Developmental Psychology",
+      "volume": "43",
+      "issue": "6",
+      "first_page": "1428",
+      "last_page": "1446",
+      "edition": null,
+      "version": null,
+      "url": "https://doi.org/10.1037/0012-1649.43.6.1428"
+    },
+    {
+      "bib_id": 7,
+      "service": "crossref",
+      "service_id": null,
+      "score": 92.6956,
+      "bib_type": "article",
+      "doi": "10.1017/s0305000900005584",
+      "title": "The current status of the motherese hypothesis",
+      "authors": [
+        {
+          "given": "Lila R.",
+          "family": "Gleitman"
+        },
+        {
+          "given": "Elissa L.",
+          "family": "Newport"
+        },
+        {
+          "given": "Henry",
+          "family": "Gleitman"
+        }
+      ],
+      "editors": [],
+      "publisher": "Cambridge University Press (CUP)",
+      "year": 1984,
+      "date": null,
+      "container": "Journal of Child Language",
+      "volume": "11",
+      "issue": "1",
+      "first_page": "43",
+      "last_page": "79",
+      "edition": null,
+      "version": null,
+      "url": "https://doi.org/10.1017/s0305000900005584"
+    },
+    {
+      "bib_id": 8,
+      "service": "crossref",
+      "service_id": null,
+      "score": 85.3882,
+      "bib_type": "article",
+      "doi": "10.1111/cdep.12379",
+      "title": "Discovering the Biases Children Bring to Language Learning",
+      "authors": [
+        {
+          "given": "Susan",
+          "family": "Goldin-Meadow"
+        }
+      ],
+      "editors": [],
+      "publisher": "Oxford University Press (OUP)",
+      "year": 2020,
+      "date": null,
+      "container": "Child Development Perspectives",
+      "volume": "14",
+      "issue": "4",
+      "first_page": "195",
+      "last_page": "201",
+      "edition": null,
+      "version": null,
+      "url": "https://doi.org/10.1111/cdep.12379"
+    },
+    {
+      "bib_id": 9,
+      "service": "crossref",
+      "service_id": null,
+      "score": 123.8316,
+      "bib_type": "article",
+      "doi": "10.1037/a0036886",
+      "title": "New evidence about language and cognitive development based on a longitudinal study: Hypotheses for intervention.",
+      "authors": [
+        {
+          "given": "Susan",
+          "family": "Goldin-Meadow"
+        },
+        {
+          "given": "Susan C.",
+          "family": "Levine"
+        },
+        {
+          "given": "Larry V.",
+          "family": "Hedges"
+        },
+        {
+          "given": "Janellen",
+          "family": "Huttenlocher"
+        },
+        {
+          "given": "Stephen W.",
+          "family": "Raudenbush"
+        },
+        {
+          "given": "Steven L.",
+          "family": "Small"
+        }
+      ],
+      "editors": [],
+      "publisher": "American Psychological Association (APA)",
+      "year": 2014,
+      "date": null,
+      "container": "American Psychologist",
+      "volume": "69",
+      "issue": "6",
+      "first_page": "588",
+      "last_page": "599",
+      "edition": null,
+      "version": null,
+      "url": "https://doi.org/10.1037/a0036886"
+    },
+    {
+      "bib_id": 10,
+      "service": "crossref",
+      "service_id": null,
+      "score": 100.5358,
+      "bib_type": "article",
+      "doi": "10.1038/34646",
+      "title": "Spontaneous sign systems created by deaf children in two cultures",
+      "authors": [
+        {
+          "given": "Susan",
+          "family": "Goldin-Meadow"
+        },
+        {
+          "given": "Carolyn",
+          "family": "Mylander"
+        }
+      ],
+      "editors": [],
+      "publisher": "Springer Science and Business Media LLC",
+      "year": 1998,
+      "date": null,
+      "container": "Nature",
+      "volume": "391",
+      "issue": "6664",
+      "first_page": "279",
+      "last_page": "281",
+      "edition": null,
+      "version": null,
+      "url": "https://doi.org/10.1038/34646"
+    },
+    {
+      "bib_id": 11,
+      "service": "crossref",
+      "service_id": null,
+      "score": 89.5691,
+      "bib_type": "article",
+      "doi": "10.1016/s0010-0277(99)00003-7",
+      "title": "Artificial grammar learning by 1-year-olds leads to specific and abstract knowledge",
+      "authors": [
+        {
+          "given": "Rebecca L",
+          "family": "Gomez"
+        },
+        {
+          "given": "LouAnn",
+          "family": "Gerken"
+        }
+      ],
+      "editors": [],
+      "publisher": "Elsevier BV",
+      "year": 1999,
+      "date": null,
+      "container": "Cognition",
+      "volume": "70",
+      "issue": "2",
+      "first_page": "109",
+      "last_page": "135",
+      "edition": null,
+      "version": null,
+      "url": "https://doi.org/10.1016/s0010-0277(99)00003-7"
+    },
+    {
+      "bib_id": 14,
+      "service": "crossref",
+      "service_id": null,
+      "score": 100.6225,
+      "bib_type": "article",
+      "doi": "10.1111/1467-8624.00612",
+      "title": "The Specificity of Environmental Influence: Socioeconomic Status Affects Early Vocabulary Development Via Maternal Speech",
+      "authors": [
+        {
+          "given": "Erika",
+          "family": "Hoff"
+        }
+      ],
+      "editors": [],
+      "publisher": "Oxford University Press (OUP)",
+      "year": 2003,
+      "date": null,
+      "container": "Child Development",
+      "volume": "74",
+      "issue": "5",
+      "first_page": "1368",
+      "last_page": "1378",
+      "edition": null,
+      "version": null,
+      "url": "https://doi.org/10.1111/1467-8624.00612"
+    },
+    {
+      "bib_id": 15,
+      "service": "crossref",
+      "service_id": null,
+      "score": 124.8089,
+      "bib_type": "article",
+      "doi": "10.1037/a0027238",
+      "title": "Interpreting the early language trajectories of children from low-SES and language minority homes: Implications for closing achievement gaps.",
+      "authors": [
+        {
+          "given": "Erika",
+          "family": "Hoff"
+        }
+      ],
+      "editors": [],
+      "publisher": "American Psychological Association (APA)",
+      "year": 2013,
+      "date": null,
+      "container": "Developmental Psychology",
+      "volume": "49",
+      "issue": "1",
+      "first_page": "4",
+      "last_page": "14",
+      "edition": null,
+      "version": null,
+      "url": "https://doi.org/10.1037/a0027238"
+    },
+    {
+      "bib_id": 16,
+      "service": "crossref",
+      "service_id": null,
+      "score": 81.6996,
+      "bib_type": "article",
+      "doi": "10.1111/1467-8624.00415",
+      "title": "How Children Use Input to Acquire a Lexicon",
+      "authors": [
+        {
+          "given": "Erika",
+          "family": "Hoff"
+        },
+        {
+          "given": "Letitia",
+          "family": "Naigles"
+        }
+      ],
+      "editors": [],
+      "publisher": "Oxford University Press (OUP)",
+      "year": 2002,
+      "date": null,
+      "container": "Child Development",
+      "volume": "73",
+      "issue": "2",
+      "first_page": "418",
+      "last_page": "433",
+      "edition": null,
+      "version": null,
+      "url": "https://doi.org/10.1111/1467-8624.00415"
+    },
+    {
+      "bib_id": 17,
+      "service": "crossref",
+      "service_id": null,
+      "score": 95.0194,
+      "bib_type": "article",
+      "doi": "10.1017/s0142716400010389",
+      "title": "The relation of birth order and socioeconomic status to children's language experience and language development",
+      "authors": [
+        {
+          "given": "Erika",
+          "family": "Hoff-Ginsberg"
+        }
+      ],
+      "editors": [],
+      "publisher": "Cambridge University Press (CUP)",
+      "year": 1998,
+      "date": null,
+      "container": "Applied Psycholinguistics",
+      "volume": "19",
+      "issue": "4",
+      "first_page": "603",
+      "last_page": "629",
+      "edition": null,
+      "version": null,
+      "url": "https://doi.org/10.1017/s0142716400010389"
+    },
+    {
+      "bib_id": 18,
+      "service": "crossref",
+      "service_id": null,
+      "score": 111.9274,
+      "bib_type": "article",
+      "doi": "10.1037/0012-1649.27.2.236",
+      "title": "Early vocabulary growth: Relation to language input and gender.",
+      "authors": [
+        {
+          "given": "Janellen",
+          "family": "Huttenlocher"
+        },
+        {
+          "given": "Wendy",
+          "family": "Haight"
+        },
+        {
+          "given": "Anthony",
+          "family": "Bryk"
+        },
+        {
+          "given": "Michael",
+          "family": "Seltzer"
+        },
+        {
+          "given": "Thomas",
+          "family": "Lyons"
+        }
+      ],
+      "editors": [],
+      "publisher": "American Psychological Association (APA)",
+      "year": 1991,
+      "date": null,
+      "container": "Developmental Psychology",
+      "volume": "27",
+      "issue": "2",
+      "first_page": "236",
+      "last_page": "248",
+      "edition": null,
+      "version": null,
+      "url": "https://doi.org/10.1037/0012-1649.27.2.236"
+    },
+    {
+      "bib_id": 19,
+      "service": "crossref",
+      "service_id": null,
+      "score": 92.6067,
+      "bib_type": "article",
+      "doi": "10.1016/s0010-0285(02)00500-5",
+      "title": "Language input and child syntax",
+      "authors": [
+        {
+          "given": "Janellen",
+          "family": "Huttenlocher"
+        },
+        {
+          "given": "Marina",
+          "family": "Vasilyeva"
+        },
+        {
+          "given": "Elina",
+          "family": "Cymerman"
+        },
+        {
+          "given": "Susan",
+          "family": "Levine"
+        }
+      ],
+      "editors": [],
+      "publisher": "Elsevier BV",
+      "year": 2002,
+      "date": null,
+      "container": "Cognitive Psychology",
+      "volume": "45",
+      "issue": "3",
+      "first_page": "337",
+      "last_page": "374",
+      "edition": null,
+      "version": null,
+      "url": "https://doi.org/10.1016/s0010-0285(02)00500-5"
+    },
+    {
+      "bib_id": 20,
+      "service": "crossref",
+      "service_id": null,
+      "score": 73.3841,
+      "bib_type": "inproceedings",
+      "doi": "10.18653/v1/w16-1910",
+      "title": "Explicit Causal Connections between the Acquisition of Linguistic\n            Tiers: Evidence from Dynamical Systems Modeling",
+      "authors": [
+        {
+          "given": "Daniel",
+          "family": "Spokoyny"
+        },
+        {
+          "given": "Jeremy",
+          "family": "Irvin"
+        },
+        {
+          "given": "Fermin",
+          "family": "Moscoso del Prado Martin"
+        }
+      ],
+      "editors": [],
+      "publisher": "Association for Computational Linguistics",
+      "year": 2016,
+      "date": null,
+      "container": "Proceedings of the 7th Workshop on Cognitive Aspects of Computational\n          Language Learning",
+      "volume": null,
+      "issue": null,
+      "first_page": "73",
+      "last_page": "81",
+      "edition": null,
+      "version": null,
+      "url": "https://doi.org/10.18653/v1/w16-1910"
+    },
+    {
+      "bib_id": 21,
+      "service": "crossref",
+      "service_id": null,
+      "score": 148.2809,
+      "bib_type": "article",
+      "doi": "10.1111/desc.12202",
+      "title": "Sentence repetition is a measure of children's language skills rather than working memory limitations",
+      "authors": [
+        {
+          "given": "Marianne",
+          "family": "Klem"
+        },
+        {
+          "given": "Monica",
+          "family": "Melby‐Lervåg"
+        },
+        {
+          "given": "Bente",
+          "family": "Hagtvet"
+        },
+        {
+          "given": "Solveig‐Alma Halaas",
+          "family": "Lyster"
+        },
+        {
+          "given": "Jan‐Eric",
+          "family": "Gustafsson"
+        },
+        {
+          "given": "Charles",
+          "family": "Hulme"
+        }
+      ],
+      "editors": [],
+      "publisher": "Wiley",
+      "year": 2014,
+      "date": null,
+      "container": "Developmental Science",
+      "volume": "18",
+      "issue": "1",
+      "first_page": "146",
+      "last_page": "154",
+      "edition": null,
+      "version": null,
+      "url": "https://doi.org/10.1111/desc.12202"
+    },
+    {
+      "bib_id": 22,
+      "service": "crossref",
+      "service_id": null,
+      "score": 71.3375,
+      "bib_type": "article",
+      "doi": "10.1126/science.1141493",
+      "title": "Explaining the Relation Between Birth Order and Intelligence",
+      "authors": [
+        {
+          "given": "Petter",
+          "family": "Kristensen"
+        },
+        {
+          "given": "Tor",
+          "family": "Bjerkedal"
+        }
+      ],
+      "editors": [],
+      "publisher": "American Association for the Advancement of Science (AAAS)",
+      "year": 2007,
+      "date": null,
+      "container": "Science",
+      "volume": "316",
+      "issue": "5832",
+      "first_page": "1717",
+      "last_page": "1717",
+      "edition": null,
+      "version": null,
+      "url": "https://doi.org/10.1126/science.1141493"
+    },
+    {
+      "bib_id": 23,
+      "service": "crossref",
+      "service_id": null,
+      "score": 75.7957,
+      "bib_type": "article",
+      "doi": "10.1017/s0305000900013817",
+      "title": "Children use syntax to learn verb meanings",
+      "authors": [
+        {
+          "given": "Letitia",
+          "family": "Naigles"
+        }
+      ],
+      "editors": [],
+      "publisher": "Cambridge University Press (CUP)",
+      "year": 1990,
+      "date": null,
+      "container": "Journal of Child Language",
+      "volume": "17",
+      "issue": "2",
+      "first_page": "357",
+      "last_page": "374",
+      "edition": null,
+      "version": null,
+      "url": "https://doi.org/10.1017/s0305000900013817"
+    },
+    {
+      "bib_id": 26,
+      "service": "crossref",
+      "service_id": null,
+      "score": 113.8598,
+      "bib_type": "article",
+      "doi": "10.1037/a0018881",
+      "title": "School readiness and later achievement: A French Canadian replication and extension.",
+      "authors": [
+        {
+          "given": "Linda S.",
+          "family": "Pagani"
+        },
+        {
+          "given": "Caroline",
+          "family": "Fitzpatrick"
+        },
+        {
+          "given": "Isabelle",
+          "family": "Archambault"
+        },
+        {
+          "given": "Michel",
+          "family": "Janosz"
+        }
+      ],
+      "editors": [],
+      "publisher": "American Psychological Association (APA)",
+      "year": 2010,
+      "date": null,
+      "container": "Developmental Psychology",
+      "volume": "46",
+      "issue": "5",
+      "first_page": "984",
+      "last_page": "994",
+      "edition": null,
+      "version": null,
+      "url": "https://doi.org/10.1037/a0018881"
+    },
+    {
+      "bib_id": 27,
+      "service": "crossref",
+      "service_id": null,
+      "score": 153.3074,
+      "bib_type": "article",
+      "doi": "10.1177/0142723705059114",
+      "title": "A comparative study between mean length of utterance in morphemes (MLUm) and                 mean length of utterance in words (MLUw)",
+      "authors": [
+        {
+          "given": "Matthew D.",
+          "family": "Parker"
+        },
+        {
+          "given": "Kent",
+          "family": "Brorson"
+        }
+      ],
+      "editors": [],
+      "publisher": "SAGE Publications",
+      "year": 2005,
+      "date": null,
+      "container": "First Language",
+      "volume": "25",
+      "issue": "3",
+      "first_page": "365",
+      "last_page": "376",
+      "edition": null,
+      "version": null,
+      "url": "https://doi.org/10.1177/0142723705059114"
+    },
+    {
+      "bib_id": 28,
+      "service": "crossref",
+      "service_id": null,
+      "score": 92.787,
+      "bib_type": "article",
+      "doi": "10.1097/00001648-200009000-00011",
+      "title": "Marginal Structural Models and Causal Inference in Epidemiology",
+      "authors": [
+        {
+          "given": "James M.",
+          "family": "Robins"
+        },
+        {
+          "given": "Miguel Ángel",
+          "family": "Hernán"
+        },
+        {
+          "given": "Babette",
+          "family": "Brumback"
+        }
+      ],
+      "editors": [],
+      "publisher": "Ovid Technologies (Wolters Kluwer Health)",
+      "year": 2000,
+      "date": null,
+      "container": "Epidemiology",
+      "volume": "11",
+      "issue": "5",
+      "first_page": "550",
+      "last_page": "560",
+      "edition": null,
+      "version": null,
+      "url": "https://doi.org/10.1097/00001648-200009000-00011"
+    },
+    {
+      "bib_id": 29,
+      "service": "crossref",
+      "service_id": null,
+      "score": 111.1666,
+      "bib_type": "article",
+      "doi": "10.1126/science.1167025",
+      "title": "Differences in Early Gesture Explain SES Disparities in Child Vocabulary Size at School Entry",
+      "authors": [
+        {
+          "given": "Meredith L.",
+          "family": "Rowe"
+        },
+        {
+          "given": "Susan",
+          "family": "Goldin-Meadow"
+        }
+      ],
+      "editors": [],
+      "publisher": "American Association for the Advancement of Science (AAAS)",
+      "year": 2009,
+      "date": null,
+      "container": "Science",
+      "volume": "323",
+      "issue": "5916",
+      "first_page": "951",
+      "last_page": "953",
+      "edition": null,
+      "version": null,
+      "url": "https://doi.org/10.1126/science.1167025"
+    },
+    {
+      "bib_id": 30,
+      "service": "crossref",
+      "service_id": null,
+      "score": 121.5786,
+      "bib_type": "article",
+      "doi": "10.1037/a0012848",
+      "title": "Does linguistic input play the same role in language learning for children with and without early brain injury?",
+      "authors": [
+        {
+          "given": "Meredith L.",
+          "family": "Rowe"
+        },
+        {
+          "given": "Susan C.",
+          "family": "Levine"
+        },
+        {
+          "given": "Joan A.",
+          "family": "Fisher"
+        },
+        {
+          "given": "Susan",
+          "family": "Goldin-Meadow"
+        }
+      ],
+      "editors": [],
+      "publisher": "American Psychological Association (APA)",
+      "year": 2009,
+      "date": null,
+      "container": "Developmental Psychology",
+      "volume": "45",
+      "issue": "1",
+      "first_page": "90",
+      "last_page": "102",
+      "edition": null,
+      "version": null,
+      "url": "https://doi.org/10.1037/a0012848"
+    },
+    {
+      "bib_id": 32,
+      "service": "crossref",
+      "service_id": null,
+      "score": 107.4404,
+      "bib_type": "article",
+      "doi": "10.1017/s0305000900008163",
+      "title": "Mother, I'd still rather do it myself: some further non-effects of ‘motherese’",
+      "authors": [
+        {
+          "given": "Hollis",
+          "family": "Scarborough"
+        },
+        {
+          "given": "Janet",
+          "family": "Wyckoff"
+        }
+      ],
+      "editors": [],
+      "publisher": "Cambridge University Press (CUP)",
+      "year": 1986,
+      "date": null,
+      "container": "Journal of Child Language",
+      "volume": "13",
+      "issue": "2",
+      "first_page": "431",
+      "last_page": "437",
+      "edition": null,
+      "version": null,
+      "url": "https://doi.org/10.1017/s0305000900008163"
+    },
+    {
+      "bib_id": 34,
+      "service": "crossref",
+      "service_id": null,
+      "score": 100.5368,
+      "bib_type": "misc",
+      "doi": "10.32614/cran.package.mice",
+      "title": "mice: Multivariate Imputation by Chained Equations",
+      "authors": [
+        {
+          "given": "Stef",
+          "family": "van Buuren"
+        },
+        {
+          "given": "Karin",
+          "family": "Groothuis-Oudshoorn"
+        }
+      ],
+      "editors": [],
+      "publisher": "The R Foundation",
+      "year": 2006,
+      "date": null,
+      "container": "CRAN: Contributed Packages",
+      "volume": null,
+      "issue": null,
+      "first_page": null,
+      "last_page": null,
+      "edition": null,
+      "version": null,
+      "url": "https://doi.org/10.32614/cran.package.mice"
+    },
+    {
+      "bib_id": 35,
+      "service": "crossref",
+      "service_id": null,
+      "score": 95.3326,
+      "bib_type": "article",
+      "doi": "10.1111/j.1467-7687.2007.00656.x",
+      "title": "Emergence of syntax: commonalities and differences across children",
+      "authors": [
+        {
+          "given": "Marina",
+          "family": "Vasilyeva"
+        },
+        {
+          "given": "Heidi",
+          "family": "Waterfall"
+        },
+        {
+          "given": "Janellen",
+          "family": "Huttenlocher"
+        }
+      ],
+      "editors": [],
+      "publisher": "Wiley",
+      "year": 2007,
+      "date": null,
+      "container": "Developmental Science",
+      "volume": "11",
+      "issue": "1",
+      "first_page": "84",
+      "last_page": "97",
+      "edition": null,
+      "version": null,
+      "url": "https://doi.org/10.1111/j.1467-7687.2007.00656.x"
+    },
+    {
+      "bib_id": 38,
+      "service": "crossref",
+      "service_id": null,
+      "score": 94.7045,
+      "bib_type": "article",
+      "doi": "10.1037/0012-1649.37.2.265",
+      "title": "Lexical output as related to children's vocabulary acquisition: Effects of sophisticated exposure and support for meaning.",
+      "authors": [
+        {
+          "given": "Zehava Oz",
+          "family": "Weizman"
+        },
+        {
+          "given": "Catherine E.",
+          "family": "Snow"
+        }
+      ],
+      "editors": [],
+      "publisher": "American Psychological Association (APA)",
+      "year": 2001,
+      "date": null,
+      "container": "Developmental Psychology",
+      "volume": "37",
+      "issue": "2",
+      "first_page": "265",
+      "last_page": "279",
+      "edition": null,
+      "version": null,
+      "url": "https://doi.org/10.1037/0012-1649.37.2.265"
+    },
+    {
+      "bib_id": 39,
+      "service": "crossref",
+      "service_id": null,
+      "score": 67.8078,
+      "bib_type": "article",
+      "doi": "10.1002/pam.20310",
+      "title": "An effectiveness‐based evaluation of five state pre‐kindergarten programs",
+      "authors": [
+        {
+          "given": "Vivian C.",
+          "family": "Wong"
+        },
+        {
+          "given": "Thomas D.",
+          "family": "Cook"
+        },
+        {
+          "given": "W. Steven",
+          "family": "Barnett"
+        },
+        {
+          "given": "Kwanghee",
+          "family": "Jung"
+        }
+      ],
+      "editors": [],
+      "publisher": "Wiley",
+      "year": 2007,
+      "date": null,
+      "container": "Journal of Policy Analysis and Management",
+      "volume": "27",
+      "issue": "1",
+      "first_page": "122",
+      "last_page": "154",
+      "edition": null,
+      "version": null,
+      "url": "https://doi.org/10.1002/pam.20310"
+    }
+  ]
+}

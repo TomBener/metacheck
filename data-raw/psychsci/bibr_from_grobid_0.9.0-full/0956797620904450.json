@@ -1,0 +1,3862 @@
+{
+  "paper_id": "0956797620904450",
+  "info": [
+    {
+      "title": "Comparison of Adopted and Nonadopted Individuals Reveals Gene–Environment Interplay for Education in the UK Biobank",
+      "keywords": ["educational attainment", "polygenic scores", "gene-environment interplay", "adoption"],
+      "doi": "10.1177/0956797620904450",
+      "file_hash": "acbc6741931e7830",
+      "input_format": "grobid 0.9.0",
+      "file_name": "data-raw/psychsci/grobid_0.9.0-full/0956797620904450.xml",
+      "bibr_version": "10.0",
+      "paper_type": "unknown",
+      "paper_type_confidence": 0,
+      "oecd_l1": null,
+      "oecd_l2": null,
+      "oecd_confidence": null
+    }
+  ],
+  "author": [
+    {
+      "author_id": 1,
+      "given": "Rosa",
+      "family": "Cheesman",
+      "affiliation": "Social, Genetic & Developmental Psychiatry Centre Institute of Psychiatry, Psychology & Neuroscience King's College London",
+      "email": "",
+      "corresponding": false,
+      "orcid": "0000-0002-6543-0402",
+      "role": []
+    },
+    {
+      "author_id": 2,
+      "given": "Avina",
+      "family": "Hunjan",
+      "affiliation": "Social, Genetic & Developmental Psychiatry Centre Institute of Psychiatry, Psychology & Neuroscience King's College London",
+      "email": "",
+      "corresponding": false,
+      "orcid": "",
+      "role": []
+    },
+    {
+      "author_id": 3,
+      "given": "Jonathan",
+      "family": "Coleman",
+      "affiliation": "Social, Genetic & Developmental Psychiatry Centre Institute of Psychiatry, Psychology & Neuroscience King's College London",
+      "email": "",
+      "corresponding": false,
+      "orcid": "",
+      "role": []
+    },
+    {
+      "author_id": 4,
+      "given": "Yasmin",
+      "family": "Ahmadzadeh",
+      "affiliation": "Social, Genetic & Developmental Psychiatry Centre Institute of Psychiatry, Psychology & Neuroscience King's College London",
+      "email": "",
+      "corresponding": false,
+      "orcid": "",
+      "role": []
+    },
+    {
+      "author_id": 5,
+      "given": "Robert",
+      "family": "Plomin",
+      "affiliation": "Social, Genetic & Developmental Psychiatry Centre Institute of Psychiatry, Psychology & Neuroscience King's College London",
+      "email": "",
+      "corresponding": false,
+      "orcid": "",
+      "role": []
+    },
+    {
+      "author_id": 6,
+      "given": "Tom",
+      "family": "Mcadams",
+      "affiliation": "Social, Genetic & Developmental Psychiatry Centre Institute of Psychiatry, Psychology & Neuroscience King's College London",
+      "email": "",
+      "corresponding": false,
+      "orcid": "",
+      "role": []
+    },
+    {
+      "author_id": 7,
+      "given": "Thalia",
+      "family": "Eley",
+      "affiliation": "Social, Genetic & Developmental Psychiatry Centre Institute of Psychiatry, Psychology & Neuroscience King's College London",
+      "email": "thalia.eley@kcl.ac.uk",
+      "corresponding": false,
+      "orcid": "",
+      "role": []
+    },
+    {
+      "author_id": 8,
+      "given": "Gerome",
+      "family": "Breen",
+      "affiliation": "Social, Genetic & Developmental Psychiatry Centre Institute of Psychiatry, Psychology & Neuroscience King's College London",
+      "email": "gerome.breen@kcl.ac.uk",
+      "corresponding": false,
+      "orcid": "",
+      "role": []
+    }
+  ],
+  "text": [
+    {
+      "text_id": 1,
+      "paragraph_id": 1,
+      "section_id": 0,
+      "text": "An important process by which genes and environments work together to influence behavior is geneenvironment correlation (Plomin, DeFries, Knopik, & Neiderhiser, 2016).",
+      "page_number": null
+    },
+    {
+      "text_id": 2,
+      "paragraph_id": 1,
+      "section_id": 0,
+      "text": "Gene-environment correlation refers to the association between the genotype that individuals inherit from their parents and the environment in which they are raised (Plomin, DeFries, & Loehlin, 1977).",
+      "page_number": null
+    },
+    {
+      "text_id": 3,
+      "paragraph_id": 1,
+      "section_id": 0,
+      "text": "Three forms of gene-environment correlation are typically distinguished: passive, active, and evocative.",
+      "page_number": null
+    },
+    {
+      "text_id": 4,
+      "paragraph_id": 1,
+      "section_id": 0,
+      "text": "An example of passive gene-environment correlation is that more educated parents are likely to provide both beneficial genes and educationally supportive family environments, such as books in the home, for their children.",
+      "page_number": null
+    },
+    {
+      "text_id": 5,
+      "paragraph_id": 1,
+      "section_id": 0,
+      "text": "Therefore, shared genes confound associations between putative environmental variables and child attainment.",
+      "page_number": null
+    },
+    {
+      "text_id": 6,
+      "paragraph_id": 1,
+      "section_id": 0,
+      "text": "Active and evocative gene-environment correlations reflect how genotypes lead to phenotypes: Individuals select and evoke environments on the basis of their genetically influenced traits.",
+      "page_number": null
+    },
+    {
+      "text_id": 7,
+      "paragraph_id": 2,
+      "section_id": 0,
+      "text": "It is essential to investigate gene-environment interplay in educational attainment for several reasons.",
+      "page_number": null
+    },
+    {
+      "text_id": 8,
+      "paragraph_id": 2,
+      "section_id": 0,
+      "text": "First, educational attainment is an important trait for individuals 904450P SSXXX10.",
+      "page_number": null
+    },
+    {
+      "text_id": 9,
+      "paragraph_id": 4,
+      "section_id": 1,
+      "text": "and society, partly because of its significance for health and health inequalities.",
+      "page_number": null
+    },
+    {
+      "text_id": 10,
+      "paragraph_id": 4,
+      "section_id": 1,
+      "text": "Second, gene-environment correlation clearly matters for educational attainment.",
+      "page_number": null
+    },
+    {
+      "text_id": 11,
+      "paragraph_id": 4,
+      "section_id": 1,
+      "text": "Adoption, twin, and instrumental-variables research suggest that shared genes largely explain associations between parent and child attainment (Holmlund, Lindahl, & Plug, 2011).",
+      "page_number": null
+    },
+    {
+      "text_id": 12,
+      "paragraph_id": 4,
+      "section_id": 1,
+      "text": "Third, polygenic scores, which index the genetic liability that each individual carries for a specific trait, are notably powerful for educational attainment and now predict approximately 10% of the variation in years of education (Lee et al., 2018), a finding with potential social implications (Plomin & von Stumm, 2018).",
+      "page_number": null
+    },
+    {
+      "text_id": 13,
+      "paragraph_id": 4,
+      "section_id": 1,
+      "text": "However, it has been shown only recently that this prediction includes not only direct genetic effects on an individual's own education but also indirect genetic effects through relatives, that is, predicting the family environment (Bates et al., 2018;Kong et al., 2018).",
+      "page_number": null
+    },
+    {
+      "text_id": 14,
+      "paragraph_id": 5,
+      "section_id": 1,
+      "text": "Behavior-genetic study designs are needed to disentangle causal processes affecting educational attainment.",
+      "page_number": null
+    },
+    {
+      "text_id": 15,
+      "paragraph_id": 5,
+      "section_id": 1,
+      "text": "Adoption studies do this by removing overlapping genetic and environmental influences (passive geneenvironment correlation).",
+      "page_number": null
+    },
+    {
+      "text_id": 16,
+      "paragraph_id": 5,
+      "section_id": 1,
+      "text": "This is achieved by measuring the resemblance of adopted children to their birth parents and to their adoptive parents.",
+      "page_number": null
+    },
+    {
+      "text_id": 17,
+      "paragraph_id": 5,
+      "section_id": 1,
+      "text": "The former gives an estimate of direct genetic influence independent of passively correlated environmental effects.",
+      "page_number": null
+    },
+    {
+      "text_id": 18,
+      "paragraph_id": 5,
+      "section_id": 1,
+      "text": "The latter gives an estimate of shared environmental influence, free of correlated genetic effects.",
+      "page_number": null
+    },
+    {
+      "text_id": 19,
+      "paragraph_id": 5,
+      "section_id": 1,
+      "text": "Passive gene-environment correlation may be estimated as the extent to which genes contribute more to the covariation between measures of the family environment and offspring traits in nonadoptive than adoptive families (Plomin, Loehlin, & DeFries, 1985).",
+      "page_number": null
+    },
+    {
+      "text_id": 20,
+      "paragraph_id": 5,
+      "section_id": 1,
+      "text": "Notably, other forms of gene-environment correlation are still present in adoptees, because heritable proclivities lead them to select and evoke experiences.",
+      "page_number": null
+    },
+    {
+      "text_id": 21,
+      "paragraph_id": 6,
+      "section_id": 1,
+      "text": "More recently, researchers have applied genomic tools to family data to estimate direct and indirect effects on educational attainment (Bates et al., 2018;Domingue, Belsky, Conley, Harris, & Boardman, 2015;Kong et al., 2018;Selzam et al., 2019;Wertz et al., 2018;Young et al., 2018).",
+      "page_number": null
+    },
+    {
+      "text_id": 22,
+      "paragraph_id": 6,
+      "section_id": 1,
+      "text": "These designs are conceptually related to adoption designs, because they account for shared genes between parents and offspring.",
+      "page_number": null
+    },
+    {
+      "text_id": 23,
+      "paragraph_id": 6,
+      "section_id": 1,
+      "text": "For example, genetic variants that were not passed on by parents can have only indirect effects on offspring traits, through genetically influenced parental behavior (Bates et al., 2018;Kong et al., 2018).",
+      "page_number": null
+    },
+    {
+      "text_id": 24,
+      "paragraph_id": 6,
+      "section_id": 1,
+      "text": "When indirect effects were controlled for with a polygenic score for education based on nontransmitted variants, the variance explained by the transmitted score shrank from 5% to 2% (Kong et al., 2018).",
+      "page_number": null
+    },
+    {
+      "text_id": 25,
+      "paragraph_id": 6,
+      "section_id": 1,
+      "text": "The nontransmitted score also independently predicted attainment.",
+      "page_number": null
+    },
+    {
+      "text_id": 26,
+      "paragraph_id": 6,
+      "section_id": 1,
+      "text": "The family environment is an important contributor to polygenic-score prediction because it is adding to estimates of genetic influence and because parents still influence their offspring after analyses control for shared (transmitted) genes.",
+      "page_number": null
+    },
+    {
+      "text_id": 27,
+      "paragraph_id": 7,
+      "section_id": 1,
+      "text": "The present study drew on an unusually large and relatively unexplored sample of adoptees and harmonized a traditional quantitative genetic approach with modern genomic tools.",
+      "page_number": null
+    },
+    {
+      "text_id": 28,
+      "paragraph_id": 7,
+      "section_id": 1,
+      "text": "Our main aim was to use the natural experiment created by adoptive placement to measure the importance of passive gene-environment correlation for educational attainment.",
+      "page_number": null
+    },
+    {
+      "text_id": 29,
+      "paragraph_id": 7,
+      "section_id": 1,
+      "text": "When children are adopted by nonrelatives, the indirect genetic path between the rearing environment and their traits is not present because adoptive parents are not genetically related to adopted children.",
+      "page_number": null
+    },
+    {
+      "text_id": 30,
+      "paragraph_id": 7,
+      "section_id": 1,
+      "text": "Three hypotheses follow.",
+      "page_number": null
+    },
+    {
+      "text_id": 31,
+      "paragraph_id": 7,
+      "section_id": 1,
+      "text": "First, the phenotypic variance should be lower in adoptees compared with nonadopted individuals, because adoptees do not have the additional source of variance of passive gene-environment correlation (Loehlin & De Fries, 1987;Plomin, 1994).",
+      "page_number": null
+    },
+    {
+      "text_id": 32,
+      "paragraph_id": 7,
+      "section_id": 1,
+      "text": "This discrepancy could also be due to adoptive families varying less in socioeconomic status or being selected for perceived parenting ability (Natsuaki et al., 2019;Rutter, 2006).",
+      "page_number": null
+    },
+    {
+      "text_id": 33,
+      "paragraph_id": 7,
+      "section_id": 1,
+      "text": "Second, if passive gene-environment correlation inflates heritability estimates, then heritability should be lower in adoptees than in nonadopted individuals, because adoptees are reared in environments that are less correlated with their genotypes.",
+      "page_number": null
+    },
+    {
+      "text_id": 34,
+      "paragraph_id": 7,
+      "section_id": 1,
+      "text": "Third, for the same reason, the variance explained by polygenic scores will be lower in adoptees and may be closer to the direct genetic effect of an individual's own DNA.",
+      "page_number": null
+    },
+    {
+      "text_id": 35,
+      "paragraph_id": 11,
+      "section_id": 3,
+      "text": "The UK Biobank is an epidemiological resource including British individuals from the ages of 40 to 70 at recruitment (Allen, Sudlow, Peakman, Collins, & UK Biobank, 2014).",
+      "page_number": null
+    },
+    {
+      "text_id": 36,
+      "paragraph_id": 11,
+      "section_id": 3,
+      "text": "UK Biobank participants were asked, \"Were you adopted as a child?\"",
+      "page_number": null
+    },
+    {
+      "text_id": 37,
+      "paragraph_id": 11,
+      "section_id": 3,
+      "text": "In total, 7,407 individuals said \"yes,\" and 495,209 individuals said \"no.\"",
+      "page_number": null
+    },
+    {
+      "text_id": 38,
+      "paragraph_id": 11,
+      "section_id": 3,
+      "text": "No additional information was collected on factors that are understood to reduce the representativeness of adoptees as a study sample: the age of adoption, whether the adoption was domestic or international, or whether individuals were adopted by biological relatives.",
+      "page_number": null
+    },
+    {
+      "text_id": 39,
+      "paragraph_id": 11,
+      "section_id": 3,
+      "text": "Genome-wide genetic data came from the full release of the UK Biobank data and were collected and processed according to the quality-control pipeline (Bycroft et al., 2018).",
+      "page_number": null
+    },
+    {
+      "text_id": 40,
+      "paragraph_id": 11,
+      "section_id": 3,
+      "text": "We restricted analyses to individuals with full phenotypic data for education, who also passed genotype quality-control criteria.",
+      "page_number": null
+    },
+    {
+      "text_id": 41,
+      "paragraph_id": 11,
+      "section_id": 3,
+      "text": "This left 6,311 adopted and 375,343 nonadopted individuals for analysis.",
+      "page_number": null
+    },
+    {
+      "text_id": 42,
+      "paragraph_id": 12,
+      "section_id": 3,
+      "text": "Genotype quality-control criteria were common genetic variants of minor allele frequency greater than 0.01 that were directly genotyped or imputed with high confidence (information-content metric > 0.4), individuals with a genotype call rate greater than 98% who had concordant phenotypic and genetic gender information, and individuals who were unrelated to others in the data set (less than third-degree relatives).",
+      "page_number": null
+    },
+    {
+      "text_id": 43,
+      "paragraph_id": 12,
+      "section_id": 3,
+      "text": "We removed relatives using a greedy algorithm to minimize the exclusion of adoptees.",
+      "page_number": null
+    },
+    {
+      "text_id": 44,
+      "paragraph_id": 12,
+      "section_id": 3,
+      "text": "To reduce confounding from population stratification, we limited all analyses to individuals of European ancestry, as defined by four-means clustering on the first two genetic principal components provided by the UK Biobank.",
+      "page_number": null
+    },
+    {
+      "text_id": 45,
+      "paragraph_id": 12,
+      "section_id": 3,
+      "text": "We also controlled for 10 ancestry principal components of the European sample in all genomic analyses.",
+      "page_number": null
+    },
+    {
+      "text_id": 46,
+      "paragraph_id": 13,
+      "section_id": 3,
+      "text": "Years of education, a proxy for educational attainment, was defined according to International Standard Classification of Education categories, as in previous genomic studies of the phenotype in UK Biobank and other samples (Lee et al., 2018).",
+      "page_number": null
+    },
+    {
+      "text_id": 47,
+      "paragraph_id": 13,
+      "section_id": 3,
+      "text": "The response categories were as follows: none of the above ( no qualifica",
+      "page_number": null
+    },
+    {
+      "text_id": 48,
+      "paragraph_id": 15,
+      "section_id": 4,
+      "text": "Phenotypic comparisons.",
+      "page_number": null
+    },
+    {
+      "text_id": 49,
+      "paragraph_id": 15,
+      "section_id": 4,
+      "text": "First, we formally tested the hypothesis that nonadopted individuals show greater phenotypic variance than adopted individuals because of the presence of an additional source of variance (passive gene-environment correlation).",
+      "page_number": null
+    },
+    {
+      "text_id": 50,
+      "paragraph_id": 15,
+      "section_id": 4,
+      "text": "A nonparametric test was used given the nonnormal distribution of the years-ofeducation variable (Brown & Forsythe, 1974).",
+      "page_number": null
+    },
+    {
+      "text_id": 51,
+      "paragraph_id": 15,
+      "section_id": 4,
+      "text": "This test is based on absolute deviations from the median rather than the group mean.",
+      "page_number": null
+    },
+    {
+      "text_id": 52,
+      "paragraph_id": 15,
+      "section_id": 4,
+      "text": "We also tested for differences in years of education, age, and sex between the two groups using a Wald test, z test, and Wilcoxon test, respectively.",
+      "page_number": null
+    },
+    {
+      "text_id": 53,
+      "paragraph_id": 17,
+      "section_id": 5,
+      "text": "Second, to test the hypothesis that heritability is lower in adoptees, whose rearing environments are less correlated with their genotypes, we estimated the variance explained by common genetic variants for years of education in adoptees using genomic-relatedness-based restricted maximum likelihood (GREML; Yang, Lee, Goddard, & Visscher, 2011) and compared this with the heritability estimate for nonadopted individuals.",
+      "page_number": null
+    },
+    {
+      "text_id": 54,
+      "paragraph_id": 17,
+      "section_id": 5,
+      "text": "This method estimates heritability as the extent to which genetic similarity among unrelated individuals can predict their trait similarity.",
+      "page_number": null
+    },
+    {
+      "text_id": 55,
+      "paragraph_id": 17,
+      "section_id": 5,
+      "text": "In GREML, a matrix of genomic similarity for each pair of unrelated individuals across genotyped variants is compared with a matrix of their pairwise phenotypic similarity using a random-effects mixed linear model.",
+      "page_number": null
+    },
+    {
+      "text_id": 56,
+      "paragraph_id": 17,
+      "section_id": 5,
+      "text": "This allows the variance of a trait to be decomposed into genetic and residual components using maximum likelihood.",
+      "page_number": null
+    },
+    {
+      "text_id": 57,
+      "paragraph_id": 17,
+      "section_id": 5,
+      "text": "We used two genetic-relatedness matrices: one for adopted individuals and a second for a subset of 6,500 nonadopted individuals.",
+      "page_number": null
+    },
+    {
+      "text_id": 58,
+      "paragraph_id": 17,
+      "section_id": 5,
+      "text": "This was to enable comparison of two similarly sized samples and to reduce the computational burden that results from scaling GREML to a sample as large as the UK Biobank.",
+      "page_number": null
+    },
+    {
+      "text_id": 59,
+      "paragraph_id": 17,
+      "section_id": 5,
+      "text": "For both genomic matrices, we used a relatedness cutoff of 0.025.",
+      "page_number": null
+    },
+    {
+      "text_id": 60,
+      "paragraph_id": 17,
+      "section_id": 5,
+      "text": "Subsamples were made using the \"sample_n\" function in the dplyr package in the R programming environment (Version 3.5; R Core Team, 2019).",
+      "page_number": null
+    },
+    {
+      "text_id": 61,
+      "paragraph_id": 17,
+      "section_id": 5,
+      "text": "We compared these results with heritability estimates derived from a second method, linkage-disequilibrium score regression (LDSC; Bulik-Sullivan, Loh, et al., 2015).",
+      "page_number": null
+    },
+    {
+      "text_id": 62,
+      "paragraph_id": 17,
+      "section_id": 5,
+      "text": "Unlike GREML, LDSC does not require individual-level data, allowing it to be computationally feasible to estimate the heritability of education in the full sample of nonadopted individuals.",
+      "page_number": null
+    },
+    {
+      "text_id": 63,
+      "paragraph_id": 17,
+      "section_id": 5,
+      "text": "LDSC also enabled us to estimate genetic correlations (see below).",
+      "page_number": null
+    },
+    {
+      "text_id": 64,
+      "paragraph_id": 19,
+      "section_id": 6,
+      "text": "Third, we tested whether the power of polygenic scores was greater for individuals who were reared with their biological relatives than for adoptees.",
+      "page_number": null
+    },
+    {
+      "text_id": 65,
+      "paragraph_id": 19,
+      "section_id": 6,
+      "text": "The sample of nonadopted individuals was subdivided into three independent groups for polygenic-score analyses.",
+      "page_number": null
+    },
+    {
+      "text_id": 66,
+      "paragraph_id": 19,
+      "section_id": 6,
+      "text": "Our first sample consisted of 318,843 nonadopted individuals for genome-wide-association (GWA) analysis.",
+      "page_number": null
+    },
+    {
+      "text_id": 67,
+      "paragraph_id": 19,
+      "section_id": 6,
+      "text": "The purpose of this was to estimate the effect sizes of associations between genome-wide genetic variants and years of education for the creation of individual-level polygenic scores.",
+      "page_number": null
+    },
+    {
+      "text_id": 68,
+      "paragraph_id": 19,
+      "section_id": 6,
+      "text": "We derived our base summary statistics file for years of education by meta-analyzing summary statistics from our own GWA analysis in this subsample with independent summary statistics obtained from the Social Science Genomics Consortium (excluding UK Biobank and 23andMe; Lee et al., 2018).",
+      "page_number": null
+    },
+    {
+      "text_id": 69,
+      "paragraph_id": 19,
+      "section_id": 6,
+      "text": "The sample size for these external summary statistics was 324,160, leading to a total sample size of 643,003 individuals in our GWA meta-analysis.",
+      "page_number": null
+    },
+    {
+      "text_id": 70,
+      "paragraph_id": 20,
+      "section_id": 6,
+      "text": "Our second independent sample included 50,000 individuals for training our polygenic scores for years of education, that is, identifying the optimal p-value threshold for inclusion of SNPs.",
+      "page_number": null
+    },
+    {
+      "text_id": 71,
+      "paragraph_id": 20,
+      "section_id": 6,
+      "text": "The standard set of p values in PRSice 2 software was tested: .001, .05, .1, .2, .3, .4, .5, 1 (Choi & O'Reilly, 2019).",
+      "page_number": null
+    },
+    {
+      "text_id": 72,
+      "paragraph_id": 21,
+      "section_id": 6,
+      "text": "Our third independent sample contained 6,500 individuals, to match the sample size of adopted individuals, on which to run polygenic-prediction models.",
+      "page_number": null
+    },
+    {
+      "text_id": 73,
+      "paragraph_id": 21,
+      "section_id": 6,
+      "text": "In these prediction models, we regressed the years-ofeducation phenotype in the UK Biobank on polygenic scores for years of education in adoptees and then repeated the analysis in the 6,500 nonadopted individuals.",
+      "page_number": null
+    },
+    {
+      "text_id": 74,
+      "paragraph_id": 21,
+      "section_id": 6,
+      "text": "In this third set of analyses, we used a set p-value threshold obtained from the training step.",
+      "page_number": null
+    },
+    {
+      "text_id": 75,
+      "paragraph_id": 21,
+      "section_id": 6,
+      "text": "This exact sample was the same as the one used to estimate SNP heritability of years of education.",
+      "page_number": null
+    },
+    {
+      "text_id": 76,
+      "paragraph_id": 21,
+      "section_id": 6,
+      "text": "Notably, this polygenic-score analysis is better powered than the SNP heritability analysis, because it capitalizes on the power of the large discovery sample (N = 643,003).",
+      "page_number": null
+    },
+    {
+      "text_id": 77,
+      "paragraph_id": 22,
+      "section_id": 6,
+      "text": "As a negative control, we tested the polygenic-prediction comparison between adopted and nonadopted individuals for height, which has not shown evidence of passive gene-environment correlation in previous studies (Kong et al., 2018;Selzam et al., 2019).",
+      "page_number": null
+    },
+    {
+      "text_id": 78,
+      "paragraph_id": 22,
+      "section_id": 6,
+      "text": "As with the education analysis, we trained the polygenic score on the basis of the largest independent association study (Wood et al., 2014) in the sample of 50,000 individuals; we then tested the prediction at the best p-value threshold in our two independent and similarly sized samples of adopted and nonadopted individuals.",
+      "page_number": null
+    },
+    {
+      "text_id": 79,
+      "paragraph_id": 24,
+      "section_id": 7,
+      "text": "Heritability of adoption status.",
+      "page_number": null
+    },
+    {
+      "text_id": 80,
+      "paragraph_id": 24,
+      "section_id": 7,
+      "text": "Substantial heritability of our environmental moderator might have affected the interpretation of our main results.",
+      "page_number": null
+    },
+    {
+      "text_id": 81,
+      "paragraph_id": 24,
+      "section_id": 7,
+      "text": "To explore this, we also estimated the heritability of adoption status using LDSC in the full sample (N = 381,654).",
+      "page_number": null
+    },
+    {
+      "text_id": 82,
+      "paragraph_id": 24,
+      "section_id": 7,
+      "text": "The genetic \"influence\" on adoption largely arises in the biological-parent generation because heritable traits influence the likelihood of adoption of their child.",
+      "page_number": null
+    },
+    {
+      "text_id": 83,
+      "paragraph_id": 26,
+      "section_id": 8,
+      "text": "Differences in genetic influences on the same trait across contexts-in this case, adoption-can also be conceptualized as gene-environment interaction, whereby the impact of genes on educational attainment may be contingent on adoption status.",
+      "page_number": null
+    },
+    {
+      "text_id": 84,
+      "paragraph_id": 26,
+      "section_id": 8,
+      "text": "We aimed to further explore our main results by testing a formal polygenic-scoreby-adoption interaction regression model.",
+      "page_number": null
+    },
+    {
+      "text_id": 85,
+      "paragraph_id": 26,
+      "section_id": 8,
+      "text": "The model contained main effects for polygenic score for years of education, adoption, and covariates, plus the interaction term, as well as interaction terms for polygenic score and adoption with each covariate (Keller, 2014).",
+      "page_number": null
+    },
+    {
+      "text_id": 86,
+      "paragraph_id": 26,
+      "section_id": 8,
+      "text": "We tested a linear model for additive interaction and a logistic model for multiplicative interaction.",
+      "page_number": null
+    },
+    {
+      "text_id": 87,
+      "paragraph_id": 26,
+      "section_id": 8,
+      "text": "To visualize any interaction, we plotted the regression slopes for polygenic prediction of educational attainment for adopted and nonadopted individuals (with both variables standardized to have a mean of 0 and a standard deviation of 1).",
+      "page_number": null
+    },
+    {
+      "text_id": 88,
+      "paragraph_id": 26,
+      "section_id": 8,
+      "text": "Additionally, we stratified polygenic scores for adopted and nonadopted individuals overall (N = 12,811) into deciles and tested for mean differences in years of education between adopted and nonadopted groups in each decile.",
+      "page_number": null
+    },
+    {
+      "text_id": 89,
+      "paragraph_id": 28,
+      "section_id": 9,
+      "text": "We assessed whether education is driven by the same set of genetic influences in adopted and nonadopted individuals.",
+      "page_number": null
+    },
+    {
+      "text_id": 90,
+      "paragraph_id": 28,
+      "section_id": 9,
+      "text": "First, we estimated the genetic correlation between years of education in our samples.",
+      "page_number": null
+    },
+    {
+      "text_id": 91,
+      "paragraph_id": 28,
+      "section_id": 9,
+      "text": "For this, we ran GWA analyses of years of education in the full sample of nonadopted individuals (N = 375,343) and in the sample of adoptees, and then estimated the genetic correlation between them using LDSC.",
+      "page_number": null
+    },
+    {
+      "text_id": 92,
+      "paragraph_id": 28,
+      "section_id": 9,
+      "text": "Second, we tested whether education is genetically linked to different traits between adoptees and nonadopted individuals.",
+      "page_number": null
+    },
+    {
+      "text_id": 93,
+      "paragraph_id": 28,
+      "section_id": 9,
+      "text": "To this end, we estimated genetic correlations between years of education and 247 traits, available on LD Hub (Zheng et al., 2017), for both adopted and nonadopted individuals.",
+      "page_number": null
+    },
+    {
+      "text_id": 94,
+      "paragraph_id": 28,
+      "section_id": 9,
+      "text": "We compared the magnitudes of genetic correlations between years of education and other variables between the adopted and nonadopted samples with z tests.",
+      "page_number": null
+    },
+    {
+      "text_id": 95,
+      "paragraph_id": 29,
+      "section_id": 9,
+      "text": "Birth-year-related differences in genetic influence.",
+      "page_number": null
+    },
+    {
+      "text_id": 96,
+      "paragraph_id": 29,
+      "section_id": 9,
+      "text": "During the period when UK Biobank participants were growing up (1930s-1970s), access to education increased, and there was great change in the norms and regulations surrounding reproduction, contraception, and adoption.",
+      "page_number": null
+    },
+    {
+      "text_id": 97,
+      "paragraph_id": 29,
+      "section_id": 9,
+      "text": "Previous studies have found that genetic influence on years of education increased in this period in the United Kingdom, because environmental differences between people had less influence on whether they stayed in education (Lee et al., 2018).",
+      "page_number": null
+    },
+    {
+      "text_id": 98,
+      "paragraph_id": 29,
+      "section_id": 9,
+      "text": "We investigated temporal change in patterns of genetic influence on education in adopted compared with nonadopted individuals by stratifying polygenic-prediction analyses according to year of birth.",
+      "page_number": null
+    },
+    {
+      "text_id": 99,
+      "paragraph_id": 29,
+      "section_id": 9,
+      "text": "Specifically, all individuals were split into seven mutually exclusive birth-year groups, each with a range of 5 years, and polygenic-score analyses were conducted separately for each of the year groups.",
+      "page_number": null
+    },
+    {
+      "text_id": 100,
+      "paragraph_id": 30,
+      "section_id": 9,
+      "text": "All analyses (SNP heritability, polygenic scoring, GWA) controlled for the following covariates: sex, age, 10 ancestry principal components, and factors capturing genotyping batch and center.",
+      "page_number": null
+    },
+    {
+      "text_id": 101,
+      "paragraph_id": 30,
+      "section_id": 9,
+      "text": "The majority of the analyses were completed in R Version 3.5.",
+      "page_number": null
+    },
+    {
+      "text_id": 102,
+      "paragraph_id": 30,
+      "section_id": 9,
+      "text": "GREML was performed in the GCTA software (Yang et al., 2011).",
+      "page_number": null
+    },
+    {
+      "text_id": 103,
+      "paragraph_id": 30,
+      "section_id": 9,
+      "text": "GWA meta-analysis was performed in METAL (Willer, Li, & Abecasis, 2010).",
+      "page_number": null
+    },
+    {
+      "text_id": 104,
+      "paragraph_id": 30,
+      "section_id": 9,
+      "text": "Polygenic-score analyses were performed in PRSice 2 (Choi & O'Reilly, 2019).",
+      "page_number": null
+    },
+    {
+      "text_id": 105,
+      "paragraph_id": 30,
+      "section_id": 9,
+      "text": "To compare polygenic-score results between adopted and nonadopted individuals, we obtained bootstrapped standard errors for the R 2 statistics using the boot package in R, with 1,000 replications.",
+      "page_number": null
+    },
+    {
+      "text_id": 106,
+      "paragraph_id": 30,
+      "section_id": 9,
+      "text": "Genome-wide genetic correlations were estimated using LDSC (Bulik-Sullivan, Finucane, et al., 2015) and LD Hub (Zheng et al., 2017).",
+      "page_number": null
+    },
+    {
+      "text_id": 107,
+      "paragraph_id": 30,
+      "section_id": 9,
+      "text": "The UK Biobank is a controlled-access public data set available to all bona fide researchers.",
+      "page_number": null
+    },
+    {
+      "text_id": 108,
+      "paragraph_id": 34,
+      "section_id": 11,
+      "text": "The total sample of individuals with education-phenotype data and quality-controlled genotype data was 381,654.",
+      "page_number": null
+    },
+    {
+      "text_id": 109,
+      "paragraph_id": 34,
+      "section_id": 11,
+      "text": "As described in the Method section, individuals were split into four mutually exclusive groups: (a) 6,311 individuals adopted as children, (b) 318,843 nonadopted individuals for GWA analysis, (c) 50,000 nonadopted individuals for training of polygenic scores, and (d) 6,500 nonadopted individuals for genomic analyses for comparison with adoptees.",
+      "page_number": null
+    },
+    {
+      "text_id": 110,
+      "paragraph_id": 34,
+      "section_id": 11,
+      "text": "Nonadopted individuals were randomly placed into groups b, c, and d.",
+      "page_number": null
+    },
+    {
+      "text_id": 111,
+      "paragraph_id": 36,
+      "section_id": 12,
+      "text": "Phenotypic differences between adoptees and nonadopted individuals were generally modest in size but because of the large sample size in this study, several were statistically significant (see Table 1).",
+      "page_number": null
+    },
+    {
+      "text_id": 112,
+      "paragraph_id": 36,
+      "section_id": 12,
+      "text": "We found that there was significantly greater variance in years of education for nonadopted individuals than for adoptees (26.2 vs.",
+      "page_number": null
+    },
+    {
+      "text_id": 113,
+      "paragraph_id": 36,
+      "section_id": 12,
+      "text": "25.8, respectively; p = .002 compared with 6,500 nonadopted individuals in group d; p = 3.2 × 10 -5 compared with all nonadopted individuals).",
+      "page_number": null
+    },
+    {
+      "text_id": 114,
+      "paragraph_id": 36,
+      "section_id": 12,
+      "text": "Table 1 provides descriptive statistics for years of education, age, and sex in the two groups.",
+      "page_number": null
+    },
+    {
+      "text_id": 115,
+      "paragraph_id": 36,
+      "section_id": 12,
+      "text": "Adoptees in the UK Biobank were significantly younger on average (p = .026 compared with group d; p = .009 compared with all nonadopted individuals), although point estimates were similar (56.4 vs.",
+      "page_number": null
+    },
+    {
+      "text_id": 116,
+      "paragraph_id": 36,
+      "section_id": 12,
+      "text": "56.7).",
+      "page_number": null
+    },
+    {
+      "text_id": 117,
+      "paragraph_id": 36,
+      "section_id": 12,
+      "text": "There were significantly more males in the adopted group (p = .033 compared with group d; p = .008 compared with all nonadopted individuals), but the magnitude of the difference was small (48% vs. 46% male).",
+      "page_number": null
+    },
+    {
+      "text_id": 118,
+      "paragraph_id": 36,
+      "section_id": 12,
+      "text": "Adoptees had significantly fewer years of education (p = 3.3 × 10 -11 compared with group d; p < 2.2 × 10 -16 compared with all nonadopted individuals in the UK Biobank).",
+      "page_number": null
+    },
+    {
+      "text_id": 119,
+      "paragraph_id": 36,
+      "section_id": 12,
+      "text": "This is also reflected in the lower percentage of college attendees (20 years of education in Table 1) in the adopted group (28% compared with 33% in the nonadopted group).",
+      "page_number": null
+    },
+    {
+      "text_id": 120,
+      "paragraph_id": 36,
+      "section_id": 12,
+      "text": "All comparison results were consistent between the large and small samples of nonadopted individuals.",
+      "page_number": null
+    },
+    {
+      "text_id": 121,
+      "paragraph_id": 38,
+      "section_id": 13,
+      "text": "Figure 1 shows GREML-derived SNP heritability estimates for years of education in both adopted individuals and nonadopted individuals (left-hand bars).",
+      "page_number": null
+    },
+    {
+      "text_id": 122,
+      "paragraph_id": 38,
+      "section_id": 13,
+      "text": "The estimate of heritability was larger in individuals reared with their relatives (0.29, SE = 0.079), compared with adopted individuals (0.23, SE = 0.079).",
+      "page_number": null
+    },
+    {
+      "text_id": 123,
+      "paragraph_id": 38,
+      "section_id": 13,
+      "text": "However, confidence intervals were wide and overlapped, so the difference in heritability was not significant.",
+      "page_number": null
+    },
+    {
+      "text_id": 124,
+      "paragraph_id": 39,
+      "section_id": 13,
+      "text": "It was not computationally feasible to estimate the heritability of education using all nonadopted individuals with GREML.",
+      "page_number": null
+    },
+    {
+      "text_id": 125,
+      "paragraph_id": 39,
+      "section_id": 13,
+      "text": "Notably, though, the LDSC-derived heritability was 0.17 (SE = 0.005) in the full sample of nonadopted individuals (N = 375,343) and 0.14 (SE = 0.073) for adoptees, corroborating the pattern of results found using GREML.",
+      "page_number": null
+    },
+    {
+      "text_id": 126,
+      "paragraph_id": 39,
+      "section_id": 13,
+      "text": "LDSC estimates are typically lower than GCTA and GREML-derived estimates (Evans & Keller, 2018).",
+      "page_number": null
+    },
+    {
+      "text_id": 127,
+      "paragraph_id": 41,
+      "section_id": 14,
+      "text": "Figure 1 shows that twice as much phenotypic variance in years of education was explained by polygenic scores for years of education in nonadopted individuals (0.074) as in adoptees (0.037).",
+      "page_number": null
+    },
+    {
+      "text_id": 128,
+      "paragraph_id": 41,
+      "section_id": 14,
+      "text": "This difference was highly significant (p = 8.23 × 10 -24 ).",
+      "page_number": null
+    },
+    {
+      "text_id": 129,
+      "paragraph_id": 41,
+      "section_id": 14,
+      "text": "The optimal significance threshold (p) for inclusion of SNPs was 1 (see Table S1 in the Supplemental Material available online).",
+      "page_number": null
+    },
+    {
+      "text_id": 130,
+      "paragraph_id": 41,
+      "section_id": 14,
+      "text": "Table S2 in the Supplemental Material shows the full results from the polygenic-prediction analyses.",
+      "page_number": null
+    },
+    {
+      "text_id": 131,
+      "paragraph_id": 42,
+      "section_id": 14,
+      "text": "For our negative control analysis of height, as expected, the variance explained by the polygenic score in adoptees (0.127, SE = 0.008) versus nonadopted individuals (0.134, SE = 0.008) was not significantly different (p = .62).",
+      "page_number": null
+    },
+    {
+      "text_id": 132,
+      "paragraph_id": 42,
+      "section_id": 14,
+      "text": "The optimal significance threshold (p) for inclusion of SNPs in the polygenic score was .001.",
+      "page_number": null
+    },
+    {
+      "text_id": 133,
+      "paragraph_id": 44,
+      "section_id": 15,
+      "text": "Heritability of being adopted.",
+      "page_number": null
+    },
+    {
+      "text_id": 134,
+      "paragraph_id": 44,
+      "section_id": 15,
+      "text": "We found a liabilityscale SNP heritability of being adopted of 0.059 (SE = 0.004), assuming the population prevalence of adoption is identical to the sample prevalence (1.7%).",
+      "page_number": null
+    },
+    {
+      "text_id": 135,
+      "paragraph_id": 44,
+      "section_id": 15,
+      "text": "If the actual population prevalence differed and was, for example, 0.7% or 2.7%, the liability-scale SNP heritability would become 0.047 (SE = 0.002) or 0.066 (SE = 0.005), respectively.",
+      "page_number": null
+    },
+    {
+      "text_id": 136,
+      "paragraph_id": 44,
+      "section_id": 15,
+      "text": "Adoption status showed significant genetic correlations with education, age at first birth, depression, and obesity after analyses corrected for multiple testing (see Table S5 in the Supplemental Material), although these correlations should be viewed with caution given the low SNP heritability of adoption.",
+      "page_number": null
+    },
+    {
+      "text_id": 137,
+      "paragraph_id": 44,
+      "section_id": 15,
+      "text": "Adoption status could be significantly predicted by the polygenic score for years of education (R 2 = .008, p < 2 × 10 -16 ).",
+      "page_number": null
+    },
+    {
+      "text_id": 138,
+      "paragraph_id": 44,
+      "section_id": 15,
+      "text": "The heritability of adoption was low but may have confounded our between-groups comparisons.",
+      "page_number": null
+    },
+    {
+      "text_id": 139,
+      "paragraph_id": 46,
+      "section_id": 16,
+      "text": "We tested a formal interaction model to further examine the finding that genetic influences on education are weaker in the sample of adoptees.",
+      "page_number": null
+    },
+    {
+      "text_id": 140,
+      "paragraph_id": 46,
+      "section_id": 16,
+      "text": "The interaction between polygenic score and adoption status in predicting years of education is shown in Figure 2.",
+      "page_number": null
+    },
+    {
+      "text_id": 141,
+      "paragraph_id": 46,
+      "section_id": 16,
+      "text": "The regression slope is significantly steeper in the nonadopted group, indicating that years of education increases more as polygenic scores for education increase in this group compared with the adopted group.",
+      "page_number": null
+    },
+    {
+      "text_id": 142,
+      "paragraph_id": 46,
+      "section_id": 16,
+      "text": "See Table S3 in the Supplemental Material for results of the full interaction model.",
+      "page_number": null
+    },
+    {
+      "text_id": 143,
+      "paragraph_id": 46,
+      "section_id": 16,
+      "text": "Using linear regression, we confirmed that polygenic prediction of education interacts beyond additivity with adoption status (interaction estimate = -0.33; p = 2.66 × 10 -4 ).",
+      "page_number": null
+    },
+    {
+      "text_id": 144,
+      "paragraph_id": 46,
+      "section_id": 16,
+      "text": "This means that polygenic scores had a smaller association with education in adoptees.",
+      "page_number": null
+    },
+    {
+      "text_id": 145,
+      "paragraph_id": 46,
+      "section_id": 16,
+      "text": "Then, using logistic regression instead of linear regression, we also found that the interaction exceeded multiplicativity (interaction estimate = -0.18; p = .0009).",
+      "page_number": null
+    },
+    {
+      "text_id": 146,
+      "paragraph_id": 46,
+      "section_id": 16,
+      "text": "The finding of interaction exceeding both additive and multiplicative models means that the combined effect of polygenic score for education and adoption status is not scale dependent and is greater than either the sum or product of their individual effects, respectively.",
+      "page_number": null
+    },
+    {
+      "text_id": 147,
+      "paragraph_id": 47,
+      "section_id": 16,
+      "text": "To further explore the interaction, we plotted the mean years of education per decile of polygenic score for years of education, separately for adopted and nonadopted individuals.",
+      "page_number": null
+    },
+    {
+      "text_id": 148,
+      "paragraph_id": 47,
+      "section_id": 16,
+      "text": "Figure 3 shows that for individuals",
+      "page_number": null
+    },
+    {
+      "text_id": 149,
+      "paragraph_id": 48,
+      "section_id": 16,
+      "text": "0.0 0.1 0.2 0.3 0.4 0.5 SNP Heritability Polygenic Prediction Adopted Nonadopted",
+      "page_number": null
+    },
+    {
+      "text_id": 150,
+      "paragraph_id": 50,
+      "section_id": 17,
+      "text": "Fig.",
+      "page_number": null
+    },
+    {
+      "text_id": 151,
+      "paragraph_id": 50,
+      "section_id": 17,
+      "text": "1.",
+      "page_number": null
+    },
+    {
+      "text_id": 152,
+      "paragraph_id": 50,
+      "section_id": 17,
+      "text": "Estimates of the variance explained by common singlenucleotide polymorphisms (SNPs) for years of education and by polygenic scores for education, separately for adoptees and individuals reared with their relatives.",
+      "page_number": null
+    },
+    {
+      "text_id": 153,
+      "paragraph_id": 50,
+      "section_id": 17,
+      "text": "Error bars show 95% confidence intervals (CIs).",
+      "page_number": null
+    },
+    {
+      "text_id": 154,
+      "paragraph_id": 50,
+      "section_id": 17,
+      "text": "Sample sizes for polygenic-prediction analyses were 6,311 and 6,500 for adopted and nonadopted individuals, respectively; sample sizes for genomic-relatedness-based restricted-maximum-likelihood (GREML) heritability analyses were lower (6,227 for adopted and 6,362 for nonadopted individuals) because relatives were removed at a cutoff of > 0.025.",
+      "page_number": null
+    },
+    {
+      "text_id": 155,
+      "paragraph_id": 50,
+      "section_id": 17,
+      "text": "For polygenic-score results, CIs were obtained by bootstrapping with 1,000 replications. in the lowest decile of polygenic score for education, those who were adopted as children achieved substantially higher mean years of education (-0.24, SE = 0.03; standardized) compared with nonadopted individuals (-0.40, SE = 0.03).",
+      "page_number": null
+    },
+    {
+      "text_id": 156,
+      "paragraph_id": 50,
+      "section_id": 17,
+      "text": "This mean difference between adopted and nonadopted individuals was significant in the bottom decile (p = 7.05 × 10 -5 ) but not for other deciles of polygenic load.",
+      "page_number": null
+    },
+    {
+      "text_id": 157,
+      "paragraph_id": 50,
+      "section_id": 17,
+      "text": "See Table S4 in the Supplemental Material for full results of the decile analysis.",
+      "page_number": null
+    },
+    {
+      "text_id": 158,
+      "paragraph_id": 51,
+      "section_id": 17,
+      "text": "Qualitative differences in genetic influences according to adoptee status.",
+      "page_number": null
+    },
+    {
+      "text_id": 159,
+      "paragraph_id": 51,
+      "section_id": 17,
+      "text": "We found that largely the same genetic influences were operating on education regardless of adoption status.",
+      "page_number": null
+    },
+    {
+      "text_id": 160,
+      "paragraph_id": 51,
+      "section_id": 17,
+      "text": "First, the genetic correlation between years of education in adopted and nonadopted individuals was not significantly different from 1, 0.81 (SE = 0.21).",
+      "page_number": null
+    },
+    {
+      "text_id": 161,
+      "paragraph_id": 51,
+      "section_id": 17,
+      "text": "Second, we found no evidence that educational attainment was associated with different traits in individuals who were adopted.",
+      "page_number": null
+    },
+    {
+      "text_id": 162,
+      "paragraph_id": 51,
+      "section_id": 17,
+      "text": "Figure S1 in the Supplemental Material presents estimates of genetic correlations between years of education and 247 external traits, separately for the adopted and nonadopted samples.",
+      "page_number": null
+    },
+    {
+      "text_id": 163,
+      "paragraph_id": 51,
+      "section_id": 17,
+      "text": "None of these were significantly different between adoptees and nonadopted individuals after multiple-testing correction.",
+      "page_number": null
+    },
+    {
+      "text_id": 164,
+      "paragraph_id": 51,
+      "section_id": 17,
+      "text": "Because of the relatively small sample of adopted individuals, these results should be interpreted with caution.",
+      "page_number": null
+    },
+    {
+      "text_id": 165,
+      "paragraph_id": 53,
+      "section_id": 18,
+      "text": "Our final sensitivity analysis tested for differences according to year of birth in polygenic prediction from direct effects (indicated by the variance explained in the adoptees) versus from passive gene-environment correlation (indicated by the difference in variance explained between nonadopted individuals and adoptees).",
+      "page_number": null
+    },
+    {
+      "text_id": 166,
+      "paragraph_id": 53,
+      "section_id": 18,
+      "text": "We found small, nonsignificant differences in the variance explained by polygenic scores for education depending on the year-of-birth group considered.",
+      "page_number": null
+    },
+    {
+      "text_id": 167,
+      "paragraph_id": 53,
+      "section_id": 18,
+      "text": "Figure S2 in the Supplemental Material shows that polygenic prediction remained generally stable for the adoptees across generations at approximately 0.04, and any differences between age strata were nonsignificant.",
+      "page_number": null
+    },
+    {
+      "text_id": 168,
+      "paragraph_id": 53,
+      "section_id": 18,
+      "text": "We note that subsampling reduced the statistical power to detect differences within and between groups across time.",
+      "page_number": null
+    },
+    {
+      "text_id": 169,
+      "paragraph_id": 53,
+      "section_id": 18,
+      "text": "See Table S6 in the Supplemental Material for sample sizes of each year-of-birth group.",
+      "page_number": null
+    },
+    {
+      "text_id": 170,
+      "paragraph_id": 55,
+      "section_id": 19,
+      "text": "Cumulatively, our findings suggest that the family environment provided by relatives plays an important role in the manifestation of genetic effects on education.",
+      "page_number": null
+    },
+    {
+      "text_id": 171,
+      "paragraph_id": 55,
+      "section_id": 19,
+      "text": "Polygenic scores explained significantly less variance in the educational attainment of individuals who were adopted away from their parents as children (R 2 = .04) compared with individuals reared with their relatives (R 2 = .07; difference test: p = 8.23 × 10 -24 ).",
+      "page_number": null
+    },
+    {
+      "text_id": 172,
+      "paragraph_id": 55,
+      "section_id": 19,
+      "text": "The variance explained by polygenic scores in years of education in adoptees (R 2 = .04) approximated the prediction from the direct effects of individuals' own DNA.",
+      "page_number": null
+    },
+    {
+      "text_id": 173,
+      "paragraph_id": 55,
+      "section_id": 19,
+      "text": "The difference between the variance explained in nonadopted individuals and adoptees suggests that about half of the predictive power of polygenic scores for educational attainment comes from passive gene-environment correlation.",
+      "page_number": null
+    },
+    {
+      "text_id": 174,
+      "paragraph_id": 55,
+      "section_id": 19,
+      "text": "We also found that individuals in the lowest decile of polygenic score attained significantly more years of education if they were adopted.",
+      "page_number": null
+    },
+    {
+      "text_id": 175,
+      "paragraph_id": 56,
+      "section_id": 19,
+      "text": "By showing that polygenic scores for education are twice as powerful in nonadopted individuals compared with adoptees, we suggest that genetic influence on educational attainment is magnified when individuals are reared by their close genetic relatives, with whom they share both genes and environments.",
+      "page_number": null
+    },
+    {
+      "text_id": 176,
+      "paragraph_id": 56,
+      "section_id": 19,
+      "text": "Our results agree with recent evidence showing that the effects of passive gene-environment correlation reduced the variance explained by polygenic scores by 30% to 50% (Kong et al., 2018;Selzam et al., 2019).",
+      "page_number": null
+    },
+    {
+      "text_id": 177,
+      "paragraph_id": 57,
+      "section_id": 19,
+      "text": "Following other recent research (Kong et al., 2018;Selzam et al., 2019), we use the term direct genetic effect to refer to the effect of the polygenic score among adoptees after analyses control for passive gene-environment correlation.",
+      "page_number": null
+    },
+    {
+      "text_id": 178,
+      "paragraph_id": 57,
+      "section_id": 19,
+      "text": "However, it cannot be assumed that estimating the direct effect of a polygenic score is tantamount to isolating a straightforward purely genetic effect or a genetic propensity.",
+      "page_number": null
+    },
+    {
+      "text_id": 179,
+      "paragraph_id": 57,
+      "section_id": 19,
+      "text": "Genetic effects are never truly direct but are always behaviorally mediated and expressed in the context of an environment.",
+      "page_number": null
+    },
+    {
+      "text_id": 180,
+      "paragraph_id": 57,
+      "section_id": 19,
+      "text": "Active and evocative gene-environment correlation mechanisms are essential in how genes influence traits in everyone, including adoptees (Plomin, 2014), and these are included in estimates of direct genetic influence.",
+      "page_number": null
+    },
+    {
+      "text_id": 181,
+      "paragraph_id": 58,
+      "section_id": 19,
+      "text": "Our observation that individuals in the lowest decile of polygenic score for education attain significantly more education if they are adopted could be due to educationally supportive adoptive environments.",
+      "page_number": null
+    },
+    {
+      "text_id": 182,
+      "paragraph_id": 58,
+      "section_id": 19,
+      "text": "This agrees with previous evidence showing that adoptees had higher school achievement and intelligence-test scores than nonadopted siblings or peers who stayed with their birth family (van IJzendoorn, Juffer, & Poelhuis, 2005) and that such advantages are retained in their adult qualifications (Maughan, Collishaw, & Pickles, 1998).",
+      "page_number": null
+    },
+    {
+      "text_id": 183,
+      "paragraph_id": 58,
+      "section_id": 19,
+      "text": "The specificity of this result to adoptees in the lowest decile of polygenic score links to previous evidence that the \"boosting\" effect may be stronger in higher-socioeconomic-status adoptive families and for children rescued from poverty (Duyme, Dumaret, & Tomkiewicz, 1999;Turkheimer, 1991).",
+      "page_number": null
+    },
+    {
+      "text_id": 184,
+      "paragraph_id": 58,
+      "section_id": 19,
+      "text": "This environmental effect of adoptive parents might suggest that efforts to help individuals stay in education can be effective for those with less genetic propensity for education.",
+      "page_number": null
+    },
+    {
+      "text_id": 185,
+      "paragraph_id": 59,
+      "section_id": 19,
+      "text": "These results should be viewed in light of several limitations.",
+      "page_number": null
+    },
+    {
+      "text_id": 186,
+      "paragraph_id": 59,
+      "section_id": 19,
+      "text": "First, interpreting genetic influence in adoptees as direct and free of passive gene-environment correlation requires that close biological relatives were not involved in the education of the adoptees.",
+      "page_number": null
+    },
+    {
+      "text_id": 187,
+      "paragraph_id": 59,
+      "section_id": 19,
+      "text": "Unfortunately, the UK Biobank contains no information about the age of adoption beyond that it occurred in childhood, nor does it contain information about whether individuals were adopted by relatives or were able to identify and contact their biological parents.",
+      "page_number": null
+    },
+    {
+      "text_id": 188,
+      "paragraph_id": 59,
+      "section_id": 19,
+      "text": "This knowledge would have allowed us to exclude individuals who were not solely socialized with adoptive families and therefore to make a precise comparison with individuals who were reared with their birth parents.",
+      "page_number": null
+    },
+    {
+      "text_id": 189,
+      "paragraph_id": 59,
+      "section_id": 19,
+      "text": "However, polygenic prediction of education still differed markedly between the two groups, even though adoptees may have been in contact with their biological relatives.",
+      "page_number": null
+    },
+    {
+      "text_id": 190,
+      "paragraph_id": 59,
+      "section_id": 19,
+      "text": "Thus, the effects of passive gene-environment correlation may contribute even more than half of the predictive power of polygenic scores for education, as we estimated here.",
+      "page_number": null
+    },
+    {
+      "text_id": 191,
+      "paragraph_id": 60,
+      "section_id": 19,
+      "text": "A second caveat is lack of generalizability.",
+      "page_number": null
+    },
+    {
+      "text_id": 192,
+      "paragraph_id": 60,
+      "section_id": 19,
+      "text": "The UK Biobank is not representative of the general population, because there is healthy and wealthy volunteer selection (Fry et al., 2017;Keyes & Westreich, 2019), and we have analyzed data only on individuals with European ancestry.",
+      "page_number": null
+    },
+    {
+      "text_id": 193,
+      "paragraph_id": 60,
+      "section_id": 19,
+      "text": "Adoptees may not be random samples of the population.",
+      "page_number": null
+    },
+    {
+      "text_id": 194,
+      "paragraph_id": 60,
+      "section_id": 19,
+      "text": "Indeed, adoption status is not a purely random environmental exposure but is slightly heritable (our estimate is 6%), and this may confound our between-groups comparisons.",
+      "page_number": null
+    },
+    {
+      "text_id": 195,
+      "paragraph_id": 60,
+      "section_id": 19,
+      "text": "Moreover, because detailed adoption data are lacking in the UK Biobank, we were unable to conduct sensitivity analyses adjusting for aspects of adoption that have known associations with important outcomes, including school performance.",
+      "page_number": null
+    },
+    {
+      "text_id": 196,
+      "paragraph_id": 60,
+      "section_id": 19,
+      "text": "For example, it would have been useful to know whether adoptions were domestic or international or occurred in the context of childhood adversity or institutionalization (Howard, Smith, & Ryan, 2004).",
+      "page_number": null
+    },
+    {
+      "text_id": 197,
+      "paragraph_id": 61,
+      "section_id": 19,
+      "text": "Similarly, adoptive parents tend to differ systematically from other parents: They are likely to be more educated, more socially advantaged, and to have lower rates of psychopathology (Rutter, 2006).",
+      "page_number": null
+    },
+    {
+      "text_id": 198,
+      "paragraph_id": 61,
+      "section_id": 19,
+      "text": "A recent US study found that children are adopted into households that differ in average parental education compared with biological children (Domingue & Fletcher, 2019).",
+      "page_number": null
+    },
+    {
+      "text_id": 199,
+      "paragraph_id": 61,
+      "section_id": 19,
+      "text": "This probably applies to the UK Biobank, although we cannot be certain because of the lack of parental data.",
+      "page_number": null
+    },
+    {
+      "text_id": 200,
+      "paragraph_id": 61,
+      "section_id": 19,
+      "text": "If adoptive families are more homogeneous with respect to these characteristics, environmental variance may contribute less to differences in educational attainment among adoptees, and trait heritability estimates are consequently likely to be higher.",
+      "page_number": null
+    },
+    {
+      "text_id": 201,
+      "paragraph_id": 61,
+      "section_id": 19,
+      "text": "However, the fact that lower environmental variance may act to inflate genetic influence in adoptees compared with nonadopted individuals makes our finding of significantly higher polygenic prediction in nonadopted individuals more striking.",
+      "page_number": null
+    },
+    {
+      "text_id": 202,
+      "paragraph_id": 61,
+      "section_id": 19,
+      "text": "Again, the effects of passive gene-environment correlation for education may be even greater than we estimate.",
+      "page_number": null
+    },
+    {
+      "text_id": 203,
+      "paragraph_id": 62,
+      "section_id": 19,
+      "text": "There are several advantages of using the present adoption design for distinguishing direct genetic influence from passive gene-environment correlation.",
+      "page_number": null
+    },
+    {
+      "text_id": 204,
+      "paragraph_id": 62,
+      "section_id": 19,
+      "text": "Unlike other methods, our approach does not require intergenerational data, which is valuable but has its own issues, such as cohort differences in genetic effects.",
+      "page_number": null
+    },
+    {
+      "text_id": 205,
+      "paragraph_id": 62,
+      "section_id": 19,
+      "text": "Analyzing the adoptees in the UK Biobank also bypasses several limitations of traditional adoption studies, including low sample size and reliance on weak indirect proxies for inherited load for specific traits (birthparent trait status rather than individual-level polygenic scores).",
+      "page_number": null
+    },
+    {
+      "text_id": 206,
+      "paragraph_id": 62,
+      "section_id": 19,
+      "text": "However, future progress in understanding the mechanisms driving the transmission of educational attainment will require intergenerational, longitudinal, and genetically informative data sets, including detailed characterization of the home environment.",
+      "page_number": null
+    },
+    {
+      "text_id": 207,
+      "paragraph_id": 62,
+      "section_id": 19,
+      "text": "A developmental approach is useful, because gene-environment correlations likely arise early in childhood, and there will be complex reciprocal effects across time.",
+      "page_number": null
+    },
+    {
+      "text_id": 208,
+      "paragraph_id": 62,
+      "section_id": 19,
+      "text": "Researchers have already started to pinpoint genetically influenced aspects of families that are associated with children's polygenic scores for education (Krapohl et al., 2017;Wertz et al., 2019;Wertz et al., 2018).",
+      "page_number": null
+    },
+    {
+      "text_id": 209,
+      "paragraph_id": 63,
+      "section_id": 19,
+      "text": "The evidence presented in this article highlights the importance of the family environment to causal mechanisms influencing individual differences in educational attainment.",
+      "page_number": null
+    },
+    {
+      "text_id": 210,
+      "paragraph_id": 63,
+      "section_id": 19,
+      "text": "This can be through possessing genes that shape the educational environment provided for offspring that also directly influence attainment in the child or through providing an educationally supportive environment for an adopted child.",
+      "page_number": null
+    },
+    {
+      "text_id": 211,
+      "paragraph_id": 64,
+      "section_id": 19,
+      "text": "Transparency Action Editor: Steven W Gangestad Editor: D Stephen Lindsay",
+      "page_number": null
+    },
+    {
+      "text_id": 212,
+      "paragraph_id": 66,
+      "section_id": 20,
+      "text": "We thank the scientists involved in the construction of the UK Biobank and all of the participants who shared their life experiences with investigators in the UK Biobank.",
+      "page_number": null
+    },
+    {
+      "text_id": 213,
+      "paragraph_id": 66,
+      "section_id": 20,
+      "text": "We thank Aysu Okbay and the Social Science Genetic Association Consortium for providing genome-wide-association summary statistics for educational attainment excluding UK Biobank.",
+      "page_number": null
+    },
+    {
+      "text_id": 214,
+      "paragraph_id": 68,
+      "section_id": 21,
+      "text": "This research was conducted using the UK Biobank resource under Application 18177 (with thanks to P F O'Reilly).",
+      "page_number": null
+    },
+    {
+      "text_id": 215,
+      "paragraph_id": 68,
+      "section_id": 21,
+      "text": "This study represents independent research partially funded by the National Institute for Health Research (NIHR) Biomedical Research Centre at the South London and Maudsley National Health Service (NHS) Foundation Trust and by King's College London.",
+      "page_number": null
+    },
+    {
+      "text_id": 216,
+      "paragraph_id": 68,
+      "section_id": 21,
+      "text": "The views expressed are those of the authors and not necessarily those of the NHS, the NIHR, or the Department of Health and Social Care.",
+      "page_number": null
+    },
+    {
+      "text_id": 217,
+      "paragraph_id": 68,
+      "section_id": 21,
+      "text": "High-performance computing facilities were funded with capital equipment grants from the Guy's and St.",
+      "page_number": null
+    },
+    {
+      "text_id": 218,
+      "paragraph_id": 68,
+      "section_id": 21,
+      "text": "Thomas' Charity (TR130505) and Maudsley Charity (980).",
+      "page_number": null
+    },
+    {
+      "text_id": 219,
+      "paragraph_id": 68,
+      "section_id": 21,
+      "text": "T C Eley was partially funded by a program grant from the UK Medical Research Council (MR/M021475/1).",
+      "page_number": null
+    },
+    {
+      "text_id": 220,
+      "paragraph_id": 68,
+      "section_id": 21,
+      "text": "R Plomin was supported by a Medical Research Council Professorship award (G19/2).",
+      "page_number": null
+    },
+    {
+      "text_id": 221,
+      "paragraph_id": 68,
+      "section_id": 21,
+      "text": "T A McAdams and Y Ahmadzadeh were funded by a Sir Henry Dale Fellowship awarded to TA McAdams, jointly funded by the Wellcome Trust and the Royal Society (Grant No.",
+      "page_number": null
+    },
+    {
+      "text_id": 222,
+      "paragraph_id": 68,
+      "section_id": 21,
+      "text": "107706/Z/15/Z).",
+      "page_number": null
+    },
+    {
+      "text_id": 223,
+      "paragraph_id": 68,
+      "section_id": 21,
+      "text": "R Cheesman was supported by an Economic and Social Research Council studentship.",
+      "page_number": null
+    },
+    {
+      "text_id": 224,
+      "paragraph_id": 70,
+      "section_id": 22,
+      "text": "The author(s) declared that there were no conflicts of interest with respect to the authorship or the publication of this article.",
+      "page_number": null
+    },
+    {
+      "text_id": 225,
+      "paragraph_id": 72,
+      "section_id": 23,
+      "text": "All data used in the present study are available to qualified researchers from the UK Biobank at http://www.ukbio bank.ac.uk/.",
+      "page_number": null
+    },
+    {
+      "text_id": 226,
+      "paragraph_id": 72,
+      "section_id": 23,
+      "text": "The design and analysis plans for this study were not preregistered.",
+      "page_number": null
+    },
+    {
+      "text_id": 227,
+      "paragraph_id": 74,
+      "section_id": 24,
+      "text": "T C Eley and G Breen are joint senior authors of this article.",
+      "page_number": null
+    },
+    {
+      "text_id": 228,
+      "paragraph_id": 74,
+      "section_id": 24,
+      "text": "R Cheesman and G Breen conceived and designed the study.",
+      "page_number": null
+    },
+    {
+      "text_id": 229,
+      "paragraph_id": 74,
+      "section_id": 24,
+      "text": "Genotype-data quality control was conducted by A Hunjan and J R I Coleman.",
+      "page_number": null
+    },
+    {
+      "text_id": 230,
+      "paragraph_id": 74,
+      "section_id": 24,
+      "text": "R Cheesman analyzed the data and wrote the manuscript.",
+      "page_number": null
+    },
+    {
+      "text_id": 231,
+      "paragraph_id": 74,
+      "section_id": 24,
+      "text": "All of the authors provided critical revisions and approved the final version of the manuscript for submission.",
+      "page_number": null
+    },
+    {
+      "text_id": 232,
+      "paragraph_id": 76,
+      "section_id": 25,
+      "text": "Additional supporting information can be found at http:// journals.sagepub.com/doi/suppl/10.1177/0956797620904450",
+      "page_number": null
+    },
+    {
+      "text_id": 233,
+      "paragraph_id": 77,
+      "section_id": 26,
+      "text": "tions) = 7 years of education; Certificate of Secondary Education (CSE) or equivalent = 10 years; O level/ General Certificate of Secondary Education (GCSE) or equivalent = 10 years; A level/AS level or equivalent = 13 years; other professional qualification = 15 years; National Vocational Qualification (NVQ), Higher National Diploma (HNC), or equivalent = 19 years; college or university degree = 20 years.",
+      "page_number": null
+    },
+    {
+      "text_id": 234,
+      "paragraph_id": 78,
+      "section_id": 27,
+      "text": "Fig 2 Results of the regression of years of education on polygenic score for education, separately for 6,311 adoptees and 6,500 nonadopted individuals.",
+      "page_number": null
+    },
+    {
+      "text_id": 235,
+      "paragraph_id": 78,
+      "section_id": 27,
+      "text": "Best-fitting regression lines are shown for each group, and each data point represents one individual.",
+      "page_number": null
+    },
+    {
+      "text_id": 236,
+      "paragraph_id": 78,
+      "section_id": 27,
+      "text": "The two clusters of data points reflect the distinct groups of individuals who did and did not attend university.",
+      "page_number": null
+    },
+    {
+      "text_id": 237,
+      "paragraph_id": 79,
+      "section_id": 28,
+      "text": "Fig 3 Mean years of education (standardized) per decile of polygenic score for years of education (standardized), separately for adopted and nonadopted individuals.",
+      "page_number": null
+    },
+    {
+      "text_id": 238,
+      "paragraph_id": 79,
+      "section_id": 28,
+      "text": "Error bars show 95% confidence intervals.",
+      "page_number": null
+    },
+    {
+      "text_id": 239,
+      "paragraph_id": 80,
+      "section_id": 29,
+      "text": "Descriptive Statistics for Adopted and Nonadopted Individuals Included in the Study: For years of education, both ns and percentages of the subsample are given.",
+      "page_number": null
+    },
+    {
+      "text_id": 240,
+      "paragraph_id": 80,
+      "section_id": 29,
+      "text": "Adoptees were compared with the full sample of nonadopted individuals and with our smaller subsample used for genomic analyses (group d).",
+      "page_number": null
+    },
+    {
+      "text_id": 241,
+      "paragraph_id": 81,
+      "section_id": 30,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 242,
+      "paragraph_id": 82,
+      "section_id": 30,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 243,
+      "paragraph_id": 83,
+      "section_id": 30,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 244,
+      "paragraph_id": 84,
+      "section_id": 30,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 245,
+      "paragraph_id": 85,
+      "section_id": 30,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 246,
+      "paragraph_id": 86,
+      "section_id": 30,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 247,
+      "paragraph_id": 87,
+      "section_id": 30,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 248,
+      "paragraph_id": 88,
+      "section_id": 30,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 249,
+      "paragraph_id": 89,
+      "section_id": 30,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 250,
+      "paragraph_id": 90,
+      "section_id": 30,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 251,
+      "paragraph_id": 91,
+      "section_id": 30,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 252,
+      "paragraph_id": 92,
+      "section_id": 30,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 253,
+      "paragraph_id": 93,
+      "section_id": 30,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 254,
+      "paragraph_id": 94,
+      "section_id": 30,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 255,
+      "paragraph_id": 95,
+      "section_id": 30,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 256,
+      "paragraph_id": 96,
+      "section_id": 30,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 257,
+      "paragraph_id": 97,
+      "section_id": 30,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 258,
+      "paragraph_id": 98,
+      "section_id": 30,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 259,
+      "paragraph_id": 99,
+      "section_id": 30,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 260,
+      "paragraph_id": 100,
+      "section_id": 30,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 261,
+      "paragraph_id": 101,
+      "section_id": 30,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 262,
+      "paragraph_id": 102,
+      "section_id": 30,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 263,
+      "paragraph_id": 103,
+      "section_id": 30,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 264,
+      "paragraph_id": 104,
+      "section_id": 30,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 265,
+      "paragraph_id": 105,
+      "section_id": 30,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 266,
+      "paragraph_id": 106,
+      "section_id": 30,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 267,
+      "paragraph_id": 107,
+      "section_id": 30,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 268,
+      "paragraph_id": 108,
+      "section_id": 30,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 269,
+      "paragraph_id": 109,
+      "section_id": 30,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 270,
+      "paragraph_id": 110,
+      "section_id": 30,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 271,
+      "paragraph_id": 111,
+      "section_id": 30,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 272,
+      "paragraph_id": 112,
+      "section_id": 30,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 273,
+      "paragraph_id": 113,
+      "section_id": 30,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 274,
+      "paragraph_id": 114,
+      "section_id": 30,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 275,
+      "paragraph_id": 115,
+      "section_id": 30,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 276,
+      "paragraph_id": 116,
+      "section_id": 30,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 277,
+      "paragraph_id": 117,
+      "section_id": 30,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 278,
+      "paragraph_id": 118,
+      "section_id": 30,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 279,
+      "paragraph_id": 119,
+      "section_id": 30,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 280,
+      "paragraph_id": 120,
+      "section_id": 30,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 281,
+      "paragraph_id": 121,
+      "section_id": 30,
+      "text": "",
+      "page_number": null
+    }
+  ],
+  "section": [
+    {
+      "section_id": 0,
+      "header": "Abstract",
+      "parent_section_id": null,
+      "section_type": "abstract",
+      "classification_score": null
+    },
+    {
+      "section_id": 1,
+      "header": "[div-01]",
+      "parent_section_id": null,
+      "section_type": "intro",
+      "classification_score": null
+    },
+    {
+      "section_id": 3,
+      "header": "Sample, genotype quality control, and phenotype definition",
+      "parent_section_id": null,
+      "section_type": "method",
+      "classification_score": null
+    },
+    {
+      "section_id": 4,
+      "header": "Statistical analyses",
+      "parent_section_id": null,
+      "section_type": "method",
+      "classification_score": null
+    },
+    {
+      "section_id": 5,
+      "header": "Single-nucleotide-polymorphism (SNP) heritability estimation.",
+      "parent_section_id": null,
+      "section_type": "method",
+      "classification_score": null
+    },
+    {
+      "section_id": 6,
+      "header": "Polygenic scoring.",
+      "parent_section_id": null,
+      "section_type": "method",
+      "classification_score": null
+    },
+    {
+      "section_id": 7,
+      "header": "Supplemental analyses.",
+      "parent_section_id": null,
+      "section_type": "method",
+      "classification_score": null
+    },
+    {
+      "section_id": 8,
+      "header": "Polygenic-score-by-adoption interaction analyses.",
+      "parent_section_id": null,
+      "section_type": "method",
+      "classification_score": null
+    },
+    {
+      "section_id": 9,
+      "header": "Qualitative differences in the genetic influence on education by adoption status.",
+      "parent_section_id": null,
+      "section_type": "method",
+      "classification_score": null
+    },
+    {
+      "section_id": 11,
+      "header": "Sample analyzed",
+      "parent_section_id": null,
+      "section_type": "results",
+      "classification_score": null
+    },
+    {
+      "section_id": 12,
+      "header": "Phenotypic results",
+      "parent_section_id": null,
+      "section_type": "results",
+      "classification_score": null
+    },
+    {
+      "section_id": 13,
+      "header": "SNP heritability estimates",
+      "parent_section_id": null,
+      "section_type": "results",
+      "classification_score": null
+    },
+    {
+      "section_id": 14,
+      "header": "Polygenic-prediction results",
+      "parent_section_id": null,
+      "section_type": "results",
+      "classification_score": null
+    },
+    {
+      "section_id": 15,
+      "header": "Supplemental analyses",
+      "parent_section_id": null,
+      "section_type": "results",
+      "classification_score": null
+    },
+    {
+      "section_id": 16,
+      "header": "Polygenic-score-by-adoption interaction.",
+      "parent_section_id": null,
+      "section_type": "results",
+      "classification_score": null
+    },
+    {
+      "section_id": 17,
+      "header": "Variance Explained in Educational Attainment",
+      "parent_section_id": null,
+      "section_type": "results",
+      "classification_score": null
+    },
+    {
+      "section_id": 18,
+      "header": "Year-of-birth stratification analysis.",
+      "parent_section_id": null,
+      "section_type": "results",
+      "classification_score": null
+    },
+    {
+      "section_id": 19,
+      "header": "Discussion",
+      "parent_section_id": null,
+      "section_type": "discussion",
+      "classification_score": null
+    },
+    {
+      "section_id": 20,
+      "header": "Acknowledgments",
+      "parent_section_id": null,
+      "section_type": "acknowledgement",
+      "classification_score": null
+    },
+    {
+      "section_id": 21,
+      "header": "Funding",
+      "parent_section_id": null,
+      "section_type": "funding",
+      "classification_score": null
+    },
+    {
+      "section_id": 22,
+      "header": "Declaration of Conflicting Interests",
+      "parent_section_id": null,
+      "section_type": "conflict",
+      "classification_score": null
+    },
+    {
+      "section_id": 23,
+      "header": "Open Practices",
+      "parent_section_id": null,
+      "section_type": "conflict",
+      "classification_score": null
+    },
+    {
+      "section_id": 24,
+      "header": "Author Contributions",
+      "parent_section_id": null,
+      "section_type": "contribution",
+      "classification_score": null
+    },
+    {
+      "section_id": 25,
+      "header": "Supplemental Material",
+      "parent_section_id": null,
+      "section_type": "annex",
+      "classification_score": null
+    },
+    {
+      "section_id": 26,
+      "header": "",
+      "parent_section_id": null,
+      "section_type": "figure",
+      "classification_score": null
+    },
+    {
+      "section_id": 27,
+      "header": "Fig 2",
+      "parent_section_id": null,
+      "section_type": "figure",
+      "classification_score": null
+    },
+    {
+      "section_id": 28,
+      "header": "Fig 3",
+      "parent_section_id": null,
+      "section_type": "figure",
+      "classification_score": null
+    },
+    {
+      "section_id": 29,
+      "header": "Table 1 .",
+      "parent_section_id": null,
+      "section_type": "table",
+      "classification_score": null
+    },
+    {
+      "section_id": 30,
+      "header": "References",
+      "parent_section_id": null,
+      "section_type": "references",
+      "classification_score": null
+    }
+  ],
+  "url": [
+    {
+      "href": "http://www.ukbio",
+      "link_text": null,
+      "text_id": 225
+    },
+    {
+      "href": "bank.ac.uk",
+      "link_text": null,
+      "text_id": 225
+    },
+    {
+      "href": "journals.sagepub.com/doi/suppl/10.1177/0956797620904450",
+      "link_text": null,
+      "text_id": 232
+    }
+  ],
+  "bib": [
+    {
+      "bib_type": "article",
+      "doi": "10.1126/scitranslmed.3008601",
+      "title": "UK Biobank data: Come and get it",
+      "authors": "Allen, N E; Sudlow, C; Peakman, T; Collins, R; Biobank, ",
+      "editors": "",
+      "publisher": "",
+      "year": 2014,
+      "volume": "6",
+      "issue": "224",
+      "container": "Science Translational Medicine",
+      "first_page": null,
+      "last_page": null,
+      "bib_id": 0,
+      "year_suffix": "",
+      "text_id": 241
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1017/thg.2018",
+      "title": "The nature of nurture: Using a virtual-parent design to test parenting effects on children's educational attainment in genotyped families",
+      "authors": "Bates, T C; Maher, B S; Medland, S E; Mcaloney, K; Wright, M J; Hansell, N K; Gillespie, . .; , N A",
+      "editors": "",
+      "publisher": "",
+      "year": 2018,
+      "volume": "21",
+      "issue": "2",
+      "container": "Twin Research and Human Genetics",
+      "first_page": "73",
+      "last_page": "83",
+      "bib_id": 1,
+      "year_suffix": "",
+      "text_id": 242
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1080/01621459.1974.10482955",
+      "title": "Robust tests for the equality of variances",
+      "authors": "Brown, M B; Forsythe, A B",
+      "editors": "",
+      "publisher": "",
+      "year": 1974,
+      "volume": "69",
+      "issue": "",
+      "container": "Journal of the American Statistical Association",
+      "first_page": "364",
+      "last_page": "367",
+      "bib_id": 2,
+      "year_suffix": "",
+      "text_id": 243
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1038/ng.3406",
+      "title": "An atlas of genetic correlations across human diseases and traits",
+      "authors": "Bulik-Sullivan, B; Finucane, H K; Anttila, V; Gusev, A; Day, F R; Loh, P.-R; Neale, . .; , B M",
+      "editors": "",
+      "publisher": "",
+      "year": 2015,
+      "volume": "47",
+      "issue": "",
+      "container": "Nature Genetics",
+      "first_page": "1236",
+      "last_page": "1241",
+      "bib_id": 3,
+      "year_suffix": "",
+      "text_id": 244
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1038/ng.3211",
+      "title": "LD score regression distinguishes confounding from polygenicity in genome-wide association studies",
+      "authors": "Bulik-Sullivan, B K; Loh, P.-R; Finucane, H K; Ripke, S; Yang, J; Neale, B M",
+      "editors": "",
+      "publisher": "",
+      "year": 2015,
+      "volume": "47",
+      "issue": "",
+      "container": "Nature Genetics",
+      "first_page": "291",
+      "last_page": "295",
+      "bib_id": 4,
+      "year_suffix": "",
+      "text_id": 245
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1038/s41586-018-0579-z",
+      "title": "The UK Biobank resource with deep phenotyping and genomic data",
+      "authors": "Bycroft, C; Freeman, C; Petkova, D; Band, G; Elliott, L T; Sharp, K; Marchini, . .; , J",
+      "editors": "",
+      "publisher": "",
+      "year": 2018,
+      "volume": "562",
+      "issue": "",
+      "container": "Nature",
+      "first_page": "203",
+      "last_page": "209",
+      "bib_id": 5,
+      "year_suffix": "",
+      "text_id": 246
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1093/gigascience/giz082",
+      "title": "PRSice-2: Polygenic risk score software for biobank-scale data",
+      "authors": "Choi, S W; O'reilly, P F",
+      "editors": "",
+      "publisher": "",
+      "year": 2019,
+      "volume": "8",
+      "issue": "7",
+      "container": "GigaScience",
+      "first_page": null,
+      "last_page": null,
+      "bib_id": 6,
+      "year_suffix": "",
+      "text_id": 247
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1101/698464",
+      "title": "Separating measured genetic and environmental effects: Evidence linking parental genotype and adopted child outcomes",
+      "authors": "Domingue, B W; Fletcher, J",
+      "editors": "",
+      "publisher": "",
+      "year": 2019,
+      "volume": "",
+      "issue": "",
+      "container": "BioRxiv",
+      "first_page": null,
+      "last_page": null,
+      "bib_id": 7,
+      "year_suffix": "",
+      "text_id": 248
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1177/2332858415599972",
+      "title": "Polygenic influence on educational attainment: New evidence from the National Longitudinal Study of Adolescent to Adult Health",
+      "authors": "Domingue, B W; Belsky, D; Conley, D; Harris, K M; Boardman, J D",
+      "editors": "",
+      "publisher": "",
+      "year": 2015,
+      "volume": "1",
+      "issue": "3",
+      "container": "AERA Open",
+      "first_page": null,
+      "last_page": null,
+      "bib_id": 8,
+      "year_suffix": "",
+      "text_id": 249
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "How can we boost IQs of \"dull children\"?: A late adoption study",
+      "authors": "Duyme, M; Dumaret, A.-C; Tomkiewicz, S",
+      "editors": "",
+      "publisher": "",
+      "year": 1999,
+      "volume": "96",
+      "issue": "",
+      "container": "",
+      "first_page": "8790",
+      "last_page": "8794",
+      "bib_id": 9,
+      "year_suffix": "",
+      "text_id": 250
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1038/nrg.2018",
+      "title": "Using partitioned heritability methods to explore genetic architecture",
+      "authors": "Evans, L M; Keller, M C",
+      "editors": "",
+      "publisher": "",
+      "year": 2018,
+      "volume": "19",
+      "issue": "",
+      "container": "Nature Reviews Genetics",
+      "first_page": "185",
+      "last_page": null,
+      "bib_id": 10,
+      "year_suffix": "",
+      "text_id": 251
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "Comparison of sociodemographic and health-related characteristics of UK Biobank participants with those of the general population",
+      "authors": "Fry, A; Littlejohns, T J; Sudlow, C; Doherty, N; Adamska, L; Sprosen, T; Allen, . .; , N E",
+      "editors": "",
+      "publisher": "",
+      "year": 2017,
+      "volume": "186",
+      "issue": "",
+      "container": "American Journal of Epidemiology",
+      "first_page": "1026",
+      "last_page": "1034",
+      "bib_id": 11,
+      "year_suffix": "",
+      "text_id": 252
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1257/jel.49.3.615",
+      "title": "The causal effect of parents' schooling on children's schooling: A comparison of estimation methods",
+      "authors": "Holmlund, H; Lindahl, M; Plug, E",
+      "editors": "",
+      "publisher": "",
+      "year": 2011,
+      "volume": "49",
+      "issue": "",
+      "container": "Journal of Economic Literature",
+      "first_page": "615",
+      "last_page": "651",
+      "bib_id": 12,
+      "year_suffix": "",
+      "text_id": 253
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "A comparative study of child welfare adoptions with other types of adopted children and birth children",
+      "authors": "Howard, J A; Smith, S L; Ryan, S D",
+      "editors": "",
+      "publisher": "",
+      "year": 2004,
+      "volume": "7",
+      "issue": "3",
+      "container": "Adoption Quarterly",
+      "first_page": "1",
+      "last_page": "30",
+      "bib_id": 13,
+      "year_suffix": "",
+      "text_id": 254
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1016/j.biopsych.2013.09.006",
+      "title": "Gene × Environment interaction studies have not properly controlled for potential confounders: The problem and the (simple) solution",
+      "authors": "Keller, M C",
+      "editors": "",
+      "publisher": "",
+      "year": 2014,
+      "volume": "75",
+      "issue": "",
+      "container": "Biological Psychiatry",
+      "first_page": "18",
+      "last_page": "24",
+      "bib_id": 14,
+      "year_suffix": "",
+      "text_id": 255
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1016/S0140-6736(18)33067-8",
+      "title": "UK Biobank, big data, and the consequences of non-representativeness",
+      "authors": "Keyes, K M; Westreich, D",
+      "editors": "",
+      "publisher": "",
+      "year": 2019,
+      "volume": "393",
+      "issue": "",
+      "container": "The Lancet",
+      "first_page": null,
+      "last_page": null,
+      "bib_id": 15,
+      "year_suffix": "",
+      "text_id": 256
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1126/science.aan6877",
+      "title": "The nature of nurture: Effects of parental genotypes",
+      "authors": "Kong, A; Thorleifsson, G; Frigge, M L; Vilhjalmsson, B J; Young, A I; Thorgeirsson, T E; Stefansson, . .; , K",
+      "editors": "",
+      "publisher": "",
+      "year": 2018,
+      "volume": "359",
+      "issue": "",
+      "container": "Science",
+      "first_page": "424",
+      "last_page": "428",
+      "bib_id": 16,
+      "year_suffix": "",
+      "text_id": 257
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1073/pnas.1707178114",
+      "title": "Widespread covariation of early environmental exposures and trait-associated polygenic variation",
+      "authors": "Krapohl, E; Hannigan, L J; Pingault, J B; Patel, H; Kadeva, N; Curtis, C; Plomin, . .; , R",
+      "editors": "",
+      "publisher": "",
+      "year": 2017,
+      "volume": "114",
+      "issue": "",
+      "container": "Proceedings of the National Academy of Sciences",
+      "first_page": "11727",
+      "last_page": "11732",
+      "bib_id": 17,
+      "year_suffix": "",
+      "text_id": 258
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1038/s41588-018-0147-3",
+      "title": "Gene discovery and polygenic prediction from a genome-wide association study of educational attainment in 1.1 million individuals",
+      "authors": "Lee, J J; Wedow, R; Okbay, A; Kong, E; Maghzian, O; Zacher, M; Karlsson Linnér, . .; , R",
+      "editors": "",
+      "publisher": "",
+      "year": 2018,
+      "volume": "50",
+      "issue": "",
+      "container": "Nature Genetics",
+      "first_page": "1112",
+      "last_page": "1121",
+      "bib_id": 18,
+      "year_suffix": "",
+      "text_id": 259
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1007/bf01065506",
+      "title": "Genotype-environment correlation and IQ",
+      "authors": "Loehlin, J C; Defries, J C",
+      "editors": "",
+      "publisher": "",
+      "year": 1987,
+      "volume": "17",
+      "issue": "",
+      "container": "Behavior Genetics",
+      "first_page": "263",
+      "last_page": "277",
+      "bib_id": 19,
+      "year_suffix": "",
+      "text_id": 260
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1111/1469-7610.00367",
+      "title": "School achievement and adult qualifications among adoptees: A longitudinal study",
+      "authors": "Maughan, B; Collishaw, S; Pickles, A",
+      "editors": "",
+      "publisher": "",
+      "year": 1998,
+      "volume": "39",
+      "issue": "",
+      "container": "Journal of Child Psychology and Psychiatry, and Allied Disciplines",
+      "first_page": "669",
+      "last_page": "685",
+      "bib_id": 20,
+      "year_suffix": "",
+      "text_id": 261
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1037/dev0000710",
+      "title": "Siblings reared apart: A sibling comparison study on rearing environment differences",
+      "authors": "Natsuaki, M N; Neiderhiser, J M; Harold, G T; Shaw, D S; Reiss, D; Leve, L D",
+      "editors": "",
+      "publisher": "",
+      "year": 2019,
+      "volume": "55",
+      "issue": "",
+      "container": "Developmental Psychology",
+      "first_page": "1182",
+      "last_page": "1190",
+      "bib_id": 21,
+      "year_suffix": "",
+      "text_id": 262
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "",
+      "authors": "Plomin, R",
+      "editors": "",
+      "publisher": "SAGE",
+      "year": 1994,
+      "volume": "",
+      "issue": "",
+      "container": "",
+      "first_page": null,
+      "last_page": null,
+      "bib_id": 22,
+      "year_suffix": "",
+      "text_id": 263
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1007/s10519-014-9673-7",
+      "title": "Genotype-environment correlation in the era of DNA",
+      "authors": "Plomin, R",
+      "editors": "",
+      "publisher": "",
+      "year": 2014,
+      "volume": "44",
+      "issue": "",
+      "container": "Behavior Genetics",
+      "first_page": "629",
+      "last_page": "638",
+      "bib_id": 23,
+      "year_suffix": "",
+      "text_id": 264
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1177/1745691615617439",
+      "title": "Top 10 replicated findings from behavioral genetics",
+      "authors": "Plomin, R; Defries, J C; Knopik, V S; Neiderhiser, J M",
+      "editors": "",
+      "publisher": "",
+      "year": 2016,
+      "volume": "11",
+      "issue": "",
+      "container": "Perspectives on Psychological Science",
+      "first_page": "3",
+      "last_page": "23",
+      "bib_id": 24,
+      "year_suffix": "",
+      "text_id": 265
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1037/0033-2909.84.2.309",
+      "title": "Genotypeenvironment interaction and correlation in the analysis of human behavior",
+      "authors": "Plomin, R; Defries, J C; Loehlin, J C",
+      "editors": "",
+      "publisher": "",
+      "year": 1977,
+      "volume": "84",
+      "issue": "",
+      "container": "Psychological Bulletin",
+      "first_page": "309",
+      "last_page": "322",
+      "bib_id": 25,
+      "year_suffix": "",
+      "text_id": 266
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1037/0012-1649.21.3.391",
+      "title": "Genetic and environmental components of \"environmental\" influences",
+      "authors": "Plomin, R; Loehlin, J C; Defries, J C",
+      "editors": "",
+      "publisher": "",
+      "year": 1985,
+      "volume": "21",
+      "issue": "",
+      "container": "Developmental Psychology",
+      "first_page": "391",
+      "last_page": "402",
+      "bib_id": 26,
+      "year_suffix": "",
+      "text_id": 267
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1038/nrg.2017.104",
+      "title": "The new genetics of intelligence",
+      "authors": "Plomin, R; Stumm, S",
+      "editors": "",
+      "publisher": "",
+      "year": 2018,
+      "volume": "19",
+      "issue": "",
+      "container": "Nature Reviews Genetics",
+      "first_page": "148",
+      "last_page": "159",
+      "bib_id": 27,
+      "year_suffix": "",
+      "text_id": 268
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "",
+      "authors": "Core, Team",
+      "editors": "",
+      "publisher": "",
+      "year": 2019,
+      "volume": "",
+      "issue": "",
+      "container": "",
+      "first_page": null,
+      "last_page": null,
+      "bib_id": 28,
+      "year_suffix": "",
+      "text_id": 269
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "",
+      "authors": "",
+      "editors": "",
+      "publisher": "",
+      "year": null,
+      "volume": "",
+      "issue": "",
+      "container": "",
+      "first_page": null,
+      "last_page": null,
+      "bib_id": 29,
+      "year_suffix": null,
+      "text_id": 270
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "",
+      "authors": "Rutter, M",
+      "editors": "",
+      "publisher": "Wiley",
+      "year": 2006,
+      "volume": "",
+      "issue": "",
+      "container": "",
+      "first_page": null,
+      "last_page": null,
+      "bib_id": 30,
+      "year_suffix": "",
+      "text_id": 271
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1016/j.ajhg.2019.06.006",
+      "title": "Comparing withinand between-family polygenic score prediction",
+      "authors": "Selzam, S; Ritchie, S J; Pingault, J.-B; Reynolds, C A; O'reilly, P F; Plomin, R",
+      "editors": "",
+      "publisher": "",
+      "year": 2019,
+      "volume": "105",
+      "issue": "",
+      "container": "The American Journal of Human Genetics",
+      "first_page": "351",
+      "last_page": "363",
+      "bib_id": 31,
+      "year_suffix": "",
+      "text_id": 272
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "Individual and group differences in adoption studies of IQ",
+      "authors": "Turkheimer, E",
+      "editors": "",
+      "publisher": "",
+      "year": 1991,
+      "volume": "110",
+      "issue": "",
+      "container": "Psychological Bulletin",
+      "first_page": "392",
+      "last_page": "405",
+      "bib_id": 32,
+      "year_suffix": "",
+      "text_id": 273
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1037/0033-2909.131.2.301",
+      "title": "Adoption and cognitive development: A meta-analytic comparison of adopted and nonadopted children's IQ and school performance",
+      "authors": "Van Ijzendoorn, M H; Juffer, F; Poelhuis, C W K",
+      "editors": "",
+      "publisher": "",
+      "year": 2005,
+      "volume": "131",
+      "issue": "",
+      "container": "Psychological Bulletin",
+      "first_page": "301",
+      "last_page": "316",
+      "bib_id": 33,
+      "year_suffix": "",
+      "text_id": 274
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1037/dev0000709",
+      "title": "Genetics of nurture: A test of the hypothesis that parents' genetics predict their observed caregiving",
+      "authors": "Wertz, J; Belsky, J; Moffitt, T E; Belsky, D W; Harrington, H; Avinun, R; Caspi, . .; , A",
+      "editors": "",
+      "publisher": "",
+      "year": 2019,
+      "volume": "55",
+      "issue": "",
+      "container": "Developmental Psychology",
+      "first_page": "1461",
+      "last_page": "1472",
+      "bib_id": 34,
+      "year_suffix": "",
+      "text_id": 275
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1111/cdev.13329",
+      "title": "Using DNA from mothers and children to study parental investment in children's educational attainment",
+      "authors": "Wertz, J; Moffitt, T E; Agnew-Blais, J; Arseneault, L; Belsky, D W; Corcoran, D L; Caspi, . .; , A",
+      "editors": "",
+      "publisher": "",
+      "year": 2018,
+      "volume": "",
+      "issue": "",
+      "container": "Child Development",
+      "first_page": null,
+      "last_page": null,
+      "bib_id": 35,
+      "year_suffix": "",
+      "text_id": 276
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1093/bioinformatics/btq340",
+      "title": "METAL: Fast and efficient meta-analysis of genomewide association scans",
+      "authors": "Willer, C J; Li, Y; Abecasis, G R",
+      "editors": "",
+      "publisher": "",
+      "year": 2010,
+      "volume": "26",
+      "issue": "",
+      "container": "Bioinformatics",
+      "first_page": "2190",
+      "last_page": "2191",
+      "bib_id": 36,
+      "year_suffix": "",
+      "text_id": 277
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1038/ng.3097",
+      "title": "Defining the role of common variation in the genomic and biological architecture of adult human height",
+      "authors": "Wood, A R; Esko, T; Yang, J; Vedantam, S; Pers, T H; Gustafsson, S; Kutalik, . .; , Z",
+      "editors": "",
+      "publisher": "",
+      "year": 2014,
+      "volume": "46",
+      "issue": "",
+      "container": "Nature Genetics",
+      "first_page": "1173",
+      "last_page": "1186",
+      "bib_id": 37,
+      "year_suffix": "",
+      "text_id": 278
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1016/j.ajhg.2010.11.011",
+      "title": "GCTA: A tool for genome-wide complex trait analysis",
+      "authors": "Yang, J; Lee, S H; Goddard, M E; Visscher, P M",
+      "editors": "",
+      "publisher": "",
+      "year": 2011,
+      "volume": "88",
+      "issue": "",
+      "container": "The American Journal of Human Genetics",
+      "first_page": "76",
+      "last_page": "82",
+      "bib_id": 38,
+      "year_suffix": "",
+      "text_id": 279
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1038/s41588-018-0178-9",
+      "title": "Relatedness disequilibrium regression estimates heritability without environmental bias",
+      "authors": "Young, A I; Frigge, M L; Gudbjartsson, D F; Thorleifsson, G; Bjornsdottir, G; Sulem, P; Kong, . .; , A",
+      "editors": "",
+      "publisher": "",
+      "year": 2018,
+      "volume": "50",
+      "issue": "",
+      "container": "Nature Genetics",
+      "first_page": "1304",
+      "last_page": "1310",
+      "bib_id": 39,
+      "year_suffix": "",
+      "text_id": 280
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1093/bioinformatics/btw613",
+      "title": "LD Hub: A centralized database and web interface to perform LD score regression that maximizes the potential of summary level GWAS data for SNP heritability and genetic correlation analysis",
+      "authors": "Zheng, J; Erzurumluoglu, A M; Elsworth, B L; Kemp, J P; Howe, L; Haycock, P C; Neale, . .; , B M",
+      "editors": "",
+      "publisher": "",
+      "year": 2017,
+      "volume": "33",
+      "issue": "",
+      "container": "Bioinformatics",
+      "first_page": "272",
+      "last_page": "279",
+      "bib_id": 40,
+      "year_suffix": "",
+      "text_id": 281
+    }
+  ],
+  "xref": [
+    {
+      "xref_id": 0,
+      "xref_type": "bib",
+      "contents": "(Allen, Sudlow, Peakman, Collins, & UK Biobank, 2014)",
+      "text_id": 35
+    },
+    {
+      "xref_id": 1,
+      "xref_type": "bib",
+      "contents": "(Bates et al., 2018;",
+      "text_id": 11
+    },
+    {
+      "xref_id": 1,
+      "xref_type": "bib",
+      "contents": "(Bates et al., 2018;",
+      "text_id": 12
+    },
+    {
+      "xref_id": 1,
+      "xref_type": "bib",
+      "contents": "(Bates et al., 2018;",
+      "text_id": 13
+    },
+    {
+      "xref_id": 1,
+      "xref_type": "bib",
+      "contents": "(Bates et al., 2018;",
+      "text_id": 21
+    },
+    {
+      "xref_id": 1,
+      "xref_type": "bib",
+      "contents": "(Bates et al., 2018;",
+      "text_id": 23
+    },
+    {
+      "xref_id": 1,
+      "xref_type": "bib",
+      "contents": "(Bates et al., 2018;",
+      "text_id": 24
+    },
+    {
+      "xref_id": 2,
+      "xref_type": "bib",
+      "contents": "(Brown & Forsythe, 1974)",
+      "text_id": 50
+    },
+    {
+      "xref_id": 5,
+      "xref_type": "bib",
+      "contents": "(Bycroft et al., 2018)",
+      "text_id": 39
+    },
+    {
+      "xref_id": 6,
+      "xref_type": "bib",
+      "contents": "(Choi & O'Reilly, 2019)",
+      "text_id": 71
+    },
+    {
+      "xref_id": 6,
+      "xref_type": "bib",
+      "contents": "(Choi & O'Reilly, 2019)",
+      "text_id": 104
+    },
+    {
+      "xref_id": 7,
+      "xref_type": "bib",
+      "contents": "(Domingue & Fletcher, 2019)",
+      "text_id": 198
+    },
+    {
+      "xref_id": 8,
+      "xref_type": "bib",
+      "contents": "Domingue, Belsky, Conley, Harris, & Boardman, 2015;",
+      "text_id": 21
+    },
+    {
+      "xref_id": 9,
+      "xref_type": "bib",
+      "contents": "(Duyme, Dumaret, & Tomkiewicz, 1999;",
+      "text_id": 183
+    },
+    {
+      "xref_id": 10,
+      "xref_type": "bib",
+      "contents": "(Evans & Keller, 2018)",
+      "text_id": 126
+    },
+    {
+      "xref_id": 11,
+      "xref_type": "bib",
+      "contents": "(Fry et al., 2017;",
+      "text_id": 192
+    },
+    {
+      "xref_id": 12,
+      "xref_type": "bib",
+      "contents": "(Holmlund, Lindahl, & Plug, 2011)",
+      "text_id": 11
+    },
+    {
+      "xref_id": 13,
+      "xref_type": "bib",
+      "contents": "(Howard, Smith, & Ryan, 2004)",
+      "text_id": 196
+    },
+    {
+      "xref_id": 14,
+      "xref_type": "bib",
+      "contents": "(Keller, 2014)",
+      "text_id": 85
+    },
+    {
+      "xref_id": 15,
+      "xref_type": "bib",
+      "contents": "Keyes & Westreich, 2019)",
+      "text_id": 192
+    },
+    {
+      "xref_id": 16,
+      "xref_type": "bib",
+      "contents": "Kong et al., 2018)",
+      "text_id": 13
+    },
+    {
+      "xref_id": 16,
+      "xref_type": "bib",
+      "contents": "Kong et al., 2018;",
+      "text_id": 21
+    },
+    {
+      "xref_id": 16,
+      "xref_type": "bib",
+      "contents": "Kong et al., 2018;",
+      "text_id": 23
+    },
+    {
+      "xref_id": 16,
+      "xref_type": "bib",
+      "contents": "Kong et al., 2018;",
+      "text_id": 24
+    },
+    {
+      "xref_id": 16,
+      "xref_type": "bib",
+      "contents": "Kong et al., 2018)",
+      "text_id": 21
+    },
+    {
+      "xref_id": 16,
+      "xref_type": "bib",
+      "contents": "Kong et al., 2018)",
+      "text_id": 23
+    },
+    {
+      "xref_id": 16,
+      "xref_type": "bib",
+      "contents": "Kong et al., 2018)",
+      "text_id": 24
+    },
+    {
+      "xref_id": 16,
+      "xref_type": "bib",
+      "contents": "(Kong et al., 2018)",
+      "text_id": 21
+    },
+    {
+      "xref_id": 16,
+      "xref_type": "bib",
+      "contents": "(Kong et al., 2018)",
+      "text_id": 23
+    },
+    {
+      "xref_id": 16,
+      "xref_type": "bib",
+      "contents": "(Kong et al., 2018)",
+      "text_id": 24
+    },
+    {
+      "xref_id": 16,
+      "xref_type": "bib",
+      "contents": "(Kong et al., 2018;",
+      "text_id": 77
+    },
+    {
+      "xref_id": 16,
+      "xref_type": "bib",
+      "contents": "(Kong et al., 2018;",
+      "text_id": 176
+    },
+    {
+      "xref_id": 16,
+      "xref_type": "bib",
+      "contents": "(Kong et al., 2018;",
+      "text_id": 177
+    },
+    {
+      "xref_id": 17,
+      "xref_type": "bib",
+      "contents": "(Krapohl et al., 2017;",
+      "text_id": 208
+    },
+    {
+      "xref_id": 18,
+      "xref_type": "bib",
+      "contents": "(Lee et al., 2018)",
+      "text_id": 12
+    },
+    {
+      "xref_id": 18,
+      "xref_type": "bib",
+      "contents": "(Lee et al., 2018)",
+      "text_id": 46
+    },
+    {
+      "xref_id": 18,
+      "xref_type": "bib",
+      "contents": "Lee et al., 2018)",
+      "text_id": 68
+    },
+    {
+      "xref_id": 18,
+      "xref_type": "bib",
+      "contents": "(Lee et al., 2018)",
+      "text_id": 97
+    },
+    {
+      "xref_id": 20,
+      "xref_type": "bib",
+      "contents": "(Maughan, Collishaw, & Pickles, 1998)",
+      "text_id": 182
+    },
+    {
+      "xref_id": 21,
+      "xref_type": "bib",
+      "contents": "(Natsuaki et al., 2019;",
+      "text_id": 32
+    },
+    {
+      "xref_id": 22,
+      "xref_type": "bib",
+      "contents": "Plomin, 1994)",
+      "text_id": 31
+    },
+    {
+      "xref_id": 23,
+      "xref_type": "bib",
+      "contents": "(Plomin, 2014)",
+      "text_id": 180
+    },
+    {
+      "xref_id": 24,
+      "xref_type": "bib",
+      "contents": "(Plomin, DeFries, Knopik, & Neiderhiser, 2016)",
+      "text_id": 1
+    },
+    {
+      "xref_id": 25,
+      "xref_type": "bib",
+      "contents": "(Plomin, DeFries, & Loehlin, 1977)",
+      "text_id": 2
+    },
+    {
+      "xref_id": 26,
+      "xref_type": "bib",
+      "contents": "(Plomin, Loehlin, & DeFries, 1985)",
+      "text_id": 19
+    },
+    {
+      "xref_id": 27,
+      "xref_type": "bib",
+      "contents": "(Plomin & von Stumm, 2018)",
+      "text_id": 12
+    },
+    {
+      "xref_id": 30,
+      "xref_type": "bib",
+      "contents": "Rutter, 2006)",
+      "text_id": 32
+    },
+    {
+      "xref_id": 30,
+      "xref_type": "bib",
+      "contents": "(Rutter, 2006)",
+      "text_id": 197
+    },
+    {
+      "xref_id": 31,
+      "xref_type": "bib",
+      "contents": "Selzam et al., 2019;",
+      "text_id": 21
+    },
+    {
+      "xref_id": 31,
+      "xref_type": "bib",
+      "contents": "Selzam et al., 2019)",
+      "text_id": 77
+    },
+    {
+      "xref_id": 31,
+      "xref_type": "bib",
+      "contents": "Selzam et al., 2019)",
+      "text_id": 176
+    },
+    {
+      "xref_id": 31,
+      "xref_type": "bib",
+      "contents": "Selzam et al., 2019)",
+      "text_id": 177
+    },
+    {
+      "xref_id": 32,
+      "xref_type": "bib",
+      "contents": "Turkheimer, 1991)",
+      "text_id": 183
+    },
+    {
+      "xref_id": 33,
+      "xref_type": "bib",
+      "contents": "(van IJzendoorn, Juffer, & Poelhuis, 2005)",
+      "text_id": 182
+    },
+    {
+      "xref_id": 34,
+      "xref_type": "bib",
+      "contents": "Wertz et al., 2019;",
+      "text_id": 208
+    },
+    {
+      "xref_id": 35,
+      "xref_type": "bib",
+      "contents": "Wertz et al., 2018;",
+      "text_id": 21
+    },
+    {
+      "xref_id": 35,
+      "xref_type": "bib",
+      "contents": "Wertz et al., 2018)",
+      "text_id": 208
+    },
+    {
+      "xref_id": 36,
+      "xref_type": "bib",
+      "contents": "(Willer, Li, & Abecasis, 2010)",
+      "text_id": 103
+    },
+    {
+      "xref_id": 37,
+      "xref_type": "bib",
+      "contents": "(Wood et al., 2014)",
+      "text_id": 78
+    },
+    {
+      "xref_id": 38,
+      "xref_type": "bib",
+      "contents": "Lee, Goddard, & Visscher, 2011)",
+      "text_id": 53
+    },
+    {
+      "xref_id": 38,
+      "xref_type": "bib",
+      "contents": "(Yang et al., 2011)",
+      "text_id": 102
+    },
+    {
+      "xref_id": 39,
+      "xref_type": "bib",
+      "contents": "Young et al., 2018)",
+      "text_id": 21
+    },
+    {
+      "xref_id": 40,
+      "xref_type": "bib",
+      "contents": "(Zheng et al., 2017)",
+      "text_id": 93
+    },
+    {
+      "xref_id": 40,
+      "xref_type": "bib",
+      "contents": "(Zheng et al., 2017)",
+      "text_id": 106
+    },
+    {
+      "xref_id": null,
+      "xref_type": "bib",
+      "contents": "(Loehlin & De Fries, 1987;",
+      "text_id": 31
+    },
+    {
+      "xref_id": null,
+      "xref_type": "bib",
+      "contents": "Bulik-Sullivan, Loh, et al., 2015)",
+      "text_id": 61
+    },
+    {
+      "xref_id": null,
+      "xref_type": "bib",
+      "contents": "(1930s-1970s)",
+      "text_id": 96
+    },
+    {
+      "xref_id": null,
+      "xref_type": "bib",
+      "contents": "(Bulik-Sullivan, Finucane, et al., 2015)",
+      "text_id": 106
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "2",
+      "text_id": 140
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "S2",
+      "text_id": 167
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "3",
+      "text_id": 148
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "1",
+      "text_id": 121
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "1",
+      "text_id": 127
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "1",
+      "text_id": 129
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "1",
+      "text_id": null
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "S1",
+      "text_id": 162
+    },
+    {
+      "xref_id": null,
+      "xref_type": null,
+      "contents": "no qualifica",
+      "text_id": 47
+    },
+    {
+      "xref_id": null,
+      "xref_type": "table",
+      "contents": "1",
+      "text_id": 111
+    },
+    {
+      "xref_id": null,
+      "xref_type": "table",
+      "contents": "1",
+      "text_id": 114
+    },
+    {
+      "xref_id": null,
+      "xref_type": "table",
+      "contents": "1",
+      "text_id": 119
+    },
+    {
+      "xref_id": null,
+      "xref_type": "table",
+      "contents": "S1",
+      "text_id": 129
+    },
+    {
+      "xref_id": null,
+      "xref_type": "table",
+      "contents": "S2",
+      "text_id": 130
+    },
+    {
+      "xref_id": null,
+      "xref_type": "table",
+      "contents": "S5",
+      "text_id": 136
+    },
+    {
+      "xref_id": null,
+      "xref_type": "table",
+      "contents": "S3",
+      "text_id": 142
+    },
+    {
+      "xref_id": null,
+      "xref_type": "table",
+      "contents": "S4",
+      "text_id": 157
+    },
+    {
+      "xref_id": null,
+      "xref_type": "table",
+      "contents": "S6",
+      "text_id": 169
+    }
+  ],
+  "figure": [
+    {
+      "figure_id": 1,
+      "section_id": 26,
+      "image": null,
+      "page_number": null
+    },
+    {
+      "figure_id": 2,
+      "section_id": 27,
+      "image": null,
+      "page_number": null
+    },
+    {
+      "figure_id": 3,
+      "section_id": 28,
+      "image": null,
+      "page_number": null
+    }
+  ],
+  "table": [
+    {
+      "table_id": 1,
+      "section_id": 29,
+      "html": "<table>\n  <row>\n    <cell/>\n    <cell>Adopted<\/cell>\n    <cell>Nonadopted<\/cell>\n    <cell>Nonadopted<\/cell>\n  <\/row>\n  <row>\n    <cell>Variable<\/cell>\n    <cell>(n = 6,311)<\/cell>\n    <cell>(n = 375,343)<\/cell>\n    <cell>(Group d; n = 6,500)<\/cell>\n  <\/row>\n  <row>\n    <cell>Age<\/cell>\n    <cell>M = 56.4, SD = 8.53<\/cell>\n    <cell>M = 56.7, SD = 8.01<\/cell>\n    <cell>M = 56.7, SD = 8.06<\/cell>\n  <\/row>\n  <row>\n    <cell>Sex<\/cell>\n    <cell>48% male (n = 3,010)<\/cell>\n    <cell>46% male (n = 172,706)<\/cell>\n    <cell>46% male (n = 2,978)<\/cell>\n  <\/row>\n  <row>\n    <cell>Years of education<\/cell>\n    <cell/>\n    <cell/>\n    <cell/>\n  <\/row>\n  <row>\n    <cell>7<\/cell>\n    <cell>1,209 (19%)<\/cell>\n    <cell>62,651 (17%)<\/cell>\n    <cell>1,064 (16%)<\/cell>\n  <\/row>\n  <row>\n    <cell>10<\/cell>\n    <cell>1,780 (28%)<\/cell>\n    <cell>100,210 (27%)<\/cell>\n    <cell>1,709 (26%)<\/cell>\n  <\/row>\n  <row>\n    <cell>13<\/cell>\n    <cell>749 (12%)<\/cell>\n    <cell>43,448 (12%)<\/cell>\n    <cell>755 (12%)<\/cell>\n  <\/row>\n  <row>\n    <cell>15<\/cell>\n    <cell>350 (6%)<\/cell>\n    <cell>19,428 (5%)<\/cell>\n    <cell>354 (5%)<\/cell>\n  <\/row>\n  <row>\n    <cell>19<\/cell>\n    <cell>433 (7%)<\/cell>\n    <cell>24,300 (6%)<\/cell>\n    <cell>428 (7%)<\/cell>\n  <\/row>\n  <row>\n    <cell>20<\/cell>\n    <cell>1,790 (28%)<\/cell>\n    <cell>125,306 (33%)<\/cell>\n    <cell>2,190 (34%)<\/cell>\n  <\/row>\n<\/table>",
+      "contents": null,
+      "page_number": null
+    }
+  ],
+  "eq": [
+    {
+      "text_id": 76,
+      "grp_id": 1,
+      "lhs": "N",
+      "comp": "=",
+      "rhs": "643,003"
+    },
+    {
+      "text_id": 81,
+      "grp_id": 2,
+      "lhs": "N",
+      "comp": "=",
+      "rhs": "381,654"
+    },
+    {
+      "text_id": 88,
+      "grp_id": 3,
+      "lhs": "N",
+      "comp": "=",
+      "rhs": "12,811"
+    },
+    {
+      "text_id": 91,
+      "grp_id": 4,
+      "lhs": "N",
+      "comp": "=",
+      "rhs": "375,343"
+    },
+    {
+      "text_id": 113,
+      "grp_id": 5,
+      "lhs": "p",
+      "comp": "=",
+      "rhs": ".002"
+    },
+    {
+      "text_id": 113,
+      "grp_id": 5,
+      "lhs": "p",
+      "comp": "=",
+      "rhs": "3.2"
+    },
+    {
+      "text_id": 115,
+      "grp_id": 6,
+      "lhs": "p",
+      "comp": "=",
+      "rhs": ".026"
+    },
+    {
+      "text_id": 115,
+      "grp_id": 6,
+      "lhs": "p",
+      "comp": "=",
+      "rhs": ".009"
+    },
+    {
+      "text_id": 117,
+      "grp_id": 7,
+      "lhs": "p",
+      "comp": "=",
+      "rhs": ".033"
+    },
+    {
+      "text_id": 117,
+      "grp_id": 7,
+      "lhs": "p",
+      "comp": "=",
+      "rhs": ".008"
+    },
+    {
+      "text_id": 118,
+      "grp_id": 8,
+      "lhs": "p",
+      "comp": "=",
+      "rhs": "3.3"
+    },
+    {
+      "text_id": 118,
+      "grp_id": 8,
+      "lhs": "p",
+      "comp": "<",
+      "rhs": "2.2"
+    },
+    {
+      "text_id": 122,
+      "grp_id": 9,
+      "lhs": "SE",
+      "comp": "=",
+      "rhs": "0.079"
+    },
+    {
+      "text_id": 122,
+      "grp_id": 9,
+      "lhs": "SE",
+      "comp": "=",
+      "rhs": "0.079"
+    },
+    {
+      "text_id": 125,
+      "grp_id": 10,
+      "lhs": "SE",
+      "comp": "=",
+      "rhs": "0.005"
+    },
+    {
+      "text_id": 125,
+      "grp_id": 10,
+      "lhs": "N",
+      "comp": "=",
+      "rhs": "375,343"
+    },
+    {
+      "text_id": 125,
+      "grp_id": 10,
+      "lhs": "SE",
+      "comp": "=",
+      "rhs": "0.073"
+    },
+    {
+      "text_id": 128,
+      "grp_id": 11,
+      "lhs": "p",
+      "comp": "=",
+      "rhs": "8.23"
+    },
+    {
+      "text_id": 131,
+      "grp_id": 12,
+      "lhs": "SE",
+      "comp": "=",
+      "rhs": "0.008"
+    },
+    {
+      "text_id": 131,
+      "grp_id": 12,
+      "lhs": "SE",
+      "comp": "=",
+      "rhs": "0.008"
+    },
+    {
+      "text_id": 131,
+      "grp_id": 12,
+      "lhs": "p",
+      "comp": "=",
+      "rhs": ".62"
+    },
+    {
+      "text_id": 134,
+      "grp_id": 13,
+      "lhs": "SE",
+      "comp": "=",
+      "rhs": "0.004"
+    },
+    {
+      "text_id": 135,
+      "grp_id": 14,
+      "lhs": "SE",
+      "comp": "=",
+      "rhs": "0.002"
+    },
+    {
+      "text_id": 135,
+      "grp_id": 14,
+      "lhs": "SE",
+      "comp": "=",
+      "rhs": "0.005"
+    },
+    {
+      "text_id": 137,
+      "grp_id": 15,
+      "lhs": "2",
+      "comp": "=",
+      "rhs": ".008"
+    },
+    {
+      "text_id": 137,
+      "grp_id": 15,
+      "lhs": "p",
+      "comp": "<",
+      "rhs": "2"
+    },
+    {
+      "text_id": 143,
+      "grp_id": 16,
+      "lhs": "estimate",
+      "comp": "=",
+      "rhs": "-0.33"
+    },
+    {
+      "text_id": 143,
+      "grp_id": 16,
+      "lhs": "p",
+      "comp": "=",
+      "rhs": "2.66"
+    },
+    {
+      "text_id": 145,
+      "grp_id": 17,
+      "lhs": "estimate",
+      "comp": "=",
+      "rhs": "-0.18"
+    },
+    {
+      "text_id": 145,
+      "grp_id": 17,
+      "lhs": "p",
+      "comp": "=",
+      "rhs": ".0009"
+    },
+    {
+      "text_id": 155,
+      "grp_id": 18,
+      "lhs": "SE",
+      "comp": "=",
+      "rhs": "0.03"
+    },
+    {
+      "text_id": 155,
+      "grp_id": 18,
+      "lhs": "SE",
+      "comp": "=",
+      "rhs": "0.03"
+    },
+    {
+      "text_id": 156,
+      "grp_id": 19,
+      "lhs": "p",
+      "comp": "=",
+      "rhs": "7.05"
+    },
+    {
+      "text_id": 160,
+      "grp_id": 20,
+      "lhs": "SE",
+      "comp": "=",
+      "rhs": "0.21"
+    },
+    {
+      "text_id": 171,
+      "grp_id": 21,
+      "lhs": "2",
+      "comp": "=",
+      "rhs": ".04"
+    },
+    {
+      "text_id": 171,
+      "grp_id": 21,
+      "lhs": "2",
+      "comp": "=",
+      "rhs": ".07"
+    },
+    {
+      "text_id": 171,
+      "grp_id": 21,
+      "lhs": "p",
+      "comp": "=",
+      "rhs": "8.23"
+    },
+    {
+      "text_id": 172,
+      "grp_id": 22,
+      "lhs": "2",
+      "comp": "=",
+      "rhs": ".04"
+    },
+    {
+      "text_id": 233,
+      "grp_id": 23,
+      "lhs": "equivalent",
+      "comp": "=",
+      "rhs": "10"
+    },
+    {
+      "text_id": 233,
+      "grp_id": 23,
+      "lhs": "equivalent",
+      "comp": "=",
+      "rhs": "10"
+    },
+    {
+      "text_id": 233,
+      "grp_id": 23,
+      "lhs": "equivalent",
+      "comp": "=",
+      "rhs": "13"
+    },
+    {
+      "text_id": 233,
+      "grp_id": 23,
+      "lhs": "qualification",
+      "comp": "=",
+      "rhs": "15"
+    },
+    {
+      "text_id": 233,
+      "grp_id": 23,
+      "lhs": "equivalent",
+      "comp": "=",
+      "rhs": "19"
+    },
+    {
+      "text_id": 233,
+      "grp_id": 23,
+      "lhs": "degree",
+      "comp": "=",
+      "rhs": "20"
+    },
+    {
+      "text_id": 42,
+      "grp_id": 24,
+      "lhs": "metric",
+      "comp": ">",
+      "rhs": "0.4"
+    },
+    {
+      "text_id": 154,
+      "grp_id": 25,
+      "lhs": "of",
+      "comp": ">",
+      "rhs": "0.025"
+    }
+  ]
+}

@@ -1,0 +1,5522 @@
+{
+  "paper_id": "0956797620970548",
+  "info": [
+    {
+      "title": "Titrating the Smell of Fear: Initial Evidence for Dose-Invariant Behavioral, Physiological, and Neural Responses",
+      "keywords": ["fear", "olfaction", "dose response", "sweat", "social cognition", "functional MRI", "amygdala", "morph task", "communication", "sniff", "open data", "open materials"],
+      "doi": "10.1177/0956797620970548",
+      "file_hash": "17e1a9085b1cc09d",
+      "input_format": "grobid 0.9.0",
+      "file_name": "data-raw/psychsci/grobid_0.9.0-full/0956797620970548.xml",
+      "bibr_version": "10.0",
+      "paper_type": "unknown",
+      "paper_type_confidence": 0,
+      "oecd_l1": null,
+      "oecd_l2": null,
+      "oecd_confidence": null
+    }
+  ],
+  "author": [
+    {
+      "author_id": 1,
+      "given": "Jasper",
+      "family": "De Groot",
+      "affiliation": "Department of Neurology University of Pennsylvania",
+      "email": "",
+      "corresponding": false,
+      "orcid": "",
+      "role": []
+    },
+    {
+      "author_id": 2,
+      "given": "Peter",
+      "family": "Kirk",
+      "affiliation": "Department of Neurology University of Pennsylvania",
+      "email": "",
+      "corresponding": false,
+      "orcid": "",
+      "role": []
+    },
+    {
+      "author_id": 3,
+      "given": "Jay",
+      "family": "Gottfried",
+      "affiliation": "Department of Neurology University of Pennsylvania",
+      "email": "",
+      "corresponding": false,
+      "orcid": "",
+      "role": []
+    }
+  ],
+  "text": [
+    {
+      "text_id": 1,
+      "paragraph_id": 1,
+      "section_id": 0,
+      "text": "It is well accepted that emotional intensity scales with stimulus strength.",
+      "page_number": null
+    },
+    {
+      "text_id": 2,
+      "paragraph_id": 1,
+      "section_id": 0,
+      "text": "Here, we used physiological and neuroimaging techniques to ask whether human body odor-which can convey salient social information-also induces dosedependent effects on behavior, physiology, and neural responses.",
+      "page_number": null
+    },
+    {
+      "text_id": 3,
+      "paragraph_id": 1,
+      "section_id": 0,
+      "text": "To test this, we first collected sweat from 36 males classified as low-, medium-, and high-fear responders.",
+      "page_number": null
+    },
+    {
+      "text_id": 4,
+      "paragraph_id": 1,
+      "section_id": 0,
+      "text": "Next, in a double-blind within-subjects functional-MRI design, 31 women were exposed to three doses of fear-associated human chemosignals and neutral sweat while viewing face morphs varying between expressions of fear and disgust.",
+      "page_number": null
+    },
+    {
+      "text_id": 5,
+      "paragraph_id": 1,
+      "section_id": 0,
+      "text": "Behaviorally, we found that all doses of fear-sweat volatiles biased participants toward perceiving fear in ambiguous morphs, a dose-invariant effect generally repeated across physiological and neural measures.",
+      "page_number": null
+    },
+    {
+      "text_id": 6,
+      "paragraph_id": 1,
+      "section_id": 0,
+      "text": "Bayesian dose-response analysis indicated moderate evidence for the null hypothesis (except for the left amygdala), tentatively suggesting that the human olfactory system engages an all-ornone mechanism for tagging fear above a minimal threshold.",
+      "page_number": null
+    },
+    {
+      "text_id": 7,
+      "paragraph_id": 3,
+      "section_id": 1,
+      "text": "One striking capacity humans share with other animals is that our body odors can transmit social information (e.g., McGann, 2017;Parma et al., 2017;Roberts et al., 2020;cf.",
+      "page_number": null
+    },
+    {
+      "text_id": 8,
+      "paragraph_id": 3,
+      "section_id": 1,
+      "text": "Wyatt, 2020, for a critical view).",
+      "page_number": null
+    },
+    {
+      "text_id": 9,
+      "paragraph_id": 3,
+      "section_id": 1,
+      "text": "Physiological changes impact the quality (Smeets et al., 2020) and quantity of odor molecules emitted by senders, providing receivers with cues about the sender's internal state.",
+      "page_number": null
+    },
+    {
+      "text_id": 10,
+      "paragraph_id": 3,
+      "section_id": 1,
+      "text": "For example, experiments in the fields of psychology and neuroscience have yielded abundant support for the role of human fear odor in modulating human perception, behavior, and neural responses (for a metaanalysis, see de Groot & Smeets, 2017).",
+      "page_number": null
+    },
+    {
+      "text_id": 11,
+      "paragraph_id": 3,
+      "section_id": 1,
+      "text": "Receivers exposed to sweat emitted by a fearful individual were typically quicker to perceive fearful facial expressions (Kamiloglu et al., 2018) and more likely to view ambiguous happyfearful faces as fearful (Zhou & Chen, 2009).",
+      "page_number": null
+    },
+    {
+      "text_id": 12,
+      "paragraph_id": 3,
+      "section_id": 1,
+      "text": "Exposure to fear odor has elicited adaptive fear-specific changes in facial musculature and concomitant increases in eyescanning behavior and air intake to better detect threat (de Groot et al., 2012).",
+      "page_number": null
+    },
+    {
+      "text_id": 13,
+      "paragraph_id": 3,
+      "section_id": 1,
+      "text": "Additionally, functional MRI (fMRI) studies have found that, compared with exercise sweat, fear-odor processing recruits the amygdala and fusiform face gyrus (FFG; Maier et al., 2019;Mujica-Parodi et al., 2009;Prehn-Kristensen et al., 2009), both of which are associated with the processing of fearful faces (Dolan et al., 2001).",
+      "page_number": null
+    },
+    {
+      "text_id": 14,
+      "paragraph_id": 3,
+      "section_id": 1,
+      "text": "Subsequent imaging research has supported cross-modal integration by focusing on face processing in the context of fear odor, demonstrating greater engagement of FFG for the processing of fearful faces (Wudarczyk et al., 2016).",
+      "page_number": null
+    },
+    {
+      "text_id": 15,
+      "paragraph_id": 4,
+      "section_id": 1,
+      "text": "Earlier work has demonstrated robust cross-modal effects of fear odor by exclusively focusing on discrete emotion categories (fear vs. nonfear; e.g., de Groot & Smeets, 2017;Parma et al., 2017).",
+      "page_number": null
+    },
+    {
+      "text_id": 16,
+      "paragraph_id": 4,
+      "section_id": 1,
+      "text": "A fearful person also emits qualitatively different molecules than happy and neutral individuals do (Smeets et al., 2020).",
+      "page_number": null
+    },
+    {
+      "text_id": 17,
+      "paragraph_id": 4,
+      "section_id": 1,
+      "text": "Here, we examined another important aspect of emotions, namely, whether humans can chemically communicate emotion quantity or intensity.",
+      "page_number": null
+    },
+    {
+      "text_id": 18,
+      "paragraph_id": 4,
+      "section_id": 1,
+      "text": "The fact that stimulus strength is proportionate to emotional intensity is well accepted: Sharper pins elicit more pain; louder growls elicit more fear.",
+      "page_number": null
+    },
+    {
+      "text_id": 19,
+      "paragraph_id": 4,
+      "section_id": 1,
+      "text": "Humans can decode different emotional intensities in faces (Hess et al., 1997) and voices ( Juslin & Laukka, 2001), yet evidence is lacking for such a phenomenon in the olfactory domain.",
+      "page_number": null
+    },
+    {
+      "text_id": 20,
+      "paragraph_id": 4,
+      "section_id": 1,
+      "text": "Like other sensory systems, olfactory perception and behavior critically depend on maintaining stable representations of stimulus identity amid varying levels of odor intensity (Cleland et al., 2012;Roland et al., 2017;Wojcik & Sirotin, 2014).",
+      "page_number": null
+    },
+    {
+      "text_id": 21,
+      "paragraph_id": 4,
+      "section_id": 1,
+      "text": "In this study, we focused on two related hypotheses: first, that each level of fear odor is capable of inducing fearspecific responses when compared with neutral, nonfearful sweat, and second, that increasing \"doses\" of fear in sweat would have a greater impact on the behavioral, physiological, and neural expression of fear.",
+      "page_number": null
+    },
+    {
+      "text_id": 22,
+      "paragraph_id": 5,
+      "section_id": 1,
+      "text": "Prior to testing hypotheses about the representation of fear-odor identity and intensity, we first began by obtaining fear and neutral sweat from a sender group.",
+      "page_number": null
+    },
+    {
+      "text_id": 23,
+      "paragraph_id": 5,
+      "section_id": 1,
+      "text": "In this first stage (see de Groot et al., 2020), sweat was collected using absorbent pads under the armpits of 36 participants in whom fear and calmness were induced using prevalidated film clips of horror movies and nature movies, respectively.",
+      "page_number": null
+    },
+    {
+      "text_id": 24,
+      "paragraph_id": 5,
+      "section_id": 1,
+      "text": "On the basis of subjective feelings and physiological measures (skin conductance, heart rate, breathing rate), we were able to sort the sender participants into three groups: those who experienced a low amount of fear as a result of watching the horror movie, those who experienced a medium amount of fear, and those who experienced a high amount of fear.",
+      "page_number": null
+    },
+    {
+      "text_id": 25,
+      "paragraph_id": 5,
+      "section_id": 1,
+      "text": "By categorizing the senders in this way (de Groot et al., 2020), we found that fear intensity (low, medium, high) was linearly encoded in the quantity of sweat produced, with higher quantities of sweat also emitting more volatile odorant molecules, according to photoionization-detector measurements (Fig. 1; see also the Supplemental Material available online).",
+      "page_number": null
+    },
+    {
+      "text_id": 26,
+      "paragraph_id": 5,
+      "section_id": 1,
+      "text": "These data supported the notion that humans may express the quantity of experienced fear in their sweat.",
+      "page_number": null
+    },
+    {
+      "text_id": 27,
+      "paragraph_id": 7,
+      "section_id": 2,
+      "text": "Study materials and data are available on OSF at https:// osf.io/y76p2/.",
+      "page_number": null
+    },
+    {
+      "text_id": 28,
+      "paragraph_id": 9,
+      "section_id": 3,
+      "text": "Thirty-one right-handed, healthy female participants (mean age = 23.23 years, range = 18-38) provided written informed consent to take part in the study, which was approved by the University of Pennsylvania Institutional Review Board (Protocol No.",
+      "page_number": null
+    },
+    {
+      "text_id": 29,
+      "paragraph_id": 9,
+      "section_id": 3,
+      "text": "828758).",
+      "page_number": null
+    },
+    {
+      "text_id": 30,
+      "paragraph_id": 9,
+      "section_id": 3,
+      "text": "We recruited female participants because of their tendency for superior olfaction (Brand & Millot, 2001) and because they typically show larger effects of olfactory-induced emotional contagion (de Groot et al., 2014;de Groot & Smeets, 2017), thus increasing the study's effectiveness.",
+      "page_number": null
+    },
+    {
+      "text_id": 31,
+      "paragraph_id": 9,
+      "section_id": 3,
+      "text": "Our estimated participant numbers were based on effect sizes obtained in comparable studies (summarized by de Groot & Smeets, 2017), in which 25 to 30 participants typically provided sufficient statistical power (80%) to detect a small-to-medium-sized effect (Hedges's g = .36, 95% confidence interval [CI] = [.31, .41]) on comparable indirect measures of emotion, such as facial electromyography, face ratings, startle reflexes, and neural responses (α = .05; correlation among repeated measures: r = .8).",
+      "page_number": null
+    },
+    {
+      "text_id": 32,
+      "paragraph_id": 9,
+      "section_id": 3,
+      "text": "Our sample size was also dependent on the amount of sweat pads available from our previous study (de Groot et al., 2020), with 12 participants (senders) estimated to provide enough material for 32 receivers.",
+      "page_number": null
+    },
+    {
+      "text_id": 33,
+      "paragraph_id": 9,
+      "section_id": 3,
+      "text": "All participants reported being fluent in English and that they had normal or correctedto-normal vision; no abnormal neurological conditions, head trauma, or brain lesions; no significant olfactory impairment; and no allergies; all reported that they",
+      "page_number": null
+    },
+    {
+      "text_id": 34,
+      "paragraph_id": 11,
+      "section_id": 4,
+      "text": "Can human smells influence our social lives?",
+      "page_number": null
+    },
+    {
+      "text_id": 35,
+      "paragraph_id": 11,
+      "section_id": 4,
+      "text": "There is evidence that psychological experience of fear translates into a unique chemical (odor) signature in that person's sweat and that others can use the chemical signature as a cue to the sender's internal state.",
+      "page_number": null
+    },
+    {
+      "text_id": 36,
+      "paragraph_id": 11,
+      "section_id": 4,
+      "text": "In this research, we asked whether there is a functional benefit of a high-sensitivity sensory system that picks up fear signals from even the lowest doses of fear in sweat.",
+      "page_number": null
+    },
+    {
+      "text_id": 37,
+      "paragraph_id": 11,
+      "section_id": 4,
+      "text": "We found that humans actually communicate how much fear they are experiencing via their body odor.",
+      "page_number": null
+    },
+    {
+      "text_id": 38,
+      "paragraph_id": 11,
+      "section_id": 4,
+      "text": "What is more, humans seemingly tag different fear doses as \"fearful\" or \"disgusting\" following an all-or-none principle.",
+      "page_number": null
+    },
+    {
+      "text_id": 39,
+      "paragraph_id": 11,
+      "section_id": 4,
+      "text": "This ensures that the receivers of these fear odors are safe rather than sorry.",
+      "page_number": null
+    },
+    {
+      "text_id": 40,
+      "paragraph_id": 11,
+      "section_id": 4,
+      "text": "Our research shows that social smells interact cross-modally with ambiguous visual information to exert their functions beneath the radar of conscious reporting, underlining smells' stealth influence on our lives. were nonsmokers, not pregnant, and not taking medication that could impact the study.",
+      "page_number": null
+    },
+    {
+      "text_id": 41,
+      "paragraph_id": 13,
+      "section_id": 5,
+      "text": "Odor stimuli.",
+      "page_number": null
+    },
+    {
+      "text_id": 42,
+      "paragraph_id": 13,
+      "section_id": 5,
+      "text": "We used fear and neutral sweat samples from 36 senders enrolled in a previous study (de Groot et al., 2020).",
+      "page_number": null
+    },
+    {
+      "text_id": 43,
+      "paragraph_id": 13,
+      "section_id": 5,
+      "text": "Starting 2 days before the donation session, these participants followed strict criteria based on prior experiments (Kamiloglu et al., 2018;Zhou & Chen, 2009) to avoid contamination of their sweat samples (e.g., the consumption of garlic and the use of fragranced hygiene products were prohibited).",
+      "page_number": null
+    },
+    {
+      "text_id": 44,
+      "paragraph_id": 13,
+      "section_id": 5,
+      "text": "On the test day, they watched 30 min of pilot-tested fear clips (i.e., \"Vicious,\" \"Cop Cam,\" \"100% Organic,\" \"Mr.",
+      "page_number": null
+    },
+    {
+      "text_id": 45,
+      "paragraph_id": 13,
+      "section_id": 5,
+      "text": "Creak,\" \"Night Night Nancy,\" \"Blair Witch Project,\" and \"The Binding Box\"; available at https://osf.io/4dtqb/) and a calming wildlife documentary (the BBC's \"Yellowstone: Autumn\"), counterbalanced and separated by a 10-min break, while we measured their subjective emotional experience and physiological responses (heart rate, skin conductance, and respiratory rate).",
+      "page_number": null
+    },
+    {
+      "text_id": 46,
+      "paragraph_id": 13,
+      "section_id": 5,
+      "text": "To assign senders to three categories of fear intensity (low, medium, and high), we used a multivariate approach that combined participants' physiological responses and subjective ratings.",
+      "page_number": null
+    },
+    {
+      "text_id": 47,
+      "paragraph_id": 13,
+      "section_id": 5,
+      "text": "Specifically, partialleast-squares discriminant analysis produced a regression equation that weighted the unique contribution of the subjective and physiological variables to yield the best classification of fear (vs. neutral) responses (100% classification accuracy; for the regression equation, and for an absolute ranking of variables, see the Supplemental Material).",
+      "page_number": null
+    },
+    {
+      "text_id": 48,
+      "paragraph_id": 13,
+      "section_id": 5,
+      "text": "Multiplying these regression weights with participants' raw scores (obtained in the fear condition) resulted in a composite fear score.",
+      "page_number": null
+    },
+    {
+      "text_id": 49,
+      "paragraph_id": 13,
+      "section_id": 5,
+      "text": "On the basis of this score, we ranked 36 fear-induced participants and divided them into three groups (n = 12).",
+      "page_number": null
+    },
+    {
+      "text_id": 50,
+      "paragraph_id": 13,
+      "section_id": 5,
+      "text": "Classification into the low-, medium-, and high-fear groups occurred well above chance (83% vs. 33%), as shown by unbiased",
+      "page_number": null
+    },
+    {
+      "text_id": 51,
+      "paragraph_id": 14,
+      "section_id": 5,
+      "text": "* * * -1 0 1 2 3 4 GSR (µS) b Neutral Low Fear Medium Fear High Fear Physiology of Senders * * 0 100 200 300 400 Armpit Sweat (mg) c Neutral Low Fear Medium Fear High Fear Physiology of Senders * * * * * * * * 0 1 2 3 4 5 Fearful Tense Nervous Stressed Intensity a Neutral Low Fear Medium Fear High Fear Subjective Feelings of Senders 0 100 200 300 400 0 7 14 21 28 35 Volatiles Emitted (mV) Trial Number d S1-S3: Neutral Sweat Dose (32.5 mg) S1: Low Fear-Sweat Dose (45 mg) S2: Medium Fear-Sweat Dose (113 mg) S3: High Fear-Sweat Dose (195 mg) leave-one-subject-out cross-validation (for more details, see de Groot et al., 2020).",
+      "page_number": null
+    },
+    {
+      "text_id": 52,
+      "paragraph_id": 14,
+      "section_id": 5,
+      "text": "For each odor category (low fear, medium fear, high fear, neutral), sweat pads were pooled across six senders (each contributing 12.5 cm 2 ) to attenuate interindividual differences in sweat production, causing stimuli to regress in fear level to the mean of each category (low, medium, high).",
+      "page_number": null
+    },
+    {
+      "text_id": 53,
+      "paragraph_id": 14,
+      "section_id": 5,
+      "text": "Because photoionization-detector recordings showed signs of sweat-stimulus decay on the second use (i.e., the sweat emitted significantly fewer volatiles; see de Groot et al., 2020), each receiver was presented with fresh samples.",
+      "page_number": null
+    },
+    {
+      "text_id": 54,
+      "paragraph_id": 14,
+      "section_id": 5,
+      "text": "Odors were delivered using a custom-built, four-channel, computer-controlled olfactometer.",
+      "page_number": null
+    },
+    {
+      "text_id": 55,
+      "paragraph_id": 14,
+      "section_id": 5,
+      "text": "Sweat pads (75 cm 2 ) were distributed over four widemouthed 60-ml amber bottles (Fisherbrand, Waltham, MA).",
+      "page_number": null
+    },
+    {
+      "text_id": 56,
+      "paragraph_id": 14,
+      "section_id": 5,
+      "text": "The bottles' polyvinyl-lined caps contained holes for Versilon SE-200 inert tubing (1/8-in. inner diameter, 1/4-in. outer diameter; US Plastic, Lima, OH), so that medical-grade room air could carry the odor to the nasal endpiece that was connected to the participant's nose (akin to the way air circulation in the real world would carry odorants from the body or clothing to your nose).",
+      "page_number": null
+    },
+    {
+      "text_id": 57,
+      "paragraph_id": 14,
+      "section_id": 5,
+      "text": "A MATLAB script (The Math-Works, Natick, MA) triggered the randomized opening of one of four odor valves and their connected odor channel (mean intertrial time: 12.5 s).",
+      "page_number": null
+    },
+    {
+      "text_id": 58,
+      "paragraph_id": 14,
+      "section_id": 5,
+      "text": "The olfactometer was equipped with two independent mass-flow controllers (Alicat Scientific, Tucson, AZ) that kept a constant airflow (3.2 liters per minute).",
+      "page_number": null
+    },
+    {
+      "text_id": 59,
+      "paragraph_id": 14,
+      "section_id": 5,
+      "text": "During stimulus presentation, 95% of air (3.04 liters per minute) traveled over the sweat pad (odor channel), while 5% followed a separate air channel, devised to wash out residual odor between stimulus presentations.",
+      "page_number": null
+    },
+    {
+      "text_id": 60,
+      "paragraph_id": 15,
+      "section_id": 5,
+      "text": "Face stimuli.",
+      "page_number": null
+    },
+    {
+      "text_id": 61,
+      "paragraph_id": 15,
+      "section_id": 5,
+      "text": "We used images of two male Caucasian actors from the Radboud Face Database (IDs 28 and 33) displaying fearful and disgusted faces (Langner et al., 2010).",
+      "page_number": null
+    },
+    {
+      "text_id": 62,
+      "paragraph_id": 15,
+      "section_id": 5,
+      "text": "Using Photoshop, we converted these stimuli to gray scale and removed features exterior to facial musculature (hair, ears, and background).",
+      "page_number": null
+    },
+    {
+      "text_id": 63,
+      "paragraph_id": 15,
+      "section_id": 5,
+      "text": "We then morphed these processed images using FantaMorph software (Version 5.4.8, Abrosoft, 2016) to create a set of ambiguous faces.",
+      "page_number": null
+    },
+    {
+      "text_id": 64,
+      "paragraph_id": 15,
+      "section_id": 5,
+      "text": "Our final set of stimuli consisted of anchor images (100% disgust, 0% fear; 0% disgust, 100% fear) and morphs containing a mixture of disgust and fear (in 1% increments, from 1% to 99%).",
+      "page_number": null
+    },
+    {
+      "text_id": 65,
+      "paragraph_id": 15,
+      "section_id": 5,
+      "text": "We perceptually tailored the stimuli, calculating each participant's point of subject equality (PSE; the most ambiguous face) without olfactory cues prior to testing.",
+      "page_number": null
+    },
+    {
+      "text_id": 66,
+      "paragraph_id": 15,
+      "section_id": 5,
+      "text": "We then selected six morphs surrounding this point (-15%, -9%, -3%, +3%, +6%, and +15% fear) for each actor for the eventual scanning session.",
+      "page_number": null
+    },
+    {
+      "text_id": 67,
+      "paragraph_id": 15,
+      "section_id": 5,
+      "text": "For example, if a participant's PSE for a given actor was a face originally morphed with 46% fear and 54% disgust, the eventual morphs used be 31% fear, 37% fear, 43% fear, 49% fear, 55% fear, and 61% fear.",
+      "page_number": null
+    },
+    {
+      "text_id": 68,
+      "paragraph_id": 17,
+      "section_id": 6,
+      "text": "We pilot-tested whether our morph task was subject to olfactory influence.",
+      "page_number": null
+    },
+    {
+      "text_id": 69,
+      "paragraph_id": 17,
+      "section_id": 6,
+      "text": "Nine female participants (mean age = 21.56 years, range = 18-26) were asked to classify the facial expression of two male actors (IDs 28 and 33) from the Radboud Face Database.",
+      "page_number": null
+    },
+    {
+      "text_id": 70,
+      "paragraph_id": 17,
+      "section_id": 6,
+      "text": "The actors' expressions were morphed between disgust and fear (35%-65%), and participants had to classify each expression as \"disgust\" or \"fear\" while smelling two different doses of artificial sweat smell (isovaleric acid [IVA]) and odorless air.",
+      "page_number": null
+    },
+    {
+      "text_id": 71,
+      "paragraph_id": 17,
+      "section_id": 6,
+      "text": "Participants completed six blocks of 21 trials (unique combinations of seven morphs and three odors).",
+      "page_number": null
+    },
+    {
+      "text_id": 72,
+      "paragraph_id": 17,
+      "section_id": 6,
+      "text": "Prior to the morph task, the level of IVA was intensity calibrated per participant by modifying the olfactometer's airflow passing through the odor bottle (vs. a separate air channel) and, if necessary, by changing the IVA concentration.",
+      "page_number": null
+    },
+    {
+      "text_id": 73,
+      "paragraph_id": 17,
+      "section_id": 6,
+      "text": "This way, we created a subjectively perceived weaker IVA stimulus (lower dose: M = 0.014% IVA in mineral oil, range = 0.01%-0.05%) and a stronger IVA stimulus (higher dose: M = 0.3%, range = 0.1%-1%; Fig.",
+      "page_number": null
+    },
+    {
+      "text_id": 74,
+      "paragraph_id": 17,
+      "section_id": 6,
+      "text": "2).",
+      "page_number": null
+    },
+    {
+      "text_id": 75,
+      "paragraph_id": 18,
+      "section_id": 6,
+      "text": "A repeated measures analysis of variance (ANOVA) showed a significant main effect of odor, F(2, 16) = 5.48, p = .015, η 2 = .04, 90% CI = [.02, .61], and of morph level, F(6, 48) = 15.01, p < .001, η 2 = .45, 90% CI = [.46, .71].",
+      "page_number": null
+    },
+    {
+      "text_id": 76,
+      "paragraph_id": 18,
+      "section_id": 6,
+      "text": "Although the number of morphs identified as \"disgust\" were not differentially impacted by the lower and higher IVA dose, t(16) = 1.30, p = .213, d = 0.38, 95% CI = [-0.11, 0.87] (Holm-Bonferroni corrected), when compared with odorless air, both doses of artificial sweat biased participants to see more disgust across the spectrum of fear-disgust morphs, t(16) = 3.05, p = .008, d = 0.97, 95% CI = [0.08, 1.86].",
+      "page_number": null
+    },
+    {
+      "text_id": 77,
+      "paragraph_id": 18,
+      "section_id": 6,
+      "text": "We expected this disgust perception bias as induced by artificial sweat to be reversed for human sweat carrying fear-related information capable of inducing a greater fear perception bias.",
+      "page_number": null
+    },
+    {
+      "text_id": 78,
+      "paragraph_id": 20,
+      "section_id": 7,
+      "text": "On the test day, frozen sweat pads were removed from the freezer (-80° C) approximately 45 min prior to olfactometer delivery in the scanner.",
+      "page_number": null
+    },
+    {
+      "text_id": 79,
+      "paragraph_id": 20,
+      "section_id": 7,
+      "text": "Participants were first asked to rate the intensity and pleasantness of all four odors (neutral, low fear, medium fear, high fear).",
+      "page_number": null
+    },
+    {
+      "text_id": 80,
+      "paragraph_id": 20,
+      "section_id": 7,
+      "text": "This was followed by a discrimination task, which consisted of 12 trials of a two-alternative forced-choice reminder task (Van Hout et al., 2011).",
+      "page_number": null
+    },
+    {
+      "text_id": 81,
+      "paragraph_id": 20,
+      "section_id": 7,
+      "text": "On each trial, participants first smelled a reference odor, after which they were presented with two test odors, one of which was the reference odor.",
+      "page_number": null
+    },
+    {
+      "text_id": 82,
+      "paragraph_id": 20,
+      "section_id": 7,
+      "text": "Participants had to select the reference odor from the test odors (50% chance).",
+      "page_number": null
+    },
+    {
+      "text_id": 83,
+      "paragraph_id": 20,
+      "section_id": 7,
+      "text": "These psychometric tasks were conducted to ensure that our neural and behavioral effects were not driven by conscious awareness of hedonic differences or by the explicit ability to discriminate the odors.",
+      "page_number": null
+    },
+    {
+      "text_id": 84,
+      "paragraph_id": 20,
+      "section_id": 7,
+      "text": "We conducted these tests at the beginning of the experiment to ensure maximal odorant delivery so that our results would not be confounded either by lack of odorant delivery or by psychophysiological effects such as adaptation or habituation.",
+      "page_number": null
+    },
+    {
+      "text_id": 85,
+      "paragraph_id": 20,
+      "section_id": 7,
+      "text": "After the psychometric tasks, our main paradigm (Fig. 3a) employed a face-morph task.",
+      "page_number": null
+    },
+    {
+      "text_id": 86,
+      "paragraph_id": 20,
+      "section_id": 7,
+      "text": "In this procedure, participants had to decide that an emotionally ambiguous face displayed fear or disgust.",
+      "page_number": null
+    },
+    {
+      "text_id": 87,
+      "paragraph_id": 20,
+      "section_id": 7,
+      "text": "A few seconds before the face appeared, participants had to make a brief sniff to detect a very small quantity of odor that they were told would be added to the air stream, which could be different each time.",
+      "page_number": null
+    },
+    {
+      "text_id": 88,
+      "paragraph_id": 20,
+      "section_id": 7,
+      "text": "Participants were told about the nature of the odors and their expected influence on face ratings only during the debriefing.",
+      "page_number": null
+    },
+    {
+      "text_id": 89,
+      "paragraph_id": 21,
+      "section_id": 7,
+      "text": "Participants had two no-odor practice blocks (total: eight trials) using the anchored faces (100% fear or 100% disgust) prior to beginning the main task (cf.",
+      "page_number": null
+    },
+    {
+      "text_id": 90,
+      "paragraph_id": 21,
+      "section_id": 7,
+      "text": "Mujica-Parodi et al., 2009).",
+      "page_number": null
+    },
+    {
+      "text_id": 91,
+      "paragraph_id": 21,
+      "section_id": 7,
+      "text": "The main task consisted of 10 blocks, each comprising 24 randomized trials presenting unique combinations of morph level (six) and odor (four).",
+      "page_number": null
+    },
+    {
+      "text_id": 92,
+      "paragraph_id": 21,
+      "section_id": 7,
+      "text": "Breaks between blocks were self-paced.",
+      "page_number": null
+    },
+    {
+      "text_id": 93,
+      "paragraph_id": 21,
+      "section_id": 7,
+      "text": "The whole procedure was double blind.",
+      "page_number": null
+    },
+    {
+      "text_id": 94,
+      "paragraph_id": 23,
+      "section_id": 8,
+      "text": "Data exclusion.",
+      "page_number": null
+    },
+    {
+      "text_id": 95,
+      "paragraph_id": 23,
+      "section_id": 8,
+      "text": "Similar to procedures preregistered in other fMRI work (Botvinik-Nezer et al., 2019), four participants' data were fully excluded because of a high (> 20%) rate of missing behavioral responses (M = 25.11% invalid responses: 0.21% of responses were too fast, 7.81% were too slow as per our criteria-see the Morph Task subsection under Data Analysis-and 17.09% were missing altogether).",
+      "page_number": null
+    },
+    {
+      "text_id": 96,
+      "paragraph_id": 23,
+      "section_id": 8,
+      "text": "We verified that invalid responses occurred randomly across fMRI runs, morph levels, and odors (see Fig.",
+      "page_number": null
+    },
+    {
+      "text_id": 97,
+      "paragraph_id": 23,
+      "section_id": 8,
+      "text": "S3 in the Supplemental Material), which could indicate participants' general fatigue, boredom, or lack of confidence in their responses.",
+      "page_number": null
+    },
+    {
+      "text_id": 98,
+      "paragraph_id": 23,
+      "section_id": 8,
+      "text": "In addition, one run for three participants was excluded because of a technical error in the procedure, and three trials across two participants were excluded from fMRI analysis because they missed the sniff cue.",
+      "page_number": null
+    },
+    {
+      "text_id": 99,
+      "paragraph_id": 23,
+      "section_id": 8,
+      "text": "Additionally, odor-intensity, valence, and discrimination ratings were missing for one of the participants.",
+      "page_number": null
+    },
+    {
+      "text_id": 100,
+      "paragraph_id": 23,
+      "section_id": 8,
+      "text": "One other participant dropped out in the middle of the study, and her data were not included in the analyses.",
+      "page_number": null
+    },
+    {
+      "text_id": 101,
+      "paragraph_id": 23,
+      "section_id": 8,
+      "text": "This left 27 participants for the main analyses and 26 for odor ratings.",
+      "page_number": null
+    },
+    {
+      "text_id": 102,
+      "paragraph_id": 24,
+      "section_id": 8,
+      "text": "In a separate study (de Groot et al., 2020), we had used a photoionization detector to quantify volatile molecules given off by sweat, and we observed that repeated olfactometer-based odor presentations changed the neutral and fear sweat's quantity of volatiles emitted according to a biexponential decay function.",
+      "page_number": null
+    },
+    {
+      "text_id": 103,
+      "paragraph_id": 24,
+      "section_id": 8,
+      "text": "Pilot tests using a photoionization detector indicated that volatile quantity waned to almost negligible levels after approximately 30 presentations of that odor (see Fig. 1d, as well as Fig.",
+      "page_number": null
+    },
+    {
+      "text_id": 104,
+      "paragraph_id": 24,
+      "section_id": 8,
+      "text": "S2 in the Supplemental Material).",
+      "page_number": null
+    },
+    {
+      "text_id": 105,
+      "paragraph_id": 24,
+      "section_id": 8,
+      "text": "Therefore, we took a behavior-driven Bayesian-analysis approach to discern whether the predicted categorical effects (fear sweat causing more morphs to be identified as fearful than neutral) were eradicated in the second of two experiment halves (after 30 presentations of each odor, i.e., after 120 trials).",
+      "page_number": null
+    },
+    {
+      "text_id": 106,
+      "paragraph_id": 24,
+      "section_id": 8,
+      "text": "Indeed, a Bayesian pairedsamples t test on morph ratings showed strong evidence (Bayes factor favoring the alternative over the null hypothesis, or BF 10 = 31.07) for a categorical difference between fear odor and neutral odor in the first half of the experiment, whereas this evidence dropped to anecdotal levels in the second half (BF 10 = 1.42).",
+      "page_number": null
+    },
+    {
+      "text_id": 107,
+      "paragraph_id": 24,
+      "section_id": 8,
+      "text": "On the basis of these findings, and to be able to test feardose-response functions, we used the data from the first five blocks for all subsequent analyses in which the focus was on dose-response relations.",
+      "page_number": null
+    },
+    {
+      "text_id": 108,
+      "paragraph_id": 24,
+      "section_id": 8,
+      "text": "This was the first study in which the volatility of human sweat molecules was quantified as a function of time.",
+      "page_number": null
+    },
+    {
+      "text_id": 109,
+      "paragraph_id": 24,
+      "section_id": 8,
+      "text": "It also confirmed that fear sweat does give off volatile molecules that can travel through an olfactometer air stream and reach a participant's nose.",
+      "page_number": null
+    },
+    {
+      "text_id": 110,
+      "paragraph_id": 26,
+      "section_id": 9,
+      "text": "Psychometric tasks.",
+      "page_number": null
+    },
+    {
+      "text_id": 111,
+      "paragraph_id": 26,
+      "section_id": 9,
+      "text": "Subjective ratings of odor intensity and pleasantness were submitted to a priori contrasts (a repeated measures ANOVA) comparing air with odor and comparing odors (neutral sweat and low-, medium-, and high-fear sweat).",
+      "page_number": null
+    },
+    {
+      "text_id": 112,
+      "paragraph_id": 26,
+      "section_id": 9,
+      "text": "Odor-discrimination scores were compared with chance probability (.5) with a nonparametric one-sample t test.",
+      "page_number": null
+    },
+    {
+      "text_id": 113,
+      "paragraph_id": 26,
+      "section_id": 9,
+      "text": "Morph task.",
+      "page_number": null
+    },
+    {
+      "text_id": 114,
+      "paragraph_id": 26,
+      "section_id": 9,
+      "text": "We followed morph-task data-exclusion procedures documented in comparable prior research (Mujica-Parodi et al., 2009) and discarded all responses shorter than 200 ms and exceeding 2,500 ms.",
+      "page_number": null
+    },
+    {
+      "text_id": 115,
+      "paragraph_id": 26,
+      "section_id": 9,
+      "text": "There were two main variables of interest: participants' average proportion of fear responses (calculated per odor and per morph) and participants' PSEs (i.e., the actual morph step yielding 50:50 fear:disgust responses).",
+      "page_number": null
+    },
+    {
+      "text_id": 116,
+      "paragraph_id": 26,
+      "section_id": 9,
+      "text": "The latter measure was used because prior research has shown that ambiguous faces are most susceptible to olfactory influence (Zhou & Chen, 2009).",
+      "page_number": null
+    },
+    {
+      "text_id": 117,
+      "paragraph_id": 26,
+      "section_id": 9,
+      "text": "Therefore, the former measure could be dampened by including responses to less ambiguous faces.",
+      "page_number": null
+    },
+    {
+      "text_id": 118,
+      "paragraph_id": 26,
+      "section_id": 9,
+      "text": "We estimated odor-dependent shifts in these most ambiguous points by fitting each participant's data with a sigmoid function: 3.",
+      "page_number": null
+    },
+    {
+      "text_id": 119,
+      "paragraph_id": 26,
+      "section_id": 9,
+      "text": "Experimental paradigm and predictions.",
+      "page_number": null
+    },
+    {
+      "text_id": 120,
+      "paragraph_id": 26,
+      "section_id": 9,
+      "text": "At the start of the experiment, participants provided odor ratings (pleasantness, intensity) and were asked to discriminate between odors.",
+      "page_number": null
+    },
+    {
+      "text_id": 121,
+      "paragraph_id": 26,
+      "section_id": 9,
+      "text": "This was followed by the main paradigm (a), in which each morph-task trial began with a 3-s countdown (3, 2, 1) and was followed by a sniff cue, during which the odor was presented.",
+      "page_number": null
+    },
+    {
+      "text_id": 122,
+      "paragraph_id": 26,
+      "section_id": 9,
+      "text": "After a short delay, participants saw a face and classified it as either \"fear\" or \"disgust. and b to 0 and 100 to anchor the lower and upper asymptotes for the sigmoid curve (producing high R 2 s, Mdn: 0.86, SE = 0.02); c and d were estimated.",
+      "page_number": null
+    },
+    {
+      "text_id": 123,
+      "paragraph_id": 26,
+      "section_id": 9,
+      "text": "Then we calculated each participant's PSE (i.e., the point at which 50% of the response was fear) for each odor condition: Estimated PSE ( ) ln x a b a c d = -+ --      + 50 50 .",
+      "page_number": null
+    },
+    {
+      "text_id": 124,
+      "paragraph_id": 27,
+      "section_id": 9,
+      "text": "In this function, \"ln\" refers to the natural logarithm.",
+      "page_number": null
+    },
+    {
+      "text_id": 125,
+      "paragraph_id": 27,
+      "section_id": 9,
+      "text": "With coefficient a (y-offset) being 0 and b (height) being 100, the numerator simplifies to 1.",
+      "page_number": null
+    },
+    {
+      "text_id": 126,
+      "paragraph_id": 27,
+      "section_id": 9,
+      "text": "Then, a repeated measures ANOVA was carried out over average morph responses and PSEs, comparing neutral odor with fear odor (averaged across intensities) to test a categorical effect and comparing among fear-odor intensities to test dose responses.",
+      "page_number": null
+    },
+    {
+      "text_id": 127,
+      "paragraph_id": 28,
+      "section_id": 9,
+      "text": "Physiological recording and analysis.",
+      "page_number": null
+    },
+    {
+      "text_id": 128,
+      "paragraph_id": 28,
+      "section_id": 9,
+      "text": "Physiological monitoring was conducted through a Powerlab (AD-Instru ments, Sydney, Australia).",
+      "page_number": null
+    },
+    {
+      "text_id": 129,
+      "paragraph_id": 28,
+      "section_id": 9,
+      "text": "Participants' respiration was recorded using an abdominal breathing belt (TSD221-MRI, Biopac Systems, Goleta, CA), and cardiac responses were measured using a custom magnetic-resonance-safe pulse transducer (ADInstruments).",
+      "page_number": null
+    },
+    {
+      "text_id": 130,
+      "paragraph_id": 28,
+      "section_id": 9,
+      "text": "Physiological data were analyzed after band-pass filtering the raw signal (respiratory rate: 0.05-50 Hz; heart rate: 0.5-50 Hz) to remove drift and artifacts. fMRI acquisition parameters.",
+      "page_number": null
+    },
+    {
+      "text_id": 131,
+      "paragraph_id": 28,
+      "section_id": 9,
+      "text": "MRI data were collected with a 3T Siemens Prisma scanner equipped with a 64channel head coil.",
+      "page_number": null
+    },
+    {
+      "text_id": 132,
+      "paragraph_id": 28,
+      "section_id": 9,
+      "text": "A T1-weighted magnetization-prepared rapid-acquisition gradient-echo (MPRAGE) structural scan was acquired at the beginning of the experiment (repetition time [TR] = 2,200 ms, echo time [TE] = 4.67 ms, inversion time = 900 ms, voxel size = 1 mm 3 , matrix size = 192 × 256 × 160 voxels).",
+      "page_number": null
+    },
+    {
+      "text_id": 133,
+      "paragraph_id": 28,
+      "section_id": 9,
+      "text": "An interleaved T2*-weighted echoplanar image (EPI) sequence was used to collect bloodoxygen-level-dependent volumes (flip angle = 80°, 56 slices, voxel size = 2 mm 3 , no gap, matrix size = 104 × 104 voxels, field of view = 208 × 208 mm, TR = 2,000 ms, TE = 22 ms, multiband = 2, acquisition angle = 15° tilt from anterior commissure-posterior commissure, partial Fourier = 6/8). fMRI preprocessing.",
+      "page_number": null
+    },
+    {
+      "text_id": 134,
+      "paragraph_id": 28,
+      "section_id": 9,
+      "text": "We conducted fMRI preprocessing and analysis in MATLAB using Statistical Parametric Mapping (SPM) 12 software (Wellcome Trust Centre for Neuroimaging, London, UK) unless otherwise stated.",
+      "page_number": null
+    },
+    {
+      "text_id": 135,
+      "paragraph_id": 28,
+      "section_id": 9,
+      "text": "We corrected for head motion by realigning EPI volumes to the first acquired image.",
+      "page_number": null
+    },
+    {
+      "text_id": 136,
+      "paragraph_id": 28,
+      "section_id": 9,
+      "text": "The T1 structural images were then coregistered to the mean whole-brain EPI.",
+      "page_number": null
+    },
+    {
+      "text_id": 137,
+      "paragraph_id": 28,
+      "section_id": 9,
+      "text": "We segmented anatomical images using the six-tissue probability map in SPM and applied the deformation fields to functional images for normalization into Montreal Neurological Institute (MNI) space.",
+      "page_number": null
+    },
+    {
+      "text_id": 138,
+      "paragraph_id": 28,
+      "section_id": 9,
+      "text": "The resulting volumes were spatially smoothed with a 6-mm full-width half-maximum Gaussian kernel.",
+      "page_number": null
+    },
+    {
+      "text_id": 139,
+      "paragraph_id": 30,
+      "section_id": 10,
+      "text": "We conducted first-level analysis on concatenated fMRI runs at the within-participant level.",
+      "page_number": null
+    },
+    {
+      "text_id": 140,
+      "paragraph_id": 30,
+      "section_id": 10,
+      "text": "This modeled 24 unique odor-face combinations at the time of face onset.",
+      "page_number": null
+    },
+    {
+      "text_id": 141,
+      "paragraph_id": 30,
+      "section_id": 10,
+      "text": "Nuisance regressors included six movement parameters; sniff trace was derived from the respiratory effort band signal-smoothed (250-ms moving window), high-pass filtered (cutoff, 0.05 Hz), normalized (subtracting the mean, dividing by SD), down-sampled (0.5 Hz)-and motion scrubbing (framewise displacement threshold of 1.3 mm (see Siegel et al., 2014).",
+      "page_number": null
+    },
+    {
+      "text_id": 142,
+      "paragraph_id": 30,
+      "section_id": 10,
+      "text": "For our primary whole-brain contrasts, we used a t test comparing trials in which activations in response to neutral odor (all faces) were lower than those in response to fear odor (all faces) with PSE as a covariate.",
+      "page_number": null
+    },
+    {
+      "text_id": 143,
+      "paragraph_id": 30,
+      "section_id": 10,
+      "text": "This allowed us to look at effects collapsed across all odors.",
+      "page_number": null
+    },
+    {
+      "text_id": 144,
+      "paragraph_id": 30,
+      "section_id": 10,
+      "text": "We examined whole-brain results at two levels of correction.",
+      "page_number": null
+    },
+    {
+      "text_id": 145,
+      "paragraph_id": 30,
+      "section_id": 10,
+      "text": "Our more stringent, peak-level threshold applied whole-brain family-wise error (FWE) correction (p FWE < .05).",
+      "page_number": null
+    },
+    {
+      "text_id": 146,
+      "paragraph_id": 30,
+      "section_id": 10,
+      "text": "However, as this can be considered too strict a threshold, with potential for false negatives (Eklund et al., 2016), we also looked at whole-brain results (uncorrected p < .001) that surpassed cluster-level correction (p FWE-cluster < .05).",
+      "page_number": null
+    },
+    {
+      "text_id": 147,
+      "paragraph_id": 31,
+      "section_id": 10,
+      "text": "For our region-of-interest (ROI) analysis, we produced first-level contrasts comparing the three levels of fear-odor intensity (low, medium, high; neutral was subtracted).",
+      "page_number": null
+    },
+    {
+      "text_id": 148,
+      "paragraph_id": 31,
+      "section_id": 10,
+      "text": "To test the influence of fear-odor intensity and face morphs on our ROIs, we extracted beta weights from the amygdala (anatomically defined) and the fusiform gyrus (functionally defined).",
+      "page_number": null
+    },
+    {
+      "text_id": 149,
+      "paragraph_id": 31,
+      "section_id": 10,
+      "text": "Because most ROI-based parcellations fail to segregate the piriform cortex from the amygdala, we defined these ROIs with reference to a human neuroanatomical atlas (Mai et al., 2004), oriented in standard MNI space, that has been used in previous olfactory studies (e.g., Howard & Gottfried, 2014).",
+      "page_number": null
+    },
+    {
+      "text_id": 150,
+      "paragraph_id": 31,
+      "section_id": 10,
+      "text": "Because the fusiform gyrus encompasses a relatively large section of the temporal lobe, and previously observed clusters do not span the entire region (Prehn-Kristensen et al., 2009;Wudarczyk et al., 2016), we specified this ROI using a leave-one-subjectout procedure (as instructed by Esterman et al., 2010).",
+      "page_number": null
+    },
+    {
+      "text_id": 151,
+      "paragraph_id": 31,
+      "section_id": 10,
+      "text": "Second-level analyses (fear odor > neutral odor) were run for all but one subject; voxels within the fusiform gyrus surpassing p < .001 (uncorrected) were then used as a mask to extract beta values from the remaining participant (see Esterman et al., 2010).",
+      "page_number": null
+    },
+    {
+      "text_id": 152,
+      "paragraph_id": 31,
+      "section_id": 10,
+      "text": "This provided us with unbiased beta weights.",
+      "page_number": null
+    },
+    {
+      "text_id": 153,
+      "paragraph_id": 31,
+      "section_id": 10,
+      "text": "Any data used to define an ROI were not included in the beta values extracted, thus avoiding circular analyses (Kriegeskorte et al., 2009).",
+      "page_number": null
+    },
+    {
+      "text_id": 154,
+      "paragraph_id": 32,
+      "section_id": 10,
+      "text": "The right fusiform gyrus did not generate clusters across all iterations.",
+      "page_number": null
+    },
+    {
+      "text_id": 155,
+      "paragraph_id": 32,
+      "section_id": 10,
+      "text": "Specifically, no cluster could be defined for four of the participants, and these participants were omitted from the ROI analysis of the right fusiform gyrus.",
+      "page_number": null
+    },
+    {
+      "text_id": 156,
+      "paragraph_id": 32,
+      "section_id": 10,
+      "text": "All beta weights were submitted to repeated measures ANOVAs across fear-odor intensities.",
+      "page_number": null
+    },
+    {
+      "text_id": 157,
+      "paragraph_id": 34,
+      "section_id": 11,
+      "text": "Traditional null-hypothesis significance testing was complemented by Bayesian hypothesis testing to quantify the relative strength of evidence for the null hypothesis (H 0 ; low fear = medium fear = high fear).",
+      "page_number": null
+    },
+    {
+      "text_id": 158,
+      "paragraph_id": 34,
+      "section_id": 11,
+      "text": "This was compared with the alternative doseresponse hypothesis (H 1 ; low fear < medium fear < high fear), which was tested as an unconstrained hypothesis (low fear ≠ medium fear ≠ high fear) using JASP software ( JASP Team, 2020; for a data-supported rationale, see Fig.",
+      "page_number": null
+    },
+    {
+      "text_id": 159,
+      "paragraph_id": 34,
+      "section_id": 11,
+      "text": "S6 and Table S1 in the Supplemental Material).",
+      "page_number": null
+    },
+    {
+      "text_id": 160,
+      "paragraph_id": 34,
+      "section_id": 11,
+      "text": "In JASP, we performed Bayesian repeated measures ANOVAs with default (noninformative) prior settings (r-scale fixed effects = .5; r-scale random effects = 1).",
+      "page_number": null
+    },
+    {
+      "text_id": 161,
+      "paragraph_id": 34,
+      "section_id": 11,
+      "text": "We report the Bayes factor (BF) and the proportional error estimate on the BF.",
+      "page_number": null
+    },
+    {
+      "text_id": 162,
+      "paragraph_id": 34,
+      "section_id": 11,
+      "text": "The subscripts on BFs refer to the models compared.",
+      "page_number": null
+    },
+    {
+      "text_id": 163,
+      "paragraph_id": 34,
+      "section_id": 11,
+      "text": "Accordingly, the BF for the null relative to the alternative hypothesis is denoted BF 01 .",
+      "page_number": null
+    },
+    {
+      "text_id": 164,
+      "paragraph_id": 34,
+      "section_id": 11,
+      "text": "In our interpretation of the BFs, we follow the classification by Lee and Wagenmakers (2013): BF 01 from 1 to 3 indicates anecdotal evidence for H 0 over H 1 , from 3 to 10 indicates moderate evidence, from 10 to 30 indicates strong evidence, from 30 to 100 indicates very strong evidence, and greater than 100 indicates extreme evidence.",
+      "page_number": null
+    },
+    {
+      "text_id": 165,
+      "paragraph_id": 36,
+      "section_id": 12,
+      "text": "Having established that the degree of fear scales behaviorally with the total amount of fear sweat induced in the sender participants, we next focused on whether different levels of fear sweat would modulate physiological, behavioral, and neural responses in the receiver participants (Fig.",
+      "page_number": null
+    },
+    {
+      "text_id": 166,
+      "paragraph_id": 36,
+      "section_id": 12,
+      "text": "3).",
+      "page_number": null
+    },
+    {
+      "text_id": 167,
+      "paragraph_id": 37,
+      "section_id": 12,
+      "text": "At the behavioral level, we tested the hypothesis that receivers exposed to higher levels of fear sweat would systematically perceive higher amounts of fear in the more ambiguous faces (Mujica-Parodi et al., 2009;Zhou & Chen, 2009).",
+      "page_number": null
+    },
+    {
+      "text_id": 168,
+      "paragraph_id": 37,
+      "section_id": 12,
+      "text": "The prediction was that compared with smelling neutral sweat, smelling each level of fear sweat-low fear, medium fear, or high fear-would bias face perception in the direction of fear rather than disgust, that is, face morphs containing greater proportions of veridical disgust would be perceived as fearful.",
+      "page_number": null
+    },
+    {
+      "text_id": 169,
+      "paragraph_id": 37,
+      "section_id": 12,
+      "text": "The shape of this function was expected to be fear-dosedependent (H 1 ) or, alternatively, fear-dose-invariant (flat line; H 0 ) and was evaluated using Bayesian statistical approaches.",
+      "page_number": null
+    },
+    {
+      "text_id": 170,
+      "paragraph_id": 37,
+      "section_id": 12,
+      "text": "Interestingly, although we found that each level of fear sweat induced a leftward (fear) bias in the perception of facial expressions versus neutral sweat, F(1, 26) = 13.44, p = .001, Cohen's d = 0.51, 95% CI = [0.22, 0.81] (Fig. 4a), Bayesian analysis on fear bias revealed moderate evidence for fear-dose-invariant effects (BF favoring H 0 over H 1 : BF 01 = 8.39 ± 1.0%).",
+      "page_number": null
+    },
+    {
+      "text_id": 171,
+      "paragraph_id": 37,
+      "section_id": 12,
+      "text": "Post hoc tests comparing each fear sweat level to neutral sweat showed that sniffing fear sweat induced a medium-sized shift toward the disgust faces being perceived as more fearful-low fear vs. neutral: F(1, 26) = 8.34, p = .008, d = 0.46, 95% CI = [0.06, 0.87]; medium fear vs. neutral: F(1, 26) = 7.70, p = .010, d = 0.54, 95% CI = [0.19, 0.89]; high fear vs. neutral: F(1, 26) = 7.43, p = .011, d = 0.45, 95% CI = [0.16, 0.74]).",
+      "page_number": null
+    },
+    {
+      "text_id": 172,
+      "paragraph_id": 37,
+      "section_id": 12,
+      "text": "Notably, the most ambiguous morphs were most susceptible to the influence of fear sweat, F(1, 26) = 13.36, p = .001, d = 0.65, 95% CI = [0.26, 1.04], dose invariance: BF 01 = 6.52 ± 1.0% (Fig. 4b).",
+      "page_number": null
+    },
+    {
+      "text_id": 173,
+      "paragraph_id": 38,
+      "section_id": 12,
+      "text": "In a parallel analysis of the physiological data, we predicted that compared with smelling neutral sweat, smelling each level of fear sweat (low, medium, high) would increase the speed and volume of the sniff response, representing a sign of adaptive sensory vigilance (de Groot et al., 2012).",
+      "page_number": null
+    },
+    {
+      "text_id": 174,
+      "paragraph_id": 38,
+      "section_id": 12,
+      "text": "While each level of fear sweat induced a small fear-specific increase in sniffing responses-duration: F(1, 26) = 4.71, p = .039, d = 0.22, 95% CI = [0.17, 0.41]; volume: F(1, 26) = 4.01, p = .056, d = 0.39, 95% CI = [0.22, 0.57]-moderate evidence was obtained for dose invariance on sniff duration (BF 01 = 3.97 ± 0.9%), whereas evidence for dose invariance on sniff volume was only anecdotal (BF 01 = 1.83 ± 0.8%) because of the high-fear-sweat drop in sniff volume (Figs. 4c and 4d).",
+      "page_number": null
+    },
+    {
+      "text_id": 175,
+      "paragraph_id": 38,
+      "section_id": 12,
+      "text": "Of note, the effects of fear sweat on both behavior and physiology were observed despite the fact that all sweat stimuli were indistinguishable, equally intense (strong evidence: BF 01 = 11.43 ± 0.7%) and equally pleasant (strong evidence: BF 01 = 11.53 ± 0.7%; Figs. 4e-4g; see the results in the Supplemental Material).",
+      "page_number": null
+    },
+    {
+      "text_id": 176,
+      "paragraph_id": 38,
+      "section_id": 12,
+      "text": "These seemingly paradoxical findings replicate those of prior research (de Groot et al., 2018;Mujica-Parodi et al., 2009) and may be intelligible from neurocognitive limitations in translating odor experiences into words (Olofsson & Gottfried, 2015).",
+      "page_number": null
+    },
+    {
+      "text_id": 177,
+      "paragraph_id": 39,
+      "section_id": 12,
+      "text": "We next conducted a second-level fMRI analysis to demonstrate whole-brain responses to fear odor (averaged across intensities), in comparison with neutral sweat.",
+      "page_number": null
+    },
+    {
+      "text_id": 178,
+      "paragraph_id": 39,
+      "section_id": 12,
+      "text": "We saw significantly increased activation for clusters in the FFG, t(25) = 5.04, p FWE-cluster = .0496 (x = -52, y = -44, z = -16, 110 voxels) and the ventromedial prefrontal cortex (vmPFC), t(25) = 4.39, p FWE-cluster = .042 (x = 10, y = 48, z = -2, 115 voxels; Fig. 5a).",
+      "page_number": null
+    },
+    {
+      "text_id": 179,
+      "paragraph_id": 39,
+      "section_id": 12,
+      "text": "We subsequently tested whether our ROIs-amygdala and fusiform gyrus (Maier et al., 2019;Mujica-Parodi et al., 2009;Prehn-Kristensen et al., 2009;Wudarczyk et al., 2016)showed dose-invariant (H 0 ) or dose-dependent (H 1 ) responses to fear amount in sweat, collapsed across all faces in the spectrum (Fig. 5b).",
+      "page_number": null
+    },
+    {
+      "text_id": 180,
+      "paragraph_id": 39,
+      "section_id": 12,
+      "text": "The results showed that fear-sweat quantity was partially coded in the left amygdala, F(2, 52) = 3.86, p = .027, η 2 = .13, 90% CI = [.01, .27] (BF 01 = 0.35 ± 4.2%, where H 1 : low fear ≠ medium fear ≠ high fear).",
+      "page_number": null
+    },
+    {
+      "text_id": 181,
+      "paragraph_id": 40,
+      "section_id": 12,
+      "text": "Interestingly, exploratory post hoc contrasts on left amygdala activity revealed a significant quadratic",
+      "page_number": null
+    },
+    {
+      "text_id": 182,
+      "paragraph_id": 41,
+      "section_id": 12,
+      "text": "0 0.5 1 Discrimination Odor Pair g Chance * * 0 20 40 60 80 100 35% 41% 47% 53% 59% 65% Fear Responses (%) Objective Fear vs.",
+      "page_number": null
+    },
+    {
+      "text_id": 183,
+      "paragraph_id": 41,
+      "section_id": 12,
+      "text": "Disgust in Face a Neutral Low Fear Medium Fear High Fear * * b 40 45 50 55 60 Neutral Fear L F MF HF Fear Responses (%) Most Ambiguous Morphs BF 01 = 6.52 d p = .056 890 900 910 920 930 940 950 Neutral Fear L F MF HF Sniff Volume (mV/s) BF 01 = 1.83 * * * Barely Detectable Weak 0 5 10 15 20 N N -L F N -M F N -H F L F -M F L F -H F M F -H F LF MF HF Air Odor Intensity Odor e Moderate BF 01 = 11.43 c * 1,975 2,000 2,025 2,050 2,075 Neutral Fear L F MF HF Sniff Duration (ms) BF 01 = 3.97 * * Slight Dislike Slight Like -15 -10 -5 0 5 10 N LF MF HF Air Pleasantness Odor f BF 01 = 11.53 -6 -4 -2 0 2 4 6 8 10 R Amyg.",
+      "page_number": null
+    },
+    {
+      "text_id": 184,
+      "paragraph_id": 41,
+      "section_id": 12,
+      "text": "L FFG R FFG L vmPFC R vmPFC β (Arbitrary Units) β (Arbitrary Units) Fear-Dose-Invariant Effects -2 0 2 4 6 8 10 12 14 Fear-Intensity Coding in Left Amygdala * * Low Fear Medium Fear High Fear -40 -20 0 20 40 60 0.25 0.75 1.25 1.75 2.25 Left Amygdala: β (Arbitrary Units) Sweat-Pad Weight (log mg)",
+      "page_number": null
+    },
+    {
+      "text_id": 185,
+      "paragraph_id": 42,
+      "section_id": 12,
+      "text": "Low Fear Medium Fear High Fear F (2, 78) = 4.20, p = .019 r (25) = .49, p = .008 relationship amongst fear odors, F(1, 26) = 6.54, p = .017, η 2 = .20, 90% CI = [.02, .44] (Fig. 5c).",
+      "page_number": null
+    },
+    {
+      "text_id": 186,
+      "paragraph_id": 42,
+      "section_id": 12,
+      "text": "Specifically, medium-fear odor (M = 7.95, SD = 13.82) elicited a greater amygdala response than low-fear odor (M = 1.71, SD = 13.53), t(26), p = .017, d = 0.46, 95% CI = [-0.07, 0.98], yet high-fear odor (M = 2.04, SD = 14.68) evoked a smaller amygdala response than medium-fear odor, t(26) = 2.34, p = .023, d = 0.41, 95% CI = [-0.04, 0.87].",
+      "page_number": null
+    },
+    {
+      "text_id": 187,
+      "paragraph_id": 42,
+      "section_id": 12,
+      "text": "A closer look at differences within fear-dose categories revealed that the highest amygdala responses were in fact evoked by a bandwidth of fear doses around the medium level, including high doses of low fear and low doses of high fear, F(2, 78) = 4.20, p = .019, R 2 = .10, compared with doses falling outside of this bandwidth (Fig. 5d).",
+      "page_number": null
+    },
+    {
+      "text_id": 188,
+      "paragraph_id": 42,
+      "section_id": 12,
+      "text": "Of note is that a significant linear association emerged between left amygdala activity and the percentage of face morphs (within subjects) being perceived as fearful across all levels of fear sweat, r(25) = .49, p = .009 (Fig. 5e).",
+      "page_number": null
+    },
+    {
+      "text_id": 189,
+      "paragraph_id": 42,
+      "section_id": 12,
+      "text": "In contrast to these dosevarying responses, we found only dose-invariant responses in fMRI activation profiles in our other ROIs: right amygdala, F(2, 52) = 0.48, p = .619, η 2 = .02, 90% CI = [.00, .09], BF 01 = 6.42 ± 0.9%; left fusiform gyrus, F(2, 52) = 0.48, p = .620, η 2 = .02, 90% CI = [.00, .09], BF 01 = 6.36 ± 1.0%; and right fusiform gyrus, F(2, 44) = 0.58, p = .566, η 2 = .03, 90% CI = [.00, .12], BF 01 = 5.08 ± 0.9% (see Table S2 for additional correlations between ROIs and sniff variables).",
+      "page_number": null
+    },
+    {
+      "text_id": 190,
+      "paragraph_id": 43,
+      "section_id": 12,
+      "text": "In our ROI analysis, the right FFG appeared to demonstrate overall reduced activation across fear-sweat doses despite having observed a cluster of increased activation at uncorrected thresholds (Fig. 5a).",
+      "page_number": null
+    },
+    {
+      "text_id": 191,
+      "paragraph_id": 43,
+      "section_id": 12,
+      "text": "This is likely due to unreliable fear-odor effects on the right FFG, evidenced by the lack of activation at a corrected threshold and inability of the leave-one-subject-out procedure to define a mask for four of the left-out participants (despite using an uncorrected threshold).",
+      "page_number": null
+    },
+    {
+      "text_id": 192,
+      "paragraph_id": 43,
+      "section_id": 12,
+      "text": "Consequently, we were unable to draw strong conclusions regarding the right FFG.",
+      "page_number": null
+    },
+    {
+      "text_id": 193,
+      "paragraph_id": 43,
+      "section_id": 12,
+      "text": "Given the lateralized findings in the previous literature, which has typically documented left FFG activation in response to fear sweat (Maier et al., 2019;Prehn-Kristensen et al., 2009;Wudarczyk et al., 2016), researchers should seek to further elucidate the lateralized nature of fear chemosignals on fusiform gyri in future work.",
+      "page_number": null
+    },
+    {
+      "text_id": 194,
+      "paragraph_id": 45,
+      "section_id": 13,
+      "text": "In the present study, we sought to establish whether humans are capable of communicating fear quantity from a sender to a receiver by their body odor.",
+      "page_number": null
+    },
+    {
+      "text_id": 195,
+      "paragraph_id": 45,
+      "section_id": 13,
+      "text": "Our results show that all sweat stimuli (low fear, medium fear, high fear, neutral) were indistinguishable on the explicit level (Figs. 4e-g); at the same time, smelling different doses of fear in sweat caused receivers to partially inherit a sender's fearful state at the behavioral, physiological, and neural levels.",
+      "page_number": null
+    },
+    {
+      "text_id": 196,
+      "paragraph_id": 45,
+      "section_id": 13,
+      "text": "This unique attempt to titrate the smell of fear elicited two key findings.",
+      "page_number": null
+    },
+    {
+      "text_id": 197,
+      "paragraph_id": 45,
+      "section_id": 13,
+      "text": "First, we found varying effects of fear-sweat doses on activity in the left amygdala.",
+      "page_number": null
+    },
+    {
+      "text_id": 198,
+      "paragraph_id": 45,
+      "section_id": 13,
+      "text": "Second, we found moderate evidence for dose-invariant effects of fear sweat on face identification, sniff responses, and activity in the FFG.",
+      "page_number": null
+    },
+    {
+      "text_id": 199,
+      "paragraph_id": 45,
+      "section_id": 13,
+      "text": "These combined findings suggest that the human sense of smell engages a binary on/off mechanism for identifying body odor as a fearful stimulus.",
+      "page_number": null
+    },
+    {
+      "text_id": 200,
+      "paragraph_id": 46,
+      "section_id": 13,
+      "text": "The most widespread finding across our behavioral, physiological, and neural measures (except the left amygdala) was a dose-invariant effect of sweat sampled during low, medium, and high fear.",
+      "page_number": null
+    },
+    {
+      "text_id": 201,
+      "paragraph_id": 46,
+      "section_id": 13,
+      "text": "In the context of sweat-evoked fMRI responses, stable activation across different levels of fear sweat was found in the FFG.",
+      "page_number": null
+    },
+    {
+      "text_id": 202,
+      "paragraph_id": 46,
+      "section_id": 13,
+      "text": "Such a profile would be consistent with the idea that these brain areas reflect the consequences of pattern completion to render any level of fear sweat (above a certain minimum) as conveying the same alarm message (i.e., fear) in a dose-invariant way.",
+      "page_number": null
+    },
+    {
+      "text_id": 203,
+      "paragraph_id": 46,
+      "section_id": 13,
+      "text": "Considered in this framework, it is possible that each level of fear sweat transmitted by a sender, even at minute doses, activates high-affinity receptors early in the inhalation of a receiver, inducing fear-based behavior in the recipient (cf.",
+      "page_number": null
+    },
+    {
+      "text_id": 204,
+      "paragraph_id": 46,
+      "section_id": 13,
+      "text": "Bolding & Franks, 2017, 2018).",
+      "page_number": null
+    },
+    {
+      "text_id": 205,
+      "paragraph_id": 46,
+      "section_id": 13,
+      "text": "This temporal winner-takes-all principle could explain the functional benefit of a high-sensitivity system to elicit fear, ensuring that the receiver is safe rather than sorry.",
+      "page_number": null
+    },
+    {
+      "text_id": 206,
+      "paragraph_id": 47,
+      "section_id": 13,
+      "text": "The present study thus found moderate evidence for dose-invariant fear effects across behavioral measures, physiological measures, and most neural measures.",
+      "page_number": null
+    },
+    {
+      "text_id": 207,
+      "paragraph_id": 47,
+      "section_id": 13,
+      "text": "At first glance, these findings seem to be at odds with the literature that has documented dose-dependent response curves for smells in animals ranging from fruit flies (Si et al., 2019) to humans (Cometto-Muñiz & Abraham, 2016).",
+      "page_number": null
+    },
+    {
+      "text_id": 208,
+      "paragraph_id": 47,
+      "section_id": 13,
+      "text": "However, we identified a number of factors that could account for why dose-dependent effects did not emerge in our study.",
+      "page_number": null
+    },
+    {
+      "text_id": 209,
+      "paragraph_id": 47,
+      "section_id": 13,
+      "text": "First, the range of stimulus concentrations used to chart dose-response curves typically spans a wide array of logarithmic steps (typically, 10 -1 to 10 -6 concentration; Cometto-Muñiz & Abraham, 2016;Si et al., 2019), whereas in our study, the high-fearsweat stimulus was within only one log-concentration step from the low-fear-sweat stimulus.",
+      "page_number": null
+    },
+    {
+      "text_id": 210,
+      "paragraph_id": 47,
+      "section_id": 13,
+      "text": "Thus, we may not have had sufficient dynamic range to establish a dose-dependent effect.",
+      "page_number": null
+    },
+    {
+      "text_id": 211,
+      "paragraph_id": 47,
+      "section_id": 13,
+      "text": "Second, it is highly plausible that the strongest dose-dependent effects may emerge near the level of conscious detection (perithreshold; Cometto-Muñiz & Abraham, 2016), whereas all of our odor stimuli were indiscriminable (subthreshold).",
+      "page_number": null
+    },
+    {
+      "text_id": 212,
+      "paragraph_id": 47,
+      "section_id": 13,
+      "text": "This possibility would have precluded our ability to identify changes if these were most robust at the point at which they were just noticeably different.",
+      "page_number": null
+    },
+    {
+      "text_id": 213,
+      "paragraph_id": 47,
+      "section_id": 13,
+      "text": "However, we think the most likely explanation may simply be that dosedependent effects are primarily instantiated at the more peripheral levels of the olfactory system, especially the olfactory bulb, an area that cannot be routinely imaged with fMRI methods.",
+      "page_number": null
+    },
+    {
+      "text_id": 214,
+      "paragraph_id": 47,
+      "section_id": 13,
+      "text": "By comparison, mechanisms of concentration-normalization (e.g., Bolding & Franks, 2017;Roland et al., 2016) may transform the coding properties in downstream cortical areas (which are accessible via fMRI methods) such that concentrationdependent effects in fusiform gyrus, vmPFC, and amygdala are not observed.",
+      "page_number": null
+    },
+    {
+      "text_id": 215,
+      "paragraph_id": 48,
+      "section_id": 13,
+      "text": "Our second important finding revealed dose-dependent coding of fear quantity in the left amygdala.",
+      "page_number": null
+    },
+    {
+      "text_id": 216,
+      "paragraph_id": 48,
+      "section_id": 13,
+      "text": "Although the left amygdala has previously been implicated in fear-odor processing (Maier et al., 2019;Mujica-Parodi et al., 2009), we found that this region could track fearodor dose, albeit not linearly.",
+      "page_number": null
+    },
+    {
+      "text_id": 217,
+      "paragraph_id": 48,
+      "section_id": 13,
+      "text": "Prior research using nonsocial smells has identified the amygdala as coding the quantity (vs. quality) of olfactory stimulation (Anderson et al., 2003), where other research found the amygdala responding more robustly to high-intensity odors than to low-intensity odors when these odors were unpleasant or pleasant, but not neutral (Winston et al., 2005).",
+      "page_number": null
+    },
+    {
+      "text_id": 218,
+      "paragraph_id": 48,
+      "section_id": 13,
+      "text": "These earlier findings suggest that the amygdala codes the overall emotional content of olfactory stimuli.",
+      "page_number": null
+    },
+    {
+      "text_id": 219,
+      "paragraph_id": 48,
+      "section_id": 13,
+      "text": "By comparison, in context of socially based fear odor, our results revealed a somewhat different profile.",
+      "page_number": null
+    },
+    {
+      "text_id": 220,
+      "paragraph_id": 48,
+      "section_id": 13,
+      "text": "Here, a curvilinear relationship was identified between the evoked fMRI response in the left amygdala and the intensity of fear odor, with the greatest response occurring within a bandwidth including the highest doses of low-fear sweat, medium doses of medium-fear sweat, and the lowest doses of high-fear sweat.",
+      "page_number": null
+    },
+    {
+      "text_id": 221,
+      "paragraph_id": 48,
+      "section_id": 13,
+      "text": "Notably, we found a significant linear association between left amygdala activity and face morphs being perceived as fearful (vs. disgusting).",
+      "page_number": null
+    },
+    {
+      "text_id": 222,
+      "paragraph_id": 49,
+      "section_id": 13,
+      "text": "Given the vital evolutionary function of social communication of fear, the demonstration of a curvilinear relationship to fear dose in sweat raises intriguing questions.",
+      "page_number": null
+    },
+    {
+      "text_id": 223,
+      "paragraph_id": 49,
+      "section_id": 13,
+      "text": "At the level of encoding, highly fearful humans may prioritize their own safety over communicating fear (Susskind et al., 2008) so as not to give away our fear to harmful conspecifics or predators.",
+      "page_number": null
+    },
+    {
+      "text_id": 224,
+      "paragraph_id": 49,
+      "section_id": 13,
+      "text": "Because we know that high-fear states lead to higher overall sweat production (de Groot et al., 2020), a greater volume of eccrine sweat may effectively dilute the fear-active contents in the apocrine portion (Parma et al., 2017).",
+      "page_number": null
+    },
+    {
+      "text_id": 225,
+      "paragraph_id": 49,
+      "section_id": 13,
+      "text": "Alternatively, an increase in other (nonfear) odorants from the apocrine sweat glands, such as thiols and acids, could otherwise mask the fear signal (Parma et al., 2017).",
+      "page_number": null
+    },
+    {
+      "text_id": 226,
+      "paragraph_id": 49,
+      "section_id": 13,
+      "text": "Either of these mechanisms could explain why decoders (receivers) did not show a linear increase in behavioral, neural, and physiological dose-response effects from medium-to high-fear sweat.",
+      "page_number": null
+    },
+    {
+      "text_id": 227,
+      "paragraph_id": 50,
+      "section_id": 13,
+      "text": "In our study, the olfactometer's airstream delivered odor compounds to a participant's nose, which could resemble the natural transportation of chemosignals in real-world circumstances.",
+      "page_number": null
+    },
+    {
+      "text_id": 228,
+      "paragraph_id": 50,
+      "section_id": 13,
+      "text": "In real life, however, humans wear deodorants and perfume in order to mask body odor, in addition to layers of clothing that could prevent smells from impacting another person's behavior.",
+      "page_number": null
+    },
+    {
+      "text_id": 229,
+      "paragraph_id": 50,
+      "section_id": 13,
+      "text": "However, recent studies have shown that even under these circumstances, participants made consistent and reliable smell-based social judgments at typical social distances (Gaby & Zayas, 2017), and despite being masked (e.g., by cedarwood oil or clove smell), body odors could elicit the expected neural, behavioral, and physiological responses (Cecchetto et al., 2019;Endevelt-Shapira et al., 2018).",
+      "page_number": null
+    },
+    {
+      "text_id": 230,
+      "paragraph_id": 50,
+      "section_id": 13,
+      "text": "These findings translated to a real-world setting: Dental students' performance was negatively impacted by unperceivable, masked fear sweat (Singh et al., 2018).",
+      "page_number": null
+    },
+    {
+      "text_id": 231,
+      "paragraph_id": 50,
+      "section_id": 13,
+      "text": "Taken together, these findings suggest ecological validity, but we are still far from knowing whether there is a universal code to these social smells, which odorant receptors are involved in picking them up, and what is the range of settings under which human smells can influence us.",
+      "page_number": null
+    },
+    {
+      "text_id": 232,
+      "paragraph_id": 51,
+      "section_id": 13,
+      "text": "The question of whether human body odor can shape social communication has been considered among the 125 most compelling multidisciplinary scientific challenges (Kennedy & Norman, 2005; cf.",
+      "page_number": null
+    },
+    {
+      "text_id": 233,
+      "paragraph_id": 51,
+      "section_id": 13,
+      "text": "Wyatt, 2020, for a constructive critical view on human pheromone research).",
+      "page_number": null
+    },
+    {
+      "text_id": 234,
+      "paragraph_id": 51,
+      "section_id": 13,
+      "text": "Here, we bring new evidence that despite the great chemical complexity of odor stimuli, different levels of fear sweat can be chemically anchored to their original categorical source in the environment (a fearful sender; Smeets et al., 2020) while adaptively modulating fear-specific neural, behavioral, and physiological responses in receivers.",
+      "page_number": null
+    },
+    {
+      "text_id": 235,
+      "paragraph_id": 51,
+      "section_id": 13,
+      "text": "Our findings suggest that even though certain brain regions (the amygdala) code chemical concentrations of fear in a dose-varying manner within a certain bandwidth, humans tag different fear doses in sweat as fearful following an all-ornone principle.",
+      "page_number": null
+    },
+    {
+      "text_id": 236,
+      "paragraph_id": 51,
+      "section_id": 13,
+      "text": "Achieving this form of stability and simplicity is a remarkable feature of the human olfactory system, especially given the rapid fluctuations in odorant quantity and quality.",
+      "page_number": null
+    },
+    {
+      "text_id": 237,
+      "paragraph_id": 51,
+      "section_id": 13,
+      "text": "That these odors can exert their functions beneath our conscious awareness underlines the potent yet unrecognized influence smells may have on our lives.",
+      "page_number": null
+    },
+    {
+      "text_id": 238,
+      "paragraph_id": 53,
+      "section_id": 14,
+      "text": "Action Editor: Daniela Schiller Editor: Patricia J Bauer",
+      "page_number": null
+    },
+    {
+      "text_id": 239,
+      "paragraph_id": 55,
+      "section_id": 15,
+      "text": "We thank J Howard and T Kahnt for their guidance on functional MRI preprocessing and analysis.",
+      "page_number": null
+    },
+    {
+      "text_id": 240,
+      "paragraph_id": 55,
+      "section_id": 15,
+      "text": "We also thank C Raithel for aiding in data collection and M Elliott for technical support.",
+      "page_number": null
+    },
+    {
+      "text_id": 241,
+      "paragraph_id": 57,
+      "section_id": 16,
+      "text": "This research was supported by a Niels Stensen Fellowship and Veni Innovational Research Grant No.",
+      "page_number": null
+    },
+    {
+      "text_id": 242,
+      "paragraph_id": 57,
+      "section_id": 16,
+      "text": "NWO-016.",
+      "page_number": null
+    },
+    {
+      "text_id": 243,
+      "paragraph_id": 57,
+      "section_id": 16,
+      "text": "Veni.195.116 awarded to J H B de Groot and by a National Institutes of Health Grant No.",
+      "page_number": null
+    },
+    {
+      "text_id": 244,
+      "paragraph_id": 57,
+      "section_id": 16,
+      "text": "R01DC010014 awarded to",
+      "page_number": null
+    },
+    {
+      "text_id": 245,
+      "paragraph_id": 59,
+      "section_id": 17,
+      "text": "J A Gottfried.",
+      "page_number": null
+    },
+    {
+      "text_id": 246,
+      "paragraph_id": 61,
+      "section_id": 18,
+      "text": "All data, scripts, and materials have been made publicly available via OSF and can be accessed at https://osf.io/ y76p2.",
+      "page_number": null
+    },
+    {
+      "text_id": 247,
+      "paragraph_id": 61,
+      "section_id": 18,
+      "text": "The design and analysis plans for the experiments were not preregistered.",
+      "page_number": null
+    },
+    {
+      "text_id": 248,
+      "paragraph_id": 61,
+      "section_id": 18,
+      "text": "This article has received the badges for Open Data and Open Materials.",
+      "page_number": null
+    },
+    {
+      "text_id": 249,
+      "paragraph_id": 61,
+      "section_id": 18,
+      "text": "More information about the Open Practices badges can be found at http://www.psychologicalscience.org/publications/ badges.",
+      "page_number": null
+    },
+    {
+      "text_id": 250,
+      "paragraph_id": 63,
+      "section_id": 19,
+      "text": "The author(s) declared that there were no conflicts of interest with respect to the authorship or the publication of this article.",
+      "page_number": null
+    },
+    {
+      "text_id": 251,
+      "paragraph_id": 65,
+      "section_id": 20,
+      "text": "Author Contributions J H B de Groot and P A Kirk share joint first authorship.",
+      "page_number": null
+    },
+    {
+      "text_id": 252,
+      "paragraph_id": 65,
+      "section_id": 20,
+      "text": "J H B de Groot conceived of the study and designed it in conjunction with P A Kirk and J A Gottfried.",
+      "page_number": null
+    },
+    {
+      "text_id": 253,
+      "paragraph_id": 65,
+      "section_id": 20,
+      "text": "J H B de Groot and P A Kirk collected the data, and all the authors analyzed the data.",
+      "page_number": null
+    },
+    {
+      "text_id": 254,
+      "paragraph_id": 65,
+      "section_id": 20,
+      "text": "J H B de Groot and J A Gottfried coordinated the study.",
+      "page_number": null
+    },
+    {
+      "text_id": 255,
+      "paragraph_id": 65,
+      "section_id": 20,
+      "text": "J H B de Groot and P A Kirk wrote the manuscript.",
+      "page_number": null
+    },
+    {
+      "text_id": 256,
+      "paragraph_id": 65,
+      "section_id": 20,
+      "text": "All the authors provided critical revisions and approved the final version for submission.",
+      "page_number": null
+    },
+    {
+      "text_id": 257,
+      "paragraph_id": 67,
+      "section_id": 21,
+      "text": "Additional supporting information can be found at http:// journals.sagepub.com/doi/suppl/10.1177/0956797620970548",
+      "page_number": null
+    },
+    {
+      "text_id": 258,
+      "paragraph_id": 68,
+      "section_id": 22,
+      "text": "Fig 1 Experimental validation: classification of senders (N = 36) into equal groups of low-, medium-, and high-fear intensity (n = 12) on the basis of a regression-weighted combination of subjective and physiological responses.",
+      "page_number": null
+    },
+    {
+      "text_id": 259,
+      "paragraph_id": 68,
+      "section_id": 22,
+      "text": "For each group (along with a neutral group), results are shown for (a) subjectively experienced fear, tension, nervousness, and stress; (b) galvanic skin response (GSR); and (c) quantity of armpit sweat.",
+      "page_number": null
+    },
+    {
+      "text_id": 260,
+      "paragraph_id": 68,
+      "section_id": 22,
+      "text": "The quantity of volatile molecules emitted across time (as measured by a photoionization detector) is also shown (d) for three subjects (S1-S3) from pilot samples (see de Groot et al., 2020, for more details).",
+      "page_number": null
+    },
+    {
+      "text_id": 261,
+      "paragraph_id": 68,
+      "section_id": 22,
+      "text": "Asterisks indicate significant differences among conditions (**p < .01, ***p < .001).",
+      "page_number": null
+    },
+    {
+      "text_id": 262,
+      "paragraph_id": 68,
+      "section_id": 22,
+      "text": "Error bars represent ±1 SE.",
+      "page_number": null
+    },
+    {
+      "text_id": 263,
+      "paragraph_id": 69,
+      "section_id": 23,
+      "text": "Sweat (IVA): Lower Dose Artificial Sweat (IVA): Higher Dose",
+      "page_number": null
+    },
+    {
+      "text_id": 264,
+      "paragraph_id": 70,
+      "section_id": 24,
+      "text": "Fig 2 Results from the pilot study: mean (a) subjective ratings of odor pleasantness and intensity and (b) disgust ratings of faces morphed between disgust and fear.",
+      "page_number": null
+    },
+    {
+      "text_id": 265,
+      "paragraph_id": 70,
+      "section_id": 24,
+      "text": "In each graph, ratings are shown as a function of odor: a higher dose of artificial sweat (isovaleric acid [IVA]), a lower IVA dose, and odorless air (control).",
+      "page_number": null
+    },
+    {
+      "text_id": 266,
+      "paragraph_id": 70,
+      "section_id": 24,
+      "text": "In (b), the dashed line indicates the point of subjective equality, at which 50% of the responses are \"fear\" and 50% are \"disgust.\"",
+      "page_number": null
+    },
+    {
+      "text_id": 267,
+      "paragraph_id": 70,
+      "section_id": 24,
+      "text": "Error bars represent ±1 SE.",
+      "page_number": null
+    },
+    {
+      "text_id": 268,
+      "paragraph_id": 71,
+      "section_id": 25,
+      "text": "In this function, y represents the proportion of fear responses, x represents the morphing step, and coefficients a through d reflect the y-offset, height, slope, and inflection point of the curve, respectively.",
+      "page_number": null
+    },
+    {
+      "text_id": 269,
+      "paragraph_id": 71,
+      "section_id": 25,
+      "text": "Using MATLAB's curve-fitting toolbox, we set coefficients a LF < MF < HF Dose Invariance H 0 : LF = MF = HF",
+      "page_number": null
+    },
+    {
+      "text_id": 270,
+      "paragraph_id": 72,
+      "section_id": 26,
+      "text": "Fig.3.",
+      "page_number": null
+    },
+    {
+      "text_id": 271,
+      "paragraph_id": 72,
+      "section_id": 26,
+      "text": "Experimental paradigm and predictions.",
+      "page_number": null
+    },
+    {
+      "text_id": 272,
+      "paragraph_id": 72,
+      "section_id": 26,
+      "text": "At the start of the experiment, participants provided odor ratings (pleasantness, intensity) and were asked to discriminate between odors.",
+      "page_number": null
+    },
+    {
+      "text_id": 273,
+      "paragraph_id": 72,
+      "section_id": 26,
+      "text": "This was followed by the main paradigm (a), in which each morph-task trial began with a 3-s countdown (3, 2, 1) and was followed by a sniff cue, during which the odor was presented.",
+      "page_number": null
+    },
+    {
+      "text_id": 274,
+      "paragraph_id": 72,
+      "section_id": 26,
+      "text": "After a short delay, participants saw a face and classified it as either \"fear\" or \"disgust.\"",
+      "page_number": null
+    },
+    {
+      "text_id": 275,
+      "paragraph_id": 72,
+      "section_id": 26,
+      "text": "The recording timeline (b) shows the main outcome variables: sniff (duration, volume), brain activation, and behavior (bias in judging ambiguous faces).",
+      "page_number": null
+    },
+    {
+      "text_id": 276,
+      "paragraph_id": 72,
+      "section_id": 26,
+      "text": "The schematic of expected effects (c) is divided into categorical effects (fear odor [red line] vs. neural odor [blue line]), forming a replication of prior research, and fear-dose effects showing either a linear dose-response function (alternative hypothesis [H 1 ]) or dose-invariance (null hypothesis [H 0 ])-low fear (LF [yellow line]) vs. medium fear (MF [light orange line]) vs. high fear (HF [dark orange line]).",
+      "page_number": null
+    },
+    {
+      "text_id": 277,
+      "paragraph_id": 72,
+      "section_id": 26,
+      "text": "Higher amplitudes (lines) reflect an expected stronger response (sniffing, brain activity).",
+      "page_number": null
+    },
+    {
+      "text_id": 278,
+      "paragraph_id": 72,
+      "section_id": 26,
+      "text": "In the righthand column, larger arrows to the left reflect an expected greater fear bias on the face-morph task.",
+      "page_number": null
+    },
+    {
+      "text_id": 279,
+      "paragraph_id": 72,
+      "section_id": 26,
+      "text": "ITI = intertrial interval.",
+      "page_number": null
+    },
+    {
+      "text_id": 280,
+      "paragraph_id": 73,
+      "section_id": 27,
+      "text": "Fig.3.",
+      "page_number": null
+    },
+    {
+      "text_id": 281,
+      "paragraph_id": 73,
+      "section_id": 27,
+      "text": "Experimental paradigm and predictions.",
+      "page_number": null
+    },
+    {
+      "text_id": 282,
+      "paragraph_id": 73,
+      "section_id": 27,
+      "text": "At the start of the experiment, participants provided odor ratings (pleasantness, intensity) and were asked to discriminate between odors.",
+      "page_number": null
+    },
+    {
+      "text_id": 283,
+      "paragraph_id": 73,
+      "section_id": 27,
+      "text": "This was followed by the main paradigm (a), in which each morph-task trial began with a 3-s countdown (3, 2, 1) and was followed by a sniff cue, during which the odor was presented.",
+      "page_number": null
+    },
+    {
+      "text_id": 284,
+      "paragraph_id": 73,
+      "section_id": 27,
+      "text": "After a short delay, participants saw a face and classified it as either \"fear\" or \"disgust.\"",
+      "page_number": null
+    },
+    {
+      "text_id": 285,
+      "paragraph_id": 73,
+      "section_id": 27,
+      "text": "The recording timeline (b) shows the main outcome variables: sniff (duration, volume), brain activation, and behavior (bias in judging ambiguous faces).",
+      "page_number": null
+    },
+    {
+      "text_id": 286,
+      "paragraph_id": 73,
+      "section_id": 27,
+      "text": "The schematic of expected effects (c) is divided into categorical effects (fear odor [red line] vs. neural odor [blue line]), forming a replication of prior research, and fear-dose effects showing either a linear dose-response function (alternative hypothesis [H 1 ]) or dose-invariance (null hypothesis [H 0 ])-low fear (LF [yellow line]) vs. medium fear (MF [light orange line]) vs. high fear (HF [dark orange line]).",
+      "page_number": null
+    },
+    {
+      "text_id": 287,
+      "paragraph_id": 73,
+      "section_id": 27,
+      "text": "Higher amplitudes (lines) reflect an expected stronger response (sniffing, brain activity).",
+      "page_number": null
+    },
+    {
+      "text_id": 288,
+      "paragraph_id": 73,
+      "section_id": 27,
+      "text": "In the righthand column, larger arrows to the left reflect an expected greater fear bias on the face-morph task.",
+      "page_number": null
+    },
+    {
+      "text_id": 289,
+      "paragraph_id": 73,
+      "section_id": 27,
+      "text": "ITI = intertrial interval.",
+      "page_number": null
+    },
+    {
+      "text_id": 290,
+      "paragraph_id": 74,
+      "section_id": 28,
+      "text": "Fig 4 Effects of sweat odor (low fear [LF], medium fear [MF], high fear [HF], and neutral [N]) on mean (a) fear responses on the whole-face-morph task, (b) fear responses on morphs maximally ambiguous between disgust and fear, (c) sniff duration, (d) sniff volume, (e) odor-intensity ratings, (f) odor-pleasantness ratings, and (g) ability to discriminate odor pairs.",
+      "page_number": null
+    },
+    {
+      "text_id": 291,
+      "paragraph_id": 74,
+      "section_id": 28,
+      "text": "The dashed line in (a) indicates the point of subjective equality, at which 50% of the responses are \"fear\" and 50% are \"disgust.\"",
+      "page_number": null
+    },
+    {
+      "text_id": 292,
+      "paragraph_id": 74,
+      "section_id": 28,
+      "text": "The brown bar in (b), (c), and (d) is the average of all three fear-sweat levels used to test for categorical effects (fear vs. neutral).",
+      "page_number": null
+    },
+    {
+      "text_id": 293,
+      "paragraph_id": 74,
+      "section_id": 28,
+      "text": "The horizontal line in (b), (c), and (d) indicates the average of the three fear-sweat levels.",
+      "page_number": null
+    },
+    {
+      "text_id": 294,
+      "paragraph_id": 74,
+      "section_id": 28,
+      "text": "Asterisks indicate significant differences between conditions (*p < .05, **p < .01, ***p < .001).",
+      "page_number": null
+    },
+    {
+      "text_id": 295,
+      "paragraph_id": 74,
+      "section_id": 28,
+      "text": "Bayes factor BF 01 indicates evidence in favor of the null hypothesis (dose invariance: LF = MF = HF) over the alternative hypothesis (linear effect: LF < MF < HF).",
+      "page_number": null
+    },
+    {
+      "text_id": 296,
+      "paragraph_id": 74,
+      "section_id": 28,
+      "text": "Error bars represent ±1 SE.",
+      "page_number": null
+    },
+    {
+      "text_id": 297,
+      "paragraph_id": 75,
+      "section_id": 29,
+      "text": "Fig 5 Results of whole-brain, region of interest (ROI), and exploratory analyses.",
+      "page_number": null
+    },
+    {
+      "text_id": 298,
+      "paragraph_id": 75,
+      "section_id": 29,
+      "text": "The brain images (a) show activations from the wholebrain contrast (fear odor > neutral odor) in fusiform face gyrus (FFG) and ventromedial prefrontal cortex (vmPFC; uncorrected p < .001, 10-voxel threshold).",
+      "page_number": null
+    },
+    {
+      "text_id": 299,
+      "paragraph_id": 75,
+      "section_id": 29,
+      "text": "Fear-dose-invariant effects (b; neutral odor was subtracted from each fear level) are shown for separate ROIs: right amygdala, left and right FFG, and left and right vmPFC.",
+      "page_number": null
+    },
+    {
+      "text_id": 300,
+      "paragraph_id": 75,
+      "section_id": 29,
+      "text": "Fear-intensity coding (c; fear odors -neutral odors) is shown for the left amygdala.",
+      "page_number": null
+    },
+    {
+      "text_id": 301,
+      "paragraph_id": 75,
+      "section_id": 29,
+      "text": "Left amygdala activity (d) is shown as a function of sweat-pad weight and presented fear-sweat dose.",
+      "page_number": null
+    },
+    {
+      "text_id": 302,
+      "paragraph_id": 75,
+      "section_id": 29,
+      "text": "The curved line shows the best-fitting linear regression.",
+      "page_number": null
+    },
+    {
+      "text_id": 303,
+      "paragraph_id": 75,
+      "section_id": 29,
+      "text": "The scatterplot (e) shows the correlation between left amygdala activity in response to fear sweat (low, medium, high) and the percentage of morphs identified as \"fear\" (vs. \"disgust\").",
+      "page_number": null
+    },
+    {
+      "text_id": 304,
+      "paragraph_id": 75,
+      "section_id": 29,
+      "text": "The diagonal line shows the best-fitting regression.",
+      "page_number": null
+    },
+    {
+      "text_id": 305,
+      "paragraph_id": 75,
+      "section_id": 29,
+      "text": "Each individualized pie chart displays the relative contribution of low-fear, medium-fear, and high-fear odor trials classified as \"fear\" to overall fear responses on the morph task and left amygdala activity.",
+      "page_number": null
+    },
+    {
+      "text_id": 306,
+      "paragraph_id": 75,
+      "section_id": 29,
+      "text": "Asterisks in (c) indicate significant differences between conditions (*p < .05).",
+      "page_number": null
+    },
+    {
+      "text_id": 307,
+      "paragraph_id": 75,
+      "section_id": 29,
+      "text": "Error bars in (b) and (c) represent ±1 SE.",
+      "page_number": null
+    },
+    {
+      "text_id": 308,
+      "paragraph_id": 76,
+      "section_id": 30,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 309,
+      "paragraph_id": 77,
+      "section_id": 30,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 310,
+      "paragraph_id": 78,
+      "section_id": 30,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 311,
+      "paragraph_id": 79,
+      "section_id": 30,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 312,
+      "paragraph_id": 80,
+      "section_id": 30,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 313,
+      "paragraph_id": 81,
+      "section_id": 30,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 314,
+      "paragraph_id": 82,
+      "section_id": 30,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 315,
+      "paragraph_id": 83,
+      "section_id": 30,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 316,
+      "paragraph_id": 84,
+      "section_id": 30,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 317,
+      "paragraph_id": 85,
+      "section_id": 30,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 318,
+      "paragraph_id": 86,
+      "section_id": 30,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 319,
+      "paragraph_id": 87,
+      "section_id": 30,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 320,
+      "paragraph_id": 88,
+      "section_id": 30,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 321,
+      "paragraph_id": 89,
+      "section_id": 30,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 322,
+      "paragraph_id": 90,
+      "section_id": 30,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 323,
+      "paragraph_id": 91,
+      "section_id": 30,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 324,
+      "paragraph_id": 92,
+      "section_id": 30,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 325,
+      "paragraph_id": 93,
+      "section_id": 30,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 326,
+      "paragraph_id": 94,
+      "section_id": 30,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 327,
+      "paragraph_id": 95,
+      "section_id": 30,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 328,
+      "paragraph_id": 96,
+      "section_id": 30,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 329,
+      "paragraph_id": 97,
+      "section_id": 30,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 330,
+      "paragraph_id": 98,
+      "section_id": 30,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 331,
+      "paragraph_id": 99,
+      "section_id": 30,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 332,
+      "paragraph_id": 100,
+      "section_id": 30,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 333,
+      "paragraph_id": 101,
+      "section_id": 30,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 334,
+      "paragraph_id": 102,
+      "section_id": 30,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 335,
+      "paragraph_id": 103,
+      "section_id": 30,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 336,
+      "paragraph_id": 104,
+      "section_id": 30,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 337,
+      "paragraph_id": 105,
+      "section_id": 30,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 338,
+      "paragraph_id": 106,
+      "section_id": 30,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 339,
+      "paragraph_id": 107,
+      "section_id": 30,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 340,
+      "paragraph_id": 108,
+      "section_id": 30,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 341,
+      "paragraph_id": 109,
+      "section_id": 30,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 342,
+      "paragraph_id": 110,
+      "section_id": 30,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 343,
+      "paragraph_id": 111,
+      "section_id": 30,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 344,
+      "paragraph_id": 112,
+      "section_id": 30,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 345,
+      "paragraph_id": 113,
+      "section_id": 30,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 346,
+      "paragraph_id": 114,
+      "section_id": 30,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 347,
+      "paragraph_id": 115,
+      "section_id": 30,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 348,
+      "paragraph_id": 116,
+      "section_id": 30,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 349,
+      "paragraph_id": 117,
+      "section_id": 30,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 350,
+      "paragraph_id": 118,
+      "section_id": 30,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 351,
+      "paragraph_id": 119,
+      "section_id": 30,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 352,
+      "paragraph_id": 120,
+      "section_id": 30,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 353,
+      "paragraph_id": 121,
+      "section_id": 30,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 354,
+      "paragraph_id": 122,
+      "section_id": 30,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 355,
+      "paragraph_id": 123,
+      "section_id": 30,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 356,
+      "paragraph_id": 124,
+      "section_id": 30,
+      "text": "",
+      "page_number": null
+    }
+  ],
+  "section": [
+    {
+      "section_id": 0,
+      "header": "Abstract",
+      "parent_section_id": null,
+      "section_type": "abstract",
+      "classification_score": null
+    },
+    {
+      "section_id": 1,
+      "header": "[div-01]",
+      "parent_section_id": null,
+      "section_type": "intro",
+      "classification_score": null
+    },
+    {
+      "section_id": 2,
+      "header": "Method",
+      "parent_section_id": null,
+      "section_type": "method",
+      "classification_score": null
+    },
+    {
+      "section_id": 3,
+      "header": "Participants",
+      "parent_section_id": null,
+      "section_type": "method",
+      "classification_score": null
+    },
+    {
+      "section_id": 4,
+      "header": "Statement of Relevance",
+      "parent_section_id": null,
+      "section_type": "method",
+      "classification_score": null
+    },
+    {
+      "section_id": 5,
+      "header": "Materials",
+      "parent_section_id": null,
+      "section_type": "method",
+      "classification_score": null
+    },
+    {
+      "section_id": 6,
+      "header": "Pilot test: artificial sweat and morph-task performance.",
+      "parent_section_id": null,
+      "section_type": "method",
+      "classification_score": null
+    },
+    {
+      "section_id": 7,
+      "header": "Procedure",
+      "parent_section_id": null,
+      "section_type": "method",
+      "classification_score": null
+    },
+    {
+      "section_id": 8,
+      "header": "Statistical analysis",
+      "parent_section_id": null,
+      "section_type": "method",
+      "classification_score": null
+    },
+    {
+      "section_id": 9,
+      "header": "Data analysis.",
+      "parent_section_id": null,
+      "section_type": "method",
+      "classification_score": null
+    },
+    {
+      "section_id": 10,
+      "header": "fMRI analysis.",
+      "parent_section_id": null,
+      "section_type": "method",
+      "classification_score": null
+    },
+    {
+      "section_id": 11,
+      "header": "Bayesian analysis.",
+      "parent_section_id": null,
+      "section_type": "method",
+      "classification_score": null
+    },
+    {
+      "section_id": 12,
+      "header": "Results",
+      "parent_section_id": null,
+      "section_type": "results",
+      "classification_score": null
+    },
+    {
+      "section_id": 13,
+      "header": "Discussion",
+      "parent_section_id": null,
+      "section_type": "discussion",
+      "classification_score": null
+    },
+    {
+      "section_id": 14,
+      "header": "Transparency",
+      "parent_section_id": null,
+      "section_type": "discussion",
+      "classification_score": null
+    },
+    {
+      "section_id": 15,
+      "header": "Acknowledgments",
+      "parent_section_id": null,
+      "section_type": "acknowledgement",
+      "classification_score": null
+    },
+    {
+      "section_id": 16,
+      "header": "Funding",
+      "parent_section_id": null,
+      "section_type": "funding",
+      "classification_score": null
+    },
+    {
+      "section_id": 17,
+      "header": "",
+      "parent_section_id": null,
+      "section_type": "availability",
+      "classification_score": null
+    },
+    {
+      "section_id": 18,
+      "header": "Open Practices",
+      "parent_section_id": null,
+      "section_type": "availability",
+      "classification_score": null
+    },
+    {
+      "section_id": 19,
+      "header": "Declaration of Conflicting Interests",
+      "parent_section_id": null,
+      "section_type": "conflict",
+      "classification_score": null
+    },
+    {
+      "section_id": 20,
+      "header": "",
+      "parent_section_id": null,
+      "section_type": "contribution",
+      "classification_score": null
+    },
+    {
+      "section_id": 21,
+      "header": "Supplemental Material",
+      "parent_section_id": null,
+      "section_type": "annex",
+      "classification_score": null
+    },
+    {
+      "section_id": 22,
+      "header": "Fig 1",
+      "parent_section_id": null,
+      "section_type": "figure",
+      "classification_score": null
+    },
+    {
+      "section_id": 23,
+      "header": "",
+      "parent_section_id": null,
+      "section_type": "figure",
+      "classification_score": null
+    },
+    {
+      "section_id": 24,
+      "header": "Fig 2",
+      "parent_section_id": null,
+      "section_type": "figure",
+      "classification_score": null
+    },
+    {
+      "section_id": 25,
+      "header": "1",
+      "parent_section_id": null,
+      "section_type": "figure",
+      "classification_score": null
+    },
+    {
+      "section_id": 26,
+      "header": "Fig.",
+      "parent_section_id": null,
+      "section_type": "figure",
+      "classification_score": null
+    },
+    {
+      "section_id": 27,
+      "header": "",
+      "parent_section_id": null,
+      "section_type": "figure",
+      "classification_score": null
+    },
+    {
+      "section_id": 28,
+      "header": "Fig 4",
+      "parent_section_id": null,
+      "section_type": "figure",
+      "classification_score": null
+    },
+    {
+      "section_id": 29,
+      "header": "Fig 5",
+      "parent_section_id": null,
+      "section_type": "figure",
+      "classification_score": null
+    },
+    {
+      "section_id": 30,
+      "header": "References",
+      "parent_section_id": null,
+      "section_type": "references",
+      "classification_score": null
+    }
+  ],
+  "url": [
+    {
+      "href": "osf.io/y76p2",
+      "link_text": null,
+      "text_id": 27
+    },
+    {
+      "href": "https://osf.io/4dtqb",
+      "link_text": null,
+      "text_id": 45
+    },
+    {
+      "href": "https://osf.io",
+      "link_text": null,
+      "text_id": 246
+    },
+    {
+      "href": "http://www.psychologicalscience.org/publications",
+      "link_text": null,
+      "text_id": 249
+    },
+    {
+      "href": "journals.sagepub.com/doi/suppl/10.1177/0956797620970548",
+      "link_text": null,
+      "text_id": 257
+    }
+  ],
+  "bib": [
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "",
+      "authors": "Abrosoft, ",
+      "editors": "",
+      "publisher": "",
+      "year": 2016,
+      "volume": "",
+      "issue": "",
+      "container": "",
+      "first_page": null,
+      "last_page": null,
+      "bib_id": 0,
+      "year_suffix": "",
+      "text_id": 308
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1038/nn1001",
+      "title": "Dissociated neural representations of intensity and valence in human olfaction",
+      "authors": "Anderson, A K; Christoff, K; Stappen, I; Panitz, D; Ghahremani, D G; Glover, G; Gabrieli, J D E; Sobel, N",
+      "editors": "",
+      "publisher": "",
+      "year": 2003,
+      "volume": "6",
+      "issue": "2",
+      "container": "Nature Neuroscience",
+      "first_page": "196",
+      "last_page": "202",
+      "bib_id": 1,
+      "year_suffix": "",
+      "text_id": 309
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.7554/eLife.22630",
+      "title": "Complementary codes for odor identity and intensity in olfactory cortex",
+      "authors": "Bolding, K A; Franks, K M",
+      "editors": "",
+      "publisher": "",
+      "year": 2017,
+      "volume": "6",
+      "issue": "",
+      "container": "eLife",
+      "first_page": "22630",
+      "last_page": null,
+      "bib_id": 2,
+      "year_suffix": "",
+      "text_id": 310
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1126/science.aat6904",
+      "title": "Recurrent cortical circuits implement concentration-invariant odor coding",
+      "authors": "Bolding, K A; Franks, K M",
+      "editors": "",
+      "publisher": "",
+      "year": 2018,
+      "volume": "361",
+      "issue": "6407",
+      "container": "Science",
+      "first_page": null,
+      "last_page": null,
+      "bib_id": 3,
+      "year_suffix": "",
+      "text_id": 311
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1038/s41597-019-0113-7",
+      "title": "fMRI data of mixed gambles from the Neuroimaging Analysis Replication and Prediction Study",
+      "authors": "Botvinik-Nezer, R; Iwanir, R; Holzmeister, F; Huber, J; Johannesson, M; Kirchler, M; Dreber, A; Camerer, C F; Poldrack, R A; Schonberg, T",
+      "editors": "",
+      "publisher": "",
+      "year": 2019,
+      "volume": "6",
+      "issue": "1",
+      "container": "Scientific Data",
+      "first_page": "106",
+      "last_page": null,
+      "bib_id": 4,
+      "year_suffix": "",
+      "text_id": 312
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1080/02724990143000045",
+      "title": "Sex differences in human olfaction: Between evidence and enigma",
+      "authors": "Brand, G; Millot, J L",
+      "editors": "",
+      "publisher": "",
+      "year": 2001,
+      "volume": "54",
+      "issue": "3",
+      "container": "The Quarterly Journal of Experimental Psychology B",
+      "first_page": "259",
+      "last_page": "270",
+      "bib_id": 5,
+      "year_suffix": "",
+      "text_id": 313
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1038/s41598-019-41937-0",
+      "title": "Body odors (even when masked) make you more emotional: Behavioral and neural insights",
+      "authors": "Cecchetto, C; Lancini, E; Bueti, D; Rumiati, R I; Parma, V",
+      "editors": "",
+      "publisher": "",
+      "year": 2019,
+      "volume": "9",
+      "issue": "1",
+      "container": "Scientific Reports",
+      "first_page": "5489",
+      "last_page": null,
+      "bib_id": 6,
+      "year_suffix": "",
+      "text_id": 314
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.3389/fneng.2011.00021",
+      "title": "Sequential mechanisms underlying concentration invariance in biological olfaction",
+      "authors": "Cleland, T A; Chen, S Y T; Hozer, K W; Ukatu, H N; Wong, K J; Zheng, F",
+      "editors": "",
+      "publisher": "",
+      "year": 2012,
+      "volume": "4",
+      "issue": "21",
+      "container": "Frontiers in Neuroengineering",
+      "first_page": null,
+      "last_page": null,
+      "bib_id": 7,
+      "year_suffix": "",
+      "text_id": 315
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1093/chemse/bjv060",
+      "title": "Doseresponse functions for the olfactory, nasal trigeminal, and ocular trigeminal detectability of airborne chemicals by humans",
+      "authors": "Cometto-Muñiz, J E; Abraham, M H",
+      "editors": "",
+      "publisher": "",
+      "year": 2016,
+      "volume": "41",
+      "issue": "1",
+      "container": "Chemical Senses",
+      "first_page": "3",
+      "last_page": "14",
+      "bib_id": 8,
+      "year_suffix": "",
+      "text_id": 316
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1098/rstb.2019.0271",
+      "title": "Encoding fear intensity in human sweat",
+      "authors": "De Groot, J H B; Kirk, P A; Gottfried, J A",
+      "editors": "",
+      "publisher": "",
+      "year": 2020,
+      "volume": "375",
+      "issue": "",
+      "container": "Philosophical Transactions of the Royal Society B: Biological Sciences",
+      "first_page": null,
+      "last_page": null,
+      "bib_id": 9,
+      "year_suffix": "",
+      "text_id": 317
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1037/a0035950",
+      "title": "Chemical communication of fear: A case of male-female asymmetry",
+      "authors": "De Groot, J H B; Semin, G R; Smeets, M A M",
+      "editors": "",
+      "publisher": "",
+      "year": 2014,
+      "volume": "143",
+      "issue": "4",
+      "container": "Journal of Experimental Psychology: General",
+      "first_page": "1515",
+      "last_page": "1525",
+      "bib_id": 10,
+      "year_suffix": "",
+      "text_id": 318
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1093/chemse/bjx049",
+      "title": "Human fear chemosignaling: Evidence from a meta-analysis",
+      "authors": "De Groot, J H B; Smeets, M A M",
+      "editors": "",
+      "publisher": "",
+      "year": 2017,
+      "volume": "42",
+      "issue": "8",
+      "container": "Chemical Senses",
+      "first_page": "663",
+      "last_page": "673",
+      "bib_id": 11,
+      "year_suffix": "",
+      "text_id": 319
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1177/0956797612445317",
+      "title": "Chemosignals communicate human emotions",
+      "authors": "De Groot, J H B; Smeets, M A M; Kaldewaij, A; Duijndam, M J A; Semin, G R",
+      "editors": "",
+      "publisher": "",
+      "year": 2012,
+      "volume": "23",
+      "issue": "11",
+      "container": "Psychological Science",
+      "first_page": "1417",
+      "last_page": "1424",
+      "bib_id": 12,
+      "year_suffix": "",
+      "text_id": 320
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1016/j.psyneuen.2018.08.005",
+      "title": "Beyond the west: Chemosignaling of emotions transcends ethnocultural boundaries",
+      "authors": "De Groot, J H B; Van Houtum, L A E M; Gortemaker, I; Ye, Y; Chen, W; Zhou, W; Smeets, M A M",
+      "editors": "",
+      "publisher": "",
+      "year": 2018,
+      "volume": "98",
+      "issue": "",
+      "container": "Psychoneuroendocrinology",
+      "first_page": "177",
+      "last_page": "185",
+      "bib_id": 13,
+      "year_suffix": "",
+      "text_id": 321
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1073/pnas.171288598",
+      "title": "Crossmodal binding of fear in voice and face",
+      "authors": "Dolan, R J; Morris, J S; De Gelder, B",
+      "editors": "",
+      "publisher": "",
+      "year": 2001,
+      "volume": "98",
+      "issue": "17",
+      "container": "Proceedings of the National Academy of Sciences",
+      "first_page": "10006",
+      "last_page": "10010",
+      "bib_id": 14,
+      "year_suffix": "",
+      "text_id": 322
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1073/pnas.1602413113",
+      "title": "Cluster failure: Why fMRI inferences for spatial extent have inflated false-positive rates",
+      "authors": "Eklund, A; Nichols, T E; Knutsson, H",
+      "editors": "",
+      "publisher": "",
+      "year": 2016,
+      "volume": "113",
+      "issue": "28",
+      "container": "Proceedings of the National Academy of Sciences",
+      "first_page": "7900",
+      "last_page": "7905",
+      "bib_id": 15,
+      "year_suffix": "",
+      "text_id": 323
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1038/s41593-017-0024-x",
+      "title": "Altered responses to social chemosignals in autism spectrum disorder",
+      "authors": "Endevelt-Shapira, Y; Perl, O; Ravia, A; Amir, D; Eisen, A; Bezalel, V; Rozenkrantz, L; Mishor, E; Pinchover, L; Soroka, T; Honigstein, D; Sobel, N",
+      "editors": "",
+      "publisher": "",
+      "year": 2018,
+      "volume": "21",
+      "issue": "",
+      "container": "Nature Neuroscience",
+      "first_page": "111",
+      "last_page": "119",
+      "bib_id": 16,
+      "year_suffix": "",
+      "text_id": 324
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1016/j.neuroimage.2009.10.092",
+      "title": "Avoiding non-independence in fMRI data analysis: Leave one subject out",
+      "authors": "Esterman, M; Tamber-Rosenau, B J; Chiu, Y C; Yantis, S",
+      "editors": "",
+      "publisher": "",
+      "year": 2010,
+      "volume": "50",
+      "issue": "2",
+      "container": "NeuroImage",
+      "first_page": "572",
+      "last_page": "576",
+      "bib_id": 17,
+      "year_suffix": "",
+      "text_id": 325
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1093/chemse/bjx012",
+      "title": "Smelling is telling: Human olfactory cues influence social judgments in semi-realistic interactions",
+      "authors": "Gaby, J M; Zayas, V",
+      "editors": "",
+      "publisher": "",
+      "year": 2017,
+      "volume": "42",
+      "issue": "5",
+      "container": "Chemical Senses",
+      "first_page": "405",
+      "last_page": "418",
+      "bib_id": 18,
+      "year_suffix": "",
+      "text_id": 326
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1023/A:1024952730333",
+      "title": "The intensity of emotional facial expressions and decoding accuracy",
+      "authors": "Hess, U; Blairy, S; Kleck Robert, E",
+      "editors": "",
+      "publisher": "",
+      "year": 1997,
+      "volume": "21",
+      "issue": "4",
+      "container": "Journal of Nonverbal Behavior",
+      "first_page": "241",
+      "last_page": "257",
+      "bib_id": 19,
+      "year_suffix": "",
+      "text_id": 327
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1016/j.neuron.2014.10.012",
+      "title": "Configural and elemental coding of natural odor mixture components in the human brain",
+      "authors": "Howard, J D; Gottfried, J A",
+      "editors": "",
+      "publisher": "",
+      "year": 2014,
+      "volume": "84",
+      "issue": "4",
+      "container": "Neuron",
+      "first_page": "857",
+      "last_page": "869",
+      "bib_id": 20,
+      "year_suffix": "",
+      "text_id": 328
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "",
+      "authors": "",
+      "editors": "",
+      "publisher": "JASP Team",
+      "year": 2020,
+      "volume": "",
+      "issue": "",
+      "container": "",
+      "first_page": null,
+      "last_page": null,
+      "bib_id": 21,
+      "year_suffix": "",
+      "text_id": 329
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1037/1528-3542.1.4.381",
+      "title": "Impact of intended emotion intensity on cue utilization and decoding accuracy in vocal expression of emotion",
+      "authors": "Juslin, P N; Laukka, P",
+      "editors": "",
+      "publisher": "",
+      "year": 2001,
+      "volume": "1",
+      "issue": "4",
+      "container": "Emotion",
+      "first_page": "381",
+      "last_page": "412",
+      "bib_id": 22,
+      "year_suffix": "",
+      "text_id": 330
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1093/chemse/bjy029",
+      "title": "Fear odor facilitates the detection of fear expressions over other negative expressions",
+      "authors": "Kamiloglu, R G; Smeets, M A M; De Groot, J H B; Semin, G R",
+      "editors": "",
+      "publisher": "",
+      "year": 2018,
+      "volume": "43",
+      "issue": "6",
+      "container": "Chemical Senses",
+      "first_page": "419",
+      "last_page": "426",
+      "bib_id": 23,
+      "year_suffix": "",
+      "text_id": 331
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "So much more to know",
+      "authors": "Kennedy, D; Norman, C",
+      "editors": "",
+      "publisher": "",
+      "year": 2005,
+      "volume": "309",
+      "issue": "",
+      "container": "Science",
+      "first_page": "78",
+      "last_page": "102",
+      "bib_id": 24,
+      "year_suffix": "",
+      "text_id": 332
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1038/nn.2303",
+      "title": "Circular analysis in systems neuroscience: The dangers of double dipping",
+      "authors": "Kriegeskorte, N; Simmons, W K; Bellgowan, P S F; Baker, C I",
+      "editors": "",
+      "publisher": "",
+      "year": 2009,
+      "volume": "12",
+      "issue": "5",
+      "container": "Nature Neuroscience",
+      "first_page": "535",
+      "last_page": "540",
+      "bib_id": 25,
+      "year_suffix": "",
+      "text_id": 333
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1080/02699930903485076",
+      "title": "Presentation and validation of the Radboud Faces Database",
+      "authors": "Langner, O; Dotsch, R; Bijlstra, G; Wigboldus, D H J; Hawk, S T; Van Knippenberg, A",
+      "editors": "",
+      "publisher": "",
+      "year": 2010,
+      "volume": "24",
+      "issue": "8",
+      "container": "Cognition & Emotion",
+      "first_page": "1377",
+      "last_page": "1388",
+      "bib_id": 26,
+      "year_suffix": "",
+      "text_id": 334
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "",
+      "authors": "Lee, M D; Wagenmakers, E.-J",
+      "editors": "",
+      "publisher": "Cambridge University Press",
+      "year": 2013,
+      "volume": "",
+      "issue": "",
+      "container": "",
+      "first_page": null,
+      "last_page": null,
+      "bib_id": 27,
+      "year_suffix": "",
+      "text_id": 335
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "",
+      "authors": "Mai, J K; Assheuer, J; Paxinos, G",
+      "editors": "",
+      "publisher": "Academic Press",
+      "year": 2004,
+      "volume": "",
+      "issue": "",
+      "container": "",
+      "first_page": null,
+      "last_page": null,
+      "bib_id": 28,
+      "year_suffix": "",
+      "text_id": 336
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1038/s41386-018-0063-3",
+      "title": "Oxytocin reduces a chemosensory-induced stress bias in social perception",
+      "authors": "Maier, A; Scheele, D; Spengler, F B; Menba, T; Mohr, F; Güntürkün, O; Stoffel-Wagner, B; Kinfe, T M; Maier, W; Khalsa, S S; Hurlemann, R",
+      "editors": "",
+      "publisher": "",
+      "year": 2019,
+      "volume": "44",
+      "issue": "2",
+      "container": "Neuropsychopharmacology",
+      "first_page": "281",
+      "last_page": "288",
+      "bib_id": 29,
+      "year_suffix": "",
+      "text_id": 337
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1126/science.aam7263",
+      "title": "Poor human olfaction is a 19th-century myth",
+      "authors": "Mcgann, J P",
+      "editors": "",
+      "publisher": "",
+      "year": 2017,
+      "volume": "356",
+      "issue": "",
+      "container": "Science",
+      "first_page": "7263",
+      "last_page": null,
+      "bib_id": 30,
+      "year_suffix": "",
+      "text_id": 338
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1371/journal.pone.0006415",
+      "title": "Chemosensory cues to conspecific emotional stress activate amygdala in humans",
+      "authors": "Mujica-Parodi, L R; Strey, H H; Frederick, B; Savoy, R; Cox, D; Botanov, Y; Tolkunov, D; Rubin, D; Weber, J",
+      "editors": "",
+      "publisher": "",
+      "year": 2009,
+      "volume": "4",
+      "issue": "7",
+      "container": "PLOS ONE",
+      "first_page": null,
+      "last_page": null,
+      "bib_id": 31,
+      "year_suffix": "",
+      "text_id": 339
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1016/j.tics.2015.04.007",
+      "title": "The muted sense: Neurocognitive limitations of olfactory language",
+      "authors": "Olofsson, J K; Gottfried, J A",
+      "editors": "",
+      "publisher": "",
+      "year": 2015,
+      "volume": "19",
+      "issue": "6",
+      "container": "Trends in Cognitive Sciences",
+      "first_page": "314",
+      "last_page": "321",
+      "bib_id": 32,
+      "year_suffix": "",
+      "text_id": 340
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1007/978-3-319-26932-0_51",
+      "title": "Processing of human body odors",
+      "authors": "Parma, V; Gordon, A R; Cecchetto, C; Cavazzana, A; Lundström, J N; Olsson, M J",
+      "editors": "Buettner, A",
+      "publisher": "Springer",
+      "year": 2017,
+      "volume": "",
+      "issue": "",
+      "container": "",
+      "first_page": "963",
+      "last_page": "986",
+      "bib_id": 33,
+      "year_suffix": "",
+      "text_id": 341
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1371/journal.pone.0005987",
+      "title": "Induction of empathy by the smell of anxiety",
+      "authors": "Prehn-Kristensen, A; Wiesner, C; Bergmann, T O; Wolff, S; Jansen, O; Mehdorn, H M; Ferstl, R; Pause, B M",
+      "editors": "",
+      "publisher": "",
+      "year": 2009,
+      "volume": "4",
+      "issue": "6",
+      "container": "PLOS ONE",
+      "first_page": null,
+      "last_page": null,
+      "bib_id": 34,
+      "year_suffix": "",
+      "text_id": 342
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1098/rstb.2019.0258",
+      "title": "Human olfactory communication: Current challenges and future prospects",
+      "authors": "Roberts, S C; Havlíc ˇek, J; Schaal, B",
+      "editors": "",
+      "publisher": "",
+      "year": 2020,
+      "volume": "375",
+      "issue": "",
+      "container": "Philosophical Transactions of the Royal Society B: Biological Sciences",
+      "first_page": null,
+      "last_page": null,
+      "bib_id": 35,
+      "year_suffix": "",
+      "text_id": 343
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.7554/eLife.26337",
+      "title": "Odor identity coding by distributed ensembles of neurons in the mouse olfactory cortex",
+      "authors": "Roland, B; Deneux, T; Franks, K M; Bathellier, B; Fleischmann, A",
+      "editors": "",
+      "publisher": "",
+      "year": 2017,
+      "volume": "6",
+      "issue": "",
+      "container": "eLife",
+      "first_page": "26337",
+      "last_page": null,
+      "bib_id": 36,
+      "year_suffix": "",
+      "text_id": 344
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.7554/eLife.16335",
+      "title": "Massive normalization of olfactory bulb output in mice with a 'monoclonal nose",
+      "authors": "Roland, B; Jordan, R; Sosulski, D L; Diodato, A; Fukunaga, I; Wickersham, I; Franks, K M; Schaefer, A T; Fleischmann, A",
+      "editors": "",
+      "publisher": "",
+      "year": 2016,
+      "volume": "5",
+      "issue": "",
+      "container": "eLife",
+      "first_page": "16335",
+      "last_page": null,
+      "bib_id": 37,
+      "year_suffix": "",
+      "text_id": 345
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1016/j.neuron.2018.12.030",
+      "title": "Structured odorant response patterns across a complete olfactory receptor neuron population",
+      "authors": "Si, G; Kanwal, J K; Hu, Y; Tabone, C J; Baron, J; Berck, M; Vignoud, G; Samuel, A D T",
+      "editors": "",
+      "publisher": "",
+      "year": 2019,
+      "volume": "101",
+      "issue": "5",
+      "container": "Neuron",
+      "first_page": "950",
+      "last_page": "962",
+      "bib_id": 38,
+      "year_suffix": "",
+      "text_id": 346
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1002/hbm.22307",
+      "title": "Statistical improvements in functional magnetic resonance imaging analyses produced by censoring high-motion data points",
+      "authors": "Siegel, J S; Power, J D; Dubis, J W; Vogel, A C; Church, J A; Schlaggar, B L; Petersen, S E",
+      "editors": "",
+      "publisher": "",
+      "year": 2014,
+      "volume": "35",
+      "issue": "5",
+      "container": "Human Brain Mapping",
+      "first_page": "1981",
+      "last_page": "1996",
+      "bib_id": 39,
+      "year_suffix": "",
+      "text_id": 347
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1093/chemse/bjy028",
+      "title": "Smelling anxiety chemosignals impairs clinical performance of dental students",
+      "authors": "Singh, P B; Young, A; Lind, S; Leegaard, M C; Capuozzo, A; Parma, V",
+      "editors": "",
+      "publisher": "",
+      "year": 2018,
+      "volume": "43",
+      "issue": "6",
+      "container": "Chemical Senses",
+      "first_page": "411",
+      "last_page": "417",
+      "bib_id": 40,
+      "year_suffix": "",
+      "text_id": 348
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.3390/metabo10030084",
+      "title": "Chemical fingerprints of emotional body odor",
+      "authors": "Smeets, M A M; Rosing, E A E; Jacobs, D M; Van Velzen, E; Koek, J H; Blonk, C; Gortemaker, I; Eidhof, M B; Markovitch, B; De Groot, J H B; Semin, G R",
+      "editors": "",
+      "publisher": "",
+      "year": 2020,
+      "volume": "10",
+      "issue": "3",
+      "container": "Metabolites",
+      "first_page": "84",
+      "last_page": null,
+      "bib_id": 41,
+      "year_suffix": "",
+      "text_id": 349
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1038/nn.2138",
+      "title": "Expressing fear enhances sensory acquisition",
+      "authors": "Susskind, J M; Lee, D H; Cusi, A; Feiman, R; Grabski, W; Anderson, A K",
+      "editors": "",
+      "publisher": "",
+      "year": 2008,
+      "volume": "11",
+      "issue": "7",
+      "container": "Nature Neuroscience",
+      "first_page": "843",
+      "last_page": "850",
+      "bib_id": 42,
+      "year_suffix": "",
+      "text_id": 350
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1111/j.1745-459X.2011.00346.x",
+      "title": "Investigation of test performance over repeated sessions using signal detection theory: Comparison of three nonattributespecified difference tests 2-AFCR, A-Not A and 2-AFC",
+      "authors": "Van Hout, D; Hautus, M J; Lee, H S",
+      "editors": "",
+      "publisher": "",
+      "year": 2011,
+      "volume": "26",
+      "issue": "5",
+      "container": "Journal of Sensory Studies",
+      "first_page": "311",
+      "last_page": "321",
+      "bib_id": 43,
+      "year_suffix": "",
+      "text_id": 351
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1523/JNEUROSCI.1569-05.2005",
+      "title": "Integrated neural representations of odor intensity and affective valence in human amygdala",
+      "authors": "Winston, J S; Gottfried, J A; Kilner, J M; Dolan, R J",
+      "editors": "",
+      "publisher": "",
+      "year": 2005,
+      "volume": "25",
+      "issue": "39",
+      "container": "The Journal of Neuroscience",
+      "first_page": "8903",
+      "last_page": "8907",
+      "bib_id": 44,
+      "year_suffix": "",
+      "text_id": 352
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1016/j.cub.2014.01.059",
+      "title": "Single scale for odor intensity in rat olfaction",
+      "authors": "Wojcik, P T; Sirotin, Y B",
+      "editors": "",
+      "publisher": "",
+      "year": 2014,
+      "volume": "24",
+      "issue": "5",
+      "container": "Current Biology",
+      "first_page": "568",
+      "last_page": "573",
+      "bib_id": 45,
+      "year_suffix": "",
+      "text_id": 353
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1016/j.neuroimage.2016.09.002",
+      "title": "Chemosensory anxiety cues enhance the perception of fearful faces -an fMRI study",
+      "authors": "Wudarczyk, O A; Kohn, N; Bergs, R; Goerlich, K S; Gur, R E; Turetsky, B; Schneider, F; Habel, U",
+      "editors": "",
+      "publisher": "",
+      "year": 2016,
+      "volume": "143",
+      "issue": "",
+      "container": "NeuroImage",
+      "first_page": "214",
+      "last_page": "222",
+      "bib_id": 46,
+      "year_suffix": "",
+      "text_id": 354
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1098/rstb.2019.0262",
+      "title": "Reproducible research into human chemical communication by cues and pheromones: Learning from psychology's renaissance",
+      "authors": "Wyatt, T D",
+      "editors": "",
+      "publisher": "",
+      "year": 2020,
+      "volume": "375",
+      "issue": "",
+      "container": "Philosophical Transactions of the Royal Society B: Biological Sciences",
+      "first_page": null,
+      "last_page": null,
+      "bib_id": 47,
+      "year_suffix": "",
+      "text_id": 355
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1111/j.1467-9280.2009.02263.x",
+      "title": "Fear-related chemosignals modulate recognition of fear in ambiguous facial expressions",
+      "authors": "Zhou, W; Chen, D",
+      "editors": "",
+      "publisher": "",
+      "year": 2009,
+      "volume": "20",
+      "issue": "2",
+      "container": "Psychological Science",
+      "first_page": "177",
+      "last_page": "183",
+      "bib_id": 48,
+      "year_suffix": "",
+      "text_id": 356
+    }
+  ],
+  "xref": [
+    {
+      "xref_id": 1,
+      "xref_type": "bib",
+      "contents": "(Anderson et al., 2003)",
+      "text_id": 217
+    },
+    {
+      "xref_id": 2,
+      "xref_type": "bib",
+      "contents": "Bolding & Franks, 2017",
+      "text_id": null
+    },
+    {
+      "xref_id": 2,
+      "xref_type": "bib",
+      "contents": "Bolding & Franks, 2017;",
+      "text_id": 214
+    },
+    {
+      "xref_id": 4,
+      "xref_type": "bib",
+      "contents": "(Botvinik-Nezer et al., 2019)",
+      "text_id": 95
+    },
+    {
+      "xref_id": 5,
+      "xref_type": "bib",
+      "contents": "(Brand & Millot, 2001",
+      "text_id": 30
+    },
+    {
+      "xref_id": 6,
+      "xref_type": "bib",
+      "contents": "(Cecchetto et al., 2019;",
+      "text_id": 229
+    },
+    {
+      "xref_id": 7,
+      "xref_type": "bib",
+      "contents": "(Cleland et al., 2012;",
+      "text_id": 20
+    },
+    {
+      "xref_id": 8,
+      "xref_type": "bib",
+      "contents": "(Cometto-Muñiz & Abraham, 2016)",
+      "text_id": 207
+    },
+    {
+      "xref_id": 8,
+      "xref_type": "bib",
+      "contents": "(Cometto-Muñiz & Abraham, 2016)",
+      "text_id": 209
+    },
+    {
+      "xref_id": 8,
+      "xref_type": "bib",
+      "contents": "Cometto-Muñiz & Abraham, 2016;",
+      "text_id": 207
+    },
+    {
+      "xref_id": 8,
+      "xref_type": "bib",
+      "contents": "Cometto-Muñiz & Abraham, 2016;",
+      "text_id": 209
+    },
+    {
+      "xref_id": 9,
+      "xref_type": "bib",
+      "contents": "de Groot et al., 2020)",
+      "text_id": 23
+    },
+    {
+      "xref_id": 9,
+      "xref_type": "bib",
+      "contents": "de Groot et al., 2020)",
+      "text_id": 25
+    },
+    {
+      "xref_id": 9,
+      "xref_type": "bib",
+      "contents": "(de Groot et al., 2020)",
+      "text_id": 23
+    },
+    {
+      "xref_id": 9,
+      "xref_type": "bib",
+      "contents": "(de Groot et al., 2020)",
+      "text_id": 25
+    },
+    {
+      "xref_id": 9,
+      "xref_type": "bib",
+      "contents": "(de Groot et al., 2020)",
+      "text_id": 32
+    },
+    {
+      "xref_id": 9,
+      "xref_type": "bib",
+      "contents": "(de Groot et al., 2020)",
+      "text_id": 42
+    },
+    {
+      "xref_id": 9,
+      "xref_type": "bib",
+      "contents": "de Groot et al., 2020)",
+      "text_id": 51
+    },
+    {
+      "xref_id": 9,
+      "xref_type": "bib",
+      "contents": "de Groot et al., 2020)",
+      "text_id": 53
+    },
+    {
+      "xref_id": 10,
+      "xref_type": "bib",
+      "contents": "(de Groot et al., 2014;",
+      "text_id": 30
+    },
+    {
+      "xref_id": 11,
+      "xref_type": "bib",
+      "contents": "de Groot & Smeets, 2017)",
+      "text_id": 10
+    },
+    {
+      "xref_id": 11,
+      "xref_type": "bib",
+      "contents": "de Groot & Smeets, 2017;",
+      "text_id": 15
+    },
+    {
+      "xref_id": 11,
+      "xref_type": "bib",
+      "contents": "de Groot & Smeets, 2017)",
+      "text_id": 30
+    },
+    {
+      "xref_id": 11,
+      "xref_type": "bib",
+      "contents": "de Groot & Smeets, 2017)",
+      "text_id": 31
+    },
+    {
+      "xref_id": 12,
+      "xref_type": "bib",
+      "contents": "(de Groot et al., 2012)",
+      "text_id": 12
+    },
+    {
+      "xref_id": 12,
+      "xref_type": "bib",
+      "contents": "(de Groot et al., 2012)",
+      "text_id": 173
+    },
+    {
+      "xref_id": 13,
+      "xref_type": "bib",
+      "contents": "(de Groot et al., 2018;",
+      "text_id": 176
+    },
+    {
+      "xref_id": 14,
+      "xref_type": "bib",
+      "contents": "(Dolan et al., 2001)",
+      "text_id": 13
+    },
+    {
+      "xref_id": 15,
+      "xref_type": "bib",
+      "contents": "(Eklund et al., 2016)",
+      "text_id": 146
+    },
+    {
+      "xref_id": 16,
+      "xref_type": "bib",
+      "contents": "Endevelt-Shapira et al., 2018)",
+      "text_id": 229
+    },
+    {
+      "xref_id": 17,
+      "xref_type": "bib",
+      "contents": "Esterman et al., 2010)",
+      "text_id": 150
+    },
+    {
+      "xref_id": 17,
+      "xref_type": "bib",
+      "contents": "Esterman et al., 2010)",
+      "text_id": 151
+    },
+    {
+      "xref_id": 18,
+      "xref_type": "bib",
+      "contents": "(Gaby & Zayas, 2017)",
+      "text_id": 229
+    },
+    {
+      "xref_id": 19,
+      "xref_type": "bib",
+      "contents": "(Hess et al., 1997)",
+      "text_id": 19
+    },
+    {
+      "xref_id": 20,
+      "xref_type": "bib",
+      "contents": "Howard & Gottfried, 2014)",
+      "text_id": 149
+    },
+    {
+      "xref_id": 22,
+      "xref_type": "bib",
+      "contents": "( Juslin & Laukka, 2001",
+      "text_id": 19
+    },
+    {
+      "xref_id": 23,
+      "xref_type": "bib",
+      "contents": "(Kamiloglu et al., 2018)",
+      "text_id": 11
+    },
+    {
+      "xref_id": 23,
+      "xref_type": "bib",
+      "contents": "(Kamiloglu et al., 2018;",
+      "text_id": 43
+    },
+    {
+      "xref_id": 24,
+      "xref_type": "bib",
+      "contents": "(Kennedy & Norman, 2005",
+      "text_id": 232
+    },
+    {
+      "xref_id": 25,
+      "xref_type": "bib",
+      "contents": "(Kriegeskorte et al., 2009)",
+      "text_id": 153
+    },
+    {
+      "xref_id": 26,
+      "xref_type": "bib",
+      "contents": "(Langner et al., 2010)",
+      "text_id": 61
+    },
+    {
+      "xref_id": 27,
+      "xref_type": "bib",
+      "contents": "Lee and Wagenmakers (2013)",
+      "text_id": 164
+    },
+    {
+      "xref_id": 28,
+      "xref_type": "bib",
+      "contents": "(Mai et al., 2004)",
+      "text_id": 149
+    },
+    {
+      "xref_id": 29,
+      "xref_type": "bib",
+      "contents": "Maier et al., 2019;",
+      "text_id": 13
+    },
+    {
+      "xref_id": 29,
+      "xref_type": "bib",
+      "contents": "(Maier et al., 2019;",
+      "text_id": 179
+    },
+    {
+      "xref_id": 29,
+      "xref_type": "bib",
+      "contents": "(Maier et al., 2019;",
+      "text_id": 193
+    },
+    {
+      "xref_id": 29,
+      "xref_type": "bib",
+      "contents": "(Maier et al., 2019;",
+      "text_id": 216
+    },
+    {
+      "xref_id": 30,
+      "xref_type": "bib",
+      "contents": "McGann, 2017;",
+      "text_id": 7
+    },
+    {
+      "xref_id": 31,
+      "xref_type": "bib",
+      "contents": "Mujica-Parodi et al., 2009;",
+      "text_id": 13
+    },
+    {
+      "xref_id": 31,
+      "xref_type": "bib",
+      "contents": "Mujica-Parodi et al., 2009)",
+      "text_id": null
+    },
+    {
+      "xref_id": 31,
+      "xref_type": "bib",
+      "contents": "(Mujica-Parodi et al., 2009)",
+      "text_id": 114
+    },
+    {
+      "xref_id": 31,
+      "xref_type": "bib",
+      "contents": "(Mujica-Parodi et al., 2009;",
+      "text_id": 167
+    },
+    {
+      "xref_id": 31,
+      "xref_type": "bib",
+      "contents": "Mujica-Parodi et al., 2009)",
+      "text_id": 176
+    },
+    {
+      "xref_id": 31,
+      "xref_type": "bib",
+      "contents": "Mujica-Parodi et al., 2009;",
+      "text_id": 179
+    },
+    {
+      "xref_id": 31,
+      "xref_type": "bib",
+      "contents": "Mujica-Parodi et al., 2009)",
+      "text_id": 216
+    },
+    {
+      "xref_id": 32,
+      "xref_type": "bib",
+      "contents": "(Olofsson & Gottfried, 2015)",
+      "text_id": 176
+    },
+    {
+      "xref_id": 33,
+      "xref_type": "bib",
+      "contents": "Parma et al., 2017;",
+      "text_id": 7
+    },
+    {
+      "xref_id": 33,
+      "xref_type": "bib",
+      "contents": "Parma et al., 2017)",
+      "text_id": 15
+    },
+    {
+      "xref_id": 33,
+      "xref_type": "bib",
+      "contents": "(Parma et al., 2017)",
+      "text_id": 224
+    },
+    {
+      "xref_id": 33,
+      "xref_type": "bib",
+      "contents": "(Parma et al., 2017)",
+      "text_id": 225
+    },
+    {
+      "xref_id": 34,
+      "xref_type": "bib",
+      "contents": "Prehn-Kristensen et al., 2009)",
+      "text_id": 13
+    },
+    {
+      "xref_id": 34,
+      "xref_type": "bib",
+      "contents": "(Prehn-Kristensen et al., 2009;",
+      "text_id": 150
+    },
+    {
+      "xref_id": 34,
+      "xref_type": "bib",
+      "contents": "Prehn-Kristensen et al., 2009;",
+      "text_id": 179
+    },
+    {
+      "xref_id": 34,
+      "xref_type": "bib",
+      "contents": "Prehn-Kristensen et al., 2009;",
+      "text_id": 193
+    },
+    {
+      "xref_id": 35,
+      "xref_type": "bib",
+      "contents": "Roberts et al., 2020;",
+      "text_id": 7
+    },
+    {
+      "xref_id": 36,
+      "xref_type": "bib",
+      "contents": "Roland et al., 2017;",
+      "text_id": 20
+    },
+    {
+      "xref_id": 37,
+      "xref_type": "bib",
+      "contents": "Roland et al., 2016)",
+      "text_id": 214
+    },
+    {
+      "xref_id": 38,
+      "xref_type": "bib",
+      "contents": "(Si et al., 2019)",
+      "text_id": 207
+    },
+    {
+      "xref_id": 38,
+      "xref_type": "bib",
+      "contents": "(Si et al., 2019)",
+      "text_id": 209
+    },
+    {
+      "xref_id": 38,
+      "xref_type": "bib",
+      "contents": "Si et al., 2019)",
+      "text_id": 207
+    },
+    {
+      "xref_id": 38,
+      "xref_type": "bib",
+      "contents": "Si et al., 2019)",
+      "text_id": 209
+    },
+    {
+      "xref_id": 39,
+      "xref_type": "bib",
+      "contents": "Siegel et al., 2014)",
+      "text_id": 141
+    },
+    {
+      "xref_id": 40,
+      "xref_type": "bib",
+      "contents": "(Singh et al., 2018)",
+      "text_id": 230
+    },
+    {
+      "xref_id": 41,
+      "xref_type": "bib",
+      "contents": "(Smeets et al., 2020)",
+      "text_id": 9
+    },
+    {
+      "xref_id": 41,
+      "xref_type": "bib",
+      "contents": "(Smeets et al., 2020)",
+      "text_id": 16
+    },
+    {
+      "xref_id": 41,
+      "xref_type": "bib",
+      "contents": "Smeets et al., 2020)",
+      "text_id": 234
+    },
+    {
+      "xref_id": 42,
+      "xref_type": "bib",
+      "contents": "(Susskind et al., 2008)",
+      "text_id": 223
+    },
+    {
+      "xref_id": 43,
+      "xref_type": "bib",
+      "contents": "(Van Hout et al., 2011)",
+      "text_id": 80
+    },
+    {
+      "xref_id": 44,
+      "xref_type": "bib",
+      "contents": "(Winston et al., 2005)",
+      "text_id": 217
+    },
+    {
+      "xref_id": 45,
+      "xref_type": "bib",
+      "contents": "Wojcik & Sirotin, 2014)",
+      "text_id": 20
+    },
+    {
+      "xref_id": 46,
+      "xref_type": "bib",
+      "contents": "(Wudarczyk et al., 2016)",
+      "text_id": 14
+    },
+    {
+      "xref_id": 46,
+      "xref_type": "bib",
+      "contents": "Wudarczyk et al., 2016)",
+      "text_id": 150
+    },
+    {
+      "xref_id": 46,
+      "xref_type": "bib",
+      "contents": "Wudarczyk et al., 2016",
+      "text_id": 179
+    },
+    {
+      "xref_id": 46,
+      "xref_type": "bib",
+      "contents": "Wudarczyk et al., 2016)",
+      "text_id": 193
+    },
+    {
+      "xref_id": 48,
+      "xref_type": "bib",
+      "contents": "(Zhou & Chen, 2009)",
+      "text_id": 11
+    },
+    {
+      "xref_id": 48,
+      "xref_type": "bib",
+      "contents": "Zhou & Chen, 2009)",
+      "text_id": 43
+    },
+    {
+      "xref_id": 48,
+      "xref_type": "bib",
+      "contents": "(Zhou & Chen, 2009)",
+      "text_id": 116
+    },
+    {
+      "xref_id": 48,
+      "xref_type": "bib",
+      "contents": "Zhou & Chen, 2009)",
+      "text_id": 167
+    },
+    {
+      "xref_id": null,
+      "xref_type": "bib",
+      "contents": "[IVA]",
+      "text_id": 70
+    },
+    {
+      "xref_id": null,
+      "xref_type": "bib",
+      "contents": ", 2018)",
+      "text_id": null
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "1",
+      "text_id": 25
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "1d",
+      "text_id": null
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "2",
+      "text_id": null
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "S2",
+      "text_id": null
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "4a",
+      "text_id": 170
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "4a",
+      "text_id": 172
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "4b",
+      "text_id": 170
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "4b",
+      "text_id": 172
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "4c",
+      "text_id": 174
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "4c",
+      "text_id": 175
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "4d",
+      "text_id": 174
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "4d",
+      "text_id": 175
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "4e-4g",
+      "text_id": 174
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "4e-4g",
+      "text_id": 175
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "4e-g",
+      "text_id": 195
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "5a",
+      "text_id": 178
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "5a",
+      "text_id": 179
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "5b",
+      "text_id": 178
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "5b",
+      "text_id": 179
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "5c",
+      "text_id": 185
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "5c",
+      "text_id": 187
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "5c",
+      "text_id": 188
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "5d",
+      "text_id": 185
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "5d",
+      "text_id": 187
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "5d",
+      "text_id": 188
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "5e",
+      "text_id": 185
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "5e",
+      "text_id": 187
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "5e",
+      "text_id": 188
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "5a",
+      "text_id": 190
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "3a",
+      "text_id": 85
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "S3",
+      "text_id": null
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "3",
+      "text_id": null
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "S6",
+      "text_id": null
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "3",
+      "text_id": null
+    },
+    {
+      "xref_id": null,
+      "xref_type": "table",
+      "contents": "S1",
+      "text_id": null
+    },
+    {
+      "xref_id": null,
+      "xref_type": "table",
+      "contents": "S2",
+      "text_id": 189
+    }
+  ],
+  "figure": [
+    {
+      "figure_id": 1,
+      "section_id": 22,
+      "image": null,
+      "page_number": null
+    },
+    {
+      "figure_id": 2,
+      "section_id": 23,
+      "image": null,
+      "page_number": null
+    },
+    {
+      "figure_id": 3,
+      "section_id": 24,
+      "image": null,
+      "page_number": null
+    },
+    {
+      "figure_id": 4,
+      "section_id": 25,
+      "image": null,
+      "page_number": null
+    },
+    {
+      "figure_id": 5,
+      "section_id": 26,
+      "image": null,
+      "page_number": null
+    },
+    {
+      "figure_id": 6,
+      "section_id": 27,
+      "image": null,
+      "page_number": null
+    },
+    {
+      "figure_id": 7,
+      "section_id": 28,
+      "image": null,
+      "page_number": null
+    },
+    {
+      "figure_id": 8,
+      "section_id": 29,
+      "image": null,
+      "page_number": null
+    }
+  ],
+  "table": [],
+  "eq": [
+    {
+      "text_id": 28,
+      "grp_id": 1,
+      "lhs": "age",
+      "comp": "=",
+      "rhs": "23.23"
+    },
+    {
+      "text_id": 28,
+      "grp_id": 1,
+      "lhs": "range",
+      "comp": "=",
+      "rhs": "18-38"
+    },
+    {
+      "text_id": 31,
+      "grp_id": 2,
+      "lhs": "g",
+      "comp": "=",
+      "rhs": ".36"
+    },
+    {
+      "text_id": 31,
+      "grp_id": 2,
+      "lhs": "α",
+      "comp": "=",
+      "rhs": ".05"
+    },
+    {
+      "text_id": 31,
+      "grp_id": 2,
+      "lhs": "r",
+      "comp": "=",
+      "rhs": ".8"
+    },
+    {
+      "text_id": 49,
+      "grp_id": 3,
+      "lhs": "n",
+      "comp": "=",
+      "rhs": "12"
+    },
+    {
+      "text_id": 69,
+      "grp_id": 4,
+      "lhs": "age",
+      "comp": "=",
+      "rhs": "21.56"
+    },
+    {
+      "text_id": 69,
+      "grp_id": 4,
+      "lhs": "range",
+      "comp": "=",
+      "rhs": "18-26"
+    },
+    {
+      "text_id": 73,
+      "grp_id": 5,
+      "lhs": "M",
+      "comp": "=",
+      "rhs": "0.014"
+    },
+    {
+      "text_id": 73,
+      "grp_id": 5,
+      "lhs": "range",
+      "comp": "=",
+      "rhs": "0.01"
+    },
+    {
+      "text_id": 73,
+      "grp_id": 5,
+      "lhs": "M",
+      "comp": "=",
+      "rhs": "0.3"
+    },
+    {
+      "text_id": 73,
+      "grp_id": 5,
+      "lhs": "range",
+      "comp": "=",
+      "rhs": "0.1"
+    },
+    {
+      "text_id": 75,
+      "grp_id": 6,
+      "lhs": "F(2, 16)",
+      "comp": "=",
+      "rhs": "5.48"
+    },
+    {
+      "text_id": 75,
+      "grp_id": 6,
+      "lhs": "p",
+      "comp": "=",
+      "rhs": ".015"
+    },
+    {
+      "text_id": 75,
+      "grp_id": 6,
+      "lhs": "2",
+      "comp": "=",
+      "rhs": ".04"
+    },
+    {
+      "text_id": 75,
+      "grp_id": 6,
+      "lhs": "90% CI",
+      "comp": "=",
+      "rhs": "[.02, .61]"
+    },
+    {
+      "text_id": 75,
+      "grp_id": 6,
+      "lhs": "F(6, 48)",
+      "comp": "=",
+      "rhs": "15.01"
+    },
+    {
+      "text_id": 75,
+      "grp_id": 6,
+      "lhs": "p",
+      "comp": "<",
+      "rhs": ".001"
+    },
+    {
+      "text_id": 75,
+      "grp_id": 6,
+      "lhs": "2",
+      "comp": "=",
+      "rhs": ".45"
+    },
+    {
+      "text_id": 75,
+      "grp_id": 6,
+      "lhs": "90% CI",
+      "comp": "=",
+      "rhs": "[.46, .71]"
+    },
+    {
+      "text_id": 76,
+      "grp_id": 7,
+      "lhs": "t(16)",
+      "comp": "=",
+      "rhs": "1.30"
+    },
+    {
+      "text_id": 76,
+      "grp_id": 7,
+      "lhs": "p",
+      "comp": "=",
+      "rhs": ".213"
+    },
+    {
+      "text_id": 76,
+      "grp_id": 7,
+      "lhs": "d",
+      "comp": "=",
+      "rhs": "0.38"
+    },
+    {
+      "text_id": 76,
+      "grp_id": 7,
+      "lhs": "95% CI",
+      "comp": "=",
+      "rhs": "[-0.11, 0.87]"
+    },
+    {
+      "text_id": 76,
+      "grp_id": 7,
+      "lhs": "t(16)",
+      "comp": "=",
+      "rhs": "3.05"
+    },
+    {
+      "text_id": 76,
+      "grp_id": 7,
+      "lhs": "p",
+      "comp": "=",
+      "rhs": ".008"
+    },
+    {
+      "text_id": 76,
+      "grp_id": 7,
+      "lhs": "d",
+      "comp": "=",
+      "rhs": "0.97"
+    },
+    {
+      "text_id": 76,
+      "grp_id": 7,
+      "lhs": "95% CI",
+      "comp": "=",
+      "rhs": "[0.08, 1.86]"
+    },
+    {
+      "text_id": 95,
+      "grp_id": 8,
+      "lhs": "M",
+      "comp": "=",
+      "rhs": "25.11"
+    },
+    {
+      "text_id": 106,
+      "grp_id": 9,
+      "lhs": "10",
+      "comp": "=",
+      "rhs": "31.07"
+    },
+    {
+      "text_id": 106,
+      "grp_id": 9,
+      "lhs": "10",
+      "comp": "=",
+      "rhs": "1.42"
+    },
+    {
+      "text_id": 122,
+      "grp_id": 10,
+      "lhs": "SE",
+      "comp": "=",
+      "rhs": "0.02"
+    },
+    {
+      "text_id": 132,
+      "grp_id": 11,
+      "lhs": "time",
+      "comp": "=",
+      "rhs": "900"
+    },
+    {
+      "text_id": 132,
+      "grp_id": 11,
+      "lhs": "size",
+      "comp": "=",
+      "rhs": "1"
+    },
+    {
+      "text_id": 132,
+      "grp_id": 11,
+      "lhs": "size",
+      "comp": "=",
+      "rhs": "192"
+    },
+    {
+      "text_id": 133,
+      "grp_id": 12,
+      "lhs": "angle",
+      "comp": "=",
+      "rhs": "80"
+    },
+    {
+      "text_id": 133,
+      "grp_id": 12,
+      "lhs": "size",
+      "comp": "=",
+      "rhs": "2"
+    },
+    {
+      "text_id": 133,
+      "grp_id": 12,
+      "lhs": "size",
+      "comp": "=",
+      "rhs": "104"
+    },
+    {
+      "text_id": 133,
+      "grp_id": 12,
+      "lhs": "view",
+      "comp": "=",
+      "rhs": "208"
+    },
+    {
+      "text_id": 133,
+      "grp_id": 12,
+      "lhs": "TR",
+      "comp": "=",
+      "rhs": "2,000"
+    },
+    {
+      "text_id": 133,
+      "grp_id": 12,
+      "lhs": "TE",
+      "comp": "=",
+      "rhs": "22"
+    },
+    {
+      "text_id": 133,
+      "grp_id": 12,
+      "lhs": "multiband",
+      "comp": "=",
+      "rhs": "2"
+    },
+    {
+      "text_id": 133,
+      "grp_id": 12,
+      "lhs": "angle",
+      "comp": "=",
+      "rhs": "15"
+    },
+    {
+      "text_id": 133,
+      "grp_id": 12,
+      "lhs": "Fourier",
+      "comp": "=",
+      "rhs": "6"
+    },
+    {
+      "text_id": 160,
+      "grp_id": 13,
+      "lhs": "effects",
+      "comp": "=",
+      "rhs": ".5"
+    },
+    {
+      "text_id": 160,
+      "grp_id": 13,
+      "lhs": "effects",
+      "comp": "=",
+      "rhs": "1"
+    },
+    {
+      "text_id": 170,
+      "grp_id": 14,
+      "lhs": "F(1, 26)",
+      "comp": "=",
+      "rhs": "13.44"
+    },
+    {
+      "text_id": 170,
+      "grp_id": 14,
+      "lhs": "p",
+      "comp": "=",
+      "rhs": ".001"
+    },
+    {
+      "text_id": 170,
+      "grp_id": 14,
+      "lhs": "Cohen's d",
+      "comp": "=",
+      "rhs": "0.51"
+    },
+    {
+      "text_id": 170,
+      "grp_id": 14,
+      "lhs": "95% CI",
+      "comp": "=",
+      "rhs": "[0.22, 0.81]"
+    },
+    {
+      "text_id": 170,
+      "grp_id": 14,
+      "lhs": "01",
+      "comp": "=",
+      "rhs": "8.39"
+    },
+    {
+      "text_id": 171,
+      "grp_id": 15,
+      "lhs": "F(1, 26)",
+      "comp": "=",
+      "rhs": "8.34"
+    },
+    {
+      "text_id": 171,
+      "grp_id": 15,
+      "lhs": "p",
+      "comp": "=",
+      "rhs": ".008"
+    },
+    {
+      "text_id": 171,
+      "grp_id": 15,
+      "lhs": "d",
+      "comp": "=",
+      "rhs": "0.46"
+    },
+    {
+      "text_id": 171,
+      "grp_id": 15,
+      "lhs": "95% CI",
+      "comp": "=",
+      "rhs": "[0.06, 0.87]"
+    },
+    {
+      "text_id": 171,
+      "grp_id": 15,
+      "lhs": "F(1, 26)",
+      "comp": "=",
+      "rhs": "7.70"
+    },
+    {
+      "text_id": 171,
+      "grp_id": 15,
+      "lhs": "p",
+      "comp": "=",
+      "rhs": ".010"
+    },
+    {
+      "text_id": 171,
+      "grp_id": 15,
+      "lhs": "d",
+      "comp": "=",
+      "rhs": "0.54"
+    },
+    {
+      "text_id": 171,
+      "grp_id": 15,
+      "lhs": "95% CI",
+      "comp": "=",
+      "rhs": "[0.19, 0.89]"
+    },
+    {
+      "text_id": 171,
+      "grp_id": 15,
+      "lhs": "F(1, 26)",
+      "comp": "=",
+      "rhs": "7.43"
+    },
+    {
+      "text_id": 171,
+      "grp_id": 15,
+      "lhs": "p",
+      "comp": "=",
+      "rhs": ".011"
+    },
+    {
+      "text_id": 171,
+      "grp_id": 15,
+      "lhs": "d",
+      "comp": "=",
+      "rhs": "0.45"
+    },
+    {
+      "text_id": 171,
+      "grp_id": 15,
+      "lhs": "95% CI",
+      "comp": "=",
+      "rhs": "[0.16, 0.74]"
+    },
+    {
+      "text_id": 172,
+      "grp_id": 16,
+      "lhs": "F(1, 26)",
+      "comp": "=",
+      "rhs": "13.36"
+    },
+    {
+      "text_id": 172,
+      "grp_id": 16,
+      "lhs": "p",
+      "comp": "=",
+      "rhs": ".001"
+    },
+    {
+      "text_id": 172,
+      "grp_id": 16,
+      "lhs": "d",
+      "comp": "=",
+      "rhs": "0.65"
+    },
+    {
+      "text_id": 172,
+      "grp_id": 16,
+      "lhs": "95% CI",
+      "comp": "=",
+      "rhs": "[0.26, 1.04]"
+    },
+    {
+      "text_id": 172,
+      "grp_id": 16,
+      "lhs": "01",
+      "comp": "=",
+      "rhs": "6.52"
+    },
+    {
+      "text_id": 174,
+      "grp_id": 17,
+      "lhs": "F(1, 26)",
+      "comp": "=",
+      "rhs": "4.71"
+    },
+    {
+      "text_id": 174,
+      "grp_id": 17,
+      "lhs": "p",
+      "comp": "=",
+      "rhs": ".039"
+    },
+    {
+      "text_id": 174,
+      "grp_id": 17,
+      "lhs": "d",
+      "comp": "=",
+      "rhs": "0.22"
+    },
+    {
+      "text_id": 174,
+      "grp_id": 17,
+      "lhs": "95% CI",
+      "comp": "=",
+      "rhs": "[0.17, 0.41]"
+    },
+    {
+      "text_id": 174,
+      "grp_id": 17,
+      "lhs": "F(1, 26)",
+      "comp": "=",
+      "rhs": "4.01"
+    },
+    {
+      "text_id": 174,
+      "grp_id": 17,
+      "lhs": "p",
+      "comp": "=",
+      "rhs": ".056"
+    },
+    {
+      "text_id": 174,
+      "grp_id": 17,
+      "lhs": "d",
+      "comp": "=",
+      "rhs": "0.39"
+    },
+    {
+      "text_id": 174,
+      "grp_id": 17,
+      "lhs": "95% CI",
+      "comp": "=",
+      "rhs": "[0.22, 0.57]"
+    },
+    {
+      "text_id": 174,
+      "grp_id": 17,
+      "lhs": "01",
+      "comp": "=",
+      "rhs": "3.97"
+    },
+    {
+      "text_id": 174,
+      "grp_id": 17,
+      "lhs": "01",
+      "comp": "=",
+      "rhs": "1.83"
+    },
+    {
+      "text_id": 175,
+      "grp_id": 18,
+      "lhs": "01",
+      "comp": "=",
+      "rhs": "11.43"
+    },
+    {
+      "text_id": 175,
+      "grp_id": 18,
+      "lhs": "01",
+      "comp": "=",
+      "rhs": "11.53"
+    },
+    {
+      "text_id": 178,
+      "grp_id": 19,
+      "lhs": "t(25)",
+      "comp": "=",
+      "rhs": "5.04"
+    },
+    {
+      "text_id": 178,
+      "grp_id": 19,
+      "lhs": "FWE-cluster",
+      "comp": "=",
+      "rhs": ".0496"
+    },
+    {
+      "text_id": 178,
+      "grp_id": 19,
+      "lhs": "x",
+      "comp": "=",
+      "rhs": "-52"
+    },
+    {
+      "text_id": 178,
+      "grp_id": 19,
+      "lhs": "y",
+      "comp": "=",
+      "rhs": "-44"
+    },
+    {
+      "text_id": 178,
+      "grp_id": 19,
+      "lhs": "z",
+      "comp": "=",
+      "rhs": "-16"
+    },
+    {
+      "text_id": 178,
+      "grp_id": 19,
+      "lhs": "t(25)",
+      "comp": "=",
+      "rhs": "4.39"
+    },
+    {
+      "text_id": 178,
+      "grp_id": 19,
+      "lhs": "FWE-cluster",
+      "comp": "=",
+      "rhs": ".042"
+    },
+    {
+      "text_id": 178,
+      "grp_id": 19,
+      "lhs": "x",
+      "comp": "=",
+      "rhs": "10"
+    },
+    {
+      "text_id": 178,
+      "grp_id": 19,
+      "lhs": "y",
+      "comp": "=",
+      "rhs": "48"
+    },
+    {
+      "text_id": 178,
+      "grp_id": 19,
+      "lhs": "z",
+      "comp": "=",
+      "rhs": "-2"
+    },
+    {
+      "text_id": 180,
+      "grp_id": 20,
+      "lhs": "F(2, 52)",
+      "comp": "=",
+      "rhs": "3.86"
+    },
+    {
+      "text_id": 180,
+      "grp_id": 20,
+      "lhs": "p",
+      "comp": "=",
+      "rhs": ".027"
+    },
+    {
+      "text_id": 180,
+      "grp_id": 20,
+      "lhs": "2",
+      "comp": "=",
+      "rhs": ".13"
+    },
+    {
+      "text_id": 180,
+      "grp_id": 20,
+      "lhs": "90% CI",
+      "comp": "=",
+      "rhs": "[.01, .27]"
+    },
+    {
+      "text_id": 180,
+      "grp_id": 20,
+      "lhs": "01",
+      "comp": "=",
+      "rhs": "0.35"
+    },
+    {
+      "text_id": 183,
+      "grp_id": 21,
+      "lhs": "01",
+      "comp": "=",
+      "rhs": "6.52"
+    },
+    {
+      "text_id": 183,
+      "grp_id": 21,
+      "lhs": "p",
+      "comp": "=",
+      "rhs": ".056"
+    },
+    {
+      "text_id": 183,
+      "grp_id": 21,
+      "lhs": "01",
+      "comp": "=",
+      "rhs": "1.83"
+    },
+    {
+      "text_id": 183,
+      "grp_id": 21,
+      "lhs": "01",
+      "comp": "=",
+      "rhs": "11.43"
+    },
+    {
+      "text_id": 183,
+      "grp_id": 21,
+      "lhs": "01",
+      "comp": "=",
+      "rhs": "3.97"
+    },
+    {
+      "text_id": 183,
+      "grp_id": 21,
+      "lhs": "01",
+      "comp": "=",
+      "rhs": "11.53"
+    },
+    {
+      "text_id": 185,
+      "grp_id": 22,
+      "lhs": "F (2, 78)",
+      "comp": "=",
+      "rhs": "4.20"
+    },
+    {
+      "text_id": 185,
+      "grp_id": 22,
+      "lhs": "p",
+      "comp": "=",
+      "rhs": ".019"
+    },
+    {
+      "text_id": 185,
+      "grp_id": 22,
+      "lhs": "r (25)",
+      "comp": "=",
+      "rhs": ".49"
+    },
+    {
+      "text_id": 185,
+      "grp_id": 22,
+      "lhs": "p",
+      "comp": "=",
+      "rhs": ".008"
+    },
+    {
+      "text_id": 185,
+      "grp_id": 22,
+      "lhs": "F(1, 26)",
+      "comp": "=",
+      "rhs": "6.54"
+    },
+    {
+      "text_id": 185,
+      "grp_id": 22,
+      "lhs": "p",
+      "comp": "=",
+      "rhs": ".017"
+    },
+    {
+      "text_id": 185,
+      "grp_id": 22,
+      "lhs": "2",
+      "comp": "=",
+      "rhs": ".20"
+    },
+    {
+      "text_id": 185,
+      "grp_id": 22,
+      "lhs": "90% CI",
+      "comp": "=",
+      "rhs": "[.02, .44]"
+    },
+    {
+      "text_id": 186,
+      "grp_id": 23,
+      "lhs": "M",
+      "comp": "=",
+      "rhs": "7.95"
+    },
+    {
+      "text_id": 186,
+      "grp_id": 23,
+      "lhs": "SD",
+      "comp": "=",
+      "rhs": "13.82"
+    },
+    {
+      "text_id": 186,
+      "grp_id": 23,
+      "lhs": "M",
+      "comp": "=",
+      "rhs": "1.71"
+    },
+    {
+      "text_id": 186,
+      "grp_id": 23,
+      "lhs": "SD",
+      "comp": "=",
+      "rhs": "13.53"
+    },
+    {
+      "text_id": 186,
+      "grp_id": 23,
+      "lhs": "p",
+      "comp": "=",
+      "rhs": ".017"
+    },
+    {
+      "text_id": 186,
+      "grp_id": 23,
+      "lhs": "d",
+      "comp": "=",
+      "rhs": "0.46"
+    },
+    {
+      "text_id": 186,
+      "grp_id": 23,
+      "lhs": "95% CI",
+      "comp": "=",
+      "rhs": "[-0.07, 0.98]"
+    },
+    {
+      "text_id": 186,
+      "grp_id": 23,
+      "lhs": "M",
+      "comp": "=",
+      "rhs": "2.04"
+    },
+    {
+      "text_id": 186,
+      "grp_id": 23,
+      "lhs": "SD",
+      "comp": "=",
+      "rhs": "14.68"
+    },
+    {
+      "text_id": 186,
+      "grp_id": 23,
+      "lhs": "t(26)",
+      "comp": "=",
+      "rhs": "2.34"
+    },
+    {
+      "text_id": 186,
+      "grp_id": 23,
+      "lhs": "p",
+      "comp": "=",
+      "rhs": ".023"
+    },
+    {
+      "text_id": 186,
+      "grp_id": 23,
+      "lhs": "d",
+      "comp": "=",
+      "rhs": "0.41"
+    },
+    {
+      "text_id": 186,
+      "grp_id": 23,
+      "lhs": "95% CI",
+      "comp": "=",
+      "rhs": "[-0.04, 0.87]"
+    },
+    {
+      "text_id": 187,
+      "grp_id": 24,
+      "lhs": "F(2, 78)",
+      "comp": "=",
+      "rhs": "4.20"
+    },
+    {
+      "text_id": 187,
+      "grp_id": 24,
+      "lhs": "p",
+      "comp": "=",
+      "rhs": ".019"
+    },
+    {
+      "text_id": 187,
+      "grp_id": 24,
+      "lhs": "2",
+      "comp": "=",
+      "rhs": ".10"
+    },
+    {
+      "text_id": 188,
+      "grp_id": 25,
+      "lhs": "r(25)",
+      "comp": "=",
+      "rhs": ".49"
+    },
+    {
+      "text_id": 188,
+      "grp_id": 25,
+      "lhs": "p",
+      "comp": "=",
+      "rhs": ".009"
+    },
+    {
+      "text_id": 189,
+      "grp_id": 26,
+      "lhs": "F(2, 52)",
+      "comp": "=",
+      "rhs": "0.48"
+    },
+    {
+      "text_id": 189,
+      "grp_id": 26,
+      "lhs": "p",
+      "comp": "=",
+      "rhs": ".619"
+    },
+    {
+      "text_id": 189,
+      "grp_id": 26,
+      "lhs": "2",
+      "comp": "=",
+      "rhs": ".02"
+    },
+    {
+      "text_id": 189,
+      "grp_id": 26,
+      "lhs": "90% CI",
+      "comp": "=",
+      "rhs": "[.00, .09]"
+    },
+    {
+      "text_id": 189,
+      "grp_id": 26,
+      "lhs": "01",
+      "comp": "=",
+      "rhs": "6.42"
+    },
+    {
+      "text_id": 189,
+      "grp_id": 26,
+      "lhs": "F(2, 52)",
+      "comp": "=",
+      "rhs": "0.48"
+    },
+    {
+      "text_id": 189,
+      "grp_id": 26,
+      "lhs": "p",
+      "comp": "=",
+      "rhs": ".620"
+    },
+    {
+      "text_id": 189,
+      "grp_id": 26,
+      "lhs": "2",
+      "comp": "=",
+      "rhs": ".02"
+    },
+    {
+      "text_id": 189,
+      "grp_id": 26,
+      "lhs": "90% CI",
+      "comp": "=",
+      "rhs": "[.00, .09]"
+    },
+    {
+      "text_id": 189,
+      "grp_id": 26,
+      "lhs": "01",
+      "comp": "=",
+      "rhs": "6.36"
+    },
+    {
+      "text_id": 189,
+      "grp_id": 26,
+      "lhs": "F(2, 44)",
+      "comp": "=",
+      "rhs": "0.58"
+    },
+    {
+      "text_id": 189,
+      "grp_id": 26,
+      "lhs": "p",
+      "comp": "=",
+      "rhs": ".566"
+    },
+    {
+      "text_id": 189,
+      "grp_id": 26,
+      "lhs": "2",
+      "comp": "=",
+      "rhs": ".03"
+    },
+    {
+      "text_id": 189,
+      "grp_id": 26,
+      "lhs": "90% CI",
+      "comp": "=",
+      "rhs": "[.00, .12]"
+    },
+    {
+      "text_id": 189,
+      "grp_id": 26,
+      "lhs": "01",
+      "comp": "=",
+      "rhs": "5.08"
+    },
+    {
+      "text_id": 258,
+      "grp_id": 27,
+      "lhs": "N",
+      "comp": "=",
+      "rhs": "36"
+    },
+    {
+      "text_id": 258,
+      "grp_id": 27,
+      "lhs": "n",
+      "comp": "=",
+      "rhs": "12"
+    },
+    {
+      "text_id": 145,
+      "grp_id": 28,
+      "lhs": "FWE",
+      "comp": "<",
+      "rhs": ".05"
+    },
+    {
+      "text_id": 146,
+      "grp_id": 29,
+      "lhs": "p",
+      "comp": "<",
+      "rhs": ".001"
+    },
+    {
+      "text_id": 146,
+      "grp_id": 29,
+      "lhs": "FWE-cluster",
+      "comp": "<",
+      "rhs": ".05"
+    },
+    {
+      "text_id": 151,
+      "grp_id": 30,
+      "lhs": "p",
+      "comp": "<",
+      "rhs": ".001"
+    },
+    {
+      "text_id": 261,
+      "grp_id": 31,
+      "lhs": "p",
+      "comp": "<",
+      "rhs": ".01"
+    },
+    {
+      "text_id": 261,
+      "grp_id": 31,
+      "lhs": "p",
+      "comp": "<",
+      "rhs": ".001"
+    },
+    {
+      "text_id": 294,
+      "grp_id": 32,
+      "lhs": "p",
+      "comp": "<",
+      "rhs": ".05"
+    },
+    {
+      "text_id": 294,
+      "grp_id": 32,
+      "lhs": "p",
+      "comp": "<",
+      "rhs": ".01"
+    },
+    {
+      "text_id": 294,
+      "grp_id": 32,
+      "lhs": "p",
+      "comp": "<",
+      "rhs": ".001"
+    },
+    {
+      "text_id": 298,
+      "grp_id": 33,
+      "lhs": "p",
+      "comp": "<",
+      "rhs": ".001"
+    },
+    {
+      "text_id": 306,
+      "grp_id": 34,
+      "lhs": "p",
+      "comp": "<",
+      "rhs": ".05"
+    }
+  ]
+}

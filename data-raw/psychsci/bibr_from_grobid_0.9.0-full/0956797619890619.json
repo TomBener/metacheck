@@ -1,0 +1,4409 @@
+{
+  "paper_id": "0956797619890619",
+  "info": [
+    {
+      "title": "Implicit Gender Bias in Linguistic Descriptions for Expected Events: The Cases of the 2016 United States and 2017 United Kingdom Elections",
+      "keywords": ["Implicit Linguistic Gender Biases During Election Campaigns research-article2020 language", "psycholinguistics", "event expectations", "reference", "implicit bias", "open data", "open materials"],
+      "doi": "10.1177/0956797619890619",
+      "file_hash": "ef1a5914be8ed9f4",
+      "input_format": "grobid 0.9.0",
+      "file_name": "data-raw/psychsci/grobid_0.9.0-full/0956797619890619.xml",
+      "bibr_version": "10.0",
+      "paper_type": "unknown",
+      "paper_type_confidence": 0,
+      "oecd_l1": null,
+      "oecd_l2": null,
+      "oecd_confidence": null
+    }
+  ],
+  "author": [
+    {
+      "author_id": 1,
+      "given": "Titus",
+      "family": "Von Der Malsburg",
+      "affiliation": "Department of Linguistics University of Potsdam",
+      "email": "",
+      "corresponding": false,
+      "orcid": "0000-0001-5925-5145",
+      "role": []
+    },
+    {
+      "author_id": 2,
+      "given": "Till",
+      "family": "Poppels",
+      "affiliation": "Department of Linguistics University of California San Diego",
+      "email": "",
+      "corresponding": false,
+      "orcid": "",
+      "role": []
+    },
+    {
+      "author_id": 3,
+      "given": "Roger",
+      "family": "Levy",
+      "affiliation": "Department of Brain and Cognitive Sciences Massachusetts Institute of Technology",
+      "email": "",
+      "corresponding": false,
+      "orcid": "",
+      "role": []
+    }
+  ],
+  "text": [
+    {
+      "text_id": 1,
+      "paragraph_id": 1,
+      "section_id": 0,
+      "text": "When reading the sentence, \"The nurse prepared himself for the operation,\" you may find yourself experiencing a brief hint of surprise at the word \"himself,\" even though you know that many nurses are male.",
+      "page_number": null
+    },
+    {
+      "text_id": 2,
+      "paragraph_id": 1,
+      "section_id": 0,
+      "text": "This surprise is widely experienced and amenable to experimental measurement, such as word-by-word reading times (Duffy & Keir, 2004;Foertsch & Gernsbacher, 1997;Kennison & Trofe, 2003;Sturt, 2003) and electroencephalographic response (Osterhout, Bersick, & Mclaughlin, 1997).",
+      "page_number": null
+    },
+    {
+      "text_id": 3,
+      "paragraph_id": 1,
+      "section_id": 0,
+      "text": "In the United States (US), the United Kingdom (UK), and many other societies, there is a stereotype-a belief about the typical characteristics of a group ( Judd & Park, 1993)-that nurses are female; this stereotype rapidly influences readers' expectations about how the sentence may unfold, including the gender of a pronoun referring to the nurse.",
+      "page_number": null
+    },
+    {
+      "text_id": 4,
+      "paragraph_id": 1,
+      "section_id": 0,
+      "text": "These stereotypes are reflected in the statistics of texts (Caliskan, Bryson, & Narayanan, 2017), and like many other factors (Altmann",
+      "page_number": null
+    },
+    {
+      "text_id": 5,
+      "paragraph_id": 3,
+      "section_id": 1,
+      "text": "gender stereotypes on language processing might be entirely mediated by expectations about events in the world.",
+      "page_number": null
+    },
+    {
+      "text_id": 6,
+      "paragraph_id": 3,
+      "section_id": 1,
+      "text": "For example, in the US in 2018, more than five out of six nurses were female (Bureau of Labor Statistics, 2018), and more generally, gender stereotypes are well calibrated to true gender ratios (Garnham, Doehren, & Gygax, 2015).",
+      "page_number": null
+    },
+    {
+      "text_id": 7,
+      "paragraph_id": 3,
+      "section_id": 1,
+      "text": "Reading about a nurse without further preceding context might most likely lead one to imagine the nurse as a woman and expect any pronouns referring to the nurse to be she pronouns, leading to surprise at the pronoun \"himself.\"",
+      "page_number": null
+    },
+    {
+      "text_id": 8,
+      "paragraph_id": 3,
+      "section_id": 1,
+      "text": "We might hypothesize that event expectations fully mediate the biasing effect of stereotypes on linguistic preferences in this way, with linguistic preferences transparently reflecting event expectations.",
+      "page_number": null
+    },
+    {
+      "text_id": 9,
+      "paragraph_id": 3,
+      "section_id": 1,
+      "text": "In this case, the mapping between event expectations and linguistic preferences in pronoun usage should be unbiased (and thus symmetric) with respect to gender.",
+      "page_number": null
+    },
+    {
+      "text_id": 10,
+      "paragraph_id": 3,
+      "section_id": 1,
+      "text": "This hypothesis makes a testable prediction.",
+      "page_number": null
+    },
+    {
+      "text_id": 11,
+      "paragraph_id": 3,
+      "section_id": 1,
+      "text": "For prominent events that involve specific, well-known people and command widespread attention in an experimental population, expectations regarding those events may be directly measurable.",
+      "page_number": null
+    },
+    {
+      "text_id": 12,
+      "paragraph_id": 3,
+      "section_id": 1,
+      "text": "If the hypothesis is true, we should find that linguistic preferences regarding descriptions of those events are unbiased relative to these measured event expectations: Equal-strength expectations for a referent to be a given gender will lead to equal strengths of preference for matching-gender pronouns, regardless of whether that gender is female or male.",
+      "page_number": null
+    },
+    {
+      "text_id": 13,
+      "paragraph_id": 3,
+      "section_id": 1,
+      "text": "Alternatively, we might hypothesize that the mapping between event expectations and linguistic preferences itself is biased: Equalstrength expectations for referent gender might, for example, yield a stronger preference for he pronouns when that gender is male than for she pronouns when that gender is female.",
+      "page_number": null
+    },
+    {
+      "text_id": 14,
+      "paragraph_id": 4,
+      "section_id": 1,
+      "text": "We took advantage of the 2016 US presidential campaign and the 2017 UK general election to investigate this mapping experimentally.",
+      "page_number": null
+    },
+    {
+      "text_id": 15,
+      "paragraph_id": 4,
+      "section_id": 1,
+      "text": "Electoral campaigns for a national head of government attract tremendous interest, attention, and news coverage, leading to expectations on the part of citizens regarding likely outcomes that fluctuate with campaign events and news coverage.",
+      "page_number": null
+    },
+    {
+      "text_id": 16,
+      "paragraph_id": 4,
+      "section_id": 1,
+      "text": "In the US, the 2016 presidential campaign presented the concrete prospect of a woman, Hillary Clinton, as the next head of state and government for the first time in the country's history.",
+      "page_number": null
+    },
+    {
+      "text_id": 17,
+      "paragraph_id": 4,
+      "section_id": 1,
+      "text": "In the 2017 UK general election campaign, the favored incumbent head of government was a woman, Theresa May.",
+      "page_number": null
+    },
+    {
+      "text_id": 18,
+      "paragraph_id": 4,
+      "section_id": 1,
+      "text": "In both cases, the competing candidates were male.",
+      "page_number": null
+    },
+    {
+      "text_id": 19,
+      "paragraph_id": 4,
+      "section_id": 1,
+      "text": "These cases offered natural experiments allowing us to cleanly investigate how closely preferences regarding pronominal references to the next head of government match beliefs about who would win the election.",
+      "page_number": null
+    },
+    {
+      "text_id": 20,
+      "paragraph_id": 5,
+      "section_id": 1,
+      "text": "We collected experimental data in three tasks: belief estimation to determine whom the participant expected to win the election, text completion to measure preferences in language production regarding which pronoun to use to refer to the next head of government, and self-paced reading to measure (using reading times) the relative ease of comprehension of pronominal references to the next head of government.",
+      "page_number": null
+    },
+    {
+      "text_id": 21,
+      "paragraph_id": 5,
+      "section_id": 1,
+      "text": "Belief estimation yields probability estimates of expectations regarding whether the next head of state will be female or male; the other two tasks reveal pronoun preferences in language production and comprehension respectively, which can be compared with these event expectations.",
+      "page_number": null
+    },
+    {
+      "text_id": 22,
+      "paragraph_id": 6,
+      "section_id": 1,
+      "text": "If event expectations fully mediate the influences of gender biases, and linguistic preferences transparently reflect those expectations, the relationship between event expectations and linguistic preferences should look the same from the standpoint of either female or male gender.",
+      "page_number": null
+    },
+    {
+      "text_id": 23,
+      "paragraph_id": 6,
+      "section_id": 1,
+      "text": "In production, for example, if 40% of pronouns are he when the male candidate is estimated to have a 55% chance of winning, then 40% of pronouns should be she when the female candidate in the same election is estimated to have a 55% chance of winning (Fig. 1a; note that the gendered-pronoun rate may be lower than the corresponding event-expectation rate because other pronouns, such as singular they, may also be used).",
+      "page_number": null
+    },
+    {
+      "text_id": 24,
+      "paragraph_id": 6,
+      "section_id": 1,
+      "text": "In comprehension, pronouns matching the gender of the candidate expected to win should be less surprising and thus less disruptive to encounter than gender-mismatching pronouns.",
+      "page_number": null
+    },
+    {
+      "text_id": 25,
+      "paragraph_id": 7,
+      "section_id": 1,
+      "text": "If, in contrast, implicit gender bias affects not only expectations about world events (Greenwald et al., 1998) but also how these expectations are translated into linguistic forms, then the relationship between event expectations and linguistic preferences may differ depending on the gender considered.",
+      "page_number": null
+    },
+    {
+      "text_id": 26,
+      "paragraph_id": 7,
+      "section_id": 1,
+      "text": "For example, she pronouns might be disfavored relative to event expectations because of historical and contemporary social gender stereotypes, both those particular to the role of head of government and more broadly (Fig. 1b).",
+      "page_number": null
+    },
+    {
+      "text_id": 27,
+      "paragraph_id": 8,
+      "section_id": 1,
+      "text": "For both campaigns, we collected data across multiple experimental rounds, allowing us to see whether and how quickly changes in beliefs are reflected in linguistic preferences.",
+      "page_number": null
+    },
+    {
+      "text_id": 28,
+      "paragraph_id": 9,
+      "section_id": 2,
+      "text": "Experiment 1: The 2016 US Presidential Election Campaign",
+      "page_number": null
+    },
+    {
+      "text_id": 29,
+      "paragraph_id": 12,
+      "section_id": 3,
+      "text": "Between June 2016 and January 2017, we collected 12 rounds of data relating to the US presidential campaign using three single-trial tasks: belief estimation, text completion, and self-paced reading.",
+      "page_number": null
+    },
+    {
+      "text_id": 30,
+      "paragraph_id": 12,
+      "section_id": 3,
+      "text": "In the beliefestimation task, participants reported their belief in the likelihood that each of the three candidates who were still plausibly in contention at the start of our study-Hillary Clinton, Bernie Sanders, and Donald Trumpwould win the election.",
+      "page_number": null
+    },
+    {
+      "text_id": 31,
+      "paragraph_id": 12,
+      "section_id": 3,
+      "text": "In the text-completion task, participants completed a two-sentence text fragment designed to elicit a pronominal reference to the next US president.",
+      "page_number": null
+    },
+    {
+      "text_id": 32,
+      "paragraph_id": 12,
+      "section_id": 3,
+      "text": "In the self-paced reading task, participants read a three-sentence vignette.",
+      "page_number": null
+    },
+    {
+      "text_id": 33,
+      "paragraph_id": 12,
+      "section_id": 3,
+      "text": "The first sentence was a stage-setting sentence, and the second and third sentences included pronominal references to the future president.",
+      "page_number": null
+    },
+    {
+      "text_id": 34,
+      "paragraph_id": 12,
+      "section_id": 3,
+      "text": "Participants read these texts using a selfpaced moving window (Mitchell, 1984), allowing us to measure word-by-word processing times and, specifically, the reading times elicited by pronouns.",
+      "page_number": null
+    },
+    {
+      "text_id": 35,
+      "paragraph_id": 13,
+      "section_id": 3,
+      "text": "Participants.",
+      "page_number": null
+    },
+    {
+      "text_id": 36,
+      "paragraph_id": 13,
+      "section_id": 3,
+      "text": "Self-reported US citizens (N = 24,863) from a broad population were recruited via Amazon Mechanical Turk (Levay, Freese, & Druckman, 2016;Stewart, Chandler, & Paolacci, 2017).",
+      "page_number": null
+    },
+    {
+      "text_id": 37,
+      "paragraph_id": 13,
+      "section_id": 3,
+      "text": "All participants gave informed consent in accordance with the regulations of the University of California San Diego Institutional Review Board.",
+      "page_number": null
+    },
+    {
+      "text_id": 38,
+      "paragraph_id": 13,
+      "section_id": 3,
+      "text": "Compensation was calibrated to yield approximately federal minimum wage ($7.25 per hour).",
+      "page_number": null
+    },
+    {
+      "text_id": 39,
+      "paragraph_id": 13,
+      "section_id": 3,
+      "text": "To avoid cross-trial and cross-task influences, we designed the experiment so that every participant participated only once and only in one of the three tasks.",
+      "page_number": null
+    },
+    {
+      "text_id": 40,
+      "paragraph_id": 13,
+      "section_id": 3,
+      "text": "We further solicited demographic information and frequency of election-related news consumption (see Table S2 in the Supplemental Material available online).",
+      "page_number": null
+    },
+    {
+      "text_id": 41,
+      "paragraph_id": 13,
+      "section_id": 3,
+      "text": "In every round, more than 70% of participants reported daily news consumption, and at most 5% reported less than weekly consumption.",
+      "page_number": null
+    },
+    {
+      "text_id": 42,
+      "paragraph_id": 14,
+      "section_id": 3,
+      "text": "Apparatus.",
+      "page_number": null
+    },
+    {
+      "text_id": 43,
+      "paragraph_id": 14,
+      "section_id": 3,
+      "text": "The belief-estimation task was implemented using Qualtrics, an online survey platform (https://www .qualtrics.com/).",
+      "page_number": null
+    },
+    {
+      "text_id": 44,
+      "paragraph_id": 14,
+      "section_id": 3,
+      "text": "The browser-based software Ibex was used to implement the text-completion task and the self-paced reading task (https://github.com/addrummond/ibex).",
+      "page_number": null
+    },
+    {
+      "text_id": 45,
+      "paragraph_id": 16,
+      "section_id": 4,
+      "text": "Stimuli in the text-completion task and the self-paced reading task started with a fixed stage-setting sentence: \"The next US president will be sworn into office in January 2017.\"",
+      "page_number": null
+    },
+    {
+      "text_id": 46,
+      "paragraph_id": 16,
+      "section_id": 4,
+      "text": "This sentence introduced the topic-the future president of the US-and made it clear that the president in question was the winner of the ongoing race.",
+      "page_number": null
+    },
+    {
+      "text_id": 47,
+      "paragraph_id": 17,
+      "section_id": 4,
+      "text": "Twelve target sentences were designed for the production and comprehension tasks.",
+      "page_number": null
+    },
+    {
+      "text_id": 48,
+      "paragraph_id": 17,
+      "section_id": 4,
+      "text": "These sentences described activities that are highly stereotypical for US presidents and each included one pronoun referring to the next US president.",
+      "page_number": null
+    },
+    {
+      "text_id": 49,
+      "paragraph_id": 17,
+      "section_id": 4,
+      "text": "There were no other nouns in these sentences that the pronouns could refer to.",
+      "page_number": null
+    },
+    {
+      "text_id": 50,
+      "paragraph_id": 17,
+      "section_id": 4,
+      "text": "See the Supplemental Material for the full list of sentences.",
+      "page_number": null
+    },
+    {
+      "text_id": 51,
+      "paragraph_id": 18,
+      "section_id": 4,
+      "text": "In the text-completion task, the stage-setting sentence was followed by a sentence fragment that ended",
+      "page_number": null
+    },
+    {
+      "text_id": 52,
+      "paragraph_id": 19,
+      "section_id": 4,
+      "text": "0.00 0.25 0.50 0.75 1.00 Proportion of Pronouns Produced 0.00 0.25 0.50 0.75 1.00 Proportion of Pronouns Produced she Unspecified he she Unspecified he 0.00 0.25 0.50 0.75 1.00 Expectation for Female Gender 0.00 0.25 0.50 0.75 1.00 Expectation for Female Gender",
+      "page_number": null
+    },
+    {
+      "text_id": 53,
+      "paragraph_id": 21,
+      "section_id": 5,
+      "text": "Fig.",
+      "page_number": null
+    },
+    {
+      "text_id": 54,
+      "paragraph_id": 21,
+      "section_id": 5,
+      "text": "1.",
+      "page_number": null
+    },
+    {
+      "text_id": 55,
+      "paragraph_id": 21,
+      "section_id": 5,
+      "text": "An example unbiased mapping (a) and an example biased mapping (b) of gender expectations to the proportion of pronouns produced.",
+      "page_number": null
+    },
+    {
+      "text_id": 56,
+      "paragraph_id": 21,
+      "section_id": 5,
+      "text": "In (a), the mapping from female-gender event expectations to she pronoun probabilities is the same as that from male-gender expectations to he pronoun probabilities.",
+      "page_number": null
+    },
+    {
+      "text_id": 57,
+      "paragraph_id": 21,
+      "section_id": 5,
+      "text": "Because this mapping is unbiased in this sense, it is symmetric under 180° rotation.",
+      "page_number": null
+    },
+    {
+      "text_id": 58,
+      "paragraph_id": 21,
+      "section_id": 5,
+      "text": "In (b), a biased mapping consistent with population-average behavior in Experiment 1 (the United States election) is shown.",
+      "page_number": null
+    },
+    {
+      "text_id": 59,
+      "paragraph_id": 21,
+      "section_id": 5,
+      "text": "This mapping is not symmetric under 180° rotation.",
+      "page_number": null
+    },
+    {
+      "text_id": 60,
+      "paragraph_id": 21,
+      "section_id": 5,
+      "text": "In both examples, \"unspecified\" refers to all pronominal forms that are gender nonspecific, including they, he or she, he/she, and so forth.",
+      "page_number": null
+    },
+    {
+      "text_id": 61,
+      "paragraph_id": 22,
+      "section_id": 5,
+      "text": "just before where a pronoun would be expected (e.g., \"The next US president will be sworn into office in January 2017.",
+      "page_number": null
+    },
+    {
+      "text_id": 62,
+      "paragraph_id": 22,
+      "section_id": 5,
+      "text": "After moving into the Oval Office, one of the first things that . . .\").",
+      "page_number": null
+    },
+    {
+      "text_id": 63,
+      "paragraph_id": 22,
+      "section_id": 5,
+      "text": "The target sentences were designed so that readers would be likely to continue these fragments with a pronoun reference to the next president when completing the text (and to expect a pronoun reference to the next president during comprehension).",
+      "page_number": null
+    },
+    {
+      "text_id": 64,
+      "paragraph_id": 23,
+      "section_id": 5,
+      "text": "In the self-paced reading task, the full target sentences were used with she, he, or singular they.",
+      "page_number": null
+    },
+    {
+      "text_id": 65,
+      "paragraph_id": 23,
+      "section_id": 5,
+      "text": "In addition to measuring ease of comprehension when a pronoun reference to the next president was first encountered, we were interested in the effect of the pronoun on subsequent comprehension behavior.",
+      "page_number": null
+    },
+    {
+      "text_id": 66,
+      "paragraph_id": 23,
+      "section_id": 5,
+      "text": "Would establishing the gender of the next president through an explicit she or he reference eliminate any influence of event expectations or biases?",
+      "page_number": null
+    },
+    {
+      "text_id": 67,
+      "paragraph_id": 23,
+      "section_id": 5,
+      "text": "To address this question, we combined each of the 12 pronoun sentences with each of the remaining 11 pronoun sentences to form 132 sentence triplets (including the stage-setting sentence).",
+      "page_number": null
+    },
+    {
+      "text_id": 68,
+      "paragraph_id": 23,
+      "section_id": 5,
+      "text": "Five experimental conditions were formed.",
+      "page_number": null
+    },
+    {
+      "text_id": 69,
+      "paragraph_id": 23,
+      "section_id": 5,
+      "text": "The first four conditions crossed she and he in the second and third sentence such that we had a pair of pronoun-matching conditions (he . . . he, she . . . she) and another pair of pronoun-mismatching conditions (she . . . he, he . . . she).",
+      "page_number": null
+    },
+    {
+      "text_id": 70,
+      "paragraph_id": 23,
+      "section_id": 5,
+      "text": "The fifth condition used the gender-neutral singular they in both pronoun sentences (they . . . they).",
+      "page_number": null
+    },
+    {
+      "text_id": 71,
+      "paragraph_id": 23,
+      "section_id": 5,
+      "text": "The following is an example sentence from the he . . . she condition of the task:",
+      "page_number": null
+    },
+    {
+      "text_id": 72,
+      "paragraph_id": 24,
+      "section_id": 5,
+      "text": "The next US president will be sworn into office in January 2017.",
+      "page_number": null
+    },
+    {
+      "text_id": 73,
+      "paragraph_id": 24,
+      "section_id": 5,
+      "text": "After moving into the Oval Office, one of the first things that he will do is hold a staff briefing.",
+      "page_number": null
+    },
+    {
+      "text_id": 74,
+      "paragraph_id": 24,
+      "section_id": 5,
+      "text": "During the inauguration speech, the president will emphasize her commitment to resolve outstanding issues quickly.",
+      "page_number": null
+    },
+    {
+      "text_id": 75,
+      "paragraph_id": 25,
+      "section_id": 5,
+      "text": "If gender information from the first pronoun completely overrides event expectations and any broader biases, reading times for the third sentence should be determined solely by whether the gender of the pronoun in that sentence matches the gender of the pronoun in the second sentence.",
+      "page_number": null
+    },
+    {
+      "text_id": 76,
+      "paragraph_id": 25,
+      "section_id": 5,
+      "text": "Effects beyond gender match to the previous pronoun might provide further evidence that comprehenders' knowledge and beliefs do not transparently map to linguistic preferences; rather, linguistic preferences might themselves be subject to additional biases.",
+      "page_number": null
+    },
+    {
+      "text_id": 77,
+      "paragraph_id": 26,
+      "section_id": 5,
+      "text": "A secondary purpose of the pronoun-match versus pronoun-mismatch manipulation was to provide a benchmark for evaluating the size of gender-bias effects for the first pronoun, because gender mismatches within a text (e.g., when a person is first referred to as she and then as he) are expected to elicit severe processing difficulty.",
+      "page_number": null
+    },
+    {
+      "text_id": 78,
+      "paragraph_id": 27,
+      "section_id": 5,
+      "text": "After the election and Donald Trump's inauguration, minor changes were introduced into the sentences to ensure consistency with real-world events that had transpired.",
+      "page_number": null
+    },
+    {
+      "text_id": 79,
+      "paragraph_id": 27,
+      "section_id": 5,
+      "text": "This affected mostly tense (e.g., \"After the inauguration, [he/she/they] will do\" became \". . . [he/ she/they] did\").",
+      "page_number": null
+    },
+    {
+      "text_id": 80,
+      "paragraph_id": 27,
+      "section_id": 5,
+      "text": "No such changes were necessary during the preelection period.",
+      "page_number": null
+    },
+    {
+      "text_id": 81,
+      "paragraph_id": 28,
+      "section_id": 5,
+      "text": "Procedure.",
+      "page_number": null
+    },
+    {
+      "text_id": 82,
+      "paragraph_id": 28,
+      "section_id": 5,
+      "text": "Participants started the experiment by opening a link in a new browser window.",
+      "page_number": null
+    },
+    {
+      "text_id": 83,
+      "paragraph_id": 28,
+      "section_id": 5,
+      "text": "After participants gave informed consent, they were asked how closely they were following the news about the presidential race (multiple-choice options were daily, weekly, monthly, less than monthly, never).",
+      "page_number": null
+    },
+    {
+      "text_id": 84,
+      "paragraph_id": 28,
+      "section_id": 5,
+      "text": "Then the experimental task started.",
+      "page_number": null
+    },
+    {
+      "text_id": 85,
+      "paragraph_id": 29,
+      "section_id": 5,
+      "text": "Each participant performed only one of the three tasks (belief estimation, text completion, self-paced reading).",
+      "page_number": null
+    },
+    {
+      "text_id": 86,
+      "paragraph_id": 29,
+      "section_id": 5,
+      "text": "Further, in the text-completion task and in the self-paced reading task, they performed only one trial (i.e., they were presented with only 1 of the 12 sentence fragments for completion or only 1 of the 132 texts for reading).",
+      "page_number": null
+    },
+    {
+      "text_id": 87,
+      "paragraph_id": 30,
+      "section_id": 5,
+      "text": "In the belief-estimation task, participants reported how likely they thought it was that each of the three candidates-Hillary Clinton, Bernie Sanders, and Donald Trump-would win the election by indicating a response between 0 and 100 using sliders.",
+      "page_number": null
+    },
+    {
+      "text_id": 88,
+      "paragraph_id": 30,
+      "section_id": 5,
+      "text": "We included Sanders at the start of the study because Clinton had not yet secured sufficient delegates to ensure the Democratic Party presidential nomination, and we kept Sanders in during subsequent rounds for consistency.",
+      "page_number": null
+    },
+    {
+      "text_id": 89,
+      "paragraph_id": 30,
+      "section_id": 5,
+      "text": "Participants were allowed to position each slider freely.",
+      "page_number": null
+    },
+    {
+      "text_id": 90,
+      "paragraph_id": 30,
+      "section_id": 5,
+      "text": "The order of candidates was randomized.",
+      "page_number": null
+    },
+    {
+      "text_id": 91,
+      "paragraph_id": 30,
+      "section_id": 5,
+      "text": "We converted each participant's normalized response to a degree of belief ranging from 0 to 100 that the next president would be female by dividing the response given for Clinton by the sum of the responses for all three candidates.",
+      "page_number": null
+    },
+    {
+      "text_id": 92,
+      "paragraph_id": 31,
+      "section_id": 5,
+      "text": "We should note that although normalized slider scores are a preferred method for this type of beliefestimation task (Franke et al., 2016), evidence suggests that participants are often reluctant to give extreme slider scores.",
+      "page_number": null
+    },
+    {
+      "text_id": 93,
+      "paragraph_id": 31,
+      "section_id": 5,
+      "text": "For example, the mean normalized belief that Sanders would be the next president hovered around 5% even after the Democratic convention, when Sanders was no longer in the race and had endorsed Clinton (see Fig.",
+      "page_number": null
+    },
+    {
+      "text_id": 94,
+      "paragraph_id": 31,
+      "section_id": 5,
+      "text": "S3 in the Supplemental Material).",
+      "page_number": null
+    },
+    {
+      "text_id": 95,
+      "paragraph_id": 31,
+      "section_id": 5,
+      "text": "As a result, our procedure is likely, if anything, to underestimate the strength of the belief in our experimental population that the next president would be female.",
+      "page_number": null
+    },
+    {
+      "text_id": 96,
+      "paragraph_id": 31,
+      "section_id": 5,
+      "text": "Comparison with historical betting markets suggests that this conclusion is plausible (Real Clear Politics, 2016).",
+      "page_number": null
+    },
+    {
+      "text_id": 97,
+      "paragraph_id": 31,
+      "section_id": 5,
+      "text": "If we underestimated this belief, it would imply that the degree of bias against she pronoun usage relative to beliefs about world-event likelihoods was even stronger than our data suggest at face value.",
+      "page_number": null
+    },
+    {
+      "text_id": 98,
+      "paragraph_id": 32,
+      "section_id": 5,
+      "text": "In the text-completion task, participants were presented with the stage-setting sentence and 1 of the 12 sentence fragments.",
+      "page_number": null
+    },
+    {
+      "text_id": 99,
+      "paragraph_id": 32,
+      "section_id": 5,
+      "text": "Completions could be free form and arbitrarily long.",
+      "page_number": null
+    },
+    {
+      "text_id": 100,
+      "paragraph_id": 33,
+      "section_id": 5,
+      "text": "In the self-paced reading task, participants first saw horizontal lines that masked the complete text, including the white spaces between words.",
+      "page_number": null
+    },
+    {
+      "text_id": 101,
+      "paragraph_id": 33,
+      "section_id": 5,
+      "text": "Words had to be revealed one by one by pressing the space bar.",
+      "page_number": null
+    },
+    {
+      "text_id": 102,
+      "paragraph_id": 33,
+      "section_id": 5,
+      "text": "Each time a word was revealed, the previous word was masked again, so just one word was visible at a time.",
+      "page_number": null
+    },
+    {
+      "text_id": 103,
+      "paragraph_id": 33,
+      "section_id": 5,
+      "text": "Before the experimental sentences were presented, participants read two practice sentences.",
+      "page_number": null
+    },
+    {
+      "text_id": 104,
+      "paragraph_id": 33,
+      "section_id": 5,
+      "text": "After participants finished reading the experimental sentences, they were presented with two yes/no comprehension questionsone for each pronoun sentence-whose purpose was to confirm that they paid attention to the text.",
+      "page_number": null
+    },
+    {
+      "text_id": 105,
+      "paragraph_id": 33,
+      "section_id": 5,
+      "text": "Next, participants were asked to rate the \"naturalness of the text passage\" on a scale from 1 (makes no sense at all) to 7 (makes perfect sense).",
+      "page_number": null
+    },
+    {
+      "text_id": 106,
+      "paragraph_id": 34,
+      "section_id": 5,
+      "text": "After every task, participants completed a demographics survey.",
+      "page_number": null
+    },
+    {
+      "text_id": 107,
+      "paragraph_id": 34,
+      "section_id": 5,
+      "text": "Finally, participants were debriefed and received a participation code that they could use to confirm completion of the study on the Mechanical Turk website.",
+      "page_number": null
+    },
+    {
+      "text_id": 108,
+      "paragraph_id": 34,
+      "section_id": 5,
+      "text": "On average, participants completed the experiment in approximately 3 min.",
+      "page_number": null
+    },
+    {
+      "text_id": 109,
+      "paragraph_id": 36,
+      "section_id": 6,
+      "text": "We collected 10 preelection rounds of data, beginning shortly before the June 7 California Democratic-party primaries and ending shortly before the October 25 third presidential debate (Fig.",
+      "page_number": null
+    },
+    {
+      "text_id": 110,
+      "paragraph_id": 36,
+      "section_id": 6,
+      "text": "2).",
+      "page_number": null
+    },
+    {
+      "text_id": 111,
+      "paragraph_id": 36,
+      "section_id": 6,
+      "text": "Each round began on a Sunday morning.",
+      "page_number": null
+    },
+    {
+      "text_id": 112,
+      "paragraph_id": 36,
+      "section_id": 6,
+      "text": "Nine of these rounds were collected at predetermined times preceding, following, or both preceding and following significant milestones in the race, such as the party conventions and the TV debates.",
+      "page_number": null
+    },
+    {
+      "text_id": 113,
+      "paragraph_id": 36,
+      "section_id": 6,
+      "text": "We added an ad hoc round of data collection during the aftermath of Donald Trump's confrontation with the Muslim family of the killed US soldier Humayun Khan.",
+      "page_number": null
+    },
+    {
+      "text_id": 114,
+      "paragraph_id": 36,
+      "section_id": 6,
+      "text": "We also collected two rounds of postelection data, one shortly after the November 8 election and one shortly after the January 20 inauguration.",
+      "page_number": null
+    },
+    {
+      "text_id": 115,
+      "paragraph_id": 36,
+      "section_id": 6,
+      "text": "We collected no preelection data after the third debate in order to avoid any possible depletion of the participant pool for immediate postelection data collection.",
+      "page_number": null
+    },
+    {
+      "text_id": 116,
+      "paragraph_id": 36,
+      "section_id": 6,
+      "text": "Conservative estimates of the number of US-based workers on Mechanical Turk suggested that we might be exhausting the pool when the election was approaching.",
+      "page_number": null
+    },
+    {
+      "text_id": 117,
+      "paragraph_id": 36,
+      "section_id": 6,
+      "text": "Consistent with this idea, the data showed that there was a slight slowdown in participation in the ninth round (before the third TV debate).",
+      "page_number": null
+    },
+    {
+      "text_id": 118,
+      "paragraph_id": 37,
+      "section_id": 6,
+      "text": "The amount of data collected at each of these times was determined on the basis of two pilot experiments carried out in April and May 2016.",
+      "page_number": null
+    },
+    {
+      "text_id": 119,
+      "paragraph_id": 37,
+      "section_id": 6,
+      "text": "These pilot experiments were similar in design to the main experiment but had smaller numbers of stimuli and participants.",
+      "page_number": null
+    },
+    {
+      "text_id": 120,
+      "paragraph_id": 37,
+      "section_id": 6,
+      "text": "In each data-collection round of the main experiment, we aimed for 280 participants in the belief-estimation task, 560 participants in the text-completion task, and 1,120 participants in the self-paced reading task.",
+      "page_number": null
+    },
+    {
+      "text_id": 121,
+      "paragraph_id": 37,
+      "section_id": 6,
+      "text": "Because of how tasks are advertised on Mechanical Turk, the precise numbers of tested participants varied slightly around these target values.",
+      "page_number": null
+    },
+    {
+      "text_id": 122,
+      "paragraph_id": 38,
+      "section_id": 6,
+      "text": "We took multiple precautions to avoid any possible differences in the populations tested across the three tasks.",
+      "page_number": null
+    },
+    {
+      "text_id": 123,
+      "paragraph_id": 38,
+      "section_id": 6,
+      "text": "To avoid differences arising from the time of day and the day of the week, we tested participants in all three tasks concurrently.",
+      "page_number": null
+    },
+    {
+      "text_id": 124,
+      "paragraph_id": 38,
+      "section_id": 6,
+      "text": "Specially designed software was used to make sure the testing periods were the same across tasks despite the differing numbers of participants per task.",
+      "page_number": null
+    },
+    {
+      "text_id": 125,
+      "paragraph_id": 38,
+      "section_id": 6,
+      "text": "To avoid population differences from self-selection biases, we advertised all three tasks in the exact same way on the crowdsourcing platform.",
+      "page_number": null
+    },
+    {
+      "text_id": 126,
+      "paragraph_id": 38,
+      "section_id": 6,
+      "text": "To avoid population differences arising from differences in monetary compensation, we paid participants the same amount for completing all three tasks ($0.35).",
+      "page_number": null
+    },
+    {
+      "text_id": 127,
+      "paragraph_id": 40,
+      "section_id": 7,
+      "text": "We removed participants who indicated that they were noncitizens of the US, nonresidents of the US, or nonnative speakers of English (~7%).",
+      "page_number": null
+    },
+    {
+      "text_id": 128,
+      "paragraph_id": 40,
+      "section_id": 7,
+      "text": "We also removed some participants who participated multiple times during a brief period when our mechanism for preventing multiple participation temporarily failed.",
+      "page_number": null
+    },
+    {
+      "text_id": 129,
+      "paragraph_id": 41,
+      "section_id": 7,
+      "text": "The scores assigned to each candidate in the beliefestimation task were converted to proportions, and the proportion assigned to Clinton was interpreted as the participant's implicit belief that a woman would become president.",
+      "page_number": null
+    },
+    {
+      "text_id": 130,
+      "paragraph_id": 42,
+      "section_id": 7,
+      "text": "In the text-completion task, pronouns referring to the next president were automatically detected using a regular-expression search.",
+      "page_number": null
+    },
+    {
+      "text_id": 131,
+      "paragraph_id": 42,
+      "section_id": 7,
+      "text": "Pronouns were used in 41% of the sentence completions.",
+      "page_number": null
+    },
+    {
+      "text_id": 132,
+      "paragraph_id": 42,
+      "section_id": 7,
+      "text": "Among the remaining completions, the most common were those without animate noun phrases (33%; e.g., \"During the first term, the president will have to work towards . . . immigration reform\") and full noun-phrase references compatible with any future president (11%; e.g., \"the president of the United States\").",
+      "page_number": null
+    },
+    {
+      "text_id": 133,
+      "paragraph_id": 42,
+      "section_id": 7,
+      "text": "Pronouns were categorized into the following four types: she (the feminine forms she/her), he (the masculine forms he/his/him), they (the forms they/their/them), and gender-hedged (he or she, he/she, and variants).",
+      "page_number": null
+    },
+    {
+      "text_id": 134,
+      "paragraph_id": 43,
+      "section_id": 7,
+      "text": "From the data collected with the self-paced reading task, we removed trials on which participants had implausibly short (< 180 ms) or long (> 5 000 , ms) reading times on any of the words.",
+      "page_number": null
+    },
+    {
+      "text_id": 135,
+      "paragraph_id": 43,
+      "section_id": 7,
+      "text": "This affected 19% of the trials.",
+      "page_number": null
+    },
+    {
+      "text_id": 136,
+      "paragraph_id": 43,
+      "section_id": 7,
+      "text": "Per-word reading times were residualized to remove known effects of factors such as word length, word position in the text, and punctuation following a word (for full details, see the description of Experiment 0 in the Supplemental Material).",
+      "page_number": null
+    },
+    {
+      "text_id": 137,
+      "paragraph_id": 43,
+      "section_id": 7,
+      "text": "All reading times reported in this article are residualized.",
+      "page_number": null
+    },
+    {
+      "text_id": 138,
+      "paragraph_id": 45,
+      "section_id": 8,
+      "text": "Analyses were conducted using Bayesian hierarchical generalized linear models with maximal random-effects structure (Barr, Levy, Scheepers, & Tily, 2013) implemented in the Stan system for full Bayesian inference (Carpenter et al., 2017).",
+      "page_number": null
+    },
+    {
+      "text_id": 139,
+      "paragraph_id": 45,
+      "section_id": 8,
+      "text": "We report the posterior mean of each parameter in question, the 95% credible interval (CrI), and the posterior probability of the parameter being on the same side of zero as its posterior mean.",
+      "page_number": null
+    },
+    {
+      "text_id": 140,
+      "paragraph_id": 45,
+      "section_id": 8,
+      "text": "We log-transformed self-paced reading times before analysis, but we also report estimated effect sizes in milliseconds, which were calculated by taking the differences between estimated condition means after back-converting them to milliseconds.",
+      "page_number": null
+    },
+    {
+      "text_id": 141,
+      "paragraph_id": 45,
+      "section_id": 8,
+      "text": "See the Supplemental Material for more details.",
+      "page_number": null
+    },
+    {
+      "text_id": 142,
+      "paragraph_id": 47,
+      "section_id": 9,
+      "text": "Participant demographics indicated that the pool of participants was diverse but not entirely representative of the general population of the US For instance, the median age of participants in our study was 32 years, compared with 38 years in the general US population (He, Goodkind, & Kowal, 2016).",
+      "page_number": null
+    },
+    {
+      "text_id": 143,
+      "paragraph_id": 47,
+      "section_id": 9,
+      "text": "Also, 57% of our participants identified as female, whereas women constitute only 51% of the US population (Howden & Meyer, 2011).",
+      "page_number": null
+    },
+    {
+      "text_id": 144,
+      "paragraph_id": 47,
+      "section_id": 9,
+      "text": "There were some small changes in demographics across the data-collection period, but these were within the range of what might be expected on the basis of random fluctuations (Casey, Chandler, Levine, Proctor, & Strolovitch, 2017).",
+      "page_number": null
+    },
+    {
+      "text_id": 145,
+      "paragraph_id": 47,
+      "section_id": 9,
+      "text": "See the Supplemental Material for more complete details on participant demographics.",
+      "page_number": null
+    },
+    {
+      "text_id": 146,
+      "paragraph_id": 48,
+      "section_id": 9,
+      "text": "The average participant expectation for a female president was significantly above 50% over much of the preelection period and continued to grow as the election approached (Fig. 2a), β ˆ = 0.082, 95% CrI = [-0.0037, 0.17], P(β > 0) = .97 in a beta regression with β  being the estimated log-odds increase per month.",
+      "page_number": null
+    },
+    {
+      "text_id": 147,
+      "paragraph_id": 48,
+      "section_id": 9,
+      "text": "Note that expectations for a female president in the immediate postelection experimental round remained at 17%.",
+      "page_number": null
+    },
+    {
+      "text_id": 148,
+      "paragraph_id": 48,
+      "section_id": 9,
+      "text": "Such a high expectation could reflect limitations of our estimation method, but it could also reflect the surprise and disbelief at the reported election results immediately following the election (some election forecasting sites had reported the probability of a Clinton win as well above 90%, Wang, 2016, and recount efforts were soon to begin in several swing states).",
+      "page_number": null
+    },
+    {
+      "text_id": 149,
+      "paragraph_id": 49,
+      "section_id": 9,
+      "text": "Text-completion results are shown in Figure 2b as a function of time and Figure 3a as a function of the strength of the expectation for a female president.",
+      "page_number": null
+    },
+    {
+      "text_id": 150,
+      "paragraph_id": 49,
+      "section_id": 9,
+      "text": "Before the election, they was the most common pronoun type for all but the first experimental round.",
+      "page_number": null
+    },
+    {
+      "text_id": 151,
+      "paragraph_id": 49,
+      "section_id": 9,
+      "text": "Strikingly, participants produced she far less often than he, even when expectations favored a female president.",
+      "page_number": null
+    },
+    {
+      "text_id": 152,
+      "paragraph_id": 49,
+      "section_id": 9,
+      "text": "Production of he was negatively correlated with the expectation of a female president across the preelection experimental rounds, β ˆ = -1.4, 95% CrI = [-2.9, -0.047], P(β < 0) = .98 in a logistic regression with β  being the estimated log-odds increase for one unit of the predictor (i.e., expectation).",
+      "page_number": null
+    },
+    {
+      "text_id": 153,
+      "paragraph_id": 49,
+      "section_id": 9,
+      "text": "However, as expectations for a female president strengthened, participants gravitated not toward she, β ˆ = -0.25, 95% CrI = [-1.6, 1.2], P(β < 0) = .66, but toward they, β ˆ = 1.2, 95% CrI = [0.28, 2.2], P(β > 0) > .99.",
+      "page_number": null
+    },
+    {
+      "text_id": 154,
+      "paragraph_id": 49,
+      "section_id": 9,
+      "text": "These patterns held regardless of participant age, gender, education, and political-party affiliation (see Figs.",
+      "page_number": null
+    },
+    {
+      "text_id": 155,
+      "paragraph_id": 49,
+      "section_id": 9,
+      "text": "S20-S29 in the Supplemental Material), and they demonstrate a biased mapping from election-outcome expectation to preferred linguistic form: Relative to referent-gender expectations, she production rates were lower than he production rates.",
+      "page_number": null
+    },
+    {
+      "text_id": 156,
+      "paragraph_id": 49,
+      "section_id": 9,
+      "text": "Although the she disadvantage could in part reflect a default (and perhaps arguably unbiased) preference among some speakers for he whenever the referent's gender is uncertain (generic he), closer analysis indicates that such a default preference cannot plausibly provide a complete explanation for our results (see \"Incompatibility of Production Data With an Unbiased Expectation-to-Language Mapping\" in the Supplemental Material).",
+      "page_number": null
+    },
+    {
+      "text_id": 157,
+      "paragraph_id": 50,
+      "section_id": 9,
+      "text": "1 0.2 0.4 0.6 Proportion of References Produced 2,300 2,400 2,500 2,600 2,700 Reading Time (ms) 0.45 0.50 0.55 0.60 Belief That President Will Be Female 0.45 0.50 0.55 0.60 Belief That President Will Be Female a b Reading times in response to the first pronoun offer insight into how subjective event expectations are translated to language-comprehension preferences, closely analogous with text completion.",
+      "page_number": null
+    },
+    {
+      "text_id": 158,
+      "paragraph_id": 50,
+      "section_id": 9,
+      "text": "Additionally, reading times in response to the second pronoun offer insight into the role of a third information source-referent gender as established by the first pronoun.",
+      "page_number": null
+    },
+    {
+      "text_id": 159,
+      "paragraph_id": 50,
+      "section_id": 9,
+      "text": "We analyzed reading times, summed over each pronoun and its four succeeding words, to capture the spillover of processing difficulty often observed in self-paced reading experiments (Mitchell, 2004;Smith & Levy, 2013).",
+      "page_number": null
+    },
+    {
+      "text_id": 160,
+      "paragraph_id": 50,
+      "section_id": 9,
+      "text": "See Figures S4 and S7 in the Supplemental Material for word-by-word results.",
+      "page_number": null
+    },
+    {
+      "text_id": 161,
+      "paragraph_id": 51,
+      "section_id": 9,
+      "text": "Results for the first pronoun in the self-paced reading task are shown in Figure 2c as a function of experimental round and in Figure 3b as a function of the strength of the expectation of a female president.",
+      "page_number": null
+    },
+    {
+      "text_id": 162,
+      "paragraph_id": 51,
+      "section_id": 9,
+      "text": "She was read significantly slower than he, β ˆ = 0.13, ∆reading time = 302.31 ms, 95% CrI = [0.09, 0.17], P(β > 0) > .99 in a linear regression of log-reading times with β  being the approximate estimated proportional difference (i.e., 13% in this case), and she was also read significantly slower than they, β ˆ = 0.10, ∆reading time = 250.90 ms, 95% CrI = [0.01, 0.18], P(β > 0) = .99, across all experimental rounds.",
+      "page_number": null
+    },
+    {
+      "text_id": 163,
+      "paragraph_id": 51,
+      "section_id": 9,
+      "text": "Reading times for he and they did not significantly differ from each other before the election, β ˆ = 0.03, Δreading time = 70.40 ms, 95% CrI = [-0.06, 0.12], P(β > 0) = .77.",
+      "page_number": null
+    },
+    {
+      "text_id": 164,
+      "paragraph_id": 51,
+      "section_id": 9,
+      "text": "Across preelection experimental rounds, he reading times were positively correlated with expectation for a female president, β ˆ = 0.047, 95% CrI = [-0.0097, 0.11], P(β > 0) = .95 (Fig. 3b), but neither she nor they showed any effect of changes in expectation, β ˆ = 0.013, 95% CrI = [-0.05, 0.069], P(β > 0) = .67; β ˆ = 0.032, 95% CrI = [-0.058, 0.12], P(β > 0) = .77.",
+      "page_number": null
+    },
+    {
+      "text_id": 165,
+      "paragraph_id": 51,
+      "section_id": 9,
+      "text": "As in the text-completion task, these patterns were stable across the demographic spectrum (see Figs.",
+      "page_number": null
+    },
+    {
+      "text_id": 166,
+      "paragraph_id": 51,
+      "section_id": 9,
+      "text": "S20-S29).",
+      "page_number": null
+    },
+    {
+      "text_id": 167,
+      "paragraph_id": 52,
+      "section_id": 9,
+      "text": "Second pronouns were read much slower when they mismatched the gender of the first pronoun than when they matched, indicating a strong effect of gender information provided by the preceding text (Fig. 4), β ˆ = 0.11, Δreading time = 282.13 ms, 95% CrI = [0.09, 0.14], P(β > 0) > 0.99.",
+      "page_number": null
+    },
+    {
+      "text_id": 168,
+      "paragraph_id": 52,
+      "section_id": 9,
+      "text": "Note that the processing disadvantage for she first pronouns was of similar size: 302 ms for a first pronoun mismatching the gender stereotype versus 282 ms for a second pronoun mismatching the gender information provided by the first pronoun.",
+      "page_number": null
+    },
+    {
+      "text_id": 169,
+      "paragraph_id": 52,
+      "section_id": 9,
+      "text": "This suggests that, in terms of processing cost, the disruption from an initial she was just as strong as the disruption from inconsistency of pronoun gender for the same referent from sentence to sentence.",
+      "page_number": null
+    },
+    {
+      "text_id": 170,
+      "paragraph_id": 53,
+      "section_id": 9,
+      "text": "Furthermore, we saw a sizeable processing disadvantage when the second pronoun was she.",
+      "page_number": null
+    },
+    {
+      "text_id": 171,
+      "paragraph_id": 53,
+      "section_id": 9,
+      "text": "She was read slower than he overall, β ˆ = 0.04, Δreading time = 96.31 ms, 95% CrI = [0.01, 0.06], P(β > 0) > .99 and in pairwise comparisons with the pronoun-match and pronoun-mismatch conditions individually-pronoun match: β ˆ = 0.04, Δreading time = 85.38 ms, 95% CrI = [0.01, 0.06], P(β > 0) = .99 pronoun mismatch: β ˆ = 0.04, Δreading time = 118.46 ms, 95% CrI = [0.01, 0.08], P(β > 0) > .99.",
+      "page_number": null
+    },
+    {
+      "text_id": 172,
+      "paragraph_id": 53,
+      "section_id": 9,
+      "text": "That is, she was read slower than he even when the reader had already received unambiguous information about gender in the previous sentence.",
+      "page_number": null
+    },
+    {
+      "text_id": 173,
+      "paragraph_id": 53,
+      "section_id": 9,
+      "text": "Readers also found it easier to accommodate a switch from first she to he in the next sentence than the reverse switch.",
+      "page_number": null
+    },
+    {
+      "text_id": 174,
+      "paragraph_id": 53,
+      "section_id": 9,
+      "text": "There was no evidence for an interaction of pronoun-match condition and the gender of the second pronoun, β ˆ = 0.01, Δreading time = 26.97 ms, 95% CrI = [-0.03, 0.05], P(β > 0) = .72 (i.e., their effects were approximately additive).",
+      "page_number": null
+    },
+    {
+      "text_id": 175,
+      "paragraph_id": 54,
+      "section_id": 9,
+      "text": "Although we saw far less change during the preelection period in comprehension than in production, the reading-time advantage for he over both she and they increased significantly in the immediate postelection round relative to the preelection period (Fig. 2c)increase in she disadvantage: β ˆ = 0.06, Δreading time = 154.69 ms, 95% CrI = [0.02, 0.11], P(β > 0) > .99 increase in they disadvantage: β ˆ = 0.99, Δreading time = 135.50 ms, 95% CrI = [-0.00, 0.11], P(β > 0) = .97.",
+      "page_number": null
+    },
+    {
+      "text_id": 176,
+      "paragraph_id": 54,
+      "section_id": 9,
+      "text": "This result demonstrates that, under some circumstances, changes in world-event expectations can rapidly and dramatically affect comprehension.",
+      "page_number": null
+    },
+    {
+      "text_id": 177,
+      "paragraph_id": 55,
+      "section_id": 9,
+      "text": "To rule out the possibility of intrinsic differences in reading times for he and she, we conducted an auxiliary experiment (N = 1 897 , , described in detail in the Supplemental Material).",
+      "page_number": null
+    },
+    {
+      "text_id": 178,
+      "paragraph_id": 55,
+      "section_id": 9,
+      "text": "The auxiliary experiment involved reading of three-sentence texts, similar to those used in Experiment 1, in which a gendered pronoun was encountered where a proper-name antecedent provided near-categorical expectations regarding the referent's gender (e.g., \"It was Sunday and the zoo was very crowded.",
+      "page_number": null
+    },
+    {
+      "text_id": 179,
+      "paragraph_id": 55,
+      "section_id": 9,
+      "text": "When little [Annabelle/Jimmy] saw the baby elephant, [she/he] shrieked in excitement\"), where a gender-balanced (according to a separate norming study) proper name served as antecedent (e.g., \"It was Sunday and the zoo was very crowded.",
+      "page_number": null
+    },
+    {
+      "text_id": 180,
+      "paragraph_id": 55,
+      "section_id": 9,
+      "text": "When little Morgan saw the baby elephant, [she/he] shrieked in excitement\"), and where the pronoun was a cataphor (a pronoun whose referent comes later in the sentence), and no animate referents preceded the pronoun in the context sentence (e.g., \"It was Sunday and the zoo was very crowded.",
+      "page_number": null
+    },
+    {
+      "text_id": 181,
+      "paragraph_id": 55,
+      "section_id": 9,
+      "text": "When [she/he] saw the baby elephant, little [Annabelle/Jimmy] shrieked in excitement\").",
+      "page_number": null
+    },
+    {
+      "text_id": 182,
+      "paragraph_id": 56,
+      "section_id": 9,
+      "text": "In none of these cases, nor in several others we analyzed, did the results provide evidence for a reliable or sizeable intrinsic difference in reading times for she versus he.",
+      "page_number": null
+    },
+    {
+      "text_id": 183,
+      "paragraph_id": 56,
+      "section_id": 9,
+      "text": "Thus the reading-time disadvantage for she in our main experiment cannot plausibly be attributed to intrinsically slower reading than for he independent of context.",
+      "page_number": null
+    },
+    {
+      "text_id": 184,
+      "paragraph_id": 57,
+      "section_id": 9,
+      "text": "Experiment 2: The 2017 UK General Election",
+      "page_number": null
+    },
+    {
+      "text_id": 185,
+      "paragraph_id": 59,
+      "section_id": 10,
+      "text": "We conducted an analogous follow-up experiment around the midsummer 2017 UK general election, exploiting historical differences between the US and UK to investigate the generality of our US results.",
+      "page_number": null
+    },
+    {
+      "text_id": 186,
+      "paragraph_id": 59,
+      "section_id": 10,
+      "text": "Whereas the US has always had male heads of government, the UK had a female head of government (Margaret Thatcher) from 1979 to 1990; the female sitting prime minister, Theresa May, was strongly expected throughout the campaign to win.",
+      "page_number": null
+    },
+    {
+      "text_id": 187,
+      "paragraph_id": 60,
+      "section_id": 10,
+      "text": "Methods and materials for the text-completion and self-paced reading tasks were the same as in Experiment 1, except where otherwise noted.",
+      "page_number": null
+    },
+    {
+      "text_id": 188,
+      "paragraph_id": 60,
+      "section_id": 10,
+      "text": "Regrettably, we did not conduct a belief-estimation task in the preelection round, but the betting odds of May's reelection were well above 80% throughout the campaign (other plausible candidates for prime minister were male), and the general response in the UK to May's electoral victory was not surprise that she had won but surprise that the result was as close as it was.",
+      "page_number": null
+    },
+    {
+      "text_id": 189,
+      "paragraph_id": 60,
+      "section_id": 10,
+      "text": "Hence, we were confident at the time, and remain confident now, that May was generally considered to have a chance of victory considerably above 50%, which is sufficient for proper interpretation of this experiment.",
+      "page_number": null
+    },
+    {
+      "text_id": 190,
+      "paragraph_id": 60,
+      "section_id": 10,
+      "text": "Thus, we chose to assign all our participants to the text-completion and self-paced reading tasks in order to maximize statistical power for those tasks.",
+      "page_number": null
+    },
+    {
+      "text_id": 191,
+      "paragraph_id": 60,
+      "section_id": 10,
+      "text": "We did conduct the belief-estimation task in the postelection round, because there appeared to be considerable uncertainty about whether Theresa May would be able to form a government.",
+      "page_number": null
+    },
+    {
+      "text_id": 192,
+      "paragraph_id": 60,
+      "section_id": 10,
+      "text": "To account for the chance that a new contender for prime minister would appear on the scene, we allowed participants to enter an arbitrary extra person and to specify that person's chances.",
+      "page_number": null
+    },
+    {
+      "text_id": 193,
+      "paragraph_id": 60,
+      "section_id": 10,
+      "text": "Unfortunately, 10% of participants used that slider without specifying a name, so we could not determine the intended person's gender.",
+      "page_number": null
+    },
+    {
+      "text_id": 194,
+      "paragraph_id": 60,
+      "section_id": 10,
+      "text": "For this reason, we do not present this data here.",
+      "page_number": null
+    },
+    {
+      "text_id": 195,
+      "paragraph_id": 60,
+      "section_id": 10,
+      "text": "However, a detailed analysis is included in the Supplemental Material.",
+      "page_number": null
+    },
+    {
+      "text_id": 196,
+      "paragraph_id": 61,
+      "section_id": 10,
+      "text": "Participants.",
+      "page_number": null
+    },
+    {
+      "text_id": 197,
+      "paragraph_id": 61,
+      "section_id": 10,
+      "text": "This experiment (N = 2 609 , ) consisted of a preelection round ( June 5-June 8) and a postelection round ( June 17-July 7).",
+      "page_number": null
+    },
+    {
+      "text_id": 198,
+      "paragraph_id": 61,
+      "section_id": 10,
+      "text": "We collected data using the UK based crowdsourcing platform Prolific (https://www.pro lific.ac/).",
+      "page_number": null
+    },
+    {
+      "text_id": 199,
+      "paragraph_id": 62,
+      "section_id": 10,
+      "text": "Apparatus, materials, and procedure.",
+      "page_number": null
+    },
+    {
+      "text_id": 200,
+      "paragraph_id": 62,
+      "section_id": 10,
+      "text": "The same software was used as for Experiment 1.",
+      "page_number": null
+    },
+    {
+      "text_id": 201,
+      "paragraph_id": 62,
+      "section_id": 10,
+      "text": "Materials were adapted from Experiment 1 to ensure cultural appropriateness and consistency with the electoral process.",
+      "page_number": null
+    },
+    {
+      "text_id": 202,
+      "paragraph_id": 62,
+      "section_id": 10,
+      "text": "The following is an example from the she condition:",
+      "page_number": null
+    },
+    {
+      "text_id": 203,
+      "paragraph_id": 63,
+      "section_id": 10,
+      "text": "The general election in June 2017 will determine who will serve as prime minister of the UK during the next electoral term.",
+      "page_number": null
+    },
+    {
+      "text_id": 204,
+      "paragraph_id": 63,
+      "section_id": 10,
+      "text": "The prime minister will be watched closely when she answers questions during Prime Minister's Questions.",
+      "page_number": null
+    },
+    {
+      "text_id": 205,
+      "paragraph_id": 63,
+      "section_id": 10,
+      "text": "Although the prime minister's political power will not be absolute, she will wield considerable influence in the government.",
+      "page_number": null
+    },
+    {
+      "text_id": 206,
+      "paragraph_id": 64,
+      "section_id": 10,
+      "text": "After the election, minor changes were introduced into the sentences to ensure consistency with realworld events.",
+      "page_number": null
+    },
+    {
+      "text_id": 207,
+      "paragraph_id": 64,
+      "section_id": 10,
+      "text": "See the Supplemental Material for the full list of sentences used in each experimental round.",
+      "page_number": null
+    },
+    {
+      "text_id": 208,
+      "paragraph_id": 64,
+      "section_id": 10,
+      "text": "Procedures for the text-completion and self-paced reading tasks were the same as in Experiment 1.",
+      "page_number": null
+    },
+    {
+      "text_id": 209,
+      "paragraph_id": 66,
+      "section_id": 11,
+      "text": "The first round of data collection took place in the days before and during the election ( June 5-June 8, 2017).",
+      "page_number": null
+    },
+    {
+      "text_id": 210,
+      "paragraph_id": 66,
+      "section_id": 11,
+      "text": "Data collection stopped when the polling stations closed and first projections were published.",
+      "page_number": null
+    },
+    {
+      "text_id": 211,
+      "paragraph_id": 66,
+      "section_id": 11,
+      "text": "The second round of data collection took place after the election when it became increasingly likely that Theresa May would be able to form a government ( June 17-July 7, 2017).",
+      "page_number": null
+    },
+    {
+      "text_id": 212,
+      "paragraph_id": 66,
+      "section_id": 11,
+      "text": "Data preprocessing was the same as in Experiment 1.",
+      "page_number": null
+    },
+    {
+      "text_id": 213,
+      "paragraph_id": 68,
+      "section_id": 12,
+      "text": "Overall, the pool of participants was diverse and its composition similar to that tested in Experiment 1.",
+      "page_number": null
+    },
+    {
+      "text_id": 214,
+      "paragraph_id": 68,
+      "section_id": 12,
+      "text": "Full participant demographics are reported in Table S5 in the Supplemental Material.",
+      "page_number": null
+    },
+    {
+      "text_id": 215,
+      "paragraph_id": 69,
+      "section_id": 12,
+      "text": "In the text-completion task (Fig. 5a), they references were by far the most frequent choice before the election at 65%, but they references dropped to 49% after the election.",
+      "page_number": null
+    },
+    {
+      "text_id": 216,
+      "paragraph_id": 69,
+      "section_id": 12,
+      "text": "She references jumped from 25% before the election to 47% immediately after the election.",
+      "page_number": null
+    },
+    {
+      "text_id": 217,
+      "paragraph_id": 69,
+      "section_id": 12,
+      "text": "He pronouns and variants of \"he or she\" were virtually never used either before or after the election.",
+      "page_number": null
+    },
+    {
+      "text_id": 218,
+      "paragraph_id": 69,
+      "section_id": 12,
+      "text": "Compared with the US, UK usage of she and they references was considerably higher and he and variants of \"he or she\" were used much less often (Fig. 6a).",
+      "page_number": null
+    },
+    {
+      "text_id": 219,
+      "paragraph_id": 70,
+      "section_id": 12,
+      "text": "In the self-paced reading task (Fig. 5b), initial she references were read approximately as slowly as in the US (Fig. 6b).",
+      "page_number": null
+    },
+    {
+      "text_id": 220,
+      "paragraph_id": 70,
+      "section_id": 12,
+      "text": "However, he elicited similar slowdowns as she references, β ˆ = -0.02, Δreading time = -51.94 ms, 95% CrI = [-0.06, 0.02], P(β < 0) = .83, in contrast to results in the US Neutral they references were read substantially faster than he and she, β ˆ = -0.06, Δreading time = -159.18 ms, 95% CrI = [-0.11, -0.01], P(β < 0) = .99.",
+      "page_number": null
+    },
+    {
+      "text_id": 221,
+      "paragraph_id": 70,
+      "section_id": 12,
+      "text": "After the election, both she, β ˆ = -0.05, Δreading time = -132.08 ms, 95% CrI = [-0.10, 0.00], P(β < 0) = .97 and they, β ˆ = -0.06, Δreading time = -167.93 ms, 95% CrI = [-0.14, 0.02], P(β < 0) = .95, elicited faster reading times than he references.",
+      "page_number": null
+    },
+    {
+      "text_id": 222,
+      "paragraph_id": 71,
+      "section_id": 12,
+      "text": "Second pronouns (Fig. 7) that mismatched the gender of the first pronoun elicited substantial slowdowns, β ˆ = 0.11, Δreading time = 294.31 ms, 95% CrI = [0.08, 0.14], P(β > 0) > .99.",
+      "page_number": null
+    },
+    {
+      "text_id": 223,
+      "paragraph_id": 71,
+      "section_id": 12,
+      "text": "There was a small tendency toward a she advantage, but this effect was not reliable, β ˆ = -0.02, Δreading time = -61.80 ms, 95% CrI = [-0.07, 0.02], P(β < 0) = .87.",
+      "page_number": null
+    },
+    {
+      "text_id": 224,
+      "paragraph_id": 71,
+      "section_id": 12,
+      "text": "Again, there was no evidence for an interaction of pronoun gender and pronoun-match condition, β ˆ = -0.03, Δreading time = -75.06 ms, 95% CrI = [-0.09, 0.04], P(β < 0) = .81; their effects were roughly additive.",
+      "page_number": null
+    },
+    {
+      "text_id": 225,
+      "paragraph_id": 72,
+      "section_id": 12,
+      "text": "While these results suggest that biases in the UK against she were not so strong as to overwhelm effects of event expectations on linguistic preferences, there are still signs of a she pronoun disadvantage in our UK comprehension data.",
+      "page_number": null
+    },
+    {
+      "text_id": 226,
+      "paragraph_id": 72,
+      "section_id": 12,
+      "text": "In particular, during the preelection round, there was no significant readingtime disadvantage for he relative to she (Fig. 5b), despite the strong dispreference for he in production.",
+      "page_number": null
+    },
+    {
+      "text_id": 227,
+      "paragraph_id": 73,
+      "section_id": 12,
+      "text": "A small comprehension disadvantage for he emerged in the postelection round (Fig. 5b), but at this point, the she-over-he advantage in production was even larger (Fig. 5a).",
+      "page_number": null
+    },
+    {
+      "text_id": 228,
+      "paragraph_id": 75,
+      "section_id": 13,
+      "text": "We found that linguistic preferences can change rapidly as expectations regarding an event change.",
+      "page_number": null
+    },
+    {
+      "text_id": 229,
+      "paragraph_id": 76,
+      "section_id": 13,
+      "text": "In both 0.0 0.2 0.4 0.6 Proportion of Pronouns Produced United States United Kingdom United States United Kingdom 2,300 2,400 2,500 2,600 2,700 2,800 Reading Time (ms) She Pronouns He Pronouns They Pronouns Gender-Matched Forms She Pronouns He Pronouns They Pronouns a b 2,400 2,600 2,800 3,000 Reading Time (ms) S h e P r o n o u n s P r o n o u n M a t c h S h e P r o n o u n s P r o n o u n M i s m a t c h H e P r o n o u n s P r o n o u n M a t c h H e P r o n o u n s P r o n o u n M i s m a t c h T h e y P r o n o u n s P r o n o u n M a t c h countries, the change in event expectation induced by the election itself had a powerful effect on production and comprehension.",
+      "page_number": null
+    },
+    {
+      "text_id": 230,
+      "paragraph_id": 76,
+      "section_id": 13,
+      "text": "Our US data, which tracked expectations and linguistic preferences across several months before the election, gave us further insight into differences in how preferences change in production versus comprehension.",
+      "page_number": null
+    },
+    {
+      "text_id": 231,
+      "paragraph_id": 76,
+      "section_id": 13,
+      "text": "He and they production rose and fell in close synchrony with event expectations during the preelection period, whereas comprehension was comparatively unaffected by changes in expectations.",
+      "page_number": null
+    },
+    {
+      "text_id": 232,
+      "paragraph_id": 76,
+      "section_id": 13,
+      "text": "We speculate that this greater lability in production might reflect stronger pressure for linguistic preferences to stay up to date with event expectations when the linguistic behavior is easily observable, as in language production, than when the behavior is difficult to observe, as in comprehension.",
+      "page_number": null
+    },
+    {
+      "text_id": 233,
+      "paragraph_id": 77,
+      "section_id": 13,
+      "text": "Largely overwhelming these changes in expectations, however, we found a persistent, severe bias against she pronouns relative to expectations about the election outcome.",
+      "page_number": null
+    },
+    {
+      "text_id": 234,
+      "paragraph_id": 77,
+      "section_id": 13,
+      "text": "In the case of the US election, this bias took a particularly clear form.",
+      "page_number": null
+    },
+    {
+      "text_id": 235,
+      "paragraph_id": 77,
+      "section_id": 13,
+      "text": "In production, expectations that the next president would be male largely manifested as he pronoun references, whereas expectations that the next president would be female largely manifested as they references, even when the female candidate was expected to win.",
+      "page_number": null
+    },
+    {
+      "text_id": 236,
+      "paragraph_id": 77,
+      "section_id": 13,
+      "text": "Likewise, she pronouns elicited massive comprehension disruption, even when the female candidate was expected to win.",
+      "page_number": null
+    },
+    {
+      "text_id": 237,
+      "paragraph_id": 77,
+      "section_id": 13,
+      "text": "Strikingly, encountering a she reference to the next president during reading still did not fully eliminate this bias: When participants encountered a second she reference in the next sentence, comprehension was once again disrupted (relative to a second he reference in otherwise matched texts).",
+      "page_number": null
+    },
+    {
+      "text_id": 238,
+      "paragraph_id": 77,
+      "section_id": 13,
+      "text": "In the US, this bias might arise from the president having always been male throughout the country's history.",
+      "page_number": null
+    },
+    {
+      "text_id": 239,
+      "paragraph_id": 77,
+      "section_id": 13,
+      "text": "In both countries, this bias might also reflect broader and more general gender biases in society and language use.",
+      "page_number": null
+    },
+    {
+      "text_id": 240,
+      "paragraph_id": 77,
+      "section_id": 13,
+      "text": "Our results raise the question of whether this and similar biases may themselves contribute to the spread and persistence of stereotypes in society (Atir & Ferguson, 2018).",
+      "page_number": null
+    },
+    {
+      "text_id": 241,
+      "paragraph_id": 78,
+      "section_id": 13,
+      "text": "Our research goes beyond previous work on genderstereotype effects in language processing (Banaji & Hardin, 1996;Duffy & Keir, 2004;Foertsch & Gernsbacher, 1997;Kennison & Trofe, 2003;Osterhout et al., 1997;Sturt, 2003) in several respects.",
+      "page_number": null
+    },
+    {
+      "text_id": 242,
+      "paragraph_id": 78,
+      "section_id": 13,
+      "text": "First, we are not aware of any previous psycholinguistic study using ongoing world events as the manipulation influencing gender expectations.",
+      "page_number": null
+    },
+    {
+      "text_id": 243,
+      "paragraph_id": 78,
+      "section_id": 13,
+      "text": "The success of this natural experiment opens the door to future investigations of how linguistic preferences change in society, analogous to recent studies of other psychological processes, such as social norms and attitudes (Georgeac, Rattan, & Effron, 2018;Tankard & Paluck, 2017).",
+      "page_number": null
+    },
+    {
+      "text_id": 244,
+      "paragraph_id": 78,
+      "section_id": 13,
+      "text": "Second, our observed effect sizes (e.g., a 300-ms reading-time penalty in our US comprehension study) are far larger than those seen in previous research on gender-stereotype effects in language processing (where reading-time penalties typically ranged from 25-100 ms; Duffy & Keir, 2004;Kennison & Trofe, 2003;Sturt, 2003).",
+      "page_number": null
+    },
+    {
+      "text_id": 245,
+      "paragraph_id": 78,
+      "section_id": 13,
+      "text": "Our larger effect sizes may reflect the attention commanded by the experimental topic matter for our participants; if this speculation is correct, it would suggest that the effect sizes observed in a wide range of psycholinguistic studies might be substantially lower than the effect sizes that would hold in more ecologically natural contexts.",
+      "page_number": null
+    },
+    {
+      "text_id": 246,
+      "paragraph_id": 79,
+      "section_id": 13,
+      "text": "Third, because our study involved expectations and linguistic preferences regarding specific, high-profile real-world events involving famous people, we were able to measure expectations regarding this event directly, allowing us to test-and ultimately reject-the hypothesis that gender-bias effects on language processing are fully mediated by event expectations.",
+      "page_number": null
+    },
+    {
+      "text_id": 247,
+      "paragraph_id": 79,
+      "section_id": 13,
+      "text": "We observed a strong bias against she pronouns even among female Democrats during the US electoral campaign (see Fig.",
+      "page_number": null
+    },
+    {
+      "text_id": 248,
+      "paragraph_id": 79,
+      "section_id": 13,
+      "text": "S25), a demographic group that expected the female candidate to win throughout our study and that a priori might be least expected to show such a bias.",
+      "page_number": null
+    },
+    {
+      "text_id": 249,
+      "paragraph_id": 79,
+      "section_id": 13,
+      "text": "These linguistic biases are all the more striking given the widespread knowledge in the US population that the female candidate, Hillary Clinton, had held some of the most important political posts in the country (e.g., Senator from 2001-2009, Secretary of State from 2009-2013), whereas her general-election opponent, Donald Trump, had never held political office.",
+      "page_number": null
+    },
+    {
+      "text_id": 250,
+      "paragraph_id": 80,
+      "section_id": 13,
+      "text": "It is reasonable to ask whether the disadvantage for she pronouns observed in our data might reflect not a biased mapping but rather a default strategy possibly employed by a subset of our experimental participants: When the gender of an event participant is unknown, use he to refer to them (generic he).",
+      "page_number": null
+    },
+    {
+      "text_id": 251,
+      "paragraph_id": 80,
+      "section_id": 13,
+      "text": "It is difficult to ascertain exactly how categorically this possibility can be ruled out; we address the matter at length in the Supplemental Material.",
+      "page_number": null
+    },
+    {
+      "text_id": 252,
+      "paragraph_id": 80,
+      "section_id": 13,
+      "text": "But there are two simple reasons why we believe a default he strategy is unlikely as a complete explanation of our data.",
+      "page_number": null
+    },
+    {
+      "text_id": 253,
+      "paragraph_id": 80,
+      "section_id": 13,
+      "text": "First, in our UK experiment, he was almost never produced either before or after the election (Fig. 5a).",
+      "page_number": null
+    },
+    {
+      "text_id": 254,
+      "paragraph_id": 80,
+      "section_id": 13,
+      "text": "Second, during the US preelectoral period, as expectations strengthened that the female candidate would win and he production rates dropped, the production rates that rose were not she but rather they forms, in all demographic groups, including those in which the female candidates was expected to win throughout our study.",
+      "page_number": null
+    },
+    {
+      "text_id": 255,
+      "paragraph_id": 80,
+      "section_id": 13,
+      "text": "That is, the bias we observe in our data is less well characterized as a bias for he, as a default strategy would predict, and better characterized as a bias against she.",
+      "page_number": null
+    },
+    {
+      "text_id": 256,
+      "paragraph_id": 81,
+      "section_id": 13,
+      "text": "Further clarifying the nature and mechanisms of these implicit linguistic biases is a matter for future research.",
+      "page_number": null
+    },
+    {
+      "text_id": 257,
+      "paragraph_id": 81,
+      "section_id": 13,
+      "text": "One possible mechanism could be that phrases such as \"US president\" prime male-oriented language more than female-oriented language because of the co-occurrence of male-oriented language and language related to US presidents in past experience.",
+      "page_number": null
+    },
+    {
+      "text_id": 258,
+      "paragraph_id": 81,
+      "section_id": 13,
+      "text": "If true, these biases would follow the template definition of implicit biases, as proposed in implicit-cognition theory (Greenwald & Banaji, 1995).",
+      "page_number": null
+    },
+    {
+      "text_id": 259,
+      "paragraph_id": 81,
+      "section_id": 13,
+      "text": "A consequence would be that even when our beliefs about the world are updated quickly, our linguistic preferences may be guided by past experience and thus take much longer to adapt.",
+      "page_number": null
+    },
+    {
+      "text_id": 260,
+      "paragraph_id": 82,
+      "section_id": 13,
+      "text": "Pronoun preferences in English are a topic of perennial interest, ranging from controversy over singular they (Baron, 1981;Foertsch & Gernsbacher, 1997;Freeman, 2017) to the more recent rising awareness of nonbinary gender identity and individuals' preferred pronouns (Chak, 2015).",
+      "page_number": null
+    },
+    {
+      "text_id": 261,
+      "paragraph_id": 82,
+      "section_id": 13,
+      "text": "Our data suggest that singular they is unremarkable and even preferred by many of our participants, especially younger ones (see Fig.",
+      "page_number": null
+    },
+    {
+      "text_id": 262,
+      "paragraph_id": 82,
+      "section_id": 13,
+      "text": "S28).",
+      "page_number": null
+    },
+    {
+      "text_id": 263,
+      "paragraph_id": 82,
+      "section_id": 13,
+      "text": "But this article reports a previously undocumented powerful bias affecting linguistic behavior: When people refer to the next head of government, even when the set of candidates has been narrowed down to two, they disprefer she references relative to expectations regarding the referent's gender.",
+      "page_number": null
+    },
+    {
+      "text_id": 264,
+      "paragraph_id": 82,
+      "section_id": 13,
+      "text": "More broadly, our results demonstrate the potential of psycholinguistic methods for investigations of how linguistic behavior evolves over time and for revealing and deepening our understanding of implicit cognition.",
+      "page_number": null
+    },
+    {
+      "text_id": 265,
+      "paragraph_id": 84,
+      "section_id": 14,
+      "text": "Rebecca Treiman served as action editor for this article.",
+      "page_number": null
+    },
+    {
+      "text_id": 266,
+      "paragraph_id": 86,
+      "section_id": 15,
+      "text": "We are grateful to Veronica Boyce, Evelina Fedorenko, Edward Gibson, Nancy Kanwisher, Josh McDermott, Laura Niemi, Rebecca Saxe, Laura Schulz, and Stephanie Smith for comments on previous versions of the manuscript.",
+      "page_number": null
+    },
+    {
+      "text_id": 267,
+      "paragraph_id": 86,
+      "section_id": 15,
+      "text": "We are also grateful to Craig Thorburn, Emily Troscianko, Susan Blackmore, and Nicholas Cooper for their advice in adapting our materials for the United Kingdom election.",
+      "page_number": null
+    },
+    {
+      "text_id": 268,
+      "paragraph_id": 88,
+      "section_id": 16,
+      "text": "Funding T von der Malsburg was funded through a Feodor Lynen Research Fellowship by the Alexander von Humboldt Foundation and through National Institutes of Health Grant No.",
+      "page_number": null
+    },
+    {
+      "text_id": 269,
+      "paragraph_id": 88,
+      "section_id": 16,
+      "text": "HD065829, awarded to R P Levy and K Rayner.",
+      "page_number": null
+    },
+    {
+      "text_id": 270,
+      "paragraph_id": 88,
+      "section_id": 16,
+      "text": "R P Levy gratefully acknowledges support from an Alfred P Sloan Fellowship.",
+      "page_number": null
+    },
+    {
+      "text_id": 271,
+      "paragraph_id": 90,
+      "section_id": 17,
+      "text": "The author(s) declared that there were no conflicts of interest with respect to the authorship or the publication of this article.",
+      "page_number": null
+    },
+    {
+      "text_id": 272,
+      "paragraph_id": 92,
+      "section_id": 18,
+      "text": "T Poppels and T von der Malsburg developed the initial idea for this study and ran the two pilot experiments.",
+      "page_number": null
+    },
+    {
+      "text_id": 273,
+      "paragraph_id": 92,
+      "section_id": 18,
+      "text": "T von der Malsburg, T Poppels, and R P Levy jointly designed the study.",
+      "page_number": null
+    },
+    {
+      "text_id": 274,
+      "paragraph_id": 92,
+      "section_id": 18,
+      "text": "Data were collected by T von der Malsburg and T Poppels.",
+      "page_number": null
+    },
+    {
+      "text_id": 275,
+      "paragraph_id": 92,
+      "section_id": 18,
+      "text": "T von der Malsburg analyzed the data.",
+      "page_number": null
+    },
+    {
+      "text_id": 276,
+      "paragraph_id": 92,
+      "section_id": 18,
+      "text": "T von der Malsburg and R P Levy wrote the article and Supplemental Material with help from T Poppels.",
+      "page_number": null
+    },
+    {
+      "text_id": 277,
+      "paragraph_id": 94,
+      "section_id": 19,
+      "text": "Additional supporting information can be found at http:// journals.sagepub.com/doi/suppl/10.1177/0956797619890619",
+      "page_number": null
+    },
+    {
+      "text_id": 278,
+      "paragraph_id": 96,
+      "section_id": 20,
+      "text": "All data, analysis scripts, and study materials have been made publicly available via the Open Science Framework and can be accessed at https://osf.io/gx5tr/.",
+      "page_number": null
+    },
+    {
+      "text_id": 279,
+      "paragraph_id": 96,
+      "section_id": 20,
+      "text": "The design and analysis plans for the experiments were not preregistered.",
+      "page_number": null
+    },
+    {
+      "text_id": 280,
+      "paragraph_id": 96,
+      "section_id": 20,
+      "text": "The complete Open Practices Disclosure for this article can be found at http://journals.sagepub.com/doi/suppl/10.1177/09567 97619890619.",
+      "page_number": null
+    },
+    {
+      "text_id": 281,
+      "paragraph_id": 96,
+      "section_id": 20,
+      "text": "This article has received badges for Open Data and Open Materials.",
+      "page_number": null
+    },
+    {
+      "text_id": 282,
+      "paragraph_id": 96,
+      "section_id": 20,
+      "text": "More information about the Open Practices badges can be found at http://www.psychological science.org/publications/badges.",
+      "page_number": null
+    },
+    {
+      "text_id": 283,
+      "paragraph_id": 96,
+      "section_id": 20,
+      "text": "Note 1.",
+      "page_number": null
+    },
+    {
+      "text_id": 284,
+      "paragraph_id": 96,
+      "section_id": 20,
+      "text": "Further, in our UK general election study (Experiment 2), where a female candidate was expected to win, she was used far more often than he, which is inconsistent with the idea that he is a generic default in English.",
+      "page_number": null
+    },
+    {
+      "text_id": 285,
+      "paragraph_id": 97,
+      "section_id": 21,
+      "text": "u b l i c a n C o n v e n t i o n D e m o c r a t i c C o n v e n t i o n A f t e r m a t h o f K h a n I n c i d e n t F i r s t D e b a t e S e c o n d D e b a t e T h i r d D e b a t e E l e c t i o n I n a u g u r a t i o n",
+      "page_number": null
+    },
+    {
+      "text_id": 286,
+      "paragraph_id": 98,
+      "section_id": 22,
+      "text": "Fig.2.",
+      "page_number": null
+    },
+    {
+      "text_id": 287,
+      "paragraph_id": 98,
+      "section_id": 22,
+      "text": "Results from Experiment 1 from before to after the election: (a) implicit beliefs that the next president would be female, (b) proportion of each type of pronoun produced to refer to the next president, and (c) summed reading time (geometric mean) for the first pronoun and the four subsequent words, separately for each type of pronoun read.",
+      "page_number": null
+    },
+    {
+      "text_id": 288,
+      "paragraph_id": 98,
+      "section_id": 22,
+      "text": "Gender-hedged forms include \"he or she,\" \"he/she,\" and similar variants.",
+      "page_number": null
+    },
+    {
+      "text_id": 289,
+      "paragraph_id": 98,
+      "section_id": 22,
+      "text": "Error bars show 95% confidence intervals.",
+      "page_number": null
+    },
+    {
+      "text_id": 290,
+      "paragraph_id": 98,
+      "section_id": 22,
+      "text": "In (a), the dotted horizontal line indicates equally balanced expectations that the next president would be female or male.",
+      "page_number": null
+    },
+    {
+      "text_id": 291,
+      "paragraph_id": 98,
+      "section_id": 22,
+      "text": "In all graphs, the gray bands indicate data-collection periods, and the red lines indicate the dates of the election (dashed line) and inauguration (solid line).",
+      "page_number": null
+    },
+    {
+      "text_id": 292,
+      "paragraph_id": 99,
+      "section_id": 23,
+      "text": "Fig 3 Results from Experiment 1: pronoun processing as a function of implicit beliefs about the future president's gender.",
+      "page_number": null
+    },
+    {
+      "text_id": 293,
+      "paragraph_id": 99,
+      "section_id": 23,
+      "text": "The proportion of pronoun references produced (a) is shown for the each of the four pronoun types.",
+      "page_number": null
+    },
+    {
+      "text_id": 294,
+      "paragraph_id": 99,
+      "section_id": 23,
+      "text": "Summed reading time for the first pronoun and the four subsequent words (b) is shown for each of the three pronoun types used in the stimulus sentences.",
+      "page_number": null
+    },
+    {
+      "text_id": 295,
+      "paragraph_id": 99,
+      "section_id": 23,
+      "text": "Each data point represents a by-condition mean for one of the 10 rounds of data collected before the election.",
+      "page_number": null
+    },
+    {
+      "text_id": 296,
+      "paragraph_id": 99,
+      "section_id": 23,
+      "text": "Gender-hedged forms include \"he or she,\" \"he/she,\" and similar variants.",
+      "page_number": null
+    },
+    {
+      "text_id": 297,
+      "paragraph_id": 99,
+      "section_id": 23,
+      "text": "Slopes indicate best-fitting regressions.",
+      "page_number": null
+    },
+    {
+      "text_id": 298,
+      "paragraph_id": 100,
+      "section_id": 24,
+      "text": "Fig 4 Results from Experiment 1: summed reading time for the second pronoun and the four subsequent words, separately for each pronoun type and pronoun-match condition.",
+      "page_number": null
+    },
+    {
+      "text_id": 299,
+      "paragraph_id": 100,
+      "section_id": 24,
+      "text": "Results shown are from only the 10 rounds of data collected before the election.",
+      "page_number": null
+    },
+    {
+      "text_id": 300,
+      "paragraph_id": 100,
+      "section_id": 24,
+      "text": "Means are geometric, and error bars indicate 95% confidence intervals.",
+      "page_number": null
+    },
+    {
+      "text_id": 301,
+      "paragraph_id": 101,
+      "section_id": 25,
+      "text": "Fig 5 Results from Experiment 2: (a) rate of pronouns produced and (b) summed reading time before and after the United Kingdom general election.",
+      "page_number": null
+    },
+    {
+      "text_id": 302,
+      "paragraph_id": 101,
+      "section_id": 25,
+      "text": "Results are shown separately in (a) for each of the four pronoun types produced and separately in (b) for each of the three pronoun types used in the stimulus sentences.",
+      "page_number": null
+    },
+    {
+      "text_id": 303,
+      "paragraph_id": 101,
+      "section_id": 25,
+      "text": "Reading times were summed for the first pronoun and the four subsequent words.",
+      "page_number": null
+    },
+    {
+      "text_id": 304,
+      "paragraph_id": 101,
+      "section_id": 25,
+      "text": "Gender-hedged forms include \"he or she,\" \"he/she,\" and similar variants.",
+      "page_number": null
+    },
+    {
+      "text_id": 305,
+      "paragraph_id": 101,
+      "section_id": 25,
+      "text": "Error bars indicate 95% confidence intervals.",
+      "page_number": null
+    },
+    {
+      "text_id": 306,
+      "paragraph_id": 102,
+      "section_id": 26,
+      "text": "Fig 6 Comparison of pronoun production and comprehension in Experiment 1 (United States election) and Experiment 2 (United Kingdom election): (a) rate of each type of pronoun produced and (b) summed reading time for the first pronoun and the four subsequent words, separately for each type of pronoun read.",
+      "page_number": null
+    },
+    {
+      "text_id": 307,
+      "paragraph_id": 102,
+      "section_id": 26,
+      "text": "Gender-hedged forms include \"he or she,\" \"he/she,\" and similar variants.",
+      "page_number": null
+    },
+    {
+      "text_id": 308,
+      "paragraph_id": 102,
+      "section_id": 26,
+      "text": "Data are from only the preelection periods.",
+      "page_number": null
+    },
+    {
+      "text_id": 309,
+      "paragraph_id": 102,
+      "section_id": 26,
+      "text": "Error bars indicate 95% confidence intervals.",
+      "page_number": null
+    },
+    {
+      "text_id": 310,
+      "paragraph_id": 103,
+      "section_id": 27,
+      "text": "Fig 7 Results from Experiment 2: summed reading time for the second pronoun and the four subsequent words, separately for each pronoun type and pronoun-match condition.",
+      "page_number": null
+    },
+    {
+      "text_id": 311,
+      "paragraph_id": 103,
+      "section_id": 27,
+      "text": "Data are from before and after the election.",
+      "page_number": null
+    },
+    {
+      "text_id": 312,
+      "paragraph_id": 103,
+      "section_id": 27,
+      "text": "Means are geometric, and error bars indicate 95% confidence intervals.",
+      "page_number": null
+    },
+    {
+      "text_id": 313,
+      "paragraph_id": 104,
+      "section_id": 28,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 314,
+      "paragraph_id": 105,
+      "section_id": 28,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 315,
+      "paragraph_id": 106,
+      "section_id": 28,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 316,
+      "paragraph_id": 107,
+      "section_id": 28,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 317,
+      "paragraph_id": 108,
+      "section_id": 28,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 318,
+      "paragraph_id": 109,
+      "section_id": 28,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 319,
+      "paragraph_id": 110,
+      "section_id": 28,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 320,
+      "paragraph_id": 111,
+      "section_id": 28,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 321,
+      "paragraph_id": 112,
+      "section_id": 28,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 322,
+      "paragraph_id": 113,
+      "section_id": 28,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 323,
+      "paragraph_id": 114,
+      "section_id": 28,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 324,
+      "paragraph_id": 115,
+      "section_id": 28,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 325,
+      "paragraph_id": 116,
+      "section_id": 28,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 326,
+      "paragraph_id": 117,
+      "section_id": 28,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 327,
+      "paragraph_id": 118,
+      "section_id": 28,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 328,
+      "paragraph_id": 119,
+      "section_id": 28,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 329,
+      "paragraph_id": 120,
+      "section_id": 28,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 330,
+      "paragraph_id": 121,
+      "section_id": 28,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 331,
+      "paragraph_id": 122,
+      "section_id": 28,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 332,
+      "paragraph_id": 123,
+      "section_id": 28,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 333,
+      "paragraph_id": 124,
+      "section_id": 28,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 334,
+      "paragraph_id": 125,
+      "section_id": 28,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 335,
+      "paragraph_id": 126,
+      "section_id": 28,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 336,
+      "paragraph_id": 127,
+      "section_id": 28,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 337,
+      "paragraph_id": 128,
+      "section_id": 28,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 338,
+      "paragraph_id": 129,
+      "section_id": 28,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 339,
+      "paragraph_id": 130,
+      "section_id": 28,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 340,
+      "paragraph_id": 131,
+      "section_id": 28,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 341,
+      "paragraph_id": 132,
+      "section_id": 28,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 342,
+      "paragraph_id": 133,
+      "section_id": 28,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 343,
+      "paragraph_id": 134,
+      "section_id": 28,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 344,
+      "paragraph_id": 135,
+      "section_id": 28,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 345,
+      "paragraph_id": 136,
+      "section_id": 28,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 346,
+      "paragraph_id": 137,
+      "section_id": 28,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 347,
+      "paragraph_id": 138,
+      "section_id": 28,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 348,
+      "paragraph_id": 139,
+      "section_id": 28,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 349,
+      "paragraph_id": 140,
+      "section_id": 28,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 350,
+      "paragraph_id": 141,
+      "section_id": 28,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 351,
+      "paragraph_id": 142,
+      "section_id": 28,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 352,
+      "paragraph_id": 143,
+      "section_id": 28,
+      "text": "",
+      "page_number": null
+    }
+  ],
+  "section": [
+    {
+      "section_id": 0,
+      "header": "Abstract",
+      "parent_section_id": null,
+      "section_type": "abstract",
+      "classification_score": null
+    },
+    {
+      "section_id": 1,
+      "header": "[div-01]",
+      "parent_section_id": null,
+      "section_type": "intro",
+      "classification_score": null
+    },
+    {
+      "section_id": 2,
+      "header": "Experiment 1: The 2016 U.S. Presidential Election Campaign",
+      "parent_section_id": null,
+      "section_type": "intro",
+      "classification_score": null
+    },
+    {
+      "section_id": 3,
+      "header": "Method",
+      "parent_section_id": null,
+      "section_type": "method",
+      "classification_score": null
+    },
+    {
+      "section_id": 4,
+      "header": "Materials.",
+      "parent_section_id": null,
+      "section_type": "method",
+      "classification_score": null
+    },
+    {
+      "section_id": 5,
+      "header": "a b",
+      "parent_section_id": null,
+      "section_type": "method",
+      "classification_score": null
+    },
+    {
+      "section_id": 6,
+      "header": "Data collection.",
+      "parent_section_id": null,
+      "section_type": "method",
+      "classification_score": null
+    },
+    {
+      "section_id": 7,
+      "header": "Data preprocessing.",
+      "parent_section_id": null,
+      "section_type": "method",
+      "classification_score": null
+    },
+    {
+      "section_id": 8,
+      "header": "Data analysis.",
+      "parent_section_id": null,
+      "section_type": "method",
+      "classification_score": null
+    },
+    {
+      "section_id": 9,
+      "header": "Results",
+      "parent_section_id": null,
+      "section_type": "results",
+      "classification_score": null
+    },
+    {
+      "section_id": 10,
+      "header": "Method",
+      "parent_section_id": null,
+      "section_type": "method",
+      "classification_score": null
+    },
+    {
+      "section_id": 11,
+      "header": "Data collection and preprocessing.",
+      "parent_section_id": null,
+      "section_type": "method",
+      "classification_score": null
+    },
+    {
+      "section_id": 12,
+      "header": "Results",
+      "parent_section_id": null,
+      "section_type": "results",
+      "classification_score": null
+    },
+    {
+      "section_id": 13,
+      "header": "Discussion",
+      "parent_section_id": null,
+      "section_type": "discussion",
+      "classification_score": null
+    },
+    {
+      "section_id": 14,
+      "header": "Action Editor",
+      "parent_section_id": null,
+      "section_type": "discussion",
+      "classification_score": null
+    },
+    {
+      "section_id": 15,
+      "header": "Acknowledgments",
+      "parent_section_id": null,
+      "section_type": "acknowledgement",
+      "classification_score": null
+    },
+    {
+      "section_id": 16,
+      "header": "",
+      "parent_section_id": null,
+      "section_type": "funding",
+      "classification_score": null
+    },
+    {
+      "section_id": 17,
+      "header": "Declaration of Conflicting Interests",
+      "parent_section_id": null,
+      "section_type": "conflict",
+      "classification_score": null
+    },
+    {
+      "section_id": 18,
+      "header": "Author Contributions",
+      "parent_section_id": null,
+      "section_type": "contribution",
+      "classification_score": null
+    },
+    {
+      "section_id": 19,
+      "header": "Supplemental Material",
+      "parent_section_id": null,
+      "section_type": "annex",
+      "classification_score": null
+    },
+    {
+      "section_id": 20,
+      "header": "Open Practices",
+      "parent_section_id": null,
+      "section_type": "annex",
+      "classification_score": null
+    },
+    {
+      "section_id": 21,
+      "header": "",
+      "parent_section_id": null,
+      "section_type": "figure",
+      "classification_score": null
+    },
+    {
+      "section_id": 22,
+      "header": "Fig 2",
+      "parent_section_id": null,
+      "section_type": "figure",
+      "classification_score": null
+    },
+    {
+      "section_id": 23,
+      "header": "Fig 3",
+      "parent_section_id": null,
+      "section_type": "figure",
+      "classification_score": null
+    },
+    {
+      "section_id": 24,
+      "header": "",
+      "parent_section_id": null,
+      "section_type": "figure",
+      "classification_score": null
+    },
+    {
+      "section_id": 25,
+      "header": "Fig 5",
+      "parent_section_id": null,
+      "section_type": "figure",
+      "classification_score": null
+    },
+    {
+      "section_id": 26,
+      "header": "Fig 6",
+      "parent_section_id": null,
+      "section_type": "figure",
+      "classification_score": null
+    },
+    {
+      "section_id": 27,
+      "header": "Fig 7",
+      "parent_section_id": null,
+      "section_type": "figure",
+      "classification_score": null
+    },
+    {
+      "section_id": 28,
+      "header": "References",
+      "parent_section_id": null,
+      "section_type": "references",
+      "classification_score": null
+    }
+  ],
+  "url": [
+    {
+      "href": "qualtrics.com",
+      "link_text": null,
+      "text_id": 43
+    },
+    {
+      "href": "https://github.com/addrummond/ibex",
+      "link_text": null,
+      "text_id": 44
+    },
+    {
+      "href": "https://www.pro",
+      "link_text": null,
+      "text_id": 198
+    },
+    {
+      "href": "lific.ac",
+      "link_text": null,
+      "text_id": 198
+    },
+    {
+      "href": "journals.sagepub.com/doi/suppl/10.1177/0956797619890619",
+      "link_text": null,
+      "text_id": 277
+    },
+    {
+      "href": "https://osf.io/gx5tr",
+      "link_text": null,
+      "text_id": 278
+    },
+    {
+      "href": "http://journals.sagepub.com/doi/suppl/10.1177/09567",
+      "link_text": null,
+      "text_id": 280
+    },
+    {
+      "href": "science.org/publications/badges",
+      "link_text": null,
+      "text_id": 282
+    }
+  ],
+  "bib": [
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "Interaction with context during human sentence processing",
+      "authors": "Altmann, G; Steedman, M",
+      "editors": "",
+      "publisher": "",
+      "year": 1988,
+      "volume": "30",
+      "issue": "",
+      "first_page": "191",
+      "last_page": "238",
+      "container": "Cognition",
+      "bib_id": 0,
+      "year_suffix": "",
+      "text_id": 313
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "How gender determines the way we speak about professionals",
+      "authors": "Atir, S; Ferguson, M J",
+      "editors": "",
+      "publisher": "",
+      "year": 2018,
+      "volume": "115",
+      "issue": "",
+      "first_page": "7278",
+      "last_page": "7283",
+      "container": "Proceedings of the National Academy of Sciences",
+      "bib_id": 1,
+      "year_suffix": "",
+      "text_id": 314
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "Automatic stereotyping",
+      "authors": "Banaji, M R; Hardin, C D",
+      "editors": "",
+      "publisher": "",
+      "year": 1996,
+      "volume": "7",
+      "issue": "",
+      "first_page": "136",
+      "last_page": "141",
+      "container": "Psychological Science",
+      "bib_id": 2,
+      "year_suffix": "",
+      "text_id": 315
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "The epicene pronoun: The word that failed",
+      "authors": "Baron, D E",
+      "editors": "",
+      "publisher": "",
+      "year": 1981,
+      "volume": "56",
+      "issue": "",
+      "first_page": "83",
+      "last_page": "97",
+      "container": "American Speech",
+      "bib_id": 3,
+      "year_suffix": "",
+      "text_id": 316
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "Random effects structure for confirmatory hypothesis testing: Keep it maximal",
+      "authors": "Barr, D J; Levy, R; Scheepers, C; Tily, H J",
+      "editors": "",
+      "publisher": "",
+      "year": 2013,
+      "volume": "68",
+      "issue": "",
+      "first_page": "255",
+      "last_page": "278",
+      "container": "Journal of Memory and Language",
+      "bib_id": 4,
+      "year_suffix": "",
+      "text_id": 317
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "Effects of event knowledge in processing verbal arguments",
+      "authors": "Bicknell, K; Elman, J L; Hare, M; Mcrae, K; Kutas, M",
+      "editors": "",
+      "publisher": "",
+      "year": 2010,
+      "volume": "63",
+      "issue": "",
+      "first_page": "489",
+      "last_page": "505",
+      "container": "Journal of Memory and Language",
+      "bib_id": 5,
+      "year_suffix": "",
+      "text_id": 318
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "",
+      "authors": "",
+      "editors": "",
+      "publisher": "",
+      "year": 2018,
+      "volume": "",
+      "issue": "",
+      "first_page": null,
+      "last_page": null,
+      "container": "",
+      "bib_id": 6,
+      "year_suffix": "",
+      "text_id": 319
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "Semantics derived automatically from language corpora contain human-like biases",
+      "authors": "Caliskan, A; Bryson, J J; Narayanan, A",
+      "editors": "",
+      "publisher": "",
+      "year": 2017,
+      "volume": "356",
+      "issue": "",
+      "first_page": "183",
+      "last_page": "186",
+      "container": "Science",
+      "bib_id": 7,
+      "year_suffix": "",
+      "text_id": 320
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.18637/jss.v076.i01",
+      "title": "Stan: A probabilistic programming language",
+      "authors": "Carpenter, B; Gelman, A; Hoffman, M D; Lee, D; Goodrich, B; Betancourt, M; Riddell, . .; , A",
+      "editors": "",
+      "publisher": "",
+      "year": 2017,
+      "volume": "76",
+      "issue": "1",
+      "first_page": null,
+      "last_page": null,
+      "container": "Journal of Statistical Software",
+      "bib_id": 8,
+      "year_suffix": "",
+      "text_id": 321
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1177/2158244017712774",
+      "title": "Intertemporal differences among MTurk workers: Time-based sample variations and implications for online data collection",
+      "authors": "Casey, L S; Chandler, J; Levine, A S; Proctor, A; Strolovitch, D Z",
+      "editors": "",
+      "publisher": "",
+      "year": 2017,
+      "volume": "7",
+      "issue": "2",
+      "first_page": null,
+      "last_page": null,
+      "container": "SAGE Open",
+      "bib_id": 9,
+      "year_suffix": "",
+      "text_id": 322
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "",
+      "authors": "Chak, A",
+      "editors": "",
+      "publisher": "",
+      "year": 2015,
+      "volume": "",
+      "issue": "",
+      "first_page": null,
+      "last_page": null,
+      "container": "",
+      "bib_id": 10,
+      "year_suffix": "",
+      "text_id": 323
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "Violating stereotypes: Eye movements and comprehension processes when text conflicts with world knowledge",
+      "authors": "Duffy, S A; Keir, J A",
+      "editors": "",
+      "publisher": "",
+      "year": 2004,
+      "volume": "32",
+      "issue": "",
+      "first_page": "551",
+      "last_page": "559",
+      "container": "Memory & Cognition",
+      "bib_id": 11,
+      "year_suffix": "",
+      "text_id": 324
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "In search of gender neutrality: Is singular they a cognitively efficient substitute for generic he?",
+      "authors": "Foertsch, J; Gernsbacher, M A",
+      "editors": "",
+      "publisher": "",
+      "year": 1997,
+      "volume": "8",
+      "issue": "",
+      "first_page": "106",
+      "last_page": "111",
+      "container": "Psychological Science",
+      "bib_id": 12,
+      "year_suffix": "",
+      "text_id": 325
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "What does the crowd believe? A hierarchical approach to estimating subjective beliefs from empirical data",
+      "authors": "Franke, M; Dablander, F; Schoeller, A; Bennett, E; Degen, J; Tessler, M H; Goodman, . .; , N D",
+      "editors": "Papafragou, A; Grodner, D; Mirman, D; Trueswell, J",
+      "publisher": "Cognitive Science Society",
+      "year": 2016,
+      "volume": "",
+      "issue": "",
+      "first_page": "2669",
+      "last_page": "2674",
+      "container": "",
+      "bib_id": 13,
+      "year_suffix": "",
+      "text_id": 326
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "A letter from an Ivy League admissions dean",
+      "authors": "Freeman, J",
+      "editors": "",
+      "publisher": "",
+      "year": 2017,
+      "volume": "",
+      "issue": "",
+      "first_page": null,
+      "last_page": null,
+      "container": "The Wall Street Journal",
+      "bib_id": 14,
+      "year_suffix": "",
+      "text_id": 327
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.3389/fpsyg.2015.01023",
+      "title": "True gender ratios and stereotype rating norms",
+      "authors": "Garnham, A; Doehren, S; Gygax, P",
+      "editors": "",
+      "publisher": "",
+      "year": 2015,
+      "volume": "6",
+      "issue": "",
+      "first_page": "1023",
+      "last_page": null,
+      "container": "Frontiers in Psychology",
+      "bib_id": 15,
+      "year_suffix": "",
+      "text_id": 328
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "An exploratory investigation of Americans' expression of gender bias before and after the 2016 presidential election",
+      "authors": "Georgeac, O A M; Rattan, A; Effron, D A",
+      "editors": "",
+      "publisher": "",
+      "year": 2018,
+      "volume": "10",
+      "issue": "",
+      "first_page": "632",
+      "last_page": "642",
+      "container": "Social Psychological and Personality Science",
+      "bib_id": 16,
+      "year_suffix": "",
+      "text_id": 329
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "Implicit social cognition: Attitudes, self-esteem, and stereotypes",
+      "authors": "Greenwald, A G; Banaji, M R",
+      "editors": "",
+      "publisher": "",
+      "year": 1995,
+      "volume": "102",
+      "issue": "",
+      "first_page": "4",
+      "last_page": "27",
+      "container": "Psychological Review",
+      "bib_id": 17,
+      "year_suffix": "",
+      "text_id": 330
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "Implicit bias: Scientific foundations",
+      "authors": "Greenwald, A G; Krieger, L H",
+      "editors": "",
+      "publisher": "",
+      "year": 2006,
+      "volume": "94",
+      "issue": "",
+      "first_page": "945",
+      "last_page": "967",
+      "container": "California Law Review",
+      "bib_id": 18,
+      "year_suffix": "",
+      "text_id": 331
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "Measuring individual differences in implicit cognition: The Implicit Association Test",
+      "authors": "Greenwald, A G; Mcghee, D E; Schwartz, J L",
+      "editors": "",
+      "publisher": "",
+      "year": 1998,
+      "volume": "74",
+      "issue": "",
+      "first_page": "1464",
+      "last_page": "1480",
+      "container": "Journal of Personality and Social Psychology",
+      "bib_id": 19,
+      "year_suffix": "",
+      "text_id": 332
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "",
+      "authors": "He, W; Goodkind, D; Kowal, P",
+      "editors": "",
+      "publisher": "U.S. Government Publishing Office",
+      "year": 2016,
+      "volume": "",
+      "issue": "",
+      "first_page": null,
+      "last_page": null,
+      "container": "",
+      "bib_id": 20,
+      "year_suffix": "",
+      "text_id": 333
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "",
+      "authors": "Howden, L M; Meyer, J A",
+      "editors": "",
+      "publisher": "U.S. Government Publishing Office",
+      "year": 2011,
+      "volume": "",
+      "issue": "",
+      "first_page": null,
+      "last_page": null,
+      "container": "",
+      "bib_id": 21,
+      "year_suffix": "",
+      "text_id": 334
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "Definition and assessment of accuracy in social stereotypes",
+      "authors": "Judd, C M; Park, B",
+      "editors": "",
+      "publisher": "",
+      "year": 1993,
+      "volume": "100",
+      "issue": "",
+      "first_page": "109",
+      "last_page": "128",
+      "container": "Psychological Review",
+      "bib_id": 22,
+      "year_suffix": "",
+      "text_id": 335
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "Comprehending pronouns: A role for word-specific gender stereotype information",
+      "authors": "Kennison, S M; Trofe, J L",
+      "editors": "",
+      "publisher": "",
+      "year": 2003,
+      "volume": "32",
+      "issue": "",
+      "first_page": "355",
+      "last_page": "378",
+      "container": "Journal of Psycholinguistic Research",
+      "bib_id": 23,
+      "year_suffix": "",
+      "text_id": 336
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "What do we mean by prediction in language comprehension? Language",
+      "authors": "Kuperberg, G R; Jaeger, T F",
+      "editors": "",
+      "publisher": "",
+      "year": 2016,
+      "volume": "31",
+      "issue": "",
+      "first_page": "32",
+      "last_page": "59",
+      "container": "Cognition and Neuroscience",
+      "bib_id": 24,
+      "year_suffix": "",
+      "text_id": 337
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1177/2158244016636433",
+      "title": "The demographic and political composition of Mechanical Turk samples",
+      "authors": "Levay, K E; Freese, J; Druckman, J N",
+      "editors": "",
+      "publisher": "",
+      "year": 2016,
+      "volume": "6",
+      "issue": "1",
+      "first_page": null,
+      "last_page": null,
+      "container": "SAGE Open",
+      "bib_id": 25,
+      "year_suffix": "",
+      "text_id": 338
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "Sentence perception as an interactive parallel process",
+      "authors": "Marslen-Wilson, W D",
+      "editors": "",
+      "publisher": "",
+      "year": 1975,
+      "volume": "189",
+      "issue": "",
+      "first_page": "226",
+      "last_page": "228",
+      "container": "Science",
+      "bib_id": 26,
+      "year_suffix": "",
+      "text_id": 339
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "An evaluation of subject-paced reading tasks and other methods for investigating immediate processes in reading",
+      "authors": "Mitchell, D C",
+      "editors": "Kieras, D; Just, M A",
+      "publisher": "Erlbaum",
+      "year": 1984,
+      "volume": "",
+      "issue": "",
+      "first_page": "69",
+      "last_page": "89",
+      "container": "",
+      "bib_id": 27,
+      "year_suffix": "",
+      "text_id": 340
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "On-line methods in language processing: Introduction and historical review",
+      "authors": "Mitchell, D C",
+      "editors": "Carreiras, M; Clifton, C",
+      "publisher": "Psychology Press",
+      "year": 2004,
+      "volume": "",
+      "issue": "",
+      "first_page": "15",
+      "last_page": "32",
+      "container": "",
+      "bib_id": 28,
+      "year_suffix": "",
+      "text_id": 341
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "When peanuts fall in love: N400 evidence for the power of discourse",
+      "authors": "Nieuwland, M S; Van Berkum, J J A",
+      "editors": "",
+      "publisher": "",
+      "year": 2006,
+      "volume": "18",
+      "issue": "",
+      "first_page": "1098",
+      "last_page": "1111",
+      "container": "Journal of Cognitive Neuroscience",
+      "bib_id": 29,
+      "year_suffix": "",
+      "text_id": 342
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "Brain potentials reflect violations of gender stereotypes",
+      "authors": "Osterhout, L; Bersick, M; Mclaughlin, J",
+      "editors": "",
+      "publisher": "",
+      "year": 1997,
+      "volume": "25",
+      "issue": "",
+      "first_page": "273",
+      "last_page": "285",
+      "container": "Memory & Cognition",
+      "bib_id": 30,
+      "year_suffix": "",
+      "text_id": 343
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "",
+      "authors": "",
+      "editors": "",
+      "publisher": "",
+      "year": 2016,
+      "volume": "",
+      "issue": "",
+      "first_page": null,
+      "last_page": null,
+      "container": "Real Clear Politics",
+      "bib_id": 31,
+      "year_suffix": "",
+      "text_id": 344
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "",
+      "authors": ", U S",
+      "editors": "",
+      "publisher": "",
+      "year": null,
+      "volume": "",
+      "issue": "",
+      "first_page": null,
+      "last_page": null,
+      "container": "",
+      "bib_id": 32,
+      "year_suffix": null,
+      "text_id": 345
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "The effect of word predictability on reading time is logarithmic",
+      "authors": "Smith, N J; Levy, R",
+      "editors": "",
+      "publisher": "",
+      "year": 2013,
+      "volume": "128",
+      "issue": "",
+      "first_page": "302",
+      "last_page": "319",
+      "container": "Cognition",
+      "bib_id": 33,
+      "year_suffix": "",
+      "text_id": 346
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "Crowdsourcing samples in cognitive science",
+      "authors": "Stewart, N; Chandler, J; Paolacci, G",
+      "editors": "",
+      "publisher": "",
+      "year": 2017,
+      "volume": "21",
+      "issue": "",
+      "first_page": "736",
+      "last_page": "748",
+      "container": "Trends in Cognitive Sciences",
+      "bib_id": 34,
+      "year_suffix": "",
+      "text_id": 347
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "The time-course of the application of binding constraints in reference resolution",
+      "authors": "Sturt, P",
+      "editors": "",
+      "publisher": "",
+      "year": 2003,
+      "volume": "48",
+      "issue": "",
+      "first_page": "542",
+      "last_page": "562",
+      "container": "Journal of Memory and Language",
+      "bib_id": 35,
+      "year_suffix": "",
+      "text_id": 348
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "Integration of visual and linguistic information in spoken language comprehension",
+      "authors": "Tanenhaus, M K; Spivey-Knowlton, M J; Eberhard, K M; Sedivy, J C",
+      "editors": "",
+      "publisher": "",
+      "year": 1995,
+      "volume": "268",
+      "issue": "",
+      "first_page": "1632",
+      "last_page": "1634",
+      "container": "Science",
+      "bib_id": 36,
+      "year_suffix": "",
+      "text_id": 349
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "The effect of a Supreme Court decision regarding gay marriage on social norms and personal attitudes",
+      "authors": "Tankard, M E; Paluck, E L",
+      "editors": "",
+      "publisher": "",
+      "year": 2017,
+      "volume": "28",
+      "issue": "",
+      "first_page": "1334",
+      "last_page": "1344",
+      "container": "Psychological Science",
+      "bib_id": 37,
+      "year_suffix": "",
+      "text_id": 350
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "Trends in syntactic parsing: Anticipation, Bayesian estimation, and good-enough parsing",
+      "authors": "Traxler, M J",
+      "editors": "",
+      "publisher": "",
+      "year": 2014,
+      "volume": "18",
+      "issue": "",
+      "first_page": "605",
+      "last_page": "611",
+      "container": "Topics in Cognitive Science",
+      "bib_id": 38,
+      "year_suffix": "",
+      "text_id": 351
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "",
+      "authors": "Wang, S",
+      "editors": "",
+      "publisher": "",
+      "year": 2016,
+      "volume": "",
+      "issue": "",
+      "first_page": null,
+      "last_page": null,
+      "container": "",
+      "bib_id": 39,
+      "year_suffix": "",
+      "text_id": 352
+    }
+  ],
+  "xref": [
+    {
+      "xref_id": 1,
+      "xref_type": "bib",
+      "contents": "(Atir & Ferguson, 2018)",
+      "text_id": 240
+    },
+    {
+      "xref_id": 2,
+      "xref_type": "bib",
+      "contents": "(Banaji & Hardin, 1996;",
+      "text_id": 241
+    },
+    {
+      "xref_id": 2,
+      "xref_type": "bib",
+      "contents": "(Banaji & Hardin, 1996;",
+      "text_id": 244
+    },
+    {
+      "xref_id": 3,
+      "xref_type": "bib",
+      "contents": "(Baron, 1981;",
+      "text_id": 260
+    },
+    {
+      "xref_id": 4,
+      "xref_type": "bib",
+      "contents": "(Barr, Levy, Scheepers, & Tily, 2013)",
+      "text_id": 138
+    },
+    {
+      "xref_id": 7,
+      "xref_type": "bib",
+      "contents": "(Caliskan, Bryson, & Narayanan, 2017)",
+      "text_id": 4
+    },
+    {
+      "xref_id": 8,
+      "xref_type": "bib",
+      "contents": "(Carpenter et al., 2017)",
+      "text_id": 138
+    },
+    {
+      "xref_id": 9,
+      "xref_type": "bib",
+      "contents": "(Casey, Chandler, Levine, Proctor, & Strolovitch, 2017)",
+      "text_id": 144
+    },
+    {
+      "xref_id": 10,
+      "xref_type": "bib",
+      "contents": "(Chak, 2015)",
+      "text_id": 260
+    },
+    {
+      "xref_id": 11,
+      "xref_type": "bib",
+      "contents": "(Duffy & Keir, 2004;",
+      "text_id": 2
+    },
+    {
+      "xref_id": 11,
+      "xref_type": "bib",
+      "contents": "Duffy & Keir, 2004;",
+      "text_id": 241
+    },
+    {
+      "xref_id": 11,
+      "xref_type": "bib",
+      "contents": "Duffy & Keir, 2004;",
+      "text_id": 244
+    },
+    {
+      "xref_id": 12,
+      "xref_type": "bib",
+      "contents": "Foertsch & Gernsbacher, 1997;",
+      "text_id": 2
+    },
+    {
+      "xref_id": 12,
+      "xref_type": "bib",
+      "contents": "Foertsch & Gernsbacher, 1997;",
+      "text_id": 241
+    },
+    {
+      "xref_id": 12,
+      "xref_type": "bib",
+      "contents": "Foertsch & Gernsbacher, 1997;",
+      "text_id": 260
+    },
+    {
+      "xref_id": 13,
+      "xref_type": "bib",
+      "contents": "(Franke et al., 2016)",
+      "text_id": 92
+    },
+    {
+      "xref_id": 14,
+      "xref_type": "bib",
+      "contents": "Freeman, 2017)",
+      "text_id": 260
+    },
+    {
+      "xref_id": 15,
+      "xref_type": "bib",
+      "contents": "(Garnham, Doehren, & Gygax, 2015)",
+      "text_id": 6
+    },
+    {
+      "xref_id": 16,
+      "xref_type": "bib",
+      "contents": "(Georgeac, Rattan, & Effron, 2018;",
+      "text_id": 243
+    },
+    {
+      "xref_id": 17,
+      "xref_type": "bib",
+      "contents": "(Greenwald & Banaji, 1995)",
+      "text_id": 258
+    },
+    {
+      "xref_id": 19,
+      "xref_type": "bib",
+      "contents": "(Greenwald et al., 1998)",
+      "text_id": 25
+    },
+    {
+      "xref_id": 20,
+      "xref_type": "bib",
+      "contents": "(He, Goodkind, & Kowal, 2016)",
+      "text_id": 142
+    },
+    {
+      "xref_id": 21,
+      "xref_type": "bib",
+      "contents": "(Howden & Meyer, 2011)",
+      "text_id": 143
+    },
+    {
+      "xref_id": 22,
+      "xref_type": "bib",
+      "contents": "( Judd & Park, 1993)",
+      "text_id": 3
+    },
+    {
+      "xref_id": 23,
+      "xref_type": "bib",
+      "contents": "Kennison & Trofe, 2003;",
+      "text_id": 2
+    },
+    {
+      "xref_id": 23,
+      "xref_type": "bib",
+      "contents": "Kennison & Trofe, 2003;",
+      "text_id": 241
+    },
+    {
+      "xref_id": 23,
+      "xref_type": "bib",
+      "contents": "Kennison & Trofe, 2003;",
+      "text_id": 244
+    },
+    {
+      "xref_id": 25,
+      "xref_type": "bib",
+      "contents": "(Levay, Freese, & Druckman, 2016;",
+      "text_id": 36
+    },
+    {
+      "xref_id": 27,
+      "xref_type": "bib",
+      "contents": "(Mitchell, 1984)",
+      "text_id": 34
+    },
+    {
+      "xref_id": 28,
+      "xref_type": "bib",
+      "contents": "(Mitchell, 2004;",
+      "text_id": 159
+    },
+    {
+      "xref_id": 30,
+      "xref_type": "bib",
+      "contents": "(Osterhout, Bersick, & Mclaughlin, 1997)",
+      "text_id": 2
+    },
+    {
+      "xref_id": 30,
+      "xref_type": "bib",
+      "contents": "Osterhout et al., 1997;",
+      "text_id": 241
+    },
+    {
+      "xref_id": 33,
+      "xref_type": "bib",
+      "contents": "Smith & Levy, 2013)",
+      "text_id": 159
+    },
+    {
+      "xref_id": 34,
+      "xref_type": "bib",
+      "contents": "Stewart, Chandler, & Paolacci, 2017)",
+      "text_id": 36
+    },
+    {
+      "xref_id": 35,
+      "xref_type": "bib",
+      "contents": "Sturt, 2003)",
+      "text_id": 2
+    },
+    {
+      "xref_id": 35,
+      "xref_type": "bib",
+      "contents": "Sturt, 2003)",
+      "text_id": 241
+    },
+    {
+      "xref_id": 35,
+      "xref_type": "bib",
+      "contents": "Sturt, 2003)",
+      "text_id": 244
+    },
+    {
+      "xref_id": 37,
+      "xref_type": "bib",
+      "contents": "Tankard & Paluck, 2017)",
+      "text_id": 243
+    },
+    {
+      "xref_id": null,
+      "xref_type": "bib",
+      "contents": "(Real Clear Politics, 2016)",
+      "text_id": 96
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "2",
+      "text_id": null
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "2a",
+      "text_id": 146
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "2b",
+      "text_id": 149
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "2b",
+      "text_id": null
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "S20-S29",
+      "text_id": 149
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "S20-S29",
+      "text_id": null
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "2c",
+      "text_id": 161
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "2c",
+      "text_id": null
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "S20-S29",
+      "text_id": 161
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "S20-S29",
+      "text_id": null
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "2c",
+      "text_id": 175
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "S28",
+      "text_id": null
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "S3",
+      "text_id": null
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "3a",
+      "text_id": 149
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "3b",
+      "text_id": 161
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "3b",
+      "text_id": 164
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "5a",
+      "text_id": 215
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "5b",
+      "text_id": 219
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "5b",
+      "text_id": 226
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "5b",
+      "text_id": 227
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "5a",
+      "text_id": 227
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "S25",
+      "text_id": null
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "5a",
+      "text_id": 253
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "6a",
+      "text_id": 218
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "6b",
+      "text_id": 219
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "S7",
+      "text_id": 160
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "7",
+      "text_id": 222
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "1a",
+      "text_id": 23
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "1b",
+      "text_id": 26
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "1",
+      "text_id": null
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "S4",
+      "text_id": 160
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "4",
+      "text_id": 167
+    },
+    {
+      "xref_id": null,
+      "xref_type": "table",
+      "contents": "S2",
+      "text_id": 40
+    },
+    {
+      "xref_id": null,
+      "xref_type": "table",
+      "contents": "S5",
+      "text_id": 214
+    }
+  ],
+  "figure": [
+    {
+      "figure_id": 1,
+      "section_id": 21,
+      "image": null,
+      "page_number": null
+    },
+    {
+      "figure_id": 2,
+      "section_id": 22,
+      "image": null,
+      "page_number": null
+    },
+    {
+      "figure_id": 3,
+      "section_id": 23,
+      "image": null,
+      "page_number": null
+    },
+    {
+      "figure_id": 4,
+      "section_id": 24,
+      "image": null,
+      "page_number": null
+    },
+    {
+      "figure_id": 5,
+      "section_id": 25,
+      "image": null,
+      "page_number": null
+    },
+    {
+      "figure_id": 6,
+      "section_id": 26,
+      "image": null,
+      "page_number": null
+    },
+    {
+      "figure_id": 7,
+      "section_id": 27,
+      "image": null,
+      "page_number": null
+    }
+  ],
+  "table": [],
+  "eq": [
+    {
+      "text_id": 36,
+      "grp_id": 1,
+      "lhs": "N",
+      "comp": "=",
+      "rhs": "24,863"
+    },
+    {
+      "text_id": 146,
+      "grp_id": 2,
+      "lhs": "95% CrI",
+      "comp": "=",
+      "rhs": "[-0.0037, 0.17]"
+    },
+    {
+      "text_id": 146,
+      "grp_id": 2,
+      "lhs": "P(β",
+      "comp": ">",
+      "rhs": "0)"
+    },
+    {
+      "text_id": 152,
+      "grp_id": 3,
+      "lhs": "95% CrI",
+      "comp": "=",
+      "rhs": "[-2.9, -0.047]"
+    },
+    {
+      "text_id": 152,
+      "grp_id": 3,
+      "lhs": "P(β",
+      "comp": "<",
+      "rhs": "0)"
+    },
+    {
+      "text_id": 153,
+      "grp_id": 4,
+      "lhs": "95% CrI",
+      "comp": "=",
+      "rhs": "[-1.6, 1.2]"
+    },
+    {
+      "text_id": 153,
+      "grp_id": 4,
+      "lhs": "P(β",
+      "comp": "<",
+      "rhs": "0)"
+    },
+    {
+      "text_id": 153,
+      "grp_id": 4,
+      "lhs": "95% CrI",
+      "comp": "=",
+      "rhs": "[0.28, 2.2]"
+    },
+    {
+      "text_id": 153,
+      "grp_id": 4,
+      "lhs": "P(β",
+      "comp": ">",
+      "rhs": "0)"
+    },
+    {
+      "text_id": 162,
+      "grp_id": 5,
+      "lhs": "time",
+      "comp": "=",
+      "rhs": "302.31"
+    },
+    {
+      "text_id": 162,
+      "grp_id": 5,
+      "lhs": "95% CrI",
+      "comp": "=",
+      "rhs": "[0.09, 0.17]"
+    },
+    {
+      "text_id": 162,
+      "grp_id": 5,
+      "lhs": "P(β",
+      "comp": ">",
+      "rhs": "0)"
+    },
+    {
+      "text_id": 162,
+      "grp_id": 5,
+      "lhs": "time",
+      "comp": "=",
+      "rhs": "250.90"
+    },
+    {
+      "text_id": 162,
+      "grp_id": 5,
+      "lhs": "95% CrI",
+      "comp": "=",
+      "rhs": "[0.01, 0.18]"
+    },
+    {
+      "text_id": 162,
+      "grp_id": 5,
+      "lhs": "P(β",
+      "comp": ">",
+      "rhs": "0)"
+    },
+    {
+      "text_id": 163,
+      "grp_id": 6,
+      "lhs": "time",
+      "comp": "=",
+      "rhs": "70.40"
+    },
+    {
+      "text_id": 163,
+      "grp_id": 6,
+      "lhs": "95% CrI",
+      "comp": "=",
+      "rhs": "[-0.06, 0.12]"
+    },
+    {
+      "text_id": 163,
+      "grp_id": 6,
+      "lhs": "P(β",
+      "comp": ">",
+      "rhs": "0)"
+    },
+    {
+      "text_id": 164,
+      "grp_id": 7,
+      "lhs": "95% CrI",
+      "comp": "=",
+      "rhs": "[-0.0097, 0.11]"
+    },
+    {
+      "text_id": 164,
+      "grp_id": 7,
+      "lhs": "P(β",
+      "comp": ">",
+      "rhs": "0)"
+    },
+    {
+      "text_id": 164,
+      "grp_id": 7,
+      "lhs": "95% CrI",
+      "comp": "=",
+      "rhs": "[-0.05, 0.069]"
+    },
+    {
+      "text_id": 164,
+      "grp_id": 7,
+      "lhs": "P(β",
+      "comp": ">",
+      "rhs": "0)"
+    },
+    {
+      "text_id": 164,
+      "grp_id": 7,
+      "lhs": "95% CrI",
+      "comp": "=",
+      "rhs": "[-0.058, 0.12]"
+    },
+    {
+      "text_id": 164,
+      "grp_id": 7,
+      "lhs": "P(β",
+      "comp": ">",
+      "rhs": "0)"
+    },
+    {
+      "text_id": 167,
+      "grp_id": 8,
+      "lhs": "time",
+      "comp": "=",
+      "rhs": "282.13"
+    },
+    {
+      "text_id": 167,
+      "grp_id": 8,
+      "lhs": "95% CrI",
+      "comp": "=",
+      "rhs": "[0.09, 0.14]"
+    },
+    {
+      "text_id": 167,
+      "grp_id": 8,
+      "lhs": "P(β",
+      "comp": ">",
+      "rhs": "0)"
+    },
+    {
+      "text_id": 171,
+      "grp_id": 9,
+      "lhs": "time",
+      "comp": "=",
+      "rhs": "96.31"
+    },
+    {
+      "text_id": 171,
+      "grp_id": 9,
+      "lhs": "95% CrI",
+      "comp": "=",
+      "rhs": "[0.01, 0.06]"
+    },
+    {
+      "text_id": 171,
+      "grp_id": 9,
+      "lhs": "P(β",
+      "comp": ">",
+      "rhs": "0)"
+    },
+    {
+      "text_id": 171,
+      "grp_id": 9,
+      "lhs": "time",
+      "comp": "=",
+      "rhs": "85.38"
+    },
+    {
+      "text_id": 171,
+      "grp_id": 9,
+      "lhs": "95% CrI",
+      "comp": "=",
+      "rhs": "[0.01, 0.06]"
+    },
+    {
+      "text_id": 171,
+      "grp_id": 9,
+      "lhs": "P(β",
+      "comp": ">",
+      "rhs": "0)"
+    },
+    {
+      "text_id": 171,
+      "grp_id": 9,
+      "lhs": "time",
+      "comp": "=",
+      "rhs": "118.46"
+    },
+    {
+      "text_id": 171,
+      "grp_id": 9,
+      "lhs": "95% CrI",
+      "comp": "=",
+      "rhs": "[0.01, 0.08]"
+    },
+    {
+      "text_id": 171,
+      "grp_id": 9,
+      "lhs": "P(β",
+      "comp": ">",
+      "rhs": "0)"
+    },
+    {
+      "text_id": 174,
+      "grp_id": 10,
+      "lhs": "time",
+      "comp": "=",
+      "rhs": "26.97"
+    },
+    {
+      "text_id": 174,
+      "grp_id": 10,
+      "lhs": "95% CrI",
+      "comp": "=",
+      "rhs": "[-0.03, 0.05]"
+    },
+    {
+      "text_id": 174,
+      "grp_id": 10,
+      "lhs": "P(β",
+      "comp": ">",
+      "rhs": "0)"
+    },
+    {
+      "text_id": 175,
+      "grp_id": 11,
+      "lhs": "time",
+      "comp": "=",
+      "rhs": "154.69"
+    },
+    {
+      "text_id": 175,
+      "grp_id": 11,
+      "lhs": "95% CrI",
+      "comp": "=",
+      "rhs": "[0.02, 0.11]"
+    },
+    {
+      "text_id": 175,
+      "grp_id": 11,
+      "lhs": "P(β",
+      "comp": ">",
+      "rhs": "0)"
+    },
+    {
+      "text_id": 175,
+      "grp_id": 11,
+      "lhs": "time",
+      "comp": "=",
+      "rhs": "135.50"
+    },
+    {
+      "text_id": 175,
+      "grp_id": 11,
+      "lhs": "95% CrI",
+      "comp": "=",
+      "rhs": "[-0.00, 0.11]"
+    },
+    {
+      "text_id": 175,
+      "grp_id": 11,
+      "lhs": "P(β",
+      "comp": ">",
+      "rhs": "0)"
+    },
+    {
+      "text_id": 177,
+      "grp_id": 12,
+      "lhs": "N",
+      "comp": "=",
+      "rhs": "1"
+    },
+    {
+      "text_id": 197,
+      "grp_id": 13,
+      "lhs": "N",
+      "comp": "=",
+      "rhs": "2"
+    },
+    {
+      "text_id": 220,
+      "grp_id": 14,
+      "lhs": "time",
+      "comp": "=",
+      "rhs": "-51.94"
+    },
+    {
+      "text_id": 220,
+      "grp_id": 14,
+      "lhs": "95% CrI",
+      "comp": "=",
+      "rhs": "[-0.06, 0.02]"
+    },
+    {
+      "text_id": 220,
+      "grp_id": 14,
+      "lhs": "P(β",
+      "comp": "<",
+      "rhs": "0)"
+    },
+    {
+      "text_id": 220,
+      "grp_id": 14,
+      "lhs": "time",
+      "comp": "=",
+      "rhs": "-159.18"
+    },
+    {
+      "text_id": 220,
+      "grp_id": 14,
+      "lhs": "95% CrI",
+      "comp": "=",
+      "rhs": "[-0.11, -0.01]"
+    },
+    {
+      "text_id": 220,
+      "grp_id": 14,
+      "lhs": "P(β",
+      "comp": "<",
+      "rhs": "0)"
+    },
+    {
+      "text_id": 221,
+      "grp_id": 15,
+      "lhs": "time",
+      "comp": "=",
+      "rhs": "-132.08"
+    },
+    {
+      "text_id": 221,
+      "grp_id": 15,
+      "lhs": "95% CrI",
+      "comp": "=",
+      "rhs": "[-0.10, 0.00]"
+    },
+    {
+      "text_id": 221,
+      "grp_id": 15,
+      "lhs": "P(β",
+      "comp": "<",
+      "rhs": "0)"
+    },
+    {
+      "text_id": 221,
+      "grp_id": 15,
+      "lhs": "time",
+      "comp": "=",
+      "rhs": "-167.93"
+    },
+    {
+      "text_id": 221,
+      "grp_id": 15,
+      "lhs": "95% CrI",
+      "comp": "=",
+      "rhs": "[-0.14, 0.02]"
+    },
+    {
+      "text_id": 221,
+      "grp_id": 15,
+      "lhs": "P(β",
+      "comp": "<",
+      "rhs": "0)"
+    },
+    {
+      "text_id": 222,
+      "grp_id": 16,
+      "lhs": "time",
+      "comp": "=",
+      "rhs": "294.31"
+    },
+    {
+      "text_id": 222,
+      "grp_id": 16,
+      "lhs": "95% CrI",
+      "comp": "=",
+      "rhs": "[0.08, 0.14]"
+    },
+    {
+      "text_id": 222,
+      "grp_id": 16,
+      "lhs": "P(β",
+      "comp": ">",
+      "rhs": "0)"
+    },
+    {
+      "text_id": 223,
+      "grp_id": 17,
+      "lhs": "time",
+      "comp": "=",
+      "rhs": "-61.80"
+    },
+    {
+      "text_id": 223,
+      "grp_id": 17,
+      "lhs": "95% CrI",
+      "comp": "=",
+      "rhs": "[-0.07, 0.02]"
+    },
+    {
+      "text_id": 223,
+      "grp_id": 17,
+      "lhs": "P(β",
+      "comp": "<",
+      "rhs": "0)"
+    },
+    {
+      "text_id": 224,
+      "grp_id": 18,
+      "lhs": "time",
+      "comp": "=",
+      "rhs": "-75.06"
+    },
+    {
+      "text_id": 224,
+      "grp_id": 18,
+      "lhs": "95% CrI",
+      "comp": "=",
+      "rhs": "[-0.09, 0.04]"
+    },
+    {
+      "text_id": 224,
+      "grp_id": 18,
+      "lhs": "P(β",
+      "comp": "<",
+      "rhs": "0)"
+    }
+  ]
+}

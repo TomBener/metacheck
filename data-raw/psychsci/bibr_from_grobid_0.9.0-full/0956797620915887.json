@@ -1,0 +1,4629 @@
+{
+  "paper_id": "0956797620915887",
+  "info": [
+    {
+      "title": "B or 13? Unconscious Top-Down Contextual Effects at the Categorical but Not the Lexical Level",
+      "keywords": ["consciousness", "top-down", "perception", "ambiguous objects", "Bayesian inference", "integration", "open data", "open materials", "preregistered"],
+      "doi": "10.1177/0956797620915887",
+      "file_hash": "f78bed4fbcdd1e96",
+      "input_format": "grobid 0.9.0",
+      "file_name": "data-raw/psychsci/grobid_0.9.0-full/0956797620915887.xml",
+      "bibr_version": "10.0",
+      "paper_type": "unknown",
+      "paper_type_confidence": 0,
+      "oecd_l1": null,
+      "oecd_l2": null,
+      "oecd_confidence": null
+    }
+  ],
+  "author": [
+    {
+      "author_id": 1,
+      "given": "Dan",
+      "family": "Biderman",
+      "affiliation": "School of Psychological Sciences Tel Aviv University",
+      "email": "",
+      "corresponding": false,
+      "orcid": "0000-0003-2054-8439",
+      "role": []
+    },
+    {
+      "author_id": 2,
+      "given": "Yarden",
+      "family": "Shir",
+      "affiliation": "School of Psychological Sciences Tel Aviv University",
+      "email": "",
+      "corresponding": false,
+      "orcid": "",
+      "role": []
+    },
+    {
+      "author_id": 3,
+      "given": "Liad",
+      "family": "Mudrik",
+      "affiliation": "School of Psychological Sciences Tel Aviv University",
+      "email": "mudrikli@tauex.tau.ac.il",
+      "corresponding": false,
+      "orcid": "",
+      "role": []
+    }
+  ],
+  "text": [
+    {
+      "text_id": 1,
+      "paragraph_id": 1,
+      "section_id": 0,
+      "text": "How do we perceive and understand visual objects?",
+      "page_number": null
+    },
+    {
+      "text_id": 2,
+      "paragraph_id": 1,
+      "section_id": 0,
+      "text": "One hypothesis is that the brain hierarchically builds objects from their lower level visual features in a bottom-up manner (e.g., Hubel & Wiesel, 1962;Riesenhuber & Poggio, 1999).",
+      "page_number": null
+    },
+    {
+      "text_id": 3,
+      "paragraph_id": 1,
+      "section_id": 0,
+      "text": "This process is held to be mediated by a set of interconnected cortical areas both within (Grill-Spector, Kourtzi, & Kanwisher, 2001) and outside (Georgieva, Peeters, Kolster, Todd, & Orban, 2009) the ventral visual stream.",
+      "page_number": null
+    },
+    {
+      "text_id": 4,
+      "paragraph_id": 1,
+      "section_id": 0,
+      "text": "Such bottom-up vision models also enjoy prominence in the field of computer vision and computational neuroscience (Kriegeskorte, 2015).",
+      "page_number": null
+    },
+    {
+      "text_id": 5,
+      "paragraph_id": 2,
+      "section_id": 0,
+      "text": "Yet a growing body of literature suggests that higher level factors-such as context, motivation, language, and emotional state-influence perception in a top-down manner (e.g., Balcetis, 2016; Bar, 2004; but see Firestone & Scholl, 2016).",
+      "page_number": null
+    },
+    {
+      "text_id": 6,
+      "paragraph_id": 2,
+      "section_id": 0,
+      "text": "A classic example is the perception of ambiguous objects in different contexts.",
+      "page_number": null
+    },
+    {
+      "text_id": 7,
+      "paragraph_id": 2,
+      "section_id": 0,
+      "text": "Bruner and Minturn's (1955) famous B/13 object is judged as 13 when embedded between 12 and 14 but as B when between A and C Thus, subjects' context-based expectations are integrated with the visual features of the ambiguous object (Panichello, Cheung, & Bar, 2013).",
+      "page_number": null
+    },
+    {
+      "text_id": 8,
+      "paragraph_id": 2,
+      "section_id": 0,
+      "text": "Such contextual effects are presumably supported by feedback to visual areas from higher level cortices (Bar, 2004).",
+      "page_number": null
+    },
+    {
+      "text_id": 9,
+      "paragraph_id": 3,
+      "section_id": 0,
+      "text": "Do such context effects depend on consciousness?",
+      "page_number": null
+    },
+    {
+      "text_id": 10,
+      "paragraph_id": 3,
+      "section_id": 0,
+      "text": "Arguably, one might suspect that they do because they involve integration of top-down and bottom-up processes; the close tie between consciousness and integration has 915887P SSXXX10.1177/0956797620915887Biderman et al.",
+      "page_number": null
+    },
+    {
+      "text_id": 11,
+      "paragraph_id": 5,
+      "section_id": 1,
+      "text": "been advocated since the times of Descartes, Kant, and James (Mudrik, Faivre, & Koch, 2014).",
+      "page_number": null
+    },
+    {
+      "text_id": 12,
+      "paragraph_id": 5,
+      "section_id": 1,
+      "text": "Prominent theories of consciousness assign a crucial role to integration (e.g., integrated-information theory; Tononi, Boly, Massimini, & Koch, 2016) or explicitly predict that global integration across brain regions should occur only during conscious processing (e.g., global-neuronal-workspace theory; Baars, 1997;Dehaene & Naccache, 2001).",
+      "page_number": null
+    },
+    {
+      "text_id": 13,
+      "paragraph_id": 5,
+      "section_id": 1,
+      "text": "This topic has attracted substantial scientific attention, with repeated attempts to examine whether humans can integrate stimuli that they do not consciously perceive (Moors, Hesselmann, Wagemans, & van Ee, 2017;Sklar, Deouell, & Hassin, 2018).",
+      "page_number": null
+    },
+    {
+      "text_id": 14,
+      "paragraph_id": 5,
+      "section_id": 1,
+      "text": "Whereas some findings implied that they can, even when high-level integration is involved (e.g., Fahrenfort, van Leeuwen, Olivers, & Hogendoorn, 2017;Sklar et al., 2018), other researchers attributed these effects to lower level factors or failed to replicate them (Moors & Hesselmann, 2018;Moors, Wagemans, Van Ee, & de-Wit, 2016;Rabagliati, Robertson, & Carmel, 2018).",
+      "page_number": null
+    },
+    {
+      "text_id": 15,
+      "paragraph_id": 5,
+      "section_id": 1,
+      "text": "Thus, the scope of unconscious integration is still a matter of ongoing controversy and requires further scrutiny.",
+      "page_number": null
+    },
+    {
+      "text_id": 16,
+      "paragraph_id": 5,
+      "section_id": 1,
+      "text": "One suggestion is that although some unconscious integration can be obtained without awareness, it is nevertheless limited.",
+      "page_number": null
+    },
+    {
+      "text_id": 17,
+      "paragraph_id": 5,
+      "section_id": 1,
+      "text": "According to the windows-of-integration hypothesis (Mudrik et al., 2014), integration can be defined over different window sizes (in temporal, spatial, or semantic spaces), and consciousness might be required only for integrating over bigger windows.",
+      "page_number": null
+    },
+    {
+      "text_id": 18,
+      "paragraph_id": 6,
+      "section_id": 1,
+      "text": "Here, we focused on the possible role of consciousness in contextual effects, which are held to involve integration between top-down semantic context and bottom-up visual information.",
+      "page_number": null
+    },
+    {
+      "text_id": 19,
+      "paragraph_id": 6,
+      "section_id": 1,
+      "text": "Thus far, such effects have mostly been shown using fully visible contexts and objects (for a review and criticism, see Firestone & Scholl, 2016).",
+      "page_number": null
+    },
+    {
+      "text_id": 20,
+      "paragraph_id": 6,
+      "section_id": 1,
+      "text": "The few studies using subliminal contextual cues focused on low-level contextual visual illusions (e.g., tilt : Clifford & Harris, 2005;Mareschal & Clifford, 2012;brightness: Harris, Schwarzkopf, Song, Bahrami, & Rees, 2011;size contrast: Nakashima & Sugita, 2018).",
+      "page_number": null
+    },
+    {
+      "text_id": 21,
+      "paragraph_id": 6,
+      "section_id": 1,
+      "text": "Conflicting findings were found for higher level contextual effects, such as the Kanizsa illusion (Kanizsa, 1979), in which a specific spatial organization of separate cues evokes the experience of an illusory surface region: Some researchers found that it could be induced by invisible cues (e.g., Fahrenfort et al., 2017;Persuh, Emmanouil, & Ro, 2016;Wang, Weng, & He, 2012), yet others suggested that these effects might be driven by low-level properties of the stimulus (Moors et al., 2016).",
+      "page_number": null
+    },
+    {
+      "text_id": 22,
+      "paragraph_id": 6,
+      "section_id": 1,
+      "text": "Moreover, others did not find such an effect at all (e.g., Banica & Schwarzkopf, 2016;Harris et al., 2011), leaving the matter of unconscious contextual effects unresolved.",
+      "page_number": null
+    },
+    {
+      "text_id": 23,
+      "paragraph_id": 7,
+      "section_id": 1,
+      "text": "Accordingly, we asked whether visible and invisible semantic contexts-letters, numbers, and words-can bias the classification of a clearly visible symbolic ambiguous object.",
+      "page_number": null
+    },
+    {
+      "text_id": 24,
+      "paragraph_id": 7,
+      "section_id": 1,
+      "text": "In two experiments (preregistration: osf.io/5dpvs), we found such effects on the B/13 stimulus (Bruner & Minturn, 1955).",
+      "page_number": null
+    },
+    {
+      "text_id": 25,
+      "paragraph_id": 7,
+      "section_id": 1,
+      "text": "In another experiment, this finding was replicated and further generalized into a different language using an ambiguous Hebrew letter (/tet/) that could also be perceived as \"6\" (preregistration: osf.io/5jnkg).",
+      "page_number": null
+    },
+    {
+      "text_id": 26,
+      "paragraph_id": 7,
+      "section_id": 1,
+      "text": "Thus, the effect of context on ambiguous stimuli that could be classified as either letters or digits was demonstrated in three different experiments, across two languages.",
+      "page_number": null
+    },
+    {
+      "text_id": 27,
+      "paragraph_id": 7,
+      "section_id": 1,
+      "text": "In four additional experiments (preregistrations: osf.io/3ccv3, osf.io/hvh8f, osf.io/kzgtr, osf.io/5jnkg), we asked whether this effect extends also to the lexical domain, which requires a finer grained processing of words than of nonwords or, put differently, integration over bigger semantic windows.",
+      "page_number": null
+    },
+    {
+      "text_id": 28,
+      "paragraph_id": 7,
+      "section_id": 1,
+      "text": "We accordingly presented participants with ambiguous Hebrew letters embedded in either familiar three-letter words or nonwords (Eldar, Niv, & Cohen, 2016) and found that, as opposed to categorical contextual effects, lexical effects were evoked only by conscious inducers and not during unconscious ones.",
+      "page_number": null
+    },
+    {
+      "text_id": 29,
+      "paragraph_id": 7,
+      "section_id": 1,
+      "text": "Data and materials from all experiments, along with data-analysis and experimental scripts, are available at osf.io/7236z.",
+      "page_number": null
+    },
+    {
+      "text_id": 30,
+      "paragraph_id": 9,
+      "section_id": 2,
+      "text": "The methodology below pertains to all experiments included in this study.",
+      "page_number": null
+    },
+    {
+      "text_id": 31,
+      "paragraph_id": 9,
+      "section_id": 2,
+      "text": "Because the general methodology was similar, most changes between experiments relate to (a) manipulating participants' conscious perception of the stimuli, (b) the stimuli themselves, and (c) sample size.",
+      "page_number": null
+    },
+    {
+      "text_id": 32,
+      "paragraph_id": 9,
+      "section_id": 2,
+      "text": "Below, we first outline the common methodology across experiments and then describe experiment-specific details.",
+      "page_number": null
+    },
+    {
+      "text_id": 33,
+      "paragraph_id": 11,
+      "section_id": 3,
+      "text": "Overall, 152 participants took part in this study for course credit or payment (~$10): There were 12 participants in Experiment 1a (3 women; 11 right-handed; age: M = 25.91 years, SD = 2.02), 24 in Experiment 1b (15 women; 20 right-handed; age: M = 24.52 years, SD = 1.73), 24 in Experiment 2 (18 women; 21 right-handed; age: M = 24.62 years, SD = 3.13), 12 in Experiment 3a (11 women; 8 right-handed; age: M = 23.17 years, SD = 1.99; all native Hebrew speakers), 34 in Experiment 3b (31 women; 31 right-handed; age: M = 23.06 years, SD = 1.46; all native Hebrew speakers), 12 in Experiment 4a (8 women; 11 right-handed; age: M = 23.58 years, SD = 1.83), and 34 in Experiment 4b (29 women; 31 righthanded; age: M = 23.06 years, SD = 1.52).",
+      "page_number": null
+    },
+    {
+      "text_id": 34,
+      "paragraph_id": 11,
+      "section_id": 3,
+      "text": "Experiment 1 was exploratory, whereas Experiments 2 to 4 were all preregistered.",
+      "page_number": null
+    },
+    {
+      "text_id": 35,
+      "paragraph_id": 11,
+      "section_id": 3,
+      "text": "In the first two experiments, we chose to double the sample size for the unconscious-processing group (Experiments 1b and 2), given that the unconscious effects are commonly weaker (Greenwald, Draine, & Abrams, 1996).",
+      "page_number": null
+    },
+    {
+      "text_id": 36,
+      "paragraph_id": 11,
+      "section_id": 3,
+      "text": "From Experiment 3 onward, sample size was determined so as to reach a power of .9 for the context effect observed in Experiment 2 on the basis of a simplified, no-pooling version of the logistic regression model (we fitted a logistic function for each of the participants on noncentered data and then tested the mean context coefficient against zero), t(23) = 2.82, p < .01; Cohen's d = 0.58.",
+      "page_number": null
+    },
+    {
+      "text_id": 37,
+      "paragraph_id": 11,
+      "section_id": 3,
+      "text": "In all experiments, data collection stopped when we reached the predefined sample size.",
+      "page_number": null
+    },
+    {
+      "text_id": 38,
+      "paragraph_id": 12,
+      "section_id": 3,
+      "text": "In all experiments, additional participants were excluded if they met at least one of the predefined exclusion criteria: (a) too few visibility-1 trials (see below) in each experimental cell in the main session or in the posttest session, (b) high performance in the posttest (mean d′ > 1.5 or mean accuracy > 65%), or (c) mean reaction time (RT) in the main session deviating by more than 3 standard deviations from the group mean.",
+      "page_number": null
+    },
+    {
+      "text_id": 39,
+      "paragraph_id": 12,
+      "section_id": 3,
+      "text": "Overall, 9 participants were excluded in the exploratory Experiment 1b (4 because of criterion a, 5 because of criterion b), and 21 participants were excluded in the preregistered Experiments 2 to 4 (Experiment 2: 3 because of criterion a, 3 because of criterion b; Experiment 3b: 2 because of criterion a, 1 because of criterion c; Experiment 4a: 3 because of criterion a; Experiment 4b: 8 because of criterion a, 1 for not showing up for the second session of the experiment).",
+      "page_number": null
+    },
+    {
+      "text_id": 40,
+      "paragraph_id": 12,
+      "section_id": 3,
+      "text": "Notably, we excluded these participants prior to analyzing the effects of interest, and no outliers were further excluded on the basis of participants' effect-related result.",
+      "page_number": null
+    },
+    {
+      "text_id": 41,
+      "paragraph_id": 12,
+      "section_id": 3,
+      "text": "For all experiments, the results remained unchanged when we included all participants in the analyses.",
+      "page_number": null
+    },
+    {
+      "text_id": 42,
+      "paragraph_id": 12,
+      "section_id": 3,
+      "text": "And, importantly, our effects were found for categorical but not lexical contexts, even when probed in the same participants, for whom regression to the mean presumably should have had an equal effect.",
+      "page_number": null
+    },
+    {
+      "text_id": 43,
+      "paragraph_id": 12,
+      "section_id": 3,
+      "text": "Therefore, our findings are less likely to be driven by regression to the mean resulting from extreme group analysis (Shanks, 2017).",
+      "page_number": null
+    },
+    {
+      "text_id": 44,
+      "paragraph_id": 12,
+      "section_id": 3,
+      "text": "Exclusion criteria and analysis plans were preregistered on the Open Science Framework (for deviations from analysis plans, see Supplemental Note and Tables S1 and S2 in the Supplemental Material available online).",
+      "page_number": null
+    },
+    {
+      "text_id": 45,
+      "paragraph_id": 14,
+      "section_id": 4,
+      "text": "Stimuli were presented on an LCD monitor (23-in.",
+      "page_number": null
+    },
+    {
+      "text_id": 46,
+      "paragraph_id": 14,
+      "section_id": 4,
+      "text": "ASUS SyncMaster; 1,920 × 1,080 resolution; 60-Hz refresh rate) using MATLAB (The MathWorks, Natick, MA) and the Psychophysics Toolbox Version 3 (Brainard, 1997).",
+      "page_number": null
+    },
+    {
+      "text_id": 47,
+      "paragraph_id": 14,
+      "section_id": 4,
+      "text": "Participants sat in a dimly lit room, and their heads were stabilized using a chin rest located 60 cm from the screen.",
+      "page_number": null
+    },
+    {
+      "text_id": 48,
+      "paragraph_id": 15,
+      "section_id": 4,
+      "text": "Stimuli varied between the experiments, but all were built using the same logic (see Fig. 1 and osf.io/7236z): First, we created an ambiguous stimulus that could be classified in one of two ways (Experiments 1, 2, and 4: B/13; Experiments 3 and 4: ambiguous letters; see details below).",
+      "page_number": null
+    },
+    {
+      "text_id": 49,
+      "paragraph_id": 15,
+      "section_id": 4,
+      "text": "Then, different versions of that stimulus were made by manipulating its physical properties to make it more biased toward each of the two possible classifications in a bottom-up manner.",
+      "page_number": null
+    },
+    {
+      "text_id": 50,
+      "paragraph_id": 15,
+      "section_id": 4,
+      "text": "In addition, we selected context inducers that are likely to affect classification in a top-down manner.",
+      "page_number": null
+    },
+    {
+      "text_id": 51,
+      "paragraph_id": 15,
+      "section_id": 4,
+      "text": "Finally, we constructed a mask display by placing two masks in the same location as the context inducers, separated by a central blank space (in the location of the ambiguous stimulus).",
+      "page_number": null
+    },
+    {
+      "text_id": 52,
+      "paragraph_id": 15,
+      "section_id": 4,
+      "text": "Each mask was composed of various superimposed keyboard symbols (Experiments 1, 2, and 4) or letters (Experiments 3 and 4).",
+      "page_number": null
+    },
+    {
+      "text_id": 53,
+      "paragraph_id": 15,
+      "section_id": 4,
+      "text": "All stimuli were colored white and presented on a gray background (red, green, blue, or RGB values: 128, 128, 128).",
+      "page_number": null
+    },
+    {
+      "text_id": 54,
+      "paragraph_id": 16,
+      "section_id": 4,
+      "text": "Experiments 1 and 2 (categorical context).",
+      "page_number": null
+    },
+    {
+      "text_id": 55,
+      "paragraph_id": 16,
+      "section_id": 4,
+      "text": "In Experiments 1 and 2, which probed categorical effects on the classification of the B/13 stimulus, the central ambiguous object was composed of two parts-\"1\" and \"3\"-so that it could be interpreted as either the letter \"B\" or the number \"13.\"",
+      "page_number": null
+    },
+    {
+      "text_id": 56,
+      "paragraph_id": 16,
+      "section_id": 4,
+      "text": "The distance between these two parts was manipulated (ranging between ~0.03° and ~0.18° of visual angle in intervals of ~0.03°) to create six versions of the central object, all still somewhat ambiguous yet with the shortest distance more resembling B and the longest distance more resembling 13 (see Fig. 1a).",
+      "page_number": null
+    },
+    {
+      "text_id": 57,
+      "paragraph_id": 16,
+      "section_id": 4,
+      "text": "The context inducers were the letters \"A\" and \"C,\" the numbers \"12\" and \"14,\" and the signs \"@\" and \"%\" (in Experiment 1 only), which were presented on either side of the central object (with A, 12, and @ to the left of the ambiguous stimulus and C, 14, and % to its right).",
+      "page_number": null
+    },
+    {
+      "text_id": 58,
+      "paragraph_id": 16,
+      "section_id": 4,
+      "text": "The entire stimulus ensemble (context inducers and ambiguous stimulus) subtended 5.7° to 6.2° (width, depending on the version of the central object and the context inducers) and 2.4° (height) of the visual field.",
+      "page_number": null
+    },
+    {
+      "text_id": 59,
+      "paragraph_id": 16,
+      "section_id": 4,
+      "text": "The composite mask was of the same size.",
+      "page_number": null
+    },
+    {
+      "text_id": 60,
+      "paragraph_id": 17,
+      "section_id": 4,
+      "text": "Experiment 3 (lexical context).",
+      "page_number": null
+    },
+    {
+      "text_id": 61,
+      "paragraph_id": 17,
+      "section_id": 4,
+      "text": "In Experiment 3, which focused on lexical effects on the classification of an ambiguous letter, the central stimulus was an ambiguous hybrid of two Hebrew letters, created in Adobe Photoshop and Adobe Illustrator by a professional designer.",
+      "page_number": null
+    },
+    {
+      "text_id": 62,
+      "paragraph_id": 17,
+      "section_id": 4,
+      "text": "The adjacent letters formed a three-letter word in which only one of the two possible interpretations of the ambiguous stimulus was possible, so that a pseudoword was formed with the second letter (congruent and incongruent conditions with respect to one of the two letters).",
+      "page_number": null
+    },
+    {
+      "text_id": 63,
+      "paragraph_id": 17,
+      "section_id": 4,
+      "text": "The following example provides an English parallel.",
+      "page_number": null
+    },
+    {
+      "text_id": 64,
+      "paragraph_id": 17,
+      "section_id": 4,
+      "text": "An ambiguous letter can be generated from the letters A and H and the context can be induced by T-E or C-T (Eldar et al., 2016).",
+      "page_number": null
+    },
+    {
+      "text_id": 65,
+      "paragraph_id": 17,
+      "section_id": 4,
+      "text": "The new three-letter strings can form either a word (THE or CAT) or a nonword (TAE or CHT; note that in our case, and as opposed to CHT, these were pseudowords and not nonwords; that is, they always satisfied the orthophonological constrains of the Hebrew language).",
+      "page_number": null
+    },
+    {
+      "text_id": 66,
+      "paragraph_id": 17,
+      "section_id": 4,
+      "text": "Three versions of the ambiguous stimulus were created to make it more similar to each of the two letters it could be classified as (see Fig. 1b).",
+      "page_number": null
+    },
+    {
+      "text_id": 67,
+      "paragraph_id": 17,
+      "section_id": 4,
+      "text": "The context inducers were chosen so that they formed a word with only one of the two letters and a pseudoword with the other.",
+      "page_number": null
+    },
+    {
+      "text_id": 68,
+      "paragraph_id": 18,
+      "section_id": 4,
+      "text": "Presented together, the string composed of the ambiguous letter and the context inducers subtended a maximum of 6.0° (width) and 2.3° (height) of the visual field.",
+      "page_number": null
+    },
+    {
+      "text_id": 69,
+      "paragraph_id": 19,
+      "section_id": 4,
+      "text": "The stimuli (object and inducers) were presented in two different writing styles, which appeared in separate blocks: Seven stimuli were in print style (an adaptation of Haim Hebrew font) and seven in handwritten style (written manually by the designer using a graphics pad).",
+      "page_number": null
+    },
+    {
+      "text_id": 70,
+      "paragraph_id": 20,
+      "section_id": 4,
+      "text": "Level 1 Level 3 b Hand Print Congruent Incongruent Mask a Numbers Symbols Letters /regel/ (Leg) /matar/ (Rain) Numbers Letters Lexical Categorical Mask Level 1 Level 6 c Level 1 L evel 6 Experiments 1 & 2 Experiment 3 Experiment 4 Some stimuli appeared in both writing styles, yet the context inducers were unique to each letter pair.",
+      "page_number": null
+    },
+    {
+      "text_id": 71,
+      "paragraph_id": 20,
+      "section_id": 4,
+      "text": "For each stimulus, we arbitrarily defined a reference letter, in relation to which we term the context as either congruent or incongruent.",
+      "page_number": null
+    },
+    {
+      "text_id": 72,
+      "paragraph_id": 20,
+      "section_id": 4,
+      "text": "The following example provides an English parallel.",
+      "page_number": null
+    },
+    {
+      "text_id": 73,
+      "paragraph_id": 20,
+      "section_id": 4,
+      "text": "For the ambiguous letter A/H, when A is chosen as the reference letter, C-T would be the resulting congruent context (forming the congruent word CAT) and T-E the incongruent one (forming the incongruent nonword TAE).",
+      "page_number": null
+    },
+    {
+      "text_id": 74,
+      "paragraph_id": 20,
+      "section_id": 4,
+      "text": "Thus, we had two sets of words, congruent and incongruent, defined according to the randomly chosen reference letter for each pair.",
+      "page_number": null
+    },
+    {
+      "text_id": 75,
+      "paragraph_id": 20,
+      "section_id": 4,
+      "text": "The congruent-words set contained 10 nouns and two verbs, whereas the incongruent-words set included 8 nouns, one verb, one adverb, and two adjectives.",
+      "page_number": null
+    },
+    {
+      "text_id": 76,
+      "paragraph_id": 20,
+      "section_id": 4,
+      "text": "The two sets of words were comparable in word frequency and concreteness measures.",
+      "page_number": null
+    },
+    {
+      "text_id": 77,
+      "paragraph_id": 20,
+      "section_id": 4,
+      "text": "We also validated that there were no consistent visual differences between the two sets of words, which appeared in the same font, size, and colors and comprised an equivalent number of segments (for details and analyses, see the Supplemental Material).",
+      "page_number": null
+    },
+    {
+      "text_id": 78,
+      "paragraph_id": 20,
+      "section_id": 4,
+      "text": "Experiment 3a (conscious processing) also served as a pretest for the stimuli used in Experiment 3b (unconscious processing).",
+      "page_number": null
+    },
+    {
+      "text_id": 79,
+      "paragraph_id": 20,
+      "section_id": 4,
+      "text": "There were two stimuli that generated weak context effects in Experiment 3a (defined by calculating the proportion of classification as the reference letter in congruent and incongruent conditions and then subtracting the latter from the former; difference in proportion below .1 was defined as a reason to exclude the stimuli).",
+      "page_number": null
+    },
+    {
+      "text_id": 80,
+      "paragraph_id": 20,
+      "section_id": 4,
+      "text": "These stimuli were accordingly excluded from Experiment 3b.",
+      "page_number": null
+    },
+    {
+      "text_id": 81,
+      "paragraph_id": 20,
+      "section_id": 4,
+      "text": "To allow a clearer comparison between Experiment 3a and Experiment 3b, we omitted from analysis all trials in which these pairs were presented in Experiment 3a (14.42% of the trials; results remained unchanged when all trials were included).",
+      "page_number": null
+    },
+    {
+      "text_id": 82,
+      "paragraph_id": 22,
+      "section_id": 5,
+      "text": "Finally, in Experiment 4, which probed both categorical and lexical processing, two stimulus sets (each including a central ambiguous letter, two contexts, and masks) were created.",
+      "page_number": null
+    },
+    {
+      "text_id": 83,
+      "paragraph_id": 22,
+      "section_id": 5,
+      "text": "The first probed categorical contexts, as in Experiments 1 and 2, and the second probed lexical contexts, similarly to Experiment 3.",
+      "page_number": null
+    },
+    {
+      "text_id": 84,
+      "paragraph_id": 22,
+      "section_id": 5,
+      "text": "For the former, the critical ambiguous stimulus could look like the number 6 and like the handwritten Hebrew letter ‫ט‬ (/tet/; see Fig. 1c).",
+      "page_number": null
+    },
+    {
+      "text_id": 85,
+      "paragraph_id": 22,
+      "section_id": 5,
+      "text": "Six versions of the sign were created, ranging in resemblance from 6 to /tet/.",
+      "page_number": null
+    },
+    {
+      "text_id": 86,
+      "paragraph_id": 22,
+      "section_id": 5,
+      "text": "Context inducers were either the digits 5 and 7 or the Hebrew letters ‫מ‬ (/mem/) and ‫ר‬ (/reish/), also forming the Hebrew word ‫מטר‬ (/matar/, the noun rain) with the ambiguous sign perceived as /tet/.",
+      "page_number": null
+    },
+    {
+      "text_id": 87,
+      "paragraph_id": 23,
+      "section_id": 5,
+      "text": "In the lexical stimulus set, the critical ambiguous stimulus could again look like the Hebrew letter ‫ט‬ (/tet/) but also the letter ‫ג‬ (/gimel/).",
+      "page_number": null
+    },
+    {
+      "text_id": 88,
+      "paragraph_id": 23,
+      "section_id": 5,
+      "text": "Six versions of the ambiguous letter were created, ranging between the two letters (see Fig. 1c).",
+      "page_number": null
+    },
+    {
+      "text_id": 89,
+      "paragraph_id": 23,
+      "section_id": 5,
+      "text": "Congruent and incongruent words were also created: To keep the stimuli similar between conditions, we again used the Hebrew letters ‫מ‬ (/mem/) and ‫ר‬ (/reish/) with the ambiguous sign perceived as ‫ט‬ (/tet/).",
+      "page_number": null
+    },
+    {
+      "text_id": 90,
+      "paragraph_id": 23,
+      "section_id": 5,
+      "text": "And the Hebrew letters ‫ר‬ (/reish/) and ‫ל‬ (/lamed/) formed the Hebrew word ‫רגל‬ (/regel/, the noun leg) with the ambiguous sign perceived as ‫ג‬ (/gimel/).",
+      "page_number": null
+    },
+    {
+      "text_id": 91,
+      "paragraph_id": 25,
+      "section_id": 6,
+      "text": "Experiments 1a, 3a, and 4a probed conscious processing and, accordingly, consisted of one session only.",
+      "page_number": null
+    },
+    {
+      "text_id": 92,
+      "paragraph_id": 25,
+      "section_id": 6,
+      "text": "To make sure that the context inducers were indeed unconsciously processed in Experiments 1b, 2, 3b, and 4b, we added an additional posttest session that followed the main experiment.",
+      "page_number": null
+    },
+    {
+      "text_id": 93,
+      "paragraph_id": 25,
+      "section_id": 6,
+      "text": "In this session, we obtained an objective visibility measure for each participant.",
+      "page_number": null
+    },
+    {
+      "text_id": 94,
+      "paragraph_id": 25,
+      "section_id": 6,
+      "text": "Finally, in Experiment 4b, we wanted to compare lexical and categorical effects within the same participants.",
+      "page_number": null
+    },
+    {
+      "text_id": 95,
+      "paragraph_id": 25,
+      "section_id": 6,
+      "text": "Thus, participants came to the lab twice (0-3 days apart): once to conduct the categorical task and again to conduct the lexical task (each included a main session and a posttest; task order was counterbalanced).",
+      "page_number": null
+    },
+    {
+      "text_id": 96,
+      "paragraph_id": 25,
+      "section_id": 6,
+      "text": "The number of trials in each session of each experiment is detailed in the Supplemental Material.",
+      "page_number": null
+    },
+    {
+      "text_id": 97,
+      "paragraph_id": 27,
+      "section_id": 7,
+      "text": "The trial sequence in Experiments 1a, 3a, 4a, which probed conscious processing, and in Experiments 1b, 2, 3b, 4b, which probed unconscious processing, included the exact same events, but their order was changed to manipulate participants' awareness of the context inducers (see Figs. 2a and 2b).",
+      "page_number": null
+    },
+    {
+      "text_id": 98,
+      "paragraph_id": 27,
+      "section_id": 7,
+      "text": "Each trial began with a 500-to 700-ms fixation cross.",
+      "page_number": null
+    },
+    {
+      "text_id": 99,
+      "paragraph_id": 27,
+      "section_id": 7,
+      "text": "Then, the composite mask (50 ms) and a blank screen (100 ms) appeared.",
+      "page_number": null
+    },
+    {
+      "text_id": 100,
+      "paragraph_id": 27,
+      "section_id": 7,
+      "text": "In experiments probing conscious processing, the composite mask was presented first and the blank screen followed, and in experiments probing unconscious processing, the order was reversed: the blank screen first and the mask second.",
+      "page_number": null
+    },
+    {
+      "text_id": 101,
+      "paragraph_id": 27,
+      "section_id": 7,
+      "text": "The ambiguous object and the context inducers then appeared together for 33 ms and were followed by another blank screen (100 ms) and mask (50 ms): In experiments probing conscious processing, the blank screen appeared first, and in experiments probing unconscious processing, the mask preceded the blank screen.",
+      "page_number": null
+    },
+    {
+      "text_id": 102,
+      "paragraph_id": 27,
+      "section_id": 7,
+      "text": "Thus, in the former case, the context inducers were separated from the mask by blank screens, so they were visible, whereas in the latter case, they were immediately preceded and followed by the masks, rendering them invisible.",
+      "page_number": null
+    },
+    {
+      "text_id": 103,
+      "paragraph_id": 27,
+      "section_id": 7,
+      "text": "Note that because the masks did not extend to the space in which the ambiguous stimulus appeared, the ambiguous stimulus was visible in both experiments: Only the contextual inducers were masked.",
+      "page_number": null
+    },
+    {
+      "text_id": 104,
+      "paragraph_id": 27,
+      "section_id": 7,
+      "text": "In experiments including a posttest session, the sequence of events in the posttest was exactly the same as the one used in the main session.",
+      "page_number": null
+    },
+    {
+      "text_id": 105,
+      "paragraph_id": 29,
+      "section_id": 8,
+      "text": "In all experiments, the primary task in the main session was to classify the ambiguous stimulus as one of its two possible interpretations by pressing either the left or the right arrow keys.",
+      "page_number": null
+    },
+    {
+      "text_id": 106,
+      "paragraph_id": 29,
+      "section_id": 8,
+      "text": "Question onset was indexed by a question mark in Experiments 1, 2, and 4 (categorical task).",
+      "page_number": null
+    },
+    {
+      "text_id": 107,
+      "paragraph_id": 29,
+      "section_id": 8,
+      "text": "In Experiments 3 and 4 (lexical task), the question was presented by introducing the two letters from which the ambiguous stimulus was created, separated by a hyphen (e.g., for the English example, A-H; letter order was counterbalanced), in their corresponding writing style (print: Arial font; handwritten: Tamir font; both font sizes = 70).",
+      "page_number": null
+    },
+    {
+      "text_id": 108,
+      "paragraph_id": 29,
+      "section_id": 8,
+      "text": "Then, participants were instructed to report how well they perceived the context inducers (subjective measure).",
+      "page_number": null
+    },
+    {
+      "text_id": 109,
+      "paragraph_id": 29,
+      "section_id": 8,
+      "text": "Ratings were made on a 4-point scale",
+      "page_number": null
+    },
+    {
+      "text_id": 110,
+      "paragraph_id": 30,
+      "section_id": 8,
+      "text": "+ + Fixation 500-700 ms Mask 50 ms Blank 100 ms Stimulus 33 ms Blank 100 ms Questions Self-Paced Conscious a + + + Qs Mask 50 ms + + + + + Qs Fixation 500-700 ms Blank 100 ms Mask 50 ms Stimulus 33 ms Mask 50 ms Questions Self-Paced Blank 100 ms Main Session Question 1: B or 13?",
+      "page_number": null
+    },
+    {
+      "text_id": 111,
+      "paragraph_id": 30,
+      "section_id": 8,
+      "text": "Question 2: Context Visibility Posttest Session Question 1: Context Letters or Numbers?",
+      "page_number": null
+    },
+    {
+      "text_id": 112,
+      "paragraph_id": 30,
+      "section_id": 8,
+      "text": "Question 2: Context Visibility",
+      "page_number": null
+    },
+    {
+      "text_id": 113,
+      "paragraph_id": 32,
+      "section_id": 9,
+      "text": "Fig.",
+      "page_number": null
+    },
+    {
+      "text_id": 114,
+      "paragraph_id": 32,
+      "section_id": 9,
+      "text": "2.",
+      "page_number": null
+    },
+    {
+      "text_id": 115,
+      "paragraph_id": 32,
+      "section_id": 9,
+      "text": "Sequence of events in Experiments 1a, 1b, and 2.",
+      "page_number": null
+    },
+    {
+      "text_id": 116,
+      "paragraph_id": 32,
+      "section_id": 9,
+      "text": "In the conscious sequence used in Experiment 1a (a), the critical stimulus display (here, B/13 flanked by A and C) was preceded and followed by blank screens; the ambiguous object (which could be interpreted as either B or 13) and the context inducers flanking it (A and C) were thus fully visible.",
+      "page_number": null
+    },
+    {
+      "text_id": 117,
+      "paragraph_id": 32,
+      "section_id": 9,
+      "text": "In the unconscious sequence used in Experiments 1b and 2 (b), the critical stimulus display was sandwiched between two masks, so the context inducers, but not the ambiguous object, were rendered invisible.",
+      "page_number": null
+    },
+    {
+      "text_id": 118,
+      "paragraph_id": 32,
+      "section_id": 9,
+      "text": "The experimental sequence in both conditions was followed by two questions (Qs).",
+      "page_number": null
+    },
+    {
+      "text_id": 119,
+      "paragraph_id": 32,
+      "section_id": 9,
+      "text": "In the main session, participants were first asked whether the ambiguous object was B or 13 and then asked to rank the visibility of the context inducers on a 4-point scale.",
+      "page_number": null
+    },
+    {
+      "text_id": 120,
+      "paragraph_id": 32,
+      "section_id": 9,
+      "text": "In the posttest, which followed the main session of Experiments 1b and 2, the first question asked whether the context inducers were letters or numbers, and the second asked about context visibility.",
+      "page_number": null
+    },
+    {
+      "text_id": 121,
+      "paragraph_id": 32,
+      "section_id": 9,
+      "text": "(The same trial structure was used in subsequent experiments but with different stimuli).",
+      "page_number": null
+    },
+    {
+      "text_id": 122,
+      "paragraph_id": 33,
+      "section_id": 9,
+      "text": "(Perceptual Awareness Scale; Ramsøy & Overgaard, 2004) from 1 (\"I saw nothing\"), 2 (\"I had a brief glimpse of the inducers\"), and 3 (\"I saw the inducers almost clearly\"), to 4 (\"I saw the inducers clearly\") using the numeric keys 1 to 4.",
+      "page_number": null
+    },
+    {
+      "text_id": 123,
+      "paragraph_id": 33,
+      "section_id": 9,
+      "text": "In the posttest session (Experiments 1b, 2, 3b, and 4b), on the other hand, participants' primary task was to discriminate between two context inducers and then rank their visibility on the same 4-point scale.",
+      "page_number": null
+    },
+    {
+      "text_id": 124,
+      "paragraph_id": 33,
+      "section_id": 9,
+      "text": "In Experiments 1, 2, and 4 (categorical task), the task was to determine whether the inducers were letters or numbers.",
+      "page_number": null
+    },
+    {
+      "text_id": 125,
+      "paragraph_id": 33,
+      "section_id": 9,
+      "text": "In Experiments 3 and 4 (lexical task), they were asked to determine which of the two possible pairs of context inducers for the current ambiguous letter were presented; the two pairs were separated by a slash, whereas the two letters inside each letter pair were separated by a hyphen (e.g., C-T/T-E).",
+      "page_number": null
+    },
+    {
+      "text_id": 126,
+      "paragraph_id": 35,
+      "section_id": 10,
+      "text": "Trial-exclusion criteria.",
+      "page_number": null
+    },
+    {
+      "text_id": 127,
+      "paragraph_id": 35,
+      "section_id": 10,
+      "text": "Trials that met at least one of the following predefined criteria were excluded from the analyses: (a) Participants erroneously pressed a nonassigned button, (b) RTs were shorter than 250 ms or longer than 4 s, and (c) RTs deviated by 3 standard deviations or more from the mean for each experimental condition (for number of excluded trials in each experiment, see Supplemental Note in the Supplemental Material).",
+      "page_number": null
+    },
+    {
+      "text_id": 128,
+      "paragraph_id": 35,
+      "section_id": 10,
+      "text": "After this initial clean-up, we excluded trials on the basis of context-visibility ratings.",
+      "page_number": null
+    },
+    {
+      "text_id": 129,
+      "paragraph_id": 35,
+      "section_id": 10,
+      "text": "Namely, in Experiments 1a, 3a, and 4a, in which we aimed to assess conscious processing of the context inducers, we used only two to four visibility trials, in which participants reported seeing something on a scale ranging from vaguely (2) to clearly (4).",
+      "page_number": null
+    },
+    {
+      "text_id": 130,
+      "paragraph_id": 35,
+      "section_id": 10,
+      "text": "In Experiments 1b, 2, 3b, 4b, Control Experiment 1, and Control Experiment 2, all of which tapped unconscious processing of the context inducers, we used only visibility-1 trials, in which participants reported not seeing the context inducers at all (for a breakdown of visibility ratings for each experiment, see Table S3 in the Supplemental Material).",
+      "page_number": null
+    },
+    {
+      "text_id": 131,
+      "paragraph_id": 35,
+      "section_id": 10,
+      "text": "Note that for all experiments, we excluded relatively few trials because of visibility reports and found that the results remained unchanged when we included trials from all visibility ratings (Hesselmann, Darcy, Ludwig, & Sterzer, 2016), alleviating the concern that our findings were influenced by post hoc selection of trials (Shanks, 2017).",
+      "page_number": null
+    },
+    {
+      "text_id": 132,
+      "paragraph_id": 37,
+      "section_id": 11,
+      "text": "The results were analyzed taking a Bayesian approach (Gelman et al., 2013;Kruschke, 2014; for a detailed explanation and rationale, see Supplemental Note in the Supplemental Material).",
+      "page_number": null
+    },
+    {
+      "text_id": 133,
+      "paragraph_id": 37,
+      "section_id": 11,
+      "text": "In a nutshell, we modeled participants' responses using hierarchical regression models that included participant-specific and group-level coefficients.",
+      "page_number": null
+    },
+    {
+      "text_id": 134,
+      "paragraph_id": 37,
+      "section_id": 11,
+      "text": "We approximated a posterior distribution over these coefficients using Markov chain Monte Carlo methods.",
+      "page_number": null
+    },
+    {
+      "text_id": 135,
+      "paragraph_id": 37,
+      "section_id": 11,
+      "text": "To interpret the results, we computed the median and the 95% highest-density interval (HDI) of the posterior distribution of each group-level regression coefficient, under the assumption that for a reliable effect, the HDI would exclude zero (Gelman et al., 2013;Kruschke, 2014).",
+      "page_number": null
+    },
+    {
+      "text_id": 136,
+      "paragraph_id": 37,
+      "section_id": 11,
+      "text": "The estimated parameters included the independent variables-context, which was either categorical (Experiment 1: numbers, letters, and symbols; Experiments 2 and 4: numbers and letters) or lexical (congruent, incongruent)-and distance (continuous; Levels 1-6 in Experiments 1, 2, and 4 and Levels 1-3 in Experiment 3) and their interactions.",
+      "page_number": null
+    },
+    {
+      "text_id": 137,
+      "paragraph_id": 38,
+      "section_id": 11,
+      "text": "In all experiments, the dependent variable was participants' binary classifications of the ambiguous object as one of the two possible interpretations.",
+      "page_number": null
+    },
+    {
+      "text_id": 138,
+      "paragraph_id": 38,
+      "section_id": 11,
+      "text": "In Experiments 1, 2, and 4 (categorical task), the ambiguous object could be classified as either a number or a letter, and in Experiments 3 and 4 (lexical task) as one of two possible letters (a reference letter).",
+      "page_number": null
+    },
+    {
+      "text_id": 139,
+      "paragraph_id": 38,
+      "section_id": 11,
+      "text": "Finally, we further conducted an analysis on RTs that was of secondary importance and did not yield any meaningful differences between conditions (see Tables S4-S8 in the Supplemental Material).",
+      "page_number": null
+    },
+    {
+      "text_id": 140,
+      "paragraph_id": 42,
+      "section_id": 13,
+      "text": "Subjective and objective visibility measures confirmed that participants were indeed unaware of the contextual inducers in Experiments 1b, 2, 3b, and 4b.",
+      "page_number": null
+    },
+    {
+      "text_id": 141,
+      "paragraph_id": 42,
+      "section_id": 13,
+      "text": "This was confirmed also by a meta-analysis across experiments and further corroborated by the lack of correlation between the observed effect and participants' awareness scores, as defined by their performance on the objective task (see Fig.",
+      "page_number": null
+    },
+    {
+      "text_id": 142,
+      "paragraph_id": 42,
+      "section_id": 13,
+      "text": "S1 in the Supplemental Material).",
+      "page_number": null
+    },
+    {
+      "text_id": 143,
+      "paragraph_id": 42,
+      "section_id": 13,
+      "text": "All results, as well as group-level coefficients for classification analysis (see Tables S9-S14), are reported in the Supplemental Material.",
+      "page_number": null
+    },
+    {
+      "text_id": 144,
+      "paragraph_id": 44,
+      "section_id": 14,
+      "text": "Experiment 1a (conscious processing).",
+      "page_number": null
+    },
+    {
+      "text_id": 145,
+      "paragraph_id": 44,
+      "section_id": 14,
+      "text": "As expected, the distance between the 1 and 3 components of the B/13 object influenced its classification.",
+      "page_number": null
+    },
+    {
+      "text_id": 146,
+      "paragraph_id": 44,
+      "section_id": 14,
+      "text": "That is, participants increasingly tended to classify the object as 13 when the distance between its 1 and 3 components increased.",
+      "page_number": null
+    },
+    {
+      "text_id": 147,
+      "paragraph_id": 44,
+      "section_id": 14,
+      "text": "Letters context and numbers context influenced participants' classification in the expected direction: Participants classified the object more as 13 when it appeared in a numbers context (12-14) compared with both the baseline symbol context (%-@) and the letters context (A-C); classifications as 13 were lowest in the letters context.",
+      "page_number": null
+    },
+    {
+      "text_id": 148,
+      "paragraph_id": 44,
+      "section_id": 14,
+      "text": "Both interaction terms (Distance × Letters, Distance × Numbers) were negligible.",
+      "page_number": null
+    },
+    {
+      "text_id": 149,
+      "paragraph_id": 44,
+      "section_id": 14,
+      "text": "Calculation of the context effect in each distance level showed that the 95% HDI of the letters context was below 0 in all six distances, and for the numbers context, it was reliably positive in all distances but the last (see Fig. 3; see also Table S9).",
+      "page_number": null
+    },
+    {
+      "text_id": 150,
+      "paragraph_id": 46,
+      "section_id": 15,
+      "text": "In Experiment 1b as well, the distance credibly influenced participants' classifications: There were more \"13\" classifications as the distance grew.",
+      "page_number": null
+    },
+    {
+      "text_id": 151,
+      "paragraph_id": 46,
+      "section_id": 15,
+      "text": "As for the masked context inducers, only a negative interaction between distance and numbers context was reliable.",
+      "page_number": null
+    },
+    {
+      "text_id": 152,
+      "paragraph_id": 46,
+      "section_id": 15,
+      "text": "Analysis of the numbers-context coefficient separately for each distance level revealed reliable positive effects for the first two distances, in which participants were affected by the numbers context and classified the stimulus more as 13 (see Fig. 3; see also Table S9).",
+      "page_number": null
+    },
+    {
+      "text_id": 153,
+      "paragraph_id": 46,
+      "section_id": 15,
+      "text": "An unexpected effect in the opposite direction was found in the last distance (i.e., tendency to choose B when the numbers context was presented).",
+      "page_number": null
+    },
+    {
+      "text_id": 154,
+      "paragraph_id": 46,
+      "section_id": 15,
+      "text": "To ensure that these effects were not driven by the neutral condition (because we compared the neutral condition with either the letters or the numbers condition), we conducted an additional analysis in which we excluded the neutral-symbols trials and ran a model with distance, context (letters = 0, numbers = 1), and their interaction as predictors.",
+      "page_number": null
+    },
+    {
+      "text_id": 155,
+      "paragraph_id": 46,
+      "section_id": 15,
+      "text": "The results remained unchanged.",
+      "page_number": null
+    },
+    {
+      "text_id": 156,
+      "paragraph_id": 47,
+      "section_id": 15,
+      "text": "Experiment 2 (unconscious processing).",
+      "page_number": null
+    },
+    {
+      "text_id": 157,
+      "paragraph_id": 47,
+      "section_id": 15,
+      "text": "Experiment 1b, which was exploratory, revealed an evidently weak unconscious contextual effect.",
+      "page_number": null
+    },
+    {
+      "text_id": 158,
+      "paragraph_id": 47,
+      "section_id": 15,
+      "text": "Experiment 2, which was preregistered, was accordingly devised to assess the reproducibility of the effect in a new group of participants.",
+      "page_number": null
+    },
+    {
+      "text_id": 159,
+      "paragraph_id": 47,
+      "section_id": 15,
+      "text": "In line with our expectations, Experiment 2 revealed both a reliable distance effect and, critically, a reliable context effect.",
+      "page_number": null
+    },
+    {
+      "text_id": 160,
+      "paragraph_id": 47,
+      "section_id": 15,
+      "text": "Overall, participants tended to classify the B/13 object as 13 when it appeared with numbers and as B when it appeared with letters, despite not seeing the numbers and the letters.",
+      "page_number": null
+    },
+    {
+      "text_id": 161,
+      "paragraph_id": 47,
+      "section_id": 15,
+      "text": "The two-way interaction was negligible, tending negatively, and the context effect was reliable in the first three distance levels, 1 in line with our hypothesis.",
+      "page_number": null
+    },
+    {
+      "text_id": 162,
+      "paragraph_id": 47,
+      "section_id": 15,
+      "text": "Note that the negative context effect in the last distance of Experiment 1b was not replicated in this experiment (see Fig. 3; see also Table S10 in the Supplemental Material).",
+      "page_number": null
+    },
+    {
+      "text_id": 163,
+      "paragraph_id": 48,
+      "section_id": 15,
+      "text": "As in Experiment 1a, participants' classifications of the ambiguous letter were affected both by the distance (i.e., classifying the ambiguous letter more as the letter to which it was physically similar) and by the context (i.e., classifying the ambiguous letter more as the letter that formed a word with the context inducers than as the letter that did not form such a word), with the latter seemingly being more pronounced.",
+      "page_number": null
+    },
+    {
+      "text_id": 164,
+      "paragraph_id": 48,
+      "section_id": 15,
+      "text": "The two-way interaction was negligible, and the 95% HDI of the context coefficient excluded 0 in the first three distances.",
+      "page_number": null
+    },
+    {
+      "text_id": 165,
+      "paragraph_id": 50,
+      "section_id": 16,
+      "text": "Experiment 3a (conscious processing).",
+      "page_number": null
+    },
+    {
+      "text_id": 166,
+      "paragraph_id": 50,
+      "section_id": 16,
+      "text": "The results of Experiment 3a mirrored those of Experiment 1a: Both distance and context influenced letter classification.",
+      "page_number": null
+    },
+    {
+      "text_id": 167,
+      "paragraph_id": 50,
+      "section_id": 16,
+      "text": "That is, participants tended to classify the ambiguous letter as the letter that it most resembled as well as the letter supported by the context.",
+      "page_number": null
+    },
+    {
+      "text_id": 168,
+      "paragraph_id": 50,
+      "section_id": 16,
+      "text": "There was no interaction between context and distance (see Fig. 4a; see also Table S11 in the Supplemental Material).",
+      "page_number": null
+    },
+    {
+      "text_id": 169,
+      "paragraph_id": 52,
+      "section_id": 17,
+      "text": "The results of Experiment 3b were similar to the results of Experiments 1 and 2 with respect to distance but not to context: Distance influenced letter classification to the same extent when the context was not consciously perceived.",
+      "page_number": null
+    },
+    {
+      "text_id": 170,
+      "paragraph_id": 52,
+      "section_id": 17,
+      "text": "Under invisible conditions, the context neither influenced participants' classifications of the central letters nor interacted with distance: No contextual effects were observed in any of the distances (see Fig. 4b; see also and Table S11).",
+      "page_number": null
+    },
+    {
+      "text_id": 171,
+      "paragraph_id": 52,
+      "section_id": 17,
+      "text": "These null results could suggest a qualitative difference in the role of conscious processing between categorical and lexical contextual effects, implying that conscious processing is needed for the latter but not the former.",
+      "page_number": null
+    },
+    {
+      "text_id": 172,
+      "paragraph_id": 52,
+      "section_id": 17,
+      "text": "Alternatively, it might also be explained by three methodological points; in Experiments 1 and 2, there were only two possible context inducers, whereas here, a broader range of contextual inducers was used (12 pairs), with fewer repetitions for each, which may have reduced the chances of obtaining an unconscious effect (Van den Bussche, Van den Noortgate, & Reynvoet, 2009).",
+      "page_number": null
+    },
+    {
+      "text_id": 173,
+      "paragraph_id": 52,
+      "section_id": 17,
+      "text": "In addition, Experiment 3 had 12 response displays, whereas in Experiments 1 and 2, the response display remained fixed across trials.",
+      "page_number": null
+    },
+    {
+      "text_id": 174,
+      "paragraph_id": 52,
+      "section_id": 17,
+      "text": "Finally, in Experiment 3, only three distance levels were used, as opposed to six used before.",
+      "page_number": null
+    },
+    {
+      "text_id": 175,
+      "paragraph_id": 53,
+      "section_id": 17,
+      "text": "We also conducted two preregistered control experiments (Control Experiment 1: N = 34, osf.io/hvh8f; Control Experiment 2: N = 34, osf.io/kzgtr; for further details, see Supplemental Note, Fig.",
+      "page_number": null
+    },
+    {
+      "text_id": 176,
+      "paragraph_id": 53,
+      "section_id": 17,
+      "text": "S2, and Table S12 in the Supplemental Material).",
+      "page_number": null
+    },
+    {
+      "text_id": 177,
+      "paragraph_id": 53,
+      "section_id": 17,
+      "text": "These experiments showed that the lack of an unconscious lexical context effect did not stem from these methodological points.",
+      "page_number": null
+    },
+    {
+      "text_id": 178,
+      "paragraph_id": 53,
+      "section_id": 17,
+      "text": "In Control Experiment 1 and its replication Control Experiment 2, we adapted the design of Experiment 3b to be as similar as possible to the one used in Experiments 1b and 2: A single stimulus set and response display were used, and there were six levels of distance for the ambiguous object.",
+      "page_number": null
+    },
+    {
+      "text_id": 179,
+      "paragraph_id": 53,
+      "section_id": 17,
+      "text": "We further selected the ambiguous letters that induced the strongest (Control Experiment 1) and the second strongest (Control Experiment 2) conscious contextual effects to maximize the chances of finding an effect.",
+      "page_number": null
+    },
+    {
+      "text_id": 180,
+      "paragraph_id": 53,
+      "section_id": 17,
+      "text": "Yet lexical inducers still did not evoke contextual effects in the expected direction (see Table S12; if anything, participants sometimes tended to classify the ambiguous letter in the opposite direction, but this tendency was not found in Experiment 4, described below).",
+      "page_number": null
+    },
+    {
+      "text_id": 181,
+      "paragraph_id": 55,
+      "section_id": 18,
+      "text": "Taken together, the results seem to imply that top-down contextual effects can occur even without awareness but possibly only at the categorical level (letter/number classification) and not at the lexical level.",
+      "page_number": null
+    },
+    {
+      "text_id": 182,
+      "paragraph_id": 55,
+      "section_id": 18,
+      "text": "Because the positive finding at the categorical level goes substantially beyond previous findings, in Experiment 4, we wanted to further test its reproducibility and ask whether it is confined to the specific B/13 stimulus.",
+      "page_number": null
+    },
+    {
+      "text_id": 183,
+      "paragraph_id": 55,
+      "section_id": 18,
+      "text": "An additional goal was to compare categorical and lexical effects within the same experiment and same participants, using stimuli that are more similar to each other in the two conditions.",
+      "page_number": null
+    },
+    {
+      "text_id": 184,
+      "paragraph_id": 55,
+      "section_id": 18,
+      "text": "To that end, we devised a new stimulus set, now using the Hebrew letter ‫ט‬ (/tet/), which in handwriting looks both like the number 6 (see Fig. 1c) and like the handwritten letter ‫ג‬ (/gimel/).",
+      "page_number": null
+    },
+    {
+      "text_id": 185,
+      "paragraph_id": 55,
+      "section_id": 18,
+      "text": "This enabled us to create a unique comparison between the context types using very similar stimuli.",
+      "page_number": null
+    },
+    {
+      "text_id": 186,
+      "paragraph_id": 57,
+      "section_id": 19,
+      "text": "Context influenced classifications of the ambiguous stimulus in both the categorical and the lexical conditions, yet in this experiment, the categorical effect was greater than the lexical one (and also than the previous contextual effects that we found during conscious processing in Experiments 1-3).",
+      "page_number": null
+    },
+    {
+      "text_id": 187,
+      "paragraph_id": 57,
+      "section_id": 19,
+      "text": "The distance coefficient was reliably positive, and the Distance × Condition coefficient was reliably negative, suggesting that distance reliably influenced participants' classifications in the categorical session but not in the lexical session.",
+      "page_number": null
+    },
+    {
+      "text_id": 188,
+      "paragraph_id": 57,
+      "section_id": 19,
+      "text": "This might reflect a higher overall ambiguity of the stimuli in the lexical session (i.e., the slope of the psychometric curve was flatter for the lexical relative to the categorical experiment; see Fig. 5a and 5b; also see Table S13 in the Supplemental Material) and might result from our attempt to minimize the visual differences between the stimuli in the categorical and lexical tasks (as for both tasks, we used the same Hebrew letter-‫,ט‬ / tet/-and tried to make it similar to both the letter ‫ג‬ / gimel/ and the number 6).",
+      "page_number": null
+    },
+    {
+      "text_id": 189,
+      "paragraph_id": 57,
+      "section_id": 19,
+      "text": "673 -0.2 0.0 0.2 -2.0 -1.0 0.0 1.0 2.0 0.00 0.25 0.50 0.75 1.00 1 2 3 4 5 6 0.00 0.25 0.50 0.75 1.00 Lexical Numbers Letters Distance Distance Incongruent Congruent Categorical Distance 0.00 0.25 0.50 0.75 1.00 1 2 3 4 5 6 0.00 0.25 0.50 0.75 1.00 C o n t e x t D i s t a n c e C o n d i t i o n D i s t a n c e × C o n t e x t D i s t a n c e × C o n d i t i o n C o n t e x t × C o n d i t i o n D i s t a n c e × C o n t e x t × C o n d i t i o n C o n t e x t D i s t a n c e C o n d i t i o n D i s t a n c e × C o n t e x t D i s t a n c e × C o n d i t i o n C o n t e x t × C o n d i t i o n D i s t a n c e × C o n t e x t × C o n d i t i o n Distance Distance Proportion Classified as the Letter /tet/ β Distance Categorical Lexical -5.0 -2.5 0.0 2.5 5.0",
+      "page_number": null
+    },
+    {
+      "text_id": 190,
+      "paragraph_id": 59,
+      "section_id": 20,
+      "text": "In the categorical task, the context coefficient was reliably positive for all six distances.",
+      "page_number": null
+    },
+    {
+      "text_id": 191,
+      "paragraph_id": 59,
+      "section_id": 20,
+      "text": "This confirmed the reproducibility of this effect and demonstrated its generalizability across stimuli and languages.",
+      "page_number": null
+    },
+    {
+      "text_id": 192,
+      "paragraph_id": 59,
+      "section_id": 20,
+      "text": "Results were akin to those of Experiment 3 and the two control experiments: In the lexical task, the context coefficient was around zero for all distances.",
+      "page_number": null
+    },
+    {
+      "text_id": 193,
+      "paragraph_id": 59,
+      "section_id": 20,
+      "text": "That is, in this within-participants design, only categorical context influenced participants' classifications.",
+      "page_number": null
+    },
+    {
+      "text_id": 194,
+      "paragraph_id": 59,
+      "section_id": 20,
+      "text": "As for the distance effect, results were similar to those of Experiment 4a: It was reliable only in the categorical session.",
+      "page_number": null
+    },
+    {
+      "text_id": 195,
+      "paragraph_id": 59,
+      "section_id": 20,
+      "text": "We also found a negative condition coefficient, suggesting that the average height of the psychometric curve was lower in the lexical condition (see Figs. 5c and 5d and Table S13).",
+      "page_number": null
+    },
+    {
+      "text_id": 196,
+      "paragraph_id": 61,
+      "section_id": 21,
+      "text": "Finally, using a meta-level Bayesian logistic regression (a form of Bayesian meta-analysis), we analyzed the results of all six experiments (including the two control experiments) in which unconscious processing was probed (see Fig. 6; see also the full model estimates in Table S14).",
+      "page_number": null
+    },
+    {
+      "text_id": 197,
+      "paragraph_id": 62,
+      "section_id": 21,
+      "text": "We found a reliably negative interaction between context and condition (Mdn = -0.13, 95% HDI = [-0.23, -0.03]), indicating that the context effect was larger for categorical relative to lexical experiments.",
+      "page_number": null
+    },
+    {
+      "text_id": 198,
+      "paragraph_id": 62,
+      "section_id": 21,
+      "text": "Breaking down the Context × Condition interaction shows that at the meta level, context reliably biased classifications of the ambiguous object only in the categorical experiments (Mdn = 0.10, 95% HDI = [0.02, 0.17]) but not in the lexical experiments (Mdn = -0.03, 95% HDI = [-0.10, 0.03]).",
+      "page_number": null
+    },
+    {
+      "text_id": 199,
+      "paragraph_id": 62,
+      "section_id": 21,
+      "text": "The experiment-level context coefficients mirrored the context coefficients obtained when analyzing each experiment separately (note that for Experiment 1b, the context coefficient was now reliably positive, potentially because of the hierarchical pooling to the other categorical experiments and the exclusion of the symbols trials).",
+      "page_number": null
+    },
+    {
+      "text_id": 200,
+      "paragraph_id": 62,
+      "section_id": 21,
+      "text": "Moreover, the meta-level distance coefficient reliably excluded zero only in the lexical experiments and was noisy overall, potentially because the magnitude of the distance effects varied considerably between participants and experiments.",
+      "page_number": null
+    },
+    {
+      "text_id": 201,
+      "paragraph_id": 62,
+      "section_id": 21,
+      "text": "The condition coefficient was reliably negative, implying that the overall percentage of responses as the reference letter was lower in the lexical experiments.",
+      "page_number": null
+    },
+    {
+      "text_id": 202,
+      "paragraph_id": 62,
+      "section_id": 21,
+      "text": "However, the condition effect was completely dependent on the arbitrary definition of the reference letter per experiment and is therefore noninformative in itself.",
+      "page_number": null
+    },
+    {
+      "text_id": 203,
+      "paragraph_id": 62,
+      "section_id": 21,
+      "text": "Finally, the meta-level Distance × Context interaction was negligible in both conditions.",
+      "page_number": null
+    },
+    {
+      "text_id": 204,
+      "paragraph_id": 64,
+      "section_id": 22,
+      "text": "In six experiments, we tested the role of consciousness in top-down contextual effects on symbolic object processing.",
+      "page_number": null
+    },
+    {
+      "text_id": 205,
+      "paragraph_id": 64,
+      "section_id": 22,
+      "text": "To this end, we presented an ambiguous object at varying levels of ambiguity alongside visible or invisible (i.e., masked) context inducers.",
+      "page_number": null
+    },
+    {
+      "text_id": 206,
+      "paragraph_id": 64,
+      "section_id": 22,
+      "text": "Visible categorical contexts (numbers, letters, or symbols) greatly modulated the classification of the ambiguous B/13 object at all levels of ambiguity (Experiment 1a).",
+      "page_number": null
+    },
+    {
+      "text_id": 207,
+      "paragraph_id": 64,
+      "section_id": 22,
+      "text": "When the context was rendered invisible, it still biased participants' classifications, although to a considerably lower extent: The effects were restricted to the stimulus versions that most resembled the letter B (Experiments 1b and 2).",
+      "page_number": null
+    },
+    {
+      "text_id": 208,
+      "paragraph_id": 64,
+      "section_id": 22,
+      "text": "This was further replicated using a completely different stimulus set in a different language (Experiment 4), in which the effect was found for all versions of the ambiguous object.",
+      "page_number": null
+    },
+    {
+      "text_id": 209,
+      "paragraph_id": 64,
+      "section_id": 22,
+      "text": "Importantly, invisibility of the context inducers was confirmed in these experiments using both subjective and objective measures.",
+      "page_number": null
+    },
+    {
+      "text_id": 210,
+      "paragraph_id": 64,
+      "section_id": 22,
+      "text": "We further corroborated their invisibility by conducting a meta-analysis across objective tasks as well as showing that the strength of the effect was not correlated with participants' level of awareness of the inducers (as reflected by their d′ performance in the objective task).",
+      "page_number": null
+    },
+    {
+      "text_id": 211,
+      "paragraph_id": 64,
+      "section_id": 22,
+      "text": "Thus, the main finding of this study is that unconscious semantic information can indeed affect symbolic object processing in a top-down manner.",
+      "page_number": null
+    },
+    {
+      "text_id": 212,
+      "paragraph_id": 64,
+      "section_id": 22,
+      "text": "Interestingly, such unconscious contextual effects were not found for lexical contexts that formed either words or nonwords with the central ambiguous letter.",
+      "page_number": null
+    },
+    {
+      "text_id": 213,
+      "paragraph_id": 64,
+      "section_id": 22,
+      "text": "There, although a clear and seemingly stronger contextual effect was found during conscious processing of the context (Experiment 3a), no effects were found",
+      "page_number": null
+    },
+    {
+      "text_id": 214,
+      "paragraph_id": 65,
+      "section_id": 22,
+      "text": "* * * * -0.2 -0.1 0.0 0.1 0 .2 Context Coefficient (β) * Metacategorical Metalexical Exp. 1b Exp.",
+      "page_number": null
+    },
+    {
+      "text_id": 215,
+      "paragraph_id": 65,
+      "section_id": 22,
+      "text": "2 Exp. 3b Exp. 4b Categorical Exp. 4b Lexical Control Exp.",
+      "page_number": null
+    },
+    {
+      "text_id": 216,
+      "paragraph_id": 65,
+      "section_id": 22,
+      "text": "1 Control Exp.",
+      "page_number": null
+    },
+    {
+      "text_id": 217,
+      "paragraph_id": 65,
+      "section_id": 22,
+      "text": "2 Fig 6 Context coefficients in the Bayesian meta-analysis of all experiments in which unconscious processing was probed.",
+      "page_number": null
+    },
+    {
+      "text_id": 218,
+      "paragraph_id": 65,
+      "section_id": 22,
+      "text": "Categoricalcondition coefficients are depicted in green, and lexical-condition coefficients are depicted in black.",
+      "page_number": null
+    },
+    {
+      "text_id": 219,
+      "paragraph_id": 65,
+      "section_id": 22,
+      "text": "Thick lines and larger circles depict meta-level context coefficients; thin lines and smaller circles depict the experiment-level coefficients.",
+      "page_number": null
+    },
+    {
+      "text_id": 220,
+      "paragraph_id": 65,
+      "section_id": 22,
+      "text": "Circles indicate the median values, and lines signify the 95% highest-density intervals (HDIs) of the posterior distributions.",
+      "page_number": null
+    },
+    {
+      "text_id": 221,
+      "paragraph_id": 65,
+      "section_id": 22,
+      "text": "Effects for which the 95% HDI excluded 0 are marked with an asterisk.",
+      "page_number": null
+    },
+    {
+      "text_id": 222,
+      "paragraph_id": 65,
+      "section_id": 22,
+      "text": "Model predictors were standardized so the regression coefficients would all lie on the same scale. when the inducers were invisible (Experiment 3b), even when a single pair of context inducers was heavily repeated-Control Experiment 1, Control Experiment 2, and Experiment 4b (lexical task)-akin to the design of the B/13 experiments.",
+      "page_number": null
+    },
+    {
+      "text_id": 223,
+      "paragraph_id": 65,
+      "section_id": 22,
+      "text": "This dissociation was further demonstrated in a Bayesian meta-analysis showing that across experiments, categorical-but not lexical-context unconsciously biased participants' classification of the ambiguous object.",
+      "page_number": null
+    },
+    {
+      "text_id": 224,
+      "paragraph_id": 65,
+      "section_id": 22,
+      "text": "Taken together, the results seem to suggest that lexical contextual effects might require conscious processing.",
+      "page_number": null
+    },
+    {
+      "text_id": 225,
+      "paragraph_id": 65,
+      "section_id": 22,
+      "text": "However, as this is based on a series of null results, we cannot make such a conclusive claim at this point.",
+      "page_number": null
+    },
+    {
+      "text_id": 226,
+      "paragraph_id": 65,
+      "section_id": 22,
+      "text": "The unconscious contextual effects we observed at the categorical level (numbers vs. letters) go beyond previous findings of contextual visual illusions evoked by invisible inducers (Banica & Schwarzkopf, 2016;Clifford & Harris, 2005;Fahrenfort et al., 2017;Harris et al., 2011;Mareschal & Clifford, 2012;Moors et al., 2016;Nakashima & Sugita, 2018;Wang et al., 2012): We used semantic, symbolic contexts instead of purely visual ones and tested their influence on symbolic object classification rather than on low-level visual judgments.",
+      "page_number": null
+    },
+    {
+      "text_id": 227,
+      "paragraph_id": 65,
+      "section_id": 22,
+      "text": "The use of symbolic stimuli such as numbers or letters plausibly tapped higher level areas that are involved in reading (e.g., visual word-form area; Cohen et al., 2000) and number-symbol processing (e.g., prefrontal cortex and intraparietal sulcus; Nieder & Dehaene, 2009).",
+      "page_number": null
+    },
+    {
+      "text_id": 228,
+      "paragraph_id": 65,
+      "section_id": 22,
+      "text": "For such high-level brain areas to influence object classification, feedback to the visual cortexthe hallmark of top-down effects on perception-is most likely needed (Bar, 2004).",
+      "page_number": null
+    },
+    {
+      "text_id": 229,
+      "paragraph_id": 65,
+      "section_id": 22,
+      "text": "Our findings thus suggest that such top-down effects might take place without awareness.",
+      "page_number": null
+    },
+    {
+      "text_id": 230,
+      "paragraph_id": 66,
+      "section_id": 22,
+      "text": "At face value, our findings seem to go against the traditional view that consciousness is required for integration.",
+      "page_number": null
+    },
+    {
+      "text_id": 231,
+      "paragraph_id": 66,
+      "section_id": 22,
+      "text": "Because participants were affected by the categorical context inducers, and assuming that this requires integration between the context and the ambiguous stimulus, one could claim that this is a case of unconscious integration of the types reported by other studies (e.g., temporal: Reber & Henke, 2012; multisensory: Arzi et al., 2012;Faivre, Mudrik, Schwartz, & Koch, 2014; semantic, knowledge-based integration: e.g., Lin & Murray, 2014; for a review, see Mudrik et al., 2014).",
+      "page_number": null
+    },
+    {
+      "text_id": 232,
+      "paragraph_id": 67,
+      "section_id": 22,
+      "text": "Yet the fact that this effect was limited to categorical contexts only, and not lexical ones, gives rise to two alternative interpretations of the results: The first suggests that our findings actually highlight the limits of unconscious integration.",
+      "page_number": null
+    },
+    {
+      "text_id": 233,
+      "paragraph_id": 67,
+      "section_id": 22,
+      "text": "This interpretation is in line with the windows-of-integration hypothesis (Mudrik et al., 2014), which was thus far mostly tested in the temporal domain (e.g., Faivre & Koch, 2014;Tu et al., 2019).",
+      "page_number": null
+    },
+    {
+      "text_id": 234,
+      "paragraph_id": 67,
+      "section_id": 22,
+      "text": "Under this interpretation, unconscious categorical contextual effects reflect integration that takes place over small integration windows (here, semantically defined), which can be performed without awareness.",
+      "page_number": null
+    },
+    {
+      "text_id": 235,
+      "paragraph_id": 67,
+      "section_id": 22,
+      "text": "The lexical contextual effects, on the other hand, might imply bigger integration windows that involve a finer lexical analysis of words and nonwords, hereby requiring conscious processing.",
+      "page_number": null
+    },
+    {
+      "text_id": 236,
+      "paragraph_id": 67,
+      "section_id": 22,
+      "text": "Thus, our results can be taken as showing that unconscious integration can occur, but it does so only for processes that involve small integration windows.",
+      "page_number": null
+    },
+    {
+      "text_id": 237,
+      "paragraph_id": 68,
+      "section_id": 22,
+      "text": "The second interpretation goes further, suggesting that although the results convincingly demonstrate unconscious top-down processes, the latter need not involve integration in the sense of forming a unified percept/concept (Mudrik et al., 2014).",
+      "page_number": null
+    },
+    {
+      "text_id": 238,
+      "paragraph_id": 68,
+      "section_id": 22,
+      "text": "That is, in the categorical experiments, participants did not have to form a percept of the entire three-character string (e.g., A-B-C) but could instead detect whether the inducers were numbers or letters and infer that the middle character should belong to the same category.",
+      "page_number": null
+    },
+    {
+      "text_id": 239,
+      "paragraph_id": 68,
+      "section_id": 22,
+      "text": "Participants could even rely on the category of just one of the inducers and perform equally well.",
+      "page_number": null
+    },
+    {
+      "text_id": 240,
+      "paragraph_id": 68,
+      "section_id": 22,
+      "text": "Arguably, then, the bias found in classifying the B/13 stimulus and its Hebrew counterpart was based on the coactivation of that stimulus with the contextual inducers, creating some form of \"on-line priming,\" and not on the formation of an integrated percept of A-B-C or 12-13-14.",
+      "page_number": null
+    },
+    {
+      "text_id": 241,
+      "paragraph_id": 68,
+      "section_id": 22,
+      "text": "Such on-line priming cannot drive lexical contextual effects, as they depend on the integration of the three letters into a unified word.",
+      "page_number": null
+    },
+    {
+      "text_id": 242,
+      "paragraph_id": 68,
+      "section_id": 22,
+      "text": "According to this account, then, the current study does not show that integration can occur unconsciously but is limited to smaller integration windows, such as the categorical level.",
+      "page_number": null
+    },
+    {
+      "text_id": 243,
+      "paragraph_id": 68,
+      "section_id": 22,
+      "text": "Rather, it shows that contextual effects can occur only when integration is not actually needed.",
+      "page_number": null
+    },
+    {
+      "text_id": 244,
+      "paragraph_id": 68,
+      "section_id": 22,
+      "text": "And they may fail to exert an effect when integration is required (i.e., when combining invisible letters with a visible one).",
+      "page_number": null
+    },
+    {
+      "text_id": 245,
+      "paragraph_id": 68,
+      "section_id": 22,
+      "text": "Future studies are needed to arbitrate between these two alternative interpretations-small size versus no integration-as well as to better delineate the boundary between contexts that can affect perception and those that cannot, for example, by manipulating saliency in the emotional, social, or value domains.",
+      "page_number": null
+    },
+    {
+      "text_id": 246,
+      "paragraph_id": 69,
+      "section_id": 22,
+      "text": "In summary, we demonstrated that top-down contextual effects on the processing of ambiguous objects could be induced by invisible context at the categorical level.",
+      "page_number": null
+    },
+    {
+      "text_id": 247,
+      "paragraph_id": 69,
+      "section_id": 22,
+      "text": "These effects bias not only the way that some features of the stimulus are processed (e.g., brightness, tilt) but also the way that the entire stimulus is interpreted and classified.",
+      "page_number": null
+    },
+    {
+      "text_id": 248,
+      "paragraph_id": 69,
+      "section_id": 22,
+      "text": "Our findings thus imply that consciousness may not be necessary for top-down contextual effects.",
+      "page_number": null
+    },
+    {
+      "text_id": 249,
+      "paragraph_id": 69,
+      "section_id": 22,
+      "text": "As for the role of consciousness in integration, this study speaks for such a role, with two possible interpretations: Either no genuine integration occurs in the absence of awareness, or it is limited to small integration windows, in line with the windows-of-integration hypothesis (Mudrik et al., 2014).",
+      "page_number": null
+    },
+    {
+      "text_id": 250,
+      "paragraph_id": 69,
+      "section_id": 22,
+      "text": "When these processes become more and more demanding, consciousness might still be required for them to occur.",
+      "page_number": null
+    },
+    {
+      "text_id": 251,
+      "paragraph_id": 71,
+      "section_id": 23,
+      "text": "Action Editor: Alice J O'Toole Editor: D Stephen Lindsay",
+      "page_number": null
+    },
+    {
+      "text_id": 252,
+      "paragraph_id": 73,
+      "section_id": 24,
+      "text": "We thank Dorit Inbar and Uri Koriski for their help in programming Experiments 1 and 2, and Shir Levin and Alex Manevich for their help in data collection.",
+      "page_number": null
+    },
+    {
+      "text_id": 253,
+      "paragraph_id": 73,
+      "section_id": 24,
+      "text": "We especially thank Natalie Biderman for her insightful comments on the manuscript and for help in programming some of the supplementary analyses and in designing the figures.",
+      "page_number": null
+    },
+    {
+      "text_id": 254,
+      "paragraph_id": 73,
+      "section_id": 24,
+      "text": "Finally, we thank the members of the Mudrik lab for fruitful discussions throughout this project.",
+      "page_number": null
+    },
+    {
+      "text_id": 255,
+      "paragraph_id": 75,
+      "section_id": 25,
+      "text": "This study was supported by the Israel Science Foundation (Grant No.",
+      "page_number": null
+    },
+    {
+      "text_id": 256,
+      "paragraph_id": 75,
+      "section_id": 25,
+      "text": "1847/16).",
+      "page_number": null
+    },
+    {
+      "text_id": 257,
+      "paragraph_id": 77,
+      "section_id": 26,
+      "text": "All data and materials have been made publicly available via the Open Science Framework and can be accessed at osf.io/7236z.",
+      "page_number": null
+    },
+    {
+      "text_id": 258,
+      "paragraph_id": 77,
+      "section_id": 26,
+      "text": "The design and analysis plans for the experiments were preregistered (Experiment 2: osf.io/5dpvs, Experiment 3: osf.io/3ccv3, Experiment 4: osf.io/5jnkg, Control Experiment 1: osf.io/hvh8f, Control Experiment 2: osf.io/kzgtr).",
+      "page_number": null
+    },
+    {
+      "text_id": 259,
+      "paragraph_id": 77,
+      "section_id": 26,
+      "text": "Deviations from our preregistered analysis plans, as well as the results of the original analyses, are detailed in Supplemental Note and Tables S1 and S2 in the Supplemental Material available online.",
+      "page_number": null
+    },
+    {
+      "text_id": 260,
+      "paragraph_id": 77,
+      "section_id": 26,
+      "text": "The complete",
+      "page_number": null
+    },
+    {
+      "text_id": 261,
+      "paragraph_id": 79,
+      "section_id": 27,
+      "text": "The author(s) declared that there were no conflicts of interest with respect to the authorship or the publication of this article.",
+      "page_number": null
+    },
+    {
+      "text_id": 262,
+      "paragraph_id": 81,
+      "section_id": 28,
+      "text": "D Biderman and L Mudrik designed Experiments 1, 2, and 3 and Control Experiment 1.",
+      "page_number": null
+    },
+    {
+      "text_id": 263,
+      "paragraph_id": 81,
+      "section_id": 28,
+      "text": "All of the authors designed Control Experiment 2 and Experiment 4.",
+      "page_number": null
+    },
+    {
+      "text_id": 264,
+      "paragraph_id": 81,
+      "section_id": 28,
+      "text": "D Biderman ran Experiments 1, 2, and 3 and Control Experiment 1, and Y Shir ran Control Experiment 2 and Experiment 4.",
+      "page_number": null
+    },
+    {
+      "text_id": 265,
+      "paragraph_id": 81,
+      "section_id": 28,
+      "text": "D Biderman analyzed the data and wrote the manuscript, which was modified by all of the authors.",
+      "page_number": null
+    },
+    {
+      "text_id": 266,
+      "paragraph_id": 81,
+      "section_id": 28,
+      "text": "All the authors approved the final manuscript for submission.",
+      "page_number": null
+    },
+    {
+      "text_id": 267,
+      "paragraph_id": 83,
+      "section_id": 29,
+      "text": "Additional supporting information can be found at http:// journals.sagepub.com/doi/suppl/10.1177/0956797620915887 Note 1.",
+      "page_number": null
+    },
+    {
+      "text_id": 268,
+      "paragraph_id": 83,
+      "section_id": 29,
+      "text": "When we included all participants in the analysis, the 95% HDI of the context effect for the fourth distance level reliably excluded zero as well.",
+      "page_number": null
+    },
+    {
+      "text_id": 269,
+      "paragraph_id": 84,
+      "section_id": 30,
+      "text": "Fig 1 Stimuli in all experiments.",
+      "page_number": null
+    },
+    {
+      "text_id": 270,
+      "paragraph_id": 84,
+      "section_id": 30,
+      "text": "The stimuli in Experiments 1 and 2 (a, left) consisted of an ambiguous object, which could be interpreted as either B or 13, and context inducers, which flanked the ambiguous object.",
+      "page_number": null
+    },
+    {
+      "text_id": 271,
+      "paragraph_id": 84,
+      "section_id": 30,
+      "text": "The symbols context inducers were used in Experiment 1 only.",
+      "page_number": null
+    },
+    {
+      "text_id": 272,
+      "paragraph_id": 84,
+      "section_id": 30,
+      "text": "The numbers and letters context inducers were used in Experiments 1 and 2.",
+      "page_number": null
+    },
+    {
+      "text_id": 273,
+      "paragraph_id": 84,
+      "section_id": 30,
+      "text": "Colored borders indicate whether the context was congruent with classification of the object as the number 13 (blue) or incongruent with it (red).",
+      "page_number": null
+    },
+    {
+      "text_id": 274,
+      "paragraph_id": 84,
+      "section_id": 30,
+      "text": "Distance between the parts of the ambiguous stimulus (a, right) was increased in equal steps to create six levels of distance.",
+      "page_number": null
+    },
+    {
+      "text_id": 275,
+      "paragraph_id": 84,
+      "section_id": 30,
+      "text": "Example congruent (Hebrew word) and incongruent (Hebrew pseudoword) stimuli used in Experiment 3 (b) are shown separately for trials in which the ambiguous letter appeared in handwritten style and print style.",
+      "page_number": null
+    },
+    {
+      "text_id": 276,
+      "paragraph_id": 84,
+      "section_id": 30,
+      "text": "Associated masks are shown in the middle column.",
+      "page_number": null
+    },
+    {
+      "text_id": 277,
+      "paragraph_id": 84,
+      "section_id": 30,
+      "text": "Three distance versions of an ambiguous object in handwritten style and print style are shown on the right.",
+      "page_number": null
+    },
+    {
+      "text_id": 278,
+      "paragraph_id": 84,
+      "section_id": 30,
+      "text": "Dashed circles denote the loci of physical changes.",
+      "page_number": null
+    },
+    {
+      "text_id": 279,
+      "paragraph_id": 84,
+      "section_id": 30,
+      "text": "Example stimuli for trials with number and letter context inducers in Experiment 4 (c) are shown separately for the categorical and lexical conditions.In the categorical condition, the ambiguous object ranged from the number 6 to the Hebrew letter ‫ט‬ /tet/, forming the sequence 5-6-7 or the Hebrew word /matar/ (rain), respectively.",
+      "page_number": null
+    },
+    {
+      "text_id": 280,
+      "paragraph_id": 84,
+      "section_id": 30,
+      "text": "In the lexical condition, the ambiguous object ranged from the Hebrew letter ‫ג‬ (/gimel/) to ‫ט‬ (/tet/), forming Hebrew words that visually resemble the categorical stimuli.",
+      "page_number": null
+    },
+    {
+      "text_id": 281,
+      "paragraph_id": 84,
+      "section_id": 30,
+      "text": "Associated masks are shown in the middle column.",
+      "page_number": null
+    },
+    {
+      "text_id": 282,
+      "paragraph_id": 84,
+      "section_id": 30,
+      "text": "Six distance versions of an ambiguous object are shown at the right for each of the conditions.",
+      "page_number": null
+    },
+    {
+      "text_id": 283,
+      "paragraph_id": 84,
+      "section_id": 30,
+      "text": "The dashed circles mark the changes in the stimuli.",
+      "page_number": null
+    },
+    {
+      "text_id": 284,
+      "paragraph_id": 85,
+      "section_id": 31,
+      "text": "Dist × Let Dist × Num",
+      "page_number": null
+    },
+    {
+      "text_id": 285,
+      "paragraph_id": 86,
+      "section_id": 32,
+      "text": "Fig 3 Results of Experiments 1 and 2.",
+      "page_number": null
+    },
+    {
+      "text_id": 286,
+      "paragraph_id": 86,
+      "section_id": 32,
+      "text": "The top row shows mean aggregate classifications of the ambiguous stimulus as 13 (dots) and psychometric-function fits as a function of distance between the two parts of the ambiguous stimulus and whether the context inducers were letters, symbols, or numbers (lines).",
+      "page_number": null
+    },
+    {
+      "text_id": 287,
+      "paragraph_id": 86,
+      "section_id": 32,
+      "text": "Error bars denote Wilson 95% binomial confidence intervals.",
+      "page_number": null
+    },
+    {
+      "text_id": 288,
+      "paragraph_id": 86,
+      "section_id": 32,
+      "text": "The middle row shows group-level posterior coefficient estimates for the key variables in each experiment (estimates were obtained from a multilevel logistic regression model).",
+      "page_number": null
+    },
+    {
+      "text_id": 289,
+      "paragraph_id": 86,
+      "section_id": 32,
+      "text": "The bottom row shows posterior coefficients for numbers and letters for each distance.",
+      "page_number": null
+    },
+    {
+      "text_id": 290,
+      "paragraph_id": 86,
+      "section_id": 32,
+      "text": "In the middle and bottom rows, dots indicate medians, and the width of the violin plots denotes the probability density in the full range of the posterior (i.e., depicting every Markov chain Monte Carlo sample of the posterior).",
+      "page_number": null
+    },
+    {
+      "text_id": 291,
+      "paragraph_id": 86,
+      "section_id": 32,
+      "text": "Error bars denote 95% highest-density intervals (HDIs).",
+      "page_number": null
+    },
+    {
+      "text_id": 292,
+      "paragraph_id": 86,
+      "section_id": 32,
+      "text": "The dashed lines indicate the point at which the regression coefficient equals 0 and is therefore not predictive of the outcome variable.",
+      "page_number": null
+    },
+    {
+      "text_id": 293,
+      "paragraph_id": 86,
+      "section_id": 32,
+      "text": "Effects for which the 95% HDI excluded 0 are marked with an asterisk.",
+      "page_number": null
+    },
+    {
+      "text_id": 294,
+      "paragraph_id": 86,
+      "section_id": 32,
+      "text": "Model predictors were standardized so the regression coefficients would all lie on the same scale.",
+      "page_number": null
+    },
+    {
+      "text_id": 295,
+      "paragraph_id": 87,
+      "section_id": 33,
+      "text": "Fig 4 Results of Experiment 3a (a) and Experiment 3b (b).",
+      "page_number": null
+    },
+    {
+      "text_id": 296,
+      "paragraph_id": 87,
+      "section_id": 33,
+      "text": "The graphs in the left column show mean aggregate classifications of the ambiguous stimulus as the reference letter (dots) overlaid with psychometric-function fits (lines).",
+      "page_number": null
+    },
+    {
+      "text_id": 297,
+      "paragraph_id": 87,
+      "section_id": 33,
+      "text": "The proportion of classifications is shown as a function of distance between the two parts of the ambiguous stimulus and trial type (congruent vs. incongruent).",
+      "page_number": null
+    },
+    {
+      "text_id": 298,
+      "paragraph_id": 87,
+      "section_id": 33,
+      "text": "Error bars denote Wilson 95% binomial confidence intervals.",
+      "page_number": null
+    },
+    {
+      "text_id": 299,
+      "paragraph_id": 87,
+      "section_id": 33,
+      "text": "The middle column shows the regression coefficients for the distance, context, and Distance × Context effects, and the right column shows the context coefficient for each distance.",
+      "page_number": null
+    },
+    {
+      "text_id": 300,
+      "paragraph_id": 87,
+      "section_id": 33,
+      "text": "In the violin plots, dots indicate medians, and the width of the violin plots denotes the probability density in the full range of the posterior (i.e., depicting every Markov chain Monte Carlo sample of the posterior).",
+      "page_number": null
+    },
+    {
+      "text_id": 301,
+      "paragraph_id": 87,
+      "section_id": 33,
+      "text": "Error bars denote 95% highest-density intervals (HDIs).",
+      "page_number": null
+    },
+    {
+      "text_id": 302,
+      "paragraph_id": 87,
+      "section_id": 33,
+      "text": "The dashed lines indicate the point at which the regression coefficient equals 0 and is therefore not predictive of the outcome variable.",
+      "page_number": null
+    },
+    {
+      "text_id": 303,
+      "paragraph_id": 87,
+      "section_id": 33,
+      "text": "Effects for which the 95% HDI excluded 0 are marked with an asterisk.",
+      "page_number": null
+    },
+    {
+      "text_id": 304,
+      "paragraph_id": 87,
+      "section_id": 33,
+      "text": "Model predictors were standardized so the regression coefficients would all lie on the same scale.",
+      "page_number": null
+    },
+    {
+      "text_id": 305,
+      "paragraph_id": 88,
+      "section_id": 34,
+      "text": "Fig 5 Results of Experiment 4a (a, b) and Experiment 4b (c, d).",
+      "page_number": null
+    },
+    {
+      "text_id": 306,
+      "paragraph_id": 88,
+      "section_id": 34,
+      "text": "The graphs in (a) and (c) show mean aggregate classifications of the ambiguous stimulus as the letter /tet/ (dots) and psychometric-function fits (lines), separately for the categorical and lexical conditions.",
+      "page_number": null
+    },
+    {
+      "text_id": 307,
+      "paragraph_id": 88,
+      "section_id": 34,
+      "text": "The proportion of classifications is shown as a function of distance in the ambiguous stimulus and whether the context was of numbers or letters (categorical condition) or whether the context was congruent or incongruent (lexical condition).",
+      "page_number": null
+    },
+    {
+      "text_id": 308,
+      "paragraph_id": 88,
+      "section_id": 34,
+      "text": "Error bars denote Wilson 95% binomial confidence intervals.",
+      "page_number": null
+    },
+    {
+      "text_id": 309,
+      "paragraph_id": 88,
+      "section_id": 34,
+      "text": "The violin plots in (b) and (d) show group-level posterior coefficient estimates for the key variables in each experiment as well as the context coefficient for each distance (shown separately for the categorical and lexical conditions).",
+      "page_number": null
+    },
+    {
+      "text_id": 310,
+      "paragraph_id": 88,
+      "section_id": 34,
+      "text": "Dots indicate medians, and the width of the violin plots denotes the probability density in the full range of the posterior (i.e., depicting every Markov chain Monte Carlo sample of the posterior).",
+      "page_number": null
+    },
+    {
+      "text_id": 311,
+      "paragraph_id": 88,
+      "section_id": 34,
+      "text": "Error bars denote 95% highest-density intervals (HDIs).",
+      "page_number": null
+    },
+    {
+      "text_id": 312,
+      "paragraph_id": 88,
+      "section_id": 34,
+      "text": "The dashed lines indicate the point in which the regression coefficient equals 0 and is therefore not predictive of the outcome variable.",
+      "page_number": null
+    },
+    {
+      "text_id": 313,
+      "paragraph_id": 88,
+      "section_id": 34,
+      "text": "Effects for which the 95% HDI excluded 0 are marked with an asterisk.",
+      "page_number": null
+    },
+    {
+      "text_id": 314,
+      "paragraph_id": 88,
+      "section_id": 34,
+      "text": "Model predictors were standardized so the regression coefficients would all lie on the same scale.",
+      "page_number": null
+    },
+    {
+      "text_id": 315,
+      "paragraph_id": 89,
+      "section_id": 35,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 316,
+      "paragraph_id": 90,
+      "section_id": 35,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 317,
+      "paragraph_id": 91,
+      "section_id": 35,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 318,
+      "paragraph_id": 92,
+      "section_id": 35,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 319,
+      "paragraph_id": 93,
+      "section_id": 35,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 320,
+      "paragraph_id": 94,
+      "section_id": 35,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 321,
+      "paragraph_id": 95,
+      "section_id": 35,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 322,
+      "paragraph_id": 96,
+      "section_id": 35,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 323,
+      "paragraph_id": 97,
+      "section_id": 35,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 324,
+      "paragraph_id": 98,
+      "section_id": 35,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 325,
+      "paragraph_id": 99,
+      "section_id": 35,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 326,
+      "paragraph_id": 100,
+      "section_id": 35,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 327,
+      "paragraph_id": 101,
+      "section_id": 35,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 328,
+      "paragraph_id": 102,
+      "section_id": 35,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 329,
+      "paragraph_id": 103,
+      "section_id": 35,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 330,
+      "paragraph_id": 104,
+      "section_id": 35,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 331,
+      "paragraph_id": 105,
+      "section_id": 35,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 332,
+      "paragraph_id": 106,
+      "section_id": 35,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 333,
+      "paragraph_id": 107,
+      "section_id": 35,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 334,
+      "paragraph_id": 108,
+      "section_id": 35,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 335,
+      "paragraph_id": 109,
+      "section_id": 35,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 336,
+      "paragraph_id": 110,
+      "section_id": 35,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 337,
+      "paragraph_id": 111,
+      "section_id": 35,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 338,
+      "paragraph_id": 112,
+      "section_id": 35,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 339,
+      "paragraph_id": 113,
+      "section_id": 35,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 340,
+      "paragraph_id": 114,
+      "section_id": 35,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 341,
+      "paragraph_id": 115,
+      "section_id": 35,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 342,
+      "paragraph_id": 116,
+      "section_id": 35,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 343,
+      "paragraph_id": 117,
+      "section_id": 35,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 344,
+      "paragraph_id": 118,
+      "section_id": 35,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 345,
+      "paragraph_id": 119,
+      "section_id": 35,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 346,
+      "paragraph_id": 120,
+      "section_id": 35,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 347,
+      "paragraph_id": 121,
+      "section_id": 35,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 348,
+      "paragraph_id": 122,
+      "section_id": 35,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 349,
+      "paragraph_id": 123,
+      "section_id": 35,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 350,
+      "paragraph_id": 124,
+      "section_id": 35,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 351,
+      "paragraph_id": 125,
+      "section_id": 35,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 352,
+      "paragraph_id": 126,
+      "section_id": 35,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 353,
+      "paragraph_id": 127,
+      "section_id": 35,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 354,
+      "paragraph_id": 128,
+      "section_id": 35,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 355,
+      "paragraph_id": 129,
+      "section_id": 35,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 356,
+      "paragraph_id": 130,
+      "section_id": 35,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 357,
+      "paragraph_id": 131,
+      "section_id": 35,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 358,
+      "paragraph_id": 132,
+      "section_id": 35,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 359,
+      "paragraph_id": 133,
+      "section_id": 35,
+      "text": "",
+      "page_number": null
+    }
+  ],
+  "section": [
+    {
+      "section_id": 0,
+      "header": "Abstract",
+      "parent_section_id": null,
+      "section_type": "abstract",
+      "classification_score": null
+    },
+    {
+      "section_id": 1,
+      "header": "[div-01]",
+      "parent_section_id": null,
+      "section_type": "intro",
+      "classification_score": null
+    },
+    {
+      "section_id": 2,
+      "header": "Method",
+      "parent_section_id": null,
+      "section_type": "method",
+      "classification_score": null
+    },
+    {
+      "section_id": 3,
+      "header": "Participants",
+      "parent_section_id": null,
+      "section_type": "method",
+      "classification_score": null
+    },
+    {
+      "section_id": 4,
+      "header": "Apparatus and stimuli",
+      "parent_section_id": null,
+      "section_type": "method",
+      "classification_score": null
+    },
+    {
+      "section_id": 5,
+      "header": "Experiment 4 (categorical and lexical contexts).",
+      "parent_section_id": null,
+      "section_type": "method",
+      "classification_score": null
+    },
+    {
+      "section_id": 6,
+      "header": "Procedure Experimental sessions.",
+      "parent_section_id": null,
+      "section_type": "method",
+      "classification_score": null
+    },
+    {
+      "section_id": 7,
+      "header": "Sequence of events.",
+      "parent_section_id": null,
+      "section_type": "method",
+      "classification_score": null
+    },
+    {
+      "section_id": 8,
+      "header": "Experimental tasks.",
+      "parent_section_id": null,
+      "section_type": "method",
+      "classification_score": null
+    },
+    {
+      "section_id": 9,
+      "header": "Unconscious b",
+      "parent_section_id": null,
+      "section_type": "method",
+      "classification_score": null
+    },
+    {
+      "section_id": 10,
+      "header": "Analysis",
+      "parent_section_id": null,
+      "section_type": "method",
+      "classification_score": null
+    },
+    {
+      "section_id": 11,
+      "header": "Multilevel Bayesian modeling.",
+      "parent_section_id": null,
+      "section_type": "method",
+      "classification_score": null
+    },
+    {
+      "section_id": 13,
+      "header": "Visibility of contextual inducers",
+      "parent_section_id": null,
+      "section_type": "results",
+      "classification_score": null
+    },
+    {
+      "section_id": 14,
+      "header": "Experiments 1 and 2: categorical context effects on B/13 classification",
+      "parent_section_id": null,
+      "section_type": "results",
+      "classification_score": null
+    },
+    {
+      "section_id": 15,
+      "header": "Experiment 1b (unconscious processing).",
+      "parent_section_id": null,
+      "section_type": "results",
+      "classification_score": null
+    },
+    {
+      "section_id": 16,
+      "header": "Experiment 3: lexical context effects on letter classification",
+      "parent_section_id": null,
+      "section_type": "results",
+      "classification_score": null
+    },
+    {
+      "section_id": 17,
+      "header": "Experiment 3b (unconscious processing).",
+      "parent_section_id": null,
+      "section_type": "results",
+      "classification_score": null
+    },
+    {
+      "section_id": 18,
+      "header": "Experiment 4: within-participants comparison of categorical and lexical context effects",
+      "parent_section_id": null,
+      "section_type": "results",
+      "classification_score": null
+    },
+    {
+      "section_id": 19,
+      "header": "Experiment 4a (conscious processing).",
+      "parent_section_id": null,
+      "section_type": "results",
+      "classification_score": null
+    },
+    {
+      "section_id": 20,
+      "header": "Experiment 4b (unconscious processing).",
+      "parent_section_id": null,
+      "section_type": "results",
+      "classification_score": null
+    },
+    {
+      "section_id": 21,
+      "header": "Meta-analysis",
+      "parent_section_id": null,
+      "section_type": "results",
+      "classification_score": null
+    },
+    {
+      "section_id": 22,
+      "header": "Discussion",
+      "parent_section_id": null,
+      "section_type": "discussion",
+      "classification_score": null
+    },
+    {
+      "section_id": 23,
+      "header": "Transparency",
+      "parent_section_id": null,
+      "section_type": "discussion",
+      "classification_score": null
+    },
+    {
+      "section_id": 24,
+      "header": "Acknowledgments",
+      "parent_section_id": null,
+      "section_type": "acknowledgement",
+      "classification_score": null
+    },
+    {
+      "section_id": 25,
+      "header": "Funding",
+      "parent_section_id": null,
+      "section_type": "funding",
+      "classification_score": null
+    },
+    {
+      "section_id": 26,
+      "header": "Open Practices",
+      "parent_section_id": null,
+      "section_type": "funding",
+      "classification_score": null
+    },
+    {
+      "section_id": 27,
+      "header": "Declaration of Conflicting Interests",
+      "parent_section_id": null,
+      "section_type": "conflict",
+      "classification_score": null
+    },
+    {
+      "section_id": 28,
+      "header": "Author Contributions",
+      "parent_section_id": null,
+      "section_type": "contribution",
+      "classification_score": null
+    },
+    {
+      "section_id": 29,
+      "header": "Supplemental Material",
+      "parent_section_id": null,
+      "section_type": "annex",
+      "classification_score": null
+    },
+    {
+      "section_id": 30,
+      "header": "Fig 1",
+      "parent_section_id": null,
+      "section_type": "figure",
+      "classification_score": null
+    },
+    {
+      "section_id": 31,
+      "header": "",
+      "parent_section_id": null,
+      "section_type": "figure",
+      "classification_score": null
+    },
+    {
+      "section_id": 32,
+      "header": "Fig 3",
+      "parent_section_id": null,
+      "section_type": "figure",
+      "classification_score": null
+    },
+    {
+      "section_id": 33,
+      "header": "Fig 4",
+      "parent_section_id": null,
+      "section_type": "figure",
+      "classification_score": null
+    },
+    {
+      "section_id": 34,
+      "header": "Fig 5",
+      "parent_section_id": null,
+      "section_type": "figure",
+      "classification_score": null
+    },
+    {
+      "section_id": 35,
+      "header": "References",
+      "parent_section_id": null,
+      "section_type": "references",
+      "classification_score": null
+    }
+  ],
+  "url": [
+    {
+      "href": "osf.io/5dpvs",
+      "link_text": null,
+      "text_id": 24
+    },
+    {
+      "href": "osf.io/5jnkg",
+      "link_text": null,
+      "text_id": 25
+    },
+    {
+      "href": "osf.io/3ccv3",
+      "link_text": null,
+      "text_id": 27
+    },
+    {
+      "href": "osf.io/hvh8f",
+      "link_text": null,
+      "text_id": 27
+    },
+    {
+      "href": "osf.io/kzgtr",
+      "link_text": null,
+      "text_id": 27
+    },
+    {
+      "href": "osf.io/5jnkg",
+      "link_text": null,
+      "text_id": 27
+    },
+    {
+      "href": "osf.io/7236z",
+      "link_text": null,
+      "text_id": 29
+    },
+    {
+      "href": "osf.io/7236z",
+      "link_text": null,
+      "text_id": 48
+    },
+    {
+      "href": "osf.io/hvh8f",
+      "link_text": null,
+      "text_id": 175
+    },
+    {
+      "href": "osf.io/kzgtr",
+      "link_text": null,
+      "text_id": 175
+    },
+    {
+      "href": "osf.io/7236z",
+      "link_text": null,
+      "text_id": 257
+    },
+    {
+      "href": "osf.io/5dpvs",
+      "link_text": null,
+      "text_id": 258
+    },
+    {
+      "href": "osf.io/3ccv3",
+      "link_text": null,
+      "text_id": 258
+    },
+    {
+      "href": "osf.io/5jnkg",
+      "link_text": null,
+      "text_id": 258
+    },
+    {
+      "href": "osf.io/hvh8f",
+      "link_text": null,
+      "text_id": 258
+    },
+    {
+      "href": "osf.io/kzgtr",
+      "link_text": null,
+      "text_id": 258
+    },
+    {
+      "href": "journals.sagepub.com/doi/suppl/10.1177/0956797620915887",
+      "link_text": null,
+      "text_id": 267
+    },
+    {
+      "href": "conditions.In",
+      "link_text": null,
+      "text_id": 279
+    }
+  ],
+  "bib": [
+    {
+      "bib_type": "article",
+      "doi": "10.1038/nn.3193",
+      "title": "Humans can learn new information during sleep",
+      "authors": "Arzi, A; Shedlesky, L; Ben-Shaul, M; Nasser, K; Oksenberg, A; Hairston, I S; Sobel, N",
+      "editors": "",
+      "publisher": "",
+      "year": 2012,
+      "volume": "15",
+      "issue": "",
+      "first_page": "1460",
+      "last_page": "1465",
+      "container": "Nature Neuroscience",
+      "bib_id": 0,
+      "year_suffix": "",
+      "text_id": 315
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "In the theatre of consciousness: Global workspace theory, a rigorous scientific theory of consciousness",
+      "authors": "Baars, B J",
+      "editors": "",
+      "publisher": "",
+      "year": 1997,
+      "volume": "4",
+      "issue": "",
+      "first_page": "292",
+      "last_page": "309",
+      "container": "Journal of Consciousness Studies",
+      "bib_id": 1,
+      "year_suffix": "",
+      "text_id": 316
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1177/1754073915586225",
+      "title": "Approach and avoidance as organizing structures for motivated distance perception",
+      "authors": "Balcetis, E",
+      "editors": "",
+      "publisher": "",
+      "year": 2016,
+      "volume": "8",
+      "issue": "",
+      "first_page": "115",
+      "last_page": "128",
+      "container": "Emotion Review",
+      "bib_id": 2,
+      "year_suffix": "",
+      "text_id": 317
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1371/journal.pone.0161177",
+      "title": "Induction of Kanizsa contours requires awareness of the inducing context",
+      "authors": "Banica, T; Schwarzkopf, D S",
+      "editors": "",
+      "publisher": "",
+      "year": 2016,
+      "volume": "11",
+      "issue": "8",
+      "first_page": "161177",
+      "last_page": null,
+      "container": "PLOS ONE",
+      "bib_id": 3,
+      "year_suffix": "",
+      "text_id": 318
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1038/nrn1476",
+      "title": "Visual objects in context",
+      "authors": "Bar, M",
+      "editors": "",
+      "publisher": "",
+      "year": 2004,
+      "volume": "5",
+      "issue": "",
+      "first_page": "617",
+      "last_page": "629",
+      "container": "Nature Reviews Neuroscience",
+      "bib_id": 4,
+      "year_suffix": "",
+      "text_id": 319
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1163/156856897X00357",
+      "title": "The psychophysics toolbox",
+      "authors": "Brainard, D H",
+      "editors": "",
+      "publisher": "",
+      "year": 1997,
+      "volume": "10",
+      "issue": "",
+      "first_page": "433",
+      "last_page": "436",
+      "container": "Spatial Vision",
+      "bib_id": 5,
+      "year_suffix": "",
+      "text_id": 320
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1080/00221309.1955.9710133",
+      "title": "Perceptual identification and perceptual organization",
+      "authors": "Bruner, J S; Minturn, A L",
+      "editors": "",
+      "publisher": "",
+      "year": 1955,
+      "volume": "53",
+      "issue": "",
+      "first_page": "21",
+      "last_page": "28",
+      "container": "The Journal of General Psychology",
+      "bib_id": 6,
+      "year_suffix": "",
+      "text_id": 321
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1016/j.cub.2005.01.055",
+      "title": "Contextual modulation outside of awareness",
+      "authors": "Clifford, C W G; Harris, J A",
+      "editors": "",
+      "publisher": "",
+      "year": 2005,
+      "volume": "15",
+      "issue": "",
+      "first_page": "574",
+      "last_page": "578",
+      "container": "Current Biology",
+      "bib_id": 7,
+      "year_suffix": "",
+      "text_id": 322
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1093/brain/123.2.291",
+      "title": "The visual word form area: Spatial and temporal characterization of an initial stage of reading in normal subjects and posterior split-brain patients",
+      "authors": "Cohen, L; Dehaene, S; Naccache, L; Lehéricy, S; Dehaene-Lambertz, G; Hénaff, M A; Michel, F",
+      "editors": "",
+      "publisher": "",
+      "year": 2000,
+      "volume": "123",
+      "issue": "",
+      "first_page": "291",
+      "last_page": "307",
+      "container": "Brain",
+      "bib_id": 8,
+      "year_suffix": "",
+      "text_id": 323
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1016/S0010-0277(00)00123-2",
+      "title": "Towards a cognitive neuroscience of consciousness: Basic evidence and a workspace framework",
+      "authors": "Dehaene, S; Naccache, L",
+      "editors": "",
+      "publisher": "",
+      "year": 2001,
+      "volume": "79",
+      "issue": "",
+      "first_page": "1",
+      "last_page": "37",
+      "container": "Cognition",
+      "bib_id": 9,
+      "year_suffix": "",
+      "text_id": 324
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1177/0956797616665578",
+      "title": "Do you see the forest or the tree? Neural gain and breadth versus focus in perceptual processing",
+      "authors": "Eldar, E; Niv, Y; Cohen, J D",
+      "editors": "",
+      "publisher": "",
+      "year": 2016,
+      "volume": "27",
+      "issue": "",
+      "first_page": "1632",
+      "last_page": "1643",
+      "container": "Psychological Science",
+      "bib_id": 10,
+      "year_suffix": "",
+      "text_id": 325
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1073/pnas.1617268114",
+      "title": "Perceptual integration without conscious access",
+      "authors": "Fahrenfort, J J; Van Leeuwen, J; Olivers, C N L; Hogendoorn, H",
+      "editors": "",
+      "publisher": "",
+      "year": 2017,
+      "volume": "114",
+      "issue": "",
+      "first_page": "3744",
+      "last_page": "3749",
+      "container": "Proceedings of the National Academy of Sciences",
+      "bib_id": 11,
+      "year_suffix": "",
+      "text_id": 326
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1016/j.cognition.2014.02.008",
+      "title": "Temporal structure coding with and without awareness",
+      "authors": "Faivre, N; Koch, C",
+      "editors": "",
+      "publisher": "",
+      "year": 2014,
+      "volume": "131",
+      "issue": "",
+      "first_page": "404",
+      "last_page": "414",
+      "container": "Cognition",
+      "bib_id": 12,
+      "year_suffix": "",
+      "text_id": 327
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1177/0956797614547916",
+      "title": "Multisensory integration in complete unawareness: Evidence from audiovisual congruency priming",
+      "authors": "Faivre, N; Mudrik, L; Schwartz, N; Koch, C",
+      "editors": "",
+      "publisher": "",
+      "year": 2014,
+      "volume": "25",
+      "issue": "",
+      "first_page": "2006",
+      "last_page": "2016",
+      "container": "Psy chological Science",
+      "bib_id": 13,
+      "year_suffix": "",
+      "text_id": 328
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1017/S0140525X15000965",
+      "title": "Cognition does not affect perception: Evaluating the evidence for \"top-down\" effects",
+      "authors": "Firestone, C; Scholl, B J",
+      "editors": "",
+      "publisher": "",
+      "year": 2016,
+      "volume": "39",
+      "issue": "",
+      "first_page": null,
+      "last_page": null,
+      "container": "Behavioral & Brain Sciences",
+      "bib_id": 14,
+      "year_suffix": "",
+      "text_id": 329
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "",
+      "authors": "Gelman, A; Carlin, J B; Stern, H S; Dunson, D B; Vehtari, A; Rubin, D B",
+      "editors": "",
+      "publisher": "CRC Press",
+      "year": 2013,
+      "volume": "",
+      "issue": "",
+      "first_page": null,
+      "last_page": null,
+      "container": "",
+      "bib_id": 15,
+      "year_suffix": "",
+      "text_id": 330
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1523/jneurosci.4753-08.2009",
+      "title": "The processing of three-dimensional shape from disparity in the human brain",
+      "authors": "Georgieva, S; Peeters, R; Kolster, H; Todd, J T; Orban, G A",
+      "editors": "",
+      "publisher": "",
+      "year": 2009,
+      "volume": "29",
+      "issue": "",
+      "first_page": "727",
+      "last_page": "742",
+      "container": "The Journal of Neuroscience",
+      "bib_id": 16,
+      "year_suffix": "",
+      "text_id": 331
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1126/science.273.5282.1699",
+      "title": "Three cognitive markers of unconscious semantic activation",
+      "authors": "Greenwald, A G; Draine, S C; Abrams, R L",
+      "editors": "",
+      "publisher": "",
+      "year": 1996,
+      "volume": "273",
+      "issue": "",
+      "first_page": "1699",
+      "last_page": "1702",
+      "container": "Science",
+      "bib_id": 17,
+      "year_suffix": "",
+      "text_id": 332
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1016/S0042-6989(01)00073-6",
+      "title": "The lateral occipital complex and its role in object recognition",
+      "authors": "Grill-Spector, K; Kourtzi, Z; Kanwisher, N",
+      "editors": "",
+      "publisher": "",
+      "year": 2001,
+      "volume": "41",
+      "issue": "",
+      "first_page": "1409",
+      "last_page": "1422",
+      "container": "Vision Research",
+      "bib_id": 18,
+      "year_suffix": "",
+      "text_id": 333
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1177/0956797611399293",
+      "title": "Contextual illusions reveal the limit of unconscious visual processing",
+      "authors": "Harris, J J; Schwarzkopf, D S; Song, C; Bahrami, B; Rees, G",
+      "editors": "",
+      "publisher": "",
+      "year": 2011,
+      "volume": "22",
+      "issue": "",
+      "first_page": "399",
+      "last_page": "405",
+      "container": "Psychological Science",
+      "bib_id": 19,
+      "year_suffix": "",
+      "text_id": 334
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1167/16.3.17",
+      "title": "Priming in a shape task but not in a category task under continuous flash suppression",
+      "authors": "Hesselmann, G; Darcy, N; Ludwig, K; Sterzer, P",
+      "editors": "",
+      "publisher": "",
+      "year": 2016,
+      "volume": "16",
+      "issue": "3",
+      "first_page": "17",
+      "last_page": null,
+      "container": "Journal of Vision",
+      "bib_id": 20,
+      "year_suffix": "",
+      "text_id": 335
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "Receptive fields, binocular interaction and functional architecture in the cat's visual cortex",
+      "authors": "Hubel, D H; Wiesel, T N",
+      "editors": "",
+      "publisher": "",
+      "year": 1962,
+      "volume": "160",
+      "issue": "",
+      "first_page": "106",
+      "last_page": "154",
+      "container": "The Journal of Physiology",
+      "bib_id": 21,
+      "year_suffix": "",
+      "text_id": 336
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "",
+      "authors": "Kanizsa, G",
+      "editors": "",
+      "publisher": "Praeger",
+      "year": 1979,
+      "volume": "",
+      "issue": "",
+      "first_page": null,
+      "last_page": null,
+      "container": "",
+      "bib_id": 22,
+      "year_suffix": "",
+      "text_id": 337
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1146/annurev-vision-082114-035447",
+      "title": "Deep neural networks: A new framework for modeling biological vision and brain information processing",
+      "authors": "Kriegeskorte, N",
+      "editors": "",
+      "publisher": "",
+      "year": 2015,
+      "volume": "1",
+      "issue": "",
+      "first_page": "417",
+      "last_page": "446",
+      "container": "Annual Review of Vision Science",
+      "bib_id": 23,
+      "year_suffix": "",
+      "text_id": 338
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "",
+      "authors": "Kruschke, J K",
+      "editors": "",
+      "publisher": "Academic Press",
+      "year": 2014,
+      "volume": "",
+      "issue": "",
+      "first_page": null,
+      "last_page": null,
+      "container": "",
+      "bib_id": 24,
+      "year_suffix": "",
+      "text_id": 339
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1177/0956797613504964",
+      "title": "Unconscious processing of an abstract concept",
+      "authors": "Lin, Z; Murray, S O",
+      "editors": "",
+      "publisher": "",
+      "year": 2014,
+      "volume": "25",
+      "issue": "",
+      "first_page": "296",
+      "last_page": "298",
+      "container": "Psychological Science",
+      "bib_id": 25,
+      "year_suffix": "",
+      "text_id": 340
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1073/pnas.120095210910.1167/12.9.86",
+      "title": "Dynamics of unconscious contextual effects in orientation processing",
+      "authors": "Mareschal, I; Clifford, C",
+      "editors": "",
+      "publisher": "",
+      "year": 2012,
+      "volume": "109",
+      "issue": "",
+      "first_page": "7553",
+      "last_page": "7558",
+      "container": "Proceedings of the National Academy of Sciences",
+      "bib_id": 26,
+      "year_suffix": "",
+      "text_id": 341
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.3758/s13423-017-1292-x",
+      "title": "A critical reexamination of doing arithmetic nonconsciously",
+      "authors": "Moors, P; Hesselmann, G",
+      "editors": "",
+      "publisher": "",
+      "year": 2018,
+      "volume": "25",
+      "issue": "",
+      "first_page": "472",
+      "last_page": "481",
+      "container": "Psychonomic Bulletin & Review",
+      "bib_id": 27,
+      "year_suffix": "",
+      "text_id": 342
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1016/j.tics.2017.06.005",
+      "title": "Continuous flash suppression: Stimulus fractionation rather than integration",
+      "authors": "Moors, P; Hesselmann, G; Wagemans, J; Van Ee, R",
+      "editors": "",
+      "publisher": "",
+      "year": 2017,
+      "volume": "21",
+      "issue": "",
+      "first_page": "719",
+      "last_page": "721",
+      "container": "Trends in Cognitive Sciences",
+      "bib_id": 28,
+      "year_suffix": "",
+      "text_id": 343
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.3758/s13414-015-1043-x",
+      "title": "No evidence for surface organization in Kanizsa configu-rations during continuous flash suppression",
+      "authors": "Moors, P; Wagemans, J; Van Ee, R; De-Wit, L",
+      "editors": "",
+      "publisher": "",
+      "year": 2016,
+      "volume": "78",
+      "issue": "",
+      "first_page": "902",
+      "last_page": "914",
+      "container": "Attention, Perception, & Psychophysics",
+      "bib_id": 29,
+      "year_suffix": "",
+      "text_id": 344
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1016/j.tics.2014.04.009",
+      "title": "Information integration without awareness",
+      "authors": "Mudrik, L; Faivre, N; Koch, C",
+      "editors": "",
+      "publisher": "",
+      "year": 2014,
+      "volume": "18",
+      "issue": "",
+      "first_page": "488",
+      "last_page": "496",
+      "container": "Trends in Cognitive Sciences",
+      "bib_id": 30,
+      "year_suffix": "",
+      "text_id": 345
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1167/18.3.16",
+      "title": "Size-contrast illusion induced by unconscious context",
+      "authors": "Nakashima, Y; Sugita, Y",
+      "editors": "",
+      "publisher": "",
+      "year": 2018,
+      "volume": "18",
+      "issue": "3",
+      "first_page": "16",
+      "last_page": null,
+      "container": "Journal of Vision",
+      "bib_id": 31,
+      "year_suffix": "",
+      "text_id": 346
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1146/annurev.neuro.051508.135550",
+      "title": "Representation of number in the brain",
+      "authors": "Nieder, A; Dehaene, S",
+      "editors": "",
+      "publisher": "",
+      "year": 2009,
+      "volume": "32",
+      "issue": "",
+      "first_page": "185",
+      "last_page": "208",
+      "container": "Annual Review of Neuroscience",
+      "bib_id": 32,
+      "year_suffix": "",
+      "text_id": 347
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.3389/fpsyg.2012.00620",
+      "title": "Predictive feedback and conscious visual experience",
+      "authors": "Panichello, M F; Cheung, O S; Bar, M",
+      "editors": "",
+      "publisher": "",
+      "year": 2013,
+      "volume": "3",
+      "issue": "",
+      "first_page": "620",
+      "last_page": null,
+      "container": "Frontiers in Psychology",
+      "bib_id": 33,
+      "year_suffix": "",
+      "text_id": 348
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.3758/s13414-016-1146-z",
+      "title": "Perceptual overloading reveals illusory contour perception without awareness of the inducers",
+      "authors": "Persuh, M; Emmanouil, T A; Ro, T",
+      "editors": "",
+      "publisher": "",
+      "year": 2016,
+      "volume": "78",
+      "issue": "",
+      "first_page": "1692",
+      "last_page": "1701",
+      "container": "Attention, Perception, & Psychophysics",
+      "bib_id": 34,
+      "year_suffix": "",
+      "text_id": 349
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1037/xge0000348",
+      "title": "The importance of awareness for understanding language",
+      "authors": "Rabagliati, H; Robertson, A; Carmel, D",
+      "editors": "",
+      "publisher": "",
+      "year": 2018,
+      "volume": "147",
+      "issue": "",
+      "first_page": "190",
+      "last_page": "208",
+      "container": "Journal of Experimental Psychology: General",
+      "bib_id": 35,
+      "year_suffix": "",
+      "text_id": 350
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1023/b:phen.0000041900.30172",
+      "title": "Introspection and subliminal perception",
+      "authors": "Ramsøy, T Z; Overgaard, M",
+      "editors": "",
+      "publisher": "",
+      "year": 2004,
+      "volume": "3",
+      "issue": "",
+      "first_page": "1",
+      "last_page": "23",
+      "container": "Phenomenology and the Cognitive Sciences",
+      "bib_id": 36,
+      "year_suffix": "",
+      "text_id": 351
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1016/j.concog.2012.02.013",
+      "title": "Integrating unseen events over time",
+      "authors": "Reber, T P; Henke, K",
+      "editors": "",
+      "publisher": "",
+      "year": 2012,
+      "volume": "21",
+      "issue": "",
+      "first_page": "953",
+      "last_page": "960",
+      "container": "Consciousness and Cognition",
+      "bib_id": 37,
+      "year_suffix": "",
+      "text_id": 352
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1038/14819",
+      "title": "Hierarchical models of object recognition in cortex",
+      "authors": "Riesenhuber, M; Poggio, T",
+      "editors": "",
+      "publisher": "",
+      "year": 1999,
+      "volume": "2",
+      "issue": "",
+      "first_page": "1019",
+      "last_page": "1025",
+      "container": "Nature Neuroscience",
+      "bib_id": 38,
+      "year_suffix": "",
+      "text_id": 353
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.3758/s13423-016-1170-y",
+      "title": "Regressive research: The pitfalls of post hoc data selection in the study of unconscious mental processes",
+      "authors": "Shanks, D R",
+      "editors": "",
+      "publisher": "",
+      "year": 2017,
+      "volume": "24",
+      "issue": "",
+      "first_page": "752",
+      "last_page": "775",
+      "container": "Psychonomic Bulletin & Review",
+      "bib_id": 39,
+      "year_suffix": "",
+      "text_id": 354
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1016/j.tics.2018.07.003",
+      "title": "Integration despite fractionation: Continuous flash suppression",
+      "authors": "Sklar, A Y; Deouell, L Y; Hassin, R R",
+      "editors": "",
+      "publisher": "",
+      "year": 2018,
+      "volume": "22",
+      "issue": "",
+      "first_page": "956",
+      "last_page": "957",
+      "container": "Trends in Cognitive Sciences",
+      "bib_id": 40,
+      "year_suffix": "",
+      "text_id": 355
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1038/nrn.2016",
+      "title": "Integrated information theory: From consciousness to its physical substrate",
+      "authors": "Tononi, G; Boly, M; Massimini, M; Koch, C",
+      "editors": "",
+      "publisher": "",
+      "year": 2016,
+      "volume": "17",
+      "issue": "",
+      "first_page": "450",
+      "last_page": "461",
+      "container": "Nature Reviews Neuroscience",
+      "bib_id": 41,
+      "year_suffix": "",
+      "text_id": 356
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.3758/s13414-019-01816-2",
+      "title": "",
+      "authors": "Tu, S; Wan, S; Jou, J; Ma, Y; Zhao, G; Pan, W",
+      "editors": "",
+      "publisher": "",
+      "year": 2019,
+      "volume": "",
+      "issue": "",
+      "first_page": null,
+      "last_page": null,
+      "container": "",
+      "bib_id": 42,
+      "year_suffix": "",
+      "text_id": 357
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1037/a0015329",
+      "title": "Mechanisms of masked priming: A meta-analysis",
+      "authors": "Van Den Bussche, E; Van Den Noortgate, W; Reynvoet, B",
+      "editors": "",
+      "publisher": "",
+      "year": 2009,
+      "volume": "135",
+      "issue": "",
+      "first_page": "452",
+      "last_page": "477",
+      "container": "Psychological Bulletin",
+      "bib_id": 43,
+      "year_suffix": "",
+      "text_id": 358
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1371/journal.pone.0040106",
+      "title": "Perceptual grouping without awareness: Superiority of Kanizsa triangle in breaking interocular suppression",
+      "authors": "Wang, L; Weng, X; He, S",
+      "editors": "",
+      "publisher": "",
+      "year": 2012,
+      "volume": "7",
+      "issue": "6",
+      "first_page": null,
+      "last_page": null,
+      "container": "PLOS ONE",
+      "bib_id": 44,
+      "year_suffix": "",
+      "text_id": 359
+    }
+  ],
+  "xref": [
+    {
+      "xref_id": 0,
+      "xref_type": "bib",
+      "contents": "Arzi et al., 2012;",
+      "text_id": 231
+    },
+    {
+      "xref_id": 1,
+      "xref_type": "bib",
+      "contents": "Baars, 1997;",
+      "text_id": 12
+    },
+    {
+      "xref_id": 1,
+      "xref_type": "bib",
+      "contents": "Baars, 1997;",
+      "text_id": 14
+    },
+    {
+      "xref_id": 3,
+      "xref_type": "bib",
+      "contents": "Banica & Schwarzkopf, 2016;",
+      "text_id": 21
+    },
+    {
+      "xref_id": 3,
+      "xref_type": "bib",
+      "contents": "Banica & Schwarzkopf, 2016;",
+      "text_id": 22
+    },
+    {
+      "xref_id": 3,
+      "xref_type": "bib",
+      "contents": "(Banica & Schwarzkopf, 2016;",
+      "text_id": 226
+    },
+    {
+      "xref_id": 3,
+      "xref_type": "bib",
+      "contents": "(Banica & Schwarzkopf, 2016;",
+      "text_id": 227
+    },
+    {
+      "xref_id": 4,
+      "xref_type": "bib",
+      "contents": "(Bar, 2004)",
+      "text_id": 8
+    },
+    {
+      "xref_id": 4,
+      "xref_type": "bib",
+      "contents": "(Bar, 2004)",
+      "text_id": 226
+    },
+    {
+      "xref_id": 4,
+      "xref_type": "bib",
+      "contents": "(Bar, 2004)",
+      "text_id": 228
+    },
+    {
+      "xref_id": 5,
+      "xref_type": "bib",
+      "contents": "(Brainard, 1997)",
+      "text_id": 46
+    },
+    {
+      "xref_id": 6,
+      "xref_type": "bib",
+      "contents": "Bruner and Minturn's (1955)",
+      "text_id": null
+    },
+    {
+      "xref_id": 6,
+      "xref_type": "bib",
+      "contents": "(Bruner & Minturn, 1955)",
+      "text_id": 24
+    },
+    {
+      "xref_id": 7,
+      "xref_type": "bib",
+      "contents": ": Clifford & Harris, 2005;",
+      "text_id": 20
+    },
+    {
+      "xref_id": 7,
+      "xref_type": "bib",
+      "contents": "Clifford & Harris, 2005;",
+      "text_id": 226
+    },
+    {
+      "xref_id": 8,
+      "xref_type": "bib",
+      "contents": "Cohen et al., 2000)",
+      "text_id": 227
+    },
+    {
+      "xref_id": 9,
+      "xref_type": "bib",
+      "contents": "Dehaene & Naccache, 2001)",
+      "text_id": 12
+    },
+    {
+      "xref_id": 10,
+      "xref_type": "bib",
+      "contents": "(Eldar, Niv, & Cohen, 2016)",
+      "text_id": 28
+    },
+    {
+      "xref_id": 10,
+      "xref_type": "bib",
+      "contents": "(Eldar et al., 2016)",
+      "text_id": 64
+    },
+    {
+      "xref_id": 11,
+      "xref_type": "bib",
+      "contents": "Fahrenfort, van Leeuwen, Olivers, & Hogendoorn, 2017;",
+      "text_id": 14
+    },
+    {
+      "xref_id": 11,
+      "xref_type": "bib",
+      "contents": "Fahrenfort et al., 2017;",
+      "text_id": 21
+    },
+    {
+      "xref_id": 11,
+      "xref_type": "bib",
+      "contents": "Fahrenfort et al., 2017;",
+      "text_id": 226
+    },
+    {
+      "xref_id": 13,
+      "xref_type": "bib",
+      "contents": "Faivre, Mudrik, Schwartz, & Koch, 2014",
+      "text_id": 231
+    },
+    {
+      "xref_id": 14,
+      "xref_type": "bib",
+      "contents": "Firestone & Scholl, 2016)",
+      "text_id": 5
+    },
+    {
+      "xref_id": 14,
+      "xref_type": "bib",
+      "contents": "Firestone & Scholl, 2016)",
+      "text_id": 19
+    },
+    {
+      "xref_id": 15,
+      "xref_type": "bib",
+      "contents": "(Gelman et al., 2013;",
+      "text_id": 132
+    },
+    {
+      "xref_id": 15,
+      "xref_type": "bib",
+      "contents": "(Gelman et al., 2013;",
+      "text_id": 135
+    },
+    {
+      "xref_id": 16,
+      "xref_type": "bib",
+      "contents": "(Georgieva, Peeters, Kolster, Todd, & Orban, 2009)",
+      "text_id": 3
+    },
+    {
+      "xref_id": 17,
+      "xref_type": "bib",
+      "contents": "(Greenwald, Draine, & Abrams, 1996)",
+      "text_id": 35
+    },
+    {
+      "xref_id": 18,
+      "xref_type": "bib",
+      "contents": "(Grill-Spector, Kourtzi, & Kanwisher, 2001)",
+      "text_id": 3
+    },
+    {
+      "xref_id": 19,
+      "xref_type": "bib",
+      "contents": "Harris et al., 2011)",
+      "text_id": 22
+    },
+    {
+      "xref_id": 19,
+      "xref_type": "bib",
+      "contents": "Harris et al., 2011;",
+      "text_id": 226
+    },
+    {
+      "xref_id": 20,
+      "xref_type": "bib",
+      "contents": "(Hesselmann, Darcy, Ludwig, & Sterzer, 2016)",
+      "text_id": 131
+    },
+    {
+      "xref_id": 21,
+      "xref_type": "bib",
+      "contents": "Hubel & Wiesel, 1962;",
+      "text_id": 2
+    },
+    {
+      "xref_id": 22,
+      "xref_type": "bib",
+      "contents": "(Kanizsa, 1979)",
+      "text_id": 21
+    },
+    {
+      "xref_id": 23,
+      "xref_type": "bib",
+      "contents": "(Kriegeskorte, 2015)",
+      "text_id": 4
+    },
+    {
+      "xref_id": 24,
+      "xref_type": "bib",
+      "contents": "Kruschke, 2014;",
+      "text_id": 132
+    },
+    {
+      "xref_id": 24,
+      "xref_type": "bib",
+      "contents": "Kruschke, 2014;",
+      "text_id": 135
+    },
+    {
+      "xref_id": 24,
+      "xref_type": "bib",
+      "contents": "Kruschke, 2014)",
+      "text_id": 132
+    },
+    {
+      "xref_id": 24,
+      "xref_type": "bib",
+      "contents": "Kruschke, 2014)",
+      "text_id": 135
+    },
+    {
+      "xref_id": 25,
+      "xref_type": "bib",
+      "contents": "Lin & Murray, 2014;",
+      "text_id": 231
+    },
+    {
+      "xref_id": 26,
+      "xref_type": "bib",
+      "contents": "Mareschal & Clifford, 2012;",
+      "text_id": 20
+    },
+    {
+      "xref_id": 26,
+      "xref_type": "bib",
+      "contents": "Mareschal & Clifford, 2012;",
+      "text_id": 226
+    },
+    {
+      "xref_id": 27,
+      "xref_type": "bib",
+      "contents": "(Moors & Hesselmann, 2018;",
+      "text_id": 14
+    },
+    {
+      "xref_id": 28,
+      "xref_type": "bib",
+      "contents": "(Moors, Hesselmann, Wagemans, & van Ee, 2017;",
+      "text_id": 13
+    },
+    {
+      "xref_id": 29,
+      "xref_type": "bib",
+      "contents": "Moors, Wagemans, Van Ee, & de-Wit, 2016;",
+      "text_id": 14
+    },
+    {
+      "xref_id": 29,
+      "xref_type": "bib",
+      "contents": "(Moors et al., 2016)",
+      "text_id": 21
+    },
+    {
+      "xref_id": 29,
+      "xref_type": "bib",
+      "contents": "Moors et al., 2016;",
+      "text_id": 226
+    },
+    {
+      "xref_id": 30,
+      "xref_type": "bib",
+      "contents": "(Mudrik et al., 2014)",
+      "text_id": 17
+    },
+    {
+      "xref_id": 30,
+      "xref_type": "bib",
+      "contents": "Mudrik et al., 2014)",
+      "text_id": 231
+    },
+    {
+      "xref_id": 30,
+      "xref_type": "bib",
+      "contents": "(Mudrik et al., 2014)",
+      "text_id": 233
+    },
+    {
+      "xref_id": 30,
+      "xref_type": "bib",
+      "contents": "(Mudrik et al., 2014)",
+      "text_id": 237
+    },
+    {
+      "xref_id": 30,
+      "xref_type": "bib",
+      "contents": "(Mudrik et al., 2014)",
+      "text_id": 249
+    },
+    {
+      "xref_id": 31,
+      "xref_type": "bib",
+      "contents": "Nakashima & Sugita, 2018;",
+      "text_id": 226
+    },
+    {
+      "xref_id": 32,
+      "xref_type": "bib",
+      "contents": "Nieder & Dehaene, 2009)",
+      "text_id": 227
+    },
+    {
+      "xref_id": 33,
+      "xref_type": "bib",
+      "contents": "(Panichello, Cheung, & Bar, 2013)",
+      "text_id": null
+    },
+    {
+      "xref_id": 34,
+      "xref_type": "bib",
+      "contents": "Persuh, Emmanouil, & Ro, 2016;",
+      "text_id": 21
+    },
+    {
+      "xref_id": 35,
+      "xref_type": "bib",
+      "contents": "Rabagliati, Robertson, & Carmel, 2018)",
+      "text_id": 14
+    },
+    {
+      "xref_id": 36,
+      "xref_type": "bib",
+      "contents": "Ramsøy & Overgaard, 2004",
+      "text_id": 122
+    },
+    {
+      "xref_id": 38,
+      "xref_type": "bib",
+      "contents": "Riesenhuber & Poggio, 1999)",
+      "text_id": 2
+    },
+    {
+      "xref_id": 39,
+      "xref_type": "bib",
+      "contents": "(Shanks, 2017)",
+      "text_id": 43
+    },
+    {
+      "xref_id": 39,
+      "xref_type": "bib",
+      "contents": "(Shanks, 2017)",
+      "text_id": 131
+    },
+    {
+      "xref_id": 40,
+      "xref_type": "bib",
+      "contents": "Sklar, Deouell, & Hassin, 2018)",
+      "text_id": 13
+    },
+    {
+      "xref_id": 40,
+      "xref_type": "bib",
+      "contents": "Sklar, Deouell, & Hassin, 2018)",
+      "text_id": 14
+    },
+    {
+      "xref_id": 40,
+      "xref_type": "bib",
+      "contents": "Sklar et al., 2018)",
+      "text_id": 13
+    },
+    {
+      "xref_id": 40,
+      "xref_type": "bib",
+      "contents": "Sklar et al., 2018)",
+      "text_id": 14
+    },
+    {
+      "xref_id": 41,
+      "xref_type": "bib",
+      "contents": "Tononi, Boly, Massimini, & Koch, 2016)",
+      "text_id": 12
+    },
+    {
+      "xref_id": 42,
+      "xref_type": "bib",
+      "contents": "Tu et al., 2019)",
+      "text_id": 233
+    },
+    {
+      "xref_id": 43,
+      "xref_type": "bib",
+      "contents": "Van den Noortgate, & Reynvoet, 2009)",
+      "text_id": 172
+    },
+    {
+      "xref_id": 44,
+      "xref_type": "bib",
+      "contents": "Wang, Weng, & He, 2012)",
+      "text_id": 21
+    },
+    {
+      "xref_id": 44,
+      "xref_type": "bib",
+      "contents": "Wang et al., 2012)",
+      "text_id": 226
+    },
+    {
+      "xref_id": null,
+      "xref_type": "bib",
+      "contents": "(Mudrik, Faivre, & Koch, 2014)",
+      "text_id": 11
+    },
+    {
+      "xref_id": null,
+      "xref_type": "bib",
+      "contents": "brightness: Harris, Schwarzkopf, Song, Bahrami, & Rees, 2011;",
+      "text_id": 20
+    },
+    {
+      "xref_id": null,
+      "xref_type": "bib",
+      "contents": "size contrast: Nakashima & Sugita, 2018)",
+      "text_id": 20
+    },
+    {
+      "xref_id": null,
+      "xref_type": "bib",
+      "contents": "",
+      "text_id": 132
+    },
+    {
+      "xref_id": null,
+      "xref_type": "bib",
+      "contents": "",
+      "text_id": 135
+    },
+    {
+      "xref_id": null,
+      "xref_type": "bib",
+      "contents": "",
+      "text_id": 231
+    },
+    {
+      "xref_id": null,
+      "xref_type": "bib",
+      "contents": "Faivre & Koch, 2014;",
+      "text_id": 233
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "1",
+      "text_id": 48
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "1a",
+      "text_id": 56
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "1b",
+      "text_id": 66
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "1c",
+      "text_id": 84
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "1c",
+      "text_id": 88
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "S1",
+      "text_id": null
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "1c",
+      "text_id": 184
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "3",
+      "text_id": 149
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "3",
+      "text_id": null
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "3",
+      "text_id": 162
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "4a",
+      "text_id": 168
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "4b",
+      "text_id": 170
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "5a",
+      "text_id": 188
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "5b",
+      "text_id": 188
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "5c",
+      "text_id": 195
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "5d",
+      "text_id": 195
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "2a",
+      "text_id": 97
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "2b",
+      "text_id": 97
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "2",
+      "text_id": null
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "S2",
+      "text_id": null
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "6",
+      "text_id": 196
+    },
+    {
+      "xref_id": null,
+      "xref_type": "table",
+      "contents": "S1",
+      "text_id": 44
+    },
+    {
+      "xref_id": null,
+      "xref_type": "table",
+      "contents": "S2",
+      "text_id": 44
+    },
+    {
+      "xref_id": null,
+      "xref_type": "table",
+      "contents": "S3",
+      "text_id": 130
+    },
+    {
+      "xref_id": null,
+      "xref_type": "table",
+      "contents": "S4-S8",
+      "text_id": 139
+    },
+    {
+      "xref_id": null,
+      "xref_type": "table",
+      "contents": "S9-S14",
+      "text_id": 143
+    },
+    {
+      "xref_id": null,
+      "xref_type": "table",
+      "contents": "S9",
+      "text_id": 149
+    },
+    {
+      "xref_id": null,
+      "xref_type": "table",
+      "contents": "S9",
+      "text_id": null
+    },
+    {
+      "xref_id": null,
+      "xref_type": "table",
+      "contents": "S10",
+      "text_id": 162
+    },
+    {
+      "xref_id": null,
+      "xref_type": "table",
+      "contents": "S11",
+      "text_id": 168
+    },
+    {
+      "xref_id": null,
+      "xref_type": "table",
+      "contents": "S11",
+      "text_id": 170
+    },
+    {
+      "xref_id": null,
+      "xref_type": "table",
+      "contents": "S12",
+      "text_id": null
+    },
+    {
+      "xref_id": null,
+      "xref_type": "table",
+      "contents": "S12",
+      "text_id": 180
+    },
+    {
+      "xref_id": null,
+      "xref_type": "table",
+      "contents": "S13",
+      "text_id": 188
+    },
+    {
+      "xref_id": null,
+      "xref_type": "table",
+      "contents": "S13",
+      "text_id": 195
+    },
+    {
+      "xref_id": null,
+      "xref_type": "table",
+      "contents": "S14",
+      "text_id": 196
+    },
+    {
+      "xref_id": null,
+      "xref_type": "table",
+      "contents": "S1",
+      "text_id": 259
+    },
+    {
+      "xref_id": null,
+      "xref_type": "table",
+      "contents": "S2",
+      "text_id": 259
+    }
+  ],
+  "figure": [
+    {
+      "figure_id": 1,
+      "section_id": 30,
+      "image": null,
+      "page_number": null
+    },
+    {
+      "figure_id": 2,
+      "section_id": 31,
+      "image": null,
+      "page_number": null
+    },
+    {
+      "figure_id": 3,
+      "section_id": 32,
+      "image": null,
+      "page_number": null
+    },
+    {
+      "figure_id": 4,
+      "section_id": 33,
+      "image": null,
+      "page_number": null
+    },
+    {
+      "figure_id": 5,
+      "section_id": 34,
+      "image": null,
+      "page_number": null
+    }
+  ],
+  "table": [],
+  "eq": [
+    {
+      "text_id": 33,
+      "grp_id": 1,
+      "lhs": "M",
+      "comp": "=",
+      "rhs": "25.91"
+    },
+    {
+      "text_id": 33,
+      "grp_id": 1,
+      "lhs": "SD",
+      "comp": "=",
+      "rhs": "2.02"
+    },
+    {
+      "text_id": 33,
+      "grp_id": 1,
+      "lhs": "M",
+      "comp": "=",
+      "rhs": "24.52"
+    },
+    {
+      "text_id": 33,
+      "grp_id": 1,
+      "lhs": "SD",
+      "comp": "=",
+      "rhs": "1.73"
+    },
+    {
+      "text_id": 33,
+      "grp_id": 1,
+      "lhs": "M",
+      "comp": "=",
+      "rhs": "24.62"
+    },
+    {
+      "text_id": 33,
+      "grp_id": 1,
+      "lhs": "SD",
+      "comp": "=",
+      "rhs": "3.13"
+    },
+    {
+      "text_id": 33,
+      "grp_id": 1,
+      "lhs": "M",
+      "comp": "=",
+      "rhs": "23.17"
+    },
+    {
+      "text_id": 33,
+      "grp_id": 1,
+      "lhs": "SD",
+      "comp": "=",
+      "rhs": "1.99"
+    },
+    {
+      "text_id": 33,
+      "grp_id": 1,
+      "lhs": "M",
+      "comp": "=",
+      "rhs": "23.06"
+    },
+    {
+      "text_id": 33,
+      "grp_id": 1,
+      "lhs": "SD",
+      "comp": "=",
+      "rhs": "1.46"
+    },
+    {
+      "text_id": 33,
+      "grp_id": 1,
+      "lhs": "M",
+      "comp": "=",
+      "rhs": "23.58"
+    },
+    {
+      "text_id": 33,
+      "grp_id": 1,
+      "lhs": "SD",
+      "comp": "=",
+      "rhs": "1.83"
+    },
+    {
+      "text_id": 33,
+      "grp_id": 1,
+      "lhs": "M",
+      "comp": "=",
+      "rhs": "23.06"
+    },
+    {
+      "text_id": 33,
+      "grp_id": 1,
+      "lhs": "SD",
+      "comp": "=",
+      "rhs": "1.52"
+    },
+    {
+      "text_id": 36,
+      "grp_id": 2,
+      "lhs": "t(23)",
+      "comp": "=",
+      "rhs": "2.82"
+    },
+    {
+      "text_id": 36,
+      "grp_id": 2,
+      "lhs": "p",
+      "comp": "<",
+      "rhs": ".01"
+    },
+    {
+      "text_id": 36,
+      "grp_id": 2,
+      "lhs": "Cohen's d",
+      "comp": "=",
+      "rhs": "0.58"
+    },
+    {
+      "text_id": 107,
+      "grp_id": 3,
+      "lhs": "sizes",
+      "comp": "=",
+      "rhs": "70"
+    },
+    {
+      "text_id": 154,
+      "grp_id": 4,
+      "lhs": "letters",
+      "comp": "=",
+      "rhs": "0"
+    },
+    {
+      "text_id": 154,
+      "grp_id": 4,
+      "lhs": "numbers",
+      "comp": "=",
+      "rhs": "1"
+    },
+    {
+      "text_id": 175,
+      "grp_id": 5,
+      "lhs": "N",
+      "comp": "=",
+      "rhs": "34"
+    },
+    {
+      "text_id": 175,
+      "grp_id": 5,
+      "lhs": "N",
+      "comp": "=",
+      "rhs": "34"
+    },
+    {
+      "text_id": 197,
+      "grp_id": 6,
+      "lhs": "Mdn",
+      "comp": "=",
+      "rhs": "-0.13"
+    },
+    {
+      "text_id": 197,
+      "grp_id": 6,
+      "lhs": "95% HDI",
+      "comp": "=",
+      "rhs": "[-0.23, -0.03]"
+    },
+    {
+      "text_id": 198,
+      "grp_id": 7,
+      "lhs": "Mdn",
+      "comp": "=",
+      "rhs": "0.10"
+    },
+    {
+      "text_id": 198,
+      "grp_id": 7,
+      "lhs": "95% HDI",
+      "comp": "=",
+      "rhs": "[0.02, 0.17]"
+    },
+    {
+      "text_id": 198,
+      "grp_id": 7,
+      "lhs": "Mdn",
+      "comp": "=",
+      "rhs": "-0.03"
+    },
+    {
+      "text_id": 198,
+      "grp_id": 7,
+      "lhs": "95% HDI",
+      "comp": "=",
+      "rhs": "[-0.10, 0.03]"
+    },
+    {
+      "text_id": 38,
+      "grp_id": 8,
+      "lhs": "accuracy",
+      "comp": ">",
+      "rhs": "65"
+    },
+    {
+      "text_id": 56,
+      "grp_id": 9,
+      "lhs": "between",
+      "comp": "~",
+      "rhs": "0.03"
+    },
+    {
+      "text_id": 56,
+      "grp_id": 9,
+      "lhs": "and",
+      "comp": "~",
+      "rhs": "0.18"
+    },
+    {
+      "text_id": 56,
+      "grp_id": 9,
+      "lhs": "of",
+      "comp": "~",
+      "rhs": "0.03"
+    }
+  ]
+}

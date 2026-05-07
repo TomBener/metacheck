@@ -1,0 +1,3209 @@
+{
+  "paper_id": "0956797619830326",
+  "info": [
+    {
+      "title": "The Prevalence of Marginally Significant Results in Psychology Over Time",
+      "keywords": ["null-hypothesis significance testing", "p values", "marginal significance", "APA", "over time", "open data", "open materials"],
+      "doi": "10.1177/0956797619830326",
+      "file_hash": "8efa951d2e5312af",
+      "input_format": "TEI XML",
+      "file_name": "data-raw/psychsci/grobid_0.9.0-crf/0956797619830326.xml",
+      "bibr_version": "10.0",
+      "paper_type": "unknown",
+      "paper_type_confidence": 0,
+      "oecd_l1": null,
+      "oecd_l2": null,
+      "oecd_confidence": null
+    }
+  ],
+  "author": [
+    {
+      "author_id": 1,
+      "given": "Anton",
+      "family": "Olsson-Collentine",
+      "affiliation": "Department of Methodology and Statistics Tilburg University",
+      "email": "j.a.e.olssoncollentine@tilburguniversity.edu",
+      "corresponding": false,
+      "orcid": "",
+      "role": []
+    },
+    {
+      "author_id": 2,
+      "given": "Marcel",
+      "family": "Van Assen",
+      "affiliation": "Department of Methodology and Statistics Tilburg University",
+      "email": "",
+      "corresponding": false,
+      "orcid": "",
+      "role": []
+    },
+    {
+      "author_id": 3,
+      "given": "Chris",
+      "family": "Hartgerink",
+      "affiliation": "Department of Methodology and Statistics Tilburg University",
+      "email": "",
+      "corresponding": false,
+      "orcid": "",
+      "role": []
+    }
+  ],
+  "text": [
+    {
+      "text_id": 1,
+      "paragraph_id": 1,
+      "section_id": 0,
+      "text": "Recent failures to reproduce findings of studies (e.g., as in the \"Reproducibility Project: Psychology\" by the Open Science Collaboration, 2015) have fanned the debate about the claiming of findings on the basis of their statistical significance.",
+      "page_number": null
+    },
+    {
+      "text_id": 2,
+      "paragraph_id": 1,
+      "section_id": 0,
+      "text": "In their article \"Redefine Statistical Significance,\" Benjamin et al. (2018) argued that the standard for claiming new discoveries, p < .05, is too low and a leading cause of nonreproducibility and false-positive results, and they proposed to change the standard to p < .005.",
+      "page_number": null
+    },
+    {
+      "text_id": 3,
+      "paragraph_id": 1,
+      "section_id": 0,
+      "text": "On the other hand, Lakens et al. (2018) argued that researchers should transparently report and justify their significance level, whether it is .05 or something else.",
+      "page_number": null
+    },
+    {
+      "text_id": 4,
+      "paragraph_id": 2,
+      "section_id": 0,
+      "text": "Following up on the debate on the use of significance levels in psychology, we empirically examined the extent to which studies in psychology claim a finding on the basis of a significance level that is even lower than .05, often called marginally significant, that is, .05 < p ≤ .10.",
+      "page_number": null
+    },
+    {
+      "text_id": 5,
+      "paragraph_id": 2,
+      "section_id": 0,
+      "text": "More specifically, we examined the percentage of p values between .05 and .10 that is reported in studies as marginally significant, across journals and disciplines of psychology and over time.",
+      "page_number": null
+    },
+    {
+      "text_id": 6,
+      "paragraph_id": 2,
+      "section_id": 0,
+      "text": "On the way, 830326P SSXXX10.1177/0956797619830326Olsson-Collentine et al.Prevalence of Marginally Significant Results in Psychology research-article2019",
+      "page_number": null
+    },
+    {
+      "text_id": 7,
+      "paragraph_id": 4,
+      "section_id": 1,
+      "text": "we also reexamined Pritschet, Powell, and Horne's (2016) claims that marginally significant results have become more prevalent in psychology over time and that results are reported as marginally significant more frequently in social psychology than in developmental psychology.",
+      "page_number": null
+    },
+    {
+      "text_id": 8,
+      "paragraph_id": 4,
+      "section_id": 1,
+      "text": "Examining the prevalence of results reported as marginally significant and reexamining the claims of Pritschet et al. is important as it bears on differences in reproducibility across disciplines and trends over time; higher p values are generally associated with lower reproducibility and more false positives (Camerer et al., 2016;Ioannidis, 2005;Open Science Collaboration, 2015).",
+      "page_number": null
+    },
+    {
+      "text_id": 9,
+      "paragraph_id": 4,
+      "section_id": 1,
+      "text": "Pritschet et al. (2016) looked at the frequency of articles in which at least one result was reported as marginally significant or as approaching significance in articles from the journals Cognitive Psychology, Developmental Psychology, and the Journal of Personality and Social Psychology, meant to \"represent three major subfields of psychology: cognitive, developmental, and social\" (p. 1037), for the years 1970, 1980, 1990, 2000, and 2010.",
+      "page_number": null
+    },
+    {
+      "text_id": 10,
+      "paragraph_id": 4,
+      "section_id": 1,
+      "text": "Although Pritschet et al.'s findings may be interpreted as a higher willingness of researchers over time and in social psychology to claim marginal significance in their articles, we should be careful because of the presence of confounding factors.",
+      "page_number": null
+    },
+    {
+      "text_id": 11,
+      "paragraph_id": 4,
+      "section_id": 1,
+      "text": "Their outcome variable was the percentage of articles in which at least one result was reported as marginally significant.",
+      "page_number": null
+    },
+    {
+      "text_id": 12,
+      "paragraph_id": 4,
+      "section_id": 1,
+      "text": "However, if an article contains more p values, the probability increases that the article contains at least one result reported as marginally significant.",
+      "page_number": null
+    },
+    {
+      "text_id": 13,
+      "paragraph_id": 4,
+      "section_id": 1,
+      "text": "In devising their outcome measure, Pritschet et al. did not take into account that the number of reported p values per journal article has increased over the years or that articles in the Journal of Personality and Social Psychology, on average, contain more p values than those in (at least) Developmental Psychology (Nuijten, Hartgerink, van Assen, Epskamp, & Wicherts, 2016).",
+      "page_number": null
+    },
+    {
+      "text_id": 14,
+      "paragraph_id": 4,
+      "section_id": 1,
+      "text": "In further analyses, Pritschet et al. also controlled for the number of experiments in an article, which did not affect their conclusions, but the number of experiments is only a rough and imperfect proxy for the number of p values.",
+      "page_number": null
+    },
+    {
+      "text_id": 15,
+      "paragraph_id": 4,
+      "section_id": 1,
+      "text": "More generally, any factor affecting the distribution of p values and their frequency in the interval .05 to .10, such as the statistical power of research, p hacking, or merely the reporting of statistical results, will affect the percentage of articles reporting one or more results as marginally significant.",
+      "page_number": null
+    },
+    {
+      "text_id": 16,
+      "paragraph_id": 4,
+      "section_id": 1,
+      "text": "Thus, this outcome provides limited information on researchers' usage of the concept of marginal significance, both over time and across journals.",
+      "page_number": null
+    },
+    {
+      "text_id": 17,
+      "paragraph_id": 4,
+      "section_id": 1,
+      "text": "Factors affecting the distribution of p values, however, will not affect the percentage of p values between .05 and .10 reported as marginally significant, as this percentage is conditional on the occurrence of such a p value.",
+      "page_number": null
+    },
+    {
+      "text_id": 18,
+      "paragraph_id": 5,
+      "section_id": 1,
+      "text": "Whole parts of the scientific literature can be examined using automated methods.",
+      "page_number": null
+    },
+    {
+      "text_id": 19,
+      "paragraph_id": 5,
+      "section_id": 1,
+      "text": "Several recent publications have successfully used extracted statistics to examine the scientific literature on the basis of such automated methods (e.g., Lakens, 2015;Nuijten et al., 2016;Vermeulen et al., 2015).",
+      "page_number": null
+    },
+    {
+      "text_id": 20,
+      "paragraph_id": 5,
+      "section_id": 1,
+      "text": "One of the most common automated methods is using so-called regular expressions that search through the provided article for predefined strings of text, the results of which are then saved to a data file for analysis.",
+      "page_number": null
+    },
+    {
+      "text_id": 21,
+      "paragraph_id": 5,
+      "section_id": 1,
+      "text": "The more complex the data that need to be extracted, the more limited this method becomes.",
+      "page_number": null
+    },
+    {
+      "text_id": 22,
+      "paragraph_id": 5,
+      "section_id": 1,
+      "text": "Fortunately, when p values are extracted, only three things need to be identified in the text: the p, the comparison sign, and the value itself (for an extensive treatment on the limitations of using reported p values, see Hartgerink, van Aert, Nuijten, Wicherts, & van Assen, 2016;Jager & Leek, 2014, and discussions in the first issue of Volume 15 of Biostatistics).",
+      "page_number": null
+    },
+    {
+      "text_id": 23,
+      "paragraph_id": 5,
+      "section_id": 1,
+      "text": "The advantage of automated methods when examining the scientific literature is that they permit collecting large samples of data.",
+      "page_number": null
+    },
+    {
+      "text_id": 24,
+      "paragraph_id": 5,
+      "section_id": 1,
+      "text": "For example, Nuijten et al. (2016), using an R package (statcheck) that extracts only complete American Psychological Association (APA)-formatted test results (t, F, etc.), collected 258,105 p values from 30,717 articles published between 1985 and 2013.",
+      "page_number": null
+    },
+    {
+      "text_id": 25,
+      "paragraph_id": 6,
+      "section_id": 1,
+      "text": "Using automated extraction of p values, we examined the prevalence of p values between .05 and .10 reported as marginally significant in psychology.",
+      "page_number": null
+    },
+    {
+      "text_id": 26,
+      "paragraph_id": 6,
+      "section_id": 1,
+      "text": "We first partially replicated and extended Pritschet et al.'s (2016) findings by examining the prevalence of marginally significant results in two journals, the Journal of Personality and Social Psychology and Developmental Psychology.",
+      "page_number": null
+    },
+    {
+      "text_id": 27,
+      "paragraph_id": 6,
+      "section_id": 1,
+      "text": "Then, we examined that prevalence between 1985 and 2016 in journals published by the APA, distinguishing nine psychology disciplines: social, developmental, cognitive, clinical, educational, experimental, forensic, health, and organizational.",
+      "page_number": null
+    },
+    {
+      "text_id": 28,
+      "paragraph_id": 8,
+      "section_id": 2,
+      "text": "All code and data for this project are available at osf .io/28gxz.",
+      "page_number": null
+    },
+    {
+      "text_id": 29,
+      "paragraph_id": 8,
+      "section_id": 2,
+      "text": "We provide links to the relevant code files on the Open Science Framework (OSF) below.",
+      "page_number": null
+    },
+    {
+      "text_id": 30,
+      "paragraph_id": 8,
+      "section_id": 2,
+      "text": "We ran all analyses using R (Version 3.4.1; R Core Team, 2017).",
+      "page_number": null
+    },
+    {
+      "text_id": 31,
+      "paragraph_id": 10,
+      "section_id": 3,
+      "text": "We reused downloaded articles from Hartgerink (2016), consisting of 74,489 articles published between 1985 and 2016 in 74 APA journals (80% of currently existing APA journals).",
+      "page_number": null
+    },
+    {
+      "text_id": 32,
+      "paragraph_id": 10,
+      "section_id": 3,
+      "text": "We limited ourselves to data from journals belonging to the APA, which characterizes the following nine disciplines of psychology: \"basic/ experimental psychology,\" \"clinical psychology,\" \"developmental psychology,\" \"educational psychology, school psychology, and training,\" \"forensic psychology,\" \"health psychology and medicine,\" \"industrial/ organizational psychology and management,\" \"neuroscience and cognition,\" and \"social psychology and social processes.\"",
+      "page_number": null
+    },
+    {
+      "text_id": 33,
+      "paragraph_id": 10,
+      "section_id": 3,
+      "text": "The APA characterizes journals into one additional category (\"core of psychology\").",
+      "page_number": null
+    },
+    {
+      "text_id": 34,
+      "paragraph_id": 10,
+      "section_id": 3,
+      "text": "However, this category consists of journals that publish on general or interdisciplinary psychology; hence, we do not consider it a discipline in psychology and excluded entries unique to it from our final data set.",
+      "page_number": null
+    },
+    {
+      "text_id": 35,
+      "paragraph_id": 10,
+      "section_id": 3,
+      "text": "Four journals and 996 articles were unique to this category and were thus excluded.",
+      "page_number": null
+    },
+    {
+      "text_id": 36,
+      "paragraph_id": 10,
+      "section_id": 3,
+      "text": "For a detailed summary of journals that were and were not included in our sample and their division into topics and disciplines, see \"Journals and APA Topics\" in the Supplemental Material available online.",
+      "page_number": null
+    },
+    {
+      "text_id": 37,
+      "paragraph_id": 11,
+      "section_id": 3,
+      "text": "As Hartgerink (2016) downloaded only articles in HTML format, the time span for each journal depends on the year that articles became available in HTML format.",
+      "page_number": null
+    },
+    {
+      "text_id": 38,
+      "paragraph_id": 11,
+      "section_id": 3,
+      "text": "We converted them into raw text using the python tool html2text (osf.io/4yqhj/; pypi.python.org/ pypi/html2text).",
+      "page_number": null
+    },
+    {
+      "text_id": 39,
+      "paragraph_id": 11,
+      "section_id": 3,
+      "text": "We extracted the following information from each article using regular expressions (osf.io/ qaw74/): digital object identifier (DOI; when available), raw text of the p values (e.g., \" p = .048\"), sign of the p-value comparison (>, <, or =), the p value itself, the 200 characters preceding the reported p value, and the 200 characters immediately succeeding the reported p value.",
+      "page_number": null
+    },
+    {
+      "text_id": 40,
+      "paragraph_id": 11,
+      "section_id": 3,
+      "text": "We collated these 790,206 entries into one data set, with one entry pertaining to results of one p value (osf.io/f3mga/).",
+      "page_number": null
+    },
+    {
+      "text_id": 41,
+      "paragraph_id": 11,
+      "section_id": 3,
+      "text": "Thus, our analysis and reported results pertain to those 44,200 articles (see also Table 1) that contained at least one p value.",
+      "page_number": null
+    },
+    {
+      "text_id": 42,
+      "paragraph_id": 12,
+      "section_id": 3,
+      "text": "Using the same data set as Hartgerink (2016), we also extracted information on the degrees of freedom across disciplines for a supplementary analysis of statistical power in psychology articles.",
+      "page_number": null
+    },
+    {
+      "text_id": 43,
+      "paragraph_id": 12,
+      "section_id": 3,
+      "text": "To do so, we used the R package statcheck (Version 1.2.2; Epskamp & Nuijten, 2016), extracting 521,475 APA-formatted statistical results.",
+      "page_number": null
+    },
+    {
+      "text_id": 44,
+      "paragraph_id": 12,
+      "section_id": 3,
+      "text": "As this analysis required strong assumptions (i.e., assuming similar true effect-size distributions and designs across disciplines and over time) and was relevant only for the percentage of articles containing at least one result reported as marginally significant, we report further on these data only in the Supplemental Material.",
+      "page_number": null
+    },
+    {
+      "text_id": 45,
+      "paragraph_id": 14,
+      "section_id": 4,
+      "text": "We excluded a small number of entries from the extracted data because of misreporting or extraction failure (for a flowchart, see Fig.",
+      "page_number": null
+    },
+    {
+      "text_id": 46,
+      "paragraph_id": 14,
+      "section_id": 4,
+      "text": "1).",
+      "page_number": null
+    },
+    {
+      "text_id": 47,
+      "paragraph_id": 14,
+      "section_id": 4,
+      "text": "We removed entries lacking a DOI (and journal name and year; n = 51, 0.01% of total) and all entries in which the p values were not numerical (e.g., equal to \".\"; n = 1,073, 0.14% of total; osf.io/gzyt9/); p values that were misreported as too high (e.g., p = 1 2 . instead of p = .12) were excluded as well as all other p values above .10 at a later stage (see below).",
+      "page_number": null
+    },
+    {
+      "text_id": 48,
+      "paragraph_id": 14,
+      "section_id": 4,
+      "text": "Note that a few misreported p values remain in the data set, for example, those misreported as p = .099 instead of p = . .",
+      "page_number": null
+    },
+    {
+      "text_id": 49,
+      "paragraph_id": 14,
+      "section_id": 4,
+      "text": "99 Subsequently, we added discipline information to each entry.",
+      "page_number": null
+    },
+    {
+      "text_id": 50,
+      "paragraph_id": 14,
+      "section_id": 4,
+      "text": "Before adding this information, we used the R package rcrossref (Version 0.6.0; Chamberlain, Boettiger, Hart, & Ram, 2016) to retrieve missing metadata (years and journal name) for all entries lacking such data (n = 1.62% of the total; osf.io/gzyt9/).",
+      "page_number": null
+    },
+    {
+      "text_id": 51,
+      "paragraph_id": 14,
+      "section_id": 4,
+      "text": "We also standardized journal names for all entries, with older journal names updated to their current APA names (as of 2017; see \"Journals and APA Topics\"; osf.io/ gzyt9/).",
+      "page_number": null
+    },
+    {
+      "text_id": 52,
+      "paragraph_id": 14,
+      "section_id": 4,
+      "text": "We then added dummies for each discipline to all entries (osf.io/gzyt9/).",
+      "page_number": null
+    },
+    {
+      "text_id": 53,
+      "paragraph_id": 15,
+      "section_id": 4,
+      "text": "Finally, we excluded the topic core of psychology and all p values outside the range of .05 to .10, and we created a test sample.",
+      "page_number": null
+    },
+    {
+      "text_id": 54,
+      "paragraph_id": 15,
+      "section_id": 4,
+      "text": "We excluded 11,486 (1.45% of total) entries unique to the topic core of psychology (osf.io/gzyt9/).",
+      "page_number": null
+    },
+    {
+      "text_id": 55,
+      "paragraph_id": 15,
+      "section_id": 4,
+      "text": "Limiting the data set to p values greater than .05 but less than or equal to .10 resulted in a final sample of 42,504 (5.38% of the total) p values (osf.io/ gzyt9/).",
+      "page_number": null
+    },
+    {
+      "text_id": 56,
+      "paragraph_id": 15,
+      "section_id": 4,
+      "text": "From the final data set, we drew a stratified random sample of 6% per journal for the testing code used for data analysis (osf.io/y953k/).",
+      "page_number": null
+    },
+    {
+      "text_id": 57,
+      "paragraph_id": 15,
+      "section_id": 4,
+      "text": "For our analyses reported below, we used the full final data set, including the test sample data.",
+      "page_number": null
+    },
+    {
+      "text_id": 58,
+      "paragraph_id": 16,
+      "section_id": 4,
+      "text": "Table 1 summarizes the data per discipline.",
+      "page_number": null
+    },
+    {
+      "text_id": 59,
+      "paragraph_id": 16,
+      "section_id": 4,
+      "text": "As per the APA's categorization, a journal may belong to multiple disciplines (see also \"Journals and APA Topics\").",
+      "page_number": null
+    },
+    {
+      "text_id": 60,
+      "paragraph_id": 16,
+      "section_id": 4,
+      "text": "A p value in an article is part of the p-value count for each discipline that it belongs to.",
+      "page_number": null
+    },
+    {
+      "text_id": 61,
+      "paragraph_id": 16,
+      "section_id": 4,
+      "text": "To determine whether a result was reported as marginally significant, we searched the 200 characters preceding and the 200 characters succeeding a given p value for the expressions \"margin*\" and \"approach*\" (following Pritschet et al., 2016), using regular expressions, and considered the p value to be reported as marginally significant if either of those expressions was found.",
+      "page_number": null
+    },
+    {
+      "text_id": 62,
+      "paragraph_id": 16,
+      "section_id": 4,
+      "text": "We also reported the percentage of articles containing p values per discipline in which at least one p value between .05 and .10 was reported as marginally significant (last column).",
+      "page_number": null
+    },
+    {
+      "text_id": 63,
+      "paragraph_id": 17,
+      "section_id": 4,
+      "text": "Table 2 shows a comparison of our data with the data provided by Pritschet et al. (2016, available at osf.io/ 92xqk) with respect to the two APA journals (Developmental Psychology and Journal of Personality and Social Psychology) that their article and ours have in common.",
+      "page_number": null
+    },
+    {
+      "text_id": 64,
+      "paragraph_id": 17,
+      "section_id": 4,
+      "text": "Pritschet et al. concerned themselves with whether an article contained a marginally significant result, which is not necessarily associated with a p value between .05 and .10 (92.6% of their marginal p values fell between .05 and .10), and consequently, each row in their data set represents a different article.",
+      "page_number": null
+    },
+    {
+      "text_id": 65,
+      "paragraph_id": 17,
+      "section_id": 4,
+      "text": "Their data do not include the total number of p values or the number of p values between .05 and .10 in their sample.",
+      "page_number": null
+    },
+    {
+      "text_id": 66,
+      "paragraph_id": 19,
+      "section_id": 5,
+      "text": "Because we used a nonrandom sample (only APA articles available in HTML format at the time of download) and dependent samples (many p values are included in multiple disciplines), we focused on descriptive statistics and conducted no inferential statistical tests.",
+      "page_number": null
+    },
+    {
+      "text_id": 67,
+      "paragraph_id": 19,
+      "section_id": 5,
+      "text": "As per journal standards, we nonetheless report 95% confidence intervals in tables and figures for estimates (osf .io/xyh8n/) but caution against interpreting these inferentially.",
+      "page_number": null
+    },
+    {
+      "text_id": 68,
+      "paragraph_id": 20,
+      "section_id": 5,
+      "text": "We describe trends in percentages of marginally significant results across years and disciplines and for the Journal of Personality and Social Psychology and This column shows the percentage of articles containing p values with at least one p value greater than .05 but less than or equal to .10 reported as marginally significant.",
+      "page_number": null
+    },
+    {
+      "text_id": 69,
+      "paragraph_id": 22,
+      "section_id": 6,
+      "text": "To aid interpretation, we estimated and report slopes of 24 simple linear regressions using least squares: two for each of the nine disciplines, two across all disciplines, and two each for the Journal of Personality and Social Psychology and Developmental Psychology.",
+      "page_number": null
+    },
+    {
+      "text_id": 70,
+      "paragraph_id": 22,
+      "section_id": 6,
+      "text": "The outcome variable in these regressions is the percentage of p values (.05 < p ≤ .10) reported as marginally significant per year in each category or the percentage of articles containing p values with at least one result (.05 < p ≤ .10) reported as marginally significant.",
+      "page_number": null
+    },
+    {
+      "text_id": 71,
+      "paragraph_id": 22,
+      "section_id": 6,
+      "text": "The independent variable is the year (range = 1985-2016) of publication of the articles from which the p values were extracted.",
+      "page_number": null
+    },
+    {
+      "text_id": 72,
+      "paragraph_id": 22,
+      "section_id": 6,
+      "text": "In addition, we report averages across the years for each category (osf.io/79t2p/).",
+      "page_number": null
+    },
+    {
+      "text_id": 73,
+      "paragraph_id": 24,
+      "section_id": 7,
+      "text": "We present our results in two steps.",
+      "page_number": null
+    },
+    {
+      "text_id": 74,
+      "paragraph_id": 24,
+      "section_id": 7,
+      "text": "First, we present results for the Journal of Personality and Social Psychology and Developmental Psychology.",
+      "page_number": null
+    },
+    {
+      "text_id": 75,
+      "paragraph_id": 24,
+      "section_id": 7,
+      "text": "Here, we also considered the average number of p values between .05 and .10 reported per article and year.",
+      "page_number": null
+    },
+    {
+      "text_id": 76,
+      "paragraph_id": 24,
+      "section_id": 7,
+      "text": "Second, we present the results for all included APA journals taken together and for the nine psychology disciplines previously described (see Table 1).",
+      "page_number": null
+    },
+    {
+      "text_id": 77,
+      "paragraph_id": 26,
+      "section_id": 8,
+      "text": "Our analyses confirmed that the percentage of articles with at least one result reported as marginally significant was higher in the Journal of Personality and Social Psychology than in Developmental Psychology; whereas Pritschet et al. (2016) found percentages of 39.52 ( Journal of Personality and Social Psychology) and 24.29 (Developmental Psychology), we found percentages of 41.84 and 21.74, respectively (see Table 2, last column).",
+      "page_number": null
+    },
+    {
+      "text_id": 78,
+      "paragraph_id": 26,
+      "section_id": 8,
+      "text": "The differences (albeit small) between their and our results are explained by the fact that we incorporated other articles and by differences in the selection and",
+      "page_number": null
+    },
+    {
+      "text_id": 79,
+      "paragraph_id": 27,
+      "section_id": 8,
+      "text": "Extracted p Values (N = 790,206) Excluded Topic \"Core of Psychology\" (n = 11,486; 1.45%) Excluded Because of Misreporting or Extraction Failure (n = 1,124; 0.14%): Lacking DOI and Journal Name or Year (n = 51; 0.0065%) Nonnumerical p Value (n = 1,073; 0.14%) Remaining p Values (N = 789,082; 99.86%) Final Data Set .05 < p ≤ .10 (N = 42,504; 5.38%) Missing Metadata Added (n = 12,775; 1.62%) Journal Names Standardized Subfield Categories Added Test Sample, Stratified by Journal (n = 2,553; 6% of Final Data Set) Excluded: p ≤ .05 and p > .1 (n = 735,092; 93.03%) This column shows the percentage of articles containing p values with at least one p value greater than .05 but less than or equal to .10 reported as marginally significant.",
+      "page_number": null
+    },
+    {
+      "text_id": 80,
+      "paragraph_id": 28,
+      "section_id": 8,
+      "text": "calculation of results (marginally significant results by Pritschet et al. and p values in the .05-.10 range in combination with a window of ±200 words).",
+      "page_number": null
+    },
+    {
+      "text_id": 81,
+      "paragraph_id": 28,
+      "section_id": 8,
+      "text": "Following Pritschet et al., we observed an increase in the reporting of marginally significant results at the level of articles for Developmental Psychology and the Journal of Personality and Social Psychology, although the increase for Developmental Psychology was very small (estimated increase of approximately 2.5% over 30 years; see Fig.",
+      "page_number": null
+    },
+    {
+      "text_id": 82,
+      "paragraph_id": 28,
+      "section_id": 8,
+      "text": "2).",
+      "page_number": null
+    },
+    {
+      "text_id": 83,
+      "paragraph_id": 28,
+      "section_id": 8,
+      "text": "For the Journal of Personality and Social Psychology, this trend was brought about by an increase in both the average number of p values between .05 and .10 per article and the percentage of p values between .05 and .10 reported as marginally significant (see Fig.",
+      "page_number": null
+    },
+    {
+      "text_id": 84,
+      "paragraph_id": 28,
+      "section_id": 8,
+      "text": "2).",
+      "page_number": null
+    },
+    {
+      "text_id": 85,
+      "paragraph_id": 29,
+      "section_id": 8,
+      "text": "For Developmental Psychology, the percentage of p values reported as marginally significant decreased over time, but this decrease was offset by a larger increase in the number of p values between .05 and .10 over time.",
+      "page_number": null
+    },
+    {
+      "text_id": 86,
+      "paragraph_id": 29,
+      "section_id": 8,
+      "text": "The latter results demonstrate the importance of distinguishing results at the level of articles from those at the level of p values.",
+      "page_number": null
+    },
+    {
+      "text_id": 87,
+      "paragraph_id": 31,
+      "section_id": 9,
+      "text": "Reporting p values between .05 and .10 as marginally significant was common practice in all psychology disciplines.",
+      "page_number": null
+    },
+    {
+      "text_id": 88,
+      "paragraph_id": 31,
+      "section_id": 9,
+      "text": "Table 2 shows that, on average, almost 40% of p values (.05 < p ≤ .10) in the 70 examined APA journals were reported as marginally significant between 1985 and 2016.",
+      "page_number": null
+    },
+    {
+      "text_id": 89,
+      "paragraph_id": 31,
+      "section_id": 9,
+      "text": "The practice was most common in organizational psychology (45.38%), social psychology (44.47%), and experimental psychology (40.65%).",
+      "page_number": null
+    },
+    {
+      "text_id": 90,
+      "paragraph_id": 31,
+      "section_id": 9,
+      "text": "The fewest p values between .05 and .10 were reported as marginally significant in clinical psychology (30.08%), health psychology (31.58%), and forensic psychology (33.91%).",
+      "page_number": null
+    },
+    {
+      "text_id": 91,
+      "paragraph_id": 31,
+      "section_id": 9,
+      "text": "The disciplines of educational psychology (34.69%), developmental psychology (37.72%), and cognitive psychology (39.49%) fell between these two groups.",
+      "page_number": null
+    },
+    {
+      "text_id": 92,
+      "paragraph_id": 31,
+      "section_id": 9,
+      "text": "That higher percentages were consistently found for the outcome variable at the level of p values (see Table 2, penultimate column) than at the level of articles (last column) is explained by the many articles that contain p values but without values in the range .05 to .10.",
+      "page_number": null
+    },
+    {
+      "text_id": 93,
+      "paragraph_id": 31,
+      "section_id": 9,
+      "text": "Of the total 44,200 articles with p values, only 25,800 contained p values between .05 and .10, which thus inflates the denominator of the percentage of articles containing at least one marginally significant result.",
+      "page_number": null
+    },
+    {
+      "text_id": 94,
+      "paragraph_id": 32,
+      "section_id": 9,
+      "text": "We examined the overall trend in the reporting of marginally significant results and the trends in each discipline (see Fig.",
+      "page_number": null
+    },
+    {
+      "text_id": 95,
+      "paragraph_id": 32,
+      "section_id": 9,
+      "text": "3).",
+      "page_number": null
+    },
+    {
+      "text_id": 96,
+      "paragraph_id": 32,
+      "section_id": 9,
+      "text": "Across all journals, the percentage of p values reported as marginally significant decreased (b = -0.32) in the period from 1985 to 2016.",
+      "page_number": null
+    },
+    {
+      "text_id": 97,
+      "paragraph_id": 32,
+      "section_id": 9,
+      "text": "For no discipline was there evidence of an increasing trend.",
+      "page_number": null
+    },
+    {
+      "text_id": 98,
+      "paragraph_id": 32,
+      "section_id": 9,
+      "text": "On the basis of the linear trend (b), the largest decreases were in forensic psychology (b = -0.92), cognitive psychology (b = -0.68), and experimental psychology (b = -0.6).",
+      "page_number": null
+    },
+    {
+      "text_id": 99,
+      "paragraph_id": 32,
+      "section_id": 9,
+      "text": "Three disciplines were mostly stable over the years: social psychology (b = -0.02), organizational psychology (b = -0.09), and developmental psychology (b = -0.12).",
+      "page_number": null
+    },
+    {
+      "text_id": 100,
+      "paragraph_id": 32,
+      "section_id": 9,
+      "text": "The change over time for the three remaining disciplines fell between these two groups.",
+      "page_number": null
+    },
+    {
+      "text_id": 101,
+      "paragraph_id": 32,
+      "section_id": 9,
+      "text": "These were health psychology (b = -0.27), clinical psychology (b = -0.29), and educational psychology (b = -0.35).",
+      "page_number": null
+    },
+    {
+      "text_id": 102,
+      "paragraph_id": 32,
+      "section_id": 9,
+      "text": "Note that the plots also indicate a trend for more p values reported in the literature.",
+      "page_number": null
+    },
+    {
+      "text_id": 103,
+      "paragraph_id": 33,
+      "section_id": 9,
+      "text": "The percentage of articles containing p values with at least one p value between .05 and .10 reported as marginally significant increased when averaged across all APA journals and for all disciplines individually, except for forensic psychology, health psychology, and organizational psychology (see Fig.",
+      "page_number": null
+    },
+    {
+      "text_id": 104,
+      "paragraph_id": 33,
+      "section_id": 9,
+      "text": "2).",
+      "page_number": null
+    },
+    {
+      "text_id": 105,
+      "paragraph_id": 33,
+      "section_id": 9,
+      "text": "As demonstrated in the previous section, these trends are not straightforward to interpret, as they are also affected by trends in the frequency of p values between .05 and .10 per article.",
+      "page_number": null
+    },
+    {
+      "text_id": 106,
+      "paragraph_id": 33,
+      "section_id": 9,
+      "text": "Consecutively, this frequency of p values is affected by trends in the reporting of p values and trends in the statistical power of psychological research over time, although there is, at most, a small increase in power over time in our data (see the Supplemental Material).",
+      "page_number": null
+    },
+    {
+      "text_id": 107,
+      "paragraph_id": 33,
+      "section_id": 9,
+      "text": "Note that possible trends in p-value reporting and power do not affect the percentage of p values reported as marginally significant, as that percentage is conditional on the p value being between .05 and .10.",
+      "page_number": null
+    },
+    {
+      "text_id": 108,
+      "paragraph_id": 35,
+      "section_id": 10,
+      "text": "Following up on the debate about the use of significance levels in psychology, we empirically examined the extent to which researchers have claimed a finding to be marginally significant on the basis of a p value between .05 and .10 in psychology and its disciplines between 1985 and 2016.",
+      "page_number": null
+    },
+    {
+      "text_id": 109,
+      "paragraph_id": 35,
+      "section_id": 10,
+      "text": "Examining the prevalence of results reported as marginally significant is important, as it bears on differences in reproducibility across disciplines and trends over time; higher p values are generally associated with lower reproducibility and more false positives.",
+      "page_number": null
+    },
+    {
+      "text_id": 110,
+      "paragraph_id": 35,
+      "section_id": 10,
+      "text": "Following Pritschet et al. (2016), we examined trends in the percentage of articles with p values reported as marginally significant and showed that these are affected by differences across disciplines in the number of p values between .05 and .10 and the development over time of this number.",
+      "page_number": null
+    },
+    {
+      "text_id": 111,
+      "paragraph_id": 35,
+      "section_id": 10,
+      "text": "We also examined the prevalence of p values between .05 and .10 reported as marginally significant across time in nine psychology disciplines, which is not affected by factors influencing the distribution of p values.",
+      "page_number": null
+    },
+    {
+      "text_id": 112,
+      "paragraph_id": 36,
+      "section_id": 10,
+      "text": "That p values between .05 and .10 are interpreted as marginally significant appears common in psychology.",
+      "page_number": null
+    },
+    {
+      "text_id": 113,
+      "paragraph_id": 36,
+      "section_id": 10,
+      "text": "Across the nine disciplines we examined, almost 40% of such values were reported as marginally significant in the period from 1985 to 2016, although the prevalence differed by discipline.",
+      "page_number": null
+    },
+    {
+      "text_id": 114,
+      "paragraph_id": 36,
+      "section_id": 10,
+      "text": "We found higher percentages of p values between .05 and .10 reported as marginally significant in social psychology than in developmental and cognitive psychology, corroborating the findings by Pritschet et al. (2016), but differences were small (up to 7%).",
+      "page_number": null
+    },
+    {
+      "text_id": 115,
+      "paragraph_id": 36,
+      "section_id": 10,
+      "text": "Overall, marginally significant p values were the most prevalent in organizational psychology and the least prevalent in clinical psychology.",
+      "page_number": null
+    },
+    {
+      "text_id": 116,
+      "paragraph_id": 37,
+      "section_id": 10,
+      "text": "A few disciplines had a stable trend, but most described a downward trend in the percentage of p values between .05 and .10 reported as marginally significant between 1985 and 2016.",
+      "page_number": null
+    },
+    {
+      "text_id": 117,
+      "paragraph_id": 37,
+      "section_id": 10,
+      "text": "Controlling for the increasing numbers of p values across the years, we found that the positive trends reported by Pritschet et al. (2016) for cognitive psychology, developmental psychology, and social psychology thus disappeared.",
+      "page_number": null
+    },
+    {
+      "text_id": 118,
+      "paragraph_id": 37,
+      "section_id": 10,
+      "text": "On the other hand, the Journal of Personality and Social Psychology, which Pritschet et al. used to represent social psychology, still showed a positive trend.",
+      "page_number": null
+    },
+    {
+      "text_id": 119,
+      "paragraph_id": 37,
+      "section_id": 10,
+      "text": "This illustrates the problem with using a single journal to represent entire psychology disciplines.",
+      "page_number": null
+    },
+    {
+      "text_id": 120,
+      "paragraph_id": 37,
+      "section_id": 10,
+      "text": "The downward trend in psychology overall may reflect increasing",
+      "page_number": null
+    },
+    {
+      "text_id": 121,
+      "paragraph_id": 38,
+      "section_id": 10,
+      "text": "0 25 50 75 100 0 25 50 75 100 0 25 50 75 100 0 25 50 75 100 0 25 50 75 100 0 25 50 75 100 0 25 50 75 100 0 25 50 75 100 0 25 50 75 100 0 25 50 75 100 Year Percentage Reported as Marginally Significant",
+      "page_number": null
+    },
+    {
+      "text_id": 122,
+      "paragraph_id": 39,
+      "section_id": 10,
+      "text": "p Values p Values p Values p Values p Values p Values p Values p Values p Values Fig 3 Percentage of p values (.05 < p ≤ .10) reported as marginally significant (solid lines) and percentage of articles containing at least one such p value (dashed lines) between 1985 and 2016 in different psychology disciplines with data extracted from American Psychological Association (APA) journals.",
+      "page_number": null
+    },
+    {
+      "text_id": 123,
+      "paragraph_id": 39,
+      "section_id": 10,
+      "text": "Slope coefficients (bs) are reported from simple linear regressions for each discipline and overall.",
+      "page_number": null
+    },
+    {
+      "text_id": 124,
+      "paragraph_id": 40,
+      "section_id": 10,
+      "text": ".10 as marginally significant because they are affected by factors influencing the p-value distribution of results reported in articles.",
+      "page_number": null
+    },
+    {
+      "text_id": 125,
+      "paragraph_id": 40,
+      "section_id": 10,
+      "text": "One can attempt to model the p-value distribution and factors influencing it.",
+      "page_number": null
+    },
+    {
+      "text_id": 126,
+      "paragraph_id": 40,
+      "section_id": 10,
+      "text": "However, as so many factors affect the p-value distribution and these models are based on strong assumptions, we believe it is impossible to draw strong conclusions on the mechanisms causing differences or trends in p-value distributions (Hartgerink et al., 2016).",
+      "page_number": null
+    },
+    {
+      "text_id": 127,
+      "paragraph_id": 40,
+      "section_id": 10,
+      "text": "We therefore recommend examining the percentage of p values between .05 and .10 that is reported as marginally significant, as it is not affected by these factors.",
+      "page_number": null
+    },
+    {
+      "text_id": 128,
+      "paragraph_id": 41,
+      "section_id": 10,
+      "text": "Our results are qualified by three issues.",
+      "page_number": null
+    },
+    {
+      "text_id": 129,
+      "paragraph_id": 41,
+      "section_id": 10,
+      "text": "First, because p values of .05 tend to be reported as significant (Nuijten et al., 2016), we excluded these results, regardless of whether the sign was >, <, or =.",
+      "page_number": null
+    },
+    {
+      "text_id": 130,
+      "paragraph_id": 41,
+      "section_id": 10,
+      "text": "However, a portion of p values reported as \"p > .05\" will also be below or equal to .10.",
+      "page_number": null
+    },
+    {
+      "text_id": 131,
+      "paragraph_id": 41,
+      "section_id": 10,
+      "text": "It seems possible that researchers who report a p value between .05 and .10 as \"p > .05\" would also be less likely to report this result as marginally significant and label it nonsignificant instead.",
+      "page_number": null
+    },
+    {
+      "text_id": 132,
+      "paragraph_id": 41,
+      "section_id": 10,
+      "text": "If this is the case, our results may be slightly biased in favor of higher estimates.",
+      "page_number": null
+    },
+    {
+      "text_id": 133,
+      "paragraph_id": 41,
+      "section_id": 10,
+      "text": "On the other hand, our second limitation leads to bias in the opposite direction.",
+      "page_number": null
+    },
+    {
+      "text_id": 134,
+      "paragraph_id": 41,
+      "section_id": 10,
+      "text": "Matthew Hankins (2013) compiled a list of 508 ways that researchers have described results as marginally significant.",
+      "page_number": null
+    },
+    {
+      "text_id": 135,
+      "paragraph_id": 41,
+      "section_id": 10,
+      "text": "Of these, only 77 include the expressions \"margin*\" or \"approach*,\" our indicators of marginal significance.",
+      "page_number": null
+    },
+    {
+      "text_id": 136,
+      "paragraph_id": 41,
+      "section_id": 10,
+      "text": "Although there is no telling how common the different expressions on Hankins's list are, their existence nonetheless indicates that our estimates of the prevalence of marginally significant results in psychology are likely to be underestimates because of the varied terminology available to label results that are close to significance.",
+      "page_number": null
+    },
+    {
+      "text_id": 137,
+      "paragraph_id": 41,
+      "section_id": 10,
+      "text": "Third, and relatedly, our results on marginal significance are limited by our datacollection procedure; strictly speaking, our conclusions apply to the use of \"margin*\" and \"approach*\" in the window of ±200 characters of a p value between .05 and .10.",
+      "page_number": null
+    },
+    {
+      "text_id": 138,
+      "paragraph_id": 41,
+      "section_id": 10,
+      "text": "To conclude, we cannot blindly generalize our conclusions to the overall use of marginal significance in the psychological literature.",
+      "page_number": null
+    },
+    {
+      "text_id": 139,
+      "paragraph_id": 42,
+      "section_id": 10,
+      "text": "In the end, the degree to which results reported as marginally significant are problematic depends on research design.",
+      "page_number": null
+    },
+    {
+      "text_id": 140,
+      "paragraph_id": 42,
+      "section_id": 10,
+      "text": "Questionable research practices inflate the risk of false-positive results ( John, Loewenstein, & Prelec, 2012).",
+      "page_number": null
+    },
+    {
+      "text_id": 141,
+      "paragraph_id": 42,
+      "section_id": 10,
+      "text": "One of a multitude of such practices is the post hoc decision to change what decision rule one uses or how strictly it is applied (Wicherts et al., 2016).",
+      "page_number": null
+    },
+    {
+      "text_id": 142,
+      "paragraph_id": 42,
+      "section_id": 10,
+      "text": "Because most researchers are likely to use an implicitly predefined alpha level, later reporting results as marginally significant is an example of an implicit change in the decision rule.",
+      "page_number": null
+    },
+    {
+      "text_id": 143,
+      "paragraph_id": 42,
+      "section_id": 10,
+      "text": "The severity of this practice depends on the extent to which the decision rule has been altered.",
+      "page_number": null
+    },
+    {
+      "text_id": 144,
+      "paragraph_id": 42,
+      "section_id": 10,
+      "text": "Nevertheless, because p values between .05 and .10 are known to have low evidential value (Benjamin et al., 2018;Ioannidis, 2005), we recommend against reporting these results as being marginally significant.",
+      "page_number": null
+    },
+    {
+      "text_id": 145,
+      "paragraph_id": 44,
+      "section_id": 11,
+      "text": "Brent W Roberts served as action editor for this article.",
+      "page_number": null
+    },
+    {
+      "text_id": 146,
+      "paragraph_id": 46,
+      "section_id": 12,
+      "text": "C H J Hartgerink and M A L M van Assen developed the study concept.",
+      "page_number": null
+    },
+    {
+      "text_id": 147,
+      "paragraph_id": 46,
+      "section_id": 12,
+      "text": "All the authors contributed to the study design.",
+      "page_number": null
+    },
+    {
+      "text_id": 148,
+      "paragraph_id": 46,
+      "section_id": 12,
+      "text": "C H J Hartgerink extracted the data.",
+      "page_number": null
+    },
+    {
+      "text_id": 149,
+      "paragraph_id": 46,
+      "section_id": 12,
+      "text": "A Olsson-Collentine analyzed the data, and the analysis was checked by C H J Hartgerink.",
+      "page_number": null
+    },
+    {
+      "text_id": 150,
+      "paragraph_id": 46,
+      "section_id": 12,
+      "text": "All the authors interpreted the results and contributed to the writing of the manuscript, with A Olsson-Collentine writing the first draft and M A L M van Assen and A Olsson-Collentine writing the revision.",
+      "page_number": null
+    },
+    {
+      "text_id": 151,
+      "paragraph_id": 46,
+      "section_id": 12,
+      "text": "All the authors approved the final manuscript for submission.",
+      "page_number": null
+    },
+    {
+      "text_id": 152,
+      "paragraph_id": 48,
+      "section_id": 13,
+      "text": "awareness among researchers that p values in the range of .05 to .10 represent weak evidence against the null or a tendency to also report p values that do not correspond to tests of the main hypotheses and are not interpreted in the main text.",
+      "page_number": null
+    },
+    {
+      "text_id": 153,
+      "paragraph_id": 48,
+      "section_id": 13,
+      "text": "It may also be that percentages are decreasing because of increasingly stringent competition to publish and less leniency among editors for marginally significant results (as previously suggested by Lakens, 2015).",
+      "page_number": null
+    },
+    {
+      "text_id": 154,
+      "paragraph_id": 48,
+      "section_id": 13,
+      "text": "Regardless of the reason, what matters is that results with such p values do not end up in the file drawer and are not \"transformed\" into significant results (Simmons, Nelson, & Simonsohn, 2011) but are reported in the literature.",
+      "page_number": null
+    },
+    {
+      "text_id": 155,
+      "paragraph_id": 49,
+      "section_id": 13,
+      "text": "We demonstrated that it is not straightforward to examine and interpret trends in the percentage of articles that report at least one p value between .05 and",
+      "page_number": null
+    },
+    {
+      "text_id": 156,
+      "paragraph_id": 51,
+      "section_id": 14,
+      "text": "Health Organizational",
+      "page_number": null
+    },
+    {
+      "text_id": 157,
+      "paragraph_id": 53,
+      "section_id": 15,
+      "text": "All APA Journals Clinical Cognitive",
+      "page_number": null
+    },
+    {
+      "text_id": 158,
+      "paragraph_id": 55,
+      "section_id": 16,
+      "text": "The author(s) declared that there were no conflicts of interest with respect to the authorship or the publication of this article.",
+      "page_number": null
+    },
+    {
+      "text_id": 159,
+      "paragraph_id": 57,
+      "section_id": 17,
+      "text": "Additional supporting information can be found at http:// journals.sagepub.com/doi/suppl/10.1177/0956797619830326",
+      "page_number": null
+    },
+    {
+      "text_id": 160,
+      "paragraph_id": 59,
+      "section_id": 18,
+      "text": "All code and data have been made publicly available via the Open Science Framework and can be accessed at osf.io/28gxz.",
+      "page_number": null
+    },
+    {
+      "text_id": 161,
+      "paragraph_id": 59,
+      "section_id": 18,
+      "text": "Materials consist of the extraction functions used to obtain the measures for the reported analyses.",
+      "page_number": null
+    },
+    {
+      "text_id": 162,
+      "paragraph_id": 59,
+      "section_id": 18,
+      "text": "The design and analysis plans for this study were not preregistered.",
+      "page_number": null
+    },
+    {
+      "text_id": 163,
+      "paragraph_id": 60,
+      "section_id": 18,
+      "text": "The complete Open Practices Disclosure for this article can be found at http:// journals.sagepub.com/doi/suppl/10.1177/0956797619830326.",
+      "page_number": null
+    },
+    {
+      "text_id": 164,
+      "paragraph_id": 60,
+      "section_id": 18,
+      "text": "This article has received the badges for Open Data and Open Materials.",
+      "page_number": null
+    },
+    {
+      "text_id": 165,
+      "paragraph_id": 60,
+      "section_id": 18,
+      "text": "More information about the Open Practices badges can be found at http://www.psychologicalscience.org/ publications/badges.",
+      "page_number": null
+    },
+    {
+      "text_id": 166,
+      "paragraph_id": 61,
+      "section_id": 19,
+      "text": "Fig 1 Flowchart illustrating the process generating the test sample and the final data set.",
+      "page_number": null
+    },
+    {
+      "text_id": 167,
+      "paragraph_id": 61,
+      "section_id": 19,
+      "text": "DOI = digital object identifier.",
+      "page_number": null
+    },
+    {
+      "text_id": 168,
+      "paragraph_id": 62,
+      "section_id": 20,
+      "text": "Fig 2 Results for Developmental Psychology and the Journal of Personality and Social Psychology.",
+      "page_number": null
+    },
+    {
+      "text_id": 169,
+      "paragraph_id": 62,
+      "section_id": 20,
+      "text": "The top row shows the percentage of p values (.05 < p ≤ .10) reported as marginally significant and percentage of articles with p values containing at least one such marginally significant p value between 1985 and 2016.",
+      "page_number": null
+    },
+    {
+      "text_id": 170,
+      "paragraph_id": 62,
+      "section_id": 20,
+      "text": "The bottom row shows the number of reported p values (.05 < p ≤ .10) per article, given that the articles contained at least one p value.",
+      "page_number": null
+    },
+    {
+      "text_id": 171,
+      "paragraph_id": 62,
+      "section_id": 20,
+      "text": "Slope coefficients (bs) are reported from simple linear regressions.",
+      "page_number": null
+    },
+    {
+      "text_id": 172,
+      "paragraph_id": 63,
+      "section_id": 21,
+      "text": "Summary of Data per Discipline Discipline",
+      "page_number": null
+    },
+    {
+      "text_id": 173,
+      "paragraph_id": 64,
+      "section_id": 22,
+      "text": "Comparison Between the Data ofPritschet, Powell, and Horne (2016) and the Data of the Current Article With Respect to the Journal of Personality and Social Psychology and Developmental Psychology Cells for numbers that could not be calculated using the data set provided by Pritschet et al. (2016) have been left blank (see osf.io/92xqk).",
+      "page_number": null
+    },
+    {
+      "text_id": 174,
+      "paragraph_id": 64,
+      "section_id": 22,
+      "text": "Values in brackets are 95% confidence intervals.",
+      "page_number": null
+    },
+    {
+      "text_id": 175,
+      "paragraph_id": 65,
+      "section_id": 23,
+      "text": "Values: b = -0.32 Articles Articles: b = 0.03 p Values: b = -0.12 Articles Articles: b = -0.2 p Values: b = -0.92 Articles Articles: b = 0.01 p Values: b = -0Values: b = -0.09",
+      "page_number": null
+    },
+    {
+      "text_id": 176,
+      "paragraph_id": 66,
+      "section_id": 24,
+      "text": "Benjamin, D. J., Berger, J. O., Johannesson, M., Nosek, B. A., Wagenmakers, E. J., Berk, R., . . . Johnson, V. E.",
+      "page_number": null
+    },
+    {
+      "text_id": 177,
+      "paragraph_id": 67,
+      "section_id": 24,
+      "text": "Redefine statistical significance. Nature Human Behaviour, 2(1), 6-10.",
+      "page_number": null
+    },
+    {
+      "text_id": 178,
+      "paragraph_id": 68,
+      "section_id": 24,
+      "text": "Camerer, C. F., Dreber, A., Forsell, E., Ho, T. H., Huber, J., Johannesson, M., . . . Wu, H. (2016). Evaluating replica- bility of laboratory experiments in economics. Science, 351, 1433-1436.",
+      "page_number": null
+    },
+    {
+      "text_id": 179,
+      "paragraph_id": 69,
+      "section_id": 24,
+      "text": "Chamberlain, S., Boettiger, C., Hart, T., & Ram, K. (2016). rcrossref: Client for various 'CrossRef' 'APIs.' Retrieved from https://CRAN.R-project.org/package=rcrossref",
+      "page_number": null
+    },
+    {
+      "text_id": 180,
+      "paragraph_id": 70,
+      "section_id": 24,
+      "text": "Epskamp, S., & Nuijten, M. B. (2016). statcheck: Extract sta- tistics from articles and recompute p values (R package Version 1.2.2). Retrieved from http://CRAN.R-project.org/ package=statcheck",
+      "page_number": null
+    },
+    {
+      "text_id": 181,
+      "paragraph_id": 71,
+      "section_id": 24,
+      "text": "Hankins, M. (2013, April 21). Still not significant [Web log post]. Retrieved from https://mchankins.wordpress .com/2013/04/21/still-not-significant-2/",
+      "page_number": null
+    },
+    {
+      "text_id": 182,
+      "paragraph_id": 72,
+      "section_id": 24,
+      "text": "Hartgerink, C. H. J. (2016). 688,112 statistical results: Content mining psychology articles for statistical test results. Data, 1(3), Article 14. doi:10.3390/data1030014",
+      "page_number": null
+    },
+    {
+      "text_id": 183,
+      "paragraph_id": 73,
+      "section_id": 24,
+      "text": "Hartgerink, C. H. J., van Aert, R. C. M., Nuijten, M. B., Wicherts, J. M., & van Assen, M. A. L. M. (2016). Distributions of p-values smaller than .05 in psychology: What is going on? PeerJ, 4, Article e1935. doi:10.7717/peerj.1935",
+      "page_number": null
+    },
+    {
+      "text_id": 184,
+      "paragraph_id": 74,
+      "section_id": 24,
+      "text": "Ioannidis, J. P. (2005). Why most published research findings are false. PLOS Medicine, 2(8), Article e124. doi:10.1371/ journal.pmed.0020124",
+      "page_number": null
+    },
+    {
+      "text_id": 185,
+      "paragraph_id": 75,
+      "section_id": 24,
+      "text": "Jager, L. R., & Leek, J. T. (2014). An estimate of the sci- ence-wise false discovery rate and application to the top medical literature. Biostatistics, 15, 1-12. doi:10.1093/ biostatistics/kxt007",
+      "page_number": null
+    },
+    {
+      "text_id": 186,
+      "paragraph_id": 76,
+      "section_id": 24,
+      "text": "John, L. K., Loewenstein, G., & Prelec, D. (2012). Measuring the prevalence of questionable research practices with incentives for truth telling. Psychological Science, 23, 524-532. doi:10.1177/0956797611430953",
+      "page_number": null
+    },
+    {
+      "text_id": 187,
+      "paragraph_id": 77,
+      "section_id": 24,
+      "text": "Lakens, D. (2015). On the challenges of drawing conclusions from p-values just below 0.05. PeerJ, 3, Article e1142. doi:10.7717/peerj.1142",
+      "page_number": null
+    },
+    {
+      "text_id": 188,
+      "paragraph_id": 78,
+      "section_id": 24,
+      "text": "Lakens, D., Adolfi, F. G., Albers, C. J., Anvari, F., Apps, M. A., Argamon, S. E., . . . Buchanan, E. M. (2018). Justify your alpha. Nature Human Behaviour, 2(3), 168-171.",
+      "page_number": null
+    },
+    {
+      "text_id": 189,
+      "paragraph_id": 79,
+      "section_id": 24,
+      "text": "Nuijten, M. B., Hartgerink, C. H. J., van Assen, M. A. L. M., Epskamp, S., & Wicherts, J. M. (2016). The prevalence of statistical reporting errors in psychology (1985-2013). Behavior Research Methods, 48, 1205-1226. doi:10.3758/ s13428-015-0664-2",
+      "page_number": null
+    },
+    {
+      "text_id": 190,
+      "paragraph_id": 80,
+      "section_id": 24,
+      "text": "Open Science Collaboration. (2015). Estimating the repro- ducibility of psychological science. Science, 349, 943. doi:10.1126/science.aac4716",
+      "page_number": null
+    },
+    {
+      "text_id": 191,
+      "paragraph_id": 81,
+      "section_id": 24,
+      "text": "Pritschet, L., Powell, D., & Horne, Z. (2016). Marginally sig- nificant effects as evidence for hypotheses: Changing attitudes over four decades. Psychological Science, 27, 1036-1042. doi:10.1177/0956797616645672",
+      "page_number": null
+    },
+    {
+      "text_id": 192,
+      "paragraph_id": 82,
+      "section_id": 24,
+      "text": "R Core Team. (2017). R: A language and environment for statistical computing. Vienna, Austria: R Foundation for Statistical Computing.",
+      "page_number": null
+    },
+    {
+      "text_id": 193,
+      "paragraph_id": 83,
+      "section_id": 24,
+      "text": "Simmons, J. P., Nelson, L. D., & Simonsohn, U. (2011). False-positive psychology: Undisclosed flexibility in data collection and analysis allows presenting anything as significant. Psychological Science, 22, 1359-1366. doi:10.1177/0956797611417632",
+      "page_number": null
+    },
+    {
+      "text_id": 194,
+      "paragraph_id": 84,
+      "section_id": 24,
+      "text": "Vermeulen, I., Beukeboom, C. J., Batenburg, A., Avramiea, A., Stoyanov, D., van de Velde, B., & Oegema, D. (2015). Blinded by the light: How a focus on statistical \"signifi- cance\" may cause p-value misreporting and an excess of p-values just below .05 in communication science. Communication Methods and Measures, 9, 253-279. doi: 10.1080/19312458.2015.1096333",
+      "page_number": null
+    },
+    {
+      "text_id": 195,
+      "paragraph_id": 85,
+      "section_id": 24,
+      "text": "Wicherts, J. M., Veldkamp, C. L. S., Augusteijn, H. E. M., Bakker, M., van Aert, R. C. M., & van Assen, M. A. L. M. (2016). Degrees of freedom in planning, running, analyz- ing, and reporting psychological studies: A checklist to avoid p-hacking. Frontiers in Psychology, 7, Article 1832. doi:10.3389/fpsyg.2016.01832",
+      "page_number": null
+    }
+  ],
+  "section": [
+    {
+      "section_id": 0,
+      "header": "Abstract",
+      "parent_section_id": null,
+      "section_type": "abstract",
+      "classification_score": null
+    },
+    {
+      "section_id": 1,
+      "header": "[div-01]",
+      "parent_section_id": null,
+      "section_type": "intro",
+      "classification_score": null
+    },
+    {
+      "section_id": 2,
+      "header": "Method",
+      "parent_section_id": null,
+      "section_type": "method",
+      "classification_score": null
+    },
+    {
+      "section_id": 3,
+      "header": "Data",
+      "parent_section_id": null,
+      "section_type": "method",
+      "classification_score": null
+    },
+    {
+      "section_id": 4,
+      "header": "Data preparation",
+      "parent_section_id": null,
+      "section_type": "method",
+      "classification_score": null
+    },
+    {
+      "section_id": 5,
+      "header": "Analyses",
+      "parent_section_id": null,
+      "section_type": "method",
+      "classification_score": null
+    },
+    {
+      "section_id": 6,
+      "header": "Developmental Psychology separately (osf.io/wa62v/).",
+      "parent_section_id": null,
+      "section_type": "method",
+      "classification_score": null
+    },
+    {
+      "section_id": 7,
+      "header": "Results",
+      "parent_section_id": null,
+      "section_type": "results",
+      "classification_score": null
+    },
+    {
+      "section_id": 8,
+      "header": "Journal of Personality and Social Psychology and Developmental Psychology",
+      "parent_section_id": null,
+      "section_type": "results",
+      "classification_score": null
+    },
+    {
+      "section_id": 9,
+      "header": "Psychology and its disciplines",
+      "parent_section_id": null,
+      "section_type": "results",
+      "classification_score": null
+    },
+    {
+      "section_id": 10,
+      "header": "Discussion",
+      "parent_section_id": null,
+      "section_type": "discussion",
+      "classification_score": null
+    },
+    {
+      "section_id": 11,
+      "header": "Action Editor",
+      "parent_section_id": null,
+      "section_type": "discussion",
+      "classification_score": null
+    },
+    {
+      "section_id": 12,
+      "header": "Author Contributions",
+      "parent_section_id": null,
+      "section_type": "contribution",
+      "classification_score": null
+    },
+    {
+      "section_id": 13,
+      "header": "",
+      "parent_section_id": null,
+      "section_type": "annex",
+      "classification_score": null
+    },
+    {
+      "section_id": 14,
+      "header": "Social Forensic",
+      "parent_section_id": null,
+      "section_type": "annex",
+      "classification_score": null
+    },
+    {
+      "section_id": 15,
+      "header": "Developmental Educational Experimental",
+      "parent_section_id": null,
+      "section_type": "annex",
+      "classification_score": null
+    },
+    {
+      "section_id": 16,
+      "header": "Declaration of Conflicting Interests",
+      "parent_section_id": null,
+      "section_type": "annex",
+      "classification_score": null
+    },
+    {
+      "section_id": 17,
+      "header": "Supplemental Material",
+      "parent_section_id": null,
+      "section_type": "annex",
+      "classification_score": null
+    },
+    {
+      "section_id": 18,
+      "header": "Open Practices",
+      "parent_section_id": null,
+      "section_type": "annex",
+      "classification_score": null
+    },
+    {
+      "section_id": 19,
+      "header": "Fig 1",
+      "parent_section_id": null,
+      "section_type": "figure",
+      "classification_score": null
+    },
+    {
+      "section_id": 20,
+      "header": "Fig 2",
+      "parent_section_id": null,
+      "section_type": "figure",
+      "classification_score": null
+    },
+    {
+      "section_id": 21,
+      "header": "Table 1 .",
+      "parent_section_id": null,
+      "section_type": "table",
+      "classification_score": null
+    },
+    {
+      "section_id": 22,
+      "header": "Table 2 .",
+      "parent_section_id": null,
+      "section_type": "table",
+      "classification_score": null
+    },
+    {
+      "section_id": 23,
+      "header": "pp",
+      "parent_section_id": null,
+      "section_type": "figure",
+      "classification_score": null
+    },
+    {
+      "section_id": 24,
+      "header": "References",
+      "parent_section_id": null,
+      "section_type": "references",
+      "classification_score": null
+    }
+  ],
+  "url": [
+    {
+      "href": "osf.io/4yqhj",
+      "link_text": null,
+      "text_id": 38
+    },
+    {
+      "href": "pypi.python.org",
+      "link_text": null,
+      "text_id": 38
+    },
+    {
+      "href": "osf.io",
+      "link_text": null,
+      "text_id": 39
+    },
+    {
+      "href": "osf.io/f3mga",
+      "link_text": null,
+      "text_id": 40
+    },
+    {
+      "href": "osf.io/gzyt9",
+      "link_text": null,
+      "text_id": 47
+    },
+    {
+      "href": "osf.io/gzyt9",
+      "link_text": null,
+      "text_id": 50
+    },
+    {
+      "href": "osf.io",
+      "link_text": null,
+      "text_id": 51
+    },
+    {
+      "href": "osf.io/gzyt9",
+      "link_text": null,
+      "text_id": 52
+    },
+    {
+      "href": "osf.io/gzyt9",
+      "link_text": null,
+      "text_id": 54
+    },
+    {
+      "href": "osf.io",
+      "link_text": null,
+      "text_id": 55
+    },
+    {
+      "href": "osf.io/y953k",
+      "link_text": null,
+      "text_id": 56
+    },
+    {
+      "href": "osf.io",
+      "link_text": null,
+      "text_id": 63
+    },
+    {
+      "href": "osf.io/79t2p",
+      "link_text": null,
+      "text_id": 72
+    },
+    {
+      "href": "journals.sagepub.com/doi/suppl/10.1177/0956797619830326",
+      "link_text": null,
+      "text_id": 159
+    },
+    {
+      "href": "osf.io/28gxz",
+      "link_text": null,
+      "text_id": 160
+    },
+    {
+      "href": "journals.sagepub.com/doi/suppl/10.1177/0956797619830326",
+      "link_text": null,
+      "text_id": 163
+    },
+    {
+      "href": "http://www.psychologicalscience.org",
+      "link_text": null,
+      "text_id": 165
+    },
+    {
+      "href": "osf.io/92xqk",
+      "link_text": null,
+      "text_id": 173
+    }
+  ],
+  "bib": [
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "",
+      "authors": "Benjamin, D J; Berger, J O; Johannesson, M; Nosek, B A; Wagenmakers, E J; Berk, R; Johnson, . .; , V E",
+      "editors": "",
+      "publisher": "",
+      "year": null,
+      "volume": "",
+      "issue": "",
+      "container": "",
+      "first_page": null,
+      "last_page": null,
+      "bib_id": 0,
+      "year_suffix": null,
+      "text_id": 176
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "Redefine statistical significance",
+      "authors": "",
+      "editors": "",
+      "publisher": "",
+      "year": null,
+      "volume": "2",
+      "issue": "1",
+      "container": "Nature Human Behaviour",
+      "first_page": "6",
+      "last_page": "10",
+      "bib_id": 1,
+      "year_suffix": null,
+      "text_id": 177
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "Evaluating replicability of laboratory experiments in economics",
+      "authors": "Camerer, C F; Dreber, A; Forsell, E; Ho, T H; Huber, J; Johannesson, M; Wu, . .; , H",
+      "editors": "",
+      "publisher": "",
+      "year": 2016,
+      "volume": "351",
+      "issue": "",
+      "container": "Science",
+      "first_page": "1433",
+      "last_page": "1436",
+      "bib_id": 2,
+      "year_suffix": "",
+      "text_id": 178
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "",
+      "authors": "Chamberlain, S; Boettiger, C; Hart, T; Ram, K",
+      "editors": "",
+      "publisher": "",
+      "year": 2016,
+      "volume": "",
+      "issue": "",
+      "container": "",
+      "first_page": null,
+      "last_page": null,
+      "bib_id": 3,
+      "year_suffix": "",
+      "text_id": 179
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "",
+      "authors": "Epskamp, S; Nuijten, M B",
+      "editors": "",
+      "publisher": "",
+      "year": 2016,
+      "volume": "",
+      "issue": "",
+      "container": "",
+      "first_page": null,
+      "last_page": null,
+      "bib_id": 4,
+      "year_suffix": "",
+      "text_id": 180
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "",
+      "authors": "Hankins, M",
+      "editors": "",
+      "publisher": "",
+      "year": 2013,
+      "volume": "",
+      "issue": "",
+      "container": "",
+      "first_page": null,
+      "last_page": null,
+      "bib_id": 5,
+      "year_suffix": "",
+      "text_id": 181
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.3390/data1030014",
+      "title": "112 statistical results: Content mining psychology articles for statistical test results",
+      "authors": "Hartgerink, C H J",
+      "editors": "",
+      "publisher": "",
+      "year": 2016,
+      "volume": "688",
+      "issue": "3",
+      "container": "Data",
+      "first_page": "14",
+      "last_page": null,
+      "bib_id": 6,
+      "year_suffix": "",
+      "text_id": 182
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.7717/peerj.1935",
+      "title": "",
+      "authors": "Hartgerink, C H J; Van Aert, R C M; Nuijten, M B; Wicherts, J M; Van Assen, M A L M",
+      "editors": "",
+      "publisher": "",
+      "year": 2016,
+      "volume": "",
+      "issue": "",
+      "container": "",
+      "first_page": null,
+      "last_page": null,
+      "bib_id": 7,
+      "year_suffix": "",
+      "text_id": 183
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1371/journal.pmed.0020124",
+      "title": "Why most published research findings are false",
+      "authors": "Ioannidis, J P",
+      "editors": "",
+      "publisher": "",
+      "year": 2005,
+      "volume": "2",
+      "issue": "8",
+      "container": "PLOS Medicine",
+      "first_page": "124",
+      "last_page": null,
+      "bib_id": 8,
+      "year_suffix": "",
+      "text_id": 184
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1093/biostatistics/kxt007",
+      "title": "An estimate of the science-wise false discovery rate and application to the top medical literature",
+      "authors": "Jager, L R; Leek, J T",
+      "editors": "",
+      "publisher": "",
+      "year": 2014,
+      "volume": "15",
+      "issue": "",
+      "container": "Biostatistics",
+      "first_page": "1",
+      "last_page": "12",
+      "bib_id": 9,
+      "year_suffix": "",
+      "text_id": 185
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1177/0956797611430953",
+      "title": "Measuring the prevalence of questionable research practices with incentives for truth telling",
+      "authors": "John, L K; Loewenstein, G; Prelec, D",
+      "editors": "",
+      "publisher": "",
+      "year": 2012,
+      "volume": "23",
+      "issue": "",
+      "container": "Psychological Science",
+      "first_page": "524",
+      "last_page": "532",
+      "bib_id": 10,
+      "year_suffix": "",
+      "text_id": 186
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.7717/peerj.1142",
+      "title": "On the challenges of drawing conclusions from p-values just below 0.05",
+      "authors": "Lakens, D",
+      "editors": "",
+      "publisher": "",
+      "year": 2015,
+      "volume": "3",
+      "issue": "",
+      "container": "PeerJ",
+      "first_page": "1142",
+      "last_page": null,
+      "bib_id": 11,
+      "year_suffix": "",
+      "text_id": 187
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "Justify your alpha",
+      "authors": "Lakens, D; Adolfi, F G; Albers, C J; Anvari, F; Apps, M A; Argamon, S E; Buchanan, . .; , E M",
+      "editors": "",
+      "publisher": "",
+      "year": 2018,
+      "volume": "2",
+      "issue": "3",
+      "container": "Nature Human Behaviour",
+      "first_page": "168",
+      "last_page": "171",
+      "bib_id": 12,
+      "year_suffix": "",
+      "text_id": 188
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.3758/s13428-015-0664-2",
+      "title": "",
+      "authors": "Nuijten, M B; Hartgerink, C H J; Van Assen, M A L M; Epskamp, S; Wicherts, J M",
+      "editors": "",
+      "publisher": "",
+      "year": 2016,
+      "volume": "48",
+      "issue": "",
+      "container": "",
+      "first_page": "1205",
+      "last_page": "1226",
+      "bib_id": 13,
+      "year_suffix": "",
+      "text_id": 189
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1126/science.aac4716",
+      "title": "Estimating the reproducibility of psychological science",
+      "authors": "",
+      "editors": "",
+      "publisher": "",
+      "year": 2015,
+      "volume": "349",
+      "issue": "",
+      "container": "Science",
+      "first_page": "943",
+      "last_page": null,
+      "bib_id": 14,
+      "year_suffix": "",
+      "text_id": 190
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1177/0956797616645672",
+      "title": "Marginally significant effects as evidence for hypotheses: Changing attitudes over four decades",
+      "authors": "Pritschet, L; Powell, D; Horne, Z",
+      "editors": "",
+      "publisher": "",
+      "year": 2016,
+      "volume": "27",
+      "issue": "",
+      "container": "Psychological Science",
+      "first_page": "1036",
+      "last_page": "1042",
+      "bib_id": 15,
+      "year_suffix": "",
+      "text_id": 191
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "R: A language and environment for statistical computing",
+      "authors": "",
+      "editors": "",
+      "publisher": "",
+      "year": 2017,
+      "volume": "",
+      "issue": "",
+      "container": "",
+      "first_page": null,
+      "last_page": null,
+      "bib_id": 16,
+      "year_suffix": "",
+      "text_id": 192
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1177/0956797611417632",
+      "title": "False-positive psychology: Undisclosed flexibility in data collection and analysis allows presenting anything as significant",
+      "authors": "Simmons, J P; Nelson, L D; Simonsohn, U",
+      "editors": "",
+      "publisher": "",
+      "year": 2011,
+      "volume": "22",
+      "issue": "",
+      "container": "Psychological Science",
+      "first_page": "1359",
+      "last_page": "1366",
+      "bib_id": 17,
+      "year_suffix": "",
+      "text_id": 193
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1080/19312458.2015.1096333",
+      "title": "Blinded by the light: How a focus on statistical \"significance\" may cause p-value misreporting and an excess of p-values just below .05 in communication science",
+      "authors": "Vermeulen, I; Beukeboom, C J; Batenburg, A; Avramiea, A; Stoyanov, D; Van De Velde, B; Oegema, D",
+      "editors": "",
+      "publisher": "",
+      "year": 2015,
+      "volume": "9",
+      "issue": "",
+      "container": "Communication Methods and Measures",
+      "first_page": "253",
+      "last_page": "279",
+      "bib_id": 18,
+      "year_suffix": "",
+      "text_id": 194
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.3389/fpsyg.2016.01832",
+      "title": "Degrees of freedom in planning, running, analyzing, and reporting psychological studies: A checklist to avoid p-hacking",
+      "authors": "Wicherts, J M; Veldkamp, C L S; Augusteijn, H E M; Bakker, M; Van Aert, R C M; Van Assen, M A L M",
+      "editors": "",
+      "publisher": "",
+      "year": 2016,
+      "volume": "7",
+      "issue": "",
+      "container": "Frontiers in Psychology",
+      "first_page": "1832",
+      "last_page": null,
+      "bib_id": 19,
+      "year_suffix": "",
+      "text_id": 195
+    }
+  ],
+  "xref": [
+    {
+      "xref_id": 1,
+      "xref_type": "bib",
+      "contents": "(2018)",
+      "text_id": 3
+    },
+    {
+      "xref_id": 2,
+      "xref_type": "bib",
+      "contents": "(Camerer et al., 2016;",
+      "text_id": null
+    },
+    {
+      "xref_id": 3,
+      "xref_type": "bib",
+      "contents": "Chamberlain, Boettiger, Hart, & Ram, 2016)",
+      "text_id": 50
+    },
+    {
+      "xref_id": 5,
+      "xref_type": "bib",
+      "contents": "Hankins (2013)",
+      "text_id": 134
+    },
+    {
+      "xref_id": 6,
+      "xref_type": "bib",
+      "contents": "Hartgerink (2016)",
+      "text_id": 31
+    },
+    {
+      "xref_id": 6,
+      "xref_type": "bib",
+      "contents": "Hartgerink (2016)",
+      "text_id": 37
+    },
+    {
+      "xref_id": 6,
+      "xref_type": "bib",
+      "contents": "Hartgerink (2016)",
+      "text_id": 42
+    },
+    {
+      "xref_id": 7,
+      "xref_type": "bib",
+      "contents": "Hartgerink, van Aert, Nuijten, Wicherts, & van Assen, 2016;",
+      "text_id": 22
+    },
+    {
+      "xref_id": 7,
+      "xref_type": "bib",
+      "contents": "(Hartgerink et al., 2016)",
+      "text_id": 126
+    },
+    {
+      "xref_id": 8,
+      "xref_type": "bib",
+      "contents": "Ioannidis, 2005;",
+      "text_id": null
+    },
+    {
+      "xref_id": 8,
+      "xref_type": "bib",
+      "contents": "Ioannidis, 2005)",
+      "text_id": 144
+    },
+    {
+      "xref_id": 9,
+      "xref_type": "bib",
+      "contents": "Jager & Leek, 2014",
+      "text_id": 22
+    },
+    {
+      "xref_id": 10,
+      "xref_type": "bib",
+      "contents": "( John, Loewenstein, & Prelec, 2012)",
+      "text_id": 140
+    },
+    {
+      "xref_id": 11,
+      "xref_type": "bib",
+      "contents": "Lakens, 2015;",
+      "text_id": 19
+    },
+    {
+      "xref_id": 11,
+      "xref_type": "bib",
+      "contents": "Lakens, 2015)",
+      "text_id": 153
+    },
+    {
+      "xref_id": 13,
+      "xref_type": "bib",
+      "contents": "(Nuijten, Hartgerink, van Assen, Epskamp, & Wicherts, 2016)",
+      "text_id": 13
+    },
+    {
+      "xref_id": 13,
+      "xref_type": "bib",
+      "contents": "Nuijten et al., 2016;",
+      "text_id": 19
+    },
+    {
+      "xref_id": 13,
+      "xref_type": "bib",
+      "contents": "Nuijten et al., 2016;",
+      "text_id": 24
+    },
+    {
+      "xref_id": 13,
+      "xref_type": "bib",
+      "contents": "Nuijten et al. (2016)",
+      "text_id": 19
+    },
+    {
+      "xref_id": 13,
+      "xref_type": "bib",
+      "contents": "Nuijten et al. (2016)",
+      "text_id": 24
+    },
+    {
+      "xref_id": 13,
+      "xref_type": "bib",
+      "contents": "(Nuijten et al., 2016)",
+      "text_id": 129
+    },
+    {
+      "xref_id": 15,
+      "xref_type": "bib",
+      "contents": "Pritschet et al. (2016)",
+      "text_id": null
+    },
+    {
+      "xref_id": 15,
+      "xref_type": "bib",
+      "contents": "Pritschet et al., 2016)",
+      "text_id": 61
+    },
+    {
+      "xref_id": 15,
+      "xref_type": "bib",
+      "contents": "Pritschet et al. (2016)",
+      "text_id": 77
+    },
+    {
+      "xref_id": 15,
+      "xref_type": "bib",
+      "contents": "Pritschet et al. (2016)",
+      "text_id": 110
+    },
+    {
+      "xref_id": 15,
+      "xref_type": "bib",
+      "contents": "Pritschet et al. (2016)",
+      "text_id": 114
+    },
+    {
+      "xref_id": 15,
+      "xref_type": "bib",
+      "contents": "Pritschet et al. (2016)",
+      "text_id": 117
+    },
+    {
+      "xref_id": 15,
+      "xref_type": "bib",
+      "contents": "Pritschet, Powell, and Horne (2016)",
+      "text_id": 173
+    },
+    {
+      "xref_id": 17,
+      "xref_type": "bib",
+      "contents": "(Simmons, Nelson, & Simonsohn, 2011)",
+      "text_id": 154
+    },
+    {
+      "xref_id": 18,
+      "xref_type": "bib",
+      "contents": "Vermeulen et al., 2015)",
+      "text_id": 19
+    },
+    {
+      "xref_id": 19,
+      "xref_type": "bib",
+      "contents": "(Wicherts et al., 2016)",
+      "text_id": 141
+    },
+    {
+      "xref_id": null,
+      "xref_type": "bib",
+      "contents": "reexamined Pritschet, Powell, and Horne's (2016)",
+      "text_id": 7
+    },
+    {
+      "xref_id": null,
+      "xref_type": "bib",
+      "contents": "Pritschet et al.",
+      "text_id": null
+    },
+    {
+      "xref_id": null,
+      "xref_type": "bib",
+      "contents": "Pritschet et al.",
+      "text_id": 13
+    },
+    {
+      "xref_id": null,
+      "xref_type": "bib",
+      "contents": "Open Science Collaboration, 2015)",
+      "text_id": null
+    },
+    {
+      "xref_id": null,
+      "xref_type": "bib",
+      "contents": "years 1970",
+      "text_id": null
+    },
+    {
+      "xref_id": null,
+      "xref_type": "bib",
+      "contents": ", 1980",
+      "text_id": null
+    },
+    {
+      "xref_id": null,
+      "xref_type": "bib",
+      "contents": ", 1990",
+      "text_id": null
+    },
+    {
+      "xref_id": null,
+      "xref_type": "bib",
+      "contents": ", 2000",
+      "text_id": null
+    },
+    {
+      "xref_id": null,
+      "xref_type": "bib",
+      "contents": "Pritschet et al.'s (2016)",
+      "text_id": 26
+    },
+    {
+      "xref_id": null,
+      "xref_type": "bib",
+      "contents": "Epskamp & Nuijten, 2016)",
+      "text_id": 43
+    },
+    {
+      "xref_id": null,
+      "xref_type": "bib",
+      "contents": "(Benjamin et al., 2018;",
+      "text_id": 144
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "1",
+      "text_id": null
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "2",
+      "text_id": null
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "2",
+      "text_id": null
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "2",
+      "text_id": null
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "3",
+      "text_id": null
+    },
+    {
+      "xref_id": null,
+      "xref_type": "table",
+      "contents": "1",
+      "text_id": 41
+    },
+    {
+      "xref_id": null,
+      "xref_type": "table",
+      "contents": "1",
+      "text_id": 58
+    },
+    {
+      "xref_id": null,
+      "xref_type": "table",
+      "contents": "1",
+      "text_id": 76
+    },
+    {
+      "xref_id": null,
+      "xref_type": "table",
+      "contents": "2",
+      "text_id": null
+    },
+    {
+      "xref_id": null,
+      "xref_type": "table",
+      "contents": "2",
+      "text_id": 77
+    },
+    {
+      "xref_id": null,
+      "xref_type": "table",
+      "contents": "2",
+      "text_id": 88
+    },
+    {
+      "xref_id": null,
+      "xref_type": "table",
+      "contents": "2",
+      "text_id": 92
+    }
+  ],
+  "figure": [
+    {
+      "figure_id": 1,
+      "section_id": 19,
+      "image": null,
+      "page_number": null
+    },
+    {
+      "figure_id": 2,
+      "section_id": 20,
+      "image": null,
+      "page_number": null
+    },
+    {
+      "figure_id": 3,
+      "section_id": 23,
+      "image": null,
+      "page_number": null
+    }
+  ],
+  "table": [
+    {
+      "table_id": 1,
+      "section_id": 21,
+      "html": "<table>\n  <row>\n    <cell/>\n    <cell/>\n    <cell>Marginal<\/cell>\n    <cell>Marginal significance in<\/cell>\n    <cell>significance (%) a article (%) b<\/cell>\n    <cell>39.60 [39.13, 40.06] 19.63 [19.26, 20.00]<\/cell>\n    <cell>30.08 [29.19, 30.97] 12.22 [11.70, 12.74]<\/cell>\n    <cell>39.49 [38.5, 40.49] 23.59 [22.65, 24.52]<\/cell>\n    <cell>37.72 [36.25, 39.19 17.37 [16.38, 18.36]<\/cell>\n    <cell>34.69 [33.55, 35.83] 14.07 [13.38, 14.76]<\/cell>\n    <cell>40.65 [39.95, 41.35] 24.55 [23.87, 25.23]<\/cell>\n    <cell>33.91 [31.31, 36.51] 11.42 [10.05, 12.79]<\/cell>\n    <cell>31.58 [30.47, 32.68] 11.51 [10.91, 12.10]<\/cell>\n    <cell>45.38 [44.5, 46.26] 24.20 [23.38, 25.01]<\/cell>\n    <cell>44.47 [43.69, 45.25] 25.32 [24.6, 26.05]<\/cell>\n  <\/row>\n  <row>\n    <cell>Number of<\/cell>\n    <cell>p values in<\/cell>\n    <cell>the range<\/cell>\n    <cell>.05 &lt; p ≤ .10<\/cell>\n    <cell>per article<\/cell>\n    <cell>0.96<\/cell>\n    <cell>0.67<\/cell>\n    <cell>1.19<\/cell>\n    <cell>0.74<\/cell>\n    <cell>0.68<\/cell>\n    <cell>1.23<\/cell>\n    <cell>0.61<\/cell>\n    <cell>0.62<\/cell>\n    <cell>1.17<\/cell>\n    <cell>1.14<\/cell>\n  <\/row>\n  <row>\n    <cell/>\n    <cell>Number of<\/cell>\n    <cell>p values in<\/cell>\n    <cell>the range<\/cell>\n    <cell>.10 .05 &lt; p ≤<\/cell>\n    <cell>42,504<\/cell>\n    <cell>10,173<\/cell>\n    <cell>9,343<\/cell>\n    <cell>4,181<\/cell>\n    <cell>6,691<\/cell>\n    <cell>18,907<\/cell>\n    <cell>1,271<\/cell>\n    <cell>6,802<\/cell>\n    <cell>12,255<\/cell>\n    <cell>15,736<\/cell>\n  <\/row>\n  <row>\n    <cell/>\n    <cell/>\n    <cell>Number of<\/cell>\n    <cell>p values<\/cell>\n    <cell>per article<\/cell>\n    <cell>17.59<\/cell>\n    <cell>12.88<\/cell>\n    <cell>20.50<\/cell>\n    <cell>15.10<\/cell>\n    <cell>14.60<\/cell>\n    <cell>21.75<\/cell>\n    <cell>12.78<\/cell>\n    <cell>12.51<\/cell>\n    <cell>20.04<\/cell>\n    <cell>19.35<\/cell>\n  <\/row>\n  <row>\n    <cell/>\n    <cell/>\n    <cell>Number<\/cell>\n    <cell>of<\/cell>\n    <cell>p values<\/cell>\n    <cell>777,596<\/cell>\n    <cell>195,999<\/cell>\n    <cell>161,614<\/cell>\n    <cell>84,946<\/cell>\n    <cell>143,178<\/cell>\n    <cell>334,743<\/cell>\n    <cell>26,527<\/cell>\n    <cell>138,266<\/cell>\n    <cell>210,732<\/cell>\n    <cell>266,015<\/cell>\n  <\/row>\n  <row>\n    <cell/>\n    <cell/>\n    <cell>Number of<\/cell>\n    <cell>articles with<\/cell>\n    <cell>p values<\/cell>\n    <cell>44,200<\/cell>\n    <cell>15,216<\/cell>\n    <cell>7,882<\/cell>\n    <cell>5,624<\/cell>\n    <cell>9,808<\/cell>\n    <cell>15,387<\/cell>\n    <cell>2,075<\/cell>\n    <cell>11,054<\/cell>\n    <cell>10,514<\/cell>\n    <cell>13,746<\/cell>\n  <\/row>\n  <row>\n    <cell/>\n    <cell/>\n    <cell>Number<\/cell>\n    <cell>of<\/cell>\n    <cell>journals<\/cell>\n    <cell>70<\/cell>\n    <cell>30<\/cell>\n    <cell>10<\/cell>\n    <cell>8<\/cell>\n    <cell>10<\/cell>\n    <cell>19<\/cell>\n    <cell>4<\/cell>\n    <cell>25<\/cell>\n    <cell>13<\/cell>\n    <cell>25<\/cell>\n  <\/row>\n  <row>\n    <cell/>\n    <cell/>\n    <cell/>\n    <cell/>\n    <cell/>\n    <cell>All APA journals<\/cell>\n    <cell>Clinical<\/cell>\n    <cell>Cognitive<\/cell>\n    <cell>Developmental<\/cell>\n    <cell>Educational<\/cell>\n    <cell>Experimental<\/cell>\n    <cell>Forensic<\/cell>\n    <cell>Health<\/cell>\n    <cell>Organizational<\/cell>\n    <cell>Social<\/cell>\n  <\/row>\n<\/table>",
+      "contents": null,
+      "page_number": null
+    },
+    {
+      "table_id": 2,
+      "section_id": 22,
+      "html": "<table>\n  <row>\n    <cell/>\n    <cell/>\n    <cell>Marginal<\/cell>\n    <cell>Marginal significance in<\/cell>\n    <cell>significance (%) a article (%) b<\/cell>\n    <cell/>\n    <cell>49.88 [48.79, 50.98] 41.84 [40.32, 43.35]<\/cell>\n    <cell>39.71 [37.81, 41.61] 21.74 [20.21, 23.27]<\/cell>\n    <cell>39.52 [36.28, 42.76]<\/cell>\n    <cell>24.29 [20.75, 27.83]<\/cell>\n  <\/row>\n  <row>\n    <cell>Number of<\/cell>\n    <cell>p values in<\/cell>\n    <cell>the range<\/cell>\n    <cell>.05 &lt; p ≤ .10<\/cell>\n    <cell>per article<\/cell>\n    <cell/>\n    <cell>1.96<\/cell>\n    <cell>0.91<\/cell>\n  <\/row>\n  <row>\n    <cell/>\n    <cell>Number of<\/cell>\n    <cell>p values in<\/cell>\n    <cell>the range<\/cell>\n    <cell>.10 .05 &lt; p ≤<\/cell>\n    <cell/>\n    <cell>8,001<\/cell>\n    <cell>2,541<\/cell>\n  <\/row>\n  <row>\n    <cell/>\n    <cell/>\n    <cell>Number of<\/cell>\n    <cell>p values<\/cell>\n    <cell>per article<\/cell>\n    <cell/>\n    <cell>28.20<\/cell>\n    <cell>17.53<\/cell>\n  <\/row>\n  <row>\n    <cell/>\n    <cell/>\n    <cell/>\n    <cell>Number of<\/cell>\n    <cell>p values<\/cell>\n    <cell/>\n    <cell>114,872<\/cell>\n    <cell>49,201<\/cell>\n  <\/row>\n  <row>\n    <cell/>\n    <cell/>\n    <cell/>\n    <cell>Number<\/cell>\n    <cell>of articles<\/cell>\n    <cell/>\n    <cell>4,073<\/cell>\n    <cell>2,806<\/cell>\n    <cell>873<\/cell>\n    <cell>564<\/cell>\n  <\/row>\n  <row>\n    <cell/>\n    <cell/>\n    <cell/>\n    <cell/>\n    <cell>Article and journal Time span<\/cell>\n    <cell>Current article<\/cell>\n    <cell>Journal of Personality and Social Psychology 1985-2016<\/cell>\n    <cell>Developmental Psychology 1985-2016<\/cell>\n    <cell>Pritschet et al. (2016)<\/cell>\n    <cell>Journal of Personality and Social Psychology 1970-2010<\/cell>\n    <cell>Developmental Psychology 1970-2010<\/cell>\n  <\/row>\n<\/table>",
+      "contents": null,
+      "page_number": null
+    }
+  ],
+  "eq": [
+    {
+      "text_id": 39,
+      "grp_id": 1,
+      "lhs": "p",
+      "comp": "=",
+      "rhs": ".048"
+    },
+    {
+      "text_id": 47,
+      "grp_id": 2,
+      "lhs": "n",
+      "comp": "=",
+      "rhs": "51"
+    },
+    {
+      "text_id": 47,
+      "grp_id": 2,
+      "lhs": "n",
+      "comp": "=",
+      "rhs": "1,073"
+    },
+    {
+      "text_id": 47,
+      "grp_id": 2,
+      "lhs": "p",
+      "comp": "=",
+      "rhs": "1"
+    },
+    {
+      "text_id": 47,
+      "grp_id": 2,
+      "lhs": "p",
+      "comp": "=",
+      "rhs": ".12"
+    },
+    {
+      "text_id": 48,
+      "grp_id": 3,
+      "lhs": "p",
+      "comp": "=",
+      "rhs": ".099"
+    },
+    {
+      "text_id": 50,
+      "grp_id": 4,
+      "lhs": "n",
+      "comp": "=",
+      "rhs": "1.62"
+    },
+    {
+      "text_id": 71,
+      "grp_id": 5,
+      "lhs": "range",
+      "comp": "=",
+      "rhs": "1985-2016"
+    },
+    {
+      "text_id": 79,
+      "grp_id": 6,
+      "lhs": "N",
+      "comp": "=",
+      "rhs": "790,206"
+    },
+    {
+      "text_id": 79,
+      "grp_id": 6,
+      "lhs": "n",
+      "comp": "=",
+      "rhs": "11,486"
+    },
+    {
+      "text_id": 79,
+      "grp_id": 6,
+      "lhs": "n",
+      "comp": "=",
+      "rhs": "1,124"
+    },
+    {
+      "text_id": 79,
+      "grp_id": 6,
+      "lhs": "n",
+      "comp": "=",
+      "rhs": "51"
+    },
+    {
+      "text_id": 79,
+      "grp_id": 6,
+      "lhs": "n",
+      "comp": "=",
+      "rhs": "1,073"
+    },
+    {
+      "text_id": 79,
+      "grp_id": 6,
+      "lhs": "N",
+      "comp": "=",
+      "rhs": "789,082"
+    },
+    {
+      "text_id": 79,
+      "grp_id": 6,
+      "lhs": "p",
+      "comp": "≤",
+      "rhs": ".10"
+    },
+    {
+      "text_id": 79,
+      "grp_id": 6,
+      "lhs": "N",
+      "comp": "=",
+      "rhs": "42,504"
+    },
+    {
+      "text_id": 79,
+      "grp_id": 6,
+      "lhs": "n",
+      "comp": "=",
+      "rhs": "12,775"
+    },
+    {
+      "text_id": 79,
+      "grp_id": 6,
+      "lhs": "n",
+      "comp": "=",
+      "rhs": "2,553"
+    },
+    {
+      "text_id": 79,
+      "grp_id": 6,
+      "lhs": "p",
+      "comp": "≤",
+      "rhs": ".05"
+    },
+    {
+      "text_id": 79,
+      "grp_id": 6,
+      "lhs": "p",
+      "comp": ">",
+      "rhs": ".1"
+    },
+    {
+      "text_id": 79,
+      "grp_id": 6,
+      "lhs": "n",
+      "comp": "=",
+      "rhs": "735,092"
+    },
+    {
+      "text_id": 96,
+      "grp_id": 7,
+      "lhs": "b",
+      "comp": "=",
+      "rhs": "-0.32"
+    },
+    {
+      "text_id": 98,
+      "grp_id": 8,
+      "lhs": "b",
+      "comp": "=",
+      "rhs": "-0.92"
+    },
+    {
+      "text_id": 98,
+      "grp_id": 8,
+      "lhs": "b",
+      "comp": "=",
+      "rhs": "-0.68"
+    },
+    {
+      "text_id": 98,
+      "grp_id": 8,
+      "lhs": "b",
+      "comp": "=",
+      "rhs": "-0.6"
+    },
+    {
+      "text_id": 99,
+      "grp_id": 9,
+      "lhs": "b",
+      "comp": "=",
+      "rhs": "-0.02"
+    },
+    {
+      "text_id": 99,
+      "grp_id": 9,
+      "lhs": "b",
+      "comp": "=",
+      "rhs": "-0.09"
+    },
+    {
+      "text_id": 99,
+      "grp_id": 9,
+      "lhs": "b",
+      "comp": "=",
+      "rhs": "-0.12"
+    },
+    {
+      "text_id": 101,
+      "grp_id": 10,
+      "lhs": "b",
+      "comp": "=",
+      "rhs": "-0.27"
+    },
+    {
+      "text_id": 101,
+      "grp_id": 10,
+      "lhs": "b",
+      "comp": "=",
+      "rhs": "-0.29"
+    },
+    {
+      "text_id": 101,
+      "grp_id": 10,
+      "lhs": "b",
+      "comp": "=",
+      "rhs": "-0.35"
+    },
+    {
+      "text_id": 175,
+      "grp_id": 11,
+      "lhs": "b",
+      "comp": "=",
+      "rhs": "-0.32"
+    },
+    {
+      "text_id": 175,
+      "grp_id": 11,
+      "lhs": "b",
+      "comp": "=",
+      "rhs": "0.03"
+    },
+    {
+      "text_id": 175,
+      "grp_id": 11,
+      "lhs": "b",
+      "comp": "=",
+      "rhs": "-0.12"
+    },
+    {
+      "text_id": 175,
+      "grp_id": 11,
+      "lhs": "b",
+      "comp": "=",
+      "rhs": "-0.2"
+    },
+    {
+      "text_id": 175,
+      "grp_id": 11,
+      "lhs": "b",
+      "comp": "=",
+      "rhs": "-0.92"
+    },
+    {
+      "text_id": 175,
+      "grp_id": 11,
+      "lhs": "b",
+      "comp": "=",
+      "rhs": "0.01"
+    },
+    {
+      "text_id": 175,
+      "grp_id": 11,
+      "lhs": "b",
+      "comp": "=",
+      "rhs": "-0"
+    },
+    {
+      "text_id": 175,
+      "grp_id": 11,
+      "lhs": "b",
+      "comp": "=",
+      "rhs": "-0.09"
+    },
+    {
+      "text_id": 2,
+      "grp_id": 12,
+      "lhs": "p",
+      "comp": "<",
+      "rhs": ".05"
+    },
+    {
+      "text_id": 2,
+      "grp_id": 12,
+      "lhs": "p",
+      "comp": "<",
+      "rhs": ".005"
+    },
+    {
+      "text_id": 4,
+      "grp_id": 13,
+      "lhs": "p",
+      "comp": "≤",
+      "rhs": ".10"
+    },
+    {
+      "text_id": 70,
+      "grp_id": 14,
+      "lhs": "p",
+      "comp": "≤",
+      "rhs": ".10"
+    },
+    {
+      "text_id": 70,
+      "grp_id": 14,
+      "lhs": "p",
+      "comp": "≤",
+      "rhs": ".10"
+    },
+    {
+      "text_id": 88,
+      "grp_id": 15,
+      "lhs": "p",
+      "comp": "≤",
+      "rhs": ".10"
+    },
+    {
+      "text_id": 122,
+      "grp_id": 16,
+      "lhs": "p",
+      "comp": "≤",
+      "rhs": ".10"
+    },
+    {
+      "text_id": 169,
+      "grp_id": 17,
+      "lhs": "p",
+      "comp": "≤",
+      "rhs": ".10"
+    },
+    {
+      "text_id": 170,
+      "grp_id": 18,
+      "lhs": "p",
+      "comp": "≤",
+      "rhs": ".10"
+    },
+    {
+      "text_id": 130,
+      "grp_id": 19,
+      "lhs": "p",
+      "comp": ">",
+      "rhs": ".05"
+    },
+    {
+      "text_id": 131,
+      "grp_id": 20,
+      "lhs": "p",
+      "comp": ">",
+      "rhs": ".05"
+    }
+  ],
+  "bib_match": [
+    {
+      "bib_id": 2,
+      "service": "crossref",
+      "service_id": null,
+      "score": 85.8183,
+      "bib_type": "misc",
+      "doi": "10.31222/osf.io/zamry",
+      "title": "Predicting the Replicability of Social Science Lab Experiments",
+      "authors": [
+        {
+          "given": "Adam",
+          "family": "Altmejd"
+        },
+        {
+          "given": "Anna",
+          "family": "Dreber"
+        },
+        {
+          "given": "Eskil",
+          "family": "Forsell"
+        },
+        {
+          "given": "Teck Hua",
+          "family": "Ho"
+        },
+        {
+          "given": "Juergen",
+          "family": "Huber"
+        },
+        {
+          "given": "Taisuke",
+          "family": "Imai"
+        },
+        {
+          "given": "Magnus",
+          "family": "Johannesson"
+        },
+        {
+          "given": "Michael",
+          "family": "Kirchler"
+        },
+        {
+          "given": "Gideon",
+          "family": "Nave"
+        },
+        {
+          "given": "Colin",
+          "family": "Camerer"
+        }
+      ],
+      "editors": [],
+      "publisher": "Center for Open Science",
+      "year": 2019,
+      "date": null,
+      "container": null,
+      "volume": null,
+      "issue": null,
+      "first_page": null,
+      "last_page": null,
+      "edition": null,
+      "version": null,
+      "url": "https://doi.org/10.31222/osf.io/zamry"
+    },
+    {
+      "bib_id": 6,
+      "service": "crossref",
+      "service_id": null,
+      "score": 91.6003,
+      "bib_type": "article",
+      "doi": "10.3390/data1030014",
+      "title": "688,112 Statistical Results: Content Mining Psychology Articles for Statistical Test Results",
+      "authors": [
+        {
+          "given": "Chris",
+          "family": "Hartgerink"
+        }
+      ],
+      "editors": [],
+      "publisher": "MDPI AG",
+      "year": 2016,
+      "date": null,
+      "container": "Data",
+      "volume": "1",
+      "issue": "3",
+      "first_page": "14",
+      "last_page": null,
+      "edition": null,
+      "version": null,
+      "url": "https://doi.org/10.3390/data1030014"
+    },
+    {
+      "bib_id": 7,
+      "service": "crossref",
+      "service_id": null,
+      "score": 72.977,
+      "bib_type": "misc",
+      "doi": "10.7287/peerj.preprints.1642v1",
+      "title": "Distributions of\n                  <i>p<\/i>\n                  -values smaller than .05 in Psychology: What is going on?",
+      "authors": [
+        {
+          "given": "Chris HJ",
+          "family": "Hartgerink"
+        },
+        {
+          "given": "Robbie CM",
+          "family": "van Aert"
+        },
+        {
+          "given": "Michèle B",
+          "family": "Nuijten"
+        },
+        {
+          "given": "Jelte M.",
+          "family": "Wicherts"
+        },
+        {
+          "given": "Marcel ALM",
+          "family": "van Assen"
+        }
+      ],
+      "editors": [],
+      "publisher": "PeerJ",
+      "year": 2016,
+      "date": null,
+      "container": null,
+      "volume": null,
+      "issue": null,
+      "first_page": null,
+      "last_page": null,
+      "edition": null,
+      "version": null,
+      "url": "https://doi.org/10.7287/peerj.preprints.1642v1"
+    },
+    {
+      "bib_id": 8,
+      "service": "crossref",
+      "service_id": null,
+      "score": 71.0847,
+      "bib_type": "article",
+      "doi": "10.1371/journal.pmed.0020124",
+      "title": "Why Most Published Research Findings Are False",
+      "authors": [
+        {
+          "given": "John P. A.",
+          "family": "Ioannidis"
+        }
+      ],
+      "editors": [],
+      "publisher": "Public Library of Science (PLoS)",
+      "year": 2005,
+      "date": null,
+      "container": "PLoS Medicine",
+      "volume": "2",
+      "issue": "8",
+      "first_page": "e124",
+      "last_page": null,
+      "edition": null,
+      "version": null,
+      "url": "https://doi.org/10.1371/journal.pmed.0020124"
+    },
+    {
+      "bib_id": 9,
+      "service": "crossref",
+      "service_id": null,
+      "score": 91.9189,
+      "bib_type": "article",
+      "doi": "10.1093/biostatistics/kxt007",
+      "title": "An estimate of the science-wise false discovery rate and application to the top medical literature",
+      "authors": [
+        {
+          "given": "L. R.",
+          "family": "Jager"
+        },
+        {
+          "given": "J. T.",
+          "family": "Leek"
+        }
+      ],
+      "editors": [],
+      "publisher": "Oxford University Press (OUP)",
+      "year": 2013,
+      "date": null,
+      "container": "Biostatistics",
+      "volume": "15",
+      "issue": "1",
+      "first_page": "1",
+      "last_page": "12",
+      "edition": null,
+      "version": null,
+      "url": "https://doi.org/10.1093/biostatistics/kxt007"
+    },
+    {
+      "bib_id": 10,
+      "service": "crossref",
+      "service_id": null,
+      "score": 100.1423,
+      "bib_type": "misc",
+      "doi": "10.1037/e632032012-001",
+      "title": "Measuring the Prevalence of Questionable Research Practices With Incentives for Truth-Telling",
+      "authors": [
+        {
+          "given": "Leslie",
+          "family": "John"
+        },
+        {
+          "given": "George",
+          "family": "Loewenstein"
+        },
+        {
+          "given": "Drazen",
+          "family": "Prelec"
+        }
+      ],
+      "editors": [],
+      "publisher": "American Psychological Association (APA)",
+      "year": 2012,
+      "date": null,
+      "container": "PsycEXTRA Dataset",
+      "volume": null,
+      "issue": null,
+      "first_page": null,
+      "last_page": null,
+      "edition": null,
+      "version": null,
+      "url": "https://doi.org/10.1037/e632032012-001"
+    },
+    {
+      "bib_id": 11,
+      "service": "crossref",
+      "service_id": null,
+      "score": 77.9542,
+      "bib_type": "article",
+      "doi": "10.7717/peerj.1142",
+      "title": "On the challenges of drawing conclusions from\n                    <i>p<\/i>\n                    -values just below 0.05",
+      "authors": [
+        {
+          "given": "Daniël",
+          "family": "Lakens"
+        }
+      ],
+      "editors": [],
+      "publisher": "PeerJ",
+      "year": 2015,
+      "date": null,
+      "container": "PeerJ",
+      "volume": "3",
+      "issue": null,
+      "first_page": "e1142",
+      "last_page": null,
+      "edition": null,
+      "version": null,
+      "url": "https://doi.org/10.7717/peerj.1142"
+    },
+    {
+      "bib_id": 13,
+      "service": "crossref",
+      "service_id": null,
+      "score": 69.2204,
+      "bib_type": "misc",
+      "doi": "10.31234/osf.io/tcxaj",
+      "title": "The Validity of the Tool “statcheck” in Discovering Statistical Reporting Inconsistencies",
+      "authors": [
+        {
+          "given": "Michele B.",
+          "family": "Nuijten"
+        },
+        {
+          "given": "Marcel A. L. M.",
+          "family": "van Assen"
+        },
+        {
+          "given": "Chris Hubertus Joseph",
+          "family": "Hartgerink"
+        },
+        {
+          "given": "Sacha",
+          "family": "Epskamp"
+        },
+        {
+          "given": "Jelte M.",
+          "family": "Wicherts"
+        }
+      ],
+      "editors": [],
+      "publisher": "Center for Open Science",
+      "year": 2017,
+      "date": null,
+      "container": null,
+      "volume": null,
+      "issue": null,
+      "first_page": null,
+      "last_page": null,
+      "edition": null,
+      "version": null,
+      "url": "https://doi.org/10.31234/osf.io/tcxaj"
+    },
+    {
+      "bib_id": 15,
+      "service": "crossref",
+      "service_id": null,
+      "score": 111.4871,
+      "bib_type": "article",
+      "doi": "10.1177/0956797616645672",
+      "title": "Marginally Significant Effects as Evidence for Hypotheses",
+      "authors": [
+        {
+          "given": "Laura",
+          "family": "Pritschet"
+        },
+        {
+          "given": "Derek",
+          "family": "Powell"
+        },
+        {
+          "given": "Zachary",
+          "family": "Horne"
+        }
+      ],
+      "editors": [],
+      "publisher": "SAGE Publications",
+      "year": 2016,
+      "date": null,
+      "container": "Psychological Science",
+      "volume": "27",
+      "issue": "7",
+      "first_page": "1036",
+      "last_page": "1042",
+      "edition": null,
+      "version": null,
+      "url": "https://doi.org/10.1177/0956797616645672"
+    },
+    {
+      "bib_id": 17,
+      "service": "crossref",
+      "service_id": null,
+      "score": 125.8272,
+      "bib_type": "misc",
+      "doi": "10.1037/e519702015-014",
+      "title": "False-Positive Psychology: Undisclosed Flexibility in Data Collection and Analysis Allows Presenting Anything as Significant",
+      "authors": [
+        {
+          "given": "Joseph",
+          "family": "Simmons"
+        },
+        {
+          "given": "Leif",
+          "family": "Nelson"
+        },
+        {
+          "given": "Uri",
+          "family": "Simonsohn"
+        }
+      ],
+      "editors": [],
+      "publisher": "American Psychological Association (APA)",
+      "year": 2011,
+      "date": null,
+      "container": "PsycEXTRA Dataset",
+      "volume": null,
+      "issue": null,
+      "first_page": null,
+      "last_page": null,
+      "edition": null,
+      "version": null,
+      "url": "https://doi.org/10.1037/e519702015-014"
+    },
+    {
+      "bib_id": 18,
+      "service": "crossref",
+      "service_id": null,
+      "score": 168.2706,
+      "bib_type": "article",
+      "doi": "10.1080/19312458.2015.1096333",
+      "title": "Blinded by the Light: How a Focus on Statistical “Significance” May Cause<i>p<\/i>-Value Misreporting and an Excess of<i>p<\/i>-Values Just Below .05 in Communication Science",
+      "authors": [
+        {
+          "given": "Ivar",
+          "family": "Vermeulen"
+        },
+        {
+          "given": "Camiel J.",
+          "family": "Beukeboom"
+        },
+        {
+          "given": "Anika",
+          "family": "Batenburg"
+        },
+        {
+          "given": "Arthur",
+          "family": "Avramiea"
+        },
+        {
+          "given": "Dimo",
+          "family": "Stoyanov"
+        },
+        {
+          "given": "Bob",
+          "family": "van de Velde"
+        },
+        {
+          "given": "Dirk",
+          "family": "Oegema"
+        }
+      ],
+      "editors": [],
+      "publisher": "Informa UK Limited",
+      "year": 2015,
+      "date": null,
+      "container": "Communication Methods and Measures",
+      "volume": "9",
+      "issue": "4",
+      "first_page": "253",
+      "last_page": "279",
+      "edition": null,
+      "version": null,
+      "url": "https://doi.org/10.1080/19312458.2015.1096333"
+    },
+    {
+      "bib_id": 19,
+      "service": "crossref",
+      "service_id": null,
+      "score": 145.1249,
+      "bib_type": "misc",
+      "doi": "10.31219/osf.io/umq8d",
+      "title": "Degrees of freedom in planning, running, analyzing, and reporting psychological studies A checklist to avoid p-hacking",
+      "authors": [
+        {
+          "given": "Jelte M.",
+          "family": "Wicherts"
+        },
+        {
+          "given": "Coosje Lisabet Sterre",
+          "family": "Veldkamp"
+        },
+        {
+          "given": "Hilde Elisabeth Maria",
+          "family": "Augusteijn"
+        },
+        {
+          "given": "Marjan",
+          "family": "Bakker"
+        },
+        {
+          "given": "Robbie Cornelis Maria",
+          "family": "van Aert"
+        },
+        {
+          "given": "Marcel A. L. M.",
+          "family": "van Assen"
+        }
+      ],
+      "editors": [],
+      "publisher": "Center for Open Science",
+      "year": 2016,
+      "date": null,
+      "container": null,
+      "volume": null,
+      "issue": null,
+      "first_page": null,
+      "last_page": null,
+      "edition": null,
+      "version": null,
+      "url": "https://doi.org/10.31219/osf.io/umq8d"
+    }
+  ]
+}

@@ -1,0 +1,4323 @@
+{
+  "paper_id": "09567976231221789",
+  "info": [
+    {
+      "title": "The (Un)ideal Physicist: How Humans Rely on Object Interaction for Friction Estimates",
+      "keywords": ["intuitive physics", "sensorimotor feedback", "perception and action", "information processing"],
+      "doi": "10.1177/09567976231221789",
+      "file_hash": "745dcbf2aeaffc17",
+      "input_format": "grobid 0.9.0",
+      "file_name": "data-raw/psychsci/grobid_0.9.0-full/09567976231221789.xml",
+      "bibr_version": "10.0",
+      "paper_type": "unknown",
+      "paper_type_confidence": 0,
+      "oecd_l1": null,
+      "oecd_l2": null,
+      "oecd_confidence": null
+    }
+  ],
+  "author": [
+    {
+      "author_id": 1,
+      "given": "Harun",
+      "family": "Karimpur",
+      "affiliation": "Experimental Psychology Justus Liebig University Giessen",
+      "email": "hkarimpur@outlook.com",
+      "corresponding": false,
+      "orcid": "0000-0001-7981-0943",
+      "role": []
+    },
+    {
+      "author_id": 2,
+      "given": "Christian",
+      "family": "Wolf",
+      "affiliation": "Experimental Psychology University of Munster",
+      "email": "",
+      "corresponding": false,
+      "orcid": "0000-0002-9969-3112",
+      "role": []
+    },
+    {
+      "author_id": 3,
+      "given": "Katja",
+      "family": "Fiehler",
+      "affiliation": "Experimental Psychology Justus Liebig University Giessen",
+      "email": "",
+      "corresponding": false,
+      "orcid": "",
+      "role": []
+    }
+  ],
+  "text": [
+    {
+      "text_id": 1,
+      "paragraph_id": 1,
+      "section_id": 0,
+      "text": "To successfully interact with the environment, we need to estimate physical properties of the world and adjust our behavior accordingly.",
+      "page_number": null
+    },
+    {
+      "text_id": 2,
+      "paragraph_id": 1,
+      "section_id": 0,
+      "text": "For example, we adjust our gait and gaze when walking on difficult terrain (Kopiske et al., 2021;Matthis et al., 2018; 't Hart & Einhäuser, 2012).",
+      "page_number": null
+    },
+    {
+      "text_id": 3,
+      "paragraph_id": 1,
+      "section_id": 0,
+      "text": "Similarly, when grasping a bar of soap, we constantly adjust our grip force in response to a detected slippage ( Johansson & Westling, 1984;Paulun et al., 2016).",
+      "page_number": null
+    },
+    {
+      "text_id": 4,
+      "paragraph_id": 1,
+      "section_id": 0,
+      "text": "Our tactile sensors provide us with an estimate of how slippery a surface is (reviewed in Schwarz, 2016).",
+      "page_number": null
+    },
+    {
+      "text_id": 5,
+      "paragraph_id": 1,
+      "section_id": 0,
+      "text": "In fact, skin-to-surface slipperiness correlates highly with physical measures of friction (Smith & Scott, 1996); however, there are many situations in which we have to estimate slippage between object surfaces, thus lacking direct tactile information: Is it safe to place my mug on the slightly tilted table?",
+      "page_number": null
+    },
+    {
+      "text_id": 6,
+      "paragraph_id": 1,
+      "section_id": 0,
+      "text": "How does the waiter know how much a tray can be inclined before the objects start to slip while meandering through the bar, escaping tables, customers, and other obstacles?",
+      "page_number": null
+    },
+    {
+      "text_id": 7,
+      "paragraph_id": 2,
+      "section_id": 0,
+      "text": "Evidently, estimates of the coefficient of static friction m s , a dimensionless value, are essential for our everyday lives.",
+      "page_number": null
+    },
+    {
+      "text_id": 8,
+      "paragraph_id": 2,
+      "section_id": 0,
+      "text": "It represents the ratio between the force needed to start a relative motion between two contacting 1221789P SSXXX10.",
+      "page_number": null
+    },
+    {
+      "text_id": 9,
+      "paragraph_id": 4,
+      "section_id": 1,
+      "text": "surfaces, F f , and the force holding them together, F N .",
+      "page_number": null
+    },
+    {
+      "text_id": 10,
+      "paragraph_id": 4,
+      "section_id": 1,
+      "text": "Thus, m s depends on the surface properties of the two materials in contact.",
+      "page_number": null
+    },
+    {
+      "text_id": 11,
+      "paragraph_id": 4,
+      "section_id": 1,
+      "text": "The relationship F F f s N = µ makes it obvious that a m s close to zero (e.g., ice on ice) reduces the force needed until an object moves.",
+      "page_number": null
+    },
+    {
+      "text_id": 12,
+      "paragraph_id": 4,
+      "section_id": 1,
+      "text": "A low friction coefficient can thus be helpful, for example, when we want to move a heavy couch.",
+      "page_number": null
+    },
+    {
+      "text_id": 13,
+      "paragraph_id": 4,
+      "section_id": 1,
+      "text": "In other cases, we want to make sure that objects do not start to slide easily, for example, car tires.",
+      "page_number": null
+    },
+    {
+      "text_id": 14,
+      "paragraph_id": 5,
+      "section_id": 1,
+      "text": "The question how the brain predicts the outcome of physical events (e.g., whether a bottle on an inclined tray will slip) is addressed by the field of intuitive physics (for reviews, see Kubricht et al., 2017;Ullman et al., 2017;Vicovaro, 2021).",
+      "page_number": null
+    },
+    {
+      "text_id": 15,
+      "paragraph_id": 5,
+      "section_id": 1,
+      "text": "Whereas human behavior can be in accordance with Newtonian physics (McIntyre et al., 2001;Neupärtl et al., 2020), other studies revealed misconceptions of physical events and proposed that intuitive physics is based on heuristics (McCloskey, 1983;Proffitt & Gilden, 1989).",
+      "page_number": null
+    },
+    {
+      "text_id": 16,
+      "paragraph_id": 5,
+      "section_id": 1,
+      "text": "This assumption, however, is inconsistent with work suggesting that these biases can arise as a consequence of subjective uncertainty about physical variables and constraints (Sanborn et al., 2013).",
+      "page_number": null
+    },
+    {
+      "text_id": 17,
+      "paragraph_id": 5,
+      "section_id": 1,
+      "text": "Battaglia et al. (2013) showed an impressive overlap between behavioral responses and an intuitive physics engine, a model that runs stochastic simulations with elementary physical rules, successfully approximating the ground truth.",
+      "page_number": null
+    },
+    {
+      "text_id": 18,
+      "paragraph_id": 5,
+      "section_id": 1,
+      "text": "Many more classic findings on intuitive physics can be explained by this approach (Ullman et al., 2017).",
+      "page_number": null
+    },
+    {
+      "text_id": 19,
+      "paragraph_id": 5,
+      "section_id": 1,
+      "text": "Such probabilistic models on intuitive physical reasoning have been receiving increasing support (e.g., Neupärtl et al., 2020) but are also challenged by other findings (Davis & Marcus, 2016;Ludwin-Peery et al., 2021).",
+      "page_number": null
+    },
+    {
+      "text_id": 20,
+      "paragraph_id": 6,
+      "section_id": 1,
+      "text": "One asset of probabilistic approaches is that they emphasize the uncertainty we constantly face when making physical inferences.",
+      "page_number": null
+    },
+    {
+      "text_id": 21,
+      "paragraph_id": 6,
+      "section_id": 1,
+      "text": "When estimating object properties, humans can reduce uncertainty and learn about physical events by actively engaging with objects (Bramley et al., 2018;Lederman & Klatzky, 1987).",
+      "page_number": null
+    },
+    {
+      "text_id": 22,
+      "paragraph_id": 6,
+      "section_id": 1,
+      "text": "For example, when participants had to indicate the steepest slope (critical tilt angle θ crit ) they believed they could stand on without falling, they were inaccurate unless they obtained tactile information through direct contact with the slope ( Joh et al., 2007).",
+      "page_number": null
+    },
+    {
+      "text_id": 23,
+      "paragraph_id": 6,
+      "section_id": 1,
+      "text": "Similarly, in a study with 14-month-old infants, tactile exploration of the floor made the attempt to walk down difficult slopes less likely (Adolph et al., 2010).",
+      "page_number": null
+    },
+    {
+      "text_id": 24,
+      "paragraph_id": 7,
+      "section_id": 1,
+      "text": "To judge whether something slips easily on a level surface, at least two parameters need to be inferred: weight (equal to the gravitational force, F g ), and the coefficient of static friction, m s .",
+      "page_number": null
+    },
+    {
+      "text_id": 25,
+      "paragraph_id": 7,
+      "section_id": 1,
+      "text": "It is why one would be more apt to put a rug pad under a very light compared with a very heavy carpet.",
+      "page_number": null
+    },
+    {
+      "text_id": 26,
+      "paragraph_id": 7,
+      "section_id": 1,
+      "text": "On an incline, however, the only property required to determine the critical tilt angle, θ crit , is the coefficient of static friction, m s (see Fig.",
+      "page_number": null
+    },
+    {
+      "text_id": 27,
+      "paragraph_id": 7,
+      "section_id": 1,
+      "text": "1).",
+      "page_number": null
+    },
+    {
+      "text_id": 28,
+      "paragraph_id": 7,
+      "section_id": 1,
+      "text": "Thus, to prevent a bottle from slipping on an inclined tray, the focus should not lie on its weight.",
+      "page_number": null
+    },
+    {
+      "text_id": 29,
+      "paragraph_id": 7,
+      "section_id": 1,
+      "text": "The angle θ crit at which it would start to slip off the tray would be the same for a full and an empty bottle (disregarding liquid movement for the sake of this example).",
+      "page_number": null
+    },
+    {
+      "text_id": 30,
+      "paragraph_id": 8,
+      "section_id": 1,
+      "text": "Here, we investigated whether adults consider friction when estimating critical tilt angles and whether these estimates are biased by weight.",
+      "page_number": null
+    },
+    {
+      "text_id": 31,
+      "paragraph_id": 8,
+      "section_id": 1,
+      "text": "Importantly, we manipulated the type of object interaction (blocks: push/pull, lift, push/pull plus lift) and thus the kinesthetic information provided to participants (participants had no tactile information about the relevant surfaces).",
+      "page_number": null
+    },
+    {
+      "text_id": 32,
+      "paragraph_id": 8,
+      "section_id": 1,
+      "text": "The force required to push an object on a horizontal plane depends on both friction and weight, and we thus expect that both parameters would be reflected in participants' estimates (push/pull block).",
+      "page_number": null
+    },
+    {
+      "text_id": 33,
+      "paragraph_id": 8,
+      "section_id": 1,
+      "text": "Estimates after object lifting (lift block) should be more strongly, if not exclusively, based on weight.",
+      "page_number": null
+    },
+    {
+      "text_id": 34,
+      "paragraph_id": 8,
+      "section_id": 1,
+      "text": "Critically, when we provide both cues (push/pull-plus-lift block), an ideal physicist could arrive at an unbiased friction estimate by discounting weight.",
+      "page_number": null
+    },
+    {
+      "text_id": 35,
+      "paragraph_id": 8,
+      "section_id": 1,
+      "text": "Thus, if object interactions improve physical inferences, we expect that data in the push/pull-plus-lift block are explained by differences in friction rather than by differences in weight.",
+      "page_number": null
+    },
+    {
+      "text_id": 36,
+      "paragraph_id": 9,
+      "section_id": 1,
+      "text": "To test whether friction estimates rely on manual object interaction (interaction group), we asked a second group of participants to estimate critical tilt angles after observing a video of the experimenter interacting with the objects.",
+      "page_number": null
+    },
+    {
+      "text_id": 37,
+      "paragraph_id": 9,
+      "section_id": 1,
+      "text": "If friction estimates indeed rely on manual object interaction, then we expect a difference in estimates of critical tilt angle between the interaction and video-observation groups.",
+      "page_number": null
+    },
+    {
+      "text_id": 38,
+      "paragraph_id": 9,
+      "section_id": 1,
+      "text": "Moreover, manual object interaction might affect tilt angle estimates explicitly (i.e., by cognitive computations of physical laws) or implicitly (i.e., unintentional, uncontrollable, and outside of awareness; Bargh, 1994), with implicit details of an interaction barely noticeable when observed through a video.",
+      "page_number": null
+    },
+    {
+      "text_id": 39,
+      "paragraph_id": 9,
+      "section_id": 1,
+      "text": "Thus, we collected data of a third group of participants, who estimated critical tilt angles after observing the experimenter interacting with objects right in front of them, allowing them to infer the involved forces as well (live-observation group).",
+      "page_number": null
+    },
+    {
+      "text_id": 40,
+      "paragraph_id": 9,
+      "section_id": 1,
+      "text": "Given that the human brain processes real objects and pictures of the same objects differently (Freud et al., 2018;Snow et al., 2011), contrasting the videoobservation group and the live-observation group also",
+      "page_number": null
+    },
+    {
+      "text_id": 41,
+      "paragraph_id": 11,
+      "section_id": 2,
+      "text": "The emergence of advanced sensorimotor intelligence has been crucial for the evolutionary advantage of humans over other species.",
+      "page_number": null
+    },
+    {
+      "text_id": 42,
+      "paragraph_id": 11,
+      "section_id": 2,
+      "text": "This becomes evident with each step we take, bottle we grasp, or cup we carry on a tray as our brain constantly faces the challenge to account for size, mass, and friction of the contacting bodies.",
+      "page_number": null
+    },
+    {
+      "text_id": 43,
+      "paragraph_id": 11,
+      "section_id": 2,
+      "text": "How this challenge is met, however, is not well understood.",
+      "page_number": null
+    },
+    {
+      "text_id": 44,
+      "paragraph_id": 11,
+      "section_id": 2,
+      "text": "Previous studies mainly focused on visual aspects but rarely contrasted visual with sensorimotor information.",
+      "page_number": null
+    },
+    {
+      "text_id": 45,
+      "paragraph_id": 11,
+      "section_id": 2,
+      "text": "This is particularly dramatic in light of the ontogenetic role of sensorimotor interaction.",
+      "page_number": null
+    },
+    {
+      "text_id": 46,
+      "paragraph_id": 11,
+      "section_id": 2,
+      "text": "It goes further than Piagetian theory and the crucial phase during which infants make sense of the world around them through motor activity and sensory feedback.",
+      "page_number": null
+    },
+    {
+      "text_id": 47,
+      "paragraph_id": 11,
+      "section_id": 2,
+      "text": "In this study, we show that some physical properties are not sufficiently estimated through vision alone by contrasting perceptual estimates with estimates through object interaction.",
+      "page_number": null
+    },
+    {
+      "text_id": 48,
+      "paragraph_id": 12,
+      "section_id": 2,
+      "text": "allows us to control for a potential real-object effect.",
+      "page_number": null
+    },
+    {
+      "text_id": 49,
+      "paragraph_id": 12,
+      "section_id": 2,
+      "text": "Generally, if manual object interaction affects friction estimates explicitly, we expect that the same cognitive computations can be carried out by the observation groups.",
+      "page_number": null
+    },
+    {
+      "text_id": 50,
+      "paragraph_id": 12,
+      "section_id": 2,
+      "text": "However, if manual object interaction affects friction estimates implicitly (i.e., without consciously computing tilt angles), we expect a difference between the interaction group and the observation groups.",
+      "page_number": null
+    },
+    {
+      "text_id": 51,
+      "paragraph_id": 14,
+      "section_id": 3,
+      "text": "Supplementary material and data can be found at OSF: https://osf.io/gmsh6/.",
+      "page_number": null
+    },
+    {
+      "text_id": 52,
+      "paragraph_id": 18,
+      "section_id": 5,
+      "text": "Following a pilot experiment, we calculated the sample size with the jpower package in jamovi (jamovi project, 2020).",
+      "page_number": null
+    },
+    {
+      "text_id": 53,
+      "paragraph_id": 18,
+      "section_id": 5,
+      "text": "For a paired-samples t test (e.g., estimate differences between high-and low-friction conditions) and a minimally interesting effect size of .80 from piloting, a desired power of .80, and a Type I error rate of 5%, we obtained a group size of n = 15.",
+      "page_number": null
+    },
+    {
+      "text_id": 54,
+      "paragraph_id": 18,
+      "section_id": 5,
+      "text": "We recruited 79 participants (17 male, M age = 23.86, SD age = 5.50) via university email.",
+      "page_number": null
+    },
+    {
+      "text_id": 55,
+      "paragraph_id": 18,
+      "section_id": 5,
+      "text": "Initially, we collected two samples: the first with 30 participants (7 male, M age = 25.33, SD age = 7.70) using equal-density cubes and the second with 32 participants (9 male, M age = 23.81, SD age = 2.96) using equal-size cubes.",
+      "page_number": null
+    },
+    {
+      "text_id": 56,
+      "paragraph_id": 18,
+      "section_id": 5,
+      "text": "In both samples, participants were randomly assigned to one of two groups, a video-observation group or an interaction group, ensuring at least 15 participants in each group (see Design and Stimuli section for more details).",
+      "page_number": null
+    },
+    {
+      "text_id": 57,
+      "paragraph_id": 18,
+      "section_id": 5,
+      "text": "Upon reviewer feedback, we introduced a new, live-observation condition, for which we recruited an additional 17 participants (1 male, M age = 21.35, SD age = 3.57), using equal-size cubes in light of the fact that we observed no difference regarding the cubes used and therefore merged the data.",
+      "page_number": null
+    },
+    {
+      "text_id": 58,
+      "paragraph_id": 18,
+      "section_id": 5,
+      "text": "Participants were asked to confirm their physical health so that the interaction task could be fully performed.",
+      "page_number": null
+    },
+    {
+      "text_id": 59,
+      "paragraph_id": 18,
+      "section_id": 5,
+      "text": "They provided informed consent and were compensated with course credit or €8 per hour.",
+      "page_number": null
+    },
+    {
+      "text_id": 60,
+      "paragraph_id": 18,
+      "section_id": 5,
+      "text": "The experimental protocol adhered to the General Principles of the Declaration of Helsinki (World Medical Association, 2013; except study preregistration) and was approved by the local ethics committee of the Justus Liebig University Giessen.",
+      "page_number": null
+    },
+    {
+      "text_id": 61,
+      "paragraph_id": 20,
+      "section_id": 6,
+      "text": "To obtain estimates of the critical tilt angle ( θcrit ), we used cubes that were placed on a wooden board and asked participants at the end of every trial to adjust a bar on a monitor (see Fig. 2) so that it corresponded to the angle they thought the surface could be maximally tilted before the cube would start to slide.",
+      "page_number": null
+    },
+    {
+      "text_id": 62,
+      "paragraph_id": 20,
+      "section_id": 6,
+      "text": "We compared the two groups of participants that gained information only through observation (live-observation and videoobservation group) with a group of participants who .",
+      "page_number": null
+    },
+    {
+      "text_id": 63,
+      "paragraph_id": 20,
+      "section_id": 6,
+      "text": "The critical tilt angle, θ crit , is thus given by the equilibrium of the two forces.",
+      "page_number": null
+    },
+    {
+      "text_id": 64,
+      "paragraph_id": 20,
+      "section_id": 6,
+      "text": "Both forces include the gravitational force F g and thus mass m and gravity g as factors.",
+      "page_number": null
+    },
+    {
+      "text_id": 65,
+      "paragraph_id": 20,
+      "section_id": 6,
+      "text": "Consequently, in an equilibrium, m g sin m gcos s ( ) ( ) θ θµ = , mass and gravity cancel each other out, sin cos s ( ) ( ) θ θµ =",
+      "page_number": null
+    },
+    {
+      "text_id": 66,
+      "paragraph_id": 21,
+      "section_id": 6,
+      "text": ".",
+      "page_number": null
+    },
+    {
+      "text_id": 67,
+      "paragraph_id": 21,
+      "section_id": 6,
+      "text": "By rearranging, the critical tilt angle depends solely on the coefficient of friction: θ µ crit ( ) = arctan s .",
+      "page_number": null
+    },
+    {
+      "text_id": 68,
+      "paragraph_id": 21,
+      "section_id": 6,
+      "text": "Thus, whether the bottle slips or not depends only on two parameters: (a) the tilt angle, θ, and (b) the coefficient of static friction, m s , with the latter depending on the two materials having contact (e.g., m s for wood on glass ranging from .2 to .5).",
+      "page_number": null
+    },
+    {
+      "text_id": 69,
+      "paragraph_id": 21,
+      "section_id": 6,
+      "text": "Thus, for every combination of two materials (including their surface properties), there is a critical tilt angle, θ crit , where the object would start to slip.",
+      "page_number": null
+    },
+    {
+      "text_id": 70,
+      "paragraph_id": 22,
+      "section_id": 6,
+      "text": "were allowed to manually interact with the cubes (interaction group).",
+      "page_number": null
+    },
+    {
+      "text_id": 71,
+      "paragraph_id": 22,
+      "section_id": 6,
+      "text": "Across three blocks (push/pull, lift, push/ pull plus lift), we varied how participants interacted with the objects (interaction group) or which object interactions they visually observed (observation groups).",
+      "page_number": null
+    },
+    {
+      "text_id": 72,
+      "paragraph_id": 22,
+      "section_id": 6,
+      "text": "The interaction group experienced the involved forces by pushing a cube, lifting a cube, or pushing and lifting a cube.",
+      "page_number": null
+    },
+    {
+      "text_id": 73,
+      "paragraph_id": 22,
+      "section_id": 6,
+      "text": "The video-observation group watched a video of a cube being pulled, lifted, or first pulled and then lifted by a spring scale (for details, see Procedure).",
+      "page_number": null
+    },
+    {
+      "text_id": 74,
+      "paragraph_id": 22,
+      "section_id": 6,
+      "text": "The live-observation group observed the same three object interactions carried out in front of them by the experimenter, effectively serving as a real-time reenactment of the video content.",
+      "page_number": null
+    },
+    {
+      "text_id": 75,
+      "paragraph_id": 22,
+      "section_id": 6,
+      "text": "We added the live-observation group to test whether participants were able to extract more critical details when the interactions were carried out directly in front of them.",
+      "page_number": null
+    },
+    {
+      "text_id": 76,
+      "paragraph_id": 22,
+      "section_id": 6,
+      "text": "In these two observation groups, we implemented pull and lift actions by using a spring scale because this allowed participants to directly assess the involved forces by observing the stretch of the spring (no numbers visible).",
+      "page_number": null
+    },
+    {
+      "text_id": 77,
+      "paragraph_id": 23,
+      "section_id": 6,
+      "text": "We used two sets of cubes: equal-density and equalsize cubes.",
+      "page_number": null
+    },
+    {
+      "text_id": 78,
+      "paragraph_id": 23,
+      "section_id": 6,
+      "text": "Equal-density cubes were two small and two large wooden cubes with edge lengths of 8 cm and approximately 10.5 cm and weights of approximately 390 g and 840 g, respectively.",
+      "page_number": null
+    },
+    {
+      "text_id": 79,
+      "paragraph_id": 23,
+      "section_id": 6,
+      "text": "Equal-size cubes had an edge length of approximately 9.5 cm, and the mass of a cube could be varied by swapping out its core (see Fig.",
+      "page_number": null
+    },
+    {
+      "text_id": 80,
+      "paragraph_id": 23,
+      "section_id": 6,
+      "text": "S1 in Supplementary Material).",
+      "page_number": null
+    },
+    {
+      "text_id": 81,
+      "paragraph_id": 23,
+      "section_id": 6,
+      "text": "Cores were made of brass and aluminum, resulting in weights of approximately 900 g and 600 g, respectively.",
+      "page_number": null
+    },
+    {
+      "text_id": 82,
+      "paragraph_id": 23,
+      "section_id": 6,
+      "text": "To manipulate friction, we attached cardboard (low-friction cubes) or foam rubber (high-friction cubes) to the cubes' bottom.",
+      "page_number": null
+    },
+    {
+      "text_id": 83,
+      "paragraph_id": 23,
+      "section_id": 6,
+      "text": "Cubes were placed on a wooden board, resulting in coefficients of static friction, m s , of approximately .30 and .40, respectively.",
+      "page_number": null
+    },
+    {
+      "text_id": 84,
+      "paragraph_id": 23,
+      "section_id": 6,
+      "text": "Consequently, critical tilt angles were approximately 16.8° and 20.9°, respectively.",
+      "page_number": null
+    },
+    {
+      "text_id": 85,
+      "paragraph_id": 23,
+      "section_id": 6,
+      "text": "To measure these ground truths, we placed each cube on the board and measured the angle right before each cube would start to move (θ crit ; see Equation 3).",
+      "page_number": null
+    },
+    {
+      "text_id": 86,
+      "paragraph_id": 23,
+      "section_id": 6,
+      "text": "The board was fixed to the table on one end and attached to a manual custom-built lifting device on the other end.",
+      "page_number": null
+    },
+    {
+      "text_id": 87,
+      "paragraph_id": 23,
+      "section_id": 6,
+      "text": "We increased the tilt by turning the knob until θ crit was found.",
+      "page_number": null
+    },
+    {
+      "text_id": 88,
+      "paragraph_id": 23,
+      "section_id": 6,
+      "text": "Initial θ crit values were confirmed by retesting each cube 15 times (SD = 0.85° and 0.91° for the low and high critical tilt angles, respectively).",
+      "page_number": null
+    },
+    {
+      "text_id": 89,
+      "paragraph_id": 24,
+      "section_id": 6,
+      "text": "We attached a Force Sensing Resistor TM (FSR 406; Interlink Electronics, Irvine, CA, USA) of approximately 4-by-4-cm size on one side of each cube (see Fig.",
+      "page_number": null
+    },
+    {
+      "text_id": 90,
+      "paragraph_id": 24,
+      "section_id": 6,
+      "text": "2).",
+      "page_number": null
+    },
+    {
+      "text_id": 91,
+      "paragraph_id": 24,
+      "section_id": 6,
+      "text": "To prevent participants from identifying cubes by the grain, we covered the cubes with 3D printed casings.",
+      "page_number": null
+    },
+    {
+      "text_id": 92,
+      "paragraph_id": 24,
+      "section_id": 6,
+      "text": "The casings had an opening for the FSRs.",
+      "page_number": null
+    },
+    {
+      "text_id": 93,
+      "paragraph_id": 24,
+      "section_id": 6,
+      "text": "Each cube and FSR was attached to a custom-built switch box.",
+      "page_number": null
+    },
+    {
+      "text_id": 94,
+      "paragraph_id": 24,
+      "section_id": 6,
+      "text": "The main output of the switch box was connected to a USB I/O device (USB-6009; National Instruments, Austin, TX, USA), which allowed us to read out the voltage changes during the experiment.",
+      "page_number": null
+    },
+    {
+      "text_id": 95,
+      "paragraph_id": 24,
+      "section_id": 6,
+      "text": "The experiment was controlled in Python 3.8 via PsychoPy (Peirce et al., 2019).",
+      "page_number": null
+    },
+    {
+      "text_id": 96,
+      "paragraph_id": 26,
+      "section_id": 7,
+      "text": "Participants were randomly assigned to one of the three groups (video-observation, live-observation, or interaction group).",
+      "page_number": null
+    },
+    {
+      "text_id": 97,
+      "paragraph_id": 26,
+      "section_id": 7,
+      "text": "Each group performed three blocks (push/ pull, lift, push/pull plus lift; see Fig.",
+      "page_number": null
+    },
+    {
+      "text_id": 98,
+      "paragraph_id": 26,
+      "section_id": 7,
+      "text": "2).",
+      "page_number": null
+    },
+    {
+      "text_id": 99,
+      "paragraph_id": 26,
+      "section_id": 7,
+      "text": "The order of push/pull push/push + lift lift Block Group or or Estimate Fig 2 Design and procedure.",
+      "page_number": null
+    },
+    {
+      "text_id": 100,
+      "paragraph_id": 26,
+      "section_id": 7,
+      "text": "We recorded data from three groups of participants (interaction, live observation, and video observation).",
+      "page_number": null
+    },
+    {
+      "text_id": 101,
+      "paragraph_id": 27,
+      "section_id": 7,
+      "text": "Across different blocks, all groups were provided with different information about the forces involved before estimating the critical tilt angle of a cube on a surface.",
+      "page_number": null
+    },
+    {
+      "text_id": 102,
+      "paragraph_id": 27,
+      "section_id": 7,
+      "text": "Whereas the interaction group had direct haptic contact with the cubes, participants from the observation groups only viewed another person interacting with the cube.",
+      "page_number": null
+    },
+    {
+      "text_id": 103,
+      "paragraph_id": 27,
+      "section_id": 7,
+      "text": "At the end of every trial, participants adjusted a bar on a monitor so that it corresponded to the angle they thought the surface could be maximally tilted before the cube would start to slide.",
+      "page_number": null
+    },
+    {
+      "text_id": 104,
+      "paragraph_id": 28,
+      "section_id": 7,
+      "text": "the first two blocks was balanced across participants (because the last block would have revealed both forces), and the order of trials within each block was randomized.",
+      "page_number": null
+    },
+    {
+      "text_id": 105,
+      "paragraph_id": 28,
+      "section_id": 7,
+      "text": "In the first block (push/pull), participants in the video-observation group experienced the amount of force needed to move a cube by watching a video of a cube being pulled by a spring scale until the cube starts to move.",
+      "page_number": null
+    },
+    {
+      "text_id": 106,
+      "paragraph_id": 28,
+      "section_id": 7,
+      "text": "The live-observation group obtained the same information by watching the experimenter pulling the cube using the spring scale.",
+      "page_number": null
+    },
+    {
+      "text_id": 107,
+      "paragraph_id": 28,
+      "section_id": 7,
+      "text": "Objects in the liveobservation group were hidden from view until the experimenter lifted a curtain shortly before interacting with the object (see Fig.",
+      "page_number": null
+    },
+    {
+      "text_id": 108,
+      "paragraph_id": 28,
+      "section_id": 7,
+      "text": "S2 in Supplementary Material).",
+      "page_number": null
+    },
+    {
+      "text_id": 109,
+      "paragraph_id": 29,
+      "section_id": 7,
+      "text": "In the interaction group, the experimenter placed the cube at a fixed position in front of the participants, who were then asked to put the fifth digit of their dominant hand on the force sensor and slowly build up force until the cube started to move.",
+      "page_number": null
+    },
+    {
+      "text_id": 110,
+      "paragraph_id": 29,
+      "section_id": 7,
+      "text": "Both pulling (spring scale) and pushing (finger) require overcoming the force of friction.",
+      "page_number": null
+    },
+    {
+      "text_id": 111,
+      "paragraph_id": 29,
+      "section_id": 7,
+      "text": "In the second block (lift), the observation groups experienced the amount of force needed to lift a cube by watching a video of a person or watching the experimenter lifting the cube by a spring scale.",
+      "page_number": null
+    },
+    {
+      "text_id": 112,
+      "paragraph_id": 30,
+      "section_id": 7,
+      "text": "The interaction group was asked to lift the cube using a precision grip, with the thumb of the dominant hand placed on the FSR.",
+      "page_number": null
+    },
+    {
+      "text_id": 113,
+      "paragraph_id": 30,
+      "section_id": 7,
+      "text": "In the third block (push/lift plus lift), the groups experienced both the pull and lift actions in the observation groups and the push and lift actions in the interaction group.",
+      "page_number": null
+    },
+    {
+      "text_id": 114,
+      "paragraph_id": 30,
+      "section_id": 7,
+      "text": "The sequence of the push and lift interactions in the combined block was counterbalanced across participants.",
+      "page_number": null
+    },
+    {
+      "text_id": 115,
+      "paragraph_id": 30,
+      "section_id": 7,
+      "text": "All object interactions had to take place in a time window of 6 s, and exploratory behavior (e.g., multiple push actions) was not permitted.",
+      "page_number": null
+    },
+    {
+      "text_id": 116,
+      "paragraph_id": 30,
+      "section_id": 7,
+      "text": "At the end of each trial, participants were asked how much they thought they could maximally tilt the board right before the cube would begin to move.",
+      "page_number": null
+    },
+    {
+      "text_id": 117,
+      "paragraph_id": 30,
+      "section_id": 7,
+      "text": "Participants indicated the maximal tilt by adjusting a bar presented on a computer monitor using the left (counterclockwise) and right (clockwise) arrow keys of a keyboard.",
+      "page_number": null
+    },
+    {
+      "text_id": 118,
+      "paragraph_id": 30,
+      "section_id": 7,
+      "text": "The orientation of the bar was initially shown in a random orientation, and every button press tilted the bar by 0.0003°.",
+      "page_number": null
+    },
+    {
+      "text_id": 119,
+      "paragraph_id": 30,
+      "section_id": 7,
+      "text": "Holding a button down increased the step size exponentially with each frame to facilitate large step sizes.",
+      "page_number": null
+    },
+    {
+      "text_id": 120,
+      "paragraph_id": 30,
+      "section_id": 7,
+      "text": "Repressing the button reset the step size and allowed a fine-tuned response.",
+      "page_number": null
+    },
+    {
+      "text_id": 121,
+      "paragraph_id": 30,
+      "section_id": 7,
+      "text": "Participants did not receive feedback about estimation accuracy at the conclusion of each trial.",
+      "page_number": null
+    },
+    {
+      "text_id": 122,
+      "paragraph_id": 30,
+      "section_id": 7,
+      "text": "Each condition was repeated twice.",
+      "page_number": null
+    },
+    {
+      "text_id": 123,
+      "paragraph_id": 30,
+      "section_id": 7,
+      "text": "Together with two friction levels, two mass levels, and three blocks, we collected 24 trials for each participant.",
+      "page_number": null
+    },
+    {
+      "text_id": 124,
+      "paragraph_id": 30,
+      "section_id": 7,
+      "text": "The experiment lasted approximately 20 min.",
+      "page_number": null
+    },
+    {
+      "text_id": 125,
+      "paragraph_id": 31,
+      "section_id": 7,
+      "text": "Before the experiment began, participants were familiarized with the sequence of events.",
+      "page_number": null
+    },
+    {
+      "text_id": 126,
+      "paragraph_id": 31,
+      "section_id": 7,
+      "text": "The basic physics was purposefully not explained to participants.",
+      "page_number": null
+    },
+    {
+      "text_id": 127,
+      "paragraph_id": 32,
+      "section_id": 7,
+      "text": "The intention behind this was to prevent participants from biasing toward \"performing active calculations,\" ensuring that the physics remained \"intuitive enough.\"",
+      "page_number": null
+    },
+    {
+      "text_id": 128,
+      "paragraph_id": 32,
+      "section_id": 7,
+      "text": "For those required to physically interact with the cube, an additional introduction to the correct \"interaction protocol\" was provided.",
+      "page_number": null
+    },
+    {
+      "text_id": 129,
+      "paragraph_id": 32,
+      "section_id": 7,
+      "text": "This was done to ensure that participants could correctly build up the force (i.e., adhere to the protocol without engaging in any exploratory behavior).",
+      "page_number": null
+    },
+    {
+      "text_id": 130,
+      "paragraph_id": 32,
+      "section_id": 7,
+      "text": "To facilitate this understanding, they were allowed to practice this movement using a dummy cube of a comparable weight class before the main experiment commenced.",
+      "page_number": null
+    },
+    {
+      "text_id": 131,
+      "paragraph_id": 34,
+      "section_id": 8,
+      "text": "Data reduction and statistical analyses were conducted in Python 3.8.",
+      "page_number": null
+    },
+    {
+      "text_id": 132,
+      "paragraph_id": 34,
+      "section_id": 8,
+      "text": "In total, we recorded 1,896 trials (79 participants × 24 trials).",
+      "page_number": null
+    },
+    {
+      "text_id": 133,
+      "paragraph_id": 34,
+      "section_id": 8,
+      "text": "Trials in which the estimated tilt angle was greater than 80° (free fall) were marked as outliers and excluded (25 of 1,896 trials, approximately 1%).",
+      "page_number": null
+    },
+    {
+      "text_id": 134,
+      "paragraph_id": 34,
+      "section_id": 8,
+      "text": "The remaining dataset was aggregated over repetitions.",
+      "page_number": null
+    },
+    {
+      "text_id": 135,
+      "paragraph_id": 34,
+      "section_id": 8,
+      "text": "Then, we calculated the ∆θ ˆcrit as differences of the estimated tilt angle θcrit between high-friction and low-friction conditions for each participant.",
+      "page_number": null
+    },
+    {
+      "text_id": 136,
+      "paragraph_id": 34,
+      "section_id": 8,
+      "text": "We finally calculated ∆θ ˆcrit again, this time as differences between heavy-mass and light-mass conditions for each participant.",
+      "page_number": null
+    },
+    {
+      "text_id": 137,
+      "paragraph_id": 34,
+      "section_id": 8,
+      "text": "We collected force data at 48 kHz and baselinecorrected the data by subtracting the minimum of each trial so that the values in the beginning of a trial without additional force start at zero.",
+      "page_number": null
+    },
+    {
+      "text_id": 138,
+      "paragraph_id": 34,
+      "section_id": 8,
+      "text": "For every trial in which we collected force data, we checked whether there is a valid signal (i.e., trials in which the signal went above .3 volts).",
+      "page_number": null
+    },
+    {
+      "text_id": 139,
+      "paragraph_id": 34,
+      "section_id": 8,
+      "text": "This threshold was determined by looking at the noise levels during piloting.",
+      "page_number": null
+    },
+    {
+      "text_id": 140,
+      "paragraph_id": 34,
+      "section_id": 8,
+      "text": "The measured force values for actual object interactions ranged from 2 to 6 volts.",
+      "page_number": null
+    },
+    {
+      "text_id": 141,
+      "paragraph_id": 35,
+      "section_id": 8,
+      "text": "Normality of the data was tested via Shapiro-Wilk test.",
+      "page_number": null
+    },
+    {
+      "text_id": 142,
+      "paragraph_id": 35,
+      "section_id": 8,
+      "text": "We compared ∆θ ˆcrit values using a 2 × 3 × 3 ANOVA with the within-participant factors physical quantity (mass, friction) and object interaction (push/pull, lift, push/pull plus lift) and the between-participant factor group (video observation, live observation, interaction).",
+      "page_number": null
+    },
+    {
+      "text_id": 143,
+      "paragraph_id": 35,
+      "section_id": 8,
+      "text": "Paired-sample t tests were used to test for the directionality of effects, and one-sample t tests were used to test whether ∆θ ˆcrit values were different from zero (ground truth).",
+      "page_number": null
+    },
+    {
+      "text_id": 144,
+      "paragraph_id": 35,
+      "section_id": 8,
+      "text": "When normality assumptions were violated, we ensured significance by its nonparametric equivalent (Wilcoxon test).",
+      "page_number": null
+    },
+    {
+      "text_id": 145,
+      "paragraph_id": 35,
+      "section_id": 8,
+      "text": "For the sake of readability, we will still report the t test results but add the subscript \"Wilcoxon\" to the p values.",
+      "page_number": null
+    },
+    {
+      "text_id": 146,
+      "paragraph_id": 35,
+      "section_id": 8,
+      "text": "To control for false discovery rate in case of multiple testing, we applied a Benjamini-Hochberg correction (Benjamini & Hochberg, 1995) in which p values are ranked in ascending order and tested against the error rate (here, 5%) divided by the number of comparisons times the rank.",
+      "page_number": null
+    },
+    {
+      "text_id": 147,
+      "paragraph_id": 35,
+      "section_id": 8,
+      "text": "Null hypotheses are rejected for all tests up until the largest rank, which passed the test.",
+      "page_number": null
+    },
+    {
+      "text_id": 148,
+      "paragraph_id": 35,
+      "section_id": 8,
+      "text": "As a measure of effect size for the t tests, we report Cohen's d, the difference of the means relative to the standard deviation of the difference (Lakens, 2013).",
+      "page_number": null
+    },
+    {
+      "text_id": 149,
+      "paragraph_id": 35,
+      "section_id": 8,
+      "text": "To test the accuracy of θcrit values, we compared absolute errors in a 2 × 3 × 3 ANOVA with the two repeated-measures factors friction (low, high) and object manipulation (push/pull, lift, push/pull plus lift) and the between-participant variable group (live observation, video observation, interaction).",
+      "page_number": null
+    },
+    {
+      "text_id": 150,
+      "paragraph_id": 39,
+      "section_id": 10,
+      "text": "To quantify whether participants based their estimate of the critical tilt angle on information about friction or mass, we computed differences between the two levels of each factor (heavy vs. light, high vs. low friction), which we use as a proxy for sensitivity (see Fig.",
+      "page_number": null
+    },
+    {
+      "text_id": 151,
+      "paragraph_id": 39,
+      "section_id": 10,
+      "text": "3).",
+      "page_number": null
+    },
+    {
+      "text_id": 152,
+      "paragraph_id": 39,
+      "section_id": 10,
+      "text": "If a participant relied on mass, we expect higher θcrit estimates in heavy compared with light conditions.",
+      "page_number": null
+    },
+    {
+      "text_id": 153,
+      "paragraph_id": 39,
+      "section_id": 10,
+      "text": "Therefore, the difference between both estimates, ∆θ ˆcrit , should be greater than zero.",
+      "page_number": null
+    },
+    {
+      "text_id": 154,
+      "paragraph_id": 39,
+      "section_id": 10,
+      "text": "Relying on (or \"being sensitive to\") friction follows the same rationale.",
+      "page_number": null
+    },
+    {
+      "text_id": 155,
+      "paragraph_id": 39,
+      "section_id": 10,
+      "text": "We expect ∆θ ˆcrit values in the lift block to depend on the objects' weight because lifting requires overcoming the gravitational force.",
+      "page_number": null
+    },
+    {
+      "text_id": 156,
+      "paragraph_id": 39,
+      "section_id": 10,
+      "text": "In the push/pull blocks, we expect ∆θ ˆcrit Push/pull-plus-lift trials allow discounting mass information, which could result in a stronger sensitivity to friction information (i.e., data points below the identity line or, ideally, data points distributed along the x-axis).",
+      "page_number": null
+    },
+    {
+      "text_id": 157,
+      "paragraph_id": 39,
+      "section_id": 10,
+      "text": "However, this was not the case.",
+      "page_number": null
+    },
+    {
+      "text_id": 158,
+      "paragraph_id": 39,
+      "section_id": 10,
+      "text": "Note that to enhance visibility, a few individual data points are outside the plotted range (video observation, seven; live observation, zero; interaction, nine).",
+      "page_number": null
+    },
+    {
+      "text_id": 159,
+      "paragraph_id": 41,
+      "section_id": 11,
+      "text": "values to depend on both variables because pushing an object on a level surface depends on both the gravitational force and the coefficient of static friction, without a possibility to dissociate the two.",
+      "page_number": null
+    },
+    {
+      "text_id": 160,
+      "paragraph_id": 41,
+      "section_id": 11,
+      "text": "The critical block is the push/pull-plus-lift block.",
+      "page_number": null
+    },
+    {
+      "text_id": 161,
+      "paragraph_id": 41,
+      "section_id": 11,
+      "text": "Here, participants could discount information about weight to estimate friction.",
+      "page_number": null
+    },
+    {
+      "text_id": 162,
+      "paragraph_id": 41,
+      "section_id": 11,
+      "text": "If they do so, they should be more sensitive to friction than to weight.",
+      "page_number": null
+    },
+    {
+      "text_id": 163,
+      "paragraph_id": 41,
+      "section_id": 11,
+      "text": "Please note that, physically, ∆θ ˆcrit values depend only on friction.",
+      "page_number": null
+    },
+    {
+      "text_id": 164,
+      "paragraph_id": 41,
+      "section_id": 11,
+      "text": "Thus, the ideal response in Figure 3 can be found along the x-axis.",
+      "page_number": null
+    },
+    {
+      "text_id": 165,
+      "paragraph_id": 41,
+      "section_id": 11,
+      "text": "On average, sensitivity to mass was higher than sensitivity to friction: main effect physical quantity, F(1, 91) = 31.746, p < .001.",
+      "page_number": null
+    },
+    {
+      "text_id": 166,
+      "paragraph_id": 41,
+      "section_id": 11,
+      "text": "This difference in sensitivity was further modulated by the way objects were manipulated: interaction Physical Quantity × Object Manipulation, F(2, 182) = 18.759, p < .001.",
+      "page_number": null
+    },
+    {
+      "text_id": 167,
+      "paragraph_id": 41,
+      "section_id": 11,
+      "text": "Furthermore, object manipulation affected critical tilt angles differently for the three different groups: interaction Object Manipulation × Group, F(4, 182) = 4.695, p = .001.",
+      "page_number": null
+    },
+    {
+      "text_id": 168,
+      "paragraph_id": 42,
+      "section_id": 11,
+      "text": "When objects were lifted (orange squares in Fig. 3), estimate differences were different from 0° only for mass, not for friction.",
+      "page_number": null
+    },
+    {
+      "text_id": 169,
+      "paragraph_id": 42,
+      "section_id": 11,
+      "text": "This was true in all three groups: video observation-mass, t(28) = 5.268, p < .001, d = 0.982; live observation-mass, t(33) = 2.543, p = .016, d = 0.436; interaction-mass, t(31) = 4.602, p < .001, d = 0.851; video observation-friction, t(28) = 0.101, p = .920, d = 0.019; live observation-friction, t(33) = 0.772, p = .445, d = 0.132; interaction-friction, t(31) = 1.663, p = .106, d = 0.294.",
+      "page_number": null
+    },
+    {
+      "text_id": 170,
+      "paragraph_id": 42,
+      "section_id": 11,
+      "text": "Moreover, estimate differences were significantly higher for mass than for friction (i.e., above the identity line in Fig. 3): video observation, t(28) = 5.151, p Wilcoxon < .001, d = 0.956; live observation, t(33) = 2.517, p Wilcoxon = .021, d = 0.432; interaction, t(31) = 3.503, p = .001, d = 0.619.",
+      "page_number": null
+    },
+    {
+      "text_id": 171,
+      "paragraph_id": 43,
+      "section_id": 11,
+      "text": "In the push/pull block (blue circles in Fig. 3), estimated differences of the critical tilt angle were different from zero for mass and for friction but only in the liveobservation group: live observation-mass, t(33) = 3.074, p = .004, d = 0.527; live observation-friction, t(33) = 4.381, p < .001, d = 0.751; and the interaction group: interaction-mass = t(30) = 4.517, p < .001, d = 0.811; interaction-friction, t(30) = 6.34, p < .001, d = 1.084; whereas this was true only for friction in the videoobservation group: video observation-mass, t(29) = 0.475, p = .638, d = 0.087; video observation-friction, t(29) = 1.929, p Wilcoxon = .006, d = 0.352.",
+      "page_number": null
+    },
+    {
+      "text_id": 172,
+      "paragraph_id": 43,
+      "section_id": 11,
+      "text": "Estimate differences for high versus low friction fell short of the physical difference of 4.1° for both observation groups: video observation, t(29) = 3.034, p Wilcoxon = .003, d = 0.554; live observation, t(33) = 3.054, p = .004, d = 0.524; interaction, t(30) = 1.118, p = .273, d = 0.201.",
+      "page_number": null
+    },
+    {
+      "text_id": 173,
+      "paragraph_id": 43,
+      "section_id": 11,
+      "text": "We observed no difference in sensitivity to weight and friction in any of the three groups: video observation, t(29) = 1.212, p Wilcoxon = .280, d = 0.221; live observation, t(33) = 0.359, p Wilcoxon = .722, d = 0.061; interaction, t(30) = 0.696, p = .492, d = 0.125.",
+      "page_number": null
+    },
+    {
+      "text_id": 174,
+      "paragraph_id": 44,
+      "section_id": 11,
+      "text": "In the block where objects were both pushed and lifted (green triangles in Fig. 3), it was possible to discount information about mass.",
+      "page_number": null
+    },
+    {
+      "text_id": 175,
+      "paragraph_id": 44,
+      "section_id": 11,
+      "text": "Yet, in all three groups, ∆θ ˆcrit values were different from zero when comparing heavy versus light cubes: video observation-mass, t(29) = 4.663, p < .001, d = 0.851; live observation-mass, t(33) = 4.424, p < .001; d = 0.759, interaction-mass, t(31) = 5.111, p = .001, d = 0.904.",
+      "page_number": null
+    },
+    {
+      "text_id": 176,
+      "paragraph_id": 44,
+      "section_id": 11,
+      "text": "For ∆θ ˆcrit values derived from highversus low-friction trials, values were different from 0° in the live-observation group, t(33) = 5.495, p < .001, d = 0.942, and the interaction group, t(31) = 5.339, p < .001, d = 0.851, but not in the video-observation group, t(29) = 1.232, p = .228, d = 0.225.",
+      "page_number": null
+    },
+    {
+      "text_id": 177,
+      "paragraph_id": 44,
+      "section_id": 11,
+      "text": "They were significantly below the physical of 4.1° in the two observation groups: video observation, t(29) = 5.452, p < .001, d = 0.995; live observation, t(33) = 3.009, p = .005, d = 0.516; but not in the interaction group, t(31) = 1.606, p = .118, d = 0.284.",
+      "page_number": null
+    },
+    {
+      "text_id": 178,
+      "paragraph_id": 44,
+      "section_id": 11,
+      "text": "Critically, we found no evidence for sensitivity to mass being lower than sensitivity to friction in any of the three groups, and the results even partly favored a higher sensitivity to weight: video observation, t(29) = -3.399, p Wilcoxon = .001, d = 0.621; live observation, t(33) = -1.488, p = 0.146, d = 0.255; interaction, t(31) = -2.254, p Wilcoxon = .041, d = 0.398.",
+      "page_number": null
+    },
+    {
+      "text_id": 179,
+      "paragraph_id": 45,
+      "section_id": 11,
+      "text": "Last, we compared sensitivity to friction in the critical push/pull-plus-lift block across the three different groups.",
+      "page_number": null
+    },
+    {
+      "text_id": 180,
+      "paragraph_id": 45,
+      "section_id": 11,
+      "text": "Sensitivity to friction was higher in the interaction group compared with the video-observation group, t(60) = 2.82, p = .007, d = 0.72, and it was higher in the live-observation compared with the video-observation group, t(62) = 2.46, p = .017, d = 0.62.",
+      "page_number": null
+    },
+    {
+      "text_id": 181,
+      "paragraph_id": 45,
+      "section_id": 11,
+      "text": "We observed no difference between the interaction and live-observation groups, t(64) = 0.66, p = .510, d = 0.16.",
+      "page_number": null
+    },
+    {
+      "text_id": 182,
+      "paragraph_id": 46,
+      "section_id": 11,
+      "text": "In sum, estimates of critical tilt angle depended on how the object was acted upon and whether participants were able to manually interact with the object or observe the object being manipulated in a video or live in front of them by the experimenter: When objects were lifted, critical tilt angles depended only on the object's mass.",
+      "page_number": null
+    },
+    {
+      "text_id": 183,
+      "paragraph_id": 46,
+      "section_id": 11,
+      "text": "When objects were pushed, ∆θ ˆcrit values depended on mass and friction to a comparable degree (data points along the identity line in Fig.",
+      "page_number": null
+    },
+    {
+      "text_id": 184,
+      "paragraph_id": 46,
+      "section_id": 11,
+      "text": "3).",
+      "page_number": null
+    },
+    {
+      "text_id": 185,
+      "paragraph_id": 46,
+      "section_id": 11,
+      "text": "When objects were pushed and lifted, we found no evidence that information about mass was discounted.",
+      "page_number": null
+    },
+    {
+      "text_id": 186,
+      "paragraph_id": 46,
+      "section_id": 11,
+      "text": "Instead, ∆θ ˆcrit values were on or above the identity line, suggesting a stronger sensitivity to mass than to friction.",
+      "page_number": null
+    },
+    {
+      "text_id": 187,
+      "paragraph_id": 46,
+      "section_id": 11,
+      "text": "In both observation conditions, sensitivity to friction fell short of the physical difference in critical tilt angles, whereas this was not true in the interaction condition whenever participants pushed the object.",
+      "page_number": null
+    },
+    {
+      "text_id": 188,
+      "paragraph_id": 48,
+      "section_id": 12,
+      "text": "To test whether manual interaction with the cubes led to more accurate estimates of critical tilt angle, we calculated the error as the difference between participants' estimates and the ground truth (see Fig.",
+      "page_number": null
+    },
+    {
+      "text_id": 189,
+      "paragraph_id": 48,
+      "section_id": 12,
+      "text": "4).",
+      "page_number": null
+    },
+    {
+      "text_id": 190,
+      "paragraph_id": 48,
+      "section_id": 12,
+      "text": "Descriptively, errors were smallest for the interaction group.",
+      "page_number": null
+    },
+    {
+      "text_id": 191,
+      "paragraph_id": 48,
+      "section_id": 12,
+      "text": "Estimates tended to be in between the two levels of friction for the video-observation group, whereas participants in the live observation partly underestimated critical tilt angles.",
+      "page_number": null
+    },
+    {
+      "text_id": 192,
+      "paragraph_id": 48,
+      "section_id": 12,
+      "text": "Absolute errors were compared in a 2 × 3 × 3 ANOVA with the two repeated-measures factors friction (low, high) and object manipulation (push/ pull, lift, push/pull plus lift) and the between-participant variable group (live observation, video observation, interaction).",
+      "page_number": null
+    },
+    {
+      "text_id": 193,
+      "paragraph_id": 48,
+      "section_id": 12,
+      "text": "None of the effects, including group, yielded a significant effect.",
+      "page_number": null
+    },
+    {
+      "text_id": 194,
+      "paragraph_id": 48,
+      "section_id": 12,
+      "text": "Hence, we found no clear advantage of physical interaction in terms of accuracy.",
+      "page_number": null
+    },
+    {
+      "text_id": 195,
+      "paragraph_id": 49,
+      "section_id": 12,
+      "text": "Next, we wanted to understand the relationship between the applied force and participants' tilt estimates.",
+      "page_number": null
+    },
+    {
+      "text_id": 196,
+      "paragraph_id": 49,
+      "section_id": 12,
+      "text": "To this end, each cube was attached with a forcesensitive resistor.",
+      "page_number": null
+    },
+    {
+      "text_id": 197,
+      "paragraph_id": 49,
+      "section_id": 12,
+      "text": "To account for individual force levels, we standardized the peak forces and the estimates by each participant.",
+      "page_number": null
+    },
+    {
+      "text_id": 198,
+      "paragraph_id": 49,
+      "section_id": 12,
+      "text": "The relationship between both measures is depicted in Figure 5.",
+      "page_number": null
+    },
+    {
+      "text_id": 199,
+      "paragraph_id": 49,
+      "section_id": 12,
+      "text": "The peak force during pushing is strongly related to the estimate of the critical tilt angle and can explain about 35% of the variance in the block push and 44% of the variance in the block push plus lift.",
+      "page_number": null
+    },
+    {
+      "text_id": 200,
+      "paragraph_id": 49,
+      "section_id": 12,
+      "text": "This relationship remains intact even if the size of the cubes was the same (right-hand panels of Fig 5).",
+      "page_number": null
+    },
+    {
+      "text_id": 201,
+      "paragraph_id": 49,
+      "section_id": 12,
+      "text": "This relationship was less pronounced for the peak grip force during lifting (bottom row in Fig.",
+      "page_number": null
+    },
+    {
+      "text_id": 202,
+      "paragraph_id": 49,
+      "section_id": 12,
+      "text": "5).",
+      "page_number": null
+    },
+    {
+      "text_id": 203,
+      "paragraph_id": 51,
+      "section_id": 13,
+      "text": "In the present study, we investigated whether differences in friction are reflected in participants' estimates of the critical tilt angle.",
+      "page_number": null
+    },
+    {
+      "text_id": 204,
+      "paragraph_id": 51,
+      "section_id": 13,
+      "text": "Moreover, we tested whether these estimates are biased by the objects' mass and whether this uninformative cue can be discarded after manual object interaction.",
+      "page_number": null
+    },
+    {
+      "text_id": 205,
+      "paragraph_id": 51,
+      "section_id": 13,
+      "text": "We showed that participants correctly chose higher estimates of the critical tilt angle for cubes with a high-friction compared with a lowfriction surface when they pushed the objects and the force of friction was available as a potential cue.",
+      "page_number": null
+    },
+    {
+      "text_id": 206,
+      "paragraph_id": 51,
+      "section_id": 13,
+      "text": "However, the interaction group also considered the cubes' weight, which was reflected in higher estimates of the critical tilt angle for heavy compared with light cubes.",
+      "page_number": null
+    },
+    {
+      "text_id": 207,
+      "paragraph_id": 51,
+      "section_id": 13,
+      "text": "This confirms that the interaction group was sensitive to the information provided-irrespective of whether this information was helpful for the task or not.",
+      "page_number": null
+    },
+    {
+      "text_id": 208,
+      "paragraph_id": 51,
+      "section_id": 13,
+      "text": "Importantly, the result of the push/pull-plus-lift blocks suggests that participants, unlike an \"ideal physicist,\" did not discount the cubes' weight.",
+      "page_number": null
+    },
+    {
+      "text_id": 209,
+      "paragraph_id": 51,
+      "section_id": 13,
+      "text": "Quite to the contrary, rather than disentangling forces, the pattern of the interaction group (and video-observation group) is consistent with the idea that participants formed a weighted average of the information they obtained when pushing and when lifting the object (and observing these actions, respectively), rather than discounting the weight.",
+      "page_number": null
+    },
+    {
+      "text_id": 210,
+      "paragraph_id": 51,
+      "section_id": 13,
+      "text": "Descriptively, the condition in which participants have information obtained from lifting and pushing is located in between the conditions in which participants obtained information from either lifting or pushing alone, although this pattern is not statistically significant for all groups.",
+      "page_number": null
+    },
+    {
+      "text_id": 211,
+      "paragraph_id": 52,
+      "section_id": 13,
+      "text": "Sensitivity to friction was highest in the interaction group, suggesting that reliance on friction partly necessitates sensorimotor feedback to utilize this information for physical inference.",
+      "page_number": null
+    },
+    {
+      "text_id": 212,
+      "paragraph_id": 52,
+      "section_id": 13,
+      "text": "In both observation groups, sensitivity to friction fell short of the physical difference of friction and thus tilt angle.",
+      "page_number": null
+    },
+    {
+      "text_id": 213,
+      "paragraph_id": 52,
+      "section_id": 13,
+      "text": "Participants in the videoobservation group were least sensitive to friction but consistently considered mass whenever they saw a video of a cube being lifted.",
+      "page_number": null
+    },
+    {
+      "text_id": 214,
+      "paragraph_id": 52,
+      "section_id": 13,
+      "text": "This pattern of results is more consistent with the view that the use of friction information does not rely on cognitive computations of physical laws.",
+      "page_number": null
+    },
+    {
+      "text_id": 215,
+      "paragraph_id": 52,
+      "section_id": 13,
+      "text": "Our results are similar to previous findings showing that humans take object weight into account when they rate the amount of friction between an object and a surface while imagining that the object slides on the board (Corneli & Vicovaro, 2007).",
+      "page_number": null
+    },
+    {
+      "text_id": 216,
+      "paragraph_id": 52,
+      "section_id": 13,
+      "text": "That study, however, differs from ours in several important aspects.",
+      "page_number": null
+    },
+    {
+      "text_id": 217,
+      "paragraph_id": 52,
+      "section_id": 13,
+      "text": "First, the authors emphasized participants' beliefs; that is, participants had to imagine the movement of objects but did not experience the coefficient of static friction by actively pushing the objects.",
+      "page_number": null
+    },
+    {
+      "text_id": 218,
+      "paragraph_id": 52,
+      "section_id": 13,
+      "text": "Second, the authors tested a scenario with a flat surface, that is, no inclination, in which the object's mass matters because of gravity.",
+      "page_number": null
+    },
+    {
+      "text_id": 219,
+      "paragraph_id": 52,
+      "section_id": 13,
+      "text": "And third, their study focused on sliding (i.e., kinetic) friction-which applies once an object is moving.",
+      "page_number": null
+    },
+    {
+      "text_id": 220,
+      "paragraph_id": 53,
+      "section_id": 13,
+      "text": "Our findings are limited in terms of group comparability.",
+      "page_number": null
+    },
+    {
+      "text_id": 221,
+      "paragraph_id": 53,
+      "section_id": 13,
+      "text": "The rationale for the stimulus selection in the video-observation group was based on the idea that the interaction group might have conscious access to the involved forces.",
+      "page_number": null
+    },
+    {
+      "text_id": 222,
+      "paragraph_id": 53,
+      "section_id": 13,
+      "text": "In the push block, participants accessed the product of the coefficient of friction and Friction Ground Truth High Low p u l l + l i f t l i f t p u l l p u l l + l i f t l i f t p u l l p u l l + l i f t l i f t p u l l p u s h + l i f t l i f t p u s h p u s h + l i f t l i f t p u s h p u l l + l i f t l i f t p u l l θ crit * * * Fig 4 Estimated critical tilt angles as a function of block and group (colors) relative to ground truth (solid black line).",
+      "page_number": null
+    },
+    {
+      "text_id": 223,
+      "paragraph_id": 53,
+      "section_id": 13,
+      "text": "The error bars represent 95% confidence intervals of between-participant variability.",
+      "page_number": null
+    },
+    {
+      "text_id": 224,
+      "paragraph_id": 53,
+      "section_id": 13,
+      "text": "Asterisks indicate a significant difference (p < .05) from ground truth.",
+      "page_number": null
+    },
+    {
+      "text_id": 225,
+      "paragraph_id": 54,
+      "section_id": 13,
+      "text": "the weight (because the coefficient of friction cannot be accessed on its own).",
+      "page_number": null
+    },
+    {
+      "text_id": 226,
+      "paragraph_id": 54,
+      "section_id": 13,
+      "text": "In the lift block, they accessed the weight, and in the push-plus-lift block, both friction and weight.",
+      "page_number": null
+    },
+    {
+      "text_id": 227,
+      "paragraph_id": 54,
+      "section_id": 13,
+      "text": "To provide a similar access of the involved forces through observation, we used a spring scale in the observation groups.",
+      "page_number": null
+    },
+    {
+      "text_id": 228,
+      "paragraph_id": 54,
+      "section_id": 13,
+      "text": "Our results show that participants did not rely solely on explicit information about the involved forces to solve the task.",
+      "page_number": null
+    },
+    {
+      "text_id": 229,
+      "paragraph_id": 54,
+      "section_id": 13,
+      "text": "Quite the contrary, our results show that observing the experimenter interacting with the objects in front of them helped participants employ information about the force of friction, suggesting the involvement of implicit visual cues and providing further evidence that information processing differs between real objects and pictorial presentation of these objects (Freud et al., 2018;Snow et al., 2011; for review, see Fiehler & Karimpur, 2023).",
+      "page_number": null
+    },
+    {
+      "text_id": 230,
+      "paragraph_id": 54,
+      "section_id": 13,
+      "text": "Descriptively, sensitivity to friction was highest in the interaction group, and the difference in critical tilt angles and the physical stimulus difference were similar, suggesting that some incremental information (possibly derived from kinesthesia) can be extracted from interacting with the objects.",
+      "page_number": null
+    },
+    {
+      "text_id": 231,
+      "paragraph_id": 54,
+      "section_id": 13,
+      "text": "Another limitation, but also strength, lies in the fact that the type of direct interaction was controlled (\"Push the cube with increasing force until it starts to move\").",
+      "page_number": null
+    },
+    {
+      "text_id": 232,
+      "paragraph_id": 55,
+      "section_id": 13,
+      "text": "When haptically exploring an object in order to judge one of its physical properties, people typically select an exploratory procedure that helps them to acquire the most relevant tactile information in order to recognize the object (Lederman & Klatzky, 1987).",
+      "page_number": null
+    },
+    {
+      "text_id": 233,
+      "paragraph_id": 55,
+      "section_id": 13,
+      "text": "When judging the slipperiness of a surface, moving the finger across the surface has proven to provide more information than static contact (Grierson & Carnahan, 2006;Joh et al., 2007).",
+      "page_number": null
+    },
+    {
+      "text_id": 234,
+      "paragraph_id": 55,
+      "section_id": 13,
+      "text": "However, here we focus not on surfaceto-skin friction but on surface-to-surface friction (i.e., of two objects), a topic of utter importance for our everyday lives but widely neglected in research on perception and action.",
+      "page_number": null
+    },
+    {
+      "text_id": 235,
+      "paragraph_id": 55,
+      "section_id": 13,
+      "text": "Grierson and Carnahan (2006) also showed that lifting an object is helpful for estimating friction.",
+      "page_number": null
+    },
+    {
+      "text_id": 236,
+      "paragraph_id": 55,
+      "section_id": 13,
+      "text": "In contrast to their experiment, participants in our interaction group did not have direct contact with the relevant surface during the lifting procedure and thus were not able to obtain tactile information for estimating friction.",
+      "page_number": null
+    },
+    {
+      "text_id": 237,
+      "paragraph_id": 55,
+      "section_id": 13,
+      "text": "Instead, our experimental conditions were specifically designed so that participants would have to combine the information about the force of friction with the gravitational force.",
+      "page_number": null
+    },
+    {
+      "text_id": 238,
+      "paragraph_id": 55,
+      "section_id": 13,
+      "text": "The present findings emphasize that tactile information is not necessary to estimate friction but that such estimates can be based solely on kinesthetic information.",
+      "page_number": null
+    },
+    {
+      "text_id": 239,
+      "paragraph_id": 55,
+      "section_id": 13,
+      "text": "Fig.",
+      "page_number": null
+    },
+    {
+      "text_id": 240,
+      "paragraph_id": 55,
+      "section_id": 13,
+      "text": "5.",
+      "page_number": null
+    },
+    {
+      "text_id": 241,
+      "paragraph_id": 55,
+      "section_id": 13,
+      "text": "Relationship between estimates of the critical tilt angle and maximum force applied for both stimulus sets.",
+      "page_number": null
+    },
+    {
+      "text_id": 242,
+      "paragraph_id": 55,
+      "section_id": 13,
+      "text": "The values were obtained from the interaction group and standardized for each participant.",
+      "page_number": null
+    },
+    {
+      "text_id": 243,
+      "paragraph_id": 55,
+      "section_id": 13,
+      "text": "Peak forces during pushing (F push ) are depicted in the top row and represent individual data points for the block push and the block push plus lift.",
+      "page_number": null
+    },
+    {
+      "text_id": 244,
+      "paragraph_id": 55,
+      "section_id": 13,
+      "text": "Peak forces during lifting (F lift ) are depicted in the bottom row, representing the block lift and the block push plus lift.",
+      "page_number": null
+    },
+    {
+      "text_id": 245,
+      "paragraph_id": 56,
+      "section_id": 13,
+      "text": "The generalizability of our study might be potentially limited by our sample's composition, predominantly young adults.",
+      "page_number": null
+    },
+    {
+      "text_id": 246,
+      "paragraph_id": 56,
+      "section_id": 13,
+      "text": "This focus raises questions about the development and variability of intuitive physics across different ages.",
+      "page_number": null
+    },
+    {
+      "text_id": 247,
+      "paragraph_id": 56,
+      "section_id": 13,
+      "text": "During early development, an intuitive understanding of object properties may still form and may not yet be fully automated.",
+      "page_number": null
+    },
+    {
+      "text_id": 248,
+      "paragraph_id": 56,
+      "section_id": 13,
+      "text": "Conversely, in older adults, while cognitive processing might decline, the ingrained nature of intuitive physics could remain robust or even become more relied upon as a compensatory mechanism.",
+      "page_number": null
+    },
+    {
+      "text_id": 249,
+      "paragraph_id": 56,
+      "section_id": 13,
+      "text": "Therefore, our findings, although informative for a young adult demographic, warrant further investigation to assess their relevance across the life span.",
+      "page_number": null
+    },
+    {
+      "text_id": 250,
+      "paragraph_id": 57,
+      "section_id": 13,
+      "text": "In summary, although humans are quite accurate in estimating the critical tilt angle, they also base their estimates on the object's weight, particularly when they cannot manually interact with the object (observation groups).",
+      "page_number": null
+    },
+    {
+      "text_id": 251,
+      "paragraph_id": 57,
+      "section_id": 13,
+      "text": "Direct interaction allows people to obtain information about friction to estimate the critical tilt angle.",
+      "page_number": null
+    },
+    {
+      "text_id": 252,
+      "paragraph_id": 57,
+      "section_id": 13,
+      "text": "When tactile information about the two surfaces having contact is missing, that information can be inferred from kinesthetic input.",
+      "page_number": null
+    },
+    {
+      "text_id": 253,
+      "paragraph_id": 57,
+      "section_id": 13,
+      "text": "However, our results suggest that instead of performing cognitive algebra (Corneli & Vicovaro, 2007) by discounting information about weight, humans behave like an unideal physicist by forming a weighted average about all the information they obtain from manual object interaction.",
+      "page_number": null
+    },
+    {
+      "text_id": 254,
+      "paragraph_id": 57,
+      "section_id": 13,
+      "text": "This shows that inferences about physical object properties are tightly linked to the human sensorimotor system.",
+      "page_number": null
+    },
+    {
+      "text_id": 255,
+      "paragraph_id": 59,
+      "section_id": 14,
+      "text": "Action Editor: Krishnankutty Sathian Editor: Patricia J Bauer",
+      "page_number": null
+    },
+    {
+      "text_id": 256,
+      "paragraph_id": 61,
+      "section_id": 15,
+      "text": "We would like to thank Greta Saiz and Helene Mehl for their help in data collection.",
+      "page_number": null
+    },
+    {
+      "text_id": 257,
+      "paragraph_id": 63,
+      "section_id": 16,
+      "text": "This work was supported by the International Research Training Group 1901 \"The Brain in Action\" funded by the German Research Foundation (DFG) and the DFG project FI 1567/6-1 TAO (the active observer).",
+      "page_number": null
+    },
+    {
+      "text_id": 258,
+      "paragraph_id": 65,
+      "section_id": 17,
+      "text": "The author(s) declared that there were no conflicts of interest with respect to the authorship or the publication of this article.",
+      "page_number": null
+    },
+    {
+      "text_id": 259,
+      "paragraph_id": 71,
+      "section_id": 20,
+      "text": "Katja Fiehler: Conceptualization; Funding acquisition; Supervision; Writing -review & editing.",
+      "page_number": null
+    },
+    {
+      "text_id": 260,
+      "paragraph_id": 72,
+      "section_id": 21,
+      "text": "Fig.1.",
+      "page_number": null
+    },
+    {
+      "text_id": 261,
+      "paragraph_id": 72,
+      "section_id": 21,
+      "text": "Forces on an inclined plane.",
+      "page_number": null
+    },
+    {
+      "text_id": 262,
+      "paragraph_id": 72,
+      "section_id": 21,
+      "text": "The glass and bottle on the tray will start to slide if the downward force, F f , is larger than the force of friction, F R .",
+      "page_number": null
+    },
+    {
+      "text_id": 263,
+      "paragraph_id": 72,
+      "section_id": 21,
+      "text": "The critical tilt angle, θ crit , is thus given by the equilibrium of the two forces.",
+      "page_number": null
+    },
+    {
+      "text_id": 264,
+      "paragraph_id": 72,
+      "section_id": 21,
+      "text": "Both forces include the gravitational force F g and thus mass m and gravity g as factors.",
+      "page_number": null
+    },
+    {
+      "text_id": 265,
+      "paragraph_id": 72,
+      "section_id": 21,
+      "text": "Consequently, in an equilibrium, m g sin m gcos",
+      "page_number": null
+    },
+    {
+      "text_id": 266,
+      "paragraph_id": 73,
+      "section_id": 22,
+      "text": "Video Observation",
+      "page_number": null
+    },
+    {
+      "text_id": 267,
+      "paragraph_id": 74,
+      "section_id": 23,
+      "text": "Fig.3.",
+      "page_number": null
+    },
+    {
+      "text_id": 268,
+      "paragraph_id": 74,
+      "section_id": 23,
+      "text": "Results: Sensitivity to mass over sensitivity to friction for the three respective groups.",
+      "page_number": null
+    },
+    {
+      "text_id": 269,
+      "paragraph_id": 74,
+      "section_id": 23,
+      "text": "Differences in critical tilt angle estimates for heavy versus light cubes (y-axis) are shown as a function of the differences in critical tilt angle estimates for high versus low friction (x-axis).",
+      "page_number": null
+    },
+    {
+      "text_id": 270,
+      "paragraph_id": 74,
+      "section_id": 23,
+      "text": "Faint points represent individual data, and saturated points are the overall mean with 95% confidence intervals of between-participant variability.",
+      "page_number": null
+    },
+    {
+      "text_id": 271,
+      "paragraph_id": 74,
+      "section_id": 23,
+      "text": "Diagonal error bars denote the error of the difference between the two values and have to be compared with the identity line.",
+      "page_number": null
+    },
+    {
+      "text_id": 272,
+      "paragraph_id": 74,
+      "section_id": 23,
+      "text": "The dark red diamond indicates the physical difference in critical tilt angle between the stimuli (4.1, 0).",
+      "page_number": null
+    },
+    {
+      "text_id": 273,
+      "paragraph_id": 74,
+      "section_id": 23,
+      "text": "Please note that values above zero (y-axis) indicate usage of the essentially uninformative information about mass, with values above the identity line providing evidence that estimates of critical tilt angle were more strongly based on mass than on friction.",
+      "page_number": null
+    },
+    {
+      "text_id": 274,
+      "paragraph_id": 74,
+      "section_id": 23,
+      "text": "Push/pull-plus-lift trials allow discounting mass information, which could result in a stronger sensitivity to friction information (i.e., data points below the identity line or, ideally, data points distributed along the x-axis).",
+      "page_number": null
+    },
+    {
+      "text_id": 275,
+      "paragraph_id": 74,
+      "section_id": 23,
+      "text": "However, this was not the case.",
+      "page_number": null
+    },
+    {
+      "text_id": 276,
+      "paragraph_id": 74,
+      "section_id": 23,
+      "text": "Note that to enhance visibility, a few individual data points are outside the plotted range (video observation, seven; live observation, zero; interaction, nine).",
+      "page_number": null
+    },
+    {
+      "text_id": 277,
+      "paragraph_id": 75,
+      "section_id": 24,
+      "text": "Video ObservationLive Observation Interaction",
+      "page_number": null
+    },
+    {
+      "text_id": 278,
+      "paragraph_id": 76,
+      "section_id": 25,
+      "text": "r = 0.59, p < 0.001 r = 0.66, p < 0.001 r = 0.42, p < 0.001 r = 0.44, p < 0.001 r = 0.26, p = 0.062 r = 0.34, p = 0.042 r = 0.26, p = 0.038 r = 0.23, p = 0.061 F push (push) F push (push+lift) F push (push) F push (push+lift)F lift (lift) F lift (push+lift) F lift (lift) F lift (push+lift)",
+      "page_number": null
+    },
+    {
+      "text_id": 279,
+      "paragraph_id": 77,
+      "section_id": 26,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 280,
+      "paragraph_id": 78,
+      "section_id": 26,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 281,
+      "paragraph_id": 79,
+      "section_id": 26,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 282,
+      "paragraph_id": 80,
+      "section_id": 26,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 283,
+      "paragraph_id": 81,
+      "section_id": 26,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 284,
+      "paragraph_id": 82,
+      "section_id": 26,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 285,
+      "paragraph_id": 83,
+      "section_id": 26,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 286,
+      "paragraph_id": 84,
+      "section_id": 26,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 287,
+      "paragraph_id": 85,
+      "section_id": 26,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 288,
+      "paragraph_id": 86,
+      "section_id": 26,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 289,
+      "paragraph_id": 87,
+      "section_id": 26,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 290,
+      "paragraph_id": 88,
+      "section_id": 26,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 291,
+      "paragraph_id": 89,
+      "section_id": 26,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 292,
+      "paragraph_id": 90,
+      "section_id": 26,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 293,
+      "paragraph_id": 91,
+      "section_id": 26,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 294,
+      "paragraph_id": 92,
+      "section_id": 26,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 295,
+      "paragraph_id": 93,
+      "section_id": 26,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 296,
+      "paragraph_id": 94,
+      "section_id": 26,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 297,
+      "paragraph_id": 95,
+      "section_id": 26,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 298,
+      "paragraph_id": 96,
+      "section_id": 26,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 299,
+      "paragraph_id": 97,
+      "section_id": 26,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 300,
+      "paragraph_id": 98,
+      "section_id": 26,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 301,
+      "paragraph_id": 99,
+      "section_id": 26,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 302,
+      "paragraph_id": 100,
+      "section_id": 26,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 303,
+      "paragraph_id": 101,
+      "section_id": 26,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 304,
+      "paragraph_id": 102,
+      "section_id": 26,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 305,
+      "paragraph_id": 103,
+      "section_id": 26,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 306,
+      "paragraph_id": 104,
+      "section_id": 26,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 307,
+      "paragraph_id": 105,
+      "section_id": 26,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 308,
+      "paragraph_id": 106,
+      "section_id": 26,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 309,
+      "paragraph_id": 107,
+      "section_id": 26,
+      "text": "",
+      "page_number": null
+    }
+  ],
+  "section": [
+    {
+      "section_id": 0,
+      "header": "Abstract",
+      "parent_section_id": null,
+      "section_type": "abstract",
+      "classification_score": null
+    },
+    {
+      "section_id": 1,
+      "header": "[div-01]",
+      "parent_section_id": null,
+      "section_type": "intro",
+      "classification_score": null
+    },
+    {
+      "section_id": 2,
+      "header": "Statement of Relevance",
+      "parent_section_id": null,
+      "section_type": "intro",
+      "classification_score": null
+    },
+    {
+      "section_id": 3,
+      "header": "Open Practices Statement",
+      "parent_section_id": null,
+      "section_type": "intro",
+      "classification_score": null
+    },
+    {
+      "section_id": 5,
+      "header": "Participants",
+      "parent_section_id": null,
+      "section_type": "method",
+      "classification_score": null
+    },
+    {
+      "section_id": 6,
+      "header": "Design and stimuli",
+      "parent_section_id": null,
+      "section_type": "method",
+      "classification_score": null
+    },
+    {
+      "section_id": 7,
+      "header": "Procedure",
+      "parent_section_id": null,
+      "section_type": "method",
+      "classification_score": null
+    },
+    {
+      "section_id": 8,
+      "header": "Data reduction and statistical analyses",
+      "parent_section_id": null,
+      "section_type": "method",
+      "classification_score": null
+    },
+    {
+      "section_id": 10,
+      "header": "Sensitivity to friction versus mass",
+      "parent_section_id": null,
+      "section_type": "results",
+      "classification_score": null
+    },
+    {
+      "section_id": 11,
+      "header": "Video Observation Live Observation Interaction",
+      "parent_section_id": null,
+      "section_type": "results",
+      "classification_score": null
+    },
+    {
+      "section_id": 12,
+      "header": "Accuracy of tilt angle estimates and force data",
+      "parent_section_id": null,
+      "section_type": "results",
+      "classification_score": null
+    },
+    {
+      "section_id": 13,
+      "header": "Discussion",
+      "parent_section_id": null,
+      "section_type": "discussion",
+      "classification_score": null
+    },
+    {
+      "section_id": 14,
+      "header": "Transparency",
+      "parent_section_id": null,
+      "section_type": "discussion",
+      "classification_score": null
+    },
+    {
+      "section_id": 15,
+      "header": "Acknowledgments",
+      "parent_section_id": null,
+      "section_type": "acknowledgement",
+      "classification_score": null
+    },
+    {
+      "section_id": 16,
+      "header": "Funding",
+      "parent_section_id": null,
+      "section_type": "funding",
+      "classification_score": null
+    },
+    {
+      "section_id": 17,
+      "header": "Declaration of Conflicting Interests",
+      "parent_section_id": null,
+      "section_type": "conflict",
+      "classification_score": null
+    },
+    {
+      "section_id": 20,
+      "header": "Christian Wolf: Formal analysis; Validation; Visualization; Writing -review & editing.",
+      "parent_section_id": null,
+      "section_type": "contribution",
+      "classification_score": null
+    },
+    {
+      "section_id": 21,
+      "header": "Fig 1",
+      "parent_section_id": null,
+      "section_type": "figure",
+      "classification_score": null
+    },
+    {
+      "section_id": 22,
+      "header": "Fig 2",
+      "parent_section_id": null,
+      "section_type": "figure",
+      "classification_score": null
+    },
+    {
+      "section_id": 23,
+      "header": "Fig 3",
+      "parent_section_id": null,
+      "section_type": "figure",
+      "classification_score": null
+    },
+    {
+      "section_id": 24,
+      "header": "Fig 4",
+      "parent_section_id": null,
+      "section_type": "figure",
+      "classification_score": null
+    },
+    {
+      "section_id": 25,
+      "header": "",
+      "parent_section_id": null,
+      "section_type": "figure",
+      "classification_score": null
+    },
+    {
+      "section_id": 26,
+      "header": "References",
+      "parent_section_id": null,
+      "section_type": "references",
+      "classification_score": null
+    }
+  ],
+  "url": [
+    {
+      "href": "https://osf.io/gmsh6",
+      "link_text": null,
+      "text_id": 51
+    }
+  ],
+  "bib": [
+    {
+      "bib_type": "article",
+      "doi": "10.1037/a0017450",
+      "title": "Infants' perception of affordances of slopes under high-and lowfriction conditions",
+      "authors": "Adolph, K E; Joh, A S; Eppler, M A",
+      "editors": "",
+      "publisher": "",
+      "year": 2010,
+      "volume": "36",
+      "issue": "4",
+      "first_page": "797",
+      "last_page": "811",
+      "container": "Journal of Experimental Psychology: Human Perception and Performance",
+      "bib_id": 0,
+      "year_suffix": "",
+      "text_id": 279
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "The four horseman of automaticity: Awareness, intention, efficiency and control in social cognition",
+      "authors": "Bargh, J A",
+      "editors": "Wyers, R; Srull, T",
+      "publisher": "",
+      "year": 1994,
+      "volume": "1",
+      "issue": "",
+      "first_page": "1",
+      "last_page": "40",
+      "container": "",
+      "bib_id": 1,
+      "year_suffix": "",
+      "text_id": 280
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1073/pnas.1306572110",
+      "title": "Simulation as an engine of physical scene understanding",
+      "authors": "Battaglia, P W; Hamrick, J B; Tenenbaum, J B",
+      "editors": "",
+      "publisher": "",
+      "year": 2013,
+      "volume": "110",
+      "issue": "45",
+      "first_page": "18327",
+      "last_page": "18332",
+      "container": "Proceedings of the National Academy of Sciences",
+      "bib_id": 2,
+      "year_suffix": "",
+      "text_id": 281
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1111/j.2517-6161.1995.tb02031.x",
+      "title": "Controlling the false discovery rate: A practical and powerful approach to multiple testing",
+      "authors": "Benjamini, Y; Hochberg, Y",
+      "editors": "",
+      "publisher": "",
+      "year": 1995,
+      "volume": "57",
+      "issue": "1",
+      "first_page": "289",
+      "last_page": "300",
+      "container": "Journal of the Royal Statistical Society: Series B (Methodological)",
+      "bib_id": 3,
+      "year_suffix": "",
+      "text_id": 282
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1016/j.cogpsych.2018.05.001",
+      "title": "Intuitive experimentation in the physical world",
+      "authors": "Bramley, N R; Gerstenberg, T; Tenenbaum, J B; Gureckis, T M",
+      "editors": "",
+      "publisher": "",
+      "year": 2018,
+      "volume": "195",
+      "issue": "",
+      "first_page": "9",
+      "last_page": "38",
+      "container": "Cognitive Psychology",
+      "bib_id": 4,
+      "year_suffix": "",
+      "text_id": 283
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "Intuitive cognitive algebra of sliding friction",
+      "authors": "Corneli, E; Vicovaro, M",
+      "editors": "",
+      "publisher": "",
+      "year": 2007,
+      "volume": "12",
+      "issue": "",
+      "first_page": "133",
+      "last_page": "142",
+      "container": "Teorie & Modelli",
+      "bib_id": 5,
+      "year_suffix": "",
+      "text_id": 284
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1016/j.artint.2015.12.003",
+      "title": "The scope and limits of simulation in automated reasoning",
+      "authors": "Davis, E; Marcus, G",
+      "editors": "",
+      "publisher": "",
+      "year": 2016,
+      "volume": "233",
+      "issue": "",
+      "first_page": "60",
+      "last_page": "72",
+      "container": "Artificial Intelligence",
+      "bib_id": 6,
+      "year_suffix": "",
+      "text_id": 285
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1038/s44159-022-00140-1",
+      "title": "Spatial coding for action across spatial scales",
+      "authors": "Fiehler, K; Karimpur, H",
+      "editors": "",
+      "publisher": "",
+      "year": 2023,
+      "volume": "2",
+      "issue": "2",
+      "first_page": "72",
+      "last_page": "84",
+      "container": "Nature Reviews Psychology",
+      "bib_id": 7,
+      "year_suffix": "",
+      "text_id": 286
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1016/j.cortex.2017.02.020",
+      "title": "Getting a grip on reality: Grasping movements directed to real objects and images rely on dissociable neural representations",
+      "authors": "Freud, E; Macdonald, S N; Chen, J; Quinlan, D J; Goodale, M A",
+      "editors": "",
+      "publisher": "",
+      "year": 2018,
+      "volume": "98",
+      "issue": "",
+      "first_page": "34",
+      "last_page": "48",
+      "container": "Cortex",
+      "bib_id": 8,
+      "year_suffix": "",
+      "text_id": 287
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.3758/BF03193710",
+      "title": "Manual exploration and the perception of slipperiness",
+      "authors": "Grierson, L E M; Carnahan, H",
+      "editors": "",
+      "publisher": "",
+      "year": 2006,
+      "volume": "68",
+      "issue": "7",
+      "first_page": "1070",
+      "last_page": "1081",
+      "container": "Perception and Psychophysics",
+      "bib_id": 9,
+      "year_suffix": "",
+      "text_id": 288
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1037/0096-1523.33.5.1145",
+      "title": "Gauging possibilities for action based on friction underfoot",
+      "authors": "Joh, A S; Adolph, K E; Narayanan, P J; Dietz, V A",
+      "editors": "",
+      "publisher": "",
+      "year": 2007,
+      "volume": "33",
+      "issue": "5",
+      "first_page": "1145",
+      "last_page": "1157",
+      "container": "Journal of Experimental Psychology: Human Perception and Performance",
+      "bib_id": 10,
+      "year_suffix": "",
+      "text_id": 289
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1007/BF00237997",
+      "title": "Roles of glabrous skin receptors and sensorimotor memory in automatic control of precision grip when lifting rougher or more slippery objects",
+      "authors": "Johansson, R S; Westling, G",
+      "editors": "",
+      "publisher": "",
+      "year": 1984,
+      "volume": "56",
+      "issue": "3",
+      "first_page": "550",
+      "last_page": "564",
+      "container": "Experimental Brain Research",
+      "bib_id": 11,
+      "year_suffix": "",
+      "text_id": 290
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.31234/osf.io/mabn4",
+      "title": "Icy road ahead-rapid adjustments of gaze-gait interactions during perturbed naturalistic walking",
+      "authors": "Kopiske, K; Koska, D; Baumann, T; Maiwald, C; Einhäuser, W",
+      "editors": "",
+      "publisher": "",
+      "year": 2021,
+      "volume": "21",
+      "issue": "8",
+      "first_page": "11",
+      "last_page": null,
+      "container": "Journal of Vision",
+      "bib_id": 12,
+      "year_suffix": "",
+      "text_id": 291
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1016/j.tics.2017.06.002",
+      "title": "Intuitive physics: Current research and controversies",
+      "authors": "Kubricht, J R; Holyoak, K J; Lu, H",
+      "editors": "",
+      "publisher": "",
+      "year": 2017,
+      "volume": "21",
+      "issue": "10",
+      "first_page": "749",
+      "last_page": "759",
+      "container": "Trends in Cognitive Sciences",
+      "bib_id": 13,
+      "year_suffix": "",
+      "text_id": 292
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.3389/fpsyg.2013.00863",
+      "title": "Calculating and reporting effect sizes to facilitate cumulative science: A practical primer for t-tests and ANOVAs",
+      "authors": "Lakens, D",
+      "editors": "",
+      "publisher": "",
+      "year": 2013,
+      "volume": "4",
+      "issue": "",
+      "first_page": "863",
+      "last_page": null,
+      "container": "Frontiers in Psychology",
+      "bib_id": 14,
+      "year_suffix": "",
+      "text_id": 293
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1016/0010-0285(87)90008-9",
+      "title": "Hand movements: A window into haptic object recognition",
+      "authors": "Lederman, S J; Klatzky, R L",
+      "editors": "",
+      "publisher": "",
+      "year": 1987,
+      "volume": "19",
+      "issue": "3",
+      "first_page": "342",
+      "last_page": "368",
+      "container": "Cognitive Psychology",
+      "bib_id": 15,
+      "year_suffix": "",
+      "text_id": 294
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1016/j.cogpsych.2021.101396",
+      "title": "Limits on simulation approaches in intuitive physics",
+      "authors": "Ludwin-Peery, E; Bramley, N R; Davis, E; Gureckis, T M",
+      "editors": "",
+      "publisher": "",
+      "year": 2021,
+      "volume": "127",
+      "issue": "",
+      "first_page": "1",
+      "last_page": "32",
+      "container": "Cognitive Psychology",
+      "bib_id": 16,
+      "year_suffix": "",
+      "text_id": 295
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1016/j.cub.2018.03.008",
+      "title": "Gaze and the control of foot placement when walking in natural terrain",
+      "authors": "Matthis, J S; Yates, J L; Hayhoe, M M",
+      "editors": "",
+      "publisher": "",
+      "year": 2018,
+      "volume": "28",
+      "issue": "8",
+      "first_page": "1224",
+      "last_page": "1233",
+      "container": "Current Biology",
+      "bib_id": 17,
+      "year_suffix": "",
+      "text_id": 296
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1038/scientificamerican0483-122",
+      "title": "Intuitive physics",
+      "authors": "Mccloskey, M",
+      "editors": "",
+      "publisher": "",
+      "year": 1983,
+      "volume": "248",
+      "issue": "4",
+      "first_page": "122",
+      "last_page": "130",
+      "container": "Scientific American",
+      "bib_id": 18,
+      "year_suffix": "",
+      "text_id": 297
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1097/00001756-200112040-00004",
+      "title": "Does the brain model Newton's laws?",
+      "authors": "Mcintyre, J; Zago, M; Berthoz, A; Lacquaniti, F",
+      "editors": "",
+      "publisher": "",
+      "year": 2001,
+      "volume": "4",
+      "issue": "7",
+      "first_page": "693",
+      "last_page": "694",
+      "container": "Nature",
+      "bib_id": 19,
+      "year_suffix": "",
+      "text_id": 298
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1371/journal.pcbi.1007730",
+      "title": "Intuitive physical reasoning about objects' masses transfers to a visuomotor decision task consistent with Newtonian physics",
+      "authors": "Neupärtl, N; Tatai, F; Rothkopf, C A",
+      "editors": "",
+      "publisher": "",
+      "year": 2020,
+      "volume": "16",
+      "issue": "10",
+      "first_page": "1",
+      "last_page": "26",
+      "container": "PLOS Computational Biology",
+      "bib_id": 20,
+      "year_suffix": "",
+      "text_id": 299
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1007/s00221-016-4631-7",
+      "title": "Effects of material properties and object orientation on precision grip kinematics",
+      "authors": "Paulun, V C; Gegenfurtner, K R; Goodale, M A; Fleming, R W",
+      "editors": "",
+      "publisher": "",
+      "year": 2016,
+      "volume": "234",
+      "issue": "8",
+      "first_page": "2253",
+      "last_page": "2265",
+      "container": "Experimental Brain Research",
+      "bib_id": 21,
+      "year_suffix": "",
+      "text_id": 300
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.3758/s13428-018-01193-y",
+      "title": "PsychoPy2: Experiments in behavior made easy",
+      "authors": "Peirce, J; Gray, J R; Simpson, S; Macaskill, M; Höchenberger, R; Sogo, H; Kastman, E; Lindeløv, J K",
+      "editors": "",
+      "publisher": "",
+      "year": 2019,
+      "volume": "51",
+      "issue": "1",
+      "first_page": "195",
+      "last_page": "203",
+      "container": "Behavior Research Methods",
+      "bib_id": 22,
+      "year_suffix": "",
+      "text_id": 301
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1037/0096-1523.15.2.384",
+      "title": "Understanding natural dynamics",
+      "authors": "Proffitt, D R; Gilden, D L",
+      "editors": "",
+      "publisher": "",
+      "year": 1989,
+      "volume": "15",
+      "issue": "2",
+      "first_page": "384",
+      "last_page": "393",
+      "container": "Journal of Experimental Psychology: Human Perception and Performance",
+      "bib_id": 23,
+      "year_suffix": "",
+      "text_id": 302
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1037/a0031912",
+      "title": "Reconciling intuitive physics and Newtonian mechanics for colliding objects",
+      "authors": "Sanborn, A N; Mansinghka, V K; Griffiths, T L",
+      "editors": "",
+      "publisher": "",
+      "year": 2013,
+      "volume": "120",
+      "issue": "2",
+      "first_page": "411",
+      "last_page": "437",
+      "container": "Psychological Review",
+      "bib_id": 24,
+      "year_suffix": "",
+      "text_id": 303
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1016/j.tins.2016.04.008",
+      "title": "The slip hypothesis: Tactile perception and its neuronal bases",
+      "authors": "Schwarz, C",
+      "editors": "",
+      "publisher": "",
+      "year": 2016,
+      "volume": "39",
+      "issue": "7",
+      "first_page": "449",
+      "last_page": "462",
+      "container": "Trends in Neurosciences",
+      "bib_id": 25,
+      "year_suffix": "",
+      "text_id": 304
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1152/jn.1996.75.5.1957",
+      "title": "Subjective scaling of smooth surface friction",
+      "authors": "Smith, A M; Scott, S H",
+      "editors": "",
+      "publisher": "",
+      "year": 1996,
+      "volume": "75",
+      "issue": "5",
+      "first_page": "1957",
+      "last_page": "1962",
+      "container": "Journal of Neurophysiology",
+      "bib_id": 26,
+      "year_suffix": "",
+      "text_id": 305
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1007/s00221-012-3254-x",
+      "title": "Mind the step: Complementary effects of an implicit task on eye and head movements in real-life gaze allocation",
+      "authors": "Snow, J C; Pettypiece, C E; Mcadam, T D; Mclean, A D; Stroman, P W; Goodale, M A; Culham, J C",
+      "editors": "",
+      "publisher": "",
+      "year": 2011,
+      "volume": "1",
+      "issue": "2",
+      "first_page": "233",
+      "last_page": "249",
+      "container": "Experimental Brain Research",
+      "bib_id": 27,
+      "year_suffix": "",
+      "text_id": 306
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1016/j.tics.2017.05.012",
+      "title": "Mind games: Game engines as an architecture for intuitive physics",
+      "authors": "Ullman, T D; Spelke, E; Battaglia, P; Tenenbaum, J B",
+      "editors": "",
+      "publisher": "",
+      "year": 2017,
+      "volume": "21",
+      "issue": "9",
+      "first_page": "649",
+      "last_page": "665",
+      "container": "Trends in Cognitive Sciences",
+      "bib_id": 28,
+      "year_suffix": "",
+      "text_id": 307
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1016/j.erap.2020.100610",
+      "title": "Intuitive physics and cognitive algebra: A review",
+      "authors": "Vicovaro, M",
+      "editors": "",
+      "publisher": "",
+      "year": 2021,
+      "volume": "71",
+      "issue": "5",
+      "first_page": null,
+      "last_page": null,
+      "container": "European Review of Applied Psychology",
+      "bib_id": 29,
+      "year_suffix": "",
+      "text_id": 308
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1001/jama.2013.281053",
+      "title": "World Medical Association Declaration of Helsinki",
+      "authors": "",
+      "editors": "",
+      "publisher": "World Medical Association",
+      "year": 2013,
+      "volume": "310",
+      "issue": "20",
+      "first_page": "2191",
+      "last_page": "2194",
+      "container": "JAMA",
+      "bib_id": 30,
+      "year_suffix": "",
+      "text_id": 309
+    }
+  ],
+  "xref": [
+    {
+      "xref_id": 0,
+      "xref_type": "bib",
+      "contents": "(Adolph et al., 2010)",
+      "text_id": 23
+    },
+    {
+      "xref_id": 1,
+      "xref_type": "bib",
+      "contents": "Bargh, 1994)",
+      "text_id": 38
+    },
+    {
+      "xref_id": 2,
+      "xref_type": "bib",
+      "contents": "Battaglia et al. (2013)",
+      "text_id": 14
+    },
+    {
+      "xref_id": 2,
+      "xref_type": "bib",
+      "contents": "Battaglia et al. (2013)",
+      "text_id": 15
+    },
+    {
+      "xref_id": 2,
+      "xref_type": "bib",
+      "contents": "Battaglia et al. (2013)",
+      "text_id": null
+    },
+    {
+      "xref_id": 2,
+      "xref_type": "bib",
+      "contents": "Battaglia et al. (2013)",
+      "text_id": 18
+    },
+    {
+      "xref_id": 2,
+      "xref_type": "bib",
+      "contents": "Battaglia et al. (2013)",
+      "text_id": 19
+    },
+    {
+      "xref_id": 3,
+      "xref_type": "bib",
+      "contents": "(Benjamini & Hochberg, 1995)",
+      "text_id": 146
+    },
+    {
+      "xref_id": 4,
+      "xref_type": "bib",
+      "contents": "(Bramley et al., 2018;",
+      "text_id": 21
+    },
+    {
+      "xref_id": 5,
+      "xref_type": "bib",
+      "contents": "(Corneli & Vicovaro, 2007)",
+      "text_id": 215
+    },
+    {
+      "xref_id": 5,
+      "xref_type": "bib",
+      "contents": "(Corneli & Vicovaro, 2007)",
+      "text_id": 253
+    },
+    {
+      "xref_id": 6,
+      "xref_type": "bib",
+      "contents": "(Davis & Marcus, 2016;",
+      "text_id": 19
+    },
+    {
+      "xref_id": 7,
+      "xref_type": "bib",
+      "contents": "Fiehler & Karimpur, 2023)",
+      "text_id": 229
+    },
+    {
+      "xref_id": 8,
+      "xref_type": "bib",
+      "contents": "(Freud et al., 2018;",
+      "text_id": 40
+    },
+    {
+      "xref_id": 8,
+      "xref_type": "bib",
+      "contents": "(Freud et al., 2018;",
+      "text_id": 229
+    },
+    {
+      "xref_id": 9,
+      "xref_type": "bib",
+      "contents": "(Grierson & Carnahan, 2006;",
+      "text_id": 233
+    },
+    {
+      "xref_id": 9,
+      "xref_type": "bib",
+      "contents": "(Grierson & Carnahan, 2006;",
+      "text_id": null
+    },
+    {
+      "xref_id": 9,
+      "xref_type": "bib",
+      "contents": "Grierson and Carnahan (2006)",
+      "text_id": 233
+    },
+    {
+      "xref_id": 9,
+      "xref_type": "bib",
+      "contents": "Grierson and Carnahan (2006)",
+      "text_id": null
+    },
+    {
+      "xref_id": 10,
+      "xref_type": "bib",
+      "contents": "( Joh et al., 2007)",
+      "text_id": 22
+    },
+    {
+      "xref_id": 10,
+      "xref_type": "bib",
+      "contents": "Joh et al., 2007)",
+      "text_id": 233
+    },
+    {
+      "xref_id": 11,
+      "xref_type": "bib",
+      "contents": "( Johansson & Westling, 1984;",
+      "text_id": 3
+    },
+    {
+      "xref_id": 12,
+      "xref_type": "bib",
+      "contents": "(Kopiske et al., 2021;",
+      "text_id": null
+    },
+    {
+      "xref_id": 13,
+      "xref_type": "bib",
+      "contents": "Kubricht et al., 2017;",
+      "text_id": 14
+    },
+    {
+      "xref_id": 14,
+      "xref_type": "bib",
+      "contents": "(Lakens, 2013)",
+      "text_id": 148
+    },
+    {
+      "xref_id": 15,
+      "xref_type": "bib",
+      "contents": "Lederman & Klatzky, 1987)",
+      "text_id": 21
+    },
+    {
+      "xref_id": 15,
+      "xref_type": "bib",
+      "contents": "(Lederman & Klatzky, 1987)",
+      "text_id": 232
+    },
+    {
+      "xref_id": 16,
+      "xref_type": "bib",
+      "contents": "Ludwin-Peery et al., 2021)",
+      "text_id": 19
+    },
+    {
+      "xref_id": 17,
+      "xref_type": "bib",
+      "contents": "Matthis et al., 2018;",
+      "text_id": null
+    },
+    {
+      "xref_id": 18,
+      "xref_type": "bib",
+      "contents": "(McCloskey, 1983;",
+      "text_id": 15
+    },
+    {
+      "xref_id": 19,
+      "xref_type": "bib",
+      "contents": "(McIntyre et al., 2001;",
+      "text_id": 15
+    },
+    {
+      "xref_id": 20,
+      "xref_type": "bib",
+      "contents": "Neupärtl et al., 2020)",
+      "text_id": 15
+    },
+    {
+      "xref_id": 20,
+      "xref_type": "bib",
+      "contents": "Neupärtl et al., 2020)",
+      "text_id": 19
+    },
+    {
+      "xref_id": 21,
+      "xref_type": "bib",
+      "contents": "Paulun et al., 2016)",
+      "text_id": 3
+    },
+    {
+      "xref_id": 22,
+      "xref_type": "bib",
+      "contents": "(Peirce et al., 2019)",
+      "text_id": 95
+    },
+    {
+      "xref_id": 23,
+      "xref_type": "bib",
+      "contents": "Proffitt & Gilden, 1989)",
+      "text_id": 15
+    },
+    {
+      "xref_id": 24,
+      "xref_type": "bib",
+      "contents": "(Sanborn et al., 2013)",
+      "text_id": null
+    },
+    {
+      "xref_id": 26,
+      "xref_type": "bib",
+      "contents": "(Smith & Scott, 1996)",
+      "text_id": 5
+    },
+    {
+      "xref_id": 27,
+      "xref_type": "bib",
+      "contents": "Snow et al., 2011)",
+      "text_id": 40
+    },
+    {
+      "xref_id": 27,
+      "xref_type": "bib",
+      "contents": "Snow et al., 2011",
+      "text_id": 229
+    },
+    {
+      "xref_id": 28,
+      "xref_type": "bib",
+      "contents": "Ullman et al., 2017;",
+      "text_id": 14
+    },
+    {
+      "xref_id": 28,
+      "xref_type": "bib",
+      "contents": "Ullman et al., 2017;",
+      "text_id": 18
+    },
+    {
+      "xref_id": 28,
+      "xref_type": "bib",
+      "contents": "(Ullman et al., 2017)",
+      "text_id": 14
+    },
+    {
+      "xref_id": 28,
+      "xref_type": "bib",
+      "contents": "(Ullman et al., 2017)",
+      "text_id": 18
+    },
+    {
+      "xref_id": 29,
+      "xref_type": "bib",
+      "contents": "Vicovaro, 2021)",
+      "text_id": 14
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "1",
+      "text_id": null
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "S1",
+      "text_id": null
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "2",
+      "text_id": 61
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "2",
+      "text_id": null
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "2",
+      "text_id": null
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "S2",
+      "text_id": null
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "3",
+      "text_id": null
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "3",
+      "text_id": 164
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "3",
+      "text_id": 168
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "3",
+      "text_id": 170
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "3",
+      "text_id": 171
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "3",
+      "text_id": 174
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "3",
+      "text_id": null
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "4",
+      "text_id": null
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "5",
+      "text_id": 198
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "5",
+      "text_id": 200
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "5",
+      "text_id": null
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "5",
+      "text_id": null
+    },
+    {
+      "xref_id": null,
+      "xref_type": null,
+      "contents": "3",
+      "text_id": 85
+    }
+  ],
+  "figure": [
+    {
+      "figure_id": 1,
+      "section_id": 21,
+      "image": null,
+      "page_number": null
+    },
+    {
+      "figure_id": 2,
+      "section_id": 22,
+      "image": null,
+      "page_number": null
+    },
+    {
+      "figure_id": 3,
+      "section_id": 23,
+      "image": null,
+      "page_number": null
+    },
+    {
+      "figure_id": 4,
+      "section_id": 24,
+      "image": null,
+      "page_number": null
+    },
+    {
+      "figure_id": 5,
+      "section_id": 25,
+      "image": null,
+      "page_number": null
+    }
+  ],
+  "table": [],
+  "eq": [
+    {
+      "text_id": 53,
+      "grp_id": 1,
+      "lhs": "n",
+      "comp": "=",
+      "rhs": "15"
+    },
+    {
+      "text_id": 54,
+      "grp_id": 2,
+      "lhs": "age",
+      "comp": "=",
+      "rhs": "23.86"
+    },
+    {
+      "text_id": 54,
+      "grp_id": 2,
+      "lhs": "age",
+      "comp": "=",
+      "rhs": "5.50"
+    },
+    {
+      "text_id": 55,
+      "grp_id": 3,
+      "lhs": "age",
+      "comp": "=",
+      "rhs": "25.33"
+    },
+    {
+      "text_id": 55,
+      "grp_id": 3,
+      "lhs": "age",
+      "comp": "=",
+      "rhs": "7.70"
+    },
+    {
+      "text_id": 55,
+      "grp_id": 3,
+      "lhs": "age",
+      "comp": "=",
+      "rhs": "23.81"
+    },
+    {
+      "text_id": 55,
+      "grp_id": 3,
+      "lhs": "age",
+      "comp": "=",
+      "rhs": "2.96"
+    },
+    {
+      "text_id": 57,
+      "grp_id": 4,
+      "lhs": "age",
+      "comp": "=",
+      "rhs": "21.35"
+    },
+    {
+      "text_id": 57,
+      "grp_id": 4,
+      "lhs": "age",
+      "comp": "=",
+      "rhs": "3.57"
+    },
+    {
+      "text_id": 88,
+      "grp_id": 5,
+      "lhs": "SD",
+      "comp": "=",
+      "rhs": "0.85"
+    },
+    {
+      "text_id": 165,
+      "grp_id": 6,
+      "lhs": "F(1, 91)",
+      "comp": "=",
+      "rhs": "31.746"
+    },
+    {
+      "text_id": 165,
+      "grp_id": 6,
+      "lhs": "p",
+      "comp": "<",
+      "rhs": ".001"
+    },
+    {
+      "text_id": 166,
+      "grp_id": 7,
+      "lhs": "F(2, 182)",
+      "comp": "=",
+      "rhs": "18.759"
+    },
+    {
+      "text_id": 166,
+      "grp_id": 7,
+      "lhs": "p",
+      "comp": "<",
+      "rhs": ".001"
+    },
+    {
+      "text_id": 167,
+      "grp_id": 8,
+      "lhs": "F(4, 182)",
+      "comp": "=",
+      "rhs": "4.695"
+    },
+    {
+      "text_id": 167,
+      "grp_id": 8,
+      "lhs": "p",
+      "comp": "=",
+      "rhs": ".001"
+    },
+    {
+      "text_id": 169,
+      "grp_id": 9,
+      "lhs": "t(28)",
+      "comp": "=",
+      "rhs": "5.268"
+    },
+    {
+      "text_id": 169,
+      "grp_id": 9,
+      "lhs": "p",
+      "comp": "<",
+      "rhs": ".001"
+    },
+    {
+      "text_id": 169,
+      "grp_id": 9,
+      "lhs": "d",
+      "comp": "=",
+      "rhs": "0.982"
+    },
+    {
+      "text_id": 169,
+      "grp_id": 9,
+      "lhs": "t(33)",
+      "comp": "=",
+      "rhs": "2.543"
+    },
+    {
+      "text_id": 169,
+      "grp_id": 9,
+      "lhs": "p",
+      "comp": "=",
+      "rhs": ".016"
+    },
+    {
+      "text_id": 169,
+      "grp_id": 9,
+      "lhs": "d",
+      "comp": "=",
+      "rhs": "0.436"
+    },
+    {
+      "text_id": 169,
+      "grp_id": 9,
+      "lhs": "t(31)",
+      "comp": "=",
+      "rhs": "4.602"
+    },
+    {
+      "text_id": 169,
+      "grp_id": 9,
+      "lhs": "p",
+      "comp": "<",
+      "rhs": ".001"
+    },
+    {
+      "text_id": 169,
+      "grp_id": 9,
+      "lhs": "d",
+      "comp": "=",
+      "rhs": "0.851"
+    },
+    {
+      "text_id": 169,
+      "grp_id": 9,
+      "lhs": "t(28)",
+      "comp": "=",
+      "rhs": "0.101"
+    },
+    {
+      "text_id": 169,
+      "grp_id": 9,
+      "lhs": "p",
+      "comp": "=",
+      "rhs": ".920"
+    },
+    {
+      "text_id": 169,
+      "grp_id": 9,
+      "lhs": "d",
+      "comp": "=",
+      "rhs": "0.019"
+    },
+    {
+      "text_id": 169,
+      "grp_id": 9,
+      "lhs": "t(33)",
+      "comp": "=",
+      "rhs": "0.772"
+    },
+    {
+      "text_id": 169,
+      "grp_id": 9,
+      "lhs": "p",
+      "comp": "=",
+      "rhs": ".445"
+    },
+    {
+      "text_id": 169,
+      "grp_id": 9,
+      "lhs": "d",
+      "comp": "=",
+      "rhs": "0.132"
+    },
+    {
+      "text_id": 169,
+      "grp_id": 9,
+      "lhs": "t(31)",
+      "comp": "=",
+      "rhs": "1.663"
+    },
+    {
+      "text_id": 169,
+      "grp_id": 9,
+      "lhs": "p",
+      "comp": "=",
+      "rhs": ".106"
+    },
+    {
+      "text_id": 169,
+      "grp_id": 9,
+      "lhs": "d",
+      "comp": "=",
+      "rhs": "0.294"
+    },
+    {
+      "text_id": 170,
+      "grp_id": 10,
+      "lhs": "t(28)",
+      "comp": "=",
+      "rhs": "5.151"
+    },
+    {
+      "text_id": 170,
+      "grp_id": 10,
+      "lhs": "Wilcoxon",
+      "comp": "<",
+      "rhs": ".001"
+    },
+    {
+      "text_id": 170,
+      "grp_id": 10,
+      "lhs": "d",
+      "comp": "=",
+      "rhs": "0.956"
+    },
+    {
+      "text_id": 170,
+      "grp_id": 10,
+      "lhs": "t(33)",
+      "comp": "=",
+      "rhs": "2.517"
+    },
+    {
+      "text_id": 170,
+      "grp_id": 10,
+      "lhs": "Wilcoxon",
+      "comp": "=",
+      "rhs": ".021"
+    },
+    {
+      "text_id": 170,
+      "grp_id": 10,
+      "lhs": "d",
+      "comp": "=",
+      "rhs": "0.432"
+    },
+    {
+      "text_id": 170,
+      "grp_id": 10,
+      "lhs": "t(31)",
+      "comp": "=",
+      "rhs": "3.503"
+    },
+    {
+      "text_id": 170,
+      "grp_id": 10,
+      "lhs": "p",
+      "comp": "=",
+      "rhs": ".001"
+    },
+    {
+      "text_id": 170,
+      "grp_id": 10,
+      "lhs": "d",
+      "comp": "=",
+      "rhs": "0.619"
+    },
+    {
+      "text_id": 171,
+      "grp_id": 11,
+      "lhs": "t(33)",
+      "comp": "=",
+      "rhs": "3.074"
+    },
+    {
+      "text_id": 171,
+      "grp_id": 11,
+      "lhs": "p",
+      "comp": "=",
+      "rhs": ".004"
+    },
+    {
+      "text_id": 171,
+      "grp_id": 11,
+      "lhs": "d",
+      "comp": "=",
+      "rhs": "0.527"
+    },
+    {
+      "text_id": 171,
+      "grp_id": 11,
+      "lhs": "t(33)",
+      "comp": "=",
+      "rhs": "4.381"
+    },
+    {
+      "text_id": 171,
+      "grp_id": 11,
+      "lhs": "p",
+      "comp": "<",
+      "rhs": ".001"
+    },
+    {
+      "text_id": 171,
+      "grp_id": 11,
+      "lhs": "d",
+      "comp": "=",
+      "rhs": "0.751"
+    },
+    {
+      "text_id": 171,
+      "grp_id": 11,
+      "lhs": "t(30)",
+      "comp": "=",
+      "rhs": "4.517"
+    },
+    {
+      "text_id": 171,
+      "grp_id": 11,
+      "lhs": "p",
+      "comp": "<",
+      "rhs": ".001"
+    },
+    {
+      "text_id": 171,
+      "grp_id": 11,
+      "lhs": "d",
+      "comp": "=",
+      "rhs": "0.811"
+    },
+    {
+      "text_id": 171,
+      "grp_id": 11,
+      "lhs": "t(30)",
+      "comp": "=",
+      "rhs": "6.34"
+    },
+    {
+      "text_id": 171,
+      "grp_id": 11,
+      "lhs": "p",
+      "comp": "<",
+      "rhs": ".001"
+    },
+    {
+      "text_id": 171,
+      "grp_id": 11,
+      "lhs": "d",
+      "comp": "=",
+      "rhs": "1.084"
+    },
+    {
+      "text_id": 171,
+      "grp_id": 11,
+      "lhs": "t(29)",
+      "comp": "=",
+      "rhs": "0.475"
+    },
+    {
+      "text_id": 171,
+      "grp_id": 11,
+      "lhs": "p",
+      "comp": "=",
+      "rhs": ".638"
+    },
+    {
+      "text_id": 171,
+      "grp_id": 11,
+      "lhs": "d",
+      "comp": "=",
+      "rhs": "0.087"
+    },
+    {
+      "text_id": 171,
+      "grp_id": 11,
+      "lhs": "t(29)",
+      "comp": "=",
+      "rhs": "1.929"
+    },
+    {
+      "text_id": 171,
+      "grp_id": 11,
+      "lhs": "Wilcoxon",
+      "comp": "=",
+      "rhs": ".006"
+    },
+    {
+      "text_id": 171,
+      "grp_id": 11,
+      "lhs": "d",
+      "comp": "=",
+      "rhs": "0.352"
+    },
+    {
+      "text_id": 172,
+      "grp_id": 12,
+      "lhs": "t(29)",
+      "comp": "=",
+      "rhs": "3.034"
+    },
+    {
+      "text_id": 172,
+      "grp_id": 12,
+      "lhs": "Wilcoxon",
+      "comp": "=",
+      "rhs": ".003"
+    },
+    {
+      "text_id": 172,
+      "grp_id": 12,
+      "lhs": "d",
+      "comp": "=",
+      "rhs": "0.554"
+    },
+    {
+      "text_id": 172,
+      "grp_id": 12,
+      "lhs": "t(33)",
+      "comp": "=",
+      "rhs": "3.054"
+    },
+    {
+      "text_id": 172,
+      "grp_id": 12,
+      "lhs": "p",
+      "comp": "=",
+      "rhs": ".004"
+    },
+    {
+      "text_id": 172,
+      "grp_id": 12,
+      "lhs": "d",
+      "comp": "=",
+      "rhs": "0.524"
+    },
+    {
+      "text_id": 172,
+      "grp_id": 12,
+      "lhs": "t(30)",
+      "comp": "=",
+      "rhs": "1.118"
+    },
+    {
+      "text_id": 172,
+      "grp_id": 12,
+      "lhs": "p",
+      "comp": "=",
+      "rhs": ".273"
+    },
+    {
+      "text_id": 172,
+      "grp_id": 12,
+      "lhs": "d",
+      "comp": "=",
+      "rhs": "0.201"
+    },
+    {
+      "text_id": 173,
+      "grp_id": 13,
+      "lhs": "t(29)",
+      "comp": "=",
+      "rhs": "1.212"
+    },
+    {
+      "text_id": 173,
+      "grp_id": 13,
+      "lhs": "Wilcoxon",
+      "comp": "=",
+      "rhs": ".280"
+    },
+    {
+      "text_id": 173,
+      "grp_id": 13,
+      "lhs": "d",
+      "comp": "=",
+      "rhs": "0.221"
+    },
+    {
+      "text_id": 173,
+      "grp_id": 13,
+      "lhs": "t(33)",
+      "comp": "=",
+      "rhs": "0.359"
+    },
+    {
+      "text_id": 173,
+      "grp_id": 13,
+      "lhs": "Wilcoxon",
+      "comp": "=",
+      "rhs": ".722"
+    },
+    {
+      "text_id": 173,
+      "grp_id": 13,
+      "lhs": "d",
+      "comp": "=",
+      "rhs": "0.061"
+    },
+    {
+      "text_id": 173,
+      "grp_id": 13,
+      "lhs": "t(30)",
+      "comp": "=",
+      "rhs": "0.696"
+    },
+    {
+      "text_id": 173,
+      "grp_id": 13,
+      "lhs": "p",
+      "comp": "=",
+      "rhs": ".492"
+    },
+    {
+      "text_id": 173,
+      "grp_id": 13,
+      "lhs": "d",
+      "comp": "=",
+      "rhs": "0.125"
+    },
+    {
+      "text_id": 175,
+      "grp_id": 14,
+      "lhs": "t(29)",
+      "comp": "=",
+      "rhs": "4.663"
+    },
+    {
+      "text_id": 175,
+      "grp_id": 14,
+      "lhs": "p",
+      "comp": "<",
+      "rhs": ".001"
+    },
+    {
+      "text_id": 175,
+      "grp_id": 14,
+      "lhs": "d",
+      "comp": "=",
+      "rhs": "0.851"
+    },
+    {
+      "text_id": 175,
+      "grp_id": 14,
+      "lhs": "t(33)",
+      "comp": "=",
+      "rhs": "4.424"
+    },
+    {
+      "text_id": 175,
+      "grp_id": 14,
+      "lhs": "p",
+      "comp": "<",
+      "rhs": ".001"
+    },
+    {
+      "text_id": 175,
+      "grp_id": 14,
+      "lhs": "d",
+      "comp": "=",
+      "rhs": "0.759"
+    },
+    {
+      "text_id": 175,
+      "grp_id": 14,
+      "lhs": "t(31)",
+      "comp": "=",
+      "rhs": "5.111"
+    },
+    {
+      "text_id": 175,
+      "grp_id": 14,
+      "lhs": "p",
+      "comp": "=",
+      "rhs": ".001"
+    },
+    {
+      "text_id": 175,
+      "grp_id": 14,
+      "lhs": "d",
+      "comp": "=",
+      "rhs": "0.904"
+    },
+    {
+      "text_id": 176,
+      "grp_id": 15,
+      "lhs": "t(33)",
+      "comp": "=",
+      "rhs": "5.495"
+    },
+    {
+      "text_id": 176,
+      "grp_id": 15,
+      "lhs": "p",
+      "comp": "<",
+      "rhs": ".001"
+    },
+    {
+      "text_id": 176,
+      "grp_id": 15,
+      "lhs": "d",
+      "comp": "=",
+      "rhs": "0.942"
+    },
+    {
+      "text_id": 176,
+      "grp_id": 15,
+      "lhs": "t(31)",
+      "comp": "=",
+      "rhs": "5.339"
+    },
+    {
+      "text_id": 176,
+      "grp_id": 15,
+      "lhs": "p",
+      "comp": "<",
+      "rhs": ".001"
+    },
+    {
+      "text_id": 176,
+      "grp_id": 15,
+      "lhs": "d",
+      "comp": "=",
+      "rhs": "0.851"
+    },
+    {
+      "text_id": 176,
+      "grp_id": 15,
+      "lhs": "t(29)",
+      "comp": "=",
+      "rhs": "1.232"
+    },
+    {
+      "text_id": 176,
+      "grp_id": 15,
+      "lhs": "p",
+      "comp": "=",
+      "rhs": ".228"
+    },
+    {
+      "text_id": 176,
+      "grp_id": 15,
+      "lhs": "d",
+      "comp": "=",
+      "rhs": "0.225"
+    },
+    {
+      "text_id": 177,
+      "grp_id": 16,
+      "lhs": "t(29)",
+      "comp": "=",
+      "rhs": "5.452"
+    },
+    {
+      "text_id": 177,
+      "grp_id": 16,
+      "lhs": "p",
+      "comp": "<",
+      "rhs": ".001"
+    },
+    {
+      "text_id": 177,
+      "grp_id": 16,
+      "lhs": "d",
+      "comp": "=",
+      "rhs": "0.995"
+    },
+    {
+      "text_id": 177,
+      "grp_id": 16,
+      "lhs": "t(33)",
+      "comp": "=",
+      "rhs": "3.009"
+    },
+    {
+      "text_id": 177,
+      "grp_id": 16,
+      "lhs": "p",
+      "comp": "=",
+      "rhs": ".005"
+    },
+    {
+      "text_id": 177,
+      "grp_id": 16,
+      "lhs": "d",
+      "comp": "=",
+      "rhs": "0.516"
+    },
+    {
+      "text_id": 177,
+      "grp_id": 16,
+      "lhs": "t(31)",
+      "comp": "=",
+      "rhs": "1.606"
+    },
+    {
+      "text_id": 177,
+      "grp_id": 16,
+      "lhs": "p",
+      "comp": "=",
+      "rhs": ".118"
+    },
+    {
+      "text_id": 177,
+      "grp_id": 16,
+      "lhs": "d",
+      "comp": "=",
+      "rhs": "0.284"
+    },
+    {
+      "text_id": 178,
+      "grp_id": 17,
+      "lhs": "t(29)",
+      "comp": "=",
+      "rhs": "-3.399"
+    },
+    {
+      "text_id": 178,
+      "grp_id": 17,
+      "lhs": "Wilcoxon",
+      "comp": "=",
+      "rhs": ".001"
+    },
+    {
+      "text_id": 178,
+      "grp_id": 17,
+      "lhs": "d",
+      "comp": "=",
+      "rhs": "0.621"
+    },
+    {
+      "text_id": 178,
+      "grp_id": 17,
+      "lhs": "t(33)",
+      "comp": "=",
+      "rhs": "-1.488"
+    },
+    {
+      "text_id": 178,
+      "grp_id": 17,
+      "lhs": "p",
+      "comp": "=",
+      "rhs": "0.146"
+    },
+    {
+      "text_id": 178,
+      "grp_id": 17,
+      "lhs": "d",
+      "comp": "=",
+      "rhs": "0.255"
+    },
+    {
+      "text_id": 178,
+      "grp_id": 17,
+      "lhs": "t(31)",
+      "comp": "=",
+      "rhs": "-2.254"
+    },
+    {
+      "text_id": 178,
+      "grp_id": 17,
+      "lhs": "Wilcoxon",
+      "comp": "=",
+      "rhs": ".041"
+    },
+    {
+      "text_id": 178,
+      "grp_id": 17,
+      "lhs": "d",
+      "comp": "=",
+      "rhs": "0.398"
+    },
+    {
+      "text_id": 180,
+      "grp_id": 18,
+      "lhs": "t(60)",
+      "comp": "=",
+      "rhs": "2.82"
+    },
+    {
+      "text_id": 180,
+      "grp_id": 18,
+      "lhs": "p",
+      "comp": "=",
+      "rhs": ".007"
+    },
+    {
+      "text_id": 180,
+      "grp_id": 18,
+      "lhs": "d",
+      "comp": "=",
+      "rhs": "0.72"
+    },
+    {
+      "text_id": 180,
+      "grp_id": 18,
+      "lhs": "t(62)",
+      "comp": "=",
+      "rhs": "2.46"
+    },
+    {
+      "text_id": 180,
+      "grp_id": 18,
+      "lhs": "p",
+      "comp": "=",
+      "rhs": ".017"
+    },
+    {
+      "text_id": 180,
+      "grp_id": 18,
+      "lhs": "d",
+      "comp": "=",
+      "rhs": "0.62"
+    },
+    {
+      "text_id": 181,
+      "grp_id": 19,
+      "lhs": "t(64)",
+      "comp": "=",
+      "rhs": "0.66"
+    },
+    {
+      "text_id": 181,
+      "grp_id": 19,
+      "lhs": "p",
+      "comp": "=",
+      "rhs": ".510"
+    },
+    {
+      "text_id": 181,
+      "grp_id": 19,
+      "lhs": "d",
+      "comp": "=",
+      "rhs": "0.16"
+    },
+    {
+      "text_id": 278,
+      "grp_id": 20,
+      "lhs": "r",
+      "comp": "=",
+      "rhs": "0.59"
+    },
+    {
+      "text_id": 278,
+      "grp_id": 20,
+      "lhs": "p",
+      "comp": "<",
+      "rhs": "0.001"
+    },
+    {
+      "text_id": 278,
+      "grp_id": 20,
+      "lhs": "r",
+      "comp": "=",
+      "rhs": "0.66"
+    },
+    {
+      "text_id": 278,
+      "grp_id": 20,
+      "lhs": "p",
+      "comp": "<",
+      "rhs": "0.001"
+    },
+    {
+      "text_id": 278,
+      "grp_id": 20,
+      "lhs": "r",
+      "comp": "=",
+      "rhs": "0.42"
+    },
+    {
+      "text_id": 278,
+      "grp_id": 20,
+      "lhs": "p",
+      "comp": "<",
+      "rhs": "0.001"
+    },
+    {
+      "text_id": 278,
+      "grp_id": 20,
+      "lhs": "r",
+      "comp": "=",
+      "rhs": "0.44"
+    },
+    {
+      "text_id": 278,
+      "grp_id": 20,
+      "lhs": "p",
+      "comp": "<",
+      "rhs": "0.001"
+    },
+    {
+      "text_id": 278,
+      "grp_id": 20,
+      "lhs": "r",
+      "comp": "=",
+      "rhs": "0.26"
+    },
+    {
+      "text_id": 278,
+      "grp_id": 20,
+      "lhs": "p",
+      "comp": "=",
+      "rhs": "0.062"
+    },
+    {
+      "text_id": 278,
+      "grp_id": 20,
+      "lhs": "r",
+      "comp": "=",
+      "rhs": "0.34"
+    },
+    {
+      "text_id": 278,
+      "grp_id": 20,
+      "lhs": "p",
+      "comp": "=",
+      "rhs": "0.042"
+    },
+    {
+      "text_id": 278,
+      "grp_id": 20,
+      "lhs": "r",
+      "comp": "=",
+      "rhs": "0.26"
+    },
+    {
+      "text_id": 278,
+      "grp_id": 20,
+      "lhs": "p",
+      "comp": "=",
+      "rhs": "0.038"
+    },
+    {
+      "text_id": 278,
+      "grp_id": 20,
+      "lhs": "r",
+      "comp": "=",
+      "rhs": "0.23"
+    },
+    {
+      "text_id": 278,
+      "grp_id": 20,
+      "lhs": "p",
+      "comp": "=",
+      "rhs": "0.061"
+    },
+    {
+      "text_id": 224,
+      "grp_id": 21,
+      "lhs": "p",
+      "comp": "<",
+      "rhs": ".05"
+    }
+  ]
+}

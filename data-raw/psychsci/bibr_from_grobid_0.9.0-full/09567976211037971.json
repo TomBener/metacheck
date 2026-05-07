@@ -1,0 +1,4365 @@
+{
+  "paper_id": "09567976211037971",
+  "info": [
+    {
+      "title": "Acting Like a Baby Boomer? Birth-Cohort Differences in Adults’ Personality Trajectories During the Last Half a Century",
+      "keywords": ["personality development", "cohort effects", "historical change", "Seattle Longitudinal Study", "multilevel growth-curve modeling", "open materials"],
+      "doi": "10.1177/09567976211037971",
+      "file_hash": "178312eca466f59a",
+      "input_format": "grobid 0.9.0",
+      "file_name": "data-raw/psychsci/grobid_0.9.0-full/09567976211037971.xml",
+      "bibr_version": "10.0",
+      "paper_type": "unknown",
+      "paper_type_confidence": 0,
+      "oecd_l1": null,
+      "oecd_l2": null,
+      "oecd_confidence": null
+    }
+  ],
+  "author": [
+    {
+      "author_id": 1,
+      "given": "Naemi",
+      "family": "Brandt",
+      "affiliation": "Department of Psychology Educational Department of Psychology University of Hamburg University of Hamburg",
+      "email": "naemi.brandt@uni-hamburg.de",
+      "corresponding": false,
+      "orcid": "0000-0003-1221-9117",
+      "role": []
+    },
+    {
+      "author_id": 2,
+      "given": "Johanna",
+      "family": "Drewelies",
+      "affiliation": "Department of Psychology Humboldt University of Berlin",
+      "email": "",
+      "corresponding": false,
+      "orcid": "0000-0002-3774-2169",
+      "role": []
+    },
+    {
+      "author_id": 3,
+      "given": "Sherry",
+      "family": "Willis",
+      "affiliation": "Department of Psychiatry and Behavioral Sciences University of Washington",
+      "email": "",
+      "corresponding": false,
+      "orcid": "0000-0002-1404-179X",
+      "role": []
+    },
+    {
+      "author_id": 4,
+      "given": "K",
+      "family": "Schaie",
+      "affiliation": "Department of Psychiatry and Behavioral Sciences University of Washington",
+      "email": "",
+      "corresponding": false,
+      "orcid": "",
+      "role": []
+    },
+    {
+      "author_id": 5,
+      "given": "Nilam",
+      "family": "Ram",
+      "affiliation": "Department of Communication Stanford University",
+      "email": "",
+      "corresponding": false,
+      "orcid": "0000-0003-1671-5257",
+      "role": []
+    },
+    {
+      "author_id": 6,
+      "given": "Denis",
+      "family": "Gerstorf",
+      "affiliation": "Department of Psychology Humboldt University of Berlin",
+      "email": "",
+      "corresponding": false,
+      "orcid": "0000-0002-2133-9498",
+      "role": []
+    },
+    {
+      "author_id": 7,
+      "given": "Jenny",
+      "family": "Wagner",
+      "affiliation": "Department of Psychology Educational Department of Psychology University of Hamburg University of Hamburg",
+      "email": "",
+      "corresponding": false,
+      "orcid": "0000-0001-7507-9620",
+      "role": []
+    }
+  ],
+  "text": [
+    {
+      "text_id": 1,
+      "paragraph_id": 1,
+      "section_id": 0,
+      "text": "Terms such as \"Baby Boomer\" or \"Generation X\" make us believe that people born at a specific time in history differ in ways that make each generation unique, describable, and predictable.",
+      "page_number": null
+    },
+    {
+      "text_id": 2,
+      "paragraph_id": 1,
+      "section_id": 0,
+      "text": "The Big Five personality traits (conscientiousness, agreeableness, neuroticism, extraversion, and openness to experience) provide a well-established integrative framework that captures interindividual differences in human acting, feeling, and thinking ( John et al., 2008) that are related to key life outcomes such as longevity, income, and happiness (Soto, 2019).",
+      "page_number": null
+    },
+    {
+      "text_id": 3,
+      "paragraph_id": 1,
+      "section_id": 0,
+      "text": "However, beyond the college years, we know little about how personality differs across generational cohorts.",
+      "page_number": null
+    },
+    {
+      "text_id": 4,
+      "paragraph_id": 1,
+      "section_id": 0,
+      "text": "Research has demonstrated that the Big Five traits evince distinct developmental trajectories across adulthood.",
+      "page_number": null
+    },
+    {
+      "text_id": 5,
+      "paragraph_id": 1,
+      "section_id": 0,
+      "text": "For example, young adults invest efforts and resources into conventional social roles and thereby become more responsible and productive, as indexed by age-related increases in maturity-related traits (higher 1037971P SSXXX10.",
+      "page_number": null
+    },
+    {
+      "text_id": 6,
+      "paragraph_id": 3,
+      "section_id": 1,
+      "text": "conscientiousness and agreeableness and lower neuroticism; social investment; Roberts & Nickel, 2017).",
+      "page_number": null
+    },
+    {
+      "text_id": 7,
+      "paragraph_id": 3,
+      "section_id": 1,
+      "text": "It remains an open question, though, whether the developmental trajectory of such personality characteristics is modulated by historical context.",
+      "page_number": null
+    },
+    {
+      "text_id": 8,
+      "paragraph_id": 3,
+      "section_id": 1,
+      "text": "For example, is Generation X's conscientiousness increasing more rapidly than Baby Boomers' conscientiousness?",
+      "page_number": null
+    },
+    {
+      "text_id": 9,
+      "paragraph_id": 3,
+      "section_id": 1,
+      "text": "This study used rich longitudinal data from multiple cohorts to examine whether and how age-related changes in Big Five personality traits in adulthood and old age differ across generations.",
+      "page_number": null
+    },
+    {
+      "text_id": 10,
+      "paragraph_id": 5,
+      "section_id": 2,
+      "text": "According to transactional models of human development (Baltes et al., 2006;Roberts & Nickel, 2017), levels of functioning and change in individual characteristics are shaped by genetically mediated age-graded influences and sociohistorical contexts (Elder, 1974;Schaie, 1965).",
+      "page_number": null
+    },
+    {
+      "text_id": 11,
+      "paragraph_id": 5,
+      "section_id": 2,
+      "text": "In the realm of personality, we argue that maturation and social investment jointly propel how society and the historical times people are living in shape personality characteristics in at least four important ways.",
+      "page_number": null
+    },
+    {
+      "text_id": 12,
+      "paragraph_id": 6,
+      "section_id": 2,
+      "text": "First, historically changing societal norms and expectations can alter what people value and desire, which then may lead to historical changes in social investments (Hülür, 2017).",
+      "page_number": null
+    },
+    {
+      "text_id": 13,
+      "paragraph_id": 6,
+      "section_id": 2,
+      "text": "For instance, later-born cohorts in Western societies are often characterized by more individualized goals than earlier-born cohorts (Krings et al., 2008).",
+      "page_number": null
+    },
+    {
+      "text_id": 14,
+      "paragraph_id": 6,
+      "section_id": 2,
+      "text": "Given this shift, work-related goals such as the realization of one's own career might take priority over family goals.",
+      "page_number": null
+    },
+    {
+      "text_id": 15,
+      "paragraph_id": 6,
+      "section_id": 2,
+      "text": "As a consequence, work-related traits might be particularly demanded and fostered.",
+      "page_number": null
+    },
+    {
+      "text_id": 16,
+      "paragraph_id": 6,
+      "section_id": 2,
+      "text": "Especially for women, the significance of specific roles might have changed across time, and thus demands and opportunities for individuals to choose these roles have changed as well (George et al., 2011).",
+      "page_number": null
+    },
+    {
+      "text_id": 17,
+      "paragraph_id": 6,
+      "section_id": 2,
+      "text": "In line with this argument, it is likely that later-born cohorts show distinct levels of maturity-related traits.",
+      "page_number": null
+    },
+    {
+      "text_id": 18,
+      "paragraph_id": 6,
+      "section_id": 2,
+      "text": "The first metaanalytic evidence indeed showed that later-born cohorts showed higher levels of perfectionism (one facet of conscientiousness) than earlier-born cohorts (Curran & Hill, 2019).",
+      "page_number": null
+    },
+    {
+      "text_id": 19,
+      "paragraph_id": 6,
+      "section_id": 2,
+      "text": "Similarly, between 1982 and 2007, levels of conscientiousness and agreeableness increased in same-age college freshmen, and levels of neuroticism decreased (Smits et al., 2011).",
+      "page_number": null
+    },
+    {
+      "text_id": 20,
+      "paragraph_id": 7,
+      "section_id": 2,
+      "text": "Second, when societal circumstances change, the transition point into new social roles and necessary investments might also change.",
+      "page_number": null
+    },
+    {
+      "text_id": 21,
+      "paragraph_id": 7,
+      "section_id": 2,
+      "text": "To illustrate, because people spend more years in formal education today (Blair et al., 2005), the transition points of job-market entry and of family formation are delayed (Arnett, 2000).",
+      "page_number": null
+    },
+    {
+      "text_id": 22,
+      "paragraph_id": 7,
+      "section_id": 2,
+      "text": "Such transitions are associated with changes in personality; for instance, conscientiousness increases when people enter the labor market (Specht et al., 2011).",
+      "page_number": null
+    },
+    {
+      "text_id": 23,
+      "paragraph_id": 7,
+      "section_id": 2,
+      "text": "As a consequence, we assume that developmental trends in maturity-related personality traits are also shifted.",
+      "page_number": null
+    },
+    {
+      "text_id": 24,
+      "paragraph_id": 7,
+      "section_id": 2,
+      "text": "For example, later-born cohorts show delayed increases in conscientiousness.",
+      "page_number": null
+    },
+    {
+      "text_id": 25,
+      "paragraph_id": 7,
+      "section_id": 2,
+      "text": "Initial evidence in line with this expectation has been obtained in crosscultural research finding that maturity-related traits do indeed differ in accordance with adopted adult roles (Bleidorn et al., 2013).",
+      "page_number": null
+    },
+    {
+      "text_id": 26,
+      "paragraph_id": 8,
+      "section_id": 2,
+      "text": "Third, historical changes in perceived control can alter social-investment efforts across cohorts.",
+      "page_number": null
+    },
+    {
+      "text_id": 27,
+      "paragraph_id": 8,
+      "section_id": 2,
+      "text": "Previous research has found that later-born cohorts report higher levels of internal control than earlier-born cohorts and maintain these higher levels into old age (Drewelies et al., 2018).",
+      "page_number": null
+    },
+    {
+      "text_id": 28,
+      "paragraph_id": 8,
+      "section_id": 2,
+      "text": "Trusting one's own agency and believing that change is feasible are assumed to be prerequisites for self-regulated personality development (Hennecke et al., 2014).",
+      "page_number": null
+    },
+    {
+      "text_id": 29,
+      "paragraph_id": 8,
+      "section_id": 2,
+      "text": "Historical changes in control beliefs might thus enable later-born cohorts to invest into social roles more persistently than earlier-born cohorts, potentially resulting in higher levels of and steeper increases in the agency-related traits of extraversion and openness in later-born cohorts (Du et al., 2021).",
+      "page_number": null
+    },
+    {
+      "text_id": 30,
+      "paragraph_id": 10,
+      "section_id": 3,
+      "text": "How people respond to, perceive, and think about their world changes with shifting environmental conditions, opportunity structures, and constraints, sometimes with substantial individual and societal consequences.",
+      "page_number": null
+    },
+    {
+      "text_id": 31,
+      "paragraph_id": 10,
+      "section_id": 3,
+      "text": "Yet little is known about how personality traits-defined as individual differences in how people think, feel, and act-change with historical time, particularly after young adulthood.",
+      "page_number": null
+    },
+    {
+      "text_id": 32,
+      "paragraph_id": 10,
+      "section_id": 3,
+      "text": "We investigated whether people born between 1883 and 1976 differ in how their personality traits develop as they move across adulthood.",
+      "page_number": null
+    },
+    {
+      "text_id": 33,
+      "paragraph_id": 10,
+      "section_id": 3,
+      "text": "We found that later-born people were less agreeable and neurotic but more extraverted and open than their same-age, earlier-born peers.",
+      "page_number": null
+    },
+    {
+      "text_id": 34,
+      "paragraph_id": 10,
+      "section_id": 3,
+      "text": "Later-born people also experienced steeper increases in agreeableness across time.",
+      "page_number": null
+    },
+    {
+      "text_id": 35,
+      "paragraph_id": 10,
+      "section_id": 3,
+      "text": "Some of these cohort differences were related to historical changes in education and gender-related social roles.",
+      "page_number": null
+    },
+    {
+      "text_id": 36,
+      "paragraph_id": 10,
+      "section_id": 3,
+      "text": "This work helps us better understand how societal change can shape what people need, value, and desire, and they refute overly generalized stereotypes that stigmatize people born at specific historical times.",
+      "page_number": null
+    },
+    {
+      "text_id": 37,
+      "paragraph_id": 11,
+      "section_id": 3,
+      "text": "Fourth, historical improvements in other key areas of life, such as health and cognitive functioning (Gerstorf et al., 2011), may open up more possibilities for adopting new roles, particularly later in life.",
+      "page_number": null
+    },
+    {
+      "text_id": 38,
+      "paragraph_id": 11,
+      "section_id": 3,
+      "text": "To illustrate, empirical studies have found that good health buffers age-related increases in neuroticism and decreases in extraversion (Wagner et al., 2016).",
+      "page_number": null
+    },
+    {
+      "text_id": 39,
+      "paragraph_id": 11,
+      "section_id": 3,
+      "text": "Scholars have argued that these late-life personality changes mirror people's adaptations to age-related losses (Mueller et al., 2017).",
+      "page_number": null
+    },
+    {
+      "text_id": 40,
+      "paragraph_id": 11,
+      "section_id": 3,
+      "text": "It is thus possible that the onset of health-related changes in personality is delayed among later-born cohorts because of historically improved health.",
+      "page_number": null
+    },
+    {
+      "text_id": 41,
+      "paragraph_id": 11,
+      "section_id": 3,
+      "text": "Consistent with this possibility, research has shown that later-born cohorts of middle-age and older adults show higher levels of extraversion (Mroczek & Spiro, 2003;Twenge, 2001) and lower levels of neuroticism (Terracciano et al., 2005), as well as more pronounced old-age declines in neuroticism (Mroczek & Spiro, 2003).",
+      "page_number": null
+    },
+    {
+      "text_id": 42,
+      "paragraph_id": 13,
+      "section_id": 4,
+      "text": "We investigated cohort-related differences in personality trajectories across 50 years.",
+      "page_number": null
+    },
+    {
+      "text_id": 43,
+      "paragraph_id": 13,
+      "section_id": 4,
+      "text": "First, we examined historical changes in trait levels, asking whether people from different cohorts differ, for instance, in how conscientious, agreeable, or extraverted they are.",
+      "page_number": null
+    },
+    {
+      "text_id": 44,
+      "paragraph_id": 13,
+      "section_id": 4,
+      "text": "Second, we complemented this view by studying within-person developmental trajectories of personality traits to investigate cohort-related differences in trait change.",
+      "page_number": null
+    },
+    {
+      "text_id": 45,
+      "paragraph_id": 13,
+      "section_id": 4,
+      "text": "Drawing on the four assumptions of sociohistorical changes outlined above, we hypothesized role-and time-shifted social-investment effects on historical change in Big Five traits: Later-born cohorts invest strongly in individualized, work-related goals, resulting in higher values in maturation-related traits.",
+      "page_number": null
+    },
+    {
+      "text_id": 46,
+      "paragraph_id": 13,
+      "section_id": 4,
+      "text": "These differences might be more pronounced in women because of stronger shifts in female social roles over the past decades.",
+      "page_number": null
+    },
+    {
+      "text_id": 47,
+      "paragraph_id": 13,
+      "section_id": 4,
+      "text": "Furthermore, we explored whether there are more pronounced cohort-related differences at some ages because of time-shifted social investment and stronger benefits from historical changes (i.e., in education and health).",
+      "page_number": null
+    },
+    {
+      "text_id": 48,
+      "paragraph_id": 13,
+      "section_id": 4,
+      "text": "Regarding change patterns, we expected delayed but steeper changes in maturity-related traits (i.e., increases in conscientiousness and agreeableness) for later-born cohorts.",
+      "page_number": null
+    },
+    {
+      "text_id": 49,
+      "paragraph_id": 13,
+      "section_id": 4,
+      "text": "We also expected higher levels and steeper increases of agency-related traits (extraversion and openness) in later-born cohorts.",
+      "page_number": null
+    },
+    {
+      "text_id": 50,
+      "paragraph_id": 13,
+      "section_id": 4,
+      "text": "We furthermore explored whether these cohort-related differences in change trajectories are moderated by age.",
+      "page_number": null
+    },
+    {
+      "text_id": 51,
+      "paragraph_id": 15,
+      "section_id": 5,
+      "text": "Ethics approval for the study was granted by the University of Washington (Budget No. 61-2960, electronic private access code [ePAC] No.",
+      "page_number": null
+    },
+    {
+      "text_id": 52,
+      "paragraph_id": 15,
+      "section_id": 5,
+      "text": "PAC160797).",
+      "page_number": null
+    },
+    {
+      "text_id": 53,
+      "paragraph_id": 15,
+      "section_id": 5,
+      "text": "The Seattle Longitudinal Study (SLS) data have been published previously in a great variety of research, primarily on adult intelligence development (see Schaie, 2013, for an overview of this work).",
+      "page_number": null
+    },
+    {
+      "text_id": 54,
+      "paragraph_id": 15,
+      "section_id": 5,
+      "text": "No previous studies have used the Test of Behavioral Rigidity (TBR) scales of the SLS to study cohort effects in personality change.",
+      "page_number": null
+    },
+    {
+      "text_id": 55,
+      "paragraph_id": 17,
+      "section_id": 6,
+      "text": "The SLS (Schaie, 2013), a long-running study of cognitive and psychosocial development, collected data from age-heterogenous longitudinal samples in the Seattle, Washington, metropolitan area every 7th year between 1956and 2012.",
+      "page_number": null
+    },
+    {
+      "text_id": 56,
+      "paragraph_id": 17,
+      "section_id": 6,
+      "text": "Personality was assessed in 1963, 1970, 1977, 1984, 1991, 1998, 2005, 2008, and 2012.",
+      "page_number": null
+    },
+    {
+      "text_id": 57,
+      "paragraph_id": 17,
+      "section_id": 6,
+      "text": "In total, 4,732 participants (age: M = 52.93 years, SD = 16.69; 53% female) provided 11,770 reports about their personality (the age distribution at baseline [from 19-91 years old] is shown in Fig.",
+      "page_number": null
+    },
+    {
+      "text_id": 58,
+      "paragraph_id": 17,
+      "section_id": 6,
+      "text": "1).",
+      "page_number": null
+    },
+    {
+      "text_id": 59,
+      "paragraph_id": 17,
+      "section_id": 6,
+      "text": "Data collection was restricted to the original participating population assessed at the first study wave.",
+      "page_number": null
+    },
+    {
+      "text_id": 60,
+      "paragraph_id": 17,
+      "section_id": 6,
+      "text": "Overall, the sample was well educated, having an average of 14.17 years (SD = 3.25, range = 3-20) of formal education.",
+      "page_number": null
+    },
+    {
+      "text_id": 61,
+      "paragraph_id": 17,
+      "section_id": 6,
+      "text": "Of the 4,732 participants included in this analysis, 2,606 provided data at two assessment waves, 1,750 at three waves, 1,222 at four waves, 743 at five waves, 413 at six waves, 222 at seven waves, and 117 at eight waves; 40 provided data at all nine assessment waves.",
+      "page_number": null
+    },
+    {
+      "text_id": 62,
+      "paragraph_id": 18,
+      "section_id": 6,
+      "text": "Selectivity analyses comparing individuals who completed two or more assessments (n = 2,606) with those who completed only one assessment (n = 2,126) showed that women participated more often than men (Cohen's d < 0.10).",
+      "page_number": null
+    },
+    {
+      "text_id": 63,
+      "paragraph_id": 18,
+      "section_id": 6,
+      "text": "Further, multiassessment participants had more years of formal education (d < 0.50) and were more conscientious (d < 0.15), agreeable (d < 0.22), and open (d < 0.39).",
+      "page_number": null
+    },
+    {
+      "text_id": 64,
+      "paragraph_id": 18,
+      "section_id": 6,
+      "text": "Our results may thus not necessarily generalize to less positively selected, that is, less conscientious or educated, segments of the larger population.",
+      "page_number": null
+    },
+    {
+      "text_id": 65,
+      "paragraph_id": 20,
+      "section_id": 7,
+      "text": "Personality traits.",
+      "page_number": null
+    },
+    {
+      "text_id": 66,
+      "paragraph_id": 20,
+      "section_id": 7,
+      "text": "In the SLS, individuals' personality characteristics were repeatedly assessed using the TBR (Schaie & Parham, 1975), a scale with 75 true/false items (e.g., \"I am known as a hard and steady worker,\" \"I don't like things to be uncertain and unpredictable\").",
+      "page_number": null
+    },
+    {
+      "text_id": 67,
+      "paragraph_id": 20,
+      "section_id": 7,
+      "text": "Although the TBR and its three subscales are somewhat outdated and do not straightforwardly map to modern definitions of personality, the repeated measures provide a rich resource for examining longitudinal change in personality.",
+      "page_number": null
+    },
+    {
+      "text_id": 68,
+      "paragraph_id": 20,
+      "section_id": 7,
+      "text": "Making use of this unique resource, we identified a subset of items from the original TBR scales that do map onto the well-established and frequently studied Big Five taxonomy.",
+      "page_number": null
+    },
+    {
+      "text_id": 69,
+      "paragraph_id": 20,
+      "section_id": 7,
+      "text": "Because a Big Five scale, the NEO Personality Inventory-Revised (NEO-PI-R; Costa & McCrae, 1992), was included in the SLS in 2005, we were able to do the mapping in an empirical way by examining how responses to TBR items were correlated with the NEO-PI-R scales.",
+      "page_number": null
+    },
+    {
+      "text_id": 70,
+      "paragraph_id": 20,
+      "section_id": 7,
+      "text": "The 21 TBR items shown in Table 1 had the highest correlations and provided a reasonable basis for measurement of the Big Five traits in the nine-wave data.",
+      "page_number": null
+    },
+    {
+      "text_id": 71,
+      "paragraph_id": 20,
+      "section_id": 7,
+      "text": "The TBR measured agreeableness with five items, openness with five items, extraversion and conscientiousness with four items each, and neuroticism with three items.",
+      "page_number": null
+    },
+    {
+      "text_id": 72,
+      "paragraph_id": 20,
+      "section_id": 7,
+      "text": "Similar to previous studies using short inventories on the broad personality constructs (e.g., Brandt et al., 2020), internal consistencies indicated broad representation of each construct (ωs = .52, .40, .38, .44, and .56 for conscientiousness, agreeableness, neuroticism, extraversion, and openness, respectively).",
+      "page_number": null
+    },
+    {
+      "text_id": 73,
+      "paragraph_id": 20,
+      "section_id": 7,
+      "text": "Correlations between the newly built TBR-based personality scales and the NEO domains were substantial at both the latent construct and manifest levels, ranging between .72 for agreeableness and openness and .93 for conscientiousness (see Table 2).",
+      "page_number": null
+    },
+    {
+      "text_id": 74,
+      "paragraph_id": 20,
+      "section_id": 7,
+      "text": "Additional correlational patterns are shown in Table S2 and in the heat maps in Figures S1 to S5 in the supplementary materials (available at https://osf.io/px57h/).",
+      "page_number": null
+    },
+    {
+      "text_id": 75,
+      "paragraph_id": 20,
+      "section_id": 7,
+      "text": "At the item level, the heat maps show that facet correlations within the NEO-PI-R scale are slightly stronger than item correlations within the TBR-based scale, but overall they clearly support the use of the newly built measurement-invariant scales (calculated as sum scores for each of the Big Five personality dimensions) in the longitudinal analysis (in the supplementary materials, see also Table S1 for correlations on scale levels and Table S3 for measurementinvariance testing).",
+      "page_number": null
+    },
+    {
+      "text_id": 76,
+      "paragraph_id": 20,
+      "section_id": 7,
+      "text": "For analysis, scores on each dimension were converted to T scores (M = 50, SD = 10) based on all observations.",
+      "page_number": null
+    },
+    {
+      "text_id": 77,
+      "paragraph_id": 20,
+      "section_id": 7,
+      "text": "Time in study, age-related differences, and cohort effects.",
+      "page_number": null
+    },
+    {
+      "text_id": 78,
+      "paragraph_id": 20,
+      "section_id": 7,
+      "text": "Following previous researchers (e.g., Gerstorf et al., 2019), we created three variables to assess intraindividual change, age-related differences in levels and change, and cohort-related differences in levels and change.",
+      "page_number": null
+    },
+    {
+      "text_id": 79,
+      "paragraph_id": 20,
+      "section_id": 7,
+      "text": "First, intraindividual change was modeled using a person-specific time-varying time-in-study variable that captured the number of years since each individual's",
+      "page_number": null
+    },
+    {
+      "text_id": 80,
+      "paragraph_id": 21,
+      "section_id": 7,
+      "text": "0 20 40 60 80 20 40 60 80",
+      "page_number": null
+    },
+    {
+      "text_id": 81,
+      "paragraph_id": 22,
+      "section_id": 7,
+      "text": "Chronological Age (Years) Frequency 1883-1913 1914-1944 1945-1976 Fig Note: The original item format was 1 for true and 2 for false.",
+      "page_number": null
+    },
+    {
+      "text_id": 82,
+      "paragraph_id": 22,
+      "section_id": 7,
+      "text": "All positively formulated items were recoded so that higher values reflect higher scores on the personality trait.",
+      "page_number": null
+    },
+    {
+      "text_id": 83,
+      "paragraph_id": 22,
+      "section_id": 7,
+      "text": "The TBR scale consists of three subscales-a Rigidity scale (RS), a Social Responsibility (SR) scale, and a Perseverative Behavior (PB) scale.",
+      "page_number": null
+    },
+    {
+      "text_id": 84,
+      "paragraph_id": 22,
+      "section_id": 7,
+      "text": "The original assignments of selected TBR items to these three subscales are presented in brackets.",
+      "page_number": null
+    },
+    {
+      "text_id": 85,
+      "paragraph_id": 22,
+      "section_id": 7,
+      "text": "In the correlation column, values in brackets are 95% confidence intervals.",
+      "page_number": null
+    },
+    {
+      "text_id": 86,
+      "paragraph_id": 23,
+      "section_id": 7,
+      "text": "baseline assessment, recentered at the midpoint of each individual's time series, and divided by 7 to match the 7-year interval between successive waves in the SLS design.",
+      "page_number": null
+    },
+    {
+      "text_id": 87,
+      "paragraph_id": 23,
+      "section_id": 7,
+      "text": "Second, age-related differences were modeled using a time-invariant variable, chronological age at the midpoint assessment, centered at the average age of the sample (58 years).",
+      "page_number": null
+    },
+    {
+      "text_id": 88,
+      "paragraph_id": 23,
+      "section_id": 7,
+      "text": "Third, cohort-related differences were modeled using a time-invariant variable, birth year, centered at the average year of birth in the sample (1926).",
+      "page_number": null
+    },
+    {
+      "text_id": 89,
+      "paragraph_id": 23,
+      "section_id": 7,
+      "text": "Of note, statistical analyses were done using year of birth as a continuous variable.",
+      "page_number": null
+    },
+    {
+      "text_id": 90,
+      "paragraph_id": 23,
+      "section_id": 7,
+      "text": "However, for illustration purposes in our graphical representations, we display trajectories for three artificial cohort groups by dividing the range of birth years in three equally distanced groups (those born between 1883 and 1913, between 1914 and 1944, and between 1945 and 1976).",
+      "page_number": null
+    },
+    {
+      "text_id": 91,
+      "paragraph_id": 24,
+      "section_id": 7,
+      "text": "Covariates.",
+      "page_number": null
+    },
+    {
+      "text_id": 92,
+      "paragraph_id": 24,
+      "section_id": 7,
+      "text": "Covariates were sex (coded as 0 = male, 1 = female) and years of education (coded as the number of years that were necessary for obtaining the final school degree), both of which were sample-mean centered for ease of interpretation.",
+      "page_number": null
+    },
+    {
+      "text_id": 93,
+      "paragraph_id": 26,
+      "section_id": 8,
+      "text": "We used separate growth models (Grimm et al., 2016) for each Big Five dimension to study intraindividual change, age-related differences, and cohort-related differences in levels of personality and change in personality, as follows (illustrated for extraversion):",
+      "page_number": null
+    },
+    {
+      "text_id": 94,
+      "paragraph_id": 27,
+      "section_id": 8,
+      "text": "extraversion time in study time in study 1) where person i's score on a given personality trait at observation t, extraversion ti , is modeled as a function of a person-specific intercept coefficient, β 0i ; a personspecific linear slope coefficient, β 1i ; a person-specific quadratic slope coefficient, β 2i ; and residual error, e ti .",
+      "page_number": null
+    },
+    {
+      "text_id": 95,
+      "paragraph_id": 28,
+      "section_id": 8,
+      "text": "Individual differences in the person-specific coefficients were modeled as",
+      "page_number": null
+    },
+    {
+      "text_id": 96,
+      "paragraph_id": 29,
+      "section_id": 8,
+      "text": ") ( ) age b irth year birth year age 1 1i , and",
+      "page_number": null
+    },
+    {
+      "text_id": 97,
+      "paragraph_id": 30,
+      "section_id": 8,
+      "text": "where gs are sample-level parameters describing how a personality trait differs with age, year of birth, and their interaction, and u i 0 and u i 1 are unexplained individual differences that are assumed to be multivariate and normally distributed with standard deviations, σ u0 and σ u1 and correlation r u u 0 1 .",
+      "page_number": null
+    },
+    {
+      "text_id": 98,
+      "paragraph_id": 30,
+      "section_id": 8,
+      "text": "Models were constructed in three steps.",
+      "page_number": null
+    },
+    {
+      "text_id": 99,
+      "paragraph_id": 30,
+      "section_id": 8,
+      "text": "First, we modeled the intraindividual change trajectory and age gradients (Model 1).",
+      "page_number": null
+    },
+    {
+      "text_id": 100,
+      "paragraph_id": 30,
+      "section_id": 8,
+      "text": "Second, we included birth year as a predictor in Equations 2 and 3 to investigate cohort effects (Model 2).",
+      "page_number": null
+    },
+    {
+      "text_id": 101,
+      "paragraph_id": 30,
+      "section_id": 8,
+      "text": "Third, we included the additional covariates sex and education (Model 3).",
+      "page_number": null
+    },
+    {
+      "text_id": 102,
+      "paragraph_id": 30,
+      "section_id": 8,
+      "text": "Final models were trimmed for parsimony of presentation.",
+      "page_number": null
+    },
+    {
+      "text_id": 103,
+      "paragraph_id": 30,
+      "section_id": 8,
+      "text": "Significance was evaluated at an α level of .01.",
+      "page_number": null
+    },
+    {
+      "text_id": 104,
+      "paragraph_id": 31,
+      "section_id": 8,
+      "text": "All models were estimated using the lme4 package (Version 1.1-23; Bates et al., 2015) in the R environment (Version 4.0.2; R Core Team, 2020) using full-information maximum-likelihood procedures that accommodated incomplete data under missing-at-random assumptions.",
+      "page_number": null
+    },
+    {
+      "text_id": 105,
+      "paragraph_id": 31,
+      "section_id": 8,
+      "text": "All analysis code has been made publicly available on OSF (https://osf.io/s8zk5/).",
+      "page_number": null
+    },
+    {
+      "text_id": 106,
+      "paragraph_id": 33,
+      "section_id": 9,
+      "text": "Descriptive statistics and intercorrelations among the measures of interest (in 2005) are reported in Table 2.",
+      "page_number": null
+    },
+    {
+      "text_id": 107,
+      "paragraph_id": 33,
+      "section_id": 9,
+      "text": "In line with previous findings (e.g., Löckenhoff et al., 2014), our results showed that women, on average, had higher levels of agreeableness and lower levels of extraversion than men but, contrary to prior findings, had slightly lower levels of neuroticism than men.",
+      "page_number": null
+    },
+    {
+      "text_id": 108,
+      "paragraph_id": 33,
+      "section_id": 9,
+      "text": "Also in line with previous findings (e.g., Poropat, 2009), results showed that more time in formal education was associated with higher levels of openness.",
+      "page_number": null
+    },
+    {
+      "text_id": 109,
+      "paragraph_id": 33,
+      "section_id": 9,
+      "text": "Greater age was associated with higher conscientiousness and agreeableness and with lower extraversion and openness.",
+      "page_number": null
+    },
+    {
+      "text_id": 110,
+      "paragraph_id": 33,
+      "section_id": 9,
+      "text": "Overall, these findings fit very well with previous reports based on more established Big Five inventories, indicating that the newly built TBR-based personality scales worked as expected.",
+      "page_number": null
+    },
+    {
+      "text_id": 111,
+      "paragraph_id": 35,
+      "section_id": 10,
+      "text": "Results from Model 1 are summarized in the upper portion of Table 3.",
+      "page_number": null
+    },
+    {
+      "text_id": 112,
+      "paragraph_id": 35,
+      "section_id": 10,
+      "text": "On average, older participants had higher levels of conscientiousness (g 01 = 0.072, p < .001), agreeableness (g 01 = 0.141, p < .001), and neuroticism (g 01 = 0.037, p < .001) and lower levels of extraversion (g 01 = -0.048, p < .001) and openness (g 01 = -0.170, p < .001) than younger participants.",
+      "page_number": null
+    },
+    {
+      "text_id": 113,
+      "paragraph_id": 36,
+      "section_id": 10,
+      "text": "For the prototypical individual in the sample, four of the five Big Five personality traits (the exception being extraversion) exhibited change across the waves of the study.",
+      "page_number": null
+    },
+    {
+      "text_id": 114,
+      "paragraph_id": 36,
+      "section_id": 10,
+      "text": "Specifically, conscientiousness (g 10 = 0.421, p < .001) and agreeableness (g 10 = 0.613, p < .001) increased over time in study, whereas neuroticism (g 10 = -0.623, p < .001) and openness (g 10 = -0.224, p < .001) decreased over time in study.",
+      "page_number": null
+    },
+    {
+      "text_id": 115,
+      "paragraph_id": 36,
+      "section_id": 10,
+      "text": "The extent of decrease was moderated by age: Older individuals exhibited shallower decreases in neuroticism (g 11 = 0.024, p < .01) and steeper decreases in openness (g 11 = -0.026, p < .001).",
+      "page_number": null
+    },
+    {
+      "text_id": 116,
+      "paragraph_id": 37,
+      "section_id": 10,
+      "text": "Consistent with established differences and trends (Bleidorn et al., 2013;Roberts et al., 2006), results showed that maturity-related traits exhibited within-person",
+      "page_number": null
+    },
+    {
+      "text_id": 117,
+      "paragraph_id": 38,
+      "section_id": 10,
+      "text": "Table 3.",
+      "page_number": null
+    },
+    {
+      "text_id": 118,
+      "paragraph_id": 38,
+      "section_id": 10,
+      "text": "Results From Growth Models of Personality: Differences by Age (Model 1) and by Age and Cohort (Model 2) Parameter",
+      "page_number": null
+    },
+    {
+      "text_id": 119,
+      "paragraph_id": 39,
+      "section_id": 10,
+      "text": "Model 1: differences by age Fixed effects Intercept 50.139*** 0.132 49.659*** 0.130 50.841*** 0.130 49.698*** 0.136 48.755*** 0.135 Time 0.421*** 0.069 0.613*** 0.065 -0.623*** 0.067 0.080 0.178 -0.224*** 0.053 Age 0.072*** 0.008 0.141*** 0.008 0.037*** 0.008 -0.048*** 0.009 -0.170*** 0.009 Age × Time -0.009 0.006 -0.005 0.006 0.024*** 0.006 -0.014 0.005 -0.026*** 0.005 Random effects σ intercept 59.557 7.717 55.192 7.429 52.345 7.235 67.187 8.197 67.235 8.200 σ time 1.709 1.307 1.096 1.047 0.921 0.960 1.063 1.031 0.573 0.757 σ residual 37.516 6.125 41.664 6.455 48.031 6.930 33.039 5.748 29.229 5.406 Model 2: differences by age and cohort Fixed effects Intercept, g 00 50.139*** 0.132 50.084*** 0.163 50.565*** 0.155 49.618*** 0.134 49.307*** 0.158 Time, g 10 0.392*** 0.064 0.539*** 0.065 -0.686*** 0.067 0.095 0.059 -0.156** 0.053 Age, g 01 0.072*** 0.012 0.093*** 0.012 -0.123*** 0.011 0.048*** 0.012 0.021 0.011 Age × Time, g 11 0.025*** 0.006 -0.014** 0.005 -0.027*** .005 Cohort Birth year, g 02 -0.001 0.009 -0.045*** 0.009 -0.192*** 0.009 0.108*** 0.010 0.233*** 0.009 Birth Year × Time, g 12 0.011** 0.004 Birth Year × Age, g 03 0.002*** 0.000 -0.002*** 0.000 0.003*** 0.000 Random effects σ intercept 59.580 7.719 54.650 7.392 44.673 6.683 64.926 8.058 55.522 7.451 σ time 1.725 1.313 1.090 1.044 0.895 0.946 1.055 1.027 0.563 0.750 σ explained Intercept 0.003 0.001 -0.001 -0.000 -0.002 Time -0.000 0.010 0.147 0.034 0.121 σ residual 37.502 6.124 41.609 6.451 48.092 6.935 33.052 5.749 29.295 5.413",
+      "page_number": null
+    },
+    {
+      "text_id": 120,
+      "paragraph_id": 40,
+      "section_id": 10,
+      "text": "Note: N = 4,732 participants with 11,774 observations.",
+      "page_number": null
+    },
+    {
+      "text_id": 121,
+      "paragraph_id": 40,
+      "section_id": 10,
+      "text": "Estimates shown are unstandardized.",
+      "page_number": null
+    },
+    {
+      "text_id": 122,
+      "paragraph_id": 40,
+      "section_id": 10,
+      "text": "Personality traits were T standardized (M = 50, SD = 10).",
+      "page_number": null
+    },
+    {
+      "text_id": 123,
+      "paragraph_id": 40,
+      "section_id": 10,
+      "text": "Time refers to the number of years since baseline, centered at the middle of each individual's repeated time series (with metrics smoothed to 0 = 0, 7 = 1, 14 = 2, etc.).",
+      "page_number": null
+    },
+    {
+      "text_id": 124,
+      "paragraph_id": 40,
+      "section_id": 10,
+      "text": "Age was centered at 58 years.",
+      "page_number": null
+    },
+    {
+      "text_id": 125,
+      "paragraph_id": 40,
+      "section_id": 10,
+      "text": "Birth year was centered at 1926 (average of the sample).",
+      "page_number": null
+    },
+    {
+      "text_id": 126,
+      "paragraph_id": 40,
+      "section_id": 10,
+      "text": "No control variables were included.",
+      "page_number": null
+    },
+    {
+      "text_id": 127,
+      "paragraph_id": 40,
+      "section_id": 10,
+      "text": "Model 1 treats the sample as one combined age-heterogenous sample and examines intraindividual change in time in study and age-related differences therein; Model 2 adds cohort-related differences.",
+      "page_number": null
+    },
+    {
+      "text_id": 128,
+      "paragraph_id": 40,
+      "section_id": 10,
+      "text": "For Model 1, the correlation (r) between the variance for the intercept and time is .06 for conscientiousness, -.21 for agreeableness, .03 for neuroticism, -.07 for extraversion, and .017 for openness; for Model 2, the correlation is .06 for conscientiousness, -.20 for agreeableness, .06 for neuroticism, -.06 for extraversion, and .15 for openness.",
+      "page_number": null
+    },
+    {
+      "text_id": 129,
+      "paragraph_id": 41,
+      "section_id": 10,
+      "text": "**p < .01. ***p < .001.",
+      "page_number": null
+    },
+    {
+      "text_id": 130,
+      "paragraph_id": 42,
+      "section_id": 10,
+      "text": "increases in conscientiousness and agreeableness and decreases in neuroticism, whereas agency-related traits (openness) decreased across time.",
+      "page_number": null
+    },
+    {
+      "text_id": 131,
+      "paragraph_id": 42,
+      "section_id": 10,
+      "text": "Substantial interindividual differences occurred in the levels of all traits and the rate at which traits changed over time (see Fig.",
+      "page_number": null
+    },
+    {
+      "text_id": 132,
+      "paragraph_id": 42,
+      "section_id": 10,
+      "text": "S6 in the supplementary materials at https://osf.io/px57h for a random sample of individual trajectories).",
+      "page_number": null
+    },
+    {
+      "text_id": 133,
+      "paragraph_id": 42,
+      "section_id": 10,
+      "text": "Several of these effects were moderated by age, and older people experienced weaker decreases in neuroticism and steeper declines in openness.",
+      "page_number": null
+    },
+    {
+      "text_id": 134,
+      "paragraph_id": 44,
+      "section_id": 11,
+      "text": "Results from Model 2, which additionally allowed for cohort-related differences in personality change, are presented in the lower portion of",
+      "page_number": null
+    },
+    {
+      "text_id": 135,
+      "paragraph_id": 45,
+      "section_id": 11,
+      "text": "Table 3.",
+      "page_number": null
+    },
+    {
+      "text_id": 136,
+      "paragraph_id": 45,
+      "section_id": 11,
+      "text": "Results indicated substantial cohort-related differences in all personality traits but conscientiousness.",
+      "page_number": null
+    },
+    {
+      "text_id": 137,
+      "paragraph_id": 45,
+      "section_id": 11,
+      "text": "Later-born cohorts had lower levels (at age 58 years) of agreeableness (g 02 = -0.045, p < .001) and neuroticism (g 02 = -0.192, p < .001) than earlierborn cohorts and higher levels (at age 58 years) of extraversion (g 02 = 0.108, p < .001) and openness (g 02 = 0.233, p < .001).",
+      "page_number": null
+    },
+    {
+      "text_id": 138,
+      "paragraph_id": 45,
+      "section_id": 11,
+      "text": "There were also cohort-related differences in how agreeableness changed over time in study.",
+      "page_number": null
+    },
+    {
+      "text_id": 139,
+      "paragraph_id": 45,
+      "section_id": 11,
+      "text": "Laterborn cohorts exhibited steeper increases in agreeableness across time than earlier-born cohorts (g 12 = 0.011, p < .01).",
+      "page_number": null
+    },
+    {
+      "text_id": 140,
+      "paragraph_id": 45,
+      "section_id": 11,
+      "text": "For some personality traits, the age gradients also differed across cohorts.",
+      "page_number": null
+    },
+    {
+      "text_id": 141,
+      "paragraph_id": 45,
+      "section_id": 11,
+      "text": "Later-born cohorts exhibited steeper age-related decreases in neuroticism (g 03 = -0.002, p < .001) and age-related increases (rather than agerelated decreases) in agreeableness (g 03 = 0.002, p < .001)",
+      "page_number": null
+    },
+    {
+      "text_id": 142,
+      "paragraph_id": 46,
+      "section_id": 11,
+      "text": "and openness (g 03 = 0.003, p < .001).",
+      "page_number": null
+    },
+    {
+      "text_id": 143,
+      "paragraph_id": 47,
+      "section_id": 11,
+      "text": "Model-implied trajectories for all five personality traits are shown graphically in Figure 2.",
+      "page_number": null
+    },
+    {
+      "text_id": 144,
+      "paragraph_id": 47,
+      "section_id": 11,
+      "text": "Separately for Born 1914-1944Born 1945-1976Born 1914-1944Born 1883-1913Born 1945-1976Born 1883-1913Born 1945-1976Born 1914-1944Born 1883-1913Born 1945-1976Born 1914-1944 Born 1883-1913 60 -1913: n = 1,405; born between 1914-1944: n = 2,386; born between 1945-1976: n = 941). each of the three cohorts, the short, thick lines indicate model-implied within-person changes across time in study (in 1-year age increments), and the long, thin lines indicate model-implied age gradients.",
+      "page_number": null
+    },
+    {
+      "text_id": 145,
+      "paragraph_id": 47,
+      "section_id": 11,
+      "text": "Looking specifically at the trajectories for agreeableness, we see that later-born cohorts had overall lower levels of agreeableness than earlier-born cohorts (solid black lines), that the age gradient increased more steeply for the later-born cohort (long, thin lines), and that all cohorts showed intraindividual change across time in study (dashed short line pointing upward in younger adulthood and downward in older adulthood).",
+      "page_number": null
+    },
+    {
+      "text_id": 146,
+      "paragraph_id": 47,
+      "section_id": 11,
+      "text": "In complement, looking at the trajectories for openness, we see that later-born participants reported higher average levels of openness and that this effect was more pronounced for older than for younger participants.",
+      "page_number": null
+    },
+    {
+      "text_id": 147,
+      "paragraph_id": 48,
+      "section_id": 11,
+      "text": "Following standard practice in multilevel modeling (Snijders & Bosker, 2012), we calculated the relative reduction of unexplained (residual) variance in levels and rates of change between a model that estimated age effects only (Model 1) and a model that estimated both age and cohort effects simultaneously.",
+      "page_number": null
+    },
+    {
+      "text_id": 148,
+      "paragraph_id": 48,
+      "section_id": 11,
+      "text": "To illustrate, we took the residual variance (at Level 2 for intercepts, Level 2 for slopes) of Model 1 (e.g., neuroticism: 52.345 from Table 3) minus the residual variance of Model 2 (e.g., neuroticism: 44.673) divided by the residual variance of Model 1 (e.g., neuroticism: 52.345) to determine that the birth-year variable reduced unexplained variance by 14.7%.",
+      "page_number": null
+    },
+    {
+      "text_id": 149,
+      "paragraph_id": 48,
+      "section_id": 11,
+      "text": "Overall, birth year accounted for between nearly 0% and 15% of the variance in level and rates of within-person change in personality (small effect sizes); the largest effects were obtained for neuroticism.",
+      "page_number": null
+    },
+    {
+      "text_id": 150,
+      "paragraph_id": 50,
+      "section_id": 12,
+      "text": "In a final step, we included sex and education as additional predictors that might explain some of the differences.",
+      "page_number": null
+    },
+    {
+      "text_id": 151,
+      "paragraph_id": 50,
+      "section_id": 12,
+      "text": "Results shown in Table 4 were quite comparable with those above except for three effects.",
+      "page_number": null
+    },
+    {
+      "text_id": 152,
+      "paragraph_id": 50,
+      "section_id": 12,
+      "text": "First, the age gradient for level of extraversion was no longer significant when models accounted for the covariates.",
+      "page_number": null
+    },
+    {
+      "text_id": 153,
+      "paragraph_id": 50,
+      "section_id": 12,
+      "text": "Second, a significant interaction effect between birth year and sex was observed for conscientiousness (g 04 = 0.049, p < .001), indicating that later-born women, but not men, reported higher levels of conscientiousness than earlier-born women.",
+      "page_number": null
+    },
+    {
+      "text_id": 154,
+      "paragraph_id": 50,
+      "section_id": 12,
+      "text": "We furthermore found a significant interaction effect between birth year and sex in neuroticism; later-born women again reported higher levels of neuroticism than men (g 04 = 0.040, p < .01).",
+      "page_number": null
+    },
+    {
+      "text_id": 155,
+      "paragraph_id": 50,
+      "section_id": 12,
+      "text": "Figure 3 illustrates the developmental trajectories of personality traits for different cohorts as implied by the conditional models.",
+      "page_number": null
+    },
+    {
+      "text_id": 156,
+      "paragraph_id": 50,
+      "section_id": 12,
+      "text": "Overall, it appears that the covariates (sex and education) attenuated the cohort-related differences, suggesting that some of the cohort differences were related to historical changes in education and genderrelated social roles.",
+      "page_number": null
+    },
+    {
+      "text_id": 157,
+      "paragraph_id": 50,
+      "section_id": 12,
+      "text": "Including the covariates resulted in a greater reduction of unexplained variance between Model 1 and Model 3, particularly regarding agreeableness and openness.",
+      "page_number": null
+    },
+    {
+      "text_id": 158,
+      "paragraph_id": 52,
+      "section_id": 13,
+      "text": "We investigated whether people born at a specific time in history differ on average in how they act, feel, and think from same-age people who were born earlier or later-an assumption held by society and life-span theory alike (e.g., Baltes et al., 2006;Elder, 1974;Schaie, 1965).",
+      "page_number": null
+    },
+    {
+      "text_id": 159,
+      "paragraph_id": 52,
+      "section_id": 13,
+      "text": "Our results provide evidence for historical changes in levels and to some extent also in developmental trajectories of personality traits.",
+      "page_number": null
+    },
+    {
+      "text_id": 160,
+      "paragraph_id": 52,
+      "section_id": 13,
+      "text": "We discuss our results, noting the similarities and differences among maturity-related traits and agency-related traits, and also highlight that the age differences observed for many of these historical changes are in line with propositions on the adaptive role of maturation and social investment across human ontogenesis (Mueller et al., 2017;Roberts & Nickel, 2017).",
+      "page_number": null
+    },
+    {
+      "text_id": 161,
+      "paragraph_id": 53,
+      "section_id": 13,
+      "text": "Three key findings stand out from our results of cohort-related differences in Big Five personality.",
+      "page_number": null
+    },
+    {
+      "text_id": 162,
+      "paragraph_id": 53,
+      "section_id": 13,
+      "text": "First, later-born cohorts showed lower levels of agreeableness and neuroticism and higher levels of extraversion.",
+      "page_number": null
+    },
+    {
+      "text_id": 163,
+      "paragraph_id": 53,
+      "section_id": 13,
+      "text": "Although findings of neuroticism were in line with our expectations, those for conscientiousness were only partly so: Women, but not men, reported higher levels of conscientiousness among later-born cohorts, which points to stronger changes in social roles across cohorts for women than for men.",
+      "page_number": null
+    },
+    {
+      "text_id": 164,
+      "paragraph_id": 53,
+      "section_id": 13,
+      "text": "The relative importance of work-related goals, such as the realization of one's own career and family goals, might have changed across cohorts, particularly for women.",
+      "page_number": null
+    },
+    {
+      "text_id": 165,
+      "paragraph_id": 53,
+      "section_id": 13,
+      "text": "This is also supported by the finding that later-born women participate more in the labor force than earlier-born women ( Juhn & Potter, 2006).",
+      "page_number": null
+    },
+    {
+      "text_id": 166,
+      "paragraph_id": 53,
+      "section_id": 13,
+      "text": "Increases in extraversion as an agencyrelated trait might be related to the established finding of more perceived control in later-born cohorts.",
+      "page_number": null
+    },
+    {
+      "text_id": 167,
+      "paragraph_id": 53,
+      "section_id": 13,
+      "text": "This nicely aligns with the argument that there is a stronger likelihood of change when one believes in its feasibility (Hennecke et al., 2014).",
+      "page_number": null
+    },
+    {
+      "text_id": 168,
+      "paragraph_id": 53,
+      "section_id": 13,
+      "text": "Our findings of historical changes in maturity-related traits are consistent with reports of historical improvements of living conditions and with changes in what people value and desire.",
+      "page_number": null
+    },
+    {
+      "text_id": 169,
+      "paragraph_id": 53,
+      "section_id": 13,
+      "text": "By contrast, our results on historical changes in agencyrelated traits map onto reports of historical increases in perceived control.",
+      "page_number": null
+    },
+    {
+      "text_id": 170,
+      "paragraph_id": 53,
+      "section_id": 13,
+      "text": "Note: N = 4,732 participants with 11,774 observations.",
+      "page_number": null
+    },
+    {
+      "text_id": 171,
+      "paragraph_id": 53,
+      "section_id": 13,
+      "text": "Estimates shown are unstandardized.",
+      "page_number": null
+    },
+    {
+      "text_id": 172,
+      "paragraph_id": 53,
+      "section_id": 13,
+      "text": "Personality traits were T standardized (M = 50, SD = 10).",
+      "page_number": null
+    },
+    {
+      "text_id": 173,
+      "paragraph_id": 53,
+      "section_id": 13,
+      "text": "Time refers to number of years since baseline, centered at the middle of each individual's repeated time series (with metrics smoothed to 0 = 0, 7 = 1, 14 = 2, etc.).",
+      "page_number": null
+    },
+    {
+      "text_id": 174,
+      "paragraph_id": 53,
+      "section_id": 13,
+      "text": "Age was centered at 58 years.",
+      "page_number": null
+    },
+    {
+      "text_id": 175,
+      "paragraph_id": 53,
+      "section_id": 13,
+      "text": "Birth year was centered at 1926 (the average of the sample).",
+      "page_number": null
+    },
+    {
+      "text_id": 176,
+      "paragraph_id": 53,
+      "section_id": 13,
+      "text": "For control variables, sex (0 = men, 1 = women) was centered to men; education refers to years spent in formal education, centered to the mean of the sample (14 years).",
+      "page_number": null
+    },
+    {
+      "text_id": 177,
+      "paragraph_id": 53,
+      "section_id": 13,
+      "text": "For Model 3, the correlation (r) between the variance for the intercept and time is .06 for conscientiousness, -.11 for agreeableness, .06 for neuroticism, -.05 for extraversion, and .",
+      "page_number": null
+    },
+    {
+      "text_id": 178,
+      "paragraph_id": 54,
+      "section_id": 13,
+      "text": "22 for openness. *p < .05. **p < .01. ***p < .001.",
+      "page_number": null
+    },
+    {
+      "text_id": 179,
+      "paragraph_id": 55,
+      "section_id": 13,
+      "text": "We also note that our findings of lower levels of agreeableness among later-born cohorts are at odds with the findings reported by Smits et al.",
+      "page_number": null
+    },
+    {
+      "text_id": 180,
+      "paragraph_id": 55,
+      "section_id": 13,
+      "text": "(2011).",
+      "page_number": null
+    },
+    {
+      "text_id": 181,
+      "paragraph_id": 55,
+      "section_id": 13,
+      "text": "The different samples (American citizens on average in their late 50 vs.",
+      "page_number": null
+    },
+    {
+      "text_id": 182,
+      "paragraph_id": 55,
+      "section_id": 13,
+      "text": "Dutch college freshmen) and measures might disclose age-related or cultural differences in cohort effects.",
+      "page_number": null
+    },
+    {
+      "text_id": 183,
+      "paragraph_id": 55,
+      "section_id": 13,
+      "text": "In terms of culture, differences between countries in transitions to the labor force were found to be strongly associated with different maturation patterns across countries (Bleidorn et al., 2013;Chopik & Kitayama, 2018).",
+      "page_number": null
+    },
+    {
+      "text_id": 184,
+      "paragraph_id": 56,
+      "section_id": 13,
+      "text": "Second, several of the historical changes were moderated by age.",
+      "page_number": null
+    },
+    {
+      "text_id": 185,
+      "paragraph_id": 56,
+      "section_id": 13,
+      "text": "In line with our expectation, it appears that later-born cohorts start to invest later in age-graded social roles and thus report lower levels in agreeableness than earlier-born cohorts in young adulthood.",
+      "page_number": null
+    },
+    {
+      "text_id": 186,
+      "paragraph_id": 56,
+      "section_id": 13,
+      "text": "Prolonged education times that result in later job entries appear to delay increases in agreeableness (Bleidorn et al., 2013).",
+      "page_number": null
+    },
+    {
+      "text_id": 187,
+      "paragraph_id": 56,
+      "section_id": 13,
+      "text": "But once job life has started, investments appear to be amplified, as depicted by steeper age-related increases in agreeableness and decreases in neuroticism in laterborn cohorts.",
+      "page_number": null
+    },
+    {
+      "text_id": 188,
+      "paragraph_id": 56,
+      "section_id": 13,
+      "text": "Later in life, social-role transitions and expectations are less clear (Freund et al., 2009), possibly leading to fewer maturity-related differences.",
+      "page_number": null
+    },
+    {
+      "text_id": 189,
+      "paragraph_id": 56,
+      "section_id": 13,
+      "text": "Contrary to our expectation, our results also showed that cohortrelated differences in openness were more pronounced among older adults.",
+      "page_number": null
+    },
+    {
+      "text_id": 190,
+      "paragraph_id": 56,
+      "section_id": 13,
+      "text": "For such agency-related traits, Freund et al. (2009) suggested that self-regulation is particularly relevant in late life, which explains the larger differences in levels of these traits at older ages.",
+      "page_number": null
+    },
+    {
+      "text_id": 191,
+      "paragraph_id": 57,
+      "section_id": 13,
+      "text": "Third, evidence regarding cohort-related differences in developmental trajectories was weak; only withinperson increases in agreeableness were more pronounced in later-born cohorts.",
+      "page_number": null
+    },
+    {
+      "text_id": 192,
+      "paragraph_id": 57,
+      "section_id": 13,
+      "text": "Later-born cohorts Born 1945-1976Born 1914-1944Born 1883-1913Born 1945-1976Born 1883-1913Born 1914-1944Born 1945-1976Born 1883-1913Born 1914-1944Born 1945-1976Born 1914-1944Born 1883-1913Born 1945-1976Born 1883-1913Born 1914-1944Born 1945-1976Born 1914-1944Born 1883-1913 Agreeableness Neuroticism",
+      "page_number": null
+    },
+    {
+      "text_id": 193,
+      "paragraph_id": 58,
+      "section_id": 13,
+      "text": "Extraversion Openness Chronological Age (Years) Chronological Age (Years) T Score T Score T Score Conscientiousness (Women) Conscientiousness (Men) 60 55 50 45 40 35 20 30 40 50 60 70 80 90 60 55 50 45 40 35 20 30 40 50 60 70 80 90 60 55 50 45 40 35 20 30 40 50 60 70 80 90 60 55 50 45 40 35 20 30 40 50 60 70 80 90 60 55 50 45 40 35 20 30 40 50 60 70 80 90 60 55 50 45 40 35 20 30 40 50 60 70 80 90 started at a lower level, and thus further increases are rather likely to occur compared with earlier-born cohorts.",
+      "page_number": null
+    },
+    {
+      "text_id": 194,
+      "paragraph_id": 58,
+      "section_id": 13,
+      "text": "Additionally, at the end of life, the differences between cohorts seem to become smaller.",
+      "page_number": null
+    },
+    {
+      "text_id": 195,
+      "paragraph_id": 58,
+      "section_id": 13,
+      "text": "At the same time, one might ask why we have not found more evidence for cohort-related differences in within-person trajectories of the Big Five.",
+      "page_number": null
+    },
+    {
+      "text_id": 196,
+      "paragraph_id": 58,
+      "section_id": 13,
+      "text": "It seems that time-shifted social investment comes with differences in the levels of maturity-related traits across cohorts but not with differences in the rates at which these traits change.",
+      "page_number": null
+    },
+    {
+      "text_id": 197,
+      "paragraph_id": 59,
+      "section_id": 13,
+      "text": "Although cohort-related differences became smaller at older ages, later-born cohorts do not catch up with earlier-born cohorts.",
+      "page_number": null
+    },
+    {
+      "text_id": 198,
+      "paragraph_id": 59,
+      "section_id": 13,
+      "text": "Because education times are longer in later-born cohorts, time for work and family goals is compressed into the rush hour of young to middle adulthood.",
+      "page_number": null
+    },
+    {
+      "text_id": 199,
+      "paragraph_id": 59,
+      "section_id": 13,
+      "text": "Thus, people are not able to maximize their investment into these goals (Freund, 2020) or need to divide their investment into several roles (child care and work; Evandrou & Glaser, 2004).",
+      "page_number": null
+    },
+    {
+      "text_id": 200,
+      "paragraph_id": 61,
+      "section_id": 14,
+      "text": "Despite the strengths of a large longitudinal data set covering 50 years of assessment, several limitations need further attention.",
+      "page_number": null
+    },
+    {
+      "text_id": 201,
+      "paragraph_id": 61,
+      "section_id": 14,
+      "text": "First, the long-term personality assessments were conducted using an outdated measure (additional NEO-PI-R measures were included in 2005).",
+      "page_number": null
+    },
+    {
+      "text_id": 202,
+      "paragraph_id": 61,
+      "section_id": 14,
+      "text": "The mapping between these old items and the frequently studied Big Five taxonomy showed high convergence, but we might not have captured the whole breadth of the original NEO-item content (e.g., neuroticism lacks content such as anxiety and depression, openness is based primarily on nontraditionalism).",
+      "page_number": null
+    },
+    {
+      "text_id": 203,
+      "paragraph_id": 61,
+      "section_id": 14,
+      "text": "Because differences in developmental patterns can already be observed when different Big Five inventories are used (Graham et al., 2020), deviations from previous studies may also result from differences in how personality is operationally defined.",
+      "page_number": null
+    },
+    {
+      "text_id": 204,
+      "paragraph_id": 61,
+      "section_id": 14,
+      "text": "It is thus pivotal for future research to test the robustness and generalizability of our findings.",
+      "page_number": null
+    },
+    {
+      "text_id": 205,
+      "paragraph_id": 61,
+      "section_id": 14,
+      "text": "Relatedly, although we provide code that allows for an analytical replication of results, a lack of comparable data sets limits the experimental replication of results.",
+      "page_number": null
+    },
+    {
+      "text_id": 206,
+      "paragraph_id": 61,
+      "section_id": 14,
+      "text": "Second, although we cover a large age range, other developmentally interesting periods, such as adolescence or very old age, are not represented in our sample.",
+      "page_number": null
+    },
+    {
+      "text_id": 207,
+      "paragraph_id": 61,
+      "section_id": 14,
+      "text": "Specifically, most information was available for midlife, limiting the generalizability of our findings and suggesting the need for an investigation of the onset of cohort-related differences.",
+      "page_number": null
+    },
+    {
+      "text_id": 208,
+      "paragraph_id": 61,
+      "section_id": 14,
+      "text": "Potentially, cohort-related differences in personality levels in adulthood might emerge because of differential change trajectories in younger ages.",
+      "page_number": null
+    },
+    {
+      "text_id": 209,
+      "paragraph_id": 61,
+      "section_id": 14,
+      "text": "Because differential change trajectories between cohorts are assumed to be shaped by the sociohistorical context in which development takes place, the generalizability of our findings to countries other than the United States needs to be further explored.",
+      "page_number": null
+    },
+    {
+      "text_id": 210,
+      "paragraph_id": 62,
+      "section_id": 14,
+      "text": "Finally, our study provided the first evidence for the propositions that joint efforts of maturation and social investment (Roberts & Nickel, 2017) help us to understand how society and historical times can shape personality characteristics.",
+      "page_number": null
+    },
+    {
+      "text_id": 211,
+      "paragraph_id": 62,
+      "section_id": 14,
+      "text": "Future studies should test these assumptions more directly either by linking the experiences people make in their daily lives to personality development or by asking for the individual values and desires that potentially guide their investments.",
+      "page_number": null
+    },
+    {
+      "text_id": 212,
+      "paragraph_id": 64,
+      "section_id": 15,
+      "text": "Do generations really differ in how they generally act, feel, and think, and do they develop differentially across the life span?",
+      "page_number": null
+    },
+    {
+      "text_id": 213,
+      "paragraph_id": 64,
+      "section_id": 15,
+      "text": "The answer is mixed.",
+      "page_number": null
+    },
+    {
+      "text_id": 214,
+      "paragraph_id": 64,
+      "section_id": 15,
+      "text": "People born at different times indeed differ, on average, in how conscientious, agreeable, neurotic, extraverted, and open they are.",
+      "page_number": null
+    },
+    {
+      "text_id": 215,
+      "paragraph_id": 64,
+      "section_id": 15,
+      "text": "These differences were more pronounced in younger than older people for maturity-related traits, but the opposite was true for agency-related traits.",
+      "page_number": null
+    },
+    {
+      "text_id": 216,
+      "paragraph_id": 64,
+      "section_id": 15,
+      "text": "We found little evidence that the rates by which personality changes differ across historical times.",
+      "page_number": null
+    },
+    {
+      "text_id": 217,
+      "paragraph_id": 64,
+      "section_id": 15,
+      "text": "Our results yielded initial evidence for cohort-related differences in levels of Big Five personality characteristics that point to delayed social-investment and maturity effects in later-born adults compared with those born earlier.",
+      "page_number": null
+    },
+    {
+      "text_id": 218,
+      "paragraph_id": 66,
+      "section_id": 16,
+      "text": "Action Editor: Karen Rodrigue Editor: Patricia J Bauer sls.psychiatry.uw.edu/); requests for access to the data should be made to S L Willis (oldage@uw.edu).",
+      "page_number": null
+    },
+    {
+      "text_id": 219,
+      "paragraph_id": 66,
+      "section_id": 16,
+      "text": "The design and analysis plan for the present study were not preregistered.",
+      "page_number": null
+    },
+    {
+      "text_id": 220,
+      "paragraph_id": 66,
+      "section_id": 16,
+      "text": "This article has received the badge for Open Materials.",
+      "page_number": null
+    },
+    {
+      "text_id": 221,
+      "paragraph_id": 66,
+      "section_id": 16,
+      "text": "More information about the Open Practices badges can be found at http://www.psychologicalscience .org/publications/badges.",
+      "page_number": null
+    },
+    {
+      "text_id": 222,
+      "paragraph_id": 68,
+      "section_id": 17,
+      "text": "The Seattle Longitudinal Study has been funded by grants from the National Institute of Child Health and Human Development (HD 00367, 1963(HD 00367, -1965;; HD-04476, 1970 HD-04476, -1973) ) and by the National Institute on Aging (AG00480, 1973(AG00480, -1979;; AG03544, 1982 AG03544, -1986;; AG04770, 1984 AG04770, -1989;; R37 AG08055, 1989 R37 AG08055, -2006;; AG R03 AG009787, 2006-2009; R37 AG024102, 2005 R37 AG024102, -2015)).",
+      "page_number": null
+    },
+    {
+      "text_id": 223,
+      "paragraph_id": 70,
+      "section_id": 18,
+      "text": "All analysis code has been made publicly available via OSF and can be accessed at https://osf.io/s8zk5/.",
+      "page_number": null
+    },
+    {
+      "text_id": 224,
+      "paragraph_id": 70,
+      "section_id": 18,
+      "text": "This article reports data from the Seattle Longitudinal Study (https://",
+      "page_number": null
+    },
+    {
+      "text_id": 225,
+      "paragraph_id": 72,
+      "section_id": 19,
+      "text": "The author(s) declared that there were no conflicts of interest with respect to the authorship or the publication of this article.",
+      "page_number": null
+    },
+    {
+      "text_id": 226,
+      "paragraph_id": 74,
+      "section_id": 20,
+      "text": "K W Schaie and S L Willis provided the data.",
+      "page_number": null
+    },
+    {
+      "text_id": 227,
+      "paragraph_id": 74,
+      "section_id": 20,
+      "text": "N D Brandt, D Gerstorf, J Drewelies, and J Wagner designed and planned the study.",
+      "page_number": null
+    },
+    {
+      "text_id": 228,
+      "paragraph_id": 74,
+      "section_id": 20,
+      "text": "N D Brandt conducted the data analysis and drafted the manuscript.",
+      "page_number": null
+    },
+    {
+      "text_id": 229,
+      "paragraph_id": 74,
+      "section_id": 20,
+      "text": "N D Brandt and N Ram designed the figures.",
+      "page_number": null
+    },
+    {
+      "text_id": 230,
+      "paragraph_id": 74,
+      "section_id": 20,
+      "text": "All authors discussed the results, contributed to writing the manuscript, and approved the final manuscript for submission.",
+      "page_number": null
+    },
+    {
+      "text_id": 231,
+      "paragraph_id": 75,
+      "section_id": 21,
+      "text": "Fig 1 Frequency of chronological age at each individual's baseline.",
+      "page_number": null
+    },
+    {
+      "text_id": 232,
+      "paragraph_id": 76,
+      "section_id": 22,
+      "text": "Fig.2.",
+      "page_number": null
+    },
+    {
+      "text_id": 233,
+      "paragraph_id": 76,
+      "section_id": 22,
+      "text": "Cohort effects in model-implied personality trajectories, separately for each of the Big Five traits.",
+      "page_number": null
+    },
+    {
+      "text_id": 234,
+      "paragraph_id": 76,
+      "section_id": 22,
+      "text": "Results are from growth-curve models demonstrating the model-implied within-person trajectories of personality traits (without covariates).",
+      "page_number": null
+    },
+    {
+      "text_id": 235,
+      "paragraph_id": 76,
+      "section_id": 22,
+      "text": "Short, thick lines reflect model-implied within-person changes in 1-year age increments (over 5 years).",
+      "page_number": null
+    },
+    {
+      "text_id": 236,
+      "paragraph_id": 76,
+      "section_id": 22,
+      "text": "Long, thin lines reflect the single linear age and selection trend plotted for each cohort separately (born between1883-1913: n = 1,405; born between 1914-1944: n = 2,386; born between 1945-1976: n = 941).",
+      "page_number": null
+    },
+    {
+      "text_id": 237,
+      "paragraph_id": 77,
+      "section_id": 23,
+      "text": "Fig.3.",
+      "page_number": null
+    },
+    {
+      "text_id": 238,
+      "paragraph_id": 77,
+      "section_id": 23,
+      "text": "Cohort effects in model-implied personality trajectories including covariates, separately for each of the Big Five traits and broken down by sex for conscientiousness.",
+      "page_number": null
+    },
+    {
+      "text_id": 239,
+      "paragraph_id": 77,
+      "section_id": 23,
+      "text": "Results are from conditional growth-curve models demonstrating the model-implied within-person trajectories of personality traits with sex and years spent in formal education as covariates.",
+      "page_number": null
+    },
+    {
+      "text_id": 240,
+      "paragraph_id": 77,
+      "section_id": 23,
+      "text": "Short, thick lines reflect model-implied within-person changes in 1-year age increments (over 5 years).",
+      "page_number": null
+    },
+    {
+      "text_id": 241,
+      "paragraph_id": 77,
+      "section_id": 23,
+      "text": "Long, thin lines reflect the single linear age and selection trend plotted for each cohort separately (born between1883-1913: n = 1,405; born between 1914-1944: n = 2,386; born between 1945-1976: n = 941).",
+      "page_number": null
+    },
+    {
+      "text_id": 242,
+      "paragraph_id": 77,
+      "section_id": 23,
+      "text": "Red ovals highlight main differences between women and men.",
+      "page_number": null
+    },
+    {
+      "text_id": 243,
+      "paragraph_id": 78,
+      "section_id": 24,
+      "text": "Test of Behavioral Rigidity (TBR) Items Used to Measure Big Five Personality Traits",
+      "page_number": null
+    },
+    {
+      "text_id": 244,
+      "paragraph_id": 79,
+      "section_id": 25,
+      "text": "Descriptive Statistics and Correlations for Key Variables in 2005 (Joint Assessment Wave of Test of Behavioral Rigidity and NEO Personality Personality sum scores are reported at 2005-the time point when both the Test of Behavioral Rigidity (TBR) and the NEO Personality Inventory-Revised (NEO-PI-R) items were assessed.",
+      "page_number": null
+    },
+    {
+      "text_id": 245,
+      "paragraph_id": 79,
+      "section_id": 25,
+      "text": "The correlations below the diagonal are between TBR-based scales and other study variables, whereas correlations on the diagonal (indicated in boldface) and above the diagonal are within NEO scales (manifest correlations are given in parentheses).",
+      "page_number": null
+    },
+    {
+      "text_id": 246,
+      "paragraph_id": 79,
+      "section_id": 25,
+      "text": "Values in brackets indicate 95% confidence intervals.",
+      "page_number": null
+    },
+    {
+      "text_id": 247,
+      "paragraph_id": 79,
+      "section_id": 25,
+      "text": "In the left-hand column, values in parentheses indicate the range of the variable.",
+      "page_number": null
+    },
+    {
+      "text_id": 248,
+      "paragraph_id": 79,
+      "section_id": 25,
+      "text": "Education refers to maximum education.",
+      "page_number": null
+    },
+    {
+      "text_id": 249,
+      "paragraph_id": 79,
+      "section_id": 25,
+      "text": "Age at Time 1 refers to participants' age at their individual first assessment.",
+      "page_number": null
+    },
+    {
+      "text_id": 250,
+      "paragraph_id": 79,
+      "section_id": 25,
+      "text": "Sex was coded 0 for men and 1",
+      "page_number": null
+    },
+    {
+      "text_id": 251,
+      "paragraph_id": 80,
+      "section_id": 26,
+      "text": "Results From Growth Models of Personality: Differences by Age, Sex, Education, and Cohort (Model 3)Parameter",
+      "page_number": null
+    },
+    {
+      "text_id": 252,
+      "paragraph_id": 81,
+      "section_id": 27,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 253,
+      "paragraph_id": 82,
+      "section_id": 27,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 254,
+      "paragraph_id": 83,
+      "section_id": 27,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 255,
+      "paragraph_id": 84,
+      "section_id": 27,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 256,
+      "paragraph_id": 85,
+      "section_id": 27,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 257,
+      "paragraph_id": 86,
+      "section_id": 27,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 258,
+      "paragraph_id": 87,
+      "section_id": 27,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 259,
+      "paragraph_id": 88,
+      "section_id": 27,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 260,
+      "paragraph_id": 89,
+      "section_id": 27,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 261,
+      "paragraph_id": 90,
+      "section_id": 27,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 262,
+      "paragraph_id": 91,
+      "section_id": 27,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 263,
+      "paragraph_id": 92,
+      "section_id": 27,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 264,
+      "paragraph_id": 93,
+      "section_id": 27,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 265,
+      "paragraph_id": 94,
+      "section_id": 27,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 266,
+      "paragraph_id": 95,
+      "section_id": 27,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 267,
+      "paragraph_id": 96,
+      "section_id": 27,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 268,
+      "paragraph_id": 97,
+      "section_id": 27,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 269,
+      "paragraph_id": 98,
+      "section_id": 27,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 270,
+      "paragraph_id": 99,
+      "section_id": 27,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 271,
+      "paragraph_id": 100,
+      "section_id": 27,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 272,
+      "paragraph_id": 101,
+      "section_id": 27,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 273,
+      "paragraph_id": 102,
+      "section_id": 27,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 274,
+      "paragraph_id": 103,
+      "section_id": 27,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 275,
+      "paragraph_id": 104,
+      "section_id": 27,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 276,
+      "paragraph_id": 105,
+      "section_id": 27,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 277,
+      "paragraph_id": 106,
+      "section_id": 27,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 278,
+      "paragraph_id": 107,
+      "section_id": 27,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 279,
+      "paragraph_id": 108,
+      "section_id": 27,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 280,
+      "paragraph_id": 109,
+      "section_id": 27,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 281,
+      "paragraph_id": 110,
+      "section_id": 27,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 282,
+      "paragraph_id": 111,
+      "section_id": 27,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 283,
+      "paragraph_id": 112,
+      "section_id": 27,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 284,
+      "paragraph_id": 113,
+      "section_id": 27,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 285,
+      "paragraph_id": 114,
+      "section_id": 27,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 286,
+      "paragraph_id": 115,
+      "section_id": 27,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 287,
+      "paragraph_id": 116,
+      "section_id": 27,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 288,
+      "paragraph_id": 117,
+      "section_id": 27,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 289,
+      "paragraph_id": 118,
+      "section_id": 27,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 290,
+      "paragraph_id": 119,
+      "section_id": 27,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 291,
+      "paragraph_id": 120,
+      "section_id": 27,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 292,
+      "paragraph_id": 121,
+      "section_id": 27,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 293,
+      "paragraph_id": 122,
+      "section_id": 27,
+      "text": "",
+      "page_number": null
+    },
+    {
+      "text_id": 294,
+      "paragraph_id": 123,
+      "section_id": 27,
+      "text": "",
+      "page_number": null
+    }
+  ],
+  "section": [
+    {
+      "section_id": 0,
+      "header": "Abstract",
+      "parent_section_id": null,
+      "section_type": "abstract",
+      "classification_score": null
+    },
+    {
+      "section_id": 1,
+      "header": "[div-01]",
+      "parent_section_id": null,
+      "section_type": "intro",
+      "classification_score": null
+    },
+    {
+      "section_id": 2,
+      "header": "Personality Characteristics and Historical Change",
+      "parent_section_id": null,
+      "section_type": "intro",
+      "classification_score": null
+    },
+    {
+      "section_id": 3,
+      "header": "Statement of Relevance",
+      "parent_section_id": null,
+      "section_type": "intro",
+      "classification_score": null
+    },
+    {
+      "section_id": 4,
+      "header": "The Present Research",
+      "parent_section_id": null,
+      "section_type": "intro",
+      "classification_score": null
+    },
+    {
+      "section_id": 5,
+      "header": "Method",
+      "parent_section_id": null,
+      "section_type": "method",
+      "classification_score": null
+    },
+    {
+      "section_id": 6,
+      "header": "Participants",
+      "parent_section_id": null,
+      "section_type": "method",
+      "classification_score": null
+    },
+    {
+      "section_id": 7,
+      "header": "Measures",
+      "parent_section_id": null,
+      "section_type": "method",
+      "classification_score": null
+    },
+    {
+      "section_id": 8,
+      "header": "Analytic strategy",
+      "parent_section_id": null,
+      "section_type": "method",
+      "classification_score": null
+    },
+    {
+      "section_id": 9,
+      "header": "Results",
+      "parent_section_id": null,
+      "section_type": "results",
+      "classification_score": null
+    },
+    {
+      "section_id": 10,
+      "header": "Developmental trajectories and age gradients of personality traits",
+      "parent_section_id": null,
+      "section_type": "results",
+      "classification_score": null
+    },
+    {
+      "section_id": 11,
+      "header": "Cohort-related differences in developmental trajectories of personality traits",
+      "parent_section_id": null,
+      "section_type": "results",
+      "classification_score": null
+    },
+    {
+      "section_id": 12,
+      "header": "Sex and education as explanatory covariates",
+      "parent_section_id": null,
+      "section_type": "results",
+      "classification_score": null
+    },
+    {
+      "section_id": 13,
+      "header": "Discussion",
+      "parent_section_id": null,
+      "section_type": "discussion",
+      "classification_score": null
+    },
+    {
+      "section_id": 14,
+      "header": "Strength, limitations, and outlook",
+      "parent_section_id": null,
+      "section_type": "discussion",
+      "classification_score": null
+    },
+    {
+      "section_id": 15,
+      "header": "Conclusion",
+      "parent_section_id": null,
+      "section_type": "discussion",
+      "classification_score": null
+    },
+    {
+      "section_id": 16,
+      "header": "Transparency",
+      "parent_section_id": null,
+      "section_type": "discussion",
+      "classification_score": null
+    },
+    {
+      "section_id": 17,
+      "header": "Funding",
+      "parent_section_id": null,
+      "section_type": "funding",
+      "classification_score": null
+    },
+    {
+      "section_id": 18,
+      "header": "Open Practices",
+      "parent_section_id": null,
+      "section_type": "funding",
+      "classification_score": null
+    },
+    {
+      "section_id": 19,
+      "header": "Declaration of Conflicting Interests",
+      "parent_section_id": null,
+      "section_type": "conflict",
+      "classification_score": null
+    },
+    {
+      "section_id": 20,
+      "header": "Author Contributions",
+      "parent_section_id": null,
+      "section_type": "contribution",
+      "classification_score": null
+    },
+    {
+      "section_id": 21,
+      "header": ". 1 .",
+      "parent_section_id": null,
+      "section_type": "figure",
+      "classification_score": null
+    },
+    {
+      "section_id": 22,
+      "header": "Fig 2",
+      "parent_section_id": null,
+      "section_type": "figure",
+      "classification_score": null
+    },
+    {
+      "section_id": 23,
+      "header": "Fig 3",
+      "parent_section_id": null,
+      "section_type": "figure",
+      "classification_score": null
+    },
+    {
+      "section_id": 24,
+      "header": "Table 1 .",
+      "parent_section_id": null,
+      "section_type": "table",
+      "classification_score": null
+    },
+    {
+      "section_id": 25,
+      "header": "Table 2 .",
+      "parent_section_id": null,
+      "section_type": "table",
+      "classification_score": null
+    },
+    {
+      "section_id": 26,
+      "header": "Table 4 .",
+      "parent_section_id": null,
+      "section_type": "table",
+      "classification_score": null
+    },
+    {
+      "section_id": 27,
+      "header": "References",
+      "parent_section_id": null,
+      "section_type": "references",
+      "classification_score": null
+    }
+  ],
+  "url": [
+    {
+      "href": "https://osf.io/px57h",
+      "link_text": null,
+      "text_id": 74
+    },
+    {
+      "href": "https://osf.io/s8zk5",
+      "link_text": null,
+      "text_id": 105
+    },
+    {
+      "href": "https://osf.io/px57h",
+      "link_text": null,
+      "text_id": 132
+    },
+    {
+      "href": "sls.psychiatry.uw.edu",
+      "link_text": null,
+      "text_id": 218
+    },
+    {
+      "href": "uw.edu",
+      "link_text": null,
+      "text_id": 218
+    },
+    {
+      "href": "https://osf.io/s8zk5",
+      "link_text": null,
+      "text_id": 223
+    }
+  ],
+  "bib": [
+    {
+      "bib_type": "article",
+      "doi": "10.1037/0003-066X.55.5.469",
+      "title": "Emerging adulthood: A theory of development from the late teens through the twenties",
+      "authors": "Arnett, J J",
+      "editors": "",
+      "publisher": "",
+      "year": 2000,
+      "volume": "55",
+      "issue": "5",
+      "first_page": "469",
+      "last_page": "480",
+      "container": "American Psychologist",
+      "bib_id": 0,
+      "year_suffix": "",
+      "text_id": 252
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "Life span theory in developmental psychology",
+      "authors": "Baltes, P B; Lindenberger, U; Staudinger, U M",
+      "editors": "Lerner, R M",
+      "publisher": "Wiley",
+      "year": 2006,
+      "volume": "I",
+      "issue": "",
+      "first_page": "569",
+      "last_page": "664",
+      "container": "",
+      "bib_id": 1,
+      "year_suffix": "",
+      "text_id": 253
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.18637/jss.v067.i01",
+      "title": "Fitting linear mixed-effects models using lme4",
+      "authors": "Bates, D; Mächler, M; Bolker, S; Walker, S",
+      "editors": "",
+      "publisher": "",
+      "year": 2015,
+      "volume": "67",
+      "issue": "1",
+      "first_page": null,
+      "last_page": null,
+      "container": "Journal of Statistical Software",
+      "bib_id": 2,
+      "year_suffix": "",
+      "text_id": 254
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1016/j.intell.2004.07.008",
+      "title": "Rising mean IQ: Cognitive demand of mathematics education for young children, population exposure to formal schooling, and the neurobiology of the prefrontal cortex",
+      "authors": "Blair, C; Gamson, D; Thorne, S; Baker, D",
+      "editors": "",
+      "publisher": "",
+      "year": 2005,
+      "volume": "33",
+      "issue": "1",
+      "first_page": "93",
+      "last_page": "106",
+      "container": "Intelligence",
+      "bib_id": 3,
+      "year_suffix": "",
+      "text_id": 255
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1177/0956797613498396",
+      "title": "Personality maturation around the world: A cross-cultural examination of social-investment theory",
+      "authors": "Bleidorn, W; Klimstra, T A; Denissen, J J A; Rentfrow, P J; Potter, J; Gosling, S D",
+      "editors": "",
+      "publisher": "",
+      "year": 2013,
+      "volume": "24",
+      "issue": "12",
+      "first_page": "2530",
+      "last_page": "2540",
+      "container": "Psychological Science",
+      "bib_id": 4,
+      "year_suffix": "",
+      "text_id": 256
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1027/1015-5759/a000490",
+      "title": "Personality across the lifespan. Exploring measurement invariance of a short Big Five Inventory from ages 11 to 84",
+      "authors": "Brandt, N D; Becker, M; Tetzner, J; Brunner, M; Kuhl, P; Maaz, K",
+      "editors": "",
+      "publisher": "",
+      "year": 2020,
+      "volume": "36",
+      "issue": "2",
+      "first_page": "162",
+      "last_page": "173",
+      "container": "European Journal of Psychological Assessment",
+      "bib_id": 5,
+      "year_suffix": "",
+      "text_id": 257
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1111/jopy.12332",
+      "title": "Personality change across the life span: Insights from a cross-cultural, longitudinal study",
+      "authors": "Chopik, W J; Kitayama, S",
+      "editors": "",
+      "publisher": "",
+      "year": 2018,
+      "volume": "86",
+      "issue": "3",
+      "first_page": "508",
+      "last_page": "521",
+      "container": "Journal of Personality",
+      "bib_id": 6,
+      "year_suffix": "",
+      "text_id": 258
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "NEO PI-R and NEO-FFI professional manual",
+      "authors": "Costa, P T; Jr, ; Mccrae, R R",
+      "editors": "",
+      "publisher": "",
+      "year": 1992,
+      "volume": "",
+      "issue": "",
+      "first_page": null,
+      "last_page": null,
+      "container": "Psychological Assessment Resources",
+      "bib_id": 7,
+      "year_suffix": "",
+      "text_id": 259
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1037/bul0000138",
+      "title": "Perfectionism is increasing over time: A meta-analysis of birth cohort differences from 1989 to 2016",
+      "authors": "Curran, T; Hill, A P",
+      "editors": "",
+      "publisher": "",
+      "year": 2019,
+      "volume": "145",
+      "issue": "4",
+      "first_page": "410",
+      "last_page": "429",
+      "container": "Psychological Bulletin",
+      "bib_id": 8,
+      "year_suffix": "",
+      "text_id": 260
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1037/dev0000527",
+      "title": "Age variations in cohort differences in the United States: Older adults report fewer constraints nowadays than those 18 years ago, but mastery beliefs are diminished among younger adults",
+      "authors": "Drewelies, J; Agrigoroaei, S; Lachman, M E; Gerstorf, D",
+      "editors": "",
+      "publisher": "",
+      "year": 2018,
+      "volume": "54",
+      "issue": "8",
+      "first_page": "1408",
+      "last_page": "1425",
+      "container": "Developmental Psychology",
+      "bib_id": 9,
+      "year_suffix": "",
+      "text_id": 261
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1177/1073191120913952",
+      "title": "Mapping Big Five personality traits within and across domains of interpersonal functioning",
+      "authors": "Du, T V; Yardley, A E; Thomas, K M",
+      "editors": "",
+      "publisher": "",
+      "year": 2021,
+      "volume": "28",
+      "issue": "5",
+      "first_page": "1358",
+      "last_page": "1375",
+      "container": "Assessment",
+      "bib_id": 10,
+      "year_suffix": "",
+      "text_id": 262
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "",
+      "authors": "Elder, G H; Jr, ",
+      "editors": "",
+      "publisher": "University of Chicago Press",
+      "year": 1974,
+      "volume": "",
+      "issue": "",
+      "first_page": null,
+      "last_page": null,
+      "container": "",
+      "bib_id": 11,
+      "year_suffix": "",
+      "text_id": 263
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1017/S0144686X04002545",
+      "title": "Family, work and quality of life: Changing economic and social roles through the lifecourse",
+      "authors": "Evandrou, M; Glaser, K",
+      "editors": "",
+      "publisher": "",
+      "year": 2004,
+      "volume": "24",
+      "issue": "5",
+      "first_page": "771",
+      "last_page": "791",
+      "container": "Ageing and Society",
+      "bib_id": 12,
+      "year_suffix": "",
+      "text_id": 264
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1037/amp0000617",
+      "title": "The bucket list effect: Why leisure goals are often deferred until retirement",
+      "authors": "Freund, A M",
+      "editors": "",
+      "publisher": "",
+      "year": 2020,
+      "volume": "75",
+      "issue": "4",
+      "first_page": "499",
+      "last_page": "510",
+      "container": "American Psychologist",
+      "bib_id": 13,
+      "year_suffix": "",
+      "text_id": 265
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1159/000189213",
+      "title": "Psychological consequences of longevity",
+      "authors": "Freund, A M; Nikitin, J; Ritter, J O",
+      "editors": "",
+      "publisher": "",
+      "year": 2009,
+      "volume": "52",
+      "issue": "1",
+      "first_page": "1",
+      "last_page": "37",
+      "container": "Human Development",
+      "bib_id": 14,
+      "year_suffix": "",
+      "text_id": 266
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1037/a0024290",
+      "title": "The \"CEO\" of women's work lives: How Big Five conscientiousness, extraversion, and openness predict 50 years of work experiences in a changing sociocultural context",
+      "authors": "George, L G; Helson, R; John, O P",
+      "editors": "",
+      "publisher": "",
+      "year": 2011,
+      "volume": "101",
+      "issue": "4",
+      "first_page": "812",
+      "last_page": "830",
+      "container": "Journal of Personality and Social Psychology",
+      "bib_id": 15,
+      "year_suffix": "",
+      "text_id": 267
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1037/pag0000389",
+      "title": "Cohort differences in adult-life trajectories of internal and external control beliefs: A tale of more and better maintained internal control and fewer external constraints",
+      "authors": "Gerstorf, D; Drewelies, J; Duezel, S; Smith, J; Wahl, H.-W; Schilling, O K; Kunzmann, U; Siebert, J S; Katzorreck, M; Eibich, P; Demuth, I; Steinhagen-Thiessen, E; Wagner, G G; Lindenberger, U; Heckhausen, J; Ram, N",
+      "editors": "",
+      "publisher": "",
+      "year": 2019,
+      "volume": "34",
+      "issue": "8",
+      "first_page": "1090",
+      "last_page": "1108",
+      "container": "Psychology and Aging",
+      "bib_id": 16,
+      "year_suffix": "",
+      "text_id": 268
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1037/a0023426",
+      "title": "Cohort differences in cognitive aging and terminal decline in the Seattle Longitudinal Study",
+      "authors": "Gerstorf, D; Ram, N; Hoppmann, C; Willis, S L; Schaie, K W",
+      "editors": "",
+      "publisher": "",
+      "year": 2011,
+      "volume": "47",
+      "issue": "4",
+      "first_page": "1026",
+      "last_page": "1041",
+      "container": "Developmental Psychology",
+      "bib_id": 17,
+      "year_suffix": "",
+      "text_id": 269
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1002/per.2259",
+      "title": "Trajectories of Big Five personality traits: A coordinated analysis of 16 longitudinal samples",
+      "authors": "Graham, E K; Weston, S J; Gerstorf, D; Yoneda, T B; Booth, T; Beam, C R; Petkus, A J; Drewelies, J; Hall, A N; Bastarache, E D; Estabrook, R; Katz, M J; Turiano, N A; Lindenberger, U; Smith, J; Wagner, G G; Pedersen, N L; Allemand, M; Spiro, A; Mroczek, . .; , D K",
+      "editors": "",
+      "publisher": "",
+      "year": 2020,
+      "volume": "34",
+      "issue": "3",
+      "first_page": "301",
+      "last_page": "321",
+      "container": "European Journal of Personality",
+      "bib_id": 18,
+      "year_suffix": "",
+      "text_id": 270
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "",
+      "authors": "Grimm, K; Ram, N; Eastabrook, R",
+      "editors": "",
+      "publisher": "Guilford Press",
+      "year": 2016,
+      "volume": "",
+      "issue": "",
+      "first_page": null,
+      "last_page": null,
+      "container": "",
+      "bib_id": 19,
+      "year_suffix": "",
+      "text_id": 271
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1002/per.1945",
+      "title": "A three-part framework for self-regulated personality development across adulthood: Self-regulation and personality development",
+      "authors": "Hennecke, M; Bleidorn, W; Denissen, J J A; Wood, D",
+      "editors": "",
+      "publisher": "",
+      "year": 2014,
+      "volume": "28",
+      "issue": "3",
+      "first_page": "289",
+      "last_page": "299",
+      "container": "European Journal of Personality",
+      "bib_id": 20,
+      "year_suffix": "",
+      "text_id": 272
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1016/B978-0-12-804674-6.00031-4",
+      "title": "Cohort differences in personality",
+      "authors": "Hülür, G",
+      "editors": "Specht, J",
+      "publisher": "Elsevier",
+      "year": 2017,
+      "volume": "",
+      "issue": "",
+      "first_page": "519",
+      "last_page": "536",
+      "container": "",
+      "bib_id": 21,
+      "year_suffix": "",
+      "text_id": 273
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "Paradigm shift to the integrative Big Five trait taxonomy: History, measurement, and conceptual issues",
+      "authors": "John, O P; Naumann, L P; Soto, C J",
+      "editors": "John, O P; Robins, R W; Pervin, L A",
+      "publisher": "Guilford Press",
+      "year": 2008,
+      "volume": "",
+      "issue": "",
+      "first_page": "114",
+      "last_page": "158",
+      "container": "",
+      "bib_id": 22,
+      "year_suffix": "",
+      "text_id": 274
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1257/jep.20.3.27",
+      "title": "Changes in labor force participation in the United States",
+      "authors": "Juhn, C; Potter, S",
+      "editors": "",
+      "publisher": "",
+      "year": 2006,
+      "volume": "20",
+      "issue": "",
+      "first_page": "27",
+      "last_page": "46",
+      "container": "Journal of Economic Perspectives",
+      "bib_id": 23,
+      "year_suffix": "",
+      "text_id": 275
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1007/s10804-008-9039-6",
+      "title": "Cohort differences in personal goals and life satisfaction in young adulthood: Evidence for historical shifts in developmental tasks",
+      "authors": "Krings, F; Bangerter, A; Gomez, V; Grob, A",
+      "editors": "",
+      "publisher": "",
+      "year": 2008,
+      "volume": "15",
+      "issue": "2",
+      "first_page": "93",
+      "last_page": "105",
+      "container": "Journal of Adult Development",
+      "bib_id": 24,
+      "year_suffix": "",
+      "text_id": 276
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1177/0022022113520075",
+      "title": "Gender stereotypes of personality: Universal and accurate?",
+      "authors": "Löckenhoff, C E; Chan, W; Mccrae, R R; De Fruyt, F; Jussim, L; De Bolle, M; Costa, P T; Sutin, A R; Realo, A; Allik, J; Nakazato, K; Shimonaka, Y; Hr ˇebíc ˇková, M; Graf, S; Yik, M; Ficková, E; Brunner-Sciarra, M; Leibovich De Figueora, N; Schmidt, V; Terracciano, . .; , A",
+      "editors": "",
+      "publisher": "",
+      "year": 2014,
+      "volume": "45",
+      "issue": "5",
+      "first_page": "675",
+      "last_page": "694",
+      "container": "Journal of Cross-Cultural Psychology",
+      "bib_id": 25,
+      "year_suffix": "",
+      "text_id": 277
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1093/geronb/58.3.P153",
+      "title": "Modeling intraindividual change in personality traits: Findings from the Normative Aging Study",
+      "authors": "Mroczek, D K; Spiro, A",
+      "editors": "",
+      "publisher": "",
+      "year": 2003,
+      "volume": "58",
+      "issue": "3",
+      "first_page": "153",
+      "last_page": "P165",
+      "container": "The Journals of Gerontology Series B: Psychological Sciences and Social Sciences",
+      "bib_id": 26,
+      "year_suffix": "",
+      "text_id": 278
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1016/B978-0-12-804674-6.00006-5",
+      "title": "On the role of personality in late life",
+      "authors": "Mueller, S; Wagner, J; Gerstorf, D",
+      "editors": "Specht, J",
+      "publisher": "Elsevier",
+      "year": 2017,
+      "volume": "",
+      "issue": "",
+      "first_page": "69",
+      "last_page": "84",
+      "container": "",
+      "bib_id": 27,
+      "year_suffix": "",
+      "text_id": 279
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1037/a0014996",
+      "title": "A meta-analysis of the five-factor model of personality and academic performance",
+      "authors": "Poropat, A E",
+      "editors": "",
+      "publisher": "",
+      "year": 2009,
+      "volume": "135",
+      "issue": "2",
+      "first_page": "322",
+      "last_page": "338",
+      "container": "Psychological Bulletin",
+      "bib_id": 28,
+      "year_suffix": "",
+      "text_id": 280
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "",
+      "authors": "Core, Team",
+      "editors": "",
+      "publisher": "",
+      "year": 2020,
+      "volume": "",
+      "issue": "",
+      "first_page": null,
+      "last_page": null,
+      "container": "",
+      "bib_id": 29,
+      "year_suffix": "",
+      "text_id": 281
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "",
+      "authors": "",
+      "editors": "",
+      "publisher": "",
+      "year": null,
+      "volume": "",
+      "issue": "",
+      "first_page": null,
+      "last_page": null,
+      "container": "",
+      "bib_id": 30,
+      "year_suffix": null,
+      "text_id": 282
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1016/B978-0-12-804674-6.00011-9",
+      "title": "A critical evaluation of the Neo-Socioanalytic Model of personality",
+      "authors": "Roberts, B W; Nickel, L B",
+      "editors": "Specht, J",
+      "publisher": "Elsevier",
+      "year": 2017,
+      "volume": "",
+      "issue": "",
+      "first_page": "157",
+      "last_page": "177",
+      "container": "",
+      "bib_id": 31,
+      "year_suffix": "",
+      "text_id": 283
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1037/0033-2909.132.1.1",
+      "title": "Patterns of mean-level change in personality traits across the life course: A meta-analysis of longitudinal studies",
+      "authors": "Roberts, B W; Walton, K E; Viechtbauer, W",
+      "editors": "",
+      "publisher": "",
+      "year": 2006,
+      "volume": "132",
+      "issue": "1",
+      "first_page": "1",
+      "last_page": "25",
+      "container": "Psychological Bulletin",
+      "bib_id": 32,
+      "year_suffix": "",
+      "text_id": 284
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1037/h0022371",
+      "title": "A general model for the study of developmental problems",
+      "authors": "Schaie, K W",
+      "editors": "",
+      "publisher": "",
+      "year": 1965,
+      "volume": "64",
+      "issue": "2",
+      "first_page": "92",
+      "last_page": "107",
+      "container": "Psychological Bulletin",
+      "bib_id": 33,
+      "year_suffix": "",
+      "text_id": 285
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "",
+      "authors": "Schaie, K W",
+      "editors": "",
+      "publisher": "Oxford University Press",
+      "year": 2013,
+      "volume": "",
+      "issue": "",
+      "first_page": null,
+      "last_page": null,
+      "container": "",
+      "bib_id": 34,
+      "year_suffix": "",
+      "text_id": 286
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "",
+      "authors": "Schaie, K W; Parham, I A",
+      "editors": "",
+      "publisher": "Consulting Psychologists Press",
+      "year": 1975,
+      "volume": "",
+      "issue": "",
+      "first_page": null,
+      "last_page": null,
+      "container": "",
+      "bib_id": 35,
+      "year_suffix": "",
+      "text_id": 287
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1037/a0022874",
+      "title": "Cohort differences in Big Five personality factors over a period of 25 years",
+      "authors": "Smits, I A M; Dolan, C V; Vorst, H C M; Wicherts, J M; Timmerman, M E",
+      "editors": "",
+      "publisher": "",
+      "year": 2011,
+      "volume": "100",
+      "issue": "6",
+      "first_page": "1124",
+      "last_page": "1138",
+      "container": "Journal of Personality and Social Psychology",
+      "bib_id": 36,
+      "year_suffix": "",
+      "text_id": 288
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "",
+      "authors": "Snijders, T A B; Bosker, R K",
+      "editors": "",
+      "publisher": "SAGE",
+      "year": 2012,
+      "volume": "",
+      "issue": "",
+      "first_page": null,
+      "last_page": null,
+      "container": "",
+      "bib_id": 37,
+      "year_suffix": "",
+      "text_id": 289
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1177/0956797619831612",
+      "title": "How replicable are links between personality traits and consequential life outcomes? The Life Outcomes of Personality Replication Project",
+      "authors": "Soto, C J",
+      "editors": "",
+      "publisher": "",
+      "year": 2019,
+      "volume": "30",
+      "issue": "5",
+      "first_page": "711",
+      "last_page": "727",
+      "container": "Psychological Science",
+      "bib_id": 38,
+      "year_suffix": "",
+      "text_id": 290
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1037/a0024950",
+      "title": "Stability and change of personality across the life course: The impact of age and major life events on mean-level and rank-order stability of the Big Five",
+      "authors": "Specht, J; Egloff, B; Schmukle, S C",
+      "editors": "",
+      "publisher": "",
+      "year": 2011,
+      "volume": "101",
+      "issue": "4",
+      "first_page": "862",
+      "last_page": "882",
+      "container": "Journal of Personality and Social Psychology",
+      "bib_id": 39,
+      "year_suffix": "",
+      "text_id": 291
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1037/0882-7974.20.3.493",
+      "title": "Hierarchical linear modeling analyses of the NEO-PI-R Scales in the Baltimore Longitudinal Study of Aging",
+      "authors": "Terracciano, A; Mccrae, R R; Brant, L J; Costa, P T; Jr, ",
+      "editors": "",
+      "publisher": "",
+      "year": 2005,
+      "volume": "20",
+      "issue": "3",
+      "first_page": "493",
+      "last_page": "506",
+      "container": "Psychology and Aging",
+      "bib_id": 40,
+      "year_suffix": "",
+      "text_id": 292
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1016/S0191-8869(00)00066-0",
+      "title": "Birth cohort changes in extraversion: A cross-temporal meta-analysis, 1966-1993",
+      "authors": "Twenge, J M",
+      "editors": "",
+      "publisher": "",
+      "year": 2001,
+      "volume": "30",
+      "issue": "5",
+      "first_page": "735",
+      "last_page": "748",
+      "container": "Personality and Individual Differences",
+      "bib_id": 41,
+      "year_suffix": "",
+      "text_id": 293
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1037/pspp0000071",
+      "title": "Personality trait development at the end of life: Antecedents and correlates of mean-level trajectories",
+      "authors": "Wagner, J; Ram, N; Smith, J; Gerstorf, D",
+      "editors": "",
+      "publisher": "",
+      "year": 2016,
+      "volume": "111",
+      "issue": "3",
+      "first_page": "411",
+      "last_page": "429",
+      "container": "Journal of Personality and Social Psychology",
+      "bib_id": 42,
+      "year_suffix": "",
+      "text_id": 294
+    }
+  ],
+  "xref": [
+    {
+      "xref_id": 0,
+      "xref_type": "bib",
+      "contents": "(Arnett, 2000)",
+      "text_id": 21
+    },
+    {
+      "xref_id": 1,
+      "xref_type": "bib",
+      "contents": "(Baltes et al., 2006;",
+      "text_id": 10
+    },
+    {
+      "xref_id": 1,
+      "xref_type": "bib",
+      "contents": "Baltes et al., 2006;",
+      "text_id": 158
+    },
+    {
+      "xref_id": 2,
+      "xref_type": "bib",
+      "contents": "Bates et al., 2015)",
+      "text_id": 104
+    },
+    {
+      "xref_id": 3,
+      "xref_type": "bib",
+      "contents": "(Blair et al., 2005)",
+      "text_id": 21
+    },
+    {
+      "xref_id": 3,
+      "xref_type": "bib",
+      "contents": "(Blair et al., 2005)",
+      "text_id": 22
+    },
+    {
+      "xref_id": 4,
+      "xref_type": "bib",
+      "contents": "(Bleidorn et al., 2013)",
+      "text_id": 25
+    },
+    {
+      "xref_id": 4,
+      "xref_type": "bib",
+      "contents": "(Bleidorn et al., 2013;",
+      "text_id": 116
+    },
+    {
+      "xref_id": 4,
+      "xref_type": "bib",
+      "contents": "(Bleidorn et al., 2013;",
+      "text_id": 183
+    },
+    {
+      "xref_id": 4,
+      "xref_type": "bib",
+      "contents": "(Bleidorn et al., 2013)",
+      "text_id": 186
+    },
+    {
+      "xref_id": 5,
+      "xref_type": "bib",
+      "contents": "Brandt et al., 2020)",
+      "text_id": 72
+    },
+    {
+      "xref_id": 6,
+      "xref_type": "bib",
+      "contents": "Chopik & Kitayama, 2018)",
+      "text_id": 183
+    },
+    {
+      "xref_id": 7,
+      "xref_type": "bib",
+      "contents": "Costa & McCrae, 1992)",
+      "text_id": 69
+    },
+    {
+      "xref_id": 8,
+      "xref_type": "bib",
+      "contents": "(Curran & Hill, 2019)",
+      "text_id": 18
+    },
+    {
+      "xref_id": 9,
+      "xref_type": "bib",
+      "contents": "(Drewelies et al., 2018)",
+      "text_id": 27
+    },
+    {
+      "xref_id": 10,
+      "xref_type": "bib",
+      "contents": "(Du et al., 2021)",
+      "text_id": 29
+    },
+    {
+      "xref_id": 11,
+      "xref_type": "bib",
+      "contents": "(Elder, 1974;",
+      "text_id": 10
+    },
+    {
+      "xref_id": 11,
+      "xref_type": "bib",
+      "contents": "Elder, 1974;",
+      "text_id": 158
+    },
+    {
+      "xref_id": 12,
+      "xref_type": "bib",
+      "contents": "Evandrou & Glaser, 2004)",
+      "text_id": 199
+    },
+    {
+      "xref_id": 13,
+      "xref_type": "bib",
+      "contents": "(Freund, 2020)",
+      "text_id": 199
+    },
+    {
+      "xref_id": 14,
+      "xref_type": "bib",
+      "contents": "(Freund et al., 2009)",
+      "text_id": 188
+    },
+    {
+      "xref_id": 14,
+      "xref_type": "bib",
+      "contents": "(Freund et al., 2009)",
+      "text_id": 190
+    },
+    {
+      "xref_id": 14,
+      "xref_type": "bib",
+      "contents": "Freund et al. (2009)",
+      "text_id": 188
+    },
+    {
+      "xref_id": 14,
+      "xref_type": "bib",
+      "contents": "Freund et al. (2009)",
+      "text_id": 190
+    },
+    {
+      "xref_id": 15,
+      "xref_type": "bib",
+      "contents": "(George et al., 2011)",
+      "text_id": 16
+    },
+    {
+      "xref_id": 16,
+      "xref_type": "bib",
+      "contents": "Gerstorf et al., 2019)",
+      "text_id": 78
+    },
+    {
+      "xref_id": 17,
+      "xref_type": "bib",
+      "contents": "(Gerstorf et al., 2011)",
+      "text_id": 37
+    },
+    {
+      "xref_id": 18,
+      "xref_type": "bib",
+      "contents": "(Graham et al., 2020)",
+      "text_id": 203
+    },
+    {
+      "xref_id": 19,
+      "xref_type": "bib",
+      "contents": "(Grimm et al., 2016)",
+      "text_id": 93
+    },
+    {
+      "xref_id": 20,
+      "xref_type": "bib",
+      "contents": "(Hennecke et al., 2014)",
+      "text_id": 28
+    },
+    {
+      "xref_id": 20,
+      "xref_type": "bib",
+      "contents": "(Hennecke et al., 2014)",
+      "text_id": 167
+    },
+    {
+      "xref_id": 21,
+      "xref_type": "bib",
+      "contents": "(Hülür, 2017)",
+      "text_id": 12
+    },
+    {
+      "xref_id": 22,
+      "xref_type": "bib",
+      "contents": "( John et al., 2008)",
+      "text_id": 2
+    },
+    {
+      "xref_id": 23,
+      "xref_type": "bib",
+      "contents": "( Juhn & Potter, 2006)",
+      "text_id": 165
+    },
+    {
+      "xref_id": 24,
+      "xref_type": "bib",
+      "contents": "(Krings et al., 2008)",
+      "text_id": 13
+    },
+    {
+      "xref_id": 25,
+      "xref_type": "bib",
+      "contents": "Löckenhoff et al., 2014)",
+      "text_id": 107
+    },
+    {
+      "xref_id": 26,
+      "xref_type": "bib",
+      "contents": "(Mroczek & Spiro, 2003;",
+      "text_id": 41
+    },
+    {
+      "xref_id": 26,
+      "xref_type": "bib",
+      "contents": "(Mroczek & Spiro, 2003)",
+      "text_id": 41
+    },
+    {
+      "xref_id": 27,
+      "xref_type": "bib",
+      "contents": "(Mueller et al., 2017)",
+      "text_id": 39
+    },
+    {
+      "xref_id": 27,
+      "xref_type": "bib",
+      "contents": "(Mueller et al., 2017;",
+      "text_id": 160
+    },
+    {
+      "xref_id": 28,
+      "xref_type": "bib",
+      "contents": "Poropat, 2009)",
+      "text_id": 108
+    },
+    {
+      "xref_id": 28,
+      "xref_type": "bib",
+      "contents": "-2009;",
+      "text_id": null
+    },
+    {
+      "xref_id": 31,
+      "xref_type": "bib",
+      "contents": "Roberts & Nickel, 2017)",
+      "text_id": 6
+    },
+    {
+      "xref_id": 31,
+      "xref_type": "bib",
+      "contents": "Roberts & Nickel, 2017)",
+      "text_id": 10
+    },
+    {
+      "xref_id": 31,
+      "xref_type": "bib",
+      "contents": "Roberts & Nickel, 2017)",
+      "text_id": 160
+    },
+    {
+      "xref_id": 31,
+      "xref_type": "bib",
+      "contents": "(Roberts & Nickel, 2017)",
+      "text_id": 210
+    },
+    {
+      "xref_id": 32,
+      "xref_type": "bib",
+      "contents": "Roberts et al., 2006)",
+      "text_id": 116
+    },
+    {
+      "xref_id": 33,
+      "xref_type": "bib",
+      "contents": "Schaie, 1965)",
+      "text_id": 10
+    },
+    {
+      "xref_id": 33,
+      "xref_type": "bib",
+      "contents": "Schaie, 1965)",
+      "text_id": 158
+    },
+    {
+      "xref_id": 34,
+      "xref_type": "bib",
+      "contents": "Schaie, 2013",
+      "text_id": 53
+    },
+    {
+      "xref_id": 34,
+      "xref_type": "bib",
+      "contents": "(Schaie, 2013)",
+      "text_id": 55
+    },
+    {
+      "xref_id": 35,
+      "xref_type": "bib",
+      "contents": "(Schaie & Parham, 1975)",
+      "text_id": 66
+    },
+    {
+      "xref_id": 36,
+      "xref_type": "bib",
+      "contents": "(Smits et al., 2011)",
+      "text_id": 19
+    },
+    {
+      "xref_id": 36,
+      "xref_type": "bib",
+      "contents": "Smits et al. (2011)",
+      "text_id": null
+    },
+    {
+      "xref_id": 37,
+      "xref_type": "bib",
+      "contents": "and 2012",
+      "text_id": 55
+    },
+    {
+      "xref_id": 37,
+      "xref_type": "bib",
+      "contents": "and 2012",
+      "text_id": 56
+    },
+    {
+      "xref_id": 37,
+      "xref_type": "bib",
+      "contents": ", and 2012",
+      "text_id": 55
+    },
+    {
+      "xref_id": 37,
+      "xref_type": "bib",
+      "contents": ", and 2012",
+      "text_id": 56
+    },
+    {
+      "xref_id": 37,
+      "xref_type": "bib",
+      "contents": "(Snijders & Bosker, 2012)",
+      "text_id": 147
+    },
+    {
+      "xref_id": 39,
+      "xref_type": "bib",
+      "contents": "(Specht et al., 2011)",
+      "text_id": 22
+    },
+    {
+      "xref_id": 40,
+      "xref_type": "bib",
+      "contents": "(Terracciano et al., 2005)",
+      "text_id": 41
+    },
+    {
+      "xref_id": 41,
+      "xref_type": "bib",
+      "contents": "Twenge, 2001)",
+      "text_id": 41
+    },
+    {
+      "xref_id": 42,
+      "xref_type": "bib",
+      "contents": "(Wagner et al., 2016)",
+      "text_id": 38
+    },
+    {
+      "xref_id": null,
+      "xref_type": "bib",
+      "contents": "[ePAC]",
+      "text_id": 51
+    },
+    {
+      "xref_id": null,
+      "xref_type": "bib",
+      "contents": "1956",
+      "text_id": 55
+    },
+    {
+      "xref_id": null,
+      "xref_type": "bib",
+      "contents": ", 1970",
+      "text_id": 56
+    },
+    {
+      "xref_id": null,
+      "xref_type": "bib",
+      "contents": ", 1977",
+      "text_id": 56
+    },
+    {
+      "xref_id": null,
+      "xref_type": "bib",
+      "contents": ", 1984",
+      "text_id": 56
+    },
+    {
+      "xref_id": null,
+      "xref_type": "bib",
+      "contents": ", 1991",
+      "text_id": 56
+    },
+    {
+      "xref_id": null,
+      "xref_type": "bib",
+      "contents": ", 1998",
+      "text_id": 56
+    },
+    {
+      "xref_id": null,
+      "xref_type": "bib",
+      "contents": ", 2005",
+      "text_id": 56
+    },
+    {
+      "xref_id": null,
+      "xref_type": "bib",
+      "contents": ", 2008",
+      "text_id": 56
+    },
+    {
+      "xref_id": null,
+      "xref_type": "bib",
+      "contents": "1883-1913 1914-1944 1945-1976",
+      "text_id": null
+    },
+    {
+      "xref_id": null,
+      "xref_type": "bib",
+      "contents": "1883 and 1913, between 1914 and 1944, and between 1945 and 1976)",
+      "text_id": 90
+    },
+    {
+      "xref_id": null,
+      "xref_type": "bib",
+      "contents": "Born 1914",
+      "text_id": null
+    },
+    {
+      "xref_id": null,
+      "xref_type": "bib",
+      "contents": "-1944",
+      "text_id": null
+    },
+    {
+      "xref_id": null,
+      "xref_type": "bib",
+      "contents": "Born 1945",
+      "text_id": null
+    },
+    {
+      "xref_id": null,
+      "xref_type": "bib",
+      "contents": "-1976",
+      "text_id": null
+    },
+    {
+      "xref_id": null,
+      "xref_type": "bib",
+      "contents": "Born 1883",
+      "text_id": null
+    },
+    {
+      "xref_id": null,
+      "xref_type": "bib",
+      "contents": "-1913",
+      "text_id": null
+    },
+    {
+      "xref_id": null,
+      "xref_type": "bib",
+      "contents": "-1913: n = 1,405; born between 1914-1944: n = 2,386; born between 1945-1976",
+      "text_id": null
+    },
+    {
+      "xref_id": null,
+      "xref_type": "bib",
+      "contents": "Born 1945",
+      "text_id": 192
+    },
+    {
+      "xref_id": null,
+      "xref_type": "bib",
+      "contents": "-1976",
+      "text_id": 192
+    },
+    {
+      "xref_id": null,
+      "xref_type": "bib",
+      "contents": "Born 1914",
+      "text_id": 192
+    },
+    {
+      "xref_id": null,
+      "xref_type": "bib",
+      "contents": "-1944",
+      "text_id": 192
+    },
+    {
+      "xref_id": null,
+      "xref_type": "bib",
+      "contents": "Born 1883",
+      "text_id": 192
+    },
+    {
+      "xref_id": null,
+      "xref_type": "bib",
+      "contents": "-1913",
+      "text_id": 192
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "1",
+      "text_id": null
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "S1",
+      "text_id": 74
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "2",
+      "text_id": 143
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "3",
+      "text_id": 155
+    },
+    {
+      "xref_id": null,
+      "xref_type": "figure",
+      "contents": "S6",
+      "text_id": null
+    },
+    {
+      "xref_id": null,
+      "xref_type": "table",
+      "contents": "1",
+      "text_id": 70
+    },
+    {
+      "xref_id": null,
+      "xref_type": "table",
+      "contents": "1",
+      "text_id": 75
+    },
+    {
+      "xref_id": null,
+      "xref_type": "table",
+      "contents": "S1",
+      "text_id": 70
+    },
+    {
+      "xref_id": null,
+      "xref_type": "table",
+      "contents": "S1",
+      "text_id": 75
+    },
+    {
+      "xref_id": null,
+      "xref_type": "table",
+      "contents": "2",
+      "text_id": 73
+    },
+    {
+      "xref_id": null,
+      "xref_type": "table",
+      "contents": "2",
+      "text_id": 74
+    },
+    {
+      "xref_id": null,
+      "xref_type": "table",
+      "contents": "S2",
+      "text_id": 73
+    },
+    {
+      "xref_id": null,
+      "xref_type": "table",
+      "contents": "S2",
+      "text_id": 74
+    },
+    {
+      "xref_id": null,
+      "xref_type": "table",
+      "contents": "2",
+      "text_id": 106
+    },
+    {
+      "xref_id": null,
+      "xref_type": "table",
+      "contents": "4",
+      "text_id": 151
+    },
+    {
+      "xref_id": null,
+      "xref_type": "table",
+      "contents": "S3",
+      "text_id": 75
+    },
+    {
+      "xref_id": null,
+      "xref_type": "table",
+      "contents": "3",
+      "text_id": 111
+    },
+    {
+      "xref_id": null,
+      "xref_type": "table",
+      "contents": "3",
+      "text_id": 148
+    }
+  ],
+  "figure": [
+    {
+      "figure_id": 1,
+      "section_id": 21,
+      "image": null,
+      "page_number": null
+    },
+    {
+      "figure_id": 2,
+      "section_id": 22,
+      "image": null,
+      "page_number": null
+    },
+    {
+      "figure_id": 3,
+      "section_id": 23,
+      "image": null,
+      "page_number": null
+    }
+  ],
+  "table": [
+    {
+      "table_id": 1,
+      "section_id": 24,
+      "html": "<table>\n  <row>\n    <cell/>\n    <cell/>\n    <cell/>\n    <cell>Correlation<\/cell>\n  <\/row>\n  <row>\n    <cell>Big Five item<\/cell>\n    <cell>TBR item<\/cell>\n    <cell>Item wording<\/cell>\n    <cell>with NEO scale<\/cell>\n  <\/row>\n  <row>\n    <cell/>\n    <cell/>\n    <cell>Conscientiousness<\/cell>\n    <cell/>\n  <\/row>\n  <row>\n    <cell>C1<\/cell>\n    <cell>TBR05I70<\/cell>\n    <cell>Do you feel strongly inclined to finish whatever you are doing<\/cell>\n    <cell>.38 [.33, .43]<\/cell>\n  <\/row>\n  <row>\n    <cell/>\n    <cell/>\n    <cell>in spite of being tired of doing it? (recoded) [PB]<\/cell>\n    <cell/>\n  <\/row>\n  <row>\n    <cell>C2<\/cell>\n    <cell>TBR05I60<\/cell>\n    <cell>I am known as a hard and steady worker. (recoded) [RS]<\/cell>\n    <cell>.31 [.26, .36]<\/cell>\n  <\/row>\n  <row>\n    <cell>C3<\/cell>\n    <cell>TBR05I16<\/cell>\n    <cell>I always like to see to it that my work is carefully planned and<\/cell>\n    <cell>.38 [.33, .43]<\/cell>\n  <\/row>\n  <row>\n    <cell/>\n    <cell/>\n    <cell>organized. (recoded) [RS]<\/cell>\n    <cell/>\n  <\/row>\n  <row>\n    <cell>C4<\/cell>\n    <cell>TBR05I35<\/cell>\n    <cell>I often start things I never finish.<\/cell>\n    <cell>.48 [.43, .52]<\/cell>\n  <\/row>\n  <row>\n    <cell/>\n    <cell/>\n    <cell>Agreeableness<\/cell>\n    <cell/>\n  <\/row>\n  <row>\n    <cell>A1<\/cell>\n    <cell>TBR05I5<\/cell>\n    <cell>When someone does me a wrong, I feel that I should pay him<\/cell>\n    <cell>.27 [.22, .33]<\/cell>\n  <\/row>\n  <row>\n    <cell/>\n    <cell/>\n    <cell>back when I can, just for the principle of the thing. [SR]<\/cell>\n    <cell/>\n  <\/row>\n  <row>\n    <cell>A2<\/cell>\n    <cell>TBR05I24<\/cell>\n    <cell>I have never been in trouble with the law. (recoded) [SR]<\/cell>\n    <cell>.17 [.12, .23]<\/cell>\n  <\/row>\n  <row>\n    <cell>A3<\/cell>\n    <cell>TBR05I38<\/cell>\n    <cell>If I get too much change in a store, I always give it back.<\/cell>\n    <cell>.22 [.16, .27]<\/cell>\n  <\/row>\n  <row>\n    <cell/>\n    <cell/>\n    <cell>(recoded) [SR]<\/cell>\n    <cell/>\n  <\/row>\n<\/table>",
+      "contents": null,
+      "page_number": null
+    },
+    {
+      "table_id": 2,
+      "section_id": 25,
+      "html": "<table>\n  <row>\n    <cell/>\n    <cell>SD<\/cell>\n  <\/row>\n  <row>\n    <cell/>\n    <cell>M<\/cell>\n  <\/row>\n  <row>\n    <cell>Inventory)<\/cell>\n    <cell>Variable<\/cell>\n  <\/row>\n<\/table>",
+      "contents": null,
+      "page_number": null
+    },
+    {
+      "table_id": 3,
+      "section_id": 26,
+      "html": "<table>\n  <row>\n    <cell/>\n    <cell>SE<\/cell>\n    <cell>0.147<\/cell>\n    <cell>0.053<\/cell>\n    <cell>0.011<\/cell>\n    <cell>0.005<\/cell>\n    <cell/>\n    <cell>0.233<\/cell>\n    <cell>0.041<\/cell>\n    <cell/>\n    <cell>0.009<\/cell>\n    <cell/>\n    <cell>0.000<\/cell>\n    <cell/>\n    <cell/>\n    <cell>6.694<\/cell>\n    <cell>0.749<\/cell>\n    <cell/>\n    <cell/>\n    <cell/>\n    <cell>5.412<\/cell>\n  <\/row>\n  <row>\n    <cell>Openness<\/cell>\n    <cell>Estimate<\/cell>\n    <cell>48.725***<\/cell>\n    <cell>-0.160**<\/cell>\n    <cell>-0.044***<\/cell>\n    <cell>-0.026***<\/cell>\n    <cell/>\n    <cell>0.859***<\/cell>\n    <cell>1.173***<\/cell>\n    <cell/>\n    <cell>0.112***<\/cell>\n    <cell/>\n    <cell>0.002***<\/cell>\n    <cell/>\n    <cell/>\n    <cell>44.808<\/cell>\n    <cell>0.561<\/cell>\n    <cell/>\n    <cell>-0.002<\/cell>\n    <cell>0.334<\/cell>\n    <cell>29.289<\/cell>\n  <\/row>\n  <row>\n    <cell>Extraversion<\/cell>\n    <cell>Estimate SE<\/cell>\n    <cell>49.424*** 0.132<\/cell>\n    <cell>0.094 0.059<\/cell>\n    <cell>0.005 0.012<\/cell>\n    <cell>-0.014 0.005<\/cell>\n    <cell/>\n    <cell>-1.029* 0.263<\/cell>\n    <cell>0.701*** 0.046<\/cell>\n    <cell/>\n    <cell>0.037*** 0.011<\/cell>\n    <cell/>\n    <cell/>\n    <cell/>\n    <cell/>\n    <cell>60.489 7.777<\/cell>\n    <cell>1.057 1.028<\/cell>\n    <cell/>\n    <cell>0.000<\/cell>\n    <cell>0.100<\/cell>\n    <cell>33.038 5.748<\/cell>\n  <\/row>\n  <row>\n    <cell>Neuroticism<\/cell>\n    <cell>Estimate SE<\/cell>\n    <cell>50.754*** 0.155<\/cell>\n    <cell>-0.685*** 0.067<\/cell>\n    <cell>-0.099*** 0.011<\/cell>\n    <cell>0.024*** 0.006<\/cell>\n    <cell/>\n    <cell>-1.162*** 0.246<\/cell>\n    <cell>-0.418*** 0.044<\/cell>\n    <cell/>\n    <cell>-0.147*** 0.010<\/cell>\n    <cell/>\n    <cell>-0.002*** 0.000<\/cell>\n    <cell>0.040** 0.013<\/cell>\n    <cell/>\n    <cell>42.943 6.553<\/cell>\n    <cell>0.897 0.947<\/cell>\n    <cell/>\n    <cell>-0.001<\/cell>\n    <cell>0.180<\/cell>\n    <cell>48.068 6.933<\/cell>\n  <\/row>\n  <row>\n    <cell>Agreeableness<\/cell>\n    <cell>Estimate SE<\/cell>\n    <cell>50.156*** 0.158<\/cell>\n    <cell>0.532*** 0.065<\/cell>\n    <cell>0.089*** 0.011<\/cell>\n    <cell/>\n    <cell/>\n    <cell>4.984*** 0.250<\/cell>\n    <cell>0.060 0.044<\/cell>\n    <cell/>\n    <cell>-0.055*** 0.010<\/cell>\n    <cell>0.011 0.004<\/cell>\n    <cell>0.002*** 0.000<\/cell>\n    <cell/>\n    <cell/>\n    <cell>48.519 6.966<\/cell>\n    <cell>1.090 1.044<\/cell>\n    <cell/>\n    <cell>0.002<\/cell>\n    <cell>0.121<\/cell>\n    <cell>41.585 6.449<\/cell>\n  <\/row>\n  <row>\n    <cell>Conscientiousness<\/cell>\n    <cell>Estimate SE<\/cell>\n    <cell>50.128*** 0.133<\/cell>\n    <cell>0.391*** 0.064<\/cell>\n    <cell>0.080*** 0.012<\/cell>\n    <cell/>\n    <cell/>\n    <cell>-0.942*** 0.265<\/cell>\n    <cell>-0.115 0.047<\/cell>\n    <cell/>\n    <cell>0.013 0.011<\/cell>\n    <cell/>\n    <cell/>\n    <cell>0.049*** 0.013<\/cell>\n    <cell/>\n    <cell>59.167 7.692<\/cell>\n    <cell>1.728 1.315<\/cell>\n    <cell/>\n    <cell>0.001<\/cell>\n    <cell>0.007<\/cell>\n    <cell>37.490 6.123<\/cell>\n  <\/row>\n  <row>\n    <cell/>\n    <cell>Fixed effects<\/cell>\n    <cell>Intercept, g 00<\/cell>\n    <cell>Time, g 10<\/cell>\n    <cell>Age, g 01<\/cell>\n    <cell>Age × Time, g 11<\/cell>\n    <cell>Correlates<\/cell>\n    <cell>Sex<\/cell>\n    <cell>Education<\/cell>\n    <cell>Cohort<\/cell>\n    <cell>Birth year, g 02<\/cell>\n    <cell>Birth Year × Time, g 12<\/cell>\n    <cell>Birth Year × 03 Age, g<\/cell>\n    <cell>04 Birth Year × Sex, g<\/cell>\n    <cell>Random effects<\/cell>\n    <cell>σ intercept<\/cell>\n    <cell>σ time<\/cell>\n    <cell>σ explained<\/cell>\n    <cell>Intercept<\/cell>\n    <cell>Time<\/cell>\n    <cell>σ residual<\/cell>\n  <\/row>\n<\/table>",
+      "contents": null,
+      "page_number": null
+    }
+  ],
+  "eq": [
+    {
+      "text_id": 57,
+      "grp_id": 1,
+      "lhs": "M",
+      "comp": "=",
+      "rhs": "52.93"
+    },
+    {
+      "text_id": 57,
+      "grp_id": 1,
+      "lhs": "SD",
+      "comp": "=",
+      "rhs": "16.69"
+    },
+    {
+      "text_id": 60,
+      "grp_id": 2,
+      "lhs": "SD",
+      "comp": "=",
+      "rhs": "3.25"
+    },
+    {
+      "text_id": 60,
+      "grp_id": 2,
+      "lhs": "range",
+      "comp": "=",
+      "rhs": "3-20"
+    },
+    {
+      "text_id": 62,
+      "grp_id": 3,
+      "lhs": "n",
+      "comp": "=",
+      "rhs": "2,606"
+    },
+    {
+      "text_id": 62,
+      "grp_id": 3,
+      "lhs": "n",
+      "comp": "=",
+      "rhs": "2,126"
+    },
+    {
+      "text_id": 62,
+      "grp_id": 3,
+      "lhs": "Cohen's d",
+      "comp": "<",
+      "rhs": "0.10"
+    },
+    {
+      "text_id": 72,
+      "grp_id": 4,
+      "lhs": "s",
+      "comp": "=",
+      "rhs": ".52"
+    },
+    {
+      "text_id": 76,
+      "grp_id": 5,
+      "lhs": "M",
+      "comp": "=",
+      "rhs": "50"
+    },
+    {
+      "text_id": 76,
+      "grp_id": 5,
+      "lhs": "SD",
+      "comp": "=",
+      "rhs": "10"
+    },
+    {
+      "text_id": 112,
+      "grp_id": 6,
+      "lhs": "01",
+      "comp": "=",
+      "rhs": "0.072"
+    },
+    {
+      "text_id": 112,
+      "grp_id": 6,
+      "lhs": "p",
+      "comp": "<",
+      "rhs": ".001"
+    },
+    {
+      "text_id": 112,
+      "grp_id": 6,
+      "lhs": "01",
+      "comp": "=",
+      "rhs": "0.141"
+    },
+    {
+      "text_id": 112,
+      "grp_id": 6,
+      "lhs": "p",
+      "comp": "<",
+      "rhs": ".001"
+    },
+    {
+      "text_id": 112,
+      "grp_id": 6,
+      "lhs": "01",
+      "comp": "=",
+      "rhs": "0.037"
+    },
+    {
+      "text_id": 112,
+      "grp_id": 6,
+      "lhs": "p",
+      "comp": "<",
+      "rhs": ".001"
+    },
+    {
+      "text_id": 112,
+      "grp_id": 6,
+      "lhs": "01",
+      "comp": "=",
+      "rhs": "-0.048"
+    },
+    {
+      "text_id": 112,
+      "grp_id": 6,
+      "lhs": "p",
+      "comp": "<",
+      "rhs": ".001"
+    },
+    {
+      "text_id": 112,
+      "grp_id": 6,
+      "lhs": "01",
+      "comp": "=",
+      "rhs": "-0.170"
+    },
+    {
+      "text_id": 112,
+      "grp_id": 6,
+      "lhs": "p",
+      "comp": "<",
+      "rhs": ".001"
+    },
+    {
+      "text_id": 114,
+      "grp_id": 7,
+      "lhs": "10",
+      "comp": "=",
+      "rhs": "0.421"
+    },
+    {
+      "text_id": 114,
+      "grp_id": 7,
+      "lhs": "p",
+      "comp": "<",
+      "rhs": ".001"
+    },
+    {
+      "text_id": 114,
+      "grp_id": 7,
+      "lhs": "10",
+      "comp": "=",
+      "rhs": "0.613"
+    },
+    {
+      "text_id": 114,
+      "grp_id": 7,
+      "lhs": "p",
+      "comp": "<",
+      "rhs": ".001"
+    },
+    {
+      "text_id": 114,
+      "grp_id": 7,
+      "lhs": "10",
+      "comp": "=",
+      "rhs": "-0.623"
+    },
+    {
+      "text_id": 114,
+      "grp_id": 7,
+      "lhs": "p",
+      "comp": "<",
+      "rhs": ".001"
+    },
+    {
+      "text_id": 114,
+      "grp_id": 7,
+      "lhs": "10",
+      "comp": "=",
+      "rhs": "-0.224"
+    },
+    {
+      "text_id": 114,
+      "grp_id": 7,
+      "lhs": "p",
+      "comp": "<",
+      "rhs": ".001"
+    },
+    {
+      "text_id": 115,
+      "grp_id": 8,
+      "lhs": "11",
+      "comp": "=",
+      "rhs": "0.024"
+    },
+    {
+      "text_id": 115,
+      "grp_id": 8,
+      "lhs": "p",
+      "comp": "<",
+      "rhs": ".01"
+    },
+    {
+      "text_id": 115,
+      "grp_id": 8,
+      "lhs": "11",
+      "comp": "=",
+      "rhs": "-0.026"
+    },
+    {
+      "text_id": 115,
+      "grp_id": 8,
+      "lhs": "p",
+      "comp": "<",
+      "rhs": ".001"
+    },
+    {
+      "text_id": 120,
+      "grp_id": 9,
+      "lhs": "N",
+      "comp": "=",
+      "rhs": "4,732"
+    },
+    {
+      "text_id": 122,
+      "grp_id": 10,
+      "lhs": "M",
+      "comp": "=",
+      "rhs": "50"
+    },
+    {
+      "text_id": 122,
+      "grp_id": 10,
+      "lhs": "SD",
+      "comp": "=",
+      "rhs": "10"
+    },
+    {
+      "text_id": 123,
+      "grp_id": 11,
+      "lhs": "0",
+      "comp": "=",
+      "rhs": "0"
+    },
+    {
+      "text_id": 123,
+      "grp_id": 11,
+      "lhs": "7",
+      "comp": "=",
+      "rhs": "1"
+    },
+    {
+      "text_id": 123,
+      "grp_id": 11,
+      "lhs": "14",
+      "comp": "=",
+      "rhs": "2"
+    },
+    {
+      "text_id": 137,
+      "grp_id": 12,
+      "lhs": "02",
+      "comp": "=",
+      "rhs": "-0.045"
+    },
+    {
+      "text_id": 137,
+      "grp_id": 12,
+      "lhs": "p",
+      "comp": "<",
+      "rhs": ".001"
+    },
+    {
+      "text_id": 137,
+      "grp_id": 12,
+      "lhs": "02",
+      "comp": "=",
+      "rhs": "-0.192"
+    },
+    {
+      "text_id": 137,
+      "grp_id": 12,
+      "lhs": "p",
+      "comp": "<",
+      "rhs": ".001"
+    },
+    {
+      "text_id": 137,
+      "grp_id": 12,
+      "lhs": "02",
+      "comp": "=",
+      "rhs": "0.108"
+    },
+    {
+      "text_id": 137,
+      "grp_id": 12,
+      "lhs": "p",
+      "comp": "<",
+      "rhs": ".001"
+    },
+    {
+      "text_id": 137,
+      "grp_id": 12,
+      "lhs": "02",
+      "comp": "=",
+      "rhs": "0.233"
+    },
+    {
+      "text_id": 137,
+      "grp_id": 12,
+      "lhs": "p",
+      "comp": "<",
+      "rhs": ".001"
+    },
+    {
+      "text_id": 139,
+      "grp_id": 13,
+      "lhs": "12",
+      "comp": "=",
+      "rhs": "0.011"
+    },
+    {
+      "text_id": 139,
+      "grp_id": 13,
+      "lhs": "p",
+      "comp": "<",
+      "rhs": ".01"
+    },
+    {
+      "text_id": 141,
+      "grp_id": 14,
+      "lhs": "03",
+      "comp": "=",
+      "rhs": "-0.002"
+    },
+    {
+      "text_id": 141,
+      "grp_id": 14,
+      "lhs": "p",
+      "comp": "<",
+      "rhs": ".001"
+    },
+    {
+      "text_id": 141,
+      "grp_id": 14,
+      "lhs": "03",
+      "comp": "=",
+      "rhs": "0.002"
+    },
+    {
+      "text_id": 141,
+      "grp_id": 14,
+      "lhs": "p",
+      "comp": "<",
+      "rhs": ".001"
+    },
+    {
+      "text_id": 142,
+      "grp_id": 15,
+      "lhs": "03",
+      "comp": "=",
+      "rhs": "0.003"
+    },
+    {
+      "text_id": 142,
+      "grp_id": 15,
+      "lhs": "p",
+      "comp": "<",
+      "rhs": ".001"
+    },
+    {
+      "text_id": 144,
+      "grp_id": 16,
+      "lhs": "n",
+      "comp": "=",
+      "rhs": "1,405"
+    },
+    {
+      "text_id": 144,
+      "grp_id": 16,
+      "lhs": "n",
+      "comp": "=",
+      "rhs": "2,386"
+    },
+    {
+      "text_id": 144,
+      "grp_id": 16,
+      "lhs": "n",
+      "comp": "=",
+      "rhs": "941"
+    },
+    {
+      "text_id": 153,
+      "grp_id": 17,
+      "lhs": "04",
+      "comp": "=",
+      "rhs": "0.049"
+    },
+    {
+      "text_id": 153,
+      "grp_id": 17,
+      "lhs": "p",
+      "comp": "<",
+      "rhs": ".001"
+    },
+    {
+      "text_id": 154,
+      "grp_id": 18,
+      "lhs": "04",
+      "comp": "=",
+      "rhs": "0.040"
+    },
+    {
+      "text_id": 154,
+      "grp_id": 18,
+      "lhs": "p",
+      "comp": "<",
+      "rhs": ".01"
+    },
+    {
+      "text_id": 170,
+      "grp_id": 19,
+      "lhs": "N",
+      "comp": "=",
+      "rhs": "4,732"
+    },
+    {
+      "text_id": 172,
+      "grp_id": 20,
+      "lhs": "M",
+      "comp": "=",
+      "rhs": "50"
+    },
+    {
+      "text_id": 172,
+      "grp_id": 20,
+      "lhs": "SD",
+      "comp": "=",
+      "rhs": "10"
+    },
+    {
+      "text_id": 173,
+      "grp_id": 21,
+      "lhs": "0",
+      "comp": "=",
+      "rhs": "0"
+    },
+    {
+      "text_id": 173,
+      "grp_id": 21,
+      "lhs": "7",
+      "comp": "=",
+      "rhs": "1"
+    },
+    {
+      "text_id": 173,
+      "grp_id": 21,
+      "lhs": "14",
+      "comp": "=",
+      "rhs": "2"
+    },
+    {
+      "text_id": 236,
+      "grp_id": 22,
+      "lhs": "n",
+      "comp": "=",
+      "rhs": "1,405"
+    },
+    {
+      "text_id": 236,
+      "grp_id": 22,
+      "lhs": "n",
+      "comp": "=",
+      "rhs": "2,386"
+    },
+    {
+      "text_id": 236,
+      "grp_id": 22,
+      "lhs": "n",
+      "comp": "=",
+      "rhs": "941"
+    },
+    {
+      "text_id": 241,
+      "grp_id": 23,
+      "lhs": "n",
+      "comp": "=",
+      "rhs": "1,405"
+    },
+    {
+      "text_id": 241,
+      "grp_id": 23,
+      "lhs": "n",
+      "comp": "=",
+      "rhs": "2,386"
+    },
+    {
+      "text_id": 241,
+      "grp_id": 23,
+      "lhs": "n",
+      "comp": "=",
+      "rhs": "941"
+    },
+    {
+      "text_id": 63,
+      "grp_id": 24,
+      "lhs": "d",
+      "comp": "<",
+      "rhs": "0.50"
+    },
+    {
+      "text_id": 63,
+      "grp_id": 24,
+      "lhs": "d",
+      "comp": "<",
+      "rhs": "0.15"
+    },
+    {
+      "text_id": 63,
+      "grp_id": 24,
+      "lhs": "d",
+      "comp": "<",
+      "rhs": "0.22"
+    },
+    {
+      "text_id": 63,
+      "grp_id": 24,
+      "lhs": "d",
+      "comp": "<",
+      "rhs": "0.39"
+    },
+    {
+      "text_id": 129,
+      "grp_id": 25,
+      "lhs": "p",
+      "comp": "<",
+      "rhs": ".01"
+    },
+    {
+      "text_id": 129,
+      "grp_id": 25,
+      "lhs": "p",
+      "comp": "<",
+      "rhs": ".001"
+    },
+    {
+      "text_id": 178,
+      "grp_id": 26,
+      "lhs": "p",
+      "comp": "<",
+      "rhs": ".05"
+    },
+    {
+      "text_id": 178,
+      "grp_id": 26,
+      "lhs": "p",
+      "comp": "<",
+      "rhs": ".01"
+    },
+    {
+      "text_id": 178,
+      "grp_id": 26,
+      "lhs": "p",
+      "comp": "<",
+      "rhs": ".001"
+    }
+  ]
+}
