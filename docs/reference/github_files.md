@@ -30,7 +30,7 @@ a data frame of files
 ## Examples
 
 ``` r
-# \donttest{
+# \dontrun{
 github_files("scienceverse/metacheck")
 #>                      repo             clean_repo               name
 #> 1  scienceverse/metacheck scienceverse/metacheck      .Rbuildignore

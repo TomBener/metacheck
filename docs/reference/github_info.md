@@ -26,7 +26,7 @@ a list of information about the repo
 ## Examples
 
 ``` r
-# \donttest{
+# \dontrun{
 github_info("scienceverse/metacheck")
 #> $repo
 #> [1] "scienceverse/metacheck"

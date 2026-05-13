@@ -22,7 +22,7 @@ vector of languages
 ## Examples
 
 ``` r
-# \donttest{
+# \dontrun{
 github_languages("scienceverse/metacheck")
 #>                      repo   language    bytes
 #> 1  scienceverse/metacheck       HTML 18689007
