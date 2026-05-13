@@ -70,7 +70,7 @@ ref <- paste(
   "The benefits of preregistration and Registered Reports.",
   "Evidence-Based Toxicology, 2(1)."
 )
-# \donttest{
+# \dontrun{
 cr <- crossref_query(ref)
 # }
 ```
