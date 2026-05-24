@@ -25,7 +25,7 @@ Note that this will not catch p-values reported like "the p-value is
 0.03" because that results in a ton of false positives when papers
 discuss p-value thresholds. If you need to detect text like that, use
 the
-[`search_text()`](https://scienceverse.github.io/metacheck/reference/search_text.md)
+[`text_search()`](https://scienceverse.github.io/metacheck/reference/text_search.md)
 function and a custom pattern.
 
 This will catch most comparators like =\<\>~and most versions of

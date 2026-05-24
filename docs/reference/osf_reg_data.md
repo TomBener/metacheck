@@ -5,7 +5,7 @@ Structure OSF Registration Data
 ## Usage
 
 ``` r
-osf_reg_data(data)
+.osf_reg_data(data)
 ```
 
 ## Arguments

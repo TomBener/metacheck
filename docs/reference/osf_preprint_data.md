@@ -5,7 +5,7 @@ Structure OSF Preprint Data
 ## Usage
 
 ``` r
-osf_preprint_data(data)
+.osf_preprint_data(data)
 ```
 
 ## Arguments

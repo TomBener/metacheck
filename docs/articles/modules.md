@@ -147,9 +147,9 @@ mo$traffic_light
 ### Table
 
 The `table` is usually a detailed table in the format returned from
-[`search_text()`](https://scienceverse.github.io/metacheck/reference/search_text.md)
+[`text_search()`](https://scienceverse.github.io/metacheck/reference/text_search.md)
 or
-[`expand_text()`](https://scienceverse.github.io/metacheck/reference/expand_text.md),
+[`text_expand()`](https://scienceverse.github.io/metacheck/reference/text_expand.md),
 containing either text relevant to the module, or a classification of
 the text. This table can be of use to further modules in a chain, or to
 metascientific users.

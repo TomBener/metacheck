@@ -5,7 +5,7 @@ Checks for validity of the OSF PAT and unsets it if needed.
 ## Usage
 
 ``` r
-osf_pat_validate(osf_pat = Sys.getenv("OSF_PAT"))
+.osf_pat_validate(osf_pat = Sys.getenv("OSF_PAT"))
 ```
 
 ## Arguments

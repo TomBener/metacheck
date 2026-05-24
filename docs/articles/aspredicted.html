@@ -272,14 +272,14 @@ preregistration.</p>
 <p>It might in addition be useful to retrieve the corresponding section
 in the article. A simple attempt to achieve this would be to search for
 words related to ‘sample’ or ‘participants’, and retrieve that
-paragraph. We can use metacheck’s inbuilt <code><a href="../reference/search_text.html">search_text()</a></code>
+paragraph. We can use metacheck’s inbuilt <code><a href="../reference/text_search.html">text_search()</a></code>
 function. For this paper, we see this simple approach works well.</p>
 <div class="sourceCode" id="cb5"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="co"># match "sample" or "# particip..."</span></span>
 <span><span class="va">regex_sample</span> <span class="op">&lt;-</span> <span class="st">"\\bsample\\b|\\d+\\s+particip\\w+"</span></span>
 <span></span>
 <span><span class="co"># get full paragraphs </span></span>
-<span><span class="va">sample</span> <span class="op">&lt;-</span> <span class="fu"><a href="../reference/search_text.html">search_text</a></span><span class="op">(</span><span class="va">paper</span>, <span class="va">regex_sample</span>,</span>
+<span><span class="va">sample</span> <span class="op">&lt;-</span> <span class="fu"><a href="../reference/text_search.html">text_search</a></span><span class="op">(</span><span class="va">paper</span>, <span class="va">regex_sample</span>,</span>
 <span>                      return<span class="op">=</span> <span class="st">"paragraph"</span><span class="op">)</span></span>
 <span></span>
 <span><span class="va">sample</span><span class="op">$</span><span class="va">text</span> <span class="op">|&gt;</span> <span class="fu"><a href="https://rdrr.io/r/base/cat.html" class="external-link">cat</a></span><span class="op">(</span><span class="st">"&gt; "</span>, x <span class="op">=</span> <span class="va">_</span><span class="op">)</span></span></code></pre></div>
@@ -329,9 +329,9 @@ the word forms for small numbers).</p>
 <div class="sourceCode" id="cb6"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="va">regex_sample</span> <span class="op">&lt;-</span> <span class="st">"subject|sample|particip"</span></span>
 <span><span class="va">regex_numbers</span> <span class="op">&lt;-</span> <span class="st">"[0-9]|one|two|three|four|five|six|seven|eight|nine|ten"</span></span>
-<span><span class="va">methres</span> <span class="op">&lt;-</span> <span class="fu"><a href="../reference/search_text.html">search_text</a></span><span class="op">(</span><span class="va">paper</span>, <span class="va">regex_sample</span>,</span>
+<span><span class="va">methres</span> <span class="op">&lt;-</span> <span class="fu"><a href="../reference/text_search.html">text_search</a></span><span class="op">(</span><span class="va">paper</span>, <span class="va">regex_sample</span>,</span>
 <span>                       return <span class="op">=</span> <span class="st">"paragraph"</span><span class="op">)</span> <span class="op">|&gt;</span></span>
-<span>  <span class="fu"><a href="../reference/search_text.html">search_text</a></span><span class="op">(</span><span class="va">regex_numbers</span>, return <span class="op">=</span> <span class="st">"paragraph"</span><span class="op">)</span></span></code></pre></div>
+<span>  <span class="fu"><a href="../reference/text_search.html">text_search</a></span><span class="op">(</span><span class="va">regex_numbers</span>, return <span class="op">=</span> <span class="st">"paragraph"</span><span class="op">)</span></span></code></pre></div>
 <p>This gives us 15 paragraphs to deal with. We can then send them to an
 LLM, and ask which paragraph is most closely related to the text in the
 preregistration.</p>
@@ -412,9 +412,9 @@ and must be fluent in English (to ensure instruction comprehension).</p>
 <code class="sourceCode R"><span><span class="co"># LLM workflow - send potentially relevant paragraphs</span></span>
 <span><span class="va">regex_sample</span> <span class="op">&lt;-</span> <span class="st">"subject|sample|particip"</span></span>
 <span><span class="va">regex_numbers</span> <span class="op">&lt;-</span> <span class="st">"[0-9]|one|two|three|four|five|six|seven|eight|nine|ten"</span></span>
-<span><span class="va">methres</span> <span class="op">&lt;-</span> <span class="fu"><a href="../reference/search_text.html">search_text</a></span><span class="op">(</span><span class="va">paper</span>, <span class="va">regex_sample</span>,</span>
+<span><span class="va">methres</span> <span class="op">&lt;-</span> <span class="fu"><a href="../reference/text_search.html">text_search</a></span><span class="op">(</span><span class="va">paper</span>, <span class="va">regex_sample</span>,</span>
 <span>                       return <span class="op">=</span> <span class="st">"paragraph"</span><span class="op">)</span> <span class="op">|&gt;</span></span>
-<span>  <span class="fu"><a href="../reference/search_text.html">search_text</a></span><span class="op">(</span><span class="va">regex_numbers</span>, return <span class="op">=</span> <span class="st">"paragraph"</span><span class="op">)</span></span>
+<span>  <span class="fu"><a href="../reference/text_search.html">text_search</a></span><span class="op">(</span><span class="va">regex_numbers</span>, return <span class="op">=</span> <span class="st">"paragraph"</span><span class="op">)</span></span>
 <span></span>
 <span><span class="va">text</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/paste.html" class="external-link">paste</a></span><span class="op">(</span><span class="va">methres</span><span class="op">$</span><span class="va">text</span>, collapse <span class="op">=</span> <span class="st">"\n\n"</span><span class="op">)</span></span>
 <span><span class="va">system_prompt</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/sprintf.html" class="external-link">sprintf</a></span><span class="op">(</span><span class="va">system_prompt_template</span>, <span class="va">prereg_sample_size</span><span class="op">)</span></span>
@@ -432,7 +432,7 @@ A and 56 participants in cohort B due to the COVID-19 pandemic.</p>
 <code class="sourceCode R"><span><span class="co"># manual check - no LLM</span></span>
 <span><span class="va">regex_sample</span> <span class="op">&lt;-</span> <span class="st">"\\bsample\\b|\\d+\\s+particip\\w+"</span></span>
 <span></span>
-<span><span class="va">sample</span> <span class="op">&lt;-</span> <span class="fu"><a href="../reference/search_text.html">search_text</a></span><span class="op">(</span><span class="va">paper</span>, <span class="va">regex_sample</span>, </span>
+<span><span class="va">sample</span> <span class="op">&lt;-</span> <span class="fu"><a href="../reference/text_search.html">text_search</a></span><span class="op">(</span><span class="va">paper</span>, <span class="va">regex_sample</span>, </span>
 <span>                      return<span class="op">=</span> <span class="st">"paragraph"</span><span class="op">)</span></span>
 <span></span>
 <span><span class="va">sample</span><span class="op">$</span><span class="va">text</span> <span class="op">|&gt;</span> <span class="fu"><a href="https://rdrr.io/r/base/cat.html" class="external-link">cat</a></span><span class="op">(</span><span class="st">"&gt; "</span>, x <span class="op">=</span> <span class="va">_</span><span class="op">)</span></span></code></pre></div>
@@ -496,7 +496,7 @@ you own local module</a> by using (or improving) the following code:</p>
 <span>  </span>
 <span>  <span class="co"># check paper for possible sample paragraphs</span></span>
 <span>  <span class="va">regex_sample</span> <span class="op">&lt;-</span> <span class="st">"\\bsample\\b|\\d+\\s+particip\\w+"</span></span>
-<span>  <span class="va">sample</span> <span class="op">&lt;-</span> <span class="fu"><a href="../reference/search_text.html">search_text</a></span><span class="op">(</span><span class="va">paper</span>, <span class="va">regex_sample</span>, </span>
+<span>  <span class="va">sample</span> <span class="op">&lt;-</span> <span class="fu"><a href="../reference/text_search.html">text_search</a></span><span class="op">(</span><span class="va">paper</span>, <span class="va">regex_sample</span>, </span>
 <span>                        return<span class="op">=</span> <span class="st">"paragraph"</span><span class="op">)</span></span>
 <span>  </span>
 <span>  <span class="co"># check LLM only if requested</span></span>
@@ -510,9 +510,9 @@ you own local module</a> by using (or improving) the following code:</p>
 <span>    </span>
 <span>    <span class="va">regex_sample</span> <span class="op">&lt;-</span> <span class="st">"subject|sample|particip"</span></span>
 <span>    <span class="va">regex_numbers</span> <span class="op">&lt;-</span> <span class="st">"[0-9]|one|two|three|four|five|six|seven|eight|nine|ten"</span></span>
-<span>    <span class="va">methres</span> <span class="op">&lt;-</span> <span class="fu"><a href="../reference/search_text.html">search_text</a></span><span class="op">(</span><span class="va">paper</span>, <span class="va">regex_sample</span>,</span>
+<span>    <span class="va">methres</span> <span class="op">&lt;-</span> <span class="fu"><a href="../reference/text_search.html">text_search</a></span><span class="op">(</span><span class="va">paper</span>, <span class="va">regex_sample</span>,</span>
 <span>                           return <span class="op">=</span> <span class="st">"paragraph"</span><span class="op">)</span> <span class="op">|&gt;</span></span>
-<span>      <span class="fu"><a href="../reference/search_text.html">search_text</a></span><span class="op">(</span><span class="va">regex_numbers</span>, return <span class="op">=</span> <span class="st">"paragraph"</span><span class="op">)</span></span>
+<span>      <span class="fu"><a href="../reference/text_search.html">text_search</a></span><span class="op">(</span><span class="va">regex_numbers</span>, return <span class="op">=</span> <span class="st">"paragraph"</span><span class="op">)</span></span>
 <span>    </span>
 <span>    <span class="va">text</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/paste.html" class="external-link">paste</a></span><span class="op">(</span><span class="va">methres</span><span class="op">$</span><span class="va">text</span>, collapse <span class="op">=</span> <span class="st">"\n\n"</span><span class="op">)</span></span>
 <span>    <span class="va">system_prompt</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/sprintf.html" class="external-link">sprintf</a></span><span class="op">(</span><span class="va">system_prompt_template</span>, <span class="va">prereg_sample_size</span><span class="op">)</span></span>

@@ -107,7 +107,7 @@ links <- osf_links(paper)
 If valid, the link is processed, and the OSF Application Programming
 Interface (API) is used to retrieve whether the link points to a file,
 project, or registration. This is achieved through the
-[`osf_retrieve()`](https://scienceverse.github.io/metacheck/reference/osf_retrieve.md)
+[`osf_info()`](https://scienceverse.github.io/metacheck/reference/osf_info.md)
 function.
 
 This function can take a vector of OSF IDs or URLs, or a table that
@@ -117,7 +117,7 @@ added information. (You can quiet the output messages with
 `verbose(FALSE)`.)
 
 The function
-[`osf_retrieve()`](https://scienceverse.github.io/metacheck/reference/osf_retrieve.md)
+[`osf_info()`](https://scienceverse.github.io/metacheck/reference/osf_info.md)
 will also retrieve all child components, files and folders if you set
 the argument `recursive = TRUE`. If there are duplicate IDs, it will
 only get the contents for each item once. If you set the argument
@@ -126,7 +126,7 @@ links (but this requires more API calls).
 
 ``` r
 
-info <- osf_retrieve(links, 
+info <- osf_info(links, 
                      id_col = "href", 
                      recursive = TRUE, 
                      find_project = TRUE)
@@ -733,7 +733,7 @@ automated checks for another open access paper in Psychological Science.
 
 osf_file_check <- function(paper) {
   links <- osf_links(paper)
-  info <- osf_retrieve(links, 
+  info <- osf_info(links, 
                        id_col = "href", 
                        recursive = TRUE)
   osf_files_summary <- file_category(info)

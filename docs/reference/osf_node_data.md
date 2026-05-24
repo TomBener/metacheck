@@ -8,7 +8,7 @@ osf_info \<- function(osf_id, Structure OSF Node Data
 ## Usage
 
 ``` r
-osf_node_data(data)
+.osf_node_data(data)
 ```
 
 ## Arguments

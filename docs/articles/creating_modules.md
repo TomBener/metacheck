@@ -54,9 +54,9 @@ packages, using roxygen2 for documentation.
       # create return items ----
 
       ## table ----
-      # detail your results in a format like the result of search_text()
+      # detail your results in a format like the result of text_search()
       # this is stored to use in later modules in a report or pipeline
-      table <- search_text(paper, pattern)
+      table <- text_search(paper, pattern)
 
       ## summary_table ----
       # must have id column as the id of each paper, one row per paper
@@ -354,21 +354,21 @@ if (is.null(p_table)) {
 
 Most modules will need to structure their output in a table that can be
 shown in a report. The
-[`search_text()`](https://scienceverse.github.io/metacheck/reference/search_text.md)
+[`text_search()`](https://scienceverse.github.io/metacheck/reference/text_search.md)
 function below creates a table with a row for each sentence that
 contains to word “significant”.
 
 ``` r
 
   ## table ----
-  # detail your results in a format like the result of search_text()
+  # detail your results in a format like the result of text_search()
   # this is stored to use in later modules in a report or pipeline
-  table <- search_text(paper, pattern)
+  table <- text_search(paper, pattern)
 ```
 
 You will need to make sure that your module works with both single paper
 object sand lists of paper objects. The metacheck functions
-[`search_text()`](https://scienceverse.github.io/metacheck/reference/search_text.md)
+[`text_search()`](https://scienceverse.github.io/metacheck/reference/text_search.md)
 and [`llm()`](https://scienceverse.github.io/metacheck/reference/llm.md)
 are already vectorised for paper lists.
 
