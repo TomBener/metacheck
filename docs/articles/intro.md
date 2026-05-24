@@ -103,7 +103,8 @@ paper <- demopaper()
 module_run(paper, "stat_p_exact")
 ```
 
-Exact P-Values: We found 1 imprecise *p* value out of 3 detected.
+Exact P-Values: We found 1 imprecise *p* value out of 3 detected *p*
+values.
 
 In addition to the initial modules already introduced on the [metacheck
 website](https://scienceverse.github.io/metacheck/), we will demonstrate

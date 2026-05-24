@@ -115,8 +115,8 @@ languages, as detected and classified by GitHub.
 
 github_languages("scienceverse/metacheck")
 #>                      repo   language    bytes
-#> 1  scienceverse/metacheck          R 49846936
-#> 2  scienceverse/metacheck       HTML 19384087
+#> 1  scienceverse/metacheck          R 50866031
+#> 2  scienceverse/metacheck       HTML 19380372
 #> 3  scienceverse/metacheck        Lua    92710
 #> 4  scienceverse/metacheck        TeX    40040
 #> 5  scienceverse/metacheck       AMPL     7571
@@ -125,7 +125,7 @@ github_languages("scienceverse/metacheck")
 #> 8  scienceverse/metacheck      Typst     5329
 #> 9  scienceverse/metacheck   Makefile     1407
 #> 10 scienceverse/metacheck Dockerfile     1201
-#> 11 scienceverse/metacheck JavaScript     1018
+#> 11 scienceverse/metacheck JavaScript     1116
 #> 12 scienceverse/metacheck       SCSS      639
 #> 13 scienceverse/metacheck      Shell       17
 ```
@@ -232,14 +232,14 @@ github_files("scienceverse/metacheck")
 #> 10   133           md   text
 #> 11     0                 dir
 #> 12     0                 dir
-#> 13  2196                file
+#> 13  2152                file
 #> 14     0                 dir
 #> 15     0                 dir
 #> 16 34303           md   text
 #> 17  1407                file
 #> 18     0                 dir
-#> 19  2762                file
-#> 20 18875           md   text
+#> 19  2889                file
+#> 20 21377           md   text
 #> 21     0                 dir
 #> 22     0                 dir
 #> 23  2023           md   text
@@ -350,19 +350,22 @@ github_info("scienceverse/demo")
 #> 
 #> $files
 #>                repo        clean_repo           name           path
-#> 1 scienceverse/demo scienceverse/demo         folder         folder
-#> 2 scienceverse/demo scienceverse/demo good-example.R good-example.R
-#> 3 scienceverse/demo scienceverse/demo      README.md      README.md
+#> 1 scienceverse/demo scienceverse/demo           code           code
+#> 2 scienceverse/demo scienceverse/demo         folder         folder
+#> 3 scienceverse/demo scienceverse/demo good-example.R good-example.R
+#> 4 scienceverse/demo scienceverse/demo      README.md      README.md
 #>                                                              download_url size
 #> 1                                                                    <NA>    0
-#> 2 https://raw.githubusercontent.com/scienceverse/demo/main/good-example.R  227
-#> 3      https://raw.githubusercontent.com/scienceverse/demo/main/README.md   36
+#> 2                                                                    <NA>    0
+#> 3 https://raw.githubusercontent.com/scienceverse/demo/main/good-example.R  227
+#> 4      https://raw.githubusercontent.com/scienceverse/demo/main/README.md   36
 #>   ext type
 #> 1      dir
-#> 2   r code
-#> 3  md text
+#> 2      dir
+#> 3   r code
+#> 4  md text
 #> 
 #> $languages
 #>                repo language bytes
-#> 1 scienceverse/demo        R   227
+#> 1 scienceverse/demo        R  1052
 ```

@@ -32,6 +32,6 @@ something
 validate("p < .05", "stat_p_exact")
 #>   paper_id    text text_id section_id paragraph_id header section_type p_comp
 #> 1        1 p < .05       1          0            0   Test      unknown      <
-#>   p_value expanded imprecise
-#> 1    0.05  p < .05      TRUE
+#>   p_value expanded imprecise  zero
+#> 1    0.05  p < .05      TRUE FALSE
 ```

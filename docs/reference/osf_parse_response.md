@@ -5,7 +5,7 @@ Parse an OSF API response into a data frame
 ## Usage
 
 ``` r
-.osf_parse_response(resp, id, req_type = "guids", pb = NULL)
+osf_parse_response(resp, id, req_type = "guids", pb = NULL)
 ```
 
 ## Arguments

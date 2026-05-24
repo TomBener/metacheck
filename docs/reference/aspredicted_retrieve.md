@@ -5,7 +5,7 @@ Retrieve info from AsPredicted by URL
 ## Usage
 
 ``` r
-aspredicted_info(ap_url, id_col = 1, wait = 1)
+aspredicted_retrieve(ap_url, id_col = 1, wait = 1)
 ```
 
 ## Arguments

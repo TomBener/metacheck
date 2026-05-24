@@ -1,5 +1,51 @@
 # Changelog
 
+## metacheck 0.0.0.9103
+
+- converting grobid xml to bibr json now saves the file after each
+  conversion, instead of at the end, making it better for large batches
+  (although slightly less efficient by potentially duplicating crossref
+  lookups shared between papers)
+- [`convert()`](https://scienceverse.github.io/metacheck/reference/convert.md)
+  has new arguments `crossref_lookup` (default FALSE) and `keep_xml`
+  (default TRUE). It also saves XML and/or JSON files as they are
+  converted, rather than at the end, in case of breaking failure.
+- Updated the “open_practices” module, which is much faster than the
+  ODDPub version of this module (about 40x faster), also returns open
+  materials and registrations, and has a lower false negative rate, but
+  also a higher false positive rate. This removes the oddpub dependency.
+- Restructured file names (not function names) for functions so all
+  archive helper (e.g., osf, github, zenodo) start with “archive-” and
+  database helpers (e.g., pubpeer, retractionwatch) start with “db-”.
+- Restructured text functions to start with text\_, so
+  [`search_text()`](https://scienceverse.github.io/metacheck/reference/text_search.md)
+  is now
+  [`text_search()`](https://scienceverse.github.io/metacheck/reference/text_search.md)
+  and
+  [`expand_text()`](https://scienceverse.github.io/metacheck/reference/text_expand.md)
+  is now
+  [`text_expand()`](https://scienceverse.github.io/metacheck/reference/text_expand.md).
+  The old names will exist as aliases.
+- Internal functions now prefaced with . to make it clearer for
+  developers.
+- All `{archive}_retrieve()` functions now renamed to `{archive}_info()`
+  and the old `{archive}_info()` internal functions are now
+  `.{archive}_info()`
+
+## metacheck 0.0.0.9102
+
+- Shiny app improvements: you can now view HTML reports in the browser
+- Fixes the “prereg_check” module to address an error when there are
+  more than 10 OSF registrations in a batch that caused unmergable data
+  frames.
+- Fixes the “code_check” module to address an error when checking
+  multiple files that have no repositories with code.
+- The module “code_check” now has an argument “file_limit” to control
+  how many code files per repo are downloaded and processed. The default
+  is 20.
+- Fixed a problem where invisible figures in grobid would mess up the
+  text section ids
+
 ## metacheck 0.0.0.9101
 
 - [`metacheck_app()`](https://scienceverse.github.io/metacheck/reference/metacheck_app.md)

@@ -5,7 +5,7 @@ Structure OSF File Data
 ## Usage
 
 ``` r
-.osf_file_data(data)
+osf_file_data(data)
 ```
 
 ## Arguments

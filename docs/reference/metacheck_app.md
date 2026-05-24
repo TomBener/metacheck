@@ -1,20 +1,19 @@
 # Launch Shiny App
 
 Create a meta-study file interactively in a shiny app that runs locally
-in RStudio or your web browser (recommended). It does not connect to the
-web at all, so your data are completely private.
+in RStudio or your web browser (recommended).
 
 ## Usage
 
 ``` r
-metacheck_app(study = NULL, quiet = FALSE, ...)
+metacheck_app(paper = NULL, quiet = FALSE, ...)
 ```
 
 ## Arguments
 
-- study:
+- paper:
 
-  optional study to load
+  optional paper or paperlist to load
 
 - quiet:
 
@@ -26,7 +25,7 @@ metacheck_app(study = NULL, quiet = FALSE, ...)
 
 ## Value
 
-A study object created or edited by the app
+A paper object created or edited by the app
 
 ## Examples
 

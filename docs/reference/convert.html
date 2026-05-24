@@ -13,7 +13,7 @@
 
     <a class="navbar-brand me-2" href="../index.html">metacheck</a>
 
-    <small class="nav-text text-danger me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Unreleased version">0.0.0.9102</small>
+    <small class="nav-text text-danger me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Unreleased version">0.0.0.9103</small>
 
 
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -51,6 +51,8 @@
 <span>  <span class="va">file_path</span>,</span>
 <span>  save_path <span class="op">=</span> <span class="st">"."</span>,</span>
 <span>  method <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="st">"auto"</span>, <span class="st">"bibr"</span>, <span class="st">"grobid"</span>, <span class="st">"xml"</span><span class="op">)</span>,</span>
+<span>  crossref_lookup <span class="op">=</span> <span class="cn">FALSE</span>,</span>
+<span>  keep_xml <span class="op">=</span> <span class="cn">TRUE</span>,</span>
 <span>  <span class="va">...</span></span>
 <span><span class="op">)</span></span></code></pre></div>
     </div>
@@ -69,6 +71,14 @@
 
 <dt id="arg-method">method<a class="anchor" aria-label="anchor" href="#arg-method"></a></dt>
 <dd><p>whether to use bibr, grobid, or grobid_to_bibr to convert a file (see Details)</p></dd>
+
+
+<dt id="arg-crossref-lookup">crossref_lookup<a class="anchor" aria-label="anchor" href="#arg-crossref-lookup"></a></dt>
+<dd><p>whether to add the bib_match table from crossref</p></dd>
+
+
+<dt id="arg-keep-xml">keep_xml<a class="anchor" aria-label="anchor" href="#arg-keep-xml"></a></dt>
+<dd><p>if the method is grobid, whether to keep intermediate XML files</p></dd>
 
 
 <dt id="arg--">...<a class="anchor" aria-label="anchor" href="#arg--"></a></dt>

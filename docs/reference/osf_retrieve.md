@@ -5,7 +5,7 @@ Retrieve info from the OSF by ID
 ## Usage
 
 ``` r
-osf_info(
+osf_retrieve(
   osf_url,
   id_col = 1,
   recursive = FALSE,
@@ -47,9 +47,9 @@ a data frame of information
 ``` r
 if (FALSE) { # \dontrun{
 # get info on one OSF node
-osf_info("pngda")
+osf_retrieve("pngda")
 
 # also get child nodes and files, and parent project
-osf_info("https://osf.io/6nt4v", TRUE, TRUE)
+osf_retrieve("https://osf.io/6nt4v", TRUE, TRUE)
 } # }
 ```

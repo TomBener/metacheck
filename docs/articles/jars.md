@@ -44,7 +44,7 @@ res_imprecise <- module_run(psychsci$`0956797617744542`, "stat_p_exact")
 res_imprecise
 ```
 
-    ## Exact P-Values: We found 10 imprecise *p* values out of 23 detected.
+    ## Exact P-Values: We found 10 imprecise *p* values out of 23 detected *p* values.
 
 The module returns the exact *p* values and the full sentence so that
 users can easily examine whether the reported *p* values should have
@@ -78,7 +78,7 @@ report all *p* values correctly, for example:
 module_run(psychsci$`0956797616665351`, "stat_p_exact")
 ```
 
-    ## Exact P-Values: We found no imprecise *p* values out of 8 detected.
+    ## Exact P-Values: We found no imprecise *p* values or *p*-values of exactly zero out of 8 detected.
 
 ## Reporting standardized effect sizes
 
