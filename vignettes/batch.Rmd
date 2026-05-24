@@ -214,12 +214,12 @@ paper$section |> head()
 
 ## Text Search
 
-The `search_text()` function helps you search the text of a paper or list of papers.
+The `text_search()` function helps you search the text of a paper or list of papers.
 
 The default arguments give you a data frame containing a row for every sentence in every paper in the set. The data frame has the same column structure as the `text` table above, so that you can easily chain text searches.
 
 ```{r}
-all_sentences <- search_text(papers)
+all_sentences <- text_search(papers)
 ```
 
 ```{r}
@@ -230,10 +230,10 @@ rows <- sample(1:nrow(all_sentences), 10)
 mytable(all_sentences[rows, ])
 ```
 
-You can customise `search_text()` to return paragraphs or sections instead of sentences. 
+You can customise `text_search()` to return paragraphs or sections instead of sentences. 
 
 ```{r}
-paragraphs <- search_text(papers, return = "paragraph")
+paragraphs <- text_search(papers, return = "paragraph")
 ```
 
 A paragraph from the first paper.
@@ -248,7 +248,7 @@ paragraphs$text[3]
 You can just code every sentence or paragraph in a set of papers, but this is usually not very efficient, so we can use a search pattern to filter the text.
 
 ```{r}
-search <- search_text(papers, pattern = "Scotland")
+search <- text_search(papers, pattern = "Scotland")
 ```
 
 Here we have `r nrow(search)` results. We'll just show the text columns along with text_id and paper_id of the returned table, but the table also provides the papgraph_id, section_id, page_number, header, and section_type.
@@ -264,8 +264,8 @@ You can chain together searches to iteratively narrow down results. The followin
 
 ```{r}
 search <- papers |>
-  search_text("DeBruine") |>
-  search_text("2006")
+  text_search("DeBruine") |>
+  text_search("2006")
 ```
 
 ```{r}
@@ -279,7 +279,7 @@ If you want to do a search for any of a set of words, you can set the pattern to
 pattern <- c("Chicago Face Database", 
              "Face Research Lab London")
 search <- papers |>
-  search_text(pattern)
+  text_search(pattern)
 ```
 
 ```{r}
@@ -293,7 +293,7 @@ mytable(search)
 You can also use regular expressions to refine your search. The pattern below returns every sentence that contains a word that contains text with p > ###, regardless of the spaces.
 
 ```{r}
-search <- search_text(papers, pattern = "p\\s*>\\s*0?\\.[0-9]+\\b")
+search <- text_search(papers, pattern = "p\\s*>\\s*0?\\.[0-9]+\\b")
 ```
 
 ```{r}
@@ -307,7 +307,7 @@ mytable(head(search))
 You can return just the matching text for a regular expression by setting the results to "match".  
 
 ```{r}
-match <- search_text(papers, 
+match <- text_search(papers, 
                      pattern = "p\\s*>\\s*0?\\.[0-9]+\\b", 
                      return = "match")
 ```
@@ -317,10 +317,10 @@ match <- search_text(papers,
 mytable(match)
 ```
 
-You can expand this to the whole sentence, paragraph, or +/- some number of sentences around the match using `expand_text()`.
+You can expand this to the whole sentence, paragraph, or +/- some number of sentences around the match using `text_expand()`.
 
 ```{r}
-expand <- expand_text(results_table = match, 
+expand <- text_expand(results_table = match, 
                       paper = papers,
                       expand_to = "sentence",
                       plus = 0,

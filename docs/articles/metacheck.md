@@ -82,8 +82,8 @@ and
 [`read()`](https://scienceverse.github.io/metacheck/reference/read.md)
 also work on a folder of files, returning a list of JSON file paths or
 paper objects, respectively. The functions
-[`search_text()`](https://scienceverse.github.io/metacheck/reference/search_text.md),
-[`expand_text()`](https://scienceverse.github.io/metacheck/reference/expand_text.md)
+[`text_search()`](https://scienceverse.github.io/metacheck/reference/text_search.md),
+[`text_expand()`](https://scienceverse.github.io/metacheck/reference/text_expand.md)
 and [`llm()`](https://scienceverse.github.io/metacheck/reference/llm.md)
 also work on a list of paper objects.
 
@@ -188,7 +188,7 @@ paper_table(psychsci[1:5], "bib") |>
 
 You can access a parsed table of the full text of the paper via
 `paper$text`, but you may find it more convenient to use the function
-[`search_text()`](https://scienceverse.github.io/metacheck/reference/search_text.md).
+[`text_search()`](https://scienceverse.github.io/metacheck/reference/text_search.md).
 The defaults return a data table of each sentence, with the section
 type, header, div, paragraph and sentence numbers, and file name. (The
 section type is a best guess from the headers, so may not always be
@@ -196,7 +196,7 @@ accurate.)
 
 ``` r
 
-text <- search_text(paper)
+text <- text_search(paper)
 ```
 
 | text_id | section_id | paragraph_id | text | formatted | page_number | paper_id | header | section_type |
@@ -216,7 +216,7 @@ if you want to find exact text matches.
 
 ``` r
 
-text <- search_text(paper, pattern = "metacheck")
+text <- text_search(paper, pattern = "metacheck")
 ```
 
 | text_id | section_id | paragraph_id | text | formatted | page_number | paper_id | header | section_type |
@@ -231,7 +231,7 @@ control what gets returned.
 
 ``` r
 
-text <- search_text(paper, "GitHub", 
+text <- text_search(paper, "GitHub", 
                     return = "paragraph")
 ```
 
@@ -244,14 +244,14 @@ text <- search_text(paper, "GitHub",
 
 You can also return just the matched text from a regex search by setting
 `return = "match"`. The extra `...` arguments in
-[`search_text()`](https://scienceverse.github.io/metacheck/reference/search_text.md)
+[`text_search()`](https://scienceverse.github.io/metacheck/reference/text_search.md)
 are passed to [`grep()`](https://rdrr.io/r/base/grep.html), so
 `perl = TRUE` allows you to use more complex regex, like below.
 
 ``` r
 
 pattern <- "[a-zA-Z]\\S*\\s*(=|<)\\s*[0-9\\.,-]*\\d"
-text <- search_text(paper, pattern, return = "match", perl = TRUE)
+text <- text_search(paper, pattern, return = "match", perl = TRUE)
 ```
 
 | text_id | section_id | paragraph_id | text | formatted | page_number | paper_id | header | section_type |
@@ -272,14 +272,14 @@ text <- search_text(paper, pattern, return = "match", perl = TRUE)
 ### Expand Text
 
 You can expand the text returned by
-[`search_text()`](https://scienceverse.github.io/metacheck/reference/search_text.md)
+[`text_search()`](https://scienceverse.github.io/metacheck/reference/text_search.md)
 or a module with
-[`expand_text()`](https://scienceverse.github.io/metacheck/reference/expand_text.md).
+[`text_expand()`](https://scienceverse.github.io/metacheck/reference/text_expand.md).
 
 ``` r
 
-marginal <- search_text(paper, "marginal") |>
-  expand_text(paper, plus = 1, minus = 1)
+marginal <- text_search(paper, "marginal") |>
+  text_expand(paper, plus = 1, minus = 1)
 
 marginal[, c("text", "expanded")]
 ```
@@ -347,7 +347,7 @@ details of how to get and set up your API key, choose an LLM, and adjust
 settings.
 
 Use
-[`search_text()`](https://scienceverse.github.io/metacheck/reference/search_text.md)
+[`text_search()`](https://scienceverse.github.io/metacheck/reference/text_search.md)
 first to narrow down the text into what you want to query. Below, we
 limited search to the first ten papers, and returned sentences that
 contains the word “power” and at least one number. Then we asked an LLM
@@ -358,9 +358,9 @@ some relevant values in a JSON-structured format.
 
 power <- psychsci[1:10] |>
   # sentences containing the word power
-  search_text("power") |>
+  text_search("power") |>
   # and containing at least one number
-  search_text("[0-9]") 
+  text_search("[0-9]") 
 
 # ask a specific question with specific response format
 system_prompt <- 'Does this sentence report an a priori power analysis? If so, return the test, sample size, critical alpha criterion, power level, effect size and effect size metric plus any other relevant parameters, in JSON format like:
@@ -418,7 +418,7 @@ llm_response <- json_expand(llm_power, "answer") |>
 
 The [`llm()`](https://scienceverse.github.io/metacheck/reference/llm.md)
 function makes a separate query [^1] for each row in a data frame from
-[`search_text()`](https://scienceverse.github.io/metacheck/reference/search_text.md).
+[`text_search()`](https://scienceverse.github.io/metacheck/reference/text_search.md).
 To prevent accidentally making way too many calls because of errors in
 your code, we set the default limits to 30 queries at a time, but you
 can change this:
@@ -480,7 +480,7 @@ the ), whether it is public
 
 ``` r
 
-info <- osf_retrieve(links[1:6, "href"])
+info <- osf_info(links[1:6, "href"])
 
 info[, c("href","osf_id", "osf_type", "public", "category")]
 ```
@@ -506,7 +506,7 @@ about all nodes and files that are contained by the OSF link.
 ``` r
 
 osf_api_calls(0)
-all_contents <- osf_retrieve(links$href[1], recursive = TRUE)
+all_contents <- osf_info(links$href[1], recursive = TRUE)
 n_calls <- osf_api_calls()
 ```
 

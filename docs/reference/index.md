@@ -35,9 +35,9 @@
 
 ## Search Papers
 
-- [`search_text()`](https://scienceverse.github.io/metacheck/reference/search_text.md)
+- [`text_search()`](https://scienceverse.github.io/metacheck/reference/text_search.md)
   : Search text
-- [`expand_text()`](https://scienceverse.github.io/metacheck/reference/expand_text.md)
+- [`text_expand()`](https://scienceverse.github.io/metacheck/reference/text_expand.md)
   : Expand text
 - [`paper_table()`](https://scienceverse.github.io/metacheck/reference/paper_table.md)
   : Paper tables
@@ -164,7 +164,7 @@ text.
   : Find OSF Links in Papers
 - [`osf_preprint_list()`](https://scienceverse.github.io/metacheck/reference/osf_preprint_list.md)
   : Get A list of preprints from the OSF
-- [`osf_retrieve()`](https://scienceverse.github.io/metacheck/reference/osf_retrieve.md)
+- [`osf_info()`](https://scienceverse.github.io/metacheck/reference/osf_info.md)
   : Retrieve info from the OSF by ID
 - [`osf_type()`](https://scienceverse.github.io/metacheck/reference/osf_type.md)
   : Get OSF GUID Type
@@ -190,11 +190,11 @@ text.
 
 - [`aspredicted_links()`](https://scienceverse.github.io/metacheck/reference/aspredicted_links.md)
   : Find AsPredicted Links in Papers
-- [`aspredicted_retrieve()`](https://scienceverse.github.io/metacheck/reference/aspredicted_retrieve.md)
+- [`aspredicted_info()`](https://scienceverse.github.io/metacheck/reference/aspredicted_info.md)
   : Retrieve info from AsPredicted by URL
 - [`rbox_links()`](https://scienceverse.github.io/metacheck/reference/rbox_links.md)
   : Find ResearchBox Links in Papers
-- [`rbox_retrieve()`](https://scienceverse.github.io/metacheck/reference/rbox_retrieve.md)
+- [`rbox_info()`](https://scienceverse.github.io/metacheck/reference/rbox_info.md)
   : Retrieve info from ResearchBox by URL
 
 ## Integrations
