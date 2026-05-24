@@ -5,7 +5,7 @@ Retrieve info from ResearchBox by URL
 ## Usage
 
 ``` r
-rbox_info(rb_url, id_col = 1, pb = NULL)
+rbox_retrieve(rb_url, id_col = 1, pb = NULL)
 ```
 
 ## Arguments
@@ -33,6 +33,6 @@ a data frame of information
 ``` r
 if (FALSE) { # \dontrun{
 # get info on one OSF node
-rbox_info("https://researchbox.org/801")
+rbox_retrieve("https://researchbox.org/801")
 } # }
 ```

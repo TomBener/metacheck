@@ -34,7 +34,7 @@
 
     <a class="navbar-brand me-2" href="../index.html">metacheck</a>
 
-    <small class="nav-text text-danger me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Unreleased version">0.0.0.9101</small>
+    <small class="nav-text text-danger me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Unreleased version">0.0.0.9103</small>
 
 
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -96,9 +96,8 @@ statements.</li>
 statements.</li>
 <li>funding_check: Identify and extract funding statements.</li>
 <li>funding_check_oi: Identify and extract funding statements.</li>
-<li>open_practices: This module incorporates ODDPub into metacheck.
-ODDPub is a text mining algorithm that detects which publications
-disseminated Open Data or Open Code together with the publication.</li>
+<li>open_practices: This module searches for open data, code, materials,
+and registration statements.</li>
 </ul>
 <p>*** METHOD ***</p>
 <ul>
@@ -127,7 +126,8 @@ repositories.</li>
 <li>stat_effect_size: The Effect Size module checks for effect sizes in
 t-tests and F-tests.</li>
 <li>stat_p_exact: List any p-values reported with insufficient precision
-(e.g., p &lt; .05 or p = n.s.)</li>
+(e.g., p &lt; .05 or p = n.s.) or reported as exactly zero (e.g., p =
+.000).</li>
 <li>stat_p_nonsig: This module checks for imprecisely reported p values.
 If p &gt; .05 is detected, it warns for misinterpretations.</li>
 </ul>
@@ -179,7 +179,7 @@ you when you need to assess a single paper.</p>
 <pre><code><span><span class="co">#&gt; [1] "Exact P-Values"</span></span></code></pre>
 <div class="sourceCode" id="cb8"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="va">mo</span><span class="op">$</span><span class="va">summary_text</span></span></code></pre></div>
-<pre><code><span><span class="co">#&gt; [1] "We found 1 imprecise *p* value out of 3 detected."</span></span></code></pre>
+<pre><code><span><span class="co">#&gt; [1] "We found 1 imprecise *p* value out of 3 detected *p* values."</span></span></code></pre>
 <div class="section level3">
 <h3 id="traffic-light">Traffic light<a class="anchor" aria-label="anchor" href="#traffic-light"></a>
 </h3>
@@ -205,14 +205,14 @@ the text. This table can be of use to further modules in a chain, or to
 metascientific users.</p>
 <div class="sourceCode" id="cb12"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="va">mo</span><span class="op">$</span><span class="va">table</span></span></code></pre></div>
-<pre><code><span><span class="co">#&gt; <span style="color: #949494;"># A tibble: 3 × 13</span></span></span>
+<pre><code><span><span class="co">#&gt; <span style="color: #949494;"># A tibble: 3 × 14</span></span></span>
 <span><span class="co">#&gt;   text_id section_id paragraph_id text     formatted page_number paper_id header</span></span>
 <span><span class="co">#&gt;     <span style="color: #949494; font-style: italic;">&lt;int&gt;</span>      <span style="color: #949494; font-style: italic;">&lt;int&gt;</span>        <span style="color: #949494; font-style: italic;">&lt;int&gt;</span> <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>    <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>           <span style="color: #949494; font-style: italic;">&lt;int&gt;</span> <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>    <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span> </span></span>
 <span><span class="co">#&gt; <span style="color: #BCBCBC;">1</span>      21          8           10 <span style="color: #949494;">"</span>p=0.00… <span style="color: #BB0000;">NA</span>                  3 to_err_… Resul…</span></span>
 <span><span class="co">#&gt; <span style="color: #BCBCBC;">2</span>      22          8           11 <span style="color: #949494;">"</span>p=0.15… <span style="color: #BB0000;">NA</span>                  3 to_err_… Resul…</span></span>
 <span><span class="co">#&gt; <span style="color: #BCBCBC;">3</span>      23          8           12 <span style="color: #949494;">"</span>p &gt; .0… <span style="color: #BB0000;">NA</span>                  3 to_err_… Resul…</span></span>
-<span><span class="co">#&gt; <span style="color: #949494;"># ℹ 5 more variables: section_type &lt;chr&gt;, p_comp &lt;chr&gt;, p_value &lt;dbl&gt;,</span></span></span>
-<span><span class="co">#&gt; <span style="color: #949494;">#   expanded &lt;chr&gt;, imprecise &lt;lgl&gt;</span></span></span></code></pre>
+<span><span class="co">#&gt; <span style="color: #949494;"># ℹ 6 more variables: section_type &lt;chr&gt;, p_comp &lt;chr&gt;, p_value &lt;dbl&gt;,</span></span></span>
+<span><span class="co">#&gt; <span style="color: #949494;">#   expanded &lt;chr&gt;, imprecise &lt;lgl&gt;, zero &lt;lgl&gt;</span></span></span></code></pre>
 </div>
 <div class="section level3">
 <h3 id="summary-table">Summary Table<a class="anchor" aria-label="anchor" href="#summary-table"></a>
@@ -224,8 +224,8 @@ module. This is mainly useful in the metascientific workflow, and this
 table is appended by each module in a chain.</p>
 <div class="sourceCode" id="cb14"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="va">mo</span><span class="op">$</span><span class="va">summary_table</span></span></code></pre></div>
-<pre><code><span><span class="co">#&gt;          paper_id n_imprecise</span></span>
-<span><span class="co">#&gt; 1 to_err_is_human           1</span></span></code></pre>
+<pre><code><span><span class="co">#&gt;          paper_id n_imprecise n_zero</span></span>
+<span><span class="co">#&gt; 1 to_err_is_human           1      0</span></span></code></pre>
 </div>
 <div class="section level3">
 <h3 id="report">Report<a class="anchor" aria-label="anchor" href="#report"></a>
@@ -274,7 +274,7 @@ checks rather than repeating them.</p>
 <span></span>
 <span><span class="va">mo</span><span class="op">$</span><span class="va">prev_outputs</span></span></code></pre></div>
 <pre><code><span><span class="co">#&gt; $stat_p_exact</span></span>
-<span><span class="co">#&gt; Exact P-Values: We found 1 imprecise *p* value out of 3 detected.</span></span>
+<span><span class="co">#&gt; Exact P-Values: We found 1 imprecise *p* value out of 3 detected *p* values.</span></span>
 <span><span class="co">#&gt; $marginal</span></span>
 <span><span class="co">#&gt; Marginal Significance: You described 2 effects with terms related to 'marginally significant'.</span></span></code></pre>
 </div>
@@ -769,17 +769,17 @@ if you chain modules.</p>
 <span>  <span class="fu"><a href="../reference/module_run.html">module_run</a></span><span class="op">(</span><span class="st">"marginal"</span><span class="op">)</span></span>
 <span></span>
 <span><span class="va">ps_metascience</span><span class="op">$</span><span class="va">summary_table</span></span></code></pre></div>
-<pre><code><span><span class="co">#&gt;            paper_id p_values n_imprecise marginal</span></span>
-<span><span class="co">#&gt; 1  0956797613520608        6           0        0</span></span>
-<span><span class="co">#&gt; 2  0956797614522816       39           0        0</span></span>
-<span><span class="co">#&gt; 3  0956797614527830       13           2        0</span></span>
-<span><span class="co">#&gt; 4  0956797614557697       24           8        0</span></span>
-<span><span class="co">#&gt; 5  0956797614560771        4           1        0</span></span>
-<span><span class="co">#&gt; 6  0956797614566469        0           0        0</span></span>
-<span><span class="co">#&gt; 7  0956797615569001       25          20        0</span></span>
-<span><span class="co">#&gt; 8  0956797615569889       28           0        4</span></span>
-<span><span class="co">#&gt; 9  0956797615583071       25           2        0</span></span>
-<span><span class="co">#&gt; 10 0956797615588467       21           4        0</span></span></code></pre>
+<pre><code><span><span class="co">#&gt;            paper_id p_values n_imprecise n_zero marginal</span></span>
+<span><span class="co">#&gt; 1  0956797613520608        6           0      0        0</span></span>
+<span><span class="co">#&gt; 2  0956797614522816       39           0      0        0</span></span>
+<span><span class="co">#&gt; 3  0956797614527830       13           2      0        0</span></span>
+<span><span class="co">#&gt; 4  0956797614557697       24           8      0        0</span></span>
+<span><span class="co">#&gt; 5  0956797614560771        4           1      0        0</span></span>
+<span><span class="co">#&gt; 6  0956797614566469        0           0      0        0</span></span>
+<span><span class="co">#&gt; 7  0956797615569001       25          20      0        0</span></span>
+<span><span class="co">#&gt; 8  0956797615569889       28           0      0        4</span></span>
+<span><span class="co">#&gt; 9  0956797615583071       25           2      0        0</span></span>
+<span><span class="co">#&gt; 10 0956797615588467       21           4      0        0</span></span></code></pre>
 </div>
   </main><aside class="col-md-3"><nav id="toc" aria-label="Table of contents"><h2>On this page</h2>
     </nav></aside>

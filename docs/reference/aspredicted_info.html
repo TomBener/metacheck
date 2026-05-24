@@ -13,7 +13,7 @@
 
     <a class="navbar-brand me-2" href="../index.html">metacheck</a>
 
-    <small class="nav-text text-danger me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Unreleased version">0.0.0.9102</small>
+    <small class="nav-text text-danger me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Unreleased version">0.0.0.9103</small>
 
 
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -37,7 +37,7 @@
 <div class="row">
   <main id="main" class="col-md-9"><div class="page-header">
       <img src="../logo.png" class="logo" alt=""><h1>Retrieve info from AsPredicted by URL</h1>
-      <small class="dont-index">Source: <a href="https://github.com/scienceverse/metacheck/blob/HEAD/R/prereg.R" class="external-link"><code>R/prereg.R</code></a></small>
+      <small class="dont-index">Source: <a href="https://github.com/scienceverse/metacheck/blob/HEAD/R/archive-aspredicted.R" class="external-link"><code>R/archive-aspredicted.R</code></a></small>
       <div class="d-none name"><code>aspredicted_info.Rd</code></div>
     </div>
 
@@ -47,7 +47,7 @@
 
     <div class="section level2">
     <h2 id="ref-usage">Usage<a class="anchor" aria-label="anchor" href="#ref-usage"></a></h2>
-    <div class="sourceCode"><pre class="sourceCode r"><code><span><span class="fu">aspredicted_info</span><span class="op">(</span><span class="va">ap_url</span><span class="op">)</span></span></code></pre></div>
+    <div class="sourceCode"><pre class="sourceCode r"><code><span><span class="fu">aspredicted_info</span><span class="op">(</span><span class="va">ap_url</span>, id_col <span class="op">=</span> <span class="fl">1</span>, wait <span class="op">=</span> <span class="fl">1</span><span class="op">)</span></span></code></pre></div>
     </div>
 
     <div class="section level2">
@@ -55,7 +55,15 @@
 
 
 <dl><dt id="arg-ap-url">ap_url<a class="anchor" aria-label="anchor" href="#arg-ap-url"></a></dt>
-<dd><p>an AsPredicted URL</p></dd>
+<dd><p>an AsPredicted URL, or a table containing them (e.g., as created by <code><a href="aspredicted_links.html">aspredicted_links()</a></code>)</p></dd>
+
+
+<dt id="arg-id-col">id_col<a class="anchor" aria-label="anchor" href="#arg-id-col"></a></dt>
+<dd><p>the index or name of the column that contains AsPredicted URLs, if id is a table</p></dd>
+
+
+<dt id="arg-wait">wait<a class="anchor" aria-label="anchor" href="#arg-wait"></a></dt>
+<dd><p>wait time in seconds</p></dd>
 
 </dl></div>
     <div class="section level2">

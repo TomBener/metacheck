@@ -34,7 +34,7 @@
 
     <a class="navbar-brand me-2" href="../index.html">metacheck</a>
 
-    <small class="nav-text text-danger me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Unreleased version">0.0.0.9101</small>
+    <small class="nav-text text-danger me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Unreleased version">0.0.0.9103</small>
 
 
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -819,15 +819,15 @@ file).</p>
 <p>You can get or set the default LLM model with
 <code><a href="../reference/llm_model.html">llm_model()</a></code> and access a list of the current available
 models using <code><a href="../reference/llm_model_list.html">llm_model_list()</a></code>.</p>
-<table class="table">
+<table style="width:100%;" class="table">
 <colgroup>
-<col width="8%">
-<col width="33%">
+<col width="7%">
+<col width="31%">
 <col width="6%">
-<col width="8%">
+<col width="12%">
 <col width="13%">
-<col width="20%">
-<col width="10%">
+<col width="19%">
+<col width="9%">
 </colgroup>
 <thead><tr class="header">
 <th align="left">platform</th>
@@ -850,12 +850,30 @@ models using <code><a href="../reference/llm_model_list.html">llm_model_list()</
 </tr>
 <tr class="even">
 <td align="left">groq</td>
-<td align="left">openai/gpt-oss-safeguard-20b</td>
+<td align="left">meta-llama/llama-prompt-guard-2-86m</td>
 <td align="left">model</td>
-<td align="left">OpenAI</td>
+<td align="left">Meta</td>
+<td align="right">512</td>
+<td align="right">512</td>
+<td align="left">2025-05-30</td>
+</tr>
+<tr class="odd">
+<td align="left">groq</td>
+<td align="left">allam-2-7b</td>
+<td align="left">model</td>
+<td align="left">SDAIA</td>
+<td align="right">4096</td>
+<td align="right">4096</td>
+<td align="left">2025-01-23</td>
+</tr>
+<tr class="even">
+<td align="left">groq</td>
+<td align="left">qwen/qwen3-32b</td>
+<td align="left">model</td>
+<td align="left">Alibaba Cloud</td>
 <td align="right">131072</td>
-<td align="right">65536</td>
-<td align="left">2025-10-29</td>
+<td align="right">40960</td>
+<td align="left">2025-05-28</td>
 </tr>
 <tr class="odd">
 <td align="left">groq</td>
@@ -865,24 +883,6 @@ models using <code><a href="../reference/llm_model_list.html">llm_model_list()</
 <td align="right">131072</td>
 <td align="right">32768</td>
 <td align="left">2024-12-06</td>
-</tr>
-<tr class="even">
-<td align="left">groq</td>
-<td align="left">meta-llama/llama-prompt-guard-2-22m</td>
-<td align="left">model</td>
-<td align="left">Meta</td>
-<td align="right">512</td>
-<td align="right">512</td>
-<td align="left">2025-05-30</td>
-</tr>
-<tr class="odd">
-<td align="left">groq</td>
-<td align="left">openai/gpt-oss-20b</td>
-<td align="left">model</td>
-<td align="left">OpenAI</td>
-<td align="right">131072</td>
-<td align="right">65536</td>
-<td align="left">2025-08-05</td>
 </tr>
 </tbody>
 </table>
@@ -1185,7 +1185,7 @@ osf_type (nodes, files, preprints, registrations, users, set to
 “private” if you don’t have authorisation to view it, and “invalid” if
 the ), whether it is public</p>
 <div class="sourceCode" id="cb32"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="va">info</span> <span class="op">&lt;-</span> <span class="fu"><a href="../reference/osf_retrieve.html">osf_retrieve</a></span><span class="op">(</span><span class="va">links</span><span class="op">[</span><span class="fl">1</span><span class="op">:</span><span class="fl">6</span>, <span class="st">"href"</span><span class="op">]</span><span class="op">)</span></span>
+<code class="sourceCode R"><span><span class="va">info</span> <span class="op">&lt;-</span> <span class="fu"><a href="../reference/osf_info.html">osf_info</a></span><span class="op">(</span><span class="va">links</span><span class="op">[</span><span class="fl">1</span><span class="op">:</span><span class="fl">6</span>, <span class="st">"href"</span><span class="op">]</span><span class="op">)</span></span>
 <span></span>
 <span><span class="va">info</span><span class="op">[</span>, <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="st">"href"</span>,<span class="st">"osf_id"</span>, <span class="st">"osf_type"</span>, <span class="st">"public"</span>, <span class="st">"category"</span><span class="op">)</span><span class="op">]</span></span></code></pre></div>
 <pre><code><span><span class="co">#&gt; <span style="color: #949494;"># A tibble: 6 × 5</span></span></span>
@@ -1206,7 +1206,7 @@ retrieve information about all nodes and files that are contained by the
 OSF link.</p>
 <div class="sourceCode" id="cb34"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fu"><a href="../reference/osf_api_calls.html">osf_api_calls</a></span><span class="op">(</span><span class="fl">0</span><span class="op">)</span></span>
-<span><span class="va">all_contents</span> <span class="op">&lt;-</span> <span class="fu"><a href="../reference/osf_retrieve.html">osf_retrieve</a></span><span class="op">(</span><span class="va">links</span><span class="op">$</span><span class="va">href</span><span class="op">[</span><span class="fl">1</span><span class="op">]</span>, recursive <span class="op">=</span> <span class="cn">TRUE</span><span class="op">)</span></span>
+<span><span class="va">all_contents</span> <span class="op">&lt;-</span> <span class="fu"><a href="../reference/osf_info.html">osf_info</a></span><span class="op">(</span><span class="va">links</span><span class="op">$</span><span class="va">href</span><span class="op">[</span><span class="fl">1</span><span class="op">]</span>, recursive <span class="op">=</span> <span class="cn">TRUE</span><span class="op">)</span></span>
 <span><span class="va">n_calls</span> <span class="op">&lt;-</span> <span class="fu"><a href="../reference/osf_api_calls.html">osf_api_calls</a></span><span class="op">(</span><span class="op">)</span></span></code></pre></div>
 <p>The function <code><a href="../reference/osf_api_calls.html">osf_api_calls()</a></code> lets you reset and retrieve
 the number of API calls made since the last reset. You can see that the
@@ -1284,7 +1284,7 @@ will share more modules.</p>
 <span><span class="co">#&gt; * coi_check_oi: Identify and extract Conflicts of Interest (COI) statements.</span></span>
 <span><span class="co">#&gt; * funding_check: Identify and extract funding statements.</span></span>
 <span><span class="co">#&gt; * funding_check_oi: Identify and extract funding statements.</span></span>
-<span><span class="co">#&gt; * open_practices: This module incorporates ODDPub into metacheck. ODDPub is a text mining algorithm that detects which publications disseminated Open Data or Open Code together with the publication.</span></span>
+<span><span class="co">#&gt; * open_practices: This module searches for open data, code, materials, and registration statements.</span></span>
 <span><span class="co">#&gt; </span></span>
 <span><span class="co">#&gt; *** METHOD ***</span></span>
 <span><span class="co">#&gt; </span></span>
@@ -1301,7 +1301,7 @@ will share more modules.</p>
 <span><span class="co">#&gt; * repo_check: This module retrieves information from repositories.</span></span>
 <span><span class="co">#&gt; * stat_check: Check consistency of p-values and test statistics</span></span>
 <span><span class="co">#&gt; * stat_effect_size: The Effect Size module checks for effect sizes in t-tests and F-tests.</span></span>
-<span><span class="co">#&gt; * stat_p_exact: List any p-values reported with insufficient precision (e.g., p &lt; .05 or p = n.s.)</span></span>
+<span><span class="co">#&gt; * stat_p_exact: List any p-values reported with insufficient precision (e.g., p &lt; .05 or p = n.s.) or reported as exactly zero (e.g., p = .000).</span></span>
 <span><span class="co">#&gt; * stat_p_nonsig: This module checks for imprecisely reported p values. If p &gt; .05 is detected, it warns for misinterpretations.</span></span>
 <span><span class="co">#&gt; </span></span>
 <span><span class="co">#&gt; *** REFERENCE ***</span></span>

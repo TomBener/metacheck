@@ -13,7 +13,7 @@
 
     <a class="navbar-brand me-2" href="../index.html">metacheck</a>
 
-    <small class="nav-text text-danger me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Unreleased version">0.0.0.9101</small>
+    <small class="nav-text text-danger me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Unreleased version">0.0.0.9103</small>
 
 
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -40,6 +40,26 @@
       <small>Source: <a href="https://github.com/scienceverse/metacheck/blob/HEAD/NEWS.md" class="external-link"><code>NEWS.md</code></a></small>
     </div>
 
+    <div class="section level2">
+<h2 class="pkg-version" data-toc-text="0.0.0.9103" id="metacheck-0009103">metacheck 0.0.0.9103<a class="anchor" aria-label="anchor" href="#metacheck-0009103"></a></h2>
+<ul><li>converting grobid xml to bibr json now saves the file after each conversion, instead of at the end, making it better for large batches (although slightly less efficient by potentially duplicating crossref lookups shared between papers)</li>
+<li>
+<code><a href="../reference/convert.html">convert()</a></code> has new arguments <code>crossref_lookup</code> (default FALSE) and <code>keep_xml</code> (default TRUE). It also saves XML and/or JSON files as they are converted, rather than at the end, in case of breaking failure.</li>
+<li>Updated the “open_practices” module, which is much faster than the ODDPub version of this module (about 40x faster), also returns open materials and registrations, and has a lower false negative rate, but also a higher false positive rate. This removes the oddpub dependency.</li>
+<li>Restructured file names (not function names) for functions so all archive helper (e.g., osf, github, zenodo) start with “archive-” and database helpers (e.g., pubpeer, retractionwatch) start with “db-”.</li>
+<li>Restructured text functions to start with text_, so <code><a href="../reference/text_search.html">search_text()</a></code> is now <code><a href="../reference/text_search.html">text_search()</a></code> and <code><a href="../reference/text_expand.html">expand_text()</a></code> is now <code><a href="../reference/text_expand.html">text_expand()</a></code>. The old names will exist as aliases.</li>
+<li>Internal functions now prefaced with . to make it clearer for developers.</li>
+<li>All <code>{archive}_retrieve()</code> functions now renamed to <code>{archive}_info()</code> and the old <code>{archive}_info()</code> internal functions are now <code>.{archive}_info()</code>
+</li>
+</ul></div>
+    <div class="section level2">
+<h2 class="pkg-version" data-toc-text="0.0.0.9102" id="metacheck-0009102">metacheck 0.0.0.9102<a class="anchor" aria-label="anchor" href="#metacheck-0009102"></a></h2>
+<ul><li>Shiny app improvements: you can now view HTML reports in the browser</li>
+<li>Fixes the “prereg_check” module to address an error when there are more than 10 OSF registrations in a batch that caused unmergable data frames.</li>
+<li>Fixes the “code_check” module to address an error when checking multiple files that have no repositories with code.</li>
+<li>The module “code_check” now has an argument “file_limit” to control how many code files per repo are downloaded and processed. The default is 20.</li>
+<li>Fixed a problem where invisible figures in grobid would mess up the text section ids</li>
+</ul></div>
     <div class="section level2">
 <h2 class="pkg-version" data-toc-text="0.0.0.9101" id="metacheck-0009101">metacheck 0.0.0.9101<a class="anchor" aria-label="anchor" href="#metacheck-0009101"></a></h2>
 <ul><li>

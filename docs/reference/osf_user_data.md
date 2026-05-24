@@ -5,7 +5,7 @@ Structure OSF User Data
 ## Usage
 
 ``` r
-.osf_user_data(data)
+osf_user_data(data)
 ```
 
 ## Arguments

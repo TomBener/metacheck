@@ -318,9 +318,7 @@ According to the text, the researchers planned to test a minimum of 10
 and a maximum of 15 individuals for each species. However, the actual
 sample size for each species was: ruffed lemur (n = 10), Coquerel’s
 sifakas (n = 10), ring-tailed lemurs (n = 10), and mongoose lemur (n =
-9). The researchers tested 39 lemurs in total, which is more than the
-maximum planned sample size of 60 individuals (15 individuals per
-species).
+9).
 
 As we see, the LLM does a very good job evaluating whether the authors
 adhered to their preregistration in terms of the sample size. The
@@ -626,8 +624,8 @@ LLM Assessment:
 The authors deviated from their preregistration.
 
 According to the text, the researchers planned to collect data from 60
-participants in each cohort. However, in cohort B, they only collected
-data from 56 participants due to the COVID-19 pandemic.
+participants in each cohort, but they only collected data from 60
+participants in cohort A and 56 participants in cohort B.
 
 It fails gracefully if there are no links.
 

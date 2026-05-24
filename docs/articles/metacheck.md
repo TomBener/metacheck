@@ -322,10 +322,10 @@ and access a list of the current available models using
 | platform | id | object | owned_by | context_window | max_completion_tokens | created_at |
 |:---|:---|:---|:---|---:|---:|:---|
 | groq | groq/compound | model | Groq | 131072 | 8192 | 2025-09-04 |
-| groq | openai/gpt-oss-safeguard-20b | model | OpenAI | 131072 | 65536 | 2025-10-29 |
+| groq | meta-llama/llama-prompt-guard-2-86m | model | Meta | 512 | 512 | 2025-05-30 |
+| groq | allam-2-7b | model | SDAIA | 4096 | 4096 | 2025-01-23 |
+| groq | qwen/qwen3-32b | model | Alibaba Cloud | 131072 | 40960 | 2025-05-28 |
 | groq | llama-3.3-70b-versatile | model | Meta | 131072 | 32768 | 2024-12-06 |
-| groq | meta-llama/llama-prompt-guard-2-22m | model | Meta | 512 | 512 | 2025-05-30 |
-| groq | openai/gpt-oss-20b | model | OpenAI | 131072 | 65536 | 2025-08-05 |
 
 When you start metacheck for the first time, it will check for relevant
 API keys in your Renviron and automatically set the model to use. You
@@ -602,7 +602,7 @@ module_list()
     #> * coi_check_oi: Identify and extract Conflicts of Interest (COI) statements.
     #> * funding_check: Identify and extract funding statements.
     #> * funding_check_oi: Identify and extract funding statements.
-    #> * open_practices: This module incorporates ODDPub into metacheck. ODDPub is a text mining algorithm that detects which publications disseminated Open Data or Open Code together with the publication.
+    #> * open_practices: This module searches for open data, code, materials, and registration statements.
     #> 
     #> *** METHOD ***
     #> 
@@ -619,7 +619,7 @@ module_list()
     #> * repo_check: This module retrieves information from repositories.
     #> * stat_check: Check consistency of p-values and test statistics
     #> * stat_effect_size: The Effect Size module checks for effect sizes in t-tests and F-tests.
-    #> * stat_p_exact: List any p-values reported with insufficient precision (e.g., p < .05 or p = n.s.)
+    #> * stat_p_exact: List any p-values reported with insufficient precision (e.g., p < .05 or p = n.s.) or reported as exactly zero (e.g., p = .000).
     #> * stat_p_nonsig: This module checks for imprecisely reported p values. If p > .05 is detected, it warns for misinterpretations.
     #> 
     #> *** REFERENCE ***

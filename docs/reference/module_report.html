@@ -13,7 +13,7 @@
 
     <a class="navbar-brand me-2" href="../index.html">metacheck</a>
 
-    <small class="nav-text text-danger me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Unreleased version">0.0.0.9102</small>
+    <small class="nav-text text-danger me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Unreleased version">0.0.0.9103</small>
 
 
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -74,7 +74,7 @@
 <span class="r-in"><span><span class="fu">module_report</span><span class="op">(</span><span class="va">op</span><span class="op">)</span> <span class="op">|&gt;</span> <span class="fu"><a href="https://rdrr.io/r/base/cat.html" class="external-link">cat</a></span><span class="op">(</span><span class="op">)</span></span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> ### ⚠️ Exact P-Values {#exact-p-values .red}</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> We found 1 imprecise *p* value out of 3 detected.</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> We found 1 imprecise *p* value out of 3 detected *p* values.</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> &lt;details&gt;&lt;summary&gt;View detailed feedback&lt;/summary&gt;&lt;div&gt;</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
@@ -107,9 +107,9 @@
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> ::: {.callout-note title="How It Works" collapse="true"}</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> List any p-values reported with insufficient precision (e.g., p &lt; .05 or p = n.s.)</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> List any p-values reported with insufficient precision (e.g., p &lt; .05 or p = n.s.) or reported as exactly zero (e.g., p = .000).</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> This module uses regular expressions to identify p-values. It will flag any values reported as p &gt; ? or p &lt; numbers greater than .001.</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> This module uses regular expressions to identify p-values. It will flag any values reported as p &gt; ? or p &lt; numbers greater than .001. It will also flag p-values reported as exactly zero (e.g., p = .000, p = 0.00), which are mathematically impossible — p-values are never exactly zero and should instead be reported as p &lt; .001.</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> We try to exclude figure and table notes like "* p &lt; .05", but may not succeed at excluding all false positives.</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>

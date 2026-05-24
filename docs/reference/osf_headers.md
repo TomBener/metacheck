@@ -5,7 +5,7 @@ Adds OSF auth and accept headers to an httr2 request.
 ## Usage
 
 ``` r
-.osf_headers(req)
+osf_headers(req)
 ```
 
 ## Arguments

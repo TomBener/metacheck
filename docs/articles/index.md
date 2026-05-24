@@ -6,8 +6,6 @@
   metacheck](https://scienceverse.github.io/metacheck/articles/intro.md):
 - [Journal Article Reporting
   Standards](https://scienceverse.github.io/metacheck/articles/jars.md):
-- [Checking OSF Data
-  Repositories](https://scienceverse.github.io/metacheck/articles/osf.md):
 - [Retrieving Planned Sample Sizes from AsPredicted
   Preregistrations](https://scienceverse.github.io/metacheck/articles/aspredicted.md):
 

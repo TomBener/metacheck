@@ -34,7 +34,7 @@
 
     <a class="navbar-brand me-2" href="../index.html">metacheck</a>
 
-    <small class="nav-text text-danger me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Unreleased version">0.0.0.9101</small>
+    <small class="nav-text text-danger me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Unreleased version">0.0.0.9103</small>
 
 
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -169,12 +169,12 @@ links here, returned in the “href” column.</p>
 <div class="section level2">
 <h2 id="retrieve-link-info">Retrieve Link Info<a class="anchor" aria-label="anchor" href="#retrieve-link-info"></a>
 </h2>
-<p>We can then use the function <code><a href="../reference/aspredicted_retrieve.html">aspredicted_retrieve()</a></code> to
-get structured information from AsPredicted. You can try to run the
-function on all 51 links above, but AsPredicted will eventually make you
-complete a captcha before each access (we’re working on a way to log
-into the site to prevent this). But for demonstration purposes, let’s
-just look at one paper.</p>
+<p>We can then use the function <code><a href="../reference/aspredicted_info.html">aspredicted_info()</a></code> to get
+structured information from AsPredicted. You can try to run the function
+on all 51 links above, but AsPredicted will eventually make you complete
+a captcha before each access (we’re working on a way to log into the
+site to prevent this). But for demonstration purposes, let’s just look
+at one paper.</p>
 <p>Below we provide an example where we analyze the paper “<a href="https://journals.sagepub.com/doi/10.1177/09567976221082938" class="external-link">The
 Evolution of Cognitive Control in Lemurs</a>”, which contains a single
 preregistration on AsPredicted.</p>
@@ -183,7 +183,7 @@ preregistration on AsPredicted.</p>
 <span></span>
 <span><span class="va">links</span> <span class="op">&lt;-</span> <span class="fu"><a href="../reference/aspredicted_links.html">aspredicted_links</a></span><span class="op">(</span><span class="va">paper</span><span class="op">)</span></span>
 <span></span>
-<span><span class="va">prereg</span> <span class="op">&lt;-</span> <span class="fu"><a href="../reference/aspredicted_retrieve.html">aspredicted_retrieve</a></span><span class="op">(</span><span class="va">links</span>, id_col <span class="op">=</span> <span class="st">"href"</span><span class="op">)</span></span>
+<span><span class="va">prereg</span> <span class="op">&lt;-</span> <span class="fu"><a href="../reference/aspredicted_info.html">aspredicted_info</a></span><span class="op">(</span><span class="va">links</span>, id_col <span class="op">=</span> <span class="st">"href"</span><span class="op">)</span></span>
 <span><span class="co">#&gt; Starting AsPredicted retrieval for 1 file...</span></span>
 <span><span class="co">#&gt; * Retrieving info from https://aspredicted.org/iv9tb.pdf...</span></span>
 <span><span class="co">#&gt; ...AsPredicted retrieval complete!</span></span></code></pre></div>
@@ -234,7 +234,7 @@ manuscript.</p>
 <h3 id="preregistration-sample-size-plan">Preregistration Sample Size Plan<a class="anchor" aria-label="anchor" href="#preregistration-sample-size-plan"></a>
 </h3>
 <p>You can access the sample size plan from the results of
-<code><a href="../reference/aspredicted_retrieve.html">aspredicted_retrieve()</a></code> under the column name
+<code><a href="../reference/aspredicted_info.html">aspredicted_info()</a></code> under the column name
 <code>AP_sample_size</code>.</p>
 <div class="sourceCode" id="cb4"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="co"># get the sample size section from AsPredicted</span></span>
@@ -362,9 +362,7 @@ an LLM.</p>
 10 and a maximum of 15 individuals for each species. However, the actual
 sample size for each species was: ruffed lemur (n = 10), Coquerel’s
 sifakas (n = 10), ring-tailed lemurs (n = 10), and mongoose lemur (n =
-9). The researchers tested 39 lemurs in total, which is more than the
-maximum planned sample size of 60 individuals (15 individuals per
-species).</p>
+9).</p>
 <p>As we see, the LLM does a very good job evaluating whether the
 authors adhered to their preregistration in terms of the sample size.
 The long-run performance of this automated evaluation needs to be
@@ -393,7 +391,7 @@ the misclassification by the LLM.</p>
 <div class="sourceCode" id="cb8"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="va">paper</span> <span class="op">&lt;-</span> <span class="va">psychsci</span><span class="op">$</span><span class="va">`0956797621991548`</span></span>
 <span><span class="va">links</span> <span class="op">&lt;-</span> <span class="fu"><a href="../reference/aspredicted_links.html">aspredicted_links</a></span><span class="op">(</span><span class="va">paper</span><span class="op">)</span></span>
-<span><span class="va">prereg</span> <span class="op">&lt;-</span> <span class="fu"><a href="../reference/aspredicted_retrieve.html">aspredicted_retrieve</a></span><span class="op">(</span><span class="va">links</span>, id_col <span class="op">=</span> <span class="st">"href"</span><span class="op">)</span></span>
+<span><span class="va">prereg</span> <span class="op">&lt;-</span> <span class="fu"><a href="../reference/aspredicted_info.html">aspredicted_info</a></span><span class="op">(</span><span class="va">links</span>, id_col <span class="op">=</span> <span class="st">"href"</span><span class="op">)</span></span>
 <span><span class="co">#&gt; Starting AsPredicted retrieval for 1 file...</span></span>
 <span><span class="co">#&gt; * Retrieving info from https://aspredicted.org/p4ci6.pdf...</span></span>
 <span><span class="co">#&gt; ...AsPredicted retrieval complete!</span></span>
@@ -487,7 +485,7 @@ you own local module</a> by using (or improving) the following code:</p>
 <span>  <span class="kw">if</span> <span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/nrow.html" class="external-link">nrow</a></span><span class="op">(</span><span class="va">links</span><span class="op">)</span> <span class="op">==</span> <span class="fl">0</span><span class="op">)</span> <span class="kw"><a href="https://rdrr.io/r/base/function.html" class="external-link">return</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/list.html" class="external-link">list</a></span><span class="op">(</span><span class="op">)</span><span class="op">)</span></span>
 <span>  </span>
 <span>  <span class="co"># get prereg data from AsPredicted</span></span>
-<span>  <span class="va">prereg</span> <span class="op">&lt;-</span> <span class="fu"><a href="../reference/aspredicted_retrieve.html">aspredicted_retrieve</a></span><span class="op">(</span><span class="va">links</span>, id_col <span class="op">=</span> <span class="st">"href"</span><span class="op">)</span></span>
+<span>  <span class="va">prereg</span> <span class="op">&lt;-</span> <span class="fu"><a href="../reference/aspredicted_info.html">aspredicted_info</a></span><span class="op">(</span><span class="va">links</span>, id_col <span class="op">=</span> <span class="st">"href"</span><span class="op">)</span></span>
 <span>  <span class="kw">if</span> <span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/nrow.html" class="external-link">nrow</a></span><span class="op">(</span><span class="va">prereg</span><span class="op">)</span> <span class="op">==</span> <span class="fl">0</span> <span class="op">|</span> <span class="fu"><a href="https://rdrr.io/r/base/NULL.html" class="external-link">is.null</a></span><span class="op">(</span><span class="va">prereg</span><span class="op">$</span><span class="va">AP_sample_size</span><span class="op">)</span><span class="op">)</span> <span class="op">{</span></span>
 <span>    <span class="kw"><a href="https://rdrr.io/r/base/function.html" class="external-link">return</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/list.html" class="external-link">list</a></span><span class="op">(</span><span class="op">)</span><span class="op">)</span></span>
 <span>  <span class="op">}</span></span>
@@ -637,8 +635,8 @@ any significant</p>
 <p>LLM Assessment:</p>
 <p>The authors deviated from their preregistration.</p>
 <p>According to the text, the researchers planned to collect data from
-60 participants in each cohort. However, in cohort B, they only
-collected data from 56 participants due to the COVID-19 pandemic.</p>
+60 participants in each cohort, but they only collected data from 60
+participants in cohort A and 56 participants in cohort B.</p>
 <p>It fails gracefully if there are no links.</p>
 <div class="sourceCode" id="cb14"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="va">paper</span> <span class="op">&lt;-</span> <span class="va">psychsci</span><span class="op">[[</span><span class="fl">1</span><span class="op">]</span><span class="op">]</span></span>
