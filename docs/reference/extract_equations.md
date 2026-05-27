@@ -6,7 +6,7 @@ List all equations in the text, returning the matched text (e.g., 'p =
 ## Usage
 
 ``` r
-extract_equations(paper)
+extract_eq(paper)
 ```
 
 ## Arguments
@@ -37,5 +37,5 @@ author.
 
 ``` r
 paper <- demopaper()
-p_values <- extract_equations(paper)
+p_values <- extract_eq(paper)
 ```

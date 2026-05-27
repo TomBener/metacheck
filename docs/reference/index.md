@@ -221,7 +221,7 @@ text.
 
 ## Extras
 
-- [`extract_equations()`](https://scienceverse.github.io/metacheck/reference/extract_equations.md)
+- [`extract_eq()`](https://scienceverse.github.io/metacheck/reference/extract_eq.md)
   : Extract P-Values
 - [`extract_p_values()`](https://scienceverse.github.io/metacheck/reference/extract_p_values.md)
   : Extract P-Values

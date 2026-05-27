@@ -2,19 +2,17 @@
 % Please edit documentation in R/grobid.R
 \name{.tei_xrefs}
 \alias{.tei_xrefs}
-\title{Get cross references from TEI type XML}
+\title{Get cross references from text table}
 \usage{
-.tei_xrefs(xml, text_table)
+.tei_xrefs(text_table)
 }
 \arguments{
-\item{xml}{The XML}
-
 \item{text_table}{The text table for the paper}
 }
 \value{
 xrefs table
 }
 \description{
-Get cross references from TEI type XML
+Get cross references from text table
 }
 \keyword{internal}
