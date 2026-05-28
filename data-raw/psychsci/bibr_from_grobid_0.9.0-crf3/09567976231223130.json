@@ -111,27 +111,19 @@
       "paragraph_id": 1,
       "section_id": 0,
       "page_number": null,
-      "formatted": "Under one popular model, perceptual magnitudes are represented on a linear scale, with imprecision scaling proportionally with the value <ref type=\"bibr\" target=\"#b4\">(Brannon et al., 2001;<\/ref><ref type=\"bibr\" target=\"#b15\">Gallistel, 2011;<\/ref><ref type=\"bibr\" target=\"#b17\">Gallistel &amp; Gelman, 2000;<\/ref><ref type=\"bibr\" target=\"#b25\">Odic et al., 2016)<\/ref>."
+      "formatted": "Under one popular model, perceptual magnitudes are represented on a linear scale, with imprecision scaling proportionally with the value <ref type=\"bibr\" target=\"#b4\">(Brannon et al., 2001;<\/ref> <ref type=\"bibr\" target=\"#b15\">Gallistel, 2011;<\/ref> <ref type=\"bibr\" target=\"#b17\">Gallistel &amp; Gelman, 2000;<\/ref> <ref type=\"bibr\" target=\"#b25\">Odic et al., 2016)<\/ref>."
     },
     {
-      "text": "For example, a series of neurons-each with a preferred value-collectively respond to the encoded value, with neurons further from the preferred line firing less, instantiating a tuning curve with scalar variability",
+      "text": "For example, a series of neurons-each with a preferred value-collectively respond to the encoded value, with neurons further from the preferred line firing less, instantiating a tuning curve with scalar variability doi=10.1177%2F09567976231223130&domain=pdf&date_stamp=2024-01-18\">http://crossmark.crossref.org/dialog/? doi=10.1177%2F09567976231223130&domain=pdf&date_stamp=2024-01-18.",
       "text_id": 5,
       "paragraph_id": 1,
       "section_id": 0,
       "page_number": null,
-      "formatted": "For example, a series of neurons-each with a preferred value-collectively respond to the encoded value, with neurons further from the preferred line firing less, instantiating a tuning curve with scalar variability <ref type=\"url\" target=\"http://crossmark.crossref.org/dialog/?"
-    },
-    {
-      "text": "doi=10.1177%2F09567976231223130&domain=pdf&date_stamp=2024-01-18\">1223130P SSXXX10.",
-      "text_id": 6,
-      "paragraph_id": 1,
-      "section_id": 0,
-      "page_number": null,
-      "formatted": "doi=10.1177%2F09567976231223130&amp;domain=pdf&amp;date_stamp=2024-01-18\">1223130P SSXXX10<\/ref>."
+      "formatted": "For example, a series of neurons-each with a preferred value-collectively respond to the encoded value, with neurons further from the preferred line firing less, instantiating a tuning curve with scalar variability <ref type=\"url\" target=\"http://crossmark.crossref.org/dialog/? doi=10.1177%2F09567976231223130&amp;domain=pdf&amp;date_stamp=2024-01-18\">1223130P SSXXX10<\/ref>."
     },
     {
       "text": ".",
-      "text_id": 7,
+      "text_id": 6,
       "paragraph_id": 2,
       "section_id": 1,
       "page_number": null,
@@ -139,7 +131,7 @@
     },
     {
       "text": "Although such a format permits arithmetic operations to be transparently carried over to perceptual magnitudes, the need for dedicated feature detectors imposes computational demands because of the high dynamic range that the physically limited brain can represent.",
-      "text_id": 8,
+      "text_id": 7,
       "paragraph_id": 2,
       "section_id": 1,
       "page_number": null,
@@ -147,7 +139,7 @@
     },
     {
       "text": "Given the high dynamic range of most perceptual magnitudes (e.g., at extremes, perception can represent brightness from even a few photons all the way to the brightness of staring directly at the sun), such a coding scheme must allocate an unrealistically high amount of neuronal real estate to represent any value along that range (Ala-Laurila & Rieke, 2014).",
-      "text_id": 9,
+      "text_id": 8,
       "paragraph_id": 2,
       "section_id": 1,
       "page_number": null,
@@ -155,15 +147,15 @@
     },
     {
       "text": "A common revision to this model is to distribute the feature detectors logarithmically (Dehaene, 2003;Dehaene et al., 2008).",
-      "text_id": 10,
+      "text_id": 9,
       "paragraph_id": 3,
       "section_id": 1,
       "page_number": null,
-      "formatted": "A common revision to this model is to distribute the feature detectors logarithmically <ref type=\"bibr\" target=\"#b7\">(Dehaene, 2003;<\/ref><ref type=\"bibr\" target=\"#b9\">Dehaene et al., 2008)<\/ref>."
+      "formatted": "A common revision to this model is to distribute the feature detectors logarithmically <ref type=\"bibr\" target=\"#b7\">(Dehaene, 2003;<\/ref> <ref type=\"bibr\" target=\"#b9\">Dehaene et al., 2008)<\/ref>."
     },
     {
       "text": "Small numbers of items would then be represented by dedicated feature detectors with high precision, whereas higher numbers would lack dedicated feature detectors and would be decoded from the collective and noisy combination of many neurons, leading to imprecision.",
-      "text_id": 11,
+      "text_id": 10,
       "paragraph_id": 3,
       "section_id": 1,
       "page_number": null,
@@ -171,7 +163,7 @@
     },
     {
       "text": "But this revision does not permit transparent arithmetic operations because a log format could not represent the value of zero and would treat addition and subtraction as multiplication and division (Gallistel, 2011). Gallistel (2011) proposed a solution that maintains transparent arithmetic with adequate compression-a bipartite format that codes magnitudes in two bits: the value and the scale.",
-      "text_id": 12,
+      "text_id": 11,
       "paragraph_id": 3,
       "section_id": 1,
       "page_number": null,
@@ -179,7 +171,7 @@
     },
     {
       "text": "The first bit of information is the measurement value falling on an arbitrary scale (e.g., a value between 0 and 1).",
-      "text_id": 13,
+      "text_id": 12,
       "paragraph_id": 3,
       "section_id": 1,
       "page_number": null,
@@ -187,7 +179,7 @@
     },
     {
       "text": "The second is a scaling variable that is determined by estimating the dynamic range-the difference between the smallest and the largest value in the current environment.",
-      "text_id": 14,
+      "text_id": 13,
       "paragraph_id": 3,
       "section_id": 1,
       "page_number": null,
@@ -195,7 +187,7 @@
     },
     {
       "text": "Consider how computers represent very large numbers using the scientific notation: 5.1 × 10e 10 is a bipartite format in which the exponent codes for the scale, whereas the other number specifies the interval (Gallistel, 2017).",
-      "text_id": 15,
+      "text_id": 14,
       "paragraph_id": 3,
       "section_id": 1,
       "page_number": null,
@@ -203,7 +195,7 @@
     },
     {
       "text": "This allows the sensitivity of the internal representation to autoscale in accordance with the amount of information presented in the input, allowing for efficient storage over a wide dynamic range while maintaining transparent arithmetic operations over the stored values.",
-      "text_id": 16,
+      "text_id": 15,
       "paragraph_id": 3,
       "section_id": 1,
       "page_number": null,
@@ -211,7 +203,7 @@
     },
     {
       "text": "The bipartite model is theoretically appealing, but it has never been empirically tested in magnitude perception.",
-      "text_id": 17,
+      "text_id": 16,
       "paragraph_id": 4,
       "section_id": 1,
       "page_number": null,
@@ -219,7 +211,7 @@
     },
     {
       "text": "We do so by investigating the identification of maximal and minimal elements in a set.",
-      "text_id": 18,
+      "text_id": 17,
       "paragraph_id": 4,
       "section_id": 1,
       "page_number": null,
@@ -227,7 +219,7 @@
     },
     {
       "text": "Because the bipartite format's autoscaling depends on the estimated dynamic range, it relies on the encoding of these endpoints with a high degree of precision; otherwise, it risks failing to appropriately scale the entire range of values.",
-      "text_id": 19,
+      "text_id": 18,
       "paragraph_id": 4,
       "section_id": 1,
       "page_number": null,
@@ -235,7 +227,7 @@
     },
     {
       "text": "This implies that perceptual encoding mechanisms that extract magnitudes should-in early perceptual stages-code for the minimal and maximal values with a uniquely privileged status because every other value is coded in relation to them.",
-      "text_id": 20,
+      "text_id": 19,
       "paragraph_id": 4,
       "section_id": 1,
       "page_number": null,
@@ -243,7 +235,7 @@
     },
     {
       "text": "Returning to our bowl-of-fruit example, how might the visual system represent which of the fruits is \"the largest\" or \"the smallest\"?",
-      "text_id": 21,
+      "text_id": 20,
       "paragraph_id": 5,
       "section_id": 1,
       "page_number": null,
@@ -251,7 +243,7 @@
     },
     {
       "text": "Under many models of perception and memory, this is a serial comparison problem: The observer must compare the size of each fruit to each other one through successive comparisons (Pashler & Badgio, 1985).",
-      "text_id": 22,
+      "text_id": 21,
       "paragraph_id": 5,
       "section_id": 1,
       "page_number": null,
@@ -259,7 +251,7 @@
     },
     {
       "text": "This is analogous to how digital computers order values (e.g., the quicksort algorithm; for extensive review, see Cormen et al., 2022) but necessitates a mathematical limit to its efficiency: The time and memory demands grow with the size of the list because more comparisons must be done, predicting more errors as the set size grows.",
-      "text_id": 23,
+      "text_id": 22,
       "paragraph_id": 5,
       "section_id": 1,
       "page_number": null,
@@ -267,15 +259,15 @@
     },
     {
       "text": "An alternative algorithm comes from ensemble perception and pooledpopulation normalization: Perception might preattentively code for the typical value in the entire set represented on a linear/log scale, with items that are further from the mean popping out as potential outliers via a similarity metric (Haberman & Whitney, 2012;Utochkin et al., 2023).",
-      "text_id": 24,
+      "text_id": 23,
       "paragraph_id": 5,
       "section_id": 1,
       "page_number": null,
-      "formatted": "An alternative algorithm comes from ensemble perception and pooledpopulation normalization: Perception might preattentively code for the typical value in the entire set represented on a linear/log scale, with items that are further from the mean popping out as potential outliers via a similarity metric <ref type=\"bibr\" target=\"#b19\">(Haberman &amp; Whitney, 2012;<\/ref><ref type=\"bibr\" target=\"#b36\">Utochkin et al., 2023)<\/ref>."
+      "formatted": "An alternative algorithm comes from ensemble perception and pooledpopulation normalization: Perception might preattentively code for the typical value in the entire set represented on a linear/log scale, with items that are further from the mean popping out as potential outliers via a similarity metric <ref type=\"bibr\" target=\"#b19\">(Haberman &amp; Whitney, 2012;<\/ref> <ref type=\"bibr\" target=\"#b36\">Utochkin et al., 2023)<\/ref>."
     },
     {
       "text": "The bipartite format makes different predictions from both of these accounts.",
-      "text_id": 25,
+      "text_id": 24,
       "paragraph_id": 6,
       "section_id": 1,
       "page_number": null,
@@ -283,7 +275,7 @@
     },
     {
       "text": "Unlike the sorting algorithm, it avoids the efficiency problem because the very act of representing a perceptual magnitude requires first encoding the minimal and maximal elements with high precision so that other values can be represented in relationship to the range.",
-      "text_id": 26,
+      "text_id": 25,
       "paragraph_id": 6,
       "section_id": 1,
       "page_number": null,
@@ -291,7 +283,7 @@
     },
     {
       "text": "Therefore, the maximal and minimal elements are represented \"for free\" and do not require comparisons to each other value.",
-      "text_id": 27,
+      "text_id": 26,
       "paragraph_id": 6,
       "section_id": 1,
       "page_number": null,
@@ -299,7 +291,7 @@
     },
     {
       "text": "Observers",
-      "text_id": 28,
+      "text_id": 27,
       "paragraph_id": 6,
       "section_id": 1,
       "page_number": null,
@@ -307,7 +299,7 @@
     },
     {
       "text": "How is information stored in the mind?",
-      "text_id": 29,
+      "text_id": 28,
       "paragraph_id": 7,
       "section_id": 2,
       "page_number": null,
@@ -315,7 +307,7 @@
     },
     {
       "text": "Much like computers can store information as integers, strings, or floating points, the format of our mind's representations dictates how information is used.",
-      "text_id": 30,
+      "text_id": 29,
       "paragraph_id": 7,
       "section_id": 2,
       "page_number": null,
@@ -323,7 +315,7 @@
     },
     {
       "text": "With a population of college undergraduates, we show that a set of representations-perceptual magnitudes, including length, size, and numberare stored in a format that privileges endpoint values over inner ones.",
-      "text_id": 31,
+      "text_id": 30,
       "paragraph_id": 7,
       "section_id": 2,
       "page_number": null,
@@ -331,7 +323,7 @@
     },
     {
       "text": "People can rapidly identify the maximal and minimal value in a set (e.g., find the longest or shortest line out of 11 heterogeneous options), even though they struggle to identify other members of the set (e.g., the third longest line).",
-      "text_id": 32,
+      "text_id": 31,
       "paragraph_id": 7,
       "section_id": 2,
       "page_number": null,
@@ -339,7 +331,7 @@
     },
     {
       "text": "We propose that representations of perceptual magnitudes are in a bipartite formatakin to scientific notation-and therefore \"scale\" the representational set by the minimal and maximal value that we are currently attending to.",
-      "text_id": 33,
+      "text_id": 32,
       "paragraph_id": 7,
       "section_id": 2,
       "page_number": null,
@@ -347,7 +339,7 @@
     },
     {
       "text": "should therefore find these elements quickly and efficiently at any set size, so long as crowding or other low-level performance issues are kept to a minimum.",
-      "text_id": 34,
+      "text_id": 33,
       "paragraph_id": 8,
       "section_id": 2,
       "page_number": null,
@@ -355,7 +347,7 @@
     },
     {
       "text": "Inner values, on the other hand, such as the second or third largest fruit, are not represented with this privileged status and would require successive comparisons, incurring a serial cost.",
-      "text_id": 35,
+      "text_id": 34,
       "paragraph_id": 8,
       "section_id": 2,
       "page_number": null,
@@ -363,7 +355,7 @@
     },
     {
       "text": "The bipartite format is also distinct from the similarity-to-the-mean account.",
-      "text_id": 36,
+      "text_id": 35,
       "paragraph_id": 9,
       "section_id": 2,
       "page_number": null,
@@ -371,7 +363,7 @@
     },
     {
       "text": "Extracting the mean value (e.g., the average length line) improves with set size (Utochkin et al., 2023), predicting higher precision for finding the endpoints at higher set sizes.",
-      "text_id": 37,
+      "text_id": 36,
       "paragraph_id": 9,
       "section_id": 2,
       "page_number": null,
@@ -379,7 +371,7 @@
     },
     {
       "text": "If the individual items are also equally spaced from each other, then increasing the set size also increases the range, again predicting that the maximal and minimal identification should improve with set size.",
-      "text_id": 38,
+      "text_id": 37,
       "paragraph_id": 9,
       "section_id": 2,
       "page_number": null,
@@ -387,7 +379,7 @@
     },
     {
       "text": "The bipartite format, on the other hand, represents the range independently from the mean: It codes values from the range inward, not from the mean outward.",
-      "text_id": 39,
+      "text_id": 38,
       "paragraph_id": 9,
       "section_id": 2,
       "page_number": null,
@@ -395,7 +387,7 @@
     },
     {
       "text": "It therefore-again-predicts no effect of set size.",
-      "text_id": 40,
+      "text_id": 39,
       "paragraph_id": 9,
       "section_id": 2,
       "page_number": null,
@@ -403,7 +395,7 @@
     },
     {
       "text": "In six experiments, we tested these hypotheses across a range of dimensions (length, area, and number).",
-      "text_id": 41,
+      "text_id": 40,
       "paragraph_id": 10,
       "section_id": 2,
       "page_number": null,
@@ -411,7 +403,7 @@
     },
     {
       "text": "The first four experiments presented here are identical except for the stimuli used, and for simplicity we report them together as a group, noting differences between them where relevant.",
-      "text_id": 42,
+      "text_id": 41,
       "paragraph_id": 10,
       "section_id": 2,
       "page_number": null,
@@ -419,7 +411,7 @@
     },
     {
       "text": "Experiments 1 and 2 examined performance on finding the longest and shortest lines in a set of five (Experiment 1) or seven (Experiment 2) lines.",
-      "text_id": 43,
+      "text_id": 42,
       "paragraph_id": 10,
       "section_id": 2,
       "page_number": null,
@@ -427,7 +419,7 @@
     },
     {
       "text": "For Experiment 3, we asked participants to find the biggest and smallest set of dots, always presenting five sets but varying the number of individual dots in each set from one to five.",
-      "text_id": 44,
+      "text_id": 43,
       "paragraph_id": 10,
       "section_id": 2,
       "page_number": null,
@@ -435,7 +427,7 @@
     },
     {
       "text": "Experiment 4 had participants find the most or least numerous set of dots.",
-      "text_id": 45,
+      "text_id": 44,
       "paragraph_id": 10,
       "section_id": 2,
       "page_number": null,
@@ -443,7 +435,7 @@
     },
     {
       "text": "With the use of a within-subjects design, Experiment 5 returned to length perception and tested set sizes of seven, nine, and 11 lines.",
-      "text_id": 46,
+      "text_id": 45,
       "paragraph_id": 10,
       "section_id": 2,
       "page_number": null,
@@ -451,7 +443,7 @@
     },
     {
       "text": "Finally, Experiment 6 controlled for a potential confound in the instructions provided to the participants.",
-      "text_id": 47,
+      "text_id": 46,
       "paragraph_id": 10,
       "section_id": 2,
       "page_number": null,
@@ -459,7 +451,7 @@
     },
     {
       "text": "All experiments in this article were preregistered (https://aspredicted.org/sn9xs.pdf), and all methods, stimuli, programs, and data are available on the OSF at https://osf.io/k6fqt.",
-      "text_id": 48,
+      "text_id": 47,
       "paragraph_id": 11,
       "section_id": 3,
       "page_number": null,
@@ -467,7 +459,7 @@
     },
     {
       "text": "Experiments 1-4",
-      "text_id": 49,
+      "text_id": 48,
       "paragraph_id": 12,
       "section_id": 4,
       "page_number": null,
@@ -475,7 +467,7 @@
     },
     {
       "text": "On the basis of pilot data, we determined that a minimum of 30 participants was sufficient to achieve power = 0.95 and α = 0.05.",
-      "text_id": 50,
+      "text_id": 49,
       "paragraph_id": 13,
       "section_id": 5,
       "page_number": null,
@@ -483,7 +475,7 @@
     },
     {
       "text": "We preregistered participant exclusions with replacements if they did not complete the entire experiment or had at-chance performance; we also removed trials for which participants' response times (RTs) were ± 3 SDs from their own mean.",
-      "text_id": 51,
+      "text_id": 50,
       "paragraph_id": 13,
       "section_id": 5,
       "page_number": null,
@@ -491,7 +483,7 @@
     },
     {
       "text": "Participants were undergraduate students at the University of British Columbia, and course credit was given for participation.",
-      "text_id": 52,
+      "text_id": 51,
       "paragraph_id": 13,
       "section_id": 5,
       "page_number": null,
@@ -499,7 +491,7 @@
     },
     {
       "text": "We did not collect demographic data on participants.",
-      "text_id": 53,
+      "text_id": 52,
       "paragraph_id": 13,
       "section_id": 5,
       "page_number": null,
@@ -507,7 +499,7 @@
     },
     {
       "text": "Because we recruited participants online, we posted more sign-up slots than necessary to account for a higher rate of dropouts.",
-      "text_id": 54,
+      "text_id": 53,
       "paragraph_id": 13,
       "section_id": 5,
       "page_number": null,
@@ -515,7 +507,7 @@
     },
     {
       "text": "In total we ended up collecting 36 participants for Experiment 1, 33 for Experiment 2, 57 for Experiment 3, and 39 for Experiment 4.",
-      "text_id": 55,
+      "text_id": 54,
       "paragraph_id": 13,
       "section_id": 5,
       "page_number": null,
@@ -523,7 +515,7 @@
     },
     {
       "text": "For the reported analysis and to follow our preregistration plan, we report only on the first 30 nonexcluded participants in each experiment, but data for all other participants are available online, and all of our findings are replicated when the full sample is used for each experiment.",
-      "text_id": 56,
+      "text_id": 55,
       "paragraph_id": 13,
       "section_id": 5,
       "page_number": null,
@@ -531,7 +523,7 @@
     },
     {
       "text": "Participants signed up for a study via an institutional online sign-up sheet.",
-      "text_id": 57,
+      "text_id": 56,
       "paragraph_id": 14,
       "section_id": 5,
       "page_number": null,
@@ -539,7 +531,7 @@
     },
     {
       "text": "During the first wave of recruitment, participants were randomly assigned to either Experiment 1 (five lengths) or Experiment 2 (seven lengths).",
-      "text_id": 58,
+      "text_id": 57,
       "paragraph_id": 14,
       "section_id": 5,
       "page_number": null,
@@ -547,7 +539,7 @@
     },
     {
       "text": "During the second wave of recruitment, participants were all assigned to Experiment 3 (five single or average sizes), and during the final wave of recruitment all participants were assigned to Experiment 4 (five approximate numbers).",
-      "text_id": 59,
+      "text_id": 58,
       "paragraph_id": 14,
       "section_id": 5,
       "page_number": null,
@@ -555,7 +547,7 @@
     },
     {
       "text": "These experiments were staggered for convenience given limitations of the institutional recruitment platform to test only one experimental protocol at a time.",
-      "text_id": 60,
+      "text_id": 59,
       "paragraph_id": 14,
       "section_id": 5,
       "page_number": null,
@@ -563,7 +555,7 @@
     },
     {
       "text": "All research was approved by the University of British Columbia Office of Research Ethics.",
-      "text_id": 61,
+      "text_id": 60,
       "paragraph_id": 14,
       "section_id": 5,
       "page_number": null,
@@ -571,7 +563,7 @@
     },
     {
       "text": "The experiments were conducted online using the Pavlovia platform and PsychoPy Version3 (Peirce et al., 2019).",
-      "text_id": 62,
+      "text_id": 61,
       "paragraph_id": 15,
       "section_id": 6,
       "page_number": null,
@@ -579,7 +571,7 @@
     },
     {
       "text": "The code and stimuli for all experiments are available at https://osf.io/k6fqt.",
-      "text_id": 63,
+      "text_id": 62,
       "paragraph_id": 15,
       "section_id": 6,
       "page_number": null,
@@ -587,7 +579,7 @@
     },
     {
       "text": "Participants completed a consent form and then followed a link to complete the task on their own computers.",
-      "text_id": 64,
+      "text_id": 63,
       "paragraph_id": 15,
       "section_id": 6,
       "page_number": null,
@@ -595,7 +587,7 @@
     },
     {
       "text": "Experiment 1 stimuli and procedure.",
-      "text_id": 65,
+      "text_id": 64,
       "paragraph_id": 15,
       "section_id": 6,
       "page_number": null,
@@ -603,7 +595,7 @@
     },
     {
       "text": "The stimuli in Experiment 1 consisted of five lines drawn on the screen.",
-      "text_id": 66,
+      "text_id": 65,
       "paragraph_id": 15,
       "section_id": 6,
       "page_number": null,
@@ -611,7 +603,7 @@
     },
     {
       "text": "Each line was drawn in a different color (yellow, blue, orange, green, and purple) at 80% opacity to allow them to be visible even if they intersected, effectively resembling pick-up sticks (lines were never permitted to nest within each other, however, because this would prevent object individuation).",
-      "text_id": 67,
+      "text_id": 66,
       "paragraph_id": 15,
       "section_id": 6,
       "page_number": null,
@@ -619,7 +611,7 @@
     },
     {
       "text": "Because of variations in individual computers and screen resolutions during online testing, we report all values as a percentage of overall screen.",
-      "text_id": 68,
+      "text_id": 67,
       "paragraph_id": 15,
       "section_id": 6,
       "page_number": null,
@@ -627,7 +619,7 @@
     },
     {
       "text": "To construct the sequence of lines, the longest line was first randomly chosen to be between 10% and 30% of the overall screen length (participants could therefore not memorize a specific length as any of the targets and could identify them only relative to the other values).",
-      "text_id": 69,
+      "text_id": 68,
       "paragraph_id": 15,
       "section_id": 6,
       "page_number": null,
@@ -635,7 +627,7 @@
     },
     {
       "text": "Each successive line would then be shorter by a constant ratio-either 5%, 10%, 25%, or 50% shorter (e.g., if the first line was 100 pixels in the 10% condition, the second would be 90 pixels long, the third 81 pixels, the fourth 72 pixels, and so on).",
-      "text_id": 70,
+      "text_id": 69,
       "paragraph_id": 15,
       "section_id": 6,
       "page_number": null,
@@ -643,7 +635,7 @@
     },
     {
       "text": "Because of this constant decrease in length, the middle line was the geometric average-length line in the set.",
-      "text_id": 71,
+      "text_id": 70,
       "paragraph_id": 15,
       "section_id": 6,
       "page_number": null,
@@ -651,7 +643,7 @@
     },
     {
       "text": "Each line was placed in a random position within an invisible rectangular box bordering 80% of the screen on each side and was given a random orientation between 0° and 180°.",
-      "text_id": 72,
+      "text_id": 71,
       "paragraph_id": 15,
       "section_id": 6,
       "page_number": null,
@@ -659,7 +651,7 @@
     },
     {
       "text": "Before viewing the trial, participants were given a prompt asking them to identify the color of a specific line.",
-      "text_id": 73,
+      "text_id": 72,
       "paragraph_id": 16,
       "section_id": 6,
       "page_number": null,
@@ -667,7 +659,7 @@
     },
     {
       "text": "In Experiment 1, participants were asked to identify the longest, second longest, third longest, second shortest, and shortest lines.",
-      "text_id": 74,
+      "text_id": 73,
       "paragraph_id": 16,
       "section_id": 6,
       "page_number": null,
@@ -675,7 +667,7 @@
     },
     {
       "text": "Once the participant was ready to begin the trial, they clicked anywhere with the mouse.",
-      "text_id": 75,
+      "text_id": 74,
       "paragraph_id": 16,
       "section_id": 6,
       "page_number": null,
@@ -683,7 +675,7 @@
     },
     {
       "text": "The lines then appeared for 2,000 ms and were then replaced by a series of colored rectangles, each corresponding to one of the colors presented during the previous trial.",
-      "text_id": 76,
+      "text_id": 75,
       "paragraph_id": 16,
       "section_id": 6,
       "page_number": null,
@@ -691,7 +683,7 @@
     },
     {
       "text": "Participants clicked on the square they believed matched the color of the line they were asked to find.",
-      "text_id": 77,
+      "text_id": 76,
       "paragraph_id": 16,
       "section_id": 6,
       "page_number": null,
@@ -699,7 +691,7 @@
     },
     {
       "text": "The main dependent variables were accuracy (i.e., whether the participant selected the correct square) and RT (i.e., the time from stimulus offset to the click of the square).",
-      "text_id": 78,
+      "text_id": 77,
       "paragraph_id": 17,
       "section_id": 6,
       "page_number": null,
@@ -707,7 +699,7 @@
     },
     {
       "text": "Each participant was asked about each ordinal position crossed with each ratio 10 times, yielding 200 total trials in Experiment 1 (five positions × four ratios × 10 trials).",
-      "text_id": 79,
+      "text_id": 78,
       "paragraph_id": 17,
       "section_id": 6,
       "page_number": null,
@@ -715,7 +707,7 @@
     },
     {
       "text": "After completing the task, participants were debriefed and given course credit for their participation.",
-      "text_id": 80,
+      "text_id": 79,
       "paragraph_id": 17,
       "section_id": 6,
       "page_number": null,
@@ -723,7 +715,7 @@
     },
     {
       "text": "Experiment 2 stimuli and procedure.",
-      "text_id": 81,
+      "text_id": 80,
       "paragraph_id": 18,
       "section_id": 6,
       "page_number": null,
@@ -731,7 +723,7 @@
     },
     {
       "text": "The stimuli and procedure in Experiment 2 were identical to those in Experiment 1 except that we increased the number of lines to seven, introducing a black and a white line.",
-      "text_id": 82,
+      "text_id": 81,
       "paragraph_id": 18,
       "section_id": 6,
       "page_number": null,
@@ -739,7 +731,7 @@
     },
     {
       "text": "Participants were asked to identify the longest, second longest, third longest, fourth longest, third shortest, second shortest, and shortest lines.",
-      "text_id": 83,
+      "text_id": 82,
       "paragraph_id": 18,
       "section_id": 6,
       "page_number": null,
@@ -747,7 +739,7 @@
     },
     {
       "text": "Each participant was asked about each ordinal position crossed with each ratio 10 times, yielding 280 total trials (seven positions × four ratios × 10 trials).",
-      "text_id": 84,
+      "text_id": 83,
       "paragraph_id": 18,
       "section_id": 6,
       "page_number": null,
@@ -755,7 +747,7 @@
     },
     {
       "text": "Experiment 3 stimuli and procedure.",
-      "text_id": 85,
+      "text_id": 84,
       "paragraph_id": 19,
       "section_id": 6,
       "page_number": null,
@@ -763,7 +755,7 @@
     },
     {
       "text": "The stimuli were sets of circles that were equal in number but varied in color, individual area, and cumulative area.",
-      "text_id": 86,
+      "text_id": 85,
       "paragraph_id": 19,
       "section_id": 6,
       "page_number": null,
@@ -771,7 +763,7 @@
     },
     {
       "text": "Each set was drawn from a set of five colors (yellow, blue, red, green, and purple).",
-      "text_id": 87,
+      "text_id": 86,
       "paragraph_id": 19,
       "section_id": 6,
       "page_number": null,
@@ -779,7 +771,7 @@
     },
     {
       "text": "As above, we report the units in overall percentage of the screen to account for variability in screen size resulting from online testing.",
-      "text_id": 88,
+      "text_id": 87,
       "paragraph_id": 19,
       "section_id": 6,
       "page_number": null,
@@ -787,7 +779,7 @@
     },
     {
       "text": "The cumulative area of the circles varied from 0.04% to 1.5% of the overall screen, again preventing participants from being able to memorize a specific value as any of the targets.",
-      "text_id": 89,
+      "text_id": 88,
       "paragraph_id": 19,
       "section_id": 6,
       "page_number": null,
@@ -795,7 +787,7 @@
     },
     {
       "text": "Once the cumulative area of the circles was determined, each individual circle in that set was varied up to ± 20% of the average size, creating variability among the circles so that no single item was sufficient to determine the size of the set as a whole but preserving the overall cumulative area.",
-      "text_id": 90,
+      "text_id": 89,
       "paragraph_id": 19,
       "section_id": 6,
       "page_number": null,
@@ -803,7 +795,7 @@
     },
     {
       "text": "To construct the sequence of sizes, the largest set was first randomly chosen to be between 0.2% and 1.5% of the overall screen in cumulative area.",
-      "text_id": 91,
+      "text_id": 90,
       "paragraph_id": 19,
       "section_id": 6,
       "page_number": null,
@@ -811,7 +803,7 @@
     },
     {
       "text": "Each successive set would then be smaller by a constant ratio matching that of Experiment 1-either 5%, 10%, 25%, or 50% smaller.",
-      "text_id": 92,
+      "text_id": 91,
       "paragraph_id": 19,
       "section_id": 6,
       "page_number": null,
@@ -819,7 +811,7 @@
     },
     {
       "text": "We also varied the total number of circles in each set to be either one, three, or five, with all sets having the same number.",
-      "text_id": 93,
+      "text_id": 92,
       "paragraph_id": 19,
       "section_id": 6,
       "page_number": null,
@@ -827,7 +819,7 @@
     },
     {
       "text": "As noted above, this allowed us to examine whether performance is different for finding the largest circle (individual size) versus the largest circles (cumulative area).",
-      "text_id": 94,
+      "text_id": 93,
       "paragraph_id": 19,
       "section_id": 6,
       "page_number": null,
@@ -835,7 +827,7 @@
     },
     {
       "text": "Each circle was placed in a random position within an invisible rectangular box bordering 80% of the screen on each side, and they were not segregated into sets by color.",
-      "text_id": 95,
+      "text_id": 94,
       "paragraph_id": 19,
       "section_id": 6,
       "page_number": null,
@@ -843,7 +835,7 @@
     },
     {
       "text": "The circles were not allowed to overlap.",
-      "text_id": 96,
+      "text_id": 95,
       "paragraph_id": 19,
       "section_id": 6,
       "page_number": null,
@@ -851,7 +843,7 @@
     },
     {
       "text": "Before viewing the trial, participants were asked to identify the color of a specific circle or set of circles.",
-      "text_id": 97,
+      "text_id": 96,
       "paragraph_id": 20,
       "section_id": 6,
       "page_number": null,
@@ -859,6 +851,14 @@
     },
     {
       "text": "For the one-dot trials, we asked participants to identify the biggest, second biggest, third biggest, second smallest, and smallest dots; for trials with three or five dots per set, we asked participants to identify the biggest, second biggest, third biggest, second smallest, and smallest dots.",
+      "text_id": 97,
+      "paragraph_id": 20,
+      "section_id": 6,
+      "page_number": null,
+      "formatted": null
+    },
+    {
+      "text": "Once participants were ready to begin the trial, they clicked anywhere with the mouse.",
       "text_id": 98,
       "paragraph_id": 20,
       "section_id": 6,
@@ -866,7 +866,7 @@
       "formatted": null
     },
     {
-      "text": "Once participants were ready to begin the trial, they clicked anywhere with the mouse.",
+      "text": "As in Experiment 1, the circles then appeared for a total of 2,000 ms, and participants then clicked on the rectangular box they believed matched the color they were asked to find.",
       "text_id": 99,
       "paragraph_id": 20,
       "section_id": 6,
@@ -874,7 +874,7 @@
       "formatted": null
     },
     {
-      "text": "As in Experiment 1, the circles then appeared for a total of 2,000 ms, and participants then clicked on the rectangular box they believed matched the color they were asked to find.",
+      "text": "Once again, the key dependent variables were accuracy and RT, and participants completed 200 total trials.",
       "text_id": 100,
       "paragraph_id": 20,
       "section_id": 6,
@@ -882,7 +882,7 @@
       "formatted": null
     },
     {
-      "text": "Once again, the key dependent variables were accuracy and RT, and participants completed 200 total trials.",
+      "text": "Experiment 4 stimuli and procedure.",
       "text_id": 101,
       "paragraph_id": 20,
       "section_id": 6,
@@ -890,7 +890,7 @@
       "formatted": null
     },
     {
-      "text": "Experiment 4 stimuli and procedure.",
+      "text": "The stimuli were colored dots spatially separated into five groups that varied in color (yellow, blue, red, green, and purple) and number.",
       "text_id": 102,
       "paragraph_id": 20,
       "section_id": 6,
@@ -898,7 +898,7 @@
       "formatted": null
     },
     {
-      "text": "The stimuli were colored dots spatially separated into five groups that varied in color (yellow, blue, red, green, and purple) and number.",
+      "text": "The smallest set of dots could have four dots, and the largest set of dots could have 40 dots (this was effectively the largest range we could make to fit the total number of dots on the screen).",
       "text_id": 103,
       "paragraph_id": 20,
       "section_id": 6,
@@ -906,7 +906,7 @@
       "formatted": null
     },
     {
-      "text": "The smallest set of dots could have four dots, and the largest set of dots could have 40 dots (this was effectively the largest range we could make to fit the total number of dots on the screen).",
+      "text": "Each dot took approximately 0.05% of the overall screen size but varied randomly ± 20% to introduce some variability.",
       "text_id": 104,
       "paragraph_id": 20,
       "section_id": 6,
@@ -914,7 +914,7 @@
       "formatted": null
     },
     {
-      "text": "Each dot took approximately 0.05% of the overall screen size but varied randomly ± 20% to introduce some variability.",
+      "text": "To construct the sequence of numbers, the most numerous set was first randomly chosen to be between 20 and 40 dots to prevent memorization of target values, and each successive set would then be reduced in number by a constant ratio matching that of Experiment 1-either 5%, 10%, 25%, or 50% fewer.",
       "text_id": 105,
       "paragraph_id": 20,
       "section_id": 6,
@@ -922,7 +922,7 @@
       "formatted": null
     },
     {
-      "text": "To construct the sequence of numbers, the most numerous set was first randomly chosen to be between 20 and 40 dots to prevent memorization of target values, and each successive set would then be reduced in number by a constant ratio matching that of Experiment 1-either 5%, 10%, 25%, or 50% fewer.",
+      "text": "We clustered the dots of the same set together because we found that observers could not otherwise clearly identify the sets by color alone if they were fully intermixed.",
       "text_id": 106,
       "paragraph_id": 20,
       "section_id": 6,
@@ -930,7 +930,7 @@
       "formatted": null
     },
     {
-      "text": "We clustered the dots of the same set together because we found that observers could not otherwise clearly identify the sets by color alone if they were fully intermixed.",
+      "text": "Because average item size was equivalent across the sets, item size was not a cue to the correct answer; similarly, because each set was drawn within an equally sized area, convex hull was not a cue to the answer (although density positively covaried with number).",
       "text_id": 107,
       "paragraph_id": 20,
       "section_id": 6,
@@ -938,7 +938,7 @@
       "formatted": null
     },
     {
-      "text": "Because average item size was equivalent across the sets, item size was not a cue to the correct answer; similarly, because each set was drawn within an equally sized area, convex hull was not a cue to the answer (although density positively covaried with number).",
+      "text": "For our current research questions, participants who answered on the basis of density (or any other feature of these collections) would be just as interesting as responses based on number because these alternative dimensions would also be codable on a bipartite format.",
       "text_id": 108,
       "paragraph_id": 20,
       "section_id": 6,
@@ -946,16 +946,8 @@
       "formatted": null
     },
     {
-      "text": "For our current research questions, participants who answered on the basis of density (or any other feature of these collections) would be just as interesting as responses based on number because these alternative dimensions would also be codable on a bipartite format.",
-      "text_id": 109,
-      "paragraph_id": 20,
-      "section_id": 6,
-      "page_number": null,
-      "formatted": null
-    },
-    {
       "text": "Before viewing the trial, participants were asked to identify the set with the most, second most, third most, second fewest, and fewest dots.",
-      "text_id": 110,
+      "text_id": 109,
       "paragraph_id": 21,
       "section_id": 6,
       "page_number": null,
@@ -963,7 +955,7 @@
     },
     {
       "text": "Once participants were ready to begin the trial, they clicked anywhere with the mouse.",
-      "text_id": 111,
+      "text_id": 110,
       "paragraph_id": 21,
       "section_id": 6,
       "page_number": null,
@@ -971,7 +963,7 @@
     },
     {
       "text": "As in Experiment 1, the stimuli then appeared for a total of 2,000 ms, and participants then clicked on the square they believed matched the color they were asked to find.",
-      "text_id": 112,
+      "text_id": 111,
       "paragraph_id": 21,
       "section_id": 6,
       "page_number": null,
@@ -979,7 +971,7 @@
     },
     {
       "text": "Once again, the key dependent variable was accuracy and RT, and participants completed 200 total trials.",
-      "text_id": 113,
+      "text_id": 112,
       "paragraph_id": 21,
       "section_id": 6,
       "page_number": null,
@@ -987,7 +979,7 @@
     },
     {
       "text": "Our primary analysis of interest was a comparison of accuracy and RT across probed positions.",
-      "text_id": 114,
+      "text_id": 113,
       "paragraph_id": 22,
       "section_id": 7,
       "page_number": null,
@@ -995,7 +987,7 @@
     },
     {
       "text": "The main prediction of the bipartite account is that the outer positions-the minimum and the maximum-should have privileged status, so questions probing them should be high in accuracy and low in RT, with performance getting worse with each successive position away from the edges.",
-      "text_id": 115,
+      "text_id": 114,
       "paragraph_id": 22,
       "section_id": 7,
       "page_number": null,
@@ -1003,7 +995,7 @@
     },
     {
       "text": "The bipartite account also predicts that there should be no effect of set size.",
-      "text_id": 116,
+      "text_id": 115,
       "paragraph_id": 22,
       "section_id": 7,
       "page_number": null,
@@ -1011,7 +1003,7 @@
     },
     {
       "text": "On the other hand, the \"sorting\" account predicts that participants should-especially given higher memory constraints-perform at chance or equivalently poorly for all positions because identifying any position requires a minimum of four to six successive comparisons, and the similarity-to-the-mean account predicts that performance should improve with higher set sizes.",
-      "text_id": 117,
+      "text_id": 116,
       "paragraph_id": 22,
       "section_id": 7,
       "page_number": null,
@@ -1019,15 +1011,15 @@
     },
     {
       "text": "We made no predictions about differences across the three dimensions tested (length, area, and number) and expected the patterns to hold across all of them given that perceptual magnitudes are theorized to be coded in a similar format (Cantlon et al., 2009;Dehaene & Brannon, 2010;Walsh, 2003).",
-      "text_id": 118,
+      "text_id": 117,
       "paragraph_id": 22,
       "section_id": 7,
       "page_number": null,
-      "formatted": "We made no predictions about differences across the three dimensions tested (length, area, and number) and expected the patterns to hold across all of them given that perceptual magnitudes are theorized to be coded in a similar format <ref type=\"bibr\" target=\"#b5\">(Cantlon et al., 2009;<\/ref><ref type=\"bibr\" target=\"#b8\">Dehaene &amp; Brannon, 2010;<\/ref><ref type=\"bibr\" target=\"#b37\">Walsh, 2003)<\/ref>."
+      "formatted": "We made no predictions about differences across the three dimensions tested (length, area, and number) and expected the patterns to hold across all of them given that perceptual magnitudes are theorized to be coded in a similar format <ref type=\"bibr\" target=\"#b5\">(Cantlon et al., 2009;<\/ref> <ref type=\"bibr\" target=\"#b8\">Dehaene &amp; Brannon, 2010;<\/ref> <ref type=\"bibr\" target=\"#b37\">Walsh, 2003)<\/ref>."
     },
     {
       "text": "We also made no predictions about the effect of ratio because smaller ratios would naturally make all nearby values more confusable (e.g., at the smallest ratio, the longest and the second longest line would be similar enough in length that quickly identifying the color may be more difficult under time pressure).",
-      "text_id": 119,
+      "text_id": 118,
       "paragraph_id": 22,
       "section_id": 7,
       "page_number": null,
@@ -1035,7 +1027,7 @@
     },
     {
       "text": "Experiment 1.",
-      "text_id": 120,
+      "text_id": 119,
       "paragraph_id": 23,
       "section_id": 8,
       "page_number": null,
@@ -1043,7 +1035,7 @@
     },
     {
       "text": "A 5 (Position) × 4 (Ratio) repeated-measures analysis of variance (ANOVA) with accuracy as the dependent variable showed a significant main effect of position, F(4, 116) = 68.85, p < .001, f = 1.54, a significant main effect of ratio, F(3, 87) = 208.67, p < .001, f = 2.68, and a significant interaction, F(12, 348) = 4.07, p < .001, f = 0.37.",
-      "text_id": 121,
+      "text_id": 120,
       "paragraph_id": 23,
       "section_id": 8,
       "page_number": null,
@@ -1051,7 +1043,7 @@
     },
     {
       "text": "As can be seen in Figure 1, participants performed above chance at all positions but were especially excellent at finding the longest and shortest line in the set at any ratio, with a serial drop-off in performance with each line as they approached the middle (i.e., the third longest line).",
-      "text_id": 122,
+      "text_id": 121,
       "paragraph_id": 23,
       "section_id": 8,
       "page_number": null,
@@ -1059,7 +1051,7 @@
     },
     {
       "text": "Tukey's honestly significant difference (HSD) tests revealed significant differences between all pairwise positions (all ps < .001) except Position 2 versus Position 3, t(116) = 2.28, p = .16, Position 2 versus Position 4, t(116) = .574, p = .98, and Position 3 versus Position 4, t(116) = -1.712, p = .43.",
-      "text_id": 123,
+      "text_id": 122,
       "paragraph_id": 23,
       "section_id": 8,
       "page_number": null,
@@ -1067,15 +1059,15 @@
     },
     {
       "text": "Although the bipartite format does not predict the significant difference between Positions 1 and 5 (i.e., longest vs. shortest), there is a long-standing finding that negative poles are slower and less accurate than positive ones (Klatzky et al., 1973;Odic et al., 2013).",
-      "text_id": 124,
+      "text_id": 123,
       "paragraph_id": 23,
       "section_id": 8,
       "page_number": null,
-      "formatted": "Although the bipartite format does not predict the significant difference between Positions 1 and 5 (i.e., longest vs. shortest), there is a long-standing finding that negative poles are slower and less accurate than positive ones <ref type=\"bibr\" target=\"#b23\">(Klatzky et al., 1973;<\/ref><ref type=\"bibr\" target=\"#b26\">Odic et al., 2013)<\/ref>."
+      "formatted": "Although the bipartite format does not predict the significant difference between Positions 1 and 5 (i.e., longest vs. shortest), there is a long-standing finding that negative poles are slower and less accurate than positive ones <ref type=\"bibr\" target=\"#b23\">(Klatzky et al., 1973;<\/ref> <ref type=\"bibr\" target=\"#b26\">Odic et al., 2013)<\/ref>."
     },
     {
       "text": "We return to this issue in the General Discussion section because we observed this significant difference only between the minimum and the maximum in Experiment1.",
-      "text_id": 125,
+      "text_id": 124,
       "paragraph_id": 23,
       "section_id": 8,
       "page_number": null,
@@ -1083,7 +1075,7 @@
     },
     {
       "text": "Performance decreased linearly with ratio, with the worst performance at 5% difference, M = 37.4%, 95% confidence interval (CI) = [32.4, 42.4], and the best performance at 50% difference, M = 84.0%, 95% CI = [79.0, 89.0].",
-      "text_id": 126,
+      "text_id": 125,
       "paragraph_id": 24,
       "section_id": 8,
       "page_number": null,
@@ -1091,7 +1083,7 @@
     },
     {
       "text": "The significant interaction resulted primarily from the general flattening of performance as the ratio became harder.",
-      "text_id": 127,
+      "text_id": 126,
       "paragraph_id": 24,
       "section_id": 8,
       "page_number": null,
@@ -1099,7 +1091,7 @@
     },
     {
       "text": "For example, at a difference of 5%, we found significant differences only between Position 1 versus Position 2, t(116) = 3.81, p = .002, Position 1 versus Position 3, t(116) = 4.77, p < .001, and Position 1 versus Position 4, t(116) = 3.22, p = .012.",
-      "text_id": 128,
+      "text_id": 127,
       "paragraph_id": 24,
       "section_id": 8,
       "page_number": null,
@@ -1107,7 +1099,7 @@
     },
     {
       "text": "This pattern of performance was not driven by a speed-accuracy trade-off: A 5 (Position) × 4 (Ratio) repeated-measures ANOVA with RT as the dependent variable showed a significant main effect of position, F(4, 116) = 26.22, p < .001, f = 0.95, a significant main effect of ratio, F(3, 87) = 54.17, p < .001, f = 1.37, and a significant interaction, F(12, 348) = 2.091, p = .017, f = 0.27, with participants faster to find the shortest and longest lines, especially at the easiest ratios.",
-      "text_id": 129,
+      "text_id": 128,
       "paragraph_id": 24,
       "section_id": 8,
       "page_number": null,
@@ -1115,7 +1107,7 @@
     },
     {
       "text": "In other words, participants were most accurate and fastest for finding the longest and shortest lines and showed a progressive decrease in accuracy and increase in RT with each successive position.",
-      "text_id": 130,
+      "text_id": 129,
       "paragraph_id": 24,
       "section_id": 8,
       "page_number": null,
@@ -1123,7 +1115,7 @@
     },
     {
       "text": "Experiment 2.",
-      "text_id": 131,
+      "text_id": 130,
       "paragraph_id": 24,
       "section_id": 8,
       "page_number": null,
@@ -1131,7 +1123,7 @@
     },
     {
       "text": "A 7 (Position) × 4 (Ratio) repeated-measures ANOVA with accuracy as the dependent variable showed a significant main effect of position, F(6, 174) = 111.0, p < .001, f = 1.96, a significant main effect of ratio, F(3, 87) = 214.6, p < .001, f = 2.72, and a significant interaction, F(18, 522) = 5.55, p < .001, f = 0.44.",
-      "text_id": 132,
+      "text_id": 131,
       "paragraph_id": 24,
       "section_id": 8,
       "page_number": null,
@@ -1139,7 +1131,7 @@
     },
     {
       "text": "Performance shows response times across Position × Ratio.",
-      "text_id": 133,
+      "text_id": 132,
       "paragraph_id": 24,
       "section_id": 8,
       "page_number": null,
@@ -1147,7 +1139,7 @@
     },
     {
       "text": "was again overall best for the longest and shortest positions, with a successive decrease in performance toward the middle position.",
-      "text_id": 134,
+      "text_id": 133,
       "paragraph_id": 25,
       "section_id": 8,
       "page_number": null,
@@ -1155,7 +1147,7 @@
     },
     {
       "text": "Tukey's HSD tests revealed significant differences between all pairwise positions (all ps < .02) except Position 1 versus Position 7, t(174) = 2.05, p = .38, Position 3 versus Position 5, t(174) = 1.621, p = .662, and Position 4 versus Position 5, t(174) = -1.897, p = .48.",
-      "text_id": 135,
+      "text_id": 134,
       "paragraph_id": 25,
       "section_id": 8,
       "page_number": null,
@@ -1163,7 +1155,7 @@
     },
     {
       "text": "Performance decreased linearly with ratio, with the worst performance at 5% difference, M = 23.6%, 95% CI = [18.9, 28.3], and the best performance at 50% difference, M = 73.1%, 95% CI = [68.4, 77.8].",
-      "text_id": 136,
+      "text_id": 135,
       "paragraph_id": 25,
       "section_id": 8,
       "page_number": null,
@@ -1171,7 +1163,7 @@
     },
     {
       "text": "Even at this level of difficulty, however, performance was above chance.",
-      "text_id": 137,
+      "text_id": 136,
       "paragraph_id": 25,
       "section_id": 8,
       "page_number": null,
@@ -1179,7 +1171,7 @@
     },
     {
       "text": "As in Experiment 1, the significant interaction resulted primarily from participants having difficulty identifying the ordinal position of any line as the ratio became harder (Fig. 1).",
-      "text_id": 138,
+      "text_id": 137,
       "paragraph_id": 25,
       "section_id": 8,
       "page_number": null,
@@ -1187,7 +1179,7 @@
     },
     {
       "text": "We again did not find the advantage for the outer positions to be a speed-accuracy trade-off.",
-      "text_id": 139,
+      "text_id": 138,
       "paragraph_id": 25,
       "section_id": 8,
       "page_number": null,
@@ -1195,7 +1187,7 @@
     },
     {
       "text": "A 7 (Position) × 4 (Ratio) repeated-measures ANOVA with RT as the dependent variable showed a significant main effect of position, F(6, 174) = 2.985, p = .008, f = 0.32, a significant main effect of ratio, F(3, 87) = 6.02, p < .001, f = 0.46, and a nonsignificant interaction, F(18, 522) = 0.747, p = .763, f = 0.16, with participants again faster to find the shortest and longest lines.",
-      "text_id": 140,
+      "text_id": 139,
       "paragraph_id": 25,
       "section_id": 8,
       "page_number": null,
@@ -1203,7 +1195,7 @@
     },
     {
       "text": "Finally, we examined whether the increase in the number of lines between Experiments 1 and 2 produced any change in accuracy for the longest and shortest lines (we did not compare the inner positions because these differed across the two experiments).",
-      "text_id": 141,
+      "text_id": 140,
       "paragraph_id": 26,
       "section_id": 8,
       "page_number": null,
@@ -1211,7 +1203,7 @@
     },
     {
       "text": "A 2 (Experiment) × 2 (Position) mixed-measure ANOVA showed no main effect of experiment, F(1, 58) = 1.597, p = .21, f = 0.17, a significant main effect of position, F(1, 58) = 43.54, p < .001, f = 0.87, and a significant interaction, F(1, 58) = 4.71, p = .034, f = 0.28.",
-      "text_id": 142,
+      "text_id": 141,
       "paragraph_id": 26,
       "section_id": 8,
       "page_number": null,
@@ -1219,7 +1211,7 @@
     },
     {
       "text": "The interaction, however, was primarily driven by the lack of difference between the longest and shortest lines in Experiment 2 and the presence of that difference in Experiment 1.",
-      "text_id": 143,
+      "text_id": 142,
       "paragraph_id": 26,
       "section_id": 8,
       "page_number": null,
@@ -1227,7 +1219,7 @@
     },
     {
       "text": "Indeed, there was no significant difference in accuracy between finding the longest line across the two experiments, t(72) = 1.91, p = .23, or for finding the shortest line, t(72) = 0.479, p = .96.",
-      "text_id": 144,
+      "text_id": 143,
       "paragraph_id": 26,
       "section_id": 8,
       "page_number": null,
@@ -1235,7 +1227,7 @@
     },
     {
       "text": "Therefore, the increase in the number of lines from five to seven did not affect performance for the two outer positions-exactly as expected from the bipartite format but contrary to both an item-based sorting mechanism (which would have required additional comparisons given seven as opposed to five lines) and the comparison to the mean mechanism (which would have predicted better performance with seven lines because the longest and shortest lines are further away from the mean).",
-      "text_id": 145,
+      "text_id": 144,
       "paragraph_id": 26,
       "section_id": 8,
       "page_number": null,
@@ -1243,7 +1235,7 @@
     },
     {
       "text": "Experiment 3.",
-      "text_id": 146,
+      "text_id": 145,
       "paragraph_id": 27,
       "section_id": 8,
       "page_number": null,
@@ -1251,7 +1243,7 @@
     },
     {
       "text": "A 7 (Position) × 4 (Ratio) × 3 (Dots in Set) repeated-measures ANOVA with accuracy as the dependent variable showed a significant main effect of position, F(4, 116) = 102.60, p < .001, f = 1.88, a significant main effect of ratio, F(3, 87) = 194.3, p < .001, f = 2.59, a significant main effect of dots in set, F(2, 58) = 15.32, p < .001, f = 0.73, a significant Position × Ratio interaction, F(12, 348) = 6.28, p < .001, f = 0.47, a significant Position × Dots in Set interaction, F(8, 232) = 6.54, p < .001, f = 0.47, a significant Ratio × Dots in Set interaction, F(6, 174) = 4.824, p < .001, f = 0.41, and a significant three-way interaction, F(24, 696) = 3.575, p < .001, f =0.35.",
-      "text_id": 147,
+      "text_id": 146,
       "paragraph_id": 27,
       "section_id": 8,
       "page_number": null,
@@ -1259,7 +1251,7 @@
     },
     {
       "text": "As with length, we found that performance was again overall best for the biggest and smallest positions, with a successive decrease in performance toward the middle position.",
-      "text_id": 148,
+      "text_id": 147,
       "paragraph_id": 28,
       "section_id": 8,
       "page_number": null,
@@ -1267,7 +1259,7 @@
     },
     {
       "text": "Tukey's HSD tests revealed significant differences between all pairwise positions (all ps < .001) except Position 1 versus Position 5, t(116) = -1.18, p = .80, and Position 2 versus Position 4, t(116) = 1.258, p = .717.",
-      "text_id": 149,
+      "text_id": 148,
       "paragraph_id": 28,
       "section_id": 8,
       "page_number": null,
@@ -1275,7 +1267,7 @@
     },
     {
       "text": "Performance decreased linearly with ratio, with the worst performance at 5% difference, M = 33.2%, 95% CI = [29.8, 36.5], and best performance at 50% difference, M = 73.5%, 95% CI = [70.2, 76.9].",
-      "text_id": 150,
+      "text_id": 149,
       "paragraph_id": 28,
       "section_id": 8,
       "page_number": null,
@@ -1283,7 +1275,7 @@
     },
     {
       "text": "Once again, even the worst-performing condition was above chance.",
-      "text_id": 151,
+      "text_id": 150,
       "paragraph_id": 28,
       "section_id": 8,
       "page_number": null,
@@ -1291,7 +1283,7 @@
     },
     {
       "text": "We found better performance overall when each set consisted of a single dot, M = 57.8%, 95% CI = [54.8, 60.8], than with three dots, M = 50.6%, 95% CI = [47.5, 53.6], or five dots, M = 50.4%, 95% CI = [47.4, 53.5], and, as in earlier experiments, performance flattened as the ratio became more difficult.",
-      "text_id": 152,
+      "text_id": 151,
       "paragraph_id": 28,
       "section_id": 8,
       "page_number": null,
@@ -1299,7 +1291,7 @@
     },
     {
       "text": "Most importantly, we found an advantage for the biggest and smallest position at every ratio and with any number of dots, showing that the observed advantage for the endpoints generalizes from individuals to ensembles.",
-      "text_id": 153,
+      "text_id": 152,
       "paragraph_id": 28,
       "section_id": 8,
       "page_number": null,
@@ -1307,7 +1299,7 @@
     },
     {
       "text": "We found the same pattern for RTs: A 7 (Position) × 4 (Ratio) × 3 (Dots in Set) repeated-measures ANOVA with RT as the dependent variable showed a significant main effect of position, F(4, 116) = 21.17, p = < .001, f = 0.87, a significant main effect of ratio, F(3, 87) = 15.73, p < .001, f = 0.74, a significant main effect of dots in set, F(2, 58) = 5.29, p = .008, f = 0.43, a significant Position × Ratio interaction, F(12, 348) = 2.046, p = .012, f = 0.27, a nonsignificant Position × Dots in Set interaction, F(8, 232) = 1.232, p = .281, f = 0.21, a nonsignificant Ratio × Dots in Set interaction, F(6, 174) = 0.456, p = .84, f = 0.13, and a nonsignificant three-way interaction, F(24, 696) = 1.357, p = .12, f = 0.22.",
-      "text_id": 154,
+      "text_id": 153,
       "paragraph_id": 29,
       "section_id": 8,
       "page_number": null,
@@ -1315,7 +1307,7 @@
     },
     {
       "text": "Performance was fastest for the biggest and smallest positions compared with the inner positions, with no significant difference between the outer two positions, t(116) = -1.417, p = .62, and was slightly faster for sets with one dot, M = 970, SE = 30.60, 95% CI = [907, 1,032], compared with three dots, M = 1,015, SE = 30.6, 95% CI = [953, 1,077], and five dots, M = 1,004, SE = 30.6, 95% CI = 942, 1,066].",
-      "text_id": 155,
+      "text_id": 154,
       "paragraph_id": 29,
       "section_id": 8,
       "page_number": null,
@@ -1323,7 +1315,7 @@
     },
     {
       "text": "Experiment 4.",
-      "text_id": 156,
+      "text_id": 155,
       "paragraph_id": 29,
       "section_id": 8,
       "page_number": null,
@@ -1331,7 +1323,7 @@
     },
     {
       "text": "A 7 (Position) × 4 (Ratio) repeated-measures ANOVA with accuracy as the dependent variable showed a significant main effect of position, F(4, 116) = 91.49, p < .001, f = 1.78, a significant main effect of ratio, F(3, 87) = 249.0, p < .001, f = 2.93, and a significant interaction, F(12, 348) = 6.159, p < .001, f = 0.46.",
-      "text_id": 157,
+      "text_id": 156,
       "paragraph_id": 29,
       "section_id": 8,
       "page_number": null,
@@ -1339,7 +1331,7 @@
     },
     {
       "text": "Performance overall was again best for the most and the fewest positions, with a successive decrease in performance toward the middle position.",
-      "text_id": 158,
+      "text_id": 157,
       "paragraph_id": 29,
       "section_id": 8,
       "page_number": null,
@@ -1347,7 +1339,7 @@
     },
     {
       "text": "Tukey's HSD tests revealed significant differences between all pairwise positions (all ps < .04) except Position 1 versus Position 5, t(116) = 1.167, p = .77, Position 2 versus Position 4, t(116) = 1.357, p = .65, and Position 3 versus Position 4, t(116) = -1.479, p = .578.",
-      "text_id": 159,
+      "text_id": 158,
       "paragraph_id": 29,
       "section_id": 8,
       "page_number": null,
@@ -1355,7 +1347,7 @@
     },
     {
       "text": "Performance decreased linearly with ratio, with the worst performance at 5% difference, M = 30.60%, 95% CI = [26.6, 36.6], and best performance at 50% difference, M = 73.4%, 95% CI = [69.3, 77.4].",
-      "text_id": 160,
+      "text_id": 159,
       "paragraph_id": 29,
       "section_id": 8,
       "page_number": null,
@@ -1363,7 +1355,7 @@
     },
     {
       "text": "Once again, performance on even the worst-performing question was above chance.",
-      "text_id": 161,
+      "text_id": 160,
       "paragraph_id": 29,
       "section_id": 8,
       "page_number": null,
@@ -1371,7 +1363,7 @@
     },
     {
       "text": "As in Experiment 1, the significant interaction resulted primarily from participants having difficulty identifying the ordinal position of any line as the ratio became harder (Fig. 1).",
-      "text_id": 162,
+      "text_id": 161,
       "paragraph_id": 29,
       "section_id": 8,
       "page_number": null,
@@ -1379,7 +1371,7 @@
     },
     {
       "text": "We again did not find the advantage for the outer positions to be a speed-accuracy trade-off.",
-      "text_id": 163,
+      "text_id": 162,
       "paragraph_id": 30,
       "section_id": 8,
       "page_number": null,
@@ -1387,7 +1379,7 @@
     },
     {
       "text": "A 7 (Position) × 4 (Ratio) repeated-measures ANOVA with RT as the dependent variable showed a significant main effect of position, F(4, 116) = 16.45, p < .001, f = 0.75, a nonsignificant main effect of ratio, F(3, 87) = 1.752, p = .16, f = 0.25, and a nonsignificant interaction, F(12, 348) = 1.421, p = .154, f = 0.22, with participants again faster to find the shortest and longest lines.",
-      "text_id": 164,
+      "text_id": 163,
       "paragraph_id": 30,
       "section_id": 8,
       "page_number": null,
@@ -1395,7 +1387,7 @@
     },
     {
       "text": "In four experiments ranging across three dimensions (length, size, and number), across individual and ensemble perception, and across sets of five and seven-we found a consistent advantage for identifying the maximal and minimal element in an array and a steady decrease in performance, with each successive ordinal position away from the maximum and minimum.",
-      "text_id": 165,
+      "text_id": 164,
       "paragraph_id": 31,
       "section_id": 9,
       "page_number": null,
@@ -1403,7 +1395,7 @@
     },
     {
       "text": "Therefore, we have evidence that the endpoints of perceptual magnitudes are preferentially and efficiently coded compared with other values.",
-      "text_id": 166,
+      "text_id": 165,
       "paragraph_id": 31,
       "section_id": 9,
       "page_number": null,
@@ -1411,15 +1403,15 @@
     },
     {
       "text": "These results broadly replicate patterns in visual searches showing an advantage for finding predefined targets (e.g., a 1-× 1-in. square) when those objects are also coincidentally the largest or smallest items in the set (e.g., Becker et al., 2013;Treisman & Gelade, 1980;Wolfe, 2021).",
-      "text_id": 167,
+      "text_id": 166,
       "paragraph_id": 32,
       "section_id": 9,
       "page_number": null,
-      "formatted": "These results broadly replicate patterns in visual searches showing an advantage for finding predefined targets (e.g., a 1-× 1-in. square) when those objects are also coincidentally the largest or smallest items in the set (e.g., <ref type=\"bibr\" target=\"#b3\">Becker et al., 2013;<\/ref><ref type=\"bibr\" target=\"#b34\">Treisman &amp; Gelade, 1980;<\/ref><ref type=\"bibr\" target=\"#b38\">Wolfe, 2021)<\/ref>."
+      "formatted": "These results broadly replicate patterns in visual searches showing an advantage for finding predefined targets (e.g., a 1-× 1-in. square) when those objects are also coincidentally the largest or smallest items in the set (e.g., <ref type=\"bibr\" target=\"#b3\">Becker et al., 2013;<\/ref> <ref type=\"bibr\" target=\"#b34\">Treisman &amp; Gelade, 1980;<\/ref> <ref type=\"bibr\" target=\"#b38\">Wolfe, 2021)<\/ref>."
     },
     {
       "text": "Unlike these past paradigms, (a) we did not have target values that could be preselected through attentional tuning because the value of the objects changed on every trial, (b) our paradigm was maximally heterogeneous in that every object was distinct from every other one, and (c) we found no cost in accuracy or RT for increasing the set size.",
-      "text_id": 168,
+      "text_id": 167,
       "paragraph_id": 32,
       "section_id": 9,
       "page_number": null,
@@ -1427,7 +1419,7 @@
     },
     {
       "text": "Because the bipartite format is a theory of how features are represented, it can be considered an extension on work in visual search, providing a mechanism for why attention can be easily directed toward the endpoints of a scale-these values are inherently meaningful in the bipartite format because magnitude perception proceeds from identifying the range and then coding each other object within that scale.",
-      "text_id": 169,
+      "text_id": 168,
       "paragraph_id": 32,
       "section_id": 9,
       "page_number": null,
@@ -1435,7 +1427,7 @@
     },
     {
       "text": "Experiments 1 and 2 provide evidence against a setsize effect, but they do so in a between-subjects design and only for set sizes of five and seven.",
-      "text_id": 170,
+      "text_id": 169,
       "paragraph_id": 33,
       "section_id": 9,
       "page_number": null,
@@ -1443,7 +1435,7 @@
     },
     {
       "text": "To demonstrate that observers are not finding the endpoints from comparing each item to the mean value, we would ideally show that set-size effects do not occur even as we extend the range even further.",
-      "text_id": 171,
+      "text_id": 170,
       "paragraph_id": 33,
       "section_id": 9,
       "page_number": null,
@@ -1451,7 +1443,7 @@
     },
     {
       "text": "In Experiment 5, therefore, we asked participants to find either the longest-, shortest-, or middle-length line in set sizes of seven, nine, and 11.",
-      "text_id": 172,
+      "text_id": 171,
       "paragraph_id": 33,
       "section_id": 9,
       "page_number": null,
@@ -1459,7 +1451,7 @@
     },
     {
       "text": "Because the ratio between each successive line was held constant in our stimuli, the difference between the longest/shortest line and the mean-length line increased, on average, by a ratio of 1.7 at a set size of seven, 2.0 at a set size of nine, and 2.5 at a set size of 11.",
-      "text_id": 173,
+      "text_id": 172,
       "paragraph_id": 33,
       "section_id": 9,
       "page_number": null,
@@ -1467,7 +1459,7 @@
     },
     {
       "text": "This stimulus structure also changed the standardized difference: The z score of the longest line increased with set size (from approximately 1.75 at a set size of seven to approximately 2.20 at a set size of 11), whereas the shortest line decreased with set size (from approximately -1.00 to approximately -0.85).",
-      "text_id": 174,
+      "text_id": 173,
       "paragraph_id": 33,
       "section_id": 9,
       "page_number": null,
@@ -1475,15 +1467,15 @@
     },
     {
       "text": "Models predicting that the longest/shortest line is found through a comparison to the mean-either via a ratio or a standardized-difference metric (Robitaille & Harris, 2011;Utochkin et al., 2023)-would therefore predict a set-size effect.",
-      "text_id": 175,
+      "text_id": 174,
       "paragraph_id": 33,
       "section_id": 9,
       "page_number": null,
-      "formatted": "Models predicting that the longest/shortest line is found through a comparison to the mean-either via a ratio or a standardized-difference metric <ref type=\"bibr\" target=\"#b33\">(Robitaille &amp; Harris, 2011;<\/ref><ref type=\"bibr\" target=\"#b36\">Utochkin et al., 2023)<\/ref>-would therefore predict a set-size effect."
+      "formatted": "Models predicting that the longest/shortest line is found through a comparison to the mean-either via a ratio or a standardized-difference metric <ref type=\"bibr\" target=\"#b33\">(Robitaille &amp; Harris, 2011;<\/ref> <ref type=\"bibr\" target=\"#b36\">Utochkin et al., 2023)<\/ref>-would therefore predict a set-size effect."
     },
     {
       "text": "The bipartite format, on the other hand, predicts no effect of set size.",
-      "text_id": 176,
+      "text_id": 175,
       "paragraph_id": 33,
       "section_id": 9,
       "page_number": null,
@@ -1491,7 +1483,7 @@
     },
     {
       "text": "Experiment5",
-      "text_id": 177,
+      "text_id": 176,
       "paragraph_id": 34,
       "section_id": 10,
       "page_number": null,
@@ -1499,7 +1491,7 @@
     },
     {
       "text": "We collected data from 32 participants, two of whom were excluded for not completing the task, leaving us with 30 participants in the final sample.",
-      "text_id": 178,
+      "text_id": 177,
       "paragraph_id": 35,
       "section_id": 11,
       "page_number": null,
@@ -1507,7 +1499,7 @@
     },
     {
       "text": "Participants were recruited in the same manner as Experiments 1 through 4 and tested online via PsychoPy Version 3.",
-      "text_id": 179,
+      "text_id": 178,
       "paragraph_id": 35,
       "section_id": 11,
       "page_number": null,
@@ -1515,7 +1507,7 @@
     },
     {
       "text": "The method and data from all 30 participants are available online at https://osf.io/k6fqt.",
-      "text_id": 180,
+      "text_id": 179,
       "paragraph_id": 35,
       "section_id": 11,
       "page_number": null,
@@ -1523,7 +1515,7 @@
     },
     {
       "text": "To accommodate set sizes of up to 11 lines, we had to make two changes to the procedure.",
-      "text_id": 181,
+      "text_id": 180,
       "paragraph_id": 36,
       "section_id": 12,
       "page_number": null,
@@ -1531,7 +1523,7 @@
     },
     {
       "text": "First, all of the lines were colored white on a gray background.",
-      "text_id": 182,
+      "text_id": 181,
       "paragraph_id": 36,
       "section_id": 12,
       "page_number": null,
@@ -1539,7 +1531,7 @@
     },
     {
       "text": "After displaying the lines for 2,000 ms, the lines were replaced with small, identically sized dots at the center of each of the lines.",
-      "text_id": 183,
+      "text_id": 182,
       "paragraph_id": 36,
       "section_id": 12,
       "page_number": null,
@@ -1547,7 +1539,7 @@
     },
     {
       "text": "Participants were asked to use the mouse and click on the dot that matched the position of the line they were asked to find (i.e., either the longest/ middle/shortest line).",
-      "text_id": 184,
+      "text_id": 183,
       "paragraph_id": 36,
       "section_id": 12,
       "page_number": null,
@@ -1555,7 +1547,7 @@
     },
     {
       "text": "This method also allowed us to directly compare RTs across set sizes, which would have been difficult with the color task given that participants would have to spend more time searching for the correctly colored box with higher set sizes.",
-      "text_id": 185,
+      "text_id": 184,
       "paragraph_id": 36,
       "section_id": 12,
       "page_number": null,
@@ -1563,7 +1555,7 @@
     },
     {
       "text": "Second, to accommodate the higher number of trials participants needed to complete, we set the ratio of every trial to 1.20.",
-      "text_id": 186,
+      "text_id": 185,
       "paragraph_id": 36,
       "section_id": 12,
       "page_number": null,
@@ -1571,7 +1563,7 @@
     },
     {
       "text": "As discussed above, this stimulus setup implies that the endpoints increasingly diverge from the mean as the set size increases.",
-      "text_id": 187,
+      "text_id": 186,
       "paragraph_id": 36,
       "section_id": 12,
       "page_number": null,
@@ -1579,7 +1571,7 @@
     },
     {
       "text": "At the start of each trial, participants were asked to search for either the longest, middle, or shortest line.",
-      "text_id": 188,
+      "text_id": 187,
       "paragraph_id": 37,
       "section_id": 12,
       "page_number": null,
@@ -1587,7 +1579,7 @@
     },
     {
       "text": "After pushing a button to start, they would see a display of either seven, nine, or 11 lines on the screen, followed by a replacement by dots that they could click on.",
-      "text_id": 189,
+      "text_id": 188,
       "paragraph_id": 37,
       "section_id": 12,
       "page_number": null,
@@ -1595,7 +1587,7 @@
     },
     {
       "text": "Participants completed 3 (Position) × 3 (Set Size) × 23 repetitions for a total of 207 trials.",
-      "text_id": 190,
+      "text_id": 189,
       "paragraph_id": 37,
       "section_id": 12,
       "page_number": null,
@@ -1603,7 +1595,7 @@
     },
     {
       "text": "A Position × Set Size repeated-measures ANOVA with accuracy as the dependent variable showed a significant main effect of position, F(2, 58) = 517.05, p < .001, f = 4.22, a marginal effect of set size, F(2, 58) = 3.09, p = .053, f = 0.33, and a significant Position × Set Size interaction, F(4, 116) = 6.70, p < .001, f = 0.48.",
-      "text_id": 191,
+      "text_id": 190,
       "paragraph_id": 38,
       "section_id": 13,
       "page_number": null,
@@ -1611,7 +1603,7 @@
     },
     {
       "text": "As seen in Figure 2, post hoc contrasts reveal that the main effect of question was driven by a significant difference between the longest and middle positions, t(58) = 28.64, p <.001, and shortest and middle positions, t(58) = -26.98, p < .001, and no difference between the longest and shortest positions, t(58) = 1.67, p = .23.",
-      "text_id": 192,
+      "text_id": 191,
       "paragraph_id": 38,
       "section_id": 13,
       "page_number": null,
@@ -1619,7 +1611,7 @@
     },
     {
       "text": "The significant interaction was driven by a linear trend for performance getting worse with set size for the middle position, β = -2.14, 95% CI = [-3.24, -1.04], in contrast to flat slopes with set size for the longest, β = 0.76, 95% CI = [-0.34, 1.86], and shortest, β = -0.58, 95% CI = [-1.68, 0.52], positions.",
-      "text_id": 193,
+      "text_id": 192,
       "paragraph_id": 38,
       "section_id": 13,
       "page_number": null,
@@ -1627,15 +1619,15 @@
     },
     {
       "text": "The negative slope for the middle position replicates work in visual search showing that endpoint targets are easier to find than middle targets (Treisman & Gelade, 1980;Wolfe, 2021).",
-      "text_id": 194,
+      "text_id": 193,
       "paragraph_id": 38,
       "section_id": 13,
       "page_number": null,
-      "formatted": "The negative slope for the middle position replicates work in visual search showing that endpoint targets are easier to find than middle targets <ref type=\"bibr\" target=\"#b34\">(Treisman &amp; Gelade, 1980;<\/ref><ref type=\"bibr\" target=\"#b38\">Wolfe, 2021)<\/ref>."
+      "formatted": "The negative slope for the middle position replicates work in visual search showing that endpoint targets are easier to find than middle targets <ref type=\"bibr\" target=\"#b34\">(Treisman &amp; Gelade, 1980;<\/ref> <ref type=\"bibr\" target=\"#b38\">Wolfe, 2021)<\/ref>."
     },
     {
       "text": "The lack of any such effects for the endpoints shows a clear violation of the comparison from the mean models, which predict better performance with increasing set size.",
-      "text_id": 195,
+      "text_id": 194,
       "paragraph_id": 38,
       "section_id": 13,
       "page_number": null,
@@ -1643,7 +1635,7 @@
     },
     {
       "text": "We also examined RTs.",
-      "text_id": 196,
+      "text_id": 195,
       "paragraph_id": 39,
       "section_id": 13,
       "page_number": null,
@@ -1651,7 +1643,7 @@
     },
     {
       "text": "A Position × Set Size repeatedmeasures ANOVA with RT as the dependent variable showed a significant main effect of position, F(2, 58) = 104.0, p < .001, f = 1.89, and no effect of set size, F(2, 58) = 0.02, p = .98, f = 0.02, or a significant Position × Set Size interaction, F(4, 116) = 1.81, p = .13, f = 0.25.",
-      "text_id": 197,
+      "text_id": 196,
       "paragraph_id": 39,
       "section_id": 13,
       "page_number": null,
@@ -1659,7 +1651,7 @@
     },
     {
       "text": "The significant main effect was driven by the middle position being significantly slower than the longest position, t(58) = -9.97, p < .001, which was in turn slower than the shortest position, t(58) = -4.04, p < .001.",
-      "text_id": 198,
+      "text_id": 197,
       "paragraph_id": 39,
       "section_id": 13,
       "page_number": null,
@@ -1667,7 +1659,7 @@
     },
     {
       "text": "We found no significant set-size effects or interactions, suggesting that neither a serial nor capacity-limited parallel search model could account for our data.",
-      "text_id": 199,
+      "text_id": 198,
       "paragraph_id": 39,
       "section_id": 13,
       "page_number": null,
@@ -1675,7 +1667,7 @@
     },
     {
       "text": "Recall that participants in Experiments 1 through 4 were instructed to find a position that was X places from the maximal or minimal element (e.g., third longest line).",
-      "text_id": 200,
+      "text_id": 199,
       "paragraph_id": 40,
       "section_id": 14,
       "page_number": null,
@@ -1683,7 +1675,7 @@
     },
     {
       "text": "Thus, an alternative explanation might suggest that our instructions signaled to them to first identify the maximal or minimal element and then proceed from there to the asked position, forcing them to represent the endpoints with additional attention or precision to begin the search process for the other values.",
-      "text_id": 201,
+      "text_id": 200,
       "paragraph_id": 40,
       "section_id": 14,
       "page_number": null,
@@ -1691,31 +1683,23 @@
     },
     {
       "text": "This possibility can be easily tested by changing the instructions and instead asking participants to find the X position from the middle (e.g., \"Which line is second above the",
-      "text_id": 202,
+      "text_id": 201,
       "paragraph_id": 40,
       "section_id": 14,
       "page_number": null,
       "formatted": null
     },
     {
-      "text": "Response Time (RT)",
-      "text_id": 203,
+      "text": "Response Time (RT) 0 25 50 75 100 500 700 600 800 900 1000 Mean RT Mean Accuracy Asked Position Longest Middle Shortest Longest Middle Shortest Asked Position Set Size 7 Set Size 9 Set Size 11 middle line?\").",
+      "text_id": 202,
       "paragraph_id": 41,
       "section_id": 15,
       "page_number": null,
       "formatted": null
     },
     {
-      "text": "0 25 50 75 100 500 700 600 800 900 1000 Mean RT Mean Accuracy Asked Position Longest Middle Shortest Longest Middle Shortest Asked Position Set Size 7 Set Size 9 Set Size 11 middle line?\").",
-      "text_id": 204,
-      "paragraph_id": 42,
-      "section_id": 15,
-      "page_number": null,
-      "formatted": null
-    },
-    {
       "text": "If the position named in the instructions provides an anchor value from which comparisons begin, then we should now find that participants are best with the middle position and progressively worse as they approach the outer edges.",
-      "text_id": 205,
+      "text_id": 203,
       "paragraph_id": 42,
       "section_id": 15,
       "page_number": null,
@@ -1723,7 +1707,7 @@
     },
     {
       "text": "Experiment6",
-      "text_id": 206,
+      "text_id": 204,
       "paragraph_id": 43,
       "section_id": 16,
       "page_number": null,
@@ -1731,7 +1715,7 @@
     },
     {
       "text": "As with Experiments 1 through 4, we aimed to recruit 30 participants.",
-      "text_id": 207,
+      "text_id": 205,
       "paragraph_id": 44,
       "section_id": 17,
       "page_number": null,
@@ -1739,7 +1723,7 @@
     },
     {
       "text": "We ended with a sample of 32 participants, two of whom were excluded for not completing the task, leaving us with 30 participants in the final sample.",
-      "text_id": 208,
+      "text_id": 206,
       "paragraph_id": 44,
       "section_id": 17,
       "page_number": null,
@@ -1747,7 +1731,7 @@
     },
     {
       "text": "Unlike the first four experiments, all participants were recruited via Amazon Mechanical Turk.",
-      "text_id": 209,
+      "text_id": 207,
       "paragraph_id": 44,
       "section_id": 17,
       "page_number": null,
@@ -1755,7 +1739,7 @@
     },
     {
       "text": "Recruitment criteria included being U.S. citizens, having completed at least 100 human-intelligence tasks (HITs), and having at least a 95% approval rating for completed HITs.",
-      "text_id": 210,
+      "text_id": 208,
       "paragraph_id": 44,
       "section_id": 17,
       "page_number": null,
@@ -1763,7 +1747,7 @@
     },
     {
       "text": "The data from all 30 participants is available online at https://osf.io/k6fqt.",
-      "text_id": 211,
+      "text_id": 209,
       "paragraph_id": 44,
       "section_id": 17,
       "page_number": null,
@@ -1771,7 +1755,7 @@
     },
     {
       "text": "The stimuli were identical to those in Experiment 2sets of seven colored lines presented on the screen for 2,000 ms followed by a series of colored squares that participants would click to indicate the correct answer.",
-      "text_id": 212,
+      "text_id": 210,
       "paragraph_id": 45,
       "section_id": 18,
       "page_number": null,
@@ -1779,7 +1763,7 @@
     },
     {
       "text": "The only difference was that the software used was hosted on Heroku instead of Pavlovia (note that this changed the data format uploaded online for this experiment compared with the others) and that participants were asked a different set of questions: \"Which line is the third/second/first above/below the middle?\"",
-      "text_id": 213,
+      "text_id": 211,
       "paragraph_id": 45,
       "section_id": 18,
       "page_number": null,
@@ -1787,7 +1771,7 @@
     },
     {
       "text": "or \"Which line is the middle?\"",
-      "text_id": 214,
+      "text_id": 212,
       "paragraph_id": 45,
       "section_id": 18,
       "page_number": null,
@@ -1795,7 +1779,7 @@
     },
     {
       "text": "The key dependent variables were accuracy and RT, and participants completed 200 total trials.",
-      "text_id": 215,
+      "text_id": 213,
       "paragraph_id": 45,
       "section_id": 18,
       "page_number": null,
@@ -1803,7 +1787,7 @@
     },
     {
       "text": "A 7 (Position) × 4 (Ratio) repeated-measures ANOVA with accuracy as the dependent variable showed a significant main effect of position, F(6, 174) = 16.78, p < .001, f = 0.76, a significant main effect of ratio, F(3, 87) = 7.04, p < .001, f = 0.49, and a significant interaction, F(18, 522) = 3.127, p < .001, f = 0.33.",
-      "text_id": 216,
+      "text_id": 214,
       "paragraph_id": 46,
       "section_id": 19,
       "page_number": null,
@@ -1811,7 +1795,7 @@
     },
     {
       "text": "As can be seen in Figure 3, overall performance was clearly worse, on average, than in Experiment 2 (we suspect because of testing on Mechanical Turk with a more heterogeneous sample), but there was still a clear benefit for the maximal and minimal positions, with a successive decrease in performance toward the middle position, even though the middle question was the linguistic anchor.",
-      "text_id": 217,
+      "text_id": 215,
       "paragraph_id": 46,
       "section_id": 19,
       "page_number": null,
@@ -1819,7 +1803,7 @@
     },
     {
       "text": "The most relevant finding for our hypothesis was that there were significant differences for all pairwise comparisons involving the maximal and minimal positions (all ps < .03) except for Position 1 versus Position 7, t(174) = 2.622, p = .13, and Position 2 versus Position 7, t(174) = -0.558, p = .99; none of the inner positions were significantly different from each other.",
-      "text_id": 218,
+      "text_id": 216,
       "paragraph_id": 47,
       "section_id": 19,
       "page_number": null,
@@ -1827,7 +1811,7 @@
     },
     {
       "text": "Performance was lower at 5% difference, M = 21.2%, 95% CI = [15.0, 27.5], but similar at the other three ratios.",
-      "text_id": 219,
+      "text_id": 217,
       "paragraph_id": 47,
       "section_id": 19,
       "page_number": null,
@@ -1835,7 +1819,7 @@
     },
     {
       "text": "The significant interaction again resulted from participants having difficulty identifying the ordinal position of any line as the ratio became harder (Fig. 3).",
-      "text_id": 220,
+      "text_id": 218,
       "paragraph_id": 47,
       "section_id": 19,
       "page_number": null,
@@ -1843,7 +1827,7 @@
     },
     {
       "text": "A 7 (Position) × 4 (Ratio) repeated-measures ANOVA with RT as the dependent variable showed a significant main effect of position, F(6, 174) = 16.78, p < .001, f = 0.76, a significant main effect of ratio, F(3, 87) = 7.04, p < .001, f = 0.49, and a significant interaction, F(18, 522) = 3.127, p < .001, f = 0.33.",
-      "text_id": 221,
+      "text_id": 219,
       "paragraph_id": 47,
       "section_id": 19,
       "page_number": null,
@@ -1851,7 +1835,7 @@
     },
     {
       "text": "There was still an RT advantage for the outer-edge items; however, unlike Experiment 2, we also found faster performance for the middle position (Fig. 3).",
-      "text_id": 222,
+      "text_id": 220,
       "paragraph_id": 47,
       "section_id": 19,
       "page_number": null,
@@ -1859,31 +1843,23 @@
     },
     {
       "text": "Therefore, although the linguistic anchor did not have an effect on accuracy, it did",
-      "text_id": 223,
+      "text_id": 221,
       "paragraph_id": 47,
       "section_id": 19,
       "page_number": null,
       "formatted": null
     },
     {
-      "text": "Response Time (RT)",
-      "text_id": 224,
+      "text": "Response Time (RT) 0 25 50 75 100 1000 1200 1400 1600 1800 Mean RT Mean Accuracy Asked Position Asked Position 10% Difference 5% Difference 25% Difference 50% Difference 1 2 3 4 5 6 7 1 2 3 4 5 6 7 have an effect on RTs; critically, however, the advantage for the outer-edge items was still preserved for both accuracy and RT.",
+      "text_id": 222,
       "paragraph_id": 48,
       "section_id": 20,
       "page_number": null,
       "formatted": null
     },
     {
-      "text": "0 25 50 75 100 1000 1200 1400 1600 1800 Mean RT Mean Accuracy Asked Position Asked Position 10% Difference 5% Difference 25% Difference 50% Difference 1 2 3 4 5 6 7 1 2 3 4 5 6 7 have an effect on RTs; critically, however, the advantage for the outer-edge items was still preserved for both accuracy and RT.",
-      "text_id": 225,
-      "paragraph_id": 49,
-      "section_id": 20,
-      "page_number": null,
-      "formatted": null
-    },
-    {
       "text": "In six experiments, we demonstrated that (a) participants can easily and quickly identify the endpoint elements in a set for length, size, and number representations, especially when compared with the inner ordinal positions (Experiments 1-6); (b) participants' ability to find the maximal and minimal element was not affected by increasing the number of sets (Experiments 1, 2, and 5) or by increasing the number of items within a set (Experiments 3 and 4); and (c) these findings did not result from alternative explanations such as a speed-accuracy trade-off (Experiments 1-4) or the linguistic anchor provided in the instructions (Experiment 6).",
-      "text_id": 226,
+      "text_id": 223,
       "paragraph_id": 50,
       "section_id": 21,
       "page_number": null,
@@ -1891,7 +1867,7 @@
     },
     {
       "text": "Our results show that participants can identify the endpoints in a set of perceptual magnitude values without sorting because such an algorithm would predict a decrease in performance as the number of comparisons grew (Pashler & Badgio, 1985).",
-      "text_id": 227,
+      "text_id": 224,
       "paragraph_id": 50,
       "section_id": 21,
       "page_number": null,
@@ -1899,7 +1875,7 @@
     },
     {
       "text": "They also show that participants can identify the endpoints without relying on a similarity metric that compares each item to the mean value because the distance between the endpoints and the mean (either in ratio or standardizeddifference space) did not improve performance (Experiment 5).",
-      "text_id": 228,
+      "text_id": 225,
       "paragraph_id": 50,
       "section_id": 21,
       "page_number": null,
@@ -1907,7 +1883,7 @@
     },
     {
       "text": "Instead, perceptual magnitude endpoint values are privileged and easily extracted from the visual scene even when not directly named (Experiment 6).",
-      "text_id": 229,
+      "text_id": 226,
       "paragraph_id": 50,
       "section_id": 21,
       "page_number": null,
@@ -1915,7 +1891,7 @@
     },
     {
       "text": "The inner values, however, show a cost that is consistent with successive comparison, using something akin to the quicksort algorithm.",
-      "text_id": 230,
+      "text_id": 227,
       "paragraph_id": 50,
       "section_id": 21,
       "page_number": null,
@@ -1923,7 +1899,7 @@
     },
     {
       "text": "Our results are consistent with a representational format for perceptual magnitudes that privileges the endpoints over the inner values.",
-      "text_id": 231,
+      "text_id": 228,
       "paragraph_id": 51,
       "section_id": 21,
       "page_number": null,
@@ -1931,7 +1907,7 @@
     },
     {
       "text": "Neither the log nor the linear-coding models predict this pattern because they posit no reason to privilege the endpoints over other values: Any value represented on these scales is equal to any other, and-especially when all the values are highly heterogeneous-any ordinal position must be identified through an algorithm akin to successive comparison.",
-      "text_id": 232,
+      "text_id": 229,
       "paragraph_id": 51,
       "section_id": 21,
       "page_number": null,
@@ -1939,7 +1915,7 @@
     },
     {
       "text": "Our results are most consistent with the bipartite model of perceptual magnitudes proposed by Gallistel (2011), who coded for magnitudes on an arbitrary scale that was scaled according to the dynamic range of the input.",
-      "text_id": 233,
+      "text_id": 230,
       "paragraph_id": 51,
       "section_id": 21,
       "page_number": null,
@@ -1947,7 +1923,7 @@
     },
     {
       "text": "Under this model, each value is represented relative to the endpoints (i.e., autoscaled to the minimum/maximum), and the coding of values begins from the range inward.",
-      "text_id": 234,
+      "text_id": 231,
       "paragraph_id": 51,
       "section_id": 21,
       "page_number": null,
@@ -1955,7 +1931,7 @@
     },
     {
       "text": "Our results are consistent with and extend work by Pashler and Badgio (1985), who found that participants can identify the highest Arabic digit in sets of two to six digits.",
-      "text_id": 235,
+      "text_id": 232,
       "paragraph_id": 52,
       "section_id": 21,
       "page_number": null,
@@ -1963,7 +1939,7 @@
     },
     {
       "text": "This finding was explained by a process that places Arabic digits on a mental number line followed by a search for the value that is \"rightmost\" on the line.",
-      "text_id": 236,
+      "text_id": 233,
       "paragraph_id": 52,
       "section_id": 21,
       "page_number": null,
@@ -1971,15 +1947,15 @@
     },
     {
       "text": "Assuming-as has been shown in previous work-that Arabic digits are themselves automatically mapped to a perceptual number scale (Dehaene et al., 2003;Fias et al., 2003;Odic & Starr,2018), our findings support and extend this prior work.",
-      "text_id": 237,
+      "text_id": 234,
       "paragraph_id": 52,
       "section_id": 21,
       "page_number": null,
-      "formatted": "Assuming-as has been shown in previous work-that Arabic digits are themselves automatically mapped to a perceptual number scale <ref type=\"bibr\" target=\"#b10\">(Dehaene et al., 2003;<\/ref><ref type=\"bibr\" target=\"#b12\">Fias et al., 2003;<\/ref><ref type=\"bibr\" target=\"#b27\">Odic &amp; Starr,2018<\/ref>), our findings support and extend this prior work."
+      "formatted": "Assuming-as has been shown in previous work-that Arabic digits are themselves automatically mapped to a perceptual number scale <ref type=\"bibr\" target=\"#b10\">(Dehaene et al., 2003;<\/ref> <ref type=\"bibr\" target=\"#b12\">Fias et al., 2003;<\/ref> <ref type=\"bibr\" target=\"#b27\">Odic &amp; Starr,2018<\/ref>), our findings support and extend this prior work."
     },
     {
       "text": "Rather than assuming that the mental number line is infinite and that participants search for the rightmost position, autoscaling in the bipartite format predicts that participants should find the highest (or, although untested, the lowest) Arabic digit so long as the format is mapped to a bipartite perceptual magnitude.",
-      "text_id": 238,
+      "text_id": 235,
       "paragraph_id": 52,
       "section_id": 21,
       "page_number": null,
@@ -1987,7 +1963,7 @@
     },
     {
       "text": "A prediction for future work would be that participants who either do not possess this mapping (e.g., young children) or have lost it (e.g., because of brain damage) should show the endpoint benefit for displays of dots but not for Arabic digits.",
-      "text_id": 239,
+      "text_id": 236,
       "paragraph_id": 52,
       "section_id": 21,
       "page_number": null,
@@ -1995,15 +1971,15 @@
     },
     {
       "text": "Our work also extends findings in visual search and short-term memory that show that observers are sensitive to relative changes in targets versus distractors (Becker, 2010;Becker et al., 2013;Martin & Becker, 2021).",
-      "text_id": 240,
+      "text_id": 237,
       "paragraph_id": 53,
       "section_id": 21,
       "page_number": null,
-      "formatted": "Our work also extends findings in visual search and short-term memory that show that observers are sensitive to relative changes in targets versus distractors <ref type=\"bibr\" target=\"#b2\">(Becker, 2010;<\/ref><ref type=\"bibr\" target=\"#b3\">Becker et al., 2013;<\/ref><ref type=\"bibr\" target=\"#b24\">Martin &amp; Becker, 2021)<\/ref>."
+      "formatted": "Our work also extends findings in visual search and short-term memory that show that observers are sensitive to relative changes in targets versus distractors <ref type=\"bibr\" target=\"#b2\">(Becker, 2010;<\/ref> <ref type=\"bibr\" target=\"#b3\">Becker et al., 2013;<\/ref> <ref type=\"bibr\" target=\"#b24\">Martin &amp; Becker, 2021)<\/ref>."
     },
     {
       "text": "For example, in change-detection tasks, color changes from endpoints to inner values (e.g., changing the reddest square) are sometimes more noticeable than changes from inner-to-inner positions.",
-      "text_id": 241,
+      "text_id": 238,
       "paragraph_id": 53,
       "section_id": 21,
       "page_number": null,
@@ -2011,7 +1987,7 @@
     },
     {
       "text": "Likewise, searches for predefined targets that are near the middle of the scale appear to proceed from the endpoints toward inner values, even when the endpoints are never targets themselves (Hamblin-Frohman et al., 2023).",
-      "text_id": 242,
+      "text_id": 239,
       "paragraph_id": 53,
       "section_id": 21,
       "page_number": null,
@@ -2019,7 +1995,7 @@
     },
     {
       "text": "We propose that the bipartite format explains how features are coded before attention operates over them in memory and visual-search tasks.",
-      "text_id": 243,
+      "text_id": 240,
       "paragraph_id": 53,
       "section_id": 21,
       "page_number": null,
@@ -2027,7 +2003,7 @@
     },
     {
       "text": "A change in the endpoint requires an update in autoscaling that may be a reliable attentional cue that explains change-detection effects.",
-      "text_id": 244,
+      "text_id": 241,
       "paragraph_id": 53,
       "section_id": 21,
       "page_number": null,
@@ -2035,7 +2011,7 @@
     },
     {
       "text": "And endpoints are easily accessible anchors from which features are represented in the bipartite model, such that participants might easily define attentional templates for other targets relative to them, as shown by the work of Hamblin-Frohman and colleagues.",
-      "text_id": 245,
+      "text_id": 242,
       "paragraph_id": 53,
       "section_id": 21,
       "page_number": null,
@@ -2043,7 +2019,7 @@
     },
     {
       "text": "As discussed above, a benefit for predefined targets that are incidentally also endpoint values has been previously demonstrated in the visual-search literature (for review, see Wolfe, 2021).",
-      "text_id": 246,
+      "text_id": 243,
       "paragraph_id": 54,
       "section_id": 21,
       "page_number": null,
@@ -2051,7 +2027,7 @@
     },
     {
       "text": "The bipartite format provides a mechanistic explanation for both when we should and should not expect visual search to benefit from endpoint targets.",
-      "text_id": 247,
+      "text_id": 244,
       "paragraph_id": 54,
       "section_id": 21,
       "page_number": null,
@@ -2059,7 +2035,7 @@
     },
     {
       "text": "Because feature endpoints are privileged in the bipartite format, any visual-search task that uses targets defined on a bipartite dimension should produce benefits for the maximal and minimal values as targets.",
-      "text_id": 248,
+      "text_id": 245,
       "paragraph_id": 54,
       "section_id": 21,
       "page_number": null,
@@ -2067,7 +2043,7 @@
     },
     {
       "text": "But because not all perceptual dimensions are expected to be in the bipartite format (e.g., orientation is a circular dimension that does not require dealing with infinity), we should not observe endpoint effects in all dimensions.",
-      "text_id": 249,
+      "text_id": 246,
       "paragraph_id": 54,
       "section_id": 21,
       "page_number": null,
@@ -2075,7 +2051,7 @@
     },
     {
       "text": "This is consistent with the work of Wolfe et al. (1992), who showed that the steepest line is not found faster in heterogeneously oriented sets.",
-      "text_id": 250,
+      "text_id": 247,
       "paragraph_id": 54,
       "section_id": 21,
       "page_number": null,
@@ -2083,7 +2059,7 @@
     },
     {
       "text": "Our results, therefore, intersect with the rich literature on visual search by providing a plausible format for the dimensional-feature scales over which attention can be tuned and targets can be selected.",
-      "text_id": 251,
+      "text_id": 248,
       "paragraph_id": 54,
       "section_id": 21,
       "page_number": null,
@@ -2091,7 +2067,7 @@
     },
     {
       "text": "Potential limits on the generalizability of our findings include the population sampled (college undergraduates) and that our stimuli were artificial compared with real-world magnitude perception and presented in a highly controlled environment.",
-      "text_id": 252,
+      "text_id": 249,
       "paragraph_id": 55,
       "section_id": 21,
       "page_number": null,
@@ -2099,7 +2075,7 @@
     },
     {
       "text": "Action Editor: Krishnankutty Sathian Editor: Patricia J. Bauer",
-      "text_id": 253,
+      "text_id": 250,
       "paragraph_id": 56,
       "section_id": 22,
       "page_number": null,
@@ -2107,7 +2083,7 @@
     },
     {
       "text": "We thank Edwina Picon, Sami Yousif, and Jason Haberman for valuable feedback on the manuscript.",
-      "text_id": 254,
+      "text_id": 251,
       "paragraph_id": 57,
       "section_id": 23,
       "page_number": null,
@@ -2115,7 +2091,7 @@
     },
     {
       "text": "This work was funded by a Natural Sciences and Engineering Research Council of Canada Discovery Grant (to D. Odic).",
-      "text_id": 255,
+      "text_id": 252,
       "paragraph_id": 58,
       "section_id": 24,
       "page_number": null,
@@ -2123,7 +2099,7 @@
     },
     {
       "text": "This article has received the badges for Open Data, Open Materials, and Preregistration.",
-      "text_id": 256,
+      "text_id": 253,
       "paragraph_id": 59,
       "section_id": 25,
       "page_number": null,
@@ -2131,7 +2107,7 @@
     },
     {
       "text": "More information about the Open Practices badges can be found at http://www.psychologicalscience.org/publications/badges.",
-      "text_id": 257,
+      "text_id": 254,
       "paragraph_id": 59,
       "section_id": 25,
       "page_number": null,
@@ -2139,7 +2115,7 @@
     },
     {
       "text": "The author(s) declared that there were no conflicts of interest with respect to the authorship or the publication of this article.",
-      "text_id": 258,
+      "text_id": 255,
       "paragraph_id": 60,
       "section_id": 26,
       "page_number": null,
@@ -2147,7 +2123,7 @@
     },
     {
       "text": "Darko Odic: Conceptualization; Data curation; Formal analysis; Funding acquisition; Investigation; Methodology; Project administration; Resources; Software; Supervision; Validation; Visualization; Writing -original draft; Writingreview & editing.",
-      "text_id": 259,
+      "text_id": 256,
       "paragraph_id": 61,
       "section_id": 27,
       "page_number": null,
@@ -2155,7 +2131,7 @@
     },
     {
       "text": "Tyler Knowlton: Conceptualization; Data curation; Formal analysis; Investigation; Methodology; Software; Validation; Writing -original draft; Writing -review & editing.",
-      "text_id": 260,
+      "text_id": 257,
       "paragraph_id": 61,
       "section_id": 27,
       "page_number": null,
@@ -2163,7 +2139,7 @@
     },
     {
       "text": "Alexis Wellwood: Conceptualization; Investigation; Methodology; Validation; Visualization; Writing -review & editing.",
-      "text_id": 261,
+      "text_id": 258,
       "paragraph_id": 61,
       "section_id": 27,
       "page_number": null,
@@ -2171,7 +2147,7 @@
     },
     {
       "text": "Paul Pietroski: Conceptualization; Investigation; Methodology; Validation; Writing -original draft; Writingreview & editing.",
-      "text_id": 262,
+      "text_id": 259,
       "paragraph_id": 61,
       "section_id": 27,
       "page_number": null,
@@ -2179,7 +2155,7 @@
     },
     {
       "text": "Jeffrey Lidz: Conceptualization; Funding acquisition; Investigation; Methodology; Project administration; Resources; Supervision; Validation; Writing -review & editing.",
-      "text_id": 263,
+      "text_id": 260,
       "paragraph_id": 61,
       "section_id": 27,
       "page_number": null,
@@ -2187,7 +2163,7 @@
     },
     {
       "text": "Justin Halberda: Conceptualization; Funding acquisition; Investigation; Methodology; Project administration; Resources; Supervision; Validation; Writing -review & editing.",
-      "text_id": 264,
+      "text_id": 261,
       "paragraph_id": 61,
       "section_id": 27,
       "page_number": null,
@@ -2195,7 +2171,7 @@
     },
     {
       "text": "Fig 1 Results from Experiments 1 through 4.",
-      "text_id": 265,
+      "text_id": 262,
       "paragraph_id": 62,
       "section_id": 28,
       "page_number": null,
@@ -2203,7 +2179,7 @@
     },
     {
       "text": "The top row shows example images from the four experiments.",
-      "text_id": 266,
+      "text_id": 263,
       "paragraph_id": 62,
       "section_id": 28,
       "page_number": null,
@@ -2211,7 +2187,7 @@
     },
     {
       "text": "Note that the presented lines were actually thinner and presented more foveally than illustrated here.",
-      "text_id": 267,
+      "text_id": 264,
       "paragraph_id": 62,
       "section_id": 28,
       "page_number": null,
@@ -2219,7 +2195,7 @@
     },
     {
       "text": "The middle row shows the accuracy across Position × Ratio.",
-      "text_id": 268,
+      "text_id": 265,
       "paragraph_id": 62,
       "section_id": 28,
       "page_number": null,
@@ -2227,7 +2203,7 @@
     },
     {
       "text": "The dashed line indicates at-chance performance.",
-      "text_id": 269,
+      "text_id": 266,
       "paragraph_id": 62,
       "section_id": 28,
       "page_number": null,
@@ -2235,7 +2211,7 @@
     },
     {
       "text": "The bottom row",
-      "text_id": 270,
+      "text_id": 267,
       "paragraph_id": 62,
       "section_id": 28,
       "page_number": null,
@@ -2243,7 +2219,7 @@
     },
     {
       "text": "Fig 2 Results from Experiment 5.",
-      "text_id": 271,
+      "text_id": 268,
       "paragraph_id": 63,
       "section_id": 29,
       "page_number": null,
@@ -2251,7 +2227,7 @@
     },
     {
       "text": "Accuracy over Position × Set Size is shown on the left (chance performance differs by set size and is indicated by individual dashed lines).",
-      "text_id": 272,
+      "text_id": 269,
       "paragraph_id": 63,
       "section_id": 29,
       "page_number": null,
@@ -2259,7 +2235,7 @@
     },
     {
       "text": "Response times over Position × Set Size are shown on the right.",
-      "text_id": 273,
+      "text_id": 270,
       "paragraph_id": 63,
       "section_id": 29,
       "page_number": null,
@@ -2267,7 +2243,7 @@
     },
     {
       "text": "Fig 3 Results from Experiment 6.",
-      "text_id": 274,
+      "text_id": 271,
       "paragraph_id": 64,
       "section_id": 30,
       "page_number": null,
@@ -2275,7 +2251,7 @@
     },
     {
       "text": "Accuracy over Position × Ratio is shown on the left, with the dashed line indicating at-chance performance.",
-      "text_id": 275,
+      "text_id": 272,
       "paragraph_id": 64,
       "section_id": 30,
       "page_number": null,
@@ -2283,7 +2259,7 @@
     },
     {
       "text": "Response times over Position × Ratio are shown on the right.",
-      "text_id": 276,
+      "text_id": 273,
       "paragraph_id": 64,
       "section_id": 30,
       "page_number": null,
@@ -2291,7 +2267,7 @@
     },
     {
       "text": "Ala-Laurila, P., & Rieke, F. (2014). Coincidence detec- tion of single-photon responses in the inner retina at the sensitivity limit of vision. Current Biology, 24(24), 2888-2898.",
-      "text_id": 277,
+      "text_id": 274,
       "paragraph_id": 65,
       "section_id": 31,
       "page_number": null,
@@ -2299,7 +2275,7 @@
     },
     {
       "text": "Anderson, J. R. (2009). How can the human mind occur in the physical universe? Oxford University Press.",
-      "text_id": 278,
+      "text_id": 275,
       "paragraph_id": 66,
       "section_id": 31,
       "page_number": null,
@@ -2307,7 +2283,7 @@
     },
     {
       "text": "Becker, S. I. (2010). The role of target-distractor relationships in guiding attention and the eyes in visual search. Journal of Experimental Psychology: General, 139(2), 247-265.",
-      "text_id": 279,
+      "text_id": 276,
       "paragraph_id": 67,
       "section_id": 31,
       "page_number": null,
@@ -2315,7 +2291,7 @@
     },
     {
       "text": "Becker, S. I., Folk, C. L., & Remington, R. W. (2013). Attentional capture does not depend on feature similarity, but on target-nontarget relations. Psychological Science, 24(5), 634-647.",
-      "text_id": 280,
+      "text_id": 277,
       "paragraph_id": 68,
       "section_id": 31,
       "page_number": null,
@@ -2323,7 +2299,7 @@
     },
     {
       "text": "Brannon, E. M., Wusthoff, C. J., Gallistel, C. R., & Gibbon, J. (2001). Numerical subtraction in the pigeon: Evidence for a linear subjective number scale. Psychological Science, 12(3), 238-243.",
-      "text_id": 281,
+      "text_id": 278,
       "paragraph_id": 69,
       "section_id": 31,
       "page_number": null,
@@ -2331,7 +2307,7 @@
     },
     {
       "text": "Cantlon, J. F., Platt, M., & Brannon, E. M. (2009). Beyond the number domain. Trends in Cognitive Sciences, 13(2), 83-91. https://doi.org/10.1016/j.tics.2008.11.007",
-      "text_id": 282,
+      "text_id": 279,
       "paragraph_id": 70,
       "section_id": 31,
       "page_number": null,
@@ -2339,7 +2315,7 @@
     },
     {
       "text": "Cormen, T. H., Leiserson, C. E., Rivest, R. L., & Stein, C. (2022). Introduction to algorithms. MIT Press.",
-      "text_id": 283,
+      "text_id": 280,
       "paragraph_id": 71,
       "section_id": 31,
       "page_number": null,
@@ -2347,7 +2323,7 @@
     },
     {
       "text": "Dehaene, S. (2003). The neural basis of the Weber-Fechner law: A logarithmic mental number line. Trends in Cognitive Sciences, 7(4), 145-147.",
-      "text_id": 284,
+      "text_id": 281,
       "paragraph_id": 72,
       "section_id": 31,
       "page_number": null,
@@ -2355,7 +2331,7 @@
     },
     {
       "text": "Dehaene, S., & Brannon, E. M. (2010). Space, time, and num- ber: A Kantian research program. Trends in Cognitive Sciences, 14(12), 517-519. https://doi.org/10.1016/j .tics.2010.09.009",
-      "text_id": 285,
+      "text_id": 282,
       "paragraph_id": 73,
       "section_id": 31,
       "page_number": null,
@@ -2363,7 +2339,7 @@
     },
     {
       "text": "Dehaene, S., Izard, V., Spelke, E., & Pica, P. (2008). Log or linear? Distinct intuitions of the number scale in Western and Amazonian indigene cultures. Science, 320(5880), 1217-1220. https://doi.org/10.1126/science.1156540",
-      "text_id": 286,
+      "text_id": 283,
       "paragraph_id": 74,
       "section_id": 31,
       "page_number": null,
@@ -2371,7 +2347,7 @@
     },
     {
       "text": "Dehaene, S., Piazza, M., Pinel, P., & Cohen, L. (2003). Three parietal circuits for number processing. Cognitive Neuropsychology, 20(3-6), 487-506.",
-      "text_id": 287,
+      "text_id": 284,
       "paragraph_id": 75,
       "section_id": 31,
       "page_number": null,
@@ -2379,7 +2355,7 @@
     },
     {
       "text": "Feigenson, L., Dehaene, S., & Spelke, E. S. (2004). Core systems of number. Trends in Cognitive Sciences, 8(7), 307-314. https://doi.org/10.1016/j.tics.2004.05.002",
-      "text_id": 288,
+      "text_id": 285,
       "paragraph_id": 76,
       "section_id": 31,
       "page_number": null,
@@ -2387,7 +2363,7 @@
     },
     {
       "text": "Fias, W., Lammertyn, J., Reynvoet, B., Dupont, P., & Orban, G. A. (2003). Parietal representation of symbolic and non- symbolic magnitude. Journal of Cognitive Neuroscience, 15(1), 47-56.",
-      "text_id": 289,
+      "text_id": 286,
       "paragraph_id": 77,
       "section_id": 31,
       "page_number": null,
@@ -2395,7 +2371,7 @@
     },
     {
       "text": "Fodor, J. (1975). The language of thought (1st ed.). Harvard University Press.",
-      "text_id": 290,
+      "text_id": 287,
       "paragraph_id": 78,
       "section_id": 31,
       "page_number": null,
@@ -2403,7 +2379,7 @@
     },
     {
       "text": "Gallistel, C. R. (1989). Animal cognition: The representation of space, time and number. Annual Review of Psychology, 40(1), 155-189. https://doi.org/10.1146/annurev.ps.40 .020189.001103",
-      "text_id": 291,
+      "text_id": 288,
       "paragraph_id": 79,
       "section_id": 31,
       "page_number": null,
@@ -2411,7 +2387,7 @@
     },
     {
       "text": "Gallistel, C. R. (2011). Mental magnitudes. In S. Dehaene & E. Brannon (Eds.), Space, time and number in the brain (pp. 3-12). Elsevier.",
-      "text_id": 292,
+      "text_id": 289,
       "paragraph_id": 80,
       "section_id": 31,
       "page_number": null,
@@ -2419,7 +2395,7 @@
     },
     {
       "text": "Gallistel, C. R. (2017). The coding question. Trends in Cognitive Sciences, 21(7), 498-508. https://doi.org/10.1016/j.tics .2017.04.012",
-      "text_id": 293,
+      "text_id": 290,
       "paragraph_id": 81,
       "section_id": 31,
       "page_number": null,
@@ -2427,7 +2403,7 @@
     },
     {
       "text": "Gallistel, C. R., & Gelman, R. (2000). Non-verbal numerical cognition: From reals to integers. Trends in Cognitive Sciences, 4(2), 59-65.",
-      "text_id": 294,
+      "text_id": 291,
       "paragraph_id": 82,
       "section_id": 31,
       "page_number": null,
@@ -2435,7 +2411,7 @@
     },
     {
       "text": "Gallistel, C. R., & King, A. P. (2009). Memory and the com- putational brain: Why cognitive science will transform neuroscience (1st ed.). Wiley-Blackwell.",
-      "text_id": 295,
+      "text_id": 292,
       "paragraph_id": 83,
       "section_id": 31,
       "page_number": null,
@@ -2443,7 +2419,7 @@
     },
     {
       "text": "Haberman, J., & Whitney, D. (2012). Ensemble perception: Summarizing the scene and broadening the limits of visual processing. In J. M. Wolfe & L. Robertson (Eds.), From perception to consciousness: Searching with Anne Treisman (pp. 339-349). Oxford University Press.",
-      "text_id": 296,
+      "text_id": 293,
       "paragraph_id": 84,
       "section_id": 31,
       "page_number": null,
@@ -2451,7 +2427,7 @@
     },
     {
       "text": "Halberda, J., & Odic, D. (2014). The precision and inter- nal confidence of our approximate number thoughts. In D. C. Geary, D. Berch, & K. M. Koepke (Eds.), Evolution and development of number processing (pp. 305-333). Academic Press.",
-      "text_id": 297,
+      "text_id": 294,
       "paragraph_id": 85,
       "section_id": 31,
       "page_number": null,
@@ -2459,7 +2435,7 @@
     },
     {
       "text": "Hamblin-Frohman, Z., Amarasekera, K. D. R., & Becker, S. I. (2023). The progression of visual search in multiple item displays: First relational, then feature-based. arXiv. https://doi.org/10.48550/arXiv.2301.03157",
-      "text_id": 298,
+      "text_id": 295,
       "paragraph_id": 86,
       "section_id": 31,
       "page_number": null,
@@ -2467,7 +2443,7 @@
     },
     {
       "text": "Harvey, B. M., Klein, B. P., Petridou, N., & Dumoulin, S. O. (2013). Topographic representation of numerosity in the human parietal cortex. Science, 341(6150), 1123-1126.",
-      "text_id": 299,
+      "text_id": 296,
       "paragraph_id": 87,
       "section_id": 31,
       "page_number": null,
@@ -2475,7 +2451,7 @@
     },
     {
       "text": "Klatzky, R. L., Clark, E. V., & Macken, M. (1973). Asymmetries in the acquisition of polar adjectives: Linguistic or con- ceptual? Journal of Experimental Child Psychology, 16(1), 32-46. https://doi.org/10.1016/0022-0965(73)90060-X",
-      "text_id": 300,
+      "text_id": 297,
       "paragraph_id": 88,
       "section_id": 31,
       "page_number": null,
@@ -2483,7 +2459,7 @@
     },
     {
       "text": "Martin, A., & Becker, S. I. (2021). A relational account of visual short-term memory (VSTM). Cortex, 144, 151-167. https://doi.org/10.1016/j.cortex.2021.08.013",
-      "text_id": 301,
+      "text_id": 298,
       "paragraph_id": 89,
       "section_id": 31,
       "page_number": null,
@@ -2491,7 +2467,7 @@
     },
     {
       "text": "Odic, D., Im, H. Y., Eisinger, R., Ly, R., & Halberda, J. (2016). PsiMLE: A maximum-likelihood estimation approach to estimating psychophysical scaling and variability more reliably, efficiently, and flexibly. Behavior Research Methods, 48(2), 445-462. https://doi.org/10.3758/s13428- 015-0600-5",
-      "text_id": 302,
+      "text_id": 299,
       "paragraph_id": 90,
       "section_id": 31,
       "page_number": null,
@@ -2499,7 +2475,7 @@
     },
     {
       "text": "Odic, D., Pietroski, P., Hunter, T., Lidz, J., & Halberda, J. (2013). Young children's understanding of \"more\" and discrimination of number and surface area. Journal of Experimental Psychology: Learning, Memory, and Cognition, 39(2), 451-461.",
-      "text_id": 303,
+      "text_id": 300,
       "paragraph_id": 91,
       "section_id": 31,
       "page_number": null,
@@ -2507,7 +2483,7 @@
     },
     {
       "text": "Odic, D., & Starr, A. (2018). An introduction to the approxi- mate number system. Child Development Perspectives, 12(4), 223-229.",
-      "text_id": 304,
+      "text_id": 301,
       "paragraph_id": 92,
       "section_id": 31,
       "page_number": null,
@@ -2515,7 +2491,7 @@
     },
     {
       "text": "Pashler, H., & Badgio, P. C. (1985). Visual attention and stim- ulus identification. Journal of Experimental Psychology: Human Perception and Performance, 11(2), 105-121.",
-      "text_id": 305,
+      "text_id": 302,
       "paragraph_id": 93,
       "section_id": 31,
       "page_number": null,
@@ -2523,7 +2499,7 @@
     },
     {
       "text": "Paul, J. M., van Ackooij, M., Ten Cate, T. C., & Harvey, B. M. (2022). Numerosity tuning in human association cortices and local image contrast representations in early visual cortex. Nature Communications, 13(1), Article 1340.",
-      "text_id": 306,
+      "text_id": 303,
       "paragraph_id": 94,
       "section_id": 31,
       "page_number": null,
@@ -2531,7 +2507,7 @@
     },
     {
       "text": "Peirce, J., Gray, J. R., Simpson, S., MacAskill, M., Höchenberger, R., Sogo, H., Kastman, E., & Lindeløv, J. K. (2019). PsychoPy2: Experiments in behavior made easy. Behavior Research Methods, 51(1), 195-203.",
-      "text_id": 307,
+      "text_id": 304,
       "paragraph_id": 95,
       "section_id": 31,
       "page_number": null,
@@ -2539,7 +2515,7 @@
     },
     {
       "text": "Pylyshyn, Z. W. (1984). Computation and cognition. MIT Press.",
-      "text_id": 308,
+      "text_id": 305,
       "paragraph_id": 96,
       "section_id": 31,
       "page_number": null,
@@ -2547,7 +2523,7 @@
     },
     {
       "text": "Pylyshyn, Z. W. (2003). Return of the mental image: Are there really pictures in the brain? Trends in Cognitive Sciences, 7(3), 113-118. https://doi.org/10.1016/S1364- 6613(03)00003-2",
-      "text_id": 309,
+      "text_id": 306,
       "paragraph_id": 97,
       "section_id": 31,
       "page_number": null,
@@ -2555,7 +2531,7 @@
     },
     {
       "text": "Robitaille, N., & Harris, I. M. (2011). When more is less: Extraction of summary statistics benefits from larger sets. Journal of Vision, 11(12), Article 18. https://doi.org/10.1167/ 11.12.18",
-      "text_id": 310,
+      "text_id": 307,
       "paragraph_id": 98,
       "section_id": 31,
       "page_number": null,
@@ -2563,7 +2539,7 @@
     },
     {
       "text": "Treisman, A. M., & Gelade, G. (1980). A feature-integration theory of attention. Cognitive Psychology, 12(1), 97-136.",
-      "text_id": 311,
+      "text_id": 308,
       "paragraph_id": 99,
       "section_id": 31,
       "page_number": null,
@@ -2571,7 +2547,7 @@
     },
     {
       "text": "Turing, A. M. (2009). Computing machinery and intelligence. In R. Epstein, G. Roberts, & G. Beber (Eds.), Parsing the Turing test (pp. 23-65). Springer.",
-      "text_id": 312,
+      "text_id": 309,
       "paragraph_id": 100,
       "section_id": 31,
       "page_number": null,
@@ -2579,7 +2555,7 @@
     },
     {
       "text": "Utochkin, I. S., Choi, J., & Chong, S. C. (2023). A population response model of ensemble perception. Psychological Review. Advance online publication. https://doi.org/10 .1037/rev0000426",
-      "text_id": 313,
+      "text_id": 310,
       "paragraph_id": 101,
       "section_id": 31,
       "page_number": null,
@@ -2587,7 +2563,7 @@
     },
     {
       "text": "Walsh, V. (2003). A theory of magnitude: Common cortical metrics of time, space and quantity. Trends in Cognitive Sciences, 7(11), 483-488. https://doi.org/10.1016/j.tics .2003.09.002",
-      "text_id": 314,
+      "text_id": 311,
       "paragraph_id": 102,
       "section_id": 31,
       "page_number": null,
@@ -2595,7 +2571,7 @@
     },
     {
       "text": "Wolfe, J. M. (2021). Guided Search 6.0: An updated model of visual search. Psychonomic Bulletin & Review, 28(4), 1060-1092. https://doi.org/10.3758/s13423-020-01859-9",
-      "text_id": 315,
+      "text_id": 312,
       "paragraph_id": 103,
       "section_id": 31,
       "page_number": null,
@@ -2603,7 +2579,7 @@
     },
     {
       "text": "Wolfe, J. M., Friedman-Hill, S. R., Stewart, M. I., & O'Connell, K. M. (1992). The role of categorization in visual search for orientation. Journal of Experimental Psychology: Human Perception and Performance, 18(1), 34.",
-      "text_id": 316,
+      "text_id": 313,
       "paragraph_id": 104,
       "section_id": 31,
       "page_number": null,
@@ -2838,34 +2814,39 @@
   ],
   "url": [
     {
+      "href": "http://crossmark.crossref.org/dialog/? doi=10.1177%2F09567976231223130&domain=pdf&date_stamp=2024-01-18",
+      "link_text": "1223130P SSXXX10",
+      "text_id": 5
+    },
+    {
       "href": "https://aspredicted.org/sn9xs.pdf",
       "link_text": null,
-      "text_id": 48
+      "text_id": 47
     },
     {
       "href": "https://osf.io/k6fqt",
       "link_text": null,
-      "text_id": 48
+      "text_id": 47
     },
     {
       "href": "https://osf.io/k6fqt",
       "link_text": null,
-      "text_id": 63
+      "text_id": 62
     },
     {
       "href": "https://osf.io/k6fqt",
       "link_text": null,
-      "text_id": 180
+      "text_id": 179
     },
     {
       "href": "https://osf.io/k6fqt",
       "link_text": null,
-      "text_id": 211
+      "text_id": 209
     },
     {
       "href": "http://www.psychologicalscience.org/publications/badges",
       "link_text": null,
-      "text_id": 257
+      "text_id": 254
     }
   ],
   "bib": [
@@ -2884,7 +2865,7 @@
       "container": "Current Biology",
       "bib_id": 0,
       "year_suffix": "",
-      "text_id": 277
+      "text_id": 274
     },
     {
       "bib_type": "article",
@@ -2901,7 +2882,7 @@
       "container": "",
       "bib_id": 1,
       "year_suffix": "",
-      "text_id": 278
+      "text_id": 275
     },
     {
       "bib_type": "article",
@@ -2918,7 +2899,7 @@
       "container": "Journal of Experimental Psychology: General",
       "bib_id": 2,
       "year_suffix": "",
-      "text_id": 279
+      "text_id": 276
     },
     {
       "bib_type": "article",
@@ -2935,7 +2916,7 @@
       "container": "Psychological Science",
       "bib_id": 3,
       "year_suffix": "",
-      "text_id": 280
+      "text_id": 277
     },
     {
       "bib_type": "article",
@@ -2952,7 +2933,7 @@
       "container": "Psychological Science",
       "bib_id": 4,
       "year_suffix": "",
-      "text_id": 281
+      "text_id": 278
     },
     {
       "bib_type": "article",
@@ -2969,7 +2950,7 @@
       "container": "Trends in Cognitive Sciences",
       "bib_id": 5,
       "year_suffix": "",
-      "text_id": 282
+      "text_id": 279
     },
     {
       "bib_type": "article",
@@ -2986,7 +2967,7 @@
       "container": "",
       "bib_id": 6,
       "year_suffix": "",
-      "text_id": 283
+      "text_id": 280
     },
     {
       "bib_type": "article",
@@ -3003,7 +2984,7 @@
       "container": "Trends in Cognitive Sciences",
       "bib_id": 7,
       "year_suffix": "",
-      "text_id": 284
+      "text_id": 281
     },
     {
       "bib_type": "article",
@@ -3020,7 +3001,7 @@
       "container": "Trends in Cognitive Sciences",
       "bib_id": 8,
       "year_suffix": "",
-      "text_id": 285
+      "text_id": 282
     },
     {
       "bib_type": "article",
@@ -3037,7 +3018,7 @@
       "container": "Science",
       "bib_id": 9,
       "year_suffix": "",
-      "text_id": 286
+      "text_id": 283
     },
     {
       "bib_type": "article",
@@ -3054,7 +3035,7 @@
       "container": "Cognitive Neuropsychology",
       "bib_id": 10,
       "year_suffix": "",
-      "text_id": 287
+      "text_id": 284
     },
     {
       "bib_type": "article",
@@ -3071,7 +3052,7 @@
       "container": "Trends in Cognitive Sciences",
       "bib_id": 11,
       "year_suffix": "",
-      "text_id": 288
+      "text_id": 285
     },
     {
       "bib_type": "article",
@@ -3088,7 +3069,7 @@
       "container": "Journal of Cognitive Neuroscience",
       "bib_id": 12,
       "year_suffix": "",
-      "text_id": 289
+      "text_id": 286
     },
     {
       "bib_type": "article",
@@ -3105,7 +3086,7 @@
       "container": "",
       "bib_id": 13,
       "year_suffix": "",
-      "text_id": 290
+      "text_id": 287
     },
     {
       "bib_type": "article",
@@ -3122,7 +3103,7 @@
       "container": "Annual Review of Psychology",
       "bib_id": 14,
       "year_suffix": "",
-      "text_id": 291
+      "text_id": 288
     },
     {
       "bib_type": "article",
@@ -3139,7 +3120,7 @@
       "container": "",
       "bib_id": 15,
       "year_suffix": "",
-      "text_id": 292
+      "text_id": 289
     },
     {
       "bib_type": "article",
@@ -3156,7 +3137,7 @@
       "container": "Trends in Cognitive Sciences",
       "bib_id": 16,
       "year_suffix": "",
-      "text_id": 293
+      "text_id": 290
     },
     {
       "bib_type": "article",
@@ -3173,7 +3154,7 @@
       "container": "Trends in Cognitive Sciences",
       "bib_id": 17,
       "year_suffix": "",
-      "text_id": 294
+      "text_id": 291
     },
     {
       "bib_type": "article",
@@ -3190,7 +3171,7 @@
       "container": "",
       "bib_id": 18,
       "year_suffix": "",
-      "text_id": 295
+      "text_id": 292
     },
     {
       "bib_type": "article",
@@ -3207,7 +3188,7 @@
       "container": "",
       "bib_id": 19,
       "year_suffix": "",
-      "text_id": 296
+      "text_id": 293
     },
     {
       "bib_type": "article",
@@ -3224,7 +3205,7 @@
       "container": "",
       "bib_id": 20,
       "year_suffix": "",
-      "text_id": 297
+      "text_id": 294
     },
     {
       "bib_type": "article",
@@ -3241,7 +3222,7 @@
       "container": "",
       "bib_id": 21,
       "year_suffix": "",
-      "text_id": 298
+      "text_id": 295
     },
     {
       "bib_type": "article",
@@ -3258,7 +3239,7 @@
       "container": "Science",
       "bib_id": 22,
       "year_suffix": "",
-      "text_id": 299
+      "text_id": 296
     },
     {
       "bib_type": "article",
@@ -3275,7 +3256,7 @@
       "container": "Journal of Experimental Child Psychology",
       "bib_id": 23,
       "year_suffix": "",
-      "text_id": 300
+      "text_id": 297
     },
     {
       "bib_type": "article",
@@ -3292,7 +3273,7 @@
       "container": "Cortex",
       "bib_id": 24,
       "year_suffix": "",
-      "text_id": 301
+      "text_id": 298
     },
     {
       "bib_type": "article",
@@ -3309,7 +3290,7 @@
       "container": "Behavior Research Methods",
       "bib_id": 25,
       "year_suffix": "",
-      "text_id": 302
+      "text_id": 299
     },
     {
       "bib_type": "article",
@@ -3326,7 +3307,7 @@
       "container": "Journal of Experimental Psychology: Learning, Memory, and Cognition",
       "bib_id": 26,
       "year_suffix": "",
-      "text_id": 303
+      "text_id": 300
     },
     {
       "bib_type": "article",
@@ -3343,7 +3324,7 @@
       "container": "Child Development Perspectives",
       "bib_id": 27,
       "year_suffix": "",
-      "text_id": 304
+      "text_id": 301
     },
     {
       "bib_type": "article",
@@ -3360,7 +3341,7 @@
       "container": "Journal of Experimental Psychology: Human Perception and Performance",
       "bib_id": 28,
       "year_suffix": "",
-      "text_id": 305
+      "text_id": 302
     },
     {
       "bib_type": "article",
@@ -3377,7 +3358,7 @@
       "container": "Nature Communications",
       "bib_id": 29,
       "year_suffix": "",
-      "text_id": 306
+      "text_id": 303
     },
     {
       "bib_type": "article",
@@ -3394,7 +3375,7 @@
       "container": "Behavior Research Methods",
       "bib_id": 30,
       "year_suffix": "",
-      "text_id": 307
+      "text_id": 304
     },
     {
       "bib_type": "article",
@@ -3411,7 +3392,7 @@
       "container": "",
       "bib_id": 31,
       "year_suffix": "",
-      "text_id": 308
+      "text_id": 305
     },
     {
       "bib_type": "article",
@@ -3428,7 +3409,7 @@
       "container": "Trends in Cognitive Sciences",
       "bib_id": 32,
       "year_suffix": "",
-      "text_id": 309
+      "text_id": 306
     },
     {
       "bib_type": "article",
@@ -3445,7 +3426,7 @@
       "container": "Journal of Vision",
       "bib_id": 33,
       "year_suffix": "",
-      "text_id": 310
+      "text_id": 307
     },
     {
       "bib_type": "article",
@@ -3462,7 +3443,7 @@
       "container": "Cognitive Psychology",
       "bib_id": 34,
       "year_suffix": "",
-      "text_id": 311
+      "text_id": 308
     },
     {
       "bib_type": "article",
@@ -3479,7 +3460,7 @@
       "container": "",
       "bib_id": 35,
       "year_suffix": "",
-      "text_id": 312
+      "text_id": 309
     },
     {
       "bib_type": "article",
@@ -3496,7 +3477,7 @@
       "container": "Psychological Review. Advance online publication",
       "bib_id": 36,
       "year_suffix": "",
-      "text_id": 313
+      "text_id": 310
     },
     {
       "bib_type": "article",
@@ -3513,7 +3494,7 @@
       "container": "Trends in Cognitive Sciences",
       "bib_id": 37,
       "year_suffix": "",
-      "text_id": 314
+      "text_id": 311
     },
     {
       "bib_type": "article",
@@ -3530,7 +3511,7 @@
       "container": "Psychonomic Bulletin & Review",
       "bib_id": 38,
       "year_suffix": "",
-      "text_id": 315
+      "text_id": 312
     },
     {
       "bib_type": "article",
@@ -3547,7 +3528,7 @@
       "container": "Journal of Experimental Psychology: Human Perception and Performance",
       "bib_id": 39,
       "year_suffix": "",
-      "text_id": 316
+      "text_id": 313
     }
   ],
   "xref": [
@@ -3579,175 +3560,181 @@
       "xref_id": 0,
       "xref_type": "bibr",
       "contents": "(Ala-Laurila & Rieke, 2014)",
-      "text_id": 9
+      "text_id": 8
     },
     {
       "xref_id": 7,
       "xref_type": "bibr",
       "contents": "(Dehaene, 2003;",
-      "text_id": 10
+      "text_id": 9
     },
     {
       "xref_id": 9,
       "xref_type": "bibr",
       "contents": "Dehaene et al., 2008)",
-      "text_id": 10
+      "text_id": 9
     },
     {
       "xref_id": 15,
       "xref_type": "bibr",
       "contents": "(Gallistel, 2011)",
-      "text_id": 12
+      "text_id": 11
     },
     {
       "xref_id": 15,
       "xref_type": "bibr",
       "contents": "Gallistel (2011)",
-      "text_id": 12
+      "text_id": 11
     },
     {
       "xref_id": 16,
       "xref_type": "bibr",
       "contents": "(Gallistel, 2017)",
-      "text_id": 15
+      "text_id": 14
     },
     {
       "xref_id": 28,
       "xref_type": "bibr",
       "contents": "(Pashler & Badgio, 1985)",
-      "text_id": 22
+      "text_id": 21
     },
     {
       "xref_id": 6,
       "xref_type": "bibr",
       "contents": "Cormen et al., 2022)",
-      "text_id": 23
+      "text_id": 22
     },
     {
       "xref_id": 19,
       "xref_type": "bibr",
       "contents": "(Haberman & Whitney, 2012;",
-      "text_id": 24
+      "text_id": 23
     },
     {
       "xref_id": 36,
       "xref_type": "bibr",
       "contents": "Utochkin et al., 2023)",
-      "text_id": 24
+      "text_id": 23
     },
     {
       "xref_id": 36,
       "xref_type": "bibr",
       "contents": "(Utochkin et al., 2023)",
-      "text_id": 37
+      "text_id": 36
     },
     {
       "xref_id": 30,
       "xref_type": "bibr",
       "contents": "(Peirce et al., 2019)",
-      "text_id": 62
+      "text_id": 61
     },
     {
       "xref_id": 5,
       "xref_type": "bibr",
       "contents": "(Cantlon et al., 2009;",
-      "text_id": 118
+      "text_id": 117
     },
     {
       "xref_id": 8,
       "xref_type": "bibr",
       "contents": "Dehaene & Brannon, 2010;",
-      "text_id": 118
+      "text_id": 117
     },
     {
       "xref_id": 37,
       "xref_type": "bibr",
       "contents": "Walsh, 2003)",
-      "text_id": 118
+      "text_id": 117
     },
     {
       "xref_id": 0,
       "xref_type": "figure",
       "contents": "1",
-      "text_id": 122
+      "text_id": 121
     },
     {
       "xref_id": 23,
       "xref_type": "bibr",
       "contents": "(Klatzky et al., 1973;",
-      "text_id": 124
+      "text_id": 123
     },
     {
       "xref_id": 26,
       "xref_type": "bibr",
       "contents": "Odic et al., 2013)",
-      "text_id": 124
+      "text_id": 123
     },
     {
       "xref_id": 0,
       "xref_type": "figure",
       "contents": "1",
-      "text_id": 138
+      "text_id": 137
     },
     {
       "xref_id": 0,
       "xref_type": "figure",
       "contents": "1",
-      "text_id": 162
+      "text_id": 161
     },
     {
       "xref_id": 3,
       "xref_type": "bibr",
       "contents": "Becker et al., 2013;",
-      "text_id": 167
+      "text_id": 166
     },
     {
       "xref_id": 34,
       "xref_type": "bibr",
       "contents": "Treisman & Gelade, 1980;",
-      "text_id": 167
+      "text_id": 166
     },
     {
       "xref_id": 38,
       "xref_type": "bibr",
       "contents": "Wolfe, 2021)",
-      "text_id": 167
+      "text_id": 166
     },
     {
       "xref_id": 33,
       "xref_type": "bibr",
       "contents": "(Robitaille & Harris, 2011;",
-      "text_id": 175
+      "text_id": 174
     },
     {
       "xref_id": 36,
       "xref_type": "bibr",
       "contents": "Utochkin et al., 2023)",
-      "text_id": 175
+      "text_id": 174
     },
     {
       "xref_id": 1,
       "xref_type": "figure",
       "contents": "2",
-      "text_id": 192
+      "text_id": 191
     },
     {
       "xref_id": 34,
       "xref_type": "bibr",
       "contents": "(Treisman & Gelade, 1980;",
-      "text_id": 194
+      "text_id": 193
     },
     {
       "xref_id": 38,
       "xref_type": "bibr",
       "contents": "Wolfe, 2021)",
-      "text_id": 194
+      "text_id": 193
     },
     {
       "xref_id": 2,
       "xref_type": "figure",
       "contents": "3",
-      "text_id": 217
+      "text_id": 215
+    },
+    {
+      "xref_id": 2,
+      "xref_type": "figure",
+      "contents": "3",
+      "text_id": 218
     },
     {
       "xref_id": 2,
@@ -3756,82 +3743,76 @@
       "text_id": 220
     },
     {
-      "xref_id": 2,
-      "xref_type": "figure",
-      "contents": "3",
-      "text_id": 222
-    },
-    {
       "xref_id": 28,
       "xref_type": "bibr",
       "contents": "(Pashler & Badgio, 1985)",
-      "text_id": 227
+      "text_id": 224
     },
     {
       "xref_id": 15,
       "xref_type": "bibr",
       "contents": "Gallistel (2011)",
-      "text_id": 233
+      "text_id": 230
     },
     {
       "xref_id": 28,
       "xref_type": "bibr",
       "contents": "Pashler and Badgio (1985)",
-      "text_id": 235
+      "text_id": 232
     },
     {
       "xref_id": 10,
       "xref_type": "bibr",
       "contents": "(Dehaene et al., 2003;",
-      "text_id": 237
+      "text_id": 234
     },
     {
       "xref_id": 12,
       "xref_type": "bibr",
       "contents": "Fias et al., 2003;",
-      "text_id": 237
+      "text_id": 234
     },
     {
       "xref_id": 27,
       "xref_type": "bibr",
       "contents": "Odic & Starr,2018",
-      "text_id": 237
+      "text_id": 234
     },
     {
       "xref_id": 2,
       "xref_type": "bibr",
       "contents": "(Becker, 2010;",
-      "text_id": 240
+      "text_id": 237
     },
     {
       "xref_id": 3,
       "xref_type": "bibr",
       "contents": "Becker et al., 2013;",
-      "text_id": 240
+      "text_id": 237
     },
     {
       "xref_id": 24,
       "xref_type": "bibr",
       "contents": "Martin & Becker, 2021)",
-      "text_id": 240
+      "text_id": 237
     },
     {
       "xref_id": 21,
       "xref_type": "bibr",
       "contents": "(Hamblin-Frohman et al., 2023)",
-      "text_id": 242
+      "text_id": 239
     },
     {
       "xref_id": 38,
       "xref_type": "bibr",
       "contents": "Wolfe, 2021)",
-      "text_id": 246
+      "text_id": 243
     },
     {
       "xref_id": 39,
       "xref_type": "bibr",
       "contents": "Wolfe et al. (1992)",
-      "text_id": 250
+      "text_id": 247
     }
   ],
   "figure": [
@@ -3857,7 +3838,7 @@
   "table": [],
   "eq": [
     {
-      "text_id": 6,
+      "text_id": 5,
       "grp_id": 1,
       "lhs": "doi",
       "df": null,
@@ -3865,7 +3846,7 @@
       "rhs": "10.1177"
     },
     {
-      "text_id": 6,
+      "text_id": 5,
       "grp_id": 1,
       "lhs": "date_stamp",
       "df": null,
@@ -3873,7 +3854,23 @@
       "rhs": "2024-01-18"
     },
     {
-      "text_id": 50,
+      "text_id": 5,
+      "grp_id": 1,
+      "lhs": "doi",
+      "df": null,
+      "comp": "=",
+      "rhs": "10.1177"
+    },
+    {
+      "text_id": 5,
+      "grp_id": 1,
+      "lhs": "date_stamp",
+      "df": null,
+      "comp": "=",
+      "rhs": "2024-01-18"
+    },
+    {
+      "text_id": 49,
       "grp_id": 2,
       "lhs": "power",
       "df": null,
@@ -3881,7 +3878,7 @@
       "rhs": "0.95"
     },
     {
-      "text_id": 50,
+      "text_id": 49,
       "grp_id": 2,
       "lhs": "α",
       "df": null,
@@ -3889,7 +3886,7 @@
       "rhs": "0.05"
     },
     {
-      "text_id": 121,
+      "text_id": 120,
       "grp_id": 3,
       "lhs": "F",
       "df": "(4, 116)",
@@ -3897,7 +3894,7 @@
       "rhs": "68.85"
     },
     {
-      "text_id": 121,
+      "text_id": 120,
       "grp_id": 3,
       "lhs": "p",
       "df": null,
@@ -3905,7 +3902,7 @@
       "rhs": ".001"
     },
     {
-      "text_id": 121,
+      "text_id": 120,
       "grp_id": 3,
       "lhs": "f",
       "df": null,
@@ -3913,7 +3910,7 @@
       "rhs": "1.54"
     },
     {
-      "text_id": 121,
+      "text_id": 120,
       "grp_id": 3,
       "lhs": "F",
       "df": "(3, 87)",
@@ -3921,7 +3918,7 @@
       "rhs": "208.67"
     },
     {
-      "text_id": 121,
+      "text_id": 120,
       "grp_id": 3,
       "lhs": "p",
       "df": null,
@@ -3929,7 +3926,7 @@
       "rhs": ".001"
     },
     {
-      "text_id": 121,
+      "text_id": 120,
       "grp_id": 3,
       "lhs": "f",
       "df": null,
@@ -3937,7 +3934,7 @@
       "rhs": "2.68"
     },
     {
-      "text_id": 121,
+      "text_id": 120,
       "grp_id": 3,
       "lhs": "F",
       "df": "(12, 348)",
@@ -3945,7 +3942,7 @@
       "rhs": "4.07"
     },
     {
-      "text_id": 121,
+      "text_id": 120,
       "grp_id": 3,
       "lhs": "p",
       "df": null,
@@ -3953,7 +3950,7 @@
       "rhs": ".001"
     },
     {
-      "text_id": 121,
+      "text_id": 120,
       "grp_id": 3,
       "lhs": "f",
       "df": null,
@@ -3961,7 +3958,7 @@
       "rhs": "0.37"
     },
     {
-      "text_id": 123,
+      "text_id": 122,
       "grp_id": 4,
       "lhs": "ps",
       "df": null,
@@ -3969,7 +3966,7 @@
       "rhs": ".001"
     },
     {
-      "text_id": 123,
+      "text_id": 122,
       "grp_id": 4,
       "lhs": "t",
       "df": "(116)",
@@ -3977,7 +3974,7 @@
       "rhs": "2.28"
     },
     {
-      "text_id": 123,
+      "text_id": 122,
       "grp_id": 4,
       "lhs": "p",
       "df": null,
@@ -3985,7 +3982,7 @@
       "rhs": ".16"
     },
     {
-      "text_id": 123,
+      "text_id": 122,
       "grp_id": 4,
       "lhs": "t",
       "df": "(116)",
@@ -3993,7 +3990,7 @@
       "rhs": ".574"
     },
     {
-      "text_id": 123,
+      "text_id": 122,
       "grp_id": 4,
       "lhs": "p",
       "df": null,
@@ -4001,7 +3998,7 @@
       "rhs": ".98"
     },
     {
-      "text_id": 123,
+      "text_id": 122,
       "grp_id": 4,
       "lhs": "t",
       "df": "(116)",
@@ -4009,7 +4006,7 @@
       "rhs": "-1.712"
     },
     {
-      "text_id": 123,
+      "text_id": 122,
       "grp_id": 4,
       "lhs": "p",
       "df": null,
@@ -4017,7 +4014,7 @@
       "rhs": ".43"
     },
     {
-      "text_id": 126,
+      "text_id": 125,
       "grp_id": 5,
       "lhs": "M",
       "df": null,
@@ -4025,7 +4022,7 @@
       "rhs": "37.4"
     },
     {
-      "text_id": 126,
+      "text_id": 125,
       "grp_id": 5,
       "lhs": "interval",
       "df": "(CI)",
@@ -4033,7 +4030,7 @@
       "rhs": "[32.4, 42.4]"
     },
     {
-      "text_id": 126,
+      "text_id": 125,
       "grp_id": 5,
       "lhs": "M",
       "df": null,
@@ -4041,7 +4038,7 @@
       "rhs": "84.0"
     },
     {
-      "text_id": 126,
+      "text_id": 125,
       "grp_id": 5,
       "lhs": "95% CI",
       "df": null,
@@ -4049,7 +4046,7 @@
       "rhs": "[79.0, 89.0]"
     },
     {
-      "text_id": 128,
+      "text_id": 127,
       "grp_id": 6,
       "lhs": "t",
       "df": "(116)",
@@ -4057,7 +4054,7 @@
       "rhs": "3.81"
     },
     {
-      "text_id": 128,
+      "text_id": 127,
       "grp_id": 6,
       "lhs": "p",
       "df": null,
@@ -4065,7 +4062,7 @@
       "rhs": ".002"
     },
     {
-      "text_id": 128,
+      "text_id": 127,
       "grp_id": 6,
       "lhs": "t",
       "df": "(116)",
@@ -4073,7 +4070,7 @@
       "rhs": "4.77"
     },
     {
-      "text_id": 128,
+      "text_id": 127,
       "grp_id": 6,
       "lhs": "p",
       "df": null,
@@ -4081,7 +4078,7 @@
       "rhs": ".001"
     },
     {
-      "text_id": 128,
+      "text_id": 127,
       "grp_id": 6,
       "lhs": "t",
       "df": "(116)",
@@ -4089,7 +4086,7 @@
       "rhs": "3.22"
     },
     {
-      "text_id": 128,
+      "text_id": 127,
       "grp_id": 6,
       "lhs": "p",
       "df": null,
@@ -4097,7 +4094,7 @@
       "rhs": ".012"
     },
     {
-      "text_id": 129,
+      "text_id": 128,
       "grp_id": 7,
       "lhs": "F",
       "df": "(4, 116)",
@@ -4105,7 +4102,7 @@
       "rhs": "26.22"
     },
     {
-      "text_id": 129,
+      "text_id": 128,
       "grp_id": 7,
       "lhs": "p",
       "df": null,
@@ -4113,7 +4110,7 @@
       "rhs": ".001"
     },
     {
-      "text_id": 129,
+      "text_id": 128,
       "grp_id": 7,
       "lhs": "f",
       "df": null,
@@ -4121,7 +4118,7 @@
       "rhs": "0.95"
     },
     {
-      "text_id": 129,
+      "text_id": 128,
       "grp_id": 7,
       "lhs": "F",
       "df": "(3, 87)",
@@ -4129,7 +4126,7 @@
       "rhs": "54.17"
     },
     {
-      "text_id": 129,
+      "text_id": 128,
       "grp_id": 7,
       "lhs": "p",
       "df": null,
@@ -4137,7 +4134,7 @@
       "rhs": ".001"
     },
     {
-      "text_id": 129,
+      "text_id": 128,
       "grp_id": 7,
       "lhs": "f",
       "df": null,
@@ -4145,7 +4142,7 @@
       "rhs": "1.37"
     },
     {
-      "text_id": 129,
+      "text_id": 128,
       "grp_id": 7,
       "lhs": "F",
       "df": "(12, 348)",
@@ -4153,7 +4150,7 @@
       "rhs": "2.091"
     },
     {
-      "text_id": 129,
+      "text_id": 128,
       "grp_id": 7,
       "lhs": "p",
       "df": null,
@@ -4161,7 +4158,7 @@
       "rhs": ".017"
     },
     {
-      "text_id": 129,
+      "text_id": 128,
       "grp_id": 7,
       "lhs": "f",
       "df": null,
@@ -4169,7 +4166,7 @@
       "rhs": "0.27"
     },
     {
-      "text_id": 132,
+      "text_id": 131,
       "grp_id": 8,
       "lhs": "F",
       "df": "(6, 174)",
@@ -4177,7 +4174,7 @@
       "rhs": "111.0"
     },
     {
-      "text_id": 132,
+      "text_id": 131,
       "grp_id": 8,
       "lhs": "p",
       "df": null,
@@ -4185,7 +4182,7 @@
       "rhs": ".001"
     },
     {
-      "text_id": 132,
+      "text_id": 131,
       "grp_id": 8,
       "lhs": "f",
       "df": null,
@@ -4193,7 +4190,7 @@
       "rhs": "1.96"
     },
     {
-      "text_id": 132,
+      "text_id": 131,
       "grp_id": 8,
       "lhs": "F",
       "df": "(3, 87)",
@@ -4201,7 +4198,7 @@
       "rhs": "214.6"
     },
     {
-      "text_id": 132,
+      "text_id": 131,
       "grp_id": 8,
       "lhs": "p",
       "df": null,
@@ -4209,7 +4206,7 @@
       "rhs": ".001"
     },
     {
-      "text_id": 132,
+      "text_id": 131,
       "grp_id": 8,
       "lhs": "f",
       "df": null,
@@ -4217,7 +4214,7 @@
       "rhs": "2.72"
     },
     {
-      "text_id": 132,
+      "text_id": 131,
       "grp_id": 8,
       "lhs": "F",
       "df": "(18, 522)",
@@ -4225,7 +4222,7 @@
       "rhs": "5.55"
     },
     {
-      "text_id": 132,
+      "text_id": 131,
       "grp_id": 8,
       "lhs": "p",
       "df": null,
@@ -4233,7 +4230,7 @@
       "rhs": ".001"
     },
     {
-      "text_id": 132,
+      "text_id": 131,
       "grp_id": 8,
       "lhs": "f",
       "df": null,
@@ -4241,7 +4238,7 @@
       "rhs": "0.44"
     },
     {
-      "text_id": 135,
+      "text_id": 134,
       "grp_id": 9,
       "lhs": "ps",
       "df": null,
@@ -4249,7 +4246,7 @@
       "rhs": ".02"
     },
     {
-      "text_id": 135,
+      "text_id": 134,
       "grp_id": 9,
       "lhs": "t",
       "df": "(174)",
@@ -4257,7 +4254,7 @@
       "rhs": "2.05"
     },
     {
-      "text_id": 135,
+      "text_id": 134,
       "grp_id": 9,
       "lhs": "p",
       "df": null,
@@ -4265,7 +4262,7 @@
       "rhs": ".38"
     },
     {
-      "text_id": 135,
+      "text_id": 134,
       "grp_id": 9,
       "lhs": "t",
       "df": "(174)",
@@ -4273,7 +4270,7 @@
       "rhs": "1.621"
     },
     {
-      "text_id": 135,
+      "text_id": 134,
       "grp_id": 9,
       "lhs": "p",
       "df": null,
@@ -4281,7 +4278,7 @@
       "rhs": ".662"
     },
     {
-      "text_id": 135,
+      "text_id": 134,
       "grp_id": 9,
       "lhs": "t",
       "df": "(174)",
@@ -4289,7 +4286,7 @@
       "rhs": "-1.897"
     },
     {
-      "text_id": 135,
+      "text_id": 134,
       "grp_id": 9,
       "lhs": "p",
       "df": null,
@@ -4297,7 +4294,7 @@
       "rhs": ".48"
     },
     {
-      "text_id": 136,
+      "text_id": 135,
       "grp_id": 10,
       "lhs": "M",
       "df": null,
@@ -4305,7 +4302,7 @@
       "rhs": "23.6"
     },
     {
-      "text_id": 136,
+      "text_id": 135,
       "grp_id": 10,
       "lhs": "95% CI",
       "df": null,
@@ -4313,7 +4310,7 @@
       "rhs": "[18.9, 28.3]"
     },
     {
-      "text_id": 136,
+      "text_id": 135,
       "grp_id": 10,
       "lhs": "M",
       "df": null,
@@ -4321,7 +4318,7 @@
       "rhs": "73.1"
     },
     {
-      "text_id": 136,
+      "text_id": 135,
       "grp_id": 10,
       "lhs": "95% CI",
       "df": null,
@@ -4329,7 +4326,7 @@
       "rhs": "[68.4, 77.8]"
     },
     {
-      "text_id": 140,
+      "text_id": 139,
       "grp_id": 11,
       "lhs": "F",
       "df": "(6, 174)",
@@ -4337,7 +4334,7 @@
       "rhs": "2.985"
     },
     {
-      "text_id": 140,
+      "text_id": 139,
       "grp_id": 11,
       "lhs": "p",
       "df": null,
@@ -4345,7 +4342,7 @@
       "rhs": ".008"
     },
     {
-      "text_id": 140,
+      "text_id": 139,
       "grp_id": 11,
       "lhs": "f",
       "df": null,
@@ -4353,7 +4350,7 @@
       "rhs": "0.32"
     },
     {
-      "text_id": 140,
+      "text_id": 139,
       "grp_id": 11,
       "lhs": "F",
       "df": "(3, 87)",
@@ -4361,7 +4358,7 @@
       "rhs": "6.02"
     },
     {
-      "text_id": 140,
+      "text_id": 139,
       "grp_id": 11,
       "lhs": "p",
       "df": null,
@@ -4369,7 +4366,7 @@
       "rhs": ".001"
     },
     {
-      "text_id": 140,
+      "text_id": 139,
       "grp_id": 11,
       "lhs": "f",
       "df": null,
@@ -4377,7 +4374,7 @@
       "rhs": "0.46"
     },
     {
-      "text_id": 140,
+      "text_id": 139,
       "grp_id": 11,
       "lhs": "F",
       "df": "(18, 522)",
@@ -4385,7 +4382,7 @@
       "rhs": "0.747"
     },
     {
-      "text_id": 140,
+      "text_id": 139,
       "grp_id": 11,
       "lhs": "p",
       "df": null,
@@ -4393,7 +4390,7 @@
       "rhs": ".763"
     },
     {
-      "text_id": 140,
+      "text_id": 139,
       "grp_id": 11,
       "lhs": "f",
       "df": null,
@@ -4401,7 +4398,7 @@
       "rhs": "0.16"
     },
     {
-      "text_id": 142,
+      "text_id": 141,
       "grp_id": 12,
       "lhs": "F",
       "df": "(1, 58)",
@@ -4409,7 +4406,7 @@
       "rhs": "1.597"
     },
     {
-      "text_id": 142,
+      "text_id": 141,
       "grp_id": 12,
       "lhs": "p",
       "df": null,
@@ -4417,7 +4414,7 @@
       "rhs": ".21"
     },
     {
-      "text_id": 142,
+      "text_id": 141,
       "grp_id": 12,
       "lhs": "f",
       "df": null,
@@ -4425,7 +4422,7 @@
       "rhs": "0.17"
     },
     {
-      "text_id": 142,
+      "text_id": 141,
       "grp_id": 12,
       "lhs": "F",
       "df": "(1, 58)",
@@ -4433,7 +4430,7 @@
       "rhs": "43.54"
     },
     {
-      "text_id": 142,
+      "text_id": 141,
       "grp_id": 12,
       "lhs": "p",
       "df": null,
@@ -4441,7 +4438,7 @@
       "rhs": ".001"
     },
     {
-      "text_id": 142,
+      "text_id": 141,
       "grp_id": 12,
       "lhs": "f",
       "df": null,
@@ -4449,7 +4446,7 @@
       "rhs": "0.87"
     },
     {
-      "text_id": 142,
+      "text_id": 141,
       "grp_id": 12,
       "lhs": "F",
       "df": "(1, 58)",
@@ -4457,7 +4454,7 @@
       "rhs": "4.71"
     },
     {
-      "text_id": 142,
+      "text_id": 141,
       "grp_id": 12,
       "lhs": "p",
       "df": null,
@@ -4465,7 +4462,7 @@
       "rhs": ".034"
     },
     {
-      "text_id": 142,
+      "text_id": 141,
       "grp_id": 12,
       "lhs": "f",
       "df": null,
@@ -4473,7 +4470,7 @@
       "rhs": "0.28"
     },
     {
-      "text_id": 144,
+      "text_id": 143,
       "grp_id": 13,
       "lhs": "t",
       "df": "(72)",
@@ -4481,7 +4478,7 @@
       "rhs": "1.91"
     },
     {
-      "text_id": 144,
+      "text_id": 143,
       "grp_id": 13,
       "lhs": "p",
       "df": null,
@@ -4489,7 +4486,7 @@
       "rhs": ".23"
     },
     {
-      "text_id": 144,
+      "text_id": 143,
       "grp_id": 13,
       "lhs": "t",
       "df": "(72)",
@@ -4497,7 +4494,7 @@
       "rhs": "0.479"
     },
     {
-      "text_id": 144,
+      "text_id": 143,
       "grp_id": 13,
       "lhs": "p",
       "df": null,
@@ -4505,7 +4502,7 @@
       "rhs": ".96"
     },
     {
-      "text_id": 147,
+      "text_id": 146,
       "grp_id": 14,
       "lhs": "F",
       "df": "(4, 116)",
@@ -4513,7 +4510,7 @@
       "rhs": "102.60"
     },
     {
-      "text_id": 147,
+      "text_id": 146,
       "grp_id": 14,
       "lhs": "p",
       "df": null,
@@ -4521,7 +4518,7 @@
       "rhs": ".001"
     },
     {
-      "text_id": 147,
+      "text_id": 146,
       "grp_id": 14,
       "lhs": "f",
       "df": null,
@@ -4529,7 +4526,7 @@
       "rhs": "1.88"
     },
     {
-      "text_id": 147,
+      "text_id": 146,
       "grp_id": 14,
       "lhs": "F",
       "df": "(3, 87)",
@@ -4537,7 +4534,7 @@
       "rhs": "194.3"
     },
     {
-      "text_id": 147,
+      "text_id": 146,
       "grp_id": 14,
       "lhs": "p",
       "df": null,
@@ -4545,7 +4542,7 @@
       "rhs": ".001"
     },
     {
-      "text_id": 147,
+      "text_id": 146,
       "grp_id": 14,
       "lhs": "f",
       "df": null,
@@ -4553,7 +4550,7 @@
       "rhs": "2.59"
     },
     {
-      "text_id": 147,
+      "text_id": 146,
       "grp_id": 14,
       "lhs": "F",
       "df": "(2, 58)",
@@ -4561,7 +4558,7 @@
       "rhs": "15.32"
     },
     {
-      "text_id": 147,
+      "text_id": 146,
       "grp_id": 14,
       "lhs": "p",
       "df": null,
@@ -4569,7 +4566,7 @@
       "rhs": ".001"
     },
     {
-      "text_id": 147,
+      "text_id": 146,
       "grp_id": 14,
       "lhs": "f",
       "df": null,
@@ -4577,7 +4574,7 @@
       "rhs": "0.73"
     },
     {
-      "text_id": 147,
+      "text_id": 146,
       "grp_id": 14,
       "lhs": "F",
       "df": "(12, 348)",
@@ -4585,7 +4582,7 @@
       "rhs": "6.28"
     },
     {
-      "text_id": 147,
+      "text_id": 146,
       "grp_id": 14,
       "lhs": "p",
       "df": null,
@@ -4593,7 +4590,7 @@
       "rhs": ".001"
     },
     {
-      "text_id": 147,
+      "text_id": 146,
       "grp_id": 14,
       "lhs": "f",
       "df": null,
@@ -4601,7 +4598,7 @@
       "rhs": "0.47"
     },
     {
-      "text_id": 147,
+      "text_id": 146,
       "grp_id": 14,
       "lhs": "F",
       "df": "(8, 232)",
@@ -4609,7 +4606,7 @@
       "rhs": "6.54"
     },
     {
-      "text_id": 147,
+      "text_id": 146,
       "grp_id": 14,
       "lhs": "p",
       "df": null,
@@ -4617,7 +4614,7 @@
       "rhs": ".001"
     },
     {
-      "text_id": 147,
+      "text_id": 146,
       "grp_id": 14,
       "lhs": "f",
       "df": null,
@@ -4625,7 +4622,7 @@
       "rhs": "0.47"
     },
     {
-      "text_id": 147,
+      "text_id": 146,
       "grp_id": 14,
       "lhs": "F",
       "df": "(6, 174)",
@@ -4633,7 +4630,7 @@
       "rhs": "4.824"
     },
     {
-      "text_id": 147,
+      "text_id": 146,
       "grp_id": 14,
       "lhs": "p",
       "df": null,
@@ -4641,7 +4638,7 @@
       "rhs": ".001"
     },
     {
-      "text_id": 147,
+      "text_id": 146,
       "grp_id": 14,
       "lhs": "f",
       "df": null,
@@ -4649,7 +4646,7 @@
       "rhs": "0.41"
     },
     {
-      "text_id": 147,
+      "text_id": 146,
       "grp_id": 14,
       "lhs": "F",
       "df": "(24, 696)",
@@ -4657,7 +4654,7 @@
       "rhs": "3.575"
     },
     {
-      "text_id": 147,
+      "text_id": 146,
       "grp_id": 14,
       "lhs": "p",
       "df": null,
@@ -4665,7 +4662,7 @@
       "rhs": ".001"
     },
     {
-      "text_id": 147,
+      "text_id": 146,
       "grp_id": 14,
       "lhs": "f",
       "df": null,
@@ -4673,7 +4670,7 @@
       "rhs": "0.35"
     },
     {
-      "text_id": 149,
+      "text_id": 148,
       "grp_id": 15,
       "lhs": "ps",
       "df": null,
@@ -4681,7 +4678,7 @@
       "rhs": ".001"
     },
     {
-      "text_id": 149,
+      "text_id": 148,
       "grp_id": 15,
       "lhs": "t",
       "df": "(116)",
@@ -4689,7 +4686,7 @@
       "rhs": "-1.18"
     },
     {
-      "text_id": 149,
+      "text_id": 148,
       "grp_id": 15,
       "lhs": "p",
       "df": null,
@@ -4697,7 +4694,7 @@
       "rhs": ".80"
     },
     {
-      "text_id": 149,
+      "text_id": 148,
       "grp_id": 15,
       "lhs": "t",
       "df": "(116)",
@@ -4705,7 +4702,7 @@
       "rhs": "1.258"
     },
     {
-      "text_id": 149,
+      "text_id": 148,
       "grp_id": 15,
       "lhs": "p",
       "df": null,
@@ -4713,7 +4710,7 @@
       "rhs": ".717"
     },
     {
-      "text_id": 150,
+      "text_id": 149,
       "grp_id": 16,
       "lhs": "M",
       "df": null,
@@ -4721,7 +4718,7 @@
       "rhs": "33.2"
     },
     {
-      "text_id": 150,
+      "text_id": 149,
       "grp_id": 16,
       "lhs": "95% CI",
       "df": null,
@@ -4729,7 +4726,7 @@
       "rhs": "[29.8, 36.5]"
     },
     {
-      "text_id": 150,
+      "text_id": 149,
       "grp_id": 16,
       "lhs": "M",
       "df": null,
@@ -4737,7 +4734,7 @@
       "rhs": "73.5"
     },
     {
-      "text_id": 150,
+      "text_id": 149,
       "grp_id": 16,
       "lhs": "95% CI",
       "df": null,
@@ -4745,7 +4742,7 @@
       "rhs": "[70.2, 76.9]"
     },
     {
-      "text_id": 152,
+      "text_id": 151,
       "grp_id": 17,
       "lhs": "M",
       "df": null,
@@ -4753,7 +4750,7 @@
       "rhs": "57.8"
     },
     {
-      "text_id": 152,
+      "text_id": 151,
       "grp_id": 17,
       "lhs": "95% CI",
       "df": null,
@@ -4761,7 +4758,7 @@
       "rhs": "[54.8, 60.8]"
     },
     {
-      "text_id": 152,
+      "text_id": 151,
       "grp_id": 17,
       "lhs": "M",
       "df": null,
@@ -4769,7 +4766,7 @@
       "rhs": "50.6"
     },
     {
-      "text_id": 152,
+      "text_id": 151,
       "grp_id": 17,
       "lhs": "95% CI",
       "df": null,
@@ -4777,7 +4774,7 @@
       "rhs": "[47.5, 53.6]"
     },
     {
-      "text_id": 152,
+      "text_id": 151,
       "grp_id": 17,
       "lhs": "M",
       "df": null,
@@ -4785,7 +4782,7 @@
       "rhs": "50.4"
     },
     {
-      "text_id": 152,
+      "text_id": 151,
       "grp_id": 17,
       "lhs": "95% CI",
       "df": null,
@@ -4793,7 +4790,7 @@
       "rhs": "[47.4, 53.5]"
     },
     {
-      "text_id": 154,
+      "text_id": 153,
       "grp_id": 18,
       "lhs": "F",
       "df": "(4, 116)",
@@ -4801,7 +4798,7 @@
       "rhs": "21.17"
     },
     {
-      "text_id": 154,
+      "text_id": 153,
       "grp_id": 18,
       "lhs": "f",
       "df": null,
@@ -4809,7 +4806,7 @@
       "rhs": "0.87"
     },
     {
-      "text_id": 154,
+      "text_id": 153,
       "grp_id": 18,
       "lhs": "F",
       "df": "(3, 87)",
@@ -4817,7 +4814,7 @@
       "rhs": "15.73"
     },
     {
-      "text_id": 154,
+      "text_id": 153,
       "grp_id": 18,
       "lhs": "p",
       "df": null,
@@ -4825,7 +4822,7 @@
       "rhs": ".001"
     },
     {
-      "text_id": 154,
+      "text_id": 153,
       "grp_id": 18,
       "lhs": "f",
       "df": null,
@@ -4833,7 +4830,7 @@
       "rhs": "0.74"
     },
     {
-      "text_id": 154,
+      "text_id": 153,
       "grp_id": 18,
       "lhs": "F",
       "df": "(2, 58)",
@@ -4841,7 +4838,7 @@
       "rhs": "5.29"
     },
     {
-      "text_id": 154,
+      "text_id": 153,
       "grp_id": 18,
       "lhs": "p",
       "df": null,
@@ -4849,7 +4846,7 @@
       "rhs": ".008"
     },
     {
-      "text_id": 154,
+      "text_id": 153,
       "grp_id": 18,
       "lhs": "f",
       "df": null,
@@ -4857,7 +4854,7 @@
       "rhs": "0.43"
     },
     {
-      "text_id": 154,
+      "text_id": 153,
       "grp_id": 18,
       "lhs": "F",
       "df": "(12, 348)",
@@ -4865,7 +4862,7 @@
       "rhs": "2.046"
     },
     {
-      "text_id": 154,
+      "text_id": 153,
       "grp_id": 18,
       "lhs": "p",
       "df": null,
@@ -4873,7 +4870,7 @@
       "rhs": ".012"
     },
     {
-      "text_id": 154,
+      "text_id": 153,
       "grp_id": 18,
       "lhs": "f",
       "df": null,
@@ -4881,7 +4878,7 @@
       "rhs": "0.27"
     },
     {
-      "text_id": 154,
+      "text_id": 153,
       "grp_id": 18,
       "lhs": "F",
       "df": "(8, 232)",
@@ -4889,7 +4886,7 @@
       "rhs": "1.232"
     },
     {
-      "text_id": 154,
+      "text_id": 153,
       "grp_id": 18,
       "lhs": "p",
       "df": null,
@@ -4897,7 +4894,7 @@
       "rhs": ".281"
     },
     {
-      "text_id": 154,
+      "text_id": 153,
       "grp_id": 18,
       "lhs": "f",
       "df": null,
@@ -4905,7 +4902,7 @@
       "rhs": "0.21"
     },
     {
-      "text_id": 154,
+      "text_id": 153,
       "grp_id": 18,
       "lhs": "F",
       "df": "(6, 174)",
@@ -4913,7 +4910,7 @@
       "rhs": "0.456"
     },
     {
-      "text_id": 154,
+      "text_id": 153,
       "grp_id": 18,
       "lhs": "p",
       "df": null,
@@ -4921,7 +4918,7 @@
       "rhs": ".84"
     },
     {
-      "text_id": 154,
+      "text_id": 153,
       "grp_id": 18,
       "lhs": "f",
       "df": null,
@@ -4929,7 +4926,7 @@
       "rhs": "0.13"
     },
     {
-      "text_id": 154,
+      "text_id": 153,
       "grp_id": 18,
       "lhs": "F",
       "df": "(24, 696)",
@@ -4937,7 +4934,7 @@
       "rhs": "1.357"
     },
     {
-      "text_id": 154,
+      "text_id": 153,
       "grp_id": 18,
       "lhs": "p",
       "df": null,
@@ -4945,7 +4942,7 @@
       "rhs": ".12"
     },
     {
-      "text_id": 154,
+      "text_id": 153,
       "grp_id": 18,
       "lhs": "f",
       "df": null,
@@ -4953,7 +4950,7 @@
       "rhs": "0.22"
     },
     {
-      "text_id": 155,
+      "text_id": 154,
       "grp_id": 19,
       "lhs": "t",
       "df": "(116)",
@@ -4961,7 +4958,7 @@
       "rhs": "-1.417"
     },
     {
-      "text_id": 155,
+      "text_id": 154,
       "grp_id": 19,
       "lhs": "p",
       "df": null,
@@ -4969,7 +4966,7 @@
       "rhs": ".62"
     },
     {
-      "text_id": 155,
+      "text_id": 154,
       "grp_id": 19,
       "lhs": "M",
       "df": null,
@@ -4977,7 +4974,7 @@
       "rhs": "970"
     },
     {
-      "text_id": 155,
+      "text_id": 154,
       "grp_id": 19,
       "lhs": "SE",
       "df": null,
@@ -4985,7 +4982,7 @@
       "rhs": "30.60"
     },
     {
-      "text_id": 155,
+      "text_id": 154,
       "grp_id": 19,
       "lhs": "95% CI",
       "df": null,
@@ -4993,7 +4990,7 @@
       "rhs": "[907, 1,032]"
     },
     {
-      "text_id": 155,
+      "text_id": 154,
       "grp_id": 19,
       "lhs": "M",
       "df": null,
@@ -5001,7 +4998,7 @@
       "rhs": "1,015"
     },
     {
-      "text_id": 155,
+      "text_id": 154,
       "grp_id": 19,
       "lhs": "SE",
       "df": null,
@@ -5009,7 +5006,7 @@
       "rhs": "30.6"
     },
     {
-      "text_id": 155,
+      "text_id": 154,
       "grp_id": 19,
       "lhs": "95% CI",
       "df": null,
@@ -5017,7 +5014,7 @@
       "rhs": "[953, 1,077]"
     },
     {
-      "text_id": 155,
+      "text_id": 154,
       "grp_id": 19,
       "lhs": "M",
       "df": null,
@@ -5025,7 +5022,7 @@
       "rhs": "1,004"
     },
     {
-      "text_id": 155,
+      "text_id": 154,
       "grp_id": 19,
       "lhs": "SE",
       "df": null,
@@ -5033,7 +5030,7 @@
       "rhs": "30.6"
     },
     {
-      "text_id": 155,
+      "text_id": 154,
       "grp_id": 19,
       "lhs": "95% CI",
       "df": null,
@@ -5041,7 +5038,7 @@
       "rhs": "942"
     },
     {
-      "text_id": 157,
+      "text_id": 156,
       "grp_id": 20,
       "lhs": "F",
       "df": "(4, 116)",
@@ -5049,7 +5046,7 @@
       "rhs": "91.49"
     },
     {
-      "text_id": 157,
+      "text_id": 156,
       "grp_id": 20,
       "lhs": "p",
       "df": null,
@@ -5057,7 +5054,7 @@
       "rhs": ".001"
     },
     {
-      "text_id": 157,
+      "text_id": 156,
       "grp_id": 20,
       "lhs": "f",
       "df": null,
@@ -5065,7 +5062,7 @@
       "rhs": "1.78"
     },
     {
-      "text_id": 157,
+      "text_id": 156,
       "grp_id": 20,
       "lhs": "F",
       "df": "(3, 87)",
@@ -5073,7 +5070,7 @@
       "rhs": "249.0"
     },
     {
-      "text_id": 157,
+      "text_id": 156,
       "grp_id": 20,
       "lhs": "p",
       "df": null,
@@ -5081,7 +5078,7 @@
       "rhs": ".001"
     },
     {
-      "text_id": 157,
+      "text_id": 156,
       "grp_id": 20,
       "lhs": "f",
       "df": null,
@@ -5089,7 +5086,7 @@
       "rhs": "2.93"
     },
     {
-      "text_id": 157,
+      "text_id": 156,
       "grp_id": 20,
       "lhs": "F",
       "df": "(12, 348)",
@@ -5097,7 +5094,7 @@
       "rhs": "6.159"
     },
     {
-      "text_id": 157,
+      "text_id": 156,
       "grp_id": 20,
       "lhs": "p",
       "df": null,
@@ -5105,7 +5102,7 @@
       "rhs": ".001"
     },
     {
-      "text_id": 157,
+      "text_id": 156,
       "grp_id": 20,
       "lhs": "f",
       "df": null,
@@ -5113,7 +5110,7 @@
       "rhs": "0.46"
     },
     {
-      "text_id": 159,
+      "text_id": 158,
       "grp_id": 21,
       "lhs": "ps",
       "df": null,
@@ -5121,7 +5118,7 @@
       "rhs": ".04"
     },
     {
-      "text_id": 159,
+      "text_id": 158,
       "grp_id": 21,
       "lhs": "t",
       "df": "(116)",
@@ -5129,7 +5126,7 @@
       "rhs": "1.167"
     },
     {
-      "text_id": 159,
+      "text_id": 158,
       "grp_id": 21,
       "lhs": "p",
       "df": null,
@@ -5137,7 +5134,7 @@
       "rhs": ".77"
     },
     {
-      "text_id": 159,
+      "text_id": 158,
       "grp_id": 21,
       "lhs": "t",
       "df": "(116)",
@@ -5145,7 +5142,7 @@
       "rhs": "1.357"
     },
     {
-      "text_id": 159,
+      "text_id": 158,
       "grp_id": 21,
       "lhs": "p",
       "df": null,
@@ -5153,7 +5150,7 @@
       "rhs": ".65"
     },
     {
-      "text_id": 159,
+      "text_id": 158,
       "grp_id": 21,
       "lhs": "t",
       "df": "(116)",
@@ -5161,7 +5158,7 @@
       "rhs": "-1.479"
     },
     {
-      "text_id": 159,
+      "text_id": 158,
       "grp_id": 21,
       "lhs": "p",
       "df": null,
@@ -5169,7 +5166,7 @@
       "rhs": ".578"
     },
     {
-      "text_id": 160,
+      "text_id": 159,
       "grp_id": 22,
       "lhs": "M",
       "df": null,
@@ -5177,7 +5174,7 @@
       "rhs": "30.60"
     },
     {
-      "text_id": 160,
+      "text_id": 159,
       "grp_id": 22,
       "lhs": "95% CI",
       "df": null,
@@ -5185,7 +5182,7 @@
       "rhs": "[26.6, 36.6]"
     },
     {
-      "text_id": 160,
+      "text_id": 159,
       "grp_id": 22,
       "lhs": "M",
       "df": null,
@@ -5193,7 +5190,7 @@
       "rhs": "73.4"
     },
     {
-      "text_id": 160,
+      "text_id": 159,
       "grp_id": 22,
       "lhs": "95% CI",
       "df": null,
@@ -5201,7 +5198,7 @@
       "rhs": "[69.3, 77.4]"
     },
     {
-      "text_id": 164,
+      "text_id": 163,
       "grp_id": 23,
       "lhs": "F",
       "df": "(4, 116)",
@@ -5209,7 +5206,7 @@
       "rhs": "16.45"
     },
     {
-      "text_id": 164,
+      "text_id": 163,
       "grp_id": 23,
       "lhs": "p",
       "df": null,
@@ -5217,7 +5214,7 @@
       "rhs": ".001"
     },
     {
-      "text_id": 164,
+      "text_id": 163,
       "grp_id": 23,
       "lhs": "f",
       "df": null,
@@ -5225,7 +5222,7 @@
       "rhs": "0.75"
     },
     {
-      "text_id": 164,
+      "text_id": 163,
       "grp_id": 23,
       "lhs": "F",
       "df": "(3, 87)",
@@ -5233,7 +5230,7 @@
       "rhs": "1.752"
     },
     {
-      "text_id": 164,
+      "text_id": 163,
       "grp_id": 23,
       "lhs": "p",
       "df": null,
@@ -5241,7 +5238,7 @@
       "rhs": ".16"
     },
     {
-      "text_id": 164,
+      "text_id": 163,
       "grp_id": 23,
       "lhs": "f",
       "df": null,
@@ -5249,7 +5246,7 @@
       "rhs": "0.25"
     },
     {
-      "text_id": 164,
+      "text_id": 163,
       "grp_id": 23,
       "lhs": "F",
       "df": "(12, 348)",
@@ -5257,7 +5254,7 @@
       "rhs": "1.421"
     },
     {
-      "text_id": 164,
+      "text_id": 163,
       "grp_id": 23,
       "lhs": "p",
       "df": null,
@@ -5265,7 +5262,7 @@
       "rhs": ".154"
     },
     {
-      "text_id": 164,
+      "text_id": 163,
       "grp_id": 23,
       "lhs": "f",
       "df": null,
@@ -5273,7 +5270,7 @@
       "rhs": "0.22"
     },
     {
-      "text_id": 191,
+      "text_id": 190,
       "grp_id": 24,
       "lhs": "F",
       "df": "(2, 58)",
@@ -5281,7 +5278,7 @@
       "rhs": "517.05"
     },
     {
-      "text_id": 191,
+      "text_id": 190,
       "grp_id": 24,
       "lhs": "p",
       "df": null,
@@ -5289,7 +5286,7 @@
       "rhs": ".001"
     },
     {
-      "text_id": 191,
+      "text_id": 190,
       "grp_id": 24,
       "lhs": "f",
       "df": null,
@@ -5297,7 +5294,7 @@
       "rhs": "4.22"
     },
     {
-      "text_id": 191,
+      "text_id": 190,
       "grp_id": 24,
       "lhs": "F",
       "df": "(2, 58)",
@@ -5305,7 +5302,7 @@
       "rhs": "3.09"
     },
     {
-      "text_id": 191,
+      "text_id": 190,
       "grp_id": 24,
       "lhs": "p",
       "df": null,
@@ -5313,7 +5310,7 @@
       "rhs": ".053"
     },
     {
-      "text_id": 191,
+      "text_id": 190,
       "grp_id": 24,
       "lhs": "f",
       "df": null,
@@ -5321,7 +5318,7 @@
       "rhs": "0.33"
     },
     {
-      "text_id": 191,
+      "text_id": 190,
       "grp_id": 24,
       "lhs": "F",
       "df": "(4, 116)",
@@ -5329,7 +5326,7 @@
       "rhs": "6.70"
     },
     {
-      "text_id": 191,
+      "text_id": 190,
       "grp_id": 24,
       "lhs": "p",
       "df": null,
@@ -5337,7 +5334,7 @@
       "rhs": ".001"
     },
     {
-      "text_id": 191,
+      "text_id": 190,
       "grp_id": 24,
       "lhs": "f",
       "df": null,
@@ -5345,7 +5342,7 @@
       "rhs": "0.48"
     },
     {
-      "text_id": 192,
+      "text_id": 191,
       "grp_id": 25,
       "lhs": "t",
       "df": "(58)",
@@ -5353,7 +5350,7 @@
       "rhs": "28.64"
     },
     {
-      "text_id": 192,
+      "text_id": 191,
       "grp_id": 25,
       "lhs": "p",
       "df": null,
@@ -5361,7 +5358,7 @@
       "rhs": ".001"
     },
     {
-      "text_id": 192,
+      "text_id": 191,
       "grp_id": 25,
       "lhs": "t",
       "df": "(58)",
@@ -5369,7 +5366,7 @@
       "rhs": "-26.98"
     },
     {
-      "text_id": 192,
+      "text_id": 191,
       "grp_id": 25,
       "lhs": "p",
       "df": null,
@@ -5377,7 +5374,7 @@
       "rhs": ".001"
     },
     {
-      "text_id": 192,
+      "text_id": 191,
       "grp_id": 25,
       "lhs": "t",
       "df": "(58)",
@@ -5385,7 +5382,7 @@
       "rhs": "1.67"
     },
     {
-      "text_id": 192,
+      "text_id": 191,
       "grp_id": 25,
       "lhs": "p",
       "df": null,
@@ -5393,7 +5390,7 @@
       "rhs": ".23"
     },
     {
-      "text_id": 193,
+      "text_id": 192,
       "grp_id": 26,
       "lhs": "β",
       "df": null,
@@ -5401,7 +5398,7 @@
       "rhs": "-2.14"
     },
     {
-      "text_id": 193,
+      "text_id": 192,
       "grp_id": 26,
       "lhs": "95% CI",
       "df": null,
@@ -5409,7 +5406,7 @@
       "rhs": "[-3.24, -1.04]"
     },
     {
-      "text_id": 193,
+      "text_id": 192,
       "grp_id": 26,
       "lhs": "β",
       "df": null,
@@ -5417,7 +5414,7 @@
       "rhs": "0.76"
     },
     {
-      "text_id": 193,
+      "text_id": 192,
       "grp_id": 26,
       "lhs": "95% CI",
       "df": null,
@@ -5425,7 +5422,7 @@
       "rhs": "[-0.34, 1.86]"
     },
     {
-      "text_id": 193,
+      "text_id": 192,
       "grp_id": 26,
       "lhs": "β",
       "df": null,
@@ -5433,7 +5430,7 @@
       "rhs": "-0.58"
     },
     {
-      "text_id": 193,
+      "text_id": 192,
       "grp_id": 26,
       "lhs": "95% CI",
       "df": null,
@@ -5441,7 +5438,7 @@
       "rhs": "[-1.68, 0.52]"
     },
     {
-      "text_id": 197,
+      "text_id": 196,
       "grp_id": 27,
       "lhs": "F",
       "df": "(2, 58)",
@@ -5449,7 +5446,7 @@
       "rhs": "104.0"
     },
     {
-      "text_id": 197,
+      "text_id": 196,
       "grp_id": 27,
       "lhs": "p",
       "df": null,
@@ -5457,7 +5454,7 @@
       "rhs": ".001"
     },
     {
-      "text_id": 197,
+      "text_id": 196,
       "grp_id": 27,
       "lhs": "f",
       "df": null,
@@ -5465,7 +5462,7 @@
       "rhs": "1.89"
     },
     {
-      "text_id": 197,
+      "text_id": 196,
       "grp_id": 27,
       "lhs": "F",
       "df": "(2, 58)",
@@ -5473,7 +5470,7 @@
       "rhs": "0.02"
     },
     {
-      "text_id": 197,
+      "text_id": 196,
       "grp_id": 27,
       "lhs": "p",
       "df": null,
@@ -5481,7 +5478,7 @@
       "rhs": ".98"
     },
     {
-      "text_id": 197,
+      "text_id": 196,
       "grp_id": 27,
       "lhs": "f",
       "df": null,
@@ -5489,7 +5486,7 @@
       "rhs": "0.02"
     },
     {
-      "text_id": 197,
+      "text_id": 196,
       "grp_id": 27,
       "lhs": "F",
       "df": "(4, 116)",
@@ -5497,7 +5494,7 @@
       "rhs": "1.81"
     },
     {
-      "text_id": 197,
+      "text_id": 196,
       "grp_id": 27,
       "lhs": "p",
       "df": null,
@@ -5505,7 +5502,7 @@
       "rhs": ".13"
     },
     {
-      "text_id": 197,
+      "text_id": 196,
       "grp_id": 27,
       "lhs": "f",
       "df": null,
@@ -5513,7 +5510,7 @@
       "rhs": "0.25"
     },
     {
-      "text_id": 198,
+      "text_id": 197,
       "grp_id": 28,
       "lhs": "t",
       "df": "(58)",
@@ -5521,7 +5518,7 @@
       "rhs": "-9.97"
     },
     {
-      "text_id": 198,
+      "text_id": 197,
       "grp_id": 28,
       "lhs": "p",
       "df": null,
@@ -5529,7 +5526,7 @@
       "rhs": ".001"
     },
     {
-      "text_id": 198,
+      "text_id": 197,
       "grp_id": 28,
       "lhs": "t",
       "df": "(58)",
@@ -5537,7 +5534,7 @@
       "rhs": "-4.04"
     },
     {
-      "text_id": 198,
+      "text_id": 197,
       "grp_id": 28,
       "lhs": "p",
       "df": null,
@@ -5545,7 +5542,7 @@
       "rhs": ".001"
     },
     {
-      "text_id": 216,
+      "text_id": 214,
       "grp_id": 29,
       "lhs": "F",
       "df": "(6, 174)",
@@ -5553,7 +5550,7 @@
       "rhs": "16.78"
     },
     {
-      "text_id": 216,
+      "text_id": 214,
       "grp_id": 29,
       "lhs": "p",
       "df": null,
@@ -5561,7 +5558,7 @@
       "rhs": ".001"
     },
     {
-      "text_id": 216,
+      "text_id": 214,
       "grp_id": 29,
       "lhs": "f",
       "df": null,
@@ -5569,7 +5566,7 @@
       "rhs": "0.76"
     },
     {
-      "text_id": 216,
+      "text_id": 214,
       "grp_id": 29,
       "lhs": "F",
       "df": "(3, 87)",
@@ -5577,7 +5574,7 @@
       "rhs": "7.04"
     },
     {
-      "text_id": 216,
+      "text_id": 214,
       "grp_id": 29,
       "lhs": "p",
       "df": null,
@@ -5585,7 +5582,7 @@
       "rhs": ".001"
     },
     {
-      "text_id": 216,
+      "text_id": 214,
       "grp_id": 29,
       "lhs": "f",
       "df": null,
@@ -5593,7 +5590,7 @@
       "rhs": "0.49"
     },
     {
-      "text_id": 216,
+      "text_id": 214,
       "grp_id": 29,
       "lhs": "F",
       "df": "(18, 522)",
@@ -5601,7 +5598,7 @@
       "rhs": "3.127"
     },
     {
-      "text_id": 216,
+      "text_id": 214,
       "grp_id": 29,
       "lhs": "p",
       "df": null,
@@ -5609,7 +5606,7 @@
       "rhs": ".001"
     },
     {
-      "text_id": 216,
+      "text_id": 214,
       "grp_id": 29,
       "lhs": "f",
       "df": null,
@@ -5617,7 +5614,7 @@
       "rhs": "0.33"
     },
     {
-      "text_id": 218,
+      "text_id": 216,
       "grp_id": 30,
       "lhs": "ps",
       "df": null,
@@ -5625,7 +5622,7 @@
       "rhs": ".03"
     },
     {
-      "text_id": 218,
+      "text_id": 216,
       "grp_id": 30,
       "lhs": "t",
       "df": "(174)",
@@ -5633,7 +5630,7 @@
       "rhs": "2.622"
     },
     {
-      "text_id": 218,
+      "text_id": 216,
       "grp_id": 30,
       "lhs": "p",
       "df": null,
@@ -5641,7 +5638,7 @@
       "rhs": ".13"
     },
     {
-      "text_id": 218,
+      "text_id": 216,
       "grp_id": 30,
       "lhs": "t",
       "df": "(174)",
@@ -5649,7 +5646,7 @@
       "rhs": "-0.558"
     },
     {
-      "text_id": 218,
+      "text_id": 216,
       "grp_id": 30,
       "lhs": "p",
       "df": null,
@@ -5657,7 +5654,7 @@
       "rhs": ".99"
     },
     {
-      "text_id": 219,
+      "text_id": 217,
       "grp_id": 31,
       "lhs": "M",
       "df": null,
@@ -5665,7 +5662,7 @@
       "rhs": "21.2"
     },
     {
-      "text_id": 219,
+      "text_id": 217,
       "grp_id": 31,
       "lhs": "95% CI",
       "df": null,
@@ -5673,7 +5670,7 @@
       "rhs": "[15.0, 27.5]"
     },
     {
-      "text_id": 221,
+      "text_id": 219,
       "grp_id": 32,
       "lhs": "F",
       "df": "(6, 174)",
@@ -5681,7 +5678,7 @@
       "rhs": "16.78"
     },
     {
-      "text_id": 221,
+      "text_id": 219,
       "grp_id": 32,
       "lhs": "p",
       "df": null,
@@ -5689,7 +5686,7 @@
       "rhs": ".001"
     },
     {
-      "text_id": 221,
+      "text_id": 219,
       "grp_id": 32,
       "lhs": "f",
       "df": null,
@@ -5697,7 +5694,7 @@
       "rhs": "0.76"
     },
     {
-      "text_id": 221,
+      "text_id": 219,
       "grp_id": 32,
       "lhs": "F",
       "df": "(3, 87)",
@@ -5705,7 +5702,7 @@
       "rhs": "7.04"
     },
     {
-      "text_id": 221,
+      "text_id": 219,
       "grp_id": 32,
       "lhs": "p",
       "df": null,
@@ -5713,7 +5710,7 @@
       "rhs": ".001"
     },
     {
-      "text_id": 221,
+      "text_id": 219,
       "grp_id": 32,
       "lhs": "f",
       "df": null,
@@ -5721,7 +5718,7 @@
       "rhs": "0.49"
     },
     {
-      "text_id": 221,
+      "text_id": 219,
       "grp_id": 32,
       "lhs": "F",
       "df": "(18, 522)",
@@ -5729,7 +5726,7 @@
       "rhs": "3.127"
     },
     {
-      "text_id": 221,
+      "text_id": 219,
       "grp_id": 32,
       "lhs": "p",
       "df": null,
@@ -5737,7 +5734,7 @@
       "rhs": ".001"
     },
     {
-      "text_id": 221,
+      "text_id": 219,
       "grp_id": 32,
       "lhs": "f",
       "df": null,

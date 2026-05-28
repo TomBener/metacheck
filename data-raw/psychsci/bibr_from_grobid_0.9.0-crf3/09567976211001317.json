@@ -217,7 +217,7 @@
       "paragraph_id": 7,
       "section_id": 2,
       "page_number": null,
-      "formatted": "In the present context, unexpected stimuli elicit a more pronounced ERP-termed \"Nc\"-than expected stimuli in infant EEGs <ref type=\"bibr\" target=\"#b5\">(Kayhan et al., 2019;<\/ref><ref type=\"bibr\" target=\"#b6\">Kopp &amp; Lindenberger, 2011;<\/ref><ref type=\"bibr\" target=\"#b8\">Monroy et al., 2019)<\/ref>."
+      "formatted": "In the present context, unexpected stimuli elicit a more pronounced ERP-termed \"Nc\"-than expected stimuli in infant EEGs <ref type=\"bibr\" target=\"#b5\">(Kayhan et al., 2019;<\/ref> <ref type=\"bibr\" target=\"#b6\">Kopp &amp; Lindenberger, 2011;<\/ref> <ref type=\"bibr\" target=\"#b8\">Monroy et al., 2019)<\/ref>."
     },
     {
       "text": "The Nc, a negative deflection peaking at frontocentral scalp sites roughly 500 ms after stimulus presentation, is likely to have a lowfrequency spectral signature and could thus be interpreted as an oscillation.",
@@ -436,7 +436,7 @@
       "formatted": "In fact, SSVEPs can approach a sinusoidal waveform, depending on physical properties of the stimulation <ref type=\"bibr\" target=\"#b10\">(Norcia et al., 2015)<\/ref>."
     },
     {
-      "text": "However, for the present simulation, the waveform shape is irrelevant because any waveform with a",
+      "text": "However, for the present simulation, the waveform shape is irrelevant because any waveform with a 0 1 0 1 Time (s) Theta Stimulation Alpha Stimulation Amplitude (a.u.) 0 -4 -8 -2 -6 2 4 6 8 Time (s) Time (s) Amplitude (a.u.) 8 4 0 -4 -8 8 4 0 -4 -8 Theta Stimulation + Nc Alpha Stimulation + Nc Visual Evoked Response (Nc) a b Frequency (Hz) 2.5 3.5 4.5 5.5 6.5 7.5 Time (s) Time (s) Power (a.u.) -10 -5 0 5 10 10 -10 Alpha SSVEP +Nc Theta Stimulation Alpha Stimulation Control: Theta Power Power (a.u.) -10 -5 0 5 10 Expected Unexpected Expected Unexpected Theta SSVEP +Nc 5 4 3 2 1 0 0 100 5 4 3 2 1 0 Theta Power Time (s) Time (s) Alpha Power Time (s) 0 1 2 -1 3 4 5 6 0 1 2 -1 3 4 5 6 0 1 2 3 4 5 6 -1 0 1 2 3 4 5 6 -1 + = 3 3.4 3.8 4.2 4.6 2.5 3 3.5 2.5 3 3.5 2.5 3 3.5 We first generated a signal that had the identical temporal structure as the visual stimulation in the 4-Hz theta-stimulation (top left) and 6-Hz alpha-stimulation (bottom left) conditions (\"on\" periods as 1s and \"off\" periods as 0s).",
       "text_id": 48,
       "paragraph_id": 14,
       "section_id": 3,
@@ -444,7 +444,7 @@
       "formatted": null
     },
     {
-      "text": "0 1 0 1 Time (s) Theta Stimulation Alpha Stimulation Amplitude (a.u.)",
+      "text": "This representation is agnostic to whether a \"neural\" signal would be entrained or instead simply track the stimulus rhythm.",
       "text_id": 49,
       "paragraph_id": 15,
       "section_id": 3,
@@ -452,7 +452,7 @@
       "formatted": null
     },
     {
-      "text": "0 -4 -8 -2 -6 2 4 6 8 Time (s) Time (s) Amplitude (a.u.)",
+      "text": "We then simulated a very simple prototype visual evoked response (Nc) modeled after what has previously been observed in infants (middle, where the graph shows waveforms in response to both expected and unexpected stimuli).",
       "text_id": 50,
       "paragraph_id": 15,
       "section_id": 3,
@@ -460,7 +460,7 @@
       "formatted": null
     },
     {
-      "text": "8 4 0 -4 -8 8 4 0 -4 -8 Theta Stimulation + Nc Alpha Stimulation + Nc Visual Evoked Response (Nc) a b Frequency (Hz) 2.5 3.5 4.5 5.5 6.5 7.5 Time (s) Time (s) Power (a.u.) -10 -5 0 5 10 10 -10 Alpha SSVEP +Nc Theta Stimulation Alpha Stimulation Control: Theta Power Power (a.u.) -10 -5 0 5 10 Expected Unexpected Expected Unexpected Theta SSVEP +Nc 5 4 3 2 1 0 0 100 5 4 3 2 1 0 Theta Power Time (s) Time (s) Alpha Power Time (s) 0 1 2 -1 3 4 5 6 0 1 2 -1 3 4 5 6 0 1 2 3 4 5 6 -1 0 1 2 3 4 5 6 -1 + = 3 3.4 3.8 4.2 4.6 2.5 3 3.5 2.5 3 3.5 2.5 3 3.5 We first generated a signal that had the identical temporal structure as the visual stimulation in the 4-Hz theta-stimulation (top left) and 6-Hz alpha-stimulation (bottom left) conditions (\"on\" periods as 1s and \"off\" periods as 0s).",
+      "text": "We assumed a larger response to unexpected than to expected outcomes.",
       "text_id": 51,
       "paragraph_id": 15,
       "section_id": 3,
@@ -468,7 +468,7 @@
       "formatted": null
     },
     {
-      "text": "This representation is agnostic to whether a \"neural\" signal would be entrained or instead simply track the stimulus rhythm.",
+      "text": "We added the two signals together (right).",
       "text_id": 52,
       "paragraph_id": 15,
       "section_id": 3,
@@ -476,7 +476,7 @@
       "formatted": null
     },
     {
-      "text": "We then simulated a very simple prototype visual evoked response (Nc) modeled after what has previously been observed in infants (middle, where the graph shows waveforms in response to both expected and unexpected stimuli).",
+      "text": "This additive model does not assume any modulation of oscillatory power or interaction between the two signals (steady-state visual evoked potential periodicity at x Hz in the time domain will produce a peak at x Hz in the spectral domain.",
       "text_id": 53,
       "paragraph_id": 15,
       "section_id": 3,
@@ -484,7 +484,7 @@
       "formatted": null
     },
     {
-      "text": "We assumed a larger response to unexpected than to expected outcomes.",
+      "text": "Thus, here we chose to simply mimic the exact time course of the stimulation itself without making assumptions about how the infant brain response might look.",
       "text_id": 54,
       "paragraph_id": 15,
       "section_id": 3,
@@ -492,7 +492,7 @@
       "formatted": null
     },
     {
-      "text": "We added the two signals together (right).",
+      "text": "Next, we simulated transient visual evoked responses to expected and unexpected stimuli.",
       "text_id": 55,
       "paragraph_id": 15,
       "section_id": 3,
@@ -500,15 +500,15 @@
       "formatted": null
     },
     {
-      "text": "This additive model does not assume any modulation of oscillatory power or interaction between the two signals (steady-state visual evoked potential periodicity at x Hz in the time domain will produce a peak at x Hz in the spectral domain.",
+      "text": "The component of the evoked response that is most commonly related to the unexpectedness of a visual stimulus is known as Nc (Kayhan et al., 2019;Kopp & Lindenberger, 2011;Monroy et al., 2019).",
       "text_id": 56,
       "paragraph_id": 15,
       "section_id": 3,
       "page_number": null,
-      "formatted": null
+      "formatted": "The component of the evoked response that is most commonly related to the unexpectedness of a visual stimulus is known as Nc <ref type=\"bibr\" target=\"#b5\">(Kayhan et al., 2019;<\/ref> <ref type=\"bibr\" target=\"#b6\">Kopp &amp; Lindenberger, 2011;<\/ref> <ref type=\"bibr\" target=\"#b8\">Monroy et al., 2019)<\/ref>."
     },
     {
-      "text": "Thus, here we chose to simply mimic the exact time course of the stimulation itself without making assumptions about how the infant brain response might look.",
+      "text": "We simulated a prototypical slow ERP component (Nc) in the most assumption-free way we could imagine, as a Hann window with a total duration of 1 s.",
       "text_id": 57,
       "paragraph_id": 15,
       "section_id": 3,
@@ -516,7 +516,7 @@
       "formatted": null
     },
     {
-      "text": "Next, we simulated transient visual evoked responses to expected and unexpected stimuli.",
+      "text": "We used exactly the same response time course for the expected and unexpected \"outcomes\" but increased the amplitude of the unexpected response to be three times larger than that to the expected response (the most extreme amplitudes for Ncs for the expected and unexpected outcomes were -1 and -3, respectively).",
       "text_id": 58,
       "paragraph_id": 15,
       "section_id": 3,
@@ -524,32 +524,8 @@
       "formatted": null
     },
     {
-      "text": "The component of the evoked response that is most commonly related to the unexpectedness of a visual stimulus is known as Nc (Kayhan et al., 2019;Kopp & Lindenberger, 2011;Monroy et al., 2019).",
-      "text_id": 59,
-      "paragraph_id": 15,
-      "section_id": 3,
-      "page_number": null,
-      "formatted": "The component of the evoked response that is most commonly related to the unexpectedness of a visual stimulus is known as Nc <ref type=\"bibr\" target=\"#b5\">(Kayhan et al., 2019;<\/ref><ref type=\"bibr\" target=\"#b6\">Kopp &amp; Lindenberger, 2011;<\/ref><ref type=\"bibr\" target=\"#b8\">Monroy et al., 2019)<\/ref>."
-    },
-    {
-      "text": "We simulated a prototypical slow ERP component (Nc) in the most assumption-free way we could imagine, as a Hann window with a total duration of 1 s.",
-      "text_id": 60,
-      "paragraph_id": 15,
-      "section_id": 3,
-      "page_number": null,
-      "formatted": null
-    },
-    {
-      "text": "We used exactly the same response time course for the expected and unexpected \"outcomes\" but increased the amplitude of the unexpected response to be three times larger than that to the expected response (the most extreme amplitudes for Ncs for the expected and unexpected outcomes were -1 and -3, respectively).",
-      "text_id": 61,
-      "paragraph_id": 15,
-      "section_id": 3,
-      "page_number": null,
-      "formatted": null
-    },
-    {
       "text": "Note that the typical amplitude difference between the two responses would be around 50%.",
-      "text_id": 62,
+      "text_id": 59,
       "paragraph_id": 15,
       "section_id": 3,
       "page_number": null,
@@ -557,7 +533,7 @@
     },
     {
       "text": "We chose this exaggerated effect for emphasis in visualizations.",
-      "text_id": 63,
+      "text_id": 60,
       "paragraph_id": 15,
       "section_id": 3,
       "page_number": null,
@@ -565,7 +541,7 @@
     },
     {
       "text": "The exact value of the modulation is of no consequence for the simulation because identical Ncs (including identical modulations) were used in simulating responses to the theta-and alpha-stimulation conditions.",
-      "text_id": 64,
+      "text_id": 61,
       "paragraph_id": 15,
       "section_id": 3,
       "page_number": null,
@@ -573,7 +549,7 @@
     },
     {
       "text": "We then produced four additive time courses in total, reflecting the original design of the experiment: We added the Nc-like evoked response to expected events to 4-Hz and 6-Hz tracking signals, separately, and repeated this procedure for the evoked response to unexpected events.",
-      "text_id": 65,
+      "text_id": 62,
       "paragraph_id": 16,
       "section_id": 3,
       "page_number": null,
@@ -581,7 +557,7 @@
     },
     {
       "text": "This additive model does not assume any enhancement of oscillations at any particular frequency but yields time courses with equivalent amplitudes for the theta-and alpha-stimulation conditions (Fig. 1a).",
-      "text_id": 66,
+      "text_id": 63,
       "paragraph_id": 16,
       "section_id": 3,
       "page_number": null,
@@ -589,7 +565,7 @@
     },
     {
       "text": "It is worth pointing out that the additive nature of the model precludes any nonlinear interaction between SSVEPs and Ncs in our simulation.",
-      "text_id": 67,
+      "text_id": 64,
       "paragraph_id": 16,
       "section_id": 3,
       "page_number": null,
@@ -597,7 +573,7 @@
     },
     {
       "text": "We submitted the added time courses to a timefrequency analysis using the parameters provided by Köster et al. (apart from the time resolution, for which there was no information in their Method section; we used 200 ms).",
-      "text_id": 68,
+      "text_id": 65,
       "paragraph_id": 17,
       "section_id": 3,
       "page_number": null,
@@ -605,7 +581,7 @@
     },
     {
       "text": "We then created time-frequency plots (averaged over the expected and unexpected conditions), as well as summary plots showing theta and alpha time courses separately for the expected-and unexpected-outcome conditions (baseline corrected as in the original study by subtracting the average power between 1.5 s and 2.5 s with respect to the onset of the flicker stimulus), as in Köster et al.",
-      "text_id": 69,
+      "text_id": 66,
       "paragraph_id": 17,
       "section_id": 3,
       "page_number": null,
@@ -613,7 +589,7 @@
     },
     {
       "text": "(Fig. 1b).",
-      "text_id": 70,
+      "text_id": 67,
       "paragraph_id": 17,
       "section_id": 3,
       "page_number": null,
@@ -621,7 +597,7 @@
     },
     {
       "text": "We note that our \"toy\" example has only a few free parameters: magnitude of the SSVEP and (absolute and relative) magnitudes of the Ncs.",
-      "text_id": 71,
+      "text_id": 68,
       "paragraph_id": 18,
       "section_id": 3,
       "page_number": null,
@@ -629,7 +605,7 @@
     },
     {
       "text": "The temporal properties of our simulated SSVEPs were fixed by the design of Köster et. al.'s study.",
-      "text_id": 72,
+      "text_id": 69,
       "paragraph_id": 18,
       "section_id": 3,
       "page_number": null,
@@ -637,7 +613,7 @@
     },
     {
       "text": "The morphology of the Nc was chosen on the basis of previous literature (Webb et al., 2005) and intended to minimize assumptions.",
-      "text_id": 73,
+      "text_id": 70,
       "paragraph_id": 18,
       "section_id": 3,
       "page_number": null,
@@ -645,7 +621,7 @@
     },
     {
       "text": "Because of the additive nature of our approach, changing any of these parameters within reason will not lead to qualitatively different results.",
-      "text_id": 74,
+      "text_id": 71,
       "paragraph_id": 18,
       "section_id": 3,
       "page_number": null,
@@ -653,7 +629,7 @@
     },
     {
       "text": "In fact, in the publicly available code (and Fig. S1 at https://osf.io/nwkj3), we provide the option to test an example case of a differently modeled (and somewhat more complex) Nc, which produces the same results.",
-      "text_id": 75,
+      "text_id": 72,
       "paragraph_id": 18,
       "section_id": 3,
       "page_number": null,
@@ -661,7 +637,7 @@
     },
     {
       "text": "Corresponding documentation and materials can be found on OSF (https://osf.io/c9urf).",
-      "text_id": 76,
+      "text_id": 73,
       "paragraph_id": 18,
       "section_id": 3,
       "page_number": null,
@@ -669,7 +645,7 @@
     },
     {
       "text": "Results",
-      "text_id": 77,
+      "text_id": 74,
       "paragraph_id": 19,
       "section_id": 4,
       "page_number": null,
@@ -677,7 +653,7 @@
     },
     {
       "text": "Our \"toy\" model makes a minimal number of assumptions but qualitatively reproduces the main findings from Köster et al.",
-      "text_id": 78,
+      "text_id": 75,
       "paragraph_id": 20,
       "section_id": 5,
       "page_number": null,
@@ -685,7 +661,7 @@
     },
     {
       "text": "Most importantly, our model does not incorporate any modulation of band-limited theta (or alpha) power.",
-      "text_id": 79,
+      "text_id": 76,
       "paragraph_id": 20,
       "section_id": 5,
       "page_number": null,
@@ -693,7 +669,7 @@
     },
     {
       "text": "Here, we explain in more detail how we arrive at similar conclusions nonetheless.",
-      "text_id": 80,
+      "text_id": 77,
       "paragraph_id": 20,
       "section_id": 5,
       "page_number": null,
@@ -701,7 +677,7 @@
     },
     {
       "text": "Essentially, we show that our observed pattern of results arises from constructive or destructive wave interference between SSVEP and Nc, with a crucial role for the Nc amplitude difference between presentations of the expected-and unexpected-outcome stimuli.",
-      "text_id": 81,
+      "text_id": 78,
       "paragraph_id": 20,
       "section_id": 5,
       "page_number": null,
@@ -709,7 +685,7 @@
     },
     {
       "text": "Köster et al. report a theta-power increase during 4-Hz stimulation (infant theta range), whereas a similar effect on theta power was absent during 6-Hz stimulation (alpha range) in a control analysis.",
-      "text_id": 82,
+      "text_id": 79,
       "paragraph_id": 21,
       "section_id": 5,
       "page_number": null,
@@ -717,7 +693,7 @@
     },
     {
       "text": "Our simulation found that both effects also arose in the spectral representation of the linear summation of 4-Hz or 6-Hz SSVEPs and the Nc, respectively.",
-      "text_id": 83,
+      "text_id": 80,
       "paragraph_id": 21,
       "section_id": 5,
       "page_number": null,
@@ -725,7 +701,7 @@
     },
     {
       "text": "First, note that the Nc has a higher spectral energy at 4 Hz than at 6 Hz, meaning that it bears more resemblance to a (partial) 4-Hz than a 6-Hz wave at the time of its occurrence (see Fig. S2 at https://osf.io/nwkj3).",
-      "text_id": 84,
+      "text_id": 81,
       "paragraph_id": 22,
       "section_id": 5,
       "page_number": null,
@@ -733,7 +709,7 @@
     },
     {
       "text": "In the case of 4-Hz stimulation, Nc and SSVEP superpose optimally, giving the unexpected-outcome condition a boost because it produces a greater Nc than the expected-outcome condition.",
-      "text_id": 85,
+      "text_id": 82,
       "paragraph_id": 22,
       "section_id": 5,
       "page_number": null,
@@ -741,7 +717,7 @@
     },
     {
       "text": "Second, note that the control result-the absence of a theta-power (4-Hz) increase during 6-Hz stimulation-stems from a special case.",
-      "text_id": 86,
+      "text_id": 83,
       "paragraph_id": 23,
       "section_id": 5,
       "page_number": null,
@@ -749,7 +725,7 @@
     },
     {
       "text": "In contrast to the two main analyses-theta power during theta-range stimulation and alpha power during alpha-range stimulationthe control analysis looks into one frequency range (theta) whereas the 6-Hz stimulation drives an SSVEP in the other (alpha).",
-      "text_id": 87,
+      "text_id": 84,
       "paragraph_id": 23,
       "section_id": 5,
       "page_number": null,
@@ -757,7 +733,7 @@
     },
     {
       "text": "Because the spectro-temporal decomposition separates SSVEP and Nc in the frequency domain, we see only the spectral representation of the Nc in the theta range.",
-      "text_id": 88,
+      "text_id": 85,
       "paragraph_id": 23,
       "section_id": 5,
       "page_number": null,
@@ -765,7 +741,7 @@
     },
     {
       "text": "This spectral separation blinds us to the effects of wave interference between SSVEP and Nc that take place in the alpha range.",
-      "text_id": 89,
+      "text_id": 86,
       "paragraph_id": 23,
       "section_id": 5,
       "page_number": null,
@@ -773,7 +749,7 @@
     },
     {
       "text": "Our results depend on the Nc effect being modeled in terms of the unexpected outcome being larger than the expected outcome, as reported by Webb et al. (2005), Kayhan et al. (2019), Kopp and Lindenberger (2011), and Monroy et al. (2019).",
-      "text_id": 90,
+      "text_id": 87,
       "paragraph_id": 24,
       "section_id": 6,
       "page_number": null,
@@ -781,7 +757,7 @@
     },
     {
       "text": "Yet findings regarding Nc modulation remain equivocal, with some studies showing the opposite effect (Reid et al., 2009).",
-      "text_id": 91,
+      "text_id": 88,
       "paragraph_id": 24,
       "section_id": 6,
       "page_number": null,
@@ -789,7 +765,7 @@
     },
     {
       "text": "However, polarity, and thereby whether a perturbation manifests as an enhancement or a suppression in the timefrequency domain, is influenced by the choice of reference as well as the choice of baseline in EEG analysis.",
-      "text_id": 92,
+      "text_id": 89,
       "paragraph_id": 24,
       "section_id": 6,
       "page_number": null,
@@ -797,7 +773,7 @@
     },
     {
       "text": "Moreover, polarity of some important ERP components has been shown to reverse during development ( Ruhnau et al., 2013).",
-      "text_id": 93,
+      "text_id": 90,
       "paragraph_id": 24,
       "section_id": 6,
       "page_number": null,
@@ -805,7 +781,7 @@
     },
     {
       "text": "Thus, we would exercise caution in overpredicting the exact relationship between the direction of the ERP effect and the direction of the time-frequency-domain effect.",
-      "text_id": 94,
+      "text_id": 91,
       "paragraph_id": 24,
       "section_id": 6,
       "page_number": null,
@@ -813,7 +789,7 @@
     },
     {
       "text": "Also note that the results of our simulation derive from the spectral properties of our simplistic Nc model.",
-      "text_id": 95,
+      "text_id": 92,
       "paragraph_id": 25,
       "section_id": 6,
       "page_number": null,
@@ -821,7 +797,7 @@
     },
     {
       "text": "This model does not fully take into consideration the more complex morphology of the real-world stimulusevoked response that includes the Nc as one component (Webb et al., 2005).",
-      "text_id": 96,
+      "text_id": 93,
       "paragraph_id": 25,
       "section_id": 6,
       "page_number": null,
@@ -829,7 +805,7 @@
     },
     {
       "text": "Other waveform aspects not explored here may provide alternative accounts with similar results.",
-      "text_id": 97,
+      "text_id": 94,
       "paragraph_id": 25,
       "section_id": 6,
       "page_number": null,
@@ -837,7 +813,7 @@
     },
     {
       "text": "In a similar vein, our model does not take into account the actual occurrence of truly endogenous, not necessarily entrained theta-band oscillations.",
-      "text_id": 98,
+      "text_id": 95,
       "paragraph_id": 25,
       "section_id": 6,
       "page_number": null,
@@ -845,7 +821,7 @@
     },
     {
       "text": "Nevertheless, our central argument remains that effects observed by Köster et al. could be understood as a result of differences in the spectral representation of stimulus-evoked activity absent an involvement of endogenous oscillations.",
-      "text_id": 99,
+      "text_id": 96,
       "paragraph_id": 25,
       "section_id": 6,
       "page_number": null,
@@ -853,7 +829,7 @@
     },
     {
       "text": "Action Editor: Patricia J. Bauer Editor: Patricia J. Bauer",
-      "text_id": 100,
+      "text_id": 97,
       "paragraph_id": 26,
       "section_id": 7,
       "page_number": null,
@@ -861,7 +837,7 @@
     },
     {
       "text": "The author(s) declared that there were no conflicts of interest with respect to the authorship or the publication of this article.",
-      "text_id": 101,
+      "text_id": 98,
       "paragraph_id": 27,
       "section_id": 8,
       "page_number": null,
@@ -869,7 +845,7 @@
     },
     {
       "text": "The simulation code for this study is publicly available on OSF at https://osf.io/c9urf.",
-      "text_id": 102,
+      "text_id": 99,
       "paragraph_id": 28,
       "section_id": 9,
       "page_number": null,
@@ -877,7 +853,7 @@
     },
     {
       "text": "The design and analysis plans for the study were not preregistered.",
-      "text_id": 103,
+      "text_id": 100,
       "paragraph_id": 28,
       "section_id": 9,
       "page_number": null,
@@ -885,7 +861,7 @@
     },
     {
       "text": "This article has received the badge for Open Materials.",
-      "text_id": 104,
+      "text_id": 101,
       "paragraph_id": 28,
       "section_id": 9,
       "page_number": null,
@@ -893,7 +869,7 @@
     },
     {
       "text": "More information about the Open Practices badges can be found at http://www.psychologicalscience.org/publications/badges.",
-      "text_id": 105,
+      "text_id": 102,
       "paragraph_id": 28,
       "section_id": 9,
       "page_number": null,
@@ -901,7 +877,7 @@
     },
     {
       "text": "The hypotheses and goals of this study were conceptualized by C. Keitel, J. Obleser, S. Jessen, and M. J. Henry.",
-      "text_id": 106,
+      "text_id": 103,
       "paragraph_id": 29,
       "section_id": 10,
       "page_number": null,
@@ -909,7 +885,7 @@
     },
     {
       "text": "Data were analyzed by M. J. Henry.",
-      "text_id": 107,
+      "text_id": 104,
       "paragraph_id": 29,
       "section_id": 10,
       "page_number": null,
@@ -917,7 +893,7 @@
     },
     {
       "text": "The methodology was developed by J. Obleser, S. Jessen, and M. J. Henry.",
-      "text_id": 108,
+      "text_id": 105,
       "paragraph_id": 29,
       "section_id": 10,
       "page_number": null,
@@ -925,7 +901,7 @@
     },
     {
       "text": "Project administration (research planning and execution) was performed by C. Keitel.",
-      "text_id": 109,
+      "text_id": 106,
       "paragraph_id": 29,
       "section_id": 10,
       "page_number": null,
@@ -933,7 +909,7 @@
     },
     {
       "text": "Software was programmed by M. J.",
-      "text_id": 110,
+      "text_id": 107,
       "paragraph_id": 29,
       "section_id": 10,
       "page_number": null,
@@ -941,7 +917,7 @@
     },
     {
       "text": "Henry.",
-      "text_id": 111,
+      "text_id": 108,
       "paragraph_id": 30,
       "section_id": 10,
       "page_number": null,
@@ -949,7 +925,7 @@
     },
     {
       "text": "The research was supervised by J. Obleser and S. Jessen.",
-      "text_id": 112,
+      "text_id": 109,
       "paragraph_id": 30,
       "section_id": 10,
       "page_number": null,
@@ -957,7 +933,7 @@
     },
     {
       "text": "All of the authors verified the accuracy of the results.",
-      "text_id": 113,
+      "text_id": 110,
       "paragraph_id": 30,
       "section_id": 10,
       "page_number": null,
@@ -965,7 +941,7 @@
     },
     {
       "text": "The figures were created by M. J. Henry.",
-      "text_id": 114,
+      "text_id": 111,
       "paragraph_id": 30,
       "section_id": 10,
       "page_number": null,
@@ -973,7 +949,7 @@
     },
     {
       "text": "C. Keitel and M. J. Henry drafted the manuscript, and all of the authors reviewed, edited, and approved the final manuscript for submission.",
-      "text_id": 115,
+      "text_id": 112,
       "paragraph_id": 30,
       "section_id": 10,
       "page_number": null,
@@ -981,6 +957,30 @@
     },
     {
       "text": "Fig.1.",
+      "text_id": 113,
+      "paragraph_id": 31,
+      "section_id": 11,
+      "page_number": null,
+      "formatted": null
+    },
+    {
+      "text": "Methodology (a) and (b) results of the current study.",
+      "text_id": 114,
+      "paragraph_id": 31,
+      "section_id": 11,
+      "page_number": null,
+      "formatted": null
+    },
+    {
+      "text": "Our model is shown in (a).",
+      "text_id": 115,
+      "paragraph_id": 31,
+      "section_id": 11,
+      "page_number": null,
+      "formatted": null
+    },
+    {
+      "text": "We first generated a signal that had the identical temporal structure as the visual stimulation in the 4-Hz theta-stimulation (top left) and 6-Hz alpha-stimulation (bottom left) conditions (\"on\" periods as 1s and \"off\" periods as 0s).",
       "text_id": 116,
       "paragraph_id": 31,
       "section_id": 11,
@@ -988,7 +988,7 @@
       "formatted": null
     },
     {
-      "text": "Methodology (a) and (b) results of the current study.",
+      "text": "This representation is agnostic to whether a \"neural\" signal would be entrained or instead simply track the stimulus rhythm.",
       "text_id": 117,
       "paragraph_id": 31,
       "section_id": 11,
@@ -996,7 +996,7 @@
       "formatted": null
     },
     {
-      "text": "Our model is shown in (a).",
+      "text": "We then simulated a very simple prototype visual evoked response (Nc) modeled after what has previously been observed in infants (middle, where the graph shows waveforms in response to both expected and unexpected stimuli).",
       "text_id": 118,
       "paragraph_id": 31,
       "section_id": 11,
@@ -1004,7 +1004,7 @@
       "formatted": null
     },
     {
-      "text": "We first generated a signal that had the identical temporal structure as the visual stimulation in the 4-Hz theta-stimulation (top left) and 6-Hz alpha-stimulation (bottom left) conditions (\"on\" periods as 1s and \"off\" periods as 0s).",
+      "text": "We assumed a larger response to unexpected than to expected outcomes.",
       "text_id": 119,
       "paragraph_id": 31,
       "section_id": 11,
@@ -1012,7 +1012,7 @@
       "formatted": null
     },
     {
-      "text": "This representation is agnostic to whether a \"neural\" signal would be entrained or instead simply track the stimulus rhythm.",
+      "text": "We added the two signals together (right).",
       "text_id": 120,
       "paragraph_id": 31,
       "section_id": 11,
@@ -1020,7 +1020,7 @@
       "formatted": null
     },
     {
-      "text": "We then simulated a very simple prototype visual evoked response (Nc) modeled after what has previously been observed in infants (middle, where the graph shows waveforms in response to both expected and unexpected stimuli).",
+      "text": "This additive model does not assume any modulation of oscillatory power or interaction between the two signals (steady-state visual evoked potential [SSVEP] and Nc), and results in similar amplitudes for the theta-and alpha-stimulation conditions.",
       "text_id": 121,
       "paragraph_id": 31,
       "section_id": 11,
@@ -1028,7 +1028,7 @@
       "formatted": null
     },
     {
-      "text": "We assumed a larger response to unexpected than to expected outcomes.",
+      "text": "Applications of this model to the data of Köster et al. (2019) are shown in (b).",
       "text_id": 122,
       "paragraph_id": 31,
       "section_id": 11,
@@ -1036,7 +1036,7 @@
       "formatted": null
     },
     {
-      "text": "We added the two signals together (right).",
+      "text": "The time-frequency plots (left) show power in the alpha and theta frequency bands, respectively, for our additive model when the analysis from Köster et al. (2019) is applied.",
       "text_id": 123,
       "paragraph_id": 31,
       "section_id": 11,
@@ -1044,7 +1044,7 @@
       "formatted": null
     },
     {
-      "text": "This additive model does not assume any modulation of oscillatory power or interaction between the two signals (steady-state visual evoked potential [SSVEP] and Nc), and results in similar amplitudes for the theta-and alpha-stimulation conditions.",
+      "text": "The graphs (right) show power in response to the expected and unexpected outcomes, separately for the alpha-and theta-stimulation conditions.",
       "text_id": 124,
       "paragraph_id": 31,
       "section_id": 11,
@@ -1052,7 +1052,7 @@
       "formatted": null
     },
     {
-      "text": "Applications of this model to the data of Köster et al. (2019) are shown in (b).",
+      "text": "The inset shows results from the same theta-power control analysis as run by Köster et al. a.u. = arbitrary units.",
       "text_id": 125,
       "paragraph_id": 31,
       "section_id": 11,
@@ -1060,32 +1060,8 @@
       "formatted": null
     },
     {
-      "text": "The time-frequency plots (left) show power in the alpha and theta frequency bands, respectively, for our additive model when the analysis from Köster et al. (2019) is applied.",
-      "text_id": 126,
-      "paragraph_id": 31,
-      "section_id": 11,
-      "page_number": null,
-      "formatted": null
-    },
-    {
-      "text": "The graphs (right) show power in response to the expected and unexpected outcomes, separately for the alpha-and theta-stimulation conditions.",
-      "text_id": 127,
-      "paragraph_id": 31,
-      "section_id": 11,
-      "page_number": null,
-      "formatted": null
-    },
-    {
-      "text": "The inset shows results from the same theta-power control analysis as run by Köster et al. a.u. = arbitrary units.",
-      "text_id": 128,
-      "paragraph_id": 31,
-      "section_id": 11,
-      "page_number": null,
-      "formatted": null
-    },
-    {
       "text": "Fig.1.",
-      "text_id": 129,
+      "text_id": 126,
       "paragraph_id": 32,
       "section_id": 12,
       "page_number": null,
@@ -1093,7 +1069,7 @@
     },
     {
       "text": "Methodology (a) and (b) results of the current study.",
-      "text_id": 130,
+      "text_id": 127,
       "paragraph_id": 32,
       "section_id": 12,
       "page_number": null,
@@ -1101,7 +1077,7 @@
     },
     {
       "text": "Our model is shown in (a).",
-      "text_id": 131,
+      "text_id": 128,
       "paragraph_id": 32,
       "section_id": 12,
       "page_number": null,
@@ -1109,7 +1085,7 @@
     },
     {
       "text": "We first generated a signal that had the identical temporal structure as the visual stimulation in the 4-Hz theta-stimulation (top left) and 6-Hz alpha-stimulation (bottom left) conditions (\"on\" periods as 1s and \"off\" periods as 0s).",
-      "text_id": 132,
+      "text_id": 129,
       "paragraph_id": 32,
       "section_id": 12,
       "page_number": null,
@@ -1117,7 +1093,7 @@
     },
     {
       "text": "This representation is agnostic to whether a \"neural\" signal would be entrained or instead simply track the stimulus rhythm.",
-      "text_id": 133,
+      "text_id": 130,
       "paragraph_id": 32,
       "section_id": 12,
       "page_number": null,
@@ -1125,7 +1101,7 @@
     },
     {
       "text": "We then simulated a very simple prototype visual evoked response (Nc) modeled after what has previously been observed in infants (middle, where the graph shows waveforms in response to both expected and unexpected stimuli).",
-      "text_id": 134,
+      "text_id": 131,
       "paragraph_id": 32,
       "section_id": 12,
       "page_number": null,
@@ -1133,7 +1109,7 @@
     },
     {
       "text": "We assumed a larger response to unexpected than to expected outcomes.",
-      "text_id": 135,
+      "text_id": 132,
       "paragraph_id": 32,
       "section_id": 12,
       "page_number": null,
@@ -1141,7 +1117,7 @@
     },
     {
       "text": "We added the two signals together (right).",
-      "text_id": 136,
+      "text_id": 133,
       "paragraph_id": 32,
       "section_id": 12,
       "page_number": null,
@@ -1149,7 +1125,7 @@
     },
     {
       "text": "This additive model does not assume any modulation of oscillatory power or interaction between the two signals (steady-state visual evoked potential [SSVEP] and Nc), and results in similar amplitudes for the theta-and alpha-stimulation conditions.",
-      "text_id": 137,
+      "text_id": 134,
       "paragraph_id": 32,
       "section_id": 12,
       "page_number": null,
@@ -1157,7 +1133,7 @@
     },
     {
       "text": "Applications of this model to the data of Köster et al. (2019) are shown in (b).",
-      "text_id": 138,
+      "text_id": 135,
       "paragraph_id": 32,
       "section_id": 12,
       "page_number": null,
@@ -1165,7 +1141,7 @@
     },
     {
       "text": "The time-frequency plots (left) show power in the alpha and theta frequency bands, respectively, for our additive model when the analysis from Köster et al. (2019) is applied.",
-      "text_id": 139,
+      "text_id": 136,
       "paragraph_id": 32,
       "section_id": 12,
       "page_number": null,
@@ -1173,7 +1149,7 @@
     },
     {
       "text": "The graphs (right) show power in response to the expected and unexpected outcomes, separately for the alpha-and theta-stimulation conditions.",
-      "text_id": 140,
+      "text_id": 137,
       "paragraph_id": 32,
       "section_id": 12,
       "page_number": null,
@@ -1181,7 +1157,7 @@
     },
     {
       "text": "The inset shows results from the same theta-power control analysis as run by Köster et al. a.u. = arbitrary units.",
-      "text_id": 141,
+      "text_id": 138,
       "paragraph_id": 32,
       "section_id": 12,
       "page_number": null,
@@ -1189,15 +1165,15 @@
     },
     {
       "text": "A reviewer pointed out that statistical support for the direct contrast of theta and alpha effects in the original study is weak (i.e., the interaction was nonsignificant) and so should be interpreted with caution(Gelman & Stern, 2006;Nieuwenhuis et al., 2011).",
-      "text_id": 142,
+      "text_id": 139,
       "paragraph_id": 33,
       "section_id": 13,
       "page_number": null,
-      "formatted": "<note place=\"foot\" n=\"1\" xml:id=\"foot_0\">   <p>A reviewer pointed out that statistical support for the direct contrast of theta and alpha effects in the original study is weak (i.e., the interaction was nonsignificant) and so should be interpreted with caution<ref type=\"bibr\" target=\"#b2\">(Gelman &amp; Stern, 2006;<\/ref><ref type=\"bibr\" target=\"#b9\">Nieuwenhuis et al., 2011)<\/ref>.<\/p> <\/note>"
+      "formatted": "<note place=\"foot\" n=\"1\" xml:id=\"foot_0\">   <p>A reviewer pointed out that statistical support for the direct contrast of theta and alpha effects in the original study is weak (i.e., the interaction was nonsignificant) and so should be interpreted with caution<ref type=\"bibr\" target=\"#b2\">(Gelman &amp; Stern, 2006;<\/ref> <ref type=\"bibr\" target=\"#b9\">Nieuwenhuis et al., 2011)<\/ref>.<\/p> <\/note>"
     },
     {
       "text": "Baldauf, D., & Desimone, R. (2014). Neural mechanisms of object-based attention. Science, 344(6182), 424-427. https://doi.org/10.1126/science.1247003",
-      "text_id": 143,
+      "text_id": 140,
       "paragraph_id": 34,
       "section_id": 14,
       "page_number": null,
@@ -1205,7 +1181,7 @@
     },
     {
       "text": "Capilla, A., Pazo-Alvarez, P., Darriba, A., Campo, P., & Gross, J. (2011). Steady-state visual evoked potentials can be explained by temporal superposition of transient event- related responses. PLOS ONE, 6(1), Article e14543. https:// doi.org/10.1371/journal.pone.0014543",
-      "text_id": 144,
+      "text_id": 141,
       "paragraph_id": 35,
       "section_id": 14,
       "page_number": null,
@@ -1213,7 +1189,7 @@
     },
     {
       "text": "Gelman, A., & Stern, H. (2006). The difference between \"sig- nificant\" and \"not significant\" is not itself statistically sig- nificant. The American Statistician, 60(4), 328-331.",
-      "text_id": 145,
+      "text_id": 142,
       "paragraph_id": 36,
       "section_id": 14,
       "page_number": null,
@@ -1221,7 +1197,7 @@
     },
     {
       "text": "Herrmann, C. S., Grigutsch, M., & Busch, N. A. (2005). EEG oscillations and wavelet analysis. In T. C. Handy (Ed.), Event-related potentials: A methods handbook (p. 229- 260). MIT Press.",
-      "text_id": 146,
+      "text_id": 143,
       "paragraph_id": 37,
       "section_id": 14,
       "page_number": null,
@@ -1229,7 +1205,7 @@
     },
     {
       "text": "Jasper, H. H. (1948). Charting the sea of brain waves. Science, 108(2805), 343-347.",
-      "text_id": 147,
+      "text_id": 144,
       "paragraph_id": 38,
       "section_id": 14,
       "page_number": null,
@@ -1237,7 +1213,7 @@
     },
     {
       "text": "Kayhan, E., Meyer, M., O'Reilly, J. X., Hunnius, S., & Bekkering, H. (2019). Nine-month-old infants update their predic- tive models of a changing environment. Developmental Cognitive Neuroscience, 38, Article 100680. https://doi .org/10.1016/j.dcn.2019.100680",
-      "text_id": 148,
+      "text_id": 145,
       "paragraph_id": 39,
       "section_id": 14,
       "page_number": null,
@@ -1245,7 +1221,7 @@
     },
     {
       "text": "Kopp, F., & Lindenberger, U. (2011). Effects of joint atten- tion on long-term memory in 9-month-old infants: An event-related potentials study. Developmental Science, 14(4), 660-672. https://doi.org/10.1111/j.1467-7687.2010 .01010.x",
-      "text_id": 149,
+      "text_id": 146,
       "paragraph_id": 40,
       "section_id": 14,
       "page_number": null,
@@ -1253,7 +1229,7 @@
     },
     {
       "text": "Köster, M., Langeloh, M., & Hoehl, S. (2019). Visually entrained theta oscillations increase for unexpected events in the infant brain. Psychological Science, 30(11), 1656-1663. https://doi.org/10.1177/0956797619876260",
-      "text_id": 150,
+      "text_id": 147,
       "paragraph_id": 41,
       "section_id": 14,
       "page_number": null,
@@ -1261,7 +1237,7 @@
     },
     {
       "text": "Monroy, C. D., Gerson, S. A., Domínguez-Martínez, E., Kaduk, K., Hunnius, S., & Reid, V. (2019). Sensitivity to structure in action sequences: An infant event-related potential study. Neuropsychologia, 126, 92-101. https:// doi.org/10.1016/j.neuropsychologia.2017.05.007",
-      "text_id": 151,
+      "text_id": 148,
       "paragraph_id": 42,
       "section_id": 14,
       "page_number": null,
@@ -1269,7 +1245,7 @@
     },
     {
       "text": "Nieuwenhuis, S., Forstmann, B. U., & Wagenmakers, E.-J. (2011). Erroneous analyses of interactions in neurosci- ence: A problem of significance. Nature Neuroscience, 14(9), 1105-1107. https://doi.org/10.1038/nn.2886",
-      "text_id": 152,
+      "text_id": 149,
       "paragraph_id": 43,
       "section_id": 14,
       "page_number": null,
@@ -1277,7 +1253,7 @@
     },
     {
       "text": "Norcia, A. M., Appelbaum, L. G., Ales, J. M., Cottereau, B. R., & Rossion, B. (2015). The steady-state visual evoked potential in vision research: A review. Journal of Vision, 15(6), Article 4. https://doi.org/10.1167/15.6.4",
-      "text_id": 153,
+      "text_id": 150,
       "paragraph_id": 44,
       "section_id": 14,
       "page_number": null,
@@ -1285,7 +1261,7 @@
     },
     {
       "text": "Obleser, J., & Kayser, C. (2019). Neural entrainment and atten- tional selection in the listening brain. Trends in Cognitive Sciences, 23(11), 913-926. https://doi.org/10.1016/j.tics .2019.08.004",
-      "text_id": 154,
+      "text_id": 151,
       "paragraph_id": 45,
       "section_id": 14,
       "page_number": null,
@@ -1293,7 +1269,7 @@
     },
     {
       "text": "Oostenveld, R., Fries, P., Maris, E., & Schoffelen, J.-M. (2011). FieldTrip: Open source software for advanced analysis of MEG, EEG, and invasive electrophysiological data. Computational Intelligence and Neuroscience, 2011, Article 156869. https://doi.org/10.1155/2011/156869",
-      "text_id": 155,
+      "text_id": 152,
       "paragraph_id": 46,
       "section_id": 14,
       "page_number": null,
@@ -1301,7 +1277,7 @@
     },
     {
       "text": "Reid, V. M., Hoehl, S., Grigutsch, M., Groendahl, A., Parise, E., & Striano, T. (2009). The neural correlates of infant and adult goal prediction: Evidence for semantic processing systems. Developmental Psychology, 45(3), 620-629. https://doi.org/10.1037/a0015209",
-      "text_id": 156,
+      "text_id": 153,
       "paragraph_id": 47,
       "section_id": 14,
       "page_number": null,
@@ -1309,7 +1285,7 @@
     },
     {
       "text": "Ruhnau, P., Herrmann, B., Maess, B., Brauer, J., Friederici, A. D., & Schröger, E. (2013). Processing of complex distracting sounds in school-aged children and adults: Evidence from EEG and MEG data. Frontiers in Psychology, 4, Article 717. https://doi.org/10.3389/fpsyg.2013.00717",
-      "text_id": 157,
+      "text_id": 154,
       "paragraph_id": 48,
       "section_id": 14,
       "page_number": null,
@@ -1317,7 +1293,7 @@
     },
     {
       "text": "Schaworonkow, N., & Voytek, B. (2021). Longitudinal changes in aperiodic and periodic activity in electrophysiological recordings in the first seven months of life. Developmental Cognitive Neuroscience, 47, Article 100895. https://doi .org/10.1016/j.dcn.2020.100895",
-      "text_id": 158,
+      "text_id": 155,
       "paragraph_id": 49,
       "section_id": 14,
       "page_number": null,
@@ -1325,7 +1301,7 @@
     },
     {
       "text": "Thut, G., Schyns, P., & Gross, J. (2011). Entrainment of percep- tually relevant brain oscillations by non-invasive rhythmic stimulation of the human brain. Frontiers in Psychology, 2, Article 170. https://doi.org/10.3389/fpsyg.2011.00170",
-      "text_id": 159,
+      "text_id": 156,
       "paragraph_id": 50,
       "section_id": 14,
       "page_number": null,
@@ -1333,7 +1309,7 @@
     },
     {
       "text": "Wang, X.-J. (2010). Neurophysiological and computational principles of cortical rhythms in cognition. Physiological Reviews, 90(3), 1195-1268. https://doi.org/10.1152/ physrev.00035.2008",
-      "text_id": 160,
+      "text_id": 157,
       "paragraph_id": 51,
       "section_id": 14,
       "page_number": null,
@@ -1341,7 +1317,7 @@
     },
     {
       "text": "Webb, S. J., Long, J. D., & Nelson, C. A. (2005). A longitudinal investigation of visual event-related potentials in the first year of life. Developmental Science, 8(6), 605-616. https:// doi.org/10.1111/j.1467-7687.2005.00452.x",
-      "text_id": 161,
+      "text_id": 158,
       "paragraph_id": 52,
       "section_id": 14,
       "page_number": null,
@@ -1457,27 +1433,27 @@
     {
       "href": "https://osf.io/nwkj3",
       "link_text": null,
-      "text_id": 75
+      "text_id": 72
     },
     {
       "href": "https://osf.io/c9urf",
       "link_text": null,
-      "text_id": 76
+      "text_id": 73
     },
     {
       "href": "https://osf.io/nwkj3",
       "link_text": null,
-      "text_id": 84
+      "text_id": 81
     },
     {
       "href": "https://osf.io/c9urf",
       "link_text": null,
-      "text_id": 102
+      "text_id": 99
     },
     {
       "href": "http://www.psychologicalscience.org/publications/badges",
       "link_text": null,
-      "text_id": 105
+      "text_id": 102
     }
   ],
   "bib": [
@@ -1496,7 +1472,7 @@
       "container": "Science",
       "bib_id": 0,
       "year_suffix": "",
-      "text_id": 143
+      "text_id": 140
     },
     {
       "bib_type": "article",
@@ -1513,7 +1489,7 @@
       "container": "PLOS ONE",
       "bib_id": 1,
       "year_suffix": "",
-      "text_id": 144
+      "text_id": 141
     },
     {
       "bib_type": "article",
@@ -1530,7 +1506,7 @@
       "container": "The American Statistician",
       "bib_id": 2,
       "year_suffix": "",
-      "text_id": 145
+      "text_id": 142
     },
     {
       "bib_type": "article",
@@ -1547,7 +1523,7 @@
       "container": "",
       "bib_id": 3,
       "year_suffix": "",
-      "text_id": 146
+      "text_id": 143
     },
     {
       "bib_type": "article",
@@ -1564,7 +1540,7 @@
       "container": "Science",
       "bib_id": 4,
       "year_suffix": "",
-      "text_id": 147
+      "text_id": 144
     },
     {
       "bib_type": "article",
@@ -1581,7 +1557,7 @@
       "container": "Developmental Cognitive Neuroscience",
       "bib_id": 5,
       "year_suffix": "",
-      "text_id": 148
+      "text_id": 145
     },
     {
       "bib_type": "article",
@@ -1598,7 +1574,7 @@
       "container": "Developmental Science",
       "bib_id": 6,
       "year_suffix": "",
-      "text_id": 149
+      "text_id": 146
     },
     {
       "bib_type": "article",
@@ -1615,7 +1591,7 @@
       "container": "Psychological Science",
       "bib_id": 7,
       "year_suffix": "",
-      "text_id": 150
+      "text_id": 147
     },
     {
       "bib_type": "article",
@@ -1632,7 +1608,7 @@
       "container": "Neuropsychologia",
       "bib_id": 8,
       "year_suffix": "",
-      "text_id": 151
+      "text_id": 148
     },
     {
       "bib_type": "article",
@@ -1649,7 +1625,7 @@
       "container": "Nature Neuroscience",
       "bib_id": 9,
       "year_suffix": "",
-      "text_id": 152
+      "text_id": 149
     },
     {
       "bib_type": "article",
@@ -1666,7 +1642,7 @@
       "container": "Journal of Vision",
       "bib_id": 10,
       "year_suffix": "",
-      "text_id": 153
+      "text_id": 150
     },
     {
       "bib_type": "article",
@@ -1683,7 +1659,7 @@
       "container": "Trends in Cognitive Sciences",
       "bib_id": 11,
       "year_suffix": "",
-      "text_id": 154
+      "text_id": 151
     },
     {
       "bib_type": "article",
@@ -1700,7 +1676,7 @@
       "container": "Computational Intelligence and Neuroscience",
       "bib_id": 12,
       "year_suffix": "",
-      "text_id": 155
+      "text_id": 152
     },
     {
       "bib_type": "article",
@@ -1717,7 +1693,7 @@
       "container": "Developmental Psychology",
       "bib_id": 13,
       "year_suffix": "",
-      "text_id": 156
+      "text_id": 153
     },
     {
       "bib_type": "article",
@@ -1734,7 +1710,7 @@
       "container": "Frontiers in Psychology",
       "bib_id": 14,
       "year_suffix": "",
-      "text_id": 157
+      "text_id": 154
     },
     {
       "bib_type": "article",
@@ -1751,7 +1727,7 @@
       "container": "Developmental Cognitive Neuroscience",
       "bib_id": 15,
       "year_suffix": "",
-      "text_id": 158
+      "text_id": 155
     },
     {
       "bib_type": "article",
@@ -1768,7 +1744,7 @@
       "container": "Frontiers in Psychology",
       "bib_id": 16,
       "year_suffix": "",
-      "text_id": 159
+      "text_id": 156
     },
     {
       "bib_type": "article",
@@ -1785,7 +1761,7 @@
       "container": "Physiological Reviews",
       "bib_id": 17,
       "year_suffix": "",
-      "text_id": 160
+      "text_id": 157
     },
     {
       "bib_type": "article",
@@ -1802,7 +1778,7 @@
       "container": "Developmental Science",
       "bib_id": 18,
       "year_suffix": "",
-      "text_id": 161
+      "text_id": 158
     }
   ],
   "xref": [
@@ -1918,109 +1894,109 @@
       "xref_id": 5,
       "xref_type": "bibr",
       "contents": "(Kayhan et al., 2019;",
-      "text_id": 59
+      "text_id": 56
     },
     {
       "xref_id": 6,
       "xref_type": "bibr",
       "contents": "Kopp & Lindenberger, 2011;",
-      "text_id": 59
+      "text_id": 56
     },
     {
       "xref_id": 8,
       "xref_type": "bibr",
       "contents": "Monroy et al., 2019)",
-      "text_id": 59
+      "text_id": 56
     },
     {
       "xref_id": 0,
       "xref_type": "figure",
       "contents": "1a",
-      "text_id": 66
+      "text_id": 63
     },
     {
       "xref_id": null,
       "xref_type": "bibr",
       "contents": "Köster et al.",
-      "text_id": 68
+      "text_id": 65
     },
     {
       "xref_id": 0,
       "xref_type": "figure",
       "contents": "1b",
-      "text_id": 70
+      "text_id": 67
     },
     {
       "xref_id": 18,
       "xref_type": "bibr",
       "contents": "(Webb et al., 2005)",
-      "text_id": 73
+      "text_id": 70
     },
     {
       "xref_id": 0,
       "xref_type": "figure",
       "contents": "S1",
-      "text_id": 75
+      "text_id": 72
     },
     {
       "xref_id": null,
       "xref_type": "figure",
       "contents": "S2",
-      "text_id": 84
+      "text_id": 81
     },
     {
       "xref_id": 18,
       "xref_type": "bibr",
       "contents": "Webb et al. (2005)",
-      "text_id": 90
+      "text_id": 87
     },
     {
       "xref_id": 5,
       "xref_type": "bibr",
       "contents": "Kayhan et al. (2019)",
-      "text_id": 90
+      "text_id": 87
     },
     {
       "xref_id": 6,
       "xref_type": "bibr",
       "contents": "Kopp and Lindenberger (2011)",
-      "text_id": 90
+      "text_id": 87
     },
     {
       "xref_id": 8,
       "xref_type": "bibr",
       "contents": "Monroy et al. (2019)",
-      "text_id": 90
+      "text_id": 87
     },
     {
       "xref_id": 13,
       "xref_type": "bibr",
       "contents": "(Reid et al., 2009)",
-      "text_id": 91
+      "text_id": 88
     },
     {
       "xref_id": 14,
       "xref_type": "bibr",
       "contents": "( Ruhnau et al., 2013)",
-      "text_id": 93
+      "text_id": 90
     },
     {
       "xref_id": 18,
       "xref_type": "bibr",
       "contents": "(Webb et al., 2005)",
-      "text_id": 96
+      "text_id": 93
     },
     {
       "xref_id": 2,
       "xref_type": "bibr",
       "contents": "(Gelman & Stern, 2006;",
-      "text_id": 142
+      "text_id": 139
     },
     {
       "xref_id": 9,
       "xref_type": "bibr",
       "contents": "Nieuwenhuis et al., 2011)",
-      "text_id": 142
+      "text_id": 139
     }
   ],
   "figure": [

@@ -165,7 +165,7 @@
       "paragraph_id": 3,
       "section_id": 1,
       "page_number": null,
-      "formatted": "This conclusion is in line with the discrete-capacity hypothesis but contrary to alternative theories, which share the assumption that all array items are encoded into VWM to some extent <ref type=\"bibr\">(Oberauer &amp; Lin, 2017;<\/ref><ref type=\"bibr\" target=\"#b14\">Schneegans &amp; Bays, 2017;<\/ref><ref type=\"bibr\" target=\"#b16\">van den Berg et al., 2012)<\/ref>."
+      "formatted": "This conclusion is in line with the discrete-capacity hypothesis but contrary to alternative theories, which share the assumption that all array items are encoded into VWM to some extent <ref type=\"bibr\">(Oberauer &amp; Lin, 2017;<\/ref> <ref type=\"bibr\" target=\"#b14\">Schneegans &amp; Bays, 2017;<\/ref> <ref type=\"bibr\" target=\"#b16\">van den Berg et al., 2012)<\/ref>."
     },
     {
       "text": "The series of experiments I report here was motivated by the aim to identify boundary conditions for Adam et al.'s finding.",
@@ -896,7 +896,7 @@
       "formatted": null
     },
     {
-      "text": "Therefore, we can multiply the precision parameter κ j with two binary variables, x j and z i,j , both drawn from a Bernoulli distribution:",
+      "text": "Therefore, we can multiply the precision parameter κ j with two binary variables, x j and z i,j , both drawn from a Bernoulli distribution: ) 0.0 0.2 0.4 0.6 0.8 1.0 Output Position P(mem) 1 2 3 4 5 6 1 2 3 4 5 6 1 2 3 4 5 6 1 2 3 4 5 6 0 20 40 60 80 Output Position SD Experiment 1 Experiment 2 Experiment 3 Experiment 4 Adam et al.",
       "text_id": 109,
       "paragraph_id": 27,
       "section_id": 7,
@@ -904,7 +904,7 @@
       "formatted": null
     },
     {
-      "text": ") 0.0 0.2 0.4 0.6 0.8 1.0 Output Position P(mem) 1 2 3 4 5 6 1 2 3 4 5 6 1 2 3 4 5 6 1 2 3 4 5 6 0 20 40 60 80 Output Position SD Experiment 1 Experiment 2 Experiment 3 Experiment 4 Adam et al.",
+      "text": "(2017) 0.0 0.2 0.4 0.6 0.8 1.0 Output Position P(nontarget) 0.0 0.2 0.4 0.6 0.8 1.0 Output Position P(uniform) The first equation, x j , expresses whether participant j is from the mixture-model population (x j = 1) or from the consistently guessing population (x j = 0).",
       "text_id": 110,
       "paragraph_id": 28,
       "section_id": 7,
@@ -912,7 +912,7 @@
       "formatted": null
     },
     {
-      "text": "(2017) 0.0 0.2 0.4 0.6 0.8 1.0 Output Position P(nontarget) 0.0 0.2 0.4 0.6 0.8 1.0 Output Position P(uniform) The first equation, x j , expresses whether participant j is from the mixture-model population (x j = 1) or from the consistently guessing population (x j = 0).",
+      "text": "The probability that a participant comes from the mixture-model distribution is parameter P mix .",
       "text_id": 111,
       "paragraph_id": 28,
       "section_id": 7,
@@ -920,7 +920,7 @@
       "formatted": null
     },
     {
-      "text": "The probability that a participant comes from the mixture-model distribution is parameter P mix .",
+      "text": "The second binary variable, z i,j , expresses whether a mixture-model participant's response on trial i actually comes from memory (z i,j = 1) or from guessing (z i,j = 0).",
       "text_id": 112,
       "paragraph_id": 28,
       "section_id": 7,
@@ -928,7 +928,7 @@
       "formatted": null
     },
     {
-      "text": "The second binary variable, z i,j , expresses whether a mixture-model participant's response on trial i actually comes from memory (z i,j = 1) or from guessing (z i,j = 0).",
+      "text": "The probability that person j responds on the basis of memory is given by parameter Pm j .",
       "text_id": 113,
       "paragraph_id": 28,
       "section_id": 7,
@@ -936,7 +936,7 @@
       "formatted": null
     },
     {
-      "text": "The probability that person j responds on the basis of memory is given by parameter Pm j .",
+      "text": "If and only if both binary variables are 1, the response is modeled as coming from a von Mises distribution with precision κ; otherwise, it is drawn from a uniform distribution.",
       "text_id": 114,
       "paragraph_id": 28,
       "section_id": 7,
@@ -944,7 +944,7 @@
       "formatted": null
     },
     {
-      "text": "If and only if both binary variables are 1, the response is modeled as coming from a von Mises distribution with precision κ; otherwise, it is drawn from a uniform distribution.",
+      "text": "The prior for P mix was a uniform distribution in the range [0, 1].",
       "text_id": 115,
       "paragraph_id": 28,
       "section_id": 7,
@@ -952,16 +952,8 @@
       "formatted": null
     },
     {
-      "text": "The prior for P mix was a uniform distribution in the range [0, 1].",
-      "text_id": 116,
-      "paragraph_id": 28,
-      "section_id": 7,
-      "page_number": null,
-      "formatted": null
-    },
-    {
       "text": "The participant-level parameters are modeled as draws from a population distribution:",
-      "text_id": 117,
+      "text_id": 116,
       "paragraph_id": 29,
       "section_id": 7,
       "page_number": null,
@@ -969,7 +961,7 @@
     },
     {
       "text": "The priors for these two distributions are the same as in the standard mixture model (Oberauer et al., 2017), with one exception: I used gamma(5, 0.2) as the prior for the mean of precision, which assigns low prior probability to small precision values.",
-      "text_id": 118,
+      "text_id": 117,
       "paragraph_id": 30,
       "section_id": 7,
       "page_number": null,
@@ -977,7 +969,7 @@
     },
     {
       "text": "This represents the assumption that persons from the mixture-model population have a memory precision that is clearly distinguishable from guessing.",
-      "text_id": 119,
+      "text_id": 118,
       "paragraph_id": 30,
       "section_id": 7,
       "page_number": null,
@@ -985,7 +977,7 @@
     },
     {
       "text": "I applied the HDMM to the data of the last output position of Set Size 6 in each experiment because that is the condition in which the first approach detected the most participants with uniform error distributions.",
-      "text_id": 120,
+      "text_id": 119,
       "paragraph_id": 31,
       "section_id": 7,
       "page_number": null,
@@ -993,7 +985,7 @@
     },
     {
       "text": "Figure 6 shows the posterior distribution of P mix for the five experiments.",
-      "text_id": 121,
+      "text_id": 120,
       "paragraph_id": 31,
       "section_id": 7,
       "page_number": null,
@@ -1001,7 +993,7 @@
     },
     {
       "text": "For the present experiments, high values of P mix are most credible, implying that the probability of encountering a person with consistent guessing behavior in the population is low.",
-      "text_id": 122,
+      "text_id": 121,
       "paragraph_id": 31,
       "section_id": 7,
       "page_number": null,
@@ -1009,7 +1001,7 @@
     },
     {
       "text": "For the data of Adam et al., by contrast, the posterior of P mix was poorly located.",
-      "text_id": 123,
+      "text_id": 122,
       "paragraph_id": 31,
       "section_id": 7,
       "page_number": null,
@@ -1017,7 +1009,7 @@
     },
     {
       "text": "This means that in light of the data, nearly every value of P mix is credible.",
-      "text_id": 124,
+      "text_id": 123,
       "paragraph_id": 31,
       "section_id": 7,
       "page_number": null,
@@ -1025,7 +1017,7 @@
     },
     {
       "text": "Hence, these data of Adam et al. are compatible with the conjecture that most or all participants are in consistent zero-information states, but they are equally compatible with the assumption that none of them are.",
-      "text_id": 125,
+      "text_id": 124,
       "paragraph_id": 31,
       "section_id": 7,
       "page_number": null,
@@ -1033,7 +1025,7 @@
     },
     {
       "text": "For each participant, the proportion of posterior samples of x i that are zero provides an estimate of posterior probability that the participant belongs to the consistent-guessing population.",
-      "text_id": 126,
+      "text_id": 125,
       "paragraph_id": 32,
       "section_id": 7,
       "page_number": null,
@@ -1041,7 +1033,7 @@
     },
     {
       "text": "Figure 7 plots the two indicators of individual zero-information states against each other-the BIC difference from the maximumlikelihood model comparison and the posterior probability of a consistent zero-information state from the Bayesian HDMM.",
-      "text_id": 127,
+      "text_id": 126,
       "paragraph_id": 32,
       "section_id": 7,
       "page_number": null,
@@ -1049,7 +1041,7 @@
     },
     {
       "text": "The two indicators show a nearly perfect rank-order correlation in each experiment, but the posterior probability of x i = 0 from the HDMM rarely exceeded .5 even for participants for which the BIC difference was in favor of the uniform model over the mixture model.",
-      "text_id": 128,
+      "text_id": 127,
       "paragraph_id": 32,
       "section_id": 7,
       "page_number": null,
@@ -1057,7 +1049,7 @@
     },
     {
       "text": "To further check the validity of the classification of error distributions as coming from zero-information states, I selected the data of Set Size 6, Output Position 6, from those participants whose data in that design cell were fitted better by a uniform model than the mixture model according to the BIC.",
-      "text_id": 129,
+      "text_id": 128,
       "paragraph_id": 33,
       "section_id": 7,
       "page_number": null,
@@ -1065,7 +1057,7 @@
     },
     {
       "text": "Their error distributions are plotted in Figure 8.",
-      "text_id": 130,
+      "text_id": 129,
       "paragraph_id": 33,
       "section_id": 7,
       "page_number": null,
@@ -1073,7 +1065,7 @@
     },
     {
       "text": "Whereas the error distribution of the data from Adam et al. plausibly came from a uniform distribution, those from the present experiments show a peak around zero, indicating that at least some of the participants identified as having had zero-information states had some memory for the true feature on at least some of the trials.",
-      "text_id": 131,
+      "text_id": 130,
       "paragraph_id": 33,
       "section_id": 7,
       "page_number": null,
@@ -1081,7 +1073,7 @@
     },
     {
       "text": "Participants were asked to respond with the left mouse button when they remembered the color and with the right mouse button when they thought they were only guessing.",
-      "text_id": 132,
+      "text_id": 131,
       "paragraph_id": 34,
       "section_id": 8,
       "page_number": null,
@@ -1089,7 +1081,7 @@
     },
     {
       "text": "Figure 9 plots error distributions from Set Size 6-the condition with the most even split between self-reported memory-based and guessing responses.",
-      "text_id": 133,
+      "text_id": 132,
       "paragraph_id": 34,
       "section_id": 8,
       "page_number": null,
@@ -1097,7 +1089,7 @@
     },
     {
       "text": "In all four experiments, the error distributions from self-reported guesses were approximately uniform.",
-      "text_id": 134,
+      "text_id": 133,
       "paragraph_id": 34,
       "section_id": 8,
       "page_number": null,
@@ -1105,7 +1097,7 @@
     },
     {
       "text": "Apparently, participants had good meta-cognitive insight into when their responses were informed by memory and when they were not-at least they were very good at identifying the latter situation.",
-      "text_id": 135,
+      "text_id": 134,
       "paragraph_id": 34,
       "section_id": 8,
       "page_number": null,
@@ -1113,7 +1105,7 @@
     },
     {
       "text": "At the same time, the error distributions from self-reported memorybased responses still showed a substantial number of very large errors, reflected in the broad tails of the distributions.",
-      "text_id": 136,
+      "text_id": 135,
       "paragraph_id": 34,
       "section_id": 8,
       "page_number": null,
@@ -1121,7 +1113,7 @@
     },
     {
       "text": "This could be because, as participants were instructed to use the right mouse button conservatively, they used the left mouse button in case of doubt.",
-      "text_id": 137,
+      "text_id": 136,
       "paragraph_id": 34,
       "section_id": 8,
       "page_number": null,
@@ -1129,7 +1121,7 @@
     },
     {
       "text": "In this interpretation, the decision to use the left or the right mouse button would be made as a signaldetection process on a continuously varying degree of confidence, with a conservative criterion.",
-      "text_id": 138,
+      "text_id": 137,
       "paragraph_id": 34,
       "section_id": 8,
       "page_number": null,
@@ -1137,7 +1129,7 @@
     },
     {
       "text": "Alternatively, self-reported guesses could reflect a qualitatively different meta-cognitive state from selfreported memory-based responses.",
-      "text_id": 139,
+      "text_id": 138,
       "paragraph_id": 35,
       "section_id": 8,
       "page_number": null,
@@ -1145,7 +1137,7 @@
     },
     {
       "text": "Self-reported guesses could reflect the trials on which participants made a deliberate decision to guess, perhaps because they found the attempt to remember the color hopeless or not worth the effort of a lengthy retrieval attempt.",
-      "text_id": 140,
+      "text_id": 139,
       "paragraph_id": 35,
       "section_id": 8,
       "page_number": null,
@@ -1153,7 +1145,7 @@
     },
     {
       "text": "By contrast, responses with the left mouse button reflect genuine memory-based responses, some of which happen to reflect extremely poor, noisy memory, leading to very large errors.",
-      "text_id": 141,
+      "text_id": 140,
       "paragraph_id": 35,
       "section_id": 8,
       "page_number": null,
@@ -1161,7 +1153,7 @@
     },
     {
       "text": "Future research measuring people's confidence with a more fine-grained, approximately continuous scale could perhaps help to adjudicate between these possibilities.",
-      "text_id": 142,
+      "text_id": 141,
       "paragraph_id": 35,
       "section_id": 8,
       "page_number": null,
@@ -1169,15 +1161,15 @@
     },
     {
       "text": "People's highly accurate meta-cognitive judgments agree with earlier findings showing a strong relation between confidence and precision of reproduction (Honig et al., 2020;Mitchell & Cusack, 2018;Rademaker et al., 2012).",
-      "text_id": 143,
+      "text_id": 142,
       "paragraph_id": 36,
       "section_id": 8,
       "page_number": null,
-      "formatted": "People's highly accurate meta-cognitive judgments agree with earlier findings showing a strong relation between confidence and precision of reproduction <ref type=\"bibr\" target=\"#b6\">(Honig et al., 2020;<\/ref><ref type=\"bibr\" target=\"#b9\">Mitchell &amp; Cusack, 2018;<\/ref><ref type=\"bibr\">Rademaker et al., 2012)<\/ref>."
+      "formatted": "People's highly accurate meta-cognitive judgments agree with earlier findings showing a strong relation between confidence and precision of reproduction <ref type=\"bibr\" target=\"#b6\">(Honig et al., 2020;<\/ref> <ref type=\"bibr\" target=\"#b9\">Mitchell &amp; Cusack, 2018;<\/ref> <ref type=\"bibr\">Rademaker et al., 2012)<\/ref>."
     },
     {
       "text": "Moreover, they converge with the observation that the present participants-like those in the Adam et al. study-were very good at ordering their responses by reproduction accuracy.",
-      "text_id": 144,
+      "text_id": 143,
       "paragraph_id": 36,
       "section_id": 8,
       "page_number": null,
@@ -1185,7 +1177,7 @@
     },
     {
       "text": "My initial motivation in the present series of experiments was to investigate the possibility that the zeroinformation states that Adam et al. (2017) identified reflected limitations of encoding rather than limitations of working memory.",
-      "text_id": 145,
+      "text_id": 144,
       "paragraph_id": 37,
       "section_id": 9,
       "page_number": null,
@@ -1193,7 +1185,7 @@
     },
     {
       "text": "The results provided evidence against that assumption: In Experiment 1, colors were presented sequentially at a relatively slow pace, giving participants ample opportunity to attend each of them.",
-      "text_id": 146,
+      "text_id": 145,
       "paragraph_id": 37,
       "section_id": 9,
       "page_number": null,
@@ -1201,7 +1193,7 @@
     },
     {
       "text": "By contrast, Experiments 3 and 4 replicated the brief, simultaneous presentation of arrays as in the original study by Adam et al., which could have caused limitations of encoding.",
-      "text_id": 147,
+      "text_id": 146,
       "paragraph_id": 37,
       "section_id": 9,
       "page_number": null,
@@ -1209,7 +1201,7 @@
     },
     {
       "text": "Neither overall performance nor the evidence for zero-information states in individual conditions or participants differed between these experiments.",
-      "text_id": 148,
+      "text_id": 147,
       "paragraph_id": 37,
       "section_id": 9,
       "page_number": null,
@@ -1217,7 +1209,7 @@
     },
     {
       "text": "Therefore, presenting arrays of colors simultaneously for merely 150 ms does not impose a noticeable limit on encoding.",
-      "text_id": 149,
+      "text_id": 148,
       "paragraph_id": 37,
       "section_id": 9,
       "page_number": null,
@@ -1225,15 +1217,15 @@
     },
     {
       "text": "This conclusion converges with those from previous studies that found only small, and inconsistent, differences between simultaneous and sequential presentation of simple visual stimuli (Gorgoraptis et al., 2011;Liu & Becker, 2013;Miller et al., 2014) and little gain in memory performance from exposure times longer than a few 100 ms (Bays et al., 2011;Vogel et al., 2006).",
-      "text_id": 150,
+      "text_id": 149,
       "paragraph_id": 37,
       "section_id": 9,
       "page_number": null,
-      "formatted": "This conclusion converges with those from previous studies that found only small, and inconsistent, differences between simultaneous and sequential presentation of simple visual stimuli <ref type=\"bibr\" target=\"#b5\">(Gorgoraptis et al., 2011;<\/ref><ref type=\"bibr\" target=\"#b7\">Liu &amp; Becker, 2013;<\/ref><ref type=\"bibr\" target=\"#b8\">Miller et al., 2014)<\/ref> and little gain in memory performance from exposure times longer than a few 100 ms <ref type=\"bibr\" target=\"#b2\">(Bays et al., 2011;<\/ref><ref type=\"bibr\" target=\"#b19\">Vogel et al., 2006)<\/ref>."
+      "formatted": "This conclusion converges with those from previous studies that found only small, and inconsistent, differences between simultaneous and sequential presentation of simple visual stimuli <ref type=\"bibr\" target=\"#b5\">(Gorgoraptis et al., 2011;<\/ref> <ref type=\"bibr\" target=\"#b7\">Liu &amp; Becker, 2013;<\/ref> <ref type=\"bibr\" target=\"#b8\">Miller et al., 2014)<\/ref> and little gain in memory performance from exposure times longer than a few 100 ms <ref type=\"bibr\" target=\"#b2\">(Bays et al., 2011;<\/ref> <ref type=\"bibr\" target=\"#b19\">Vogel et al., 2006)<\/ref>."
     },
     {
       "text": "Nevertheless, none of the present experiments replicated the observation of uniformly distributed error distributions at the group level, which reflect essentially no information from memory.",
-      "text_id": 151,
+      "text_id": 150,
       "paragraph_id": 38,
       "section_id": 9,
       "page_number": null,
@@ -1241,7 +1233,7 @@
     },
     {
       "text": "Therefore, the \"clear evidence for item limits\" that Adam et al. identified in their data was not found here.",
-      "text_id": 152,
+      "text_id": 151,
       "paragraph_id": 38,
       "section_id": 9,
       "page_number": null,
@@ -1249,7 +1241,7 @@
     },
     {
       "text": "This result converges with the findings of a recent study by Bruning and Lewis-Peacock (2020), who tested continuous reproduction of six locations in a free-ordered whole-report procedure and 0.0 0.2 0.4 0.6 0 .8 1.0 P mix Experiment 1 Experiment 2 Experiment 3 Experiment 4 Adam et al.",
-      "text_id": 153,
+      "text_id": 152,
       "paragraph_id": 38,
       "section_id": 9,
       "page_number": null,
@@ -1257,7 +1249,7 @@
     },
     {
       "text": "(2017) Fig 6 Posterior probability distribution of the P mix parameter from the double-mixture model, which reflects the probability that a participant comes from the hypothetical population of participants who have some memory information at Output Position 6 of the Set Size 6 condition.",
-      "text_id": 154,
+      "text_id": 153,
       "paragraph_id": 38,
       "section_id": 9,
       "page_number": null,
@@ -1265,7 +1257,7 @@
     },
     {
       "text": "Results are shown separately for the four experiments presented here and the original Experiment 1a by Adam et al.",
-      "text_id": 155,
+      "text_id": 154,
       "paragraph_id": 38,
       "section_id": 9,
       "page_number": null,
@@ -1273,7 +1265,7 @@
     },
     {
       "text": "(2017).",
-      "text_id": 156,
+      "text_id": 155,
       "paragraph_id": 38,
       "section_id": 9,
       "page_number": null,
@@ -1281,7 +1273,7 @@
     },
     {
       "text": "Thick horizontal bars are 95% highest-density intervals of the posterior distributions.",
-      "text_id": 157,
+      "text_id": 156,
       "paragraph_id": 38,
       "section_id": 9,
       "page_number": null,
@@ -1289,7 +1281,7 @@
     },
     {
       "text": "found error distributions centered on the true location at all six output positions.",
-      "text_id": 158,
+      "text_id": 157,
       "paragraph_id": 39,
       "section_id": 9,
       "page_number": null,
@@ -1297,7 +1289,7 @@
     },
     {
       "text": "An analysis on the level of participants revealed individual differences: About half of the participants in the present experiments showed evidence consistent with zero-information states and the other half did not; in the data of Adam and colleagues, only a small minority was identified as not showing zero-information states.",
-      "text_id": 159,
+      "text_id": 158,
       "paragraph_id": 39,
       "section_id": 9,
       "page_number": null,
@@ -1305,7 +1297,7 @@
     },
     {
       "text": "Therefore, the present results do not deviate qualitatively from those of Adam and colleagues but quantitatively, reflecting a larger proportion of participants without zero-information states.",
-      "text_id": 160,
+      "text_id": 159,
       "paragraph_id": 39,
       "section_id": 9,
       "page_number": null,
@@ -1313,7 +1305,7 @@
     },
     {
       "text": "Because the samples came from different student populations, it is plausible that they reflect a different mix of individual strategies.",
-      "text_id": 161,
+      "text_id": 160,
       "paragraph_id": 40,
       "section_id": 9,
       "page_number": null,
@@ -1321,7 +1313,7 @@
     },
     {
       "text": "This heterogeneity underscores the limited generalizability of findings from convenience samples of students, such as the present one and those recruited by Adam et al.",
-      "text_id": 162,
+      "text_id": 161,
       "paragraph_id": 40,
       "section_id": 9,
       "page_number": null,
@@ -1329,7 +1321,7 @@
     },
     {
       "text": "Whereas the present findings do not lend support to the hypothesis of discrete item limits in VWM, they do not provide clear evidence against it either, for the following reason: The prediction of uniformly distributed error distributions at large set sizes and late output positions follows from the conjunction of two assumptions.",
-      "text_id": 163,
+      "text_id": 162,
       "paragraph_id": 41,
       "section_id": 9,
       "page_number": null,
@@ -1337,7 +1329,7 @@
     },
     {
       "text": "One is that VWM is limited to a discrete number of items, and the other is that participants very consistently start reproducing the features of items they have in VWM, followed by guessing on those items that they do not have.",
-      "text_id": 164,
+      "text_id": 163,
       "paragraph_id": 41,
       "section_id": 9,
       "page_number": null,
@@ -1345,7 +1337,7 @@
     },
     {
       "text": "If one of these assumptions is wrong, the prediction no longer holds.",
-      "text_id": 165,
+      "text_id": 164,
       "paragraph_id": 41,
       "section_id": 9,
       "page_number": null,
@@ -1353,7 +1345,7 @@
     },
     {
       "text": "It is possible that the second assumption is wrong for the present experiments: Experiment 1 Error (rad) Frequency 3 0 5 10 15 20 25 30 Experiment2",
-      "text_id": 166,
+      "text_id": 165,
       "paragraph_id": 41,
       "section_id": 9,
       "page_number": null,
@@ -1361,7 +1353,7 @@
     },
     {
       "text": "Error (rad)",
-      "text_id": 167,
+      "text_id": 166,
       "paragraph_id": 42,
       "section_id": 9,
       "page_number": null,
@@ -1369,7 +1361,7 @@
     },
     {
       "text": "Error (rad) Guessing = 0 -3 -2 -1 0 1 2 3 -3 -2 -1 0 1 2 3 0 500 1,000 1,500 Guessing = 1 Guessing = 0 Guessing = 1 Guessing = 0 Guessing = 1 Guessing = 0 Guessing = 1 0 1,000 3,000 5,000 0 1,000 3,000 5,000 Frequency 0 500 1,000 1,500 Frequency 0 500 1,000 1,500 Frequency 0 500 1,000 1,500 Frequency 0 500 1,000 1,500 Frequency 0 500 1,000 1,500 Frequency Frequency Frequency Error (rad) Error (rad)",
-      "text_id": 168,
+      "text_id": 167,
       "paragraph_id": 43,
       "section_id": 9,
       "page_number": null,
@@ -1377,7 +1369,7 @@
     },
     {
       "text": "Error (rad) Error (rad)",
-      "text_id": 169,
+      "text_id": 168,
       "paragraph_id": 44,
       "section_id": 9,
       "page_number": null,
@@ -1385,7 +1377,7 @@
     },
     {
       "text": "Fig. 9.",
-      "text_id": 170,
+      "text_id": 169,
       "paragraph_id": 45,
       "section_id": 9,
       "page_number": null,
@@ -1393,6 +1385,14 @@
     },
     {
       "text": "Error distributions from Set Size 6 for responses with the left mouse button (guessing = 0) and with the right mouse button (guessing = 1) in Experiments 1 to 4 (top row to bottom row, respectively).",
+      "text_id": 170,
+      "paragraph_id": 45,
+      "section_id": 9,
+      "page_number": null,
+      "formatted": null
+    },
+    {
+      "text": "Errors were computed as the angular deviation of the selected color from the true color in the color wheel.",
       "text_id": 171,
       "paragraph_id": 45,
       "section_id": 9,
@@ -1400,16 +1400,8 @@
       "formatted": null
     },
     {
-      "text": "Errors were computed as the angular deviation of the selected color from the true color in the color wheel.",
-      "text_id": 172,
-      "paragraph_id": 45,
-      "section_id": 9,
-      "page_number": null,
-      "formatted": null
-    },
-    {
       "text": "Participants might have been less consistent in recalling the items they knew first.",
-      "text_id": 173,
+      "text_id": 172,
       "paragraph_id": 46,
       "section_id": 9,
       "page_number": null,
@@ -1417,7 +1409,7 @@
     },
     {
       "text": "For instance, a person with an item limit of three or four could-at least on a substantial proportion of trials-give their report of a six-item array in a left-to-right, top-to-bottom order, regardless of which items they held in working memory.",
-      "text_id": 174,
+      "text_id": 173,
       "paragraph_id": 46,
       "section_id": 9,
       "page_number": null,
@@ -1425,7 +1417,7 @@
     },
     {
       "text": "In this way, some responses even at the last output position would reflect memory, whereas some earlier responses would reflect guesses.",
-      "text_id": 175,
+      "text_id": 174,
       "paragraph_id": 46,
       "section_id": 9,
       "page_number": null,
@@ -1433,7 +1425,7 @@
     },
     {
       "text": "To conclude, the design of the present experiments, and those of Adam et al., is suited only for providing evidence for the existence of zero-information states in VWM, not against it.",
-      "text_id": 176,
+      "text_id": 175,
       "paragraph_id": 46,
       "section_id": 9,
       "page_number": null,
@@ -1441,7 +1433,7 @@
     },
     {
       "text": "That said, the existence of uniform error distributions in the experiment by Adam et al. is not unambiguous evidence for discrete item limits either.",
-      "text_id": 177,
+      "text_id": 176,
       "paragraph_id": 46,
       "section_id": 9,
       "page_number": null,
@@ -1449,7 +1441,7 @@
     },
     {
       "text": "The assumption of a discrete capacity limit entails that if set size exceeds capacity, people must have a zero-information state about some of the items, as reflected in a uniform error distribution on the circle.",
-      "text_id": 178,
+      "text_id": 177,
       "paragraph_id": 46,
       "section_id": 9,
       "page_number": null,
@@ -1457,7 +1449,7 @@
     },
     {
       "text": "The converse, however, does not hold because there are alternative explanations for uniform error distributions.",
-      "text_id": 179,
+      "text_id": 178,
       "paragraph_id": 46,
       "section_id": 9,
       "page_number": null,
@@ -1465,7 +1457,7 @@
     },
     {
       "text": "One is that they reflect the tail of a broad distribution of memory precisions (van den Berg et al., 2012): Precision fluctuates widely between and within trials, and some items are encoded with such low precision that their reproduction is not measurably better than guessing.",
-      "text_id": 180,
+      "text_id": 179,
       "paragraph_id": 46,
       "section_id": 9,
       "page_number": null,
@@ -1473,7 +1465,7 @@
     },
     {
       "text": "A recent model comparison has shown a better quantitative account of the Adam et al. data by a variable-precision model than by a discrete-capacity model (Schneegans et al.,2020).",
-      "text_id": 181,
+      "text_id": 180,
       "paragraph_id": 46,
       "section_id": 9,
       "page_number": null,
@@ -1481,7 +1473,7 @@
     },
     {
       "text": "This explanation would go along with the assumption that confidence varies continuously as a function of precision (van den Berg et al., 2017), and people make their decisions whether or not to report that they were guessing by placing a criterion on that continuum. Adam et al. argued that this is a theoretically unattractive proposition: A variable-precision model has to allow precision to vary so much that, in some conditions, the precision of items is indistinguishable from zero.",
-      "text_id": 182,
+      "text_id": 181,
       "paragraph_id": 46,
       "section_id": 9,
       "page_number": null,
@@ -1489,7 +1481,7 @@
     },
     {
       "text": "Such a model would exploit the flexibility of a precision distribution that can be stretched out freely to mimic the behavior of a discrete-capacity model.",
-      "text_id": 183,
+      "text_id": 182,
       "paragraph_id": 46,
       "section_id": 9,
       "page_number": null,
@@ -1497,7 +1489,7 @@
     },
     {
       "text": "Another alternative explanation is that people have representations of nonnegligible precision of all array items but choose to guess on some responses nonetheless (Oberauer & Lin, 2017).",
-      "text_id": 184,
+      "text_id": 183,
       "paragraph_id": 47,
       "section_id": 9,
       "page_number": null,
@@ -1505,7 +1497,7 @@
     },
     {
       "text": "Although doing so would mean sacrificing available memory information, it could still be rational because retrieving that information might not be worth the time investment when the information is difficult to retrieve and likely to be poor.",
-      "text_id": 185,
+      "text_id": 184,
       "paragraph_id": 47,
       "section_id": 9,
       "page_number": null,
@@ -1513,7 +1505,7 @@
     },
     {
       "text": "In this account, there is a qualitative distinction between memory-based responses and guesses, but that distinction pertains not to the state of memory but to the person's meta-cognitive decision on whether to use memory.",
-      "text_id": 186,
+      "text_id": 185,
       "paragraph_id": 47,
       "section_id": 9,
       "page_number": null,
@@ -1521,7 +1513,7 @@
     },
     {
       "text": "Applied to the findings of Adam et al., this explanation is not very plausible because one has to assume that nearly every person decided to guess on nearly every trial at Output Position 4 and higher.",
-      "text_id": 187,
+      "text_id": 186,
       "paragraph_id": 47,
       "section_id": 9,
       "page_number": null,
@@ -1529,7 +1521,7 @@
     },
     {
       "text": "Such a high agreement on a strategic decision that involves sacrificing some degree of response accuracy is unlikely.",
-      "text_id": 188,
+      "text_id": 187,
       "paragraph_id": 47,
       "section_id": 9,
       "page_number": null,
@@ -1537,7 +1529,7 @@
     },
     {
       "text": "The present finding that, at best, about half of the participants produced response distributions indistinguishable from guessing substantially mitigates that problem: We only have to assume that some people decide to forfeit a small gain in accuracy by not retrieving weak memories.",
-      "text_id": 189,
+      "text_id": 188,
       "paragraph_id": 47,
       "section_id": 9,
       "page_number": null,
@@ -1545,7 +1537,7 @@
     },
     {
       "text": "In light of individual differences in achievement motivation and in strategy choices, this is a fairly credible assumption.",
-      "text_id": 190,
+      "text_id": 189,
       "paragraph_id": 47,
       "section_id": 9,
       "page_number": null,
@@ -1553,7 +1545,7 @@
     },
     {
       "text": "To conclude, the existence of uniform error distributions is not decisive evidence for a discrete capacity limit on items in working memory, nor is their absence decisive evidence against it.",
-      "text_id": 191,
+      "text_id": 190,
       "paragraph_id": 48,
       "section_id": 9,
       "page_number": null,
@@ -1561,7 +1553,7 @@
     },
     {
       "text": "Nevertheless, the demonstration of uniform error distributions in the experiments of Adam et al. precisely in those conditions in which one would expect them on the basis of a capacity limit to about three to four items increased the credibility of that hypothesis.",
-      "text_id": 192,
+      "text_id": 191,
       "paragraph_id": 48,
       "section_id": 9,
       "page_number": null,
@@ -1569,7 +1561,7 @@
     },
     {
       "text": "Expressed in Bayesian terms, the likelihood of such a finding is high under the assumption of a discrete capacity limit and low-although not zero-for alternative models.",
-      "text_id": 193,
+      "text_id": 192,
       "paragraph_id": 48,
       "section_id": 9,
       "page_number": null,
@@ -1577,7 +1569,7 @@
     },
     {
       "text": "It is lower because alternative models had to invoke auxiliary assumptions with low prior probability.",
-      "text_id": 194,
+      "text_id": 193,
       "paragraph_id": 48,
       "section_id": 9,
       "page_number": null,
@@ -1585,7 +1577,7 @@
     },
     {
       "text": "Thereby, the discrete-capacity hypothesis gained in posterior probability relative to competing accounts of working memory capacity limitations.",
-      "text_id": 195,
+      "text_id": 194,
       "paragraph_id": 48,
       "section_id": 9,
       "page_number": null,
@@ -1593,7 +1585,7 @@
     },
     {
       "text": "By the same rationale, the present findings shift the balance of evidence more in favor of the hypothesis that all items of a visual array are represented in VWM with some nonnegligible strength and precision, because the necessary assumptions in alternative models now have higher prior probability.",
-      "text_id": 196,
+      "text_id": 195,
       "paragraph_id": 48,
       "section_id": 9,
       "page_number": null,
@@ -1601,7 +1593,7 @@
     },
     {
       "text": "Action Editor: Barbara Knowlton Editor: Patricia J. Bauer",
-      "text_id": 197,
+      "text_id": 196,
       "paragraph_id": 49,
       "section_id": 10,
       "page_number": null,
@@ -1609,7 +1601,7 @@
     },
     {
       "text": "This research was supported by a grant from the Swiss National Science Foundation (Project 100014_179002).",
-      "text_id": 198,
+      "text_id": 197,
       "paragraph_id": 50,
       "section_id": 11,
       "page_number": null,
@@ -1617,7 +1609,7 @@
     },
     {
       "text": "All raw data and modeling code have been made publicly available via OSF and can be accessed at https://osf.io/vwnbh/.",
-      "text_id": 199,
+      "text_id": 198,
       "paragraph_id": 51,
       "section_id": 12,
       "page_number": null,
@@ -1625,7 +1617,7 @@
     },
     {
       "text": "The design and analysis plan for the experiments were not preregistered.",
-      "text_id": 200,
+      "text_id": 199,
       "paragraph_id": 51,
       "section_id": 12,
       "page_number": null,
@@ -1633,7 +1625,7 @@
     },
     {
       "text": "The author(s) declared that there were no conflicts of interest with respect to the authorship or the publication of this article.",
-      "text_id": 201,
+      "text_id": 200,
       "paragraph_id": 52,
       "section_id": 13,
       "page_number": null,
@@ -1641,7 +1633,7 @@
     },
     {
       "text": "K. Oberauer is the sole author of this article and is responsible for its content.",
-      "text_id": 202,
+      "text_id": 201,
       "paragraph_id": 53,
       "section_id": 14,
       "page_number": null,
@@ -1649,7 +1641,7 @@
     },
     {
       "text": "Additional supporting information can be found at http://journals.sagepub.com/doi/suppl/10.1177/09567976211068045 Note 1.",
-      "text_id": 203,
+      "text_id": 202,
       "paragraph_id": 54,
       "section_id": 15,
       "page_number": null,
@@ -1657,7 +1649,7 @@
     },
     {
       "text": "I am grateful to Kirsten Adam, Ed Vogel, and Ed Awh for sharing their MATLAB script and their raw data on OSF.",
-      "text_id": 204,
+      "text_id": 203,
       "paragraph_id": 54,
       "section_id": 15,
       "page_number": null,
@@ -1665,7 +1657,7 @@
     },
     {
       "text": "the original experiment byAdam et al., the posterior of P(mem)  dropped to values close to zero at the later output positions.",
-      "text_id": 205,
+      "text_id": 204,
       "paragraph_id": 55,
       "section_id": 16,
       "page_number": null,
@@ -1673,7 +1665,7 @@
     },
     {
       "text": "Because the proportion of nontarget responses, after initially rising up to Output Position 3, also dropped to zero, this implies that the proportion of responses attributed to the uniform mixture component approached 1, as shown in the lower right panel of Figure5.",
-      "text_id": 206,
+      "text_id": 205,
       "paragraph_id": 55,
       "section_id": 16,
       "page_number": null,
@@ -1681,7 +1673,7 @@
     },
     {
       "text": "The highest-density interval of P(uniform) also reached 1, meaning that the assumption that all responses at the last one or two output positions SS = 1, OP =",
-      "text_id": 207,
+      "text_id": 206,
       "paragraph_id": 55,
       "section_id": 16,
       "page_number": null,
@@ -1689,6 +1681,14 @@
     },
     {
       "text": "Fig 1 Error distributions for each combination of set size (SS) and output position (OP) in Experiment 1.",
+      "text_id": 207,
+      "paragraph_id": 56,
+      "section_id": 17,
+      "page_number": null,
+      "formatted": null
+    },
+    {
+      "text": "Errors were computed as the angular deviation of the selected color from the true color in the color wheel.",
       "text_id": 208,
       "paragraph_id": 56,
       "section_id": 17,
@@ -1696,16 +1696,8 @@
       "formatted": null
     },
     {
-      "text": "Errors were computed as the angular deviation of the selected color from the true color in the color wheel.",
-      "text_id": 209,
-      "paragraph_id": 56,
-      "section_id": 17,
-      "page_number": null,
-      "formatted": null
-    },
-    {
       "text": "Fig.2.",
-      "text_id": 210,
+      "text_id": 209,
       "paragraph_id": 57,
       "section_id": 18,
       "page_number": null,
@@ -1713,6 +1705,14 @@
     },
     {
       "text": "Error distributions for each combination of set size (SS) and output position (OP) in Experiment 2.",
+      "text_id": 210,
+      "paragraph_id": 57,
+      "section_id": 18,
+      "page_number": null,
+      "formatted": null
+    },
+    {
+      "text": "Errors were computed as the angular deviation of the selected color from the true color in the color wheel.",
       "text_id": 211,
       "paragraph_id": 57,
       "section_id": 18,
@@ -1720,16 +1720,8 @@
       "formatted": null
     },
     {
-      "text": "Errors were computed as the angular deviation of the selected color from the true color in the color wheel.",
-      "text_id": 212,
-      "paragraph_id": 57,
-      "section_id": 18,
-      "page_number": null,
-      "formatted": null
-    },
-    {
       "text": "Fig.3.",
-      "text_id": 213,
+      "text_id": 212,
       "paragraph_id": 58,
       "section_id": 19,
       "page_number": null,
@@ -1737,6 +1729,14 @@
     },
     {
       "text": "Error distributions for each combination of set size (SS) and output position (OP) in Experiment 3.",
+      "text_id": 213,
+      "paragraph_id": 58,
+      "section_id": 19,
+      "page_number": null,
+      "formatted": null
+    },
+    {
+      "text": "Errors were computed as the angular deviation of the selected color from the true color in the color wheel.",
       "text_id": 214,
       "paragraph_id": 58,
       "section_id": 19,
@@ -1744,15 +1744,15 @@
       "formatted": null
     },
     {
-      "text": "Errors were computed as the angular deviation of the selected color from the true color in the color wheel.",
+      "text": "Fig 4 Error distributions for each output position (OP) in Experiment 4.",
       "text_id": 215,
-      "paragraph_id": 58,
-      "section_id": 19,
+      "paragraph_id": 59,
+      "section_id": 20,
       "page_number": null,
       "formatted": null
     },
     {
-      "text": "Fig 4 Error distributions for each output position (OP) in Experiment 4.",
+      "text": "Errors were computed as the angular deviation of the selected color from the true color in the color wheel.",
       "text_id": 216,
       "paragraph_id": 59,
       "section_id": 20,
@@ -1760,16 +1760,8 @@
       "formatted": null
     },
     {
-      "text": "Errors were computed as the angular deviation of the selected color from the true color in the color wheel.",
-      "text_id": 217,
-      "paragraph_id": 59,
-      "section_id": 20,
-      "page_number": null,
-      "formatted": null
-    },
-    {
       "text": "Fig.5.",
-      "text_id": 218,
+      "text_id": 217,
       "paragraph_id": 60,
       "section_id": 21,
       "page_number": null,
@@ -1777,7 +1769,7 @@
     },
     {
       "text": "Estimates from the three-parameter mixture model for each output position of the Set Size 6 condition for five experiments: the four presented here and the original Experiment 1a byAdam et al. (2017).",
-      "text_id": 219,
+      "text_id": 218,
       "paragraph_id": 60,
       "section_id": 21,
       "page_number": null,
@@ -1785,7 +1777,7 @@
     },
     {
       "text": "Each data point is the mode of the posterior distribution of the populationlevel mean parameter (the mode is the parameter value with the highest posterior probability).",
-      "text_id": 220,
+      "text_id": 219,
       "paragraph_id": 60,
       "section_id": 21,
       "page_number": null,
@@ -1793,7 +1785,7 @@
     },
     {
       "text": "Error bars are 95% highest-density intervals.",
-      "text_id": 221,
+      "text_id": 220,
       "paragraph_id": 60,
       "section_id": 21,
       "page_number": null,
@@ -1801,7 +1793,7 @@
     },
     {
       "text": "Fig.7.",
-      "text_id": 222,
+      "text_id": 221,
       "paragraph_id": 61,
       "section_id": 22,
       "page_number": null,
@@ -1809,7 +1801,7 @@
     },
     {
       "text": "Correspondence of indicators of individual zero-information states: Bayesian information criterion (BIC) difference from the maximumlikelihood model comparison as a function of the posterior probability of a consistent zero-information state from the Bayesian hierarchical double-mixture model.",
-      "text_id": 223,
+      "text_id": 222,
       "paragraph_id": 61,
       "section_id": 22,
       "page_number": null,
@@ -1817,7 +1809,7 @@
     },
     {
       "text": "Positive BIC differences reflect evidence for the uniform model over the two-parameter mixture model.",
-      "text_id": 224,
+      "text_id": 223,
       "paragraph_id": 61,
       "section_id": 22,
       "page_number": null,
@@ -1825,7 +1817,7 @@
     },
     {
       "text": "Each data point comes from one participant in the Set Size 6, Output Position 6 condition.",
-      "text_id": 225,
+      "text_id": 224,
       "paragraph_id": 61,
       "section_id": 22,
       "page_number": null,
@@ -1833,7 +1825,7 @@
     },
     {
       "text": "One data point with a BIC difference of -203 was omitted from Experiment4.",
-      "text_id": 226,
+      "text_id": 225,
       "paragraph_id": 61,
       "section_id": 22,
       "page_number": null,
@@ -1841,7 +1833,7 @@
     },
     {
       "text": "Fig.8.",
-      "text_id": 227,
+      "text_id": 226,
       "paragraph_id": 62,
       "section_id": 23,
       "page_number": null,
@@ -1849,7 +1841,7 @@
     },
     {
       "text": "Error distributions from the Set Size 6, Output Position 6 condition for the subset of participants who were identified as having had a zero-information state by the individual maximum-likelihood fits of the two-parameter mixture model.",
-      "text_id": 228,
+      "text_id": 227,
       "paragraph_id": 62,
       "section_id": 23,
       "page_number": null,
@@ -1857,7 +1849,7 @@
     },
     {
       "text": "Results are shown separately for the four experiments presented here and the original Experiment 1a byAdam et al. (2017).",
-      "text_id": 229,
+      "text_id": 228,
       "paragraph_id": 62,
       "section_id": 23,
       "page_number": null,
@@ -1865,7 +1857,7 @@
     },
     {
       "text": "Errors were computed as the angular deviation of the selected color from the true color in the color wheel.",
-      "text_id": 230,
+      "text_id": 229,
       "paragraph_id": 62,
       "section_id": 23,
       "page_number": null,
@@ -1873,7 +1865,7 @@
     },
     {
       "text": "Number of Participants for Whom a Uniform Model Fitted the Error Distributions Better Than a Two-Parameter Mixture Model, Separately for Each Combination of Set Size and Output Position (OP)",
-      "text_id": 231,
+      "text_id": 230,
       "paragraph_id": 63,
       "section_id": 24,
       "page_number": null,
@@ -1881,7 +1873,7 @@
     },
     {
       "text": "Adam, K. C. S., Vogel, E. K., & Awh, E. (2017). Clear evi- dence for item limits in visual working memory. Cognitive Psychology, 97, 79-97. https://doi.org/10.1016/j.cog psych.2017.07.001",
-      "text_id": 232,
+      "text_id": 231,
       "paragraph_id": 64,
       "section_id": 25,
       "page_number": null,
@@ -1889,7 +1881,7 @@
     },
     {
       "text": "Bays, P. M., Catalao, R. F. G., & Husain, M. (2009). The preci- sion of visual working memory is set by allocation of a shared resource. Journal of Vision, 9(10), Article 7. https:// doi.org/10.1167/9.10.7",
-      "text_id": 233,
+      "text_id": 232,
       "paragraph_id": 65,
       "section_id": 25,
       "page_number": null,
@@ -1897,7 +1889,7 @@
     },
     {
       "text": "Bays, P. M., Gorgoraptis, N., Wee, N., Marshall, L., & Husain, M. (2011). Temporal dynamics of encoding, storage, and reallocation of visual working memory. Journal of Vision, 11(10), Article 6. https://doi.org/10.1167/11.10.6",
-      "text_id": 234,
+      "text_id": 233,
       "paragraph_id": 66,
       "section_id": 25,
       "page_number": null,
@@ -1905,7 +1897,7 @@
     },
     {
       "text": "Brainard, D. H. (1997). The psychophysics toolbox. Spatial Vision, 10(4), 433-436.",
-      "text_id": 235,
+      "text_id": 234,
       "paragraph_id": 67,
       "section_id": 25,
       "page_number": null,
@@ -1913,7 +1905,7 @@
     },
     {
       "text": "Bruning, A. L., & Lewis-Peacock, J. A. (2020). Long-term memory guides resource allocation in working mem- ory. Scientific Reports, 10(1), Article 22161. https://doi .org/10.1038/s41598-020-79108-1",
-      "text_id": 236,
+      "text_id": 235,
       "paragraph_id": 68,
       "section_id": 25,
       "page_number": null,
@@ -1921,7 +1913,7 @@
     },
     {
       "text": "Gorgoraptis, N., Catalao, R. F. G., Bays, P. M., & Husain, M. (2011). Dynamic updating of working memory resources for visual objects. The Journal of Neuroscience, 31, 8502-8511.",
-      "text_id": 237,
+      "text_id": 236,
       "paragraph_id": 69,
       "section_id": 25,
       "page_number": null,
@@ -1929,7 +1921,7 @@
     },
     {
       "text": "Honig, M., Ma, W. J., & Fougnie, D. (2020). Humans incor- porate trial-to-trial working memory uncertainty into rewarded decisions. Proceedings of the National Academy of Sciences, USA, 117(15), 8391-8397. https://doi.org/ 10.1073/pnas.1918143117",
-      "text_id": 238,
+      "text_id": 237,
       "paragraph_id": 70,
       "section_id": 25,
       "page_number": null,
@@ -1937,7 +1929,7 @@
     },
     {
       "text": "Liu, T., & Becker, M. W. (2013). Serial consolidation of ori- entation information into visual short-term memory. Psychological Science, 24(6), 1044-1050. https://doi.org/ 10.1177/0956797612464381",
-      "text_id": 239,
+      "text_id": 238,
       "paragraph_id": 71,
       "section_id": 25,
       "page_number": null,
@@ -1945,7 +1937,7 @@
     },
     {
       "text": "Miller, J. R., Becker, M. W., & Liu, T. (2014). The bandwidth of consolidation into visual short-term memory depends on the visual feature. Visual Cognition, 22, 920-947. https:// doi.org/10.1080/13506285.2014.936923",
-      "text_id": 240,
+      "text_id": 239,
       "paragraph_id": 72,
       "section_id": 25,
       "page_number": null,
@@ -1953,7 +1945,7 @@
     },
     {
       "text": "Mitchell, D. J., & Cusack, R. (2018). Visual short-term memory through the lifespan: Preserved benefits of context and metacognition. Psychology and Aging, 33(5), 841-854. https://doi.org/10.1037/pag0000265",
-      "text_id": 241,
+      "text_id": 240,
       "paragraph_id": 73,
       "section_id": 25,
       "page_number": null,
@@ -1961,7 +1953,7 @@
     },
     {
       "text": "Oberauer, K., & Lin, H.-Y. (2017). An interference model of visual working memory. Psychological Review, 124, 21-59.",
-      "text_id": 242,
+      "text_id": 241,
       "paragraph_id": 74,
       "section_id": 25,
       "page_number": null,
@@ -1969,7 +1961,7 @@
     },
     {
       "text": "Oberauer, K., Stoneking, C., Wabersich, D., & Lin, H.-Y. (2017). Hierarchical Bayesian measurement models for continuous reproduction of visual features from working memory. Journal of Vision, 17(5), Article 11. https://doi .org/10.1167/17.5.11",
-      "text_id": 243,
+      "text_id": 242,
       "paragraph_id": 75,
       "section_id": 25,
       "page_number": null,
@@ -1977,7 +1969,7 @@
     },
     {
       "text": "Plummer, M. (2016). JAGS (Version 4.2.0) [Computer soft- ware]. http://mcmc-jags.sourceforge.net/ Rademaker, R. L., Tredway, C. H., & Tong, F. (2012). Introspective judgments predict the precision and likeli- hood of successful maintenance of visual working mem- ory. Journal of Vision, 12(13), Article 21. https://doi.org/ 10.1167/12.13.21",
-      "text_id": 244,
+      "text_id": 243,
       "paragraph_id": 76,
       "section_id": 25,
       "page_number": null,
@@ -1985,7 +1977,7 @@
     },
     {
       "text": "R Core Team. (2019). R: A language and environment for statistical computing (Version 3.6.2) [Computer software]. http://www.R-project.org",
-      "text_id": 245,
+      "text_id": 244,
       "paragraph_id": 77,
       "section_id": 25,
       "page_number": null,
@@ -1993,7 +1985,7 @@
     },
     {
       "text": "Schneegans, S., & Bays, P. M. (2017). Neural architecture for feature binding in visual working memory. The Journal of Neuroscience, 37, 3913-3925. https://doi.org/10.1523/ JNEUROSCI.3493-16.2017",
-      "text_id": 246,
+      "text_id": 245,
       "paragraph_id": 78,
       "section_id": 25,
       "page_number": null,
@@ -2001,7 +1993,7 @@
     },
     {
       "text": "Schneegans, S., Taylor, R., & Bays, P. M. (2020). Stochastic sampling provides a unifying account of visual work- ing memory limits. Proceedings of the National Academy of Sciences, USA, 117(34), 20959-20968. https://doi.org/ 10.1073/pnas.2004306117",
-      "text_id": 247,
+      "text_id": 246,
       "paragraph_id": 79,
       "section_id": 25,
       "page_number": null,
@@ -2009,7 +2001,7 @@
     },
     {
       "text": "van den Berg, R., Shin, H., Chou, W.-C., George, R., & Ma, W. J. (2012). Variability in encoding precision accounts for visual short-term memory limitations. Proceedings of the National Academy of Sciences, USA, 109, 8780-8785.",
-      "text_id": 248,
+      "text_id": 247,
       "paragraph_id": 80,
       "section_id": 25,
       "page_number": null,
@@ -2017,7 +2009,7 @@
     },
     {
       "text": "van den Berg, R., Yoo, A. H., & Ma, W. J. (2017). Fechner's law in metacognition: A quantitative model of visual working memory confidence. Psychological Review, 124, 197-214. https://doi.org/10.1037/rev0000060",
-      "text_id": 249,
+      "text_id": 248,
       "paragraph_id": 81,
       "section_id": 25,
       "page_number": null,
@@ -2025,7 +2017,7 @@
     },
     {
       "text": "Varadhan, R. & Borchers, H. W. (2020). dfoptim: Derivative- free optimization (Version 2016-7-1) [Computer software]. https://cran.r-project.org/web/packages/dfoptim/index .html",
-      "text_id": 250,
+      "text_id": 249,
       "paragraph_id": 82,
       "section_id": 25,
       "page_number": null,
@@ -2033,7 +2025,7 @@
     },
     {
       "text": "Vogel, E. K., Woodman, G. F., & Luck, S. J. (2006). The time course of consolidation in visual working memory. Journal of Experimental Psychology: Human Perception and Performance, 32, 1436-1451.",
-      "text_id": 251,
+      "text_id": 250,
       "paragraph_id": 83,
       "section_id": 25,
       "page_number": null,
@@ -2041,7 +2033,7 @@
     },
     {
       "text": "Wyszecki, G., & Stiles, W. S. (1982). Color science: Concepts and methods, quantitative data and formulae (2nd ed.). Wiley.",
-      "text_id": 252,
+      "text_id": 251,
       "paragraph_id": 84,
       "section_id": 25,
       "page_number": null,
@@ -2049,7 +2041,7 @@
     },
     {
       "text": "Zhang, W., & Luck, S. J. (2008). Discrete fixed-resolution repre- sentations in visual working memory. Nature, 453, 233-236.",
-      "text_id": 253,
+      "text_id": 252,
       "paragraph_id": 85,
       "section_id": 25,
       "page_number": null,
@@ -2249,12 +2241,12 @@
     {
       "href": "https://osf.io/vwnbh/",
       "link_text": null,
-      "text_id": 199
+      "text_id": 198
     },
     {
       "href": "http://journals.sagepub.com/doi/suppl/10.1177/09567976211068045",
       "link_text": null,
-      "text_id": 203
+      "text_id": 202
     }
   ],
   "bib": [
@@ -2273,7 +2265,7 @@
       "container": "Cognitive Psychology",
       "bib_id": 0,
       "year_suffix": "",
-      "text_id": 232
+      "text_id": 231
     },
     {
       "bib_type": "article",
@@ -2290,7 +2282,7 @@
       "container": "Journal of Vision",
       "bib_id": 1,
       "year_suffix": "",
-      "text_id": 233
+      "text_id": 232
     },
     {
       "bib_type": "article",
@@ -2307,7 +2299,7 @@
       "container": "Journal of Vision",
       "bib_id": 2,
       "year_suffix": "",
-      "text_id": 234
+      "text_id": 233
     },
     {
       "bib_type": "article",
@@ -2324,7 +2316,7 @@
       "container": "Spatial Vision",
       "bib_id": 3,
       "year_suffix": "",
-      "text_id": 235
+      "text_id": 234
     },
     {
       "bib_type": "article",
@@ -2341,7 +2333,7 @@
       "container": "Scientific Reports",
       "bib_id": 4,
       "year_suffix": "",
-      "text_id": 236
+      "text_id": 235
     },
     {
       "bib_type": "article",
@@ -2358,7 +2350,7 @@
       "container": "The Journal of Neuroscience",
       "bib_id": 5,
       "year_suffix": "",
-      "text_id": 237
+      "text_id": 236
     },
     {
       "bib_type": "article",
@@ -2375,7 +2367,7 @@
       "container": "Proceedings of the National Academy of Sciences",
       "bib_id": 6,
       "year_suffix": "",
-      "text_id": 238
+      "text_id": 237
     },
     {
       "bib_type": "article",
@@ -2392,7 +2384,7 @@
       "container": "Psychological Science",
       "bib_id": 7,
       "year_suffix": "",
-      "text_id": 239
+      "text_id": 238
     },
     {
       "bib_type": "article",
@@ -2409,7 +2401,7 @@
       "container": "Visual Cognition",
       "bib_id": 8,
       "year_suffix": "",
-      "text_id": 240
+      "text_id": 239
     },
     {
       "bib_type": "article",
@@ -2426,7 +2418,7 @@
       "container": "Psychology and Aging",
       "bib_id": 9,
       "year_suffix": "",
-      "text_id": 241
+      "text_id": 240
     },
     {
       "bib_type": "article",
@@ -2443,7 +2435,7 @@
       "container": "Psychological Review",
       "bib_id": 10,
       "year_suffix": "",
-      "text_id": 242
+      "text_id": 241
     },
     {
       "bib_type": "article",
@@ -2460,7 +2452,7 @@
       "container": "Journal of Vision",
       "bib_id": 11,
       "year_suffix": "",
-      "text_id": 243
+      "text_id": 242
     },
     {
       "bib_type": "article",
@@ -2477,7 +2469,7 @@
       "container": "Journal of Vision",
       "bib_id": 12,
       "year_suffix": "",
-      "text_id": 244
+      "text_id": 243
     },
     {
       "bib_type": "article",
@@ -2494,7 +2486,7 @@
       "container": "",
       "bib_id": 13,
       "year_suffix": "",
-      "text_id": 245
+      "text_id": 244
     },
     {
       "bib_type": "article",
@@ -2511,7 +2503,7 @@
       "container": "The Journal of Neuroscience",
       "bib_id": 14,
       "year_suffix": "",
-      "text_id": 246
+      "text_id": 245
     },
     {
       "bib_type": "article",
@@ -2528,7 +2520,7 @@
       "container": "Proceedings of the National Academy of Sciences, USA",
       "bib_id": 15,
       "year_suffix": "",
-      "text_id": 247
+      "text_id": 246
     },
     {
       "bib_type": "article",
@@ -2545,7 +2537,7 @@
       "container": "Proceedings of the National Academy of Sciences",
       "bib_id": 16,
       "year_suffix": "",
-      "text_id": 248
+      "text_id": 247
     },
     {
       "bib_type": "article",
@@ -2562,7 +2554,7 @@
       "container": "Psychological Review",
       "bib_id": 17,
       "year_suffix": "",
-      "text_id": 249
+      "text_id": 248
     },
     {
       "bib_type": "article",
@@ -2579,7 +2571,7 @@
       "container": "",
       "bib_id": 18,
       "year_suffix": "",
-      "text_id": 250
+      "text_id": 249
     },
     {
       "bib_type": "article",
@@ -2596,7 +2588,7 @@
       "container": "Journal of Experimental Psychology: Human Perception and Performance",
       "bib_id": 19,
       "year_suffix": "",
-      "text_id": 251
+      "text_id": 250
     },
     {
       "bib_type": "article",
@@ -2613,7 +2605,7 @@
       "container": "",
       "bib_id": 20,
       "year_suffix": "",
-      "text_id": 252
+      "text_id": 251
     },
     {
       "bib_type": "article",
@@ -2630,7 +2622,7 @@
       "container": "Nature",
       "bib_id": 21,
       "year_suffix": "",
-      "text_id": 253
+      "text_id": 252
     }
   ],
   "xref": [
@@ -2788,145 +2780,145 @@
       "xref_id": null,
       "xref_type": "bibr",
       "contents": "(Oberauer et al., 2017)",
-      "text_id": 118
+      "text_id": 117
     },
     {
       "xref_id": null,
       "xref_type": "figure",
       "contents": "6",
-      "text_id": 121
+      "text_id": 120
     },
     {
       "xref_id": 6,
       "xref_type": "figure",
       "contents": "7",
-      "text_id": 127
+      "text_id": 126
     },
     {
       "xref_id": 7,
       "xref_type": "figure",
       "contents": "8",
-      "text_id": 130
+      "text_id": 129
     },
     {
       "xref_id": null,
       "xref_type": "figure",
       "contents": "9",
-      "text_id": 133
+      "text_id": 132
     },
     {
       "xref_id": 6,
       "xref_type": "bibr",
       "contents": "(Honig et al., 2020;",
-      "text_id": 143
+      "text_id": 142
     },
     {
       "xref_id": 9,
       "xref_type": "bibr",
       "contents": "Mitchell & Cusack, 2018;",
-      "text_id": 143
+      "text_id": 142
     },
     {
       "xref_id": null,
       "xref_type": "bibr",
       "contents": "Rademaker et al., 2012)",
-      "text_id": 143
+      "text_id": 142
     },
     {
       "xref_id": 0,
       "xref_type": "bibr",
       "contents": "Adam et al. (2017)",
-      "text_id": 145
+      "text_id": 144
     },
     {
       "xref_id": null,
       "xref_type": "bibr",
       "contents": "Adam et al.",
-      "text_id": 147
+      "text_id": 146
     },
     {
       "xref_id": 5,
       "xref_type": "bibr",
       "contents": "(Gorgoraptis et al., 2011;",
-      "text_id": 150
+      "text_id": 149
     },
     {
       "xref_id": 7,
       "xref_type": "bibr",
       "contents": "Liu & Becker, 2013;",
-      "text_id": 150
+      "text_id": 149
     },
     {
       "xref_id": 8,
       "xref_type": "bibr",
       "contents": "Miller et al., 2014)",
-      "text_id": 150
+      "text_id": 149
     },
     {
       "xref_id": 2,
       "xref_type": "bibr",
       "contents": "(Bays et al., 2011;",
-      "text_id": 150
+      "text_id": 149
     },
     {
       "xref_id": 19,
       "xref_type": "bibr",
       "contents": "Vogel et al., 2006)",
-      "text_id": 150
+      "text_id": 149
     },
     {
       "xref_id": null,
       "xref_type": "bibr",
       "contents": "Adam et al. identified",
-      "text_id": 152
+      "text_id": 151
     },
     {
       "xref_id": null,
       "xref_type": "figure",
       "contents": "9",
-      "text_id": 170
+      "text_id": 169
     },
     {
       "xref_id": 16,
       "xref_type": "bibr",
       "contents": "(van den Berg et al., 2012)",
-      "text_id": 180
+      "text_id": 179
     },
     {
       "xref_id": 15,
       "xref_type": "bibr",
       "contents": "(Schneegans et al.,2020",
-      "text_id": 181
+      "text_id": 180
     },
     {
       "xref_id": 17,
       "xref_type": "bibr",
       "contents": "(van den Berg et al., 2017)",
-      "text_id": 182
+      "text_id": 181
     },
     {
       "xref_id": null,
       "xref_type": "bibr",
       "contents": "Adam et al. argued",
-      "text_id": 182
+      "text_id": 181
     },
     {
       "xref_id": null,
       "xref_type": "bibr",
       "contents": "(Oberauer & Lin, 2017)",
-      "text_id": 184
+      "text_id": 183
     },
     {
       "xref_id": 0,
       "xref_type": "bibr",
       "contents": "Adam et al. (2017)",
-      "text_id": 219
+      "text_id": 218
     },
     {
       "xref_id": 0,
       "xref_type": "bibr",
       "contents": "Adam et al. (2017)",
-      "text_id": 229
+      "text_id": 228
     }
   ],
   "figure": [
@@ -3214,7 +3206,7 @@
       "rhs": "1"
     },
     {
-      "text_id": 111,
+      "text_id": 110,
       "grp_id": 12,
       "lhs": "j",
       "df": null,
@@ -3222,7 +3214,7 @@
       "rhs": "1"
     },
     {
-      "text_id": 111,
+      "text_id": 110,
       "grp_id": 12,
       "lhs": "j",
       "df": null,
@@ -3230,7 +3222,7 @@
       "rhs": "0"
     },
     {
-      "text_id": 113,
+      "text_id": 112,
       "grp_id": 13,
       "lhs": "j",
       "df": null,
@@ -3238,7 +3230,7 @@
       "rhs": "1"
     },
     {
-      "text_id": 113,
+      "text_id": 112,
       "grp_id": 13,
       "lhs": "j",
       "df": null,
@@ -3246,7 +3238,7 @@
       "rhs": "0"
     },
     {
-      "text_id": 128,
+      "text_id": 127,
       "grp_id": 14,
       "lhs": "i",
       "df": null,
@@ -3254,7 +3246,7 @@
       "rhs": "0"
     },
     {
-      "text_id": 168,
+      "text_id": 167,
       "grp_id": 15,
       "lhs": "Guessing",
       "df": null,
@@ -3262,7 +3254,7 @@
       "rhs": "0"
     },
     {
-      "text_id": 168,
+      "text_id": 167,
       "grp_id": 15,
       "lhs": "Guessing",
       "df": null,
@@ -3270,7 +3262,7 @@
       "rhs": "1"
     },
     {
-      "text_id": 168,
+      "text_id": 167,
       "grp_id": 15,
       "lhs": "Guessing",
       "df": null,
@@ -3278,7 +3270,7 @@
       "rhs": "0"
     },
     {
-      "text_id": 168,
+      "text_id": 167,
       "grp_id": 15,
       "lhs": "Guessing",
       "df": null,
@@ -3286,7 +3278,7 @@
       "rhs": "1"
     },
     {
-      "text_id": 168,
+      "text_id": 167,
       "grp_id": 15,
       "lhs": "Guessing",
       "df": null,
@@ -3294,7 +3286,7 @@
       "rhs": "0"
     },
     {
-      "text_id": 168,
+      "text_id": 167,
       "grp_id": 15,
       "lhs": "Guessing",
       "df": null,
@@ -3302,7 +3294,7 @@
       "rhs": "1"
     },
     {
-      "text_id": 168,
+      "text_id": 167,
       "grp_id": 15,
       "lhs": "Guessing",
       "df": null,
@@ -3310,7 +3302,7 @@
       "rhs": "0"
     },
     {
-      "text_id": 168,
+      "text_id": 167,
       "grp_id": 15,
       "lhs": "Guessing",
       "df": null,
@@ -3318,7 +3310,7 @@
       "rhs": "1"
     },
     {
-      "text_id": 171,
+      "text_id": 170,
       "grp_id": 16,
       "lhs": "guessing",
       "df": null,
@@ -3326,7 +3318,7 @@
       "rhs": "0"
     },
     {
-      "text_id": 171,
+      "text_id": 170,
       "grp_id": 16,
       "lhs": "guessing",
       "df": null,
@@ -3334,7 +3326,7 @@
       "rhs": "1"
     },
     {
-      "text_id": 207,
+      "text_id": 206,
       "grp_id": 17,
       "lhs": "SS",
       "df": null,
