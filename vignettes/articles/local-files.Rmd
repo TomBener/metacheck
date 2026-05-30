@@ -100,14 +100,7 @@ repo$table
 
 `no_paper()` creates a minimal placeholder paper object. You need one because
 the module pipeline always requires a paper, but here you are not checking a
-specific manuscript — just a folder. `no_paper()` handles this correctly.
-Passing `NULL` instead works identically — both are equivalent:
-
-```{r}
-# These two calls do exactly the same thing:
-module_run(no_paper(), "repo_check", local_path = "C:/projects/my_study")
-module_run(NULL,       "repo_check", local_path = "C:/projects/my_study")
-```
+specific manuscript — just a folder.
 
 A typical `$summary_text` when the folder is missing a README might look like:
 
