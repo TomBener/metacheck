@@ -1,5 +1,54 @@
 # Changelog
 
+## metacheck 0.0.0.9106
+
+- Added functions from svutils back in.
+- Reorganised some ML read-in functions (internal).
+- Ollama further support in
+  [`llm()`](https://scienceverse.github.io/metacheck/reference/llm.md)
+  and vignette.
+- The code_check module handles local file with the argument
+  `local_path`
+- New
+  [`local_files()`](https://scienceverse.github.io/metacheck/reference/local_files.md)
+  function
+
+## metacheck 0.0.0.9105
+
+- Much less buggy
+  [`.grobid_to_bibr()`](https://scienceverse.github.io/metacheck/reference/dot-grobid_to_bibr.md)
+  conversion, handling URLs in text, xrefs, url, and eq tables better.
+- `extract_equations()` renamed to
+  [`extract_eq()`](https://scienceverse.github.io/metacheck/reference/extract_eq.md)
+  and now extracts degrees of freedom (df column)
+- Improvements to
+  [`.tei_text()`](https://scienceverse.github.io/metacheck/reference/dot-tei_text.md)
+  to fix common problems with grobid handling of equations (e.g., ““)
+- Corresponding paper schema changes
+- Updated `psychsci` and
+  [`demopaper()`](https://scienceverse.github.io/metacheck/reference/demopaper.md)
+  and
+  [`demofile()`](https://scienceverse.github.io/metacheck/reference/demofile.md)
+  for new schema and read
+
+## metacheck 0.0.0.9104
+
+- Updated `file_types` to fix a bug that prepended X to all extensions
+  starting with a number.
+- [`paper_id()`](https://scienceverse.github.io/metacheck/reference/paper_id.md)
+  now returns a vector, not a table, fixing modules that used it that
+  way
+- [`read()`](https://scienceverse.github.io/metacheck/reference/read.md)
+  no longer errors when reading an empty directory, just messages and
+  returns an empty paperlist
+- [`read()`](https://scienceverse.github.io/metacheck/reference/read.md)
+  only reads in the .json version if a .json and .xml file with the same
+  name exist
+- [`read()`](https://scienceverse.github.io/metacheck/reference/read.md)
+  has a new argument `recursive` (default FALSE) to recursively read a
+  directory. This does not handle it well if individual files have the
+  same paper_id, so don’t do that.
+
 ## metacheck 0.0.0.9103
 
 - converting grobid xml to bibr json now saves the file after each
@@ -227,7 +276,7 @@
   [`collapse_section()`](https://scienceverse.github.io/metacheck/reference/collapse_section.md),
   [`link()`](https://scienceverse.github.io/metacheck/reference/link.md),
   [`plural()`](https://scienceverse.github.io/metacheck/reference/plural.md),
-  `pb()`
+  [`pb()`](https://scienceverse.github.io/metacheck/reference/pb.md)
 
 ## metacheck 0.0.0.9059
 

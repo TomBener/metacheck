@@ -1,7 +1,6 @@
 # Batch Processing
 
 ``` r
-
 devtools::load_all(".")
 library(dplyr) # for data wrangling
 library(readr) # reading and writing CSV files
@@ -22,7 +21,6 @@ servers](https://www.scienceverse.org/metacheck/convert.json) and check
 those in order for accessibility (some require API keys).
 
 ``` r
-
 convert(file_path = "pdf", 
         save_path = "converted")
 ```
@@ -43,7 +41,6 @@ Currently, you need an API key to use bibr while we work out how to
 afford this resource, but we hope this will change soon.
 
 ``` r
-
 convert(file_path = "pdf", 
         save_path = "converted", 
         method = "bibr",
@@ -62,7 +59,6 @@ with a local version of grobid, and save the JSON files in a directory
 called “converted”.
 
 ``` r
-
 convert(file_path = "pdf", 
         save_path = "converted", 
         method = "grobid",
@@ -75,7 +71,6 @@ file_path only contains XML files). Save them in a directory called
 “converted”.
 
 ``` r
-
 convert(file_path = "xml", 
         save_path = "converted",
         method = "xml")
@@ -87,7 +82,6 @@ After you convert your papers to JSON format, read in the files to
 metacheck and save in an object called `papers`.
 
 ``` r
-
 papers <- read("converted")
 ```
 
@@ -97,7 +91,6 @@ and only needs to happen once, so it is often useful to save the
 `papers` from this object on future runs of your script.
 
 ``` r
-
 # load from RDS for efficiency
 # saveRDS(papers, "psysci_oa.Rds")
 papers <- readRDS("psysci_oa.Rds")
@@ -109,7 +102,6 @@ Now `papers` is a list of metacheck paper objects, each of which
 contains structured information about the paper.
 
 ``` r
-
 paper <- papers[[10]]
 ```
 
@@ -118,7 +110,6 @@ paper <- papers[[10]]
 The `paper_id` is taken from the name of the original file.
 
 ``` r
-
 paper$paper_id
 ```
 
@@ -129,7 +120,6 @@ paper$paper_id
 The `author` table contains information for each author.
 
 ``` r
-
 paper$author
 ```
 
@@ -146,7 +136,6 @@ Use the
 function to extract and combine tables from a paper list.
 
 ``` r
-
 paper_table(papers, "author") |> 
   dplyr::filter(grepl("Glasgow", affiliation)) |>
   count(given, family)
@@ -177,7 +166,6 @@ info. The import sometimes makes mistakes with the DOI, so be cautious
 about using this.
 
 ``` r
-
 paper$info
 ```
 
@@ -194,7 +182,6 @@ You can get this as a table for a batch of papers using
 [`paper_table()`](https://scienceverse.github.io/metacheck/reference/paper_table.md).
 
 ``` r
-
 paper_table(papers, "info") |> 
   select(doi, title) |>
   head()
@@ -218,7 +205,6 @@ reference text (text_id), and the reference parsed by doi, title,
 author, year, etc.
 
 ``` r
-
 paper$bib[1, ] |> str()
 ```
 
@@ -237,14 +223,13 @@ paper$bib[1, ] |> str()
     #>  $ container  : chr "The Economic Journal"
     #>  $ bib_id     : int 0
     #>  $ year_suffix: chr ""
-    #>  $ text_id    : int 244
+    #>  $ text_id    : int 240
 
 The `bib_match` table contains CrossRef or DataCite entries for each
 item in the reference list, if a match was found. In this table, the
 authors and editors columns are list columns containing tables.
 
 ``` r
-
 bib_match_1 <- paper$bib_match[1, ]
 str(bib_match_1)
 ```
@@ -280,7 +265,6 @@ from the bib and bib_match tables with the text table and returns the
 paper_id, bib_id, DOI, and the text of the reference.
 
 ``` r
-
 ref_table(paper) |> head()
 ```
 
@@ -303,15 +287,12 @@ tables or figures. It includes an id to link them to a table
 the sentence that it is cited in (`text_id`).
 
 ``` r
-
 xref <- paper$xref
 filter(xref, xref_id == 5, xref_type == "bib")
 ```
 
-    #>   xref_id xref_type               contents text_id
-    #> 1       5       bib  (Berns & Moore, 2012)      88
-    #> 2       5       bib Berns and Moore (2012)     170
-    #> 3       5       bib  (Berns & Moore, 2012)     191
+    #> [1] xref_id   xref_type contents  text_id  
+    #> <0 rows> (or 0-length row.names)
 
 ### Text
 
@@ -322,17 +303,9 @@ page_number is the page of the original document, starting with 1, that
 this sentence starts on.
 
 ``` r
-
 paper$text |> head()
 ```
 
-    #>   text_id paragraph_id section_id
-    #> 1       1            1          0
-    #> 2       2            1          0
-    #> 3       3            1          0
-    #> 4       4            1          0
-    #> 5       5            1          0
-    #> 6       6            1          0
     #>                                                                                                                                                                                                                                                                                                   text
     #> 1                                                                                                                                                                              Humans sometimes share with others whom they may never meet or know, in violation of the dictates of pure selfinterest.
     #> 2                                                                                                               Research has not established which neuropsychological mechanisms support lending decisions, nor whether their influence extends to markets involving significant financial incentives.
@@ -340,13 +313,13 @@ paper$text |> head()
     #> 4                                                                                                                                    In a large Internet database of microloan requests (N = 13,500), we found that positive affective features of photographs promoted the success of those requests.
     #> 5 We then established that neural activity (i.e., in the nucleus accumbens) and self-reported positive arousal in a neuroimaging sample (N = 28) predicted the success of loan requests on the Internet, above and beyond the effects of the neuroimaging sample's own choices (i.e., to lend or not).
     #> 6                                                                                                                                                    These findings suggest that elicitation of positive arousal can promote the success of loan requests, both in the laboratory and on the Internet.
-    #>   page_number
-    #> 1          NA
-    #> 2          NA
-    #> 3          NA
-    #> 4          NA
-    #> 5          NA
-    #> 6          NA
+    #>   text_id paragraph_id section_id page_number formatted
+    #> 1       1            1          0          NA      <NA>
+    #> 2       2            1          0          NA      <NA>
+    #> 3       3            1          0          NA      <NA>
+    #> 4       4            1          0          NA      <NA>
+    #> 5       5            1          0          NA      <NA>
+    #> 6       6            1          0          NA      <NA>
 
 ### Section
 
@@ -361,17 +334,16 @@ in with grobid will not have a parent_section_id or
 classification_score.
 
 ``` r
-
 paper$section |> head()
 ```
 
     #>   section_id                          header parent_section_id section_type
     #> 1          0                        Abstract                NA     abstract
     #> 2          1                Research Article                NA        intro
-    #> 3          3                  Internet study                NA       method
-    #> 4          4              Neuroimaging study                NA       method
-    #> 5          5 Power analysis and sample size.                NA       method
-    #> 6          7                  Internet study                NA      results
+    #> 3          2                          Method                NA       method
+    #> 4          3                  Internet study                NA       method
+    #> 5          4              Neuroimaging study                NA       method
+    #> 6          5 Power analysis and sample size.                NA       method
     #>   classification_score
     #> 1                   NA
     #> 2                   NA
@@ -392,7 +364,6 @@ structure as the `text` table above, so that you can easily chain text
 searches.
 
 ``` r
-
 all_sentences <- text_search(papers)
 ```
 
@@ -401,7 +372,6 @@ You can customise
 to return paragraphs or sections instead of sentences.
 
 ``` r
-
 paragraphs <- text_search(papers, return = "paragraph")
 ```
 
@@ -416,7 +386,6 @@ this is usually not very efficient, so we can use a search pattern to
 filter the text.
 
 ``` r
-
 search <- text_search(papers, pattern = "Scotland")
 ```
 
@@ -431,7 +400,6 @@ following example first finds all sentences with “DeBruine” and then
 searches only that set for “2006”.
 
 ``` r
-
 search <- papers |>
   text_search("DeBruine") |>
   text_search("2006")
@@ -441,7 +409,6 @@ If you want to do a search for any of a set of words, you can set the
 pattern to a vector of terms to search.
 
 ``` r
-
 pattern <- c("Chicago Face Database", 
              "Face Research Lab London")
 search <- papers |>
@@ -455,7 +422,6 @@ below returns every sentence that contains a word that contains text
 with p \> \###, regardless of the spaces.
 
 ``` r
-
 search <- text_search(papers, pattern = "p\\s*>\\s*0?\\.[0-9]+\\b")
 ```
 
@@ -465,7 +431,6 @@ You can return just the matching text for a regular expression by
 setting the results to “match”.
 
 ``` r
-
 match <- text_search(papers, 
                      pattern = "p\\s*>\\s*0?\\.[0-9]+\\b", 
                      return = "match")
@@ -476,7 +441,6 @@ of sentences around the match using
 [`text_expand()`](https://scienceverse.github.io/metacheck/reference/text_expand.md).
 
 ``` r
-
 expand <- text_expand(results_table = match, 
                       paper = papers,
                       expand_to = "sentence",

@@ -184,6 +184,8 @@ text.
 
 ## Archive Functions
 
+- [`local_files()`](https://scienceverse.github.io/metacheck/reference/local_files.md)
+  : List Local Files
 - [`aspredicted_links()`](https://scienceverse.github.io/metacheck/reference/aspredicted_links.md)
   : Find AsPredicted Links in Papers
 - [`aspredicted_info()`](https://scienceverse.github.io/metacheck/reference/aspredicted_info.md)
