@@ -28,9 +28,8 @@ module_list()
   statements.
 - funding_check: Identify and extract funding statements.
 - funding_check_oi: Identify and extract funding statements.
-- open_practices: This module incorporates ODDPub into metacheck. ODDPub
-  is a text mining algorithm that detects which publications
-  disseminated Open Data or Open Code together with the publication.
+- open_practices: This module searches for open data, code, materials,
+  and registration statements.
 
 \*\*\* METHOD \*\*\*
 
@@ -58,7 +57,8 @@ module_list()
 - stat_effect_size: The Effect Size module checks for effect sizes in
   t-tests and F-tests.
 - stat_p_exact: List any p-values reported with insufficient precision
-  (e.g., p \< .05 or p = n.s.)
+  (e.g., p \< .05 or p = n.s.) or reported as exactly zero (e.g., p =
+  .000).
 - stat_p_nonsig: This module checks for imprecisely reported p values.
   If p \> .05 is detected, it warns for misinterpretations.
 
@@ -123,7 +123,7 @@ mo$title
 mo$summary_text
 ```
 
-    #> [1] "We found 1 imprecise *p* value out of 3 detected."
+    #> [1] "We found 1 imprecise *p* value out of 3 detected *p* values."
 
 ### Traffic light
 
@@ -147,9 +147,9 @@ mo$traffic_light
 ### Table
 
 The `table` is usually a detailed table in the format returned from
-[`search_text()`](https://scienceverse.github.io/metacheck/reference/search_text.md)
+[`text_search()`](https://scienceverse.github.io/metacheck/reference/text_search.md)
 or
-[`expand_text()`](https://scienceverse.github.io/metacheck/reference/expand_text.md),
+[`text_expand()`](https://scienceverse.github.io/metacheck/reference/text_expand.md),
 containing either text relevant to the module, or a classification of
 the text. This table can be of use to further modules in a chain, or to
 metascientific users.
@@ -159,14 +159,14 @@ metascientific users.
 mo$table
 ```
 
-    #> # A tibble: 3 × 13
+    #> # A tibble: 3 × 14
     #>   text_id section_id paragraph_id text     formatted page_number paper_id header
     #>     <int>      <int>        <int> <chr>    <chr>           <int> <chr>    <chr> 
     #> 1      21          8           10 "p=0.00… NA                  3 to_err_… Resul…
     #> 2      22          8           11 "p=0.15… NA                  3 to_err_… Resul…
     #> 3      23          8           12 "p > .0… NA                  3 to_err_… Resul…
-    #> # ℹ 5 more variables: section_type <chr>, p_comp <chr>, p_value <dbl>,
-    #> #   expanded <chr>, imprecise <lgl>
+    #> # ℹ 6 more variables: section_type <chr>, p_comp <chr>, p_value <dbl>,
+    #> #   expanded <chr>, imprecise <lgl>, zero <lgl>
 
 ### Summary Table
 
@@ -181,8 +181,8 @@ module in a chain.
 mo$summary_table
 ```
 
-    #>          paper_id n_imprecise
-    #> 1 to_err_is_human           1
+    #>          paper_id n_imprecise n_zero
+    #> 1 to_err_is_human           1      0
 
 ### Report
 
@@ -243,7 +243,7 @@ mo$prev_outputs
 ```
 
     #> $stat_p_exact
-    #> Exact P-Values: We found 1 imprecise *p* value out of 3 detected.
+    #> Exact P-Values: We found 1 imprecise *p* value out of 3 detected *p* values.
     #> $marginal
     #> Marginal Significance: You described 2 effects with terms related to 'marginally significant'.
 
@@ -800,14 +800,14 @@ ps_metascience <- psychsci[1:10] |>
 ps_metascience$summary_table
 ```
 
-    #>            paper_id p_values n_imprecise marginal
-    #> 1  0956797613520608        6           0        0
-    #> 2  0956797614522816       39           0        0
-    #> 3  0956797614527830       13           2        0
-    #> 4  0956797614557697       24           8        0
-    #> 5  0956797614560771        4           1        0
-    #> 6  0956797614566469        0           0        0
-    #> 7  0956797615569001       25          20        0
-    #> 8  0956797615569889       28           0        4
-    #> 9  0956797615583071       25           2        0
-    #> 10 0956797615588467       21           4        0
+    #>            paper_id p_values n_imprecise n_zero marginal
+    #> 1  0956797613520608        6           0      0        0
+    #> 2  0956797614522816       39           0      0        0
+    #> 3  0956797614527830       13           2      0        0
+    #> 4  0956797614557697       24           8      0        0
+    #> 5  0956797614560771        4           1      0        0
+    #> 6  0956797614566469        0           0      0        0
+    #> 7  0956797615569001       25          20      0        0
+    #> 8  0956797615569889       28           0      0        4
+    #> 9  0956797615583071       25           2      0        0
+    #> 10 0956797615588467       21           4      0        0

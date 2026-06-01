@@ -1,12 +1,12 @@
 # Search text
 
 Search the text of a paper or list of paper objects. Also works on the
-table results of a `search_text()` call.
+table results of a `text_search()` call.
 
 ## Usage
 
 ``` r
-search_text(
+text_search(
   paper,
   pattern = ".*",
   return = c("sentence", "paragraph", "section", "header", "match", "paper_id"),
@@ -77,8 +77,8 @@ The default includes all sections except references, tables and figures.
 
 ``` r
 paper <- demopaper()
-all_text <- search_text(paper)
-study <- search_text(paper, "study")
-equations <- search_text(paper, "\\b\\S+\\s*(=|<)\\s*[0-9\\.]+", return = "match")
-no_numbers <- search_text(paper, "\\d", exclude = TRUE)
+all_text <- text_search(paper)
+study <- text_search(paper, "study")
+equations <- text_search(paper, "\\b\\S+\\s*(=|<)\\s*[0-9\\.]+", return = "match")
+no_numbers <- text_search(paper, "\\d", exclude = TRUE)
 ```

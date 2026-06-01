@@ -34,7 +34,7 @@
 
     <a class="navbar-brand me-2" href="../index.html">metacheck</a>
 
-    <small class="nav-text text-danger me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Unreleased version">0.0.0.9101</small>
+    <small class="nav-text text-danger me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Unreleased version">0.0.0.9103</small>
 
 
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -181,8 +181,8 @@ languages, as detected and classified by GitHub.</p>
 <div class="sourceCode" id="cb6"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fu"><a href="../reference/github_languages.html">github_languages</a></span><span class="op">(</span><span class="st">"scienceverse/metacheck"</span><span class="op">)</span></span>
 <span><span class="co">#&gt;                      repo   language    bytes</span></span>
-<span><span class="co">#&gt; 1  scienceverse/metacheck          R 49846936</span></span>
-<span><span class="co">#&gt; 2  scienceverse/metacheck       HTML 19384087</span></span>
+<span><span class="co">#&gt; 1  scienceverse/metacheck          R 50866031</span></span>
+<span><span class="co">#&gt; 2  scienceverse/metacheck       HTML 19380372</span></span>
 <span><span class="co">#&gt; 3  scienceverse/metacheck        Lua    92710</span></span>
 <span><span class="co">#&gt; 4  scienceverse/metacheck        TeX    40040</span></span>
 <span><span class="co">#&gt; 5  scienceverse/metacheck       AMPL     7571</span></span>
@@ -191,7 +191,7 @@ languages, as detected and classified by GitHub.</p>
 <span><span class="co">#&gt; 8  scienceverse/metacheck      Typst     5329</span></span>
 <span><span class="co">#&gt; 9  scienceverse/metacheck   Makefile     1407</span></span>
 <span><span class="co">#&gt; 10 scienceverse/metacheck Dockerfile     1201</span></span>
-<span><span class="co">#&gt; 11 scienceverse/metacheck JavaScript     1018</span></span>
+<span><span class="co">#&gt; 11 scienceverse/metacheck JavaScript     1116</span></span>
 <span><span class="co">#&gt; 12 scienceverse/metacheck       SCSS      639</span></span>
 <span><span class="co">#&gt; 13 scienceverse/metacheck      Shell       17</span></span></code></pre></div>
 </div>
@@ -295,14 +295,14 @@ directory, non-recursively.</p>
 <span><span class="co">#&gt; 10   133           md   text</span></span>
 <span><span class="co">#&gt; 11     0                 dir</span></span>
 <span><span class="co">#&gt; 12     0                 dir</span></span>
-<span><span class="co">#&gt; 13  2196                file</span></span>
+<span><span class="co">#&gt; 13  2152                file</span></span>
 <span><span class="co">#&gt; 14     0                 dir</span></span>
 <span><span class="co">#&gt; 15     0                 dir</span></span>
 <span><span class="co">#&gt; 16 34303           md   text</span></span>
 <span><span class="co">#&gt; 17  1407                file</span></span>
 <span><span class="co">#&gt; 18     0                 dir</span></span>
-<span><span class="co">#&gt; 19  2762                file</span></span>
-<span><span class="co">#&gt; 20 18875           md   text</span></span>
+<span><span class="co">#&gt; 19  2889                file</span></span>
+<span><span class="co">#&gt; 20 21377           md   text</span></span>
 <span><span class="co">#&gt; 21     0                 dir</span></span>
 <span><span class="co">#&gt; 22     0                 dir</span></span>
 <span><span class="co">#&gt; 23  2023           md   text</span></span>
@@ -404,21 +404,24 @@ with items named “repo”, “readme”, “languages”, and “files”.</p>
 <span><span class="co">#&gt; </span></span>
 <span><span class="co">#&gt; $files</span></span>
 <span><span class="co">#&gt;                repo        clean_repo           name           path</span></span>
-<span><span class="co">#&gt; 1 scienceverse/demo scienceverse/demo         folder         folder</span></span>
-<span><span class="co">#&gt; 2 scienceverse/demo scienceverse/demo good-example.R good-example.R</span></span>
-<span><span class="co">#&gt; 3 scienceverse/demo scienceverse/demo      README.md      README.md</span></span>
+<span><span class="co">#&gt; 1 scienceverse/demo scienceverse/demo           code           code</span></span>
+<span><span class="co">#&gt; 2 scienceverse/demo scienceverse/demo         folder         folder</span></span>
+<span><span class="co">#&gt; 3 scienceverse/demo scienceverse/demo good-example.R good-example.R</span></span>
+<span><span class="co">#&gt; 4 scienceverse/demo scienceverse/demo      README.md      README.md</span></span>
 <span><span class="co">#&gt;                                                              download_url size</span></span>
 <span><span class="co">#&gt; 1                                                                    &lt;NA&gt;    0</span></span>
-<span><span class="co">#&gt; 2 https://raw.githubusercontent.com/scienceverse/demo/main/good-example.R  227</span></span>
-<span><span class="co">#&gt; 3      https://raw.githubusercontent.com/scienceverse/demo/main/README.md   36</span></span>
+<span><span class="co">#&gt; 2                                                                    &lt;NA&gt;    0</span></span>
+<span><span class="co">#&gt; 3 https://raw.githubusercontent.com/scienceverse/demo/main/good-example.R  227</span></span>
+<span><span class="co">#&gt; 4      https://raw.githubusercontent.com/scienceverse/demo/main/README.md   36</span></span>
 <span><span class="co">#&gt;   ext type</span></span>
 <span><span class="co">#&gt; 1      dir</span></span>
-<span><span class="co">#&gt; 2   r code</span></span>
-<span><span class="co">#&gt; 3  md text</span></span>
+<span><span class="co">#&gt; 2      dir</span></span>
+<span><span class="co">#&gt; 3   r code</span></span>
+<span><span class="co">#&gt; 4  md text</span></span>
 <span><span class="co">#&gt; </span></span>
 <span><span class="co">#&gt; $languages</span></span>
 <span><span class="co">#&gt;                repo language bytes</span></span>
-<span><span class="co">#&gt; 1 scienceverse/demo        R   227</span></span></code></pre></div>
+<span><span class="co">#&gt; 1 scienceverse/demo        R  1052</span></span></code></pre></div>
 </div>
   </main><aside class="col-md-3"><nav id="toc" aria-label="Table of contents"><h2>On this page</h2>
     </nav></aside>

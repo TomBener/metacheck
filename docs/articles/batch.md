@@ -383,7 +383,7 @@ paper$section |> head()
 ## Text Search
 
 The
-[`search_text()`](https://scienceverse.github.io/metacheck/reference/search_text.md)
+[`text_search()`](https://scienceverse.github.io/metacheck/reference/text_search.md)
 function helps you search the text of a paper or list of papers.
 
 The default arguments give you a data frame containing a row for every
@@ -393,16 +393,16 @@ searches.
 
 ``` r
 
-all_sentences <- search_text(papers)
+all_sentences <- text_search(papers)
 ```
 
 You can customise
-[`search_text()`](https://scienceverse.github.io/metacheck/reference/search_text.md)
+[`text_search()`](https://scienceverse.github.io/metacheck/reference/text_search.md)
 to return paragraphs or sections instead of sentences.
 
 ``` r
 
-paragraphs <- search_text(papers, return = "paragraph")
+paragraphs <- text_search(papers, return = "paragraph")
 ```
 
 A paragraph from the first paper.
@@ -417,7 +417,7 @@ filter the text.
 
 ``` r
 
-search <- search_text(papers, pattern = "Scotland")
+search <- text_search(papers, pattern = "Scotland")
 ```
 
 Here we have 9 results. We’ll just show the text columns along with
@@ -433,8 +433,8 @@ searches only that set for “2006”.
 ``` r
 
 search <- papers |>
-  search_text("DeBruine") |>
-  search_text("2006")
+  text_search("DeBruine") |>
+  text_search("2006")
 ```
 
 If you want to do a search for any of a set of words, you can set the
@@ -445,7 +445,7 @@ pattern to a vector of terms to search.
 pattern <- c("Chicago Face Database", 
              "Face Research Lab London")
 search <- papers |>
-  search_text(pattern)
+  text_search(pattern)
 ```
 
 ### Regex
@@ -456,7 +456,7 @@ with p \> \###, regardless of the spaces.
 
 ``` r
 
-search <- search_text(papers, pattern = "p\\s*>\\s*0?\\.[0-9]+\\b")
+search <- text_search(papers, pattern = "p\\s*>\\s*0?\\.[0-9]+\\b")
 ```
 
 ### Match
@@ -466,18 +466,18 @@ setting the results to “match”.
 
 ``` r
 
-match <- search_text(papers, 
+match <- text_search(papers, 
                      pattern = "p\\s*>\\s*0?\\.[0-9]+\\b", 
                      return = "match")
 ```
 
 You can expand this to the whole sentence, paragraph, or +/- some number
 of sentences around the match using
-[`expand_text()`](https://scienceverse.github.io/metacheck/reference/expand_text.md).
+[`text_expand()`](https://scienceverse.github.io/metacheck/reference/text_expand.md).
 
 ``` r
 
-expand <- expand_text(results_table = match, 
+expand <- text_expand(results_table = match, 
                       paper = papers,
                       expand_to = "sentence",
                       plus = 0,

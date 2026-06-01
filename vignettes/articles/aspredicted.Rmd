@@ -45,7 +45,7 @@ unique(links$href)
 
 ## Retrieve Link Info
 
-We can then use the function `aspredicted_retrieve()` to get structured information from AsPredicted. You can try to run the function on all `r length(unique(links$href))` links above, but AsPredicted will eventually make you complete a captcha before each access (we're working on a way to log into the site to prevent this). But for demonstration purposes, let's just look at one paper.
+We can then use the function `aspredicted_info()` to get structured information from AsPredicted. You can try to run the function on all `r length(unique(links$href))` links above, but AsPredicted will eventually make you complete a captcha before each access (we're working on a way to log into the site to prevent this). But for demonstration purposes, let's just look at one paper.
 
 Below we provide an example where we analyze the paper "[The Evolution of Cognitive Control in Lemurs](https://journals.sagepub.com/doi/10.1177/09567976221082938)", which contains a single preregistration on AsPredicted.
 
@@ -54,7 +54,7 @@ paper <- psychsci$`09567976221082938`
 
 links <- aspredicted_links(paper)
 
-prereg <- aspredicted_retrieve(links, id_col = "href")
+prereg <- aspredicted_info(links, id_col = "href")
 ```
 
 ```{r}
@@ -73,7 +73,7 @@ Checking the sample size of a study against the preregistration is some effort, 
 
 ### Preregistration Sample Size Plan
 
-You can access the sample size plan from the results of `aspredicted_retrieve()` under the column name `AP_sample_size`.
+You can access the sample size plan from the results of `aspredicted_info()` under the column name `AP_sample_size`.
 
 ```{r}
 #| results: 'asis'
@@ -93,7 +93,7 @@ To facilitate this comparison, we can retrieve all paragraphs that contain words
 
 A metacheck module could automatically print the information from the preregistration, and possible relevant text from the manuscript. Our main goal is to increase the ease with which important information from the preregistration is available to the authors and peer reviewers, and remind users that they need to discuss deviations from their preregistration.
 
-It might in addition be useful to retrieve the corresponding section in the article. A simple attempt to achieve this would be to search for words related to 'sample' or 'participants', and retrieve that paragraph. We can use metacheck's inbuilt `search_text()` function. For this paper, we see this simple approach works well.
+It might in addition be useful to retrieve the corresponding section in the article. A simple attempt to achieve this would be to search for words related to 'sample' or 'participants', and retrieve that paragraph. We can use metacheck's inbuilt `text_search()` function. For this paper, we see this simple approach works well.
 
 ```{r}
 #| results: 'asis'
@@ -101,7 +101,7 @@ It might in addition be useful to retrieve the corresponding section in the arti
 regex_sample <- "\\bsample\\b|\\d+\\s+particip\\w+"
 
 # get full paragraphs 
-sample <- search_text(paper, regex_sample,
+sample <- text_search(paper, regex_sample,
                       return= "paragraph")
 
 sample$text |> cat("> ", x = _)
@@ -122,9 +122,9 @@ We can use an overinclusive search for any paragraphs that contain the strings "
 ```{r}
 regex_sample <- "subject|sample|particip"
 regex_numbers <- "[0-9]|one|two|three|four|five|six|seven|eight|nine|ten"
-methres <- search_text(paper, regex_sample,
+methres <- text_search(paper, regex_sample,
                        return = "paragraph") |>
-  search_text(regex_numbers, return = "paragraph")
+  text_search(regex_numbers, return = "paragraph")
 ```
 
 This gives us `r nrow(methres)` paragraphs to deal with. We can then send them to an LLM, and ask which paragraph is most closely related to the text in the preregistration. 
@@ -161,7 +161,7 @@ The use of AI to interpret deviations is convenient, but **can't replace human j
 #| results: 'asis'
 paper <- psychsci$`0956797621991548`
 links <- aspredicted_links(paper)
-prereg <- aspredicted_retrieve(links, id_col = "href")
+prereg <- aspredicted_info(links, id_col = "href")
 
 #sample size
 prereg_sample_size <- unique(prereg$AP_sample_size)
@@ -174,9 +174,9 @@ prereg_sample_size |> cat("> ", x = _)
 # LLM workflow - send potentially relevant paragraphs
 regex_sample <- "subject|sample|particip"
 regex_numbers <- "[0-9]|one|two|three|four|five|six|seven|eight|nine|ten"
-methres <- search_text(paper, regex_sample,
+methres <- text_search(paper, regex_sample,
                        return = "paragraph") |>
-  search_text(regex_numbers, return = "paragraph")
+  text_search(regex_numbers, return = "paragraph")
 
 text <- paste(methres$text, collapse = "\n\n")
 system_prompt <- sprintf(system_prompt_template, prereg_sample_size)
@@ -191,7 +191,7 @@ llm_response$answer |> cat("> ", x = _)
 # manual check - no LLM
 regex_sample <- "\\bsample\\b|\\d+\\s+particip\\w+"
 
-sample <- search_text(paper, regex_sample, 
+sample <- text_search(paper, regex_sample, 
                       return= "paragraph")
 
 sample$text |> cat("> ", x = _)
@@ -212,7 +212,7 @@ aspredicted_sample <- function(paper, use_llm = FALSE) {
   if (nrow(links) == 0) return(list())
   
   # get prereg data from AsPredicted
-  prereg <- aspredicted_retrieve(links, id_col = "href")
+  prereg <- aspredicted_info(links, id_col = "href")
   if (nrow(prereg) == 0 | is.null(prereg$AP_sample_size)) {
     return(list())
   }
@@ -221,7 +221,7 @@ aspredicted_sample <- function(paper, use_llm = FALSE) {
   
   # check paper for possible sample paragraphs
   regex_sample <- "\\bsample\\b|\\d+\\s+particip\\w+"
-  sample <- search_text(paper, regex_sample, 
+  sample <- text_search(paper, regex_sample, 
                         return= "paragraph")
   
   # check LLM only if requested
@@ -235,9 +235,9 @@ aspredicted_sample <- function(paper, use_llm = FALSE) {
     
     regex_sample <- "subject|sample|particip"
     regex_numbers <- "[0-9]|one|two|three|four|five|six|seven|eight|nine|ten"
-    methres <- search_text(paper, regex_sample,
+    methres <- text_search(paper, regex_sample,
                            return = "paragraph") |>
-      search_text(regex_numbers, return = "paragraph")
+      text_search(regex_numbers, return = "paragraph")
     
     text <- paste(methres$text, collapse = "\n\n")
     system_prompt <- sprintf(system_prompt_template, prereg_sample_size)

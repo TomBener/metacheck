@@ -9,6 +9,8 @@ convert(
   file_path,
   save_path = ".",
   method = c("auto", "bibr", "grobid", "xml"),
+  crossref_lookup = FALSE,
+  keep_xml = TRUE,
   ...
 )
 ```
@@ -27,6 +29,14 @@ convert(
 
   whether to use bibr, grobid, or grobid_to_bibr to convert a file (see
   Details)
+
+- crossref_lookup:
+
+  whether to add the bib_match table from crossref
+
+- keep_xml:
+
+  if the method is grobid, whether to keep intermediate XML files
 
 - ...:
 

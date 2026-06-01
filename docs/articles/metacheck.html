@@ -34,7 +34,7 @@
 
     <a class="navbar-brand me-2" href="../index.html">metacheck</a>
 
-    <small class="nav-text text-danger me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Unreleased version">0.0.0.9101</small>
+    <small class="nav-text text-danger me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Unreleased version">0.0.0.9103</small>
 
 
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -130,8 +130,8 @@ able to convert DOC and DOCX files directly.</p>
 </h3>
 <p>The functions <code><a href="../reference/convert.html">convert()</a></code> and <code><a href="../reference/read.html">read()</a></code> also
 work on a folder of files, returning a list of JSON file paths or paper
-objects, respectively. The functions <code><a href="../reference/search_text.html">search_text()</a></code>,
-<code><a href="../reference/expand_text.html">expand_text()</a></code> and <code><a href="../reference/llm.html">llm()</a></code> also work on a list of
+objects, respectively. The functions <code><a href="../reference/text_search.html">text_search()</a></code>,
+<code><a href="../reference/text_expand.html">text_expand()</a></code> and <code><a href="../reference/llm.html">llm()</a></code> also work on a list of
 paper objects.</p>
 </div>
 </div>
@@ -369,12 +369,12 @@ papers from Psychological Science.</p>
 </h2>
 <p>You can access a parsed table of the full text of the paper via
 <code>paper$text</code>, but you may find it more convenient to use the
-function <code><a href="../reference/search_text.html">search_text()</a></code>. The defaults return a data table of
+function <code><a href="../reference/text_search.html">text_search()</a></code>. The defaults return a data table of
 each sentence, with the section type, header, div, paragraph and
 sentence numbers, and file name. (The section type is a best guess from
 the headers, so may not always be accurate.)</p>
 <div class="sourceCode" id="cb16"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="va">text</span> <span class="op">&lt;-</span> <span class="fu"><a href="../reference/search_text.html">search_text</a></span><span class="op">(</span><span class="va">paper</span><span class="op">)</span></span></code></pre></div>
+<code class="sourceCode R"><span><span class="va">text</span> <span class="op">&lt;-</span> <span class="fu"><a href="../reference/text_search.html">text_search</a></span><span class="op">(</span><span class="va">paper</span><span class="op">)</span></span></code></pre></div>
 <table style="width:100%;" class="table">
 <colgroup>
 <col width="0%">
@@ -489,7 +489,7 @@ most mistakes researchers make are unintentional.</td>
 set <code>fixed = TRUE</code> if you want to find exact text
 matches.</p>
 <div class="sourceCode" id="cb17"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="va">text</span> <span class="op">&lt;-</span> <span class="fu"><a href="../reference/search_text.html">search_text</a></span><span class="op">(</span><span class="va">paper</span>, pattern <span class="op">=</span> <span class="st">"metacheck"</span><span class="op">)</span></span></code></pre></div>
+<code class="sourceCode R"><span><span class="va">text</span> <span class="op">&lt;-</span> <span class="fu"><a href="../reference/text_search.html">text_search</a></span><span class="op">(</span><span class="va">paper</span>, pattern <span class="op">=</span> <span class="st">"metacheck"</span><span class="op">)</span></span></code></pre></div>
 <table class="table">
 <colgroup>
 <col width="4%">
@@ -547,7 +547,7 @@ improve best practices.</td>
 <p>Set <code>return</code> to one of “sentence”, “paragraph”, “section”,
 or “match” to control what gets returned.</p>
 <div class="sourceCode" id="cb18"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="va">text</span> <span class="op">&lt;-</span> <span class="fu"><a href="../reference/search_text.html">search_text</a></span><span class="op">(</span><span class="va">paper</span>, <span class="st">"GitHub"</span>, </span>
+<code class="sourceCode R"><span><span class="va">text</span> <span class="op">&lt;-</span> <span class="fu"><a href="../reference/text_search.html">text_search</a></span><span class="op">(</span><span class="va">paper</span>, <span class="st">"GitHub"</span>, </span>
 <span>                    return <span class="op">=</span> <span class="st">"paragraph"</span><span class="op">)</span></span></code></pre></div>
 <table class="table">
 <colgroup>
@@ -617,12 +617,12 @@ and code is also available from <a href="https://osf.io/629bx" class="external-l
 </h3>
 <p>You can also return just the matched text from a regex search by
 setting <code>return = "match"</code>. The extra <code>...</code>
-arguments in <code><a href="../reference/search_text.html">search_text()</a></code> are passed to
+arguments in <code><a href="../reference/text_search.html">text_search()</a></code> are passed to
 <code><a href="https://rdrr.io/r/base/grep.html" class="external-link">grep()</a></code>, so <code>perl = TRUE</code> allows you to use more
 complex regex, like below.</p>
 <div class="sourceCode" id="cb19"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="va">pattern</span> <span class="op">&lt;-</span> <span class="st">"[a-zA-Z]\\S*\\s*(=|&lt;)\\s*[0-9\\.,-]*\\d"</span></span>
-<span><span class="va">text</span> <span class="op">&lt;-</span> <span class="fu"><a href="../reference/search_text.html">search_text</a></span><span class="op">(</span><span class="va">paper</span>, <span class="va">pattern</span>, return <span class="op">=</span> <span class="st">"match"</span>, perl <span class="op">=</span> <span class="cn">TRUE</span><span class="op">)</span></span></code></pre></div>
+<span><span class="va">text</span> <span class="op">&lt;-</span> <span class="fu"><a href="../reference/text_search.html">text_search</a></span><span class="op">(</span><span class="va">paper</span>, <span class="va">pattern</span>, return <span class="op">=</span> <span class="st">"match"</span>, perl <span class="op">=</span> <span class="cn">TRUE</span><span class="op">)</span></span></code></pre></div>
 <table class="table">
 <colgroup>
 <col width="6%">
@@ -785,11 +785,11 @@ complex regex, like below.</p>
 <div class="section level3">
 <h3 id="expand-text">Expand Text<a class="anchor" aria-label="anchor" href="#expand-text"></a>
 </h3>
-<p>You can expand the text returned by <code><a href="../reference/search_text.html">search_text()</a></code> or a
-module with <code><a href="../reference/expand_text.html">expand_text()</a></code>.</p>
+<p>You can expand the text returned by <code><a href="../reference/text_search.html">text_search()</a></code> or a
+module with <code><a href="../reference/text_expand.html">text_expand()</a></code>.</p>
 <div class="sourceCode" id="cb20"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="va">marginal</span> <span class="op">&lt;-</span> <span class="fu"><a href="../reference/search_text.html">search_text</a></span><span class="op">(</span><span class="va">paper</span>, <span class="st">"marginal"</span><span class="op">)</span> <span class="op">|&gt;</span></span>
-<span>  <span class="fu"><a href="../reference/expand_text.html">expand_text</a></span><span class="op">(</span><span class="va">paper</span>, plus <span class="op">=</span> <span class="fl">1</span>, minus <span class="op">=</span> <span class="fl">1</span><span class="op">)</span></span>
+<code class="sourceCode R"><span><span class="va">marginal</span> <span class="op">&lt;-</span> <span class="fu"><a href="../reference/text_search.html">text_search</a></span><span class="op">(</span><span class="va">paper</span>, <span class="st">"marginal"</span><span class="op">)</span> <span class="op">|&gt;</span></span>
+<span>  <span class="fu"><a href="../reference/text_expand.html">text_expand</a></span><span class="op">(</span><span class="va">paper</span>, plus <span class="op">=</span> <span class="fl">1</span>, minus <span class="op">=</span> <span class="fl">1</span><span class="op">)</span></span>
 <span></span>
 <span><span class="va">marginal</span><span class="op">[</span>, <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="st">"text"</span>, <span class="st">"expanded"</span><span class="op">)</span><span class="op">]</span></span></code></pre></div>
 <pre><code><span><span class="co">#&gt; <span style="color: #949494;"># A tibble: 2 × 2</span></span></span>
@@ -819,15 +819,15 @@ file).</p>
 <p>You can get or set the default LLM model with
 <code><a href="../reference/llm_model.html">llm_model()</a></code> and access a list of the current available
 models using <code><a href="../reference/llm_model_list.html">llm_model_list()</a></code>.</p>
-<table class="table">
+<table style="width:100%;" class="table">
 <colgroup>
-<col width="8%">
-<col width="33%">
+<col width="7%">
+<col width="31%">
 <col width="6%">
-<col width="8%">
+<col width="12%">
 <col width="13%">
-<col width="20%">
-<col width="10%">
+<col width="19%">
+<col width="9%">
 </colgroup>
 <thead><tr class="header">
 <th align="left">platform</th>
@@ -850,12 +850,30 @@ models using <code><a href="../reference/llm_model_list.html">llm_model_list()</
 </tr>
 <tr class="even">
 <td align="left">groq</td>
-<td align="left">openai/gpt-oss-safeguard-20b</td>
+<td align="left">meta-llama/llama-prompt-guard-2-86m</td>
 <td align="left">model</td>
-<td align="left">OpenAI</td>
+<td align="left">Meta</td>
+<td align="right">512</td>
+<td align="right">512</td>
+<td align="left">2025-05-30</td>
+</tr>
+<tr class="odd">
+<td align="left">groq</td>
+<td align="left">allam-2-7b</td>
+<td align="left">model</td>
+<td align="left">SDAIA</td>
+<td align="right">4096</td>
+<td align="right">4096</td>
+<td align="left">2025-01-23</td>
+</tr>
+<tr class="even">
+<td align="left">groq</td>
+<td align="left">qwen/qwen3-32b</td>
+<td align="left">model</td>
+<td align="left">Alibaba Cloud</td>
 <td align="right">131072</td>
-<td align="right">65536</td>
-<td align="left">2025-10-29</td>
+<td align="right">40960</td>
+<td align="left">2025-05-28</td>
 </tr>
 <tr class="odd">
 <td align="left">groq</td>
@@ -865,24 +883,6 @@ models using <code><a href="../reference/llm_model_list.html">llm_model_list()</
 <td align="right">131072</td>
 <td align="right">32768</td>
 <td align="left">2024-12-06</td>
-</tr>
-<tr class="even">
-<td align="left">groq</td>
-<td align="left">meta-llama/llama-prompt-guard-2-22m</td>
-<td align="left">model</td>
-<td align="left">Meta</td>
-<td align="right">512</td>
-<td align="right">512</td>
-<td align="left">2025-05-30</td>
-</tr>
-<tr class="odd">
-<td align="left">groq</td>
-<td align="left">openai/gpt-oss-20b</td>
-<td align="left">model</td>
-<td align="left">OpenAI</td>
-<td align="right">131072</td>
-<td align="right">65536</td>
-<td align="left">2025-08-05</td>
 </tr>
 </tbody>
 </table>
@@ -900,7 +900,7 @@ use. You can get or set this with <code><a href="../reference/llm_model.html">ll
 <p>You can query the extracted text of papers with LLMs. See
 <code><a href="../reference/llm.html">?llm</a></code> for details of how to get and set up your API key,
 choose an LLM, and adjust settings.</p>
-<p>Use <code><a href="../reference/search_text.html">search_text()</a></code> first to narrow down the text into
+<p>Use <code><a href="../reference/text_search.html">text_search()</a></code> first to narrow down the text into
 what you want to query. Below, we limited search to the first ten
 papers, and returned sentences that contains the word “power” and at
 least one number. Then we asked an LLM to determine if this is an a
@@ -909,9 +909,9 @@ JSON-structured format.</p>
 <div class="sourceCode" id="cb25"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="va">power</span> <span class="op">&lt;-</span> <span class="va">psychsci</span><span class="op">[</span><span class="fl">1</span><span class="op">:</span><span class="fl">10</span><span class="op">]</span> <span class="op">|&gt;</span></span>
 <span>  <span class="co"># sentences containing the word power</span></span>
-<span>  <span class="fu"><a href="../reference/search_text.html">search_text</a></span><span class="op">(</span><span class="st">"power"</span><span class="op">)</span> <span class="op">|&gt;</span></span>
+<span>  <span class="fu"><a href="../reference/text_search.html">text_search</a></span><span class="op">(</span><span class="st">"power"</span><span class="op">)</span> <span class="op">|&gt;</span></span>
 <span>  <span class="co"># and containing at least one number</span></span>
-<span>  <span class="fu"><a href="../reference/search_text.html">search_text</a></span><span class="op">(</span><span class="st">"[0-9]"</span><span class="op">)</span> </span>
+<span>  <span class="fu"><a href="../reference/text_search.html">text_search</a></span><span class="op">(</span><span class="st">"[0-9]"</span><span class="op">)</span> </span>
 <span></span>
 <span><span class="co"># ask a specific question with specific response format</span></span>
 <span><span class="va">system_prompt</span> <span class="op">&lt;-</span> <span class="st">'Does this sentence report an a priori power analysis? If so, return the test, sample size, critical alpha criterion, power level, effect size and effect size metric plus any other relevant parameters, in JSON format like:</span></span>
@@ -1137,7 +1137,7 @@ rates and outcomes (Tables 1 and 2, Fig. 2a, and Fig.</td>
 <p>The <code><a href="../reference/llm.html">llm()</a></code> function makes a separate query <a class="footnote-ref" tabindex="0" data-bs-toggle="popover" data-bs-content="&lt;p&gt;Using the parallel functions in ellmer can be more
 efficient, but currently doesn’t do a good job of associating structured
 output to the input text when input may have 0+ outputs.&lt;/p&gt;"><sup>1</sup></a> for each row in a data
-frame from <code><a href="../reference/search_text.html">search_text()</a></code>. To prevent accidentally making
+frame from <code><a href="../reference/text_search.html">text_search()</a></code>. To prevent accidentally making
 way too many calls because of errors in your code, we set the default
 limits to 30 queries at a time, but you can change this:</p>
 <div class="sourceCode" id="cb27"><pre class="downlit sourceCode r">
@@ -1185,7 +1185,7 @@ osf_type (nodes, files, preprints, registrations, users, set to
 “private” if you don’t have authorisation to view it, and “invalid” if
 the ), whether it is public</p>
 <div class="sourceCode" id="cb32"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="va">info</span> <span class="op">&lt;-</span> <span class="fu"><a href="../reference/osf_retrieve.html">osf_retrieve</a></span><span class="op">(</span><span class="va">links</span><span class="op">[</span><span class="fl">1</span><span class="op">:</span><span class="fl">6</span>, <span class="st">"href"</span><span class="op">]</span><span class="op">)</span></span>
+<code class="sourceCode R"><span><span class="va">info</span> <span class="op">&lt;-</span> <span class="fu"><a href="../reference/osf_info.html">osf_info</a></span><span class="op">(</span><span class="va">links</span><span class="op">[</span><span class="fl">1</span><span class="op">:</span><span class="fl">6</span>, <span class="st">"href"</span><span class="op">]</span><span class="op">)</span></span>
 <span></span>
 <span><span class="va">info</span><span class="op">[</span>, <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="st">"href"</span>,<span class="st">"osf_id"</span>, <span class="st">"osf_type"</span>, <span class="st">"public"</span>, <span class="st">"category"</span><span class="op">)</span><span class="op">]</span></span></code></pre></div>
 <pre><code><span><span class="co">#&gt; <span style="color: #949494;"># A tibble: 6 × 5</span></span></span>
@@ -1206,7 +1206,7 @@ retrieve information about all nodes and files that are contained by the
 OSF link.</p>
 <div class="sourceCode" id="cb34"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fu"><a href="../reference/osf_api_calls.html">osf_api_calls</a></span><span class="op">(</span><span class="fl">0</span><span class="op">)</span></span>
-<span><span class="va">all_contents</span> <span class="op">&lt;-</span> <span class="fu"><a href="../reference/osf_retrieve.html">osf_retrieve</a></span><span class="op">(</span><span class="va">links</span><span class="op">$</span><span class="va">href</span><span class="op">[</span><span class="fl">1</span><span class="op">]</span>, recursive <span class="op">=</span> <span class="cn">TRUE</span><span class="op">)</span></span>
+<span><span class="va">all_contents</span> <span class="op">&lt;-</span> <span class="fu"><a href="../reference/osf_info.html">osf_info</a></span><span class="op">(</span><span class="va">links</span><span class="op">$</span><span class="va">href</span><span class="op">[</span><span class="fl">1</span><span class="op">]</span>, recursive <span class="op">=</span> <span class="cn">TRUE</span><span class="op">)</span></span>
 <span><span class="va">n_calls</span> <span class="op">&lt;-</span> <span class="fu"><a href="../reference/osf_api_calls.html">osf_api_calls</a></span><span class="op">(</span><span class="op">)</span></span></code></pre></div>
 <p>The function <code><a href="../reference/osf_api_calls.html">osf_api_calls()</a></code> lets you reset and retrieve
 the number of API calls made since the last reset. You can see that the
@@ -1284,7 +1284,7 @@ will share more modules.</p>
 <span><span class="co">#&gt; * coi_check_oi: Identify and extract Conflicts of Interest (COI) statements.</span></span>
 <span><span class="co">#&gt; * funding_check: Identify and extract funding statements.</span></span>
 <span><span class="co">#&gt; * funding_check_oi: Identify and extract funding statements.</span></span>
-<span><span class="co">#&gt; * open_practices: This module incorporates ODDPub into metacheck. ODDPub is a text mining algorithm that detects which publications disseminated Open Data or Open Code together with the publication.</span></span>
+<span><span class="co">#&gt; * open_practices: This module searches for open data, code, materials, and registration statements.</span></span>
 <span><span class="co">#&gt; </span></span>
 <span><span class="co">#&gt; *** METHOD ***</span></span>
 <span><span class="co">#&gt; </span></span>
@@ -1301,7 +1301,7 @@ will share more modules.</p>
 <span><span class="co">#&gt; * repo_check: This module retrieves information from repositories.</span></span>
 <span><span class="co">#&gt; * stat_check: Check consistency of p-values and test statistics</span></span>
 <span><span class="co">#&gt; * stat_effect_size: The Effect Size module checks for effect sizes in t-tests and F-tests.</span></span>
-<span><span class="co">#&gt; * stat_p_exact: List any p-values reported with insufficient precision (e.g., p &lt; .05 or p = n.s.)</span></span>
+<span><span class="co">#&gt; * stat_p_exact: List any p-values reported with insufficient precision (e.g., p &lt; .05 or p = n.s.) or reported as exactly zero (e.g., p = .000).</span></span>
 <span><span class="co">#&gt; * stat_p_nonsig: This module checks for imprecisely reported p values. If p &gt; .05 is detected, it warns for misinterpretations.</span></span>
 <span><span class="co">#&gt; </span></span>
 <span><span class="co">#&gt; *** REFERENCE ***</span></span>

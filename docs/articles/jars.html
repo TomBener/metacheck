@@ -34,7 +34,7 @@
 
     <a class="navbar-brand me-2" href="../index.html">metacheck</a>
 
-    <small class="nav-text text-danger me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Unreleased version">0.0.0.9101</small>
+    <small class="nav-text text-danger me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Unreleased version">0.0.0.9103</small>
 
 
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -115,7 +115,7 @@ can run it on a single paper:</p>
 <code class="sourceCode R"><span><span class="va">res_imprecise</span> <span class="op">&lt;-</span> <span class="fu"><a href="../reference/module_run.html">module_run</a></span><span class="op">(</span><span class="va">psychsci</span><span class="op">$</span><span class="va">`0956797617744542`</span>, <span class="st">"stat_p_exact"</span><span class="op">)</span></span>
 <span></span>
 <span><span class="va">res_imprecise</span></span></code></pre></div>
-<pre><code><span><span class="co">## Exact P-Values: We found 10 imprecise *p* values out of 23 detected.</span></span></code></pre>
+<pre><code><span><span class="co">## Exact P-Values: We found 10 imprecise *p* values out of 23 detected *p* values.</span></span></code></pre>
 <p>The module returns the exact <em>p</em> values and the full sentence
 so that users can easily examine whether the reported <em>p</em> values
 should have been precise:</p>
@@ -139,7 +139,7 @@ should have been precise:</p>
 and report all <em>p</em> values correctly, for example:</p>
 <div class="sourceCode" id="cb5"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fu"><a href="../reference/module_run.html">module_run</a></span><span class="op">(</span><span class="va">psychsci</span><span class="op">$</span><span class="va">`0956797616665351`</span>, <span class="st">"stat_p_exact"</span><span class="op">)</span></span></code></pre></div>
-<pre><code><span><span class="co">## Exact P-Values: We found no imprecise *p* values out of 8 detected.</span></span></code></pre>
+<pre><code><span><span class="co">## Exact P-Values: We found no imprecise *p* values or *p*-values of exactly zero out of 8 detected.</span></span></code></pre>
 </div>
 <div class="section level2">
 <h2 id="reporting-standardized-effect-sizes">Reporting standardized effect sizes<a class="anchor" aria-label="anchor" href="#reporting-standardized-effect-sizes"></a>

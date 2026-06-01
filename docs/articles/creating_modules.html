@@ -34,7 +34,7 @@
 
     <a class="navbar-brand me-2" href="../index.html">metacheck</a>
 
-    <small class="nav-text text-danger me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Unreleased version">0.0.0.9101</small>
+    <small class="nav-text text-danger me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Unreleased version">0.0.0.9103</small>
 
 
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -125,9 +125,9 @@ functions in R packages, using roxygen2 for documentation.</p>
 <span>  <span class="co"># create return items ----</span></span>
 <span></span>
 <span>  <span class="co">## table ----</span></span>
-<span>  <span class="co"># detail your results in a format like the result of search_text()</span></span>
+<span>  <span class="co"># detail your results in a format like the result of text_search()</span></span>
 <span>  <span class="co"># this is stored to use in later modules in a report or pipeline</span></span>
-<span>  <span class="va">table</span> <span class="op">&lt;-</span> <span class="fu"><a href="../reference/search_text.html">search_text</a></span><span class="op">(</span><span class="va">paper</span>, <span class="va">pattern</span><span class="op">)</span></span>
+<span>  <span class="va">table</span> <span class="op">&lt;-</span> <span class="fu"><a href="../reference/text_search.html">text_search</a></span><span class="op">(</span><span class="va">paper</span>, <span class="va">pattern</span><span class="op">)</span></span>
 <span></span>
 <span>  <span class="co">## summary_table ----</span></span>
 <span>  <span class="co"># must have id column as the id of each paper, one row per paper</span></span>
@@ -387,17 +387,17 @@ you require is missing, but always access these with the
 <h3 id="table">Table<a class="anchor" aria-label="anchor" href="#table"></a>
 </h3>
 <p>Most modules will need to structure their output in a table that can
-be shown in a report. The <code><a href="../reference/search_text.html">search_text()</a></code> function below
+be shown in a report. The <code><a href="../reference/text_search.html">text_search()</a></code> function below
 creates a table with a row for each sentence that contains to word
 “significant”.</p>
 <div class="sourceCode" id="cb17"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span>  <span class="co">## table ----</span></span>
-<span>  <span class="co"># detail your results in a format like the result of search_text()</span></span>
+<span>  <span class="co"># detail your results in a format like the result of text_search()</span></span>
 <span>  <span class="co"># this is stored to use in later modules in a report or pipeline</span></span>
-<span>  <span class="va">table</span> <span class="op">&lt;-</span> <span class="fu"><a href="../reference/search_text.html">search_text</a></span><span class="op">(</span><span class="va">paper</span>, <span class="va">pattern</span><span class="op">)</span></span></code></pre></div>
+<span>  <span class="va">table</span> <span class="op">&lt;-</span> <span class="fu"><a href="../reference/text_search.html">text_search</a></span><span class="op">(</span><span class="va">paper</span>, <span class="va">pattern</span><span class="op">)</span></span></code></pre></div>
 <p>You will need to make sure that your module works with both single
 paper object sand lists of paper objects. The metacheck functions
-<code><a href="../reference/search_text.html">search_text()</a></code> and <code><a href="../reference/llm.html">llm()</a></code> are already vectorised
+<code><a href="../reference/text_search.html">text_search()</a></code> and <code><a href="../reference/llm.html">llm()</a></code> are already vectorised
 for paper lists.</p>
 </div>
 <div class="section level3">
@@ -649,7 +649,7 @@ falsifiability, and rigor by making hypothesis tests machine-readable.”
 <code class="sourceCode R"><span><span class="va">bib</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/utils/citation.html" class="external-link">citation</a></span><span class="op">(</span><span class="st">"metacheck"</span><span class="op">)</span></span>
 <span><span class="fu"><a href="../reference/format_ref.html">format_ref</a></span><span class="op">(</span><span class="va">bib</span><span class="op">)</span></span></code></pre></div>
 <p>[1] “DeBruine L, Lakens D, Werner J (2026). <em>metacheck: Check
-Research Outputs for Best Practices</em>. R package version 0.0.0.9101,
+Research Outputs for Best Practices</em>. R package version 0.0.0.9103,
 <a href='\"https://github.com/scienceverse/metacheck\"' class="external-link">https://github.com/scienceverse/metacheck</a>.”</p>
 <p>The function can also handle references in bibtex format.</p>
 <div class="sourceCode" id="cb32"><pre class="downlit sourceCode r">

@@ -1,7 +1,7 @@
 # Expand text
 
 If you have a table resulting from
-[`search_text()`](https://scienceverse.github.io/metacheck/reference/search_text.md)
+[`text_search()`](https://scienceverse.github.io/metacheck/reference/text_search.md)
 or a module return object, you can expand the text column to the full
 sentence, paragraph, or section. You can also set `plus` and `minus` to
 append and prepend sentences to the result (only when `expand_to` is
@@ -10,7 +10,7 @@ append and prepend sentences to the result (only when `expand_to` is
 ## Usage
 
 ``` r
-expand_text(
+text_expand(
   results_table,
   paper,
   expand_to = c("sentence", "paragraph", "div", "section"),
@@ -51,11 +51,11 @@ a results table with the expanded text
 ``` r
 # single paper search
 paper <- demopaper()
-res_tbl <- search_text(paper, "p =", return = "match")
-expanded <- expand_text(res_tbl, paper)
+res_tbl <- text_search(paper, "p =", return = "match")
+expanded <- text_expand(res_tbl, paper)
 
 # multiple paper search
 papers <- psychsci
-res_tbl <- search_text(papers, "replicate")
-expanded <- expand_text(res_tbl, papers, plus = 1, minus = 1)
+res_tbl <- text_search(papers, "replicate")
+expanded <- text_expand(res_tbl, papers, plus = 1, minus = 1)
 ```

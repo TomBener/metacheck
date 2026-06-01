@@ -31,7 +31,7 @@ op <- module_run(paper, "stat_p_exact")
 module_report(op) |> cat()
 #> ### ⚠️ Exact P-Values {#exact-p-values .red}
 #> 
-#> We found 1 imprecise *p* value out of 3 detected.
+#> We found 1 imprecise *p* value out of 3 detected *p* values.
 #> 
 #> <details><summary>View detailed feedback</summary><div>
 #> 
@@ -64,9 +64,9 @@ module_report(op) |> cat()
 #> 
 #> ::: {.callout-note title="How It Works" collapse="true"}
 #> 
-#> List any p-values reported with insufficient precision (e.g., p < .05 or p = n.s.)
+#> List any p-values reported with insufficient precision (e.g., p < .05 or p = n.s.) or reported as exactly zero (e.g., p = .000).
 #> 
-#> This module uses regular expressions to identify p-values. It will flag any values reported as p > ? or p < numbers greater than .001.
+#> This module uses regular expressions to identify p-values. It will flag any values reported as p > ? or p < numbers greater than .001. It will also flag p-values reported as exactly zero (e.g., p = .000, p = 0.00), which are mathematically impossible — p-values are never exactly zero and should instead be reported as p < .001.
 #> 
 #> We try to exclude figure and table notes like "* p < .05", but may not succeed at excluding all false positives.
 #> 

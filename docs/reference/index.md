@@ -24,10 +24,6 @@
   : Test paper
 - [`paper_id()`](https://scienceverse.github.io/metacheck/reference/paper_id.md)
   : Get Paper IDs
-- [`paper_coerce()`](https://scienceverse.github.io/metacheck/reference/paper_coerce.md)
-  : Coerce paper object types
-- [`paper_schema()`](https://scienceverse.github.io/metacheck/reference/paper_schema.md)
-  : Get paper schema
 - [`paper_write()`](https://scienceverse.github.io/metacheck/reference/paper_write.md)
   : Write paper
 - [`paper_validate()`](https://scienceverse.github.io/metacheck/reference/paper_validate.md)
@@ -35,9 +31,11 @@
 
 ## Search Papers
 
-- [`search_text()`](https://scienceverse.github.io/metacheck/reference/search_text.md)
+- [`text_search()`](https://scienceverse.github.io/metacheck/reference/text_search.md)
+  [`search_text()`](https://scienceverse.github.io/metacheck/reference/text_search.md)
   : Search text
-- [`expand_text()`](https://scienceverse.github.io/metacheck/reference/expand_text.md)
+- [`text_expand()`](https://scienceverse.github.io/metacheck/reference/text_expand.md)
+  [`expand_text()`](https://scienceverse.github.io/metacheck/reference/text_expand.md)
   : Expand text
 - [`paper_table()`](https://scienceverse.github.io/metacheck/reference/paper_table.md)
   : Paper tables
@@ -148,6 +146,12 @@ text.
 
 ## OSF Functions
 
+- [`osf_links()`](https://scienceverse.github.io/metacheck/reference/osf_links.md)
+  : Find OSF Links in Papers
+- [`osf_info()`](https://scienceverse.github.io/metacheck/reference/osf_info.md)
+  : Retrieve info from the OSF by ID
+- [`osf_file_download()`](https://scienceverse.github.io/metacheck/reference/osf_file_download.md)
+  : Download all OSF Project Files
 - [`osf_api_calls()`](https://scienceverse.github.io/metacheck/reference/osf_api_calls.md)
   : Get/set the OSF API Call Count
 - [`osf_api_check()`](https://scienceverse.github.io/metacheck/reference/osf_api_check.md)
@@ -156,23 +160,15 @@ text.
   : Check OSF IDs
 - [`osf_delay()`](https://scienceverse.github.io/metacheck/reference/osf_delay.md)
   : Set the OSF delay
-- [`osf_file_download()`](https://scienceverse.github.io/metacheck/reference/osf_file_download.md)
-  : Download all OSF Project Files
 - [`osf_get_all_pages()`](https://scienceverse.github.io/metacheck/reference/osf_get_all_pages.md)
   : Get All OSF API Query Pages
-- [`osf_links()`](https://scienceverse.github.io/metacheck/reference/osf_links.md)
-  : Find OSF Links in Papers
-- [`osf_preprint_list()`](https://scienceverse.github.io/metacheck/reference/osf_preprint_list.md)
-  : Get A list of preprints from the OSF
-- [`osf_retrieve()`](https://scienceverse.github.io/metacheck/reference/osf_retrieve.md)
-  : Retrieve info from the OSF by ID
 - [`osf_type()`](https://scienceverse.github.io/metacheck/reference/osf_type.md)
   : Get OSF GUID Type
+- [`osf_preprint_list()`](https://scienceverse.github.io/metacheck/reference/osf_preprint_list.md)
+  : Get A list of preprints from the OSF
 
 ## GitHub Functions
 
-- [`github_config()`](https://scienceverse.github.io/metacheck/reference/github_config.md)
-  : GitHub Configuration
 - [`github_links()`](https://scienceverse.github.io/metacheck/reference/github_links.md)
   : Find GitHub Links in Papers
 - [`github_repo()`](https://scienceverse.github.io/metacheck/reference/github_repo.md)
@@ -190,12 +186,20 @@ text.
 
 - [`aspredicted_links()`](https://scienceverse.github.io/metacheck/reference/aspredicted_links.md)
   : Find AsPredicted Links in Papers
-- [`aspredicted_retrieve()`](https://scienceverse.github.io/metacheck/reference/aspredicted_retrieve.md)
+- [`aspredicted_info()`](https://scienceverse.github.io/metacheck/reference/aspredicted_info.md)
   : Retrieve info from AsPredicted by URL
 - [`rbox_links()`](https://scienceverse.github.io/metacheck/reference/rbox_links.md)
   : Find ResearchBox Links in Papers
-- [`rbox_retrieve()`](https://scienceverse.github.io/metacheck/reference/rbox_retrieve.md)
+- [`rbox_info()`](https://scienceverse.github.io/metacheck/reference/rbox_info.md)
   : Retrieve info from ResearchBox by URL
+- [`rbox_file_download()`](https://scienceverse.github.io/metacheck/reference/rbox_file_download.md)
+  : Retrieve files from ResearchBox by URL
+- [`zenodo_links()`](https://scienceverse.github.io/metacheck/reference/zenodo_links.md)
+  : Find Zenodo Links in Papers
+- [`zenodo_info()`](https://scienceverse.github.io/metacheck/reference/zenodo_info.md)
+  : Retrieve info from Zenodo by URL
+- [`zenodo_file_download()`](https://scienceverse.github.io/metacheck/reference/zenodo_file_download.md)
+  : Download all Zenodo Project Files
 
 ## Integrations
 
@@ -217,7 +221,7 @@ text.
 
 ## Extras
 
-- [`extract_equations()`](https://scienceverse.github.io/metacheck/reference/extract_equations.md)
+- [`extract_eq()`](https://scienceverse.github.io/metacheck/reference/extract_eq.md)
   : Extract P-Values
 - [`extract_p_values()`](https://scienceverse.github.io/metacheck/reference/extract_p_values.md)
   : Extract P-Values

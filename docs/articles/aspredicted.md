@@ -102,7 +102,7 @@ unique(links$href)
 ## Retrieve Link Info
 
 We can then use the function
-[`aspredicted_retrieve()`](https://scienceverse.github.io/metacheck/reference/aspredicted_retrieve.md)
+[`aspredicted_info()`](https://scienceverse.github.io/metacheck/reference/aspredicted_info.md)
 to get structured information from AsPredicted. You can try to run the
 function on all 51 links above, but AsPredicted will eventually make you
 complete a captcha before each access (we’re working on a way to log
@@ -120,7 +120,7 @@ paper <- psychsci$`09567976221082938`
 
 links <- aspredicted_links(paper)
 
-prereg <- aspredicted_retrieve(links, id_col = "href")
+prereg <- aspredicted_info(links, id_col = "href")
 #> Starting AsPredicted retrieval for 1 file...
 #> * Retrieving info from https://aspredicted.org/iv9tb.pdf...
 #> ...AsPredicted retrieval complete!
@@ -175,7 +175,7 @@ the method section in the manuscript.
 ### Preregistration Sample Size Plan
 
 You can access the sample size plan from the results of
-[`aspredicted_retrieve()`](https://scienceverse.github.io/metacheck/reference/aspredicted_retrieve.md)
+[`aspredicted_info()`](https://scienceverse.github.io/metacheck/reference/aspredicted_info.md)
 under the column name `AP_sample_size`.
 
 ``` r
@@ -217,7 +217,7 @@ It might in addition be useful to retrieve the corresponding section in
 the article. A simple attempt to achieve this would be to search for
 words related to ‘sample’ or ‘participants’, and retrieve that
 paragraph. We can use metacheck’s inbuilt
-[`search_text()`](https://scienceverse.github.io/metacheck/reference/search_text.md)
+[`text_search()`](https://scienceverse.github.io/metacheck/reference/text_search.md)
 function. For this paper, we see this simple approach works well.
 
 ``` r
@@ -226,7 +226,7 @@ function. For this paper, we see this simple approach works well.
 regex_sample <- "\\bsample\\b|\\d+\\s+particip\\w+"
 
 # get full paragraphs 
-sample <- search_text(paper, regex_sample,
+sample <- text_search(paper, regex_sample,
                       return= "paragraph")
 
 sample$text |> cat("> ", x = _)
@@ -279,9 +279,9 @@ word forms for small numbers).
 
 regex_sample <- "subject|sample|particip"
 regex_numbers <- "[0-9]|one|two|three|four|five|six|seven|eight|nine|ten"
-methres <- search_text(paper, regex_sample,
+methres <- text_search(paper, regex_sample,
                        return = "paragraph") |>
-  search_text(regex_numbers, return = "paragraph")
+  text_search(regex_numbers, return = "paragraph")
 ```
 
 This gives us 15 paragraphs to deal with. We can then send them to an
@@ -318,9 +318,7 @@ According to the text, the researchers planned to test a minimum of 10
 and a maximum of 15 individuals for each species. However, the actual
 sample size for each species was: ruffed lemur (n = 10), Coquerel’s
 sifakas (n = 10), ring-tailed lemurs (n = 10), and mongoose lemur (n =
-9). The researchers tested 39 lemurs in total, which is more than the
-maximum planned sample size of 60 individuals (15 individuals per
-species).
+9).
 
 As we see, the LLM does a very good job evaluating whether the authors
 adhered to their preregistration in terms of the sample size. The
@@ -351,7 +349,7 @@ the misclassification by the LLM.
 
 paper <- psychsci$`0956797621991548`
 links <- aspredicted_links(paper)
-prereg <- aspredicted_retrieve(links, id_col = "href")
+prereg <- aspredicted_info(links, id_col = "href")
 #> Starting AsPredicted retrieval for 1 file...
 #> * Retrieving info from https://aspredicted.org/p4ci6.pdf...
 #> ...AsPredicted retrieval complete!
@@ -373,9 +371,9 @@ prereg_sample_size |> cat("> ", x = _)
 # LLM workflow - send potentially relevant paragraphs
 regex_sample <- "subject|sample|particip"
 regex_numbers <- "[0-9]|one|two|three|four|five|six|seven|eight|nine|ten"
-methres <- search_text(paper, regex_sample,
+methres <- text_search(paper, regex_sample,
                        return = "paragraph") |>
-  search_text(regex_numbers, return = "paragraph")
+  text_search(regex_numbers, return = "paragraph")
 
 text <- paste(methres$text, collapse = "\n\n")
 system_prompt <- sprintf(system_prompt_template, prereg_sample_size)
@@ -395,7 +393,7 @@ llm_response$answer |> cat("> ", x = _)
 # manual check - no LLM
 regex_sample <- "\\bsample\\b|\\d+\\s+particip\\w+"
 
-sample <- search_text(paper, regex_sample, 
+sample <- text_search(paper, regex_sample, 
                       return= "paragraph")
 
 sample$text |> cat("> ", x = _)
@@ -453,7 +451,7 @@ aspredicted_sample <- function(paper, use_llm = FALSE) {
   if (nrow(links) == 0) return(list())
   
   # get prereg data from AsPredicted
-  prereg <- aspredicted_retrieve(links, id_col = "href")
+  prereg <- aspredicted_info(links, id_col = "href")
   if (nrow(prereg) == 0 | is.null(prereg$AP_sample_size)) {
     return(list())
   }
@@ -462,7 +460,7 @@ aspredicted_sample <- function(paper, use_llm = FALSE) {
   
   # check paper for possible sample paragraphs
   regex_sample <- "\\bsample\\b|\\d+\\s+particip\\w+"
-  sample <- search_text(paper, regex_sample, 
+  sample <- text_search(paper, regex_sample, 
                         return= "paragraph")
   
   # check LLM only if requested
@@ -476,9 +474,9 @@ aspredicted_sample <- function(paper, use_llm = FALSE) {
     
     regex_sample <- "subject|sample|particip"
     regex_numbers <- "[0-9]|one|two|three|four|five|six|seven|eight|nine|ten"
-    methres <- search_text(paper, regex_sample,
+    methres <- text_search(paper, regex_sample,
                            return = "paragraph") |>
-      search_text(regex_numbers, return = "paragraph")
+      text_search(regex_numbers, return = "paragraph")
     
     text <- paste(methres$text, collapse = "\n\n")
     system_prompt <- sprintf(system_prompt_template, prereg_sample_size)
@@ -626,8 +624,8 @@ LLM Assessment:
 The authors deviated from their preregistration.
 
 According to the text, the researchers planned to collect data from 60
-participants in each cohort. However, in cohort B, they only collected
-data from 56 participants due to the COVID-19 pandemic.
+participants in each cohort, but they only collected data from 60
+participants in cohort A and 56 participants in cohort B.
 
 It fails gracefully if there are no links.
 
