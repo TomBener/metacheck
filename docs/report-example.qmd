@@ -2,8 +2,8 @@
 title: MetaCheck Report
 subtitle: "To Err is Human: An Empirical Investigation"
 metacheck:
-  version: "0.0.1.9003"
-  report-created: "2026-04-17"
+  version: "0.0.0.9106"
+  report-created: "2026-06-01"
 format:
   html:
     theme: 
@@ -58,25 +58,34 @@ execute:
   .quarto-dark table strong { color: yellow; }
   summary { color: #333; }
   .quarto-dark summary { color: #CCC; }
+  .validation { display: block; 
+                border: 2px solid #15342A; 
+                border-radius: 1em; 
+                padding: 0.5em 1em 0; 
+                margin-bottom: 0.5em;
+                background-color: #15342A33;}
 </style>
 
 ::: {#info}
 [MetaCheck](http://www.scienceverse.org/metacheck) version {{< meta metacheck.version >}}  
 Report Created: {{< meta metacheck.report-created >}}  
-NA <!-- doi, if exists -->
+DOI: [10.32614/10.5281/zenodo.2669586](https://doi.org/10.32614/10.5281/zenodo.2669586) <!-- doi, if exists -->
 :::
 
 [Metacheck](https://www.scienceverse.org/metacheck/) is a tool that screens scientific manuscripts and aims to identify potential issues for improvement, thereby guiding researchers towards best practices. Metacheck is developed to help researchers correctly and completely report statistical results, automatically retrieve possible relevant information about citations, and improve how researchers share data, code, and preregistrations.
 
-::: {.callout-tip title="Learn More" collapse="true"}
+Metacheck combines existing and new checks in a module-based tool. It mainly relies on text search or retrieving information from external sources through API’s or web-scraping, but some modules also incorporate tools that use machine learning classifiers or large language models. The use of LLM's is always optional and opt-in. The development of Metacheck is guided by our [values statement](https://www.scienceverse.org/metacheck/#our-values). 
 
-Metacheck combines existing and new checks in a module-based tool. It mainly relies on text search, retrieving information from external sources through API’s or web-scraping, but it also incorporates tool that use machine learning classifiers or large language models. The use of LLM’s is always optional. The development of Metacheck is guided by our [values statement](https://docs.google.com/document/d/1bbIkgUaiz3fpTXAeTF3h-gsfhqWEBN_n6OBcbFLfXjw/edit?tab=t.0). 
 
-Metacheck often needs to balance false positives against false negatives, and prioritizes preventing false negatives. Like a spelling checker, which often highlights words that are not spelled incorrectly, Metacheck modules will contain false positives. We hope their rate is acceptable, given opportunities for improvement that Metacheck identifies. Modules are currently primarily validated on the psychological literature.
+::: {.validation}
+Our modules are validated on sets of open-access papers. In each validated module, there will be a sentence explaining the prevalence of false positives (incorrect detection/classification) and false negatives (incorrect omission). For example, if a hypothetical module detects the inappropriate practice of "woozling", the sentence might read:
 
-Metacheck is under continuous development. Issues can be submitted [on Github](https://github.com/scienceverse/metacheck/issues), and suggestions for improvement or feedback can be sent to D.Lakens@tue.nl.
+> In a sample of 250 papers from the *Journal of X*, there were 350 instances of woozling. This module correctly detected 340 of them, and incorrectly identified 7. Therefore 3% of true instances are missed, and 2% of detections are false positives.
 
+There is an inherent tradeoff between false positives and false negatives. Many of our modules are designed like "smoke detectors", where they are more likely to detect a practice that needs attention, but also more likely to incorrectly flag something. Therefore, you need to check the output of each module, keeping the validated error rates in mind.
 :::
+
+Metacheck is under continuous development. Issues can be submitted [on Github](https://github.com/scienceverse/metacheck/issues), and suggestions for improvement or feedback can be sent to [metacheck@scienceverse.org](mailto:metacheck@scienceverse.org).
 
 
 ## Summary
@@ -84,34 +93,36 @@ Metacheck is under continuous development. Issues can be submitted [on Github](h
 - ⚠️ [Funding Check](#funding-check){.red}: No funding statement was detected.  
 - ✅️ [Open Practices Check](#open-practices-check){.green}: Shared data and code detected.  
 - ✅️ [COI Check](#coi-check){.green}: A conflict of interest statement was detected.  
-- ⚠️ [Power Analysis Check](#power-analysis-check){.red}: We detected 2 potential power analyses.  
-- ⚠️ [Exact P-Values](#exact-p-values){.red}: We found 1 imprecise *p* value out of 3 detected.  
+- ⚠️ [Power Analysis Check](#power-analysis-check){.red}: We detected 3 potential power analyses.  
+- ℹ️ [Preregistration Check](#preregistration-check){.info}: We found 2 preregistrations.  
+- ⚠️ [Exact P-Values](#exact-p-values){.red}: We found 1 imprecise *p* value out of 3 detected *p* values.  
 - ⚠️ [Marginal Significance](#marginal-significance){.red}: You described 2 effects with terms related to 'marginally significant'.  
 - ⚠️ [StatCheck](#statcheck){.red}: 1 possible error in t-tests or F-tests  
 - 🔍 [Non-Significant P Value Check](#non-significant-p-value-check){.yellow}: We found 2 non-significant p values that should be checked for appropriate interpretation.  
 - 🔍 [Effect Sizes in t-tests and F-tests](#effect-sizes-in-t-tests-and-f-tests){.yellow}: We found 1 t-test and/or F-test where effect sizes are not reported.  
 - 🔍 [Repository Check](#repository-check){.yellow}: 
-    -  We found 9 files in 3 repositories.
+    -  We found 14 files in 3 repositories.
     -  We found 1 README file and 2 repositories without READMEs.
     -  We found 1 archive file.  
 - 🔍 [Code Check](#code-check){.yellow}: 
     -  We found 4 R, SAS, SPSS, or Stata code files.
-    -  1 code file had no comments.
-    -  1 file loaded in the code was missing in the repository.
+    -  All your code files had comments.
+    -  2 files loaded in the code were missing in the repository.
     -  Absolute file paths were found.
     -  Libraries/imports were loaded in multiple places.  
-- 🔍 [Reference Accuracy](#reference-accuracy){.yellow}: We checked 5 references in CrossRef and found entries for 4.  
+- 🔍 [Reference Accuracy](#reference-accuracy){.yellow}: We checked 5 references in CrossRef and found entries for 3.  
 - ℹ️ [Replication Check](#replication-check){.info}: We found 1 replication for 1 original you cited.  
 - ℹ️ [RetractionWatch](#retractionwatch){.info}: You cited 1 article in the RetractionWatch database.  
-- ℹ️ [Check PubPeer Comments](#check-pubpeer-comments){.info}: You cited 1 reference with comments in PubPeer.  
+- ℹ️ [PubPeer Comments](#pubpeer-comments){.info}: You cited 1 reference with comments in PubPeer.  
 - ℹ️ [Summarise References](#summarise-references){.info}: Summary information provided for 5 references  
-- ☠️ [causal_claims](#causal_claims){.fail}: This module failed to run  
 
 
 
 ## General Modules
 
 ### ⚠️ Funding Check {#funding-check .red}
+
+No funding statement was detected.
 
 No funding statement was detected. Consider adding one.
 
@@ -135,27 +146,29 @@ Shared data and code detected.
 
 Data was openly shared for this article, based on the following text:
 
+> The paper shows examples of (1) open and closed OSF links; (2a) citation of retracted papers, (2b) citations without a doi, (2c) citations with Pubpeer comments, (2d) citations in the FLoRA replication database, and (2e) missing/mismatched/incorrect citations and references; (3a) R files with code on GitHub that do not load libraries in one location, (3b) load files that are not shared in the repository, (3c) lack comments, and (3d) have absolute file paths; (4) imprecise reporting of non-significant p-values; (5) tests with and without effect sizes; (6) use of "marginally significant" to describe non-significant findings; (7) a power analysis reporting some of the essential attributes; and (8) retrieving information from preregistrations.
+
+> Data and analysis code is available on GitHub from https://github.com/Lak-ens/to_err_is_human and from https://researchbox.org/4377.
+
 > Data is also available from https://osf.io/5tbm9 and code is also available from https://osf.io/629bx.
 
 Code was openly shared for this article, based on the following text:
 
-> Data and analysis code is available on GitHub from https://github.com/Lakens/to_err_is_human and from https://researchbox.org/4377.
+> The paper shows examples of (1) open and closed OSF links; (2a) citation of retracted papers, (2b) citations without a doi, (2c) citations with Pubpeer comments, (2d) citations in the FLoRA replication database, and (2e) missing/mismatched/incorrect citations and references; (3a) R files with code on GitHub that do not load libraries in one location, (3b) load files that are not shared in the repository, (3c) lack comments, and (3d) have absolute file paths; (4) imprecise reporting of non-significant p-values; (5) tests with and without effect sizes; (6) use of "marginally significant" to describe non-significant findings; (7) a power analysis reporting some of the essential attributes; and (8) retrieving information from preregistrations.
+
+> Data and analysis code is available on GitHub from https://github.com/Lak-ens/to_err_is_human and from https://researchbox.org/4377.
+
+> Data is also available from https://osf.io/5tbm9 and code is also available from https://osf.io/629bx.
 
 </div></details>
 
 ::: {.callout-note title="How It Works" collapse="true"}
 
-This module incorporates ODDPub into metacheck. ODDPub is a text mining algorithm that detects which publications disseminated Open Data or Open Code together with the publication.
+This module searches for open data, code, materials, and registration statements.
 
-The Open Practices Check runs Open Data Detection in Publications (ODDPub). ODDPub searches for text expressions that indicate that an article shared Open Data or Open Code together with the publication. More information on the package can be found at <https://github.com/quest-bih/oddpub>. The module only returns whether open data and code is found (the original package offers more fine-grained results). The tool was validated in the biomedical literature, see <https://osf.io/yv5rx/>.
+It is much faster than the previous ODDPub version of this module, and has a lower false negative rate, but also a higher false positive rate.
 
-ODDPub was developed by Nico Riedel, Vladislav Nachev, Miriam Kip, and Evgeny Bobrov at the QUEST Center for Transforming Biomedical Research, Berlin Institute of Health. <https://doi.org/10.5334/dsj-2020-042>
-
-It might miss open data and code declarations when the words used in the manuscript are not in the pattern that ODDPub searches for, or when the repositories are not in the ODDpub code (e.g., ResearchBox).
-
-From ODDPub: "To validate the algorithm, we manually screened a sample of 792 publications that were randomly selected from PubMed. On this validation dataset, our algorithm detects Open Data publications with a sensitivity of 0.73 and specificity of 0.97."
-
-This module was developed by Daniel Lakens
+This module was developed by Lisa DeBruine
 
 :::
 
@@ -196,22 +209,25 @@ This module was developed by Daniel Lakens
 
 ### ⚠️ Power Analysis Check {#power-analysis-check .red}
 
-We detected 2 potential power analyses.
+We detected 3 potential power analyses.
 
 <details><summary>View detailed feedback</summary><div>
 
-Some essential information could not be detected: alpha_level, effect_size, effect_size_metric
+We used the LLM model 'ollama/qwen2.5:3b' to check the contents of 3 paragraphs that contained words suggesting they might contain power analyses.
+
+Some essential information could not be detected: alpha_level, effect_size, effect_size_metric, software
 
 ```{r}
 #| echo: false
 
 # table data --------------------------------------
-table <- structure(list(power_id = 1:2, power_type = c("sensitivity", 
-"apriori"), statistical_test = c("other", "t-test"), sample_size = c(50L, 
-50L), alpha_level = c(NA, 0.05), power = c(0.8, 0.8), effect_size = c(0.5, 
-NA), effect_size_metric = c("Cohen's d", NA), software = c("other", 
-"R (pwr package)")), row.names = c(NA, -2L), class = c("tbl_df", 
-"tbl", "data.frame"))
+table <- structure(list(power_id = 1:3, power_type = c("apriori", "sensitivity", 
+"apriori"), statistical_test = c("unpaired t-test", "unpaired t-test", 
+"unpaired t-test"), sample_size = c(50L, 50L, 50L), alpha_level = c(0.05, 
+NA, NA), power = c(0.8, 0.8, 0.8), effect_size = c(NA, 0.5, NA
+), effect_size_metric = c("Cohen's d", "Cohen's d", NA), software = c("R", 
+NA, "pwr")), row.names = c(NA, -3L), class = c("tbl_df", "tbl", 
+"data.frame"))
 
 # display table -----------------------------------
 metacheck::report_table(table, "auto", 5, FALSE)
@@ -221,9 +237,10 @@ metacheck::report_table(table, "auto", 5, FALSE)
 #| echo: false
 
 # table data --------------------------------------
-table <- structure(list(power_id = c("1", "2"), text = c("We conducted a <strong>sensitivity</strong> <strong>power</strong> analysis 2 to determine that a Cohen's d of 0.50 is the smallest effect size that we could detect with N=50 participants in each group and 80% <strong>power</strong>.", 
-"pwr::pwr.t.test(n = 50, <strong>power</strong> = 0.8, alternative = \"greater\")"
-)), row.names = c(NA, -2L), class = c("tbl_df", "tbl", "data.frame"
+table <- structure(list(power_id = c("1", "2", "3"), text = c("This paper demonstrates some good and poor practices for use with the {metacheck} R package. All data are simulated. The paper shows examples of (1) open and closed OSF links; (2a) citation of retracted papers, (2b) citations without a doi, (2c) citations with Pubpeer comments, (2d) citations in the FLoRA replication database, and (2e) missing/mismatched/incorrect citations and references; (3a) R files with code on GitHub that do not load libraries in one location, (3b) load files that are not shared in the repository, (3c) lack comments, and (3d) have absolute file paths; (4) imprecise reporting of non-significant p-values; (5) tests with and without effect sizes; (6) use of \"marginally significant\" to describe non-significant findings; (7) a <strong>power</strong> analysis reporting some of the essential attributes; and (8) retrieving information from preregistrations.", 
+"We conducted a <strong>sensitivity</strong> <strong>power</strong> analysis 2 to determine that a Cohen's d of 0.50 is the smallest effect size that we could detect with N = 50 participants in each group and 80% <strong>power</strong>.", 
+"pwr::pwr.t.test(n = 50, <strong>power</strong> = 0.8, alternative = \"greater\") is useful. We conclude the use of automated checks has potential to reduce the number of mistakes in scientific manuscripts."
+)), row.names = c(NA, -3L), class = c("tbl_df", "tbl", "data.frame"
 ))
 
 # display table -----------------------------------
@@ -258,11 +275,130 @@ This module was developed by Lisa DeBruine, Daniel Lakens and Cristian Mesquida
 
 :::
 
+### ℹ️ Preregistration Check {#preregistration-check .info}
+
+We found 2 preregistrations.
+
+<details><summary>View detailed feedback</summary><div>
+
+We found 2 preregistrations.
+
+```{r}
+#| echo: false
+
+# table data --------------------------------------
+table <- structure(list(id = c("<a href='https://osf.io/48ncu' target='_blank'>48ncu</a>", 
+"<a href='https://aspredicted.org/by8i8v.pdf' target='_blank'>by8i8v</a>"
+), title = c("Papercheck Test", "To err is human"), template = c("OSF Preregistration", 
+"AsPredicted")), class = "data.frame", row.names = c(NA, -2L))
+
+# display table -----------------------------------
+metacheck::report_table(table, "auto", 2, FALSE)
+```
+
+Meta-scientific research has shown that deviations from preregistrations are often not reported or checked, and that the most common deviations concern the sample size. We recommend manually checking the full preregistration at the links above, and have provided the preregistered sample size.
+
+```{r}
+#| echo: false
+
+# table data --------------------------------------
+table <- structure(list(id = c("48ncu", "by8i8v"), sample_size = c("We randomly assigned 50 scientists to a condition where their manuscript was automatically checked for errors, and 50 scientists to a control condition with a checklist.", 
+"We randomly assigned 50 scientists to a condition where their manuscript was automatically checked for errors, and 50 scientists to a control condition with a checklist."
+)), row.names = c(NA, -2L), class = c("tbl_df", "tbl", "data.frame"
+))
+
+# display table -----------------------------------
+metacheck::report_table(table, "auto", 2, FALSE)
+```
+
+::: {.callout-tip title="Full Preregistration" collapse="true"}
+
+```{r}
+#| echo: false
+
+# table data --------------------------------------
+table <- structure(list(Field = c("template_name", "title", "id", "link", 
+"date_created", "date_modified", "date_registered", "embargo_end_date", 
+"ia_url", "description", "study_type", "blinding", "study_design_overview", 
+"data_collection_started", "existing_data_explanation", "data_collection_procedures", 
+"sample_size", "sample_size_rationale", "stopping_rule", "design_independent_variables", 
+"design_dependent_variables", "indices", "statistical_tests", 
+"inference_criteria", "data_exclusion_criteria", "outliers_and_exclusions", 
+"exploratory_analyses", "additional_comments", "research_questions", 
+"paper_id"), "Preregistration 1" = c("OSF Preregistration", "Papercheck Test", 
+"48ncu", "https://osf.io/48ncu", "2025-11-28T19:14:24.639665", 
+"2025-08-05T11:55:35.267689", "2025-11-28T19:14:24.608826", "NA", 
+"https://archive.org/details/osf-registrations-48ncu-v1", "Automation can be used to check for errors in scientific manuscripts, and inform authors about possible corrections. In this study we examine the usefulness of metacheck to improve best practices.", 
+"Experiment - A researcher randomly assigns treatments to study subjects, this includes field or lab experiments. This is also known as an intervention experiment and includes randomized controlled trials.", 
+"No blinding is involved in this study. ", "Two conditions. In one, researchers receive automated feedback. In the control condition, they do not receive feedback.", 
+"Registration prior to creation of data", "", "We will include all scientists who are willing to participate. ", 
+"We randomly assigned 50 scientists to a condition where their manuscript was automatically checked for errors, and 50 scientists to a control condition with a checklist.", 
+"Based on an a-priori power analysis for an independent t-test, with an expected effect size of d = 0.6, an alpha of 0.05, and a desired power of 0.85, we needed to collect at least 50 participants per group. ", 
+"We will stop after data from 100 researchers has been collected.", 
+"Two conditions. In one, researchers receive automated feedback. In the control condition, they do not receive feedback.", 
+"We will code all manuscripts for mistakes, and count the total number of mistakes per manuscript.", 
+"", "We will perform an independent t-test on the number of mistakes in each group.", 
+"We will interpret effects as significant if p &lt; .05", "No exclusions are expected.", 
+"No missing data is expected.\n", "We also measured the expertise of researchers (in years) to explore whether the automated tool would be more useful, the less research experience researchers had. We also asked researchers to rate how useful they found the checklist or app on a scale from 1 (not at all) to 7 (extremely useful).", 
+"", NA, "to_err_is_human"), "Preregistration 2" = c("AsPredicted", 
+"To err is human", "by8i8v", "https://aspredicted.org/by8i8v.pdf", 
+"2025/11/27 23:20 (PT)", NA, NA, NA, NA, NA, NA, NA, "Two conditions. In one, researchers receive automated feedback. In the control condition, they do not receive feedback.", 
+NA, "No, no data have been collected for this study yet.", NA, 
+"We randomly assigned 50 scientists to a condition where their manuscript was automatically checked for errors, and 50 scientists to a control condition with a checklist.", 
+NA, NA, NA, "We will code all manuscripts for mistakes, and count the total number of mistakes per manuscript.", 
+NA, "We will perform an independent t-test on the number of mistakes in each group.", 
+NA, NA, "none are expected.", NA, "We also measured the expertise of researchers (in years) to explore whether the automated tool would be more useful, the less research experience researchers had. We also asked researchers to rate how useful they found the checklist or app on a scale from 1 (not at all) to 7 (extremely useful).", 
+"Automation can be used to check for errors in scientific manuscripts, and inform authors about possible corrections. In this study we examine the usefulness of metacheck to improve best practices.", 
+"to_err_is_human")), class = "data.frame", row.names = c("template_name", 
+"title", "id", "link", "date_created", "date_modified", "date_registered", 
+"embargo_end_date", "ia_url", "description", "study_type", "blinding", 
+"study_design_overview", "data_collection_started", "existing_data_explanation", 
+"data_collection_procedures", "sample_size", "sample_size_rationale", 
+"stopping_rule", "design_independent_variables", "design_dependent_variables", 
+"indices", "statistical_tests", "inference_criteria", "data_exclusion_criteria", 
+"outliers_and_exclusions", "exploratory_analyses", "additional_comments", 
+"research_questions", "paper_id"))
+
+# display table -----------------------------------
+metacheck::report_table(table, "auto", 5, FALSE)
+```
+
+:::
+
+::: {.callout-tip title="Learn More" collapse="true"}
+
+For metascientific articles demonstrating the rate of deviations from preregistrations, see:
+
+van den Akker O, Bakker M, van Assen M, Pennington C, Verweij L, Elsherif M, Claesen A, Gaillard S, Yeung S, Frankenberger J, Krautter K, Cockcroft J, Kreuer K, Evans T, Heppel F, Schoch S, Korbmacher M, Yamada Y, Albayrak-Aydemir N, Wicherts J (2024). &ldquo;The potential of preregistration in psychology: Assessing preregistration producibility and preregistration-study consistency.&rdquo; <em>Psychological Methods</em>. <a href="https://doi.org/10.1037/met0000687">doi:10.1037/met0000687</a>.
+
+For educational material on how to report deviations from preregistrations, see:
+
+Lakens, Daniël (2024). &ldquo;When and How to Deviate From a Preregistration.&rdquo; <em>Collabra: Psychology</em>, <b>10</b>(1), 117094. <a href="https://doi.org/10.1525/collabra.117094">doi:10.1525/collabra.117094</a>.
+
+:::
+
+</div></details>
+
+::: {.callout-note title="How It Works" collapse="true"}
+
+Retrieve information from preregistrations in a standardised way,
+and make them easier to check.
+
+The Preregistration Check module identifies preregistrations on the OSF and AsPredicted based on links in the manuscript, retrieves the preregistration text, and organizes the information into a template. The module then uses regular expressions to identify text from AsPredicted, and the API to retrieve text from the OSF. The information in the preregistration is returned.
+
+The module can’t extract information from non-structured preregistration templates (i.e., where the preregistration is uploaded in a single text field) and it can’t retrieve information in preregistrations that are stored as text documents on the OSF.
+
+If you want to extend the package to be able to download information from other preregistration sites, reach out to the Metacheck development team.
+
+This module was developed by Daniel Lakens and Lisa DeBruine
+
+:::
+
 ## Results Modules
 
 ### ⚠️ Exact P-Values {#exact-p-values .red}
 
-We found 1 imprecise *p* value out of 3 detected.
+We found 1 imprecise *p* value out of 3 detected *p* values.
 
 <details><summary>View detailed feedback</summary><div>
 
@@ -291,9 +427,9 @@ American Psychological Association (2020). <em>Publication manual of the America
 
 ::: {.callout-note title="How It Works" collapse="true"}
 
-List any p-values reported with insufficient precision (e.g., p < .05 or p = n.s.)
+List any p-values reported with insufficient precision (e.g., p < .05 or p = n.s.) or reported as exactly zero (e.g., p = .000).
 
-This module uses regular expressions to identify p-values. It will flag any values reported as p > ? or p < numbers greater than .001.
+This module uses regular expressions to identify p-values. It will flag any values reported as p > ? or p < numbers greater than .001. It will also flag p-values reported as exactly zero (e.g., p = .000, p = 0.00), which are mathematically impossible — p-values are never exactly zero and should instead be reported as p < .001.
 
 We try to exclude figure and table notes like "* p < .05", but may not succeed at excluding all false positives.
 
@@ -314,8 +450,8 @@ You described effects with terms related to 'marginally significant'. If *p* val
 
 # table data --------------------------------------
 table <- structure(list(Text = c("The paper shows examples of (1) open and closed OSF links; (2a) citation of retracted papers, (2b) citations without a doi, (2c) citations with Pubpeer comments, (2d) citations in the FLoRA replication database, and (2e) missing/mismatched/incorrect citations and references; (3a) R files with code on GitHub that do not load libraries in one location, (3b) load files that are not shared in the repository, (3c) lack comments, and (3d) have absolute file paths; (4) imprecise reporting of non-significant p-values; (5) tests with and without effect sizes; (6) use of \"marginally significant\" to describe non-significant findings; (7) a power analysis reporting some of the essential attributes; and (8) retrieving information from preregistrations.", 
-"On average researchers in the experimental condition found the app marginally significantly more useful (M=5.06) than researchers in the control condition found the checklist (M=4.5), t(97.2)=-1.96, p=0.152."
-), "Section Header" = c("Abstract", "Results")), row.names = c(NA, 
+"On average researchers in the experimental condition found the app marginally significantly more useful (M = 5.06) than researchers in the control condition found the checklist (M = 4.5), t(97.2) = -1.96, p =0.152."
+), "Section Header" = c("Abstract", "Procedure")), row.names = c(NA, 
 -2L), class = c("tbl_df", "tbl", "data.frame"))
 
 # display table -----------------------------------
@@ -358,8 +494,8 @@ We detected possible errors in test statistics. Note that as the accuracy of sta
 #| echo: false
 
 # table data --------------------------------------
-table <- structure(list(Text = "t(97.2)=-1.96, p=0.152", "Recomputed p" = 0.05286, 
-    Sentence = "On average researchers in the experimental condition found the app marginally significantly more useful (M=5.06) than researchers in the control condition found the checklist (M=4.5), t(97.2)=-1.96, p=0.152."), row.names = 1L, class = c("statcheck", 
+table <- structure(list(Text = "t(97.2) = -1.96, p =0.152", "Recomputed p" = 0.05286, 
+    Sentence = "On average researchers in the experimental condition found the app marginally significantly more useful (M = 5.06) than researchers in the control condition found the checklist (M = 4.5), t(97.2) = -1.96, p =0.152."), row.names = 2L, class = c("statcheck", 
 "data.frame"))
 
 # display table -----------------------------------
@@ -370,9 +506,9 @@ metacheck::report_table(table, c("10em", NA, NA, NA), 2, FALSE)
 
 For metascientific research on the validity of statcheck, and it's usefulness to prevent statistical reporting errors, see:
 
-Nuijten M, van Assen M, Hartgerink C, Epskamp S, Wicherts J (2017). &ldquo;The validity of the tool &quot;statcheck&quot; in discovering statistical reporting inconsistencies.&rdquo; <a href="https://doi.org/10.31234/osf.io/tcxaja">doi:10.31234/osf.io/tcxaja</a>, Preprint.
+Nuijten M, van Assen M, Hartgerink C, Epskamp S, Wicherts J (2017). &ldquo;The validity of the tool &quot;statcheck&quot; in discovering statistical reporting inconsistencies.&rdquo; <a href="https://doi.org/10.31234/osf.io/tcxaja">doi:10.31234/osf.io/tcxaja</a>. Preprint.
 
-Nuijten M, Wicherts J (2023). &ldquo;The effectiveness of implementing statcheck in the peer review process to avoid statistical reporting errors.&rdquo; <a href="https://doi.org/10.31234/osf.io/bxau9">doi:10.31234/osf.io/bxau9</a>, Preprint.
+Nuijten M, Wicherts J (2023). &ldquo;The effectiveness of implementing statcheck in the peer review process to avoid statistical reporting errors.&rdquo; <a href="https://doi.org/10.31234/osf.io/bxau9">doi:10.31234/osf.io/bxau9</a>. Preprint.
 
 :::
 
@@ -392,6 +528,8 @@ This module was developed by Daniel Lakens and Lisa DeBruine
 
 :::
 
+<p class='validation'>**Validation**: In a sample of 685 tests with 34 instances of inconsistent reporting, Statcheck correctly detected 34 of them, and incorrectly identified 26. Therefore 0% of true instances were missed, and 43% of detections were false positives. See <https://osf.io/preprints/psyarxiv/tcxaj_v1/> for more details of the validation.</p>
+
 ### 🔍 Non-Significant P Value Check {#non-significant-p-value-check .yellow}
 
 We found 2 non-significant p values that should be checked for appropriate interpretation.
@@ -408,7 +546,7 @@ Metacheck does not yet analyze automatically whether sentences which include non
 #| echo: false
 
 # table data --------------------------------------
-table <- structure(list(Text = c("p=0.152", "p > .05"), Sentence = c("On average researchers in the experimental condition found the app marginally significantly more useful (M=5.06) than researchers in the control condition found the checklist (M=4.5), t(97.2)=-1.96, p=0.152.", 
+table <- structure(list(Text = c("p =0.152", "p > .05"), Sentence = c("On average researchers in the experimental condition found the app marginally significantly more useful (M = 5.06) than researchers in the control condition found the checklist (M = 4.5), t(97.2) = -1.96, p =0.152.", 
 "There was no effect of experience on the reduction in errors when using the tool (p > .05), as the correlation was non-significant (Figure 2)."
 )), row.names = c(NA, -2L), class = c("tbl_df", "tbl", "data.frame"
 ))
@@ -455,7 +593,7 @@ We recommend checking the sentences below, and add any missing effect sizes.
 #| echo: false
 
 # table data --------------------------------------
-table <- structure(list("On average researchers in the experimental condition found the app marginally significantly more useful (M=5.06) than researchers in the control condition found the checklist (M=4.5), t(97.2)=-1.96, p=0.152."), names = "", class = "data.frame", row.names = c(NA, 
+table <- structure(list("On average researchers in the experimental condition found the app marginally significantly more useful (M = 5.06) than researchers in the control condition found the checklist (M = 4.5), t(97.2) = -1.96, p =0.152."), names = "", class = "data.frame", row.names = c(NA, 
 -1L))
 
 # display table -----------------------------------
@@ -480,10 +618,10 @@ For educational material on reporting effect sizes:
 #| echo: false
 
 # table data --------------------------------------
-table <- structure(list(Sentence = c("On average researchers in the experimental (app) condition made fewer mistakes (M=9.12) than researchers in the control (checklist) condition (M=10.9) t(97.7)=2.9 p=0.005 d=0.59.", 
-"On average researchers in the experimental condition found the app marginally significantly more useful (M=5.06) than researchers in the control condition found the checklist (M=4.5), t(97.2)=-1.96, p=0.152."
-), "Effect Size" = c("d=0.59", NA), "Reported Test" = c("t(97.7)=2.9", 
-"t(97.2)=-1.96"), "Test Type" = c("t-test", "t-test")), row.names = c(NA, 
+table <- structure(list(Sentence = c("On average researchers in the experimental (app) condition made fewer mistakes (M = 9.12) than researchers in the control (checklist) condition (M = 10.9), t(97.7) = 2.9, p = 0.005, d =0.59.", 
+"On average researchers in the experimental condition found the app marginally significantly more useful (M = 5.06) than researchers in the control condition found the checklist (M = 4.5), t(97.2) = -1.96, p =0.152."
+), "Effect Size" = c("d =0.59", NA), "Reported Test" = c("t(97.7) = 2.9", 
+"t(97.2) = -1.96"), "Test Type" = c("t-test", "t-test")), row.names = c(NA, 
 -2L), class = c("tbl_df", "tbl", "data.frame"))
 
 # display table -----------------------------------
@@ -508,54 +646,71 @@ This module was developed by Daniel Lakens and Lisa DeBruine
 
 ### 🔍 Repository Check {#repository-check .yellow}
 
--  We found 9 files in 3 repositories.
+-  We found 14 files in 3 repositories.
 -  We found 1 README file and 2 repositories without READMEs.
 -  We found 1 archive file.
 
 <details><summary>View detailed feedback</summary><div>
 
+#### Repositories
+
 ```{r}
 #| echo: false
 
 # table data --------------------------------------
-table <- structure(list(Repository = c("<a href='osf.io/629bx' target='_blank'>osf.io/629bx</a>", 
-"<a href='https://github.com/Lakens/to_err_is_human' target='_blank'>github.com/Lakens/to_err_is_human</a>", 
-"<a href='osf.io/48ncu ' target='_blank'>osf.io/48ncu </a>"), 
-    Platform = c("osf", "github", NA), "All Files" = c(4L, 2L, 
-    3L), "Data Files" = c(1L, 1L, 0L), "Code Files" = c(2L, 1L, 
-    1L), READMEs = c(0L, 0L, 1L), Archives = c(1L, 0L, 0L)), row.names = c(NA, 
+table <- structure(list(Repository = c("<a href='https://osf.io/629bx' target='_blank'>osf.io/629bx</a>", 
+"<a href='https://researchbox.org/4377' target='_blank'>researchbox.org/4377</a>", 
+"<a href='https://osf.io/48ncu' target='_blank'>osf.io/48ncu</a>"
+), Platform = c("osf", "researchbox", NA), "All Files" = c(4L, 
+7L, 3L), "Data Files" = c(1L, 5L, 0L), "Code Files" = c(2L, 1L, 
+1L), READMEs = c(0L, 0L, 1L), Archives = c(1L, 0L, 0L)), row.names = c(NA, 
 -3L), class = c("tbl_df", "tbl", "data.frame"))
 
 # display table -----------------------------------
 metacheck::report_table(table, "auto", 10, FALSE)
 ```
 
+#### Files
+
 ```{r}
 #| echo: false
 
 # table data --------------------------------------
-table <- structure(list(Repository = c("osf.io/48ncu ", "osf.io/48ncu ", 
-"osf.io/48ncu ", "osf.io/629bx", "osf.io/629bx", "osf.io/629bx", 
-"osf.io/629bx", "https://github.com/Lakens/to_err_is_human", 
-"https://github.com/Lakens/to_err_is_human"), File = c("<a href='https://osf.io/download/jz6v5/' target='_blank'>README</a>", 
+table <- structure(list(Repository = c("https://osf.io/48ncu", "https://osf.io/48ncu", 
+"https://osf.io/48ncu", "https://osf.io/629bx", "https://osf.io/629bx", 
+"https://osf.io/629bx", "https://osf.io/629bx", "https://researchbox.org/4377", 
+"https://researchbox.org/4377", "https://researchbox.org/4377", 
+"https://researchbox.org/4377", "https://researchbox.org/4377", 
+"https://researchbox.org/4377", "https://researchbox.org/4377"
+), File = c("<a href='https://osf.io/download/jz6v5/' target='_blank'>README</a>", 
 "<a href='https://osf.io/download/6929f4994ce565d35f957294/' target='_blank'>papercheck.png</a>", 
 "<a href='https://osf.io/download/2y3g5/' target='_blank'>test_script.R</a>", 
 "<a href='https://osf.io/download/6935bc117049c887a125cb25/' target='_blank'>bad.R</a>", 
 "<a href='https://osf.io/download/uq347/' target='_blank'>bad.Rmd</a>", 
 "<a href='https://osf.io/download/6935c4679ca0f02ea72a1a31/' target='_blank'>example2.csv</a>", 
 "<a href='https://osf.io/download/6976438ff9da155d0565c720/' target='_blank'>Archive.zip</a>", 
-"<a href='https://raw.githubusercontent.com/Lakens/to_err_is_human/main/analysis.R' target='_blank'>analysis.R</a>", 
-"<a href='https://raw.githubusercontent.com/Lakens/to_err_is_human/main/file2.csv' target='_blank'>file2.csv</a>"
+"<a href='https://researchbox.org/4377' target='_blank'>Code/Study 1.r</a>", 
+"<a href='https://researchbox.org/4377' target='_blank'>Codebook/Study 1 - csv - dataset 1.csv___CODEBOOK.csv</a>", 
+"<a href='https://researchbox.org/4377' target='_blank'>Codebook/Study 1.csv___CODEBOOK.csv</a>", 
+"<a href='https://researchbox.org/4377' target='_blank'>Data/Study 1 - csv - dataset 1.csv</a>", 
+"<a href='https://researchbox.org/4377' target='_blank'>Data/Study 1.csv</a>", 
+"<a href='https://researchbox.org/4377' target='_blank'>Materials/Study 1 - test txt file.txt</a>", 
+"<a href='https://researchbox.org/4377' target='_blank'>Table of Contents Box #4377.csv</a>"
 ), Size = c("30 B", "1.6 MB", "183 B", "172 B", "413 B", "5 B", 
-"6.4 kB", "306 B", "794 B"), Type = c("readme", "image", "code", 
-"code", "code", "data", "archive", "code", "data")), row.names = c(NA, 
-9L), class = "data.frame")
+"6.4 kB", "183 B", "96 B", "96 B", "185 B", "185 B", "12 B", 
+"573 B"), Type = c("readme", "image", "code", "code", "code", 
+"data", "archive", "code", "data", "data", "data", "data", "text", 
+"data")), row.names = c(NA, 14L), class = "data.frame")
 
 # display table -----------------------------------
 metacheck::report_table(table, "auto", 10, FALSE)
 ```
 
-README files are a way to document the contents and structure of a folder, helping users locate the information they need. You can use a README to document changes to a repository, and explain how files are named. Please consider adding a README to each repository.
+#### README Files
+
+README files are a way to document the contents and structure of a folder, helping users locate the information they need. You can use a README to document changes to a repository, and explain how files are named. Please consider adding a README to each repository or including 'README' in the name of your overview document.
+
+#### Archive Files
 
 The following files are archives: Archive.zip. We did not examine their content. Consider uploading these individually to improve discoverability and re-use.
 
@@ -565,7 +720,7 @@ The following files are archives: Archive.zip. We did not examine their content.
 
 This module retrieves information from repositories.
 
-The Repository Check module lists files on the OSF, GitHub, and ResearchBox based on links in the manuscript.
+The Repository Check module lists files on the OSF, GitHub, ResearchBox, and Zenodo based on links in the manuscript.
 
 If you want to extend the package to be able to download files from additional data repositories reach out to the Metacheck development team.
 
@@ -576,8 +731,8 @@ This module was developed by Daniel Lakens and Lisa DeBruine
 ### 🔍 Code Check {#code-check .yellow}
 
 -  We found 4 R, SAS, SPSS, or Stata code files.
--  1 code file had no comments.
--  1 file loaded in the code was missing in the repository.
+-  All your code files had comments.
+-  2 files loaded in the code were missing in the repository.
 -  Absolute file paths were found.
 -  Libraries/imports were loaded in multiple places.
 
@@ -592,10 +747,10 @@ Below, we describe some best coding practices and give the results of automatic 
 table <- structure(list("File Name" = c("<a href='https://osf.io/download/2y3g5/' target='_blank'>test_script.R</a>", 
 "<a href='https://osf.io/download/6935bc117049c887a125cb25/' target='_blank'>bad.R</a>", 
 "<a href='https://osf.io/download/uq347/' target='_blank'>bad.Rmd</a>", 
-"<a href='https://raw.githubusercontent.com/Lakens/to_err_is_human/main/analysis.R' target='_blank'>analysis.R</a>"
-), "% Comments" = c("17%", "7%", "26%", "0%"), "Missing Files" = c(1L, 
-0L, 0L, 0L), "Absolute Paths" = c(1L, 1L, 2L, 1L), "Code Between Libraries" = c(NA, 
-12L, 13L, 10L)), row.names = c(NA, 4L), class = "data.frame")
+"<a href='https://researchbox.org/4377' target='_blank'>Code/Study 1.r</a>"
+), "% Comments" = c("17%", "7%", "26%", "17%"), "Missing Files" = c(1L, 
+0L, 0L, 1L), "Absolute Paths" = c(1L, 1L, 2L, 1L), "Code Between Libraries" = c(NA, 
+12L, 13L, NA)), row.names = c(NA, 4L), class = "data.frame")
 
 # display table -----------------------------------
 metacheck::report_table(table, "auto", 5, FALSE)
@@ -603,17 +758,19 @@ metacheck::report_table(table, "auto", 5, FALSE)
 
 #### Code Comments
 
-Best programming practice is to add comments to code, to explain what the code does (to yourself in the future, or peers who want to re-use your code).
+Best programming practice is to add comments to code, to explain what the code does (to yourself in the future, or peers who want to re-use your code). All your code files had comments.
 
 #### Missing Files
 
-The scripts load files, but 1 script loaded 1 file that could not be automatically identified in the repository. Check if the following files are made available, so that others can reproduce your code, or that the files are missing:
+The scripts load files, but 2 scripts loaded 2 files that could not be automatically identified in the repository. Check if the following files are made available, so that others can reproduce your code, or that the files are missing:
 
 ```{r}
 #| echo: false
 
 # table data --------------------------------------
-table <- structure(list("File name" = "test_script.R", "Missing Files" = "file.csv"), row.names = 1L, class = "data.frame")
+table <- structure(list("File name" = c("test_script.R", "Code/Study 1.r"
+), "Missing Files" = c("file.csv", "file.csv")), row.names = c(1L, 
+4L), class = "data.frame")
 
 # display table -----------------------------------
 metacheck::report_table(table, "auto", 5, FALSE)
@@ -628,9 +785,9 @@ Best programming practice is to use relative file paths instead of absolute file
 
 # table data --------------------------------------
 table <- structure(list("File name" = c("test_script.R", "bad.R", "bad.Rmd", 
-"analysis.R"), "Absolute paths found" = c("abs_path_pc <- read.csv(\"C:/lisa/file.csv\")", 
+"Code/Study 1.r"), "Absolute paths found" = c("abs_path_pc <- read.csv(\"C:/lisa/file.csv\")", 
 "data <- read_csv(\"C://Lakens/files/example.csv\")", "data <- read_csv(\"C://Lakens/files/example.csv\"), data2 <- read_csv(\"C://Lakens/files/example2.csv\")", 
-"data_1 <- read.csv(\"C:/path/to/a/file.csv\")")), row.names = c(NA, 
+"abs_path_pc <- read.csv(\"C:/lisa/file.csv\")")), row.names = c(NA, 
 4L), class = "data.frame")
 
 # display table -----------------------------------
@@ -639,7 +796,7 @@ metacheck::report_table(table, "auto", 5, FALSE)
 
 #### Libraries / Imports
 
-Best programming practice is to load all required libraries/imports in one block near the top of the code. In 3 code files, libraries/imports were at multiple places (i.e., with more than 3 non-comment lines in between).
+Best programming practice is to load all required libraries/imports in one block near the top of the code. In 2 code files, libraries/imports were at multiple places (i.e., with more than 3 non-comment lines in between).
 
 </div></details>
 
@@ -661,20 +818,22 @@ This module was developed by Daniel Lakens
 
 ### 🔍 Reference Accuracy {#reference-accuracy .yellow}
 
-We checked 5 references in CrossRef and found entries for 4.
+We checked 5 references in CrossRef and found entries for 3.
 
 <details><summary>View detailed feedback</summary><div>
 
-Double check any references listed in the tables below. This tool has a high false positive rate.
+Double check any references listed in the tables below. This module has a high false positive rate.
+
+Title mismatches often happen because of errors reading text from PDFs. Author mismatches often happen because of errors in parsing author lists. Year mismatches often happen because of differences between date of first publication and date of print publication.
 
 ```{r}
 #| echo: false
 
 # table data --------------------------------------
-table <- structure(list("References with Mismatched DOIs" = c("DeBruine, Lisa. 2025. Faux: Simulation for Factorial Designs. Zenodo. https://doi.org/10.5281/zenodo.2669586.", 
-"Lakens, Daniël. 2018. \"Equivalence Testing for Psychological Research.\" Advances in Methods and Practices in Psychological Science 1: 259-70."
-), "Original DOI" = c("10.5281/zenodo.2669586", ""), "CrossRef DOI" = c("10.32614/cran.package.faux", 
-"10.1177/2515245918770963")), row.names = c(1L, 4L), class = "data.frame")
+table <- structure(list("References with Mismatched DOIs" = "Lakens, Daniël. 2018. \"Equivalence Testing for Psychological Research.\" Ad- vances in Methods and Practices in Psychological Science 1: 259-70.", 
+    "Original DOI" = "<a href='https://doi.org/' target='_blank'></a>", 
+    "CrossRef DOI" = "<a href='https://doi.org/10.1177/2515245918770963' target='_blank'>10.1177/2515245918770963</a>"), row.names = c(NA, 
+-1L), class = c("tbl_df", "tbl", "data.frame"))
 
 # display table -----------------------------------
 metacheck::report_table(table, c(0.5, 0.25, 0.25), 5, FALSE)
@@ -684,20 +843,10 @@ metacheck::report_table(table, c(0.5, 0.25, 0.25), 5, FALSE)
 #| echo: false
 
 # table data --------------------------------------
-table <- structure(list("References with Mismatched Years" = "DeBruine, Lisa. 2025. Faux: Simulation for Factorial Designs. Zenodo. https://doi.org/10.5281/zenodo.2669586.", 
-    "Original Year" = 2025L, "CrossRef Year" = 2020L), row.names = 1L, class = "data.frame")
-
-# display table -----------------------------------
-metacheck::report_table(table, c(0.5, 0.25, 0.25), 5, FALSE)
-```
-
-```{r}
-#| echo: false
-
-# table data --------------------------------------
-table <- structure(list("References with Mismatched Titles" = "Gino, Francesca, and Scott S. Wiltermuth. 2014. \"Evil Genius? How Dishonesty Can Lead to Greater Creativity.\" Psychological Science 25 (4): 973–81. https://doi.org/10.1177/0956797614520714.", 
+table <- structure(list("References with Mismatched Titles" = "Gino, Francesca, and Scott S. Wiltermuth. 2014. \"Evil Genius? How Dishonesty Can Lead to Greater Creativity.\" Psychological Science 25 (4): 973-81. https://doi.org/10.1177/0956797614520714.", 
     "Original Title" = "Evil Genius? How Dishonesty Can Lead to Greater Creativity", 
-    "CrossRef Title" = "Retracted: Evil Genius? How Dishonesty Can Lead to Greater Creativity"), row.names = 3L, class = "data.frame")
+    "CrossRef Title" = "<a href='https://doi.org/10.1177/0956797614520714' target='_blank'>Retracted: Evil Genius? How Dishonesty Can Lead to Greater Creativity</a>"), row.names = c(NA, 
+-1L), class = c("tbl_df", "tbl", "data.frame"))
 
 # display table -----------------------------------
 metacheck::report_table(table, c(0.5, 0.25, 0.25), 5, FALSE)
@@ -707,8 +856,9 @@ metacheck::report_table(table, c(0.5, 0.25, 0.25), 5, FALSE)
 #| echo: false
 
 # table data --------------------------------------
-table <- structure(list("References with Mismatched Authors" = "Lakens, Daniël. 2018. \"Equivalence Testing for Psychological Research.\" Advances in Methods and Practices in Psychological Science 1: 259-70.", 
-    "Original Authors" = "Lakens, Daniël", "CrossRef Authors" = "Lakens, Daniel; Scheel, Anne M.; Isager, Peder Mortvedt"), row.names = 4L, class = "data.frame")
+table <- structure(list("References with Mismatched Authors" = "Lakens, Daniël. 2018. \"Equivalence Testing for Psychological Research.\" Ad- vances in Methods and Practices in Psychological Science 1: 259-70.", 
+    "Original Authors" = "Lakens, Daniël", "CrossRef Authors" = "Lakens, Daniël; <br>Scheel, Anne M.; <br>Isager, Peder M."), row.names = c(NA, 
+-1L), class = c("tbl_df", "tbl", "data.frame"))
 
 # display table -----------------------------------
 metacheck::report_table(table, c(0.5, 0.25, 0.25), 5, FALSE)
@@ -718,7 +868,10 @@ metacheck::report_table(table, c(0.5, 0.25, 0.25), 5, FALSE)
 #| echo: false
 
 # table data --------------------------------------
-table <- structure(list("References without Matches" = "Smith, F. 2021. \"Human Error Is a Symptom of a Poor Design.\" Journal of Journals. https://doi.org/10.0000/0123456789."), row.names = 5L, class = "data.frame")
+table <- structure(list("References without Matches" = c("DeBruine, Lisa. 2025. Faux: Simulation for Factorial Designs. Zenodo. https: //doi.org/10.5281/10.5281/zenodo.2669586.", 
+"Smith, F. 2021. \"Human Error Is a Symptom of a Poor Design.\" Journal of Journals. https://doi.org/10.0000/0123456789."
+)), row.names = c(NA, -2L), class = c("tbl_df", "tbl", "data.frame"
+))
 
 # display table -----------------------------------
 metacheck::report_table(table, 5, 2, FALSE)
@@ -755,7 +908,8 @@ Check if you are aware of the replication studies, and cite them where appropria
 
 # table data --------------------------------------
 table <- structure(list(Reference = "Eagly, Alice H., and Wendy Wood. 1999. \"The Origins of Sex Differences in Human Behavior: Evolved Dispositions Versus Social Roles.\" American Psychologist 54 (6): 408-23. https://doi.org/10.1037/0003-066x.54.6.408.", 
-    Replication = "Zhang, L., Lee, A. J., DeBruine, L. M., & Jones, B. C. (2019). Are Sex Differences in Preferences for Physical Attractiveness and Good Earning Capacity in Potential Mates Smaller in Countries With Greater Gender Equality? Evolutionary Psychology, 17(2). <a href='https://doi.org/10.1177/1474704919852921' target='_blank'>doi:10.1177/1474704919852921</a>"), row.names = 1L, class = "data.frame")
+    Replication = "Zhang, L., Lee, A. J., DeBruine, L. M., & Jones, B. C. (2019). Are Sex Differences in Preferences for Physical Attractiveness and Good Earning Capacity in Potential Mates Smaller in Countries With Greater Gender Equality? Evolutionary Psychology, 17(2). <a href='https://doi.org/10.1177/1474704919852921' target='_blank'>doi:10.1177/1474704919852921</a>"), row.names = c(NA, 
+-1L), class = c("tbl_df", "tbl", "data.frame"))
 
 # display table -----------------------------------
 metacheck::report_table(table, c(0.5, 0.5), 2, FALSE)
@@ -793,9 +947,9 @@ Check if you are aware of the replication studies, and cite them where appropria
 #| echo: false
 
 # table data --------------------------------------
-table <- structure(list(Reference = "Gino, Francesca, and Scott S. Wiltermuth. 2014. \"Evil Genius? How Dishonesty Can Lead to Greater Creativity.\" Psychological Science 25 (4): 973–81. https://doi.org/10.1177/0956797614520714.", 
-    "RW Type" = "Retraction"), class = "data.frame", row.names = c(NA, 
--1L))
+table <- structure(list(Reference = "Gino, Francesca, and Scott S. Wiltermuth. 2014. \"Evil Genius? How Dishonesty Can Lead to Greater Creativity.\" Psychological Science 25 (4): 973-81. https://doi.org/10.1177/0956797614520714.", 
+    "RW Type" = "Retraction"), row.names = c(NA, -1L), class = c("tbl_df", 
+"tbl", "data.frame"))
 
 # display table -----------------------------------
 metacheck::report_table(table, "auto", 2, FALSE)
@@ -819,7 +973,7 @@ This module was developed by Daniel Lakens and Lisa DeBruine
 
 :::
 
-### ℹ️ Check PubPeer Comments {#check-pubpeer-comments .info}
+### ℹ️ PubPeer Comments {#pubpeer-comments .info}
 
 You cited 1 reference with comments in PubPeer.
 
@@ -833,8 +987,9 @@ Pubpeer is a platform for post-publication peer review. We have filtered out Pub
 #| echo: false
 
 # table data --------------------------------------
-table <- structure(list(Reference = "Gino, Francesca, and Scott S. Wiltermuth. 2014. \"Evil Genius? How Dishonesty Can Lead to Greater Creativity.\" Psychological Science 25 (4): 973–81. https://doi.org/10.1177/0956797614520714.", 
-    Comments = 3, "PubPeer Link" = "<a href='https://pubpeer.com/publications/3FA648ECECB88454C91804F09E2E56' target='_blank'>link</a>"), row.names = 1L, class = "data.frame")
+table <- structure(list(Reference = "Gino, Francesca, and Scott S. Wiltermuth. 2014. \"Evil Genius? How Dishonesty Can Lead to Greater Creativity.\" Psychological Science 25 (4): 973-81. https://doi.org/10.1177/0956797614520714.", 
+    Comments = 3, "PubPeer Link" = "<a href='https://pubpeer.com/publications/3FA648ECECB88454C91804F09E2E56' target='_blank'>link</a>"), row.names = c(NA, 
+-1L), class = c("tbl_df", "tbl", "data.frame"))
 
 # display table -----------------------------------
 metacheck::report_table(table, "auto", 2, FALSE)
@@ -868,16 +1023,16 @@ See the specific reports above for details.
 #| echo: false
 
 # table data --------------------------------------
-table <- structure(list(text = c("DeBruine, Lisa. 2025. Faux: Simulation for Factorial Designs. Zenodo. https://doi.org/10.5281/zenodo.2669586.", 
+table <- structure(list(text = c("DeBruine, Lisa. 2025. Faux: Simulation for Factorial Designs. Zenodo. https: //doi.org/10.5281/10.5281/zenodo.2669586.", 
 "Eagly, Alice H., and Wendy Wood. 1999. \"The Origins of Sex Differences in Human Behavior: Evolved Dispositions Versus Social Roles.\" American Psychologist 54 (6): 408-23. https://doi.org/10.1037/0003-066x.54.6.408.", 
-"Gino, Francesca, and Scott S. Wiltermuth. 2014. \"Evil Genius? How Dishonesty Can Lead to Greater Creativity.\" Psychological Science 25 (4): 973–81. https://doi.org/10.1177/0956797614520714.", 
-"Lakens, Daniël. 2018. \"Equivalence Testing for Psychological Research.\" Advances in Methods and Practices in Psychological Science 1: 259-70.", 
+"Gino, Francesca, and Scott S. Wiltermuth. 2014. \"Evil Genius? How Dishonesty Can Lead to Greater Creativity.\" Psychological Science 25 (4): 973-81. https://doi.org/10.1177/0956797614520714.", 
+"Lakens, Daniël. 2018. \"Equivalence Testing for Psychological Research.\" Ad- vances in Methods and Practices in Psychological Science 1: 259-70.", 
 "Smith, F. 2021. \"Human Error Is a Symptom of a Poor Design.\" Journal of Journals. https://doi.org/10.0000/0123456789."
-), accuracy_mismatch = c("doi, year", NA, "title", "doi, author", 
+), accuracy_mismatch = c("no match", NA, "title", "doi, author", 
 "no match"), pubpeer = c(NA, NA, "<a href='https://pubpeer.com/publications/3FA648ECECB88454C91804F09E2E56' target='_blank'>Link</a>", 
 NA, NA), replication_type = c(NA, "replication", NA, NA, NA), 
-    retractionwatch = c(NA, NA, "Retraction", NA, NA)), class = "data.frame", row.names = c(NA, 
--5L))
+    retractionwatch = c(NA, NA, "Retraction", NA, NA)), row.names = c(NA, 
+-5L), class = c("tbl_df", "tbl", "data.frame"))
 
 # display table -----------------------------------
 metacheck::report_table(table, c(0.75, NA, NA, NA, NA), 10, FALSE)
