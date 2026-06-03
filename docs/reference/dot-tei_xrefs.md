@@ -1,18 +1,14 @@
-# Get cross references from TEI type XML
+# Get cross references from text table
 
-Get cross references from TEI type XML
+Get cross references from text table
 
 ## Usage
 
 ``` r
-.tei_xrefs(xml, text_table)
+.tei_xrefs(text_table)
 ```
 
 ## Arguments
-
-- xml:
-
-  The XML
 
 - text_table:
 

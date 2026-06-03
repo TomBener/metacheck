@@ -12,8 +12,8 @@
 <link rel="icon" sizes="any" href="../favicon.ico">
 <link rel="manifest" href="../site.webmanifest">
 <script src="../deps/jquery-3.6.0/jquery-3.6.0.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<link href="../deps/bootstrap-5.3.1/bootstrap.min.css" rel="stylesheet">
-<script src="../deps/bootstrap-5.3.1/bootstrap.bundle.min.js"></script><link href="../deps/Open_Sans-0.4.10/font.css" rel="stylesheet">
+<link href="../deps/bootstrap-5.3.8/bootstrap.min.css" rel="stylesheet">
+<script src="../deps/bootstrap-5.3.8/bootstrap.bundle.min.js"></script><link href="../deps/Open_Sans-0.4.10/font.css" rel="stylesheet">
 <link href="../deps/Fira_Code-0.4.10/font.css" rel="stylesheet">
 <link href="../deps/font-awesome-6.5.2/css/all.min.css" rel="stylesheet">
 <link href="../deps/font-awesome-6.5.2/css/v4-shims.min.css" rel="stylesheet">
@@ -34,7 +34,7 @@
 
     <a class="navbar-brand me-2" href="../index.html">metacheck</a>
 
-    <small class="nav-text text-danger me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Unreleased version">0.0.0.9103</small>
+    <small class="nav-text text-danger me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Unreleased version">0.0.0.9106</small>
 
 
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -206,11 +206,11 @@ metascientific users.</p>
 <div class="sourceCode" id="cb12"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="va">mo</span><span class="op">$</span><span class="va">table</span></span></code></pre></div>
 <pre><code><span><span class="co">#&gt; <span style="color: #949494;"># A tibble: 3 × 14</span></span></span>
-<span><span class="co">#&gt;   text_id section_id paragraph_id text     formatted page_number paper_id header</span></span>
-<span><span class="co">#&gt;     <span style="color: #949494; font-style: italic;">&lt;int&gt;</span>      <span style="color: #949494; font-style: italic;">&lt;int&gt;</span>        <span style="color: #949494; font-style: italic;">&lt;int&gt;</span> <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>    <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>           <span style="color: #949494; font-style: italic;">&lt;int&gt;</span> <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>    <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span> </span></span>
-<span><span class="co">#&gt; <span style="color: #BCBCBC;">1</span>      21          8           10 <span style="color: #949494;">"</span>p=0.00… <span style="color: #BB0000;">NA</span>                  3 to_err_… Resul…</span></span>
-<span><span class="co">#&gt; <span style="color: #BCBCBC;">2</span>      22          8           11 <span style="color: #949494;">"</span>p=0.15… <span style="color: #BB0000;">NA</span>                  3 to_err_… Resul…</span></span>
-<span><span class="co">#&gt; <span style="color: #BCBCBC;">3</span>      23          8           12 <span style="color: #949494;">"</span>p &gt; .0… <span style="color: #BB0000;">NA</span>                  3 to_err_… Resul…</span></span>
+<span><span class="co">#&gt;   text     text_id paragraph_id section_id page_number formatted paper_id header</span></span>
+<span><span class="co">#&gt;   <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>      <span style="color: #949494; font-style: italic;">&lt;int&gt;</span>        <span style="color: #949494; font-style: italic;">&lt;int&gt;</span>      <span style="color: #949494; font-style: italic;">&lt;int&gt;</span>       <span style="color: #949494; font-style: italic;">&lt;int&gt;</span> <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>     <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>    <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span> </span></span>
+<span><span class="co">#&gt; <span style="color: #BCBCBC;">1</span> p = 0.0…      15            4          3          <span style="color: #BB0000;">NA</span>  <span style="color: #BB0000;">NA</span>       to_err_… Proce…</span></span>
+<span><span class="co">#&gt; <span style="color: #BCBCBC;">2</span> p =0.152      16            5          3          <span style="color: #BB0000;">NA</span>  <span style="color: #BB0000;">NA</span>       to_err_… Proce…</span></span>
+<span><span class="co">#&gt; <span style="color: #BCBCBC;">3</span> p &gt; .05       17            6          3          <span style="color: #BB0000;">NA</span> <span style="color: #949494;">"</span>There w… to_err_… Proce…</span></span>
 <span><span class="co">#&gt; <span style="color: #949494;"># ℹ 6 more variables: section_type &lt;chr&gt;, p_comp &lt;chr&gt;, p_value &lt;dbl&gt;,</span></span></span>
 <span><span class="co">#&gt; <span style="color: #949494;">#   expanded &lt;chr&gt;, imprecise &lt;lgl&gt;, zero &lt;lgl&gt;</span></span></span></code></pre>
 </div>
@@ -254,10 +254,10 @@ modules.</p>
 <span><span class="co">#&gt; </span></span>
 <span><span class="co">#&gt; To Err is Human: An Empirical Investigation</span></span>
 <span><span class="co">#&gt; </span></span>
-<span><span class="co">#&gt; * Sections: 16</span></span>
-<span><span class="co">#&gt; * Sentences: 39</span></span>
+<span><span class="co">#&gt; * Sections: 14</span></span>
+<span><span class="co">#&gt; * Sentences: 37</span></span>
 <span><span class="co">#&gt; * Bibliography: 5</span></span>
-<span><span class="co">#&gt; * X-Refs: 8</span></span></code></pre>
+<span><span class="co">#&gt; * X-Refs: 5</span></span></code></pre>
 </div>
 <div class="section level3">
 <h3 id="previous-outputs">Previous Outputs<a class="anchor" aria-label="anchor" href="#previous-outputs"></a>
@@ -296,29 +296,29 @@ list of 250 open-access papers from Psychological Science.</p>
 <code class="sourceCode R"><span><span class="va">all_p</span> <span class="op">&lt;-</span> <span class="fu"><a href="../reference/module_run.html">module_run</a></span><span class="op">(</span><span class="va">paper</span>, <span class="st">"all_p_values"</span><span class="op">)</span></span>
 <span></span>
 <span><span class="va">all_p</span><span class="op">$</span><span class="va">table</span> <span class="co"># print table</span></span></code></pre></div>
-<pre><code><span><span class="co">#&gt; <span style="color: #949494;"># A tibble: 20 × 10</span></span></span>
-<span><span class="co">#&gt;    text_id paragraph_id section_id text        page_number paper_id       header</span></span>
-<span><span class="co">#&gt;      <span style="color: #949494; font-style: italic;">&lt;int&gt;</span>        <span style="color: #949494; font-style: italic;">&lt;int&gt;</span>      <span style="color: #949494; font-style: italic;">&lt;int&gt;</span> <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>             <span style="color: #949494; font-style: italic;">&lt;int&gt;</span> <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>          <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span> </span></span>
-<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 1</span>      67           21          6 <span style="color: #949494;">"</span>p = .003<span style="color: #949494;">"</span>           <span style="color: #BB0000;">NA</span> 0956797620955… Quest…</span></span>
-<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 2</span>      67           21          6 <span style="color: #949494;">"</span>p = .08<span style="color: #949494;">"</span>            <span style="color: #BB0000;">NA</span> 0956797620955… Quest…</span></span>
-<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 3</span>     105           33          9 <span style="color: #949494;">"</span>p &lt; .001 <span style="color: #949494;">"</span>          <span style="color: #BB0000;">NA</span> 0956797620955… Resul…</span></span>
-<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 4</span>     107           33          9 <span style="color: #949494;">"</span>p &lt; .025<span style="color: #949494;">"</span>           <span style="color: #BB0000;">NA</span> 0956797620955… Resul…</span></span>
-<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 5</span>     107           33          9 <span style="color: #949494;">"</span>p = .040<span style="color: #949494;">"</span>           <span style="color: #BB0000;">NA</span> 0956797620955… Resul…</span></span>
-<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 6</span>     107           33          9 <span style="color: #949494;">"</span>p = .173<span style="color: #949494;">"</span>           <span style="color: #BB0000;">NA</span> 0956797620955… Resul…</span></span>
-<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 7</span>     108           33          9 <span style="color: #949494;">"</span>p = .006<span style="color: #949494;">"</span>           <span style="color: #BB0000;">NA</span> 0956797620955… Resul…</span></span>
-<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 8</span>     108           33          9 <span style="color: #949494;">"</span>p = .02<span style="color: #949494;">"</span>            <span style="color: #BB0000;">NA</span> 0956797620955… Resul…</span></span>
-<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 9</span>     109           33          9 <span style="color: #949494;">"</span>p = .691<span style="color: #949494;">"</span>           <span style="color: #BB0000;">NA</span> 0956797620955… Resul…</span></span>
-<span><span class="co">#&gt; <span style="color: #BCBCBC;">10</span>     109           33          9 <span style="color: #949494;">"</span>p = .303<span style="color: #949494;">"</span>           <span style="color: #BB0000;">NA</span> 0956797620955… Resul…</span></span>
-<span><span class="co">#&gt; <span style="color: #BCBCBC;">11</span>     112           34          9 <span style="color: #949494;">"</span>p = .023<span style="color: #949494;">"</span>           <span style="color: #BB0000;">NA</span> 0956797620955… Resul…</span></span>
-<span><span class="co">#&gt; <span style="color: #BCBCBC;">12</span>     112           34          9 <span style="color: #949494;">"</span>p &lt; .001<span style="color: #949494;">"</span>           <span style="color: #BB0000;">NA</span> 0956797620955… Resul…</span></span>
-<span><span class="co">#&gt; <span style="color: #BCBCBC;">13</span>     114           35          9 <span style="color: #949494;">"</span>p = .006<span style="color: #949494;">"</span>           <span style="color: #BB0000;">NA</span> 0956797620955… Resul…</span></span>
-<span><span class="co">#&gt; <span style="color: #BCBCBC;">14</span>     114           35          9 <span style="color: #949494;">"</span>p = .037<span style="color: #949494;">"</span>           <span style="color: #BB0000;">NA</span> 0956797620955… Resul…</span></span>
-<span><span class="co">#&gt; <span style="color: #BCBCBC;">15</span>     114           35          9 <span style="color: #949494;">"</span>p = .038<span style="color: #949494;">"</span>           <span style="color: #BB0000;">NA</span> 0956797620955… Resul…</span></span>
-<span><span class="co">#&gt; <span style="color: #BCBCBC;">16</span>     114           35          9 <span style="color: #949494;">"</span>p = .358<span style="color: #949494;">"</span>           <span style="color: #BB0000;">NA</span> 0956797620955… Resul…</span></span>
-<span><span class="co">#&gt; <span style="color: #BCBCBC;">17</span>     115           35          9 <span style="color: #949494;">"</span>p &lt; .001<span style="color: #949494;">"</span>           <span style="color: #BB0000;">NA</span> 0956797620955… Resul…</span></span>
-<span><span class="co">#&gt; <span style="color: #BCBCBC;">18</span>     115           35          9 <span style="color: #949494;">"</span>p = .127<span style="color: #949494;">"</span>           <span style="color: #BB0000;">NA</span> 0956797620955… Resul…</span></span>
-<span><span class="co">#&gt; <span style="color: #BCBCBC;">19</span>     115           35          9 <span style="color: #949494;">"</span>p = .062<span style="color: #949494;">"</span>           <span style="color: #BB0000;">NA</span> 0956797620955… Resul…</span></span>
-<span><span class="co">#&gt; <span style="color: #BCBCBC;">20</span>     115           35          9 <span style="color: #949494;">"</span>p = .047<span style="color: #949494;">"</span>           <span style="color: #BB0000;">NA</span> 0956797620955… Resul…</span></span>
+<pre><code><span><span class="co">#&gt; <span style="color: #949494;"># A tibble: 20 × 11</span></span></span>
+<span><span class="co">#&gt;    text    text_id paragraph_id section_id page_number formatted paper_id header</span></span>
+<span><span class="co">#&gt;    <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>     <span style="color: #949494; font-style: italic;">&lt;int&gt;</span>        <span style="color: #949494; font-style: italic;">&lt;int&gt;</span>      <span style="color: #949494; font-style: italic;">&lt;int&gt;</span>       <span style="color: #949494; font-style: italic;">&lt;int&gt;</span> <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>     <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>    <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span> </span></span>
+<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 1</span> <span style="color: #949494;">"</span>p = .…      63           15          6          <span style="color: #BB0000;">NA</span>  <span style="color: #BB0000;">NA</span>       0956797… Quest…</span></span>
+<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 2</span> <span style="color: #949494;">"</span>p = .…      63           15          6          <span style="color: #BB0000;">NA</span>  <span style="color: #BB0000;">NA</span>       0956797… Quest…</span></span>
+<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 3</span> <span style="color: #949494;">"</span>p &lt; .…     101           24          9          <span style="color: #BB0000;">NA</span> <span style="color: #949494;">"</span>We obse… 0956797… Resul…</span></span>
+<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 4</span> <span style="color: #949494;">"</span>p &lt; .…     102           24          9          <span style="color: #BB0000;">NA</span> <span style="color: #949494;">"</span>The mai… 0956797… Resul…</span></span>
+<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 5</span> <span style="color: #949494;">"</span>p = .…     102           24          9          <span style="color: #BB0000;">NA</span> <span style="color: #949494;">"</span>The mai… 0956797… Resul…</span></span>
+<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 6</span> <span style="color: #949494;">"</span>p = .…     102           24          9          <span style="color: #BB0000;">NA</span> <span style="color: #949494;">"</span>The mai… 0956797… Resul…</span></span>
+<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 7</span> <span style="color: #949494;">"</span>p = .…     103           24          9          <span style="color: #BB0000;">NA</span>  <span style="color: #BB0000;">NA</span>       0956797… Resul…</span></span>
+<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 8</span> <span style="color: #949494;">"</span>p = .…     103           24          9          <span style="color: #BB0000;">NA</span>  <span style="color: #BB0000;">NA</span>       0956797… Resul…</span></span>
+<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 9</span> <span style="color: #949494;">"</span>p = .…     104           24          9          <span style="color: #BB0000;">NA</span> <span style="color: #949494;">"</span>We also… 0956797… Resul…</span></span>
+<span><span class="co">#&gt; <span style="color: #BCBCBC;">10</span> <span style="color: #949494;">"</span>p =.3…     104           24          9          <span style="color: #BB0000;">NA</span> <span style="color: #949494;">"</span>We also… 0956797… Resul…</span></span>
+<span><span class="co">#&gt; <span style="color: #BCBCBC;">11</span> <span style="color: #949494;">"</span>p = .…     107           25          9          <span style="color: #BB0000;">NA</span> <span style="color: #949494;">"</span>Yes-the… 0956797… Resul…</span></span>
+<span><span class="co">#&gt; <span style="color: #BCBCBC;">12</span> <span style="color: #949494;">"</span>p &lt;.0…     107           25          9          <span style="color: #BB0000;">NA</span> <span style="color: #949494;">"</span>Yes-the… 0956797… Resul…</span></span>
+<span><span class="co">#&gt; <span style="color: #BCBCBC;">13</span> <span style="color: #949494;">"</span>p = .…     109           26          9          <span style="color: #BB0000;">NA</span>  <span style="color: #BB0000;">NA</span>       0956797… Resul…</span></span>
+<span><span class="co">#&gt; <span style="color: #BCBCBC;">14</span> <span style="color: #949494;">"</span>p = .…     109           26          9          <span style="color: #BB0000;">NA</span>  <span style="color: #BB0000;">NA</span>       0956797… Resul…</span></span>
+<span><span class="co">#&gt; <span style="color: #BCBCBC;">15</span> <span style="color: #949494;">"</span>p = .…     109           26          9          <span style="color: #BB0000;">NA</span>  <span style="color: #BB0000;">NA</span>       0956797… Resul…</span></span>
+<span><span class="co">#&gt; <span style="color: #BCBCBC;">16</span> <span style="color: #949494;">"</span>p = .…     109           26          9          <span style="color: #BB0000;">NA</span>  <span style="color: #BB0000;">NA</span>       0956797… Resul…</span></span>
+<span><span class="co">#&gt; <span style="color: #BCBCBC;">17</span> <span style="color: #949494;">"</span>p &lt; .…     110           26          9          <span style="color: #BB0000;">NA</span> <span style="color: #949494;">"</span>Results… 0956797… Resul…</span></span>
+<span><span class="co">#&gt; <span style="color: #BCBCBC;">18</span> <span style="color: #949494;">"</span>p = .…     110           26          9          <span style="color: #BB0000;">NA</span> <span style="color: #949494;">"</span>Results… 0956797… Resul…</span></span>
+<span><span class="co">#&gt; <span style="color: #BCBCBC;">19</span> <span style="color: #949494;">"</span>p = .…     110           26          9          <span style="color: #BB0000;">NA</span> <span style="color: #949494;">"</span>Results… 0956797… Resul…</span></span>
+<span><span class="co">#&gt; <span style="color: #BCBCBC;">20</span> <span style="color: #949494;">"</span>p = .…     110           26          9          <span style="color: #BB0000;">NA</span> <span style="color: #949494;">"</span>Results… 0956797… Resul…</span></span>
 <span><span class="co">#&gt; <span style="color: #949494;"># ℹ 3 more variables: section_type &lt;chr&gt;, p_comp &lt;chr&gt;, p_value &lt;dbl&gt;</span></span></span></code></pre>
 <p>If you run this module on all 250 papers, you will get more rows than
 you probably want to print in the full table one row for every p-value
@@ -343,12 +343,12 @@ row per paper.</p>
 <pre><code><span><span class="co">#&gt; <span style="color: #949494;"># A tibble: 6 × 2</span></span></span>
 <span><span class="co">#&gt;   text          n</span></span>
 <span><span class="co">#&gt;   <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>     <span style="color: #949494; font-style: italic;">&lt;int&gt;</span></span></span>
-<span><span class="co">#&gt; <span style="color: #BCBCBC;">1</span> p &lt; .001   <span style="text-decoration: underline;">1</span>529</span></span>
-<span><span class="co">#&gt; <span style="color: #BCBCBC;">2</span> p &lt; .01     144</span></span>
-<span><span class="co">#&gt; <span style="color: #BCBCBC;">3</span> p &lt; .05     137</span></span>
-<span><span class="co">#&gt; <span style="color: #BCBCBC;">4</span> p = .001    120</span></span>
-<span><span class="co">#&gt; <span style="color: #BCBCBC;">5</span> p = .002     96</span></span>
-<span><span class="co">#&gt; <span style="color: #BCBCBC;">6</span> p &lt; .0001    89</span></span></code></pre>
+<span><span class="co">#&gt; <span style="color: #BCBCBC;">1</span> p &lt; .001   <span style="text-decoration: underline;">1</span>485</span></span>
+<span><span class="co">#&gt; <span style="color: #BCBCBC;">2</span> p &lt; .01     138</span></span>
+<span><span class="co">#&gt; <span style="color: #BCBCBC;">3</span> p &lt; .05     129</span></span>
+<span><span class="co">#&gt; <span style="color: #BCBCBC;">4</span> p = .001    119</span></span>
+<span><span class="co">#&gt; <span style="color: #BCBCBC;">5</span> p = .002     93</span></span>
+<span><span class="co">#&gt; <span style="color: #BCBCBC;">6</span> p &lt; .0001    88</span></span></code></pre>
 </div>
 <div class="section level3">
 <h3 id="all_urls">all_urls<a class="anchor" aria-label="anchor" href="#all_urls"></a>
@@ -359,15 +359,16 @@ false positives when text in the paper is formatted as a valid URL.</p>
 <code class="sourceCode R"><span><span class="va">all_urls</span> <span class="op">&lt;-</span> <span class="fu"><a href="../reference/module_run.html">module_run</a></span><span class="op">(</span><span class="va">paper</span>, <span class="st">"all_urls"</span><span class="op">)</span></span>
 <span></span>
 <span><span class="va">all_urls</span><span class="op">$</span><span class="va">table</span></span></code></pre></div>
-<pre><code><span><span class="co">#&gt; <span style="color: #949494;"># A tibble: 6 × 8</span></span></span>
-<span><span class="co">#&gt;   text_id paragraph_id section_id text  page_number paper_id header section_type</span></span>
-<span><span class="co">#&gt;     <span style="color: #949494; font-style: italic;">&lt;int&gt;</span>        <span style="color: #949494; font-style: italic;">&lt;int&gt;</span>      <span style="color: #949494; font-style: italic;">&lt;int&gt;</span> <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>       <span style="color: #949494; font-style: italic;">&lt;int&gt;</span> <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>    <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>  <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>       </span></span>
-<span><span class="co">#&gt; <span style="color: #BCBCBC;">1</span>      42           12          3 3.9.…          <span style="color: #BB0000;">NA</span> 0956797… Parti… method      </span></span>
-<span><span class="co">#&gt; <span style="color: #BCBCBC;">2</span>      84           27          8 http…          <span style="color: #BB0000;">NA</span> 0956797… Analy… method      </span></span>
-<span><span class="co">#&gt; <span style="color: #BCBCBC;">3</span>     136           43         13 http…          <span style="color: #BB0000;">NA</span> 0956797… Open … funding     </span></span>
-<span><span class="co">#&gt; <span style="color: #BCBCBC;">4</span>     137           44         13 http…          <span style="color: #BB0000;">NA</span> 0956797… Open … funding     </span></span>
-<span><span class="co">#&gt; <span style="color: #BCBCBC;">5</span>     139           44         13 http…          <span style="color: #BB0000;">NA</span> 0956797… Open … funding     </span></span>
-<span><span class="co">#&gt; <span style="color: #BCBCBC;">6</span>     144           50         16 http…          <span style="color: #BB0000;">NA</span> 0956797… Suppl… annex</span></span></code></pre>
+<pre><code><span><span class="co">#&gt; <span style="color: #949494;"># A tibble: 6 × 9</span></span></span>
+<span><span class="co">#&gt;   text     text_id paragraph_id section_id page_number formatted paper_id header</span></span>
+<span><span class="co">#&gt;   <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>      <span style="color: #949494; font-style: italic;">&lt;int&gt;</span>        <span style="color: #949494; font-style: italic;">&lt;int&gt;</span>      <span style="color: #949494; font-style: italic;">&lt;int&gt;</span>       <span style="color: #949494; font-style: italic;">&lt;int&gt;</span> <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>     <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>    <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span> </span></span>
+<span><span class="co">#&gt; <span style="color: #BCBCBC;">1</span> 3.9.1.7       39            9          3          <span style="color: #BB0000;">NA</span> <span style="color: #949494;">"</span>Accordi… 0956797… Parti…</span></span>
+<span><span class="co">#&gt; <span style="color: #BCBCBC;">2</span> https:/…      80           19          8          <span style="color: #BB0000;">NA</span> <span style="color: #949494;">"</span>Analysi… 0956797… Analy…</span></span>
+<span><span class="co">#&gt; <span style="color: #BCBCBC;">3</span> https:/…     130           30         13          <span style="color: #BB0000;">NA</span> <span style="color: #949494;">"</span>All dat… 0956797… Open …</span></span>
+<span><span class="co">#&gt; <span style="color: #BCBCBC;">4</span> https:/…     131           31         13          <span style="color: #BB0000;">NA</span> <span style="color: #949494;">"</span>The des… 0956797… Open …</span></span>
+<span><span class="co">#&gt; <span style="color: #BCBCBC;">5</span> http://…     133           31         13          <span style="color: #BB0000;">NA</span> <span style="color: #949494;">"</span>More in… 0956797… Open …</span></span>
+<span><span class="co">#&gt; <span style="color: #BCBCBC;">6</span> http://…     138           34         16          <span style="color: #BB0000;">NA</span> <span style="color: #949494;">"</span>Additio… 0956797… Suppl…</span></span>
+<span><span class="co">#&gt; <span style="color: #949494;"># ℹ 1 more variable: section_type &lt;chr&gt;</span></span></span></code></pre>
 <div class="sourceCode" id="cb31"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="va">all_urls_ps</span> <span class="op">&lt;-</span> <span class="fu"><a href="../reference/module_run.html">module_run</a></span><span class="op">(</span><span class="va">psychsci</span>, <span class="st">"all_urls"</span><span class="op">)</span></span>
 <span></span>
@@ -379,14 +380,14 @@ false positives when text in the paper is formatted as a valid URL.</p>
 <span><span class="co">#&gt; 4    0956797614557697    6</span></span>
 <span><span class="co">#&gt; 5    0956797614560771    0</span></span>
 <span><span class="co">#&gt; 6    0956797614566469    5</span></span>
-<span><span class="co">#&gt; 7    0956797615569001    7</span></span>
+<span><span class="co">#&gt; 7    0956797615569001    9</span></span>
 <span><span class="co">#&gt; 8    0956797615569889    3</span></span>
 <span><span class="co">#&gt; 9    0956797615583071    4</span></span>
 <span><span class="co">#&gt; 10   0956797615588467    2</span></span>
 <span><span class="co">#&gt; 11   0956797615603702    0</span></span>
 <span><span class="co">#&gt; 12   0956797615615584    2</span></span>
 <span><span class="co">#&gt; 13   0956797615617779    1</span></span>
-<span><span class="co">#&gt; 14   0956797615620784    3</span></span>
+<span><span class="co">#&gt; 14   0956797615620784    4</span></span>
 <span><span class="co">#&gt; 15   0956797615625973    5</span></span>
 <span><span class="co">#&gt; 16   0956797616631990    6</span></span>
 <span><span class="co">#&gt; 17   0956797616634654    2</span></span>
@@ -396,7 +397,7 @@ false positives when text in the paper is formatted as a valid URL.</p>
 <span><span class="co">#&gt; 21   0956797616657319    4</span></span>
 <span><span class="co">#&gt; 22   0956797616661199    5</span></span>
 <span><span class="co">#&gt; 23   0956797616663878    5</span></span>
-<span><span class="co">#&gt; 24   0956797616665351    6</span></span>
+<span><span class="co">#&gt; 24   0956797616665351    7</span></span>
 <span><span class="co">#&gt; 25   0956797616667447    1</span></span>
 <span><span class="co">#&gt; 26   0956797616669994    1</span></span>
 <span><span class="co">#&gt; 27   0956797616671327    2</span></span>
@@ -404,7 +405,7 @@ false positives when text in the paper is formatted as a valid URL.</p>
 <span><span class="co">#&gt; 29   0956797617692000    7</span></span>
 <span><span class="co">#&gt; 30   0956797617693326    1</span></span>
 <span><span class="co">#&gt; 31   0956797617694867    9</span></span>
-<span><span class="co">#&gt; 32   0956797617702501    5</span></span>
+<span><span class="co">#&gt; 32   0956797617702501    6</span></span>
 <span><span class="co">#&gt; 33   0956797617702699    5</span></span>
 <span><span class="co">#&gt; 34   0956797617705391    4</span></span>
 <span><span class="co">#&gt; 35   0956797617705667    4</span></span>
@@ -418,11 +419,11 @@ false positives when text in the paper is formatted as a valid URL.</p>
 <span><span class="co">#&gt; 43   0956797617737129   31</span></span>
 <span><span class="co">#&gt; 44   0956797617739368    9</span></span>
 <span><span class="co">#&gt; 45   0956797617740685    3</span></span>
-<span><span class="co">#&gt; 46   0956797617744542   23</span></span>
+<span><span class="co">#&gt; 46   0956797617744542   19</span></span>
 <span><span class="co">#&gt; 47   0956797618755322    7</span></span>
 <span><span class="co">#&gt; 48   0956797618760197    4</span></span>
 <span><span class="co">#&gt; 49   0956797618772822    4</span></span>
-<span><span class="co">#&gt; 50   0956797618773095    0</span></span>
+<span><span class="co">#&gt; 50   0956797618773095    1</span></span>
 <span><span class="co">#&gt; 51   0956797618785899    8</span></span>
 <span><span class="co">#&gt; 52   0956797618795679    3</span></span>
 <span><span class="co">#&gt; 53   0956797618796480    6</span></span>
@@ -430,11 +431,11 @@ false positives when text in the paper is formatted as a valid URL.</p>
 <span><span class="co">#&gt; 55   0956797618815482    0</span></span>
 <span><span class="co">#&gt; 56   0956797618815488    1</span></span>
 <span><span class="co">#&gt; 57   0956797618823540    2</span></span>
-<span><span class="co">#&gt; 58   0956797619830326   21</span></span>
-<span><span class="co">#&gt; 59   0956797619830329   10</span></span>
+<span><span class="co">#&gt; 58   0956797619830326   20</span></span>
+<span><span class="co">#&gt; 59   0956797619830329   11</span></span>
 <span><span class="co">#&gt; 60   0956797619831964    4</span></span>
 <span><span class="co">#&gt; 61   0956797619833325    2</span></span>
-<span><span class="co">#&gt; 62   0956797619835147    8</span></span>
+<span><span class="co">#&gt; 62   0956797619835147    9</span></span>
 <span><span class="co">#&gt; 63   0956797619837981    1</span></span>
 <span><span class="co">#&gt; 64   0956797619841265    8</span></span>
 <span><span class="co">#&gt; 65   0956797619842261    7</span></span>
@@ -442,7 +443,7 @@ false positives when text in the paper is formatted as a valid URL.</p>
 <span><span class="co">#&gt; 67   0956797619844231    7</span></span>
 <span><span class="co">#&gt; 68   0956797619851753    4</span></span>
 <span><span class="co">#&gt; 69   0956797619866625    6</span></span>
-<span><span class="co">#&gt; 70   0956797619866627    9</span></span>
+<span><span class="co">#&gt; 70   0956797619866627    8</span></span>
 <span><span class="co">#&gt; 71   0956797619869905    5</span></span>
 <span><span class="co">#&gt; 72   0956797619876260   10</span></span>
 <span><span class="co">#&gt; 73   0956797619881134    7</span></span>
@@ -450,10 +451,10 @@ false positives when text in the paper is formatted as a valid URL.</p>
 <span><span class="co">#&gt; 75   0956797620903716   21</span></span>
 <span><span class="co">#&gt; 76   0956797620904450    4</span></span>
 <span><span class="co">#&gt; 77   0956797620904990   18</span></span>
-<span><span class="co">#&gt; 78   0956797620915887   22</span></span>
-<span><span class="co">#&gt; 79   0956797620916521    2</span></span>
+<span><span class="co">#&gt; 78   0956797620915887   21</span></span>
+<span><span class="co">#&gt; 79   0956797620916521    3</span></span>
 <span><span class="co">#&gt; 80   0956797620916782   14</span></span>
-<span><span class="co">#&gt; 81   0956797620927648    4</span></span>
+<span><span class="co">#&gt; 81   0956797620927648    5</span></span>
 <span><span class="co">#&gt; 82   0956797620927967    8</span></span>
 <span><span class="co">#&gt; 83   0956797620929297    2</span></span>
 <span><span class="co">#&gt; 84   0956797620929302    7</span></span>
@@ -466,10 +467,10 @@ false positives when text in the paper is formatted as a valid URL.</p>
 <span><span class="co">#&gt; 91   0956797620955209    6</span></span>
 <span><span class="co">#&gt; 92   0956797620957625    9</span></span>
 <span><span class="co">#&gt; 93   0956797620958638    2</span></span>
-<span><span class="co">#&gt; 94   0956797620958650    5</span></span>
+<span><span class="co">#&gt; 94   0956797620958650    3</span></span>
 <span><span class="co">#&gt; 95   0956797620959014    2</span></span>
 <span><span class="co">#&gt; 96   0956797620959594   19</span></span>
-<span><span class="co">#&gt; 97   0956797620960011   12</span></span>
+<span><span class="co">#&gt; 97   0956797620960011    7</span></span>
 <span><span class="co">#&gt; 98   0956797620963615   11</span></span>
 <span><span class="co">#&gt; 99   0956797620965520    4</span></span>
 <span><span class="co">#&gt; 100  0956797620965536    6</span></span>
@@ -481,7 +482,7 @@ false positives when text in the paper is formatted as a valid URL.</p>
 <span><span class="co">#&gt; 106  0956797620971652    4</span></span>
 <span><span class="co">#&gt; 107  0956797620972116    4</span></span>
 <span><span class="co">#&gt; 108  0956797620972688    2</span></span>
-<span><span class="co">#&gt; 109  0956797620975781    7</span></span>
+<span><span class="co">#&gt; 109  0956797620975781    6</span></span>
 <span><span class="co">#&gt; 110  0956797620984464    5</span></span>
 <span><span class="co">#&gt; 111  0956797620985832    9</span></span>
 <span><span class="co">#&gt; 112 09567976211001317    6</span></span>
@@ -503,7 +504,7 @@ false positives when text in the paper is formatted as a valid URL.</p>
 <span><span class="co">#&gt; 128 09567976211024260    4</span></span>
 <span><span class="co">#&gt; 129 09567976211024535   10</span></span>
 <span><span class="co">#&gt; 130 09567976211026983    5</span></span>
-<span><span class="co">#&gt; 131 09567976211028978    9</span></span>
+<span><span class="co">#&gt; 131 09567976211028978    5</span></span>
 <span><span class="co">#&gt; 132 09567976211030630    4</span></span>
 <span><span class="co">#&gt; 133 09567976211032224    6</span></span>
 <span><span class="co">#&gt; 134 09567976211032676    5</span></span>
@@ -525,7 +526,7 @@ false positives when text in the paper is formatted as a valid URL.</p>
 <span><span class="co">#&gt; 150 09567976211068880    3</span></span>
 <span><span class="co">#&gt; 151  0956797621991137    3</span></span>
 <span><span class="co">#&gt; 152  0956797621991548    6</span></span>
-<span><span class="co">#&gt; 153  0956797621995197   13</span></span>
+<span><span class="co">#&gt; 153  0956797621995197   11</span></span>
 <span><span class="co">#&gt; 154  0956797621995202   16</span></span>
 <span><span class="co">#&gt; 155  0956797621996660    7</span></span>
 <span><span class="co">#&gt; 156  0956797621996667    8</span></span>
@@ -545,7 +546,7 @@ false positives when text in the paper is formatted as a valid URL.</p>
 <span><span class="co">#&gt; 170 09567976221114055    8</span></span>
 <span><span class="co">#&gt; 171 09567976221116816    2</span></span>
 <span><span class="co">#&gt; 172 09567976221116892    7</span></span>
-<span><span class="co">#&gt; 173 09567976221116893    5</span></span>
+<span><span class="co">#&gt; 173 09567976221116893    6</span></span>
 <span><span class="co">#&gt; 174 09567976221119391    7</span></span>
 <span><span class="co">#&gt; 175 09567976221121348    5</span></span>
 <span><span class="co">#&gt; 176 09567976221131519    5</span></span>
@@ -571,7 +572,7 @@ false positives when text in the paper is formatted as a valid URL.</p>
 <span><span class="co">#&gt; 196 09567976231165267    1</span></span>
 <span><span class="co">#&gt; 197 09567976231170878    2</span></span>
 <span><span class="co">#&gt; 198 09567976231172500    3</span></span>
-<span><span class="co">#&gt; 199 09567976231173900   15</span></span>
+<span><span class="co">#&gt; 199 09567976231173900   17</span></span>
 <span><span class="co">#&gt; 200 09567976231173902    3</span></span>
 <span><span class="co">#&gt; 201 09567976231177968    2</span></span>
 <span><span class="co">#&gt; 202 09567976231179378    2</span></span>
@@ -587,7 +588,7 @@ false positives when text in the paper is formatted as a valid URL.</p>
 <span><span class="co">#&gt; 212 09567976231192241    1</span></span>
 <span><span class="co">#&gt; 213 09567976231194221    1</span></span>
 <span><span class="co">#&gt; 214 09567976231194590    5</span></span>
-<span><span class="co">#&gt; 215 09567976231196145    5</span></span>
+<span><span class="co">#&gt; 215 09567976231196145    6</span></span>
 <span><span class="co">#&gt; 216 09567976231198194   11</span></span>
 <span><span class="co">#&gt; 217 09567976231198435    4</span></span>
 <span><span class="co">#&gt; 218 09567976231199440    4</span></span>
@@ -595,7 +596,7 @@ false positives when text in the paper is formatted as a valid URL.</p>
 <span><span class="co">#&gt; 220 09567976231204035   12</span></span>
 <span><span class="co">#&gt; 221 09567976231207095    8</span></span>
 <span><span class="co">#&gt; 222 09567976231213572   10</span></span>
-<span><span class="co">#&gt; 223 09567976231217508    0</span></span>
+<span><span class="co">#&gt; 223 09567976231217508    1</span></span>
 <span><span class="co">#&gt; 224 09567976231218640    2</span></span>
 <span><span class="co">#&gt; 225 09567976231220902    7</span></span>
 <span><span class="co">#&gt; 226 09567976231221789    2</span></span>
@@ -612,7 +613,7 @@ false positives when text in the paper is formatted as a valid URL.</p>
 <span><span class="co">#&gt; 237 09567976241239935    9</span></span>
 <span><span class="co">#&gt; 238 09567976241242105    5</span></span>
 <span><span class="co">#&gt; 239 09567976241243370    4</span></span>
-<span><span class="co">#&gt; 240 09567976241245695   14</span></span>
+<span><span class="co">#&gt; 240 09567976241245695   10</span></span>
 <span><span class="co">#&gt; 241 09567976241246561    3</span></span>
 <span><span class="co">#&gt; 242 09567976241249183    5</span></span>
 <span><span class="co">#&gt; 243 09567976241254312    4</span></span>
@@ -634,7 +635,7 @@ precision (e.g., p &lt; .05 or p = n.s.).</p>
 <span></span>
 <span><span class="va">imprecise</span><span class="op">$</span><span class="va">table</span><span class="op">$</span><span class="va">text</span> <span class="co"># print table</span></span></code></pre></div>
 <pre><code><span><span class="co">#&gt;  [1] "p = .003"  "p = .08"   "p &lt; .001 " "p &lt; .025"  "p = .040"  "p = .173" </span></span>
-<span><span class="co">#&gt;  [7] "p = .006"  "p = .02"   "p = .691"  "p = .303"  "p = .023"  "p &lt; .001" </span></span>
+<span><span class="co">#&gt;  [7] "p = .006"  "p = .02"   "p = .691"  "p =.303"   "p = .023"  "p &lt;.001"  </span></span>
 <span><span class="co">#&gt; [13] "p = .006"  "p = .037"  "p = .038"  "p = .358"  "p &lt; .001"  "p = .127" </span></span>
 <span><span class="co">#&gt; [19] "p = .062"  "p = .047"</span></span></code></pre>
 <p>The <code>expanded</code> column has the full sentence for context.
@@ -642,7 +643,7 @@ Here you can see that “p &lt; .025” was not an imprecisely reported
 p-value, but a description of the preregistered alpha threshold.</p>
 <div class="sourceCode" id="cb35"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="va">imprecise</span><span class="op">$</span><span class="va">table</span><span class="op">$</span><span class="va">expanded</span><span class="op">[[</span><span class="fl">4</span><span class="op">]</span><span class="op">]</span> <span class="co"># print expanded text</span></span></code></pre></div>
-<pre><code><span><span class="co">#&gt; [1] "The main effect of illness recency did not meet our preregistered threshold (p &lt; .025)-recently ill: M = 661 ms, SD = 197; not recently ill: M = 626 ms, SD = 153, F(1, 400) = 4.23, η p 2 = .010, 90% CI = [.000, .039], p = .040-nor did the interaction between illness recency and face type (disfigured vs. typical), F(1, 400) = 1.87, η p 2 = .005, 90% CI = [.000, .027], p = .173."</span></span></code></pre>
+<pre><code><span><span class="co">#&gt; [1] "The main effect of illness recency did not meet our preregistered threshold (p &lt; .025)-recently ill: M = 661 ms, SD = 197; not recently ill: M = 626 ms, SD = 153, F(1, 400) = 4.23, ηp² = .010, 90% CI = [.000, .039], p = .040-nor did the interaction between illness recency and face type (disfigured vs. typical), F(1, 400) = 1.87, ηp² = .005, 90% CI = [.000, .027], p = .173."</span></span></code></pre>
 <p>We can investigate the most common imprecise p-values in the PsychSci
 set. “p &lt; .01” and “p &lt; .05” are probably often describing figures
 or tables, but what is the deal with “p &gt; .25”?</p>
@@ -655,12 +656,12 @@ or tables, but what is the deal with “p &gt; .25”?</p>
 <pre><code><span><span class="co">#&gt; <span style="color: #949494;"># A tibble: 6 × 2</span></span></span>
 <span><span class="co">#&gt;   text          n</span></span>
 <span><span class="co">#&gt;   <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>     <span style="color: #949494; font-style: italic;">&lt;int&gt;</span></span></span>
-<span><span class="co">#&gt; <span style="color: #BCBCBC;">1</span> p &lt; .001   <span style="text-decoration: underline;">1</span>529</span></span>
-<span><span class="co">#&gt; <span style="color: #BCBCBC;">2</span> p &lt; .01     144</span></span>
-<span><span class="co">#&gt; <span style="color: #BCBCBC;">3</span> p &lt; .05     137</span></span>
-<span><span class="co">#&gt; <span style="color: #BCBCBC;">4</span> p = .001    120</span></span>
-<span><span class="co">#&gt; <span style="color: #BCBCBC;">5</span> p = .002     96</span></span>
-<span><span class="co">#&gt; <span style="color: #BCBCBC;">6</span> p &lt; .0001    89</span></span></code></pre>
+<span><span class="co">#&gt; <span style="color: #BCBCBC;">1</span> p &lt; .001   <span style="text-decoration: underline;">1</span>485</span></span>
+<span><span class="co">#&gt; <span style="color: #BCBCBC;">2</span> p &lt; .01     138</span></span>
+<span><span class="co">#&gt; <span style="color: #BCBCBC;">3</span> p &lt; .05     129</span></span>
+<span><span class="co">#&gt; <span style="color: #BCBCBC;">4</span> p = .001    119</span></span>
+<span><span class="co">#&gt; <span style="color: #BCBCBC;">5</span> p = .002     93</span></span>
+<span><span class="co">#&gt; <span style="color: #BCBCBC;">6</span> p &lt; .0001    88</span></span></code></pre>
 <p>We can expand the text to check the context for “p &gt; .25”.</p>
 <div class="sourceCode" id="cb39"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="va">gt.25</span> <span class="op">&lt;-</span> <span class="va">imprecise_ps</span><span class="op">$</span><span class="va">table</span> <span class="op">|&gt;</span></span>
@@ -687,20 +688,20 @@ significant’.</p>
 <code class="sourceCode R"><span><span class="va">marginal_ps</span> <span class="op">&lt;-</span> <span class="fu"><a href="../reference/module_run.html">module_run</a></span><span class="op">(</span><span class="va">psychsci</span>, <span class="st">"marginal"</span><span class="op">)</span></span>
 <span></span>
 <span><span class="va">marginal_ps</span><span class="op">$</span><span class="va">table</span> <span class="co"># print table</span></span></code></pre></div>
-<pre><code><span><span class="co">#&gt; <span style="color: #949494;"># A tibble: 104 × 9</span></span></span>
-<span><span class="co">#&gt;    text_id paragraph_id section_id text    page_number paper_id formatted header</span></span>
-<span><span class="co">#&gt;      <span style="color: #949494; font-style: italic;">&lt;int&gt;</span>        <span style="color: #949494; font-style: italic;">&lt;int&gt;</span>      <span style="color: #949494; font-style: italic;">&lt;int&gt;</span> <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>         <span style="color: #949494; font-style: italic;">&lt;int&gt;</span> <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>    <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>     <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span> </span></span>
-<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 1</span>     130           44         15 Althou…          <span style="color: #BB0000;">NA</span> 0956797… <span style="color: #BB0000;">NA</span>        <span style="color: #949494;">"</span>Deta…</span></span>
-<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 2</span>     141           50         18 A marg…          <span style="color: #BB0000;">NA</span> 0956797… <span style="color: #BB0000;">NA</span>        <span style="color: #949494;">"</span>Post…</span></span>
-<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 3</span>     152           54         19 When w…          <span style="color: #BB0000;">NA</span> 0956797… <span style="color: #BB0000;">NA</span>        <span style="color: #949494;">"</span>The …</span></span>
-<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 4</span>     156           56         20 In tha…          <span style="color: #BB0000;">NA</span> 0956797… <span style="color: #BB0000;">NA</span>        <span style="color: #949494;">"</span>Cond…</span></span>
-<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 5</span>     115           29          7 The Co…          <span style="color: #BB0000;">NA</span> 0956797… <span style="color: #BB0000;">NA</span>        <span style="color: #949494;">"</span>Resu…</span></span>
-<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 6</span>     117           30          6 The tw…          <span style="color: #BB0000;">NA</span> 0956797… <span style="color: #BB0000;">NA</span>        <span style="color: #949494;">"</span>Resu…</span></span>
-<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 7</span>     185           55         14 An omn…          <span style="color: #BB0000;">NA</span> 0956797… <span style="color: #BB0000;">NA</span>        <span style="color: #949494;">"</span>Resu…</span></span>
-<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 8</span>     245           87         28 Furthe…          <span style="color: #BB0000;">NA</span> 0956797… <span style="color: #BB0000;">NA</span>        <span style="color: #949494;">""</span>    </span></span>
-<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 9</span>     259           89         30 The da…          <span style="color: #BB0000;">NA</span> 0956797… <span style="color: #BB0000;">NA</span>        <span style="color: #949494;">"</span>Fig …</span></span>
-<span><span class="co">#&gt; <span style="color: #BCBCBC;">10</span>     168           57         19 Given …          <span style="color: #BB0000;">NA</span> 0956797… <span style="color: #BB0000;">NA</span>        <span style="color: #949494;">"</span>Auth…</span></span>
-<span><span class="co">#&gt; <span style="color: #949494;"># ℹ 94 more rows</span></span></span>
+<pre><code><span><span class="co">#&gt; <span style="color: #949494;"># A tibble: 102 × 9</span></span></span>
+<span><span class="co">#&gt;    text    text_id paragraph_id section_id page_number formatted paper_id header</span></span>
+<span><span class="co">#&gt;    <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>     <span style="color: #949494; font-style: italic;">&lt;int&gt;</span>        <span style="color: #949494; font-style: italic;">&lt;int&gt;</span>      <span style="color: #949494; font-style: italic;">&lt;int&gt;</span>       <span style="color: #949494; font-style: italic;">&lt;int&gt;</span> <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>     <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>    <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span> </span></span>
+<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 1</span> Althou…     128           29         15          <span style="color: #BB0000;">NA</span> <span style="color: #949494;">"</span>Althoug… 0956797… Detai…</span></span>
+<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 2</span> A marg…     139           32         18          <span style="color: #BB0000;">NA</span> <span style="color: #949494;">"</span>A margi… 0956797… Postt…</span></span>
+<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 3</span> When w…     150           35         19          <span style="color: #BB0000;">NA</span>  <span style="color: #BB0000;">NA</span>       0956797… The e…</span></span>
+<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 4</span> In tha…     154           36         20          <span style="color: #BB0000;">NA</span> <span style="color: #949494;">"</span>In that… 0956797… Condi…</span></span>
+<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 5</span> The Co…     110           22          7          <span style="color: #BB0000;">NA</span> <span style="color: #949494;">"</span>The Con… 0956797… Resul…</span></span>
+<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 6</span> The tw…     113           24          6          <span style="color: #BB0000;">NA</span> <span style="color: #949494;">"</span>The two… 0956797… Resul…</span></span>
+<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 7</span> An omn…     186           41         14          <span style="color: #BB0000;">NA</span>  <span style="color: #BB0000;">NA</span>       0956797… Resul…</span></span>
+<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 8</span> Furthe…     241           63         28          <span style="color: #BB0000;">NA</span>  <span style="color: #BB0000;">NA</span>       0956797… <span style="color: #BB0000;">NA</span>    </span></span>
+<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 9</span> The da…     255           65         30          <span style="color: #BB0000;">NA</span> <span style="color: #949494;">"</span>The dag… 0956797… Fig 5 </span></span>
+<span><span class="co">#&gt; <span style="color: #BCBCBC;">10</span> Given …     166           38         19          <span style="color: #BB0000;">NA</span>  <span style="color: #BB0000;">NA</span>       0956797… Autho…</span></span>
+<span><span class="co">#&gt; <span style="color: #949494;"># ℹ 92 more rows</span></span></span>
 <span><span class="co">#&gt; <span style="color: #949494;"># ℹ 1 more variable: section_type &lt;chr&gt;</span></span></span></code></pre>
 </div>
 <div class="section level3">
@@ -715,18 +716,21 @@ from <a href="https://github.com/MicheleNuijten/statcheck" class="external-link"
 <pre><code><span><span class="co">#&gt;   test_type df1   df2 test_comp test_value p_comp reported_p   computed_p</span></span>
 <span><span class="co">#&gt; 1         t  NA 248.4         =       2.01      =      0.023 4.551244e-02</span></span>
 <span><span class="co">#&gt; 2         t  NA 248.4         =      -4.55      &lt;      0.001 8.397343e-06</span></span>
-<span><span class="co">#&gt;                          raw error decision_error one_tailed_in_txt apa_factor</span></span>
-<span><span class="co">#&gt; 1  t(248.4) = 2.01, p = .023  TRUE          FALSE             FALSE          1</span></span>
-<span><span class="co">#&gt; 2 t(248.4) = -4.55, p &lt; .001 FALSE          FALSE             FALSE          1</span></span>
-<span><span class="co">#&gt;   text_id paragraph_id section_id</span></span>
-<span><span class="co">#&gt; 1     112           34          9</span></span>
-<span><span class="co">#&gt; 2     112           34          9</span></span>
-<span><span class="co">#&gt;                                                                                                                                                                                                                                                                                                text</span></span>
-<span><span class="co">#&gt; 1 Yes-the 90% confidence intervals of the difference in attentional bias for participants who were and were not recently ill found here (d z = -0.14, 90% CI = [-0.31, -0.04]) did not overlap with an effect size (d z ) of -0.35, t(248.4) = 2.01, p = .023, or 0.35, t(248.4) = -4.55, p &lt; .001.</span></span>
-<span><span class="co">#&gt; 2 Yes-the 90% confidence intervals of the difference in attentional bias for participants who were and were not recently ill found here (d z = -0.14, 90% CI = [-0.31, -0.04]) did not overlap with an effect size (d z ) of -0.35, t(248.4) = 2.01, p = .023, or 0.35, t(248.4) = -4.55, p &lt; .001.</span></span>
-<span><span class="co">#&gt;   page_number         paper_id  header section_type</span></span>
-<span><span class="co">#&gt; 1          NA 0956797620955209 Results      results</span></span>
-<span><span class="co">#&gt; 2          NA 0956797620955209 Results      results</span></span></code></pre>
+<span><span class="co">#&gt;                         raw error decision_error one_tailed_in_txt apa_factor</span></span>
+<span><span class="co">#&gt; 1 t(248.4) = 2.01, p = .023  TRUE          FALSE             FALSE          1</span></span>
+<span><span class="co">#&gt; 2 t(248.4) = -4.55, p &lt;.001 FALSE          FALSE             FALSE          1</span></span>
+<span><span class="co">#&gt;                                                                                                                                                                                                                                                                                             text</span></span>
+<span><span class="co">#&gt; 1 Yes-the 90% confidence intervals of the difference in attentional bias for participants who were and were not recently ill found here (dz = -0.14, 90% CI = [-0.31, -0.04]) did not overlap with an effect size (dz ) of -0.35, t(248.4) = 2.01, p = .023, or 0.35, t(248.4) = -4.55, p &lt;.001.</span></span>
+<span><span class="co">#&gt; 2 Yes-the 90% confidence intervals of the difference in attentional bias for participants who were and were not recently ill found here (dz = -0.14, 90% CI = [-0.31, -0.04]) did not overlap with an effect size (dz ) of -0.35, t(248.4) = 2.01, p = .023, or 0.35, t(248.4) = -4.55, p &lt;.001.</span></span>
+<span><span class="co">#&gt;   text_id paragraph_id section_id page_number</span></span>
+<span><span class="co">#&gt; 1     107           25          9          NA</span></span>
+<span><span class="co">#&gt; 2     107           25          9          NA</span></span>
+<span><span class="co">#&gt;                                                                                                                                                                                                                                                                                           formatted</span></span>
+<span><span class="co">#&gt; 1 Yes-the 90% confidence intervals of the difference in attentional bias for participants who were and were not recently ill found here (dz = -0.14, 90% CI = [-0.31, -0.04]) did not overlap with an effect size (dz ) of -0.35, t(248.4) = 2.01, p = .023, or 0.35, t(248.4) = -4.55, p &amp;lt;.001.</span></span>
+<span><span class="co">#&gt; 2 Yes-the 90% confidence intervals of the difference in attentional bias for participants who were and were not recently ill found here (dz = -0.14, 90% CI = [-0.31, -0.04]) did not overlap with an effect size (dz ) of -0.35, t(248.4) = 2.01, p = .023, or 0.35, t(248.4) = -4.55, p &amp;lt;.001.</span></span>
+<span><span class="co">#&gt;           paper_id  header section_type</span></span>
+<span><span class="co">#&gt; 1 0956797620955209 Results      results</span></span>
+<span><span class="co">#&gt; 2 0956797620955209 Results      results</span></span></code></pre>
 <p>Here we see a false positive, where the paper reported the results of
 an equivalence test, which are meant to be one-tailed, but statcheck did
 not detect that this was one-tailed.</p>

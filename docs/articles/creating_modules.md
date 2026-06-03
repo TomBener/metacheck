@@ -1,7 +1,6 @@
 # Creating Modules
 
 ``` r
-
 devtools::load_all(".")
 #> ℹ Loading metacheck
 #> 
@@ -125,7 +124,6 @@ On the first line, give your module a short title, which will be used as
 a section header in reports.
 
 ``` r
-
 #' Module Name
 ```
 
@@ -137,7 +135,6 @@ shown in
 or optionally start this with `@description`.
 
 ``` r
-
 #' @description
 #' A short description of the module
 ```
@@ -150,7 +147,6 @@ shown when calling
 This is optional.
 
 ``` r
-
 #' @details
 #' Here is more information about the module to help you use or understand it.
 #' 
@@ -170,7 +166,6 @@ Choose one section category for your module to be displayed under in
 reports.
 
 ``` r
-
 #' @keywords general|intro|method|results|discussion|reference
 ```
 
@@ -180,7 +175,6 @@ Include the module authors so they can get credit! Add a new `@author`
 tag for each author, and optionally add their email address.
 
 ``` r
-
 #' @author Lisa DeBruine (\email{debruine@gmail.com})
 #' @author Daniel Lakens (\email{lakens@gmail.com})
 ```
@@ -192,7 +186,6 @@ you are building a module that uses citable resources, please list them
 here.
 
 ``` r
-
 #' @references
 #' The Retraction Watch Database [Internet].
 #' New York: The Center for Scientific Integrity. 2018.
@@ -206,7 +199,6 @@ If you are using packages other than `metacheck`, add each with an
 `@import` statement.
 
 ``` r
-
 #' @import dplyr
 #' @import tidyr
 ```
@@ -226,7 +218,6 @@ function to pass any arguments, and your code can use them by name
 (e.g., `extra_args <- list(...)`).
 
 ``` r
-
 #' @param paper a paper object or paperlist object
 #' @param ... further arguments (not used)
 ```
@@ -238,7 +229,6 @@ usually the default list with table, summary, traffic light, and report
 text, but you can edit this. It’s just a human-readable string.
 
 ``` r
-
 #' @returns a list
 ```
 
@@ -251,7 +241,6 @@ demonstrate the purpose of this module and it doesn’t take too much time
 to run the example.
 
 ``` r
-
 #' @examples
 #' module_run(psychsci, "module_name")
 ```
@@ -265,7 +254,6 @@ script should also have the same name, with a .R suffix (e.g.,
 `module_name.R`).
 
 ``` r
-
 module_name <- function(paper, ...) {
   # module code ----
   # create return items ----
@@ -295,12 +283,14 @@ need improvement. We do this through “traffic_light” and “report”.
 #### Progress Bars
 
 If you want to display progress for a long module, you can use the
-`pb()` function. It’s a modified version of
+[`pb()`](https://scienceverse.github.io/metacheck/reference/pb.md)
+function. It’s a modified version of
 [`progress::progress_bar()`](http://r-lib.github.io/progress/reference/progress_bar.md)
-that only displays a progress bar if `verbose()` is true.
+that only displays a progress bar if
+[`verbose()`](https://scienceverse.github.io/metacheck/reference/verbose.md)
+is true.
 
 ``` r
-
 steps <- c("beginning", "middle", "end")
 pb <- pb(length(steps),
            ":what [:bar] :current/:total :elapsedfull")
@@ -315,7 +305,6 @@ If you dn’t know how many steps there will be in a process, you can use
 the spinner version:
 
 ``` r
-
 steps <- c("beginning", "middle", "end")
 pb <- pb(NA, "(:spin) :what")
 
@@ -336,7 +325,6 @@ you require is missing, but always access these with the
 function.
 
 ``` r
-
 # get p_table from prev_outputs if available
 p_table <- get_prev_outputs(module = "all_p_values", 
                             item = "table")
@@ -359,7 +347,6 @@ function below creates a table with a row for each sentence that
 contains to word “significant”.
 
 ``` r
-
   ## table ----
   # detail your results in a format like the result of text_search()
   # this is stored to use in later modules in a report or pipeline
@@ -380,7 +367,6 @@ You can use nested tables if you want some of your cells to contain
 multiple values.
 
 ``` r
-
   ## summary_table ----
   # must have id column as the id of each paper, one row per paper
   # and further columns to be added to a master summary table
@@ -402,7 +388,6 @@ If you are returning more than one summary column and have different
 replacement values, use a named list.
 
 ``` r
-
 na_replace <- list(
   n_significant = 0,
   paper_type = "unknown"
@@ -428,7 +413,6 @@ to your case. If you don’t include a traffic light, but do include a
 traffic light.
 
 ``` r
-
   ## traffic light ----
   # displayed in reports, possible values: 
   #   green: no problems detected
@@ -450,7 +434,6 @@ results, such as the number of instances of a practice found and the
 number that might be problematic.
 
 ``` r
-
   ## summary_text ----
   # short text to be displayed at the top of reports
   # may be unique for each possible traffic light
@@ -476,7 +459,6 @@ markdown](https://quarto.org/docs/authoring/markdown-basics.html) for
 styling text, such as adding links or lists.
 
 ``` r
-
   ## report ----
   # longer text to be displayed in the module section
   # use quarto / markdown for styling
@@ -510,7 +492,6 @@ quarto document, which is how the reports are created. It will include
 the contents of the table.
 
 ``` r
-
 table <- data.frame(id = 1:10, letter = LETTERS[1:10])
 
 scroll_table(
@@ -544,7 +525,6 @@ generates the R code chunk needed to hide a section in a collapsible
 box.
 
 ``` r
-
 text <- c("This is my first *paragraph*:",
           "* list item 1",
           "* list item 2")
@@ -578,7 +558,6 @@ function for setting up your template sentence and replacing in numbers
 or strings.
 
 ``` r
-
 n <- 0:2
 
 sprintf("We found %d problem%s that %s serious.",
@@ -597,7 +576,6 @@ will remove the “http(s)://” and use the rest of the URL as the linked
 text.
 
 ``` r
-
 link("https://scienceverse.org/metacheck")
 #> [1] "<a href='https://scienceverse.org/metacheck' target='_blank'>scienceverse.org/metacheck</a>"
 ```
@@ -608,7 +586,6 @@ new window, but you need to specify this for HTML links. Set
 `new_window = FALSE` if you don’t want this.
 
 ``` r
-
 link(url = "https://scienceverse.org/metacheck", 
      text = "MetaCheck", 
      new_window = FALSE)
@@ -623,7 +600,6 @@ function. This function can take a bibentry object (like the values in
 the `ref` column of a paper’s bib table), bibtex text, or plain text.
 
 ``` r
-
 # get refs from a paper
 paper <- demopaper()
 format_ref(paper$bib$ref[2])
@@ -632,7 +608,6 @@ format_ref(paper$bib$ref[2])
 \[1\] “NULL”
 
 ``` r
-
 bibentry <- bibentry(
     bibtype = "Article",
     title = "Improving transparency, falsifiability, and rigor by making hypothesis tests machine-readable",
@@ -658,19 +633,17 @@ falsifiability, and rigor by making hypothesis tests machine-readable.”
 You can get a bibentry citation for any package with code.
 
 ``` r
-
 bib <- citation("metacheck")
 format_ref(bib)
 ```
 
 \[1\] “DeBruine L, Lakens D, Werner J (2026). *metacheck: Check Research
-Outputs for Best Practices*. R package version 0.0.0.9103,
+Outputs for Best Practices*. R package version 0.0.0.9106,
 [https://github.com/scienceverse/metacheck](NA).”
 
 The function can also handle references in bibtex format.
 
 ``` r
-
 bibtex <- "@Article{,
   title = {Improving transparency, falsifiability, and rigor by making hypothesis tests machine-readable},
   author = {D. Lakens and L. M. DeBruine},
@@ -693,7 +666,6 @@ If you just add plain text that isn’t a bibentry or in bibtex format,
 you will usually just get the text back.
 
 ``` r
-
 format_ref("My wierd citation (2025)")
 ```
 
@@ -710,7 +682,6 @@ for specific uses in the report and piped workflow, but you can also
 return other objects for your own purposes.
 
 ``` r
-
   # return a list ----
   list(
     table = table,

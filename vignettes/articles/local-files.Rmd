@@ -82,7 +82,7 @@ unextracted archives, and `"yellow"` otherwise.
 ### Checking a single folder
 
 ```{r}
-repo <- module_run(no_paper(), "repo_check",
+repo <- module_run(test_paper(), "repo_check",
                    local_path = "C:/projects/reaction_time_study_2024")
 
 # Plain-text summary
@@ -98,9 +98,18 @@ repo$traffic_light
 repo$table
 ```
 
-`no_paper()` creates a minimal placeholder paper object. You need one because
-the module pipeline always requires a paper, but here you are not checking a
-specific manuscript — just a folder.
+`test_paper()` creates a minimal paper object with no repository links. The
+module pipeline always requires a paper argument, but when you are only
+checking a local folder there is no manuscript — `test_paper()` gives you a
+valid object that causes the online repository search to find nothing, so only
+the local files are checked.
+
+> **Note on cloud-sync folders (OneDrive, iCloud, Dropbox):** If the folder
+> is stored online and files have not been downloaded locally, the check will
+> be slow because each code file triggers a download when it is read. Before
+> running, right-click the folder in your file browser and choose
+> **"Always keep on this device"** (OneDrive) or **"Download Now"** (iCloud)
+> to make all files available locally first.
 
 A typical `$summary_text` when the folder is missing a README might look like:
 
@@ -124,7 +133,7 @@ paths <- c(
   "C:/projects/study_3_meta_analysis"
 )
 
-repo <- module_run(no_paper(), "repo_check", local_path = paths)
+repo <- module_run(test_paper(), "repo_check", local_path = paths)
 
 # Three rows — one per folder
 repo$summary_table
@@ -161,7 +170,7 @@ You have finished a project and want to review the quality of your scripts
 before sharing:
 
 ```{r}
-result <- module_run(no_paper(), "code_check",
+result <- module_run(test_paper(), "code_check",
                      local_path = "C:/projects/reaction_time_study_2024")
 
 # Short summary of all findings
@@ -193,7 +202,7 @@ paths <- c(
   "C:/projects/study_3_meta_analysis"
 )
 
-result <- module_run(no_paper(), "code_check", local_path = paths)
+result <- module_run(test_paper(), "code_check", local_path = paths)
 
 result$summary_text
 
@@ -218,12 +227,12 @@ checked, raise the limit or remove it entirely:
 
 ```{r}
 # analyse up to 100 code files per folder
-result <- module_run(no_paper(), "code_check",
+result <- module_run(test_paper(), "code_check",
                      local_path = "C:/projects/large_project",
                      file_limit = 100)
 
 # no limit — check every code file found
-result <- module_run(no_paper(), "code_check",
+result <- module_run(test_paper(), "code_check",
                      local_path = "C:/projects/large_project",
                      file_limit = Inf)
 ```
@@ -239,7 +248,7 @@ attached to the submission. Once you unzip it, you have a local folder:
 
 ```{r}
 # After unzipping the submission to a folder:
-result <- module_run(no_paper(), "code_check",
+result <- module_run(test_paper(), "code_check",
                      local_path = "C:/peer_review/garcia_2024_submission")
 
 result$report   # copy this into your review
@@ -261,7 +270,7 @@ The workflow is the same for all of them:
 
 ```{r}
 # Author shared code on GitLab — you downloaded or cloned it locally
-result <- module_run(no_paper(), "code_check",
+result <- module_run(test_paper(), "code_check",
                      local_path = "C:/downloads/lee_2023_gitlab_code")
 
 result$summary_text
@@ -278,7 +287,7 @@ the main data is on OSF but additional analysis scripts were sent as a zip by
 the editor. You can check both at once:
 
 ```{r}
-paper <- read_paper("garcia_2024.pdf")
+paper <- read("garcia_2024.pdf")
 
 # repo_check fetches the OSF files AND lists the local folder
 result <- module_run(paper, "code_check",
@@ -314,7 +323,7 @@ reused — the folder is not re-read:
 path <- "C:/projects/reaction_time_study_2024"
 
 # Step 1: inventory and organisational checks
-repo <- module_run(no_paper(), "repo_check", local_path = path)
+repo <- module_run(test_paper(), "repo_check", local_path = path)
 
 repo$summary_text    # how many files, README present?
 repo$traffic_light   # green / yellow
