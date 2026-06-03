@@ -2,8 +2,8 @@
 title: MetaCheck Report
 subtitle: "To Err is Human: An Empirical Investigation"
 metacheck:
-  version: "0.0.0.9106"
-  report-created: "2026-06-01"
+  version: "0.0.0.9107"
+  report-created: "2026-06-02"
 format:
   html:
     theme: 
@@ -105,11 +105,12 @@ Metacheck is under continuous development. Issues can be submitted [on Github](h
     -  We found 1 README file and 2 repositories without READMEs.
     -  We found 1 archive file.  
 - 🔍 [Code Check](#code-check){.yellow}: 
-    -  We found 4 R, SAS, SPSS, or Stata code files.
+    -  We found 4 R, 0 SAS, 0 SPSS, and 0 Stata code files.
     -  All your code files had comments.
-    -  2 files loaded in the code were missing in the repository.
+    -  4 files loaded in the code were missing in the repository.
     -  Absolute file paths were found.
-    -  Libraries/imports were loaded in multiple places.  
+    -  Libraries/imports were loaded in multiple places.
+    -  No parsing issues of R-type files were found.  
 - 🔍 [Reference Accuracy](#reference-accuracy){.yellow}: We checked 5 references in CrossRef and found entries for 3.  
 - ℹ️ [Replication Check](#replication-check){.info}: We found 1 replication for 1 original you cited.  
 - ℹ️ [RetractionWatch](#retractionwatch){.info}: You cited 1 article in the RetractionWatch database.  
@@ -685,7 +686,7 @@ table <- structure(list(Repository = c("https://osf.io/48ncu", "https://osf.io/4
 ), File = c("<a href='https://osf.io/download/jz6v5/' target='_blank'>README</a>", 
 "<a href='https://osf.io/download/6929f4994ce565d35f957294/' target='_blank'>papercheck.png</a>", 
 "<a href='https://osf.io/download/2y3g5/' target='_blank'>test_script.R</a>", 
-"<a href='https://osf.io/download/6935bc117049c887a125cb25/' target='_blank'>bad.R</a>", 
+"<a href='https://osf.io/download/mgbaz/' target='_blank'>bad.R</a>", 
 "<a href='https://osf.io/download/uq347/' target='_blank'>bad.Rmd</a>", 
 "<a href='https://osf.io/download/6935c4679ca0f02ea72a1a31/' target='_blank'>example2.csv</a>", 
 "<a href='https://osf.io/download/6976438ff9da155d0565c720/' target='_blank'>Archive.zip</a>", 
@@ -730,11 +731,12 @@ This module was developed by Daniel Lakens and Lisa DeBruine
 
 ### 🔍 Code Check {#code-check .yellow}
 
--  We found 4 R, SAS, SPSS, or Stata code files.
+-  We found 4 R, 0 SAS, 0 SPSS, and 0 Stata code files.
 -  All your code files had comments.
--  2 files loaded in the code were missing in the repository.
+-  4 files loaded in the code were missing in the repository.
 -  Absolute file paths were found.
 -  Libraries/imports were loaded in multiple places.
+-  No parsing issues of R-type files were found.
 
 <details><summary>View detailed feedback</summary><div>
 
@@ -745,11 +747,11 @@ Below, we describe some best coding practices and give the results of automatic 
 
 # table data --------------------------------------
 table <- structure(list("File Name" = c("<a href='https://osf.io/download/2y3g5/' target='_blank'>test_script.R</a>", 
-"<a href='https://osf.io/download/6935bc117049c887a125cb25/' target='_blank'>bad.R</a>", 
+"<a href='https://osf.io/download/mgbaz/' target='_blank'>bad.R</a>", 
 "<a href='https://osf.io/download/uq347/' target='_blank'>bad.Rmd</a>", 
 "<a href='https://researchbox.org/4377' target='_blank'>Code/Study 1.r</a>"
-), "% Comments" = c("17%", "7%", "26%", "17%"), "Missing Files" = c(1L, 
-0L, 0L, 1L), "Absolute Paths" = c(1L, 1L, 2L, 1L), "Code Between Libraries" = c(NA, 
+), "% Comments" = c("17%", "7%", "7%", "17%"), "Missing Files" = c(1L, 
+1L, 1L, 1L), "Absolute Paths" = c(2L, 1L, 2L, 2L), "Code Between Libraries" = c(NA, 
 12L, 13L, NA)), row.names = c(NA, 4L), class = "data.frame")
 
 # display table -----------------------------------
@@ -762,15 +764,15 @@ Best programming practice is to add comments to code, to explain what the code d
 
 #### Missing Files
 
-The scripts load files, but 2 scripts loaded 2 files that could not be automatically identified in the repository. Check if the following files are made available, so that others can reproduce your code, or that the files are missing:
+The scripts load files, but 4 scripts loaded 4 files that could not be automatically identified in the repository. Check if the following files are made available, so that others can reproduce your code, or that the files are missing:
 
 ```{r}
 #| echo: false
 
 # table data --------------------------------------
-table <- structure(list("File name" = c("test_script.R", "Code/Study 1.r"
-), "Missing Files" = c("file.csv", "file.csv")), row.names = c(1L, 
-4L), class = "data.frame")
+table <- structure(list("File name" = c("test_script.R", "bad.R", "bad.Rmd", 
+"Code/Study 1.r"), "Missing Files" = c("file.csv", "example.csv", 
+"example.csv", "file.csv")), row.names = c(NA, 4L), class = "data.frame")
 
 # display table -----------------------------------
 metacheck::report_table(table, "auto", 5, FALSE)
@@ -785,9 +787,9 @@ Best programming practice is to use relative file paths instead of absolute file
 
 # table data --------------------------------------
 table <- structure(list("File name" = c("test_script.R", "bad.R", "bad.Rmd", 
-"Code/Study 1.r"), "Absolute paths found" = c("abs_path_pc <- read.csv(\"C:/lisa/file.csv\")", 
-"data <- read_csv(\"C://Lakens/files/example.csv\")", "data <- read_csv(\"C://Lakens/files/example.csv\"), data2 <- read_csv(\"C://Lakens/files/example2.csv\")", 
-"abs_path_pc <- read.csv(\"C:/lisa/file.csv\")")), row.names = c(NA, 
+"Code/Study 1.r"), "Absolute paths found" = c("\"/lisa/file.csv\", \"C:/lisa/file.csv\"", 
+"\"C://Lakens/files/example.csv\"", "\"C://Lakens/files/example.csv\", \"C://Lakens/files/example2.csv\"", 
+"\"/lisa/file.csv\", \"C:/lisa/file.csv\"")), row.names = c(NA, 
 4L), class = "data.frame")
 
 # display table -----------------------------------
@@ -797,6 +799,10 @@ metacheck::report_table(table, "auto", 5, FALSE)
 #### Libraries / Imports
 
 Best programming practice is to load all required libraries/imports in one block near the top of the code. In 2 code files, libraries/imports were at multiple places (i.e., with more than 3 non-comment lines in between).
+
+#### Parsable code
+
+All R-type code files (.R, .Rmd, .qmd) could be read in. There were no parsing issues.
 
 </div></details>
 
@@ -810,7 +816,7 @@ The regular expressions can miss information in code files, or falsely detect pa
 
 If you want to extend the package to perform additional checks on code files, or make the checks work on other types of code files, reach out to the Metacheck development team.
 
-This module was developed by Daniel Lakens
+This module was developed by Daniel Lakens and Raphael Merz
 
 :::
 
