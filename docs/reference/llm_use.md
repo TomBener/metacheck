@@ -1,12 +1,11 @@
 # Set or get metacheck LLM use
 
-Mainly for use in optional LLM workflows in modules, also checks if the
-GROQ API key is set and returns false if it isn't.
+Mainly for use in optional LLM workflows in modules
 
 ## Usage
 
 ``` r
-llm_use(llm_use = NULL, API_KEY = Sys.getenv("GROQ_API_KEY"))
+llm_use(llm_use = NULL)
 ```
 
 ## Arguments
@@ -14,10 +13,6 @@ llm_use(llm_use = NULL, API_KEY = Sys.getenv("GROQ_API_KEY"))
 - llm_use:
 
   if logical, sets whether to use LLMs
-
-- API_KEY:
-
-  your API key for the LLM
 
 ## Value
 

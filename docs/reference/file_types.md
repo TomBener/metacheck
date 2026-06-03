@@ -1,6 +1,6 @@
 # File Types
 
-File types from extension, c("archive", "audio", "book", "code",
+File types from extension, c("3D", "archive", "audio", "book", "code",
 "config", data", "exec", "font", "image", "slide", "stats", text",
 "video", "web")
 
@@ -12,7 +12,7 @@ file_types
 
 ## Format
 
-A data frame with 277 rows and 2 columns:
+A data frame with 405 rows and 2 columns:
 
 - ext:
 

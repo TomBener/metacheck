@@ -1,7 +1,6 @@
 # Exploring GitHub Repositories
 
 ``` r
-
 library(metacheck)
 #> 
 #> 
@@ -17,6 +16,11 @@ library(metacheck)
 #> results. False positives and negatives will
 #> occur at unknown rates.
 #> *******************************************
+#> 
+#> Attaching package: 'metacheck'
+#> The following object is masked from 'package:base':
+#> 
+#>     message
 ```
 
 There are some built-in functions in metacheck for exploring GitHub
@@ -38,13 +42,11 @@ function returns the simplified format of. repo name, and NULL if the
 repository in inaccessible.
 
 ``` r
-
 github_repo("https://github.com/scienceverse/metacheck.git")
 #> [1] "scienceverse/metacheck"
 ```
 
 ``` r
-
 github_repo("scienceverse/checkpaper")
 #> NULL
 ```
@@ -55,7 +57,6 @@ Get the text of the readme file, regardless of the exact file name
 (e.g., README vs README.md).
 
 ``` r
-
 readme <- github_readme("scienceverse/metacheck")
 
 cat(readme)
@@ -112,11 +113,10 @@ You can retrieve the number of bytes dedicated to various coding
 languages, as detected and classified by GitHub.
 
 ``` r
-
 github_languages("scienceverse/metacheck")
 #>                      repo   language    bytes
-#> 1  scienceverse/metacheck          R 50866031
-#> 2  scienceverse/metacheck       HTML 19380372
+#> 1  scienceverse/metacheck          R 50951570
+#> 2  scienceverse/metacheck       HTML 19383467
 #> 3  scienceverse/metacheck        Lua    92710
 #> 4  scienceverse/metacheck        TeX    40040
 #> 5  scienceverse/metacheck       AMPL     7571
@@ -127,7 +127,8 @@ github_languages("scienceverse/metacheck")
 #> 10 scienceverse/metacheck Dockerfile     1201
 #> 11 scienceverse/metacheck JavaScript     1116
 #> 12 scienceverse/metacheck       SCSS      639
-#> 13 scienceverse/metacheck      Shell       17
+#> 13 scienceverse/metacheck      Stata      246
+#> 14 scienceverse/metacheck      Shell       17
 ```
 
 ## github_files
@@ -139,14 +140,13 @@ By default, you just retrieve the files and directories in the base
 directory, non-recursively.
 
 ``` r
-
 github_files("scienceverse/metacheck")
 #>                      repo             clean_repo               name
-#> 1  scienceverse/metacheck scienceverse/metacheck   _metacheck.Rproj
-#> 2  scienceverse/metacheck scienceverse/metacheck             _stuff
-#> 3  scienceverse/metacheck scienceverse/metacheck            .github
-#> 4  scienceverse/metacheck scienceverse/metacheck         .gitignore
-#> 5  scienceverse/metacheck scienceverse/metacheck      .Rbuildignore
+#> 1  scienceverse/metacheck scienceverse/metacheck            .github
+#> 2  scienceverse/metacheck scienceverse/metacheck         .gitignore
+#> 3  scienceverse/metacheck scienceverse/metacheck      .Rbuildignore
+#> 4  scienceverse/metacheck scienceverse/metacheck   _metacheck.Rproj
+#> 5  scienceverse/metacheck scienceverse/metacheck             _stuff
 #> 6  scienceverse/metacheck scienceverse/metacheck         AUTHORS.md
 #> 7  scienceverse/metacheck scienceverse/metacheck CODE_OF_CONDUCT.md
 #> 8  scienceverse/metacheck scienceverse/metacheck        codecov.yml
@@ -168,11 +168,11 @@ github_files("scienceverse/metacheck")
 #> 24 scienceverse/metacheck scienceverse/metacheck              tests
 #> 25 scienceverse/metacheck scienceverse/metacheck          vignettes
 #>                  path
-#> 1    _metacheck.Rproj
-#> 2              _stuff
-#> 3             .github
-#> 4          .gitignore
-#> 5       .Rbuildignore
+#> 1             .github
+#> 2          .gitignore
+#> 3       .Rbuildignore
+#> 4    _metacheck.Rproj
+#> 5              _stuff
 #> 6          AUTHORS.md
 #> 7  CODE_OF_CONDUCT.md
 #> 8         codecov.yml
@@ -194,11 +194,11 @@ github_files("scienceverse/metacheck")
 #> 24              tests
 #> 25          vignettes
 #>                                                                        download_url
-#> 1    https://raw.githubusercontent.com/scienceverse/metacheck/main/_metacheck.Rproj
-#> 2                                                                              <NA>
-#> 3                                                                              <NA>
-#> 4          https://raw.githubusercontent.com/scienceverse/metacheck/main/.gitignore
-#> 5       https://raw.githubusercontent.com/scienceverse/metacheck/main/.Rbuildignore
+#> 1                                                                              <NA>
+#> 2          https://raw.githubusercontent.com/scienceverse/metacheck/main/.gitignore
+#> 3       https://raw.githubusercontent.com/scienceverse/metacheck/main/.Rbuildignore
+#> 4    https://raw.githubusercontent.com/scienceverse/metacheck/main/_metacheck.Rproj
+#> 5                                                                              <NA>
 #> 6          https://raw.githubusercontent.com/scienceverse/metacheck/main/AUTHORS.md
 #> 7  https://raw.githubusercontent.com/scienceverse/metacheck/main/CODE_OF_CONDUCT.md
 #> 8         https://raw.githubusercontent.com/scienceverse/metacheck/main/codecov.yml
@@ -220,11 +220,11 @@ github_files("scienceverse/metacheck")
 #> 24                                                                             <NA>
 #> 25                                                                             <NA>
 #>     size          ext   type
-#> 1    462        rproj config
-#> 2      0                 dir
-#> 3      0       github    dir
-#> 4    385    gitignore config
-#> 5    362 rbuildignore   file
+#> 1      0       github    dir
+#> 2    385    gitignore config
+#> 3    362 rbuildignore   file
+#> 4    462        rproj config
+#> 5      0                 dir
 #> 6    177           md   text
 #> 7   5240           md   text
 #> 8    134          yml config
@@ -232,14 +232,14 @@ github_files("scienceverse/metacheck")
 #> 10   133           md   text
 #> 11     0                 dir
 #> 12     0                 dir
-#> 13  2152                file
+#> 13  2121                file
 #> 14     0                 dir
 #> 15     0                 dir
 #> 16 34303           md   text
 #> 17  1407                file
 #> 18     0                 dir
-#> 19  2889                file
-#> 20 21377           md   text
+#> 19  3162                file
+#> 20 22686           md   text
 #> 21     0                 dir
 #> 22     0                 dir
 #> 23  2023           md   text
@@ -248,7 +248,6 @@ github_files("scienceverse/metacheck")
 ```
 
 ``` r
-
 github_files("scienceverse/metacheck", dir = ".github")
 #>                     repo             clean_repo           name
 #> 1 scienceverse/metacheck scienceverse/metacheck     .gitignore
@@ -276,7 +275,6 @@ You can also retrieve files recursively. Searching a large repository
 recursively can take a while.
 
 ``` r
-
 github_files("scienceverse/metacheck",
              dir = ".github",
              recursive = TRUE)
@@ -340,7 +338,6 @@ Get all of the information about a repository in one list object, with
 items named “repo”, “readme”, “languages”, and “files”.
 
 ``` r
-
 github_info("scienceverse/demo")
 #> $repo
 #> [1] "scienceverse/demo"
