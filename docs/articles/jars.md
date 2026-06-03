@@ -31,14 +31,13 @@ p-values. The APA Manual states:
 
 Reporting *p* values precisely allows readers to include the test
 results in *p* value meta-analytic tests, such as p-curve, or z-curve
-(Simonsohn et al. 2014; Bartoš and Schimmack 2020), and makes it
-possible the check the internal coherence of the reported result with
-tools such as Statcheck (Nuijten et al. 2015). metacheck has a dedicated
-module, “exact-p”, to identify the presence of imprecise p-values. We
-can run it on a single paper:
+(Simonsohn, Nelson, and Simmons 2014; Bartoš and Schimmack 2020), and
+makes it possible the check the internal coherence of the reported
+result with tools such as Statcheck (Nuijten et al. 2015). metacheck has
+a dedicated module, “exact-p”, to identify the presence of imprecise
+p-values. We can run it on a single paper:
 
 ``` r
-
 res_imprecise <- module_run(psychsci$`0956797617744542`, "stat_p_exact")
 
 res_imprecise
@@ -51,7 +50,6 @@ users can easily examine whether the reported *p* values should have
 been precise:
 
 ``` r
-
 res_imprecise$table[, c("text", "expanded")]
 ```
 
@@ -74,7 +72,6 @@ Luckily, there are also many papers that follow the JARS guideline and
 report all *p* values correctly, for example:
 
 ``` r
-
 module_run(psychsci$`0956797616665351`, "stat_p_exact")
 ```
 
@@ -91,7 +88,6 @@ uses regular expressions (regex), we can identify *t*-tests and
 accordingly.
 
 ``` r
-
 module_run(
   paper = psychsci$`0956797616657319`,
   module = "stat_effect_size"
@@ -106,7 +102,6 @@ You can also run modules for multiple papers at once and get a summary
 table.
 
 ``` r
-
 mo <- module_run(psychsci[1:10], "stat_effect_size")
 
 mo$summary_table
@@ -159,7 +154,12 @@ without effect sizes, 99% of *F*-tests with effect sizes, and 100% of
 *F*-tests without effect sizes. This is accurate enough for
 meta-scientific research.
 
-![](effect-size-plot.png)
+![Plot of average percentage of t-tests missing effect sizes from 2014
+to 2024, showing a downward trend from 60% to around
+20%](effect-size-plot.png)
+
+Plot of average percentage of t-tests missing effect sizes from 2014 to
+2024, showing a downward trend from 60% to around 20%
 
 ## Improving the Modules
 
@@ -195,15 +195,14 @@ for Quantitative Research in Psychology: The APA Publications and
 Communications Board Task Force Report.” *American Psychologist* 73 (1):
 3–25. <https://doi.org/10.1037/amp0000191>.
 
-Bartoš, František, and Ulrich Schimmack. 2020. *Z-Curve.2.0: Estimating
-Replication Rates and Discovery Rates*. January.
+Bartoš, František, and Ulrich Schimmack. 2020. “Z-Curve.2.0: Estimating
+Replication Rates and Discovery Rates,” January.
 <https://doi.org/10.31234/osf.io/urgtn>.
 
 Nuijten, Michèle B., Chris H. J. Hartgerink, Marcel A. L. M. van Assen,
 Sacha Epskamp, and Jelte M. Wicherts. 2015. “The Prevalence of
 Statistical Reporting Errors in Psychology (1985–2013).” *Behavior
-Research Methods*, ahead of print, October.
-<https://doi.org/10.3758/s13428-015-0664-2>.
+Research Methods*, October. <https://doi.org/10.3758/s13428-015-0664-2>.
 
 Simonsohn, Uri, Leif D. Nelson, and Joseph P. Simmons. 2014. “P-Curve: A
 Key to the File-Drawer.” *Journal of Experimental Psychology: General*

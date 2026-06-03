@@ -1,7 +1,6 @@
 # Modules
 
 ``` r
-
 devtools::load_all(".")
 library(dplyr)
 ```
@@ -15,7 +14,6 @@ will share more modules.
 You can see the list of built-in modules with the function below.
 
 ``` r
-
 module_list()
 ```
 
@@ -97,7 +95,6 @@ function takes care of displaying everything for you when you need to
 assess a single paper.
 
 ``` r
-
 paper <- demopaper()
 mo <- module_run(paper, "stat_p_exact")
 ```
@@ -105,21 +102,18 @@ mo <- module_run(paper, "stat_p_exact")
 The `module`, `title`, and `summary_text` give brief information.
 
 ``` r
-
 mo$module
 ```
 
     #> [1] "stat_p_exact"
 
 ``` r
-
 mo$title
 ```
 
     #> [1] "Exact P-Values"
 
 ``` r
-
 mo$summary_text
 ```
 
@@ -131,7 +125,6 @@ The `traffic_light` helps the reports give a quick visual guide to where
 there are problems or things to check.
 
 ``` r
-
 mo$traffic_light
 ```
 
@@ -155,16 +148,15 @@ the text. This table can be of use to further modules in a chain, or to
 metascientific users.
 
 ``` r
-
 mo$table
 ```
 
     #> # A tibble: 3 × 14
-    #>   text_id section_id paragraph_id text     formatted page_number paper_id header
-    #>     <int>      <int>        <int> <chr>    <chr>           <int> <chr>    <chr> 
-    #> 1      21          8           10 "p=0.00… NA                  3 to_err_… Resul…
-    #> 2      22          8           11 "p=0.15… NA                  3 to_err_… Resul…
-    #> 3      23          8           12 "p > .0… NA                  3 to_err_… Resul…
+    #>   text     text_id paragraph_id section_id page_number formatted paper_id header
+    #>   <chr>      <int>        <int>      <int>       <int> <chr>     <chr>    <chr> 
+    #> 1 p = 0.0…      15            4          3          NA  NA       to_err_… Proce…
+    #> 2 p =0.152      16            5          3          NA  NA       to_err_… Proce…
+    #> 3 p > .05       17            6          3          NA "There w… to_err_… Proce…
     #> # ℹ 6 more variables: section_type <chr>, p_comp <chr>, p_value <dbl>,
     #> #   expanded <chr>, imprecise <lgl>, zero <lgl>
 
@@ -177,7 +169,6 @@ in the metascientific workflow, and this table is appended by each
 module in a chain.
 
 ``` r
-
 mo$summary_table
 ```
 
@@ -194,7 +185,6 @@ function inside the
 function.
 
 ``` r
-
 mo$report
 ```
 
@@ -209,7 +199,6 @@ The `paper` is just the paper argument to
 This is mainly used when chaining modules.
 
 ``` r
-
 mo$paper
 ```
 
@@ -219,10 +208,10 @@ mo$paper
     #> 
     #> To Err is Human: An Empirical Investigation
     #> 
-    #> * Sections: 16
-    #> * Sentences: 39
+    #> * Sections: 14
+    #> * Sentences: 37
     #> * Bibliography: 5
-    #> * X-Refs: 8
+    #> * X-Refs: 5
 
 ### Previous Outputs
 
@@ -233,7 +222,6 @@ item. This is so some modules can share resource-intensive parts of
 checks rather than repeating them.
 
 ``` r
-
 mo <- paper |>
   module_run("stat_p_exact") |>
   module_run("marginal") |>
@@ -254,7 +242,6 @@ single paper and then a list of papers, the `psychsci` list of 250
 open-access papers from Psychological Science.
 
 ``` r
-
 paper <- psychsci$`0956797620955209`
 ```
 
@@ -264,35 +251,34 @@ List all p-values in the text, returning the matched text (e.g., ‘p =
 0.04’) and document location in a table.
 
 ``` r
-
 all_p <- module_run(paper, "all_p_values")
 
 all_p$table # print table
 ```
 
-    #> # A tibble: 20 × 10
-    #>    text_id paragraph_id section_id text        page_number paper_id       header
-    #>      <int>        <int>      <int> <chr>             <int> <chr>          <chr> 
-    #>  1      67           21          6 "p = .003"           NA 0956797620955… Quest…
-    #>  2      67           21          6 "p = .08"            NA 0956797620955… Quest…
-    #>  3     105           33          9 "p < .001 "          NA 0956797620955… Resul…
-    #>  4     107           33          9 "p < .025"           NA 0956797620955… Resul…
-    #>  5     107           33          9 "p = .040"           NA 0956797620955… Resul…
-    #>  6     107           33          9 "p = .173"           NA 0956797620955… Resul…
-    #>  7     108           33          9 "p = .006"           NA 0956797620955… Resul…
-    #>  8     108           33          9 "p = .02"            NA 0956797620955… Resul…
-    #>  9     109           33          9 "p = .691"           NA 0956797620955… Resul…
-    #> 10     109           33          9 "p = .303"           NA 0956797620955… Resul…
-    #> 11     112           34          9 "p = .023"           NA 0956797620955… Resul…
-    #> 12     112           34          9 "p < .001"           NA 0956797620955… Resul…
-    #> 13     114           35          9 "p = .006"           NA 0956797620955… Resul…
-    #> 14     114           35          9 "p = .037"           NA 0956797620955… Resul…
-    #> 15     114           35          9 "p = .038"           NA 0956797620955… Resul…
-    #> 16     114           35          9 "p = .358"           NA 0956797620955… Resul…
-    #> 17     115           35          9 "p < .001"           NA 0956797620955… Resul…
-    #> 18     115           35          9 "p = .127"           NA 0956797620955… Resul…
-    #> 19     115           35          9 "p = .062"           NA 0956797620955… Resul…
-    #> 20     115           35          9 "p = .047"           NA 0956797620955… Resul…
+    #> # A tibble: 20 × 11
+    #>    text    text_id paragraph_id section_id page_number formatted paper_id header
+    #>    <chr>     <int>        <int>      <int>       <int> <chr>     <chr>    <chr> 
+    #>  1 "p = .…      63           15          6          NA  NA       0956797… Quest…
+    #>  2 "p = .…      63           15          6          NA  NA       0956797… Quest…
+    #>  3 "p < .…     101           24          9          NA "We obse… 0956797… Resul…
+    #>  4 "p < .…     102           24          9          NA "The mai… 0956797… Resul…
+    #>  5 "p = .…     102           24          9          NA "The mai… 0956797… Resul…
+    #>  6 "p = .…     102           24          9          NA "The mai… 0956797… Resul…
+    #>  7 "p = .…     103           24          9          NA  NA       0956797… Resul…
+    #>  8 "p = .…     103           24          9          NA  NA       0956797… Resul…
+    #>  9 "p = .…     104           24          9          NA "We also… 0956797… Resul…
+    #> 10 "p =.3…     104           24          9          NA "We also… 0956797… Resul…
+    #> 11 "p = .…     107           25          9          NA "Yes-the… 0956797… Resul…
+    #> 12 "p <.0…     107           25          9          NA "Yes-the… 0956797… Resul…
+    #> 13 "p = .…     109           26          9          NA  NA       0956797… Resul…
+    #> 14 "p = .…     109           26          9          NA  NA       0956797… Resul…
+    #> 15 "p = .…     109           26          9          NA  NA       0956797… Resul…
+    #> 16 "p = .…     109           26          9          NA  NA       0956797… Resul…
+    #> 17 "p < .…     110           26          9          NA "Results… 0956797… Resul…
+    #> 18 "p = .…     110           26          9          NA "Results… 0956797… Resul…
+    #> 19 "p = .…     110           26          9          NA "Results… 0956797… Resul…
+    #> 20 "p = .…     110           26          9          NA "Results… 0956797… Resul…
     #> # ℹ 3 more variables: section_type <chr>, p_comp <chr>, p_value <dbl>
 
 If you run this module on all 250 papers, you will get more rows than
@@ -301,7 +287,6 @@ in each paper), so you can print the summary table, which gives you one
 row per paper.
 
 ``` r
-
 all_p_ps <- module_run(psychsci, "all_p_values")
 
 all_p_ps$summary_table |> head()
@@ -318,7 +303,6 @@ all_p_ps$summary_table |> head()
 You can still access the full table for further processing.
 
 ``` r
-
 all_p_ps$table |>
   count(text, sort = TRUE) |>
   head()
@@ -327,12 +311,12 @@ all_p_ps$table |>
     #> # A tibble: 6 × 2
     #>   text          n
     #>   <chr>     <int>
-    #> 1 p < .001   1529
-    #> 2 p < .01     144
-    #> 3 p < .05     137
-    #> 4 p = .001    120
-    #> 5 p = .002     96
-    #> 6 p < .0001    89
+    #> 1 p < .001   1485
+    #> 2 p < .01     138
+    #> 3 p < .05     129
+    #> 4 p = .001    119
+    #> 5 p = .002     93
+    #> 6 p < .0001    88
 
 ### all_urls
 
@@ -340,24 +324,23 @@ List all the URLs in the main text. There will, of course, be a few
 false positives when text in the paper is formatted as a valid URL.
 
 ``` r
-
 all_urls <- module_run(paper, "all_urls")
 
 all_urls$table
 ```
 
-    #> # A tibble: 6 × 8
-    #>   text_id paragraph_id section_id text  page_number paper_id header section_type
-    #>     <int>        <int>      <int> <chr>       <int> <chr>    <chr>  <chr>       
-    #> 1      42           12          3 3.9.…          NA 0956797… Parti… method      
-    #> 2      84           27          8 http…          NA 0956797… Analy… method      
-    #> 3     136           43         13 http…          NA 0956797… Open … funding     
-    #> 4     137           44         13 http…          NA 0956797… Open … funding     
-    #> 5     139           44         13 http…          NA 0956797… Open … funding     
-    #> 6     144           50         16 http…          NA 0956797… Suppl… annex
+    #> # A tibble: 6 × 9
+    #>   text     text_id paragraph_id section_id page_number formatted paper_id header
+    #>   <chr>      <int>        <int>      <int>       <int> <chr>     <chr>    <chr> 
+    #> 1 3.9.1.7       39            9          3          NA "Accordi… 0956797… Parti…
+    #> 2 https:/…      80           19          8          NA "Analysi… 0956797… Analy…
+    #> 3 https:/…     130           30         13          NA "All dat… 0956797… Open …
+    #> 4 https:/…     131           31         13          NA "The des… 0956797… Open …
+    #> 5 http://…     133           31         13          NA "More in… 0956797… Open …
+    #> 6 http://…     138           34         16          NA "Additio… 0956797… Suppl…
+    #> # ℹ 1 more variable: section_type <chr>
 
 ``` r
-
 all_urls_ps <- module_run(psychsci, "all_urls")
 
 all_urls_ps$summary_table
@@ -370,14 +353,14 @@ all_urls_ps$summary_table
     #> 4    0956797614557697    6
     #> 5    0956797614560771    0
     #> 6    0956797614566469    5
-    #> 7    0956797615569001    7
+    #> 7    0956797615569001    9
     #> 8    0956797615569889    3
     #> 9    0956797615583071    4
     #> 10   0956797615588467    2
     #> 11   0956797615603702    0
     #> 12   0956797615615584    2
     #> 13   0956797615617779    1
-    #> 14   0956797615620784    3
+    #> 14   0956797615620784    4
     #> 15   0956797615625973    5
     #> 16   0956797616631990    6
     #> 17   0956797616634654    2
@@ -387,7 +370,7 @@ all_urls_ps$summary_table
     #> 21   0956797616657319    4
     #> 22   0956797616661199    5
     #> 23   0956797616663878    5
-    #> 24   0956797616665351    6
+    #> 24   0956797616665351    7
     #> 25   0956797616667447    1
     #> 26   0956797616669994    1
     #> 27   0956797616671327    2
@@ -395,7 +378,7 @@ all_urls_ps$summary_table
     #> 29   0956797617692000    7
     #> 30   0956797617693326    1
     #> 31   0956797617694867    9
-    #> 32   0956797617702501    5
+    #> 32   0956797617702501    6
     #> 33   0956797617702699    5
     #> 34   0956797617705391    4
     #> 35   0956797617705667    4
@@ -409,11 +392,11 @@ all_urls_ps$summary_table
     #> 43   0956797617737129   31
     #> 44   0956797617739368    9
     #> 45   0956797617740685    3
-    #> 46   0956797617744542   23
+    #> 46   0956797617744542   19
     #> 47   0956797618755322    7
     #> 48   0956797618760197    4
     #> 49   0956797618772822    4
-    #> 50   0956797618773095    0
+    #> 50   0956797618773095    1
     #> 51   0956797618785899    8
     #> 52   0956797618795679    3
     #> 53   0956797618796480    6
@@ -421,11 +404,11 @@ all_urls_ps$summary_table
     #> 55   0956797618815482    0
     #> 56   0956797618815488    1
     #> 57   0956797618823540    2
-    #> 58   0956797619830326   21
-    #> 59   0956797619830329   10
+    #> 58   0956797619830326   20
+    #> 59   0956797619830329   11
     #> 60   0956797619831964    4
     #> 61   0956797619833325    2
-    #> 62   0956797619835147    8
+    #> 62   0956797619835147    9
     #> 63   0956797619837981    1
     #> 64   0956797619841265    8
     #> 65   0956797619842261    7
@@ -433,7 +416,7 @@ all_urls_ps$summary_table
     #> 67   0956797619844231    7
     #> 68   0956797619851753    4
     #> 69   0956797619866625    6
-    #> 70   0956797619866627    9
+    #> 70   0956797619866627    8
     #> 71   0956797619869905    5
     #> 72   0956797619876260   10
     #> 73   0956797619881134    7
@@ -441,10 +424,10 @@ all_urls_ps$summary_table
     #> 75   0956797620903716   21
     #> 76   0956797620904450    4
     #> 77   0956797620904990   18
-    #> 78   0956797620915887   22
-    #> 79   0956797620916521    2
+    #> 78   0956797620915887   21
+    #> 79   0956797620916521    3
     #> 80   0956797620916782   14
-    #> 81   0956797620927648    4
+    #> 81   0956797620927648    5
     #> 82   0956797620927967    8
     #> 83   0956797620929297    2
     #> 84   0956797620929302    7
@@ -457,10 +440,10 @@ all_urls_ps$summary_table
     #> 91   0956797620955209    6
     #> 92   0956797620957625    9
     #> 93   0956797620958638    2
-    #> 94   0956797620958650    5
+    #> 94   0956797620958650    3
     #> 95   0956797620959014    2
     #> 96   0956797620959594   19
-    #> 97   0956797620960011   12
+    #> 97   0956797620960011    7
     #> 98   0956797620963615   11
     #> 99   0956797620965520    4
     #> 100  0956797620965536    6
@@ -472,7 +455,7 @@ all_urls_ps$summary_table
     #> 106  0956797620971652    4
     #> 107  0956797620972116    4
     #> 108  0956797620972688    2
-    #> 109  0956797620975781    7
+    #> 109  0956797620975781    6
     #> 110  0956797620984464    5
     #> 111  0956797620985832    9
     #> 112 09567976211001317    6
@@ -494,7 +477,7 @@ all_urls_ps$summary_table
     #> 128 09567976211024260    4
     #> 129 09567976211024535   10
     #> 130 09567976211026983    5
-    #> 131 09567976211028978    9
+    #> 131 09567976211028978    5
     #> 132 09567976211030630    4
     #> 133 09567976211032224    6
     #> 134 09567976211032676    5
@@ -516,7 +499,7 @@ all_urls_ps$summary_table
     #> 150 09567976211068880    3
     #> 151  0956797621991137    3
     #> 152  0956797621991548    6
-    #> 153  0956797621995197   13
+    #> 153  0956797621995197   11
     #> 154  0956797621995202   16
     #> 155  0956797621996660    7
     #> 156  0956797621996667    8
@@ -536,7 +519,7 @@ all_urls_ps$summary_table
     #> 170 09567976221114055    8
     #> 171 09567976221116816    2
     #> 172 09567976221116892    7
-    #> 173 09567976221116893    5
+    #> 173 09567976221116893    6
     #> 174 09567976221119391    7
     #> 175 09567976221121348    5
     #> 176 09567976221131519    5
@@ -562,7 +545,7 @@ all_urls_ps$summary_table
     #> 196 09567976231165267    1
     #> 197 09567976231170878    2
     #> 198 09567976231172500    3
-    #> 199 09567976231173900   15
+    #> 199 09567976231173900   17
     #> 200 09567976231173902    3
     #> 201 09567976231177968    2
     #> 202 09567976231179378    2
@@ -578,7 +561,7 @@ all_urls_ps$summary_table
     #> 212 09567976231192241    1
     #> 213 09567976231194221    1
     #> 214 09567976231194590    5
-    #> 215 09567976231196145    5
+    #> 215 09567976231196145    6
     #> 216 09567976231198194   11
     #> 217 09567976231198435    4
     #> 218 09567976231199440    4
@@ -586,7 +569,7 @@ all_urls_ps$summary_table
     #> 220 09567976231204035   12
     #> 221 09567976231207095    8
     #> 222 09567976231213572   10
-    #> 223 09567976231217508    0
+    #> 223 09567976231217508    1
     #> 224 09567976231218640    2
     #> 225 09567976231220902    7
     #> 226 09567976231221789    2
@@ -603,7 +586,7 @@ all_urls_ps$summary_table
     #> 237 09567976241239935    9
     #> 238 09567976241242105    5
     #> 239 09567976241243370    4
-    #> 240 09567976241245695   14
+    #> 240 09567976241245695   10
     #> 241 09567976241246561    3
     #> 242 09567976241249183    5
     #> 243 09567976241254312    4
@@ -621,14 +604,13 @@ List any p-values that may have been reported with insufficient
 precision (e.g., p \< .05 or p = n.s.).
 
 ``` r
-
 imprecise <- module_run(paper, "stat_p_exact")
 
 imprecise$table$text # print table
 ```
 
     #>  [1] "p = .003"  "p = .08"   "p < .001 " "p < .025"  "p = .040"  "p = .173" 
-    #>  [7] "p = .006"  "p = .02"   "p = .691"  "p = .303"  "p = .023"  "p < .001" 
+    #>  [7] "p = .006"  "p = .02"   "p = .691"  "p =.303"   "p = .023"  "p <.001"  
     #> [13] "p = .006"  "p = .037"  "p = .038"  "p = .358"  "p < .001"  "p = .127" 
     #> [19] "p = .062"  "p = .047"
 
@@ -637,18 +619,16 @@ see that “p \< .025” was not an imprecisely reported p-value, but a
 description of the preregistered alpha threshold.
 
 ``` r
-
 imprecise$table$expanded[[4]] # print expanded text
 ```
 
-    #> [1] "The main effect of illness recency did not meet our preregistered threshold (p < .025)-recently ill: M = 661 ms, SD = 197; not recently ill: M = 626 ms, SD = 153, F(1, 400) = 4.23, η p 2 = .010, 90% CI = [.000, .039], p = .040-nor did the interaction between illness recency and face type (disfigured vs. typical), F(1, 400) = 1.87, η p 2 = .005, 90% CI = [.000, .027], p = .173."
+    #> [1] "The main effect of illness recency did not meet our preregistered threshold (p < .025)-recently ill: M = 661 ms, SD = 197; not recently ill: M = 626 ms, SD = 153, F(1, 400) = 4.23, ηp² = .010, 90% CI = [.000, .039], p = .040-nor did the interaction between illness recency and face type (disfigured vs. typical), F(1, 400) = 1.87, ηp² = .005, 90% CI = [.000, .027], p = .173."
 
 We can investigate the most common imprecise p-values in the PsychSci
 set. “p \< .01” and “p \< .05” are probably often describing figures or
 tables, but what is the deal with “p \> .25”?
 
 ``` r
-
 imprecise_ps <- module_run(psychsci, "stat_p_exact")
 
 imprecise_ps$table |>
@@ -659,17 +639,16 @@ imprecise_ps$table |>
     #> # A tibble: 6 × 2
     #>   text          n
     #>   <chr>     <int>
-    #> 1 p < .001   1529
-    #> 2 p < .01     144
-    #> 3 p < .05     137
-    #> 4 p = .001    120
-    #> 5 p = .002     96
-    #> 6 p < .0001    89
+    #> 1 p < .001   1485
+    #> 2 p < .01     138
+    #> 3 p < .05     129
+    #> 4 p = .001    119
+    #> 5 p = .002     93
+    #> 6 p < .0001    88
 
 We can expand the text to check the context for “p \> .25”.
 
 ``` r
-
 gt.25 <- imprecise_ps$table |>
   filter(grepl("\\.25", text))
 
@@ -685,7 +664,6 @@ gt.25$expanded[1:3] # look at the first 3
 List all sentences that describe an effect as ‘marginally significant’.
 
 ``` r
-
 marginal <- module_run(paper, "marginal")
 
 marginal # print table
@@ -697,26 +675,25 @@ Marginal Significance: You described 0 effects with terms related to
 Let’s check how many are in the full set.
 
 ``` r
-
 marginal_ps <- module_run(psychsci, "marginal")
 
 marginal_ps$table # print table
 ```
 
-    #> # A tibble: 104 × 9
-    #>    text_id paragraph_id section_id text    page_number paper_id formatted header
-    #>      <int>        <int>      <int> <chr>         <int> <chr>    <chr>     <chr> 
-    #>  1     130           44         15 Althou…          NA 0956797… NA        "Deta…
-    #>  2     141           50         18 A marg…          NA 0956797… NA        "Post…
-    #>  3     152           54         19 When w…          NA 0956797… NA        "The …
-    #>  4     156           56         20 In tha…          NA 0956797… NA        "Cond…
-    #>  5     115           29          7 The Co…          NA 0956797… NA        "Resu…
-    #>  6     117           30          6 The tw…          NA 0956797… NA        "Resu…
-    #>  7     185           55         14 An omn…          NA 0956797… NA        "Resu…
-    #>  8     245           87         28 Furthe…          NA 0956797… NA        ""    
-    #>  9     259           89         30 The da…          NA 0956797… NA        "Fig …
-    #> 10     168           57         19 Given …          NA 0956797… NA        "Auth…
-    #> # ℹ 94 more rows
+    #> # A tibble: 102 × 9
+    #>    text    text_id paragraph_id section_id page_number formatted paper_id header
+    #>    <chr>     <int>        <int>      <int>       <int> <chr>     <chr>    <chr> 
+    #>  1 Althou…     128           29         15          NA "Althoug… 0956797… Detai…
+    #>  2 A marg…     139           32         18          NA "A margi… 0956797… Postt…
+    #>  3 When w…     150           35         19          NA  NA       0956797… The e…
+    #>  4 In tha…     154           36         20          NA "In that… 0956797… Condi…
+    #>  5 The Co…     110           22          7          NA "The Con… 0956797… Resul…
+    #>  6 The tw…     113           24          6          NA "The two… 0956797… Resul…
+    #>  7 An omn…     186           41         14          NA  NA       0956797… Resul…
+    #>  8 Furthe…     241           63         28          NA  NA       0956797… NA    
+    #>  9 The da…     255           65         30          NA "The dag… 0956797… Fig 5 
+    #> 10 Given …     166           38         19          NA  NA       0956797… Autho…
+    #> # ℹ 92 more rows
     #> # ℹ 1 more variable: section_type <chr>
 
 ### stat_check
@@ -725,7 +702,6 @@ Check consistency of p-values and test statistics using functions from
 [statcheck](https://github.com/MicheleNuijten/statcheck).
 
 ``` r
-
 statcheck <- module_run(paper, "stat_check")
 
 statcheck$table
@@ -734,18 +710,21 @@ statcheck$table
     #>   test_type df1   df2 test_comp test_value p_comp reported_p   computed_p
     #> 1         t  NA 248.4         =       2.01      =      0.023 4.551244e-02
     #> 2         t  NA 248.4         =      -4.55      <      0.001 8.397343e-06
-    #>                          raw error decision_error one_tailed_in_txt apa_factor
-    #> 1  t(248.4) = 2.01, p = .023  TRUE          FALSE             FALSE          1
-    #> 2 t(248.4) = -4.55, p < .001 FALSE          FALSE             FALSE          1
-    #>   text_id paragraph_id section_id
-    #> 1     112           34          9
-    #> 2     112           34          9
-    #>                                                                                                                                                                                                                                                                                                text
-    #> 1 Yes-the 90% confidence intervals of the difference in attentional bias for participants who were and were not recently ill found here (d z = -0.14, 90% CI = [-0.31, -0.04]) did not overlap with an effect size (d z ) of -0.35, t(248.4) = 2.01, p = .023, or 0.35, t(248.4) = -4.55, p < .001.
-    #> 2 Yes-the 90% confidence intervals of the difference in attentional bias for participants who were and were not recently ill found here (d z = -0.14, 90% CI = [-0.31, -0.04]) did not overlap with an effect size (d z ) of -0.35, t(248.4) = 2.01, p = .023, or 0.35, t(248.4) = -4.55, p < .001.
-    #>   page_number         paper_id  header section_type
-    #> 1          NA 0956797620955209 Results      results
-    #> 2          NA 0956797620955209 Results      results
+    #>                         raw error decision_error one_tailed_in_txt apa_factor
+    #> 1 t(248.4) = 2.01, p = .023  TRUE          FALSE             FALSE          1
+    #> 2 t(248.4) = -4.55, p <.001 FALSE          FALSE             FALSE          1
+    #>                                                                                                                                                                                                                                                                                             text
+    #> 1 Yes-the 90% confidence intervals of the difference in attentional bias for participants who were and were not recently ill found here (dz = -0.14, 90% CI = [-0.31, -0.04]) did not overlap with an effect size (dz ) of -0.35, t(248.4) = 2.01, p = .023, or 0.35, t(248.4) = -4.55, p <.001.
+    #> 2 Yes-the 90% confidence intervals of the difference in attentional bias for participants who were and were not recently ill found here (dz = -0.14, 90% CI = [-0.31, -0.04]) did not overlap with an effect size (dz ) of -0.35, t(248.4) = 2.01, p = .023, or 0.35, t(248.4) = -4.55, p <.001.
+    #>   text_id paragraph_id section_id page_number
+    #> 1     107           25          9          NA
+    #> 2     107           25          9          NA
+    #>                                                                                                                                                                                                                                                                                           formatted
+    #> 1 Yes-the 90% confidence intervals of the difference in attentional bias for participants who were and were not recently ill found here (dz = -0.14, 90% CI = [-0.31, -0.04]) did not overlap with an effect size (dz ) of -0.35, t(248.4) = 2.01, p = .023, or 0.35, t(248.4) = -4.55, p &lt;.001.
+    #> 2 Yes-the 90% confidence intervals of the difference in attentional bias for participants who were and were not recently ill found here (dz = -0.14, 90% CI = [-0.31, -0.04]) did not overlap with an effect size (dz ) of -0.35, t(248.4) = 2.01, p = .023, or 0.35, t(248.4) = -4.55, p &lt;.001.
+    #>           paper_id  header section_type
+    #> 1 0956797620955209 Results      results
+    #> 2 0956797620955209 Results      results
 
 Here we see a false positive, where the paper reported the results of an
 equivalence test, which are meant to be one-tailed, but statcheck did
@@ -755,7 +734,6 @@ In the full PsychSci set, there are more than 27K sentences with numbers
 to check, so this takes about a minute to run.
 
 ``` r
-
 statcheck_ps <- module_run(psychsci, "statcheck")
 ```
 
@@ -765,7 +743,6 @@ p-value is about double the reported p-value, and this changes the
 significance decision (at an alpha of 0.05).
 
 ``` r
-
 statcheck_ps$table |>
   filter(decision_error, 
          round(computed_p/reported_p, 1) == 2.0) |>
@@ -791,7 +768,6 @@ Modules return a `summary` table as well as the detailed results
 modules.
 
 ``` r
-
 ps_metascience <- psychsci[1:10] |>
   module_run("all_p_values") |>
   module_run("stat_p_exact") |>

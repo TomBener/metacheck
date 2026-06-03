@@ -1,6 +1,7 @@
-[MetaCheck](http://www.scienceverse.org/metacheck) version 0.0.1.9003  
-Report Created: 2026-04-17  
-NA
+[MetaCheck](http://www.scienceverse.org/metacheck) version 0.0.0.9106  
+Report Created: 2026-06-01  
+DOI:
+[10.32614/10.5281/zenodo.2669586](https://doi.org/10.32614/10.5281/zenodo.2669586)
 
 [Metacheck](https://www.scienceverse.org/metacheck/) is a tool that
 screens scientific manuscripts and aims to identify potential issues for
@@ -10,27 +11,36 @@ report statistical results, automatically retrieve possible relevant
 information about citations, and improve how researchers share data,
 code, and preregistrations.
 
-TipLearn More
-
 Metacheck combines existing and new checks in a module-based tool. It
-mainly relies on text search, retrieving information from external
-sources through API’s or web-scraping, but it also incorporates tool
-that use machine learning classifiers or large language models. The use
-of LLM’s is always optional. The development of Metacheck is guided by
-our [values
-statement](https://docs.google.com/document/d/1bbIkgUaiz3fpTXAeTF3h-gsfhqWEBN_n6OBcbFLfXjw/edit?tab=t.0).
+mainly relies on text search or retrieving information from external
+sources through API’s or web-scraping, but some modules also incorporate
+tools that use machine learning classifiers or large language models.
+The use of LLM’s is always optional and opt-in. The development of
+Metacheck is guided by our [values
+statement](https://www.scienceverse.org/metacheck/#our-values).
 
-Metacheck often needs to balance false positives against false
-negatives, and prioritizes preventing false negatives. Like a spelling
-checker, which often highlights words that are not spelled incorrectly,
-Metacheck modules will contain false positives. We hope their rate is
-acceptable, given opportunities for improvement that Metacheck
-identifies. Modules are currently primarily validated on the
-psychological literature.
+Our modules are validated on sets of open-access papers. In each
+validated module, there will be a sentence explaining the prevalence of
+false positives (incorrect detection/classification) and false negatives
+(incorrect omission). For example, if a hypothetical module detects the
+inappropriate practice of “woozling”, the sentence might read:
+
+> In a sample of 250 papers from the *Journal of X*, there were 350
+> instances of woozling. This module correctly detected 340 of them, and
+> incorrectly identified 7. Therefore 3% of true instances are missed,
+> and 2% of detections are false positives.
+
+There is an inherent tradeoff between false positives and false
+negatives. Many of our modules are designed like “smoke detectors”,
+where they are more likely to detect a practice that needs attention,
+but also more likely to incorrectly flag something. Therefore, you need
+to check the output of each module, keeping the validated error rates in
+mind.
 
 Metacheck is under continuous development. Issues can be submitted [on
 Github](https://github.com/scienceverse/metacheck/issues), and
-suggestions for improvement or feedback can be sent to D.Lakens@tue.nl.
+suggestions for improvement or feedback can be sent to
+<metacheck@scienceverse.org>.
 
 ## Summary
 
@@ -40,10 +50,12 @@ suggestions for improvement or feedback can be sent to D.Lakens@tue.nl.
   detected.  
 - ✅️ [COI Check](#coi-check): A conflict of interest statement was
   detected.  
-- ⚠️ [Power Analysis Check](#power-analysis-check): We detected 2
+- ⚠️ [Power Analysis Check](#power-analysis-check): We detected 3
   potential power analyses.  
+- ℹ️ [Preregistration Check](#preregistration-check): We found 2
+  preregistrations.  
 - ⚠️ [Exact P-Values](#exact-p-values): We found 1 imprecise *p* value
-  out of 3 detected.  
+  out of 3 detected *p* values.  
 - ⚠️ [Marginal Significance](#marginal-significance): You described 2
   effects with terms related to ‘marginally significant’.  
 - ⚠️ [StatCheck](#statcheck): 1 possible error in t-tests or F-tests  
@@ -54,30 +66,31 @@ suggestions for improvement or feedback can be sent to D.Lakens@tue.nl.
   F-tests](#effect-sizes-in-t-tests-and-f-tests): We found 1 t-test
   and/or F-test where effect sizes are not reported.  
 - 🔍 [Repository Check](#repository-check):
-  - We found 9 files in 3 repositories.
+  - We found 14 files in 3 repositories.
   - We found 1 README file and 2 repositories without READMEs.
   - We found 1 archive file.  
 - 🔍 [Code Check](#code-check):
   - We found 4 R, SAS, SPSS, or Stata code files.
-  - 1 code file had no comments.
-  - 1 file loaded in the code was missing in the repository.
+  - All your code files had comments.
+  - 2 files loaded in the code were missing in the repository.
   - Absolute file paths were found.
   - Libraries/imports were loaded in multiple places.  
 - 🔍 [Reference Accuracy](#reference-accuracy): We checked 5 references
-  in CrossRef and found entries for 4.  
+  in CrossRef and found entries for 3.  
 - ℹ️ [Replication Check](#replication-check): We found 1 replication for
   1 original you cited.  
 - ℹ️ [RetractionWatch](#retractionwatch): You cited 1 article in the
   RetractionWatch database.  
-- ℹ️ [Check PubPeer Comments](#check-pubpeer-comments): You cited 1
-  reference with comments in PubPeer.  
+- ℹ️ [PubPeer Comments](#pubpeer-comments): You cited 1 reference with
+  comments in PubPeer.  
 - ℹ️ [Summarise References](#summarise-references): Summary information
-  provided for 5 references  
-- ☠️ [causal_claims](#causal_claims): This module failed to run
+  provided for 5 references
 
 ## General Modules
 
 ### ⚠️ Funding Check
+
+No funding statement was detected.
 
 No funding statement was detected. Consider adding one.
 
@@ -104,44 +117,57 @@ View detailed feedback
 
 Data was openly shared for this article, based on the following text:
 
+> The paper shows examples of (1) open and closed OSF links; (2a)
+> citation of retracted papers, (2b) citations without a doi, (2c)
+> citations with Pubpeer comments, (2d) citations in the FLoRA
+> replication database, and (2e) missing/mismatched/incorrect citations
+> and references; (3a) R files with code on GitHub that do not load
+> libraries in one location, (3b) load files that are not shared in the
+> repository, (3c) lack comments, and (3d) have absolute file paths; (4)
+> imprecise reporting of non-significant p-values; (5) tests with and
+> without effect sizes; (6) use of “marginally significant” to describe
+> non-significant findings; (7) a power analysis reporting some of the
+> essential attributes; and (8) retrieving information from
+> preregistrations.
+
+> Data and analysis code is available on GitHub from
+> https://github.com/Lak-ens/to_err_is_human and from
+> https://researchbox.org/4377.
+
 > Data is also available from https://osf.io/5tbm9 and code is also
 > available from https://osf.io/629bx.
 
 Code was openly shared for this article, based on the following text:
 
+> The paper shows examples of (1) open and closed OSF links; (2a)
+> citation of retracted papers, (2b) citations without a doi, (2c)
+> citations with Pubpeer comments, (2d) citations in the FLoRA
+> replication database, and (2e) missing/mismatched/incorrect citations
+> and references; (3a) R files with code on GitHub that do not load
+> libraries in one location, (3b) load files that are not shared in the
+> repository, (3c) lack comments, and (3d) have absolute file paths; (4)
+> imprecise reporting of non-significant p-values; (5) tests with and
+> without effect sizes; (6) use of “marginally significant” to describe
+> non-significant findings; (7) a power analysis reporting some of the
+> essential attributes; and (8) retrieving information from
+> preregistrations.
+
 > Data and analysis code is available on GitHub from
-> https://github.com/Lakens/to_err_is_human and from
+> https://github.com/Lak-ens/to_err_is_human and from
 > https://researchbox.org/4377.
+
+> Data is also available from https://osf.io/5tbm9 and code is also
+> available from https://osf.io/629bx.
 
 NoteHow It Works
 
-This module incorporates ODDPub into metacheck. ODDPub is a text mining
-algorithm that detects which publications disseminated Open Data or Open
-Code together with the publication.
+This module searches for open data, code, materials, and registration
+statements.
 
-The Open Practices Check runs Open Data Detection in Publications
-(ODDPub). ODDPub searches for text expressions that indicate that an
-article shared Open Data or Open Code together with the publication.
-More information on the package can be found at
-<https://github.com/quest-bih/oddpub>. The module only returns whether
-open data and code is found (the original package offers more
-fine-grained results). The tool was validated in the biomedical
-literature, see <https://osf.io/yv5rx/>.
+It is much faster than the previous ODDPub version of this module, and
+has a lower false negative rate, but also a higher false positive rate.
 
-ODDPub was developed by Nico Riedel, Vladislav Nachev, Miriam Kip, and
-Evgeny Bobrov at the QUEST Center for Transforming Biomedical Research,
-Berlin Institute of Health. <https://doi.org/10.5334/dsj-2020-042>
-
-It might miss open data and code declarations when the words used in the
-manuscript are not in the pattern that ODDPub searches for, or when the
-repositories are not in the ODDpub code (e.g., ResearchBox).
-
-From ODDPub: “To validate the algorithm, we manually screened a sample
-of 792 publications that were randomly selected from PubMed. On this
-validation dataset, our algorithm detects Open Data publications with a
-sensitivity of 0.73 and specificity of 0.97.”
-
-This module was developed by Daniel Lakens
+This module was developed by Lisa DeBruine
 
 ### ✅️ COI Check
 
@@ -170,12 +196,16 @@ This module was developed by Daniel Lakens
 
 ### ⚠️ Power Analysis Check
 
-We detected 2 potential power analyses.
+We detected 3 potential power analyses.
 
 View detailed feedback
 
+We used the LLM model ‘ollama/qwen2.5:3b’ to check the contents of 3
+paragraphs that contained words suggesting they might contain power
+analyses.
+
 Some essential information could not be detected: alpha_level,
-effect_size, effect_size_metric
+effect_size, effect_size_metric, software
 
 TipLearn More
 
@@ -232,11 +262,70 @@ articles in Psychological Science.
 This module was developed by Lisa DeBruine, Daniel Lakens and Cristian
 Mesquida
 
+### ℹ️ Preregistration Check
+
+We found 2 preregistrations.
+
+View detailed feedback
+
+We found 2 preregistrations.
+
+Meta-scientific research has shown that deviations from preregistrations
+are often not reported or checked, and that the most common deviations
+concern the sample size. We recommend manually checking the full
+preregistration at the links above, and have provided the preregistered
+sample size.
+
+TipFull Preregistration
+
+TipLearn More
+
+For metascientific articles demonstrating the rate of deviations from
+preregistrations, see:
+
+van den Akker O, Bakker M, van Assen M, Pennington C, Verweij L,
+Elsherif M, Claesen A, Gaillard S, Yeung S, Frankenberger J, Krautter K,
+Cockcroft J, Kreuer K, Evans T, Heppel F, Schoch S, Korbmacher M, Yamada
+Y, Albayrak-Aydemir N, Wicherts J (2024). “The potential of
+preregistration in psychology: Assessing preregistration producibility
+and preregistration-study consistency.” *Psychological Methods*.
+[doi:10.1037/met0000687](https://doi.org/10.1037/met0000687).
+
+For educational material on how to report deviations from
+preregistrations, see:
+
+Lakens, Daniël (2024). “When and How to Deviate From a Preregistration.”
+*Collabra: Psychology*, **10**(1), 117094.
+[doi:10.1525/collabra.117094](https://doi.org/10.1525/collabra.117094).
+
+NoteHow It Works
+
+Retrieve information from preregistrations in a standardised way, and
+make them easier to check.
+
+The Preregistration Check module identifies preregistrations on the OSF
+and AsPredicted based on links in the manuscript, retrieves the
+preregistration text, and organizes the information into a template. The
+module then uses regular expressions to identify text from AsPredicted,
+and the API to retrieve text from the OSF. The information in the
+preregistration is returned.
+
+The module can’t extract information from non-structured preregistration
+templates (i.e., where the preregistration is uploaded in a single text
+field) and it can’t retrieve information in preregistrations that are
+stored as text documents on the OSF.
+
+If you want to extend the package to be able to download information
+from other preregistration sites, reach out to the Metacheck development
+team.
+
+This module was developed by Daniel Lakens and Lisa DeBruine
+
 ## Results Modules
 
 ### ⚠️ Exact P-Values
 
-We found 1 imprecise *p* value out of 3 detected.
+We found 1 imprecise *p* value out of 3 detected *p* values.
 
 View detailed feedback
 
@@ -261,10 +350,13 @@ Association.
 NoteHow It Works
 
 List any p-values reported with insufficient precision (e.g., p \< .05
-or p = n.s.)
+or p = n.s.) or reported as exactly zero (e.g., p = .000).
 
 This module uses regular expressions to identify p-values. It will flag
-any values reported as p \> ? or p \< numbers greater than .001.
+any values reported as p \> ? or p \< numbers greater than .001. It will
+also flag p-values reported as exactly zero (e.g., p = .000, p = 0.00),
+which are mathematically impossible — p-values are never exactly zero
+and should instead be reported as p \< .001.
 
 We try to exclude figure and table notes like “\* p \< .05”, but may not
 succeed at excluding all false positives.
@@ -333,13 +425,13 @@ usefulness to prevent statistical reporting errors, see:
 Nuijten M, van Assen M, Hartgerink C, Epskamp S, Wicherts J (2017). “The
 validity of the tool "statcheck" in discovering statistical reporting
 inconsistencies.”
-[doi:10.31234/osf.io/tcxaja](https://doi.org/10.31234/osf.io/tcxaja),
+[doi:10.31234/osf.io/tcxaja](https://doi.org/10.31234/osf.io/tcxaja).
 Preprint.
 
 Nuijten M, Wicherts J (2023). “The effectiveness of implementing
 statcheck in the peer review process to avoid statistical reporting
 errors.”
-[doi:10.31234/osf.io/bxau9](https://doi.org/10.31234/osf.io/bxau9),
+[doi:10.31234/osf.io/bxau9](https://doi.org/10.31234/osf.io/bxau9).
 Preprint.
 
 NoteHow It Works
@@ -362,6 +454,13 @@ one-sided tests, and falsely assume the p-value is incorrect. For more
 information, see [StatCheck](https://statcheck.io/).
 
 This module was developed by Daniel Lakens and Lisa DeBruine
+
+**Validation**: In a sample of 685 tests with 34 instances of
+inconsistent reporting, Statcheck correctly detected 34 of them, and
+incorrectly identified 26. Therefore 0% of true instances were missed,
+and 43% of detections were false positives. See
+<https://osf.io/preprints/psyarxiv/tcxaj_v1/> for more details of the
+validation.
 
 ### 🔍 Non-Significant P Value Check
 
@@ -467,16 +566,25 @@ This module was developed by Daniel Lakens and Lisa DeBruine
 
 ### 🔍 Repository Check
 
-- We found 9 files in 3 repositories.
+- We found 14 files in 3 repositories.
 - We found 1 README file and 2 repositories without READMEs.
 - We found 1 archive file.
 
 View detailed feedback
 
+#### Repositories
+
+#### Files
+
+#### README Files
+
 README files are a way to document the contents and structure of a
 folder, helping users locate the information they need. You can use a
 README to document changes to a repository, and explain how files are
-named. Please consider adding a README to each repository.
+named. Please consider adding a README to each repository or including
+‘README’ in the name of your overview document.
+
+#### Archive Files
 
 The following files are archives: Archive.zip. We did not examine their
 content. Consider uploading these individually to improve
@@ -486,8 +594,8 @@ NoteHow It Works
 
 This module retrieves information from repositories.
 
-The Repository Check module lists files on the OSF, GitHub, and
-ResearchBox based on links in the manuscript.
+The Repository Check module lists files on the OSF, GitHub, ResearchBox,
+and Zenodo based on links in the manuscript.
 
 If you want to extend the package to be able to download files from
 additional data repositories reach out to the Metacheck development
@@ -498,8 +606,8 @@ This module was developed by Daniel Lakens and Lisa DeBruine
 ### 🔍 Code Check
 
 - We found 4 R, SAS, SPSS, or Stata code files.
-- 1 code file had no comments.
-- 1 file loaded in the code was missing in the repository.
+- All your code files had comments.
+- 2 files loaded in the code were missing in the repository.
 - Absolute file paths were found.
 - Libraries/imports were loaded in multiple places.
 
@@ -514,11 +622,11 @@ less typical.
 
 Best programming practice is to add comments to code, to explain what
 the code does (to yourself in the future, or peers who want to re-use
-your code).
+your code). All your code files had comments.
 
 #### Missing Files
 
-The scripts load files, but 1 script loaded 1 file that could not be
+The scripts load files, but 2 scripts loaded 2 files that could not be
 automatically identified in the repository. Check if the following files
 are made available, so that others can reproduce your code, or that the
 files are missing:
@@ -533,7 +641,7 @@ found in 4 code files:
 #### Libraries / Imports
 
 Best programming practice is to load all required libraries/imports in
-one block near the top of the code. In 3 code files, libraries/imports
+one block near the top of the code. In 2 code files, libraries/imports
 were at multiple places (i.e., with more than 3 non-comment lines in
 between).
 
@@ -570,12 +678,17 @@ This module was developed by Daniel Lakens
 
 ### 🔍 Reference Accuracy
 
-We checked 5 references in CrossRef and found entries for 4.
+We checked 5 references in CrossRef and found entries for 3.
 
 View detailed feedback
 
-Double check any references listed in the tables below. This tool has a
-high false positive rate.
+Double check any references listed in the tables below. This module has
+a high false positive rate.
+
+Title mismatches often happen because of errors reading text from PDFs.
+Author mismatches often happen because of errors in parsing author
+lists. Year mismatches often happen because of differences between date
+of first publication and date of print publication.
 
 NoteHow It Works
 
@@ -673,7 +786,7 @@ more information, see https://gitlab.com/crossref/retraction-watch-data.
 
 This module was developed by Daniel Lakens and Lisa DeBruine
 
-### ℹ️ Check PubPeer Comments
+### ℹ️ PubPeer Comments
 
 You cited 1 reference with comments in PubPeer.
 

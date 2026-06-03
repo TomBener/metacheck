@@ -6,13 +6,11 @@ You can install the development version of metacheck from
 [GitHub](https://github.com/scienceverse/metacheck) with:
 
 ``` r
-
 # install.packages("devtools")
 devtools::install_github("scienceverse/metacheck")
 ```
 
 ``` r
-
 library(metacheck)
 ```
 
@@ -20,7 +18,6 @@ You can launch a shiny app, but this has limited features and is under
 development.
 
 ``` r
-
 metacheck::metacheck_app()
 ```
 
@@ -34,7 +31,6 @@ an internet connection and takes a few seconds per paper, so should only
 be done once and the results saved for later use.
 
 ``` r
-
 pdf_file <- demofile("pdf")
 json_file <- convert(file_path = pdf_file, save_path = "converted")
 ```
@@ -49,7 +45,6 @@ docker run --rm --init --ulimit core=0 -p 8070:8070 lfoppiano/grobid:0.9.0
 Then you can set your api_url to the local path <http://localhost:8070>.
 
 ``` r
-
 json_file <- convert(file_path = pdf_file, 
                      save_path = "converted",
                      method = "grobid",
@@ -63,7 +58,6 @@ The function
 can read converted JSON files.
 
 ``` r
-
 paper <- read(json_file)
 ```
 
@@ -95,35 +89,33 @@ references, and citations.
 ### Info
 
 ``` r
-
 paper$info
 ```
 
-    #>                                         title     keywords  doi
-    #> 1 To Err is Human: An Empirical Investigation list(list()) <NA>
-    #>          file_hash input_format           file_name bibr_version paper_type
-    #> 1 a26373a4f28e3718          pdf to_err_is_human.pdf         10.0  empirical
-    #>   paper_type_confidence         oecd_l1                           oecd_l2
-    #> 1                     0 Social Sciences Psychology and Cognitive Sciences
-    #>   oecd_confidence
-    #> 1              NA
+    #>                                         title keywords
+    #> 1 To Err is Human: An Empirical Investigation       NA
+    #>                               doi        file_hash input_format
+    #> 1 10.32614/10.5281/zenodo.2669586 62ede2964b174f6d grobid 0.9.0
+    #>                                                                     file_name
+    #> 1 /Users/debruine/rproj/scienceverse/metacheck/inst/demos/to_err_is_human.xml
+    #>   bibr_version paper_type paper_type_confidence oecd_l1 oecd_l2 oecd_confidence
+    #> 1         10.0    unknown                     0    <NA>    <NA>              NA
 
 ### Bibliography
 
 The bibliography is provided in a tabular format.
 
 ``` r
-
 paper$bib
 ```
 
-| bib_id | text_id | bib_type | doi | title | authors | year | container | volume | issue | first_page | last_page |
-|---:|---:|:---|:---|:---|:---|---:|:---|:---|:---|:---|:---|
-| 1 | 29 | misc | 10.5281/zenodo.2669586 | Faux: Simulation for Factorial Designs | DeBruine, Lisa | 2025 |  | NA | NA | NA | NA |
-| 2 | 30 | article | 10.1037/0003-066x.54.6.408 | The Origins of Sex Differences in Human Behavior: Evolved Dispositions Versus Social Roles | Eagly, Alice H., and Wendy Wood | 1999 | American Psychologist | 54 | 6 | 408 | 423 |
-| 3 | 31 | article | 10.1177/0956797614520714 | Evil Genius? How Dishonesty Can Lead to Greater Creativity | Gino, Francesca, and Scott S. Wiltermuth | 2014 | Psychological Science | 25 | 4 | 973 | 981 |
-| 4 | 32 | article |  | Equivalence Testing for Psychological Research | Lakens, Daniël | 2018 | Advances in Methods and Practices in Psychological Science | 1 | NA | 259 | 270 |
-| 5 | 33 | article | 10.0000/0123456789 | Human Error Is a Symptom of a Poor Design | Smith, F. | 2021 | Journal of Journals | NA | NA | NA | NA |
+| bib_type | doi | title | authors | editors | publisher | year | volume | issue | container | first_page | last_page | bib_id | year_suffix | text_id |
+|:---|:---|:---|:---|:---|:---|---:|:---|:---|:---|:---|:---|---:|:---|---:|
+| article | 10.32614/10.5281/zenodo.2669586 | Faux: Simulation for Factorial Designs | Debruine, Lisa |  |  | 2025 |  |  | Zenodo | NA | NA | 0 |  | 33 |
+| article | 10.1037/0003-066x.54.6.408 | The Origins of Sex Differences in Human Behavior: Evolved Dispositions Versus Social Roles | Eagly, Alice H; Wood, Wendy |  |  | 1999 | 54 | 6 | American Psychologist | 408 | 423 | 1 |  | 34 |
+| article | 10.1177/0956797614520714 | Evil Genius? How Dishonesty Can Lead to Greater Creativity | Gino, Francesca; Wiltermuth, Scott S |  |  | 2014 | 25 | 4 | Psychological Science | 973 | 981 | 2 |  | 35 |
+| article |  | Equivalence Testing for Psychological Research | Lakens, Daniël |  |  | 2018 | 1 |  | Psychological Science | 259 | 270 | 3 |  | 36 |
+| article | 10.0000/0123456789 | Human Error Is a Symptom of a Poor Design | Smith, F |  |  | 2021 |  |  | Journal of Journals | NA | NA | 4 |  | 37 |
 
 ### Cross-References
 
@@ -131,29 +123,32 @@ Cross-references are also provided in a tabular format, with `xref_id`
 to match the bibliography table.
 
 ``` r
-
 paper$xref
 ```
 
 | xref_id | xref_type | contents                   | text_id |
 |--------:|:----------|:---------------------------|--------:|
-|       1 | table     | Table 1                    |      20 |
-|       1 | figure    | Figure 1                   |      20 |
-|       2 | figure    | Figure 2                   |      23 |
-|       1 | foot      | 1                          |      10 |
-|       2 | foot      | 2                          |      19 |
-|       3 | bib       | (Gino and Wiltermuth 2014) |       6 |
-|      NA | bib       | (Smithy, 2020)             |       7 |
-|       1 | bib       | (DeBruine 2025)            |      20 |
+|       2 | bibr      | (Gino and Wiltermuth 2014) |       4 |
+|       0 | foot      | foot_0                     |       8 |
+|       0 | figure    | 2                          |      17 |
+|      NA | table     | 1                          |      25 |
+|       1 | figure    | 1                          |      25 |
 
 ### Batch
 
-There are functions to combine the infomation from a list of papers,
-like the `psychsci` built-in dataset of 250 open access papers from
-Psychological Science.
+The `psychsci` built-in dataset contains all 250 open-access articles
+published in *Psychological Science* from 2004 to 2014. *Psychological
+Science* is the flagship journal of the Association for Psychological
+Science and publishes empirical research from all subfields of
+psychology. The PDFs were converted to metacheck paper objects using
+[`convert()`](https://scienceverse.github.io/metacheck/reference/convert.md)
+and stored in the package. This dataset is used throughout the
+documentation to demonstrate how to work with a list of papers.
+
+There are functions to combine the information from a list of papers,
+like `psychsci`.
 
 ``` r
-
 paper_table(psychsci[1:5], "info", c("title", "doi"))
 ```
 
@@ -167,7 +162,6 @@ paper_table(psychsci[1:5], "info", c("title", "doi"))
     #> 5 Emotional Vocalizations Are Recognized Across Cultures Regardl… 10.1… 0956797…
 
 ``` r
-
 paper_table(psychsci[1:5], "bib") |>
   dplyr::filter(!is.na(doi), doi != "")
 ```
@@ -195,18 +189,17 @@ section type is a best guess from the headers, so may not always be
 accurate.)
 
 ``` r
-
 text <- text_search(paper)
 ```
 
-| text_id | section_id | paragraph_id | text | formatted | page_number | paper_id | header | section_type |
-|---:|---:|---:|:---|:---|---:|:---|:---|:---|
-| 1 | 1 | 1 | Daniel Lakens Lisa DeBruine Jakub Werner | NA | 1 | to_err_is_human | To Err is Human: An Empirical Investigation | unknown |
-| 2 | 1 | 2 | 2026-02-22 | NA | 1 | to_err_is_human | To Err is Human: An Empirical Investigation | unknown |
-| 3 | 2 | 3 | This paper demonstrates some good and poor practices for use with the {metacheck} R package. | NA | 1 | to_err_is_human | Abstract | abstract |
-| 4 | 2 | 3 | All data are simulated. | NA | 1 | to_err_is_human | Abstract | abstract |
-| 5 | 2 | 3 | The paper shows examples of (1) open and closed OSF links; (2a) citation of retracted papers, (2b) citations without a doi, (2c) citations with Pubpeer comments, (2d) citations in the FLoRA replication database, and (2e) missing/mismatched/incorrect citations and references; (3a) R files with code on GitHub that do not load libraries in one location, (3b) load files that are not shared in the repository, (3c) lack comments, and (3d) have absolute file paths; (4) imprecise reporting of non-significant p-values; (5) tests with and without effect sizes; (6) use of “marginally significant” to describe non-significant findings; (7) a power analysis reporting some of the essential attributes; and (8) retrieving information from preregistrations. | NA | 1 | to_err_is_human | Abstract | abstract |
-| 6 | 3 | 4 | Although intentional dishonesty might be a successful way to boost creativity (Gino and Wiltermuth 2014), it is safe to say most mistakes researchers make are unintentional. | NA | 1 | to_err_is_human |  | intro |
+| text | text_id | paragraph_id | section_id | page_number | formatted | paper_id | header | section_type |
+|:---|---:|---:|---:|---:|:---|:---|:---|:---|
+| This paper demonstrates some good and poor practices for use with the {metacheck} R package. | 1 | 1 | 0 | NA | NA | to_err_is_human | Abstract | abstract |
+| All data are simulated. | 2 | 1 | 0 | NA | NA | to_err_is_human | Abstract | abstract |
+| The paper shows examples of (1) open and closed OSF links; (2a) citation of retracted papers, (2b) citations without a doi, (2c) citations with Pubpeer comments, (2d) citations in the FLoRA replication database, and (2e) missing/mismatched/incorrect citations and references; (3a) R files with code on GitHub that do not load libraries in one location, (3b) load files that are not shared in the repository, (3c) lack comments, and (3d) have absolute file paths; (4) imprecise reporting of non-significant p-values; (5) tests with and without effect sizes; (6) use of “marginally significant” to describe non-significant findings; (7) a power analysis reporting some of the essential attributes; and (8) retrieving information from preregistrations. | 3 | 1 | 0 | NA | NA | to_err_is_human | Abstract | abstract |
+| Although intentional dishonesty might be a successful way to boost creativity (Gino and Wiltermuth 2014), it is safe to say most mistakes researchers make are unintentional. | 4 | 2 | 1 | NA | Although intentional dishonesty might be a successful way to boost creativity (Gino and Wiltermuth 2014), it is safe to say most mistakes researchers make are unintentional. | to_err_is_human | \[div-01\] | intro |
+| From a human factors perspective, human error is a symptom of a poor design (Smithy, 2020). | 5 | 2 | 1 | NA | NA | to_err_is_human | \[div-01\] | intro |
+| Automation can be used to check for errors in scientific manuscripts, and inform authors about possible corrections. | 6 | 2 | 1 | NA | NA | to_err_is_human | \[div-01\] | intro |
 
 ### Pattern
 
@@ -215,14 +208,13 @@ argument. The pattern is a regex string by default; set `fixed = TRUE`
 if you want to find exact text matches.
 
 ``` r
-
 text <- text_search(paper, pattern = "metacheck")
 ```
 
-| text_id | section_id | paragraph_id | text | formatted | page_number | paper_id | header | section_type |
-|---:|---:|---:|:---|:---|---:|:---|:---|:---|
-| 3 | 2 | 3 | This paper demonstrates some good and poor practices for use with the {metacheck} R package. | NA | 1 | to_err_is_human | Abstract | abstract |
-| 9 | 3 | 4 | In this study we examine the usefulness of metacheck to improve best practices. | NA | 1 | to_err_is_human |  | intro |
+| text | text_id | paragraph_id | section_id | page_number | formatted | paper_id | header | section_type |
+|:---|---:|---:|---:|---:|:---|:---|:---|:---|
+| This paper demonstrates some good and poor practices for use with the {metacheck} R package. | 1 | 1 | 0 | NA | NA | to_err_is_human | Abstract | abstract |
+| In this study we examine the usefulness of metacheck to improve best practices. | 7 | 2 | 1 | NA | NA | to_err_is_human | \[div-01\] | intro |
 
 ### Return
 
@@ -230,15 +222,14 @@ Set `return` to one of “sentence”, “paragraph”, “section”, or “mat
 control what gets returned.
 
 ``` r
-
 text <- text_search(paper, "GitHub", 
                     return = "paragraph")
 ```
 
-| text_id | section_id | paragraph_id | text | formatted | page_number | paper_id | header | section_type |
-|:---|---:|---:|:---|:---|:---|:---|:---|:---|
-| NA | 2 | 3 | This paper demonstrates some good and poor practices for use with the {metacheck} R package. All data are simulated. The paper shows examples of (1) open and closed OSF links; (2a) citation of retracted papers, (2b) citations without a doi, (2c) citations with Pubpeer comments, (2d) citations in the FLoRA replication database, and (2e) missing/mismatched/incorrect citations and references; (3a) R files with code on GitHub that do not load libraries in one location, (3b) load files that are not shared in the repository, (3c) lack comments, and (3d) have absolute file paths; (4) imprecise reporting of non-significant p-values; (5) tests with and without effect sizes; (6) use of “marginally significant” to describe non-significant findings; (7) a power analysis reporting some of the essential attributes; and (8) retrieving information from preregistrations. | NA | NA | to_err_is_human | Abstract | abstract |
-| NA | 6 | 7 | Data and analysis code is available on GitHub from <https://github.com/Lakens/to_err_is_human> and from <https://researchbox.org/4377>. Data is also available from <https://osf.io/5tbm9> and code is also available from <https://osf.io/629bx>. | NA | NA | to_err_is_human | Data Availability | endnote |
+| text | text_id | paragraph_id | section_id | page_number | formatted | paper_id | header | section_type |
+|:---|:---|---:|---:|:---|:---|:---|:---|:---|
+| This paper demonstrates some good and poor practices for use with the {metacheck} R package. All data are simulated. The paper shows examples of (1) open and closed OSF links; (2a) citation of retracted papers, (2b) citations without a doi, (2c) citations with Pubpeer comments, (2d) citations in the FLoRA replication database, and (2e) missing/mismatched/incorrect citations and references; (3a) R files with code on GitHub that do not load libraries in one location, (3b) load files that are not shared in the repository, (3c) lack comments, and (3d) have absolute file paths; (4) imprecise reporting of non-significant p-values; (5) tests with and without effect sizes; (6) use of “marginally significant” to describe non-significant findings; (7) a power analysis reporting some of the essential attributes; and (8) retrieving information from preregistrations. | NA | 1 | 0 | NA | NA | to_err_is_human | Abstract | abstract |
+| Data and analysis code is available on GitHub from <https://github.com/Lak-ens/to_err_is_human> and from <https://researchbox.org/4377>. | NA | 8 | 5 | NA | NA | to_err_is_human | Data Availability | availability |
 
 ### Regex matches
 
@@ -249,25 +240,24 @@ are passed to [`grep()`](https://rdrr.io/r/base/grep.html), so
 `perl = TRUE` allows you to use more complex regex, like below.
 
 ``` r
-
 pattern <- "[a-zA-Z]\\S*\\s*(=|<)\\s*[0-9\\.,-]*\\d"
 text <- text_search(paper, pattern, return = "match", perl = TRUE)
 ```
 
-| text_id | section_id | paragraph_id | text | formatted | page_number | paper_id | header | section_type |
-|---:|---:|---:|:---|:---|---:|:---|:---|:---|
-| 19 | 7 | 8 | N=50 | NA | 2 | to_err_is_human | Power Analysis | method |
-| 21 | 8 | 10 | M=9.12 | NA | 3 | to_err_is_human | Results | results |
-| 21 | 8 | 10 | M=10.9 | NA | 3 | to_err_is_human | Results | results |
-| 21 | 8 | 10 | t(97.7)=2.9 | NA | 3 | to_err_is_human | Results | results |
-| 21 | 8 | 10 | p=0.005 | NA | 3 | to_err_is_human | Results | results |
-| 21 | 8 | 10 | d=0.59 | NA | 3 | to_err_is_human | Results | results |
-| 22 | 8 | 11 | M=5.06 | NA | 3 | to_err_is_human | Results | results |
-| 22 | 8 | 11 | M=4.5 | NA | 3 | to_err_is_human | Results | results |
-| 22 | 8 | 11 | t(97.2)=-1.96 | NA | 3 | to_err_is_human | Results | results |
-| 22 | 8 | 11 | p=0.152 | NA | 3 | to_err_is_human | Results | results |
-| 39 | 16 | 25 | pwr::pwr.t.test(n = 50 | NA | 2 | to_err_is_human | Footnote 2 | footnote |
-| 39 | 16 | 25 | power = 0.8 | NA | 2 | to_err_is_human | Footnote 2 | footnote |
+| text | text_id | paragraph_id | section_id | page_number | formatted | paper_id | header | section_type |
+|:---|---:|---:|---:|---:|:---|:---|:---|:---|
+| M = 9.12 | 15 | 4 | 3 | NA | NA | to_err_is_human | Procedure | method |
+| M = 10.9 | 15 | 4 | 3 | NA | NA | to_err_is_human | Procedure | method |
+| t(97.7) = 2.9 | 15 | 4 | 3 | NA | NA | to_err_is_human | Procedure | method |
+| p = 0.005 | 15 | 4 | 3 | NA | NA | to_err_is_human | Procedure | method |
+| d =0.59 | 15 | 4 | 3 | NA | NA | to_err_is_human | Procedure | method |
+| M = 5.06 | 16 | 5 | 3 | NA | NA | to_err_is_human | Procedure | method |
+| M = 4.5 | 16 | 5 | 3 | NA | NA | to_err_is_human | Procedure | method |
+| t(97.2) = -1.96 | 16 | 5 | 3 | NA | NA | to_err_is_human | Procedure | method |
+| p =0.152 | 16 | 5 | 3 | NA | NA | to_err_is_human | Procedure | method |
+| N = 50 | 24 | 11 | 7 | NA | NA | to_err_is_human | Power Analysis | annex |
+| pwr::pwr.t.test(n = 50 | 27 | 14 | 8 | NA | NA | to_err_is_human | Results | annex |
+| power = 0.8 | 27 | 14 | 8 | NA | NA | to_err_is_human | Results | annex |
 
 ### Expand Text
 
@@ -277,7 +267,6 @@ or a module with
 [`text_expand()`](https://scienceverse.github.io/metacheck/reference/text_expand.md).
 
 ``` r
-
 marginal <- text_search(paper, "marginal") |>
   text_expand(paper, plus = 1, minus = 1)
 
@@ -292,52 +281,77 @@ marginal[, c("text", "expanded")]
 
 ## Large Language Models
 
-You can query the extracted text of papers with LLMs using any models
-supported by [ellmer](https://ellmer.tidyverse.org/).
+**LLM use is entirely optional.** Metacheck follows the principle that
+AI should be opt-in, restricted to classification of existing text, and
+used only where it provides clear benefits that cannot be achieved with
+other methods such as regular expressions. The vast majority of modules
+work without any LLM at all.
 
-### Setup
+Currently, the only module that will unlock substantial extra
+functionality when an lmm is used is the **`power` module**, which can
+read sentences about power analyses and extract structured information
+(test type, sample size, effect size, etc.) that would be difficult to
+capture reliably with regular expressions alone.
 
-You will need to get **your own API key** (the one below is a fake
-example) from your preferred provider
-(e.g. <https://console.groq.com/keys>). To avoid having to type it out,
-add it to the .Renviron file in the following format (you can use
-[`usethis::edit_r_environ()`](https://usethis.r-lib.org/reference/edit.html)
-to access the .Renviron file).
+### Option 1: Run a model locally with Ollama (recommended)
 
-``` bash
-GROQ_GPT_KEY="sk-proj-abcdefghijklmnopqrs0123456789ABCDEFGHIJKLMNOPQRS"
-```
+The recommended approach is to run an AI model on your own computer
+using [Ollama](https://ollama.com), a free open-source tool. This means:
+
+- No API key or account required
+- No data leaves your computer
+- No usage costs or rate limits
+
+The trade-off is speed — your computer does the processing, so it is
+slower than a cloud API, especially the first time a model loads. See
+the dedicated [Local AI with
+Ollama](https://scienceverse.github.io/metacheck/articles/ollama.md)
+article for full setup instructions. In brief:
+
+1.  Download and install Ollama from <https://ollama.com/download>
+2.  Pull a model, e.g. `ollama pull llama3.2` in a terminal
+3.  In R, set metacheck to use it:
 
 ``` r
-
-# useful if you aren't sure where this file is
-usethis::edit_r_environ()
+llm_model("ollama/llama3.2")
+llm_use(TRUE)
 ```
 
-You can get or set the default LLM model with
-[`llm_model()`](https://scienceverse.github.io/metacheck/reference/llm_model.md)
-and access a list of the current available models using
-[`llm_model_list()`](https://scienceverse.github.io/metacheck/reference/llm_model_list.md).
+### Option 2: Use a cloud API
+
+You can also use any model supported by
+[ellmer](https://ellmer.tidyverse.org/) via a cloud API. This is faster
+but requires an account and API key with a provider, and sends text to
+an external service.
+
+Get an API key from your preferred provider
+(e.g. <https://console.groq.com/keys>) and add it to your `.Renviron`
+file (use
+[`usethis::edit_r_environ()`](https://usethis.r-lib.org/reference/edit.html)
+to open it):
+
+``` bash
+GROQ_API_KEY="sk-proj-abcdefghijklmnopqrs0123456789ABCDEFGHIJKLMNOPQRS"
+```
+
+When metacheck starts it checks for API keys in `.Renviron` and sets the
+model automatically. You can also set it manually:
+
+``` r
+llm_model()                              # check which model is currently set
+llm_model("groq")                        # use ellmer's default Groq model
+llm_model("groq/llama-3.3-70b-versatile") # use a specific model
+```
+
+A list of available models for a provider:
 
 | platform | id | object | owned_by | context_window | max_completion_tokens | created_at |
 |:---|:---|:---|:---|---:|---:|:---|
-| groq | groq/compound | model | Groq | 131072 | 8192 | 2025-09-04 |
-| groq | meta-llama/llama-prompt-guard-2-86m | model | Meta | 512 | 512 | 2025-05-30 |
+| groq | canopylabs/orpheus-arabic-saudi | model | Canopy Labs | 4000 | 50000 | 2025-12-17 |
+| groq | openai/gpt-oss-safeguard-20b | model | OpenAI | 131072 | 65536 | 2025-10-29 |
+| groq | llama-3.1-8b-instant | model | Meta | 131072 | 131072 | 2023-09-03 |
+| groq | meta-llama/llama-4-scout-17b-16e-instruct | model | Meta | 131072 | 8192 | 2025-04-05 |
 | groq | allam-2-7b | model | SDAIA | 4096 | 4096 | 2025-01-23 |
-| groq | qwen/qwen3-32b | model | Alibaba Cloud | 131072 | 40960 | 2025-05-28 |
-| groq | llama-3.3-70b-versatile | model | Meta | 131072 | 32768 | 2024-12-06 |
-
-When you start metacheck for the first time, it will check for relevant
-API keys in your Renviron and automatically set the model to use. You
-can get or set this with
-[`llm_model()`](https://scienceverse.github.io/metacheck/reference/llm_model.md).
-
-``` r
-
-llm_model() # get current model
-llm_model("groq") # set to ellmer's default groq model
-llm_model("groq/llama-3.3-70b-versatile") # set to specific openai model
-```
 
 ### LLM Queries
 
@@ -355,7 +369,6 @@ to determine if this is an a priori power analysis, and if so, to return
 some relevant values in a JSON-structured format.
 
 ``` r
-
 power <- psychsci[1:10] |>
   # sentences containing the word power
   text_search("power") |>
@@ -393,7 +406,6 @@ deals with it gracefully (sets an ‘error’ column to “parsing error”) if
 there are errors. It also fixes column data types, if possible.
 
 ``` r
-
 llm_response <- json_expand(llm_power, "answer") |>
   dplyr::select(text, apriori:es_metric)
 ```
@@ -417,38 +429,57 @@ llm_response <- json_expand(llm_power, "answer") |>
 ### Rate Limiting
 
 The [`llm()`](https://scienceverse.github.io/metacheck/reference/llm.md)
-function makes a separate query [^1] for each row in a data frame from
+function makes a separate query for each row in a data frame from
 [`text_search()`](https://scienceverse.github.io/metacheck/reference/text_search.md).
-To prevent accidentally making way too many calls because of errors in
-your code, we set the default limits to 30 queries at a time, but you
-can change this:
+(Using parallel functions in ellmer can be more efficient but currently
+does not associate structured output correctly when inputs may have 0 or
+more outputs.) To prevent accidentally making too many calls because of
+errors in your code, a default limit of 30 queries is set, which you can
+change:
 
 ``` r
-
 llm_max_calls(30)
 ```
 
-## OSF Functions
+## Repository Functions
 
-Metacheck provides several function to help you assess resources
-archived on the Open Science Framework.
+Metacheck can find links to research repositories in a paper, retrieve
+the list of files they contain, and download those files for further
+checking. Four online services are supported, as well as local folders
+on your own computer.
+
+| Repository | Link function | Info / file list | Download |
+|----|----|----|----|
+| OSF | [`osf_links()`](https://scienceverse.github.io/metacheck/reference/osf_links.md) | [`osf_info()`](https://scienceverse.github.io/metacheck/reference/osf_info.md) | [`osf_file_download()`](https://scienceverse.github.io/metacheck/reference/osf_file_download.md) |
+| GitHub | [`github_links()`](https://scienceverse.github.io/metacheck/reference/github_links.md) | [`github_files()`](https://scienceverse.github.io/metacheck/reference/github_files.md), [`github_info()`](https://scienceverse.github.io/metacheck/reference/github_info.md) | — |
+| ResearchBox | [`rbox_links()`](https://scienceverse.github.io/metacheck/reference/rbox_links.md) | [`rbox_info()`](https://scienceverse.github.io/metacheck/reference/rbox_info.md) | [`rbox_file_download()`](https://scienceverse.github.io/metacheck/reference/rbox_file_download.md) |
+| Zenodo | [`zenodo_links()`](https://scienceverse.github.io/metacheck/reference/zenodo_links.md) | [`zenodo_info()`](https://scienceverse.github.io/metacheck/reference/zenodo_info.md) | [`zenodo_file_download()`](https://scienceverse.github.io/metacheck/reference/zenodo_file_download.md) |
+| Local folder | — | [`local_files()`](https://scienceverse.github.io/metacheck/reference/local_files.md) | — |
+
+The `repo_check` and `code_check` modules use all of these
+automatically: `repo_check` finds all repository links in a paper and
+builds a unified file list, and `code_check` then analyses any code
+files in that list. See the
+[GitHub](https://scienceverse.github.io/metacheck/articles/github.md)
+and [Local
+Files](https://scienceverse.github.io/metacheck/articles/local-files.md)
+articles for more detail on those two sources.
 
 ### OSF Links and IDs
 
 Get any OSF links from a paper or list of papers.
 
 ``` r
-
 links <- osf_links(psychsci)
 
 links$href |> unique() |> head()
 ```
 
-    #> [1] "https://osf.io/e2aks/"                                           
-    #> [2] "https://osf.io/tvyxz/wiki/view/"                                 
-    #> [3] "https://osf.io/t9j8e/?view_only=f171281f212f4435917b16a9e581a73b"
-    #> [4] "https://osf.io/tvyxz/wiki/1.%20View%20the%20Badges/"             
-    #> [5] "https://osf.io/eky4s/"                                           
+    #> [1] "https://osf.io/e2aks/"                                            
+    #> [2] "https://osf.io/tvyxz/wiki/view/"                                  
+    #> [3] "https://osf.io/t9j8e/? view_only=f171281f212f4435917b16a9e581a73b"
+    #> [4] "https://osf.io/tvyxz/wiki/1. %20View%20the%20Badges/"             
+    #> [5] "https://osf.io/eky4s/"                                            
     #> [6] "https://osf.io/xgwhk"
 
 You can see that some of them have rogue spaces or view-only links. The
@@ -459,7 +490,6 @@ as well as the 25-character waterbutler IDs) and converts them to short
 IDs.
 
 ``` r
-
 osf_ids <- osf_check_id(links$href) |> unique()
 
 head(osf_ids)
@@ -479,7 +509,6 @@ osf_type (nodes, files, preprints, registrations, users, set to
 the ), whether it is public
 
 ``` r
-
 info <- osf_info(links[1:6, "href"])
 
 info[, c("href","osf_id", "osf_type", "public", "category")]
@@ -491,8 +520,8 @@ info[, c("href","osf_id", "osf_type", "public", "category")]
     #> 1 https://osf.io/e2aks/                          e2aks  nodes    TRUE   project 
     #> 2 https://osf.io/tvyxz/wiki/view/                tvyxz  nodes    TRUE   project 
     #> 3 https://osf.io/tvyxz/wiki/view/                tvyxz  nodes    TRUE   project 
-    #> 4 https://osf.io/t9j8e/?view_only=f171281f212f4… t9j8e  private  FALSE  NA      
-    #> 5 https://osf.io/tvyxz/wiki/1.%20View%20the%20B… tvyxz  nodes    TRUE   project 
+    #> 4 https://osf.io/t9j8e/? view_only=f171281f212f… t9j8e  private  FALSE  NA      
+    #> 5 https://osf.io/tvyxz/wiki/1. %20View%20the%20… tvyxz  nodes    TRUE   project 
     #> 6 https://osf.io/eky4s/                          eky4s  nodes    TRUE   project
 
 For now, the OSF API does not let us retrieve any information about
@@ -504,7 +533,6 @@ You can set the argument `recursive = TRUE` to also retrieve information
 about all nodes and files that are contained by the OSF link.
 
 ``` r
-
 osf_api_calls(0)
 all_contents <- osf_info(links$href[1], recursive = TRUE)
 n_calls <- osf_api_calls()
@@ -517,7 +545,6 @@ reset. You can see that the project <https://osf.io/e2aks/> had 3 nodes
 and 6 files, which required 10 API calls.
 
 ``` r
-
 sum(all_contents$osf_type == "nodes")
 ```
 
@@ -539,7 +566,6 @@ component names and downloading all files smaller than `max_file_size`
 to 100 MB).
 
 ``` r
-
 osf_file_download(osf_id = "pngda",
                   download_to = ".", 
                   max_file_size = 1, 
@@ -551,7 +577,6 @@ osf_file_download(osf_id = "pngda",
     Downloading files [=====================] 24/24 00:00:35
 
 ``` r
-
 list.files("pngda", recursive = TRUE)
 ```
 
@@ -579,6 +604,46 @@ list.files("pngda", recursive = TRUE)
     #> [22] "Data/Raw Data/README"                                
     #> [23] "README"
 
+### GitHub, ResearchBox, and Zenodo
+
+The same pattern — find links, retrieve file lists, optionally download
+— applies to the other three services.
+
+``` r
+# GitHub
+gh_links  <- github_links(paper)
+gh_files  <- github_files(gh_links$href, recursive = TRUE)
+
+# ResearchBox
+rb_links  <- rbox_links(paper)
+rb_info   <- rbox_info(rb_links)
+
+# Zenodo
+z_links   <- zenodo_links(paper)
+z_info    <- zenodo_info(z_links)
+```
+
+See the
+[GitHub](https://scienceverse.github.io/metacheck/articles/github.md)
+article for a detailed walkthrough of the GitHub functions.
+
+### Local files
+
+If files are not in an online repository — for example because you
+downloaded a zip archive from a reviewer submission, or because the
+authors used a service not yet supported — you can point metacheck at a
+local folder instead.
+
+``` r
+result <- module_run(test_paper(), "code_check",
+                     local_path = "path/to/downloaded/files")
+```
+
+See the [Local
+Files](https://scienceverse.github.io/metacheck/articles/local-files.md)
+article for full details, including how to handle cloud-synced folders
+and multiple paths at once.
+
 ## Modules
 
 metacheck is designed modularly, so you can add modules to check for
@@ -590,7 +655,6 @@ will share more modules.
 You can see the list of built-in modules with the function below.
 
 ``` r
-
 module_list()
 ```
 
@@ -639,15 +703,14 @@ module_list()
 To run a built-in module on a paper, you can reference it by name.
 
 ``` r
-
 p <- module_run(paper, "all_p_values")
 ```
 
-| text_id | section_id | paragraph_id | text | formatted | page_number | paper_id | header | section_type | p_comp | p_value |
-|---:|---:|---:|:---|:---|---:|:---|:---|:---|:---|---:|
-| 21 | 8 | 10 | p=0.005 | NA | 3 | to_err_is_human | Results | results | = | 0.005 |
-| 22 | 8 | 11 | p=0.152 | NA | 3 | to_err_is_human | Results | results | = | 0.152 |
-| 23 | 8 | 12 | p \> .05 | NA | 3 | to_err_is_human | Results | results | \> | 0.050 |
+| text | text_id | paragraph_id | section_id | page_number | formatted | paper_id | header | section_type | p_comp | p_value |
+|:---|---:|---:|---:|---:|:---|:---|:---|:---|:---|---:|
+| p = 0.005 | 15 | 4 | 3 | NA | NA | to_err_is_human | Procedure | method | = | 0.005 |
+| p =0.152 | 16 | 5 | 3 | NA | NA | to_err_is_human | Procedure | method | = | 0.152 |
+| p \> .05 | 17 | 6 | 3 | NA | There was no effect of experience on the reduction in errors when using the tool (p \> .05), as the correlation was non-significant (Figure 2). | to_err_is_human | Procedure | method | \> | 0.050 |
 
 ### Creating modules
 
@@ -664,13 +727,8 @@ You can generate a report from any set of modules. Check the function
 help for the default set.
 
 ``` r
-
 report(paper, output_format = "qmd")
 ```
 
 See the [example
 report](https://scienceverse.github.io/metacheck/report-example.md).
-
-[^1]: Using the parallel functions in ellmer can be more efficient, but
-    currently doesn’t do a good job of associating structured output to
-    the input text when input may have 0+ outputs.
