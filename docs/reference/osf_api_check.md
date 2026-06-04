@@ -5,7 +5,10 @@ Check the status of the OSF API server.
 ## Usage
 
 ``` r
-osf_api_check(osf_api = getOption("metacheck.osf.api"))
+osf_api_check(
+  osf_api = getOption("metacheck.osf.api"),
+  on_error = c("stop", "warn", "ignore")
+)
 ```
 
 ## Arguments
@@ -13,6 +16,10 @@ osf_api_check(osf_api = getOption("metacheck.osf.api"))
 - osf_api:
 
   the OSF API to use (e.g., "https://api.osf.io/v2")
+
+- on_error:
+
+  whether to stop, warn, or ignore errors
 
 ## Value
 
@@ -38,5 +45,5 @@ OSF_PAT="replace-with-your-token-string"
 
 ``` r
 osf_api_check()
-#> [1] "ok"
+#> [1] "OK"
 ```

@@ -34,7 +34,7 @@
 
     <a class="navbar-brand me-2" href="../index.html">metacheck</a>
 
-    <small class="nav-text text-danger me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Unreleased version">0.0.0.9106</small>
+    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Released version">0.0.1.0</small>
 
 
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -85,10 +85,10 @@ how scientists design studies, report results, and implement open
 science practices. For example, researchers often use invalid and
 unreliable measures <span class="citation">(Goos et al. 2024)</span>,
 misinterpret non-significant results <span class="citation">(Aczel et
-al. 2018)</span>, write insufficiently specific preregistrations <span class="citation">(Akker et al. 2024)</span>, make mistakes in power
-analyses <span class="citation">(Thibault et al. 2024)</span>, and
-misuse Bayes factors <span class="citation">(Tendeiro et al.
-2024)</span>.</p>
+al. 2018)</span>, write insufficiently specific preregistrations <span class="citation">(<span class="nocase">Akker et al.</span> 2024)</span>,
+make mistakes in power analyses <span class="citation">(Thibault et al.
+2024)</span>, and misuse Bayes factors <span class="citation">(Tendeiro
+et al. 2024)</span>.</p>
 <p>Despite the growing availability of best practices, their adoption
 remains slow <span class="citation">(Sharpe 2013)</span>. While
 scientists are responsible for staying informed, time constraints and
@@ -119,7 +119,7 @@ done by the reference manager <a href="https://www.zotero.org/blog/retracted-ite
 made it increasingly viable to implement automated checks with
 sufficient accuracy, supporting broader adoption and adherence to best
 practices in scientific manuscripts. For example, the GROBID machine
-learning library <span class="citation">(<span>“GROBID”</span>
+learning library <span class="citation">(<em>GROBID</em>
 2008--2025)</span> can turn scientific PDFs into structured text files
 from which specific content can be extracted. While many automated
 checks for best practices will require only simple text matching based
@@ -212,22 +212,67 @@ rates when run on manually coded ground truth files.</p>
 <div class="sourceCode" id="cb3"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="co"># run the module on 250 open access papers from Psychological Science</span></span>
 <span><span class="va">mo</span> <span class="op">&lt;-</span> <span class="fu"><a href="../reference/module_run.html">module_run</a></span><span class="op">(</span><span class="va">psychsci</span>, <span class="st">"stat_effect_size"</span><span class="op">)</span></span>
-<span></span>
 <span><span class="fu"><a href="https://rdrr.io/r/utils/head.html" class="external-link">head</a></span><span class="op">(</span><span class="va">mo</span><span class="op">$</span><span class="va">summary_table</span><span class="op">)</span></span></code></pre></div>
-<pre><code><span><span class="co">##           paper_id ttests_with_es ttests_without_es Ftests_with_es</span></span>
-<span><span class="co">## 1 0956797613520608              0                 0              5</span></span>
-<span><span class="co">## 2 0956797614522816              0                 5             20</span></span>
-<span><span class="co">## 3 0956797614527830              0                 0              0</span></span>
-<span><span class="co">## 4 0956797614557697              0                 1              5</span></span>
-<span><span class="co">## 5 0956797614560771              2                 0              0</span></span>
-<span><span class="co">## 6 0956797614566469              0                 0              0</span></span>
-<span><span class="co">##   Ftests_without_es</span></span>
-<span><span class="co">## 1                 0</span></span>
-<span><span class="co">## 2                 0</span></span>
-<span><span class="co">## 3                 0</span></span>
-<span><span class="co">## 4                 0</span></span>
-<span><span class="co">## 5                 0</span></span>
-<span><span class="co">## 6                 0</span></span></code></pre>
+<table class="table">
+<colgroup>
+<col width="20%">
+<col width="18%">
+<col width="21%">
+<col width="18%">
+<col width="21%">
+</colgroup>
+<thead><tr class="header">
+<th align="left">paper_id</th>
+<th align="right">ttests_with_es</th>
+<th align="right">ttests_without_es</th>
+<th align="right">Ftests_with_es</th>
+<th align="right">Ftests_without_es</th>
+</tr></thead>
+<tbody>
+<tr class="odd">
+<td align="left">0956797613520608</td>
+<td align="right">0</td>
+<td align="right">0</td>
+<td align="right">5</td>
+<td align="right">0</td>
+</tr>
+<tr class="even">
+<td align="left">0956797614522816</td>
+<td align="right">0</td>
+<td align="right">5</td>
+<td align="right">20</td>
+<td align="right">0</td>
+</tr>
+<tr class="odd">
+<td align="left">0956797614527830</td>
+<td align="right">0</td>
+<td align="right">0</td>
+<td align="right">0</td>
+<td align="right">0</td>
+</tr>
+<tr class="even">
+<td align="left">0956797614557697</td>
+<td align="right">0</td>
+<td align="right">1</td>
+<td align="right">5</td>
+<td align="right">0</td>
+</tr>
+<tr class="odd">
+<td align="left">0956797614560771</td>
+<td align="right">2</td>
+<td align="right">0</td>
+<td align="right">0</td>
+<td align="right">0</td>
+</tr>
+<tr class="even">
+<td align="left">0956797614566469</td>
+<td align="right">0</td>
+<td align="right">0</td>
+<td align="right">0</td>
+<td align="right">0</td>
+</tr>
+</tbody>
+</table>
 <div class="section level2">
 <h2 id="future-plans">Future Plans<a class="anchor" aria-label="anchor" href="#future-plans"></a>
 </h2>
@@ -236,11 +281,12 @@ welcome anyone who wants to collaborate with us on building and
 validating new modules. In addition to the modules demonstrated in the
 four blog posts, future modules could be developed to check if open data
 and materials are Findable, Accessible, Interoperable, and Reusable
-(FAIR) <span class="citation">(Wilkinson et al. 2016)</span>, to perform
-checks on specific types of articles (e.g., meta-analyses), check
-journal-specific reporting guidelines, or perform checks on the
-references. We see great potential for new modules; the only limitation
-is your own creativity and your engineering skills.</p>
+(FAIR) <span class="citation">(<span class="nocase">Wilkinson et
+al.</span> 2016)</span>, to perform checks on specific types of articles
+(e.g., meta-analyses), check journal-specific reporting guidelines, or
+perform checks on the references. We see great potential for new
+modules; the only limitation is your own creativity and your engineering
+skills.</p>
 <p>We are excited to continue developing metacheck in close
 collaboration with the broader scientific community and welcome
 feedback, suggestions, and contributions. You can explore metacheck on
@@ -272,21 +318,19 @@ Transparency Check, led by René Bekkers, and funded by a <a href="https://tdcc.
 grant</a> from the Dutch Research Council (NWO). Our funded project
 priorities are described in more detail in our grant proposal, available
 here: <a href="https://osf.io/cpv4d/" class="external-link uri">https://osf.io/cpv4d/</a>.</p>
-<div id="refs" class="references csl-bib-body hanging-indent" entry-spacing="0">
+<div id="refs" class="references csl-bib-body hanging-indent">
 <div id="ref-aczel2018quantifying" class="csl-entry">
-Aczel, Balazs, Bence Palfi, Aba Szollosi, Marton Kovacs, Barnabas
-Szaszi, Peter Szecsi, Mark Zrubka, Quentin F Gronau, Don van den Bergh,
-and Eric-Jan Wagenmakers. 2018. <span>“Quantifying Support for the Null
-Hypothesis in Psychology: An Empirical Investigation.”</span>
-<em>Advances in Methods and Practices in Psychological Science</em> 1
-(3): 357–66.
+Aczel, Balazs, Bence Palfi, Aba Szollosi, et al. 2018.
+<span>“Quantifying Support for the Null Hypothesis in Psychology: An
+Empirical Investigation.”</span> <em>Advances in Methods and Practices
+in Psychological Science</em> 1 (3): 357–66.
 </div>
 <div id="ref-van2024potential" class="csl-entry">
-Akker, Olmo R van den, Marjan Bakker, Marcel ALM van Assen, Charlotte R
-Pennington, Leone Verweij, Mahmoud M Elsherif, Aline Claesen, et al.
-2024. <span>“The Potential of Preregistration in Psychology: Assessing
-Preregistration Producibility and Preregistration-Study
-Consistency.”</span> <em>Psychological Methods</em>.
+<span class="nocase">Akker, Olmo R van den, Marjan Bakker, Marcel ALM
+van Assen, et al.</span> 2024. <span>“The Potential of Preregistration
+in Psychology: Assessing Preregistration Producibility and
+Preregistration-Study Consistency.”</span> <em>Psychological
+Methods</em>.
 </div>
 <div id="ref-dexter2017narrative" class="csl-entry">
 Dexter, Franklin, and Steven L Shafer. 2017. <span>“Narrative Review of
@@ -296,16 +340,16 @@ Articles.”</span> <em>Anesthesia &amp; Analgesia</em> 124 (3): 943–47.
 </div>
 <div id="ref-goos2024assessing" class="csl-entry">
 Goos, Cas, Marjan Bakker, Jelte M Wicherts, and Michèle B Nuijten. 2024.
-<span>“Assessing Reliable and Valid Measurement as a Prerequisite for
-Informative Replications in Psychology.”</span>
+<em>Assessing Reliable and Valid Measurement as a Prerequisite for
+Informative Replications in Psychology</em>.
 </div>
 <div id="ref-GROBID" class="csl-entry">
-<span>“GROBID.”</span> 2008--2025. <a href="https://github.com/kermitt2/grobid" class="external-link uri">https://github.com/kermitt2/grobid</a>; GitHub.
+<em>GROBID</em>. 2008--2025. <a href="https://github.com/kermitt2/grobid" class="external-link uri">Https://github.com/kermitt2/grobid</a>; GitHub.
 </div>
 <div id="ref-lakens_justification_2022" class="csl-entry">
 Lakens, Daniël. 2022. <span>“Sample <span>Size
-Justification</span>.”</span> Edited by Don van Ravenzwaaij.
-<em>Collabra: Psychology</em> 8 (1): 33267. <a href="https://doi.org/10.1525/collabra.33267" class="external-link">https://doi.org/10.1525/collabra.33267</a>.
+Justification</span>.”</span> <em>Collabra: Psychology</em> 8 (1):
+33267. <a href="https://doi.org/10.1525/collabra.33267" class="external-link">https://doi.org/10.1525/collabra.33267</a>.
 </div>
 <div id="ref-sharpe_why_2013" class="csl-entry">
 Sharpe, Donald. 2013. <span>“Why the Resistance to Statistical
@@ -325,11 +369,10 @@ Sample Size Calculations Performed Using g* Power.”</span>
 <em>medRxiv</em>, 2024–07.
 </div>
 <div id="ref-wilkinson_fair" class="csl-entry">
-Wilkinson, Mark D., Michel Dumontier, IJsbrand Jan Aalbersberg,
-Gabrielle Appleton, Myles Axton, Arie Baak, Niklas Blomberg, et al.
-2016. <span>“The <span>FAIR Guiding Principles</span> for Scientific
-Data Management and Stewardship.”</span> <em>Scientific Data</em> 3 (1):
-1–9. <a href="https://doi.org/10.1038/sdata.2016.18" class="external-link">https://doi.org/10.1038/sdata.2016.18</a>.
+<span class="nocase">Wilkinson, Mark D., Michel Dumontier, IJsbrand Jan
+Aalbersberg, et al.</span> 2016. <span>“The <span>FAIR Guiding
+Principles</span> for Scientific Data Management and
+Stewardship.”</span> <em>Scientific Data</em> 3 (1): 1–9. <a href="https://doi.org/10.1038/sdata.2016.18" class="external-link">https://doi.org/10.1038/sdata.2016.18</a>.
 </div>
 </div>
 </div>

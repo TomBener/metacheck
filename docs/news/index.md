@@ -1,5 +1,19 @@
 # Changelog
 
+## metacheck 0.0.1.0
+
+Our beta release! We’ve made so many changes, and we’re sure there are
+still many bugs to ctach and things to improve, but we need other people
+to start using metacheck to help us.
+
+## metacheck 0.0.0.9107
+
+- code_check now checks if code is parseable (thanks
+  [@Raphael-Merz](https://github.com/Raphael-Merz)!)
+- many new `code_*()` functions abstracted out from the code_check
+  module. These may eventually move to a new package specifically for
+  codecheck
+
 ## metacheck 0.0.0.9106
 
 - Added functions from svutils back in.
@@ -11,7 +25,8 @@
   `local_path`
 - New
   [`local_files()`](https://scienceverse.github.io/metacheck/reference/local_files.md)
-  function
+  function (thanks [@lakens](https://github.com/lakens)!)
+- Updated vignettes
 
 ## metacheck 0.0.0.9105
 

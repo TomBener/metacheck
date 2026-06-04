@@ -5,12 +5,12 @@ Retrieve info from the OSF by ID
 ## Usage
 
 ``` r
-.osf_info(osf_ids, pb = NULL)
+.osf_info(osf_id, pb = NULL)
 ```
 
 ## Arguments
 
-- osf_ids:
+- osf_id:
 
   an vector of OSF IDs or URLs
 

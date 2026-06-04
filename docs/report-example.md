@@ -1,5 +1,5 @@
-[MetaCheck](http://www.scienceverse.org/metacheck) version 0.0.0.9106  
-Report Created: 2026-06-01  
+[MetaCheck](http://www.scienceverse.org/metacheck) version 0.0.1.0  
+Report Created: 2026-06-04  
 DOI:
 [10.32614/10.5281/zenodo.2669586](https://doi.org/10.32614/10.5281/zenodo.2669586)
 
@@ -44,37 +44,38 @@ suggestions for improvement or feedback can be sent to
 
 ## Summary
 
-- ⚠️ [Funding Check](#funding-check): No funding statement was
-  detected.  
 - ✅️ [Open Practices Check](#open-practices-check): Shared data and code
   detected.  
 - ✅️ [COI Check](#coi-check): A conflict of interest statement was
   detected.  
-- ⚠️ [Power Analysis Check](#power-analysis-check): We detected 3
-  potential power analyses.  
+- ⚠️ [Funding Check](#funding-check): No funding statement was
+  detected.  
 - ℹ️ [Preregistration Check](#preregistration-check): We found 2
   preregistrations.  
+- ⚠️ [Power Analysis Check](#power-analysis-check): We detected 3
+  potential power analyses.  
 - ⚠️ [Exact P-Values](#exact-p-values): We found 1 imprecise *p* value
   out of 3 detected *p* values.  
-- ⚠️ [Marginal Significance](#marginal-significance): You described 2
-  effects with terms related to ‘marginally significant’.  
-- ⚠️ [StatCheck](#statcheck): 1 possible error in t-tests or F-tests  
 - 🔍 [Non-Significant P Value Check](#non-significant-p-value-check): We
   found 2 non-significant p values that should be checked for
   appropriate interpretation.  
+- ⚠️ [Marginal Significance](#marginal-significance): You described 2
+  effects with terms related to ‘marginally significant’.  
 - 🔍 [Effect Sizes in t-tests and
   F-tests](#effect-sizes-in-t-tests-and-f-tests): We found 1 t-test
   and/or F-test where effect sizes are not reported.  
+- ⚠️ [StatCheck](#statcheck): 1 possible error in t-tests or F-tests  
 - 🔍 [Repository Check](#repository-check):
   - We found 14 files in 3 repositories.
   - We found 1 README file and 2 repositories without READMEs.
   - We found 1 archive file.  
 - 🔍 [Code Check](#code-check):
-  - We found 4 R, SAS, SPSS, or Stata code files.
+  - We found 4 R, 0 SAS, 0 SPSS, and 0 Stata code files.
   - All your code files had comments.
-  - 2 files loaded in the code were missing in the repository.
+  - 4 files loaded in the code were missing in the repository.
   - Absolute file paths were found.
-  - Libraries/imports were loaded in multiple places.  
+  - Libraries/imports were loaded in multiple places.
+  - No parsing issues of R-type files were found.  
 - 🔍 [Reference Accuracy](#reference-accuracy): We checked 5 references
   in CrossRef and found entries for 3.  
 - ℹ️ [Replication Check](#replication-check): We found 1 replication for
@@ -87,27 +88,6 @@ suggestions for improvement or feedback can be sent to
   provided for 5 references
 
 ## General Modules
-
-### ⚠️ Funding Check
-
-No funding statement was detected.
-
-No funding statement was detected. Consider adding one.
-
-NoteHow It Works
-
-Identify and extract funding statements.
-
-The Funding Check module uses regular expressions to check sentences for
-words related to funding statements. It will return the sentences in
-which the conflict of interest statement was found.
-
-The function incorporates code from
-[rtransparent](https://github.com/serghiou/rtransparent), which is no
-longer maintained. For their validation, see [the
-paper](https://doi.org/10.1371/journal.pbio.3001107).
-
-This module was developed by Daniel Lakens
 
 ### ✅️ Open Practices Check
 
@@ -192,7 +172,87 @@ paper](https://doi.org/10.1371/journal.pbio.3001107).
 
 This module was developed by Daniel Lakens
 
+### ⚠️ Funding Check
+
+No funding statement was detected.
+
+No funding statement was detected. Consider adding one.
+
+NoteHow It Works
+
+Identify and extract funding statements.
+
+The Funding Check module uses regular expressions to check sentences for
+words related to funding statements. It will return the sentences in
+which the conflict of interest statement was found.
+
+The function incorporates code from
+[rtransparent](https://github.com/serghiou/rtransparent), which is no
+longer maintained. For their validation, see [the
+paper](https://doi.org/10.1371/journal.pbio.3001107).
+
+This module was developed by Daniel Lakens
+
 ## Method Modules
+
+### ℹ️ Preregistration Check
+
+We found 2 preregistrations.
+
+View detailed feedback
+
+We found 2 preregistrations.
+
+Meta-scientific research has shown that deviations from preregistrations
+are often not reported or checked, and that the most common deviations
+concern the sample size. We recommend manually checking the full
+preregistration at the links above, and have provided the preregistered
+sample size.
+
+TipFull Preregistration
+
+TipLearn More
+
+For metascientific articles demonstrating the rate of deviations from
+preregistrations, see:
+
+van den Akker O, Bakker M, van Assen M, Pennington C, Verweij L,
+Elsherif M, Claesen A, Gaillard S, Yeung S, Frankenberger J, Krautter K,
+Cockcroft J, Kreuer K, Evans T, Heppel F, Schoch S, Korbmacher M, Yamada
+Y, Albayrak-Aydemir N, Wicherts J (2024). “The potential of
+preregistration in psychology: Assessing preregistration producibility
+and preregistration-study consistency.” *Psychological Methods*.
+[doi:10.1037/met0000687](https://doi.org/10.1037/met0000687).
+
+For educational material on how to report deviations from
+preregistrations, see:
+
+Lakens, Daniël (2024). “When and How to Deviate From a Preregistration.”
+*Collabra: Psychology*, **10**(1), 117094.
+[doi:10.1525/collabra.117094](https://doi.org/10.1525/collabra.117094).
+
+NoteHow It Works
+
+Retrieve information from preregistrations in a standardised way, and
+make them easier to check.
+
+The Preregistration Check module identifies preregistrations on the OSF
+and AsPredicted based on links in the manuscript, retrieves the
+preregistration text, and organizes the information into a template. The
+module then uses regular expressions to identify text from AsPredicted,
+and the API to retrieve text from the OSF. The information in the
+preregistration is returned.
+
+The module can’t extract information from non-structured preregistration
+templates (i.e., where the preregistration is uploaded in a single text
+field) and it can’t retrieve information in preregistrations that are
+stored as text documents on the OSF.
+
+If you want to extend the package to be able to download information
+from other preregistration sites, reach out to the Metacheck development
+team.
+
+This module was developed by Daniel Lakens and Lisa DeBruine
 
 ### ⚠️ Power Analysis Check
 
@@ -262,65 +322,6 @@ articles in Psychological Science.
 This module was developed by Lisa DeBruine, Daniel Lakens and Cristian
 Mesquida
 
-### ℹ️ Preregistration Check
-
-We found 2 preregistrations.
-
-View detailed feedback
-
-We found 2 preregistrations.
-
-Meta-scientific research has shown that deviations from preregistrations
-are often not reported or checked, and that the most common deviations
-concern the sample size. We recommend manually checking the full
-preregistration at the links above, and have provided the preregistered
-sample size.
-
-TipFull Preregistration
-
-TipLearn More
-
-For metascientific articles demonstrating the rate of deviations from
-preregistrations, see:
-
-van den Akker O, Bakker M, van Assen M, Pennington C, Verweij L,
-Elsherif M, Claesen A, Gaillard S, Yeung S, Frankenberger J, Krautter K,
-Cockcroft J, Kreuer K, Evans T, Heppel F, Schoch S, Korbmacher M, Yamada
-Y, Albayrak-Aydemir N, Wicherts J (2024). “The potential of
-preregistration in psychology: Assessing preregistration producibility
-and preregistration-study consistency.” *Psychological Methods*.
-[doi:10.1037/met0000687](https://doi.org/10.1037/met0000687).
-
-For educational material on how to report deviations from
-preregistrations, see:
-
-Lakens, Daniël (2024). “When and How to Deviate From a Preregistration.”
-*Collabra: Psychology*, **10**(1), 117094.
-[doi:10.1525/collabra.117094](https://doi.org/10.1525/collabra.117094).
-
-NoteHow It Works
-
-Retrieve information from preregistrations in a standardised way, and
-make them easier to check.
-
-The Preregistration Check module identifies preregistrations on the OSF
-and AsPredicted based on links in the manuscript, retrieves the
-preregistration text, and organizes the information into a template. The
-module then uses regular expressions to identify text from AsPredicted,
-and the API to retrieve text from the OSF. The information in the
-preregistration is returned.
-
-The module can’t extract information from non-structured preregistration
-templates (i.e., where the preregistration is uploaded in a single text
-field) and it can’t retrieve information in preregistrations that are
-stored as text documents on the OSF.
-
-If you want to extend the package to be able to download information
-from other preregistration sites, reach out to the Metacheck development
-team.
-
-This module was developed by Daniel Lakens and Lisa DeBruine
-
 ## Results Modules
 
 ### ⚠️ Exact P-Values
@@ -362,105 +363,6 @@ We try to exclude figure and table notes like “\* p \< .05”, but may not
 succeed at excluding all false positives.
 
 This module was developed by Lisa DeBruine
-
-### ⚠️ Marginal Significance
-
-You described 2 effects with terms related to ‘marginally significant’.
-
-View detailed feedback
-
-You described effects with terms related to ‘marginally significant’. If
-*p* values above 0.05 are interpreted as an effect, you inflate the
-alpha level, and increase the Type 1 error rate. If a *p* value is
-higher than the prespecified alpha level, it should be interpreted as a
-non-significant result.
-
-TipLearn More
-
-For metascientific articles demonstrating the rate at which
-non-significant p-values are interpreted as marginally significant, see:
-
-Olsson-Collentine, A., van Assen, M. MAL, Hartgerink &, J. CH (2019).
-“The Prevalence of Marginally Significant Results in Psychology Over
-Time.” *Psychological Science*, **30**, 576–586.
-[doi:10.1177/0956797619830326](https://doi.org/10.1177/0956797619830326).
-
-For the list of terms used to identifify marginally significant results,
-see this [blog post by Matthew
-Hankins](https://web.archive.org/web/20251001114321/https://mchankins.wordpress.com/2013/04/21/still-not-significant-2/).
-
-NoteHow It Works
-
-List all sentences that describe an effect as ‘marginally significant’.
-
-The marginal module searches for regular expressions that match a
-predefined pattern. The list of terms is a subset of those listed in a
-[blog post by Matthew
-Hankins](https://web.archive.org/web/20251001114321/https://mchankins.wordpress.com/2013/04/21/still-not-significant-2/).
-The module returns all sentences that match terms describing ‘marginally
-significant’ results.
-
-Some of the terms identified might not be problematic in some contexts,
-and there are ways to describe ‘marginal significance’ that are not
-detected by the module.
-
-This module was developed by Daniel Lakens
-
-### ⚠️ StatCheck
-
-1 possible error in t-tests or F-tests
-
-View detailed feedback
-
-We detected possible errors in test statistics. Note that as the
-accuracy of statcheck has only been validated for *t*-tests and
-*F*-tests. As Metacheck only uses validated modules, we only provide
-statcheck results for *t* tests and *F*-tests.
-
-TipLearn More
-
-For metascientific research on the validity of statcheck, and it’s
-usefulness to prevent statistical reporting errors, see:
-
-Nuijten M, van Assen M, Hartgerink C, Epskamp S, Wicherts J (2017). “The
-validity of the tool "statcheck" in discovering statistical reporting
-inconsistencies.”
-[doi:10.31234/osf.io/tcxaja](https://doi.org/10.31234/osf.io/tcxaja).
-Preprint.
-
-Nuijten M, Wicherts J (2023). “The effectiveness of implementing
-statcheck in the peer review process to avoid statistical reporting
-errors.”
-[doi:10.31234/osf.io/bxau9](https://doi.org/10.31234/osf.io/bxau9).
-Preprint.
-
-NoteHow It Works
-
-Check consistency of p-values and test statistics
-
-The Statcheck module runs Statcheck. Statcheck searches for regular
-expressions that match a predefined pattern, and identifies APA reported
-statistical tests. More information on the package can be found at
-<https://github.com/cran/statcheck>. The module only returns Statcheck
-results for t-tests and F-tests, as these are the only tests which have
-been validated, see <https://osf.io/preprints/psyarxiv/tcxaj_v1/>.
-
-Statcheck was developed by Michèle Nuijten and Sascha Epskamp.
-
-Statcheck considers p = 0.000 an error, as you should report p \< 0.001.
-Furthermore, p \< 0.03 is an error if the p-value was 0.031, and one
-should simply report exact p-values (p = 0.031). Statcheck might miss
-one-sided tests, and falsely assume the p-value is incorrect. For more
-information, see [StatCheck](https://statcheck.io/).
-
-This module was developed by Daniel Lakens and Lisa DeBruine
-
-**Validation**: In a sample of 685 tests with 34 instances of
-inconsistent reporting, Statcheck correctly detected 34 of them, and
-incorrectly identified 26. Therefore 0% of true instances were missed,
-and 43% of detections were false positives. See
-<https://osf.io/preprints/psyarxiv/tcxaj_v1/> for more details of the
-validation.
 
 ### 🔍 Non-Significant P Value Check
 
@@ -523,6 +425,49 @@ to the Metacheck development team.
 
 This module was developed by Daniel Lakens
 
+### ⚠️ Marginal Significance
+
+You described 2 effects with terms related to ‘marginally significant’.
+
+View detailed feedback
+
+You described effects with terms related to ‘marginally significant’. If
+*p* values above 0.05 are interpreted as an effect, you inflate the
+alpha level, and increase the Type 1 error rate. If a *p* value is
+higher than the prespecified alpha level, it should be interpreted as a
+non-significant result.
+
+TipLearn More
+
+For metascientific articles demonstrating the rate at which
+non-significant p-values are interpreted as marginally significant, see:
+
+Olsson-Collentine, A., van Assen, M. MAL, Hartgerink &, J. CH (2019).
+“The Prevalence of Marginally Significant Results in Psychology Over
+Time.” *Psychological Science*, **30**, 576–586.
+[doi:10.1177/0956797619830326](https://doi.org/10.1177/0956797619830326).
+
+For the list of terms used to identifify marginally significant results,
+see this [blog post by Matthew
+Hankins](https://web.archive.org/web/20251001114321/https://mchankins.wordpress.com/2013/04/21/still-not-significant-2/).
+
+NoteHow It Works
+
+List all sentences that describe an effect as ‘marginally significant’.
+
+The marginal module searches for regular expressions that match a
+predefined pattern. The list of terms is a subset of those listed in a
+[blog post by Matthew
+Hankins](https://web.archive.org/web/20251001114321/https://mchankins.wordpress.com/2013/04/21/still-not-significant-2/).
+The module returns all sentences that match terms describing ‘marginally
+significant’ results.
+
+Some of the terms identified might not be problematic in some contexts,
+and there are ways to describe ‘marginal significance’ that are not
+detected by the module.
+
+This module was developed by Daniel Lakens
+
 ### 🔍 Effect Sizes in t-tests and F-tests
 
 We found 1 t-test and/or F-test where effect sizes are not reported.
@@ -563,6 +508,62 @@ If you want to extend the package to detect effect sizes for additional
 tests, reach out to the Metacheck development team.
 
 This module was developed by Daniel Lakens and Lisa DeBruine
+
+### ⚠️ StatCheck
+
+1 possible error in t-tests or F-tests
+
+View detailed feedback
+
+We detected possible errors in test statistics. Note that as the
+accuracy of statcheck has only been validated for *t*-tests and
+*F*-tests. As Metacheck only uses validated modules, we only provide
+statcheck results for *t* tests and *F*-tests.
+
+TipLearn More
+
+For metascientific research on the validity of statcheck, and it’s
+usefulness to prevent statistical reporting errors, see:
+
+Nuijten M, van Assen M, Hartgerink C, Epskamp S, Wicherts J (2017). “The
+validity of the tool "statcheck" in discovering statistical reporting
+inconsistencies.”
+[doi:10.31234/osf.io/tcxaja](https://doi.org/10.31234/osf.io/tcxaja).
+Preprint.
+
+Nuijten M, Wicherts J (2023). “The effectiveness of implementing
+statcheck in the peer review process to avoid statistical reporting
+errors.”
+[doi:10.31234/osf.io/bxau9](https://doi.org/10.31234/osf.io/bxau9).
+Preprint.
+
+NoteHow It Works
+
+Check consistency of p-values and test statistics
+
+The Statcheck module runs Statcheck. Statcheck searches for regular
+expressions that match a predefined pattern, and identifies APA reported
+statistical tests. More information on the package can be found at
+<https://github.com/cran/statcheck>. The module only returns Statcheck
+results for t-tests and F-tests, as these are the only tests which have
+been validated, see <https://osf.io/preprints/psyarxiv/tcxaj_v1/>.
+
+Statcheck was developed by Michèle Nuijten and Sascha Epskamp.
+
+Statcheck considers p = 0.000 an error, as you should report p \< 0.001.
+Furthermore, p \< 0.03 is an error if the p-value was 0.031, and one
+should simply report exact p-values (p = 0.031). Statcheck might miss
+one-sided tests, and falsely assume the p-value is incorrect. For more
+information, see [StatCheck](https://statcheck.io/).
+
+This module was developed by Daniel Lakens and Lisa DeBruine
+
+**Validation**: In a sample of 685 tests with 34 instances of
+inconsistent reporting, Statcheck correctly detected 34 of them, and
+incorrectly identified 26. Therefore 0% of true instances were missed,
+and 43% of detections were false positives. See
+<https://osf.io/preprints/psyarxiv/tcxaj_v1/> for more details of the
+validation.
 
 ### 🔍 Repository Check
 
@@ -605,11 +606,12 @@ This module was developed by Daniel Lakens and Lisa DeBruine
 
 ### 🔍 Code Check
 
-- We found 4 R, SAS, SPSS, or Stata code files.
+- We found 4 R, 0 SAS, 0 SPSS, and 0 Stata code files.
 - All your code files had comments.
-- 2 files loaded in the code were missing in the repository.
+- 4 files loaded in the code were missing in the repository.
 - Absolute file paths were found.
 - Libraries/imports were loaded in multiple places.
+- No parsing issues of R-type files were found.
 
 View detailed feedback
 
@@ -626,17 +628,19 @@ your code). All your code files had comments.
 
 #### Missing Files
 
-The scripts load files, but 2 scripts loaded 2 files that could not be
+The scripts load files, but 4 scripts loaded 4 files that could not be
 automatically identified in the repository. Check if the following files
 are made available, so that others can reproduce your code, or that the
 files are missing:
 
 #### Absolute Paths
 
-Best programming practice is to use relative file paths instead of
-absolute file paths (e.g., C://Lakens/files) as these folder names do
-not exist on other computers. The following absolute file paths were
-found in 4 code files:
+Best programming practice is to use relative file paths (e.g.,
+‘./files’) instead of absolute file paths (e.g.,
+‘C://Lakens/project_dir/files’) as these folder names do not exist on
+other computers. The following absolute file paths were found in 4 code
+files. However, these may be false positives in code like
+`paste0(dir, '/file.csv')`.
 
 #### Libraries / Imports
 
@@ -644,6 +648,11 @@ Best programming practice is to load all required libraries/imports in
 one block near the top of the code. In 2 code files, libraries/imports
 were at multiple places (i.e., with more than 3 non-comment lines in
 between).
+
+#### Parsable code
+
+All R-type code files (.R, .Rmd, .qmd) could be read in. There were no
+parsing issues.
 
 NoteHow It Works
 
@@ -672,7 +681,7 @@ If you want to extend the package to perform additional checks on code
 files, or make the checks work on other types of code files, reach out
 to the Metacheck development team.
 
-This module was developed by Daniel Lakens
+This module was developed by Daniel Lakens and Raphael Merz
 
 ## Reference Modules
 

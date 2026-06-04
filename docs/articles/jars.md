@@ -31,51 +31,40 @@ p-values. The APA Manual states:
 
 Reporting *p* values precisely allows readers to include the test
 results in *p* value meta-analytic tests, such as p-curve, or z-curve
-(Simonsohn, Nelson, and Simmons 2014; Bartoš and Schimmack 2020), and
-makes it possible the check the internal coherence of the reported
-result with tools such as Statcheck (Nuijten et al. 2015). metacheck has
-a dedicated module, “exact-p”, to identify the presence of imprecise
-p-values. We can run it on a single paper:
+(Simonsohn et al. 2014; Bartoš and Schimmack 2020), and makes it
+possible the check the internal coherence of the reported result with
+tools such as Statcheck (Nuijten et al. 2015). metacheck has a dedicated
+module, “exact-p”, to identify the presence of imprecise p-values. We
+can run it on a single paper:
 
 ``` r
-res_imprecise <- module_run(psychsci$`0956797617744542`, "stat_p_exact")
+
+res_imprecise <- module_run(psychsci$'0956797614560771', "stat_p_exact")
 
 res_imprecise
 ```
 
-    ## Exact P-Values: We found 10 imprecise *p* values out of 23 detected *p* values.
+Exact P-Values: We found 1 imprecise *p* value out of 4 detected *p*
+values.
 
 The module returns the exact *p* values and the full sentence so that
 users can easily examine whether the reported *p* values should have
 been precise:
 
-``` r
-res_imprecise$table[, c("text", "expanded")]
-```
-
-    ## # A tibble: 23 × 2
-    ##    text    expanded                                                             
-    ##    <chr>   <chr>                                                                
-    ##  1 p > .01 We analyzed SNPs in Hardy-Weinberg equilibrium (p > .01).            
-    ##  2 p < .01 The increase in risk was modest: a standard-deviation decrease in th…
-    ##  3 p < .01 The increase in risk was modest: a standard-deviation decrease in th…
-    ##  4 p < .01 Effect sizes were similar across the two cohorts (Fig. 2) and across…
-    ##  5 p < .01 Effect sizes were similar across the two cohorts (Fig. 2) and across…
-    ##  6 p < .01 Participants with lower polygenic scores for education were more lik…
-    ##  7 p < .01 Participants with lower polygenic scores for education were more lik…
-    ##  8 p < .05 Participants with lower polygenic scores for education were more lik…
-    ##  9 p < .01 Participants with lower polygenic scores for education were more lik…
-    ## 10 p < .01 Participants with lower polygenic scores were more likely to leave s…
-    ## # ℹ 13 more rows
+| text | expanded |
+|:---|:---|
+| p \< .01 | We repeated our analysis including all eight valenced emotions and found that participants’ recognition was again significantly better than chance, both when the distractor and target were of opposite valence, t(28) = 8.30, p \< .001, Cohen’s d = 1.54 (mean difference = 21.37, 95% CI of the difference = \[16.09, 26.64\]), and when they had the same valence, t(28) = 2.79, p \< .01, Cohen’s d = 0.52 (mean difference = 6.71, 95% CI of the difference = \[1.79, 11.63\]; see Fig. 1). |
 
 Luckily, there are also many papers that follow the JARS guideline and
 report all *p* values correctly, for example:
 
 ``` r
+
 module_run(psychsci$`0956797616665351`, "stat_p_exact")
 ```
 
-    ## Exact P-Values: We found no imprecise *p* values or *p*-values of exactly zero out of 8 detected.
+Exact P-Values: We found no imprecise *p* values or *p*-values of
+exactly zero out of 8 detected.
 
 ## Reporting standardized effect sizes
 
@@ -88,13 +77,15 @@ uses regular expressions (regex), we can identify *t*-tests and
 accordingly.
 
 ``` r
+
 module_run(
   paper = psychsci$`0956797616657319`,
   module = "stat_effect_size"
 )
 ```
 
-    ## Effect Sizes in t-tests and F-tests: We found 7 t-tests and/or F-tests where effect sizes are not reported.
+Effect Sizes in t-tests and F-tests: We found 7 t-tests and/or F-tests
+where effect sizes are not reported.
 
 ## Checking Multiple Papers
 
@@ -102,33 +93,24 @@ You can also run modules for multiple papers at once and get a summary
 table.
 
 ``` r
+
 mo <- module_run(psychsci[1:10], "stat_effect_size")
 
 mo$summary_table
 ```
 
-    ##            paper_id ttests_with_es ttests_without_es Ftests_with_es
-    ## 1  0956797613520608              0                 0              5
-    ## 2  0956797614522816              0                 5             20
-    ## 3  0956797614527830              0                 0              0
-    ## 4  0956797614557697              0                 1              5
-    ## 5  0956797614560771              2                 0              0
-    ## 6  0956797614566469              0                 0              0
-    ## 7  0956797615569001              1                 1              0
-    ## 8  0956797615569889              0                 0             12
-    ## 9  0956797615583071              6                 4              2
-    ## 10 0956797615588467              4                 3              0
-    ##    Ftests_without_es
-    ## 1                  0
-    ## 2                  0
-    ## 3                  0
-    ## 4                  0
-    ## 5                  0
-    ## 6                  0
-    ## 7                  0
-    ## 8                  0
-    ## 9                  2
-    ## 10                 1
+| paper_id | ttests_with_es | ttests_without_es | Ftests_with_es | Ftests_without_es |
+|:---|---:|---:|---:|---:|
+| 0956797613520608 | 0 | 0 | 5 | 0 |
+| 0956797614522816 | 0 | 5 | 20 | 0 |
+| 0956797614527830 | 0 | 0 | 0 | 0 |
+| 0956797614557697 | 0 | 1 | 5 | 0 |
+| 0956797614560771 | 2 | 0 | 0 | 0 |
+| 0956797614566469 | 0 | 0 | 0 | 0 |
+| 0956797615569001 | 1 | 1 | 0 | 0 |
+| 0956797615569889 | 0 | 0 | 12 | 0 |
+| 0956797615583071 | 6 | 4 | 2 | 2 |
+| 0956797615588467 | 4 | 3 | 0 | 1 |
 
 This can be useful for meta-scientific research questions, such as
 whether there is an increase in the best practice to report effect sizes
@@ -195,14 +177,15 @@ for Quantitative Research in Psychology: The APA Publications and
 Communications Board Task Force Report.” *American Psychologist* 73 (1):
 3–25. <https://doi.org/10.1037/amp0000191>.
 
-Bartoš, František, and Ulrich Schimmack. 2020. “Z-Curve.2.0: Estimating
-Replication Rates and Discovery Rates,” January.
+Bartoš, František, and Ulrich Schimmack. 2020. *Z-Curve.2.0: Estimating
+Replication Rates and Discovery Rates*. January.
 <https://doi.org/10.31234/osf.io/urgtn>.
 
 Nuijten, Michèle B., Chris H. J. Hartgerink, Marcel A. L. M. van Assen,
 Sacha Epskamp, and Jelte M. Wicherts. 2015. “The Prevalence of
 Statistical Reporting Errors in Psychology (1985–2013).” *Behavior
-Research Methods*, October. <https://doi.org/10.3758/s13428-015-0664-2>.
+Research Methods*, ahead of print, October.
+<https://doi.org/10.3758/s13428-015-0664-2>.
 
 Simonsohn, Uri, Leif D. Nelson, and Joseph P. Simmons. 2014. “P-Curve: A
 Key to the File-Drawer.” *Journal of Experimental Psychology: General*

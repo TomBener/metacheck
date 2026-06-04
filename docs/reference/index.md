@@ -91,6 +91,30 @@ text.
 - [`fig_image_view()`](https://scienceverse.github.io/metacheck/reference/fig_image_view.md)
   : View a figure image
 
+## Code Check Helpers
+
+These functions help repo_check and code_check modules to assess code
+files.
+
+- [`code_abs_path()`](https://scienceverse.github.io/metacheck/reference/code_abs_path.md)
+  : Return Absolute Paths
+- [`code_extract_r()`](https://scienceverse.github.io/metacheck/reference/code_extract_r.md)
+  : Convert Rmd/qmd files to R code only
+- [`code_file_refs()`](https://scienceverse.github.io/metacheck/reference/code_file_refs.md)
+  : Get files referenced in code
+- [`code_lang()`](https://scienceverse.github.io/metacheck/reference/code_lang.md)
+  : Detect Code Language
+- [`code_library_lines()`](https://scienceverse.github.io/metacheck/reference/code_library_lines.md)
+  : Get Code Library Lines
+- [`code_line_stats()`](https://scienceverse.github.io/metacheck/reference/code_line_stats.md)
+  : Get Code Composition Stats
+- [`code_parse_r()`](https://scienceverse.github.io/metacheck/reference/code_parse_r.md)
+  : Parse code to check for errors
+- [`code_read()`](https://scienceverse.github.io/metacheck/reference/code_read.md)
+  : Read code from files
+- [`code_remove_comments()`](https://scienceverse.github.io/metacheck/reference/code_remove_comments.md)
+  : Remove comments from code text
+
 ## LLM Functions
 
 - [`llm()`](https://scienceverse.github.io/metacheck/reference/llm.md) :
@@ -152,8 +176,6 @@ text.
   : Retrieve info from the OSF by ID
 - [`osf_file_download()`](https://scienceverse.github.io/metacheck/reference/osf_file_download.md)
   : Download all OSF Project Files
-- [`osf_api_calls()`](https://scienceverse.github.io/metacheck/reference/osf_api_calls.md)
-  : Get/set the OSF API Call Count
 - [`osf_api_check()`](https://scienceverse.github.io/metacheck/reference/osf_api_check.md)
   : Check OSF API Server Status
 - [`osf_check_id()`](https://scienceverse.github.io/metacheck/reference/osf_check_id.md)
@@ -162,10 +184,10 @@ text.
   : Set the OSF delay
 - [`osf_get_all_pages()`](https://scienceverse.github.io/metacheck/reference/osf_get_all_pages.md)
   : Get All OSF API Query Pages
-- [`osf_type()`](https://scienceverse.github.io/metacheck/reference/osf_type.md)
-  : Get OSF GUID Type
 - [`osf_preprint_list()`](https://scienceverse.github.io/metacheck/reference/osf_preprint_list.md)
   : Get A list of preprints from the OSF
+- [`osf_type()`](https://scienceverse.github.io/metacheck/reference/osf_type.md)
+  : Get OSF GUID Type
 
 ## GitHub Functions
 
