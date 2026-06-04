@@ -1,9 +1,8 @@
 # Check OSF IDs
 
 Check if strings are valid OSF IDs, URLs, or waterbutler IDs. Basically
-an improved wrapper for
-[`osfr::as_id()`](https://docs.ropensci.org/osfr/reference/as_id.html)
-that returns NA for invalid IDs in a vector.
+an improved wrapper for `osfr::as_id()` that returns NA for invalid IDs
+in a vector.
 
 ## Usage
 

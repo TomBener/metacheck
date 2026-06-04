@@ -6,11 +6,13 @@ You can install the development version of metacheck from
 [GitHub](https://github.com/scienceverse/metacheck) with:
 
 ``` r
+
 # install.packages("devtools")
 devtools::install_github("scienceverse/metacheck")
 ```
 
 ``` r
+
 library(metacheck)
 ```
 
@@ -18,6 +20,7 @@ You can launch a shiny app, but this has limited features and is under
 development.
 
 ``` r
+
 metacheck::metacheck_app()
 ```
 
@@ -31,6 +34,7 @@ an internet connection and takes a few seconds per paper, so should only
 be done once and the results saved for later use.
 
 ``` r
+
 pdf_file <- demofile("pdf")
 json_file <- convert(file_path = pdf_file, save_path = "converted")
 ```
@@ -45,6 +49,7 @@ docker run --rm --init --ulimit core=0 -p 8070:8070 lfoppiano/grobid:0.9.0
 Then you can set your api_url to the local path <http://localhost:8070>.
 
 ``` r
+
 json_file <- convert(file_path = pdf_file, 
                      save_path = "converted",
                      method = "grobid",
@@ -58,6 +63,7 @@ The function
 can read converted JSON files.
 
 ``` r
+
 paper <- read(json_file)
 ```
 
@@ -89,6 +95,7 @@ references, and citations.
 ### Info
 
 ``` r
+
 paper$info
 ```
 
@@ -106,6 +113,7 @@ paper$info
 The bibliography is provided in a tabular format.
 
 ``` r
+
 paper$bib
 ```
 
@@ -123,6 +131,7 @@ Cross-references are also provided in a tabular format, with `xref_id`
 to match the bibliography table.
 
 ``` r
+
 paper$xref
 ```
 
@@ -149,6 +158,7 @@ There are functions to combine the information from a list of papers,
 like `psychsci`.
 
 ``` r
+
 paper_table(psychsci[1:5], "info", c("title", "doi"))
 ```
 
@@ -162,6 +172,7 @@ paper_table(psychsci[1:5], "info", c("title", "doi"))
     #> 5 Emotional Vocalizations Are Recognized Across Cultures Regardl… 10.1… 0956797…
 
 ``` r
+
 paper_table(psychsci[1:5], "bib") |>
   dplyr::filter(!is.na(doi), doi != "")
 ```
@@ -189,6 +200,7 @@ section type is a best guess from the headers, so may not always be
 accurate.)
 
 ``` r
+
 text <- text_search(paper)
 ```
 
@@ -208,6 +220,7 @@ argument. The pattern is a regex string by default; set `fixed = TRUE`
 if you want to find exact text matches.
 
 ``` r
+
 text <- text_search(paper, pattern = "metacheck")
 ```
 
@@ -222,6 +235,7 @@ Set `return` to one of “sentence”, “paragraph”, “section”, or “mat
 control what gets returned.
 
 ``` r
+
 text <- text_search(paper, "GitHub", 
                     return = "paragraph")
 ```
@@ -240,6 +254,7 @@ are passed to [`grep()`](https://rdrr.io/r/base/grep.html), so
 `perl = TRUE` allows you to use more complex regex, like below.
 
 ``` r
+
 pattern <- "[a-zA-Z]\\S*\\s*(=|<)\\s*[0-9\\.,-]*\\d"
 text <- text_search(paper, pattern, return = "match", perl = TRUE)
 ```
@@ -267,6 +282,7 @@ or a module with
 [`text_expand()`](https://scienceverse.github.io/metacheck/reference/text_expand.md).
 
 ``` r
+
 marginal <- text_search(paper, "marginal") |>
   text_expand(paper, plus = 1, minus = 1)
 
@@ -313,6 +329,7 @@ article for full setup instructions. In brief:
 3.  In R, set metacheck to use it:
 
 ``` r
+
 llm_model("ollama/llama3.2")
 llm_use(TRUE)
 ```
@@ -338,6 +355,7 @@ When metacheck starts it checks for API keys in `.Renviron` and sets the
 model automatically. You can also set it manually:
 
 ``` r
+
 llm_model()                              # check which model is currently set
 llm_model("groq")                        # use ellmer's default Groq model
 llm_model("groq/llama-3.3-70b-versatile") # use a specific model
@@ -347,11 +365,11 @@ A list of available models for a provider:
 
 | platform | id | object | owned_by | context_window | max_completion_tokens | created_at |
 |:---|:---|:---|:---|---:|---:|:---|
-| groq | canopylabs/orpheus-arabic-saudi | model | Canopy Labs | 4000 | 50000 | 2025-12-17 |
-| groq | openai/gpt-oss-safeguard-20b | model | OpenAI | 131072 | 65536 | 2025-10-29 |
+| groq | meta-llama/llama-prompt-guard-2-22m | model | Meta | 512 | 512 | 2025-05-30 |
 | groq | llama-3.1-8b-instant | model | Meta | 131072 | 131072 | 2023-09-03 |
-| groq | meta-llama/llama-4-scout-17b-16e-instruct | model | Meta | 131072 | 8192 | 2025-04-05 |
 | groq | allam-2-7b | model | SDAIA | 4096 | 4096 | 2025-01-23 |
+| groq | openai/gpt-oss-120b | model | OpenAI | 131072 | 65536 | 2025-08-05 |
+| groq | meta-llama/llama-prompt-guard-2-86m | model | Meta | 512 | 512 | 2025-05-30 |
 
 ### LLM Queries
 
@@ -369,6 +387,7 @@ to determine if this is an a priori power analysis, and if so, to return
 some relevant values in a JSON-structured format.
 
 ``` r
+
 power <- psychsci[1:10] |>
   # sentences containing the word power
   text_search("power") |>
@@ -406,6 +425,7 @@ deals with it gracefully (sets an ‘error’ column to “parsing error”) if
 there are errors. It also fixes column data types, if possible.
 
 ``` r
+
 llm_response <- json_expand(llm_power, "answer") |>
   dplyr::select(text, apriori:es_metric)
 ```
@@ -438,6 +458,7 @@ errors in your code, a default limit of 30 queries is set, which you can
 change:
 
 ``` r
+
 llm_max_calls(30)
 ```
 
@@ -470,16 +491,17 @@ articles for more detail on those two sources.
 Get any OSF links from a paper or list of papers.
 
 ``` r
+
 links <- osf_links(psychsci)
 
 links$href |> unique() |> head()
 ```
 
-    #> [1] "https://osf.io/e2aks/"                                            
-    #> [2] "https://osf.io/tvyxz/wiki/view/"                                  
-    #> [3] "https://osf.io/t9j8e/? view_only=f171281f212f4435917b16a9e581a73b"
-    #> [4] "https://osf.io/tvyxz/wiki/1. %20View%20the%20Badges/"             
-    #> [5] "https://osf.io/eky4s/"                                            
+    #> [1] "https://osf.io/e2aks/"                                           
+    #> [2] "https://osf.io/tvyxz/wiki/view/"                                 
+    #> [3] "https://osf.io/t9j8e/?view_only=f171281f212f4435917b16a9e581a73b"
+    #> [4] "https://osf.io/tvyxz/wiki/1.%20View%20the%20Badges/"             
+    #> [5] "https://osf.io/eky4s/"                                           
     #> [6] "https://osf.io/xgwhk"
 
 You can see that some of them have rogue spaces or view-only links. The
@@ -490,12 +512,18 @@ as well as the 25-character waterbutler IDs) and converts them to short
 IDs.
 
 ``` r
+
 osf_ids <- osf_check_id(links$href) |> unique()
 
 head(osf_ids)
 ```
 
-    #> [1] "e2aks" "tvyxz" "t9j8e" "eky4s" "xgwhk" "5t0b7"
+    #> [1] "e2aks"                                           
+    #> [2] "tvyxz"                                           
+    #> [3] "t9j8e?view_only=f171281f212f4435917b16a9e581a73b"
+    #> [4] "eky4s"                                           
+    #> [5] "xgwhk"                                           
+    #> [6] "5t0b7"
 
 However, all of the `osf_***()` functions fix IDs for you and handle
 duplicate IDs without making extra API calls, so you don’t need to add
@@ -509,6 +537,7 @@ osf_type (nodes, files, preprints, registrations, users, set to
 the ), whether it is public
 
 ``` r
+
 info <- osf_info(links[1:6, "href"])
 
 info[, c("href","osf_id", "osf_type", "public", "category")]
@@ -520,8 +549,8 @@ info[, c("href","osf_id", "osf_type", "public", "category")]
     #> 1 https://osf.io/e2aks/                          e2aks  nodes    TRUE   project 
     #> 2 https://osf.io/tvyxz/wiki/view/                tvyxz  nodes    TRUE   project 
     #> 3 https://osf.io/tvyxz/wiki/view/                tvyxz  nodes    TRUE   project 
-    #> 4 https://osf.io/t9j8e/? view_only=f171281f212f… t9j8e  private  FALSE  NA      
-    #> 5 https://osf.io/tvyxz/wiki/1. %20View%20the%20… tvyxz  nodes    TRUE   project 
+    #> 4 https://osf.io/t9j8e/?view_only=f171281f212f4… t9j8e… nodes    FALSE  project 
+    #> 5 https://osf.io/tvyxz/wiki/1.%20View%20the%20B… tvyxz  nodes    TRUE   project 
     #> 6 https://osf.io/eky4s/                          eky4s  nodes    TRUE   project
 
 For now, the OSF API does not let us retrieve any information about
@@ -533,18 +562,9 @@ You can set the argument `recursive = TRUE` to also retrieve information
 about all nodes and files that are contained by the OSF link.
 
 ``` r
-osf_api_calls(0)
+
 all_contents <- osf_info(links$href[1], recursive = TRUE)
-n_calls <- osf_api_calls()
-```
 
-The function
-[`osf_api_calls()`](https://scienceverse.github.io/metacheck/reference/osf_api_calls.md)
-lets you reset and retrieve the number of API calls made since the last
-reset. You can see that the project <https://osf.io/e2aks/> had 3 nodes
-and 6 files, which required 10 API calls.
-
-``` r
 sum(all_contents$osf_type == "nodes")
 ```
 
@@ -566,6 +586,7 @@ component names and downloading all files smaller than `max_file_size`
 to 100 MB).
 
 ``` r
+
 osf_file_download(osf_id = "pngda",
                   download_to = ".", 
                   max_file_size = 1, 
@@ -577,6 +598,7 @@ osf_file_download(osf_id = "pngda",
     Downloading files [=====================] 24/24 00:00:35
 
 ``` r
+
 list.files("pngda", recursive = TRUE)
 ```
 
@@ -610,6 +632,7 @@ The same pattern — find links, retrieve file lists, optionally download
 — applies to the other three services.
 
 ``` r
+
 # GitHub
 gh_links  <- github_links(paper)
 gh_files  <- github_files(gh_links$href, recursive = TRUE)
@@ -635,6 +658,7 @@ authors used a service not yet supported — you can point metacheck at a
 local folder instead.
 
 ``` r
+
 result <- module_run(test_paper(), "code_check",
                      local_path = "path/to/downloaded/files")
 ```
@@ -655,6 +679,7 @@ will share more modules.
 You can see the list of built-in modules with the function below.
 
 ``` r
+
 module_list()
 ```
 
@@ -703,6 +728,7 @@ module_list()
 To run a built-in module on a paper, you can reference it by name.
 
 ``` r
+
 p <- module_run(paper, "all_p_values")
 ```
 
@@ -727,6 +753,7 @@ You can generate a report from any set of modules. Check the function
 help for the default set.
 
 ``` r
+
 report(paper, output_format = "qmd")
 ```
 

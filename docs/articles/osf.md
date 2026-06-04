@@ -49,6 +49,7 @@ object using GROBID. There are 250 open access papers in the metacheck
 object `psychsci`; we will choose one for this example.
 
 ``` r
+
 # paper to use in this example
 paper <- psychsci[[250]]
 ```
@@ -73,6 +74,7 @@ an error, so scripts where you are checking many URLs can take a long
 time before you realise they aren’t working.
 
 ``` r
+
 osf_api_check()
 #> [1] "ok"
 ```
@@ -84,6 +86,7 @@ We start by searching for OSF URLs using the
 function.
 
 ``` r
+
 links <- osf_links(paper)
 ```
 
@@ -122,6 +125,7 @@ only get the contents for each item once. If you set the argument
 links (but this requires more API calls).
 
 ``` r
+
 info <- osf_retrieve(links, 
                      id_col = "href", 
                      recursive = TRUE, 
@@ -314,6 +318,7 @@ ways that these words can be written) is used to automatically detect
 what is shared.
 
 ``` r
+
 osf_files_summary <- file_category(info)
 ```
 
@@ -493,6 +498,7 @@ realize that the data repository can be improved by more clearly naming
 folders and files.
 
 ``` r
+
 osf_report <- function(summary) {
   files <- dplyr::filter(summary, osf_type == "files")
   data <- dplyr::filter(files, file_category == "data") |> nrow()
@@ -543,6 +549,7 @@ osf_report <- function(summary) {
 ```
 
 ``` r
+
 report <- osf_report(osf_files_summary) 
 
 # print the report into a file
@@ -590,6 +597,7 @@ computer that the analyses were performed on. In R, this can be achieved
 by:
 
 ``` r
+
 sessionInfo()
 #> R version 4.6.0 (2026-04-24)
 #> Platform: aarch64-apple-darwin23
@@ -643,6 +651,7 @@ checks is to have algorithms that capture expertise make recommendations
 that improve how we currently work.
 
 ``` r
+
 check_r_files <- function(summary) {
   r_files <- summary |>
     dplyr::filter(osf_type == "files",
@@ -700,6 +709,7 @@ check_r_files <- function(summary) {
 ```
 
 ``` r
+
 r_file_results <- check_r_files(osf_files_summary)
 ```
 
@@ -718,6 +728,7 @@ Let’s put everything together in one block of code, and perform all
 automated checks for another open access paper in Psychological Science.
 
 ``` r
+
 # Add this and the custom functions to a file called osf_file_check.R
 
 osf_file_check <- function(paper) {
@@ -739,11 +750,13 @@ osf_file_check <- function(paper) {
 ```
 
 ``` r
+
 paper <- psychsci$`0956797620955209`
 module_results <- module_run(paper, "osf_file_check.R")
 ```
 
 ``` r
+
 module_report(module_results, header = 4) |> cat()
 ```
 

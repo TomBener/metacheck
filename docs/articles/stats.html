@@ -34,7 +34,7 @@
 
     <a class="navbar-brand me-2" href="../index.html">metacheck</a>
 
-    <small class="nav-text text-danger me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Unreleased version">0.0.0.9106</small>
+    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Released version">0.0.1.0</small>
 
 
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -79,18 +79,20 @@
 <code class="sourceCode R"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://github.com/scienceverse/metacheck" class="external-link">metacheck</a></span><span class="op">)</span></span>
 <span><span class="co">#&gt; </span></span>
 <span><span class="co">#&gt; </span></span>
-<span><span class="co">#&gt; *******************************************</span></span>
-<span><span class="co">#&gt; ✅ Welcome to metacheck</span></span>
-<span><span class="co">#&gt; For support and examples visit:</span></span>
+<span><span class="co">#&gt; ***********************************************</span></span>
+<span><span class="co">#&gt; ✅ Welcome to metacheck beta version 0.0.1.0</span></span>
+<span><span class="co">#&gt; ✨ Your version is up to date.</span></span>
+<span><span class="co">#&gt; </span></span>
+<span><span class="co">#&gt; ℹ For support and examples visit:</span></span>
 <span><span class="co">#&gt; https://scienceverse.github.io/metacheck/</span></span>
 <span><span class="co">#&gt; </span></span>
 <span><span class="co">#&gt; ⚠️ Set an email to use APIs like OpenAlex</span></span>
 <span><span class="co">#&gt; metacheck::email('your@address.org')</span></span>
 <span><span class="co">#&gt; </span></span>
-<span><span class="co">#&gt; ‼️ This is alpha software; please check any</span></span>
-<span><span class="co">#&gt; results. False positives and negatives will</span></span>
-<span><span class="co">#&gt; occur at unknown rates.</span></span>
-<span><span class="co">#&gt; *******************************************</span></span>
+<span><span class="co">#&gt; 🧪 This is beta software; please check any</span></span>
+<span><span class="co">#&gt; results. Check module validation info for</span></span>
+<span><span class="co">#&gt; false positive and negative rates.</span></span>
+<span><span class="co">#&gt; ***********************************************</span></span>
 <span><span class="co">#&gt; </span></span>
 <span><span class="co">#&gt; Attaching package: 'metacheck'</span></span>
 <span><span class="co">#&gt; The following object is masked from 'package:base':</span></span>
@@ -106,7 +108,7 @@ reproducibility <span class="citation">[@appelbaum2018]</span>. Almost
 every published article would improve if researchers diligently followed
 JARS, but the guidelines are not widely known, rarely enforced by
 journals, and time-consuming to check manually. Automation can help.</p>
-<p>Metacheck provides six modules for checking statistical reporting
+<p>Metacheck provides five modules for checking statistical reporting
 quality. This vignette demonstrates each one using papers from the
 <code>psychsci</code> built-in dataset — 250 open-access articles
 published in <em>Psychological Science</em> between 2004 and 2014.</p>

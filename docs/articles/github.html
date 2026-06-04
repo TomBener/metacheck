@@ -34,7 +34,7 @@
 
     <a class="navbar-brand me-2" href="../index.html">metacheck</a>
 
-    <small class="nav-text text-danger me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Unreleased version">0.0.0.9106</small>
+    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Released version">0.0.1.0</small>
 
 
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -79,18 +79,20 @@
 <code class="sourceCode R"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://github.com/scienceverse/metacheck" class="external-link">metacheck</a></span><span class="op">)</span></span>
 <span><span class="co">#&gt; </span></span>
 <span><span class="co">#&gt; </span></span>
-<span><span class="co">#&gt; *******************************************</span></span>
-<span><span class="co">#&gt; ✅ Welcome to metacheck</span></span>
-<span><span class="co">#&gt; For support and examples visit:</span></span>
+<span><span class="co">#&gt; ***********************************************</span></span>
+<span><span class="co">#&gt; ✅ Welcome to metacheck beta version 0.0.1.0</span></span>
+<span><span class="co">#&gt; ✨ Your version is up to date.</span></span>
+<span><span class="co">#&gt; </span></span>
+<span><span class="co">#&gt; ℹ For support and examples visit:</span></span>
 <span><span class="co">#&gt; https://scienceverse.github.io/metacheck/</span></span>
 <span><span class="co">#&gt; </span></span>
 <span><span class="co">#&gt; ⚠️ Set an email to use APIs like OpenAlex</span></span>
 <span><span class="co">#&gt; metacheck::email('your@address.org')</span></span>
 <span><span class="co">#&gt; </span></span>
-<span><span class="co">#&gt; ‼️ This is alpha software; please check any</span></span>
-<span><span class="co">#&gt; results. False positives and negatives will</span></span>
-<span><span class="co">#&gt; occur at unknown rates.</span></span>
-<span><span class="co">#&gt; *******************************************</span></span>
+<span><span class="co">#&gt; 🧪 This is beta software; please check any</span></span>
+<span><span class="co">#&gt; results. Check module validation info for</span></span>
+<span><span class="co">#&gt; false positive and negative rates.</span></span>
+<span><span class="co">#&gt; ***********************************************</span></span>
 <span><span class="co">#&gt; </span></span>
 <span><span class="co">#&gt; Attaching package: 'metacheck'</span></span>
 <span><span class="co">#&gt; The following object is masked from 'package:base':</span></span>
@@ -154,29 +156,13 @@ of. repo name, and NULL if the repository in inaccessible.</p>
 <span><span class="co">#&gt; remotes::install_github("scienceverse/metacheck")</span></span>
 <span><span class="co">#&gt; ```</span></span>
 <span><span class="co">#&gt; </span></span>
-<span><span class="co">#&gt; ## API (optional)</span></span>
 <span><span class="co">#&gt; </span></span>
-<span><span class="co">#&gt; To run metacheck as a REST API either using plumber or Docker, see [`inst/plumber/README.md`](inst/plumber/README.md) for instructions and documentation.</span></span>
 <span><span class="co">#&gt; </span></span>
 <span><span class="co">#&gt; ## Notes for Developers</span></span>
 <span><span class="co">#&gt; </span></span>
-<span><span class="co">#&gt; ### bibr format </span></span>
-<span><span class="co">#&gt; </span></span>
-<span><span class="co">#&gt; Metacheck uses bibr format for the paper objects. The schema for this can be found at &lt;https://www.scienceverse.org/schema/paper.json&gt;. If this format changes, or the file returned from bibr changes, the following functions will need checking:</span></span>
-<span><span class="co">#&gt; </span></span>
-<span><span class="co">#&gt; - `paper()` (R/paper.R)</span></span>
-<span><span class="co">#&gt; - `validate_paper()` (R/paper.R)</span></span>
-<span><span class="co">#&gt; - `paper_write()` (R/paper.R)</span></span>
-<span><span class="co">#&gt; - `platform_bibr()` (R/bibr.R)</span></span>
-<span><span class="co">#&gt; - `convert_bibr()` (R/bibr.R)</span></span>
-<span><span class="co">#&gt; - `read_bibr()` (R/bibr.R) Remove fixes when bibr output conforms to the schema</span></span>
-<span><span class="co">#&gt; - `.grobid_to_bibr()` (R/grobid) Cascades to a bunch of tei_**() functions</span></span>
-<span><span class="co">#&gt; </span></span>
-<span><span class="co">#&gt; ### tests</span></span>
-<span><span class="co">#&gt; </span></span>
 <span><span class="co">#&gt; You may not contribute any code unless you also contribute a test of this code.</span></span>
 <span><span class="co">#&gt; </span></span>
-<span><span class="co">#&gt; Check tests/testthat/helper.R for custom test skip functions. By default, all tests requiring a web connection, LLM, or long tests are skipped or mocked. You can control this globally with the skip functions in this file (e.g., comment out the first `skip()` function in each custom function to run all tests of this type unless on cran/covr).</span></span></code></pre>
+<span><span class="co">#&gt; Check tests/testthat/helper.R for custom test skip functions. All tests requiring a web connection, LLM, or long tests should be skipped or mocked. You can control this globally with the skip functions in this file (e.g., comment out the first `skip()` function in each custom function to run all tests of this type unless on cran/covr).</span></span></code></pre>
 </div>
 <div class="section level2">
 <h2 id="github_languages">github_languages<a class="anchor" aria-label="anchor" href="#github_languages"></a>
@@ -186,19 +172,19 @@ languages, as detected and classified by GitHub.</p>
 <div class="sourceCode" id="cb6"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fu"><a href="../reference/github_languages.html">github_languages</a></span><span class="op">(</span><span class="st">"scienceverse/metacheck"</span><span class="op">)</span></span>
 <span><span class="co">#&gt;                      repo   language    bytes</span></span>
-<span><span class="co">#&gt; 1  scienceverse/metacheck          R 50951570</span></span>
-<span><span class="co">#&gt; 2  scienceverse/metacheck       HTML 19383467</span></span>
+<span><span class="co">#&gt; 1  scienceverse/metacheck          R 53601558</span></span>
+<span><span class="co">#&gt; 2  scienceverse/metacheck       HTML 19383876</span></span>
 <span><span class="co">#&gt; 3  scienceverse/metacheck        Lua    92710</span></span>
 <span><span class="co">#&gt; 4  scienceverse/metacheck        TeX    40040</span></span>
-<span><span class="co">#&gt; 5  scienceverse/metacheck       AMPL     7571</span></span>
-<span><span class="co">#&gt; 6  scienceverse/metacheck     Python     6986</span></span>
-<span><span class="co">#&gt; 7  scienceverse/metacheck        CSS     5358</span></span>
-<span><span class="co">#&gt; 8  scienceverse/metacheck      Typst     5329</span></span>
-<span><span class="co">#&gt; 9  scienceverse/metacheck   Makefile     1407</span></span>
-<span><span class="co">#&gt; 10 scienceverse/metacheck Dockerfile     1201</span></span>
-<span><span class="co">#&gt; 11 scienceverse/metacheck JavaScript     1116</span></span>
-<span><span class="co">#&gt; 12 scienceverse/metacheck       SCSS      639</span></span>
-<span><span class="co">#&gt; 13 scienceverse/metacheck      Stata      246</span></span>
+<span><span class="co">#&gt; 5  scienceverse/metacheck      Stata    12810</span></span>
+<span><span class="co">#&gt; 6  scienceverse/metacheck       AMPL     7571</span></span>
+<span><span class="co">#&gt; 7  scienceverse/metacheck     Python     6986</span></span>
+<span><span class="co">#&gt; 8  scienceverse/metacheck        CSS     5358</span></span>
+<span><span class="co">#&gt; 9  scienceverse/metacheck      Typst     5329</span></span>
+<span><span class="co">#&gt; 10 scienceverse/metacheck   Makefile     1407</span></span>
+<span><span class="co">#&gt; 11 scienceverse/metacheck Dockerfile     1201</span></span>
+<span><span class="co">#&gt; 12 scienceverse/metacheck JavaScript     1116</span></span>
+<span><span class="co">#&gt; 13 scienceverse/metacheck       SCSS      639</span></span>
 <span><span class="co">#&gt; 14 scienceverse/metacheck      Shell       17</span></span></code></pre></div>
 </div>
 <div class="section level2">
@@ -211,11 +197,11 @@ directory, non-recursively.</p>
 <div class="sourceCode" id="cb7"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fu"><a href="../reference/github_files.html">github_files</a></span><span class="op">(</span><span class="st">"scienceverse/metacheck"</span><span class="op">)</span></span>
 <span><span class="co">#&gt;                      repo             clean_repo               name</span></span>
-<span><span class="co">#&gt; 1  scienceverse/metacheck scienceverse/metacheck            .github</span></span>
-<span><span class="co">#&gt; 2  scienceverse/metacheck scienceverse/metacheck         .gitignore</span></span>
-<span><span class="co">#&gt; 3  scienceverse/metacheck scienceverse/metacheck      .Rbuildignore</span></span>
-<span><span class="co">#&gt; 4  scienceverse/metacheck scienceverse/metacheck   _metacheck.Rproj</span></span>
-<span><span class="co">#&gt; 5  scienceverse/metacheck scienceverse/metacheck             _stuff</span></span>
+<span><span class="co">#&gt; 1  scienceverse/metacheck scienceverse/metacheck   _metacheck.Rproj</span></span>
+<span><span class="co">#&gt; 2  scienceverse/metacheck scienceverse/metacheck             _stuff</span></span>
+<span><span class="co">#&gt; 3  scienceverse/metacheck scienceverse/metacheck            .github</span></span>
+<span><span class="co">#&gt; 4  scienceverse/metacheck scienceverse/metacheck         .gitignore</span></span>
+<span><span class="co">#&gt; 5  scienceverse/metacheck scienceverse/metacheck      .Rbuildignore</span></span>
 <span><span class="co">#&gt; 6  scienceverse/metacheck scienceverse/metacheck         AUTHORS.md</span></span>
 <span><span class="co">#&gt; 7  scienceverse/metacheck scienceverse/metacheck CODE_OF_CONDUCT.md</span></span>
 <span><span class="co">#&gt; 8  scienceverse/metacheck scienceverse/metacheck        codecov.yml</span></span>
@@ -237,11 +223,11 @@ directory, non-recursively.</p>
 <span><span class="co">#&gt; 24 scienceverse/metacheck scienceverse/metacheck              tests</span></span>
 <span><span class="co">#&gt; 25 scienceverse/metacheck scienceverse/metacheck          vignettes</span></span>
 <span><span class="co">#&gt;                  path</span></span>
-<span><span class="co">#&gt; 1             .github</span></span>
-<span><span class="co">#&gt; 2          .gitignore</span></span>
-<span><span class="co">#&gt; 3       .Rbuildignore</span></span>
-<span><span class="co">#&gt; 4    _metacheck.Rproj</span></span>
-<span><span class="co">#&gt; 5              _stuff</span></span>
+<span><span class="co">#&gt; 1    _metacheck.Rproj</span></span>
+<span><span class="co">#&gt; 2              _stuff</span></span>
+<span><span class="co">#&gt; 3             .github</span></span>
+<span><span class="co">#&gt; 4          .gitignore</span></span>
+<span><span class="co">#&gt; 5       .Rbuildignore</span></span>
 <span><span class="co">#&gt; 6          AUTHORS.md</span></span>
 <span><span class="co">#&gt; 7  CODE_OF_CONDUCT.md</span></span>
 <span><span class="co">#&gt; 8         codecov.yml</span></span>
@@ -263,11 +249,11 @@ directory, non-recursively.</p>
 <span><span class="co">#&gt; 24              tests</span></span>
 <span><span class="co">#&gt; 25          vignettes</span></span>
 <span><span class="co">#&gt;                                                                        download_url</span></span>
-<span><span class="co">#&gt; 1                                                                              &lt;NA&gt;</span></span>
-<span><span class="co">#&gt; 2          https://raw.githubusercontent.com/scienceverse/metacheck/main/.gitignore</span></span>
-<span><span class="co">#&gt; 3       https://raw.githubusercontent.com/scienceverse/metacheck/main/.Rbuildignore</span></span>
-<span><span class="co">#&gt; 4    https://raw.githubusercontent.com/scienceverse/metacheck/main/_metacheck.Rproj</span></span>
-<span><span class="co">#&gt; 5                                                                              &lt;NA&gt;</span></span>
+<span><span class="co">#&gt; 1    https://raw.githubusercontent.com/scienceverse/metacheck/main/_metacheck.Rproj</span></span>
+<span><span class="co">#&gt; 2                                                                              &lt;NA&gt;</span></span>
+<span><span class="co">#&gt; 3                                                                              &lt;NA&gt;</span></span>
+<span><span class="co">#&gt; 4          https://raw.githubusercontent.com/scienceverse/metacheck/main/.gitignore</span></span>
+<span><span class="co">#&gt; 5       https://raw.githubusercontent.com/scienceverse/metacheck/main/.Rbuildignore</span></span>
 <span><span class="co">#&gt; 6          https://raw.githubusercontent.com/scienceverse/metacheck/main/AUTHORS.md</span></span>
 <span><span class="co">#&gt; 7  https://raw.githubusercontent.com/scienceverse/metacheck/main/CODE_OF_CONDUCT.md</span></span>
 <span><span class="co">#&gt; 8         https://raw.githubusercontent.com/scienceverse/metacheck/main/codecov.yml</span></span>
@@ -289,11 +275,11 @@ directory, non-recursively.</p>
 <span><span class="co">#&gt; 24                                                                             &lt;NA&gt;</span></span>
 <span><span class="co">#&gt; 25                                                                             &lt;NA&gt;</span></span>
 <span><span class="co">#&gt;     size          ext   type</span></span>
-<span><span class="co">#&gt; 1      0       github    dir</span></span>
-<span><span class="co">#&gt; 2    385    gitignore config</span></span>
-<span><span class="co">#&gt; 3    362 rbuildignore   file</span></span>
-<span><span class="co">#&gt; 4    462        rproj config</span></span>
-<span><span class="co">#&gt; 5      0                 dir</span></span>
+<span><span class="co">#&gt; 1    462        rproj config</span></span>
+<span><span class="co">#&gt; 2      0                 dir</span></span>
+<span><span class="co">#&gt; 3      0       github    dir</span></span>
+<span><span class="co">#&gt; 4    385    gitignore config</span></span>
+<span><span class="co">#&gt; 5    367 rbuildignore   file</span></span>
 <span><span class="co">#&gt; 6    177           md   text</span></span>
 <span><span class="co">#&gt; 7   5240           md   text</span></span>
 <span><span class="co">#&gt; 8    134          yml config</span></span>
@@ -301,17 +287,17 @@ directory, non-recursively.</p>
 <span><span class="co">#&gt; 10   133           md   text</span></span>
 <span><span class="co">#&gt; 11     0                 dir</span></span>
 <span><span class="co">#&gt; 12     0                 dir</span></span>
-<span><span class="co">#&gt; 13  2121                file</span></span>
+<span><span class="co">#&gt; 13  2118                file</span></span>
 <span><span class="co">#&gt; 14     0                 dir</span></span>
 <span><span class="co">#&gt; 15     0                 dir</span></span>
 <span><span class="co">#&gt; 16 34303           md   text</span></span>
 <span><span class="co">#&gt; 17  1407                file</span></span>
 <span><span class="co">#&gt; 18     0                 dir</span></span>
-<span><span class="co">#&gt; 19  3162                file</span></span>
-<span><span class="co">#&gt; 20 22686           md   text</span></span>
+<span><span class="co">#&gt; 19  3277                file</span></span>
+<span><span class="co">#&gt; 20 23166           md   text</span></span>
 <span><span class="co">#&gt; 21     0                 dir</span></span>
 <span><span class="co">#&gt; 22     0                 dir</span></span>
-<span><span class="co">#&gt; 23  2023           md   text</span></span>
+<span><span class="co">#&gt; 23  1267           md   text</span></span>
 <span><span class="co">#&gt; 24     0                 dir</span></span>
 <span><span class="co">#&gt; 25     0                 dir</span></span></code></pre></div>
 <div class="sourceCode" id="cb8"><pre class="downlit sourceCode r">
@@ -333,7 +319,7 @@ directory, non-recursively.</p>
 <span><span class="co">#&gt; 4                                                                             &lt;NA&gt;</span></span>
 <span><span class="co">#&gt;   size       ext   type</span></span>
 <span><span class="co">#&gt; 1    7 gitignore config</span></span>
-<span><span class="co">#&gt; 2   41             file</span></span>
+<span><span class="co">#&gt; 2   12             file</span></span>
 <span><span class="co">#&gt; 3    0              dir</span></span>
 <span><span class="co">#&gt; 4    0              dir</span></span></code></pre></div>
 <p>You can also retrieve files recursively. Searching a large repository
@@ -383,7 +369,7 @@ recursively can take a while.</p>
 <span><span class="co">#&gt; 12        https://raw.githubusercontent.com/scienceverse/metacheck/main/.github/workflows/upload_packages.yml</span></span>
 <span><span class="co">#&gt;    size       ext   type</span></span>
 <span><span class="co">#&gt; 1     7 gitignore config</span></span>
-<span><span class="co">#&gt; 2    41             file</span></span>
+<span><span class="co">#&gt; 2    12             file</span></span>
 <span><span class="co">#&gt; 3     0              dir</span></span>
 <span><span class="co">#&gt; 4     0              dir</span></span>
 <span><span class="co">#&gt; 5   469        md   text</span></span>
@@ -392,7 +378,7 @@ recursively can take a while.</p>
 <span><span class="co">#&gt; 8   732        md   text</span></span>
 <span><span class="co">#&gt; 9  1380      yaml config</span></span>
 <span><span class="co">#&gt; 10  521       yml config</span></span>
-<span><span class="co">#&gt; 11 1877      yaml config</span></span>
+<span><span class="co">#&gt; 11 1874      yaml config</span></span>
 <span><span class="co">#&gt; 12 3362       yml config</span></span></code></pre></div>
 </div>
 <div class="section level2">

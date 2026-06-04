@@ -34,7 +34,7 @@
 
     <a class="navbar-brand me-2" href="../index.html">metacheck</a>
 
-    <small class="nav-text text-danger me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Unreleased version">0.0.0.9106</small>
+    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Released version">0.0.1.0</small>
 
 
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -106,41 +106,47 @@ places. However, report p values less than .001 as p &lt; .001.</p>
 </blockquote>
 <p>Reporting <em>p</em> values precisely allows readers to include the
 test results in <em>p</em> value meta-analytic tests, such as p-curve,
-or z-curve <span class="citation">(Simonsohn, Nelson, and Simmons 2014;
-Bartoš and Schimmack 2020)</span>, and makes it possible the check the
-internal coherence of the reported result with tools such as Statcheck
-<span class="citation">(Nuijten et al. 2015)</span>. metacheck has a
-dedicated module, “exact-p”, to identify the presence of imprecise
-p-values. We can run it on a single paper:</p>
+or z-curve <span class="citation">(Simonsohn et al. 2014; Bartoš and
+Schimmack 2020)</span>, and makes it possible the check the internal
+coherence of the reported result with tools such as Statcheck <span class="citation">(Nuijten et al. 2015)</span>. metacheck has a dedicated
+module, “exact-p”, to identify the presence of imprecise p-values. We
+can run it on a single paper:</p>
 <div class="sourceCode" id="cb1"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="va">res_imprecise</span> <span class="op">&lt;-</span> <span class="fu"><a href="../reference/module_run.html">module_run</a></span><span class="op">(</span><span class="va">psychsci</span><span class="op">$</span><span class="va">`0956797617744542`</span>, <span class="st">"stat_p_exact"</span><span class="op">)</span></span>
+<code class="sourceCode R"><span><span class="va">res_imprecise</span> <span class="op">&lt;-</span> <span class="fu"><a href="../reference/module_run.html">module_run</a></span><span class="op">(</span><span class="va">psychsci</span><span class="op">$</span><span class="st">'0956797614560771'</span>, <span class="st">"stat_p_exact"</span><span class="op">)</span></span>
 <span></span>
 <span><span class="va">res_imprecise</span></span></code></pre></div>
-<pre><code><span><span class="co">## Exact P-Values: We found 10 imprecise *p* values out of 23 detected *p* values.</span></span></code></pre>
+<p>Exact P-Values: We found 1 imprecise <em>p</em> value out of 4
+detected <em>p</em> values.</p>
 <p>The module returns the exact <em>p</em> values and the full sentence
 so that users can easily examine whether the reported <em>p</em> values
 should have been precise:</p>
-<div class="sourceCode" id="cb3"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="va">res_imprecise</span><span class="op">$</span><span class="va">table</span><span class="op">[</span>, <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="st">"text"</span>, <span class="st">"expanded"</span><span class="op">)</span><span class="op">]</span></span></code></pre></div>
-<pre><code><span><span class="co">## <span style="color: #949494;"># A tibble: 23 × 2</span></span></span>
-<span><span class="co">##    text    expanded                                                             </span></span>
-<span><span class="co">##    <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>   <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>                                                                </span></span>
-<span><span class="co">## <span style="color: #BCBCBC;"> 1</span> p &gt; .01 We analyzed SNPs in Hardy-Weinberg equilibrium (p &gt; .01).            </span></span>
-<span><span class="co">## <span style="color: #BCBCBC;"> 2</span> p &lt; .01 The increase in risk was modest: a standard-deviation decrease in th…</span></span>
-<span><span class="co">## <span style="color: #BCBCBC;"> 3</span> p &lt; .01 The increase in risk was modest: a standard-deviation decrease in th…</span></span>
-<span><span class="co">## <span style="color: #BCBCBC;"> 4</span> p &lt; .01 Effect sizes were similar across the two cohorts (Fig. 2) and across…</span></span>
-<span><span class="co">## <span style="color: #BCBCBC;"> 5</span> p &lt; .01 Effect sizes were similar across the two cohorts (Fig. 2) and across…</span></span>
-<span><span class="co">## <span style="color: #BCBCBC;"> 6</span> p &lt; .01 Participants with lower polygenic scores for education were more lik…</span></span>
-<span><span class="co">## <span style="color: #BCBCBC;"> 7</span> p &lt; .01 Participants with lower polygenic scores for education were more lik…</span></span>
-<span><span class="co">## <span style="color: #BCBCBC;"> 8</span> p &lt; .05 Participants with lower polygenic scores for education were more lik…</span></span>
-<span><span class="co">## <span style="color: #BCBCBC;"> 9</span> p &lt; .01 Participants with lower polygenic scores for education were more lik…</span></span>
-<span><span class="co">## <span style="color: #BCBCBC;">10</span> p &lt; .01 Participants with lower polygenic scores were more likely to leave s…</span></span>
-<span><span class="co">## <span style="color: #949494;"># ℹ 13 more rows</span></span></span></code></pre>
+<table class="table">
+<colgroup>
+<col width="1%">
+<col width="98%">
+</colgroup>
+<thead><tr class="header">
+<th align="left">text</th>
+<th align="left">expanded</th>
+</tr></thead>
+<tbody><tr class="odd">
+<td align="left">p &lt; .01</td>
+<td align="left">We repeated our analysis including all eight valenced
+emotions and found that participants’ recognition was again
+significantly better than chance, both when the distractor and target
+were of opposite valence, t(28) = 8.30, p &lt; .001, Cohen’s d = 1.54
+(mean difference = 21.37, 95% CI of the difference = [16.09, 26.64]),
+and when they had the same valence, t(28) = 2.79, p &lt; .01, Cohen’s d
+= 0.52 (mean difference = 6.71, 95% CI of the difference = [1.79,
+11.63]; see Fig. 1).</td>
+</tr></tbody>
+</table>
 <p>Luckily, there are also many papers that follow the JARS guideline
 and report all <em>p</em> values correctly, for example:</p>
-<div class="sourceCode" id="cb5"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb2"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fu"><a href="../reference/module_run.html">module_run</a></span><span class="op">(</span><span class="va">psychsci</span><span class="op">$</span><span class="va">`0956797616665351`</span>, <span class="st">"stat_p_exact"</span><span class="op">)</span></span></code></pre></div>
-<pre><code><span><span class="co">## Exact P-Values: We found no imprecise *p* values or *p*-values of exactly zero out of 8 detected.</span></span></code></pre>
+<p>Exact P-Values: We found no imprecise <em>p</em> values or
+<em>p</em>-values of exactly zero out of 8 detected.</p>
 </div>
 <div class="section level2">
 <h2 id="reporting-standardized-effect-sizes">Reporting standardized effect sizes<a class="anchor" aria-label="anchor" href="#reporting-standardized-effect-sizes"></a>
@@ -152,44 +158,111 @@ corresponding effect size (e.g., a Cohen’s d, or partial eta-squared).
 Based on a text search that uses regular expressions (regex), we can
 identify <em>t</em>-tests and <em>F</em>-tests that are not followed by
 an effect size, and warn researchers accordingly.</p>
-<div class="sourceCode" id="cb7"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb3"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fu"><a href="../reference/module_run.html">module_run</a></span><span class="op">(</span></span>
 <span>  paper <span class="op">=</span> <span class="va">psychsci</span><span class="op">$</span><span class="va">`0956797616657319`</span>,</span>
 <span>  module <span class="op">=</span> <span class="st">"stat_effect_size"</span></span>
 <span><span class="op">)</span></span></code></pre></div>
-<pre><code><span><span class="co">## Effect Sizes in t-tests and F-tests: We found 7 t-tests and/or F-tests where effect sizes are not reported.</span></span></code></pre>
+<p>Effect Sizes in t-tests and F-tests: We found 7 t-tests and/or
+F-tests where effect sizes are not reported.</p>
 </div>
 <div class="section level2">
 <h2 id="checking-multiple-papers">Checking Multiple Papers<a class="anchor" aria-label="anchor" href="#checking-multiple-papers"></a>
 </h2>
 <p>You can also run modules for multiple papers at once and get a
 summary table.</p>
-<div class="sourceCode" id="cb9"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb4"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="va">mo</span> <span class="op">&lt;-</span> <span class="fu"><a href="../reference/module_run.html">module_run</a></span><span class="op">(</span><span class="va">psychsci</span><span class="op">[</span><span class="fl">1</span><span class="op">:</span><span class="fl">10</span><span class="op">]</span>, <span class="st">"stat_effect_size"</span><span class="op">)</span></span>
 <span></span>
 <span><span class="va">mo</span><span class="op">$</span><span class="va">summary_table</span></span></code></pre></div>
-<pre><code><span><span class="co">##            paper_id ttests_with_es ttests_without_es Ftests_with_es</span></span>
-<span><span class="co">## 1  0956797613520608              0                 0              5</span></span>
-<span><span class="co">## 2  0956797614522816              0                 5             20</span></span>
-<span><span class="co">## 3  0956797614527830              0                 0              0</span></span>
-<span><span class="co">## 4  0956797614557697              0                 1              5</span></span>
-<span><span class="co">## 5  0956797614560771              2                 0              0</span></span>
-<span><span class="co">## 6  0956797614566469              0                 0              0</span></span>
-<span><span class="co">## 7  0956797615569001              1                 1              0</span></span>
-<span><span class="co">## 8  0956797615569889              0                 0             12</span></span>
-<span><span class="co">## 9  0956797615583071              6                 4              2</span></span>
-<span><span class="co">## 10 0956797615588467              4                 3              0</span></span>
-<span><span class="co">##    Ftests_without_es</span></span>
-<span><span class="co">## 1                  0</span></span>
-<span><span class="co">## 2                  0</span></span>
-<span><span class="co">## 3                  0</span></span>
-<span><span class="co">## 4                  0</span></span>
-<span><span class="co">## 5                  0</span></span>
-<span><span class="co">## 6                  0</span></span>
-<span><span class="co">## 7                  0</span></span>
-<span><span class="co">## 8                  0</span></span>
-<span><span class="co">## 9                  2</span></span>
-<span><span class="co">## 10                 1</span></span></code></pre>
+<table class="table">
+<colgroup>
+<col width="20%">
+<col width="18%">
+<col width="21%">
+<col width="18%">
+<col width="21%">
+</colgroup>
+<thead><tr class="header">
+<th align="left">paper_id</th>
+<th align="right">ttests_with_es</th>
+<th align="right">ttests_without_es</th>
+<th align="right">Ftests_with_es</th>
+<th align="right">Ftests_without_es</th>
+</tr></thead>
+<tbody>
+<tr class="odd">
+<td align="left">0956797613520608</td>
+<td align="right">0</td>
+<td align="right">0</td>
+<td align="right">5</td>
+<td align="right">0</td>
+</tr>
+<tr class="even">
+<td align="left">0956797614522816</td>
+<td align="right">0</td>
+<td align="right">5</td>
+<td align="right">20</td>
+<td align="right">0</td>
+</tr>
+<tr class="odd">
+<td align="left">0956797614527830</td>
+<td align="right">0</td>
+<td align="right">0</td>
+<td align="right">0</td>
+<td align="right">0</td>
+</tr>
+<tr class="even">
+<td align="left">0956797614557697</td>
+<td align="right">0</td>
+<td align="right">1</td>
+<td align="right">5</td>
+<td align="right">0</td>
+</tr>
+<tr class="odd">
+<td align="left">0956797614560771</td>
+<td align="right">2</td>
+<td align="right">0</td>
+<td align="right">0</td>
+<td align="right">0</td>
+</tr>
+<tr class="even">
+<td align="left">0956797614566469</td>
+<td align="right">0</td>
+<td align="right">0</td>
+<td align="right">0</td>
+<td align="right">0</td>
+</tr>
+<tr class="odd">
+<td align="left">0956797615569001</td>
+<td align="right">1</td>
+<td align="right">1</td>
+<td align="right">0</td>
+<td align="right">0</td>
+</tr>
+<tr class="even">
+<td align="left">0956797615569889</td>
+<td align="right">0</td>
+<td align="right">0</td>
+<td align="right">12</td>
+<td align="right">0</td>
+</tr>
+<tr class="odd">
+<td align="left">0956797615583071</td>
+<td align="right">6</td>
+<td align="right">4</td>
+<td align="right">2</td>
+<td align="right">2</td>
+</tr>
+<tr class="even">
+<td align="left">0956797615588467</td>
+<td align="right">4</td>
+<td align="right">3</td>
+<td align="right">0</td>
+<td align="right">1</td>
+</tr>
+</tbody>
+</table>
 <p>This can be useful for meta-scientific research questions, such as
 whether there is an increase in the best practice to report effect sizes
 for <em>t</em>-tests over time. In the plot below we have run the module
@@ -244,7 +317,7 @@ are happy to collaborate.</p>
 <div class="section level2 unnumbered">
 <h2 class="unnumbered" id="references">References<a class="anchor" aria-label="anchor" href="#references"></a>
 </h2>
-<div id="refs" class="references csl-bib-body hanging-indent" entry-spacing="0">
+<div id="refs" class="references csl-bib-body hanging-indent">
 <div id="ref-appelbaum_journal_2018" class="csl-entry">
 Appelbaum, Mark, Harris Cooper, Rex B. Kline, Evan Mayo-Wilson, Arthur
 M. Nezu, and Stephen M. Rao. 2018. <span>“Journal Article Reporting
@@ -253,14 +326,14 @@ and Communications Board Task Force Report.”</span> <em>American
 Psychologist</em> 73 (1): 3–25. <a href="https://doi.org/10.1037/amp0000191" class="external-link">https://doi.org/10.1037/amp0000191</a>.
 </div>
 <div id="ref-bartos_zcurve_2020" class="csl-entry">
-Bartoš, František, and Ulrich Schimmack. 2020. <span>“Z-Curve.2.0:
-Estimating Replication Rates and Discovery Rates,”</span> January. <a href="https://doi.org/10.31234/osf.io/urgtn" class="external-link">https://doi.org/10.31234/osf.io/urgtn</a>.
+Bartoš, František, and Ulrich Schimmack. 2020. <em>Z-Curve.2.0:
+Estimating Replication Rates and Discovery Rates</em>. January. <a href="https://doi.org/10.31234/osf.io/urgtn" class="external-link">https://doi.org/10.31234/osf.io/urgtn</a>.
 </div>
 <div id="ref-nuijten_prevalencestatisticalreporting_2015" class="csl-entry">
 Nuijten, Michèle B., Chris H. J. Hartgerink, Marcel A. L. M. van Assen,
 Sacha Epskamp, and Jelte M. Wicherts. 2015. <span>“The Prevalence of
 Statistical Reporting Errors in Psychology (1985–2013).”</span>
-<em>Behavior Research Methods</em>, October. <a href="https://doi.org/10.3758/s13428-015-0664-2" class="external-link">https://doi.org/10.3758/s13428-015-0664-2</a>.
+<em>Behavior Research Methods</em>, ahead of print, October. <a href="https://doi.org/10.3758/s13428-015-0664-2" class="external-link">https://doi.org/10.3758/s13428-015-0664-2</a>.
 </div>
 <div id="ref-simonsohn_p-curve_2014" class="csl-entry">
 Simonsohn, Uri, Leif D. Nelson, and Joseph P. Simmons. 2014.

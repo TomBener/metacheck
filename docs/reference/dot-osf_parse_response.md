@@ -5,7 +5,7 @@ Parse an OSF API response into a data frame
 ## Usage
 
 ``` r
-.osf_parse_response(resp, id, req_type = "guids", pb = NULL)
+.osf_parse_response(resp, pb = NULL)
 ```
 
 ## Arguments
@@ -13,14 +13,6 @@ Parse an OSF API response into a data frame
 - resp:
 
   an httr2 response
-
-- id:
-
-  the OSF ID that was requested
-
-- req_type:
-
-  the endpoint type used ("guids" or "files")
 
 - pb:
 
