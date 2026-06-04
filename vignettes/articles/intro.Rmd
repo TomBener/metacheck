@@ -61,10 +61,19 @@ In addition to the initial modules already introduced on the [metacheck website]
 These examples are intended to demonstrate the breadth of practices that can be automatically checked. The automated checks can be performed as part of an individual or metascientific workflow. In the individual workflow, an author or editor can run selected modules on a single paper and receive a report highlighting potential areas for improvement and explanations or links to further resources. In the metascientific workflow, a single module can be run on a batch of hundreds of papers, producing tabular data that can be used to address metascientific questions, such as how prevalent a practice is in a specific field. For the individual workflow our philosophy is that error rates can be higher than in the meta-scientific workflow, as the user will check whether to implement each recommendation or not. For a tool to be used in a metascientific workflow, the module needs to be shown to have low error rates when run on manually coded ground truth files.
 
 ```{r}
+#| eval: false
 # run the module on 250 open access papers from Psychological Science
 mo <- module_run(psychsci, "stat_effect_size")
-
 head(mo$summary_table)
+```
+
+
+```{r}
+#| echo: false
+
+mo <- module_run(psychsci[1:6], "stat_effect_size")
+head(mo$summary_table) |>
+  knitr::kable()
 ```
 
 ## Future Plans

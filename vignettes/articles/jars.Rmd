@@ -28,7 +28,8 @@ The first reporting guideline we will illustrate is to report exact p-values. Th
 Reporting *p* values precisely allows readers to include the test results in *p* value meta-analytic tests, such as p-curve, or z-curve [@simonsohn_p-curve_2014; @bartos_zcurve_2020], and makes it possible the check the internal coherence of the reported result with tools such as Statcheck [@nuijten_prevalencestatisticalreporting_2015]. metacheck has a dedicated module, "exact-p", to identify the presence of imprecise p-values. We can run it on a single paper:
 
 ```{r}
-res_imprecise <- module_run(psychsci$`0956797617744542`, "stat_p_exact")
+#| results: 'asis'
+res_imprecise <- module_run(psychsci$'0956797614560771', "stat_p_exact")
 
 res_imprecise
 ```
@@ -36,12 +37,17 @@ res_imprecise
 The module returns the exact *p* values and the full sentence so that users can easily examine whether the reported *p* values should have been precise:
 
 ```{r}
-res_imprecise$table[, c("text", "expanded")]
+#| echo: false
+res_imprecise$table |>
+  filter(imprecise) |>
+  select(text, expanded) |>
+  knitr::kable()
 ```
 
 Luckily, there are also many papers that follow the JARS guideline and report all *p* values correctly, for example:
 
 ```{r}
+#| results: 'asis'
 module_run(psychsci$`0956797616665351`, "stat_p_exact")
 ```
 
@@ -50,6 +56,7 @@ module_run(psychsci$`0956797616665351`, "stat_p_exact")
 A second JARS guideline that can be automatically checked is whether people report effect sizes alongside their test result. Each test (e.g., a *t*-test, *F*-test, etc.) should include the corresponding effect size (e.g., a Cohen's d, or partial eta-squared). Based on a text search that uses regular expressions (regex), we can identify *t*-tests and *F*-tests that are not followed by an effect size, and warn researchers accordingly.
 
 ```{r}
+#| results: 'asis'
 module_run(
   paper = psychsci$`0956797616657319`,
   module = "stat_effect_size"
@@ -61,9 +68,18 @@ module_run(
 You can also run modules for multiple papers at once and get a summary table.
 
 ```{r}
+#| eval: false
 mo <- module_run(psychsci[1:10], "stat_effect_size")
 
 mo$summary_table
+```
+
+```{r}
+#| echo: false
+
+mo <- module_run(psychsci[1:10], "stat_effect_size")
+mo$summary_table |>
+  knitr::kable()
 ```
 
 This can be useful for meta-scientific research questions, such as whether there is an increase in the best practice to report effect sizes for *t*-tests over time. In the plot below we have run the module on 1838 published articles in the journal Psychological Science between 2014 and 2024. We can see that where a decade ago, close to half the reported t-tests would not be followed by an effect size, but a decade later, this holds for only around 25% of tests. Perhaps the introduction of a tool like metacheck can reduce this percentage even further (although it does not need to be 0, as we discuss below).
