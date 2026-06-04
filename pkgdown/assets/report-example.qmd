@@ -395,6 +395,8 @@ This module was developed by Lisa DeBruine, Daniel Lakens and Cristian Mesquida
 
 :::
 
+<p class='validation'>**Validation**: In a sample of 128 papers with 246 instances of power statements, 203 were correctly detected (true positives), 22 were missed (false negatives) and 21 were incorrectly detected (false positives). Overall, among all instances flagged as power statements, 90.6% were correct (positive prediction value).</p>
+
 ## Results Modules
 
 ### ⚠️ Exact P-Values {#exact-p-values .red}
@@ -437,6 +439,8 @@ We try to exclude figure and table notes like "* p < .05", but may not succeed a
 This module was developed by Lisa DeBruine
 
 :::
+
+<p class='validation'>**Validation**: In a sample of 225 papers containing 405 instances of non-exact p-values, th module correctly detected 269 cases (true positives) and incorrectly identified 78 (false positives). It missed 136 instances of imprecisely reported p-values (false negatives) and correctly identified 4557 cases of precisely reported p-values (true negative). Additionally, 78% of positive detections were correct (positive predictive value).</p>
 
 ### 🔍 Non-Significant P Value Check {#non-significant-p-value-check .yellow}
 
@@ -489,6 +493,8 @@ This module was developed by Daniel Lakens
 
 :::
 
+<p class='validation'>**Validation**: In a sample of 194 papers with 1602 instances of non-significant p-values, this module correctly detected 1486 of them, and incorrectly identified 153. Additionally, 91% of detections were true instances (positive predictive value). That is, when this module flags non-significant p-values in a paper, it correctly identifies an issue 91% of the time.</p>
+
 ### ⚠️ Marginal Significance {#marginal-significance .red}
 
 You described 2 effects with terms related to 'marginally significant'.
@@ -533,6 +539,8 @@ Some of the terms identified might not be problematic in some contexts, and ther
 This module was developed by Daniel Lakens
 
 :::
+
+<p class='validation'>**Validation**: In a sample of 51 papers with 87 statements, this module correctly identified 38 statements (true positives) and incorrectly flagged 22 statements (false positives). It failed to detect 27 statements. Thus, among all statements flagged by the module, 63% were genuine cases (positive predictive value). However, the module missed 42% of all true statements (false negative rate).</p>
 
 ### 🔍 Effect Sizes in t-tests and F-tests {#effect-sizes-in-t-tests-and-f-tests .yellow}
 
@@ -596,6 +604,8 @@ If you want to extend the package to detect effect sizes for additional tests, r
 This module was developed by Daniel Lakens and Lisa DeBruine
 
 :::
+
+<p class='validation'>**Validation**: In a sample of 161 papers with 1469 tests, this module correctly detected 1106 reported effect sizes (true positives) and correctly identified 295 cases where no effect size was present (true negatives). However, it missed 23 that were reported (false negatives), and incorrectly identified 45 effect sizes when none were reported (false positives). Among all instances detected by the module, 96% were true cases (positive predictive value).</p>
 
 ### ⚠️ StatCheck {#statcheck .red}
 
