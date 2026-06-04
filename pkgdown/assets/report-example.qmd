@@ -2,8 +2,8 @@
 title: MetaCheck Report
 subtitle: "To Err is Human: An Empirical Investigation"
 metacheck:
-  version: "0.0.0.9107"
-  report-created: "2026-06-02"
+  version: "0.0.1.0"
+  report-created: "2026-06-04"
 format:
   html:
     theme: 
@@ -17,7 +17,7 @@ format:
         <li class="yellow">🔍 something to check;</li> 
         <li class="green">✅️ no problems detected;</li>  
         <li class="info">ℹ️ informational only;</li>  
-        <li class="na">⚪️ not applicable;</li>  
+        <li class="na">⬜ not applicable;</li>  
         <li class="fail">☠️ check failed</li>
       <ul>
       <hr/>
@@ -90,16 +90,16 @@ Metacheck is under continuous development. Issues can be submitted [on Github](h
 
 ## Summary
 
-- ⚠️ [Funding Check](#funding-check){.red}: No funding statement was detected.  
 - ✅️ [Open Practices Check](#open-practices-check){.green}: Shared data and code detected.  
 - ✅️ [COI Check](#coi-check){.green}: A conflict of interest statement was detected.  
-- ⚠️ [Power Analysis Check](#power-analysis-check){.red}: We detected 3 potential power analyses.  
+- ⚠️ [Funding Check](#funding-check){.red}: No funding statement was detected.  
 - ℹ️ [Preregistration Check](#preregistration-check){.info}: We found 2 preregistrations.  
+- ⚠️ [Power Analysis Check](#power-analysis-check){.red}: We detected 3 potential power analyses.  
 - ⚠️ [Exact P-Values](#exact-p-values){.red}: We found 1 imprecise *p* value out of 3 detected *p* values.  
-- ⚠️ [Marginal Significance](#marginal-significance){.red}: You described 2 effects with terms related to 'marginally significant'.  
-- ⚠️ [StatCheck](#statcheck){.red}: 1 possible error in t-tests or F-tests  
 - 🔍 [Non-Significant P Value Check](#non-significant-p-value-check){.yellow}: We found 2 non-significant p values that should be checked for appropriate interpretation.  
+- ⚠️ [Marginal Significance](#marginal-significance){.red}: You described 2 effects with terms related to 'marginally significant'.  
 - 🔍 [Effect Sizes in t-tests and F-tests](#effect-sizes-in-t-tests-and-f-tests){.yellow}: We found 1 t-test and/or F-test where effect sizes are not reported.  
+- ⚠️ [StatCheck](#statcheck){.red}: 1 possible error in t-tests or F-tests  
 - 🔍 [Repository Check](#repository-check){.yellow}: 
     -  We found 14 files in 3 repositories.
     -  We found 1 README file and 2 repositories without READMEs.
@@ -120,24 +120,6 @@ Metacheck is under continuous development. Issues can be submitted [on Github](h
 
 
 ## General Modules
-
-### ⚠️ Funding Check {#funding-check .red}
-
-No funding statement was detected.
-
-No funding statement was detected. Consider adding one.
-
-::: {.callout-note title="How It Works" collapse="true"}
-
-Identify and extract funding statements.
-
-The Funding Check module uses regular expressions to check sentences for words related to funding statements. It will return the sentences in which the conflict of interest statement was found.
-
-The function incorporates code from [rtransparent](https://github.com/serghiou/rtransparent), which is no longer maintained. For their validation, see [the paper](https://doi.org/10.1371/journal.pbio.3001107).
-
-This module was developed by Daniel Lakens
-
-:::
 
 ### ✅️ Open Practices Check {#open-practices-check .green}
 
@@ -206,7 +188,144 @@ This module was developed by Daniel Lakens
 
 :::
 
+### ⚠️ Funding Check {#funding-check .red}
+
+No funding statement was detected.
+
+No funding statement was detected. Consider adding one.
+
+::: {.callout-note title="How It Works" collapse="true"}
+
+Identify and extract funding statements.
+
+The Funding Check module uses regular expressions to check sentences for words related to funding statements. It will return the sentences in which the conflict of interest statement was found.
+
+The function incorporates code from [rtransparent](https://github.com/serghiou/rtransparent), which is no longer maintained. For their validation, see [the paper](https://doi.org/10.1371/journal.pbio.3001107).
+
+This module was developed by Daniel Lakens
+
+:::
+
 ## Method Modules
+
+### ℹ️ Preregistration Check {#preregistration-check .info}
+
+We found 2 preregistrations.
+
+<details><summary>View detailed feedback</summary><div>
+
+We found 2 preregistrations.
+
+```{r}
+#| echo: false
+
+# table data --------------------------------------
+table <- structure(list(id = c("<a href='https://osf.io/48ncu' target='_blank'>48ncu</a>", 
+"<a href='https://aspredicted.org/by8i8v.pdf' target='_blank'>by8i8v</a>"
+), title = c("Papercheck Test", "To err is human"), template = c("OSF Preregistration", 
+"AsPredicted")), row.names = c(NA, -2L), class = "data.frame")
+
+# display table -----------------------------------
+metacheck::report_table(table, "auto", 2, FALSE)
+```
+
+Meta-scientific research has shown that deviations from preregistrations are often not reported or checked, and that the most common deviations concern the sample size. We recommend manually checking the full preregistration at the links above, and have provided the preregistered sample size.
+
+```{r}
+#| echo: false
+
+# table data --------------------------------------
+table <- structure(list(id = c("48ncu", "by8i8v"), sample_size = c("We randomly assigned 50 scientists to a condition where their manuscript was automatically checked for errors, and 50 scientists to a control condition with a checklist.", 
+"We randomly assigned 50 scientists to a condition where their manuscript was automatically checked for errors, and 50 scientists to a control condition with a checklist."
+)), row.names = c(NA, -2L), class = c("tbl_df", "tbl", "data.frame"
+))
+
+# display table -----------------------------------
+metacheck::report_table(table, "auto", 2, FALSE)
+```
+
+::: {.callout-tip title="Full Preregistration" collapse="true"}
+
+```{r}
+#| echo: false
+
+# table data --------------------------------------
+table <- structure(list(Field = c("template_name", "title", "id", "link", 
+"date_created", "date_modified", "date_registered", "embargo_end_date", 
+"ia_url", "description", "study_type", "blinding", "study_design_overview", 
+"data_collection_started", "existing_data_explanation", "data_collection_procedures", 
+"sample_size", "sample_size_rationale", "stopping_rule", "design_independent_variables", 
+"design_dependent_variables", "indices", "statistical_tests", 
+"inference_criteria", "data_exclusion_criteria", "outliers_and_exclusions", 
+"exploratory_analyses", "additional_comments", "research_questions", 
+"paper_id"), "Preregistration 1" = c("OSF Preregistration", "Papercheck Test", 
+"48ncu", "https://osf.io/48ncu", "2025-11-28T19:14:24.639665", 
+"2025-08-05T11:55:35.267689", "2025-11-28T19:14:24.608826", "NA", 
+"https://archive.org/details/osf-registrations-48ncu-v1", "Automation can be used to check for errors in scientific manuscripts, and inform authors about possible corrections. In this study we examine the usefulness of metacheck to improve best practices.", 
+"Experiment - A researcher randomly assigns treatments to study subjects, this includes field or lab experiments. This is also known as an intervention experiment and includes randomized controlled trials.", 
+"No blinding is involved in this study. ", "Two conditions. In one, researchers receive automated feedback. In the control condition, they do not receive feedback.", 
+"Registration prior to creation of data", "", "We will include all scientists who are willing to participate. ", 
+"We randomly assigned 50 scientists to a condition where their manuscript was automatically checked for errors, and 50 scientists to a control condition with a checklist.", 
+"Based on an a-priori power analysis for an independent t-test, with an expected effect size of d = 0.6, an alpha of 0.05, and a desired power of 0.85, we needed to collect at least 50 participants per group. ", 
+"We will stop after data from 100 researchers has been collected.", 
+"Two conditions. In one, researchers receive automated feedback. In the control condition, they do not receive feedback.", 
+"We will code all manuscripts for mistakes, and count the total number of mistakes per manuscript.", 
+"", "We will perform an independent t-test on the number of mistakes in each group.", 
+"We will interpret effects as significant if p &lt; .05", "No exclusions are expected.", 
+"No missing data is expected.<br>", "We also measured the expertise of researchers (in years) to explore whether the automated tool would be more useful, the less research experience researchers had. We also asked researchers to rate how useful they found the checklist or app on a scale from 1 (not at all) to 7 (extremely useful).", 
+"", NA, "to_err_is_human"), "Preregistration 2" = c("AsPredicted", 
+"To err is human", "by8i8v", "https://aspredicted.org/by8i8v.pdf", 
+"2025/11/27 23:20 (PT)", NA, NA, NA, NA, NA, NA, NA, "Two conditions. In one, researchers receive automated feedback. In the control condition, they do not receive feedback.", 
+NA, "No, no data have been collected for this study yet.", NA, 
+"We randomly assigned 50 scientists to a condition where their manuscript was automatically checked for errors, and 50 scientists to a control condition with a checklist.", 
+NA, NA, NA, "We will code all manuscripts for mistakes, and count the total number of mistakes per manuscript.", 
+NA, "We will perform an independent t-test on the number of mistakes in each group.", 
+NA, NA, "none are expected.", NA, "We also measured the expertise of researchers (in years) to explore whether the automated tool would be more useful, the less research experience researchers had. We also asked researchers to rate how useful they found the checklist or app on a scale from 1 (not at all) to 7 (extremely useful).", 
+"Automation can be used to check for errors in scientific manuscripts, and inform authors about possible corrections. In this study we examine the usefulness of metacheck to improve best practices.", 
+"to_err_is_human")), row.names = c("template_name", "title", 
+"id", "link", "date_created", "date_modified", "date_registered", 
+"embargo_end_date", "ia_url", "description", "study_type", "blinding", 
+"study_design_overview", "data_collection_started", "existing_data_explanation", 
+"data_collection_procedures", "sample_size", "sample_size_rationale", 
+"stopping_rule", "design_independent_variables", "design_dependent_variables", 
+"indices", "statistical_tests", "inference_criteria", "data_exclusion_criteria", 
+"outliers_and_exclusions", "exploratory_analyses", "additional_comments", 
+"research_questions", "paper_id"), class = "data.frame")
+
+# display table -----------------------------------
+metacheck::report_table(table, "auto", 5, FALSE)
+```
+
+:::
+
+::: {.callout-tip title="Learn More" collapse="true"}
+
+For metascientific articles demonstrating the rate of deviations from preregistrations, see:
+
+van den Akker O, Bakker M, van Assen M, Pennington C, Verweij L, Elsherif M, Claesen A, Gaillard S, Yeung S, Frankenberger J, Krautter K, Cockcroft J, Kreuer K, Evans T, Heppel F, Schoch S, Korbmacher M, Yamada Y, Albayrak-Aydemir N, Wicherts J (2024). &ldquo;The potential of preregistration in psychology: Assessing preregistration producibility and preregistration-study consistency.&rdquo; <em>Psychological Methods</em>. <a href="https://doi.org/10.1037/met0000687">doi:10.1037/met0000687</a>.
+
+For educational material on how to report deviations from preregistrations, see:
+
+Lakens, Daniël (2024). &ldquo;When and How to Deviate From a Preregistration.&rdquo; <em>Collabra: Psychology</em>, <b>10</b>(1), 117094. <a href="https://doi.org/10.1525/collabra.117094">doi:10.1525/collabra.117094</a>.
+
+:::
+
+</div></details>
+
+::: {.callout-note title="How It Works" collapse="true"}
+
+Retrieve information from preregistrations in a standardised way,
+and make them easier to check.
+
+The Preregistration Check module identifies preregistrations on the OSF and AsPredicted based on links in the manuscript, retrieves the preregistration text, and organizes the information into a template. The module then uses regular expressions to identify text from AsPredicted, and the API to retrieve text from the OSF. The information in the preregistration is returned.
+
+The module can’t extract information from non-structured preregistration templates (i.e., where the preregistration is uploaded in a single text field) and it can’t retrieve information in preregistrations that are stored as text documents on the OSF.
+
+If you want to extend the package to be able to download information from other preregistration sites, reach out to the Metacheck development team.
+
+This module was developed by Daniel Lakens and Lisa DeBruine
+
+:::
 
 ### ⚠️ Power Analysis Check {#power-analysis-check .red}
 
@@ -224,9 +343,9 @@ Some essential information could not be detected: alpha_level, effect_size, effe
 # table data --------------------------------------
 table <- structure(list(power_id = 1:3, power_type = c("apriori", "sensitivity", 
 "apriori"), statistical_test = c("unpaired t-test", "unpaired t-test", 
-"unpaired t-test"), sample_size = c(50L, 50L, 50L), alpha_level = c(0.05, 
+"unpaired t-test"), sample_size = c(30L, 50L, 50L), alpha_level = c(0.05, 
 NA, NA), power = c(0.8, 0.8, 0.8), effect_size = c(NA, 0.5, NA
-), effect_size_metric = c("Cohen's d", "Cohen's d", NA), software = c("R", 
+), effect_size_metric = c("Cohen's d", "Cohen's d", NA), software = c("G*Power", 
 NA, "pwr")), row.names = c(NA, -3L), class = c("tbl_df", "tbl", 
 "data.frame"))
 
@@ -276,125 +395,6 @@ This module was developed by Lisa DeBruine, Daniel Lakens and Cristian Mesquida
 
 :::
 
-### ℹ️ Preregistration Check {#preregistration-check .info}
-
-We found 2 preregistrations.
-
-<details><summary>View detailed feedback</summary><div>
-
-We found 2 preregistrations.
-
-```{r}
-#| echo: false
-
-# table data --------------------------------------
-table <- structure(list(id = c("<a href='https://osf.io/48ncu' target='_blank'>48ncu</a>", 
-"<a href='https://aspredicted.org/by8i8v.pdf' target='_blank'>by8i8v</a>"
-), title = c("Papercheck Test", "To err is human"), template = c("OSF Preregistration", 
-"AsPredicted")), class = "data.frame", row.names = c(NA, -2L))
-
-# display table -----------------------------------
-metacheck::report_table(table, "auto", 2, FALSE)
-```
-
-Meta-scientific research has shown that deviations from preregistrations are often not reported or checked, and that the most common deviations concern the sample size. We recommend manually checking the full preregistration at the links above, and have provided the preregistered sample size.
-
-```{r}
-#| echo: false
-
-# table data --------------------------------------
-table <- structure(list(id = c("48ncu", "by8i8v"), sample_size = c("We randomly assigned 50 scientists to a condition where their manuscript was automatically checked for errors, and 50 scientists to a control condition with a checklist.", 
-"We randomly assigned 50 scientists to a condition where their manuscript was automatically checked for errors, and 50 scientists to a control condition with a checklist."
-)), row.names = c(NA, -2L), class = c("tbl_df", "tbl", "data.frame"
-))
-
-# display table -----------------------------------
-metacheck::report_table(table, "auto", 2, FALSE)
-```
-
-::: {.callout-tip title="Full Preregistration" collapse="true"}
-
-```{r}
-#| echo: false
-
-# table data --------------------------------------
-table <- structure(list(Field = c("template_name", "title", "id", "link", 
-"date_created", "date_modified", "date_registered", "embargo_end_date", 
-"ia_url", "description", "study_type", "blinding", "study_design_overview", 
-"data_collection_started", "existing_data_explanation", "data_collection_procedures", 
-"sample_size", "sample_size_rationale", "stopping_rule", "design_independent_variables", 
-"design_dependent_variables", "indices", "statistical_tests", 
-"inference_criteria", "data_exclusion_criteria", "outliers_and_exclusions", 
-"exploratory_analyses", "additional_comments", "research_questions", 
-"paper_id"), "Preregistration 1" = c("OSF Preregistration", "Papercheck Test", 
-"48ncu", "https://osf.io/48ncu", "2025-11-28T19:14:24.639665", 
-"2025-08-05T11:55:35.267689", "2025-11-28T19:14:24.608826", "NA", 
-"https://archive.org/details/osf-registrations-48ncu-v1", "Automation can be used to check for errors in scientific manuscripts, and inform authors about possible corrections. In this study we examine the usefulness of metacheck to improve best practices.", 
-"Experiment - A researcher randomly assigns treatments to study subjects, this includes field or lab experiments. This is also known as an intervention experiment and includes randomized controlled trials.", 
-"No blinding is involved in this study. ", "Two conditions. In one, researchers receive automated feedback. In the control condition, they do not receive feedback.", 
-"Registration prior to creation of data", "", "We will include all scientists who are willing to participate. ", 
-"We randomly assigned 50 scientists to a condition where their manuscript was automatically checked for errors, and 50 scientists to a control condition with a checklist.", 
-"Based on an a-priori power analysis for an independent t-test, with an expected effect size of d = 0.6, an alpha of 0.05, and a desired power of 0.85, we needed to collect at least 50 participants per group. ", 
-"We will stop after data from 100 researchers has been collected.", 
-"Two conditions. In one, researchers receive automated feedback. In the control condition, they do not receive feedback.", 
-"We will code all manuscripts for mistakes, and count the total number of mistakes per manuscript.", 
-"", "We will perform an independent t-test on the number of mistakes in each group.", 
-"We will interpret effects as significant if p &lt; .05", "No exclusions are expected.", 
-"No missing data is expected.\n", "We also measured the expertise of researchers (in years) to explore whether the automated tool would be more useful, the less research experience researchers had. We also asked researchers to rate how useful they found the checklist or app on a scale from 1 (not at all) to 7 (extremely useful).", 
-"", NA, "to_err_is_human"), "Preregistration 2" = c("AsPredicted", 
-"To err is human", "by8i8v", "https://aspredicted.org/by8i8v.pdf", 
-"2025/11/27 23:20 (PT)", NA, NA, NA, NA, NA, NA, NA, "Two conditions. In one, researchers receive automated feedback. In the control condition, they do not receive feedback.", 
-NA, "No, no data have been collected for this study yet.", NA, 
-"We randomly assigned 50 scientists to a condition where their manuscript was automatically checked for errors, and 50 scientists to a control condition with a checklist.", 
-NA, NA, NA, "We will code all manuscripts for mistakes, and count the total number of mistakes per manuscript.", 
-NA, "We will perform an independent t-test on the number of mistakes in each group.", 
-NA, NA, "none are expected.", NA, "We also measured the expertise of researchers (in years) to explore whether the automated tool would be more useful, the less research experience researchers had. We also asked researchers to rate how useful they found the checklist or app on a scale from 1 (not at all) to 7 (extremely useful).", 
-"Automation can be used to check for errors in scientific manuscripts, and inform authors about possible corrections. In this study we examine the usefulness of metacheck to improve best practices.", 
-"to_err_is_human")), class = "data.frame", row.names = c("template_name", 
-"title", "id", "link", "date_created", "date_modified", "date_registered", 
-"embargo_end_date", "ia_url", "description", "study_type", "blinding", 
-"study_design_overview", "data_collection_started", "existing_data_explanation", 
-"data_collection_procedures", "sample_size", "sample_size_rationale", 
-"stopping_rule", "design_independent_variables", "design_dependent_variables", 
-"indices", "statistical_tests", "inference_criteria", "data_exclusion_criteria", 
-"outliers_and_exclusions", "exploratory_analyses", "additional_comments", 
-"research_questions", "paper_id"))
-
-# display table -----------------------------------
-metacheck::report_table(table, "auto", 5, FALSE)
-```
-
-:::
-
-::: {.callout-tip title="Learn More" collapse="true"}
-
-For metascientific articles demonstrating the rate of deviations from preregistrations, see:
-
-van den Akker O, Bakker M, van Assen M, Pennington C, Verweij L, Elsherif M, Claesen A, Gaillard S, Yeung S, Frankenberger J, Krautter K, Cockcroft J, Kreuer K, Evans T, Heppel F, Schoch S, Korbmacher M, Yamada Y, Albayrak-Aydemir N, Wicherts J (2024). &ldquo;The potential of preregistration in psychology: Assessing preregistration producibility and preregistration-study consistency.&rdquo; <em>Psychological Methods</em>. <a href="https://doi.org/10.1037/met0000687">doi:10.1037/met0000687</a>.
-
-For educational material on how to report deviations from preregistrations, see:
-
-Lakens, Daniël (2024). &ldquo;When and How to Deviate From a Preregistration.&rdquo; <em>Collabra: Psychology</em>, <b>10</b>(1), 117094. <a href="https://doi.org/10.1525/collabra.117094">doi:10.1525/collabra.117094</a>.
-
-:::
-
-</div></details>
-
-::: {.callout-note title="How It Works" collapse="true"}
-
-Retrieve information from preregistrations in a standardised way,
-and make them easier to check.
-
-The Preregistration Check module identifies preregistrations on the OSF and AsPredicted based on links in the manuscript, retrieves the preregistration text, and organizes the information into a template. The module then uses regular expressions to identify text from AsPredicted, and the API to retrieve text from the OSF. The information in the preregistration is returned.
-
-The module can’t extract information from non-structured preregistration templates (i.e., where the preregistration is uploaded in a single text field) and it can’t retrieve information in preregistrations that are stored as text documents on the OSF.
-
-If you want to extend the package to be able to download information from other preregistration sites, reach out to the Metacheck development team.
-
-This module was developed by Daniel Lakens and Lisa DeBruine
-
-:::
-
 ## Results Modules
 
 ### ⚠️ Exact P-Values {#exact-p-values .red}
@@ -437,99 +437,6 @@ We try to exclude figure and table notes like "* p < .05", but may not succeed a
 This module was developed by Lisa DeBruine
 
 :::
-
-### ⚠️ Marginal Significance {#marginal-significance .red}
-
-You described 2 effects with terms related to 'marginally significant'.
-
-<details><summary>View detailed feedback</summary><div>
-
-You described effects with terms related to 'marginally significant'. If *p* values above 0.05 are interpreted as an effect, you inflate the alpha level, and increase the Type 1 error rate. If a *p* value is higher than the prespecified alpha level, it should be interpreted as a non-significant result.
-
-```{r}
-#| echo: false
-
-# table data --------------------------------------
-table <- structure(list(Text = c("The paper shows examples of (1) open and closed OSF links; (2a) citation of retracted papers, (2b) citations without a doi, (2c) citations with Pubpeer comments, (2d) citations in the FLoRA replication database, and (2e) missing/mismatched/incorrect citations and references; (3a) R files with code on GitHub that do not load libraries in one location, (3b) load files that are not shared in the repository, (3c) lack comments, and (3d) have absolute file paths; (4) imprecise reporting of non-significant p-values; (5) tests with and without effect sizes; (6) use of \"marginally significant\" to describe non-significant findings; (7) a power analysis reporting some of the essential attributes; and (8) retrieving information from preregistrations.", 
-"On average researchers in the experimental condition found the app marginally significantly more useful (M = 5.06) than researchers in the control condition found the checklist (M = 4.5), t(97.2) = -1.96, p =0.152."
-), "Section Header" = c("Abstract", "Procedure")), row.names = c(NA, 
--2L), class = c("tbl_df", "tbl", "data.frame"))
-
-# display table -----------------------------------
-metacheck::report_table(table, "auto", 2, FALSE)
-```
-
-::: {.callout-tip title="Learn More" collapse="true"}
-
-For metascientific articles demonstrating the rate at which non-significant p-values are interpreted as marginally significant, see:
-
-Olsson-Collentine, A., van Assen, M. MAL, Hartgerink &amp;, J. CH (2019). &ldquo;The Prevalence of Marginally Significant Results in Psychology Over Time.&rdquo; <em>Psychological Science</em>, <b>30</b>, 576&ndash;586. <a href="https://doi.org/10.1177/0956797619830326">doi:10.1177/0956797619830326</a>.
-
-For the list of terms used to identifify marginally significant results, see this [blog post by Matthew Hankins](https://web.archive.org/web/20251001114321/https://mchankins.wordpress.com/2013/04/21/still-not-significant-2/).
-
-:::
-
-</div></details>
-
-::: {.callout-note title="How It Works" collapse="true"}
-
-List all sentences that describe an effect as 'marginally significant'.
-
-The marginal module searches for regular expressions that match a predefined pattern. The list of terms is a subset of those listed in a [blog post by Matthew Hankins](https://web.archive.org/web/20251001114321/https://mchankins.wordpress.com/2013/04/21/still-not-significant-2/). The module returns all sentences that match terms describing ‘marginally significant’ results.
-
-Some of the terms identified might not be problematic in some contexts, and there are ways to describe ‘marginal significance’ that are not detected by the module.
-
-This module was developed by Daniel Lakens
-
-:::
-
-### ⚠️ StatCheck {#statcheck .red}
-
-1 possible error in t-tests or F-tests
-
-<details><summary>View detailed feedback</summary><div>
-
-We detected possible errors in test statistics. Note that as the accuracy of statcheck has only been validated for *t*-tests and *F*-tests. As Metacheck only uses validated modules, we only provide statcheck results for *t* tests and *F*-tests.
-
-```{r}
-#| echo: false
-
-# table data --------------------------------------
-table <- structure(list(Text = "t(97.2) = -1.96, p =0.152", "Recomputed p" = 0.05286, 
-    Sentence = "On average researchers in the experimental condition found the app marginally significantly more useful (M = 5.06) than researchers in the control condition found the checklist (M = 4.5), t(97.2) = -1.96, p =0.152."), row.names = 2L, class = c("statcheck", 
-"data.frame"))
-
-# display table -----------------------------------
-metacheck::report_table(table, c("10em", NA, NA, NA), 2, FALSE)
-```
-
-::: {.callout-tip title="Learn More" collapse="true"}
-
-For metascientific research on the validity of statcheck, and it's usefulness to prevent statistical reporting errors, see:
-
-Nuijten M, van Assen M, Hartgerink C, Epskamp S, Wicherts J (2017). &ldquo;The validity of the tool &quot;statcheck&quot; in discovering statistical reporting inconsistencies.&rdquo; <a href="https://doi.org/10.31234/osf.io/tcxaja">doi:10.31234/osf.io/tcxaja</a>. Preprint.
-
-Nuijten M, Wicherts J (2023). &ldquo;The effectiveness of implementing statcheck in the peer review process to avoid statistical reporting errors.&rdquo; <a href="https://doi.org/10.31234/osf.io/bxau9">doi:10.31234/osf.io/bxau9</a>. Preprint.
-
-:::
-
-</div></details>
-
-::: {.callout-note title="How It Works" collapse="true"}
-
-Check consistency of p-values and test statistics
-
-The Statcheck module runs Statcheck. Statcheck searches for regular expressions that match a predefined pattern, and identifies APA reported statistical tests. More information on the package can be found at <https://github.com/cran/statcheck>. The module only returns Statcheck results for t-tests and F-tests, as these are the only tests which have been validated, see <https://osf.io/preprints/psyarxiv/tcxaj_v1/>.
-
-Statcheck was developed by Michèle Nuijten and Sascha Epskamp.
-
-Statcheck considers p = 0.000 an error, as you should report p < 0.001. Furthermore, p < 0.03 is an error if the p-value was 0.031, and one should simply report exact p-values (p = 0.031). Statcheck might miss one-sided tests, and falsely assume the p-value is incorrect. For more information, see [StatCheck](https://statcheck.io/).
-
-This module was developed by Daniel Lakens and Lisa DeBruine
-
-:::
-
-<p class='validation'>**Validation**: In a sample of 685 tests with 34 instances of inconsistent reporting, Statcheck correctly detected 34 of them, and incorrectly identified 26. Therefore 0% of true instances were missed, and 43% of detections were false positives. See <https://osf.io/preprints/psyarxiv/tcxaj_v1/> for more details of the validation.</p>
 
 ### 🔍 Non-Significant P Value Check {#non-significant-p-value-check .yellow}
 
@@ -577,6 +484,51 @@ This module checks for imprecisely reported p values. If p > .05 is detected, it
 The nonsignificant p-value check searches for regular expressions that match a predefined pattern. The module identifies all p-values in a manuscript and selects those that are not reported to be smaller than or equal to 0.05. It returns all sentences containing non-significant p-values.
 
 In the future, the Metacheck team aims to incorporate a machine learning classifier to only return sentences likely to contain misinterpretations. If you want to help to improve the module, reach out to the Metacheck development team.
+
+This module was developed by Daniel Lakens
+
+:::
+
+### ⚠️ Marginal Significance {#marginal-significance .red}
+
+You described 2 effects with terms related to 'marginally significant'.
+
+<details><summary>View detailed feedback</summary><div>
+
+You described effects with terms related to 'marginally significant'. If *p* values above 0.05 are interpreted as an effect, you inflate the alpha level, and increase the Type 1 error rate. If a *p* value is higher than the prespecified alpha level, it should be interpreted as a non-significant result.
+
+```{r}
+#| echo: false
+
+# table data --------------------------------------
+table <- structure(list(Text = c("The paper shows examples of (1) open and closed OSF links; (2a) citation of retracted papers, (2b) citations without a doi, (2c) citations with Pubpeer comments, (2d) citations in the FLoRA replication database, and (2e) missing/mismatched/incorrect citations and references; (3a) R files with code on GitHub that do not load libraries in one location, (3b) load files that are not shared in the repository, (3c) lack comments, and (3d) have absolute file paths; (4) imprecise reporting of non-significant p-values; (5) tests with and without effect sizes; (6) use of \"marginally significant\" to describe non-significant findings; (7) a power analysis reporting some of the essential attributes; and (8) retrieving information from preregistrations.", 
+"On average researchers in the experimental condition found the app marginally significantly more useful (M = 5.06) than researchers in the control condition found the checklist (M = 4.5), t(97.2) = -1.96, p =0.152."
+), "Section Header" = c("Abstract", "Procedure")), row.names = c(NA, 
+-2L), class = c("tbl_df", "tbl", "data.frame"))
+
+# display table -----------------------------------
+metacheck::report_table(table, "auto", 2, FALSE)
+```
+
+::: {.callout-tip title="Learn More" collapse="true"}
+
+For metascientific articles demonstrating the rate at which non-significant p-values are interpreted as marginally significant, see:
+
+Olsson-Collentine, A., van Assen, M. MAL, Hartgerink &amp;, J. CH (2019). &ldquo;The Prevalence of Marginally Significant Results in Psychology Over Time.&rdquo; <em>Psychological Science</em>, <b>30</b>, 576&ndash;586. <a href="https://doi.org/10.1177/0956797619830326">doi:10.1177/0956797619830326</a>.
+
+For the list of terms used to identifify marginally significant results, see this [blog post by Matthew Hankins](https://web.archive.org/web/20251001114321/https://mchankins.wordpress.com/2013/04/21/still-not-significant-2/).
+
+:::
+
+</div></details>
+
+::: {.callout-note title="How It Works" collapse="true"}
+
+List all sentences that describe an effect as 'marginally significant'.
+
+The marginal module searches for regular expressions that match a predefined pattern. The list of terms is a subset of those listed in a [blog post by Matthew Hankins](https://web.archive.org/web/20251001114321/https://mchankins.wordpress.com/2013/04/21/still-not-significant-2/). The module returns all sentences that match terms describing ‘marginally significant’ results.
+
+Some of the terms identified might not be problematic in some contexts, and there are ways to describe ‘marginal significance’ that are not detected by the module.
 
 This module was developed by Daniel Lakens
 
@@ -644,6 +596,54 @@ If you want to extend the package to detect effect sizes for additional tests, r
 This module was developed by Daniel Lakens and Lisa DeBruine
 
 :::
+
+### ⚠️ StatCheck {#statcheck .red}
+
+1 possible error in t-tests or F-tests
+
+<details><summary>View detailed feedback</summary><div>
+
+We detected possible errors in test statistics. Note that as the accuracy of statcheck has only been validated for *t*-tests and *F*-tests. As Metacheck only uses validated modules, we only provide statcheck results for *t* tests and *F*-tests.
+
+```{r}
+#| echo: false
+
+# table data --------------------------------------
+table <- structure(list(Text = "t(97.2) = -1.96, p =0.152", "Recomputed p" = 0.05286, 
+    Sentence = "On average researchers in the experimental condition found the app marginally significantly more useful (M = 5.06) than researchers in the control condition found the checklist (M = 4.5), t(97.2) = -1.96, p =0.152."), row.names = 2L, class = c("statcheck", 
+"data.frame"))
+
+# display table -----------------------------------
+metacheck::report_table(table, c("10em", NA, NA, NA), 2, FALSE)
+```
+
+::: {.callout-tip title="Learn More" collapse="true"}
+
+For metascientific research on the validity of statcheck, and it's usefulness to prevent statistical reporting errors, see:
+
+Nuijten M, van Assen M, Hartgerink C, Epskamp S, Wicherts J (2017). &ldquo;The validity of the tool &quot;statcheck&quot; in discovering statistical reporting inconsistencies.&rdquo; <a href="https://doi.org/10.31234/osf.io/tcxaja">doi:10.31234/osf.io/tcxaja</a>. Preprint.
+
+Nuijten M, Wicherts J (2023). &ldquo;The effectiveness of implementing statcheck in the peer review process to avoid statistical reporting errors.&rdquo; <a href="https://doi.org/10.31234/osf.io/bxau9">doi:10.31234/osf.io/bxau9</a>. Preprint.
+
+:::
+
+</div></details>
+
+::: {.callout-note title="How It Works" collapse="true"}
+
+Check consistency of p-values and test statistics
+
+The Statcheck module runs Statcheck. Statcheck searches for regular expressions that match a predefined pattern, and identifies APA reported statistical tests. More information on the package can be found at <https://github.com/cran/statcheck>. The module only returns Statcheck results for t-tests and F-tests, as these are the only tests which have been validated, see <https://osf.io/preprints/psyarxiv/tcxaj_v1/>.
+
+Statcheck was developed by Michèle Nuijten and Sascha Epskamp.
+
+Statcheck considers p = 0.000 an error, as you should report p < 0.001. Furthermore, p < 0.03 is an error if the p-value was 0.031, and one should simply report exact p-values (p = 0.031). Statcheck might miss one-sided tests, and falsely assume the p-value is incorrect. For more information, see [StatCheck](https://statcheck.io/).
+
+This module was developed by Daniel Lakens and Lisa DeBruine
+
+:::
+
+<p class='validation'>**Validation**: In a sample of 685 tests with 34 instances of inconsistent reporting, Statcheck correctly detected 34 of them, and incorrectly identified 26. Therefore 0% of true instances were missed, and 43% of detections were false positives. See <https://osf.io/preprints/psyarxiv/tcxaj_v1/> for more details of the validation.</p>
 
 ### 🔍 Repository Check {#repository-check .yellow}
 
@@ -780,17 +780,16 @@ metacheck::report_table(table, "auto", 5, FALSE)
 
 #### Absolute Paths
 
-Best programming practice is to use relative file paths instead of absolute file paths (e.g., C://Lakens/files) as these folder names do not exist on other computers. The following absolute file paths were found in 4 code files:
+Best programming practice is to use relative file paths (e.g., './files') instead of absolute file paths (e.g., 'C://Lakens/project_dir/files') as these folder names do not exist on other computers. The following absolute file paths were found in 4 code files. However, these may be false positives in code like `paste0(dir, '/file.csv')`. 
 
 ```{r}
 #| echo: false
 
 # table data --------------------------------------
 table <- structure(list("File name" = c("test_script.R", "bad.R", "bad.Rmd", 
-"Code/Study 1.r"), "Absolute paths found" = c("\"/lisa/file.csv\", \"C:/lisa/file.csv\"", 
-"\"C://Lakens/files/example.csv\"", "\"C://Lakens/files/example.csv\", \"C://Lakens/files/example2.csv\"", 
-"\"/lisa/file.csv\", \"C:/lisa/file.csv\"")), row.names = c(NA, 
-4L), class = "data.frame")
+"Code/Study 1.r"), "Absolute paths found" = c("/lisa/file.csv<br>C:/lisa/file.csv", 
+"C://Lakens/files/example.csv", "C://Lakens/files/example.csv<br>C://Lakens/files/example2.csv", 
+"/lisa/file.csv<br>C:/lisa/file.csv")), row.names = c(NA, 4L), class = "data.frame")
 
 # display table -----------------------------------
 metacheck::report_table(table, "auto", 5, FALSE)

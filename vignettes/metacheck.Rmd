@@ -429,15 +429,8 @@ For now, the OSF API does not let us retrieve any information about view-only li
 You can set the argument `recursive = TRUE` to also retrieve information about all nodes and files that are contained by the OSF link.
 
 ```{r}
-osf_api_calls(0)
 all_contents <- osf_info(links$href[1], recursive = TRUE)
-n_calls <- osf_api_calls()
-```
 
-
-The function `osf_api_calls()` lets you reset and retrieve the number of API calls made since the last reset. You can see that the project `r links$href[[1]]` had `r sum(all_contents$osf_type == "nodes")` nodes and `r sum(all_contents$osf_type == "files")` files, which required `r n_calls` API calls. 
-
-```{r}
 sum(all_contents$osf_type == "nodes")
 ```
 
