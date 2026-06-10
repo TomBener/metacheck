@@ -13,7 +13,7 @@
 
     <a class="navbar-brand me-2" href="../index.html">metacheck</a>
 
-    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Released version">0.0.1.0</small>
+    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Released version">0.0.1.9001</small>
 
 
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -41,8 +41,19 @@
     </div>
 
     <div class="section level2">
+<h2 class="pkg-version" data-toc-text="0.0.1.9001" id="metacheck-0019001">metacheck 0.0.1.9001<a class="anchor" aria-label="anchor" href="#metacheck-0019001"></a></h2>
+<ul><li>
+<code>extract_eq</code> now catches “Hedges’s g” (formaerly just “g”) and returns values ordered by paper_id, text_id and group_id</li>
+<li>Updated <code>xml_read_grobid()</code> (an internal helper function for reading Grobid XMLs) to handle some stats better (e.g., “… g z =” is now read as “… gz =”)</li>
+<li>Updated grobid XML read-in to better handle URLs with ? in the middle (less likely to cause an incorrect sentence split), and to remove no-content headers from the text table</li>
+<li>Fixed some bibliography parsing problems with non-articles.</li>
+<li>Updated <code>psychsci</code> for the read-in improvements.</li>
+<li>
+<code>retractionwatch</code> database updated</li>
+</ul></div>
+    <div class="section level2">
 <h2 class="pkg-version" data-toc-text="0.0.1.0" id="metacheck-0010">metacheck 0.0.1.0<a class="anchor" aria-label="anchor" href="#metacheck-0010"></a></h2>
-<p>Our beta release! We’ve made so many changes, and we’re sure there are still many bugs to ctach and things to improve, but we need other people to start using metacheck to help us.</p>
+<p>Our beta release! We’ve made so many changes, and we’re sure there are still many bugs to catch and things to improve, but we need other people to start using metacheck to help us.</p>
 </div>
     <div class="section level2">
 <h2 class="pkg-version" data-toc-text="0.0.0.9107" id="metacheck-0009107">metacheck 0.0.0.9107<a class="anchor" aria-label="anchor" href="#metacheck-0009107"></a></h2>
