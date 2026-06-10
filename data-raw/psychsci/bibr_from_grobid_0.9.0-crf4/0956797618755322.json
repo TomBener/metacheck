@@ -1,0 +1,4392 @@
+{
+  "paper_id": "0956797618755322",
+  "info": [
+    {
+      "title": "Structure and Implementation of Novel Task Rules: A Cross-Sectional Developmental Study",
+      "keywords": [
+        [
+          ["cognitive development", "rule implementation", "task instructions", "intention-based reflexivity", "interference", "open data"]
+        ]
+      ],
+      "doi": "10.1177/0956797618755322",
+      "file_hash": "401bb5a6652bf544",
+      "input_format": "grobid 0.9.0",
+      "file_name": "data-raw/psychsci/grobid_0.9.0-crf/0956797618755322.xml",
+      "bibr_version": "10.0",
+      "paper_type": "unknown",
+      "paper_type_confidence": 0,
+      "oecd_l1": null,
+      "oecd_l2": null,
+      "oecd_confidence": null
+    }
+  ],
+  "author": [
+    {
+      "author_id": 1,
+      "given": "Frederick",
+      "family": "Verbruggen",
+      "affiliation": "Department of Experimental Psychology\n\t\t\t\t\t\t\t\tGhent University",
+      "email": "frederick.verbruggen@ugent.be",
+      "corresponding": false,
+      "orcid": "",
+      "role": []
+    },
+    {
+      "author_id": 2,
+      "given": "Rossy",
+      "family": "Mclaren",
+      "affiliation": "School of Psychology\n\t\t\t\t\t\t\t\tUniversity of Exeter",
+      "email": "",
+      "corresponding": false,
+      "orcid": "",
+      "role": []
+    },
+    {
+      "author_id": 3,
+      "given": "Maayan",
+      "family": "Pereg",
+      "affiliation": "Department of Psychology\n\t\t\t\t\t\t\t\tBen-Gurion University of the Negev",
+      "email": "",
+      "corresponding": false,
+      "orcid": "",
+      "role": []
+    },
+    {
+      "author_id": 4,
+      "given": "Nachshon",
+      "family": "Meiran",
+      "affiliation": "Department of Psychology\n\t\t\t\t\t\t\t\tBen-Gurion University of the Negev",
+      "email": "",
+      "corresponding": false,
+      "orcid": "",
+      "role": []
+    }
+  ],
+  "text": [
+    {
+      "text": "The present study examined two critical aspects of novel task performance, namely the abilities to follow instructions and to structure tasks hierarchically.",
+      "text_id": 1,
+      "paragraph_id": 1,
+      "section_id": 0,
+      "page_number": null,
+      "formatted": null
+    },
+    {
+      "text": "These two issues are related when novel task instructions have to be deferred.",
+      "text_id": 2,
+      "paragraph_id": 1,
+      "section_id": 0,
+      "page_number": null,
+      "formatted": null
+    },
+    {
+      "text": "For example, when you are about to travel to the United Kingdom for the first time, a friend may tell you that you have to look to the left when crossing a street.",
+      "text_id": 3,
+      "paragraph_id": 1,
+      "section_id": 0,
+      "page_number": null,
+      "formatted": null
+    },
+    {
+      "text": "However, you should follow her instructions only once you have reached your destination, and failure to do so could have serious negative consequences.",
+      "text_id": 4,
+      "paragraph_id": 1,
+      "section_id": 0,
+      "page_number": null,
+      "formatted": null
+    },
+    {
+      "text": "Here, we tested how children and late adolescents performed in such novel task situations.",
+      "text_id": 5,
+      "paragraph_id": 1,
+      "section_id": 0,
+      "page_number": null,
+      "formatted": null
+    },
+    {
+      "text": "When instructions are presented, a task \"model\" or \"set\" has to be created.",
+      "text_id": 6,
+      "paragraph_id": 2,
+      "section_id": 0,
+      "page_number": null,
+      "formatted": null
+    },
+    {
+      "text": "This involves selecting and gating information from the perceptual and motor systems (Cole, Laurent, & Stocco, 2013) and chunking relevant task components (Bhandari & Duncan, 2014).",
+      "text_id": 7,
+      "paragraph_id": 2,
+      "section_id": 0,
+      "page_number": null,
+      "formatted": "This involves selecting and gating information from the perceptual and motor systems <ref type=\"bibr\" target=\"#b9\">(Cole, Laurent, &amp; Stocco, 2013)<\/ref> and chunking relevant task components <ref type=\"bibr\" target=\"#b2\">(Bhandari &amp; Duncan, 2014)<\/ref>."
+    },
+    {
+      "text": "Such cognitive structures allow flexible and rule-based behavior in complex environments (Bhandari, Badre, & Frank, 2017).",
+      "text_id": 8,
+      "paragraph_id": 2,
+      "section_id": 0,
+      "page_number": null,
+      "formatted": "Such cognitive structures allow flexible and rule-based behavior in complex environments <ref type=\"bibr\" target=\"#b1\">(Bhandari, Badre, &amp; Frank, 2017)<\/ref>."
+    },
+    {
+      "text": "Once task structures are created, they have to be implemented.",
+      "text_id": 9,
+      "paragraph_id": 3,
+      "section_id": 0,
+      "page_number": null,
+      "formatted": null
+    },
+    {
+      "text": "Instructed rules have powerful effects on behavior when they are implemented or maintained for future use (Meiran, Liefooghe, & De Houwer, 2017).",
+      "text_id": 10,
+      "paragraph_id": 3,
+      "section_id": 0,
+      "page_number": null,
+      "formatted": "Instructed rules have powerful effects on behavior when they are implemented or maintained for future use <ref type=\"bibr\" target=\"#b17\">(Meiran, Liefooghe, &amp; De Houwer, 2017)<\/ref>."
+    },
+    {
+      "text": "Indeed, even if their execution is deferred (as in the example above), rules can influence ongoing performance.",
+      "text_id": 11,
+      "paragraph_id": 3,
+      "section_id": 0,
+      "page_number": null,
+      "formatted": null
+    },
+    {
+      "text": "In a recent study, subjects were presented with novel instructions at the beginning of each miniblock http://crossmark.crossref.org/dialog/?doi=10.1177%2F0956797618755322&domain=pdf&date_stamp=2018-05-10 research-article2018 .",
+      "text_id": 12,
+      "paragraph_id": 3,
+      "section_id": 0,
+      "page_number": null,
+      "formatted": "In a recent study, subjects were presented with novel instructions at the beginning of each miniblock <ref type=\"url\" target=\"http://crossmark.crossref.org/dialog/?doi=10.1177%2F0956797618755322&amp;domain=pdf&amp;date_stamp=2018-05-10\">755322P SSXXX10.1177/0956797618755322Verbruggen et al.Intention-Based Interference<\/ref> research-article2018 ."
+    },
+    {
+      "text": "These instructions described the stimulus-response mapping for the go phase of the block (e.g., \"© = left, £ = right\").",
+      "text_id": 13,
+      "paragraph_id": 4,
+      "section_id": 1,
+      "page_number": null,
+      "formatted": null
+    },
+    {
+      "text": "Before subjects could apply these instructions, they had to advance through a next phase (the go and next phases were indicated by the stimulus color).",
+      "text_id": 14,
+      "paragraph_id": 4,
+      "section_id": 1,
+      "page_number": null,
+      "formatted": null
+    },
+    {
+      "text": "In this phase, stimuli were presented, but their identity could be ignored, and subjects simply had to press the same next key on each trial (which was either the left or right key).",
+      "text_id": 15,
+      "paragraph_id": 4,
+      "section_id": 1,
+      "page_number": null,
+      "formatted": null
+    },
+    {
+      "text": "Even though the stimulus-response rules had never been applied before, subjects were slower to respond to next stimuli when the next response and the go response were incompatible (\"£\" requiring a left response in the next phase but a right response in the go phase) compared with when they were compatible (\"©\" requiring a left response in both phases).",
+      "text_id": 16,
+      "paragraph_id": 4,
+      "section_id": 1,
+      "page_number": null,
+      "formatted": null
+    },
+    {
+      "text": "This instruction-based interference effect shows that instructions enable \"automatic\" task performance (Meiran et al., 2017).",
+      "text_id": 17,
+      "paragraph_id": 4,
+      "section_id": 1,
+      "page_number": null,
+      "formatted": "This instruction-based interference effect shows that instructions enable \"automatic\" task performance <ref type=\"bibr\" target=\"#b17\">(Meiran et al., 2017)<\/ref>."
+    },
+    {
+      "text": "Several lines of research suggest that interference during the task-implementation or execution phases can be reduced by creating hierarchical task structures (Cole, Braver, & Meiran, 2017).",
+      "text_id": 18,
+      "paragraph_id": 5,
+      "section_id": 1,
+      "page_number": null,
+      "formatted": "Several lines of research suggest that interference during the task-implementation or execution phases can be reduced by creating hierarchical task structures <ref type=\"bibr\" target=\"#b10\">(Cole, Braver, &amp; Meiran, 2017)<\/ref>."
+    },
+    {
+      "text": "In a hierarchical task structure, a task cue (such as stimulus color) or context determines the relevant response rules.",
+      "text_id": 19,
+      "paragraph_id": 5,
+      "section_id": 1,
+      "page_number": null,
+      "formatted": null
+    },
+    {
+      "text": "Such hierarchical information can shield ongoing tasks (e.g., traveling to the airport) from pending instructions (e.g., walking in London), thereby reducing instruction-or rule-based interference.",
+      "text_id": 20,
+      "paragraph_id": 5,
+      "section_id": 1,
+      "page_number": null,
+      "formatted": null
+    },
+    {
+      "text": "Rule-based behavior improves remarkably from infancy through childhood and adolescence (Bunge & Crone, 2009; Diamond, 2013).",
+      "text_id": 21,
+      "paragraph_id": 6,
+      "section_id": 2,
+      "page_number": null,
+      "formatted": "Rule-based behavior improves remarkably from infancy through childhood and adolescence <ref type=\"bibr\" target=\"#b5\">(Bunge &amp; Crone, 2009;<\/ref> <ref type=\"bibr\" target=\"#b11\">Diamond, 2013)<\/ref>."
+    },
+    {
+      "text": "Such developmental improvements might be due to the ability to create and use hierarchical task structures (Bunge & Zelazo, 2006).",
+      "text_id": 22,
+      "paragraph_id": 6,
+      "section_id": 2,
+      "page_number": null,
+      "formatted": "Such developmental improvements might be due to the ability to create and use hierarchical task structures <ref type=\"bibr\" target=\"#b6\">(Bunge &amp; Zelazo, 2006)<\/ref>."
+    },
+    {
+      "text": "For example, Amso, Haas, McShane, and Badre (2014) manipulated hierarchical structure (number of subtasks or branches) and number of competing alternatives within a branch independently.",
+      "text_id": 23,
+      "paragraph_id": 6,
+      "section_id": 2,
+      "page_number": null,
+      "formatted": "For example, <ref type=\"bibr\" target=\"#b0\">Amso, Haas, McShane, and Badre (2014)<\/ref> manipulated hierarchical structure (number of subtasks or branches) and number of competing alternatives within a branch independently."
+    },
+    {
+      "text": "Age-related performance differences were primarily influenced by task structure rather than competition between choice alternatives (see also Unger, Ackerman, Chatham, Amso, & Badre, 2016).",
+      "text_id": 24,
+      "paragraph_id": 6,
+      "section_id": 2,
+      "page_number": null,
+      "formatted": "Age-related performance differences were primarily influenced by task structure rather than competition between choice alternatives (see also <ref type=\"bibr\" target=\"#b23\">Unger, Ackerman, Chatham, Amso, &amp; Badre, 2016)<\/ref>."
+    },
+    {
+      "text": "In other words, the ability to structure rules improved throughout childhood.",
+      "text_id": 25,
+      "paragraph_id": 6,
+      "section_id": 2,
+      "page_number": null,
+      "formatted": null
+    },
+    {
+      "text": "Other studies also found age-related differences in the implementation phase.",
+      "text_id": 26,
+      "paragraph_id": 7,
+      "section_id": 2,
+      "page_number": null,
+      "formatted": null
+    },
+    {
+      "text": "For example, Zelazo, Frye, and Rapus (1996) observed a dissociation between knowing and doing in 3-year-olds.",
+      "text_id": 27,
+      "paragraph_id": 7,
+      "section_id": 2,
+      "page_number": null,
+      "formatted": "For example, <ref type=\"bibr\" target=\"#b27\">Zelazo, Frye, and Rapus (1996)<\/ref> observed a dissociation between knowing and doing in 3-year-olds."
+    },
+    {
+      "text": "In a simple ruleswitching paradigm, 3-year-olds kept doing the task they started with, even when instructed to perform the other task instead.",
+      "text_id": 28,
+      "paragraph_id": 7,
+      "section_id": 2,
+      "page_number": null,
+      "formatted": null
+    },
+    {
+      "text": "Importantly, when the children were asked what the task rules were, they could accurately recall them, suggesting they experienced difficulties with implementing (but not remembering) the appropriate rules.",
+      "text_id": 29,
+      "paragraph_id": 7,
+      "section_id": 2,
+      "page_number": null,
+      "formatted": null
+    },
+    {
+      "text": "The proactive-control literature also suggests that young children are less likely to implement or maintain rules than older children (Munakata, Snyder, & Chatham, 2012).",
+      "text_id": 30,
+      "paragraph_id": 7,
+      "section_id": 2,
+      "page_number": null,
+      "formatted": "The proactive-control literature also suggests that young children are less likely to implement or maintain rules than older children <ref type=\"bibr\" target=\"#b21\">(Munakata, Snyder, &amp; Chatham, 2012)<\/ref>."
+    },
+    {
+      "text": "This could be due to increased costs associated with advanced rule implementation.",
+      "text_id": 31,
+      "paragraph_id": 7,
+      "section_id": 2,
+      "page_number": null,
+      "formatted": null
+    },
+    {
+      "text": "For example, Blackwell and Munakata (2014) showed that adding a secondary task to a card-sorting task particularly impaired performance of young children who tried to maintain task-related information over time (compared with children who did not maintain the rules).",
+      "text_id": 32,
+      "paragraph_id": 7,
+      "section_id": 2,
+      "page_number": null,
+      "formatted": "For example, <ref type=\"bibr\" target=\"#b3\">Blackwell and Munakata (2014)<\/ref> showed that adding a secondary task to a card-sorting task particularly impaired performance of young children who tried to maintain task-related information over time (compared with children who did not maintain the rules)."
+    },
+    {
+      "text": "Thus, for young children, implementing rules in advance comes with challenges and can produce behavioral costs.",
+      "text_id": 33,
+      "paragraph_id": 7,
+      "section_id": 2,
+      "page_number": null,
+      "formatted": null
+    },
+    {
+      "text": "To date, most developmental studies have focused on rule-based performance in situations in which children alternated between well-practiced tasks.",
+      "text_id": 34,
+      "paragraph_id": 8,
+      "section_id": 3,
+      "page_number": null,
+      "formatted": null
+    },
+    {
+      "text": "This research largely ignores the early stages in which the novel instructions are presented and implemented for the first time (i.e., the first trials or blocks are usually practice and not further analyzed).",
+      "text_id": 35,
+      "paragraph_id": 8,
+      "section_id": 3,
+      "page_number": null,
+      "formatted": null
+    },
+    {
+      "text": "However, task structures created in the beginning of the experiment determine future task performance (Bhandari & Duncan, 2014).",
+      "text_id": 36,
+      "paragraph_id": 8,
+      "section_id": 3,
+      "page_number": null,
+      "formatted": "However, task structures created in the beginning of the experiment determine future task performance <ref type=\"bibr\" target=\"#b2\">(Bhandari &amp; Duncan, 2014)<\/ref>."
+    },
+    {
+      "text": "In other words, these early phases are crucial.",
+      "text_id": 37,
+      "paragraph_id": 8,
+      "section_id": 3,
+      "page_number": null,
+      "formatted": null
+    },
+    {
+      "text": "The present study examined age-related differences in the task-formation and early implementation stages when novel task instructions were presented.",
+      "text_id": 38,
+      "paragraph_id": 9,
+      "section_id": 3,
+      "page_number": null,
+      "formatted": null
+    },
+    {
+      "text": "We developed a child-friendly version of the next paradigm (Meiran et al., 2015a).",
+      "text_id": 39,
+      "paragraph_id": 9,
+      "section_id": 3,
+      "page_number": null,
+      "formatted": "We developed a child-friendly version of the next paradigm <ref type=\"bibr\" target=\"#b19\">(Meiran et al., 2015a)<\/ref>."
+    },
+    {
+      "text": "This task combines two elements that are usually studied separately, namely the ability to follow or implement instructions and the use of hierarchical structures to shield pending instructions.",
+      "text_id": 40,
+      "paragraph_id": 9,
+      "section_id": 3,
+      "page_number": null,
+      "formatted": null
+    },
+    {
+      "text": "At the beginning of each miniblock, we showed the children two cartoon images of their \"friends\" (taskinstruction phase; Fig. 1).",
+      "text_id": 41,
+      "paragraph_id": 9,
+      "section_id": 3,
+      "page_number": null,
+      "formatted": "At the beginning of each miniblock, we showed the children two cartoon images of their \"friends\" (taskinstruction phase; Fig. <ref type=\"figure\" target=\"#fig_0\">1<\/ref>)."
+    },
+    {
+      "text": "New images were used for each miniblock.",
+      "text_id": 42,
+      "paragraph_id": 9,
+      "section_id": 3,
+      "page_number": null,
+      "formatted": null
+    },
+    {
+      "text": "Some of their friends lived on the left side of the street, and some of them lived on the right side.",
+      "text_id": 43,
+      "paragraph_id": 9,
+      "section_id": 3,
+      "page_number": null,
+      "formatted": null
+    },
+    {
+      "text": "In the evening (go phase), they had to bring their friends home by pressing the appropriate left or right key (task-implementation phase).",
+      "text_id": 44,
+      "paragraph_id": 9,
+      "section_id": 3,
+      "page_number": null,
+      "formatted": null
+    },
+    {
+      "text": "However, in the morning, before they could go home, all friends had to go to school first (next phase), which was located on the left side of the screen for half of the subjects and the right side for the other half.",
+      "text_id": 45,
+      "paragraph_id": 9,
+      "section_id": 3,
+      "page_number": null,
+      "formatted": null
+    },
+    {
+      "text": "The go and next phase were indicated by morning and evening screen backgrounds, respectively.",
+      "text_id": 46,
+      "paragraph_id": 9,
+      "section_id": 3,
+      "page_number": null,
+      "formatted": null
+    },
+    {
+      "text": "Children (4-11 years old) and late adolescents (17-19 years old) performed this task.",
+      "text_id": 47,
+      "paragraph_id": 9,
+      "section_id": 3,
+      "page_number": null,
+      "formatted": null
+    },
+    {
+      "text": "Hierarchical control is needed in this task, since the next and go phases create two different contexts.",
+      "text_id": 48,
+      "paragraph_id": 10,
+      "section_id": 3,
+      "page_number": null,
+      "formatted": null
+    },
+    {
+      "text": "As discussed above, the ability to contextualize behavior and structure tasks develops in young childhood.",
+      "text_id": 49,
+      "paragraph_id": 10,
+      "section_id": 3,
+      "page_number": null,
+      "formatted": null
+    },
+    {
+      "text": "This ability would reduce interference from one context (go) to the other (next).",
+      "text_id": 50,
+      "paragraph_id": 10,
+      "section_id": 3,
+      "page_number": null,
+      "formatted": null
+    },
+    {
+      "text": "Therefore, the hierarchical-structure account predicts that instruction-based interference effects (i.e., slower responding when the next response is incompatible with the instructed go response) should be more pronounced for younger children than for older children.",
+      "text_id": 51,
+      "paragraph_id": 10,
+      "section_id": 3,
+      "page_number": null,
+      "formatted": null
+    },
+    {
+      "text": "Task rules have to be implemented or maintained in a highly accessible state for an instruction-based interference effect to be observed (Meiran et al., 2017).",
+      "text_id": 52,
+      "paragraph_id": 11,
+      "section_id": 3,
+      "page_number": null,
+      "formatted": "Task rules have to be implemented or maintained in a highly accessible state for an instruction-based interference effect to be observed <ref type=\"bibr\" target=\"#b17\">(Meiran et al., 2017)<\/ref>."
+    },
+    {
+      "text": "Theoretical analyses link automatic effects of instructions to proactive control (Cole et al., 2017), but as noted above, young children are less likely to implement rules in advance.",
+      "text_id": 53,
+      "paragraph_id": 11,
+      "section_id": 3,
+      "page_number": null,
+      "formatted": "Theoretical analyses link automatic effects of instructions to proactive control <ref type=\"bibr\" target=\"#b10\">(Cole et al., 2017)<\/ref>, but as noted above, young children are less likely to implement rules in advance."
+    },
+    {
+      "text": "Therefore, the advance-implementation account predicts impaired performance in the go phase, but less pronounced interference effects in the next phase for younger children than for older children (contrasting with practice-based interference effects that are typically larger for younger children; e.g., Huizinga, Dolan, & van der Molen, 2006).",
+      "text_id": 54,
+      "paragraph_id": 11,
+      "section_id": 3,
+      "page_number": null,
+      "formatted": "Therefore, the advance-implementation account predicts impaired performance in the go phase, but less pronounced interference effects in the next phase for younger children than for older children (contrasting with practice-based interference effects that are typically larger for younger children; e.g., <ref type=\"bibr\" target=\"#b14\">Huizinga, Dolan, &amp; van der Molen, 2006)<\/ref>."
+    },
+    {
+      "text": "One hundred seventy-eight children (4-11 years old) from two local schools in Devon (United Kingdom) and 30 late adolescents (17-19 years old) from two local colleges (also in Devon) participated in this experiment (Table 1).",
+      "text_id": 56,
+      "paragraph_id": 13,
+      "section_id": 5,
+      "page_number": null,
+      "formatted": "One hundred seventy-eight children (4-11 years old) from two local schools in Devon (United Kingdom) and 30 late adolescents (17-19 years old) from two local colleges (also in Devon) participated in this experiment (Table <ref type=\"table\" target=\"#tab_0\">1<\/ref>)."
+    },
+    {
+      "text": "We excluded 5 children because they did not complete the experiment and 7 children because accuracy in the go phase was below 60%.",
+      "text_id": 57,
+      "paragraph_id": 13,
+      "section_id": 5,
+      "page_number": null,
+      "formatted": null
+    },
+    {
+      "text": "In the Supplemental Material available online, we show that excluding these subjects or certain trial types (see below) did not alter the main findings.",
+      "text_id": 58,
+      "paragraph_id": 13,
+      "section_id": 5,
+      "page_number": null,
+      "formatted": null
+    },
+    {
+      "text": "We aimed to recruit as many children and adolescents as possible.",
+      "text_id": 59,
+      "paragraph_id": 14,
+      "section_id": 5,
+      "page_number": null,
+      "formatted": null
+    },
+    {
+      "text": "Therefore, we contacted two local primary schools, and all children for whom we obtained parental consent were invited to participate.",
+      "text_id": 60,
+      "paragraph_id": 14,
+      "section_id": 5,
+      "page_number": null,
+      "formatted": null
+    },
+    {
+      "text": "Because we did not know in advance how many parental consent forms we would obtain, we could not determine the exact target sample prior to the experiment.",
+      "text_id": 61,
+      "paragraph_id": 14,
+      "section_id": 5,
+      "page_number": null,
+      "formatted": null
+    },
+    {
+      "text": "The decision to stop testing was not influenced by the analyses of the data.",
+      "text_id": 62,
+      "paragraph_id": 14,
+      "section_id": 5,
+      "page_number": null,
+      "formatted": null
+    },
+    {
+      "text": "The children received a small prize (a sticker of a cartoon character of their choice and a certificate).",
+      "text_id": 63,
+      "paragraph_id": 15,
+      "section_id": 5,
+      "page_number": null,
+      "formatted": null
+    },
+    {
+      "text": "The adolescents received monetary compensation (£2.50).",
+      "text_id": 64,
+      "paragraph_id": 15,
+      "section_id": 5,
+      "page_number": null,
+      "formatted": null
+    },
+    {
+      "text": "The experiment was approved by the local research ethics committee.",
+      "text_id": 65,
+      "paragraph_id": 15,
+      "section_id": 5,
+      "page_number": null,
+      "formatted": null
+    },
+    {
+      "text": "For the children and underage adolescents, parental informed consent and the subjects' assent were obtained.",
+      "text_id": 66,
+      "paragraph_id": 15,
+      "section_id": 5,
+      "page_number": null,
+      "formatted": null
+    },
+    {
+      "text": "We obtained written informed consent from the other adolescents.",
+      "text_id": 67,
+      "paragraph_id": 15,
+      "section_id": 5,
+      "page_number": null,
+      "formatted": null
+    },
+    {
+      "text": "The experiment took place in a quiet room at school (the children) or college (the adolescents) and was run on a 13-in.",
+      "text_id": 68,
+      "paragraph_id": 16,
+      "section_id": 6,
+      "page_number": null,
+      "formatted": null
+    },
+    {
+      "text": "MacBook Pro using the Psychophysics Toolbox (Brainard, 1997).",
+      "text_id": 69,
+      "paragraph_id": 16,
+      "section_id": 6,
+      "page_number": null,
+      "formatted": "MacBook Pro using the Psychophysics Toolbox <ref type=\"bibr\" target=\"#b4\">(Brainard, 1997)<\/ref>."
+    },
+    {
+      "text": "We tested one subject at a time.",
+      "text_id": 70,
+      "paragraph_id": 16,
+      "section_id": 6,
+      "page_number": null,
+      "formatted": null
+    },
+    {
+      "text": "Stimuli consisted of cartoon images of various animals, imaginary creatures, and people.",
+      "text_id": 71,
+      "paragraph_id": 16,
+      "section_id": 6,
+      "page_number": null,
+      "formatted": null
+    },
+    {
+      "text": "We used different stimuli in each miniblock, and they were easily distinguishable from each other.",
+      "text_id": 72,
+      "paragraph_id": 16,
+      "section_id": 6,
+      "page_number": null,
+      "formatted": null
+    },
+    {
+      "text": "The \"a\" and \"l\" keys of the keyboard were the response keys, and we put arrow stickers on them as a reminder.",
+      "text_id": 73,
+      "paragraph_id": 16,
+      "section_id": 6,
+      "page_number": null,
+      "formatted": null
+    },
+    {
+      "text": "Both keys were used in the go phase.",
+      "text_id": 74,
+      "paragraph_id": 16,
+      "section_id": 6,
+      "page_number": null,
+      "formatted": null
+    },
+    {
+      "text": "For half of the subjects, the \"a\" (left) key was the next response; for the others, the \"l\" (right) key was the next response.",
+      "text_id": 75,
+      "paragraph_id": 16,
+      "section_id": 6,
+      "page_number": null,
+      "formatted": null
+    },
+    {
+      "text": "Each miniblock consisted of four phases: an instruction phase, a next phase, a go phase, and a feedback phase (Fig. 1a).",
+      "text_id": 76,
+      "paragraph_id": 17,
+      "section_id": 6,
+      "page_number": null,
+      "formatted": "Each miniblock consisted of four phases: an instruction phase, a next phase, a go phase, and a feedback phase (Fig. <ref type=\"figure\" target=\"#fig_0\">1a<\/ref>)."
+    },
+    {
+      "text": "In the instruction phase, we presented the novel stimulus-response mappings for the go phase, and a response reminder for the next phase (i.e., a school building on the left or right of the screen, depending on the counterbalancing of the next response).",
+      "text_id": 77,
+      "paragraph_id": 17,
+      "section_id": 6,
+      "page_number": null,
+      "formatted": null
+    },
+    {
+      "text": "The go information appeared on the top of the screen against a dark-blue background (\"evening\"); the next reminder appeared on the bottom against a light-blue background (\"morning\").",
+      "text_id": 78,
+      "paragraph_id": 17,
+      "section_id": 6,
+      "page_number": null,
+      "formatted": null
+    },
+    {
+      "text": "The instructions remained on the screen until subjects had pressed a key and at least 3 s had elapsed.",
+      "text_id": 79,
+      "paragraph_id": 17,
+      "section_id": 6,
+      "page_number": null,
+      "formatted": null
+    },
+    {
+      "text": "The trial course of the next phase, indicated by a light-blue background, is depicted in Figure 1b.",
+      "text_id": 80,
+      "paragraph_id": 18,
+      "section_id": 6,
+      "page_number": null,
+      "formatted": "The trial course of the next phase, indicated by a light-blue background, is depicted in Figure <ref type=\"figure\" target=\"#fig_0\">1b<\/ref>."
+    },
+    {
+      "text": "After an intertrial and fixation interval, a stimulus appeared and remained on screen until the correct next key was pressed.",
+      "text_id": 81,
+      "paragraph_id": 18,
+      "section_id": 6,
+      "page_number": null,
+      "formatted": null
+    },
+    {
+      "text": "Thus, if subjects pressed the incorrect key first (e.g., \"l\" when the next response was \"a\"), the stimulus would remain on the screen; it would only disappear once they had pressed the next key.",
+      "text_id": 82,
+      "paragraph_id": 18,
+      "section_id": 6,
+      "page_number": null,
+      "formatted": null
+    },
+    {
+      "text": "The number of next trials differed between blocks (see below).",
+      "text_id": 83,
+      "paragraph_id": 18,
+      "section_id": 6,
+      "page_number": null,
+      "formatted": null
+    },
+    {
+      "text": "The go phase, indicated by a dark-blue rectangle, always consisted of two trials.",
+      "text_id": 84,
+      "paragraph_id": 18,
+      "section_id": 6,
+      "page_number": null,
+      "formatted": null
+    },
+    {
+      "text": "The trial course was the same as in the next phase, except that the stimulus disappeared as soon as a response key (correct or incorrect) was pressed.",
+      "text_id": 85,
+      "paragraph_id": 18,
+      "section_id": 6,
+      "page_number": null,
+      "formatted": null
+    },
+    {
+      "text": "In the feedback phase, we presented a \"clock\" (Fig. 1a).",
+      "text_id": 86,
+      "paragraph_id": 19,
+      "section_id": 6,
+      "page_number": null,
+      "formatted": "In the feedback phase, we presented a \"clock\" (Fig. <ref type=\"figure\" target=\"#fig_0\">1a<\/ref>)."
+    },
+    {
+      "text": "A dark-gray area on the clock face depicted the total response latency for the two go trials.",
+      "text_id": 87,
+      "paragraph_id": 19,
+      "section_id": 6,
+      "page_number": null,
+      "formatted": null
+    },
+    {
+      "text": "For each incorrect go response, we added a time penalty (indicated by a red area on the clock face).",
+      "text_id": 88,
+      "paragraph_id": 19,
+      "section_id": 6,
+      "page_number": null,
+      "formatted": null
+    },
+    {
+      "text": "We also played a sound during the feedback phase: If subjects did not make go errors, we presented the sound \"yihaa\" (if they had responded faster than in the preceding miniblock) or \"ok\" (if they had responded slower); we presented the sound \"oops\" if they had made a go error.",
+      "text_id": 89,
+      "paragraph_id": 19,
+      "section_id": 6,
+      "page_number": null,
+      "formatted": null
+    },
+    {
+      "text": "The feedback remained on the screen for 1.5 s, after which the following miniblock started.",
+      "text_id": 90,
+      "paragraph_id": 19,
+      "section_id": 6,
+      "page_number": null,
+      "formatted": null
+    },
+    {
+      "text": "The experiment consisted of a practice phase and an experimental phase.",
+      "text_id": 91,
+      "paragraph_id": 20,
+      "section_id": 6,
+      "page_number": null,
+      "formatted": null
+    },
+    {
+      "text": "The practice phase consisted of two parts.",
+      "text_id": 92,
+      "paragraph_id": 20,
+      "section_id": 6,
+      "page_number": null,
+      "formatted": null
+    },
+    {
+      "text": "First, we explained the main task (see Fig. S1 in the Supplemental Material for the main instructions), and subjects could practice the next and go responses.",
+      "text_id": 93,
+      "paragraph_id": 20,
+      "section_id": 6,
+      "page_number": null,
+      "formatted": "First, we explained the main task (see Fig. <ref type=\"figure\" target=\"#fig_0\">S1<\/ref> in the Supplemental Material for the main instructions), and subjects could practice the next and go responses."
+    },
+    {
+      "text": "Then we presented three miniblocks that consisted of the instruction, next, go, and feedback phases.",
+      "text_id": 94,
+      "paragraph_id": 20,
+      "section_id": 6,
+      "page_number": null,
+      "formatted": null
+    },
+    {
+      "text": "The practice miniblocks consisted of zero, one, or two next trials (each number of next trials occurred once, and the order was randomized).",
+      "text_id": 95,
+      "paragraph_id": 20,
+      "section_id": 6,
+      "page_number": null,
+      "formatted": null
+    },
+    {
+      "text": "The experimental phase consisted of 48 miniblocks.",
+      "text_id": 96,
+      "paragraph_id": 21,
+      "section_id": 6,
+      "page_number": null,
+      "formatted": null
+    },
+    {
+      "text": "Twenty-four miniblocks consisted of one next trial, 16 consisted of two next trials, and 4 consisted of three next trials; in 4 miniblocks, the go phase started immediately (so there were no next trials).",
+      "text_id": 97,
+      "paragraph_id": 21,
+      "section_id": 6,
+      "page_number": null,
+      "formatted": null
+    },
+    {
+      "text": "We used this trial distribution to make the start of the go phase unpredictable and to encourage preparation.",
+      "text_id": 98,
+      "paragraph_id": 21,
+      "section_id": 6,
+      "page_number": null,
+      "formatted": null
+    },
+    {
+      "text": "The order of the miniblocks was further pseudorandomized: Two of the first 10 miniblocks were zero-next blocks.",
+      "text_id": 99,
+      "paragraph_id": 21,
+      "section_id": 6,
+      "page_number": null,
+      "formatted": null
+    },
+    {
+      "text": "Again, this was done to encourage preparation.",
+      "text_id": 100,
+      "paragraph_id": 21,
+      "section_id": 6,
+      "page_number": null,
+      "formatted": null
+    },
+    {
+      "text": "Subjects received a break after every 12 miniblocks; they could determine the duration of the break themselves.",
+      "text_id": 101,
+      "paragraph_id": 21,
+      "section_id": 6,
+      "page_number": null,
+      "formatted": null
+    },
+    {
+      "text": "The whole experiment lasted 10 to 15 min (although the youngest children sometimes took a little longer).",
+      "text_id": 102,
+      "paragraph_id": 21,
+      "section_id": 6,
+      "page_number": null,
+      "formatted": null
+    },
+    {
+      "text": "All data processing and analyses were completed using R software (R Core Team, 2016).",
+      "text_id": 103,
+      "paragraph_id": 22,
+      "section_id": 7,
+      "page_number": null,
+      "formatted": "All data processing and analyses were completed using R software <ref type=\"bibr\">(R Core Team, 2016)<\/ref>."
+    },
+    {
+      "text": "Anonymized data files, R scripts, and experiment documentation are available on the Open Science Framework (https://osf.io/am4yk/).",
+      "text_id": 104,
+      "paragraph_id": 22,
+      "section_id": 7,
+      "page_number": null,
+      "formatted": "Anonymized data files, R scripts, and experiment documentation are available on the Open Science Framework (<ref type=\"url\" target=\"https://osf.io/am4yk/\">https://osf.io/  am4yk/<\/ref>)."
+    },
+    {
+      "text": "For the next analyses, we focused on the first next (Next 1) trial because the instruction-based interference effect is largest on the first trial (Meiran et al., 2015a), and performance on later next trials could already be modulated by stimulus-specific practice effects.",
+      "text_id": 105,
+      "paragraph_id": 23,
+      "section_id": 7,
+      "page_number": null,
+      "formatted": "For the next analyses, we focused on the first next (Next 1) trial because the instruction-based interference effect is largest on the first trial <ref type=\"bibr\" target=\"#b19\">(Meiran et al., 2015a)<\/ref>, and performance on later next trials could already be modulated by stimulus-specific practice effects."
+    },
+    {
+      "text": "We decided on this before data collection had started.",
+      "text_id": 106,
+      "paragraph_id": 23,
+      "section_id": 7,
+      "page_number": null,
+      "formatted": null
+    },
+    {
+      "text": "We excluded miniblocks in which subjects made go errors, as these could indicate that subjects did not process the instructions (resulting in a data loss of 17%).",
+      "text_id": 107,
+      "paragraph_id": 23,
+      "section_id": 7,
+      "page_number": null,
+      "formatted": null
+    },
+    {
+      "text": "We focused on three dependent variables.",
+      "text_id": 108,
+      "paragraph_id": 23,
+      "section_id": 7,
+      "page_number": null,
+      "formatted": null
+    },
+    {
+      "text": "First, we analyzed the probability of a correct Next 1 trial.",
+      "text_id": 109,
+      "paragraph_id": 23,
+      "section_id": 7,
+      "page_number": null,
+      "formatted": null
+    },
+    {
+      "text": "Second, we analyzed the latency of the next response with all (correct and incorrect) Next 1 trials included.",
+      "text_id": 110,
+      "paragraph_id": 23,
+      "section_id": 7,
+      "page_number": null,
+      "formatted": null
+    },
+    {
+      "text": "This response time (RT) analysis was included in order to make the results comparable with those of Meiran et al. (2015a), who did not examine next errors.",
+      "text_id": 111,
+      "paragraph_id": 23,
+      "section_id": 7,
+      "page_number": null,
+      "formatted": "This response time (RT) analysis was included in order to make the results comparable with those of <ref type=\"bibr\" target=\"#b19\">Meiran et al. (2015a)<\/ref>, who did not examine next errors."
+    },
+    {
+      "text": "Furthermore, this measure might be most sensitive, as it combines all trials in which traces of inappropriate motor activity (Everaert, Theeuwes, Liefooghe, & De Houwer, 2014; Meiran, Pereg, Kessler, Cole, & Braver, 2015b) cause interference or, in case the activity is high enough, an incorrect response.",
+      "text_id": 112,
+      "paragraph_id": 23,
+      "section_id": 7,
+      "page_number": null,
+      "formatted": "Furthermore, this measure might be most sensitive, as it combines all trials in which traces of inappropriate motor activity <ref type=\"bibr\" target=\"#b12\">(Everaert, Theeuwes, Liefooghe, &amp; De Houwer, 2014;<\/ref> <ref type=\"bibr\" target=\"#b20\">Meiran, Pereg, Kessler, Cole, &amp; Braver, 2015b<\/ref>) cause interference or, in case the activity is high enough, an incorrect response."
+    },
+    {
+      "text": "Third, we recalculated RTs after exclusion of incorrect Next 1 trials.",
+      "text_id": 113,
+      "paragraph_id": 23,
+      "section_id": 7,
+      "page_number": null,
+      "formatted": null
+    },
+    {
+      "text": "For both RT analyses, we used a trimming procedure: We excluded trials on which RT was less than 100 ms or greater than 10 s; then we calculated the mean and standard deviation, and we excluded RTs that were 2.5 standard deviations above the mean.",
+      "text_id": 114,
+      "paragraph_id": 23,
+      "section_id": 7,
+      "page_number": null,
+      "formatted": null
+    },
+    {
+      "text": "This trimming was done for each subject and condition separately.",
+      "text_id": 115,
+      "paragraph_id": 23,
+      "section_id": 7,
+      "page_number": null,
+      "formatted": null
+    },
+    {
+      "text": "This resulted in an additional data loss of 3%.",
+      "text_id": 116,
+      "paragraph_id": 23,
+      "section_id": 7,
+      "page_number": null,
+      "formatted": null
+    },
+    {
+      "text": "Table 2 shows the average number of trials for each condition and age group.",
+      "text_id": 117,
+      "paragraph_id": 23,
+      "section_id": 7,
+      "page_number": null,
+      "formatted": "Table <ref type=\"table\" target=\"#tab_1\">2<\/ref> shows the average number of trials for each condition and age group."
+    },
+    {
+      "text": "For the go analyses, we focused on two dependent variables: accuracy and RT.",
+      "text_id": 118,
+      "paragraph_id": 24,
+      "section_id": 7,
+      "page_number": null,
+      "formatted": null
+    },
+    {
+      "text": "For the RTs, we excluded incorrect go trials and used the same trimming procedure as the one used for the next analyses (combined, this resulted in a data loss of 15%).",
+      "text_id": 119,
+      "paragraph_id": 24,
+      "section_id": 7,
+      "page_number": null,
+      "formatted": null
+    },
+    {
+      "text": "For all variables, we analyzed performance using the ezANOVA function (Lawrence, 2016) in R with age (in years) as a continuous between-subjects variable and compatibility (the next analyses) or trial number (first or second trial in the go analyses) as categorical within-subjects variables.",
+      "text_id": 120,
+      "paragraph_id": 24,
+      "section_id": 7,
+      "page_number": null,
+      "formatted": "For all variables, we analyzed performance using the ezANOVA function <ref type=\"bibr\" target=\"#b16\">(Lawrence, 2016)<\/ref> in R with age (in years) as a continuous between-subjects variable and compatibility (the next analyses) or trial number (first or second trial in the go analyses) as categorical within-subjects variables."
+    },
+    {
+      "text": "This analysis is very similar to a multiple regression with an interaction term or a standard analysis of covariance (ANCOVA; except that the continuous variable is typically considered a nuisance variable in an ANCOVA, whereas the continuous variable was the main interest in the present study; for a similar approach, see Verbruggen & McLaren, 2017).",
+      "text_id": 121,
+      "paragraph_id": 24,
+      "section_id": 7,
+      "page_number": null,
+      "formatted": "This analysis is very similar to a multiple regression with an interaction term or a standard analysis of covariance (ANCOVA; except that the continuous variable is typically considered a nuisance variable in an ANCOVA, whereas the continuous variable was the main interest in the present study; for a similar approach, see <ref type=\"bibr\" target=\"#b26\">Verbruggen &amp; McLaren, 2017)<\/ref>."
+    },
+    {
+      "text": "We performed two sets of analyses.",
+      "text_id": 122,
+      "paragraph_id": 24,
+      "section_id": 7,
+      "page_number": null,
+      "formatted": null
+    },
+    {
+      "text": "First, we performed the analyses with all subjects included.",
+      "text_id": 123,
+      "paragraph_id": 24,
+      "section_id": 7,
+      "page_number": null,
+      "formatted": null
+    },
+    {
+      "text": "We grouped all adolescents together and used the same age value for all of them (i.e., 18).",
+      "text_id": 124,
+      "paragraph_id": 24,
+      "section_id": 7,
+      "page_number": null,
+      "formatted": null
+    },
+    {
+      "text": "Table 3 provides an overview of these analyses.",
+      "text_id": 125,
+      "paragraph_id": 24,
+      "section_id": 7,
+      "page_number": null,
+      "formatted": "Table <ref type=\"table\" target=\"#tab_2\">3<\/ref> provides an overview of these analyses."
+    },
+    {
+      "text": "Second, we repeated the analyses without the adolescents in case this \"extreme\" group had an undue influence on inferential statistics.",
+      "text_id": 126,
+      "paragraph_id": 24,
+      "section_id": 7,
+      "page_number": null,
+      "formatted": null
+    },
+    {
+      "text": "Table 4 provides an overview of these analyses.",
+      "text_id": 127,
+      "paragraph_id": 24,
+      "section_id": 7,
+      "page_number": null,
+      "formatted": "Table <ref type=\"table\" target=\"#tab_3\">4<\/ref> provides an overview of these analyses."
+    },
+    {
+      "text": "Note that the main outcomes of the two sets of analyses were similar.",
+      "text_id": 128,
+      "paragraph_id": 24,
+      "section_id": 7,
+      "page_number": null,
+      "formatted": null
+    },
+    {
+      "text": "In a pilot study with adults (N = 29; see the Supplemental Material), we found medium to large instructionbased interference effects (Cohen's dz s = 0.65-1.00).",
+      "text_id": 129,
+      "paragraph_id": 25,
+      "section_id": 7,
+      "page_number": null,
+      "formatted": null
+    },
+    {
+      "text": "Therefore, we also examined the main effect of compatibility for the different age groups.",
+      "text_id": 130,
+      "paragraph_id": 25,
+      "section_id": 7,
+      "page_number": null,
+      "formatted": null
+    },
+    {
+      "text": "To increase power and reduce the number of significance tests, we combined the data of the 4-and 5-, 6-and 7-, 8-and 9-, 10-and 11-, and 17-to 19-year-olds, resulting in five groups.",
+      "text_id": 131,
+      "paragraph_id": 25,
+      "section_id": 7,
+      "page_number": null,
+      "formatted": null
+    },
+    {
+      "text": "Table 5 provides an overview of these analyses.",
+      "text_id": 132,
+      "paragraph_id": 25,
+      "section_id": 7,
+      "page_number": null,
+      "formatted": "Table <ref type=\"table\" target=\"#tab_4\">5<\/ref> provides an overview of these analyses."
+    },
+    {
+      "text": "In the main analysis, we focused on the raw RT data.",
+      "text_id": 133,
+      "paragraph_id": 26,
+      "section_id": 7,
+      "page_number": null,
+      "formatted": null
+    },
+    {
+      "text": "In the Supplemental Material, we report an analysis of proportional instruction-based interference scores.",
+      "text_id": 134,
+      "paragraph_id": 26,
+      "section_id": 7,
+      "page_number": null,
+      "formatted": null
+    },
+    {
+      "text": "The main numerical trends were similar to those in the analysis reported below.",
+      "text_id": 135,
+      "paragraph_id": 26,
+      "section_id": 7,
+      "page_number": null,
+      "formatted": null
+    },
+    {
+      "text": "We found large interference effects in all analyses: Subjects made more errors and responded more slowly on incompatible trials than on compatible trials (Figs. 2a-2c).",
+      "text_id": 137,
+      "paragraph_id": 28,
+      "section_id": 9,
+      "page_number": null,
+      "formatted": "We found large interference effects in all analyses: Subjects made more errors and responded more slowly on incompatible trials than on compatible trials (Figs. <ref type=\"figure\" target=\"#fig_1\">2a-2c<\/ref>)."
+    },
+    {
+      "text": "This conclusion is supported by the inferential statistics (Tables 3 and 4).",
+      "text_id": 138,
+      "paragraph_id": 28,
+      "section_id": 9,
+      "page_number": null,
+      "formatted": "This conclusion is supported by the inferential statistics (Tables <ref type=\"table\" target=\"#tab_2\">3<\/ref> and <ref type=\"table\" target=\"#tab_3\">4<\/ref>)."
+    },
+    {
+      "text": "Furthermore, the RT analyses revealed general age-related differences.",
+      "text_id": 139,
+      "paragraph_id": 28,
+      "section_id": 9,
+      "page_number": null,
+      "formatted": null
+    },
+    {
+      "text": "Most importantly, the RT analyses, which included next responses that came after erroneously pressing the wrong key, also revealed significant interactions between age and compatibility: The intention-based interference effect decreased over age, which is consistent with the hierarchical-structure account but inconsistent with the  advance-implementation account.",
+      "text_id": 140,
+      "paragraph_id": 28,
+      "section_id": 9,
+      "page_number": null,
+      "formatted": null
+    },
+    {
+      "text": "This decrease can also be seen in Figure 2d, which shows how the intention-based interference effect is influenced by age and overall response speed.",
+      "text_id": 141,
+      "paragraph_id": 28,
+      "section_id": 9,
+      "page_number": null,
+      "formatted": "This decrease can also be seen in Figure <ref type=\"figure\" target=\"#fig_1\">2d<\/ref>, which shows how the intention-based interference effect is influenced by age and overall response speed."
+    },
+    {
+      "text": "For the RT analysis that included only correct next responses, the interaction was not significant (p = .051) when adolescents were included, but it was significant (p = .002) without them (i.e., when the \"extreme\" group was excluded; see above).",
+      "text_id": 142,
+      "paragraph_id": 28,
+      "section_id": 9,
+      "page_number": null,
+      "formatted": null
+    },
+    {
+      "text": "The interaction was not significant in both accuracy analyses (ps > .14).",
+      "text_id": 143,
+      "paragraph_id": 28,
+      "section_id": 9,
+      "page_number": null,
+      "formatted": "The interaction was not significant in both accuracy analyses (ps &gt; .14)."
+    },
+    {
+      "text": "Table 5 shows that the instruction-based interference effect was significant for all measures and age groups.",
+      "text_id": 144,
+      "paragraph_id": 28,
+      "section_id": 9,
+      "page_number": null,
+      "formatted": "Table <ref type=\"table\" target=\"#tab_4\">5<\/ref> shows that the instruction-based interference effect was significant for all measures and age groups."
+    },
+    {
+      "text": "The go analyses revealed that error rate and RT decreased over age and that performance was generally worse on the first go trial than on the second go trial.",
+      "text_id": 145,
+      "paragraph_id": 29,
+      "section_id": 10,
+      "page_number": null,
+      "formatted": null
+    },
+    {
+      "text": "The latter presumably reflects a task-switch cost (for reviews, see Kiesel et al., 2010; Vandierendonck, Liefooghe, & Verbruggen, 2010).",
+      "text_id": 146,
+      "paragraph_id": 29,
+      "section_id": 10,
+      "page_number": null,
+      "formatted": "The latter presumably reflects a task-switch cost (for reviews, see <ref type=\"bibr\" target=\"#b15\">Kiesel et al., 2010;<\/ref> <ref type=\"bibr\" target=\"#b24\">Vandierendonck, Liefooghe, &amp; Verbruggen, 2010)<\/ref>."
+    },
+    {
+      "text": "The RT cost was larger for the younger children than for the older children and late adolescents, which is consistent with findings reported in the previous literature (Chevalier & Blaye, 2009; Huizinga et al., 2006).",
+      "text_id": 147,
+      "paragraph_id": 29,
+      "section_id": 10,
+      "page_number": null,
+      "formatted": "The RT cost was larger for the younger children than for the older children and late adolescents, which is consistent with findings reported in the previous literature <ref type=\"bibr\" target=\"#b7\">(Chevalier &amp; Blaye, 2009;<\/ref> <ref type=\"bibr\" target=\"#b14\">Huizinga et al., 2006)<\/ref>."
+    },
+    {
+      "text": "Measure and predictor Sum-of-squares effect Sum-of-squares error F(1, 164) p Generalized η² Go accuracy Age 0.195 2.309 13.832 < .001 .073 Trial Number 0.022 0.169 21.404 < .001 .009 Age × Trial Number 0.000 0.169 0.449 .504 < .001 Go response time Age 42,987,226 56,421,758 124.950 < .001 .393 Trial Number 17,268,650 9,932,973 285.117 < .001 .207 Age × Trial Number 4,930,514 9,932,973 81.406 < .001 .069 Note: Late adolescents and young adults were excluded from these analyses.",
+      "text_id": 148,
+      "paragraph_id": 30,
+      "section_id": 10,
+      "page_number": null,
+      "formatted": "Measure and predictor Sum-of-squares effect Sum-of-squares error F(1, 164) p Generalized η² Go accuracy Age 0.195 2.309 13.832 &lt; .001 .073 Trial Number 0.022 0.169 21.404 &lt; .001 .009 Age × Trial Number 0.000 0.169 0.449 .504 &lt; .001 Go response time Age 42,987,226 56,421,758 124.950 &lt; .001 .393 Trial Number 17,268,650 9,932,973 285.117 &lt; .001 .207 Age × Trial Number 4,930,514 9,932,973 81.406 &lt; .001 .069 Note: Late adolescents and young adults were excluded from these analyses."
+    },
+    {
+      "text": "Age was a continuous numerical variable; thus, the first df was 1.",
+      "text_id": 149,
+      "paragraph_id": 30,
+      "section_id": 10,
+      "page_number": null,
+      "formatted": null
+    },
+    {
+      "text": "Significant p values are boldfaced.",
+      "text_id": 150,
+      "paragraph_id": 30,
+      "section_id": 10,
+      "page_number": null,
+      "formatted": null
+    },
+    {
+      "text": "Table 4. (continued)",
+      "text_id": 151,
+      "paragraph_id": 31,
+      "section_id": 10,
+      "page_number": null,
+      "formatted": null
+    },
+    {
+      "text": "We also ran an unplanned analysis to explore how the next effect evolved throughout the experiment.",
+      "text_id": 152,
+      "paragraph_id": 32,
+      "section_id": 11,
+      "page_number": null,
+      "formatted": null
+    },
+    {
+      "text": "The stimulus-response mappings changed in every miniblock, so subjects could not practice the mappings.",
+      "text_id": 153,
+      "paragraph_id": 32,
+      "section_id": 11,
+      "page_number": null,
+      "formatted": null
+    },
+    {
+      "text": "However, they could learn and practice the application of the overall task structure throughout the experiment.",
+      "text_id": 154,
+      "paragraph_id": 32,
+      "section_id": 11,
+      "page_number": null,
+      "formatted": null
+    },
+    {
+      "text": "Both \"fast\" and \"slow\" learning mechanisms could produce such task-or structure-learning effects (Verbruggen, McLaren, & Chambers, 2014).",
+      "text_id": 155,
+      "paragraph_id": 32,
+      "section_id": 11,
+      "page_number": null,
+      "formatted": "Both \"fast\" and \"slow\" learning mechanisms could produce such task-or structure-learning effects <ref type=\"bibr\" target=\"#b25\">(Verbruggen, McLaren, &amp; Chambers, 2014)<\/ref>."
+    },
+    {
+      "text": "Therefore, we repeated all next analyses with experiment half (first 24 miniblocks vs. last 24 miniblocks) as an additional withinsubjects variable.",
+      "text_id": 156,
+      "paragraph_id": 32,
+      "section_id": 11,
+      "page_number": null,
+      "formatted": null
+    },
+    {
+      "text": "Because the number of trials was halved, we had to exclude some extra subjects from the RT analyses because of missing cells after data trimming (1 subject excluded in the next all-RT analysis: 6 subjects excluded in the next correct-RT analysis).",
+      "text_id": 157,
+      "paragraph_id": 32,
+      "section_id": 11,
+      "page_number": null,
+      "formatted": null
+    },
+    {
+      "text": "The main RT analysis with all next responses included (Fig. 3b), revealed that the instruction-based interference effect decreased substantially throughout the experiment (first half: next effect = 267 ms; second half: next effect = 141 ms; p = .007, Table 6).",
+      "text_id": 158,
+      "paragraph_id": 33,
+      "section_id": 11,
+      "page_number": null,
+      "formatted": "The main RT analysis with all next responses included (Fig. <ref type=\"figure\" target=\"#fig_2\">3b<\/ref>), revealed that the instruction-based interference effect decreased substantially throughout the experiment (first half: next effect = 267 ms; second half: next effect = 141 ms; p = .007, Table <ref type=\"table\" target=\"#tab_5\">6<\/ref>)."
+    },
+    {
+      "text": "A decrease was observed for all age groups, and the three-way interaction was nonsignificant, p = .292.",
+      "text_id": 159,
+      "paragraph_id": 33,
+      "section_id": 11,
+      "page_number": null,
+      "formatted": null
+    },
+    {
+      "text": "The correct-RT analyses did not reveal any significant interactions between the interference effect and experiment half.",
+      "text_id": 160,
+      "paragraph_id": 33,
+      "section_id": 11,
+      "page_number": null,
+      "formatted": null
+    },
+    {
+      "text": "The accuracy analyses also showed that the interference effect decreased during the experiment (Fig. 3a; p < .001).",
+      "text_id": 161,
+      "paragraph_id": 34,
+      "section_id": 11,
+      "page_number": null,
+      "formatted": "The accuracy analyses also showed that the interference effect decreased during the experiment (Fig. <ref type=\"figure\" target=\"#fig_2\">3a<\/ref>; p &lt; .001)."
+    },
+    {
+      "text": "Interestingly, significant three-way interactions were observed in the analyses with and without adolescents (Tables 6 and 7).",
+      "text_id": 162,
+      "paragraph_id": 34,
+      "section_id": 11,
+      "page_number": null,
+      "formatted": "Interestingly, significant three-way interactions were observed in the analyses with and without adolescents (Tables <ref type=\"table\" target=\"#tab_5\">6<\/ref> and <ref type=\"table\" target=\"#tab_6\">7<\/ref>)."
+    },
+    {
+      "text": "Figure 3 shows that the interference effect decreased more for younger children than for older children.",
+      "text_id": 163,
+      "paragraph_id": 34,
+      "section_id": 11,
+      "page_number": null,
+      "formatted": "Figure <ref type=\"figure\" target=\"#fig_2\">3<\/ref> shows that the interference effect decreased more for younger children than for older children."
+    },
+    {
+      "text": "This is consistent with the idea that young children have difficulties with the use of a hierarchical structure but that this improves with some practice.",
+      "text_id": 164,
+      "paragraph_id": 34,
+      "section_id": 11,
+      "page_number": null,
+      "formatted": null
+    },
+    {
+      "text": "However, it also shows that in the second part of the experiment, the effect was numerically largest for the late adolescents.",
+      "text_id": 165,
+      "paragraph_id": 34,
+      "section_id": 11,
+      "page_number": null,
+      "formatted": null
+    },
+    {
+      "text": "It seems unlikely that this was due to a floor effect or a speed/accuracy trade-off (e.g., error rates were lower for the 11-year olds than for the late adolescents, yet their next RTs were comparable).",
+      "text_id": 166,
+      "paragraph_id": 34,
+      "section_id": 11,
+      "page_number": null,
+      "formatted": null
+    },
+    {
+      "text": "Instead, this finding could reflect the costs of increased proactive control for the late adolescents.",
+      "text_id": 167,
+      "paragraph_id": 34,
+      "section_id": 11,
+      "page_number": null,
+      "formatted": null
+    },
+    {
+      "text": "Indeed, go performance was numerically better for the late adolescents.",
+      "text_id": 168,
+      "paragraph_id": 34,
+      "section_id": 11,
+      "page_number": null,
+      "formatted": null
+    },
+    {
+      "text": "Thus, a possible explanation for these age-related differences is that late adolescents biased the go task to a larger extent than the older children, leading to better go performance but larger costs in the next phase.",
+      "text_id": 169,
+      "paragraph_id": 34,
+      "section_id": 11,
+      "page_number": null,
+      "formatted": null
+    },
+    {
+      "text": "Throughout the experiment, we used the feedback screens to encourage fast and correct go performance, without mentioning next performance.",
+      "text_id": 170,
+      "paragraph_id": 34,
+      "section_id": 11,
+      "page_number": null,
+      "formatted": null
+    },
+    {
+      "text": "This could have induced a go bias and, therefore, higher error rates in the next phase.",
+      "text_id": 171,
+      "paragraph_id": 34,
+      "section_id": 11,
+      "page_number": null,
+      "formatted": null
+    },
+    {
+      "text": "This highlights that proactive control or rule implementation can come with certain costs, even in adolescence.",
+      "text_id": 172,
+      "paragraph_id": 34,
+      "section_id": 11,
+      "page_number": null,
+      "formatted": null
+    },
+    {
+      "text": "We examined structuring and implementing novel task instructions in children and late adolescents.",
+      "text_id": 173,
+      "paragraph_id": 35,
+      "section_id": 12,
+      "page_number": null,
+      "formatted": null
+    },
+    {
+      "text": "We found that subjects' ability to prepare novel tasks improved with age, as seen in go performance.",
+      "text_id": 174,
+      "paragraph_id": 35,
+      "section_id": 12,
+      "page_number": null,
+      "formatted": null
+    },
+    {
+      "text": "However, this did not result in an age-related increase in intentionbased interference effects: We found interference effects on Next 1 trials for all age groups, but these tended to be largest for the youngest children (4-to 5-year-olds).",
+      "text_id": 175,
+      "paragraph_id": 35,
+      "section_id": 12,
+      "page_number": null,
+      "formatted": null
+    },
+    {
+      "text": "These results are consistent with the hierarchicalstructure account.",
+      "text_id": 176,
+      "paragraph_id": 36,
+      "section_id": 12,
+      "page_number": null,
+      "formatted": null
+    },
+    {
+      "text": "Situations in which multiple rules can be relevant (in our case, the next and go rules) require a hierarchical structure to determine the correct response and to reduce interference between competing task elements.",
+      "text_id": 177,
+      "paragraph_id": 36,
+      "section_id": 12,
+      "page_number": null,
+      "formatted": null
+    },
+    {
+      "text": "Young children face difficulties with creating or using such structures (Amso et al., 2014; Unger et al., 2016).",
+      "text_id": 178,
+      "paragraph_id": 36,
+      "section_id": 12,
+      "page_number": null,
+      "formatted": "Young children face difficulties with creating or using such structures <ref type=\"bibr\" target=\"#b0\">(Amso et al., 2014;<\/ref> <ref type=\"bibr\" target=\"#b23\">Unger et al., 2016)<\/ref>."
+    },
+    {
+      "text": "This could explain the larger instruction-based interference effects for the youngest children.",
+      "text_id": 179,
+      "paragraph_id": 36,
+      "section_id": 12,
+      "page_number": null,
+      "formatted": null
+    },
+    {
+      "text": "The hierarchical-structure account also receives support from another recent next study (Meiran, Pereg, Givon, Danieli, & Shahar, 2016), which demonstrated that adults who were less successful in the go phase, had poorer fluid intelligence, or were generally slower also had a larger next effect (i.e., adults with poorer working memory might also experience more problems with hierarchical or complex task sets, somewhat similar to children, than adults with better working memory). Meiran et al.'s (2016) findings are also consistent with research on goal neglect, which suggests associations between fluid intelligence and the ability to chunk task knowledge (Bhandari & Duncan, 2014).",
+      "text_id": 180,
+      "paragraph_id": 36,
+      "section_id": 12,
+      "page_number": null,
+      "formatted": "The hierarchical-structure account also receives support from another recent next study <ref type=\"bibr\" target=\"#b18\">(Meiran, Pereg, Givon, Danieli, &amp; Shahar, 2016)<\/ref>, which demonstrated that adults who were less successful in the go phase, had poorer fluid intelligence, or were generally slower also had a larger next effect (i.e., adults with poorer working memory might also experience more problems with hierarchical or complex task sets, somewhat similar to children, than adults with better working memory). <ref type=\"bibr\">Meiran et al.'s (2016)<\/ref> findings are also consistent with research on goal neglect, which suggests associations between fluid intelligence and the ability to chunk task knowledge <ref type=\"bibr\" target=\"#b2\">(Bhandari &amp; Duncan, 2014)<\/ref>."
+    },
+    {
+      "text": "Our results did not provide much support for the advance-implementation account as described in the introduction.",
+      "text_id": 181,
+      "paragraph_id": 36,
+      "section_id": 12,
+      "page_number": null,
+      "formatted": null
+    },
+    {
+      "text": "Previous developmental work suggests that young children are less likely to implement task rules in advance than older children, adolescents, and young adults.",
+      "text_id": 182,
+      "paragraph_id": 36,
+      "section_id": 12,
+      "page_number": null,
+      "formatted": null
+    },
+    {
+      "text": "Therefore, the advance-implementation account predicted that go performance would be impaired but the instruction-based interference effect in the next phase should be absent (or at least be smaller) for the younger children.",
+      "text_id": 183,
+      "paragraph_id": 36,
+      "section_id": 12,
+      "page_number": null,
+      "formatted": null
+    },
+    {
+      "text": "Instead, we observed the largest interference effects for the youngest children.",
+      "text_id": 184,
+      "paragraph_id": 36,
+      "section_id": 12,
+      "page_number": null,
+      "formatted": null
+    },
+    {
+      "text": "The presence of the interference effects and decent go performance indicate that even the youngest children in our sample could implement novel stimulusresponse rules in advance.",
+      "text_id": 185,
+      "paragraph_id": 36,
+      "section_id": 12,
+      "page_number": null,
+      "formatted": null
+    },
+    {
+      "text": "This conclusion is consistent with a study showing that young children engaged in proactive control (i.e., they prepared rules in advance) when the task was more difficult (Chevalier, Martis, Curran, & Munakata, 2015).",
+      "text_id": 186,
+      "paragraph_id": 36,
+      "section_id": 12,
+      "page_number": null,
+      "formatted": "This conclusion is consistent with a study showing that young children engaged in proactive control (i.e., they prepared rules in advance) when the task was more difficult <ref type=\"bibr\" target=\"#b8\">(Chevalier, Martis, Curran, &amp; Munakata, 2015)<\/ref>."
+    },
+    {
+      "text": "Here, we used novel stimulus-response mappings in each miniblock.",
+      "text_id": 187,
+      "paragraph_id": 36,
+      "section_id": 12,
+      "page_number": null,
+      "formatted": null
+    },
+    {
+      "text": "This prevented stimulus-specific practice and the consequent formation of long-term memory traces, which could have encouraged the implementation of the rules during the instruction phase.",
+      "text_id": 188,
+      "paragraph_id": 36,
+      "section_id": 12,
+      "page_number": null,
+      "formatted": null
+    },
+    {
+      "text": "However, consistent with the results of Blackwell and Munakata (2014), our findings showed that implementing these rules came with a substantial cost in young children (i.e., large interference effects during the next phase).",
+      "text_id": 189,
+      "paragraph_id": 36,
+      "section_id": 12,
+      "page_number": null,
+      "formatted": "However, consistent with the results of <ref type=\"bibr\" target=\"#b3\">Blackwell and Munakata (2014)<\/ref>, our findings showed that implementing these rules came with a substantial cost in young children (i.e., large interference effects during the next phase)."
+    },
+    {
+      "text": "The exploratory analyses revealed that the instruction-based interference effects (in the accuracy and main RT analyses) decreased throughout the experiment.",
+      "text_id": 190,
+      "paragraph_id": 37,
+      "section_id": 12,
+      "page_number": null,
+      "formatted": null
+    },
+    {
+      "text": "In the accuracy analyses, this effect was most pronounced for the youngest children.",
+      "text_id": 191,
+      "paragraph_id": 37,
+      "section_id": 12,
+      "page_number": null,
+      "formatted": null
+    },
+    {
+      "text": "The decrease is consistent with findings in adults (Meiran et al., 2015a).",
+      "text_id": 192,
+      "paragraph_id": 37,
+      "section_id": 12,
+      "page_number": null,
+      "formatted": "The decrease is consistent with findings in adults <ref type=\"bibr\" target=\"#b19\">(Meiran et al., 2015a)<\/ref>."
+    },
+    {
+      "text": "In next experiments, subjects cannot learn specific stimulus-response associations.",
+      "text_id": 193,
+      "paragraph_id": 38,
+      "section_id": 12,
+      "page_number": null,
+      "formatted": null
+    },
+    {
+      "text": "However, they may gradually get better at \"separating\" the go phase (indicated by the dark-blue background) from the next phase (indicated by the light-blue background).",
+      "text_id": 194,
+      "paragraph_id": 38,
+      "section_id": 12,
+      "page_number": null,
+      "formatted": null
+    },
+    {
+      "text": "In other words, we speculate that hierarchical structures (with the context cue modulating the choice options) and their usage further evolved throughout practice, reducing interference between the go and next components of the task.",
+      "text_id": 195,
+      "paragraph_id": 38,
+      "section_id": 12,
+      "page_number": null,
+      "formatted": null
+    },
+    {
+      "text": "This idea is consistent with other findings in the task-learning literature (Bhandari et al., 2017).",
+      "text_id": 196,
+      "paragraph_id": 38,
+      "section_id": 12,
+      "page_number": null,
+      "formatted": "This idea is consistent with other findings in the task-learning literature <ref type=\"bibr\" target=\"#b1\">(Bhandari et al., 2017)<\/ref>."
+    },
+    {
+      "text": "By contrasting the hierarchical-structure and advance-implementation accounts, readers may get the incorrect impression that the task-formation and taskimplementation phases are independent.",
+      "text_id": 197,
+      "paragraph_id": 38,
+      "section_id": 12,
+      "page_number": null,
+      "formatted": null
+    },
+    {
+      "text": "But when people create an inefficient nonhierarchical structure or when they have difficulties managing the contingencies within the structure, more competition between the various choice options occurs (producing larger instruction-based interference effects).",
+      "text_id": 198,
+      "paragraph_id": 38,
+      "section_id": 12,
+      "page_number": null,
+      "formatted": null
+    },
+    {
+      "text": "Thus, task structure will have knock-on effects on the implementation stage.",
+      "text_id": 199,
+      "paragraph_id": 38,
+      "section_id": 12,
+      "page_number": null,
+      "formatted": null
+    },
+    {
+      "text": "Interestingly, goal neglect (i.e., the dissociation between knowing and doing) has also been associated with the formation of inefficient task structures (Bhandari & Duncan, 2014).",
+      "text_id": 200,
+      "paragraph_id": 38,
+      "section_id": 12,
+      "page_number": null,
+      "formatted": "Interestingly, goal neglect (i.e., the dissociation between knowing and doing) has also been associated with the formation of inefficient task structures <ref type=\"bibr\" target=\"#b2\">(Bhandari &amp; Duncan, 2014)<\/ref>."
+    },
+    {
+      "text": "This raises the intriguing possibility that failing to implement or execute a task (i.e., goal neglect: a negative \"symptom\") and applying the rules when not required (i.e., instruction-based interference: a positive symptom) both arise from a failure to create an efficient task structure.",
+      "text_id": 201,
+      "paragraph_id": 38,
+      "section_id": 12,
+      "page_number": null,
+      "formatted": null
+    },
+    {
+      "text": "Future research is needed to test how these phenomena are related.",
+      "text_id": 202,
+      "paragraph_id": 38,
+      "section_id": 12,
+      "page_number": null,
+      "formatted": null
+    },
+    {
+      "text": "To conclude, we observed intention-based interference effects in all groups, indicating that even the younger children in our sample implemented novel rules at the beginning of each miniblock.",
+      "text_id": 203,
+      "paragraph_id": 39,
+      "section_id": 12,
+      "page_number": null,
+      "formatted": null
+    },
+    {
+      "text": "We attribute the numerically larger RT costs to age-related differences in the creation of hierarchical task structures.",
+      "text_id": 204,
+      "paragraph_id": 39,
+      "section_id": 12,
+      "page_number": null,
+      "formatted": null
+    },
+    {
+      "text": "Furthermore, we propose that the next paradigm might be a useful tool to study structuring and implementation of instructions in different age groups and, more generally, the powerful effects that instructions and intentions can have on behavior.",
+      "text_id": 205,
+      "paragraph_id": 39,
+      "section_id": 12,
+      "page_number": null,
+      "formatted": null
+    },
+    {
+      "text": "Edward S. Awh served as action editor for this article.",
+      "text_id": 206,
+      "paragraph_id": 40,
+      "section_id": 13,
+      "page_number": null,
+      "formatted": null
+    },
+    {
+      "text": "This work was supported by a European Research Council starting grant to F. Verbruggen (No. 312445).",
+      "text_id": 207,
+      "paragraph_id": 41,
+      "section_id": 14,
+      "page_number": null,
+      "formatted": "This work was supported by a <rs type=\"funder\">European Research Council<\/rs> <rs type=\"grantName\">starting grant<\/rs> to <rs type=\"person\">F. Verbruggen<\/rs> (No. <rs type=\"grantNumber\">312445<\/rs>)."
+    },
+    {
+      "text": "The author(s) declared that there were no conflicts of interest with respect to the authorship or the publication of this article.",
+      "text_id": 208,
+      "paragraph_id": 42,
+      "section_id": 15,
+      "page_number": null,
+      "formatted": null
+    },
+    {
+      "text": "F. Verbruggen and N. Meiran developed the study concept, and all authors contributed to the design.",
+      "text_id": 209,
+      "paragraph_id": 43,
+      "section_id": 16,
+      "page_number": null,
+      "formatted": null
+    },
+    {
+      "text": "Testing and data collection were performed by R. McLaren.",
+      "text_id": 210,
+      "paragraph_id": 43,
+      "section_id": 16,
+      "page_number": null,
+      "formatted": null
+    },
+    {
+      "text": "F. Verbruggen analyzed the data and interpreted the results with N. Meiran.",
+      "text_id": 211,
+      "paragraph_id": 43,
+      "section_id": 16,
+      "page_number": null,
+      "formatted": null
+    },
+    {
+      "text": "F. Verbruggen drafted the manuscript, and N. Meiran, R. McLaren, and M. Pereg provided critical revisions.",
+      "text_id": 212,
+      "paragraph_id": 43,
+      "section_id": 16,
+      "page_number": null,
+      "formatted": null
+    },
+    {
+      "text": "All authors approved the final version of the manuscript for submission.",
+      "text_id": 213,
+      "paragraph_id": 43,
+      "section_id": 16,
+      "page_number": null,
+      "formatted": null
+    },
+    {
+      "text": "Additional supporting information can be found at http://journals.sagepub.com/doi/suppl/10.1177/0956797618755322",
+      "text_id": 214,
+      "paragraph_id": 44,
+      "section_id": 17,
+      "page_number": null,
+      "formatted": "Additional supporting information can be found at <ref type=\"url\" target=\"http://journals.sagepub.com/doi/suppl/10.1177/0956797618755322\">http://journals.sagepub.com/doi/suppl/10.1177/0956797618755322<\/ref>"
+    },
+    {
+      "text": "All data have been made publicly available via the Open Science Framework and can be accessed at https://www.osf.io/54jd9/.",
+      "text_id": 215,
+      "paragraph_id": 45,
+      "section_id": 18,
+      "page_number": null,
+      "formatted": "All data have been made publicly available via the Open Science Framework and can be accessed at <ref type=\"url\" target=\"https://www.osf.io/54jd9/\">https://osf.io/54jd9/<\/ref>."
+    },
+    {
+      "text": "The design and analysis plans for the experiment were not preregistered.",
+      "text_id": 216,
+      "paragraph_id": 45,
+      "section_id": 18,
+      "page_number": null,
+      "formatted": null
+    },
+    {
+      "text": "The complete Open Practices Disclosure for this article can be found at http://journals.sagepub.com/doi/suppl/10.1177/0956797618755322.",
+      "text_id": 217,
+      "paragraph_id": 45,
+      "section_id": 18,
+      "page_number": null,
+      "formatted": "The complete Open Practices Disclosure for this article can be found at <ref type=\"url\" target=\"http://journals.sagepub.com/doi/suppl/10.1177/0956797618755322\">http://journals.sagepub.com/doi/  suppl/10.1177/0956797618755322<\/ref>."
+    },
+    {
+      "text": "This article has received the badge for Open Data.",
+      "text_id": 218,
+      "paragraph_id": 45,
+      "section_id": 18,
+      "page_number": null,
+      "formatted": null
+    },
+    {
+      "text": "More information about the Open Practices badges can be found at http://www.psychologicalscience.org/publications/badges science.org/publications/badges.",
+      "text_id": 219,
+      "paragraph_id": 45,
+      "section_id": 18,
+      "page_number": null,
+      "formatted": "More information about the Open Practices badges can be found at <ref type=\"url\" target=\"http://www.psychologicalscience.org/publications/badges\">http://www.psychological<\/ref> science.org/publications/badges."
+    },
+    {
+      "text": "Fig 1.",
+      "text_id": 220,
+      "paragraph_id": 46,
+      "section_id": 19,
+      "page_number": null,
+      "formatted": null
+    },
+    {
+      "text": "Experimental design.",
+      "text_id": 221,
+      "paragraph_id": 46,
+      "section_id": 19,
+      "page_number": null,
+      "formatted": null
+    },
+    {
+      "text": "The top two rows show the four phases of each miniblock (a) and the trial course for next trials (b).",
+      "text_id": 222,
+      "paragraph_id": 46,
+      "section_id": 19,
+      "page_number": null,
+      "formatted": null
+    },
+    {
+      "text": "The trial course for go trials was very similar to the course for next trials, except that the stimulus disappeared as soon as a response key (correct or incorrect) was pressed.",
+      "text_id": 223,
+      "paragraph_id": 46,
+      "section_id": 19,
+      "page_number": null,
+      "formatted": null
+    },
+    {
+      "text": "Red, green, and blue (RGB) values are given in (a) for the two background colors.",
+      "text_id": 224,
+      "paragraph_id": 46,
+      "section_id": 19,
+      "page_number": null,
+      "formatted": null
+    },
+    {
+      "text": "The size of the screen and the stimuli are shown in (c).",
+      "text_id": 225,
+      "paragraph_id": 46,
+      "section_id": 19,
+      "page_number": null,
+      "formatted": null
+    },
+    {
+      "text": "Fig 2.",
+      "text_id": 226,
+      "paragraph_id": 47,
+      "section_id": 20,
+      "page_number": null,
+      "formatted": null
+    },
+    {
+      "text": "Overview of the next and go data (see Method section for a discussion of the different dependent variables).",
+      "text_id": 227,
+      "paragraph_id": 47,
+      "section_id": 20,
+      "page_number": null,
+      "formatted": null
+    },
+    {
+      "text": "The top row shows mean (a) error rate on next trials, (b) response time (RT) for all responses on next trials, and (c) RT for correct responses only on next trials; results are shown as a function of participants' age and trial type.",
+      "text_id": 228,
+      "paragraph_id": 47,
+      "section_id": 20,
+      "page_number": null,
+      "formatted": null
+    },
+    {
+      "text": "The next-compatibility effect (d) is shown for the 20th, 40th, 60th, and 80th percentiles; this is for the analysis with all RT trials included.",
+      "text_id": 229,
+      "paragraph_id": 47,
+      "section_id": 20,
+      "page_number": null,
+      "formatted": null
+    },
+    {
+      "text": "Mean error rate for all go trials (e) and RT for correct go trials only (f) are shown as a function of participants' age and trial type.",
+      "text_id": 230,
+      "paragraph_id": 47,
+      "section_id": 20,
+      "page_number": null,
+      "formatted": null
+    },
+    {
+      "text": "Error bars reflect 95% confidence intervals.",
+      "text_id": 231,
+      "paragraph_id": 47,
+      "section_id": 20,
+      "page_number": null,
+      "formatted": null
+    },
+    {
+      "text": "Fig 3.",
+      "text_id": 232,
+      "paragraph_id": 48,
+      "section_id": 21,
+      "page_number": null,
+      "formatted": null
+    },
+    {
+      "text": "Overview of the next data for the first half (top row) and second half (bottom row) of the experiment (see Method section for a discussion of the different dependent variables).",
+      "text_id": 233,
+      "paragraph_id": 48,
+      "section_id": 21,
+      "page_number": null,
+      "formatted": null
+    },
+    {
+      "text": "The graphs show mean (a) error rate on next trials, (b) response time (RT) for all responses on next trials, and (c) RT for correct responses only on next trials; results are shown as a function of participants' age and trial type.",
+      "text_id": 234,
+      "paragraph_id": 48,
+      "section_id": 21,
+      "page_number": null,
+      "formatted": null
+    },
+    {
+      "text": "Error bars reflect 95% confidence intervals.",
+      "text_id": 235,
+      "paragraph_id": 48,
+      "section_id": 21,
+      "page_number": null,
+      "formatted": null
+    },
+    {
+      "text": "Number of Subjects and Gender for Each Age Group",
+      "text_id": 236,
+      "paragraph_id": 49,
+      "section_id": 22,
+      "page_number": null,
+      "formatted": null
+    },
+    {
+      "text": "Average Number of Trials in the Next Analysis for Each Age Group",
+      "text_id": 237,
+      "paragraph_id": 50,
+      "section_id": 23,
+      "page_number": null,
+      "formatted": null
+    },
+    {
+      "text": "Results of the Analyses of Variance Used to Explore the Effect of Age, Compatibility (Next), and Trial Number (Go 1 or Go 2) on Performance (All Age Groups Included)",
+      "text_id": 238,
+      "paragraph_id": 51,
+      "section_id": 24,
+      "page_number": null,
+      "formatted": null
+    },
+    {
+      "text": "Results of the Analyses of Variance Used to Explore the Effect of Age, Compatibility",
+      "text_id": 239,
+      "paragraph_id": 52,
+      "section_id": 25,
+      "page_number": null,
+      "formatted": null
+    },
+    {
+      "text": "Results of Planned Comparisons to Explore the Next-Compatibility Effect",
+      "text_id": 240,
+      "paragraph_id": 53,
+      "section_id": 26,
+      "page_number": null,
+      "formatted": null
+    },
+    {
+      "text": "Results of the Analyses of Variance Used to Explore the Effect of Age, Compatibility, and Experiment Half on Next Performance (All Age Groups Included)",
+      "text_id": 241,
+      "paragraph_id": 54,
+      "section_id": 27,
+      "page_number": null,
+      "formatted": null
+    },
+    {
+      "text": "Results of the Analyses of Variance Used to Explore the Effect of Age, Compatibility, and Experiment Half on Next Performance (Only 4-to 11-Year-Olds Included)",
+      "text_id": 242,
+      "paragraph_id": 55,
+      "section_id": 28,
+      "page_number": null,
+      "formatted": null
+    },
+    {
+      "text": "Amso, D., Haas, S., McShane, L., & Badre, D. (2014). Working memory updating and the development of rule-guided behavior. Cognition, 133, 201-210. doi:10.1016/j.cognition.2014.06.012",
+      "text_id": 243,
+      "paragraph_id": 56,
+      "section_id": 29,
+      "page_number": null,
+      "formatted": null
+    },
+    {
+      "text": "Bhandari, A., Badre, D., & Frank, M. J. (2017). Learning cog- nitive control. In T. Egner (Ed.), The Wiley handbook of cognitive control (pp. 127-142). Chichester, England: John Wiley & Sons.",
+      "text_id": 244,
+      "paragraph_id": 57,
+      "section_id": 29,
+      "page_number": null,
+      "formatted": null
+    },
+    {
+      "text": "Bhandari, A., & Duncan, J. (2014). Goal neglect and knowl- edge chunking in the construction of novel behaviour. Cognition, 130, 11-30. doi:10.1016/j.cognition.2013.08.013",
+      "text_id": 245,
+      "paragraph_id": 58,
+      "section_id": 29,
+      "page_number": null,
+      "formatted": null
+    },
+    {
+      "text": "Blackwell, K. A., & Munakata, Y. (2014). Costs and benefits linked to developments in cognitive control. Developmental Science, 17, 203-211. doi:10.1111/desc.12113",
+      "text_id": 246,
+      "paragraph_id": 59,
+      "section_id": 29,
+      "page_number": null,
+      "formatted": null
+    },
+    {
+      "text": "Brainard, D. H. (1997). The psychophysics toolbox. Spatial Vision, 10, 433-436.",
+      "text_id": 247,
+      "paragraph_id": 60,
+      "section_id": 29,
+      "page_number": null,
+      "formatted": null
+    },
+    {
+      "text": "Bunge, S. A., & Crone, E. A. (2009). Neural correlates of the development of cognitive control. In J. M. Rumsey & M. Ernst (Eds.), Neuroimaging in developmental clini- cal neuroscience (pp. 22-37). New York, NY: Cambridge University Press.",
+      "text_id": 248,
+      "paragraph_id": 61,
+      "section_id": 29,
+      "page_number": null,
+      "formatted": null
+    },
+    {
+      "text": "Bunge, S. A., & Zelazo, P. D. (2006). A brain-based account of the development of rule use in childhood. Current Directions in Psychological Science, 15, 118-121. doi: 10.1111/j.0963-7214.2006.00419.x",
+      "text_id": 249,
+      "paragraph_id": 62,
+      "section_id": 29,
+      "page_number": null,
+      "formatted": null
+    },
+    {
+      "text": "Chevalier, N., & Blaye, A. (2009). Setting goals to switch between tasks: Effect of cue transparency on children's cognitive flexibility. Developmental Psychology, 45, 782- 797. doi:10.1037/a0015409",
+      "text_id": 250,
+      "paragraph_id": 63,
+      "section_id": 29,
+      "page_number": null,
+      "formatted": null
+    },
+    {
+      "text": "Chevalier, N., Martis, S. B., Curran, T., & Munakata, Y. (2015). Metacognitive processes in executive control development: The case of reactive and proactive control. Journal of Cognitive Neuroscience, 27, 1125-1136. doi:10.1162/jocn_a_00782",
+      "text_id": 251,
+      "paragraph_id": 64,
+      "section_id": 29,
+      "page_number": null,
+      "formatted": null
+    },
+    {
+      "text": "Cole, M. W., Laurent, P., & Stocco, A. (2013). Rapid instru- cted task learning: A new window into the human brain's unique capacity for flexible cognitive control. Cognitive, Affective, & Behavioral Neuroscience, 13, 1-22. doi:10.3758/s13415-012-0125-7",
+      "text_id": 252,
+      "paragraph_id": 65,
+      "section_id": 29,
+      "page_number": null,
+      "formatted": null
+    },
+    {
+      "text": "Cole, M. W., Braver, T. S., & Meiran, N. (2017). The task nov- elty paradox: Flexible control of inflexible neural path- ways during rapid instructed task learning. Neuroscience & Biobehavioral Reviews, 81, 4-15. doi:10.1016/j.neubiorev.2017.02.009",
+      "text_id": 253,
+      "paragraph_id": 66,
+      "section_id": 29,
+      "page_number": null,
+      "formatted": null
+    },
+    {
+      "text": "Diamond, A. (2013). Executive functions. Annual Review of Psychology, 64, 135-168. doi:10.1146/annurev-psych- 113011-143750",
+      "text_id": 254,
+      "paragraph_id": 67,
+      "section_id": 29,
+      "page_number": null,
+      "formatted": null
+    },
+    {
+      "text": "Everaert, T., Theeuwes, M., Liefooghe, B., & De Houwer, J. (2014). Automatic motor activation by mere instruc- tion.",
+      "text_id": 255,
+      "paragraph_id": 68,
+      "section_id": 29,
+      "page_number": null,
+      "formatted": null
+    },
+    {
+      "text": "Cognitive, Affective, & Behavioral Neuroscience, 14, 1300-1309. doi:10.3758/s13415-014-0294-7",
+      "text_id": 256,
+      "paragraph_id": 69,
+      "section_id": 29,
+      "page_number": null,
+      "formatted": null
+    },
+    {
+      "text": "Huizinga, M., Dolan, C. V., & van der Molen, M. W. (2006). Age-related change in executive function: Developmental trends and a latent variable analysis. Neuropsychologia, 44, 2017-2036. doi:10.1016/j.neuropsychologia.2006.01.010",
+      "text_id": 257,
+      "paragraph_id": 70,
+      "section_id": 29,
+      "page_number": null,
+      "formatted": null
+    },
+    {
+      "text": "Kiesel, A., Steinhauser, M., Wendt, M., Falkenstein, M., Jost, K., Philipp, A. M., & Koch, I. (2010). Control and interfer- ence in task switching: A review. Psychological Bulletin, 136, 849-874. doi:10.1037/a0019842",
+      "text_id": 258,
+      "paragraph_id": 71,
+      "section_id": 29,
+      "page_number": null,
+      "formatted": null
+    },
+    {
+      "text": "Lawrence, M. A. (2016). ez: Easy analysis and visualization of factorial experiments. Retrieved from http://CRAN.R- project.org/package=ez",
+      "text_id": 259,
+      "paragraph_id": 72,
+      "section_id": 29,
+      "page_number": null,
+      "formatted": null
+    },
+    {
+      "text": "Meiran, N., Liefooghe, B., & De Houwer, J. (2017). Powerful instructions: Automaticity without practice. Current Directions in Psychological Science, 26, 509-514. doi: 10.1177/0963721417711638",
+      "text_id": 260,
+      "paragraph_id": 73,
+      "section_id": 29,
+      "page_number": null,
+      "formatted": null
+    },
+    {
+      "text": "Meiran, N., Pereg, M., Givon, E., Danieli, G., & Shahar, N. (2016). The role of working memory in rapid instructed task learning and intention-based reflexivity: An indi- vidual differences examination. Neuropsychologia, 90, 180-189. doi:10.1016/j.neuropsychologia.2016.06.037",
+      "text_id": 261,
+      "paragraph_id": 74,
+      "section_id": 29,
+      "page_number": null,
+      "formatted": null
+    },
+    {
+      "text": "Meiran, N., Pereg, M., Kessler, Y., Cole, M. W., & Braver, T. S. (2015a). The power of instructions: Proactive con- figuration of stimulus-response translation. Journal of Experimental Psychology: Learning, Memory, and Cognition, 41, 768-786. doi:10.1037/xlm0000063",
+      "text_id": 262,
+      "paragraph_id": 75,
+      "section_id": 29,
+      "page_number": null,
+      "formatted": null
+    },
+    {
+      "text": "Meiran, N., Pereg, M., Kessler, Y., Cole, M. W., & Braver, T. S. (2015b). Reflexive activation of newly instructed stimu- lus-response rules: Evidence from lateralized readiness potentials in no-go trials. Cognitive, Affective, & Behavioral Neuroscience, 15, 365-373. doi:10.3758/s13415-014-0321-8",
+      "text_id": 263,
+      "paragraph_id": 76,
+      "section_id": 29,
+      "page_number": null,
+      "formatted": null
+    },
+    {
+      "text": "Munakata, Y., Snyder, H. R., & Chatham, C. H. (2012). Developing cognitive control: Three key transitions. Current Directions in Psychological Science, 21, 71-77. doi:10.1177/0963721412436807",
+      "text_id": 264,
+      "paragraph_id": 77,
+      "section_id": 29,
+      "page_number": null,
+      "formatted": null
+    },
+    {
+      "text": "R Core Team. (2016). R: A language and environment for sta- tistical computing. Retrieved from http://www.R-project .org Schönbrodt, F. D., & Wagenmakers, E.-J. (2018). Bayes fac- tor design analysis: Planning for compelling evidence. Psychonomic Bulletin & Review, 25, 128-142. doi:10.3758/ s13423-017-1230-y",
+      "text_id": 265,
+      "paragraph_id": 78,
+      "section_id": 29,
+      "page_number": null,
+      "formatted": null
+    },
+    {
+      "text": "Unger, K., Ackerman, L., Chatham, C. H., Amso, D., & Badre, D. (2016). Working memory gating mecha- nisms explain developmental change in rule-guided behavior. Cognition, 155, 8-22. doi:10.1016/j.cognition.2016.05.020",
+      "text_id": 266,
+      "paragraph_id": 79,
+      "section_id": 29,
+      "page_number": null,
+      "formatted": null
+    },
+    {
+      "text": "Vandierendonck, A., Liefooghe, B., & Verbruggen, F. (2010). Task switching: Interplay of reconfiguration and inter- ference control. Psychological Bulletin, 136, 601-626. doi:10.1037/a0019791",
+      "text_id": 267,
+      "paragraph_id": 80,
+      "section_id": 29,
+      "page_number": null,
+      "formatted": null
+    },
+    {
+      "text": "Verbruggen, F., McLaren, I. P., & Chambers, C. D. (2014). Banishing the control homunculi in studies of action con- trol and behavior change. Perspectives on Psychological Science, 9, 497-524. doi:10.1177/1745691614526414",
+      "text_id": 268,
+      "paragraph_id": 81,
+      "section_id": 29,
+      "page_number": null,
+      "formatted": null
+    },
+    {
+      "text": "Verbruggen, F., & McLaren, R. (2017). Development of between-trial response strategy adjustments in a continu- ous action control task: A cross-sectional study. Journal of Experimental Child Psychology, 162, 39-57. doi:10.1016/j .jecp.2017.05.002",
+      "text_id": 269,
+      "paragraph_id": 82,
+      "section_id": 29,
+      "page_number": null,
+      "formatted": null
+    },
+    {
+      "text": "Zelazo, P. D., Frye, D., & Rapus, T. (1996). An age-related dissociation between knowing rules and using them. Cognitive Development, 11, 37-63. doi:10.1016/S0885- 2014(96)90027-1",
+      "text_id": 270,
+      "paragraph_id": 83,
+      "section_id": 29,
+      "page_number": null,
+      "formatted": null
+    }
+  ],
+  "section": [
+    {
+      "section_id": 0,
+      "header": "Abstract",
+      "parent_section_id": null,
+      "section_type": "abstract",
+      "classification_score": null
+    },
+    {
+      "section_id": 1,
+      "header": "[div-01]",
+      "parent_section_id": null,
+      "section_type": "intro",
+      "classification_score": null
+    },
+    {
+      "section_id": 2,
+      "header": "The Development of Structuring and Implementing Rules",
+      "parent_section_id": null,
+      "section_type": "intro",
+      "classification_score": null
+    },
+    {
+      "section_id": 3,
+      "header": "The Present Study",
+      "parent_section_id": null,
+      "section_type": "intro",
+      "classification_score": null
+    },
+    {
+      "section_id": 4,
+      "header": "Method",
+      "parent_section_id": null,
+      "section_type": "method",
+      "classification_score": null
+    },
+    {
+      "section_id": 5,
+      "header": "Subjects",
+      "parent_section_id": null,
+      "section_type": "method",
+      "classification_score": null
+    },
+    {
+      "section_id": 6,
+      "header": "Procedure",
+      "parent_section_id": null,
+      "section_type": "method",
+      "classification_score": null
+    },
+    {
+      "section_id": 7,
+      "header": "Dependent variables and analyses",
+      "parent_section_id": null,
+      "section_type": "method",
+      "classification_score": null
+    },
+    {
+      "section_id": 8,
+      "header": "Results",
+      "parent_section_id": null,
+      "section_type": "results",
+      "classification_score": null
+    },
+    {
+      "section_id": 9,
+      "header": "Next phase",
+      "parent_section_id": null,
+      "section_type": "results",
+      "classification_score": null
+    },
+    {
+      "section_id": 10,
+      "header": "Go phase",
+      "parent_section_id": null,
+      "section_type": "results",
+      "classification_score": null
+    },
+    {
+      "section_id": 11,
+      "header": "Exploratory analyses",
+      "parent_section_id": null,
+      "section_type": "results",
+      "classification_score": null
+    },
+    {
+      "section_id": 12,
+      "header": "General Discussion",
+      "parent_section_id": null,
+      "section_type": "discussion",
+      "classification_score": null
+    },
+    {
+      "section_id": 13,
+      "header": "Action Editor",
+      "parent_section_id": null,
+      "section_type": "discussion",
+      "classification_score": null
+    },
+    {
+      "section_id": 14,
+      "header": "Funding",
+      "parent_section_id": null,
+      "section_type": "funding",
+      "classification_score": null
+    },
+    {
+      "section_id": 15,
+      "header": "Declaration of Conflicting Interests",
+      "parent_section_id": null,
+      "section_type": "conflict",
+      "classification_score": null
+    },
+    {
+      "section_id": 16,
+      "header": "Author Contributions",
+      "parent_section_id": null,
+      "section_type": "contribution",
+      "classification_score": null
+    },
+    {
+      "section_id": 17,
+      "header": "Supplemental Material",
+      "parent_section_id": null,
+      "section_type": "annex",
+      "classification_score": null
+    },
+    {
+      "section_id": 18,
+      "header": "Open Practices",
+      "parent_section_id": null,
+      "section_type": "annex",
+      "classification_score": null
+    },
+    {
+      "section_id": 19,
+      "header": "Fig 1.",
+      "parent_section_id": null,
+      "section_type": "figure",
+      "classification_score": null
+    },
+    {
+      "section_id": 20,
+      "header": "Fig 2.",
+      "parent_section_id": null,
+      "section_type": "figure",
+      "classification_score": null
+    },
+    {
+      "section_id": 21,
+      "header": "Fig 3.",
+      "parent_section_id": null,
+      "section_type": "figure",
+      "classification_score": null
+    },
+    {
+      "section_id": 22,
+      "header": "Table 1.",
+      "parent_section_id": null,
+      "section_type": "table",
+      "classification_score": null
+    },
+    {
+      "section_id": 23,
+      "header": "Table 2.",
+      "parent_section_id": null,
+      "section_type": "table",
+      "classification_score": null
+    },
+    {
+      "section_id": 24,
+      "header": "Table 3.",
+      "parent_section_id": null,
+      "section_type": "table",
+      "classification_score": null
+    },
+    {
+      "section_id": 25,
+      "header": "Table 4.",
+      "parent_section_id": null,
+      "section_type": "table",
+      "classification_score": null
+    },
+    {
+      "section_id": 26,
+      "header": "Table 5.",
+      "parent_section_id": null,
+      "section_type": "table",
+      "classification_score": null
+    },
+    {
+      "section_id": 27,
+      "header": "Table 6.",
+      "parent_section_id": null,
+      "section_type": "table",
+      "classification_score": null
+    },
+    {
+      "section_id": 28,
+      "header": "Table 7.",
+      "parent_section_id": null,
+      "section_type": "table",
+      "classification_score": null
+    },
+    {
+      "section_id": 29,
+      "header": "References",
+      "parent_section_id": null,
+      "section_type": "references",
+      "classification_score": null
+    }
+  ],
+  "url": [
+    {
+      "href": "http://crossmark.crossref.org/dialog/?doi=10.1177%2F0956797618755322&domain=pdf&date_stamp=2018-05-10",
+      "link_text": "755322P SSXXX10.1177/0956797618755322Verbruggen et al.Intention-Based Interference",
+      "text_id": 12
+    },
+    {
+      "href": "https://osf.io/am4yk/",
+      "link_text": null,
+      "text_id": 104
+    },
+    {
+      "href": "http://journals.sagepub.com/doi/suppl/10.1177/0956797618755322",
+      "link_text": null,
+      "text_id": 214
+    },
+    {
+      "href": "https://www.osf.io/54jd9/",
+      "link_text": "https://osf.io/54jd9/",
+      "text_id": 215
+    },
+    {
+      "href": "http://journals.sagepub.com/doi/suppl/10.1177/0956797618755322",
+      "link_text": null,
+      "text_id": 217
+    },
+    {
+      "href": "http://www.psychologicalscience.org/publications/badges",
+      "link_text": "http://www.psychological",
+      "text_id": 219
+    }
+  ],
+  "bib": [
+    {
+      "bib_type": "article",
+      "doi": "10.1016/j.cognition.2014.06.012",
+      "title": "Working memory updating and the development of rule-guided behavior",
+      "authors": "Amso, D; Haas, S; Mcshane, L; Badre, D",
+      "editors": "",
+      "publisher": "",
+      "year": 2014,
+      "volume": "133",
+      "issue": "",
+      "first_page": "201",
+      "last_page": "210",
+      "container": "Cognition",
+      "bib_id": 0,
+      "year_suffix": "",
+      "text_id": 243
+    },
+    {
+      "bib_type": "incollection",
+      "doi": "",
+      "title": "Learning cognitive control",
+      "authors": "Bhandari, A; Badre, D; Frank, M J",
+      "editors": "Egner, T",
+      "publisher": "John Wiley & Sons",
+      "year": 2017,
+      "volume": "",
+      "issue": "",
+      "first_page": "127",
+      "last_page": "142",
+      "container": "The Wiley handbook of cognitive control",
+      "bib_id": 1,
+      "year_suffix": "",
+      "text_id": 244
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1016/j.cognition.2013.08.013",
+      "title": "Goal neglect and knowledge chunking in the construction of novel behaviour",
+      "authors": "Bhandari, A; Duncan, J",
+      "editors": "",
+      "publisher": "",
+      "year": 2014,
+      "volume": "130",
+      "issue": "",
+      "first_page": "11",
+      "last_page": "30",
+      "container": "Cognition",
+      "bib_id": 2,
+      "year_suffix": "",
+      "text_id": 245
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1111/desc.12113",
+      "title": "Costs and benefits linked to developments in cognitive control",
+      "authors": "Blackwell, K A; Munakata, Y",
+      "editors": "",
+      "publisher": "",
+      "year": 2014,
+      "volume": "17",
+      "issue": "",
+      "first_page": "203",
+      "last_page": "211",
+      "container": "Developmental Science",
+      "bib_id": 3,
+      "year_suffix": "",
+      "text_id": 246
+    },
+    {
+      "bib_type": "article",
+      "doi": "",
+      "title": "The psychophysics toolbox",
+      "authors": "Brainard, D H",
+      "editors": "",
+      "publisher": "",
+      "year": 1997,
+      "volume": "10",
+      "issue": "",
+      "first_page": "433",
+      "last_page": "436",
+      "container": "Spatial Vision",
+      "bib_id": 4,
+      "year_suffix": "",
+      "text_id": 247
+    },
+    {
+      "bib_type": "misc",
+      "doi": "",
+      "title": "Neural correlates of the development of cognitive control",
+      "authors": "Bunge, S A; Crone, E A",
+      "editors": "Rumsey, J M; Ernst, M",
+      "publisher": "Cambridge University Press",
+      "year": 2009,
+      "volume": "",
+      "issue": "",
+      "first_page": "22",
+      "last_page": "37",
+      "container": null,
+      "bib_id": 5,
+      "year_suffix": "",
+      "text_id": 248
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1111/j.0963-7214.2006.00419.x",
+      "title": "A brain-based account of the development of rule use in childhood",
+      "authors": "Bunge, S A; Zelazo, P D",
+      "editors": "",
+      "publisher": "",
+      "year": 2006,
+      "volume": "15",
+      "issue": "",
+      "first_page": "118",
+      "last_page": "121",
+      "container": "Current Directions in Psychological Science",
+      "bib_id": 6,
+      "year_suffix": "",
+      "text_id": 249
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1037/a0015409",
+      "title": "Setting goals to switch between tasks: Effect of cue transparency on children's cognitive flexibility",
+      "authors": "Chevalier, N; Blaye, A",
+      "editors": "",
+      "publisher": "",
+      "year": 2009,
+      "volume": "45",
+      "issue": "",
+      "first_page": "782",
+      "last_page": "797",
+      "container": "Developmental Psychology",
+      "bib_id": 7,
+      "year_suffix": "",
+      "text_id": 250
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1162/jocn_a_00782",
+      "title": "Metacognitive processes in executive control development: The case of reactive and proactive control",
+      "authors": "Chevalier, N; Martis, S B; Curran, T; Munakata, Y",
+      "editors": "",
+      "publisher": "",
+      "year": 2015,
+      "volume": "27",
+      "issue": "",
+      "first_page": "1125",
+      "last_page": "1136",
+      "container": "Journal of Cognitive Neuroscience",
+      "bib_id": 8,
+      "year_suffix": "",
+      "text_id": 251
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.3758/s13415-012-0125-7",
+      "title": "Rapid instructed task learning: A new window into the human brain's unique capacity for flexible cognitive control",
+      "authors": "Cole, M W; Laurent, P; Stocco, A",
+      "editors": "",
+      "publisher": "",
+      "year": 2013,
+      "volume": "13",
+      "issue": "",
+      "first_page": "1",
+      "last_page": "22",
+      "container": "Cognitive, Affective, & Behavioral Neuroscience",
+      "bib_id": 9,
+      "year_suffix": "",
+      "text_id": 252
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1016/j.neubiorev.2017.02.009",
+      "title": "The task novelty paradox: Flexible control of inflexible neural pathways during rapid instructed task learning",
+      "authors": "Cole, M W; Braver, T S; Meiran, N",
+      "editors": "",
+      "publisher": "",
+      "year": 2017,
+      "volume": "81",
+      "issue": "",
+      "first_page": "4",
+      "last_page": "15",
+      "container": "Neuroscience & Biobehavioral Reviews",
+      "bib_id": 10,
+      "year_suffix": "",
+      "text_id": 253
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1146/annurev-psych-113011-143750",
+      "title": "Executive functions",
+      "authors": "Diamond, A",
+      "editors": "",
+      "publisher": "",
+      "year": 2013,
+      "volume": "64",
+      "issue": "",
+      "first_page": "135",
+      "last_page": "168",
+      "container": "Annual Review of Psychology",
+      "bib_id": 11,
+      "year_suffix": "",
+      "text_id": 254
+    },
+    {
+      "bib_type": "book",
+      "doi": "",
+      "title": "Automatic motor activation by mere instruction",
+      "authors": "Everaert, T; Theeuwes, M; Liefooghe, B; De Houwer, J",
+      "editors": "",
+      "publisher": "",
+      "year": 2014,
+      "volume": "",
+      "issue": "",
+      "first_page": null,
+      "last_page": null,
+      "container": null,
+      "bib_id": 12,
+      "year_suffix": "",
+      "text_id": 255
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.3758/s13415-014-0294-7",
+      "title": "",
+      "authors": "",
+      "editors": "",
+      "publisher": "",
+      "year": 1300,
+      "volume": "14",
+      "issue": "",
+      "first_page": "1300",
+      "last_page": "1309",
+      "container": "Cognitive, Affective, & Behavioral Neuroscience",
+      "bib_id": 13,
+      "year_suffix": "",
+      "text_id": 256
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1016/j.neuropsychologia.2006.01.010",
+      "title": "Age-related change in executive function: Developmental trends and a latent variable analysis",
+      "authors": "Huizinga, M; Dolan, C V; Van Der Molen, M W",
+      "editors": "",
+      "publisher": "",
+      "year": 2006,
+      "volume": "44",
+      "issue": "",
+      "first_page": "2017",
+      "last_page": "2036",
+      "container": "Neuropsychologia",
+      "bib_id": 14,
+      "year_suffix": "",
+      "text_id": 257
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1037/a0019842",
+      "title": "Control and interference in task switching: A review",
+      "authors": "Kiesel, A; Steinhauser, M; Wendt, M; Falkenstein, M; Jost, K; Philipp, A M; Koch, I",
+      "editors": "",
+      "publisher": "",
+      "year": 2010,
+      "volume": "136",
+      "issue": "",
+      "first_page": "849",
+      "last_page": "874",
+      "container": "Psychological Bulletin",
+      "bib_id": 15,
+      "year_suffix": "",
+      "text_id": 258
+    },
+    {
+      "bib_type": "book",
+      "doi": "",
+      "title": "ez: Easy analysis and visualization of factorial experiments",
+      "authors": "Lawrence, M A",
+      "editors": "",
+      "publisher": "",
+      "year": 2016,
+      "volume": "",
+      "issue": "",
+      "first_page": null,
+      "last_page": null,
+      "container": null,
+      "bib_id": 16,
+      "year_suffix": "",
+      "text_id": 259
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1177/0963721417711638",
+      "title": "Powerful instructions: Automaticity without practice",
+      "authors": "Meiran, N; Liefooghe, B; De Houwer, J",
+      "editors": "",
+      "publisher": "",
+      "year": 2017,
+      "volume": "26",
+      "issue": "",
+      "first_page": "509",
+      "last_page": "514",
+      "container": "Current Directions in Psychological Science",
+      "bib_id": 17,
+      "year_suffix": "",
+      "text_id": 260
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1016/j.neuropsychologia.2016.06.037",
+      "title": "The role of working memory in rapid instructed task learning and intention-based reflexivity: An individual differences examination",
+      "authors": "Meiran, N; Pereg, M; Givon, E; Danieli, G; Shahar, N",
+      "editors": "",
+      "publisher": "",
+      "year": 2016,
+      "volume": "90",
+      "issue": "",
+      "first_page": "180",
+      "last_page": "189",
+      "container": "Neuropsychologia",
+      "bib_id": 18,
+      "year_suffix": "",
+      "text_id": 261
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1037/xlm0000063",
+      "title": "The power of instructions: Proactive configuration of stimulus-response translation",
+      "authors": "Meiran, N; Pereg, M; Kessler, Y; Cole, M W; Braver, T S",
+      "editors": "",
+      "publisher": "",
+      "year": 2015,
+      "volume": "41",
+      "issue": "",
+      "first_page": "768",
+      "last_page": "786",
+      "container": "Journal of Experimental Psychology: Learning, Memory, and Cognition",
+      "bib_id": 19,
+      "year_suffix": "a",
+      "text_id": 262
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.3758/s13415-014-0321-8",
+      "title": "Reflexive activation of newly instructed stimulus-response rules: Evidence from lateralized readiness potentials in no-go trials",
+      "authors": "Meiran, N; Pereg, M; Kessler, Y; Cole, M W; Braver, T S",
+      "editors": "",
+      "publisher": "",
+      "year": 2015,
+      "volume": "15",
+      "issue": "",
+      "first_page": "365",
+      "last_page": "373",
+      "container": "Cognitive, Affective, & Behavioral Neuroscience",
+      "bib_id": 20,
+      "year_suffix": "b",
+      "text_id": 263
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1177/0963721412436807",
+      "title": "Developing cognitive control: Three key transitions",
+      "authors": "Munakata, Y; Snyder, H R; Chatham, C H",
+      "editors": "",
+      "publisher": "",
+      "year": 2012,
+      "volume": "21",
+      "issue": "",
+      "first_page": "71",
+      "last_page": "77",
+      "container": "Current Directions in Psychological Science",
+      "bib_id": 21,
+      "year_suffix": "",
+      "text_id": 264
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.3758/s13423-017-1230-y",
+      "title": "Bayes factor design analysis: Planning for compelling evidence",
+      "authors": "",
+      "editors": "Wagenmakers, F D; , E.-J",
+      "publisher": "",
+      "year": 2016,
+      "volume": "25",
+      "issue": "",
+      "first_page": "128",
+      "last_page": "142",
+      "container": "Psychonomic Bulletin & Review",
+      "bib_id": 22,
+      "year_suffix": "",
+      "text_id": 265
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1016/j.cognition.2016.05.020",
+      "title": "Working memory gating mechanisms explain developmental change in rule-guided behavior",
+      "authors": "Unger, K; Ackerman, L; Chatham, C H; Amso, D; Badre, D",
+      "editors": "",
+      "publisher": "",
+      "year": 2016,
+      "volume": "155",
+      "issue": "",
+      "first_page": "8",
+      "last_page": "22",
+      "container": "Cognition",
+      "bib_id": 23,
+      "year_suffix": "",
+      "text_id": 266
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1037/a0019791",
+      "title": "Task switching: Interplay of reconfiguration and interference control",
+      "authors": "Vandierendonck, A; Liefooghe, B; Verbruggen, F",
+      "editors": "",
+      "publisher": "",
+      "year": 2010,
+      "volume": "136",
+      "issue": "",
+      "first_page": "601",
+      "last_page": "626",
+      "container": "Psychological Bulletin",
+      "bib_id": 24,
+      "year_suffix": "",
+      "text_id": 267
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1177/1745691614526414",
+      "title": "Banishing the control homunculi in studies of action control and behavior change",
+      "authors": "Verbruggen, F; Mclaren, I P; Chambers, C D",
+      "editors": "",
+      "publisher": "",
+      "year": 2014,
+      "volume": "9",
+      "issue": "",
+      "first_page": "497",
+      "last_page": "524",
+      "container": "Perspectives on Psychological Science",
+      "bib_id": 25,
+      "year_suffix": "",
+      "text_id": 268
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1016/j.jecp.2017.05.002",
+      "title": "Development of between-trial response strategy adjustments in a continuous action control task: A cross-sectional study",
+      "authors": "Verbruggen, F; Mclaren, R",
+      "editors": "",
+      "publisher": "",
+      "year": 2017,
+      "volume": "162",
+      "issue": "",
+      "first_page": "39",
+      "last_page": "57",
+      "container": "Journal of Experimental Child Psychology",
+      "bib_id": 26,
+      "year_suffix": "",
+      "text_id": 269
+    },
+    {
+      "bib_type": "article",
+      "doi": "10.1016/S0885-2014",
+      "title": "An age-related dissociation between knowing rules and using them",
+      "authors": "Zelazo, P D; Frye, D; Rapus, T",
+      "editors": "",
+      "publisher": "",
+      "year": 1996,
+      "volume": "11",
+      "issue": "96",
+      "first_page": "90027",
+      "last_page": "90028",
+      "container": "Cognitive Development",
+      "bib_id": 27,
+      "year_suffix": "",
+      "text_id": 270
+    }
+  ],
+  "xref": [
+    {
+      "xref_id": 9,
+      "xref_type": "bibr",
+      "contents": "(Cole, Laurent, & Stocco, 2013)",
+      "text_id": 7
+    },
+    {
+      "xref_id": 2,
+      "xref_type": "bibr",
+      "contents": "(Bhandari & Duncan, 2014)",
+      "text_id": 7
+    },
+    {
+      "xref_id": 1,
+      "xref_type": "bibr",
+      "contents": "(Bhandari, Badre, & Frank, 2017)",
+      "text_id": 8
+    },
+    {
+      "xref_id": 17,
+      "xref_type": "bibr",
+      "contents": "(Meiran, Liefooghe, & De Houwer, 2017)",
+      "text_id": 10
+    },
+    {
+      "xref_id": 17,
+      "xref_type": "bibr",
+      "contents": "(Meiran et al., 2017)",
+      "text_id": 17
+    },
+    {
+      "xref_id": 10,
+      "xref_type": "bibr",
+      "contents": "(Cole, Braver, & Meiran, 2017)",
+      "text_id": 18
+    },
+    {
+      "xref_id": 5,
+      "xref_type": "bibr",
+      "contents": "(Bunge & Crone, 2009;",
+      "text_id": 21
+    },
+    {
+      "xref_id": 11,
+      "xref_type": "bibr",
+      "contents": "Diamond, 2013)",
+      "text_id": 21
+    },
+    {
+      "xref_id": 6,
+      "xref_type": "bibr",
+      "contents": "(Bunge & Zelazo, 2006)",
+      "text_id": 22
+    },
+    {
+      "xref_id": 0,
+      "xref_type": "bibr",
+      "contents": "Amso, Haas, McShane, and Badre (2014)",
+      "text_id": 23
+    },
+    {
+      "xref_id": 23,
+      "xref_type": "bibr",
+      "contents": "Unger, Ackerman, Chatham, Amso, & Badre, 2016)",
+      "text_id": 24
+    },
+    {
+      "xref_id": 27,
+      "xref_type": "bibr",
+      "contents": "Zelazo, Frye, and Rapus (1996)",
+      "text_id": 27
+    },
+    {
+      "xref_id": 21,
+      "xref_type": "bibr",
+      "contents": "(Munakata, Snyder, & Chatham, 2012)",
+      "text_id": 30
+    },
+    {
+      "xref_id": 3,
+      "xref_type": "bibr",
+      "contents": "Blackwell and Munakata (2014)",
+      "text_id": 32
+    },
+    {
+      "xref_id": 2,
+      "xref_type": "bibr",
+      "contents": "(Bhandari & Duncan, 2014)",
+      "text_id": 36
+    },
+    {
+      "xref_id": 19,
+      "xref_type": "bibr",
+      "contents": "(Meiran et al., 2015a)",
+      "text_id": 39
+    },
+    {
+      "xref_id": 0,
+      "xref_type": "figure",
+      "contents": "1",
+      "text_id": 41
+    },
+    {
+      "xref_id": 17,
+      "xref_type": "bibr",
+      "contents": "(Meiran et al., 2017)",
+      "text_id": 52
+    },
+    {
+      "xref_id": 10,
+      "xref_type": "bibr",
+      "contents": "(Cole et al., 2017)",
+      "text_id": 53
+    },
+    {
+      "xref_id": 14,
+      "xref_type": "bibr",
+      "contents": "Huizinga, Dolan, & van der Molen, 2006)",
+      "text_id": 54
+    },
+    {
+      "xref_id": 0,
+      "xref_type": "table",
+      "contents": "1",
+      "text_id": 56
+    },
+    {
+      "xref_id": 4,
+      "xref_type": "bibr",
+      "contents": "(Brainard, 1997)",
+      "text_id": 69
+    },
+    {
+      "xref_id": 0,
+      "xref_type": "figure",
+      "contents": "1a",
+      "text_id": 76
+    },
+    {
+      "xref_id": 0,
+      "xref_type": "figure",
+      "contents": "1b",
+      "text_id": 80
+    },
+    {
+      "xref_id": 0,
+      "xref_type": "figure",
+      "contents": "1a",
+      "text_id": 86
+    },
+    {
+      "xref_id": 0,
+      "xref_type": "figure",
+      "contents": "S1",
+      "text_id": 93
+    },
+    {
+      "xref_id": null,
+      "xref_type": "bibr",
+      "contents": "(R Core Team, 2016)",
+      "text_id": 103
+    },
+    {
+      "xref_id": 19,
+      "xref_type": "bibr",
+      "contents": "(Meiran et al., 2015a)",
+      "text_id": 105
+    },
+    {
+      "xref_id": 19,
+      "xref_type": "bibr",
+      "contents": "Meiran et al. (2015a)",
+      "text_id": 111
+    },
+    {
+      "xref_id": 12,
+      "xref_type": "bibr",
+      "contents": "(Everaert, Theeuwes, Liefooghe, & De Houwer, 2014;",
+      "text_id": 112
+    },
+    {
+      "xref_id": 20,
+      "xref_type": "bibr",
+      "contents": "Meiran, Pereg, Kessler, Cole, & Braver, 2015b",
+      "text_id": 112
+    },
+    {
+      "xref_id": 1,
+      "xref_type": "table",
+      "contents": "2",
+      "text_id": 117
+    },
+    {
+      "xref_id": 16,
+      "xref_type": "bibr",
+      "contents": "(Lawrence, 2016)",
+      "text_id": 120
+    },
+    {
+      "xref_id": 26,
+      "xref_type": "bibr",
+      "contents": "Verbruggen & McLaren, 2017)",
+      "text_id": 121
+    },
+    {
+      "xref_id": 2,
+      "xref_type": "table",
+      "contents": "3",
+      "text_id": 125
+    },
+    {
+      "xref_id": 3,
+      "xref_type": "table",
+      "contents": "4",
+      "text_id": 127
+    },
+    {
+      "xref_id": 4,
+      "xref_type": "table",
+      "contents": "5",
+      "text_id": 132
+    },
+    {
+      "xref_id": 1,
+      "xref_type": "figure",
+      "contents": "2a-2c",
+      "text_id": 137
+    },
+    {
+      "xref_id": 2,
+      "xref_type": "table",
+      "contents": "3",
+      "text_id": 138
+    },
+    {
+      "xref_id": 3,
+      "xref_type": "table",
+      "contents": "4",
+      "text_id": 138
+    },
+    {
+      "xref_id": 1,
+      "xref_type": "figure",
+      "contents": "2d",
+      "text_id": 141
+    },
+    {
+      "xref_id": 4,
+      "xref_type": "table",
+      "contents": "5",
+      "text_id": 144
+    },
+    {
+      "xref_id": 15,
+      "xref_type": "bibr",
+      "contents": "Kiesel et al., 2010;",
+      "text_id": 146
+    },
+    {
+      "xref_id": 24,
+      "xref_type": "bibr",
+      "contents": "Vandierendonck, Liefooghe, & Verbruggen, 2010)",
+      "text_id": 146
+    },
+    {
+      "xref_id": 7,
+      "xref_type": "bibr",
+      "contents": "(Chevalier & Blaye, 2009;",
+      "text_id": 147
+    },
+    {
+      "xref_id": 14,
+      "xref_type": "bibr",
+      "contents": "Huizinga et al., 2006)",
+      "text_id": 147
+    },
+    {
+      "xref_id": 25,
+      "xref_type": "bibr",
+      "contents": "(Verbruggen, McLaren, & Chambers, 2014)",
+      "text_id": 155
+    },
+    {
+      "xref_id": 2,
+      "xref_type": "figure",
+      "contents": "3b",
+      "text_id": 158
+    },
+    {
+      "xref_id": 5,
+      "xref_type": "table",
+      "contents": "6",
+      "text_id": 158
+    },
+    {
+      "xref_id": 2,
+      "xref_type": "figure",
+      "contents": "3a",
+      "text_id": 161
+    },
+    {
+      "xref_id": 5,
+      "xref_type": "table",
+      "contents": "6",
+      "text_id": 162
+    },
+    {
+      "xref_id": 6,
+      "xref_type": "table",
+      "contents": "7",
+      "text_id": 162
+    },
+    {
+      "xref_id": 2,
+      "xref_type": "figure",
+      "contents": "3",
+      "text_id": 163
+    },
+    {
+      "xref_id": 0,
+      "xref_type": "bibr",
+      "contents": "(Amso et al., 2014;",
+      "text_id": 178
+    },
+    {
+      "xref_id": 23,
+      "xref_type": "bibr",
+      "contents": "Unger et al., 2016)",
+      "text_id": 178
+    },
+    {
+      "xref_id": 18,
+      "xref_type": "bibr",
+      "contents": "(Meiran, Pereg, Givon, Danieli, & Shahar, 2016)",
+      "text_id": 180
+    },
+    {
+      "xref_id": null,
+      "xref_type": "bibr",
+      "contents": "Meiran et al.'s (2016)",
+      "text_id": 180
+    },
+    {
+      "xref_id": 2,
+      "xref_type": "bibr",
+      "contents": "(Bhandari & Duncan, 2014)",
+      "text_id": 180
+    },
+    {
+      "xref_id": 8,
+      "xref_type": "bibr",
+      "contents": "(Chevalier, Martis, Curran, & Munakata, 2015)",
+      "text_id": 186
+    },
+    {
+      "xref_id": 3,
+      "xref_type": "bibr",
+      "contents": "Blackwell and Munakata (2014)",
+      "text_id": 189
+    },
+    {
+      "xref_id": 19,
+      "xref_type": "bibr",
+      "contents": "(Meiran et al., 2015a)",
+      "text_id": 192
+    },
+    {
+      "xref_id": 1,
+      "xref_type": "bibr",
+      "contents": "(Bhandari et al., 2017)",
+      "text_id": 196
+    },
+    {
+      "xref_id": 2,
+      "xref_type": "bibr",
+      "contents": "(Bhandari & Duncan, 2014)",
+      "text_id": 200
+    }
+  ],
+  "figure": [
+    {
+      "figure_id": 1,
+      "section_id": 19,
+      "image": null,
+      "page_number": null
+    },
+    {
+      "figure_id": 2,
+      "section_id": 20,
+      "image": null,
+      "page_number": null
+    },
+    {
+      "figure_id": 3,
+      "section_id": 21,
+      "image": null,
+      "page_number": null
+    }
+  ],
+  "table": [
+    {
+      "table_id": 1,
+      "section_id": 22,
+      "html": "<table>\n  <row>\n    <cell>Age group<\/cell>\n    <cell>N<\/cell>\n    <cell>Number of females<\/cell>\n  <\/row>\n  <row>\n    <cell>4-year-olds<\/cell>\n    <cell>8<\/cell>\n    <cell>6<\/cell>\n  <\/row>\n  <row>\n    <cell>5-year-olds<\/cell>\n    <cell>22<\/cell>\n    <cell>12<\/cell>\n  <\/row>\n  <row>\n    <cell>6-year-olds<\/cell>\n    <cell>26<\/cell>\n    <cell>13<\/cell>\n  <\/row>\n  <row>\n    <cell>7-year-olds<\/cell>\n    <cell>20<\/cell>\n    <cell>11<\/cell>\n  <\/row>\n  <row>\n    <cell>8-year-olds<\/cell>\n    <cell>29<\/cell>\n    <cell>17<\/cell>\n  <\/row>\n  <row>\n    <cell>9-year-olds<\/cell>\n    <cell>30<\/cell>\n    <cell>8<\/cell>\n  <\/row>\n  <row>\n    <cell>10-year-olds<\/cell>\n    <cell>15<\/cell>\n    <cell>6<\/cell>\n  <\/row>\n  <row>\n    <cell>11-year-olds<\/cell>\n    <cell>16<\/cell>\n    <cell>9<\/cell>\n  <\/row>\n  <row>\n    <cell>17-to 19-year-olds<\/cell>\n    <cell>30<\/cell>\n    <cell>16<\/cell>\n  <\/row>\n<\/table>",
+      "contents": null,
+      "page_number": null
+    },
+    {
+      "table_id": 2,
+      "section_id": 23,
+      "html": "<table>\n  <row>\n    <cell>Age group<\/cell>\n    <cell>Compatible trials<\/cell>\n    <cell>Incompatible trials<\/cell>\n  <\/row>\n  <row>\n    <cell>4-year-olds<\/cell>\n    <cell>15<\/cell>\n    <cell>14<\/cell>\n  <\/row>\n  <row>\n    <cell>5-year-olds<\/cell>\n    <cell>18<\/cell>\n    <cell>15<\/cell>\n  <\/row>\n  <row>\n    <cell>6-year-olds<\/cell>\n    <cell>18<\/cell>\n    <cell>16<\/cell>\n  <\/row>\n  <row>\n    <cell>7-year-olds<\/cell>\n    <cell>19<\/cell>\n    <cell>16<\/cell>\n  <\/row>\n  <row>\n    <cell>8-year-olds<\/cell>\n    <cell>18<\/cell>\n    <cell>17<\/cell>\n  <\/row>\n  <row>\n    <cell>9-year-olds<\/cell>\n    <cell>18<\/cell>\n    <cell>16<\/cell>\n  <\/row>\n  <row>\n    <cell>10-year-olds<\/cell>\n    <cell>18<\/cell>\n    <cell>16<\/cell>\n  <\/row>\n  <row>\n    <cell>11-year-olds<\/cell>\n    <cell>19<\/cell>\n    <cell>18<\/cell>\n  <\/row>\n  <row>\n    <cell>17-to 19-year-olds<\/cell>\n    <cell>20<\/cell>\n    <cell>18<\/cell>\n  <\/row>\n<\/table>",
+      "contents": null,
+      "page_number": null
+    },
+    {
+      "table_id": 3,
+      "section_id": 24,
+      "html": "<table>\n  <row>\n    <cell/>\n    <cell>Sum-of-squares<\/cell>\n    <cell>Sum-of-squares<\/cell>\n    <cell/>\n    <cell/>\n    <cell>Generalized<\/cell>\n  <\/row>\n  <row>\n    <cell>Measure and predictor<\/cell>\n    <cell>effect<\/cell>\n    <cell>error<\/cell>\n    <cell>F(1, 194)<\/cell>\n    <cell>p<\/cell>\n    <cell>η²<\/cell>\n  <\/row>\n  <row>\n    <cell>Next accuracy<\/cell>\n    <cell/>\n    <cell/>\n    <cell/>\n    <cell/>\n    <cell/>\n  <\/row>\n  <row>\n    <cell>Age<\/cell>\n    <cell>0.003<\/cell>\n    <cell>1.439<\/cell>\n    <cell>0.463<\/cell>\n    <cell>.497<\/cell>\n    <cell>.001<\/cell>\n  <\/row>\n  <row>\n    <cell>Compatibility<\/cell>\n    <cell>0.815<\/cell>\n    <cell>1.372<\/cell>\n    <cell>115.281<\/cell>\n    <cell>&lt;.001<\/cell>\n    <cell>.225<\/cell>\n  <\/row>\n  <row>\n    <cell>Age × Compatibility<\/cell>\n    <cell>0.000<\/cell>\n    <cell>1.372<\/cell>\n    <cell>0.015<\/cell>\n    <cell>.903<\/cell>\n    <cell>.000<\/cell>\n  <\/row>\n  <row>\n    <cell>Next response time (all next<\/cell>\n    <cell/>\n    <cell/>\n    <cell/>\n    <cell/>\n    <cell/>\n  <\/row>\n  <row>\n    <cell>responses included)<\/cell>\n    <cell/>\n    <cell/>\n    <cell/>\n    <cell/>\n    <cell/>\n  <\/row>\n  <row>\n    <cell>Age<\/cell>\n    <cell>57,461,009<\/cell>\n    <cell>125,243,644<\/cell>\n    <cell>89.006<\/cell>\n    <cell>&lt;.001<\/cell>\n    <cell>.297<\/cell>\n  <\/row>\n  <row>\n    <cell>Compatibility<\/cell>\n    <cell>3,245,765<\/cell>\n    <cell>10,725,756<\/cell>\n    <cell>58.707<\/cell>\n    <cell>&lt;.001<\/cell>\n    <cell>.023<\/cell>\n  <\/row>\n  <row>\n    <cell>Age × Compatibility<\/cell>\n    <cell>278,590<\/cell>\n    <cell>10,725,756<\/cell>\n    <cell>5.039<\/cell>\n    <cell>.026<\/cell>\n    <cell>.002<\/cell>\n  <\/row>\n  <row>\n    <cell>Next response time (correct<\/cell>\n    <cell/>\n    <cell/>\n    <cell/>\n    <cell/>\n    <cell/>\n  <\/row>\n  <row>\n    <cell>next responses only)<\/cell>\n    <cell/>\n    <cell/>\n    <cell/>\n    <cell/>\n    <cell/>\n  <\/row>\n  <row>\n    <cell>Age<\/cell>\n    <cell>52,994,412<\/cell>\n    <cell>116,227,799<\/cell>\n    <cell>88.455<\/cell>\n    <cell>&lt;.001<\/cell>\n    <cell>.300<\/cell>\n  <\/row>\n  <row>\n    <cell>Compatibility<\/cell>\n    <cell>1,301,115<\/cell>\n    <cell>7,295,666<\/cell>\n    <cell>34.598<\/cell>\n    <cell>&lt;.001<\/cell>\n    <cell>.010<\/cell>\n  <\/row>\n  <row>\n    <cell>Age × Compatibility<\/cell>\n    <cell>145,125<\/cell>\n    <cell>7,295,666<\/cell>\n    <cell>3.859<\/cell>\n    <cell>.051<\/cell>\n    <cell>.001<\/cell>\n  <\/row>\n  <row>\n    <cell>Go accuracy<\/cell>\n    <cell/>\n    <cell/>\n    <cell/>\n    <cell/>\n    <cell/>\n  <\/row>\n  <row>\n    <cell>Age<\/cell>\n    <cell>0.435<\/cell>\n    <cell>2.531<\/cell>\n    <cell>33.334<\/cell>\n    <cell>&lt;.001<\/cell>\n    <cell>.138<\/cell>\n  <\/row>\n  <row>\n    <cell>Trial Number<\/cell>\n    <cell>0.026<\/cell>\n    <cell>0.189<\/cell>\n    <cell>26.967<\/cell>\n    <cell>&lt;.001<\/cell>\n    <cell>.010<\/cell>\n  <\/row>\n  <row>\n    <cell>Age × Trial Number<\/cell>\n    <cell>0.000<\/cell>\n    <cell>0.189<\/cell>\n    <cell>0.116<\/cell>\n    <cell>.734<\/cell>\n    <cell>.000<\/cell>\n  <\/row>\n  <row>\n    <cell>Go response time<\/cell>\n    <cell/>\n    <cell/>\n    <cell/>\n    <cell/>\n    <cell/>\n  <\/row>\n  <row>\n    <cell>Age<\/cell>\n    <cell>40,974,659<\/cell>\n    <cell>74,749,414<\/cell>\n    <cell>106.343<\/cell>\n    <cell>&lt;.001<\/cell>\n    <cell>.320<\/cell>\n  <\/row>\n  <row>\n    <cell>Trial Number<\/cell>\n    <cell>16,296,012<\/cell>\n    <cell>12,334,139<\/cell>\n    <cell>256.315<\/cell>\n    <cell>&lt;.001<\/cell>\n    <cell>.158<\/cell>\n  <\/row>\n  <row>\n    <cell>Age × Trial Number<\/cell>\n    <cell>3,960,352<\/cell>\n    <cell>12,334,139<\/cell>\n    <cell>62.291<\/cell>\n    <cell>&lt;.001<\/cell>\n    <cell>.043<\/cell>\n  <\/row>\n<\/table>",
+      "contents": null,
+      "page_number": null
+    },
+    {
+      "table_id": 4,
+      "section_id": 25,
+      "html": "<table>\n  <row>\n    <cell/>\n    <cell>Sum-of-squares<\/cell>\n    <cell>Sum-of-squares<\/cell>\n    <cell/>\n    <cell/>\n    <cell>Generalized<\/cell>\n  <\/row>\n  <row>\n    <cell>Measure and predictor<\/cell>\n    <cell>effect<\/cell>\n    <cell>error<\/cell>\n    <cell>F(1, 164)<\/cell>\n    <cell>p<\/cell>\n    <cell>η²<\/cell>\n  <\/row>\n  <row>\n    <cell>Next accuracy<\/cell>\n    <cell/>\n    <cell/>\n    <cell/>\n    <cell/>\n    <cell/>\n  <\/row>\n  <row>\n    <cell>Age<\/cell>\n    <cell>0.042<\/cell>\n    <cell>1.190<\/cell>\n    <cell>5.794<\/cell>\n    <cell>.017<\/cell>\n    <cell>.018<\/cell>\n  <\/row>\n  <row>\n    <cell>Compatibility<\/cell>\n    <cell>0.645<\/cell>\n    <cell>1.120<\/cell>\n    <cell>94.449<\/cell>\n    <cell>&lt;.001<\/cell>\n    <cell>.218<\/cell>\n  <\/row>\n  <row>\n    <cell>Age × Compatibility<\/cell>\n    <cell>0.014<\/cell>\n    <cell>1.120<\/cell>\n    <cell>2.122<\/cell>\n    <cell>.147<\/cell>\n    <cell>.006<\/cell>\n  <\/row>\n  <row>\n    <cell>Next response time (all next<\/cell>\n    <cell/>\n    <cell/>\n    <cell/>\n    <cell/>\n    <cell/>\n  <\/row>\n  <row>\n    <cell>responses included)<\/cell>\n    <cell/>\n    <cell/>\n    <cell/>\n    <cell/>\n    <cell/>\n  <\/row>\n  <row>\n    <cell>Age<\/cell>\n    <cell>73,886,993<\/cell>\n    <cell>89,366,724<\/cell>\n    <cell>135.593<\/cell>\n    <cell>&lt;.001<\/cell>\n    <cell>.426<\/cell>\n  <\/row>\n  <row>\n    <cell>Compatibility<\/cell>\n    <cell>2,995,665<\/cell>\n    <cell>10,084,257<\/cell>\n    <cell>48.718<\/cell>\n    <cell>&lt;.001<\/cell>\n    <cell>.029<\/cell>\n  <\/row>\n  <row>\n    <cell>Age × Compatibility<\/cell>\n    <cell>668,873<\/cell>\n    <cell>10,084,257<\/cell>\n    <cell>10.878<\/cell>\n    <cell>.001<\/cell>\n    <cell>.007<\/cell>\n  <\/row>\n  <row>\n    <cell>Next response time (correct<\/cell>\n    <cell/>\n    <cell/>\n    <cell/>\n    <cell/>\n    <cell/>\n  <\/row>\n  <row>\n    <cell>next responses only)<\/cell>\n    <cell/>\n    <cell/>\n    <cell/>\n    <cell/>\n    <cell/>\n  <\/row>\n  <row>\n    <cell>Age<\/cell>\n    <cell>67,849,107<\/cell>\n    <cell>83,501,518<\/cell>\n    <cell>133.258<\/cell>\n    <cell>&lt;.001<\/cell>\n    <cell>.429<\/cell>\n  <\/row>\n  <row>\n    <cell>Compatibility<\/cell>\n    <cell>1,190,868<\/cell>\n    <cell>6,852,862<\/cell>\n    <cell>28.499<\/cell>\n    <cell>&lt;.001<\/cell>\n    <cell>.013<\/cell>\n  <\/row>\n  <row>\n    <cell>Age × Compatibility<\/cell>\n    <cell>419,350<\/cell>\n    <cell>6,852,862<\/cell>\n    <cell>10.036<\/cell>\n    <cell>.002<\/cell>\n    <cell>.005<\/cell>\n  <\/row>\n  <row>\n    <cell/>\n    <cell/>\n    <cell/>\n    <cell/>\n    <cell/>\n    <cell>(continued)<\/cell>\n  <\/row>\n<\/table>",
+      "contents": null,
+      "page_number": null
+    },
+    {
+      "table_id": 5,
+      "section_id": 26,
+      "html": "<table>\n  <row>\n    <cell/>\n    <cell/>\n    <cell/>\n    <cell/>\n    <cell/>\n    <cell>Bayes<\/cell>\n    <cell>Hedges's<\/cell>\n  <\/row>\n  <row>\n    <cell>Measure and age group<\/cell>\n    <cell>Difference<\/cell>\n    <cell>95% CI<\/cell>\n    <cell>t<\/cell>\n    <cell>p<\/cell>\n    <cell>factor<\/cell>\n    <cell>average g<\/cell>\n  <\/row>\n  <row>\n    <cell>Next-effect accuracy<\/cell>\n    <cell/>\n    <cell/>\n    <cell/>\n    <cell/>\n    <cell/>\n    <cell/>\n  <\/row>\n  <row>\n    <cell>4-and 5-year olds<\/cell>\n    <cell>0.12<\/cell>\n    <cell cols=\"3\">[0.072, 0.169] t(29) = 5.042 &lt;.001<\/cell>\n    <cell>1,003.94<\/cell>\n    <cell>1.582<\/cell>\n  <\/row>\n  <row>\n    <cell>6-and 7-year olds<\/cell>\n    <cell>0.073<\/cell>\n    <cell cols=\"3\">[0.041, 0.106] t(45) = 4.519 &lt;.001<\/cell>\n    <cell>490.01<\/cell>\n    <cell>1.021<\/cell>\n  <\/row>\n  <row>\n    <cell>8-and 9-year olds<\/cell>\n    <cell>0.105<\/cell>\n    <cell>[0.071, 0.14]<\/cell>\n    <cell cols=\"3\">t(58) = 6.119 &lt; .001 158,677.97<\/cell>\n    <cell>1.361<\/cell>\n  <\/row>\n  <row>\n    <cell>10-and 11-year olds<\/cell>\n    <cell>0.047<\/cell>\n    <cell cols=\"3\">[0.025, 0.068] t(30) = 4.394 &lt;.001<\/cell>\n    <cell>205.99<\/cell>\n    <cell>1.402<\/cell>\n  <\/row>\n  <row>\n    <cell>17-to 19-year olds<\/cell>\n    <cell>0.108<\/cell>\n    <cell cols=\"3\">[0.061, 0.155] t(29) = 4.676 &lt;.001<\/cell>\n    <cell>397.43<\/cell>\n    <cell>1.571<\/cell>\n  <\/row>\n  <row>\n    <cell>Next-effect response time<\/cell>\n    <cell/>\n    <cell/>\n    <cell/>\n    <cell/>\n    <cell/>\n    <cell/>\n  <\/row>\n  <row>\n    <cell>(all next responses included)<\/cell>\n    <cell/>\n    <cell/>\n    <cell/>\n    <cell/>\n    <cell/>\n    <cell/>\n  <\/row>\n  <row>\n    <cell>4-and 5-year olds<\/cell>\n    <cell>422<\/cell>\n    <cell>[192, 651]<\/cell>\n    <cell>t(29) =3.761<\/cell>\n    <cell>.001<\/cell>\n    <cell>42.13<\/cell>\n    <cell>0.507<\/cell>\n  <\/row>\n  <row>\n    <cell>6-and 7-year olds<\/cell>\n    <cell>152<\/cell>\n    <cell>[54, 249]<\/cell>\n    <cell>t(45) =3.131<\/cell>\n    <cell>.003<\/cell>\n    <cell>10.85<\/cell>\n    <cell>0.272<\/cell>\n  <\/row>\n  <row>\n    <cell>8-and 9-year olds<\/cell>\n    <cell>162<\/cell>\n    <cell>[99, 224]<\/cell>\n    <cell cols=\"2\">t(58) = 5.197 &lt;.001<\/cell>\n    <cell>6,142.80<\/cell>\n    <cell>0.477<\/cell>\n  <\/row>\n  <row>\n    <cell>10-and 11-year olds<\/cell>\n    <cell>77<\/cell>\n    <cell>[41, 113]<\/cell>\n    <cell cols=\"2\">t(30) = 4.362 &lt;.001<\/cell>\n    <cell>189.97<\/cell>\n    <cell>0.291<\/cell>\n  <\/row>\n  <row>\n    <cell>17-to 19-year olds<\/cell>\n    <cell>138<\/cell>\n    <cell>[92, 183]<\/cell>\n    <cell cols=\"2\">t(29) = 6.174 &lt;.001<\/cell>\n    <cell>17,831.86<\/cell>\n    <cell>0.772<\/cell>\n  <\/row>\n  <row>\n    <cell>Next-effect response time<\/cell>\n    <cell/>\n    <cell/>\n    <cell/>\n    <cell/>\n    <cell/>\n    <cell/>\n  <\/row>\n  <row>\n    <cell>(correct next responses only)<\/cell>\n    <cell/>\n    <cell/>\n    <cell/>\n    <cell/>\n    <cell/>\n    <cell/>\n  <\/row>\n  <row>\n    <cell>4-and 5-year olds<\/cell>\n    <cell>292<\/cell>\n    <cell>[86, 499]<\/cell>\n    <cell>t(29) =2.890<\/cell>\n    <cell>.007<\/cell>\n    <cell>5.94<\/cell>\n    <cell>0.356<\/cell>\n  <\/row>\n  <row>\n    <cell>6-and 7-year olds<\/cell>\n    <cell>105<\/cell>\n    <cell>[29, 182]<\/cell>\n    <cell>t(45) =2.771<\/cell>\n    <cell>.008<\/cell>\n    <cell>4.65<\/cell>\n    <cell>0.208<\/cell>\n  <\/row>\n  <row>\n    <cell>8-and 9-year olds<\/cell>\n    <cell>81<\/cell>\n    <cell>[44, 118]<\/cell>\n    <cell cols=\"2\">t(58) = 4.389 &lt;.001<\/cell>\n    <cell>423.35<\/cell>\n    <cell>0.265<\/cell>\n  <\/row>\n  <row>\n    <cell>10-and 11-year olds<\/cell>\n    <cell>48<\/cell>\n    <cell>[9, 87]<\/cell>\n    <cell>t(30) =2.529<\/cell>\n    <cell>.017<\/cell>\n    <cell>2.86<\/cell>\n    <cell>0.185<\/cell>\n  <\/row>\n  <row>\n    <cell>17-to 19-year olds<\/cell>\n    <cell>90<\/cell>\n    <cell>[51, 129]<\/cell>\n    <cell cols=\"2\">t(29) = 4.733 &lt;.001<\/cell>\n    <cell>459.03<\/cell>\n    <cell>0.55<\/cell>\n  <\/row>\n<\/table>",
+      "contents": null,
+      "page_number": null
+    },
+    {
+      "table_id": 6,
+      "section_id": 27,
+      "html": "<table>\n  <row>\n    <cell/>\n    <cell>Sum-of-squares<\/cell>\n    <cell>Sum-of-squares<\/cell>\n    <cell/>\n    <cell/>\n    <cell>Generalized<\/cell>\n  <\/row>\n  <row>\n    <cell>Measure and predictor<\/cell>\n    <cell>effect<\/cell>\n    <cell>error<\/cell>\n    <cell>F<\/cell>\n    <cell>p<\/cell>\n    <cell>η²<\/cell>\n  <\/row>\n  <row>\n    <cell>Next accuracy<\/cell>\n    <cell/>\n    <cell/>\n    <cell/>\n    <cell/>\n    <cell/>\n  <\/row>\n  <row>\n    <cell>Age<\/cell>\n    <cell>0.007<\/cell>\n    <cell>2.903<\/cell>\n    <cell>F(1, 194) =0.485<\/cell>\n    <cell>.487<\/cell>\n    <cell>.001<\/cell>\n  <\/row>\n  <row>\n    <cell>Compatibility<\/cell>\n    <cell>1.723<\/cell>\n    <cell>2.723<\/cell>\n    <cell cols=\"2\">F(1, 194) = 122.709 &lt;.001<\/cell>\n    <cell>.153<\/cell>\n  <\/row>\n  <row>\n    <cell>Half<\/cell>\n    <cell>0.579<\/cell>\n    <cell>2.101<\/cell>\n    <cell>F(1, 194) =53.420<\/cell>\n    <cell>&lt;.001<\/cell>\n    <cell>.057<\/cell>\n  <\/row>\n  <row>\n    <cell>Age × Compatibility<\/cell>\n    <cell>0.000<\/cell>\n    <cell>2.723<\/cell>\n    <cell>F(1, 194) =0.013<\/cell>\n    <cell>.909<\/cell>\n    <cell>.000<\/cell>\n  <\/row>\n  <row>\n    <cell>Age × Half<\/cell>\n    <cell>0.044<\/cell>\n    <cell>2.101<\/cell>\n    <cell>F(1, 194) =4.077<\/cell>\n    <cell>.045<\/cell>\n    <cell>.005<\/cell>\n  <\/row>\n  <row>\n    <cell>Compatibility × Half<\/cell>\n    <cell>0.582<\/cell>\n    <cell>1.788<\/cell>\n    <cell>F(1, 194) =63.156<\/cell>\n    <cell>&lt;.001<\/cell>\n    <cell>.058<\/cell>\n  <\/row>\n  <row>\n    <cell>Age × Compatibility × Half<\/cell>\n    <cell>0.059<\/cell>\n    <cell>1.788<\/cell>\n    <cell>F(1, 194) =6.400<\/cell>\n    <cell>.012<\/cell>\n    <cell>.006<\/cell>\n  <\/row>\n  <row>\n    <cell>Next response time (all next<\/cell>\n    <cell/>\n    <cell/>\n    <cell/>\n    <cell/>\n    <cell/>\n  <\/row>\n  <row>\n    <cell>responses included)<\/cell>\n    <cell/>\n    <cell/>\n    <cell/>\n    <cell/>\n    <cell/>\n  <\/row>\n  <row>\n    <cell>Age<\/cell>\n    <cell>132,682,582<\/cell>\n    <cell>280,640,291<\/cell>\n    <cell>F(1, 193) =91.248<\/cell>\n    <cell>&lt;.001<\/cell>\n    <cell>.269<\/cell>\n  <\/row>\n  <row>\n    <cell>Compatibility<\/cell>\n    <cell>8,124,198<\/cell>\n    <cell>24,107,078<\/cell>\n    <cell>F(1, 193) =65.042<\/cell>\n    <cell>&lt;.001<\/cell>\n    <cell>.022<\/cell>\n  <\/row>\n  <row>\n    <cell>Half<\/cell>\n    <cell>11,404,564<\/cell>\n    <cell>34,832,143<\/cell>\n    <cell>F(1, 193) =63.191<\/cell>\n    <cell>&lt;.001<\/cell>\n    <cell>.031<\/cell>\n  <\/row>\n  <row>\n    <cell>Age × Compatibility<\/cell>\n    <cell>333,362<\/cell>\n    <cell>24,107,078<\/cell>\n    <cell>F(1, 193) =2.669<\/cell>\n    <cell>.104<\/cell>\n    <cell>.001<\/cell>\n  <\/row>\n  <row>\n    <cell>Age × Half<\/cell>\n    <cell>1,012,000<\/cell>\n    <cell>34,832,143<\/cell>\n    <cell>F(1, 193) =5.607<\/cell>\n    <cell>.019<\/cell>\n    <cell>.003<\/cell>\n  <\/row>\n  <row>\n    <cell>Compatibility × Half<\/cell>\n    <cell>779,212<\/cell>\n    <cell>20,262,113<\/cell>\n    <cell>F(1, 193) =7.422<\/cell>\n    <cell>.007<\/cell>\n    <cell>.002<\/cell>\n  <\/row>\n  <row>\n    <cell>Age × Compatibility × Half<\/cell>\n    <cell>117,153<\/cell>\n    <cell>20,262,113<\/cell>\n    <cell>F(1, 193) =1.116<\/cell>\n    <cell>.292<\/cell>\n    <cell>.000<\/cell>\n  <\/row>\n  <row>\n    <cell>Next response time (correct<\/cell>\n    <cell/>\n    <cell/>\n    <cell/>\n    <cell/>\n    <cell/>\n  <\/row>\n  <row>\n    <cell>next responses only)<\/cell>\n    <cell/>\n    <cell/>\n    <cell/>\n    <cell/>\n    <cell/>\n  <\/row>\n  <row>\n    <cell>Age<\/cell>\n    <cell>112,052,500<\/cell>\n    <cell>250,087,632<\/cell>\n    <cell>F(1, 188) =84.234<\/cell>\n    <cell>&lt;.001<\/cell>\n    <cell>.267<\/cell>\n  <\/row>\n  <row>\n    <cell>Compatibility<\/cell>\n    <cell>1,967,512<\/cell>\n    <cell>14,622,138<\/cell>\n    <cell>F(1, 188) =25.297<\/cell>\n    <cell>&lt;.001<\/cell>\n    <cell>.006<\/cell>\n  <\/row>\n  <row>\n    <cell>Half<\/cell>\n    <cell>6,973,384<\/cell>\n    <cell>26,498,290<\/cell>\n    <cell>F(1, 188) =49.475<\/cell>\n    <cell>&lt;.001<\/cell>\n    <cell>.022<\/cell>\n  <\/row>\n  <row>\n    <cell>Age × Compatibility<\/cell>\n    <cell>28,488<\/cell>\n    <cell>14,622,138<\/cell>\n    <cell>F(1, 188) =0.366<\/cell>\n    <cell>.546<\/cell>\n    <cell>.000<\/cell>\n  <\/row>\n  <row>\n    <cell>Age × Half<\/cell>\n    <cell>634,154<\/cell>\n    <cell>26,498,290<\/cell>\n    <cell>F(1, 188) =4.499<\/cell>\n    <cell>.035<\/cell>\n    <cell>.002<\/cell>\n  <\/row>\n  <row>\n    <cell>Compatibility × Half<\/cell>\n    <cell>188<\/cell>\n    <cell>15,825,461<\/cell>\n    <cell>F(1, 188) =0.002<\/cell>\n    <cell>.962<\/cell>\n    <cell>.000<\/cell>\n  <\/row>\n  <row>\n    <cell>Age × Compatibility × Half<\/cell>\n    <cell>16,862<\/cell>\n    <cell>15,825,461<\/cell>\n    <cell>F(1, 188) =0.200<\/cell>\n    <cell>.655<\/cell>\n    <cell>.000<\/cell>\n  <\/row>\n<\/table>",
+      "contents": null,
+      "page_number": null
+    },
+    {
+      "table_id": 7,
+      "section_id": 28,
+      "html": "<table>\n  <row>\n    <cell/>\n    <cell>Sum-of-squares<\/cell>\n    <cell>Sum-of-squares<\/cell>\n    <cell/>\n    <cell/>\n    <cell>Generalized<\/cell>\n  <\/row>\n  <row>\n    <cell>Measure and predictor<\/cell>\n    <cell>effect<\/cell>\n    <cell>error<\/cell>\n    <cell>F<\/cell>\n    <cell>p<\/cell>\n    <cell>η²<\/cell>\n  <\/row>\n  <row>\n    <cell>Next accuracy<\/cell>\n    <cell/>\n    <cell/>\n    <cell/>\n    <cell/>\n    <cell/>\n  <\/row>\n  <row>\n    <cell>Age<\/cell>\n    <cell>0.093<\/cell>\n    <cell>2.407<\/cell>\n    <cell>F(1, 164) =6.327<\/cell>\n    <cell>.013<\/cell>\n    <cell>.012<\/cell>\n  <\/row>\n  <row>\n    <cell>Compatibility<\/cell>\n    <cell>1.36<\/cell>\n    <cell>2.23<\/cell>\n    <cell cols=\"2\">F(1, 164) = 100.016 &lt;.001<\/cell>\n    <cell>.148<\/cell>\n  <\/row>\n  <row>\n    <cell>Half<\/cell>\n    <cell>0.554<\/cell>\n    <cell>1.747<\/cell>\n    <cell>F(1, 164) =51.981<\/cell>\n    <cell>&lt;.001<\/cell>\n    <cell>.066<\/cell>\n  <\/row>\n  <row>\n    <cell>Age × Compatibility<\/cell>\n    <cell>0.035<\/cell>\n    <cell>2.23<\/cell>\n    <cell>F(1, 164) =2.55<\/cell>\n    <cell>.112<\/cell>\n    <cell>.004<\/cell>\n  <\/row>\n  <row>\n    <cell>Age × Half<\/cell>\n    <cell>0.061<\/cell>\n    <cell>1.747<\/cell>\n    <cell>F(1, 164) =5.735<\/cell>\n    <cell>.018<\/cell>\n    <cell>.008<\/cell>\n  <\/row>\n  <row>\n    <cell>Compatibility × Half<\/cell>\n    <cell>0.578<\/cell>\n    <cell>1.427<\/cell>\n    <cell>F(1, 164) =66.402<\/cell>\n    <cell>&lt;.001<\/cell>\n    <cell>.069<\/cell>\n  <\/row>\n  <row>\n    <cell>Age × Compatibility × Half<\/cell>\n    <cell>0.062<\/cell>\n    <cell>1.427<\/cell>\n    <cell>F(1, 164) =7.127<\/cell>\n    <cell>.008<\/cell>\n    <cell>.008<\/cell>\n  <\/row>\n  <row>\n    <cell>Next response time (all next<\/cell>\n    <cell/>\n    <cell/>\n    <cell/>\n    <cell/>\n    <cell/>\n  <\/row>\n  <row>\n    <cell>responses included)<\/cell>\n    <cell/>\n    <cell/>\n    <cell/>\n    <cell/>\n    <cell/>\n  <\/row>\n  <row>\n    <cell>Age<\/cell>\n    <cell>171,404,286<\/cell>\n    <cell>197,300,316<\/cell>\n    <cell cols=\"2\">F(1, 163) = 141.606 &lt;.001<\/cell>\n    <cell>.385<\/cell>\n  <\/row>\n  <row>\n    <cell>Compatibility<\/cell>\n    <cell>7,358,573<\/cell>\n    <cell>23,003,775<\/cell>\n    <cell>F(1, 163) =52.141<\/cell>\n    <cell>&lt;.001<\/cell>\n    <cell>.026<\/cell>\n  <\/row>\n  <row>\n    <cell>Half<\/cell>\n    <cell>11,360,111<\/cell>\n    <cell>34,047,834<\/cell>\n    <cell>F(1, 163) =54.385<\/cell>\n    <cell>&lt;.001<\/cell>\n    <cell>.04<\/cell>\n  <\/row>\n  <row>\n    <cell>Age × Compatibility<\/cell>\n    <cell>702,690<\/cell>\n    <cell>23,003,775<\/cell>\n    <cell>F(1, 163) =4.979<\/cell>\n    <cell>.027<\/cell>\n    <cell>.003<\/cell>\n  <\/row>\n  <row>\n    <cell>Age × Half<\/cell>\n    <cell>830,297<\/cell>\n    <cell>34,047,834<\/cell>\n    <cell>F(1, 163) =3.975<\/cell>\n    <cell>.048<\/cell>\n    <cell>.003<\/cell>\n  <\/row>\n  <row>\n    <cell>Compatibility × Half<\/cell>\n    <cell>744,969<\/cell>\n    <cell>19,654,374<\/cell>\n    <cell>F(1, 163) =6.178<\/cell>\n    <cell>.014<\/cell>\n    <cell>.003<\/cell>\n  <\/row>\n  <row>\n    <cell>Age × Compatibility × Half<\/cell>\n    <cell>261,020<\/cell>\n    <cell>19,654,374<\/cell>\n    <cell>F(1, 163) =2.165<\/cell>\n    <cell>.143<\/cell>\n    <cell>.001<\/cell>\n  <\/row>\n  <row>\n    <cell>Next response time (correct<\/cell>\n    <cell/>\n    <cell/>\n    <cell/>\n    <cell/>\n    <cell/>\n  <\/row>\n  <row>\n    <cell>next responses only)<\/cell>\n    <cell/>\n    <cell/>\n    <cell/>\n    <cell/>\n    <cell/>\n  <\/row>\n  <row>\n    <cell>Age<\/cell>\n    <cell>141,691,900<\/cell>\n    <cell>181,675,437<\/cell>\n    <cell cols=\"2\">F(1, 158) = 123.227 &lt;.001<\/cell>\n    <cell>.374<\/cell>\n  <\/row>\n  <row>\n    <cell>Compatibility<\/cell>\n    <cell>1,674,591<\/cell>\n    <cell>14,136,173<\/cell>\n    <cell>F(1, 158) =18.717<\/cell>\n    <cell>&lt;.001<\/cell>\n    <cell>.007<\/cell>\n  <\/row>\n  <row>\n    <cell>Half<\/cell>\n    <cell>6,879,870<\/cell>\n    <cell>25,890,490<\/cell>\n    <cell>F(1, 158) =41.985<\/cell>\n    <cell>&lt;.001<\/cell>\n    <cell>.028<\/cell>\n  <\/row>\n  <row>\n    <cell>Age × Compatibility<\/cell>\n    <cell>123,479<\/cell>\n    <cell>14,136,173<\/cell>\n    <cell>F(1, 158) =1.38<\/cell>\n    <cell>.242<\/cell>\n    <cell>.001<\/cell>\n  <\/row>\n  <row>\n    <cell>Age × Half<\/cell>\n    <cell>622,945<\/cell>\n    <cell>25,890,490<\/cell>\n    <cell>F(1, 158) =3.802<\/cell>\n    <cell>.053<\/cell>\n    <cell>.003<\/cell>\n  <\/row>\n  <row>\n    <cell>Compatibility × Half<\/cell>\n    <cell>4715<\/cell>\n    <cell>15,657,150<\/cell>\n    <cell>F(1, 158) =0.048<\/cell>\n    <cell>.828<\/cell>\n    <cell>.000<\/cell>\n  <\/row>\n  <row>\n    <cell>Age × Compatibility × Half<\/cell>\n    <cell>43<\/cell>\n    <cell>15,657,150<\/cell>\n    <cell>F(1, 158) =0<\/cell>\n    <cell>.983<\/cell>\n    <cell>.000<\/cell>\n  <\/row>\n<\/table>",
+      "contents": null,
+      "page_number": null
+    }
+  ],
+  "eq": [
+    {
+      "text_id": 12,
+      "grp_id": 1,
+      "lhs": "doi",
+      "df": null,
+      "comp": "=",
+      "rhs": "10.1177"
+    },
+    {
+      "text_id": 12,
+      "grp_id": 1,
+      "lhs": "date_stamp",
+      "df": null,
+      "comp": "=",
+      "rhs": "2018-05-10"
+    },
+    {
+      "text_id": 129,
+      "grp_id": 2,
+      "lhs": "N",
+      "df": null,
+      "comp": "=",
+      "rhs": "29"
+    },
+    {
+      "text_id": 129,
+      "grp_id": 2,
+      "lhs": "s",
+      "df": null,
+      "comp": "=",
+      "rhs": "0.65-1.00"
+    },
+    {
+      "text_id": 142,
+      "grp_id": 3,
+      "lhs": "p",
+      "df": null,
+      "comp": "=",
+      "rhs": ".051"
+    },
+    {
+      "text_id": 142,
+      "grp_id": 3,
+      "lhs": "p",
+      "df": null,
+      "comp": "=",
+      "rhs": ".002"
+    },
+    {
+      "text_id": 143,
+      "grp_id": 8,
+      "lhs": "ps",
+      "df": null,
+      "comp": ">",
+      "rhs": ".14"
+    },
+    {
+      "text_id": 148,
+      "grp_id": 6,
+      "lhs": "13.832",
+      "df": null,
+      "comp": "<",
+      "rhs": ".001"
+    },
+    {
+      "text_id": 148,
+      "grp_id": 6,
+      "lhs": "21.404",
+      "df": null,
+      "comp": "<",
+      "rhs": ".001"
+    },
+    {
+      "text_id": 148,
+      "grp_id": 6,
+      "lhs": ".504",
+      "df": null,
+      "comp": "<",
+      "rhs": ".001"
+    },
+    {
+      "text_id": 148,
+      "grp_id": 6,
+      "lhs": "124.950",
+      "df": null,
+      "comp": "<",
+      "rhs": ".001"
+    },
+    {
+      "text_id": 148,
+      "grp_id": 6,
+      "lhs": "285.117",
+      "df": null,
+      "comp": "<",
+      "rhs": ".001"
+    },
+    {
+      "text_id": 148,
+      "grp_id": 6,
+      "lhs": "81.406",
+      "df": null,
+      "comp": "<",
+      "rhs": ".001"
+    },
+    {
+      "text_id": 158,
+      "grp_id": 4,
+      "lhs": "effect",
+      "df": null,
+      "comp": "=",
+      "rhs": "267"
+    },
+    {
+      "text_id": 158,
+      "grp_id": 4,
+      "lhs": "effect",
+      "df": null,
+      "comp": "=",
+      "rhs": "141"
+    },
+    {
+      "text_id": 158,
+      "grp_id": 4,
+      "lhs": "p",
+      "df": null,
+      "comp": "=",
+      "rhs": ".007"
+    },
+    {
+      "text_id": 159,
+      "grp_id": 5,
+      "lhs": "p",
+      "df": null,
+      "comp": "=",
+      "rhs": ".292"
+    },
+    {
+      "text_id": 161,
+      "grp_id": 7,
+      "lhs": "p",
+      "df": null,
+      "comp": "<",
+      "rhs": ".001"
+    }
+  ],
+  "bib_match": [
+    {
+      "bib_id": 0,
+      "service": "crossref",
+      "service_id": null,
+      "score": null,
+      "bib_type": "article",
+      "doi": "10.1016/j.cognition.2014.06.012",
+      "title": "Working memory updating and the development of rule-guided behavior",
+      "authors": [
+        {
+          "given": "Dima",
+          "family": "Amso"
+        },
+        {
+          "given": "Sara",
+          "family": "Haas"
+        },
+        {
+          "given": "Lauren",
+          "family": "McShane"
+        },
+        {
+          "given": "David",
+          "family": "Badre"
+        }
+      ],
+      "editors": [],
+      "publisher": null,
+      "year": 2014,
+      "date": null,
+      "container": "Cognition",
+      "volume": "133",
+      "issue": "1",
+      "first_page": "201",
+      "last_page": "210",
+      "edition": null,
+      "version": null,
+      "url": "https://doi.org/10.1016/j.cognition.2014.06.012"
+    },
+    {
+      "bib_id": 1,
+      "service": "crossref",
+      "service_id": null,
+      "score": 73.1562,
+      "bib_type": "misc",
+      "doi": "10.1002/9781118920497.ch21",
+      "title": "Learning Cognitive Control",
+      "authors": [
+        {
+          "given": "Apoorva",
+          "family": "Bhandari"
+        },
+        {
+          "given": "David",
+          "family": "Badre"
+        },
+        {
+          "given": "Michael J.",
+          "family": "Frank"
+        }
+      ],
+      "editors": [],
+      "publisher": "Wiley",
+      "year": 2017,
+      "date": null,
+      "container": "The Wiley Handbook of Cognitive Control",
+      "volume": null,
+      "issue": null,
+      "first_page": "376",
+      "last_page": "391",
+      "edition": null,
+      "version": null,
+      "url": "https://doi.org/10.1002/9781118920497.ch21"
+    },
+    {
+      "bib_id": 2,
+      "service": "crossref",
+      "service_id": null,
+      "score": null,
+      "bib_type": "article",
+      "doi": "10.1016/j.cognition.2013.08.013",
+      "title": "Goal neglect and knowledge chunking in the construction of novel behaviour",
+      "authors": [
+        {
+          "given": "Apoorva",
+          "family": "Bhandari"
+        },
+        {
+          "given": "John",
+          "family": "Duncan"
+        }
+      ],
+      "editors": [],
+      "publisher": null,
+      "year": 2014,
+      "date": null,
+      "container": "Cognition",
+      "volume": "130",
+      "issue": "1",
+      "first_page": "11",
+      "last_page": "30",
+      "edition": null,
+      "version": null,
+      "url": "https://doi.org/10.1016/j.cognition.2013.08.013"
+    },
+    {
+      "bib_id": 3,
+      "service": "crossref",
+      "service_id": null,
+      "score": null,
+      "bib_type": "article",
+      "doi": "10.1111/desc.12113",
+      "title": "Costs and benefits linked to developments in cognitive control",
+      "authors": [
+        {
+          "given": "Katharine A.",
+          "family": "Blackwell"
+        },
+        {
+          "given": "Yuko",
+          "family": "Munakata"
+        }
+      ],
+      "editors": [],
+      "publisher": null,
+      "year": 2014,
+      "date": null,
+      "container": "Developmental Science",
+      "volume": "17",
+      "issue": "2",
+      "first_page": "203",
+      "last_page": "211",
+      "edition": null,
+      "version": null,
+      "url": "https://doi.org/10.1111/desc.12113"
+    },
+    {
+      "bib_id": 4,
+      "service": "crossref",
+      "service_id": null,
+      "score": 63.0637,
+      "bib_type": "article",
+      "doi": "10.1163/156856897x00357",
+      "title": "The Psychophysics Toolbox",
+      "authors": [
+        {
+          "given": "David H.",
+          "family": "Brainard"
+        }
+      ],
+      "editors": [],
+      "publisher": "Walter de Gruyter GmbH",
+      "year": 1997,
+      "date": null,
+      "container": "Spatial Vision",
+      "volume": "10",
+      "issue": "4",
+      "first_page": "433",
+      "last_page": "436",
+      "edition": null,
+      "version": null,
+      "url": "https://doi.org/10.1163/156856897x00357"
+    },
+    {
+      "bib_id": 6,
+      "service": "crossref",
+      "service_id": null,
+      "score": null,
+      "bib_type": "article",
+      "doi": "10.1111/j.0963-7214.2006.00419.x",
+      "title": "A Brain-Based Account of the Development of Rule Use in Childhood",
+      "authors": [
+        {
+          "given": "Silvia A.",
+          "family": "Bunge"
+        },
+        {
+          "given": "Philip David",
+          "family": "Zelazo"
+        }
+      ],
+      "editors": [],
+      "publisher": null,
+      "year": 2006,
+      "date": null,
+      "container": "Current Directions in Psychological Science",
+      "volume": "15",
+      "issue": "3",
+      "first_page": "118",
+      "last_page": "121",
+      "edition": null,
+      "version": null,
+      "url": "https://doi.org/10.1111/j.0963-7214.2006.00419.x"
+    },
+    {
+      "bib_id": 7,
+      "service": "crossref",
+      "service_id": null,
+      "score": null,
+      "bib_type": "article",
+      "doi": "10.1037/a0015409",
+      "title": "Setting goals to switch between tasks: Effect of cue transparency on children’s cognitive flexibility.",
+      "authors": [
+        {
+          "given": "Nicolas",
+          "family": "Chevalier"
+        },
+        {
+          "given": "Agnès",
+          "family": "Blaye"
+        }
+      ],
+      "editors": [],
+      "publisher": null,
+      "year": 2009,
+      "date": null,
+      "container": "Developmental Psychology",
+      "volume": "45",
+      "issue": "3",
+      "first_page": "782",
+      "last_page": "797",
+      "edition": null,
+      "version": null,
+      "url": "https://doi.org/10.1037/a0015409"
+    },
+    {
+      "bib_id": 8,
+      "service": "crossref",
+      "service_id": null,
+      "score": null,
+      "bib_type": "article",
+      "doi": "10.1162/jocn_a_00782",
+      "title": "Metacognitive Processes in Executive Control Development: The Case of Reactive and Proactive Control",
+      "authors": [
+        {
+          "given": "Nicolas",
+          "family": "Chevalier"
+        },
+        {
+          "given": "Shaina Bailey",
+          "family": "Martis"
+        },
+        {
+          "given": "Tim",
+          "family": "Curran"
+        },
+        {
+          "given": "Yuko",
+          "family": "Munakata"
+        }
+      ],
+      "editors": [],
+      "publisher": null,
+      "year": 2015,
+      "date": null,
+      "container": "Journal of Cognitive Neuroscience",
+      "volume": "27",
+      "issue": "6",
+      "first_page": "1125",
+      "last_page": "1136",
+      "edition": null,
+      "version": null,
+      "url": "https://doi.org/10.1162/jocn_a_00782"
+    },
+    {
+      "bib_id": 9,
+      "service": "crossref",
+      "service_id": null,
+      "score": null,
+      "bib_type": "article",
+      "doi": "10.3758/s13415-012-0125-7",
+      "title": "Rapid instructed task learning: A new window into the human brain’s unique capacity for flexible cognitive control",
+      "authors": [
+        {
+          "given": "Michael W.",
+          "family": "Cole"
+        },
+        {
+          "given": "Patryk",
+          "family": "Laurent"
+        },
+        {
+          "given": "Andrea",
+          "family": "Stocco"
+        }
+      ],
+      "editors": [],
+      "publisher": null,
+      "year": 2013,
+      "date": null,
+      "container": "Cognitive, Affective, &amp; Behavioral Neuroscience",
+      "volume": "13",
+      "issue": "1",
+      "first_page": "1",
+      "last_page": "22",
+      "edition": null,
+      "version": null,
+      "url": "https://doi.org/10.3758/s13415-012-0125-7"
+    },
+    {
+      "bib_id": 10,
+      "service": "crossref",
+      "service_id": null,
+      "score": null,
+      "bib_type": "article",
+      "doi": "10.1016/j.neubiorev.2017.02.009",
+      "title": "The task novelty paradox: Flexible control of inflexible neural pathways during rapid instructed task learning",
+      "authors": [
+        {
+          "given": "Michael W.",
+          "family": "Cole"
+        },
+        {
+          "given": "Todd S.",
+          "family": "Braver"
+        },
+        {
+          "given": "Nachshon",
+          "family": "Meiran"
+        }
+      ],
+      "editors": [],
+      "publisher": null,
+      "year": 2017,
+      "date": null,
+      "container": "Neuroscience &amp; Biobehavioral Reviews",
+      "volume": "81",
+      "issue": null,
+      "first_page": "4",
+      "last_page": "15",
+      "edition": null,
+      "version": null,
+      "url": "https://doi.org/10.1016/j.neubiorev.2017.02.009"
+    },
+    {
+      "bib_id": 11,
+      "service": "crossref",
+      "service_id": null,
+      "score": null,
+      "bib_type": "article",
+      "doi": "10.1146/annurev-psych-113011-143750",
+      "title": "Executive Functions",
+      "authors": [
+        {
+          "given": "Adele",
+          "family": "Diamond"
+        }
+      ],
+      "editors": [],
+      "publisher": null,
+      "year": 2013,
+      "date": null,
+      "container": "Annual Review of Psychology",
+      "volume": "64",
+      "issue": "1",
+      "first_page": "135",
+      "last_page": "168",
+      "edition": null,
+      "version": null,
+      "url": "https://doi.org/10.1146/annurev-psych-113011-143750"
+    },
+    {
+      "bib_id": 13,
+      "service": "crossref",
+      "service_id": null,
+      "score": null,
+      "bib_type": "article",
+      "doi": "10.3758/s13415-014-0294-7",
+      "title": "Automatic motor activation by mere instruction",
+      "authors": [
+        {
+          "given": "Tom",
+          "family": "Everaert"
+        },
+        {
+          "given": "Marijke",
+          "family": "Theeuwes"
+        },
+        {
+          "given": "Baptist",
+          "family": "Liefooghe"
+        },
+        {
+          "given": "Jan",
+          "family": "De Houwer"
+        }
+      ],
+      "editors": [],
+      "publisher": null,
+      "year": 2014,
+      "date": null,
+      "container": "Cognitive, Affective, &amp; Behavioral Neuroscience",
+      "volume": "14",
+      "issue": "4",
+      "first_page": "1300",
+      "last_page": "1309",
+      "edition": null,
+      "version": null,
+      "url": "https://doi.org/10.3758/s13415-014-0294-7"
+    },
+    {
+      "bib_id": 14,
+      "service": "crossref",
+      "service_id": null,
+      "score": null,
+      "bib_type": "article",
+      "doi": "10.1016/j.neuropsychologia.2006.01.010",
+      "title": "Age-related change in executive function: Developmental trends and a latent variable analysis",
+      "authors": [
+        {
+          "given": "Mariëtte",
+          "family": "Huizinga"
+        },
+        {
+          "given": "Conor V.",
+          "family": "Dolan"
+        },
+        {
+          "given": "Maurits W.",
+          "family": "van der Molen"
+        }
+      ],
+      "editors": [],
+      "publisher": null,
+      "year": 2006,
+      "date": null,
+      "container": "Neuropsychologia",
+      "volume": "44",
+      "issue": "11",
+      "first_page": "2017",
+      "last_page": "2036",
+      "edition": null,
+      "version": null,
+      "url": "https://doi.org/10.1016/j.neuropsychologia.2006.01.010"
+    },
+    {
+      "bib_id": 15,
+      "service": "crossref",
+      "service_id": null,
+      "score": null,
+      "bib_type": "article",
+      "doi": "10.1037/a0019842",
+      "title": "Control and interference in task switching—A review.",
+      "authors": [
+        {
+          "given": "Andrea",
+          "family": "Kiesel"
+        },
+        {
+          "given": "Marco",
+          "family": "Steinhauser"
+        },
+        {
+          "given": "Mike",
+          "family": "Wendt"
+        },
+        {
+          "given": "Michael",
+          "family": "Falkenstein"
+        },
+        {
+          "given": "Kerstin",
+          "family": "Jost"
+        },
+        {
+          "given": "Andrea M.",
+          "family": "Philipp"
+        },
+        {
+          "given": "Iring",
+          "family": "Koch"
+        }
+      ],
+      "editors": [],
+      "publisher": null,
+      "year": 2010,
+      "date": null,
+      "container": "Psychological Bulletin",
+      "volume": "136",
+      "issue": "5",
+      "first_page": "849",
+      "last_page": "874",
+      "edition": null,
+      "version": null,
+      "url": "https://doi.org/10.1037/a0019842"
+    },
+    {
+      "bib_id": 17,
+      "service": "crossref",
+      "service_id": null,
+      "score": null,
+      "bib_type": "article",
+      "doi": "10.1177/0963721417711638",
+      "title": "Powerful Instructions: Automaticity Without Practice",
+      "authors": [
+        {
+          "given": "Nachshon",
+          "family": "Meiran"
+        },
+        {
+          "given": "Baptist",
+          "family": "Liefooghe"
+        },
+        {
+          "given": "Jan",
+          "family": "De Houwer"
+        }
+      ],
+      "editors": [],
+      "publisher": null,
+      "year": 2017,
+      "date": null,
+      "container": "Current Directions in Psychological Science",
+      "volume": "26",
+      "issue": "6",
+      "first_page": "509",
+      "last_page": "514",
+      "edition": null,
+      "version": null,
+      "url": "https://doi.org/10.1177/0963721417711638"
+    },
+    {
+      "bib_id": 18,
+      "service": "crossref",
+      "service_id": null,
+      "score": null,
+      "bib_type": "article",
+      "doi": "10.1016/j.neuropsychologia.2016.06.037",
+      "title": "The role of working memory in rapid instructed task learning and intention-based reflexivity: An individual differences examination",
+      "authors": [
+        {
+          "given": "Nachshon",
+          "family": "Meiran"
+        },
+        {
+          "given": "Maayan",
+          "family": "Pereg"
+        },
+        {
+          "given": "Ella",
+          "family": "Givon"
+        },
+        {
+          "given": "Gal",
+          "family": "Danieli"
+        },
+        {
+          "given": "Nitzan",
+          "family": "Shahar"
+        }
+      ],
+      "editors": [],
+      "publisher": null,
+      "year": 2016,
+      "date": null,
+      "container": "Neuropsychologia",
+      "volume": "90",
+      "issue": null,
+      "first_page": "180",
+      "last_page": "189",
+      "edition": null,
+      "version": null,
+      "url": "https://doi.org/10.1016/j.neuropsychologia.2016.06.037"
+    },
+    {
+      "bib_id": 19,
+      "service": "crossref",
+      "service_id": null,
+      "score": null,
+      "bib_type": "article",
+      "doi": "10.1037/xlm0000063",
+      "title": "The power of instructions: Proactive configuration of stimulus–response translation.",
+      "authors": [
+        {
+          "given": "Nachshon",
+          "family": "Meiran"
+        },
+        {
+          "given": "Maayan",
+          "family": "Pereg"
+        },
+        {
+          "given": "Yoav",
+          "family": "Kessler"
+        },
+        {
+          "given": "Michael W.",
+          "family": "Cole"
+        },
+        {
+          "given": "Todd S.",
+          "family": "Braver"
+        }
+      ],
+      "editors": [],
+      "publisher": null,
+      "year": 2015,
+      "date": null,
+      "container": "Journal of Experimental Psychology: Learning, Memory, and Cognition",
+      "volume": "41",
+      "issue": "3",
+      "first_page": "768",
+      "last_page": "786",
+      "edition": null,
+      "version": null,
+      "url": "https://doi.org/10.1037/xlm0000063"
+    },
+    {
+      "bib_id": 20,
+      "service": "crossref",
+      "service_id": null,
+      "score": null,
+      "bib_type": "article",
+      "doi": "10.3758/s13415-014-0321-8",
+      "title": "Reflexive activation of newly instructed stimulus–response rules: evidence from lateralized readiness potentials in no-go trials",
+      "authors": [
+        {
+          "given": "Nachshon",
+          "family": "Meiran"
+        },
+        {
+          "given": "Maayan",
+          "family": "Pereg"
+        },
+        {
+          "given": "Yoav",
+          "family": "Kessler"
+        },
+        {
+          "given": "Michael W.",
+          "family": "Cole"
+        },
+        {
+          "given": "Todd S.",
+          "family": "Braver"
+        }
+      ],
+      "editors": [],
+      "publisher": null,
+      "year": 2015,
+      "date": null,
+      "container": "Cognitive, Affective, &amp; Behavioral Neuroscience",
+      "volume": "15",
+      "issue": "2",
+      "first_page": "365",
+      "last_page": "373",
+      "edition": null,
+      "version": null,
+      "url": "https://doi.org/10.3758/s13415-014-0321-8"
+    },
+    {
+      "bib_id": 21,
+      "service": "crossref",
+      "service_id": null,
+      "score": null,
+      "bib_type": "article",
+      "doi": "10.1177/0963721412436807",
+      "title": "Developing Cognitive Control",
+      "authors": [
+        {
+          "given": "Yuko",
+          "family": "Munakata"
+        },
+        {
+          "given": "Hannah R.",
+          "family": "Snyder"
+        },
+        {
+          "given": "Christopher H.",
+          "family": "Chatham"
+        }
+      ],
+      "editors": [],
+      "publisher": null,
+      "year": 2012,
+      "date": null,
+      "container": "Current Directions in Psychological Science",
+      "volume": "21",
+      "issue": "2",
+      "first_page": "71",
+      "last_page": "77",
+      "edition": null,
+      "version": null,
+      "url": "https://doi.org/10.1177/0963721412436807"
+    },
+    {
+      "bib_id": 22,
+      "service": "crossref",
+      "service_id": null,
+      "score": null,
+      "bib_type": "article",
+      "doi": "10.3758/s13423-017-1230-y",
+      "title": "Bayes factor design analysis: Planning for compelling evidence",
+      "authors": [
+        {
+          "given": "Felix D.",
+          "family": "Schönbrodt"
+        },
+        {
+          "given": "Eric-Jan",
+          "family": "Wagenmakers"
+        }
+      ],
+      "editors": [],
+      "publisher": null,
+      "year": 2018,
+      "date": null,
+      "container": "Psychonomic Bulletin &amp; Review",
+      "volume": "25",
+      "issue": "1",
+      "first_page": "128",
+      "last_page": "142",
+      "edition": null,
+      "version": null,
+      "url": "https://doi.org/10.3758/s13423-017-1230-y"
+    },
+    {
+      "bib_id": 23,
+      "service": "crossref",
+      "service_id": null,
+      "score": null,
+      "bib_type": "article",
+      "doi": "10.1016/j.cognition.2016.05.020",
+      "title": "Working memory gating mechanisms explain developmental change in rule-guided behavior",
+      "authors": [
+        {
+          "given": "Kerstin",
+          "family": "Unger"
+        },
+        {
+          "given": "Laura",
+          "family": "Ackerman"
+        },
+        {
+          "given": "Christopher H.",
+          "family": "Chatham"
+        },
+        {
+          "given": "Dima",
+          "family": "Amso"
+        },
+        {
+          "given": "David",
+          "family": "Badre"
+        }
+      ],
+      "editors": [],
+      "publisher": null,
+      "year": 2016,
+      "date": null,
+      "container": "Cognition",
+      "volume": "155",
+      "issue": null,
+      "first_page": "8",
+      "last_page": "22",
+      "edition": null,
+      "version": null,
+      "url": "https://doi.org/10.1016/j.cognition.2016.05.020"
+    },
+    {
+      "bib_id": 24,
+      "service": "crossref",
+      "service_id": null,
+      "score": null,
+      "bib_type": "article",
+      "doi": "10.1037/a0019791",
+      "title": "Task switching: Interplay of reconfiguration and interference control.",
+      "authors": [
+        {
+          "given": "André",
+          "family": "Vandierendonck"
+        },
+        {
+          "given": "Baptist",
+          "family": "Liefooghe"
+        },
+        {
+          "given": "Frederick",
+          "family": "Verbruggen"
+        }
+      ],
+      "editors": [],
+      "publisher": null,
+      "year": 2010,
+      "date": null,
+      "container": "Psychological Bulletin",
+      "volume": "136",
+      "issue": "4",
+      "first_page": "601",
+      "last_page": "626",
+      "edition": null,
+      "version": null,
+      "url": "https://doi.org/10.1037/a0019791"
+    },
+    {
+      "bib_id": 25,
+      "service": "crossref",
+      "service_id": null,
+      "score": null,
+      "bib_type": "article",
+      "doi": "10.1177/1745691614526414",
+      "title": "Banishing the Control Homunculi in Studies of Action Control and Behavior Change",
+      "authors": [
+        {
+          "given": "Frederick",
+          "family": "Verbruggen"
+        },
+        {
+          "given": "Ian P. L.",
+          "family": "McLaren"
+        },
+        {
+          "given": "Christopher D.",
+          "family": "Chambers"
+        }
+      ],
+      "editors": [],
+      "publisher": null,
+      "year": 2014,
+      "date": null,
+      "container": "Perspectives on Psychological Science",
+      "volume": "9",
+      "issue": "5",
+      "first_page": "497",
+      "last_page": "524",
+      "edition": null,
+      "version": null,
+      "url": "https://doi.org/10.1177/1745691614526414"
+    },
+    {
+      "bib_id": 26,
+      "service": "crossref",
+      "service_id": null,
+      "score": null,
+      "bib_type": "article",
+      "doi": "10.1016/j.jecp.2017.05.002",
+      "title": "Development of between-trial response strategy adjustments in a continuous action control task: A cross-sectional study",
+      "authors": [
+        {
+          "given": "Frederick",
+          "family": "Verbruggen"
+        },
+        {
+          "given": "Rossy",
+          "family": "McLaren"
+        }
+      ],
+      "editors": [],
+      "publisher": null,
+      "year": 2017,
+      "date": null,
+      "container": "Journal of Experimental Child Psychology",
+      "volume": "162",
+      "issue": null,
+      "first_page": "39",
+      "last_page": "57",
+      "edition": null,
+      "version": null,
+      "url": "https://doi.org/10.1016/j.jecp.2017.05.002"
+    }
+  ]
+}
