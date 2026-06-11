@@ -37,10 +37,10 @@ devtools::load_all(".")
 ```
 
 
-You can launch a shiny app, but this has limited features and is under development.
+You can launch a simple shiny app that creates a report from a PDF, with options to control what information is sent to or retrieved from external servers.
 
 ``` r
-metacheck::metacheck_app()
+metacheck::create_report_app()
 ```
 
 
