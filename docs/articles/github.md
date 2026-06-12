@@ -6,8 +6,8 @@ library(metacheck)
 #> 
 #> 
 #> ***********************************************
-#> ✅ Welcome to metacheck beta version 0.0.1.0
-#> ✨ Your version is up to date.
+#> ✅ Welcome to metacheck beta version 0.1.0
+#> ✨ Your version newer than the current release
 #> 
 #> ℹ For support and examples visit:
 #> https://scienceverse.github.io/metacheck/
@@ -106,8 +106,8 @@ languages, as detected and classified by GitHub.
 
 github_languages("scienceverse/metacheck")
 #>                      repo   language    bytes
-#> 1  scienceverse/metacheck          R 53601558
-#> 2  scienceverse/metacheck       HTML 19383876
+#> 1  scienceverse/metacheck          R 55279951
+#> 2  scienceverse/metacheck       HTML 19385881
 #> 3  scienceverse/metacheck        Lua    92710
 #> 4  scienceverse/metacheck        TeX    40040
 #> 5  scienceverse/metacheck      Stata    12810
@@ -224,14 +224,14 @@ github_files("scienceverse/metacheck")
 #> 10   133           md   text
 #> 11     0                 dir
 #> 12     0                 dir
-#> 13  2118                file
+#> 13  2121                file
 #> 14     0                 dir
 #> 15     0                 dir
 #> 16 34303           md   text
 #> 17  1407                file
 #> 18     0                 dir
 #> 19  3277                file
-#> 20 23166           md   text
+#> 20 23799           md   text
 #> 21     0                 dir
 #> 22     0                 dir
 #> 23  1267           md   text
@@ -282,9 +282,11 @@ github_files("scienceverse/metacheck",
 #> 7  scienceverse/metacheck scienceverse/metacheck    feature_request.md
 #> 8  scienceverse/metacheck scienceverse/metacheck wrong_check_result.md
 #> 9  scienceverse/metacheck scienceverse/metacheck          pkgdown.yaml
-#> 10 scienceverse/metacheck scienceverse/metacheck      teams-notify.yml
-#> 11 scienceverse/metacheck scienceverse/metacheck    test-coverage.yaml
-#> 12 scienceverse/metacheck scienceverse/metacheck   upload_packages.yml
+#> 10 scienceverse/metacheck scienceverse/metacheck            static.yml
+#> 11 scienceverse/metacheck scienceverse/metacheck      teams-notify.yml
+#> 12 scienceverse/metacheck scienceverse/metacheck    test-coverage.yaml
+#> 13 scienceverse/metacheck scienceverse/metacheck   upload_packages.yml
+#> 14 scienceverse/metacheck scienceverse/metacheck           website.yml
 #>                                            path
 #> 1                            .github/.gitignore
 #> 2                            .github/CODEOWNERS
@@ -295,9 +297,11 @@ github_files("scienceverse/metacheck",
 #> 7     .github/ISSUE_TEMPLATE/feature_request.md
 #> 8  .github/ISSUE_TEMPLATE/wrong_check_result.md
 #> 9                .github/workflows/pkgdown.yaml
-#> 10           .github/workflows/teams-notify.yml
-#> 11         .github/workflows/test-coverage.yaml
-#> 12        .github/workflows/upload_packages.yml
+#> 10                 .github/workflows/static.yml
+#> 11           .github/workflows/teams-notify.yml
+#> 12         .github/workflows/test-coverage.yaml
+#> 13        .github/workflows/upload_packages.yml
+#> 14                .github/workflows/website.yml
 #>                                                                                                  download_url
 #> 1                            https://raw.githubusercontent.com/scienceverse/metacheck/main/.github/.gitignore
 #> 2                            https://raw.githubusercontent.com/scienceverse/metacheck/main/.github/CODEOWNERS
@@ -308,9 +312,11 @@ github_files("scienceverse/metacheck",
 #> 7     https://raw.githubusercontent.com/scienceverse/metacheck/main/.github/ISSUE_TEMPLATE/feature_request.md
 #> 8  https://raw.githubusercontent.com/scienceverse/metacheck/main/.github/ISSUE_TEMPLATE/wrong_check_result.md
 #> 9                https://raw.githubusercontent.com/scienceverse/metacheck/main/.github/workflows/pkgdown.yaml
-#> 10           https://raw.githubusercontent.com/scienceverse/metacheck/main/.github/workflows/teams-notify.yml
-#> 11         https://raw.githubusercontent.com/scienceverse/metacheck/main/.github/workflows/test-coverage.yaml
-#> 12        https://raw.githubusercontent.com/scienceverse/metacheck/main/.github/workflows/upload_packages.yml
+#> 10                 https://raw.githubusercontent.com/scienceverse/metacheck/main/.github/workflows/static.yml
+#> 11           https://raw.githubusercontent.com/scienceverse/metacheck/main/.github/workflows/teams-notify.yml
+#> 12         https://raw.githubusercontent.com/scienceverse/metacheck/main/.github/workflows/test-coverage.yaml
+#> 13        https://raw.githubusercontent.com/scienceverse/metacheck/main/.github/workflows/upload_packages.yml
+#> 14                https://raw.githubusercontent.com/scienceverse/metacheck/main/.github/workflows/website.yml
 #>    size       ext   type
 #> 1     7 gitignore config
 #> 2    12             file
@@ -321,9 +327,11 @@ github_files("scienceverse/metacheck",
 #> 7   417        md   text
 #> 8   732        md   text
 #> 9  1380      yaml config
-#> 10  521       yml config
-#> 11 1874      yaml config
-#> 12 3362       yml config
+#> 10 1332       yml config
+#> 11  521       yml config
+#> 12 2068      yaml config
+#> 13 3362       yml config
+#> 14 1332       yml config
 ```
 
 ## github_info

@@ -13,7 +13,7 @@
 
     <a class="navbar-brand me-2" href="../index.html">metacheck</a>
 
-    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Released version">0.0.1.9001</small>
+    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Released version">0.1.0</small>
 
 
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -51,10 +51,17 @@
 
       <dl><dt>
 
+          <code><a href="report_app.html">report_app()</a></code>
+
+        </dt>
+        <dd>Launch Report App</dd>
+
+        <dt>
+
           <code><a href="metacheck_app.html">metacheck_app()</a></code>
 
         </dt>
-        <dd>Launch Shiny App</dd>
+        <dd>Launch Demo App</dd>
 
         <dt>
 
@@ -873,6 +880,13 @@
 
         <dt>
 
+          <code><a href="path_sanitize.html">path_sanitize()</a></code>
+
+        </dt>
+        <dd>Sanitize File Path</dd>
+
+        <dt>
+
           <code><a href="stats.html">stats()</a></code>
 
         </dt>
@@ -884,6 +898,463 @@
 
         </dt>
         <dd>Emojis</dd>
+      </dl></div><div class="section level2">
+      <h2 id="internal-functions">Internal functions<a class="anchor" aria-label="anchor" href="#internal-functions"></a></h2>
+
+      <div class="section-desc"><p>Functions for developers</p></div>
+
+      <dl></dl></div><div class="section level2">
+
+
+
+
+      <dl><dt>
+
+          <code><a href="check_orcid.html">check_orcid()</a></code>
+
+        </dt>
+        <dd>Check validity of ORCiD</dd>
+
+        <dt>
+
+          <code><a href="credit_roles.html">credit_roles()</a></code>
+
+        </dt>
+        <dd>CRediT Roles</dd>
+
+        <dt>
+
+          <code><a href="dot-aspredicted_info.html">.aspredicted_info()</a></code>
+
+        </dt>
+        <dd>Retrieve and process info from AsPredicted by URL</dd>
+
+        <dt>
+
+          <code><a href="dot-batch_query.html">.batch_query()</a></code>
+
+        </dt>
+        <dd>Batch query</dd>
+
+        <dt>
+
+          <code><a href="dot-bibr_isalive.html">.bibr_isalive()</a></code>
+
+        </dt>
+        <dd>Check bibr server status</dd>
+
+        <dt>
+
+          <code><a href="dot-bibtype_convert.html">.bibtype_convert()</a></code>
+
+        </dt>
+        <dd>Convert crossref/doi types to bibtex types</dd>
+
+        <dt>
+
+          <code><a href="dot-coerce_bib_authors.html">.coerce_bib_authors()</a></code>
+
+        </dt>
+        <dd>Coerce bib authors column to list of data frames</dd>
+
+        <dt>
+
+          <code><a href="dot-crossref_parse_item.html">.crossref_parse_item()</a></code>
+
+        </dt>
+        <dd>Parse a CrossRef item into a data frame row</dd>
+
+        <dt>
+
+          <code><a href="dot-crossref_query_parse.html">.crossref_query_parse()</a></code>
+
+        </dt>
+        <dd>Parse crossref query items into a table</dd>
+
+        <dt>
+
+          <code><a href="dot-github_config.html">.github_config()</a></code>
+
+        </dt>
+        <dd>GitHub Configuration</dd>
+
+        <dt>
+
+          <code><a href="dot-grobid_isalive.html">.grobid_isalive()</a></code>
+
+        </dt>
+        <dd>Check grobid server status</dd>
+
+        <dt>
+
+          <code><a href="dot-grobid_to_bibr.html">.grobid_to_bibr()</a></code>
+
+        </dt>
+        <dd>Convert grobid to Bibr format</dd>
+
+        <dt>
+
+          <code><a href="dot-is_paper.html">.is_paper()</a></code>
+
+        </dt>
+        <dd>Detect a paper object</dd>
+
+        <dt>
+
+          <code><a href="dot-is_paper_list.html">.is_paper_list()</a></code>
+
+        </dt>
+        <dd>Detect a list of paper objects</dd>
+
+        <dt>
+
+          <code><a href="dot-llm_model_list_groq.html">.llm_model_list_groq()</a></code>
+
+        </dt>
+        <dd>Get Groq Models</dd>
+
+        <dt>
+
+          <code><a href="dot-llm_ollama_native.html">.llm_ollama_native()</a></code>
+
+        </dt>
+        <dd>Call ollama native API with think support</dd>
+
+        <dt>
+
+          <code><a href="dot-openalex_add_abstract.html">.openalex_add_abstract()</a></code>
+
+        </dt>
+        <dd>Add abstract from inverted index</dd>
+
+        <dt>
+
+          <code><a href="dot-osf_file_data.html">.osf_file_data()</a></code>
+
+        </dt>
+        <dd>Structure OSF File Data</dd>
+
+        <dt>
+
+          <code><a href="dot-osf_headers.html">.osf_headers()</a></code>
+
+        </dt>
+        <dd>OSF Headers</dd>
+
+        <dt>
+
+          <code><a href="dot-osf_info.html">.osf_info()</a></code>
+
+        </dt>
+        <dd>Retrieve info from the OSF by ID</dd>
+
+        <dt>
+
+          <code><a href="dot-osf_node_data.html">.osf_node_data()</a></code>
+
+        </dt>
+        <dd>Structure OSF Node Data</dd>
+
+        <dt>
+
+          <code><a href="dot-osf_parent_project.html">.osf_parent_project()</a></code>
+
+        </dt>
+        <dd>Get OSF Parent Project</dd>
+
+        <dt>
+
+          <code><a href="dot-osf_parse_response.html">.osf_parse_response()</a></code>
+
+        </dt>
+        <dd>Parse an OSF API response into a data frame</dd>
+
+        <dt>
+
+          <code><a href="dot-osf_pat_validate.html">.osf_pat_validate()</a></code>
+
+        </dt>
+        <dd>OSF PAT Validation</dd>
+
+        <dt>
+
+          <code><a href="dot-osf_preprint_data.html">.osf_preprint_data()</a></code>
+
+        </dt>
+        <dd>Structure OSF Preprint Data</dd>
+
+        <dt>
+
+          <code><a href="dot-osf_reg_data.html">.osf_reg_data()</a></code>
+
+        </dt>
+        <dd>Structure OSF Registration Data</dd>
+
+        <dt>
+
+          <code><a href="dot-osf_user_data.html">.osf_user_data()</a></code>
+
+        </dt>
+        <dd>Structure OSF User Data</dd>
+
+        <dt>
+
+          <code><a href="dot-paper_coerce.html">.paper_coerce()</a></code>
+
+        </dt>
+        <dd>Coerce paper object types</dd>
+
+        <dt>
+
+          <code><a href="dot-paper_schema.html">.paper_schema()</a></code>
+
+        </dt>
+        <dd>Get paper schema</dd>
+
+        <dt>
+
+          <code><a href="dot-parse_author_string.html">.parse_author_string()</a></code>
+
+        </dt>
+        <dd>Parse a legacy author string into a data frame</dd>
+
+        <dt>
+
+          <code><a href="dot-process_full_text.html">.process_full_text()</a></code>
+
+        </dt>
+        <dd>Process full text table</dd>
+
+        <dt>
+
+          <code><a href="dot-rbox_info.html">.rbox_info()</a></code>
+
+        </dt>
+        <dd>Retrieve info from ResearchBox by URL</dd>
+
+        <dt>
+
+          <code><a href="dot-read_bibr.html">.read_bibr()</a></code>
+
+        </dt>
+        <dd>Read bibr JSON file</dd>
+
+        <dt>
+
+          <code><a href="dot-tei_authors.html">.tei_authors()</a></code>
+
+        </dt>
+        <dd>Get authors from TEI type XML</dd>
+
+        <dt>
+
+          <code><a href="dot-tei_bib.html">.tei_bib()</a></code>
+
+        </dt>
+        <dd>Get bibliography from TEI type XML</dd>
+
+        <dt>
+
+          <code><a href="dot-tei_text.html">.tei_text()</a></code>
+
+        </dt>
+        <dd>Get full text from TEI type XML</dd>
+
+        <dt>
+
+          <code><a href="dot-tei_url.html">.tei_url()</a></code>
+
+        </dt>
+        <dd>Get URLs from text table</dd>
+
+        <dt>
+
+          <code><a href="dot-tei_xrefs.html">.tei_xrefs()</a></code>
+
+        </dt>
+        <dd>Get cross references from text table</dd>
+
+        <dt>
+
+          <code><a href="dot-unnest_result.html">.unnest_result()</a></code>
+
+        </dt>
+        <dd>Convert structured LLM result to a data frame</dd>
+
+        <dt>
+
+          <code><a href="dot-xml2bib.html">.xml2bib()</a></code>
+
+        </dt>
+        <dd>Parse XML bib format to bibtex</dd>
+
+        <dt>
+
+          <code><a href="dot-xml_find1_text.html">.xml_find1_text()</a></code>
+
+        </dt>
+        <dd>Find and return first text from XML by xpath</dd>
+
+        <dt>
+
+          <code><a href="dot-xml_find_text.html">.xml_find_text()</a></code>
+
+        </dt>
+        <dd>Find and return text from XML by xpath</dd>
+
+        <dt>
+
+          <code><a href="dot-xml_read_grobid.html">.xml_read_grobid()</a></code>
+
+        </dt>
+        <dd>Read in a grobid XML file</dd>
+
+        <dt>
+
+          <code><a href="dot-zenodo_id.html">.zenodo_id()</a></code>
+
+        </dt>
+        <dd>Get zenodo ID from URL</dd>
+
+        <dt>
+
+          <code><a href="dot-zenodo_info.html">.zenodo_info()</a></code>
+
+        </dt>
+        <dd>Retrieve info from Zenodo by ID</dd>
+
+        <dt>
+
+          <code><a href="file_types.html">file_types</a></code>
+
+        </dt>
+        <dd>File Types</dd>
+
+        <dt>
+
+          <code><a href="get_orcid.html">get_orcid()</a></code>
+
+        </dt>
+        <dd>Get ORCiD from Name</dd>
+
+        <dt>
+
+          <code><a href="logpath.html">logpath()</a></code>
+
+        </dt>
+        <dd>Get log path</dd>
+
+        <dt>
+
+          <code><a href="message.html">message()</a></code>
+
+        </dt>
+        <dd>Less scary green messages</dd>
+
+        <dt>
+
+          <code><a href="module_find.html">module_find()</a></code>
+
+        </dt>
+        <dd>Find a module by name or path</dd>
+
+        <dt>
+
+          <code><a href="online.html">online()</a></code>
+
+        </dt>
+        <dd>Check if the host of a URL is online</dd>
+
+        <dt>
+
+          <code><a href="op-null-default.html">`%||%`</a></code>
+
+        </dt>
+        <dd>Default value for <code>NULL</code></dd>
+
+        <dt>
+
+          <code><a href="orcid_person.html">orcid_person()</a></code>
+
+        </dt>
+        <dd>Get Person Details for ORCiD</dd>
+
+        <dt>
+
+          <code><a href="paper.html">paper()</a></code>
+
+        </dt>
+        <dd>Create a paper object</dd>
+
+        <dt>
+
+          <code><a href="paperlist.html">paperlist()</a></code>
+
+        </dt>
+        <dd>Create a paperlist object</dd>
+
+        <dt>
+
+          <code><a href="pb.html">pb()</a></code>
+
+        </dt>
+        <dd>Progress Bar</dd>
+
+        <dt>
+
+          <code><a href="print.metacheck_module_help.html">print(<i>&lt;metacheck_module_help&gt;</i>)</a></code>
+
+        </dt>
+        <dd>Print Module Help Object</dd>
+
+        <dt>
+
+          <code><a href="print.metacheck_module_list.html">print(<i>&lt;metacheck_module_list&gt;</i>)</a></code>
+
+        </dt>
+        <dd>Print Module List Object</dd>
+
+        <dt>
+
+          <code><a href="print.metacheck_module_output.html">print(<i>&lt;metacheck_module_output&gt;</i>)</a></code>
+
+        </dt>
+        <dd>Print Module Output</dd>
+
+        <dt>
+
+          <code><a href="print.scivrs_paper.html">print(<i>&lt;scivrs_paper&gt;</i>)</a></code>
+
+        </dt>
+        <dd>Print Paper Object</dd>
+
+        <dt>
+
+          <code><a href="print.scivrs_paperlist.html">print(<i>&lt;scivrs_paperlist&gt;</i>)</a></code>
+
+        </dt>
+        <dd>Print PaperList Object</dd>
+
+        <dt>
+
+          <code><a href="rep_if.html">rep_if()</a></code>
+
+        </dt>
+        <dd>Replace If</dd>
+
+        <dt>
+
+          <code><a href="sub-.scivrs_paperlist.html">`[`(<i>&lt;scivrs_paperlist&gt;</i>)</a></code>
+
+        </dt>
+        <dd>Subset PaperList Object</dd>
+
+        <dt>
+
+          <code><a href="verbose.html">verbose()</a></code>
+
+        </dt>
+        <dd>Set or get verbosity</dd>
       </dl></div>
   </main><aside class="col-md-3"><nav id="toc" aria-label="Table of contents"><h2>On this page</h2>
     </nav></aside></div>

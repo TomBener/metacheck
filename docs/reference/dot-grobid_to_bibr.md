@@ -5,14 +5,14 @@ Convert grobid to Bibr format
 ## Usage
 
 ``` r
-.grobid_to_bibr(xml_file, pb = NULL)
+.grobid_to_bibr(xml_path, pb = NULL)
 ```
 
 ## Arguments
 
-- xml_file:
+- xml_path:
 
-  a singhle XML file
+  path to a single XML file
 
 - pb:
 

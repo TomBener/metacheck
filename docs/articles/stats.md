@@ -6,8 +6,8 @@ library(metacheck)
 #> 
 #> 
 #> ***********************************************
-#> ✅ Welcome to metacheck beta version 0.0.1.0
-#> ✨ Your version is up to date.
+#> ✅ Welcome to metacheck beta version 0.1.0
+#> ✨ Your version newer than the current release
 #> 
 #> ℹ For support and examples visit:
 #> https://scienceverse.github.io/metacheck/
@@ -80,7 +80,7 @@ module_run(paper_clean, "stat_p_exact")$traffic_light
 ``` r
 
 module_run(paper_clean, "stat_effect_size")$traffic_light
-#> [1] "green"
+#> [1] "red"
 ```
 
 ``` r
@@ -173,7 +173,7 @@ result_es <- module_run(paper_imprecise, "stat_effect_size")
 result_es$traffic_light
 #> [1] "red"
 result_es$summary_text
-#> [1] "We found 1 t-test and/or F-test where effect sizes are not reported."
+#> [1] "We found 1 t-test and/or F-test where effect sizes are not reported. Check these tests in the table below, and consider adding effect sizes"
 ```
 
 ``` r
@@ -191,7 +191,7 @@ A clean paper for comparison — all tests have effect sizes:
 ``` r
 
 module_run(paper_clean, "stat_effect_size")$summary_text
-#> [1] "All detected t-tests and F-tests had an effect size reported in the same sentence."
+#> [1] "All effect sizes were reported, but some appear inconsistent with the test statistic. This can be because the effect size is not clearly labeled (e.g., d, instead of d_rm), because the effect sizes is not reported with enough precisions (e.g., 0.3 instead of 0.32), or because the effect size is incorrectly reported."
 ```
 
 ------------------------------------------------------------------------

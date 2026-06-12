@@ -27,8 +27,8 @@ convert(
 
 - method:
 
-  whether to use bibr, grobid, or grobid_to_bibr to convert a file (see
-  Details)
+  whether to use bibr, grobid, or xml (grobid_to_bibr) to convert a file
+  (see Details)
 
 - crossref_lookup:
 

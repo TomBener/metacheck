@@ -1,29 +1,31 @@
-[MetaCheck](http://www.scienceverse.org/metacheck) version 0.0.1.0  
-Report Created: 2026-06-04  
+[MetaCheck](http://www.scienceverse.org/metacheck) version 0.0.1.9001  
+Report Created: 2026-06-10  
 DOI:
 [10.32614/10.5281/zenodo.2669586](https://doi.org/10.32614/10.5281/zenodo.2669586)
 
 [Metacheck](https://www.scienceverse.org/metacheck/) is a tool that
 screens scientific manuscripts and aims to identify potential issues for
-improvement, thereby guiding researchers towards best practices.
-Metacheck is developed to help researchers correctly and completely
-report statistical results, automatically retrieve possible relevant
-information about citations, and improve how researchers share data,
-code, and preregistrations.
+improvement. Our goal is to guide researchers towards best practices,
+especially with respect to practices that researchers easily forget, or
+might not have learned about yet. Metacheck is developed to help
+researchers correctly and completely report statistical results, will
+point to possibly relevant information about citations, and provides
+feedback about data and code sharing.
 
-Metacheck combines existing and new checks in a module-based tool. It
-mainly relies on text search or retrieving information from external
-sources through API’s or web-scraping, but some modules also incorporate
-tools that use machine learning classifiers or large language models.
-The use of LLM’s is always optional and opt-in. The development of
-Metacheck is guided by our [values
+Metacheck combines existing and new checks in a module-based tool. It is
+open source, and anyone can contribute modules. It mainly relies on text
+search or retrieving information from external sources through API’s or
+web-scraping, but the power modules can optionally use large language
+models. The use of LLM’s is always optional and opt-in. The development
+of Metacheck is guided by our [values
 statement](https://www.scienceverse.org/metacheck/#our-values).
 
-Our modules are validated on sets of open-access papers. In each
-validated module, there will be a sentence explaining the prevalence of
-false positives (incorrect detection/classification) and false negatives
-(incorrect omission). For example, if a hypothetical module detects the
-inappropriate practice of “woozling”, the sentence might read:
+In light with our values, our modules are validated on sets of
+open-access papers. In each validated module, there will be a sentence
+explaining the prevalence of false positives (incorrect
+detection/classification) and false negatives (incorrect omission). For
+example, if a hypothetical module detects the inappropriate practice of
+“woozling”, the sentence might read:
 
 > In a sample of 250 papers from the *Journal of X*, there were 350
 > instances of woozling. This module correctly detected 340 of them, and
@@ -37,7 +39,12 @@ but also more likely to incorrectly flag something. Therefore, you need
 to check the output of each module, keeping the validated error rates in
 mind.
 
-Metacheck is under continuous development. Issues can be submitted [on
+Metacheck is under continuous development. It can be surprisingly
+difficult to automatically retrieve information from papers, and there
+is a large amount of edge-cases where our tool might not yet work
+accurately. By using our tool, and providing us with feedback about what
+we can’t get right yet, you will help to improve the tool for all other
+users. Issues can be submitted [on
 Github](https://github.com/scienceverse/metacheck/issues), and
 suggestions for improvement or feedback can be sent to
 <metacheck@scienceverse.org>.
@@ -63,7 +70,8 @@ suggestions for improvement or feedback can be sent to
   effects with terms related to ‘marginally significant’.  
 - 🔍 [Effect Sizes in t-tests and
   F-tests](#effect-sizes-in-t-tests-and-f-tests): We found 1 t-test
-  and/or F-test where effect sizes are not reported.  
+  and/or F-test where effect sizes are not reported. Check these tests
+  in the table below, and consider adding effect sizes  
 - ⚠️ [StatCheck](#statcheck): 1 possible error in t-tests or F-tests  
 - 🔍 [Repository Check](#repository-check):
   - We found 14 files in 3 repositories.
@@ -322,6 +330,12 @@ articles in Psychological Science.
 This module was developed by Lisa DeBruine, Daniel Lakens and Cristian
 Mesquida
 
+**Validation**: In a sample of 128 papers with 246 instances of power
+statements, 203 were correctly detected (true positives), 22 were missed
+(false negatives) and 21 were incorrectly detected (false positives).
+Overall, among all instances flagged as power statements, 90.6% were
+correct (positive prediction value).
+
 ## Results Modules
 
 ### ⚠️ Exact P-Values
@@ -363,6 +377,14 @@ We try to exclude figure and table notes like “\* p \< .05”, but may not
 succeed at excluding all false positives.
 
 This module was developed by Lisa DeBruine
+
+**Validation**: In a sample of 225 papers containing 405 instances of
+non-exact p-values, th module correctly detected 269 cases (true
+positives) and incorrectly identified 78 (false positives). It missed
+136 instances of imprecisely reported p-values (false negatives) and
+correctly identified 4557 cases of precisely reported p-values (true
+negative). Additionally, 78% of positive detections were correct
+(positive predictive value).
 
 ### 🔍 Non-Significant P Value Check
 
@@ -425,6 +447,13 @@ to the Metacheck development team.
 
 This module was developed by Daniel Lakens
 
+**Validation**: In a sample of 194 papers with 1602 instances of
+non-significant p-values, this module correctly detected 1486 of them,
+and incorrectly identified 153. Additionally, 91% of detections were
+true instances (positive predictive value). That is, when this module
+flags non-significant p-values in a paper, it correctly identifies an
+issue 91% of the time.
+
 ### ⚠️ Marginal Significance
 
 You described 2 effects with terms related to ‘marginally significant’.
@@ -468,14 +497,25 @@ detected by the module.
 
 This module was developed by Daniel Lakens
 
+**Validation**: In a sample of 51 papers with 87 statements, this module
+correctly identified 38 statements (true positives) and incorrectly
+flagged 22 statements (false positives). It failed to detect 27
+statements. Thus, among all statements flagged by the module, 63% were
+genuine cases (positive predictive value). However, the module missed
+42% of all true statements (false negative rate).
+
 ### 🔍 Effect Sizes in t-tests and F-tests
 
 We found 1 t-test and/or F-test where effect sizes are not reported.
+Check these tests in the table below, and consider adding effect sizes
 
 View detailed feedback
 
 We recommend checking the sentences below, and add any missing effect
 sizes.
+
+For t-tests with a reported d, coherence checks yielded 1 indeterminate
+case.
 
 TipLearn More
 
@@ -496,18 +536,30 @@ TipAll detected and assessed stats
 
 NoteHow It Works
 
-The Effect Size module checks for effect sizes in t-tests and F-tests.
+The Effect Size module checks if effect sizes are correctly reported in
+t-tests and F-tests.
 
-The Effect Size check searches for regular expressions that match a
-predefined pattern. The module was validated on APA reported statistical
-tests, and might miss effect sizes that were reported in other reporting
-styles. It was validated by the Metacheck team on papers published in
-Psychological Science.
-
-If you want to extend the package to detect effect sizes for additional
-tests, reach out to the Metacheck development team.
+The Effect Size check searches for regular expressions that match
+typical ways in which effect sizes are reported. It subsequently checks
+different ways in which Cohen’s d, g, ηp2, and ωp2 can be computed
+against the reported value. If effects are missing, or might be
+incorrect, you the module provides a warning. The module was validated
+on APA reported statistical tests, and might miss effect sizes that were
+reported in other reporting styles. It was validated by the Metacheck
+team on papers published in Psychological Science.
 
 This module was developed by Daniel Lakens and Lisa DeBruine
+
+**Validation**: In a sample of 161 papers with 1469 tests, this module
+correctly detected 1106 reported effect sizes (true positives) and
+correctly identified 295 cases where no effect size was present (true
+negatives). However, it missed 23 that were reported (false negatives),
+and incorrectly identified 45 effect sizes when none were reported
+(false positives). Among all instances detected by the module, 96% were
+true cases (positive predictive value). In a validation against 221
+reported Cohen’s d effect sizes, it correctly indicated coherence in 218
+cases (99%). In a validation against 485 partial eta-squared effect
+sizes, it correctly indicated coherence in 480 (99%)
 
 ### ⚠️ StatCheck
 
