@@ -22,8 +22,7 @@ knitr::opts_chunk$set(
 You can install the development version of metacheck from [GitHub](https://github.com/scienceverse/metacheck) with:
 
 ``` r
-# install.packages("devtools")
-devtools::install_github("scienceverse/metacheck")
+pak::pkg_install("scienceverse/metacheck")
 ```
 
 ```{r}

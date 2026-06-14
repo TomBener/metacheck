@@ -7,8 +7,7 @@ You can install the development version of metacheck from
 
 ``` r
 
-# install.packages("devtools")
-devtools::install_github("scienceverse/metacheck")
+pak::pkg_install("scienceverse/metacheck")
 ```
 
 ``` r
