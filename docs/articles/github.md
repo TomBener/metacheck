@@ -85,8 +85,7 @@ cat(readme)
     #> You can install the development version of metacheck from [GitHub](https://github.com/) with:
     #> 
     #> ``` r
-    #> # install.packages("remotes")
-    #> remotes::install_github("scienceverse/metacheck")
+    #> pak::pkg_install("scienceverse/metacheck")
     #> ```
     #> 
     #> 
