@@ -2,8 +2,10 @@
 
 ## Reading in Papers
 
+- [`report_app()`](https://scienceverse.github.io/metacheck/reference/report_app.md)
+  : Launch Report App
 - [`metacheck_app()`](https://scienceverse.github.io/metacheck/reference/metacheck_app.md)
-  : Launch Shiny App
+  : Launch Demo App
 - [`convert()`](https://scienceverse.github.io/metacheck/reference/convert.md)
   : Convert documents
 - [`convert_bibr()`](https://scienceverse.github.io/metacheck/reference/convert_bibr.md)
@@ -251,7 +253,207 @@ files.
   : Extract P-Values
 - [`extract_urls()`](https://scienceverse.github.io/metacheck/reference/extract_urls.md)
   : Extract URLs
+- [`path_sanitize()`](https://scienceverse.github.io/metacheck/reference/path_sanitize.md)
+  : Sanitize File Path
 - [`stats()`](https://scienceverse.github.io/metacheck/reference/stats.md)
   : Check Stats
 - [`emojis`](https://scienceverse.github.io/metacheck/reference/emojis.md)
   : Emojis
+
+## Internal functions
+
+Functions for developers
+
+- [`check_orcid()`](https://scienceverse.github.io/metacheck/reference/check_orcid.md)
+  : Check validity of ORCiD
+
+- [`credit_roles()`](https://scienceverse.github.io/metacheck/reference/credit_roles.md)
+  : CRediT Roles
+
+- [`.aspredicted_info()`](https://scienceverse.github.io/metacheck/reference/dot-aspredicted_info.md)
+  : Retrieve and process info from AsPredicted by URL
+
+- [`.batch_query()`](https://scienceverse.github.io/metacheck/reference/dot-batch_query.md)
+  : Batch query
+
+- [`.bibr_isalive()`](https://scienceverse.github.io/metacheck/reference/dot-bibr_isalive.md)
+  : Check bibr server status
+
+- [`.bibtype_convert()`](https://scienceverse.github.io/metacheck/reference/dot-bibtype_convert.md)
+  : Convert crossref/doi types to bibtex types
+
+- [`.coerce_bib_authors()`](https://scienceverse.github.io/metacheck/reference/dot-coerce_bib_authors.md)
+  : Coerce bib authors column to list of data frames
+
+- [`.crossref_parse_item()`](https://scienceverse.github.io/metacheck/reference/dot-crossref_parse_item.md)
+  : Parse a CrossRef item into a data frame row
+
+- [`.crossref_query_parse()`](https://scienceverse.github.io/metacheck/reference/dot-crossref_query_parse.md)
+  : Parse crossref query items into a table
+
+- [`.github_config()`](https://scienceverse.github.io/metacheck/reference/dot-github_config.md)
+  : GitHub Configuration
+
+- [`.grobid_isalive()`](https://scienceverse.github.io/metacheck/reference/dot-grobid_isalive.md)
+  : Check grobid server status
+
+- [`.grobid_to_bibr()`](https://scienceverse.github.io/metacheck/reference/dot-grobid_to_bibr.md)
+  : Convert grobid to Bibr format
+
+- [`.is_paper()`](https://scienceverse.github.io/metacheck/reference/dot-is_paper.md)
+  : Detect a paper object
+
+- [`.is_paper_list()`](https://scienceverse.github.io/metacheck/reference/dot-is_paper_list.md)
+  : Detect a list of paper objects
+
+- [`.llm_model_list_groq()`](https://scienceverse.github.io/metacheck/reference/dot-llm_model_list_groq.md)
+  : Get Groq Models
+
+- [`.llm_ollama_native()`](https://scienceverse.github.io/metacheck/reference/dot-llm_ollama_native.md)
+  : Call ollama native API with think support
+
+- [`.openalex_add_abstract()`](https://scienceverse.github.io/metacheck/reference/dot-openalex_add_abstract.md)
+  : Add abstract from inverted index
+
+- [`.osf_file_data()`](https://scienceverse.github.io/metacheck/reference/dot-osf_file_data.md)
+  : Structure OSF File Data
+
+- [`.osf_headers()`](https://scienceverse.github.io/metacheck/reference/dot-osf_headers.md)
+  : OSF Headers
+
+- [`.osf_info()`](https://scienceverse.github.io/metacheck/reference/dot-osf_info.md)
+  : Retrieve info from the OSF by ID
+
+- [`.osf_node_data()`](https://scienceverse.github.io/metacheck/reference/dot-osf_node_data.md)
+  : Structure OSF Node Data
+
+- [`.osf_parent_project()`](https://scienceverse.github.io/metacheck/reference/dot-osf_parent_project.md)
+  : Get OSF Parent Project
+
+- [`.osf_parse_response()`](https://scienceverse.github.io/metacheck/reference/dot-osf_parse_response.md)
+  : Parse an OSF API response into a data frame
+
+- [`.osf_pat_validate()`](https://scienceverse.github.io/metacheck/reference/dot-osf_pat_validate.md)
+  : OSF PAT Validation
+
+- [`.osf_preprint_data()`](https://scienceverse.github.io/metacheck/reference/dot-osf_preprint_data.md)
+  : Structure OSF Preprint Data
+
+- [`.osf_reg_data()`](https://scienceverse.github.io/metacheck/reference/dot-osf_reg_data.md)
+  : Structure OSF Registration Data
+
+- [`.osf_user_data()`](https://scienceverse.github.io/metacheck/reference/dot-osf_user_data.md)
+  : Structure OSF User Data
+
+- [`.paper_coerce()`](https://scienceverse.github.io/metacheck/reference/dot-paper_coerce.md)
+  : Coerce paper object types
+
+- [`.paper_schema()`](https://scienceverse.github.io/metacheck/reference/dot-paper_schema.md)
+  : Get paper schema
+
+- [`.parse_author_string()`](https://scienceverse.github.io/metacheck/reference/dot-parse_author_string.md)
+  : Parse a legacy author string into a data frame
+
+- [`.process_full_text()`](https://scienceverse.github.io/metacheck/reference/dot-process_full_text.md)
+  : Process full text table
+
+- [`.rbox_info()`](https://scienceverse.github.io/metacheck/reference/dot-rbox_info.md)
+  : Retrieve info from ResearchBox by URL
+
+- [`.read_bibr()`](https://scienceverse.github.io/metacheck/reference/dot-read_bibr.md)
+  : Read bibr JSON file
+
+- [`.tei_authors()`](https://scienceverse.github.io/metacheck/reference/dot-tei_authors.md)
+  : Get authors from TEI type XML
+
+- [`.tei_bib()`](https://scienceverse.github.io/metacheck/reference/dot-tei_bib.md)
+  : Get bibliography from TEI type XML
+
+- [`.tei_text()`](https://scienceverse.github.io/metacheck/reference/dot-tei_text.md)
+  : Get full text from TEI type XML
+
+- [`.tei_url()`](https://scienceverse.github.io/metacheck/reference/dot-tei_url.md)
+  : Get URLs from text table
+
+- [`.tei_xrefs()`](https://scienceverse.github.io/metacheck/reference/dot-tei_xrefs.md)
+  : Get cross references from text table
+
+- [`.unnest_result()`](https://scienceverse.github.io/metacheck/reference/dot-unnest_result.md)
+  : Convert structured LLM result to a data frame
+
+- [`.xml2bib()`](https://scienceverse.github.io/metacheck/reference/dot-xml2bib.md)
+  : Parse XML bib format to bibtex
+
+- [`.xml_find1_text()`](https://scienceverse.github.io/metacheck/reference/dot-xml_find1_text.md)
+  : Find and return first text from XML by xpath
+
+- [`.xml_find_text()`](https://scienceverse.github.io/metacheck/reference/dot-xml_find_text.md)
+  : Find and return text from XML by xpath
+
+- [`.xml_read_grobid()`](https://scienceverse.github.io/metacheck/reference/dot-xml_read_grobid.md)
+  : Read in a grobid XML file
+
+- [`.zenodo_id()`](https://scienceverse.github.io/metacheck/reference/dot-zenodo_id.md)
+  : Get zenodo ID from URL
+
+- [`.zenodo_info()`](https://scienceverse.github.io/metacheck/reference/dot-zenodo_info.md)
+  : Retrieve info from Zenodo by ID
+
+- [`file_types`](https://scienceverse.github.io/metacheck/reference/file_types.md)
+  : File Types
+
+- [`get_orcid()`](https://scienceverse.github.io/metacheck/reference/get_orcid.md)
+  : Get ORCiD from Name
+
+- [`logpath()`](https://scienceverse.github.io/metacheck/reference/logpath.md)
+  : Get log path
+
+- [`message()`](https://scienceverse.github.io/metacheck/reference/message.md)
+  : Less scary green messages
+
+- [`module_find()`](https://scienceverse.github.io/metacheck/reference/module_find.md)
+  : Find a module by name or path
+
+- [`online()`](https://scienceverse.github.io/metacheck/reference/online.md)
+  : Check if the host of a URL is online
+
+- [`` `%||%` ``](https://scienceverse.github.io/metacheck/reference/op-null-default.md)
+  :
+
+  Default value for `NULL`
+
+- [`orcid_person()`](https://scienceverse.github.io/metacheck/reference/orcid_person.md)
+  : Get Person Details for ORCiD
+
+- [`paper()`](https://scienceverse.github.io/metacheck/reference/paper.md)
+  : Create a paper object
+
+- [`paperlist()`](https://scienceverse.github.io/metacheck/reference/paperlist.md)
+  : Create a paperlist object
+
+- [`pb()`](https://scienceverse.github.io/metacheck/reference/pb.md) :
+  Progress Bar
+
+- [`print(`*`<metacheck_module_help>`*`)`](https://scienceverse.github.io/metacheck/reference/print.metacheck_module_help.md)
+  : Print Module Help Object
+
+- [`print(`*`<metacheck_module_list>`*`)`](https://scienceverse.github.io/metacheck/reference/print.metacheck_module_list.md)
+  : Print Module List Object
+
+- [`print(`*`<metacheck_module_output>`*`)`](https://scienceverse.github.io/metacheck/reference/print.metacheck_module_output.md)
+  : Print Module Output
+
+- [`print(`*`<scivrs_paper>`*`)`](https://scienceverse.github.io/metacheck/reference/print.scivrs_paper.md)
+  : Print Paper Object
+
+- [`print(`*`<scivrs_paperlist>`*`)`](https://scienceverse.github.io/metacheck/reference/print.scivrs_paperlist.md)
+  : Print PaperList Object
+
+- [`rep_if()`](https://scienceverse.github.io/metacheck/reference/rep_if.md)
+  : Replace If
+
+- [`` `[`( ``*`<scivrs_paperlist>`*`)`](https://scienceverse.github.io/metacheck/reference/sub-.scivrs_paperlist.md)
+  : Subset PaperList Object
+
+- [`verbose()`](https://scienceverse.github.io/metacheck/reference/verbose.md)
+  : Set or get verbosity

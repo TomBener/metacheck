@@ -34,7 +34,7 @@
 
     <a class="navbar-brand me-2" href="../index.html">metacheck</a>
 
-    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Released version">0.0.1.0</small>
+    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Released version">0.1.0</small>
 
 
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -80,8 +80,8 @@
 <span><span class="co">#&gt; </span></span>
 <span><span class="co">#&gt; </span></span>
 <span><span class="co">#&gt; ***********************************************</span></span>
-<span><span class="co">#&gt; ✅ Welcome to metacheck beta version 0.0.1.0</span></span>
-<span><span class="co">#&gt; ✨ Your version is up to date.</span></span>
+<span><span class="co">#&gt; ✅ Welcome to metacheck beta version 0.1.0</span></span>
+<span><span class="co">#&gt; ✨ Your version newer than the current release</span></span>
 <span><span class="co">#&gt; </span></span>
 <span><span class="co">#&gt; ℹ For support and examples visit:</span></span>
 <span><span class="co">#&gt; https://scienceverse.github.io/metacheck/</span></span>
@@ -169,7 +169,7 @@ flagged by StatCheck.</p>
 <span><span class="co">#&gt; [1] "green"</span></span></code></pre></div>
 <div class="sourceCode" id="cb5"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fu"><a href="../reference/module_run.html">module_run</a></span><span class="op">(</span><span class="va">paper_clean</span>, <span class="st">"stat_effect_size"</span><span class="op">)</span><span class="op">$</span><span class="va">traffic_light</span></span>
-<span><span class="co">#&gt; [1] "green"</span></span></code></pre></div>
+<span><span class="co">#&gt; [1] "red"</span></span></code></pre></div>
 <div class="sourceCode" id="cb6"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fu"><a href="../reference/module_run.html">module_run</a></span><span class="op">(</span><span class="va">paper_clean</span>, <span class="st">"stat_check"</span><span class="op">)</span><span class="op">$</span><span class="va">traffic_light</span></span>
 <span><span class="co">#&gt; [1] "green"</span></span></code></pre></div>
@@ -249,7 +249,7 @@ test without an effect size:</p>
 <span><span class="va">result_es</span><span class="op">$</span><span class="va">traffic_light</span></span>
 <span><span class="co">#&gt; [1] "red"</span></span>
 <span><span class="va">result_es</span><span class="op">$</span><span class="va">summary_text</span></span>
-<span><span class="co">#&gt; [1] "We found 1 t-test and/or F-test where effect sizes are not reported."</span></span></code></pre></div>
+<span><span class="co">#&gt; [1] "We found 1 t-test and/or F-test where effect sizes are not reported. Check these tests in the table below, and consider adding effect sizes"</span></span></code></pre></div>
 <div class="sourceCode" id="cb10"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="co"># The test that is missing an effect size</span></span>
 <span><span class="va">result_es</span><span class="op">$</span><span class="va">table</span><span class="op">[</span><span class="va">result_es</span><span class="op">$</span><span class="va">table</span><span class="op">$</span><span class="va">es</span> <span class="op">==</span> <span class="cn">FALSE</span>, <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="st">"text"</span>, <span class="st">"test"</span><span class="op">)</span><span class="op">]</span></span>
@@ -260,7 +260,7 @@ test without an effect size:</p>
 <p>A clean paper for comparison — all tests have effect sizes:</p>
 <div class="sourceCode" id="cb11"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fu"><a href="../reference/module_run.html">module_run</a></span><span class="op">(</span><span class="va">paper_clean</span>, <span class="st">"stat_effect_size"</span><span class="op">)</span><span class="op">$</span><span class="va">summary_text</span></span>
-<span><span class="co">#&gt; [1] "All detected t-tests and F-tests had an effect size reported in the same sentence."</span></span></code></pre></div>
+<span><span class="co">#&gt; [1] "All effect sizes were reported, but some appear inconsistent with the test statistic. This can be because the effect size is not clearly labeled (e.g., d, instead of d_rm), because the effect sizes is not reported with enough precisions (e.g., 0.3 instead of 0.32), or because the effect size is incorrectly reported."</span></span></code></pre></div>
 <hr>
 </div>
 <div class="section level2">

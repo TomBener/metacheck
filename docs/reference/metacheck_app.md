@@ -1,7 +1,7 @@
-# Launch Shiny App
+# Launch Demo App
 
-Create a meta-study file interactively in a shiny app that runs locally
-in RStudio or your web browser (recommended).
+Launch the demo app with Upload/Demo, full module selection, and text
+search.
 
 ## Usage
 
@@ -17,7 +17,7 @@ metacheck_app(paper = NULL, quiet = FALSE, ...)
 
 - quiet:
 
-  whether to show the debugging messages in the console
+  whether to show debugging messages in the console
 
 - ...:
 
@@ -25,12 +25,12 @@ metacheck_app(paper = NULL, quiet = FALSE, ...)
 
 ## Value
 
-A paper object created or edited by the app
+A paper object (invisibly)
 
 ## Examples
 
 ``` r
 if (FALSE) { # \dontrun{
-s <- metacheck_app()
+metacheck_app()
 } # }
 ```

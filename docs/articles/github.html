@@ -34,7 +34,7 @@
 
     <a class="navbar-brand me-2" href="../index.html">metacheck</a>
 
-    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Released version">0.0.1.0</small>
+    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Released version">0.1.0</small>
 
 
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -80,8 +80,8 @@
 <span><span class="co">#&gt; </span></span>
 <span><span class="co">#&gt; </span></span>
 <span><span class="co">#&gt; ***********************************************</span></span>
-<span><span class="co">#&gt; ✅ Welcome to metacheck beta version 0.0.1.0</span></span>
-<span><span class="co">#&gt; ✨ Your version is up to date.</span></span>
+<span><span class="co">#&gt; ✅ Welcome to metacheck beta version 0.1.0</span></span>
+<span><span class="co">#&gt; ✨ Your version newer than the current release</span></span>
 <span><span class="co">#&gt; </span></span>
 <span><span class="co">#&gt; ℹ For support and examples visit:</span></span>
 <span><span class="co">#&gt; https://scienceverse.github.io/metacheck/</span></span>
@@ -152,8 +152,7 @@ of. repo name, and NULL if the repository in inaccessible.</p>
 <span><span class="co">#&gt; You can install the development version of metacheck from [GitHub](https://github.com/) with:</span></span>
 <span><span class="co">#&gt; </span></span>
 <span><span class="co">#&gt; ``` r</span></span>
-<span><span class="co">#&gt; # install.packages("remotes")</span></span>
-<span><span class="co">#&gt; remotes::install_github("scienceverse/metacheck")</span></span>
+<span><span class="co">#&gt; pak::pkg_install("scienceverse/metacheck")</span></span>
 <span><span class="co">#&gt; ```</span></span>
 <span><span class="co">#&gt; </span></span>
 <span><span class="co">#&gt; </span></span>
@@ -172,8 +171,8 @@ languages, as detected and classified by GitHub.</p>
 <div class="sourceCode" id="cb6"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fu"><a href="../reference/github_languages.html">github_languages</a></span><span class="op">(</span><span class="st">"scienceverse/metacheck"</span><span class="op">)</span></span>
 <span><span class="co">#&gt;                      repo   language    bytes</span></span>
-<span><span class="co">#&gt; 1  scienceverse/metacheck          R 53601558</span></span>
-<span><span class="co">#&gt; 2  scienceverse/metacheck       HTML 19383876</span></span>
+<span><span class="co">#&gt; 1  scienceverse/metacheck          R 55279951</span></span>
+<span><span class="co">#&gt; 2  scienceverse/metacheck       HTML 19385881</span></span>
 <span><span class="co">#&gt; 3  scienceverse/metacheck        Lua    92710</span></span>
 <span><span class="co">#&gt; 4  scienceverse/metacheck        TeX    40040</span></span>
 <span><span class="co">#&gt; 5  scienceverse/metacheck      Stata    12810</span></span>
@@ -287,14 +286,14 @@ directory, non-recursively.</p>
 <span><span class="co">#&gt; 10   133           md   text</span></span>
 <span><span class="co">#&gt; 11     0                 dir</span></span>
 <span><span class="co">#&gt; 12     0                 dir</span></span>
-<span><span class="co">#&gt; 13  2118                file</span></span>
+<span><span class="co">#&gt; 13  2121                file</span></span>
 <span><span class="co">#&gt; 14     0                 dir</span></span>
 <span><span class="co">#&gt; 15     0                 dir</span></span>
 <span><span class="co">#&gt; 16 34303           md   text</span></span>
 <span><span class="co">#&gt; 17  1407                file</span></span>
 <span><span class="co">#&gt; 18     0                 dir</span></span>
 <span><span class="co">#&gt; 19  3277                file</span></span>
-<span><span class="co">#&gt; 20 23166           md   text</span></span>
+<span><span class="co">#&gt; 20 23799           md   text</span></span>
 <span><span class="co">#&gt; 21     0                 dir</span></span>
 <span><span class="co">#&gt; 22     0                 dir</span></span>
 <span><span class="co">#&gt; 23  1267           md   text</span></span>
@@ -338,9 +337,11 @@ recursively can take a while.</p>
 <span><span class="co">#&gt; 7  scienceverse/metacheck scienceverse/metacheck    feature_request.md</span></span>
 <span><span class="co">#&gt; 8  scienceverse/metacheck scienceverse/metacheck wrong_check_result.md</span></span>
 <span><span class="co">#&gt; 9  scienceverse/metacheck scienceverse/metacheck          pkgdown.yaml</span></span>
-<span><span class="co">#&gt; 10 scienceverse/metacheck scienceverse/metacheck      teams-notify.yml</span></span>
-<span><span class="co">#&gt; 11 scienceverse/metacheck scienceverse/metacheck    test-coverage.yaml</span></span>
-<span><span class="co">#&gt; 12 scienceverse/metacheck scienceverse/metacheck   upload_packages.yml</span></span>
+<span><span class="co">#&gt; 10 scienceverse/metacheck scienceverse/metacheck            static.yml</span></span>
+<span><span class="co">#&gt; 11 scienceverse/metacheck scienceverse/metacheck      teams-notify.yml</span></span>
+<span><span class="co">#&gt; 12 scienceverse/metacheck scienceverse/metacheck    test-coverage.yaml</span></span>
+<span><span class="co">#&gt; 13 scienceverse/metacheck scienceverse/metacheck   upload_packages.yml</span></span>
+<span><span class="co">#&gt; 14 scienceverse/metacheck scienceverse/metacheck           website.yml</span></span>
 <span><span class="co">#&gt;                                            path</span></span>
 <span><span class="co">#&gt; 1                            .github/.gitignore</span></span>
 <span><span class="co">#&gt; 2                            .github/CODEOWNERS</span></span>
@@ -351,9 +352,11 @@ recursively can take a while.</p>
 <span><span class="co">#&gt; 7     .github/ISSUE_TEMPLATE/feature_request.md</span></span>
 <span><span class="co">#&gt; 8  .github/ISSUE_TEMPLATE/wrong_check_result.md</span></span>
 <span><span class="co">#&gt; 9                .github/workflows/pkgdown.yaml</span></span>
-<span><span class="co">#&gt; 10           .github/workflows/teams-notify.yml</span></span>
-<span><span class="co">#&gt; 11         .github/workflows/test-coverage.yaml</span></span>
-<span><span class="co">#&gt; 12        .github/workflows/upload_packages.yml</span></span>
+<span><span class="co">#&gt; 10                 .github/workflows/static.yml</span></span>
+<span><span class="co">#&gt; 11           .github/workflows/teams-notify.yml</span></span>
+<span><span class="co">#&gt; 12         .github/workflows/test-coverage.yaml</span></span>
+<span><span class="co">#&gt; 13        .github/workflows/upload_packages.yml</span></span>
+<span><span class="co">#&gt; 14                .github/workflows/website.yml</span></span>
 <span><span class="co">#&gt;                                                                                                  download_url</span></span>
 <span><span class="co">#&gt; 1                            https://raw.githubusercontent.com/scienceverse/metacheck/main/.github/.gitignore</span></span>
 <span><span class="co">#&gt; 2                            https://raw.githubusercontent.com/scienceverse/metacheck/main/.github/CODEOWNERS</span></span>
@@ -364,9 +367,11 @@ recursively can take a while.</p>
 <span><span class="co">#&gt; 7     https://raw.githubusercontent.com/scienceverse/metacheck/main/.github/ISSUE_TEMPLATE/feature_request.md</span></span>
 <span><span class="co">#&gt; 8  https://raw.githubusercontent.com/scienceverse/metacheck/main/.github/ISSUE_TEMPLATE/wrong_check_result.md</span></span>
 <span><span class="co">#&gt; 9                https://raw.githubusercontent.com/scienceverse/metacheck/main/.github/workflows/pkgdown.yaml</span></span>
-<span><span class="co">#&gt; 10           https://raw.githubusercontent.com/scienceverse/metacheck/main/.github/workflows/teams-notify.yml</span></span>
-<span><span class="co">#&gt; 11         https://raw.githubusercontent.com/scienceverse/metacheck/main/.github/workflows/test-coverage.yaml</span></span>
-<span><span class="co">#&gt; 12        https://raw.githubusercontent.com/scienceverse/metacheck/main/.github/workflows/upload_packages.yml</span></span>
+<span><span class="co">#&gt; 10                 https://raw.githubusercontent.com/scienceverse/metacheck/main/.github/workflows/static.yml</span></span>
+<span><span class="co">#&gt; 11           https://raw.githubusercontent.com/scienceverse/metacheck/main/.github/workflows/teams-notify.yml</span></span>
+<span><span class="co">#&gt; 12         https://raw.githubusercontent.com/scienceverse/metacheck/main/.github/workflows/test-coverage.yaml</span></span>
+<span><span class="co">#&gt; 13        https://raw.githubusercontent.com/scienceverse/metacheck/main/.github/workflows/upload_packages.yml</span></span>
+<span><span class="co">#&gt; 14                https://raw.githubusercontent.com/scienceverse/metacheck/main/.github/workflows/website.yml</span></span>
 <span><span class="co">#&gt;    size       ext   type</span></span>
 <span><span class="co">#&gt; 1     7 gitignore config</span></span>
 <span><span class="co">#&gt; 2    12             file</span></span>
@@ -377,9 +382,11 @@ recursively can take a while.</p>
 <span><span class="co">#&gt; 7   417        md   text</span></span>
 <span><span class="co">#&gt; 8   732        md   text</span></span>
 <span><span class="co">#&gt; 9  1380      yaml config</span></span>
-<span><span class="co">#&gt; 10  521       yml config</span></span>
-<span><span class="co">#&gt; 11 1874      yaml config</span></span>
-<span><span class="co">#&gt; 12 3362       yml config</span></span></code></pre></div>
+<span><span class="co">#&gt; 10 1332       yml config</span></span>
+<span><span class="co">#&gt; 11  521       yml config</span></span>
+<span><span class="co">#&gt; 12 2068      yaml config</span></span>
+<span><span class="co">#&gt; 13 3362       yml config</span></span>
+<span><span class="co">#&gt; 14 1332       yml config</span></span></code></pre></div>
 </div>
 <div class="section level2">
 <h2 id="github_info">github_info<a class="anchor" aria-label="anchor" href="#github_info"></a>
