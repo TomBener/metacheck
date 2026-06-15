@@ -48,9 +48,14 @@
 <li>
 <a href="https://r-pkgs.org/" class="external-link">R Packages</a> for all the details</li>
 </ul><div class="section level2">
+<h2 id="contributorship-model">Contributorship model<a class="anchor" aria-label="anchor" href="#contributorship-model"></a></h2>
+<p>We will acknowledge substantial contributions to code (e.g., contribution of a new module) as contributors (“ctb” role) in the DESCRIPTION. Smaller bug fixes may be acknowledged in the NEWS.md file. An authorship (“aut” role) may be earned by sustained major contributions of code or intellectual input to the project.</p>
+</div>
+<div class="section level2">
 <h2 id="adding-a-new-built-in-module">Adding a new built-in module<a class="anchor" aria-label="anchor" href="#adding-a-new-built-in-module"></a></h2>
+<p>Metacheck is meant to be modular and for users to be able to buil their own libraries of modules that are most relevant to their purposes. If you have an idea for a new module that you think most users of metacheck would benefit from, we encourage you to reach out to use at <a href="mailto:metacheck@scienceverse.org">metacheck@scienceverse.org</a> first to discuss. If you have been invited to contribute a modeule, please follow the steps below.,</p>
 <ul class="task-list"><li><p><label><input type="checkbox">See the <a href="https://www.scienceverse.org/metacheck/articles/creating_modules.html" class="external-link">Creating Modules vignette</a></label></p></li>
-<li><p><label><input type="checkbox">Fork or branch the dev branch of metacheck (or main if there is no current dev branch) with a name like <code>dev-module-modname</code></label></p></li>
+<li><p><label><input type="checkbox">Fork or branch the <strong>dev</strong> branch of metacheck with a name like <code>dev-module-modname</code></label></p></li>
 <li><p><label><input type="checkbox">Use the template helper! <code><a href="reference/module_template.html">module_template()</a></code></label></p></li>
 <li><p><label><input type="checkbox">Give it a name that is consistent in style with existing modules (e.g., 1-2 words separated by underscores, noun_verb or category_noun)</label></p></li>
 <li><p><label><input type="checkbox">Save the file in <code>inst/modules/</code></label></p></li>
@@ -81,18 +86,19 @@
 </li>
 <li><p><label><input type="checkbox">Do not add the module to report defaults yourself – ask @debruine or @lakens first</label></p></li>
 <li><p><label><input type="checkbox">Validate your module on a set of papers</label></p></li>
-<li><p><label><input type="checkbox">Submit a pull request with changes to only your module file and its associated test file, link to or explain the validation results in the request, and tag @debruine for review</label></p></li>
+<li><p><label><input type="checkbox">Submit a pull request to the <strong>dev</strong> branch with changes to only your module file and its associated test file, link to or explain the validation results in the request, and tag @debruine for review</label></p></li>
 </ul></div>
 <div class="section level2">
 <h2 id="adding-a-new-function">Adding a new function<a class="anchor" aria-label="anchor" href="#adding-a-new-function"></a></h2>
-<ul class="task-list"><li><label><input type="checkbox">Add the new function to an appropriate file under R/ – make a new file if appropriate (<a href="https://style.tidyverse.org/package-files.html#names" class="external-link">naming advice</a>)</label></li>
+<ul class="task-list"><li><label><input type="checkbox">Fork or branch the <strong>dev</strong> branch of metacheck with a name like <code>dev-funcname</code></label></li>
+<li><label><input type="checkbox">Add the new function to an appropriate file under R/ – make a new file if appropriate (<a href="https://style.tidyverse.org/package-files.html#names" class="external-link">naming advice</a>)</label></li>
 <li><label><input type="checkbox">Make sure it has complete roxygen documentation (Code &gt; Insert Roxygen Skeleton)</label></li>
 <li><label><input type="checkbox">Run <code>devtools::document(roclets = c('rd', 'collate', 'namespace'))</code> (ctrl-cmd-D) to add the documentation</label></li>
 <li><label><input type="checkbox">Add unit tests (to the existing test file if adding the function to an existing R file, or make a new one) - THIS IS REQUIRED!</label></li>
 <li><label><input type="checkbox">Run all tests with <code><a href="https://devtools.r-lib.org/reference/test.html" class="external-link">devtools::test()</a></code> to make sure you didn’t mess up anything (in tests/testthat/helpers.R set <code>quick = FALSE</code> to run all tests)</label></li>
 <li><label><input type="checkbox">If internal (only used in other functions, never by a user), make sure you include <code>@keywords internal</code> in the roxygen documentation</label></li>
 <li><label><input type="checkbox">Run CMD check with <code><a href="https://devtools.r-lib.org/reference/check.html" class="external-link">devtools::check()</a></code> and fix any warnings related to your function (there are always a few notes, ask Lisa if you aren’t sure about a warning)</label></li>
-<li><label><input type="checkbox">Submit a pull request with changes to only your function file and its associated documentation and test files, tagging @debruine for review</label></li>
+<li><label><input type="checkbox">Submit a pull request to the <strong>dev</strong> branch with changes to only your function file and its associated documentation and test files, tagging @debruine for review</label></li>
 <li>
 <label><input type="checkbox">If the code is acceptable, we may ask you to do the following:</label>
 <ul class="task-list"><li><label><input type="checkbox">If not internal, add it to the appropriate category in <code>pkgdown/_pkgdown.yml</code></label></li>
@@ -114,6 +120,19 @@
 <h3 id="helper-files">Helper files<a class="anchor" aria-label="anchor" href="#helper-files"></a></h3>
 <p>If you need to define functions for your tests, put the functions in <code>tests/testthat/helper.R</code>.</p>
 <p>If you need to provide test files (e.g., JSON for a paper that shows a specific thing), put them under <code>tests/testthat/fixtures/</code>.</p>
+</div>
+<div class="section level3">
+<h3 id="mocking">Mocking<a class="anchor" aria-label="anchor" href="#mocking"></a></h3>
+<p>If your test requires external resources, once the tests are passing, capture them using the third <code>mock</code> argument to our custom version of test_that(). (This is a workaround for the fact that httptest2 doesn’t mock parallel httr2 requests, so don’t use the httptest2 functions directly.) This will save files to tests/testthat/apis/ to mock the response without needing a web connection.</p>
+<div class="sourceCode" id="cb4"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="fu">test_that</span><span class="op">(</span><span class="st">"describe"</span>, <span class="op">{</span></span>
+<span>  <span class="co"># code</span></span>
+<span><span class="op">}</span>, mock <span class="op">=</span> <span class="st">"capture"</span><span class="op">)</span></span></code></pre></div>
+<p>After you’ve captured the response, change the value to “mock” and check that the test still passes. It should be much faster and not require an internet connection. If the function includes a call to <code><a href="reference/online.html">online()</a></code> to check the status of the resource, you will need to locally mock this function as below.</p>
+<div class="sourceCode" id="cb5"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="fu">testthat</span><span class="fu">::</span><span class="fu"><a href="https://testthat.r-lib.org/reference/local_mocked_bindings.html" class="external-link">local_mocked_bindings</a></span><span class="op">(</span></span>
+<span>  online <span class="op">=</span> \<span class="op">(</span><span class="va">...</span><span class="op">)</span> <span class="cn">TRUE</span></span>
+<span><span class="op">)</span></span></code></pre></div>
 </div>
 </div>
 </div>
