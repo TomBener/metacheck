@@ -15,6 +15,7 @@ knitr::opts_chunk$set(
 ```
 
 ```{r setup}
+#| include: FALSE
 devtools::load_all(".")
 ```
 
@@ -63,6 +64,23 @@ You can write more detailed help under the tag `@details`, which will be shown w
 
 If you have experience writing R functions with roxygen, you can also omit the `@description` and `@details` tags and rely on paragraph spacing to distinguish description from details.
 
+### Validation
+
+Our [values statement](https://www.scienceverse.org/metacheck/#our-values) lists quality control as a core value. Validation information gets special styling in the report, so is put at the end of the details section and marked with `<validation>` at the start and `</validation>` at the end. 
+```{r}
+#' <validation>
+#' In a sample of P papers with I instances of {thing you are checking}, 
+#' TP were correctly detected (true positives), 
+#' FN were missed (false negatives) and 
+#' FP were incorrectly detected (false positives). 
+#' Overall, among all instances flagged as {thing}, 
+#' (TP/(TP+FP))% were correct (positive predictive value) and 
+#' (TP/I)% of true instances were detected (sensitivity).
+#' </validation>
+```
+
+The example above works well for modules that detect a practice that may happen zero or more times per paper. Communicating validation information clearly and succinctly is challenging, so feel free to use other wordings. We encourage you to also include a link to a repository that contains more detailed information and evidence.
+
 ### Keywords
 
 Choose one section category for your module to be displayed under in reports.
@@ -102,7 +120,7 @@ If you are using packages other than `metacheck`, add each with an `@import` sta
 #' @import tidyr
 ```
 
-Technically, you can then use functions from these packages in your function code without the package name prefix, but it is still best practice to use the package name prefix for all functions, like `dplyr::case_when()`. 
+Technically, you can then use functions from these packages in your function code without the package name prefix, but it is still best practice to use the package name prefix for all functions, like `dplyr::case_when()`, and we require this for contributed modules. 
 
 ### Parameters
 
@@ -172,7 +190,7 @@ for (step in steps) {
 }
 ```
 
-If you dn't know how many steps there will be in a process, you can use the spinner version:
+If you don't know how many steps there will be in a process, you can use the spinner version:
 
 ```{r}
 #| eval: false
@@ -218,7 +236,14 @@ Most modules will need to structure their output in a table that can be shown in
   table <- text_search(paper, pattern)
 ```
 
-You will need to make sure that your module works with both single paper object sand lists of paper objects. The metacheck functions `text_search()` and `llm()` are already vectorised for paper lists. 
+You will need to make sure that your module works with both single paper objects and lists of paper objects. The metacheck functions `text_search()` and `llm()` are already vectorised for paper lists. 
+
+```{r}
+#| eval: false
+module_run(psychsci[[1]], "module_name") # 1 paper
+module_run(psychsci[1:10], "module_name") # 10 papers
+```
+
 
 ### Summary Table
 
@@ -245,26 +270,26 @@ na_replace <- list(
 
 ### Traffic Light
 
-The traffic lights are used in single-paper reports to give a quick visual overview of the module results. There are 5 kinds of traffic lights:
+The traffic lights are used in single-paper reports to give a quick visual overview of the module results. There are 6 kinds of traffic lights:
 
 <style>
-  h2.na::before { content: '⚪️ '; }
-  h2.fail::before { content: '⚫️ '; }
-  h2.info::before { content: '🔵 '; }
-  h2.red::before { content: '🔴 '; }
-  h2.yellow::before { content: '🟡 '; }
-  h2.green::before { content: '🟢 '; }
+  h2.na::before { content: '`r emojis$tl_na` '; }
+  h2.fail::before { content: '`r emojis$tl_fail` '; }
+  h2.info::before { content: '`r emojis$tl_info` '; }
+  h2.red::before { content: '`r emojis$tl_red` '; }
+  h2.yellow::before { content: '`r emojis$tl_yellow` '; }
+  h2.green::before { content: '`r emojis$tl_green` '; }
 </style>
 
 
-🟢 no problems detected;  
-🟡 something to check;  
-🔴 possible problems detected;  
-🔵 informational only;  
-⚪️ not applicable;  
-⚫️ check failed
+`r emojis$tl_green` no problems detected;  
+`r emojis$tl_yellow` something to check;  
+`r emojis$tl_red` possible problems detected;  
+`r emojis$tl_info` informational only;  
+`r emojis$tl_na`️ not applicable;  
+`r emojis$tl_fail`️ check failed
 
-You will need to write some code to determine which traffic lights apply to your case. If you don't include a traffic light, but do include a `table` in the returned list, the following rule will be applied for the traffic light.
+You will need to write some code to determine which traffic lights apply to your case. If you don't include a traffic light, but do include a `table` in the returned list, the following rule will be applied for the traffic light. The failed traffic light will be automatically applied if your code produces an error. 
 
 ```{r, eval = FALSE}
   ## traffic light ----
