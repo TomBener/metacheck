@@ -237,7 +237,7 @@ paper$bib[1, ] |> str()
     #>  $ container  : chr "The Economic Journal"
     #>  $ bib_id     : int 0
     #>  $ year_suffix: chr ""
-    #>  $ text_id    : int 240
+    #>  $ text_id    : int 243
 
 The `bib_match` table contains CrossRef or DataCite entries for each
 item in the reference list, if a match was found. In this table, the
@@ -253,7 +253,7 @@ str(bib_match_1)
     #>  $ bib_id    : int 0
     #>  $ service   : chr "crossref"
     #>  $ service_id: chr NA
-    #>  $ score     : num 99.7
+    #>  $ score     : num 96.9
     #>  $ bib_type  : chr "article"
     #>  $ doi       : chr "10.2307/2234133"
     #>  $ title     : chr "Impure Altruism and Donations to Public Goods: A Theory of Warm-Glow Giving"
@@ -262,7 +262,9 @@ str(bib_match_1)
     #>   .. ..$ given : chr "James"
     #>   .. ..$ family: chr "Andreoni"
     #>  $ editors   :List of 1
-    #>   ..$ : list()
+    #>   ..$ :'data.frame': 0 obs. of  2 variables:
+    #>   .. ..$ given : chr 
+    #>   .. ..$ family: chr 
     #>  $ publisher : chr "Oxford University Press (OUP)"
     #>  $ year      : int 1990
     #>  $ date      : chr NA

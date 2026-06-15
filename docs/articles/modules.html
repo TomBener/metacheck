@@ -34,7 +34,7 @@
 
     <a class="navbar-brand me-2" href="../index.html">metacheck</a>
 
-    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Released version">0.0.1.0</small>
+    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Released version">0.1.0</small>
 
 
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -123,8 +123,8 @@ significant’.</li>
 <li>repo_check: This module retrieves information from
 repositories.</li>
 <li>stat_check: Check consistency of p-values and test statistics</li>
-<li>stat_effect_size: The Effect Size module checks for effect sizes in
-t-tests and F-tests.</li>
+<li>stat_effect_size: The Effect Size module checks if effect sizes are
+correctly reported in t-tests and F-tests.</li>
 <li>stat_p_exact: List any p-values reported with insufficient precision
 (e.g., p &lt; .05 or p = n.s.) or reported as exactly zero (e.g., p =
 .000).</li>
@@ -299,26 +299,26 @@ list of 250 open-access papers from Psychological Science.</p>
 <pre><code><span><span class="co">#&gt; <span style="color: #949494;"># A tibble: 20 × 11</span></span></span>
 <span><span class="co">#&gt;    text    text_id paragraph_id section_id page_number formatted paper_id header</span></span>
 <span><span class="co">#&gt;    <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>     <span style="color: #949494; font-style: italic;">&lt;int&gt;</span>        <span style="color: #949494; font-style: italic;">&lt;int&gt;</span>      <span style="color: #949494; font-style: italic;">&lt;int&gt;</span>       <span style="color: #949494; font-style: italic;">&lt;int&gt;</span> <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>     <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>    <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span> </span></span>
-<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 1</span> <span style="color: #949494;">"</span>p = .…      63           15          6          <span style="color: #BB0000;">NA</span>  <span style="color: #BB0000;">NA</span>       0956797… Quest…</span></span>
-<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 2</span> <span style="color: #949494;">"</span>p = .…      63           15          6          <span style="color: #BB0000;">NA</span>  <span style="color: #BB0000;">NA</span>       0956797… Quest…</span></span>
-<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 3</span> <span style="color: #949494;">"</span>p &lt; .…     101           24          9          <span style="color: #BB0000;">NA</span> <span style="color: #949494;">"</span>We obse… 0956797… Resul…</span></span>
-<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 4</span> <span style="color: #949494;">"</span>p &lt; .…     102           24          9          <span style="color: #BB0000;">NA</span> <span style="color: #949494;">"</span>The mai… 0956797… Resul…</span></span>
-<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 5</span> <span style="color: #949494;">"</span>p = .…     102           24          9          <span style="color: #BB0000;">NA</span> <span style="color: #949494;">"</span>The mai… 0956797… Resul…</span></span>
-<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 6</span> <span style="color: #949494;">"</span>p = .…     102           24          9          <span style="color: #BB0000;">NA</span> <span style="color: #949494;">"</span>The mai… 0956797… Resul…</span></span>
-<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 7</span> <span style="color: #949494;">"</span>p = .…     103           24          9          <span style="color: #BB0000;">NA</span>  <span style="color: #BB0000;">NA</span>       0956797… Resul…</span></span>
-<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 8</span> <span style="color: #949494;">"</span>p = .…     103           24          9          <span style="color: #BB0000;">NA</span>  <span style="color: #BB0000;">NA</span>       0956797… Resul…</span></span>
-<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 9</span> <span style="color: #949494;">"</span>p = .…     104           24          9          <span style="color: #BB0000;">NA</span> <span style="color: #949494;">"</span>We also… 0956797… Resul…</span></span>
-<span><span class="co">#&gt; <span style="color: #BCBCBC;">10</span> <span style="color: #949494;">"</span>p =.3…     104           24          9          <span style="color: #BB0000;">NA</span> <span style="color: #949494;">"</span>We also… 0956797… Resul…</span></span>
-<span><span class="co">#&gt; <span style="color: #BCBCBC;">11</span> <span style="color: #949494;">"</span>p = .…     107           25          9          <span style="color: #BB0000;">NA</span> <span style="color: #949494;">"</span>Yes-the… 0956797… Resul…</span></span>
-<span><span class="co">#&gt; <span style="color: #BCBCBC;">12</span> <span style="color: #949494;">"</span>p &lt;.0…     107           25          9          <span style="color: #BB0000;">NA</span> <span style="color: #949494;">"</span>Yes-the… 0956797… Resul…</span></span>
-<span><span class="co">#&gt; <span style="color: #BCBCBC;">13</span> <span style="color: #949494;">"</span>p = .…     109           26          9          <span style="color: #BB0000;">NA</span>  <span style="color: #BB0000;">NA</span>       0956797… Resul…</span></span>
-<span><span class="co">#&gt; <span style="color: #BCBCBC;">14</span> <span style="color: #949494;">"</span>p = .…     109           26          9          <span style="color: #BB0000;">NA</span>  <span style="color: #BB0000;">NA</span>       0956797… Resul…</span></span>
-<span><span class="co">#&gt; <span style="color: #BCBCBC;">15</span> <span style="color: #949494;">"</span>p = .…     109           26          9          <span style="color: #BB0000;">NA</span>  <span style="color: #BB0000;">NA</span>       0956797… Resul…</span></span>
-<span><span class="co">#&gt; <span style="color: #BCBCBC;">16</span> <span style="color: #949494;">"</span>p = .…     109           26          9          <span style="color: #BB0000;">NA</span>  <span style="color: #BB0000;">NA</span>       0956797… Resul…</span></span>
-<span><span class="co">#&gt; <span style="color: #BCBCBC;">17</span> <span style="color: #949494;">"</span>p &lt; .…     110           26          9          <span style="color: #BB0000;">NA</span> <span style="color: #949494;">"</span>Results… 0956797… Resul…</span></span>
-<span><span class="co">#&gt; <span style="color: #BCBCBC;">18</span> <span style="color: #949494;">"</span>p = .…     110           26          9          <span style="color: #BB0000;">NA</span> <span style="color: #949494;">"</span>Results… 0956797… Resul…</span></span>
-<span><span class="co">#&gt; <span style="color: #BCBCBC;">19</span> <span style="color: #949494;">"</span>p = .…     110           26          9          <span style="color: #BB0000;">NA</span> <span style="color: #949494;">"</span>Results… 0956797… Resul…</span></span>
-<span><span class="co">#&gt; <span style="color: #BCBCBC;">20</span> <span style="color: #949494;">"</span>p = .…     110           26          9          <span style="color: #BB0000;">NA</span> <span style="color: #949494;">"</span>Results… 0956797… Resul…</span></span>
+<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 1</span> <span style="color: #949494;">"</span>p = .…      62           15          6          <span style="color: #BB0000;">NA</span>  <span style="color: #BB0000;">NA</span>       0956797… Quest…</span></span>
+<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 2</span> <span style="color: #949494;">"</span>p = .…      62           15          6          <span style="color: #BB0000;">NA</span>  <span style="color: #BB0000;">NA</span>       0956797… Quest…</span></span>
+<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 3</span> <span style="color: #949494;">"</span>p &lt; .…     100           24          9          <span style="color: #BB0000;">NA</span> <span style="color: #949494;">"</span>We obse… 0956797… Resul…</span></span>
+<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 4</span> <span style="color: #949494;">"</span>p &lt; .…     101           24          9          <span style="color: #BB0000;">NA</span> <span style="color: #949494;">"</span>The mai… 0956797… Resul…</span></span>
+<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 5</span> <span style="color: #949494;">"</span>p = .…     101           24          9          <span style="color: #BB0000;">NA</span> <span style="color: #949494;">"</span>The mai… 0956797… Resul…</span></span>
+<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 6</span> <span style="color: #949494;">"</span>p = .…     101           24          9          <span style="color: #BB0000;">NA</span> <span style="color: #949494;">"</span>The mai… 0956797… Resul…</span></span>
+<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 7</span> <span style="color: #949494;">"</span>p = .…     102           24          9          <span style="color: #BB0000;">NA</span>  <span style="color: #BB0000;">NA</span>       0956797… Resul…</span></span>
+<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 8</span> <span style="color: #949494;">"</span>p = .…     102           24          9          <span style="color: #BB0000;">NA</span>  <span style="color: #BB0000;">NA</span>       0956797… Resul…</span></span>
+<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 9</span> <span style="color: #949494;">"</span>p = .…     103           24          9          <span style="color: #BB0000;">NA</span> <span style="color: #949494;">"</span>We also… 0956797… Resul…</span></span>
+<span><span class="co">#&gt; <span style="color: #BCBCBC;">10</span> <span style="color: #949494;">"</span>p =.3…     103           24          9          <span style="color: #BB0000;">NA</span> <span style="color: #949494;">"</span>We also… 0956797… Resul…</span></span>
+<span><span class="co">#&gt; <span style="color: #BCBCBC;">11</span> <span style="color: #949494;">"</span>p = .…     106           25          9          <span style="color: #BB0000;">NA</span> <span style="color: #949494;">"</span>Yes-the… 0956797… Resul…</span></span>
+<span><span class="co">#&gt; <span style="color: #BCBCBC;">12</span> <span style="color: #949494;">"</span>p &lt;.0…     106           25          9          <span style="color: #BB0000;">NA</span> <span style="color: #949494;">"</span>Yes-the… 0956797… Resul…</span></span>
+<span><span class="co">#&gt; <span style="color: #BCBCBC;">13</span> <span style="color: #949494;">"</span>p = .…     108           26          9          <span style="color: #BB0000;">NA</span>  <span style="color: #BB0000;">NA</span>       0956797… Resul…</span></span>
+<span><span class="co">#&gt; <span style="color: #BCBCBC;">14</span> <span style="color: #949494;">"</span>p = .…     108           26          9          <span style="color: #BB0000;">NA</span>  <span style="color: #BB0000;">NA</span>       0956797… Resul…</span></span>
+<span><span class="co">#&gt; <span style="color: #BCBCBC;">15</span> <span style="color: #949494;">"</span>p = .…     108           26          9          <span style="color: #BB0000;">NA</span>  <span style="color: #BB0000;">NA</span>       0956797… Resul…</span></span>
+<span><span class="co">#&gt; <span style="color: #BCBCBC;">16</span> <span style="color: #949494;">"</span>p = .…     108           26          9          <span style="color: #BB0000;">NA</span>  <span style="color: #BB0000;">NA</span>       0956797… Resul…</span></span>
+<span><span class="co">#&gt; <span style="color: #BCBCBC;">17</span> <span style="color: #949494;">"</span>p &lt; .…     109           26          9          <span style="color: #BB0000;">NA</span> <span style="color: #949494;">"</span>Results… 0956797… Resul…</span></span>
+<span><span class="co">#&gt; <span style="color: #BCBCBC;">18</span> <span style="color: #949494;">"</span>p = .…     109           26          9          <span style="color: #BB0000;">NA</span> <span style="color: #949494;">"</span>Results… 0956797… Resul…</span></span>
+<span><span class="co">#&gt; <span style="color: #BCBCBC;">19</span> <span style="color: #949494;">"</span>p = .…     109           26          9          <span style="color: #BB0000;">NA</span> <span style="color: #949494;">"</span>Results… 0956797… Resul…</span></span>
+<span><span class="co">#&gt; <span style="color: #BCBCBC;">20</span> <span style="color: #949494;">"</span>p = .…     109           26          9          <span style="color: #BB0000;">NA</span> <span style="color: #949494;">"</span>Results… 0956797… Resul…</span></span>
 <span><span class="co">#&gt; <span style="color: #949494;"># ℹ 3 more variables: section_type &lt;chr&gt;, p_comp &lt;chr&gt;, p_value &lt;dbl&gt;</span></span></span></code></pre>
 <p>If you run this module on all 250 papers, you will get more rows than
 you probably want to print in the full table one row for every p-value
@@ -362,12 +362,12 @@ false positives when text in the paper is formatted as a valid URL.</p>
 <pre><code><span><span class="co">#&gt; <span style="color: #949494;"># A tibble: 6 × 9</span></span></span>
 <span><span class="co">#&gt;   text     text_id paragraph_id section_id page_number formatted paper_id header</span></span>
 <span><span class="co">#&gt;   <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>      <span style="color: #949494; font-style: italic;">&lt;int&gt;</span>        <span style="color: #949494; font-style: italic;">&lt;int&gt;</span>      <span style="color: #949494; font-style: italic;">&lt;int&gt;</span>       <span style="color: #949494; font-style: italic;">&lt;int&gt;</span> <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>     <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>    <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span> </span></span>
-<span><span class="co">#&gt; <span style="color: #BCBCBC;">1</span> 3.9.1.7       39            9          3          <span style="color: #BB0000;">NA</span> <span style="color: #949494;">"</span>Accordi… 0956797… Parti…</span></span>
-<span><span class="co">#&gt; <span style="color: #BCBCBC;">2</span> https:/…      80           19          8          <span style="color: #BB0000;">NA</span> <span style="color: #949494;">"</span>Analysi… 0956797… Analy…</span></span>
-<span><span class="co">#&gt; <span style="color: #BCBCBC;">3</span> https:/…     130           30         13          <span style="color: #BB0000;">NA</span> <span style="color: #949494;">"</span>All dat… 0956797… Open …</span></span>
-<span><span class="co">#&gt; <span style="color: #BCBCBC;">4</span> https:/…     131           31         13          <span style="color: #BB0000;">NA</span> <span style="color: #949494;">"</span>The des… 0956797… Open …</span></span>
-<span><span class="co">#&gt; <span style="color: #BCBCBC;">5</span> http://…     133           31         13          <span style="color: #BB0000;">NA</span> <span style="color: #949494;">"</span>More in… 0956797… Open …</span></span>
-<span><span class="co">#&gt; <span style="color: #BCBCBC;">6</span> http://…     138           34         16          <span style="color: #BB0000;">NA</span> <span style="color: #949494;">"</span>Additio… 0956797… Suppl…</span></span>
+<span><span class="co">#&gt; <span style="color: #BCBCBC;">1</span> 3.9.1.7       38            9          3          <span style="color: #BB0000;">NA</span> <span style="color: #949494;">"</span>Accordi… 0956797… Parti…</span></span>
+<span><span class="co">#&gt; <span style="color: #BCBCBC;">2</span> https:/…      79           19          8          <span style="color: #BB0000;">NA</span> <span style="color: #949494;">"</span>Analysi… 0956797… Analy…</span></span>
+<span><span class="co">#&gt; <span style="color: #BCBCBC;">3</span> https:/…     129           30         13          <span style="color: #BB0000;">NA</span> <span style="color: #949494;">"</span>All dat… 0956797… Open …</span></span>
+<span><span class="co">#&gt; <span style="color: #BCBCBC;">4</span> https:/…     130           31         13          <span style="color: #BB0000;">NA</span> <span style="color: #949494;">"</span>The des… 0956797… Open …</span></span>
+<span><span class="co">#&gt; <span style="color: #BCBCBC;">5</span> http://…     132           31         13          <span style="color: #BB0000;">NA</span> <span style="color: #949494;">"</span>More in… 0956797… Open …</span></span>
+<span><span class="co">#&gt; <span style="color: #BCBCBC;">6</span> http://…     137           34         16          <span style="color: #BB0000;">NA</span> <span style="color: #949494;">"</span>Additio… 0956797… Suppl…</span></span>
 <span><span class="co">#&gt; <span style="color: #949494;"># ℹ 1 more variable: section_type &lt;chr&gt;</span></span></span></code></pre>
 <div class="sourceCode" id="cb31"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="va">all_urls_ps</span> <span class="op">&lt;-</span> <span class="fu"><a href="../reference/module_run.html">module_run</a></span><span class="op">(</span><span class="va">psychsci</span>, <span class="st">"all_urls"</span><span class="op">)</span></span>
@@ -380,7 +380,7 @@ false positives when text in the paper is formatted as a valid URL.</p>
 <span><span class="co">#&gt; 4    0956797614557697    6</span></span>
 <span><span class="co">#&gt; 5    0956797614560771    0</span></span>
 <span><span class="co">#&gt; 6    0956797614566469    5</span></span>
-<span><span class="co">#&gt; 7    0956797615569001    9</span></span>
+<span><span class="co">#&gt; 7    0956797615569001    7</span></span>
 <span><span class="co">#&gt; 8    0956797615569889    3</span></span>
 <span><span class="co">#&gt; 9    0956797615583071    4</span></span>
 <span><span class="co">#&gt; 10   0956797615588467    2</span></span>
@@ -419,7 +419,7 @@ false positives when text in the paper is formatted as a valid URL.</p>
 <span><span class="co">#&gt; 43   0956797617737129   31</span></span>
 <span><span class="co">#&gt; 44   0956797617739368    9</span></span>
 <span><span class="co">#&gt; 45   0956797617740685    3</span></span>
-<span><span class="co">#&gt; 46   0956797617744542   19</span></span>
+<span><span class="co">#&gt; 46   0956797617744542   23</span></span>
 <span><span class="co">#&gt; 47   0956797618755322    7</span></span>
 <span><span class="co">#&gt; 48   0956797618760197    4</span></span>
 <span><span class="co">#&gt; 49   0956797618772822    4</span></span>
@@ -431,8 +431,8 @@ false positives when text in the paper is formatted as a valid URL.</p>
 <span><span class="co">#&gt; 55   0956797618815482    0</span></span>
 <span><span class="co">#&gt; 56   0956797618815488    1</span></span>
 <span><span class="co">#&gt; 57   0956797618823540    2</span></span>
-<span><span class="co">#&gt; 58   0956797619830326   20</span></span>
-<span><span class="co">#&gt; 59   0956797619830329   11</span></span>
+<span><span class="co">#&gt; 58   0956797619830326   18</span></span>
+<span><span class="co">#&gt; 59   0956797619830329   10</span></span>
 <span><span class="co">#&gt; 60   0956797619831964    4</span></span>
 <span><span class="co">#&gt; 61   0956797619833325    2</span></span>
 <span><span class="co">#&gt; 62   0956797619835147    9</span></span>
@@ -451,7 +451,7 @@ false positives when text in the paper is formatted as a valid URL.</p>
 <span><span class="co">#&gt; 75   0956797620903716   21</span></span>
 <span><span class="co">#&gt; 76   0956797620904450    4</span></span>
 <span><span class="co">#&gt; 77   0956797620904990   18</span></span>
-<span><span class="co">#&gt; 78   0956797620915887   21</span></span>
+<span><span class="co">#&gt; 78   0956797620915887   25</span></span>
 <span><span class="co">#&gt; 79   0956797620916521    3</span></span>
 <span><span class="co">#&gt; 80   0956797620916782   14</span></span>
 <span><span class="co">#&gt; 81   0956797620927648    5</span></span>
@@ -572,7 +572,7 @@ false positives when text in the paper is formatted as a valid URL.</p>
 <span><span class="co">#&gt; 196 09567976231165267    1</span></span>
 <span><span class="co">#&gt; 197 09567976231170878    2</span></span>
 <span><span class="co">#&gt; 198 09567976231172500    3</span></span>
-<span><span class="co">#&gt; 199 09567976231173900   17</span></span>
+<span><span class="co">#&gt; 199 09567976231173900   14</span></span>
 <span><span class="co">#&gt; 200 09567976231173902    3</span></span>
 <span><span class="co">#&gt; 201 09567976231177968    2</span></span>
 <span><span class="co">#&gt; 202 09567976231179378    2</span></span>
@@ -698,8 +698,8 @@ significant’.</p>
 <span><span class="co">#&gt; <span style="color: #BCBCBC;"> 5</span> The Co…     110           22          7          <span style="color: #BB0000;">NA</span> <span style="color: #949494;">"</span>The Con… 0956797… Resul…</span></span>
 <span><span class="co">#&gt; <span style="color: #BCBCBC;"> 6</span> The tw…     113           24          6          <span style="color: #BB0000;">NA</span> <span style="color: #949494;">"</span>The two… 0956797… Resul…</span></span>
 <span><span class="co">#&gt; <span style="color: #BCBCBC;"> 7</span> An omn…     186           41         14          <span style="color: #BB0000;">NA</span>  <span style="color: #BB0000;">NA</span>       0956797… Resul…</span></span>
-<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 8</span> Furthe…     241           63         28          <span style="color: #BB0000;">NA</span>  <span style="color: #BB0000;">NA</span>       0956797… <span style="color: #BB0000;">NA</span>    </span></span>
-<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 9</span> The da…     255           65         30          <span style="color: #BB0000;">NA</span> <span style="color: #949494;">"</span>The dag… 0956797… Fig 5 </span></span>
+<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 8</span> Furthe…     244           63         28          <span style="color: #BB0000;">NA</span>  <span style="color: #BB0000;">NA</span>       0956797… <span style="color: #BB0000;">NA</span>    </span></span>
+<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 9</span> The da…     259           65         30          <span style="color: #BB0000;">NA</span> <span style="color: #949494;">"</span>The dag… 0956797… Fig 5.</span></span>
 <span><span class="co">#&gt; <span style="color: #BCBCBC;">10</span> Given …     166           38         19          <span style="color: #BB0000;">NA</span>  <span style="color: #BB0000;">NA</span>       0956797… Autho…</span></span>
 <span><span class="co">#&gt; <span style="color: #949494;"># ℹ 92 more rows</span></span></span>
 <span><span class="co">#&gt; <span style="color: #949494;"># ℹ 1 more variable: section_type &lt;chr&gt;</span></span></span></code></pre>
@@ -723,8 +723,8 @@ from <a href="https://github.com/MicheleNuijten/statcheck" class="external-link"
 <span><span class="co">#&gt; 1 Yes-the 90% confidence intervals of the difference in attentional bias for participants who were and were not recently ill found here (dz = -0.14, 90% CI = [-0.31, -0.04]) did not overlap with an effect size (dz ) of -0.35, t(248.4) = 2.01, p = .023, or 0.35, t(248.4) = -4.55, p &lt;.001.</span></span>
 <span><span class="co">#&gt; 2 Yes-the 90% confidence intervals of the difference in attentional bias for participants who were and were not recently ill found here (dz = -0.14, 90% CI = [-0.31, -0.04]) did not overlap with an effect size (dz ) of -0.35, t(248.4) = 2.01, p = .023, or 0.35, t(248.4) = -4.55, p &lt;.001.</span></span>
 <span><span class="co">#&gt;   text_id paragraph_id section_id page_number</span></span>
-<span><span class="co">#&gt; 1     107           25          9          NA</span></span>
-<span><span class="co">#&gt; 2     107           25          9          NA</span></span>
+<span><span class="co">#&gt; 1     106           25          9          NA</span></span>
+<span><span class="co">#&gt; 2     106           25          9          NA</span></span>
 <span><span class="co">#&gt;                                                                                                                                                                                                                                                                                           formatted</span></span>
 <span><span class="co">#&gt; 1 Yes-the 90% confidence intervals of the difference in attentional bias for participants who were and were not recently ill found here (dz = -0.14, 90% CI = [-0.31, -0.04]) did not overlap with an effect size (dz ) of -0.35, t(248.4) = 2.01, p = .023, or 0.35, t(248.4) = -4.55, p &amp;lt;.001.</span></span>
 <span><span class="co">#&gt; 2 Yes-the 90% confidence intervals of the difference in attentional bias for participants who were and were not recently ill found here (dz = -0.14, 90% CI = [-0.31, -0.04]) did not overlap with an effect size (dz ) of -0.35, t(248.4) = 2.01, p = .023, or 0.35, t(248.4) = -4.55, p &amp;lt;.001.</span></span>

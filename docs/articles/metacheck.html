@@ -34,7 +34,7 @@
 
     <a class="navbar-brand me-2" href="../index.html">metacheck</a>
 
-    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Released version">0.0.1.0</small>
+    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Released version">0.1.0</small>
 
 
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -84,10 +84,11 @@
 <span><span class="fu">devtools</span><span class="fu">::</span><span class="fu"><a href="https://devtools.r-lib.org/reference/install-deprecated.html" class="external-link">install_github</a></span><span class="op">(</span><span class="st">"scienceverse/metacheck"</span><span class="op">)</span></span></code></pre></div>
 <div class="sourceCode" id="cb2"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://github.com/scienceverse/metacheck" class="external-link">metacheck</a></span><span class="op">)</span></span></code></pre></div>
-<p>You can launch a shiny app, but this has limited features and is
-under development.</p>
+<p>You can launch a simple shiny app that creates a report from a PDF,
+with options to control what information is sent to or retrieved from
+external servers.</p>
 <div class="sourceCode" id="cb3"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="fu">metacheck</span><span class="fu">::</span><span class="fu"><a href="../reference/metacheck_app.html">metacheck_app</a></span><span class="op">(</span><span class="op">)</span></span></code></pre></div>
+<code class="sourceCode R"><span><span class="fu">metacheck</span><span class="fu">::</span><span class="fu">create_report_app</span><span class="op">(</span><span class="op">)</span></span></code></pre></div>
 <div class="section level3">
 <h3 id="load-from-pdf">Load from PDF<a class="anchor" aria-label="anchor" href="#load-from-pdf"></a>
 </h3>
@@ -95,15 +96,25 @@ under development.</p>
 in <a href="https://www.scienceverse.org/schema/paper.json" class="external-link">JSON
 format</a>. This requires an internet connection and takes a few seconds
 per paper, so should only be done once and the results saved for later
-use.</p>
+use. If you don’t supply an <code>api_url</code>, we check a <a href="https://www.scienceverse.org/metacheck/convert.json" class="external-link">list of
+active servers</a> and choose the first available.</p>
+<p>You can also check the reference section against crossref, which
+allows you to find potential errors or omissions. This can take some
+time, and you can always add it later with the
+<code>add_bibmatch()</code> function.</p>
 <div class="sourceCode" id="cb4"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="va">pdf_file</span> <span class="op">&lt;-</span> <span class="fu"><a href="../reference/demofile.html">demofile</a></span><span class="op">(</span><span class="st">"pdf"</span><span class="op">)</span></span>
-<span><span class="va">json_file</span> <span class="op">&lt;-</span> <span class="fu"><a href="../reference/convert.html">convert</a></span><span class="op">(</span>file_path <span class="op">=</span> <span class="va">pdf_file</span>, save_path <span class="op">=</span> <span class="st">"converted"</span><span class="op">)</span></span></code></pre></div>
+<span><span class="va">json_file</span> <span class="op">&lt;-</span> <span class="fu"><a href="../reference/convert.html">convert</a></span><span class="op">(</span>file_path <span class="op">=</span> <span class="va">pdf_file</span>, </span>
+<span>                     save_path <span class="op">=</span> <span class="st">"converted"</span>,</span>
+<span>                     crossref_lookup <span class="op">=</span> <span class="cn">TRUE</span><span class="op">)</span></span></code></pre></div>
 <p>You can set up your own local grobid server following instructions
 from <a href="https://grobid.readthedocs.io/" class="external-link uri">https://grobid.readthedocs.io/</a>. The easiest way is to
 use Docker.</p>
 <div class="sourceCode" id="cb5"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb5-1"><a href="#cb5-1" tabindex="-1"></a><span class="ex">docker</span> run <span class="at">--rm</span> <span class="at">--init</span> <span class="at">--ulimit</span> core=0 <span class="at">-p</span> 8070:8070 lfoppiano/grobid:0.9.0</span></code></pre></div>
-<p>Then you can set your api_url to the local path <a href="http://localhost:8070" class="external-link uri">http://localhost:8070</a>.</p>
+<p>Then you can set your api_url to the local path <a href="http://localhost:8070" class="external-link uri">http://localhost:8070</a>. If
+the method is the default “auto” and you don’t explicitly set the
+api_url, <code><a href="../reference/convert.html">convert()</a></code> will default to a local server if one is
+detected.</p>
 <div class="sourceCode" id="cb6"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="va">json_file</span> <span class="op">&lt;-</span> <span class="fu"><a href="../reference/convert.html">convert</a></span><span class="op">(</span>file_path <span class="op">=</span> <span class="va">pdf_file</span>, </span>
 <span>                     save_path <span class="op">=</span> <span class="st">"converted"</span>,</span>
@@ -129,10 +140,8 @@ able to convert DOC and DOCX files directly.</p>
 <h3 id="batch-processing">Batch Processing<a class="anchor" aria-label="anchor" href="#batch-processing"></a>
 </h3>
 <p>The functions <code><a href="../reference/convert.html">convert()</a></code> and <code><a href="../reference/read.html">read()</a></code> also
-work on a folder of files, returning a list of JSON file paths or paper
-objects, respectively. The functions <code><a href="../reference/text_search.html">text_search()</a></code>,
-<code><a href="../reference/text_expand.html">text_expand()</a></code> and <code><a href="../reference/llm.html">llm()</a></code> also work on a list of
-paper objects.</p>
+work on a folder of files, or a vector of paths, returning a list of
+JSON file paths or paper objects, respectively.</p>
 </div>
 </div>
 <div class="section level2">
@@ -171,9 +180,9 @@ info, references, and citations.</p>
 <col width="1%">
 <col width="2%">
 <col width="2%">
+<col width="3%">
+<col width="3%">
 <col width="7%">
-<col width="3%">
-<col width="3%">
 <col width="2%">
 <col width="4%">
 <col width="2%">
@@ -188,16 +197,16 @@ info, references, and citations.</p>
 <th align="right">year</th>
 <th align="left">volume</th>
 <th align="left">issue</th>
-<th align="left">container</th>
 <th align="left">first_page</th>
 <th align="left">last_page</th>
+<th align="left">container</th>
 <th align="right">bib_id</th>
 <th align="left">year_suffix</th>
 <th align="right">text_id</th>
 </tr></thead>
 <tbody>
 <tr class="odd">
-<td align="left">article</td>
+<td align="left">book</td>
 <td align="left">10.32614/10.5281/zenodo.2669586</td>
 <td align="left">Faux: Simulation for Factorial Designs</td>
 <td align="left">Debruine, Lisa</td>
@@ -206,7 +215,7 @@ info, references, and citations.</p>
 <td align="right">2025</td>
 <td align="left"></td>
 <td align="left"></td>
-<td align="left">Zenodo</td>
+<td align="left">NA</td>
 <td align="left">NA</td>
 <td align="left">NA</td>
 <td align="right">0</td>
@@ -224,9 +233,9 @@ Evolved Dispositions Versus Social Roles</td>
 <td align="right">1999</td>
 <td align="left">54</td>
 <td align="left">6</td>
-<td align="left">American Psychologist</td>
 <td align="left">408</td>
 <td align="left">423</td>
+<td align="left">American Psychologist</td>
 <td align="right">1</td>
 <td align="left"></td>
 <td align="right">34</td>
@@ -242,9 +251,9 @@ Creativity</td>
 <td align="right">2014</td>
 <td align="left">25</td>
 <td align="left">4</td>
-<td align="left">Psychological Science</td>
 <td align="left">973</td>
 <td align="left">981</td>
+<td align="left">Psychological Science</td>
 <td align="right">2</td>
 <td align="left"></td>
 <td align="right">35</td>
@@ -259,9 +268,9 @@ Creativity</td>
 <td align="right">2018</td>
 <td align="left">1</td>
 <td align="left"></td>
-<td align="left">Psychological Science</td>
 <td align="left">259</td>
 <td align="left">270</td>
+<td align="left">Psychological Science</td>
 <td align="right">3</td>
 <td align="left"></td>
 <td align="right">36</td>
@@ -276,9 +285,9 @@ Creativity</td>
 <td align="right">2021</td>
 <td align="left"></td>
 <td align="left"></td>
+<td align="left">NA</td>
+<td align="left">NA</td>
 <td align="left">Journal of Journals</td>
-<td align="left">NA</td>
-<td align="left">NA</td>
 <td align="right">4</td>
 <td align="left"></td>
 <td align="right">37</td>
@@ -870,13 +879,13 @@ set it manually:</p>
 <span><span class="fu"><a href="../reference/llm_model.html">llm_model</a></span><span class="op">(</span><span class="st">"groq"</span><span class="op">)</span>                        <span class="co"># use ellmer's default Groq model</span></span>
 <span><span class="fu"><a href="../reference/llm_model.html">llm_model</a></span><span class="op">(</span><span class="st">"groq/llama-3.3-70b-versatile"</span><span class="op">)</span> <span class="co"># use a specific model</span></span></code></pre></div>
 <p>A list of available models for a provider:</p>
-<table class="table">
+<table style="width:100%;" class="table">
 <colgroup>
 <col width="8%">
-<col width="33%">
+<col width="28%">
 <col width="6%">
-<col width="8%">
-<col width="13%">
+<col width="11%">
+<col width="14%">
 <col width="20%">
 <col width="10%">
 </colgroup>
@@ -892,23 +901,14 @@ set it manually:</p>
 <tbody>
 <tr class="odd">
 <td align="left">groq</td>
-<td align="left">meta-llama/llama-prompt-guard-2-22m</td>
+<td align="left">openai/gpt-oss-safeguard-20b</td>
 <td align="left">model</td>
-<td align="left">Meta</td>
-<td align="right">512</td>
-<td align="right">512</td>
-<td align="left">2025-05-30</td>
+<td align="left">OpenAI</td>
+<td align="right">131072</td>
+<td align="right">65536</td>
+<td align="left">2025-10-29</td>
 </tr>
 <tr class="even">
-<td align="left">groq</td>
-<td align="left">llama-3.1-8b-instant</td>
-<td align="left">model</td>
-<td align="left">Meta</td>
-<td align="right">131072</td>
-<td align="right">131072</td>
-<td align="left">2023-09-03</td>
-</tr>
-<tr class="odd">
 <td align="left">groq</td>
 <td align="left">allam-2-7b</td>
 <td align="left">model</td>
@@ -917,23 +917,32 @@ set it manually:</p>
 <td align="right">4096</td>
 <td align="left">2025-01-23</td>
 </tr>
+<tr class="odd">
+<td align="left">groq</td>
+<td align="left">groq/compound-mini</td>
+<td align="left">model</td>
+<td align="left">Groq</td>
+<td align="right">131072</td>
+<td align="right">8192</td>
+<td align="left">2025-09-04</td>
+</tr>
 <tr class="even">
 <td align="left">groq</td>
-<td align="left">openai/gpt-oss-120b</td>
+<td align="left">llama-3.3-70b-versatile</td>
 <td align="left">model</td>
-<td align="left">OpenAI</td>
+<td align="left">Meta</td>
 <td align="right">131072</td>
-<td align="right">65536</td>
-<td align="left">2025-08-05</td>
+<td align="right">32768</td>
+<td align="left">2024-12-06</td>
 </tr>
 <tr class="odd">
 <td align="left">groq</td>
-<td align="left">meta-llama/llama-prompt-guard-2-86m</td>
+<td align="left">canopylabs/orpheus-v1-english</td>
 <td align="left">model</td>
-<td align="left">Meta</td>
-<td align="right">512</td>
-<td align="right">512</td>
-<td align="left">2025-05-30</td>
+<td align="left">Canopy Labs</td>
+<td align="right">4000</td>
+<td align="right">50000</td>
+<td align="left">2025-12-19</td>
 </tr>
 </tbody>
 </table>
@@ -1294,27 +1303,137 @@ the ), whether it is public</p>
 <code class="sourceCode R"><span><span class="va">info</span> <span class="op">&lt;-</span> <span class="fu"><a href="../reference/osf_info.html">osf_info</a></span><span class="op">(</span><span class="va">links</span><span class="op">[</span><span class="fl">1</span><span class="op">:</span><span class="fl">6</span>, <span class="st">"href"</span><span class="op">]</span><span class="op">)</span></span>
 <span></span>
 <span><span class="va">info</span><span class="op">[</span>, <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="st">"href"</span>,<span class="st">"osf_id"</span>, <span class="st">"osf_type"</span>, <span class="st">"public"</span>, <span class="st">"category"</span><span class="op">)</span><span class="op">]</span></span></code></pre></div>
-<pre><code><span><span class="co">#&gt; <span style="color: #949494;"># A tibble: 6 × 5</span></span></span>
-<span><span class="co">#&gt;   href                                           osf_id osf_type public category</span></span>
-<span><span class="co">#&gt;   <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>                                          <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>  <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>    <span style="color: #949494; font-style: italic;">&lt;lgl&gt;</span>  <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>   </span></span>
-<span><span class="co">#&gt; <span style="color: #BCBCBC;">1</span> https://osf.io/e2aks/                          e2aks  nodes    TRUE   project </span></span>
-<span><span class="co">#&gt; <span style="color: #BCBCBC;">2</span> https://osf.io/tvyxz/wiki/view/                tvyxz  nodes    TRUE   project </span></span>
-<span><span class="co">#&gt; <span style="color: #BCBCBC;">3</span> https://osf.io/tvyxz/wiki/view/                tvyxz  nodes    TRUE   project </span></span>
-<span><span class="co">#&gt; <span style="color: #BCBCBC;">4</span> https://osf.io/t9j8e/?view_only=f171281f212f4… t9j8e… nodes    FALSE  project </span></span>
-<span><span class="co">#&gt; <span style="color: #BCBCBC;">5</span> https://osf.io/tvyxz/wiki/1.%20View%20the%20B… tvyxz  nodes    TRUE   project </span></span>
-<span><span class="co">#&gt; <span style="color: #BCBCBC;">6</span> https://osf.io/eky4s/                          eky4s  nodes    TRUE   project</span></span></code></pre>
-<p>For now, the OSF API does not let us retrieve any information about
-view-only links. They may be viewable by you in the web browser if the
-link is still active, but will be listed in the table as public = FALSE
-and osf_type = “private”.</p>
+<table class="table">
+<colgroup>
+<col width="46%">
+<col width="35%">
+<col width="6%">
+<col width="5%">
+<col width="6%">
+</colgroup>
+<thead><tr class="header">
+<th align="left">href</th>
+<th align="left">osf_id</th>
+<th align="left">osf_type</th>
+<th align="left">public</th>
+<th align="left">category</th>
+</tr></thead>
+<tbody>
+<tr class="odd">
+<td align="left"><a href="https://osf.io/e2aks/" class="external-link uri">https://osf.io/e2aks/</a></td>
+<td align="left">e2aks</td>
+<td align="left">nodes</td>
+<td align="left">TRUE</td>
+<td align="left">project</td>
+</tr>
+<tr class="even">
+<td align="left"><a href="https://osf.io/tvyxz/wiki/view/" class="external-link uri">https://osf.io/tvyxz/wiki/view/</a></td>
+<td align="left">tvyxz</td>
+<td align="left">nodes</td>
+<td align="left">TRUE</td>
+<td align="left">project</td>
+</tr>
+<tr class="odd">
+<td align="left"><a href="https://osf.io/tvyxz/wiki/view/" class="external-link uri">https://osf.io/tvyxz/wiki/view/</a></td>
+<td align="left">tvyxz</td>
+<td align="left">nodes</td>
+<td align="left">TRUE</td>
+<td align="left">project</td>
+</tr>
+<tr class="even">
+<td align="left"><a href="https://osf.io/t9j8e/?view_only=f171281f212f4435917b16a9e581a73b" class="external-link uri">https://osf.io/t9j8e/?view_only=f171281f212f4435917b16a9e581a73b</a></td>
+<td align="left">t9j8e?view_only=f171281f212f4435917b16a9e581a73b</td>
+<td align="left">nodes</td>
+<td align="left">FALSE</td>
+<td align="left">project</td>
+</tr>
+<tr class="odd">
+<td align="left"><a href="https://osf.io/tvyxz/wiki/1.%20View%20the%20Badges/" class="external-link uri">https://osf.io/tvyxz/wiki/1.%20View%20the%20Badges/</a></td>
+<td align="left">tvyxz</td>
+<td align="left">nodes</td>
+<td align="left">TRUE</td>
+<td align="left">project</td>
+</tr>
+<tr class="even">
+<td align="left"><a href="https://osf.io/eky4s/" class="external-link uri">https://osf.io/eky4s/</a></td>
+<td align="left">eky4s</td>
+<td align="left">nodes</td>
+<td align="left">TRUE</td>
+<td align="left">project</td>
+</tr>
+</tbody>
+</table>
+<p>View-only links may be listed in the table as public = FALSE if they
+haven’t been made publicly available. This means they are not searchable
+and only accessible with the view_only link.</p>
 <p>You can set the argument <code>recursive = TRUE</code> to also
 retrieve information about all nodes and files that are contained by the
 OSF link.</p>
-<div class="sourceCode" id="cb34"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb33"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="va">all_contents</span> <span class="op">&lt;-</span> <span class="fu"><a href="../reference/osf_info.html">osf_info</a></span><span class="op">(</span><span class="va">links</span><span class="op">$</span><span class="va">href</span><span class="op">[</span><span class="fl">1</span><span class="op">]</span>, recursive <span class="op">=</span> <span class="cn">TRUE</span><span class="op">)</span></span>
 <span></span>
-<span><span class="fu"><a href="https://rdrr.io/r/base/sum.html" class="external-link">sum</a></span><span class="op">(</span><span class="va">all_contents</span><span class="op">$</span><span class="va">osf_type</span> <span class="op">==</span> <span class="st">"nodes"</span><span class="op">)</span></span></code></pre></div>
-<pre><code><span><span class="co">#&gt; [1] 3</span></span></code></pre>
+<span><span class="va">all_contents</span><span class="op">[</span>, <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="st">"osf_id"</span>, <span class="st">"name"</span><span class="op">)</span><span class="op">]</span></span></code></pre></div>
+<table class="table">
+<colgroup>
+<col width="32%">
+<col width="67%">
+</colgroup>
+<thead><tr class="header">
+<th align="left">osf_id</th>
+<th align="left">name</th>
+</tr></thead>
+<tbody>
+<tr class="odd">
+<td align="left">e2aks</td>
+<td align="left">Action-specific disruption of perceptual
+confidence</td>
+</tr>
+<tr class="even">
+<td align="left">7jh5v</td>
+<td align="left">Data</td>
+</tr>
+<tr class="odd">
+<td align="left">pj4e8</td>
+<td align="left">Analysis scripts</td>
+</tr>
+<tr class="even">
+<td align="left">553e66b48c5e4a219919e0e7</td>
+<td align="left">osfstorage</td>
+</tr>
+<tr class="odd">
+<td align="left">553e58658c5e4a219919a627</td>
+<td align="left">osfstorage</td>
+</tr>
+<tr class="even">
+<td align="left">553e7e168c5e4a21991a4dab</td>
+<td align="left">osfstorage</td>
+</tr>
+<tr class="odd">
+<td align="left">553e58658c5e4a219919a628</td>
+<td align="left">Mratio_all.txt</td>
+</tr>
+<tr class="even">
+<td align="left">553e58658c5e4a219919a629</td>
+<td align="left">allData_orientation.txt</td>
+</tr>
+<tr class="odd">
+<td align="left">553e58658c5e4a219919a62a</td>
+<td align="left">allData_contrast_M1.txt</td>
+</tr>
+<tr class="even">
+<td align="left">553e58658c5e4a219919a62b</td>
+<td align="left">allData_contrast_PMC.txt</td>
+</tr>
+<tr class="odd">
+<td align="left">553e58658c5e4a219919a62c</td>
+<td align="left">Mratio_contrast_M1.txt</td>
+</tr>
+<tr class="even">
+<td align="left">553e7e168c5e4a21991a4dac</td>
+<td align="left">tms_analysis.R</td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="section level3">
 <h3 id="download-osf-files">Download OSF Files<a class="anchor" aria-label="anchor" href="#download-osf-files"></a>
@@ -1329,7 +1448,7 @@ you, recreating a folder structure based on the component names and
 downloading all files smaller than <code>max_file_size</code> (defaults
 to 10 MB) up to a total size of <code>max_download_size</code> (defaults
 to 100 MB).</p>
-<div class="sourceCode" id="cb36"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb34"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fu"><a href="../reference/osf_file_download.html">osf_file_download</a></span><span class="op">(</span>osf_id <span class="op">=</span> <span class="st">"pngda"</span>,</span>
 <span>                  download_to <span class="op">=</span> <span class="st">"."</span>, </span>
 <span>                  max_file_size <span class="op">=</span> <span class="fl">1</span>, </span>
@@ -1337,7 +1456,7 @@ to 100 MB).</p>
 <pre><code>Starting retrieval for pngda
 - omitting metacheck.png (1.5MB)
 Downloading files [=====================] 24/24 00:00:35</code></pre>
-<div class="sourceCode" id="cb38"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb36"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/base/list.files.html" class="external-link">list.files</a></span><span class="op">(</span><span class="st">"pngda"</span>, recursive <span class="op">=</span> <span class="cn">TRUE</span><span class="op">)</span></span></code></pre></div>
 <pre><code><span><span class="co">#&gt;  [1] "Data/Individual/data-01.csv"                         </span></span>
 <span><span class="co">#&gt;  [2] "Data/Individual/data-02.csv"                         </span></span>
@@ -1368,7 +1487,7 @@ Downloading files [=====================] 24/24 00:00:35</code></pre>
 </h3>
 <p>The same pattern — find links, retrieve file lists, optionally
 download — applies to the other three services.</p>
-<div class="sourceCode" id="cb40"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb38"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="co"># GitHub</span></span>
 <span><span class="va">gh_links</span>  <span class="op">&lt;-</span> <span class="fu"><a href="../reference/github_links.html">github_links</a></span><span class="op">(</span><span class="va">paper</span><span class="op">)</span></span>
 <span><span class="va">gh_files</span>  <span class="op">&lt;-</span> <span class="fu"><a href="../reference/github_files.html">github_files</a></span><span class="op">(</span><span class="va">gh_links</span><span class="op">$</span><span class="va">href</span>, recursive <span class="op">=</span> <span class="cn">TRUE</span><span class="op">)</span></span>
@@ -1390,7 +1509,7 @@ walkthrough of the GitHub functions.</p>
 downloaded a zip archive from a reviewer submission, or because the
 authors used a service not yet supported — you can point metacheck at a
 local folder instead.</p>
-<div class="sourceCode" id="cb41"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb39"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="va">result</span> <span class="op">&lt;-</span> <span class="fu"><a href="../reference/module_run.html">module_run</a></span><span class="op">(</span><span class="fu"><a href="../reference/test_paper.html">test_paper</a></span><span class="op">(</span><span class="op">)</span>, <span class="st">"code_check"</span>,</span>
 <span>                     local_path <span class="op">=</span> <span class="st">"path/to/downloaded/files"</span><span class="op">)</span></span></code></pre></div>
 <p>See the <a href="local-files.html">Local Files</a> article for full
@@ -1408,7 +1527,7 @@ will share more modules.</p>
 <h3 id="module-list">Module List<a class="anchor" aria-label="anchor" href="#module-list"></a>
 </h3>
 <p>You can see the list of built-in modules with the function below.</p>
-<div class="sourceCode" id="cb42"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb40"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fu"><a href="../reference/module_list.html">module_list</a></span><span class="op">(</span><span class="op">)</span></span></code></pre></div>
 <pre><code><span><span class="co">#&gt; </span></span>
 <span><span class="co">#&gt; *** GENERAL ***</span></span>
@@ -1434,7 +1553,7 @@ will share more modules.</p>
 <span><span class="co">#&gt; * marginal: List all sentences that describe an effect as 'marginally significant'.</span></span>
 <span><span class="co">#&gt; * repo_check: This module retrieves information from repositories.</span></span>
 <span><span class="co">#&gt; * stat_check: Check consistency of p-values and test statistics</span></span>
-<span><span class="co">#&gt; * stat_effect_size: The Effect Size module checks for effect sizes in t-tests and F-tests.</span></span>
+<span><span class="co">#&gt; * stat_effect_size: The Effect Size module checks if effect sizes are correctly reported in t-tests and F-tests.</span></span>
 <span><span class="co">#&gt; * stat_p_exact: List any p-values reported with insufficient precision (e.g., p &lt; .05 or p = n.s.) or reported as exactly zero (e.g., p = .000).</span></span>
 <span><span class="co">#&gt; * stat_p_nonsig: This module checks for imprecisely reported p values. If p &gt; .05 is detected, it warns for misinterpretations.</span></span>
 <span><span class="co">#&gt; </span></span>
@@ -1455,7 +1574,7 @@ will share more modules.</p>
 </h3>
 <p>To run a built-in module on a paper, you can reference it by
 name.</p>
-<div class="sourceCode" id="cb44"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb42"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="va">p</span> <span class="op">&lt;-</span> <span class="fu"><a href="../reference/module_run.html">module_run</a></span><span class="op">(</span><span class="va">paper</span>, <span class="st">"all_p_values"</span><span class="op">)</span></span></code></pre></div>
 <table class="table">
 <colgroup>
@@ -1545,7 +1664,7 @@ details.</p>
 </h2>
 <p>You can generate a report from any set of modules. Check the function
 help for the default set.</p>
-<div class="sourceCode" id="cb45"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb43"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fu"><a href="../reference/report.html">report</a></span><span class="op">(</span><span class="va">paper</span>, output_format <span class="op">=</span> <span class="st">"qmd"</span><span class="op">)</span></span></code></pre></div>
 <p>See the <a href="../report-example.html">example report</a>.</p>
 </div>

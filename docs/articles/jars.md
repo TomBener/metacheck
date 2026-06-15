@@ -85,7 +85,8 @@ module_run(
 ```
 
 Effect Sizes in t-tests and F-tests: We found 7 t-tests and/or F-tests
-where effect sizes are not reported.
+where effect sizes are not reported. Check these tests in the table
+below, and consider adding effect sizes
 
 ## Checking Multiple Papers
 
@@ -101,15 +102,15 @@ mo$summary_table
 
 | paper_id | ttests_with_es | ttests_without_es | Ftests_with_es | Ftests_without_es |
 |:---|---:|---:|---:|---:|
-| 0956797613520608 | 0 | 0 | 5 | 0 |
-| 0956797614522816 | 0 | 5 | 20 | 0 |
+| 0956797613520608 | 0 | 0 | 6 | 0 |
+| 0956797614522816 | 0 | 5 | 27 | 0 |
 | 0956797614527830 | 0 | 0 | 0 | 0 |
 | 0956797614557697 | 0 | 1 | 5 | 0 |
-| 0956797614560771 | 2 | 0 | 0 | 0 |
+| 0956797614560771 | 4 | 0 | 0 | 0 |
 | 0956797614566469 | 0 | 0 | 0 | 0 |
 | 0956797615569001 | 1 | 1 | 0 | 0 |
-| 0956797615569889 | 0 | 0 | 12 | 0 |
-| 0956797615583071 | 6 | 4 | 2 | 2 |
+| 0956797615569889 | 0 | 0 | 19 | 0 |
+| 0956797615583071 | 8 | 4 | 2 | 2 |
 | 0956797615588467 | 4 | 3 | 0 | 1 |
 
 This can be useful for meta-scientific research questions, such as

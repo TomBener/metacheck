@@ -7,8 +7,8 @@ devtools::load_all(".")
 #> 
 #> 
 #> ***********************************************
-#> ✅ Welcome to metacheck beta version 0.0.1.0
-#> ✨ Your version is up to date.
+#> ✅ Welcome to metacheck beta version 0.1.0
+#> ✨ Your version newer than the current release
 #> 
 #> ℹ For support and examples visit:
 #> https://scienceverse.github.io/metacheck/
@@ -668,7 +668,7 @@ format_ref(bib)
 ```
 
 \[1\] “DeBruine L, Lakens D, Werner J (2026). *metacheck: Check Research
-Outputs for Best Practices*. R package version 0.0.1.0,
+Outputs for Best Practices*. R package version 0.1.0,
 [https://github.com/scienceverse/metacheck](NA).”
 
 The function can also handle references in bibtex format.

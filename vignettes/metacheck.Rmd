@@ -36,20 +36,24 @@ devtools::load_all(".")
 ```
 
 
-You can launch a shiny app, but this has limited features and is under development.
+You can launch a simple shiny app that creates a report from a PDF, with options to control what information is sent to or retrieved from external servers.
 
 ``` r
-metacheck::metacheck_app()
+metacheck::create_report_app()
 ```
 
 
 ### Load from PDF
 
-The function `convert()` can read PDF files and save them in [JSON format](https://www.scienceverse.org/schema/paper.json). This requires an internet connection and takes a few seconds per paper, so should only be done once and the results saved for later use.
+The function `convert()` can read PDF files and save them in [JSON format](https://www.scienceverse.org/schema/paper.json).  This requires an internet connection and takes a few seconds per paper, so should only be done once and the results saved for later use. If you don't supply an `api_url`, we check a [list of active servers](https://www.scienceverse.org/metacheck/convert.json) and choose the first available.
+
+You can also check the reference section against crossref, which allows you to find potential errors or omissions. This can take some time, and you can always add it later with the `add_bibmatch()` function.
 
 ```{r, eval = FALSE}
 pdf_file <- demofile("pdf")
-json_file <- convert(file_path = pdf_file, save_path = "converted")
+json_file <- convert(file_path = pdf_file, 
+                     save_path = "converted",
+                     crossref_lookup = TRUE)
 ```
 
 ```{r, include = FALSE}
@@ -64,7 +68,7 @@ You can set up your own local grobid server following instructions from <https:/
 docker run --rm --init --ulimit core=0 -p 8070:8070 lfoppiano/grobid:0.9.0
 ```
 
-Then you can set your api_url to the local path <http://localhost:8070>.
+Then you can set your api_url to the local path <http://localhost:8070>. If the method is the default "auto" and you don't explicitly set the api_url, `convert()` will default to a local server if one is detected.
 
 ```{r, eval = FALSE}
 json_file <- convert(file_path = pdf_file, 
@@ -90,7 +94,7 @@ To take advantage of grobid's ability to parse references and other aspects of p
 
 ### Batch Processing
 
-The functions `convert()` and `read()` also work on a folder of files, returning a list of JSON file paths or paper objects, respectively. The functions `text_search()`, `text_expand()` and `llm()` also work on a list of paper objects.
+The functions `convert()` and `read()` also work on a folder of files, or a vector of paths, returning a list of JSON file paths or paper objects, respectively. 
 
 ## Paper Components
 
@@ -417,20 +421,78 @@ However, all of the `osf_***()` functions fix IDs for you and handle duplicate I
 Get basic information about OSF links, such as the name, description, osf_type (nodes, files, preprints, registrations, users, set to "private" if you don't have authorisation to view it, and "invalid" if the ), whether it is public
 
 ```{r}
+#| eval: false
 info <- osf_info(links[1:6, "href"])
 
 info[, c("href","osf_id", "osf_type", "public", "category")]
 ```
 
+```{r}
+#| echo: false
+info <- structure(list(href = c("https://osf.io/e2aks/", "https://osf.io/tvyxz/wiki/view/", 
+"https://osf.io/tvyxz/wiki/view/", "https://osf.io/t9j8e/?view_only=f171281f212f4435917b16a9e581a73b", 
+"https://osf.io/tvyxz/wiki/1.%20View%20the%20Badges/", "https://osf.io/eky4s/"
+), osf_id = c("e2aks", "tvyxz", "tvyxz", "t9j8e?view_only=f171281f212f4435917b16a9e581a73b", 
+"tvyxz", "eky4s"), name = c("Action-specific disruption of perceptual confidence", 
+"Badges to Acknowledge Open Practices", "Badges to Acknowledge Open Practices", 
+"PSICI-14-1362 - Failing to forget: Inhibitory control deficits compromise memory suppression in post-traumatic stress disorder", 
+"Badges to Acknowledge Open Practices", "Wearing a Bicycle Helmet Can Increase Risk Taking and Sensation Seeking in Adults"
+), description = c("Data and analysis scripts for:\nFleming, S.M., Manisaclco, B., Ko, Y., Amendi, N., Ro, T. &amp; Lau, H. (2015) Action-specific disruption of perceptual confidence. Psychological Science https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4361353/", 
+"The aim is to specify a standard by which we can say that a scientific study has been conducted in accordance with open-science principles and provide visual icons to allow advertising of such good behaviours.", 
+"The aim is to specify a standard by which we can say that a scientific study has been conducted in accordance with open-science principles and provide visual icons to allow advertising of such good behaviours.", 
+"Open materials for Psychological Science paper: Failing to forget: Inhibitory control deficits compromise memory suppression in post-traumatic stress disorder", 
+"The aim is to specify a standard by which we can say that a scientific study has been conducted in accordance with open-science principles and provide visual icons to allow advertising of such good behaviours.", 
+""), osf_type = c("nodes", "nodes", "nodes", "nodes", "nodes", 
+"nodes"), public = c(TRUE, TRUE, TRUE, FALSE, TRUE, TRUE), category = c("project", 
+"project", "project", "project", "project", "project"), registration = c(FALSE, 
+FALSE, FALSE, FALSE, FALSE, FALSE), preprint = c(FALSE, FALSE, 
+FALSE, FALSE, FALSE, FALSE), self = c("https://api.osf.io/v2/nodes/e2aks/", 
+"https://api.osf.io/v2/nodes/tvyxz/", "https://api.osf.io/v2/nodes/tvyxz/", 
+"https://api.osf.io/v2/nodes/t9j8e/?view_only=f171281f212f4435917b16a9e581a73b", 
+"https://api.osf.io/v2/nodes/tvyxz/", "https://api.osf.io/v2/nodes/eky4s/"
+), children = c("https://api.osf.io/v2/nodes/e2aks/children/", 
+"https://api.osf.io/v2/nodes/tvyxz/children/", "https://api.osf.io/v2/nodes/tvyxz/children/", 
+"https://api.osf.io/v2/nodes/t9j8e/children/?view_only=f171281f212f4435917b16a9e581a73b", 
+"https://api.osf.io/v2/nodes/tvyxz/children/", "https://api.osf.io/v2/nodes/eky4s/children/"
+), files = c("https://api.osf.io/v2/nodes/e2aks/files/", "https://api.osf.io/v2/nodes/tvyxz/files/", 
+"https://api.osf.io/v2/nodes/tvyxz/files/", "https://api.osf.io/v2/nodes/t9j8e/files/?view_only=f171281f212f4435917b16a9e581a73b", 
+"https://api.osf.io/v2/nodes/tvyxz/files/", "https://api.osf.io/v2/nodes/eky4s/files/"
+), parent = c(NA_character_, NA_character_, NA_character_, NA_character_, 
+NA_character_, NA_character_), project = c("e2aks", "tvyxz", 
+"tvyxz", "t9j8e", "tvyxz", "eky4s")), row.names = c(NA, -6L), class = c("tbl_df", 
+"tbl", "data.frame"))
 
-For now, the OSF API does not let us retrieve any information about view-only links. They may be viewable by you in the web browser if the link is still active, but will be listed in the table as public = FALSE and osf_type = "private". 
+knitr::kable(info[, c("href","osf_id", "osf_type", "public", "category")])
+```
+
+
+
+View-only links may be listed in the table as public = FALSE if they haven't been made publicly available. This means they are not searchable and only accessible with the view_only link.
 
 You can set the argument `recursive = TRUE` to also retrieve information about all nodes and files that are contained by the OSF link.
 
 ```{r}
+#| eval: false
 all_contents <- osf_info(links$href[1], recursive = TRUE)
 
-sum(all_contents$osf_type == "nodes")
+all_contents[, c("osf_id", "name")]
+```
+
+
+```{r}
+#| echo: false
+structure(list(
+  osf_id = c("e2aks", "7jh5v", "pj4e8", "553e66b48c5e4a219919e0e7", 
+"553e58658c5e4a219919a627", "553e7e168c5e4a21991a4dab", "553e58658c5e4a219919a628", 
+"553e58658c5e4a219919a629", "553e58658c5e4a219919a62a", "553e58658c5e4a219919a62b", 
+"553e58658c5e4a219919a62c", "553e7e168c5e4a21991a4dac"), 
+  name = c("Action-specific disruption of perceptual confidence", 
+"Data", "Analysis scripts", "osfstorage", "osfstorage", "osfstorage", 
+"Mratio_all.txt", "allData_orientation.txt", "allData_contrast_M1.txt", 
+"allData_contrast_PMC.txt", "Mratio_contrast_M1.txt", "tms_analysis.R"
+)), 
+  class = "data.frame", row.names = c(NA, -12L)) |>
+  knitr::kable()
 ```
 
 

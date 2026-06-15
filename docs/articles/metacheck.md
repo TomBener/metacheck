@@ -15,12 +15,13 @@ pak::pkg_install("scienceverse/metacheck")
 library(metacheck)
 ```
 
-You can launch a shiny app, but this has limited features and is under
-development.
+You can launch a simple shiny app that creates a report from a PDF, with
+options to control what information is sent to or retrieved from
+external servers.
 
 ``` r
 
-metacheck::metacheck_app()
+metacheck::create_report_app()
 ```
 
 ### Load from PDF
@@ -30,12 +31,21 @@ The function
 can read PDF files and save them in [JSON
 format](https://www.scienceverse.org/schema/paper.json). This requires
 an internet connection and takes a few seconds per paper, so should only
-be done once and the results saved for later use.
+be done once and the results saved for later use. If you don’t supply an
+`api_url`, we check a [list of active
+servers](https://www.scienceverse.org/metacheck/convert.json) and choose
+the first available.
+
+You can also check the reference section against crossref, which allows
+you to find potential errors or omissions. This can take some time, and
+you can always add it later with the `add_bibmatch()` function.
 
 ``` r
 
 pdf_file <- demofile("pdf")
-json_file <- convert(file_path = pdf_file, save_path = "converted")
+json_file <- convert(file_path = pdf_file, 
+                     save_path = "converted",
+                     crossref_lookup = TRUE)
 ```
 
 You can set up your own local grobid server following instructions from
@@ -46,6 +56,10 @@ docker run --rm --init --ulimit core=0 -p 8070:8070 lfoppiano/grobid:0.9.0
 ```
 
 Then you can set your api_url to the local path <http://localhost:8070>.
+If the method is the default “auto” and you don’t explicitly set the
+api_url,
+[`convert()`](https://scienceverse.github.io/metacheck/reference/convert.md)
+will default to a local server if one is detected.
 
 ``` r
 
@@ -79,12 +93,8 @@ The functions
 [`convert()`](https://scienceverse.github.io/metacheck/reference/convert.md)
 and
 [`read()`](https://scienceverse.github.io/metacheck/reference/read.md)
-also work on a folder of files, returning a list of JSON file paths or
-paper objects, respectively. The functions
-[`text_search()`](https://scienceverse.github.io/metacheck/reference/text_search.md),
-[`text_expand()`](https://scienceverse.github.io/metacheck/reference/text_expand.md)
-and [`llm()`](https://scienceverse.github.io/metacheck/reference/llm.md)
-also work on a list of paper objects.
+also work on a folder of files, or a vector of paths, returning a list
+of JSON file paths or paper objects, respectively.
 
 ## Paper Components
 
@@ -116,13 +126,13 @@ The bibliography is provided in a tabular format.
 paper$bib
 ```
 
-| bib_type | doi | title | authors | editors | publisher | year | volume | issue | container | first_page | last_page | bib_id | year_suffix | text_id |
+| bib_type | doi | title | authors | editors | publisher | year | volume | issue | first_page | last_page | container | bib_id | year_suffix | text_id |
 |:---|:---|:---|:---|:---|:---|---:|:---|:---|:---|:---|:---|---:|:---|---:|
-| article | 10.32614/10.5281/zenodo.2669586 | Faux: Simulation for Factorial Designs | Debruine, Lisa |  |  | 2025 |  |  | Zenodo | NA | NA | 0 |  | 33 |
-| article | 10.1037/0003-066x.54.6.408 | The Origins of Sex Differences in Human Behavior: Evolved Dispositions Versus Social Roles | Eagly, Alice H; Wood, Wendy |  |  | 1999 | 54 | 6 | American Psychologist | 408 | 423 | 1 |  | 34 |
-| article | 10.1177/0956797614520714 | Evil Genius? How Dishonesty Can Lead to Greater Creativity | Gino, Francesca; Wiltermuth, Scott S |  |  | 2014 | 25 | 4 | Psychological Science | 973 | 981 | 2 |  | 35 |
-| article |  | Equivalence Testing for Psychological Research | Lakens, Daniël |  |  | 2018 | 1 |  | Psychological Science | 259 | 270 | 3 |  | 36 |
-| article | 10.0000/0123456789 | Human Error Is a Symptom of a Poor Design | Smith, F |  |  | 2021 |  |  | Journal of Journals | NA | NA | 4 |  | 37 |
+| book | 10.32614/10.5281/zenodo.2669586 | Faux: Simulation for Factorial Designs | Debruine, Lisa |  |  | 2025 |  |  | NA | NA | NA | 0 |  | 33 |
+| article | 10.1037/0003-066x.54.6.408 | The Origins of Sex Differences in Human Behavior: Evolved Dispositions Versus Social Roles | Eagly, Alice H; Wood, Wendy |  |  | 1999 | 54 | 6 | 408 | 423 | American Psychologist | 1 |  | 34 |
+| article | 10.1177/0956797614520714 | Evil Genius? How Dishonesty Can Lead to Greater Creativity | Gino, Francesca; Wiltermuth, Scott S |  |  | 2014 | 25 | 4 | 973 | 981 | Psychological Science | 2 |  | 35 |
+| article |  | Equivalence Testing for Psychological Research | Lakens, Daniël |  |  | 2018 | 1 |  | 259 | 270 | Psychological Science | 3 |  | 36 |
+| article | 10.0000/0123456789 | Human Error Is a Symptom of a Poor Design | Smith, F |  |  | 2021 |  |  | NA | NA | Journal of Journals | 4 |  | 37 |
 
 ### Cross-References
 
@@ -364,11 +374,11 @@ A list of available models for a provider:
 
 | platform | id | object | owned_by | context_window | max_completion_tokens | created_at |
 |:---|:---|:---|:---|---:|---:|:---|
-| groq | meta-llama/llama-prompt-guard-2-22m | model | Meta | 512 | 512 | 2025-05-30 |
-| groq | llama-3.1-8b-instant | model | Meta | 131072 | 131072 | 2023-09-03 |
+| groq | openai/gpt-oss-safeguard-20b | model | OpenAI | 131072 | 65536 | 2025-10-29 |
 | groq | allam-2-7b | model | SDAIA | 4096 | 4096 | 2025-01-23 |
-| groq | openai/gpt-oss-120b | model | OpenAI | 131072 | 65536 | 2025-08-05 |
-| groq | meta-llama/llama-prompt-guard-2-86m | model | Meta | 512 | 512 | 2025-05-30 |
+| groq | groq/compound-mini | model | Groq | 131072 | 8192 | 2025-09-04 |
+| groq | llama-3.3-70b-versatile | model | Meta | 131072 | 32768 | 2024-12-06 |
+| groq | canopylabs/orpheus-v1-english | model | Canopy Labs | 4000 | 50000 | 2025-12-19 |
 
 ### LLM Queries
 
@@ -542,20 +552,18 @@ info <- osf_info(links[1:6, "href"])
 info[, c("href","osf_id", "osf_type", "public", "category")]
 ```
 
-    #> # A tibble: 6 × 5
-    #>   href                                           osf_id osf_type public category
-    #>   <chr>                                          <chr>  <chr>    <lgl>  <chr>   
-    #> 1 https://osf.io/e2aks/                          e2aks  nodes    TRUE   project 
-    #> 2 https://osf.io/tvyxz/wiki/view/                tvyxz  nodes    TRUE   project 
-    #> 3 https://osf.io/tvyxz/wiki/view/                tvyxz  nodes    TRUE   project 
-    #> 4 https://osf.io/t9j8e/?view_only=f171281f212f4… t9j8e… nodes    FALSE  project 
-    #> 5 https://osf.io/tvyxz/wiki/1.%20View%20the%20B… tvyxz  nodes    TRUE   project 
-    #> 6 https://osf.io/eky4s/                          eky4s  nodes    TRUE   project
+| href | osf_id | osf_type | public | category |
+|:---|:---|:---|:---|:---|
+| <https://osf.io/e2aks/> | e2aks | nodes | TRUE | project |
+| <https://osf.io/tvyxz/wiki/view/> | tvyxz | nodes | TRUE | project |
+| <https://osf.io/tvyxz/wiki/view/> | tvyxz | nodes | TRUE | project |
+| <https://osf.io/t9j8e/?view_only=f171281f212f4435917b16a9e581a73b> | t9j8e?view_only=f171281f212f4435917b16a9e581a73b | nodes | FALSE | project |
+| <https://osf.io/tvyxz/wiki/1.%20View%20the%20Badges/> | tvyxz | nodes | TRUE | project |
+| <https://osf.io/eky4s/> | eky4s | nodes | TRUE | project |
 
-For now, the OSF API does not let us retrieve any information about
-view-only links. They may be viewable by you in the web browser if the
-link is still active, but will be listed in the table as public = FALSE
-and osf_type = “private”.
+View-only links may be listed in the table as public = FALSE if they
+haven’t been made publicly available. This means they are not searchable
+and only accessible with the view_only link.
 
 You can set the argument `recursive = TRUE` to also retrieve information
 about all nodes and files that are contained by the OSF link.
@@ -564,10 +572,23 @@ about all nodes and files that are contained by the OSF link.
 
 all_contents <- osf_info(links$href[1], recursive = TRUE)
 
-sum(all_contents$osf_type == "nodes")
+all_contents[, c("osf_id", "name")]
 ```
 
-    #> [1] 3
+| osf_id | name |
+|:---|:---|
+| e2aks | Action-specific disruption of perceptual confidence |
+| 7jh5v | Data |
+| pj4e8 | Analysis scripts |
+| 553e66b48c5e4a219919e0e7 | osfstorage |
+| 553e58658c5e4a219919a627 | osfstorage |
+| 553e7e168c5e4a21991a4dab | osfstorage |
+| 553e58658c5e4a219919a628 | Mratio_all.txt |
+| 553e58658c5e4a219919a629 | allData_orientation.txt |
+| 553e58658c5e4a219919a62a | allData_contrast_M1.txt |
+| 553e58658c5e4a219919a62b | allData_contrast_PMC.txt |
+| 553e58658c5e4a219919a62c | Mratio_contrast_M1.txt |
+| 553e7e168c5e4a21991a4dac | tms_analysis.R |
 
 ### Download OSF Files
 
@@ -706,7 +727,7 @@ module_list()
     #> * marginal: List all sentences that describe an effect as 'marginally significant'.
     #> * repo_check: This module retrieves information from repositories.
     #> * stat_check: Check consistency of p-values and test statistics
-    #> * stat_effect_size: The Effect Size module checks for effect sizes in t-tests and F-tests.
+    #> * stat_effect_size: The Effect Size module checks if effect sizes are correctly reported in t-tests and F-tests.
     #> * stat_p_exact: List any p-values reported with insufficient precision (e.g., p < .05 or p = n.s.) or reported as exactly zero (e.g., p = .000).
     #> * stat_p_nonsig: This module checks for imprecisely reported p values. If p > .05 is detected, it warns for misinterpretations.
     #> 

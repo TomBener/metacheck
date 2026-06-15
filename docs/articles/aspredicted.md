@@ -46,56 +46,56 @@ links here, returned in the “href” column.
 links <- aspredicted_links(psychsci)
 
 unique(links$href)
-#>  [1] "https://aspredicted.org/ve2qn.pdf"          
-#>  [2] "https://aspredicted.org/mq97g.pdf"          
-#>  [3] "https://aspredicted.org/4gf64.pdf"          
-#>  [4] "https://aspredicted.org/8a6ta.pdf"          
-#>  [5] "https://aspredicted.org/rz98j.pdf"          
-#>  [6] "https://aspredicted.org/vp4rg.pdf"          
-#>  [7] "https://aspredicted.org/3kq9y.pdf"          
-#>  [8] "https://aspredicted.org/yi5ps.pdf"          
-#>  [9] "https://aspredicted.org/nu5yt.pdf"          
-#> [10] "https://aspredicted.org/z97us.pdf"          
-#> [11] "https://aspredicted.org/h9xm3.pdf"          
-#> [12] "https://aspredicted.org/bj9er.pdf"          
-#> [13] "https://aspredicted.org/my5jk.pdf"          
-#> [14] "https://aspredicted.org/5xe8i.pdf"          
-#> [15] "https://aspredicted.org/ak97v.pdf"          
-#> [16] "https://aspredicted.org/p4ci6.pdf"          
-#> [17] "https://aspredicted.org/iv9tb.pdf"          
-#> [18] "https://aspredicted.org/dp8r5.pdf"          
-#> [19] "https://aspredicted.org/Y2F_6B7"            
-#> [20] "https://aspredicted.org/2YK_D6R"            
-#> [21] "https://aspredicted.org/MPG_T3C"            
-#> [22] "https://aspredicted.org/G68_GBZ"            
-#> [23] "https://aspredicted.org/9SR_7BC"            
-#> [24] "https://aspredicted.org/6D7_FVX"            
-#> [25] "https://aspredicted.org/KD5_7LF"            
-#> [26] "https://aspredicted.org/qs7zz.pdf"          
-#> [27] "https://aspredicted.org/4mk6i.pdf"          
-#> [28] "https://aspredicted.org/z5k26.pdf"          
-#> [29] "https://aspredicted.org/wd3pm.pdf"          
-#> [30] "https://aspredicted.org/LVH_7KX"            
-#> [31] "https://aspredicted.org/LZQ_DXY"            
-#> [32] "https://aspredicted.org/6X6_XZW"            
-#> [33] "https://aspredicted.org/blind.php? x=nq4xa3"
-#> [34] "https://aspredicted.org/blind.php? x=772w3a"
-#> [35] "https://aspredicted.org/blind.php? x=55km72"
-#> [36] "https://aspredicted.org/blind.php? x=yv9c2a"
-#> [37] "https://aspredicted.org/blind.php? x=4xe5ih"
-#> [38] "https://aspredicted.org/blind.php? x=pk8ff3"
-#> [39] "https://aspredicted.org/sn9xs.pdf"          
-#> [40] "https://aspredicted.org/vh8kg.pdf"          
-#> [41] "https://aspredicted.org/ay3yk.pdf"          
-#> [42] "https://aspredicted.org/jz2nc.pdf"          
-#> [43] "https://aspredicted.org/a2wc9.pdf"          
-#> [44] "https://aspredicted.org/PD5_KKS"            
-#> [45] "https://aspredicted.org/9PG_LTT"            
-#> [46] "https://aspredicted.org/M3P_X3P"            
-#> [47] "https://aspredicted.org/H53_M3P"            
-#> [48] "https://aspredicted.org/CQW_DTT"            
-#> [49] "https://aspredicted.org/PW5_5VT"            
-#> [50] "https://aspredicted.org/sq22k.pdf"          
+#>  [1] "https://aspredicted.org/ve2qn.pdf"         
+#>  [2] "https://aspredicted.org/mq97g.pdf"         
+#>  [3] "https://aspredicted.org/4gf64.pdf"         
+#>  [4] "https://aspredicted.org/8a6ta.pdf"         
+#>  [5] "https://aspredicted.org/rz98j.pdf"         
+#>  [6] "https://aspredicted.org/vp4rg.pdf"         
+#>  [7] "https://aspredicted.org/3kq9y.pdf"         
+#>  [8] "https://aspredicted.org/yi5ps.pdf"         
+#>  [9] "https://aspredicted.org/nu5yt.pdf"         
+#> [10] "https://aspredicted.org/z97us.pdf"         
+#> [11] "https://aspredicted.org/h9xm3.pdf"         
+#> [12] "https://aspredicted.org/bj9er.pdf"         
+#> [13] "https://aspredicted.org/my5jk.pdf"         
+#> [14] "https://aspredicted.org/5xe8i.pdf"         
+#> [15] "https://aspredicted.org/ak97v.pdf"         
+#> [16] "https://aspredicted.org/p4ci6.pdf"         
+#> [17] "https://aspredicted.org/iv9tb.pdf"         
+#> [18] "https://aspredicted.org/dp8r5.pdf"         
+#> [19] "https://aspredicted.org/Y2F_6B7"           
+#> [20] "https://aspredicted.org/2YK_D6R"           
+#> [21] "https://aspredicted.org/MPG_T3C"           
+#> [22] "https://aspredicted.org/G68_GBZ"           
+#> [23] "https://aspredicted.org/9SR_7BC"           
+#> [24] "https://aspredicted.org/6D7_FVX"           
+#> [25] "https://aspredicted.org/KD5_7LF"           
+#> [26] "https://aspredicted.org/qs7zz.pdf"         
+#> [27] "https://aspredicted.org/4mk6i.pdf"         
+#> [28] "https://aspredicted.org/z5k26.pdf"         
+#> [29] "https://aspredicted.org/wd3pm.pdf"         
+#> [30] "https://aspredicted.org/LVH_7KX"           
+#> [31] "https://aspredicted.org/LZQ_DXY"           
+#> [32] "https://aspredicted.org/6X6_XZW"           
+#> [33] "https://aspredicted.org/blind.php?x=nq4xa3"
+#> [34] "https://aspredicted.org/blind.php?x=772w3a"
+#> [35] "https://aspredicted.org/blind.php?x=55km72"
+#> [36] "https://aspredicted.org/blind.php?x=yv9c2a"
+#> [37] "https://aspredicted.org/blind.php?x=4xe5ih"
+#> [38] "https://aspredicted.org/blind.php?x=pk8ff3"
+#> [39] "https://aspredicted.org/sn9xs.pdf"         
+#> [40] "https://aspredicted.org/vh8kg.pdf"         
+#> [41] "https://aspredicted.org/ay3yk.pdf"         
+#> [42] "https://aspredicted.org/jz2nc.pdf"         
+#> [43] "https://aspredicted.org/a2wc9.pdf"         
+#> [44] "https://aspredicted.org/PD5_KKS"           
+#> [45] "https://aspredicted.org/9PG_LTT"           
+#> [46] "https://aspredicted.org/M3P_X3P"           
+#> [47] "https://aspredicted.org/H53_M3P"           
+#> [48] "https://aspredicted.org/CQW_DTT"           
+#> [49] "https://aspredicted.org/PW5_5VT"           
+#> [50] "https://aspredicted.org/sq22k.pdf"         
 #> [51] "https://aspredicted.org/u53e3.pdf"
 ```
 
@@ -312,13 +312,11 @@ llm_response <- llm(text, system_prompt)
 llm_response$answer |> cat("> ", x = _)
 ```
 
-> The authors deviated from their preregistration.
-
-According to the text, the researchers planned to test a minimum of 10
-and a maximum of 15 individuals for each species. However, the actual
-sample size for each species was: ruffed lemur (n = 10), Coquerel’s
-sifakas (n = 10), ring-tailed lemurs (n = 10), and mongoose lemur (n =
-9).
+> The authors deviated from their preregistration. They planned to test
+> a minimum of 10 and a maximum of 15 individuals for each species, but
+> they tested 10 individuals for three species (ruffed lemurs,
+> Coquerel’s sifakas, and ring-tailed lemurs) and 9 individuals for the
+> mongoose lemur species.
 
 As we see, the LLM does a very good job evaluating whether the authors
 adhered to their preregistration in terms of the sample size. The
@@ -624,8 +622,8 @@ LLM Assessment:
 The authors deviated from their preregistration.
 
 According to the text, the researchers planned to collect data from 60
-participants in each cohort, but they only collected data from 60
-participants in cohort A and 56 participants in cohort B.
+participants in each cohort. However, in cohort B, they only collected
+data from 56 participants due to the COVID-19 pandemic.
 
 It fails gracefully if there are no links.
 

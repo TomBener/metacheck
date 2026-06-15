@@ -5,14 +5,14 @@ Convert Grobid TEI XML file to bibr format
 ## Usage
 
 ``` r
-grobid_to_bibr(xml_file, save_path = ".", crossref_lookup = FALSE)
+grobid_to_bibr(xml_path, save_path = ".", crossref_lookup = FALSE)
 ```
 
 ## Arguments
 
-- xml_file:
+- xml_path:
 
-  the XML file
+  the path to the XML file
 
 - save_path:
 

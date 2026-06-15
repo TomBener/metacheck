@@ -2,8 +2,8 @@
 title: MetaCheck Report
 subtitle: "To Err is Human: An Empirical Investigation"
 metacheck:
-  version: "0.0.1.0"
-  report-created: "2026-06-04"
+  version: "0.0.1.9001"
+  report-created: "2026-06-10"
 format:
   html:
     theme: 
@@ -72,20 +72,19 @@ Report Created: {{< meta metacheck.report-created >}}
 DOI: [10.32614/10.5281/zenodo.2669586](https://doi.org/10.32614/10.5281/zenodo.2669586) <!-- doi, if exists -->
 :::
 
-[Metacheck](https://www.scienceverse.org/metacheck/) is a tool that screens scientific manuscripts and aims to identify potential issues for improvement, thereby guiding researchers towards best practices. Metacheck is developed to help researchers correctly and completely report statistical results, automatically retrieve possible relevant information about citations, and improve how researchers share data, code, and preregistrations.
+[Metacheck](https://www.scienceverse.org/metacheck/) is a tool that screens scientific manuscripts and aims to identify potential issues for improvement. Our goal is to guide researchers towards best practices, especially with respect to practices that researchers easily forget, or might not have learned about yet. Metacheck is developed to help researchers correctly and completely report statistical results, will point to possibly relevant information about citations, and provides feedback about data and code sharing.
 
-Metacheck combines existing and new checks in a module-based tool. It mainly relies on text search or retrieving information from external sources through API’s or web-scraping, but some modules also incorporate tools that use machine learning classifiers or large language models. The use of LLM's is always optional and opt-in. The development of Metacheck is guided by our [values statement](https://www.scienceverse.org/metacheck/#our-values). 
-
+Metacheck combines existing and new checks in a module-based tool. It is open source, and anyone can contribute modules. It mainly relies on text search or retrieving information from external sources through API’s or web-scraping, but the power modules can optionally use large language models. The use of LLM's is always optional and opt-in. The development of Metacheck is guided by our [values statement](https://www.scienceverse.org/metacheck/#our-values).
 
 ::: {.validation}
-Our modules are validated on sets of open-access papers. In each validated module, there will be a sentence explaining the prevalence of false positives (incorrect detection/classification) and false negatives (incorrect omission). For example, if a hypothetical module detects the inappropriate practice of "woozling", the sentence might read:
+In light with our values, our modules are validated on sets of open-access papers. In each validated module, there will be a sentence explaining the prevalence of false positives (incorrect detection/classification) and false negatives (incorrect omission). For example, if a hypothetical module detects the inappropriate practice of "woozling", the sentence might read:
 
 > In a sample of 250 papers from the *Journal of X*, there were 350 instances of woozling. This module correctly detected 340 of them, and incorrectly identified 7. Therefore 3% of true instances are missed, and 2% of detections are false positives.
 
 There is an inherent tradeoff between false positives and false negatives. Many of our modules are designed like "smoke detectors", where they are more likely to detect a practice that needs attention, but also more likely to incorrectly flag something. Therefore, you need to check the output of each module, keeping the validated error rates in mind.
 :::
 
-Metacheck is under continuous development. Issues can be submitted [on Github](https://github.com/scienceverse/metacheck/issues), and suggestions for improvement or feedback can be sent to [metacheck@scienceverse.org](mailto:metacheck@scienceverse.org).
+Metacheck is under continuous development. It can be surprisingly difficult to automatically retrieve information from papers, and there is a large amount of edge-cases where our tool might not yet work accurately. By using our tool, and providing us with feedback about what we can't get right yet, you will help to improve the tool for all other users. Issues can be submitted [on Github](https://github.com/scienceverse/metacheck/issues), and suggestions for improvement or feedback can be sent to [metacheck@scienceverse.org](mailto:metacheck@scienceverse.org).
 
 
 ## Summary
@@ -98,7 +97,7 @@ Metacheck is under continuous development. Issues can be submitted [on Github](h
 - ⚠️ [Exact P-Values](#exact-p-values){.red}: We found 1 imprecise *p* value out of 3 detected *p* values.  
 - 🔍 [Non-Significant P Value Check](#non-significant-p-value-check){.yellow}: We found 2 non-significant p values that should be checked for appropriate interpretation.  
 - ⚠️ [Marginal Significance](#marginal-significance){.red}: You described 2 effects with terms related to 'marginally significant'.  
-- 🔍 [Effect Sizes in t-tests and F-tests](#effect-sizes-in-t-tests-and-f-tests){.yellow}: We found 1 t-test and/or F-test where effect sizes are not reported.  
+- 🔍 [Effect Sizes in t-tests and F-tests](#effect-sizes-in-t-tests-and-f-tests){.yellow}: We found 1 t-test and/or F-test where effect sizes are not reported. Check these tests in the table below, and consider adding effect sizes  
 - ⚠️ [StatCheck](#statcheck){.red}: 1 possible error in t-tests or F-tests  
 - 🔍 [Repository Check](#repository-check){.yellow}: 
     -  We found 14 files in 3 repositories.
@@ -260,7 +259,7 @@ table <- structure(list(Field = c("template_name", "title", "id", "link",
 "exploratory_analyses", "additional_comments", "research_questions", 
 "paper_id"), "Preregistration 1" = c("OSF Preregistration", "Papercheck Test", 
 "48ncu", "https://osf.io/48ncu", "2025-11-28T19:14:24.639665", 
-"2025-08-05T11:55:35.267689", "2025-11-28T19:14:24.608826", "NA", 
+"2025-08-05T11:55:35.267689", "2025-11-28T19:14:24.608826", "", 
 "https://archive.org/details/osf-registrations-48ncu-v1", "Automation can be used to check for errors in scientific manuscripts, and inform authors about possible corrections. In this study we examine the usefulness of metacheck to improve best practices.", 
 "Experiment - A researcher randomly assigns treatments to study subjects, this includes field or lab experiments. This is also known as an intervention experiment and includes randomized controlled trials.", 
 "No blinding is involved in this study. ", "Two conditions. In one, researchers receive automated feedback. In the control condition, they do not receive feedback.", 
@@ -544,11 +543,13 @@ This module was developed by Daniel Lakens
 
 ### 🔍 Effect Sizes in t-tests and F-tests {#effect-sizes-in-t-tests-and-f-tests .yellow}
 
-We found 1 t-test and/or F-test where effect sizes are not reported.
+We found 1 t-test and/or F-test where effect sizes are not reported. Check these tests in the table below, and consider adding effect sizes
 
 <details><summary>View detailed feedback</summary><div>
 
 We recommend checking the sentences below, and add any missing effect sizes.
+
+For t-tests with a reported d, coherence checks yielded 1 indeterminate case.
 
 ```{r}
 #| echo: false
@@ -582,11 +583,15 @@ For educational material on reporting effect sizes:
 table <- structure(list(Sentence = c("On average researchers in the experimental (app) condition made fewer mistakes (M = 9.12) than researchers in the control (checklist) condition (M = 10.9), t(97.7) = 2.9, p = 0.005, d =0.59.", 
 "On average researchers in the experimental condition found the app marginally significantly more useful (M = 5.06) than researchers in the control condition found the checklist (M = 4.5), t(97.2) = -1.96, p =0.152."
 ), "Effect Size" = c("d =0.59", NA), "Reported Test" = c("t(97.7) = 2.9", 
-"t(97.2) = -1.96"), "Test Type" = c("t-test", "t-test")), row.names = c(NA, 
+"t(97.2) = -1.96"), "Test Type" = c("t-test", "t-test"), "d Coherence" = c("indeterminate", 
+"indeterminate"), "d Assumption" = c("none", "none"), "d Coherence Note" = c("Non-integer df indicates Welch's t-test (unequal variances); sample sizes cannot be determined.", 
+"No parseable d effect size found."), "eta Coherence" = c(NA_character_, 
+NA_character_), "eta Assumption" = c(NA_character_, NA_character_
+), "eta Coherence Note" = c(NA_character_, NA_character_)), row.names = c(NA, 
 -2L), class = c("tbl_df", "tbl", "data.frame"))
 
 # display table -----------------------------------
-metacheck::report_table(table, "auto", 2, FALSE)
+metacheck::report_table(table, "auto", 5, FALSE)
 ```
 
 :::
@@ -595,17 +600,15 @@ metacheck::report_table(table, "auto", 2, FALSE)
 
 ::: {.callout-note title="How It Works" collapse="true"}
 
-The Effect Size module checks for effect sizes in t-tests and F-tests.
+The Effect Size module checks if effect sizes are correctly reported in t-tests and F-tests.
 
-The Effect Size check searches for regular expressions that match a predefined pattern. The module was validated on APA reported statistical tests, and might miss effect sizes that were reported in other reporting styles. It was validated by the Metacheck team on papers published in Psychological Science.
-
-If you want to extend the package to detect effect sizes for additional tests, reach out to the Metacheck development team.
+The Effect Size check searches for regular expressions that match typical ways in which effect sizes are reported. It subsequently checks different ways in which Cohen's d, g, ηp2, and ωp2 can be computed against the reported value. If effects are missing, or might be incorrect, you the module provides a warning. The module was validated on APA reported statistical tests, and might miss effect sizes that were reported in other reporting styles. It was validated by the Metacheck team on papers published in Psychological Science.
 
 This module was developed by Daniel Lakens and Lisa DeBruine
 
 :::
 
-<p class='validation'>**Validation**: In a sample of 161 papers with 1469 tests, this module correctly detected 1106 reported effect sizes (true positives) and correctly identified 295 cases where no effect size was present (true negatives). However, it missed 23 that were reported (false negatives), and incorrectly identified 45 effect sizes when none were reported (false positives). Among all instances detected by the module, 96% were true cases (positive predictive value).</p>
+<p class='validation'>**Validation**: In a sample of 161 papers with 1469 tests, this module correctly detected 1106 reported effect sizes (true positives) and correctly identified 295 cases where no effect size was present (true negatives). However, it missed 23 that were reported (false negatives), and incorrectly identified 45 effect sizes when none were reported (false positives). Among all instances detected by the module, 96% were true cases (positive predictive value). In a validation against 221 reported Cohen's d effect sizes, it correctly indicated coherence in 218 cases (99%). In a validation against 485 partial eta-squared effect sizes, it correctly indicated coherence in 480 (99%)</p>
 
 ### ⚠️ StatCheck {#statcheck .red}
 
