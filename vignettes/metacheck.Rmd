@@ -39,7 +39,7 @@ devtools::load_all(".")
 You can launch a simple shiny app that creates a report from a PDF, with options to control what information is sent to or retrieved from external servers.
 
 ``` r
-metacheck::create_report_app()
+metacheck::report_app()
 ```
 
 
@@ -47,7 +47,7 @@ metacheck::create_report_app()
 
 The function `convert()` can read PDF files and save them in [JSON format](https://www.scienceverse.org/schema/paper.json).  This requires an internet connection and takes a few seconds per paper, so should only be done once and the results saved for later use. If you don't supply an `api_url`, we check a [list of active servers](https://www.scienceverse.org/metacheck/convert.json) and choose the first available.
 
-You can also check the reference section against crossref, which allows you to find potential errors or omissions. This can take some time, and you can always add it later with the `add_bibmatch()` function.
+You can also check the reference section against crossref, which allows you to find potential errors or omissions. This can take some time, and you can always add it later with the `add_bib_match()` function.
 
 ```{r, eval = FALSE}
 pdf_file <- demofile("pdf")

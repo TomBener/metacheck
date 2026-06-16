@@ -239,7 +239,7 @@ Here we see a false positive, where the paper reported the results of an equival
 In the full PsychSci set, there are more than 27K sentences with numbers to check, so this takes about a minute to run. 
 
 ```{r, results='asis', eval = FALSE}
-statcheck_ps <- module_run(psychsci, "statcheck")
+statcheck_ps <- module_run(psychsci, "stat_check")
 ```
 
 ```{r, echo = FALSE}
