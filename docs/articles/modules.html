@@ -737,7 +737,7 @@ not detect that this was one-tailed.</p>
 <p>In the full PsychSci set, there are more than 27K sentences with
 numbers to check, so this takes about a minute to run.</p>
 <div class="sourceCode" id="cb46"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="va">statcheck_ps</span> <span class="op">&lt;-</span> <span class="fu"><a href="../reference/module_run.html">module_run</a></span><span class="op">(</span><span class="va">psychsci</span>, <span class="st">"statcheck"</span><span class="op">)</span></span></code></pre></div>
+<code class="sourceCode R"><span><span class="va">statcheck_ps</span> <span class="op">&lt;-</span> <span class="fu"><a href="../reference/module_run.html">module_run</a></span><span class="op">(</span><span class="va">psychsci</span>, <span class="st">"stat_check"</span><span class="op">)</span></span></code></pre></div>
 <p>There will be, of course, some false positives in the full set of 151
 flagged values. Let’s look just at the flagged values where the computed
 p-value is about double the reported p-value, and this changes the
@@ -792,7 +792,7 @@ if you chain modules.</p>
 
 
     <footer><div class="pkgdown-footer-left">
-  <p>Developed by Lisa DeBruine, Daniel Lakens, Jakub Werner.</p>
+  <p>Developed by Lisa DeBruine, Cristian Mesquida, Jakub Werner, Daniel Lakens.</p>
 </div>
 
 <div class="pkgdown-footer-right">

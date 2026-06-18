@@ -17,6 +17,7 @@
 - Removed {fs} dependency and added custom
   [`path_sanitize()`](https://scienceverse.github.io/metacheck/reference/path_sanitize.md)
 - Added internal functions to the website for developer reference
+- Updated the vignette on creating modules to explain validation text.
 
 ## metacheck 0.0.1.9001
 
@@ -144,7 +145,7 @@ to start using metacheck to help us.
 
 ## metacheck 0.0.0.9101
 
-- [`metacheck_app()`](https://scienceverse.github.io/metacheck/reference/metacheck_app.md)
+- [`metacheck_app()`](https://scienceverse.github.io/metacheck/reference/metacheck_app.html)
   the shiny app is back!
 - `grobid_convert()` now reads in the url table more accurately
 - [`extract_urls()`](https://scienceverse.github.io/metacheck/reference/extract_urls.md)

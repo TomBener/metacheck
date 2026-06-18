@@ -42,7 +42,7 @@ Recent progress in machine learning and artificial intelligence has made
 it increasingly viable to implement automated checks with sufficient
 accuracy, supporting broader adoption and adherence to best practices in
 scientific manuscripts. For example, the GROBID machine learning library
-(*GROBID* 2008--2025) can turn scientific PDFs into structured text
+(“GROBID” 2008--2025) can turn scientific PDFs into structured text
 files from which specific content can be extracted. While many automated
 checks for best practices will require only simple text matching based
 on regular expression, more complex text extraction is possible by using
@@ -80,7 +80,6 @@ submitted or published articles, or preregistration documents) and
 provides automated suggestions for improvement.
 
 ``` r
-
 library(metacheck)
 ```
 
@@ -101,7 +100,6 @@ tools (e.g., checks for retracted articles, Statcheck, etc).
 ## An example of the “stat_p_exact” module
 
 ``` r
-
 paper <- demopaper()
 module_run(paper, "stat_p_exact")
 ```
@@ -146,7 +144,6 @@ metascientific workflow, the module needs to be shown to have low error
 rates when run on manually coded ground truth files.
 
 ``` r
-
 # run the module on 250 open access papers from Psychological Science
 mo <- module_run(psychsci, "stat_effect_size")
 head(mo$summary_table)
@@ -212,13 +209,15 @@ from the Dutch Research Council (NWO). Our funded project priorities are
 described in more detail in our grant proposal, available here:
 <https://osf.io/cpv4d/>.
 
-Aczel, Balazs, Bence Palfi, Aba Szollosi, et al. 2018. “Quantifying
-Support for the Null Hypothesis in Psychology: An Empirical
-Investigation.” *Advances in Methods and Practices in Psychological
-Science* 1 (3): 357–66.
+Aczel, Balazs, Bence Palfi, Aba Szollosi, Marton Kovacs, Barnabas
+Szaszi, Peter Szecsi, Mark Zrubka, Quentin F Gronau, Don van den Bergh,
+and Eric-Jan Wagenmakers. 2018. “Quantifying Support for the Null
+Hypothesis in Psychology: An Empirical Investigation.” *Advances in
+Methods and Practices in Psychological Science* 1 (3): 357–66.
 
-Akker, Olmo R van den, Marjan Bakker, Marcel ALM van Assen, et al. 2024.
-“The Potential of Preregistration in Psychology: Assessing
+Akker, Olmo R van den, Marjan Bakker, Marcel ALM van Assen, Charlotte R
+Pennington, Leone Verweij, Mahmoud M Elsherif, Aline Claesen, et al.
+2024. “The Potential of Preregistration in Psychology: Assessing
 Preregistration Producibility and Preregistration-Study Consistency.”
 *Psychological Methods*.
 
@@ -228,15 +227,14 @@ Rectifying Common Problems in the Reporting of Scientific Articles.”
 *Anesthesia & Analgesia* 124 (3): 943–47.
 
 Goos, Cas, Marjan Bakker, Jelte M Wicherts, and Michèle B Nuijten. 2024.
-*Assessing Reliable and Valid Measurement as a Prerequisite for
-Informative Replications in Psychology*.
+“Assessing Reliable and Valid Measurement as a Prerequisite for
+Informative Replications in Psychology.”
 
-*GROBID*. 2008--2025.
-[Https://github.com/kermitt2/grobid](https://github.com/kermitt2/grobid);
-GitHub.
+“GROBID.” 2008--2025. <https://github.com/kermitt2/grobid>; GitHub.
 
-Lakens, Daniël. 2022. “Sample Size Justification.” *Collabra:
-Psychology* 8 (1): 33267. <https://doi.org/10.1525/collabra.33267>.
+Lakens, Daniël. 2022. “Sample Size Justification.” Edited by Don van
+Ravenzwaaij. *Collabra: Psychology* 8 (1): 33267.
+<https://doi.org/10.1525/collabra.33267>.
 
 Sharpe, Donald. 2013. “Why the Resistance to Statistical Innovations?
 Bridging the Communication Gap.” *Psychological Methods* 18 (4): 572–82.
@@ -251,7 +249,8 @@ Thibault, Robert T, Emmanuel A Zavalis, Mario Malički, and Hugo Pedder.
 2024. “An Evaluation of Reproducibility and Errors in Published Sample
 Size Calculations Performed Using g\* Power.” *medRxiv*, 2024–07.
 
-Wilkinson, Mark D., Michel Dumontier, IJsbrand Jan Aalbersberg, et al.
+Wilkinson, Mark D., Michel Dumontier, IJsbrand Jan Aalbersberg,
+Gabrielle Appleton, Myles Axton, Arie Baak, Niklas Blomberg, et al.
 2016. “The FAIR Guiding Principles for Scientific Data Management and
 Stewardship.” *Scientific Data* 3 (1): 1–9.
 <https://doi.org/10.1038/sdata.2016.18>.

@@ -126,7 +126,6 @@ is allowed to make (which in the case of a free local model can be set
 as high as you want):
 
 ``` r
-
 llm_use(TRUE)                          # turn on LLM support
 llm_model("ollama/qwen2.5:3b")         # use the local Ollama model
 llm_max_calls(5000)                     # maximum number of AI queries per run
@@ -148,7 +147,6 @@ search a paper for any paragraph that mentions participants, then ask
 the local AI model to describe who those participants were.
 
 ``` r
-
 library(metacheck)
 
 llm_use(TRUE)
@@ -185,7 +183,6 @@ working correctly and you are ready to move on to the power module.
 ### On a single paper
 
 ``` r
-
 library(metacheck)
 
 llm_use(TRUE)
@@ -211,7 +208,6 @@ session will be much faster.
 ### On the full psychsci dataset
 
 ``` r
-
 library(metacheck)
 
 llm_use(TRUE)
@@ -258,14 +254,12 @@ detected, and model size).
 ### Switching back to a cloud model
 
 ``` r
-
 llm_model("groq")   # or another model name
 ```
 
 ## Quick reference
 
 ``` r
-
 # Minimal setup to run the power module locally
 library(metacheck)
 llm_use(TRUE)

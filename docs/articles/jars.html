@@ -106,11 +106,12 @@ places. However, report p values less than .001 as p &lt; .001.</p>
 </blockquote>
 <p>Reporting <em>p</em> values precisely allows readers to include the
 test results in <em>p</em> value meta-analytic tests, such as p-curve,
-or z-curve <span class="citation">(Simonsohn et al. 2014; Bartoš and
-Schimmack 2020)</span>, and makes it possible the check the internal
-coherence of the reported result with tools such as Statcheck <span class="citation">(Nuijten et al. 2015)</span>. metacheck has a dedicated
-module, “exact-p”, to identify the presence of imprecise p-values. We
-can run it on a single paper:</p>
+or z-curve <span class="citation">(Simonsohn, Nelson, and Simmons 2014;
+Bartoš and Schimmack 2020)</span>, and makes it possible the check the
+internal coherence of the reported result with tools such as Statcheck
+<span class="citation">(Nuijten et al. 2015)</span>. metacheck has a
+dedicated module, “exact-p”, to identify the presence of imprecise
+p-values. We can run it on a single paper:</p>
 <div class="sourceCode" id="cb1"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="va">res_imprecise</span> <span class="op">&lt;-</span> <span class="fu"><a href="../reference/module_run.html">module_run</a></span><span class="op">(</span><span class="va">psychsci</span><span class="op">$</span><span class="st">'0956797614560771'</span>, <span class="st">"stat_p_exact"</span><span class="op">)</span></span>
 <span></span>
@@ -318,7 +319,7 @@ are happy to collaborate.</p>
 <div class="section level2 unnumbered">
 <h2 class="unnumbered" id="references">References<a class="anchor" aria-label="anchor" href="#references"></a>
 </h2>
-<div id="refs" class="references csl-bib-body hanging-indent">
+<div id="refs" class="references csl-bib-body hanging-indent" entry-spacing="0">
 <div id="ref-appelbaum_journal_2018" class="csl-entry">
 Appelbaum, Mark, Harris Cooper, Rex B. Kline, Evan Mayo-Wilson, Arthur
 M. Nezu, and Stephen M. Rao. 2018. <span>“Journal Article Reporting
@@ -327,14 +328,14 @@ and Communications Board Task Force Report.”</span> <em>American
 Psychologist</em> 73 (1): 3–25. <a href="https://doi.org/10.1037/amp0000191" class="external-link">https://doi.org/10.1037/amp0000191</a>.
 </div>
 <div id="ref-bartos_zcurve_2020" class="csl-entry">
-Bartoš, František, and Ulrich Schimmack. 2020. <em>Z-Curve.2.0:
-Estimating Replication Rates and Discovery Rates</em>. January. <a href="https://doi.org/10.31234/osf.io/urgtn" class="external-link">https://doi.org/10.31234/osf.io/urgtn</a>.
+Bartoš, František, and Ulrich Schimmack. 2020. <span>“Z-Curve.2.0:
+Estimating Replication Rates and Discovery Rates,”</span> January. <a href="https://doi.org/10.31234/osf.io/urgtn" class="external-link">https://doi.org/10.31234/osf.io/urgtn</a>.
 </div>
 <div id="ref-nuijten_prevalencestatisticalreporting_2015" class="csl-entry">
 Nuijten, Michèle B., Chris H. J. Hartgerink, Marcel A. L. M. van Assen,
 Sacha Epskamp, and Jelte M. Wicherts. 2015. <span>“The Prevalence of
 Statistical Reporting Errors in Psychology (1985–2013).”</span>
-<em>Behavior Research Methods</em>, ahead of print, October. <a href="https://doi.org/10.3758/s13428-015-0664-2" class="external-link">https://doi.org/10.3758/s13428-015-0664-2</a>.
+<em>Behavior Research Methods</em>, October. <a href="https://doi.org/10.3758/s13428-015-0664-2" class="external-link">https://doi.org/10.3758/s13428-015-0664-2</a>.
 </div>
 <div id="ref-simonsohn_p-curve_2014" class="csl-entry">
 Simonsohn, Uri, Leif D. Nelson, and Joseph P. Simmons. 2014.
@@ -351,7 +352,7 @@ https://doi.org/<a href="https://doi.org/10.1037/a0033242" class="external-link"
 
 
     <footer><div class="pkgdown-footer-left">
-  <p>Developed by Lisa DeBruine, Daniel Lakens, Jakub Werner.</p>
+  <p>Developed by Lisa DeBruine, Cristian Mesquida, Jakub Werner, Daniel Lakens.</p>
 </div>
 
 <div class="pkgdown-footer-right">

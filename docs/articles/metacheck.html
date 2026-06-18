@@ -80,15 +80,14 @@
 </h2>
 <p>You can install the development version of metacheck from <a href="https://github.com/scienceverse/metacheck" class="external-link">GitHub</a> with:</p>
 <div class="sourceCode" id="cb1"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="co"># install.packages("devtools")</span></span>
-<span><span class="fu">devtools</span><span class="fu">::</span><span class="fu"><a href="https://devtools.r-lib.org/reference/install-deprecated.html" class="external-link">install_github</a></span><span class="op">(</span><span class="st">"scienceverse/metacheck"</span><span class="op">)</span></span></code></pre></div>
+<code class="sourceCode R"><span><span class="fu">pak</span><span class="fu">::</span><span class="fu"><a href="https://pak.r-lib.org/reference/pkg_install.html" class="external-link">pkg_install</a></span><span class="op">(</span><span class="st">"scienceverse/metacheck"</span><span class="op">)</span></span></code></pre></div>
 <div class="sourceCode" id="cb2"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://github.com/scienceverse/metacheck" class="external-link">metacheck</a></span><span class="op">)</span></span></code></pre></div>
 <p>You can launch a simple shiny app that creates a report from a PDF,
 with options to control what information is sent to or retrieved from
 external servers.</p>
 <div class="sourceCode" id="cb3"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="fu">metacheck</span><span class="fu">::</span><span class="fu">create_report_app</span><span class="op">(</span><span class="op">)</span></span></code></pre></div>
+<code class="sourceCode R"><span><span class="fu">metacheck</span><span class="fu">::</span><span class="fu"><a href="../reference/report_app.html">report_app</a></span><span class="op">(</span><span class="op">)</span></span></code></pre></div>
 <div class="section level3">
 <h3 id="load-from-pdf">Load from PDF<a class="anchor" aria-label="anchor" href="#load-from-pdf"></a>
 </h3>
@@ -101,7 +100,7 @@ active servers</a> and choose the first available.</p>
 <p>You can also check the reference section against crossref, which
 allows you to find potential errors or omissions. This can take some
 time, and you can always add it later with the
-<code>add_bibmatch()</code> function.</p>
+<code><a href="../reference/add_bib_match.html">add_bib_match()</a></code> function.</p>
 <div class="sourceCode" id="cb4"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="va">pdf_file</span> <span class="op">&lt;-</span> <span class="fu"><a href="../reference/demofile.html">demofile</a></span><span class="op">(</span><span class="st">"pdf"</span><span class="op">)</span></span>
 <span><span class="va">json_file</span> <span class="op">&lt;-</span> <span class="fu"><a href="../reference/convert.html">convert</a></span><span class="op">(</span>file_path <span class="op">=</span> <span class="va">pdf_file</span>, </span>
@@ -882,12 +881,12 @@ set it manually:</p>
 <table style="width:100%;" class="table">
 <colgroup>
 <col width="8%">
-<col width="28%">
+<col width="32%">
 <col width="6%">
-<col width="11%">
-<col width="14%">
-<col width="20%">
 <col width="10%">
+<col width="13%">
+<col width="19%">
+<col width="9%">
 </colgroup>
 <thead><tr class="header">
 <th align="left">platform</th>
@@ -901,39 +900,39 @@ set it manually:</p>
 <tbody>
 <tr class="odd">
 <td align="left">groq</td>
+<td align="left">openai/gpt-oss-20b</td>
+<td align="left">model</td>
+<td align="left">OpenAI</td>
+<td align="right">131072</td>
+<td align="right">65536</td>
+<td align="left">2025-08-05</td>
+</tr>
+<tr class="even">
+<td align="left">groq</td>
+<td align="left">canopylabs/orpheus-arabic-saudi</td>
+<td align="left">model</td>
+<td align="left">Canopy Labs</td>
+<td align="right">4000</td>
+<td align="right">50000</td>
+<td align="left">2025-12-17</td>
+</tr>
+<tr class="odd">
+<td align="left">groq</td>
+<td align="left">meta-llama/llama-prompt-guard-2-22m</td>
+<td align="left">model</td>
+<td align="left">Meta</td>
+<td align="right">512</td>
+<td align="right">512</td>
+<td align="left">2025-05-30</td>
+</tr>
+<tr class="even">
+<td align="left">groq</td>
 <td align="left">openai/gpt-oss-safeguard-20b</td>
 <td align="left">model</td>
 <td align="left">OpenAI</td>
 <td align="right">131072</td>
 <td align="right">65536</td>
 <td align="left">2025-10-29</td>
-</tr>
-<tr class="even">
-<td align="left">groq</td>
-<td align="left">allam-2-7b</td>
-<td align="left">model</td>
-<td align="left">SDAIA</td>
-<td align="right">4096</td>
-<td align="right">4096</td>
-<td align="left">2025-01-23</td>
-</tr>
-<tr class="odd">
-<td align="left">groq</td>
-<td align="left">groq/compound-mini</td>
-<td align="left">model</td>
-<td align="left">Groq</td>
-<td align="right">131072</td>
-<td align="right">8192</td>
-<td align="left">2025-09-04</td>
-</tr>
-<tr class="even">
-<td align="left">groq</td>
-<td align="left">llama-3.3-70b-versatile</td>
-<td align="left">model</td>
-<td align="left">Meta</td>
-<td align="right">131072</td>
-<td align="right">32768</td>
-<td align="left">2024-12-06</td>
 </tr>
 <tr class="odd">
 <td align="left">groq</td>
@@ -942,7 +941,7 @@ set it manually:</p>
 <td align="left">Canopy Labs</td>
 <td align="right">4000</td>
 <td align="right">50000</td>
-<td align="left">2025-12-19</td>
+<td align="left">2025-12-20</td>
 </tr>
 </tbody>
 </table>
@@ -1675,7 +1674,7 @@ help for the default set.</p>
 
 
     <footer><div class="pkgdown-footer-left">
-  <p>Developed by Lisa DeBruine, Daniel Lakens, Jakub Werner.</p>
+  <p>Developed by Lisa DeBruine, Cristian Mesquida, Jakub Werner, Daniel Lakens.</p>
 </div>
 
 <div class="pkgdown-footer-right">

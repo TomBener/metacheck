@@ -4,8 +4,6 @@
 
 - [`report_app()`](https://scienceverse.github.io/metacheck/reference/report_app.md)
   : Launch Report App
-- [`metacheck_app()`](https://scienceverse.github.io/metacheck/reference/metacheck_app.md)
-  : Launch Demo App
 - [`convert()`](https://scienceverse.github.io/metacheck/reference/convert.md)
   : Convert documents
 - [`convert_bibr()`](https://scienceverse.github.io/metacheck/reference/convert_bibr.md)
@@ -248,7 +246,7 @@ files.
 ## Extras
 
 - [`extract_eq()`](https://scienceverse.github.io/metacheck/reference/extract_eq.md)
-  : Extract P-Values
+  : Extract Equations
 - [`extract_p_values()`](https://scienceverse.github.io/metacheck/reference/extract_p_values.md)
   : Extract P-Values
 - [`extract_urls()`](https://scienceverse.github.io/metacheck/reference/extract_urls.md)

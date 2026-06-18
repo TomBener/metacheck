@@ -1,13 +1,12 @@
 # Exploring GitHub Repositories
 
 ``` r
-
 library(metacheck)
 #> 
 #> 
 #> ***********************************************
-#> ✅ Welcome to metacheck beta version 0.1.0
-#> ✨ Your version newer than the current release
+#> ✅ Welcome to metacheck beta version 0.0.1.9001
+#> ✨ Your version is up to date.
 #> 
 #> ℹ For support and examples visit:
 #> https://scienceverse.github.io/metacheck/
@@ -45,13 +44,11 @@ function returns the simplified format of. repo name, and NULL if the
 repository in inaccessible.
 
 ``` r
-
 github_repo("https://github.com/scienceverse/metacheck.git")
 #> [1] "scienceverse/metacheck"
 ```
 
 ``` r
-
 github_repo("scienceverse/checkpaper")
 #> NULL
 ```
@@ -62,39 +59,10 @@ Get the text of the readme file, regardless of the exact file name
 (e.g., README vs README.md).
 
 ``` r
-
 readme <- github_readme("scienceverse/metacheck")
 
 cat(readme)
 ```
-
-    #> # metacheck
-    #> 
-    #> <!-- badges: start -->
-    #> ![Made in Europe](https://img.shields.io/badge/Made_in_Europe-003399?logo=european-union&logoColor=FFCC00)
-    #> 
-    #> [![Lifecycle: experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://lifecycle.r-lib.org/articles/stages.html#experimental)
-    #> 
-    #> [![Codecov test coverage](https://codecov.io/gh/scienceverse/metacheck/graph/badge.svg)](https://app.codecov.io/gh/scienceverse/metacheck)
-    #> <!-- badges: end -->
-    #> 
-    #> The goal of metacheck is to automatically check research outputs for best practices. You can find out more at <https://scienceverse.github.io/metacheck/>.
-    #> 
-    #> ## Installation
-    #> 
-    #> You can install the development version of metacheck from [GitHub](https://github.com/) with:
-    #> 
-    #> ``` r
-    #> pak::pkg_install("scienceverse/metacheck")
-    #> ```
-    #> 
-    #> 
-    #> 
-    #> ## Notes for Developers
-    #> 
-    #> You may not contribute any code unless you also contribute a test of this code.
-    #> 
-    #> Check tests/testthat/helper.R for custom test skip functions. All tests requiring a web connection, LLM, or long tests should be skipped or mocked. You can control this globally with the skip functions in this file (e.g., comment out the first `skip()` function in each custom function to run all tests of this type unless on cran/covr).
 
 ## github_languages
 
@@ -102,23 +70,15 @@ You can retrieve the number of bytes dedicated to various coding
 languages, as detected and classified by GitHub.
 
 ``` r
-
 github_languages("scienceverse/metacheck")
-#>                      repo   language    bytes
-#> 1  scienceverse/metacheck          R 55279951
-#> 2  scienceverse/metacheck       HTML 19385881
-#> 3  scienceverse/metacheck        Lua    92710
-#> 4  scienceverse/metacheck        TeX    40040
-#> 5  scienceverse/metacheck      Stata    12810
-#> 6  scienceverse/metacheck       AMPL     7571
-#> 7  scienceverse/metacheck     Python     6986
-#> 8  scienceverse/metacheck        CSS     5358
-#> 9  scienceverse/metacheck      Typst     5329
-#> 10 scienceverse/metacheck   Makefile     1407
-#> 11 scienceverse/metacheck Dockerfile     1201
-#> 12 scienceverse/metacheck JavaScript     1116
-#> 13 scienceverse/metacheck       SCSS      639
-#> 14 scienceverse/metacheck      Shell       17
+#>                     repo          language
+#> 1 scienceverse/metacheck           message
+#> 2 scienceverse/metacheck documentation_url
+#> 3 scienceverse/metacheck            status
+#>                                                                                                                                                                                                                                                              bytes
+#> 1 The 'scienceverse' organization forbids access via a fine-grained personal access tokens if the token's lifetime is greater than 366 days. Please adjust your token's lifetime at the following URL: https://github.com/settings/personal-access-tokens/12490665
+#> 2                                                                                                                                                                                               https://docs.github.com/rest/repos/repos#list-repository-languages
+#> 3                                                                                                                                                                                                                                                              403
 ```
 
 ## github_files
@@ -130,207 +90,26 @@ By default, you just retrieve the files and directories in the base
 directory, non-recursively.
 
 ``` r
-
 github_files("scienceverse/metacheck")
-#>                      repo             clean_repo               name
-#> 1  scienceverse/metacheck scienceverse/metacheck   _metacheck.Rproj
-#> 2  scienceverse/metacheck scienceverse/metacheck             _stuff
-#> 3  scienceverse/metacheck scienceverse/metacheck            .github
-#> 4  scienceverse/metacheck scienceverse/metacheck         .gitignore
-#> 5  scienceverse/metacheck scienceverse/metacheck      .Rbuildignore
-#> 6  scienceverse/metacheck scienceverse/metacheck         AUTHORS.md
-#> 7  scienceverse/metacheck scienceverse/metacheck CODE_OF_CONDUCT.md
-#> 8  scienceverse/metacheck scienceverse/metacheck        codecov.yml
-#> 9  scienceverse/metacheck scienceverse/metacheck    CONTRIBUTING.md
-#> 10 scienceverse/metacheck scienceverse/metacheck    CONTRIBUTORS.md
-#> 11 scienceverse/metacheck scienceverse/metacheck               data
-#> 12 scienceverse/metacheck scienceverse/metacheck           data-raw
-#> 13 scienceverse/metacheck scienceverse/metacheck        DESCRIPTION
-#> 14 scienceverse/metacheck scienceverse/metacheck               docs
-#> 15 scienceverse/metacheck scienceverse/metacheck               inst
-#> 16 scienceverse/metacheck scienceverse/metacheck         LICENSE.md
-#> 17 scienceverse/metacheck scienceverse/metacheck           makefile
-#> 18 scienceverse/metacheck scienceverse/metacheck                man
-#> 19 scienceverse/metacheck scienceverse/metacheck          NAMESPACE
-#> 20 scienceverse/metacheck scienceverse/metacheck            NEWS.md
-#> 21 scienceverse/metacheck scienceverse/metacheck            pkgdown
-#> 22 scienceverse/metacheck scienceverse/metacheck                  R
-#> 23 scienceverse/metacheck scienceverse/metacheck          README.md
-#> 24 scienceverse/metacheck scienceverse/metacheck              tests
-#> 25 scienceverse/metacheck scienceverse/metacheck          vignettes
-#>                  path
-#> 1    _metacheck.Rproj
-#> 2              _stuff
-#> 3             .github
-#> 4          .gitignore
-#> 5       .Rbuildignore
-#> 6          AUTHORS.md
-#> 7  CODE_OF_CONDUCT.md
-#> 8         codecov.yml
-#> 9     CONTRIBUTING.md
-#> 10    CONTRIBUTORS.md
-#> 11               data
-#> 12           data-raw
-#> 13        DESCRIPTION
-#> 14               docs
-#> 15               inst
-#> 16         LICENSE.md
-#> 17           makefile
-#> 18                man
-#> 19          NAMESPACE
-#> 20            NEWS.md
-#> 21            pkgdown
-#> 22                  R
-#> 23          README.md
-#> 24              tests
-#> 25          vignettes
-#>                                                                        download_url
-#> 1    https://raw.githubusercontent.com/scienceverse/metacheck/main/_metacheck.Rproj
-#> 2                                                                              <NA>
-#> 3                                                                              <NA>
-#> 4          https://raw.githubusercontent.com/scienceverse/metacheck/main/.gitignore
-#> 5       https://raw.githubusercontent.com/scienceverse/metacheck/main/.Rbuildignore
-#> 6          https://raw.githubusercontent.com/scienceverse/metacheck/main/AUTHORS.md
-#> 7  https://raw.githubusercontent.com/scienceverse/metacheck/main/CODE_OF_CONDUCT.md
-#> 8         https://raw.githubusercontent.com/scienceverse/metacheck/main/codecov.yml
-#> 9     https://raw.githubusercontent.com/scienceverse/metacheck/main/CONTRIBUTING.md
-#> 10    https://raw.githubusercontent.com/scienceverse/metacheck/main/CONTRIBUTORS.md
-#> 11                                                                             <NA>
-#> 12                                                                             <NA>
-#> 13        https://raw.githubusercontent.com/scienceverse/metacheck/main/DESCRIPTION
-#> 14                                                                             <NA>
-#> 15                                                                             <NA>
-#> 16         https://raw.githubusercontent.com/scienceverse/metacheck/main/LICENSE.md
-#> 17           https://raw.githubusercontent.com/scienceverse/metacheck/main/makefile
-#> 18                                                                             <NA>
-#> 19          https://raw.githubusercontent.com/scienceverse/metacheck/main/NAMESPACE
-#> 20            https://raw.githubusercontent.com/scienceverse/metacheck/main/NEWS.md
-#> 21                                                                             <NA>
-#> 22                                                                             <NA>
-#> 23          https://raw.githubusercontent.com/scienceverse/metacheck/main/README.md
-#> 24                                                                             <NA>
-#> 25                                                                             <NA>
-#>     size          ext   type
-#> 1    462        rproj config
-#> 2      0                 dir
-#> 3      0       github    dir
-#> 4    385    gitignore config
-#> 5    367 rbuildignore   file
-#> 6    177           md   text
-#> 7   5240           md   text
-#> 8    134          yml config
-#> 9   4850           md   text
-#> 10   133           md   text
-#> 11     0                 dir
-#> 12     0                 dir
-#> 13  2121                file
-#> 14     0                 dir
-#> 15     0                 dir
-#> 16 34303           md   text
-#> 17  1407                file
-#> 18     0                 dir
-#> 19  3277                file
-#> 20 23799           md   text
-#> 21     0                 dir
-#> 22     0                 dir
-#> 23  1267           md   text
-#> 24     0                 dir
-#> 25     0                 dir
+#> : The 'scienceverse' organization forbids access via a fine-grained personal access tokens if the token's lifetime is greater than 366 days. Please adjust your token's lifetime at the following URL: https://github.com/settings/personal-access-tokens/12490665
+#> NULL
 ```
 
 ``` r
-
 github_files("scienceverse/metacheck", dir = ".github")
-#>                     repo             clean_repo           name
-#> 1 scienceverse/metacheck scienceverse/metacheck     .gitignore
-#> 2 scienceverse/metacheck scienceverse/metacheck     CODEOWNERS
-#> 3 scienceverse/metacheck scienceverse/metacheck ISSUE_TEMPLATE
-#> 4 scienceverse/metacheck scienceverse/metacheck      workflows
-#>                     path
-#> 1     .github/.gitignore
-#> 2     .github/CODEOWNERS
-#> 3 .github/ISSUE_TEMPLATE
-#> 4      .github/workflows
-#>                                                                       download_url
-#> 1 https://raw.githubusercontent.com/scienceverse/metacheck/main/.github/.gitignore
-#> 2 https://raw.githubusercontent.com/scienceverse/metacheck/main/.github/CODEOWNERS
-#> 3                                                                             <NA>
-#> 4                                                                             <NA>
-#>   size       ext   type
-#> 1    7 gitignore config
-#> 2   12             file
-#> 3    0              dir
-#> 4    0              dir
+#> .github: The 'scienceverse' organization forbids access via a fine-grained personal access tokens if the token's lifetime is greater than 366 days. Please adjust your token's lifetime at the following URL: https://github.com/settings/personal-access-tokens/12490665
+#> NULL
 ```
 
 You can also retrieve files recursively. Searching a large repository
 recursively can take a while.
 
 ``` r
-
 github_files("scienceverse/metacheck",
              dir = ".github",
              recursive = TRUE)
-#>                      repo             clean_repo                  name
-#> 1  scienceverse/metacheck scienceverse/metacheck            .gitignore
-#> 2  scienceverse/metacheck scienceverse/metacheck            CODEOWNERS
-#> 3  scienceverse/metacheck scienceverse/metacheck        ISSUE_TEMPLATE
-#> 4  scienceverse/metacheck scienceverse/metacheck             workflows
-#> 5  scienceverse/metacheck scienceverse/metacheck         bug_report.md
-#> 6  scienceverse/metacheck scienceverse/metacheck            config.yml
-#> 7  scienceverse/metacheck scienceverse/metacheck    feature_request.md
-#> 8  scienceverse/metacheck scienceverse/metacheck wrong_check_result.md
-#> 9  scienceverse/metacheck scienceverse/metacheck          pkgdown.yaml
-#> 10 scienceverse/metacheck scienceverse/metacheck            static.yml
-#> 11 scienceverse/metacheck scienceverse/metacheck      teams-notify.yml
-#> 12 scienceverse/metacheck scienceverse/metacheck    test-coverage.yaml
-#> 13 scienceverse/metacheck scienceverse/metacheck   upload_packages.yml
-#> 14 scienceverse/metacheck scienceverse/metacheck           website.yml
-#>                                            path
-#> 1                            .github/.gitignore
-#> 2                            .github/CODEOWNERS
-#> 3                        .github/ISSUE_TEMPLATE
-#> 4                             .github/workflows
-#> 5          .github/ISSUE_TEMPLATE/bug_report.md
-#> 6             .github/ISSUE_TEMPLATE/config.yml
-#> 7     .github/ISSUE_TEMPLATE/feature_request.md
-#> 8  .github/ISSUE_TEMPLATE/wrong_check_result.md
-#> 9                .github/workflows/pkgdown.yaml
-#> 10                 .github/workflows/static.yml
-#> 11           .github/workflows/teams-notify.yml
-#> 12         .github/workflows/test-coverage.yaml
-#> 13        .github/workflows/upload_packages.yml
-#> 14                .github/workflows/website.yml
-#>                                                                                                  download_url
-#> 1                            https://raw.githubusercontent.com/scienceverse/metacheck/main/.github/.gitignore
-#> 2                            https://raw.githubusercontent.com/scienceverse/metacheck/main/.github/CODEOWNERS
-#> 3                                                                                                        <NA>
-#> 4                                                                                                        <NA>
-#> 5          https://raw.githubusercontent.com/scienceverse/metacheck/main/.github/ISSUE_TEMPLATE/bug_report.md
-#> 6             https://raw.githubusercontent.com/scienceverse/metacheck/main/.github/ISSUE_TEMPLATE/config.yml
-#> 7     https://raw.githubusercontent.com/scienceverse/metacheck/main/.github/ISSUE_TEMPLATE/feature_request.md
-#> 8  https://raw.githubusercontent.com/scienceverse/metacheck/main/.github/ISSUE_TEMPLATE/wrong_check_result.md
-#> 9                https://raw.githubusercontent.com/scienceverse/metacheck/main/.github/workflows/pkgdown.yaml
-#> 10                 https://raw.githubusercontent.com/scienceverse/metacheck/main/.github/workflows/static.yml
-#> 11           https://raw.githubusercontent.com/scienceverse/metacheck/main/.github/workflows/teams-notify.yml
-#> 12         https://raw.githubusercontent.com/scienceverse/metacheck/main/.github/workflows/test-coverage.yaml
-#> 13        https://raw.githubusercontent.com/scienceverse/metacheck/main/.github/workflows/upload_packages.yml
-#> 14                https://raw.githubusercontent.com/scienceverse/metacheck/main/.github/workflows/website.yml
-#>    size       ext   type
-#> 1     7 gitignore config
-#> 2    12             file
-#> 3     0              dir
-#> 4     0              dir
-#> 5   469        md   text
-#> 6    46       yml config
-#> 7   417        md   text
-#> 8   732        md   text
-#> 9  1380      yaml config
-#> 10 1332       yml config
-#> 11  521       yml config
-#> 12 2068      yaml config
-#> 13 3362       yml config
-#> 14 1332       yml config
+#> .github: The 'scienceverse' organization forbids access via a fine-grained personal access tokens if the token's lifetime is greater than 366 days. Please adjust your token's lifetime at the following URL: https://github.com/settings/personal-access-tokens/12490665
+#> NULL
 ```
 
 ## github_info
@@ -339,32 +118,24 @@ Get all of the information about a repository in one list object, with
 items named “repo”, “readme”, “languages”, and “files”.
 
 ``` r
-
 github_info("scienceverse/demo")
+#> : The 'scienceverse' organization forbids access via a fine-grained personal access tokens if the token's lifetime is greater than 366 days. Please adjust your token's lifetime at the following URL: https://github.com/settings/personal-access-tokens/12490665
 #> $repo
 #> [1] "scienceverse/demo"
 #> 
 #> $readme
-#> [1] "# demo\nFor use in testing functions\n"
+#> [1] ""
 #> 
 #> $files
-#>                repo        clean_repo           name           path
-#> 1 scienceverse/demo scienceverse/demo           code           code
-#> 2 scienceverse/demo scienceverse/demo         folder         folder
-#> 3 scienceverse/demo scienceverse/demo good-example.R good-example.R
-#> 4 scienceverse/demo scienceverse/demo      README.md      README.md
-#>                                                              download_url size
-#> 1                                                                    <NA>    0
-#> 2                                                                    <NA>    0
-#> 3 https://raw.githubusercontent.com/scienceverse/demo/main/good-example.R  227
-#> 4      https://raw.githubusercontent.com/scienceverse/demo/main/README.md   36
-#>   ext type
-#> 1      dir
-#> 2      dir
-#> 3   r code
-#> 4  md text
+#> NULL
 #> 
 #> $languages
-#>                repo language bytes
-#> 1 scienceverse/demo        R  1052
+#>                repo          language
+#> 1 scienceverse/demo           message
+#> 2 scienceverse/demo documentation_url
+#> 3 scienceverse/demo            status
+#>                                                                                                                                                                                                                                                              bytes
+#> 1 The 'scienceverse' organization forbids access via a fine-grained personal access tokens if the token's lifetime is greater than 366 days. Please adjust your token's lifetime at the following URL: https://github.com/settings/personal-access-tokens/12490665
+#> 2                                                                                                                                                                                               https://docs.github.com/rest/repos/repos#list-repository-languages
+#> 3                                                                                                                                                                                                                                                              403
 ```

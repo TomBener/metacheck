@@ -5,13 +5,13 @@ of research outputs for best practices. (formerly named papercheck)
 
 Inspired by practices in software development, where automated checks
 (e.g., CRAN checks for R packages) are used to identify issues before
-release, metacheck screens scientific manuscripts to identify potential
+release, Metacheck screens scientific manuscripts to identify potential
 issues or areas for improvement and guide researchers in adopting best
 practices. It can also assist with processing large numbers of papers
 for metascientific enquiry.
 
 These check are meant to assist, but not replace, human expertise. For
-example, metacheck can identify incorrect citations, add missing DOIs,
+example, Metacheck can identify incorrect citations, add missing DOIs,
 and cross-reference citations against Retraction Watch, PubPeer, and the
 FLoRA replication database. It can also identify commonly misreported
 aspects, such as power analyses, and provide general advice. However,
@@ -24,7 +24,8 @@ for the basics,
 [Articles](https://scienceverse.github.io/metacheck/articles/) for more
 detailed examples of what you can do, or our [introductory blog
 post](https://scienceverse.github.io/metacheck/articles/intro.md) for a
-more conceptual overview.
+more conceptual overview. You can contact the Metacheck team at:
+<metacheck.scienceverse@gmail.com>.
 
 ## Our Values
 

@@ -9,13 +9,28 @@ module or function to the package needs to follow the guidance below.
   quick focused intro
 - [R Packages](https://r-pkgs.org/) for all the details
 
+## Contributorship model
+
+We will acknowledge substantial contributions to code (e.g.,
+contribution of a new module) as contributors (“ctb” role) in the
+DESCRIPTION. Smaller bug fixes may be acknowledged in the NEWS.md file.
+An authorship (“aut” role) may be earned by sustained major
+contributions of code or intellectual input to the project.
+
 ## Adding a new built-in module
+
+Metacheck is meant to be modular and for users to be able to buil their
+own libraries of modules that are most relevant to their purposes. If
+you have an idea for a new module that you think most users of metacheck
+would benefit from, we encourage you to reach out to use at
+<metacheck@scienceverse.org> first to discuss. If you have been invited
+to contribute a modeule, please follow the steps below.,
 
 See the [Creating Modules
 vignette](https://www.scienceverse.org/metacheck/articles/creating_modules.html)
 
-Fork or branch the dev branch of metacheck (or main if there is no
-current dev branch) with a name like `dev-module-modname`
+Fork or branch the **dev** branch of metacheck with a name like
+`dev-module-modname`
 
 Use the template helper!
 [`module_template()`](https://scienceverse.github.io/metacheck/reference/module_template.md)
@@ -67,11 +82,14 @@ Do not add the module to report defaults yourself – ask @debruine or
 
 Validate your module on a set of papers
 
-Submit a pull request with changes to only your module file and its
-associated test file, link to or explain the validation results in the
-request, and tag @debruine for review
+Submit a pull request to the **dev** branch with changes to only your
+module file and its associated test file, link to or explain the
+validation results in the request, and tag @debruine for review
 
 ## Adding a new function
+
+Fork or branch the **dev** branch of metacheck with a name like
+`dev-funcname`
 
 Add the new function to an appropriate file under R/ – make a new file
 if appropriate ([naming
@@ -99,8 +117,9 @@ Run CMD check with
 and fix any warnings related to your function (there are always a few
 notes, ask Lisa if you aren’t sure about a warning)
 
-Submit a pull request with changes to only your function file and its
-associated documentation and test files, tagging @debruine for review
+Submit a pull request to the **dev** branch with changes to only your
+function file and its associated documentation and test files, tagging
+@debruine for review
 
 If the code is acceptable, we may ask you to do the following:
 
@@ -138,3 +157,31 @@ If you need to define functions for your tests, put the functions in
 
 If you need to provide test files (e.g., JSON for a paper that shows a
 specific thing), put them under `tests/testthat/fixtures/`.
+
+### Mocking
+
+If your test requires external resources, once the tests are passing,
+capture them using the third `mock` argument to our custom version of
+test_that(). (This is a workaround for the fact that httptest2 doesn’t
+mock parallel httr2 requests, so don’t use the httptest2 functions
+directly.) This will save files to tests/testthat/apis/ to mock the
+response without needing a web connection.
+
+``` r
+test_that("describe", {
+  # code
+}, mock = "capture")
+```
+
+After you’ve captured the response, change the value to “mock” and check
+that the test still passes. It should be much faster and not require an
+internet connection. If the function includes a call to
+[`online()`](https://scienceverse.github.io/metacheck/reference/online.md)
+to check the status of the resource, you will need to locally mock this
+function as below.
+
+``` r
+testthat::local_mocked_bindings(
+  online = \(...) TRUE
+)
+```

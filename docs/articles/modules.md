@@ -1,7 +1,6 @@
 # Modules
 
 ``` r
-
 devtools::load_all(".")
 library(dplyr)
 ```
@@ -15,7 +14,6 @@ will share more modules.
 You can see the list of built-in modules with the function below.
 
 ``` r
-
 module_list()
 ```
 
@@ -97,7 +95,6 @@ function takes care of displaying everything for you when you need to
 assess a single paper.
 
 ``` r
-
 paper <- demopaper()
 mo <- module_run(paper, "stat_p_exact")
 ```
@@ -105,21 +102,18 @@ mo <- module_run(paper, "stat_p_exact")
 The `module`, `title`, and `summary_text` give brief information.
 
 ``` r
-
 mo$module
 ```
 
     #> [1] "stat_p_exact"
 
 ``` r
-
 mo$title
 ```
 
     #> [1] "Exact P-Values"
 
 ``` r
-
 mo$summary_text
 ```
 
@@ -131,7 +125,6 @@ The `traffic_light` helps the reports give a quick visual guide to where
 there are problems or things to check.
 
 ``` r
-
 mo$traffic_light
 ```
 
@@ -155,7 +148,6 @@ the text. This table can be of use to further modules in a chain, or to
 metascientific users.
 
 ``` r
-
 mo$table
 ```
 
@@ -177,7 +169,6 @@ in the metascientific workflow, and this table is appended by each
 module in a chain.
 
 ``` r
-
 mo$summary_table
 ```
 
@@ -194,7 +185,6 @@ function inside the
 function.
 
 ``` r
-
 mo$report
 ```
 
@@ -209,7 +199,6 @@ The `paper` is just the paper argument to
 This is mainly used when chaining modules.
 
 ``` r
-
 mo$paper
 ```
 
@@ -233,7 +222,6 @@ item. This is so some modules can share resource-intensive parts of
 checks rather than repeating them.
 
 ``` r
-
 mo <- paper |>
   module_run("stat_p_exact") |>
   module_run("marginal") |>
@@ -254,7 +242,6 @@ single paper and then a list of papers, the `psychsci` list of 250
 open-access papers from Psychological Science.
 
 ``` r
-
 paper <- psychsci$`0956797620955209`
 ```
 
@@ -264,7 +251,6 @@ List all p-values in the text, returning the matched text (e.g., ‘p =
 0.04’) and document location in a table.
 
 ``` r
-
 all_p <- module_run(paper, "all_p_values")
 
 all_p$table # print table
@@ -301,7 +287,6 @@ in each paper), so you can print the summary table, which gives you one
 row per paper.
 
 ``` r
-
 all_p_ps <- module_run(psychsci, "all_p_values")
 
 all_p_ps$summary_table |> head()
@@ -318,7 +303,6 @@ all_p_ps$summary_table |> head()
 You can still access the full table for further processing.
 
 ``` r
-
 all_p_ps$table |>
   count(text, sort = TRUE) |>
   head()
@@ -340,7 +324,6 @@ List all the URLs in the main text. There will, of course, be a few
 false positives when text in the paper is formatted as a valid URL.
 
 ``` r
-
 all_urls <- module_run(paper, "all_urls")
 
 all_urls$table
@@ -358,7 +341,6 @@ all_urls$table
     #> # ℹ 1 more variable: section_type <chr>
 
 ``` r
-
 all_urls_ps <- module_run(psychsci, "all_urls")
 
 all_urls_ps$summary_table
@@ -622,7 +604,6 @@ List any p-values that may have been reported with insufficient
 precision (e.g., p \< .05 or p = n.s.).
 
 ``` r
-
 imprecise <- module_run(paper, "stat_p_exact")
 
 imprecise$table$text # print table
@@ -638,7 +619,6 @@ see that “p \< .025” was not an imprecisely reported p-value, but a
 description of the preregistered alpha threshold.
 
 ``` r
-
 imprecise$table$expanded[[4]] # print expanded text
 ```
 
@@ -649,7 +629,6 @@ set. “p \< .01” and “p \< .05” are probably often describing figures or
 tables, but what is the deal with “p \> .25”?
 
 ``` r
-
 imprecise_ps <- module_run(psychsci, "stat_p_exact")
 
 imprecise_ps$table |>
@@ -670,7 +649,6 @@ imprecise_ps$table |>
 We can expand the text to check the context for “p \> .25”.
 
 ``` r
-
 gt.25 <- imprecise_ps$table |>
   filter(grepl("\\.25", text))
 
@@ -686,7 +664,6 @@ gt.25$expanded[1:3] # look at the first 3
 List all sentences that describe an effect as ‘marginally significant’.
 
 ``` r
-
 marginal <- module_run(paper, "marginal")
 
 marginal # print table
@@ -698,7 +675,6 @@ Marginal Significance: You described 0 effects with terms related to
 Let’s check how many are in the full set.
 
 ``` r
-
 marginal_ps <- module_run(psychsci, "marginal")
 
 marginal_ps$table # print table
@@ -726,7 +702,6 @@ Check consistency of p-values and test statistics using functions from
 [statcheck](https://github.com/MicheleNuijten/statcheck).
 
 ``` r
-
 statcheck <- module_run(paper, "stat_check")
 
 statcheck$table
@@ -759,8 +734,7 @@ In the full PsychSci set, there are more than 27K sentences with numbers
 to check, so this takes about a minute to run.
 
 ``` r
-
-statcheck_ps <- module_run(psychsci, "statcheck")
+statcheck_ps <- module_run(psychsci, "stat_check")
 ```
 
 There will be, of course, some false positives in the full set of 151
@@ -769,7 +743,6 @@ p-value is about double the reported p-value, and this changes the
 significance decision (at an alpha of 0.05).
 
 ``` r
-
 statcheck_ps$table |>
   filter(decision_error, 
          round(computed_p/reported_p, 1) == 2.0) |>
@@ -795,7 +768,6 @@ Modules return a `summary` table as well as the detailed results
 modules.
 
 ``` r
-
 ps_metascience <- psychsci[1:10] |>
   module_run("all_p_values") |>
   module_run("stat_p_exact") |>
